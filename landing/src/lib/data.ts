@@ -31,7 +31,19 @@ export interface EpisodeMeta {
   summary?: string
   core_ideas?: string[]
   base?: string
+  category?: string
 }
+
+// Category definitions with display order
+export const CATEGORIES = [
+  { id: 'ai-tech', label: 'AI & Tech' },
+  { id: 'mind-body', label: 'Mind & Body' },
+  { id: 'science', label: 'Science' },
+  { id: 'business', label: 'Business & Career' },
+  { id: 'culture', label: 'Culture & History' },
+] as const
+
+export type CategoryId = typeof CATEGORIES[number]['id']
 
 export interface EpisodeWithSource extends EpisodeMeta {
   sourceRef: Source
@@ -52,9 +64,24 @@ export function loadSources(): Source[] {
   return sources
 }
 
+// Build a map of episode id → category from data/plans/*.yml
+function loadCategoryMap(): Record<string, string> {
+  const plansDir = resolve(PROJECT_ROOT, 'data/plans')
+  const map: Record<string, string> = {}
+  if (!existsSync(plansDir)) return map
+  for (const f of readdirSync(plansDir).filter(f => f.endsWith('.yml'))) {
+    const plan = readYaml<{ episodes?: { id: string; category?: string }[] }>(join(plansDir, f))
+    for (const ep of plan.episodes || []) {
+      if (ep.category) map[ep.id] = ep.category
+    }
+  }
+  return map
+}
+
 export function loadEpisodes(): EpisodeWithSource[] {
   const sources = loadSources()
   const sourceMap = Object.fromEntries(sources.map(s => [s.id, s]))
+  const categoryMap = loadCategoryMap()
 
   // Prefer per-episode meta.yml (has richest info). Fall back to episodes.yml.
   const episodesDir = resolve(PROJECT_ROOT, 'episodes')
@@ -70,6 +97,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
       if (!existsSync(metaPath)) continue
       const meta = readYaml<EpisodeMeta>(metaPath)
       meta.base = meta.base || `/episodes/${meta.id}/`
+      meta.category = meta.category || categoryMap[meta.id]
       const sourceRef = sourceMap[meta.source]
       if (!sourceRef) continue
       results.push({ ...meta, sourceRef })
@@ -94,17 +122,23 @@ export function loadEpisodes(): EpisodeWithSource[] {
     })
   }
 
-  // Sort: generated first, then downloaded, then other. Within status, by title.
+  // Sort: generated first, then by category priority, then by title.
   const statusOrder: Record<string, number> = {
     generated: 0,
     downloaded: 1,
     queued: 2,
     failed: 3,
   }
+  const catOrder: Record<string, number> = {
+    'ai-tech': 0, 'mind-body': 1, 'science': 2, 'business': 3, 'culture': 4,
+  }
   results.sort((a, b) => {
     const sa = statusOrder[a.status] ?? 99
     const sb = statusOrder[b.status] ?? 99
     if (sa !== sb) return sa - sb
+    const ca = catOrder[a.category ?? ''] ?? 99
+    const cb = catOrder[b.category ?? ''] ?? 99
+    if (ca !== cb) return ca - cb
     return a.title.localeCompare(b.title)
   })
 

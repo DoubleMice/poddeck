@@ -1,3 +1,7 @@
 packages:
   - 'episodes/*'
   - 'landing'
+allowBuilds:
+  esbuild: true
+  playwright-chromium: true
+  sharp: true

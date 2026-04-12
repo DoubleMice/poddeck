@@ -41,6 +41,19 @@ const onlyId = process.argv.find(a => a.startsWith('--id='))?.split('=')[1]
 const limit = Number(process.argv.find(a => a.startsWith('--limit='))?.split('=')[1] ?? 9999)
 const concurrency = Number(process.argv.find(a => a.startsWith('--concurrency='))?.split('=')[1] ?? 1)
 const dryRun = process.argv.includes('--dry-run')
+const onlyCategory = process.argv.find(a => a.startsWith('--category='))?.split('=')[1]
+
+// Shared state for rate-limit detection and token tracking
+let rateLimited = false
+const stats = {
+  generated: 0,
+  failed: 0,
+  skippedRateLimit: 0,
+  totalInputTokens: 0,
+  totalOutputTokens: 0,
+  totalDurationMs: 0,
+  episodes: [] as { id: string; inputTokens: number; outputTokens: number; durationMs: number; status: string }[],
+}
 
 interface PlanEntry {
   id: string
@@ -49,6 +62,7 @@ interface PlanEntry {
   upload_date: string
   url: string
   status: 'pending' | 'downloaded' | 'generated' | 'failed'
+  category?: string
   priority: number
 }
 
@@ -130,7 +144,36 @@ function renderTask(entry: PlanEntry, sourceId: string): string {
     .replaceAll('{{TITLE}}', entry.title)
 }
 
-function generateOne(entry: PlanEntry, sourceId: string): Promise<boolean> {
+interface GenerateResult {
+  ok: boolean
+  inputTokens: number
+  outputTokens: number
+  durationMs: number
+  isRateLimit: boolean
+}
+
+function parseTokensFromLog(logPath: string): { inputTokens: number; outputTokens: number; isRateLimit: boolean } {
+  let inputTokens = 0, outputTokens = 0, isRateLimit = false
+  try {
+    const content = readFileSync(logPath, 'utf-8').trim()
+    if (content.includes("hit your limit") || content.includes("rate limit")) {
+      isRateLimit = true
+    }
+    // Parse stream-json: each line is a JSON event, look for result type
+    for (const line of content.split('\n')) {
+      try {
+        const evt = JSON.parse(line)
+        if (evt.type === 'result' && evt.result?.usage) {
+          inputTokens = evt.result.usage.input_tokens ?? 0
+          outputTokens = evt.result.usage.output_tokens ?? 0
+        }
+      } catch {}
+    }
+  } catch {}
+  return { inputTokens, outputTokens, isRateLimit }
+}
+
+function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult> {
   const cliJs = resolveClaudeCli()
   const systemRules = readFileSync(RULES_FILE, 'utf-8')
   const taskPrompt = renderTask(entry, sourceId)
@@ -138,6 +181,7 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<boolean> {
   mkdirSync(join(ROOT, 'logs'), { recursive: true })
   const fs = require('node:fs')
   const logFd = fs.openSync(logPath, 'w')
+  const startTime = Date.now()
 
   log.raw(`  spawning claude -p for ${entry.id} → logs/${entry.id}.log`)
   return new Promise(resolveFn => {
@@ -145,6 +189,8 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<boolean> {
       cliJs,
       '-p',
       '--model', 'opus',
+      '--verbose',
+      '--output-format', 'stream-json',
       '--append-system-prompt', systemRules,
       '--add-dir', EPISODES_DIR,
       '--add-dir', TRANSCRIPTS_DIR,
@@ -159,12 +205,14 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<boolean> {
     })
     child.on('close', code => {
       fs.closeSync(logFd)
-      resolveFn(code === 0)
+      const durationMs = Date.now() - startTime
+      const { inputTokens, outputTokens, isRateLimit } = parseTokensFromLog(logPath)
+      resolveFn({ ok: code === 0, inputTokens, outputTokens, durationMs, isRateLimit })
     })
     child.on('error', err => {
       log.err(`  spawn error: ${err.message}`)
       fs.closeSync(logFd)
-      resolveFn(false)
+      resolveFn({ ok: false, inputTokens: 0, outputTokens: 0, durationMs: Date.now() - startTime, isRateLimit: false })
     })
   })
 }
@@ -195,10 +243,42 @@ async function processEntry(
 
   scaffoldEpisode(entry.id)
 
-  const ok = await generateOne(entry, sourceId)
-  entry.status = ok ? 'generated' : 'failed'
+  const result = await generateOne(entry, sourceId)
+  entry.status = result.ok ? 'generated' : 'failed'
   savePlan(planPath, plan)
-  log.ok(`  → status=${entry.status}`)
+
+  const durationStr = (result.durationMs / 1000 / 60).toFixed(1) + 'min'
+  const tokenStr = result.inputTokens > 0
+    ? `${(result.inputTokens / 1000).toFixed(0)}k in / ${(result.outputTokens / 1000).toFixed(0)}k out`
+    : 'no token data'
+  log.ok(`  → status=${entry.status}  ⏱ ${durationStr}  📊 ${tokenStr}`)
+
+  // Track stats
+  stats.episodes.push({
+    id: entry.id,
+    inputTokens: result.inputTokens,
+    outputTokens: result.outputTokens,
+    durationMs: result.durationMs,
+    status: entry.status,
+  })
+  stats.totalInputTokens += result.inputTokens
+  stats.totalOutputTokens += result.outputTokens
+  stats.totalDurationMs += result.durationMs
+  if (result.ok) stats.generated++
+  else stats.failed++
+
+  if (result.isRateLimit) {
+    rateLimited = true
+    log.err('  ⚠ Rate limit hit — stopping queue, remaining entries stay pending')
+  }
+
+  if (!result.ok && !result.isRateLimit) {
+    const logPath = join(ROOT, 'logs', `generate-${entry.id}.log`)
+    try {
+      const tail = readFileSync(logPath, 'utf-8').trim().split('\n').slice(-20).join('\n')
+      log.err(`  ── log tail ──\n${tail}\n  ── end ──`)
+    } catch {}
+  }
 }
 
 async function main() {
@@ -220,7 +300,22 @@ async function main() {
       }
     }
   }
-  allPending.sort((a, b) => b.entry.upload_date.localeCompare(a.entry.upload_date))
+  // Filter by category if --category specified
+  if (onlyCategory) {
+    const filtered = allPending.filter(p => p.entry.category === onlyCategory)
+    allPending.length = 0
+    allPending.push(...filtered)
+  }
+
+  const categoryPriority: Record<string, number> = {
+    'ai-tech': 0, 'mind-body': 1, 'science': 2, 'business': 3, 'culture': 4,
+  }
+  allPending.sort((a, b) => {
+    const ca = categoryPriority[a.entry.category ?? ''] ?? 99
+    const cb = categoryPriority[b.entry.category ?? ''] ?? 99
+    if (ca !== cb) return ca - cb
+    return b.entry.upload_date.localeCompare(a.entry.upload_date)
+  })
 
   if (allPending.length === 0) {
     log.info('No pending entries — all plans up to date')
@@ -228,22 +323,52 @@ async function main() {
   }
 
   const toProcess = allPending.slice(0, limit)
-  log.info(`${allPending.length} pending, will process ${toProcess.length}`)
+  log.info(`${allPending.length} pending, will process ${toProcess.length}${onlyCategory ? ` (category: ${onlyCategory})` : ''}`)
 
   // Concurrency: run N at a time
   const queue = [...toProcess]
   const workers: Promise<void>[] = []
   async function worker(): Promise<void> {
     while (queue.length > 0) {
+      if (rateLimited) {
+        stats.skippedRateLimit += queue.length
+        queue.length = 0
+        break
+      }
       const item = queue.shift()
       if (!item) break
-      await processEntry(item.entry, item.sourceId, item.plan, item.planPath)
+      try {
+        await processEntry(item.entry, item.sourceId, item.plan, item.planPath)
+      } catch (err: any) {
+        log.err(`  UNHANDLED in ${item.entry.id}: ${err.stack || err.message}`)
+        item.entry.status = 'failed'
+        savePlan(item.planPath, item.plan)
+      }
     }
   }
   for (let i = 0; i < concurrency; i++) workers.push(worker())
   await Promise.all(workers)
 
-  log.ok('\nRun-plan complete')
+  // Print summary
+  log.ok('\n══════════ Run-plan Summary ══════════')
+  log.ok(`  ✅ Generated: ${stats.generated}`)
+  if (stats.failed > 0) log.err(`  ❌ Failed: ${stats.failed}`)
+  if (stats.skippedRateLimit > 0) log.warn(`  ⏭ Skipped (rate limit): ${stats.skippedRateLimit}`)
+  log.ok(`  ⏱ Total time: ${(stats.totalDurationMs / 1000 / 60).toFixed(1)} min`)
+  if (stats.totalInputTokens > 0) {
+    log.ok(`  📊 Total tokens: ${(stats.totalInputTokens / 1000).toFixed(0)}k input / ${(stats.totalOutputTokens / 1000).toFixed(0)}k output`)
+  }
+  if (stats.episodes.length > 0) {
+    log.ok('  ── Per episode ──')
+    for (const ep of stats.episodes) {
+      const d = (ep.durationMs / 1000 / 60).toFixed(1)
+      const t = ep.inputTokens > 0
+        ? `${(ep.inputTokens / 1000).toFixed(0)}k/${(ep.outputTokens / 1000).toFixed(0)}k`
+        : '-'
+      log.ok(`    ${ep.status === 'generated' ? '✅' : '❌'} ${ep.id}  ${d}min  ${t}`)
+    }
+  }
+  log.ok('══════════════════════════════════════')
 }
 
 main().catch(e => {

@@ -1,0 +1,2873 @@
+The universe is selftuning itself. It
+likes to be observed. And so observers
+emerge not because there's carefully
+chosen constants of nature, but because
+if they were not carefully chosen, then
+they would be learned to evolve towards
+being carefully chosen.
+5 years ago, an unintuitive and
+startling result was dropped like a
+bombshell.
+Professor Vitali Venturin of cosmology
+found a way to model the universe as a
+neural network where the learning
+dynamics are the physics. This has huge
+implications for what [music] the cosmos
+is, what you are, and potentially what
+consciousness is, and its relationship
+to everything. [music]
+As you'll see in this conversation, this
+is not another way of saying that you
+can use neural networks to simulate
+general relativity or the standard
+model. That's been done. Instead, the
+professor shows that the universe's own
+learning is the physics. What happens is
+gravity falls out. The DRA equation
+falls out. Klein Gordon falls out. The
+algorithm behind most modern AI
+copathetically named the atom [music]
+optimizer implicitly carries a curved
+metric on parameter space. The presence
+of the curved space is essential
+essential for curve convergence.
+Spacetime curvature [music] is actually
+there precisely because it makes the
+universe's learning efficient. This
+conversation spans natural selection at
+the subatomic scale, the Boltzman brain
+paradox, Carl Fristen's [music] free
+energy principle, consciousness as
+learning efficiency, and the ramshackle
+state of observer physics, which
+venturin argues demands a three-way
+unification of quantum mechanics to
+general relativity and [music]
+observers. My name's Kurt J. Mongle and
+on this channel I interview researchers
+about their theories of reality with
+rigor [music] and technical depth even
+at the risk of limiting the audience.
+Because this slow, meticulous, candid
+approach is superior to a fast, flashy,
+potentially misleading approach. The
+universe is a black box, but today
+Venturin opens it. We'll definitely have
+a part two, so leave your questions in
+the comments section. [music] There's
+plenty more to explore. Enjoy today's
+episode of Theories of Everything.
+Professor, you claim the universe is
+literally a neural net. So, not that
+it's a useful model. It literally is
+ontologically.
+Justify yourself, young man.
+Okay. Not so young anymore, but uh I'll
+try to do my best. Um now when you're
+saying that I claim the universe is a
+neural network and uh not just a model.
+If I did say that at some point I want
+to take this this back. Okay. U as a
+physicist I am not as a theoretical
+physicist or as a physicist I'm not
+allowed to say what the universe
+actually is.
+uh what am I allowed to say is what is a
+good way to model it because um at the
+end of the day I cannot really know or
+check or test prove or disprove whether
+this is how the universe work but I can
+test and check whether uh any given
+model uh mathematical model um is good
+for modeling you know some sometimes of
+phenomena. So, so if I did say that at
+some point or somebody misinterpreted,
+no, I always talking about um what what
+the a good model of describing it and um
+and at that point, yeah, I have to say
+it looks like it's a promising
+candidate. Uh it's not it's not a final
+u there's no final verdict yet, but it's
+a promising candidate that should be
+explored. uh whether it is it is a good
+way uh convenient way uh compact way of
+describing uh phenomena in the universe
+using neural networks in in the perhaps
+how exactly I want to I want to do it
+you know we can discuss later but I just
+want to you know open uh all my cards
+and say I I would never claim that this
+is how the universe works. out. Um what
+if we get to philosophical questions of
+course we can say what if right what
+does it mean if this is really the
+universe you know how the universe is
+what kind of philosophical conclusion we
+can reach out of that uh but but as a
+physicist with my physicist hat on uh I
+can only say this is a interesting uh
+good model and it it it works uh
+remarkably well uh in the places where I
+wouldn't expect it to work Well,
+[snorts]
+okay. Now, people who know some things
+about neural nets know that they're
+universal function approximators. So,
+why would it be surprising that neural
+nets can satisfy functions which the
+universe is described by functions? Like
+it would be more surprising if you had
+the counter claim the universe cannot be
+modeled by a neural net.
+&gt;&gt; I think this is an excellent question.
+Okay. And it actually um now I can
+actually put my my finger on exactly
+what I mean, right? Uh it it is true
+right why should we be surprised um you
+know neural networks are universal
+approximators why should be surprised
+that you can uh use neural networks
+well-trained neural networks to um you
+know reproduce the dynamics that we
+observe in classical or quantum system
+with quantum systems I'll have to take
+it back it's not so obvious but at least
+for classical systems yeah I would say
+why we should be surprised what the the
+the difference that I'm proposing is
+that uh I'm not only saying that the
+trained network is good at describing um
+a given function or a given dynamics but
+actually the process of train the
+process of learning is a part of
+dynamics. So uh so it it is it is um
+different right? So now I it's not for
+me allow enough to just show you here it
+is. Here's a train network. It describes
+well harmonic oscillator. No because uh
+to train it I've used um trainable
+variables. I use some kind of learning
+algorithms and and that dynamics is not
+didn't disappear. It must be there. It
+must be part of me telling you why
+harmonic oscillator can be described uh
+by a neural network. So, so if we remove
+learning, it's a almost trivial state.
+If we say no, no, no, let's talk about
+the entire dynamical system of neural
+network that comes with learning
+dynamics that comes with activation
+dynamics and can that thing together
+combine thing can that um uh be useful
+model for uh for describing the
+universe.
+&gt;&gt; Okay. And what learning algorithm are
+you using?
+&gt;&gt; Right. So, so now um at the very
+beginning when I start you know uh
+studying this uh this uh this uh subject
+I just took the most popular stocastic
+gradient descent and like you know let's
+let's just see it looks like the one
+that used little resources and still
+does amazing amazing thing for me it was
+interesting that even a very simple
+algorithm can produce behaviors that you
+know we physicists don't have tools to
+describe okay just because it's a
+learning dynamic. So, so that was like
+uh five years ago and and that was that
+was all and and and it was already uh
+some some very spectacular result would
+come out of this uh with uh the
+collaborators we've showed that you know
+quantum behavior can emerge. We can
+discuss all that later. Now, now I've
+learned more. I knew about this, but now
+I actually understood more that it isn't
+just stochastic gradient descent that is
+um interesting and important for
+modeling the phenomena. But there are
+other well-known algorithms that anybody
+working in machine learning know about
+and use them daily. Um atom atom
+optimization optimizer this is one
+example and and uh it works for many
+many problems. it works much better. It
+has much better learning efficiency. You
+know, um you train your model and loss
+function goes down much faster, right?
+Um so, so I wanted to understand more
+recently why is that the case? What's
+what's the physical reason? What is the
+physical reason why it works better? But
+but now it isn't just stocastic gradient
+and sand, but it's a whole class of
+learning algorithms. We call it coariant
+uh gradient descent. coariant comes from
+the physics definition of coariance that
+we can again discuss and those
+algorithms um atom like algorithms and
+they are generalizations give something
+something I haven't again expected
+there's like always you study something
+machine learning you don't expect and
+you get it and so and in particular the
+emergence of curved curved space space
+and space time uh comes naturally if you
+are actually thinking about um uh
+coariant gradient descent algorithms or
+&gt;&gt; such as Adam and so the the the presence
+of metric there um you know whether the
+people in machine learning community
+know that there is a curves uh metric or
+don't know about this uh the the
+presence of the curved space and and um
+is essential essential for convergence
+essential for um algorithm to be to be
+efficient and so so yes and I originally
+it was stocastic gradient descent but
+there's new things come up um like did
+every month that I I learn about. Yeah.
+&gt;&gt; So the audience of this podcast are
+researchers in computer science
+&gt;&gt; but also researchers in physics and math
+and and that's more on the hardcore STEM
+side.
+&gt;&gt; But then there's a large swath of
+artists and miscellaneous lay people.
+And it's it's quite interesting because
+it's one lump here that's quite hardcore
+and then another lump on the softcore
+let's call side. and and and it's
+interesting that the overlap is is
+small. It just goes extremely
+nitty-gritty PhD level or much more much
+much more layman wondering about
+ontology and philosophy and so forth. I
+forgot to mention there's also
+researchers in philosophy. Okay.
+To those who are not computer
+scientists, a neural net is what what is
+the minimum someone needs to know?
+&gt;&gt; Right. So, so um I mentioned it earlier
+but let me just uh discuss it one one
+more time. the the neural networks comes
+with this one feature that even I as a
+physicist wouldn't know as a researcher
+in physics wouldn't know and that's the
+learning dynamics and that that's the
+dynamics that um is is is taking some
+function that machine learning
+researchers call uh loss function um
+some cost function you can call it some
+function that you're trying to optimize
+what is it that you're trying to do you
+you don't have to be a scientist or a
+researcher
+to understand that there is some kind of
+optimization. there's something that you
+optimize and so the neural network
+dynamics comes with that something that
+um goal you can say like you know what's
+the goal of the system what is it trying
+to do you know it's trying to uh speak
+English language without uh mistakes or
+action
+&gt;&gt; uh or it's trying to to to um you know
+do uh speechto text recognition whatever
+it is trying to do this is this is the
+difference the the presence of that
+objective function. This is the loss
+function is something that essential and
+that is well I'll stress once again it
+isn't something we are used to in
+physics uh and so and and it is
+something that machine learning people
+are used in machine learning uh research
+uh but but not us so I had to kind of
+try to to get all of the nice
+experimental results numeric obtains
+from machine learning try to you know
+use our toolbox that we use in physics
+and try to understand it but but Yes, we
+are trying to um uh tell this this story
+uh to people who are not you know
+running um models every day or writing
+equations every day then that's the
+difference that the difference. So, so
+you have you have a system that has um
+this one boring dynamics that we know
+about before activation dynamics.
+There's some state and it keeps changing
+according to some some law and then
+there is this learning dynamics uh that
+that there is some objective function
+that the system is trying to optimize.
+So the presence of those you know two
+things uh is is essential. [snorts]
+Now for neural net okay well firstly
+optimization physicists do know about it
+if they're doing any minimization of the
+lrangeian or or extreal point of the
+lrangeian so is there something
+particular about the way that the
+technique of optimization from neural
+nets compared to other optimizations
+that's well suited for describing the
+fundamental laws in such generality that
+you've been able to find out.
+&gt;&gt; Good point. Yeah. So we do use var
+variational principle right. So we study
+the extrema of lranges right action
+actually right so so we are interested
+to to to find certain solutions we take
+this beast which is called action we
+varied with respect to degrees of
+freedom and we are interested in it
+minimum maxima um now what what is new
+here is that you are not only interested
+in minimum maxima you are interested in
+the entire you know trajectory from
+whatever you started with to whatever
+complicated state you're going to um get
+and that complicated state uh will
+certainly um satisfy some variational
+principle in some sense and and and
+that's way you will kind of because of
+that see the emergence of some kind of
+classical like behavior but but even out
+of this equilibrium right there is this
+whole evolution that takes you learning
+optimization evolution to to reach uh
+the the the minimum maximum or the the
+uh that is uh present in u optimizing
+machine learning systems and isn't
+present in physics. Now I have to uh
+correct a little bit because you know
+right now physicists adapt uh machine
+learning to solve lots of problems as a
+tool.
+&gt;&gt; Okay. not as a model of physics but as a
+tool right yes so let's say let's say
+you have a very complex quantum many
+body system um you're trying to find uh
+its ground state you're doing some
+difficult problem and and so of course
+you're going to use all the tools there
+are all the computational tools there
+are including using machine learning now
+when I'm saying that um physicists
+aren't used to optimization as a model
+of of of a system that they're trying to
+say but as a tool absolutely this is
+this is a great tool and it's been uh
+used by physicists and used by physicist
+more and more now.
+&gt;&gt; What is the input into this neural net?
+&gt;&gt; Right? Okay. So, so um if we are talking
+about the the the neural network of the
+as a model of the entire universe let's
+say uh then there is that all there is
+this is the state you know you describe
+uh the state of all neurons they
+describe the state of all uh connection
+weights uh and that's the state of the
+system that's your input this is your
+initial state so in physicist we
+actually have uh a very nice setup of
+modeling
+everything. Uh we say well you need two
+things. You need to know the state and
+how it goes. Right? So now quantum
+mechanics again putting aside those are
+the only two things you need. So so the
+state or the input of of this neural
+network um is the state of all neurons
+right and then and the state of all of
+the trainable trainable and
+non-trainable variables and then they
+evolve according to the one side
+activation dynamics and the other side
+uh the learning. So, so this stays so
+this setup that physicists came up with
+there's actually mathematicians have a
+much more general setup uh dynamical
+system set up right then they don't even
+bother whether the dynamics is
+Hamiltonian or you know satisfies some
+some kind of uh constraints there's like
+energy like function they don't care
+about that uh so so what I'm talking
+about it is a dynamical system uh but it
+isn't a dynamical system uh in a sense
+where you restrict yourself to
+classical Hamiltonian like dynamics.
+&gt;&gt; In traditional physics, the input may be
+the state at time zero and then the
+output may be the state at time t. In
+neural nets, let me just talk about an
+image classifier. So an image, let's say
+you're given an image of a dog and it's
+just a square image and maybe it's 20 by
+20 pixels and so it's 400 pixels, then
+you have 400
+&gt;&gt; numbers as your input. But I mean if
+it's grayscale and then at the end you
+want to know is it a dog, is it a cat,
+is it a flower or what have you. So
+however many categories you have here as
+your output.
+&gt;&gt; So what is the input on this side? Is it
+the whole state of the whole universe
+and then the outputs the whole state of
+the whole universe again like what is
+it?
+&gt;&gt; No no but very good question again this
+is uh so now you have your um we'll we
+will keep switching heads. So now you
+put your machine learning head on and
+said okay here's how I understand what
+you're talking about. Um and I'm saying
+no. So in this sense the entire network
+with the input and the output uh before
+you even started propagating your image
+through and and figuring out whether
+it's cat or dog this whole thing the
+state of all of all of the degrees of
+freedom uh is the state of the system
+not just input the whole thing. Now in
+the case of the um uh of the of the cats
+and dogs classifier uh it happened to be
+that there is in your problem there is a
+clear distinction uh what is your
+calling input and what is it that you're
+calling out right so there is a kind of
+a flow of information in that in this
+direction but this is just because you
+set up your network that way you didn't
+have to do you could have used recurrent
+networks you could have used a lot more
+complicated loss functions so for
+example In this case, your loss function
+would be well did I get it right? Is it
+a dog or you know zero or one at the
+end. Uh but but it's it is just you're
+talking about restrict restricted class
+of machine learning problems and we in
+in this case the information really
+flows in in one way. Now if we have um
+the entire network entire universe
+described peral network it may happen
+then at some place there is like only
+left going wave or right going wave
+where information only goes uh goes one
+direction but that's because of the like
+kind of initial conditions that you set
+up not because your network cannot start
+up with some other states and and so so
+imagine in your in your example with a
+cat do imagine that the zero and one
+that you got at the end, you loop it
+back uh to the input, right? And then
+and then now it may not do something
+that you want it to do, but it will run
+uh you will get this, you know, um pixel
+uh change changing one of the pixel in
+the what you call input and then and
+then and then going through. So in this
+case still the whole thing is is is
+input at previous time step. So probably
+better called the state of the system in
+the previous time step. And then once
+you know one step of activation took
+place in the next time step and then
+another step of activation took a third
+time step and so forth and and that's
+kind of uh time evolution of the
+activation dynamics and then there is
+learning right so then you have to
+upgrade your weights uh which is which
+is a game and and you can just keep
+going keep activating and and and
+learning. [snorts]
+This video is sponsored by Short Form.
+If you want a free trial and an
+exclusive $50 off their annual plan,
+then go to the link in my description,
+shortform.com/e.
+If you're like me, you've encountered
+books that are so dense, finishing them
+is actually just the beginning. Short
+form helps with that. Their book guides
+go far beyond pastiche summaries. They
+critique, they add context, they include
+interactive exercises and connect ideas
+across authors. Take Girdleserbach or
+The Master and His Emissary. two of the
+most demanding reads in consciousness
+studies on the popular market. My method
+is I read the guide first, then the
+book, then I read the guide again. So,
+it's a tptic of engagement that cements
+understanding, better understanding for
+me. The GEB guide maps recursive
+structures in a way that exhibits
+intellectual plyotropy where one insight
+branches into consciousness,
+computation, and self-reference
+simultaneously. Shore form covers
+philosophy, science, and psychology.
+Ipso facto, the intellectual core of
+this channel. They publish new guides
+weekly and subscribers vote on what
+books get covered next. Their browser
+extension, Short Form AI, summarizes
+articles and YouTube videos with a
+single click. Go to shortform.com/e
+for a free trial and an exclusive $50
+off your annual subscription. That's
+shortform.com.
+Some of the key equations in physics are
+general relativities. So Einstein's
+field equations or DRA or Klein Gordon,
+I know that you're not able to with your
+words say how you derive them exactly in
+such a way that it's rigorous, but we
+can of course point to your papers and
+lectures on screen right now. But either
+way, can you just walk us through as
+much as you can with your words as to
+what you started as your input and how
+were you able to get these as outputs?
+&gt;&gt; Sure. Um so so let's start with the uh
+with the uh the field theory. So we'll
+know very well that u the standard model
+standard model of high energy particles
+high energy physics is very well
+described by by the you know collection
+of fields and so so if you want to uh if
+you want to get that physics out of your
+um framework mathematical framework you
+want to show how you know fields fields
+would emerge how we would get fields out
+of it. Now it's it's it's a it's a
+difficult task. So let me just put it
+right away and it's not something that
+um I can say well here it is I get um
+you know quarks three generations I get
+everything and it's simple and I can
+like write one paper um and go home. No
+no it's not not even close. It took
+years to get Duck equation out of. Okay.
+So so client Gordon was easier. Uh
+Hamiltonian mechanics was easier. uh
+getting getting firmians getting direct
+equation it turned out um to be to be a
+difficult task. So just since we talked
+about this direction of information flow
+it turns out that for the direct field
+there's some tensor factor something um
+in in your neural network setup has to
+have um an antiymmetry in it. So it has
+to be antiymmetric and so if you put
+that in if you put this constraint now
+why would you put this constraint um I
+don't know is that something that this
+constraint was learned because of the
+some kind of microscopic optim
+optimization algorithm that's running
+great can I show it no what I can show
+if I assume a certain constraint u if um
+I only take into account certain
+trainable degrees of freedom that's
+essential so we cannot throw away
+trainable and certainly non-trainable
+then the dynamics resembles um of you
+know latis field theory uh where you
+know individual nodes would be like
+neurons and they would have some very
+precisely defined like connections to
+each other it's not like you know any
+connections would do the trick so as I
+said getting client Gordon scalar field
+equations was easier it's like kind of
+more generic getting something like dac
+is harder and we're not there I'm not
+ready to write down the standard more
+lynous say here it is so so so that that
+for the field theory now um the other
+part is Einstein equation once again um
+telling you that I've have finalized my
+understanding how um Einstein equation
+emerged from this framework would be a
+lie this is not true uh but what I do
+know I do know how to get uh emerg
+emergent uh space curved space from it I
+also know how to get emergent space time
+from it. That that's again I mean it's
+like
+&gt;&gt; and that's a subtle difference that most
+people wouldn't pick up on. Okay. So
+expand on that please.
+&gt;&gt; Sure. Sure. So, so you know uh the the
+space you can you can probably
+understand by showing like surface of a
+apple right and or a chip potato chip
+and you'll say well it looks like two
+dimensional surface uh and you know
+since we are threedimensional beings
+easy to look and say well yeah there is
+it's curved it's not something flat I
+cannot put it on the on my table which
+is flat and the same for the potato chip
+if I take a potato chip which has
+negative curvature Apple have positive
+uh curvature curvature if I put on the
+table it wouldn't be laying down. So so
+that's kind of our understanding as
+threedimensional creatures of what
+curvature looks like. Now this concept
+can be generalized to 3D. U now I cannot
+now actually um you know draw it or or
+move my hands because I am in 3D
+dimensions. But
+&gt;&gt; but we know the tricks. We know the
+tricks how to do this calculations, how
+to imagine. We even know how to draw
+three-dimensional objects on two
+dimensional um
+pieces of paper. So so it's not so
+surprising that we are able to carry out
+calculations uh in 3D. And so when I
+saying the 3D curvature uh I mean the
+three-dimensional space which is curved
+and that turns out to be actually not
+you know some feature of this theory. It
+is should be a feature of any theory of
+everything. So if your theory doesn't
+produce in some limit emergence of the
+curved space then you are against
+Einstein and and and of course this is
+the one of the most beautiful theories
+that we have and and um we cannot just
+throw it out of um our considerations.
+Okay. So, so that's that's
+threedimensional space. Now, for the
+space time, uh that again involves a
+little bit um of of
+if you want to explain it correctly, you
+have to write equations. But since the
+audience is, you know, bi modular
+distributions, we should try to explain
+what spaceime means um even in in that
+sense. So what turns out to be that um
+uh the space time when earth space uh
+when you're talking about that you you
+have to tell how you measure distances.
+So what do you mean by distances between
+two points? If you have that definition
+of how to measure distances which has to
+satisfy certain requirements then then
+you know um um what kind of space you're
+dealing and and then the the apparatus
+for that we call it a metric tensor not
+very important and spacetime comes with
+very very um strange at first you tell
+to any student that this is how
+distances should be measured and they
+will question why this looks bizarre. It
+turns out that to measure distances in
+the uklidian space or in just space you
+take like x square + y square and take a
+square root of this pythogan theorem.
+Well, it turns out that if you are
+working in space time, this isn't true.
+You should not be adding the two squares
+and taking a square root. You should be
+subtracting. So, one of those squares
+which corresponds to time coordinates
+has to be subtracted. And because of
+this stupid science uh difference there
+is a huge difference between space and
+and and the space time. And so it took
+you know some time to get the curved
+space but if you cannot get uh space
+time then again your theory is not uh in
+agreement with the observation and we do
+observe a curved uh spaceime um you know
+my background is in cosmology and and
+the spaceime is important there. I hope
+I wasn't too technical because
+&gt;&gt; No, no, no, no. I and I have a technical
+question.
+&gt;&gt; You're absolutely right. Actually, I I I
+love that you said that because this is
+always true. uh there is those who
+actually know know the terminology uh
+and would appreciate me speaking more
+like in the using the the physicist or
+machine learning terms and that those
+who don't and you don't want to board
+anyone of those and so you
+&gt;&gt; so the aim of this podcast is to aim
+toward researchers toward postocs and
+and graduate level PhDs and and
+professors and so forth and that the
+advantage of this podcast or the niche
+part of it the difference in it is that
+it's as if for that other distribution
+of people, they finally get to peer into
+what it looks like when when professors
+are talking. I'm not a professor, but
+you get the idea. So, okay, you
+mentioned lattice field theory and
+lattice field theory has a problem with
+with firmian doubling. So, I'm curious
+if anything about your approach helps
+solve that problem.
+&gt;&gt; No. And we're not there yet. not even
+close to to actually fitting the um
+lettuce like field theory. I shouldn't
+say lettuce field theory because it
+isn't but it is let us in in a sense of
+how the weight matrix is arranged. So
+you you you have a lettuce. Now this is
+actually why I'm not happy with this
+particular model of of uh uh of how
+fields emerge. Okay, there is now uh
+another one another approach which isn't
+had which I wasn't able to take as far
+as getting permians out of this but the
+approach is that uh it's closer to
+particles as opposed to fields now we do
+know that fields work better and then
+particles are kind of uh only only a
+good description of certain links right
+but uh so speaking of that second
+approach is um neurons or some subn
+networks they behave like particles
+in the emergent space and that emergence
+space is the space of actually trainable
+variables and I already mentioned Adam
+like algorithm and so you know machine
+learning people would say okay u now I
+know that atom comes with metric and
+there is curvature um now but from the
+point of view of of the physicist um
+it's more like there is second approach
+again as I said you know the theory is
+not final and so you take all approaches
+you can and you're just trying to say
+Okay. Well, what can I say? Can I get
+firmness? And in this second approach,
+it is uh as if what you have some kind
+of subnet network of neurons that that
+are doing their usual business
+activation learning dynamics. Uh but but
+their motion is considered in the space
+of trainable variables and and that
+space does not have any lettuce
+structure. It is just a completely
+continuous space. Uh and then you do
+have places in that space where no
+states are occupied like vacuum um and
+and even if there are you know once in a
+while certain uh neurons appear to have
+such and such configurations of the
+trainable variables this is not it's not
+a field it's a kind of discretized
+more like um u similar to particles as I
+said but also strings right strings are
+assumed not to actually be fields in a
+sense of occupying or They're they're
+like um you know one-dimensional
+objects. So I think it probably good
+idea to to to um say like you know
+fields that work extremely well are
+threedimensional objects plus one time.
+uh strings are um onedimensional objects
+plus time and those neurons in this
+second picture are like one-dimensional
+objects plus time or zero dimension
+but
+&gt;&gt; okay I think what would be super useful
+for people if on screen right now the
+video editor will place in what a neural
+net looks like in terms of sure we're
+then giving tutorials on on what neural
+nets are and then I think what's useful
+would be for you to say what your theory
+is not saying so for instance in the
+beginning I said
+why at all is this surprising if a
+neural net can approximate any function
+you're like well but that's not word
+we're not saying that okay something
+else you're not saying and again
+referencing this image is you're not
+saying that each one of these nodes is
+somehow space discretized
+&gt;&gt; exactly
+&gt;&gt; because there are other causal set
+models and and causal dynamical
+triangulation models and other
+discretized forms okay you're not saying
+that neither are you saying that this is
+a hyperraph model like a wolfer model.
+Okay. So, when you start to talk about
+this with your colleagues, what else do
+they think you're saying, but you're
+like, "No, no, no. That's not what I'm
+saying. It's this."
+&gt;&gt; Yeah. So, so the first thing you
+identified right away, and you're
+absolutely right. That's what people
+think, and I'm saying, "No, learning
+must be there." And you're absolutely
+right. Now, the second thing is is uh um
+I am in the in in the superposition of
+saying and not saying it. So, I'm saying
+there's two possibilities and both of
+them are being um explored. One
+possibility that it is like um um um
+lettuce space whether it is um you know
+square letters or some other letters
+where it has triangulations some you
+know hyperraph like model which is uh
+and that that is a possibility and that
+is a possibility that I'm exploring uh
+it it it comes naturally because neural
+networks are networks you can easily get
+a graph of this now in in distinction
+from there uh um from the models uh
+other models where where you have this
+network or graph-like structure is that
+I am constrained to how this network
+will evolve. I'm not able to just say uh
+look you know you have a graph uh now I
+want to it to form a Taurus or I want it
+to be flat. I'm not able to just impose
+rules without saying where they come
+from. So where they can from is is for
+me to specify actually the one most
+important object in this entire theory
+like you know uh in physics we have one
+object that kind of describes the entire
+series theory action or lranian you give
+it Hamiltonian uh and you're done so
+here you have to specify loss function
+and loss function is a is a very strict
+object it's not it's not I cannot write
+um you know it's it's a it's a scalar
+right so you have to have to pay
+attention to that. And so if you if you
+want to use this hyperraph like
+structure and you want to see how it
+evolves and you know that experiments
+suggest that you have to form such and
+such approximated geometry, you have to
+go back and say all right what loss
+function would give you that and that
+kind of puts a limit. So this is one
+approach uh which again I say and not
+don't say because in this approach I do
+say that in this alternative approach
+it's like two types of neural network
+theory if you wish right uh type one is
+that yes you you you discretize it and
+you work with it. Um uh type two you you
+you your space is a space of trainable
+variables and things involved in that
+space and there are pros and cons of of
+both approaches and and this in the
+second appro in the first approach your
+space is discrete. There is nothing
+between the nodes. U in the second
+approach your space is continuous. uh
+continuous trainable variables, you
+know, they were not continuous. Uh you
+wouldn't be able to use gradient descent
+or atom whatever. Um and so and so and
+uh and you try and you try both things
+and you try and you see that the one um
+approach helps you and it it's very
+similar to what we do particles versus
+you know let us phys theory which is
+comes with its own problem both come
+with problems but yeah I don't want to
+uh say that I don't say that but I say
+that in addition to that I also you know
+um investigate this this other
+possibility that actually recently
+proved to work um
+better in a sense because the the the
+the curvature curvature emerges not
+because I've assembled my graph in a
+certain way uh but because it is an
+algorithm which is more efficient.
+&gt;&gt; So so the curvature is a way for the
+system to learn faster not for because
+of so it's like a more direct way of
+saying where the curvature where the
+geometry comes from. I do know that uh
+in machine learning people literature
+people are using atom they're not using
+the terminology of the curved uh uh
+space of trainable variables which
+emerge from learning it's again it's not
+something you specified ahead of time
+it's emerges as an efficient algorithm
+but but this this is what what I'm
+saying here
+&gt;&gt; so it's not the curvature of the loss
+landscape that corresponds to the curved
+spaceime of our universe
+&gt;&gt; oh absolutely no uh it's uh it's like
+you you're saying I think it's a very um
+useful analogy when you're talking about
+loss function is to think about
+lrangeian so it's not the curvature of
+the lrangeian landscape
+&gt;&gt; yes okay
+&gt;&gt; that gives you the curvature of a space
+no um it is the degrees of freedom in
+the lrangeian which we call metric which
+describes a space which is curved so so
+yeah so uh there is there is a big big
+discation and and and same same here. Uh
+now um maybe this is a good point to
+answer since I'm drawing this connection
+between lang and loss function. Uh
+originally I was associating the loss
+function with more of the energy. Um and
+uh because because uh you know there
+were like stoastic thermodynamic
+description where a canonical ensemble
+naturally would emerge uh from that
+picture. Later I understood that adding
+a kinetic like term to the lrange due to
+loss function actually makes learning in
+very um certain situations better. So
+like you know you add one more term
+which isn't maybe the term that you are
+trying to optimize but once you add it
+to the loss function and once the loss
+function uses this term to to to it it
+learns fast. So, so, so there is there
+is this little bit of of a new twist.
+Um, if you want to minimize something,
+you may actually use a stochastic
+gradient descent something else,
+something with with with an additional
+term. And so, in this case, I think it's
+a very good analogy to think about loss
+function as as um as a as lrangeian,
+although uh they are different objects.
+Of course, [snorts]
+The Economist covers math, physics,
+philosophy, and AI in a manner that
+shows how different countries perceive
+developments and how they impact
+markets. They recently published a piece
+on China's new nutrino detector. They
+cover extending life via mitochondrial
+transplants, creating an entirely new
+field of medicine. But it's also not
+just science. They analyze culture. They
+analyze finance, economics, business,
+international affairs across every
+region. I'm particularly liking their
+new insider feature. It was just
+launched this month. It gives you, it
+gives me a front row access to the
+economist's internal editorial debates
+where senior editors argue through the
+news with world leaders and policy
+makers in twice weekly long format
+shows. Basically, an extremely high
+quality podcast. Something else you
+should know about is that if you go to
+their app, they not only have daily
+articles, but they also have long- form
+podcasts with their editors and writers.
+This is also available online. Whether
+it's scientific innovation or shifting
+global politics, The Economist provides
+comprehensive coverage beyond headlines.
+As a toll listener, you get a special
+discount. Head over to economist.com
+to subscribe. That's economist.com/toe
+for your discount.
+Earlier you said that the quantum
+dynamics were extremely difficult,
+non-trivial or what have you. So walk us
+through the insight when you were
+studying machine learning. Why were you
+even studying machine learning? You
+mentioned cosmology. I don't know about
+its connections there for you in your
+particular use case.
+&gt;&gt; Anyhow, walk us through
+&gt;&gt; you as circa six years ago or so. Yeah.
+Okay. So, so uh uh six years ago I I was
+on sabbatical leave. So when you're on
+sbatical you can um do whatever you
+want, right? So um and uh first I I
+finished the project that I was uh
+interested in at that time and that had
+to do with certain dualities of quantum
+mechanical strongly coupled systems that
+I thought would be a good uh candidates
+also to describing curved spaces and you
+know quantum mech quantum gravity um
+aspects of that and then um I had time
+and so um I attended many many talks by
+machine learning people who would
+present nice slides, nice results and uh
+and no formulas. No formulas, no
+equations uh apart from something you
+know like stocastic gradu
+something that kind of um looks trivial.
+Uh but I knew that neural networks and
+and they would always say well it's like
+a black box. Um black box meaning it
+works. We don't really know why. So I
+had time I have a few months and I said
+okay why not just uh try to uh to open
+this black box um you know because
+universe is also a black box. Nobody um
+in the beginning told us that this is a
+standard model and somehow we came up
+with the tools of lrangeian hamiltonian
+mechanics to actually understand why it
+works. Maybe not understand why this
+particular lranian but understand at
+least how how to model it. So that was
+my motivation uh taking taking it and it
+has nothing to do with quantum mechanics
+and so I at this point I I I see the
+system with many degrees of freedom. Uh
+they evolve according to learning and
+activation dynamics. So I knew that some
+of the physics will be relevant but not
+all of it um and because it would be
+more complex. But if you see a system
+with many degrees of freedom your first
+reaction well maybe uh you can you can
+discuss an samples statistical ensembles
+and maybe in some limit you can
+understand how the system um behaves in
+what we call emergent
+um regime. So so so something like can
+we have a thermodynamics of uh machine
+learning. So something along this line I
+knew it was different because of the
+learning dysics. So that I figured out
+sooner. But can we have a certain
+thermodynamic description which can be
+verified? Um now is there a notion of
+temperature? Is there a notion of uh
+entropy? Um is there is there you know
+first second law of thermodynamics?
+Would they still hold or do they have to
+be metified? So that was kind of you
+know you have a you have a toolbox that
+you think should be the first you try to
+model the system. Um and that that the
+direction I went um before as I said it
+quantum mechanics was not on the horizon
+but then I saw that because of the
+learning dynamics
+uh it is not uh the system just doesn't
+go to a boring canonical ensemble
+distribution and stays there. It has a a
+very interesting behavior even in
+equilibrium because of the presence of
+those two different dynamics activation
+and learning. And so the idea was uh to
+to set up some kind of variational
+principle principle that maybe uh
+describes it beyond thermodynamics. So
+first you know thermodynamic are there
+any microscopic objects like temperature
+entropy that would describe it but maybe
+we can go beyond it. uh since this this
+um equilibrium I call it learning
+equilibrium is kind of boiling and then
+you know things fall out of the
+equilibrium and go back and it's kind of
+not
+&gt;&gt; uh can you like really you know zoom in
+and say well I don't want to just
+calculate uh temperature pressure volume
+what whatever you usually do although
+you have to still define all those
+things in machine learning system and I
+have to can you zoom in and say I'll pay
+attention to let's say only uh trainable
+variables I will still integrate out and
+and kind of course grain over
+non-trainable. But but pay attention to
+train them. Well, the reason for that
+was that we know that they're
+non-trainable. They like flip very fast.
+Uh you know, you put your input image
+and get caught and dex or or cats or
+dogs and out in your example, right?
+Zeros or one. So, so the this activation
+goes fast and the learning goes slowly
+and then you calculate your loss
+function and gradually propagate changes
+back. So I knew there was two two skills
+and if anything we know in physics is is
+that's what we should do. We should
+integrate out
+&gt;&gt; remove the irrelevant information and
+keep only relevant and so that's what I
+did. So I integrated out this u and say
+okay how does this uh system behave and
+and it turned out that uh behavior of
+this uh trainable variables if you
+assume you have to assume certain um
+principle for how entropy changes. So
+assume maximum entropy production
+extreme um stationary entropy production
+principle but if you assume that that
+the equations you write um um derive
+from that are the mandolong equations.
+Now mandolong equations um again those
+who know but those who don't know it's
+close to quantum but it isn't quantum.
+So there is still this step of um you
+know quantum is is this theory where you
+uh the the what what propagates is not
+the probability but the square root
+probability square root of probability
+and that's the relevant degree of
+freedom and that comes with this quantum
+phase complex numbers right so we all
+know that you know and so so if you only
+pay attention to the mandolong equation
+as as you limit this isn't quantum yet
+but it it it gives you a hope so maybe
+you can actually understand why the you
+know this uh complex phase would emerge
+what is the physical meaning of the
+complex phase not not not like exactly
+quantum mechanics but maybe as an
+emerging quantum mechan
+um he he pointed correctly pointed out
+that we need the discretetness of the
+phase for this to work we don't have to
+call it a phase but something has to be
+discrete something you change discreetly
+and your loss function let's say doesn't
+change right much um uh or or or the
+dynamics doesn't change. So that's what
+the meaning of the complex phase you you
+rotate it by two pi and you come to the
+very same point
+&gt;&gt; right
+&gt;&gt; so having this within the system uh and
+it's like having h bar you know having h
+bar having something that
+&gt;&gt; yes
+&gt;&gt; uh is like without this it isn't quite
+quantum yet although in certain regimes
+your system and so it took this um
+little uh extension to the original
+derivation of mandolong equation like uh
+almost classical quantum equations Mhm.
+&gt;&gt; And that came from very interesting uh
+uh picture suggestion that we made um
+that actually can you can explain it to
+to artist to anyone. Okay. Uh so you
+have your system a learning system and
+yes you pay attention to trainable
+variables and then yes they follow
+almost uh a shortinger equation but for
+it to follow a shortinger equation the
+system has to have access to a bath to a
+reservoir of neurons that it can borrow.
+It's like you know external resources.
+You run your own machine learning system
+but you say well if you need here is few
+more um you know neurons you can use you
+can plug in if you don't need it just
+give it back and so if you have this
+access to to the system in physics we
+call it grand canonical ensemble move
+from canonical ensemble to the grand can
+so if you do have that
+&gt;&gt; uh if you like uh in your algorithm you
+you you you provide that option uh
+whether it is a option that you provided
+by you know actually programming it this
+way or whether it's an emerging
+phenomena because you know there is an
+emerging phenomena certain neurons stop
+working and start working stop working
+and start if you do that then it turns
+out that you do get shorting your
+equation in in in some limits again it's
+not it's not an exact shinger equation
+which means that in certain limit it
+should be violated but with that little
+twist with this um um space of neurons
+that you can kind of hire like you hire
+to do some work and then once you don't
+need it uh you put it back uh with that
+your dynamics effectively becomes uh
+linear because shortinger is linear and
+and described by Schroinger equation and
+and then everything fell into places and
+at that point it was actually u more
+than just a proposal for some abstract
+theory that in certain limit can
+describe mandolong blank equation which
+isn't quite but it is actually you could
+see that well maybe this quantum can
+emerge from completely class. It was
+completely classical system. You have to
+understand. So there's no it's not the
+quantum machine learning. It's a
+classical machine learning but with this
+little twist it it um acquires this
+quantum like behavior.
+I do want to get to consciousness.
+Before we get to that, I have a sort of
+a silly question. So in machine learning
+nowadays, there's a huge field of
+interpretability.
+So people want to peer into the black
+box and it makes sense to some degree
+when it comes to LLM because there's
+semantics underneath of what LLM are
+trying to capture. So you're trying to
+understand what are the LLM's doing? But
+when it comes to the universe more
+abstractly here in your model is our
+universe interpretable
+right so let me start with machine
+learning uh then move on to physics and
+then maybe to uh to more general answer
+to the question. So in the machine
+learning the fact that we need to
+interpret how um machine learning system
+work what happening inside uh is
+essential and and and I already said
+that physicists had dealt with this
+problem and our tool was yeah model the
+dynamics of this uh system but then
+model it as a as a as a Hamiltonian
+system so or as a lrangian system. So
+that was our way to digging into the
+black box. Now wi with um um LLM like
+models or you know with any other
+machine learning systems you you you um
+start with designing certain
+architecture. So architecture can be
+written also in a certain way that that
+is interpretable in sense you will know
+exactly which blocks do what. Um and and
+that would be uh similar to uh writing
+not just something that produces results
+but something that produces result and
+you know why it produces results because
+there is a term uh in the loss function
+or in the lranian and if you remove that
+term then it would produce different
+results maybe your llm would not work
+your chat GPT would break and so in this
+sense this this is a way um to model and
+understand how the interiors work. So
+maybe this is the term that is
+responsible for um math being right uh
+in the large language models. This is a
+term that is responsible for a good uh
+translation uh between you know certain
+languages. this is a term that
+responsible and then and then you can
+kind of concentrate on the term and say
+okay well I don't like my LLM model is
+not producing uh you know not doing good
+calculations of tensors which which it
+isn't so if you look and try to kind of
+you do tensor calculus um all models I
+tried they all you know at some point
+start producing um garbage results and
+so you have to kind of locate it so
+there's certain tasks they don't know
+how to do it and maybe just the term
+that you to tune in your loss function
+in the lrangian in the architecture. Now
+the same thing uh we and this is
+interpretability like how do we
+interpret why is it you know certain
+things work and certain things uh don't
+work or what is it inside of the state
+of the neural network that is
+responsible for one thing another how to
+do alignment right what is it there that
+I can say to my neural network and then
+in some sense it's will align with my um
+with my interest with with my loss
+function
+&gt;&gt; so um so we know how we know how to do
+it with physics I think this tools
+toolbox and physics can be useful uh to
+to um enhance um our our
+interpretability to inter interpret how
+the uh LLMs work, how machine learning
+systems work. Now uh and coming back to
+to the uh physics well we can also
+should be able to dig deeper than just
+writing down um a symmetry group and
+saying okay well this is the standard
+model this is it you know we can start
+asking question why is it that the case
+you know what is it you know because in
+this description the field theories on
+everything we observe in microscopic
+levels are emergent phenomena they would
+come from some some microscopic loss
+function where um just to throw one
+example you know Maybe each neuron wants
+to uh minimize entropy
+&gt;&gt; uh or you know maximize certain local
+loss. So if he wants to minimize entropy
+it's not a good idea to connect to all
+neurons because then then it will be
+chaotic. Every state every next time
+step will be chaotic. But but not
+connecting to anything was also good. So
+maybe neuron individually on a
+microscopic level will try to find some
+and then and then there will be some
+kind of RG flow where this microscopic
+loss function would give rise to so more
+microscopic behavior and then we would
+see say okay well at this level it is
+described as a standard model but the
+flow doesn't stop there and then you go
+okay biology level and and a lot of work
+that we've done um again we may touch
+upon this on during discussion of
+consciousness but but there there again
+I mean it's doesn't mean that at the
+biological level it should be the
+standard model that governs the correct
+description but so so so you if you can
+identify how the interiors work you can
+kind of uh RG flow it and understand how
+things work now and and for the more
+general audience uh this is just um a
+way of saying uh we are describing the
+universe around us and depending on the
+scale on which discuss the different um
+languages are appropriate more or less
+So on a very microscopic level the
+language is maybe neural networks. How
+on the on the on the bigger level maybe
+the right language is a field field
+theories.
+&gt;&gt; Interesting. Now even bigger uh genotype
+or you know phenotype and then even
+bigger and so so you should not be
+surprised in this approach that on each
+level there is just a different language
+which is uh correct for describing
+certain
+on each scale on each energy different
+configuration there'll be different
+languages which are more appropriate. So
+that's kind of what we are saying here
+and and and it shouldn't stop here you
+know once we move on to gravity
+cosmological scales. Uh yes we are
+trying right now to use the language of
+field theories to describe cosmology
+inflation gravity but things don't quite
+work on a cosmological level. There is
+this dark energy problem. There is dark
+matter problem. And so so maybe once we
+adjust the language and start um doing
+describing those scales using different
+language different modeling uh then then
+uh you may have a more agreement with
+the experiments that than we have now.
+&gt;&gt; So would now be a good time to talk
+about your second law of learning?
+&gt;&gt; Sure. Sure. Sure. I mean I've I've
+touched upon this. So I I I think it's
+it's important uh to emphasize that um
+as um just like the second law of
+thermodynamics we really like it u but
+we should understand that it doesn't
+work uh it works all the all the time
+until it doesn't. So we should not take
+the any any um microscopic laws should
+be taken with a grain of salt. So
+because but nevertheless it is useful
+for many many different calculations and
+so the second law of thermodynamics
+tells that the entropy should grow and
+then if you really u take it literally
+then you will have hard time explaining
+the emergence of life you'll have hard
+time explaining uh many
+biological phenomena if you want to be
+honest now if you want to
+&gt;&gt; wait a moment why would why would you
+have a difficult time explaining the
+origins of life because it's always that
+global entropy increases but you're
+going to have local
+&gt;&gt; right but okay but but if you're only
+talking about global entropy there is
+just one equation there's only one
+number it's not very interesting what's
+interesting is what uh and okay it's
+increases or decreases doesn't matter
+what's really happens locally uh because
+you know in in the thermodynamics is you
+have any subsystem big enough and and
+the locally entropy will grow and so
+instead of just having one number in the
+entire universe that you've
+observed that grows
+What's more interesting is to pay
+attention to what happens in the
+different subsystems and then explain
+how the entropy and how you define the
+entropy. It's also like you know because
+if you talk about gravity it's very
+important to think about how you
+actually define entropy. This is now you
+have a space that is curved. Now uh if
+things if if gravity uh pulls things
+together wouldn't it mean that the
+entropy decreases? Right? So you have
+kind of before they would be distributed
+everywhere and they pulled together. Now
+naively you would say it uh it decreases
+but then I say well no no no no no I'll
+define entropy a different way I'll I'll
+I'll catch the problem so so that it
+doesn't uh but again if you only pay to
+attention to one number that you want so
+badly to to increase then okay let it be
+uh I I'm saying that uh the usefulness
+of of second law of thermodynamics that
+can be applied for for many subsystems
+very successful and and then when it but
+but there are certain things that with
+this you will have hard time explaining
+and as a cosmologist I have to say you
+know we have one beautiful theory in
+cosmology called the uh the theory of
+cosmic inflation that that is kind of um
+is is hopeless it's it it doesn't know
+what to do uh if you try to assign
+probabilities for for observers to
+emerge and uh and and if you use the the
+usual classical mechanical or you know
+physical approaches and trying to
+calculate what's the prob ability of a
+certain observatory term. Is it easier
+for us to go through this uh you know
+inflation than galaxy formation then uh
+biology formation or it's just easier
+for us to form Bolzman brains that are
+floating uh in the empty space with the
+memory of us thinking that we are on the
+on the meeting right now. Um and you
+will see that in in this very successful
+otherwise models of cosmology you will
+see that there very often you get the
+answer that yeah all this correct what
+we think is correct it just gives you a
+lower probability it's higher
+probability for you just to nucleate out
+of nothing and that's called the uh
+Boltzman uh brain problem. Um so so so
+no it it's once you uh first of all once
+you uh enter gravity territory cosmology
+you have to be careful about what you
+call entropy and then and then there is
+this problem of um of defining
+um probabilities for for us um observing
+what we observe. So um and and people
+employ different um ideas one of which
+is entropic principle. Well let's put
+that in mind. So maybe uh we should not
+be just a random point in space because
+if it we were uh we probably would not
+be observing what we observing now.
+Maybe we should only look at the places
+that are actually tuned for life. Um,
+smart enough observers who can ask those
+question. entropic principle
+&gt;&gt; and to be clear the anthropic principle
+is different from an entropic principle
+which is
+&gt;&gt; good point very good point actually it's
+a lot of confusion about that and and
+partially um um because u yeah because
+entropy is used in those conclusion but
+you're absolutely right entropic meaning
+uh with an a starts with an entropic
+principle and that's people you know
+many the very large u fraction of
+physicists don't like the principle.
+They disregard it as as
+non-scientific. Now in cosmology, this
+was kind of only game in town. Now until
+Lee Smalling proposed his natural
+selection approach, which is I think
+closely related to what what I'm trying
+to say interesting and um with with a
+one twist I I'm actually giving a
+mechanism.
+&gt;&gt; Yes. Yes. a mechanism of of how how um
+instead of universe being you know
+fine-tuned for life it is it is
+selftuned for life. So you start with
+whatever you want because universe is
+learning. So it's consist of learning
+subsystems and the learning subsystem
+they all try to learn what what around
+them in the most stupid way because of
+that u you should not you're not tuning
+anything it is selftuning itself. it
+likes to be observed. Uh and so
+observers emerge um not because there's
+carefully chosen um constants of nature
+but because if they were not carefully
+chosen then then they would be learned
+to to to evolve towards being carefully
+chosen and that kind giving you a
+physical mechanism of how um ideas that
+that were um and actually small leto
+told me that this idea came in before
+him there were philosopher there's
+always any idea you describe there's
+always some philosopher in the past who
+said the same okay so so even so so so
+those ideas were of course but here the
+you can actually uh say what the
+mechanism is for for this for this to
+take place
+&gt;&gt; and then in the comment section there'll
+be oh and this philosopher is predated
+by the vdic texts
+&gt;&gt; yeah there's always someone before yeah
+but but I don't I don't I don't I don't
+think I I don't think there is
+competition here. It's just with every
+new time you rediscover something um you
+what you're trying to do is trying to
+make it more rigorous using the tools
+you currently have. So uh you know there
+were no machine learning systems 100
+years ago. There were no um neural
+network dynamics back then. Now we have
+that and so those are the tools. You
+know can you use those tools? Um well
+speaking about the tools there's one a
+little problem that kind of maybe unique
+maybe not. Um many times physicists came
+to realization that new tools are
+needed. Right? Einstein is a great
+example. You know who would have thought
+that um curved curved spaces or
+geometry is is important uh for modeling
+the the the universe. Nobody but
+Einstein came around and said no this is
+the mathematics you need you need
+differential geometry to describe. So
+but at least at that time uh there was
+already body of work uh where you can
+just take this framework with neural
+network situation is a little bit
+different. We have so much experiments
+so many experiments. So every every time
+you are amazed by what large what
+neurondog does it's an experiment a and
+and not so much of the actual theory of
+are you being able to actually predict
+ahead of time yes this architecture will
+work and no that will not work for such
+and such reasons. So that's kind of the
+the theory is is is a bit behind here.
+Uh which is like perfect uh playground
+for the theories because I can you know
+set up experiment
+write down my theory and then test it
+experimentally numerically right away.
+So that's that's great. Okay. But uh
+that's
+a little diversion from I want to get to
+where you said that the universe likes
+to be observed. We're going to get to
+that and we're going to get to
+consciousness. But before we do, I
+recall you saying that natural selection
+operates on the level of subatomic
+particles. Am I shaky in my
+recollection? Not from this
+conversation, but somewhere else.
+&gt;&gt; No, no, you you absolutely it may have
+not been in this conversation that I
+said that. I certainly wrote about it in
+the papers. Uh and yeah and so so this
+this natural selection like um where by
+natural selection I mean the more useful
+configurations of networks survive
+because they help loss function to be
+minimized better and the and the other
+configuration will not survive. So in
+this sense nature those um architectures
+that are useful for learning will stay
+uh and those who are not useful for
+learning will be um removed because
+because they are not their loss function
+is not as as low as should be. So in
+this sense yeah but it doesn't work just
+on the level of um particles momentary
+particles. Remember again about this
+analogy of the right language on
+different scales. So if you want to talk
+about this at the level of particles,
+yes, you would say particles are such
+you know the way they are is because
+they underwent the the series of natural
+selection of their scales and figured
+out that this is the uh states this is
+the state of their neural networks that
+describe them uh that are um allowing
+the their loss function to be the
+smallest. But but this this is can be
+this argument this um natural selection
+argument or uh I call it more you know
+learning ar argument right so you're
+trying to minimize something can it can
+be applied to any scales it can be
+applied to scales of biology which we
+usually do when we say natural selection
+we usually uh think about the scales of
+organisms right uh you know organisms um
+against some kind of configurations they
+are more maybe fluid configurations
+because no no two organ are alike but so
+maybe particles right so we yeah they
+look very similar like all electrons
+look very similar but we don't know
+maybe there is some tiny difference and
+then uh and the way we are trying to
+understand the tiny difference or or
+maybe it's already went through this
+very long period of natural selection
+and then that is the value that's what
+know electron mass should be uh and
+there's nothing else I can do I see
+&gt;&gt; at this point
+&gt;&gt; I imagine if you could put mark on an
+electron and and a boson or and
+distinguish them then the spin
+statistics theorem wouldn't apply
+anymore and we would see some effects of
+that
+&gt;&gt; right so the loss function would be it's
+just not convenient for not to have
+firmians uh and and again we kind of
+understand that um I think one good
+example I can give that maybe very
+general audience will understand and
+machine learning people will definitely
+understand um uh cars cars and and uh
+you moving in the traffic and um they're
+trying to self-driving cars, right? So,
+we assume we're
+&gt;&gt; 10 years from now where, you know, every
+all the cars are self-driving. Maybe
+sooner, maybe later, I don't know. Um
+and and then all of them are driving and
+they're all trying to optimize their
+loss function. But to optimize their
+loss function, they have to do some
+calculations about the environment. they
+have to, you know, scan scan the
+environment, you know, find something,
+plug it in into maybe their network and
+then network will say turn left, turn
+right and so and at this time um the
+that information that it collects uh
+each of the cars collects we actually
+call in in physics of electronamics we
+call that that um bzonic field. uh so
+it's electromagnetic field uh or you
+know green function of other you know
+electrons that I scan around propagates
+to me and that gives me relevant
+information for what me to do as an
+electron or cars scan around for other
+cars get that information and say okay
+that's the relevant information to me
+for me to make left right turn or
+accelerate so in this sense cars are
+like firmians they are advanced enough
+to be able to process
+uh not the state of the entire universe
+around them because they are tiny but
+relevant information for them to
+optimize their and if they would be
+doing something else they would not
+behave as a as an electron and that
+would create some kind of um unstable
+behavior and this whole system would
+would not work as it should. So, so just
+like um you know all the cars converge
+to some uh all self-driving cars are are
+using the same software just because
+that's useful you know electrons kind of
+using all the same software of how to
+navigate an electromagnetic field. So
+this is this analogy maybe helps to to
+think about electrons as as as you know
+self-driving particles that have already
+established what is a what is the the
+best maybe they haven't established it
+exactly and so there's still internal
+degrees of freedom you know there's spin
+and there other things so you know in
+some one circumstance I will be doing
+this and other that uh and the same for
+the cars right so you will have
+different cars driving in UK and US
+right because left uh you know left side
+right right side driving so there's
+state of the self-driving softwares in
+the cars would still have to be
+different have to have to agree but but
+other than that a lot of similarities in
+describing those those cars would be and
+and that's the same for um so if it's
+useful this is this is a correct analogy
+there's a structural similarity between
+the cosmos if you zoom out far enough
+and neurons
+And some people use this to suggest
+there's a cosmic brain. Now, I want to
+talk about what you're not saying. Are
+you not saying that or are you saying
+that?
+&gt;&gt; No, absolutely not. I'm sorry if I
+interrupted you, but I'm not saying
+that.
+&gt;&gt; Okay. It seems to me like this comports
+with your theory. So, it would seem like
+you'd be like, "Oh, that's great
+evidence for my theories." Maybe, maybe
+not.
+&gt;&gt; Yeah. So, so both of things that you
+said are true. So first of all I'm not
+saying that
+because I haven't um um confirmed no no
+visually I've confirmed they look
+similar right we've all done that uh
+there are papers of people who actually
+try to do statistical analysis which is
+the right thing to do and statistically
+showed that there are certain things
+that are similar um there is a
+well-known um critical like phenomena uh
+where you have some kind of scale
+invariance that is observed in the
+cosmic web and observed in the
+biological networks. So now I haven't
+mapped out exactly the dynamics uh of
+the galaxies formation and how all this
+would came around. I've only done
+calculations suggesting that
+self-organized criticality or critical
+state is something that you should
+expect to see in the learning system and
+it's a good thing for the learning
+system to have criticality. So there is
+this
+&gt;&gt; interesting
+&gt;&gt; so this calculation that tells you yes
+criticality is good and then you can say
+it and say okay once it's good should
+doesn't this confirm the observed
+criticality in the brain activity or the
+the observed criticality that we see yes
+but but but this is indirect evidences.
+So maybe this is actually we are talking
+about this cosmological like scale where
+um the system performing very slowly
+maybe some kind of very complex
+calculations or maybe we're just saying
+it slowly but actually doing some
+important um um learning task. So yeah,
+so so because of the um I do not say
+that usually I show those pictures when
+I give um public talks but I I do not
+say that I've done um enough rigorous
+calculations for the structure
+formations to say that this is I know
+how to do those calculations but there's
+just only 24 hours a day. Yes, you have
+a rare quality where you will assert
+something and then say and here are
+here's why it's either not fully the
+case or I don't believe it or here's the
+limitation of my own model. Here's the
+counter evidence. I haven't seen that in
+almost any of the people that I
+interview. Okay. So, so uh I also hated
+that when I was a student because even
+when you're a student and you come to
+the class and then they tell you
+something that they've been um taught uh
+and they take it without actually trying
+to question it. I think this is a
+horrible quantity. We physicists
+actually can do better. Um I think I
+don't remember who exactly said that but
+um we should be doubting everything. So
+we should be doubting our own models,
+our own calculations, calculations that
+other people had done assumpt
+um that general activity is wrong, it
+doesn't mean it's wrong and we know all
+that that story when the 100 you know
+physicist wrote a letter to Einstein
+signing that saying that general is
+wrong and his reply was brilliant. I
+mean again you don't need a 100. If you
+have a point well show me your point and
+I'll I will consider it. So so yeah I
+think this is the quality that you
+absolutely must um you have to show show
+all of the good and bad things about
+because I've thought about this. I mean
+I of course I've tried to answer I'm not
+don't have all the answers. So I think
+this is more honest and correct way of
+doing this and we should be doing it not
+just with new theories. There are a lot
+of um problems with existing theories.
+Classical uh theories are not as pure as
+they thought. There are divergences and
+things we don't uh we don't fully
+understand and we should be telling
+people and students about them when when
+we discuss all this. So, so uh don't put
+anything under the rock. That's kind of
+my approach because sooner or later the
+smarter people will find what's under
+the rock and and and that's certainly
+very very important.
+With that out of the way, and thank you
+for that by the way, let's get to
+consciousness.
+Is the universe itself in your model
+with the universe being the neuromat
+conscious?
+Okay. Uh very good uh question and of
+course I get this question all the time.
+Now um uh here is my um maybe a bit
+longer answer but I think I need need to
+say that um you come with the
+mathematical framework new mathematical
+framework which is very rich which is
+the the relies on neural networks and
+the learning dynamics and you're trying
+to use that to describe some some
+phenomena. This phenomena may be
+physical phenomena like we talked about
+or the phenomena that people are
+discussing in other branch of science
+like consciousness. So they already have
+a term for something and you're bringing
+a toolbox. You don't in this toolbox
+that that I have of learning theory.
+There is nothing uh that I would call
+consciousness. But I'm trying to use it
+to describe what people mean by
+consciousness. And I can I have I can
+have many. So I may suggest something
+and they will say well this looks like a
+not not a good definition of
+consciousness because um because here's
+the system that we all agreed a hundred
+of us agreed that is conscious but your
+system uh your your definition tells it
+it's not then okay then either I say
+well uh maybe you should adjust your
+notion of what consciousness or maybe I
+should adjust my definition of and and
+and both ways are fine. Now my
+definition of consciousness comes from
+how I understand it. How I can build in
+within framework that I understand
+mathematical frame and then this
+mathematical framework um you know
+system under goes learning dynamics and
+there are three microscopic things that
+are directly related to learning that I
+can calculate. So one of those things is
+how fast system adapts to the new data
+set to the new environment. how fast it
+learns. So this is the I can actually
+calculate it is the decay rate of the
+loss function.
+&gt;&gt; That sounds to me more like intelligence
+than consciousness
+&gt;&gt; right and and well okay so but but I say
+u uh hold on the intelligence because I
+have comment about that as well. So so
+so so and then I'll say I want to as a
+hypothesis call there is rate of decay
+how fast it I want to call it
+consciousness. Now maybe it will be
+wrong but I will call it uh because I
+come with a new um a new framework and
+this framework I can calculate but I I
+say right away there are two more things
+that are also microscopic and some
+people may relate it to uh things
+related to consciousness. Uh but I would
+relate it to intelligence and I would
+say actually three things contribute to
+intelligence. If you judge a learning
+system how well it behaves then there
+are three quantities you have to
+calculate. One is how fast think learns
+and I call it consciousness. Maybe you
+would call it intelligence. Second thing
+is uh how low does the loss function go
+asytoic? If I had infinite time, how
+will it will it go? Yeah, it may learn
+fast but then just halt stop. So I would
+say okay that's another ingredient that
+is important. Uh you know how low is is
+a loss function. Uh and the third one is
+once it reach this asymtotic loss it's
+not going to stay there it's going to be
+fluctuating because that's what learning
+activation dynamics you just don't stop
+you you never stop you're always in this
+learning equilibrium and sometimes loss
+goes a little bit up down up down so you
+always fluctuate so how big are the
+fluctuations so then I have a learning
+system and I can calculate three things
+how fast you learn how good you learn if
+you had infinite time and how stable
+what you learn. And so I would say that
+because of that those three things I
+actually describe what I think is
+intelligence, not just one IQ number.
+Three things. Uh and and then you you
+can have you know different people. Some
+people learn very fast
+but uh they they they stop they kind of
+they are not learning more and more.
+Their loss function is uh halted. other
+people may take very long time to to
+learn and then eventually they end up
+knowing all of the differential geometry
+and you know quantum field theory what's
+not um and and then and then the third
+type of people who maybe also learn fast
+and maybe they uh know all of the
+advanced mathematics but they're very
+unstable until they keep repeating it
+they you know keep forgetting and then
+opening your book again we all forget
+stuff right we learn something I forget
+the things I wrote in my papers right
+there are many papers I have to look
+Yeah. So, so there is some degree of how
+u my knowledge uh my loss function has
+actually fluctuated. So I would put
+those three things um I would put those
+three things I say this that's
+intelligence at least three. So it's at
+least three maybe more because um
+actually there are more because you know
+it's a stochcastic variable. There are
+statistical moments first second or
+third. So I'm simplifying things. Uh you
+can describe these fluctuations as with
+infinite number of parameters. But at
+least those three things are very
+important. And I think when you uh look
+at different systems, you can actually
+say or different people you you can say
+students, right? You can say, well,
+yeah, this is has a very good learning
+efficiency. I would say he's more
+conscious and this has a very bad um
+learning efficiency. He's less
+conscious. But again, this is just a
+definition. uh if somebody tells me that
+even with your framework I suggest it
+has to be you know a square root of two
+times the first number of two I'm okay
+with that. So as long as my you know I
+declare what I mean by and then then
+then I'm I'm happy. [snorts]
+&gt;&gt; I understand the first two but the last
+one about stability why does that have
+anything to do with your intelligence
+when it could be the universe is
+changing that doesn't seem to have
+anything to do with you. Um yeah so so
+underra assumption if the universe
+doesn't change at all so so kind of um
+or changes are um it's always changing
+okay so it's always changing there you
+know this is what processing data set
+you you your data set you you get always
+different images of cats and dogs uh you
+look around and every day there is like
+new shape of trees and leaves are
+arranged so you always have that but I
+say let's integrate that so it will be
+just some state statistical state of the
+universe. So no major uh events um uh
+there is no uh you know major uh
+no no nothing hits the earth and and uh
+uh creates uh a sequence of earthquakes
+and and there's no um nuclear wars
+nothing major. So I'm more or less in
+this learning equilibrium. So if that's
+the case, if nothing major changed,
+maybe a good example would be, you know,
+you take a bacteria as a as an observer
+place in some kind of controlled
+environment uh where you kind of keep uh
+maybe the temperature the same the same
+amount of light or so. So so if you work
+with this ensemble uh then the loss
+function will still change will still
+change because of you know stochastic
+gradient descent. uh now uh you know
+sometimes uh I I bacteria uh is uh the
+light appears on the left then then it
+moves to the left maybe it appears to
+the right or in opposite direction it
+moves to the right so there's some some
+changes and it always updates its new uh
+its trainable variables to to if why why
+it would do that because if the uh state
+statistical state would change I would
+be able to adapt so kind of that your
+ability to adapt is actually um you know
+backfires on you uh and it creates more
+more fluctuation. So we have to come up
+and people actually know about that if
+you kind of set the learning rate to be
+um smaller uh like in some algorithm
+then it will go to a stable very stable
+minima but but uh you know it will not
+be as good minimal. So so these
+fluctuations are not should not be
+treated as um as a bug it's actually a
+feature to get out of the local
+equilibrium and so that that happens all
+the time. Yeah.
+&gt;&gt; Am I correct in saying that you said at
+some point that we need to unify not two
+not quantum theory and general
+relativity but quantum theory general
+relativity and observers. Okay. So most
+physicists tend to think of observers as
+coming from the physics something
+emergent. Why do you think that we have
+to unify these three at the same time?
+&gt;&gt; Right. So and and most physicists will
+tell you biologists somehow will you
+know emerge from once I have um string
+theory uh you know completely done and
+and quantum gravity quantized uh I I
+call it wishful thinking there is no
+evidence for that other than we think we
+kind of you know putting things um one
+way of saying putting under the rug
+we're just saying if something is
+complex well yeah yeah yeah but if I do
+long enough calculations if I have long
+enough time that's how it's going to
+work and I don't for example one one
+example most researches are convinced
+that quantum mechanics has plays no role
+for how um you know for consciousness
+how how we function how our brain works
+right so so yeah makes sense microscopic
+objects why would quantum mechanics but
+we have no um you know proof for that we
+have no and and and I I think it is more
+visual thinking again related to how the
+second law of thermodynamics is a
+wishful thinking that it has to be
+really working. So, so I don't think so.
+But the the other answer to to that is
+that um the fact that observers are very
+special uh and should how be understood
+I think realized by most physicists who
+pay attention to two important problems
+in physics. One important problem is the
+measurement problem. So every single
+physicist who actually seriously thought
+about foundations quantum mechanics not
+not the person who is just doing shut up
+and calculate type of things and like
+following the manual of the but who is
+trying to understand
+the the stud will necessarily realize
+that there is a measurement problem.
+Measurement problem is about this third
+postulate of quantum mechanics uh that
+is very new because in classical physics
+all we need is state and how it evolves.
+here you need to state how it evolves
+and how it is observed. So that's one uh
+and so and and then you you kind of have
+to say something that maybe there is
+something uh in additional to to to
+quantum mechanics that you have to
+describe maybe it is an observer.
+Observer may play a special role and and
+uh if that's the case if you realize
+that quantum mechanics is incomplete uh
+and the measurement seems to be playing
+a special role then then you are stuck
+with uh with trying to describe. Now in
+another problem in physics that uh comes
+around and also has to do with observ
+cosmology. It's called the measure
+problem. Essentially more or less a
+different problem but more more more
+or less the same complication coming
+from observers. So if if you're trying
+to assign probabilities to different
+observations in cosmology
+um what should be the right probability?
+We discussed the bolts brain problems.
+It's it's a it's a part of it. So, so
+you have to specify the rules. You have
+to describe how to deal with observers.
+And in both cases, if you actually think
+about this, the complexity comes from
+the fact that we're trying to put
+observer into the system. So when
+observer is outside of the system, we
+all know what to do. We know you know
+there is a Hamiltonian how to describe
+it. Once you put observer into the
+system, uh so this is a you know for for
+more general audience people know about
+Schroinger cat problem. So if you put
+something and then the wingers for ran
+problem and so you start putting
+observers inside things start to break
+and and uh
+&gt;&gt; and is it important that the observer is
+conscious [sighs]
+&gt;&gt; right so so so at this point no there's
+something fishy about observers but we
+don't have a model of observers so once
+you say okay let's uh some people would
+claim yes consciousness is important uh
+and and they have their own definition I
+say it's important to model observer so
+if you want to put it inside in the
+system then you really want to model how
+it behaves and model not just uh saying
+well maybe some kind of emergent
+phenomena of biology will happen and
+maybe some kind of wave function
+collapse will happen this isn't going to
+work if you're trying to do the
+calculation so so my answer is yes ob
+observers are very important and that's
+why you really have to describe them if
+you want to do calculations even
+separately in quantum mechanics and and
+and gravity and more so uh and Maybe
+because those two problems persist in
+cosmology where is the gravity and
+quantum mechanics where there is um
+where there is the measurement problem
+maybe the the the solution is actually
+try to understand how observers work and
+then once you understand that the the
+both theories may some kind of be
+unified and their observer would be
+models as well because it seems to be
+the problem wi with with all of the uh
+with both both theories which again you
+know you certainly put it under the rug.
+You can totally ignore it. Maybe
+elephant is the room in the room is is
+um everybody knows it's there but we're
+trying to look the opposite way. Uh and
+I'm as as you said like now I see this
+elephant I say well it's it's there.
+&gt;&gt; At what point do you imagine observers
+entered into physics? Is it at the plank
+epoch? Is it prior?
+&gt;&gt; Uh so in this model everything is
+conscious. There are observers
+everywhere. Every subsystem is an
+observer. Some of them are efficient
+observers. They have efficient um
+architecture. So the loss function, you
+know, falls down. Some of them are
+stable observers. They've already
+reached the very low value of the loss
+function. Um and some of them are not
+stable and they've al always fluctuate
+out of so any subsystem in because the
+entire um the building blocks in this
+model are neurons and they come with
+with the trainable and non-trainable
+variables. because of that everything is
+learning. So everything in the sensor is
+observer just some observers are capable
+of doing and asking perhaps more um
+complex questions than than others.
+Maybe uh although we don't know right
+maybe inside of electron there is whole
+complex uh neural network that has
+already solved the problem of quantum
+gravity and just looking at us and
+laughing saying guys I mean it's simple
+maybe maybe we don't know about that but
+but in this model as again as a model
+not we started with this I'm not I'm not
+saying this is how it works but as a
+model that that could very well be
+&gt;&gt; as far as I understand there's a number
+that you and associate with
+consciousness. How conscious is this
+subsystem? But consciousness to us is
+far more than just a number or we care
+about how conscious is someone most of
+the time when it comes to health. Are
+they alive? Should we remove the plug?
+And are they going to wake up? But but
+our consciousness, we're conscious of so
+much.
+&gt;&gt; So in yours in your model, do you have
+any qualia?
+&gt;&gt; Right. So, so uh I was in one of the
+FQXi uh conference and u there was like
+a heated discussion every time
+consciousness is discussed uh and if
+there are um physicist and non-physicist
+in the room it's always a heated
+discussion and so uh should we uh call
+consciousness uh the person who's
+actually conscious in the sense of
+you know talking and interacting with
+you uh another conscious observer or
+should we call consciousness something
+so is it like discreet uh you know I
+talk to you then I call you conscious I
+I and you reply uh you know I talk to a
+dog and he replies it's conscious so
+yeah absolutely you can then say
+consciousness will be um defined as as a
+coupling a strength of the coupling of
+the of the organism uh with you know
+sound wave or you know light or some
+some some electromagnetic phenomena you
+could do that you can do that and that
+would be your definition of conscious
+maybe it's better than mine right and
+then and then we would not be arguing or
+say okay look this is a person he's not
+conscious but then there'll be people
+who say yes uh I have such and such you
+know friend or or relative who is in
+coma but he is conscious and he would
+say no the fact that the person is in
+coma and isn't interacting with you the
+way you wanted to interact it doesn't
+mean that he's not interacting with you
+some other way and and Actually I've
+mentioned I mean I have to say this
+speculative idea because uh you know
+maybe philosophers will love it or maybe
+&gt;&gt; Sure. But um we we we discussed for
+quantum mechanics you need this bath of
+neurons otherwise it just doesn't behave
+like so so it could be this bath of
+neurons is always there but it's not in
+our physical space it's in the hidden
+space what I call um and and and if it's
+there then nothing stops for a person
+who is not interacting with you in the
+physical space uh to interact with a
+hidden space okay maybe that's what you
+do in your dreams or maybe uh you know
+people are interacting through this
+hidden space all the time and and people
+do claim that. So there's a lot of
+people who claim they have this uh
+special um abilities right to to to to
+interact and and I I think we don't we
+the reason we don't take it seriously
+physicists I I think for for two reason
+we don't have a good enough framework to
+modeling this and the second reason we
+don't have a controlled enough
+experiments to do that but I I I think
+we should not be disregarding that when
+we become equipped with a better
+mathematical model and with better um
+experiment. So, so yeah, I I wouldn't I
+wouldn't like this definition where the
+person is conscious only if he can hear
+or tell reply back. Uh but but that
+would you know ch would be conscious
+agreeing to that definition because it
+certainly replies when you write. So
+again it's there's a lot of uh
+discussion uh maybe not very important
+about definitions but we need to do
+this. We need to define terms before we
+can make statements and that that's just
+an attempt to do that. What
+distinguishes between trainable and
+hidden variables?
+&gt;&gt; Like do physical entities correspond to
+some or even mental entities correspond
+to one not the other or or what?
+&gt;&gt; Right. So so the the the hidden
+variables in this case are like hidden
+neurons and their states are described
+by non-trainable variables something
+that u but uh but but all of the
+non-trainable variables in your network
+are connected by trainable variables
+called weights. So, so kind of uh you
+cannot like just draw a sharp line and
+say here is the you know trainable and
+here's not trainable. Very much like in
+physics you cannot say here's
+electromagnetic wave and here are
+electrons. They're coupled. They're all
+communicating through through each
+other. Now the the the the difference of
+a hidden uh non-trainable variables and
+a physical non-trainable variables is
+that the one that are physical they've
+organized themsel this three-dimensional
+structures and they've kind of
+discovered the um effectiveness of using
+threedimensional space for exchanging
+information and minimizing their loss
+function. The hidden space at this point
+they can have arbitrary connections to
+each other. There is it's it's it's not
+maybe a good idea to think about
+initially you have a soup of neurons.
+Everything is connected to everything
+and it's all hidden in a sense that none
+of physical space had yet emerged and
+then there is like you know bubble form
+a big bank and then the uh there's
+certain number of those neurons figured
+out that they can learn a lot more.
+points like phase trans transition and
+can minimize their microscopic loss
+function if they arrange themselves in
+the threedimensional space. So if that
+phase transition took place then you
+really have you still have the the uh
+hidden variables which uh which you can
+always hire if you need to do
+calculations but they need not be
+present in your physical space. They
+need not interact um with uh with with
+the classical degrees of freedom. they
+still interact by providing you with
+this quantumness but they need not be um
+you know directly observable and
+coupled. So that's that's the model for
+them. So and and it is correct to call
+them hidden variables because you know
+hidden variables is one of those um it's
+called interpretation quantum mechanics
+but I guess it's an attempt to actually
+make quantum mechanics um more
+mysterious less mysterious uh trying to
+actually it comes with its own problems
+and and we can certainly talk about them
+but at least it doesn't uh put it tries
+to put less stuff under the rock. We we
+physicists keep doing that uh like keep
+lying without saying that we are lying
+in a good sense. We're not doing it
+intentionally. We're simplifying things,
+right? But one of those things is that
+we are um we can say something like I
+believe in the many worlds
+interpretation. Uh and and uh but once
+you corner the person uh he will admit
+that it's not as as clear and they're
+uprod. So, so yeah, [snorts]
+&gt;&gt; if the universe is learning, what is it
+learning toward?
+&gt;&gt; Right. So, so if the universe is
+learning and there is nothing but the
+universe. So, that's it. That's all
+there is. Uh it's um it's a notsuper
+unsupervised learning. Um and so the
+only thing it can learn every subsystem
+can learn the the rest of the universe.
+So, you put an arbitrary boundary me and
+the rest. So I'm as a subsystem the only
+thing I can learn I can I can learn try
+to learn about myself if I'm unc
+like you know in coma maybe I can do
+that uh but but uh that that's what I I
+will be interested to do uh and that
+will actually help me also to survive
+the more I learn now we are moving to
+the biology level where we've done a lot
+of work trying to understand how this
+exactly works but basically um you know
+organism has to learn its environment,
+model its environment
+um uh in order to better predict how our
+environment will uh behave and and then
+once it able to predict it is more
+likely to survive. So this is what you
+have to do in order to survive. This is
+very actually so first of all it's
+similar of course it's to natural
+selection but it's similar to the
+phenomenological model
+that Carl Friston is constructing where
+he's trying to um say okay well let's
+define you know some phenomenological
+function that uh maybe maybe our ability
+to predict the state of the environment
+is is what um and and what I'm adding to
+this story is that yes that's great but
+actually dig deeper and give a
+microscopic
+um interpretation of that. So not it's
+like you know you can have
+thermodynamics but then you can have a u
+derivation of thermodynamics from
+statistical mechanics. So I'm kind of
+saying well you can also derive it
+through statistical mechanics of how
+neural networks work. So that's the
+idea. So, so that then uh coming back to
+your question every some system is
+learning the rest right um and um we are
+not different we are as our cells are
+not different that each cell is learning
+how to fit best into the organism and so
+that you know optimize its own loss
+function and the society isn't different
+it's only uh it's still learning but on
+different scales and so languages how we
+describe it u changing you know
+addressing to to the physicist audience
+there there is a RG flow there is the
+loss function changes as you start um
+reormalizing and generalizing the
+concept of neurons so in a small scale
+can be fundamental neurons on a bigger
+scale it can be sub networks like
+particles then you can have something
+like cells people u uh you know
+civilizations and uh societies like
+If I recall correctly, your second law
+of learning is the that learning
+efficiency is proportional to the
+lelassian of the free energy. Is that
+correct?
+&gt;&gt; Uh so uh in very very it's just like in
+in in in standard physics we can derive
+thermodynamics in a very very simple
+limits. We can unfortunately we
+physicists are only good in doing
+Gaussian integrals and and doing
+calculations for a very simplified
+system and for those system where you
+can simplify you can do those
+calculations you can uh you can show
+that it's related to a plus you know the
+free energy where the free energy is
+actually um defined microscopically as
+um you know you start with energy like
+function which is a loss function okay
+and then from that uh you you define
+free energy you do not start it from the
+phenomenology start from micros but in
+this case in that particular limit that
+was the answer in more complex systems
+where we're not dealing with gausians
+and in the critical systems that we
+discuss we are not dealing with gaussian
+so there's uh you know there's many many
+many scales are important and those
+limits are things are much more complex
+and you cannot really like give this
+formula and say it's exact to do either
+perturbative So, so, so, so, yeah, in
+this limit llassian of the free energy
+was important and more general it may
+be, you know, have lots of lots of
+corrections or as, as you know in the
+perturbivation theory may happen that
+it's not just correction, but they're
+dominating everything and then
+&gt;&gt; yes,
+&gt;&gt; your zero to is wrong. It's a
+non-perturbative limit and then then the
+answer is completely wrong and and there
+are um reasons to believe uh that the
+system is uh in this sense
+nonperturbative because of the
+criticality that we observe. there's
+symmetry breaking transitions take
+place. There's lots of uh complex things
+that of course I won't be able to talk
+about here but yeah uh analytical
+calculations are are hard but I guess
+without them we are not going to
+understand you know what's actually
+happening what's the relevant language
+of describing different phenomena
+&gt;&gt; does Carl Fristen's free energy is it an
+independent claim from from yours or
+does it emerge from your framework
+&gt;&gt; no I I I I completely agree with him so
+so so there has to be a free energy in
+this in this uh um setup it's it's like
+it's a phenomenological way of saying
+that there is a function that you will
+be you know minimizing optimizing and
+and and that's right I mean the the you
+started with the very beginning how come
+classical mechanics also optimizes yeah
+but it only deals with the you know very
+uh close when you're close to the
+equilibrium in the sense of the learning
+dynamics and the same with the uh with
+with the so so so he has a
+phenomenological model that is very
+intuitive and very nice and and it it is
+describes that such a function must
+exist. It's a kind of existence. Uh now
+he doesn't start with a learning theory
+but he starts with his understanding of
+how you know organism behave. It makes
+sense makes total sense. Now though for
+I'll give you an example how we can uh
+his his his free energy may be corrected
+to be much better. So for example, you
+can have an organism that isn't
+interested in predicting environment but
+is interested in quantizing gravity.
+Okay. So so for that or organism, he
+will spend all his resources maybe
+locked in a in a room with no windows
+trying to quantize gravity writing
+equation. So this this organism will
+have its own free energy. Um now it will
+not be the one that tries to you know
+predict how how the environment doesn't
+matter how how may maybe a little bit I
+mean I want to make sure that I survive.
+So so on the on the higher levels the
+the free energy uh can be can be
+different for different organisms. The
+question is whether you can derive them
+always from the microscopic dynamics
+when you can do this RG flow uh and
+actually starting from some microscopic
+loss function assumption derived and and
+it's an open question the only thing I
+can really add to free energy principle
+that Carl F is advocating is that we can
+model it using this trainable and
+non-trainable variables and and think
+about uh what you get once the
+non-trainable are integrated out and you
+pay attention to a handful of trainable
+variables and then then the system
+becomes um something you can you can
+calculate and then uh and you can model
+and now you can model it phmologically.
+uh so if you if you have a controlled
+enough experiment you don't care uh like
+what microscopic physics give rise to
+this free energy you can just calculate
+by seeing how the system behaves to to
+the changing environment you know for
+example you you say I want to interested
+how the system behaves on the sound or
+on the uh light or on the temperature
+and then you just model it as a function
+of those parameters and that may hint
+you to actually how such a such a system
+would emerge from from microscopy. So I
+don't think it's a contradiction to what
+Ken says just I'm saying that we can do
+get dig deeper if we assume that there's
+this learning dynamics happening on on
+all scales.
+&gt;&gt; What's a piece of advice that you found
+inspirational that you keep coming back
+to?
+&gt;&gt; Advice that somebody gave me uh during
+&gt;&gt; it could be also that you read in your
+book. It could be from an adviser. It
+could be from a movie, something you
+found that's helped you.
+&gt;&gt; Yeah. Um well well one advice I said uh
+and that was very very useful to me and
+actually maybe um not
+not um something I would uh advise
+student to do but it worked for me uh is
+to doubt everything. So, so uh so do not
+trust uh anything that is relevant for
+your work until you try to do um you
+know try to do as much calculation
+yourself as as much understand yourself.
+Now why is this a bad advice is because
+it may not be optimal for student who is
+you know trying to get uh professor
+position tenure position or whatever you
+know uh if you are going to be doubting
+everything and doing all calculations
+yourself uh you may just not you will
+rubbish right publish or rubbish so so
+that that's it's a bad advice but it was
+it it is something I couldn't avoid uh I
+couldn't not to do so once I figure out
+that uh there is no problem that I
+cannot uh solve myself I said okay I'll
+be doing that and and of course I
+haven't done all the calculations there
+the archive is full of the calculations
+I have done but as much as as I can and
+then so doubting is is I think uh one
+advice that that and doubting um so and
+that advice of course that I know about
+more concrete advice that was given me
+by my adviser Alexink um so he you know
+I would come every day with some new
+idea and he gave me advice that somebody
+gave to him and then I don't how long it
+was. And the advice was you come up with
+some idea uh with some theory with some
+equations. Um and then and then the next
+day you should try to criticize it as
+much as you can. So like you flip and
+like you know try to act as if you are
+opponent to that idea. Have this order
+and even days of the it's very helpful
+like really objectively look at what you
+have done and say no no no I don't like
+that you've done it. I'll try devil's
+advocate, right? So, I'll try to
+disprove it um and and find all of the
+problems with it. And that's why when
+I'm whenever I'm talking to you, I'm
+saying look, I know why it's may or may
+not work. So, I'm not trying to to to
+sell you uh you know, used car and
+without telling you that, you know,
+something is broken because that
+wouldn't be fair. I wouldn't feel right
+and I wouldn't be confident about the
+coalition that I have done. So, so
+you're constantly like flipping with
+this. Why is this wrong? Okay, one day
+is come up with ideas, do calculations,
+next day try to criticize as much as you
+can and and and maybe like like last uh
+statement here. Now the ch
+G GPT is horrible in doing that. you
+know or other language they tend to
+agree everything you say and so so so my
+advice is is uh push it into if if my
+advice not to use uh chpt uh for
+correcting your work without you
+verifying it so using it for correcting
+work is fine using it for suggesting IDs
+is fine like it's it's a excellent tool
+we just don't know how to use it yet we
+are completely like we are students of
+uh LLMs once we'll learn how to use it
+But but never never you know trust or
+verify. We we say in Russian uh you
+should always verify it and and you
+should uh to to the point that you redo
+the same calculations many times because
+honestly how many times we make mistakes
+when we do calculations well I do
+mistakes all the time you know we we all
+do mistakes and so so you should keep
+questioning that and and so it's related
+to doubt and and then but doubt even
+your own ideas. I guess that's um that's
+my advice. It was given to me.
+&gt;&gt; Professor, thank you so much for
+spending two hours with me.
+&gt;&gt; Was 2 hours or not?
+&gt;&gt; Yes, it went by like that. It went by so
+quick, but space and time don't exist
+anyhow. So,
+&gt;&gt; at least not fundamentally.
+&gt;&gt; Right. Right. Well, Kirk, uh that was
+fun. That was a lot of fun. Um I
+appreciate it having me uh on your
+podcast. It it's um it was very nice
+talking. Very nice questions, by the
+way. So and uh
+&gt;&gt; so I have so many more.
+&gt;&gt; Let me just uh full disclosure uh in
+addition to providing information it was
+um experiment for me because from the
+time I conjectured that the world is
+neural network. Every time I talk to a
+person I conduct an experiment how this
+person reacts to what I say. Uh and so
+you've been a a great
+great opponent, a great person to talk
+to to actually
+&gt;&gt; a great guinea pig.
+&gt;&gt; Yeah. uh to to to to actually so you
+have been experimenting with you uh
+whether you know it or not and uh so so
+so uh and and uh at some point when when
+I will be constructing uh not just
+theory of biology which we've done but a
+theory of psychology I might be using
+some of this discussion as experimental
+evidence of certain psychological
+phenomena.
+&gt;&gt; All right I'll take that as a
+compliment. Okay.
+&gt;&gt; It is it is no no it was really great. I
+mean it's exceptionally I'm very happy
+with with the questions. It was very
+good. Thank you. I'm honest with telling
+this that I've given u interviews to
+podcast when the people were not
+equipped at all with uh with any of
+physics um lingua or the the and and u
+they just were pushing their own
+worldviews
+uh without trying to understand what
+what I'm trying to say. Uh and and that
+was really a torture for me because you
+know the the the point of the p podcast
+well you I think the point was is is is
+to try to do both try to understand what
+I'm trying to say and then try to point
+me in the right direction. So that what
+I appreciate and and I've had uh good
+experiences with people who actually you
+know done their homework and then then
+you know so it was obvious you you you
+have a physics degree that helps a lot
+because at least certain things I may
+say between the lines and you would you
+know put me back and say okay I'll
+clarify that more often. So that was
+very useful and so I think that that was
+uh thank you for that. So it was great a
+great [snorts] experience.
+&gt;&gt; All right. Okay take care sir and I'm
+sure we'll talk again. The audience is
+going to love you. guarantee.
+Hi there, Kurt here. If you'd like more
+content from Theories of Everything and
+the very best listening experience, then
+be sure to check out my Substack at
+curtjongle.org.
+Some of the top perks are that every
+week you get brand new episodes ahead of
+time. You also get bonus written content
+exclusively for our members. That's c ur
+t j a i mu n g a l.org. You can also
+just search my name and the word
+Substack on Google. Since I started that
+Substack, it somehow already became
+number two in the science category. Now,
+Substack, for those who are unfamiliar,
+is like a newsletter, one that's
+beautifully formatted. There's zero
+spam. This is the best place to follow
+the content of this channel that isn't
+anywhere else. It's not on YouTube. It's
+not on Patreon. It's exclusive to the
+Substack. It's free. There are ways for
+you to support me on Substack if you
+want, and you'll get special bonuses if
+you do. Several people ask me like,
+"Hey, Kurt, you've spoken to so many
+people in the field of theoretical
+physics, of philosophy, of
+consciousness. What are your thoughts,
+man?" Well, while I remain impartial in
+interviews, this Substack is a way to
+peer into my present deliberations on
+these topics and it's the perfect way to
+support me directly. Kurtjongle.org
+or search Kurtjungle Substack on Google.
+Oh, and I've received several messages,
+emails, and comments from professors and
+researchers saying that they recommend
+Theories of Everything to their
+students. That's fantastic. If you're a
+professor or a lecturer or what have you
+and there's a particular standout
+episode that students can benefit from
+or your friends, please do share. And of
+course, a huge thank you to our
+advertising sponsor, The Economist.
+Visit economist.com/toe
+to get a massive discount on their
+annual subscription. I subscribe to The
+Economist and you'll love it as well.
+toe is actually the only podcast that
+they currently partner with. So, it's a
+huge honor for me and for you. You're
+getting an exclusive discount. That's
+economist.com/toe.
+And finally, you should know this
+podcast is on iTunes. It's on Spotify.
+It's on all the audio platforms. All you
+have to do is type in theories of
+everything and you'll find it. I know my
+last name is complicated so maybe you
+don't want to type in jaungle but you
+can type in theories of everything and
+you'll find it. Personally I gain from
+re-watching lectures and podcasts. I
+also read in the comment that toll
+listeners also gain from replaying. So
+how about instead you relisten on one of
+those platforms like iTunes, Spotify,
+Google podcasts, whatever podcast
+catcher you use, I'm there with you.
+Thank you for listening.

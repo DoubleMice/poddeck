@@ -3,29 +3,32 @@ refreshed_at: 2026-04-12T00:23:05.287Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 11
-done: 0
-pending: 11
+done: 3
+pending: 0
 episodes:
   - id: 6PJ8NI3v5Ss
     title: Quantum Mechanics Contradicts Itself (and He Proved It)
     duration: 11953
     upload_date: "20260330"
     url: https://youtube.com/watch?v=6PJ8NI3v5Ss
-    status: pending
+    status: generated
+    category: science
     priority: 1
   - id: Bj4Ra75vvTc
     title: The "Inverse Problem" Of Dark Matter Is Insane
     duration: 9080
     upload_date: "20260326"
     url: https://youtube.com/watch?v=Bj4Ra75vvTc
-    status: pending
+    status: generated
+    category: science
     priority: 1
   - id: iGOGxaZZHwE
     title: The Theorem That Proves Science Can't Know the Universe
     duration: 8090
     upload_date: "20260316"
     url: https://youtube.com/watch?v=iGOGxaZZHwE
-    status: pending
+    status: generated
+    category: science
     priority: 1
   - id: 3nHiOtnnrzA
     title: The Physicist Rethinking the Hard Problem
@@ -33,6 +36,7 @@ episodes:
     upload_date: "20260305"
     url: https://youtube.com/watch?v=3nHiOtnnrzA
     status: pending
+    category: science
     priority: 1
   - id: GHGi_XDqKNw
     title: The 2,300 Year Old Mistake About Mathematics
@@ -40,6 +44,7 @@ episodes:
     upload_date: "20260223"
     url: https://youtube.com/watch?v=GHGi_XDqKNw
     status: pending
+    category: science
     priority: 1
   - id: ilVImMHcr_g
     title: This Physicist (Unexpectedly) Derived Gravity from Information
@@ -47,6 +52,7 @@ episodes:
     upload_date: "20260216"
     url: https://youtube.com/watch?v=ilVImMHcr_g
     status: pending
+    category: science
     priority: 1
   - id: 73IdQGgfxas
     title: This Cosmologist Discovered Something Strange...
@@ -54,6 +60,7 @@ episodes:
     upload_date: "20260209"
     url: https://youtube.com/watch?v=73IdQGgfxas
     status: pending
+    category: science
     priority: 1
   - id: gWiTkFnrYgA
     title: What If the Wave Function Describes Knowledge?
@@ -61,6 +68,7 @@ episodes:
     upload_date: "20260202"
     url: https://youtube.com/watch?v=gWiTkFnrYgA
     status: pending
+    category: science
     priority: 1
   - id: epkuoytFJWA
     title: "Subir Sarkar: Why Dark Energy is a Local Illusion"
@@ -68,18 +76,21 @@ episodes:
     upload_date: "20260126"
     url: https://youtube.com/watch?v=epkuoytFJWA
     status: pending
+    category: science
     priority: 1
   - id: WKGx2YKgs9M
-    title: “If I’m Right, There Is No Theory of Everything”
+    title: "If I'm Right, There Is No Theory of Everything"
     duration: 5222
     upload_date: "20260120"
     url: https://youtube.com/watch?v=WKGx2YKgs9M
     status: pending
+    category: science
     priority: 1
   - id: PMrCvhHctOg
-    title: Philosophy’s Most Formidable Living Mind
+    title: Philosophy's Most Formidable Living Mind
     duration: 6830
     upload_date: "20260113"
     url: https://youtube.com/watch?v=PMrCvhHctOg
     status: pending
+    category: science
     priority: 1

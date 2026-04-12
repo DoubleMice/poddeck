@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro'
 import EpisodeCard from '../components/EpisodeCard.astro'
 import SearchBox from '../components/SearchBox.astro'
-import { loadEpisodes, loadSources, collectTags } from '../lib/data'
+import { loadEpisodes, loadSources, collectTags, CATEGORIES } from '../lib/data'
 import { url } from '../lib/url'
 
 const episodes = loadEpisodes()
@@ -11,6 +11,15 @@ const tags = collectTags(episodes)
 
 const generated = episodes.filter(e => e.status === 'generated')
 const pending = episodes.filter(e => e.status !== 'generated')
+
+// Group generated episodes by category (in priority order)
+const generatedByCategory = CATEGORIES.map(cat => ({
+  ...cat,
+  episodes: generated.filter(e => e.category === cat.id),
+})).filter(g => g.episodes.length > 0)
+
+// Uncategorized generated (old episodes without category)
+const uncategorizedGenerated = generated.filter(e => !e.category)
 ---
 
 <Base title="PodDeck">
@@ -44,14 +53,27 @@ const pending = episodes.filter(e => e.status !== 'generated')
     </div>
   </section>
 
-  <!-- Generated episodes -->
-  {generated.length > 0 && (
+  <!-- Generated episodes by category -->
+  {generatedByCategory.map(group => (
     <section class="mb-12">
       <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">
-        精选 · 已生成
+        {group.label}
+        <span class="ml-2 text-stone-400 font-normal normal-case">{group.episodes.length} 集</span>
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {generated.map(ep => <EpisodeCard episode={ep} />)}
+        {group.episodes.map(ep => <EpisodeCard episode={ep} />)}
+      </div>
+    </section>
+  ))}
+
+  {uncategorizedGenerated.length > 0 && (
+    <section class="mb-12">
+      <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">
+        其他
+        <span class="ml-2 text-stone-400 font-normal normal-case">{uncategorizedGenerated.length} 集</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {uncategorizedGenerated.map(ep => <EpisodeCard episode={ep} />)}
       </div>
     </section>
   )}
