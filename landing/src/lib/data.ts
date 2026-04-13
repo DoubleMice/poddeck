@@ -139,7 +139,8 @@ export function loadEpisodes(): EpisodeWithSource[] {
     const ca = catOrder[a.category ?? ''] ?? 99
     const cb = catOrder[b.category ?? ''] ?? 99
     if (ca !== cb) return ca - cb
-    return a.title.localeCompare(b.title)
+    // Within same category, sort by published date descending (newest first)
+    return (b.published ?? '').localeCompare(a.published ?? '')
   })
 
   return results
