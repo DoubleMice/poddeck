@@ -57,3 +57,13 @@ sources:
     cache_limit: 500    # TOE shorts 多，多扫一些
     color: "#dc2626"
     description: 理论物理 / 意识 / 万物理论的沉浸式对话
+
+  - id: xiaojun
+    name: 张小珺 Xiaojun Podcast
+    channel: https://youtube.com/@xiaojunpodcast
+    filter_keywords: [AI, 大模型, Agent, LLM, Claude, Anthropic, scaling]
+    min_duration: 3600   # 节目大多 1.4-4.4h，60 min 起
+    min_date: "20260101"
+    cache_limit: 200    # 中英双语两版上传，cache 略大
+    color: "#0891b2"
+    description: 中文 AI / 大模型 / Agent 长访谈，多为 2-4h 中英双语放送

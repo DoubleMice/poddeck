@@ -49,7 +49,7 @@ export async function downloadAutoSubs(videoId: string, outDir: string): Promise
   await run('yt-dlp', [
     '--write-auto-sub',
     '--write-sub',
-    '--sub-lang', 'en-orig,en-en,en',
+    '--sub-lang', 'en-orig,en-en,en,zh-Hans-zh-Hans,zh-Hans,zh-CN,zh',
     '--skip-download',
     '--sub-format', 'vtt',
     '-o', `${outDir}/${videoId}.%(ext)s`,
@@ -62,11 +62,14 @@ export async function downloadAutoSubs(videoId: string, outDir: string): Promise
   if (candidates.length === 0) {
     throw new Error(`No VTT file produced for ${videoId}`)
   }
-  // preference: en-orig > manual en > en-en auto
+  // preference: manual en/zh > en-orig > en-en/zh-auto
   const vtt =
-    candidates.find(f => f.includes('.en-orig.vtt')) ||
     candidates.find(f => /\.en\.vtt$/.test(f)) ||
+    candidates.find(f => /\.zh(-CN)?\.vtt$/.test(f)) ||
+    candidates.find(f => f.includes('.en-orig.vtt')) ||
     candidates.find(f => f.includes('.en-en.vtt')) ||
+    candidates.find(f => f.includes('.zh-Hans-zh-Hans.vtt')) ||
+    candidates.find(f => f.includes('.zh-Hans.vtt')) ||
     candidates[0]
   return resolve(vtt)
 }
