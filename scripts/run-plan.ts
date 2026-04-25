@@ -129,12 +129,12 @@ async function ensureTranscript(id: string): Promise<void> {
   }
 }
 
-function resolveClaudeCli(): string {
+function resolveClaudeBin(): string {
   const candidates = [
-    'C:\\nvm4w\\nodejs\\node_modules\\@anthropic-ai\\claude-code\\cli.js',
+    'C:\\nvm4w\\nodejs\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe',
   ]
   for (const p of candidates) if (existsSync(p)) return p
-  throw new Error('cannot locate @anthropic-ai/claude-code/cli.js')
+  throw new Error('cannot locate @anthropic-ai/claude-code/bin/claude.exe')
 }
 
 function renderTask(entry: PlanEntry, sourceId: string): string {
@@ -174,7 +174,7 @@ function parseTokensFromLog(logPath: string): { inputTokens: number; outputToken
 }
 
 function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult> {
-  const cliJs = resolveClaudeCli()
+  const claudeBin = resolveClaudeBin()
   const systemRules = readFileSync(RULES_FILE, 'utf-8')
   const taskPrompt = renderTask(entry, sourceId)
   const logPath = join(ROOT, 'logs', `generate-${entry.id}.log`)
@@ -185,8 +185,7 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult
 
   log.raw(`  spawning claude -p for ${entry.id} → logs/${entry.id}.log`)
   return new Promise(resolveFn => {
-    const child = spawn(process.execPath, [
-      cliJs,
+    const child = spawn(claudeBin, [
       '-p',
       '--model', 'opus',
       '--verbose',

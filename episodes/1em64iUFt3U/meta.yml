@@ -1,0 +1,38 @@
+id: 1em64iUFt3U
+source: lennys-podcast
+title: "How a Meta PM ships products without ever writing code | Zevi Arnovitz"
+guest: "Zevi Arnovitz"
+guest_role: "Meta PM · ex-Wix PM · non-technical vibe coder"
+published: 2026-01
+duration: "1h15m"
+url: https://youtube.com/watch?v=1em64iUFt3U
+thumbnail: https://img.youtube.com/vi/1em64iUFt3U/maxresdefault.jpg
+status: generated
+category: ai-tech
+tags:
+  - coding-agents
+  - product-management
+  - productivity
+  - ai-products
+  - interview
+  - product-lead
+  - quick-take
+  - technical
+summary: |
+  Zevi Arnovitz 是 Meta 的 PM, 一年前在日本看了一个 YouTube 视频, 然后
+  从 zero 技术背景一路走到 Cursor + Claude Code, 用一套可复用的 slash-command
+  工作流 (create-issue → explore → plan → execute → review → peer-review →
+  update-docs) 独自维护一个副业 app Studymate。他把不同模型拟人化 (Claude
+  当 CTO, Codex 是小黑屋的 hoodie coder, Gemini 是吓人但出活的 crazy scientist,
+  Composer 是冲锋队), 让它们互相 code review "fight it out"。一句反复出现的
+  口号: "you'll be replaced by someone who's better at using AI than you."
+core_ideas:
+  - "曝光疗法式学习路径: GPT Project → Bolt / Lovable → Cursor 亮色 → Claude Code 黑色 dark mode"
+  - "harness 才是工具差异: 模型都一样, Bolt 和 Cursor 的区别是替你做了多少决策"
+  - "slash command = 可复用 prompt 文件: 每一步工作流都 crystallize 成一个 markdown"
+  - "multi-model peer review: 让 Codex / Composer 审 Claude, Claude 回来 'defend or fix'"
+  - "post-mortem loop: 问 Claude '你 prompt 里哪里让你这么做', 把答案写回 CLAUDE.md"
+  - "Meta 面试三件套: Claude coach project + base 44 练习小游戏 + Comet 跑题库热度"
+  - "10x PM vs 10x Learner: Wix 第一次 product review miserably failed 之后学到的"
+  - "titles are going to collapse — 最适合做 junior 的年代, everyone 是 builder"
+base: /episodes/1em64iUFt3U/

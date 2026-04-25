@@ -1,0 +1,36 @@
+id: Hrbq66XqtCo
+source: dwarkesh
+title: "Jensen Huang – Will Nvidia's moat persist?"
+guest: "Jensen Huang"
+guest_role: "Nvidia CEO"
+published: 2026-04
+duration: "~2h"
+url: https://youtube.com/watch?v=Hrbq66XqtCo
+thumbnail: https://img.youtube.com/vi/Hrbq66XqtCo/maxresdefault.jpg
+status: generated
+category: ai-tech
+tags:
+  - interview
+  - deep-dive
+  - strategic
+  - chips
+  - hardware
+  - ceo
+summary: |
+  Dwarkesh 花了两小时把 Jensen 逼到角落里问：如果 AI 商品化软件，Nvidia 会不会
+  也被商品化？Jensen 的答案是 "electrons → tokens 的转换" 本身就是护城河，并一路
+  反驳 TPU / ASIC 叙事、承认自己没能早投 Anthropic 的 "my miss"，最后跟 Dwarkesh
+  就 China 出口管制打了一场 40 分钟的激烈辩论 —— "you're not talking to somebody
+  who woke up a loser."
+core_ideas:
+  - "公司 mental model：input 是 electron，output 是 tokens，中间是 Nvidia"
+  - "护城河哲学 —— as much as needed, as little as possible（不做 foundry / cloud / foundation model）"
+  - "None of the bottlenecks last longer than 2-3 years —— co-as / 内存 / EUV 都能追上"
+  - "Blackwell 50× Hopper 不是 Moore's law（~25%/yr），是算法+架构 co-design"
+  - "accelerated computing ≠ tensor processing unit —— 面更宽，install base 是王牌"
+  - "Anthropic is a unique instance and not a trend —— 100% of TPU/Trainium growth"
+  - "My miss：早期没意识到 VC 不会出 5-10B，所以 Anthropic 去找了 Google/AWS"
+  - "不选赢家：Nvidia 自己创业时在 60 家图形公司里是最不可能活下来的那个"
+  - "五层 AI 蛋糕：energy / chips / infra / models / apps —— 一层可以补另一层"
+  - "让出中国 = 让 AI 模型不再 optimize for 美国 stack —— 长期代价更大"
+base: /episodes/Hrbq66XqtCo/

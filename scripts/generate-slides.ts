@@ -19,24 +19,21 @@ import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { log } from './lib/log.ts'
 import type { EpisodesFile, Episode, SourcesFile } from './lib/types.ts'
 
-// Resolve the actual Node.js entry of the claude CLI so we can spawn `node` directly,
+// Resolve the claude CLI native binary so we can spawn it directly,
 // avoiding Windows' inability to spawn .cmd files without shell: true.
-function resolveClaudeCli(): string {
-  // Parse the claude.cmd shim to find the js entry path
-  // Hardcoded fallback
+function resolveClaudeBin(): string {
   const candidates = [
-    'C:\\nvm4w\\nodejs\\node_modules\\@anthropic-ai\\claude-code\\cli.js',
+    'C:\\nvm4w\\nodejs\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe',
   ]
   for (const p of candidates) {
     if (existsSync(p)) return p
   }
-  // Try npm to resolve
   try {
     const npmPrefix = execSync('npm config get prefix', { encoding: 'utf-8' }).trim()
-    const p = join(npmPrefix, 'node_modules', '@anthropic-ai', 'claude-code', 'cli.js')
+    const p = join(npmPrefix, 'node_modules', '@anthropic-ai', 'claude-code', 'bin', 'claude.exe')
     if (existsSync(p)) return p
   } catch {}
-  throw new Error('Could not locate @anthropic-ai/claude-code/cli.js')
+  throw new Error('Could not locate @anthropic-ai/claude-code/bin/claude.exe')
 }
 
 const ROOT = process.cwd()
@@ -92,12 +89,11 @@ async function generateOne(ep: Episode, sourcesFile: SourcesFile): Promise<boole
   const taskPrompt = renderTask(ep.id, ep.source, ep.title)
   const systemRules = readFileSync(RULES_FILE, 'utf-8')
 
-  const cliJs = resolveClaudeCli()
-  log.raw(`spawning node ${cliJs.split(/[\\/]/).slice(-3).join('/')}`)
+  const claudeBin = resolveClaudeBin()
+  log.raw(`spawning ${claudeBin.split(/[\\/]/).slice(-3).join('/')}`)
 
   return new Promise<boolean>((resolvePromise) => {
-    const child = spawn(process.execPath, [
-      cliJs,
+    const child = spawn(claudeBin, [
       '-p',
       '--model', 'opus',
       '--append-system-prompt', systemRules,
