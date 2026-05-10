@@ -1,0 +1,39 @@
+id: SUjA25ijcNs
+source: latent-space
+title: "Mistral: Voxtral TTS, Forge, Leanstral, & Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample"
+guest: "Pavan Kumar Reddy & Guillaume Lample"
+guest_role: "Mistral · Audio Research Lead 与 Chief Scientist"
+published: 2026-03
+duration: "~54m"
+url: https://youtube.com/watch?v=SUjA25ijcNs
+thumbnail: https://img.youtube.com/vi/SUjA25ijcNs/maxresdefault.jpg
+status: generated
+category: ai-research
+tags:
+  - ai-research
+  - ai-products
+  - interview
+  - researcher
+  - technical
+  - strategic
+summary: |
+  Mistral 同一周内同时发了 Voxtral TTS、Forge 平台、Leanstral 形式化模型和新的 Mistral
+  Small——这期 Latent Space 让 Pavan Kumar Reddy 和 Guillaume Lample 一次性把这些
+  发布背后的工程选择讲清楚。Voxtral TTS 是 3B 模型 + 自研 12.5 Hz 神经音频 codec
+  + auto-regressive flow matching head——为了实时流式而不是 SOTA quality 选 AR 路线。
+  Forge 是把 Mistral 科学团队用了 2 年的 infra 直接给客户：fine-tune 后能"10x cheaper"，
+  并在某些客户项目把一种语言从 0~1% 训到 50% 的 mix。Leanstral 看似是数学家工具，
+  实际是赌 long-horizon reasoning 的 transfer——Lean 的编译器是天然不可 reward-hack
+  的判官。最后透露下一代 RL infra 是为"6 hours to get a reward"的 trajectory 设计的。
+core_ideas:
+  - 'Voxtral TTS 用 auto-regressive flow matching：4–16 步 velocity 估计代替 K 步 depth transformer'
+  - 'codec 在 12.5 Hz 上输出语义 + 声学 token，不同 vocabulary 的 embedding 直接相加'
+  - "选 AR 不选纯 diffusion，因为 voice agent 需要 streaming：模型选择被产品形态倒推"
+  - 'Pavan：你不能预测 audio 帧的均值，因为均值对应模糊语音——必须建模分布'
+  - "Forge = 给客户用的，是 Mistral 科学团队自己用了 2 年的同一套 infra"
+  - "10x cheaper：客户在闭源模型上跑通原型，进生产时 fine-tune 一个开源模型反而更好更便宜"
+  - 'Leanstral 真正的赌注不是数学奥林匹克，而是 long-horizon reasoning 的 transfer 到其它领域'
+  - 'Lean 的编译器就是判官：if it compiles, it''s correct——没有 reward hacking 的接口'
+  - 'GRPO 在 6 小时奖励的 trajectory 上崩了，Mistral 在为下一代 RL 设计新 infra'
+  - "Guillaume：闭源模型对企业是浪费——你坐在 trillions of tokens 的 in-domain 数据上没法用"
+base: /episodes/SUjA25ijcNs/

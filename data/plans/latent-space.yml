@@ -3,22 +3,23 @@ refreshed_at: 2026-05-10T08:57:04.237Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 14
-done: 1
-pending: 11
+done: 5
+pending: 5
 episodes:
   - id: 9d899Ram9Bs
     title: 🔬How GPT‑5 derived new results in theoretical physics and quantum gravity — Alex Lupsasca, OpenAI
     duration: 5511
     upload_date: "20260505"
     url: https://youtube.com/watch?v=9d899Ram9Bs
-    status: pending
+    status: generated
     priority: 1
+    category: ai-tech-rest
   - id: CSYWbbP_OkY
     title: ⚡️ Competing with ChatGPT and Sierra, building a $10M ARR company — Yasser Elsaid, Founder, Chatbase
     duration: 3626
     upload_date: "20260502"
     url: https://youtube.com/watch?v=CSYWbbP_OkY
-    status: failed
+    status: generated
     priority: 1
     category: ai-tech
   - id: rv23_KcHt4s
@@ -42,15 +43,17 @@ episodes:
     duration: 5122
     upload_date: "20260420"
     url: https://youtube.com/watch?v=uqM8qjbLRHA
-    status: pending
+    status: generated
     priority: 1
+    category: ai-tech-rest
   - id: yyuVR-ML9X8
     title: "⚡️ How to turn Documents into Knowledge: Graphs in Modern AI — Emil Eifrem, CEO Neo4J"
     duration: 2933
     upload_date: "20260418"
     url: https://youtube.com/watch?v=yyuVR-ML9X8
-    status: pending
+    status: failed
     priority: 1
+    category: ai-tech-rest
   - id: ATt7QJgt-2k
     title: Notion’s Sarah Sachs & Simon Last on Custom Agents, Evals, and the Future of Work
     duration: 5137
@@ -88,22 +91,25 @@ episodes:
     duration: 4008
     upload_date: "20260402"
     url: https://youtube.com/watch?v=oBWRHnggscM
-    status: pending
+    status: generated
     priority: 1
+    category: ai-tech-rest
   - id: obEWFoLfWD4
     title: "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
     duration: 2223
     upload_date: "20260331"
     url: https://youtube.com/watch?v=obEWFoLfWD4
-    status: pending
+    status: failed
     priority: 1
+    category: ai-tech-rest
   - id: SUjA25ijcNs
     title: "Mistral: Voxtral TTS, Forge, Leanstral, & Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample"
     duration: 3242
     upload_date: "20260330"
     url: https://youtube.com/watch?v=SUjA25ijcNs
-    status: pending
+    status: generated
     priority: 1
+    category: ai-tech-rest
   - id: KSCCKCz2x04
     title: 🔬There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik
     duration: 2115
@@ -111,3 +117,4 @@ episodes:
     url: https://youtube.com/watch?v=KSCCKCz2x04
     status: pending
     priority: 1
+    category: ai-tech-rest

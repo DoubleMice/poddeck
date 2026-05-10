@@ -3,8 +3,8 @@ refreshed_at: 2026-05-10T08:57:05.227Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 11
-done: 4
-pending: 7
+done: 6
+pending: 2
 episodes:
   - id: wtzzWyrEY_A
     title: "The Creator of Superpowers: Why Real Agentic Engineering Beats Vibe Coding"
@@ -27,8 +27,9 @@ episodes:
     duration: 22290
     upload_date: "20260429"
     url: https://youtube.com/watch?v=YInxWv_4N7w
-    status: pending
+    status: failed
     priority: 1
+    category: ai-tech-rest
   - id: 9EjWR3QpJYk
     title: It's 2026, and We're Still Talking Evals
     duration: 2457
@@ -58,8 +59,9 @@ episodes:
     duration: 3087
     upload_date: "20260420"
     url: https://youtube.com/watch?v=q9e2e5Y8Q0k
-    status: pending
+    status: generated
     priority: 1
+    category: ai-tech-rest
   - id: wTrv1hMQbVg
     title: How We Cut LLM Latency 70% With TensorRT in Production
     duration: 3920
@@ -73,19 +75,22 @@ episodes:
     duration: 27880
     upload_date: "20260415"
     url: https://youtube.com/watch?v=bha7cnTh534
-    status: pending
+    status: failed
     priority: 1
+    category: ai-tech-rest
   - id: nKDKhbPcFcs
     title: Ship Agents  A Virtual Conference Track 2
     duration: 5906
     upload_date: "20260410"
     url: https://youtube.com/watch?v=nKDKhbPcFcs
-    status: pending
+    status: failed
     priority: 1
+    category: ai-tech-rest
   - id: 1WFffCGhm7U
     title: Fixing GPU Starvation in Large-Scale Distributed Training
     duration: 3169
     upload_date: "20260410"
     url: https://youtube.com/watch?v=1WFffCGhm7U
-    status: pending
+    status: generated
     priority: 1
+    category: ai-tech-rest
