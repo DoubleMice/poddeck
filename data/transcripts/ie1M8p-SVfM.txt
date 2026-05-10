@@ -1,0 +1,433 @@
+Title: Getting Humans Out of the Way: How to Work with Teams of Agents
+Video: https://youtube.com/watch?v=ie1M8p-SVfM
+Transcript source: https://home.mlops.community/public/videos/getting-humans-out-of-the-way-how-to-work-with-teams-of-agents
+
+Rob: [00:00:00] If you're doing pixel diffs, have a thing that finds out the actual error and zooms in on that less pixels for the agent to have to look at and the all like tools that create a report automatically that summarize the most important things. Go. What to pay attention to. Yeah. Ask the agent to tell you what was hard.
+
+Rob: He'll tell you.
+
+Demetrios: I was just talking to Erica and she was mentioning she downloaded the skills that we created from the coding agents. Conference transcripts of the live stream, uh, that I fed into Claude. And I said, go and create skills from this. Right? And Erica told me. So I downloaded those and I have 'em. And they're great.
+
+Demetrios: I think, uh, I don't know if they're doing anything, but they're not making it worse. So that's our glowing recommendation from users. That's a pretty low bar.
+
+Demetrios: Oh exactly, man. [00:01:00] But you had some really cool skills that you presented in the hot take session that we did, and I wanted to go over them with you 'cause I'm not sure that I am fully grasping the power of the visual regression idea and the screenshots, like it's just screenshots and so I. Created the skill.
+
+Demetrios: I've got Claude running the skill, you know, when to use it, when not to use it. Um, but gimme the gist of what it is.
+
+Rob: So I think this one kind of fits into a broader philosophy I've got, but you should teach your agents to manage up. So if you've got a human who works for you. Important skill of them reporting to you is they know what information to give you, what questions to give you, and how to present their work to you.
+
+Rob: And so if you are managing agents, particularly if there's lots of them and your attention is scarce, you don't want to having to manually. Qa, the stuff they built. Let's say you're doing the [00:02:00] old school approach of an agent. They write some feature for your app and then you as a human have to like labor through it, clicking through the app, seeing if it works, and that's not a good use of your time and you can just ask the agent to do that for you.
+
+Rob: So I've got a skill I like to use where I just say that as part of your validation process. You have to do as part any block of work, you have to create what I call a feature walkthrough doc, where it takes a sequence of screenshots illustrating the new functionality that has been built, where each one is cropped to focus on the, the interesting part, and each one has text describing what is going on and why.
+
+Rob: And then before it presents that to you, the. A different sub agent itself should also go through this walkthrough doc and confirm that all the screenshots actually show what they're supposed to show. And this does multiple things for you. So one thing, if it's another error [00:03:00] catching thing that if the code didn't actually do the right thing, hopefully that second subagent has caught it and confirmed, no, this didn't actually work.
+
+Rob: The second useful thing is if I'm going to look at the work my agent did, I can now very quickly scan through this feature doc, see if everything looks right, and say, yeah, approve. Let's merge this for me. Oh, because you're
+
+Demetrios: looking at the screenshots.
+
+Rob: Yeah, I don't look at the code. So when I merged code, most of the time I do not actually try the app.
+
+Rob: I look at the walkthrough doc and say, okay, was all the functionalities implemented? And you could maybe have some like malicious misaligned ai, which fakes the screenshots to pretend to have built the thing
+
+Demetrios: goes to the nana banana, a VI, and create some random. You are,
+
+Rob: in theory that could happen. It hasn't happened yet and so, or maybe it has happened, maybe there's all all sorts of ephemeral features I think my agents have built when they haven't.
+
+Rob: But I think we haven't got that level of deception right now. But yeah, I can just scan through this doc quickly [00:04:00] to see it works in Yay. And a third cool thing this does is regression. So let's say I'm gonna ship a release. I wanna make sure absolutely nothing is broken. I just have it run. All those feature doc scripts again, 'cause each of them has a, a playwright spec.
+
+Rob: It can run to generate it and they confirm all of them. Either the screenshots, pixel match, or the agent can look at the what changed and infer that this is indeed a change that was supposed to happen. And then it can write another report for me saying, here's all the diffs that you as a human should pay attention to because maybe they're interesting.
+
+Demetrios: Oh, that's why you were calling it the regression test. That's, that's the part that I didn't fully wrap my head around when you first told me about it, and I appreciate that like last little part. And the third cool thing on the first part, and I can imagine this happens quite a bit when it doesn't get through.
+
+Demetrios: It doesn't do what it [00:05:00] wants to do. That first agent will come up with some kind of error message. Does it go and automatically try and update and so it doesn't hit the error message? Or do you need that second agent to say, Hey, here's an error. Let's go try to fix this.
+
+Rob: I just tell it. Keep working on this feature of walkthrough till it works.
+
+Rob: It can run the sub agent to verify it and come back with issues and say, yeah, build, build a, I say build a screenshot based feature walkthrough, showing this works. If it doesn't work, keep it racing till it does.
+
+Demetrios: Yeah. There's so many times I like how you, you kinda called me out. I feel a little hurt. On the old way that we used to test features was I would walk through and go and try and do it.
+
+Demetrios: I've spent so much time QA-ing things, especially like some random little toy app that I have, and this now is becoming my [00:06:00] go-to with, okay, I don't have to be the one who's QAing it all the time. I do think, like for example, let me give you my latest toy that I'm playing with. I'm trying to create like this shorts for podcast creator that uses Remotion and it will create different animations on top of the shorts with respect to what the transcript is.
+
+Demetrios: And a lot of times I'm hitting a wall because there is the wrong dimensions. In the short that is created, I want it vertical so I can post it on TikTok or YouTube shorts, but I click through and I don't find that out until I've uploaded the video that I then go through and it creates the, it grabs the transcript and it will create the animation.
+
+Demetrios: And then it's [00:07:00] not till that last step that I see, oh, this isn't the right dimensions. You think it could fix that? Because I haven't even tried, but this feels like something totally fixable by that.
+
+Rob: Definitely. I think one of my broader philosophies right now is that the main role of a human when working with a team of agents is coming up with the validation processes.
+
+Rob: If you can define what good means and you can work out ways of sculpting and defining that, ideally with like agents and scripts and constraints and stuff. Then a lot of the time the agents can then deal with that. Another thing I wanna throw out, we talked about like the old way of working and the weird thing about AI is these models are changing so fast that the old way can literally mean a few weeks ago.
+
+Demetrios: Yeah.
+
+Rob: Like the, the latest are, are anthropic models. Opus 4.6 or whatever only came out in February. That really wasn't very long ago. And there's new things which are practical to do now that weren't [00:08:00] before. And so like we're in this weird world, but there's really no such thing as best practices because things haven't really stabilized long enough for.
+
+Rob: Everyone to work out what the best thing to do is. I'm sure there's however good you are at using these agents, there's gonna be some like bleeding, the obvious better thing you can be doing that you haven't realized because it only became practical to do it a few weeks ago. And it takes longer than that for information to like pervade through the network of people.
+
+Demetrios: Yeah. Well the, the information may be out there, but there's, it's. Surrounded by a bunch of noise. And so you're busy trying to test the other million things that others are talking about. And this was one of the pieces that I was hitting on when we were at the coding agents conference is how we're all now our little mini r and d departments.
+
+Demetrios: And because of that, you get folks like yourself or folks like me and all the other hundreds of thousands, if not [00:09:00] millions of developers out there that are testing things and then. Some of them are talking about what's working, but like you said, what's working changes every week. And so then if I'm talking about what's working now or this is all of a sudden able to work because of the new model drop that needs time to reach me or you or, and go around in the circles and get, um, passed off to different folks.
+
+Rob: Yeah. The one thing is predictable though, is each level where the models get better. You can give them more autonomy and step back more and micromanage them less. If you think about the progression, like at the beginning you had like the really early models where all they could redo was auto complete and it was like you could throw a few words or lines of code.
+
+Rob: You press tab because that's as much as they could do without meetings guidance. And then you had things where you could run a [00:10:00] sidebar on your IDE where. They could run for a bit, but like half of what they did was wrong or requesting guidance and so you kinda had to peer program with them so small to complete the peer programming.
+
+Rob: And then we got to the stage where they can run for a long enough chunk of time. Makes sense to run in a terminal. And then you get the point where we're at now where they can run for long enough time by themselves. You can manage multiple of these at once. I think it's only fairly recently made sense to do that.
+
+Rob: And you got the point where they can do their own qa, they can do their own documentation, they can do their own validation, and you really can each level step up your level at which you're managing these from. Like it's all to complete to peer programer, to line manager to like. Manager of a whole team, and it's that each time requires like a different philosophy, but also each philosophical change is a bit like how you work with a human, but like how you work with a human is a greater level of organizational abstraction.
+
+Demetrios: Yeah. And you don't have to deal [00:11:00] with the human drama, which is always, it throws a little bit of a wrench in things.
+
+Rob: Yeah. I think that's actually one of the main ways that managing agencies. Different from managing humans. So you're talking about managing agents as being like managing humans, but with humans.
+
+Rob: So these accrued, you have to be nice to them. It's like if you hire a human and they're not actually useful, it's really awkward because fing someone is really, really mean. Yeah. Stopping using an agent isn't, or like if you want to have four agents try and do the same thing and throw the workforce except the one did best.
+
+Rob: That's okay with an agent. Okay. To waste their time with humans. That's really, really mean. Or another example, like with agents, you can make them do really laborious stuff that humans wouldn't like having to do. Like they have to document absolutely every file and every and in lots of different ways.
+
+Rob: They have to follow extremely strict lin rules have to have unit test coverage for every line of code. [00:12:00] Have to like really, really carefully test different thing in a way that would really annoy real humans. 'cause it's so much like. Bureaucratic work, but maybe in some future time we'll decide. You've gotta like have empathy and rights for agents and stuff, but right now you can work them pretty hard and make them do things that annoy humans.
+
+Rob: And that distinction between managing humans does make a difference in how you make them work.
+
+Demetrios: Yeah. You can also use all caps lock and no repercussions when you talk to the agents. Whereas if you use all caps lock with a human, it may be a little bit sketchy,
+
+Rob: but I have heard anecdote anecdotally that if you are too mean to agents, they behave less well, maybe partly because again, that's simulating humans.
+
+Demetrios: I did hear that. Yeah. If you, um, there's like a few hacks where if you tell 'em they're gonna get fired, they'll perform better. Because the, again, it's like you're, [00:13:00] you're imitating that asshole manager in a way.
+
+Rob: Yeah.
+
+Demetrios: But dude, there is one piece that I, I want to go back to because I think you have more to say about it, and I don't wanna let it slide by without squeezing all the juice out of it.
+
+Demetrios: And that is on setting up the systems to verify. And so you have the QA that you've done, but. You are thinking about how to verify the code that the agent writes at a whole different level. What are some other ways that you're doing that? Are you writing tests? Are you having the agents write the tests and then you're looking at the tests and like you said, linting every line.
+
+Demetrios: Like what are some ways that you're verifying in your systems that you're using?
+
+Rob: I think a broad philosophy here is to get the human out of the loop. So anytime you find yourself having to micromanagement agent or look at every line of code, or you spot something out doing wrong, you should think, [00:14:00] okay, how can I should up a verification process that captures.
+
+Rob: Of this.
+
+Demetrios: Mm-hmm.
+
+Rob: Uh, like if every time you notice it, like doing, let's say, one simple thing, I notice that some of my agents were producing, like functions were really long and unreadable. So I added a lint rule that just like required maximum 50 lines of a function, and that helps a fair amount. Uh, another thing is like I had a thing where I was writing components.
+
+Rob: I realized there things to do a lot of like custom micro management of styles of C-N-F-C-F-S and stuff. In a way it wasn't very readable. I had an agent write a lint rule for me that enforced, that starting had to be done with a fairly compact, world defined set of components Action. Important thing to note here is that if you're a human writing, custom lint rule, which is a real pain, but agents are really good at writing custom lin rules.
+
+Rob: Anytime you see a agents writing codes in the way that you don't like, whether stylistically or too much complexity or whatever, stick in a custom lin rule, and you never have [00:15:00] to look for that ever again. Let's say you have your own strict opinions about how you react, coach, be using use effect. I happen to have those kind of opinions, define what those opinions are, have a lint rule.
+
+Rob: You never have to look for that problem ever again. You can end up with huge numbers of lint rules, but you end up with that very tightly defined coding style. Similarly, it's good to make sure that you really are very exhaustive about unit test coverage. And again, agents are really, really good at writing unit tests.
+
+Rob: You can have crazy high levels of unit test coverage. You can have like really good simulation of the things outside your code that you want to be simulated. You can basically arbitrarily good about, does the code work arbitrarily good about is this code clean? Other thing I'll touch on in that. Space R also talked about in the coding conference is documentation, like the way the agents navigate the code base is, broadly speaking, semantic search.
+
+Rob: They grew up around, they read files, they find related [00:16:00] stuff. They will do a better job of that if the coders itself well documented. So I have a lint rule saying that every file has to have a comment at the top saying, what is this file for? What does it do? Wow. Broadly speaking, how does it do it? What are the key design decisions it makes in doing that, and how is it related to other key files?
+
+Rob: And I, I require a README for every folder, which says, what is this folder about philosophically, what are the files in here doing? What design decisions are made in the stuff in this folder? And then a one line summary of the purpose of every file in that folder. And that makes the code way more navigable, both for, for humans and for agents.
+
+Demetrios: So this is quickly becoming a common design pattern. Have you been digging around in any of the companies that are recreating the file systems for agents?
+
+Rob: To be honest, no. I don't have a, I'm sure there's important stuff that I'm not on track of. [00:17:00]
+
+Demetrios: Yeah, it's, but it sounds a lot like what you're doing. It sounds like, Hey, let's rethink and make sure that we're not creating.
+
+Demetrios: Repos for humans anymore, or not only for humans, and really think through what's going to give us, or give the agents the most information and context in the easiest ways when they need it. And so I really like this idea of a folder for every file. And then, or sorry, um,
+
+Rob: read me for every folder
+
+Demetrios: a read me for every folder, and then at the top of each file.
+
+Demetrios: Just some quick context on what this file is.
+
+Rob: And critically this helps humans as well. I think that we talk about building stuff for agents. A lot of what we can do for agents helps humans too and is often helpful when it helps humans too, both 'cause it makes it easier for us to know if we're actually doing a good job.
+
+Rob: And [00:18:00] two, 'cause sometimes you might want humans to work on the code base as well. There are some ways it makes sense to have a work for agents, but not people particularly in terms of like the tools you write. We can talk about that as well, about the importance of writing tools for your agents. But I think that there's another thing here.
+
+Rob: I think there's kinda like this like amazing Japan analogy here where if you write code. Badly with agents or with previous generations of agents, the code can be kind of shitty. So people that use the idea that agent written code is shitty code, and I think that agent written code steered well is often better than human written code.
+
+Rob: And the reason is that you can force them to do the effort of being super strict about documentation, about following guidelines, about testing, about verifying, as the code can just be like really, really forced to be structured. Similar along those lines, when humans write code. Things get hairy over time.
+
+Rob: 'cause may start without seem really, really elegant and extensible. But the thing is, when you make a code base, it's really, really easy to extend. [00:19:00] People do. And when they extend it, it often then becomes kind of disgusting. And we know the solution with humans. The solution with humans is once your code becomes disgusting, you refactor it.
+
+Demetrios: Yeah,
+
+Rob: refactoring is a lot of work and humans don't like doing work, and work is expensive, so in practice you usually don't refactor it and you have a code base that once a while a few years ago is beautiful and now it's horrendous because it's too much effort to refactor. But the cool thing about agents, as you can waste their time.
+
+Rob: And one of the ways you can waste our tires by constantly refactoring stuff. And so you can just like, oh, that was the wrong design. That's refactor to a completely different way, and you make sure it still works because you've got the verification flows. And that means I think that if you manage things well, you can potentially have code that stays nice a lot longer.
+
+Demetrios: This was a good segue into paralyzing agents and talking about how if you're constantly refactoring or if you are giving [00:20:00] different agents the same goal, but many different agents get to fire off different ways of achieving that goal, and you're using your verification process to see what the best route.
+
+Demetrios: To achieve that goal is, and then maybe you're also iterating over that one that you choose, like it feels to me like you've got some secrets in how to do that, that I want to know about. I've heard stories, but I have not been able to fully. Realize this, uh, partly because I'm probably not using Brumi in which you've created specifically for something like this, right?
+
+Demetrios: But where you can fire off five agents to complete the same task, and those agents will all do it different ways, and then whichever one pass the most tests or is verified as [00:21:00] the best option is the one that you go with.
+
+Rob: So for the multiple variants thing, what I do is fairly low tech. I'll just guess again, so brewing makes it really quick to spin out.
+
+Rob: Spin out agents. I can talk more about that separately so you can very, very quickly, like a few keystrokes, you spot up on agents with its own work for you doing its own thing. I would just like describe five different angles on the task, can say run with it, and then at the end I look at their verification results and what they've done.
+
+Rob: Pick one. Well, maybe some of 'em get stuck. Some of 'em seem to do something good when, when they drive their design decisions. At the end, some just seem nicer. So that that one's not particularly hard. I think the more sad thing, I think people often get unstuck with working power agents is the the merge conflict stuff.
+
+Rob: Because if you've got a lot of agents running at once, particularly if someone doing refactorings, you end up with a shit ton of conflicts. And I think when the humans deal with merge conflicts, this is considered a painful, annoying thing. 'cause humans having to like decide how to [00:22:00] resolve stuff is like a huge load of work.
+
+Rob: But I kind of feel with agents that merging is mostly a solved problem because you can just write a skill saying, Hey, agents put in the latest from Maine. Look at every PR that you are merging with, understand what they're philosophically doing, and then make a decision about how to resolve every conflict.
+
+Rob: Both the syntactic ones where get detected, there was a conflict, and the semantic ones where this is changing. The way to think about this thing and the way that affects how we think about what you've done, and broadly speaking, that works really well. And again, if you're gonna get human to do that, there'd be a ton of work you've gotta read every PR you're emerging with.
+
+Rob: Agents are great at doing a ton of work, so I feel like merging is just a solved problem now, and that really changes the extent to which you can go in parallel.
+
+Demetrios: But this is when you are sending the agent, like you're [00:23:00] telling the agent from the get go. Once you have something, go ahead and merge it. To main, or that's an extra step that you as the human have to drop in and be like, oh yeah.
+
+Demetrios: And by the way, if you hit any merge conflicts, make sure to do X, Y, Z.
+
+Rob: So what I do in Brumi is you've got this idea of customizable commands. So on the left hand you've got left five, left hand side, you've got your, the set of sessions that are running due to an agent sessions, each of it are work Three, you've got your agent panel where you can see your agents doing some stuff.
+
+Rob: You've got your file panel where you can see the codes. It's actually the same editor as Monaco, same editor as VS. Codes. It's very familiar if you use to that. And you've got your like panel in the middle, which is yet your source code control stuff, which of course will be doing like your code reviews and stuff.
+
+Rob: And in these panels here. There's a like customizable buttons you can just click to make it do a standard thing. So you can do, so. You can do like, okay, write a report what you've done, [00:24:00] or it looks like you are stuck. Explain what's going on here or.
+
+Demetrios: Oh
+
+Rob: my God, that's so useful. Put in the latest, put in the latest per domain, merge it, make all decisions.
+
+Rob: There's anything, if anything not obvious. Write me up a quick report. Say what the options I'd ask and ask me. I've also another one, which is create pr, but what it does is it like where. Commits everything, pulls and exit from Main Makes good decisions about how to merge. Does does the screen short walkthrough, writes it all up.
+
+Rob: CREs a PR sends it to me to review and that's a whole other stuff all in one go. And I, these are all customizable. It's just broom me slash comm command I, so you can totally customize what these are. And in a sense it feels like a minor feature. 'cause you could literally just type these same things in.
+
+Rob: It's like slash this skill, whatever, but the fact it's a single click. Huge. It does make it a lot quicker.
+
+Demetrios: Huge. Especially if you're gonna do that various times. You know that every time you're gonna pull from Main, you wanna do X, Y, Z, and it's a common workflow, it's so [00:25:00] much easier to have it as a click as opposed to even like if it's a slash command, like I would much rather click once than have to start typing something.
+
+Rob: Particularly managing a lot of these, a lot of these sessions like you've, if you've got like 10 or 20 of these running at once, you really want to drop in, click, move back. So, okay, that guy's been spinning it for a while. Let's ask, tell him what's going on. That, that one is wrapped up. Yeah, that report seems good.
+
+Rob: Okay. Merge that one. I've also got another button, like if you've, assuming the PR is good, you could go through GitHub and say, okay, squash and merge. What that doesn't do is check that all the actual mergers are safe. So I instead like doing my own merge action where it itself pulls, pulls the merges in, make sure there's no semantic complex ental validation, which is safer than just doing a squash on merge from GitHub.
+
+Demetrios: So how are you? Actually running 10 or 15 agents in parallel. I have a hard time even running like three.
+
+Rob: So partly having a [00:26:00] very, very beefy laptop.
+
+Demetrios: Yeah,
+
+Rob: step
+
+Demetrios: one and
+
+Rob: partly step one, have a very, very beefy laptop. Uh. Step two is by being thoughtful about when different things are run. Like you, if you have very expensive end-to-end tests and your agents run them too often, you can blow up your laptop really quick.
+
+Rob: So it's worth being thoughtful about how to tell agents what to run when, uh. Also partly like if you've, it's gonna depend a lot on the code base and how expensive the tests and things are to run. And so I plan to add support in Brumi in somewhat near term to allow run your containers in the cloud rather than always locally.
+
+Rob: So right now, Brumi has support for you either run totally locally or in a dev container. But of course the dev containers add a bit of extra overhead. So actually I don't usually use dev containers 'cause I find if I've got too many sessions going at once, it gets too overwhelming. I think probably the answer long term is a combination of in the cloud and being thoughtful about how to run stuff [00:27:00] cheaply.
+
+Demetrios: Hmm. And what does this look like? Can you walk me through the last feature or features that you created or your last coding session? Right. Like what did you do?
+
+Rob: I can talk about how I broadly work around working on Broom Me, when I'm working on Broom Me, what I'll usually do is I'll in my day job use Broom me for my work.
+
+Rob: I'll have a doc where I record everything that annoy me or any feature I'd like it to have that. At the end of the day, I just like open a ton of parallel sessions, one for each of those things, and just like drop in what the idea was and I say, go build this for me. Then they all go and build their stuff and they all right, have a feature.
+
+Rob: Walk through with screenshots, show what they've done. And that leads, it's
+
+Demetrios: all individual features. It's not like, and that's, I think the, the key is you have to have a sprawl of feature requests right there. It's not like you're saying, Hey, one feature that is really deep, it needs a lot of work, and you're having [00:28:00] paralyzed agents working on that one feature in different ways.
+
+Rob: So, so there's, there's two things here. So sometimes when I give, if it's a reasonably large feature, the agent itself might spin out subagent. Like clawed code is pretty good, like doing some degree of orchestration, spinning out subagent, and so that kinda like break a big thing into smaller things. Right now I mostly just leave it to like clawed code and that kinda stuff.
+
+Rob: Actually, there is an importance. Segue sideways, we can go to a quick side track. I think there's kind of two orthogonal topics in play here. One is orchestration, which is like if you wanna do some big complex thing, how do you break it out into different agents and different things either running in parallel or in sequence or different like subagent have their own context.
+
+Rob: They're not like biased by each other's assumptions and that kinda stuff. And the second thing is observability and controllability, which is if I've got multiple agents running, have [00:29:00] a look at what they're doing and for the orchestration. Orchestration can be done by agents themselves. It can be done by structured code things.
+
+Rob: It can be done by humans. It can be. I just asked Claude Cove to do a thing and it spins out some subagents. It can be semi-structured where I've got a skill that Claude Cove uses and it says how you should spin out things in the subagents. It can be a purely structured thing. Some people have these workflows where they very structured way to break into subagent in some structured way.
+
+Rob: Yeah. Or if it's a human, I see this thing. I realize, okay, I as a human, think we've gotta build this system here. Gotta do this refactoring here, gotta build this UI thing here. And broadly speaking, the more. Big NAR thing, the more likely it is a human has to do the orchestration and the more predictable a way of breaking dad is the more likely it is.
+
+Rob: You can do it with a skill or structured thing, but that's kind of al in some ways to how a human observes it. Like Claude [00:30:00] Code has this new feature of agent teams where it spins out these agents running at the same time communicating which other in parallel to message boxes. And right now room, you can't see those agents in the agent teams, but I'd like it to.
+
+Rob: And when I've got that, then you'll have a situation where you've got parallel agents that a human can see in Brumi that were actually spun off by an agent. And I can imagine that longer term you can have this mix of parallel sessions kicked off by humans versus kicked off by agents. With both of those things being things where a human can jump in and see what they're doing, spot things going sideways, ask for a status report in a kinda managing by walking around kind of way.
+
+Rob: And these are somewhat ortho dimensions.
+
+Demetrios: Yeah. Yeah. I like this spectrum of how. Parallel agents or subagents are kicked off. And if it's a human doing it or if it's a skill that's doing it, or if it's just like [00:31:00] Claude itself knows to do it, that's one thing. And it doesn't really matter how you get there, as long as you get there and you get and accomplish what you need.
+
+Demetrios: What you're kind of talking about back to when you're coding with Brumi is, alright, I've got five features that I wanna get done. And so I kick off all these five features and now I've got five different agents that are going about coding these features and they're looping back and forth, and then you go grab coffee and you come back and you're looking at, did any of them get stuck or do I need to merge to main, all of those quick access buttons that you were mentioning before, you kind of have there at your fingertips.
+
+Rob: Yeah, I'm just kinda like the consumer saying, okay, yeah, that looks good. Based on that report, you can merge that one. Then the other ones, they typically, there'll be some conflicts 'cause usually the features aren't throwing up, aren't entirely separate, and then they would just like automatically like.
+
+Rob: See it as a change. Pull [00:32:00] that in refactor stuff to work with it. It's actually a pretty, a fair amount of the work agents are doing is resolving conflicts from the other stuff I asked agents to do.
+
+Demetrios: Don't you think it would just be easier if it wasn't parallel? Would there be less work if you did it synchronously?
+
+Rob: There will be less total work, but there'll also be a longer time for start to finish. Like a lot of the, probably most of the work is separate. Most of the work with the features is separate, but there's gonna be some stuff which overlaps and so like. If your aim is to get stuff shipped as quickly as possible ball and make best use of human attention, do stuff in parallel.
+
+Rob: If your aim is to absolutely minimize agent work and human attention is less scarce and time is less scarce, then do stuff in series. But I think usually the situation we're in is like human attention is scarce time. You want to get stuff done quickly and the agent's attention is. Although I wouldn't say super cheap, like [00:33:00] Claude isn't the world's cheapest thing.
+
+Rob: Cheap enough is not a thing to prioritize.
+
+Demetrios: Yeah. And how are you recognizing, if at all, when an agent is going off track? Because I'm sure that it or you did not properly describe what you wanted, so then the agent is not able to execute on your vision.
+
+Rob: Again, a lot of that comes back to the idea of teaching your agents to manage up, like teach them to, once they've thought through all their things, be clear what their key design decisions are.
+
+Rob: Ask you the right key questions. One thing I do. I actually don't generally use Claude's built-in plan mode. I have it create a plan to MD file and ask me the core top level questions. And if it does a good job of asking me the top initial questions, it usually won't have gone sideways and often I often, I won't actually read the plan.
+
+Rob: 'cause the [00:34:00] plans are too long and my attention is scarce, but I will read the questions it asks me and I'll either say, yeah, your assumption is correct, or these, or Steve this, Steve that, Steve that. And typically I'll ask like three to five questions and if you do a good job of teaching, how to ask you the right questions and a good job of asking those questions.
+
+Rob: You probably don't have to read the plan. It's still good to have the plan written up because one, it helps the system manage its own context because that plan isn't the thing gets paid outta context. It can always just go back to the panel and look at it. Another little detail thing is that sometimes with parallel agents, it's good to have them look at each other's plans.
+
+Rob: 'cause if you've got two agents running in parallel and this is gonna do a thing that's gonna affect that one, as long as it's good to know what's gonna land from the other one. And if they're not in a container. They can actually look in this and the SubT trees are like, and there's work trees' like power folders of siblings.
+
+Rob: They, you can literally just tell it's, look, look at this sibling work tree's [00:35:00] plan and see what it's up to.
+
+Demetrios: And that only is possible when you have a plan document.
+
+Rob: Yeah. I, I personally think it's good to have the planned documents in the repo.
+
+Demetrios: Yeah. Yeah. I like that design pattern. I remember you mentioning that and I totally.
+
+Demetrios: Have not been using it, but you told me at the conference and now I'm like, oh shoot, why haven't I been doing that? Uh, that is a very good way of doing it. And, and so there's a few other angles that I want to go here before we hit on tool creating tools and tool use and all that fun stuff. And it is the idea of containerizing and also.
+
+Demetrios: The cheap versus expensive and how you're identifying what's cheap, what's expensive, like how do you, uh, know that this is going to be a bit more time consuming or expensive if you are not [00:36:00] knee deep in the code per se.
+
+Rob: So Claude itself does most of its work in the cloud on their servers. The main thing that tends to bog down your machine is when it's running unit tests, when it's spinning up local servers, when it's.
+
+Rob: Run, end-to-end tests and that kind of stuff. And depending on how heavyweight the software testing is, it might be that spinning up 10 of your local server at once is gonna really slow things down. And if you really slow down all your power agents, you lose some of the advantages behind power agents in the first place.
+
+Rob: You want to, like, you want need machines to get bogged down so slow. So ideally you want to like wasting time on Claude servers, not wasting time on yours or at least the thing it's running if some multi-threaded thing or running it four times at once is fine. And so part of that is just about writing the skills so it doesn't like run you two e test excessively like.
+
+Rob: Don't run the E two E tests until you've already passed [00:37:00] your unit test. You've already passed your links and your other checks. Uh, another really simple thing is cloud offness is really bad habit of like running your E two E test multiple times just to grip them for one line, which obviously do not want to do.
+
+Rob: So just simple things like tell it not to do that. And so like. A broader principle, just like spotting ways in which your agents are wasting resources on your machine and tell 'em not to do that. And often that when
+
+Demetrios: you're spotting that, how is it through the observation when the parallel agents are running and you're able to see in Brumi, like, oh, it's running another unit test.
+
+Demetrios: Maybe we don't need that.
+
+Rob: A lot of this is just the general practice and management. Were walking around, so though you shouldn't be like micromanaging your agents, it's good to jump around through them and seeing what broad patterns of things they're doing. And then rather than micromanaging just that agents update up, update your guidance and your tools and your linting rules to stop them doing [00:38:00] things they shouldn't be doing.
+
+Rob: Whether that's running excessive heavyweight things or writing code in bad ways. And that also occurs to some extent of like going down bad paths and wasting tokens. Like often an agent will do something manually where it could instead write a tool to do it easier. One example I've got that is I was having agents write a load of UI components, the mats and Figma designs.
+
+Rob: And if you leave the agent to do it entirely by its own devices, it's gonna do a lot a like heavy work. Looking in detail at the PNGs from the Figma and the, and the MCP rendered versions, its own components are really trying to understand what they're different. It takes ages. So instead I had my agents write a tool I call diagnose, where it looks at the, the component it's got, and it looks at the the Figma stuff and it says exactly instructed stuff.
+
+Rob: Here's what's different, here's what to fix. And then that [00:39:00] allows the agent to do much quicker work. It's kind like when you work, when you've got humans. Humans will do much better work if they've got the right tools. Agents will do much better work if they've got the right tools, but you can have agents write those tools.
+
+Rob: So part of the art of having a good by code base is also about having the right tools that make all the work really easy.
+
+Demetrios: Okay. And by tools, you're talking beyond skills, you're talking any kind of tool.
+
+Rob: I'm talking. A variety of things. A lot of this is just scripts, like there's common things that your agents need to do and it's not the most efficient way of doing it.
+
+Rob: Manually have a script or a little app. It can run that does that bit of work and have a skill telling you how to use it. Just like you give a human a calculator or you give a human a compiler or a type checker. Work out the common things angels need to do and see. Is there a way you could put this in a structured script, which is.
+
+Rob: Does a lot of boring work [00:40:00] in one go and then tell all the agents they can use that thing.
+
+Demetrios: And you're finding that out again by just that whole walking around premise.
+
+Rob: Yeah. Manage. Oh, another thing I do is I ask the agents to tell me what was hard. So I've got this standard action. I get things to do like, okay, you've been doing working for a while.
+
+Rob: What are you spending your time doing? What is hard? And the agent will tell you what is hard. And if an agent, agent tell you something is hard. Think as a human, is there a way this could be made? Not hard. And often the answer is write a tool that automates a lot of the hard thing. 'cause just like with humans, there's some things that are better accomplished by thinking at a humanlike agent.
+
+Rob: Lightweight agents really are like humans in the way, I think. And there's some things like just give a tool, write a script, give a command, and it'll do most things. Those simple things, like if you're doing pixel diffs, have a thing that finds out the actual error and zooms in on that. Less pixels for the agent to have to look at and the all like [00:41:00] tools that create a reports automatically that summarize the most important things go what to pay attention to.
+
+Rob: But yeah, ask the agent to tell you what was hard. It'll tell you,
+
+Demetrios: wow, I hadn't even thought about asking it. Or What have you been spending your time on?
+
+Rob: Oh yeah, ask that all the time. Its no, you can tell.
+
+Demetrios: Then being able to recognize, okay, it's been spending its time on this. We should probably go in there and fine tune that.
+
+Demetrios: That's like the new technical debt is what have you been spending your time on? That's how you're, you're getting rid of tech debt by finding what is hard for the agent.
+
+Rob: Some of it's, sometimes it's a script. Sometimes it's a skill. Some of it need refactoring. Sometimes your code base is just hard to work on in this way and let your agents not you got humans.
+
+Rob: Let your agents, let your humans tell you what's hard of you. Do a one-on-one meeting with one of your reports. Ask them what's what they're enjoying and not enjoying. What's easy, what's hard, [00:42:00] and then use that to work out how to make things better. I felt a lot of the role of the human now with agents is this kind of work.
+
+Rob: It's the validation, it's the tools, it's the re no, no refactoring that you need, and knowing how to make life easy for your agents.
+
+Demetrios: Yeah. That is so wild. That is so fascinating to think about. You. Kind of blew my mind right there. I had never thought to ask that question and I appreciate this conversation so much because of it.
+
+Demetrios: Oh man. Well, what else? What else do you got for me? Is there what? Like else? I feel like I don't even know what question to ask you now, because if shit, man, that fuck, like how do we even get there? That's so cool. Let's talk more about this idea of. What we should be doing as we're managing agents. And you broke down validation, you broke down like [00:43:00] helping optimize the agent workflows.
+
+Demetrios: What other things are you looking at and thinking? My job is completely changing now 'cause I'm going from writing the code to. Now being this orchestrator or debugging, helping the agents debug themselves or giving them better tools to be able to fully take advantage of these sessions, like what else does it look like now?
+
+Rob: I think this is one of these things where the world is changing so fast, it's hard to predict what the role of humans will be in the future. I think the role of humans is to do the bits that the agents don't know how to do, and that's not stable. Every few weeks a new model comes out and that thing that a human had to do, now they don't.
+
+Rob: So I think that right now what humans have to do is kind of sunset the taste makers of say what it is we're trying to build, what problem we're trying to solve. [00:44:00] To the extent that humans still need to look at code, and right now they still somewhat do. What does it mean to have a clean code base? What does it mean for this to be human intelligible?
+
+Rob: To me and to the extent and right now, humans still need to like unblock agents and work out ways that tool needs to better or refactor as are needed. I dunno whether that's a long-term problem, whether orchestration, I can imagine the future of the agents themselves as they get to high levels of orchestration.
+
+Rob: You know, if your master orchestration agent realize cases where the low enough agents need help or guidance, et cetera, and that will get, I think agents do as well. I think there's this broader thing that goes beyond code of. What is going to be the purpose of humans in society as agents get smarter and smarter and smarter and get better at humans?
+
+Rob: A larger number of things, and it's like this thing where we keep defining real intelligence as being the things that. Computers can't yet [00:45:00] do, and that gets smaller and smaller. But I remember the day where people thought, oh, chess is a marker of real intelligence. Computers will never get good at that.
+
+Rob: Or if they can, that's beyond what we can imagine. Then they got really good at that, or people thought like great art was really the mark of real, real brain now. Great arc even better at that. And then everyone said the way to defend your career long term is learn to cope, because that's really, really hard.
+
+Rob: Internet that humans shouldn't code anymore. So I'm really kind loathed to give strong pronouncements about what humans will do because by lot of time people watch our podcast, that might not be true anymore.
+
+Demetrios: So you took the diplomatic route, you covered your ass. I appreciate that. But
+
+Rob: there is, I say what we do today, but I don't know, like it's hard to know what it means for a human to be defensible because it's hard, so hard to predict.
+
+Demetrios: Yeah, and maybe not forward looking, but just like you as your day to day, what you notice your pel yourself spending [00:46:00] more time on. You mentioned a few of these things, right? You're now just observing a lot of agents and trying to help them debug and you thinking of what you want next. I, I had kind of pondered this too.
+
+Demetrios: The best skill that I can have, which sadly, I don't know how good I'm doing on this, but it is something that I'm going to work towards is being able to articulate what I want. That is like for me, a very, very powerful trait right now.
+
+Rob: Yes. Yeah, I think the main, for the most invaluable thing of the humans now is to know what problems need solving, which is actually a remarkably difficult skill.
+
+Rob: Like the world is inherently imperfect. There's always things that could be better, and the knack is to spot two things. One is what [00:47:00] are their ways in which the world isn't perfect? And two is which of those things actually solvable and what is solvable? Change as frequently as new technologies come out.
+
+Rob: As new things change as assumptions change. And so the people who have the big impact are often the people who are aware of both ends. They're very sensitive to ways in which the world isn't quite right, but also very sensitive to ways in which the landscape, what is possible is shifting. 'cause there's a whole analogy that no one leaves a hundred dollars bank note on the floor unless it's only just appeared there.
+
+Rob: And so if a problem has been solvable for a long time, it's probably already got solved. Things are interesting when a problem only just became solvable. And so knowing the shifts in what has become a solvable and wasn't, and the the shifts and the landscape of what, what you might do is really like potent superpowers.
+
+Rob: You've got it
+
+Demetrios: dude. I'm fired up. Like I, you just got me ready. I'm about to go. Get some B Brumi [00:48:00] parallel agent sessions going on.
+
+Rob: Go going.
+
+Demetrios: For anybody out there listening, I highly recommend you give b Brumi a a test drive. It's super cool that you're building it. It is, uh, open source, right? So anybody can just, the open
+
+Rob: source works with all CLI agents.
+
+Rob: You're not locked just one of them.
+
+Demetrios: Yeah. Which is another angle that are you using? Uh, Pope pur of different agents or are you sticking to like, is Claude your daily driver?
+
+Rob: Claude's my daily driver. I use Codex where I run out of Claude credits. I try Gemini every now and then to see has he got good yet and I'm saying, no, it hasn't got good yet.
+
+Rob: Go. That's the other two.
+
+Demetrios: Then you remember why you use Claude?
+
+Rob: I remember I don't use Gemini. It just doesn't really work
+
+Demetrios: there. There was a great hugging face article that I just saw. About, and they benchmark Claude versus, uh, codex. And it was like, yeah, for kind of like the, the cheaper work that you [00:49:00] want done, the simpler stuff, use Codex and then meteor stuff.
+
+Demetrios: It recommended to use Claude. But
+
+Rob: yeah, codex isn't bad. It, it's like, it's a cons leapfrog race. I can imagine there'll be times in the near future when Codex is ahead, so like,
+
+Demetrios: yeah.
+
+Rob: My impression as of right now is that Claude is usually better, but like I wouldn't wanna lock myself into a workflow that require me to only use Claude.
+
+Rob: And so it's good to be using a platform and setup, which isn't like built by one of the major providers. Like even if say like Claude's own app was amazing, I'd still be reluctant, like totally lock myself into it. 'cause I wanna switch to Codex if for now, dad and Gemini might get really good. Yeah, like Google's a lot of efforts.
+
+Rob: This stuff are like on the benchmarks. Gemini looks amazing. Somehow something about the harness makes it not quite live up to that when I use it. Or maybe just maybe it's actually amazing. I just haven't worked out the right practices of using it. Well.
+
+Demetrios: Yeah, you haven't put the time in and that's potentially one aspect, or it is, [00:50:00] like you're saying like the harness is not quite there and it may get there in the next week, uh, as we've been talking about, you know, like, so it's good to have that optionality.
+
+Rob: Yeah, I, I never like write off Google. I've worked at Google. They're a very well run company, and I've got some very smart people.
++ Read More
+Watch More
+27:55
+Data Scientists & Data Engineers: How the Best Teams Work // Panel // DE4AI
+Posted Sep 18, 2024 | Views 683
+36:48
+Fine-Tuned Models Are Getting Out of Hand
+Posted Nov 03, 2025 | Views 350
+# AI Models
+# Fine Tuning
+# SLMs
+24:56
+Transforming Healthcare with AI: Automating the Unseen Work // Shaun Wei // Agents in Production
+Posted Nov 26, 2024 | Views 1.5K
+# Healthcare
+# HeyRevia
+# AI Agents
+Code of Conduct
+receiving their newsletter
+Privacy Policy

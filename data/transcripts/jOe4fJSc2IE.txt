@@ -1,0 +1,851 @@
+Title: The Modern Software Engineer
+Video: https://youtube.com/watch?v=jOe4fJSc2IE
+Transcript source: https://home.mlops.community/public/videos/the-modern-software-engineer
+
+Demetrios: [00:00:00] Nobody watches these anyways. Okay. As you know.
+
+Mihail Eric: Okay. Okay. Well, well then what am I doing here now? Um, yeah.
+
+Demetrios: Enjoy the side quest.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: Because now we all of a sudden have the ability to do so many things and go down so many rabbit holes.
+
+Mihail Eric: Yeah.
+
+Demetrios: That we didn't necessarily before, like if I wanted to learn how to fucking code front end shit.
+
+Mihail Eric: Yeah.
+
+Demetrios: Before it would take months.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: But now I'm like, uh,
+
+Mihail Eric: I saw this skill that someone was making online and I forget, I forget her name, but she's actually done quite a bit of good educational content and she has this, this, uh, this thing inside there.
+
+Mihail Eric: Claude Skill, or maybe like a, I think it's a skill that every time any implementation is made, it'll. It'll sort of like summarize the learnings, the, like the implementation details that are actually that, that, that you should commit to your own memory, right? Mm-hmm. And so, so they,
+
+Demetrios: you as a [00:01:00] human, not the, you
+
+Mihail Eric: as the human.
+
+Mihail Eric: Exactly.
+
+Demetrios: So different from like
+
+Mihail Eric: Yeah.
+
+Demetrios: Claude Ception where it creates a skill from
+
+Mihail Eric: something. That's right. Yeah, exactly right. It's not Claude Ception. I mean that, that there's enough, that almost feels that that's clearly top of mind for people is how do these agents like self learn and become more autonomous?
+
+Mihail Eric: That, that, that's almost obvious in my opinion, but, but I think what is less? Obvious and interesting here is, hey. Yeah. I think this is especially true for more junior engineers. It's, there's this huge question of, hey, the seniors are gonna keep having jobs because they're seniors and they've been around a while.
+
+Mihail Eric: The juniors, uh, are now in the workforce and are like, holy, you know, crap, what are we gonna do? I need to, I need to actually get a job here, but no one wants to hire me because I can just be replaced by cursor. Yeah. At least that's the running hypothesis and. It that just creates this huge gap of basically like a training gap where people, you, you typically, you, you, you hire juniors, you kind of train them into the senior roles, right?
+
+Mihail Eric: Yeah.
+
+Demetrios: And you pair program with 'em,
+
+Mihail Eric: you pair program with them, you like review their code and, and you effectively are creating this gap of knowledge between [00:02:00] one generation and the, the most senior engineer. And, and, and that generation, like that gap has to be filled some way. So I like this idea of using the agents to actually fill that gap because in the same way that they can generate code, they can also understand code probably.
+
+Mihail Eric: You know, arguably better if not at the same level.
+
+Demetrios: Actually, there's something to be said for that because somebody was just talking about in the community Slack, how before they'll go into a new area mm-hmm. That they don't know about. Mm-hmm. They'll go back and forth with just the chat bot.
+
+Mihail Eric: Yeah.
+
+Demetrios: To learn about it and then when they implement it, they can be better suited for
+
+Mihail Eric: it.
+
+Mihail Eric: That's right. That's right. One maybe of those side quests you were alluding to, which is, Hey, I just wanna keep learning about the craft, learning about the discipline, all the things that are that, that the agent can help me do more quickly. And then I think there's also a, any, I don't know what the distribution is of these two.
+
+Mihail Eric: There's also an equally. Big movement here maybe of, of just, yeah, I don't know if you ever wanna look at this. I, I am fine to just exist in the world of ignorance and, and, you know, we can talk about what that means and [00:03:00] how you can make sure that isn't just a recipe for disaster at the level of like, financial crisis when you start having that, you know, work in bank that happened in banking institutions.
+
+Mihail Eric: But, um, but yeah, I mean there's, there's a lot of interesting implications there. And I think that, that, that second category of. F we're gonna forget about it, is more like non-technical people.
+
+Demetrios: What do you do when you encounter a issue where the agent will implement something and it's not the way you would've implemented it?
+
+Mihail Eric: Yeah,
+
+Demetrios: but it still works. And so you're like, I guess I'm a little outta my depth here. I guess this might be the better way.
+
+Mihail Eric: Yeah.
+
+Demetrios: So fuck it. Like I've come to just accept everything.
+
+Mihail Eric: Yeah.
+
+Demetrios: And eventually it figures it out. And if it doesn't, then I'll prompt it again.
+
+Mihail Eric: Yeah. Yeah. I, I think that's, it depends on what task you're working on.
+
+Mihail Eric: And, and I think that there's, there's some where you do want a stronger say on architecture, on design, on [00:04:00] having a handle on these things. That's probably true of like core infrastructure stuff. You know, I would be careful to have no control over selling a core piece of, at least at this level, at, you know, at this current point in time of, of having no understanding of what's happening there.
+
+Mihail Eric: Um, that being said, like I, I, I do think that. You know, people may not call it creativity. So you know, don't people on online shouldn't, shouldn't hate me for this. You know, saying that the agents are creative. Yes, they're pattern matchers that, glor that glorify pattern, matchers that extrapolate. But I think that there is something to be said about creativity, to respect what you understand at least.
+
+Mihail Eric: Right? So like you don't know this implementation, this way of doing something and it's new to me. And in that way it's as if somebody had come to me and presented something that didn't exist before. Mm-hmm. And so I actually like that aspect and I think that should be. Controlled, but, but encouraged in its own way.
+
+Mihail Eric: Exactly. And so like, yeah, I don't, I don't know. Next Js tremendously. I don't know. View, I don't know these things, but if it, if it got to that point and I don't have very strong opinions. Yeah. Like, let, [00:05:00] let it, it's, it's clearly generating this because it's pretty well supported. It exists in the world.
+
+Mihail Eric: It's seen this a good number of times. And so at least use this for a starting off point. I'm not saying you should literally just let it go off the rails, but, but, um. You know, as far as a prior is concerned. If you don't have an opinion then, then it's not a bad Prior to start with,
+
+Demetrios: I heard from CHIPS Talk that she did at our agents in production a few months back.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: She was saying like, what do you think the hardest programming language is for agents? And it had, you know, Russ Python, TypeScript, JavaScript.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: It was JavaScript. You know why?
+
+Mihail Eric: Why?
+
+Demetrios: Because there's so much shitty JavaScript on GitHub.
+
+Mihail Eric: That's true. That's very true.
+
+Demetrios: That it trains on all that.
+
+Demetrios: Yeah. And then next thing you know, it's like, oh, it's outputting what it trained on.
+
+Mihail Eric: Mm-hmm. Mm-hmm. Yeah, I think that's fair. And where, I think this is one of those places where I was actually talking with, um, [00:06:00] Eno, who's, who's the CTO factory a little while ago, and he, oh
+
+Demetrios: dude, you just dropped something over there.
+
+Mihail Eric: Did I?
+
+Demetrios: Yeah. I think it's a name.
+
+Mihail Eric: Oh,
+
+Mihail Eric: nice, nice. I'm gonna use that one. That one I like. I literally was like, I didn't see anything in my periphery. That's good. Oh, that was, was also convincing. Good. On the acting. Good on the acting. You have a, you were a salesperson once time, weren't you? You know how to, how to sell this. Story, uh,
+
+Demetrios: that is fucking hilarious.
+
+Demetrios: I gotcha.
+
+Mihail Eric: Got me all
+
+Demetrios: right. No, anyway, you were talking to Eno.
+
+Mihail Eric: Well, I mean, and not, not for any, like I'm not really not trying to, to, to name drop here. I'm just, I was talking to him like legitimately not a little while ago. And, and, uh,
+
+Demetrios: my favorite part, I'm the worst culprit. If I can name drop anybody, I will.
+
+Demetrios: So
+
+Mihail Eric: I'm a little hypo that's, no one can, no one takes you seriously because you've just lost all your legitimacy when you, when you your credibility. Yeah, exactly. No, but, but I [00:07:00] actually. Uh, no affiliation to factory at all, and, uh, you know, I'm not getting endorsed by them in any respect, but, but, um, they actually do like a lot of really cool work and I, I like a big, I'm a big fan of like, Eno in particular, and, and Mattan I've also spoken to, they're both very, very smart Eno I spend more time with, but very, very thoughtful about how he thinks about like, coding agents and, and just, you know, develop the future of AI software systems.
+
+Mihail Eric: I think what he is his. Core hypothesis and thesis around how they build factory and droids, which is their, their coding agent. Is that the most crucial piece that you have to get right as a developer is like the, the, the validations, like the, the testing harness, like the checks to make sure that what if you let the agent go off autonomously on one small task, on many, many tasks for single agent, on many tasks, for many agents that at the very least there's some set of checks you put in place that the agent can.
+
+Mihail Eric: Validate that it's correct. It opens up a browser, it tries playing around with the website a little bit. It has some, some tests that exist in backend, you know? Mm-hmm. So some way of checking that, that it's not going completely off the rails. And that's, I think, the [00:08:00] strongest thing we can do right now as humans is like being still in the loop for those validations.
+
+Demetrios: But the validation can only work in some use cases, right?
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: You can't. Validating everything.
+
+Mihail Eric: Sure.
+
+Demetrios: And that's probably one of the hardest pieces of
+
+Mihail Eric: it. Yeah. Yeah. That, I think that's absolutely right. And, and it's, it's a good nuance that you bring up because, uh, he, you know, I was talking to him in the context of this new thing.
+
+Mihail Eric: They, they're, they're rolling out called missions, which is essentially their answer to this question of. Long running autonomous agents. You know, we've seen some blog posts from Cursor. We've seen some blog posts, philanthropic, I think probably even one from, from Devon as well. Uh, and so, you know, there, there, there's a lot of experimentation happening in how long can we have these agents run?
+
+Mihail Eric: Can I launch them for an hour, multiple hours, multiple days, multiple weeks? And what is possible if you remove the constraint of time? And so mission is their kind of answer, their, their, their attempt at, at at least positing a future. Um, and you know, what I think was just interesting was, as we were talking about missions, he, he was.
+
+Mihail Eric: Acknowledging that there is something where they're [00:09:00] reaching almost like a, the frontier of what is verifiable or what is like easily validatable, if that's a word. And, and, and you know, and we're trying to define what that line is a little bit. Is it stuff related to infrastructure? Is it stuff related to when I have to go and like interact with some.
+
+Mihail Eric: To get API keys from somewhere, you know, like then yeah, you probably have a human there if I'm deploying DNS things, I mean that's like tricky, right? 'cause you're talking about how, how traffic's getting routed through the web. Um, and you know, maybe that won't always be the case, but, but at least for now, there's definitely stuff and, and, and systems that we interact with as software developers when we're creating production code that are not yet verifiable in an easy way.
+
+Mihail Eric: And, and that's probably where coding agents even today will like hit their limits a little bit. Um, but that's not to say we shouldn't keep pushing that frontier, and I think the frontier will keep getting pushed
+
+Demetrios: out. Yeah. It's funny if you look at the graph of how long a coating agent can run
+
+Mihail Eric: mm-hmm.
+
+Demetrios: Without human intervention.
+
+Mihail Eric: Yeah.
+
+Demetrios: It's just like. [00:10:00] Moore's law type of thing, where it's doubling every six months. Yeah. And you're seeing it go up and up and up.
+
+Mihail Eric: All right, y'all. This episode is brought to you by the good folks at ML Flow, the open source platform
+
+Demetrios: for developers who want to build production ready AI applications.
+
+Demetrios: Enhance your AI applications with end-to-end AI observability. All in a single integrated platform with ML flow's, gen AI capabilities, you can evaluate AI applications using a suite of built-in or custom judges. Visualize trace executions and agentic analytics and continuously monitor e value
+
+Mihail Eric: all while tracking every run in one place.
+
+Mihail Eric: Ship better agents faster. You know, that's the name of the game. Get
+[email protected]
+.
+
+Demetrios: I. Notice that I will try and kick off these tasks where I'm like, oh, this is a meaty one. And then next thing you know, it's like [00:11:00] 10 minutes later.
+
+Mihail Eric: Yeah.
+
+Demetrios: Or even five minutes later.
+
+Mihail Eric: Yeah.
+
+Demetrios: I'm getting hit with, yeah.
+
+Demetrios: Alright. It's all done.
+
+Mihail Eric: Right,
+
+Demetrios: right. Like,
+
+Mihail Eric: that's right.
+
+Demetrios: Fuck.
+
+Mihail Eric: That's right.
+
+Demetrios: Where are these long running tasks that we're talking about? Because I can't find them.
+
+Mihail Eric: Yeah. Yeah. I, I think, um, I think that's a really, really interesting point and, and. Uh, what, what is worth really drilling down there a little bit is, is it's actually important to find them.
+
+Mihail Eric: You know, that's almost like a first point that I would make is like, it actually is important to find those because. You, you, you know, one of the questions that people have now with how, how good agents have become, and, and especially as you think about scaling to multiple agent workflows, it's, it's like, where does deep work still exist?
+
+Mihail Eric: Yeah. What does deep work mean for a developer? 'cause deep work almost requires, at least, like, I mean, definitionally when you, you know, like kind of brain science is like, at least like 20 to 30 minutes or something. Mm-hmm. Just get into something and flow. Flow Exactly. And multiple hours of that in, in the, in the, to actually get some really, really meaty tasks done.
+
+Mihail Eric: If you can't find those points. There's agentic tasks. You know, you ideally like an adjunct task that is in that sweet spot of time so that you can [00:12:00] switch to something else and then kick off a new thing and then switch to another thing in here. And you need to, you need to like be able to identify those things.
+
+Mihail Eric: But I think what, what is true to your point is, is what constitutes those meaty tasks is, is getting constantly shifting in terms of definitions. And we're gonna have to keep kind of pushing that. What one? Um, so that's like thought one. I think the second thing that's maybe interesting here is, uh, I, I find that it's, it's probably more true in like brownfield code bases.
+
+Mihail Eric: Where. The ver verify, the verification step, the validation is actually takes a lot of time, right? Mm-hmm. If you imagine running, making a change in Google as an example, and you and I don't work at Google or anything like that, so, so take what I'm saying with a grain of salt, but I'm just using, let's say Moogle.
+
+Mihail Eric: If you don't want to use a, a name, Moogle no. And, and you have these like massive multimillion lines of, of code and, and you make like even the smallest change, and that certainly is before that even gets reviewed by human. You want it to go through like the extensive set of testing suite that exists. It takes
+
+Demetrios: hours,
+
+Mihail Eric: takes hours.
+
+Mihail Eric: Now, meanwhile, you're not gonna let go and. You know, you don't wanna like [00:13:00] spend their baby time babysitting that and, and, and fixing a little error here and there.
+
+Demetrios: I wonder if the tests and I, I have no idea what it's like, so we could ask somebody that works at Google, but I guess
+
+Mihail Eric: Mole Moogle.
+
+Demetrios: Moogle,
+
+Mihail Eric: yeah.
+
+Demetrios: Their, their test probably happen where you do a few Yeah. Does it pass that and then it gradually increases
+
+Mihail Eric: that? That's correct. That is correct. Yeah. So I mean, their build systems are sophisticated at. I dunno about Google, but certainly Moogle, the build systems are, are sophisticated enough that they, that they, they're good at identifying sort of what, what is impacted by the change that you've made.
+
+Mihail Eric: And so that is true and that, but you know, that's all to say that, that iterative loop of try a thing, build a thing, test a thing, fix a thing based on some error that detects and, and you know, errors can have many different flavors. That is something you. That, that loop can happen multiple times as, as a, as a system gets built.
+
+Mihail Eric: And I think that's a, an, I think in my in practice I've seen that's where it starts getting a bit meatier. Yeah, yeah. Like a one shot, make a whole thing, that's fine. But if you don't have, like, the tests are where you have to keep kind of hitting. Yeah. That's
+
+Demetrios: where the rubber hits the pavement. [00:14:00]
+
+Mihail Eric: That's exactly right.
+
+Demetrios: That's true.
+
+Mihail Eric: That's exactly right.
+
+Demetrios: What have you been seeing when it comes to teams working together? Because in our lunch and learns,
+
+Mihail Eric: yeah.
+
+Demetrios: Last week we were talking about how companies. And specifically teams
+
+Mihail Eric: mm-hmm.
+
+Demetrios: Need to start or are thinking more about like, I'm not gonna say like governance structures, 'cause that might be a little bit too strong of a word.
+
+Demetrios: Yeah. But are we using skills? How are we making sure that. If we are committing skills back to it, it's not just like constantly doing skills. When do we have a skill that we commit back versus we keep it for ourselves? When do we use the prompts? When do we create rules? When do we spin up multiple agents?
+
+Demetrios: How do we look at like creating a lot of parallel agents for the same task to try and pass the test, et cetera, et cetera. There's so many questions that are involved in how you operate now as a team.
+
+Mihail Eric: It's a moving goalpost, honestly, [00:15:00] and no one has the answer here. I, I think so much of what we're, what we're, uh, we're discovering a lot, I think as a community, everyone has like a hypothesis, but, but, uh, it's funny.
+
+Mihail Eric: Even again, I keep bringing up, you know, but, but this was mentioned also in the conversation that, you know, what's becoming relevant here is like cybernetics, like this concept of like, how do you, what does it mean to have like feedback loops in, in, in systems and how do you, how, how do you. Oversee those feedback loops.
+
+Mihail Eric: So the system continues to improve. And so there, there's like a, there's a, there's a broad literature around what that looks like in practice. Again, I don't think any of that was designed necessarily with, with the intention that one day we were gonna have like software systems that, that sort of do what they're doing now.
+
+Mihail Eric: Mm-hmm. But, um, you know, that's all to say that like it is kind of. This is for the first time where we're, we're maybe putting some of these, these theories a little bit into practice. Um, so, you know, theory suggests that we don't yet know how all the answers, but you know, in practice what I've seen and it different flavors of questions.
+
+Mihail Eric: I mean, I think one of the most important aspects here is just teams need to disseminate information. They need to share their learnings, they need to share their failures, and they need to have the channels to [00:16:00] do that. I think what I, what I've seen with some, some teams is they are. They've gotten really good at, hey, everyone has cloud code access.
+
+Mihail Eric: Everyone has cursor axis. Everyone is now has as much tokens, as many tokens as they need to, to kick off any task they want. No limitations there, and they start seeing the gains as they normally should. And then what they, we would expect that they would, and they're hitting like that 20 to 30% mark or something.
+
+Mihail Eric: Now, now in practice, what is maybe not as clear as like, hey, how do you like centralize information now to, to, to everyone so that we have a shared set of practices? Everyone, like everyone is as good at this, a top 1% user in your team, you know? 'cause there's always, even if everyone has access to cloud code, there's people that prompted fairy vanilla and there's people that are, have the most intricate setups.
+
+Mihail Eric: I'm not saying in intricacy suggests that it's the most, you know, that it's the most, uh, helpful, but it at least suggests more thoughtfulness maybe here. Yeah. And so how do you bring, like, how do you raise the bar on, on everyone having that, that knowledge? So. I think a lot of this is just like human process a little bit.
+
+Mihail Eric: You go and you have the lunch and learns, you go and you, you put, you [00:17:00] have a shared Slack channel. You go and you create a, uh, a, a maybe centralized team that's responsible for instituting best practices. Mm-hmm. I think in a lot of ways it, it mimics what happens with, you know, ci ci or, or the fact that a lot of teams have internal dev.
+
+Mihail Eric: Dev success or dev UX teams that with our sole responsibility is to make sure that CI and the build system is well instituted and, and any developer can join the team and they can be productive from day one. Right? There's literally teams dedicated to just that aspect, like internal developer infrastructure.
+
+Mihail Eric: I think the same that this will probably also fall under their purview is like, Hey, now should we use an Agent md, which go into our agents MD what? What suggestions do you have to a new team for agents md? So a lot of these, these like follow on questions that I think actually may still exist. With, uh, under the, under the umbrella of responsibilities for, for those existing teams, actually
+
+Demetrios: also a bit higher up.
+
+Demetrios: The questions are. How do we enable the teams to have what they need? But then how do we not spend [00:18:00] out the ass?
+
+Mihail Eric: You know, I, I, I don't think this, the future is always gonna be like this, where I don't even know that in the long term, this token based pricing model is gonna be exactly what. What the way these companies are gonna charge.
+
+Mihail Eric: I think that there's, there's conceivably a reality where, 'cause like you don't, 'cause the tokens is, is like an implementation detail, right? Like the fact that there's a, a token that's being generated. A to token that's being input. A token that's being output. Some maybe tokens that are cashed in the middle, maybe some thinking or reasoning tokens that are happening in, in some of these reasoning models that is sort of not really, it's not made.
+
+Mihail Eric: Visible to you, but it's happening. And sometimes those reasoning model, those reasoning tokens can actually take up quite a bit of the context. 'cause they're doing a lot of thinking and, and sort of trying this, trying that and go and kind of unwinding and trying again. So, so, but, but, but at the end of the day, you, you don't really care too much about the trajectories.
+
+Mihail Eric: A tokens are just a proxy for the trajectory that the agent took. And, and to an, to an extent, at the end of the day, you just care about the task being completed. And so I think that there, there is definitely a world where. Maybe these, these companies actually start pricing based on like some, [00:19:00] some flavor of task completion more so than just number of tokens, right?
+
+Mihail Eric: Mm-hmm. Because you can imagine a system where you literally just wild loop something and you keep trying and, and I mean that's, you've heard like the Ralph Loop, I'm sure, where that's exactly what it's doing. It's just, it's just wild truing until it completes something very token inefficient in a lot of ways.
+
+Mihail Eric: Um. I don't think that's, that people aren't gonna be happy with that for, for long. But if you, if you, but what you really care about is that the end success of the thing you're doing. So maybe just charge people for almost like a TaskRabbit, like you pay them to, to, you know, in a human, in human context, you pay them to, to assemble your furniture, you pay them to do your laundry and that's, you don't care if they like went and sat for like an hour and you know.
+
+Mihail Eric: Huff and puffed in the last five minutes. Got it. Done in some sense. Right? So, so maybe something's true here, right? We just, we like want to see, we have like a good system and of course there's big questions here, like how do you define that task success, but you define the task, you define some success criteria and then go age and go do something.
+
+Demetrios: I was thinking more how do you as a company that is not a model company
+
+Mihail Eric: mm-hmm.
+
+Demetrios: Have that [00:20:00] be a possibility. Mm-hmm. Because right now, if you don't own the model
+
+Mihail Eric: Yeah.
+
+Demetrios: You're just gonna be paying out the ass to philanthropic or open it up.
+
+Mihail Eric: Yeah. That, that's tricky that, that, I don't have a great answer, but I know you have a lot of friends that, that run these companies and, and are involved in these companies and so Yeah, it's, it's a huge tension for them.
+
+Mihail Eric: 'cause they're both simultaneously some of the biggest users. Of these, of these of the underlying model and at the same time, maybe competitors. Oh yeah. And they're, they're going and, you know, they're, they're gonna buy it to dinners with the, with the providers. But they're also, when they try and sell the providers, they're like, ah, and actually we're building our own version of that.
+
+Mihail Eric: Mm-hmm. And then, and you know, there's interesting dynamics around. You know, they see that, right? Like they can, they, like, they, because so much of it's getting proxy to them in terms of the tokens and the prompts. They also have the, the underlying models can have a clear sense for where's the, where are people's needs, right?
+
+Mihail Eric: In a way that, that, that allows them to basically repurpose and build offerings on top of that. Right? Um, you can think of it almost as like. [00:21:00] Yeah, I, I mean, at least what people claimed that Amazon did are like, oh yeah, hey, yeah, we, we, we, you're like, you're, you're all these third parties are in the marketplace, but you know, hey, like, and I don't know whether this was actually true, but, but you know, then people would at least nominally claim that they were saying, oh, well, that implies that now you can just rip off based on the data and make your own, like Amazon Basics.
+
+Mihail Eric: You know,
+
+Demetrios: they, which, I mean, they did it with products on their marketplace. They did it with products in AWS, they were pretty aggressive in that strategy, so, yeah. It makes sense. There's always gonna be the argument for open source models. I guess that's what we have to like cross our fingers for. Mm-hmm.
+
+Demetrios: The open source models are gonna get good enough to play ball and be frontier enough or not far enough behind. To where that would work. So in that world, I could see the outcome-based pricing.
+
+Mihail Eric: Right. Right. Yeah. Right, right. That, that's an interesting one. And, and, uh, and that feels like one of those, um, [00:22:00] it, it's almost like once people's, once people's wallets are getting hit, then they're actually fine with some of the deceptive practices that at least now.
+
+Mihail Eric: Many people have, have accused the Chinese companies of doing Right. The distillation of philanthropic models and things like that where, where fundamentally still completely deceptive and definitely cheating in, in its own way. But then they're like, yeah, but if I get like Akin model that's like now Opus four or five level and I don't really care too much exactly.
+
+Mihail Eric: I'm gonna. Yeah. Then all of a sudden principles go out the window. Little bit like, I guess that's a, tends to happen in, in general with economics is like everyone has an opinion until everyone has, is sitting on their moral high ground until,
+
+Demetrios: yeah. Until they look at their p and
+
+Mihail Eric: l until, yeah. I dunno about that.
+
+Mihail Eric: That one she, I think that that principle's a little too expensive.
+
+Demetrios: Yeah. For me to hold.
+
+Mihail Eric: For me to hold near and dear. Yeah, exactly. Which, when I list out my principles, which ones are like. Like they're good enough. Nice
+
+Demetrios: to have,
+
+Mihail Eric: nice to have, nice to have, must have, and definitely like, wow, we just dropped our revenue by 50% because of that principle.
+
+Demetrios: Yeah. Oh [00:23:00] man. And you are funding your competitor, right? That's the craziest part. That's about it, is that all these folks are funding the competitors and so. What are you gonna do about that? Like,
+
+Mihail Eric: yeah. Yeah. It's tricky.
+
+Demetrios: Claude Code, did you see the revenue for Claude Code is at like 14 billion now.
+
+Mihail Eric: That's wild.
+
+Demetrios: And a year ago was that 1 billion,
+
+Mihail Eric: I mean, it's only a year old of a product,
+
+Demetrios: right? Exactly. Dude,
+
+Mihail Eric: that's,
+
+Demetrios: that is,
+
+Mihail Eric: so it was zero, but actually a year ago, I mean like if you really a year like very technically speaking, it was nothing. Right? Yeah. Um, that's
+
+Demetrios: insane. So maybe somebody will have to fact check me on that.
+
+Demetrios: Maybe it's all of Anthropics revenue. Is that 14 billion And Claude Code makes up whatever, like. 80% of that.
+
+Mihail Eric: I mean, if it's a billion, that's a lot, right? I mean, and I don't know the exact numbers, but, but, but I suspect probably in the handfuls of billions at this point. I mean, yeah, there, there, their growth has been in, uh, has been astronomical.
+
+Mihail Eric: Um,
+
+Demetrios: how do you feel about just the ever changing nature of how folks, this week, it's [00:24:00] cloud code? Last week it was cursor. Next week, it's something else. And you're jumping around to all of them.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: And just like the tides and the winds of change are coming.
+
+Mihail Eric: Yeah. And you think more from the, what does that experience as a developer or what do, how do I, how would I, what do I think about that as, as the one who has to service the developers?
+
+Mihail Eric: I,
+
+Demetrios: I think, how do you. Look at what you need to be testing versus not. How do you think about what actually is valid here? Should I listen when people are saying, oh, fuck cloud code now because it's not that good. I'm using Codex and
+
+Mihail Eric: yeah. So, okay. A few, few, few thoughts here. One is, I think there is. There is something to be said about too much optimization mm-hmm.
+
+Mihail Eric: And people micro optimizing the hell out of their setups and, and maybe almost enjoying the setup optimization, glorifying it more so than the actual thing that they're trying to do. Right. Like I, I love development. But I also, I think, um, compared [00:25:00] to many developers, I'm a lot more of a pragmatic developer where like, the most important thing to me is that I have a toolkit that enables me to solve problems.
+
+Mihail Eric: That's like how I've always thought about the discipline of, of, of engineering, at least for me personally, versus some people are like, they just like love geeking out about, you know, their vim plugins once upon a time that's no longer relevant anymore. But once upon a time that was people cared and maybe there's still some developers that.
+
+Mihail Eric: That are really devout in that respect. But I think people do tend to, to micro optimize. And I think given how much fomo there's in the industry, people are very there. They'll switch because they hear this is like a few percent better and some benchmark comes out and they've won and, you know, beat the benchmark by a few percentage points.
+
+Mihail Eric: So maybe I should try this again. I, I think there's actually a lot, my, my, my prescription, I genuinely believe for most developers who are feeling that fomo, like there, there's a lot more value in just. Picking one of the top three and sticking with it and just really more exercising the muscle around how to think about building systems with this tool rather than, Hey, does this one, how is it, how does this one do on suite bench versus how does, and how is it an the [00:26:00] id?
+
+Mihail Eric: And then the, you know, so there's like, there's like a base on set of. Almost a commoditized features that they all have. Pick one of the top three and then just really spend the time to get good at it. More so than, yeah, do I have to, like, at the moment, four, five Opus four seven comes out versus Codex five, four, and you know, then I, you swap, swap it around.
+
+Mihail Eric: I don't, I don't think, we're not seeing like, tremendously massive gains yet that I think it's gonna meaningfully change the scope of things you can do. Mm-hmm. The, the one caveat that I would say here is, um, where I, uh, you know, so, so I, I'll commit to a set of tools. In my own sort of workflows, but where I think there is flexibility that at least I'm comfortable with switching to another one is, and you see this often is the more there's downtime, right?
+
+Mihail Eric: So the fact that these, these, these services are moving so quickly, they're building so quickly, uh, and as they should, they're trying to aggressively capture market share. That means probably the systems aren't like the most stable in the world and we see philanthropic go down. We see, we've seen, you know, other systems go down.
+
+Mihail Eric: Not, not, you know, the topic is great, um, and. That's the, those are usually the moments where you [00:27:00] see on Reddit and subreddits that people are, are, oh, oh, and topic is down, go to Codex. Wow. Codex is actually the best thing since sliced bread. And then Codex goes down and they're like, oh, actually, like, you know, cursor is the best thing since sliced bread.
+
+Mihail Eric: And so that's where you see the switching and it's comical to see this thing play out in real time. But it's also. It's, it, it's, it's like having the fallback, like you, it's good to have some fallbacks and that you're comfortable with. And so I like, I think I'm very comfortable with Claude. I'm also quite comfortable with Cursor.
+
+Mihail Eric: I'm also quite comfortable with, with Devin, you know what I mean? Mm-hmm. And, and if one of them goes down, I, I can go to the other one and, and my, my workflows are, won't be hindered in any way.
+
+Demetrios: How do you create more parallel agents? Because this is another one that I try and do
+
+Mihail Eric: Yeah.
+
+Demetrios: Super often. Mm-hmm.
+
+Demetrios: But then by the time I set it up. Agent one is already done and I'm like, damn, I can't have more parallel agents 'cause I, I'm too slow to like, have a fan out and do their shit.
+
+Mihail Eric: Yeah. I, I think people are, people are, are, are romanticizing this a little bit too much. My, in my opinion and I think part of it [00:28:00] is, is
+
+Demetrios: well it's 'cause your boy Boris, he's all over Twitter
+
+Mihail Eric: saying out he is like 10 of.
+
+Demetrios: Yeah. And it's like do one of his 10 commandments is like run more agents in parallel. And so now whenever I talk to people, it's like, oh yeah, we gotta be running them in parallel.
+
+Mihail Eric: Yeah. And I look, I, um, vo voice is awesome and, and this super, super cool guy and, and super smart. I, I, I think that can be true and for some people that works.
+
+Mihail Eric: I think it can also be true that, that, I don't know, when you see these, these Twitter. Demos, these sort of videos of people where that, you know, they'll show the video of someone like panning across their three screens and there's like 15 tessellated tiled claw code instances, and they're just like going, and it's become like a meme at this point.
+
+Mihail Eric: How you can just do this circular view of yourself of like 700 agents, like you're not. Do, like, that's just what
+
+Demetrios: are they working on? Tell them
+
+Mihail Eric: what Yeah. What are they doing? It's
+
+Demetrios: like those run long running tasks like I, yeah. I can't get anything to do those beefy tasks. How do you have 50 different agents
+
+Mihail Eric: running?
+
+Mihail Eric: Yeah. No, I don't, I don't, I don't buy it. And, and quite [00:29:00] frankly, like I, I think the most productive developers that I've seen do these things. I, you know, you have. What I would consider, uh, maybe on the order of two, like really meaty tasks, right? Ones that you have to be like very heavily involved with as a human to like really, uh, carefully review spec docs, feature requirements, all these things.
+
+Mihail Eric: And you know, that's where you're like really injecting your, your own taste and your own, uh, design principles and your own understanding architecture. And then I think the stuff that, that can be like kicked off more is the ones where. You are, they're not such meaty tasks actually by design. You have to change a configuration file.
+
+Mihail Eric: You have to make a small refactor, you have to add a test here or something like that. You know, that stuff you can, like, you don't have to be like overly detailed in the prompting to just like kick it off, right? Mm-hmm. And just like do these things. And so, you know, in, in practice what I, what I've seen and, and I think where, you know, so that's how I think you can achieve some of that scale.
+
+Mihail Eric: And, and there's a few notes I wanna make about that is in order for that, for, to confidently kick off sub-agents, you know, multiple agents, you do have to. [00:30:00] Go back to the thing we were discussing, which is like the validations, the like the have, have a, a, a meaningful harness in place that, that the agent can do work and then check that it's still okay and it hasn't broken something and that it's added enough coverage of tests and the test still pass.
+
+Mihail Eric: That still has to exist, right? Um, I think what I honestly recommend for more for people is start with the one, get really good at the ones. Then add two if you feel like you've gotten, like start exercising that context, switching muscle. Mm. And then once you have one and two, you're like, well, like I'm doing good here.
+
+Mihail Eric: And you know, they're kind of running some tasks that that requires a lot of test, test checking and therefore it's taking a little bit longer. And then you're like, well, I have a bit of downtime and rather than doom scroll, let me go and let go and fix another, fix another thing. And I think that does require that way of thinking, does require more planning upfront.
+
+Mihail Eric: And that's typically the way I think about tasks a lot is you, you start the day by, Hey, here's like the three meaty hard tasks that I do and here's the five not so hard tasks that I need to do. And then you at least always have this like, running list of things. You can, you can kick off to an agent when the time is right.
+
+Demetrios: Huh? I [00:31:00] can see that.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: Are you always writing your own tests?
+
+Mihail Eric: I mean, not manually like I, I'm, I mean, at least what I'm always doing is checking that the things I want the test to check are, are there valid and, and are, are in the, the, and I'm thinking thoughtfully about what are those edge cases that I want to make to like what are the things that I want to start to be true.
+
+Mihail Eric: Mm-hmm. That part I'm absolutely still involved in. But yeah, when, when it comes to actually, if I'm writing Python, if, you know, making the pie test. Lines of code. Absolutely not. I'm not doing that. But I am making sure that those, those assertions and those validations are existing in some files, some spec that I've given to, to the agent.
+
+Demetrios: Huh.
+
+Mihail Eric: Yeah.
+
+Demetrios: There, there was something else on the, uh, I'll put this down for Z
+
+Mihail Eric: another thing that might be interesting to talk about is just like, you know, I don't know what, what the, what the byline and for this episode is gonna be, but, but kinda the future of like AI native teams. I think there's, there's, um, there's some of the coding agents specific things, and there's also just what I think is interesting and interesting.
+
+Mihail Eric: Um.
+
+Demetrios: The size of the team or the,
+
+Mihail Eric: well, the size of the team, but also like how, how [00:32:00] interdisciplinary the, the roles are getting. Um, where, which I just see Oh yeah, yeah. Like there's eight, you know, for sure. Engineers getting, you know, and there's. And I
+
+Demetrios: fucking product people are taking down websites all over the place.
+
+Mihail Eric: Yeah, yeah, yeah. Well, I, I don't, I don't endorse that, but, but I, but it was, um,
+
+Demetrios: you said it not me. Shit. Yeah. And it's not the product people, it's the designers.
+
+Mihail Eric: It's not even No, well,
+
+Demetrios: it's still not saying it,
+
+Mihail Eric: still not. I'm just, I'm not gonna, I'm not gonna incriminate myself here. That's what I'm saying.
+
+Mihail Eric: Like you're trying to, you're trying to goad me into something that's gonna be caught on camera and then, and then held against me in a port of law. Fuse to give you that Exactly. That firepower.
+
+Demetrios: No, we do love the designers and the product folks. Actually, that's one of the, I've seen, and I've been reaching out to a ton of product folks Yeah.
+
+Demetrios: For the conference that we're doing. Mm-hmm. Because they stand to benefit. They potentially are the ones that are benefiting from this whole revolution more than anyone.
+
+Mihail Eric: Yeah.
+
+Demetrios: But I do think that, like you're saying, the product engineer and designer, that role is kind of [00:33:00] merging into one, and you're expecting that you have depth in one of those, but you can get by pretty easy.
+
+Demetrios: Mm-hmm.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: With letting the agents do those other parts.
+
+Mihail Eric: Yeah. Yeah. And I think it's a welcome. Expansion of responsibilities across every single role, quite frankly. And, and you can, I don't know if it's converging to one role per se, but, but there's definitely some, you know, people on the right coming to the left, people on the left coming to the right, I mean, know directions don't really matter here, but, but the engineer, you know, we as engineers are getting faster, faster at, at generating code, building features and things like that.
+
+Mihail Eric: Uh, as a consequence, we are. In a good way. I think being tasked now where we're thinking through like product considerations, so we also have to start asking ourselves a little bit more like, Hey, my own, my own responsibility is not finger on keyboard. Write this function. Uh, it's, it's designing, it's architecting and, and beyond that it's, it's actually like understanding more intimately like.
+
+Mihail Eric: Why does this feature acquired? So, so we're putting on more of the product hat. Product people, I think are also, you know, they were always [00:34:00] living in the, in the user stories and, and the, and talking to the users and, and developing like a very intuitive and intimate understanding of, of feature requirements.
+
+Mihail Eric: They also, but, but you know, their tension has always been, I don't wanna wait for the engineer to implement this. That's always been the, the, like one of the gripes of most modern engineering organizations.
+
+Demetrios: How many story points?
+
+Mihail Eric: Yeah, exactly. Like how can I get three resources to do this, two cycles for this particular feature?
+
+Mihail Eric: And, and they, they, and that's always been obviously a, a. Big source of tension, I think in teams, and it's annoyed people. But now, I mean, we do this in, in my company and, and, and it's, it's, it's awesome. Like I encourage it all the time. We're, we're, you know, our product people can put up prs. They still have to get reviewed, they still have to go through our checks.
+
+Mihail Eric: It's not willy-nilly pushed to prod, but they're meaningfully kicking off little, you know, few, few, few line changes through factors, like things that are actually touching parts of the code base. And, and I think that's. Awesome. Right? Because the alternative is I have to contact, switch into that, right? I have to go in and make like a relatively not super complex [00:35:00] change just to unblock them and they can unblock themselves.
+
+Mihail Eric: Mm-hmm. And so those two roles are like kind of coming toward each other in a good way. I think the designers, to your point also, I think we're even seeing, um, one thing we're even encouraging. We have a lot of GTM people and, you know, the, these, these folks that are effectively salespeople are, are, are in calls and, and they're, they're selling a product and they need to have a little more clarity on, hey, what feature was shipped in last week and what feature's now present?
+
+Mihail Eric: And you can actually, you know, and, and in. Yester year, that would be, hey, now go message someone on Slack and say, Hey engineer, what's the latest? What's the latest? Like what, what did we ship? What's, what are the new, the things that are in the roadmap or whatnot? It's a way easier now, and we encourage it and have given the tools to our own teams to ask Claude and, and have Claude, of course, it's connected to our code base, get the most up-to-date source of truth on these things.
+
+Mihail Eric: Mm-hmm. And I think that's awesome. So even they, you know, they're maybe not shipping code, but they're at least using it to understand. From the source of truth, the code base, what [00:36:00] is already there and what maybe, you know, was not there a week ago and 'cause you can now look at the get logs or something like that.
+
+Mihail Eric: So, um, it's all a bit of a convergence, which I think is just, just everyone is upleveling.
+
+Demetrios: Do you buy into the idea that you're now going to have smaller teams?
+
+Mihail Eric: I, I would, I mean, here's the thing. I think that that is. I think that would be good. Um, I think that that would be like a welcome thing for new teams, right?
+
+Mihail Eric: Where I think it is absolutely the case where if you're designing an engineering org or a team from scratch, from day one, then you should be very thoughtful about. Uh, what was typically the answer to the question, which is, you more people enables you to move faster. We always said that, but it was never true that if you doubled an engineering team, you doubled output.
+
+Mihail Eric: That was never the case. Why? Why is that not the case? Because fundamentally more people means there's now communication that has to be, uh, certain things that have to be communicated across multiple.
+
+Demetrios: There's some law for that, isn't there? I think there's a law [00:37:00] that they call it where it's like. Yeah. N
+
+Mihail Eric: yeah.
+
+Demetrios: Now you have n communication or n squared or whatever the hell it is. I can't remember exactly. Yeah, I think, but I've seen it in memes.
+
+Mihail Eric: I think I know what you're talking about. I also, the, the name alludes me, but it's never, it's never linear in number of people, right? Yeah. That, that's never the case. And, and that's just a human, a.
+
+Mihail Eric: Process. Human limitation problem, human communication problem. So I, I, I, it is the case that the more people you, you throw into the mixing something more, that context gets distributed and more that context that needs to get communicated when you're moving from one thing to the other. And so if, if that, if you have fewer people, more context is con concentrated.
+
+Mihail Eric: And that's, I think a net positive. Because then you, if the goal is speed, then yes, that is the way to have more speed. Right. Because now people are able to have more context. Mm-hmm. If the goal is, you know, now if the goal is. Team bonding and team dynamics, which is, which is like, it's, it's, this has nothing to do with productivity per se, but it has, it has all to do with human happiness.
+
+Mihail Eric: It's like, then that's not the answer, right? People do still wanna go and like, imagine the future one person, billion dollar [00:38:00] startup and imagine they're offsite. It's just you by yourself at a, having dinner. You know what I mean? Hey, you know, and they're like, Hey, what? Like, let's.
+
+Demetrios: Every day is an offsite,
+
+Mihail Eric: every day is an offsite, and they're like, Hey, let's, let's get a rundown from our cfo.
+
+Mihail Eric: You go and put on like a mustache, like, Hey, what does, what does our marketing person think? You wanna put on a hat? You're just like, you know, this is, that's a very sad, it's like that, that Pablo Escobar meme from Narcos, you know, where he's like five six waiting, waiting. Like, it's a little bit of that. So I, I don't, I don't, again, that's, that's a different effect, but not, not a, not an insignificant one.
+
+Mihail Eric: It's just, it depends what you're optimizing for.
+
+Demetrios: If you're optimizing for reliability.
+
+Mihail Eric: Yeah, I, I think like in, in the case of live there, I would argue that fewer is also better just because again, on in the context is more concentrated. You know, I've certainly run into issues in the past where, you know, you, you're some, some something goes down or something and in some part of the code base and you just, like, it takes you time to understand what is, how this was set up.
+
+Mihail Eric: [00:39:00] Who's responsible for this. And usually even then, you're not that comfortable making the change because you're not the one who built it and you don't know what the, what the downstream effects are of making that change. And so I, I do also think that there, it, it, it does introduce attention. It does like, make things a bit slower versus if I had built the whole thing, I'd be, all right, look, I know how this is set up.
+
+Mihail Eric: I know what, what's gonna break if I hit this thing, if I issued this command? And so I'm a little bit more comfortable doing that.
+
+Demetrios: So that's the, that's the teams. Anything else on the new paradigm of. Just like,
+
+Mihail Eric: hmm.
+
+Demetrios: The skills as a person that you need or the skills and the team structure. And the team.
+
+Mihail Eric: Yeah. I think the, maybe that's the last thing I, I can set of thoughts I can offer. There is, uh, you know, when we talk about multi-agent, I think one of the, the, the set of skills that is become increasingly more important is like, is the planning and the delegation. Planning and delegation, I think are still undervalued.
+
+Mihail Eric: And yet super crucial. If you wanna institute, if you wanted to kick off multiple agents and have them do meaningful work, then you have to be the one at least delegating and being [00:40:00] the technical lead on their work. And so I think what we're gonna see is people earlier on in their career, developing manager skill sets, basically.
+
+Mihail Eric: Mm-hmm. People that, that, you know, came on as a junior and sort of indirectly. They are effectively managers. The moment they start instituting multiple agents, right? The moment they're kicking up multiple agents in tasks, they are effectively managers. And so they've gotten there way before, maybe the typical career trajectory where you spend one year as a software dev one, then two years as software dev two, then three as a senior engine, and then at year six you're like ready to be in a manager if you start from like fresh out of school grad.
+
+Demetrios: Well, and if you want to go down that path
+
+Mihail Eric: and if you wanna go down that path. That's right. That's up. Sorry. You could just keep going down the ic. Stay ic. IC entirely. Yeah.
+
+Demetrios: Now there's no IC choice.
+
+Mihail Eric: Yeah, exactly. Everyone has to be a manager.
+
+Demetrios: Yeah. As an ic, you are still a manager. Good luck. Yeah. But at least you don't have to deal with people.
+
+Demetrios: 'cause
+
+Mihail Eric: that's true. They can
+
+Demetrios: get messy.
+
+Mihail Eric: That's, and I wonder if that's. I, I wonder if that's the piece that is, I I mean that's the piece that [00:41:00] both draws people to the management route and turns them away from the management route is like the, the people, like, I like to be the, the, the figurehead and, and, and have my
+
+Demetrios: inspire,
+
+Mihail Eric: inspire exactly.
+
+Mihail Eric: Lead. But the student, what is it? The, um, servant leader, right? Be, be the one who, who, who guides the, the path forward. And then there's also be like, I also never wanna talk to a human being in my life at any part of my day. So why, how can I not do that and put me in a room and just with my, my terminal and my IDE?
+
+Mihail Eric: And so I think it, it does, it also bifurcates a little bit there. Uh, but yes, by design, I think now more people are getting thrown.
+
+Demetrios: I noticed with myself, the skill that I really appreciate and wanna work more on is my ability to articulate.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: And that could be, you're
+
+Mihail Eric: not good at that. Yeah. No,
+
+Demetrios: dude, words are hard.
+
+Demetrios: Alright, gimme a break. So the, I think if I, you know, as I'm raising my daughters, that's one thing that if we're gonna lean in on one skill, it's how do you [00:42:00] articulate what you are needing, right. And what you want, and what good enough is, and what success looks like. All of that stuff.
+
+Mihail Eric: Yeah.
+
+Demetrios: Because if you start talking to agents.
+
+Demetrios: And you can't properly articulate it, and you can't give it that context, then it makes it really hard. And I've noticed in my own life, when I deal with others, working with others, yeah. Humans.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: It can be very difficult if somebody comes and they ask you something and it's like, Hey, can you take care of this?
+
+Demetrios: Yeah. It's like, well, what is this? And that ambiguity is so hard to deal with and it causes, okay, now we gotta go back and forth. And so if you can properly articulate things, give the right context. That is a superpower and it's only going to get rewarded more as time goes on.
+
+Mihail Eric: I think that's a fantastic point, honestly.
+
+Mihail Eric: Yeah, I think that that's super, super on the nose. It it, it is a forcing function for us to get better at words. And get better at at, [00:43:00] yeah. I mean,
+
+Demetrios: so I'm fucked.
+
+Mihail Eric: Basically. Well, we'll start practicing, generating,
+
+Demetrios: yeah.
+
+Mihail Eric: Exercise that muscle. Onic. Yeah, exactly. Duolingo, have you heard of it? Grammarly? No. No. I think that that is absolutely right and.
+
+Mihail Eric: It's a good forcing function. It's a good upleveling of us as, as just a species, as as like a, a skillset to have in, in your, uh, yeah. You, you, you don't speak clearly. You're gonna be misconstrued with people and certainly with agents and so
+
+Demetrios: well, you're just gonna waste time, right? Yeah. And happens already.
+
+Demetrios: But I think because we're dealing with another human, we almost take it for granted because they normally. It can come back to us with the right questions to ask to understand it. I guess with agents they can too. Like I have the, um, I love this skill, the brainstorming skill.
+
+Mihail Eric: Mm-hmm.
+
+Demetrios: That was from like the superpowers pack.
+
+Mihail Eric: Yeah.
+
+Demetrios: And that is fairly good at interrogating me before kicking [00:44:00] off any task.
+
+Mihail Eric: That's right. That's right. Yeah.
+
+Demetrios: So, yeah, I mean. Maybe it's just that, that you create a skill that will make sure to get everything you know, and get all the right context. And so we don't need to be good at articulating, but it is time.
+
+Demetrios: Mm-hmm. Like if you and I, if you're good at articulating and I'm not, I need that skill
+
+Mihail Eric: Yeah.
+
+Demetrios: To ask me things, I'm gonna spend an extra five minutes.
+
+Mihail Eric: Mm-hmm. Mm-hmm.
+
+Demetrios: For every time that I wanted to get something done.
+
+Mihail Eric: Right.
+
+Demetrios: I am a fucking masochist for trying to organize conferences. Dude, they suck except you do 'em and you have that moment of bliss afterwards and you're like, ah, it wasn't that bad. And then leading up to it, it's like, why? Did I ever think that I wanted to do this?
+
+Mihail Eric: I've heard the tr, I mean, I don't, I can't speak for this, but I've heard this through my friends to be true of [00:45:00] childbirth as well.
+
+Demetrios: Yeah.
+
+Mihail Eric: For, for women at least. Again, I don't, you know, take everything with you. Grain of salt, and I'm not trying to mansplain, I don't know anything about anything about this. Don't two
+
+Demetrios: dudes talking
+
+Mihail Eric: about child. I, I, I only know this. Through, through, through my fiance and, and her friends who, who, who like, you know, sometimes will have like, really bad childbirth, right?
+
+Mihail Eric: Like, it's just, it's a,
+
+Demetrios: there's a hormone that gets released.
+
+Mihail Eric: Yeah, yeah, exactly. Like, which is fascinating to me. It's like, it's like this thing that is, um, I mean, you know, the, the bleak, the bleak as truth is like once upon a time, like a third of women died in childbirth or something like that. Like some, some really stark statistic, which is crazy, right?
+
+Mihail Eric: And, and yeah, modern medicine has made that no longer true. And, and in a lot of ways, um, reducing that rate is, is indicative of like a very, um, forward. Culture like a society, which, which, which is great. Um, but, but yeah, like it, you have, you have friends that go through like really bad, really bad childbirth and it's like, you know.
+
+Mihail Eric: C-sections are crazy and I don't wanna, you know, again, it's wild stuff. And then, and then they're like, Hey, like, like three months later they're like, yeah, how about round two? And I'm [00:46:00] like, yeah, if, if I got cut open for a, I mean, I've got, I've had many surgeries and you know, even like some that are more invasive than others.
+
+Mihail Eric: I mean, I had a knee surgery a few months ago and even just a knee surgery where all they did was. Poke a thing in my knee with a little camera and like twiddled around a little bit. I'm like, dude, that I would never want, I don't wanna do
+
+Demetrios: again.
+
+Mihail Eric: Ever do that again or, or ever like, consider doing that again.
+
+Mihail Eric: And even the fact that it was just a little, little tiny hole in my knee was, was enough for doing it. Like, you know.
+
+Demetrios: Yeah. So basically me. Organizing this conference.
+
+Mihail Eric: It's your, it's your brainchild is what I'm saying. I thought it
+
+Demetrios: was my, my birth, it was me giving birth.
+
+Mihail Eric: Well, that, that, yes. I think that they, by the extension of the analogy, you are in fact birthing a brainchild, which is this conference, which is a good brainchild as all children are generally good children.
+
+Demetrios: Yeah. Well, yeah.
+
+Mihail Eric: I mean, except for Dmitri.
+
+Demetrios: Yeah. Okay. I know some shitty kids
+
+Mihail Eric: too. No, no, no.
+
+Demetrios: Yeah. But
+
+Mihail Eric: no, I think it's great. Like, I, I, to, to bring it back. That was an incredibly long analogy that I hope was not. Construed as mansplaining [00:47:00] because I don't know anything about childbirth at all. Uh, but, and we'll say that a thousand times.
+
+Mihail Eric: Mm. But, but what I will say is, um. When it comes to AI coding and AI software development, which I have an opinion or two about, which you do know a little more. Yeah. Which I feel more qualified to talk about. What I'll say that is, is this, that, that there is, um, there's so much changing so quickly. FOMO is a huge, huge thing.
+
+Mihail Eric: Maybe this is an obvious takeaway, but, but there is genuinely a, a, a need and desire to, to formalize what's happening a little bit.
+
+Demetrios: Yeah.
+
+Mihail Eric: And, and, and I mean, this can take so many different forms from Yeah. What agent to use, what model to use, what harness to you use Diving cog, you know, cognition, cursor, clot, et cetera.
+
+Mihail Eric: But, but also just as it skills, is it, is it, is it MCP? Is it tools? Is it APIs? Is it, is it sub commands? I mean sub ages, like all these things and. People, it's so easy when you combine an incredibly rapidly moving industry with [00:48:00] a, with a, a lot of a, a lot of social conversation suggesting that if you're not on it, you are gonna be left behind cooked.
+
+Mihail Eric: You're, you're cooked. Like I think it is a technical term. Yes, yes. You are cooked in the, in the strictest sense. That's a, that's a, that's a, that's basically a recipe for a lot of anxious engineers. Yeah. And, and I think it's, it's good to. Bring it all back a little bit. I mean, I, I, I, I think, you know, when, when I teach classes and things like this, for me, it, and I don't, I don't know that people necessarily value this.
+
+Mihail Eric: I, I, I try to make it more of a point and because it's not very tactical, it's a little bit abstract, but like one of the things that I genuinely am trying to get people to appreciate is. Just to breathe, you know what I mean? Like breathe a little bit like, like in a very meta sense, just like, like breathe.
+
+Mihail Eric: Like it's, I understand things are changing. I understand that like things are moving incredibly quickly and they'll continue to move quickly, except that as part of the process, right? Mm-hmm. Like that, that is experimentation is gonna be part of the process. And we are developers and we're engineers and we love building.
+
+Mihail Eric: And we will, we will need to experiment and, and you know, you're [00:49:00] not gonna lose your job immediately and or maybe if at all, right? If you, if you learn how to like up level and upskill in the right ways. And so, but, but. Before we dive into the anxious, you know, I think in, in moments of anxiety, you're just kinda grasping for security however you can.
+
+Mihail Eric: And that might mean you, you like immediately look at a tweet and say, should I do that? And then you just try that thing and then, you know, dude,
+
+Demetrios: dude. But you know, what I love about this time is that we're all our own little mini r and d mm-hmm. Departments. Yeah. R and DI guess is, um. Departments is a low repetitive in that sentence.
+
+Mihail Eric: Research and department departments and it's research and development departments. Right. Oh,
+
+Demetrios: alright.
+
+Mihail Eric: Good. What research and department departments. Yeah. What did you think the deal was?
+
+Demetrios: As I said, words are hard.
+
+Mihail Eric: You see,
+
+Demetrios: we've already established
+
+Mihail Eric: that. I think that's the name of this podcast. Vito's Discover.
+
+Mihail Eric: His words are hard.
+
+Demetrios: Yeah, that's the thumbnail words. Me looking all dumb on the thumbnail, but [00:50:00] basically we're all out there exploring and we are reporting back and that's the cool thing. That's why I wanted to have this conference is totally, 'cause we get to report back. There's some people that are getting more exposure to it because of the companies that they run and they have seen.
+
+Demetrios: Hundreds or thousands of these little r and d departments. Yeah. And they get, they're on calls every day where people are talking about what's working, what's not working. And there's people like you that are out there on the forefront. And so you get to showcase, hey, this is a design pattern that's happening now.
+
+Demetrios: And if we can bring all of those people together into a room, I think there's potential for at least, at the very least. You miss out on having to bang your head against the wall because yeah, you're thinking, oh, this is the new one, or that's the new one, or, uh, I'm trying it like this and it's not working.
+
+Mihail Eric: Yeah.
+
+Demetrios: But now you get [00:51:00] to hear from other practitioners that, yeah, yeah, well, I tried these five things. Here's the one that really was important.
+
+Mihail Eric: Yep. Love that. Yeah, I think that that's, that's absolutely right. I think that's why there's so much value in these kinds of efforts and, and the, you know.
+
+Mihail Eric: Masochism aside, putting yourself through this experience. I know it's a ton of work, but, but genuinely, like, I think there's so much value in these conferences where, you know, you're getting the best of, you're getting the best of the insights. You're getting the, the, the, the summary on the summaries. You know what I mean?
+
+Mihail Eric: Yeah. You're getting the, the best of the Twitter feed in one tweet, you know what I mean? In, in the, in the most varied. Practical way. And so I think there's a, there's genuinely a lot of value. People should invest more in these things, and, and, and then you, you, you build your connections as well, right?
+
+Mihail Eric: Where then you, the people that you trust, that you develop more rapport. People, people that you can keep bouncing ideas off of. I think the. This is the, the part of like, um, us being social creatures that I think is, is one of those beautiful things, right? Is that, that actually we, we, we do share information and especially engineers.
+
+Mihail Eric: They love, like, I mean that's why open source is such, such a core pillar of, of what what we do mm-hmm. Is [00:52:00] we love sharing those things. We love proudly sharing what we've built and we love, we love sharing of, of our own ideas around these things. And so giving forums for that to happen organically is, is I think healthy.
+
+Mihail Eric: And it's also definitely a. A way to combat the inherent anxiety that might happen when you're just on Twitter doom scrolling and you don't know any of these people and, but they, like you, they're all the strangers in the grand scheme of your life and you will never talk to them. But somehow they have such a huge influence on, on what you're thinking and feeling.
+
+Mihail Eric: And I get of a moment, which I think is just a funny's.
+
+Demetrios: Brutal.
+
+Mihail Eric: Very funny dynamic. Yeah, it is brutal.
+
+Demetrios: It's hard on the mental health.
+
+Mihail Eric: Totally. Totally.
+
+Demetrios: Even just coming to San Francisco is hard on motherfucker mental health. I don't know how you live here, dude. Seeing all the billboards everywhere.
+
+Mihail Eric: Ketamine a lot of ketamine.
+
+Mihail Eric: Oh yeah. You see this just Burning Man is up on the fourth floor. No Burning man is how people resolve these things. No, that is true.
+
+Demetrios: It's
+
+Mihail Eric: kind of a little bit right.
+
+Demetrios: Pressure valve that you escape.
+
+Mihail Eric: Yeah. I mean I, that's, I don't think that's the topic of this conversation, but like it's just because we are like in a building where I, I discovered that Burning Man has a.[00:53:00]
+
+Mihail Eric: Floor. Turns out they are renting out a floor of a San Francisco building. Turns out that is a thing. People at home, um, so much for, for beating the man.
+
+Demetrios: It is so novel that they have that, right? Like
+
+Mihail Eric: yeah. It's so, it's so, they're
+
+Demetrios: paying rent somewhere.
+
+Mihail Eric: They're paying rent. They're, they're, they're paying taxes if they're doing it correctly, which is very much against, anyway, the only reason I bring that up outside of the fact that it's a very funny anecdote is, is just the fact that, yeah, I think that that is a little bit how people deal with this is, is.
+
+Mihail Eric: You, you play, you play serious adult person most of your life, 99.9% of the year. And then you go into a desert and, and then no one asks you what happened there.
++ Read More
+Watch More
+57:53
+The Rise of Modern Data Management
+Posted Apr 24, 2024 | Views 2.1K
+# Modern Data
+# Machine Learning
+# Gable.ai
+1:04:58
+The Post Modern Stack
+Posted Jun 21, 2022 | Views 705
+# Post-modern Stack
+# Snowflake
+# Real-world Recommendation Pipeline
+47:38
+Systems Engineer Navigating the World of ML
+Posted Dec 12, 2022 | Views 803
+# Systems Engineer
+# World of ML
+# UnionAI
+# Union
+Code of Conduct
+receiving their newsletter
+Privacy Policy

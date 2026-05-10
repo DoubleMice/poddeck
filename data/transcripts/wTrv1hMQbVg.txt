@@ -1,0 +1,798 @@
+Title: How We Cut LLM Latency 70% With TensorRT in Production
+Video: https://youtube.com/watch?v=wTrv1hMQbVg
+Transcript source: https://home.mlops.community/public/videos/how-we-cut-llm-latency-70percent-with-tensorrt-in-production
+
+Maher Hanafi: [00:00:00] TensorRT LLM was so helpful for us to cut our latency by like up to 70%. How can you run the least number of GPUs needed to serve the traffic you had?
+
+Demetrios: How did you deal with the cold start time?
+
+Maher Hanafi: A few things. So first of all, we start using,
+
+Maher Hanafi: I am not an AI person initially, right? Like, uh, six years ago I had no idea what, what is all of this about? And then, you know, I was leading engineer teams and I got my scope going bigger and bigger. And then I was like, you know, I need to be an ai, I need to be in machine learning. I need to get there. So I start, you know, picking up and managing teams.
+
+Maher Hanafi: I joined a company that is an AI company doing machine learning, traditional reinforcement learning. And I start learning from my team. I was like, Hey, junior machine learning engineer, how does this work? And again, it's, it's a little bit of a, you know, beak Hubble, but also being hungry to learn. And then from there it's like it turns into [00:01:00] passions of, of learning and growing and what gen AI became like.
+
+Maher Hanafi: Just the perfect timing of, and I really see the future as like all these senior VPs, CTOs. Uh, the classical, traditional, you know, CTOs now getting into ai. So that is shifting. Like if you just did everything else except ai, uh, now is not the time to be competitive in the market. So I always, you know, not only following my passion, but also, you know, adapting with the market because I think that's, uh, it's gonna be a big shift in how we lead engineer teams.
+
+Demetrios: Yeah,
+
+Maher Hanafi: I couldn't just stay on the, on the sideline watching what AI is, is, was happening in ai. Uh, I had to build ai, I had to lead AI and I had to learn, first of all, I had to learn AI with alongside my team. Um, so I came up with this framework of like learning instead of being very directive and like being the boss and, Hey guys, we need to build an MCP server.
+
+Maher Hanafi: We need to do this. We need to do rag. We need to even learn the basics. I go and start [00:02:00] learning.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: And ask them to learn with me. Because again, one of the problems we have seen since Gen AI is that like you don't have all the resources, you don't have all the AI engineers available. Like some of these, um, engineering leaders like myself, we are in positions where we were asked to do AI without the AI resources available.
+
+Maher Hanafi: Uh, and with no previous team or experience building ai.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: So learning was number one. And then how would you be successful at building AI in enterprise production? So how do you take all of these great pro proof of concepts and all the hype around like, oh, I can do this, you can do that. Oh look, I built a chat bot.
+
+Maher Hanafi: You can do everything in the, in the platform, just an MCP and, and a chat bot. And, but how do you take that to, to scale? Another topic that could be very interesting is, and you might know this, is building AI in-house. Uh, hosting, self-hosting, self-managing ai. Not, not, you know, leaning on all of these third party available API based ai.
+
+Maher Hanafi: Mm-hmm. Now you need [00:03:00] to manage your own GPU. Choose A GPU, choose the architecture to choose the open source models.
+
+Demetrios: Yeah.
+
+Maher Hanafi: Optimize, you know, fine tune, um, optimize a distal, I mean, optimize late. I mean, this is what I was more talking about recently is how you manage what I ended up calling the AI iceberg of like, AI is great and you can do all of this, but behind it if you want to build it internally, and I know if you man manage it, that scale, all of these invisible things that, you know, performance, latency, throughput, um, accuracy, quality of the responses and cost.
+
+Maher Hanafi: I mean, one of the other things that was taking so much time for me recently is like, how. I manage cost of ai so I can prove to leadership, to the board, to the investors, and to the market that you can build AI at, at the, you know, a positive ROI And how can you retain your customers and gain more by just building AI that doesn't break the, your wallet.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: Um, so yeah, this, this kind of pyramid of cost, performance, latency, and [00:04:00] throughput was my focus. And where can you move needles? You can never have all of them optimized. So where is the, uh, what I find out being called, like an AI nexus? Where is that spot? What it works really well for your use case?
+
+Maher Hanafi: I might not work for other use cases, but for our use case, being an HR tech mm-hmm. You know, focus on privacy, responsible ai, um, performance and latency are needed, but not, not the top, top priority, but, uh, you know, efficiency and accuracy of the results. And also cost. So finding that bright spot and build AI towards that.
+
+Demetrios: There's a really interesting thread to pull there with cost because you have the cost of AI for your company.
+
+Maher Hanafi: Yeah.
+
+Demetrios: But then there's the cost of AI using AI coding agents and for engineers and yeah, for the engineers. So there, it's almost like how we're implementing AI with the company, whether it's internally facing or externally facing.
+
+Demetrios: You're [00:05:00] trying to optimize that and then also prove to leadership that there's ROI and then there's like this whole other vector of AI that's going and being very expensive in its own right of
+
+Maher Hanafi: Yeah.
+
+Demetrios: Agentic engineering.
+
+Maher Hanafi: Yeah, exactly.
+
+Demetrios: And the coding agent's paradigm and so
+
+Maher Hanafi: yeah. And the premium tokens and
+
+Demetrios: yeah.
+
+Maher Hanafi: I mean we, uh, we introduced a few solutions and then. They worked for, uh, some time and then like GI Topal as an example. Like you have a bunch of, uh, models available, but then you can, you start seeing more and more premium models, and then some of them, their tokens will be 10 times more expensive than regular tokens.
+
+Maher Hanafi: So at some point, yeah, within engineering, we had the, we had the finance kind of role within engineering that was taken care of is like ensuring everything goes within the, you know, a, a, you know, a allowed budget. Because otherwise if you open the door to everything, it's just gonna blow up.
+
+Demetrios: Yeah.
+
+Maher Hanafi: Um, the consumptions and tokens and premium, you [00:06:00] know, stuff.
+
+Maher Hanafi: So I had to keep that in control with, with the AWS bills and all the ai, you know, GPUs because we are deploying models on the GPUs and so I had to work on scaling as an example. So how can you run the least number of GPUs needed to serve the traffic you have? So understanding the pattern of traffic, like as an example, you know, we are an.
+
+Maher Hanafi: Tech solutions, so people don't use it at night and weekends most of the time.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: So why do I have like that many GPUs running at that time? You, so we had to serverless. Yeah. So we had to create first, um, a scheduled scaling for our solutions based on the pattern we see on usage. And then we had to also introduce dynamic scaling where if you have a, you know, at the end of the year or at the end of the quarter, or even at the end of the week, sometimes people go and try to push as many, uh, you know, HR data, like feedbacks and conversations and recognitions.
+
+Maher Hanafi: So you had to take that into account as well. So you had to dynamically adapt and spin. GPUs [00:07:00] fast. If you use open ai, don't have to worry about any of this. But then for me, I was like, okay, well we need spin up things and they're containerized and we need the images. But the, but the, when you spin up a new container, you need to, to download the model put in there.
+
+Maher Hanafi: And I was like,
+
+Demetrios: takes forever.
+
+Maher Hanafi: Yeah. To talk to AWS how can we make this faster? Should I go with SageMaker or solutions like that, that's managed. Mm-hmm.
+
+Demetrios: And then,
+
+Maher Hanafi: or just
+
+Demetrios: hit Bedrock
+
+Maher Hanafi: and then, or, or hit Bedrock, which is again, many layers. I mean, I talk, if you remember this, I had like a, I came up with these layers.
+
+Maher Hanafi: I mean, they're known, like model as a service, software as a service, um, you know, AI as a service. And then at the bottom there was nothing as a service. And honestly, that's, that's what we are doing. We're like, we're trying to do everything on hard
+
+Demetrios: mood.
+
+Maher Hanafi: And when I had the conversation with a WSH maker, experts from AWS, they were like.
+
+Maher Hanafi: You guys doing exactly what we do for SageMaker behind the scenes. Mm-hmm. So yeah, you can hop on SageMaker, you lose control some of the configurations, but you will have the, this given for you. And [00:08:00] because our, again, scale and usage is, is limited, we were able to do some of that in-house without having to rely on a, on, on a managed service.
+
+Maher Hanafi: So yeah, dynamic scaling, schedule scaling and um, can for proactive scaling sometimes.
+
+Demetrios: How did you deal with the. Called start time.
+
+Maher Hanafi: Um, a few things. So first of all, we start using faster, uh, IO operation storage from AWS, which is FSX
+
+Demetrios: Uhhuh. This
+
+Maher Hanafi: is kind of new to me too. I was like, give me the fastest way to download the file from your systems.
+
+Maher Hanafi: And I, I would, I learned about this usually, I mean, historically, we to, uh, get this from S3.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: Um, so that's one downloading faster. Then the second thing was instead of spinning up the, the, the image, the container image, and then downloading the model, we create an image with the model embedded in it or ready.
+
+Demetrios: You baked it in.
+
+Maher Hanafi: Yeah. Yeah. So when you spin up a new Kubernetes, uh, node, it's gonna come with the image. So yeah, we saved so many. I mean, in the minutes, not just [00:09:00] in seconds. So we, we saved minutes off the, the cold start to just spin up new, new.
+
+Demetrios: But the GPU itself takes a while, right?
+
+Maher Hanafi: Yeah. The gpu, I mean, that time we cannot do much about it.
+
+Demetrios: Yeah.
+
+Maher Hanafi: But the downloading part was the, was the triggering.
+
+Demetrios: Yeah, but I'm just thinking like, 'cause there's certain providers, GPU providers that go hard on, hey, we can spin up in seconds, type thing. Yeah. I'm thinking like modal or, um, or others.
+
+Maher Hanafi: That was another one. Yeah.
+
+Demetrios: Yeah. There's another one. Uh. I can't remember now.
+
+Maher Hanafi: Uh, it's not rock.
+
+Demetrios: Yeah. They need to do more, they need to do better marketing so that they stay
+
+Maher Hanafi: in our head. Yeah. There's one that is like known to be the fastest kind of cold start is like, you want, you want the new GPU, here you go.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: I wish I was able to get like, really, uh, breakdown of the, of the, of the latency, how much time it takes and understand.
+
+Maher Hanafi: Okay, this is for every step we focus on the ones that used to take the most. Mm-hmm. And definitely downloading the models, running, you know, spinning up new node was taken the most.
+
+Demetrios: [00:10:00] Ah, so that's where you saw the biggest gain.
+
+Maher Hanafi: Yeah. Yeah. Another thing we did, I mean this is maybe not necessarily right to that call start, but yeah.
+
+Maher Hanafi: Optimizing, using Nvidia tools, uh, solution like TensorRT LLM, so helpful for us to cut our latency by like up to 70%.
+
+Demetrios: Why?
+
+Maher Hanafi: On the same. Yeah. Yeah. Because, I mean, you're familiar with TensorRT?
+
+Demetrios: No.
+
+Maher Hanafi: So what TensorRT LLM does. It's gonna rewire your, your model in terms of like, uh, the neural network to, to be adapt to the, to the architecture of the hardware.
+
+Maher Hanafi: So you define, you, you, you tell it, okay, I'm gonna use Nvidia, you know, whatever, H 100, H 100, whatever, whatever. So it knows the architecture. It takes whatever model, like Llama 3, Llama 4, whatever, and it's kind of tweak it to just fit, uh, for that architecture, optimize it. We saved at least 50% latency.
+
+Maher Hanafi: Wow. That was like a, again, that's why I told you about the throughput, latency, cost, and uh, uh, performance and accuracy. Like we, we have [00:11:00] been saving costs. And saving on latency and saving on call starts. And also, when you use TensorRT LLM and we use specific models from models and GPUs, you get more batching capabilities now.
+
+Maher Hanafi: I mean, the first time I start, I mean, why am my learning has been evolving so much is the first time I was learning about how you deploy a model into the GPUI was like, okay, we use like, let's say an eight gig, A eight B model. Um, you need a 16 giger to, to have it there. Okay, so why do I need to have like a 24 or why it's taken so much kind of a gig.
+
+Maher Hanafi: Um, sorry. It, no, sorry if it, if you take a six, an eight B, um. Quantized to kind of four bits. It takes four, four gig off memory. So when, when we were thinking to, of picking which NVIDIA model or any GPU would would work best for us, I was trying to get the smaller one where I can fit that kind of four gig or eight big eight gig.
+
+Demetrios: Yeah. You fit it nice and
+
+Maher Hanafi: tight. Yeah, you fit it there and it's all [00:12:00] good and it's all good. But that didn't work. But then I was. As, as my learning was evolving, I was like, and, and I was even thinking of fitting two models in the same GPU to try to create throughput.
+
+Demetrios: Yeah.
+
+Maher Hanafi: So if I have two models running all the same GPU, I can maybe send twice more requests.
+
+Maher Hanafi: But then what I ended up learning is like the way the KV C work and all of these things, it's like you set, you get your, your, uh, model deployed, and then you use the rest for your KV cache. And with the KV cache you can do batching. And with TensorRT LLM as an example, you can do in-flight batching. So meaning if when you create your batch of like say 16 requests, um, you know, 14 are processing, two are done, you don't need to wait for these 14 to be done to create new batch.
+
+Maher Hanafi: You can have two more added to that same batch. So it keeps going forever. Again, this is where, when I talked about the learning aspect of this and like all the tools available and not be overwhelmed and focus on optimizing one area at a time, I was like, yeah, instead of [00:13:00] trying to. Two or three models in one GPU, I'm gonna do one, one model on the same GPU and use everything else for KV cash.
+
+Maher Hanafi: And I'm gonna have a huge throughput.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: Um, while again with optimizing with terms RT LLM, you'll have, you'll also reduce latency. So it's like, oh, okay, I don't need to go crazy on trying to fit as much as I can within the GPU. Just use the memory. Uh, it's, it's kind of, uh, counterintuitive to, how would you think about regular CPU and memory you try to fit?
+
+Maher Hanafi: Okay, if my system will only use this much, I will, I can have, I can do more virtual systems running on the same hardware for, for, for GPU and ai, I was like, no, no, no, no. Everything I have left. If I can change the number of, you know, how big is my batch? And I use all the remaining, uh, memory left on the video memory, well, we can have a lot of throughput, so, and with inflight it's gonna even be better and faster.
+
+Demetrios: And did you. Figure out [00:14:00] any ideas around the amount of money you're spending, because if you get more throughput, it enables you to get a bigger machine.
+
+Maher Hanafi: Yeah.
+
+Demetrios: Right.
+
+Maher Hanafi: Yeah. So increase the GPUs. Yeah. Obviously we went from smaller ones to bigger ones. I don't have the exact names. Um, by going to bigger GPUs and, you know, having one model, increasing the KFI cache, improving throughput, I didn't need to run more of these machines.
+
+Maher Hanafi: So this is, this is again, another counterintuitive approach. So I have my DevOps infra team coming to me and saying, okay, we need, I mean, it's better for us to go and get reserved instances from AWS to pay 30%, 40% less, but reserved instances you need to commit to a certain number of years.
+
+Demetrios: Yeah.
+
+Maher Hanafi: And then on in terms of the GPU, we were trying to get the smaller GPU that gets there and serve us the best, but then.
+
+Maher Hanafi: Every time you pick A GPU, there is a better GPU. Mm-hmm. Right. Faster, [00:15:00] better, more memory, but more expensive. And my thinking was if I can achieve a higher latency, obviously everything will get done and leave the GPU. So I have time to get more things done. And if I increase my throughput, so the number of lanes I can get AI to be running well, I will be able to serve more customers faster.
+
+Demetrios: Yeah.
+
+Maher Hanafi: So I don't need that many GPUs. So what happened is I did some math of, if I'm gonna go from this GPU to the next GPU, it's gonna be 30% more expensive, but I'm gonna use 50% less of the time.
+
+Demetrios: That's it.
+
+Maher Hanafi: So it's gonna be like 30% cheaper. So we were upgrading on a frequent basis, upgrading GPUs while saving money.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: So talking about the scheduled, um, scaling ahead, I'm gonna take some random numbers. Let's say when we start the ai, we were running again, 10 GPUs for the whole day. And then we, we looked at this and we said, in the morning and at nights and weekends, we don't have that. [00:16:00] So let's do five on these times.
+
+Maher Hanafi: 10 throughout the workday, like from eight in the morning to like 6:00 PM we'll have 10 machines. So I was just by doing that and I was doing the math, how many, you know, GPUs, I'm saving, what's the cost per hour? I'm gonna, I was always reporting on these numbers. This is how much I'm saving on a daily and weekly and monthly basis.
+
+Maher Hanafi: And then, and then now from instead of having five and 10, because they have better GPUs, faster high throughput with the optimization, using terms of tl, I don't need to have five in the week, and two are good enough to serve and through the, throughout the day and only 10, six are good enough.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: And add to that like multi-region, so we also have Europe regions and stuff and, and these kind of same, same strategies work, but for different numbers because of the traffic and the load you have.
+
+Maher Hanafi: So over time, this is, again, this is what. When, when reflecting on it now I feel like I, I was never able to do this. I was able to [00:17:00] save money. I was able to improve performance, uh, latency and throughput, and even quality because I was using bigger models on bigger GPUs. I was kind of optimizing all the, what I was describing in the pyramid, all the edges of the pyramid.
+
+Maher Hanafi: Every time, uh, with, with, by learning and exploring all these techniques and technologies, and again, I don't have like an infinite budget to hire the best people who know about all of this and bring them. I was doing this iteratively with my team, getting into, you know, talking to AWS, talking to Nvidia, understanding, you know, what tools, what, what tools we have available to go and optimize one of each, uh, at a time.
+
+Maher Hanafi: Yeah. But it's, it's been working and it's been magic. Uh, I don't think I've ever done this for any sort of like cloud distributed systems before where you can optimize all of this. There's a trade off.
+
+Demetrios: Hmm.
+
+Maher Hanafi: Like you want more power? Sorry, it's gonna be more expensive. Uh, you wanna something else, you want, you're gonna trade off something [00:18:00] in ai.
+
+Maher Hanafi: And I understand it's still like there's a lot of trade offs to do, but if you do them while focused on your use case and what you need, there was a way to optimize on many levels.
+
+Demetrios: Yeah. You're. Walking a tightrope.
+
+Maher Hanafi: Yeah.
+
+Demetrios: And you recognize that if x, y, Z remains true, then that allows us to get a beefier machine to have things get done faster.
+
+Demetrios: And especially when we have higher demand, we're gonna really take advantage of it. And then we can scale down and take advantage of like the lower demand. So we don't need these machines. And because you're saving money, that probably gives you more expendable cash to
+
+Maher Hanafi: Yeah.
+
+Demetrios: Test bigger machines. Exactly.
+
+Demetrios: And see does this scaling law Yeah. Your own little, is that
+
+Maher Hanafi: Yeah.
+
+Demetrios: World scaling
+
+Maher Hanafi: law. It was again that that is exactly what was going on. Uh, when I was. Talking to my team and my team, I think we all experienced this maybe for the first time, [00:19:00] but my DevOps infra SRE team were like, Hey, like if you go bigger machines, you're gonna pay more.
+
+Maher Hanafi: They are like 30, 40% more expensive. And when I was thinking about this, I was like, yes. Yeah, I want the more expensive thing because I'm gonna run it less number of hours. Mm-hmm. My unit is not, uh, locked into how much is the cost of the machine per hour, it's how much I'm gonna run these machines overall.
+
+Maher Hanafi: And you pay per the minute or maybe even by the second. Yeah. Um, so as long as you spin up and spin, you know, spin them up and turn them off as soon as you're done and you have this dynamic scaling that really minimize, and you have also, uh, the scheduled one, you can run the fewest number of hours. Using higher GPUs to serve more customers over time.
+
+Maher Hanafi: And you're saving time and you're improving latency. All of this also, the other thing we didn't talk about is the models themselves. So we have been also able to upgrade our models [00:20:00] to bigger models, better ones. And I'm not even talking about our explorations on using different models now, because for the different use cases I have use cases where it's more about rephrasing, polishing text, you know, I'm trying to give you feedback, work together in HR tech, you know, I'm gonna give you feedback and there is an agent that will help you rephrase and polish this to be, you know, fit,
+
+Demetrios: polite,
+
+Maher Hanafi: um, polite and nice and actionable are compliant.
+
+Maher Hanafi: Yeah. Actionable and insightful. That's what we say. Um, so that is, uh, and we're going deep into the weeds here, and this is just experimentation, but if it's based on just rephrasing your, your input and output are. Small or are about the same size. Right. Um, so understanding that and understanding how pre-filling and decoding work, you can think about, like, maybe I can use a smaller GPU to just do this and do it faster, um, because it's kind of the same input and output size, but there are other features where you, [00:21:00] you go and generate the whole program plan and that for that it's maybe short instruction, but the output is big.
+
+Maher Hanafi: So it seems like the pre-filling PA phase is very quick, very small. Um, but it's all about decoding. It's all about generating new tokens to just, you know, the new data. So maybe there is a different architecture, different models, different GPUs. Um, if you do also load balancing that is based on this information, you can go to the GPUs that are, that are, that did the prefill phase.
+
+Maher Hanafi: The same because at this, at the end of the day, most of the prompt or the instructions are the same. Go and generate for me a plan for a manager that is this X, Y, Z. It's the main differences in the decoding part. So some of these GPUs might have, if you design properly, might be capable of saving a lot on the pre-filling phase and go straight into like the first token start generating immediately.
+
+Maher Hanafi: Again, these are, these are next level things that I'm looking into. And there I can [00:22:00] go into again for some use case, I can go to smaller GPUs, smaller models, and other other use case I can go bigger ones. So. Yeah. Now I think the next phase is that kind of layer of routing and proxy gateway. Gateway.
+
+Maher Hanafi: Gateway. Yeah. We built something we call the D LLM proxy.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: Which is like an AI gateway.
+
+Demetrios: Yeah.
+
+Maher Hanafi: Decide where to go, which GPU. But that require us to really have load balancing and, um, you know, that is informed on AI data, not just on memory CPU and VRA M usage. It's more about like, who has more pre-filling for, for this request, I'm gonna take it to that GPU.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: Because you're gonna, if you go to that GPU, just go and decode. If you go to the other GPU, you need to prefill and then decode.
+
+Demetrios: Yeah. So
+
+Maher Hanafi: it's gonna, um, interesting. Um, but the good thing is like once you build a good foundation. You really get into understanding these. And as you said earlier, you lock a few parameters and you focus on optimizing one of them, like cost or latency or throughput.
+
+Maher Hanafi: You can [00:23:00] iteratively go and improve. Uh, if you want to get them all improved at the same time. That's when you get overwhelmed. That's when you get like, oh, oh my God. That's like, yeah, there's like a new model, new system, new framework. Can new, um, cloud ai GPU provider that does all of this go and set up a
+
+Demetrios: new way to quantize a new way to
+
+Maher Hanafi: Yeah, yeah, yeah.
+
+Maher Hanafi: Prune, distill. And it's like, and fine tune. I mean, at some point also fine tuning. Uh, we were really actively thinking about it at the beginning to try to adapt our use cases to, to HR tech, but then we felt like, eh, it's, uh, it's, it's going fine. Like, um, kind of a foundational model are good enough to just do it without fine tuning.
+
+Maher Hanafi: So contacting was big good to just scale it down, but nothing more. And then one of the other challenges that is becoming more and more serious is, uh. Translations, uh, is, is supporting different languages. Mm. We are in a space where our customers are not just English speakers. We have 30 ish language we, that we need support.
+
+Maher Hanafi: So which models do this the best? Uh, [00:24:00] how do you do that? How can you manage this and how can you even evaluate accuracy and quality of the use responses?
+
+Demetrios: Yeah. And you need a bigger model, bigger machines, bigger models for models that can handle more of these more
+
+Maher Hanafi: languages. Yeah.
+
+Demetrios: And talk to me a little bit more about how you are championing for the ROI of ai because all of this is well and dandy.
+
+Maher Hanafi: Yep.
+
+Demetrios: But then if you can't prove that these AI generated summaries or polishing or any of that actually provides value to the customer, then it's like, cool. You just did a lot of engineering work to make this incredible for an engineer. But the,
+
+Maher Hanafi: the city for the end user,
+
+Demetrios: yeah. The leadership is sitting there going like, so what?
+
+Maher Hanafi: Yeah. Again, this is part of things I, I get exposed to a lot. I'm not that kind of typical. Uh, practitioner, you know, in AI that's just focused with the terminals and like CLIs and all of that. I do that, but [00:25:00] also I'm very business oriented and I'm part of like, uh, council internally at, at the company I work for, where we put together vision and we, we try to assess where AI will have an impact.
+
+Maher Hanafi: So before when we started, you know, building ai, we, we came up with this framework. Uh, I ended up calling the flywheel framework to be able to plan for what, where AI will will help in terms of the product and then. With engineering and technical capabilities, go and build the first iterations of that.
+
+Maher Hanafi: The, the third step is to run it, really run it and look at the, you know, what, how it's going. And then the fourth one that will connect you back to the planning is optimizing, which I was talking a lot about. Like go and optimize. Yeah. Go and improve latency, accuracy, add support to other languages and stuff.
+
+Maher Hanafi: But
+
+Demetrios: that's the end of the whole flywheel. That's
+
+Maher Hanafi: the first You
+
+Demetrios: have to
+
+Maher Hanafi: Yeah.
+
+Demetrios: Understand if it's
+
+Maher Hanafi: exactly
+
+Demetrios: worth doing. And
+
+Maher Hanafi: yeah, so in the planning phase is where we meet across different departments. It's not just product engineering deciding what we do, right? [00:26:00] Like we work with our customer success, we work with our, you know, uh, legal and ethical teams.
+
+Maher Hanafi: We, we work with our sales. We really try to assess where AI can help us push the business forward. Um, and when it comes to me and my contribution to the conversation is like, what is the easiest. AI that we can build that can have the highest impact. I don't wanna go and build like a six months, nine months projects and then find out that maybe, yeah, it was a big investment for a small roi.
+
+Maher Hanafi: I wanna build the easiest thing that will really change the experience. So by collecting this information, working across these, and we have also, um, customer, uh, councils, so we really work with our champions at our, you know, because we are B2B. So we collect these information from our customers and we understand where do they think AI will help their, their end users, their employees?
+
+Maher Hanafi: Uh, it's so funny because at the early ages of building ai, I mean, now we're talking about ages, but the early days of building [00:27:00] ai. Uh, we had a lot of pushback on, on the adoption. You know, there were a lot of concerns, lack of trust, you know, even the image of some of these AI vendors were not great because they were, uh, big customers, enterprise customers globally were concerned about using their private data to train models.
+
+Maher Hanafi: So they didn't really trust the systems early on. So they were,
+
+Demetrios: has that changed?
+
+Maher Hanafi: Completely changed. So the same, they don't care. They say,
+
+Demetrios: train all my whatever.
+
+Maher Hanafi: Exactly. So if it's a better experience, a lot of customers used to say, you know what? We don't want any data to go to any, any vendor. Mm-hmm. We don't want AI to be involved here because we don't trust these vendors.
+
+Maher Hanafi: So that's our first push into building AI internally. Self-host, self-manage. Our first early proof of concepts were through, um, API based ai, like open ai, GPT. Um, so we had to sell, hosts have managed everything, so we can go back to these customers, say, Hey, your data is private, is in the boundaries of our systems on the [00:28:00] cloud.
+
+Maher Hanafi: It's the same thing as, you know, uh, saving your data into a relation database. Our AI will run within the ecosystem. But then what it changed like a year, a year later is that the, the same customers or most customers are asking for our AI roadmap. Mm-hmm. They wanna see where, where are we adding ai? They want to even contribute and push that roadmap towards.
+
+Maher Hanafi: What fits them best and what works for them. Um, at some point we had customers asking if they can bring their own ai, like they have their own agents or they have their own ai. Oh,
+
+Demetrios: interesting.
+
+Maher Hanafi: Or they have their own enterprise accounts within these vendors and they want to connect that.
+
+Demetrios: Oh, yeah.
+
+Maher Hanafi: Which is very interesting.
+
+Maher Hanafi: And ob obviously something we we're, we're, I mean, I'm open to consider. It's just, you know, how can you make that system work where you don't control the model, you don't control, you know, the, everything about it. It's just, you know. You throw the data and you wish it's gonna work, uh, and you optimize, how would you optimize for that?
+
+Maher Hanafi: You know, you know, prompt engineering [00:29:00] and all the, the work you do on a frequent basis, it's based on the idea that you know and control the models. If you don't anymore, that's gonna be tricky. So who is, uh, where does the liability goes when it comes to the ownership and the issues and the problems with it?
+
+Maher Hanafi: So yeah, it shifted completely from being very, uh, I would say skeptical with AI and concerned about re responsible AI and privacy to completely the opposite. Like, we want more ai, show us ai, and we want AI to be here and here and here because it's gonna save time. So all this leads back to that kind of planning phase where.
+
+Maher Hanafi: On, on a 2D uh, kind of graph, you need to know what is the lowest kind of effort. Techno, technically speaking, to build the AI features or capabilities that will have the highest impact. Start there and keep it small in terms of scope and execution. So you don't wanna spin up these huge projects and, and lose control in the middle.
+
+Maher Hanafi: And
+
+Demetrios: so you're mapping out on that 2D graph all the possible ways you [00:30:00] could plug in ai, you've heard from customers, oh, we want this feature, blah, blah, blah.
+
+Maher Hanafi: Yeah.
+
+Demetrios: And then you're just kind of throwing story points at how long voting
+
+Maher Hanafi: kinda Yeah. Kind of voting from, because at the end of the day, you and your team, from an engineering perspective, an AI team will have to go and build it, right?
+
+Demetrios: Yeah.
+
+Maher Hanafi: So you have to vote on, you know, how much you think this is feasible. There's a lot of research that is involved, experimentation that is involved. Again, this space is moving so fast. So from an idea to turn that idea into really an execution plan. It's gonna, it's gonna acquire you to vote and chime into, um, you know, evaluating these, uh, requests.
+
+Maher Hanafi: So yeah, when you end up with a view where you can have like a top right corner where you see what is high impact, low effort
+
+Demetrios: mm-hmm.
+
+Maher Hanafi: That's where you kind of go and, and where can collaborate with the other teams on building. Um, and, and also sometimes you think about the, the features or capabilities that will enable more capabilities later in the future.
+
+Maher Hanafi: [00:31:00] So this is where. Even my own thinking about building AI has been shifting over time. When I was trying to do more vertical ai, I'm gonna do this AI capability for this domain. Think about like goal settings. As an individual who's working on a company, you want to build your own goals. Um, you know, your, your OKRs, your whatever KPIs you have to track on a quarterly or yearly basis.
+
+Maher Hanafi: But you don't wanna build that on a silo for you, just yourself. You wanna m match this with your manager, your team, your department, the, or the top company goals. So building AI in any of this is, is for me, a vertical AI because we are just taking goals as a domain. And kind of empowering with, with ai.
+
+Maher Hanafi: Think about doing this in other domains, like giving feedback, like doing, uh, conversations with between managers or 360 reviews. And now you have AI running in all of these systems. Now, if you have the right foundation, and if you build AI as a platform instead of a product, now you can build a horizontal ai, [00:32:00] which can go and use all of these AI you build to build bigger, more complex, even multi-step ai like building programs.
+
+Maher Hanafi: You are, you are someone who was promoted into a manager role. Uh, how would you manage your team in the 30, 60, 90 days? What meetings you need to set up, what, um, what data you need to collect about your, the people who are reporting to you now. Um. If you had to do all of this without AI on your own, it's gonna take forever.
+
+Maher Hanafi: It's gonna take a long time. But now with AI capabilities available in every one of these, it's gonna bring to the surface a lot of good insights that another AI layer can really use to build a program for you across all of these. And now go and maybe suggest, okay, well you need to set up goals this way for you and for your team.
+
+Maher Hanafi: Uh, I recommend like you have a one-on-one on a biweekly, and maybe you need to start conversations with individuals. They report to you on, on 60 instead of 30. Uh, and maybe you need to, uh, uh, kind of start to think about [00:33:00] how would you, uh, develop skills for this team based on what we know about your team.
+
+Maher Hanafi: You have gaps in certain things based on the goals. You say. Like, again, I think of me of like managing a new team and saying, trying to say, Hey, like six months from now, we need to be able to have a. More advanced agentic, uh, workflows in, in the platform. But, you know, AI will be looking at all of the feedback data or all of the skills that are in my team and figure out that I have gaps.
+
+Maher Hanafi: So it's gonna ask me to either develop gaps or find resources maybe from other teams to bring to this team so we can achieve that goal.
+
+Demetrios: And this is like a deep research report on the team type of thing.
+
+Maher Hanafi: So it's, uh, it's more about pulling, using all of these AI capabilities within these verticals built ai.
+
+Maher Hanafi: Yeah, so you can call it deep research, but it's, it's not built that way, uhhuh. It's more about, I would say, a workflow where you're pulling data from all of these systems and then trying to summarize this and then create insights and then go back, create [00:34:00] actions within these domains
+
+Demetrios: and all of these verticalized ones you are trying to create.
+
+Demetrios: In a way that can be generalized. So you're using the same models? Yeah. It's just that the product itself is vertical.
+
+Maher Hanafi: Yeah, exactly. It's all using, again, we're still in the mono model. Mm-hmm. Uh, again, I think the future will hold this. Um, capabilities of really tweaking every domain to the right size model, the right size architecture behind, because not every domain or feature require the same capabilities.
+
+Maher Hanafi: I talked about this earlier, generating content like goals is different from just polishing feedback or, you know, giving you a draft or a conversation.
+
+Demetrios: Yeah. But all these verticalized pieces are then just. Bubbling up the most important parts to the prompt.
+
+Maher Hanafi: Yeah.
+
+Demetrios: That is that horizontal layer.
+
+Maher Hanafi: Exactly.
+
+Maher Hanafi: Yeah. And you know what, another thing we have been also doing recently, which can lead to more tweaks and, and explorations [00:35:00] in the infrastructure aspects or the MLOps aspect, is pre-processing these verticals before you come and ask for a horizontal feature.
+
+Demetrios: Oh, nice.
+
+Maher Hanafi: Yeah. So, so if you, if you can already generate a summary of employees kind of goals or the feedback they received over the last year or so, so when the horizontal request come to build a plan or build the whole program, this data is available.
+
+Maher Hanafi: So you, you don't need to on runtime, run AI and try to summarize and do all of that. You can have that data pre-processed. Where this works really well with the MLOps aspect is how can you do these batched. Work at the, at the time where your AI is not requested the most. Yeah. Going back to what I was talking about, the scheduled, you know, um, kind of scaling, if you can figure out these times where it's really low in usage and you have enough machines, you can run these batch job at night or at time where it's cheap.
+
+Demetrios: Yeah. It's like consolidate learnings and then boom, you're on that job. You [00:36:00] kick it off and
+
+Maher Hanafi: Exactly. Yeah. And you have some sort of a queue of request, you know, pre-processing data, but there's no, I mean, it has a lower level of priority or urgency, so it can be done whenever there's a bandwidth to do
+
+Demetrios: this now.
+
+Demetrios: Gives you that framework. You hit on how you choose the different pieces. Then you had that flywheel. There was the next step of
+
+Maher Hanafi: Yeah.
+
+Demetrios: Going and building it.
+
+Maher Hanafi: Building, yeah. Building is when you decide what is the best model, where is the best architecture? You know, the A, the architecture on the, on the cloud, the cost and all of that.
+
+Maher Hanafi: Yeah.
+
+Demetrios: You play some bets.
+
+Maher Hanafi: Yeah.
+
+Demetrios: And then you go and you optimize. That was the next,
+
+Maher Hanafi: and then you go and run it. Uhhuh. So that's when you deploy it. Obviously you have different stages before it goes to production. Full exposure. You have it roll out into different stages and confirm that it's exactly what you want.
+
+Maher Hanafi: And then you go and optimize. Once it's again deployed to production, you go and optimize and make sure, okay, well this is good, but there is nothing we built in the last three years that was. [00:37:00] That we never went back and, and optimized
+
+Demetrios: Uhhuh.
+
+Maher Hanafi: So that's the beauty of this kind of mindset of there's always opportunity again.
+
+Maher Hanafi: Because in the last three years or two years, just the last three years, so many things changed. So many new models came up. Uh, so many new techniques to optimize the models, uh, came. So every once in a while you go and change and optimize. And also internally, we had so many new requests to add to these.
+
+Maher Hanafi: Again, support new languages. Uh, do it faster, do it better, uh, add more guardrails and safeguards ensure that it doesn't do this, doesn't do that. How would you also offline build an evaluation framework that will go and ensure whatever changes you do to the prompts or changing the models or the infrastructure performance and accuracy and quality of these responses, still meeting a certain level that you have, uh, set up.
+
+Maher Hanafi: So. Optimizing. I mean, if I had to draw this flywheel, like all the, uh, the first three would be small parts of the circle. Optimization is at least half of it.
+
+Demetrios: How do you know it's [00:38:00] working? How do you know that the customer is. Finding value in it? Is it usage metrics? Is it,
+
+Maher Hanafi: yeah. Well, I mean, it's usage metric.
+
+Maher Hanafi: It's obviously, uh, another, you know, we can also have report data from the customer, self report data about their, you know, think about an NPS score, right? Like their, how they think of this feature is changing the way they interact with the platform or even with specific domains. Um, you have also ways, because when we built all of this, we were focused on building responsible AI before, before anything.
+
+Maher Hanafi: Because we are an HR tech space, very highly compliant, regulated, very sensitive data all the time. Like, I, I always get these questions about, like data classification. I say everything is, is very sensitive. So there is no, it's one class.
+
+Demetrios: Yeah.
+
+Maher Hanafi: Um, so when you're trying to build, uh, the responsible AI. Some of these, the pillars of responsible AI is transparency and explainability.
+
+Maher Hanafi: So you need to be transparent [00:39:00] about why AI did this, where this summary come from. What are the sources of data that I use to say that this person has this skill as an example. And then, um, explain abilities. Sometimes when you do some of the AI changes or generation, you explain. W why AI thought that this is the best thing to do.
+
+Maher Hanafi: So the think, uh, the, the way we think about AI is not just, um, a tool where you can put your brain on the side and just use it. It's also something that will train your, your brain to do better next time to, to grow as an individual or as an employee, and to develop skills as well. So it's a very good way to learn.
+
+Maher Hanafi: Um, so there's that. I mean, there's the reported data. We have ways to explain to the user how it works. We have also thumbs up, thumbs down, tell us if this doesn't meet your, your needs or doesn't look good. And then we also collect a lot of metrics and data that we have internally, uh, to see how much [00:40:00] the introduction of AI has changed the way we people interact with the features and the, and the, and the product.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: So understanding that is our. Kind of, uh, promotional materials to go and tell current customers and future customers. Hey, using AI today, people are able to, like, we are able to achieve 50% more, uh, goal, you know, metrics or people are creating more, more conversations or giving more feedback because AI is helping a lot with that.
+
+Maher Hanafi: You have the author's block, like you, AI can build for you a draft without you to have to think so much about how do you even start.
+
+Demetrios: Yeah.
+
+Maher Hanafi: Um, when you're trying to build goals, it's so hard for you to set your goals for the next quarter, the next year on your own. AI can really create drafts of goals for you that really, you know, based on the history of all the goals you had, but also looking at your manager, your team, your department, and the vision of the company.
+
+Maher Hanafi: So again, if I had to do this on my own, it, it [00:41:00] might take a few days. Like we all been there and we had, we had. We, we were asked to kind of put together some objectives and OKRs and then find out like, where should I start? And you go and browse and look at everyone else to just make some decisions. Now, AI gives you eight, gets you 80% there, and all you need to do is like review, align, make sure you add anything that was missing, uh, and creates this kind of, uh, hierarchy of goals and objectives that before was really hard to achieve.
+
+Demetrios: Are there any features that you put into production? You thought they were gonna be successful, you were convinced that this is going to add so much value to the end user's life, we need to have it out there. And for some reason or other it just didn't work or it didn't work as you wanted.
+
+Maher Hanafi: Yeah. There's no, uh, no direct path to success here.
+
+Maher Hanafi: You had to go through iterations and, and I think the most successful leaders and [00:42:00] businesses just are the ones who had fewer, you know, scenarios like this. So one feature I recall is when you help, um, users rephrase feedback, they want to give to another person, and, uh, as a user, you will go and type your feedback the way you used to do it, and use AI to just find any gaps in it, polish it, improve it.
+
+Maher Hanafi: Uh, you might also go and give it bullet points instead of really develop your own feedback structure. And then AI would take that and improve for you. Um, and this is early on when we start building these kind of polish. Um, writing assist capabilities.
+
+Demetrios: Yeah.
+
+Maher Hanafi: The challenge with these is. The amount of things you need, the nuances and the language you use across different languages, that's even another problem.
+
+Maher Hanafi: But there are different nuances of, how would you phrase these and how AI will take that and, and change it where, you know, if you don't have the right setup for this, AI can take what you wrote and completely write a different version that will change [00:43:00] it completely. Maybe will have the same meaning, but completely in a different,
+
+Demetrios: and then users
+
+Maher Hanafi: reject way that doesn't look like you.
+
+Demetrios: Yeah,
+
+Maher Hanafi: it's not your tone, it's not your language. So another thing that can do, again, hallucination is a big thing. It can start going into, you know, different directions. It can start, you know, if you, if that message is a little bit long, it can start to lose some, some facts in the conversation and you have to bring it back to by, by tweaking it again and again.
+
+Maher Hanafi: So I think this feature, when we first initially started, uh, got the most feedback from the customers where. It's, it's different. It's not exactly what I, what I need and I use it. I try it and it gives me something that I'm not really interested in, in using, so I drop it. Mm-hmm. So usage is maybe high by adoption is maybe low.
+
+Maher Hanafi: Yeah.
+
+Demetrios: Value isn't there?
+
+Maher Hanafi: Yeah. So because, because we never go and push anything that AI writes on your behalf, you're still in control. AI is gonna give you suggestion that you need to review and approve. So [00:44:00] human in the loop is a hundred percent guaranteed here. So what we have been doing since, and that kind of optimizing is everything around guardrails and safeguards and everything around adversarial testing.
+
+Maher Hanafi: Go, go crazy and give it, you know, wrong feedbacks and see how ai, because if you are, I mean, again, the whole idea here is to help you as an individual give the best feedback possible that is actionable and insightful. But if you are. An upset employee and you're trying to give a feedback that is bad to someone else, AI should not empower that and give you longer versions of that.
+
+Maher Hanafi: Make it even worse. More emotional. Yeah. So the guard raids went to have had to have, be set up in a way that. Is is like very dynamic. It has to learn over time. We had to learn from this feature, from the feedback to keep improving it. Hmm. So first time when you build this, you think, oh my God, I'm gonna help so many users write great feedbacks.
+
+Maher Hanafi: But then the feedback is like, oh, well every [00:45:00] time I use it, it doesn't look like a language I used or it got into talking about things I didn't mean to say. So going back into that, and again going, going back to the basics for me, every time we talk about these is how you turn that into an AI platform, not just tweaks to that feature or to that product.
+
+Maher Hanafi: How do you put safeguards and guardrails as part of the whole ecosystem where you can t tune it for this feature, but can use it for other features as well, and became part of the whole ecosystem?
+
+Demetrios: Yeah. So you. Correct it once and you don't have to go and correct it again.
+
+Maher Hanafi: Yeah,
+
+exactly.
+
+Demetrios: Every time it comes
+
+Maher Hanafi: up.
+
+Maher Hanafi: Yeah. And you have a structure to leverage this more and more in your next product. Yeah. So, so that's again, that going back to the flywheel, uh, when you go and plan maybe the next feature after optimizing this one, you already use all the knowledge you had and all the infrastructure you had. So that's one of the pitfalls I see, you know, when people build AI, is you build these products in silos and then you have to rebuild everything you have been doing.
+
+Maher Hanafi: So one of [00:46:00] the learnings I've had is how can we, anything we do is a platform is abstracted from these specific use cases, but more used as an architecture that can be spinned up for, for any other thing.
+
+Demetrios: So let's shift from talking about AI products that you are creating for your company and your.
+
+Demetrios: Product to using AI internally, primarily on the engineering team. So agentic coding agents. Yeah, agentic engineering, whatever the term de jour is. How are you guys doing that? How are you looking at the costs incurred there? Because that can be chaos. I was, uh, just at an agent bootcamp a few weeks ago, and folks were saying how they've created an internal dashboard on who's using what coding tools and how much they're spending.
+
+Demetrios: Not because they want to tell [00:47:00] someone don't spend, but they wanna see, like, if somebody is spending a lot of money, they should probably talk to them and see what they're doing, how they're leveraging it. So that those people can then go and disseminate that information across the organization and showcase like how they're a power user.
+
+Maher Hanafi: So, um, the first thing I, I, I recognized is how many options are out there and how fast these things are moving. And there is also a cultural shift or maybe even a perception change. Uh, software engineers, when they first learned about Devon as an example, the first AI engineer, we were all like, what? No, no way.
+
+Maher Hanafi: This is like a joke that's not gonna work. Um, I'm not saying it worked, but what I'm saying is like the perception. Early on was like, I'm not interested. This is not, this is not for us.
+
+Demetrios: They did over promise and under deliver.
+
+Maher Hanafi: Yeah. Yeah.
+
+Demetrios: Back in those days too.
+
+Maher Hanafi: Yeah. But the perception from software engineers and technical people were like, okay, this is not, there's [00:48:00] no future where this will work.
+
+Maher Hanafi: Um, and then over time, again, with Cursor and with wind and with all of these capabilities and ides and ai, and then most recently like more focused on coding agents and stuff like that, perception has been changing.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: And for me, what I have been seeing is two, two curves. One is the adoption growing for sure, like adoption of software engineers adopting AI technologies growing to certain degrees.
+
+Maher Hanafi: Where today, uh, I mean I don't have exact data, but in internally in my team, I think we're close to a hundred percent, if not a hundred percent. I don't, I don't, I don't think we have any engineer who's not using ai, so I'm not gonna assume it's a hundred percent, but it's very high percentage. And then the other thing is how that perception is changing.
+
+Maher Hanafi: And even in that curve of perception, there were two, two, uh, two sublines, I would say. And it depends on the seniority level. So junior engineers or early stage engineers, um, have been more excited about ai. [00:49:00] Why? Because they can do more with it.
+
+Demetrios: Hmm.
+
+Maher Hanafi: They can do things that used to take years for them to learn, and a lot of training and mentoring to get there and exposure to bigger projects to do so.
+
+Maher Hanafi: Now, uh, junior engineer is capable of spinning up an infrastructure, a full stack thing, and, and, and look at all of this and manage all of this without the proper training and exposure for it. Um, and on the other hand, the most senior engineers, the architect level, they were very skeptical to how AI will help them.
+
+Maher Hanafi: They, they are good, they're capable. They can do many things that others cannot do. So thinking about ai, they. Not only thought at the beginning, AI will not change much in the way they work, but also they were concerned about other people, especially the less senior people, how they will use it. And that created the gap between, again, the output of AI versus, you know, the perception and, and how we deal with it.
+
+Maher Hanafi: So early on when we [00:50:00] started really exploring ai, uh, I created an, what I ended up calling the AI engineering lab.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: So it's a space or it's a system where we can go all and explore ai, uh, with certain, you know, uh, limits to budget, obviously. And I mean, with the open source and alone, you have a lot of exposure to a lot of good things.
+
+Maher Hanafi: But internally we adopted, you know, a few tools that we start to, you know, offering seats to my team and, and go and explore. Um, so with these things we, I mean with the AI engineering lab, uh, I wanted everyone to go and explore AI without that kind of, uh. Predefined perception. I didn't want to dictate, I didn't want say anything.
+
+Maher Hanafi: I don't want it to the senior to influence the junior or vice versa. I want everyone to go and explore and use it in very limited scope to just ensure this is good. We start with some, uh, projects that were not very top priority and we had people create code and use AI and [00:51:00] go figure out these tools and, you know, bring GitHub copilot with mixed with a memory bank and as a very specific agents.
+
+Maher Hanafi: And then I had my senior engineers who were not like the most active in using AI on a daily basis to kind of take a look and review this code. And I intentionally wanted them to give like very honest feedback. Um, uh. That is, uh, that doesn't know necessarily if this is done by AI or help with the help of AI or not.
+
+Maher Hanafi: And then definitely immediately they start seeing the patterns. They start to see that the quality is not great. The design patterns are not respected.
+
+Demetrios: It has a smell to it.
+
+Maher Hanafi: It has a smell. And I start having feedback that, hey, now that we opened explorations to ai, yes, it's off projects. You know, all the side projects, not something that is critical path.
+
+Maher Hanafi: But we are seeing a pattern of people using AI just to do more without taking that time saving to review and, uh, and fix [00:52:00] things and remove, you know, anything that is not in our best practices. Uh, sometimes AI will come up with its own design pattern while we have our own, uh, we have components, components that we use that AI is not respecting and building its own component for UI or even for backend.
+
+Maher Hanafi: So that, that is where the senior engineers got more and more involved into the process, saying, okay, okay, definitely we have this problem, so I want the other people to take more time to review. So if AI is saving you 80% time or 70, use 20, 30, 40% of that time to review. So defining the. The new SDLC has been a process that we all contributed to.
+
+Maher Hanafi: It was not dictated, it was not based on a research, it was more like a, a collaboration within the engineering team where we ended up fine tuning over time what should be done. And the way we ended up adopting is like, use ai, like we all agree now AI is all over the place, but all ev any time you, uh, uh, [00:53:00] any time saving you do use that to review ai.
+
+Maher Hanafi: The output of your work with AI should be exactly the same as the output of your work without ai. Mm. Meaning you need to own the code. You need to understand the code. You need to really, um, make sure it's adapted to our design patterns and our components. Otherwise, you are, you are saving time by also creating a lot of problems that will either blow up now or later.
+
+Demetrios: And did you take certain things from the senior engineers and. Immortalize them in like rules or ways that you can make the coding agents respect the components or the design patterns that are common practices within the org.
+
+Maher Hanafi: Yeah, so that's where, again, I, I, this AI engineering labs started the whole conversation where, and this is where I told you about the graphs, the lines earlier, where I think it started more with, with the mid-level engineers pushing, [00:54:00] pushing to the adoption of ai.
+
+Maher Hanafi: While the most senior engineers were like, okay, well let's take our time. Let's be careful here. This can create a lot of trash
+
+Demetrios: chaos in the
+
+Maher Hanafi: database. Yeah. And chaos. So now they have everyone's attention. I was like, okay, well tell me more about this. And I had more time from the most senior engineers to go and review, to go get themselves also, you know, spin up all of these tools and figure out the best and.
+
+Maher Hanafi: What we ended up adopting is again, is leveraging a lot of memory aspects, a lot of like, um, instruction skills based, where these agents, we go and build something that we all agree on, we vote on. It's like building code now, again, building these skills and these instructions. It's like writing your code.
+
+Maher Hanafi: So you define what is best, you point the AI to the right kind of design patterns to the right, uh, structures that needs to follow. And then over time, the output of AI has been significantly changing, impacting the performance and velocity of everyone in the team, but especially the mid-level to, I mean, junior to [00:55:00] mid-level.
+
+Demetrios: Yeah.
+
+Maher Hanafi: Um, so that's, that's phase one of AI engineering lab. Phase two now is exploration beyond what we kind of started with because I, as I told you, we started with junior mid-level pushing more AI code and then senior were like, okay, well let me, let me give you my attention here for a second. Let's improve this.
+
+Maher Hanafi: Now everyone is using that, that level we got to, but now the push is coming from more from the senior, the most architect, you know, kind of level people where they're going exploring everything under the sun, you know, cloud code and all of these things. And mostly cell eyes where. It's changing the way they work.
+
+Maher Hanafi: Uh, it's really a whole new way of writing code by managing all of these agents. It's not just one or two. It's like so many agents today. Saving a lot of time for the most senior engineers, which again, at the beginning they were very skeptical to the impact of this. And the same people that early on said, I'm not sure I'm concerned, [00:56:00] are now like, oh my God.
+
+Maher Hanafi: I'm like a, I'm like a God.
+
+Demetrios: Yeah.
+
+Maher Hanafi: It's like they're
+
+Demetrios: running eight different agents in parallel.
+
+Maher Hanafi: Yeah. They're spin. I mean, they're using, at some point, they, they are outpacing our standards and our mechanism because again, we are, we, we are, we have controls in, in, in the system. So they're spinning up their own personal machines, their own personal subscriptions to new systems because they think it's, it's gonna take time for us to go and review security and legal mm-hmm.
+
+Maher Hanafi: Ensure like this is good. Like they are just experimenting outside of the regular kind of work because they're so excited about this.
+
+Demetrios: Yeah.
+
+Maher Hanafi: So at the end of the day, again, this eng AI engineering lab started. Started to just open the conversation and then kind of took off from there.
+
+Demetrios: They caught the bug.
+
+Maher Hanafi: Um, another thing we did is, uh, you know, when we spin up this whole thing, we did a survey to just have people report on ai, impact on engineering. Uh, because I didn't want to trust, I don't want to introduce any DX tools, [00:57:00] like, uh, like tracking, you know, big brother way of like, are you using ai? How much you're spending, all of that.
+
+Maher Hanafi: I mean, I have the spending anything that is under the enterprise accounts. We, I have this, this spending and we are keeping that into control. But the usage, the way you use it, I don't want to control any of that yet. And I wanted the people to just go and, and report on the, on the data. So their own thinking about how AI is helping them.
+
+Maher Hanafi: Do you think AI is. Helping you get better as a software engineer or get more as a software engineer? 'cause there's a difference here. Um, if you are a mid-level engineer using ai, is that gonna get you to senior earlier or it's gonna delay that because you don't have to think about the problems. AI is thinking about the problems you're just delivering.
+
+Maher Hanafi: So there's a difference between using AI to grow and be better or using AI to just do more. Uh, another thing I I talked about earlier is like, is AI helping you to be a better engineer on your own or a better engineer within a team? [00:58:00] And is it making your team better? Is it making my whole engineering team better?
+
+Maher Hanafi: So that's this because there's a difference there. And, uh, we, if we didn't do this in a, in a, in distributed way where everyone was contributing and then feedback came in and then we, we start like with so many options and then we, we, we got to a place where we have very few option that a lot of people agree on.
+
+Maher Hanafi: If we didn't do that, the risk could have been of creating all of these silos of ai uh, development where everyone is using their own tool. Everyone is spinning up something. Or we could have ended up with something that is dictated, go and use x, y, z, uh, IGE with these models. Uh, your subscription is limited to this and that's it.
+
+Maher Hanafi: And you don't give freedom to the software engineers and they will be just logged into that system.
+
+Demetrios: With the AI inside of your product, you took a very opinionated approach and you're optimizing to the max and [00:59:00] self-hosting. You're doing all these things that are very hard. Engineering wise, with the AI being used on the engineering team, you're not really doing any of that in the
+
+Maher Hanafi: opposite.
+
+Maher Hanafi: Yeah.
+
+Demetrios: Yeah. And so do you foresee a world where eventually you're gonna get to running your own Quinn or Kimmy models for the teams, you know, these coding agents that are self-hosted and you can completely rely on because of it's cheaper.
+
+Maher Hanafi: Yeah.
+
+Demetrios: And it's better in that regard.
+
+Maher Hanafi: Well, that's, that conversation is happening today.
+
+Maher Hanafi: Uh, I've had people reaching out saying, Hey, can we, now that we are deep into AI development and you know, AI coding agents, can we spin up versions of our AI platform to support these efforts?
+
+Demetrios: Yeah. 'cause you were just talking about how yeah, you want to create a platform. So you've already got the primitives there, right?
+
+Maher Hanafi: Yeah. Well, well. That's the conversation we're having as of now. The challenge [01:00:00] is how to adapt that platform to be a development platform. So again, you need to go and pick the right models. You need to go and spin up the right way to support more and more agentic uh, capabilities. Uh, we have been exploring many things like MCP as an example to just spin up not only the product, but also development.
+
+Maher Hanafi: So there is a place where these two things will overlap a little bit, but that's where I need to go back to the flywheel and go and plan for it. Go and build it and run it and then optimize. But definitely that's, that's the direction. And I, as of today, I have conversations happening about leveraging our own platform to do our own AI coding.
+
+Demetrios: And how are you looking at the cost for the AI coding?
+
+Maher Hanafi: Yeah. Well, cost is so far under control, which is, which is surprising. Uh, we, we spin up these, I mean, we use different tools that. The good thing about them is you have visibility into the cost and you can set up quotas.
+
+Demetrios: Yeah.
+
+Maher Hanafi: [01:01:00] Um, and we were for a long time in this kind of experimentation stage, uh, where we use different models and then even if these models were out of Coda, we go to the next one and we try, we keep iterating.
+
+Maher Hanafi: Now. We are getting a little bit locked in into what works the best, and this is where we are investing into enterprise relationship with these vendors, uh, and solutions and just adopt them at the bigger scale.
+
+Demetrios: Mm-hmm.
+
+Maher Hanafi: Uh, but, uh, you know, for a long time I had my team exposed to different options either.
+
+Maher Hanafi: You know, led by, by the collaboration I have with our financial team, just to get the number of seats I need, enterprise accounts, or just by exploring open source as well. I think there is a lot of opportunities with open source and that's where the conversation was leading to this kind of leveraging our ai.
+
+Maher Hanafi: Because if we have the infrastructure, you can spin it in a different environment, but now you have less control on the, the sensitivity of the data. In terms of like HR, tech, the specific [01:02:00] models, one of the examples I have here is. As an example, in our platform, we cannot use Chinese originated models as an example, like Gwen and Deep Seek.
+
+Maher Hanafi: But for development, maybe we can, so that can create different, different options for us, less controls, because we're not serving HR tech anymore, we're serving software engineering. And for that different requirements, different, you know, uh, aspects that we can leverage our platform for. And yeah, that's gonna impact significantly cost.
+
+Maher Hanafi: If, if, uh, if we do follow that path.
+
+Demetrios: And you can't use Chinese models because it's a stance that your company took or it's a compliance thing.
+
+Maher Hanafi: It's, it's, it's a comp, it's a, it's a customer's request.
+
+Demetrios: Ah, I've heard a few people say that.
+
+Maher Hanafi: Yeah. So we, I mean, if we work, if you work with a, like a global enterprise, customers cross globe, again, this takes you back to the initial concerns we had with even OpenAI and in Anthropic early on [01:03:00] because of how.
+
+Maher Hanafi: They, you know, customers don't know how, what's the process to, to train the data? So that same thing is happening today with the Chinese based models where we don't know how the data is being trained. We don't as customers, for me personally, I mean, I know how much these cap, these models are capable, right?
+
+Maher Hanafi: I know what they're capable of. But the, the missing piece in, in AI sometimes is that, and I talk about this a lot, where it's all about, you know, the data at the end of the day. The data that, which, which we forget to mention talk about the most, is the data that was used to train the foundation model.
+
+Maher Hanafi: Yeah. Like we talk about the data for fine tuning. We talk about the data for the prompts and in context learning, but we miss that these models were trained with a certain corpus of data. So what is that data? What biases in this data? So that kind of unknown is a no go for customers.
+
+Demetrios: Yeah.
+
+Maher Hanafi: And that's, that's alone is a, is a reason.
+
+Maher Hanafi: And we had that same no go for open ai. So I can really [01:04:00] imagine this for Chinese, but I think perception will change over time similar to that one. And there would be more competition, you know, more open source regardless of the source.
+
+Demetrios: Us too. Yeah. Yeah. There, well I know what is that company reflection?
+
+Demetrios: They got paid a bunch of money by Nvidia just to create an open source lab in the US to rival the deep sea models.
+
+Maher Hanafi: Exactly. '
+
+Demetrios: cause people are asking for it.
+
+Maher Hanafi: Yeah. And so. Customers are fine with the same capabilities model to deep seek, to qu if it's trained in the US if it has certain visibility into the training data.
+
+Demetrios: Yeah.
+
+Maher Hanafi: So again, it's, it's more like a politics and legal aspects to things. Yeah. But it's not, I won't say it's stands from the company, it's more about the space we're in that is very highly regulated, compliancy and, um, you know, the concerns about training and, and bias in general.
+
+Demetrios: Yeah.
+
+Maher Hanafi: And there is a lot of also conversations to have with customers to explain how things work and how AI work and the difference between using an open source [01:05:00] model hosted
+
+Demetrios: Yeah.
+
+Maher Hanafi: Uh, self-hosted versus using their model through an A API. So sending them the data Yeah. Explaining that. But the concern is more about the bias that is already in the models.
++ Read More
+Watch More
+57:21
+LLM in Production Round Table
+Posted Mar 21, 2023 | Views 3.1K
+# Large Language Models
+# LLM in Production
+# Cost of Production
+30:49
+LLM Use Cases in Production Panel
+Posted Feb 28, 2024 | Views 3.8K
+# LLM Use Cases
+# Startups
+# hello.theresidesk.com
+# chaptr.xyz
+# dataindependent.com
+27:31:00
+LLM, Agents and OpenSource // Thomas Wolf // Agents in Production
+Posted Nov 15, 2024 | Views 1.3K
+# LLM
+# Agents
+# OpenSource
+Code of Conduct
+receiving their newsletter
+Privacy Policy

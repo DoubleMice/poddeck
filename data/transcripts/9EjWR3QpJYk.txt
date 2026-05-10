@@ -1,0 +1,628 @@
+Title: It's 2026, and We're Still Talking Evals
+Video: https://youtube.com/watch?v=9EjWR3QpJYk
+Transcript source: https://home.mlops.community/public/videos/its-2026-and-were-still-talking-evals
+
+Maggie Konstanty: [00:00:00] Yeah, I'm a detective. There's not a lot of users that are gonna tell you I don't like that. Setting at 20 types of different evaluators that are not connected to your goal, I would say instruction to fail. Evils themselves are not very hard.
+
+Demetrios: You say eval.
+
+Maggie Konstanty: Yeah. That's
+
+Demetrios: such a broad term.
+
+Maggie Konstanty: And my question exactly is like, we have a good eval, but you know, we have a issue in production. Evil start. Before you ship the agent or before you ship the product, and then you have to completely drift from your approach to a different evil, so you don't continue with the same evaluation system once you have an agent in production.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: Because it doesn't match. You have new users, you have, I think you weird users. We can say that some users, you know, you don't expect certain types of questions or requests.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: And to give you example, like you ship an agent that is a shopping agent, like, and you test versus que is like, I want to find Aida size [00:01:00] 37.
+
+Maggie Konstanty: And then, um, another user would in practice in real life. So like I want to have. Shoes like LeBron James. Mm-hmm. And you know, that's a different question. And then you have to completely twist your evils from, you know, test cases that you simulated yourself to something that user created. And then you switch from different failure modes to different failure mode.
+
+Maggie Konstanty: And then you go from online. Evils do offline, online evils. And I think that a lot of, uh, teams do it. They completely ship the product and they're like, okay, let's start do evils. And, and everybody's like, oh, what is evils? And then we go into, and to be honest, I've heard so many times word evils, uh, even when I'm talking about it, you know, I get where the confusion comes from.
+
+Maggie Konstanty: So, yeah, it's really important to, to create something. Um,
+
+Demetrios: yeah. But basically people ship their product. Yeah. And then they come to you and they say, Hey, uh, can we set up some evals?
+
+Maggie Konstanty: Yeah. That's my favorite phrase. Uh, okay, Maggie, [00:02:00] uh, we have this, let's run evals. And I'm like, okay. So what do you mean evils should be, uh, constant within the development team.
+
+Maggie Konstanty: Even start the moment, the idea of the product starts. So this kind of ensures you that. When you ship something, you are not, you know, this is kind of evil's pre-production is for you not to get like burnt. Mm-hmm. And evil in production is to actually do you deliver something of quality.
+
+Demetrios: And by burnt you just mean like putting the right guardrails on it.
+
+Maggie Konstanty: Burnt. I mean, you don't, you know, uh, you're not ashamed of your product what is in production
+
+Demetrios: because it's so bad.
+
+Maggie Konstanty: Yeah. It's so bad. It's, you know, you overcomplicate things sometimes. Uh, I think I also mentioned that. You ship more features than you actually evaluated. So features for me always comes later.
+
+Maggie Konstanty: What is more important a product that works, you know, as far as we are concerned? Good. Or a product that has a thousand features, but you know, most of them fail. Yeah. And [00:03:00] then, you know, you can ship more features. You can, you can test ad hoc different things. And that's what I also understand through what Tiago said about iterations.
+
+Maggie Konstanty: Then you actually set up a different filler modes. You, you actually discover them once it's shipped. But the first product, you should build evals from the very beginning. Simulate user scenarios, actually, you know, try to. Um, mimic somebody's brain use, create user profiles and not do it once. Do it multiple times.
+
+Maggie Konstanty: 'cause what is actually interesting for me in, uh, current LMS is that they don't, they, they understand what they're doing, so they understand what the, the task that they have to do. But what it fails is. After sometime they lose track or they do something four times. Well, and then the fifth time is tragically wrong.
+
+Maggie Konstanty: So that's the fun part about evils, that it's not really deterministic and it's also not a bag that you can systematically improve. So the failure modes, it's something that you should really focus on before and after, but that's a [00:04:00] specific difference.
+
+Demetrios: And are you talking about. The LLMs losing track.
+
+Demetrios: Yeah. When you ask them to simulate different personas.
+
+Maggie Konstanty: Oh, that's as well. I mean, that's another point. Like, uh, we evaluate, uh, LLMs with the LLMs that are also problematic.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: So yeah, they also lose track. But I think there was this research on that, like, um, current lms, they work very ga good after, you know, certain.
+
+Maggie Konstanty: You know, tasks. So the coherence within the LLM, how it works, it, it loses the track of what is, what's going to do or working on. So, um, yeah, that's the case. But in terms of simulating a user, you're kind of how we do it. I'm gonna tell you how we do it. Um, you think of different user personas. Is it power user?
+
+Maggie Konstanty: Is it, um, you know. Very lazy users, busy professional, and you try to describe it as, as well as you can. And then, um, you colonate it yourself. So you simulate the scenarios 1, 5, 10, sometimes a hundred times if you need [00:05:00] to. Uh, using different types of personas to see how will your agent react to it and what is the variance of the outcomes.
+
+Maggie Konstanty: So if your agent scales, you know, 95 4 times in terms of, you know. I dunno, accuracy. I'm not really a fan of this performance metric, but yeah.
+
+Demetrios: Oh, wait, why not?
+
+Maggie Konstanty: Um, yeah, it's too, uh, it. Actually measures the average of, of the performance. That doesn't really give you a quality of this. So yeah, I usually use the T-N-R-T-P-R.
+
+Maggie Konstanty: So how, well it's, you know, the human label versus the LLM, it's more tangible.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: Um, and yeah, and I also said that it also performs well in terms of like, uh, statistical tests, uh, not really real user scenarios. And that's also the difference between testing with LLM applications. You know, basic software solution.
+
+Maggie Konstanty: So yeah. It doesn't work well anymore, in my opinion. I think a lot of people would say that as well. But yeah, I, I very well would like to debate that if you think differently. [00:06:00]
+
+Demetrios: I got you off track.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: You were saying
+
+Maggie Konstanty: that's easy, to be honest,
+
+Demetrios: like the LM.
+
+Maggie Konstanty: Yeah. Yeah. Sorry. Now, now,
+
+Demetrios: now I understand you were talking about how you don't like the accuracy
+
+Maggie Konstanty: Yeah.
+
+Demetrios: Measurement, but you have the accuracy measurement with LLMs as a judge.
+
+Maggie Konstanty: Yeah. I don't measure very often accuracy. 'cause What accuracy tells you about real applications?
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: Like my agent is accurate, 95% of time. What does it mean? Yeah,
+
+Demetrios: I have no idea.
+
+Maggie Konstanty: Yeah, me neither.
+
+Demetrios: Yeah,
+
+Maggie Konstanty: because I didn't define that and I don't know, you know, my agent with, I dunno, responds to, uh, to my users 95% of time.
+
+Maggie Konstanty: Well, when it asks for, you know, food recommendation and there's just a specific failure mode that. I, I talked about it yesterday in the, in the, in the workshop, like when my user asks for a vegetarian pizza recommendation, and you know, we always give five recommendations and one of them is pepperoni.
+
+Maggie Konstanty: That's the real use case. Right. [00:07:00] So it's, you have to, that's why I think failure modes are really important in that. So you catch to specific failures. And what I think people don't do very often is that. They don't do error analysis 'cause it takes so much time.
+
+Demetrios: Mm.
+
+Maggie Konstanty: And it seems like, you know, so much effort, uh, into something that, you know, have to change anyway.
+
+Maggie Konstanty: Iterate in a week or two. 'cause as I'm also gonna come back to Tiago, Tiago said, yeah, you have to do look for those failure modes all the time.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: So it's, it's cumbersome. It's really time consuming.
+
+Demetrios: And you're talking about trying to simulate. Certain personas, you as the human putting in your time to think of what a different persona would do or say.
+
+Demetrios: Yeah. And then you do it various attempts.
+
+Maggie Konstanty: Yeah. What I do like what we do in a team is, um. You design a product. So as a person that designed a product and build it, you are actually having in mind what kind of scenarios this person would take. You design different orchestration, so you create different [00:08:00] tools and then you create different scenarios like, I dunno, 15, 20 scenarios that you are.
+
+Maggie Konstanty: Potential user would, might want to execute with the tool or with the product that you have. And then what you create, you actually use LLM, then you describe, you prompt LLM and describe the persona that you might want to mimic.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: And then you run over those, you know, scenarios that pre predefined and you see how well, and what's the variance in behavior of your agent.
+
+Maggie Konstanty: So you basically, you call an agent with an endpoint.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: And that's really interesting. 'cause usually like one time, two, three times it's go working very well, but then, you know, it takes, you know, different road afterwards. So it's really, it's tricky and it's never the same. That's also another thing.
+
+Maggie Konstanty: It's always fails in a different place.
+
+Demetrios: Mm.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: Oh, that's,
+
+Maggie Konstanty: yeah,
+
+Demetrios: let's get back to that real fast. But the thing that I. Hear you saying in a way is like before the product goes out there
+
+Maggie Konstanty: mm-hmm.
+
+Demetrios: What you're [00:09:00] describing I had thought were simulations.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: And then after it's out and you're just looking at the data that's like the offline evals.
+
+Demetrios: Yeah. Is that. Or do you see it differently?
+
+Maggie Konstanty: Yeah, I, I get, yeah, I see it different. Not, not differently the same actually, but I would expand on that. So you do the, uh, evaluations based on the scenarios before the product, you know, is released. Uh, you can also create a, you know, specific groups that are gonna test up your product.
+
+Maggie Konstanty: You can, um, ask your team members. But I do believe that is a bit biased. Yeah. 'cause you're surrounded by developers usually. So you create the, your dataset. Yourself by, you know, trying to break your agent and uh, then you test based on that. And then you come to production. And that's what I mean, like, okay, we're sure enough that our product is behaving well in the circumstances that we thought of.
+
+Maggie Konstanty: And then we think about, okay, we put it in production, we trust. [00:10:00] To some extent. And then we gather what our user asking for, and that's another part of evaluation. 'cause user are gonna come up with completely different things and completely different fade modes. Yeah. And then you can still, uh, simulate your agent.
+
+Maggie Konstanty: For example, if you introduce a new feature, you make sure that your feature does not ruin your product or you introduce, um, you know. Change to a system prompt for your agent. That's also something that you should test as your AB test before you push it, at least to some extent. 'cause of course, again, we're dealing with two different animals here, so before and after.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: So you make sure that on your side you did everything to push the product with certainty as high as you can actually imagine. And then, you know, you put it in the wild. You, you, you kind of, you know, allow it to work in the wild and see what's gonna happen there. And that's another part of the story.
+
+Demetrios: How, how much can you get from just trying to tell the LLM to be [00:11:00] as unhinged as possible?
+
+Maggie Konstanty: How much
+
+Demetrios: is the real world always gonna be more unhinged?
+
+Maggie Konstanty: Um, now I thought about it, to be honest, that's not something I've been before. But if you say like, if you actually try to, uh, feature your LLM, the unhinged behaviors of your previous users, you can actually pick up on it quicker, get
+
+Demetrios: pretty far,
+
+Maggie Konstanty: but, um.
+
+Maggie Konstanty: I think it's always something that we're gonna come up with. There's always gonna be some, you know, unexpected behavior of LLM that you wanna catch, but you're, you're right, we can try to be unhinged, like on purpose, even on the team. Like, yeah, let's have a break at the agent exercise.
+
+Demetrios: That's a, yeah, I was thinking like, this could be fun activity for the team.
+
+Demetrios: Anybody that breaks it gets 50 bucks, Amazon gift card or whatever, you know, so that you really are trying to get people thinking outside the box on what they are doing.
+
+Maggie Konstanty: It's tricky in a way that I think a lot of those topics are still too much conceptual, not practical.
+
+Demetrios: Mm.
+
+Maggie Konstanty: [00:12:00] And I think there's not really, uh, a DNA of evils yet.
+
+Maggie Konstanty: A lot of people talk about it all conceptually. We could do that, we should do that. And then eventually, um, it's this forgotten piece of development.
+
+Demetrios: Well, and why is that? Just 'cause it takes so much time and effort.
+
+Maggie Konstanty: I think so. I think it's also not very interesting.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: To some extent. Yeah.
+
+Demetrios: It's kind of boring.
+
+Maggie Konstanty: Yeah, it's boring. Yeah.
+
+Demetrios: It takes a lot of time.
+
+Maggie Konstanty: Yeah. Yeah, and it's, uh, you know, some, I hear sometimes like, oh, Maggie, uh, why do you want to do evils? It's boring. I'm like, why do you think So? It's not because it, of course, the time consuming exercises of, you know, open or coating or whatever you call it, um, yeah, you have to really read into it to, to find a mistake, to fight a failure mode.
+
+Maggie Konstanty: Um, so this part or not, but. I think the fun part about evils is when you try to translate that into a working in production solution that enables you to catch something sooner and then you like have [00:13:00] aha moment. Oh, okay. So I actually helped you with catching it
+
+Demetrios: because you preemptively catch it.
+
+Maggie Konstanty: Yeah, and also like if you think about it, um, the fact that we have so much work with evils to make it work, it's also for me motivation to.
+
+Maggie Konstanty: In some way try to enhance it and automate it. And I know it's also a, you know, slippery slope 'cause you should not trust LLM with helping you out with something that, you know, you judge another LLM. But there are ways that you can actually do it. And I think a lot of people get very much hesitant or like reluctant to go through the error analysis.
+
+Maggie Konstanty: Um, 'cause first I don't think they even know how much they can get through it 'cause they never get through one. So there's like, okay, we never done that. 'cause it's, you know, boring, it takes too much time. But it's like, you know, trying something for the first time and then afterwards like, oh, damn, it worked.
+
+Maggie Konstanty: Yeah. And then the second time is the, uh, consistency. So we did it [00:14:00] once and then I'm, okay, now let's run evils, and then nobody comes back to the topic. So
+
+Demetrios: it's just like, Hey, we did that already.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: Isn't it fixed?
+
+Maggie Konstanty: Yeah. Yeah. The educational matter in this part is also very important. I think a lot of teams don't understand that it's iteration.
+
+Maggie Konstanty: That's a process that you have to come back to and, uh, I struggle with that sometimes. Um. When I do something once and they're like, oh yeah, we put so much time into it and I'm like, okay, we are gonna, we meet again in three weeks and do it again. I was like, what?
+
+Demetrios: When you're getting pushback.
+
+Maggie Konstanty: Yeah,
+
+Demetrios: because oh we did, so we put so much time into it, it made the product better.
+
+Demetrios: Are you just not able to show how much better the product is?
+
+Maggie Konstanty: Yeah. To be honest. Oh, that's another very interesting question. 'cause I think there's a lot of noise as well there. So. You pick up on a lot of errors and then there're being. Correct it or you know, you try to prompt your agent differently and everybody's like, oh, we need evils, but we don't wanna put [00:15:00] that much Simon into evils.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: So they see the outcome of it. But I think a lot of development teams are quite messy and we're working on a lot of things at the same time in, you know, five different directions. So evils is not only trying to keep up with that, but also catching up and also trying to fix some, some stuff. So. I think a lot of people see value in it, but at the end of the day, it's still a mentality that you're gonna go and fix something else.
+
+Maggie Konstanty: Then go and try to develop
+
+Demetrios: structure. Also, I've heard evals. I think the. Simplest way that a software engineer understands evals is by saying, oh, it's like testing for AI and tests.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: You kind of are updating a lot, but not that much. Yeah. And tests also aren't something that are gonna take you. A half a day or two days of work to figure out.
+
+Demetrios: Unless, I mean, maybe some tests, but for the most part, it's not that big of a time investment. [00:16:00]
+
+Maggie Konstanty: No, it's not. And um, that's a big difference. We talk about unit tests versus, you know, NLM testing and Yeah, they usually, the, yeah, it's not really the same answer. We're not looking, I think a lot of people compare them, and here we are asking completely different questions for those tests.
+
+Maggie Konstanty: So. We also, it's a big misconception for some people, like we did unit tests, we don't have to do evals or it works well here, but we don't measure actually the trustworthiness of our LLM. We don't measure the, um, you know, how well it behaved in this circumstances. The semantic matter in this, in this is act not measured for unit tests.
+
+Demetrios: And, and speaking of the evals, and going back to the big question at the beginning, what are good evals? What are things you're measuring in a good eval? To make it. Is it on a system level? Is it all these different? Because I remember we had a talk from a guy from Meta and he had 12 slides with 12 different things [00:17:00] you should be measuring in your evals.
+
+Demetrios: Yeah. And each slide had like five or six sub components of what you could be measuring. So it's like if you really wanna measure everything, it can get very nuanced and very cumbersome.
+
+Maggie Konstanty: Yeah, that's true. And you can get everybody discouraged.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: Yeah. Whatever you, what you measure in your evals is very much custom made for your use case.
+
+Maggie Konstanty: And uh, the first thing I always ask myself when I start approach a project with evals, like, what's actually the goal of this? What's the goal? The product? What do you wanna achieve with the product? Who are your users? And the most interesting question and the, I think the, one of the most important one is what is the definition of good?
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: So
+
+Demetrios: can you gimme an example of what that like actually played out in?
+
+Maggie Konstanty: Yeah. Like, okay. Um, uh, for our food ordering agent,
+
+Demetrios: yeah.
+
+Maggie Konstanty: Um, there was a case, we had a lot of interactions and, you know. It was interesting case, 'cause I think we also imagined how the user would [00:18:00] want to interact. So we, we came up with kind of like surprise me intent and created a bit of an issue for ourselves.
+
+Maggie Konstanty: How do you answer a question, surprise me, and then suddenly people ask surprise me. And it's an interesting case, like how do you actually come up with something that might be useful but makes a bit of more noise for you? Um, so here, who's your user? There are people that are probably, you know, undecided.
+
+Maggie Konstanty: They are maybe in a rush. They are overwhelmed and overstimulated with number of, uh, options on your, on your, you know, homepage. Um, or just definitely they, they just don't know what to eat or have an occasion to organize.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: And that's your use case. And then you think like, how would they behave and what's the definition of good?
+
+Maggie Konstanty: So you have to think if it's better for me to deliver something that is quicker. Of good quality, personalized, and then you have to approach this case one by one.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: And then ask yourself those questions. And then you think like, okay, so what are my [00:19:00] evils? So probably my evils would be the recommendation.
+
+Maggie Konstanty: Right. So what would, is it the personalized recommendation? Um, is it also, you know, how well we execute the task? What is the coherence? How well we remember the context of a conversation. If somebody is vegetarian, we don't. You know, offer, meet. Yeah. And those is a specific use case. So would you apply the same, um, the same evaluators, the same metrics to a use case about, you know, uh, card dealers?
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: You know, that's why I feel like, oh yeah, there's. Basic framework, you can put it like, okay, I wanna compare myself. Which I also don't know how sometimes 'cause they're so different. Um, but usually it's just a very different set of evaluators and approaches. A very set, different set of business metrics that you align it with.
+
+Demetrios: Yeah. You're waiting certain pieces of this Yeah. Interaction.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: Stronger than others.
+
+Maggie Konstanty: Exactly. Plus, you know, for, um, you know. Car dealers option that we, [00:20:00] our team is building on automotive, for example. Probably the satisfaction measurement is gonna be different than for the food ordering. So you also remember that you tied it with a, with a different business metric.
+
+Maggie Konstanty: So in the evaluation of food ordering agent, we try to. Combine it with the conversion. So we also test happy paths. We take all of the conversation, we match it with the conversion, and we actually look which conversation with all, what evaluator outcome ended up in conversion.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: Or um, which ended up with frustration.
+
+Maggie Konstanty: There are also certain cases when, you know, users use the, the product, then they're very frustrated, but eventually end up buying everything, you know? So it's, it's tricky. It
+
+Demetrios: doesn't make sense.
+
+Maggie Konstanty: No, no.
+
+Demetrios: You know what is so funny, and I feel like you could easily catch a lot of frustrated users. If you just had some kind of simple metric for was cap lock [00:21:00] caps lock on.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: And if you have that show up anywhere in any conversation, you should know like, Ooh, we should look into this one a little bit more.
+
+Maggie Konstanty: I agree and disagree. I think a lot of people are just lazy and I con consider myself in this group. Yeah. Because I have capsular code. I'm not gonna rewrite myself.
+
+Demetrios: Ah.
+
+Maggie Konstanty: You know, and we got, I also felt like first of,
+
+Demetrios: so you have false positives. Yeah.
+
+Maggie Konstanty: A lot of false positives. I was thinking about it 'cause I also was reading a lot of interactions in, in caps log, and I'm like, oh, okay, that's weird. And then I figured out one day I was writing something and I forgot I have a caps log on and I sent it to some ai, like, oh, okay, now I get it.
+
+Maggie Konstanty: So, you know, I, that's also something we wanna pick up on the frustration signals.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: So it's something that you, um, you know. Is it, for example, given the example of recommendation, if somebody asks you all the time, more, give me more, gimme more. It means like we failed three times in a row, so. Mm-hmm.
+
+Maggie Konstanty: You [00:22:00] also have to, you know, just kind of step into somebody's brain and think of why and how this person could get annoyed and how can I catch it?
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: So. Yeah, and it, it's not only obvious, so that's why it's really important to try to understand and step into choose. We also have some kind of help from, you know, more, um, like groups from, you know, we have that kind of group of lawyer users in terms of that.
+
+Maggie Konstanty: So they sometimes test out things before. We actually put it in the, through the whole market.
+
+Demetrios: Yeah,
+
+Maggie Konstanty: that's, that's really good. But uh, yeah, it's not obvious and that's why I don't believe that there are a certain set of metrics that can help you.
+
+Demetrios: Silver bullets. Yeah, because I thought another silver bullet is if there's curse words in it, as soon as I start saying you, it.
+
+Maggie Konstanty: Yeah,
+
+Demetrios: I would figure that as a very high frustration margin.
+
+Maggie Konstanty: I don't think there's anybody happy with interaction saying this. So
+
+Demetrios: somebody might just be angry 'cause they had a bad day.
+
+Maggie Konstanty: I wonder like, uh, you know, if LLM is just a receiver of those [00:23:00] frustrations, you know, and then I'm like, oh, if people life are talking to users like that, I'm just, sorry.
+
+Maggie Konstanty: You know, it's not,
+
+Demetrios: I think they do.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: I, I. I'm a little bit more reserved when I talk to a real human.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: But if I know it's a bot on the other end, I'll be, and I, I think of it. I'm like, I'm doing God's work here. I'm helping the evals on. Yeah. I'm trying to make it very easy for you on the other side to know that this was a shitty interaction.
+
+Maggie Konstanty: I wish, I wish that actually would be true for a lot of us, for a lot of users. We had a conversation yesterday 'cause I created an educational form of, uh, traces. And I had a comment that was a very good comment in a way. Where did you get those data from? Hmm. Those users are very informative. Like they told me so much about what they don't like, what they like, and I'm like, oh yeah, I had to make it up for us to make it quicker.
+
+Demetrios: Uh, so it's not clear like that.
+
+Maggie Konstanty: Yeah, and I think a lot of users and I, that's also what evils, why evils matter is they just drop off. There's not a lot of users they're gonna tell you, I don't like [00:24:00] that.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: So these are the, I think the biggest loss that you have, you can have is the user that are, you know, come talking to you and suddenly drop off.
+
+Maggie Konstanty: 'cause they're not satisfied,
+
+Demetrios: but it can be a success too, right? Because they find what they need.
+
+Maggie Konstanty: Yeah. But yeah, it's also, usually it's, we have, when I think about, uh, the analytics part, uh, we had a metric that was called user satisfaction and was trying to mimic more or less what user satisfaction means.
+
+Maggie Konstanty: Coming back to what is the definition of good. Nobody knew what the satisfied user is, so we came up with it. So you have a, I would say 15% of users that are satisfied. Then you have 15% of user that are not satisfied, and then you have. Big chunk of users that are partially satisfied. Yeah. What it means.
+
+Maggie Konstanty: 'cause those are the user that dropped off. They didn't tell you anything, they didn't end up with conversion or they did, but in a very mysterious way. Like [00:25:00] this conversation shouldn't have ended with con, with conversion. Like, this is not the way we should work. So this is very mysterious. So then you try to, you know, figure this out and.
+
+Maggie Konstanty: That's actually fun part about evils and I don't know, I love this part. 'cause then you, you're a detective. Yeah, I'm a detective. I'm like, okay, imagine I'm a user that comes to this platform and I want to, you know, literally step into someone's brain, I think of, oh, okay, that would be better. Or, oh, I guess that was it.
+
+Maggie Konstanty: And then this way you come up with the metric that actually matter for your, for your platform, for your app.
+
+Demetrios: But then how do you reincorporate all this eval data?
+
+Maggie Konstanty: Yeah.
+
+Demetrios: Back into the product to make it better.
+
+Maggie Konstanty: Hmm. It really matters on a team, um, and how well you're structured. 'cause usually we had, you know, we make reports, we have weekly meetings, and in a corporate setup it usually works like this.
+
+Maggie Konstanty: So you have some kind of outcome or users are, you know, dropping off after a minimum order barrier or, uh, you know, we have a [00:26:00] lot of pricing discrepancies are getting lost and, um. Usually it's just like iteration, sprint iteration. And I'm not really a huge fan of that in a way that you have to wait, oh, yeah, we have to focus on that, but we are gonna pick it up in the next sprint.
+
+Maggie Konstanty: I'm like, okay. So for the next three weeks, uh, somebody's gonna, you know, bump into the wall. There are things that are more prioritized, obviously, um, but in a corporate setting, it's not like. We try to work as a startup for sure. But if you have, you know, multiple projects, then yeah. It's hard to put a structure on something without putting a structure on it.
+
+Maggie Konstanty: So every, you know, you know what I mean? Yeah. It just, it's a tricky fine line between those two.
+
+Demetrios: But what do you actually do? You get the data.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: And then you increase, you change the prompt.
+
+Maggie Konstanty: Oh yeah. That's, uh, okay. It really depends. 'cause when you take the data and you look for failure modes, you look for them and then you find, well, you know.
+
+Maggie Konstanty: Some of them might be, uh, we call it a [00:27:00] specification issue. So issue that is caused by us more or less. So it's a comprehension between, you know, how the agent work and how the developer thought it would. Mm-hmm. So some issues are caused by Ari, by by us, but not really prompting the agent correctly
+
+Demetrios: or giving it the wrong context in the wrong time.
+
+Maggie Konstanty: Yeah. Or not very specifying things. So, you know, when we specify an agent be helpful in this situation, what. Does it mean?
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: You know, it also depends on the context in a context of customer service. Hapo is different in a context of, you know, food ordering, or you have to give it the context. So the LLM knows what, what helpful means in your case.
+
+Maggie Konstanty: Sometimes it's just a simple prompt change that can, you know, um, decrease that failure mode for us. And of course, that's also an evaluation play part when you can, you know, detect the regression between different prompts. So you have to have, you know, trustworthy evaluators for that.
+
+Demetrios: Don't you feel like you're playing Whack-a-Mole, though?
+
+Demetrios: You changed the prompt a little bit and Yeah. Oh, cool. It's, [00:28:00] evaluations are better over here, but they're worse over here.
+
+Maggie Konstanty: Oh yeah, that's, uh, but that's also why you want evaluations, right? You want to know what failed, why. And to be honest, it's, I, I think it's a little bit of dance, right? Mm-hmm. You're dancing around trying to change the prompt, and either you do it without, you know, uh, choreography without music, you know, completely blind, uh, or you do it with evils when you try to, you know, track the regressions between the changes that you make.
+
+Maggie Konstanty: And of course, there are also different prioritization, like you've gotta. Correct this issue by switching the prompt, there's gonna create a new one, but which one is more prominent for a use case? Is it better that the agent hallucinates in the minor cases, or is it better that it recommends something different or, you know, it's, it's an art that you have to, you know, uh, have for every, each of the use case that you have as a, as a, you know, developer or product owner.
+
+Demetrios: Have you resigned to just knowing that you're never gonna get a hundred percent. That is not [00:29:00] going to happen. I
+
+Maggie Konstanty: hope. I hope I won't.
+
+Demetrios: You hope you won't.
+
+Maggie Konstanty: Yeah,
+
+Demetrios: because something's broken. If you're hitting a hundred
+
+Maggie Konstanty: percent and there's always something broken, it tells something, tells me that it's a hundred percent correct.
+
+Maggie Konstanty: I'm like, here this's bullshit. So I hope I won't, 'cause I, I'm, I'm not, you know, that's, that's not trustworthy metric for me. It's 95%. I'm also like, okay, that's really high.
+
+Demetrios: Yeah. Something is fishy with this data.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: The key, I guess, when you're looking at it is just. Where you're having the issues. It's not necessarily can we have a hundred percent success or 95% success.
+
+Demetrios: It's really like out of all of the big flows or the uses that we want, we wanna make sure that we're the strongest in these certain ones because they add to conversion or they increase the likelihood of the conversion. Is that kind of how you look at it?
+
+Maggie Konstanty: Yeah, I think so. I mean, you know. Of course everybody's aiming to hundred percent, so the higher we get, the better.
+
+Maggie Konstanty: [00:30:00] Um, it's also like after a while when you're measuring something and it's, you know, reaching almost a hundred percent all the time, it may be. Try to focus on something else.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: And to be honest, it, it's, it's a never ending story in my opinion. Um, that's why the fascinating part of this for me is how to, you know, make it more automated and interesting for, for the team to do.
+
+Maggie Konstanty: And it should be part of the DNA. So it should be a constant dance of like trying to figure out which metric, which evaluator is better for you, what you're trying to aim. That's why, you know, also setting at 20 types of different evaluators that are not connected to your goal and what's he hiding inside of them.
+
+Maggie Konstanty: It's kind of a, you know. Receive the kind of, I would say, instruction to fail.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: Because then you measure 20 different things, not related to what you want to achieve, to any different things within inside of them. A lot of things are failing that you're not aware of. Then you're aiming to hit a hundred percent, [00:31:00] but you know, a lot of them are sometimes overlapping, so you measure different evaluators that are overlapping with themselves and then like, okay, it's confusing, you know, that's why, you know, it's.
+
+Maggie Konstanty: I think a lot of people talk about it within agents, right? You start simple first you had multi-agent, we jumped on that like, oh, multi-agent, so crazy. You're building something so nice and then we suddenly like, oh, shh. It doesn't work.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: So with Evos it's a bit the same. You start slow, you start, you know, to get as far as you can with what you have, and then you build up on top of that.
+
+Maggie Konstanty: And you know, you always make sure that your core is the most reliable that you can have. So your core evaluators that are tied to your business metrics are tied to your behavior. You know, it's gonna be. Always the different set, right? So as mentioned before, it's a constant search.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: So, but they're always gonna be like your, your group of like, you know, your puppies that you're gonna always want to take care of, and you see that they're very much [00:32:00] correlated or related to your business metrics.
+
+Maggie Konstanty: And then on, on, on top of that, you can build something more sophisticated. AB testing suite, you know, just check on the regressions. Um, you know, we also started to experiment a bit with DSPI, so trying to, you know, improve the prompts. A few short examples. So there's a lot of even simulation of, of the agent that we talked about.
+
+Demetrios: I want to know. About eval tooling and all the, the good, the bad and the ugly.
+
+Maggie Konstanty: Yeah. I, I don't use them that much beside observability so far. I think
+
+Demetrios: observability, like Datadog observability.
+
+Maggie Konstanty: Yeah. It's just, you know, basic metrics or just having a tool that is showing your conversation in a nice way. So you are, you are allowing your team to see the conversation turn by turn and.
+
+Maggie Konstanty: Yeah, that's my main purpose. 'cause I think there's a lot of, as you said, there's a lot of them out there. And as I mentioned before, it links very well to what we talked [00:33:00] about. I. Every use case is different. So name a platform that is able to, you know, match your use case. And all those evaluators are so outdated sometimes, like they're breaking basic rules.
+
+Maggie Konstanty: The one that you can also create in, in observe, in the tools in themselves. Like if I'm gonna see again, that is evaluated, that is on a scale from zero to one. Like I'm not gonna trust in any other thing in this app platform.
+
+Demetrios: Wow. '
+
+Maggie Konstanty: cause I, I hate this. Like why would you, we talked about it during the workshop.
+
+Maggie Konstanty: If you have a 0.6, uh, you know, on a scale about the hallucination. Okay, so you wake up on Monday morning, my evaluator is 0.6, and I'm like, what does mean? Give me pass or fail. Yeah. Right. Give me the, the real actionable insight. So coming back to the tools, um, I do have my favorites in a way. I call them friendly tools 'cause they're not really useful yet for me, but they're friendly 'cause they help me with my work.
+
+Maggie Konstanty: So they enable a quick expert of the data. [00:34:00] So, you know, there's, my pipeline is working without, uh, impediments and there are a lot of tools out there that are impeded. There are huge impediments on that. If I export more than a thousand traces it suddenly slow down. I have to do things in batches. Uh, and it takes hours.
+
+Maggie Konstanty: So imagine you wanna run evil and then you wait hours for, for your data set. They also don't enable lik, as far as I'm concerned, and that's another thing. Why would you run evils on every single trace of yours if you have a hundred thousand traces? And imagine you have six evaluators, a hundred thousand traces, uh, then you wanna do it on turn level or multi-term level.
+
+Maggie Konstanty: So conversation, and then, you know, you have to pick your strategy for that. You don't wanna spend thousands of dollars just to run evaluation to tell you that five of them were wrong.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: So that's what I think. Not a lot of them enable multi-term conversations. Um, if they do, I don't think in a very good way, as far as I'm concerned.[00:35:00]
+
+Maggie Konstanty: That's why I look at them, how well they, uh, enable me, the, the expert of data, not only for ui, but I'm talking mostly of about APIs, how they, how well they work. Um, I also look how well, um. The dashboard looks like. 'cause I don't want to introduce another tool to make only dashboards. I don't wanna, you know, have my observability tool with all the traces, do my custom, uh, pipeline.
+
+Maggie Konstanty: And then on top of that, also introduce another tool that I'm gonna put my dashboards in. Hmm. And then I'm like, okay, that's, it's trivial. It's also not really well yet. Like it's not looking good. But for the team matter, if I wanna look at the error rates, I want to look, you know, how, what's the changes, what are the regressions?
+
+Maggie Konstanty: It's also important. So custom friendly tool is something that I would look for and it's not a lot of them out there I work with Arise very often. I do see
+
+Demetrios: Phoenix or Arise the
+
+Maggie Konstanty: Arise the Enterprise version. Okay. Um. There are, there are some issues still with this, so I'm not [00:36:00] like, you know, a hundred percent happy.
+
+Maggie Konstanty: I'm not gonna go for UI solution inside of it to create my evaluators, although I tried and funny enough, it's way harder to create evaluator within the platform than if I would just write a code for it. Oh wow. Because you have to, you know, every data set is different. Every, each of the tool, whatever you choose, and then you have to match them, try to do it a multiterm level.
+
+Maggie Konstanty: I'm not sure if that even enabled. I tried, I was, you know, tweaking it. You know, I spent the whole day and I was annoyed 'cause I lost it. So, yeah. I dunno if that's a hot take. I just don't like them. So I just, you know, try to make sure that they're as friendly as they can be to enable my work to be as quick as it can be.
+
+Maggie Konstanty: And then, you know, um, I'm looking forward to maybe explore something more. If there's gonna be more options,
+
+Demetrios: I'm sure there's gonna be plenty more that come out.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: Is there something that you wish you had besides the custom ability?
+
+Maggie Konstanty: Yeah, I do, but actually built it. So
+
+Demetrios: tell me more.
+
+Maggie Konstanty: [00:37:00] Yeah. Um, I was thinking about like everybody is, you know, enabling you to push out your evaluators, all these experimental, uh, things, AB testing suites, and I'm like, okay, but what is the basic?
+
+Maggie Konstanty: So how do I train my evaluator? How do I, you know, through go through Excel coating without opening Excel. Because that sounds really funny to me, that even in the very famous courses that are promoted on LinkedIn, we do exo coding and open coding and Excel. I'm like, okay. When I seen it, I'm like, okay, this is not normal.
+
+Demetrios: Mm-hmm.
+
+Maggie Konstanty: So where are the tools that are enabling that to go through the whole process of discovering your failure mode, sampling your data, which is not really there yet in the, in the observability tool. Then, you know, um, create a good interface to go through the traces without, you know, losing yourself.
+
+Maggie Konstanty: And then, you know, split the data training validation. Um, so the basics actually about the evaluator and then pushing into production. So I would say a, a, a thing that would [00:38:00] enable me creation. Creation of evaluators that are reliable. And I, I don't see it yet. Yeah, we solved it internally and yeah, that's the
+
+Demetrios: thing.
+
+Demetrios: It's just so easy to build now.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: That, especially for things that are internal for your team's use case, it's like, do you need to go out on the market and then have a company go through procurement and make sure that all the data sharing privacy laws are right. If you can just build it.
+
+Maggie Konstanty: Yeah. Yeah, it's, it's tricky and I think a lot of people just fall for it.
+
+Maggie Konstanty: And I don't want to fall for it.
+
+Demetrios: Yeah.
+
+Maggie Konstanty: And I very much always, you know, discuss that and go in detail what your methodology and training the evaluators, what do you think or your starting points. Um, another thing, outsourcing the labeling. No, no, it shouldn't happen. Like, why would I, you know, why would I leave the labeling part first?
+
+Maggie Konstanty: That's the greatest opportunity for you to learn what's [00:39:00] happening. Second of all. Why would you trust anybody else if it's your product and you know, how you wanna, you know, assess it. So, basic thing, why would I do it? So a lot of all those companies are still trying to, you know, sell you something that you're gonna, you know, outsource the labeling.
+
+Maggie Konstanty: This is the quickest way you're gonna create evaluator about your hallucination. I'm like, good, thanks. Um,
+
+Demetrios: yeah.
+
+Maggie Konstanty: Yeah.
+
+Demetrios: And you're very opinionated about how you want your evals to be. Yeah. And you know, from experience, what has. It's been working and not working, so it makes sense that you would want more of a custom solution.
+
+Maggie Konstanty: To be honest, mature product teams are, in my opinion, are gonna usually go for custom solution 'cause. Evils themselves are not very hard. Like if you think about the process, the, to grasp the complexity is maybe something hard, but simple tasks, there are simple tasks that you have to do, but you have to structure them in a good way.
+
+Maggie Konstanty: You have to be consistent, [00:40:00] you have to iterate, um, and then you have to have your own strategy. And I think the alignment between team members and alignment, uh, on what, what matters for your product is the part that is the trickiest part. And the execution part is like, yeah, we finally wanna see numbers part, um, is the last step in it.
+
+Maggie Konstanty: So, and to be honest, I think a lot of solutions are trying to sell you something that is. You know, trying to replace the first crucial part of the evaluation, so the alignment on it, and I don't think it's replaceable. I don't think it's something that we can, you know, ultimate very quickly and yeah, that's why it's failing.
++ Read More
+Watch More
+57:24
+Software Engineering in the Age of Coding Agents: Testing, Evals, and Shipping Safely at Scale
+Posted Feb 10, 2026 | Views 565
+# AI Agents
+# AI Engineer
+# AI agents in production
+# AI Agents use case
+# System Design
+1:01:43
+How to Systematically Test and Evaluate Your LLMs Apps
+Posted Oct 18, 2024 | Views 15.2K
+# LLMs
+# Engineering best practices
+# Comet ML
+1:08:35
+Small Data, Big Impact: The Story Behind DuckDB
+Posted Jan 09, 2024 | Views 13.4K
+# Data Management
+# MotherDuck
+# DuckDB
+Code of Conduct
+receiving their newsletter
+Privacy Policy

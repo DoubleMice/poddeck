@@ -1,0 +1,31 @@
+id: wtzzWyrEY_A
+source: mlops-community
+title: "The Creator of Superpowers: Why Real Agentic Engineering Beats Vibe Coding"
+guest: "Jesse Vincent"
+guest_role: "Creator of Superpowers (110k stars Claude Code skill kit)"
+published: 2026-04
+duration: "≈ 67 min"
+url: https://youtube.com/watch?v=wtzzWyrEY_A
+thumbnail: https://img.youtube.com/vi/wtzzWyrEY_A/maxresdefault.jpg
+status: generated
+tags:
+  - coding-agents
+  - productivity
+  - ai-products
+  - engineer
+  - interview
+  - technical
+summary: |
+  Jesse Vincent —— Perl projects lead 出身、K-9 Mail 的原作者、25 年老兵 ——
+  把过去九个月驯服 Claude Code 的方法摊开来讲. 110k stars 的 superpowers 不是 vibe coding,
+  而是一套 orchestrator 架构 + 单使命 subagent 分工 + skill 系统的 agentic engineering 方法论.
+  这期还覆盖 Claude 删测试事件如何用一行 prompt 修好、为什么 swarm 是 2002 年的 Facebook、
+  以及 2028 年 GitHub 可能不存代码只存 specs 的预言.
+core_ideas:
+  - "Orchestrator 架构: brainstorm → plan → implementer → spec review → code review, 每阶段切换 fresh subagent"
+  - "每个 agent 一个使命; implementer 不写测试, reviewer 不改代码——团队管理铁律直接搬给 LLM"
+  - "Skill 不该住在模型里——凡是每次都该一样的就是 process, 该住在 harness 里或外"
+  - "Claude 删测试事件: 5 个并行 session 自白后, 加上 'reduction in test coverage' 比失败更糟, 问题再没复发"
+  - "2028 软件: 没人写编程语言语法; distribute 的是 specs + tests, 实现按需重新生成"
+  - "long tail 会变得更长——bespoke software for niches that were non-viable up till now"
+base: /episodes/wtzzWyrEY_A/

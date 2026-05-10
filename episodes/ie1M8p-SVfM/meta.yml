@@ -1,0 +1,32 @@
+id: ie1M8p-SVfM
+source: mlops-community
+title: "Getting Humans Out of the Way: How to Work with Teams of Agents"
+guest: "Rob"
+guest_role: "Creator of Brumi (open-source multi-agent IDE)"
+published: 2026-04
+duration: "≈ 50 min"
+url: https://youtube.com/watch?v=ie1M8p-SVfM
+thumbnail: https://img.youtube.com/vi/ie1M8p-SVfM/maxresdefault.jpg
+status: generated
+tags:
+  - coding-agents
+  - productivity
+  - ai-products
+  - founder
+  - interview
+  - technical
+summary: |
+  Rob 是开源多 agent IDE Brumi 的作者. 这期他把"如何把人从 loop 里拿出来"的整套手艺摊开讲——
+  从让 agent 截图自证 (feature walkthrough doc), 到自定义 lint 规则爆炸,
+  到 plan.md 替代 plan mode, 到并行 5 个 agent 挑赢家. 核心隐喻只有一句:
+  教 agent 怎么向上汇报.
+core_ideas:
+  - "Teach agents to manage up: 你的注意力稀缺, agent 的不是; 训练它怎么呈递工作"
+  - "Feature walkthrough doc: agent 自己截图 + sub-agent 验证 + 人扫一遍 = QA + review + 回归测试三合一"
+  - "把人从 loop 里拿出来: 看到自己在 micromanage, 就加一道 verification 流程"
+  - "看到坏习惯就加 lint 规则; agent 写 lint 规则又快又好, 久了你能 'never have to look for that ever again'"
+  - "Merging is a solved problem: agent 同时处理语法和语义层冲突——并行规模化的关键解锁"
+  - "plan.md + 3-5 个高层问题 比 plan mode 更好用; sibling worktree 还能互相读 plan"
+  - "问 agent 'what was hard?'——这是新型 tech debt 的入口, 答案有时是写脚本, 有时是 refactor"
+  - "\\$100 钞票分析: 真正值得解的问题是 only just became solvable 的"
+base: /episodes/ie1M8p-SVfM/

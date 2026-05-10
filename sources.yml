@@ -77,3 +77,23 @@ sources:
     cache_limit: 50
     color: "#334155"
     description: Naval Ravikant 与 Nivi 的短播客，创业、AI、技术乐观主义与判断力
+
+  - id: latent-space
+    name: Latent Space
+    channel: https://www.youtube.com/channel/UCxBcwypKK-W3GHd_RZ9FZrQ
+    filter_keywords: [AI, agents, coding, engineering, evals, infrastructure]
+    min_duration: 1800
+    min_date: "20260101"
+    cache_limit: 120
+    color: "#7c3aed"
+    description: AI Engineer 生态播客，覆盖 agents、AI coding、模型基础设施与开发者工具
+
+  - id: mlops-community
+    name: MLOps.community
+    channel: https://www.youtube.com/channel/UCG6qpjVnBTTT8wLGBygANOQ
+    filter_keywords: [agents, coding, evals, production, infrastructure, MLOps]
+    min_duration: 1800
+    min_date: "20260101"
+    cache_limit: 120
+    color: "#0f766e"
+    description: 生产级 AI / MLOps 访谈，偏 agents、evals、部署、延迟和工程实践
