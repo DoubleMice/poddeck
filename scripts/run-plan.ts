@@ -107,8 +107,6 @@ function scaffoldEpisode(id: string): void {
   writeFileSync(join(dir, 'package.json'), JSON.stringify(pkg, null, 2) + '\n')
   // Copy global-bottom.vue
   cpSync(join(TEMPLATES_DIR, 'global-bottom.vue'), join(dir, 'global-bottom.vue'))
-  // Copy public/ (excalidraw templates)
-  cpSync(join(TEMPLATES_DIR, 'public'), join(dir, 'public'), { recursive: true })
 }
 
 async function ensureTranscript(id: string): Promise<void> {
