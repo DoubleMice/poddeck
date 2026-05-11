@@ -14,7 +14,7 @@ on:
 
 env:
   PODDECK_BASE: /poddeck/
-  PODDECK_SITE: https://kvenux.github.io
+  PODDECK_SITE: https://doublemice.github.io
 
 # 同一时间只允许一个 deploy
 concurrency:

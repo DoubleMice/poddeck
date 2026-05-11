@@ -194,6 +194,7 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult
       '--add-dir', EPISODES_DIR,
       '--add-dir', TRANSCRIPTS_DIR,
       '--allowedTools', 'Read,Write,Edit,Bash,Grep,Glob',
+      '--effort', 'max',
       '--permission-mode', 'bypassPermissions',
       taskPrompt,
     ], {
