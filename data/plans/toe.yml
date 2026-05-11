@@ -1,11 +1,18 @@
 source: toe
-refreshed_at: 2026-05-11T13:45:03.497Z
+refreshed_at: 2026-05-11T14:16:27.999Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 26
 done: 0
-pending: 18
+pending: 19
 episodes:
+  - id: kvFIMT6P6Ao
+    title: The Unreasonable Effectiveness of the Klein Bottle | Janna Levin
+    duration: 7310
+    upload_date: ""
+    url: https://youtube.com/watch?v=kvFIMT6P6Ao
+    status: pending
+    priority: 1
   - id: leOi1HS8veg
     title: The Genius Who Invented Reverse Mathematics| MEMBER RELEASE
     duration: 5475
@@ -35,7 +42,7 @@ episodes:
     status: pending
     priority: 1
   - id: ZLVxfmfds38
-    title: “Buddhism Can’t Explain This” | Slavoj Zizek
+    title: True Freedom Is Choosing What You Are | Slavoj Zizek
     duration: 5420
     upload_date: ""
     url: https://youtube.com/watch?v=ZLVxfmfds38
@@ -180,11 +187,4 @@ episodes:
     upload_date: ""
     url: https://youtube.com/watch?v=lagnLC4VMzg
     status: pending
-    priority: 1
-  - id: PMrCvhHctOg
-    title: Philosophy’s Most Formidable Living Mind
-    duration: 6830
-    upload_date: ""
-    url: https://youtube.com/watch?v=PMrCvhHctOg
-    status: failed
     priority: 1
