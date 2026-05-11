@@ -27,6 +27,7 @@ import { log } from './lib/log.ts'
 import type { SourcesFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
+const isWin = process.platform === 'win32'
 const SOURCES_PATH = resolve(ROOT, 'sources.yml')
 const PLANS_DIR = resolve(ROOT, 'data/plans')
 const TRANSCRIPTS_DIR = resolve(ROOT, 'data/transcripts')
@@ -134,11 +135,11 @@ async function ensureTranscript(id: string): Promise<void> {
 }
 
 function resolveClaudeBin(): string {
-  const candidates = [
-    'C:\\nvm4w\\nodejs\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe',
-  ]
-  for (const p of candidates) if (existsSync(p)) return p
-  throw new Error('cannot locate @anthropic-ai/claude-code/bin/claude.exe')
+  if (isWin) {
+    const p = 'C:\\nvm4w\\nodejs\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe'
+    if (existsSync(p)) return p
+  }
+  return 'claude'
 }
 
 function renderTask(entry: PlanEntry, sourceId: string): string {
