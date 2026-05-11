@@ -1,6 +1,5 @@
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { resolve } from 'node:path'
-import { glob } from 'node:fs/promises'
 import { run } from './spawn.ts'
 import { log } from './log.ts'
 
@@ -60,8 +59,9 @@ export async function downloadAutoSubs(videoId: string, outDir: string): Promise
   await run('yt-dlp', args, { reject: true })
 
   // find the resulting vtt file
-  const candidates = []
-  for await (const f of glob(`${outDir}/${videoId}*.vtt`)) candidates.push(f)
+  const candidates = readdirSync(outDir)
+    .filter(f => f.startsWith(videoId) && f.endsWith('.vtt'))
+    .map(f => resolve(outDir, f))
   if (candidates.length === 0) {
     throw new Error(`No VTT file produced for ${videoId}`)
   }
