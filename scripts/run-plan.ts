@@ -18,7 +18,7 @@ import { resolve, join } from 'node:path'
 import {
   readFileSync, writeFileSync, existsSync, mkdirSync, cpSync, readdirSync, unlinkSync,
 } from 'node:fs'
-import { glob } from 'node:fs/promises'
+import { readdirSync } from 'node:fs'
 import { spawn } from 'node:child_process'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { run as shellRun } from './lib/spawn.ts'
@@ -124,9 +124,13 @@ async function ensureTranscript(id: string): Promise<void> {
   writeFileSync(txtPath, txt, 'utf-8')
   log.ok(`    cleaned → ${txtPath} (${txt.length} chars)`)
   // Cleanup all vtt for this id
-  for await (const f of glob(`${TEMP_VTT_DIR}/${id}*.vtt`)) {
-    try { unlinkSync(f) } catch {}
-  }
+  try {
+    for (const f of readdirSync(TEMP_VTT_DIR)) {
+      if (f.startsWith(id) && f.endsWith('.vtt')) {
+        try { unlinkSync(join(TEMP_VTT_DIR, f)) } catch {}
+      }
+    }
+  } catch {}
 }
 
 function resolveClaudeBin(): string {

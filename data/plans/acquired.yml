@@ -4,7 +4,7 @@ min_duration: 3600
 min_date: "20260101"
 total_candidates: 86
 done: 0
-pending: 69
+pending: 68
 episodes:
   - id: JVO8roYiNXM
     title: "Ferrari: What happens when you staple a luxury brand to a sports team? (Audio)"
@@ -130,7 +130,7 @@ episodes:
     duration: 3802
     upload_date: ""
     url: https://youtube.com/watch?v=vx2uIgL1QVw
-    status: pending
+    status: failed
     priority: 1
   - id: Y8guMe665RE
     title: "ACQ2: How ARM Became The World’s Default Chip Architecture (with ARM CEO Rene Haas)"
