@@ -115,7 +115,9 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
   for (const v of cache) {
     if (typeof v.duration !== 'number') continue
     if (v.duration < minDuration) continue
-    if (!v.upload_date || v.upload_date < minDate) continue
+    if (!v.upload_date || v.upload_date === 'NA') {
+      // flat-playlist may not provide upload_date; include anyway
+    } else if (v.upload_date < minDate) continue
     // Skip if already generated
     if (existingGenerated.has(v.id)) continue
     // Keyword filter

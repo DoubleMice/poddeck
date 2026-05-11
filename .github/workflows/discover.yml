@@ -1,30 +1,17 @@
-name: Discover & Generate
+name: Discover
 
-# 每天 UTC 3:00 自动扫描新集 + 生成 slides
-# 也支持手动触发
+# 每天 UTC 3:00 自动扫描频道 → 生成 plan 文件
+# plan:run（字幕下载 + slides 生成）在本地执行
 on:
   schedule:
     - cron: '0 3 * * *'
   workflow_dispatch:
-    inputs:
-      limit:
-        description: '最多生成集数'
-        required: false
-        default: '3'
-
-env:
-  ANTHROPIC_BASE_URL: https://api.deepseek.com/anthropic
-  ANTHROPIC_DEFAULT_OPUS_MODEL: deepseek-v4-pro
-  ANTHROPIC_DEFAULT_SONNET_MODEL: deepseek-v4-pro
-  ANTHROPIC_DEFAULT_HAIKU_MODEL: deepseek-v4-flash
-  ANTHROPIC_MODEL: deepseek-v4-pro[1m]
-  ENABLE_TOOL_SEARCH: "true"
 
 permissions:
   contents: write
 
 jobs:
-  discover-and-generate:
+  discover:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -44,10 +31,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Install yt-dlp
-        run: pip install yt-dlp
-
-      - name: Install Claude Code CLI
-        run: npm install -g @anthropic-ai/claude-code
+        run: pip install --upgrade yt-dlp
 
       - name: Refresh cache (scan channels)
         run: pnpm run cache:refresh
@@ -55,15 +39,14 @@ jobs:
       - name: Generate plans
         run: pnpm run plan
 
-      - name: Generate slides
-        run: pnpm run plan:run -- --limit=${{ inputs.limit || '5' }}
-        env:
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
-
-      - name: Commit & push generated content
+      - name: Commit plan files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/plans/ data/scan-cache/ data/transcripts/ episodes/
-          git diff --staged --quiet || git commit -m "auto: discover & generate slides"
-          git push
+          git add data/plans/
+          if git diff --staged --quiet; then
+            echo "No new plans"
+          else
+            git commit -m "auto: refresh discover plans"
+            git push
+          fi

@@ -1,18 +1,20 @@
-// Refresh data/scan-cache/<source>.jsonl by calling yt-dlp --dump-json
-// on each source channel in sources.yml.
+// Refresh data/scan-cache/<source>.jsonl using yt-dlp --flat-playlist.
+//
+// Flat-playlist is a single lightweight request per channel — it avoids the
+// per-video --dump-json requests that trigger YouTube rate limiting on
+// datacenter IPs.  Duration is approximate but sufficient for plan.ts filtering.
+//
+// Output format (simplified JSONL, not raw yt-dlp dump-json):
+//   {"id":"...","title":"...","duration":14360,"upload_date":"20260101"}
 //
 // Usage:
 //   pnpm run cache:refresh                        # all sources, default limit
-//   pnpm run cache:refresh -- --id=lex-fridman    # single source
-//   pnpm run cache:refresh -- --limit=500         # more items per scan
-//
-// This is expensive (several minutes per source) because --dump-json fetches
-// full video metadata (duration, upload_date, description, etc).
+//   pnpm run cache:refresh -- --id=acquired       # single source
 
 import { resolve, join } from 'node:path'
-import { mkdirSync, writeFileSync, existsSync } from 'node:fs'
-import { spawn } from 'node:child_process'
+import { mkdirSync, writeFileSync } from 'node:fs'
 import { readYaml } from './lib/yaml-io.ts'
+import { run } from './lib/spawn.ts'
 import { log } from './lib/log.ts'
 import type { SourcesFile } from './lib/types.ts'
 
@@ -34,39 +36,49 @@ function resolveCmd(cmd: string): string {
   return `${cmd}.exe`
 }
 
-function fetchOne(source: { id: string; channel: string }, limit: number): Promise<void> {
-  return new Promise((resolveFn, rej) => {
-    const outPath = join(CACHE_DIR, `${source.id}.jsonl`)
-    log.info(`${source.id} → ${outPath} (limit ${limit})`)
-    const fs = require('node:fs')
-    const outFd = fs.openSync(outPath, 'w')
-    const child = spawn(resolveCmd('yt-dlp'), [
-      '--dump-json',
-      '--dateafter', dateAfter,
-      '--playlist-end', String(limit),
-      source.channel,
-    ], {
-      stdio: ['ignore', outFd, 'ignore'],
-      shell: false,
-      windowsHide: true,
-      env: { ...process.env, PYTHONIOENCODING: 'utf-8', PYTHONUTF8: '1' },
-    })
-    child.on('close', code => {
-      fs.closeSync(outFd)
-      if (code !== 0) {
-        log.warn(`  ${source.id}: yt-dlp exited ${code}`)
-      }
-      // Always count lines to confirm
-      const lines = fs.readFileSync(outPath, 'utf-8').split('\n').filter((l: string) => l.trim()).length
-      log.ok(`  ${source.id}: ${lines} entries written`)
-      resolveFn()
-    })
-    child.on('error', err => rej(err))
-  })
+async function fetchOne(source: { id: string; channel: string }, limit: number): Promise<void> {
+  const outPath = join(CACHE_DIR, `${source.id}.jsonl`)
+  log.info(`${source.id} → ${outPath} (limit ${limit})`)
+
+  const args = [
+    '--flat-playlist',
+    '--print', '%(id)s\t%(title)s\t%(duration)s\t%(upload_date)s',
+    '--playlist-end', String(limit),
+    '--no-check-certificates',
+  ]
+  const cp = process.env.YTDLP_COOKIES
+  if (cp) {
+    args.push('--cookies', cp)
+  }
+  args.push(source.channel)
+
+  const { stdout, stderr } = await run(resolveCmd('yt-dlp'), args, { reject: false })
+  if (stderr && !stdout.trim()) {
+    log.warn(`  ${source.id}: ${stderr.trim().split('\n').slice(-2).join(' | ')}`)
+    return
+  }
+
+  const lines = stdout.split('\n').filter(l => l.trim()).slice(0, limit)
+  const entries: string[] = []
+  for (const line of lines) {
+    const [id, title, durStr, uploadDate] = line.split('\t')
+    if (!id || id === 'NA') continue
+    const duration = parseFloat(durStr)
+    if (isNaN(duration) || duration <= 0) continue
+    entries.push(JSON.stringify({
+      id,
+      title: (title || '').trim(),
+      duration,
+      upload_date: (uploadDate && uploadDate !== 'NA') ? uploadDate : '',
+    }))
+  }
+
+  writeFileSync(outPath, entries.join('\n') + (entries.length ? '\n' : ''), 'utf-8')
+  log.ok(`  ${source.id}: ${entries.length} entries`)
 }
 
 async function main() {
-  log.step(`Refresh scan-cache — dateafter ${dateAfter}, limit ${defaultLimit}`)
+  log.step(`Refresh scan-cache — flat-playlist mode`)
 
   mkdirSync(CACHE_DIR, { recursive: true })
 
@@ -80,15 +92,18 @@ async function main() {
     return
   }
 
-  log.info(`will refresh ${targets.length} source(s) in parallel`)
+  log.info(`refreshing ${targets.length} source(s) sequentially`)
 
-  // Run all in parallel — each writes to its own file, no race
-  await Promise.all(targets.map(s => {
+  for (let i = 0; i < targets.length; i++) {
+    const s = targets[i]
     const limit = (s as any).cache_limit ?? defaultLimit
-    return fetchOne(s, limit).catch(err => {
+    await fetchOne(s, limit).catch(err => {
       log.err(`${s.id} failed: ${err.message}`)
     })
-  }))
+    if (i < targets.length - 1) {
+      await new Promise(r => setTimeout(r, 5_000))
+    }
+  }
 
   log.ok('\nCache refresh complete')
 }

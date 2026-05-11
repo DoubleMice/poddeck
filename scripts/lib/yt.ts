@@ -46,15 +46,18 @@ export async function downloadAutoSubs(videoId: string, outDir: string): Promise
   const url = `https://youtube.com/watch?v=${videoId}`
   log.raw(`yt-dlp --write-auto-sub --skip-download ${videoId}`)
 
-  await run('yt-dlp', [
+  const args = [
     '--write-auto-sub',
     '--write-sub',
     '--sub-lang', 'en-orig,en-en,en,zh-Hans-zh-Hans,zh-Hans,zh-CN,zh',
     '--skip-download',
     '--sub-format', 'vtt',
     '-o', `${outDir}/${videoId}.%(ext)s`,
-    url,
-  ], { reject: true })
+  ]
+  const cp = process.env.YTDLP_COOKIES
+  if (cp) args.push('--cookies', cp)
+  args.push(url)
+  await run('yt-dlp', args, { reject: true })
 
   // find the resulting vtt file
   const candidates = []

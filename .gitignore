@@ -56,3 +56,5 @@ data/queue.yml
 # Scan cache is too large for git (60 MB+ per file from yt-dlp --dump-json)
 # Refresh with `pnpm run cache:refresh` on demand
 data/scan-cache/
+cookies.txt
+cookies-yt.txt
