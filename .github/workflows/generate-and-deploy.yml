@@ -1,0 +1,131 @@
+name: Generate and Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Source id to generate; empty means all sources'
+        required: false
+        default: ''
+      limit:
+        description: 'Maximum episodes to generate'
+        required: true
+        default: '1'
+      category:
+        description: 'Optional category filter'
+        required: false
+        default: ''
+
+env:
+  PODDECK_BASE: /poddeck/
+  PODDECK_SITE: https://doublemice.github.io
+  ANTHROPIC_BASE_URL: https://api.deepseek.com/anthropic
+  ANTHROPIC_DEFAULT_HAIKU_MODEL: deepseek-v4-flash
+  ANTHROPIC_DEFAULT_OPUS_MODEL: deepseek-v4-pro
+  ANTHROPIC_DEFAULT_SONNET_MODEL: deepseek-v4-pro
+  ANTHROPIC_MODEL: deepseek-v4-pro
+  ENABLE_TOOL_SEARCH: 'true'
+
+concurrency:
+  group: generate-and-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Install playwright-chromium browser binaries
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Verify Anthropic auth token
+        env:
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+        run: |
+          if [ -z "${ANTHROPIC_AUTH_TOKEN}" ]; then
+            echo "ANTHROPIC_AUTH_TOKEN secret is required"
+            exit 1
+          fi
+
+      - name: Refresh RSS cache
+        run: pnpm run cache:refresh
+
+      - name: Generate plans
+        run: pnpm run plan
+
+      - name: Generate episodes
+        env:
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+        run: |
+          set -euo pipefail
+          args=(--limit=${{ inputs.limit }})
+          if [ -n "${{ inputs.source }}" ]; then
+            args+=(--id=${{ inputs.source }})
+          fi
+          if [ -n "${{ inputs.category }}" ]; then
+            args+=(--category=${{ inputs.category }})
+          fi
+          pnpm run plan:run -- "${args[@]}"
+
+      - name: Commit generated content
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/plans data/transcripts episodes README.md sources.yml package.json pnpm-lock.yaml .github/workflows
+          if git diff --staged --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "auto: generate rss episode"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Build all
+        run: pnpm run build
+
+      - name: Inject 404.html into root dist
+        run: |
+          if [ -f landing/public/404.html ]; then
+            cp landing/public/404.html dist/404.html
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -11,7 +11,7 @@ PodDeck 把播客 RSS 里的长访谈和 transcript 自动转成结构化 Slidev
 - transcript 来源：RSS `podcast:transcript`，优先 `text/plain`，再 fallback 到 VTT/SRT/HTML
 - 只有音频的 RSS episode 会进入 `needs_transcript` 队列，等待本地或手动转写补全
 - 封面来源：RSS item `itunes:image`，缺失时 fallback 到 channel image
-- 生成入口：本地 `claude -p` subprocess
+- 生成入口：`claude -p` subprocess；本地使用 Claude Code 登录态，GitHub Actions 使用 `ANTHROPIC_AUTH_TOKEN`
 - 部署入口：GitHub Actions → GitHub Pages
 
 ## 关注源
@@ -101,6 +101,37 @@ git push
 
 push 到 `main` 会触发 GitHub Pages 部署到 `http://doublemice.github.io/poddeck/`。
 
+## GitHub Actions 生成
+
+仓库提供三个 workflow：
+
+- `Discover`：定时刷新 RSS cache 和 plan，提交 `needs_transcript` / `pending` 队列。
+- `Deploy to GitHub Pages`：push `main` 或手动触发后，只构建并部署已有内容。
+- `Generate and Deploy`：手动触发，执行 `cache:refresh → plan → plan:run → build → commit → deploy`。
+
+`Generate and Deploy` 需要在 GitHub repository secrets 中配置：
+
+```text
+ANTHROPIC_AUTH_TOKEN=<你的 DeepSeek API key 或兼容 Anthropic token>
+```
+
+workflow 使用 DeepSeek Anthropic 兼容环境变量：
+
+```text
+ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
+ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
+ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro
+ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro
+ANTHROPIC_MODEL=deepseek-v4-pro
+ENABLE_TOOL_SEARCH=true
+```
+
+手动触发参数：
+
+- `source`：可选 source id，例如 `tbpn`；留空表示所有 source。
+- `limit`：生成数量上限，默认 `1`。
+- `category`：可选分类过滤。
+
 ## 添加新 RSS 源
 
 编辑 `sources.yml`：
@@ -183,7 +214,7 @@ poddeck/
 
 ## 部署
 
-`.github/workflows/deploy.yml` 设置：
+`.github/workflows/deploy.yml` 和 `.github/workflows/generate-and-deploy.yml` 设置：
 
 - `PODDECK_BASE=/poddeck/`
 - `PODDECK_SITE=https://doublemice.github.io`
@@ -200,7 +231,7 @@ poddeck/
 
 ## 已知限制
 
-- 生成必须在本地执行：`claude -p` 依赖本机登录态。
+- CI 生成需要 `ANTHROPIC_AUTH_TOKEN` secret；缺少该 secret 时只使用本地生成流程。
 - RSS 缺 `podcast:transcript` 的 episode 会进入 `needs_transcript`，不会自动生成 slides。
 - `sources.yml` 中 `rss_url` 为空的 source 会写空 cache/plan。
 - GitHub Pages 深度链接依赖 `landing/public/404.html` 做 fallback。
