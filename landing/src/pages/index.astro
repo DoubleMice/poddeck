@@ -1,16 +1,18 @@
 ---
 import Base from '../layouts/Base.astro'
 import EpisodeCard from '../components/EpisodeCard.astro'
+import FormatTabs from '../components/FormatTabs.astro'
 import SearchBox from '../components/SearchBox.astro'
-import { loadEpisodes, loadSources, collectTags, CATEGORIES } from '../lib/data'
+import { loadEpisodes, loadSourcesWithFallbacks, collectTags, CATEGORIES } from '../lib/data'
 import { url } from '../lib/url'
 
 const episodes = loadEpisodes()
-const sources = loadSources()
+const sources = loadSourcesWithFallbacks(episodes)
 const tags = collectTags(episodes)
 
 const generated = episodes.filter(e => e.status === 'generated')
-const pending = episodes.filter(e => e.status !== 'generated')
+const pending = episodes.filter(e => e.status !== 'generated' && e.status !== 'failed')
+const failed = episodes.filter(e => e.status === 'failed')
 
 // Group generated episodes by category (in priority order)
 const generatedByCategory = CATEGORIES.map(cat => ({
@@ -29,7 +31,7 @@ const uncategorizedGenerated = generated.filter(e => !e.category)
       把你看的播客<br />变成可翻的 slides
     </h1>
     <p class="text-stone-600 text-lg leading-relaxed">
-      PodDeck 把 YouTube 上的深度访谈下载字幕、分析内容、自动生成成结构化的 Slidev 演示文稿。
+      PodDeck 从播客 RSS 获取访谈与 transcript，分析内容，自动生成结构化的 Slidev 演示文稿。
       每次你点开一个节目，看到的是 15 分钟读完、有手绘图和核心论点的幻灯片。
     </p>
   </section>
@@ -53,39 +55,54 @@ const uncategorizedGenerated = generated.filter(e => !e.category)
     </div>
   </section>
 
-  <!-- Generated episodes by category -->
-  {generatedByCategory.map(group => (
-    <section class="mb-12">
-      <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">
-        {group.label}
-        <span class="ml-2 text-stone-400 font-normal normal-case">{group.episodes.length} 集</span>
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {group.episodes.map(ep => <EpisodeCard episode={ep} />)}
-      </div>
-    </section>
-  ))}
+  <!-- Format tabs + generated episodes by category -->
+  <div id="episode-grid">
+    <FormatTabs />
 
-  {uncategorizedGenerated.length > 0 && (
-    <section class="mb-12">
-      <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">
-        其他
-        <span class="ml-2 text-stone-400 font-normal normal-case">{uncategorizedGenerated.length} 集</span>
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {uncategorizedGenerated.map(ep => <EpisodeCard episode={ep} />)}
-      </div>
-    </section>
-  )}
+    {generatedByCategory.map(group => (
+      <section class="mb-12" data-format-section>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">
+          {group.label}
+          <span class="ml-2 text-stone-400 font-normal normal-case">{group.episodes.length} 集</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {group.episodes.map(ep => <EpisodeCard episode={ep} />)}
+        </div>
+      </section>
+    ))}
+
+    {uncategorizedGenerated.length > 0 && (
+      <section class="mb-12" data-format-section>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">
+          其他
+          <span class="ml-2 text-stone-400 font-normal normal-case">{uncategorizedGenerated.length} 集</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {uncategorizedGenerated.map(ep => <EpisodeCard episode={ep} />)}
+        </div>
+      </section>
+    )}
+  </div>
 
   <!-- Pending episodes -->
   {pending.length > 0 && (
     <section class="mb-12">
       <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">
-        待处理 · 字幕已下载
+        待处理 · RSS transcript / 等待转写
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {pending.map(ep => <EpisodeCard episode={ep} />)}
+      </div>
+    </section>
+  )}
+
+  {failed.length > 0 && (
+    <section class="mb-12">
+      <h2 class="text-sm font-semibold uppercase tracking-wider text-red-500 mb-4">
+        需要排障
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {failed.map(ep => <EpisodeCard episode={ep} />)}
       </div>
     </section>
   )}

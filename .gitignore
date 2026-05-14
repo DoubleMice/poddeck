@@ -49,12 +49,14 @@ desktop.ini
 .env.local
 .env.*.local
 
-# Temporary VTT files (we keep .txt transcripts but not raw VTT)
+# Local temporary and queue files
 data/temp-vtt/
 data/queue.yml
-
-# Scan cache is too large for git (60 MB+ per file from yt-dlp --dump-json)
-# Refresh with `pnpm run cache:refresh` on demand
-data/scan-cache/
 cookies.txt
 cookies-yt.txt
+
+# RSS scan cache is reproducible and can be refreshed on demand
+# Refresh with `pnpm run cache:refresh` on demand
+data/scan-cache/
+episodes/*/audit.pdf
+episodes/*/package-lock.json

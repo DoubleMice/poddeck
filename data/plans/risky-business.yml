@@ -1,15 +1,649 @@
 source: risky-business
-refreshed_at: 2026-05-11T14:16:27.932Z
+refreshed_at: 2026-05-14T03:24:06.311Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 25
 done: 0
-pending: 1
+pending: 0
+needs_transcript: 25
+downloaded: 0
 episodes:
-  - id: fQFYZn6cDWg
-    title: How to install free mcboot on your slim ps2(especi
-    duration: 956
-    upload_date: ""
-    url: https://youtube.com/watch?v=fQFYZn6cDWg
-    status: pending
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #837 -- GitHub Actions footgun claims TanStack"
+    duration: 3915
+    published: Wed, 13 May 2026 15:08:48 +1000
+    published_sort: "20260513"
+    url: https://risky.biz/RB837/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB837.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news.
+
+
+      They cover:
+
+        Mini Shai-Hulud and the TanStack compromise using Github Actions
+        Instructure pays Canvas elearning platform data extortionists
+        More Linux privilege escalation 0days!
+        CISA helping critical infrastructure operators rearchitect their networks so they work offline
+
+      This week’s episode is sponsored by email security platform Sublime Security. Bobby Filar chats with Patrick about
+      how agentic AI is being evaluated by buyers in a marketplace that’s experiencing “AI fatigue”.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #836 -- You can&apos;t patch the bugpocalypse"
+    duration: 3716
+    published: Wed, 06 May 2026 15:14:46 +1000
+    published_sort: "20260506"
+    url: https://risky.biz/RB836/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB836.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray and James Wilson are joined by special guest co-host Brad Arkin. They discuss
+      the week’s cybersecurity news, including:
+
+        The US Government says we just have to patch faster, but…
+        Bugs in cPanel, MoveIt and all Linux distributions this week show that patching alone isn’t enough
+        James gets mad about lame AI Agent adoption advice from the US and Australian Governments
+        James Kettle and Niels Provos both showed us that any model can find 0day like Mythos
+        And the cyber-assisted theft of cargo results in an astonishing loss of $725 million dollars
+
+      This week’s show is sponsored by SpecterOps. Their CTO, Jared Atkinson, chats to Pat about the big changes in the
+      threat landscape, brought about by AI, that are causing a pivot away from detection and remediation, and toward
+      prevention.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: SNAKEOILERS23PT2
+    title: "Snake Oilers: Ent AI, Spacewalk and Mondoo"
+    duration: 2639
+    published: Fri, 01 May 2026 10:58:34 +1000
+    published_sort: "20260501"
+    url: https://risky.biz/SNAKEOILERS23PT2/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS23PT2.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this edition of the Snake Oilers podcast three vendors stop by to pitch the audience on their products:
+
+        
+          Ent AI: Co-founder Brandon Dixon pitched Ent, an intent-aware, AI-powered endpoint security control.
+        
+        
+          Spacewalk AI: Founders Chris Fuller and Tim Wenzlau pitch Spacewalk, an AI-powered incident response platform.
+        
+        
+          Mondoo: Co-founder Dominik Richter pitches Mondoo, an AI-powered “service as software” in the vulnerability management space.
+
+        
+
+      This episode is also available on YouTube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #835 -- Why the Fast16 malware is badass"
+    duration: 3988
+    published: Wed, 29 Apr 2026 14:43:51 +1000
+    published_sort: "20260429"
+    url: https://risky.biz/RB835/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB835.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray and James Wilson are joined by special guest-host Dmitri Alperovitch. They
+      discuss the week’s cybersecurity news, including:
+
+        The US government is mad as hell about Chinese firms stealing American AI technology
+        Dmitri has an opinion or two about the US selling Nvidia chips to China
+        Speaking of Chinese AI, Kimi’s new 2.6 is very interesting
+        The US sanctions a Cambodian senator for earning mega bucks through scam compounds
+        And a ransomware family is promoting itself as being … quantum-safe?
+
+      This week’s show is sponsored by Trail of Bits. CEO and co-founder Dan Guido chats to Pat about how private
+      inference works and Trail of Bits’ audit of WhatsApp’s private AI setup.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #834 -- Vercel gets owned, Mozilla dumps hundreds of Mythos bugs"
+    duration: 3633
+    published: Wed, 22 Apr 2026 19:11:43 +1000
+    published_sort: "20260422"
+    url: https://risky.biz/RB834/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB834.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray and James Wilson are joined by special guest The Grugq. They discuss the week’s
+      cybersecurity news, including:
+
+        Vercel got owned, and there’s a few infostealer and compromised employee dots to connect
+        Mozilla used Mythos to find 271 bugs, which feels like a sign of the bug-pocalypse
+        Speaking of the bug-pocalypse, is that why NIST is noping out of enriching a bunch of bugs?
+        The NSA is using Mythos even though the government did that whole Anthropic blacklisting thing
+        And DDos attacks hit a couple of smaller-player socials
+
+      This week’s episode is sponsored by Permiso. Ian Ahl chats to Pat about the subtle signals Permiso uses to detect
+      ShinyHunters-style activity in cloud and on-prem environments.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #833 -- The Great Mythos Freakout of 2026"
+    duration: 3585
+    published: Wed, 15 Apr 2026 13:34:42 +1000
+    published_sort: "20260415"
+    url: https://risky.biz/RB833/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB833.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They
+      cover:
+
+        Everyone has an opinion about Claude Mythos… even though almost nobody has used it yet
+        CISA adds a 2009 Excel bug to the KEV list, u wot?
+        Adobe also parties like it’s the 2000s, and fixes an Acrobat Reader bug
+        Disgraced former Trenchant exec Peter Williams’ sob story fails to resonate with … anyone
+        Remember those crosswalk buttons hacked to play audio mocking Trump and Zuck? They were “secured” by the password: 1234.
+
+      This week’s episode is sponsored by mobile network operator, Cape. Ajit Gokhale talks with James about the ways to
+      get being a telco right when you’re starting from scratch and solving the security problems of 2026.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: SNAKEOILERS23PT1
+    title: "Snake Oilers: Burp AI, Sondera and Truffle Security"
+    duration: 2880
+    published: Fri, 10 Apr 2026 07:33:35 +1000
+    published_sort: "20260409"
+    url: https://risky.biz/SNAKEOILERS23PT1/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS23PT1.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this edition of the Snake Oilers podcast three vendors stop by to pitch the audience on their products:
+
+        
+          Burp AI and DAST: The founder of PortSwigger and creator of legendary security software Burp Suite, Dafydd Stuttard, drops by to pitch listeners on Burp AI and Burp Suite DAST.
+        
+        
+          Sondera: Josh Devon talks about Sondera, a technology designed to intervene when AI models start doing the wrong thing by statefully tracking their trajectories. This isn’t a permissions suite for AI agents, it’s a way to stick agents in a harness and make sure they adhere to hard policy boundaries.
+        
+        
+          Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
+
+        
+
+      This episode is also available on YouTube
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #832 -- Anthropic unveils magical 0day computer God"
+    duration: 3210
+    published: Wed, 08 Apr 2026 14:59:38 +1000
+    published_sort: "20260408"
+    url: https://risky.biz/RB832/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB832.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They
+      cover:
+
+        Anthropic’s new Mythos model hunts bugs and chains exploits together so well that… you cant have it…
+        …Unless you’re one of their Project Glasswing partners
+        The world isn’t short on bugs, though. F5, Fortinet, Progress ShareFile, and TrueConf are all getting rekt by humans
+        GPU Rowhammering goes in the GPU, past the IOMMU and back into the host-side Nvidia driver
+        North Korea is spending serious time and money on its crypto hacking
+        Just when the US needs CISA most, they slash its budget some more!
+
+      This week’s episode is sponsored by identity verification firm, Persona. Tying digital actions to actual human
+      identities isn’t just for banking know-your-customer any more. Persona’s Benjamin Chait says know-your-staff
+      checks belong in high-value flows inside your organisation, too.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: HTWGO2
+    title: "How the World Got Owned Episode 2: The 1990s, Part One"
+    duration: 2806
+    published: Fri, 03 Apr 2026 11:35:55 +1100
+    published_sort: "20260403"
+    url: https://risky.biz/HTWGO2/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/HTWGO2.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this special documentary episode, Patrick Gray and Amberleigh Jack take a look back at hacking throughout the
+      1990s, from the feel-good vibes of the early hacking communities to the antics of young hackers who wound up on
+      the run from the FBI.
+
+
+      Part one features recollections from:
+
+        Jeff Moss (The Dark Tangent), DefCon and Black Hat founder
+        Chris Wysopal (Weld Pond), L0pht member, co-founder, @Stake
+        Kevin Poulsen (Dark Dante), 1990s hacker turned journalist
+        Elias Levy (Aleph One), author of Smashing the Stack for Fun and Profit, Phrack, 1996
+
+      How the World Got Owned is produced in partnership with SentinelOne.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #831 -- The AI bugpocalypse begins"
+    duration: 3580
+    published: Wed, 01 Apr 2026 14:50:51 +1100
+    published_sort: "20260401"
+    url: https://risky.biz/RB831/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB831.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They
+      cover:
+
+        Those pesky North Koreans shim a backdoor into a 100M-downloads-a-week npm package
+        TeamPCP appear to have ransacked Cisco’s source and cloud environments
+        AI is getting legitimately good at being told to “just go find some 0day in this”
+        Kaspersky says Coruna and Triangulation do share code lineage
+        Iranian hackers dump Kash Patel’s gmail spool
+        Oh, and of course there’s a Citrix Netscaler memory leak being exploited in the wild
+
+      This week’s episode is sponsored by Dropzone AI, who make automated AI SOC analysts. Head honcho Ed Wu explains
+      how they’ve built pre-canned ‘hunt packs’ to lead the AI off into your environment to find weird, interesting and
+      security relevant things.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: SOAPBOX106
+    title: "Soap Box: Red teaming AI systems with SpecterOps"
+    duration: 1811
+    published: Fri, 27 Mar 2026 12:07:14 +1100
+    published_sort: "20260327"
+    url: https://risky.biz/SOAPBOX106/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX106.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this sponsored Soap Box edition of the show, Patrick Gray and James Wilson talk about red teaming AI systems
+      with Russel Van Tuyl, Vice President of Services at elite penetration testing firm SpecterOps.
+
+
+      SpecterOps is the company behind attack path enumeration tool Bloodhound and Bloodhound Enterprise, but they’re
+      also a pentest and red teaming shop with world class expertise in popping shells on all sorts of interesting
+      systems in all sorts of interesting places.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #830 -- LiteLLM and security scanner supply chains compromised"
+    duration: 3833
+    published: Wed, 25 Mar 2026 15:13:36 +1100
+    published_sort: "20260325"
+    url: https://risky.biz/RB830/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB830.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James WIlson discuss the week’s cybersecurity news. They talk
+      through:
+
+        TeamPCP’s supply chain attack on Github, and they threw in an anti-Iran wiper, because why not?!
+        Anthropic hooks up its models to just… use your whole computer
+        After Stryker’s Very Bad Day, CISA says maybe add some more controls around your Intune?
+        Another iOS exploit kit shows up in the cyber bargain-bin
+        The FTC decides to ban… all new home routers?! U wot m8?!
+        Supermicro founder was personally sanction-busting Nvidia GPUs into China?!
+
+      This week’s episode is sponsored by enterprise browser maker, Island. Chief Customer Officer Bradon Rogers joins
+      Pat to explain how its customers are using Island to control the use of personal AI services in regulated
+      industries.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #829 -- Sneaky lobsters: Why AI is the new insider threat"
+    duration: 3825
+    published: Wed, 18 Mar 2026 14:39:30 +1100
+    published_sort: "20260318"
+    url: https://risky.biz/RB829/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB829.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James WIlson discuss the week’s cybersecurity news. They
+      discuss:
+
+        Iran’s Intune-based wiper attack on medical device maker Stryker
+        Qihoo 360’s AI publishes its own wildcard TLS cert private key
+        Instagram is canning its end-to-end encrypted messaging
+        What’s going on with mobile internet access in Moscow?
+        The Xbox One’s bootloader gets voltage glitched into submission
+        Oh Qualys! We love you! (At least, whoever is in the basement writing these beautiful .txt files…)
+
+      This week’s episode is sponsored by browser-based detection and response company,  Push Security. Researcher Dan
+      Green and Field CTO Mark Orlando join Pat to talk through the InstallFix variant of the *Fix attack technique.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: SOAPBOX105
+    title: "Risky Biz Soap Box: It took a decade, but allowlisting is cool again"
+    duration: 1645
+    published: Fri, 13 Mar 2026 10:12:14 +1100
+    published_sort: "20260312"
+    url: https://risky.biz/SOAPBOX105/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX105.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this Soap Box edition of the Risky Business podcast Patrick Gray sits down with Airlock Digital co-founders
+      Daniel Schell and David Cottingham to talk about the role AI models could play in managing enterprise allowlists.
+
+
+      They also talk about the durability of allowlisting as a control. After 12 years in business, the Airlock product
+      hasn’t really changed all that much. That’s a good thing! It also means the Airlock team have been able to spend
+      some time doing deep engineering instead of chasing the latest attacker TTPs and writing detection rules for them.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #828 -- The Coruna exploits are truly exquisite"
+    duration: 3748
+    published: Wed, 11 Mar 2026 15:31:39 +1100
+    published_sort: "20260311"
+    url: https://risky.biz/RB828/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB828.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James WIlson discuss the week’s cybersecurity news. They
+      cover:
+
+        The Coruna exploits were L3 Harris, but it seems Triangulation… was not!
+        Iran’s cyber HQ hit by Israeli (kinetic) strikes
+        Trump’s cyber “strategy” is … well, all we’ve got is jokes cause there’s no serious content
+        NSA and CyberCom finally get a leader after Lt Gen Joshua Rudd gets Senate nod
+        DOGE (remember them?!) employee walked a social security database out on a USB stick
+
+      This episode is sponsored by open source cloud security scanner Prowler. Creator and CEO Toni de la Fuente talks
+      to Pat about some of the enterprise features Prowler is growing, while remaining true to its open source roots.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #827 -- Iranian cyber threat actors are down but not out"
+    duration: 3684
+    published: Wed, 04 Mar 2026 15:29:15 +1100
+    published_sort: "20260304"
+    url: https://risky.biz/RB827/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB827.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James WIlson discuss the week’s cybersecurity news. They
+      cover:
+
+        The US-Israeli attack on Iran had a whole lot of cyber. It’s clearly in the playbook now!
+        The NSA Triangulation / L3 Harris Trenchant iOS exploit kit is on the loose, and being used by Chinese crypto scammers
+        So long Maddhu Gottumukkala, but CISA’s annus horribilis continues
+        Adam “humbug” Boileau complains about the Airsnitch wifi attack just being three ethernets in a trenchcoat
+        ASD’s Cisco SD-WAN threat hunting guide is clearly borne of … experience
+
+      This week’s episode is sponsored by AI threat hunting platform Nebulock. Sydney Marrone joins to talk about how
+      useful AI models are on the hunt, and her work building out an open source framework and maturity model. It’s
+      methodology agnostic, so you can adapt it for your environment, and the github link is in the show notes!
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #826 -- A week of AI mishaps and skulduggery"
+    duration: 3971
+    published: Wed, 25 Feb 2026 14:49:29 +1100
+    published_sort: "20260225"
+    url: https://risky.biz/RB826/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB826.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James WIlson discuss the week’s cybersecurity news. They
+      cover:
+
+        Low skill actors compromise 600 Fortinets with AI-generated playbooks
+        Anthropic calls out Chinese AI firms over model distillation
+        Meta’s director of AI safety tells her ClawdBot not to delete her mail… so of course it does
+        Peter Williams cops 7 years in jail for selling L3 Harris Trenchant’s  exploits to Russia
+        Ivanti got hacked in 2021 via… bugs in Ivanti
+
+      This episode is sponsored by line-rate network capture system Corelight. CEO Brian Dye joins to discuss what AI
+      can do for defenders, and what it can’t.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: soapbox104
+    title: "Risky Biz Soap Box: The lethal trifecta of AI risks"
+    duration: 2253
+    published: Fri, 20 Feb 2026 10:33:55 +1100
+    published_sort: "20260219"
+    url: https://risky.biz/soapbox104/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/soapbox104.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      There’s a lethal trifecta of AI risks: access to private data, exposure to untrusted content, and external
+      communication. In this conversation, Risky Business host Patrick Gray chats with Josh Devon, the co-founder of
+      Sondera, about how to best address these risks.
+
+
+      There is no magic solution to this problem. AI models mix code and data, are non-deterministic, and are crawling
+      around all over your enterprise data and APIs as you read this.
+
+
+      But in this sponsored interview, Josh outlines how we can start to wrap our hands around the problem.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #825 -- Palo Alto Networks blames it on the boogie"
+    duration: 3793
+    published: Wed, 18 Feb 2026 14:49:36 +1100
+    published_sort: "20260218"
+    url: https://risky.biz/RB825/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB825.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show, Patrick Gray, Adam Boileau and James WIlson discuss the week’s cybersecurity news. They
+      cover:
+
+        Palo Alto threat researchers want to attribute to China, but management says shush
+        An increasing proportion of ransomware is data extortion. Is this good?
+        Cambodia says it’s going to dismantle scam compounds
+        CISA sufferers through yet another shutdown
+        Google Gemini’s training secrets are being systematically harvested to improve other LLMs
+        Academics assess SaaS password managers’ resilience against a malicious server
+
+      This episode is sponsored by SSO-firewall integration vendor Knocknoc. Chief exec Adam Pointon joins to talk about
+      the latest in defences… which is to say Knocknoc for Solaris/Sparc and HPUX on PA-RISC?! Okay also that other
+      little known OS… Windows.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #824 -- Microsoft&apos;s Secure Future is looking a bit wobbly"
+    duration: 3373
+    published: Wed, 11 Feb 2026 14:50:13 +1100
+    published_sort: "20260211"
+    url: https://risky.biz/RB824/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB824.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show Patrick Gray and Adam Boileau discuss the week’s cybersecurity news, including:
+
+        Microsoft reshuffles security leadership. It doesn’t spark joy.
+        Russia is hacking the Winter Olympics. Again. But y tho?
+        China-linked groups are keeping busy, hacking telcos in Norway, Singapore and dozens of others
+        Campaigns underway targeting Ivanti, BeyondTrust and SolarWinds products
+        An unknown hero blocks 23/tcp on the US internet backbone
+        And James Wilson pops into talk about Claude’s go at a C compiler
+
+      This week’s episode is sponsored by Ent.AI, an AI startup that isn’t quite ready to tell us all what they’re
+      doing. But nevertheless, founder Brandon Dixon joins to discuss AI’s role in security. Where does language-based
+      understanding take us that previous methods couldn’t?
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #823 -- Humans impersonate clawdbots impersonating humans"
+    duration: 3369
+    published: Wed, 04 Feb 2026 14:13:54 +1100
+    published_sort: "20260204"
+    url: https://risky.biz/RB823/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB823.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      Patrick Gray and Adam Boileau are joined by the newest guy on the Risky Business Media team, James WIlson. They
+      discuss the week’s cybersecurity news, including:
+
+        Notepad++ update supply chain attack has been attributed to China
+        The AI agent future is even more stupid than expected; behold the OpenClaw/Clawdbot/Moltbook mess
+        The Epstein files claim he had a personal hacker?
+        Microsoft is finally getting ready to (think about starting to begin to) disable NTLM by default
+        The usual bugs in the usual things! Ivanti, Fortinet, and Solarwinds. Again.
+        Telco hides a free trip in its privacy policy, someone actually reads it and wins!
+
+      This weeks’s episode is sponsored by opensource IDP platform Authentik. CEO Fletcher Heisler talks to Pat about
+      their new endpoint agent that can enforce device posture policies during login.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #822 -- France will ditch American tech over security risks"
+    duration: 3845
+    published: Wed, 28 Jan 2026 14:35:47 +1100
+    published_sort: "20260128"
+    url: https://risky.biz/RB822/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB822.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this week’s show Patrick Gray and Adam Boileau discuss the week’s cybersecurity news. They discuss:
+
+        La France is tres sérieux about ditching US productivity software
+        China’s Salt Typhoon was snooping on Downing Street
+        Trump wields the mighty DISCOMBOBULATOR
+        ESET says the Polish power grid wiper was Russia’s GRU Sandworm crew
+        US cyber institutions CISA and NIST are struggling
+        Voice phishing for MFA bypass is getting even more polished
+
+      This episode is sponsored by Sublime Security. Brian Baskin is one of the team behind Sublime’s 2026 Email Threat
+      Research report. He joins to talk through what they see of attackers’ use of AI, as well as the other trends of
+      the year.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #821 -- Wiz researchers could have owned every AWS customer"
+    duration: 3886
+    published: Wed, 21 Jan 2026 15:28:42 +1100
+    published_sort: "20260121"
+    url: https://risky.biz/RB821/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB821.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this week’s show, Patrick Gray and Adam Boileau discuss the week’s cybersecurity news, joined by a special
+      guest. BBC World Cyber Correspondent Joe Tidy is a long time listener and he pops in for a ride-along in the news
+      segment plus a chat about his new book.
+
+
+      This week news includes:
+
+        Did the US cyber Venezuela’s power grid, or do they just want us to think they coulda?
+        US govt might boycott the RSAC Conference ‘cause Jen Easterly being CEO makes them mad
+        MS Patch Tuesday fixes CVSS5.5 bug and … stops you shutting down
+        Wiz pulls off cloud stunt hack that ends with control of everyone’s AWS console
+        Millions of Bluetooth devices that use Google’s Fast Pairing will pair with anyone, any time
+        GNU inet-tools’ telnetd parties like it’s 2007, and brings -f root unauthed remote login back
+
+      Thinkst is this week’s sponsor, and long time friend of the show Haroon Meer joins. As always they’re polishing
+      their Canary tokens - adding breadcrumbs to lead you to them - but they’re also a bunch of giant nerds who now run
+      South Africa’s Computer Olympiad.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #820 -- Asian fraud kingpin will face Chinese justice (pew pew!)"
+    duration: 3555
+    published: Wed, 14 Jan 2026 12:42:29 +1100
+    published_sort: "20260114"
+    url: https://risky.biz/RB820/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB820.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      Risky Business returns for 2026! Patrick Gray and Adam Boileau talk through the week’s cybersecurity news,
+      including:
+
+        Santa brings hackers MongoDB memory leaks for Christmas
+        Vercel pays out a million bucks to improve its React2Shell WAF defences
+        39C3 delivers; the pink Power Ranger deletes nazis, while a catgirl ruins GnuPG
+        Cambodian scam compound kingpin gets extradited to China, and we don’t think it’ll go well for him
+        Krebs picks apart the Kimwolf botnet and residential proxy networks
+        So many healthcare data leaks that we have a roundup section
+
+      This week’s episode is sponsored by Airlock Digital. The founders of the application allow-listing vendor, David
+      Cottingham and Daniel Schell, discuss Microsoft’s ClickOnce .NET app packaging, and how attackers have been
+      abusing it to load code. Airlock hates it when you load code!
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
+  - id: HTWGO1
+    title: "How the World Got Owned Episode 1: The 1980s"
+    duration: 3816
+    published: Wed, 07 Jan 2026 07:00:00 +1100
+    published_sort: "20260106"
+    url: https://risky.biz/HTWGO1/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/HTWGO1.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this special documentary episode, Patrick Gray and Amberleigh Jack take a historical dive into hacking in the
+      1980s. Through the words of those that were there, they discuss life on the ARPANET, the 414s hacking group, the
+      Morris Worm, the vibe inside the NSA and a parallel hunt for German hackers happening at a similar time to Cliff
+      Stoll’s famous Cuckoo’s Egg story.
+
+
+      This podcast features the memories of:
+
+        Jon Callas, former principal software engineer at Digital Equipment Corporation
+        Mark Rasch, Morris Worm prosecutor
+        Timothy Winslow, former 414 hacker
+        Greg Chartrand, author of Cracking the Cuckoos Egg and
+        Tony Sager, former NSA
+
+      How the World Got Owned is produced in partnership with SentinelOne.
+    status: needs_transcript
     priority: 1

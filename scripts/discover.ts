@@ -5,7 +5,7 @@
 
 import { resolve } from 'node:path'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
-import { listChannelVideos } from './lib/yt.ts'
+import { fetchText, parseRssFeed } from './lib/rss.ts'
 import { log } from './lib/log.ts'
 import type { SourcesFile, EpisodesFile, QueueFile, QueueEntry } from './lib/types.ts'
 
@@ -27,14 +27,18 @@ async function main() {
 
   for (const source of sourcesFile.sources) {
     log.info(`${source.name} (${source.id})`)
-    let videos
-    try {
-      videos = await listChannelVideos(source.channel, LIMIT)
-    } catch (e: any) {
-      log.err(`  failed to list ${source.channel}: ${e.message}`)
+    if (!source.rss_url) {
+      log.warn(`  missing rss_url, skipping`)
       continue
     }
-    log.raw(`found ${videos.length} recent videos`)
+    let episodes
+    try {
+      episodes = parseRssFeed(await fetchText(source.rss_url), source.id).slice(0, LIMIT)
+    } catch (e: any) {
+      log.err(`  failed to fetch ${source.rss_url}: ${e.message}`)
+      continue
+    }
+    log.raw(`found ${episodes.length} recent episodes`)
 
     const keywords = source.filter_keywords ?? []
     const keywordPatterns = keywords.map(
@@ -43,24 +47,24 @@ async function main() {
     const perSourceLimit = source.episode_limit ?? 2
     let accepted = 0
 
-    for (const video of videos) {
+    for (const episode of episodes) {
       if (accepted >= perSourceLimit) break
-      if (existingIds.has(video.id)) continue
+      if (existingIds.has(episode.id)) continue
 
       if (keywordPatterns.length > 0) {
-        const matched = keywordPatterns.some(re => re.test(video.title))
+        const matched = keywordPatterns.some(re => re.test(episode.title))
         if (!matched) continue
       }
 
       newEntries.push({
-        id: video.id,
+        id: episode.id,
         source: source.id,
-        title: video.title,
-        url: video.url,
-        uploadDate: video.uploadDate,
+        title: episode.title,
+        url: episode.url,
+        published: episode.published,
       })
       accepted++
-      log.ok(`  queued ${video.id} — ${video.title.slice(0, 60)}`)
+      log.ok(`  queued ${episode.id} — ${episode.title.slice(0, 60)}`)
     }
   }
 

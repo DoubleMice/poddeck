@@ -12,7 +12,7 @@ import { delimiter } from 'node:path'
 
 /**
  * On Windows, Node's child_process.spawn needs an executable with extension.
- * Try .exe first (native binaries like yt-dlp), fall back to .cmd (npm shims like npx).
+ * Try .exe first, fall back to .cmd (npm shims like npx).
  */
 function resolveCmd(cmd: string): string {
   if (!isWin) return cmd
@@ -50,7 +50,7 @@ export function run(
       windowsHide: true,
       env: {
         ...process.env,
-        // Force Python (yt-dlp) to emit UTF-8 on Windows instead of cp936/cp1252
+        // Force Python subprocesses to emit UTF-8 on Windows instead of cp936/cp1252
         PYTHONIOENCODING: 'utf-8',
         PYTHONUTF8: '1',
       },

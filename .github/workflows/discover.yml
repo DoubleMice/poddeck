@@ -1,7 +1,7 @@
 name: Discover
 
-# 每天 UTC 3:00 自动扫描频道 → 生成 plan 文件
-# plan:run（字幕下载 + slides 生成）在本地执行
+# 每天 UTC 3:00 自动扫描 RSS → 生成 plan 文件
+# plan:run（transcript 下载 + slides 生成）在本地执行
 on:
   schedule:
     - cron: '0 3 * * *'
@@ -9,6 +9,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: discover
+  cancel-in-progress: true
 
 jobs:
   discover:
@@ -30,10 +34,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Install yt-dlp
-        run: pip install --upgrade yt-dlp
-
-      - name: Refresh cache (scan channels)
+      - name: Refresh cache (RSS feeds)
         run: pnpm run cache:refresh
 
       - name: Generate plans

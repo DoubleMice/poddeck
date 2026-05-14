@@ -1,7 +1,7 @@
-// Generate or update data/plans/<source>.yml from data/scan-cache/*.jsonl.
+// Generate or update data/plans/<source>.yml from RSS-backed data/scan-cache/*.jsonl.
 //
 // Rules:
-// 1. Include episodes with upload_date >= source.min_date (default 20260101)
+// 1. Include episodes with published_sort >= source.min_date (default 20260101)
 // 2. Include episodes with duration >= source.min_duration (default 3600 seconds)
 // 3. Include episodes NOT already in episodes.yml (not yet generated)
 // 4. Optionally apply source.filter_keywords (word-boundary match on title)
@@ -25,6 +25,7 @@ const SOURCES_PATH = resolve(ROOT, 'sources.yml')
 const CACHE_DIR = resolve(ROOT, 'data/scan-cache')
 const PLANS_DIR = resolve(ROOT, 'data/plans')
 const EPISODES_DIR = resolve(ROOT, 'episodes')
+const TRANSCRIPTS_DIR = resolve(ROOT, 'data/transcripts')
 
 const onlyId = process.argv.find(a => a.startsWith('--id='))?.split('=')[1]
 const overrideDuration = process.argv.find(a => a.startsWith('--min-duration='))?.split('=')[1]
@@ -34,9 +35,15 @@ interface PlanEntry {
   id: string
   title: string
   duration: number
-  upload_date: string
+  published: string
+  published_sort: string
   url: string
-  status: 'pending' | 'downloaded' | 'generated' | 'failed'
+  audio_url?: string
+  image?: string
+  transcript_url?: string
+  transcript_type?: string
+  summary?: string
+  status: 'pending' | 'needs_transcript' | 'downloaded' | 'generated' | 'failed'
   priority: number
 }
 
@@ -48,6 +55,8 @@ interface PlanFile {
   total_candidates: number
   done: number
   pending: number
+  needs_transcript: number
+  downloaded: number
   episodes: PlanEntry[]
 }
 
@@ -57,6 +66,21 @@ function loadCache(sourceId: string): any[] {
   return readFileSync(path, 'utf-8').split('\n').filter(Boolean).map(l => {
     try { return JSON.parse(l) } catch { return null }
   }).filter(Boolean)
+}
+
+function emptyPlan(source: Source): PlanFile {
+  return {
+    source: source.id,
+    refreshed_at: new Date().toISOString(),
+    min_duration: Number(overrideDuration ?? (source as any).min_duration ?? 3600),
+    min_date: String(overrideDate ?? (source as any).min_date ?? '20260101'),
+    total_candidates: 0,
+    done: 0,
+    pending: 0,
+    needs_transcript: 0,
+    downloaded: 0,
+    episodes: [],
+  }
 }
 
 function getExistingEpisodeIds(): Set<string> {
@@ -96,8 +120,8 @@ function loadExistingPlan(sourceId: string): PlanFile | null {
 function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile | null {
   const cache = loadCache(source.id)
   if (cache.length === 0) {
-    log.warn(`${source.id}: empty cache, skipping`)
-    return null
+    log.warn(`${source.id}: empty cache, writing empty plan`)
+    return emptyPlan(source)
   }
 
   const minDuration = Number(overrideDuration ?? (source as any).min_duration ?? 3600)
@@ -115,31 +139,48 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
   for (const v of cache) {
     if (typeof v.duration !== 'number') continue
     if (v.duration < minDuration) continue
-    if (!v.upload_date || v.upload_date === 'NA') {
-      // flat-playlist may not provide upload_date; include anyway
-    } else if (v.upload_date < minDate) continue
+    const dateKey = String(v.published_sort || v.upload_date || '')
+    if (dateKey && dateKey < minDate) continue
     // Skip if already generated
     if (existingGenerated.has(v.id)) continue
     // Keyword filter
     if (useKeywords && !keywordMatch(v.title || '', source.filter_keywords)) continue
 
+    const transcript = (v.transcripts || []).find((t: any) => t.type === 'text/plain') ||
+      (v.transcripts || []).find((t: any) => String(t.url || '').endsWith('.txt')) ||
+      (v.transcripts || [])[0]
+    const hasLocalTranscript = existsSync(join(TRANSCRIPTS_DIR, `${v.id}.txt`))
+
     const existing = existingEntries.get(v.id)
+    const hasTranscript = Boolean(transcript?.url || hasLocalTranscript)
+    let nextStatus: PlanEntry['status']
+    if (existing?.status === 'generated' || existing?.status === 'failed') nextStatus = existing.status
+    else if (hasTranscript) nextStatus = existing?.status === 'downloaded' ? 'downloaded' : 'pending'
+    else nextStatus = 'needs_transcript'
     candidates.push({
       id: v.id,
       title: v.title || '(no title)',
       duration: v.duration,
-      upload_date: v.upload_date,
-      url: `https://youtube.com/watch?v=${v.id}`,
-      status: existing?.status ?? 'pending',
+      published: v.published || '',
+      published_sort: dateKey,
+      url: v.url || v.audio_url || '',
+      audio_url: v.audio_url,
+      image: v.image,
+      transcript_url: transcript?.url,
+      transcript_type: transcript?.type,
+      summary: v.summary,
+      status: nextStatus,
       priority: existing?.priority ?? 1,
     })
   }
 
   // Sort: newest first
-  candidates.sort((a, b) => b.upload_date.localeCompare(a.upload_date))
+  candidates.sort((a, b) => b.published_sort.localeCompare(a.published_sort))
 
   const pending = candidates.filter(e => e.status === 'pending').length
   const done = candidates.filter(e => e.status === 'generated').length
+  const needsTranscript = candidates.filter(e => e.status === 'needs_transcript').length
+  const downloaded = candidates.filter(e => e.status === 'downloaded').length
 
   return {
     source: source.id,
@@ -149,6 +190,8 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
     total_candidates: candidates.length,
     done,
     pending,
+    needs_transcript: needsTranscript,
+    downloaded,
     episodes: candidates,
   }
 }
@@ -168,21 +211,25 @@ async function main() {
   const fs = await import('node:fs/promises')
   await fs.mkdir(PLANS_DIR, { recursive: true })
 
-  const summary: { id: string; total: number; pending: number; done: number }[] = []
+  const summary: { id: string; total: number; pending: number; needsTranscript: number; downloaded: number; done: number }[] = []
 
   for (const source of targets) {
     const plan = planOneSource(source, existingGenerated)
     if (!plan) continue
     const path = join(PLANS_DIR, `${source.id}.yml`)
     writeYaml(path, plan)
-    log.ok(`  ${source.id}: ${plan.total_candidates} candidates (${plan.pending} pending, ${plan.done} done) → ${path}`)
-    summary.push({ id: source.id, total: plan.total_candidates, pending: plan.pending, done: plan.done })
+    const needs = plan.needs_transcript ?? 0
+    const downloaded = plan.downloaded ?? 0
+    log.ok(`  ${source.id}: ${plan.total_candidates} candidates (${plan.pending} pending, ${downloaded} downloaded, ${needs} needs transcript, ${plan.done} done) → ${path}`)
+    summary.push({ id: source.id, total: plan.total_candidates, pending: plan.pending, needsTranscript: needs, downloaded, done: plan.done })
   }
 
   // Print summary table
   const totalPending = summary.reduce((a, s) => a + s.pending, 0)
+  const totalNeedsTranscript = summary.reduce((a, s) => a + s.needsTranscript, 0)
+  const totalDownloaded = summary.reduce((a, s) => a + s.downloaded, 0)
   const totalTotal = summary.reduce((a, s) => a + s.total, 0)
-  log.step(`Summary — ${totalPending} pending / ${totalTotal} total across ${summary.length} sources`)
+  log.step(`Summary — ${totalPending} pending / ${totalDownloaded} downloaded / ${totalNeedsTranscript} needs transcript / ${totalTotal} total across ${summary.length} sources`)
 }
 
 main().catch(e => {

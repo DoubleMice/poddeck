@@ -8,24 +8,38 @@ interface Props {
 
 const { episode } = Astro.props
 const isGenerated = episode.status === 'generated'
-const thumbnail = episode.thumbnail || `https://img.youtube.com/vi/${episode.id}/hqdefault.jpg`
+const hasArticle = !!episode.article_path
+const thumbnail = episode.thumbnail
+const pendingLabel = episode.status === 'failed'
+  ? 'generation failed'
+  : episode.status === 'needs_transcript'
+    ? 'waiting for transcript'
+    : 'transcript ready · slides coming'
 ---
 
-<article class="bg-white rounded-lg border border-stone-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+<article
+  class="episode-card bg-white rounded-lg border border-stone-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col"
+  data-has-slides={String(isGenerated)}
+  data-has-article={String(hasArticle)}
+>
   <div class="relative aspect-video bg-stone-100">
-    <img
-      src={thumbnail}
-      alt={episode.title}
-      class="w-full h-full object-cover"
-      loading="lazy"
-      data-fallback={`https://img.youtube.com/vi/${episode.id}/hqdefault.jpg`}
-      onerror="if(this.dataset.fallback && this.src!==this.dataset.fallback){this.src=this.dataset.fallback}"
-    />
+    {thumbnail ? (
+      <img
+        src={thumbnail}
+        alt={episode.title}
+        class="w-full h-full object-cover"
+        loading="lazy"
+      />
+    ) : (
+      <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-stone-100 to-stone-200 text-stone-400 text-xs">
+        RSS Episode
+      </div>
+    )}
     {!isGenerated && (
       <div class="absolute inset-0 bg-stone-900/60 flex items-center justify-center">
-        <span class="text-white text-xs bg-stone-800 px-3 py-1 rounded-full">
-          transcript ready · slides coming
-        </span>
+          <span class="text-white text-xs bg-stone-800 px-3 py-1 rounded-full">
+          {pendingLabel}
+          </span>
       </div>
     )}
     <a
@@ -74,23 +88,33 @@ const thumbnail = episode.thumbnail || `https://img.youtube.com/vi/${episode.id}
     )}
 
     <div class="mt-auto pt-2 flex items-center justify-between">
-      {isGenerated ? (
-        <a
-          href={url(episode.base || `/episodes/${episode.id}/`)}
-          class="text-sm font-medium text-blue-600 hover:text-blue-800"
-        >
-          查看 slides →
-        </a>
-      ) : (
-        <span class="text-xs text-stone-400">slides 未生成</span>
-      )}
+      <div class="flex gap-3">
+        {isGenerated ? (
+          <a
+            href={url(episode.base || `/episodes/${episode.id}/`)}
+            class="text-sm font-medium text-blue-600 hover:text-blue-800"
+          >
+            查看 slides →
+          </a>
+        ) : (
+          <span class="text-xs text-stone-400">{episode.status === 'failed' ? '生成失败' : episode.status === 'needs_transcript' ? '等待转写' : 'slides 未生成'}</span>
+        )}
+        {hasArticle && (
+          <a
+            href={url(episode.article_path!)}
+            class="text-sm font-medium text-green-600 hover:text-green-800"
+          >
+            阅读文章 →
+          </a>
+        )}
+      </div>
       <a
         href={episode.url}
         target="_blank"
         rel="noopener"
         class="text-xs text-stone-400 hover:text-stone-600"
       >
-        YouTube ↗
+        原文 ↗
       </a>
     </div>
   </div>

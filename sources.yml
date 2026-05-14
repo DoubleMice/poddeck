@@ -1,16 +1,16 @@
-# PodDeck 订阅源配置
-# 每个 source 是一个播客频道/节目主体
+# PodDeck RSS 订阅源配置
+# 每个 source 是一个播客 RSS feed
 # filter_keywords: 可选。plan.ts 不启用 use_keywords_in_plan 时仅用于 discover 不做过滤
 # min_duration: 最小时长秒数（plan.ts 用这个过滤）。默认 3600 = 60 分钟
 # min_date: 最早发布日期 YYYYMMDD。默认 20260101
-# cache_limit: refresh-cache.ts 扫描的最大视频数。默认 350
+# cache_limit: refresh-cache.ts 保留的最大 episode 数。默认 350
 # use_keywords_in_plan: plan.ts 是否同时用 filter_keywords 做二次过滤。默认 false（只按时长/日期过滤）
 # color: 用于 landing page 中区分视觉
 
 sources:
   - id: tbpn
     name: TBPN
-    channel: https://youtube.com/@TBPNLive
+    rss_url: https://feeds.transistor.fm/technology-brother
     filter_keywords: [tech, startup, AI, venture, investing]
     min_duration: 3600
     min_date: "20260101"
@@ -20,7 +20,7 @@ sources:
 
   - id: unchained
     name: Unchained
-    channel: https://youtube.com/c/UnchainedPodcast
+    rss_url: https://unchained.libsyn.com/unchained
     filter_keywords: [crypto, bitcoin, ethereum, defi, web3]
     min_duration: 1800
     min_date: "20260101"
@@ -30,7 +30,7 @@ sources:
 
   - id: risky-business
     name: Risky Business
-    channel: https://youtube.com/@RiskyBusiness
+    rss_url: https://risky.biz/feeds/risky-business/
     filter_keywords: [security, vulnerability, exploit, threat, cyber]
     min_duration: 900
     min_date: "20260101"
@@ -40,7 +40,7 @@ sources:
 
   - id: acquired
     name: Acquired
-    channel: https://youtube.com/@AcquiredFM
+    rss_url: https://feeds.transistor.fm/acquired
     filter_keywords: [company, IPO, strategy, acquisition, business]
     min_duration: 3600
     min_date: "20260101"
@@ -50,7 +50,7 @@ sources:
 
   - id: flirting-with-models
     name: Flirting with Models
-    channel: https://youtube.com/@FlirtingwithModels
+    rss_url: https://feeds.captivate.fm/flirting-with-models/
     filter_keywords: [quant, investing, risk, portfolio, factor]
     min_duration: 1800
     min_date: "20260101"
@@ -60,7 +60,7 @@ sources:
 
   - id: huberman
     name: Huberman Lab
-    channel: https://youtube.com/@hubermanlab
+    rss_url: ""
     filter_keywords: [sleep, focus, dopamine, cognition, learning]
     min_duration: 5400
     min_date: "20260101"
@@ -70,7 +70,7 @@ sources:
 
   - id: toe
     name: Theories of Everything
-    channel: https://youtube.com/@TheoriesofEverything
+    rss_url: ""
     filter_keywords: [physics, consciousness, quantum, theory, mathematics]
     min_duration: 3600
     min_date: "20260101"
@@ -80,7 +80,7 @@ sources:
 
   - id: xiaojun
     name: 张小珺 Xiaojun Podcast
-    channel: https://youtube.com/@xiaojunpodcast
+    rss_url: ""
     filter_keywords: [AI, 大模型, Agent, LLM, Claude, Anthropic, scaling]
     min_duration: 3600
     min_date: "20260101"

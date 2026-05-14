@@ -19,9 +19,9 @@ You are working on ONE episode only. Do not let your training knowledge of OTHER
 
 Example: If the transcript is Jensen Huang's interview, do NOT insert the "miso" story (that's Boris Cherny's Lenny's Podcast interview, not Jensen's Lex Fridman interview).
 
-## RULE 2.5 — YouTube auto-caption artifact normalization
+## RULE 2.5 — Transcript artifact normalization
 
-YouTube auto-captions frequently mistranscribe these words. **Always** normalize them when writing slides (but you can still grep the original spelling against the transcript to verify a quote exists):
+Podcast transcripts can mistranscribe these words. **Always** normalize them when writing slides (but you can still grep the original spelling against the transcript to verify a quote exists):
 
 | transcript text (auto-caption) | what it actually means |
 |---|---|
@@ -119,25 +119,46 @@ After writing `slides.md`:
 ## RULE 9 — Write `meta.yml` with these required fields
 
 ```yaml
-id: <videoId>
+id: <episodeId>
 source: <sourceId>         # must exist in sources.yml
 title: "<full title>"
 guest: "<guest name>"
 guest_role: "<e.g. Anthropic CEO>"
-published: <YYYY-MM>
-duration: <estimate from transcript length>
-url: https://youtube.com/watch?v=<id>
-thumbnail: https://img.youtube.com/vi/<id>/maxresdefault.jpg
+published: <YYYY-MM from task input>
+duration: <duration from task input>
+url: <source episode URL>
+thumbnail: <RSS episode image URL, optional>
 status: generated
 tags: [...]                # pick from tags.yml
 summary: |
   2-3 sentence summary
 core_ideas:
   - 3-6 bullet items
+article_path: episodes/<id>/article.html
 base: /episodes/<id>/
 ```
 
 The `tags` field MUST only contain values from `tags.yml`. Do not invent tags.
+
+## RULE 10 — Article HTML generation
+
+After slides.md and meta.yml are complete, generate a standalone HTML article at `episodes/<id>/article.html`.
+
+**Format requirements:**
+- Self-contained HTML with inline `<style>` — no external CSS, no JavaScript, no images
+- Clean typography: system font stack (`-apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif`)
+- Max-width ~720px, comfortable line-height 1.75, font-size 17px
+- Responsive to mobile
+- File size between 5KB and 500KB
+
+**Content requirements:**
+- Header with title, guest, source, date
+- "Why this matters" overview with 4-6 styled topic cards (reuse the color card system)
+- 8-12 themed prose sections, each with a heading and 2-4 narrative paragraphs
+- "核心金句" block with 4-6 grep-verified quotes (RULE 1 applies)
+- Footer with source episode link
+- Write in narrative prose for reading, not bullet points
+- Mark paraphrases/glosses clearly as "作者概括:" (same as RULE 3)
 
 ---
 

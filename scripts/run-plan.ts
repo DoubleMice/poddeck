@@ -1,5 +1,5 @@
 // Execute pending entries in data/plans/*.yml:
-//   1. download subtitle via yt-dlp → data/transcripts/<id>.txt
+//   1. download RSS transcript → data/transcripts/<id>.txt
 //   2. scaffold episodes/<id>/ from _templates
 //   3. invoke claude -p to generate slides.md + meta.yml
 //   4. update plan entry status (pending → generated | failed)
@@ -16,22 +16,18 @@
 
 import { resolve, join } from 'node:path'
 import {
-  readFileSync, writeFileSync, existsSync, mkdirSync, cpSync, readdirSync, unlinkSync,
+  readFileSync, writeFileSync, existsSync, mkdirSync, cpSync, readdirSync,
 } from 'node:fs'
-import { readdirSync } from 'node:fs'
 import { spawn } from 'node:child_process'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
-import { run as shellRun } from './lib/spawn.ts'
-import { downloadAutoSubs, cleanVtt } from './lib/yt.ts'
+import { cleanTranscript, fetchText, preferredTranscript } from './lib/rss.ts'
 import { log } from './lib/log.ts'
-import type { SourcesFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
 const isWin = process.platform === 'win32'
 const SOURCES_PATH = resolve(ROOT, 'sources.yml')
 const PLANS_DIR = resolve(ROOT, 'data/plans')
 const TRANSCRIPTS_DIR = resolve(ROOT, 'data/transcripts')
-const TEMP_VTT_DIR = resolve(ROOT, 'data/temp-vtt')
 const EPISODES_DIR = resolve(ROOT, 'episodes')
 const TEMPLATES_DIR = resolve(EPISODES_DIR, '_templates')
 const PROMPTS_DIR = resolve(ROOT, 'scripts/prompts')
@@ -44,8 +40,8 @@ const concurrency = Number(process.argv.find(a => a.startsWith('--concurrency=')
 const dryRun = process.argv.includes('--dry-run')
 const onlyCategory = process.argv.find(a => a.startsWith('--category='))?.split('=')[1]
 
-// Shared state for rate-limit detection and token tracking
-let rateLimited = false
+// Shared state for generation rate-limit detection and token tracking
+let generationRateLimited = false
 const stats = {
   generated: 0,
   failed: 0,
@@ -60,9 +56,15 @@ interface PlanEntry {
   id: string
   title: string
   duration: number
-  upload_date: string
+  published?: string
+  published_sort?: string
   url: string
-  status: 'pending' | 'downloaded' | 'generated' | 'failed'
+  audio_url?: string
+  image?: string
+  transcript_url?: string
+  transcript_type?: string
+  transcripts?: { url: string; type: string; language?: string }[]
+  status: 'pending' | 'needs_transcript' | 'downloaded' | 'generated' | 'failed'
   category?: string
   priority: number
 }
@@ -75,6 +77,8 @@ interface PlanFile {
   total_candidates: number
   done: number
   pending: number
+  needs_transcript?: number
+  downloaded?: number
   episodes: PlanEntry[]
 }
 
@@ -93,6 +97,8 @@ function loadPlans(): { source: string; path: string; plan: PlanFile }[] {
 
 function savePlan(path: string, plan: PlanFile): void {
   plan.pending = plan.episodes.filter(e => e.status === 'pending').length
+  plan.needs_transcript = plan.episodes.filter(e => e.status === 'needs_transcript').length
+  plan.downloaded = plan.episodes.filter(e => e.status === 'downloaded').length
   plan.done = plan.episodes.filter(e => e.status === 'generated').length
   writeYaml(path, plan)
 }
@@ -107,29 +113,27 @@ function scaffoldEpisode(id: string): void {
   writeFileSync(join(dir, 'package.json'), JSON.stringify(pkg, null, 2) + '\n')
   // Copy global-bottom.vue
   cpSync(join(TEMPLATES_DIR, 'global-bottom.vue'), join(dir, 'global-bottom.vue'))
+  cpSync(join(TEMPLATES_DIR, 'public'), join(dir, 'public'), { recursive: true })
 }
 
-async function ensureTranscript(id: string): Promise<void> {
-  const txtPath = join(TRANSCRIPTS_DIR, `${id}.txt`)
+async function ensureRssTranscript(entry: PlanEntry): Promise<void> {
+  const txtPath = join(TRANSCRIPTS_DIR, `${entry.id}.txt`)
   if (existsSync(txtPath)) {
-    log.raw(`  transcript exists: ${id}.txt`)
+    log.raw(`  transcript exists: ${entry.id}.txt`)
     return
   }
   mkdirSync(TRANSCRIPTS_DIR, { recursive: true })
-  mkdirSync(TEMP_VTT_DIR, { recursive: true })
-  log.raw(`  downloading subtitle ${id}`)
-  const vttPath = await downloadAutoSubs(id, TEMP_VTT_DIR)
-  const txt = cleanVtt(vttPath)
+  const transcript = entry.transcript_url
+    ? { url: entry.transcript_url, type: entry.transcript_type || '' }
+    : preferredTranscript(entry.transcripts || [])
+  if (!transcript?.url) {
+    throw new Error(`No RSS transcript URL for ${entry.id}`)
+  }
+  log.raw(`  downloading transcript ${entry.id}`)
+  const raw = await fetchText(transcript.url)
+  const txt = cleanTranscript(raw, transcript.type || transcript.url)
   writeFileSync(txtPath, txt, 'utf-8')
   log.ok(`    cleaned → ${txtPath} (${txt.length} chars)`)
-  // Cleanup all vtt for this id
-  try {
-    for (const f of readdirSync(TEMP_VTT_DIR)) {
-      if (f.startsWith(id) && f.endsWith('.vtt')) {
-        try { unlinkSync(join(TEMP_VTT_DIR, f)) } catch {}
-      }
-    }
-  } catch {}
 }
 
 function resolveClaudeBin(): string {
@@ -145,6 +149,32 @@ function renderTask(entry: PlanEntry, sourceId: string): string {
     .replaceAll('{{ID}}', entry.id)
     .replaceAll('{{SOURCE}}', sourceId)
     .replaceAll('{{TITLE}}', entry.title)
+    .replaceAll('{{URL}}', entry.url || '')
+    .replaceAll('{{PUBLISHED}}', formatPublishedMonth(entry))
+    .replaceAll('{{THUMBNAIL}}', entry.image || '')
+    .replaceAll('{{DURATION}}', formatDuration(entry.duration))
+}
+
+function formatPublishedMonth(entry: PlanEntry): string {
+  const key = entry.published_sort || ''
+  if (/^\d{8}$/.test(key)) return `${key.slice(0, 4)}-${key.slice(4, 6)}`
+  const time = Date.parse(entry.published || '')
+  if (Number.isNaN(time)) return ''
+  const date = new Date(time)
+  return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}`
+}
+
+function formatDuration(seconds: number): string {
+  if (!seconds) return ''
+  const minutes = Math.round(seconds / 60)
+  const h = Math.floor(minutes / 60)
+  const m = minutes % 60
+  return h > 0 ? `${h}h${m}m` : `${m}m`
+}
+
+function hasGeneratedArtifacts(id: string): boolean {
+  const dir = join(EPISODES_DIR, id)
+  return existsSync(join(dir, 'slides.md')) && existsSync(join(dir, 'meta.yml'))
 }
 
 interface GenerateResult {
@@ -233,8 +263,17 @@ async function processEntry(
     return
   }
 
+  if (entry.status === 'needs_transcript') {
+    entry.status = 'pending'
+    savePlan(planPath, plan)
+  }
+
   try {
-    await ensureTranscript(entry.id)
+    await ensureRssTranscript(entry)
+    if (generationRateLimited) {
+      log.warn('  queue stopped after transcript download — entry stays pending')
+      return
+    }
     entry.status = 'downloaded'
     savePlan(planPath, plan)
   } catch (e: any) {
@@ -246,8 +285,15 @@ async function processEntry(
 
   scaffoldEpisode(entry.id)
 
+  if (generationRateLimited) {
+    entry.status = 'pending'
+    savePlan(planPath, plan)
+    log.warn('  queue stopped before generation — entry stays pending')
+    return
+  }
+
   const result = await generateOne(entry, sourceId)
-  entry.status = result.ok ? 'generated' : 'failed'
+  entry.status = result.ok && hasGeneratedArtifacts(entry.id) ? 'generated' : 'failed'
   savePlan(planPath, plan)
 
   const durationStr = (result.durationMs / 1000 / 60).toFixed(1) + 'min'
@@ -267,11 +313,11 @@ async function processEntry(
   stats.totalInputTokens += result.inputTokens
   stats.totalOutputTokens += result.outputTokens
   stats.totalDurationMs += result.durationMs
-  if (result.ok) stats.generated++
+  if (entry.status === 'generated') stats.generated++
   else stats.failed++
 
   if (result.isRateLimit) {
-    rateLimited = true
+    generationRateLimited = true
     log.err('  ⚠ Rate limit hit — stopping queue, remaining entries stay pending')
   }
 
@@ -294,11 +340,11 @@ async function main() {
     return
   }
 
-  // Flatten all pending entries with their plan context, sorted by upload_date desc
+  // Flatten all pending entries with their plan context, sorted by published date desc
   const allPending: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
   for (const { source, path, plan } of targetPlans) {
     for (const entry of plan.episodes) {
-      if (entry.status === 'pending') {
+      if (entry.status === 'pending' || entry.status === 'downloaded' || (entry.status === 'needs_transcript' && existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)))) {
         allPending.push({ entry, sourceId: source, plan, planPath: path })
       }
     }
@@ -317,7 +363,7 @@ async function main() {
     const ca = categoryPriority[a.entry.category ?? ''] ?? 99
     const cb = categoryPriority[b.entry.category ?? ''] ?? 99
     if (ca !== cb) return ca - cb
-    return b.entry.upload_date.localeCompare(a.entry.upload_date)
+    return (b.entry.published_sort ?? '').localeCompare(a.entry.published_sort ?? '')
   })
 
   if (allPending.length === 0) {
@@ -333,7 +379,7 @@ async function main() {
   const workers: Promise<void>[] = []
   async function worker(): Promise<void> {
     while (queue.length > 0) {
-      if (rateLimited) {
+      if (generationRateLimited) {
         stats.skippedRateLimit += queue.length
         queue.length = 0
         break

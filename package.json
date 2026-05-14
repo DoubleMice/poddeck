@@ -5,7 +5,6 @@
   "description": "Claude Code driven podcast → Slidev presentation aggregator",
   "scripts": {
     "discover": "tsx scripts/discover.ts",
-    "download": "tsx scripts/download-subs.ts",
     "generate": "tsx scripts/generate-slides.ts",
     "cache:refresh": "tsx scripts/refresh-cache.ts",
     "plan": "tsx scripts/plan.ts",

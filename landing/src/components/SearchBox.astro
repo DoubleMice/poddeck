@@ -20,7 +20,7 @@ const index = episodes.map(e => ({
   tags: e.tags || [],
   summary: (e.summary || '').replace(/\n/g, ' ').slice(0, 200),
   status: e.status,
-  thumbnail: e.thumbnail || `https://img.youtube.com/vi/${e.id}/hqdefault.jpg`,
+  thumbnail: e.thumbnail || '',
   // searchable haystack — lowercase, all fields concatenated
   _hay: [
     e.title,
@@ -74,7 +74,7 @@ const index = episodes.map(e => ({
       results.innerHTML = matches.slice(0, 8).map(m => `
         <a href="${m.status === 'generated' ? m.base : '#'}"
            class="flex items-start gap-3 px-3 py-2 hover:bg-stone-50 border-b border-stone-100 last:border-0 ${m.status !== 'generated' ? 'opacity-60' : ''}">
-          <img src="${m.thumbnail}" data-fallback="https://img.youtube.com/vi/${m.id}/hqdefault.jpg" onerror="if(this.dataset.fallback&&this.src!==this.dataset.fallback){this.src=this.dataset.fallback}" class="w-16 h-9 object-cover rounded flex-shrink-0" loading="lazy" />
+          ${m.thumbnail ? `<img src="${m.thumbnail}" class="w-16 h-9 object-cover rounded flex-shrink-0" loading="lazy" />` : `<div class="w-16 h-9 rounded flex-shrink-0 bg-stone-100 text-[10px] text-stone-400 flex items-center justify-center">RSS</div>`}
           <div class="flex-1 min-w-0">
             <div class="text-sm font-medium text-stone-900 truncate">${escape(m.title)}</div>
             <div class="text-xs text-stone-500 truncate">

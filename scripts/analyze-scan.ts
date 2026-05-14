@@ -36,12 +36,12 @@ function loadAll(): Entry[] {
     for (const line of lines) {
       try {
         const j = JSON.parse(line)
-        if (typeof j.duration !== 'number') continue
+        if (typeof j.duration !== 'number' || !Array.isArray(j.transcripts)) continue
         all.push({
           id: j.id,
           title: j.title || '(no title)',
           duration: j.duration,
-          upload_date: j.upload_date || '',
+          upload_date: j.published_sort || j.upload_date || '',
           source,
         })
       } catch (e) {
@@ -95,7 +95,7 @@ function main() {
     if (longest.length === 0) continue
     console.log(`\n  ${source}:`)
     for (const ep of longest) {
-      console.log(`    ${fmt(ep.duration).padStart(6)}  ${ep.upload_date}  ${ep.title.slice(0, 65)}`)
+    console.log(`    ${fmt(ep.duration).padStart(6)}  ${ep.upload_date}  ${ep.title.slice(0, 65)}`)
     }
   }
 }

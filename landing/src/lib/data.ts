@@ -10,7 +10,7 @@ const PROJECT_ROOT = resolve(process.cwd(), '..')   // landing/ → poddeck/
 export interface Source {
   id: string
   name: string
-  channel: string
+  rss_url?: string
   filter_keywords?: string[]
   color?: string
   description?: string
@@ -32,6 +32,16 @@ export interface EpisodeMeta {
   core_ideas?: string[]
   base?: string
   category?: string
+  article_path?: string
+}
+
+export type ContentFormat = 'slides' | 'article'
+
+export function getAvailableFormats(ep: EpisodeWithSource): ContentFormat[] {
+  const formats: ContentFormat[] = []
+  if (ep.status === 'generated') formats.push('slides')
+  if (ep.article_path) formats.push('article')
+  return formats
 }
 
 // Category definitions with display order
@@ -62,6 +72,14 @@ export function loadSources(): Source[] {
     resolve(PROJECT_ROOT, 'sources.yml'),
   )
   return sources
+}
+
+export function fallbackSource(id: string): Source {
+  return {
+    id,
+    name: id.split('-').map(part => part ? part[0].toUpperCase() + part.slice(1) : part).join(' '),
+    color: '#525252',
+  }
 }
 
 // Build a map of episode id → category from data/plans/*.yml
@@ -98,10 +116,46 @@ export function loadEpisodes(): EpisodeWithSource[] {
       const meta = readYaml<EpisodeMeta>(metaPath)
       meta.base = meta.base || `/episodes/${meta.id}/`
       meta.category = meta.category || categoryMap[meta.id]
-      const sourceRef = sourceMap[meta.source]
-      if (!sourceRef) continue
+      const sourceRef = sourceMap[meta.source] || fallbackSource(meta.source)
       results.push({ ...meta, sourceRef })
       seenIds.add(meta.id)
+    }
+  }
+
+  const plansDir = resolve(PROJECT_ROOT, 'data/plans')
+  if (existsSync(plansDir)) {
+    for (const f of readdirSync(plansDir).filter(f => f.endsWith('.yml'))) {
+      const plan = readYaml<{ source: string; episodes?: Array<{
+        id: string
+        title: string
+        status: string
+        url: string
+        published?: string
+        published_sort?: string
+        duration?: number
+        image?: string
+        summary?: string
+        category?: string
+      }> }>(join(plansDir, f))
+      const sourceRef = sourceMap[plan.source] || fallbackSource(plan.source)
+      for (const ep of plan.episodes || []) {
+        if (seenIds.has(ep.id)) continue
+        results.push({
+          id: ep.id,
+          source: plan.source,
+          title: ep.title,
+          published: ep.published_sort || ep.published,
+          duration: ep.duration ? `${Math.round(ep.duration / 60)}m` : undefined,
+          url: ep.url,
+          thumbnail: ep.image,
+          status: ep.status,
+          summary: ep.summary,
+          category: ep.category,
+          base: `/episodes/${ep.id}/`,
+          sourceRef,
+        })
+        seenIds.add(ep.id)
+      }
     }
   }
 
@@ -112,13 +166,12 @@ export function loadEpisodes(): EpisodeWithSource[] {
   )
   for (const ep of episodes) {
     if (seenIds.has(ep.id)) continue
-    const sourceRef = sourceMap[ep.source]
-    if (!sourceRef) continue
+    const sourceRef = sourceMap[ep.source] || fallbackSource(ep.source)
     results.push({
       ...ep,
       base: ep.base || `/episodes/${ep.id}/`,
       sourceRef,
-      thumbnail: ep.thumbnail || `https://img.youtube.com/vi/${ep.id}/hqdefault.jpg`,
+      thumbnail: ep.thumbnail,
     })
   }
 
@@ -126,8 +179,10 @@ export function loadEpisodes(): EpisodeWithSource[] {
   const statusOrder: Record<string, number> = {
     generated: 0,
     downloaded: 1,
-    queued: 2,
-    failed: 3,
+    pending: 2,
+    queued: 3,
+    needs_transcript: 4,
+    failed: 5,
   }
   const catOrder: Record<string, number> = {
     'ai-tech': 0, 'mind-body': 1, 'science': 2, 'business': 3, 'culture': 4,
@@ -144,6 +199,18 @@ export function loadEpisodes(): EpisodeWithSource[] {
   })
 
   return results
+}
+
+export function loadSourcesWithFallbacks(episodes?: EpisodeWithSource[]): Source[] {
+  const sources = loadSources()
+  const seen = new Set(sources.map(s => s.id))
+  const allEpisodes = episodes ?? loadEpisodes()
+  for (const ep of allEpisodes) {
+    if (seen.has(ep.source)) continue
+    sources.push(ep.sourceRef || fallbackSource(ep.source))
+    seen.add(ep.source)
+  }
+  return sources
 }
 
 export function collectTags(episodes: EpisodeWithSource[]): { tag: string; count: number }[] {

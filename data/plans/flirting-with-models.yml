@@ -1,512 +1,70 @@
 source: flirting-with-models
-refreshed_at: 2026-05-11T14:16:27.977Z
+refreshed_at: 2026-05-14T03:24:06.319Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 72
+total_candidates: 6
 done: 0
-pending: 72
+pending: 0
+needs_transcript: 6
+downloaded: 0
 episodes:
-  - id: S1r6Jpdeomk
+  - id: 1ad4a324-0c27-43fd-b451-b4394faf8e82
     title: John Gu – Crypto Market Making & The Cold Start Problem (S7E30)
-    duration: 4154
-    upload_date: ""
-    url: https://youtube.com/watch?v=S1r6Jpdeomk
-    status: pending
+    duration: 4182
+    published: Mon, 11 May 2026 00:00:00 -0400
+    published_sort: "20260511"
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/1ad4a324-0c27-43fd-b451-b4394faf8e82.mp3
+    image: https://artwork.captivate.fm/1376ae2c-5ab4-42bf-a6f7-3e9ecaa3707e/S3-FlirtingWithModels-with-John-Gu-copy.jpg
+    status: needs_transcript
     priority: 1
-  - id: IJSg-SrMj18
+  - id: cb1a41d7-b422-4e35-9218-a661d5a8cbf4
     title: "Faheem Osman – Commodity QIS: An Under-Appreciated Source of Systematic Returns? (S7E29)"
-    duration: 4017
-    upload_date: ""
-    url: https://youtube.com/watch?v=IJSg-SrMj18
-    status: pending
+    duration: 4016
+    published: Mon, 06 Apr 2026 00:00:00 -0400
+    published_sort: "20260406"
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/cb1a41d7-b422-4e35-9218-a661d5a8cbf4.mp3
+    image: https://artwork.captivate.fm/df762921-cfbb-4ce5-924b-18be8e95e38f/S3-FlirtingWithModels-with-Faheem-Osman.jpg
+    status: needs_transcript
     priority: 1
-  - id: w__p7uL5Mtk
+  - id: 951e8505-07f6-4ffc-b791-72016569f819
     title: Richard Craib - Crowd-Sourced Alpha with Numerai (S7E28)
-    duration: 3331
-    upload_date: ""
-    url: https://youtube.com/watch?v=w__p7uL5Mtk
-    status: pending
+    duration: 3359
+    published: Mon, 23 Feb 2026 07:15:00 -0400
+    published_sort: "20260223"
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/951e8505-07f6-4ffc-b791-72016569f819.mp3
+    image: https://artwork.captivate.fm/9962efb1-4374-43d5-9e74-ce38549c1710/S3-FlirtingWithModels-with-Richard-Craib.jpg
+    status: needs_transcript
     priority: 1
-  - id: 0e71aLRKsbg
+  - id: da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94
     title: Ruslan Fakhrutdinov – Extended Exchange and Vault Tokenization (S7E27)
-    duration: 3453
-    upload_date: ""
-    url: https://youtube.com/watch?v=0e71aLRKsbg
-    status: pending
+    duration: 3481
+    published: Tue, 17 Feb 2026 00:00:00 -0400
+    published_sort: "20260217"
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94.mp3
+    image: https://artwork.captivate.fm/72251723-32e9-4542-9449-f75117687aa9/S3-FlirtingWithModels-With-Ruslan-Fakhrutdinov.jpg
+    status: needs_transcript
     priority: 1
-  - id: B3EG2k6G29M
+  - id: e8459525-96f7-4ef3-adea-b9266f987e60
     title: Angana Jacob - Data as the True Competitive Moat (S7E26)
-    duration: 3415
-    upload_date: ""
-    url: https://youtube.com/watch?v=B3EG2k6G29M
-    status: pending
+    duration: 3442
+    published: Mon, 09 Feb 2026 00:00:00 -0400
+    published_sort: "20260209"
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/e8459525-96f7-4ef3-adea-b9266f987e60.mp3
+    image: https://artwork.captivate.fm/87d89126-48e6-4ed6-a208-6f31b14ea6b2/S3-FlirtingWithModels-with-Angana-Jacob-2MB.jpg
+    status: needs_transcript
     priority: 1
-  - id: Zi5_WrGMpVk
+  - id: eeafe07f-2310-4a58-bde5-6896ef157610
     title: Moritz Heiden & Moritz Seibert – Trend-Following Spreads (S7E25)
-    duration: 4012
-    upload_date: ""
-    url: https://youtube.com/watch?v=Zi5_WrGMpVk
-    status: pending
-    priority: 1
-  - id: jtTl_QKxyq4
-    title: Annanay Kapila – Perpetual Futures Everywhere and All the Time (S7E24)
-    duration: 3951
-    upload_date: ""
-    url: https://youtube.com/watch?v=jtTl_QKxyq4
-    status: pending
-    priority: 1
-  - id: 3u6qR5snViQ
-    title: "Jay Rajamony – Beyond Factors: Reimagining Quant Equity for the Modern Era (S7E23)"
-    duration: 3385
-    upload_date: ""
-    url: https://youtube.com/watch?v=3u6qR5snViQ
-    status: pending
-    priority: 1
-  - id: ZMpCmFDTLsI
-    title: "Vladimir Novakovski – Lighter: The Orderbook for all of Ethereum (S7E22)"
-    duration: 3808
-    upload_date: ""
-    url: https://youtube.com/watch?v=ZMpCmFDTLsI
-    status: pending
-    priority: 1
-  - id: z2PQFQlGErs
-    title: Antti Ilmanen - Understanding Return Expectations (S7E21)
-    duration: 4418
-    upload_date: ""
-    url: https://youtube.com/watch?v=z2PQFQlGErs
-    status: pending
-    priority: 1
-  - id: opgCrql4r1Q
-    title: Chris Carrano – Designing Practical Factor Models (S7E20)
-    duration: 3336
-    upload_date: ""
-    url: https://youtube.com/watch?v=opgCrql4r1Q
-    status: pending
-    priority: 1
-  - id: ipDgfPIFuSM
-    title: Jeff Rosenberg – The Past, Present, and Future of Systematic Fixed Income (S7E19)
-    duration: 4644
-    upload_date: ""
-    url: https://youtube.com/watch?v=ipDgfPIFuSM
-    status: pending
-    priority: 1
-  - id: gmxuM2nIQq0
-    title: Edward Yu – Bringing OTC On-Chain and the VariationalOMNI Perp Dex (S7E18)
-    duration: 2998
-    upload_date: ""
-    url: https://youtube.com/watch?v=gmxuM2nIQq0
-    status: pending
-    priority: 1
-  - id: YXb4-YWTlhc
-    title: Benjamin Hoff – Commodity Futures Surfaces and the Cash-and-Carry Glue (S7E17)
-    duration: 4217
-    upload_date: ""
-    url: https://youtube.com/watch?v=YXb4-YWTlhc
-    status: pending
-    priority: 1
-  - id: QV_-yzDBxyM
-    title: Roxton McNeal and Siddharth Sethi – Building Multi-Strategy QIS Portfolios (S7E16)
-    duration: 3336
-    upload_date: ""
-    url: https://youtube.com/watch?v=QV_-yzDBxyM
-    status: pending
-    priority: 1
-  - id: I4n3KX4zYPA
-    title: Scott Phillips - Finding Ugly Edges in Crypto Markets (S7E15)
-    duration: 4076
-    upload_date: ""
-    url: https://youtube.com/watch?v=I4n3KX4zYPA
-    status: pending
-    priority: 1
-  - id: GtCg6ZCQg04
-    title: Thao Tran – Market Making Illiquid, Non Fungible Assets (S7E14)
-    duration: 3286
-    upload_date: ""
-    url: https://youtube.com/watch?v=GtCg6ZCQg04
-    status: pending
-    priority: 1
-  - id: JJ94MwfGZ-8
-    title: Victor Haghani - The Last of the Tactical Allocators (S7E13)
-    duration: 4340
-    upload_date: ""
-    url: https://youtube.com/watch?v=JJ94MwfGZ-8
-    status: pending
-    priority: 1
-  - id: Nt3u6EtHPzg
-    title: Farouk Jivraj - The Art & Science of Using Alternative Risk Premia (S7E12)
-    duration: 4254
-    upload_date: ""
-    url: https://youtube.com/watch?v=Nt3u6EtHPzg
-    status: pending
-    priority: 1
-  - id: yxqTervPZe8
-    title: Giuseppe Paleologo - Multi-Manager Hedge Funds & Thinking Deeply About Simple Things (S7E11)
-    duration: 5510
-    upload_date: ""
-    url: https://youtube.com/watch?v=yxqTervPZe8
-    status: pending
-    priority: 1
-  - id: Y4JSvu8cM58
-    title: Kris Abdelmessih - Life Through a Volatility Lens (S7E10)
-    duration: 4359
-    upload_date: ""
-    url: https://youtube.com/watch?v=Y4JSvu8cM58
-    status: pending
-    priority: 1
-  - id: XD87UF0KOhI
-    title: Bill Gebhardt - Replicating Discretionary Commodity Trading Systematically (S7E9)
-    duration: 3068
-    upload_date: ""
-    url: https://youtube.com/watch?v=XD87UF0KOhI
-    status: pending
-    priority: 1
-  - id: a5K6hmY5hvc
-    title: Nicolas Mirjolet - Multivariate Trend Following (S7E8)
-    duration: 3881
-    upload_date: ""
-    url: https://youtube.com/watch?v=a5K6hmY5hvc
-    status: pending
-    priority: 1
-  - id: tO-uDoJx_lY
-    title: Markku Kurtti - Diversification is a Negatively Priced Lunch (S7E7)
-    duration: 3445
-    upload_date: ""
-    url: https://youtube.com/watch?v=tO-uDoJx_lY
-    status: pending
-    priority: 1
-  - id: FDgisi4uFfc
-    title: Otto van Hemert - Seasonality Everywhere (S7E6)
-    duration: 2796
-    upload_date: ""
-    url: https://youtube.com/watch?v=FDgisi4uFfc
-    status: pending
-    priority: 1
-  - id: cMUzuRzC6GM
-    title: Clayton Gillespie - A Fundamental View of Quant Equity (S7E5)
-    duration: 3340
-    upload_date: ""
-    url: https://youtube.com/watch?v=cMUzuRzC6GM
-    status: pending
-    priority: 1
-  - id: yzo8_N8tVDc
-    title: Hari Krishnan – Hedging a Commodity Bull Market (S7E4)
-    duration: 3268
-    upload_date: ""
-    url: https://youtube.com/watch?v=yzo8_N8tVDc
-    status: pending
-    priority: 1
-  - id: I3hUyBGBt1s
-    title: Nick Baltas – Multi-Asset, Multi-Strategy Portfolios (S7E3)
-    duration: 4106
-    upload_date: ""
-    url: https://youtube.com/watch?v=I3hUyBGBt1s
-    status: pending
-    priority: 1
-  - id: _On7A7-xoyU
-    title: Bin Ren - text2quant (S7E2)
-    duration: 4575
-    upload_date: ""
-    url: https://youtube.com/watch?v=_On7A7-xoyU
-    status: pending
-    priority: 1
-  - id: mSBSaFWJ_r4
-    title: Charles McGarraugh - "Change in the Market is Accelerating" (S7E1)
-    duration: 4329
-    upload_date: ""
-    url: https://youtube.com/watch?v=mSBSaFWJ_r4
-    status: pending
-    priority: 1
-  - id: pcjSTOKW-D0
-    title: Dean Curnutt – The Reflexivity of Equity Volatility (S6E16)
-    duration: 4671
-    upload_date: ""
-    url: https://youtube.com/watch?v=pcjSTOKW-D0
-    status: pending
-    priority: 1
-  - id: _OR8geLOnm8
-    title: Gerald Rushton - Commodity Strategies (Trend; Carry; Congestion; and Volatility Carry) (S6E15)
-    duration: 2859
-    upload_date: ""
-    url: https://youtube.com/watch?v=_OR8geLOnm8
-    status: pending
-    priority: 1
-  - id: Ud1HYHf3ePA
-    title: Devin Anderson – Strategy versus Structure in Tail Hedging (S6E14)
-    duration: 4178
-    upload_date: ""
-    url: https://youtube.com/watch?v=Ud1HYHf3ePA
-    status: pending
-    priority: 1
-  - id: FLj8STPMUdw
-    title: Martin Tarlie - Bridging the Gap Between Financial Planning and Portfolio Management (S6E13)
-    duration: 3253
-    upload_date: ""
-    url: https://youtube.com/watch?v=FLj8STPMUdw
-    status: pending
-    priority: 1
-  - id: WRhF5-4CgEo
-    title: Grug - Grug (Finally) Teaches Us MEV (S6E12)
-    duration: 2752
-    upload_date: ""
-    url: https://youtube.com/watch?v=WRhF5-4CgEo
-    status: pending
-    priority: 1
-  - id: wBBXiZxnuWA
-    title: Doug Greenig - At the Frontier of Trend Following (S6E11)
-    duration: 3639
-    upload_date: ""
-    url: https://youtube.com/watch?v=wBBXiZxnuWA
-    status: pending
-    priority: 1
-  - id: Fqpgoitfxis
-    title: Pim van Vliet - A Detailed Dive Into Low Volatility Investing (S6E10)
-    duration: 4056
-    upload_date: ""
-    url: https://youtube.com/watch?v=Fqpgoitfxis
-    status: pending
-    priority: 1
-  - id: i7DPfOJ8H5U
-    title: Asif Noor – Modern Systematic Macro (S6E9)
-    duration: 2738
-    upload_date: ""
-    url: https://youtube.com/watch?v=i7DPfOJ8H5U
-    status: pending
-    priority: 1
-  - id: trHgNoUGp40
-    title: Roberto Croce - Trend and Carry Within Assets, Across Assets, and Over Time (S6E8)
-    duration: 3268
-    upload_date: ""
-    url: https://youtube.com/watch?v=trHgNoUGp40
-    status: pending
-    priority: 1
-  - id: r-QaxJgF5kY
-    title: Michele Aghassi - Unintended Bets Everywhere (S6E7)
-    duration: 3266
-    upload_date: ""
-    url: https://youtube.com/watch?v=r-QaxJgF5kY
-    status: pending
-    priority: 1
-  - id: ancF3VDmU3w
-    title: Jason Josephiac - Portable Alpha and Risk Mitigating Strategies (S6E6)
-    duration: 3444
-    upload_date: ""
-    url: https://youtube.com/watch?v=ancF3VDmU3w
-    status: pending
-    priority: 1
-  - id: 5qo5gxmGEt8
-    title: Macrocephalopod - Managing a Mid-Frequency Crypto Prop Desk (S6E5)
-    duration: 3675
-    upload_date: ""
-    url: https://youtube.com/watch?v=5qo5gxmGEt8
-    status: pending
-    priority: 1
-  - id: ZQguNE5KDd0
-    title: Roni Israelov – High Frequency Factors, the Volatility Risk Premium, and Re-Thinking Financial...
-    duration: 5209
-    upload_date: ""
-    url: https://youtube.com/watch?v=ZQguNE5KDd0
-    status: pending
-    priority: 1
-  - id: ZiH4vKr2Heg
-    title: Doug Colkitt - High Frequency Trading, MEV Strategies, and CrocSwap (S6E3)
-    duration: 3652
-    upload_date: ""
-    url: https://youtube.com/watch?v=ZiH4vKr2Heg
-    status: pending
-    priority: 1
-  - id: HqCksxcX49w
-    title: Jeff Yan - High Frequency Crypto Market Making & the Hyperliquid Exchange (S6E2)
-    duration: 4341
-    upload_date: ""
-    url: https://youtube.com/watch?v=HqCksxcX49w
-    status: pending
-    priority: 1
-  - id: YEAU7NfwxyM
-    title: Jason Buck - Designing the Cockroach Portfolio (S6E1)
-    duration: 3320
-    upload_date: ""
-    url: https://youtube.com/watch?v=YEAU7NfwxyM
-    status: pending
-    priority: 1
-  - id: DKQA3RaREzw
-    title: Giuliana Bordigoni - Alternative Markets & Specialist Strategies (S5E14)
-    duration: 2509
-    upload_date: ""
-    url: https://youtube.com/watch?v=DKQA3RaREzw
-    status: pending
-    priority: 1
-  - id: cY_0YZ8bG_g
-    title: Adam Butler - Questioning the Quant Orthodoxy (S5E13)
-    duration: 5067
-    upload_date: ""
-    url: https://youtube.com/watch?v=cY_0YZ8bG_g
-    status: pending
-    priority: 1
-  - id: CExrfbPIaL0
-    title: Kevin Cole - Systematic Multi-Strategy from 100+ Models (S5E12)
-    duration: 3053
-    upload_date: ""
-    url: https://youtube.com/watch?v=CExrfbPIaL0
-    status: pending
-    priority: 1
-  - id: l1_V-vtLplI
-    title: Hari Krishnan - Market Tremors & Tail Hedging (S5E11)
-    duration: 3836
-    upload_date: ""
-    url: https://youtube.com/watch?v=l1_V-vtLplI
-    status: pending
-    priority: 1
-  - id: veZmEy3d0P8
-    title: Harel Jacobson - Trading FX Volatility (S5E10)
-    duration: 3129
-    upload_date: ""
-    url: https://youtube.com/watch?v=veZmEy3d0P8
-    status: pending
-    priority: 1
-  - id: sLwYTNU4Uec
-    title: Andrew Beer - Replicating Hedge Fund Beta (S5E9)
-    duration: 3295
-    upload_date: ""
-    url: https://youtube.com/watch?v=sLwYTNU4Uec
-    status: pending
-    priority: 1
-  - id: IYgudGJFlVs
-    title: Antti Ilmanen - Unexpected Returns (S5E8)
-    duration: 4879
-    upload_date: ""
-    url: https://youtube.com/watch?v=IYgudGJFlVs
-    status: pending
-    priority: 1
-  - id: GQNgyQw2-1Y
-    title: Ralph Smith - Scientific Investing in Fixed Income (S5E7)
-    duration: 3574
-    upload_date: ""
-    url: https://youtube.com/watch?v=GQNgyQw2-1Y
-    status: pending
-    priority: 1
-  - id: MWxqhPCEQmk
-    title: Kai Wu - Mining Unstructured Data for the Intangible (S5E6)
-    duration: 2997
-    upload_date: ""
-    url: https://youtube.com/watch?v=MWxqhPCEQmk
-    status: pending
-    priority: 1
-  - id: ymiv20qxHJ0
-    title: David Sun - Expectancy Hacking (S5E5)
-    duration: 3001
-    upload_date: ""
-    url: https://youtube.com/watch?v=ymiv20qxHJ0
-    status: pending
-    priority: 1
-  - id: k8GZYi2mR9E
-    title: Aneet Chachra - Surfing Flow for Fun and Profit (S5E4)
-    duration: 3706
-    upload_date: ""
-    url: https://youtube.com/watch?v=k8GZYi2mR9E
-    status: pending
-    priority: 1
-  - id: A5AJAvV1spk
-    title: Moritz Seibert & Moritz Heiden - From CTA to web3 (S5E3)
-    duration: 4197
-    upload_date: ""
-    url: https://youtube.com/watch?v=A5AJAvV1spk
-    status: pending
-    priority: 1
-  - id: 17AIvA6R7JY
-    title: LightSpringFox - Crypto Market Making (S5E2)
-    duration: 2860
-    upload_date: ""
-    url: https://youtube.com/watch?v=17AIvA6R7JY
-    status: pending
-    priority: 1
-  - id: KvQXeZ-DgHQ
-    title: Michael Green - The Active Impact of Passive Investing (S5E1)
-    duration: 3798
-    upload_date: ""
-    url: https://youtube.com/watch?v=KvQXeZ-DgHQ
-    status: pending
-    priority: 1
-  - id: xOKYx3py-FQ
-    title: David Berns - How do you build portfolios for human beings? (S4E16)
-    duration: 2762
-    upload_date: ""
-    url: https://youtube.com/watch?v=xOKYx3py-FQ
-    status: pending
-    priority: 1
-  - id: 05lb_Un2QsI
-    title: Russell Korgaonkar - Optimizing the Research Process (S4E15)
-    duration: 3333
-    upload_date: ""
-    url: https://youtube.com/watch?v=05lb_Un2QsI
-    status: pending
-    priority: 1
-  - id: EVZrBO8nbHY
-    title: Andrew Lapthorne - Thematic Baskets and Strong Balance Sheets (S4E13)
-    duration: 3591
-    upload_date: ""
-    url: https://youtube.com/watch?v=EVZrBO8nbHY
-    status: pending
-    priority: 1
-  - id: 3GxdN6tJ6uM
-    title: Greg Obenshain - Quantitative Credit (S4E12)
-    duration: 3182
-    upload_date: ""
-    url: https://youtube.com/watch?v=3GxdN6tJ6uM
-    status: pending
-    priority: 1
-  - id: m1VydljFG-0
-    title: Roxton McNeal - Liability-Driven Investing (S4E11)
-    duration: 3693
-    upload_date: ""
-    url: https://youtube.com/watch?v=m1VydljFG-0
-    status: pending
-    priority: 1
-  - id: Li_L04RmdGg
-    title: Vivek Viswanathan - Quant Equity in China (S4E10)
-    duration: 4278
-    upload_date: ""
-    url: https://youtube.com/watch?v=Li_L04RmdGg
-    status: pending
-    priority: 1
-  - id: jUc_pBPNIhY
-    title: Tobias Carlisle - Realism Over Idealism in Value (S4E9)
-    duration: 4657
-    upload_date: ""
-    url: https://youtube.com/watch?v=jUc_pBPNIhY
-    status: pending
-    priority: 1
-  - id: Xza88ZbW80I
-    title: Sam Trabucco - Perpetual Swaps, Liquidation Cascades, and the USD-BTC-YEN Triangle Trade (S4E8)
-    duration: 3338
-    upload_date: ""
-    url: https://youtube.com/watch?v=Xza88ZbW80I
-    status: pending
-    priority: 1
-  - id: U9WpzFpPqPA
-    title: "Angus Cameron - Trade Structuring: Systematizing a Hidden Edge (S4E6)"
-    duration: 4545
-    upload_date: ""
-    url: https://youtube.com/watch?v=U9WpzFpPqPA
-    status: pending
-    priority: 1
-  - id: jEn6KYT1Gc4
-    title: Guillermo Roditi Dominguez - Path or Destination, Not Both (S4E5)
-    duration: 3888
-    upload_date: ""
-    url: https://youtube.com/watch?v=jEn6KYT1Gc4
-    status: pending
-    priority: 1
-  - id: lkd7oBQu_J8
-    title: Tina Lindstrom - Commodity Volatility (S4E4)
-    duration: 2256
-    upload_date: ""
-    url: https://youtube.com/watch?v=lkd7oBQu_J8
-    status: pending
-    priority: 1
-  - id: _e9cz_4zvYI
-    title: David Fauchier - Paranoid Crypto Cowboys (S4E3)
-    duration: 3933
-    upload_date: ""
-    url: https://youtube.com/watch?v=_e9cz_4zvYI
-    status: pending
+    duration: 4040
+    published: Mon, 12 Jan 2026 00:00:00 -0400
+    published_sort: "20260112"
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/eeafe07f-2310-4a58-bde5-6896ef157610.mp3
+    image: https://artwork.captivate.fm/a3bec9ad-710f-489d-b563-e85bd52b85ad/with-Moritz-Heiden-and-Moritz-Seibert-copy.jpg
+    status: needs_transcript
     priority: 1

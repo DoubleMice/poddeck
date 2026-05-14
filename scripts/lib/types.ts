@@ -1,12 +1,16 @@
 export interface Source {
   id: string
   name: string
-  channel: string
+  rss_url?: string
   filter_keywords?: string[]
   episode_limit?: number
   auto_tag?: boolean
   color?: string
   description?: string
+  min_duration?: number
+  min_date?: string
+  cache_limit?: number
+  use_keywords_in_plan?: boolean
 }
 
 export interface SourcesFile {
@@ -15,6 +19,7 @@ export interface SourcesFile {
 
 export type EpisodeStatus =
   | 'queued'
+  | 'needs_transcript'
   | 'downloading'
   | 'downloaded'
   | 'generating'
@@ -34,6 +39,17 @@ export interface Episode {
   error?: string
 }
 
+export interface EpisodeMeta extends Episode {
+  guest?: string
+  guest_role?: string
+  thumbnail?: string
+  summary?: string
+  core_ideas?: string[]
+  article_path?: string
+  base?: string
+  category?: string
+}
+
 export interface EpisodesFile {
   episodes: Episode[]
 }
@@ -43,7 +59,7 @@ export interface QueueEntry {
   source: string
   title: string
   url: string
-  uploadDate?: string
+  published?: string
 }
 
 export interface QueueFile {

@@ -5,6 +5,10 @@ You are generating a Slidev presentation deck for ONE podcast episode.
 - **Episode ID**: `{{ID}}`
 - **Source**: `{{SOURCE}}`
 - **Title**: `{{TITLE}}`
+- **Source episode URL**: `{{URL}}`
+- **Published**: `{{PUBLISHED}}` (use exactly this `YYYY-MM` value in `meta.yml`)
+- **Duration**: `{{DURATION}}` (use exactly this display value in `meta.yml`)
+- **Thumbnail**: `{{THUMBNAIL}}`
 - **Transcript file**: `data/transcripts/{{ID}}.txt`
 - **Episode directory** (already scaffolded with package.json, global-bottom.vue, public/ templates): `episodes/{{ID}}/`
 
@@ -12,6 +16,7 @@ You are generating a Slidev presentation deck for ONE podcast episode.
 
 1. `episodes/{{ID}}/slides.md` — the Slidev markdown
 2. `episodes/{{ID}}/meta.yml` — episode metadata for the landing page
+3. `episodes/{{ID}}/article.html` — standalone HTML article
 
 ## Workflow (follow in order)
 
@@ -54,6 +59,22 @@ drawings:
 ### Phase 3 — Write `meta.yml`
 
 Use the exact schema from RULE 9 in the system prompt. Only use tags that exist in the root `tags.yml`.
+Use the source episode URL, published date, duration, and thumbnail from the input block above exactly as provided. Do not infer these fields from the episode ID or transcript length.
+
+### Phase 3.5 — Generate `article.html`
+
+Produce a standalone, self-contained HTML article at `episodes/{{ID}}/article.html`.
+
+**Content**: Follow the same themes and quotes you extracted in Phase 1. Write narrative prose for reading, not bullet points.
+- Header: title, guest, source, date
+- "Why this matters" overview with 4-6 styled topic cards (reuse the color card system from slides)
+- 8-12 themed sections, each with a heading and 2-4 paragraphs
+- "核心金句" block with 4-6 grep-verified quotes with context labels
+- Footer with source episode link
+
+**Format**: Self-contained HTML with inline `<style>`. No external CSS, no JavaScript, no images. Clean typography: system font stack, max-width ~720px, comfortable line-height. Responsive.
+
+**Write to file**: `Write: episodes/{{ID}}/article.html` then `Bash: wc -c episodes/{{ID}}/article.html` to confirm (> 5KB).
 
 ### Phase 4 — Build and self-audit
 
@@ -79,6 +100,7 @@ Output a JSON summary on stdout:
   "diagrams_count": <number>,
   "quotes_verified": <number>,
   "audit_passes": <number>,
+  "article_written": true,
   "notes": "anything notable"
 }
 ```
