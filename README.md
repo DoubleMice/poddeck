@@ -99,15 +99,15 @@ git commit -m "generate rss episode"
 git push
 ```
 
-push 到 `main` 会触发 GitHub Pages 部署到 `http://doublemice.github.io/poddeck/`。
+生成并部署由手动或定时 GitHub Actions 触发，发布地址为 `http://doublemice.github.io/poddeck/`。
 
 ## GitHub Actions 生成
 
 仓库提供三个 workflow：
 
 - `Discover`：定时刷新 RSS cache 和 plan，提交 `needs_transcript` / `pending` 队列。
-- `Deploy to GitHub Pages`：push `main` 或手动触发后，只构建并部署已有内容。
-- `Generate and Deploy`：手动触发，执行 `cache:refresh → plan → plan:run → build → commit → deploy`。
+- `Deploy to GitHub Pages`：手动触发，只构建并部署已有内容。
+- `Generate and Deploy`：每天定时或手动触发，执行 `cache:refresh → plan → plan:run → commit → build → deploy`。
 
 `Generate and Deploy` 需要在 GitHub repository secrets 中配置：
 
@@ -131,6 +131,8 @@ ENABLE_TOOL_SEARCH=true
 - `source`：可选 source id，例如 `tbpn`；留空表示所有 source。
 - `limit`：生成数量上限，默认 `1`。
 - `category`：可选分类过滤。
+
+push 到 `main` 不触发 GitHub Actions；自动生成与部署只来自定时任务或手动 workflow。
 
 ## 添加新 RSS 源
 

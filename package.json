@@ -12,7 +12,7 @@
     "analyze": "tsx scripts/analyze-scan.ts",
     "sync": "echo 'TODO: P4'",
     "build": "tsx scripts/build-all.ts",
-    "preview": "npx serve dist -p 4173",
+    "preview": "npx --yes serve@14.2.6 dist -p 4173",
     "dev:landing": "echo 'TODO: P4'",
     "dev:episode": "bash -c 'cd episodes/$0 && npx slidev --port 3031'"
   },

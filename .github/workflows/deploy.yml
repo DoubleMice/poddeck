@@ -1,6 +1,6 @@
 name: Deploy to GitHub Pages
 
-# 手动触发（workflow_dispatch）+ push main 自动部署
+# 手动触发静态部署；生成与定时部署由 generate-and-deploy.yml 负责
 on:
   workflow_dispatch:
     inputs:
@@ -8,8 +8,6 @@ on:
         description: '部署原因 (可选, 仅作记录)'
         required: false
         default: 'manual deploy'
-  push:
-    branches: [main]
 
 env:
   PODDECK_BASE: /poddeck/
@@ -34,7 +32,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 9.15.9
 
       - name: Setup Node
         uses: actions/setup-node@v4
