@@ -1,21 +1,75 @@
 source: unchained
-refreshed_at: 2026-05-14T06:29:42.590Z
+refreshed_at: 2026-05-15T02:11:44.416Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 124
+total_candidates: 125
 done: 0
 pending: 0
-needs_transcript: 124
+needs_transcript: 125
 downloaded: 0
 episodes:
+  - id: 268089a0-4f38-11f1-9a58-ff1b070f08af
+    title: "Uneasy Money: Why the Broken Pre-IPO Secondary Markets Won't Be Fixed Anytime Soon"
+    duration: 4571
+    published: Fri, 15 May 2026 00:08:00 -0000
+    published_sort: "20260515"
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3
+    image: https://megaphone.imgix.net/podcasts/268089a0-4f38-11f1-9a58-ff1b070f08af/image/796813f58062aea5e679cd32b7b3068f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Anthropic is voiding secondary market trades. Who gets hurt — WhatsApp scammers, Forge buyers, or the founders?
+      Plus: why continuous synthetic pricing is coming for every pre-IPO company.
+
+
+      Thank you to our sponsors!⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+
+
+      Multichain Advisors: Get help navigating TGEs, go‑to‑market, BD and partnerships, capital markets advisory, PR,
+      media placements, KOL activations and more at multichainadv.com.
+
+
+      Coinbase: Get 20% off the first year of your Coinbase One annual plan at coinbase.com/unchained.
+
+
+      Anthropic and OpenAI are moving to void secondary market trades — and Kain, Tay, and Luca think that's only going
+      to work if they're serious about it, which means a lawsuit is probably coming.
+
+
+      This week on Uneasy Money they trace the full anatomy of the pre-IPO SPV fraud wave, explain why synthetic
+      perpetual markets will eventually price every in-demand private company continuously whether founders want it or
+      not, and dig into the latest AI hacks. Tay breaks down how attackers are now using local on-device Gemini APIs to
+      construct malware on the fly, and Kain shares the story of an agent that caught a slow-drain attack in 90 seconds
+      that humans missed for 12 hours.
+
+
+      Luca explains why Circle's Arc token is a brilliant move for Circle equity holders even if it changes nothing for
+      ETH or Solana. Plus: the Aave/Kelp court update and why the Gerstein lawyers' argument that every victim needs to
+      show up in court is fundamentally incompatible with how onchain recovery works.
+
+
+      Hosts:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠, CEO of Pudgy Penguins
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 58e92bbe-4f37-11f1-8faf-2342ff572b86
     title: "DEX in the City: Will the CLARITY Act Pass? Three Crypto Lawyers Give Their Odds"
     duration: 2962
-    published: Thu, 14 May 2026 01:50:00 -0000
+    published: Thu, 14 May 2026 15:37:00 -0000
     published_sort: "20260514"
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1930876733.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1930876733.mp3
-    image: https://megaphone.imgix.net/podcasts/58e92bbe-4f37-11f1-8faf-2342ff572b86/image/0be2ccc7744f5d692200fb71f7cbb1bd.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    image: https://megaphone.imgix.net/podcasts/58e92bbe-4f37-11f1-8faf-2342ff572b86/image/0aa1c09a6b964ca40e28710421fc0866.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
       As a new CLARITY Act draft dropped, KK, Vy, and guest Josh Riezman of GSR give their passage odds and explain the
       one developer protection provision that matters most.

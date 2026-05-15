@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cerebras IPO、Fed Chair Warsh、Netflix 广告与 VC 品牌战 — TBPN 2026年5月14日</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+  font-size:17px;line-height:1.75;color:#1a1a2e;background:#f8f9fa;
+  -webkit-font-smoothing:antialiased;
+}
+article{max-width:720px;margin:0 auto;padding:48px 24px 80px;background:#fff}
+h1{font-size:28px;line-height:1.35;margin-bottom:8px;color:#111}
+h2{font-size:22px;margin:48px 0 16px;padding-bottom:8px;border-bottom:2px solid #e9ecef;color:#222}
+h3{font-size:18px;margin:32px 0 12px;color:#333}
+p{margin:16px 0}
+.meta{font-size:14px;color:#868e96;margin-bottom:32px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+@media(max-width:640px){.cards{grid-template-columns:1fr}}
+.card{padding:16px;border-radius:8px;font-size:15px;line-height:1.55}
+.card.blue{background:#e7f5ff;border-left:4px solid #1971c2}
+.card.green{background:#d3f9d8;border-left:4px solid #2f9e44}
+.card.yellow{background:#fff3bf;border-left:4px solid #f08c00}
+.card.purple{background:#f3f0ff;border-left:4px solid #7950f2}
+.card.orange{background:#fff4e6;border-left:4px solid #e8590c}
+.card.red{background:#fff0f0;border-left:4px solid #e03131}
+.card strong{display:block;margin-bottom:4px;font-size:16px}
+blockquote{
+  margin:24px 0;padding:20px 24px;background:#f8f9fa;border-left:4px solid #1971c2;
+  font-style:italic;font-size:16px;line-height:1.7;border-radius:0 8px 8px 0;
+}
+blockquote .attr{display:block;margin-top:8px;font-size:13px;font-style:normal;color:#868e96}
+.golden{background:#fffbeb;border:1px solid #f59e0b;border-radius:12px;padding:0 24px 24px;margin:40px 0}
+.golden h2{color:#b45309;border-bottom-color:#fcd34d;margin-top:20px}
+.golden-item{padding:14px 16px;margin:10px 0;border-radius:8px;font-style:italic;line-height:1.7}
+.golden-item:nth-child(2){background:#e7f5ff;border-left:4px solid #1971c2}
+.golden-item:nth-child(3){background:#d3f9d8;border-left:4px solid #2f9e44}
+.golden-item:nth-child(4){background:#f3f0ff;border-left:4px solid #7950f2}
+.golden-item:nth-child(5){background:#fff3bf;border-left:4px solid #f08c00}
+.golden-item:nth-child(6){background:#fff4e6;border-left:4px solid #e8590c}
+.golden-item:nth-child(7){background:#fff0f0;border-left:4px solid #e03131}
+.golden-item .ctx{display:block;margin-top:6px;font-size:13px;font-style:normal;color:#868e96}
+.full{grid-column:1/-1}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid #e9ecef;font-size:14px;color:#868e96;text-align:center}
+footer a{color:#1971c2}
+</style>
+</head>
+<body>
+<article>
+
+<h1>一盘大棋：Cerebras IPO、AI 推理速度革命与芯片供应链的范式转移</h1>
+<div class="meta">
+2026年5月14日 · <a href="https://share.transistor.fm/s/552a63af">TBPN</a> · 3小时14分钟<br>
+嘉宾：Andrew Feldman · Amy Reinhard · Ben Hylak · Doug O'Laughlin · Eric Vishria · Steve Vassallo
+</div>
+
+<div class="cards">
+<div class="card blue"><strong>🏭 Cerebras IPO 当日</strong>晶圆级芯片公司以 $488亿估值上市，股价从 $1.85 开盘跳至 $3.50。CEO 与两位早期投资人在 IPO 当天同台。</div>
+<div class="card green"><strong>⚡ AI 推理速度价值重估</strong>Semi Analysis 数据揭示：用户愿为快速推理支付 6 倍溢价。"快"正在成为 AI 的核心价值维度。</div>
+<div class="card yellow"><strong>🏛 美联储换帅</strong>Kevin Warsh 以 54-45 史上最窄票差出任 Fed 主席，在 stagflation 阴影下接管。</div>
+<div class="card purple"><strong>🎬 VC 品牌战</strong>General Catalyst 攻击性广告激怒 a16z — 两家的投资组合几乎完全重叠。</div>
+<div class="card orange full"><strong>📺 Netflix 广告首谈</strong>广告业务总裁 Amy Reinhard 首次接受外部播客对谈，从"无广告"到自建技术栈的 18 个月。</div>
+</div>
+
+<h2>1. Cerebras：餐盘大小的芯片与十年过夜成功</h2>
+<p>Cerebras 的核心理念简单到危险：不把晶圆切成小块再封装成 GPU/CPU，而是把整片晶圆（通常刻几十个芯片）当作一颗芯片来设计。WSE-3 拥有 4 万亿晶体管，是地球上最大的单一处理器。</p>
+<p>这个想法听起来很美，但实现它意味着面对一系列工程学上的"硬问题"：如何提高一整片晶圆的良率（一颗缺陷就报废整片）？如何给餐盘大小的芯片供电和散热？如何在数千个连接点上维持信号完整性？</p>
+<p>Foundation Capital 的 Steve Vassallo 将 Cerebras 描述为"五家创业公司合体"——良率、供电、散热、信号连续性、系统集成，五个问题 <em>stacked</em>（叠加），任何一个失败就等于全盘皆输。正如他所说：</p>
+<blockquote>"Andrew's a very good negotiator, but he's also learned that he can't negotiate with the second law of thermodynamics."<span class="attr">— Steve Vassallo, Foundation Capital</span></blockquote>
+<p>而 Andrew Feldman 本人则淡然地说，在硬件行业如果有人告诉你这是一条直线，你可以直接认定他在撒谎。第一代芯片是"高级原型"，第二代才能消除工程问题，第三代才真正起飞。WSE-3 就是他们的第三代。</p>
+
+<h2>2. "没人关心你有多快"——从无人问津到一夜成名</h2>
+<p>Benchmark 的 Eric Vishria 回忆起 2016 年第一次见 Andrew 的场景：团队页非常出色，第三页 slide 写着一句极其挑衅的话——</p>
+<blockquote>"GPUs actually suck for deep learning. They just happen to be 100 times better than CPUs."<span class="attr">— Andrew Feldman 的 2016 Series A 路演 slide</span></blockquote>
+<p>"那一刻一个灯泡亮了起来，"Vishria 说。"当然，为什么图形处理器会是深度学习的最佳方案？"他坦言，自己当时对硬件有多难"极其天真"——"In venture, it's very useful to be naive."</p>
+<p>Series A 异常顺利：打了 8 个电话，拿了 8 个 term sheet。但 2020 到 2023 年是一个漫长的"黑洞期"：芯片造出来了，速度极快，但 AI 被认为"有趣却没用"。直到 2025 年 ChatGPT 引爆了推理需求，当模型变得足够聪明以至于真正有用时，速度才变成了价值。Feldman 总结道：</p>
+<blockquote>"Nobody cares about how fast you are when it's a novelty. But starting with GPT in 2025, the models got so darn smart they became useful. And suddenly everybody wanted to use AI."<span class="attr">— Andrew Feldman</span></blockquote>
+
+<h2>3. 速度溢价：6 倍价格换 2 倍速度？用户说 Yes</h2>
+<p>Semi Analysis 的 Doug O'Laughlin 提供了一个数据驱动的视角。他们的团队在 4 月的 AI 支出达到了 $1000 万年化运营率，其中 80% 花在了 Opus 4.6 Fast Mode 上——一个价格为标准模式 6 倍、速度提升约 2 倍的产品。</p>
+<p>这违背了"人们会选择最聪明模型"的理性假设。TBPN 主持人给出了一系列类比：如果两个能力相同的员工一个速度快 5 倍，在组织内创造的价值是数量级的差异；电商页面延迟每 100 毫秒可能损失 1% 的转化率；当你能一次读完一整页维基百科而非逐字等待流式输出时，体验的本质已经变了。</p>
+<p>Feldman 把快速推理比作宽带替代拨号上网：现在给你多少钱你愿意换回拨号？每月 $1000？$1500？答案是"多少钱都不行"。他相信快速推理将以同样的方式成为整个市场的标准。</p>
+
+<h2>4. SRAM 天花板与"模型联邦"</h2>
+<p>Doug O'Laughlin 也指出了 Cerebras 面临的核心技术风险：SRAM（片上静态随机存储器）缩放已接近物理极限。WSE-2 有 40 GB 片上内存，WSE-3 仅提升到 44 GB——一个制程节点的迭代只带来了 10% 的增长。对于万亿参数级别的模型，单晶圆的内存远远不够。</p>
+<p>但 Feldman 提出了一个有趣的概念——"模型联邦"（confederacy of models）：在未来的 agentic 工作流中，最大的模型（"高级副总裁"级别）负责战略决策和任务委派，而 Cerebras 上的快速小模型负责执行高度并行化的子任务。这不是替代 GPU 的关系，而是互补——就像 CPU 和 GPU 最终在数据中心中共存一样。</p>
+<p>Doug 对此给出了一个经典的半分析式总结：</p>
+<blockquote>"When it first started, was like, oh, yeah. What are you going to do? 1% of a very large market? But now that we're here, not ironically, 1% of a very large market works."<span class="attr">— Doug O'Laughlin</span></blockquote>
+
+<h2>5. CUDA 锁定被高估了吗？</h2>
+<p>Feldman 用三个反例论证了 CUDA 生态锁定的说法可能被夸大：Gemini 3 在 TPU 上训练，Anthropic 的模型在 Tranium 上训练，Cerebras 负责 Codex 5.3 Spark 的推理——三者全部零 CUDA。他指出，"一些最好的、最有意思的模型，都是在没有 CUDA 的情况下做出来的。"</p>
+<p>这一观点的背景是 AI 芯片领域的"disaggregation"趋势：transformer 架构的不同部分（prefill、decode、attention）正在被拆分到不同的专用硬件上运行。Groq LPU 可以接在 NVIDIA GV200 机架后面处理 decode；Cerebras 则更适合作为"孤岛"——一切在片内完成，极快但不易互联。</p>
+<p>作者概括：在模型架构本身仍在快速演化的阶段，任何"最优硬件组合"的判断都存在巨大的不确定性。Cerebras 不需要在每一个维度上击败 NVIDIA，它只需要拥有一个足够大的细分市场。</p>
+
+<h2>6. Kevin Warsh 与美联储的 stagflation 考验</h2>
+<p>同日新闻：Kevin Warsh 以 54-45 的票数被确认为第 17 任美联储主席——这是自 1977 年参议院确认成为法定要求以来的最窄票差。仅有一名民主党人（宾夕法尼亚州的 John Fetterman）投了赞成票。</p>
+<p>Warsh 接手的是一手极其棘手的牌：美国正面临 stagflation（经济停滞 + 通胀）的阴影。在这种环境中，降息会恶化通胀，加息会恶化停滞——任何操作都是取舍。与此同时，特朗普公开要求降息，对美联储独立性的攻击也前所未有地公开化。</p>
+<p>Jerome Powell 拒绝离开美联储理事会。他计划继续留在理事会，"你得把我拖出去"——Powell 以此回应特朗普要求他离开的压力。主持人的评论是：Powell 可能不是"史上最佳"美联储主席（他没有面对 Bernanke 所面对的 2008 年级别危机），但他的两届任期各获至少 80 票确认，在两党中拥有一些独特的公信力。</p>
+
+<h2>7. Netflix 广告：从"绝不做广告"到自建技术栈</h2>
+<p>Amy Reinhard 掌管 Netflix 广告业务两年半。她回忆说，Netflix 不做广告曾经是一个"战略性赌注"——2021-22 年内部讨论引入广告时，公司内部充满了"焦虑"（angst），因为这代表了战略和文化上的巨大转变。</p>
+<p>最初与 Microsoft 合作快速启动，但 18 个月前 Netflix 决定自建广告技术栈。一年前正式上线——Reinhard 说她自己需要不断提醒自己，这个技术栈"才一岁"。</p>
+<p>关键的差异化策略是低广告负载和低频次——优先保证会员体验。内容策略上，Netflix 既有像 Shonda Rhimes 这样从广播电视时代过来的编剧（她们天然会在剧本中写广告断点），也有流媒体原生创作者——Netflix 的 AI 系统需要找到"自然断点"，确保广告不会出现在台词中间。</p>
+<p>一个有趣的旁注：当被问及游戏内广告何时上线时，Reinhard 的回答是"我们还没想过，未来 2-3 年的路线图已经被基础功能填满了"——但她补充道："I've learned to never say never at Netflix."</p>
+
+<h2>8. GC vs a16z：VC 广告战与投资组合重叠的讽刺</h2>
+<p>General Catalyst 发布了一支 30 秒广告：一只 AI 机器狗 "Woof AI" 失控破坏办公室，演员扮演的 GC 对这笔投资说"我们有很高的责任标准"。这支广告被广泛解读为对 a16z 投资风格的直接讽刺——Marc Andreessen 连发约 45 条引用推文回应。</p>
+<p>讽刺之处在于投资组合的重叠程度。TBPN 主持人指出：GC 和 a16z 共同投资了 Calc AI、Polymarket、Anduril 等几乎所有当前最具争议的科技公司。他们在 cap table 上"几乎总是牵着手"。</p>
+<p>主持人的评论是："这对整个行业不利"——两个平台级基金互相进行 ad hominem 攻击，是"从自己的玻璃城堡里扔石头"。更聪明的策略是将"反派"设定为停滞（stagnation）、NIMBYism 或地缘竞争的威胁——这是整个行业可以团结面对的对手。</p>
+
+<h2>9. Agent 可观测性与"AGI = 循环次数"</h2>
+<p>Raindrop 的 CTO Ben Hylak 带来了一个务实而深刻的视角。Raindrop 做的是 agent 生产环境的自愈：当 agent 出问题时，自动检测并修复。当天他们发布了 braindrop.ai/workshop——一个免费开源的本地 trace 查看器。</p>
+<p>Hylak 指出了一个看似显而易见但被长期忽视的问题：编码 agent（如 Claude Code）看不到自己的 trace，所以遇到错误只能"瞎编"解决方案。他提出了一个重新定义 AGI 的工程视角：</p>
+<blockquote>"A lot of 'do we have AGI or not' is how many loops in a row can you do before things just end catastrophically."<span class="attr">— Ben Hylak, Raindrop CTO</span></blockquote>
+<p>一个循环可能完美执行，但多个循环叠加后错误累积，最终导致灾难性失败。AGI 在这个视⻆下不是一个"智能"的定义问题，而是一个工程可靠性问题。Hylak 的另一个观察是：公司正在被迫将产品 API 化（如 PhotoShop 的 MCP 集成），但如果没人触碰你的 UI，你在用户面前的触点就消失了——这和星巴克不想让你不下载 App 就点单是同一个逻辑。</p>
+
+<h2>10. AI 泡沫 vs 工业革命</h2>
+<p>Doug O'Laughlin 对 AI 是否处于泡沫的判断出奇的微妙。他从多个维度提供了证据：</p>
+<p>首先，"真正的顶部特征是每个人都在喊 bullish"——而现在远非如此，许多聪明人仍在喊"这是泡沫"。其次，公开市场的估值水平看起来仍然合理：Google、Amazon、Apple 的 PE 倍数没有像 1999 年那样失控。第三，Lab 公司的营收倍数比 .com 时代的峰值低 1-2 个数量级。</p>
+<p>但更深层的论点是 Doug 对 AI 本质的判断。他认为这可能比互联网更大——不是一个量级的优化，而是对社会基础设施本身的改写。他甚至提出了一个令人不安的设想：GDP 这个 1930 年代发明的统计概念，可能根本无法衡量 AI 时代的产出——"GDP might be broken as a concept."</p>
+<p>TBPN 主持人补充了一个关键的区分：互联网泡沫时期，基础设施（互联网本身）还在建设中；而 AI 是叠加在已建成互联网上的"加速层"——它让已有的一切更快、更智能。因为底层基础设施已经存在，扩散速度将远超互联网。</p>
+
+<h2>11. 芯片供应链、空间数据中心与"工作负载驱动"的投资哲学</h2>
+<p>Doug 对 TSMC 供应链的分析揭示了 AI 芯片短缺的另一个维度：清洁室是长周期资产（从决定到投产需 3 年），TSMC 不可能两年前就确信今天的市场需求。市场上每一寸未被使用的清洁室都在被抢购——从旧电力芯片厂到显示面板厂。</p>
+<p>关于空间数据中心，Feldman 的判断是"8-12 年"，而非"3-5 年"——但这不代表不该做。Cerebras 的大芯片在太空有独特优势（跨芯片通信需求更少），但核心约束不在芯片上。</p>
+<p>Steve Vassallo 提供了一个"工作负载驱动"的投资框架：当一种计算工作负载出现阶跃式增长时（PC 时代的串行编程 → x86；图形时代的并行浮点运算 → GPU），总会产生专为该工作负载优化的新硬件架构。AI 大规模矩阵乘法正是这样一次阶跃——这正是 Cerebras 10 年前下注的核心逻辑。</p>
+<p>一个有趣的历史连线：Solana 创始人 Anatoly Yakovenko 选择 Foundation Capital 的原因之一，正是因为他们投了 Cerebras。"你们认真对待硬问题"——分布式系统、低延迟计算、密码学，吸引的是同一类工程师。</p>
+
+<h2>12. Figure 机器人争议与 Wix 的 SaaSpocalypse</h2>
+<p>节目中穿插讨论了 Figure 的 24 小时连续自主运行直播——Brett Adcock 声称机器人 100% 自主、零遥操作、3 秒/包裹已达人类水平。但社区质疑跨体伸臂动作可能是 VR 遥操作数据训练的策略表现，而非真正的"自主"。主持人评论：即使存在遥操作成分，这个 demo 仍然令人印象深刻；但更根本的问题是——人形真的是包裹分拣的最佳形态吗？现有的专用分拣机已经运转了几十年。</p>
+<p>另一个信号：Wix 股价从 ZIRP 时代的 $300 跌至 $52，在 vibe coding 工具的冲击下持续承压。Squarespace 在 2024 年 10 月被私有化——时机极其不幸，恰好在 AI 可以"一句话生成网站"之前。</p>
+
+<div class="golden">
+<h2>核心金句</h2>
+
+<div class="golden-item">
+"And nobody cares about how fast you are when it's a novelty."
+<span class="ctx">— Andrew Feldman，解释为什么 Cerebras 在 2019 年造出了最快的芯片却无人问津</span>
+</div>
+
+<div class="golden-item">
+"GPUs actually suck for deep learning. They just happen to be 100 times better than CPUs."
+<span class="ctx">— Eric Vishria 回忆 Andrew Feldman 2016 年 Series A 路演的第 3 页 slide</span>
+</div>
+
+<div class="golden-item">
+"Andrew's a very good negotiator, but he's also learned that he can't negotiate with the second law of thermodynamics."
+<span class="ctx">— Steve Vassallo，描述 Cerebras 面对的根本物理约束</span>
+</div>
+
+<div class="golden-item">
+"1% of a very large market works."
+<span class="ctx">— Doug O'Laughlin，总结 Cerebras 不需要击败 NVIDIA</span>
+</div>
+
+<div class="golden-item">
+"A lot of 'do we have AGI or not' is how many loops in a row can you do before things just end catastrophically."
+<span class="ctx">— Ben Hylak，将 AGI 重新定义为循环可靠性</span>
+</div>
+
+<div class="golden-item">
+"GDP might be broken as a concept. It got invented in the 1930s to measure how much output you could make, to not screw over the domestic economy for World War II."
+<span class="ctx">— Doug O'Laughlin，关于 AI 可能如何颠覆我们测量经济的方式</span>
+</div>
+</div>
+
+<footer>
+<a href="https://share.transistor.fm/s/552a63af">收听完整对谈 → TBPN，2026年5月14日，3小时14分钟</a>
+</footer>
+
+</article>
+</body>
+</html>
