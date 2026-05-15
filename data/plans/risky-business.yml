@@ -1,13 +1,35 @@
 source: risky-business
-refreshed_at: 2026-05-15T02:11:44.473Z
+refreshed_at: 2026-05-15T19:27:24.926Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 25
+total_candidates: 26
 done: 0
 pending: 0
-needs_transcript: 25
+needs_transcript: 26
 downloaded: 0
 episodes:
+  - id: SOAPBOX107
+    title: "Soap Box: Where does AI fit into cloud security?"
+    duration: 2017
+    published: Fri, 15 May 2026 14:55:09 +1000
+    published_sort: "20260515"
+    url: https://risky.biz/SOAPBOX107/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX107.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this sponsored soap box edition of the Risky Business podcast Patrick Gray chats with Toni de la Fuente, the
+      founder of Prowler.
+
+
+      Prowler started off as a bunch of scripts in a trenchcoat, then became an open source cloud security tool, and
+      it’s now a venture-funded cloud security business. In this interview Toni talks us through how AI is changing the
+      game for him as an open source project owner, and as a vendor. In short, reports of the death of IT and security
+      tooling at the hands of frontier models have been greatly exaggerated.
+
+
+      This episode is also available on Youtube.
+    status: needs_transcript
+    priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #837 -- GitHub Actions footgun claims TanStack"
     duration: 3915
