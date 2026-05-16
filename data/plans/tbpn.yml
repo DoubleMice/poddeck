@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-05-16T06:05:45.538Z
+refreshed_at: 2026-05-16T19:02:00.084Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 19
-done: 0
-pending: 18
+done: 1
+pending: 17
 needs_transcript: 1
 downloaded: 0
 episodes:
@@ -62,7 +62,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: c38ec0df-dc01-4420-8394-e23d3f5fbbfc
     title: Trial Update, AI SPVs, BuzzFeed Sold | Doomberg, Sahir Jaggi, Sam Blond, Kevin Hartz, Alex Shan, Glen Wise, Roger
