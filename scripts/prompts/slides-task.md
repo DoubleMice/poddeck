@@ -40,6 +40,13 @@ Follow the structure in the system prompt (RULE 4):
 
 Excalidraw diagrams: first check `episodes/{{ID}}/public/` for reusable templates that fit your themes. If you need a new diagram, write minimal JSON following the pattern in the existing templates.
 
+Layout capacity rules:
+- Treat every slide as a fixed 16:9 poster. There is no scroll area in export.
+- Dense overview/card pages must use `mt-4`, `gap-3`, `p-3`, `text-sm`, and short 1-2 sentence cards.
+- Split any page with 7+ cards, 7+ quotes, paragraph text inside 4/5-column grids, or two independent `#` headings.
+- Keep core quotes to 4-6 quotes per page. Use a second quotes page when needed.
+- Keep two-cols text concise and Excalidraw width at `w-[460px]` or `w-[480px]`.
+
 Frontmatter:
 ```yaml
 ---
@@ -79,15 +86,16 @@ Produce a standalone, self-contained HTML article at `episodes/{{ID}}/article.ht
 ### Phase 4 — Build and self-audit
 
 1. `cd episodes/{{ID}}` then `Bash: npx slidev export --format png --output audit` to render every slide to PNG
-2. For EACH slide PNG in `audit/`, `Read` the image and check:
+2. From repo root, run `Bash: pnpm run audit:layout -- --id={{ID}}`
+3. For EACH slide PNG in `audit/`, `Read` the image and check:
    - Text overflow / layout breaks
    - Empty or nearly-empty slides (density too low)
    - Diagrams rendering correctly
    - Chinese characters display OK
    - Back button doesn't overlap content
-3. For EACH quote you wrote, `Grep` the transcript to confirm the exact phrase exists
-4. Fix every issue, then rebuild and re-audit
-5. When clean, delete `audit/` directory
+4. For EACH quote you wrote, `Grep` the transcript to confirm the exact phrase exists
+5. Fix every issue, then rebuild and re-audit
+6. When clean, delete `audit/` directory
 
 ### Phase 5 — Report back
 

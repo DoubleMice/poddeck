@@ -67,7 +67,7 @@ Required structure (regardless of length):
 1. Cover (1 page, `class: text-center`)
 2. "Why this episode matters" overview (1 page with 4-6 topic cards)
 3. **A LOT of** content pages — at least 70% of the total budget covering main themes
-4. **Core quotes page** (倒数第二页, **6-10 verified quotes** with context labels — scale up too)
+4. **Core quotes pages** (right before the end page, **4-6 verified quotes per page** with context labels; use two quote pages for 7+ quotes)
 5. End page (`layout: end`, 1 closing quote)
 
 ### How to actually write more content (not padding)
@@ -96,6 +96,22 @@ Read the project's `CLAUDE.md` for:
 - No `layout: section` divider pages
 - No `layout: fact` standalone-number pages
 
+## RULE 6.5 — Slide capacity budget (prevents export clipping)
+
+Slidev renders to a fixed 16:9 canvas. Treat each slide as a poster with a hard capacity budget, not a scrollable page.
+
+Mandatory capacity limits:
+- Overview pages with 4-6 topic cards: use `mt-4`, `gap-3`, `p-3`, `text-sm`, `leading-relaxed`; each card gets one short claim plus one short explanation.
+- If a card needs more than 2 sentences, split the topic into its own slide.
+- 3-column grids are for labels, numbers, or single-sentence cards only.
+- 4-column and 5-column grids are for numbers/keywords only; never put paragraph text in those cards.
+- Core quotes pages contain at most 6 quotes. For 7+ quotes, create `核心金句（一）` and `核心金句（二）`.
+- Two-cols pages: right-side Excalidraw width should stay within `w-[460px]` to `w-[480px]`; left side should stay under 4 bullets/cards or about 500 Chinese characters.
+- Avoid `mt-8`, `gap-6`, `p-5`, and large quote blocks on dense pages. Use smaller spacing or split the slide.
+- A slide should not contain multiple `#` headings.
+
+When in doubt, split content across more slides. More pages with clean layout are better than one clipped dense page.
+
 ## RULE 7 — Global back button
 
 Each episode directory must contain a `global-bottom.vue` with a fixed-position `← PodDeck` link. Copy the template from an existing episode (e.g., `episodes/ugvHCXCOmm4/global-bottom.vue`).
@@ -105,14 +121,15 @@ Each episode directory must contain a `global-bottom.vue` with a fixed-position 
 After writing `slides.md`:
 
 1. Run `pnpm run build` OR `npx slidev export --format png --output audit` in the episode dir
-2. Read **every** PNG one by one
-3. For each page, ask:
+2. Run `pnpm run audit:layout -- --id=<episodeId>` from the repo root
+3. Read **every** PNG one by one
+4. For each page, ask:
    - Is the information density adequate?
    - Does the page have visual structure (cards/borders/colors/diagrams)?
    - Can a reader understand this page in isolation?
    - Is every quote on this page verified against the transcript?
    - Are there layout overflows or broken diagrams?
-4. Fix every issue you find. Then rebuild and re-audit.
+5. Fix every issue you find. Then rebuild and re-audit.
 
 **Do not claim the episode is done until you have visually audited every page and found no fabrications.**
 

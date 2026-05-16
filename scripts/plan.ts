@@ -43,7 +43,7 @@ interface PlanEntry {
   transcript_url?: string
   transcript_type?: string
   summary?: string
-  status: 'pending' | 'needs_transcript' | 'downloaded' | 'generated' | 'failed'
+  status: 'pending' | 'needs_transcript' | 'downloaded' | 'generated' | 'audit_failed' | 'failed'
   priority: number
 }
 
@@ -155,6 +155,7 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
     const hasTranscript = Boolean(transcript?.url || hasLocalTranscript)
     let nextStatus: PlanEntry['status']
     if (existing?.status === 'generated' || existing?.status === 'failed') nextStatus = existing.status
+    else if (existing?.status === 'audit_failed') nextStatus = 'audit_failed'
     else if (hasTranscript) nextStatus = existing?.status === 'downloaded' ? 'downloaded' : 'pending'
     else nextStatus = 'needs_transcript'
     candidates.push({
@@ -177,7 +178,7 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
   // Sort: newest first
   candidates.sort((a, b) => b.published_sort.localeCompare(a.published_sort))
 
-  const pending = candidates.filter(e => e.status === 'pending').length
+  const pending = candidates.filter(e => e.status === 'pending' || e.status === 'audit_failed').length
   const done = candidates.filter(e => e.status === 'generated').length
   const needsTranscript = candidates.filter(e => e.status === 'needs_transcript').length
   const downloaded = candidates.filter(e => e.status === 'downloaded').length

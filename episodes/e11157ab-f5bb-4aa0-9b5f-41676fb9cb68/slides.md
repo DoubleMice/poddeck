@@ -32,40 +32,40 @@ layout: default
 
 # 为什么这期节目值得关注
 
-<div class="grid grid-cols-2 gap-4 mt-6">
+<div class="grid grid-cols-2 gap-3 mt-4 text-sm leading-relaxed">
 
-<div class="p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
 
 **Cerebras IPO 当日**  
-晶圆级芯片公司以 $488 亿估值上市，股价从 $1.85 开盘跳至 $3.50，是十年来最具野心的半导体创业故事之一。我们与 CEO Andrew Feldman、早期投资人 Eric Vishria 和 Steve Vassallo 在 IPO 当天直接对话。
+晶圆级芯片公司以 $488 亿估值上市，CEO Andrew Feldman 与早期投资人 Eric Vishria、Steve Vassallo 在 IPO 当天复盘十年半导体创业故事。
 
 </div>
 
-<div class="p-4 bg-green-50 border-l-4 border-green-500 rounded">
+<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
 
 **AI 推理速度的价值重估**  
-Semi Analysis 数据揭示：用户愿为快速推理支付 6 倍溢价。当"快"成为生产力杠杆，整个 AI 芯片市场的竞争逻辑正在被改写。
+Semi Analysis 数据揭示：用户愿为快速推理支付 6 倍溢价，"快"成为 AI 芯片竞争的生产力杠杆。
 
 </div>
 
-<div class="p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded">
+<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded">
 
 **Kevin Warsh 出任美联储主席**  
 54-45 的史上最窄参议院确认票，在 stagflation 阴影和特朗普的政治压力下接管美联储。
 
 </div>
 
-<div class="p-4 bg-purple-50 border-l-4 border-purple-500 rounded">
+<div class="p-3 bg-purple-50 border-l-4 border-purple-500 rounded">
 
 **VC 品牌战与 AI 基础设施**  
-General Catalyst 的"攻击性广告"引发风投圈激辩；Agent 可观测性、空间数据中心、Figure 机器人争议 —— 信息密度极高的一天。
+General Catalyst 的"攻击性广告"引发激辩；Agent 可观测性、空间数据中心、Figure 机器人争议同场出现。
 
 </div>
 
-<div class="p-4 bg-orange-50 border-l-4 border-orange-500 rounded col-span-2">
+<div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded col-span-2">
 
 **Netflix 广告业务**  
-广告业务总裁 Amy Reinhard 首次接受外部播客对谈，详解 Netflix 从"无广告"战略转向自建广告技术栈的 18 个月历程。
+广告业务总裁 Amy Reinhard 首次接受外部播客对谈，详解 Netflix 从"无广告"转向自建广告技术栈的 18 个月历程。
 
 </div>
 
@@ -1335,7 +1335,7 @@ layout: default
 layout: default
 ---
 
-# 核心金句
+# 核心金句（一）
 
 <div class="text-sm opacity-60 mb-4">这期 3 小时对谈里最值得记住的几句：</div>
 
@@ -1361,6 +1361,18 @@ layout: default
 <div class="text-xs opacity-60 mt-1 not-italic">— Doug O'Laughlin，总结 Cerebras 不需要击败 NVIDIA，只需占据 AI 芯片市场的 1%</div>
 </div>
 
+</div>
+
+---
+layout: default
+---
+
+# 核心金句（二）
+
+<div class="text-sm opacity-60 mb-4">从 AGI、机器人到 IPO 后的长期主义：</div>
+
+<div class="space-y-3">
+
 <div class="p-4 bg-orange-50 border-l-4 border-orange-500 rounded italic">
 "A lot of 'do we have AGI or not' is how many loops in a row can you do before things just end catastrophically."
 <div class="text-xs opacity-60 mt-1 not-italic">— Ben Hylak，将 AGI 的实际工程问题重新定义为循环可靠性</div>
@@ -1370,6 +1382,18 @@ layout: default
 "The greatest compliment for most of these systems is when you stop calling them a robot. You actually call them a forklift, you call it a washing machine."
 <div class="text-xs opacity-60 mt-1 not-italic">— Steve Vassallo，关于机器人真正成功的标志</div>
 </div>
+
+</div>
+
+---
+layout: default
+---
+
+# 核心金句（三）
+
+<div class="text-sm opacity-60 mb-4">宏观测量与 IPO 后的创始人提醒：</div>
+
+<div class="space-y-3">
 
 <div class="p-4 bg-blue-50 border-l-4 border-blue-500 rounded italic">
 "GDP might be broken as a concept. It got invented in the 1930s to measure how much output you could make, to not screw over the domestic economy for World War II."

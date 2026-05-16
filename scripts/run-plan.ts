@@ -2,7 +2,7 @@
 //   1. download RSS transcript → data/transcripts/<id>.txt
 //   2. scaffold episodes/<id>/ from _templates
 //   3. invoke claude -p to generate slides.md + meta.yml
-//   4. update plan entry status (pending → generated | failed)
+//   4. update plan entry status (pending → generated | audit_failed | failed)
 //
 // Usage:
 //   pnpm run plan:run                              # all pending across all plans
@@ -22,6 +22,7 @@ import { spawn } from 'node:child_process'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { cleanTranscript, fetchText, preferredTranscript } from './lib/rss.ts'
 import { log } from './lib/log.ts'
+import { run } from './lib/spawn.ts'
 
 const ROOT = process.cwd()
 const isWin = process.platform === 'win32'
@@ -42,6 +43,7 @@ const onlyCategory = process.argv.find(a => a.startsWith('--category='))?.split(
 
 // Shared state for generation rate-limit detection and token tracking
 let generationRateLimited = false
+let workspaceInstallPromise: Promise<boolean> | null = null
 const stats = {
   generated: 0,
   failed: 0,
@@ -64,7 +66,7 @@ interface PlanEntry {
   transcript_url?: string
   transcript_type?: string
   transcripts?: { url: string; type: string; language?: string }[]
-  status: 'pending' | 'needs_transcript' | 'downloaded' | 'generated' | 'failed'
+  status: 'pending' | 'needs_transcript' | 'downloaded' | 'generated' | 'audit_failed' | 'failed'
   category?: string
   priority: number
 }
@@ -96,7 +98,7 @@ function loadPlans(): { source: string; path: string; plan: PlanFile }[] {
 }
 
 function savePlan(path: string, plan: PlanFile): void {
-  plan.pending = plan.episodes.filter(e => e.status === 'pending').length
+  plan.pending = plan.episodes.filter(e => e.status === 'pending' || e.status === 'audit_failed').length
   plan.needs_transcript = plan.episodes.filter(e => e.status === 'needs_transcript').length
   plan.downloaded = plan.episodes.filter(e => e.status === 'downloaded').length
   plan.done = plan.episodes.filter(e => e.status === 'generated').length
@@ -174,7 +176,46 @@ function formatDuration(seconds: number): string {
 
 function hasGeneratedArtifacts(id: string): boolean {
   const dir = join(EPISODES_DIR, id)
-  return existsSync(join(dir, 'slides.md')) && existsSync(join(dir, 'meta.yml'))
+  return existsSync(join(dir, 'slides.md'))
+    && existsSync(join(dir, 'meta.yml'))
+    && existsSync(join(dir, 'article.html'))
+}
+
+async function ensureWorkspaceLinks(): Promise<boolean> {
+  if (!workspaceInstallPromise) {
+    workspaceInstallPromise = (async () => {
+      log.raw('  refreshing pnpm workspace links')
+      const result = await run('pnpm', [
+        'install',
+        '--no-frozen-lockfile',
+        '--ignore-scripts',
+      ], { cwd: ROOT, reject: false })
+      if (result.code === 0) return true
+      log.err('  pnpm workspace install failed')
+      const output = `${result.stdout}\n${result.stderr}`.trim()
+      if (output) log.raw(output.split('\n').slice(-40).join('\n'))
+      return false
+    })()
+  }
+  return workspaceInstallPromise
+}
+
+async function auditGeneratedLayout(id: string): Promise<boolean> {
+  const installOk = await ensureWorkspaceLinks()
+  if (!installOk) return false
+
+  log.raw(`  auditing layout for ${id}`)
+  const result = await run('npx', [
+    'tsx',
+    'scripts/audit-layout.ts',
+    `--id=${id}`,
+  ], { cwd: ROOT, reject: false })
+
+  if (result.code === 0) return true
+  log.err(`  layout audit failed for ${id}`)
+  const output = `${result.stdout}\n${result.stderr}`.trim()
+  if (output) log.raw(output.split('\n').slice(-40).join('\n'))
+  return false
 }
 
 interface GenerateResult {
@@ -263,6 +304,8 @@ async function processEntry(
     return
   }
 
+  const retryAuditOnly = entry.status === 'audit_failed' && hasGeneratedArtifacts(entry.id)
+
   if (entry.status === 'needs_transcript') {
     entry.status = 'pending'
     savePlan(planPath, plan)
@@ -274,7 +317,7 @@ async function processEntry(
       log.warn('  queue stopped after transcript download — entry stays pending')
       return
     }
-    entry.status = 'downloaded'
+    if (!retryAuditOnly) entry.status = 'downloaded'
     savePlan(planPath, plan)
   } catch (e: any) {
     log.err(`  download failed: ${e.message}`)
@@ -285,6 +328,23 @@ async function processEntry(
 
   scaffoldEpisode(entry.id)
 
+  if (retryAuditOnly) {
+    const layoutOk = await auditGeneratedLayout(entry.id)
+    entry.status = layoutOk ? 'generated' : 'audit_failed'
+    savePlan(planPath, plan)
+    log.ok(`  → status=${entry.status}`)
+    stats.episodes.push({
+      id: entry.id,
+      inputTokens: 0,
+      outputTokens: 0,
+      durationMs: 0,
+      status: entry.status,
+    })
+    if (entry.status === 'generated') stats.generated++
+    else stats.failed++
+    return
+  }
+
   if (generationRateLimited) {
     entry.status = 'pending'
     savePlan(planPath, plan)
@@ -293,7 +353,15 @@ async function processEntry(
   }
 
   const result = await generateOne(entry, sourceId)
-  entry.status = result.ok && hasGeneratedArtifacts(entry.id) ? 'generated' : 'failed'
+  const artifactsOk = hasGeneratedArtifacts(entry.id)
+  const layoutOk = result.ok && artifactsOk
+    ? await auditGeneratedLayout(entry.id)
+    : false
+  entry.status = result.ok && artifactsOk && layoutOk
+    ? 'generated'
+    : result.ok && artifactsOk
+      ? 'audit_failed'
+      : 'failed'
   savePlan(planPath, plan)
 
   const durationStr = (result.durationMs / 1000 / 60).toFixed(1) + 'min'
@@ -344,7 +412,7 @@ async function main() {
   const allPending: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
   for (const { source, path, plan } of targetPlans) {
     for (const entry of plan.episodes) {
-      if (entry.status === 'pending' || entry.status === 'downloaded' || (entry.status === 'needs_transcript' && existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)))) {
+      if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (entry.status === 'needs_transcript' && existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)))) {
         allPending.push({ entry, sourceId: source, plan, planPath: path })
       }
     }

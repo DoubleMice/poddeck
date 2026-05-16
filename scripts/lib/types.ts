@@ -24,6 +24,7 @@ export type EpisodeStatus =
   | 'downloaded'
   | 'generating'
   | 'generated'
+  | 'audit_failed'
   | 'failed'
 
 export interface Episode {
