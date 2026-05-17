@@ -1,0 +1,178 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "ng-box",
+      "type": "rectangle",
+      "x": 150, "y": 60, "width": 180, "height": 60,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [{"id": "arr1", "type": "arrow"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "ng-label", "type": "text",
+      "x": 165, "y": 72, "width": 150, "height": 36,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Natural Gas\n$3/MBTU → Abundant",
+      "fontSize": 14, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Natural Gas\n$3/MBTU → Abundant"
+    },
+    {
+      "id": "arr1", "type": "arrow",
+      "x": 330, "y": 90, "width": 60, "height": 0,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 3, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "startBinding": {"elementId": "ng-box", "focus": 0, "gap": 1},
+      "endBinding": {"elementId": "turbine-box", "focus": 0, "gap": 1},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "turbine-box", "type": "rectangle",
+      "x": 390, "y": 60, "width": 160, "height": 60,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 4, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [{"id": "arr2", "type": "arrow"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "turbine-label", "type": "text",
+      "x": 405, "y": 72, "width": 130, "height": 36,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 5, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Gas Turbines\nSold Out → Bottleneck",
+      "fontSize": 13, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Gas Turbines\nSold Out → Bottleneck"
+    },
+    {
+      "id": "arr2", "type": "arrow",
+      "x": 550, "y": 90, "width": 60, "height": 0,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 6, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "startBinding": {"elementId": "turbine-box", "focus": 0, "gap": 1},
+      "endBinding": {"elementId": "dc-box", "focus": 0, "gap": 1},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "dc-box", "type": "rectangle",
+      "x": 150, "y": 160, "width": 180, "height": 60,
+      "angle": 0, "strokeColor": "#6741d9", "backgroundColor": "#d0bfff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 7, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [{"id": "arr3", "type": "arrow"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dc-label", "type": "text",
+      "x": 165, "y": 172, "width": 150, "height": 36,
+      "angle": 0, "strokeColor": "#6741d9", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Data Center\nOff-Grid Power Plant",
+      "fontSize": 13, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Data Center\nOff-Grid Power Plant"
+    },
+    {
+      "id": "grid-box", "type": "rectangle",
+      "x": 390, "y": 160, "width": 160, "height": 60,
+      "angle": 0, "strokeColor": "#c92a2a", "backgroundColor": "#ffc9c9",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 9, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false
+    },
+    {
+      "id": "grid-label", "type": "text",
+      "x": 405, "y": 172, "width": 130, "height": 36,
+      "angle": 0, "strokeColor": "#c92a2a", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 10, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Grid Connection\nBackup Only",
+      "fontSize": 13, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Grid Connection\nBackup Only"
+    },
+    {
+      "id": "arr3", "type": "arrow",
+      "x": 330, "y": 190, "width": 60, "height": 0,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 11, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "startBinding": {"elementId": "dc-box", "focus": 0, "gap": 1},
+      "endBinding": {"elementId": "grid-box", "focus": 0, "gap": 1},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "output-arrow", "type": "arrow",
+      "x": 240, "y": 220, "width": 0, "height": 60,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 12, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "startBinding": null, "endBinding": {"elementId": "output-box", "focus": 0, "gap": 1},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "output-box", "type": "rectangle",
+      "x": 150, "y": 280, "width": 180, "height": 55,
+      "angle": 0, "strokeColor": "#099268", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 13, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false
+    },
+    {
+      "id": "output-label", "type": "text",
+      "x": 165, "y": 292, "width": 150, "height": 30,
+      "angle": 0, "strokeColor": "#099268", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 14, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "AI Compute Output",
+      "fontSize": 15, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "AI Compute Output"
+    },
+    {
+      "id": "co-prod-note", "type": "text",
+      "x": 30, "y": 10, "width": 130, "height": 36,
+      "angle": 0, "strokeColor": "#495057", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 15, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Co-Production\nOil drilling →\n"waste" NG",
+      "fontSize": 11, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "top", "containerId": null, "originalText": "Co-Production"
+    }
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": 20}
+}

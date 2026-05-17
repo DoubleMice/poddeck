@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trial Update, AI SPVs, BuzzFeed Sold - TBPN 深度解读</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fafafa;
+  max-width: 720px; margin: 0 auto; padding: 40px 24px 80px;
+}
+h1 { font-size: 28px; line-height: 1.35; margin-bottom: 8px; color: #0d0d1a; }
+h2 { font-size: 22px; margin: 48px 0 16px; color: #1a1a2e; border-bottom: 2px solid #e9ecef; padding-bottom: 8px; }
+h3 { font-size: 19px; margin: 28px 0 12px; color: #2a2a3e; }
+p { margin-bottom: 16px; }
+.header-meta { font-size: 14px; color: #868e96; margin-bottom: 32px; }
+.header-meta span { margin-right: 16px; }
+blockquote {
+  border-left: 4px solid #1971c2; background: #e7f5ff; padding: 16px 20px;
+  margin: 20px 0; border-radius: 0 6px 6px 0; font-style: italic;
+  color: #1864ab;
+}
+blockquote .attr { display: block; font-size: 13px; margin-top: 8px; font-style: normal; color: #868e96; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 20px 0; }
+.card { padding: 18px 20px; border-radius: 6px; font-size: 15px; line-height: 1.65; }
+.card h3 { font-size: 16px; margin: 0 0 6px; color: inherit; }
+.card-blue { border-left: 4px solid #1971c2; background: #e7f5ff; }
+.card-green { border-left: 4px solid #2f9e44; background: #ebfbee; }
+.card-yellow { border-left: 4px solid #f08c00; background: #fff9db; }
+.card-purple { border-left: 4px solid #7950f2; background: #f3f0ff; }
+.card-orange { border-left: 4px solid #e8590c; background: #fff4e6; }
+.card-red { border-left: 4px solid #c92a2a; background: #fff5f5; }
+.quotes-section { margin: 32px 0; }
+.quote-item {
+  padding: 16px 20px; border-radius: 6px; margin-bottom: 12px;
+  font-style: italic; line-height: 1.7;
+}
+.quote-item .ctx { display: block; font-size: 13px; margin-top: 6px; font-style: normal; color: #868e96; }
+.q-blue { border-left: 4px solid #1971c2; background: #e7f5ff; }
+.q-green { border-left: 4px solid #2f9e44; background: #ebfbee; }
+.q-yellow { border-left: 4px solid #f08c00; background: #fff9db; }
+.q-purple { border-left: 4px solid #7950f2; background: #f3f0ff; }
+.q-orange { border-left: 4px solid #e8590c; background: #fff4e6; }
+.q-red { border-left: 4px solid #c92a2a; background: #fff5f5; }
+.gloss { font-size: 13px; color: #868e96; margin-top: 4px; }
+.footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #dee2e6; font-size: 13px; color: #868e96; }
+.footer a { color: #1971c2; }
+@media (max-width: 600px) {
+  body { font-size: 16px; padding: 20px 16px 48px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  .card-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<h1>OpenAI 世纪审判、AI 二级市场狂热与媒体的 AI 时代生存法则</h1>
+
+<div class="header-meta">
+  <span>TBPN</span>
+  <span>2026 年 5 月</span>
+  <span>2 小时 56 分钟</span>
+</div>
+
+<div class="header-meta" style="margin-bottom:36px">
+  嘉宾：Doomberg · Sahir Jaggi (Forus) · Sam Blond (Monaco) · Kevin Hartz (A*) · Alex Shan (Judgment Labs) · Glen Wise (Cinder) · Roger Lynch (Condé Nast)
+</div>
+
+<h2>为什么这期节目值得关注</h2>
+
+<div class="card-grid">
+<div class="card card-blue">
+<h3>OpenAI vs Musk 世纪审判</h3>
+Sam Altman 登上证人席，Ilya Sutskever 说出"没钱就没大电脑"，Mira Moradi 与 Helen Toner 的证词揭露了 2023 年 11 月董事会政变的内幕。
+</div>
+<div class="card card-green">
+<h3>AI 二级市场 SPV 狂潮</h3>
+Anthropic 股票私下交易火爆到有人靠一笔撮合赚到整个 20 多岁职业生涯的净资产，Anthropic 官方发文严正警告任何未经批准的转让将被视为无效。
+</div>
+<div class="card card-yellow">
+<h3>全球能源格局剧变</h3>
+Doomberg 深度解读霍尔木兹海峡封锁下油价为何不涨反跌、美国页岩革命的"共生产经济学"如何让天然气成为 AI 军备竞赛的隐形燃料。
+</div>
+<div class="card card-purple">
+<h3>五家 AI 初创集体亮相</h3>
+Forus（医疗AI, $160M）、Monaco（AI 销售 CRM, $1B 独角兽）、A*（$450M 种子基金）、Judgment Labs（Agent 改进平台）、Cinder（AI 滥用防护, $41M）——同一天宣布重大进展。
+</div>
+<div class="card card-orange">
+<h3>BuzzFeed 被收购，媒体大洗牌</h3>
+Byron Allen 以 $1.2 亿入主 BuzzFeed，Jonah Peretti 留任"AI 总裁"。Condé Nast CEO Roger Lynch 深度剖析品牌耐久性、搜索流量归零策略与 AI 时代的媒体生存法则。
+</div>
+<div class="card card-red">
+<h3>GameStop $550 亿收购 eBay 被拒</h3>
+eBay 称该要约"既不可信也不具吸引力"。Ryan Cohen 的野心与华尔街的冷遇形成鲜明对比——这笔交易被分析师形容为"不对称的求婚"。
+</div>
+</div>
+
+<h2>OpenAI vs Musk：硅谷的世纪审判</h2>
+
+<p>2026 年 5 月，Musk 起诉 OpenAI 及其领导人 Altman 和 Greg Brockman 的案件进入最后一周。Musk 声称自己被操控向一家非营利组织捐赠了数千万美元，而这家组织随后摇身一变成为营利实体。Musk 同时起诉了 OpenAI 的最大投资者 Microsoft——指控其协助了 Altman 和 Brockman 的所谓"欺骗行为"。</p>
+
+<p>审判的关键转折点之一发生在上周三，前 OpenAI CTO Mira Moradi 和前董事会成员 Helen Toner 出庭作证，对 Altman 的领导风格和坦诚度提出了批评性描述。她们详细叙述了 2023 年 11 月那场失败的董事会政变——OpenAI 内部称之为 "the blip"（短暂的插曲）——Sam 被解雇，几天后又迅速复职。</p>
+
+<p>但 OpenAI 一方也开始对 Musk 施以还击。Siobhan Zillis 和 Greg Brockman 的证词显示，Musk 并非仅仅在捍卫纯粹的非营利愿景。他曾探讨过将 OpenAI 并入 Tesla 的方案——Altman 可能会协助领导 Tesla 的 AI 团队，而 Musk 可以保留深度控制权。Brockman 作证说，Musk 支持营利转换——前提是他自己能够控制它，包括一个与他的火星野心融资相关的版本。</p>
+
+<p>审判由此演变成一个多层叙事：首先是关于 Altman 是否可信的全民公投，然后是 2023 年董事会究竟是勇敢还是无能的审判，接着是 Microsoft 试图将自己定位为"稳定合作的伙伴"。最终，Altman 本人必须亲自回答整个案件的核心问题：OpenAI 的演化是构建前沿 AI 的必要适应，还是对非营利使命的背叛。</p>
+
+<p>Mike Isaac（纽约时报记者）以 @RatKing 账号在 X 上做实时文字直播——穿插了大量关于法庭椅子不舒服、只吃了一根香蕉、体力值持续下降的个人吐槽。他给审判总结出一个"主旋律"：每一个作证的人都讨厌 Google。</p>
+
+<h2>Ilya Sutskever 的"电影台词"</h2>
+
+<p>Ilya Sutskever 在联邦法庭上宣誓作证时，说了一句被 Max S 称为"年度引言"候选的话——在解释 OpenAI 为什么需要营利部门时：</p>
+
+<blockquote>
+"If there's no funding, there's no big computer."
+<span class="attr">— Ilya Sutskever，联邦法庭宣誓证词</span>
+</blockquote>
+
+<p>Yasin 调侃说："他走路的样子就像知道有人要为他拍电影一样，大概已经在为 Christopher Nolan 写台词了。"</p>
+
+<p>但 Ilya 的证词是双面的。他承认花了一年时间编纂了一份 50 页的文件，记录 Sam 的"操控行为"。然而他也承认——对 Musk 一方构成打击——自己从未向 Musk 承诺 OpenAI 会永远保持非营利。一个让局面更复杂的数字：Sutskever 的 OpenAI 股权估值约 $70 亿——这让陪审团和法官对其动机的评判更加微妙。</p>
+
+<p>同一天，Microsoft CEO Satya Nadella 作证为 OpenAI 一方辩护。他说 Musk 从未联系他抱怨这桩交易违反任何协议——尽管 Musk 有他的电话号码。Nadella 还给了 OpenAI 前董事会一记重拳，称他们过去的行为展现了"从业余水准运作"的特征。</p>
+
+<h2>Sam Altman 上证人席：Memes, 心理安全, 与"blip"</h2>
+
+<p>Altman 在庭上描述了 2015 年一次关键会面。Musk 提议将 OpenAI 整合进 Tesla，并暗示如果 Altman 不答应，他可能会自己在 Tesla 内部做 AI。Altman 将其描述为"一种初生的威胁"（nascent threat）。Mike Isaac 评论说，这种"如果你不接受这个交易，我们就会来对你动手"的 Tony Soprano 风格在今天的硅谷已经相当常见。</p>
+
+<p>但最令人难忘的细节来自会面的后半段——Musk 花了"很长很长时间给我们看他手机上的 memes"。法庭记录员要求 Altman 对着麦克风 <strong>大声重复 "memes on his phone"</strong>，这一幕将在 Mike Isaac 的脑海中循环播放一整周。</p>
+
+<p>Altman 还批评了 Musk 钟爱的 stack ranking（末位淘汰排名制），这在 Meta、Amazon 和 Microsoft 等大公司很常见。他主张 AI 工程实验室需要的是：</p>
+
+<blockquote>
+"You have to be willing to let a researcher go off and try something random in the corner, very bottoms up."
+<span class="attr">— Sam Altman，解释 Deep Research 等突破的来源</span>
+</blockquote>
+
+<p>关于他被解雇的五天——那个被 OpenAI 内部称为 "the blip" 的时期——Altman 在庭上动情地说：</p>
+
+<blockquote>
+"I had poured the last years of my life into this. I was watching it about to be destroyed. There was something appealing about going to work at Microsoft. I was also very angry, hurt, and upset. It felt like an incredible betrayal."
+<span class="attr">— Sam Altman，描述被解雇时的感受</span>
+</blockquote>
+
+<p>当 Musk 的首席律师 Stephen Molo 展开交叉质询时，气氛变得极为紧张。Molo 以戏剧性的风格直接发问："Are you completely trustworthy?" Altman 回答："I believe so." Molo 追问："Do you always tell the truth?" 主持人将这场质询描述为"Molo 读着一份清单问 '嘿兄弟，你记不记得你干的这些烂事'，而 Altman 的回答基本是 '不，不记得，不是真的'。"</p>
+
+<p>Musk 一方试图将 Altman 描绘为"对不同的人说不同的话"、从根本上不可信的人——这一策略贯穿了整个审判。OpenAI 的反驳则是将 2023 年的董事会描绘成一个功能失调、沟通彻底破裂的群体。</p>
+
+<p>Altman 自己这样回应：</p>
+
+<blockquote>
+"I was not trying to deceive the board. I feel badly for the misunderstandings, but that was never my intent."
+<span class="attr">— Sam Altman，在交叉质询中</span>
+</blockquote>
+
+<h2>AI 二级市场的 SPV 灰色地带</h2>
+
+<p>如果说审判是这期节目的政治头条，那么 AI 二级市场的 SPV 争议就是它的金融风暴。一条现已删除的帖子点燃了整场讨论：</p>
+
+<blockquote>
+"Simply brokering an Anthropic secondary deal made me more money than my entire net worth from working in my twenties."
+</blockquote>
+
+<p>问题在于：撮合证券交易需要 broker-dealer 执照——一套极其繁重的合规体系，个人几乎不可能拿到。这条帖子同时暴露了两个事实：AI 私有公司的二级市场交易规模之大，以及其运作之灰色。</p>
+
+<p>Anthropic 迅速作出反应——更新网站措辞，声明任何未经董事会批准的股票转让或出售均"无效且不会被公司账簿认可"。市场中的"迷因资产"（声称跟踪 AI 公司估值但并非真正关联底层股权的代币化产品）随之暴跌——尽管它们纯粹是情绪驱动的投机品，与真实股权毫无关系。</p>
+
+<p>Frankie @ Paradigm 用一个令人拍案叫绝的类比将整件事解释清楚——他用经典童书《Frog and Toad》来拆解 SPV 的法律结构："Frog put the shares of Anthropic in an SPV. There, he said, now we can transfer these shares freely. But Anthropic can still exercise its transfer restrictions, said Toad. That is true, said Frog."</p>
+
+<p>这个童书故事尖锐地讽刺了现实：SPV 在技术上创造了绕行公司转让限制的可能性——因为它在法律形式上没有"直接"转让股票。但 Anthropic 的立场很明确：这种绕行在法律上不算数。问题是，谁也不知道到底有多少笔这样的交易已经发生。从 SPV 到 SPV of SPV 的层层嵌套，可能涉及上万笔交易。连出租车司机都在跟你聊他们投的 AI SPV——这个指标通常意味着泡沫已经到了相当火热的阶段。</p>
+
+<h2>Doomberg：绿皮鸡背后的能源现实主义</h2>
+
+<p>Doomberg 是一支匿名的前工业高管团队，五年前在 Twitter 上从零起步。面临品牌定位时，他们选择了"一只绿皮鸡"而非"另一个穿西装打领带的中年白人男性"。如今拥有近 40 万邮件订阅者，团队规模"一只手数得过来，还剩几根手指"。</p>
+
+<p>这个选择的背后有一套完整的商业逻辑：Bloomberg 终端键盘上最显眼的颜色恰好接近他们使用的绿色。"我们的理想客户有 Bloomberg 终端，他们看到绿皮鸡，不知道为什么就喜欢它——是颜色和那双呆滞眼睛的某种组合。"他们保持着严格的匿名，因为"我们观察过其他账号取匿，品牌的神秘感就毁了"。</p>
+
+<p>但 Doomberg 的内容绝非轻浮。在霍尔木兹海峡被封锁两个多月后，他们提出了一个让整个能源行业困惑的问题：为什么油价还这么便宜？</p>
+
+<blockquote>
+"One of the things about the oil markets is everybody lies."
+<span class="attr">— Doomberg，开场白</span>
+</blockquote>
+
+<p>一位交易了五十年石油的老手提出的假说是：去年全球有巨量过剩石油——主要是俄罗斯和伊朗的被制裁"脏油"和影子船队——中国买了大部分。他们对自己的储备量撒了谎，现在正悄悄将这些储备释放到市场中。中国估计储有 18 亿桶——去年每天超买 100-250 万桶——现在利用这些储备作为地缘政治杠杆，向澳大利亚等邻国提供优惠的成品油交易。</p>
+
+<p>Doomberg 还指出石油在全球能源中的相对重要性已经大幅下降——从 55% 降到了 30% 多。股市没有出现恐慌，因为 AI 革命靠的是中国的煤炭和美国的天然气——两者恰好都与石油价格脱钩。国际能源署（IEA）在霍尔木兹海峡关闭后不久就向市场投放了 4 亿桶战略储备——这个机制在 1973 年石油危机时还不存在。</p>
+
+<h2>"共生产经济学"：天然气如何成为 AI 的隐形补贴</h2>
+
+<p>Doomberg 提出了一个关键的洞察——"共生产经济学"（co-production economics）。页岩革命意味着同一口井同时产出石油和天然气。当霍尔木兹海峡封锁推高油价、促使更多钻探时，大量天然气作为"不受欢迎的副产品"被带出地面。在 Permian 盆地，天然气的现货价格已经是负值——他们在白送天然气。</p>
+
+<p>当你是与"共生产者"竞争时，生意极其痛苦：只要对方两个市场中的任何一个火爆，他们就会大量生产，用你赖以生存的副产品淹没你的市场——而那个副产品恰好是你做的。</p>
+
+<p>这一点对 AI 数据中心的影响是直接的：天然气在美国极度便宜（$3/百万 BTU，相当于 $18/桶石油），而 AI 的算力需求在暴涨。但瓶颈不在燃料——在将燃料转化为电力的燃气轮机已经售罄。解决办法？</p>
+
+<blockquote>
+"We sort of envision these buildings where natural gas goes in one end and data comes out the other."
+<span class="attr">— Doomberg，描述离网数据中心的终极形态</span>
+</blockquote>
+
+<p>电价是按边际成本定的，而数据中心对电力的需求增长速度远远超过官僚体系批准新并网电力的速度。Doomberg 的结论是：大多数数据中心将不得不脱离电网。Elon Musk 在田纳西为 xAI 建造自己的天然气发电厂是一个例外——"the exception that proves the rule"——证明了现有规则必须被打破才能让这类事情发生。但 Microsoft 和 Google 永远不可能像 Elon 那样行事，所以他们需要走离网路线。</p>
+
+<h2>中国：最大赢家？</h2>
+
+<p>Doomberg 指出中国已投入数千亿美元建设将煤炭转化为石油产品的能力。历史上只有两个政权这样做过：纳粹德国和种族隔离时期的南非。"你不做这种事情来创造股东价值。你出于地缘政治绝缘的需要才这么做。"伊朗由中国和俄罗斯做后盾——在中东的影响力将持续增长。</p>
+
+<p>关于化石燃料的替代方案，Doomberg 保持着直率的态度。对于核能：</p>
+
+<blockquote>
+"We don't really have a nuclear waste problem, and we don't have a meltdown risk problem with the latest designs."
+<span class="attr">— Doomberg，认为建设更多 AP1000 和 Candu 反应堆才是正解，而非追逐"不够性感"的核聚变</span>
+</blockquote>
+
+<p>对于太阳能，他犀利地指出间歇性成本从未被合理计入——"太阳是免费的"是一种刻意忽视系统成本的叙事。对于加州，他给出了本期节目中最锋利的一句话：</p>
+
+<blockquote>
+"California has as much oil and gas as Texas. The reason why Texas is a global energy superpower and California is a flaccid energy vassal is little more than politics — and you get a big enough energy crisis, politics is easy to wipe away."
+<span class="attr">— Doomberg</span>
+</blockquote>
+
+<h2>五家 AI 初创的集体亮相</h2>
+
+<h3>Forus：$1.6 亿打造医疗 AI 操作系统</h3>
+
+<p>Sahir Jaggi 在节目中首次公开宣布 Forus——一家从隐形模式中以 $10 亿估值亮相的医疗 AI 公司。来自 Thrive Capital、General Catalyst、Accel 等机构的 $1.6 亿融资支持着一个双面商业模式：免费端为医生办公室提供 AI 自动化工具，处理与保险公司、PBM（药品福利管理）、药房等所有外部系统的复杂交互；商业端利用积累的医生-患者网络和数据，帮助辉瑞、礼来、强生等生命科学公司加速新药研发和上市。</p>
+
+<p>Sahir 来自 Oscar Health，属于"Thrive 宇宙"的一部分。他的公司可能拥有"世界上最好的传真 AI"——一个颇具讽刺意味的事实：在 2026 年，仍有大量医疗交易只能通过传真完成，而传真被认为是符合 HIPAA 的、也是最可靠的医疗通信方式之一。</p>
+
+<h3>Monaco：重新定义 AI 时代的销售技术栈</h3>
+
+<p>Sam Blond 宣布 Monaco 完成了由 Benchmark 领投、Founders Fund 三倍追加的 B 轮融资。这家 2026 年 2 月才推出的公司，在无 LinkedIn、无网站、从零开始的三个月内，已超越了所有业务预期。</p>
+
+<p>Monaco 的核心差异化在于三项：All-in-One（同时替代 Salesforce 等传统 CRM 和通过 API 集成的所有外部工具——"Go-to-market 版的 Rippling"）、AI-Native（Agent 是第一道防线，销售用户坐在前排看 Agent 替他们完成工作）、以及 Sam 所称的"秘密武器"——Forward Deployed AE。</p>
+
+<p>"每个客户都配有一位创业销售专家。"Sam 解释说，"大多数客户是种子轮和 A 轮的初创公司，他们的创始团队往往是技术背景，在销售方面经验有限。我们提供的那个缓冲层——人类专家与 AI 技术之间的界面——是 Monaco 比任何竞争对手都做得更好的秘诀。"这种模式让人联想到 Palantir 在二十年前首创的 Forward Deployed Engineer 概念。</p>
+
+<p>Sam 用一句话总结了他的野心：</p>
+
+<blockquote>
+"We don't want to be the tallest midget. We want to be the market leader in sales technology."
+<span class="attr">— Sam Blond (Monaco)</span>
+</blockquote>
+
+<p>Monaco 不是在抢 IT 预算——它抢的是人力预算。因此它的定价远高于传统 CRM，因为它替代的不是软件，而是"你雇一群人来干这些活"。</p>
+
+<h3>A*：$4.5 亿种子基金与高中辍学生的时代</h3>
+
+<p>Kevin Hartz 宣布 A* 完成 $4.5 亿的第三期基金。作为 Eventbrite 和 Xoom 的联合创始人，Kevin 在硅谷拥有跨越数个周期的投资经验。前两期基金位列行业前 5%，他将其归因于"神枪手式的精准投资"而非"把钱撒出去"——与那些靠管理费驱动、资本基数庞大的多阶段基金形成鲜明对比。</p>
+
+<p>Kevin 观察到一个趋势：创始人的年龄在持续下降。"当 Bill Gates 和 Steve Jobs 在 70 年代以十几岁的年龄创业时，那是极端的特例。快进到今天，这已经发生了巨大的变化。"他将 Corey Levy 的 Z Fellows 描述为在发现高中辍学创业者方面"非常出色"。</p>
+
+<p>他还分享了一个意外投资案例：Soron——利用自动驾驶汽车和机器人领域 LiDAR 传感器价格的暴跌，在高端家庭安防领域创业的公司。"当传感器价格骤降时，新的应用就会变得可能。在家庭安防中，LiDAR 可以精确测量距离、在不同天气中跟踪物体、在黑暗中看清场景。"</p>
+
+<h3>Judgment Labs：让 Agent 从生产数据中自我进化</h3>
+
+<p>Alex Shan 的公司 Judgment Labs 宣布完成了由 Lightspeed 和 Greenoaks 联合领投的 A 轮融资。公司的核心论点是：长周期自主 Agent 将吞噬 AI 在未来几十年创造的绝大部分经济价值，而这背后的单一真理来源是生产数据。</p>
+
+<p>"Agent 在运行时发出的推理 token、调用的工具、重试、记忆——所有这些构成了 Agent 与客户、软件和环境交互的最干净记录。"但大多数团队不得不手动翻阅日志表格来排查 Agent 失败的原因。Judgment Labs 用 Agent 来分析 Agent 的生产数据——精确定位失败模式、频率、影响的客户群体。</p>
+
+<p>Alex 认为最先被解决的领域是那些最"可验证"的——编程是明显的领先者，其次是网站可靠性工程和数学类任务。但令人惊讶的是，在传统上被认为难以量化的领域——金融、法律，甚至 Sam Blond 在 Monaco 的销售 Agent——团队通过系统化使用生产数据来改进 Agent 的速度也"快得令人难以置信"。</p>
+
+<h3>Cinder：AI 生成的滥用内容正在爆发</h3>
+
+<p>Glen Wise 宣布 Cinder 融资 $4100 万（由 Radical Ventures 投资）。创始团队来自 Meta 的威胁情报团队和美国政府——他们"见过规模化的危害长什么样"。客户包括 OpenAI、Spotify、Depop 和 Black Forest Labs。</p>
+
+<p>GenAI 出现之前，互联网滥用就已经是个大问题。AI 让制造规模化威胁变得极其廉价和快速——从 AI 生成的深度伪造色情到国家级网络间谍活动。Cinder 的独特之处在于它既提供技术又提供人力专业知识——"每个客户不可能在每个威胁类型上都有专家"，而"第三方可信度"（不是自己在给自己的作业打分）在平台治理中具有独立的价值。</p>
+
+<p>关于模型选择，Glen 解释了一个有趣的技术细节：可以对其进行"模型抹除"（model obliteration）——去除基础模型的安全护栏——以便检测有害内容，因为防护栏模型本身被训练成无法生成这些内容，而这恰恰是需要检测的内容。</p>
+
+<h2>Byron Allen 与 BuzzFeed：一个时代的终结？</h2>
+
+<p>喜剧演员出身的媒体企业家 Byron Allen 以 $1.2 亿收购 BuzzFeed 52% 的控股股权。这比 BuzzFeed 当时约 $4000-$8000 万的市值高出约 3 倍溢价。Jonah Peretti（BuzzFeed 联合创始人）将卸任 CEO，但留任一个意味深长的头衔——"AI 总裁"（President of Artificial Intelligence）。</p>
+
+<p>BuzzFeed 的财务数据讲了一个清醒的故事：Q1 营收 $3160 万，净亏损约 $1500 万，营收同比下降 12.4%。当前首页的头条依然是："50 张证明人类是最糟糕的照片"、"41 个人们曾经爱过但现在甚至不忍直视的名人"、"22 个关于男孩妈妈和她们儿子的故事会让你尴尬到崩溃"。</p>
+
+<p>Jordy 提出了一个尖锐的问题：如果你有 $1.2 亿去建设一个全新的媒体资产，你还需要 BuzzFeed 吗？Roger Lynch 后来在节目中给出了间接但有力的回答：BuzzFeed 是一个"在搜索流量和社交媒体套利时代非常创新的公司——那个时代已经过去了。"</p>
+
+<p>同样是交易新闻，GameStop 以 $550 亿收购 eBay 的尝试被正式拒绝。eBay 董事长 Paul Pressler 在回信中列出了数项担忧，包括融资来源不明确和合并后公司债务负担过重。交易的基石是一封来自 TD Bank 的"高度自信"函——一种不具约束力的声明——但条件之一是合并后公司需要被三大评级机构中至少两家评为投资级。分析师称这笔交易被接受的概率"微乎其微"。</p>
+
+<h2>Roger Lynch：Condé Nast 的七年转型</h2>
+
+<p>Roger Lynch 的职业生涯横跨技术和媒体的每一个交汇点：从 1999 年创立欧洲最早的宽带公司之一并与 NFL 达成直播协议，到创办 Sling TV（流媒体电视的先驱），再到执掌 Pandora——将"人类品味 + AI"的音乐推荐做到极致。</p>
+
+<p>Pandora 的那一段历史在今天看来特别有启发意义。"我们有一个音乐学家的团队——全都是出色的音乐家——他们会分析每首歌的特征。然后数据科学家接手，创建了大约 90 种算法，每一种都会为每个听众做个性化调优。"Roger 至今仍在用 Pandora，"当我只是想放点什么让它自己播放时，我会去 Pandora——那些算法至今仍然更胜一筹。"</p>
+
+<p>七年前他加入 Condé Nast 时，这家公司是一盘散沙。全球各国的 Condé Nast 彼此是竞争对手——在米兰，有 7 个不同的 Condé Nast 办公室。"那对于印刷时代来说是一个很好的策略——它让 Condé Nast 变成了一家非常成功的大公司。但对于数字时代来说完全不对。"读者已经从"我读我的本地报纸"转变为"我想消费来自世界各地的内容"。</p>
+
+<p>他做出了一个在传统媒体中罕见的决定——几乎立即更换了除 Anna Wintour 之外的所有高管。"如果你想改变文化，就换人。"他寻求具有全球视野和经验的人，而非仅专注美国市场的高管。公司的文化从"高度领土化和领地意识"转变为"更具协作性"。</p>
+
+<h2>"假设没有搜索"：媒体生存法则的极限重设</h2>
+
+<p>Roger 描述了一个震撼董事会的对比实验：七八年前的 Google 搜索结果页面——几条推广链接，10 条蓝色自然结果。今天的同一个搜索——AI 概述，接着是一排排商业链接，然后是赞助内容。"你必须翻到第二页才能看到一条自然搜索结果。"</p>
+
+<p>"这显然对 Google 来说很好。"但对出版商来说，他做出了一个看似极端但极其理性的决定：</p>
+
+<blockquote>
+"I told our teams, assume there's no search. You have to have your businesses planned as if search is zero."
+<span class="attr">— Roger Lynch (Condé Nast CEO)</span>
+</blockquote>
+
+<p>他说他们并不预期搜索真的会归零——但预期它只会占流量的个位数百分比。那些没有明确路径在没有搜索的情况下生存的品牌被重新评估优先级——资源被重新分配到那些有的品牌上。</p>
+
+<p>这个策略与 Doomberg 在能源领域提出的"假设电网靠不住就走离网"形成了惊人的对称——两者都在说：不要指望旧的基础设施继续为你运转。</p>
+
+<h2>品牌的杠铃策略与 AI 的双刃剑</h2>
+
+<p>Roger 描述了一个"杠铃效应"：Vogue 每年都在增长——营收和利润年复一年地创新高。The New Yorker 刚刚创下有史以来最成功的一年。小型利基品牌（如 Pitchfork，仅占收入的 1%）有非常忠诚的受众，在自己的领域表现良好。但中间的品牌——不够权威、不够垂直、受众太泛——正在受到最严重的冲击。</p>
+
+<p>"这不是做 broad media 的时代了。你要么是大品类中具有权威性的品牌，要么在特定利基中深入到你拥有人们愿意付费的忠诚受众。只靠广告支撑？非常艰难。"</p>
+
+<p>关于 AI，Roger 的立场清晰到不寻常。2024 年 6 月，Vogue 刊登了一则使用 AI 生成模特的广告——引发了强烈反弹。"我很高兴——因为这证实了我的期望：我们的读者要的是人类创作的内容。"</p>
+
+<p>但这并不意味着 AI 在 Condé Nast 没有用武之地。2024 年 12 月，新任产品与技术负责人恰好在 AI 能力阶跃式变化的时间点加入。Roger 给他的指令是"用空白纸张重新思考一切"。六到八周后，试点结果已经足够清晰——"让我们做大改变。"</p>
+
+<p>传统项目团队从 10-12 人缩减为 3-4 人：一个 PM（同时做产品分析）、一个设计师、一个工程师，AI 负责写软件和做 QA。速度提高了 3 倍。Roger 坦诚地指出了这对就业意味着什么："入门级岗位会更少，毫无疑问。"但他引用了自己母亲从小教他的一句话：</p>
+
+<blockquote>
+"There's always room at the top."
+<span class="attr">— Roger Lynch，引用他母亲的忠告</span>
+</blockquote>
+
+<h2>Met Gala：文化时刻的幂律效应</h2>
+
+<p>Met Gala 是本周刚结束的 Condé Nast 旗舰活动。Roger 分享了一组令人震撼的数据：在活动结束后的一周内，Condé Nast 创作的相关内容获得了 <strong>31 亿次视频观看</strong>——同比增长超过 60%。仅红毯直播就有 2 亿次观看。Oscar Party 同样增长了 65%。</p>
+
+<p>但 Roger 强调这不是可以量产的公式。"我们实际上做的活动比七年前更少——但每一个都做得更精、质量更高，并且将整个全球组织的合力投入推广。"七年前，Met Gala 是美国时尚圈知道的重大事件；今天，它是全球文化现象。转变的关键是 Condé Nast 从分散的各国独立运营变为统一的全球组织——"现在所有品牌一起推广它"。</p>
+
+<p>"你无法每周创造一次文化时刻。"但你能做的是找到一套让真正重要的时刻放大的方法——这是媒体在 AI 时代最核心的资产：不是规模，而是影响力。</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+
+<div class="quote-item q-blue">
+"If there's no funding, there's no big computer."
+<span class="ctx">— Ilya Sutskever，联邦法庭宣誓证词。Max S 评论：年度引言有力竞争者</span>
+</div>
+
+<div class="quote-item q-green">
+"One of the things about the oil markets is everybody lies."
+<span class="ctx">— Doomberg，解释油价之谜</span>
+</div>
+
+<div class="quote-item q-yellow">
+"Natural gas goes in one end and data comes out the other."
+<span class="ctx">— Doomberg，描述离网 AI 数据中心的终极形态</span>
+</div>
+
+<div class="quote-item q-purple">
+"California has as much oil and gas as Texas. The reason why Texas is a global energy superpower and California is a flaccid energy vassal is little more than politics."
+<span class="ctx">— Doomberg，论加州能源政治</span>
+</div>
+
+<div class="quote-item q-orange">
+"We don't want to be the tallest midget. We want to be the market leader in sales technology."
+<span class="ctx">— Sam Blond (Monaco)，解释为何必须颠覆 Salesforce 而非在其上建工具</span>
+</div>
+
+<div class="quote-item q-red">
+"Assume there's no search. You have to have your businesses planned as if search is zero."
+<span class="ctx">— Roger Lynch (Condé Nast CEO)，面对 Google 搜索结果的 AI 化改写</span>
+</div>
+
+</div>
+
+<div class="footer">
+  来源：<a href="https://share.transistor.fm/s/01a45a62">TBPN · 2026 年 5 月 12 日</a> · 节目时长 2 小时 56 分钟 ·
+  嘉宾：Doomberg, Sahir Jaggi, Sam Blond, Kevin Hartz, Alex Shan, Glen Wise, Roger Lynch
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "capital-tier", "type": "rectangle",
+      "x": 140, "y": 20, "width": 200, "height": 50,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "capital-label", "type": "text",
+      "x": 150, "y": 28, "width": 180, "height": 34,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Capital Layer\nA* $450M Seed Fund III",
+      "fontSize": 14, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Capital Layer\nA* $450M Seed Fund III"
+    },
+    {
+      "id": "infra-tier", "type": "rectangle",
+      "x": 140, "y": 100, "width": 200, "height": 50,
+      "angle": 0, "strokeColor": "#6741d9", "backgroundColor": "#d0bfff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 3, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "infra-label", "type": "text",
+      "x": 150, "y": 108, "width": 180, "height": 34,
+      "angle": 0, "strokeColor": "#6741d9", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 4, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Infrastructure Layer\nJudgment Labs · Agent Eval",
+      "fontSize": 13, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Infrastructure Layer"
+    },
+    {
+      "id": "app-tier", "type": "rectangle",
+      "x": 140, "y": 180, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 5, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "app-label", "type": "text",
+      "x": 150, "y": 188, "width": 180, "height": 64,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 6, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Application Layer\nForus · Healthcare AI\nMonaco · AI Sales CRM\nCinder · AI Trust & Safety",
+      "fontSize": 12, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Application Layer"
+    },
+    {
+      "id": "vline1", "type": "line",
+      "x": 240, "y": 70, "width": 0, "height": 30,
+      "angle": 0, "strokeColor": "#495057", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "dashed",
+      "roughness": 1, "opacity": 60, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 7, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "vline2", "type": "line",
+      "x": 240, "y": 150, "width": 0, "height": 30,
+      "angle": 0, "strokeColor": "#495057", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "dashed",
+      "roughness": 1, "opacity": 60, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "note-box", "type": "rectangle",
+      "x": 140, "y": 290, "width": 200, "height": 50,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 9, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "note-label", "type": "text",
+      "x": 150, "y": 298, "width": 180, "height": 34,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 10, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
+      "locked": false, "text": "Key Insight\nAI Value Chain from\nCapital → Infra → Apps",
+      "fontSize": 12, "fontFamily": 2, "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Key Insight"
+    }
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": 20}
+}
