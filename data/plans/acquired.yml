@@ -1,10 +1,10 @@
 source: acquired
-refreshed_at: 2026-05-18T07:02:44.972Z
+refreshed_at: 2026-05-18T19:42:56.516Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 6
-done: 0
-pending: 2
+done: 1
+pending: 1
 needs_transcript: 4
 downloaded: 0
 episodes:
@@ -97,7 +97,7 @@ episodes:
       ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
       and is intended for informational and entertainment purposes only. You should do your own research and make your
       own independent decisions when considering any financial transactions.
-    status: pending
+    status: generated
     priority: 1
   - id: 5ad38cec-40ac-43e1-bc70-1c32617e4573
     title: Ferrari
