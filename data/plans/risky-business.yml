@@ -1,40 +1,21 @@
 source: risky-business
-refreshed_at: 2026-05-19T06:54:33.398Z
+refreshed_at: 2026-05-19T09:56:06.802Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 26
+total_candidates: 25
 done: 0
 pending: 0
-needs_transcript: 26
+needs_transcript: 25
+transcribing: 0
+transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: SOAPBOX107
-    title: "Soap Box: Where does AI fit into cloud security?"
-    duration: 2017
-    published: Fri, 15 May 2026 14:55:09 +1000
-    published_sort: "20260515"
-    url: https://risky.biz/SOAPBOX107/
-    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX107.mp3
-    image: https://risky.biz/static/img/rb-feed-main.png
-    summary: >-
-      In this sponsored soap box edition of the Risky Business podcast Patrick Gray chats with Toni de la Fuente, the
-      founder of Prowler.
-
-
-      Prowler started off as a bunch of scripts in a trenchcoat, then became an open source cloud security tool, and
-      it’s now a venture-funded cloud security business. In this interview Toni talks us through how AI is changing the
-      game for him as an open source project owner, and as a vendor. In short, reports of the death of IT and security
-      tooling at the hands of frontier models have been greatly exaggerated.
-
-
-      This episode is also available on Youtube.
-    status: needs_transcript
-    priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #837 -- GitHub Actions footgun claims TanStack"
     duration: 3915
     published: Wed, 13 May 2026 15:08:48 +1000
     published_sort: "20260513"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB837/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB837.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -61,6 +42,7 @@ episodes:
     duration: 3716
     published: Wed, 06 May 2026 15:14:46 +1000
     published_sort: "20260506"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB836/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB836.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -87,6 +69,7 @@ episodes:
     duration: 2639
     published: Fri, 01 May 2026 10:58:34 +1000
     published_sort: "20260501"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/SNAKEOILERS23PT2/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS23PT2.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -112,6 +95,7 @@ episodes:
     duration: 3988
     published: Wed, 29 Apr 2026 14:43:51 +1000
     published_sort: "20260429"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB835/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB835.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -137,6 +121,7 @@ episodes:
     duration: 3633
     published: Wed, 22 Apr 2026 19:11:43 +1000
     published_sort: "20260422"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB834/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB834.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -162,6 +147,7 @@ episodes:
     duration: 3585
     published: Wed, 15 Apr 2026 13:34:42 +1000
     published_sort: "20260415"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB833/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB833.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -187,6 +173,7 @@ episodes:
     duration: 2880
     published: Fri, 10 Apr 2026 07:33:35 +1000
     published_sort: "20260409"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/SNAKEOILERS23PT1/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS23PT1.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -212,6 +199,7 @@ episodes:
     duration: 3210
     published: Wed, 08 Apr 2026 14:59:38 +1000
     published_sort: "20260408"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB832/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB832.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -239,6 +227,7 @@ episodes:
     duration: 2806
     published: Fri, 03 Apr 2026 11:35:55 +1100
     published_sort: "20260403"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/HTWGO2/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/HTWGO2.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -263,6 +252,7 @@ episodes:
     duration: 3580
     published: Wed, 01 Apr 2026 14:50:51 +1100
     published_sort: "20260401"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB831/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB831.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -290,6 +280,7 @@ episodes:
     duration: 1811
     published: Fri, 27 Mar 2026 12:07:14 +1100
     published_sort: "20260327"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/SOAPBOX106/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX106.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -311,6 +302,7 @@ episodes:
     duration: 3833
     published: Wed, 25 Mar 2026 15:13:36 +1100
     published_sort: "20260325"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB830/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB830.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -338,6 +330,7 @@ episodes:
     duration: 3825
     published: Wed, 18 Mar 2026 14:39:30 +1100
     published_sort: "20260318"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB829/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB829.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -364,6 +357,7 @@ episodes:
     duration: 1645
     published: Fri, 13 Mar 2026 10:12:14 +1100
     published_sort: "20260312"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/SOAPBOX105/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX105.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -385,6 +379,7 @@ episodes:
     duration: 3748
     published: Wed, 11 Mar 2026 15:31:39 +1100
     published_sort: "20260311"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB828/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB828.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -410,6 +405,7 @@ episodes:
     duration: 3684
     published: Wed, 04 Mar 2026 15:29:15 +1100
     published_sort: "20260304"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB827/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB827.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -436,6 +432,7 @@ episodes:
     duration: 3971
     published: Wed, 25 Feb 2026 14:49:29 +1100
     published_sort: "20260225"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB826/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB826.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -461,6 +458,7 @@ episodes:
     duration: 2253
     published: Fri, 20 Feb 2026 10:33:55 +1100
     published_sort: "20260219"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/soapbox104/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/soapbox104.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -485,6 +483,7 @@ episodes:
     duration: 3793
     published: Wed, 18 Feb 2026 14:49:36 +1100
     published_sort: "20260218"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB825/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB825.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -512,6 +511,7 @@ episodes:
     duration: 3373
     published: Wed, 11 Feb 2026 14:50:13 +1100
     published_sort: "20260211"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB824/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB824.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -538,6 +538,7 @@ episodes:
     duration: 3369
     published: Wed, 04 Feb 2026 14:13:54 +1100
     published_sort: "20260204"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB823/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB823.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -564,6 +565,7 @@ episodes:
     duration: 3845
     published: Wed, 28 Jan 2026 14:35:47 +1100
     published_sort: "20260128"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB822/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB822.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -590,6 +592,7 @@ episodes:
     duration: 3886
     published: Wed, 21 Jan 2026 15:28:42 +1100
     published_sort: "20260121"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB821/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB821.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -621,6 +624,7 @@ episodes:
     duration: 3555
     published: Wed, 14 Jan 2026 12:42:29 +1100
     published_sort: "20260114"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/RB820/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB820.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
@@ -648,6 +652,7 @@ episodes:
     duration: 3816
     published: Wed, 07 Jan 2026 07:00:00 +1100
     published_sort: "20260106"
+    first_seen_at: 2026-05-19T08:55:24.848Z
     url: https://risky.biz/HTWGO1/
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/HTWGO1.mp3
     image: https://risky.biz/static/img/rb-feed-main.png

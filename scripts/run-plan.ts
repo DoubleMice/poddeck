@@ -23,12 +23,15 @@ import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { cleanTranscript, fetchText, preferredTranscript } from './lib/rss.ts'
 import { log } from './lib/log.ts'
 import { run } from './lib/spawn.ts'
+import { DashScopeClient, jobFromTask } from './lib/dashscope.ts'
+import type { PlanEntry, PlanFile, TranscriptionJob, TranscriptionJobsFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
 const isWin = process.platform === 'win32'
 const SOURCES_PATH = resolve(ROOT, 'sources.yml')
 const PLANS_DIR = resolve(ROOT, 'data/plans')
 const TRANSCRIPTS_DIR = resolve(ROOT, 'data/transcripts')
+const TRANSCRIPTION_JOBS_PATH = resolve(ROOT, 'data/transcription-jobs.yml')
 const EPISODES_DIR = resolve(ROOT, 'episodes')
 const TEMPLATES_DIR = resolve(EPISODES_DIR, '_templates')
 const PROMPTS_DIR = resolve(ROOT, 'scripts/prompts')
@@ -40,6 +43,11 @@ const limit = Number(process.argv.find(a => a.startsWith('--limit='))?.split('='
 const concurrency = Number(process.argv.find(a => a.startsWith('--concurrency='))?.split('=')[1] ?? 1)
 const dryRun = process.argv.includes('--dry-run')
 const onlyCategory = process.argv.find(a => a.startsWith('--category='))?.split('=')[1]
+const autoTranscribe = process.argv.includes('--auto-transcribe')
+const transcribeLimit = Number(process.argv.find(a => a.startsWith('--transcribe-limit='))?.split('=')[1] ?? 1)
+const transcribeWaitMinutes = Number(process.argv.find(a => a.startsWith('--transcribe-wait-minutes='))?.split('=')[1] ?? 0)
+const dashscopeRegion = (process.argv.find(a => a.startsWith('--dashscope-region='))?.split('=')[1] ?? 'cn') as 'cn' | 'intl'
+const TRANSCRIBE_MAX_RETRIES = 3
 
 // Shared state for generation rate-limit detection and token tracking
 let generationRateLimited = false
@@ -52,36 +60,6 @@ const stats = {
   totalOutputTokens: 0,
   totalDurationMs: 0,
   episodes: [] as { id: string; inputTokens: number; outputTokens: number; durationMs: number; status: string }[],
-}
-
-interface PlanEntry {
-  id: string
-  title: string
-  duration: number
-  published?: string
-  published_sort?: string
-  url: string
-  audio_url?: string
-  image?: string
-  transcript_url?: string
-  transcript_type?: string
-  transcripts?: { url: string; type: string; language?: string }[]
-  status: 'pending' | 'needs_transcript' | 'downloaded' | 'generated' | 'audit_failed' | 'failed'
-  category?: string
-  priority: number
-}
-
-interface PlanFile {
-  source: string
-  refreshed_at: string
-  min_duration: number
-  min_date: string
-  total_candidates: number
-  done: number
-  pending: number
-  needs_transcript?: number
-  downloaded?: number
-  episodes: PlanEntry[]
 }
 
 function loadPlans(): { source: string; path: string; plan: PlanFile }[] {
@@ -100,9 +78,19 @@ function loadPlans(): { source: string; path: string; plan: PlanFile }[] {
 function savePlan(path: string, plan: PlanFile): void {
   plan.pending = plan.episodes.filter(e => e.status === 'pending' || e.status === 'audit_failed').length
   plan.needs_transcript = plan.episodes.filter(e => e.status === 'needs_transcript').length
+  plan.transcribing = plan.episodes.filter(e => e.status === 'transcribing').length
+  plan.transcribe_failed = plan.episodes.filter(e => e.status === 'transcribe_failed').length
   plan.downloaded = plan.episodes.filter(e => e.status === 'downloaded').length
   plan.done = plan.episodes.filter(e => e.status === 'generated').length
   writeYaml(path, plan)
+}
+
+function loadTranscriptionJobs(): TranscriptionJobsFile {
+  return readYaml<TranscriptionJobsFile>(TRANSCRIPTION_JOBS_PATH, { jobs: [] })
+}
+
+function saveTranscriptionJobs(file: TranscriptionJobsFile): void {
+  writeYaml(TRANSCRIPTION_JOBS_PATH, file)
 }
 
 function scaffoldEpisode(id: string): void {
@@ -179,6 +167,259 @@ function hasGeneratedArtifacts(id: string): boolean {
   return existsSync(join(dir, 'slides.md'))
     && existsSync(join(dir, 'meta.yml'))
     && existsSync(join(dir, 'article.html'))
+}
+
+function dashscopeClient(): DashScopeClient | null {
+  const apiKey = process.env.DASHSCOPE_API_KEY
+  if (!apiKey) return null
+  return new DashScopeClient({ apiKey, region: dashscopeRegion })
+}
+
+function entryKey(sourceId: string, entry: PlanEntry): string {
+  return `${sourceId}:${entry.id}:${entry.published_sort ?? ''}:${entry.audio_url ?? ''}`
+}
+
+function findJob(jobs: TranscriptionJobsFile, key: string): TranscriptionJob | undefined {
+  return jobs.jobs.find(job => (job.key ?? `${job.source}:${job.id}`) === key && job.status !== 'failed')
+}
+
+function candidateSortKey(item: { sourceId: string; entry: PlanEntry }): string {
+  return `${item.entry.first_seen_at ?? ''}:${item.entry.published_sort ?? ''}:${item.entry.id}:${item.sourceId}`
+}
+
+function selectFairTranscribeCandidates(
+  plans: { source: string; path: string; plan: PlanFile }[],
+  jobs: TranscriptionJobsFile,
+  max: number,
+): { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] {
+  if (max <= 0) return []
+
+  const bySource = plans.map(({ source, path, plan }) => ({
+    source,
+    path,
+    plan,
+    entries: plan.episodes
+      .filter(entry => entry.status === 'needs_transcript' && entry.audio_url && !findJob(jobs, entryKey(source, entry)))
+      .sort((a, b) => (b.published_sort ?? '').localeCompare(a.published_sort ?? '')),
+  })).filter(group => group.entries.length > 0)
+
+  const selected: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
+  while (selected.length < max && bySource.some(group => group.entries.length > 0)) {
+    bySource.sort((a, b) => {
+      const newestA = a.entries[0]
+      const newestB = b.entries[0]
+      return candidateSortKey({ sourceId: b.source, entry: newestB }).localeCompare(candidateSortKey({ sourceId: a.source, entry: newestA }))
+    })
+    for (const group of bySource) {
+      if (selected.length >= max) break
+      const entry = group.entries.shift()
+      if (!entry) continue
+      selected.push({ entry, sourceId: group.source, plan: group.plan, planPath: group.path })
+    }
+  }
+  return selected
+}
+
+function selectFairGenerationCandidates(
+  candidates: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[],
+  max: number,
+): { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] {
+  if (max <= 0) return []
+  const bySource = new Map<string, { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[]>()
+  for (const item of candidates) {
+    const list = bySource.get(item.sourceId) ?? []
+    list.push(item)
+    bySource.set(item.sourceId, list)
+  }
+  for (const list of bySource.values()) {
+    list.sort((a, b) => (b.entry.published_sort ?? '').localeCompare(a.entry.published_sort ?? ''))
+  }
+
+  const groups = [...bySource.entries()].map(([sourceId, entries]) => ({ sourceId, entries }))
+  const selected: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
+  while (selected.length < max && groups.some(group => group.entries.length > 0)) {
+    groups.sort((a, b) => {
+      const newestA = a.entries[0]?.entry.published_sort ?? ''
+      const newestB = b.entries[0]?.entry.published_sort ?? ''
+      return newestB.localeCompare(newestA)
+    })
+    for (const group of groups) {
+      if (selected.length >= max) break
+      const item = group.entries.shift()
+      if (item) selected.push(item)
+    }
+  }
+  return selected
+}
+
+async function pollTranscriptionJobs(
+  plans: { source: string; path: string; plan: PlanFile }[],
+  jobsFile: TranscriptionJobsFile,
+  client: DashScopeClient,
+): Promise<number> {
+  let completed = 0
+  const entryByKey = new Map<string, { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }>()
+  for (const { path, plan } of plans) {
+    for (const entry of plan.episodes) entryByKey.set(entryKey(plan.source, entry), { entry, sourceId: plan.source, plan, planPath: path })
+  }
+
+  for (const job of jobsFile.jobs) {
+    if (job.status === 'succeeded' || job.status === 'failed' || job.status === 'submitting') continue
+    const key = job.key ?? `${job.source}:${job.id}`
+    const item = entryByKey.get(key)
+    if (!item) continue
+    const now = new Date().toISOString()
+    try {
+      const task = await client.query(job.task_id)
+      job.updated_at = now
+      if (task.status === 'SUCCEEDED') {
+        const transcriptionUrl = task.transcriptionUrls[0]
+        if (!transcriptionUrl) throw new Error('DashScope task succeeded without transcription_url')
+        const normalized = await client.downloadTranscript(transcriptionUrl)
+        mkdirSync(TRANSCRIPTS_DIR, { recursive: true })
+        writeFileSync(join(TRANSCRIPTS_DIR, `${job.id}.txt`), normalized.text + '\n', 'utf-8')
+        job.status = 'succeeded'
+        job.transcription_url = transcriptionUrl
+        job.completed_at = now
+        item.entry.status = 'pending'
+        item.entry.transcript_provider = 'dashscope'
+        item.entry.transcript_job_id = job.task_id
+        item.entry.transcript_completed_at = now
+        item.entry.transcript_error = undefined
+        savePlan(item.planPath, item.plan)
+        completed++
+        log.ok(`  transcribed ${job.id} (${normalized.text.length} chars)`)
+        for (const warning of normalized.warnings) log.warn(`  ${job.id}: ${warning}`)
+      } else if (task.status === 'FAILED' || task.status === 'CANCELED' || task.status === 'UNKNOWN') {
+        job.status = 'failed'
+        job.error = `DashScope task ended with ${task.status}`
+        item.entry.status = 'transcribe_failed'
+        item.entry.transcript_completed_at = now
+        item.entry.transcript_error = job.error
+        savePlan(item.planPath, item.plan)
+        log.err(`  transcription failed ${job.id}: ${job.error}`)
+      } else {
+        job.status = 'running'
+        item.entry.status = 'transcribing'
+        savePlan(item.planPath, item.plan)
+      }
+    } catch (error: any) {
+      job.updated_at = now
+      job.error = error.message
+      job.retries = (job.retries ?? 0) + 1
+      if (job.retries >= TRANSCRIBE_MAX_RETRIES) {
+        job.status = 'failed'
+        item.entry.status = 'transcribe_failed'
+        item.entry.transcript_completed_at = now
+        item.entry.transcript_error = error.message
+        log.err(`  transcription failed ${job.id}: ${error.message}`)
+      } else {
+        job.status = 'running'
+        item.entry.status = 'transcribing'
+        item.entry.transcript_error = error.message
+        log.warn(`  transcription poll deferred ${job.id}: ${error.message}`)
+      }
+      savePlan(item.planPath, item.plan)
+    }
+  }
+  saveTranscriptionJobs(jobsFile)
+  return completed
+}
+
+async function submitTranscriptionCandidates(
+  candidates: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[],
+  jobsFile: TranscriptionJobsFile,
+  client: DashScopeClient,
+): Promise<number> {
+  let submitted = 0
+  for (const item of candidates) {
+    const { entry } = item
+    if (!entry.audio_url) continue
+    const now = new Date().toISOString()
+    if (dryRun) {
+      log.info(`  (dry-run) would transcribe ${item.sourceId}/${entry.id}`)
+      submitted++
+      continue
+    }
+    const key = entryKey(item.sourceId, entry)
+    const pendingJob: TranscriptionJob = {
+      key,
+      id: entry.id,
+      source: item.sourceId,
+      title: entry.title,
+      audio_url: entry.audio_url,
+      task_id: '',
+      status: 'submitting',
+      retries: 0,
+      submitted_at: now,
+      updated_at: now,
+    }
+    jobsFile.jobs.push(pendingJob)
+    entry.status = 'transcribing'
+    entry.transcript_provider = 'dashscope'
+    entry.transcript_submitted_at = now
+    savePlan(item.planPath, item.plan)
+    saveTranscriptionJobs(jobsFile)
+    try {
+      const taskId = await client.submit(entry.audio_url)
+      Object.assign(pendingJob, jobFromTask({
+        key,
+        id: entry.id,
+        source: item.sourceId,
+        title: entry.title,
+        audioUrl: entry.audio_url,
+        taskId,
+        now,
+      }))
+      entry.status = 'transcribing'
+      entry.transcript_provider = 'dashscope'
+      entry.transcript_job_id = taskId
+      entry.transcript_submitted_at = now
+      entry.transcript_error = undefined
+      savePlan(item.planPath, item.plan)
+      saveTranscriptionJobs(jobsFile)
+      submitted++
+      log.ok(`  submitted transcription ${item.sourceId}/${entry.id} task=${taskId}`)
+    } catch (error: any) {
+      pendingJob.status = 'failed'
+      pendingJob.error = error.message
+      pendingJob.updated_at = new Date().toISOString()
+      entry.status = 'transcribe_failed'
+      entry.transcript_error = error.message
+      savePlan(item.planPath, item.plan)
+      saveTranscriptionJobs(jobsFile)
+      log.err(`  submit transcription failed ${item.sourceId}/${entry.id}: ${error.message}`)
+    }
+  }
+  return submitted
+}
+
+async function runAutoTranscription(plans: { source: string; path: string; plan: PlanFile }[]): Promise<void> {
+  if (!autoTranscribe) return
+  const client = dashscopeClient()
+  if (!client) {
+    log.warn('auto transcription enabled but DASHSCOPE_API_KEY is missing')
+    return
+  }
+
+  log.step(`Auto transcription — fair scheduling, limit=${transcribeLimit}`)
+  const jobsFile = loadTranscriptionJobs()
+  await pollTranscriptionJobs(plans, jobsFile, client)
+
+  const candidates = selectFairTranscribeCandidates(plans, jobsFile, transcribeLimit)
+  if (candidates.length > 0) await submitTranscriptionCandidates(candidates, jobsFile, client)
+  else log.info('no needs_transcript candidates available for transcription')
+
+  if (transcribeWaitMinutes > 0) {
+    const deadline = Date.now() + transcribeWaitMinutes * 60_000
+    while (Date.now() < deadline) {
+      const active = jobsFile.jobs.some(job => job.status === 'submitted' || job.status === 'running')
+      if (!active) break
+      await new Promise(resolve => setTimeout(resolve, 30_000))
+      const completed = await pollTranscriptionJobs(plans, jobsFile, client)
+      if (completed > 0) break
+    }
+  }
 }
 
 async function ensureWorkspaceLinks(): Promise<boolean> {
@@ -307,8 +548,18 @@ async function processEntry(
   const retryAuditOnly = entry.status === 'audit_failed' && hasGeneratedArtifacts(entry.id)
 
   if (entry.status === 'needs_transcript') {
-    entry.status = 'pending'
-    savePlan(planPath, plan)
+    log.warn('  needs transcript; enable --auto-transcribe or provide RSS transcript')
+    return
+  }
+
+  if (entry.status === 'transcribing') {
+    log.warn('  transcription still running')
+    return
+  }
+
+  if (entry.status === 'transcribe_failed') {
+    log.warn(`  transcription failed: ${entry.transcript_error ?? 'unknown error'}`)
+    return
   }
 
   try {
@@ -399,7 +650,7 @@ async function processEntry(
 }
 
 async function main() {
-  log.step(`Run-plan — concurrency=${concurrency}, limit=${limit}${dryRun ? ' (DRY RUN)' : ''}`)
+  log.step(`Run-plan — concurrency=${concurrency}, limit=${limit}${autoTranscribe ? ', auto-transcribe' : ''}${dryRun ? ' (DRY RUN)' : ''}`)
 
   const plans = loadPlans()
   const targetPlans = onlyId ? plans.filter(p => p.source === onlyId) : plans
@@ -408,11 +659,17 @@ async function main() {
     return
   }
 
-  // Flatten all pending entries with their plan context, sorted by published date desc
+  await runAutoTranscription(targetPlans)
+
+  // Flatten all generatable entries with their plan context, sorted by published date desc
   const allPending: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
   for (const { source, path, plan } of targetPlans) {
     for (const entry of plan.episodes) {
-      if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (entry.status === 'needs_transcript' && existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)))) {
+      if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed'))) {
+        if (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed')) {
+          entry.status = 'pending'
+          savePlan(path, plan)
+        }
         allPending.push({ entry, sourceId: source, plan, planPath: path })
       }
     }
@@ -439,7 +696,7 @@ async function main() {
     return
   }
 
-  const toProcess = allPending.slice(0, limit)
+  const toProcess = selectFairGenerationCandidates(allPending, limit)
   log.info(`${allPending.length} pending, will process ${toProcess.length}${onlyCategory ? ` (category: ${onlyCategory})` : ''}`)
 
   // Concurrency: run N at a time

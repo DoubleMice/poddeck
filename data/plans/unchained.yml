@@ -1,184 +1,24 @@
 source: unchained
-refreshed_at: 2026-05-19T06:54:33.337Z
+refreshed_at: 2026-05-19T09:56:06.774Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 127
+total_candidates: 124
 done: 0
 pending: 0
-needs_transcript: 127
+needs_transcript: 124
+transcribing: 0
+transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
-    title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
-      Onchain"
-    duration: 2725
-    published: Sat, 16 May 2026 20:05:00 -0000
-    published_sort: "20260516"
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
-    image: https://megaphone.imgix.net/podcasts/9e3682c2-4fd0-11f1-b62a-cbbb414ef53f/image/11d018694ca9e63197ceec7a3f4592ac.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      The repo market is $16 trillion globally and most people have never heard of it — until the plumbing breaks. Craig
-      Burchell of FalconX and Matteo Pandolfi of Pareto explain how it works and why bringing it on-chain is the next
-      big unlock for DeFi.
-
-
-      ---
-
-
-      Heads up!
-
-
-      If you haven’t yet, be sure to subscribe to Bits + Bips, since the show will migrate there in a few weeks. Follow
-      us on ⁠⁠⁠⁠⁠Apple Podcasts⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠YouTube⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠Spotify⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠X⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠Unchained⁠⁠⁠⁠⁠ and
-      wherever you get your podcasts. 
-
-
-      ----
-
-
-      The repo market is $16 trillion globally and it is, as Craig Burchell puts it, the oil that makes everything go.
-      It is also almost entirely absent from on-chain finance — and that gap is creating real problems for RWA
-      liquidity, stablecoin swap desks, and DeFi protocols trying to manage redemption queues. Steve Ehrlich sits down
-      with Craig Burchell, head of lending at FalconX, and Matteo Pandolfi, CEO of on-chain credit infrastructure
-      provider Pareto, to map exactly how repo works, what broke in 2019, why it translates extremely well into onchain
-      finance. Matteo puts a $1 trillion figure on where on-chain repo gets in five years. Craig gives you one reason it
-      gets there and one very honest reason it might not.
-
-
-      Host:
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Steve Ehrlich, Head of Research at SharpLink and Host of Bits + Bips: The Interview -
-      https://x.com/Steven_Ehrlich
-
-
-      Guest:
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Craig Burchell — Head of Lending, FalconX; previously Head of Lending at Membrane Finance.
-      @_CraigBirchall
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Matteo Pandolfi — CEO & Co-Founder, Pareto (on-chain credit infrastructure). @pan_teo_
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 99f64648-4fd0-11f1-9e5e-dbb8b251b138
-    title: How Hyperliquid Benefits From Its New Deal With Coinbase Over USDC
-    duration: 2181
-    published: Fri, 15 May 2026 21:27:00 -0000
-    published_sort: "20260515"
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1253421853.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1253421853.mp3
-    image: https://megaphone.imgix.net/podcasts/99f64648-4fd0-11f1-9e5e-dbb8b251b138/image/75c13a925e7caf9ad113219ccb389214.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Coinbase just became the official USDC treasury deployer on Hyperliquid. Alex Weseley of Artemis explains how this
-      boosts Hyperliquid’s annual revenue by 25%.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-
-      ⁠⁠Coinbase One⁠⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠⁠coinbase.com/unchained⁠⁠.
-
-
-      ========================================================
-
-
-      The morning this episode was recorded, Coinbase announced it was acquiring the USDH brand and becoming the
-      official USDC treasury deployer on Hyperliquid — a deal with $150 million in annual revenue implications for a
-      platform that previously earned nothing from its $5 billion USDC float.
-
-
-      Alex Weseley, institutional data lead at Artemis Analytics, walks through the math on the HYPE price move,
-      explains why the deal had to be bilateral between Circle and Coinbase, lays out his $300 billion Coinbase thesis
-      built on X402 and agentic commerce, and takes on the question Laura's been asking all week: is the Circle–Coinbase
-      relationship heading for divorce?
-
-
-      Host:
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-
-      Guests:
-
-        
-      ⁠Alex Weseley — Institutional Data Lead, Artemis Analytics
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 268089a0-4f38-11f1-9a58-ff1b070f08af
-    title: "Uneasy Money: Why the Broken Pre-IPO Secondary Markets Won't Be Fixed Anytime Soon"
-    duration: 4571
-    published: Fri, 15 May 2026 00:08:00 -0000
-    published_sort: "20260515"
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3
-    image: https://megaphone.imgix.net/podcasts/268089a0-4f38-11f1-9a58-ff1b070f08af/image/796813f58062aea5e679cd32b7b3068f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Anthropic is voiding secondary market trades. Who gets hurt — WhatsApp scammers, Forge buyers, or the founders?
-      Plus: why continuous synthetic pricing is coming for every pre-IPO company.
-
-
-      Thank you to our sponsors!⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
-
-
-      Multichain Advisors: Get help navigating TGEs, go‑to‑market, BD and partnerships, capital markets advisory, PR,
-      media placements, KOL activations and more at multichainadv.com.
-
-
-      Coinbase: Get 20% off the first year of your Coinbase One annual plan at coinbase.com/unchained.
-
-
-      Anthropic and OpenAI are moving to void secondary market trades — and Kain, Tay, and Luca think that's only going
-      to work if they're serious about it, which means a lawsuit is probably coming.
-
-
-      This week on Uneasy Money they trace the full anatomy of the pre-IPO SPV fraud wave, explain why synthetic
-      perpetual markets will eventually price every in-demand private company continuously whether founders want it or
-      not, and dig into the latest AI hacks. Tay breaks down how attackers are now using local on-device Gemini APIs to
-      construct malware on the fly, and Kain shares the story of an agent that caught a slow-drain attack in 90 seconds
-      that humans missed for 12 hours.
-
-
-      Luca explains why Circle's Arc token is a brilliant move for Circle equity holders even if it changes nothing for
-      ETH or Solana. Plus: the Aave/Kelp court update and why the Gerstein lawyers' argument that every victim needs to
-      show up in court is fundamentally incompatible with how onchain recovery works.
-
-
-      Hosts:
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠, CEO of Pudgy Penguins
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
   - id: 58e92bbe-4f37-11f1-8faf-2342ff572b86
     title: "DEX in the City: Will the CLARITY Act Pass? Three Crypto Lawyers Give Their Odds"
     duration: 2962
-    published: Thu, 14 May 2026 15:37:00 -0000
+    published: Thu, 14 May 2026 01:50:00 -0000
     published_sort: "20260514"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1930876733.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1930876733.mp3
-    image: https://megaphone.imgix.net/podcasts/58e92bbe-4f37-11f1-8faf-2342ff572b86/image/0aa1c09a6b964ca40e28710421fc0866.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    image: https://megaphone.imgix.net/podcasts/58e92bbe-4f37-11f1-8faf-2342ff572b86/image/0be2ccc7744f5d692200fb71f7cbb1bd.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
       As a new CLARITY Act draft dropped, KK, Vy, and guest Josh Riezman of GSR give their passage odds and explain the
       one developer protection provision that matters most.
@@ -235,6 +75,7 @@ episodes:
     duration: 3182
     published: Wed, 13 May 2026 18:55:00 -0000
     published_sort: "20260513"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4045919454.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4045919454.mp3
     image: https://megaphone.imgix.net/podcasts/6089b8d2-4efd-11f1-be35-93e84526074f/image/1fb098aab543a254f71c664e10540502.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -296,6 +137,7 @@ episodes:
     duration: 3473
     published: Tue, 12 May 2026 20:03:00 -0000
     published_sort: "20260512"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8609872215.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8609872215.mp3
     image: https://megaphone.imgix.net/podcasts/e0f90034-4e3c-11f1-ade0-67e121e14947/image/0054001c1b952d75d1777d96475629ca.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -349,6 +191,7 @@ episodes:
     duration: 4449
     published: Sat, 09 May 2026 00:48:00 -0000
     published_sort: "20260509"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1523743395.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1523743395.mp3
     image: https://megaphone.imgix.net/podcasts/bee9fc40-4b40-11f1-88f0-8f180161ac76/image/f12060e7900167e503ceadb29538cd8b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -407,6 +250,7 @@ episodes:
     duration: 2058
     published: Fri, 08 May 2026 19:49:00 -0000
     published_sort: "20260508"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7246463136.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7246463136.mp3
     image: https://megaphone.imgix.net/podcasts/3e1f69e4-4b02-11f1-ad1e-7b19f4afcb2a/image/2f0e4f026ae7f33a4c2c0e9e0b5c3b5d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -465,6 +309,7 @@ episodes:
     duration: 2392
     published: Fri, 08 May 2026 01:06:00 -0000
     published_sort: "20260508"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9685873822.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9685873822.mp3
     image: https://megaphone.imgix.net/podcasts/41294c52-4983-11f1-a5a7-0beee9669ba8/image/22293b95b64818876486e421714b307c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -520,6 +365,7 @@ episodes:
     duration: 3308
     published: Thu, 07 May 2026 04:12:00 -0000
     published_sort: "20260507"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6576176751.mp3?updated=1777998984
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6576176751.mp3?updated=1777998984
     image: https://megaphone.imgix.net/podcasts/7a8aaf0e-47e9-11f1-a2d1-030e826b82d5/image/367d274c307b0e54311338a9b9dce4f1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -584,6 +430,7 @@ episodes:
     duration: 3600
     published: Thu, 07 May 2026 02:29:00 -0000
     published_sort: "20260507"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
     image: https://megaphone.imgix.net/podcasts/5c51dea2-48a4-11f1-aad3-37cf1e9be3b9/image/f48b3ce4c3f4038d5c47292d98085515.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -651,6 +498,7 @@ episodes:
     duration: 3045
     published: Sun, 03 May 2026 05:25:00 -0000
     published_sort: "20260503"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3614546147.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3614546147.mp3
     image: https://megaphone.imgix.net/podcasts/cb690d18-44ff-11f1-8b25-8bdd7827d75a/image/6690d20749084dea2c83811d2c4995b6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -703,6 +551,7 @@ episodes:
     duration: 4009
     published: Sun, 03 May 2026 04:46:00 -0000
     published_sort: "20260503"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5142871297.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5142871297.mp3
     image: https://megaphone.imgix.net/podcasts/d6e45512-44ff-11f1-a607-9b6df523cd26/image/17bf28129cd8d15f383bbbe64849c878.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -775,6 +624,7 @@ episodes:
     duration: 4472
     published: Fri, 01 May 2026 22:57:00 -0000
     published_sort: "20260501"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4521157436.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4521157436.mp3
     image: https://megaphone.imgix.net/podcasts/1a6e3056-443c-11f1-bab3-474766788d27/image/5940be8f1173de9196c1420e6fb7c22d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -829,6 +679,7 @@ episodes:
     duration: 3644
     published: Thu, 30 Apr 2026 16:00:00 -0000
     published_sort: "20260430"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3208615968.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3208615968.mp3
     image: https://megaphone.imgix.net/podcasts/2f5f3ffe-441a-11f1-abfb-83b345de7767/image/89079fb7fdb4a7c3abb05e95c3b20a38.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -924,6 +775,7 @@ episodes:
     duration: 3456
     published: Wed, 29 Apr 2026 19:38:00 -0000
     published_sort: "20260429"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9694135598.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9694135598.mp3
     image: https://megaphone.imgix.net/podcasts/05063a4e-4403-11f1-ba00-9b64411c2577/image/ed927848ccf4696ddbd47b6613f6b77b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -976,6 +828,7 @@ episodes:
     duration: 2266
     published: Wed, 29 Apr 2026 14:52:00 -0000
     published_sort: "20260429"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7147330727.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7147330727.mp3
     image: https://megaphone.imgix.net/podcasts/dc41b1f2-42bc-11f1-ac96-4ba2e28f8991/image/a626e33983458257226922c5191a151b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1055,6 +908,7 @@ episodes:
     duration: 4074
     published: Sun, 26 Apr 2026 19:15:00 -0000
     published_sort: "20260426"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2748859331.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2748859331.mp3
     image: https://megaphone.imgix.net/podcasts/463283d0-41a4-11f1-b0b9-a312e7ed8e2a/image/445ddff723790ac24f25757b3c2ced81.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1133,6 +987,7 @@ episodes:
     duration: 4801
     published: Fri, 24 Apr 2026 22:29:00 -0000
     published_sort: "20260424"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9925473007.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9925473007.mp3
     image: https://megaphone.imgix.net/podcasts/00e5e2fe-402d-11f1-9f4a-07fc37993b56/image/a842594e693fd90f4283fabf03a92866.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1190,6 +1045,7 @@ episodes:
     duration: 2862
     published: Fri, 24 Apr 2026 03:06:00 -0000
     published_sort: "20260424"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3944159138.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3944159138.mp3
     image: https://megaphone.imgix.net/podcasts/98cd7094-3f8a-11f1-9453-7b06a335e01c/image/285ef8e19f1a40ba8046823423cdd955.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1257,6 +1113,7 @@ episodes:
     duration: 3695
     published: Thu, 23 Apr 2026 16:00:00 -0000
     published_sort: "20260423"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4760387221.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4760387221.mp3
     image: https://megaphone.imgix.net/podcasts/39694c24-3ebb-11f1-92fc-b3027a2a7432/image/f984610ccf38fe0af706a22b191b703b.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1346,6 +1203,7 @@ episodes:
     duration: 5161
     published: Wed, 22 Apr 2026 18:31:00 -0000
     published_sort: "20260422"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1096620553.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1096620553.mp3
     image: https://megaphone.imgix.net/podcasts/8d622e1e-3e79-11f1-8f8c-cf121a685b4c/image/7d87c060575566c42816cc957f832026.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1427,6 +1285,7 @@ episodes:
     duration: 3627
     published: Wed, 22 Apr 2026 17:33:00 -0000
     published_sort: "20260422"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2676052975.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2676052975.mp3
     image: https://megaphone.imgix.net/podcasts/64347a04-3e71-11f1-840e-5f0d79092b2a/image/c135f9c59e6021b18c406f886cc36538.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1492,6 +1351,7 @@ episodes:
     duration: 2681
     published: Sun, 19 Apr 2026 17:34:00 -0000
     published_sort: "20260419"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1178342643.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1178342643.mp3
     image: https://megaphone.imgix.net/podcasts/f85fbeea-3c15-11f1-b4fd-af102f06d598/image/74696f2d795e6712dbf7c5872d616388.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1564,6 +1424,7 @@ episodes:
     duration: 4802
     published: Sun, 19 Apr 2026 16:00:00 -0000
     published_sort: "20260419"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9287476728.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9287476728.mp3
     image: https://megaphone.imgix.net/podcasts/c216d140-3b5a-11f1-be10-2747f5f54ecb/image/5386f97d3e7722006e3e2d6ece3db4ab.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1670,6 +1531,7 @@ episodes:
     duration: 4848
     published: Sat, 18 Apr 2026 01:12:00 -0000
     published_sort: "20260418"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9248918161.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9248918161.mp3
     image: https://megaphone.imgix.net/podcasts/b4dbc694-3ac3-11f1-a497-237b168f744c/image/b93beffc2e0a3b5cc3845cfd0a361a47.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1726,6 +1588,7 @@ episodes:
     duration: 4596
     published: Sat, 18 Apr 2026 00:36:00 -0000
     published_sort: "20260418"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8765743661.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8765743661.mp3
     image: https://megaphone.imgix.net/podcasts/334acf26-3a05-11f1-8e9f-d72a8369018e/image/b935a99e2963a9d420d4ef0df5fbed2b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1806,6 +1669,7 @@ episodes:
     duration: 3123
     published: Fri, 17 Apr 2026 01:11:00 -0000
     published_sort: "20260417"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5958045793.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5958045793.mp3
     image: https://megaphone.imgix.net/podcasts/61b89be6-39fa-11f1-ad66-8747dfad4b47/image/a50e6379316f53b1ca45a422dc5692a2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1880,6 +1744,7 @@ episodes:
     duration: 3816
     published: Tue, 14 Apr 2026 23:43:00 -0000
     published_sort: "20260414"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1440540823.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1440540823.mp3
     image: https://megaphone.imgix.net/podcasts/c8f0b438-385b-11f1-bd9b-bfe7610f8c67/image/c62ccf5a571e0220095a6b3d2b7b406d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -1983,6 +1848,7 @@ episodes:
     duration: 3329
     published: Tue, 14 Apr 2026 22:00:00 -0000
     published_sort: "20260414"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1834199081.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1834199081.mp3
     image: https://megaphone.imgix.net/podcasts/4fc063aa-384d-11f1-a956-7f652ea751c7/image/4212ae1365708c55218754f9b7536524.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2054,6 +1920,7 @@ episodes:
     duration: 2694
     published: Tue, 14 Apr 2026 03:18:00 -0000
     published_sort: "20260414"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3444270750.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3444270750.mp3
     image: https://megaphone.imgix.net/podcasts/9c8fe9e6-37b0-11f1-807b-9bfddaacd5e4/image/fd7e920260b1a2f8b2e4c5551fdee82b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2158,6 +2025,7 @@ episodes:
     duration: 1887
     published: Fri, 10 Apr 2026 23:36:00 -0000
     published_sort: "20260410"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3365470069.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3365470069.mp3
     image: https://megaphone.imgix.net/podcasts/2542cf4c-3536-11f1-bed6-6f8ecc320bd5/image/b1f66c0ebb0b8c79dd76223207845d4f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2237,6 +2105,7 @@ episodes:
     duration: 3638
     published: Fri, 10 Apr 2026 16:00:00 -0000
     published_sort: "20260410"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2114063732.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2114063732.mp3
     image: https://megaphone.imgix.net/podcasts/83f3254a-3497-11f1-b08b-ab7ae41f3e7e/image/31b93f9dadb5f36250a4eda111111adf.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2348,6 +2217,7 @@ episodes:
     duration: 4221
     published: Fri, 10 Apr 2026 01:00:00 -0000
     published_sort: "20260410"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5344394886.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5344394886.mp3
     image: https://megaphone.imgix.net/podcasts/ac59643c-3478-11f1-bbed-27e1e1cf779f/image/a7b85cf29859816c8e4e19de7d015572.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2432,6 +2302,7 @@ episodes:
     duration: 3252
     published: Wed, 08 Apr 2026 16:30:00 -0000
     published_sort: "20260408"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4555657001.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4555657001.mp3
     image: https://megaphone.imgix.net/podcasts/58fea7b2-32d8-11f1-a8c3-5b0446115ca7/image/03e85ffa42181b4bfc2b41bfb3349077.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2496,6 +2367,7 @@ episodes:
     duration: 4204
     published: Wed, 08 Apr 2026 06:00:00 -0000
     published_sort: "20260408"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4732977543.mp3?updated=1775628541
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4732977543.mp3?updated=1775628541
     image: https://megaphone.imgix.net/podcasts/84486228-31e3-11f1-bec8-03f3c5057fad/image/dfca96cebceb1875983a5f33b8e57250.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2573,6 +2445,7 @@ episodes:
     duration: 3589
     published: Tue, 07 Apr 2026 22:04:00 -0000
     published_sort: "20260407"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5572193663.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5572193663.mp3
     image: https://megaphone.imgix.net/podcasts/53ce8acc-320c-11f1-aa41-8350e4d7d42a/image/22ff9c97007991a4a604e2c350bb236d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2651,6 +2524,7 @@ episodes:
     duration: 2739
     published: Mon, 06 Apr 2026 10:00:00 -0000
     published_sort: "20260406"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9648647135.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9648647135.mp3
     image: https://megaphone.imgix.net/podcasts/d5154932-3049-11f1-948f-9ba8e6147216/image/f9bcf74a1e766a8fc3471bfb0f9351e8.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2750,6 +2624,7 @@ episodes:
     duration: 4591
     published: Mon, 06 Apr 2026 01:12:00 -0000
     published_sort: "20260406"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2567928494.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2567928494.mp3
     image: https://megaphone.imgix.net/podcasts/a0a982fa-3155-11f1-bd95-9f8abbb43c89/image/f95aadacc810a1940dab00074f665993.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2829,6 +2704,7 @@ episodes:
     duration: 3404
     published: Sun, 05 Apr 2026 10:05:00 -0000
     published_sort: "20260405"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8597301153.mp3?updated=1775384550
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8597301153.mp3?updated=1775384550
     image: https://megaphone.imgix.net/podcasts/b6dfc622-2f0e-11f1-9582-4beb79679081/image/a2715b8642fa055741e2d0775315ddd2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2930,6 +2806,7 @@ episodes:
     duration: 3875
     published: Sun, 05 Apr 2026 09:46:00 -0000
     published_sort: "20260405"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9147964149.mp3?updated=1775226216
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9147964149.mp3?updated=1775226216
     image: https://megaphone.imgix.net/podcasts/0a87da26-2de8-11f1-ace7-a7520e247403/image/0b08a1742a6a88cc510434e603b0bc3d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -2989,6 +2866,7 @@ episodes:
     duration: 2784
     published: Sun, 05 Apr 2026 05:40:00 -0000
     published_sort: "20260405"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5917628813.mp3?updated=1775384065
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5917628813.mp3?updated=1775384065
     image: https://megaphone.imgix.net/podcasts/f451bf5c-30b1-11f1-b3ef-dbb632cadecf/image/f9bcf74a1e766a8fc3471bfb0f9351e8.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3088,6 +2966,7 @@ episodes:
     duration: 2337
     published: Sat, 04 Apr 2026 16:44:00 -0000
     published_sort: "20260404"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7163469643.mp3?updated=1775384038
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7163469643.mp3?updated=1775384038
     image: https://megaphone.imgix.net/podcasts/9d197a02-3045-11f1-abf5-67a58c91895a/image/8c47112b32c78b0a022fea18099e8957.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3158,6 +3037,7 @@ episodes:
     duration: 2519
     published: Fri, 03 Apr 2026 14:10:00 -0000
     published_sort: "20260403"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1825458782.mp3?updated=1775384022
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1825458782.mp3?updated=1775384022
     image: https://megaphone.imgix.net/podcasts/1f4c7d84-2f2a-11f1-bbe5-cf8f31517c19/image/f7ddc8768810cb2a62b82d6e2c7cf815.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3235,6 +3115,7 @@ episodes:
     duration: 4158
     published: Fri, 03 Apr 2026 13:40:00 -0000
     published_sort: "20260403"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7704806644.mp3?updated=1775223859
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7704806644.mp3?updated=1775223859
     image: https://megaphone.imgix.net/podcasts/9ff63cec-2f23-11f1-bc52-dfbaa44a9a76/image/9d9f94c2ee254e24e2ba4ec66993d5aa.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3343,6 +3224,7 @@ episodes:
     duration: 2753
     published: Sat, 28 Mar 2026 00:49:00 -0000
     published_sort: "20260328"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2501689014.mp3?updated=1774659507
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2501689014.mp3?updated=1774659507
     image: https://megaphone.imgix.net/podcasts/9c220c10-2a03-11f1-a407-e7084f604659/image/cf4a505c2efd2570fbc7b815f5ba4a43.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3402,6 +3284,7 @@ episodes:
     duration: 2331
     published: Fri, 27 Mar 2026 19:22:00 -0000
     published_sort: "20260327"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8243374648.mp3?updated=1774639829
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8243374648.mp3?updated=1774639829
     image: https://megaphone.imgix.net/podcasts/23c9deb8-2a04-11f1-82e2-b3ddf89bb610/image/2779d3c0ec6e63ce906a51c53f7423e6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3444,6 +3327,7 @@ episodes:
     duration: 5041
     published: Fri, 27 Mar 2026 18:26:00 -0000
     published_sort: "20260327"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9122342162.mp3?updated=1774636572
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9122342162.mp3?updated=1774636572
     image: https://megaphone.imgix.net/podcasts/65064d06-2948-11f1-b31f-573a5e7aa50d/image/e608e4afd36d5c5121b2842ee03c5825.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3524,6 +3408,7 @@ episodes:
     duration: 3745
     published: Wed, 25 Mar 2026 12:01:00 -0000
     published_sort: "20260325"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5721849062.mp3?updated=1774440997
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5721849062.mp3?updated=1774440997
     image: https://megaphone.imgix.net/podcasts/d0b0e15a-27f5-11f1-b330-ef71f52434d9/image/45c561eeb80263cb99bcdbcb9d9623e2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3579,6 +3464,7 @@ episodes:
     duration: 2560
     published: Mon, 23 Mar 2026 13:23:00 -0000
     published_sort: "20260323"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8752246470.mp3?updated=1774272760
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8752246470.mp3?updated=1774272760
     image: https://megaphone.imgix.net/podcasts/ff532d86-2617-11f1-ac96-c32f3c418f7c/image/48560873a7daf85ce7e87619447f0c0e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3697,6 +3583,7 @@ episodes:
     duration: 1803
     published: Fri, 20 Mar 2026 22:29:00 -0000
     published_sort: "20260320"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9272207337.mp3?updated=1774046041
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9272207337.mp3?updated=1774046041
     image: https://megaphone.imgix.net/podcasts/54baccdc-249e-11f1-a3a4-1b49e5472714/image/a320af21e6e801356920a8bf7aaee91b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3768,6 +3655,7 @@ episodes:
     duration: 4519
     published: Fri, 20 Mar 2026 17:40:00 -0000
     published_sort: "20260320"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6309442571.mp3?updated=1774028900
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6309442571.mp3?updated=1774028900
     image: https://megaphone.imgix.net/podcasts/b6e4ff46-247a-11f1-ae9b-47ff76207dcd/image/4a2e9f6bf2b7b3fc6a43c6f44037affa.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3840,6 +3728,7 @@ episodes:
     duration: 3123
     published: Thu, 19 Mar 2026 23:30:00 -0000
     published_sort: "20260319"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8624568902.mp3?updated=1773962425
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8624568902.mp3?updated=1773962425
     image: https://megaphone.imgix.net/podcasts/6fd64a2e-23d0-11f1-a4e5-031c2019edb2/image/c642a98bb14ae89e413afd24fcbba89f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3926,6 +3815,7 @@ episodes:
     duration: 4088
     published: Thu, 19 Mar 2026 21:35:00 -0000
     published_sort: "20260319"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5169344883.mp3?updated=1773962357
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5169344883.mp3?updated=1773962357
     image: https://megaphone.imgix.net/podcasts/460c0ce6-23c7-11f1-a2d6-773c8de3e924/image/ccdd89e2db476ba1790143bec418343a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -3976,6 +3866,7 @@ episodes:
     duration: 4281
     published: Thu, 19 Mar 2026 20:18:00 -0000
     published_sort: "20260319"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2491945288.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2491945288.mp3
     image: https://megaphone.imgix.net/podcasts/fa20a95c-234b-11f1-9ea6-af36745ff77d/image/55ab7801a10eac836bec9dfda003805c.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4116,6 +4007,7 @@ episodes:
     duration: 3731
     published: Wed, 18 Mar 2026 00:07:00 -0000
     published_sort: "20260318"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5937588315.mp3?updated=1773793018
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5937588315.mp3?updated=1773793018
     image: https://megaphone.imgix.net/podcasts/073b66d2-2256-11f1-8567-87df7d0830f5/image/afd266541205d3b6d3f52f38a6165c16.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4167,6 +4059,7 @@ episodes:
     duration: 2920
     published: Mon, 16 Mar 2026 20:08:00 -0000
     published_sort: "20260316"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2533391674.mp3?updated=1773776546
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2533391674.mp3?updated=1773776546
     image: https://megaphone.imgix.net/podcasts/7cb81b90-2160-11f1-90c7-5b6e23770862/image/66d90f317101de8746d2054d91dda7b0.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4273,6 +4166,7 @@ episodes:
     duration: 4393
     published: Fri, 13 Mar 2026 21:12:00 -0000
     published_sort: "20260313"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7006077675.mp3?updated=1773436870
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7006077675.mp3?updated=1773436870
     image: https://megaphone.imgix.net/podcasts/f0fddba6-1e6e-11f1-8329-cf0fc7d436dc/image/12d03e6b432c56c086620730b24e7157.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4323,6 +4217,7 @@ episodes:
     duration: 3576
     published: Thu, 12 Mar 2026 21:08:00 -0000
     published_sort: "20260312"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2848899717.mp3?updated=1773350644
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2848899717.mp3?updated=1773350644
     image: https://megaphone.imgix.net/podcasts/316b9e2a-1e48-11f1-842d-972378f260f2/image/bc9c9aa8483f329a16772373886fc2ce.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4404,6 +4299,7 @@ episodes:
     duration: 3153
     published: Thu, 12 Mar 2026 18:47:00 -0000
     published_sort: "20260312"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5272221939.mp3?updated=1773350634
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5272221939.mp3?updated=1773350634
     image: https://megaphone.imgix.net/podcasts/1b9d0e80-1e34-11f1-ad91-6389fe2742ad/image/8add0b332db11c43cf3b292abc316829.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4472,6 +4368,7 @@ episodes:
     duration: 3679
     published: Thu, 12 Mar 2026 16:00:00 -0000
     published_sort: "20260312"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4776661545.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4776661545.mp3
     image: https://megaphone.imgix.net/podcasts/6ec7c65a-1dde-11f1-b082-4f0b96b9ff04/image/6ade8f0bed431d3a03752e5feb7950e7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4605,6 +4502,7 @@ episodes:
     duration: 3314
     published: Wed, 11 Mar 2026 01:17:00 -0000
     published_sort: "20260311"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7355608876.mp3?updated=1773192250
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7355608876.mp3?updated=1773192250
     image: https://megaphone.imgix.net/podcasts/17cd2a56-1cb8-11f1-9c0b-070f73b15335/image/c1ee6ee65898db2b34b92d2a21970bda.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4687,6 +4585,7 @@ episodes:
     duration: 4007
     published: Tue, 10 Mar 2026 20:15:00 -0000
     published_sort: "20260310"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3044152674.mp3?updated=1773190920
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3044152674.mp3?updated=1773190920
     image: https://megaphone.imgix.net/podcasts/db00d27a-1cbd-11f1-b19e-53a550ca59f3/image/8305a0cca922f81791ea557f820942dc.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4791,6 +4690,7 @@ episodes:
     duration: 3248
     published: Sat, 07 Mar 2026 14:00:00 -0000
     published_sort: "20260307"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1596587441.mp3?updated=1772878758
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1596587441.mp3?updated=1772878758
     image: https://megaphone.imgix.net/podcasts/8bb96338-19a9-11f1-b3ba-e32134979665/image/5f5f7c35fd4986f19151aa9b73d15a3e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4889,6 +4789,7 @@ episodes:
     duration: 4558
     published: Fri, 06 Mar 2026 19:00:00 -0000
     published_sort: "20260306"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7089219087.mp3?updated=1772878791
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7089219087.mp3?updated=1772878791
     image: https://megaphone.imgix.net/podcasts/8b84dee6-1973-11f1-8496-577bd0a1e0e1/image/d0209dbb4dba12fb53247210ab295a4f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -4968,6 +4869,7 @@ episodes:
     duration: 4106
     published: Fri, 06 Mar 2026 15:56:00 -0000
     published_sort: "20260306"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6194856016.mp3?updated=1772878838
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6194856016.mp3?updated=1772878838
     image: https://megaphone.imgix.net/podcasts/d0dee79e-1779-11f1-aac1-939faffd782a/image/6c3782a8167673766356ef8fa6f0a288.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5072,6 +4974,7 @@ episodes:
     duration: 3217
     published: Thu, 05 Mar 2026 21:00:00 -0000
     published_sort: "20260305"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7574453608.mp3?updated=1772878762
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7574453608.mp3?updated=1772878762
     image: https://megaphone.imgix.net/podcasts/c3891362-1779-11f1-80ef-bbd82c981a3d/image/6053fdcab214a580e786f5ae941af936.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5143,6 +5046,7 @@ episodes:
     duration: 3597
     published: Thu, 05 Mar 2026 17:00:00 -0000
     published_sort: "20260305"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5445064820.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5445064820.mp3
     image: https://megaphone.imgix.net/podcasts/8fb7458e-1848-11f1-9c81-a340265e61b9/image/dc8379d5a95697f6a5264910cec7ebdd.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5279,6 +5183,7 @@ episodes:
     duration: 3409
     published: Wed, 04 Mar 2026 15:00:00 -0000
     published_sort: "20260304"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2901497332.mp3?updated=1772630560
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2901497332.mp3?updated=1772630560
     image: https://megaphone.imgix.net/podcasts/2fe5386c-1683-11f1-9d31-f7591d01de3a/image/32c2bab91b32ff9f81f0554676c9a894.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5353,6 +5258,7 @@ episodes:
     duration: 3525
     published: Wed, 04 Mar 2026 13:05:00 -0000
     published_sort: "20260304"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2823144682.mp3?updated=1772630439
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2823144682.mp3?updated=1772630439
     image: https://megaphone.imgix.net/podcasts/23db8608-1772-11f1-9c40-e70b2f123eb6/image/7382165a8ab3758f4d40a4b0f635d290.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5437,6 +5343,7 @@ episodes:
     duration: 2467
     published: Mon, 02 Mar 2026 11:55:00 -0000
     published_sort: "20260302"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4538614691.mp3?updated=1772630461
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4538614691.mp3?updated=1772630461
     image: https://megaphone.imgix.net/podcasts/298d55b6-15e9-11f1-b29f-cfddd8ed4437/image/da0a4ab46049d39e7b97223e98894a57.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5511,6 +5418,7 @@ episodes:
     duration: 4360
     published: Sat, 28 Feb 2026 14:00:00 -0000
     published_sort: "20260228"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9531823361.mp3?updated=1772254894
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9531823361.mp3?updated=1772254894
     image: https://megaphone.imgix.net/podcasts/ccaeb37a-1440-11f1-99ea-bba547835f8a/image/55b619ea466db77b961058a6eeefee73.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5597,6 +5505,7 @@ episodes:
     duration: 5038
     published: Fri, 27 Feb 2026 11:55:00 -0000
     published_sort: "20260227"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1615365169.mp3?updated=1772186279
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1615365169.mp3?updated=1772186279
     image: https://megaphone.imgix.net/podcasts/aac66142-13a3-11f1-8810-5b6eacfc29f2/image/8b1036a3ead2ce9b0a1cd16e8b3bd20b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5696,6 +5605,7 @@ episodes:
     duration: 3494
     published: Fri, 27 Feb 2026 08:36:00 -0000
     published_sort: "20260227"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4411017349.mp3?updated=1772143232
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4411017349.mp3?updated=1772143232
     image: https://megaphone.imgix.net/podcasts/3b6ce498-134d-11f1-b0a9-b788758d400c/image/cee1faab9c7e128cc2548fea0e96907d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5787,6 +5697,7 @@ episodes:
     duration: 3665
     published: Fri, 27 Feb 2026 08:05:00 -0000
     published_sort: "20260227"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5499753854.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5499753854.mp3
     image: https://megaphone.imgix.net/podcasts/6d7964f6-12b8-11f1-9459-37b99794ba9e/image/2d906f015a2a2bd4ed53d66bc1d81ee0.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5884,6 +5795,7 @@ episodes:
     duration: 4100
     published: Thu, 26 Feb 2026 11:55:00 -0000
     published_sort: "20260226"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://unchainedcrypto.com/bits-bips/bits-bips-are-crypto-markets-bottoming-or-is-there-more-pain-ahead
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5685239323.mp3?updated=1772083542
     image: https://megaphone.imgix.net/podcasts/06a92654-12cb-11f1-9961-5b3fb053150a/image/62b704288e0bb07df57178aca0f79916.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -5966,6 +5878,7 @@ episodes:
     duration: 3886
     published: Mon, 23 Feb 2026 16:55:00 -0000
     published_sort: "20260223"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8939059518.mp3?updated=1771866395
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8939059518.mp3?updated=1771866395
     image: https://megaphone.imgix.net/podcasts/66aafaea-105b-11f1-a74c-5f34a56e5baf/image/97f756656e4bda647a298e0bcdee916f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6033,6 +5946,7 @@ episodes:
     duration: 4699
     published: Sun, 22 Feb 2026 14:00:00 -0000
     published_sort: "20260222"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6876219733.mp3?updated=1771743067
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6876219733.mp3?updated=1771743067
     image: https://megaphone.imgix.net/podcasts/2552326e-0ec8-11f1-85cc-cb3edc221e5c/image/3dffd0a2d61506627b8fbbae22de3914.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6109,6 +6023,7 @@ episodes:
     duration: 5035
     published: Fri, 20 Feb 2026 16:26:00 -0000
     published_sort: "20260220"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2662307141.mp3?updated=1771605686
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2662307141.mp3?updated=1771605686
     image: https://megaphone.imgix.net/podcasts/b3ad0a62-0e5e-11f1-b4f8-63cbe084f4c0/image/18f1344dd1d884418f9a26aa089a0faf.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6193,6 +6108,7 @@ episodes:
     duration: 3459
     published: Fri, 20 Feb 2026 16:07:00 -0000
     published_sort: "20260220"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5092512655.mp3?updated=1771523405
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5092512655.mp3?updated=1771523405
     image: https://megaphone.imgix.net/podcasts/6f1fea8a-0c7a-11f1-9cd1-27180b5dd04c/image/b468f0741f6552f323d65735f68f6afb.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6280,6 +6196,7 @@ episodes:
     duration: 3300
     published: Thu, 19 Feb 2026 14:00:00 -0000
     published_sort: "20260219"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9356184172.mp3?updated=1771862869
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9356184172.mp3?updated=1771862869
     image: https://megaphone.imgix.net/podcasts/d5942026-0d59-11f1-8664-9383e97ded73/image/54d955cdca71fd40d534e970517e1480.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6387,6 +6304,7 @@ episodes:
     duration: 3192
     published: Thu, 19 Feb 2026 11:55:00 -0000
     published_sort: "20260219"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7359584015.mp3?updated=1771504878
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7359584015.mp3?updated=1771504878
     image: https://megaphone.imgix.net/podcasts/03d0e6e8-0d43-11f1-b240-6be4863b9743/image/53f701d0746f048b906605f40f96d343.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6469,6 +6387,7 @@ episodes:
     duration: 4020
     published: Wed, 18 Feb 2026 11:55:00 -0000
     published_sort: "20260218"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1887803228.mp3?updated=1771402928
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1887803228.mp3?updated=1771402928
     image: https://megaphone.imgix.net/podcasts/edbb2c88-0c93-11f1-86fa-1f6879deef18/image/00b4d31be7ea0b4b64305bc0d508c1c2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6573,6 +6492,7 @@ episodes:
     duration: 4383
     published: Mon, 16 Feb 2026 11:10:00 -0000
     published_sort: "20260216"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2031891165.mp3?updated=1771241449
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2031891165.mp3?updated=1771241449
     image: https://megaphone.imgix.net/podcasts/511388ea-0936-11f1-b0fa-a3c5cac8a045/image/d2d52611afcdd756a272ea5cbe2eea3b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6650,6 +6570,7 @@ episodes:
     duration: 3334
     published: Fri, 13 Feb 2026 21:55:00 -0000
     published_sort: "20260213"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2837089476.mp3?updated=1771241281
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2837089476.mp3?updated=1771241281
     image: https://megaphone.imgix.net/podcasts/741cc2a2-08fa-11f1-a13b-0391c8dc6f5c/image/e9de983fab0c9bbcdcc41250cf6dea91.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6726,6 +6647,7 @@ episodes:
     duration: 3153
     published: Fri, 13 Feb 2026 15:23:00 -0000
     published_sort: "20260213"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9968120948.mp3?updated=1771241282
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9968120948.mp3?updated=1771241282
     image: https://megaphone.imgix.net/podcasts/3e3ea71e-0863-11f1-a71f-976961c025eb/image/a1bab9a99a3885ada443d2d5fe85a974.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6789,6 +6711,7 @@ episodes:
     duration: 4594
     published: Thu, 12 Feb 2026 19:00:00 -0000
     published_sort: "20260212"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2898754989.mp3?updated=1770913989
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2898754989.mp3?updated=1770913989
     image: https://megaphone.imgix.net/podcasts/5e68b5b0-082d-11f1-a7d8-d395c43b704a/image/2409de8c401808043f68d421033a2e68.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6846,6 +6769,7 @@ episodes:
     duration: 2877
     published: Thu, 12 Feb 2026 01:18:00 -0000
     published_sort: "20260212"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7631560694.mp3?updated=1770860119
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7631560694.mp3?updated=1770860119
     image: https://megaphone.imgix.net/podcasts/c48ceee2-07b0-11f1-b342-7f211fe3eabe/image/8d910b6a815b527e23a3e46fd17eb650.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6892,6 +6816,7 @@ episodes:
     duration: 3986
     published: Wed, 11 Feb 2026 21:28:00 -0000
     published_sort: "20260211"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2232249600.mp3?updated=1770846602
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2232249600.mp3?updated=1770846602
     image: https://megaphone.imgix.net/podcasts/96171846-0790-11f1-a1fe-eb44abb7e411/image/1c2c1b7e9fd11fe82b5f9d43f0000321.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -6964,6 +6889,7 @@ episodes:
     duration: 2474
     published: Tue, 10 Feb 2026 23:58:00 -0000
     published_sort: "20260210"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8143598878.mp3?updated=1770768626
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8143598878.mp3?updated=1770768626
     image: https://megaphone.imgix.net/podcasts/778d1b82-06dc-11f1-bcf2-5fef003f7664/image/a58241aa11453ad1073566e860dc0aca.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7014,6 +6940,7 @@ episodes:
     duration: 3830
     published: Sun, 08 Feb 2026 02:23:00 -0000
     published_sort: "20260208"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3024625766.mp3?updated=1770518761
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3024625766.mp3?updated=1770518761
     image: https://megaphone.imgix.net/podcasts/3566c3dc-0495-11f1-88dc-d7c7426111d5/image/a35e8f0331bbaf71279cd445787113b0.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7049,6 +6976,7 @@ episodes:
     duration: 4962
     published: Sat, 07 Feb 2026 16:36:00 -0000
     published_sort: "20260207"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7707576884.mp3?updated=1770483000
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7707576884.mp3?updated=1770483000
     image: https://megaphone.imgix.net/podcasts/5c19031a-0403-11f1-a0dc-235d90d4bce2/image/e364ed10a4a8b1c8c2c27a201708cb1b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7104,6 +7032,7 @@ episodes:
     duration: 3593
     published: Sat, 07 Feb 2026 12:00:00 -0000
     published_sort: "20260207"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1483687767.mp3?updated=1770458107
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1483687767.mp3?updated=1770458107
     image: https://megaphone.imgix.net/podcasts/08cbba5c-03fb-11f1-9ae3-d3120fc1accb/image/746ec2aa402bcbfac6f3e003fb57b348.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7158,6 +7087,7 @@ episodes:
     duration: 3011
     published: Fri, 06 Feb 2026 23:21:00 -0000
     published_sort: "20260206"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8716656595.mp3?updated=1770420888
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8716656595.mp3?updated=1770420888
     image: https://megaphone.imgix.net/podcasts/87fe722c-03b2-11f1-8005-8b0befdced68/image/bbfe68e01c625966d1818fddc962aa9f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7230,6 +7160,7 @@ episodes:
     duration: 1887
     published: Fri, 06 Feb 2026 19:35:00 -0000
     published_sort: "20260206"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4641544909.mp3?updated=1770407532
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4641544909.mp3?updated=1770407532
     image: https://megaphone.imgix.net/podcasts/fc0c14aa-0392-11f1-bfad-ff787ca87199/image/6cb5c6df31e4d44676269513e966efd5.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7274,6 +7205,7 @@ episodes:
     duration: 2140
     published: Thu, 05 Feb 2026 21:54:00 -0000
     published_sort: "20260205"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8156009686.mp3?updated=1772630432
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8156009686.mp3?updated=1772630432
     image: https://megaphone.imgix.net/podcasts/42947cd4-02dd-11f1-821d-933702c773f2/image/9b3518faa38826943936f0becba0a7fb.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7308,6 +7240,7 @@ episodes:
     duration: 3876
     published: Thu, 05 Feb 2026 17:08:00 -0000
     published_sort: "20260205"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5052487336.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5052487336.mp3
     image: https://megaphone.imgix.net/podcasts/38cfaa60-0252-11f1-ad03-af7f71fec688/image/20ae89a6f07ca74414b45b1b5dd9b5da.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7397,6 +7330,7 @@ episodes:
     duration: 3650
     published: Wed, 04 Feb 2026 18:21:00 -0000
     published_sort: "20260204"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9450390470.mp3?updated=1770231389
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9450390470.mp3?updated=1770231389
     image: https://megaphone.imgix.net/podcasts/63f3d79a-01f6-11f1-8021-0b8bc574a867/image/e29a6c8d8da6df219ce5bbf3efe79fb9.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7475,6 +7409,7 @@ episodes:
     duration: 2279
     published: Sun, 01 Feb 2026 00:14:00 -0000
     published_sort: "20260201"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1224935364.mp3?updated=1769905860
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1224935364.mp3?updated=1769905860
     image: https://megaphone.imgix.net/podcasts/f824fa8a-ff02-11f0-b246-eb45143f92cd/image/89d84b3e4c06454fed9c215cf29bdacd.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7516,6 +7451,7 @@ episodes:
     duration: 4445
     published: Fri, 30 Jan 2026 23:49:00 -0000
     published_sort: "20260130"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8064907550.mp3?updated=1769818651
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8064907550.mp3?updated=1769818651
     image: https://megaphone.imgix.net/podcasts/5eeaa1b6-fe36-11f0-9b3a-5bd1398e2471/image/02e32e97c559f45eaa8caf934d41168b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7576,6 +7512,7 @@ episodes:
     duration: 3111
     published: Fri, 30 Jan 2026 16:45:00 -0000
     published_sort: "20260130"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4762015390.mp3?updated=1769792921
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4762015390.mp3?updated=1769792921
     image: https://megaphone.imgix.net/podcasts/22c41f0e-fdfb-11f0-b27f-d375c3d4f799/image/c7583b444c2d0d8d2c57b69b680e2d60.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7638,6 +7575,7 @@ episodes:
     duration: 5059
     published: Thu, 29 Jan 2026 17:00:00 -0000
     published_sort: "20260129"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6321359944.mp3?updated=1769712865
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6321359944.mp3?updated=1769712865
     image: https://megaphone.imgix.net/podcasts/b5a2069e-fd22-11f0-b3d2-a7237be97635/image/619f872e9d5489a2dacb8e46c69f68c4.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7682,6 +7620,7 @@ episodes:
     duration: 3260
     published: Thu, 29 Jan 2026 15:16:00 -0000
     published_sort: "20260129"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2339310207.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2339310207.mp3
     image: https://megaphone.imgix.net/podcasts/b617a460-fcc0-11f0-9a8b-3f8baee7a02a/image/70e4d15dbf566f756f95a75e1f1427fc.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7804,6 +7743,7 @@ episodes:
     duration: 4975
     published: Thu, 29 Jan 2026 13:44:00 -0000
     published_sort: "20260129"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5453319348.mp3?updated=1769695916
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5453319348.mp3?updated=1769695916
     image: https://megaphone.imgix.net/podcasts/b0afb6ea-fd18-11f0-817d-0355668e43ac/image/9f5d2f902d1418fb0c59808db413279d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7871,6 +7811,7 @@ episodes:
     duration: 4005
     published: Wed, 28 Jan 2026 13:07:00 -0000
     published_sort: "20260128"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5177969523.mp3?updated=1769606838
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5177969523.mp3?updated=1769606838
     image: https://megaphone.imgix.net/podcasts/5b2558c0-fc4a-11f0-baf5-d75fdb5c6dd9/image/f9d44ddc779d79ff06450e6e846e01aa.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7935,6 +7876,7 @@ episodes:
     duration: 2937
     published: Sat, 24 Jan 2026 02:53:00 -0000
     published_sort: "20260124"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6070993248.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6070993248.mp3
     image: https://megaphone.imgix.net/podcasts/dba2b020-f8cf-11f0-a00a-674c5a8bcb8b/image/c5a37159e5075f6528336ccee5b1e05a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -7981,6 +7923,7 @@ episodes:
     duration: 4635
     published: Fri, 23 Jan 2026 11:19:00 -0000
     published_sort: "20260123"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5439913794.mp3?updated=1769168216
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5439913794.mp3?updated=1769168216
     image: https://megaphone.imgix.net/podcasts/66971ce4-f84d-11f0-9b97-272b798e4241/image/2ce81dcd8e15084fc1b6a682087cf47f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8044,6 +7987,7 @@ episodes:
     duration: 3352
     published: Thu, 22 Jan 2026 04:07:00 -0000
     published_sort: "20260122"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9625980156.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9625980156.mp3
     image: https://megaphone.imgix.net/podcasts/bdc6e482-f743-11f0-8f0f-7f96c0e96ca7/image/a4d3abc290526897f8c7883a9e1248b9.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8173,6 +8117,7 @@ episodes:
     duration: 3190
     published: Thu, 22 Jan 2026 03:11:00 -0000
     published_sort: "20260122"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6072041431.mp3?updated=1769052860
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6072041431.mp3?updated=1769052860
     image: https://megaphone.imgix.net/podcasts/0395126c-f740-11f0-bcd6-a3757ed782d8/image/0ee2d3cd3ca8109954b5fe39f5f9d5df.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8229,6 +8174,7 @@ episodes:
     duration: 3856
     published: Wed, 21 Jan 2026 20:00:00 -0000
     published_sort: "20260121"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6766419387.mp3?updated=1769011542
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6766419387.mp3?updated=1769011542
     image: https://megaphone.imgix.net/podcasts/25595ff8-f6e0-11f0-9c43-1fa3cc09620b/image/7b7074e908f9ae647f5cc77cb5682d2b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8272,6 +8218,7 @@ episodes:
     duration: 4106
     published: Wed, 21 Jan 2026 05:11:00 -0000
     published_sort: "20260121"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9944207774.mp3?updated=1768973413
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9944207774.mp3?updated=1768973413
     image: https://megaphone.imgix.net/podcasts/aed65a6e-f687-11f0-9cc0-736779edb5a4/image/33f700ad9249a52d80b633466a7daff1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8339,6 +8286,7 @@ episodes:
     duration: 2855
     published: Mon, 19 Jan 2026 18:41:00 -0000
     published_sort: "20260119"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6331611439.mp3?updated=1768972910
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6331611439.mp3?updated=1768972910
     image: https://megaphone.imgix.net/podcasts/8b78f54e-f566-11f0-a403-9327a5fdf536/image/c7991a5e83fcbd2704813022e2bfc9e7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8392,6 +8340,7 @@ episodes:
     duration: 2447
     published: Sun, 18 Jan 2026 22:23:00 -0000
     published_sort: "20260118"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8192710931.mp3?updated=1768776560
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8192710931.mp3?updated=1768776560
     image: https://megaphone.imgix.net/podcasts/6a947808-f4bc-11f0-92b3-0793da33476b/image/ff9d9b23eecd807f41c7cba37d4ef307.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8433,6 +8382,7 @@ episodes:
     duration: 3268
     published: Sun, 18 Jan 2026 07:15:00 -0000
     published_sort: "20260118"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2531285572.mp3?updated=1768721695
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2531285572.mp3?updated=1768721695
     image: https://megaphone.imgix.net/podcasts/8aa110e0-f43d-11f0-919f-d7f77c891761/image/e4b68a8b9d55c7ec99a255c56a2fd80e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8479,6 +8429,7 @@ episodes:
     duration: 1944
     published: Sat, 17 Jan 2026 05:27:00 -0000
     published_sort: "20260117"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6027947189.mp3?updated=1768628398
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6027947189.mp3?updated=1768628398
     image: https://megaphone.imgix.net/podcasts/41d113a2-f365-11f0-9585-574f6cc9f904/image/2bd6b1ff495410f091c8714be6627900.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8524,6 +8475,7 @@ episodes:
     duration: 3096
     published: Sat, 17 Jan 2026 05:22:00 -0000
     published_sort: "20260117"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4142451390.mp3?updated=1768628339
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4142451390.mp3?updated=1768628339
     image: https://megaphone.imgix.net/podcasts/90928698-f364-11f0-946b-7f5d1f6063a4/image/f3852a9aa647794c6765ee03a3027220.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8577,6 +8529,7 @@ episodes:
     duration: 3239
     published: Thu, 15 Jan 2026 07:39:00 -0000
     published_sort: "20260115"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3718829144.mp3?updated=1768463650
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3718829144.mp3?updated=1768463650
     image: https://megaphone.imgix.net/podcasts/582e8246-f1e5-11f0-8daa-a30645b5458a/image/e0d5320070c8851b1284a9d7492d90de.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8630,6 +8583,7 @@ episodes:
     duration: 3134
     published: Thu, 15 Jan 2026 03:58:00 -0000
     published_sort: "20260115"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5145169615.mp3?updated=1768463483
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5145169615.mp3?updated=1768463483
     image: https://megaphone.imgix.net/podcasts/734776c4-f1c6-11f0-ad7f-5b6ee4749a27/image/0c7770d7b75f7cbe37433cab20d5cf0a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8685,6 +8639,7 @@ episodes:
     duration: 2994
     published: Wed, 14 Jan 2026 19:13:00 -0000
     published_sort: "20260114"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7739477738.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7739477738.mp3
     image: https://megaphone.imgix.net/podcasts/269a9b42-f17d-11f0-a76e-7be0a562fb56/image/793b953641fc8b38214543f26d2c7f41.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8713,6 +8668,7 @@ episodes:
     duration: 3518
     published: Tue, 13 Jan 2026 12:14:00 -0000
     published_sort: "20260113"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3429891591.mp3?updated=1768307565
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3429891591.mp3?updated=1768307565
     image: https://megaphone.imgix.net/podcasts/6591409e-f079-11f0-afef-bf4aa0f138e6/image/6955e597b0ead040a364e4b20d8f2dbf.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8766,6 +8722,7 @@ episodes:
     duration: 2669
     published: Mon, 12 Jan 2026 16:49:00 -0000
     published_sort: "20260112"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9579569804.mp3?updated=1768011385
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9579569804.mp3?updated=1768011385
     image: https://megaphone.imgix.net/podcasts/866509a6-edc5-11f0-b101-d3091387bd13/image/17e76e53416c8c46d7d9f6d8608567de.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8819,6 +8776,7 @@ episodes:
     duration: 5166
     published: Mon, 12 Jan 2026 07:00:00 -0000
     published_sort: "20260112"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8639061457.mp3?updated=1768202281
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8639061457.mp3?updated=1768202281
     image: https://megaphone.imgix.net/podcasts/7fbdd442-ef83-11f0-bee4-e7a50d21df4a/image/9131e678ae95d46f36c0960374636e4d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8876,6 +8834,7 @@ episodes:
     duration: 4270
     published: Fri, 09 Jan 2026 17:18:00 -0000
     published_sort: "20260109"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6564828175.mp3?updated=1767981298
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6564828175.mp3?updated=1767981298
     image: https://megaphone.imgix.net/podcasts/34280940-ed7f-11f0-ab48-83ef7ac123d1/image/1f540aa58952262cc345e7a85b96dd02.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -8938,6 +8897,7 @@ episodes:
     duration: 4094
     published: Thu, 08 Jan 2026 17:00:00 -0000
     published_sort: "20260108"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://unchainedcrypto.com/podcast-chopping-block/the-chopping-block-2025-winners-losers-2026-predictions/
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3745165429.mp3
     image: https://megaphone.imgix.net/podcasts/c3b8a8bc-ecb2-11f0-b158-b777fc84e642/image/9d4aa05d64771a965d9e362b3539edfd.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -9076,6 +9036,7 @@ episodes:
     duration: 3671
     published: Wed, 07 Jan 2026 18:30:00 -0000
     published_sort: "20260107"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2182189558.mp3?updated=1768016019
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2182189558.mp3?updated=1768016019
     image: https://megaphone.imgix.net/podcasts/6aa7aa16-ebd6-11f0-a502-2fc145052d34/image/0e7e727ad615f4f5ac66e315114bd966.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -9132,6 +9093,7 @@ episodes:
     duration: 4844
     published: Sat, 03 Jan 2026 01:21:00 -0000
     published_sort: "20260103"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4044866349.mp3?updated=1767402395
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4044866349.mp3?updated=1767402395
     image: https://megaphone.imgix.net/podcasts/f1b3a796-e83c-11f0-98ac-af1a775457dd/image/d35233a7f2c93f3a1cbd9063ec3ae513.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
@@ -9209,6 +9171,7 @@ episodes:
     duration: 3672
     published: Thu, 01 Jan 2026 14:00:00 -0000
     published_sort: "20260101"
+    first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://unchainedcrypto.com/podcast-chopping-block/the-chopping-block-aave-civil-war-flow-hack-coinbase-super-app/
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4041225703.mp3
     image: https://megaphone.imgix.net/podcasts/53800ed8-e69e-11f0-9d56-ef9e701bf1c0/image/217a5a99eee287b61864ad3ce6c9fe1c.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress

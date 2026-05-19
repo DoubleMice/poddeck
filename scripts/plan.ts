@@ -18,7 +18,7 @@ import { resolve, join } from 'node:path'
 import { readFileSync, existsSync, readdirSync } from 'node:fs'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { log } from './lib/log.ts'
-import type { SourcesFile, Source, EpisodeMeta } from './lib/types.ts'
+import type { SourcesFile, Source, EpisodeMeta, PlanEntry, PlanFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
 const SOURCES_PATH = resolve(ROOT, 'sources.yml')
@@ -30,35 +30,6 @@ const TRANSCRIPTS_DIR = resolve(ROOT, 'data/transcripts')
 const onlyId = process.argv.find(a => a.startsWith('--id='))?.split('=')[1]
 const overrideDuration = process.argv.find(a => a.startsWith('--min-duration='))?.split('=')[1]
 const overrideDate = process.argv.find(a => a.startsWith('--min-date='))?.split('=')[1]
-
-interface PlanEntry {
-  id: string
-  title: string
-  duration: number
-  published: string
-  published_sort: string
-  url: string
-  audio_url?: string
-  image?: string
-  transcript_url?: string
-  transcript_type?: string
-  summary?: string
-  status: 'pending' | 'needs_transcript' | 'downloaded' | 'generated' | 'audit_failed' | 'failed'
-  priority: number
-}
-
-interface PlanFile {
-  source: string
-  refreshed_at: string
-  min_duration: number
-  min_date: string
-  total_candidates: number
-  done: number
-  pending: number
-  needs_transcript: number
-  downloaded: number
-  episodes: PlanEntry[]
-}
 
 function loadCache(sourceId: string): any[] {
   const path = join(CACHE_DIR, `${sourceId}.jsonl`)
@@ -78,6 +49,8 @@ function emptyPlan(source: Source): PlanFile {
     done: 0,
     pending: 0,
     needs_transcript: 0,
+    transcribing: 0,
+    transcribe_failed: 0,
     downloaded: 0,
     episodes: [],
   }
@@ -133,6 +106,7 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
   if (existingPlan) {
     for (const ep of existingPlan.episodes) existingEntries.set(ep.id, ep)
   }
+  const now = new Date().toISOString()
 
   // Filter cache entries
   const candidates: PlanEntry[] = []
@@ -156,14 +130,17 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
     let nextStatus: PlanEntry['status']
     if (existing?.status === 'generated' || existing?.status === 'failed') nextStatus = existing.status
     else if (existing?.status === 'audit_failed') nextStatus = 'audit_failed'
+    else if (existing?.status === 'transcribing') nextStatus = 'transcribing'
+    else if (existing?.status === 'transcribe_failed') nextStatus = 'transcribe_failed'
     else if (hasTranscript) nextStatus = existing?.status === 'downloaded' ? 'downloaded' : 'pending'
     else nextStatus = 'needs_transcript'
-    candidates.push({
+    const next: PlanEntry = {
       id: v.id,
       title: v.title || '(no title)',
       duration: v.duration,
       published: v.published || '',
       published_sort: dateKey,
+      first_seen_at: existing?.first_seen_at ?? now,
       url: v.url || v.audio_url || '',
       audio_url: v.audio_url,
       image: v.image,
@@ -172,15 +149,23 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
       summary: v.summary,
       status: nextStatus,
       priority: existing?.priority ?? 1,
-    })
+    }
+    if (existing?.transcript_provider) next.transcript_provider = existing.transcript_provider
+    if (existing?.transcript_job_id) next.transcript_job_id = existing.transcript_job_id
+    if (existing?.transcript_submitted_at) next.transcript_submitted_at = existing.transcript_submitted_at
+    if (existing?.transcript_completed_at) next.transcript_completed_at = existing.transcript_completed_at
+    if (existing?.transcript_error) next.transcript_error = existing.transcript_error
+    candidates.push(next)
   }
 
   // Sort: newest first
-  candidates.sort((a, b) => b.published_sort.localeCompare(a.published_sort))
+  candidates.sort((a, b) => (b.published_sort ?? '').localeCompare(a.published_sort ?? ''))
 
   const pending = candidates.filter(e => e.status === 'pending' || e.status === 'audit_failed').length
   const done = candidates.filter(e => e.status === 'generated').length
   const needsTranscript = candidates.filter(e => e.status === 'needs_transcript').length
+  const transcribing = candidates.filter(e => e.status === 'transcribing').length
+  const transcribeFailed = candidates.filter(e => e.status === 'transcribe_failed').length
   const downloaded = candidates.filter(e => e.status === 'downloaded').length
 
   return {
@@ -192,6 +177,8 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
     done,
     pending,
     needs_transcript: needsTranscript,
+    transcribing,
+    transcribe_failed: transcribeFailed,
     downloaded,
     episodes: candidates,
   }
@@ -212,7 +199,7 @@ async function main() {
   const fs = await import('node:fs/promises')
   await fs.mkdir(PLANS_DIR, { recursive: true })
 
-  const summary: { id: string; total: number; pending: number; needsTranscript: number; downloaded: number; done: number }[] = []
+  const summary: { id: string; total: number; pending: number; needsTranscript: number; transcribing: number; transcribeFailed: number; downloaded: number; done: number }[] = []
 
   for (const source of targets) {
     const plan = planOneSource(source, existingGenerated)
@@ -221,16 +208,20 @@ async function main() {
     writeYaml(path, plan)
     const needs = plan.needs_transcript ?? 0
     const downloaded = plan.downloaded ?? 0
-    log.ok(`  ${source.id}: ${plan.total_candidates} candidates (${plan.pending} pending, ${downloaded} downloaded, ${needs} needs transcript, ${plan.done} done) → ${path}`)
-    summary.push({ id: source.id, total: plan.total_candidates, pending: plan.pending, needsTranscript: needs, downloaded, done: plan.done })
+    const transcribing = plan.transcribing ?? 0
+    const transcribeFailed = plan.transcribe_failed ?? 0
+    log.ok(`  ${source.id}: ${plan.total_candidates} candidates (${plan.pending} pending, ${downloaded} downloaded, ${needs} needs transcript, ${transcribing} transcribing, ${transcribeFailed} transcribe failed, ${plan.done} done) → ${path}`)
+    summary.push({ id: source.id, total: plan.total_candidates, pending: plan.pending, needsTranscript: needs, transcribing, transcribeFailed, downloaded, done: plan.done })
   }
 
   // Print summary table
   const totalPending = summary.reduce((a, s) => a + s.pending, 0)
   const totalNeedsTranscript = summary.reduce((a, s) => a + s.needsTranscript, 0)
+  const totalTranscribing = summary.reduce((a, s) => a + s.transcribing, 0)
+  const totalTranscribeFailed = summary.reduce((a, s) => a + s.transcribeFailed, 0)
   const totalDownloaded = summary.reduce((a, s) => a + s.downloaded, 0)
   const totalTotal = summary.reduce((a, s) => a + s.total, 0)
-  log.step(`Summary — ${totalPending} pending / ${totalDownloaded} downloaded / ${totalNeedsTranscript} needs transcript / ${totalTotal} total across ${summary.length} sources`)
+  log.step(`Summary — ${totalPending} pending / ${totalDownloaded} downloaded / ${totalNeedsTranscript} needs transcript / ${totalTranscribing} transcribing / ${totalTranscribeFailed} transcribe failed / ${totalTotal} total across ${summary.length} sources`)
 }
 
 main().catch(e => {

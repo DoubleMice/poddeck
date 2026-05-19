@@ -20,6 +20,8 @@ export interface SourcesFile {
 export type EpisodeStatus =
   | 'queued'
   | 'needs_transcript'
+  | 'transcribing'
+  | 'transcribe_failed'
   | 'downloading'
   | 'downloaded'
   | 'generating'
@@ -65,4 +67,73 @@ export interface QueueEntry {
 
 export interface QueueFile {
   queue: QueueEntry[]
+}
+
+export type PlanEntryStatus =
+  | 'pending'
+  | 'needs_transcript'
+  | 'transcribing'
+  | 'transcribe_failed'
+  | 'downloaded'
+  | 'generated'
+  | 'audit_failed'
+  | 'failed'
+
+export interface PlanEntry {
+  id: string
+  title: string
+  duration: number
+  published?: string
+  published_sort?: string
+  first_seen_at?: string
+  url: string
+  audio_url?: string
+  image?: string
+  transcript_url?: string
+  transcript_type?: string
+  transcripts?: { url: string; type: string; language?: string }[]
+  summary?: string
+  status: PlanEntryStatus
+  category?: string
+  priority: number
+  transcript_provider?: 'rss' | 'dashscope'
+  transcript_job_id?: string
+  transcript_submitted_at?: string
+  transcript_completed_at?: string
+  transcript_error?: string
+}
+
+export interface PlanFile {
+  source: string
+  refreshed_at: string
+  min_duration: number
+  min_date: string
+  total_candidates: number
+  done: number
+  pending: number
+  needs_transcript?: number
+  transcribing?: number
+  transcribe_failed?: number
+  downloaded?: number
+  episodes: PlanEntry[]
+}
+
+export interface TranscriptionJob {
+  key: string
+  id: string
+  source: string
+  title: string
+  audio_url: string
+  task_id: string
+  status: 'submitting' | 'submitted' | 'running' | 'succeeded' | 'failed'
+  transcription_url?: string
+  retries?: number
+  submitted_at: string
+  updated_at: string
+  completed_at?: string
+  error?: string
+}
+
+export interface TranscriptionJobsFile {
+  jobs: TranscriptionJob[]
 }

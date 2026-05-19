@@ -12,7 +12,15 @@ on:
       limit:
         description: 'Maximum episodes to generate'
         required: true
-        default: '1'
+        default: '3'
+      transcribe_limit:
+        description: 'Maximum missing-transcript episodes to submit for ASR'
+        required: true
+        default: '3'
+      transcribe_wait_minutes:
+        description: 'Minutes to wait for ASR completion before continuing'
+        required: true
+        default: '2'
       category:
         description: 'Optional category filter'
         required: false
@@ -86,12 +94,20 @@ jobs:
       - name: Generate episodes
         env:
           ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: |
           set -euo pipefail
-          limit="${{ inputs.limit || '1' }}"
+          limit="${{ inputs.limit || '3' }}"
+          transcribe_limit="${{ inputs.transcribe_limit || '3' }}"
+          transcribe_wait_minutes="${{ inputs.transcribe_wait_minutes || '2' }}"
           source="${{ inputs.source || '' }}"
           category="${{ inputs.category || '' }}"
           args=(--limit=${limit})
+          if [ -n "${DASHSCOPE_API_KEY}" ]; then
+            args+=(--auto-transcribe --transcribe-limit=${transcribe_limit} --transcribe-wait-minutes=${transcribe_wait_minutes})
+          else
+            echo "DASHSCOPE_API_KEY not configured; skipping auto transcription"
+          fi
           if [ -n "${source}" ]; then
             args+=(--id=${source})
           fi
@@ -107,7 +123,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/plans data/transcripts episodes README.md sources.yml package.json pnpm-lock.yaml .github/workflows
+          git add data/plans data/transcripts data/transcription-jobs.yml episodes README.md sources.yml package.json pnpm-lock.yaml .github/workflows
           if git diff --staged --quiet; then
             echo "No generated changes to commit"
           else
