@@ -1,0 +1,47 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "pc", "type": "rectangle", "x": 40, "y": 230, "width": 150, "height": 60,
+      "angle": 0, "strokeColor": "#868e96", "backgroundColor": "#e9ecef",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 1, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {"id":"pc-label","type":"text","x":60,"y":250,"width":110,"height":20,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":2,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":16,"fontFamily":1,"text":"Desktop PC","textAlign":"center","verticalAlign":"middle","originalText":"Desktop PC","lineHeight":1.25,"baseline":10},
+    {
+      "id": "phone", "type": "rectangle", "x": 250, "y": 230, "width": 150, "height": 60,
+      "angle": 0, "strokeColor": "#868e96", "backgroundColor": "#e9ecef",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 3, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {"id":"phone-label","type":"text","x":270,"y":250,"width":110,"height":20,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":4,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":16,"fontFamily":1,"text":"Smartphone","textAlign":"center","verticalAlign":"middle","originalText":"Smartphone","lineHeight":1.25,"baseline":10},
+    {
+      "id": "wearable", "type": "rectangle", "x": 460, "y": 140, "width": 150, "height": 60,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 5, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {"id":"wearable-label","type":"text","x":478,"y":155,"width":114,"height":30,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":6,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":14,"fontFamily":1,"text":"AI Glasses\n+ Bracelets","textAlign":"center","verticalAlign":"middle","originalText":"AI Glasses\n+ Bracelets","lineHeight":1.25,"baseline":20},
+    {
+      "id": "ambient", "type": "rectangle", "x": 460, "y": 310, "width": 150, "height": 60,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 7, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {"id":"ambient-label","type":"text","x":478,"y":325,"width":114,"height":30,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":8,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":14,"fontFamily":1,"text":"Ambient\nComputing","textAlign":"center","verticalAlign":"middle","originalText":"Ambient\nComputing","lineHeight":1.25,"baseline":20},
+    {"id":"arrow1","type":"arrow","x":190,"y":260,"width":60,"height":0,"angle":0,"strokeColor":"#868e96","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":9,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[60,0]]},
+    {"id":"arrow2","type":"arrow","x":400,"y":260,"width":60,"height":30,"angle":0,"strokeColor":"#1971c2","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":10,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[60,-30]]},
+    {"id":"arrow3","type":"arrow","x":535,"y":200,"width":0,"height":50,"angle":0,"strokeColor":"#1971c2","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":11,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[0,50]]},
+    {"id":"note","type":"text","x":40,"y":380,"width":370,"height":80,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":12,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":12,"fontFamily":1,"text":"Nothing gets replaced — each device\nadds a layer. The phone stays, but\nwearables take over passive tasks\n(coach, assistant, memory).","textAlign":"left","verticalAlign":"top","originalText":"Nothing gets replaced — each device\nadds a layer. The phone stays, but\nwearables take over passive tasks\n(coach, assistant, memory).","lineHeight":1.4,"baseline":70},
+    {"id":"dashed","type":"rectangle","x":40,"y":120,"width":570,"height":170,"angle":0,"strokeColor":"#868e96","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"dashed","roughness":0,"opacity":60,"groupIds":[],"frameId":null,"roundness":null,"seed":13,"version":1,"isDeleted":false,"boundElements":[],"updated":1},
+    {"id":"dashed-label","type":"text","x":50,"y":125,"width":200,"height":16,"angle":0,"strokeColor":"#868e96","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":0,"opacity":60,"groupIds":[],"frameId":null,"seed":14,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":12,"fontFamily":1,"text":"All three coexist","textAlign":"left","verticalAlign":"top","originalText":"All three coexist","lineHeight":1.25,"baseline":8}
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}

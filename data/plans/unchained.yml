@@ -1,24 +1,251 @@
 source: unchained
-refreshed_at: 2026-05-19T09:56:06.774Z
+refreshed_at: 2026-05-19T19:53:41.418Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 124
+total_candidates: 128
 done: 0
 pending: 0
-needs_transcript: 124
+needs_transcript: 127
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
+    title: Can Hyperliquid Come Onshore Without Killing What Makes It Special?
+    duration: 2859
+    published: Tue, 19 May 2026 18:25:00 -0000
+    published_sort: "20260519"
+    first_seen_at: 2026-05-19T19:53:41.416Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    image: https://megaphone.imgix.net/podcasts/158eb9ce-5324-11f1-95f3-d70e11b2703f/image/d2fffe73fdfb449464c183f54b1493a3.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      CME and ICE want regulators to rein in Hyperliquid, which delivers 24/7 derivatives markets that incumbents can't
+      match. Can it be brought onshore?
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      ⁠⁠⁠Coinbase One⁠⁠⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠⁠⁠coinbase.com/unchained⁠⁠⁠.
+
+
+      ========================================================
+
+
+      CME Group and Intercontinental Exchange have asked the CFTC to regulate Hyperliquid, the offshore perpetuals
+      exchange that has rapidly become one of the largest derivatives venues in the world. The incumbents argue that
+      price discovery is migrating to unregulated territory. Hyperliquid argues that its onchain transparency makes it
+      less susceptible to manipulation, not more. 
+
+
+      Walt Lukken, president and CEO of the Futures Industry Association, and Chris Perkins, CEO of 250 Digital Asset
+      Management, sit down with Laura Shin to work through the options: come onshore and get the licenses, stay offshore
+      and keep growing, or further decentralize until there is no entity left to regulate. The answer may reshape how
+      global derivatives markets are built for the next decade.
+
+
+      Host:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+
+      Guests:
+
+        
+      Walt Lukken | President & CEO, Futures Industry Association
+
+        
+      Chris Perkins⁠ | CEO, 250 Digital Asset Management
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-19T19:53:43.332Z
+    transcript_job_id: c9fe6afa-5a2b-4a1d-9052-ef2577e10ab2
+    transcript_error: DashScope task ended with FAILED
+    transcript_completed_at: 2026-05-19T19:54:14.786Z
+  - id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
+    title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
+      Onchain"
+    duration: 2725
+    published: Sat, 16 May 2026 20:05:00 -0000
+    published_sort: "20260516"
+    first_seen_at: 2026-05-19T19:53:41.416Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    image: https://megaphone.imgix.net/podcasts/9e3682c2-4fd0-11f1-b62a-cbbb414ef53f/image/11d018694ca9e63197ceec7a3f4592ac.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      The repo market is $16 trillion globally and most people have never heard of it — until the plumbing breaks. Craig
+      Burchell of FalconX and Matteo Pandolfi of Pareto explain how it works and why bringing it on-chain is the next
+      big unlock for DeFi.
+
+
+      ---
+
+
+      Heads up!
+
+
+      If you haven’t yet, be sure to subscribe to Bits + Bips, since the show will migrate there in a few weeks. Follow
+      us on ⁠⁠⁠⁠⁠Apple Podcasts⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠YouTube⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠Spotify⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠X⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠Unchained⁠⁠⁠⁠⁠ and
+      wherever you get your podcasts. 
+
+
+      ----
+
+
+      The repo market is $16 trillion globally and it is, as Craig Burchell puts it, the oil that makes everything go.
+      It is also almost entirely absent from on-chain finance — and that gap is creating real problems for RWA
+      liquidity, stablecoin swap desks, and DeFi protocols trying to manage redemption queues. Steve Ehrlich sits down
+      with Craig Burchell, head of lending at FalconX, and Matteo Pandolfi, CEO of on-chain credit infrastructure
+      provider Pareto, to map exactly how repo works, what broke in 2019, why it translates extremely well into onchain
+      finance. Matteo puts a $1 trillion figure on where on-chain repo gets in five years. Craig gives you one reason it
+      gets there and one very honest reason it might not.
+
+
+      Host:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Steve Ehrlich, Head of Research at SharpLink and Host of Bits + Bips: The Interview -
+      https://x.com/Steven_Ehrlich
+
+
+      Guest:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Craig Burchell — Head of Lending, FalconX; previously Head of Lending at Membrane Finance.
+      @_CraigBirchall
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Matteo Pandolfi — CEO & Co-Founder, Pareto (on-chain credit infrastructure). @pan_teo_
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
+  - id: 99f64648-4fd0-11f1-9e5e-dbb8b251b138
+    title: How Hyperliquid Benefits From Its New Deal With Coinbase Over USDC
+    duration: 2181
+    published: Fri, 15 May 2026 21:27:00 -0000
+    published_sort: "20260515"
+    first_seen_at: 2026-05-19T19:53:41.416Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1253421853.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1253421853.mp3
+    image: https://megaphone.imgix.net/podcasts/99f64648-4fd0-11f1-9e5e-dbb8b251b138/image/75c13a925e7caf9ad113219ccb389214.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Coinbase just became the official USDC treasury deployer on Hyperliquid. Alex Weseley of Artemis explains how this
+      boosts Hyperliquid’s annual revenue by 25%.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      ⁠⁠Coinbase One⁠⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠⁠coinbase.com/unchained⁠⁠.
+
+
+      ========================================================
+
+
+      The morning this episode was recorded, Coinbase announced it was acquiring the USDH brand and becoming the
+      official USDC treasury deployer on Hyperliquid — a deal with $150 million in annual revenue implications for a
+      platform that previously earned nothing from its $5 billion USDC float.
+
+
+      Alex Weseley, institutional data lead at Artemis Analytics, walks through the math on the HYPE price move,
+      explains why the deal had to be bilateral between Circle and Coinbase, lays out his $300 billion Coinbase thesis
+      built on X402 and agentic commerce, and takes on the question Laura's been asking all week: is the Circle–Coinbase
+      relationship heading for divorce?
+
+
+      Host:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+
+      Guests:
+
+        
+      ⁠Alex Weseley — Institutional Data Lead, Artemis Analytics
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
+  - id: 268089a0-4f38-11f1-9a58-ff1b070f08af
+    title: "Uneasy Money: Why the Broken Pre-IPO Secondary Markets Won't Be Fixed Anytime Soon"
+    duration: 4571
+    published: Fri, 15 May 2026 00:08:00 -0000
+    published_sort: "20260515"
+    first_seen_at: 2026-05-19T19:53:41.416Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3
+    image: https://megaphone.imgix.net/podcasts/268089a0-4f38-11f1-9a58-ff1b070f08af/image/796813f58062aea5e679cd32b7b3068f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Anthropic is voiding secondary market trades. Who gets hurt — WhatsApp scammers, Forge buyers, or the founders?
+      Plus: why continuous synthetic pricing is coming for every pre-IPO company.
+
+
+      Thank you to our sponsors!⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+
+
+      Multichain Advisors: Get help navigating TGEs, go‑to‑market, BD and partnerships, capital markets advisory, PR,
+      media placements, KOL activations and more at multichainadv.com.
+
+
+      Coinbase: Get 20% off the first year of your Coinbase One annual plan at coinbase.com/unchained.
+
+
+      Anthropic and OpenAI are moving to void secondary market trades — and Kain, Tay, and Luca think that's only going
+      to work if they're serious about it, which means a lawsuit is probably coming.
+
+
+      This week on Uneasy Money they trace the full anatomy of the pre-IPO SPV fraud wave, explain why synthetic
+      perpetual markets will eventually price every in-demand private company continuously whether founders want it or
+      not, and dig into the latest AI hacks. Tay breaks down how attackers are now using local on-device Gemini APIs to
+      construct malware on the fly, and Kain shares the story of an agent that caught a slow-drain attack in 90 seconds
+      that humans missed for 12 hours.
+
+
+      Luca explains why Circle's Arc token is a brilliant move for Circle equity holders even if it changes nothing for
+      ETH or Solana. Plus: the Aave/Kelp court update and why the Gerstein lawyers' argument that every victim needs to
+      show up in court is fundamentally incompatible with how onchain recovery works.
+
+
+      Hosts:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠, CEO of Pudgy Penguins
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 58e92bbe-4f37-11f1-8faf-2342ff572b86
     title: "DEX in the City: Will the CLARITY Act Pass? Three Crypto Lawyers Give Their Odds"
     duration: 2962
-    published: Thu, 14 May 2026 01:50:00 -0000
+    published: Thu, 14 May 2026 15:37:00 -0000
     published_sort: "20260514"
     first_seen_at: 2026-05-19T08:55:24.816Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1930876733.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1930876733.mp3
-    image: https://megaphone.imgix.net/podcasts/58e92bbe-4f37-11f1-8faf-2342ff572b86/image/0be2ccc7744f5d692200fb71f7cbb1bd.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    image: https://megaphone.imgix.net/podcasts/58e92bbe-4f37-11f1-8faf-2342ff572b86/image/0aa1c09a6b964ca40e28710421fc0866.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
       As a new CLARITY Act draft dropped, KK, Vy, and guest Josh Riezman of GSR give their passage odds and explain the
       one developer protection provision that matters most.
@@ -4753,6 +4980,7 @@ episodes:
           
 
 
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -4936,6 +5164,7 @@ episodes:
       Unchained:⁠⁠
 
         
+
 
 
         
@@ -6142,6 +6371,7 @@ episodes:
           
 
 
+
         
       Previous appearances on Unchained:
 
@@ -7073,6 +7303,7 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
 
 
         
@@ -8265,6 +8496,7 @@ episodes:
        
 
 
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -8658,6 +8890,7 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
+
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices

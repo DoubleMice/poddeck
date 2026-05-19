@@ -1,0 +1,130 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "center-dc",
+      "type": "rectangle",
+      "x": 320, "y": 260, "width": 180, "height": 80,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#ffc9c9",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 1, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {
+      "id": "center-label",
+      "type": "text",
+      "x": 340, "y": 275, "width": 140, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null,
+      "seed": 2, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1,
+      "fontSize": 18, "fontFamily": 1, "text": "AI\nData Center",
+      "textAlign": "center", "verticalAlign": "middle",
+      "originalText": "AI\nData Center", "lineHeight": 1.25, "baseline": 40
+    },
+    {
+      "id": "left",
+      "type": "rectangle",
+      "x": 40, "y": 80, "width": 180, "height": 90,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 3, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {
+      "id": "left-label",
+      "type": "text",
+      "x": 55, "y": 95, "width": 150, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null,
+      "seed": 4, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1,
+      "fontSize": 16, "fontFamily": 1, "text": "Left Wing\nJob Displacement\nCreativity Theft",
+      "textAlign": "center", "verticalAlign": "middle",
+      "originalText": "Left Wing\nJob Displacement\nCreativity Theft", "lineHeight": 1.25, "baseline": 50
+    },
+    {
+      "id": "right",
+      "type": "rectangle",
+      "x": 580, "y": 80, "width": 180, "height": 90,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 5, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {
+      "id": "right-label",
+      "type": "text",
+      "x": 595, "y": 95, "width": 150, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null,
+      "seed": 6, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1,
+      "fontSize": 16, "fontFamily": 1, "text": "Right Wing\nSurveillance Centers\nLibertarian",
+      "textAlign": "center", "verticalAlign": "middle",
+      "originalText": "Right Wing\nSurveillance Centers\nLibertarian", "lineHeight": 1.25, "baseline": 50
+    },
+    {
+      "id": "env",
+      "type": "rectangle",
+      "x": 40, "y": 460, "width": 180, "height": 80,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 7, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {
+      "id": "env-label",
+      "type": "text",
+      "x": 55, "y": 472, "width": 150, "height": 55,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null,
+      "seed": 8, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1,
+      "fontSize": 16, "fontFamily": 1, "text": "Environmental\nWater, Heat, Diesel",
+      "textAlign": "center", "verticalAlign": "middle",
+      "originalText": "Environmental\nWater, Heat, Diesel", "lineHeight": 1.25, "baseline": 45
+    },
+    {
+      "id": "nimby",
+      "type": "rectangle",
+      "x": 580, "y": 460, "width": 180, "height": 80,
+      "angle": 0, "strokeColor": "#862e9c", "backgroundColor": "#eebefa",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 9, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {
+      "id": "nimby-label",
+      "type": "text",
+      "x": 595, "y": 472, "width": 150, "height": 55,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null,
+      "seed": 10, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1,
+      "fontSize": 16, "fontFamily": 1, "text": "NIMBY\nNoise, Quality of Life\nLocal Control",
+      "textAlign": "center", "verticalAlign": "middle",
+      "originalText": "NIMBY\nNoise, Quality of Life\nLocal Control", "lineHeight": 1.25, "baseline": 45
+    },
+    {"id":"a1","type":"arrow","x":220,"y":170,"width":120,"height":90,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":11,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[120,90]]},
+    {"id":"a2","type":"arrow","x":580,"y":170,"width":120,"height":90,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":12,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-120,90]]},
+    {"id":"a3","type":"arrow","x":220,"y":420,"width":120,"height":80,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":13,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[120,-80]]},
+    {"id":"a4","type":"arrow","x":580,"y":420,"width":120,"height":80,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":14,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-120,-80]]},
+    {
+      "id": "poll-label",
+      "type": "text",
+      "x": 280, "y": 390, "width": 260, "height": 30,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null,
+      "seed": 15, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1,
+      "fontSize": 14, "fontFamily": 1, "text": "7 in 10 Americans oppose",
+      "textAlign": "center", "verticalAlign": "middle",
+      "originalText": "7 in 10 Americans oppose", "lineHeight": 1.25, "baseline": 20
+    }
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}

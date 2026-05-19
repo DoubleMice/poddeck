@@ -1,0 +1,25 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "dos", "type": "rectangle", "x": 280, "y": 30, "width": 260, "height": 70,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 1, "version": 1, "isDeleted": false, "boundElements": [], "updated": 1
+    },
+    {"id":"dos-label","type":"text","x":300,"y":38,"width":220,"height":55,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":2,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":16,"fontFamily":1,"text":"DOS 2.0 (Inference Engine)\n500+ tok/s · 100fps HD\nNVIDIA+TPU+Trainium","textAlign":"center","verticalAlign":"middle","originalText":"DOS 2.0 (Inference Engine)\n500+ tok/s · 100fps HD\nNVIDIA+TPU+Trainium","lineHeight":1.25,"baseline":45},
+    {"id":"lucy","type":"rectangle","x":60,"y":180,"width":200,"height":90,"angle":0,"strokeColor":"#2f9e44","backgroundColor":"#b2f2bb","fillStyle":"hachure","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":3,"version":1,"isDeleted":false,"boundElements":[],"updated":1},
+    {"id":"lucy-label","type":"text","x":80,"y":195,"width":160,"height":60,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":4,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":16,"fontFamily":1,"text":"Lucy\nReal-time Video\nLive Streaming + Ecom","textAlign":"center","verticalAlign":"middle","originalText":"Lucy\nReal-time Video\nLive Streaming + Ecom","lineHeight":1.25,"baseline":50},
+    {"id":"oasis","type":"rectangle","x":560,"y":180,"width":200,"height":90,"angle":0,"strokeColor":"#e8590c","backgroundColor":"#ffd8a8","fillStyle":"hachure","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":5,"version":1,"isDeleted":false,"boundElements":[],"updated":1},
+    {"id":"oasis-label","type":"text","x":580,"y":195,"width":160,"height":60,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":6,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":16,"fontFamily":1,"text":"Oasis\nPhysical AI\nRobotics + AV + Drones","textAlign":"center","verticalAlign":"middle","originalText":"Oasis\nPhysical AI\nRobotics + AV + Drones","lineHeight":1.25,"baseline":50},
+    {"id":"a1","type":"arrow","x":410,"y":100,"width":130,"height":80,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":7,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-130,80]]},
+    {"id":"a2","type":"arrow","x":410,"y":100,"width":130,"height":80,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":8,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[130,80]]},
+    {"id":"5-8x","type":"text","x":280,"y":340,"width":260,"height":40,"angle":0,"strokeColor":"#e03131","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":9,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":14,"fontFamily":1,"text":"5-8x more performance\nthan anything on the market","textAlign":"center","verticalAlign":"middle","originalText":"5-8x more performance\nthan anything on the market","lineHeight":1.25,"baseline":30},
+    {"id":"chip","type":"text","x":280,"y":410,"width":260,"height":40,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"roughness":1,"opacity":100,"groupIds":[],"frameId":null,"seed":10,"version":1,"isDeleted":false,"boundElements":[],"updated":1,"fontSize":14,"fontFamily":1,"text":"Chip supply sold out until 2028\n→ optimization is survival","textAlign":"center","verticalAlign":"middle","originalText":"Chip supply sold out until 2028\n→ optimization is survival","lineHeight":1.25,"baseline":30}
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}

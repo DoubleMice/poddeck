@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Gu – Crypto Market Making & The Cold Start Problem</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #666;
+  }
+  header .meta span {
+    margin: 0 6px;
+  }
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1971c2;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 12px;
+    color: #333;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0 40px;
+  }
+  .overview .card {
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card.blue { background: #eff6ff; border-color: #3b82f6; }
+  .card.green { background: #f0fdf4; border-color: #22c55e; }
+  .card.orange { background: #fff7ed; border-color: #f97316; }
+  .card.purple { background: #faf5ff; border-color: #a855f7; }
+  .card.yellow { background: #fefce8; border-color: #eab308; }
+  .card.red { background: #fef2f2; border-color: #ef4444; }
+  .card.full { grid-column: 1 / -1; }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #1971c2;
+    background: #eff6ff;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote .attr {
+    font-style: normal;
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+  }
+  blockquote.green { border-color: #22c55e; background: #f0fdf4; }
+  blockquote.orange { border-color: #f97316; background: #fff7ed; }
+  blockquote.purple { border-color: #a855f7; background: #faf5ff; }
+  blockquote.yellow { border-color: #eab308; background: #fefce8; }
+  blockquote.red { border-color: #ef4444; background: #fef2f2; }
+  .paraphrase {
+    background: #f9fafb;
+    border: 1px dashed #d1d5db;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #555;
+    margin: 16px 0;
+  }
+  .quotes-section {
+    margin: 40px 0;
+    padding: 24px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 12px;
+  }
+  .quotes-section h2 {
+    border-bottom: none;
+    margin-top: 0;
+    text-align: center;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+  footer a { color: #1971c2; }
+  @media (max-width: 640px) {
+    article { padding: 24px 16px 60px; }
+    header h1 { font-size: 22px; }
+    .overview { grid-template-columns: 1fr; }
+    .card.full { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>John Gu — Crypto Market Making &amp; The Cold Start Problem</h1>
+  <div class="meta">
+    Flirting with Models · S7E30 · 2026年5月
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    John Gu — 创始人 &amp; CEO, Caladan · 200+ 次 token 发行做市经验
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得听</h2>
+
+  <div class="overview">
+    <div class="card blue">
+      <strong>冷启动难题</strong>
+      一个新 token 上线时没有 order book、没有参考价、没有可比标的——做市商如何向虚空报出第一个双边报价？
+    </div>
+    <div class="card green">
+      <strong>200+ 次实战</strong>
+      Caladan 已为超过 200 个 token 发行提供流动性，从第一天到第三十天的策略演化有一套清晰的 playbook。
+    </div>
+    <div class="card orange">
+      <strong>两种商业模式</strong>
+      "做市即服务"和"自营交易获利"是两套完全不同的激励机制和风险结构。Loan+Option 模型 vs Retainer 模型。
+    </div>
+    <div class="card purple">
+      <strong>CEX + DeFi 双线作战</strong>
+      同时在中心化订单簿和链上 AMM 池提供流动性，面对截然不同的对手方风险和基础设施游戏规则。
+    </div>
+    <div class="card yellow full">
+      <strong>适者生存的市场观</strong>
+      从 Andrew Lo 的 Adaptive Markets Hypothesis 到 FTX 崩塌后的基础设施重建，John 用"注意力转移"的框架理解每一次市场地震。
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>从 MIT 到 Caladan：一条非线性的弧线</h2>
+
+  <p>John Gu 的职业路径不是一条直线。MIT 计算机科学背景、Andrew Lo 的硕士生、AlphaSimplex 的研究科学家、Citadel Principal Strategies Group 的事件驱动交易员、Tower Research 的亚洲市场高频交易员——然后，2016 年，他离开了 Tower，没有下一份工作。</p>
+
+  <p>在 MIT 时，John 曾穿着轮滑鞋冲进 Goldman Sachs 的宣讲会——满身是汗、T恤短裤，而房间里所有其他学生都穿着西装。他回忆道："Oh man, I'm kind of in the wrong place."这不是社恐，而是对自己方向的确认：他更感兴趣的是计算机科学和系统的交叉地带，而非传统投行。</p>
+
+  <p>在 AlphaSimplex 期间，Andrew Lo 正在系统化他的 Adaptive Markets Hypothesis——这个框架后来成为 John 终生的心智模型。John 描述道：</p>
+
+  <blockquote>
+    "He was describing it to me about how markets are really a living thing, attention focuses from one thing to another. People and opportunities shift around, and that's really what defines the relative degrees of efficiency in markets. And it's not a static problem; you can't go into like an equilibrium state all at once."
+    <div class="attr">— John Gu 谈 Adaptive Markets Hypothesis 对他的影响</div>
+  </blockquote>
+
+  <p>这个"市场是活的"的观念后来帮助 John 理解了 FTX 崩盘后的范式转移、crypto 中的相关性漂移，以及为什么小 token 的风险与大市几乎无关。</p>
+</section>
+
+<section>
+  <h2>Caladan 的诞生：一个有机的、非计划中的创业</h2>
+
+  <p>John 坦承自己不是远见卓识的创业者。他离开 Tower 后没有商业计划。是朋友 Michael（后来的 co-founder）告诉他：不同交易所之间的 crypto 价格差异巨大。</p>
+
+  <p>两个交易改变了一切。第一个是 Kimchi Premium——韩国交易所的 crypto 价格比境外高 20-50%。但资本管制让套利很难执行：韩元不能自由兑换成美元。John 靠之前在 Tower 做韩国市场时积累的 contacts 拿到了通道。第二个是跨交易所的短线套利——他写了一个"非常简单的自动化算法"，效果远超预期。</p>
+
+  <blockquote class="green">
+    "I thought it would be a small thing, just a curiosity, and it ended up being quite profitable."
+    <div class="attr">— John Gu 谈最初的跨交易所套利算法</div>
+  </blockquote>
+
+  <p>真正的转折发生在一次度假中。妻子给出了两个选项："你可以把它当 lifestyle business——我们不用工作了，可以放松。或者你可以 build a business。"John 选择了后者。不是因为预见到 crypto 会爆发——"I was almost certain the trades themselves would disappear"——而是因为他一直想创业，这些套利利润成了理想的跳板。</p>
+
+  <p>父母的经历也深深影响了这个决定。John 的父母在 1980 年代从中国移民美国，几乎不会英语。父亲是交换学生，母亲在中国是医生却在美国做保姆。后来他们自己创立了 healthcare IT 公司，最多雇佣了五六百人。</p>
+
+  <blockquote class="purple">
+    "I sort of saw that growing up, and I was always really impressed, and I kind of wanted to emulate that a bit."
+    <div class="attr">— John 谈父母创业对自己的影响</div>
+  </blockquote>
+
+  <p>公司的名字 Caladan 也值得一提。原名叫 Alpha Lab，但太多 crypto 项目用"Labs"后缀，经常被混淆。Caladan 是《沙丘》中 Atreides 家族的母星——"tough but fair"，而且是一个水星球，暗示流动性。这个名字完美地捕捉了公司的定位：公平、坚韧、流动性提供者。</p>
+</section>
+
+<section>
+  <h2>冷启动问题：向虚空报价</h2>
+
+  <p>这期对话的核心是 Corey 所称的"冷启动问题"（the cold start problem）。在传统金融市场，每一只新上市股票都带着"脚手架"出发：指定的做市商、IPO 参考价、可比公司、数十年的监管基础设施。Crypto 完全颠倒了这一切。</p>
+
+  <blockquote class="red">
+    "A new token can launch with no order book, no comparables, and no clear demand curve. Someone has to quote a two-sided market into that void, and how they do it shapes whether the asset becomes a real tradable thing or a graveyard of wide spreads and stranded liquidity."
+    <div class="attr">— Corey Hoffstein 定义"冷启动问题"</div>
+  </blockquote>
+
+  <p>John 解释了 Day 1 的实际操作流程。首先是与项目方和交易所的信息发现——项目方怎么看待自己的 token？交易所传达的"reasonable range"是什么？</p>
+
+  <div class="paraphrase">
+    <strong>作者概括：</strong>这个阶段的精髓在于理解"锚定"的力量。交易所在开盘前就会和市场参与者沟通一个预期的价格范围，而做市商——以及其他市场参与者——会锚定到这个数字上。John 强调："In the absence of a lot of information, people do anchor to that price, so it's not path independent. Once that anchoring comes, it's a little bit sticky and adjust in time."
+  </div>
+
+  <p>然后，做市商以宽价差、小尺寸起步，用交易本身的反馈来校准中间价：</p>
+
+  <blockquote>
+    "We adjust our width to be wide and then we slowly narrow in, and then we use the feedback from the trading itself to actually tune our mid."
+    <div class="attr">— John Gu 描述 Day 1 的报价策略</div>
+  </blockquote>
+
+  <p>John 直言不讳地指出：做市作为一项活动本身几乎总是亏钱的——"it's almost always a money-losing proposition"——这就是为什么做市商需要被项目方补偿。</p>
+</section>
+
+<section>
+  <h2>分叉的市场结局：不是每个 token 都能"活"</h2>
+
+  <p>John 观察到 token 上市后的两种典型路径。有些 token 发展出足够的有机交易、分散的持有者结构和持续的 mindshare——价格发现完成后趋于稳定，做市商可以从"服务"模式转向"盈利交易"模式。另一些 token 则完全相反：没有真正的有机交易、库存高度集中、可能存在内部人操纵——变成只有做市商在场的"鬼城"。</p>
+
+  <p>这不是一个二元选择，而是一个 spectrum。关键在于 token 项目能否在最初的交易热度消退后，仍然维持真正的 user interest 和分布式 ownership。</p>
+
+  <p>John 还指出，上币场所本身就是信号。Binance 或 Coinbase 的上市意味着项目通过了严格的筛选——"Binance is viewed as almost a distribution channel for the tokens because it accesses this large customer base."相比之下，小交易所的成交量存在虚假交易的质疑——"wash trading is kind of endemic problem."</p>
+</section>
+
+<section>
+  <h2>两种商业模式：服务 vs 交易，Loan+Option vs Retainer</h2>
+
+  <p>John 清晰地划出了两个维度的二分法。第一个维度是<strong>做市即服务 vs 自营交易获利</strong>。做市即服务（MM as a Service）的核心目标是 bootstrap 一个新市场——就像 Uber 早期用高补贴吸引司机和乘客。做市商被 KPIs 约束：uptime、在特定 spread 上的最小挂单尺寸。而自营交易获利的前提是有机交易的存在："the only way the liquidity is there is if there's organic trading."</p>
+
+  <p>第二个维度是<strong>补偿结构：Loan+Option vs Retainer</strong>。Loan+Option 模型适用于大项目：做市商从项目方借 token 并获得买入期权——风险在做市商一侧，但也给了做市商通过 delta hedging 管理库存的工具。Retainer 模型适用于小项目：做市商收取固定月费（$2k-5k），项目方承担 PnL 风险。</p>
+
+  <p>John 提供了一个关于期权的有趣视角：</p>
+
+  <blockquote class="orange">
+    "One way in which you can look at the option is that it's basically a VC bet, and you're paying for the option through labor rather than buying it outright from the token project."
+    <div class="attr">— John Gu 谈期权的本质</div>
+  </blockquote>
+
+  <p>但 Caladan 更实用的视角是：期权使 delta hedging 成为可能。价格上涨时卖出，下跌时买入——"that fundamentally dampens the volatility of the project."John 补充说了一句务实的话："the projects don't realize that what can go up quite quickly can come down quite quickly too."</p>
+</section>
+
+<section>
+  <h2>组合层面的风险管理：两个风险桶</h2>
+
+  <p>Caladan 同时为 200+ 个资产做市，面临的是高度异质的风险组合。John 的 approach 是务实的，而不是学术化的。</p>
+
+  <blockquote class="green">
+    "Correlation is a liquidity phenomenon. If you look at BTC, it's become more correlated with general traditional asset markets, and often that's because the same holders of risk make the same decisions of risk on, risk off."
+    <div class="attr">— John 解释相关性漂移的根本原因</div>
+  </blockquote>
+
+  <p>John 使用一个两桶模型：大 token（BTC/ETH）受到整体市场偏斜的显著影响——持仓组合层面的敞口会传导到定价中；小 token 或新 token 的几乎全部风险都是 idiosyncratic——被 day 1 到 day 10 的内部动态主导，与整体市场几乎无关。</p>
+
+  <p>John 不建立 crypto 因子模型——"crypto factors are still quite new and we can't really decompose them so well."他用类似 Barra 风格的方法来对不同 token 的定价做方向性的偏斜调整（sign measure），而非数值估算。这之所以可行，是因为仓位周转极快——"we're able to turn things around quickly, so generally the risk's pretty tight."</p>
+</section>
+
+<section>
+  <h2>对抗性环境中的做市</h2>
+
+  <p>John 分享了一个令人震惊的个人经历：他曾在 TradFi 近距离共事过"one of the biggest spoofers"——这个人交易了 ES 市场（全球流动性最好的市场之一）的 10-20%，并能成功操纵获利。这些操纵者的高级玩法是在主市场上不亏不赚（或小亏），但在受主市场影响的大量衍生市场上获利。</p>
+
+  <p>这种模式在 crypto 中同样存在——甚至更加赤裸。crypto 的另一个结构特性加剧了问题：</p>
+
+  <blockquote class="red">
+    "Imagine you have a very small spot inventory, maybe even just a few million dollars, but you have an open interest that's like an order of magnitude higher than that. If you manipulate spot inventory, you can affect a lot of economic outcomes for the holders of the perpetuals."
+    <div class="attr">— John 解释 crypto 中的"狗尾巴摇狗"现象</div>
+  </blockquote>
+
+  <p>这就是为什么 John 反复强调"table selection"的重要性：</p>
+
+  <blockquote class="purple">
+    "We're sort of operating a very adversarial environment, and this is where the table selection becomes very important. You want to choose the tokens and the venues that have good edge, and there's a lot of different filters and market analysis that we can do, which identify these markets."
+    <div class="attr">— John 谈 Caladan 的市场选择策略</div>
+  </blockquote>
+
+  <p>在被项目方付费的做市服务中，不能因为市场环境差就退出——这也是为什么服务费是必要的补偿。但在自营交易一侧，只有经过严格过滤的市场才值得下注。</p>
+</section>
+
+<section>
+  <h2>FTX 后时代：基础设施的重建</h2>
+
+  <p>FTX 崩盘对 Caladan 的影响相对有限——只有约 5% 的 equity 在 FTX 上——但 John 仍然疯了一样从其他交易所撤资，担心系统性问题蔓延。这个事件改变了整个行业的注意力焦点：</p>
+
+  <blockquote>
+    "The way I conceptualize it is exactly like adaptive markets hypothesis. Collectively, attention shifted from one thing to another. It became much more fashionable and defensible to talk about risk, whereas before maybe you were seen as being the naysayer."
+    <div class="attr">— John 用 Adaptive Markets Hypothesis 解释 FTX 后的行业转变</div>
+  </blockquote>
+
+  <p>FTX 后出现了三类新基础设施：第三方信用保险（如 Hidden Road）、信用中介服务（Copper、BitGo）、以及更多的双边交易关系。Perp DEXs（如 Hyperliquid）的崛起则代表了另一个方向——用智能合约透明托管客户资产，不存在 centralized entity 的挪用风险。</p>
+
+  <p>但新的风险也随之而来。缺乏中央清算 + 高杠杆 + venue sprawl（碎片化）意味着至少每年一次大规模的清算雪崩和 auto-deleveraging 事件。任何跨交易所的 delta neutral 策略——如 funding rate arb——都面临一条腿被 ADL 平仓而另一条腿还在的 catastrophic risk。</p>
+</section>
+
+<section>
+  <h2>DeFi vs CEX：两种基础设施、两种游戏规则</h2>
+
+  <p>Caladan 同时在 CEX 和 DeFi 提供流动性，但 John 指出这是两套完全不同的世界观。CEX 的对手方风险是人——FTX 之后，没有做市商会把所有鸡蛋放在一个篮子里。DeFi 的对手方风险是代码——smart contract exploit 是永久的阴影。Caladan 的策略是依赖 battle-hardened 的老协议，而非新协议——"you rely on the battle hardening of some of these protocols where they have been hardened over many years."</p>
+
+  <p>DeFi 做市的另一个关键差异是费用 vs 反向选择的权衡：</p>
+
+  <blockquote class="green">
+    "If you have a pool where the only people who trade are the ARBs, then there's no way you're making money because they're only trading when they can overcome the fees. But if there's enough noise traders where they're going back and forth and they're paying the fees, then that can wash out where you're actually still making money."
+    <div class="attr">— John 解释 DeFi LP 的盈利条件</div>
+  </blockquote>
+
+  <p>基础设施层面的差异也很大。Ethereum 使用 MEV 拍卖机制——你"贿赂"block producer 来抢先。Solana 因为交易成本极低——"people just spam it."这是一套完全不同的高频交易范式："Same ideas, but different implementation."</p>
+</section>
+
+<section>
+  <h2>结构化产品：Token 财政部的工具箱</h2>
+
+  <p>Caladan 最近扩展到 OTC 结构化产品领域——为 token 基金会、基金和家族办公室构建定制化的衍生品、远期、期权和结构化票据。这背后的需求逻辑是什么？</p>
+
+  <p>Token 基金会通常坐拥数亿美元的本币 token，但这些资产高度集中、可能 locked up、流动性极差。想变现？市场在盯着。就像 Elon Musk 宣布卖出所有 Tesla 股票——所有人都会恐慌。</p>
+
+  <p>John 把结构化产品比作 Lego 积木——"The Lego pieces themselves are quite technical, but you don't really talk to the treasuries about that. You talk to them about their needs."核心需求包括：yield generation（crypto 资产通常没有收益）、运营成本覆盖（如何系统性地卖出 token 而不 spoofing 市场）、以及信号管理（通过 precommitment program 向市场传达"这不是 insider selling"）。</p>
+
+  <blockquote class="orange">
+    "What we're actually doing is monetizing volatility, monetizing convexity, and trading counterflow to where the market naturally trades. That also helps a bit."
+    <div class="attr">— John 总结结构化产品的核心逻辑</div>
+  </blockquote>
+</section>
+
+<section>
+  <h2>做市商为什么"名声不好"</h2>
+
+  <p>零售 crypto 参与者对做市商普遍持负面看法——做市商在"砸盘"、有幕后交易、操纵价格。John 的回应出人意料地坦诚：这些看法有一定道理。</p>
+
+  <blockquote class="yellow">
+    "That's hard to do because I think there's maybe some truth to some of those perceptions because market makers as a group is a diverse group with different actors that have different choices that they make."
+    <div class="attr">— John 对做市商声誉问题的回应</div>
+  </blockquote>
+
+  <p>确实有做市商——John 称之为"active market makers"——主动用交易来"paint a picture"，控制现货库存来制造价格走势。这与《Reminiscences of a Stock Operator》中描述的 penny stock 操纵本质相同。但 John 认为，"做市商"这个词本身就有问题——它用一个"overloaded term"把被动流动性提供者和主动价格操纵者塞进了同一个标签下。</p>
+
+  <p>Caladan 选择远离这些做法。John 强调："It's a pure business decision, not a moral one."不是道德高地——是风险收益比不划算。而且从长远来看，真正的价格走势主要还是由基本面因素决定的，而非做市商的短期操控。</p>
+</section>
+
+<section>
+  <h2>Crypto 在"速通" TradFi 的百年课纲</h2>
+
+  <p>Crypto 经常被描述为在速通 TradFi 数十年甚至数百年的发展和教训。John 认同这个观察——"if you look at the structures and the things that have been built, it's pretty faithfully replicating a lot of what already exists in TradFi."但 crypto 有两个独特的优势：监管套利（"we're not custodying any customer assets"——这让事情跑得更快）和可编程货币（关系被 codified——你可以在没有任何 circuit breaker 的情况下观察它们 play out）。</p>
+
+  <p>John 对终局有两个预判。第一，crypto 将复制 FX 和 commodities 的市场结构——高度分散、大量区域性子市场（因监管和结构性原因而隔离）、缺乏中央清算、需要实体交割。在这种结构下，做市商的核心角色不是"提供服务"，而是以 principal risk 来平衡跨市场 flow。</p>
+
+  <p>第二，DeFi 将分叉。如果走向 permissioned——DeFi 只是更好的 ledger 和 settlement，最终融入 TradFi 体系。Permissionless 那一侧会变成一个永远存在的 niche——"in its little sandbox, but not to the degree that's there today."</p>
+</section>
+
+<section>
+  <h2>什么是打造健康 Token 的正确方法？</h2>
+
+  <p>John 的核心建议直白得令人意外：</p>
+
+  <blockquote class="green">
+    "Make sure your project actually has real value and real revenue and real use, and that's what ultimately will drive the token."
+    <div class="attr">— John Gu 给 token 项目方的终极建议</div>
+  </blockquote>
+
+  <p>他以 Hyperliquid 为例：开盘价只有 $3 或 $2，现在在 $40。真正的 cash flow 驱动的项目不需要"开盘就爆炸"。</p>
+
+  <p>但 John 也承认 crypto 中 token 价格的自反性：token 跌了，人们就停止使用协议——这在 TradFi 中并不存在（Nike 股票跌了不影响你买鞋）。这种 reflexivity 类似于 Wall Street Bets 时代的 AMC 和 GameStop——股价上涨让公司能募到资本、获得 lifeline。在 crypto 中，token 的投机期权特性甚至允许某些项目在团队已经消失后仍然拥有 non-trivial 的市值。</p>
+</section>
+
+<section>
+  <h2>个人执念：AI、心智模型与变化的速度</h2>
+
+  <p>John 目前在 obsess 两个东西。一只是 puppy——他的孩子们在游说。另一件事更深刻：AI 如何根本性地改变工作流程的本质。</p>
+
+  <p>John 的一个朋友做了一个实验：把大量个人信息和偏好喂给 AI，几乎建造了一个虚拟的自己来"和自己对话"。John 本人是"mental models 的收藏者"——</p>
+
+  <blockquote class="purple">
+    "I'm a collector of mental models, so I really like this idea of feeding in a few guiding mental models and saying, you know, hey, what's going on?"
+    <div class="attr">— John 谈自己对 AI 的执念</div>
+  </blockquote>
+
+  <p>他引用电影《夜访吸血鬼》中的一个场景——活了几百年的吸血鬼首领说：人类最挣扎的是跟上变化。John 感叹道："Change is so fast these days...you plan for one thing and you spend years planning for one thing, and it could change."</p>
+
+  <p>这种对变化速度的焦虑——作为父亲、作为企业家、作为一个在 crypto 这样高速迭代的行业中工作的人——是本期对话一个微妙但贯穿始终的底色。</p>
+</section>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div style="display:flex;flex-direction:column;gap:12px;">
+
+  <blockquote>
+    "It's not path independent. Once that anchoring comes, it's a little bit sticky and adjust in time."
+    <div class="attr">— 锚定效应：初始定价如何影响 token 的长期价格轨迹</div>
+  </blockquote>
+
+  <blockquote class="green">
+    "We're very passive, we're price takers, and it's almost always a money-losing proposition."
+    <div class="attr">— 做市即服务的经济本质：做市商为什么需要被补偿</div>
+  </blockquote>
+
+  <blockquote class="orange">
+    "Correlation is a liquidity phenomenon."
+    <div class="attr">— 贯穿整个对话的核心洞见：相关性不是数学常数，而是投资者结构的函数</div>
+  </blockquote>
+
+  <blockquote class="purple">
+    "We're operating in a very adversarial environment, and this is where the table selection becomes very important."
+    <div class="attr">— 在充满 spoofing 和操纵的市场中生存的核心原则</div>
+  </blockquote>
+
+  <blockquote class="yellow">
+    "What we're actually doing is monetizing volatility, monetizing convexity, and trading counterflow to where the market naturally trades."
+    <div class="attr">— 结构化产品的本质：不赌方向，赌波动率和凸性</div>
+  </blockquote>
+
+  <blockquote class="red">
+    "Make sure your project actually has real value and real revenue and real use."
+    <div class="attr">— 给所有 token 项目方的终极建议，简单到几乎反直觉</div>
+  </blockquote>
+
+  </div>
+</section>
+
+<footer>
+  <p>
+    完整对话：<a href="http://www.flirtingwithmodels.com/">Flirting with Models S7E30 — John Gu</a>
+  </p>
+  <p style="margin-top:8px;">
+    ← 返回 <a href="/">PodDeck</a> 浏览更多深度访谈
+  </p>
+</footer>
+
+</article>
+</body>
+</html>

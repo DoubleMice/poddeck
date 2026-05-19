@@ -1,0 +1,29 @@
+id: SOAPBOX107
+source: risky-business
+title: "Soap Box: Where does AI fit into cloud security?"
+guest: "Tony De La Fuente"
+guest_role: "Prowler Founder"
+published: 2026-05
+duration: 34m
+url: https://risky.biz/SOAPBOX107/
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+status: generated
+tags:
+  - ai-products
+  - coding-agents
+  - startup
+  - interview
+  - founder
+  - quick-take
+  - technical
+summary: |
+  Prowler 创始人 Tony De La Fuente 与 Patrick Gray 深度对谈：AI 如何改变开源项目（100% 代码由 AI 生成）、SaaS 在 AI 时代的真实处境（death of SaaS 被严重夸大）、确定性工具 vs AI agent 的关系（agent 需要工具而不是裸 API key）、以及为什么 AI 驱动的攻击民主化反而让基础安全控制变得更抢手。
+core_ideas:
+  - Prowler 现在 100% 的代码提交由 AI 生成，但 guardrails（tests, linters, QA）不可或缺
+  - AI agent 不应该直接用 API key 管理云安全——它们需要确定性的专业工具
+  - "Death of SaaS is greatly overstated"：你真正付钱的是 expertise 和持续维护，不是软件本身
+  - Vibe-code 出来的工具会变成 Frankenstein——维护才是真正的挑战
+  - AI 降低了攻击门槛（infinity script kitties），反而让基础云安全控制获得了最大投资
+  - Prowler 的愿景是 Agentic Cloud Defender：确定性 ground truth + AI 上下文 + 闭环修复
+article_path: episodes/SOAPBOX107/article.html
+base: /episodes/SOAPBOX107/

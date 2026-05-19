@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leopold's 13F, Data Center Fixes, Shein Buys Everlane — TBPN 深度解读</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #1a1a1a; background: #fafafa; line-height: 1.75; font-size: 17px;
+}
+article { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+header { text-align: center; margin-bottom: 48px; }
+header h1 { font-size: 28px; font-weight: 700; line-height: 1.35; margin-bottom: 12px; }
+header .meta { color: #666; font-size: 15px; }
+header .meta span { margin: 0 8px; }
+.section { margin: 42px 0; }
+.section h2 { font-size: 22px; font-weight: 700; margin-bottom: 16px; color: #1a1a1a; }
+.section h3 { font-size: 18px; font-weight: 600; margin: 20px 0 10px; color: #333; }
+.section p { margin-bottom: 14px; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 24px 0; }
+.card { padding: 16px; border-radius: 8px; font-size: 15px; line-height: 1.55; }
+.card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card strong { display: block; margin-bottom: 4px; }
+blockquote {
+  margin: 20px 0; padding: 16px 20px; border-radius: 6px; font-style: italic; font-size: 16px;
+  background: #f8fafc; border-left: 4px solid #94a3b8;
+}
+blockquote .attr { display: block; margin-top: 8px; font-size: 13px; font-style: normal; color: #666; }
+.quotes-section { margin: 42px 0; }
+.quotes-section .quote-item { padding: 14px 18px; margin-bottom: 12px; border-radius: 6px; font-style: italic; }
+.quotes-section .quote-item .q-attr { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #555; }
+footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #e5e7eb; text-align: center; font-size: 14px; color: #999; }
+footer a { color: #3b82f6; text-decoration: none; }
+@media (max-width: 600px) {
+  article { padding: 32px 16px 48px; }
+  header h1 { font-size: 22px; }
+  .card-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Leopold's 13F, Data Center Fixes, Shein Buys Everlane</h1>
+  <div class="meta">
+    TBPN · 2026-05-18 · ~3h
+    <br>嘉宾：Mike Isaac (NYT) · Rowan Trollope (Redis CEO) · Dean Leitersdorf (Descartes) · Joanna Stern (Author)
+  </div>
+</header>
+
+<div class="card-grid">
+  <div class="card card-blue">
+    <strong>OpenAI 胜诉</strong>
+    Elon Musk 诉 OpenAI 案陪审团仅用 90 分钟即达成裁决，以诉讼时效为由驳回所有指控。NYT 记者 Mike Isaac 从法院门外传来第一手报道。
+  </div>
+  <div class="card card-green">
+    <strong>Leopold 13F 风暴</strong>
+    Aschenbrenner 的对冲基金持仓披露引发从 FinTwit 到 TechX 的全网讨论，$2B 半导体看跌期权与做多 NVIDIA 的组合背后，是一个更精准的 AI 投资逻辑。
+  </div>
+  <div class="card card-yellow">
+    <strong>数据中心民怨</strong>
+    7/10 美国人反对在本地建设 AI 数据中心，左翼担心就业替代，右翼视其为监控中心。Eric Schmidt 在毕业典礼上被持续嘘声打断。这是一场罕见的跨党派反弹。
+  </div>
+  <div class="card card-red">
+    <strong>Agent 时代的基础设施</strong>
+    Redis CEO Rowan Trollope 揭示了一个根本性转变：当"写代码"不再是开发流程中最耗时的环节，整个软件开发生命周期都需要被重新发明。
+  </div>
+  <div class="card card-purple">
+    <strong>芯片供给锁死至 2028</strong>
+    Descartes 创始人 Dean Leitersdorf 宣布 DOS 2.0 推理引擎，500+ tok/s，100fps 全高清实时视频。背后是一个残酷的现实：所有新增 GPU 产能在 2028 年前已被预订一空。
+  </div>
+  <div class="card card-orange">
+    <strong>Shein $1 亿收购 Everlane</strong>
+    DTC 道德消费的标杆品牌以不及融资总额的价格卖给了快时尚巨头。VC 资本与服装品牌，本质上是两种不相容的逻辑。
+  </div>
+</div>
+
+<div class="section">
+  <h2>1. Musk vs OpenAI：90 分钟定胜负</h2>
+
+  <p>2026 年 5 月 18 日，旧金山联邦法院。这一天原本被预期是陪审团审议的第一天——可能持续数周。但仅仅 90 分钟后，一切都结束了。</p>
+
+  <p>纽约时报记者 Mike Isaac 从法院门外连线 TBPN。他描述了那个戏剧性的时刻：法官正在处理双方关于赔偿金的辩论，书记员突然闯入，"有情况发生了"。不到两个小时，陪审团带着裁决回来了。</p>
+
+  <blockquote>
+    "Literally, in the middle of this deliberation, the clerk goes and interrupts the judge and says, hey, something's happening basically. They're scurrying, and everyone's like, oh my god, what's happening? And this is like less than two hours into it, they reach a verdict."
+    <span class="attr">— Mike Isaac, The New York Times</span>
+  </blockquote>
+
+  <p>这是 Elon Musk 的全面失败。陪审团一致裁定：Musk 的诉讼因时效问题被驳回——他起诉得太晚了。法官确认并尊重了陪审团的裁决。Wired 的 Max Zaff 写道："陪审团一致裁定 Musk 的主张因时效问题被驳回。法院确认将维持陪审团的决定。结束了。Musk 输掉了对 OpenAI 的诉讼。"</p>
+
+  <p>Musk 的法律团队在整个庭审期间采用的是一种情绪化策略——"你不能偷走一个慈善机构"，一个简单、好记、直击人心的叙事。而 OpenAI 的辩护则更技术性：你几年前就该起诉了。所有人都以为这会是一场关于人格的较量——你相信哪位亿万富翁？但最后，陪审团聚焦在了一个枯燥的法律技术点上。</p>
+
+  <p>Mike Isaac 指出，这场胜利对 OpenAI 来说至关重要，但远非终局。"电影还在继续。"OpenAI 正处于一个极其困难的时期：计划今年上市但资产负债表混乱，Anthropic 在后面紧追不舍，Google 也在全力冲刺。这场胜诉只是给了他们一个短暂的喘息。</p>
+
+  <blockquote>
+    "This is an exciting time in AI because OpenAI is really on his back foot in a lot of ways. This gives them some relief in the many fronts that they're being intact on, whether it's going public this year with a messy balance sheet or Anthropic coming after them, Google coming after them."
+    <span class="attr">— Mike Isaac</span>
+  </blockquote>
+
+  <p>一个值得玩味的细节是，上周 Musk 突然随 Trump 访问中国，缺席了正在进行的庭审。Mike Isaac 证实：他并没有被法官正式豁免，理论上可能被召回作证。在一个通常要求当事人全程出席的案件中，这是一个不同寻常的选择——也许 Musk 心里已经有了答案。</p>
+</div>
+
+<div class="section">
+  <h2>2. Leopold 的 13F：最危险的抄作业</h2>
+
+  <p>Leopold Aschenbrenner 的对冲基金 13F 披露引爆了从金融圈到科技圈的全网关注。文件显示，截至 2026 年 3 月 31 日，他的基金持有高达 $2B 的半导体 ETF（SMH）看跌期权，同时做多 NVIDIA。</p>
+
+  <p>TBPN 的主持人们用了很大篇幅来解释为什么 13F 极易被误读——以及为什么盲目抄作业可能"烧钱"。</p>
+
+  <p>首先，13F 只是一个截至 3 月 31 日的快照。这些仓位已经过时了两个多月。在此期间，世界发生了剧变——包括伊朗战争。Leopold 当前的持仓可能与 3 月底完全不同。他可能已经轮换到了完全不同的头寸。</p>
+
+  <p>其次，期权是按名义价值报告的。当你看到"$1B 的 Intel 持仓"时，那通常只是购买权的名义价值——每一份期权合约对应 100 股。实际投入的资本可能远低于这个数字。13F 不披露执行价、到期日、对冲比率、空头头寸和互换合约。你看到的只是冰山一角。</p>
+
+  <blockquote>
+    "Making investment decisions for 80 vol assets based on data from months ago sounds like a good way to burn money. Don't idolize people and develop your own thesis for why you own and sell things."
+    <span class="attr">— 匿名市场评论者（节目中引用）</span>
+  </blockquote>
+
+  <p>但 Leopold 的投资哲学本身仍然值得关注。他因"情境意识"论文而闻名，核心假设是前沿 AI 将以每年约半个数量级（~0.5 OOMs/year）的速度持续提升，这将创造前所未有的算力需求。一个有趣的线索是他在 T1 Energy（美国本土太阳能制造）上的持仓——这可能意味着他看好太阳能为 AI 数据中心供电的时间线比市场预期的更短。</p>
+</div>
+
+<div class="section">
+  <h2>3. 数据中心遭全民反对：AI 的物理足迹危机</h2>
+
+  <p>这可能是本期节目中信息密度最高的议题。AI 数据中心已经成为一种罕见的跨党派反对议题。</p>
+
+  <p>民意调查显示：7/10 的美国人反对在本地社区建设数据中心，其中 48% 是强烈反对。只有 1/4 的人表示支持，其中仅 7% 是强烈支持。</p>
+
+  <p>左翼的反对理由集中在就业替代、创意盗窃和环境破坏（柴油发电机、用水、噪音）。右翼则将数据中心视为"监控中心"，是一种反自由主义的、使沿海精英受益而牺牲本地社区的权力扩张。</p>
+
+  <p>而最具象征意义的事件是 Eric Schmidt 在亚利桑那大学毕业典礼上被嘘。当他提到 AI 时，台下的嘘声从头到尾没有停止过。Alex Kantrowitz 在 Twitter 上感叹："Incredible. AI getting booed out of the stadium."</p>
+
+  <p>但这不仅仅是针对 Schmidt 个人的情绪宣泄。同一周，一位房地产高管在 UCF 的毕业演讲中提到 AI 时同样被嘘。高盛 CEO David Solomon 在沃顿的演讲中用 Suno AI 生成的 EDM 歌曲演示"创造力不再重要"——这个信息在大批即将进入就业市场的年轻人听来，可能不像他预想的那样令人振奋。</p>
+
+  <p>反对已经从舆论蔓延到了政策层面。在德州 Hill County，委员们以 3:2 投票通过了一年禁令，暂停在非建制区建设数据中心。在密苏里，一个小镇的居民因为不满市议会批准数据中心，直接罢免了全部 4 位现任议员。在北卡罗来纳，州长指出数据中心的销售税豁免每年让州财政损失 $57M。</p>
+
+  <p>主持人们提出了一个深刻的观察：<strong>美国人其实什么都不想建。</strong>工厂、高铁、住房——每一项都可能遭到当地社区的抵制。数据中心可能只是排在最不受欢迎名单的底部。在 50 年前，不建核电站被后人认为是"人类最大的错误之一"——数据中心的反对会不会是历史的又一次重复？</p>
+</div>
+
+<div class="section">
+  <h2>4. Kevin O'Leary 的 $1000 亿数据中心：被妖魔化的正常项目？</h2>
+
+  <p>Shark Tank 的"Mr. Wonderful" Kevin O'Leary 正在推动一个在犹他州 Box Elder County 建设全球最大数据中心的计划——Stratos 项目。总投资 $1000 亿，占地 4 万英亩，满负荷将消耗 9 GW 电力。</p>
+
+  <p>社交媒体上最病毒式传播的攻击论点来自一位犹他州立大学的物理学教授：考虑到废热，这个项目的总热功率将达到 23 GW——相当于"每天在犹他州投下 23 颗原子弹"。</p>
+
+  <p>但这个类比在仔细审视下变得相当脆弱。德州的发电量目前已经是每天"230 颗原子弹"的水平——是犹他方案的 10 倍。任何发电都会有热损耗。用原子弹来类比电力消耗，更多是一种刻意制造恐慌的修辞手法。</p>
+
+  <p>Quick Thoughts 制作了一个详细的反驳视频，指出这个项目其实解决了很多人对数据中心的担忧：建在无人居住的沙漠谷地、自建电厂不占电网、购买现有农业水权而非抢夺居民用水。问题是：O'Leary 本人是完美的反派形象——在奥斯卡戴两只镶钻手表加交易卡挂坠。如果你想把数据中心建设描绘成对普通人不利的精英工程，Mr. Wonderful 就是最好的靶子。这与 Tim Cook 或 Eric Schmidt "低调奢华"的对比鲜明——过去 15 年 Google Cloud 和 AWS 建了大量数据中心，几乎没有任何公众反弹。</p>
+</div>
+
+<div class="section">
+  <h2>5. Ben Thompson 的"直接给钱"方案</h2>
+
+  <p>面对数据中心的公众反对，Stratechery 的 Ben Thompson 提出了一个出人意料的方案：不要 UBI（全民基本收入），而是直接给数据中心周边的居民发钱。</p>
+
+  <p>以 Wisconsin 的 DeForest 村为例：一个 1.6 GW 的数据中心预计每年产生约 $30 亿的运营收入。该村人口约 11,500 人。如果给每人每年发 $10,000，总计 $1.15 亿——仅占数据中心年收入的 3.8%。</p>
+
+  <blockquote>
+    "If that data center up the road weren't sold to my neighbors based on amorphous tax benefits that my local government may or may not spend appropriately, but rather were to result in a check in the mailbox every year, I suspect you could get a lot of people on board."
+    <span class="attr">— Ben Thompson（节目中引用）</span>
+  </blockquote>
+
+  <p>主持人们的反应很直接："Show me the money. Show me the money." 他们观察到，美国人对"钱交给政府然后造福于民"这条路径高度怀疑——$1 的税收不等于 $1 的公共服务。数据中心的传统承诺（模糊的税收贡献、创造就业）在每年一张 $10,000 支票面前显得毫无竞争力。</p>
+
+  <p>与之形成对比的是 Mark Cuban 的 token 税方案——在联邦层面对 AI 输出 token 征税。但这个思路遭到了 Palmer Luckey 的尖锐反击："这显然不是资本主义或竞争。这是一种专门针对某一类 AI 业务、人为支撑其他商业模式的税。" 主持人也指出：联邦税把钱从本地社区抽走，恰好是 Ben Thompson 方案的反面。</p>
+</div>
+
+<div class="section">
+  <h2>6. Redis 的 Agent 时代转型</h2>
+
+  <p>Rowan Trollope 从西班牙 Tenerife 连线，介绍了 Redis 的转型。这家以开源缓存闻名的公司，正在全力押注 Agent 时代的基础设施。</p>
+
+  <p>他的核心逻辑：一家有 1,000 名员工的公司，未来可能有 10 万到 100 万个 AI Agent。如果每个 Agent 都直接向后端数据库发起查询，成本会直接爆炸。Redis 的新产品 Iris 在中间充当上下文引擎——从底层数据库抽取数据，聚合成 Pydantic 模型，通过 MCP 和 CLI 交付给 Agent。这不只是一个性能问题，更是一个范式问题：给 Agent 的不是"文件柜的整体"，而是"精确的那份文件"。</p>
+
+  <p>但 Trollope 最震撼的洞见可能是关于软件工程的未来。他个人从 11 岁开始编程，现在重新回到代码前线，发现了一个根本性的变化：</p>
+
+  <blockquote>
+    "The process is all set up to basically handle a world where the coding takes a really long time. That's not the long pole anymore. There's all these other long poles like meetings and daily standups and processes that were all built around that fundamental assumption of coding is the long pole in the tent."
+    <span class="attr">— Rowan Trollope, Redis CEO</span>
+  </blockquote>
+
+  <p>当"写代码"不再是开发流程中最耗时的环节，"站会、流程会议、协调成本"变成了新的瓶颈。一个开发者带 10 个 Agent，更像是过去的开发经理——协调、表达需求、审美判断。整个软件开发生命周期需要被重新发明。</p>
+
+  <p>Redis 自己的实践证明了这个转变的幅度：一个需要 10 人 1 年的大型管理基础设施项目，实际用了 5 人 1 个月就完成了。但在核心 C 代码层面（创始人 Sanfilippo 发布的新数组数据类型，4,000 行），AI 的作用更多是提升质量——大量的测试、基准和周边基础设施一开始就到位了，而不只是加速编码。</p>
+</div>
+
+<div class="section">
+  <h2>7. Descartes 和芯片供给的窒息</h2>
+
+  <p>Dean Leitersdorf 带着 Descartes 的新进展回归。公司同时维持三条产品线：Lucy（实时视频世界模型，面向直播和电商），Oasis（物理 AI 世界模型，面向机器人和自动驾驶），以及 DOS 2.0（统一推理引擎）。</p>
+
+  <p>DOS 2.0 的性能数据令人印象深刻：500+ tok/s（行业水平的 10 倍以上），首次实现全高清实时视频渲染（最高 100fps），并且是唯一同时支持 NVIDIA GPU、Google TPU 和 Amazon Trainium 的推理栈——团队直接为这三种芯片写汇编代码。</p>
+
+  <p>但 DOS 2.0 从原计划的 8 月发布提前到 5 月，背后是一个残酷的行业现实：</p>
+
+  <blockquote>
+    "There's no capacity left basically till 2028. Getting more performance out of chips is the only way to actually grow your revenue and to grow your AI adoption."
+    <span class="attr">— Dean Leitersdorf, Descartes</span>
+  </blockquote>
+
+  <p>芯片供给已经被锁死到 2028 年。对于任何 AI 公司来说，从现有芯片中榨取更多性能是唯一的增长路径。优化不再只是成本优势——它是生存。</p>
+
+  <p>Dean 分享了他作为 AI CEO 的第一条规则："当你的团队给你一个截止时间，问他们'为什么不是 10 倍短'。"这不是压迫，而是一种认识论上的挑战——在 AI 每周都在变的当下，传统的项目管理节奏已经过时了。</p>
+
+  <p>他还指出了一个行业的结构性问题：模型层和硬件层之间存在严重的认知断层。做模型的人很难理解基础设施上能做什么，而做硬件的人也跟不上模型需求的每周变化。Descartes 的解法是跨层整合——从 AI 模型直接到底层汇编——这让他们能在工作负载快速变化时迅速调整。</p>
+</div>
+
+<div class="section">
+  <h2>8. Shein $1 亿收购 Everlane：DTC 的墓碑？</h2>
+
+  <p>Everlane 曾是 DTC（直接面向消费者）运动的标杆。2011 年成立，以"激进的透明度"出名——告诉消费者每件衣服的真实成本。从 Kleiner Perkins、Khosla Ventures 等顶级风投融资 $1.45 亿。2020 年收入达 $2 亿。然后是下滑：当前收入降至 $1.7 亿，负债 $9,000 万，最终以仅 $1 亿的价格卖给了快时尚巨头 Shein。</p>
+
+  <p>主持人的分析切中要害。VC 资本与服装品牌在本质上是冲突的：</p>
+
+  <blockquote>
+    "Venture is at odds with building a super durable apparel brand simply because there's no network effects at all. Especially if your customer base is excited about newness."
+    <span class="attr">— TBPN 主持人</span>
+  </blockquote>
+
+  <p>VC 需要的是年复一年的最大化增长和某种护城河。但服装品牌天然具有起伏不定的增长曲线——消费者永远在追逐"新"品牌。历史上最强的服装品牌大多是家族控股，可以在收入波动的年份从容调整，而不是被迫永远增长。</p>
+
+  <p>Allbirds（可持续鞋类品牌）经历了类似的命运。消费者对可持续性的关注随时间下降——道德消费也许能支持一个不错的生意，但支撑不起 VC 规模的退出。例外是 Groon，它以 $12 亿卖出，核心原因是它可以进入 Target、Walmart 等所有主流零售渠道。</p>
+
+  <p>Everlane 的结局提出了一个更深的问题：以价值观为核心卖点的品牌，在 VC 的压力下，究竟能否长期存活？还是它们最终都会被快时尚巨头吞噬？</p>
+</div>
+
+<div class="section">
+  <h2>9. 乳清蛋白短缺：需求的胃口永远比供应快</h2>
+
+  <p>节目中一个不太严肃但极富洞察力的插曲：乳清蛋白的全球短缺。食品级乳清蛋白粉批发价自 1 月上涨超过 50%，创历史新高。零售端，一罐 2 磅的 Optimum Nutrition 乳清蛋白从 $40 涨到了 $54。</p>
+
+  <p>主持人们在 TBPN 演播室大声朗读了《大西洋月刊》关于蛋白短缺的长文，并将其与 AI 算力瓶颈做了戏谑但准确的类比："消费者的胃口变化速度远超基础设施的建设速度。" 乳清的加工产能建设需要 3-5 年——如果"蛋白最大化"这个词在 Reddit 出现时就开始投资建厂，现在还没投产。同样的情况适用于 GPU 和数据中心。当需求追上来的时候，瓶颈已经锁死了。</p>
+</div>
+
+<div class="section">
+  <h2>10. Joanna Stern：用一年时间活在 AI 里</h2>
+
+  <p>Joanna Stern 带着她的新书 <em>I Am Not a Robot</em> 亲临 TBPN 演播室。离开《华尔街日报》后，她开始建立自己的媒体业务（"The New Things"），拥抱她自嘲的"商业主"身份。</p>
+
+  <p>这本书的出发点是一个简单的想法：2025 年，她让自己的生活尽可能多地由 AI 驱动——从生成式 AI 到自动驾驶，从医疗 AI 到人形机器人，从 AI 治疗师到 AI 男友。她的目标不是推销或恐慌，而是向普通人解释：这些科技高管在说的到底是什么？</p>
+
+  <blockquote>
+    "I guess I'm skeptical, but I'm thinking more we have all of these tech executives out there — AI is going to change everything, it's going to change the way we eat and educate ourselves and healthcare and we're going to live forever, all of these bold promises that I sort of wanted to explain to the normal person: what are they talking about? How is life going to be different, better or worse with AI?"
+    <span class="attr">— Joanna Stern</span>
+  </blockquote>
+
+  <p>她的发现是微妙的。关于放射科医生被取代的预测（Geoffrey Hinton 多年来的经典论断），Stern 非常明确：那根本不会发生。但 AI 确实在后台发挥了作用——女性做乳腺 X 光时，AI 可能正在辅助阅读，而她们完全不知情。这种"好"的一面默默无闻，而 AI slop 和虚假新闻则占据了所有头条。</p>
+
+  <p>关于 AI 陪伴，Stern 旗帜鲜明：请不要爱上你的聊天机器人。她在书中记录了自己使用 AI 男友应用和 AI 治疗师的实验，最终的结论是保持清醒的边界——尤其是对于儿童。她主张直接禁止面向儿童的 AI 伴侣聊天机器人和玩具。OpenAI 已经因为青少年与聊天机器人交流心理问题而反复陷入麻烦。这不是技术问题，而是政策意志的问题。</p>
+
+  <p>关于就业，Stern 从一个"商业主"的视角给出了务实的建议：不要海投 100 份简历。花一周时间研究一家公司，真正理解它的业务和使命，用 AI 工具展示你能做到什么——"我做这个、这个、和这个"。任何做了一点点额外事情的人，就已经进入了前 1% 的申请者行列。</p>
+
+  <p>关于未来，她看到了一条从桌面 PC → 智能手机 → 可穿戴设备 + 环境计算的演进路径。重要的是：<strong>没有任何设备会被替代。</strong>我们仍然带着笔记本和手机，然后再加上可穿戴设备。AI 手环（如被 Amazon 收购的 Bee 和被 Meta 收购的 Limitless）展示了"持久录音"的可能性——当你说了要做某事，它记录下来并每天提醒你。下一步可能是让 AI 直接预约水管工。但这需要解决隐私问题和硬件可用性问题。Humane Pin 的失败证明了："当硬件挡在体验前面时，整个产品就完了。"</p>
+</div>
+
+<div class="quotes-section">
+  <h2>核心金句</h2>
+  <p style="color:#666;font-size:14px;margin-bottom:16px;">本期对谈中最值得记住的几句：</p>
+
+  <div class="quote-item card-blue">
+    "Jury unanimously rules that Musk's claims are dismissed on the timeliness issue. He filed the lawsuit too late."
+    <span class="q-attr">— Max Zaff / Wired，OpenAI 诉 Musk 案裁决</span>
+  </div>
+
+  <div class="quote-item card-green">
+    "Seven in 10 Americans oppose constructing data centers for artificial intelligence in their local areas including nearly half, 48%, who are strongly opposed."
+    <span class="q-attr">— 民意调查，数据中心的社会阻力</span>
+  </div>
+
+  <div class="quote-item card-yellow">
+    "The process is all set up to basically handle a world where the coding takes a really long time. That's not the long pole anymore. There's all these other long poles like meetings and daily standups."
+    <span class="q-attr">— Rowan Trollope, Redis CEO</span>
+  </div>
+
+  <div class="quote-item card-red">
+    "There's no capacity left basically till 2028. Getting more performance out of chips is the only way to actually grow your revenue and to grow your AI adoption."
+    <span class="q-attr">— Dean Leitersdorf, Descartes</span>
+  </div>
+
+  <div class="quote-item card-purple">
+    "A developer with 10 agents is more like a development manager of old. They coordinate, they express requirements in the right way, they have taste."
+    <span class="q-attr">— Rowan Trollope</span>
+  </div>
+
+  <div class="quote-item card-orange">
+    "Work that we would usually do with people with masters or PhDs in finance over the course of weeks or months is being done by AI agents over the course of hours or days."
+    <span class="q-attr">— Ken Griffin, CEO of Citadel（节目中引用）</span>
+  </div>
+</div>
+
+<footer>
+  <p>来源：<a href="https://share.transistor.fm/s/d6d0bc1f">TBPN 完整节目</a> · 2026-05-18 · 时长 2h57m</p>
+  <p style="margin-top:8px;">由 PodDeck 生成</p>
+</footer>
+
+</article>
+</body>
+</html>

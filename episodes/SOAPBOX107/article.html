@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Where does AI fit into cloud security? — Tony De La Fuente · PodDeck</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 0 16px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 0 64px;
+  }
+  header { margin-bottom: 48px; }
+  header h1 {
+    font-size: 28px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 24px;
+  }
+  header .meta span { white-space: nowrap; }
+  .overview { margin-bottom: 48px; }
+  .overview h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #222;
+  }
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .topic-card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .topic-card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .tc-blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .tc-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .tc-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .tc-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .tc-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .tc-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+
+  section { margin-bottom: 40px; }
+  section h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #222;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  section p { margin-bottom: 14px; }
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #3b82f6;
+    background: #eff6ff;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #1e3a5f;
+    line-height: 1.7;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #64748b;
+  }
+  .highlight-box {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .hb-blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .hb-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .hb-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .hb-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .hb-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .hb-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .quotes-block {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .quotes-block blockquote {
+    margin: 0;
+    border-radius: 4px 8px 8px 4px;
+  }
+  .paraphrase {
+    font-size: 14px;
+    color: #6b7280;
+    background: #f9fafb;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 8px 0;
+    display: inline-block;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #9ca3af;
+  }
+  footer a { color: #6b7280; }
+  @media (max-width: 640px) {
+    article { padding: 24px 0 48px; }
+    header h1 { font-size: 22px; }
+    .topic-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Soap Box: Where does AI fit into cloud security?</h1>
+  <div class="meta">
+    <span>嘉宾: Tony De La Fuente</span>
+    <span>Prowler 创始人</span>
+    <span>Risky Business · 2026 年 5 月</span>
+    <span>~34 分钟</span>
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期对谈值得关注</h2>
+  <div class="topic-grid">
+
+    <div class="topic-card tc-blue">
+      <strong>AI 生成 100% 代码</strong>
+      一个 13,000+ GitHub Star 的开源项目，所有提交现在都是 AI 生成的 — 这对开源软件的未来意味着什么？
+    </div>
+
+    <div class="topic-card tc-green">
+      <strong>SaaS 末日是假象</strong>
+      "Reports of the death of SaaS have been greatly overstated" — 为什么买 SaaS 仍然比 vibe-code 自己的工具更明智？
+    </div>
+
+    <div class="topic-card tc-orange">
+      <strong>Agent 需要工具</strong>
+      AI agent 不应该拿着 API key 自己去"探索"云安全 — 它们需要确定性的专业工具来执行任务。
+    </div>
+
+    <div class="topic-card tc-red">
+      <strong>Frankenstein 陷阱</strong>
+      Vibe-code 的软件会成长为不可维护的怪物 — 这跟 20 年前开源引发的 build-vs-buy 争论如出一辙。
+    </div>
+
+    <div class="topic-card tc-purple">
+      <strong>Infinity Script Kitties</strong>
+      AI 让每个人都能变成攻击者 — "猴子拿到了机关枪"。这让基础安全控制反而成了最抢手的投资。
+    </div>
+
+    <div class="topic-card tc-yellow">
+      <strong>Agentic Cloud Defender</strong>
+      Prowler 的愿景：不仅是人类看 dashboard，更是 AI agent 基于确定性数据做出自动化的检测与修复闭环。
+    </div>
+
+  </div>
+</div>
+
+<section>
+  <h3>从脚本到 13K Star 的开源传奇</h3>
+  <p>
+    Prowler 的故事始于一个经典的开源场景：Tony De La Fuente 需要为一批 AWS 账号做安全检测，于是他写了一些脚本。用主持人 Patrick Gray 的话说，是 "basically a bunch of scripts in a trench coat" — 一堆披着风衣的脚本。这些脚本逐渐成长，开源后社区迅速壮大，如今 Prowler 已经是一个拥有 13,000+ GitHub Stars 的云端安全平台，覆盖了从 AWS 到 Azure、GCP、Kubernetes、OpenStack，再到 GitHub、M365、Google Workspace、Vercel、Cloudflare 等几乎所有主流云和 SaaS 服务。
+  </p>
+</section>
+
+<section>
+  <h3>100% 的代码由 AI 生成</h3>
+  <p>
+    当 Patrick 问起 AI 对 Prowler 的影响时，Tony 的回答直接而坦然：
+  </p>
+  <blockquote>
+    "Pretty much, I would say one hundred percent of the code is generated by AI now."
+    <span class="attr">— Tony De La Fuente</span>
+  </blockquote>
+  <p>
+    这个数字听起来惊人，但 Tony 并不认为这是一件坏事。关键在于 guardrails — 测试、linter、安全检查、代码审查、QA 流程。Prowler 有完整的 dev → staging → production 分阶段发布流程，AI 生成的代码需要通过所有这些关卡才能上线。
+  </p>
+  <p>
+    更重要的是，AI 正在加速社区的贡献。"the community is adding more and more controls into Prowler" — AI 降低了贡献门槛，让社区能够更快地为 Prowler 添加新的安全检测规则。但 Tony 强调，Prowler 构建的始终是<strong>确定性 controls</strong>，不是让 AI 自己去判断云配置的对错。
+  </p>
+</section>
+
+<section>
+  <h3>确定性基础 + AI 上下文：一个 pinch of AI</h3>
+  <p>
+    这期对谈的核心洞见之一是 Tony 对 "AI 应该扮演什么角色" 的清晰定位。他不是 AI 的反对者，而是明确区分了 AI 该做什么和不该做什么。
+  </p>
+  <blockquote>
+    "So it's the deterministic part with you know a pinch of AI. Instead of AI, go and see what's going on, right? Which is yeah, and hope for the best."
+    <span class="attr">— Tony De La Fuente</span>
+  </blockquote>
+  <p>
+    云配置的对错本质上是一个确定性问题 — 调用 API，检查返回值，判断是否符合预期。S3 bucket 是否公开？如果是公开的，是因为业务必须公开还是配置错误？里面有没有 PII？这些都是可以确定判断的。AI 的价值在于关联多个 findings、发现攻击路径、用 graph database 连接信息形成全景图 — 但这必须建立在确定性的 ground truth 之上。
+  </p>
+  <p>
+    Tony 把 Prowler Hub（他们的 registry）称为 "a huge prompt for AI to know what to do in the cloud, in any cloud" — 一个巨大的、告诉 AI 在各种云中该怎么做的提示词。Prowler Studio 则是搭建在 Claude Code 上的开源工具，让开发者可以基于这个确定性数据库自动创建检测和修复方案。
+  </p>
+</section>
+
+<section>
+  <h3>SaaSpocalypse：被严重夸大的死亡预告</h3>
+  <p>
+    过去一年，AI 的崛起引发了所谓的 "SaaSpocalypse" — 市场一度担心 AI 会取代 SaaS 软件，SaaS 公司股价集体下跌。但 Patrick Gray 不仅没有恐慌，反而逆势操作：
+  </p>
+  <blockquote>
+    "I actually bought some shares in SaaS companies after the SaaSpocalypse because of exactly what you are saying, which is everybody's like, 'Oh my god, I can be my own software company'"
+    <span class="attr">— Patrick Gray</span>
+  </blockquote>
+  <p>
+    他的逻辑很简单：SaaS 公司同样在利用 AI 加速开发，而且规模更大。个人或小团队用 AI vibe-code 出来的东西，充其量只是 SaaS 产品在使用 AI 之前的糟糕近似。而当涉及到 Burp Suite、Prowler 这类硬核专业工具时，"good luck trying to get an LLM to do that" — 你更应该让 AI agent 去<strong>使用</strong>这些工具，而不是替代它们。
+  </p>
+  <blockquote>
+    "Reports of the death of SaaS, reports of the death of IT tooling have been greatly overstated."
+    <span class="attr">— Patrick Gray，化用马克·吐温的著名句式</span>
+  </blockquote>
+</section>
+
+<section>
+  <h3>Build vs. Buy：速度变了，逻辑没变</h3>
+  <p>
+    AI 确实改变了 build-vs-buy 的算盘。Tony 承认：
+  </p>
+  <blockquote>
+    "now you can build in a week what you could build like ten years ago in five months"
+    <span class="attr">— Tony De La Fuente</span>
+  </blockquote>
+  <p>
+    这让越来越多的企业开始自问："为什么我要为 SaaS 付费，如果可以在内部用 AI 搭一个？" 但 Tony 指出，这个风险对开源项目来说并不新鲜 — 十年前开源软件让人们可以免费使用 MySQL 而不用买 Oracle，同样的争论早就发生过。
+  </p>
+  <p>
+    Patrick 则点出了 SaaS 真正的价值所在：
+  </p>
+  <blockquote>
+    "What you're really paying for is the expertise, and that's not changing."
+    <span class="attr">— Patrick Gray</span>
+  </blockquote>
+  <p>
+    SaaS 的核心是 "as a service" 中的服务 — 持续的更新、维护、和专业知识。软件的交付方式在改变，但对专业服务的需求不会消失。正如 Patrick 所说，你不想让每个企业都变成软件公司 — "that just seems insane"。
+  </p>
+</section>
+
+<section>
+  <h3>Frankenstein 陷阱：创建容易，维护难</h3>
+  <p>
+    Tony 提出了一个有趣的"恐怖故事"：企业用 AI vibe-code 出一个工具，一开始很好用，然后需求不断增长，代码越堆越多，最终变成一个不可维护的怪物。最致命的是：
+  </p>
+  <blockquote>
+    "when those very well done, bite coded applications to solve a problem, are becoming a monster, are becoming a Frankenstein, and the two guys that were building that they decide to leave the company."
+    <span class="attr">— Tony De La Fuente</span>
+  </blockquote>
+  <p>
+    他把这个场景和二十年前的开源历史做了对比。当年很多人说"我为什么要买 Oracle？我免费有 MySQL" — 然后有一天发现自己有一个 3TB 的 MySQL 数据库需要优化，却找不到人来做。Tony 认为 "something similar can happen or is probably going to happen with AI and bi coding monsters"。
+  </p>
+  <p>
+    这也是他并不担心竞品用 Prowler 的开源代码"vibe-code"出竞争产品的原因。拥有一个成功的项目和活跃的社区本身就是最强的护城河 — 重复造轮子没有意义，尤其是当已有工具和社区已经存在时。Tony 把别人基于 Prowler 构建东西看作是 "an opportunity"，而不是威胁。
+  </p>
+</section>
+
+<section>
+  <h3>为什么不能让 LLM 直接管理云安全</h3>
+  <p>
+    Patrick 用一个简单的场景说明了问题：
+  </p>
+  <blockquote>
+    "You can go ask a model, hey, you know, here's an API key, go secure my cloud infrastructure. And I think we know that's going to end really badly."
+    <span class="attr">— Patrick Gray</span>
+  </blockquote>
+  <p>
+    Tony 补充了更深层的技术原因：云是一个 "life organism" — 不是静态的 Terraform 文件。云厂商不断添加新功能、改变 API 端点、增加新区域。Terraform 扫描是静态分析，任何 IDE 都能做，但云的实际运行状态不等于 IaC 文件中的声明。如果你试图让 LLM 直接管理云安全，你实际上是在给它一个 spec，而这个 spec 本身就是软件的第一版需求文档 — "it's going to take a lot of time, it's going to be costly, and it's going to be very random"。
+  </p>
+</section>
+
+<section>
+  <h3>Agent 需要工具，不是裸 API</h3>
+  <p>
+    两人达成的共识是：AI agent 不应该直接操作云 API，而应该通过专业工具来工作。Tony 分享了 Prowler 的实践：通过 MCP（Model Context Protocol）将 Prowler 连接到 Claude Code、Windsurf、Copilot 等 AI IDE 中，让 agent 能够调用 Prowler 的扫描、修复、和报告能力。
+  </p>
+  <p>
+    Patrick 用 Burp Suite 做了一个生动的类比：你听说过 Claude 被用来做 offensive security，但"what are you going to give it netcat and curl and tell it to go do a pen test? Like, it's not going to work. It needs to use tools." 专业工具把多年的安全知识编码成了确定性的能力，这正是 agent 需要的。
+  </p>
+</section>
+
+<section>
+  <h3>Three Sources of Truth：Agentic Cloud Defender 的架构</h3>
+  <p>
+    Tony 阐述了 Prowler 作为 "Agentic Cloud Defender" 的愿景。这个愿景建立在三个确定性来源之上：
+  </p>
+  <p>
+    <strong>第一，Detection Registry</strong> — 知道什么是对、什么是错。例如："if S3 bucket is open, raise a flag. If it's open because it has to be, no worries. If it's open with PII, big red flag." 这些判断规则是确定的，不依赖 AI 的猜测。
+  </p>
+  <p>
+    <strong>第二，Remediation Guidance</strong> — 知道了对错之后，该怎么修复？修复方案需要被明确告知，可以加 "a pinch of AI" 来优化表述，但核心逻辑必须是确定的。
+  </p>
+  <p>
+    <strong>第三，Compliance Mapping</strong> — 这些检测和修复影响了哪些合规框架？AI 可能会做错合规映射，所以需要确定性的 mapping。
+  </p>
+  <p>
+    当 agent 知道了这三个来源的信息，它就可以在护栏内自主运行 — 触发扫描、执行修复、创建 PR、生成报告。Prowler 已经在 UI 中提供了 Lighthouse AI 对话界面，用户可以从讨论 findings 到让 AI 为 CISO 准备 Azure 基础设施的 compliance 演示。
+  </p>
+</section>
+
+<section>
+  <h3>Infinity Script Kitties：AI 时代的威胁图景</h3>
+  <p>
+    Patrick 用了一个令人印象深刻的比喻来描述 AI 时代的安全威胁：
+  </p>
+  <blockquote>
+    "Now is you've got to deal with infinity, infinity script kitties."
+    <span class="attr">— Patrick Gray</span>
+  </blockquote>
+  <p>
+    在 AI 的加持下，"Script kitties can vibe code O day now" — 以前需要深厚技能的攻击，现在任何人都能用 AI 尝试。"everybody is now a script kitty"，Patrick 把这个局面比作 "the picture of the person giving the monkey the machine gun" — 猴子拿到了机关枪，威力巨大但完全不可控。
+  </p>
+  <p>
+    但这里有一个讽刺的转折：正是因为 AI 让攻击民主化了，<strong>最基础、最老派的安全控制反而成了市场上最抢手的投资</strong>。Patrick 观察到一个现象：那些 "AI-first" 的初创公司喊着"agentic this and agentic that"，但真正拿到"crazy purchase orders"的，是那些提供 "belt and suspenders" 式基础安全控制的公司 — 比如 Prowler。
+  </p>
+  <p>
+    当安全团队面对 "infinity script kitties" 的威胁时，他们最优先做的事情不是购买最前沿的 AI 安全产品，而是确保自己有坚实的安全基础 — 检查云暴露面、确保基础配置正确。这恰恰是 Prowler 这类确定性工具的强项。
+  </p>
+</section>
+
+<section>
+  <h3>超越主流云：主权云与 SaaS 互联攻击面</h3>
+  <p>
+    Tony 分享了 Prowler 覆盖范围的持续扩展。现在 "pretty much any country is building their own cloud" — 从德国的 StackIt 到法国的 "No Donald Cloud"（Tony 的打趣说法），再到各国基于 OpenStack 的自建云。Prowler 必须支持所有这些平台，包括封闭的 VMware VCF 和纯粹的 Kubernetes。
+  </p>
+  <p>
+    另一个关键趋势是 SaaS 之间的互联性。Tony 指出，当开发者推送新应用时，认证链路跨越了 GitHub、M365、Vercel 等多个 SaaS — "all in the paths where those things all sort of rub together and meet" 正是攻击者最活跃的地方。这也是为什么 Prowler 在不断增加对 SaaS 平台的支持。
+  </p>
+</section>
+
+<section>
+  <h3>AI 是好事：它在把安全推向新高度</h3>
+  <p>
+    尽管讨论了很多 AI 带来的风险，Tony 对 AI 的整体态度是乐观的：
+  </p>
+  <blockquote>
+    "I think everything that is happening with AI and agents around AI and around tools is good because it's pushing us to the next level of hardening systems, which is what I like the most… Now that we know how a bad actor can do stuff, let's try to secure that, which is harder. It's more difficult."
+    <span class="attr">— Tony De La Fuente</span>
+  </blockquote>
+  <p>
+    AI 让攻击民主化了，但同时也暴露了安全体系的弱点 — 这倒逼整个行业升级防御。防御比攻击更难，但 Tony 恰恰更喜欢这个更难的部分。在这个新的威胁环境下，确定性的安全工具不仅没有过时，反而比以往任何时候都更有价值。
+  </p>
+</section>
+
+<section>
+  <h3>软件是商品，但维护不是</h3>
+  <p>
+    Tony 在访谈尾声表达了一个深刻的判断：
+  </p>
+  <blockquote>
+    "Software is a commodity; software can be created by anybody. But software is not only creation; software is about maintenance, evolving, knowing why you are building."
+    <span class="attr">— Tony De La Fuente</span>
+  </blockquote>
+  <p>
+    他用了一个尖锐的对比：你和我在一个周末可以用 AI 做出某种 XDR，"but this is not about an XDR. Not an XDR I'd want to run." 创建一个能跑的原型和构建一个你愿意依赖的安全产品之间，隔着一整个专业团队的持续维护、演进和对"为什么这么建"的深度理解。
+  </p>
+  <p>
+    这正是 Prowler 这类开源 + SaaS 模式的护城河：庞大的社区、活跃的贡献者、覆盖数十个平台的确定性 controls、持续更新的 registry — 这些都不是用 AI "vibe-code" 一周能复制的。
+  </p>
+</section>
+
+<section>
+  <h3>核心金句</h3>
+  <div class="quotes-block">
+
+    <blockquote style="border-left-color: #3b82f6; background: #eff6ff;">
+      "Pretty much, I would say one hundred percent of the code is generated by AI now."
+      <span class="attr">— Tony De La Fuente，谈 AI 在开源项目中的渗透率</span>
+    </blockquote>
+
+    <blockquote style="border-left-color: #22c55e; background: #f0fdf4;">
+      "So it's the deterministic part with you know a pinch of AI. Instead of AI, go and see what's going on, right? Which is yeah, and hope for the best."
+      <span class="attr">— Tony De La Fuente，确定性+AI 的核心理念</span>
+    </blockquote>
+
+    <blockquote style="border-left-color: #f97316; background: #fff7ed;">
+      "Reports of the death of SaaS, reports of the death of IT tooling have been greatly overstated."
+      <span class="attr">— Patrick Gray，化用马克·吐温的句式</span>
+    </blockquote>
+
+    <blockquote style="border-left-color: #ef4444; background: #fef2f2;">
+      "now you can build in a week what you could build like ten years ago in five months"
+      <span class="attr">— Tony De La Fuente，AI 对软件生产力的影响</span>
+    </blockquote>
+
+    <blockquote style="border-left-color: #a855f7; background: #faf5ff;">
+      "What you're really paying for is the expertise, and that's not changing."
+      <span class="attr">— Patrick Gray，SaaS 价值核心</span>
+    </blockquote>
+
+    <blockquote style="border-left-color: #eab308; background: #fefce8;">
+      "do you think a guy in a garage can create a CrowdStrike? You and I in a weekend can do some sort of XDR, but this is not about an XDR. Not an XDR I'd want to run."
+      <span class="attr">— Tony De La Fuente，创建 vs 维护的区别</span>
+    </blockquote>
+
+  </div>
+</section>
+
+<footer>
+  <p>来源: <a href="https://risky.biz/SOAPBOX107/">Risky Business · Soap Box: Where does AI fit into cloud security?</a></p>
+  <p style="margin-top: 8px;">Generated by PodDeck · 2026-05</p>
+</footer>
+
+</article>
+</body>
+</html>
