@@ -135,3 +135,29 @@ jobs:
     updated_at: 2026-05-20T03:14:25.084Z
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260520/10%3A58/50bb00ba-3c49-43e3-939b-e957992bfe63.json?Expires=1779332297&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=W2kXW5Z3B0fAaZTGsN3BhPnIEQY%3D&response-content-disposition=attachment%3Bfilename%3D50bb00ba-3c49-43e3-939b-e957992bfe63.json
     completed_at: 2026-05-20T03:14:25.084Z
+  - key: flirting-with-models:951e8505-07f6-4ffc-b791-72016569f819:20260223:https://episodes.captivate.fm/episode/951e8505-07f6-4ffc-b791-72016569f819.mp3
+    attempt_key: 2026-05-20T20:12:23.164Z
+    id: 951e8505-07f6-4ffc-b791-72016569f819
+    source: flirting-with-models
+    title: Richard Craib - Crowd-Sourced Alpha with Numerai (S7E28)
+    audio_url: https://episodes.captivate.fm/episode/951e8505-07f6-4ffc-b791-72016569f819.mp3
+    task_id: 37f766c8-ca99-4bd7-b3b0-95235d8ffb32
+    submission_mode: url
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-20T20:12:23.164Z
+    updated_at: 2026-05-20T20:14:00.328Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260521/04%3A13/37f766c8-ca99-4bd7-b3b0-95235d8ffb32.json?Expires=1779394423&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=jRaspQdWdCCSKfrE%2BRJ1ApItls4%3D&response-content-disposition=attachment%3Bfilename%3D37f766c8-ca99-4bd7-b3b0-95235d8ffb32.json
+    completed_at: 2026-05-20T20:14:00.328Z
+  - key: acquired:82044eb3-e350-42c5-a799-2a2afc150e99:20260302:https://pscrb.fm/rss/p/media.transistor.fm/93e7bac7/9d4b12b6.mp3
+    attempt_key: 2026-05-20T20:12:25.248Z
+    id: 82044eb3-e350-42c5-a799-2a2afc150e99
+    source: acquired
+    title: Formula 1
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/93e7bac7/9d4b12b6.mp3
+    task_id: e4790f20-5d43-4b92-8305-846e5fa0863b
+    submission_mode: url
+    status: running
+    retries: 0
+    submitted_at: 2026-05-20T20:12:25.248Z
+    updated_at: 2026-05-20T20:14:04.210Z

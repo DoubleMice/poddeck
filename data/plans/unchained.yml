@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-05-20T06:54:39.136Z
+refreshed_at: 2026-05-20T20:12:16.549Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 129
-done: 0
-pending: 1
-needs_transcript: 127
+done: 1
+pending: 0
+needs_transcript: 126
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 2
 downloaded: 0
 episodes:
   - id: 844ab0ca-5329-11f1-b6ee-4bfa056cbbc9
@@ -77,8 +77,11 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-20T20:12:17.656Z
+    transcript_error: spawn ffmpeg ENOENT
   - id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
     title: Can Hyperliquid Come Onshore Without Killing What Makes It Special?
     duration: 2859
@@ -133,7 +136,7 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: af771003-14da-4e74-8601-5d9fe5a138a2,3b7dd766-07d9-432e-b550-bd2bd35d6f1e,28ae7f5e-c979-4c44-864e-2fe11422f3b8,50bb00ba-3c49-43e3-939b-e957992bfe63
@@ -5053,6 +5056,7 @@ episodes:
           
 
 
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5236,6 +5240,7 @@ episodes:
       Unchained:⁠⁠
 
         
+
 
 
         
@@ -6442,6 +6447,7 @@ episodes:
           
 
 
+
         
       Previous appearances on Unchained:
 
@@ -7373,6 +7379,7 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
 
 
         
@@ -8565,6 +8572,7 @@ episodes:
        
 
 
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -8958,6 +8966,7 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
+
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices

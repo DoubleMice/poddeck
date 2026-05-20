@@ -1,12 +1,12 @@
 source: acquired
-refreshed_at: 2026-05-20T06:54:39.211Z
+refreshed_at: 2026-05-20T20:12:16.630Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 5
-done: 0
-pending: 1
-needs_transcript: 4
-transcribing: 0
+done: 1
+pending: 0
+needs_transcript: 3
+transcribing: 1
 transcribe_failed: 0
 downloaded: 0
 episodes:
@@ -91,7 +91,7 @@ episodes:
       ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
       and is intended for informational and entertainment purposes only. You should do your own research and make your
       own independent decisions when considering any financial transactions.
-    status: pending
+    status: generated
     priority: 1
   - id: 82044eb3-e350-42c5-a799-2a2afc150e99
     title: Formula 1
@@ -185,8 +185,11 @@ episodes:
       ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
       and is intended for informational and entertainment purposes only. You should do your own research and make your
       own independent decisions when considering any financial transactions.
-    status: needs_transcript
+    status: transcribing
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-20T20:12:25.248Z
+    transcript_job_id: e4790f20-5d43-4b92-8305-846e5fa0863b
   - id: 772a1689-5d6a-4d66-8469-95b8eb41dfd3
     title: The NFL
     duration: 15438

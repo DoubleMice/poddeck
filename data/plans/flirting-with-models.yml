@@ -1,11 +1,11 @@
 source: flirting-with-models
-refreshed_at: 2026-05-20T06:54:39.217Z
+refreshed_at: 2026-05-20T20:12:16.637Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 5
 done: 0
-pending: 1
-needs_transcript: 4
+pending: 2
+needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -34,8 +34,12 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/951e8505-07f6-4ffc-b791-72016569f819.mp3
     image: https://artwork.captivate.fm/9962efb1-4374-43d5-9e74-ce38549c1710/S3-FlirtingWithModels-with-Richard-Craib.jpg
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-20T20:12:23.164Z
+    transcript_job_id: 37f766c8-ca99-4bd7-b3b0-95235d8ffb32
+    transcript_completed_at: 2026-05-20T20:14:00.328Z
   - id: da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94
     title: Ruslan Fakhrutdinov – Extended Exchange and Vault Tokenization (S7E27)
     duration: 3481

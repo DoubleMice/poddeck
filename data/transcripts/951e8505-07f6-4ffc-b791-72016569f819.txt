@@ -1,0 +1,585 @@
+Hey everyone, Corey here.
+Thanks for tuning into another episode of Flirting with Models.
+If you're enjoying the show, I'd greatly appreciate it if you'd take a moment to rate, review, and most importantly, share with a friend.
+Word of mouth is how this podcast grows.
+And if you'd like to learn more about Newfound's platform of return-stacked mutual funds, ETFs, and model portfolios, head over to returnstacks.
+Com.
+Now on with the show.
+All right, Richard, are you ready?
+Yeah, all right.
+Three, two, one, let's jam.
+Hello and welcome, everyone.
+I'm Corey Hoffstein, and this is "Flirting with Models," the podcast that pulls back the curtain to discover the human factor behind the quantitative strategy.
+Cory Hoffstein is the co-founder and chief investment officer of Newfound Research.
+Due to industry regulations, he will not discuss any of Newfound Research's funds on this podcast.
+All opinions expressed by podcast participants are solely their own opinion and do not reflect the opinion of Newfound Research.
+This podcast is for informational purposes only and should not be relied upon as a basis for investment decisions.
+Clients of Newfound Research may maintain positions and securities discussed in this podcast.
+For more information, visit thinknewfound.
+com.
+Today I'm speaking with Richard Kraj, the CEO and founder of Numerai.
+If you've heard of Numerai before and thought of it as an interesting experiment at the intersection of data science and crypto, it's worth updating that mental model.
+Over the last few years, Numerai has quietly grown from roughly 60 million in assets to over 600 million.
+JPMorgan has invested and secured 500 million of capacity, and Numerai recently raised a Series C at a 500 million valuation led by top university endowments.
+This is no longer a toy project.
+It is a real institutional scale market neutral hedge fund with a very unconventional alpha engine.
+In this conversation, we go deep into how Numerai actually works.
+Richard walks through the core insight behind Numerai's design: that crowdsourced alpha only works if incentives are aligned, not just participation.
+Simply opening up data and ranking models creates incentives to game the system, not to produce durable signals.
+That realization led to the introduction of the Numerai token.
+By forcing researchers to stake real capital behind their predictions, Numerai shifts from a leaderboard-driven experiment to a capital-weighted signal engine.
+Instead of rewarding activity, the system rewards conviction, accountability, and uniqueness, creating a self-filtering model that naturally reduces noise and discourages the behaviors that caused earlier crowdsourced platforms to fail.
+We also talk about portfolio construction and risk management, including how Numerai neutralizes common factor exposures, what went wrong during their 2023 drawdown, and how those lessons reshaped their approach to diversification and concentration.
+Finally, we look forward, covering the limits of crowdsourced modeling, the next frontier for Numerai's research ecosystem, and how Richard sees AI agents reshaping model development.
+Please enjoy my conversation with Richard Craib.
+Richard, welcome to the show.
+Excited to have you here.
+Been tracking your progress for a very long time, and so really excited to get the opportunity to talk to you not about the background of Numerai and where it all came from, but where you're going.
+I know there's lots of exciting stuff on the horizon, so thank you so much for joining me.
+Yeah, it is good to be here.
+Before we dive into the specifics of Numerai, maybe we can start with a bit of your background and you can tell us a little about your journey.
+What drew you towards math, machine learning, and ultimately this idea of building a hedge fund that is powered by crowdsourced models?
+I guess when I was eight years old, my dad gave me stock to track.
+I would watch the stocks move, and it's very seductive.
+There's something very strange about finance where you can see there's all this volatility, but somehow it's very hard to do well.
+So you see a stock goes up 20% in a single day on a good earnings announcement, but then you look, wait, who's the best investor in the world, and oh.
+Oh, their return is actually below twenty percent a year, Warren Buffett or something.
+So there is like this interesting thing I just started thinking about it as a kid early.
+I decided well I should try to learn about this.
+The trouble is so much that's written about finance is actually kind of a junk diet version of it.
+So you could watch CNBC all day, you could read the newspapers and things like that, but it's all kind of missing the point to me.
+Like that's all, in the.
+In the media realm, instead of the what's real, later on I realized when I came across Renethons that what's really going on is this is a mathematical problem, this is a machine learning problem.
+So that drove me towards studying mathematics and machine learning.
+I know you got a lot of your early start looking at things like Kaggle.
+You can explain what that is in a minute.
+And you had this inspiration from Rentech, but the state of machine learning early on in your career, call it pre two thousand ten, was very different than it looked today.
+It was, I think, the word you used in our pre-call was "quote grim."
+Maybe you can share a little about like what was the state of the art of machine learning back in the two thousands and I have my own view doing a computer science major back then.
+All the things we talked about is so different than we have today.
+What was missing and then maybe you can talk about Kaggle and what the broader data science community, how that's shaped and influenced how you thought about this problem.
+It did shift.
+2013, I think, was the DeepMind acquisition by Google.
+2011 was some of the computer vision breakthroughs where people started talking about maybe self-driving cars and things like that.
+So it all kind of happened there, I would say, the deep learning revolution during.
+During the same time, you had this website called Kaggle, which was launched, and it was all of these hobbyists who maybe had backgrounds in engineering or math or statistics coming together to build models on these problems that were put out.
+The field of competitive data science was born after twenty ten or so.
+And it really just spurred a whole bunch of growth in open source projects to help with data science, like scikit-learn and TensorFlow, and all of these types of things came out around there twenty fifteen sixteen as well.
+It started to become known that machine learning can solve so many of these problems.
+Often on Kaggle, the competition host would be surprised by how good the model.
+The models that were produced by the Kaggle data scientists were.
+It's a field often where you don't know what state of the art is or what even is the potential.
+So you're like, wow, I can't believe we can get this level of accuracy on this dataset.
+I thought, you know, we were limited to the performance of linear regression models or something.
+It became very popular, but even around this time.
+Of starting Numerai, which was twenty fifteen, twenty sixteen, there was a feeling that machine learning was still not really relevant for finance.
+I think Two Sigma put out a paper.
+It's ironic because they do a lot of machine learning now, but they put out a paper something like, "We don't think machine learning is going to be a big deal in finance," and you hear that a lot, even on maybe Quant Twitter.
+It's really about having clean data and then running a normal model and just being very careful about transaction costs or something.
+I don't think that's how people understand it today at all.
+I think it's evolved.
+For listeners who may be unfamiliar or less familiar, can you start maybe the rest of this conversation by giving us a really high level overview of what Numerai is and how it actually works and operates?
+The thinking was, well, if you could make a hedge fund where everybody in the world could access the data, well, then everybody in the world could build machine learning models on the data.
+So Numerai created this data set and we released it to the world and we said, all the competitive data scientists in the world, come and join Numerai, and if we combine all of your models together, that's going to be a state of the art alpha generation system.
+Because we just have all of the different techniques that are possible coming in and out of the Numerai system, so that's what it is.
+It's kind of the first open hedge fund.
+We wanted to be the first platform for AI to reach the market, and that's what we did.
+And so very early on, we got some of the top Kaggle grandmasters, the winner of the Netflix Prize, all these different heroes of the data science world.
+All joining Numerai to try to advance what we'd done.
+Now that data set that you provide to users is actively obfuscated.
+I'm curious at a high level, how did you come to the conclusion that sharing the raw financial data in and of itself with.
+With users was not viable, and I know often sharing raw data might be a terms of service issue with the data providers themselves.
+But this was an active modeling decision, and I'm curious how you came to that.
+Like, why is hiding what the data is valuable in the actual process of building these models for users?
+There are a number of reasons for that.
+Obfuscated data.
+It's interesting, actually.
+When I was first taking a class in machine learning, maybe around twenty twelve or something, there was a problem that the professor had assigned us, and all of the variables were just X one, X two, X three, X four, and I was like, "What is the data like?
+Tell us!"
+And he's like, "Well, I think it's something to do with sonar data," and.
+And that was it.
+That was all he told us.
+And so the idea that you don't need domain knowledge is sort of the point of learning.
+You learn from the data what matters.
+And so by giving you the data obfuscated, we do get around a lot of potential human biases.
+If you could see, oh, my model wants to go long Apple, but I'm worried that Apple is going to miss the AI wave or some kind of human story, then you're going to maybe alter your model.
+Away from the science of the data, we don't want people to do that.
+So that's one big gain we get by obfuscating the data.
+The other really important one though is we don't want people running off with our data and building their own hedge funds.
+That would be very inefficient.
+You'd much rather submit to us and then we can have the best possible model.
+And you can share in the rewards through staking, which we can get to, but that's the idea.
+It's like you want to have the data obfuscated anyway, and obfuscation doesn't ruin the signal.
+The value of each of the features often in quant you might z score a variable or rank normalize it or something, and so a lot of those transformations might be done anyway.
+For anyone who's got a computer science degree who's listening, they'll probably have likely done some work in their undergrad about anonymizing data sets, and it's a pretty non-trivial problem.
+And this obfuscation concept sounds obvious at face value, but seems incredibly challenging in practice to me.
+How do you balance destroying the identifiable economic structure in the data while preserving the statistical properties that ultimately matter to the predictive modeling you're trying to have your users engage in?
+Maybe this isn't a great answer because you have to know what PCA is, but one good example is something like PCA, where that really does change the underlying variables completely.
+The way PCA works is it's looking for the dimensions with the highest variance for each principal component, so you know that all the structure is still there, even though the data is very obfuscated.
+That's the kind of transformation we've done on the data, but we've done many different versions over the years.
+One of the key innovations that you had with Numerai.
+As we think about different platforms that have somewhat tried to achieve the same goals you have, and maybe we'll come back to that a little bit later, but was the introduction of the Numeraire token and the staking mechanism that went along with it, why did you feel that staking was necessary beyond just reward?
+Rewarding performance, right?
+I think, like with the Netflix Prize that you mentioned, it was like a million dollar prize to the winner.
+Why not just offer prizes versus this staking mechanism you introduced?
+And maybe in answering that, you can explain what that staking mechanism is and how it works.
+It really was that Numerai found a.
+Found a way to get a lot of talented data scientists in the beginning.
+It wasn't really working, and we were very disappointed.
+It was like, wait, we have like three hundred amazing data scientists here, but we can internally build a model that's better than the data scientists.
+It's catastrophic news for a company that's nine months old or something.
+I had actually invested early on in Ethereum and Ethereum had just launched and I thought we should do something with Ethereum.
+The trick was creating our own cryptocurrency in order to allow for staking.
+And what staking is, is it's skin in the game.
+It's the most like fundamental element of capitalism, you might say.
+Make someone have something to lose, not just to gain, and that has a very big impact on this.
+So what was happening is some data scientists might make one thousand accounts.
+And they would submit on all of them, and if they submit random noise, one of their models would do well.
+But if you force people to stake, there's no possibility of that type of attack because you'd have to choose which noise is the best, and then that's the one you'd stake on.
+So that ended up basically eliminating that kind of way of rigging Numerai.
+We did that a long time ago, back in like twenty sixteen, seventeen, and eighteen, and that was like a very large lift in the performance because it sort of meant well, you have to really have a lot of confidence in your model.
+And remember, the biggest problem in data science is overfitting, and the biggest criticism of quant and so on is you are just going to overfit the past.
+But when you stay, you're staking on your prospective performance, what's in the future, your live performance.
+So it makes you extremely cautious about overfitting because you know there's no reward for overfitting, for just doing well on a test set or a validation set.
+You've got to do well on the live set.
+Those things really pushed Numerai into a new place.
+It used to be kind of a free for all, and then it was like, oh boy, this is very difficult.
+And so we made what we think is the hardest data science competition.
+Can you walk us a little bit through how the actual staking mechanisms work, particularly with respect to the payouts?
+And I believe you use sort of residual correlations with neutrality constraints to determine the ultimate payouts that participants receive from their stake-weighted model.
+And with that discussion, I'm hoping maybe you can tie in a little bit of why you chose that particular design over others.
+Right, there's so many ways in which you could correlate the stake to payout depending on how the model participates with the rest of the system.
+How did you come upon this residual correlation model?
+We did have a number of what we call targets.
+What do we want the Numerai community to model?
+And in the early days, it was, well, let's take out some of the key factors out of the returns because if you leave those factors in, you'll just get factor bets being submitted, which are really risk bets.
+There's no reason to believe that a risk bet will be in the long run a good idea or significant alpha.
+There's no.
+So we just thought, well, what's our game?
+Are we trying to make the purest alpha you can?
+And so we don't mind neutralizing everything.
+We neutralize everything in say a risk model like a Barra risk model, but we go far beyond that too.
+That has the benefit of focusing the entire Numerai community.
+There's no reward for betting on momentum and then momentum goes up and you make money.
+There's zero reward for that.
+There's only reward for making the most high quality consistent alpha that is orthogonal to all risk factors.
+And that really shows over time in our performance.
+You can do attribution on our performance and you won't find those normal factors.
+Can you talk a little bit about how you bootstrapped the initial allocation of the Numerai token to users?
+Day zero, nobody has Numerai.
+They need Numerai to stake.
+How was it initially distributed or how was it acquired by those users to start participating in the platform?
+So this is all the way back in 2017 that we did this.
+So many of our users didn't even know what Ethereum was or what a crypto wallet was or anything.
+And we were like, well, you have this in your account, some new NMR coins.
+And they didn't really know what it was for some of them, but it ended up being that the decision we made was we didn't want to do what's known as an ICO, where you sell the token to a lot of investors.
+We wanted the NMR to be held by the Numerai users because its purpose is to stake on Numerai's tournaments, and so we decided that that was the best thing to do.
+So we gave about a million NMRs away.
+To our community, and over time, I think we only own three million NMRs.
+The company, the rest of them are kind of out in the wild, and there is eleven million total, so eight million out in the wild.
+And that was a really good decision, I think, because we wanted to have this token be used.
+And there are many, many crypto projects that didn't survive very well the past ten years.
+Even though that one point was very valuable, so we try to be more long-term and we're fine with that.
+In that staking methodology, part of this is having users stake with their convictions in their models and giving that economic feedback loop.
+But another part of this is a protection in a way against adversarial users.
+How does staking provide that protection to the system at large?
+How do you prevent someone from just.
+From just buying a large amount of Numerai, staking it, building a purposely bad model, and destroying your track record, you could do that.
+It's just that you would lose a lot more money than we would when you stake and you do badly.
+It happens very quickly.
+I mean, you could have if you have a bad six months of performance, you can lose your whole stake.
+There are some numerai users that go through these patches of just you know their performance erodes, but that's kind of natural.
+You could think about it as if you are running a multi-strategy fund.
+There is always some strategies that are struggling.
+We're already able to handle that.
+So if there is any adversarial uses, okay.
+Okay, sure.
+You can go and buy a whole bunch of our cryptocurrency and get it burned on Numerai, but the joke's on you.
+And so, I don't think anyone's doing that.
+And also, you might find it interesting to note that it's actually hard to make a model that's bad because that's the same as making a model that's good.
+It's actually quite hard to make a model with extremely consistent negative alpha.
+Yeah, just throw a minus sign in front of it, right?
+And all of a sudden, it's a great model.
+Exactly.
+We're talking.
+About this idea of the staking mechanism being a way to create economic skin in the game and maybe create more rational decision making among participants, particularly around the strength of their convictions, but it also strikes me that in a way you might inherit a lot of the same behavioral biases that go along with when people turn dollars into casino chips.
+All of a sudden, those casino chips don't carry the same weight as having a dollar.
+And when they're up, they start feeling like they're playing with house money.
+And when they're down, they might go on tilt and just be willing to gamble away the last of those casino chips because they're not really seen as being the same as dollars.
+Curious whether you see that when people start using numerai tokens instead of saying stake weighting with USDC or USDT, like a dollar stablecoin.
+There might be some of that, but I don't think it's such a big deal.
+The average good user has been on Numerai for five or seven years, so we're not talking about people who are like coming in to like try to guess on a few stocks or something.
+It's not like that at all.
+The whole problem is framed in this very scientific way.
+There is a lot of barriers to entry to even get started on Numerai.
+It's not a fun place to gamble.
+It's.
+Put it that way.
+If you think about it, by taking all of the factor returns out of the target, it's a very white noise kind of signal.
+You think about something like the growth factor has been on a tear for the last two years, and I am going to bet a lot on it.
+Well, that type of bet.
+Can't be done on NeurAI.
+There's none of that type of behavior.
+So I do think it's really a community of scientists.
+I would even push back on this idea of crowdsourcing, which you mentioned earlier.
+Would you describe open source as crowdsourcing?
+Like if you have a key package that's used in open source, you could because everybody could contribute, but.
+But actually, there's a core group, and it's 1% of the users that are extremely good.
+We don't really believe in the wisdom of crowds in some way.
+If I go on the street and I ask people for 100 stock tips, I don't actually think that will have alpha.
+So we're not doing that.
+We're just a scientific community that is building alpha in the strictest sense of the word.
+Now at the end of the day, people can't go to the local grocery store and use Numerai to buy groceries.
+They have to convert it back to fiat.
+And as we mentioned, Numerai is not a stablecoin, right?
+Its value in fiat fluctuates up and down.
+Curious how you think about supply and demand dynamics that drive the value of Numerai itself and how that fluctuation of Numerai's price over time, either going up too quickly or going down too quickly, impacts the.
+The actions of new users, old users, how they think about staking, how volatility in the price impacts their willingness to stake at any given time—those all seem like very important aspects of making a stable model marketplace.
+Yes, that's true.
+First of all, it's called NMR Numerair, so it's called the NMR token for Numerai.
+But the thing is, it's volatile, very volatile actually.
+It sort of trades like Bitcoin.
+For some new users joining, there's a feeling of, gosh, I have to buy this coin on Coinbase and take on the volatility.
+And even if my model's good, I might lose on just the volatility.
+But that hasn't been such a big deal for many of our users.
+Numerair has.
+Has been between like ten and twenty dollars for years.
+When it goes up, it's often for like some fashion reason in crypto.
+It hasn't dissuaded that many people.
+Also, when NMR started, they weren't stable coins at all.
+When we burn NMR.
+It's an operation on the blockchain that destroys the tokens, so you wouldn't want to burn stable coins.
+But actually, at NumeraCon, our recent conference, we announced for the first time that we're going to enable stablecoin staking on Numerai.
+This will be a way for new users to kind of get onboarded and start staking in this coin that they feel.
+Feel like it's much lower volatility than numerair, but I think in the long run that will be a sort of onboarding step.
+You won't really be able to make as much money staking the stable coin as you will staking NMR.
+Can you talk a little bit about we glossed over this sense, so I want to make sure we do cover it how?
+The reward system actually works from the staking.
+So someone builds a model.
+There's a new epoch of submissions.
+They stake a certain amount of Numerair.
+How does the payout system work?
+Yeah, so what you're uploading to Numerai is your signal, which.
+Which is kind of a CSV file with six thousand predictions.
+Those six thousand predictions are across the global equity universe, six thousand stocks.
+You don't know what the stocks are because it's obfuscated, but that's what you are submitting.
+And so what you are staking on is that this is going to be a good signal.
+It will have correlation with the subsequent twenty day residual returns of those stocks.
+So that's the first part, which is what we call core.
+Do you have correlation with this future prices?
+But the other one, which is actually more important, is do you have orthogonal alpha over and above the meta model?
+Numerai already has the meta model.
+Like it's very good.
+It's one of the best users on Numerai, often the best user.
+It's just the average of all the users.
+To be helpful to Numerai, you actually have to be additive to that.
+So you have to have orthogonal alpha to the alpha we already have.
+So think how hard that is.
+It's like we already have all this alpha, it's from all the people on Numerai, and you have to somehow be additive to that.
+And that's what we call MMC, meta model contribution.
+Are you additive to the system?
+By having MMC, that's the strongest way that your stake has a relationship to your performance.
+So your stake will grow if you predict the prices and if you have orthogonal alpha to add to Numerai.
+So both of those things are required.
+And so yeah, you might see, you know, after one month your stake is up five percent because you had some core and some MMC.
+Or if you had negative, it'll be down five percent, and some of your stake will get burned.
+So it's kind of simple once you get into it.
+How do you think that that floating reward system balances the number of models and participants and ultimately capital at risk within the system?
+Well, the main thing is to make sure great users who are adding alpha are earning a lot, and that bad users are.
+Quitting even if they can't add to Numerai, they can submit without staking and play for fun, but we don't want them staking if they don't believe in their prospective performance.
+We're trying to actually efficiently allocate human capital too.
+Like if you are bad at Numerai, we don't believe there is some reason.
+Reason for everybody in the world to learn about quant or something like that, we actually think it's a waste of talent.
+I personally believe there is actually way too much human capital in the finance industry.
+If we can give you a signal, yes, you are pretty good at data science, but you are not additive to what other people are doing, and you quit.
+That's great music to my ears.
+You decided your efforts in the economy should go elsewhere.
+In a world where there's so much kind of degenerate trading, really bad expression of your life, I think to just be frenetically looking at what to buy and so on.
+Coming to Numerai, I can give you the sense of, gosh, this is actually incredibly difficult to do properly.
+That collects the great talent that can do it, but also saves time of other people.
+Does Numerai have to maintain a certain price level for, or maybe better stated, market cap to?
+To have the incentives work properly, one of the things that sort of comes to mind here is: let's say you have someone who's incredibly value add to the ultimate unique alpha of the meta model, and a whole bunch of parties that are not the parties that are not see their stake burnt, the party that is sees their stake grow, but they ultimately affect.
+Effectively corner the market and there is no way for them to sell out without destroying the value of their own numerair.
+There is this interesting need of supply and demand.
+You need people who have to constantly coming into the game, the winners for them to cash out or actually see the true value of their numerair.
+Need a nice liquid market that they can sell into.
+So the balance here really matters.
+How do you think about that?
+It's very liquid.
+When I'm pitching this to allocators, they often ask about Numeraire.
+It has more liquidity than most stocks.
+It is very, very highly traded and on a lot of different venues.
+And one of the reasons is it's one of the first coins that was made on Ethereum.
+There's tens of thousands of holders and so on.
+So it actually is quite a liquid market, and then I think if you're good at Numerai, your earnings are so much higher than even if NMR fell 20, 30 or something while you were playing, your earnings per year can be hundreds of percent because we paying you based on how much you're pushing our track record to the maximum.
+All right, so we spent a lot of time talking about this staking system, but Numerai is not the first or only crowdsource hedge fund platform.
+And I know you know we're going to use crowdsource in air quotes here.
+Quantopian was another very well known platform that has come and gone.
+It did not succeed where Numerai has been successful.
+Why do you think Numerai survived where others didn't?
+Well, I would also actually say, you know, Millennium is a crowdsourced hedge fund, and they did succeed.
+There was something quite different about Quantopian.
+I think it was a little bit too early because it was pre-blockchain and pre-machine learning.
+And so the models you would build on Quantopian would be like these kind of hand-crafted rules.
+Like I am going to buy, I am going to go long tech overnight, and then I do this in Japan or whatever.
+Like you would be basically writing a hand-coded algorithm.
+Which is not even what is like meant by algorithm anymore.
+Everybody means like learning algorithm where you learn from the data.
+That was always numerize approaches like you go to the website, you download the data and you start modeling it however you want.
+Whereas Quantopian was can you hand code some rules in their Python interface without even seeing the data, run.
+Run some back tests and get confident, and you just can't.
+And then they didn't have staking; there was no skin in the game on Quantopian.
+And they even wrote a paper at one point that ninety nine of the community was overfitting.
+And I think Numerai might have.
+Had a community that was ninety nine percent overfitting.
+If we didn't solve overfitting with staking, those two things make it extremely different.
+And I actually don't think t here is that much overlap in former Quantopian users and Numerai users because Quantopian users were kind of quants; they were looking at things that a quant would look at.
+But on Numerai, the only thing you are looking at is an obfuscated two thousand dimensional.
+Data object and it's no idea what it is, so it's just a different class of engineer that would join Numerai.
+So you have all these Numerai players; they submit their models, their ranking of the six thousand anonymized stocks.
+You have them submitting that with some sort of stake, and then Numerai takes that and builds a stake-weighted meta model.
+And that to me is a non-trivial decision.
+That decision to take all those underlying rankings or bets or however you want to put it and actually just sort of linearly stake-weight them based on everyone's stake is one of many, many, many potential designs.
+One that it seems frankly.
+Frankly, simplistic relative to some of the other things you could do, like ranking them based on their marginal contribution or something like that.
+Little post hoc, but tracking users over time.
+How did you come on using a simple stake-weighted methodology?
+Yeah, many people have said, "Well, why don't you just use the best models?"
+But the best by what measure?
+Over the last twelve months, they were the best.
+Well, guess what?
+You know, sometimes those aren't going to be the best.
+In fact, they might be the worst in the subsequent twelve months.
+Stake weighting is clever because it's basically always prospective.
+It's always this group of people currently think they are going to have live performance.
+And MMC going forward, that's always better.
+And then you say, "Well, why don't you wait by MMC?"
+The stakes because people roll their stakes, they're constantly earning NMR into their stakes.
+It is weighted by MMC.
+The people with a million dollars of NMR who are staking won all of that NMR.
+They started with almost nothing and they won a million dollars worth of NMR on Numerai, so they're already in a position to be a big weight.
+Suppose that they decide to cut their stake in half or by 80%.
+Do you really want to not cut along with them?
+No, because they're saying something about the future.
+It is very robust and resilient and it's error correcting.
+If imagine the stakes are wrong and one guy is staking 10 times more than he should, well, in a few months his stake will burn and he'll be staking the exact right amount he should.
+That's the thinking with stake weighting and it's very hard to beat.
+We have tried.
+We didn't think it would be the easiest thing would be the one that worked, but it definitely beats everything else.
+Once you have this meta model, how do you think about portfolio construction?
+Specifically, how do you neutralize exposures to sectors and countries and currencies and common style factors while still harvesting the alpha within that meta model?
+So because all of the signals are trained on these neutralized targets, there is very little factor exposure that the meta model wants to take on.
+But there might be some.
+I mean, there's no guarantee that there'll be zero.
+Maybe.
+Maybe there's a 10% bet on momentum.
+Well, at Numerai internally, we have a team for risk, and we will neutralize the meta model to every single thing that we care to neutralize, which is loads of things, and that will put the portfolio in a place that maximizes the expression of the meta model, but subject to no risks that we don't want to take.
+You've been doing this for many years now.
+2023 was a standout year as a stress test to the system.
+It probably represented, and correct me if I'm wrong here, but I think it represented your deepest drawdown to date.
+Can you talk a little bit about that episode?
+In hindsight, what do you think caused it and what were the lessons learned?
+It's interesting because 2023, maybe some people remember it as actually being kind of a calm period in stocks.
+Things were going up, I think.
+Whereas the bigger stress tests we had were actually 2020, where we did very well, COVID.
+And then 2021 was a meme stock rally where we did very well.
+And then 2022 was a big crash in the market where we did very well.
+But 2023, something did happen where we did particularly badly.
+In the end, in 2023, I think we're down about 16% for the year.
+The volatility of the fund, I guess when you have a new fund, one of the challenges is, especially when you're doing something brand new like Numerai, in the beginning we started with low leverage and low volatility, maybe even two times leverage total, and then we crept up to six.
+With a higher volatility target, so in that year where we made sixteen percent negative return, our volatility was fifteen percent, so it wasn't that crazy.
+You are four years old; you can have one standard deviation drawdown by then, maybe, but it was still disappointing.
+The biggest lessons there were, at the time, I think we thought, well, we're just going to work very, very hard on making sure we have the best alphas.
+We're going to take big bets on the alpha and have high concentration.
+And so our portfolio at that time, it was sometimes as little as 600 stocks, which is quite small for a quant fund.
+And the position sizes were high.
+That can work.
+It worked for us in 2022 when we made much more than 15%.
+And it worked in other times, but it just basically made the strategy quite vulnerable to down years.
+And the trouble is with this business is even if you have like one down year every five or something, people are really looking for like holy grail investment product.
+And so they think if you have a down year, well then all your subsequent years are going to be down.
+Instead of saying, well, you've had one down year in four, so seventy-five percent of your years are going to be up.
+There is really quite a lot of "what have you done for me lately" in the industry, which is quite hard to.
+Grasp because it's not that rational, but it is a thing, and so this experience basically pushed us to be like, "Well, we can't be a good hedge fund; we have to be the best.
+We have to really, really get incredibly good at risk."
+And so we spent a lot of twenty twenty three building.
+Much more advanced risk systems internally and of the targets, and that led to our best year ever in twenty twenty four.
+It was a good lesson, and I learned a lot about all kinds of things, but mainly leveling up internally in risk, how important that is.
+Just an aside, if you look at the multi-strategy platform world, you might say it's all driven by the pods.
+Maybe it's not.
+Maybe it's actually driven by the risk team in the middle, or something.
+And that's a lesson you can always get in quant.
+Is it about the models?
+Was it about the data?
+Was it about the risk?
+And it's always be world-class at everything.
+Can you talk a little bit about what some of those risk system level ups were?
+I know in our pre-call you mentioned specifically methods and approaches to diversification enforcement that caused some issues not having those in place in 2023, as you mentioned, were sort of you were most concentrated, you know, have a lot more enforcement of diversification.
+Can you talk a little bit about that and maybe some other risk system enhancements that you've put in place?
+One of the interesting things is how badly a portfolio that is neutral to all of the bar factors can do.
+I'm sure many of your listeners are following some of the stress in quant at the moment where these otherwise very.
+Very knowledgeable and prestigious quant firms are doing incredibly badly, and a lot of that is reliance on the risk model that's commonly used, like a Barra style risk model.
+When Numerai had our down year of only down year, we were running completely neutral to all of the Barra factors.
+There was nothing kind of wrong with the system, and one of our investors actually asked us, "Please send me the portfolio.
+I just want to check that this."
+Is neutral and then he said back up completely.
+I can't believe you are doing so badly.
+So what is that?
+Well, it's crowding.
+Crowding it's like you are holding a bunch of stuff that everybody else holds, and that makes things more dangerous than it seems from a risk model.
+Your drawdown will be bigger than your volatility would suggest.
+What did Numerai do?
+Well, a lot of the stuff I was telling you about earlier, like MMC.
+Deciding to be really aggressive on MMC and be like, "Look, you might be correlated with the market, but we want MMC, which is uncorrelated from us."
+And if you incentivize thousands of data scientists to make a model that is anti-crowding, individual contributors are trying to be different, then you're going to actually do a lot better in times of market stress.
+That's what we've seen totally in the past two years.
+That was one of the biggest lessons.
+Upgrading MMC, being more less interested in growing the user base and more interested in making sure the individual alphas are very strong from each of the contributors.
+Running a fund live is very different than running a fund on paper, and it includes all sorts of things like transaction costs and capacity and fund governance and all those sorts of issues.
+What have you learned about bridging the gap between these theoretical paper strategies that are ranking stocks or providing these models on?
+Theoretical alpha versus taking that and turning it into real world implementation.
+Most naive example of my question would be someone could rank something on paper alpha, but the reality is that alpha is not capturable after t cost.
+How do you make sure that they're providing you alpha signals that are really truly implementable alpha signals?
+In the beginning of Numerai.
+I wasn't the best at this.
+Some of our alpha was, oh, well, that's on small caps or names that you can't short, and so on.
+But Numerai's tournament got very strict on all of that.
+So actually, in the past, for example, we had an eight thousand stock universe.
+And we took it down to six thousand.
+So why is that?
+Well, we got much better short availability data, much better liquidity data, and we realized that those bottom two thousand stocks we couldn't get a meaningful position in anyway, and so we took them out of the universe.
+So now when we take them out of the universe, none of the users are going to pick up on, oh, I can go long this tiny stock and make.
+And make money.
+Well, the model never gets to learn that when we take care of the universe, then the models will kind of take care of themselves.
+That's the type of thing we've done year after year, improving our targets to make them neutral to more things and more tradable alpha.
+It's amazing how good you can get at that.
+The details really matter, but you can make your alpha really transfer to the portfolio.
+You mentioned you recently hosted Numericon and you had some pretty exciting announcements there.
+One of which that I caught was the launch of a new MCP that enables agentic model management.
+And this will be for anyone who is playing with model agents.
+This is an exciting.
+Of the times development for those who maybe are not as at the vanguard of playing with the current state of LLMs and agentic models, this might not mean anything.
+It might sound like gibberish.
+So maybe we can start with a step back.
+What are you building?
+What are you providing?
+What's the new toolset unlock for model builders at Numerai?
+One of the criticisms of Numerai was maybe that, well, everybody knows the right model to use on a tabular data set.
+So maybe some of the older people would say, "Well, you just use linear regression, and you get a deterministic model, and you know the coefficients, and you can interpret the model, and you use that."
+Okay, but the other people would say, "Well, you just use an XGBoost or a LightGBM model because that's a very good model for tabular data."
+NeurAI said, "What if it's not like what if the best model is actually all of the models put together with state weighted meta model?
+The idea that there's always something better to do is always out there.
+So one of the things I found interesting when starting NeurAI is that many of the participants were working at what was called AutoML companies."
+So AutoML is you give us a data set and it can be kind of messy and stuff, and we will figure out automatically what to do, what's the best model for your particular data problem.
+And so you had these AutoML companies joining and actually using their AutoML systems, which is doing all the feature transformations and then doing XGBoost and all these different tricks, and they would actually not do as well as the people.
+Maybe the people were using AutoML plus something else, so it's always a kind of race.
+But what happened at NeurIPS is we decided there's kind of a new paradigm of AutoML that developed, and I would say it's in November of last year that this started to get interesting, which is can you make an agent do AutoML or really make an AI scientist that has access to numerized data.
+Understands different peculiarities of the data, understands how to do a walk forward cross validation, and if you could have the scaffolding set up for that, then you would really just get out of the way of AI.
+We see it as a gift from God that Anthropic is investing so much money into their models and OpenAI investing so much in their models and basically giving it to all of Numerai users for below cost.
+Every Numa user is now like a hundred IQ points higher, and they were already very high.
+Now, they can actually make agentic workflows that do every layer of their work for them, and then run ten thousand experiments in parallel.
+Who knows what could happen?
+So the release is actually probably more about this file we released called skills.
+md.
+Than it is about the MCP server, which is just to interact with the kind of API, but the skill that MD defines how Numerive would do research ourselves.
+So it's got everything we know about how to do good data science.
+The problem it solves is if you point, say, Claude or OpenAI at Numerise data right now.
+It will mess up somewhere.
+It won't realize that the data is actually time series or something.
+So it'll just pretend all the rows can be used interchangeably when actually there's a time dimension.
+And so there's all these little mistakes it'll make, but it's not because it's dumb.
+It's just because it doesn't know the problem very well.
+And we've encoded the problem into this skills MD file.
+So now you can kind of, with three lines of code, have an agent start attacking the problem and not make any mistakes.
+And so the one example we gave, the agent goes for about three days before completing its work.
+So you're really just doing nothing for three days and then out comes a model that's probably really strong on the leaderboard.
+It's really the future.
+It's like singularity moment for Numerai.
+We've set up Numerai to be for this moment, and the level of intelligence we're seeing coming in is amazing.
+That's really exciting stuff.
+You know, when I take a big step back and I think about Numerai, I think about sort of like there is five pillars, and I apologize if this is overly simplistic, but I sort of think of it as the data model development, distributed model development, where this agentic opportunity is a major step forward in the model development.
+Then you have the meta model.
+The risk management, and then finally the actual execution to speak nothing of actually the fund administration and all that I am going to sweep that aside.
+But these are sort of five big pillars, and we talked about advancements in the model development side with the adoption of AI agents.
+We've talked about the construction of the meta model and staking.
+We've talked about changes to risk management.
+We haven't talked about execution yet, but one of the big things we haven't talked about is data, and we sort of glossed over.
+Okay, there is some data and it's obfuscated.
+How do you think about data advancements as you move forward, incorporating new data and the limits of how much data is ultimately useful, or is more data now a potential as you unlock this sort of agentic process?
+Data is really, really important, and we've always just gone ahead and onboarded as much data as we could.
+But we also are a smaller team.
+We don't really want to be three hundred, four hundred people.
+So we're like twenty people.
+So.
+So a lot of what we did was build data onboarding automation.
+Think about like agents are onboarding our data.
+You get a trial with a data vendor, and then the AI figures out is this data actually additive.
+Internally, all of this is happening at Numerai as well with agentic coding.
+But one of the most exciting things is getting access to data on the internet.
+So one of the projects we have is called Numerai Predictive LLM, and it takes the kind of brain of an LLM, an open source LLM, and.
+And then it re-engineers the brain of it and says, you know, currently you can do things like write poetry and do math and so on.
+We just want to use your brain to predict stocks based on news.
+So input is news and the output is a prediction of where the stock's going in the future.
+And this predictive LLM, we can generate features that are completely new and orthogonal from internet-based text data.
+So that's a very exciting part of it as well, and that really shows you where we are.
+We are not Kaggle, for hedge funds or something like that.
+We are now like in a whole new phase of the company, where agents are coding the internal code, Numerai users are using agents.
+And then we are creating data from LLMs reading the whole internet, so it's getting to the point of like, "Wow, this is what I always hoped for," and that's why it's an exciting time at NeurAI.
+Want to talk a little bit about packaging here in our.
+Pre-call, we had a conversation where you were talking about the delivery mechanism with which investors can get access to Numerai.
+And historically, it's been in a long-short market-neutral, sector-neutral, industry-neutral, factor-neutral hedge fund, classic equity market-neutral hedge fund.
+One of the things you are currently thinking about is a portable alpha implementation.
+So, without maybe giving too much away, and I know there is obviously regulatory constraints around all this, how are you thinking about the vision of how Numerai evolves from here?
+At Numericon, we released a new fund called Numerai Singularity.
+And Numerai Singularity is just long global equities and long Numerai alpha at the same time, also known as return stacking.
+You might be familiar.
+But it really is a very, very good match.
+And one of the things I always find.
+Annoying and maybe this is dull, but people say, "Oh, you only had nine percent alpha last year.
+You lost to the S and P."
+And I am like, "No, no, no, no, no, no, no.
+All of that nine percent is beating the S and P.
+You just have to package it that way if you want it that way."
+We decided, let's make it on global equities.
+Just because our alpha is orthogonal to the world doesn't mean we don't believe in the world, the global equity market.
+That fund launched just a couple of days ago, so I am the only investor just to get started, but it is really exciting to finally have that out because I think there is a perception that if you are building a market neutral fund, you must be really negative on the market.
+But actually, the market portfolio is amazing.
+It's like my favorite thing.
+One of the things I don't like is that people call buying the S and P passive investing because it really hides the ball.
+In reality, it's actually you got five hundred.
+Of the world's best CEOs to actively manage your capital all day, every day, and by the way, they have like hundreds and hundreds of thousands of the top talent in the world working for them.
+So why do you think the market portfolio is boring?
+That's almost sci-fi level amazing.
+So I like the market portfolio, and it's a perfect thing to blend with Numerai.
+Because even if you look at the historical performance, it's like okay, when did Numerai do badly?
+Well, 2023 was our bad year.
+Okay, guess what?
+The market went up a lot that year.
+If you stack them, it makes for a much nicer, smoother return path and much lower drawdown.
+Well, congratulations on that launch.
+I'm certainly a proponent of portable alpha and return stacking, so it's exciting to hear that you got that out the door.
+I want to end this conversation with the same question I have asked my guests consistently across this season, and it's outside the realm of all the questions we've had here.
+And it is outside of work, outside of Numerai.
+What is something that you are incredibly passionate about today or even obsessed with?
+This could be an idea, it could be some sort of media show, it could be something you're reading, it could be something from history, or just an idea that's really grabbed a hold of you.
+What is something that you are obsessed with and passionate about today?
+One thing I've been thinking about a lot lately is time itself.
+Maybe it's from being an investor, but return—someone made 20%.
+It's like, well, it's return over time, and so the time thing is like what you're doing as well.
+Part of me is also surprised at how many of the things that I've imagined have come true.
+In 2015, thinking about Ethereum and AI, and then now I.
+I look at the president of the United States talking about Ethereum and AI, every day or something.
+It's peculiar, kind of flies in the face of like fooled by randomness or something.
+Where it's like, yeah, you had this perception that you were good at predicting the future, but maybe you were just lucky and you won't be able to do it again and so on and so.
+That feeling, I think, that time is sometimes I think everything has already happened.
+We are being pulled towards a future that can be known upfront.
+This is like the opposite of what a quant should say, but sometimes I do question that, and I think people do think that way.
+There's destiny thinking, like Elon Musk's destiny is to be successful, and then humankind is imagining that and then making it true.
+Hyperstition.
+And there's also like, well, you can imagine you're going to have a great night at the casino and you come home empty-handed.
+That's more often than not for me.
+Richard, this has been an absolute pleasure.
+Thank you so much for taking the time and walking me and the listeners through Numerize Design.
+I think there's so many interesting takeaways here for everyone who's running their own internal models to the major pod shops.
+I think there's a lot of really interesting things you're on the cutting edge of, so I really appreciate you taking the time to walk us through it.
+Yeah, thank you so much for having me.

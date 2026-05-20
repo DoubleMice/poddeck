@@ -1,0 +1,126 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "linear", "type": "rectangle",
+      "x": 40, "y": 40, "width": 150, "height": 100,
+      "angle": 0, "strokeColor": "#868e96", "backgroundColor": "#f1f3f5",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "linear-label", "type": "text",
+      "x": 55, "y": 60, "width": 120, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 18, "fontFamily": 1,
+      "text": "Linear TV\nNielsen Ratings\nPhone Calls",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Linear TV\nNielsen Ratings\nPhone Calls",
+      "lineHeight": 1.25, "baseline": 50
+    },
+    {
+      "id": "streaming", "type": "rectangle",
+      "x": 340, "y": 40, "width": 150, "height": 100,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "streaming-label", "type": "text",
+      "x": 355, "y": 60, "width": 120, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 18, "fontFamily": 1,
+      "text": "Streaming TV\nData-Driven\nDirect Integration",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Streaming TV\nData-Driven\nDirect Integration",
+      "lineHeight": 1.25, "baseline": 50
+    },
+    {
+      "id": "arrow",
+      "type": "arrow",
+      "x": 200, "y": 90, "width": 130, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 3, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0, 0], [130, 0]]
+    },
+    {
+      "id": "arrow-label", "type": "text",
+      "x": 230, "y": 65, "width": 70, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "shift", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "shift", "lineHeight": 1.25, "baseline": 14
+    },
+    {
+      "id": "tatari", "type": "rectangle",
+      "x": 160, "y": 190, "width": 200, "height": 70,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "tatari-label", "type": "text",
+      "x": 175, "y": 202, "width": 170, "height": 46,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 18, "fontFamily": 1,
+      "text": "Tatari\nAI Planning + Measurement",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Tatari\nAI Planning + Measurement",
+      "lineHeight": 1.25, "baseline": 36
+    },
+    {
+      "id": "outcome", "type": "rectangle",
+      "x": 130, "y": 300, "width": 260, "height": 60,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "#fff4e6",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "outcome-label", "type": "text",
+      "x": 145, "y": 312, "width": 230, "height": 36,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "$90B Market | Double Revenue\nSame Headcount via AI", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "$90B Market | Double Revenue\nSame Headcount via AI", "lineHeight": 1.25, "baseline": 28
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
