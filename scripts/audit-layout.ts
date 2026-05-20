@@ -100,7 +100,8 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
 
   if (png) {
     const pngDir = join(outDir, 'png')
-    const exportResult = await run('npx', [
+    const exportResult = await run('pnpm', [
+      'exec',
       'slidev',
       'export',
       '--format',
@@ -114,7 +115,8 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
     }
   }
 
-  const buildResult = await run('npx', [
+  const buildResult = await run('pnpm', [
+    'exec',
     'slidev',
     'build',
     '--base',

@@ -119,6 +119,9 @@ jobs:
       - name: Update lockfile for generated workspaces
         run: pnpm install --lockfile-only
 
+      - name: Link generated workspaces
+        run: pnpm install --no-frozen-lockfile
+
       - name: Commit generated content
         run: |
           git config user.name "github-actions[bot]"

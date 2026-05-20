@@ -429,7 +429,6 @@ async function ensureWorkspaceLinks(): Promise<boolean> {
       const result = await run('pnpm', [
         'install',
         '--no-frozen-lockfile',
-        '--ignore-scripts',
       ], { cwd: ROOT, reject: false })
       if (result.code === 0) return true
       log.err('  pnpm workspace install failed')
@@ -446,7 +445,8 @@ async function auditGeneratedLayout(id: string): Promise<boolean> {
   if (!installOk) return false
 
   log.raw(`  auditing layout for ${id}`)
-  const result = await run('npx', [
+  const result = await run('pnpm', [
+    'exec',
     'tsx',
     'scripts/audit-layout.ts',
     `--id=${id}`,

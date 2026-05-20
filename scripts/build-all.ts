@@ -35,15 +35,14 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
   log.info(`building ${id}`)
 
   // slidev build needs the base path for correct asset URLs in final bundle
-  const { code, stderr } = await run('npx', [
-    'slidev', 'build',
+  const { code, stderr } = await run('pnpm', [
+    'exec', 'slidev', 'build',
     '--base', base,
     '--out', 'dist',
   ], { cwd: dir, reject: false })
 
   if (code !== 0) {
-    log.err(`  ${id} build failed: ${stderr.slice(0, 200)}`)
-    return null
+    throw new Error(`${id} build failed: ${stderr.slice(0, 800)}`)
   }
   log.ok(`  ${id} built`)
   return join(dir, 'dist')
@@ -51,7 +50,7 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
 
 async function buildLanding(): Promise<string> {
   log.info('building landing')
-  const { code, stderr } = await run('npx', ['astro', 'build'], {
+  const { code, stderr } = await run('pnpm', ['exec', 'astro', 'build'], {
     cwd: LANDING_DIR,
     reject: false,
   })
@@ -92,6 +91,9 @@ async function main() {
   for (const ep of episodes) {
     const distPath = await buildEpisode(ep.id, ep.base)
     if (distPath) episodeDists.push({ id: ep.id, path: distPath })
+  }
+  if (episodeDists.length !== episodes.length) {
+    throw new Error(`only built ${episodeDists.length}/${episodes.length} generated episodes`)
   }
 
   // Build landing

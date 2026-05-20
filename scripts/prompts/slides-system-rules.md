@@ -157,6 +157,11 @@ base: /episodes/<id>/
 
 The `tags` field MUST only contain values from `tags.yml`. Do not invent tags.
 
+YAML safety for `core_ideas`:
+- If a list item contains `:` followed by a space, wrap the entire item in single quotes.
+- If a list item contains both a speaker label and a technical phrase with colons, wrap the entire item in single quotes.
+- Never write `- Speaker: claim` as an unquoted YAML list item.
+
 ## RULE 10 — Article HTML generation
 
 After slides.md and meta.yml are complete, generate a standalone HTML article at `episodes/<id>/article.html`.
