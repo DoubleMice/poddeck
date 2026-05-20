@@ -1,30 +1,15 @@
 source: flirting-with-models
-refreshed_at: 2026-05-19T19:53:41.497Z
+refreshed_at: 2026-05-20T06:54:39.217Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 6
-done: 1
+total_candidates: 5
+done: 0
 pending: 1
 needs_transcript: 4
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 1ad4a324-0c27-43fd-b451-b4394faf8e82
-    title: John Gu – Crypto Market Making & The Cold Start Problem (S7E30)
-    duration: 4182
-    published: Mon, 11 May 2026 00:00:00 -0400
-    published_sort: "20260511"
-    first_seen_at: 2026-05-19T08:55:24.857Z
-    url: http://www.flirtingwithmodels.com/
-    audio_url: https://episodes.captivate.fm/episode/1ad4a324-0c27-43fd-b451-b4394faf8e82.mp3
-    image: https://artwork.captivate.fm/1376ae2c-5ab4-42bf-a6f7-3e9ecaa3707e/S3-FlirtingWithModels-with-John-Gu-copy.jpg
-    status: generated
-    priority: 1
-    transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-19T19:53:43.720Z
-    transcript_job_id: be7c9639-3f74-4a2e-8a73-7c7147f87523
-    transcript_completed_at: 2026-05-19T19:55:18.685Z
   - id: cb1a41d7-b422-4e35-9218-a661d5a8cbf4
     title: "Faheem Osman – Commodity QIS: An Under-Appreciated Source of Systematic Returns? (S7E29)"
     duration: 4016
@@ -37,8 +22,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-20T01:35:37.838Z
     transcript_job_id: 0a37a9fb-3ab8-48a8-802a-53d2c109e3c3
+    transcript_submitted_at: 2026-05-20T01:35:37.838Z
     transcript_completed_at: 2026-05-20T01:37:38.880Z
   - id: 951e8505-07f6-4ffc-b791-72016569f819
     title: Richard Craib - Crowd-Sourced Alpha with Numerai (S7E28)

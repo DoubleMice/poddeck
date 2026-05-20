@@ -1,42 +1,44 @@
 source: risky-business
-refreshed_at: 2026-05-19T19:53:41.478Z
+refreshed_at: 2026-05-20T06:54:39.202Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 26
-done: 1
+done: 0
 pending: 0
-needs_transcript: 25
+needs_transcript: 26
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: SOAPBOX107
-    title: "Soap Box: Where does AI fit into cloud security?"
-    duration: 2017
-    published: Fri, 15 May 2026 14:55:09 +1000
-    published_sort: "20260515"
-    first_seen_at: 2026-05-19T19:53:41.478Z
-    url: https://risky.biz/SOAPBOX107/
-    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX107.mp3
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #838 -- GitHub investigates possible breach"
+    duration: 3769
+    published: Wed, 20 May 2026 15:22:48 +1000
+    published_sort: "20260520"
+    first_seen_at: 2026-05-19T08:55:24.848Z
+    url: https://risky.biz/RB838/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB838.mp3
     image: https://risky.biz/static/img/rb-feed-main.png
     summary: >-
-      In this sponsored soap box edition of the Risky Business podcast Patrick Gray chats with Toni de la Fuente, the
-      founder of Prowler.
+      On this week’s show Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news.
 
 
-      Prowler started off as a bunch of scripts in a trenchcoat, then became an open source cloud security tool, and
-      it’s now a venture-funded cloud security business. In this interview Toni talks us through how AI is changing the
-      game for him as an open source project owner, and as a vendor. In short, reports of the death of IT and security
-      tooling at the hands of frontier models have been greatly exaggerated.
+      They cover:
+
+        GitHub announced a possible breach
+        CISA leaks important creds, keys in public repo
+        Awful vulnerability in Bitlocker renders it useless without a PIN
+        So. Many. Patches.
+        Polish Government urges officials to ditch Signal for mSzyfr
+        Much, much more
+
+      This week’s show is brought to you by Thinkst Canary. Thinkst’s founder, Haroon Meer, is this week’s sponsor
+      guest. He joined James Wilson to talk about how doing “the basics” in security isn’t trivially easy.
 
 
-      This episode is also available on Youtube.
-    status: generated
+      This episode is also available on YouTube.
+    status: needs_transcript
     priority: 1
-    transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-19T19:53:42.487Z
-    transcript_job_id: 2ada5366-42d9-450c-ac21-6f10544ed444
-    transcript_completed_at: 2026-05-19T19:55:16.564Z
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #837 -- GitHub Actions footgun claims TanStack"
     duration: 3915
@@ -111,7 +113,6 @@ episodes:
         
         
           Mondoo: Co-founder Dominik Richter pitches Mondoo, an AI-powered “service as software” in the vulnerability management space.
-
 
         
 
@@ -216,7 +217,6 @@ episodes:
         
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
-
 
         
 

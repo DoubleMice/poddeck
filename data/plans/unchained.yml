@@ -1,15 +1,84 @@
 source: unchained
-refreshed_at: 2026-05-19T19:53:41.418Z
+refreshed_at: 2026-05-20T06:54:39.136Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 128
+total_candidates: 129
 done: 0
 pending: 1
-needs_transcript: 126
+needs_transcript: 127
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: 844ab0ca-5329-11f1-b6ee-4bfa056cbbc9
+    title: In an AI Agent World, Do Money Markets Win Over Stablecoins? - Bits + Bips
+    duration: 3507
+    published: Tue, 19 May 2026 20:07:00 -0000
+    published_sort: "20260519"
+    first_seen_at: 2026-05-20T06:54:39.135Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6574118391.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6574118391.mp3
+    image: https://megaphone.imgix.net/podcasts/844ab0ca-5329-11f1-b6ee-4bfa056cbbc9/image/3d56707f6152fbff3657621ea3e46579.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      USDC became Hyperliquid's stablecoin infrastructure, and the 30-year broke 5% for the first time since 2008.
+      Austin, Ram, Chris, and Gordon Liao of Circle work through who wins.
+
+
+      ---
+
+
+      Thank you to our sponsor!
+
+
+      ⁠Coinbase One⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠coinbase.com/unchained⁠.
+
+
+      Heads up!
+
+
+      If you haven’t yet, be sure to subscribe to Bits + Bips, since the show will migrate there in a few weeks. Follow
+      us on ⁠⁠⁠⁠⁠⁠Apple Podcasts⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠YouTube⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠Spotify⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠X⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠Unchained⁠⁠⁠⁠⁠⁠
+      and wherever you get your podcasts. 
+
+
+      ----
+
+
+      Coinbase and Circle have moved into Hyperliquid, installing USDC as its aligned quote asset and taking over
+      treasury and technical deployment. For Gordon Liao, Circle's Chief Economist and Head of Research, that is a
+      liquidity supernova. For Chris Perkins, it is the moment every TVL-trapping platform was always going to arrive
+      at. 
+
+
+      Meanwhile, the CLARITY Act has cleared the Senate Banking Committee on a bipartisan vote, but the ethics question
+      — whether Democrats will vote for a bill that leaves Trump's family holdings untouched — remains unresolved. 
+
+
+      And as Kevin Warsh is confirmed as Fed chair, the 30-year yield breaks 5% for the first time since 2008. 
+
+
+      Hosts:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Campbell (@austincampbell) — Founder, Zero Knowledge Consulting; Adjunct Professor, NYU
+      Stern
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Ram Ahluwalia⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of Lumida
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of 250 Digital Asset Management
+
+
+      Guest:
+
+        
+      Gordon Liao | Master of Coin, Circle
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
     title: Can Hyperliquid Come Onshore Without Killing What Makes It Special?
     duration: 2859
@@ -67,8 +136,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-20T02:56:11.427Z
     transcript_job_id: af771003-14da-4e74-8601-5d9fe5a138a2,3b7dd766-07d9-432e-b550-bd2bd35d6f1e,28ae7f5e-c979-4c44-864e-2fe11422f3b8,50bb00ba-3c49-43e3-939b-e957992bfe63
+    transcript_submitted_at: 2026-05-20T02:56:11.427Z
     transcript_completed_at: 2026-05-20T03:14:25.084Z
   - id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
     title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
@@ -130,10 +199,10 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-20T01:32:52.487Z
     transcript_job_id: 5fe3c84f-4ffe-4c10-8656-ac7248f78950
-    transcript_error: "DashScope task ended with FAILED (FILE_403_FORBIDDEN): FILE_403_FORBIDDEN"
+    transcript_submitted_at: 2026-05-20T01:32:52.487Z
     transcript_completed_at: 2026-05-20T01:33:23.119Z
+    transcript_error: "DashScope task ended with FAILED (FILE_403_FORBIDDEN): FILE_403_FORBIDDEN"
   - id: 99f64648-4fd0-11f1-9e5e-dbb8b251b138
     title: How Hyperliquid Benefits From Its New Deal With Coinbase Over USDC
     duration: 2181
@@ -4984,16 +5053,6 @@ episodes:
           
 
 
-
-
-
-
-
-
-
-
-
-
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5177,16 +5236,6 @@ episodes:
       Unchained:⁠⁠
 
         
-
-
-
-
-
-
-
-
-
-
 
 
         
@@ -6393,16 +6442,6 @@ episodes:
           
 
 
-
-
-
-
-
-
-
-
-
-
         
       Previous appearances on Unchained:
 
@@ -7334,16 +7373,6 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
-
-
-
-
-
-
-
-
-
 
 
         
@@ -8536,16 +8565,6 @@ episodes:
        
 
 
-
-
-
-
-
-
-
-
-
-
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -8939,16 +8958,6 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
-
-
-
-
-
-
-
-
-
-
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices

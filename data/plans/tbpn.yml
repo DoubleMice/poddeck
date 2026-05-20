@@ -1,54 +1,75 @@
 source: tbpn
-refreshed_at: 2026-05-19T19:53:41.312Z
+refreshed_at: 2026-05-20T06:54:39.032Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 18
-done: 1
+total_candidates: 17
+done: 0
 pending: 16
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 66a7e1f2-360c-440b-a889-65d1651720e1
-    title: Leopold's 13F, Data Center Fixes, Shein Buys Everlane | Mike Isaac, Rowan Trollope, Dean Leitersdorf, Joanna Stern
-    duration: 10605
-    published: Mon, 18 May 2026 14:19:44 -0700
-    published_sort: "20260518"
-    first_seen_at: 2026-05-19T19:53:41.304Z
-    url: https://share.transistor.fm/s/d6d0bc1f
-    audio_url: https://media.transistor.fm/d6d0bc1f/c116d0f4.mp3
+  - id: 2667f251-0189-4d44-bdee-7b47d1af1a44
+    title: Google I/O Reactions, Birth Rate Debates, Spotify's New Icon | Jim Belosic, Aidan Dewar, Fai Nur, Tanay Tandon,
+      Ajeya Cotra, Philip Inghelbrecht
+    duration: 8198
+    published: Tue, 19 May 2026 13:39:43 -0700
+    published_sort: "20260519"
+    first_seen_at: 2026-05-20T06:54:39.024Z
+    url: https://share.transistor.fm/s/68702306
+    audio_url: https://media.transistor.fm/68702306/0434a442.mp3
     image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/d6d0bc1f/transcription.txt
+    transcript_url: https://share.transistor.fm/s/68702306/transcription.txt
     transcript_type: text/plain
-    summary: "(00:17) - Jury Rules Against Musk\r
+    summary: "(00:09) - Google I/O Reactions\r
 
-      (02:23) - Leopold's Situational Awareness 13F Is Out\r
+      (24:14) - Karpathy Joins Anthropic\r
 
-      (16:03) - Data Center Backlash Gets Serious\r
+      (28:29) - Reactions to Spotify's New Icon\r
 
-      (44:47) - Mike Isaac, a technology reporter at The New York Times, discusses Elon Musk's lawsuit against OpenAI,
-      highlighting Musk's strategy of using memorable phrases like \"you can't steal a charity\" to appeal to jurors
-      unfamiliar with nonprofit contract law. He notes that OpenAI's defense centered on the statute of limitations, a
-      more technical argument that ultimately swayed the jury's decision. Isaac also mentions the unexpected nature of
-      the verdict and the various protest groups outside the courtroom.\r
+      (33:49) - Birth Rate Debates\r
 
-      (01:07:52) - Rowan Trollope is the CEO of Redis, where he leads the company’s efforts to expand the popular
-      in-memory database platform into a broader real-time data and AI infrastructure business. He previously held
-      senior leadership roles at Cisco and Five9, and is known for scaling enterprise software and cloud communications
-      companies.\r
+      (45:18) - Jim Belosic, CEO and founder of SendCutSend, a company specializing in on-demand manufacturing services,
+      discusses the recent achievement of securing a $110 million investment, valuing the company at $1 billion. He
+      shares plans to utilize the funds to expand operations, including hiring additional staff and enhancing software
+      capabilities, aiming to establish facilities near major metropolitan areas to expedite service delivery. Belosic
+      also highlights the company's commitment to supporting STEM education through a $1 million sponsorship program,
+      providing resources and expertise to engineering students and educators.\r
 
-      (01:28:26) - Shein Buys Everlane\r
+      (01:04:18) - Aidan Dewar, co-founder and CEO of Nourish, discusses the company's mission to address chronic
+      diseases through dietitian-led metabolic clinics that combine a vast network of registered dietitians with virtual
+      medical care, including lab interpretations and medication management. He emphasizes the importance of pairing
+      GLP-1 medications with behavioral changes to achieve sustainable health outcomes, noting that patients working
+      with Nourish dietitians while on GLP-1s lost 33% more weight than those using the medication alone. Dewar also
+      highlights the company's recent $100 million Series C funding, aimed at expanding their services and integrating
+      AI technology to enhance patient care.\r
 
-      (01:39:04) - Dean Leitersdorf is the co-founder and CEO of Decart, an AI company focused on generative models and
-      real-time AI infrastructure. He works on building systems that make advanced AI applications faster, more
-      interactive, and easier to deploy at scale.\r
+      (01:12:41) - Fai Nur, CEO and co-founder of Status, discusses the app's rapid growth, reaching a million users in
+      19 days, and its appeal to young users seeking immersive, gamified social experiences. She highlights Status's
+      monetization through in-app purchases and subscriptions, achieving millions in annual recurring revenue and a
+      tenfold increase in revenue in Q1 2026. Nur also addresses the platform's use of AI to create user-generated
+      worlds, emphasizing its role in offering unique experiences that complement traditional entertainment.\r
 
-      (01:54:56) - Protein Shortage\r
+      (01:22:57) - Tanay Tandon, CEO of Kamir, discusses the company's recent $70 million funding round at a $7 billion
+      valuation, aimed at accelerating R&D for their language model-powered EMR platform and voice agents. He highlights
+      the trillion-dollar administrative burden in the U.S. healthcare system and how Kamir's AI solutions automate
+      tasks like claims processing and documentation to reduce costs and improve efficiency. Tandon also addresses the
+      rapid adoption of language models in healthcare, the potential for AI to empower independent practices, and the
+      evolving dynamics between providers and payers.\r
 
-      (02:04:02) - Joanna Stern is a senior personal technology columnist at The Wall Street Journal, where she covers
-      consumer technology, AI, gadgets, and the impact of tech on everyday life. She is also the author of I Am Not a
-      Robot, a book exploring the increasingly blurred line between humans and machines in the age of AI.
+      (01:33:02) - Ajeya Cotra, a technical staff member at METR with a background in AI safety, discusses her role in
+      leading the Frontier Risk Report, which assesses misalignment risks in advanced AI systems. She explains METR's
+      mission to develop measurement tools for tracking AI capabilities and motivations, and describes the collaboration
+      with companies like Google, OpenAI, Meta, and Anthropic to evaluate their internal models and alignment processes.
+      Cotra also highlights the importance of establishing robust, independent auditing practices to monitor and
+      mitigate potential risks from misaligned AI agents.\r
+
+      (01:48:11) - Philip Inghelbrecht, a Belgian-born entrepreneur and CEO of Tatari, a company specializing in
+      technology for TV advertising, discusses his journey from co-founding Shazam in 1999 to leading Tatari. He
+      highlights the challenges and innovations in TV advertising, emphasizing the importance of measuring real outcomes
+      and the integration of AI in media planning. Inghelbrecht also reflects on the evolution of TV advertising, noting
+      the shift from traditional methods to data-driven strategies that bridge the gap between linear and streaming TV.
 
 
       Follow TBPN: 
@@ -67,7 +88,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 5ae0ff7e-4f35-4cd6-9195-e1ca36940542
     title: Swatch AP Collab, Cerebras IPO, Trump Visits China | Ferdinand Dabitz, Spencer Rascoff, Eric Olson, Matt
@@ -1416,70 +1437,6 @@ episodes:
       to over 90% by year's end. Wang also announces Mintlify's recent $45 million Series B funding at a $500 million
       valuation, emphasizing the importance of accessible and up-to-date documentation in the rapidly evolving software
       landscape.
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: pending
-    priority: 1
-  - id: 003d55fd-29fb-4762-8704-0f4d11077d7d
-    title: Artemis II Recap, Work vs Leisure, AI Backlash | Krste Asanović, Peter Diamandis, Balachandar Ramamurthy
-    duration: 7645
-    published: Mon, 13 Apr 2026 13:36:31 -0700
-    published_sort: "20260413"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/ff557436
-    audio_url: https://media.transistor.fm/ff557436/0179315b.mp3
-    image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/ff557436/transcription.txt
-    transcript_type: text/plain
-    summary: "(00:44) - Artemis II Recap\r
-
-      (36:08) - Work vs Leisure\r
-
-      (39:20) - Altman's House Attacked\r
-
-      (44:11) - We Can't Stop China's AI\r
-
-      (01:00:54) - 𝕏 Timeline Reactions\r
-
-      (01:11:41) - Balachandar Ramamurthy, CEO of Critical Loop and former SpaceX engineer, discusses his transition
-      from aerospace to energy, emphasizing the need for reliable, cost-effective power solutions. He highlights
-      Critical Loop's approach of deploying energy storage and flexible generation at the grid's edge to reduce long
-      wait times for industrial power access. Additionally, he mentions the company's recent $26 million funding round
-      led by Conifer Infrastructure Partners and Hanover.\r
-
-      (01:22:12) - Krste Asanović, a Professor Emeritus at UC Berkeley and co-founder of SiFive, discusses the evolution
-      of SiFive since its 2015 inception, highlighting its recent $400 million Series G funding round led by Atreides
-      Management with participation from NVIDIA. He explains the company's shift from custom silicon to providing RISC-V
-      IP designs, emphasizing the growing demand for high-performance CPUs in data centers to support AI workloads.
-      Asanović also notes the collaborative nature of their work with customers, tailoring CPU designs to specific
-      needs, and discusses the technical and business challenges in developing high-performance processors, including
-      power efficiency and the use of advanced process nodes.\r
-
-      (01:31:50) - Peter Diamandis is a Greek-American engineer, physician, and entrepreneur, best known as the founder
-      and chairman of the XPRIZE Foundation, which has launched over $600 million in competitions driving more than $10
-      billion in research and development across various fields. He discusses the rapid progression of technology,
-      emphasizing the importance of viewing advancements like AI as opportunities rather than threats, and envisions a
-      future of abundance where every individual has access to essential resources. He also reflects on his
-      long-standing relationship with Elon Musk, highlighting Musk's consistent delivery on ambitious visions and their
-      shared commitment to solving global challenges through innovation.\r
-
-      (02:02:36) - 𝕏 Timeline Reactions
 
 
       Follow TBPN: 
