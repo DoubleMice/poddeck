@@ -16,9 +16,10 @@
 
 import { resolve, join } from 'node:path'
 import {
-  readFileSync, writeFileSync, existsSync, mkdirSync, cpSync, readdirSync,
+  readFileSync, writeFileSync, existsSync, mkdirSync, cpSync, readdirSync, mkdtempSync, rmSync, statSync,
 } from 'node:fs'
 import { spawn } from 'node:child_process'
+import { tmpdir } from 'node:os'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { cleanTranscript, fetchText, preferredTranscript } from './lib/rss.ts'
 import { log } from './lib/log.ts'
@@ -31,6 +32,7 @@ const isWin = process.platform === 'win32'
 const SOURCES_PATH = resolve(ROOT, 'sources.yml')
 const PLANS_DIR = resolve(ROOT, 'data/plans')
 const TRANSCRIPTS_DIR = resolve(ROOT, 'data/transcripts')
+const TRANSCRIPT_CHUNKS_DIR = resolve(TRANSCRIPTS_DIR, '.chunks')
 const TRANSCRIPTION_JOBS_PATH = resolve(ROOT, 'data/transcription-jobs.yml')
 const EPISODES_DIR = resolve(ROOT, 'episodes')
 const TEMPLATES_DIR = resolve(EPISODES_DIR, '_templates')
@@ -48,8 +50,9 @@ const transcribeLimit = Number(process.argv.find(a => a.startsWith('--transcribe
 const transcribeWaitMinutes = Number(process.argv.find(a => a.startsWith('--transcribe-wait-minutes='))?.split('=')[1] ?? 0)
 const dashscopeRegion = (process.argv.find(a => a.startsWith('--dashscope-region='))?.split('=')[1] ?? 'cn') as 'cn' | 'intl'
 const TRANSCRIBE_MAX_RETRIES = 3
-const blockedTranscribeHosts = ['traffic.megaphone.fm']
-const blockedTranscribeSources = ['unchained']
+const DATA_URI_CHUNK_SECONDS = Number(process.env.DASHSCOPE_DATA_URI_CHUNK_SECONDS ?? 900)
+const DATA_URI_MAX_BYTES = Number(process.env.DASHSCOPE_DATA_URI_MAX_MB ?? 18) * 1024 * 1024
+const STALE_SUBMITTING_MINUTES = Number(process.env.DASHSCOPE_STALE_SUBMITTING_MINUTES ?? 30)
 
 // Shared state for generation rate-limit detection and token tracking
 let generationRateLimited = false
@@ -181,8 +184,20 @@ function entryKey(sourceId: string, entry: PlanEntry): string {
   return `${sourceId}:${entry.id}:${entry.published_sort ?? ''}:${entry.audio_url ?? ''}`
 }
 
+function jobEntryKey(job: TranscriptionJob): string {
+  return job.parent_key ?? job.key ?? `${job.source}:${job.id}`
+}
+
+function isRetriableTranscriptionError(message: string | undefined): boolean {
+  return /FILE_403|403|forbidden|InvalidParameter|maximum allowed|String value length|submit did not complete/i.test(message ?? '')
+}
+
 function findJob(jobs: TranscriptionJobsFile, key: string): TranscriptionJob | undefined {
-  return jobs.jobs.find(job => (job.key ?? `${job.source}:${job.id}`) === key && job.status !== 'failed')
+  return jobs.jobs.find(job => {
+    if (jobEntryKey(job) !== key) return false
+    if (job.status !== 'failed') return true
+    return !isRetriableTranscriptionError(job.error)
+  })
 }
 
 function candidateSortKey(item: { sourceId: string; entry: PlanEntry }): string {
@@ -192,10 +207,210 @@ function candidateSortKey(item: { sourceId: string; entry: PlanEntry }): string 
 function isTranscribableAudioUrl(url: string | undefined): boolean {
   if (!url) return false
   try {
-    const host = new URL(url).hostname.toLowerCase()
-    return !blockedTranscribeHosts.some(blocked => host === blocked || host.endsWith(`.${blocked}`))
+    const protocol = new URL(url).protocol
+    return protocol === 'http:' || protocol === 'https:'
   } catch {
     return false
+  }
+}
+
+function shouldUseDataUri(sourceId: string, audioUrl: string): boolean {
+  const lower = audioUrl.toLowerCase()
+  try {
+    const host = new URL(audioUrl).hostname.toLowerCase()
+    return sourceId === 'unchained'
+      || host === 'pdrl.fm'
+      || host.endsWith('.megaphone.fm')
+      || lower.includes('megaphone.fm/')
+  } catch {
+    return false
+  }
+}
+
+function shouldRetryFailedTranscription(sourceId: string, entry: PlanEntry): boolean {
+  if (entry.status !== 'transcribe_failed' || !entry.audio_url) return false
+  if (!shouldUseDataUri(sourceId, entry.audio_url)) return false
+  return isRetriableTranscriptionError(entry.transcript_error)
+}
+
+function inferAudioMimeType(audioUrl: string, contentType: string | null): string {
+  const normalized = contentType?.split(';')[0]?.trim().toLowerCase()
+  if (normalized?.startsWith('audio/')) return normalized
+  const pathname = (() => {
+    try { return new URL(audioUrl).pathname.toLowerCase() } catch { return audioUrl.toLowerCase() }
+  })()
+  if (pathname.endsWith('.m4a') || pathname.endsWith('.mp4')) return 'audio/mp4'
+  if (pathname.endsWith('.wav')) return 'audio/wav'
+  if (pathname.endsWith('.ogg')) return 'audio/ogg'
+  return 'audio/mpeg'
+}
+
+function transcriptionChunkDir(parentKey: string, attemptKey: string): string {
+  return join(TRANSCRIPT_CHUNKS_DIR, Buffer.from(`${parentKey}:${attemptKey}`).toString('base64url'))
+}
+
+function transcriptionChunkPath(parentKey: string, attemptKey: string, index: number): string {
+  return join(transcriptionChunkDir(parentKey, attemptKey), `${String(index).padStart(3, '0')}.txt`)
+}
+
+function jobsForEntry(jobsFile: TranscriptionJobsFile, key: string): TranscriptionJob[] {
+  return jobsFile.jobs.filter(job => jobEntryKey(job) === key)
+}
+
+function jobAttemptKey(job: TranscriptionJob): string {
+  return job.attempt_key ?? job.submitted_at
+}
+
+function jobsForAttempt(jobsFile: TranscriptionJobsFile, key: string, attemptKey: string): TranscriptionJob[] {
+  return jobsForEntry(jobsFile, key).filter(job => jobAttemptKey(job) === attemptKey)
+}
+
+function completeChunkAttempt(jobsFile: TranscriptionJobsFile, key: string): string | undefined {
+  const attempts = [...new Set(jobsForEntry(jobsFile, key)
+    .filter(job => job.chunk_count !== undefined)
+    .map(jobAttemptKey))].sort().reverse()
+  return attempts.find(attemptKey => {
+    const group = jobsForAttempt(jobsFile, key, attemptKey).filter(job => job.chunk_count !== undefined)
+    const chunkCount = group[0]?.chunk_count
+    return !!chunkCount && group.length >= chunkCount && group.every(job => job.status === 'succeeded')
+  })
+}
+
+function combineChunkTranscripts(parentKey: string, attemptKey: string, chunkCount: number): string {
+  const chunks: string[] = []
+  for (let index = 0; index < chunkCount; index++) {
+    const path = transcriptionChunkPath(parentKey, attemptKey, index)
+    if (!existsSync(path)) throw new Error(`missing transcript chunk ${index + 1}/${chunkCount}`)
+    chunks.push(readFileSync(path, 'utf-8').trim())
+  }
+  return chunks.filter(Boolean).join('\n\n').trim()
+}
+
+function markEntryTranscribed(item: { entry: PlanEntry; plan: PlanFile; planPath: string }, taskId: string, now: string, text: string): void {
+  mkdirSync(TRANSCRIPTS_DIR, { recursive: true })
+  writeFileSync(join(TRANSCRIPTS_DIR, `${item.entry.id}.txt`), text + '\n', 'utf-8')
+  item.entry.status = 'pending'
+  item.entry.transcript_provider = 'dashscope'
+  item.entry.transcript_job_id = taskId
+  item.entry.transcript_completed_at = now
+  item.entry.transcript_error = undefined
+  savePlan(item.planPath, item.plan)
+}
+
+function maybeFinalizeChunkedTranscription(
+  jobsFile: TranscriptionJobsFile,
+  parentKey: string,
+  item: { entry: PlanEntry; plan: PlanFile; planPath: string },
+  now: string,
+): boolean {
+  const attemptKey = completeChunkAttempt(jobsFile, parentKey)
+  if (!attemptKey) return false
+  const group = jobsForAttempt(jobsFile, parentKey, attemptKey).filter(job => job.chunk_count !== undefined)
+  const chunkCount = group[0]?.chunk_count
+  if (!chunkCount || group.length < chunkCount || !group.every(job => job.status === 'succeeded')) return false
+  for (let index = 0; index < chunkCount; index++) {
+    if (!existsSync(transcriptionChunkPath(parentKey, attemptKey, index))) return false
+  }
+  const text = combineChunkTranscripts(parentKey, attemptKey, chunkCount)
+  const taskIds = group
+    .sort((a, b) => (a.chunk_index ?? 0) - (b.chunk_index ?? 0))
+    .map(job => job.task_id)
+    .join(',')
+  markEntryTranscribed(item, taskIds, now, text)
+  return true
+}
+
+function jobNeedsTranscriptRecovery(job: TranscriptionJob): boolean {
+  if (job.status !== 'succeeded' || !job.transcription_url) return false
+  const transcriptPath = join(TRANSCRIPTS_DIR, `${job.id}.txt`)
+  return !existsSync(transcriptPath)
+}
+
+function maybeFinalizeCachedChunks(
+  jobsFile: TranscriptionJobsFile,
+  key: string,
+  item: { entry: PlanEntry; plan: PlanFile; planPath: string },
+  now: string,
+): boolean {
+  const attemptKey = completeChunkAttempt(jobsFile, key)
+  if (!attemptKey) return false
+  const group = jobsForAttempt(jobsFile, key, attemptKey).filter(job => job.chunk_count !== undefined)
+  const chunkCount = group[0]?.chunk_count
+  if (!chunkCount) return false
+  for (let index = 0; index < chunkCount; index++) {
+    if (!existsSync(transcriptionChunkPath(key, attemptKey, index))) return false
+  }
+  return maybeFinalizeChunkedTranscription(jobsFile, key, item, now)
+}
+
+function isStaleSubmitting(job: TranscriptionJob, now: string): boolean {
+  if (job.status !== 'submitting') return false
+  const submitted = Date.parse(job.updated_at || job.submitted_at)
+  if (Number.isNaN(submitted)) return true
+  return Date.parse(now) - submitted >= STALE_SUBMITTING_MINUTES * 60_000
+}
+
+async function downloadAudio(audioUrl: string, targetPath: string): Promise<{ bytes: number; mimeType: string }> {
+  const response = await fetch(audioUrl, {
+    headers: {
+      accept: 'audio/*,*/*',
+      'user-agent': 'PodDeck transcription fetcher/1.0',
+    },
+  })
+  const body = await response.arrayBuffer()
+  if (!response.ok) throw new Error(`audio download failed: ${response.status} ${Buffer.from(body).toString('utf-8').slice(0, 200)}`)
+  writeFileSync(targetPath, Buffer.from(body))
+  return { bytes: body.byteLength, mimeType: inferAudioMimeType(audioUrl, response.headers.get('content-type')) }
+}
+
+function dataUriFromAudioFile(path: string, mimeType: string): { fileUrl: string; bytes: number } {
+  const bytes = statSync(path).size
+  if (bytes > DATA_URI_MAX_BYTES) {
+    throw new Error(`audio chunk is ${(bytes / 1024 / 1024).toFixed(1)}MB, above DASHSCOPE_DATA_URI_MAX_MB=${process.env.DASHSCOPE_DATA_URI_MAX_MB ?? 18}`)
+  }
+  return {
+    fileUrl: `data:${mimeType};base64,${readFileSync(path).toString('base64')}`,
+    bytes,
+  }
+}
+
+async function prepareDashScopeAudioInputs(sourceId: string, entry: PlanEntry): Promise<{ fileUrl: string; mode: 'url' | 'data_uri'; bytes?: number; chunkIndex?: number; chunkCount?: number }[]> {
+  if (!entry.audio_url) throw new Error(`No audio URL for ${entry.id}`)
+  if (!shouldUseDataUri(sourceId, entry.audio_url)) return [{ fileUrl: entry.audio_url, mode: 'url' }]
+
+  const workDir = mkdtempSync(join(tmpdir(), 'poddeck-asr-'))
+  log.raw(`  downloading audio for local DashScope upload ${sourceId}/${entry.id}`)
+  try {
+    const inputPath = join(workDir, 'input')
+    const download = await downloadAudio(entry.audio_url, inputPath)
+    const chunkPattern = join(workDir, 'chunk-%03d.mp3')
+    await run('ffmpeg', [
+      '-hide_banner',
+      '-loglevel', 'error',
+      '-y',
+      '-i', inputPath,
+      '-vn',
+      '-ac', '1',
+      '-ar', '16000',
+      '-b:a', '32k',
+      '-f', 'segment',
+      '-segment_time', String(DATA_URI_CHUNK_SECONDS),
+      '-reset_timestamps', '1',
+      chunkPattern,
+    ], { cwd: ROOT })
+    const chunkPaths = readdirSync(workDir)
+      .filter(file => /^chunk-\d+\.mp3$/.test(file))
+      .sort()
+      .map(file => join(workDir, file))
+    if (chunkPaths.length === 0) throw new Error('ffmpeg produced no audio chunks')
+    const inputs = chunkPaths.map((path, index) => {
+      const dataUri = dataUriFromAudioFile(path, 'audio/mpeg')
+      return { ...dataUri, mode: 'data_uri' as const, chunkIndex: index, chunkCount: chunkPaths.length }
+    })
+    log.raw(`  prepared ${inputs.length} data URI chunk(s) from ${(download.bytes / 1024 / 1024).toFixed(1)}MB audio`)
+    return inputs
+  } finally {
+    rmSync(workDir, { recursive: true, force: true })
   }
 }
 
@@ -211,7 +426,12 @@ function selectFairTranscribeCandidates(
     path,
     plan,
     entries: plan.episodes
-      .filter(entry => !blockedTranscribeSources.includes(source) && entry.status === 'needs_transcript' && isTranscribableAudioUrl(entry.audio_url) && !findJob(jobs, entryKey(source, entry)))
+      .filter(entry => {
+        const retryFailed = shouldRetryFailedTranscription(source, entry)
+        return (entry.status === 'needs_transcript' || retryFailed)
+          && isTranscribableAudioUrl(entry.audio_url)
+          && (retryFailed || !findJob(jobs, entryKey(source, entry)))
+      })
       .sort((a, b) => (b.published_sort ?? '').localeCompare(a.published_sort ?? '')),
   })).filter(group => group.entries.length > 0)
 
@@ -276,35 +496,69 @@ async function pollTranscriptionJobs(
   }
 
   for (const job of jobsFile.jobs) {
-    if (job.status === 'succeeded' || job.status === 'failed' || job.status === 'submitting') continue
-    const key = job.key ?? `${job.source}:${job.id}`
+    const key = jobEntryKey(job)
     const item = entryByKey.get(key)
     if (!item) continue
     const now = new Date().toISOString()
+    if (job.status === 'failed') continue
+    if (job.status === 'submitting') {
+      if (!isStaleSubmitting(job, now)) continue
+      job.status = 'failed'
+      job.error = `transcription submit did not complete within ${STALE_SUBMITTING_MINUTES} minutes`
+      job.updated_at = now
+      item.entry.status = 'transcribe_failed'
+      item.entry.transcript_completed_at = now
+      item.entry.transcript_error = job.error
+      savePlan(item.planPath, item.plan)
+      log.err(`  transcription submit stale ${job.id}: ${job.error}`)
+      continue
+    }
+    if (job.status === 'succeeded' && !jobNeedsTranscriptRecovery(job)) continue
+    if (job.status === 'succeeded' && job.chunk_count !== undefined && maybeFinalizeCachedChunks(jobsFile, key, item, now)) {
+      completed++
+      log.ok(`  restored transcript ${job.id} from cached chunks`)
+      continue
+    }
     try {
-      const task = await client.query(job.task_id)
+      const task = job.status === 'succeeded'
+        ? { status: 'SUCCEEDED', transcriptionUrls: job.transcription_url ? [job.transcription_url] : [] }
+        : await client.query(job.task_id)
       job.updated_at = now
       if (task.status === 'SUCCEEDED') {
         const transcriptionUrl = task.transcriptionUrls[0]
         if (!transcriptionUrl) throw new Error('DashScope task succeeded without transcription_url')
         const normalized = await client.downloadTranscript(transcriptionUrl)
-        mkdirSync(TRANSCRIPTS_DIR, { recursive: true })
-        writeFileSync(join(TRANSCRIPTS_DIR, `${job.id}.txt`), normalized.text + '\n', 'utf-8')
         job.status = 'succeeded'
         job.transcription_url = transcriptionUrl
         job.completed_at = now
-        item.entry.status = 'pending'
-        item.entry.transcript_provider = 'dashscope'
-        item.entry.transcript_job_id = job.task_id
-        item.entry.transcript_completed_at = now
-        item.entry.transcript_error = undefined
-        savePlan(item.planPath, item.plan)
-        completed++
-        log.ok(`  transcribed ${job.id} (${normalized.text.length} chars)`)
+        job.error = undefined
+        if (job.chunk_count !== undefined && job.chunk_index !== undefined) {
+          mkdirSync(transcriptionChunkDir(key, jobAttemptKey(job)), { recursive: true })
+          writeFileSync(transcriptionChunkPath(key, jobAttemptKey(job), job.chunk_index), normalized.text + '\n', 'utf-8')
+          if (maybeFinalizeChunkedTranscription(jobsFile, key, item, now)) {
+            completed++
+            log.ok(`  transcribed ${job.id} from ${job.chunk_count} chunks`)
+          } else {
+            item.entry.status = 'transcribing'
+            savePlan(item.planPath, item.plan)
+            log.ok(`  transcribed chunk ${(job.chunk_index ?? 0) + 1}/${job.chunk_count} for ${job.id}`)
+          }
+        } else {
+          markEntryTranscribed(item, job.task_id, now, normalized.text)
+          completed++
+          log.ok(`  transcribed ${job.id} (${normalized.text.length} chars)`)
+        }
         for (const warning of normalized.warnings) log.warn(`  ${job.id}: ${warning}`)
       } else if (task.status === 'FAILED' || task.status === 'CANCELED' || task.status === 'UNKNOWN') {
         job.status = 'failed'
         job.error = `DashScope task ended with ${task.status}${task.code ? ` (${task.code})` : ''}${task.message ? `: ${task.message}` : ''}`
+        for (const sibling of jobsForAttempt(jobsFile, key, jobAttemptKey(job))) {
+          if (sibling.status !== 'succeeded') {
+            sibling.status = 'failed'
+            sibling.error = job.error
+            sibling.updated_at = now
+          }
+        }
         item.entry.status = 'transcribe_failed'
         item.entry.transcript_completed_at = now
         item.entry.transcript_error = job.error
@@ -321,6 +575,13 @@ async function pollTranscriptionJobs(
       job.retries = (job.retries ?? 0) + 1
       if (job.retries >= TRANSCRIBE_MAX_RETRIES) {
         job.status = 'failed'
+        for (const sibling of jobsForAttempt(jobsFile, key, jobAttemptKey(job))) {
+          if (sibling.status !== 'succeeded') {
+            sibling.status = 'failed'
+            sibling.error = error.message
+            sibling.updated_at = now
+          }
+        }
         item.entry.status = 'transcribe_failed'
         item.entry.transcript_completed_at = now
         item.entry.transcript_error = error.message
@@ -354,48 +615,73 @@ async function submitTranscriptionCandidates(
       continue
     }
     const key = entryKey(item.sourceId, entry)
-    const pendingJob: TranscriptionJob = {
-      key,
-      id: entry.id,
-      source: item.sourceId,
-      title: entry.title,
-      audio_url: entry.audio_url,
-      task_id: '',
-      status: 'submitting',
-      retries: 0,
-      submitted_at: now,
-      updated_at: now,
-    }
-    jobsFile.jobs.push(pendingJob)
+    const attemptKey = `${key}:attempt:${now}`
     entry.status = 'transcribing'
     entry.transcript_provider = 'dashscope'
     entry.transcript_submitted_at = now
     savePlan(item.planPath, item.plan)
     saveTranscriptionJobs(jobsFile)
     try {
-      const taskId = await client.submit(entry.audio_url)
-      Object.assign(pendingJob, jobFromTask({
-        key,
-        id: entry.id,
-        source: item.sourceId,
-        title: entry.title,
-        audioUrl: entry.audio_url,
-        taskId,
-        now,
-      }))
+      const inputs = await prepareDashScopeAudioInputs(item.sourceId, entry)
+      let firstTaskId = ''
+      for (const input of inputs) {
+        const chunkKey = input.chunkCount ? `${attemptKey}:chunk:${input.chunkIndex}` : key
+        const jobAttempt = input.chunkCount ? attemptKey : now
+        const pendingJob: TranscriptionJob = {
+          key: chunkKey,
+          parent_key: input.chunkCount ? key : undefined,
+          attempt_key: jobAttempt,
+          id: entry.id,
+          source: item.sourceId,
+          title: entry.title,
+          audio_url: entry.audio_url,
+          task_id: '',
+          submission_mode: input.mode,
+          chunk_index: input.chunkIndex,
+          chunk_count: input.chunkCount,
+          status: 'submitting',
+          retries: 0,
+          submitted_at: now,
+          updated_at: now,
+        }
+        jobsFile.jobs.push(pendingJob)
+        saveTranscriptionJobs(jobsFile)
+        const taskId = await client.submit(input.fileUrl)
+        if (!firstTaskId) firstTaskId = taskId
+        Object.assign(pendingJob, jobFromTask({
+          key: chunkKey,
+          id: entry.id,
+          source: item.sourceId,
+          title: entry.title,
+          audioUrl: entry.audio_url,
+          taskId,
+          submissionMode: input.mode,
+          parentKey: input.chunkCount ? key : undefined,
+          attemptKey: jobAttempt,
+          chunkIndex: input.chunkIndex,
+          chunkCount: input.chunkCount,
+          now,
+        }))
+        pendingJob.status = 'submitted'
+        log.ok(`  submitted transcription ${item.sourceId}/${entry.id}${input.chunkCount ? ` chunk ${(input.chunkIndex ?? 0) + 1}/${input.chunkCount}` : ''} task=${taskId}`)
+      }
       entry.status = 'transcribing'
       entry.transcript_provider = 'dashscope'
-      entry.transcript_job_id = taskId
+      entry.transcript_job_id = firstTaskId
       entry.transcript_submitted_at = now
       entry.transcript_error = undefined
       savePlan(item.planPath, item.plan)
       saveTranscriptionJobs(jobsFile)
       submitted++
-      log.ok(`  submitted transcription ${item.sourceId}/${entry.id} task=${taskId}`)
     } catch (error: any) {
-      pendingJob.status = 'failed'
-      pendingJob.error = error.message
-      pendingJob.updated_at = new Date().toISOString()
+      const failedJobs = jobsForEntry(jobsFile, key).filter(job => job.status === 'submitting' || jobAttemptKey(job) === attemptKey || jobAttemptKey(job) === now)
+      for (const job of failedJobs) {
+        if (job.status !== 'succeeded') {
+          job.status = 'failed'
+          job.error = error.message
+          job.updated_at = new Date().toISOString()
+        }
+      }
       entry.status = 'transcribe_failed'
       entry.transcript_error = error.message
       savePlan(item.planPath, item.plan)

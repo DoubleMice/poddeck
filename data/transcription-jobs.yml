@@ -58,3 +58,80 @@ jobs:
     updated_at: 2026-05-20T01:37:38.880Z
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260520/09%3A37/0a37a9fb-3ab8-48a8-802a-53d2c109e3c3.json?Expires=1779327430&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=tcxdRoob6rfHJm4wJy0GEONOUXw%3D&response-content-disposition=attachment%3Bfilename%3D0a37a9fb-3ab8-48a8-802a-53d2c109e3c3.json
     completed_at: 2026-05-20T01:37:38.880Z
+  - key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
+    source: unchained
+    title: Can Hyperliquid Come Onshore Without Killing What Makes It Special?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    task_id: ""
+    status: failed
+    retries: 0
+    submitted_at: 2026-05-20T02:49:58.288Z
+    updated_at: 2026-05-20T02:52:08.428Z
+    error: 'DashScope submit failed: 400
+      {"request_id":"62967e58-b42d-9405-b2df-af2010fe5fa0","code":"InvalidParameter","message":"String value length
+      (28049408) exceeds the maximum allowed (28000000, from `StreamReadConstraints.getMaxStringLength()`)"}'
+  - key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3:chunk:0
+    parent_key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
+    source: unchained
+    title: Can Hyperliquid Come Onshore Without Killing What Makes It Special?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    task_id: af771003-14da-4e74-8601-5d9fe5a138a2
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: succeeded
+    retries: 1
+    submitted_at: 2026-05-20T02:56:11.427Z
+    updated_at: 2026-05-20T03:14:24.610Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260520/10%3A58/af771003-14da-4e74-8601-5d9fe5a138a2.json?Expires=1779332311&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=Ka586zOhMY1yWjFjVZVXwH7NeVc%3D&response-content-disposition=attachment%3Bfilename%3Daf771003-14da-4e74-8601-5d9fe5a138a2.json
+    completed_at: 2026-05-20T03:14:24.610Z
+  - key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3:chunk:1
+    parent_key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
+    source: unchained
+    title: Can Hyperliquid Come Onshore Without Killing What Makes It Special?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    task_id: 3b7dd766-07d9-432e-b550-bd2bd35d6f1e
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-20T02:56:11.427Z
+    updated_at: 2026-05-20T03:14:24.869Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260520/10%3A58/3b7dd766-07d9-432e-b550-bd2bd35d6f1e.json?Expires=1779332314&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=dWvg5PqDOi88DRcOGjPLdvkHsrI%3D&response-content-disposition=attachment%3Bfilename%3D3b7dd766-07d9-432e-b550-bd2bd35d6f1e.json
+    completed_at: 2026-05-20T03:14:24.869Z
+  - key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3:chunk:2
+    parent_key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
+    source: unchained
+    title: Can Hyperliquid Come Onshore Without Killing What Makes It Special?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    task_id: 28ae7f5e-c979-4c44-864e-2fe11422f3b8
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-20T02:56:11.427Z
+    updated_at: 2026-05-20T03:14:25.001Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260520/10%3A58/28ae7f5e-c979-4c44-864e-2fe11422f3b8.json?Expires=1779332317&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=CEo1U6%2FmOij%2BAtXOwSBLWeXmgLo%3D&response-content-disposition=attachment%3Bfilename%3D28ae7f5e-c979-4c44-864e-2fe11422f3b8.json
+    completed_at: 2026-05-20T03:14:25.001Z
+  - key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3:chunk:3
+    parent_key: unchained:158eb9ce-5324-11f1-95f3-d70e11b2703f:20260519:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
+    source: unchained
+    title: Can Hyperliquid Come Onshore Without Killing What Makes It Special?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8067467010.mp3
+    task_id: 50bb00ba-3c49-43e3-939b-e957992bfe63
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-20T02:56:11.427Z
+    updated_at: 2026-05-20T03:14:25.084Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260520/10%3A58/50bb00ba-3c49-43e3-939b-e957992bfe63.json?Expires=1779332297&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=W2kXW5Z3B0fAaZTGsN3BhPnIEQY%3D&response-content-disposition=attachment%3Bfilename%3D50bb00ba-3c49-43e3-939b-e957992bfe63.json
+    completed_at: 2026-05-20T03:14:25.084Z

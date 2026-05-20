@@ -125,6 +125,11 @@ export interface TranscriptionJob {
   title: string
   audio_url: string
   task_id: string
+  submission_mode?: 'url' | 'data_uri'
+  parent_key?: string
+  attempt_key?: string
+  chunk_index?: number
+  chunk_count?: number
   status: 'submitting' | 'submitted' | 'running' | 'succeeded' | 'failed'
   transcription_url?: string
   retries?: number

@@ -59,5 +59,6 @@ cookies-yt.txt
 # RSS scan cache is reproducible and can be refreshed on demand
 # Refresh with `pnpm run cache:refresh` on demand
 data/scan-cache/
+data/transcripts/.chunks/
 episodes/*/audit.pdf
 episodes/*/package-lock.json

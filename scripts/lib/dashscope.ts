@@ -44,18 +44,23 @@ function getPath(root: unknown, path: string[]): unknown {
 
 function collectText(value: unknown, out: string[]): void {
   if (!isObject(value)) return
+  const nestedTextArrays = ['sentences', 'transcripts', 'paragraphs']
+    .map(key => value[key])
+    .filter(Array.isArray)
+  if (nestedTextArrays.length > 0) {
+    for (const nested of nestedTextArrays) {
+      for (const item of nested) collectText(item, out)
+    }
+    return
+  }
+
   const direct = asString(value.text)
     ?? asString(value.transcript)
     ?? asString(value.transcription)
     ?? asString(value.sentence)
     ?? asString(value.sentence_text)
   if (direct) out.push(direct)
-
-  for (const key of ['sentences', 'transcripts', 'paragraphs']) {
-    const nested = value[key]
-    if (!Array.isArray(nested)) continue
-    for (const item of nested) collectText(item, out)
-  }
+  if (direct) return
 
   const words = value.words
   if (Array.isArray(words)) {
@@ -181,6 +186,11 @@ export function jobFromTask(params: {
   title: string
   audioUrl: string
   taskId: string
+  submissionMode?: 'url' | 'data_uri'
+  parentKey?: string
+  attemptKey?: string
+  chunkIndex?: number
+  chunkCount?: number
   now: string
 }): TranscriptionJob {
   return {
@@ -190,6 +200,11 @@ export function jobFromTask(params: {
     title: params.title,
     audio_url: params.audioUrl,
     task_id: params.taskId,
+    submission_mode: params.submissionMode,
+    parent_key: params.parentKey,
+    attempt_key: params.attemptKey,
+    chunk_index: params.chunkIndex,
+    chunk_count: params.chunkCount,
     status: 'submitted',
     retries: 0,
     submitted_at: params.now,

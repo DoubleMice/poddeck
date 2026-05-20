@@ -4,10 +4,10 @@ min_duration: 1800
 min_date: "20260101"
 total_candidates: 128
 done: 0
-pending: 0
+pending: 1
 needs_transcript: 126
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
@@ -64,13 +64,12 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: transcribe_failed
+    status: pending
     priority: 1
     transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-19T19:53:43.332Z
-    transcript_job_id: c9fe6afa-5a2b-4a1d-9052-ef2577e10ab2
-    transcript_error: "DashScope task ended with FAILED (FILE_403_FORBIDDEN): FILE_403_FORBIDDEN"
-    transcript_completed_at: 2026-05-19T19:54:14.786Z
+    transcript_submitted_at: 2026-05-20T02:56:11.427Z
+    transcript_job_id: af771003-14da-4e74-8601-5d9fe5a138a2,3b7dd766-07d9-432e-b550-bd2bd35d6f1e,28ae7f5e-c979-4c44-864e-2fe11422f3b8,50bb00ba-3c49-43e3-939b-e957992bfe63
+    transcript_completed_at: 2026-05-20T03:14:25.084Z
   - id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
     title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
       Onchain"
@@ -4988,6 +4987,13 @@ episodes:
 
 
 
+
+
+
+
+
+
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5171,6 +5177,13 @@ episodes:
       Unchained:⁠⁠
 
         
+
+
+
+
+
+
+
 
 
 
@@ -6383,6 +6396,13 @@ episodes:
 
 
 
+
+
+
+
+
+
+
         
       Previous appearances on Unchained:
 
@@ -7314,6 +7334,13 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
+
+
+
+
+
+
 
 
 
@@ -8512,6 +8539,13 @@ episodes:
 
 
 
+
+
+
+
+
+
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -8905,6 +8939,13 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
+
+
+
+
+
+
+
 
 
 
