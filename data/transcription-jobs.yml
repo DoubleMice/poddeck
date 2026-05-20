@@ -21,7 +21,7 @@ jobs:
     retries: 0
     submitted_at: 2026-05-19T19:53:43.332Z
     updated_at: 2026-05-19T19:54:14.786Z
-    error: DashScope task ended with FAILED
+    error: "DashScope task ended with FAILED (FILE_403_FORBIDDEN): FILE_403_FORBIDDEN"
   - key: flirting-with-models:1ad4a324-0c27-43fd-b451-b4394faf8e82:20260511:https://episodes.captivate.fm/episode/1ad4a324-0c27-43fd-b451-b4394faf8e82.mp3
     id: 1ad4a324-0c27-43fd-b451-b4394faf8e82
     source: flirting-with-models
@@ -34,3 +34,27 @@ jobs:
     updated_at: 2026-05-19T19:55:18.685Z
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260520/03%3A55/be7c9639-3f74-4a2e-8a73-7c7147f87523.json?Expires=1779306912&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=hD92W6pzq17aYcgvOz3R2cIusEY%3D&response-content-disposition=attachment%3Bfilename%3Dbe7c9639-3f74-4a2e-8a73-7c7147f87523.json
     completed_at: 2026-05-19T19:55:18.685Z
+  - key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
+    source: unchained
+    title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
+      Onchain"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    task_id: 5fe3c84f-4ffe-4c10-8656-ac7248f78950
+    status: failed
+    retries: 0
+    submitted_at: 2026-05-20T01:32:52.487Z
+    updated_at: 2026-05-20T01:33:23.119Z
+    error: "DashScope task ended with FAILED (FILE_403_FORBIDDEN): FILE_403_FORBIDDEN"
+  - key: flirting-with-models:cb1a41d7-b422-4e35-9218-a661d5a8cbf4:20260406:https://episodes.captivate.fm/episode/cb1a41d7-b422-4e35-9218-a661d5a8cbf4.mp3
+    id: cb1a41d7-b422-4e35-9218-a661d5a8cbf4
+    source: flirting-with-models
+    title: "Faheem Osman – Commodity QIS: An Under-Appreciated Source of Systematic Returns? (S7E29)"
+    audio_url: https://episodes.captivate.fm/episode/cb1a41d7-b422-4e35-9218-a661d5a8cbf4.mp3
+    task_id: 0a37a9fb-3ab8-48a8-802a-53d2c109e3c3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-20T01:35:37.838Z
+    updated_at: 2026-05-20T01:37:38.880Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260520/09%3A37/0a37a9fb-3ab8-48a8-802a-53d2c109e3c3.json?Expires=1779327430&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=tcxdRoob6rfHJm4wJy0GEONOUXw%3D&response-content-disposition=attachment%3Bfilename%3D0a37a9fb-3ab8-48a8-802a-53d2c109e3c3.json
+    completed_at: 2026-05-20T01:37:38.880Z

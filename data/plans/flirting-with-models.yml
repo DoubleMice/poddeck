@@ -4,8 +4,8 @@ min_duration: 1800
 min_date: "20260101"
 total_candidates: 6
 done: 1
-pending: 0
-needs_transcript: 5
+pending: 1
+needs_transcript: 4
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -34,8 +34,12 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/cb1a41d7-b422-4e35-9218-a661d5a8cbf4.mp3
     image: https://artwork.captivate.fm/df762921-cfbb-4ce5-924b-18be8e95e38f/S3-FlirtingWithModels-with-Faheem-Osman.jpg
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-20T01:35:37.838Z
+    transcript_job_id: 0a37a9fb-3ab8-48a8-802a-53d2c109e3c3
+    transcript_completed_at: 2026-05-20T01:37:38.880Z
   - id: 951e8505-07f6-4ffc-b791-72016569f819
     title: Richard Craib - Crowd-Sourced Alpha with Numerai (S7E28)
     duration: 3359

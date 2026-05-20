@@ -11,6 +11,8 @@ export interface DashScopeTaskView {
   taskId?: string
   status?: string
   transcriptionUrls: string[]
+  code?: string
+  message?: string
 }
 
 export interface NormalizedTranscript {
@@ -91,6 +93,8 @@ export function collectTranscriptionUrls(taskJson: unknown): DashScopeTaskView {
   return {
     taskId: asString(getPath(output, ['task_id'])),
     status: asString(getPath(output, ['task_status']))?.toUpperCase(),
+    code: asString(getPath(output, ['code'])),
+    message: asString(getPath(output, ['message'])),
     transcriptionUrls: [...urls],
   }
 }

@@ -5,9 +5,9 @@ min_date: "20260101"
 total_candidates: 128
 done: 0
 pending: 0
-needs_transcript: 127
+needs_transcript: 126
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 2
 downloaded: 0
 episodes:
   - id: 158eb9ce-5324-11f1-95f3-d70e11b2703f
@@ -69,7 +69,7 @@ episodes:
     transcript_provider: dashscope
     transcript_submitted_at: 2026-05-19T19:53:43.332Z
     transcript_job_id: c9fe6afa-5a2b-4a1d-9052-ef2577e10ab2
-    transcript_error: DashScope task ended with FAILED
+    transcript_error: "DashScope task ended with FAILED (FILE_403_FORBIDDEN): FILE_403_FORBIDDEN"
     transcript_completed_at: 2026-05-19T19:54:14.786Z
   - id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
     title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
@@ -128,8 +128,13 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-20T01:32:52.487Z
+    transcript_job_id: 5fe3c84f-4ffe-4c10-8656-ac7248f78950
+    transcript_error: "DashScope task ended with FAILED (FILE_403_FORBIDDEN): FILE_403_FORBIDDEN"
+    transcript_completed_at: 2026-05-20T01:33:23.119Z
   - id: 99f64648-4fd0-11f1-9e5e-dbb8b251b138
     title: How Hyperliquid Benefits From Its New Deal With Coinbase Over USDC
     duration: 2181
@@ -4981,6 +4986,8 @@ episodes:
 
 
 
+
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5164,6 +5171,8 @@ episodes:
       Unchained:⁠⁠
 
         
+
+
 
 
 
@@ -6372,6 +6381,8 @@ episodes:
 
 
 
+
+
         
       Previous appearances on Unchained:
 
@@ -7303,6 +7314,8 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
+
 
 
 
@@ -8497,6 +8510,8 @@ episodes:
 
 
 
+
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -8890,6 +8905,8 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
+
+
 
 
        

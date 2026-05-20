@@ -48,6 +48,8 @@ const transcribeLimit = Number(process.argv.find(a => a.startsWith('--transcribe
 const transcribeWaitMinutes = Number(process.argv.find(a => a.startsWith('--transcribe-wait-minutes='))?.split('=')[1] ?? 0)
 const dashscopeRegion = (process.argv.find(a => a.startsWith('--dashscope-region='))?.split('=')[1] ?? 'cn') as 'cn' | 'intl'
 const TRANSCRIBE_MAX_RETRIES = 3
+const blockedTranscribeHosts = ['traffic.megaphone.fm']
+const blockedTranscribeSources = ['unchained']
 
 // Shared state for generation rate-limit detection and token tracking
 let generationRateLimited = false
@@ -187,6 +189,16 @@ function candidateSortKey(item: { sourceId: string; entry: PlanEntry }): string 
   return `${item.entry.first_seen_at ?? ''}:${item.entry.published_sort ?? ''}:${item.entry.id}:${item.sourceId}`
 }
 
+function isTranscribableAudioUrl(url: string | undefined): boolean {
+  if (!url) return false
+  try {
+    const host = new URL(url).hostname.toLowerCase()
+    return !blockedTranscribeHosts.some(blocked => host === blocked || host.endsWith(`.${blocked}`))
+  } catch {
+    return false
+  }
+}
+
 function selectFairTranscribeCandidates(
   plans: { source: string; path: string; plan: PlanFile }[],
   jobs: TranscriptionJobsFile,
@@ -199,7 +211,7 @@ function selectFairTranscribeCandidates(
     path,
     plan,
     entries: plan.episodes
-      .filter(entry => entry.status === 'needs_transcript' && entry.audio_url && !findJob(jobs, entryKey(source, entry)))
+      .filter(entry => !blockedTranscribeSources.includes(source) && entry.status === 'needs_transcript' && isTranscribableAudioUrl(entry.audio_url) && !findJob(jobs, entryKey(source, entry)))
       .sort((a, b) => (b.published_sort ?? '').localeCompare(a.published_sort ?? '')),
   })).filter(group => group.entries.length > 0)
 
@@ -292,7 +304,7 @@ async function pollTranscriptionJobs(
         for (const warning of normalized.warnings) log.warn(`  ${job.id}: ${warning}`)
       } else if (task.status === 'FAILED' || task.status === 'CANCELED' || task.status === 'UNKNOWN') {
         job.status = 'failed'
-        job.error = `DashScope task ended with ${task.status}`
+        job.error = `DashScope task ended with ${task.status}${task.code ? ` (${task.code})` : ''}${task.message ? `: ${task.message}` : ''}`
         item.entry.status = 'transcribe_failed'
         item.entry.transcript_completed_at = now
         item.entry.transcript_error = job.error
