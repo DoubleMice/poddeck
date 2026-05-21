@@ -1,11 +1,11 @@
 source: flirting-with-models
-refreshed_at: 2026-05-21T06:58:50.731Z
+refreshed_at: 2026-05-21T19:51:09.908Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 5
-done: 0
+done: 1
 pending: 2
-needs_transcript: 3
+needs_transcript: 2
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -19,7 +19,7 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/cb1a41d7-b422-4e35-9218-a661d5a8cbf4.mp3
     image: https://artwork.captivate.fm/df762921-cfbb-4ce5-924b-18be8e95e38f/S3-FlirtingWithModels-with-Faheem-Osman.jpg
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: 0a37a9fb-3ab8-48a8-802a-53d2c109e3c3
@@ -49,8 +49,12 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94.mp3
     image: https://artwork.captivate.fm/72251723-32e9-4542-9449-f75117687aa9/S3-FlirtingWithModels-With-Ruslan-Fakhrutdinov.jpg
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-21T19:51:48.751Z
+    transcript_job_id: 20512e21-5ab7-4c1b-b67f-cd3fd6d90bf7
+    transcript_completed_at: 2026-05-21T19:53:29.893Z
   - id: e8459525-96f7-4ef3-adea-b9266f987e60
     title: Angana Jacob - Data as the True Competitive Moat (S7E26)
     duration: 3442

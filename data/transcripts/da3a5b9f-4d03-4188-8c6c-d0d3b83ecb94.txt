@@ -1,0 +1,507 @@
+Hey everyone, Corey here.
+Thanks for tuning into another episode of Flirting with Models.
+If you're enjoying the show, I'd greatly appreciate it if you'd take a moment to rate, review, and most importantly, share with a friend.
+Word of mouth is how this podcast grows.
+And if you'd like to learn more about Newfound's platform of return-stacked mutual funds, ETFs, and model portfolios, head over to returnstacks.
+Com.
+Now on with the show.
+All right, are you ready to go?
+Yep, ready to start.
+All right, three, two, one, let's jam.
+Hello and welcome everyone.
+I'm Corey Hoffstein and this is "Flirting with Models," the podcast that pulls back the curtain to discover the human factor behind the quantitative strategy.
+Cory Hoffstein is the co-founder and chief investment officer of Newfound Research.
+Due to industry regulations, he will not discuss any of Newfound Research's funds on this podcast.
+All opinions expressed by podcast participants are solely their own opinion and do not reflect the opinion of Newfound Research.
+This podcast is for informational purposes only and should not be relied upon as a basis for investment decisions.
+Clients of Newfound Research may maintain positions and securities discussed in this podcast.
+For more information, visit thinknewfound.
+com.
+In this episode, I'm speaking with Ruslan Fakhrutdinov, the founder of Extended, a decentralized perpetual futures exchange.
+Ruslan is the fifth perpetual futures exchange founder I've had on the podcast, and that's very intentional.
+Flow continues to move towards these platforms, and while trading perps can feel familiar to anyone coming from centralized and traditional exchanges, the way risk is absorbed and resolved under the hood for decentralized exchanges can be very different.
+In this.
+In this episode, we go deep on the design of PerpDex vaults and the role they play as liquidity and risk backstops for the entire exchange.
+Ruslan walks through how platforms choose between protecting system solvency, safeguarding vault depositor capital, and managing trader losses, particularly during stress events.
+We also discuss how settlement finality, governance intervention, and liquidation design determine where losses ultimately land.
+We spend time on Extended's introduction of vault shares as collateral, why that design can be powerful, and the new risks it introduces if boundaries aren't explicit.
+Dresslan lays out the risk management waterfall: when the vault steps in as counterparty, when it refuses additional exposure, and when traders are pushed into forced deleveraging or auto deleveraging instead.
+We close by connecting this framework to extended's next phase, expanding cross asset margin, and what it takes to design a system that still behaves predictably when markets break.
+Please enjoy my conversation with Ruslan Fakhrutdinov.
+Ruslan, thank you so much for joining me today.
+Excited to have you on the podcast.
+I've been following the work you've been doing and the platform you've been developing, and some of the innovations you're bringing to market.
+And I am tremendously excited to talk about some of this stuff because there's some really nitty gritty details that have a profound impact on.
+On how maybe decentralized perpetual trading platforms are going to operate in the future, and I think you're leading the way in some of these venues, and so I'm really excited to get your perspective on the design and the integrations and all those things.
+So thank you so much for joining me.
+Thank you for inviting me, Corey.
+Looking forward to answer any questions you might have.
+Now I have a nice mix of listeners that come from both tradfi and the world of crypto, and I want to make sure we start the conversation by taking a step back and not making any assumptions.
+So for listeners who maybe are not familiar with extended or less familiar with decentralized perpetual futures platforms in general, this might be the first time they're hearing of these ideas.
+How would you describe what you're building and sort of the core problem you're trying to solve?
+So, from our side, we are trying to build a truly decentralized exchange with unified margin across Perps, Spot, and integrate the lending market and the vault.
+Because we believe that despite there are quite a lot of good players in the Perp DEX space, the product portfolio of the Perp DEXs is still significantly lacking behind versus what the centralized exchanges can offer.
+That's one, and secondly is that.
+Currently, the perm DEXs they are basically competing for more or less the same target audience, who are crypto native users, and we've extended we have an ambition to bring in the new cohort of users to start using decentralized exchanges.
+There's all these design choices that have to be made when a perp dex goes from centralized to decentralized, and one of those design choices about whether you ultimately control the settlement layer or not.
+And one of the distinctive choices that Extended made is that you do not want to control the settlement layer.
+Can you explain what that means and why that was such an important choice to you?
+Essentially, if you control the settlement layer, right in the end, you control the user funds.
+In the nutshell, the settlement layer is the like underlying tech stack, blockchain or whatever, where all the transactions are settled, and where the user balances are stored, as well as where all the updates to the user balances are made.
+That's probably the core principle to which we're trying to stick.
+We tried to stick it from day one is that we didn't want to control the settlement layer, right?
+Because if you do control the settlement layer, or even if you have an impact on it, basically you are not so different from a centralized exchange.
+And for us, it was an important decision to effectively be building on the public chain.
+We are lucky that the current state of the tech and of the blockchain allows to do so.
+That's why we've chosen to proceed that way.
+Correct me if I'm wrong on this, but my understanding is both extended and Paradex settle to the Starknet blockchain.
+And you emphasize this point that you want that settlement to be independent.
+But recently we saw an example with Paradex where there was a pricing glitch that led to mass liquidations, and they actually rolled back, I believe, the blockchain to a prior state.
+To prevent that glitch and those mass liquidations and all those losses for their traders, in theory that settlement should have been independent, but it wasn't.
+What does that episode tell you about where independence truly lives when we talk about the separation of settlement from the actual exchange itself?
+I think the important note here is that and Paradox are quite transparent about that they are not running on Starknet itself.
+They have their own, basically fork of Starknet on which they are running.
+Basically, currently they do control the settlement layer.
+I assume they do have a path to decentralization, but as of now, we are different in the sense that we are running on the public Starknet.
+And we wouldn't have the same ability to unwind the trades, obviously, unless the governance of Starknet itself would do it.
+I think this brings up sort of an interesting concept of what I would call sort of maybe conditional finality versus credible finality.
+With conditional finality, the expectation is that all the trades are finalized, but there is a chance that.
+Governance can ultimately intervene that certain parties, ideally not one party, but certain parties can come together and say, "system misbehaved, we have to unwind these trades."
+That's happened in centralized exchanges, right?
+We famously happened on the London Metals Exchange years ago.
+I'm curious again in your thinking, both theoretically and practically, like how does this manifest in system design and what are the implications for the end users?
+Right, again, you've stressed this idea that settlement independence is really important to you and critical and something you think that users should value.
+How should users of the system be thinking about this stuff?
+I think the easiest way, right, is to draw an analogy with traditional finance.
+If in traditional finance you have clearinghouse, you have exchanges, you have brokers, etc.
+Now, at the stage when you start controlling the settlement layer, you are basically commingling all the things into one place.
+Like in TradFi, there is a reason why those functions slash nature of operations are separated and are conducted by independent different entities.
+If we try to bring that to blockchain, that basically implies that we run as an exchange and then the settlement layer, which effectively is a clearing house, is independent of us.
+Obviously, the clearing house can have its own governance and its governance can decide to.
+Roll back the chain or do whatever changes they seem fit to do, but one that governance ideal is decentralized, as you mentioned.
+And secondly, what I think is important is that we as an exchange operator don't really have an impact on that governance, because fundamentally, every type of system has some sort of governance and that's totally normal.
+But there has to be a separation of responsibility and the separation of the actions that you can take.
+If rollback isn't possible, and we'll assume there is independent governance that you can't interfere with, and they're stating no rollback, losses ultimately have to land somewhere.
+So again, I don't want to harp on Paradox here, but they had a glitch.
+That glitch led to mass liquidations for their users.
+Those were substantial losses.
+They were able to roll that back, but let's say there's a case that can't be rolled back, and there's all sorts of situations where that might lead to losses—whether appropriate losses or inappropriate losses due to an exchange failure or event.
+You know, where do you think those losses should ultimately live?
+How do you think about delegating those losses, and where does the exchange have to step in to try to rectify situations?
+In my personal opinion, I believe that effectively the person slash the entity which is responsible for these losses has to take responsibility to the degree it can afford to take.
+Obviously, if the responsibility is bigger than the balance sheet of the entity, right, the entity then cannot do anything.
+That's one, but until the entity is financially healthy.
+And able to cover those losses, my personal opinion is that it has to take responsibility for its actions and pay for the losses it basically has incurred due to its activity.
+So, one of the most important features of bootstrapping a decentralized exchange, at least in the last couple of years, has been these market-making vaults that allow third parties to contribute capital.
+To a vault that's typically run by the exchange that helps provide liquidity to the traders and the people who contribute earn some rate of return based on the profit of that vault, and that vault helps bootstrap some liquidity when market makers have yet to show up.
+The design and intention.
+And other aspects of those vaults, though, can vary dramatically from platform to platform.
+So they all sort of, in core concept, have the same idea, but how they're actually implemented leads to very different results.
+Can you talk about the role of which the vault plays inside extended?
+Is it best thought of as a clearinghouse, an insurer, a liquidity provider of last resort, some combination of the above?
+How should people think about that?
+At extended, essentially, the vault is the cornerstone of the entire system.
+I think you've spotted on a very correct thing that over the past couple of years, the vaults have helped various protocols to bootstrap liquidity and to effectively bring in users to the platform.
+And obviously, Hyperliquid was the first to do so.
+Besides that, the vaults also could play a couple of other important functions.
+One is they often play as insurance funds, and they do process all the liquidations.
+With that, effectively depositors into the vault won't benefit from the PnL of liquidations, but also bear the risk which is associated with that PnL.
+Now we've extended.
+To give a very brief recap of how our vault works and how it is different from the rest, essentially when you deposit funds into the vault, we issue you an extended vault share, and that extended vault share can be used as the collateral on the vault.
+That's the first differentiation, and the second one is that the yield of the vault depends on the trading activity of the user.
+So the more active you are, the bigger is the yield that you earn.
+Currently the vault plays, I would say, two important functions.
+One, it provides liquidity across most of the markets on the exchange.
+It's not the primary market maker, and its market share on the exchange is reasonably low.
+However, it does, in a sense, provide the liquidity of the last resort if no one else is quoting.
+That's one, and the second role is that the vault serves as an insurance fund.
+So effectively, all the liquidations which are processed on the exchange go through the vault.
+In the future, we also like once we launch the cross asset collateral margin, which basically assumes having a lending market in the exchange.
+The vault will also become the primary lender of USDC.
+All the users who use non stablecoin assets as the collateral and hence for extended the vault.
+Becomes probably bigger than the vaults of other exchanges in terms of functionality and importance on the exchange.
+Because on the one hand, it serves as the collateral for the users who deposit funds into the vault, boosting capital efficiency, allowing to earn yield on the margin, etc.
+On the other hand, from the exchange standpoint, it will serve three core functions.
+One would be processing all the liquidations on the exchange.
+Secondly, it will be providing liquidity.
+And thirdly, it will be effectively the major lender of USDC on the platform.
+There is a lot to dive into there, and we're going to tackle a lot of those ideas throughout the rest of this episode.
+I want to start with maybe something a little bit simpler and go to.
+Sort of the extremes and think about stress scenarios, right?
+We talk about this vault playing an important role within the extended ecosystem, and often what we see in crypto is extreme bouts of volatility.
+And so, it would make sense to ask the question: Well, if this vault is so important, what?
+What happens with this vault during extreme bouts?
+And I typically think the behavior and design of these vaults along sort of three axes.
+And this is too naive; feel free to use a different model, but I sort of think of like the vault's going to prioritize protection either the individual traders that are actually trading on the platform, it's going to prioritize protecting the vault depositors, and it's going to prioritize protecting the integrity of the platform at large.
+And the design of the vault is going to have some tradeoffs between those.
+Three concepts, depending on sort of the backstop of the system.
+So, can you talk a little bit about how the extended vault is designed and how it trades off between who it's prioritizing the protection of in these stress scenarios?
+First and foremost, any product and any design choice you make as the operator of the exchange has to protect the integrity of the platform.
+By protecting the integrity of the platform, I basically mean that whatever you do.
+And whatever product you have, you must ensure that assets of the exchange are bigger than its liabilities.
+Because if that balance is broken, and liabilities of the exchange become bigger than assets, then the losses are basically unlimited.
+And the vault is designed to protect the integrity of the exchange.
+Now, in terms of protecting traders and vault depositors, obviously there is a balance.
+The way we solve it is that effectively Vault operates within strict risk limits within which it can take both risk and potential PnL hits.
+Anything beyond that is distributed onto traders.
+What that practically means, the correct way to think about it is the protection of last resort is out of the leverage, and that's applicable for.
+All the exchanges.
+Now, by virtue of introducing vault shares as the collateral, we effectively reduce the risk tolerance in terms of application of out of the leverage.
+And that's how we balance the opportunities that the vault creates with an incremental risks of which it creates.
+I can deep dive into that thought if you think it's necessary.
+Yeah, I definitely want to double click on that some more.
+I mean, maybe I just ask a follow up question.
+So when markets are under stress, and that's typically situations where traders are getting liquidated, one of the roles of the vault is often to step in and take on those positions and close those positions.
+And then there are times where it can't, and the user gets auto deleveraged or.
+Or forced liquidated, how do you decide when the vault steps in as the buyer or seller of last resort versus forcing users to close these positions?
+Basically, when you have the vault as the collateral, there are two aspects of liquidation that you need to take into account.
+The first one is when you have a synthetic position which is being liquidated and the vault has to close basically.
+The way it works on extended vault, which is I guess slightly different to the other perp DEXs, is that ahead of processing any liquidation on the exchange, the vault deterministically knows the PNL of that liquidation.
+A very simple example would be imagine the vault needs to close one BTC long position.
+Ahead of taking over that position, the vault would short one BTC on the exchange, and it would exactly know the price at which one BTC was shorted, and it also exactly knows the bankruptcy price of the user who holds one BTC long and who is being liquidated.
+Combined, that basically means that the vault knows the PNL of any liquidation, and then at the time when the vault knows the PNL of the liquidation, it basically checks whether the potential loss of that liquidation is.
+Within three types of risk limits, one is the maximum loss per trade, the second one is the maximum loss per market within a day, and the third one is the maximum overall loss of the vault within a day to process liquidations.
+If those thresholds are breached, the vault will.
+Revert its one BTC short in that example and will never process that liquidation, and that user will be out of the leverage.
+And that's what I basically mean by reducing the threshold for the risk tolerance in applying the out of the leverage.
+Because if you take the example of the hyper liquid vault, they are taking over the position onto the vault in any case, and then they are dealing with its closure later on.
+We do it differently.
+We tell, okay, we are ready.
+This is the maximum loss the vault can take.
+If that liquidation will result in a bigger loss, the user will be out of the leverage.
+I want to explore that example you gave a little bit deeper, right?
+So the user is long one bitcoin.
+Coin and they're getting liquidated.
+The vault to take on that position is going to try to short one bitcoin, determine the potential loss of doing so, and then if the loss is within threshold, take on the user's trade.
+and I presume those are now netting against each other.
+That trade can be closed.
+How precisely is it sort of measuring that loss?
+Is it for?
+For example, just assuming a market taker order at the current state of the order book, and if so, does that imply anything about the priority which the vault is treated versus any other traders on extended?
+It actually doesn't measure like the depth of the order book in order to decide the p and l of that liquidation.
+It actually executes this trade.
+But that trade is not settled before the validations on the maximum loss of the PNL are passed.
+Because if you have a liquidated user on one side, you can calculate his bankruptcy price precisely, and if you know at which price you exactly will close his position, because you've actually closed his position before taking it over, you can calculate the PNL of any liquidation.
+With basically ten to minus six precision, which is the USDC precision, now the vault in that sense is slightly different to all other users because it has ability to revert its trades.
+That is probably the core difference.
+In practice, it doesn't really give it any advantage just because that functionality is only used for the purpose of the liquidations.
+And in theory, that's all happening atomically, so that no one else on the system is actually seeing you execute that trade and the order book changing.
+So everyone else is unaware of that check.
+Exactly.
+So can you talk a little bit more about?
+The conditions in which the vault is going to sort of refuse to take on that additional exposure, leading to the auto deleveraging of users, can you be a little bit more explicit about those sort of risk parameters?
+Yes, so the first one is the maximum loss per liquidation trade.
+Effectively, for every single market, we have a maximum loss which the vault can take.
+The more liquid is the market, the bigger is that loss.
+The less liquid is the market, the smaller is that loss.
+That's the first one, and effectively every single liquidation trade has to pass that risk limit.
+The second one is we are saying that any single market on the exchange can only access a fraction of the vault equity, and combined losses on processing liquidation trades within a single day.
+Cannot exceed that threshold, and the third one is we are saying that the vault at maximum can lose I think ten percent of its TVL during the day due to processing liquidations.
+So basically, these are the three risk limits that we apply when we process every single liquidation.
+So, given those risk limits, let's say they start to be exceeded and you need to auto deleverage users.
+For people who maybe aren't familiar with that term, what does auto deleveraging mean and what does it look like at extended?
+So, auto deleverage is basically when you take the opposing positions of the users.
+And you force close them at the bankruptcy price of the liquidated user.
+In practice, that means that if you have a let's say liquidated user with one BTC short position, and you have a super highly profitable user with one BTC long, you will.
+Force close the position of the profitable user against the liquidated user.
+The profitable user will lose part of his profits.
+The liquidated user's equity will result in zero as the end of the over leverage.
+You mentioned earlier that you recently introduced the extended vault share or the XVS token, which represents a claim on vault collateral.
+And with this introduction, you allow users to use XVS as collateral for their trading.
+I think at first blush, this seems like it could introduce potentially a substantial amount of risk and in particularly tail risk into the system.
+When a claim on the vault, which is so important to the integrity of this system, is then used as collateral, you sort of see this potential risk of feedback loops.
+Can you talk a little bit, sort of at a high level, what risks does it potentially introduce?
+When, for lack of a better phrase, like there is a little bit of rehypothecation of capital.
+Effectively, there are only two types of risks.
+Let's assume that you have a user who is using XVS as the collateral on the exchange, and then he is also opening position against his XVS collateral.
+Effectively, there are two fundamental risks.
+One is that during the liquidation, if the user becomes liquidatable and you need to liquidate his XVS, which basically means withdrawing funds from the vault, you cannot do that because the vault holds exposure and the vault holds its own positions and the vault cannot close those positions because the markets are illiquid at a given point in time.
+So now you have the problem that you cannot liquidate the user.
+Due to the fact that his collateral is in XVS, the entire system is USDC settled, and you cannot liquidate his XVS.
+That's the first type of risk.
+The second type of risk is that there is a significant drop in value of XVS, which leads to a cascade of liquidations.
+The drop in value of XVS can come from two drivers.
+The first one is the vault loses a lot of money on liquidations, and the second one is the vault loses a lot of money on its trading activity.
+There are mitigation measures that we apply for both of those risks.
+So if we start from the first one, when we have a user in liquidation and he has XVS as the collateral, what practically happens is the following.
+As the first step of the liquidation process, we try to, effectively redeem, XVS of the user against the USDC balance of the vault.
+As part of that process, the vault has to close its open positions pro rata, to the amount of XVS that we've tried.
+If the closing of the position was successful, everything is simple.
+The XVS is burned, the user gets his USDC back.
+If he becomes healthy, the liquidation stops.
+If the user is still in liquidation, right, we'll process liquidating his synthetic position.
+Now, the edge case here could be that the vault.
+Holds open exposure on the markets, and when there is a liquidation request to burn XVS shares versus USDC, it cannot close its open positions due to lack of liquidity on the markets.
+And then basically, if we wouldn't have a protection measure against that, the system would break at that stage.
+What we did is we introduced a new type of operation which we call force close.
+Force close, in the nutshell, is very similar to auto-deleverag.
+e With two core differences: one, only the vault can apply that operation, and secondly, if as part of our auto-deleverag.
+e You close the position at the bankruptcy price of the liquidated user.
+With forced close, we close all the positions at the mark price, which basically means that you just close the exposure without transferring profits and losses from one user to another.
+A simple example would mean, let's assume the vault holds a position of ten BTC long on any given market, and then has to pro rata close one BTC in order to serve XVS withdrawal.
+It cannot do due to absence of liquidity.
+What it will do, it will take one BTC.
+It will find the most profitable and highly leveraged user on the other side, and it will close its one BTC exposure using this forced close operation at the mark price.
+Effectively, that mechanics allows vault withdrawals for the purpose of liquidations to be processed at any point in time, regardless of the market conditions.
+And that's also for the first risk.
+The effectively downside of that approach is that.
+Again, we introduce a new type of operation which is close force close, which is similar to ADL.
+Again, we reduce the risk tolerance for applying some version of out of leverage.
+Right now, the second type of the risk is when you have user with XVS collateral and then price of XVS significantly drops.
+For the price of XVS to significantly drop, you essentially need the equity of the vault to drop.
+The equity of the vault can drop only for two reasons: one, it has significant losses; it makes significant losses in liquidations, which we basically solve by applying relatively strict risk limits.
+On the maximum liquidation losses that the vault can take, the second type is losses due to the trading activity.
+On that front, in the nutshell, we also apply, I would say, risk controls for the vault's exposure and potential volatility of its PnL due to its trading activity to be within reasonable boundaries.
+What it practically means is that one, we have a limit on the global leverage of the vault, so the vault will not be increasing its leverage and will start quoting in reduce only mode if that limit is breached.
+Secondly, we have risk limits, position limits per market, so effectively the vault cannot take an extremely large position on any single market.
+Thirdly, the quoting logic of the vault depends on the volatility on the market.
+So the more volatile is the market, the wider is the spreads with which the vault quotes.
+And lastly, the vault aims to have, in simple words, the vault aims its open interest to be better hedged.
+What that means is that the weighted net exposure of the vault is always aiming to be zero.
+Simple example would mean I know if you have one BTC long on the vault as the exposure, the vault will try to have I know minus twenty ETH short as part of its exposure.
+In that force close operation, you mentioned very specifically that the close happens at mark rather than say mid price.
+Why that distinction?
+Why is it so important that the force close happens at mark?
+Because mark price is the price that we don't control.
+Effectively, when you are building a self-custodial exchange, you need to make sure that at least you respect three things.
+One is that you don't control the settlement layer.
+Second is that you have on-chain validations of the trading logic, which don't allow you to settle the transactions which.
+Are fraudulent or incorrect, and the third one is that you don't control the prices at which liquidations are handled.
+And liquidations are handled at the mark prices, and mark prices, at extent, are sourced by an independent oracle which we don't control.
+And hence, the forced close operation has to be done at the fair price of the market and not at the mid price of our order book because it can be skewed, manipulated or whatever.
+Hence, we do it at the mark price.
+One of the other features we haven't talked about, I think, is important in the design, is that there's a haircut to which XVS.
+Not every dollar of XVS gives you a dollar collateral.
+Correct me if I'm wrong, a dollar of XVS token gives you 90 cents of collateral.
+And so can you talk a little bit about how that plays into the risk management of the system, but also I'm curious how you arrived at 90 cents being the right number.
+Why not 85?
+Why not 95?
+Why not 50?
+So, as I mentioned before, when you burn XVS, hence when you try to withdraw your funds from the vault, the vault closes its positions pro rata on the exchange.
+If it closes its positions pro rata on the exchange, that basically means and it closes it using like basically there is an algorithm, but in the nutshell, it closes it using taker orders.
+There can be slippage incurred at closing the positions.
+Even if you assume that the markets are super liquid, you cannot apply one hundred risk weight because the vault doesn't only consist of USDC; it holds open interest, open positions in order to serve withdrawals.
+It has to close those positions.
+There can be slippage, which occurs in seconds.
+So that's one reason, right, not to have the one hundred percent contribution factor.
+The other reason is because there can be some losses on de liquidations because the risk limits are not zero.
+There can be some losses due to the trading activity of the vault.
+Ninety percent is the number which we believe.
+Given the design of our risk limits, would effectively be on the one hand significant enough for the majority of users to be able to use XVS instead of USDC as the collateral, but at the same time give the sufficient degree of protection against the potential losses.
+I want to talk about maybe what is a really extreme scenario, but just sort of a stress case where the vault hits its risk limit for the day of loss.
+So XVS has lost value, traders start getting liquidated.
+The vault will no longer take on positions, is my understanding of that scenario.
+Traders start getting auto liquidated.
+How does that risk or prevent a feedback loop, especially where you could still potentially see further losses in the vault, even if it's not taking on more positions simply from market prices going down?
+Like, how does this find stability if the market keeps dropping?
+There is an important caveat to that.
+When the vault hits one of its risk limits, it will force close all of its positions.
+So basically, it will go back to USDC as the only asset and the only type of exposure that the vault itself holds, which will prevent any future drops in value.
+So is it fair under that scenario to say the vault is, I think we sort of stressed this before, the vault is going to first and foremost prioritize system stability and integrity and solvency, and then it's going to, I think through those actions, I would argue protect depositors into the vault and then traders last.
+Though I think there's maybe an argument at does ADL or forced closing hurt traders or not.
+I think that's an open discussion and debate.
+Maybe you've got some opinion there.
+The way we see it is that, obviously, going back to your risk framework, first and foremost, the vault protects the integrity of the system.
+Then it protects the traders, but within risk limits.
+If those risk limits are breached, it starts protecting vault depositors and putting the risk and the potential losses back to the traders.
+In reality.
+I would say probably ninety nine point ninety nine of the cases, the risk limits of the vault would be sufficient to protect the traders, and would never get into the scenario when effectively the risk is passed on to the traders.
+In practice, as we know, all the edge cases are possible, so for all types of black swan events are also theoretically possible, right?
+In that scenario, the difference that we have at Extended is that effectively we have a lower risk tolerance onto pushing those risks onto profitable traders effectively.
+Because if you are a loss-making trader, you don't care whether you are liquidate against the vault, whether you out to the leverage or whatever.
+You are pushing the risk on the profitable traders.
+We do believe that the benefits of the vault outweigh those implications, and that's why we've launched that product.
+We also believe that.
+Given that at least in our world, the benefits of having yield-bearing collateral, which has a boosted yield, is bigger than the edge case of effectively covering the losses by using the margin of profitable traders, we also believe that it will be becoming an industry standard in the longer run, and we'll see more and more perp DEXs offering similar functionality.
+As you've probably seen, Lider has recently announced that they are going to effectively tokenize the L B and use it as the collateral.
+And they do think that it's the right decision.
+Given how critical the vault is to the extended platform.
+How do you think about stress testing for sort of the long enumerated risks of tail risks?
+Right, I mean we've seen situations in the past where bad actors have explicitly tried to exploit the behavior of certain vaults.
+I think probably most famously the Hyperliquid Jelly Jelly attack.
+There's so many design vectors here.
+How do you make sure that you've covered all your bases?
+I think in reality you do two things.
+One, you start from the edge cases.
+The edge cases, there can be numerous amounts of them, right?
+Like you have one trader on the exchange, he deposited funds into the vault, he traded against the vault, he becomes liquidated, but what happens in that scenario?
+Then the other one would be that someone has taken over the market and is manipulating your mid price.
+What happens to the vault?
+What happens to its exposure, etc.,
+etc.?
+And effectively, you go through all those potential edge cases and scenarios and you try to understand how your vault would behave and you design certain protections against those scenarios.
+That's why, for example, our vault processes liquidations deterministically because we've seen what happened with the jelly case.
+And we want to have a protection against that.
+And then, secondly, obviously try to simulate those scenarios on the test net and just test them and see whether the vault actually behaves the way you expect it to behave.
+On the roadmap is the ability to use multiple different spot.
+Assets as collateral, and so as you expand from call maybe a closed, controlled set of collateral being USDC and XVS to a more open one where maybe you will allow things like Bitcoin or ETH to serve as collateral, what changes in how the vault has to manage risk?
+Before going there, right, I would add one more important thing is that fundamentally, given that perps are zero-sum game, so positive PNL of a trader is always equal to the negative PNL of a trader.
+If you think about it from that scenario and you think that in the worst case you can effectively always force close the positions and there are some restrictions, etc.
+I guess many will see that.
+The design that we have with the vault allowing to use as a collateral is possible and is sustainable.
+Because if effectively the system is a zero-sum game, you can always bring the system back to health.
+Now, on the cross-asset collateral logic, before going to the details of how we'll implement it, right?
+Let's probably cover.
+The basics, right?
+So, what it will allow to do effectively, it will allow to use non-stablecoin assets as the collateral on extended.
+Those non-stablecoin assets could be WBTC, WETH, USDC, USDT, any other asset within it.
+So, people could use those assets as the collateral to trade USDC self-perps.
+And if the user has a negative.
+USDC balance as a result of his trading, he's basically borrowing USDC from someone on the platform.
+And then if that user becomes liquidatable, you need to sell his spot asset versus USDC, and then proceed with the rest of the liquidation because the entire system is USDC settled.
+On the high level, that design has been battle tested, all the major centralized exchanges support it, and I think it has its market fit and has been reasonably popular.
+Now on extended, we don't have spot markets, and that basically means that in order to support the cross asset collateral logic, we need to find a different way for liquidating the non-stablecoin spot assets of the users in case of their liquidation.
+We are going to solve it through essentially three things.
+One, which is the base case on how you sell spot assets, is we'll have an RFQ system with all the interested market makers on the exchange being able to participate in that, where effectively they will be taking over the spot assets of liquidated users against their USDC balance, and effectively that will be a spot trade done via an RFQ system.
+We do believe that it will allow us to support the cross asset collateral margin at scale.
+Just because in reality, probably we have I don't know over fifty various market makers integrated into extended, and they do have sizable USDC balances.
+And for the liquidations of the spot assets, they will essentially be serving a very profitable flow.
+And in the nutshell, what they can do is imagine you have a market maker.
+He has USDC balance on the exchange.
+He sees that we need to liquidate one BTC.
+He takes over one BTC, sends the liquidated user his USDC collateral.
+The margin of the market maker doesn't change significantly because the BTC that he has taken over actually contributes to his margin.
+He can hedge that exposure either on extended or on any other centralized exchange or decentralized one, and then in the long run, he can just rebalance his holdings.
+He can.
+So we believe that that system is quite scalable because, in reality, if we look at the spot markets in DeFi, especially on the order book based exchanges, they are quite illiquid compared to decentralized exchanges.
+And that's probably the major blocker to support cross asset collateral margin and scale.
+And that's how we are solving it.
+We are effectively saying, market makers, guys, you can use your entire margin to be serving spot liquidations on extended and effectively making money on that.
+Now, if we assume that none of the market makers are willing to take.
+Those liquidated spot assets will be transferring them to the vault with a certain, again within the risk limits of the vault.
+And then there will be a decay function when the vault is trying to sell that exposure to the market makers, gradually dropping the price.
+Again, let's assume that the vault exposure.
+Is too big, right?
+It has breached its risk limits and it cannot serve additional spot liquidations.
+Then we'll do an out of the leverage of the spot asset.
+The out of the leverage of the spot asset basically means that we take USDC balance of the traders and swap it to the spot assets, and hence the entire system again remains solvent.
+There's a lot to unpack there, so I want to go through maybe each step by step.
+So let's start at the beginning, which is just operationally.
+You mentioned multiple times that the whole system settles in USDC, so enabling cross-asset margin in sort of a flexible, extensible manner requires this idea of borrowing.
+And earlier in the conversation, you mentioned the idea of the vault.
+Acting as a lender in this case, maybe we can just start there operationally.
+Someone wants to use something like Bitcoin as collateral on a USD settled system.
+Walk us through the logic of how that's you know, right?
+We're really borrowing and how that plays out through the system, where those interest rates come from, for example.
+Let's start there operationally, how that's working.
+So operationally, it's reasonably simple.
+As a user, you deposit, let's say, one BTC on Extended.
+You have it basically as your margin.
+Now there is a notional value of that exposure.
+Basically, the notional value is equal to the size of your position multiplied by the spot price of the asset.
+Then there will be a certain haircut that will apply.
+After the haircut, you will know your equity on the exchange.
+That equity can be used to trade USDCs at all purpose.
+So let's imagine that you've deposited one BTC.
+The price of BTC spot is now one hundred k.
+The haircut is let's say five percent.
+You have ninety five k of margin that you can use on the exchange to trade UCC settled perps.
+Let's say you open a position on any market and you have a long exposure.
+Let's say if.
+Now let's assume that the price of ETH starts dropping.
+You effectively have a negative unrealized USDC balance.
+So you have plus ninety five k of BTC spot exposure that contributes to your margin.
+You have certain negative unrealized PnL on your synthetic position of Ethereum in that example.
+As long as your equity is bigger than that unrealized PnL, you are effectively and the maintenance margin requirements, you are effectively healthy.
+At the point in time when you have a negative unrealized USDC PnL, you are essentially borrowing USDC from someone on the platform, and you are effectively paying an interest on that.
+The idea that we have is that the vault will become the major lender on the platform.
+What that essentially means is that let's say there is, I don't know, one hundred million of TVL inside the vault, and let's assume with all that the maximum amount of funds that the vault can lend is fifty or sixty million.
+Doesn't matter, as long as the borrowed amount of USDC is below that threshold, effectively people can continue borrowing, can continue depositing.
+And as long as the amount is lower than that threshold, the interest rates are healthy.
+Once the amount of borrowed USDC gets closer to that threshold, the interest rates skyrocket.
+You incentivize people to deposit into the vault because the vault effectively is the major beneficiary of all the interest payments.
+And in the ideal scenario, the system becomes healthy.
+That's how it will work operationally on a very high level.
+There are a couple of nuances of how the interest rates will be calculated and how we think about it, but I guess I will leave it to a separate question.
+Let's go there, right?
+Because the idea would ultimately be that you are having multiple assets become eligible as collateral.
+So let's talk about how the interest rates and incentives adapt to prevent sort of imbalances from building inside the system.
+Traditionally, let's say if we think about decentralized exchanges, right, and their logic of cross asset collateral margin, in reality, they have like numerous assets that they support as collateral against which you can borrow USDC, but the borrow rate of USDC is always the same across all the assets.
+And in the nutshell, it's a very simple system where the interest rate depends on two things.
+One is the.
+Total available USDC that can be lent out versus the total value of already borrowed USDC, you have a very simple linear function, which at some thresholds changes its slope and the interest rates become super aggressive.
+Theoretically, everything makes sense.
+Practically, you can run into a risk where the USDC is borrowed against a single asset and you have humongous exposure of that asset.
+Against effectively the USDC that you lend, the way we are planning to solve for it is that our interest rates will depend on the asset which you lend, which effectively transforms a simple linear function where the interest rates depend on the TVL of the lender versus the borrowed amount into slightly more complex logic, where effectively you have.
+Two inputs which define the interest rate.
+One is the overall amount of borrowed USDC versus the liquidity available, and the second one is the amount of USDC borrowed against a specific asset versus the maximum amount you are ready to lend against that asset.
+In practice, that will mean that the interest rates that you will have to pay as the depositor of non-USDC assets on the exchange will depend on the asset that you deposit.
+And that will also allow us to even out effectively the risk profile of the system, where we shouldn't have significant exposure to any asset if we don't want to take that asset any further.
+So let's maybe again walk slowly through a case of liquidation for a user that's using something like Bitcoin as their collateral.
+And you know, we mentioned this idea; I think it was in our pre-call that, and you mentioned explicitly you don't have spot markets with which you can easily liquidate that Bitcoin exposure, and so you.
+You have to use this RFQ-based liquidation system with market makers, but walk it through again.
+The user enters into a state where they need to be liquidated.
+What actions is the vault actually taking now that their collateral is in some spot asset?
+In the healthy scenario, the vault doesn't take any actions.
+You have a user with an let's say BTC as the collateral.
+That user becomes liquidatable.
+You have a separate system where all the market makers are streaming you prices at which they are ready to take on that exposure.
+The system knows it needs to sell one BTC.
+It sees all the prices at which it can sell it.
+It basically performs a swap between the market maker who gives the best price and the liquidated user.
+And effectively, the vault only charges the liquidation fee in between.
+That will depend on the bankruptcy price of a liquidated user versus the price that the market makers are ready to offer.
+For the market makers, effectively the way it will work is let's imagine they are part of the system and they have USDC balance on the exchange.
+They're using that USDC balance to quote across all the extended markets.
+What will happen to them is that part of their USDC effectively will be sold for that one BTC.
+This one BTC will continue.
+Contributing to their margin, which they can use to sustain their open positions on the perps market, and then they rebalance afterwards.
+Now, let's assume that there is a spot asset which no market maker wants to take over.
+What we effectively do is we take one BTC in that example, we transfer it to the vault.
+The vault gives USDC.
+The vault is trying to immediately hedge its exposure on the perps markets.
+So basically, if it has one BTC long, it's trying to short it.
+If it was successful in shorting it, the exposure effectively the vault has earned money because one BTC, which we've taken from the liquidated user, had a haircut.
+That haircut becomes the PnL of the vault.
+The vault has a hedge position, and then the vault is trying to sell it to market makers.
+Slowly reducing the price at which it is ready to sell one BTC, at some point someone takes over that position, done.
+The system is healthy.
+Now let's assume the scenario that the vault is no longer willing to take that exposure in the healthy manner, and then we need to come to the stage where we out of the leverage spot.
+Out of the leveraging spot is international, very similar to out of the leveraging perps.
+How do you make sure that you get a reasonable price for that spot asset through the RFQ system?
+I mean, obviously, you would expect competitive market forces, but I would expect in a very stressed market environment, you have a situation where market makers are saying, "Okay, we're going to now take on collateral that has volatility, and if we're going to then have to hedge that, it might be a significant."
+Bid ask spread for us to quickly hedge that type of exposure, and so they're going to want a bigger haircut on that asset.
+And you might only start receiving bids that are significantly under sort of a reasonable fair value, a steep discount.
+Or in the case where it's the vault trying to liquidate, not to say that I would see the market makers colluding, but if they know it's the vault liquidating and it'll keep lowering its acceptable price, you know they could sort of just keep walking it down until they get a.
+An unbelievable discount.
+How do you prevent those scenarios?
+In terms of the first scenario, effectively again, similarly to perps, there will be a loss which the vault is ready to take.
+Let's assume the haircut is ten percent, and then the best price which the market makers offer is fifteen percent below that.
+Then, if the vault is happy to cover that exposure within its risk limits, done.
+The exposure is closed.
+If the vault is not happy to close that to effectively take on that loss, you effectively go to the last resort, which is the out of the leverage of spot.
+That's all happening atomically, right?
+Yes, the vault will again this for me mystically know it's spilling.
+On the second question, right, the market makers will not know against whom they are trading.
+Because effectively, the only thing they will do is they will stream prices, and that will be a last look model.
+Actually, they are streaming prices with okay, we are ready to sell that price.
+They have to confirm that they are ready to buy at that price.
+So let's talk about sort of the last piece there, that auto deleveraging, where you end up.
+Swapping the asset, so if I am understanding it correctly, there is a scenario where an investor maybe again uses Bitcoin spot long, they get liquidated.
+The vault isn't willing to take on the position or accept the loss that it would take to take on that position based on the prices the market is streaming.
+What's going to happen is the system is going to find a profitable trader on the other side and basically say, "the spot is yours now, we've closed your trade and you are now sitting on spot," and the risk to that trader is.
+Their trade was profitable.
+They get closed, they get this spot, and the spot market moves against them, and they end up taking a spot loss because the spot was pushed on them.
+It won't be a single trader.
+The way the system will work is it will say, okay, like we need to out to leverage one BTC.
+We have ten thousand USDC depositors.
+Obviously, like will not be settling it against ten thousand traders, but will pick up, I don't know, like ten percent of the largest USDC depositors and out and leverage against them.
+In reality, they will like in any given point in time, they will take that bought asset that profit because the haircut will become their profit.
+But in practice, yes, they will effectively have a volatile asset as their collateral.
+I feel like we started this conversation at a super high level and we just keep digging and digging and digging and digging and getting closer and closer.
+But the reason I wanted to have you want to have this discussion is because I do see more and more adoption of decentralized perp exchanges happening in the future, and these design decisions are so critical for anyone who is trading.
+Who is trading on them?
+So I really appreciate you coming on and being so transparent and discussing all these details.
+And I think as we talk about the sort of future of financial markets and these types of exchanges becoming more important, understanding these critical differences in these design decisions versus centralized exchanges is going to be incredibly important for anyone trading on them.
+So it's really appreciated.
+I want to wrap this episode with the same question I ask everyone this season.
+Totally outside the questions we've asked, and ideally outside of work, what is something that you are obsessed with right now?
+I know running an exchange full time, building exchange, probably takes up ninety-nine point nine nine of your attention, but outside of that, what is an idea, an activity?
+It could be a book, a show, a movie, something you've read, something you are doing that has just fully captured your attention and your obsession.
+So, in reality, for me, it's super simple.
+Like, I try to obviously the exchange is taking majority of my time.
+All the time I have free left, I am trying to spend with my family.
+That's a great one.
+Well, Ruslan, thank you so much for joining me.
+I really appreciate it, and good luck.
+Thank you, Corey.

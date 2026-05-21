@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-05-21T06:58:50.567Z
+refreshed_at: 2026-05-21T19:51:09.752Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 16
 done: 0
-pending: 15
+pending: 14
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
@@ -80,7 +80,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: failed
     priority: 1
   - id: 5ae0ff7e-4f35-4cd6-9195-e1ca36940542
     title: Swatch AP Collab, Cerebras IPO, Trump Visits China | Ferdinand Dabitz, Spencer Rascoff, Eric Olson, Matt
