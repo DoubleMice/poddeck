@@ -1,15 +1,72 @@
 source: unchained
-refreshed_at: 2026-05-21T19:51:09.839Z
+refreshed_at: 2026-05-22T06:55:06.123Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 129
+total_candidates: 130
 done: 0
 pending: 0
-needs_transcript: 126
+needs_transcript: 127
 transcribing: 0
 transcribe_failed: 3
 downloaded: 0
 episodes:
+  - id: 95b52c22-5591-11f1-92f6-fb1f1333f4f9
+    title: "Why the Consensus After-Party Set Crypto Back: DEX in the City"
+    duration: 3471
+    published: Fri, 22 May 2026 03:51:00 -0000
+    published_sort: "20260522"
+    first_seen_at: 2026-05-22T06:55:06.122Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3
+    image: https://megaphone.imgix.net/podcasts/95b52c22-5591-11f1-92f6-fb1f1333f4f9/image/4d5db037af25ee898a43f04b972faa4c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      KK, Jessi, and Vy Le call out the silence from CoinDesk and industry organizations after the Consensus after-party
+      was held at  E11even. Plus: Clarity’s odds.
+
+
+      Thanks to our sponsor!
+
+
+      Coinbase One
+
+
+      Get 20% off the first year of your Coinbase One annual plan
+
+
+      ⁠coinbase.com/unchained⁠ 
+
+
+      The CLARITY Act cleared the Senate Banking Committee 15-9, but Katherine, Jessi, and Vy Le are not popping
+      champagne. 
+
+
+      KK puts passage odds at 35-40%. Vy Le came down from 90% after only two conditional Democratic votes out of
+      committee. The ethics fight — whether any bill that leaves Trump family crypto holdings intact can get to 60 votes
+      — remains the most credible blocker. 
+
+
+      Meanwhile, WallStreetBets filed an SEC comment letter defending quarterly reporting that inadvertently makes the
+      strongest case yet for why onchain transparency makes periodic disclosure obsolete. And the crew addresses the
+      Consensus conference after-party, held at E11even, which features strippers: not a word from most of the trade
+      organizations that claim to represent the industry.
+
+
+      Hosts:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Katherine Kirkpatrick Bos⁠⁠⁠⁠, General Counsel at StarkWare. Previously held senior legal roles
+      across DeFi and centralized exchanges.
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jessi Brooks⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, General Counsel at Ribbit Capital
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠TuongVy Le⁠⁠⁠⁠⁠, General Counsel at Veda
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
     duration: 4444
@@ -176,14 +233,14 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-21T19:51:13.789Z
     transcript_job_id: 33306d56-6f36-45a0-b054-7bb3648e6f19
+    transcript_submitted_at: 2026-05-21T19:51:13.789Z
+    transcript_completed_at: 2026-05-21T19:53:28.165Z
     transcript_error: "ENAMETOOLONG: name too long, mkdir
       '/home/runner/work/poddeck/poddeck/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjN\
       GFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5jaG\
       FpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
       nYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
-    transcript_completed_at: 2026-05-21T19:53:28.165Z
   - id: 844ab0ca-5329-11f1-b6ee-4bfa056cbbc9
     title: In an AI Agent World, Do Money Markets Win Over Stablecoins? - Bits + Bips
     duration: 3507
@@ -5170,7 +5227,6 @@ episodes:
           
 
 
-
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5354,7 +5410,6 @@ episodes:
       Unchained:⁠⁠
 
         
-
 
 
         
@@ -6561,7 +6616,6 @@ episodes:
           
 
 
-
         
       Previous appearances on Unchained:
 
@@ -7493,7 +7547,6 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
 
 
         
@@ -8686,7 +8739,6 @@ episodes:
        
 
 
-
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -9080,7 +9132,6 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
-
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices
