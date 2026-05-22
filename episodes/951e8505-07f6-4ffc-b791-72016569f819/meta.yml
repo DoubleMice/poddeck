@@ -1,0 +1,29 @@
+id: 951e8505-07f6-4ffc-b791-72016569f819
+source: flirting-with-models
+title: "Richard Craib - Crowd-Sourced Alpha with Numerai (S7E28)"
+guest: "Richard Craib"
+guest_role: "Numerai CEO & Founder"
+published: 2026-02
+duration: 56m
+url: http://www.flirtingwithmodels.com/
+thumbnail: https://artwork.captivate.fm/9962efb1-4374-43d5-9e74-ce38549c1710/S3-FlirtingWithModels-with-Richard-Craib.jpg
+status: generated
+tags:
+  - ai-products
+  - startup
+  - interview
+  - founder
+  - ceo
+  - technical
+  - deep-dive
+summary: |
+  Numerai CEO Richard Craib 讲述了如何从一个 8 岁追踪股票的孩子，成长为 $600M 量化对冲基金的创始人。Numerai 的核心创新在于用 staking 机制解决 crowdsourced alpha 中的 overfitting 问题，以及用 obfuscated data + meta model 构建一个开放的 alpha 生成生态系统。对话涵盖了 2023 年回撤教训、AI agents 驱动的 agentic AutoML、以及 Numerai Singularity 的 portable alpha 新方向。
+core_ideas:
+  - 'Staking = skin in the game: 让数据科学家押上真金白银，从根本上消除 overfitting 的激励'
+  - 'MMC (Meta Model Contribution): 仅仅预测股价不够，必须对已有 meta model 产生增量——这是全球最难的数据科学竞赛'
+  - Numerai vs Quantopian: pre-blockchain 和 pre-staking 是后者失败的结构性原因
+  - '2023 年 -16% 回撤的关键教训: Barra 中性不够，crowding 才是真正的杀手'
+  - Agentic AutoML + skills.md: AI 科学家三天无人值守跑 10,000 实验，每个用户"IQ +100"
+  - Numerai Predictive LLM: 重新改造开源 LLM 的大脑，从互联网新闻中提取正交的交易信号
+article_path: episodes/951e8505-07f6-4ffc-b791-72016569f819/article.html
+base: /episodes/951e8505-07f6-4ffc-b791-72016569f819/

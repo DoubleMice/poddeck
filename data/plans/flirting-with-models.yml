@@ -1,11 +1,11 @@
 source: flirting-with-models
-refreshed_at: 2026-05-22T06:55:06.197Z
+refreshed_at: 2026-05-22T19:41:55.299Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 4
-done: 0
+done: 1
 pending: 2
-needs_transcript: 2
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -19,7 +19,7 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/951e8505-07f6-4ffc-b791-72016569f819.mp3
     image: https://artwork.captivate.fm/9962efb1-4374-43d5-9e74-ce38549c1710/S3-FlirtingWithModels-with-Richard-Craib.jpg
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: 37f766c8-ca99-4bd7-b3b0-95235d8ffb32
@@ -49,8 +49,12 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/e8459525-96f7-4ef3-adea-b9266f987e60.mp3
     image: https://artwork.captivate.fm/87d89126-48e6-4ed6-a208-6f31b14ea6b2/S3-FlirtingWithModels-with-Angana-Jacob-2MB.jpg
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-22T19:42:25.974Z
+    transcript_job_id: 541fcfa2-76b1-465a-84ca-5f48da86de23
+    transcript_completed_at: 2026-05-22T19:44:07.245Z
   - id: eeafe07f-2310-4a58-bde5-6896ef157610
     title: Moritz Heiden & Moritz Seibert – Trend-Following Spreads (S7E25)
     duration: 4040

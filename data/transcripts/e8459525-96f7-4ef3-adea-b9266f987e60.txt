@@ -1,0 +1,609 @@
+Hey everyone, Corey here.
+Thanks for tuning into another episode of Flirting with Models.
+If you're enjoying the show, I'd greatly appreciate it if you'd take a moment to rate, review, and most importantly, share with a friend.
+Word of mouth is how this podcast grows.
+And if you'd like to learn more about Newfound's platform of return-stacked mutual funds, ETFs, and model portfolios, head over to returnstacks.
+Com.
+Now on with the show.
+All right, Agana, are you ready to go?
+Yes, I am ready.
+All right, three, two, one, let's jam.
+Hello and welcome, everyone.
+I'm Corey Hoffstein and this is "Flirting with Models," the podcast that pulls back the curtain to discover the human factor behind the quantitative strategy.
+Cory Hoffstein is the co-founder and chief investment officer of Newfound Research.
+Due to industry regulations, he will not discuss any of Newfound Research's funds on this podcast.
+All opinions expressed by podcast participants are solely their own opinion and do not reflect the opinion of Newfound Research.
+This podcast is for informational purposes only and should not be relied upon as a basis for investment decisions.
+Clients of Newfound Research may maintain positions and securities discussed in this podcast.
+For more information, visit thinknewfound.
+com.
+Today I am speaking with Angana Jacob, head of the research data group within the enterprise data business at Bloomberg.
+We talk about Angana's career path through quantitative research and data platforms and how the industry has evolved from a world dominated by bespoke models and back tests to one where many models have become increasingly commoditized.
+A central theme of our conversation is the idea that while models are easier than ever to replicate, data and how it's sourced, cleaned, standardized, linked and delivered has become the true competitive moat.
+We discuss what it means to quote do data correctly, how Bloomberg decides which data sets to build or sunset, how modern quants think about their data pipelines and tech stacks, and why aligning research data with production and back office systems matters more than most people realize.
+Throughout the episode, we focus on Bloomberg's goal of shortening a client's time to alpha and what that looks like in practice.
+At its core, this episode is about a simple but powerful idea: when everyone has access to similar models, durable edge increasingly comes from the data beneath them.
+Please.
+Please enjoy my episode with Anjana Jacob.
+Anjana, welcome to the podcast.
+Thank you for joining me.
+Excited to dive into what is a bit of a novel concept, maybe at least a novel discussion for this podcast, but certainly highly relevant to any quant who is listening.
+We're to be talking all things data.
+So thank you for joining me.
+Thanks, Corey.
+Love your podcast and very happy to be here.
+So let's start with your story.
+You've had a really fascinating career arc from Deutsche Bank's early QIS research desk—that's a mouthful to say—through S&P, State Street, SigTech, and you are now leading the research data group within the enterprise data business at Bloomberg.
+Can you walk us through that journey and maybe talk about the common threads that have led you to where you are today?
+So let me start with Bloomberg.
+I've been here for three years now, and my group's focus on building machine-readable cross-asset data products needed in fundamental and systematic strategies.
+How I got here, I am flattered you call it fascinating that path.
+Not sure I would say that, but I do think I was.
+Pretty lucky to be right at the start of many different trends.
+Early QIS in Deutsche from two thousand eight and then at S and P around the very early factor boom, where massive inflows into factor ETFs and factor mandates.
+I also worked on ESG at S and P, the first implementations of integrating ESG in portfolios.
+I then moved to State Street, which was more of an academic shift.
+I was in a group called State Street Associates, focused on quant research, and the group had partnerships with very influential pioneering academics.
+I am sure most of your audience has likely heard of Mark Kritzman, Robert Erygabon, and other professors in macro research, portfolio construction, risk measures.
+My role there was to develop systematic strategies using these academic source concepts and signals, and also using very.
+Innovative alternative data sets, which states had actually had a lot of partnerships with, at that time, it was my first exposure to machine learning and using machine learning in portfolio construction.
+Nothing special now, but quite novel back then.
+I then left research altogether and I was head of product at a firm called SigTech, which was the hedge fund Brevin Howard systematic platform spun out, and now I am here in Bloomberg and.
+Now on the data side for quants, Corey, interestingly on paper you could say that I keep moving further away from actual alpha generation, but I think of it this way: there's been so much advancement on models, on signals, the portfolio construction, market timing, overall.
+Over all these years, I think the next phase of alpha capture is probably going to come from getting the data properly, getting the data right.
+It's no longer the models alone; it's the quality of the data, the pipelines, and the platform that determines if opportunities can be exploited.
+And I believe a meaningful amount of alpha remains uncaptured in data, in data foundations and infrastructure.
+And that's where my focus is right now.
+We partner with clients on their data needs as their edge keeps evolving.
+Well, I'm really excited to dive into all that with you, and we could probably spend a whole podcast just going through the different parts of your career.
+I'm maybe going to barbell this because I want to contrast the beginning of your career to where things are today.
+And you started with Deutsche back in 2008.
+You and I were talking our pre-call.
+You said that back then, quant research was still very model-driven.
+There were a lot of hand-built factors.
+There was a lot of back-testing.
+You went so far as to say, and I quote you here, "everything back then was overfit," which is maybe in hindsight true.
+As you look at that part of your career versus today, what does sort of this idea of quote doing data correctly in quant research mean in comparison?
+Compare and contrast what it looked like then versus today.
+You use the word "hand-built," which I think is also quite interesting and absolutely true.
+Back then, you'd literally hand-engineer a factor, run a back test, tune a few parameters, and if the shop looked good, that was often enough to move forward.
+Often the shop looked good because it had avoided the two thousand eight drawdown, and there was no concept of testing in different regimes.
+We didn't even have much history, and I think a big part of.
+Why things were off it back then was just how simple and crude the models and the implementations were in the early days.
+And don't forget, this was at the time when the aversion to any complexity was sky high.
+I actually did my internship at Deutsche in two thousand seven, where derivative of quant complexity was at its peak.
+I felt then, two thousand eight, the pendulum had swung the other way post crisis.
+There was a huge push for this kind.
+This kind of prediction statistical quants to have very intuitive explainable models, rooted in theory and strongly defensible, but the consequence of that was at least in the early implementations where that signals were usually static and linear, they were tested in isolation.
+You'd implicitly assume that they behave the same way across time regimes, market conditions.
+Timing assumptions were very crude.
+You'd rebalance at the close or the open and you'd treat that as neutral.
+You wouldn't really model how signals decayed intraday or how crowded trades affected execution.
+The same signal back then versus now would be evaluated very differently, right?
+Today, the questions would be: When does the information actually become observable?
+How fast does the signal decay?
+Is the edge gone by the time you can execute?
+So implementation is no longer an afterthought; now it's part of the signal itself, I would say.
+Again, to contrast, back tests back then were much more forgiving.
+Transaction costs were very rough.
+Market impact was often modeled with a single parameter.
+Portfolio construction tended to assume signals were largely independent.
+This was very easy to mistake statistical significance for economic significance.
+That's the model side.
+Then there's a data.
+Survivorship bias was common.
+Point-in-time correctness was often incomplete.
+Corporate actions, index membership, all those things, analyst estimates, macro revisions.
+It felt.
+It felt like the future information leaked in all sorts of subtle ways and usually without anyone realizing it.
+So to your question, what does doing data correctly mean then versus now?
+Back then it mostly meant cleaning obvious errors and making sure that backtests ran.
+Today it's a much higher bar.
+It means being pretty explicit about when information became observable, how it was constructed and what assumptions are actually embedded.
+There is another big change which is scale.
+So modern research, of course, explores hundreds of signals across assets.
+The danger is that overfitting could become the default failure mode now without deep rigor, right?
+So it means designing the entire research stack to prevent false discovery, proper point-in-time data, consistent symbology, realistic transaction costs, and that out-of-sample discipline baked in from day one.
+So that's the biggest shift I think from two thousand eight to now.
+So that's.
+The emphasis on robustness and rigor.
+There is a much deeper understanding of bias, multiple testing and false discovery, and there is a lot of far better tooling also to detect them early.
+Of course the consequence is fewer signals survive, but the ones that do are dramatically more resilient.
+Well, we're going to be spending the rest of this episode talking all about data, and I think you set up this episode really well in your prior answer.
+Something you said, and I'll paraphrase you here, but it might be controversial for listeners, which is this idea that models have largely been commoditized, but.
+But data is the moat.
+Data is where alpha is going to lie and still be found.
+And doing data correctly is really important.
+But you can talk a little bit about what that means in practice.
+How does data still represent a competitive edge, even for data that might seem commoditized?
+You're so right.
+When people talk about alpha, they usually always think about the signal or the model, and that's definitely how it was when I started my career.
+Obviously, I might be a bit biased now, but I do feel that over the last decade, the battleground has quietly moved, and it's moved upstream into data.
+Fifteen years ago, models were definitely the edge.
+If you had a clever factor model, a proprietary portfolio optimizer, some custom risk framework,
+That alone could differentiate you.
+You could hire a few quants, build something bespoke, and you actually genuinely had alpha.
+Today, that advantage is gone.
+I think models are getting democratized.
+TensorFlow, PyTorch, standardized models, optimizers.
+Everyone has access to roughly the same toolkit.
+Academic ideas get published and show up on GitHub almost immediately.
+Academic.
+From a modeling perspective, most firms, I would say, are running similar ideas, at least in skeleton, and operating with very similar machinery.
+From the modeling perspective, so where does the real competitive edge come from?
+Now, I think, some data having.
+Having access to a vast data surface across assets, across market data, fundamentals, non-financial data, and also from how you can connect it, condition it, and transform it before it ever reaches a model, so you know markets today are highly conditional.
+Right, value, momentum, quality—none of these factors, these risk premia, work in an absolute sense anymore.
+Their behavior depends heavily on macro regimes, liquidity positioning, volatility.
+Alpha comes from understanding when a signal works, not just whether it works, and that requires data that spans so many domains, not isolated data sets.
+This is where, to me, data becomes a mode.
+Each new data set you add doesn't add linearly; it actually.
+Actually, multiplies what's possible.
+And once that data is aligned properly and is point in time, alpha, I believe, can emerge from interactions say expectations versus realizations, macro shocks propagating into positioning information, fundamentals feeding to equity and credit risk.
+All of these things, right?
+The point in time correctness, revision handling, feature construction that reflects real economic mechanisms.
+This is all data foundational work.
+It's very hard to do, actually, and it's incredibly hard to replicate.
+I think two firms can run the same model, but the one with the cleaner data, better transformations, and tighter feedback loops should outperform.
+And that's why the magic isn't in the neural net or the XGBoost; it's also in the data pipelines.
+The competitive edge has shifted upstream.
+Let's talk about your work today at Bloomberg.
+Now, pre-call, you stated that the north star for your team is "quote shortening the client's time to alpha."
+With that in mind, what does your team actually do?
+What problems are you trying to solve for the modern quant audience?
+My team builds data products specifically for quants and systematic investors.
+With that goal, make data immediately researchable and shorten the time to alpha.
+If you look at a quant workflow, that journey from idea to live signal, that journey is very long.
+There is data discovery, there is sourcing, there is ingestion, there is normalization, validation, feature engineering, signal extraction, portfolio construction, and finally, at the end of all of that, if something is working, you have execution.
+Even today, and despite everyone's increased sophistication, how data flows through that process is really filled with friction.
+So how.
+So how to solve the friction?
+It covers many aspects.
+The breadth of data has to be modeled and interoperable.
+You require deep point in time history, metadata and lineage builds trust.
+It really it's the trust which lets research move into production faster.
+A broad clean data foundation dramatically shortens the hypothesis cycle.
+If I'm testing a macro or cross-asset idea, I don't want to spend weeks pulling rates from one place, inflation from under, futures from a third, reconciling identifiers, normalizing formats, and fixing calendars.
+If I'm.
+When that data already exists and it's aligned, it's clean, it's modeled, I can test the idea, I can prove and disprove assumptions immediately.
+That's a huge edge.
+Then there is asset class aware symbology.
+In futures and options, for example, you can lose most of your alpha by just rolling contracts incorrectly.
+All these small things, right?
+Multipliers, rolls, lifecycle events—having that properly mapped increases your chance of really running an accurate backtest.
+Similarly, transparency matters just as much.
+If I'm using a yield curve, I need to know how it was built and the interpolation, the bootstrapping, what day count conventions.
+If I'm using alternative data or derived data, I need to know when it was observable, how it was processed, what assumptions were applied.
+And the big one, the point in time correctness.
+Take fundamentals or economic releases.
+If revisions aren't timestamped properly, your backtest obviously looks great.
+It looks amazing until it goes live.
+Restatements, corporate actions, survivorship bias, all of that has to be handled as of, not retro.
+Not retroactively point-in-time data forces signals to adapt or fail again, which saves months of wasted research.
+And increasingly, I find this all ties into AI models.
+Don't just need raw data; they need context-aware data, rich.
+Rich metadata, clean lineage, point-in-time semantics, and consistent structure.
+So with that, AI can genuinely compress research cycles, and so important.
+And finally, data delivery.
+By that I mean just that the data has to show up seamlessly.
+So it's important to have cloud-native data platforms, Python APIs, consistent schema, timely updates.
+And this is what my team focuses on, that end-to-end solution.
+We put all of these different components, the breadth of deep history, interoperable data sets, and the delivery and the access tools that allow clients to move from research to production faster.
+When we look at an enterprise like Bloomberg, your scope is enormous.
+The amount of asset classes that you touch, the amount of fundamental data that you're trying to gather, the alternative data sets that you can provide.
+How does your team decide which data sets to build, which ones to buy, which ones to ignore?
+How do you think about the balance between client demand and the team's internal intuition about where durable alpha might actually be sourced?
+One advantage we have at Bloomberg is that the scope question is largely solved for us upfront.
+We already sit on an enormous breadth of market data, fundamentals, alternative—all the things you spoke about—across asset classes.
+My team doesn't chase every new data set or try to predict where the next pocket of alpha come from.
+What.
+What we focus on is making the data truly usable for cross-asset quant research.
+That means starting with the foundational data sets that most quants need, whether it's fundamentals, pricing, ticks, bars, alternative data, and then we invest heavily in making them quant-ready.
+The deep point in time history, accurate and consistent timestamps, good symbology, and the rich metadata, so clients can actually understand what they're testing.
+In terms of your question of knowing what to focus on, client demand for us plays a big role here, and quants actually are very good at telling you what they need.
+Especially if it's not part of their secret sauce, they're very clear in their requirements.
+So when we hear the same pain points repeatedly, that's usually a signal that a data set needs deeper treatment.
+We can save clients a lot of pain themselves trying to get the data quant ready.
+At the same time, we're very careful not to position ourselves as arbiters of alpha.
+We don't decide which data sets will work.
+We don't actually know which strategies will win.
+Our values in the foundations, making sure that when a client tests an idea, the result reflects the economics of the signal and it's not failing because of missing history, timing errors, or opaque construction.
+You must have heard of that eighty twenty rule of quant research, where eighty percent of any quant's time is spent data wrangling and cleaning.
+That's the paradigm we want to reverse.
+We want to allow our clients to focus on alpha.
+Once you decide to move forward on a new data set, what's the life cycle look like?
+Can you talk to us a little bit about from say sourcing to ingesting to cleaning to distributing and then maybe even to sunsetting when you realize maybe a data set no longer is.
+Accurate or being refreshed, or perhaps just no longer being used by clients, we have a dedicated data group who specialize in this full lifecycle data extraction, classification, onboarding, and validation.
+As you can imagine, it's a pretty big group given the amount of data that Bloomberg ingests throughout the day and manages, and they're also pretty sophisticated in their use of ML techniques for all these different data activities.
+But because Bloomberg already ingests and maintains this huge universe, my side of the business can start actually from a position of privilege.
+Instead of asking where and how do we source the data, we actually focus on making datasets quite usable.
+And the way we do that is we think about its life cycle through the lens of how quants actually use the data, sourcing to testing and to putting in production.
+At the sourcing and discovery stage, that's where things like data catalogs matter, clear documentation, data blueprints.
+At the.
+Quants need to understand what a data set is, how it behaves over time, and whether it's fit for their particular needs before they ever write a line of code.
+And then at the evaluation stage, we offer a service for access to almost a hundred historical data sets spanning.
+Pricing, security, master the things we spoke about.
+We offer Python APIs as well as delivery to the cloud.
+And at the evaluation stage, because quants are also testing if the signal is additive and uncorrelated, the data has to link cleanly with the other data sets they already have and behave consistently across assets and regions.
+If they find a signal, great news, of course.
+At that stage, our clients care about whether the data scales, and that's where the data being production ready really matters.
+The same data used in research should flow into portfolio construction and live strategies without having to be reconciled, reengineered, or reinterpreted.
+In our pre-call, you gave this really interesting example of company geographic exposure as being a data set that.
+That your team worked on and put into production, and it was something that's interesting because it's non-standardized in terms of one, what it means, and two, the data availability.
+And then the project was really to take that non-standardized data and build it into this consistent global framework.
+So that's something you could maybe walk us through the project and lessons learned and what it taught your team.
+Everyone intuitively understands geographic exposure.
+Everyone knows it's very important because it's kind of like the bridge between macro and micro.
+Geo exposure is how a US company actually could turn out to be an Asia play.
+It's how GDP growth becomes a driver of earnings.
+It's how disruptions in supply chain could affect company costs.
+But the question is, which you're trying to answer is where does a company actually make its money?
+It's not where it's listed.
+It's not where it's incorporated.
+It's where its economic reality lives.
+And this is a very hard question to answer.
+Everyone assumes geo exposure already exists because companies report, they report in their filings, transcripts, etc. ,
+international revenue, but actually.
+But actually, companies don't report geography for investors; they report it for accounting material.
+And because it's for that reason, it's partial and oftentimes inconsistent.
+So, what do we actually get from company disclosure?
+We could get things like very broad categories like US versus international, or maybe Americas, EMEA, APAC.
+Today they may report UK versus Europe, but next year they might include UK within Europe, and so it's.
+And so it's inconsistent.
+Answering this question of say this portfolio of companies or this sector, what is its exposure to say Brazil, that is not directly observable.
+That's one.
+The second complexity is that investors care about economic sensitivity, so the data set must answer.
+Multiple questions, right?
+Where are revenues and costs generated?
+Where are assets deployed?
+And where will future growth come from?
+So Bloomberg has to standardize it to make it usable for these kind of questions.
+And it isn't just mapping countries; it's also resolving two layers of complexity.
+First, you have to put every company's disclosure into geographic taxonomy.
+Though the companies don't report that way, and the second part of it is you have to give multiple views, multiple perspectives.
+It's not enough to say, okay, this company is forty percent US, thirty percent Europe, thirty percent Asia.
+You need to give the revenue view, you need to give the cost view, the asset view, the capex view, and.
+And also, you need to give a confidence score, and also do it point in time.
+If all of these come together, which is what we've done in our product, then geo segments becomes a joint key between macro data, sector models, company fundamentals, portfolio risk.
+All of this just lives in different worlds.
+Given your career, I think one of the interesting questions that you might have a unique perspective on is over the last, call it 15, 17 years, how has the data pipeline structurally changed for quants from sourcing to cleaning to actually using the data in live strategies?
+Can you compare and contrast operationally what that historically looked like versus what it looks like today?
+So if you look back over the last fifteen years, the biggest change in quant data pipelines isn't a specific data set or a model.
+It's the industrialization of the entire process, from sourcing all the way to live trading.
+Fifteen years ago, and we touched on it a little bit, data pipelines were often disposable.
+You'd clean a data set just enough to test an idea, write some research code and move on.
+Today, that approach doesn't work.
+Even daily, slower frequency strategies requires processing of large amounts of data, and obviously, as you go towards intraday bars, ticks, it's an extremely complex beast.
+So data pipelines are now considered to be long living assets.
+Strategies can run for years without drifting, which means.
+Which means that the data has to survive, people moves, data updates, restatements and evolving interpretations.
+It also has to be quite understandable long after it was first built.
+That's the industrialization of it.
+Slightly more subtle shift is how strategies are designed.
+The best strategies today need to adapt to a continuous flow of data and it has to start from the data, not data as an afterthought.
+The data has to be understood—the patterns, the breaks, structural constraints—and only then design the strategy.
+Going back to the earlier point, starting with a preconceived idea and then brute forcing it across data sets, is probably a fast way to overfitting and everyone wants to avoid that.
+So the core question has stopped being, "Hey, can we use this new data set?"
+and it's now become, "Can."
+Can we incorporate the data into our existing data stack, replay it, and continue to trust it over time?
+So that has forced a shift away from all these one-off ad hoc scripts towards explicit standardized pipelines, point-in-time correctness by construction, clear transformations, data versioning and ownership.
+There's also a massive infrastructure component that people underestimate.
+Feature stores that prevent look-ahead bias, systems that track data lineage and metadata, and the.
+And the backtesting platforms that let you reliably evaluate thousands of features, this is really hard to do, extremely expensive also.
+And you could hand someone your model code and they still cannot replicate your results if they didn't have the same sophisticated data machinery underneath.
+So it's a highly competitive space.
+So.
+Strategies I think are getting to be a bit more replicable, but robust infrastructure extremely hard.
+And you can start to see it in how the top firms are actually spending on talent.
+A lot of effort now goes into data quality, feature engineering, reproducibility, all the proprietary platforms and pipelines which the competition can't easily reproduce.
+In a prior answer, you emphasized this idea that the data that's used has to be consistent from front, middle, and back office.
+Why is that alignment so important?
+And what breaks if that alignment doesn't exist, if it's missing?
+When I talk about research, trading, and middle office, back office, and aligning the data.
+What I really mean is closing the gap between how strategies are designed and how they actually experience the market.
+Historically, those systems evolved in parallel.
+Research environments were built for speed and flexibility.
+Middle office and back office were built for valuation and control.
+Because there's a separation and different philosophies, it creates a problem.
+A trading strategy can look pretty coherent in research, but once it's live, different parts of the organization are reacting to slightly different versions of the market.
+And unfortunately, the first time that shows up is usually after the trade is done.
+It's pretty, I think, acute on the OTC side.
+A signal might be trained on a curve built with a specific bootstrapping method, a specific interpolation, while valuations and risk viewed in different parts of the firm reflect different conventions.
+Now the signal is making decisions in one economic world while P&L is being measured in another.
+I remember like going back to my sell-side days, you could almost feel the trading floor mood plummet around month ends or IMM dates where everyone.
+Traders desk quants have to start focusing on reconciliation rather than PNL.
+It's been a while, and the tooling, the automation, the data infrastructure has dramatically improved in the last decade.
+But the thing is, the strategies have also become faster, more complex, and more sensitive to small inconsistencies.
+Margins are also much thinner now, so tolerance is really low.
+The danger also whether you are.
+Trading, whether you're trading listed or OTC, is that the mismatch, even if small, is also systematic.
+It introduces a consistent bias that makes backtests look stable while your live performance slowly starts drifting.
+And then it actually becomes very hard to tell whether the issue is the signal, the execution, or the data is different from different sources.
+Is it different research systems versus pre-trade and post-trade systems?
+And I think this is where Bloomberg's strength of data and having the same data really matters.
+The same underlying market reference fundamentals data flows through research environments, the terminal which portfolio managers and traders rely on, and the real time B pipe, and even.
+And even in systematic strategies, often PMs use the terminal to explore prices, curves, analytics.
+So for live trading, the strategies need the same data, that same numbers, but also has to be exposed through consistent schemas, identifiers, time conventions, formats.
+That is not reengineering at every stage of the workflow as the strategy moves from research to live trading, and.
+And having that consistency shortens the feedback loop, the distance between what's researched, what's observed, and what's traded.
+So signals learn from how they are actually executed.
+The decay shows up earlier.
+Strategies can adapt faster, and that's pretty important for alpha durability.
+From an infrastructure and operations perspective, what do you see in the modern tech stack?
+What's that look like for consuming and transforming data today?
+What are sort of tools and architectures that are becoming standard among your more sophisticated clients?
+I think a useful way to think about the modern quant tech stack is that it has evolved as alpha became harder to extract.
+So today, obviously, alpha is more crowded, more fragile.
+It's also more dependent on how the data is processed rather than on any single idea.
+So ten or fifteen years ago, a PM could build a viable strategy around one strong idea, one dominant signal, maybe one data set, and that worked because data was limited, signals were easily interpretable, and also importantly, I think, the portfolio managers didn't operate under such tight risk limits and drawdown constraints.
+Today, of course, data is broader, history is longer, strategies have to survive a long time and across many cycles.
+Today.
+Individual signals are more regime-dependent, more sensitive to data assumptions, and less reliable on their own.
+So no single data set is stable enough, and no single signal works everywhere.
+So the tech stack has to support that.
+As a result, I think firms have stopped treating signals as standalone strategies and they're treating them as components.
+And what good looks like today for especially at the top end sophisticated platforms is very ensemble driven research, hundreds or thousands of signals, each tied to specific data sets, each with known assumptions and failure modes, each evaluated independently.
+Machine learning is common to size signals, combine factors, set weights, and at the large AUM scale, this.
+This industrialization is how the firm can control risk, capacity, and capital consistency.
+Where many signals feed a single portfolio, at that scale, they also need to diversify into other areas, other assets for uncorrelated returns and for capacity.
+Then it becomes that the data platforms also have to span intraday, medium term, long term signals all in one place, so that it's possible to capture many dimensions seamlessly and capture things like how events propagate across markets.
+So that structure also shows up clearly in the tech stack.
+A lot of it today is cloud native, clear separation between data infrastructure, feature stores, signal research, with very clean interfaces between them.
+It's very different from the you know single thesis, single signal stacks most firms were running a decade ago.
+Obviously, all this industrialization adds a lot of complexity, but I think the best shops, the best platforms, manage it so deliberately.
+They invest heavily in feedback loops, monitoring signal health, decay regime sensitivity, all the data quality in live production as well, and not just in the backtest side.
+That whole accuracy, repeatability, and reproducibility become the primary objectives, and the emphasis is not just to run forward, but to be able to always reprocess the past when market assumptions are changed, when data is revised.
+That ability to replay years of history consistently and adapt your strategy becomes quite critical.
+The last point I want to make is that AI.
+AI actually pushes this robustness sophistication frontier even further.
+Now there are so many more unique data sets that can be processed easily, but they also can generate you know multiple plausible sounding hypothesis, and no one wants more overfitting, even more noise to signal ratio.
+AI obviously requires data, but it isn't simply about more data; it's context aware, domain specific data.
+So the focus for all of this is not just on compute, storage, and speed; it's also on building platforms so that the data can work together and can be connected to surface deeper signals, better optimal portfolios.
+I see it as a demand for coherence across data, research systems, risk production systems, everything together.
+When you talk about all these data sets and the different time horizons.
+And the span of information—one of the problems that strikes me as maybe being the most difficult—is sort of the schema or the metadata problem that's going to be the trickiest challenge in creating a data platform where you're connecting company data to non-company signals like weather or satellite imagery to the different securities and derivatives, the macroeconomic environment.
+And this is something that both needs to be robust and scalable.
+You don't know what data sets you might be integrating in the future.
+Talk to me how you think about that integration layer.
+How are you making it so it's something that's tractable that quants can actually use it and follow it, but also flexible enough for all your potential future needs?
+It feels like metadata is becoming almost as important as the data itself.
+Five years ago.
+If you brought up taxonomies, ontologies, or knowledge graphs in a research conversation, it might have lasted thirty seconds, if at all.
+Today, it's so different.
+These topics sit right at the center of serious research platform design.
+You can see it on the ground.
+It's because today's research workflows have made the metadata problem, as you say, impossible to ignore.
+At institutional scale, rich standardized metadata—by that I mean you know instrument terms and conditions, descriptions, units, even the temporal metadata.
+That is what enables correct interpretation.
+It enables comparability.
+It enables reproducibility, and without it, even high quality data can generate very confident but very misleading signals, even on very basic tick data conventional market data.
+One of the biggest drivers of ensuring an intraday backtest is realistic is that ability to filter using condition codes, the metadata, auction indicators, odd lots, duplicative trades.
+Your example is also pretty good when the research has to connect company data with other more macro data that isn't company-centric.
+So things like financials, revenue segments, and industry KPIs are of.
+Are of course structured around corporate entities and reporting periods, whereas macro releases, weather, geospatial data, commodity supply demand, they are structured around location.
+Usually, this task of connecting all these data sets together is very complex without the metadata.
+All of the flavor of metadata is also different, and that's why we take a lot of effort to get this aspect right.
+We support also multiple valid mappings because there's rarely a single correct way to connect data.
+It depends a lot on the kind of strategy being used.
+Just as an example, take energy companies with downstream exposure.
+If margins and profitability are under pressure.
+The key question is whether that reflects a structural shift or say a temporary operational issue.
+You might start to analyze this problem by looking at fundamentals at the operating segment level, then layering industry KPIs at that point to changes refining throughput or utilization.
+These two data sets help narrow the story, but it's still incomplete.
+To go further, you need physical assets data, specific refineries and processing facilities, but these are mapped to precise geographies.
+And then you have to, with these refineries, manufacturing facilities, that allows you to link financial performance to real operational capacity.
+Then you can add supply chain data on the layer.
+You can track disruptions in the chain.
+You can add on weather data, which is structured around stations, grids, and geographic polygons.
+All these different data sets have different metadata which needs to be mapped.
+All these.
+You have to add macro data which is reported at the country or regional level, and that sits higher in the geographic hierarchy.
+So the research problem is stitching all of this together, so that asset level, company level, regional and macro signals are aligned.
+And we focus a lot on deeply connecting these data sets through this robust metadata and mapping across entities, assets, geographies, hierarchies, and time.
+These relationships also need to be historically consistent; otherwise, you don't know what you are doing.
+Right, your models can't reliably determine whether, say, a macro or a geopolitical shock impacts.
+Impacts a specific facility or regional supply balance, or whether these relationships have changed over time, and that's why I think the integration layer I think of it less as metadata and more as a semantic layer.
+The semantic layer is where the economic meaning actually gets created and.
+And to me, it's about explicitly encoding what entities exist, how they relate, and where they operate with different time horizons that should apply.
+What's also increasing is that this layer is starting to feed directly into systematic workflows and AI models.
+So when.
+So when people talk about systematic data platforms, this is where the real differentiation is, where you can now use very different data sets that were available earlier only for human judgment, and the quants now can get a good three hundred and sixty degree perspective by connecting all of this together.
+At some point in the delivery pipeline that you work on, Bloomberg has to decide how far it goes in transforming the underlying data that you collect.
+I can imagine some clients would want the absolute raw data, others might want it processed, others might even want it modeled and mapped to some degree.
+Where do you draw the line between just cleaned versus say value added modeling?
+It's an interesting question because there isn't a perfect technical boundary here, but there is a principle.
+Every data set already reflects some choices.
+The moment you use data in a strategy, you are making assumptions about units, timing, missing values.
+All of that raw is never really raw.
+The real question is whether the data is economically coherent without being opinionated, and that's how I think about the line.
+Our responsibility as a data provider is to remove, you know, the data engineering complexity, all the friction, without intruding into the interpretation choices.
+That of course is on the client side, and in practice that means we go as far as making the data.
+Economically meaningful and easy to use, but we stop short of telling you what it means.
+Or what we think it means, we take care to not embed any implicit view.
+So we do things like, of course, mapping instruments into very sensible economic units, Tvo one instead of contracts and rates, delta equivalents in options, aligning frequencies, handling corporate actions, fixing very obvious quality issues, so the signals don't break for trivial reasons.
+The data then becomes usable, but it's still agnostic.
+Where we normalize, we are very transparent about the methodology and also follow best practices like, don't normalize without exposing scale.
+We could aggregate across assets, but we disclose the weights.
+If we give scores, we allow users to decompose the scores themselves.
+We never simply smooth in time series.
+That's how we keep it agnostic.
+And so far, my team's products have focused on you know quite foundational data sets that stay close to the raw data, but are.
+But are ready as we offer more and more data sets, we are moving into more derived indicators.
+What we do, as I said, is to make it usable.
+None of the work we do creates actually alpha, but all of that definitely removes the friction.
+But when we go into the more derived data sets, this question becomes quite interesting.
+We do see a lot of demand for clients asking us to build these, even sophisticated clients, which is surprising to me, have asked us, and that's because it's for them, it's really an ROI question.
+They don't want to construct and maintain building blocks themselves.
+Simple things like normalized measures, aggregates, consolidated indicators—it's expensive to maintain for them, and it slows their decision-making.
+For us, when we offer these kind of derived indicators, the bar for transparency is high.
+We do have to explain the methodology very clearly and also the results.
+Can I explain yesterday's move in the indicator using real market activity?
+You can imagine, right?
+If the client can't trace it back to the assets, the instruments, or the flows which are used, it's very hard to build confidence around something derived.
+So to me, the good value-added aggregations or scorings should always be explainable and reversible.
+Clients should be able to peel back the layers, see how the raw inputs drove the result, and understand how they would further transform and use these building blocks for their particular model.
+In your role, you sit in this, at least in my opinion, really interesting privileged position where you get to talk to a lot of different clients who are using and consuming this data.
+And so I'm curious, what has surprised you the most in the types of data sets that clients are requesting, or maybe how you're seeing them use those data sets?
+I love that you asked this question because t here is been so many surprising things to me.
+What surprised me most is not just what data clients are using, it's who is using it and how blurry the lines have become.
+As you say, I've had a pretty unique vantage point over the last three years, working across many clients, many types of strategies and asset classes, and the biggest surprise has been how fast traditional labels stop meaning much.
+By traditional labels, I mean like systematic versus discretionary.
+Historically, there was a clean split, right?
+Systematic teams ran broad universes; they had small bets.
+It was mostly market or factor-style data, whereas the discretionary investors had the deep conviction and looked line by line at balance sheets and income statements.
+A very clear divide that is I feel collapsed now, and I could see it since when I joined, that most of the sophisticated users of deep fundamental data, full financial statements, segment disclosures, earning transcripts, supply chain data.
+They're actually systematic teams.
+They're not reading this data like a discretionary portfolio manager would, but they are modeling it, they are transforming it, and they are backtesting it across thousands of names simultaneously.
+By now, I think it's pretty routine to see systematic teams normalize accounting differences across regions, align point-in-time fundamentals with market data.
+They feed structured versions of transcripts and disclosures into factor and ML models.
+The adoption is not the surprise; it's how central fundamental data has become to systematic alpha.
+Deep fundamental data, and at the same time, I think discretionary investors have gone the other way.
+Many now operate with quant grade infrastructure, systematic universe construction, large scale simulations.
+They have signal libraries, and they're also using ML more and more.
+The surprise isn't that they use data; it's that their process has become pretty repeatable, industrialized in a way that looks very similar to the quant shops themselves.
+AI now has accelerated this blurring even further.
+Systematic teams can now ingest far more granular data than before, and discretionary teams can prototype models, backtest ideas, and operationalize workflows without.
+Without needing massive engineering teams, so that's one.
+The second big surprise is strategy convergence.
+I think it's quite well publicized, but again, we saw it quite early that the high frequency firms are moving into medium frequency horizons.
+The low frequency factor strategies have become steadily faster and faster into well into the intraday space.
+It's not shocking again.
+In theory, firms always look for new opportunity and ways to deploy capital, but the speed of the shift and the change in data demand has really stood out to me.
+When HFT firms move into medium frequency, now suddenly they need longer histories, macro context, they need quarterly fundamentals, very slow moving data, they need a supply chain, they need all of these things that they did not need before.
+Teams that were once purely microstructure focused are now heavy consumers of slower, richer data sets, and that requires a much deeper data integration layer to connect all these signals across domains.
+We've seen the same thing has happened across asset classes.
+In two thousand eight, many platforms were single asset by design.
+Today I think all the serious ones are multi-asset by default: equities, credit, rates, FX derivatives, and that multiplies data needs almost combinatorially.
+The third big trend was firms capturing another source of alpha, which was kind of hiding in plain sight.
+So everyone, of course, talks about alternative data, but some of the strongest signals today are not alternative at all.
+They are traditional market and fundamental data, but it's actually pulled from outside the asset you're trading.
+We are seeing that a lot like equity strategies that never trade options are using implied volatility surfaces, skew, risk reversals.
+They're using it to infer crowding or things like tail risk.
+Cash equity models watch CDS curves and bond spreads for early signs of stress.
+Macro and equity teams track FX volatility or ETF flows to understand liquidity and positioning, even.
+Even if they never trade those instruments, so the changes were slow when technology and data pipelines were the blockers.
+But now with asset classes, the silos are disappearing.
+I think we're seeing such a fast changing frontier of how it's all converging.
+Let's talk about that frontier.
+Looking forward, what trends are you seeing in data needs?
+Where do you think that next frontier lies?
+Because most firms are expanding beyond their traditional opportunity set, and their strategies are getting more sophisticated, we see the demand for data, which is very high, only increasing.
+And in my opinion, the next frontier isn't what data sets and how exotic and untapped they are.
+That is the all data phase pre 2020, just before it became mainstream.
+Now I think the focus in the frontier has shifted to all of what we just discussed integration, context, and time to alpha.
+Here is what I see as three frontier areas: one, clients are increasingly more focused on whether.
+The data they source can actually be operationalized reliably and at scale and across strategies.
+The question they ask now isn't, "Hey, do you have this data set?"
+But can I plug this into my research, production, execution, and risk systems without friction?
+So that's driving demand for data that's normalized, point in time, clean.
+And data also has to be AI ready.
+And unlike general gen AI models, here the edge comes not from massive generic training data, but from clean, contextual and decision grade inputs.
+That's one shift.
+And the major frontier, a major shift is towards connected data, which we spoke about before, because markets don't move in isolation and neither should data.
+Clients.
+Clients increasingly want to model relationships asset to funding dependencies, volatility to liquidity feedback loops, geopol policy to investor positioning.
+All of those links and explicitly modeling these connections, graph based data models, which link equity, credit derivatives, macro variables, are becoming a very powerful way to capture how events flow, how risk propagate.
+Third frontier is a very practical frontier.
+The delay between insight and action.
+Not just in milliseconds, but in organizational time, how quickly can the entire team test an idea, validate it, deploy it, monitor it, or perhaps retire it?
+So platforms that shorten that cycle, that let humans and machines collaborate faster, that I think will create a lot of value.
+We're also seeing research and trading blur together.
+Execution data, transaction costs, and intraday liquidity—they're increasingly feeding back into signal weighting and the portfolio constructions.
+So models are learning not just from returns, but from how the trades actually behave in the market.
+And this getting that feedback loop right is super powerful.
+What are the common mistakes or maybe lessons learned you've seen when it comes to data wrangling, either from your own internal team or on the client implementation side?
+It's a constant evolution in the quant space.
+I think there are many lessons learned and we will all keep learning lessons.
+Data is very hard to get right.
+Just think of the petabytes of market data and non-financial data that we've managed every day throughout the day.
+So we've discussed most of this already.
+Just to you know, recap some of the common issues I see in the quant process.
+The first is that quants still underestimate how much alpha leakage happens in the data layer, long before the modeling even begins.
+I've seen teams spend months debating model architecture, but kind of accept dubious or fragile assumptions in the data, or just ignore how data changes.
+You know, instrument rolls, fundamentals getting restated, some drifts, something evolving.
+And these small changes quietly break assumptions over time.
+A classic example is point-in-time slippage.
+People think they are being careful, but they are mixing vintages, fundamentals with restated values, estimates without exact timestamps, index memberships applied retroactively.
+So of course the backtest looks great, but you know the signal will start to erode.
+A second mistake is very local optimization.
+So teams build really beautiful pipelines for one asset class, one vendor, one strategy.
+It works until they try to scale.
+Then, the moment you add more data sources or reuse a signal elsewhere, all those inconsistencies, corporate actions, some symbology inconsistencies, they quietly degrade the results.
+The third mistake, and it's quite big, is we touched on it before also treating implementation as downstream.
+Signals are researched assuming.
+Very ideal execution, neutral timing, or in finite liquidity, static costs.
+Then the strategy goes live and the edge disappears.
+Today I think everyone has learned this mistake.
+You have to model observability, decay and capacity inside the research loop, otherwise you are kind of overfitting.
+I think the teams that do this well, they treat data as a first class citizen, a first class object, and with the same rigor that they apply to models.
+They study the data first, they study its behavior, they study constraints, recurring patterns, and only then they design the strategies around it.
+What advice would you have?
+For quants who are listening to this episode and thinking, I really need to make sure data is a competitive edge for me in the next decade, what advice would that be?
+I hope it's all quants, but we've discussed how the quant process is.
+Pretty industrialized now.
+It has this sequence of discrete steps, and my advice say someone in the audience is quant and you're working in one of those steps in a firm.
+Say it's the alpha research or the signal generation or the portfolio construction parts of it.
+Now for various reasons, what you're not working on.
+Is abstracted away by different teams and it's not directly observable by you, and this abstraction actually hides a lot of assumptions.
+Researchers will consume data they think is clean without knowing what was filtered or what was imputed.
+Their signals get passed downstream without clarity on how the signals will be constrained, how they'll be combined or how they'll be traded.
+Small choices in the data layer quietly shape everything else that follows.
+And quants also make assumptions on the other side, right?
+They don't factor in what changes, what happens in production.
+It's a mindset thing, I think.
+And the reason I'm saying this quite strongly is I learned this the hard way earlier in my career.
+It's super tempting to focus on, you know, the most interesting part of the stack, the signals, the models, the clever ideas.
+And assume the data just works, or the implementation and the maintenance just works.
+But when you ignore these first principles, like I did, it eventually shows up, often at exactly the wrong time, and that's when it becomes the most painful to fix.
+So the risk I would say is having only partial understanding.
+You can do like really good work, excellent work locally, and still get very weak outcomes globally if you don't know where your data breaks, how it behaves in different scenarios, or what transformations, what assumptions were baked in.
+And I think if you layer in AI, it accelerates this.
+I believe AI will be used everywhere in research, writing code, enhancing productivity, validating results, suggesting hypothesis, even generating signals end to end.
+So super powerful, but it makes this partial understanding risk even more.
+Even more acute, I think it's going to get so easy to move super fast inside a narrow box and get very convincing answers without really understanding the assumptions underneath, or even without understanding the big picture what's happening around you.
+My advice would be while you have to be an expert in the area you work on, try to get a first principles understanding of data stack and also the other parts of the puzzle, and that I think will always be a key edge.
+This is the last question of the episode, and it's the question I've asked every guest this season to close out each episode.
+And it is outside of work, so you can't answer with relation to what we talked about on this podcast.
+What are you currently obsessed with?
+It can be an idea, it could be a book, it could be a show, music, it could be a philosophy, it could be something you're training for.
+What currently has captured your attention?
+What are you obsessed with?
+I've been actually obsessed with designing my own obsessions.
+I find life pretty hectic.
+I'm sure it's the same for you.
+You know, after work, I find that my brain still wants some immersion, and if I didn't give it something, you know, intentional, I'll just doom scroll and I'd feel really more drained than relaxed.
+What I've been doing is I put in quite a bit of effort upfront and I'll build these small immersive.
+Immersive systems for myself and just to unwind after the day, I don't pick one book or one show.
+I design a whole world around a theme.
+There is usually fiction, something visual, and then I get to read some pretty dense nonfiction, which I don't have a habit of doing.
+But because the fiction hooks me emotionally, the shows that you watch give it like some texture, and so by the time I get to the heavy material.
+It doesn't feel that heavy or dense anymore.
+It's because I'm pretty obsessed already.
+Then last December, I went deep into the drug trade.
+I don't know whether you heard of this book, Don Winslow's "The Power of the Dog."
+It's fiction but fictionalized, and it completely pulled me in.
+I've already watched Narcos, but this time I did a few documentaries and then I.
+I dive deep, so I picked up Johan Hari's "Chasing the Scream."
+Not sure if you've heard of it.
+It is dense, it's factual, well-regarded.
+I am able to read all this because I am so invested in it, and I just want to know more.
+And I do find this is helping a lot in genuinely relaxing.
+I am not really just numbing out playing games.
+I am going.
+In a very relaxed way, and I'm really enjoying it.
+I love that answer.
+How long do these periods last when you study the drug trade, for example?
+How many months are you diving into that?
+A couple of months, yeah.
+Sometimes as soon as three months.
+There are other things to do as well, but it becomes fully immersive, I think, like world building.
+What a great intentional answer.
+I might adopt this.
+This sounds like a good 2026 goal for me.
+Truly unique, and I'm glad I asked that question.
+Well, thank you so much for joining me.
+This has been really illuminating and educating, and I hope everyone who listened gets a wonderful sense of what it takes to build and think about a modern data architecture for really top-tier quant firms today.
+So thank you so much for your time.
+Thank you, Corey.
+Been great.
+Thanks.

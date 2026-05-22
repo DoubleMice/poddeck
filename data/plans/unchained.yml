@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-05-22T06:55:06.123Z
+refreshed_at: 2026-05-22T19:41:55.222Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 130
 done: 0
 pending: 0
-needs_transcript: 127
+needs_transcript: 126
 transcribing: 0
-transcribe_failed: 3
+transcribe_failed: 4
 downloaded: 0
 episodes:
   - id: 95b52c22-5591-11f1-92f6-fb1f1333f4f9
@@ -65,8 +65,17 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-22T19:41:59.708Z
+    transcript_job_id: 3dc8d315-4f42-4c76-b00b-008fd397d21e
+    transcript_error: "ENAMETOOLONG: name too long, mkdir
+      '/home/runner/work/poddeck/poddeck/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxM\
+      zMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5jaG\
+      FpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
+      nYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
+    transcript_completed_at: 2026-05-22T19:44:04.625Z
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
     duration: 4444
@@ -5227,6 +5236,7 @@ episodes:
           
 
 
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5410,6 +5420,7 @@ episodes:
       Unchained:⁠⁠
 
         
+
 
 
         
@@ -6616,6 +6627,7 @@ episodes:
           
 
 
+
         
       Previous appearances on Unchained:
 
@@ -7547,6 +7559,7 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
 
 
         
@@ -8739,6 +8752,7 @@ episodes:
        
 
 
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -9132,6 +9146,7 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
+
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices

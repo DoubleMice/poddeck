@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Richard Craib - Crowd-Sourced Alpha with Numerai (S7E28) — PodDeck</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a2e;
+  background: #fafbfc;
+  padding: 0;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+header {
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e8ecf1;
+  margin-bottom: 48px;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #0d1117;
+  margin-bottom: 12px;
+}
+header .meta {
+  font-size: 0.95em;
+  color: #6b7280;
+}
+header .meta span { margin: 0 8px; }
+h2 {
+  font-size: 1.35em;
+  font-weight: 700;
+  color: #0d1117;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #1971c2;
+}
+h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+p { margin-bottom: 16px; }
+strong { color: #0d1117; }
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+}
+.overview-card {
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  font-size: 0.92em;
+  line-height: 1.6;
+}
+.card-blue  { background: #eff6ff; border-color: #3b82f6; }
+.card-green { background: #f0fdf4; border-color: #22c55e; }
+.card-orange { background: #fff7ed; border-color: #f97316; }
+.card-purple { background: #faf5ff; border-color: #a855f7; }
+.card-yellow { background: #fefce8; border-color: #eab308; }
+.card-red    { background: #fef2f2; border-color: #ef4444; }
+.overview-card strong { display: block; margin-bottom: 4px; }
+
+blockquote {
+  margin: 24px 0;
+  padding: 20px 24px;
+  background: #f8f9fb;
+  border-left: 4px solid #1971c2;
+  font-style: italic;
+  font-size: 1.05em;
+  color: #374151;
+  border-radius: 0 8px 8px 0;
+}
+blockquote .attr {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85em;
+  font-style: normal;
+  color: #6b7280;
+}
+.quotes-section { margin-top: 48px; padding-top: 32px; border-top: 2px solid #e8ecf1; }
+.quote-item {
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  margin-bottom: 12px;
+  font-style: italic;
+  font-size: 0.95em;
+}
+.quote-item .ctx { display: block; margin-top: 6px; font-size: 0.85em; font-style: normal; color: #6b7280; }
+.q-blue  { background: #eff6ff; border-color: #3b82f6; }
+.q-green { background: #f0fdf4; border-color: #22c55e; }
+.q-purple { background: #faf5ff; border-color: #a855f7; }
+.q-orange { background: #fff7ed; border-color: #f97316; }
+.q-yellow { background: #fefce8; border-color: #eab308; }
+
+.numbers-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+  text-align: center;
+}
+.num-card {
+  padding: 20px 12px;
+  border-radius: 10px;
+  border: 2px solid;
+}
+.num-card .num { font-size: 2em; font-weight: 800; margin-bottom: 4px; }
+.num-card .label { font-size: 0.8em; color: #6b7280; }
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+.compare-box {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid;
+}
+.compare-box h3 { margin-top: 0; font-size: 1em; }
+.compare-box .item {
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+.cb-red { background: #fef2f2; border-color: #fca5a5; }
+.cb-green { background: #f0fdf4; border-color: #86efac; }
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #e8ecf1;
+  font-size: 0.85em;
+  color: #9ca3af;
+  text-align: center;
+}
+footer a { color: #3b82f6; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  article { padding: 32px 16px 48px; }
+  h1 { font-size: 1.5em; }
+  .overview-grid, .numbers-row { grid-template-columns: 1fr 1fr; }
+  .compare-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Crowd-Sourced Alpha with Numerai</h1>
+  <div class="meta">Richard Craib (Numerai CEO & Founder) <span>×</span> Flirting with Models <span>·</span> S7E28 <span>·</span> 2026 年 2 月 <span>·</span> 56 分钟</div>
+</header>
+
+<section>
+<h2>为什么这期值得听</h2>
+<p>如果你对 Numerai 的印象还停留在"数据科学 + 加密货币的有趣实验"，是时候更新这个认知了。过去几年，Numerai 悄然从约 $60M 资产增长到超过 $600M，JPMorgan 投资并锁定了 $500M 容量，顶级大学捐赠基金领投了 Series C，估值 $500M。这不再是一个玩具项目，而是一个真实的、机构级别的 market-neutral 对冲基金，它有着极其非传统的 alpha 引擎。</p>
+
+<div class="overview-grid">
+<div class="overview-card card-blue"><strong>$60M → $600M 的隐秘增长</strong>JPMorgan 投资、顶级大学捐赠基金领投 Series C，Numerai 已从实验成长为真正的对冲基金。</div>
+<div class="overview-card card-green"><strong>Staking 如何消灭 overfitting</strong>不是发奖金，而是让数据科学家押上真金白银——从根本上改变了激励结构。</div>
+<div class="overview-card card-orange"><strong>MMC：超越 meta model 才算数</strong>光预测股价不够，你得能提供 Numerai 已有信号之外的增量——这是全球最难的数据科学竞赛。</div>
+<div class="overview-card card-purple"><strong>2023 年回撤的教训</strong>-16% 年回报逼出风险系统升级：crowding 才是真正的杀手，Barra 中性还不够。</div>
+<div class="overview-card card-yellow"><strong>AI Agent 自动化研究</strong>skills.md + MCP server → AI 科学家跑 10,000 个并行实验，三天无人值守出模型。</div>
+<div class="overview-card card-red"><strong>Portable Alpha 新基金</strong>Numerai Singularity：long 全球股票 + long Numerai alpha，return stacking 理念。</div>
+</div>
+</section>
+
+<section>
+<h2>从 8 岁开始的旅程</h2>
+
+<p>Richard Craib 与金融的缘分始于童年。他回忆道：</p>
+
+<blockquote>"I guess when I was eight years old, my dad gave me stock to track. I would watch the stocks move, and it's very seductive."
+<span class="attr">— Richard Craib</span>
+</blockquote>
+
+<p>他很快发现了一个悖论：一只股票可以因为好的财报一天涨 20%，但全世界最好的投资者——比如 Warren Buffett——年化回报却不到 20%。这个矛盾让年幼的 Richard 开始思考金融的本质。</p>
+
+<p>但他很快对主流的金融媒体失望了。在他看来，看 CNBC、读报纸——这些都是金融的"junk diet version"，全部在 miss the point。真正让他看清方向的是 Renaissance Technologies：<strong>金融本质上是一个数学问题、一个机器学习问题</strong>。于是他开始专攻数学和机器学习。</p>
+
+<p>2011 到 2013 年间，深度学习革命爆发——计算机视觉突破、Google 收购 DeepMind——同时 Kaggle 这个竞技数据科学平台也诞生了。Richard 看到的模式是：在 Kaggle 上，竞赛主办方常常被参赛者模型的表现震撼，你永远不知道 state of the art 的上限在哪里。<strong>如果能把全世界最优秀的数据科学家聚集起来、用同一份数据建模，结果会是什么？</strong></p>
+</section>
+
+<section>
+<h2>Numerai 是什么</h2>
+
+<p>Numerai 的核心理念简洁而大胆：如果全世界的数据科学家都能访问同一份数据，他们就可以在上面建机器学习模型。Numerai 释放了这份数据集，说——把全世界的模型结合起来，这就是最前沿的 alpha 生成系统。</p>
+
+<div class="numbers-row">
+<div class="num-card" style="border-color:#3b82f6;background:#eff6ff;">
+  <div class="num" style="color:#3b82f6;">$600M+</div>
+  <div class="label">AUM（从 $60M 增长）</div>
+</div>
+<div class="num-card" style="border-color:#22c55e;background:#f0fdf4;">
+  <div class="num" style="color:#22c55e;">$500M</div>
+  <div class="label">JPMorgan 获得的容量</div>
+</div>
+<div class="num-card" style="border-color:#a855f7;background:#faf5ff;">
+  <div class="num" style="color:#a855f7;">$500M</div>
+  <div class="label">Series C 估值</div>
+</div>
+<div class="num-card" style="border-color:#f97316;background:#fff7ed;">
+  <div class="num" style="color:#f97316;">~20</div>
+  <div class="label">团队人数</div>
+</div>
+</div>
+
+<p>这是一个极度精简的团队在管理一套复杂系统。Richard 的运作哲学是保持团队小巧（"我们不想变成 300、400 人"），大量依赖自动化——包括用 AI agents 来 onboard 数据供应商。</p>
+</section>
+
+<section>
+<h2>混淆数据的艺术</h2>
+
+<p>Numerai 提供给数据科学家的数据是经过混淆的——所有特征都被匿名化，你看到的只是 X1、X2、X3……像 Richard 2012 年那堂机器学习课上的作业一样。</p>
+
+<p>这个决定有三重逻辑。第一，<strong>消除人类偏见</strong>：如果你能看到模型想做多 Apple，但担心 Apple 会"错过 AI 浪潮"，你会被 human story 左右，偏离数据科学。第二，<strong>防止数据外泄</strong>：不让任何人带着数据去建自己的对冲基金——"你不如提交给我们，通过 staking 分享收益"。第三，<strong>机器学习本来就不需要领域知识</strong>——学习的本质就是从数据中发现规律，而非依靠先验。</p>
+
+<p>技术上讲，这类似于 PCA 转换——保留了方差结构，但彻底摧毁了可解释性。这和在传统量化中对变量做 z-score 或 rank normalization 并没有本质区别——那些变换本来就是要做的。</p>
+</section>
+
+<section>
+<h2>Staking：从失败到突破</h2>
+
+<p>Numerai 一开始吸引了大量优秀数据科学家，但结果令人失望。Richard 回忆：</p>
+
+<blockquote>"It was like, wait, we have three hundred amazing data scientists here, but we can internally build a model that's better than the data scientists. It's catastrophic news for a company that's nine months old."
+<span class="attr">— Richard Craib</span>
+</blockquote>
+
+<p>解决之道来自 Richard 对 Ethereum 的早期投资。他想到创建自己的加密货币——NMR（Numeraire）——来实现 staking。<strong>Staking 的本质是 skin in the game，是资本主义最基本的元素</strong>：让某人有东西可以失去，而不只是有东西可以赢得。</p>
+
+<p>在引入 staking 之前，有人会注册 1,000 个账号，每个提交随机噪声——总有一个表现好。Staking 彻底消灭了这种攻击：你必须选择<strong>一个</strong>来押上真金白银。这让数据科学家对 overfitting 变得极度谨慎，因为他们押注的是<strong>未来的 live 表现</strong>，而不是测试集或验证集上的回测结果。Richard 称之为"我们创造的最难的数据科学竞赛"。</p>
+</section>
+
+<section>
+<h2>Core + MMC：双层评估体系</h2>
+
+<p>Numerai 的奖励机制有两个维度。<strong>Core</strong> 衡量你的信号是否与未来 20 天的残差收益有相关性——这是基础预测能力。<strong>MMC（Meta Model Contribution）</strong> 才是真正的难点：你的信号是否对 Numerai 已有的 meta model 产生增量价值。</p>
+
+<p>meta model 本身就是所有用户信号的平均——它经常是平台上"最好的用户"。要产生 MMC，你必须提供整个社区都还没有捕捉到的信号。这意味着<strong>你不能做一个更好的 XGBoost——你必须做别人没想到的事情</strong>。Staking 回报由 Core 和 MMC 共同决定，两者缺一不可。</p>
+
+<p>Richard 还指出，MMC 天然地构建了反 crowding 的机制。当每个贡献者都在努力与众不同，整个系统就能更好地抵御市场压力——这在 2023 年之后成为了 Numerai 最核心的风险管理工具。</p>
+</section>
+
+<section>
+<h2>为什么 Numerai 活下来而 Quantopian 没有</h2>
+
+<div class="compare-grid">
+<div class="compare-box cb-red">
+  <h3>Quantopian（已关停）</h3>
+  <div class="item"><strong>时代</strong>：pre-blockchain, pre-machine learning</div>
+  <div class="item"><strong>模型方式</strong>：手写规则算法——"在日本做多科技股 overnight"</div>
+  <div class="item"><strong>激励机制</strong>：没有 staking，没有 skin in the game</div>
+  <div class="item"><strong>结果</strong>：自己写论文说 99% 的社区在 overfitting</div>
+</div>
+<div class="compare-box cb-green">
+  <h3>Numerai（$600M AUM）</h3>
+  <div class="item"><strong>时代</strong>：post-blockchain, deep learning era</div>
+  <div class="item"><strong>模型方式</strong>：从混淆数据中学习——任何方法都可以</div>
+  <div class="item"><strong>激励机制</strong>：NMR staking = 真金白银的后果</div>
+  <div class="item"><strong>结果</strong>：staking 从结构上解决了 overfitting</div>
+</div>
+</div>
+
+<p>Richard 一针见血地指出：Quantopian 太早了——pre-blockchain 意味着没有 staking 这个工具，pre-machine learning 意味着模型是手写规则而非从数据中学习。而 Numerai 的社区和 Quantopian 的用户几乎没有重叠——Quantopian 吸引的是看传统量化因子的人，Numerai 吸引的是纯粹的机器学习工程师。</p>
+
+<p>他还补充了一个有趣的类比：Millennium 本质上就是一个成功的"crowdsourced hedge fund"——它的 pod 结构就是一种分布式投资决策系统。问题的关键从来不是 crowdsourcing 这个概念本身，而是<strong>激励机制的设计</strong>。</p>
+</section>
+
+<section>
+<h2>Stake-Weighted Meta Model：最简单的方案赢了</h2>
+
+<p>一个非平凡的设计决策：如何把所有信号组合成 meta model？很多人问为什么不只用最好的模型——但"最好"是用什么指标衡量？过去 12 个月最好？那下 12 个月可能就是最差的。</p>
+
+<p>Stake-weighting 的巧妙之处在于：<strong>它始终是前瞻的</strong>。它反映的是当前参与者对 live 表现的信心。而且它有自我纠正的特性——如果有人 stake 了不应该 stake 的 10 倍，几个月后他的 stake 就会被烧掉，回到正确的水平。那些积累了 $1M NMR 的人——他们已经通过持续的正向表现证明了自己的能力。</p>
+
+<blockquote>"That's the thinking with stake weighting and it's very hard to beat. We have tried. We didn't think the easiest thing would be the one that worked, but it definitely beats everything else."
+<span class="attr">— Richard Craib</span>
+</blockquote>
+</section>
+
+<section>
+<h2>2023 年回撤：当 Barra 中性还不够</h2>
+
+<p>2023 年值得特别关注。在 COVID（2020）、meme stock（2021）、市场暴跌（2022）中都表现良好的 Numerai，却在市场平静上涨的 2023 年亏了约 16%。波动率 15%，不算疯狂——但依旧令人失望。</p>
+
+<p>问题出在<strong>集中度</strong>。当时 Numerai 的持仓有时只有约 600 只股票——对量化基金来说太少了。仓位规模很高。而更扎心的是：Numerai 当时完全是 Barra 中性的。一位投资人要了持仓去看，看完说"我简直不敢相信你们亏了这么多"。</p>
+
+<p>答案是一个词：<strong>crowding</strong>。你持有的东西别人也在持有，这让投资组合比风险模型预测的更危险。回调会比波动率所暗示的更大。Numerai 的应对是在 MMC 上加倍下注——激励每个贡献者去构建 <strong>anti-crowding</strong> 的模型。如果数千名数据科学家都在努力变得与众不同，整个系统在市场承压时就会更有韧性。</p>
+
+<p>2023 年的教训也带来了系统性的升级。Richard 说道：</p>
+
+<blockquote>"Is it about the models? Was it about the data? Was it about the risk? And it's always be world-class at everything."
+<span class="attr">— Richard Craib</span>
+</blockquote>
+
+<p>2024 年成为了 Numerai 有史以来表现最好的一年。</p>
+</section>
+
+<section>
+<h2>从纸上 Alpha 到可交易 Alpha</h2>
+
+<p>理论 alpha 和可实现的 alpha 之间存在鸿沟。早期 Numerai 也踩过坑——小盘股、不能做空的标的、流动性不足都会让信号无法捕获。解决办法是年复一年的精细化工程。</p>
+
+<p>一个具体的例子：Numerai 的股票 universe 从 8,000 只缩减到 6,000 只。在获得更好的做空可得性数据和流动性数据后，他们发现最底部的 2,000 只股票根本不可能建立有意义仓位——于是直接从 universe 中删除。当 universe 被清理后，模型自己会照顾好自己——它根本学不到那些不可交易的信号。Richard 强调"细节真的重要，但你可以让你的 alpha 真正转移到投资组合中。"</p>
+</section>
+
+<section>
+<h2>AI Agents：每个用户的 IQ +100</h2>
+
+<p>在 NumeraCon 上，Richard 宣布了两个重要的发布：一个 MCP server 和一个 skills.md 文件。后者定义了 Numerai 内部做研究的方法——包含所有关于如何在 Numerai 数据上做好数据科学的知识。</p>
+
+<p>问题是这样的：如果你直接把 Claude 或 GPT 指向 Numerai 的数据，它会犯错。它不知道数据是时间序列，以为所有行可以互换使用。这不是因为它"笨"——只是它不了解这个特定的问题。skills.md 解决了这个问题：它将领域知识编码到 agent 可以理解的形式中。三行代码，agent 就能正确理解问题并开始工作。</p>
+
+<blockquote>"We see it as a gift from God that Anthropic is investing so much money into their models and OpenAI investing so much in their models and basically giving it to all of Numerai users for below cost. Every Numerai user is now like a hundred IQ points higher."
+<span class="attr">— Richard Craib</span>
+</blockquote>
+
+<p>Agent 可以连续运行约三天，执行 10,000 个并行实验——特征工程、模型选择、超参调优——然后输出一个可能在 leaderboard 上表现很强的模型。<strong>你什么都不用做，三天后模型就出来了。</strong>Richard 称之为"Numerai 的 singularity moment"。</p>
+</section>
+
+<section>
+<h2>Numerai Predictive LLM</h2>
+
+<p>除了让用户用 agent 建模，Numerai 自己也在用 AI 开拓新的数据源。Numerai Predictive LLM 项目取一个开源 LLM——它本来能写诗、做数学、写代码——然后<strong>重新改造它的大脑</strong>：输入新闻，输出股票未来回报的预测。</p>
+
+<p>这产生了<strong>完全新颖且正交的特征</strong>——来自互联网文本数据，与 Numerai 传统的结构化数据完全不同。LLM 阅读整个互联网来产生交易信号。加上 agent 写内部代码、用户用 agent 建模——Richard 形容这是"三重 agent 化"，正是他"一直希望的样子"。</p>
+</section>
+
+<section>
+<h2>Numerai Singularity：Portable Alpha 的新方向</h2>
+
+<p>在 NumeraCon 上发布的另一个重要产品是 Numerai Singularity 基金：<strong>Long 全球股票 + Long Numerai alpha</strong>——也就是 return stacking（回报叠加）/ portable alpha。Richard 是第一个投资人。</p>
+
+<p>这个基金的动机很直接：人们总说"你们去年 alpha 只有 9%，跑输了 S&P"。Richard 的回应是——那 9% 全部是超过 S&P 的超额收益，你只需要把它跟 beta 包装在一起。而且，Numerai 的 alpha 与市场正交并不意味着不相信市场——恰恰相反，Richard 认为市场组合是"科幻级别的 amazing"：</p>
+
+<blockquote>"One of the things I don't like is that people call buying the S&P passive investing because it really hides the ball. In reality, it's actually you got five hundred of the world's best CEOs to actively manage your capital all day, every day, and by the way, they have like hundreds and hundreds of thousands of the top talent in the world working for them."
+<span class="attr">— Richard Craib</span>
+</blockquote>
+
+<p>而且 Numerai alpha 和市场 beta 有天然的对冲关系：2023 年 alpha 表现差时，市场涨了很多。把两者叠加在一起，回报路径会更平滑。</p>
+</section>
+
+<section>
+<h2>时间的谜题</h2>
+
+<p>在被问到"当下最让你执迷的是什么"时，Richard 给出了一个出乎意料的答案：<strong>时间本身</strong>。</p>
+
+<p>作为一个投资人，你总是在谈论 return over time。但他开始质疑更深层的东西。2015 年，他在想 Ethereum 和 AI——现在美国总统每天都在谈 Ethereum 和 AI。"这很诡异，像是在挑战《随机漫步的傻瓜》——你是真的擅长预测未来，还是只是运气好？"</p>
+
+<p>他谈到了 <strong>hyperstition</strong> 这个概念——一种"命运思维"：也许一切都已经发生了，我们只是被拉向一个可以事先知道的未来。就像 Elon Musk 的"天命"——人类想象一个未来，然后把它变成现实。"这是一个 quant 最不该说的话"，Richard 笑着补充。</p>
+</section>
+
+<div class="quotes-section">
+<h2>核心金句</h2>
+
+<div class="quote-item q-blue">
+"And what staking is, is it's skin in the game. It's the most fundamental element of capitalism, you might say."
+<span class="ctx">— Richard Craib 解释 Numerai 代币的核心设计哲学</span>
+</div>
+
+<div class="quote-item q-green">
+"The biggest problem in data science is overfitting, and the biggest criticism of quant is you are just going to overfit the past."
+<span class="ctx">— 为什么 staking 不是锦上添花，而是根本性的解决方案</span>
+</div>
+
+<div class="quote-item q-purple">
+"We see it as a gift from God that Anthropic is investing so much money into their models and OpenAI investing so much in their models and basically giving it to all of Numerai users for below cost."
+<span class="ctx">— 谈 AI labs 的巨额投资如何惠及 Numerai 生态</span>
+</div>
+
+<div class="quote-item q-orange">
+"Is it about the models? Was it about the data? Was it about the risk? And it's always be world-class at everything."
+<span class="ctx">— 2023 年回撤后的核心教训</span>
+</div>
+
+<div class="quote-item q-yellow">
+"One of the things I don't like is that people call buying the S&P passive investing because it really hides the ball."
+<span class="ctx">— 市场组合不是"被动"的——500 位全球最佳 CEO 在为你工作</span>
+</div>
+</div>
+
+<footer>
+  来源：<a href="http://www.flirtingwithmodels.com/">Flirting with Models S7E28 — Richard Craib</a>
+  <span>·</span> Hosted by Corey Hoffstein
+  <span>·</span> Generated by PodDeck
+</footer>
+
+</article>
+</body>
+</html>
