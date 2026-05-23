@@ -1,13 +1,14 @@
 # PodDeck — Slidev 最佳实践与操作流程
 
-一个自动把 YouTube 长播客访谈转成结构化 Slidev 演示文稿的 pipeline。这个文件是给 Claude Code 看的项目级规范。**强制性硬规则（事实准确性、长度要求等）在 `scripts/prompts/slides-system-rules.md`**，那份会通过 `--append-system-prompt` 直接注入到 generate-slides subprocess 的系统提示词，绕不开。本文件是补充的"项目便利"和"已知陷阱"。
+一个自动把 RSS 长播客访谈转成结构化 Slidev 演示文稿的 pipeline。这个文件是给 Claude Code 看的项目级规范。**强制性硬规则（事实准确性、长度要求等）在 `scripts/prompts/slides-system-rules.md`**，那份会通过 `--append-system-prompt` 直接注入到 generate-slides subprocess 的系统提示词，绕不开。本文件是补充的"项目便利"和"已知陷阱"。
 
 ## 技术栈
 
 - **Slidev** `slidev-theme-academic` + `colorSchema: light` + `slidev-addon-excalidraw`
 - **Landing**: Astro + Tailwind（env-driven base path）
 - **自动化**: `claude -p --model opus --append-system-prompt` 跑无人值守 subprocess
-- **部署**: GitHub Actions → GitHub Pages（手动 workflow_dispatch / 首次 push 自动触发）
+- **转写**: DashScope `qwen3-asr-flash-filetrans`；直连音频走 URL，Megaphone/Unchained 走 `ffmpeg` 切片 + data URI
+- **部署**: GitHub Actions → GitHub Pages（定时 / 手动 workflow_dispatch）
 
 ## 项目结构
 
@@ -21,7 +22,7 @@ poddeck/
 │
 ├── data/
 │   ├── transcripts/         # 清洗过的字幕 .txt（git 提交，grep 验证引言用）
-│   ├── scan-cache/          # yt-dlp --dump-json 的 raw JSONL（.gitignore，50+ MB）
+│   ├── scan-cache/          # RSS normalized JSONL（.gitignore，按需刷新）
 │   └── plans/               # 按 source 的执行计划 yml（git 提交，状态追踪）
 │
 ├── episodes/
@@ -42,7 +43,7 @@ poddeck/
 │   ├── prompts/
 │   │   ├── slides-system-rules.md  ★ 硬规则，注入系统提示词
 │   │   └── slides-task.md          任务模板（{{ID}} / {{SOURCE}} / {{TITLE}}）
-│   ├── refresh-cache.ts     # yt-dlp --dump-json → data/scan-cache/*.jsonl
+│   ├── refresh-cache.ts     # RSS → data/scan-cache/*.jsonl
 │   ├── plan.ts              # cache → 过滤 → data/plans/*.yml
 │   ├── run-plan.ts          # 执行 pending（download + claude -p）
 │   ├── generate-slides.ts   # 单集生成（不推荐直接用，prefer plan:run）
@@ -57,19 +58,19 @@ poddeck/
 ## 自动化 pipeline（当前实际在用的方式）
 
 ```
-┌───────────────┐  yt-dlp --dump-json
+┌───────────────┐  fetch RSS
 │ sources.yml   │───────────────┐
 └───────────────┘               │
                                 ▼
                 ┌──────────────────────────┐
-                │ data/scan-cache/*.jsonl  │  full metadata (gitignored, 50MB+)
+                │ data/scan-cache/*.jsonl  │  normalized RSS entries
                 └────────┬─────────────────┘
                          │ plan.ts (date + duration filter + dedup)
                          ▼
                 ┌──────────────────────────┐
                 │ data/plans/<source>.yml  │  git-tracked state
                 └────────┬─────────────────┘
-                         │ run-plan.ts
+                         │ run-plan.ts (+ optional DashScope ASR)
                          ▼
                 ┌──────────────────────────┐
                 │ episodes/<id>/           │  slides.md + meta.yml
@@ -95,9 +96,12 @@ pnpm run plan:run                              # 全部
 pnpm run plan:run -- --limit=3                 # 限制数量
 pnpm run plan:run -- --concurrency=2           # 并行
 pnpm run plan:run -- --id=lex-fridman          # 只跑某源
+pnpm run plan:run -- --auto-transcribe --transcribe-limit=3 --transcribe-wait-minutes=2
 pnpm run plan:run -- --dry-run                 # 预览
 
-# 构建 + 预览
+# metadata 校验 + 构建 + 预览
+pnpm run normalize:meta                         # 校验 episodes/*/meta.yml
+pnpm run normalize:meta -- --fix                # 修复可恢复 YAML 问题，例如非法 \'
 pnpm run build                                 # 所有 generated episode + landing → dist/
 pnpm run preview                               # serve dist/ on :4173
 
@@ -109,7 +113,17 @@ pnpm run analyze                               # 默认 30/60/90 min 阈值
 pnpm run analyze -- --thresholds=45,60,120
 ```
 
-**一键从头到尾**：`cache:refresh → plan → plan:run → build → git commit → git push`。push 自动触发 GH Actions 部署。
+**一键从头到尾**：`cache:refresh → plan → plan:run → normalize:meta → build → git commit → git push`。push 不触发生成部署；部署由定时或手动 workflow 触发。
+
+## DashScope 自动转写
+
+- `run-plan.ts --auto-transcribe` 会提交 `needs_transcript` episode 到 DashScope，并把结果写入 `data/transcripts/<id>.txt`。
+- 公网可直连音频直接用 `input.file_url` 提交。
+- Megaphone/Unchained 音频先本地下载，用系统 `ffmpeg` 转为 `16kHz mono 32kbps MP3`，按 `DASHSCOPE_DATA_URI_CHUNK_SECONDS`（默认 900 秒）切片，再用 data URI 分段提交。
+- 分段任务保存在 `data/transcription-jobs.yml`；临时 chunk 文本放在 `data/transcripts/.chunks/`，目录名是 `sha256(parentKey:attemptKey).slice(0, 32)`，避免 URL 过长导致 `ENAMETOOLONG`。
+- `DASHSCOPE_DATA_URI_MAX_MB` 默认 18，控制单个 data URI 音频片段上限。
+- CI 已安装系统 `ffmpeg`；本地执行分段转写前用 `ffmpeg -version` 验证环境。
+- 只修改转写中间状态、chunk cache 或 ASR 脚本时无需重建 GitHub Pages；新增 transcript 并生成/修改 deck 后才需要 build/deploy。
 
 ## Base Path 环境变量
 
@@ -390,6 +404,21 @@ drawings:
 - ✅ 或整行加单引号：`- '"install base is everything" — CUDA 押 ...'`
 
 System rules 里有提示，subprocess 也可能踩。发现就直接手改，顺便 grep 整个 repo 看有没有类似。
+
+### 1.1 meta.yml 双引号字符串里的非法反斜杠转义
+
+❌ `- "Enzo 不是\'纯赛车狂\'"`
+
+YAML 双引号只支持固定转义序列，`\'` 会报 `Invalid escape sequence`。CI 会在 build 前运行 `pnpm run normalize:meta -- --fix`，把可恢复问题转成 YAML 库输出的安全格式。本地遇到 `YAMLParseError` 时先跑：
+
+```bash
+pnpm run normalize:meta -- --fix
+pnpm run build
+```
+
+### 1.2 分段转写 chunk cache 路径过长
+
+Megaphone URL 很长，chunk cache 目录名不能直接使用 URL 或 URL 的 base64。当前实现使用 `sha256(parentKey:attemptKey).slice(0, 32)` 作为 `data/transcripts/.chunks/<hash>/`，状态追踪字段仍保存在 `data/transcription-jobs.yml`。
 
 ### 2. YouTube 自动字幕识别错误 → 写到 slides 里是脏词
 

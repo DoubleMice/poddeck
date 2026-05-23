@@ -3,6 +3,7 @@
 
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { resolve, join } from 'node:path'
+import { execFileSync } from 'node:child_process'
 import { parse } from 'yaml'
 
 const PROJECT_ROOT = resolve(process.cwd(), '..')   // landing/ → poddeck/
@@ -33,6 +34,8 @@ export interface EpisodeMeta {
   base?: string
   category?: string
   article_path?: string
+  generated_at?: string
+  generated_sort?: number
 }
 
 export type ContentFormat = 'slides' | 'article'
@@ -65,6 +68,37 @@ function readYaml<T>(path: string, fallback?: T): T {
     throw new Error(`Missing ${path}`)
   }
   return parse(readFileSync(path, 'utf-8')) as T
+}
+
+function gitCommitTime(paths: string[]): number | undefined {
+  try {
+    const output = execFileSync('git', ['log', '-1', '--format=%ct', '--', ...paths], {
+      cwd: PROJECT_ROOT,
+      encoding: 'utf-8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim()
+    const seconds = Number(output)
+    return Number.isFinite(seconds) && seconds > 0 ? seconds * 1000 : undefined
+  } catch {
+    return undefined
+  }
+}
+
+function fileMtime(paths: string[]): number | undefined {
+  const times = paths
+    .filter(path => existsSync(path))
+    .map(path => statSync(path).mtimeMs)
+  return times.length > 0 ? Math.max(...times) : undefined
+}
+
+function episodeGeneratedTime(id: string): number | undefined {
+  const relPaths = [
+    `episodes/${id}/slides.md`,
+    `episodes/${id}/meta.yml`,
+    `episodes/${id}/article.html`,
+  ]
+  const absPaths = relPaths.map(path => resolve(PROJECT_ROOT, path))
+  return gitCommitTime(relPaths) ?? fileMtime(absPaths)
 }
 
 export function loadSources(): Source[] {
@@ -116,6 +150,10 @@ export function loadEpisodes(): EpisodeWithSource[] {
       const meta = readYaml<EpisodeMeta>(metaPath)
       meta.base = meta.base || `/episodes/${meta.id}/`
       meta.category = meta.category || categoryMap[meta.id]
+      if (meta.status === 'generated') {
+        meta.generated_sort = episodeGeneratedTime(meta.id)
+        meta.generated_at = meta.generated_sort ? new Date(meta.generated_sort).toISOString() : undefined
+      }
       const sourceRef = sourceMap[meta.source] || fallbackSource(meta.source)
       results.push({ ...meta, sourceRef })
       seenIds.add(meta.id)

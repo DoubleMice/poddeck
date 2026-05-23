@@ -15,7 +15,8 @@ const pending = episodes.filter(e => e.status !== 'generated' && e.status !== 'f
 const failed = episodes.filter(e => e.status === 'failed')
 const latest = [...episodes]
   .filter(e => e.status === 'generated')
-  .sort((a, b) => (b.published ?? '').localeCompare(a.published ?? ''))
+  .sort((a, b) => (b.generated_sort ?? 0) - (a.generated_sort ?? 0)
+    || (b.published ?? '').localeCompare(a.published ?? ''))
   .slice(0, 6)
 
 // Group generated episodes by category (in priority order)
@@ -114,7 +115,7 @@ const uncategorizedGenerated = generated.filter(e => !e.category)
         <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500">
           最新添加
         </h2>
-        <div class="text-xs text-stone-400">最近生成的 slides</div>
+        <div class="text-xs text-stone-400">按 slides 生成时间排序</div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {latest.map(ep => <EpisodeCard episode={ep} />)}

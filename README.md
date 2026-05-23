@@ -10,9 +10,11 @@ PodDeck 把播客 RSS 里的长访谈和 transcript 自动转成结构化 Slidev
 - 数据入口：`sources.yml` 中的 `rss_url`
 - transcript 来源：RSS `podcast:transcript`，优先 `text/plain`，再 fallback 到 VTT/SRT/HTML
 - 只有音频的 RSS episode 会进入 `needs_transcript` 队列，等待本地或手动转写补全
+- 音频转写：DashScope `qwen3-asr-flash-filetrans`；可直连音频走 URL，Megaphone/Unchained 走本地下载 + `ffmpeg` 切片 + data URI
 - 封面来源：RSS item `itunes:image`，缺失时 fallback 到 channel image
 - 生成入口：`claude -p` subprocess；本地使用 Claude Code 登录态，GitHub Actions 使用 `ANTHROPIC_AUTH_TOKEN`
 - 部署入口：GitHub Actions → GitHub Pages
+- 首页“最新添加”按 slides 生成/更新时间排序，缺失时回退到播客发布时间
 
 ## 关注源
 
@@ -71,9 +73,11 @@ pnpm run plan -- --min-duration=5400
 pnpm run plan:run
 pnpm run plan:run -- --limit=1
 pnpm run plan:run -- --id=tbpn
+pnpm run plan:run -- --auto-transcribe --transcribe-limit=3 --transcribe-wait-minutes=2
 pnpm run plan:run -- --dry-run
 
-# 4. 构建 + 本地预览
+# 4. metadata 校验、构建、本地预览
+pnpm run normalize:meta
 pnpm run build
 pnpm run preview
 
@@ -107,12 +111,13 @@ git push
 
 - `Discover`：定时刷新 RSS cache 和 plan，提交 `needs_transcript` / `pending` 队列。
 - `Deploy to GitHub Pages`：手动触发，只构建并部署已有内容。
-- `Generate and Deploy`：每天定时或手动触发，执行 `cache:refresh → plan → plan:run → commit → build → deploy`。
+- `Generate and Deploy`：每天定时或手动触发，执行 `cache:refresh → plan → plan:run → normalize:meta → build → commit → deploy`。
 
 `Generate and Deploy` 需要在 GitHub repository secrets 中配置：
 
 ```text
 ANTHROPIC_AUTH_TOKEN=<你的 DeepSeek API key 或兼容 Anthropic token>
+DASHSCOPE_API_KEY=<DashScope API key，用于自动转写缺 transcript 的 RSS 音频>
 ```
 
 workflow 使用 DeepSeek Anthropic 兼容环境变量：
@@ -130,6 +135,8 @@ ENABLE_TOOL_SEARCH=true
 
 - `source`：可选 source id，例如 `tbpn`；留空表示所有 source。
 - `limit`：生成数量上限，默认 `1`。
+- `transcribe_limit`：本轮提交转写任务上限，默认 `3`。
+- `transcribe_wait_minutes`：提交转写后短轮询等待分钟数，默认 `2`。
 - `category`：可选分类过滤。
 
 push 到 `main` 不触发 GitHub Actions；自动生成与部署只来自定时任务或手动 workflow。
@@ -175,7 +182,9 @@ pnpm run build
 - 调用 `claude -p` 生成 `slides.md`、`meta.yml`、`article.html`
 - 只有当 Claude 成功退出且 `slides.md`、`meta.yml` 都存在时，plan 状态才写为 `generated`
 
-GitHub Actions 的 `discover.yml` 会自动刷新 RSS cache 和 plan，并提交新的 `needs_transcript` 候选。音频转写建议通过本地或独立手动 workflow 执行，转写产物写入 `data/transcripts/<id>.txt` 后，再运行 `pnpm run plan` 会把对应条目推进到 `pending`。
+`--auto-transcribe` 会为 `needs_transcript` episode 提交 DashScope 转写任务。普通公网音频直接提交 URL；Megaphone/Unchained 这类 DashScope 服务器端无法抓取的音频会先本地下载，用系统 `ffmpeg` 转为 16kHz mono 32kbps MP3 切片，再用 data URI 分段提交。分段任务的状态保存在 `data/transcription-jobs.yml`，临时 chunk 文本放在 `data/transcripts/.chunks/`，该目录用短 hash 命名并被 git ignore；所有 chunk 成功后合并为 `data/transcripts/<id>.txt`，plan 状态回到 `pending`。
+
+`pnpm run normalize:meta` 会校验所有 `episodes/*/meta.yml`。`pnpm run normalize:meta -- --fix` 会修复 LLM 生成的可恢复 YAML 问题，例如双引号字符串中的非法 `\'`，CI 在 build 前强制运行该步骤。
 
 硬规则位于 `scripts/prompts/slides-system-rules.md`：
 
@@ -225,18 +234,23 @@ poddeck/
 
 1. `pnpm install --frozen-lockfile`
 2. `pnpm exec playwright install --with-deps chromium`
-3. `pnpm run build`
-4. upload `dist/`
-5. deploy GitHub Pages
+3. `sudo apt-get install -y ffmpeg`
+4. `pnpm run normalize:meta -- --fix`
+5. `pnpm run build`
+6. commit generated content
+7. upload `dist/`
+8. deploy GitHub Pages
 
 仓库 Pages 设置使用 **GitHub Actions**。
 
 ## 已知限制
 
 - CI 生成需要 `ANTHROPIC_AUTH_TOKEN` secret；缺少该 secret 时只使用本地生成流程。
-- RSS 缺 `podcast:transcript` 的 episode 会进入 `needs_transcript`，不会自动生成 slides。
+- 自动转写需要 `DASHSCOPE_API_KEY` secret；缺少该 secret 时 `needs_transcript` 只排队。
+- Megaphone/Unchained 分段转写需要系统 `ffmpeg`；CI 已安装，本地执行需确保 `ffmpeg -version` 可用。
 - `sources.yml` 中 `rss_url` 为空的 source 会写空 cache/plan。
 - GitHub Pages 深度链接依赖 `landing/public/404.html` 做 fallback。
+- 只修改转写队列、`data/transcripts/.chunks/` 或脚本缓存逻辑时，无需重建 GitHub Pages；新增/修改 `episodes/*`、`landing/*`、`data/transcripts/*.txt` 后生成 deck 或页面内容时需要重新 build/deploy。
 
 ## 致谢
 
