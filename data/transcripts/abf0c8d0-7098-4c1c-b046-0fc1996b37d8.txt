@@ -1,0 +1,971 @@
+Speaker 1: Maybe I'll
+Speaker 2: You're watching TBPN. Today is Friday, 05/22/2026. We are live from the TBPN UltraDome, the temple of technology. Another one. The fortress of finance.
+Speaker 1: The capital of capital.
+Speaker 2: Good, show for you today, folks. It's Friday. Friday, May 22. We had our Wall Street Journal stolen from us. We only have the Financial Times today.
+But we're making do because we have a digital subscription as well. And we're gonna take you through America's IPO boom. We're gonna talk to Matt Grimm from Anderle. We're gonna talk to Dan Shipper from Every. We're gonna talk to James Rogers.
+Speaker 1: The Shippinator.
+Speaker 2: From Appeal Sciences. We're also gonna read through Brandon Guerrelle's news roundup in the TBPN newsletter, tbpn.com. Can go sign up. So three key stories that broke since we last spoke a mere twenty one hours ago, since we podcast for three hours and then we come back twenty one hours later. We do it again.
+We do it again. Yesterday, Politico reported that David Sacks made an eleventh hour appeal to president Trump to spike an executive order that would have created a voluntary program, voluntary program, for frontier AI companies to submit their models to the government for review ninety days before new model releases. I wonder what the benefit of that is. Obviously, it's good to have red teaming going on, good to have benchmarking, good to have other eyes on the project. There's some sort of, you know, liability that happens Put the round thing on the table.
+No one in in the TBPN audience has ever seen this. Can you describe what this is? This round shaped argument?
+Speaker 1: Not exactly sure what we're looking at. Yeah. I saw them talking about this on ESPN. Yeah. And people are always saying, you guys are like sports center
+Speaker 2: Yeah.
+Speaker 1: For business.
+Speaker 2: You should pick one of these up. This object.
+Speaker 1: So I had to check it out. Yeah. This artifact.
+Speaker 2: Brown brown oval object. Yes. Cool. Well, it looks fun.
+Speaker 1: Anyways. I was having a little bit of fun earlier throwing this
+Speaker 2: Grilling the gong.
+Speaker 1: Grilling the gong. The production team didn't like it because there's this $70,000 massive flat screen TV next to the gong as well as multiple cameras and lights over there, but no accidents.
+Speaker 2: Wow. Mandate of heaven over there right
+Speaker 1: here.
+Speaker 2: Oh, and Tom's got the tennis ball? Got to hear that. Tennis ball. Anyway, so for his part, Trump explained the last minute cancellation by telling reporters, quote, I didn't like certain aspects of it. I think it gets in the way of, Dash, we're leading China.
+We're leading everybody. And I don't wanna do anything that's going to get in the way of that. The presumed text of the EO was leaked today. You can read it through this link.
+Speaker 1: Interesting Tyler, have you checked in with LessRong?
+Speaker 2: Yeah. How are they feeling about this?
+Speaker 3: Yeah. Mean, I assume they are not happy with this. This seems to be like anti safety.
+Speaker 2: Mhmm. Do they want more review from from independent nonprofits, for profit companies that are run by people with good intentions or the government like democratically elected?
+Speaker 3: I mean, I I assume at at some level it's it's gotta be the government. Right? Because if you're Yeah. Super HCI pill, these things are nuclear weapons. Yeah.
+It it needs to be the government.
+Speaker 1: Yeah.
+Speaker 3: But on the way there, people are are definitely like
+Speaker 2: Is there anyone who is there anyone who says like, no no no, actually like like nuclear weapons are super important but they shouldn't be regulated by the government because I don't like the government. I would rather my favorite mega corp owns them, controls them.
+Speaker 3: Don't think there's
+Speaker 2: I mean, if you look at the popularity, if you look at the if you look at the the approval rates for different organizations, there are plenty of companies that are polling above the US government. Like, people love Disney. Disney adults. They say give Disney a nuclear weapon. They already have the rights to build a nuclear power plant.
+You know this?
+Speaker 1: I did not.
+Speaker 2: Disney World has like like, you know, legacy rights because when they set up EPCOT, which is an acronym, which I should look up because what does it stand for? It stands for something really cool. This also bridges into one of our of our future segments stands for what does EPCOT stand for? Experimental prototype community of tomorrow. The idea was to build an entire city.
+It was the praxis of the Of its issues. Yeah. And so in 1966, Walt Disney conceived it as, in 1966, a utopian fully functioning city. And I believe this might just be viral clickbait, but I've heard it said many many times that they have the permission to build a nuclear reactor to power the The city of the community of tomorrow. Epcot.
+Yeah. And so, I don't know. Maybe maybe there's some folks out there that say, we can't trust the government. We can't trust the Democrats. We can't trust the Republicans with the nuclear weapons.
+Give them to Disney. I don't know.
+Speaker 1: I trust Bob with the new
+Speaker 2: would trust Bob. The new guy, we gotta meet him. We gotta get to know him.
+Speaker 1: That's right.
+Speaker 2: Bob.
+Speaker 1: Bob. He can I've shook his hand. Yeah. I I trust him.
+Speaker 2: I trust his hand on the button. Anyway, what else is going on? Second story highlighted by Brandon Grahl in the TBPN newsletter.
+Speaker 1: The Grahl inator.
+Speaker 2: The Grahl in the TBPN newsletter inator. And a non account posted yesterday He's
+Speaker 1: sitting here with with this noise cancelling headphones. Yeah. He's he's
+Speaker 2: going to find this out later when he watches these clips. Anyway, and a non account posted yesterday that Microsoft had canceled its internal clogged code
+Speaker 4: license after
+Speaker 2: token based billing made the cost untenable. This catalyzed a ton of commentary and discourse around Axe. Box CEO Aaron Levy, for example, used this post to argue that token price optimization is set to become a prevailing trend inside companies reliant on LLMs. Worth noting though that there's a proposed community note on the post right now that denies Microsoft made the move because of a cost issue. They have the money to spend billions on on tokens if they want.
+But instead, they are trying to shift the developers to use their own Copilot CLI, which I imagine they're they're going to build their own harness, their fork of clogged
+Speaker 1: heard code someone referred to it as they want to make the engineers eat dog food.
+Speaker 2: Yes. But what's the dog It food made could be made
+Speaker 4: of They're
+Speaker 1: dog fooding.
+Speaker 2: GPT 5.5 tokens. It could be made of Opus four
+Speaker 1: seven I think it
+Speaker 2: I guess they will be using
+Speaker 1: Yeah. Mean, think the reason that Codex and Cloud Code and Cursor and these other tools have gotten so good is because the engineers building them are using them all day long. And it's one thing to use those tools to build your coding tool, but being forced to constantly use the product that you're shipping is tried and true way to build a great product.
+Speaker 2: Yeah. The third story from Brandon Grill in the TBPN newsletter. The American semiconductor manufacturer Micron announced that they've begun manufacturing one alpha DRAM, the most advanced memory ever produced in The United States at its at its Manassas, Virginia headquarters or manufacturing plant. This move comes in the middle of the agent boom in AI, which requires longer context windows and thus memory than back and forth LLMs, which has led to an industry wide memory shortage. Micron has been an absolute has been on a tear.
+Let's see what they're doing.
+Speaker 1: 800 almost $850,000,000,000 market cap. Remarkable.
+Speaker 2: It's up 2% today, 3% over the last five days, and 246% over the last six months. What an absolute run for Micron. It's up almost a thousand percent over the past year. Really, really incredible performance from Micron.
+Speaker 1: Just wow.
+Speaker 2: Anyway, America's going through a mini this was such a funny article by the Wall Street Journal. America's America America's IPO mini boom. How is this a mini boom? You got three of the Is
+Speaker 4: this not a gigaboom?
+Speaker 2: This is a gigaboom. So I I don't know if we have truths on this, but it also made it to the front page of the walls of the Financial Times. They said, SpaceX, OpenAI, and Anthropic IPOs set to ignite Wall Street trading frenzy. NASDAQ loosens rules. Past investors could dump rival stocks.
+Trillionaire prospect for Musk. The blockbuster listings of SpaceX, Anthropic, and OpenAI are set to prompt an unprecedented wave of buy sowing. As new fast entry rules thrust the tech stocks straight into Wall Street indices. The rules implemented this month by Nasdaq mean billions of dollars of passive money will automatically flow to the three companies when they go public, driving their share prices higher and forcing investors to sell rival stocks. Elon Musk's SpaceX initial public offering next month is expected to be the largest on record fire firing the starting gun on what US bankers will hope hope will be a blockbuster year with OpenAI filing its IPO pay paperwork as soon as this week and Anthropic planning to float its shares too as well.
+The trio is set to raise tens of billions of dollars at a time of relentless investor appetite for companies linked to AI. SpaceX the SpaceX listing will cement Musk's control of two of America's most valuable companies, SpaceX and Tesla. It is it is crazy. We're gonna need a new term for the Mag seven because Tesla has been in the Mag seven. It's been north of a trillion dollars for a long time, but SpaceX is gonna go out at a higher valuation almost certainly.
+Where is Tesla trading at today in terms of market cap? It's at 1.34. Hard to imagine SpaceX trading below that. So you're going to have his Mag seven company will be lagging his non Mag seven company. We're gonna need new terms.
+We're gonna need a bigger boat. But why did why did The Wall Street Journal call this a mini boom? I think it's just because it's it's so concentrated on these three companies, but we will dig in and see where it goes. So too bad SpaceX and others didn't go public sooner. I agree.
+But they are a tribute to The US capitalist system, says The Wall Street Journal. Today's AI investor euphoria recalls the heady.com days of the nineteen nineties. It's hard to tell how these bets will shake out. SpaceX, OpenAI, and Anthropic are rushing to go public to take advantage of the favorable market conditions. But amid the the eulogies written about American capitalism, the latest mini IPO boom is a welcome tribute to the dynamism of US markets that no other country can match.
+SpaceX fired the starting gun. They're they're they're using the same language as the Financial Times over there. The starting gun has been fired. It's unanimous across the mainstream media. The rocket company founded in 2002 is a global leader in space exploration.
+Overnight success. It is also spreading to broadband, mobile mobile satellite internet and data center development. Anthropic recently agreed to pay SpaceX 1,250,000,000 a month to use its data centers to train models. That shows how competitors can enjoy symbiotic relationships. SpaceX says the company as a whole reported a $4,900,000,000 net loss last year, some of which stemmed from its x.com social media platform.
+I I can that be that much? I'd have to imagine that the losses were not I mean, I don't know how much Twitter was losing before they before they take private. I know that the the revenues cratered a bit, but there were also big layoffs and an 80% reduction in cost. I I that that the sum word there is maybe doing some of the lifting. I imagine that the that the losses were sort of spread over all sorts of investments here.
+Yeah. You're building a new a new Starship rocket, is set to launch today, 05:30 central time. Tune in. The last What one described
+Speaker 1: critical launch.
+Speaker 2: Is it?
+Speaker 1: No. It's just because of the timing with the s one and the IPO.
+Speaker 4: I don't know.
+Speaker 2: I mean
+Speaker 1: All eyes on
+Speaker 2: I think I think the market is valuing the launch capabilities in SpaceX and Starship in particular. It's like Sure. One small piece of the of the puzzle. Know, it's important
+Speaker 1: but, you know But people are gonna be paying Yeah. Way more attention to this.
+Speaker 2: Yeah. Yeah. The People will be excited about it. But but, you know, even like I I think even just the, you know, endless spamming Falcon nines can get Starlink to what, $20,000,000,000 run rate or something, $10,000,000,000 run rate. You can you can clearly build a business off of the existing capability.
+Lots of excitement around Starship. There there was a little bit of, like spice in the timeline from you know Everyday Astronaut because he was sort of like rooting for a scrub and everyone was like, oh, he's like against SpaceX. But he was like, no. I was like, I'm such a fan that I wanted to be there in person. I couldn't be there in person.
+So I was like, hope that they scrub because I wanna be there for this historic moment. So a little bit of like a misconception there.
+Speaker 1: And the livestream will be the launch is you said 05:30?
+Speaker 2: 05:30 central time. Is like when it's scheduled, but they're already counting down because they stacked it yesterday. They were ready to go. Nicki Minaj was on-site talking about Starships were made to fly, which I believe is one of her songs. SpaceX said in its filing that it's foresees 28,500,000,000,000, yes, trillion in market opportunities, including data centers in space.
+Is anything more bullish than the future just being enterprise software? Like, you paint this massive picture. We're going to Mars. How are we gonna make money? Enterprise software.
+22,000,000,000,000 of enterprise software.
+Speaker 1: We're gonna be automating workflows for the enterprise.
+Speaker 2: I guess forever. Mister Musk in January was awarded 1,000,000,000 performance based restricted shares that will vast if his company quote establishes a permanent human colony on Mars with at least 1,000,000 inhabitants. Do robots count as inhabitants? Do agents count?
+Speaker 1: Isn't that isn't that one
+Speaker 2: Human colony. Potential? You gotta get a million this is why he's
+Speaker 1: worried of about like five or six things and he just has to do like four?
+Speaker 2: I don't know. I I haven't dug into that particular one. I I know for Tesla, there were a whole bunch of different milestones. Their humanoid robots was was one of the stretch goals. But permanent permanent human colony on Mars with at least 1,000,000 inhabitants, that's exciting.
+That's a good goal. Like that feels, I don't know, that like a whole lot of enterprise software and a million people living on Mars, that's a vision I can get behind. I'm into that. I like it. Anyway, we have Matt Grimm from Andy Roel, the co founder and COO joining us.
+We're calling in to the Murph. We talked to him last year. Let's see how he did this year. Matt Grimm, how are you doing? Welcome to the show.
+Speaker 1: You are. Can hear them.
+Speaker 2: You can't hear us? Oh, no. Okay. If anyone can hear us, just ask him to talk. Pass it along.
+Just have him have him rant. Just rant. Tell him to rant. I'll text him. Rant.
+Rant. We might need to come back to him, but he does look like he did in the weighted vest. He's looking very sharp. And on this it looks like it's cold and rainy. This looks brutal.
+I'm excited to come back to that in a minute. But in the meantime, we'll we will go back to government pension funds and the SpaceX IPO. Government pension funds, kvetch that the IPO will preserve Mr. Musk's control of the company by giving him more votes per share, but dual class structures are not uncommon. Berkshire Hathaway and News Corp also have them and can encourage founders to take their company public since they won't lose control.
+If pension funds don't like SpaceX's structure, they don't have to buy shares. SpaceX could fetch a market valuation of upward of $1,000,000,000,000, a huge boon for its early private investors and employees with stock options. OpenAI and Anthropic also have heavily compensated their employees with stock options partially as a way to preserve capital. Stock options allow employees to share in a company's growth and success. Thanks for the context, Wall Street Journal.
+I appreciate that. The shame is that retail investors have missed SpaceX's early stratospheric gains. What what was the market cap of Tesla at IPO? What was the market cap of Tesla at was
+Speaker 1: sub 10,000,000,000. Right?
+Speaker 2: Was it Tesla's Tesla 1.7. Woah. $1.1700000000?
+Speaker 1: Yep. Are are you What is that?
+Speaker 5: One point
+Speaker 4: Is that an open Is that a market cap for
+Speaker 2: You got a thousand x if you just were a day one IPO believer.
+Speaker 1: I mean, that's how you build a retail army.
+Speaker 2: So SpaceX I mean, million people on Mars, we could be looking at 1.7 quad. Potentially. Anything's possible. I don't know. You get a thousand x from here.
+If we get to Mars, that's a big it's a big big, big opportunity.
+Speaker 1: That is so crazy that you could buy an Elon company in the public markets Yeah. At less than a $2,000,000,000 market cap.
+Speaker 2: And many people did not. I owned a little bit of Tesla at some point. But there were so many moments when it was like so wildly disconnected from other car companies or other like like it was never a a Warren Buffett buy, you
+Speaker 1: know. That's right.
+Speaker 2: There were always good reasons not to
+Speaker 4: buy it.
+Speaker 1: Instead of going to high school, I just bought the Tesla IPO Like using the money I made from mowing lawns.
+Speaker 2: Yeah. You should've just been a lawn mower who DCA ed into Tesla the whole time. Probably be pretty retired
+Speaker 4: right now.
+Speaker 2: I mean, there's a lot of people that did that. There's a lot of people there's also a lot of people that put money down to buy cars and then they didn't buy the stock and they're like, the car depreciated and I should've bought the stock. Anyway, let's check-in with the the Starship launch because SpaceX pro postponed the launch of the newly redesigned Starship, but hardly a headline if it's just a one day per per postponing because these things happen all the time. But it's completely redesigned. It's 400 feet tall, and it stood on the launch pad at the company's Starbase Complex outside Brownville, Texas.
+But engineers had to troubleshoot problems that kept cropping up to the end of the countdown for the flight according to a SpaceX livestream. SpaceX chief executive, Elon Musk, later said in a social media post that a hydraulic pin on part of the launch tower didn't function correctly. The company could try the flight Friday if the problem is fixed overnight. So they worked all night and they fixed the hydraulic pin on the launch tower. Wow.
+Talk about complex. The test mission was set to be the first flight for Starship v three. This is the third version, redesigned SpaceX vehicle intended to deploy bigger satellites and one day help the company potentially settle Mars and mine asteroids. Starship is bigger and more powerful than any rocket ever built. The company has sketched out a future in which Starship flies thousands of times per year.
+Of course, the the the the Mechazilla tower that grabs it, the the chopsticks, that's very key to being able to stack these quickly. You can't rebuild all the infrastructure. The reusability is key to flying regularly. The rocket has yet to fly any customer satellites after three years of intense tests that we know of. The real conspiracy theorists there's conspiracy theorists that think space is fake.
+Nothing's happening. They're not actually going. The satellites don't exist. And then there's other conspiracy theorists that think, oh, yeah. When they crash, they're actually deploying secret satellites.
+And there's more stuff in space than we think. So pick your tinfoil hat theory. We'll let you be the judge of what's really going on. SpaceX's growth plans depend on Starship according to its IPO prospectus. The document filed Wednesday listed Starship first among the risk factors facing the company.
+Interesting. Okay. So a little bit more credit for you. Cause I was like, ah, it's not that big a deal. I care more about the data centers.
+Yeah. Just seeing
+Speaker 1: the optic the odd thing about like the optics and some investors are super, you know, a little It bit
+Speaker 2: is interesting. Like like, clearly, if if SpaceX is listing Starship as the first risk factor, it means like, oh, yeah, like Colossus, like, we're going to be able to do that. Like, that's not that hard. Like, we can we we can build a big data center. They have They did.
+Possible. Did. And and and there's less of a risk factor of like, we're not going to be able to monetize that or we're not going to, you know Yeah. Because there is there are a group of investors out there that are saying like, oh, token prices will collapse, GPU depreciation, it'll it'll get blocked. There'll be a data center ban.
+Like, won't be able to ramp up their
+Speaker 1: The main thing is like a, you know, catastrophic, you know, explosion.
+Speaker 2: It'd be dramatic.
+Speaker 1: There would that would be, you know, potentially an omen Yeah. Certain people would Maybe. Look into. But Maybe. I have full faith.
+Speaker 2: Yeah. Their execution record is unsur unsurpassed but this stuff is hard to get right, said Daniel Hansen, portfolio manager at Neuberger Berman who oversees a fund that owns SpaceX shares. He's got bags. This team in due course will execute on Starship and that will unlock tremendous value. They estimated in its IPO filing Wednesday that it has spent $15,000,000,000 developing Starship.
+Well, that makes a lot of sense why there's losses if you've been investing this. Although it it seems like the development costs are declining because in 2025, the the expenses were $3,000,000,000. So I don't know how many years, but if you imagine they've been working on Starship for five years, then 3,000,000,000 a year is is sort of average. These efforts have weighed on SpaceX's bottom line with its space space division reporting a $662,000,000 loss. The interesting question that I have from the SpaceX IPO prospectus is Dan Premack had that sort of hot take saying like, oh, wow.
+Like, a lot of people were expecting SpaceX to be a bigger business than what they showed in the in this prospectus. Obviously, Elon is always looking to the future. Huge TAM, huge opportunity in space data centers, huge opportunity in terrestrial data centers. The Yeah. Revenues may
+Speaker 1: 75,000,000,000 that we Yeah. Need is
+Speaker 2: just added like 15,000,000,000 in ARR around a $20,000,000,000 company. Like the growth is there. Elon makes plays. But my question is, as you trickle down, it's like it's an AI company with a, you know, data center business, with a telecom. And then the smallest section is the launch business.
+And so I'm wondering, like, what does the P and L look like? What do the financial statements look like for Blue Origin? Because Blue Origin's been operating for, I think, a longer amount of time, maybe the same amount of time, twenty years. I can't imagine that they're you know, if they're working on a new rocket, are they going to be
+Speaker 1: 09/08/2000.
+Speaker 2: 2000. So that's twenty six year story and they're building stuff that's trying to be in this class of rocket and if Elon spending 3,000,000,000 trying to, you know, 3,000,000,000 last year alone developing Starship, like 50,000,000,000 total. And then the revenues have to be so much
+Speaker 1: for you, John. Yeah. There was a PR firm reached out Mhmm. Trying to get an early SpaceX investor Yeah. On the show.
+Yeah. Yeah. They invested in 2019. Does that count as being an early investor if the company was started in 2002?
+Speaker 2: I think so. I think pre
+Speaker 1: Because it's always early.
+Speaker 2: Starlink counts as early investor.
+Speaker 1: Because it's always early.
+Speaker 2: It's always early. Well, early is often often defined by the ROI on the investment. And so if you got in in the in the Decacorn rounds and now you're going out at a trillion round, that's a 100 x. Yeah. And so you're in a pretty good spot.
+Speaker 1: That's think
+Speaker 2: Sean Maguire at Sequoia, like it was a later bet. 2020, I think was when he started building that position. But
+Speaker 1: Pre Star like, Starlink really.
+Speaker 2: Yeah. Think Starlink was starting to work or starting to sort of be mapped out as a business, starting to be understood by the market as a potential profit center in the midst of a a very difficult launch market that was, you know, not growing exponentially. And there were good margins, but it wasn't but the the launch business alone was never going to propel SpaceX to a trillion dollar valuation. But you add two, three, four other businesses, and all of a sudden, you get there. Other tests have ended in explosions including one this past June that shook homes miles away, a failure early last year, threatened commercial airline traffic in the Caribbean region.
+The Wall Street Journal has reported. The new version of Starship includes upgrades to the fuel transfer tube that moves propellant to the booster's 33 engines, redesigned so engines can simultaneously and more quickly begin firing. And I think they did they paint the engines black for this one? I saw Elon doing like a little side by side of the silver engines. He was saying that the black engines look better.
+I kind of agree, but I haven't looked too closely at the images. I don't know if it's it's probably purely functional, but it is fun as these things get more designed. You see those images of like the Raptor engine or the Merlin engine getting like redesigned, redesigned and then just removing removing parts and then the final version looks pretty aesthetic. Like it looks pretty beautiful and the first version looks just like cables and wires and tubes everywhere. It looks very thrown together.
+There's something about efficiency that is also aligned with aesthetics sometimes. The engines called Raptors are expected to produce more thrust while weighing less according to the company. Oh, that's good. Every almost every part of Starship v three is different from v two, Musk said in a social media post Sunday. Post the postponed test mission was set to deploy 20 Starlink simulators during the mission.
+I'm wondering how much a Starlink cost because why don't you just rip
+Speaker 1: a Yeah. Real
+Speaker 2: Yeah. You know? You're spending 3,000,000,000. Just put up the real ones on the case that it actually works. But I guess there's probably more like telemetry and simulation and like data collection that you can do if you send up the simulator as opposed to like the real thing.
+But I don't know. Why not just but I mean, that's what you do with satellite, remember?
+Speaker 1: I mean, the ultimate simulation is just doing the thing.
+Speaker 2: Yeah. Right? Well, Elon says we'd live in a simulation potentially. Exactly. So maybe that's maybe that's what he's doing.
+What yeah. What are the Starlink simulators really simulating? Who knows?
+Speaker 1: DJ, D Sol.
+Speaker 2: Yeah. What's going on with
+Speaker 1: Slade into Elon's DM.
+Speaker 2: Oh, yeah.
+Speaker 1: In the bid Okay. Planned lead left
+Speaker 2: Mhmm.
+Speaker 1: The IPO with banks jockeying to get their name first on the deal for SpaceX's IPO. Solomons worked with staffers to message Musk directly. He's like, alright guys, help me out here. How do I send a message on X? According to people familiar with the matter.
+Mhmm. So he's putting in the work. He also And says, wow, this is how you work for the bag at Goldman Sachs.
+Speaker 2: David Solomon also had a piece in the New York Times saying that the AI apocalypse, NYT, was overrated. AI is a job creator. David Solomon says, he says, I'm the CEO of Goldman Sachs. The AI job apocalypse is overblown. We'll see what he's saying in a couple months.
+Ken Griffin sort of flipped. Although Ken Griffin hasn't gone as far to say that there's a job apocalypse. He was just saying that the models went from like slop to usable but he hasn't actually opined on whether or not that will change Citadel's hiring plans or his view of the
+Speaker 1: said he was very excited that all of his software engineers were more efficient because he said there's no Yeah. There's no like cap on how
+Speaker 2: much there. I was writing Visual Basic. It was brutal. I would have loved Codex and Cloud Code. Would have been would have been working for one minute a day instead of an hour
+Speaker 1: a You could have had Codex back then private a private instance of it. Yes. You would be currently
+Speaker 2: Time traveling back in time just to become the most productive intern of all time is elite.
+Speaker 1: That's something that's something you would actually do.
+Speaker 2: Oh, it would be so so much fun. Maybe that's what the the future will hold. Intern simulator, you get to you get to go into VR and simulate being the most elite intern with with time travel technology.
+Speaker 1: Anyway Can we talk about the World's Fair?
+Speaker 2: Yes. We need to talk about the World's Fair. Tyler, you gave this a read. What stuck out to you? Maybe maybe let's read through some of it first.
+Speaker 1: And a quick update. We are rescheduling
+Speaker 2: Matt Grim?
+Speaker 1: Matt Grim.
+Speaker 2: Okay.
+Speaker 1: Due to technical issues.
+Speaker 2: Yes. We we will we will get him on. He's been here in person. We we know Matt Grimm. We love him.
+Always fun to catch up with him.
+Speaker 1: It's possible that that a third layer SPV lead is holding Yeah. Their infrastructure hostage saying, give me direct access.
+Speaker 2: Yeah. I think I think he might have been there, finished the murph and saw someone hustling an SPV and he just had to drop the mic and run off and tackle them. That's probably what happened. Anyway, World's Fairs. Has someone tried to bring these back?
+This feels like a tech new media. We need a World's Fair thing. Like I I could see this being something that someone tries to revive, although it'd probably be a lot of screens these days. But at the World's Fair of old, there were a lot of cool technologies, a lot of hardware, a lot of interesting exhibits and we'll go through. I don't know how much you've studied the World's Fair in the past, but The Wall Street Journal has been reflecting on The United States Of America at two fifty years with a whole bunch of articles that look back and contextualize American history.
+And we'll go through this one on the World's Fair right now. So among the groundbreaking innovations unveiled at US hosted exhibitions were the telephone, the Ferris wheel, and the electric and electric lighting. Ferris really crushed it on naming thing. You know Alexander Graham Bell invented the telephone. Thomas Edison invented lighting mostly.
+Those guys did not bake their name into the product nearly as well as Ferris because it's capital f and I believe Ferris is the one who invented the Ferris wheel. Anyway, before splashy Silicon Valley product launches and the annual consumer electronics show, the World's Showcase, its latest in innovations at high profiled world's fairs. These exhibits held every few years beginning in London in 1851 gave countries a public platform to showcase new technologies, products and ideas that were going to reshape daily life. For host countries and cities, the world's fairs or expositions were an opportunity to own the world's fairs project.
+Speaker 1: The person that invented the ferris wheels. Full name was George Washington Gale Ferris Junior.
+Speaker 3: That's pretty elite. That's an elite. George Washington.
+Speaker 1: There's nothing stopping you from naming your child George Washington and then just slapping your your own last name at the end. Yes. Yes. I I mean my George Washington Cosgrove.
+Speaker 3: My John Tyler was the tenth president.
+Speaker 2: Oh, true. Yeah. There you go. That's my name.
+Speaker 1: There we go.
+Speaker 2: Okay. So many of the big expos were commemorative says Paul Greenhall Greenhall, a British historian and author of two books on world's fairs and expositions. But all of them ended up doing something else. They changed the shape of cities. Much like the Olympics today, world's fairs were large scale planning efforts and economic investments as much as cultural events.
+Cities competed for the right to host them. Chicago was able to redefine its image from a gritty second city to a cultural and architectural hub after defeating New York in the bid for the eighteen ninety three exposition. Here's a look at The US hosted World's Fairs that left the deepest mark. So fill it out.
+Speaker 1: Starting in Philly. Philly. 1876, you're not gonna believe what was what was shown, what was celebrated. This
+Speaker 2: is crazy.
+Speaker 1: We had two key technologies, telephones and catch up.
+Speaker 2: One was disrupted much faster than the other. Yep. I would say that the telephone has basically disappeared. The smartphone, text messaging, telephone's not doing well. It's on its last iPhone might gain
+Speaker 1: ground. Real inroads. No. Ketchup is still Even ranch kind of went on a run.
+Speaker 2: Yeah.
+Speaker 1: But really Mustard ultimately it's
+Speaker 2: a compliment not a substitute. There are very few people that say, oh, I don't need the ketchup at all.
+Speaker 1: Just the mustard.
+Speaker 2: Just the mustard, please. Most people they
+Speaker 1: I don't know. I do think mustard is is Better? Better than ketchup. Yeah. Interesting.
+Yeah. Okay. You can believe that. Yeah. America's first officially sanctioned World's Fair, the Centennial International Exhibition arrived when the country was still defining its place among industrial nations.
+Unlike earlier European fairs built around single monumental halls, the Philadelphia event spread across a vast park with hundreds of structures. It was sort of like the Coachella of its time.
+Speaker 2: Mhmm.
+Speaker 1: Among the most notable exhibits were the telephone. It was initially greeted with skepticism, but the potential of the cool contraption quickly drew attention. Once people realized what had been invented, it became clear how important it was. The fair also showcased Thomas Edison's automatic telegraph as well as machinery such as the typewriter. Imagine you just create the automatic telegraph and then you go to launch it and demo it and somebody invents the telephone.
+Was just like, really? Really, dude? And consumer packaged goods such as Heinz tomato ketchup. It normalized the idea that private companies, innovators and even governments could present their work side by side. A model that amplified the country's entrepreneurial culture.
+I love that. Chicago, 1893. You're not gonna believe it. You're not gonna believe the two technologies We that are
+Speaker 2: gotta we gotta call call balls and strikes here. A little bit more underwhelming.
+Speaker 1: Yeah. But I don't know. I think
+Speaker 2: people what was Two
+Speaker 1: key inventions. Last time remember we created telephones and catch up. Right? And so fast following this with the next fair, we create the No.
+Speaker 2: No. No. It's not fast following. 1876 The ferris
+Speaker 1: Almost twenty years later.
+Speaker 2: Almost twenty years later. Like fast takeoff. It's eight we're so early. Telephone's cooking. What do we got?
+Speaker 1: The ferris wheel and popcorn.
+Speaker 2: Popcorn is
+Speaker 1: good. Catch
+Speaker 2: up before popcorn. Pretty good. Pretty good. But yeah, Ferris wheel Ferris wheel.
+Speaker 1: Imagine the hundreds of people that came there to demo their inventions.
+Speaker 2: If you're in telephones, pivot to Ferris wheels. There's a whole there's a whole industry, oh yeah, Ferris wheel that will destroy the telephone. You got to get on the Ferris wheel, it's the new thing like
+Speaker 4: Well it
+Speaker 2: is it is is of funny
+Speaker 1: that like in like if you were to look back if we had a World's Fair Yeah. You'd have like creatine gummies and like AGI. Exactly. So in 1893 they had the Ferris wheel and popcorn and then you fast forward to today. Like we found a way to put one of the micronutrients in steak into a candy shaped supplement, and we need you to eat four or five of these a day forever.
+Speaker 2: Twenty twenty World's Fair. We have rockets that land and we also have Allbirds. Allbirds. What else came out that was very silly? Bored Apes.
+We have we've invented Bored Apes. SKIMS shapewear. Shapewear and GLP ones. Somewhat related. I don't
+Speaker 1: know. Buffalo, New York. What happened o one.
+Speaker 2: Okay.
+Speaker 1: An electric city.
+Speaker 2: This seems pretty elite. This is pretty huge. Nineteen o one.
+Speaker 1: Though remember mostly is the location where president William McKinley was shot. He died a week later. Buffalo's Pan American Exposition was meant to showcase.
+Speaker 2: He was shot
+Speaker 1: at the World's I
+Speaker 2: had no idea. That's crazy. Fact check that. Buffalo's Pan American Exposition was meant to showcase America's dominance and innovation electrical power and infrastructure. The fair featured electric lighting and electric streetcars powered by hydroelectricity generated by Niagara Falls, reflecting a moment when electricity was beginning to move from novelty towards widespread utility.
+Speaker 1: Okay. So this is nineteen o one. Nineteen o one. And remember, in 1876, we created the telephone. Yeah.
+And you fast forward to the next event in Saint Louis in nineteen o four, you're not going to believe what we remember the nineteen o four World's Fair.
+Speaker 2: Prerogators, we created electricity and they're like we got something better.
+Speaker 1: What do we got? We now know this this World's Fair as a snack food extravaganza.
+Speaker 2: It's really just aged nine pristine gummy.
+Speaker 1: It was it was sort of a Cambrian explosion of snacking.
+Speaker 2: Yeah. I mean, is the nature of our show. It's like cerebris and groons. Like, this is this is like this is actually what what happens in America, bro.
+Speaker 1: The Louisiana Purchase Exposition was among the largest ever stage and nearly obliterated the city's finances. Oh, no. Still, its pop culture influence endures. The exposition popularized a host of snack foods that would become staples of American life, including ice cream cones, peanut butter Oh my. They went on an insane run right here.
+Ice cream cones, peanut butter, hot dogs, hamburgers, and cotton candy.
+Speaker 2: Mhmm.
+Speaker 1: Elite. While the foods weren't all invented for the fair, their widespread availability there, like it's so funny. So so people are coming there again to share their their actual their innovations Yeah. And then like snacks had just come online, and so you can imagine like it just turns into a snack conference Yep. Where everyone's just snacking like crazy.
+They're like, wait we have hot, you can go to a hot dog stand then and you can go get cotton candy Yeah. In one place? Yeah. You gotta be kidding me.
+Speaker 2: I mean I bet I wouldn't be surprised
+Speaker 1: Visitors also encountered early examples of x-ray machines. So we invented x-ray vision, but history remembers it as a snack food extravaganza.
+Speaker 2: Peanut butter.
+Speaker 4: Early flying machines and automobiles.
+Speaker 2: And automobiles and submarines. This is crazy.
+Speaker 1: And and barely remembered. No. Fast forward, 1962, Seattle. Space race. It's a space race.
+Speaker 2: That's exciting.
+Speaker 1: The World's Fair, by the mid twentieth century, the World's Fairs had become games of one upmanship, I like that, and geopolitical rivalry. Feels like where we're at today. Seattle's Century twenty one exposition took place in the shadow of the Cold War following The Soviet Union's launch of Sputnik and the world's first artificial earth satellite. The Soviets turned down an invitation. They turned it down.
+Speaker 2: Turned it down.
+Speaker 1: Turned it down. Now the federal government became deeply involved. There was a sense that America needed to demonstrate technological leadership.
+Speaker 2: Mhmm.
+Speaker 1: The Space Needle was constructed for the fair. I did not know that.
+Speaker 2: I I recently saw the inside of the Space Needle because wait, no. That's not the Space Needle. It's the Toronto version of the Space Needle because didn't Drake film a music video inside of it?
+Speaker 1: He iced it out.
+Speaker 2: Oh, he did?
+Speaker 1: He made it he made it ice blue.
+Speaker 2: Because he's Iceman or
+Speaker 5: something?
+Speaker 2: Yeah. That's the name of the album. And inside, you can see all of the broadcasting equipment and there's these huge radio dishes inside. It's very cool. Anyway.
+Speaker 1: Fast forward just a few years, couple years.
+Speaker 2: This one
+Speaker 1: believe what you're not gonna believe what they created. They announced at this World's Fair. '64. They invented 1964, more than just under a hundred years since the telephone was invented, we invented punch cards. Punch cards.
+Which which feel like a kind of early version of of enterprise software in some way. True. World's Fair Flushing Meadow Is this a record? Yes.
+Speaker 4: This is records.
+Speaker 1: Visitors were dazzled by color television demonstration and the picture phone, an early video calling system.
+Speaker 2: They had FaceTime.
+Speaker 3: Yeah. Is crazy. This crazy. I can't believe
+Speaker 2: I told Jordy sixty '4 they invented FaceTime, he was like, did they use mirrors? And he thought it was just a periscope.
+Speaker 1: Just a mirror that you look at?
+Speaker 2: No. No. No. It's like it's like a series of mirrors that bounce my image across, like, so you can be in the other room and you can see me and talk. No.
+No. They had full video calling, I guess. AT and T's Picture Phone, which added video to telephone calls.
+Speaker 3: Yeah. So so it cost $16 to for a three minute call. Oh. That's a $121 today's in today's money.
+Speaker 2: That's expensive.
+Speaker 3: Yeah. $40.
+Speaker 2: Token axing. I wonder if I wonder if there were CEOs at the time who were like, we need we need to be if you're not if you're making $10 a year and you're not spending $20 a year on your picture phone, you're not going to have
+Speaker 1: a I wonder if
+Speaker 4: they were talking about
+Speaker 1: Jevin's Paradox.
+Speaker 2: Yes. Probably.
+Speaker 4: I don't know.
+Speaker 1: When did The last officially sanctioned World's Fair in The US was hosted in New Orleans in 1984 and it produced no truly defining technological debut
+Speaker 2: stagnation theory undefeated. Brutal. By that point, function of World's Fairs had largely migrated elsewhere to museums, television, theme parks and technology conference. As a result, the World's Fair concept gradually faded. Putting on an expo is a lost art, the author says.
+But when America needed it, no one did it better. And Brenton Grell of the TBPN newsletter fame shared that that there was in fact an attempt to bring back the World's Fair by Zach Dev. He wrote on Substack, startupcities.com in 2023. He talked to World's Fair co founder Cam Wiese on Walt Disney, Epcot, Dubai's Museum of the Future, why the World Fair died, and why big in person events matter more than ever. So there's a little push.
+Speaker 1: You could bring something like this back, but I feel like it would end up being like it would just turn into a tech conference. You know?
+Speaker 2: Yeah. It is tricky. I mean, yeah, we do sort of have these, but then I mean, we talked about this during the the consumer electronics show discussion around how a lot of the big tech companies have sort of created their own World's Fairs. Like, you walk around Metaconnect, it feels like a World's Fair, although it's it's much more narrow because they're releasing one product and a few features. It is cool to think about bundling everything up over a decade and having it be like save save everything up for this.
+Can you imagine? But with with iterative releases and the Internet and leaks and journalism, I don't think it would be wise for an inventor of the next paradigm of LLMs or or or AGI to to sit on it for a decade while they wait for the next World Fair. Yeah. I'm I'm GPT six, Mythos two, it's coming, but we're preparing for Paris in 2046. I don't know if that would work.
+Anyway, what else stuck out to you, Tyler? Did there was another there was another article you put in here from the New York Times about the picture phone.
+Speaker 3: That was just more details about More details. I was really enamored Yeah. By this. Yeah. I was just thinking it's it's so sad.
+We don't really hear the term inventor anymore. Like, no one is primarily an inventor.
+Speaker 2: Yeah. People aren't really
+Speaker 3: Kinda lost this.
+Speaker 2: Yeah. Does that have something to do with like the patent structure? Like like patents are like I have a patent but I don't think of myself as like an inventor of that thing.
+Speaker 3: Why? You could just say that.
+Speaker 1: I could I think of you as an inventor of bits.
+Speaker 2: Of bits, potentially. Inventor. Like in in did you invent TBPN? I don't know. Is that a thing?
+No. Founder. Businessman. Business person. These are the terms of the modern era.
+A lot of I mean, even also just the way inventions take place are so disaggregated. Like you look at the I I we were doing this during the GLP one boom. We were trying to trace through like who are the key players. This is the teal take on like we don't have ticker ticker tape parades. Like why is there not one person?
+Like Dudna got credit for CRISPR. There's a book Walter Isaacson wrote about her. I think it's called The Inventor maybe. I don't know. Dudna.
+She won the Nobel Prize.
+Speaker 4: But Yeah. I mean, it's just very It's
+Speaker 2: really hard because there's
+Speaker 1: like Internet.
+Speaker 2: There's so many slices.
+Speaker 1: The Internet is the new world's fair, right? Or or X or Mhmm. Any of these social platforms. It it would have made sense
+Speaker 4: Yeah.
+Speaker 1: You know, in the twentieth century Yeah. In the nineteenth century Yeah. To, you know, create something and and think, okay, I have to travel somewhere with a big to where I can find a big audience of people that are gonna be interested in new inventions and now people create something
+Speaker 2: Go viral.
+Speaker 1: On the internet.
+Speaker 3: Yeah. So so there's a film called The Inventor Yeah. And it's about Elizabeth Holmes. Right? So that that just tells you how much the the idea of an inventor
+Speaker 4: is Like
+Speaker 2: mocked now.
+Speaker 3: Wow. Yeah. That's like People don't have respect.
+Speaker 2: Inventor. It's the it's the scammy grifter. Yes. Who's the adventure? It truly, truly is.
+Well, we have someone who ships. We have Dan Shipper in the waiting room.
+Speaker 1: The Shipper nator.
+Speaker 2: The Shipper nator coming back to the show. Let's bring him in to the TBPN Starship. Catch you up with Dan Shipper. How you doing?
+Speaker 5: Sound good. How are you? It's great to be back.
+Speaker 2: You're a founder, you're a shipper, you're an author, a writer. Do think of yourself a nominative term?
+Speaker 1: I mean, I'm sure you just get this like way too much now but the nominative determinism is like a little too on the nose with this one.
+Speaker 5: Yeah. I just try to live up to my name.
+Speaker 3: Yeah. You do.
+Speaker 2: It's great.
+Speaker 1: You're an elite ship athlete. It's great to see you. It's been too long.
+Speaker 2: Do you think of yourself as an inventor?
+Speaker 1: Do we need to bring inventor back?
+Speaker 5: I feel like that term, it's like what I aspired to be when I was a kid. Yeah. So there's like a little 11 year old in me who's like, yeah, absolutely, I am an inventor, but I would never go around calling myself that. Because I feel like you have to have a garage workshop and be like making things that like have springs and make weird noises in order to be an inventor.
+Speaker 2: Gadget related.
+Speaker 1: Yeah. Yeah.
+Speaker 2: Even though yeah. I don't know. Inventions can be patented. People that invent software. You should give people credit for those things, but we've moved away from that term for better or worse.
+Anyway,
+Speaker 1: take been maybe has it been like four months? Maybe more since we caught up?
+Speaker 4: Too long?
+Speaker 1: It's been a while. It feels like years
+Speaker 5: Feels like two months.
+Speaker 1: In this era in this era. Yeah. The world's changed. Yeah. Give us give us the update on on All Things Every and and Dan Shipper.
+Speaker 5: I mean, there's there's there is a lot to say. The the big update is I just wrote a piece called After Automation Yeah. Because there's so much there's so much progress has happened over the last four months. I think the biggest thing has been there's a there was this huge step change in models Mhmm. Starting in November with Opus 4.5 and then GBD 5.3.
+And that has just continued. And I think it's starting to, like delegating work is starting to cross the chasm from something that you do if you're a coder to all of knowledge work with first Cloud Code, then Cloud Cowork, and now Codex, which Codex, the big shift, the biggest thing that has happened is Codex is my daily driver now, and it's fantastic. It is like totally changing how I work. But I think as that starts to happen, you're starting to get a lot of people who maybe have not been that clued into agentic AI use it for the first time and go like, holy fucking shit. Like everything is going to change.
+Am I going
+Speaker 2: I to have an interesting benchmark here where someone sort of outside of technology was was sort of lamenting AI progress because the the the tricky prompt they had was was come up with a Pokemon that ends in the two letters e r. Did you see this? No. And and and the and like the the base models, the cheapest things, the older models sort of get confused by it because of the tokenization. It's sort of like a new version of how many r's are in strawberry.
+But if you hit a coding model, like you can just watch the traces of Cloud Code or Codex and it's like go to Pokemon Wiki decks, download them all, put them into a CSV, write the Python that checks the actual last two characters of the Pokemon name and it just nails it perfectly and it's traceable and so you get the perfect answer. And I think people haven't realized that that's what's possible and it doesn't all need to be memorization anymore. That's like the big shift.
+Speaker 5: I totally agree and and you're seeing people, you know, I mean Dario's out there being like, know, AI could worn out could wipe out half of white collar entry level white collar jobs. Yeah. But even even people outside the industry like Citadel, like like had this whole quote and I I have it in my piece. He said, these are not mid tiered white collar jobs. These are like extraordinarily high high skilled jobs being, I'm gonna pick a word, automated by agentic AI.
+Yeah. And so you can just feel you can just smell when someone's like using agent for the first time and they're like, what the fuck? Yeah. And if you've been in AI for, you know, we've been covering it since 2022, since the GPT three days, you know that like that meme where it's like he's got the noose around his head and he's like, first time, you know?
+Speaker 3: Yeah. That's sort
+Speaker 5: of how I feel.
+Speaker 4: Yeah. I mean, it's a big I
+Speaker 1: mean, it's just it's a big it's a big shift because the fun yeah. I mean, you're going from, like, for everyday knowledge work being like good at writing documents and good at collecting information, which are valuable things, but there you've never worked with someone in an organization that's like a superstar, where all they did was where all they did was like gather information and like collect, you know, collect reports and things like that. Right? It's like, okay, what can you do with that? What can you what what kind of, actions you can take?
+And, yeah, it's it's it's been Even even with how even with how kind of close we are to the action and following, you know, not not as long, you know, we weren't doing the show in in the GPT three days, but I still find myself, like, operating day to day thinking like, oh, I should reach out to that person to get their you know, to see if they can help with this thing and then realizing like, oh, I can just ask Codex to do that or I can just I can get a model to do this. And it's a really it's a really It's like a fundamental shift and I'm still not routing enough kind of tasks through the models versus Or at least as much as I could. The other the other thing, I wanted to get your update on like how how you feel like memory is evolving. I've had some like pretty pleasant experiences recently where I will I will do, you know, I'll I'll go to ChatGPT and and ask for something, and it's like actually able to pull in a bunch of really relevant kind of like context and memories in a way that is like helpful and and not not not just kind of like distraction or annoying.
+And specifically like wanted to get your update because like, let's call it eight probably a year ago, eighteen months ago, think everyone was saying like memory memory is the moat, like memory And then and then people just like kind of stopped talking about it for, call it, six or nine months or something like that. But it feels like it might be having a moment too.
+Speaker 5: So I I mean, whether or not it's memory specifically, the the thing that has changed dramatically is that Codecs and also Cloud Code or CoWork to some extent, but Codex, the reason it's so powerful for me is it has access to everything on my computer. Yeah. And so, you know, when I published this article after automation yesterday, I was like, who should I send this to? And I was gonna go through my texts and go through my emails and then, you know, whatever. And I literally just said to Codex, hey, can you go figure out a couple people I should should send this to?
+And it came up with a bunch of investors, a bunch of journalists, a bunch of founders. All people who I've talked to in the last three months, but just going through my text messages, going through my emails. And it's just a complete change in what is possible because it has access to all that stuff, which includes memories. Yeah. And one of the things that I'm trying to do with this piece is to say, as a company, we've automated everything that we can.
+Every single person has access to an agent. Have access to as many tokens as they possibly can use. And yet, we've grown from four to almost 30 people since g p t three. So like, what the fuck is that about? Yeah.
+It it it's very counter to the narrative, I think. Especially like the popular narrative right now with like, meta's laying people off, and Block is laying people off, and the ClickUp guys, like, I'm gonna fire everyone. It's only gonna be 100x employees. So there's I think there's a really interesting question here about if you're actually on the frontier like we are, it seems like there's more human work to do than ever. Why is that?
+So I did a bunch
+Speaker 1: of Yeah. And the other thing is Ken Ken Griffin, in the quote you pulled earlier from in that talk, he was saying, my software engineers are more efficient than ever, but there's no limit to how much software we need to build or that we want to build. And so he's not sitting there being like, okay, like, a lot of this work is automated. Like, we can we can become a lot more efficient here and reduce head count. He's saying like, great.
+We can do a lot more as a team. And I think that's like universally what companies that like have momentum are saying. It's the companies that like don't have meaningful momentum or don't have clear narratives that are having to, do these layoffs. And and again, there's still there's still a lot of the there's just still a lot of blaming, sort of like crediting AI for layoffs that that would have needed to happen even if we weren't in this technology cycle.
+Speaker 5: Yeah. It's interesting because it's very popular now to say AI in the layoff announcement, but it's also very popular to say, and our business is better than it's ever been.
+Speaker 4: Mhmm.
+Speaker 5: What what do you guys think about that? I just feel like that's such a weird strategy or weird meme to be going around.
+Speaker 1: Well, think I think they're saying You can say our business is better than it's ever been, but that doesn't mean it's being valued better than it ever has. Right? Like, you can say, like, better than it's ever been. What does that mean? Revenue is up.
+Right? But but the example that I know you're thinking of, I can't imagine that that company is trading anywhere near it was trading, you know, two a year ago, two years ago. And so when you have a massive correction, in in the sort of valuation of your company, like, you're gonna try to make moves to change that or free up resources to invest in new in new product areas and get that momentum again. So I would say, like, when I see oh, the the business is bigger than it's ever been or better than it's ever been, I just don't necessarily I don't necessarily buy that because you have to understand, like, what what metric are they using to to to sort of, like, qualify that?
+Speaker 5: Yeah. I think that that's a reasonable frame. And I wish that I wish that they would say that more because it gives it's just such a bad look for all all of technology for CEOs to be doing that.
+Speaker 2: Yeah. Did you see the Standard Chartered CEO gotten hot water? No. So CEO of Standard Chartered came out and said, like, AI is working so much. We're gonna reduce our workforce.
+And he used a really spicy phrase. He said, like, low value human work, and we're gonna replace it with capital that we're investing. It was a very quantitative analysis of something that's, deeply human. But I dug into his actual projection and he said 15% headcount reduction by 2030, which is like, I would assume that attrition would get you there. Is this like the most retentive company in history?
+Like I feel like 4% of the workforce probably turns over annually anyway. You can just like slow your hiring plan and get there if you want to shrink. And that's what a lot of companies have done in previous eras where there's been hiccups or disconnects between valuation. Like, were some there were some big private companies that during the COVID era or Zurp era, they just sort of froze hiring and grew into their valuations because the business model was sound. They didn't need to hire as much.
+They refocused, raised the hiring standard, allowed attrition to play its part, and they got to become more lean, like, more lean and mean organizations without, like, actually doing a layoff, which at that time would have been optically very bad. Because if you were doing a layoff during ZERP or COVID, it was like an indictment of you because it was like, oh, well, you're a victim of COVID or you're a victim of Zurp. Like, you your business doesn't work in a high interest rate environment. Your business doesn't work in a remote in in a in a more remote world. Whereas now, the the the vibe is, oh, if you're doing layouts, that's a sign that your business is is ready for AI, ready for automation, ready for for more for more efficiency.
+And so I think people are sort of playing both sides. It's very very
+Speaker 1: How are you how are you thinking about you know, this has been said, know, talked about plenty at this point, but I'm curious in the context of after automation, this difference between like a job and like a task. Right? So like AI right now very clearly can do a lot of tasks, but it cannot do very many jobs or really Mhmm. Any jobs or like there's a there's a subsection of jobs that AI can do well 90% of the time, but even that is not enough to replace the role or function entirely?
+Speaker 5: Yeah. And I I think this I think this all changes and the and the lines between those terms are all gonna change because they're all sort of relative to capabilities and technology, and and that's all changing too. But I can tell you that what we find internally at every and, you know, again, we're one of those places. If you someone in Slack, it's like toss-up whether or not it's a bot, you know? And everyone's using Codex and Cloud Code to doing do all their work every day in the engineering org and like for writing, for editing, for design, all that kind of stuff.
+And I can tell you that every agent needs a human. The further away an agent is from a human who's managing it, the worse it does. And you see this too in, like, even in this even in the scale AI companies like inside of OpenAI or inside of Anthropic, they do they do have company wide bots that you can you can at, but they're run by teams of people. And I think that that's actually a really interesting and pretty stable phenomenon based on how how these agents work. Obviously, they do more and more complex work, but what we see is that someone on our team, Kieran Klassen, calls it the human sandwich, is AI collapses tasks that used to take hours into, like, you know, a few minutes.
+But the human is still kind of like the sandwich on either end or the bookend on either end who's, like, framing the task or evaluating it when it's done. And what's really interesting is even though it can do expert even though AI can do expert human work, my experience internally at every I think you find this across the, like, AI industry, is it actually even though AI can do expert human work, it actually increases the demand for human experts. Because what happens is you can get expert human work out of an AI. You can get, like, pretty good writing or pretty good images or pretty good code, but it's all based on yesterday's competence. It's all based on what is in the training data from yesterday.
+And what that does is it floods the market with PRs or images or writing that's like kind of good, but not quite right for the situation. And what you need are human experts to come in and and and take take the the cheap competence that AI enables anyone to have and turn it into actual really, really good, valuable, differentiated work because otherwise it's it's just the same thing as everybody else is doing and it's not valuable. Mhmm. And I think that's a I think that's a dynamic inside of how the models work and and how they how they function in the economy that is kind of lost when people are worried about, oh, I can do all this great stuff. It can.
+And in order for that great stuff to be valuable, it needs to be done by a human.
+Speaker 1: Yeah. Thanks a lot.
+Speaker 2: What do you think about the the idea of, like, the YouTube ification of software? Like, Hollywood has been on a decline as creation and content creation has been commoditized and democratized. But you've seen a lot, like, many more small creators pop up, many more lifestyle businesses, many more small businesses get off the ground. And it feels like that that is one possible direction that this goes, like more niche software instead of needing you used to need to raise a whole series a from a venture capital firm to rack servers. Then with AWS, you needed to, you know, go through YC, be technical, hire a couple engineers.
+Now a few people can sort of get something off the ground. Are you actually seeing any movement towards that, do you think?
+Speaker 5: I think that's definitely a thing.
+Speaker 2: Mhmm.
+Speaker 5: And it's actually one of the one of the things that makes working at a place like Every really appealing because if you're someone who wants to make make software, everybody else can make software now. So having having some sort of distribution and trust trust a brand makes a lot more sense than it used to. I think that I'm I'm very bullish on people, like a person or a small group of people making software for a niche. Think that's totally happening, but I'm very I think the the the SaaS pocalypse is like totally overblown. 99% of people are not gonna be vibe coding their own apps.
+They might do it once, but actually maintaining software is really really hard and it's a particular skill set that most people don't want to have. And I would be buying SaaS docs because I I actually, you know, if you look at every week, buy we can go whatever we want.
+Speaker 2: There is violation. It is a negative violation.
+Speaker 4: Yeah. The only thing I think the only thing
+Speaker 1: I think about is oftentimes you're buying software for a certain group of people to sort of manage work, and as certain workflows become agents, then I I do I like like, another way to put it is a lot of people that are outside of tech that have been vibe coding are sharing apps apps with me that they've built that like the LLMs can just do natively like pretty well already. And so that's been that's that's the kind of the the potential bear case for this sort of like super super long tail of software is like as agents get get more competent and people learn how to they're sort of like un hobbled, there's a lot of this long tail that can just be like a thread effectively.
+Speaker 5: Oh, you're saying you don't need an app, you just need to talk to
+Speaker 1: the Yeah. Yeah. Yeah. It's basically like you're talking to an agent and it's like, hey, I want to get my, let's use the most bro y example possible. I want to get my bench press to two plates by eight weeks from now.
+I'm currently at, you know, a plate and give me a plan to get there. Right? So instead of needing like
+Speaker 2: a You could vibe code bench press out.
+Speaker 1: Yeah. You could do like the Yeah.
+Speaker 2: The distribution or you could or the customer could just wind up going to any
+Speaker 1: And they're like, cool. And and they they generate your workout. You're saying, great. I did it. I I was failing after three sets or whatever.
+And then it learns that and it gives you a new workout and it and it just goes and goes and goes and you functionally get the what a vertical product could do. So I just think like there is an opportunity right now for this like long tail of apps, but part of it is that people don't realize what the models themselves.
+Speaker 5: I have a few thoughts there. The first the first thought is I actually look at that as training a customer. Mhmm. And a customer that's going to really stick around with that is going to end up wanting things that just the bare thread in Codex is not gonna do for them very well. Actually, chat is like not a very good for a lot of app interactions.
+So in the same way that Excel was you don't get the SaaS boom without Excel. Excel is like teaching people how to use computers in a way that then becomes enterprise SaaS. I really think a lot of these a lot of these Codex or ChachiBT or Claude use cases are actually training potential customers who be who are power users to want to encounter problems that they want to buy software to fix. But I have a very specific prediction for what that's gonna look like. And I I I'm currently obsessed with what I'm calling Codex Native apps.
+And the the basic insight is for all of these tools, so like Cloud Code Desktop and Codex, when they're built primarily for developers for now. And when developers are working in them, if you're changing your app, it has an in app browser that you can use to like, you know, the agent's in there with you. You can like look at your app in in local host and the agent's in there and you're you're going back and forth and it's very good a very good collaboration environment for developer. I think that is it's incredible for any kind of knowledge work. I spend all day just in Codex and when I open up a a thread, just open up a a browser tab and I'm in my documents, I'm in my emails, and it's me and Codex going back and forth on a SaaS app that's running inside of the browser of Codex, and it is the most powerful thing I've ever used.
+And I really think that is going to be significant user experience type thing that we're gonna see across all of the all of all of these provide providers of agent orchestration platforms for knowledge work.
+Speaker 2: Love it.
+Speaker 1: Do you think your agents are planning a surprise birthday party for you?
+Speaker 2: No. Happy birthday. Do we hit the gong? Yeah.
+Speaker 1: We're hitting the gong. We're hitting the doing an early gong for your birthday. Wow. A little little birdie named Chuck in the chat said that said it's tomorrow. Great great timing for the three day weekend.
+Great timing for you to just lock in at your computer
+Speaker 2: We'll lock.
+Speaker 1: And just grind all weekend.
+Speaker 5: Absolutely. Me and Codex are going have the best birthday ever.
+Speaker 1: It's great. Awesome. What can people expect from every over the next call it month? Because that's like a year in AI years.
+Speaker 5: We've got a lot of good stuff. There's there's some interesting stuff coming on the vibe check front. Every time a new model comes out, do some we do some good vibe checks, there's gonna be some really good stuff happening in the next couple weeks. And then we've got we have our agent product plus one and that should be in beta probably by the end of June. And I think that's gonna be really, really cool for people.
+Speaker 1: Amazing. Well, great to catch up. Have a wonderful weekend. Enjoy your birthday with Codex, and we will we'll talk soon.
+Speaker 2: You so much for coming on the show. We'll talk to you soon. Goodbye. Up next, we have James Rogers from Appeal Sciences. He is the founder.
+Here with us live in the TBPN UltraDome. Maybe move these
+Speaker 1: Just get these
+Speaker 2: objects out of place so we give you a proper entrance. Thank you so much for coming on down.
+Speaker 4: How are
+Speaker 2: you doing? Great. Please introduce yourself for everyone who might not be familiar. Introduce yourself and we'll go through the story of the company and talk about the news.
+Speaker 4: Yeah. James Rogers. Thanks for
+Speaker 2: having me down here. Yeah.
+Speaker 4: Of course. Based up in Santa Barbara so it's easy to get down.
+Speaker 2: We we have why Santa Barbara? I I remember finding this out and it being an interesting tidbit. There's some cool companies up there, Sonos and Yeah. Isn't Dyson out there a little bit or something?
+Speaker 4: Deckers. Deckers. There's Okay. Yeah. I went out there for graduate school Got it.
+To UC Santa Barbara.
+Speaker 2: Oh, cool.
+Speaker 4: I did my PhD in material science.
+Speaker 2: Okay.
+Speaker 4: Turns out that's the place to go for that.
+Speaker 1: Yeah. They
+Speaker 4: didn't know. Was in Pittsburgh before that. Got out to Santa Barbara and I was doing my PhD in material science
+Speaker 1: Yeah.
+Speaker 4: Studying solar paint.
+Speaker 2: Okay.
+Speaker 4: Kinda weird.
+Speaker 1: Solar What
+Speaker 2: does that do? You paint it You paint it
+Speaker 4: and it dries into a solar cell.
+Speaker 2: Okay.
+Speaker 1: I like that. Where did
+Speaker 2: that technology go? Is that Oh,
+Speaker 4: too expensive.
+Speaker 2: Oh, it's too expensive.
+Speaker 4: So That was actually where appeal came from was, hey Power is expensive now though.
+Speaker 2: Maybe the economics work in the data center era, you just paint the data center.
+Speaker 1: What was your I'm
+Speaker 5: I'm
+Speaker 1: a gaucho as well. Yeah. What was your reaction to touring UCSB for the first time?
+Speaker 4: Unbelievable. I came out to
+Speaker 1: be Because from the air, my favorite thing is like if you show someone a picture of the university from the air, it looks like it should be like a Four Seasons or Like it has no a university has no business being that close to an incredible beach.
+Speaker 4: It doesn't make any It was like ranked like yeah. It was it was crazy. I I flew out in March. I was in Pittsburgh, Pennsylvania and
+Speaker 2: Oh, yeah.
+Speaker 4: They were de icing us on the runway. And then I land in Santa Barbara and it's like, I'm not going back. It's too it's too nice here.
+Speaker 1: Amazing.
+Speaker 2: Do you study material sciences? Like, where did the original idea for appeal come from?
+Speaker 4: I was I thought the paint thing was so amazing. Yeah. You know? Wow. You can mix up a bucket of this paint and then it will build itself Yeah.
+Before you ship it. Yeah. And but then I I realized how expensive that was going to be and went, okay. Well, that maybe the solar paint thing doesn't work, but this there's something about this idea that you could Technology that builds itself. Yeah.
+Somewhere else. Okay. And I started I just kind of had that in the back of my mind and I learned about how many people were not learned about. We all No. Learned we all know Yeah.
+I never I never understood why. Originally, thought, oh, we're not growing enough food. We need to grow more food.
+Speaker 2: Yeah.
+Speaker 4: Nope. We're actually growing twice as much food as we need to feed everybody already.
+Speaker 1: Yeah. Wow.
+Speaker 4: And the reason is we're people are hungry because we throw it away. Yeah. And so why do we throw it away? Yeah. We throw it away because it spoils.
+It goes bad.
+Speaker 2: So the the initial product are you in the lab? Are you in the pitch deck? Are you raising money and then going and doing r and d?
+Speaker 4: It was all an was just an idea on a Okay. On a sheet of paper. Cool. You know, I didn't because I called my mom to tell her about this idea and she's like, sweetie, that sounds nice but you don't know anything about fruits and vegetables. That is true.
+Speaker 2: That's the
+Speaker 1: easiest part.
+Speaker 4: That is true. But I'm like, well, I just learned all this I know I learned all the material science stuff, so I could probably learn learn the fruits and vegetables. And so I made a list, right? Because I didn't know it would work. I didn't know that this idea would work, but I made a list of the fruits and vegetables
+Speaker 1: Yeah.
+Speaker 4: And just in terms of how long they lasted. And the shortest ones are like raspberries, blackberries Yeah. Strawberries. But what's at the bottom of the list, the longest lasting stuff is like mandarins, oranges, grapefruits.
+Speaker 1: Yeah.
+Speaker 4: I don't need to know a lot about fruits and vegetables to know that the ones with appeal last a lot longer than A peel. The ones without Just put those words together.
+Speaker 1: Yeah. Yeah.
+Speaker 4: Now we've to figure out how to make it.
+Speaker 2: Yeah.
+Speaker 4: And that was the hard part.
+Speaker 1: Yeah. So what what like specific founder journey, you have this idea, you tell your mom about it, she's like, good. That's that's nice, sweetie. But you don't know anything about fruits and vegetables, and then what do what do you do next?
+Speaker 4: I, know, I actually didn't know what fruits and vegetables were made. I'm a so I'm a material scientist, so I'm kind of obsessed with what stuff is made out of. And so the first question was, well, if got this strategy to allow fruit to last longer by strengthening the peel that's there, what's there now?
+Speaker 2: Mhmm.
+Speaker 4: Yeah. So I was starting to do, you know, I'd been trained for this, started to do research. What are the skins of fruits and vegetables made out of? And totally blew my mind because, you know, I've been working on these solar cells, so then to pivot and start looking at we don't think about fruits and vegetables as made out of stuff, we think of them as fruits and vegetables.
+Speaker 2: Mhmm.
+Speaker 4: Yeah. But they're they're mixtures of really specific molecules. Mhmm. Yeah. And so it was, what's the skin made out of?
+And it turns out they're made out of these plant oils. Mhmm. And it was Yeah. So these skins are made of plant oils, and then it wasn't just that the strawberries it wasn't just that the orange skin was made out of these plant oils. It was the strawberry skin was made out of the same thing.
+Mhmm. And that was like a Yeah. A big like, that was like a mind blower. Yeah. Because it was well, wait, if lemons last a really long time and they've got the same thing
+Speaker 1: Yeah.
+Speaker 4: As the strawberries Why
+Speaker 1: can't you apply
+Speaker 4: Can we just do more of that? Yeah. It's so simple. Yeah. It's so simple at one level, but we were so addicted to refrigeration and pesticides and plastic wrap to try to
+Speaker 2: Yeah.
+Speaker 4: Address this stuff. This idea of using something plant based was like at the time it was kind of kind of crazy.
+Speaker 2: Yeah. So grant money early on. When does the business New venture competition. New venture
+Speaker 4: We were like a UC
+Speaker 1: No way. UC SIP. I remember. UC But wasn't
+Speaker 4: that wasn't
+Speaker 1: that like didn't you get like $25 or something?
+Speaker 4: Yeah. Got like we got like $10. No for for a brat student. Was like
+Speaker 1: I remember I remember this this program and yeah, it was like it was really like venture funding for
+Speaker 4: ants. Yeah. He's at least twice the size.
+Speaker 2: Yeah. 17 k. First company for me. Yes. It's enough.
+If you're eating ramen and just paying ramen
+Speaker 4: I mean, my yearly salary was $24,000. Yeah. So this was like a 50% bonus. Yeah. You know?
+Was enough to incorporate the business. Yep. First business address was on Del Playa. That
+Speaker 1: is crazy. Yeah. That's like probably the the most enterprise value created from a from an incorporation on Del Playa. Del is like yeah, just a very notorious street.
+Speaker 3: It's the street that runs I should imagine.
+Speaker 1: It's the street that runs in Isla Vista which is where the university It's a street that runs along basically as close to the water as possible. You Yeah. Wanna be on the So
+Speaker 2: you're usually surfing if you're on that street. Not necessarily.
+Speaker 1: Maybe a little bit. Maybe a little Yeah.
+Speaker 4: Yeah. We were at the end of the street, know, I was in grad school. Good. No. That's actually good.
+Speaker 1: Yeah. That means you're way more locked in. Basically, like, middle zone is a nightmare. I don't think any enterprise value is being created there.
+Speaker 4: Closer
+Speaker 1: one you're farthest from the university, but it's like much more kind of you're closer to nature. It's a little bit quieter there, but you go two blocks down
+Speaker 2: Yeah.
+Speaker 1: Negative enterprise value Yeah. So you kind of have this insight. You you have a little grant funding. Are you able to make MVPs with that grant?
+Speaker 4: Not I was able to do the do the research and it got it got to the point where it was, you know, I I couldn't there was no proof that it would work, this idea that we could add, we we could we could strengthen the peel and it would last longer. It's kind of the will the lemon last longer than the strawberry, but will it work if we actually build a business around this? And so it was research research, know, measure measure measure, but, you know, okay, at some point I couldn't figure out, I couldn't find a reason it wouldn't work Mhmm. But I also there was nowhere written that it would work.
+Speaker 2: Mhmm.
+Speaker 4: And so it came to the point But
+Speaker 1: how hard could it be? You just spread just put some stuff on on an apple and leave it out. Right?
+Speaker 4: Well, that's that's what's what's wild is there was when we And I'm joking when I said kind of. I mean, that was how simple it was supposed to be. But how do you tell whether or not it's working? Actually, it's kind of hard because normally if you were going to, you know, apply it to an Apple, you'd have to wait a month to see what happened. And that's just a really long
+Speaker 1: Iteration.
+Speaker 4: Product iteration And so we actually developed these time lapse camera systems. It was kind of our first product so we could see tiny changes.
+Speaker 1: And so would you effectively like go buy two apples Yeah. Hopefully from same orchard but Same tree you had to do. Same tree.
+Speaker 4: That was a big problem in the beginning. We were going to the grocery store and buying fruit and going like, why does this one
+Speaker 2: Rot faster.
+Speaker 4: Rot faster than this one? They came out of the same bin. Well, it turns out Yeah. Those could be potentially from completely different countries. Sure.
+Let alone different orchards or Yeah. Or different trees. And most of them have gone through this supply chain. You know, apples you know, the average apple that's eaten in The US is a year old.
+Speaker 1: Yeah. No way. Yeah. No way. And if you're eating an
+Speaker 4: apple in July, it's it's hitting its first birthday, basically. Wow.
+Speaker 2: Yeah. That's crazy.
+Speaker 1: Yeah. I grew in grew up in
+Speaker 2: globalized, we'd be growing them in the South.
+Speaker 1: I grew up in Northern California.
+Speaker 2: Or something.
+Speaker 1: I grew up in Northern California, so the average apple that I would eat as a kid, I picked Yeah. Off the
+Speaker 4: Yeah. And we can get back to that. Yeah. You know, we you keep hearing about this farm two table thing
+Speaker 2: Yeah.
+Speaker 4: But the two is obscuring everything that's happening.
+Speaker 2: Okay.
+Speaker 4: Right? You hear about what's going on the farm. Yeah. You hear about you know, you know what's happening on the table But in the the two is like, that Yeah. Apple might have been growing in Chile Yeah.
+Yeah. And gone through a refrigerated supply chain with pesticides spread all over it and then fumigate it. Yeah. When it came into the country before it sat in storage somewhere and then, you know, you picked it up at the grocery store thinking it was Fresh. Fresh off the tree.
+Yeah. Yeah. And it's and of and of course it's
+Speaker 2: So, yeah. Talk about the early business model, the farm side, the table side, distributors, supermarkets, like there's a lot of different players in the supply chain that might be interested in the business.
+Speaker 4: Yeah.
+Speaker 2: How did you think about cracking it?
+Speaker 4: Well, for we were we were so naive. We thought, you know, well, hey, if food lasted longer Yeah. More of it could get to people. Yeah. And so, we'd be able to feed people and that'd be amazing.
+But it turns out that actually the early feedback that we got from customers was, I don't want food to last longer. Mhmm. The garbage can is my best customer. Mhmm. Every piece of food that you throw away Another one is is another piece of food that that I get to sell.
+So there's this crazy mismatch in incentive where you wanna buy something that's better quality and longer lasting. Somebody earlier in the supply chain might not have any sort of of interest in that. So so we actually our first customer was right up the street from us. We make our product out of plant material. So we were looking for plant material.
+And this guy was growing coffee cherries. I didn't know coffee beans, like they're inside of a coffee cherry. Okay. This was news to me. Yeah.
+So you got all these coffee cherries after you get the beans. We met this guy, we're telling him about what we're doing. He said, this sounds really amazing. Yeah. Can you do anything for my finger limes?
+Speaker 2: Okay.
+Speaker 4: And we're like, what the hell is a finger lime? You know, I've never heard of one of these And they're these little micro citrus. You cut them open, they look like caviar pearls inside. You put them on oysters and salads and this kind of stuff, but they only last for five days. Okay.
+Speaker 2: And they
+Speaker 4: live right at the street. So we started working with this small farmer on these caviar limes because his thing was he had to air freight these caviar limes to places like Chicago and New York
+Speaker 1: Oh, interesting.
+Speaker 4: Because they only lasted for five days Yeah. With these fancy restaurants. And so we started working with these caviar limes and gave them the ability to put them on on trains Trunks. On trucks basically. Save saves them a ton of money.
+The you know, now they last twenty days instead of five days. Yeah. It's like everybody's happy. Sure. But then we started going and saying, okay, well, let's do this again with, you know, other suppliers and other categories.
+And this is when we got the feedback from them saying.
+Speaker 2: We don't
+Speaker 4: need it. We don't need it. You know, actually, maybe maybe you guys should just stop stop doing this. Interesting. And what but what we did find
+Speaker 1: Did you ever get a visit from Big Fruit coming in saying, hey, buddy. It's like the guy that got you
+Speaker 4: guys probably have some of their masks around here. I've seen them. Under different under in different clothing. Yeah. You know, actually, our our first work that we did in the industry, we were working with a we were doing a demonstration with a huge citrus company.
+And we were high fiving because we're looking at the data going, this like, we just won contracts with the biggest, you know, suppliers in The US. And the data they came back with didn't look anything like our data.
+Speaker 2: What does that mean?
+Speaker 4: They said, hey, your product doesn't work.
+Speaker 2: Okay. Interesting.
+Speaker 4: And we we were Yeah. Totally knocked backwards because we've got the exact same fruit that Yeah. We bring back, hold and make the same measurements on. They say, no, it doesn't look anything, you know, your It product doesn't almost completely blocked us out of The US market. Wow.
+It's such a small industry when somebody starts spreading rumors that, oh So you think they were you think
+Speaker 1: they were they were just they were just basically lying to you?
+Speaker 4: Their their data didn't match our data. Interesting. Interesting. Didn't match our data and it's and it's such a tightly controlled industry
+Speaker 2: that Yeah.
+Speaker 4: You know, we were locked out. So we actually had to go to market originally in Europe.
+Speaker 2: Oh, interesting.
+Speaker 4: It knocked us all the way over to Europe. Wow. It's that tightly that tightly controlled. But what we found it was it was that in Europe, people were looking for this.
+Speaker 2: Okay.
+Speaker 4: People were looking for a way to have access to healthier fruits and vegetables that waste. They had huge initiatives Mhmm. Around this. Even, like, companies were like, the retailers were actually talking about this kind of stuff. And we started with we started with avocados
+Speaker 1: Mhmm.
+Speaker 4: Because of the joke with the avocado. Not now. Not now. Not now. Oh, yeah.
+Yeah. Too late?
+Speaker 1: Late? Yeah.
+Speaker 4: And it solved this the the, you know, this challenge that we had where the supply chain wasn't so interested in having food last longer, but the retailer was.
+Speaker 2: Okay.
+Speaker 4: Yeah. Because if they bought an avocado and didn't sell the avocado, that was a waste of money
+Speaker 1: my use my UCSB days, avocado was such an extreme luxury that the joke of like not now not now not now now it's bad or whatever. Like that was so real. I was like monitoring my avocados being like I can't I cannot let this go.
+Speaker 4: Yeah. And it's because they're breathing. You don't think about it, but fruit is still alive when you pick it. At least you want to be eating it while it while it's still alive. Yeah.
+And it and it and it has a certain number of breaths. So at the end, it's breathing breathing breathing. It eats up all the energy it's got inside and then if you eat it afterwards, you're eating dead food. Yeah. Most people in The US are eating dead food.
+Speaker 1: Right.
+Speaker 4: They don't even know. Yeah. Because it's dressed up in wax
+Speaker 2: retailers would actually acquire produce from a distributor and then apply appeal to the product?
+Speaker 4: Here was here was what was so problematic Yeah. Was the retailers loved it.
+Speaker 2: Okay.
+Speaker 4: Because now they're able to buy food
+Speaker 2: The last one.
+Speaker 4: That they can actually sell Yeah. And they were actually telling their shoppers about this.
+Speaker 3: Yeah.
+Speaker 4: But that mean meant they had to you know, they're they're not growing the food. So they have to tell the suppliers Yeah. Hey, we want you to use this product. The suppliers hated this. Yeah.
+Absolutely hated this because they don't they had pretty much shut it down. Yeah. And so the retailer starts telling the suppliers about what they need to do in their business. And don't get me wrong, we were a headache in their operations because we were this, you know, we were this new thing that they had to do and these things have been operating the way they've been operating for, you know, hundred years.
+Speaker 1: Yeah. Yeah.
+Speaker 4: So but that's the way that it had to that's the way that it had to happen in The US was was from the retail side, you know, pushing back into the supply chain. Sure.
+Speaker 1: And so what year is this when this starts working in Europe? 2019, 2020.
+Speaker 4: Mhmm. Oh, wow. Yeah. It took a while.
+Speaker 1: I mean And you had already raised at that point like hundreds of millions of dollars. Right?
+Speaker 4: I think probably we had raised a 100,000,000 about Yeah. By then. You know, when we when we raised some money from the Andreessen Horowitz guys, we used the entire world supply of our plant extract to to treat the avocados that we shipped up to them Wow. Beforehand as a as a demo. We shipped up
+Speaker 5: That's crazy.
+Speaker 4: Like a case of avocados and said, hey, put these out on your desk so that when we get, you know, sat down in the meeting with Mark was They're rid of you. What happened? What happened? That was the world supply. That's higher.
+Right?
+Speaker 1: Bet it all.
+Speaker 4: Bet it all. That was it. Yeah. Bet it all. Burn the ships.
+Speaker 2: You raised some money. What would it look like actually scaling up your supply chain?
+Speaker 4: Oh, man. You know, when we first started, like I said, you know, the the we were when we first started, we were getting, you know, these coffee cherries from this local farm, and then we were extracting these material. We were extracting these these oils, basically. Sure. But it was super expensive to do because it wasn't a scaled up process.
+And so we started with extracting these things ourselves in the lab, just using like laboratory procedures. It wasn't really for any sort of commercial purpose other than, hey, this can work. We had to show that this could work. And so in the beginning, it cost us something like, you know, a $100 to treat an avocado,
+Speaker 2: which Well, yeah.
+Speaker 4: That's not gonna work. Yeah. That's not gonna work. But once we once we figured out the mixtures of these plant oils, then we could figure out, okay, how do you optimize the process to be able to isolate these things? And it turns out there's a really efficient way to isolate oils Mhmm.
+Distillation.
+Speaker 2: Yeah.
+Speaker 4: You you it's it's the same way that they, you know, get alcohol out of
+Speaker 2: Boil it off.
+Speaker 4: They you boil it off. Yeah. And and you can do this thing called precision distillation
+Speaker 2: Mhmm.
+Speaker 4: Which basically allows you to separate out really specific really specific oils.
+Speaker 2: Yeah.
+Speaker 4: And that turned out to be a super scalable
+Speaker 2: Yeah.
+Speaker 4: Super cheap because you can do
+Speaker 2: it in a bigger and bigger vat.
+Speaker 4: Can do
+Speaker 2: it in bigger bigger centrifuge if you need that, whatever.
+Speaker 4: And you just you pull vacuum, you heat it up a little bit Yep. And you're able separate
+Speaker 1: it out. By this point, did your mom think that you could figure out fruit?
+Speaker 4: It was so cool. I would go home for Christmas and, you know, my my mom would like collect the little appeal stickers like off the fruit that she bought and that was just like, man, like, that was so cool. Yeah. To to just have, you know, like to have my mom go to the grocery store we went to growing up Yeah. And be able to, like, have our have our product.
+Because growing up in Michigan grew up in Michigan. I'm not a California guy, but I I love it out here, but I didn't grow up here. And I it was just night and day, you know. I'd go back to Michigan and go, oh, yeah. Most people I I mean, I didn't experience what good produce good Yeah.
+Produce was living in the Midwest.
+Speaker 1: Yeah. I mean, I I've spent basically my whole life in California and so always had access to farmers markets. Sometimes the farmers markets are selling product that isn't actually that's not really like the the farmer is not present and maybe not even in the state. But oftentimes oftentimes it's, you know, it is hyper local. Yeah.
+So you get super spoiled living here.
+Speaker 4: You get super spoiled living here. And and, you know, I I I one thing I've come to realize is if you don't know the person growing your food, they don't have a lot of incentive to do the right thing
+Speaker 2: for you.
+Speaker 1: Yeah. Mhmm.
+Speaker 4: You know, it's just people sell food based on price. And if I have a lemon that's coated in pesticides and a lemon that's not coated in pesticides, you can't tell that by looking at it. Yeah. And this one's cheaper. Yeah.
+The the one coated in pesticides is cheaper because they have less, you know, less less rot. Yeah. So you buy the cheaper one and the person who's doing the right thing doesn't get rewarded for it. So there's just this horrible incentive in these supply chains to cut corners and do stuff that
+Speaker 1: Yeah.
+Speaker 4: Is horrifying.
+Speaker 5: Yeah.
+Speaker 1: What did you learn about the organic the like just organic certification and the issues that we had Brian Johnson on the show recently and he was saying like, he actually oftentimes will assume that organic food is gonna be more contaminated and worse for you than the non organic just because there's always workarounds and
+Speaker 4: And and it's that it's it's marketing.
+Speaker 2: Mhmm.
+Speaker 4: Organic is is marketing. And, you know, there's a whole agency. There's agencies set up just to certify products to be allowed for use on organic produce. And there's this kind of I don't know where this idea came from that organic produce meant no pesticides or no coatings or better for you, but look at their actual marketing. They never say that stuff.
+Speaker 2: Oh, interesting.
+Speaker 4: They never say that stuff because it's false advertising. You they can't say that. Yeah. So but the but the the brand is, you know, oh, this this apple was picked right off the tree and is now in the grocery store. It's just absolutely not true.
+Speaker 2: What is an inorganic apple? Just like computer chips and a loom cup or something? Are they all organic? Yeah. They are literally organisms.
+Right?
+Speaker 4: Yes. Yeah. Definitionally. Gotta you gotta jump on the marketing. Yeah.
+You gotta gotta put your marketing hat understand what they mean by
+Speaker 2: the That's ultimately, like, part of the problem is that, like, you were sort of attacked with, like like, an aggressive marketing campaign against your product. Right? And it kinda cuts both ways. Like, take us through that part of the journey. Like, did it start like a low rumble and then turn into like a firestorm?
+Speaker 4: We yeah. Oh, man. PTSD, just even thinking about it. Sorry. No.
+It's alright. We should talk about it because if you're building something right now, this is the playbook Okay. They will use against you Okay. If you're going out if you're if you're threatening some incumbent.
+Speaker 2: Yeah. So set the table for us because you've raised some money, the business is working, the product is working.
+Speaker 1: You're in enough stores at this point. Yep. Yeah. Your mom is
+Speaker 2: buying Hundreds
+Speaker 4: of Hundreds of employees
+Speaker 2: were Stars, the stickers are
+Speaker 4: the stickers, we got distribution.
+Speaker 2: Not like she has to go to some special store No. One of one.
+Speaker 4: It's like 60% of the avocados Yeah. That are being sold in The United States Yeah. Are with our product. Yep. And we are we are announcing a kind of a first of its kind partnership with a with a supplier, supplier of lemons.
+And he goes out in the media and does a press release and says, this product is amazing. I want this product on every I'm gonna I'm gonna treat every lemon in the world with this product. And people are like, boom. He gets doxxed by these like video campaigns, like put his phone number up there. He's getting death threats from from from saying that he's gonna do this.
+And this, what we thought because the original I mean, we saw I remember one of our guys coming to me and saying, you know, hey, we're someone's saying our product is this cleaning agent that's being marketed in The UK.
+Speaker 2: Yeah.
+Speaker 1: And it was It was a similar name? Was that
+Speaker 4: Exact same name. Exact same name.
+Speaker 2: So it's not even a shared ingredient?
+Speaker 4: No.
+Speaker 2: Okay. It's it's Because sometimes there's there's precursors like, you know, I I can drink dihydrogen monoxide. That sounds very scary. Yeah. That's of course h two o.
+That's water. Right. Dihydrogen monoxide is the scary version. You might find dihydrogen monoxide in bleach. You might find it in cleaning products.
+That's not even what's going on.
+Speaker 4: Totally separate company. Okay. Totally separate company. Sold as a cleaning product.
+Speaker 2: Okay.
+Speaker 4: Also with the company's name. Two two posts at the exact same time go live on Facebook. Toxic product a link to this This other company. This other company which is a cleaning product
+Speaker 2: Wow. Which of course Yeah.
+Speaker 4: Yeah. Yeah. You know is not something you should be eating. Yeah. Right?
+Exactly. And it's just
+Speaker 2: And they don't want to put their cleaning product on your food either. Like companies.
+Speaker 4: Yeah. There's yeah. Right. Exactly. Okay.
+Different solutions for different products. Sure. Specific ones for food.
+Speaker 2: Yeah. Of course.
+Speaker 4: And this this thing and this thing just goes goes crazy.
+Speaker 2: Yeah.
+Speaker 4: And, you know, and then, you know, the attacks morphed into so we we, you know, we thought we cleared this up. Hey. Yeah. Look, this is a cleaning product. This is this is our product made from plants.
+And they morphed the attack into they they they couldn't find anything wrong with our product itself, so they morphed the attack into this is a Bill Gates
+Speaker 2: thing. Bill Gates thing because of the nonprofit donation.
+Speaker 4: Yeah. We got a $100 in 2012 to research cassava root Okay. Which we don't even have a product
+Speaker 5: for today. And
+Speaker 4: then we got a follow on grant to for this cassava project for a million bucks. Yeah. I mean, we've raised $800,000,000.
+Speaker 2: Yeah.
+Speaker 4: And and but that and but if you go online and you look up our name, you'll see It's
+Speaker 2: not Ford's seed. It's
+Speaker 4: not Nothing.
+Speaker 2: I've never
+Speaker 4: even met this guy. Zero involvement. Zero involvement whatsoever. We got a check from Yeah. Of from a foundation that
+Speaker 2: he Foundation
+Speaker 4: fund. That he donates to. By the way, like, let's talk about all the other people
+Speaker 2: Yeah. Yeah. Who
+Speaker 4: donate to this foundation. Yep. We get we get these these donations Okay. To work on cassava root, which you probably never even heard of. Yeah.
+It's a starch source in Sub Saharan Africa. It's kind of like an equivalent of Sure.
+Speaker 2: Yeah. But you have scientists, you have researchers researchers that could potentially Yeah. Dig that up like the coffee chair thing. We're we're in
+Speaker 4: the we're in the business of, hey, if you're growing food and it's going bad Yeah. Figure out we figure out how to fix this?
+Speaker 2: And the and then and the result of that might not be a business, might be more of like a research paper or a study Exactly. Where you took the cassava route, ran it through some lab tests, tried to
+Speaker 4: Figured out what was wrong.
+Speaker 2: Does your product work? Do other products work? Exactly. Understand what's going on.
+Speaker 4: Do try to figure this out. We we actually did figure it out. Yeah. It's a totally different way that you solve the problem, but I mean that's what the money was for to
+Speaker 2: Yeah.
+Speaker 4: To figure that out. So absolutely no involvement, but if you search our company's name online today, it's like Bill Gates' appeal and I'm like Yeah. How did that happen? You know? And and for a while we thought this is people are just confused.
+Speaker 2: Yeah.
+Speaker 4: Until we started until it didn't stop. Yeah. You know? And it didn't stop. Yeah.
+And and it just kept morphing slightly and new photos would come out and the charge would change. And we started mapping it. Started mapping back the accounts and we started looking at the time stamps and we started looking at the the accounts that were quickly reposting
+Speaker 2: Yeah.
+Speaker 4: This stuff and it's completely coordinated.
+Speaker 2: Interesting.
+Speaker 1: Wow.
+Speaker 2: Yeah. Because people I feel like when when like there's an
+Speaker 1: There's plenty of like controversies that are
+Speaker 2: Come and go again.
+Speaker 1: Entirely organic. And well, we're entirely organic. Yeah. Right? There's there's a bunch of stuff online this week from a certain from a certain sort of like health platform
+Speaker 2: Oh, yeah. You mentioned
+Speaker 3: this.
+Speaker 1: That that a lot of companies have had problems with that and that is like genuinely organic. There's a guy running a platform that rates foods he has Well, own his own But
+Speaker 2: it's an individual. It's not a
+Speaker 1: It's one individual. It's not like funded by a specific group. It's just kind of like one guy running a business that seems to be at odds with a bunch of companies. But but yeah, like at first you're probably like, am I going crazy? Like why does this keep like
+Speaker 4: People are just confused, you know, that like the truth is a powerful thing, you know, obviously the truth will
+Speaker 2: Yeah.
+Speaker 4: Yeah. Kinda come out about this.
+Speaker 2: Sure. Sure. Sure.
+Speaker 4: And it it didn't.
+Speaker 2: It didn't.
+Speaker 4: It just it just didn't.
+Speaker 3: Yeah.
+Speaker 4: And they they started activating real real people. Okay. Of which were real,
+Speaker 2: some were not. What was the long term? What do you think their goal was?
+Speaker 4: It got to that point. But Okay. They started activating to call our retail customers in The United States. Yeah. And one by one, we got dropped by every single retail partner that we had in The United States.
+That boulder that we'd rolled up the hill Yeah. For ten years just rolled all the way back down
+Speaker 2: That's insane.
+Speaker 4: In The US. Yeah. It was devastating. I mean It is. I had I had to let go hundreds of people Wow.
+That I cared about. Our entire US business got got destroyed. Destroyed.
+Speaker 2: What was in the tool chest?
+Speaker 1: What year is that? 2024?
+Speaker 4: '20 yeah. Was about it was like starting to happen in 2023. We started to lose some accounts. And then 2024 was really when, you know, it started to go just like it just went to zero in The US. Wow.
+And it was double down in, you know, South America, double down in in Africa, double down in in Europe.
+Speaker 2: What else was in the tool the tool chest at that point? Like, did you consider just a full rebrand? Yeah. Maybe tucking the brand further up the supply chain so that the sticker is not there, like Absolutely. What did you consider what you wind up doing?
+Speaker 4: Yeah. I mean, it was it was it was pretty existential for us because, you know, when we first started talking to retailers, we were saying, hey, you should put a sticker on this food because it's better for your customer. Yeah. And the pushback that we got was, well, if we start telling people that your stuff is better for them, what are they going to think about the And other so, you know, the joke's on us now. Right?
+Speaker 2: Yeah.
+Speaker 4: But so it was it was really existential for us to say, well, let's not tell people about this because our whole ethos was, hey, people should know what's on their food. If they knew it was on their food, they're gonna prefer this is gonna be something that they that they buy. Yeah. But the conversation was, well, these these attacks aren't organic attacks. People, you know, organic people are some people are getting roped into this thing.
+That's kinda how they work.
+Speaker 2: Yeah.
+Speaker 4: You know, they they're like there there's somebody kind of behind it, you know
+Speaker 2: It the machinery.
+Speaker 4: Planting the seeds, there's machinery, and then they're just trying to find vulnerable people.
+Speaker 2: Mhmm.
+Speaker 1: Yeah. And, you know Yeah. Their personal mission.
+Speaker 4: And make it their personal mission. And and they were really successful at that. But, you know, when when it's a deliberate attack on the business, not a confuse it's not a confused thing
+Speaker 2: Mhmm.
+Speaker 4: You change your brand. It's they're they're just gonna follow you to whatever you, you know, whatever you shift your brand over to. It almost looks, you know, even It looks like you're running. It looks like you're it looks like you're running.
+Speaker 2: Mhmm.
+Speaker 4: And so, I mean, we've been building this this playbook from scratch. If there's other, you know, founders out there that are building stuff that is that is threatening someone in an incumbency position like this, I'd I would love to talk to them and share what we've learned because the beginning is just completely disorienting. Nothing makes sense. Stuff's getting said that just has no basis whatsoever and you're trying to you you just think the whole world's against you, you know. You you and a little you kinda shut down a little bit.
+And it's not till you really get your bearings and you start to see, you know, see the the kind of systematized nature of these things that you realize, actually, there is there is someone behind this and you can start to figure out who they are. It just takes a really deliberate effort. And now you're a a fruit company
+Speaker 2: Yeah.
+Speaker 4: Learning how to do digital forensics. Yeah.
+Speaker 1: And, you know Well, you think of the timing with all this, there's so much mistrust of the of the health system and the and the food system and, you know, billionaires and you combine all of those things at once. It's like there's so much kind of
+Speaker 2: It's also something where
+Speaker 4: Perfect story.
+Speaker 2: The buyer is almost everyone. Everyone has an opinion about food. Whereas there there have been somewhat even like more wait. Like your scandal doesn't seem legitimate at all. There's been legitimate scandals in like enterprise software for example.
+But there are like 10,000 buyers or a 100,000 buyers. And so it's not something that goes viral again and again and again. And if you're even if you're a consumer of that piece of technology, but it's white label and it's under the hood and that particular buyer was able to sit down and understand the more the the deeper context, you have to win over like this mass of humanity basically. All the food buyers, which is everyone. The tam is everyone, which is the beauty, but it cuts both ways.
+Speaker 4: It cuts both ways. And and what we find is that, you know, most actually majority people haven't heard about this
+Speaker 2: Yeah.
+Speaker 4: But a small percent of people have heard about it And they're activated. Who writes the reviews online?
+Speaker 1: Sure. For
+Speaker 4: happy people.
+Speaker 2: Yeah. Yeah.
+Speaker 4: Yeah. It's the, you know, it's the it's the not happy
+Speaker 2: people. Yeah.
+Speaker 4: Of course. And it's the people who are part of a system Yeah. That's trying to stop something Yeah. From from happening.
+Speaker 2: That's so interesting.
+Speaker 1: What where are you at today? You
+Speaker 4: So the business is the business is going strong outside of The United States. It's dystopian for me to walk into a grocery store in South America and find our products and to walk into a US grocery store and see everything still treated with wax and pesticides and go, how is this possible? There are better options that actually help people are better for the world, eliminate plastic, eliminate pesticides. We don't have access to them in The US because a small group of people wanna wanna bury these options. And technology is happening technology growth is happening in every single industry except for food.
+Mhmm. How is how is this?
+Speaker 1: Which is insane given how much how much of, you know, consumer wallet goes towards this category. How how how much of, you know, that is the human experience. It's like you eat and then you're waiting around to eat again. Like that's why. Then It's
+Speaker 4: often the best part of my day, so I get that. I resonate with that. Yeah. Yeah. It it is it's truly mind blowing and and just how disconnected we've gotten from food.
+Yeah. You know, like most people's connection to food is they go to the grocery store and they pick up a piece of food. Yeah. You know, I I I started growing, you know, a lot of food, you know, tomatoes, you know, peppers, this kind of stuff. There is something amazing about growing
+Speaker 2: Yeah.
+Speaker 4: Food. And we've gotten totally disconnected
+Speaker 2: Yeah.
+Speaker 4: With that. So I'm optimistic about this future where we actually are able to you know, people are starting to feed each other. Yeah. Again, people are you know, you're growing tomatoes, you're growing carrots, you know, we have opportunity to trade those
+Speaker 5: Yeah.
+Speaker 4: With each other because that can actually happen at a smaller scale if you're able to match the match the supply and demand. And so that's one of the things that we're talking about a lot. How do we Yeah. How do we help small producers, community production in The United States where we can actually empower people to grow their own food, trade it with each other so that they're able to to feed each other, feed communities and not be so dependent on this monolith where we're growing food halfway around the world Yeah. Big fruit
+Speaker 1: that tried to kill you in the cradle.
+Speaker 4: Yeah. Yeah. Yeah. Yeah.
+Speaker 2: Other lessons for entrepreneurs, I mean, mentioned like if if someone is going to war with a major industry that's a lie and it's allied against them, there's there's worries there. Do you is there any not to put, like, you know, like, dig up potential, like, Monday morning quarterbacking, but is there anything where, like, trademark searches could have avoided this? Is there something where like if you could play back and think five steps forward, is any of this predictable? Is any of this like, you know, preventable?
+Speaker 4: So when we started the business, it we were I think we were in a different we were a different era. Yeah. When we started the business in 2011, 2012 Sure. Social media was not what it is today. And I I've experienced, you are just vulnerable to a different set of attack vectors
+Speaker 2: Yeah.
+Speaker 4: In in the modern era. Yeah. And, you know, if if if I could, you know, go back and talk to myself, you know, five years ago, would have been to acknowledge, hey, we're in a different era now in terms of where the vulnerability can come from.
+Speaker 2: Yeah.
+Speaker 4: On my list, you know, on my list never would have been, you know, someone's gonna say that Bill Gates owns your company Yeah. And it's part of a global depopulation agenda. Like, that would not have been on my list. You're like, make a make a list of a thousand things.
+Speaker 2: Yeah. Hard to predict.
+Speaker 4: It would now. And it and it should be on it would now. And it and it should be on everybody's
+Speaker 2: Three of the deck.
+Speaker 4: Like, actually, maybe make your maybe make your Thanksgiving dinner productive and that, you know, that that relative who's got all these theories.
+Speaker 2: Yeah.
+Speaker 4: Tell them about what Well, you're building have. And just say, hey, what
+Speaker 2: What's what's find some flaws in my
+Speaker 4: business Find some flaws in business And let's talk about that. And actually, like, maybe it's like a write off now because you got some good advice from that that aunt or uncle.
+Speaker 2: Yeah. That's very funny.
+Speaker 1: Mean, I I think it's a
+Speaker 2: I I I there was someone who had a like a regional like sauce business and they bumped into another regional sauce business like halfway across the world that like the two companies never would have ever competed in the same namespace but because of social media and the way things fly around that both of these like sort of storied brands in their local communities are now like butting heads and suing each other. And so Yeah. That stuff happens all the time. It's very hard to predict.
+Speaker 4: Yeah. I think confusion.
+Speaker 1: What was I gonna say? I Yeah. It's it's also the mentality when like your mentality as a founder, you discover this problem, you discover an innovative solution that's aligned with, nature's own approach. Yeah. And you come out and you're and and you're like, I'm trying to fix like a a systemic problem.
+And so you're coming in with the attitude of of, as like a good actor. Like operating as like, I'm a good actor. I'm trying to solve a global problem for humanity. But when your solution becomes misaligned with someone else's business model
+Speaker 4: Yeah.
+Speaker 1: The way those the way those And I've just seen this with I've seen this with a bunch of companies specifically in the in the any for some reason like health, anything like health, supplements, like food Yeah. Is just like becomes like hyper hyper political really quickly. It becomes super emotional. Yeah. What starts as being like, you know, concepts grounded in science quickly becomes something else.
+And I've been shocked because I know, you know, I know a bunch of, like, health podcasters that have gotten into controversies over, you know, and and and health brands. And it is it's been wild to see so many people that I know personally Yeah. That I believe are waking up every day trying to create the best possible product for humanity in a category or create the best possible information for people, and then they become, they become the enemy Yeah. Because of some other force Yeah. In the world and it's it's a real Yeah.
+It's a real challenge. It's I'm real the co founder of a of a water filter company and my journey into that business was realizing that there were so many companies in that category that were selling water filters which you you you're relying on this device to provide clean water for yourself. Something that you're consuming all day long. And I was looking around the category and I was I found I tested a filter early on and the filter was adding heavy metals to the water. It was like it was like I found a filter that was like very popular filter.
+But I found this filter that was like a very popular filter. I got independent testing done on it. I tested like ten ten different filters that were popular on Amazon. Yeah. And multiple of them were adding heavy metals to the water.
+So you take water that that is like maybe not clean and then you come out with water that's certainly not clean.
+Speaker 3: Yeah.
+Speaker 1: And and that was this crazy moment. And then as that company, you know, the company's done quite well in part by trying to, you know, over test, share all these things. But there's still again, immediately after launch there was Yeah. Legacy brands that that were trying to say like, oh, they didn't, you know, you know, trying to discredit like the lab or Yeah. All these different things and it's like and again, it does get you have to just you have to just like go through it and and continue to lead with transparency Yeah.
+And science and all these things. But there are it's a it's not a it's not an approach that that that I can ever think about doing. Right? Of like, I never, you know, I never would go out and try to mislead a bunch of people Right. About can't even imagine Yeah.
+You can't imagine. Like you're like a golden retriever. We we talk about we talk about.
+Speaker 4: We
+Speaker 1: have a bit where like golden retriever mode. It's like you should just be like, you know, friendly, happy, and high energy. Like a golden retriever a golden retriever cannot imagine like attacking, you know, like some kid running by. Right? They're just focused on the ball.
+Right? Focused on the ball. And so as a golden retriever entrepreneur, right, you're just focused on chasing the ball. Right? Chasing the dream.
+Yeah. Trying to Solving the problem. Solving the problem. Yeah. And there are there are pit bulls out
+Speaker 2: there Yeah. It's like say a a that
+Speaker 1: are not they're focused on
+Speaker 2: think things and it's like in this case maybe like like to the point of like what's on the third slide of the deck, it's like maybe you should have been overthinking, but that's not good advice. I don't know.
+Speaker 4: You know, that's that's who I am. That's what happened to me. Yeah. When I said kind of I, you know, it really like was despondent for a while, that's what happened. You know, you go out in the world and Yeah.
+You're told do the right thing, be a good person, work hard, you know, find good people, work with them, build like like, you know, like create something like good that helps us
+Speaker 2: Yeah.
+Speaker 1: That your mom is gonna be
+Speaker 4: proud That your mom is buying in the grocery store and then this stuff happens and you realize that the way that you thought the world worked
+Speaker 2: Yeah.
+Speaker 4: Is not the way that the world worked.
+Speaker 1: It's a golden retriever going to the dog park for the first
+Speaker 4: time. Crossing and running into there's a pit bull at the dog park. And you're jumping around chasing the ball at pit bulls. It's like, welcome to the park. Welcome to the park.
+Yeah. And you just go, okay. So for a while, just go, no, that's you know, I don't want the world to work that way. But then eventually, you go, well, can either complain about
+Speaker 3: the world walking this way
+Speaker 4: or I can acknowledge that's the way the world works and go from there. And the damning thing about this for innovators is they don't have to con they don't have to change people's minds about what your product is. They just have to make them suspicious.
+Speaker 2: Yeah. Like the US FDA
+Speaker 4: They just have to And make them not only the FDA, the European Union,
+Speaker 1: which is like
+Speaker 4: Which is like most strict like regulatory agency in the world.
+Speaker 1: Yeah. And it's like There's like a million there's like a million products that we that are in our grocery stores that can't be sold there.
+Speaker 4: There can't be sold like 4,000 approved I think in The US and there's like 400 in Europe. Ours is one of them. There's literally no upper daily intake limit of our product. You could just eat it as food.
+Speaker 2: You're not on the prop 65 list, California? No. No. That's insane. No.
+Everything's on the prop 65 list.
+Speaker 4: We would definitely not wanna be on that list. Are course
+Speaker 2: low. Like, you walk into Starbucks. I don't have a problem with Starbucks. Yeah. It's on prop 65 and I'm like, yeah, okay.
+Like they're being extra safe. Yeah. And But yeah, that's
+Speaker 1: the thing. There's supplements. There's like health supplements that Pro people take that are on that
+Speaker 2: 65.
+Speaker 1: List. Right? Which
+Speaker 4: they're they're probably unaware of at some level or they just like, you know
+Speaker 2: It's sort of like the most conservative but to not even bet on that is crazy. Exactly. Wild. Yeah.
+Speaker 4: Yeah. It's plant oil.
+Speaker 2: Yeah.
+Speaker 4: Yeah. Like, if you've eaten avocado oil, coconut oil, like, that our product is in is is an ingredient in those oils.
+Speaker 2: Sure. Sure.
+Speaker 4: Like, you don't think about again, like, you don't think about fruit as having ingredients. Yeah. It's mixture of different molecules. Yeah. You're
+Speaker 2: not even eating it.
+Speaker 4: Not even eating the skin?
+Speaker 2: You're not even eating
+Speaker 4: Which is even crazier. So these attacks, like these comments come up and it's like this is like poison and you're going, well, first of all, no. Yeah. And second of all, if such an incredible level.
+Speaker 2: It's so crazy. Yeah.
+Speaker 4: Walk outside what
+Speaker 1: what is the don't strike me as someone who's just gonna he's gonna give up. Like, what's the path back what's the path back to
+Speaker 4: You know, the Internet our ass and so I've been it took me a while to think about it, but I've started flipping around and asked the Internet for help. I've been offering bounties to people to help track back.
+Speaker 2: Figure out what happened.
+Speaker 4: Figure out what happened.
+Speaker 2: And I've
+Speaker 4: been posting them on Fridays. I haven't figured out what today's is gonna be because I submitted one I put one out last week and I just
+Speaker 2: Yeah.
+Speaker 4: Blew it blew up the number of people who are sending stuff in. So I'm really bullish that the same way you know, right now there's no incent there's no cost to somebody perpetrating an attack on you online. Sure. Sure. The bots do their thing.
+They repost stuff. They like they whatever they share, they they manufacture engagement and it goes. But they're kind of doing it with impunity because nobody's taking the time to be like, okay, who's this user that commented this thing? Oh, weird. They normally just talk about anime.
+And today, started talking about
+Speaker 1: Yeah. No one is clicking through.
+Speaker 4: Nobody's clicking through. They're just seeing the headlines. And actually, if you just give a little bit of well, this is the experiment I'm running right now. If you give them a little bit of financial incentive, turns out there's tens of thousands of people who
+Speaker 2: will They're going spend stuff.
+Speaker 4: An hour Yeah. You know, going into this stuff, especially with especially with AI. So Yeah. Yeah. I mean, that's the vector that I'm going with right now.
+I I, you know, I think we're in the
+Speaker 1: You gotta go all the way to Joe Rogan. This is the start.
+Speaker 2: I think
+Speaker 4: so. You gotta go straight to the top. He's mentioned us a couple of times.
+Speaker 1: But he seems like somebody who would be naturally skeptical of You would think technology with food because he's like, I like steak.
+Speaker 4: Yeah. Right.
+Speaker 1: Like,
+Speaker 4: Which like our product is also in, by the way. Right? So he should be down with this. Yeah. Yeah.
+No. He's he's got a couple of guests
+Speaker 2: pull on it. That up, click live links deeper, get to the and you don't have to go. You go one
+Speaker 4: You don't
+Speaker 2: have to go far at all. See the real story.
+Speaker 4: And like you just see how people work on social media. Like, I hate to say this, but like I'm sitting on an airplane, I can't not see what this person's doing one seat over to the right. Like and this is the move. Scroll, see something, click comments. Scroll, see something, click comments.
+So it doesn't matter what's posted. Yeah. I don't I'm not people don't form their opinion till they see the first couple comments. Yeah. And so that's how they hijack.
+Yeah. That's how they hijack what's going on in your brain. Yeah. Yeah. They just they just control the comments.
+They they control
+Speaker 1: No. There's gonna be there's gonna be some truly insane documentaries in about ten years about this era of the Internet and started. I've seen this in, you know, AI is so hyper competitive and there's like this insane, you know, horse race and I've Earlier seen this year, was starting to see posts that would have like 20,000 likes on 200,000 views, three comments. Yeah. Getting a 10% like rate is like not a thing especially on x.
+Exactly. Like there's handful and so you're like, okay, well, who's actually engaging with it is clearly getting a lot of views but it's not necessarily reflecting, you know
+Speaker 4: It's not real.
+Speaker 2: Yeah. Yeah. It's manufactured. Last question for me. Have you been keeping tabs on the other appeal?
+The clearance company? Like
+Speaker 4: our business are those guys. We're gonna have that suit. Now we keep your floors
+Speaker 2: clean and we keep your fruit fresh because I'm I'm just wondering because obviously, they would be probably unaffected, but at the same time, they probably have some confusion. People are like, I thought you were cleaning company, you're doing Wait.
+Speaker 4: Your floor cleaner's healthy now?
+Speaker 2: Yeah. Yeah. Yeah. Do they have a knock on effect? I don't know.
+That's an interesting thing to dig into. But We'll follow-up with you
+Speaker 4: on that one.
+Speaker 2: Thanks so much for coming on and break it down for us. This is a fascinating story. Yeah. Know it's obviously a really hard journey but I'm extremely optimistic.
+Speaker 4: If somebody else learns from it I'm really happy. Thank you for coming
+Speaker 2: This is fantastic. Have a great rest of your day. It was a great time.
+Speaker 1: We'll we'll catch up.
+Speaker 2: Yeah. What do you want to wrap up with, Jordy? I mean, could we could go into the the Warren Buffet of London, but it's a long it's a long story in
+Speaker 1: We can save it.
+Speaker 2: The Financial Times. We can save this for another one. I did think this is interesting. His Children's Investment Fund has become the fifth most profitable hedge fund of all time. What a good name for a hedge fund.
+Children's investment fund. Doing it for the children. Beating the benchmarks.
+Speaker 1: That's great.
+Speaker 2: Chris Hone. He's been honing his skills. What else sworn in Sworn in.
+Speaker 1: Frank says, good luck, bro.
+Speaker 2: He's he's gonna the prediction is that there will be a rate hike or something like that. I saw I saw both both both a cut and a hike predicted kicking off with good vibes potential for a hike. But I think the market is pricing in a a increase, not a rate decrease, which of course is what a lot of folks have been hoping for. But with the economy heating up, maybe a hike is in order, but there will be a whole bunch of knock on effects from this. I wanted to talk about the robotic legs, the exoskeletons.
+Would you rock these or would you be sitting it out? The HyperShell X Ultra S is an exoskeleton that the Wall Street Journal demoed.
+Speaker 1: Thousand watt hips.
+Speaker 2: Thousand watt hips. You wear these and they help you hike and run up hills. I listened to too many shows with with Palmer Locky where he talks about the the capability of an Iron Man suit potentially just ripping you apart and so I would be a little afraid.
+Speaker 1: Yeah. The I might give it try. You know, a bad actor. Remember all the d g I drones had like a backdoor?
+Speaker 2: Oh, yeah. Bad actor takes over your Start dancing.
+Speaker 1: And then it makes you Really? Michael Jackson Start badly in front of your peers.
+Speaker 2: Potentially. Potentially.
+Speaker 1: Could be wildly embarrassing.
+Speaker 2: I guess I'm I'm unclear on the goal because couldn't you just go on a short shorter hike or a less steep hike to make it easier? I guess if you wanna see the top of a big mountain, but you can't make it in a certain amount of time explain the market. Are you in the market for these?
+Speaker 3: Yes. These are sick.
+Speaker 2: Yes? Wait. Wait.
+Speaker 3: Your answer is couldn't you just go
+Speaker 5: on a
+Speaker 2: shorter hike?
+Speaker 3: Yes. Couldn't you climb
+Speaker 2: a If this allows me to go on a six mile hike
+Speaker 3: Can you achieve
+Speaker 2: couldn't I just do a one mile hike? Could you just take a car?
+Speaker 3: Can you just stay home
+Speaker 2: and You can take a car. Or a helicopter. Like, you don't yeah. Like, this is sort of an in between thing. When when are you actually deploying this?
+I bet you if you get these, maybe we have to order these. I think we have to order these for Tyler and see if it's current.
+Speaker 3: Drive up like a massive mountain.
+Speaker 2: We're getting you these. Drive up. They're they're $2 but we're getting you some and we're gonna see if it transforms you into Iron Man. Also, CATL, c a t l, the Chinese EV battery giant is investing in DeepSeek. Some big rounds going on.
+Also I'm
+Speaker 1: waking up. Remember? Waking up. Remember?
+Speaker 2: Oh, yeah.
+Speaker 1: That's what
+Speaker 2: This is what the twenty twenty's visit. They predicted that BYD would get an f one team.
+Speaker 1: That's right.
+Speaker 2: Which is what happening. Which is what's happening. At least they're in talks. BYD is in talks with Christian Horner over entering f one. That would be pretty crazy.
+Does BYD have any gas powered ICE engines? I don't know.
+Speaker 1: They're about to.
+Speaker 2: They're about to. Who knows?
+Speaker 1: What else Folks, is it's Memorial Day weekend.
+Speaker 2: Yeah. Go have fun. We'll see you Tuesday. Have a good rest of your day. Have a great weekend.
+Leave us five stars on Apple Podcast and Spotify. Sign up for our newsletter at t b p n dot com. It's been an honor. And we will see you Today? Tomorrow slash Tuesday.
+Weekend. We love you. Goodbye.

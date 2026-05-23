@@ -1,11 +1,11 @@
 source: acquired
-refreshed_at: 2026-05-23T06:17:31.564Z
+refreshed_at: 2026-05-23T19:06:29.652Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
 done: 0
-pending: 0
-needs_transcript: 1
+pending: 1
+needs_transcript: 0
 transcribing: 1
 transcribe_failed: 0
 downloaded: 0
@@ -60,11 +60,12 @@ episodes:
       ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
       and is intended for informational and entertainment purposes only. You should do your own research and make your
       own independent decisions when considering any financial transactions.
-    status: transcribing
+    status: pending
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: 5bb6590d-d49f-4605-8c77-85dc131ef562
     transcript_submitted_at: 2026-05-22T19:42:26.283Z
+    transcript_completed_at: 2026-05-23T19:06:30.637Z
   - id: 14ef00c6-30ba-44cc-9869-33d3d92828a3
     title: Costco
     duration: 10907
@@ -115,5 +116,8 @@ episodes:
       ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
       and is intended for informational and entertainment purposes only. You should do your own research and make your
       own independent decisions when considering any financial transactions.
-    status: needs_transcript
+    status: transcribing
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-23T19:06:56.903Z
+    transcript_job_id: 22f80baf-560e-4b91-b605-85232d8efdea

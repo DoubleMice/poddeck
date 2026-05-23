@@ -1,0 +1,408 @@
+Hi everyone, welcome to another episode of Bits and Bips, the interview.
+My name is Steve Ehrlich.
+I am the head of research at Sharplink and also your host for today.
+Really excited to be back with all of you.
+Sorry I missed last week.
+I was a little bit under the weather, but we have a terrific show.
+But as always, before we get into it, let's just take a brief moment to hear from some of the sponsors who make this show possible.
+If you've been loving Bits and Bips, don't forget that the show is transitioning to its own feeds on X, YouTube, and your favorite podcast player.
+If you're not already subscribed to Bits and Bips on its own channel, go there now and hit that subscribe button so you can keep up with our twice weekly live streams and macro news crypto breakdowns.
+Bits and Bips will only be on the Unchained feed for a few more weeks, so subscribe today to be ready for launch.
+You can get all the links at unchainedcrypto.
+Com/bitsandbips.
+Welcome back.
+Now, as always, before we actually begin, a brief disclaimer: nothing that you hear on the show should be considered financial or investment advice.
+For full disclosures, please see unchainedcrypto.
+Com/backslash bits and bips.
+And let's begin.
+Today we're going to be talking about the repo market and trying to bring it on chain.
+The repo market, as my guest, who I'm about to bring in, will tell you, is widely considered to be the central nervous system of basically the entire financial system.
+It's one of these giants that many people don't think about until things potentially go wrong, but it's really the oil that makes everything go.
+So it's only natural to try to bring it on chain, and my guests today have found a clever way to try and do that.
+So let's bring them in.
+First we have Craig Burchell.
+He is the head of lending at Falcon X, one of the top prime brokers in the crypto industry.
+So welcome Craig.
+Thank you, great to be here.
+And second, we have Matteo Pendolfi, who is the CEO and co-founder of Paredo, an on-chain credit infrastructure provider.
+So welcome, Matteo.
+Thank you, thank you, glad to be here as well.
+Thanks.
+So I've been really excited to have the show.
+I know we've been working on it for a couple weeks.
+For one, it was a great opportunity for me to really kind of dive in to see how repo could work on chain, and it's not quite as simple.
+There is a lot of overlap, but it's not quite as simple as it may seem, and we're going to get into all of it.
+But before we do, just very quickly, Craig, maybe I can start with you.
+Can you please just explain to people in the audience who may not know what the repo market is and sort of.
+Contextualize its significance in the financial industry.
+Yeah, it's interesting.
+So repo is, I mean, technically just repos are just repurchase agreements.
+It's an agreement to essentially say, hi, I'm going to sell you something today, but I'm going to be buying it back at some future point in time.
+But the interesting thing is it's technically a derivative, but it's evolved into a market that spans, really is at the heart of the global financial system generally.
+It's one of the core ways that institutions and financial institutions manage their balance sheets.
+It's also a core way that the government interacts with financial institutions and is essentially a way to give short-term lending in a way that's not a traditional loan.
+And so what you can do in the repo markets, and you can also do long term repos that you'll go into, but it's a way to say, hey, I have cash, maybe I want bonds, someone else's bonds, maybe they want cash or some other asset, and we can go and quickly just swap them together, knowing that this is only temporary.
+And you have one side of the repo that essentially serves as the collateral for the other side of the purchase.
+And this has evolved.
+You can think of them akin to loans, really, but from more of a short term liquidity basis, sometimes even a lot of times intraday repo is common.
+But it's a.
+But it's a way to kind of facilitate and grease the wheels of the global financial system.
+And you know, like for instance, at the end of 2024, there was approximately $16 trillion in government bond-backed repo that was outstanding globally.
+And that's about 80% of the total repo positions that are out there.
+So this is a massive, massive market in the traditional financial world.
+And what we've seen is we haven't quite gotten there yet in the on-chain market.
+And these are starting to develop as we'll go into here.
+But the long story short is they're effectively forms of short-term loans, and they're a way to provide liquidity and optimize balance sheets throughout the financial system.
+And I mean, from my understanding, at Immitate, I want to bring you in on this too.
+I mean, like you said, Greg, they can be for varying durations.
+They can be rolled over from day to day, and you just pay an extra day's interest if necessary.
+But they're really a massive way for everyone, from like hedge funds to banks to money market funds, whoever, to get access to cash over very short-term durations when they're necessary.
+And they're key cogs because if you look at the different types of players, I mean, it involves like clearing banks, like BNY Mellon, investment banks.
+I mean, this all kind of works together, and if something gets kind of.
+Jammed up, it can be calamitous.
+Matea, maybe you can because I would think a lot of people who perhaps don't know repo remember what happened in 2019 when the repo market kind of closed up and the government had to step in with some superpowers.
+Can you kind of explain what happened there and how the repo market has changed over the last five years?
+Well, yeah, you know, the September 2019 episode has been, you know, quite a destructive stress test for the repo market.
+You know, what happened is that the overnight repo rates in the US spiked from around 2% to over 20% in a single day, pretty much.
+So, you know, as you mentioned, the Fed had to intervene with emergency cash injection for kind of, if I remember correctly, was the first time since the financial crisis.
+And you know, the subsequent, like what happened after that is that created this is what created the standard repo facility as a permanent.
+Permanent backstop.
+So, essentially, what happened is that a large corporate tax payment drained reserves from the banking system, and at the same moment that a large treasury settlement hit, and you know reserves were more concentrated at.
+A few large banks that anyone had modeled, so you know, banks with excess reserves were reluctant or even unable to just lend them into the repo market fast enough.
+So partly because of balance sheet constraints and from post.
+From post-crisis regulation, partly because of settlement timing.
+So, you know, the key insights here is that the problem was not a lack of cash in the system, but it was an inability to redistribute cash quickly, or quickly enough, through existing infrastructure.
+So, you know, the plumbing in general couldn't move liquidity where it was needed at the speed the market required.
+And this is kind of a parallel.
+Launching credit, which is quite direct because you know fragmented infrastructure and even liquidity distribution across protocols, no standing backstop mechanism, limited ways to redistribute capital under stress.
+Those are the same structural gaps repo's evolution was designed to address.
+So.
+The lesson is that the market structure has to be designed to favor and function when conditions deteriorate, not just when they're favorable.
+So you know you have to build the plumbing before you need it, not when you need it essentially.
+Yeah, and we're going to get into that a lot later because I'm not an expert on repo like you guys are, but one thing I do remember from that time period and please.
+Please correct me if I'm wrong.
+Is that the Fed basically there were limits to how much banks and I guess whoever could borrow from the Fed through overnight repo, and the Fed basically from then on just eliminated those limits.
+So there's kind of like an unlimited amount of money they could borrow, and that would help anyone arbitrage like the peer-to-peer repo markets back like to par.
+And that's a critical backstop to help make sure that these markets remain fluid during times like you said, Matteo, when there may be enough cash, but there's not enough liquidity.
+Is that fair?
+Yeah, that's pretty much fair, I would say.
+All right, so one other very quick question I had before we get into on-chain credit is how repo is being used today.
+I hear a lot about basis trade, and in a lot of ways, like some hedge funds, other groups, like really leveraging up using using repo to.
+I guess exponentially grow the size of returns they can generate from small discrepancies in basis trade.
+Craig, maybe you're the best one to answer this, but could you just talk a little bit about what's happening there and how that plays with the way repo markets operate today?
+Yeah, just the repo market generally.
+Yeah, I think there's a few different like use cases for repo.
+And honestly, like if folks think about like if you're familiar with like the CeFi lending markets in crypto, for instance, like if you hear like about open term loans, for instance, it's like those are essentially very similar to overnight repo.
+I think there's a few different situations.
+One is if you need short-term cash for any kind of liquidity, whether you're a firm or you're trying to bridge some kind of liquidity temporarily, or you're outright trying to generate liquidity for leverage, you know, you may want, okay, short-term cash or cash.
+That you know is going to be constantly kind of re-rated.
+You can pay back any time.
+You know, it's only expected to be, you know, like you hear about overnight repo, like it's really just kind of these like ongoing one day loans.
+But then you also have, if you're a cash lender, you know.
+You know, and maybe you're running a laddered Treasuries, you know, portfolio or you have some commercial paper.
+You know, you can utilize repo as just a generally considered to be a low risk way to kind of deploy capital, sort of set it and forget it.
+And then the other thing is not only does it finance bond inventories for dealers and market participants, but it also is a what's become extremely popular in at least in the US is because of regulations that have come as a result of Basel and bank risk weighted assets treatment.
+The long story short is sometimes it's actually better for the bank and actually makes the bank money in a sense to have certain assets on their balance sheet, you know, at the end of the day.
+And so they may actually be incentivized to swap cash into Treasuries or bonds or trade out bonds for cash.
+And so it's actually created just this balance sheet, I mean, gimmick would be the wrong word, but sort of the.
+The dynamics of banks maintaining their overall balance sheet and risk-weighted assets portfolio has been a massive driver of especially like centrally cleared repo in the traditional lending markets.
+So it's all the reasons why someone would want to borrow generally and all the reasons why someone may want to lend on a short-term basis, but there's also this massive balance sheet management game that's being played.
+Gotcha.
+Yeah, I mean, it reminds you a lot of like staging a house or something before you get ready to sell it, the stage of the books for the end of the week.
+You touched on one quick issue and then I promise we'll get to the on-chain stuff, but there are two forms of repo, I guess like centrally cleared or like I guess quote unquote like tri-party repo, and then there's also the bilateral nature of it.
+Mateo, could you just briefly sort of explain the differences between the two?
+And as far as I can tell, again, I'm not an expert, the central, essentially cleared repo appears to be much bigger and that has the added benefit of basically the other party's not having to sort of take counterparty risk to each other.
+嗯。
+Yeah, well, so yes, with the first kind of repo that you mentioned, essentially their government backed, so the liquidity pool there where you can tap for this kind of like repo loans is definitely more solid and you know provides a better, more confidence to internal players in the repo market.
+When we are talking instead about the.
+The trade party or bilateral kind of infrastructure, you know, that's kind of an answer of the repo volumes growing over time, and also the operational burden of managing only with central clearing becomes unsustainable, you know.
+So you allow also to have.
+Collateral by custodians like BNI or Mellon or even JP Morgan's, you know, stepping in as a tri-party agents, handling collateral selection, substitution, you know, daily valuation settlement on behalf of both parties, so you make the entire process more streamlined in this way, because it's at capacity in terms of the math.
+And neither side manages, you know, the operational complexity directly.
+This layer didn't change the economics of the repo, but it dramatically reduced friction, and created standardization in how collateral was managed.
+That, you know, made it easier for new participants to enter the market.
+So, yeah.
+Yeah, it's similar, kind of similar scenarios with like bilateral collateral, which adds an additional layer of efficiency for the participants that are in the repo market in general.
+Okay, all right, so let's let's turn.
+Okay, hi Craig.
+I was just gonna say one thing I'd add for like folks that are familiar with the crypto markets, I think that the analogy that someone could look at is like, let's say you're trading bilaterally through an ISDA with derivatives, and there's benefits to that in the sense that my firm can customize the exact terminology that may go into something.
+You can have more bespoke trades, you could choose where the collateral is, whether it's a tri-party or not.
+You have a lot of flexibility based on your relationship with that counterparty, your judgment of their credit risk profile, things like that.
+But the downside to that is you have to go through that process and that papering and that negotiation with every single individual provider, and unless you have the systems and things to keep, you have to keep track of all those little things that you negotiated.
+Over time, in between, there's benefits to that in some cases, but a lot of times if the you may and this happens at derivatives, for instance, people may go, hey, let's just trade it on Paradigm and block it to Deribit.
+Well, what's actually going on there is basically everyone, okay, we'll agree on a price, but everything else is standardized.
+The settlement is standardized, the collateral management is standardized, all of the.
+
+You know, the marking time and the pricing sources and everything is sort of in this unified piece.
+So that's that exists in the repo markets too, centrally cleared in the sense that all of that is set and you're just kind of trading on a price with someone versus bilaterally where you're really kind of customizing the configuration.
+You can understand why people would be excited about the centrally cleared side of it because it makes things just a whole lot easier.
+Yeah, gotcha.
+Gotcha.
+All right, I think that's kind of a sorry, that's a kind of a good briefing for everyone.
+Make sure we're on the same page.
+Let's turn to the on-chain market.
+So, Matteo, this is your area of expertise, although I guess that would obviously apply to Craig as well.
+But can you just kind of like level set for us?
+What does on-chain credit look like right now?
+Yeah, that's a that's a really great question, and I think that we can have you know a lot of like parallels that we can we can draw with repo markets in general.
+The current state of private credit on chain is that.
+We see real progress at the moment, but still I would say we're still early as a market structure itself.
+You know, as of today we see that we have more than five billion distributed across more than two thousand different on-chain credit assets, and that's a meaningful growth.
+So, but it also points to a market where there's still.
+Infrastructure building phase and not the scaling phase.
+You know what actually what's actually working at the moment is that the borrower side has matured significantly.
+Institution counterparties like FalconX are accessing credit on chain with clear terms, defining collateral arrangements and legal structures that.
+Hold up to institutional scrutiny, you know, that's a real change from you know the first generation of functioning credit, and where the borrowers were often you know crypto native entities with the thin credit history and limited accountability in general, so.
+I would say the current state regarding the current state of credit, also the underwriting layer, as also professionalized, being professionalized, you know, there's multiple professional underwriters now that do, from a credit and reporting perspective, do, brings traditional credit underwriting incentives or, you know.
+Discipline to on-chain products, which is quite significant for the ecosystem in general.
+And you know, apart from these, or like the better infrastructure, the better underwriting methodology, more legal clear certainty for the final borrower and enforceability, even composability is starting to demonstrate real value.
+And that's exactly the parallel with repo market, because the fact that you can use an on-chain credit facility or even an RWA asset in broader terms as a collateral in a different.
+A different overcollateralized protocol in a DeFi protocol, well, you know, that is does something that that is beyond sitting in a bullet earning yield.
+You know, it's it's meaningful proof of concept for what the next phase for onchain credit looks like.
+Yeah, so there's definitely like improvements from what I see looking at even like two three years ago on onchain credit.
+There's still room for improvement, I would say.
+There's still like aspects that needs to be improved from a market structure perspective, but that would be the current state of on-chain trading, I would say.
+I'm looking at RWA.
+XYZ right now.
+I mean, like you said, the number is about 5.
+13 billion.
+It looks by far the biggest is CIRP USDC.
+That's Maple Finance's lending pool for stablecoins.
+And I mean, Craig, I see FalconX has one.
+I'm familiar with.
+Is Acred considered here one of these the Hamilton Lacy securitized ones?
+Does that fall under this category?
+Should be so.
+I mean, how is this stuff being used today?
+Because this type of credit, I mean, this is different obviously than like taking out margin on for like a derivatives type of trade things like that.
+How is this being used today?
+And do you mean from like our perspective as an issuer or both?
+I mean, if you could talk about specifically how people are using your credit vault, I'd love it.
+You don't have to mention names, but just even more generally, like how is on chain like private credit being used today?
+Yeah, it's interesting, and I think there's a few different buckets of use cases.
+And so, like you mentioned, syrup USDC, and that's why like there's kind of these different flavors, and depending on the metric, you know, we have to make sure usually that we're talking kind of apples to apples because there's a lot of flavor now of on-chain private credit.
+So there's some where it's essentially, you know.
+You know, folks that are delegating or investing in some kind of a yield strategy, but with the idea that it's going to be, you know, you are going to have like a receipt token or something that's going to be generating yield, or you could stake it and generate yield.
+So that's like you think about like USDE with Athena, or USDS with Spark or Syrup USDC.
+You know, it's essentially someone's going to go run a yield strategy, but there is kind of these like it's quasi like pegged to a stable coin, and sometimes people will consider them stable coins.
+It's a separate debate, but it's kind of a receipt for your yield generating strategy.
+Then, then you have more like.
+More like traditional private credit strategies that have come on chain.
+You know, there's like JSTRY, a lot of what the securitized and centrifuge folks have done.
+There's Acred, Apollo's Acred, you know, even to some extent, you know, Fasanara's on-chain credit facility, like kind of folks that are running these strategies in the traditional tradfi world and are actually finding a way to sort of bridge it on chain.
+As for them, it's a way to access obviously additional AUM.
+And for you know, the on-chain community, it's a way to actually invest in private credit through some kind of an on-chain vehicle.
+Those tend to be have you know stricter permissioning, but not you know, not always.
+There's interesting evolutions that are going on in that.
+But so then there's so there's kind of folks that okay, I want to get into a traditional private credit strategy, or I want to get into a traditional treasury bond strategy or a triple A CLO or something like that that I would normally do through a brokerage, but instead I'm going to be able to now access that on chain.
+And that tends to be a different profile.
+And then.
+And we, you know, it's interesting.
+Like with our facility and some of the others that have come out, it's a bit of a, it's a bit of a mix in a sense of kind of both concepts actually is where I'd look at it.
+You know, we don't have a daily liquidity concept.
+We don't necessarily have a stablecoin or anything like that that's going to be involved.
+But what you can do is you can effectively participate in the yield generated through a portion of our loan book that's been tokenized.
+And so, you know, this, it's an interesting merger because what we like about it is you can have these facilities and we do bilaterally with folks or through kind of the traditional financial rail.
+Leden had a big ABS just through traditional rails.
+But there's actually a lot of capital, a lot of interest, and a lot of unique utility that comes in when you can access the on-chain markets too.
+And we've experienced that frankly in some cases by accident in where we've.
+Realize that hey, folks, go.
+Well, maybe I can borrow against this token.
+Maybe.
+Maybe I could do a repo type facility.
+Maybe someone will lend.
+That's outside of FalconX folks that may want to go do that, but it creates benefits for us too.
+As you sort of have this secondary market that's evolving, that you didn't have as much in traditional finance.
+You had a secondaries market you could, but it would be hard going like borrow against your private credit.
+But the on-chain markets in some ways are a lot more agile in that sense for lending against these assets, even the traditional ones.
+Okay.
+Okay, so I certainly see a lot of the overlap.
+I mean, the idea of people being able to put up assets, borrow against it, you can smart contract everything so that there is like sort of like liquidation prices and ways to roll things over.
+You can even create like a digital escrow account, the whole things for like.
+To release funds when certain conditions are met, a lot of overlap, but I do want to talk about a couple of things that make the repo market in traditional finance very unique.
+And I am curious how you think they apply to crypto.
+I mean, for one, repos, I mean, they stand for repurchase agreements.
+They have a very specific sort of like legal, so we're looking for, they operate a very unique legal space.
+I'm not sure why Craig's smiling, but I'm excited to hear.
+I guess maybe you know where I'm going, where like the owner or I guess the lender actually has right to those assets and can sell them directly, don't have to go through some sort of laborious bankruptcy process, like in case there's a default, which is unlikely because these are very short-term loans.
+But smart contracts, we all know they're called smart contracts, but they're not necessarily smart, and in the legal sense they are not contracts.
+So how does that apply here?
+Craig, go ahead.
+Oh, yeah, I was just going to say, I think so.
+This is one of the like what you were alluding to is kind of one of the.
+So, I would get asked questions all the time by people, especially like in my former role at Membrane, where we would end up talking to a bunch of different lending desks that are getting established.
+And if you ask anyone this, the question of do I do it in a repo agreement when you're first like when you're starting a business or do I do it in a master lending agreement is a big question.
+The answer is because like you're.
+There's a few different reasons why you might want to do repo, but like bankruptcy, the avoiding a bankruptcy stay is actually like one of the core components of that, as well as sort of its classification on your balance sheet and how it's considered like from a risk perspective.
+But because of that, the reason I was smiling is you have to document it in a very specific way as a repurchase agreement for it to truly be considered a repo and not just a loan.
+But it's been interesting in my experience having seen repo agreements in the crypto space, and we can do either, but you find folks you have to kind of play this translation that goes into it, and to translate a loan into a repo agreement, like we've seen term repo.
+Repos.
+Now there's an argument that you have to really watch how that's papered up to not just be considered a term loan and truly be considered a repurchase agreement.
+So it's been very interesting to kind of see a lot of that more than I had in the past in my career and see how different financial institutions, especially folks coming in from traditional finance who tend to like repo a little bit more, they feel that it's safer, will come and try to adapt it to the crypto markets.
+But then there's other reasons, taxes, etc.
+Why sometimes someone may want to do something as a loan instead or regulatory status or something like that.
+How to answer your question though about the how do you actually go and effectuate this on chain?
+I mean, I am a high-fi person in the sense of DeFi and CeFi in a sense, and so I am going to steal that term.
+I like that.
+Yeah, yeah, it's actually my old CEO Carson Cook used to coined it for me, but it's I think that you know I am.
+I think that it doesn't all necessarily have to be done in a smart contract basis.
+I think you could probably have a pretty robust repo market that touches the on-chain ecosystem.
+That doesn't, it doesn't have to all be programmatic.
+Like I think, I think if we, like what you need is a product that's going to work and scale and make sense for the people that are going to be deploying liquidity into the ecosystem.
+If that can all be done on chain and people can be comfortable, and then great, phenomenal.
+Like then people will do it.
+But if you have some component that has to go off chain for some reason, or everyone has to sign a piece of paperwork and then it can all be run by smart contracts or something like that, like that's fine too.
+And I think that is going to kind of be a nuance.
+Like because there's, like to have a lot of the larger players, like they may touch on chain, us included, but a lot of times you want some kind of a paperwork piece.
+Piece that's involved to some extent and possibly to reap some of the benefits that come with why folks do repo generally.
+So it was a long-winded answer, but I just like I don't think we have to like have a one-size-fits-all model as this space evolves.
+Gotcha, makes sense.
+And Mateo.
+Just in light of everything, how the repo market and TradFi has changed in the last few years, the natural question to ask is whether we need some sort of central bank backstop or some sort of big liquidity pool.
+Do you see the need for that, or is there a way to handle this on chain without a quote unquote lender of last resort?
+Well, that's a really good point because you know liquidity is one of the most visible gaps at the moment.
+I would say so.
+You know, tokenization improves transferability, but you know it doesn't automatically create an active market around it.
+So I actually agree with Craig in the sense that there is a line between DeFi and CeFi that is kind of fading over time and we see more and more overlaps, hybrid models between DeFi and CeFi, which it just makes sense because we don't need to force adoption of smart contract application, but it needs to make sense for the market itself.
+To answer your question regarding having like a central authority that backstops the liquidity, I would say that it becomes less important in a market structure built on chain that allows participants to provide secondary liquidity and tap from a global pool of liquidity.
+So in a sense, these expand also the audience that can participate into these kind of markets.
+So it makes less important the participation of a central authority that provides backstop liquidity, but I would say it doesn't completely eliminate the need of that.
+So you still need to have, you still like.
+It's good to have a central authority that allows to have backstop liquidity, and I think that if we look at from an on-chain perspective with more composability and also global kind of infrastructure.
+
+That can be available.
+It's a coordination effort from different central authorities to make sure that they can provide altogether at the same time a backstop liquidity.
+So I would say becomes less significant from an on-chain perspective, but still it doesn't eliminate the need of it.
+Okay, I think at this point it would make sense to just have you, maybe Craig, you could start just explain the setup that you guys are rolling out with your version of sort of like on-chain repo.
+And I have a few more questions after that, but yeah, please just sort of paint a picture for the audience.
+Yeah, and maybe I can set the stage and give it to Matteo to kind of go into the productization.
+But I think one of.
+One of the core reasons that this is really interesting, I think, at this time in the crypto ecosystem, because repo has been around forever.
+Like this has been a like there's always been this dynamic that there's repo and TradFi, not necessarily as much in deep in crypto, but I think what's interesting is now you have like.
+Like stablecoin repo is something that I've been hearing a lot about, which is folks want to swap out their PYUSD for USDE or I need, I mean, we run into this all the time.
+You know, my desk doesn't want to go mint and burn something.
+We have something coming along the way, but we have to go settle USDT with this client right now.
+Wouldn't it be great if we could, you know, access a repo market and just quickly swap our USDC for USDT and then, you know, we'll handle it afterwards?
+Like, especially as all these new stablecoin products are rolling out, there's a lot of, and no one wants you to go and burn stablecoins and you may not want to.
+And so like, you kind of have an interesting dynamic actually where a robust repo market could be actually extremely valuable for those types of things, that type of activity.
+And it's all a lot of times kind of the short term stuff as well as the long term stuff.
+So with the abundance of these new stablecoins, I think it's been, that's one driving factor.
+And then the other driving factor is the illiqu.
+Like the liquidity profile, of.
+Of a lot of these new RWAs, and this is something that we've gotten especially involved in.
+And again, Matteo will go into a bit here with what we're rolling out is you have this gigantic problem right now where folks want daily liquidity, especially folks that are going in levered looping or as part of just their overall treasury management strategy.
+They need the peace of mind that this is a temporary deposit.
+But the problem is that's not really, and ourselves are included in this, it's a huge pain to go and offer a lot of times and it might just not work in your fund strategy of how you're deploying.
+You may have quarterly liquidity and maybe it's gated and you just will have a different profile on what you can offer.
+Well, does that mean that those folks just can't get invested in those products anymore?
+Maybe not.
+Maybe you can create.
+Different bridge facilities, repo facilities, lending facilities as ways to create this liquidity or even deleveraging facilities, which is a separate thing we could go into for things like if the Morpho markets are blowing out, you may temporarily want to delever.
+You could do that in a repo.
+And so like that, I think is another big driving factor for why these markets make sense because a lot of people are trying to solve this illiquidity problem with these new RWAs.
+And Matteo, I'll hand it to you on the product.
+Yeah, yeah, absolutely, absolutely agree on the like there are there are definitely a ton of different like projects and teams that are working on the secondary liquidity problem in the sense that it's definitely tangible for an allocator perspective that with the tokenization of the credit facilities you need to have also this kind of like instant available liquidity, I mean.
+I mean, in some forms, the composability again of these kind of products helps us in some ways, in the sense that I'm seeing like different flavors, different models applied to being able to provide this instant liquidity.
+You can have like coordination mechanism that allows to, you know, coordinate a callback with the borrower itself, which if you look at that traditional credit facility, it would have taken like.
+Days and days of structuring legal reviews and everything, but from an on-chain perspective, instead is just a contract call, an on-chain transaction that appears.
+So, but that's just one methodology to undo this kind of instant liquidity.
+You can have repo markets on Morpho, for example, where you can post the position that.
+That you have that the collateral that you posted on Morph already again, so you are re repotating that collateral into another market, which effectively gives you like instant liquidity that can allow the leveraging for other operational purposes, you know.
+And in general, like having market participants that provide secondary and.
+You know, even a simple allows to.
+I'm sorry, Mateo, we're having a little trouble.
+I'm sorry, Mateo.
+I think we're having a little trouble hearing you.
+Why don't you try one more time?
+Can you hear me now?
+It's a little better.
+It's a little better now.
+Yeah, sure, sure, sure, sure.
+Okay, okay.
+Now, yeah, I was saying that also having like participants in the market that can provide directly secondary liquidity and you know, bear the counterparty and duration risk, which you know, in traditional finance, there's many different firms that do this kind of role in the market.
+Well, what I'm seeing in DeFi and on-chain finance in general is that.
+The combination of all these kind of projects and teams working towards this kind of goal of providing instant liquidity for RWA assets is quite significant.
+And I think that in the next couple of years, we're going to see quite of an improvement that would kind of make you know quite of an no brainer for an originator to just.
+Just use an on-chain structure instead of all the traditional structure.
+Okay, great.
+We're almost out of time.
+I have a couple of quick follow-ups or things to finish up with.
+Craig, one thing you mentioned I wanted to ask you about, sort of how repo could help with like deleveraging moments, especially during periods of market stress.
+Immediately made me think of Aave and everything that's happening there trying to restart those markets.
+How do you think like.
+Like a mature on-chain repo market would help in a situation like that.
+Yeah, no, absolutely.
+I mean, it's a great example.
+Like, for instance, you, because you had this sort of whole secondary market that started going around with the debt tokens and the swaps, a lot of like what Fluid was doing.
+But that was fundamentally built on trading out of your position.
+There's a lot of situations where you don't want to trade out of a position.
+You want to keep the same position, you just need the liquidity right now.
+And so that a mature repo market or a mature repo facility would have let you do that.
+Okay, I've got, I need my ETH right now and I'm willing to go and post, you know, whatever it may be, they're off my balance sheet or that's even in Aave, some other debt token, whatever it may be.
+I'm willing to go and repo that to get the ETH that I need for my obligation over here or to post this additional collateral or to pay this loan back so I don't get liquidated or whatever it may be.
+There were a lot of folks on different sides of that.
+Like, that's a prime example.
+Everyone was happy with their positions.
+Then this black swan situation comes about and.
+And folks, like if folks had the option, everyone probably would have loved to have kept their positions and maybe paid a little bit of interest for it or something, but just kept things going.
+But you have a general liquidity dynamic, which then causes all sorts of problems where people are selling.
+Now you have assets that are selling off.
+Now you have interest rates that are spiking.
+Now you have people that are getting liquidated that otherwise would have never been liquidated.
+Like you have this whole kind of cascade.
+You have a deep pegging risk that's going on, and now you pressure on all the LSTs and the execute and things like that.
+Like none of that had to happen.
+Like, not that repo solves everything, but it would have solved a whole lot in that situation.
+And you run into the same thing with like these short-term liquidity facilities, like with the ETFs.
+There's a lot of interest with ETFs, with folks that are managing large treasuries of ETH, Solana, stakable assets, that would love to have all of that stake, but they need some kind of repo facility essentially that's going to go and guarantee them that they'll be able to have the liquid right away, even if something's in an unbonding period.
+And you could take the same thing in the redemption queues in RWA.
+It's the same thing.
+It's something's in a redemption queue somewhere.
+It's either being unstaked or it's being redeemed or you're waiting for the Aave situation to play out, but you need the liquidity now and you're just going to pay a little bit of interest for it as opposed to selling out of your position on a secondary market.
+And so I think the.
+The last thing I'd say is this: this because of how Morpho is designed, it's where I've seen this kind of deleveraging concept outside of obviously the Aave situation probably the most.
+Because you have situations where you may have vault curators that are going and you know they have to balance their liquidity situation and they have to assign LTVs.
+Like liquidity is a massive thing in the back of their minds, in addition to the riskiness of these various vaults and how much they can allocate is all dependent on the liquidity profile of different assets.
+And so they can give a higher LTV and they can do a higher allocation in the Morpho markets when the liquidity profile increases.
+And so because what will happen is the liquidity situation dries up and the Morpho markets are doing the ticking interest rate situation that they do and now people's trades are blowing up and people are at risk of liquidation and they need to be able to delever that situation.
+Able to get their liquidity either out or get additional capital in, and so how would you do that?
+And so, like we currently have, like within our product set, offer deleveraging facilities for folks, not just necessarily against our credit token, but also for other assets because of this dynamic.
+And what that'll do is it'll actually increase the capital efficiency of the market overall, because now the Morpho Mark, because the vault curators feel confident in what they're allocating to in the liquidity profile, thanks to repo, they can now actually extend more liquidity into the system.
+It doesn't have to stay trapped because of the difficult redemption windows and so on and so.
+Gotcha.
+So I mean, the traditional repo market measured in the trillions.
+Mateo, how big do you think on-chain repo could get in the next say five to 10 years?
+Well, in the next five years, I would say I'm pretty confident to say that it would reach the trillion figure, at least one trillion figure.
+It's something that it just makes sense with the current pipeline of firms and traditional players that are looking into this kind of blockchain application.
+Applications, so I wouldn't be surprised to even see it like before the next five years.
+And that's going to be, as I mentioned before, it's going to be kind of like an hybrid approach.
+We're going to see more and more, you know, kind of like less differences, if I and I, but more a united approach to work together on improving this kind of situation.
+And so, yeah, I would say it's something reachable within the next five years.
+Okay.
+And Craig, for you, give me one reason why it will get there and one reason why it will not.
+I think it will get there because of those dynamics that I mentioned and things that are already happening.
+You're already seeing a lot of these platforms go and release these types of facilities.
+You're seeing people like us and other market participants be involved.
+And so that's the bull case is this is necessary and it's already kind of begun to happen and these facilities are being offered.
+Why it won't happen, I think, is because.
+Is that necessarily actually I guess repo in all cases, or are people going and implementing this in a variety of sort of different ways?
+I think one of the benefits of centrally cleared repo for the banks is that it's like something you can do like clockwise and you can automate it to an extent and you can use it as part of your treasury management strategy and capital's flowing and it's all governed under the same agreement and there's standardized terms, and that's to get our industry on that and I'm not sure like.
+Like, that is a gargantuan challenge.
+I know that there's folks actually my alma mater at Membrane.
+They are, they're, I know they've worked on this to try to get folks on a standardized Jimra repo form to try to kind of create this.
+But to create this sort of like standardized market in general right now is a extremely difficult thing to do.
+On-chain is probably one of the best places to start, frankly.
+But that's standing up and getting an entire ecosystem.
+You're basically starting a new exchange, or you would have one of the exchanges that would need to do it.
+That's a massive barrier to entry.
+Yeah, and I guess we'll have to have you guys back on in five to 10 years and we'll see what plays out.
+But thank you both for joining.
+We're gonna have to end it here, but everyone, thank you for watching and listening.
+Stay where you are.
+This is it for Bits and Bips, the interview this week, but in a moment, Laura is coming back to do an untrained interview with Alex Wesley of Artemis, who's been making the boldest call.
+We've seen it a while for repricing Coinbase, Circle, and Kraken as AI-native finance infrastructure.
+You'll want to stick around.
+Écoute.
+嗯。
+
+嗯。

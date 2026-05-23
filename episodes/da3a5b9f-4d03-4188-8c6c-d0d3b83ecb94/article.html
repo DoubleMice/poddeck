@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruslan Fakhrutdinov – Extended Exchange and Vault Tokenization — PodDeck</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    color: #1e1e1e;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    text-align: center;
+    padding: 40px 0 48px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 48px;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  header .meta {
+    font-size: 15px;
+    color: #666;
+  }
+  header .meta span { margin: 0 6px; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1971c2;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 12px;
+  }
+  p { margin: 12px 0; }
+
+  .overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 24px 0 36px;
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+
+  .card-blue   { background: #eff6ff; border-left: 4px solid #1971c2; }
+  .card-green  { background: #f0fdf4; border-left: 4px solid #2f9e44; }
+  .card-yellow { background: #fefce8; border-left: 4px solid #ca8a04; }
+  .card-red    { background: #fef2f2; border-left: 4px solid #dc2626; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #9333ea; }
+  .card-orange { background: #fff7ed; border-left: 4px solid #ea580c; }
+
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #1971c2;
+    background: #f8f9fa;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote .label {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #888;
+  }
+  .gloss {
+    font-size: 14px;
+    color: #555;
+    padding: 12px 16px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    margin: 12px 0;
+    line-height: 1.65;
+  }
+  .gloss::before { content: "作者概括："; font-weight: 600; color: #888; }
+
+  .quotes-section {
+    margin: 48px 0 32px;
+    padding: 28px 24px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+  }
+  .quotes-section h2 { margin-top: 0; border-bottom-color: #ca8a04; }
+
+  .quote-item {
+    padding: 14px 16px;
+    margin: 10px 0;
+    border-left: 4px solid #1971c2;
+    background: #fff;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+  }
+  .quote-item:nth-child(2n) { border-left-color: #2f9e44; }
+  .quote-item:nth-child(3n) { border-left-color: #ca8a04; }
+  .quote-item:nth-child(4n) { border-left-color: #9333ea; }
+  .quote-item:nth-child(5n) { border-left-color: #dc2626; }
+  .quote-item:nth-child(6n) { border-left-color: #ea580c; }
+  .quote-item .ctx {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-style: normal;
+    color: #999;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  .pull-box {
+    float: right;
+    width: 260px;
+    margin: 8px 0 16px 24px;
+    padding: 16px 18px;
+    background: #eff6ff;
+    border-left: 4px solid #1971c2;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  @media (max-width: 540px) {
+    article { padding: 20px 14px 60px; }
+    header h1 { font-size: 22px; }
+    .pull-box { float: none; width: auto; margin: 16px 0; }
+    .overview { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Ruslan Fakhrutdinov — Extended Exchange &amp; Vault Tokenization</h1>
+  <div class="meta">
+    S7E27 · Flirting with Models · 2026 年 2 月
+    <br>嘉宾：Ruslan Fakhrutdinov <span>·</span> Extended 创始人
+  </div>
+</header>
+
+<section>
+<h2>为什么这期值得关注</h2>
+
+<p>去中心化永续合约交易所（Perp DEX）正在成为加密市场流动性的新中心，但它们的内部运作——尤其是金库的设计和风险管理——对大多数交易者来说仍然是一个黑箱。本期节目，Corey Hoffstein 与 Extended 创始人 Ruslan Fakhrutdinov 进行了一场关于交易所基础设施设计的深度对话，从结算层独立性的哲学选择，到金库份额代币化带来的全新风险维度，几乎每一分钟都是实战级的技术细节。</p>
+
+<div class="overview">
+  <div class="card card-blue">
+    <strong>结算层独立性</strong>
+    为什么 Extended 选择在公共 Starknet 而非自建链上运行，以及 Paradex 回滚事件为什么在 Extended 不可能发生
+  </div>
+  <div class="card card-green">
+    <strong>金库的三重角色</strong>
+    流动性提供者、保险基金、USDC 借贷方——Extended 的金库是整个系统的基石
+  </div>
+  <div class="card card-yellow">
+    <strong>确定性清算盈亏</strong>
+    金库在接管头寸前先对冲，精确到 10⁻⁶ 精度预知每笔清算的盈亏——这是关键架构创新
+  </div>
+  <div class="card card-purple">
+    <strong>金库份额作抵押品</strong>
+    XVS 代币可以像 USDC 一样作交易抵押——这是资本效率的巨大进步，也带来新的尾部风险维度
+  </div>
+  <div class="card card-orange">
+    <strong>Force Close 机制</strong>
+    Extended 独创的操作类型：金库可在做市价强制平仓对手方，保证赎回在任何市场条件下都可执行
+  </div>
+  <div class="card card-red">
+    <strong>跨资产抵押路线图</strong>
+    如何在不依赖现货市场的情况下，通过 RFQ 做市商系统实现 BTC/ETH 等多资产抵押交易
+  </div>
+</div>
+</section>
+
+<section>
+<h2>为什么控制结算层是一个问题</h2>
+
+<p>在 Ruslan 看来，去中心化交易所最根本的设计选择就是结算层的归属。他说得很直接："从第一天起，我们就不想控制结算层"。为什么这么重要？</p>
+
+<blockquote>
+  "if you do control the settlement layer, or even if you have an impact on it, basically you are not so different from a centralized exchange."
+  <span class="label">— Ruslan Fakhrutdinov</span>
+</blockquote>
+
+<p>逻辑链条很简单：控制结算层 = 控制用户资金存储和变动 = 实质上就是中心化交易所。Extended 选择了另一条路——运行在公共 Starknet 区块链上，不拥有也不控制底层账本。</p>
+
+<p>这与 Paradex 形成鲜明对比。Paradex 最近发生的定价故障导致大规模清算后，他们回滚了区块链以挽回用户损失。Ruslan 指出，Paradex 实际上是运行在自己的 Starknet 分叉上，目前仍然控制着结算层。Extended 做不到这种事——除非 Starknet 的去中心化治理本身决定回滚。</p>
+
+<div class="gloss">
+Corey 提出了一个概念区分——"条件性最终性"vs"可信最终性"。当治理可以干预并回滚交易时，最终性是"有条件的"；当结算层去中心化且独立于交易所时，最终性是"可信的"。Ruslan 认同这个框架，但补充说治理本身不是问题——问题是交易所运营方不应该对那个治理拥有影响力。
+</div>
+
+<p>他用了传统金融的类比：在 TradFi 中，清算所、交易所和经纪商是由不同独立实体运营的——这是有意为之的制度分离。当所有功能合并到一个实体手中时，"you are basically commingling all the things into one place"，失去了制衡。</p>
+</section>
+
+<section>
+<h2>金库：Extended 系统的基石</h2>
+
+<p>过去几年，市场做市金库（Market-Making Vault）成为去中心化交易所引导流动性的标准工具。Hyperliquid 率先引入这一模式——第三方将资金存入金库，由交易所运营金库为交易者提供流动性，储户从金库利润中获得收益。</p>
+
+<blockquote>
+  "At extended, essentially, the vault is the cornerstone of the entire system."
+  <span class="label">— Ruslan Fakhrutdinov</span>
+</blockquote>
+
+<p>但 Extended 的金库有两个显著差异化设计。第一，存入金库获得 XVS（Extended Vault Share）代币，这个代币可以作为交易抵押品使用——直接提升了资本效率。第二，金库收益率与用户交易活跃度挂钩——交易越频繁，金库收益越高。</p>
+
+<p>在功能层面，Extended 的金库目前承担两个角色：为交易所大部分市场提供流动性（尤其在无人报价时充当"最后流动性提供者"），以及作为保险基金处理所有清算。未来跨资产抵押上线后，金库还将成为平台上 USDC 的主要借贷方——任何用 BTC 或 ETH 作为抵押品交易的用户，实际上都是在向金库借 USDC。</p>
+
+<p>Ruslan 强调，金库在交易所上的市场份额"合理偏低"——它不是主要做市商，而是一个安全网：当正规做市商缺席时，金库保证市场仍然有报价。</p>
+</section>
+
+<section>
+<h2>确定性清算：Extended 的关键架构创新</h2>
+
+<p>清算处理是去中心化交易所设计中风险最大的环节之一。大多数 Perp DEX（以 Hyperliquid 为典型）的工作方式是：用户被清算 → 金库接管头寸 → 金库事后处理平仓。这意味着金库在接管头寸时并不知道最终会赚还是会亏——它承担了市场价格在接管和平仓之间的波动风险。</p>
+
+<p>Extended 的做法完全不同。</p>
+
+<p>当一个用户持有 1 BTC 多头被清算时，Extended 的金库<strong>先做空 1 BTC</strong>——这笔交易实际执行但尚未结算。此时金库确切知道两个价格：自己的做空价和用户的破产价。两者相减，盈亏精度可达 10⁻⁶（USDC 的精度）。</p>
+
+<p>然后金库检查三层风险限额：</p>
+<ol style="margin: 12px 0 12px 24px; line-height: 1.8;">
+  <li><strong>单笔清算最大亏损</strong>（按市场设定，流动性越好额度越大）</li>
+  <li><strong>单市场单日最大亏损</strong>（该市场只能动用金库权益的一小部分）</li>
+  <li><strong>金库单日总亏损上限</strong>（约 TVL 的 10%）</li>
+</ol>
+
+<p>全部通过 → 做空被结算，金库接管多头，两者互为对冲。任何一项未通过 → 金库撤回做空，用户被 ADL（自动去杠杆），风险在交易者之间直接重新分配。</p>
+
+<p>整个过程是原子化的——其他用户完全看不到金库的那笔做空交易，订单簿没有变化。这确保了金库不会因为"先做空再撤回"获得任何不公平的市场优势。</p>
+</section>
+
+<section>
+<h2>自动去杠杆（ADL）：风险的最后出口</h2>
+
+<blockquote>
+  "auto deleverage is basically when you take the opposing positions of the users. And you force close them at the bankruptcy price of the liquidated user."
+  <span class="label">— Ruslan Fakhrutdinov</span>
+</blockquote>
+
+<p>当金库因为风险限额拒绝接管清算头寸时，系统需要另一个出口。这就是 ADL——自动去杠杆。系统找到一个持有相反方向头寸且最盈利的交易者，按被清算方的破产价强制平仓。被平仓的盈利方损失部分浮盈，被清算方归零。</p>
+
+<p>Ruslan 承认，引入 XVS 作为抵押品后，Extended 对触发 ADL 的容忍度比没有这种设计的平台更低——因为金库的资金本身已被杠杆化了（XVS 持有者也在用其交易），所以风险限额必须更早地被触发。</p>
+
+<p>但这里的核心哲学洞察是：亏损交易者不在乎是被金库清算还是被 ADL——反正都归零。风险的最终承担者是<strong>盈利方交易者</strong>。Extended 的设计选择是：用更保守的金库风险限额来保护储户，代价是盈利方交易者可能更早遭遇 ADL。</p>
+</section>
+
+<section>
+<h2>Force Close：Extended 的独创机制</h2>
+
+<p>ADL 是行业标准做法，但 Extended 引入了一种新的操作类型——Force Close——专门解决 XVS 赎回时的流动性问题。</p>
+
+<blockquote>
+  "we introduced a new type of operation which we call force close."
+  <span class="label">— Ruslan Fakhrutdinov</span>
+</blockquote>
+
+<p>场景是这样的：一个用户用 XVS 作抵押品进行交易，现在被清算。清算的第一步是尝试将 XVS 兑换成 USDC——这需要金库按比例平仓。但如果市场流动性不足，金库无法平仓，系统就卡住了。</p>
+
+<p>Force Close 的解决方案：金库找到一个盈利的对手方交易者，按<strong>做市价</strong>强制关闭其头寸。这与 ADL 有两个核心区别：</p>
+
+<p>第一，平仓价格是做市价而非破产价。做市价来自独立预言机——"mark price is the price that we don't control"——不可被交易所或任何攻击者操纵。</p>
+
+<blockquote>
+  "With forced close, we close all the positions at the mark price, which basically means that you just close the exposure without transferring profits and losses from one user to another."
+  <span class="label">— Ruslan Fakhrutdinov</span>
+</blockquote>
+
+<p>第二，Force Close 不在用户之间转移盈亏。它只是关闭敞口，被平仓方按公平市价拿回资金。这比 ADL 对被平仓方更好——做市价通常优于破产价。</p>
+</section>
+
+<section>
+<h2>90% 抵押率：不是随便选的数字</h2>
+
+<p>每 1 美元的 XVS 提供 90 美分的交易抵押价值——为什么是 90% 而不是 100%？</p>
+
+<p>第一个原因：金库赎回 XVS 时需要按比例平仓，全部以 taker 订单执行。即使市场流动性很好，滑点也在所难免。如果 XVS 贡献 100%，滑点造成的损失将直接侵蚀其他储户的权益。</p>
+
+<p>第二个原因：清算亏损（风险限额不为零）和交易亏损确实存在。虽然限额设计得非常保守，但理论上不可能是零风险。</p>
+
+<p>Ruslan 解释说，100% 不可行（金库持有头寸，平仓必然有滑点），50% 太保守（没人会愿意用 XVS 代替 USDC），90% 是在可用性和保护之间精心权衡的结果。这个数字是基于风险限额设计倒推出来的，不是一个直觉判断。</p>
+</section>
+
+<section>
+<h2>极端压力场景：当一切同时出错</h2>
+
+<p>Corey 提出了一个压力测试：市场剧烈下跌 → 金库单日清算亏损触及 TVL 10% 上限 → XVS 贬值 → 用户被大量清算 → 反馈螺旋。系统如何找到稳态？</p>
+
+<blockquote>
+  "when the vault hits one of its risk limits, it will force close all of its positions. So basically, it will go back to USDC as the only asset and the only type of exposure that the vault itself holds, which will prevent any future drops in value."
+  <span class="label">— Ruslan Fakhrutdinov</span>
+</blockquote>
+
+<p>关键在于：金库触及第三层风险限额时，不是渐进减仓，而是<strong>硬止损</strong>——强制平仓所有头寸，回到纯 USDC。这意味着金库不再承受任何市场风险，不会再有进一步的价值下跌。</p>
+
+<p>然后，被拒绝的清算进入 ADL——盈亏双方直接匹配。由于永续合约是零和博弈，多头亏损 = 空头盈利，系统可以把多空双方的头寸强制撮合清零。只要不违反"资产 > 负债"的铁律，系统总可以恢复健康。</p>
+
+<p>Ruslan 对风险限额的置信度给出了一个精确数字："I would say probably ninety nine point ninety nine of the cases, the risk limits of the vault would be sufficient"。但他也坦诚，所有黑天鹅事件在理论上都是可能的，设计必须覆盖这些理论路径。</p>
+
+<div class="gloss">
+Ruslan 的测试哲学是"从边缘情况出发"（start from the edge cases）。从只有一个交易者且他的钱都在金库里的极端场景开始，逐一推演系统行为，然后在测试网上逐一验证。Jelly-Jelly 攻击事件（Hyperliquid 金库被利用）是重要的外部教训——Extended 之所以选择确定性清算，正是因为看到了"先接管再处理"模式的漏洞。
+</div>
+</section>
+
+<section>
+<h2>跨资产抵押：不需要现货市场的设计</h2>
+
+<p>Extended 的下一步是支持跨资产抵押——用户可以用 BTC、ETH 等非稳定币资产作为抵押品交易 USDC 结算的永续合约。这是中心化交易所的标准功能，但在去中心化世界面临一个核心挑战：Extended 没有现货市场来卖出被清算用户的非稳定币资产。</p>
+
+<p>Ruslan 的解决方案是一个三层架构：</p>
+
+<p><strong>第一层——RFQ 做市商系统（正常场景）</strong>：50 多个已整合的市场做市商持续流式报价。当用户以 BTC 作抵押被清算时，系统自动选择最佳报价将 BTC 卖给做市商换取 USDC。做市商的保证金几乎不受影响，因为 BTC 本身也贡献保证金，做市商可以随后对冲或再平衡。</p>
+
+<p><strong>第二层——金库兜底</strong>：如果没有做市商愿意接盘，金库在风险限额内接管 BTC → 立即在永续市场上做空 BTC 对冲 → 然后降价逐步出售给做市商。</p>
+
+<p><strong>第三层——现货 ADL</strong>：金库限额也触及后，系统找出前 10% 的 USDC 大户，将 BTC 强制分配给他们，他们赚取 haircut 利润但承受 BTC 现货风险。</p>
+</section>
+
+<section>
+<h2>资产感知的利率机制</h2>
+
+<p>传统 DeFi 借贷协议中，所有资产作为抵押品时的 USDC 借款利率是相同的——一个简单的线性函数，仅取决于总可用 USDC 与已借出 USDC 的比例。这在理论上简洁，但在实践中有风险：系统可能对单一资产积聚过大的风险敞口。</p>
+
+<p>Extended 的创新是让利率<strong>依赖两个输入</strong>：整体 USDC 利用率（TVL vs 已借出）和特定资产的抵押集中度。这意味着存 BTC 和存 ETH 的用户可能支付不同的借款利率——如果系统已经借出了太多以 BTC 为抵押的 USDC，BTC 对应的借款利率就会上升，抑制进一步集中。</p>
+
+<p>金库是所有借贷利息的最终受益者，这形成了一个健康循环：利率吸引存款 → TVL 增长 → 借贷能力增加 → 交易者可以开更大的仓位 → 更多交易活动 → 更多利息和费用 → 更高收益 → 吸引更多存款。</p>
+</section>
+
+<section>
+<h2>三个不可谈判的设计原则</h2>
+
+<p>在对话中，Ruslan 总结了他认为自托管交易所必须遵守的三项基本原则：</p>
+
+<blockquote>
+  "when you are building a self-custodial exchange, you need to make sure that at least you respect three things. One is that you don't control the settlement layer. Second is that you have on-chain validations of the trading logic, which don't allow you to settle the transactions which are fraudulent or incorrect. And the third one is that you don't control the prices at which liquidations are handled."
+  <span class="label">— Ruslan Fakhrutdinov</span>
+</blockquote>
+
+<p>这三个原则环环相扣。不控制结算层意味着你无法单方面回滚交易——用户的资金不是你的。链上交易验证确保交易所不能暗箱操作——每一笔交易的逻辑都必须经过链上验证才能结算。不控制清算价格确保即使交易所想，也不能以不公平价格清算用户——价格来自独立预言机，不受交易所影响。</p>
+
+<p>这些原则不仅定义了 Extended 的架构，也定义了什么是真正去中心化的交易所。</p>
+</section>
+
+<section>
+<h2>零和博弈的数学保证</h2>
+
+<p>在讨论复杂性之后，Ruslan 回到了一个基础性的数学洞察：</p>
+
+<blockquote>
+  "perps are zero-sum game, so positive PNL of a trader is always equal to the negative PNL of a trader...you can always bring the system back to health."
+  <span class="label">— Ruslan Fakhrutdinov</span>
+</blockquote>
+
+<p>永续合约是对称的零和博弈——每 1 美元的多头盈利必然对应 1 美元的空头亏损。这个事实意味着：只要系统的净值大于负债，总是可以通过 Force Close 或 ADL 将多空双方强制撮合来恢复偿付能力。</p>
+
+<div class="gloss">
+这不是乐观主义，是数学必然。Extended 的整个 XVS 抵押品设计之所以在理论上可持续，正是建立在这个基础之上。唯一不能违反的规则是"资产 > 负债"——这就是为什么金库的风险限额是不可谈判的，因为一旦资产小于负债，零和博弈的数学保证就不再有效。
+</div>
+
+<p>Ruslan 相信金库份额代币化最终将成为行业标准——"we'll see more and more perp DEXs offering similar functionality"。Lider 最近已经宣布了类似的计划，证明这个趋势已经开始。Extended 选择了以更保守的风险限额来换取更大的产品创新，这个选择最终是否能被市场广泛接受，将决定它能否在日益拥挤的 Perp DEX 市场中脱颖而出。</p>
+</section>
+
+<section class="quotes-section">
+<h2>核心金句</h2>
+
+<div class="quote-item">
+  "if you do control the settlement layer, or even if you have an impact on it, basically you are not so different from a centralized exchange."
+  <span class="ctx">— 结算层独立性的核心论证</span>
+</div>
+
+<div class="quote-item">
+  "At extended, essentially, the vault is the cornerstone of the entire system."
+  <span class="ctx">— 金库的战略定位</span>
+</div>
+
+<div class="quote-item">
+  "mark price is the price that we don't control."
+  <span class="ctx">— Force Close 必须用做市价的根本原因</span>
+</div>
+
+<div class="quote-item">
+  "perps are zero-sum game, so positive PNL of a trader is always equal to the negative PNL of a trader...you can always bring the system back to health."
+  <span class="ctx">— 系统偿付能力的数学基础</span>
+</div>
+
+<div class="quote-item">
+  "I would say probably ninety nine point ninety nine of the cases, the risk limits of the vault would be sufficient to protect the traders."
+  <span class="ctx">— 对风险限额设计的置信度评估</span>
+</div>
+
+<div class="quote-item">
+  "we introduced a new type of operation which we call force close."
+  <span class="ctx">— Extended 独有的核心机制创新</span>
+</div>
+</section>
+
+<footer>
+  <p>
+    本期节目：<a href="http://www.flirtingwithmodels.com/">Flirting with Models S7E27</a> · 2026 年 2 月<br>
+    由 <a href="../../">PodDeck</a> 生成结构化内容
+  </p>
+</footer>
+
+</article>
+</body>
+</html>

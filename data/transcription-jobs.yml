@@ -411,7 +411,105 @@ jobs:
     audio_url: https://pscrb.fm/rss/p/media.transistor.fm/7bea4e45/0aa48fa3.mp3
     task_id: 5bb6590d-d49f-4605-8c77-85dc131ef562
     submission_mode: url
-    status: running
+    status: succeeded
     retries: 0
     submitted_at: 2026-05-22T19:42:26.283Z
-    updated_at: 2026-05-22T19:44:08.183Z
+    updated_at: 2026-05-23T19:06:30.637Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260523/03%3A48/5bb6590d-d49f-4605-8c77-85dc131ef562.json?Expires=1779565722&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=96wzFmi2ePkQuZFzlmYFxHnnncc%3D&response-content-disposition=attachment%3Bfilename%3D5bb6590d-d49f-4605-8c77-85dc131ef562.json
+    completed_at: 2026-05-23T19:06:30.637Z
+  - key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3:attempt:2026-05-23T19:06:34.178Z:chunk:0
+    parent_key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    attempt_key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3:attempt:2026-05-23T19:06:34.178Z
+    id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
+    source: unchained
+    title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
+      Onchain"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    task_id: d9e7f6b5-fdc6-4c5b-ac1c-bb3a3e1c2e05
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-23T19:06:34.178Z
+    updated_at: 2026-05-23T19:07:27.307Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260524/03%3A07/d9e7f6b5-fdc6-4c5b-ac1c-bb3a3e1c2e05.json?Expires=1779649641&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=p3J85%2BM1IdfvShuTn9%2FN%2B%2FNsX3A%3D&response-content-disposition=attachment%3Bfilename%3Dd9e7f6b5-fdc6-4c5b-ac1c-bb3a3e1c2e05.json
+    completed_at: 2026-05-23T19:07:27.307Z
+  - key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3:attempt:2026-05-23T19:06:34.178Z:chunk:1
+    parent_key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    attempt_key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3:attempt:2026-05-23T19:06:34.178Z
+    id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
+    source: unchained
+    title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
+      Onchain"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    task_id: 2642643f-29be-4c80-8ba6-3440eacfd4bb
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-23T19:06:34.178Z
+    updated_at: 2026-05-23T19:07:29.104Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260524/03%3A07/2642643f-29be-4c80-8ba6-3440eacfd4bb.json?Expires=1779649640&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=hU1RFTo5bmFQ8SYewx376HZRUEQ%3D&response-content-disposition=attachment%3Bfilename%3D2642643f-29be-4c80-8ba6-3440eacfd4bb.json
+    completed_at: 2026-05-23T19:07:29.104Z
+  - key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3:attempt:2026-05-23T19:06:34.178Z:chunk:2
+    parent_key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    attempt_key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3:attempt:2026-05-23T19:06:34.178Z
+    id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
+    source: unchained
+    title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
+      Onchain"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    task_id: 02cf0e45-3076-447f-b16c-30cefa7596a4
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-23T19:06:34.178Z
+    updated_at: 2026-05-23T19:07:29.675Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260524/03%3A07/02cf0e45-3076-447f-b16c-30cefa7596a4.json?Expires=1779649641&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=GsT%2FxOAlhXT2Dcf9DMriQsEOPVo%3D&response-content-disposition=attachment%3Bfilename%3D02cf0e45-3076-447f-b16c-30cefa7596a4.json
+    completed_at: 2026-05-23T19:07:29.675Z
+  - key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3:attempt:2026-05-23T19:06:34.178Z:chunk:3
+    parent_key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    attempt_key: unchained:9e3682c2-4fd0-11f1-b62a-cbbb414ef53f:20260516:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3:attempt:2026-05-23T19:06:34.178Z
+    id: 9e3682c2-4fd0-11f1-b62a-cbbb414ef53f
+    source: unchained
+    title: "Bits + Bips: The Interview — The $16 Trillion Repo Market Is TradFi’s Central Nervous System. Its Finally Coming
+      Onchain"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6804666650.mp3
+    task_id: 76a06abb-1bff-473d-bf18-641f402911a1
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-23T19:06:34.178Z
+    updated_at: 2026-05-23T19:07:30.252Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260524/03%3A06/76a06abb-1bff-473d-bf18-641f402911a1.json?Expires=1779649617&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=cYE8TUehBDxIirF%2FCSr43YowWBE%3D&response-content-disposition=attachment%3Bfilename%3D76a06abb-1bff-473d-bf18-641f402911a1.json
+    completed_at: 2026-05-23T19:07:30.252Z
+  - key: flirting-with-models:eeafe07f-2310-4a58-bde5-6896ef157610:20260112:https://episodes.captivate.fm/episode/eeafe07f-2310-4a58-bde5-6896ef157610.mp3
+    attempt_key: 2026-05-23T19:06:56.587Z
+    id: eeafe07f-2310-4a58-bde5-6896ef157610
+    source: flirting-with-models
+    title: Moritz Heiden & Moritz Seibert – Trend-Following Spreads (S7E25)
+    audio_url: https://episodes.captivate.fm/episode/eeafe07f-2310-4a58-bde5-6896ef157610.mp3
+    task_id: dc149ee6-1c00-46bf-9f8d-6ec64d0eae44
+    submission_mode: url
+    status: running
+    retries: 0
+    submitted_at: 2026-05-23T19:06:56.587Z
+    updated_at: 2026-05-23T19:07:30.780Z
+  - key: acquired:14ef00c6-30ba-44cc-9869-33d3d92828a3:20260102:https://pscrb.fm/rss/p/media.transistor.fm/fcf31c71/acf1c31d.mp3
+    attempt_key: 2026-05-23T19:06:56.903Z
+    id: 14ef00c6-30ba-44cc-9869-33d3d92828a3
+    source: acquired
+    title: Costco
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/fcf31c71/acf1c31d.mp3
+    task_id: 22f80baf-560e-4b91-b605-85232d8efdea
+    submission_mode: url
+    status: running
+    retries: 0
+    submitted_at: 2026-05-23T19:06:56.903Z
+    updated_at: 2026-05-23T19:07:31.061Z

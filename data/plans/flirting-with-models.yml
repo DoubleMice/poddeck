@@ -1,12 +1,12 @@
 source: flirting-with-models
-refreshed_at: 2026-05-23T06:17:31.567Z
+refreshed_at: 2026-05-23T19:06:29.656Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
-done: 0
-pending: 2
-needs_transcript: 1
-transcribing: 0
+done: 1
+pending: 1
+needs_transcript: 0
+transcribing: 1
 transcribe_failed: 0
 downloaded: 0
 episodes:
@@ -19,7 +19,7 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94.mp3
     image: https://artwork.captivate.fm/72251723-32e9-4542-9449-f75117687aa9/S3-FlirtingWithModels-With-Ruslan-Fakhrutdinov.jpg
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: 20512e21-5ab7-4c1b-b67f-cd3fd6d90bf7
@@ -49,5 +49,8 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/eeafe07f-2310-4a58-bde5-6896ef157610.mp3
     image: https://artwork.captivate.fm/a3bec9ad-710f-489d-b563-e85bd52b85ad/with-Moritz-Heiden-and-Moritz-Seibert-copy.jpg
-    status: needs_transcript
+    status: transcribing
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-23T19:06:56.587Z
+    transcript_job_id: dc149ee6-1c00-46bf-9f8d-6ec64d0eae44

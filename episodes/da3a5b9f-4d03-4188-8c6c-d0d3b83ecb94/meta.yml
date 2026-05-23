@@ -1,0 +1,26 @@
+id: da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94
+source: flirting-with-models
+title: "Ruslan Fakhrutdinov – Extended Exchange and Vault Tokenization (S7E27)"
+guest: "Ruslan Fakhrutdinov"
+guest_role: "Extended 创始人 & CEO"
+published: 2026-02
+duration: 58m
+url: http://www.flirtingwithmodels.com/
+thumbnail: https://artwork.captivate.fm/72251723-32e9-4542-9449-f75117687aa9/S3-FlirtingWithModels-With-Ruslan-Fakhrutdinov.jpg
+status: generated
+tags:
+  - deep-dive
+  - technical
+  - founder
+  - interview
+summary: |
+  Extended 创始人 Ruslan Fakhrutdinov 深度解析去中心化永续合约交易所的核心架构设计。从结算层独立性的原则选择，到金库作为系统基石的三重角色，再到金库份额代币化（XVS）的创新与风险管理——这是一场关于 DeFi 交易基础设施如何在极端市场条件下保持偿付能力的实战课。
+core_ideas:
+  - 'Ruslan: 控制结算层 = 控制用户资金 = 与中心化交易所无异——Extended 选择运行在公共 Starknet 上实现真正的结算独立性'
+  - 金库是 Extended 的基石，承担流动性提供（最后报价方）、保险基金（处理所有清算）、USDC 主要借贷方（未来）三重功能
+  - Extended 的创新：金库在接管清算头寸前先对冲，确定性预知盈亏——超出风险限额则拒绝接管，用户进入 ADL
+  - 三层风险限额（单笔/单市场单日/金库总日亏损 10% TVL）构成系统熔断机制，全部原子化执行
+  - XVS（金库份额代币化）允许用户将金库权益作为交易抵押品——增强资本效率，但引入 Force Close 等新机制来管控尾部风险
+  - 跨资产抵押路线图：通过 RFQ 做市商系统解决无现货市场下的非稳定币资产清算问题，金库作为兜底
+article_path: episodes/da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94/article.html
+base: /episodes/da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94/
