@@ -1,72 +1,46 @@
 source: tbpn
-refreshed_at: 2026-05-22T19:41:55.131Z
+refreshed_at: 2026-05-23T06:17:31.395Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 16
-done: 1
+total_candidates: 15
+done: 0
 pending: 13
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: cad187f2-4d89-4af2-9bfa-f63ff125b433
-    title: SpaceX IPO, The Erdős Problem, Spotify CEO Joins | Alex Tabarrok, Bill Clerico, Alex Norström, Jordan Schneider,
-      Christina Lee Storm, Erik Bernhardsson
-    duration: 9008
-    published: Thu, 21 May 2026 14:03:53 -0700
-    published_sort: "20260521"
-    first_seen_at: 2026-05-22T06:55:06.027Z
-    url: https://share.transistor.fm/s/c147b20d
-    audio_url: https://media.transistor.fm/c147b20d/e3a86d73.mp3
+  - id: abf0c8d0-7098-4c1c-b046-0fc1996b37d8
+    title: Starship Launch, World's Fair Retrospective, Sacks Spikes AI EO | Dan Shipper, James Rogers
+    duration: 7316
+    published: Fri, 22 May 2026 13:31:30 -0700
+    published_sort: "20260522"
+    first_seen_at: 2026-05-23T06:17:31.387Z
+    url: https://share.transistor.fm/s/03553f2d
+    audio_url: https://media.transistor.fm/03553f2d/d8e139a3.mp3
     image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/c147b20d/transcription.txt
+    transcript_url: https://share.transistor.fm/s/03553f2d/transcription.txt
     transcript_type: text/plain
-    summary: "(01:25) - SpaceX IPO\r
+    summary: "(01:01) - Sacks Spikes AI EO\r
 
-      (12:37) - Anthropic Revenue Surges\r
+      (07:56) - America's IPO Market Wakes Up\r
 
-      (17:31) - OpenAI Solves the Erdős Problem\r
+      (17:47) - Starship Launch\r
 
-      (27:53) - Alex Tabarrok, a Canadian-American economist and professor at George Mason University, co-authors the
-      Marginal Revolution blog and co-founded Marginal Revolution University. He discusses the Baumol effect, explaining
-      how sectors with stagnant productivity, like education and healthcare, experience rising costs due to increasing
-      wages in more productive industries. Tabarrok also explores the potential of AI to mitigate this effect by
-      enhancing productivity in traditionally labor-intensive sectors.\r
+      (28:28) - World's Fair Retrospective\r
 
-      (01:02:22) - Bill Clerico, founder and managing partner of Convective Capital, discusses the firm's recent $85
-      million fundraise, doubling their previous fund, to invest in disaster resilience technologies. He highlights the
-      increasing frequency and severity of disasters due to aging infrastructure and climate change, emphasizing the
-      need for private market solutions. Clerico also shares insights into the fire technology market, noting the
-      challenges and opportunities in selling to utilities, insurance companies, and government agencies, and
-      underscores the importance of technological innovation in enhancing disaster preparedness and response.\r
+      (45:46) - Dan Shipper, co-founder and CEO of Every, discusses the transformative impact of AI agents like Codex
+      and Claude Code on knowledge work, highlighting how these tools have automated tasks in coding, writing, design,
+      and customer service, leading to Every's growth from 4 to 30 employees since GPT-3. He emphasizes that while AI
+      makes expert competence more accessible, it simultaneously increases the demand for human expertise to provide
+      judgment and differentiation, as AI outputs often require human framing and evaluation to be truly valuable.
+      Shipper also notes that AI enables small, generalist teams to accomplish tasks that previously required larger,
+      specialized organizations, allowing for a more fulfilling and versatile work experience.\r
 
-      (01:15:12) - Alex Norström, Spotify's Co-Chief Executive Officer since January 2026, discusses the company's
-      recent Investor Day, highlighting significant user growth and financial achievements over the past four years. He
-      introduces four major future initiatives, including a new feature that reserves concert tickets for premium users,
-      addressing challenges like ticket scarcity and scalping. Norström also emphasizes Spotify's advancements in AI,
-      particularly in enhancing user experience and content personalization.\r
-
-      (01:36:38) - Jordan Schneider is the creator of the ChinaTalk podcast and newsletter, focusing on China,
-      technology, and U.S.-China relations. In this conversation, he discusses the recent U.S.-China summit,
-      highlighting the stalemate in relations and China's leverage over the U.S. through rare earths. He also touches on
-      the absence of key AI leaders at the summit and the implications for future technological collaboration.\r
-
-      (02:02:17) - Christina Lee Storm, Head of Studio at Secret Level and co-founder of Playbook PLBK, discusses the
-      evolving role of AI in film production, emphasizing its integration as a natural progression in storytelling
-      rather than a disruptive force. She highlights the importance of embracing technology to enhance creativity and
-      efficiency, while underscoring that compelling storytelling remains paramount. Storm also reflects on the
-      potential for AI to democratize filmmaking, enabling independent creators to produce high-quality content,
-      provided they maintain a strong focus on narrative depth.\r
-
-      (02:14:28) - Erik Bernhardsson, co-founder and CEO of Modal Labs, discusses the company's recent Series C funding
-      round, raising $355 million at a $4.65 billion post-money valuation led by General Catalyst and Redpoint Ventures.
-      He highlights the rapid growth of their Sandboxes product, which has been doubling in usage every month for the
-      past six months, enabling safe execution of language model-generated code. Bernhardsson also addresses the
-      challenges of demand planning in the AI infrastructure space, emphasizing the need to secure GPUs months in
-      advance to accommodate their 30-40% monthly growth rate.\r
-
-      (02:25:14) - 𝕏 Timeline Reactions
+      (01:09:01) - James Rogers is the founder and CEO of Apeel Sciences, a company developing plant-based coatings that
+      extend the shelf life of fresh produce and reduce food waste. He launched the company out of research funded by
+      the Bill & Melinda Gates Foundation, with a focus on improving global food distribution and sustainability through
+      materials science.
 
 
       Follow TBPN: 
@@ -85,7 +59,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
@@ -1243,79 +1217,6 @@ episodes:
       by prefabricating components in existing shipyards, thereby reducing construction costs and timelines. This
       approach leverages mature light water reactor technology and centralized manufacturing techniques from offshore
       industries to make nuclear power more economically competitive.
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: pending
-    priority: 1
-  - id: b866332e-afbb-420d-a42e-c978f393c5d8
-    title: Verizon vs Salesforce, Blue Origin's Test, Robot Marathon | Signüll, Ethan Ding, Matt McKinney, Errik Anderson,
-      Pippa Lamb & James Wise
-    duration: 6554
-    published: Mon, 20 Apr 2026 13:06:59 -0700
-    published_sort: "20260420"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/3a6c381e
-    audio_url: https://media.transistor.fm/3a6c381e/7f1cc63d.mp3
-    image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/3a6c381e/transcription.txt
-    transcript_type: text/plain
-    summary: "(00:27) - Verizon vs Salesforce\r
-
-      (25:23) - Blue Origin's Test\r
-
-      (30:03) - Robot Marathon\r
-
-      (32:59) - Signull is an anonymous technologist and entrepreneur focused on integrating agentic AI into consumer
-      software. He discusses the development of an AI-driven home screen replacement for iPhones, aiming to transform
-      static interfaces into dynamic, personalized experiences by leveraging ambient AI. He also addresses the
-      challenges of monetization, considering ad-supported models, and reflects on the complexities of maintaining
-      anonymity in the tech industry.\r
-
-      (55:03) - Ethan Ding, co-founder and CEO of TextQL, a startup specializing in AI-driven data analytics, discusses
-      the company's inception in late 2022 and its evolution in addressing enterprise data challenges. He highlights the
-      complexities large organizations face with fragmented data systems and the substantial costs associated with
-      migrating to new platforms. Ding emphasizes TextQL's mission to create solutions that seamlessly integrate with
-      existing infrastructures, enabling efficient analytics without the need for costly migrations.\r
-
-      (01:04:14) - Matt McKinney, co-founder and CEO of Loop, leverages his background in data science and engineering
-      to revolutionize supply chain operations. He discusses how Loop utilizes AI to automate back-office processes,
-      such as accounting and payment services, addressing issues like the 30% error rate in supply chain invoices. By
-      organizing and analyzing complex, unstructured data, Loop enhances efficiency for clients, including 20% of the
-      Fortune 100, enabling them to better serve their customers.\r
-
-      (01:13:01) - Errik Anderson, founder and CEO of Alloy Therapeutics, discusses the company's role in providing
-      biotech infrastructure to support drug discovery and development. He highlights the integration of AI and machine
-      learning in accelerating drug development, emphasizing the importance of combining in silico simulations with wet
-      lab experiments to validate findings. Anderson also notes the trend of big pharma acquiring innovations from
-      smaller companies to replenish their pipelines as patents expire, underscoring the industry's need for efficient
-      and collaborative drug development processes.\r
-
-      (01:29:06) - Pippa Lamb is a Partner at Sweet Capital, an early-stage venture fund established by the founders of
-      King.com (Candy Crush). In the conversation, she highlights the UK's robust AI ecosystem, emphasizing the
-      country's deep R&D capabilities and the emergence of grassroots innovations from local universities. Lamb also
-      notes the trend of European entrepreneurs relocating to London, reinforcing the city's status as a hub for
-      ambitious founders. James Wise is a partner at Balderton Capital, a leading European venture firm, where he
-      focuses on investing in early-stage technology companies across fintech, marketplaces, and software. He is known
-      for backing high-growth startups and working closely with founders on scaling products and building
-      category-defining businesses.\r
-
-      (01:41:48) - 𝕏 Timeline Reactions
 
 
       Follow TBPN: 
