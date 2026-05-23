@@ -19,6 +19,7 @@ import {
   readFileSync, writeFileSync, existsSync, mkdirSync, cpSync, readdirSync, mkdtempSync, rmSync, statSync,
 } from 'node:fs'
 import { spawn } from 'node:child_process'
+import { createHash } from 'node:crypto'
 import { tmpdir } from 'node:os'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { cleanTranscript, fetchText, preferredTranscript } from './lib/rss.ts'
@@ -246,7 +247,8 @@ function inferAudioMimeType(audioUrl: string, contentType: string | null): strin
 }
 
 function transcriptionChunkDir(parentKey: string, attemptKey: string): string {
-  return join(TRANSCRIPT_CHUNKS_DIR, Buffer.from(`${parentKey}:${attemptKey}`).toString('base64url'))
+  const digest = createHash('sha256').update(`${parentKey}:${attemptKey}`).digest('hex').slice(0, 32)
+  return join(TRANSCRIPT_CHUNKS_DIR, digest)
 }
 
 function transcriptionChunkPath(parentKey: string, attemptKey: string, index: number): string {
