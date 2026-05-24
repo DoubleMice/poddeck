@@ -1,12 +1,12 @@
 source: tbpn
-refreshed_at: 2026-05-24T06:42:40.977Z
+refreshed_at: 2026-05-24T19:14:18.621Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 14
-done: 0
-pending: 12
-needs_transcript: 1
-transcribing: 0
+done: 1
+pending: 11
+needs_transcript: 0
+transcribing: 1
 transcribe_failed: 0
 downloaded: 0
 episodes:
@@ -177,7 +177,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: ce9a48cf-6df1-4dd0-97e8-e26a299d47d6
     title: Intel & Apple, The American Economic Rollercoaster | Brian Chesky, Josh Reeves, Jonathan Neman, Zal Bilimoria
@@ -1014,8 +1014,11 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: needs_transcript
+    status: transcribing
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-24T19:14:39.243Z
+    transcript_job_id: 356ba8e4-346a-4b87-971e-0fdee5e247aa
   - id: 4e26997f-bf94-4e2e-9038-5fd1f427b9fd
     title: SpaceX/Cursor Deal, Images 2.0 Reactions, Fake Bear Attack | Anil Chakravarthy, Naveen Gavini, Avlok Kohli &
       Ankur Nagpal, Joel Edwards, Renen Hallak, Darian Shirazi

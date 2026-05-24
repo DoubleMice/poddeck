@@ -1,13 +1,13 @@
 source: flirting-with-models
-refreshed_at: 2026-05-24T06:42:41.150Z
+refreshed_at: 2026-05-24T19:14:18.790Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 2
 done: 0
 pending: 1
 needs_transcript: 0
-transcribing: 1
-transcribe_failed: 0
+transcribing: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: e8459525-96f7-4ef3-adea-b9266f987e60
@@ -34,8 +34,10 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/eeafe07f-2310-4a58-bde5-6896ef157610.mp3
     image: https://artwork.captivate.fm/a3bec9ad-710f-489d-b563-e85bd52b85ad/with-Moritz-Heiden-and-Moritz-Seibert-copy.jpg
-    status: transcribing
+    status: transcribe_failed
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: dc149ee6-1c00-46bf-9f8d-6ec64d0eae44
     transcript_submitted_at: 2026-05-23T19:06:56.587Z
+    transcript_completed_at: 2026-05-24T19:14:19.805Z
+    transcript_error: DashScope task ended with UNKNOWN

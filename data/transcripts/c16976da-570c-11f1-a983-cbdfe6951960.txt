@@ -1,0 +1,288 @@
+Hi everyone, welcome to Unchained, your no hype resource for all things crypto.
+I'm your host Laura Shin.
+Thanks for joining this live stream.
+Today's guest is Dio Casares, founder and CEO of Polygon.
+Welcome Dio.
+Thanks for having me Laura.
+This week, well really it's actually the last couple weeks, we've seen a lot of activity in the pre-IPO markets, especially on chain.
+So this week there was a huge debut on SpaceX, sorry, on Hyperliquid, of pre-IPO perps for SpaceX.
+And around the same time we saw Polymarket announced a new category of event contracts that allow users to bet on things like unicorn valuations, IPO dates, and secondary market pricing.
+And that deal was with Nasdaq Private Market.
+And last week obviously there was the huge brouhaha about Anthropic and OpenAI voiding a bunch of secondary shares.
+Um, so let's.
+Let's maybe just talk about, you know, all this activity.
+I do know that, like, just for Hyperliquid alone, some of this pre-IPO activity in February only totaled like three million, and as of a couple days ago, it's already at forty-four million.
+That's according to Allium Research.
+So talk a little bit about why you think we're seeing this activity bubble up right now.
+Yeah, I mean, I think a big thing is very strategic timing.
+A good way for a crypto audience to understand some of the pre IPO perps is almost like pre markets in crypto, in the sense that if a lot of people remember, Hyperliquid went pretty aggressive on a lot of altcoin pre markets.
+And so they started to get a lot of volume on those markets.
+They started to be where most of the volume for these pre-markets were happening.
+And then when those tokens went live, normally the pricing was pretty on par with what the price ended up opening up at.
+And they ended up holding on to, by they I mean Hyperliquid, ended up holding on to most of the volume once these became live normal perps with you know a normal oracle.
+And so, what we've seen with Cerebris and what we've seen now with SpaceX is these pre-IPO perps launching just a little bit before the IPO is planned.
+Like I think SpaceX is the seventeenth of next month, so there is like three, four weeks left.
+And because they're launching right before, they can get a lot more volume, and a lot more people are willing to participate because you can kind of think of them as soon to settle futures rather than, you know, what Vencelus was doing, where it was more long-dated and unclear when those perpetual futures would actually settle.
+And so, you know, in my initial question, I kind of referenced a bunch of different types of, you know, this activity.
+So, as I mentioned, it was the SpaceX pre-IPO perps, this Polymarket news, the Anthropic and OpenAI that was happening both off-chain and on-chain.
+And these are all, you know, kind of like.
+You could say either different areas of the market or different phases of that pre-IPO stage.
+So how would you kind of characterize like what each of these news events is about in terms of like, you know, this whole space?
+I mean, SpaceX, a lot of the.
+A lot of the reason why OpenAI and Anthropic came out is kind of and said, you know, we're not going to respect these transactions, is two-pronged.
+One, they want to create something almost genuine fear for people to not want to invest into secondaries, because all a secondary is is a transaction where someone's buying stock where the company or employees are not making money.
+And then all of these.
+All of these AI companies, for lack of a better term, are cash incinerators.
+They take in a lot of cash and they're investing it and they're burning billions and billions of dollars.
+So anything that gets away in the way of such a cash incinerator, especially right before they're all about to enter pretty competitive IPOs, I think it's SpaceX first and then Anthropic and then OpenAI.
+They're all trying to get as much capital as possible, and for them, they see it a very important step to do that, being restricting secondaries before their upcoming IPOs to try and be able to make all that supply go into their primary rounds.
+And the other thing is a liability thing, which is normally when a company.
+Takes a transaction as being credible or approves a transaction, they're also responsible for enforcing that transaction.
+So basically, on the ledger of the company shares, making sure that whoever bought the shares actually gets the shares on IPO or before.
+And you can imagine you have hundreds, maybe thousands, of these SPVs and these companies that probably are going to have lawsuits or have very convoluted structures.
+And there is going to be a bunch of waterfall kind of issues as these SPVs start to close for these IPOs.
+That these companies just don't want to be anywhere near for liability and also for just headache reasons.
+You don't want to have to be dealing with, you know, a thousand different cases.
+So they're just going out and very loudly saying, hey, this is not our problem.
+If you're not in an approved block, we can't really help you.
+And saying that very loudly now before there's any issues on the IPO.
+So it's both them trying to maximize how much cash they can get and trying to minimize their liability.
+If that makes sense.
+All right, so in a moment we're going to talk a little bit more about these types of problems that exist in this market and how they might be solved by going on chain.
+But first, we're going to take a quick word from the sponsors who make this show possible.
+A 3% top off on my entire portfolio?
+Uh, yes.
+Who is saying no to that?
+That's free money.
+I don't care what's in your portfolio.
+That's a yes.
+If you've been looking for an excuse to consolidate your assets, this is it.
+Until May 31st, Coinbase is giving a straight 3% Bitcoin boost on any crypto or cash deposits all month.
+Coinbase One is the ultimate membership to make the most of your money, which as you know is how I optimize my finances.
+Zero trading fees on thousands of crypto assets, 3.
+5% APY on USDC, boosted staking and lending rewards, and up to 4% Bitcoin back with the Coinbase One card.
+Plus you can still claim 20% off the first year of Coinbase One annual plans.
+Fifty dollar Bitcoin bonus when you spend one hundred dollars on a new Coinbase One card in the first thirty days through May thirty first.
+Plus your share of five Bitcoin if you outpredict pro basketball coach Lethal Shooter and a chance at a private shooting session with him.
+It's the perfect time to centralize your assets and maximize your earnings.
+Get your three percent boost at coinbase dot com slash unchained.
+Visit coinbase dot com slash unchained.
+That's coinbase dot com slash unchained to claim your Bitcoin bonus.
+No purchase necessary.
+See rules and other ways to enter.
+Terms apply to other offers.
+Futures swaps via Coinbase Financial Markets.
+Risk of one hundred percent loss.
+Payouts event based.
+Not investment advice.
+Not available in Nevada.
+Coinbase One card is offered through Coinbase Inc and Cardless Inc.
+Cards issued by First Electronic Bank.
+Bitcoin back rates are based on cardholder's assets on Coinbase.
+Back to my conversation with Theo.
+So you kind of went into this a little bit before the break, but just line out kind of line up what all the different problems are between for you know both for buyers and sellers that they're trying to solve by going on chain.
+Sure, so I mean, going on chain, you can kind of separate it into two markets.
+You have the derivatives market, and then you have the spot market.
+The derivatives market is great for a bunch of reasons.
+It's primarily, as is the nature of most derivatives, a hedge.
+So a lot of the people that I know.
+That are using this market are using it as a way to hedge positions that they have in spot or like that they've invested in directly.
+I think that the derivatives market in crypto makes a lot more sense than the spot market, and primarily that's because of US regulations.
+In the US, if all of these private stocks, you're supposed to have a holding period of six months.
+There's, you know, there's arguably ways around that, but it's roughly six months.
+If you don't have a system to force that holding period to be six months, you can break the regulation like exemption that those stocks have, and you can be.
+Considered in breach and there is fines and there is a bunch of other stuff, so as soon as you tokenize something, as soon as you tokenize an interest or anything that represents ownership in one of these companies, it's quite easy for a US regulator to say that that's in breach of that regulation, and so I think that's going to be a massive pushback that a lot of the tokenized offerings are going to have, and also just that a lot of other.
+Back to the conversation about you know it's actually not necessarily in these companies' interests for there to be a lot of volume on the spot market because then that can compete with their primary rounds.
+They don't want this price discovery to be happening in this way.
+So they could be more adversely selected when these companies are looking to raise capital, they could be like, hey, we know you're going to tokenize this, therefore we're not going to work with you.
+Versus on the derivative side, it's a lot easier because you can just have, you know, a family office or someone that invested individually can hedge their exposure or if they want to, I guess, increase their exposure.
+And that's something where you don't have this key man risk.
+Whereas these tokenized offerings, you know, if they mess up the SPV or if there's any kind of legal issue or if.
+Or if they set up the fund improperly, it could have catastrophic downstream effects for everyone.
+Whereas the derivatives, there's some risks, like you could get ADL'd or there could be a price wick, but there's more of a kind of, there's not a key man risk of, you know, someone messed up a contract and now no one can get their money, if that makes sense.
+So I'm much more bullish on the Perp side.
+Yeah, it's like much more just a market risk, which I think people are willing to accept.
+Whereas in the other kind of situation, it's something where it's like somebody screwed up and there's going to be hell to pay, which is yeah, not acceptable to a lot of people.
+Yeah.
+So I saw some criticism that the reason that there are these problems also in this in this kind of pre-IPO area is that these.
+These unicorns have been, you know, first of all, just staying private longer, as everybody has talked about for a long time.
+But in a way, they're also almost like pretending to be private because they are letting a lot of sort of, you know, like gray market activity kind of flourish around them.
+And so you end up in these situations where a lot more people have some form of ownership than, you know, than if.
+It was just like a lot stricter, and so it's almost like they're practically public in a sense.
+Do you agree with that take, or what are your thoughts on that?
+I would agree in the sense that there is record participation in these companies in terms of the capital that they're raising.
+If you were to separate the sheer amount of people that have.
+That have invested in these companies before the IPO, it's thousands and thousands and thousands and thousands of people, which is not, which is very atypical for private firms.
+What I would say is that they, to my knowledge at least, have not really promoted secondary markets in the sense of people being able to buy and sell once they've invested.
+They have tried to.
+Be very explicit to people that hey, if you're investing, you should be holding until the IPO or a similar liquidity event.
+So I don't think it's entirely fair to say that they're just public market companies masquerading as private companies.
+It is still much more difficult to buy these stocks, and there's a lot of benefits that they get from going public, mainly you know a decrease in fraud.
+But it is true that they've had.
+Just absolute record numbers of investors and capital going into these companies for such an early stage.
+I think that's very true.
+And so, you know, you mentioned earlier that you felt like PERPs are really kind of superior in a certain way, but there's a reason that people are willing to kind of engage in, you know, or at least attempt to invest before, you know, it reaches that stage.
+So talk a little bit about that period, like what all the different options are and kind of like what the various risks are that come with the different types of either vehicles or like types of exposure that you can get.
+Sure.
+I mean, the obvious reason you would want to get involved earlier is because the price is probably better.
+If we were having this conversation about Anthropic like two years ago, the valuation would have been like 80 billion, which given their current round is a little bit over 10x, not including obviously dilution.
+So there's obviously a reason to want to invest and get a better multiple.
+The best way that you can invest in most of these companies that are earlier stage is finding someone that has access to their primary round and is doing an SPV or a co-investment into these companies.
+And co-investment is different from an SPV in the sense that, like some very large funds, you do co-investment.
+So, they'll invest, say, as an example, a billion dollars, and then they'll let there are from their fund side, as an example, this will be like a large VC, and then they'll let their LPs invest, say, one hundred million dollars directly into the company.
+
+If they want to, that's probably the cleanest way possible to invest in a lot of these companies.
+If you can't do that, it's probably best to find someone that has an SPV or someone that has direct access.
+These are early stage companies.
+As soon as you get to second layer and third layer, you're just kind of playing a potentially dangerous game of legal hot potato with these shares that I think most people would want to avoid.
+Yeah, talk about that.
+Like, what are the problems that can arise in those situations?
+There's a bunch of very in the weeds issues.
+For example, Anthropic and OpenAI right now are very loudly saying that they do not consider these transactions to be.
+To be legitimate, so say you have a waterfall and you have whoever has the shares but is committed to give them up to an SPV, or the SPV itself that holds the shares and then it owes the second layer and then owes the third layer.
+If you have to, if that person has to send those shares to a bank or a brokerage account, in general, especially at the start when an IPO happens, the bank or the brokerage compliance department will ask, hey, you know, what kind of transaction is this?
+Is it a sale?
+Is it a gift?
+Is it a transfer?
+If it's a sale, please show me the docs.
+And there's a real risk that a lot of these banks and brokers could just be like, hey, we don't know if this transaction is valid, and therefore we can't allow you to sell these shares.
+Most of the time you'll eventually because.
+Because DTCC has a type of share called restricted shares versus non-restricted shares, a lot of the larger brokerages and banks will still ask those questions regardless.
+But some of the medium-sized firms are like, okay, these aren't restricted shares.
+I don't really have a risk.
+I'll let you do it.
+But if any of these SPVs have, you know, their main bank account set up with, say, J.
+P.
+Morgan and J.
+Morgan's like, hey, we can't sell these shares for you, suddenly they're in a race against time to set up a new account, which isn't super easy, and then transfer it from their account to the.
+To this other brokerage account, which looks terrible now from an AML perspective, because why did you have it in that account and now you're sending it to us?
+Clearly there was a problem there.
+And so that's a procedural problem that you can have.
+You could also just have someone be like, hey, you know, I agreed to sell you this and give it to you, but actually these are void and I'm just going to refund you.
+Which probably will obviously lead to litigation in most of those cases, and I am of the opinion that they'd probably lose, but you still have to sue the person.
+So there is a lot of these different risks that could happen based on how these vehicles are structured.
+Yeah, and even there is a lot.
+Yeah, even in that last example, if they offer to refund you, that's assuming they still have the money.
+Yeah, there's also obviously like the tail risk of like complete fraud, like someone just showed you absolutely fake documents and you know went on a bender with the money, and there's not really much you can do there.
+Yeah, and just also explain about, you know, Robinhood when they tokenize the shares.
+So, like, so that was for OpenAI and SpaceX, and obviously we saw that like right after OpenAI kind of disavowed that.
+But I'm sure the setup is probably okay, but like just explain sort of where that fits.
+Yeah.
+My understanding of those offerings are they are trust-style offerings, which falls into a kind of legal gray area in terms of if they break securities laws and if companies like OpenAI can actually stop companies like Robinhood offering them.
+Whatever the case, those in general haven't gotten a crazy amount of interest, mainly because they're also not liquid, in the sense that these trust companies basically you can put a bunch of shares into the trust, and now you can buy and sell these tokens, but you can't redeem for a certain amount of shares until there's like a major liquidity event.
+And so, for a smaller investor, that might be a better way of investing, but for a larger investor, you know, you have to really hope that the market value, you know, the market actually believes that these tokens are valuable.
+Which, as we saw after a lot of these announcements, a lot of the market suddenly thought that these tokens weren't as valuable as they had a few hours before.
+So it's a pretty big risk to take.
+And then you mentioned briefly the FTX bankruptcy, which obviously owned some shares of Anthropic.
+Where does that type of situation fall?
+I imagine that's sort of an outlier and like really uncommon, but I'd be interested to hear, yeah, just what sort of place that holds in this universe.
+Yeah, I mean, bankruptcy court is the most like, for lack of a better term, mob rule, in terms of it's not really bankruptcy law as much as what the court and a lot of other people involved in the process consider to be fair.
+So that block of Anthropic shares, as well as a lot of other shares assets that FTX had, were generally sold without any encumbrance.
+So.
+So that means, you know, the right to first right of first refusal on the shares was completely waived by Anthropic, transfer restrictions were waived, all of these other things were waived.
+There's an argument to be made that obviously that doesn't.
+That doesn't extend past that initial transaction, and it's an argument to be made, but it would probably be quite rough because that would create a precedent potentially of bankruptcy estates not getting treated as having full value when they're selling assets in the future, which would obviously be bad for any kind of future bankruptcies.
+And so it's probably if you have a block in the Anthropic related FTX claims, basically the stock that FTX bought in Anthropic, you're probably the safest out of most people outside of direct investors that are approved by the company, just because there's kind of this different legal status hanging over it.
+So tell us more about this world in terms of the different players.
+I understand some of them are not necessarily crypto related, but then there are others that are on chain.
+So sort of give us the spectrum, and I'm also sure some of them are shadier than others.
+Yeah, I mean, Ceter is kind of one of the quieter, larger secondary brokers.
+They do everything from fund positions.
+So say you're invested in like a Paradigm fund and you want to sell your position before the fund returns their capital, you can sell that.
+To direct allocations into these companies, they've managed, according to their website, four hundred billion these transactions, which is just insane.
+So they're clearly one of the larger ones.
+Forge and Hive are some of the most visible in that a lot of people know about them.
+They're very, they let you set up an account quite easily.
+They have a bunch of data, and they do a decent amount of volume, but they're actually not super massive.
+There is a bunch of then like smaller or medium-sized firms.
+This is on the spot side.
+On the perp side, you have trade XYZ, obviously, which is hit three.
+You have ventuals, which is kind of the OG protocol that is also hit three.
+You have.
+You have new ones, like a buddy of mine's doing this one called Entropy, that's also going to be hip three.
+You kind of have a general concentration around Hyperliquid for these markets.
+On the tokenized side, I think there is a couple different players.
+A lot of them are on the Solana ecosystem more so than the ETH ecosystem.
+And that model, I don't know the names of the companies off the top of my head, but that model for them tends to be, you know, a twenty percent one time fee, which is quite high, and then a twenty percent performance fee on these tokens.
+Versus obviously there's trading fees, which is how the derivatives markets make their money.
+So it's kind of interesting different business models.
+The spot ones kind of just flip their shares to retail versus the derivatives companies very much just get a fee for facilitating these kinds of transactions.
+Yeah, it's probably, I guess, targeting a different demographic.
+And out of curiosity, why do you think that activity is happening on Solana versus Ethereum?
+I think Solana is a lot more retail, and for whatever reason, they're willing to experiment a lot more.
+There is also a pretty decent crypto and AI overlap.
+I mean, to an extent, even I am an example of that.
+And so I think there is a lot of people that were willing to take a lot of risk and had a lot of capital and were used to doing it on Solana, that.
+Were willing to invest into these kinds of projects also on Solana instead of having to, you know, set up a bank account, do all of these other steps, or like meet these people in kind of smoky cigar rooms to have to get direct allocations.
+So it was kind of people going to where there was capital.
+Huh, okay.
+So tell us a little bit about your business because obviously you're very involved here.
+So what does Padacon do in the secondaries?
+Yeah, so we're kind of a private neobank.
+We primarily help people get private, get into private deals.
+So we've done Anthropic before, we've done xAI, we've done Cohere, we did Circle before the IPO, we've done Kraken.
+We've done fluid stock.
+We've done a bunch of different companies.
+We generally we're an exempt advisor, so we set these up as funds.
+We help with the filings and everything, but we don't have to be a registered investment advisor yet because our AUM has not yet hit directly one hundred fifty million.
+Which means it's a little bit less of a pain to work with us compared to some people that are RIAS.
+We're expanding that business now also into allowing people to invest in commodity deals.
+So say if you have, a directional bet on.
+Argentine copper mining, as an example, you should be able to invest in a project that's legit that's kind of been vetted, which is a big thing about our platform.
+We take care to try and vet almost all of these deals that we do because it's kind of our reputation on the line if these don't go well.
+And we've done that with tricky deals like Circle, for example, was a very tricky deal because we did it right before the IPO, and that was a hard thing to pull off.
+And so we're trying to do that also with more tangible assets, and then we're also trying to get more into offering bank accounts.
+Crypto custody and these other services for people, but our business is basically we can help people get into some of these deals, and then these deals are structured as a fund, and we take fund fees, which vary from deal to deal, depending on the size and depending on how difficult it is to get into these companies.
+Okay, so your business actually doesn't have an on-chain component at the moment.
+No, I mean we were looking at the.
+Perp the second, the kind of private market perp side to see if we should go to some of our clients and say, hey, if you are thinking about hedging, you know, pre IPO, which is a little bit of a gray area, you should consider doing it via perps versus doing it via like an IBKR setup.
+And we've also been, to be quite frank, getting questions about it from clients of like, hey, should I hedge my exposure via PERPs or via like an IBKR kind of short.
+That's the extent to which we see this.
+We're maybe going to help some of the entropy guys with their markets.
+They're going to try and offer some pre-markets a little bit earlier than what TradeXYZ is doing, is my understanding.
+But it's not a core part of our business for sure.
+Because we don't want to antagonize some of the companies that we're on the cap table of, and I think.
+Launching tokenized versions of their stock or pre IPO markets, especially very early pre IPO markets, is a very easy way to get them quite annoyed at you and to get on.
+Like people forget this, but Anthropic had a list of people not to touch basically, and that's a great way for us to get on equivalent lists.
+And so we're not going to, we're not going to, yeah.
+Yeah, I mean, it just goes back to that control issue that we talked about.
+It's sort of like if you want to stay in their good graces, then you have to kind of play by their rules.
+And but yeah, it's not as favorable, I guess, for the buyer who yeah just might prefer something more liquid.
+All right, so as we mentioned at the beginning of the show, this area is only just getting started in terms of competition.
+It's very clear.
+Like some of those numbers that I gave, you know, they're small.
+So I'm just curious, you know, you probably know about new things that are in the works.
+So how do you expect that this space of like private market activity, especially for the parts of it that go on chain, like how do you expect that to evolve?
+Um, I mean, we are, we're kind of in a perfect moment.
+
+Time, in the sense that there's a lot of positive tailwinds for hyper liquid in general, and for these pre-IPO markets, like the fact that so many world and market-changing actions happen on weekends right now, has just been a massive boom for a lot of these RWA perps that can trade 24/7.
+And the same thing, these pre-IPO perps, when they convert.
+Become just normal RWA perps, and so the same way that Hyperliquid, kind of had, pre-market perps as loss leaders, i.
+e.,
+a kind of product they offered where they were willing to lose money on it as long as it meant that long term they'd make money by controlling that market.
+I think you could see that a lot more.
+I am not sure, if the pre IPO market will be we have.
+A historic amount of IPOs happening this year, right?
+We have SpaceX, Anthropic, and OpenAI all trying to target trillion-plus valuations.
+That's never happened before.
+Not to mention there's a bunch of other random companies that I could also mention.
+So there's just a really good time right now.
+For pre-IPO perps to start to pick up a lot more traction, and I think as the SpaceX, I mean Cerebras was a good example, but if the SpaceX perp settles as well, Anthropic and OpenAI perp volume will probably only increase.
+And you'll see a fight from a lot of the kind of exchange providers to try and cover these pre-IPO markets in order to then dominate the volume once they convert to normal markets, which I think will be very interesting.
+All right, well, Dio, it's been so fun chatting with you about this space and learning about it.
+And yeah, I feel like it's going to get crazier.
+I feel like it's like maybe going to end up being like the Dats of last year or something.
+I don't know.
+Yeah, I mean, there's probably going to be some crazy market movements for sure.
+Yeah.
+Yeah, yeah, we'll have to see.
+Especially, I don't know, just with the way the market is, like just generally the stock market now, I'm a little bit like, I don't know, there's something about it that makes me nervous.
+But anyway, all right, well, thank you so much for sharing all your insight and information.
+And yeah, thanks to everyone for joining this live stream.
+We'll catch you next week.
+Thanks for having me.
+Nothing you hear on Unchained is investment advice.
+This show is for informational and entertainment purposes only, and my guest and I may hold assets discussed on the show.
+For more disclosures, visit unchainedcrypto.
+Com.
+嗯。

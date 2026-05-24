@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Pre-IPO Perps Like SpaceX on Hyperliquid Are Seeing an Upswing — Unchained 对谈 Dio Casares</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.75;
+  font-size: 17px;
+  color: #1a1a1a;
+  background: #f8f9fa;
+  padding: 0 16px;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 0 64px;
+}
+header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e9ecef;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+.header-meta {
+  font-size: 15px;
+  color: #6c757d;
+}
+.header-meta span { margin: 0 8px; }
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 0 16px;
+  color: #1a1a1a;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #1971c2;
+}
+h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+  color: #2c3e50;
+}
+p { margin-bottom: 16px; }
+.overview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 24px 0 40px;
+}
+@media (max-width: 600px) { .overview { grid-template-columns: 1fr; } }
+.card {
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.card strong { display: block; font-size: 15px; margin-bottom: 4px; }
+.card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+.card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+.card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+.card-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+.card-yellow { background: #fff9db; border-left: 4px solid #f59f00; }
+.card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+blockquote {
+  margin: 24px 0;
+  padding: 16px 20px;
+  border-left: 4px solid #1971c2;
+  background: #f1f3f5;
+  font-style: italic;
+  border-radius: 0 6px 6px 0;
+}
+blockquote .attr {
+  display: block;
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 8px;
+  font-style: normal;
+}
+.quotes-section { margin: 48px 0; }
+.quotes-section .quote-card {
+  padding: 14px 16px;
+  border-left: 4px solid;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.quote-card .attr { font-size: 12px; color: #6c757d; margin-top: 6px; }
+.q-blue { background: #e7f5ff; border-color: #1971c2; }
+.q-red { background: #fff5f5; border-color: #e03131; }
+.q-green { background: #ebfbee; border-color: #2f9e44; }
+.q-purple { background: #f8f0fc; border-color: #862e9c; }
+.q-yellow { background: #fff9db; border-color: #f59f00; }
+.q-orange { background: #fff4e6; border-color: #e8590c; }
+footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #e9ecef;
+  font-size: 13px;
+  color: #868e96;
+  text-align: center;
+}
+footer a { color: #1971c2; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.note {
+  font-size: 14px;
+  color: #868e96;
+  font-style: italic;
+  margin: 8px 0 16px;
+}
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+@media (max-width: 500px) { .data-grid { grid-template-columns: 1fr; } }
+.stat-card {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid;
+}
+.stat-num { font-size: 32px; font-weight: 800; }
+.stat-label { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+.stat-blue { background: #e7f5ff; border-color: #74c0fc; }
+.stat-blue .stat-num { color: #1971c2; }
+.stat-red { background: #fff5f5; border-color: #ffa8a8; }
+.stat-red .stat-num { color: #e03131; }
+.stat-green { background: #ebfbee; border-color: #8ce99a; }
+.stat-green .stat-num { color: #2f9e44; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+<h1>Why Pre-IPO Perps Like SpaceX on Hyperliquid Are Seeing an Upswing</h1>
+<div class="header-meta">
+  Unchained · Laura Shin 主持<span>|</span>嘉宾: Dio Casares<span>|</span>2026 年 5 月<span>|</span>34 分钟
+</div>
+</header>
+
+<section>
+<h2>为什么这期值得关注？</h2>
+<p>2026 年春天，链上私人市场经历了一场静默爆发。Hyperliquid 上的 pre-IPO 永续合约交易量在不到三个月内从 $3M 飙升至 $44M。与此同时，Anthropic 和 OpenAI 公开宣布不认可二级市场交易，Polymarket 与 Nasdaq Private Market 合作推出了独角兽估值博彩，Robinhood 短暂推出了通证化的 OpenAI 和 SpaceX 股票——然后迅速撤回。</p>
+<p>这一连串事件背后是一个正在成型的新市场：链上 pre-IPO 衍生品。它融合了加密货币的 24/7 交易能力、私人公司长期停留私人阶段的结构性趋势、以及 AI 公司烧钱竞赛催生的独特供需失衡。Unchained 主持人 Laura Shin 与 Polygon 创始人 Dio Casares 的对谈，是这个新兴领域迄今为止最清晰的路线图。</p>
+
+<div class="overview">
+<div class="card card-blue">
+<strong>Hyperliquid 交易量井喷</strong>
+Pre-IPO perps 月度交易量从 $3M 飙升至 $44M。Cerebras 打响头炮，SpaceX 紧随其后。
+</div>
+<div class="card card-red">
+<strong>AI 公司为何阻挠二级市场？</strong>
+"现金焚化炉" AI 公司一面制造恐惧阻止二级交易，一面最大程度地将资金导入一级市场——双重策略。
+</div>
+<div class="card card-green">
+<strong>衍生品 vs 通证化现货</strong>
+美国监管让通证化现货几乎不可行；永续合约通过"无关键人风险"和 24/7 交易成为更优选择。
+</div>
+<div class="card card-purple">
+<strong>SPV 的法律烫手山芋</strong>
+多层 SPV 结构中的瀑布问题、银行合规关卡，以及 Anthropic 的"禁止触碰名单"——二级市场的真实风险。
+</div>
+<div class="card card-yellow">
+<strong>历史级 IPO 浪潮</strong>
+SpaceX、Anthropic、OpenAI 同时瞄准万亿美元估值——Perp 交易所正用"亏损引流品"策略争夺这些市场。
+</div>
+<div class="card card-orange">
+<strong>Solana 为何领跑通证化？</strong>
+更高的散户浓度 + Crypto × AI 交集人群 + 无需开设银行账户——资本流向阻力最小的链。
+</div>
+</div>
+</section>
+
+<section>
+<h2>Hyperliquid Pre-IPO 交易量爆发</h2>
+
+<div class="data-grid">
+<div class="stat-card stat-red">
+<div class="stat-label">2026 年 2 月</div>
+<div class="stat-num">$3M</div>
+<div class="stat-label">月度 Pre-IPO 交易量</div>
+</div>
+<div class="stat-card stat-green">
+<div class="stat-label">2026 年 5 月</div>
+<div class="stat-num">$44M</div>
+<div class="stat-label">月度 Pre-IPO 交易量</div>
+</div>
+<div class="stat-card stat-blue">
+<div class="stat-label">增幅</div>
+<div class="stat-num">≈15×</div>
+<div class="stat-label">不到 3 个月</div>
+</div>
+</div>
+
+<p class="note">数据来源: Allium Research，仅 Hyperliquid 一个平台。</p>
+
+<p>这个数字的绝对规模仍然很小——但增长速度暴露了需求的强度。多个结构性因素交汇：Cerebras pre-IPO perp 的成功结算验证了模型可行性；SpaceX 紧随其后在 Hyperliquid 上线，IPO 定在 6 月 17 日，仅 3-4 周后的结算窗口创造出急切的时间压力。Dio 解释道，这本质上是加密世界熟悉的预市场逻辑在私人股权领域的平移。</p>
+</section>
+
+<section>
+<h2>策略性时机：IPO 前的黄金窗口</h2>
+
+<p>Hyperliquid 选择在 IPO 前 3-4 周而不是更早上线 pre-IPO perps，是有意的。Dio 将这与加密市场中的 altcoin 预市场做了直接类比：在正式代币上线前开设预市场，用不长的结算窗口降低参与者的不确定性，吸引流动性。"A good way for a crypto audience to understand some of the pre-IPO perps is almost like pre-markets in crypto," Dio 说。</p>
+
+<p>更早推出的产品（如 Vencelus 的较长期永续合约）因为"unclear when those perpetual futures would actually settle"而难以获得交易量。确定性本身成为了产品特征——越接近 IPO，perps 越像"即将到期的期货"而非"无限期的赌注"。</p>
+
+<p>Cerebras 的成功案例建立了可信度：价格与正式开盘价"pretty on par"，且 Hyperliquid 在转为正式交易后保留了大部分交易量。如果 SpaceX 的 perp 也顺利结算，Dio 预计 Anthropic 和 OpenAI 的 perp 交易量将进一步提升——一个自我强化的循环正在形成。</p>
+</section>
+
+<section>
+<h2>企业为何扼杀二级交易？</h2>
+
+<p>Anthropic 和 OpenAI 公开拒绝承认二级交易的合法性，不是一时情绪化的反击，而是冷酷计算的结果。Dio 将其描述为一个"two-pronged"策略。</p>
+
+<p>第一，控制资金流向。AI 公司是 Dio 所说的"cash incinerators"——每年烧掉数十亿美元。在竞争激烈的 IPO 前夕，每笔流向二级市场的资金都是从一级融资中流失的资本。如果一家基金把钱投入了二级市场的 Anthropic 股份，就不能再用同一笔钱参与下一轮官方融资。对于 SpaceX 先 IPO、Anthropic 和 OpenAI 紧随其后的时间线来说，三家公司都在竞争同一批机构资金。</p>
+
+<p>第二，责任隔离。成百上千个 SPV 有着"convoluted structures"，IPO 时会出现瀑布式分账问题。公司不想为任何非官方交易的执行负责——"this is not our problem"是预设的法律防火墙。通过公开制造 Dio 所说的"genuine fear"——让潜在二级买家望而却步——同时在公司被实际追责之前就把"概不负责"的立场喊得足够响。</p>
+
+<blockquote>
+"All of these AI companies, for lack of a better term, are cash incinerators. They take in a lot of cash and they're investing it and they're burning billions and billions of dollars."
+<span class="attr">— Dio Casares 描述 Anthropic、OpenAI 等 AI 公司的烧钱本质</span>
+</blockquote>
+</section>
+
+<section>
+<h2>衍生品 vs 通证化现货：监管鸿沟</h2>
+
+<p>Dio 在对话中做出了一个明确的判断："I'm much more bullish on the Perp side."原因在美国监管架构中找到了精确的锚点。</p>
+
+<p>美国私人公司股票受 Reg D 豁免的约束，需要至少 6 个月的持有期。一旦将股权通证化，就触及了所有权的定义——美国监管机构几乎必然认定其违反规定。"As soon as you tokenize something, as soon as you tokenize an interest or anything that represents ownership in one of these companies, it's quite easy for a US regulator to say that that's in breach of that regulation."而衍生品不触及股权所有权本身，监管对永续合约的管辖权完全不同。</p>
+
+<p>更重要的是风险结构的根本差异。SPV 和通证化方案存在 Dio 所称的"key man risk"——一个人的失误可能产生灾难性下游影响。"Someone messed up a contract and now no one can get their money." Perps 世界中没有这种风险：你可能被 ADL（自动减仓）、被价格插针击中、被清算——但这些都是参与者熟悉且接受的市场风险。Laura 精辟地总结道："It's much more just a market risk, which I think people are willing to accept."</p>
+
+<p>此外，公司方也有强烈的反向激励：他们不希望二级市场产生价格发现——"They don't want this price discovery to be happening in this way."如果现货市场活跃，公司在下一轮融资中的定价权力会被削弱，甚至可能面临"你们要是通证化，我们就不投了"的最后通牒。</p>
+</section>
+
+<section>
+<h2>法律烫手山芋：SPV 的瀑布式风险</h2>
+
+<p>当二级市场上的交易从第一层（直接持有者 → SPV）层层传导至第二层、第三层时，一个复杂的法律结构开始成型。Dio 用"legal hot potato"来形容这种情况：每一层都在传递一个可能在 IPO 时刻爆炸的法律包裹。</p>
+
+<blockquote>
+"As soon as you get to second layer and third layer, you're just kind of playing a potentially dangerous game of legal hot potato with these shares that I think most people would want to avoid."
+<span class="attr">— Dio Casares 论多层 SPV 投资</span>
+</blockquote>
+
+<p>IPO 那天，真正的考验才开始。银行和券商的合规部门会逐一审查每一笔之前发生的交易。大银行（Dio 举了 J.P. Morgan 的例子）会要求出示完整的交易文件——如果是销售，请证明；如果是赠予，请证明；如果是转让，请证明。如果文件不完整，银行可以拒绝执行——"We don't know if this transaction is valid, and therefore we can't allow you to sell these shares."</p>
+
+<p>Dio 描述了一个更糟的"race against time"场景：SPV 的主要银行账户设在 J.P. Morgan，JPM 拒绝执行交易 → 需要紧急开设新账户 → 转移股票 → 触发 AML 红色警报。突然之间，你不仅要担心股票能不能卖出，还要担心监管审查。"It looks terrible now from an AML perspective, because why did you have it in that account and now you're sending it to us?"</p>
+
+<p>最坏的结局不复杂但也最难防御：纯欺诈——"someone just showed you absolutely fake documents and you know went on a bender with the money."或者对方声称交易无效然后退款——前提是钱还在。</p>
+</section>
+
+<section>
+<h2>FTX 破产：Anthropic 股份的最安全形态？</h2>
+
+<p>在所有获取 Anthropic 股份前 IPO 敞口的方式中，Dio 指出了一个被市场低估的选项：FTX 破产相关的 Anthropic 股份。</p>
+
+<blockquote>
+"Bankruptcy court is the most like, for lack of a better term, mob rule — it's not really bankruptcy law as much as what the court and a lot of other people involved in the process consider to be fair."
+<span class="attr">— Dio Casares 描述破产法庭</span>
+</blockquote>
+
+<p>FTX 持有的 Anthropic 股份在破产出售时获得了全部豁免——优先购买权豁免、转让限制豁免、所有其他限制豁免。Anthropic 根本无法阻止这些股份的流向。更深层的原因：如果法院未来开始限制破产财产的资产价值，将设定一个危险先例——所有未来的破产拍卖都会受影响。法院没有动力这样做。</p>
+
+<p>Dio 的判断是直接的："If you have a block in the Anthropic related FTX claims, basically the stock that FTX bought in Anthropic, you're probably the safest out of most people outside of direct investors that are approved by the company."这是二级市场中唯一的特殊法律地位——破产财产的身份提供了任何 SPV 或通证化方案都无法复制的保护。</p>
+</section>
+
+<section>
+<h2>市场全景图：三大赛道、三类玩家</h2>
+
+<p>Dio 将 pre-IPO 私人市场活动分为三个相互独立的赛道，每个都有着截然不同的玩家和商业模式。</p>
+
+<p><strong>现货经纪（Spot）</strong>方面，Cetara 是"quieter, larger"的巨头——据其官网，已管理 4000 亿美元的交易量，规模"just insane"。Forge 和 Hiive 是最知名的平台，开户方便，有大量数据，但实际交易量并不巨大。此外还有大量中小型 broker。这些现货玩家的商业模式很简单：把私人公司股份翻卖给散户。</p>
+
+<p><strong>衍生品/Perps</strong>方面，Hyperliquid 上集中了三个主要协议：TradeXYZ 和 Vencelus（都已获得 HIP3），以及即将达到 HIP3 的新入场者 Entropy。这些协议的商业模式截然不同——只收交易手续费，不碰现货股权。这不仅是商业选择，也是法律上更安全的架构。</p>
+
+<p><strong>通证化（Tokenized）</strong>方面，活动集中在 Solana 上，多家小型项目采用"20% 一次性费用 + 20% 绩效费"的定价模型——Dio 认为"quite high"。此外还有 Robinhood 推出的信托式产品。这些产品的问题在于缺乏流动性——投资者在重大流动性事件之前无法赎回，而 AI 公司宣布不承认这些交易后，"a lot of the market suddenly thought that these tokens weren't as valuable as they had a few hours before."</p>
+</section>
+
+<section>
+<h2>为什么 Solana 主导通证化 Pre-IPO？</h2>
+
+<p>虽然 Hyperliquid（基于 Ethereum 生态）在衍生品领域占据主导，但通证化活动却集中在 Solana 上。Dio 的解释：Solana 的受众更偏散户，"for whatever reason, they're willing to experiment a lot more."加上 Solana 上存在的强大的 Crypto × AI 交集受众——Dio 本人表示自己也是一个例子——有大量愿意承担高风险且持有大量资本的加密原生投资者。</p>
+
+<p>最根本的解释可能是摩擦成本：在 Solana 上投资这些通证化产品不需要开设银行账户、不需要与合规部门打交道、不需要"meet these people in kind of smoky cigar rooms to have to get direct allocations."——资本直接流向使用阻力最小的地方。"It was kind of people going to where there was capital," Dio 总结道。</p>
+</section>
+
+<section>
+<h2>Padacon：私人新银行在夹缝中成长</h2>
+
+<p>Dio 的公司 Padacon 在这个生态系统中扮演着一个独特的角色——"a private neobank"帮助富裕客户进入私人市场交易。他们的核心产品线包括 Anthropic、xAI、Cohere、Circle（IPO 前夕）、Kraken 和 Fluid Stock。作为"exempt advisor"（AUM 未达到 $150M，暂不需要 RIA 注册），Padacon 面临的合规负担比大型机构更轻。</p>
+
+<p>每笔交易都经过审核——"our reputation on the line if these don't go well."他们做过被 Dio 形容为"very tricky"的 Circle 交易（在 IPO 前夜完成）。按交易规模和难度差异化收取基金费用，还在扩展大宗商品投资和银行账户业务。</p>
+
+<p>但值得注意的是，Padacon 目前没有任何链上组件。Dio 正在评估是否建议客户使用 perps 来对冲 IPO 前持仓，但这不是业务核心。他坦率地解释了这个选择——"Launching tokenized versions of their stock or pre-IPO markets, especially very early pre-IPO markets, is a very easy way to get them quite annoyed at you."对于一个以进入 cap table 为核心价值的公司，失去被投公司的信任是不可接受的风险。</p>
+</section>
+
+<section>
+<h2>Anthropic 的"禁止触碰名单"</h2>
+
+<p>Dio 在对话中透露了一个关键细节——Anthropic 在内部维护了一份"people not to touch"名单。如果某个机构或个人帮助组织了 Anthropic 不认可的二级交易，就会被纳入这份名单。这不是法律威胁，而是商业关系上的排除——未来 Anthropic 的任何官方融资轮都不会通过你。</p>
+
+<blockquote>
+"People forget this, but Anthropic had a list of people not to touch basically, and that's a great way for us to get on equivalent lists."
+<span class="attr">— Dio Casares 透露</span>
+</blockquote>
+
+<p>对于像 Padacon 这样的 access 平台，这份名单比任何法律威胁都更有效——失去 cap table 上的位置，就失去了核心价值。这也解释了为什么即使有链上技术的便利，传统玩家仍然小心翼翼地遵循公司的规则。</p>
+</section>
+
+<section>
+<h2>历史级 IPO 浪潮：万亿美元估值齐聚</h2>
+
+<p>Dio 用"historic"形容当前的 IPO 格局。SpaceX、Anthropic 和 OpenAI 三家同时瞄准万亿美元估值——"That's never happened before."这一事实不仅对传统资本市场是历史性的，对链上 pre-IPO 市场更是一个"perfect moment."</p>
+
+<p>值得关注的是时间顺序：Dio 提到 IPO 顺序很可能是 SpaceX 最先（"I think it's SpaceX first and then Anthropic and then OpenAI"）。这意味着每家在 IPO 时都将面对越来越拥挤的资本市场——而每家公司都在这个"pretty competitive"的环境中争夺同一批机构资金。这进一步强化了公司阻挠二级市场交易的意图：他们输不起。</p>
+
+<p>Hyperliquid 的策略——将 pre-IPO perps 定位为"loss leaders"——在这波浪潮中找到了完美的用例。如果你能先占住 SpaceX 的 pre-IPO 市场，当它转为正式 RWA perp 时，交易量有很大概率留在你的平台上。Dio 预计将看到一场更大规模的竞争："you'll see a fight from a lot of the kind of exchange providers to try and cover these pre-IPO markets."</p>
+</section>
+
+<section>
+<h2>24/7 交易：链上的结构性优势</h2>
+
+<p>Dio 指出一个经常被低估的优势：加密货币市场从不关门。在一个"so many world and market-changing actions happen on weekends"的时代，24/7 交易能力不仅仅是便利——它是一个结构性套利。</p>
+
+<p>重大事件经常在周五收盘后或周末发生。传统市场参与者只能等到周一才能做出反应。而持有 Hyperliquid 上 pre-IPO perps 的人可以立即在周末交易——这种能力随着更多地缘政治和市场新闻在非交易时段爆发而变得越来越有价值。</p>
+
+<p>而且这个优势不会在 IPO 后消失——这些 perps 将转变为正式的 RWA perps，24/7 交易能力延续存在。与只能在固定交易时段操作的美国股票市场相比，这是一个长期的结构性优势。</p>
+</section>
+
+<section>
+<h2>市场猜想：会变得多疯狂？</h2>
+
+<p>对话快结束时，Laura 提出一个直觉性的预判："I feel like it's going to get crazier. I feel like it's maybe going to end up being like the DAOs of last year or something."——暗示 pre-IPO perps 市场可能会复制之前 crypto 领域的热潮模式。</p>
+
+<p>Dio 没有完全否定这个类比，但强调了一个关键差异：这次的催化剂不是 Token 发行的营销叙事，而是即将发生的实质性流动性事件。SpaceX、Anthropic 和 OpenAI 的 IPO 时间是真实的——它们将产生实际的结算需求、实际的资金流、以及实际的监管压力。这让 pre-IPO perps 更像一个"实物交割即将到来"的期货市场，而非纯粹基于叙事波动的投机游乐场。</p>
+
+<p>但他也承认，这轮浪潮还在早期。数字本身——$44M——虽然增长迅速，但相对于即将到来的数万亿美元 IPO 市场而言仍然微不足道。关键是基础设施正在验证：Cerebras 成功结算验证了模型，SpaceX 将是更大的测试，而 Anthropic 和 OpenAI 才是真正的重量级。如果这三个都顺利通过，perps 市场将不再是"有趣的小实验"——它将成为一个系统重要性基础设施。</p>
+</section>
+
+<section class="quotes-section">
+<h2>核心金句</h2>
+
+<div class="quote-card q-red">
+"All of these AI companies, for lack of a better term, are cash incinerators. They take in a lot of cash and they're investing it and they're burning billions and billions of dollars."
+<div class="attr">— Dio 解释 AI 公司为何阻挠二级市场</div>
+</div>
+
+<div class="quote-card q-blue">
+"As soon as you get to second layer and third layer, you're just kind of playing a potentially dangerous game of legal hot potato with these shares that I think most people would want to avoid."
+<div class="attr">— 多层 SPV 投资的核心风险</div>
+</div>
+
+<div class="quote-card q-green">
+"Bankruptcy court is the most like, for lack of a better term, mob rule — it's not really bankruptcy law as much as what the court and a lot of other people involved in the process consider to be fair."
+<div class="attr">— FTX 破产资产的特殊法律待遇</div>
+</div>
+
+<div class="quote-card q-purple">
+"A historic amount of IPOs happening this year, right? We have SpaceX, Anthropic, and OpenAI all trying to target trillion-plus valuations. That's never happened before."
+<div class="attr">— 史无前例的 IPO 浪潮</div>
+</div>
+
+<div class="quote-card q-yellow">
+"They don't want this price discovery to be happening in this way."
+<div class="attr">— 企业不希望二级市场影响一级融资定价</div>
+</div>
+
+<div class="quote-card q-orange">
+"People forget this, but Anthropic had a list of people not to touch basically."
+<div class="attr">— Dio 透露 Anthropic 的内部"禁止触碰"名单</div>
+</div>
+</section>
+
+<footer>
+<p>完整对谈: <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3" target="_blank" rel="noopener">Unchained Podcast</a></p>
+<p>本文为 PodDeck 自动生成，仅供信息参考。部分描述标注"作者概括"处为该文作者的归纳而非受访者原话。</p>
+</footer>
+
+</article>
+</body>
+</html>

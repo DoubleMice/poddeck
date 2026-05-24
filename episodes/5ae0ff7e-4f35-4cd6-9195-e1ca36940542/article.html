@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swatch AP Collab, Cerebras IPO, Trump Visits China — TBPN 2026/05/11</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Source Han Serif SC", "Noto Serif CJK SC", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1e1e1e;
+  background: #fafaf8;
+  padding: 0 16px;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 0 80px;
+}
+header {
+  text-align: center;
+  margin-bottom: 56px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e5e5e0;
+}
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+header .meta {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+header .meta span { white-space: nowrap; }
+.overview {
+  margin-bottom: 56px;
+}
+.overview h2, section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e5e0;
+  letter-spacing: -0.005em;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+}
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+.card.blue  { background: #eff6ff; border-color: #3b82f6; }
+.card.green { background: #f0fdf4; border-color: #22c55e; }
+.card.yellow{ background: #fefce8; border-color: #eab308; }
+.card.red   { background: #fef2f2; border-color: #ef4444; }
+.card.purple{ background: #faf5ff; border-color: #a855f7; }
+.card.orange{ background: #fff7ed; border-color: #f97316; }
+
+section {
+  margin-bottom: 48px;
+}
+section p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+blockquote {
+  margin: 20px 0;
+  padding: 16px 20px;
+  border-left: 4px solid #3b82f6;
+  background: #eff6ff;
+  font-style: italic;
+  border-radius: 0 6px 6px 0;
+  color: #334155;
+}
+blockquote .attr {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-style: normal;
+  color: #94a3b8;
+}
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.num {
+  text-align: center;
+  padding: 20px 12px;
+  border-radius: 8px;
+  border: 2px solid;
+  font-size: 14px;
+}
+.num .big {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+.num .sub  { font-size: 12px; color: #64748b; }
+.num.blue  { border-color: #93c5fd; background: #eff6ff; }
+.num.blue .big  { color: #2563eb; }
+.num.green { border-color: #86efac; background: #f0fdf4; }
+.num.green .big { color: #16a34a; }
+.num.yellow{ border-color: #fde047; background: #fefce8; }
+.num.yellow .big{ color: #ca8a04; }
+.num.red   { border-color: #fca5a5; background: #fef2f2; }
+.num.red .big   { color: #dc2626; }
+
+.quotes-block {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #e5e5e0;
+}
+.quotes-block h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.quotes-block .q {
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  border-left: 4px solid;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.quotes-block .q .ctx {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-style: normal;
+  color: #94a3b8;
+}
+.q.blue  { background: #eff6ff; border-color: #3b82f6; }
+.q.green { background: #f0fdf4; border-color: #22c55e; }
+.q.yellow{ background: #fefce8; border-color: #eab308; }
+.q.red   { background: #fef2f2; border-color: #ef4444; }
+.q.purple{ background: #faf5ff; border-color: #a855f7; }
+.q.orange{ background: #fff7ed; border-color: #f97316; }
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e5e0;
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+}
+footer a { color: #3b82f6; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+.gloss {
+  font-size: 14px;
+  color: #64748b;
+  padding: 10px 16px;
+  background: #f8fafc;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+@media (max-width: 500px) {
+  article { padding: 24px 0 48px; }
+  header h1 { font-size: 22px; }
+  body { font-size: 15px; }
+  section h2 { font-size: 19px; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Swatch × AP Collab, Cerebras IPO, Trump Visits China</h1>
+  <div class="meta">
+    <span>TBPN · 2026 年 5 月 11 日</span> ·
+    <span>8 位嘉宾 · 2h39m</span><br>
+    <span style="font-size:13px;color:#94a3b8;">Ferdinand Dabitz · Spencer Rascoff · Eric Olson · Matt Lohstroh · Jay Azhang · Amir Sadeghian · Alexander Taubman · Quaid Walker</span>
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+    <div class="card blue"><strong>Swatch × AP</strong>奢侈品民主化还是品牌自毁？AP 把 Royal Oak 授权给 Swatch 做平价版，背后是商标战、假货和入门真空三重压力。</div>
+    <div class="card green"><strong>Cerebras IPO</strong>整片晶圆做一颗芯片，4 万亿晶体管，IPO 超额认购 20 倍。Benchmark 2016 年下注，十年后可能成为 VC 史上最佳单笔回报。</div>
+    <div class="card yellow"><strong>特朗普访华</strong>伊朗战争阴影下的美中峰会，Tim Cook、Elon Musk 等随行。和平协议、贸易、AI 芯片出口限制——所有议程都绕不开中东。</div>
+    <div class="card red"><strong>Giga Energy</strong>$3.4M 融资撬动 $350M 收入。从油田比特币矿机到 AI 数据中心，七年自举，"在工厂里建造，不在工地"。</div>
+    <div class="card purple"><strong>Long Lake × Amex GBT</strong>28 个月内 30 笔收购，最新 $63 亿买下 111 年历史的美国运通商旅。用 AI 让服务业拥有软件业的利润率。</div>
+    <div class="card orange"><strong>AI 新平台涌现</strong>Astrocade：5M MAU 的 AI 游戏平台；NF1："市场的 Cursor"——交易 Agent 平台；Consensus：$30M 融资的学术研究 AI 助手。</div>
+  </div>
+</div>
+
+<section>
+  <h2>Swatch × AP：腕表界年度最大胆的联名</h2>
+
+  <p>2026 年 5 月，Audemars Piguet 宣布与 Swatch 合作推出一款被社交媒体戏称为 "Royal Pop" 的平价腕表。预告视频只有 CGI 齿轮动画——真表要到 5 月 16 日才正式亮相，但这并不妨碍全球腕表爱好者和二级市场黄牛提前进入狂热状态。</p>
+
+  <p>这不是 Swatch 第一次玩高端联名。此前，Swatch 集团已与自家旗下的 Omega（MoonSwatch，$285）和 Blancpain（搭载 System 51 机芯，$400+）成功试水。但 AP 是第一个<strong>不属于 Swatch 集团</strong>却与其合作的高端制表品牌——这让利润分成结构变得格外耐人寻味。</p>
+
+  <p>根据 Bezel 联合创始人 Quaid Walker 的分析，目前已知的信息包括：腕表将使用 Royal Oak 字体，搭载 Swatch 自研的 System 51 自动机械机芯（90 小时动力储存），预计零售价在 $400 区间。System 51 的一个关键特性是它理论上"完全可丢弃"——采用 3D 打印制造，坏了直接换整颗机芯而非维修。</p>
+
+  <blockquote>
+    "it comes down to how much it devalues the ownership of the $30,000 plus Royal Oak — if you see a bunch of people wearing a $400 example of the watch that you spent $30,000 for, does it in some way detract from the ownership that you have?"
+    <span class="attr">— Quaid Walker (Bezel)，概括此次联名的核心张力</span>
+  </blockquote>
+
+  <p>AP 做出这一决定的背景有三重压力。第一，<strong>商标保卫战失利</strong>：AP 在 2024 年日本和 2025 年美国先后输掉了商标诉讼——法院裁定八角形表圈和表盘设计"不够独特"，无法获得法律独占保护。与其继续打官司，不如主动授权，"把假货市场合法化"。第二，<strong>入门产品真空</strong>：Royal Oak 零售起步价约 $30,000，二级市场更高；而 AP 的另一条产品线 Code 11.59 虽然在 $20,000 价位，却在藏家中口碑冷淡。AP 缺少一条让年轻消费者"走进门"的路径。第三，<strong>注意力经济</strong>：社交媒体上 "AP just killed its brand" 冲上热搜，但正如节目主持人所说，"the brand is attention"——争议本身就是曝光。</p>
+
+  <p>二级市场已经蠢蠢欲动。有人预测转售价可达零售价的 5-12 倍，并给出了详细的操作攻略：避开 Soho、时代广场、伦敦、新加坡——要去 Troy（密歇根）、King of Prussia（宾州）、Canoga Park、甚至是 Honolulu。一人限购一只，你的"人肉排队"团队就是你的产能上限。</p>
+</section>
+
+<section>
+  <h2>Cerebras IPO：整片晶圆的赌注终于开花</h2>
+
+  <p>在 AI 推理需求爆发的 2026 年 5 月，Cerebras 选择了一个不能再好的时机上市。根据 Reuters 报道，Cerebras 上调了 IPO 规模——从原计划的 2,800 万股上调至 3,000 万股，定价区间从 $115-125 上调至 $151-160。如果按区间上限定价，募资规模将达到 $48 亿。更惊人的是需求端：<strong>IPO 吸引了超过 20 倍的超额认购</strong>，意味着约 $1,000 亿的资金在追逐这 $50 亿的份额。</p>
+
+  <div class="numbers">
+    <div class="num blue"><span class="big">$48亿</span>募资规模<span class="sub">上调后</span></div>
+    <div class="num green"><span class="big">20×</span>超额认购<span class="sub">约 $1000 亿需求</span></div>
+    <div class="num yellow"><span class="big">4万亿</span>晶体管<span class="sub">单片晶圆</span></div>
+    <div class="num red"><span class="big">90万</span>AI 计算核心<span class="sub">petabits/秒片内带宽</span></div>
+  </div>
+
+  <p>Cerebras 的技术路线与传统半导体制造截然不同。传统做法是：硅晶圆上制造电路 → 切割成数百颗小芯片 → 分别封装 → 互联成系统。芯片间的通信带宽是核心瓶颈。Cerebras 的做法简单而激进：<strong>整片 300mm 晶圆就是一颗芯片</strong>，不切割。结果是 4 万亿晶体管、90 万 AI 计算核心，以及片内互联达到 petabits/秒级别的带宽——彻底消除了芯片间通信延迟。</p>
+
+  <blockquote>
+    "if you were looking for the ideal time to IPO being a chip company in May 26, it's hard to beat."
+    <span class="attr">— Morning（Stratechery），评论 Cerebras IPO 时机</span>
+  </blockquote>
+
+  <p>这个故事对 Benchmark 来说尤其甜蜜。Benchmark 在 2016 年领投了 Cerebras 的 A/B 轮，目前仍持有超过 20% 的股份。其间 Cerebras 经历了长达 5-6 年的"静默期"——芯片从设计、流片到量产需要极其漫长的时间。但正如主持人所说，这是一夜成名的十年磨一剑："has a shot to deliver the number one fund in VC history."</p>
+
+  <p>关于 Cerebras 的另一个关键转变是客户集中度。早期 Cerebras 几乎只有一个大客户（疑为 OpenAI），但现在 Amazon 也已加入——AWS 对芯片选择一向灵活。对于普通用户，可以通过下载 Codex Desktop 并选择 GPT 5.3 Spark 来亲身体验 Cerebras 的推理速度。正如主持人所描述的："它会瞬间返回一整页的回复——很震撼的体验。"</p>
+</section>
+
+<section>
+  <h2>Giga Energy：用 $3.4M 融资撬动 $350M 收入</h2>
+
+  <p>Matt Lohstroh 的故事是这期节目中最令人印象深刻的创业叙事之一。他在德州 A&M 读大学时，因为对比特币的热情和合伙人家族在油气行业的背景，开始在油田用原本会被燃烧浪费的伴生天然气（flared gas）挖比特币。最初只是一个 50kW 的模块化集装箱，每月产出约 4 个比特币。</p>
+
+  <p>当比特币暴跌后，Matt 发现卖"矿机盒子"比挖矿更赚钱——于是 Giga Energy 转型为设备制造商。在随后四年里，他们售出了约 1.2GW 的模块化数据中心。2024 年，他们推出了变压器和开关柜产品线，并发现电力设备是"可替代的"（fungible）——教堂、监狱、医院都需要，不仅仅是比特币矿工。随后，接到 AI 数据中心的大额订单让团队意识到：客户在用他们卖的设备赚大钱，"为什么我们不能也做？"</p>
+
+  <blockquote>
+    "So our mantra is building in the factory, not in the field."
+    <span class="attr">— Matt Lohstroh (Giga Energy)</span>
+  </blockquote>
+
+  <p>Giga 的速度秘诀在于模块化预制。大部分调试和集成工作在受控工厂环境完成，现场人工需求减少了 95%。从空地到通电上架：比特币矿场仅需 60 天，AI 数据中心 9 个月。整个公司目前约 200 人，Matt 称其为"bottom-up approach"（自下而上的方式）——从 CAD 图纸到搬土、建楼、通电，"我们停在机架层面，不碰更上层的软件"。客户自带 GPU，Giga 提供的是"动力壳"（powered shell）——50-100MW 的 IT 容量，9 个月交付。</p>
+
+  <p>但地面上并非一帆风顺。社区反对（主要是噪音，尽管通常在 65 分贝法规限制内）、水资源和电力价格关切、以及地方市政厅的审批拖延都是现实障碍。Matt 认为最终这会成为联邦层面的问题："没有理由让随机的地方市政厅阻止 AI 推理上线。这个命令迟早会下来——多久？我不知道。"</p>
+
+  <div class="gloss">
+    <strong>作者概括</strong>：Giga Energy 的稀缺性在于它同时掌握了三件事——制造（自己设计 CAD、自己建工厂）、部署（模块化预制让现场工作量骤减）、以及现金流管理（客户预付 30-50% 定金以匹配付款里程碑）。$3.4M 的融资甚至不是用来支撑增长的——"it just kind of kept us alive for a couple of year period figuring out our product market fit."增长完全靠现金流驱动。
+  </div>
+</section>
+
+<section>
+  <h2>Match Group：Tinder 复兴与约会软件的 AI 转型</h2>
+
+  <p>Spencer Rascoff 的履历让他在 Match Group CEO 的位置上显得格外有趣：Zillow 联合创始人兼 CEO（经营了 15-16 年），从 Match Group 董事会成员转为 CEO 大约一年半前。他的管理哲学浓缩在一句贴在办公室各处的口号中：</p>
+
+  <blockquote>
+    "great people, properly motivated and properly organized, build great products that are informed by user research that then when properly marketed generate a lot of audience and revenue and profit and then shareholder value"
+    <span class="attr">— Spencer Rascoff (Match Group) 的管理哲学</span>
+  </blockquote>
+
+  <p>Spencer 接手时，Match Group 本质上是一个控股公司。IAC 多年来通过收购拼凑出 25 个品牌——match.com（达拉斯）、Plenty of Fish（温哥华）、OkCupid（纽约）、Tinder（LA）、Hinge（纽约）、Pairs（东京）、Meetic（法国）——但如他所说，"a lot of the hard work around integration was never done"。他的第一步是打破孤岛：统一后端平台，让 BLK、Chispa、match.com 等品牌共享后端，一次功能发布覆盖十几个品牌。然后他开始亲自执掌 Tinder——这家占 Match Group $35 亿总收入中约 $20 亿的旗舰产品。</p>
+
+  <p>Tinder 的问题是什么？"had sort of lost its way in terms of innovation"——长时间没有创始人领导，缺乏以用户结果为导向的产品路线图。Spencer 的应对方案包括：推出 Double Date（双人约会）功能，让两个朋友组队后与其他配对互动——已有约 25% 的 Gen Z 用户使用；大举推进 IRL（线下）活动——从 1 月做决定到 3 月 12 日产品发布，仅用了几个月，Spencer 说"we never could have pulled that off without AI"；以及通过 Face Check（视频自拍验证）将假账户和深伪内容减少约 60%。</p>
+
+  <p>但 Spencer 也坦承了一个许多 CEO 都在暗自思考的问题：AI 的 ROI 到底在哪？Match Group 每年新增 $5-10M 的 AI 工具支出，通过放缓招聘来消化。内部一个有趣的数据是：Pull Requests（代码合并请求）同比增长了 60%。但正如主持人所说："the PRs don't pay the bills, you know?"</p>
+
+  <blockquote>
+    "our biggest competitor at Match Group is just inertia. It's just people's loneliness and doom scrolling on TikTok or Instagram or other social media, even Netflix or YouTube. We need people to put their phone down and put themselves out there and go try to meet new people."
+    <span class="attr">— Spencer Rascoff (Match Group)</span>
+  </blockquote>
+
+  <p>Spencer 还对美国住房危机发表了来自 Zillow 创始人的独特视角。美国缺了约 100 万套房——金融危机后开发商从每年建 100 万套骤降到 20-30 万套，持续了 4-5 年。数千万人锁在 2-3% 的低利率房贷中，换房意味着接受 5-6% 的利率。"可转让房贷"由于监管限制基本不可能——"you have to get all the stars to align"。他孵化的 House Whisper 为房产中介提供 AI 超级助手，这是供给侧解锁的一小步。</p>
+</section>
+
+<section>
+  <h2>Long Lake：用 AI 让服务业拥有软件业的利润</h2>
+
+  <p>Alexander Taubman 创立的 Long Lake Management 是一个独特的存在：成立仅 28 个月，已完成 30 笔收购，最新一笔是 $63 亿收购 American Express Global Business Travel——一家成立于 1915 年、最初为逃离一战欧洲的美国运通客户提供服务的公司。Taubman 开玩笑说："AmexGBT literally was created before the invention of the airline."</p>
+
+  <p>Long Lake 的核心论点是：美国是一个服务业经济体（80% 的企业属于服务业），但传统服务业的利润率远低于软件业——因为收入与人员数线性挂钩。AI 改变了这个等式。通过 Long Lake 自研的 "Nexus" 应用 AI 平台，被收购企业的团队生产力可提升 20-40%——这意味着每个员工能服务更多客户，收入增长快于人员增长，服务业开始展现出软件业才有的运营杠杆。</p>
+
+  <blockquote>
+    "it's pretty hard to sell software into these industries... it's easier to do it from the inside and actually partner with the companies themselves"
+    <span class="attr">— Alexander Taubman (Long Lake)，解释为什么选择"收购+改造"而非"卖软件"</span>
+  </blockquote>
+
+  <p>与传统的 PE 杠杆收购不同，Long Lake 定位为"永久资本运营公司"——传统上低杠杆运行，更注重增长导向的长期投资。Taubman 认为他们的核心优势在于"目的建造"（purpose-built）：从第一天就以应用 AI 为核心组建团队（联合创始人/CTO 是应用 AI 工程师出身），没有传统 PE 基金背负的几十个已投公司的历史包袱。人才方面，技术团队来自 Palantir、Ramp、Glean、Robinhood 等公司，金融团队来自 Blackstone、TPG、GTCR、HIG。</p>
+
+  <p>Long Lake 旗下被收购企业的数据支撑了这一论点：客户净留存率（NDR）超过 100%，客户关系长达 10-20 年以上。这些是"极其耐用"的现金流，AI 的应用让它们变得更有价值。</p>
+</section>
+
+<section>
+  <h2>NF1 与 Astrocade：两种"AI 原生平台"的范式</h2>
+
+  <p>Jay Azhang 的 NF1（N of One）正在赌一个大胆的未来：交易 Agent 将重复编码 Agent 的采用曲线。正如 Cursor 让非程序员也能写代码，NF1 想让不擅长编程的人也能把交易想法变成实盘策略。</p>
+
+  <blockquote>
+    "trading without a trading agent will be like coding without a coding agent or a cursor. You could do it, but why would you?"
+    <span class="attr">— Jay Azhang (NF1)，预测交易 Agent 的采用曲线</span>
+  </blockquote>
+
+  <p>NF1 的定位与对冲基金截然不同。它不追求每季度最大化利润（那是 Jane Street 和 Renaissance 的目标），而是尝试使用金融市场作为训练环境，培养能跨市场泛化的 AI 模型——一个更长的时间视野。产品形态是消费者平台而非基金：用户用自然语言描述交易想法 → AI 将其转化为部署好的交易策略 → 连接已有券商账户执行。NF1 已推出 Alpha Arena 来公开验证"LLM 在自主交易任务上还不够好"——先量化差距，再填平它。</p>
+
+  <p>而在游戏领域，Amir Sadeghian 的 Astrocade 正在做一件同样野心勃勃的事：让任何人都能用自然语言创建游戏。目前平台已有 5M MAU、75,000+ 游戏、数十万创作者，处理了数万亿 tokens——所有完全免费。Amir 刻意避免使用"游戏"这个词，而用 <strong>"playable content"</strong>（可玩内容）——因为用户创建的体验远超传统游戏范畴。"清洗蒙娜丽莎的画""冲洗脏车"这类超休闲体验是意想不到的爆款类型。</p>
+
+  <blockquote>
+    "3.4, 3,500,000,000 people playing video games right now, just almost half of half of humans."
+    <span class="attr">— Amir Sadeghian (Astrocade)，解释为什么游戏市场值得押注</span>
+  </blockquote>
+
+  <p>Astrocade 最大的技术挑战不是 AI 生成游戏本身（虽然这也极其困难——"Astrohack is a platform where our AI is learning how to generate fun"），而是<strong>推荐系统</strong>。为"可玩内容"构建推荐算法比视频/图片更难：游戏是开放式的，你无法像判断"50% 视频看完"那样判断"50% 游戏玩完"；满足感来自"通关"而非"浏览时长"，需要完全不同的信号权重。而平台治理——如何从 75,000 游戏中公平分发、兼顾创作者和玩家的利益——是另一个未解难题。</p>
+</section>
+
+<section>
+  <h2>Augustus 银行：为 AI 时代重建美元清算层</h2>
+
+  <p>Ferdinand Dabitz 带着一个 $100 美元钞票来到节目——这是一个"道具"，用来阐述他的核心论点。</p>
+
+  <blockquote>
+    "the dollar is the best product in the history of the world, and there's infinite global demand for it, especially outside of the United States."
+    <span class="attr">— Ferdinand Dabitz (Augustus)</span>
+  </blockquote>
+
+  <p>Augustus 刚刚获得美国货币监理署（OCC）的条件性批准，可以特许成为一家全服务美国国民银行。Ferdinand 的核心论点是：美元的产品市场匹配度是无与伦比的——稳定币堆栈（USDC/USDT）就是这一论点最纯粹的表达：人人都想要美元账户。但<strong>分发环节卡在了清算银行层</strong>。</p>
+
+  <p>现有的清算银行——那些真正持有联邦储备账户、能实际移动资金的银行——被 Ferdinand 形容为 "made of paper"（纸做的）。转账需要 1-2 天，周末关门，下午 5 点后关门，圣诞节关门——"因为是人类在运营它们"。Augustus 的使命是在 AI 时代从零开始重建清算基础设施：全栈、24/7 运行、为全球金融机构服务（而非初创公司或个人）。</p>
+
+  <p>这个使命被上升到了地缘政治高度。Ferdinand 指出，中国正在非洲推广数字人民币，俄罗斯每隔几天就推销一次 BRICS Pay——"how can we secure and advance Western currency dominance? One instrument here is to build better clearing banks to remove friction from the distribution of this amazing product because the product market fit is still there."</p>
+</section>
+
+<section>
+  <h2>特朗普访华：伊朗阴影下的中美峰会</h2>
+
+  <p>特朗普与习近平在北京的峰会，表面上是一场双边贸易对话，实际上所有议程都绕不开伊朗。美以对伊战争导致霍尔木兹海峡关闭——全球约五分之一石油经此通过。特朗普称和平协议处于 "major life support" 状态但未完全死亡——这本身就被解读为积极信号而非常规表述。</p>
+
+  <p>随行的美国 CEO 代表团包括 Tim Cook、Larry Fink、Stephen Schwarzman、Cisco 的 Chuck Robbins、高盛的 David Solomon、花旗的 Jane Fraser，以及 Elon Musk。主持人戏称为"field trip"（郊游）——但对于科技行业而言，伊朗停火是讨论出口限制、GPU、AI 供应链和稀土等话题的前提条件。</p>
+
+  <p>中国近期在推进 CAISI（新 AI 监管框架），但似乎在从"安全导向"后退。一个有趣的猜想是：中国是否会对美国模型说"把权重发给我们，我们帮你们审查是否适合中国受众"？以及在这个背景下，SpaceX 的 Starlink 等敏感话题是否会进入议程——每个科技 CEO 都有自己的小算盘。</p>
+</section>
+
+<section>
+  <h2>意外的连接：数据中心光纤与乌克兰战场</h2>
+
+  <p>这期节目中最有"蝴蝶效应"色彩的发现是：AI 数据中心对光纤的疯狂需求，正在挤压全球光纤供给——进而推高了乌克兰战场上的无人机成本。</p>
+
+  <p>在俄乌战争中，光纤制导无人机是重要战术：通过一根极细的光纤线缆进行有线控制，完全免疫无线电干扰。此前 50 公里光纤线轴的价格约为 $300；现在价格已飙升至 $2,500。虽然主持人强调这只是"一个出人意料的第二阶效应"且因果关系尚待验证，但逻辑链条本身已经足够发人深省：硅谷 AI 基建热潮 → 全球光纤供给紧张 → 战场战术成本结构改变。</p>
+
+  <p>与此同时，Kevin O'Leary 提议在犹他州建设一座 9GW 数据中心，媒体报道将其热量排放换算为"每天 23 颗原子弹"。但事实核查显示，按照相同算法，这块 40 英亩场地上每天接受的阳光热量已超过 50 颗原子弹。这是一个关于 AI 基础设施的"错误信息运动"正在实时展开的缩影。</p>
+</section>
+
+<div class="quotes-block">
+  <h2>核心金句</h2>
+
+  <div class="q blue">
+    "the dollar is the best product in the history of the world, and there's infinite global demand for it"
+    <span class="ctx">— Ferdinand Dabitz (Augustus)，解释为什么要为美元建新清算银行</span>
+  </div>
+
+  <div class="q green">
+    "trading without a trading agent will be like coding without a coding agent or a cursor. You could do it, but why would you?"
+    <span class="ctx">— Jay Azhang (NF1)，预测交易 Agent 的采用曲线</span>
+  </div>
+
+  <div class="q yellow">
+    "our biggest competitor at Match Group is just inertia — it's just people's loneliness and doom scrolling on TikTok or Instagram"
+    <span class="ctx">— Spencer Rascoff (Match Group)，重新定义"竞争对手"</span>
+  </div>
+
+  <div class="q red">
+    "So our mantra is building in the factory, not in the field."
+    <span class="ctx">— Matt Lohstroh (Giga Energy)，为什么他们能在 9 个月内交付 AI 数据中心</span>
+  </div>
+
+  <div class="q purple">
+    "it comes down to how much it devalues the ownership of the $30,000 plus Royal Oak"
+    <span class="ctx">— Quaid Walker (Bezel)，概括 Swatch × AP 联名的核心张力</span>
+  </div>
+
+  <div class="q orange">
+    "great people, properly motivated and properly organized, build great products..."
+    <span class="ctx">— Spencer Rascoff (Match Group) 的管理哲学</span>
+  </div>
+</div>
+
+<footer>
+  <p>本文基于 TBPN 2026 年 5 月 11 日期节目生成。所有引言均已在原始转录稿中核验。</p>
+  <p style="margin-top:8px;"><a href="https://share.transistor.fm/s/a30cdad1">收听完整节目 →</a> · <a href="https://poddeck.pages.dev">PodDeck 首页</a></p>
+</footer>
+
+</article>
+</body>
+</html>

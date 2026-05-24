@@ -497,10 +497,11 @@ jobs:
     audio_url: https://episodes.captivate.fm/episode/eeafe07f-2310-4a58-bde5-6896ef157610.mp3
     task_id: dc149ee6-1c00-46bf-9f8d-6ec64d0eae44
     submission_mode: url
-    status: running
+    status: failed
     retries: 0
     submitted_at: 2026-05-23T19:06:56.587Z
-    updated_at: 2026-05-23T19:07:30.780Z
+    updated_at: 2026-05-24T19:14:19.805Z
+    error: DashScope task ended with UNKNOWN
   - key: acquired:14ef00c6-30ba-44cc-9869-33d3d92828a3:20260102:https://pscrb.fm/rss/p/media.transistor.fm/fcf31c71/acf1c31d.mp3
     attempt_key: 2026-05-23T19:06:56.903Z
     id: 14ef00c6-30ba-44cc-9869-33d3d92828a3
@@ -509,7 +510,84 @@ jobs:
     audio_url: https://pscrb.fm/rss/p/media.transistor.fm/fcf31c71/acf1c31d.mp3
     task_id: 22f80baf-560e-4b91-b605-85232d8efdea
     submission_mode: url
-    status: running
+    status: failed
     retries: 0
     submitted_at: 2026-05-23T19:06:56.903Z
-    updated_at: 2026-05-23T19:07:31.061Z
+    updated_at: 2026-05-24T19:14:21.042Z
+    error: DashScope task ended with UNKNOWN
+  - key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3:attempt:2026-05-24T19:14:21.345Z:chunk:0
+    parent_key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3
+    attempt_key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3:attempt:2026-05-24T19:14:21.345Z
+    id: c16976da-570c-11f1-a983-cbdfe6951960
+    source: unchained
+    title: Why Pre-IPO Perps Like SpaceX on Hyperliquid Are Seeing an Upswing
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3
+    task_id: c65f3fad-f643-4a41-825d-c4249516dca0
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-24T19:14:21.345Z
+    updated_at: 2026-05-24T19:15:09.619Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260525/03%3A15/c65f3fad-f643-4a41-825d-c4249516dca0.json?Expires=1779736503&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=8KyKjoI1hBueakrzG6GGdBXpm1E%3D&response-content-disposition=attachment%3Bfilename%3Dc65f3fad-f643-4a41-825d-c4249516dca0.json
+    completed_at: 2026-05-24T19:15:09.619Z
+  - key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3:attempt:2026-05-24T19:14:21.345Z:chunk:1
+    parent_key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3
+    attempt_key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3:attempt:2026-05-24T19:14:21.345Z
+    id: c16976da-570c-11f1-a983-cbdfe6951960
+    source: unchained
+    title: Why Pre-IPO Perps Like SpaceX on Hyperliquid Are Seeing an Upswing
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3
+    task_id: 6d7ad21d-2ff3-4e22-8fd1-ae611e98550d
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-24T19:14:21.345Z
+    updated_at: 2026-05-24T19:15:11.744Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260525/03%3A15/6d7ad21d-2ff3-4e22-8fd1-ae611e98550d.json?Expires=1779736503&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=bT9PT5R513BiJZjwHSzJHO9rUmo%3D&response-content-disposition=attachment%3Bfilename%3D6d7ad21d-2ff3-4e22-8fd1-ae611e98550d.json
+    completed_at: 2026-05-24T19:15:11.744Z
+  - key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3:attempt:2026-05-24T19:14:21.345Z:chunk:2
+    parent_key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3
+    attempt_key: unchained:c16976da-570c-11f1-a983-cbdfe6951960:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3:attempt:2026-05-24T19:14:21.345Z
+    id: c16976da-570c-11f1-a983-cbdfe6951960
+    source: unchained
+    title: Why Pre-IPO Perps Like SpaceX on Hyperliquid Are Seeing an Upswing
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3733873363.mp3
+    task_id: 79d54a41-7b67-4ae7-ab6b-c124307bc474
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-24T19:14:21.345Z
+    updated_at: 2026-05-24T19:15:12.343Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260525/03%3A14/79d54a41-7b67-4ae7-ab6b-c124307bc474.json?Expires=1779736482&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=I8RQ47k6fcMtIvlFmhD9%2FbJVMuw%3D&response-content-disposition=attachment%3Bfilename%3D79d54a41-7b67-4ae7-ab6b-c124307bc474.json
+    completed_at: 2026-05-24T19:15:12.343Z
+  - key: risky-business:risky-business-aHR0cHM6Ly9yaXNr:20260520:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB838.mp3
+    attempt_key: 2026-05-24T19:14:38.915Z
+    id: risky-business-aHR0cHM6Ly9yaXNr
+    source: risky-business
+    title: "Risky Business #838 -- GitHub investigates possible breach"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB838.mp3
+    task_id: 625cdff8-ad86-4a31-9761-9c6aea7a887b
+    submission_mode: url
+    status: running
+    retries: 0
+    submitted_at: 2026-05-24T19:14:38.915Z
+    updated_at: 2026-05-24T19:15:12.924Z
+  - key: tbpn:1714b7b3-ad76-48e4-9227-c8dbefe8694f:20260423:https://media.transistor.fm/52e67362/93eb4ff2.mp3
+    attempt_key: 2026-05-24T19:14:39.243Z
+    id: 1714b7b3-ad76-48e4-9227-c8dbefe8694f
+    source: tbpn
+    title: Meet the New Thiel Fellows, GPT 5.5, Thoma Bravo Loses Medallia | Victor Boyd, Alex Shieh, Nick Dobroshinsky,
+      Ishan Gupta, Antoni Kiszka, Milan Lustig, Galen Mead, Aubrey Niederhoffer, Samuel Carvalho, Claire Wang
+    audio_url: https://media.transistor.fm/52e67362/93eb4ff2.mp3
+    task_id: 356ba8e4-346a-4b87-971e-0fdee5e247aa
+    submission_mode: url
+    status: running
+    retries: 0
+    submitted_at: 2026-05-24T19:14:39.243Z
+    updated_at: 2026-05-24T19:15:13.217Z
