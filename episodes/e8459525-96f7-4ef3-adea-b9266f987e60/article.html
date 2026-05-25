@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angana Jacob — Data as the True Competitive Moat</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #fafafa;
+  -webkit-font-smoothing: antialiased;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+h1 { font-size: 28px; font-weight: 700; line-height: 1.3; margin-bottom: 8px; }
+h2 { font-size: 22px; font-weight: 700; margin: 40px 0 16px; color: #1a1a1a; }
+h3 { font-size: 18px; font-weight: 600; margin: 24px 0 12px; }
+p { margin-bottom: 16px; }
+.subtitle { font-size: 15px; color: #666; margin-top: 4px; }
+.meta { font-size: 13px; color: #999; margin-top: 12px; }
+
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+@media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+.card { padding: 16px; border-radius: 8px; font-size: 15px; line-height: 1.55; }
+.card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+.card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+.card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+
+.quote { padding: 16px 20px; margin: 20px 0; border-radius: 8px; font-style: italic; font-size: 16px; line-height: 1.6; }
+.quote-label { font-size: 13px; color: #888; margin-top: 8px; font-style: normal; }
+.quote-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.quote-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.quote-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.quote-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.quote-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+.quote-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+
+.gloss { font-size: 14px; color: #888; font-style: italic; margin-top: 4px; }
+
+hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+footer { text-align: center; font-size: 13px; color: #999; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; }
+footer a { color: #3b82f6; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+<h1>Data as the True Competitive Moat</h1>
+<div class="subtitle">Angana Jacob 与 Corey Hoffstein 对谈</div>
+<div class="meta">Flirting with Models · S7E26 · 2026 年 2 月 · 57 分钟</div>
+</header>
+
+<section>
+<h2>为什么这期值得听</h2>
+<p>量化投资行业正在经历一次静默但深刻的范式转移。十五年前，一个聪明的因子模型或一个自研的组合优化器就足以构成竞争壁垒。今天，TensorFlow、PyTorch 和标准化的工具链让建模门槛趋近于零，学术论文发表的第二天就出现在 GitHub 上。如果所有人都在用相似的模型框架，持久的超额收益来自哪里？</p>
+
+<div class="cards">
+<div class="card card-blue">
+<strong>模型已商品化</strong>
+TensorFlow、PyTorch 让建模门槛归零，真正的竞争壁垒上移到数据层——清洗、连接、交付。
+</div>
+<div class="card card-green">
+<strong>Time to Alpha 的工程化</strong>
+Bloomberg 的北极星指标：从 idea 到 live signal 的时间。80% 的时间被数据 wrangling 吃掉，需要逆转。
+</div>
+<div class="card card-orange">
+<strong>从一次性脚本到工业化管线</strong>
+2008 年的量化数据管道是"用完即弃"，今天已变成必须跨年存活的生产资产。
+</div>
+<div class="card card-purple">
+<strong>语义层是新的 metadata</strong>
+连接公司财报、宏观数据、卫星图像、供应链——整合层不再是技术问题，而是经济意义的编码。
+</div>
+</div>
+
+<p>Bloomberg 企业数据业务研究数据组负责人 Angana Jacob 在这场对话中，从她跨越德意志银行、S&P、State Street、SigTech 和 Bloomberg 的职业生涯出发，系统阐述了为什么数据——而非模型——已经成为量化投资的真正护城河。</p>
+</section>
+
+<section>
+<h2>从因子到数据基础设施：一条非线性的职业弧线</h2>
+
+<p>Angana Jacob 的职业轨迹在纸面上看起来像是在不断远离 alpha 生成。2008 年，她在德意志银行的 QIS 研究台手工构建因子、跑回测、调参数。她回忆那个时代的坦率令人印象深刻——用她的话说，"everything back then was overfit."</p>
+
+<p>当时的真实情况是：回测避开了 2008 年的暴跌，看起来自然漂亮；没有不同 regime 下测试的概念；历史数据本身就有限；对任何复杂性的厌恶在危机后达到顶点，导致模型必须"直观、可解释、根植于理论"——但这些早期实现的信号通常是静态的、线性的、孤立测试的，隐式假设它们在所有时间 regime 和市场条件下表现一致。</p>
+
+<p>之后她经历了 S&P 的因子 ETF 爆发期、State Street 的学术量化研究（首次接触机器学习和另类数据）、SigTech 的产品负责人角色（Brevan Howard 系统化平台孵化），最终来到 Bloomberg。她的核心洞察是："the next phase of alpha capture is probably going to come from getting the data properly, getting the data right."</p>
+
+<p>从"模型驱动"到"数据驱动"的转变，不是她一个人的职业故事，而是整个量化行业的集体进化方向。</p>
+</section>
+
+<section>
+<h2>数据护城河：竞争壁垒的上游迁移</h2>
+
+<p>Angana 提出了一个可能让部分听众感到不适的核心论点：模型已经商品化。"I think models are getting democratized. TensorFlow, PyTorch, standardized models, optimizers. Everyone has access to roughly the same toolkit." 学术想法发表后几乎立刻出现在 GitHub 上。从建模角度看，大多数公司运行着相似的思路和相似的机器。</p>
+
+<p>那么真正的竞争优势来自哪里？"Some data having access to a vast data surface across assets, across market data, fundamentals, non-financial data, and also from how you can connect it, condition it, and transform it before it ever reaches a model."</p>
+
+<p>这里有一个关键的经济学洞察：数据集的价值不是线性叠加的。"Each new data set you add doesn't add linearly; it actually multiplies what's possible." 当数据被正确对齐并且是 point-in-time 的，alpha 可以从交互中涌现——预期 vs 现实、宏观冲击传播到头寸信息、基本面反馈到股票和信用风险。这些数据基础工作极其难做，也因此极其难以复制。</p>
+
+<p>她的结论大胆而清晰："Two firms can run the same model, but the one with the cleaner data, better transformations, and tighter feedback loops should outperform." 竞争优势已经上游移动。</p>
+</section>
+
+<section>
+<h2>"把数据做对"：2008 与 2026 的对比</h2>
+
+<p>Angana 对 2008 年量化研究的数据实践做了不留情面的回顾。幸存者偏差普遍存在。Point-in-time 正确性经常不完整。公司行为、指数成分、分析师估算、宏观修订——"it felt like future information leaked in all sorts of subtle ways and usually without anyone realizing it."</p>
+
+<p>当时"把数据做对"意味着清理明显错误和确保回测能跑。今天，标准高得多：明确信息何时变得可观测、信号如何构建、嵌入了什么假设。还有一个巨大的变化是规模——现代研究探索跨资产的数百个信号，过拟合可能成为默认的失败模式。</p>
+
+<p>今天的核心问题变成了："When does the information actually become observable? How fast does the signal decay? Is the edge gone by the time you can execute?" 实现不再是事后思考——它已经变成信号本身的一部分。结果是：存活下来的信号更少，但它们远比过去更鲁棒。</p>
+</section>
+
+<section>
+<h2>Time to Alpha：Bloomberg 的北极星</h2>
+
+<p>Angana 的团队有一个明确的使命："make data immediately researchable and shorten the time to alpha." 量化工作流从 idea 到 live signal 的旅程极其漫长：数据发现、获取、摄入、标准化、验证、特征工程、信号提取、组合构建、最终执行。即使今天，数据在这个流程中的流动仍然充满摩擦。</p>
+
+<p>Bloomberg 的核心价值主张是解决这些摩擦：数据的广度必须被建模且可互操作；需要深度 point-in-time 历史；元数据和 lineage 建立信任——正是这种信任让研究更快地进入生产。正如 Corey 在节目中引用的："You must have heard of that eighty twenty rule of quant research, where eighty percent of any quant's time is spent data wrangling and cleaning. That's the paradigm we want to reverse."</p>
+
+<p>一个具体的例子：期货和期权的 symbology。"In futures and options, for example, you can lose most of your alpha by just rolling contracts incorrectly." 乘数、展期、生命周期事件——有这些被正确映射，才能大幅提高回测精度。</p>
+</section>
+
+<section>
+<h2>地理暴露：非标数据标准化的案例研究</h2>
+
+<p>Angana 用一个具体的案例说明了数据工作的复杂性。地理暴露——每个投资者都直觉理解它的重要性，它是宏观和微观之间的桥梁。一家美国公司实际上可能是亚洲敞口；GDP 增长如何驱动盈利；供应链中断如何影响成本。但回答"一家公司真正在哪里赚钱"这个问题极其困难。</p>
+
+<p>核心矛盾在于：公司不是为了投资者而报告地理信息，而是为了满足会计准则。因此披露是局部的、经常不一致的。今年可能报告 UK vs Europe，明年可能把 UK 包含在 Europe 里。回答"这个组合暴露在巴西多少"不是直接可观测的。</p>
+
+<p>Bloomberg 的方案涉及两层复杂性：首先将每家公司的披露放入统一的地理 taxonomy（尽管公司不按这种方式报告），其次提供多个视角——收入视图、成本视图、资产视图、capex 视图——附置信度评分，并且全部 point-in-time。"If all of these come together, then geo segments becomes a joint key between macro data, sector models, company fundamentals, portfolio risk." 这些原本生活在不同世界的数据，通过地理暴露被连接起来。</p>
+</section>
+
+<section>
+<h2>数据管线的工业化</h2>
+
+<p>Angana 认为，过去十五年量化数据管道最大的变化不是某个特定数据集或模型，而是整个过程的工业化。"Data pipelines are now considered to be long living assets." 策略可能运行数年而不漂移，这意味着数据必须跨人员变动、数据更新、重述和不断演化的解释而存活。</p>
+
+<p>这迫使行业从一次性 ad-hoc 脚本转向显式的标准化管道：point-in-time 正确性由构建保证、清晰的转换、数据版本化和所有权。还有一个被低估的基础设施组件：特征库防止 look-ahead bias、数据 lineage 和元数据追踪系统、能可靠评估数千特征的 backtesting 平台。</p>
+
+<p>她的结论震撼："You could hand someone your model code and they still cannot replicate your results if they didn't have the same sophisticated data machinery underneath." 策略可能越来越可复制，但鲁棒的基础设施极其困难——这也是顶级公司真正花钱的地方。</p>
+</section>
+
+<section>
+<h2>前中后台对齐：系统性偏差的隐形来源</h2>
+
+<p>当 Angana 谈论研究、交易和中后台的数据对齐时，她真正在说的是缩小策略被设计的方式和它们实际体验市场的方式之间的差距。历史上，研究环境为速度和灵活性而建，中后台为估值和控制而建。这种分离创造了一个危险。</p>
+
+<p>在 OTC 市场尤为明显：信号可能基于特定 bootstrapping 方法和特定插值构建的曲线训练，而公司不同部门的估值和风控反映不同的惯例。信号在一个经济世界里做决策，而 P&L 在另一个经济世界里被衡量。她回忆道："I remember like going back to my sell-side days, you could almost feel the trading floor mood plummet around month ends or IMM dates where everyone, traders, desk quants have to start focusing on reconciliation rather than PNL."</p>
+
+<p>关键问题在于：这种不匹配即使很小，也是系统性的。它引入了一致的偏差，让回测看起来稳定而实盘表现慢慢漂移—然后变得极其困难去判断问题是出在信号、执行，还是不同来源的数据不同。Bloomberg 的解法是让同一底层市场参考和基本面数据流经研究环境、终端和实时 B-Pipe，确保一致性。</p>
+</section>
+
+<section>
+<h2>现代量化技术栈：从单一信号到集成化平台</h2>
+
+<p>今天的 alpha 更拥挤、更脆弱、更依赖数据的处理方式而非任何单一想法。Angana 观察到，公司已经停止将信号视为独立策略，而将它们视为组件。"What good looks like today for especially at the top end sophisticated platforms is very ensemble driven research, hundreds or thousands of signals, each tied to specific data sets, each with known assumptions and failure modes, each evaluated independently."</p>
+
+<p>机器学习被用来 sizing 信号、组合因子、设定权重。在大 AUM 规模上，这种工业化是公司控制风险、容量和资本一致性的方式。技术栈的架构反映了这一转变：云原生、数据基础设施与特征库与信号研究之间有清晰的接口分离。这与十年前大多数公司运行的单论点、单信号栈截然不同。</p>
+
+<p>最好的平台深思熟虑地管理着这种复杂性——大量投资于反馈环路、监控信号健康、衰减、regime sensitivity，不仅在回测侧，在生产侧也持续监控数据质量。准确性和可复现性成为首要目标。</p>
+</section>
+
+<section>
+<h2>语义层：连接不可连接的数据</h2>
+
+<p>五年前，如果在研究对话中提起 taxonomy、ontology 或 knowledge graph，"it might have lasted thirty seconds, if at all." 今天，这些话题位于严肃研究平台设计的核心。原因很简单：现代研究工作流使 metadata 问题变得不可忽视。</p>
+
+<p>Angana 用一个生动的例子说明这种复杂性：分析一家面临利润压力的下游能源公司。你需要从运营段层面的基本面开始，叠加行业 KPI（精炼吞吐量或利用率变化），然后需要实物资产数据（特定精炼厂和加工设施，映射到精确地理位置），然后叠加供应链数据追踪中断，再加天气数据（站点、网格、地理多边形），最后加上宏观数据（国家或区域层面）。</p>
+
+<p>每个数据集都有不同的 metadata 体系需要映射。这就是为什么 Angana 认为整合层不是 metadata，而是 semantic layer："The semantic layer is where the economic meaning actually gets created." 这是关于显式编码存在什么实体、它们如何关联、以及适用什么时间范围。这个层面正开始直接接入系统化工作流和 AI 模型。</p>
+</section>
+
+<section>
+<h2>那条线画在哪里：原始数据 vs 衍生数据</h2>
+
+<p>作为数据提供商，Bloomberg 面临一个微妙的平衡：在多大程度上转换底层数据？有些客户想要绝对原始的数据，有些想要处理过的，有些甚至想要建模和映射到某种程度。</p>
+
+<p>Angana 的原则是：移除数据工程的复杂性而不侵入解释选择。"Raw is never really raw. The moment you use data in a strategy, you are making assumptions about units, timing, missing values." 真正的问题是数据是否经济上 coherent 而不 opinionated。</p>
+
+<p>在实践中，这意味着 Bloomberg 会做：将工具映射到合理的经济单位（TVO1 而非合约和比率）、对齐频率、处理公司行为、修复明显质量问题——但不平滑时间序列、不嵌入隐含观点。当提供衍生指标时，标准极高：必须可解释和可逆。"Clients should be able to peel back the layers, see how the raw inputs drove the result."</p>
+</section>
+
+<section>
+<h2>边界消融：系统化与主观投资的合流</h2>
+
+<p>Angana 在 Bloomberg 的三年中，最大的意外是传统标签迅速失去意义。"Historically, there was a clean split: systematic teams ran broad universes, had small bets, mostly market or factor-style data, whereas discretionary investors had deep conviction and looked line by line at balance sheets and income statements." 这个清晰的界限已经崩溃。</p>
+
+<p>深度基本面数据（完整财报、分部披露、盈利电话记录、供应链数据）的最复杂用户实际上是系统化团队。他们不是像主观 PM 那样"读"这些数据，而是跨数千只股票同时建模和回测。同时，主观投资者正走向另一个方向——许多人现在使用量化级别的基础设施、系统化 universe 构建、大规模模拟、信号库，以及越来越多的 ML。AI 加速了这种模糊。</p>
+
+<p>第二个大趋势是策略收敛：高频公司进入中频领域（突然需要更长的历史、宏观背景、季度基本面），低频因子策略深入日内空间。第三个趋势是跨资产信号使用——"some of the strongest signals today are not alternative at all. They are traditional market and fundamental data, but it's actually pulled from outside the asset you're trading." 股票策略使用期权隐含波动率曲面推断拥挤度，现金股票模型监控 CDS 曲线寻找压力信号。</p>
+</section>
+
+<section>
+<h2>下一个前沿：操作化、连接、压缩反馈环</h2>
+
+<p>Angana 认为 "all data phase pre-2020" 已经结束。前沿不再是什么新奇和未被开发的数据集，而是整合、上下文和 time to alpha。她确定了三个前沿方向。</p>
+
+<p><strong>第一，可操作化。</strong> 问题不再是"你有这个数据集吗？"而是"我能无缝插入研究、生产、执行和风控系统吗？"这驱动了对 normalized、point-in-time、clean 和 AI-ready 数据的需求。与通用生成式 AI 模型不同，这里的 edge 不来自大规模通用训练数据，而来自干净、上下文感知和决策级别的输入。</p>
+
+<p><strong>第二，连接数据。</strong> 市场不是孤立移动的，数据也不应该。资产-资金依赖、波动率-流动性反馈、地缘政治-投资者头寸——基于图的数据模型正成为捕捉事件传播和风险传导的强大工具。</p>
+
+<p><strong>第三，压缩反馈环。</strong> 不只是在毫秒层面，更在组织时间层面。整个团队测试、验证、部署、监控、退役一个 idea 有多快？执行数据、交易成本、日内流动性越来越反馈回信号权重和组合构建。研究和交易正在融合。</p>
+</section>
+
+<section>
+<h2>常见错误与建议</h2>
+
+<p>Angana 总结了量化数据工作中三个最常见且代价最高昂的错误。第一，低估数据层的 alpha 泄漏——"quants still underestimate how much alpha leakage happens in the data layer, long before the modeling even begins." 团队花数月争论模型架构，却接受数据中的可疑假设。第二，局部优化——为一个资产类别构建优美管线，一旦尝试扩展就崩溃。第三，将执行视为下游——信号研究假设理想执行，但策略上线后 edge 消失。</p>
+
+<p>她给量化研究员的建议直指核心：局部理解的风险。"You can do really good work, excellent work locally, and still get very weak outcomes globally if you don't know where your data breaks, how it behaves in different scenarios, or what transformations, what assumptions were baked in."</p>
+
+<p>她坦承自己职业生涯早期吃过大亏——专注于最有趣的部分（信号、模型、聪明想法），假设数据"自然能工作"。但当忽视第一性原理时，问题最终会在最糟糕的时候出现。AI 会放大这种风险：在一个狭隘盒子里快速移动并获得非常有说服力的答案变得极其容易，而你甚至不理解底层的假设。</p>
+
+<p>她的建议：在成为自己领域的专家的同时，获得对整个数据栈的第一性原理理解。"That I think will always be a key edge."</p>
+</section>
+
+<section>
+<h2>工作之外：设计自己的痴迷</h2>
+
+<p>作为每集结尾的固定问题，Corey 问 Angana 工作之外对什么着迷。她的回答独特而深思熟虑："I've been actually obsessed with designing my own obsessions."</p>
+
+<p>工作之后大脑仍然想要某种沉浸，如果她不刻意给大脑一些东西，就会 doom scroll 并且感觉更疲惫而非放松。她的解决方案是构建小型沉浸系统：围绕一个主题——通常包含小说（提供情感钩子）、视觉内容（纪录片给予质感）、以及厚重的非虚构材料（因为已经沉浸在主题中所以不再感到沉重）。</p>
+
+<p>去年十二月她深入研究了毒品贸易：Don Winslow 的小说 <em>The Power of the Dog</em>、<em>Narcos</em> 加上几个纪录片、然后是 Johan Hari 的 <em>Chasing the Scream</em>。每个周期持续两到三个月。Corey 称这是"2026 年的目标"。</p>
+</section>
+
+<hr>
+
+<section>
+<h2>核心金句</h2>
+
+<div class="quote quote-blue">
+"Two firms can run the same model, but the one with the cleaner data, better transformations, and tighter feedback loops should outperform."
+<div class="quote-label">— Angana Jacob，论数据作为竞争壁垒</div>
+</div>
+
+<div class="quote quote-green">
+"I believe a meaningful amount of alpha remains uncaptured in data, in data foundations and infrastructure."
+<div class="quote-label">— Angana Jacob，论 alpha 的未捕获空间</div>
+</div>
+
+<div class="quote quote-orange">
+"The competitive edge has shifted upstream."
+<div class="quote-label">— Angana Jacob，概括行业趋势</div>
+</div>
+
+<div class="quote quote-purple">
+"Data pipelines are now considered to be long living assets."
+<div class="quote-label">— Angana Jacob，论数据管线的工业化</div>
+</div>
+
+<div class="quote quote-red">
+"Data is very hard to get right."
+<div class="quote-label">— Angana Jacob，简洁总结量化数据的核心挑战</div>
+</div>
+
+<div class="quote quote-yellow">
+"You could hand someone your model code and they still cannot replicate your results if they didn't have the same sophisticated data machinery underneath."
+<div class="quote-label">— Angana Jacob，论基础设施作为复制壁垒</div>
+</div>
+</section>
+
+<footer>
+<p>Flirting with Models S7E26 · 主持 Corey Hoffstein · 嘉宾 Angana Jacob</p>
+<p>2026 年 2 月 · <a href="http://www.flirtingwithmodels.com/">原始节目</a></p>
+</footer>
+
+</article>
+</body>
+</html>

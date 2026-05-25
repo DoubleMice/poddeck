@@ -1,10 +1,10 @@
 source: flirting-with-models
-refreshed_at: 2026-05-25T07:21:24.415Z
+refreshed_at: 2026-05-25T19:26:23.883Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 2
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 1
@@ -19,7 +19,7 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/e8459525-96f7-4ef3-adea-b9266f987e60.mp3
     image: https://artwork.captivate.fm/87d89126-48e6-4ed6-a208-6f31b14ea6b2/S3-FlirtingWithModels-with-Angana-Jacob-2MB.jpg
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: 541fcfa2-76b1-465a-84ca-5f48da86de23

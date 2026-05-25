@@ -1,13 +1,13 @@
 source: tbpn
-refreshed_at: 2026-05-25T07:21:24.243Z
+refreshed_at: 2026-05-25T19:26:23.738Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 13
-done: 0
-pending: 11
+done: 1
+pending: 10
 needs_transcript: 0
-transcribing: 1
-transcribe_failed: 0
+transcribing: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
@@ -145,7 +145,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: 689f048c-da42-477b-bc59-d0fe2ff52aa6
     title: $GME CEO Ryan Cohen, OpenAI vs Elon Musk Continues, U.S. Gets Early Access to AI Models | Harley Finkelstein,
@@ -917,11 +917,13 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: transcribing
+    status: transcribe_failed
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: 356ba8e4-346a-4b87-971e-0fdee5e247aa
     transcript_submitted_at: 2026-05-24T19:14:39.243Z
+    transcript_completed_at: 2026-05-25T19:26:26.019Z
+    transcript_error: DashScope task ended with UNKNOWN
   - id: 4e26997f-bf94-4e2e-9038-5fd1f427b9fd
     title: SpaceX/Cursor Deal, Images 2.0 Reactions, Fake Bear Attack | Anil Chakravarthy, Naveen Gavini, Avlok Kohli &
       Ankur Nagpal, Joel Edwards, Renen Hallak, Darian Shirazi

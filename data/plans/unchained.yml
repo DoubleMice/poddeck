@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-05-25T07:21:24.336Z
+refreshed_at: 2026-05-25T19:26:23.814Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 131
-done: 0
+done: 1
 pending: 0
-needs_transcript: 128
+needs_transcript: 127
 transcribing: 0
 transcribe_failed: 3
 downloaded: 0
@@ -68,8 +68,12 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-25T19:26:26.702Z
+    transcript_job_id: 09f7062d-dd99-466b-b0a2-2a715bb35a4e,bb6c0126-ac8a-4518-9cbe-576a37e98976,c9433287-7323-4944-a47a-6ece8d7d3d55,3cee19df-1422-49b9-842d-2f59a6d6fbb1,330d8b8a-edfc-4458-99be-5b79c915ed9c
+    transcript_completed_at: 2026-05-25T19:27:32.953Z
   - id: 5574733e-56fe-11f1-a622-57cc8cdc6a43
     title: "The Bond Market Is the Boss Now: Bits + Bips"
     duration: 2599
@@ -5284,6 +5288,7 @@ episodes:
           
 
 
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5467,6 +5472,7 @@ episodes:
       Unchained:⁠⁠
 
         
+
 
 
         
@@ -6673,6 +6679,7 @@ episodes:
           
 
 
+
         
       Previous appearances on Unchained:
 
@@ -7604,6 +7611,7 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
 
 
         
@@ -8796,6 +8804,7 @@ episodes:
        
 
 
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -9189,6 +9198,7 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
+
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices

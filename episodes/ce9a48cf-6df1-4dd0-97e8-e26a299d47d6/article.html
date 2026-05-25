@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel & Apple, The American Economic Rollercoaster — PodDeck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e9ecef;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #868e96;
+    margin-bottom: 3px;
+  }
+  .meta a { color: #1971c2; text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 22px;
+    font-weight: 650;
+    margin: 40px 0 16px;
+    color: #1a1a1a;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 10px;
+    color: #333;
+  }
+  p { margin-bottom: 16px; }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    margin: 20px 0 28px;
+  }
+  .card {
+    padding: 16px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .card-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .card-red { background: #fff0f0; border-left: 4px solid #e03131; }
+  .quote {
+    margin: 20px 0;
+    padding: 18px 22px;
+    border-radius: 6px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .quote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    opacity: 0.65;
+  }
+  .quote-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .quote-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .quote-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .quote-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .quote-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .quote-red { background: #fff0f0; border-left: 4px solid #e03131; }
+  .gloss {
+    background: #f8f9fa;
+    border-left: 4px solid #adb5bd;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #495057;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 18px 0;
+  }
+  .stat {
+    text-align: center;
+    padding: 16px 10px;
+    border-radius: 6px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+  }
+  .stat .num { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .stat .label { font-size: 12px; color: #868e96; line-height: 1.4; }
+  .num-blue { color: #1971c2; }
+  .num-green { color: #2f9e44; }
+  .num-red { color: #e03131; }
+  .num-orange { color: #e8590c; }
+  .num-purple { color: #862e9c; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 2px solid #e9ecef;
+    font-size: 13px;
+    color: #868e96;
+  }
+  footer a { color: #1971c2; }
+  @media (max-width: 640px) {
+    article { padding: 24px 16px 40px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 19px; }
+    .cards { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+<h1>Intel &amp; Apple, The American Economic Rollercoaster</h1>
+<div class="meta">Brian Chesky (Airbnb) · Josh Reeves (Gusto) · Jonathan Neman (Sweetgreen) · Zal Bilimoria (Refactor Capital)</div>
+<div class="meta">TBPN · May 2026 · 2h 33m</div>
+<div class="meta">Source: <a href="https://share.transistor.fm/s/ea114101">TBPN on Transistor</a></div>
+</header>
+
+<section>
+<h2>为什么这一期值得关注</h2>
+
+<div class="cards">
+<div class="card card-blue">
+<strong>Intel &times; Apple</strong>
+Trump 政府撮合下，Intel 与 Apple 达成芯片制造初步协议——单日涨 20%，NVIDIA 早已投入 50 亿美元。这不只是一笔商业交易，而是美国产业政策的转折点。
+</div>
+<div class="card card-green">
+<strong>AI 经济 vs 实体经济</strong>
+AI 经济增速 31%，非 AI 经济仅 0.1%——但就业数据打破悲观叙事：4 月新增 11.5 万个岗位，是预期的两倍多。K 型内部还有 K 型。
+</div>
+<div class="card card-orange">
+<strong>Brian Chesky 的 AI 转型</strong>
+Airbnb 60% 代码由 AI 生成，是同行 2 倍。但他坚信 Chatbot 不是电商和旅行的正确界面——未来的消费者 AI 需要全新的交互范式。
+</div>
+<div class="card card-purple">
+<strong>Gusto 与 SMB 的韧性</strong>
+Trailing revenue $10 亿，现金流为正。AI 将产品周期从"2-3 年"压缩到"3-6 个月"。新企业注册上升，招聘意愿下降——美国小企业的 AI 时代正在到来。
+</div>
+<div class="card card-yellow">
+<strong>Sweetgreen 的基本功哲学</strong>
+4 种原料的卷饼 vs 行业 22 种。300 家店 → 目标 5,000 家。"Fundamentals win championships"——在数字化已被商品化的今天，回归体验本身。
+</div>
+<div class="card card-red">
+<strong>Solo GP 的硬科技投资</strong>
+Zal Bilimoria 一个人管理 $5,000 万基金，集中持仓 20-25 家公司。需要一个"基金回报者"进入顶级十分位——他的投委会就是他自己的判断力。
+</div>
+</div>
+</section>
+
+<section>
+<h2>Intel 的翻身日：半导体地缘政治的新篇章</h2>
+
+<p>2026 年 5 月 8 日，Intel 股价单日暴涨近 20%。触发因素：华尔街日报报道 Intel 与 Apple 达成了初步芯片制造协议。这则新闻引爆了市场，因为它回答了一个长期悬而未决的问题——Intel 能否重新成为世界级芯片制造商？</p>
+
+<p>过去十年，Intel 在制程竞赛中严重落后于 TSMC 和 Samsung。技术失误、领导层更迭、并购失败——曾经的半导体霸主失去了方向。2020 年 Apple Silicon 的发布标志着 Apple 彻底离开 Intel 处理器，转向台积电代工的 ARM 架构自研芯片。</p>
+
+<p>但故事的转折发生在 2025 年 3 月，Lip-Bu Tan 接任 Intel CEO。他以惊人的速度重组高管团队——聘请前 TSMC 高管（引发 TSMC 诉讼）、更换数据中心和客户端计算部门负责人、新建定制芯片业务。他的赌注押在了 Intel 最先进的 14A 制程上："如果你建好了，他们就会来。"</p>
+
+<p>商务部长 Howard Lutnick 在过去一年中反复与 Tim Cook、Elon Musk 和 Jensen Huang 会面，劝说他们与 Intel 合作。美国政府的筹码很直接：将约 $90 亿联邦拨款转为 Intel 股票，以约 $21/股的价格入场。如今 Intel 股价超过 $125，白宫的账面浮盈约 5 倍。NVIDIA 在 2025 年 9 月投入了 $50 亿战略投资，并宣布合作制造定制数据中心 CPU。</p>
+
+<p>对 Apple 而言，动力同样充足。TSMC 的先进产能正被 NVIDIA 等 AI 芯片需求挤占，Apple 作为最大客户的议价能力被削弱。Tim Cook 连续两次在财报电话会上将产品缺货归咎于芯片供应不足——Mac Mini 和 Mac Studio 可能需要"数月才能达到供需平衡"。双重采购在地缘政治之外，也是一项基本的供应链风险管理。</p>
+
+<div class="quote quote-blue">
+"President Trump personally advocated for Intel to Cook in a meeting at the White House."
+<span class="attr">— TBPN，引用 WSJ 报道</span>
+</div>
+</section>
+
+<section>
+<h2>AI 经济 vs 实体经济：310 倍的增速差距</h2>
+
+<p>Wall Street Journal 的 Greg Ip 做了一个粗略但令人震惊的估算：美国 AI 经济增速为 31%，而非 AI 经济仅增长 0.1%。科技设备投资飙升 43%，软件投资增长 23%，数据中心建设首次超过了办公楼。而个人消费——GDP 中最大的组成部分——仅温和增长 1.6%。</p>
+
+<p>但就业数据却讲述了一个相反的故事。4 月美国新增 115,000 个就业岗位，是华尔街分析师预期（55,000）的两倍多。2026 年前四个月月均新增 76,000 人，远高于 2025 年同期的 42,000 人。医疗保健依旧领跑，但零售、运输、仓储等行业也开始回暖。</p>
+
+<div class="stats-grid">
+<div class="stat">
+<div class="num num-blue">+31%</div>
+<div class="label">AI 经济增长</div>
+</div>
+<div class="stat">
+<div class="num num-red">+0.1%</div>
+<div class="label">非 AI 经济增长</div>
+</div>
+<div class="stat">
+<div class="num num-green">115K</div>
+<div class="label">4 月新增就业</div>
+</div>
+<div class="stat">
+<div class="num num-orange">55K</div>
+<div class="label">分析师预期</div>
+</div>
+</div>
+
+<p>KPMG 首席经济学家 Diane Swonk 称之为"高焦虑就业市场"——有工作的人紧紧抓住不放，找工作的人感到被冻结在外。企业整体上避免大规模招聘或裁员，在贸易、移民、税收政策的不确定性中选择了观望。</p>
+</section>
+
+<section>
+<h2>哑铃型经济：为什么过山车比冰箱卖得好</h2>
+
+<p>在实体经济的内部，还存在更深层的分化。TBPN 主持人 John 用了两个看似不可能同时发生的案例来说明：</p>
+
+<p>Whirlpool——经营家电超过 100 年，自 1950 年代起从未中断分红的股息贵族——刚刚削减了分红。股价 5 年跌了 80%，面对 LG、Samsung 的全球竞争步履维艰。冰箱是"必需品"，但它也是"可推迟的"——经济紧张时可以修修补补再撑几年。</p>
+
+<p>而 Six Flags——过山车主题公园，典型的可选消费——上一季度营收增长、客流增长、客单价增长。这完全违背了"经济不好先砍娱乐"的直觉。但 Six Flags 拥有一个 Whirlpool 没有的护城河：孩子只有有限的几年适合玩过山车。这是父母无法推迟的消费。</p>
+
+<div class="gloss">
+<strong>作者概括</strong>：即使在"实体经济"内部，也存在赢家与输家的剧烈分化——K 型里面还有 K 型。你无法用"必需品 vs 可选品"的简单框架来预测。TBPN 提出了一个"哑铃型经济"框架：一端是 AI 基础设施和科技巨头，另一端是"反 AI"的物理体验——你无法用 Vibe Code 建造一座过山车。Ellison 家族同时持有 Oracle 和 Warner Bros，Josh Kushner 同时投资 OpenAI 和 San Francisco Giants——在两种对立的逻辑中同时下注。
+</div>
+</section>
+
+<section>
+<h2>Gusto：十亿美元背后的 SMB 韧性</h2>
+
+<p>Josh Reeves 带着一个里程碑来到 TBPN：Gusto 突破了 $10 亿 trailing revenue。"Trailing"这个词的选择本身就说明问题——大多数 SaaS 公司会用 ARR（年化经常性收入），但 Gusto 选择报告实际发生的收入。这家公司是自由现金流为正的，并且已经持续了多年。</p>
+
+<p>美国有 600 万雇主，其中三分之二少于 5 名员工。Gusto 的 TAM 远未见顶。Reeves 表示他不会预期 Gusto 长期保持私有状态——但现在不是上市的时候。"Super focused on small businesses and execution. At some point, the timing will make sense."</p>
+
+<p>AI 正在从根本上改变 Gusto 的产品开发速度。"我们会推出更多新产品——那些我们原本认为需要 2-3 年的东西，我现在认为 3-6 个月就能做出来。" 这不仅仅是一句乐观表态——小团队可以自助服务、更快迭代、通过 AI 保持甚至提升质量。</p>
+
+<p>Gusto 的内部数据揭示了一个微妙的分化：新企业注册在上升（AI 降低了创业门槛），但现有企业的招聘意愿在下降（AI 让用更少的人实现增长成为可能）。Reeves 将 AI 的两种未来总结为：Happy Path（AI 赋能创业潮）和 Wall-E Path（人类什么都不用做——"我希望我们避免那个未来"）。</p>
+
+<div class="quote quote-green">
+"The non happy path to me is the Pixar movie Wall-E, which is a future I hope we avoid."
+<span class="attr">— Josh Reeves, Gusto CEO</span>
+</div>
+</section>
+
+<section>
+<h2>Sweetgreen：用 4 种原料重新定义快餐</h2>
+
+<p>Jonathan Neman 带来了 Sweetgreen 有史以来最大的新品类发布：卷饼。但故事的真正张力不在于新品本身，而在于它与行业标准的距离——Sweetgreen 花了整整一年研发定制卷饼皮，只用了 4 种原料，而市场上大多数卷饼约有 22 种原料，充斥着种子油和防腐剂。</p>
+
+<p>起价 $10.45，最高不超过 $15——在消费者信心低迷的环境中，这个定价是有意为之的。但 Neman 更关注的是另一个维度：体验的一致性。</p>
+
+<div class="quote quote-yellow">
+"In restaurants, fundamentals win championships."
+<span class="attr">— Jonathan Neman, Sweetgreen CEO</span>
+</div>
+
+<p>这句话背后是一个战略判断：2010 年代给 Sweetgreen 带来竞争优势的数字化能力（在线点单、移动支付、App 体验）已经被所有餐厅商品化。现在真正的差异化在于品质是否稳定、高峰时段是否有人、员工是否微笑——"那些小事情"。</p>
+
+<p>Sweetgreen 当前运营约 300 家门店，第一目标是 1,000 家，长期目标是美国 5,000 家。超过 10% 的门店已部署了 Infinite Kitchen（自动化厨房），首家 IK + Drive Thru 组合店在 Costa Mesa 的表现"惊人"。Drive Thru 是稀缺资源——不能新建，只能接手旧物业——而 Chick-fil-A 和 Raising Cane's 出价更高。</p>
+
+<p>Neman 还分享了一个有趣的数据：80% 的顾客通过口碑认识 Sweetgreen。公司的核心指标是"30 天回头率"——整个组织围绕这个数字对齐。这比任何营销预算都更能说明问题。</p>
+</section>
+
+<section>
+<h2>Zal Bilimoria：一个人的硬科技基金</h2>
+
+<p>Zal Bilimoria 来到 TBPN 时正值他的"史上最好的一周"。周三，他领投种子轮的 Astronis 完成了 $4.5 亿 E 轮融资（$28 亿估值）。周四，他发布了第五期基金。周五，PathAI 被 Roche 以 $10 亿收购。同一周，两家被投公司的创始人迎来了新生儿。</p>
+
+<p>但 Refactor Capital 最引人注目的不是业绩——是它的结构。Zal 是 Solo GP：没有合伙人，没有全职员工，只有一个 AI 日历工具（Blockit）替代了兼职助理。基金规模稳定在 $5,000 万，尽管 LP 需求远超。每期只投 20-25 家公司，单笔 $100-200 万。</p>
+
+<p>"如果我增加基金规模，几个事情会发生。要么我必须写更多支票——但作为一个人的团队，我就不能给每个创始人足够的时间。要么我在边际上加入更差的公司——逆向选择。"</p>
+
+<p>他的投资逻辑清晰而残酷：顶级十分位的风险基金是净 3x 回报。$5,000 万变 $1.5 亿。但能达到这个标准的基金，绝大多数至少有一个"基金回报者"——一家公司就还回了整个基金的规模，甚至 2-4 倍。10% 初始持股 → 稀释后 5% → 5% × $10 亿独角兽 = $5,000 万 = 1x 基金。需要 $10-100 亿级别的退出才能进入顶级行列。</p>
+
+<div class="quote quote-purple">
+"Outcomes may not be a billion. They might be 10. It might be 100."
+<span class="attr">— Zal Bilimoria, Refactor Capital</span>
+</div>
+
+<p>这解释了他为什么愿意在最好的公司中接受低于目标的持股比例。赔率变了——在一家可能值 $100 亿的公司中持有 3%，比在一家可能值 $10 亿的公司中持有 10% 更好。</p>
+
+<p>Zal 的履历本身就是硅谷的简史：Google AdWords PM（与 Kevin Systrom、Ben Silberman 只隔三个工位）→ YouTube 广告产品（从零搭建到数亿美元收入）→ Netflix 第一位移动产品负责人 → LinkedIn（全公司 8 个 PM 之一）→ a16z（帮助发起 Bio Fund）→ Refactor Capital。</p>
+</section>
+
+<section>
+<h2>Brian Chesky 的 Founder Mode：在场，而非缺席</h2>
+
+<p>Brian Chesky 带来了一个罕见的更新：Airbnb 的收入增速从 10% 加速到 18%——对于一个年 GMV 约 $1,000 亿的市场平台而言，扭转增速曲线极其困难。</p>
+
+<p>他将此归功于"像创业公司一样运作"。具体方法是"Project Hawaii"——组建一个小团队，聚焦一个非常窄的服务领域（转化率优化），像回到 2007 年在 Rause Street 创业时一样工作。"不要装修整栋房子。挑一个房间，做到完美，然后一个房间一个房间来。"</p>
+
+<div class="quote quote-orange">
+"Great leadership is presence, not absence. I think a generation of management consulting taught us that CEOs should trust their people and get out of the way. And I don't think trust and get out of the way are the same thing."
+<span class="attr">— Brian Chesky, Airbnb CEO</span>
+</div>
+
+<p>这不是所有人都喜欢的工作方式。有人离开了，但留下的人发现：当 CEO 深度参与时，工作反而更简单了——官僚主义减少了，阻碍被清除了。Chesky 逐渐从每个细节中后退，但留下的团队已经形成了"肌肉记忆"——就像学会高尔夫挥杆之后，你不需要每次都盯着每一个动作。</p>
+
+<p>他还预言了"AI Founder Mode"的到来：在 AI 时代，每个人都应该亲自动手。"不应该再有纯粹的人员管理者——每个人都有机会亲近细节和数据。很难想象一个人只管理人而不管理 Agent。"</p>
+
+<div class="quote quote-red">
+"26 year old me and Joe and Nate could f*** us up if we wanted to."
+<span class="attr">— Brian Chesky（对团队直言：年轻的自己可以颠覆现在的 Airbnb）</span>
+</div>
+</section>
+
+<section>
+<h2>Airbnb 的 AI 转型：60% 代码由 AI 生成</h2>
+
+<p>Airbnb 的 AI 转型数字令人印象深刻：60% 的代码由 AI 生成（是竞争对手基准的 2 倍），客服工单成本下降 10%，40% 联系 Airbnb 的顾客由 AI 直接解决问题。</p>
+
+<p>但 Chesky 最引人注目的观点与技术本身无关——而是关于 AI 的界面。</p>
+
+<div class="quote quote-blue">
+"I do not think a chatbot is the right interface for travel or e-commerce. That might be a radical statement."
+<span class="attr">— Brian Chesky</span>
+</div>
+
+<p>他列出了 Chatbot 的四个结构性问题：(1) 纯文本——照片只是附属品；(2) 没有直接操作——每次都要打字，不能拖拽、筛选、浏览；(3) 难以比较——电商和旅行的本质是比较购物，Chatbot 很难展示成百上千个选项；(4) 单人模式——而旅行规划天然是协作的，85% 的 Airbnb 用户会发消息。</p>
+
+<p>Chesky 的结论是：未来是 Agent，不是 App——但不是文本驱动的 Chatbot，而是有丰富视觉界面的 Agent。"我正在描述的东西会颠覆旅行行业，比现在的 Chatbot 做得更彻底——后者实际上在给旅行公司导流，因为 Chatbot 的推荐流量转化率比 Google 更高。"</p>
+
+<p>他也坦诚地承认：Airbnb 的 App——用户能看到的那 20%——是相对容易复制的。"如果你看到的 App 是 Airbnb 的全部，那你只看到了 20%。" 每晚 4-500 万人在 100 多个国家住在 Airbnb——这涉及支付、客服、纠纷仲裁、$3 万亿财产保障、550 万房东管理。"Most of Airbnb is not the app that you use. It's mostly the offline experience. It's the operation."</p>
+</section>
+
+<section>
+<h2>消费者 AI：被忽视的前沿</h2>
+
+<p>Chesky 指出了一个令人不安的数据：YC 最近一批 175 家公司中，只有 16 家做消费者产品。几乎所有 AI 创业都在做企业服务和编程工具。</p>
+
+<p>原因不难理解：企业客户更容易赚钱，商业模式更可预测。但他认为，当所有人扎堆企业服务时，消费者端的空白反而是最大的机会。历史在重复——互联网早期，最优秀的设计师拒绝了"网页设计"，认为那比平面设计低一等。结果是工程师和产品经理填补了空白。Chesky 认为，产品经理这个职位的诞生，在一定程度上就是因为设计师在数字时代的早期缺席。</p>
+
+<div class="quote quote-green">
+"If I were starting Airbnb today, I'd be Vibe Coding and Claude Code."
+<span class="attr">— Brian Chesky</span>
+</div>
+
+<p>"我真的很担心一整代设计师、艺术家和创意人会选择旁观 AI。这是我一生中创意人最大的机会。" 他认为未来的互联网不一定是全文本的——新的图像和视频生成模型正在打开纯文本之外的交互可能。</p>
+</section>
+
+<section>
+<h2>Airbnb 的下一步：核心之外的三圈增长</h2>
+
+<p>Chesky 描画了一个清晰的三圈增长战略。</p>
+
+<p><strong>核心 STR（短期租赁）</strong>：年 GMV ~$1,000 亿。每 8-9 个住酒店的人中，如果能多争取 1 个住 Airbnb，可以翻倍到 $2,000 亿。</p>
+
+<p><strong>酒店</strong>：全球酒店市场是 STR 的 8-9 倍。其中约一半是独立/精品酒店——它们不属于连锁品牌，被 OTA 的高佣金压迫，有些被迫加盟 Marriott 或 Hilton。Airbnb 可以为它们提供替代分销渠道。</p>
+
+<p><strong>服务</strong>：Chesky 称之为"没有 Amazon 的服务业"。你可以按一个按钮让车来接你，按一个按钮让食物送到——但你能按一个按钮做的事情远不止这些。"我不知道任何一个单一品类市场很大，但如果你把 80 个不同的服务垂直加起来，那就是另一个很大的市场。"</p>
+
+<p><strong>长住（30 天以上）</strong>：越来越多的人靠笔记本工作，数字游民趋势在加速。这是一个和短租完全不同的市场。</p>
+</section>
+
+<section>
+<h2>营销、分发与市场集中度</h2>
+
+<p>Chesky 提出一个有趣的观察：CMO 可能是硅谷流动率最高的高管职位。"你不会看到很多 CFO 或 CTO 换人，但 CMO 的流动率非常高。因为有效的营销手段每几年就变一次——一旦某种手段被所有人使用，它就失效了。" 这叫"Banner Blindness"——看多了就视而不见。</p>
+
+<p>但 Airbnb 最成功的营销不是任何广告投放。Barbie 电影上映时，他们将 Malibu 的一栋房子改造成 Barbie Malibu Dream House——整个互联网都在讨论，ROI 比任何广告都好。Red Bull 的平流层跳伞投入不到 $100 万，获得 10 亿+ 观看。"稍微有点疯狂、有点不正常的东西才会被人注意到。"</p>
+
+<p>与此同时，市场集中度达到了历史高位。AI Big 10（Mag-7 + AMD、Broadcom、Micron）占美股 40%。作为参考，铁路股在 1835-1910 年曾占美国股市 63%。日本泡沫、Nifty Fifty、科技与电信泡沫——历史上每次这种程度的集中都值得警惕。</p>
+
+<p>Chesky 同时指出，消费者分发已经成熟。"我们创立 Airbnb 时，App Store 还年轻，互联网还在增长。每年有上亿新用户上线——你搭上这股潮流就能增长。" 现在渠道不再增长，但 App Store 排名靠前的仍然是新 App。"如果你做的事情真正有突破性，消费者还是会找到你。你只是需要自己的新策略——任何标准化的手段都可能已经过时。"</p>
+</section>
+
+<section>
+<h2>DeepSeek 与 Ryan Cohen：两个赌注</h2>
+
+<p>节目中还有两个值得一提的故事。</p>
+
+<p>DeepSeek 正在募资 $70 亿，估值 $500 亿——中国历史上最大的一笔 AI 融资。最令人震惊的是：创始人个人出资 40%（约 $30 亿），持有公司 90% 的股份。这在如此体量的公司中前所未见。他的算力军备竞赛赌注是：用足够的 GPU，中国开源模型可以在几个月内重新追上前沿。</p>
+
+<p>另一个赌注来自于 Ryan Cohen。他在尝试以 $560 亿敌意收购 eBay——而 GameStop 市值仅 $110 亿。他在 CNBC 的采访（"half cash, half stock"）成了 meme。但 Cohen 的职业生涯就是用被嘲笑的想法建成的：在线卖 40 磅重的狗粮？去 Sand Hill Road 挨家挨户敲门，所有 VC 都说不可能。Chewy 最终以 $33.5 亿卖给 PetSmart，是当时最大的电商交易记录。他的秘密武器：员工给客户写手写卡片，给失去宠物的主人送花——创造了反常的客户忠诚度。</p>
+
+<div class="quote quote-red">
+"The more eBay fights me, the more I'm gonna not take no for an answer. I'm not going away."
+<span class="attr">— Ryan Cohen, quoted in the Financial Times, cited on TBPN</span>
+</div>
+</section>
+
+<section>
+<h2>核心金句</h2>
+
+<div class="quote quote-blue">
+"60% of our code is now written by AI, which is twice our benchmark of our competitors and peers."
+<span class="attr">— Brian Chesky, Airbnb CEO</span>
+</div>
+
+<div class="quote quote-green">
+"I do not think a chatbot is the right interface for travel or e-commerce. That might be a radical statement."
+<span class="attr">— Brian Chesky</span>
+</div>
+
+<div class="quote quote-orange">
+"Great leadership is presence, not absence. I think a generation of management consulting taught us that CEOs should trust their people and get out of the way. And I don't think trust and get out of the way are the same thing."
+<span class="attr">— Brian Chesky</span>
+</div>
+
+<div class="quote quote-purple">
+"In restaurants, fundamentals win championships."
+<span class="attr">— Jonathan Neman, Sweetgreen CEO</span>
+</div>
+
+<div class="quote quote-yellow">
+"Don't try to change the whole company. Try to change a corner of the company. It's kind of like don't renovate the whole house. Pick like one room and make it perfect and then go room to room."
+<span class="attr">— Brian Chesky</span>
+</div>
+
+<div class="quote quote-red">
+"If I were starting Airbnb today, I'd be Vibe Coding and Claude Code."
+<span class="attr">— Brian Chesky</span>
+</div>
+
+<div class="quote quote-blue">
+"The non happy path to me is the Pixar movie Wall-E, which is a future I hope we avoid."
+<span class="attr">— Josh Reeves, Gusto CEO</span>
+</div>
+</section>
+
+<footer>
+<p>Source: <a href="https://share.transistor.fm/s/ea114101">TBPN — Intel &amp; Apple, The American Economic Rollercoaster</a></p>
+<p>Generated by PodDeck · May 2026</p>
+</footer>
+
+</article>
+</body>
+</html>
