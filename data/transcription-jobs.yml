@@ -601,10 +601,11 @@ jobs:
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a09d58b1b7bd502955258ab/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lmeczS2JtKzE79rKpVM-RC5yw22M.m4a
     task_id: 78e09cd0-049e-4c10-a665-93694c452862
     submission_mode: url
-    status: running
+    status: failed
     retries: 0
     submitted_at: 2026-05-25T19:26:26.342Z
-    updated_at: 2026-05-25T19:27:28.778Z
+    updated_at: 2026-05-26T20:07:12.107Z
+    error: DashScope task ended with UNKNOWN
   - key: unchained:0cfe5894-5709-11f1-a029-7b83aa810d2c:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4910645460.mp3:attempt:2026-05-25T19:26:26.702Z:chunk:0
     parent_key: unchained:0cfe5894-5709-11f1-a029-7b83aa810d2c:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4910645460.mp3
     attempt_key: unchained:0cfe5894-5709-11f1-a029-7b83aa810d2c:20260524:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4910645460.mp3:attempt:2026-05-25T19:26:26.702Z
@@ -698,7 +699,83 @@ jobs:
     audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB837.mp3
     task_id: a443ec77-f81c-4582-a6ff-7fd0271e1709
     submission_mode: url
-    status: running
+    status: failed
     retries: 0
     submitted_at: 2026-05-25T19:26:58.411Z
-    updated_at: 2026-05-25T19:27:33.540Z
+    updated_at: 2026-05-26T20:07:14.031Z
+    error: DashScope task ended with UNKNOWN
+  - key: xiaojun:6a00aa051b7bd50295dfe41d:20260511:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a00aa051b7bd50295dfe41d/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ll7qIcIWWGFSsORHr4yY-UuqAe8h.m4a
+    attempt_key: 2026-05-26T20:07:14.387Z
+    id: 6a00aa051b7bd50295dfe41d
+    source: xiaojun
+    title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a00aa051b7bd50295dfe41d/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ll7qIcIWWGFSsORHr4yY-UuqAe8h.m4a
+    task_id: 3fc23a0a-1ec3-403c-8ed0-84fc79df7f6d
+    submission_mode: url
+    status: running
+    retries: 0
+    submitted_at: 2026-05-26T20:07:14.387Z
+    updated_at: 2026-05-26T20:08:07.687Z
+  - key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3:attempt:2026-05-26T20:07:14.786Z:chunk:0
+    parent_key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3
+    attempt_key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3:attempt:2026-05-26T20:07:14.786Z
+    id: 5574733e-56fe-11f1-a622-57cc8cdc6a43
+    source: unchained
+    title: "The Bond Market Is the Boss Now: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3
+    task_id: d8a7a6eb-36a5-453f-b2f5-5555171eb5e7
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-26T20:07:14.786Z
+    updated_at: 2026-05-26T20:08:09.575Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260527/04%3A08/d8a7a6eb-36a5-453f-b2f5-5555171eb5e7.json?Expires=1779912480&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=aKXV7F7zL4dfCNiPZSZBiPCMKBo%3D&response-content-disposition=attachment%3Bfilename%3Dd8a7a6eb-36a5-453f-b2f5-5555171eb5e7.json
+    completed_at: 2026-05-26T20:08:09.575Z
+  - key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3:attempt:2026-05-26T20:07:14.786Z:chunk:1
+    parent_key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3
+    attempt_key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3:attempt:2026-05-26T20:07:14.786Z
+    id: 5574733e-56fe-11f1-a622-57cc8cdc6a43
+    source: unchained
+    title: "The Bond Market Is the Boss Now: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3
+    task_id: 9e4e1dad-dcb1-4ba5-bbc4-2f45b06927c0
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-26T20:07:14.786Z
+    updated_at: 2026-05-26T20:08:11.003Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260527/04%3A08/9e4e1dad-dcb1-4ba5-bbc4-2f45b06927c0.json?Expires=1779912482&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=M3KyNAqlaodpcoC3oQUTCNztT8Q%3D&response-content-disposition=attachment%3Bfilename%3D9e4e1dad-dcb1-4ba5-bbc4-2f45b06927c0.json
+    completed_at: 2026-05-26T20:08:11.003Z
+  - key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3:attempt:2026-05-26T20:07:14.786Z:chunk:2
+    parent_key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3
+    attempt_key: unchained:5574733e-56fe-11f1-a622-57cc8cdc6a43:20260523:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3:attempt:2026-05-26T20:07:14.786Z
+    id: 5574733e-56fe-11f1-a622-57cc8cdc6a43
+    source: unchained
+    title: "The Bond Market Is the Boss Now: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4356092823.mp3
+    task_id: ceb867bd-dc36-4830-8063-6bddcd0f5e8b
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-05-26T20:07:14.786Z
+    updated_at: 2026-05-26T20:08:11.663Z
+    transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260527/04%3A07/ceb867bd-dc36-4830-8063-6bddcd0f5e8b.json?Expires=1779912478&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=a9k6QuZSWQbzib%2FQGIg42%2B%2FCqUo%3D&response-content-disposition=attachment%3Bfilename%3Dceb867bd-dc36-4830-8063-6bddcd0f5e8b.json
+    completed_at: 2026-05-26T20:08:11.663Z
+  - key: risky-business:risky-business-aHR0cHM6Ly9yaXNr:20260506:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB836.mp3
+    attempt_key: 2026-05-26T20:07:37.337Z
+    id: risky-business-aHR0cHM6Ly9yaXNr
+    source: risky-business
+    title: "Risky Business #836 -- You can&apos;t patch the bugpocalypse"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB836.mp3
+    task_id: c9a9163f-55bb-4d81-b5ee-24e39e42dd1e
+    submission_mode: url
+    status: running
+    retries: 0
+    submitted_at: 2026-05-26T20:07:37.337Z
+    updated_at: 2026-05-26T20:08:12.313Z

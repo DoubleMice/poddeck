@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-05-26T06:53:16.206Z
+refreshed_at: 2026-05-26T20:07:10.924Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 12
-done: 0
-pending: 10
+done: 1
+pending: 9
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 1
@@ -159,7 +159,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: a0e13547-1b82-492f-8192-071f20735103
     title: GameStop + eBay, Neural Computers | Nat Eliason, Michael York, Maddie Hall, Anjney Midha, Ben Lamm, Jake Stauch,

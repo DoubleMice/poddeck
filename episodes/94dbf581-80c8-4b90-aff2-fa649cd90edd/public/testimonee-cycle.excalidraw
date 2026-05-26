@@ -1,0 +1,209 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 65, "y": 5, "width": 350, "height": 28,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "Testimonee 飞轮效应 · Virtuous Cycle",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "node1-box",
+      "type": "rectangle",
+      "x": 160, "y": 55, "width": 160, "height": 60,
+      "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100,
+      "roundness": {"type": 3},
+      "seed": 1, "version": 1, "versionNonce": 1, "isDeleted": false
+    },
+    {
+      "id": "node1-text",
+      "type": "text",
+      "x": 168, "y": 63, "width": 144, "height": 44,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 13, "fontFamily": 1,
+      "text": "Testimonee 代言人\nEisenhower · Bond · Federer",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "node2-box",
+      "type": "rectangle",
+      "x": 330, "y": 160, "width": 130, "height": 60,
+      "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100,
+      "roundness": {"type": 3},
+      "seed": 2, "version": 1, "versionNonce": 2, "isDeleted": false
+    },
+    {
+      "id": "node2-text",
+      "type": "text",
+      "x": 338, "y": 170, "width": 114, "height": 40,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 13, "fontFamily": 1,
+      "text": "品牌价值 ↑\n全球认知 · 身份象征",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "node3-box",
+      "type": "rectangle",
+      "x": 160, "y": 285, "width": 160, "height": 60,
+      "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100,
+      "roundness": {"type": 3},
+      "seed": 3, "version": 1, "versionNonce": 3, "isDeleted": false
+    },
+    {
+      "id": "node3-text",
+      "type": "text",
+      "x": 168, "y": 293, "width": 144, "height": 44,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 13, "fontFamily": 1,
+      "text": "需求 ↑ 等待名单\nDemand · 供不应求 · 溢价",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "node4-box",
+      "type": "rectangle",
+      "x": 20, "y": 160, "width": 140, "height": 60,
+      "strokeColor": "#862e9c", "backgroundColor": "#eebefa",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100,
+      "roundness": {"type": 3},
+      "seed": 4, "version": 1, "versionNonce": 4, "isDeleted": false
+    },
+    {
+      "id": "node4-text",
+      "type": "text",
+      "x": 27, "y": 168, "width": 126, "height": 44,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 13, "fontFamily": 1,
+      "text": "定价权 & 再投资\nPricing · US Open · 签代言",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "arrow1",
+      "type": "arrow",
+      "x": 280, "y": 110, "width": 60, "height": 55,
+      "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0,0],[60,55]]
+    },
+    {
+      "id": "arrow1-label",
+      "type": "text",
+      "x": 292, "y": 122, "width": 50, "height": 28,
+      "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 10, "fontFamily": 1,
+      "text": "品牌背书\nEndorsement",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "arrow2",
+      "type": "arrow",
+      "x": 395, "y": 220, "width": -85, "height": 75,
+      "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0,0],[-85,75]]
+    },
+    {
+      "id": "arrow2-label",
+      "type": "text",
+      "x": 365, "y": 242, "width": 55, "height": 28,
+      "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 10, "fontFamily": 1,
+      "text": "需求上升\nDemand ↑",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "arrow3",
+      "type": "arrow",
+      "x": 170, "y": 310, "width": -35, "height": -95,
+      "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0,0],[-35,-95]]
+    },
+    {
+      "id": "arrow3-label",
+      "type": "text",
+      "x": 155, "y": 265, "width": 55, "height": 28,
+      "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 10, "fontFamily": 1,
+      "text": "利润再投\nReinvest",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "arrow4",
+      "type": "arrow",
+      "x": 95, "y": 160, "width": 55, "height": -55,
+      "strokeColor": "#862e9c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0,0],[55,-55]]
+    },
+    {
+      "id": "arrow4-label",
+      "type": "text",
+      "x": 107, "y": 115, "width": 55, "height": 28,
+      "strokeColor": "#862e9c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 10, "fontFamily": 1,
+      "text": "签新代言\nNew signings",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "bottom-note-box",
+      "type": "rectangle",
+      "x": 290, "y": 372, "width": 175, "height": 22,
+      "strokeColor": "#c92a2a", "backgroundColor": "#fff0f0",
+      "fillStyle": "hachure", "strokeWidth": 1.5, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100,
+      "roundness": {"type": 3},
+      "seed": 5, "version": 1, "versionNonce": 5, "isDeleted": false
+    },
+    {
+      "id": "bottom-note-text",
+      "type": "text",
+      "x": 295, "y": 375, "width": 165, "height": 16,
+      "strokeColor": "#c92a2a", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 11, "fontFamily": 1,
+      "text": "不付代言费 = 更真实  ·  No endorsement fee",
+      "textAlign": "center", "verticalAlign": "middle"
+    }
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}

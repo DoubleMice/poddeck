@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-05-26T06:53:16.301Z
+refreshed_at: 2026-05-26T20:07:11.011Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 130
-done: 0
+done: 1
 pending: 0
-needs_transcript: 127
+needs_transcript: 126
 transcribing: 0
 transcribe_failed: 3
 downloaded: 0
@@ -60,8 +60,12 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-26T20:07:14.786Z
+    transcript_job_id: d8a7a6eb-36a5-453f-b2f5-5555171eb5e7,9e4e1dad-dcb1-4ba5-bbc4-2f45b06927c0,ceb867bd-dc36-4830-8063-6bddcd0f5e8b
+    transcript_completed_at: 2026-05-26T20:08:11.663Z
   - id: 95b52c22-5591-11f1-92f6-fb1f1333f4f9
     title: "Why the Consensus After-Party Set Crypto Back: DEX in the City"
     duration: 3471
@@ -5224,6 +5228,7 @@ episodes:
           
 
 
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5407,6 +5412,7 @@ episodes:
       Unchained:⁠⁠
 
         
+
 
 
         
@@ -6613,6 +6619,7 @@ episodes:
           
 
 
+
         
       Previous appearances on Unchained:
 
@@ -7544,6 +7551,7 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
 
 
         
@@ -8736,6 +8744,7 @@ episodes:
        
 
 
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -9129,6 +9138,7 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
+
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices

@@ -1,0 +1,113 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "big-circle",
+      "type": "ellipse",
+      "x": 30, "y": 60, "width": 440, "height": 440,
+      "strokeColor": "#adb5bd", "backgroundColor": "#f1f3f5",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 1, "version": 1, "versionNonce": 1, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "big-label",
+      "type": "text",
+      "x": 60, "y": 150, "width": 380, "height": 40,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "全球手表总产量 7-9 亿只/年",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "全球手表总产量 7-9 亿只/年",
+      "lineHeight": 1.25, "baseline": 32
+    },
+    {
+      "id": "swiss-circle",
+      "type": "ellipse",
+      "x": 250, "y": 260, "width": 180, "height": 180,
+      "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 3, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 2, "version": 1, "versionNonce": 2, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "swiss-label",
+      "type": "text",
+      "x": 265, "y": 310, "width": 150, "height": 50,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "瑞士 1,700万只\n= 2% 产量",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "瑞士 1,700万只\n= 2% 产量",
+      "lineHeight": 1.25, "baseline": 40
+    },
+    {
+      "id": "swiss-rev",
+      "type": "text",
+      "x": 200, "y": 450, "width": 280, "height": 40,
+      "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 15, "fontFamily": 1,
+      "text": "但它 = 45% 的全球收入！",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "但它 = 45% 的全球收入！",
+      "lineHeight": 1.25, "baseline": 30
+    },
+    {
+      "id": "arrow-rev",
+      "type": "arrow",
+      "x": 340, "y": 440, "width": 0, "height": 40,
+      "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0,0],[0,40]]
+    },
+    {
+      "id": "mech-note",
+      "type": "text",
+      "x": 200, "y": 500, "width": 280, "height": 30,
+      "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 12, "fontFamily": 1,
+      "text": "且 86% 的出口收入来自机械表",
+      "textAlign": "center", "verticalAlign": "middle"
+    },
+    {
+      "id": "rolex-note-box",
+      "type": "rectangle",
+      "x": 450, "y": 320, "width": 200, "height": 80,
+      "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 3, "version": 1, "versionNonce": 3, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "rolex-note-label",
+      "type": "text",
+      "x": 460, "y": 335, "width": 180, "height": 50,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100,
+      "fontSize": 13, "fontFamily": 1,
+      "text": "Rolex 一家\n= 瑞士行业30% 收入\n= 40%+ 利润",
+      "textAlign": "center", "verticalAlign": "middle"
+    }
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}

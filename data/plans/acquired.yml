@@ -1,10 +1,10 @@
 source: acquired
-refreshed_at: 2026-05-26T06:53:16.376Z
+refreshed_at: 2026-05-26T20:07:11.081Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 1
@@ -60,7 +60,7 @@ episodes:
       ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
       and is intended for informational and entertainment purposes only. You should do your own research and make your
       own independent decisions when considering any financial transactions.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: dashscope
     transcript_job_id: 5bb6590d-d49f-4605-8c77-85dc131ef562
