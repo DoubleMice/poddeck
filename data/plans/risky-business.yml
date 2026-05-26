@@ -1,13 +1,13 @@
 source: risky-business
-refreshed_at: 2026-05-25T19:26:23.872Z
+refreshed_at: 2026-05-26T06:53:16.364Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 26
 done: 0
 pending: 0
-needs_transcript: 24
-transcribing: 1
-transcribe_failed: 1
+needs_transcript: 26
+transcribing: 0
+transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: risky-business-aHR0cHM6Ly9yaXNr
@@ -37,10 +37,8 @@ episodes:
 
 
       This episode is also available on YouTube.
-    status: transcribe_failed
+    status: needs_transcript
     priority: 1
-    transcript_completed_at: 2026-05-25T19:26:24.821Z
-    transcript_error: DashScope task ended with UNKNOWN
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #837 -- GitHub Actions footgun claims TanStack"
     duration: 3915
@@ -66,11 +64,8 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: transcribing
+    status: needs_transcript
     priority: 1
-    transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-25T19:26:58.411Z
-    transcript_job_id: a443ec77-f81c-4582-a6ff-7fd0271e1709
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #836 -- You can&apos;t patch the bugpocalypse"
     duration: 3716
@@ -118,7 +113,6 @@ episodes:
         
         
           Mondoo: Co-founder Dominik Richter pitches Mondoo, an AI-powered “service as software” in the vulnerability management space.
-
 
         
 
@@ -223,7 +217,6 @@ episodes:
         
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
-
 
         
 
