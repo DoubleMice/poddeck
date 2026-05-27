@@ -1,15 +1,77 @@
 source: tbpn
-refreshed_at: 2026-05-26T20:07:10.924Z
+refreshed_at: 2026-05-27T07:11:03.326Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 12
-done: 1
+total_candidates: 11
+done: 0
 pending: 9
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: 648552bb-27a7-4535-acd8-cff2bb81dc92
+    title: Ferrari EV, Enhanced Games, Alcohol & Podcasting | Christopher Hale, Sean Henry, Eric Ries, Alex Atallah
+    duration: 8690
+    published: Tue, 26 May 2026 13:51:34 -0700
+    published_sort: "20260526"
+    first_seen_at: 2026-05-27T07:11:03.318Z
+    url: https://share.transistor.fm/s/96987a7b
+    audio_url: https://media.transistor.fm/96987a7b/d329ce92.mp3
+    image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/96987a7b/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:27) - Ferrari EV\r
+
+      (40:58) - Enhanced Games\r
+
+      (47:41) - Christopher Hale, a Catholic writer and former executive director of Catholics in Alliance for the
+      Common Good, discusses Pope Leo XIV's recent encyclical on artificial intelligence, highlighting the Pope's
+      emphasis on maintaining human dignity and responsibility in technological advancements. He notes the Pope's
+      concern over delegating human decisions to machines, especially in contexts like warfare, and underscores the call
+      for Silicon Valley to consider the ethical implications of AI development.\r
+
+      (01:10:48) - Alcohol & Podcasting\r
+
+      (01:17:21) - Sean Henry, co-founder and CEO of Stord, announced the company's recent $250 million funding round,
+      elevating its valuation to $3 billion. He discussed Stord's decade-long development of a vertically integrated
+      platform that leverages robotics and AI to enhance commerce, enabling faster deliveries and cost efficiencies.
+      Henry also highlighted the launch of Stord Labs, dedicated to testing next-generation robotics and AI, and the
+      company's international expansion into markets like Canada, Europe, China, and Australia.\r
+
+      (01:31:05) - Eric Ries is an entrepreneur and author best known for The Lean Startup, which helped popularize
+      iterative product development and rapid experimentation in startups. He is also the author of The Startup Way and
+      Incorruptible, where he explores institutional trust, governance, and how organizations can remain resilient and
+      accountable at scale.\r
+
+      (02:09:45) - Alex Atallah, co-founder and CEO of OpenRouter, discusses the evolution of AI models and the
+      importance of neurodiversity in AI agents selecting cost-effective tools for specific tasks. He highlights
+      OpenRouter's recent $113 million funding round, led by Capital G with participation from existing investors and
+      strategic partners like Nvidia, ServiceNow, and Databricks, emphasizing the company's commitment to fostering a
+      diverse team. Atallah also addresses the trend of companies optimizing AI inference costs by utilizing multiple
+      models tailored to specific tasks, leading to significant cost savings and improved performance.\r
+
+      (02:22:45) - 𝕏 Timeline Reactions
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
       Tae Kim, Immad Akhund, Marcus Milione
@@ -81,85 +143,6 @@ episodes:
 
       https://www.youtube.com/@TBPNLive"
     status: failed
-    priority: 1
-  - id: 689f048c-da42-477b-bc59-d0fe2ff52aa6
-    title: $GME CEO Ryan Cohen, OpenAI vs Elon Musk Continues, U.S. Gets Early Access to AI Models | Harley Finkelstein,
-      Scott Strazik, Brian Elliott, Stephen Balaban & Michel Combes
-    duration: 7725
-    published: Tue, 05 May 2026 13:28:52 -0700
-    published_sort: "20260505"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/8ef0fd4f
-    audio_url: https://media.transistor.fm/8ef0fd4f/45483a3a.mp3
-    image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/8ef0fd4f/transcription.txt
-    transcript_type: text/plain
-    summary: "(01:06) - OpenAI vs Elon Musk Continues\r
-
-      (09:19) - U.S. Gets Early Access to AI Models\r
-
-      (21:22) - Courtroom Simulator\r
-
-      (23:25) - Coinbase Cuts 14% of Staff\r
-
-      (28:37) - Meta's Cheap Stock May Be A Trap\r
-
-      (32:51) - Harley Finkelstein, born November 8, 1983, in Montreal, is a Canadian entrepreneur and the president of
-      Shopify. In the conversation, he highlights Shopify's recent achievements, including consecutive quarters with
-      over $100 billion in Gross Merchandise Volume (GMV) and a 34% increase in revenue to $3.2 billion. He also
-      discusses the growing adoption of Shopify by major brands like LVMH and Lands' End, the impact of AI on
-      entrepreneurship, and the expansion of agentic commerce through platforms like ChatGPT and Google.\r
-
-      (45:41) - Scott Strazik, CEO of GE Vernova, has over 20 years of experience in leadership, finance, and operations
-      within General Electric, including roles as CEO of GE's Gas Power business and CFO of GE Aviation's Commercial
-      Engine Operations. He discusses the significant role GE Vernova plays in global electricity generation, with its
-      equipment contributing to about a third of the world's electricity outside China. Strazik emphasizes the company's
-      commitment to meeting the growing global demand for electric power through its diverse portfolio, including gas
-      turbines, nuclear power plants, wind turbines, and grid electrification technologies. He also highlights the
-      importance of investing in automation and workforce development to scale production efficiently and address
-      challenges in building new power plants, particularly in remote locations.\r
-
-      (01:12:59) - Brian Elliott, CEO of Blitzy, discusses the company's recent $200 million funding at a $1.4 billion
-      valuation, highlighting their autonomous software development platform designed for complex enterprise use cases.
-      He explains how Blitzy serves industries like banking and insurance by autonomously improving large codebases over
-      extended periods, utilizing foundational models from OpenAI, Gemini, and Anthropic. Elliott emphasizes their
-      direct go-to-market approach, demonstrating rapid codebase analysis and autonomous operation, setting a new
-      benchmark for autonomy in software development.\r
-
-      (01:20:24) - Stephen Balaban, co-founder and former CEO of Lambda, has transitioned to the role of Chief
-      Technology Officer, passing leadership to Michelle Combs, the former CEO of Sprint and SoftBank International. In
-      their discussion, they emphasize a shared commitment to scaling the company's AI infrastructure by focusing on
-      capital formation and operational expansion, aiming to provide the most efficient computing power for their
-      customers. Balaban will continue to lead product vision and technology direction, while Combs will drive growth
-      and operational excellence.\r
-
-      (01:29:17) - Ryan Cohen, CEO of GameStop and co-founder of Chewy, has made an unsolicited $56 billion bid to
-      acquire eBay, offering $125 per share in a half-cash, half-stock deal. He envisions transforming eBay into a
-      formidable competitor to Amazon by integrating GameStop's physical stores with eBay's online platform, enhancing
-      services like live commerce and authentication of collectibles. Cohen emphasizes his commitment to the venture,
-      proposing performance-based compensation and expressing confidence in his ability to revitalize eBay's
-      operations.\r
-
-      (02:02:20) - Timeline Reactions
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: generated
     priority: 1
   - id: a0e13547-1b82-492f-8192-071f20735103
     title: GameStop + eBay, Neural Computers | Nat Eliason, Michael York, Maddie Hall, Anjney Midha, Ben Lamm, Jake Stauch,
@@ -923,92 +906,6 @@ episodes:
       (01:53:46) - Fake Bear Attack\r
 
       (01:58:58) - 𝕏 Timeline Reactions
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: pending
-    priority: 1
-  - id: 8545829a-14bc-4c24-bb59-468f8b58bce8
-    title: Tim Cook Retires, Mark Gurman Joins, Images 2.0 | Howie Liu, Scott Stevenson, Alex Wiltschko, Spiros Xanthos,
-      Carolina Aguilar, Jake Jurewicz
-    duration: 7979
-    published: Tue, 21 Apr 2026 13:35:23 -0700
-    published_sort: "20260421"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/d5e38cc9
-    audio_url: https://media.transistor.fm/d5e38cc9/8b766a8d.mp3
-    image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/d5e38cc9/transcription.txt
-    transcript_type: text/plain
-    summary: "(00:15) - Tim Cook Retires\r
-
-      (19:43) - Howie Liu, co-founder and CEO of Airtable, discusses his journey from learning programming in high
-      school to founding Etacts, which was acquired by Salesforce, and eventually establishing Airtable to democratize
-      software creation. He emphasizes the importance of building a product that is significantly better than existing
-      options, highlighting Airtable's evolution into a low-code platform that empowers users to create custom
-      applications without coding. Liu also reflects on the company's growth, noting its valuation milestones and the
-      strategic patience involved in developing Airtable over several years before its public launch.\r
-
-      (47:50) - Mark Gurman, a prominent technology journalist known for his in-depth coverage of Apple, discusses the
-      recent leadership transition at Apple, highlighting John Ternus's appointment as CEO following Tim Cook's decision
-      to step down. He emphasizes Ternus's decisive leadership style, likened to Steve Jobs, and his focus on product
-      innovation, including the development of new AI-powered devices and a significant revamp of the iPhone lineup.
-      Gurman also notes that Ternus's promotion is expected to bring a sharper focus to Apple's product development,
-      aiming to reinvigorate the company's innovation pipeline.\r
-
-      (01:08:28) - Image 2 Reactions\r
-
-      (01:17:50) - Scott Stevenson, co-founder and CEO of Spellbook, discusses the company's significant growth,
-      highlighting that they have onboarded over 4,400 customers across 80 countries, making Spellbook the most widely
-      used AI contract review tool globally. He attributes this rapid international adoption to strong inbound interest
-      and emphasizes the product's multilingual capabilities, facilitated by AI models adept at handling various
-      languages and supplemented with jurisdiction-specific legislation and norms. Stevenson also critiques the use of
-      Contracted Annual Recurring Revenue (CARR) as a metric, pointing out how some companies inflate their ARR figures
-      by reporting future, non-guaranteed revenues, and advocates for more transparent and grounded revenue reporting
-      practices.\r
-
-      (01:33:42) - Alex Wiltschko, founder and CEO of Osmo, is pioneering the integration of artificial intelligence
-      with olfactory science to endow computers with a sense of smell. In the conversation, he discusses the
-      complexities of digitizing scent, the development of Osmo's proprietary Olfactory Intelligence technology, and its
-      applications in creating fragrances for brands. He also highlights the company's recent $70 million Series B
-      funding aimed at scaling their AI-powered olfaction technology across various sectors.\r
-
-      (01:47:04) - Spiros Xanthos, co-founder and CEO of Resolve AI, discusses how their AI agents assist in debugging
-      and managing production systems, complementing coding agents that generate code. He highlights the importance of
-      reliability for businesses like Coinbase, Salesforce, and MongoDB, emphasizing that Resolve AI serves as the first
-      line of defense by detecting and resolving production issues to minimize customer impact. Xanthos also notes the
-      company's rapid growth, attributing it to the significant demand for automating production operations and their
-      focus on building a successful product.\r
-
-      (01:54:11) - Carolina Aguilar, CEO and co-founder of Inbrain Neuroelectronics, discusses her company's development
-      of graphene-based brain-computer interfaces aimed at restoring health by creating intelligent connections between
-      the neural system and AI. She explains their focus on implantable systems to achieve precise neural interaction,
-      highlighting three product verticals: a semi-chronic platform for tumor and epilepsy resection nearing
-      commercialization, an implantable platform targeting Parkinson's disease, and a vagus nerve sensor for therapeutic
-      applications across various organs. Aguilar also emphasizes the importance of integrating their technology into
-      existing surgical workflows to facilitate adoption without the immediate need for advanced robotics.\r
-
-      (01:59:22) - Jake Jurewicz, co-founder and CEO of Blue Energy, has over a decade of experience in the energy and
-      construction sectors, holding degrees in Nuclear Science & Engineering and Physics from MIT. He discusses Blue
-      Energy's recent $380 million funding aimed at building the world's first project-financeable nuclear power plant
-      by prefabricating components in existing shipyards, thereby reducing construction costs and timelines. This
-      approach leverages mature light water reactor technology and centralized manufacturing techniques from offshore
-      industries to make nuclear power more economically competitive.
 
 
       Follow TBPN: 

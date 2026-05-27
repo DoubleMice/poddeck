@@ -1,15 +1,41 @@
 source: risky-business
-refreshed_at: 2026-05-26T20:07:11.073Z
+refreshed_at: 2026-05-27T07:11:03.522Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 26
+total_candidates: 27
 done: 0
 pending: 0
-needs_transcript: 24
-transcribing: 1
-transcribe_failed: 1
+needs_transcript: 27
+transcribing: 0
+transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: risky-business-aHR0cHM6Ly9yaXNr
+    title: "Risky Business #839 -- TeamPCP stole GitHub&apos;s internal repos"
+    duration: 3623
+    published: Wed, 27 May 2026 15:45:37 +1000
+    published_sort: "20260527"
+    first_seen_at: 2026-05-19T08:55:24.848Z
+    url: https://risky.biz/RB839/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/RB839.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      On this week’s show Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They cover:
+
+        TeamPCP breached GitHub’s internal repos. Now what?
+        Some absolute plonker glued Coruna to a hijacked npm package
+        CISA is worried about about open source and wants third party submissions for KEV
+        AI infrastructure is “systemically” insecure
+        Much, much more
+
+      This week’s episode is sponsored by allowlisting vendor Airlock Digital. Airlock’s founders David Cottingham and
+      Daniel Schell join Patrick Gray to talk about Microsoft briefly flagging DigitCert’s root certificate as malware.
+      Fun!
+
+
+      This episode is also available on YouTube
+    status: needs_transcript
+    priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #838 -- GitHub investigates possible breach"
     duration: 3769
@@ -64,10 +90,8 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: transcribe_failed
+    status: needs_transcript
     priority: 1
-    transcript_completed_at: 2026-05-26T20:07:14.031Z
-    transcript_error: DashScope task ended with UNKNOWN
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #836 -- You can&apos;t patch the bugpocalypse"
     duration: 3716
@@ -93,11 +117,8 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: transcribing
+    status: needs_transcript
     priority: 1
-    transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-26T20:07:37.337Z
-    transcript_job_id: c9a9163f-55bb-4d81-b5ee-24e39e42dd1e
   - id: SNAKEOILERS23PT2
     title: "Snake Oilers: Ent AI, Spacewalk and Mondoo"
     duration: 2639
@@ -118,7 +139,6 @@ episodes:
         
         
           Mondoo: Co-founder Dominik Richter pitches Mondoo, an AI-powered “service as software” in the vulnerability management space.
-
 
         
 
@@ -223,7 +243,6 @@ episodes:
         
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
-
 
         
 
