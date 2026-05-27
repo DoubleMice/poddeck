@@ -26,6 +26,7 @@ import { cleanTranscript, fetchText, preferredTranscript } from './lib/rss.ts'
 import { log } from './lib/log.ts'
 import { run } from './lib/spawn.ts'
 import { DashScopeClient, jobFromTask } from './lib/dashscope.ts'
+import { MiMoClient } from './lib/mimo.ts'
 import type { PlanEntry, PlanFile, TranscriptionJob, TranscriptionJobsFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -50,6 +51,7 @@ const autoTranscribe = process.argv.includes('--auto-transcribe')
 const transcribeLimit = Number(process.argv.find(a => a.startsWith('--transcribe-limit='))?.split('=')[1] ?? 1)
 const transcribeWaitMinutes = Number(process.argv.find(a => a.startsWith('--transcribe-wait-minutes='))?.split('=')[1] ?? 0)
 const dashscopeRegion = (process.argv.find(a => a.startsWith('--dashscope-region='))?.split('=')[1] ?? 'cn') as 'cn' | 'intl'
+const transcriptProvider = (process.env.TRANSCRIPT_PROVIDER || 'mimo').toLowerCase() as 'mimo' | 'dashscope'
 const TRANSCRIBE_MAX_RETRIES = 3
 const DATA_URI_CHUNK_SECONDS = Number(process.env.DASHSCOPE_DATA_URI_CHUNK_SECONDS ?? 900)
 const DATA_URI_MAX_BYTES = Number(process.env.DASHSCOPE_DATA_URI_MAX_MB ?? 18) * 1024 * 1024
@@ -181,6 +183,16 @@ function dashscopeClient(): DashScopeClient | null {
   return new DashScopeClient({ apiKey, region: dashscopeRegion })
 }
 
+function mimoClient(): MiMoClient | null {
+  const apiKey = process.env.MIMO_API_KEY
+  if (!apiKey) return null
+  return new MiMoClient({
+    apiKey,
+    model: process.env.MIMO_MODEL,
+    baseUrl: process.env.MIMO_BASE_URL,
+  })
+}
+
 function entryKey(sourceId: string, entry: PlanEntry): string {
   return `${sourceId}:${entry.id}:${entry.published_sort ?? ''}:${entry.audio_url ?? ''}`
 }
@@ -216,6 +228,7 @@ function isTranscribableAudioUrl(url: string | undefined): boolean {
 }
 
 function shouldUseDataUri(sourceId: string, audioUrl: string): boolean {
+  if (transcriptProvider === 'mimo') return true
   const lower = audioUrl.toLowerCase()
   try {
     const host = new URL(audioUrl).hostname.toLowerCase()
@@ -230,6 +243,7 @@ function shouldUseDataUri(sourceId: string, audioUrl: string): boolean {
 
 function shouldRetryFailedTranscription(sourceId: string, entry: PlanEntry): boolean {
   if (entry.status !== 'transcribe_failed' || !entry.audio_url) return false
+  if (transcriptProvider === 'mimo') return true
   if (!shouldUseDataUri(sourceId, entry.audio_url)) return false
   return isRetriableTranscriptionError(entry.transcript_error)
 }
@@ -288,11 +302,11 @@ function combineChunkTranscripts(parentKey: string, attemptKey: string, chunkCou
   return chunks.filter(Boolean).join('\n\n').trim()
 }
 
-function markEntryTranscribed(item: { entry: PlanEntry; plan: PlanFile; planPath: string }, taskId: string, now: string, text: string): void {
+function markEntryTranscribed(item: { entry: PlanEntry; plan: PlanFile; planPath: string }, taskId: string, now: string, text: string, provider: 'dashscope' | 'mimo'): void {
   mkdirSync(TRANSCRIPTS_DIR, { recursive: true })
   writeFileSync(join(TRANSCRIPTS_DIR, `${item.entry.id}.txt`), text + '\n', 'utf-8')
   item.entry.status = 'pending'
-  item.entry.transcript_provider = 'dashscope'
+  item.entry.transcript_provider = provider
   item.entry.transcript_job_id = taskId
   item.entry.transcript_completed_at = now
   item.entry.transcript_error = undefined
@@ -304,6 +318,7 @@ function maybeFinalizeChunkedTranscription(
   parentKey: string,
   item: { entry: PlanEntry; plan: PlanFile; planPath: string },
   now: string,
+  provider: 'dashscope' | 'mimo' = 'dashscope',
 ): boolean {
   const attemptKey = completeChunkAttempt(jobsFile, parentKey)
   if (!attemptKey) return false
@@ -318,7 +333,7 @@ function maybeFinalizeChunkedTranscription(
     .sort((a, b) => (a.chunk_index ?? 0) - (b.chunk_index ?? 0))
     .map(job => job.task_id)
     .join(',')
-  markEntryTranscribed(item, taskIds, now, text)
+  markEntryTranscribed(item, taskIds, now, text, provider)
   return true
 }
 
@@ -342,7 +357,7 @@ function maybeFinalizeCachedChunks(
   for (let index = 0; index < chunkCount; index++) {
     if (!existsSync(transcriptionChunkPath(key, attemptKey, index))) return false
   }
-  return maybeFinalizeChunkedTranscription(jobsFile, key, item, now)
+  return maybeFinalizeChunkedTranscription(jobsFile, key, item, now, 'dashscope')
 }
 
 function isStaleSubmitting(job: TranscriptionJob, now: string): boolean {
@@ -376,7 +391,7 @@ function dataUriFromAudioFile(path: string, mimeType: string): { fileUrl: string
   }
 }
 
-async function prepareDashScopeAudioInputs(sourceId: string, entry: PlanEntry): Promise<{ fileUrl: string; mode: 'url' | 'data_uri'; bytes?: number; chunkIndex?: number; chunkCount?: number }[]> {
+async function prepareTranscriptionAudioInputs(sourceId: string, entry: PlanEntry): Promise<{ fileUrl: string; mode: 'url' | 'data_uri'; bytes?: number; chunkIndex?: number; chunkCount?: number }[]> {
   if (!entry.audio_url) throw new Error(`No audio URL for ${entry.id}`)
   if (!shouldUseDataUri(sourceId, entry.audio_url)) return [{ fileUrl: entry.audio_url, mode: 'url' }]
 
@@ -537,7 +552,7 @@ async function pollTranscriptionJobs(
         if (job.chunk_count !== undefined && job.chunk_index !== undefined) {
           mkdirSync(transcriptionChunkDir(key, jobAttemptKey(job)), { recursive: true })
           writeFileSync(transcriptionChunkPath(key, jobAttemptKey(job), job.chunk_index), normalized.text + '\n', 'utf-8')
-          if (maybeFinalizeChunkedTranscription(jobsFile, key, item, now)) {
+          if (maybeFinalizeChunkedTranscription(jobsFile, key, item, now, 'dashscope')) {
             completed++
             log.ok(`  transcribed ${job.id} from ${job.chunk_count} chunks`)
           } else {
@@ -546,7 +561,7 @@ async function pollTranscriptionJobs(
             log.ok(`  transcribed chunk ${(job.chunk_index ?? 0) + 1}/${job.chunk_count} for ${job.id}`)
           }
         } else {
-          markEntryTranscribed(item, job.task_id, now, normalized.text)
+          markEntryTranscribed(item, job.task_id, now, normalized.text, 'dashscope')
           completed++
           log.ok(`  transcribed ${job.id} (${normalized.text.length} chars)`)
         }
@@ -624,7 +639,7 @@ async function submitTranscriptionCandidates(
     savePlan(item.planPath, item.plan)
     saveTranscriptionJobs(jobsFile)
     try {
-      const inputs = await prepareDashScopeAudioInputs(item.sourceId, entry)
+      const inputs = await prepareTranscriptionAudioInputs(item.sourceId, entry)
       let firstTaskId = ''
       for (const input of inputs) {
         const chunkKey = input.chunkCount ? `${attemptKey}:chunk:${input.chunkIndex}` : key
@@ -694,16 +709,127 @@ async function submitTranscriptionCandidates(
   return submitted
 }
 
+async function submitMiMoTranscriptionCandidates(
+  candidates: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[],
+  jobsFile: TranscriptionJobsFile,
+  client: MiMoClient,
+): Promise<number> {
+  let submitted = 0
+  for (const item of candidates) {
+    const { entry } = item
+    if (!entry.audio_url) continue
+    const now = new Date().toISOString()
+    if (dryRun) {
+      log.info(`  (dry-run) would transcribe ${item.sourceId}/${entry.id} with MiMo`)
+      submitted++
+      continue
+    }
+    const key = entryKey(item.sourceId, entry)
+    const attemptKey = `${key}:mimo:${now}`
+    entry.status = 'transcribing'
+    entry.transcript_provider = 'mimo'
+    entry.transcript_submitted_at = now
+    savePlan(item.planPath, item.plan)
+    saveTranscriptionJobs(jobsFile)
+    try {
+      const inputs = await prepareTranscriptionAudioInputs(item.sourceId, entry)
+      let finalized = false
+      const taskIds: string[] = []
+      for (const input of inputs) {
+        const chunkKey = input.chunkCount ? `${attemptKey}:chunk:${input.chunkIndex}` : key
+        const jobAttempt = input.chunkCount ? attemptKey : now
+        const pendingJob: TranscriptionJob = {
+          key: chunkKey,
+          parent_key: input.chunkCount ? key : undefined,
+          attempt_key: jobAttempt,
+          provider: 'mimo',
+          id: entry.id,
+          source: item.sourceId,
+          title: entry.title,
+          audio_url: entry.audio_url,
+          task_id: '',
+          submission_mode: input.mode,
+          chunk_index: input.chunkIndex,
+          chunk_count: input.chunkCount,
+          status: 'running',
+          retries: 0,
+          submitted_at: now,
+          updated_at: now,
+        }
+        jobsFile.jobs.push(pendingJob)
+        saveTranscriptionJobs(jobsFile)
+        const result = await client.transcribe(input.fileUrl)
+        const taskId = result.rawId || `mimo:${entry.id}:${input.chunkIndex ?? 0}:${now}`
+        taskIds.push(taskId)
+        pendingJob.task_id = taskId
+        pendingJob.status = 'succeeded'
+        pendingJob.completed_at = new Date().toISOString()
+        pendingJob.updated_at = pendingJob.completed_at
+        pendingJob.error = undefined
+        if (input.chunkCount !== undefined && input.chunkIndex !== undefined) {
+          mkdirSync(transcriptionChunkDir(key, jobAttempt), { recursive: true })
+          writeFileSync(transcriptionChunkPath(key, jobAttempt, input.chunkIndex), result.text + '\n', 'utf-8')
+          finalized = maybeFinalizeChunkedTranscription(jobsFile, key, item, pendingJob.completed_at, 'mimo')
+          log.ok(`  transcribed MiMo chunk ${(input.chunkIndex ?? 0) + 1}/${input.chunkCount} for ${entry.id}`)
+        } else {
+          markEntryTranscribed(item, taskId, pendingJob.completed_at, result.text, 'mimo')
+          finalized = true
+          log.ok(`  transcribed ${item.sourceId}/${entry.id} with MiMo (${result.text.length} chars)`)
+        }
+        saveTranscriptionJobs(jobsFile)
+      }
+      if (inputs.length > 1 && !finalized) {
+        const text = combineChunkTranscripts(key, attemptKey, inputs.length)
+        markEntryTranscribed(item, taskIds.join(','), new Date().toISOString(), text, 'mimo')
+        log.ok(`  transcribed ${item.sourceId}/${entry.id} with MiMo from ${inputs.length} chunks`)
+      }
+      entry.transcript_error = undefined
+      savePlan(item.planPath, item.plan)
+      saveTranscriptionJobs(jobsFile)
+      submitted++
+    } catch (error: any) {
+      const failedJobs = jobsForEntry(jobsFile, key).filter(job => job.status === 'running' || job.status === 'submitting' || jobAttemptKey(job) === attemptKey || jobAttemptKey(job) === now)
+      for (const job of failedJobs) {
+        if (job.status !== 'succeeded') {
+          job.status = 'failed'
+          job.error = error.message
+          job.updated_at = new Date().toISOString()
+        }
+      }
+      entry.status = 'transcribe_failed'
+      entry.transcript_error = error.message
+      entry.transcript_completed_at = new Date().toISOString()
+      savePlan(item.planPath, item.plan)
+      saveTranscriptionJobs(jobsFile)
+      log.err(`  MiMo transcription failed ${item.sourceId}/${entry.id}: ${error.message}`)
+    }
+  }
+  return submitted
+}
+
 async function runAutoTranscription(plans: { source: string; path: string; plan: PlanFile }[]): Promise<void> {
   if (!autoTranscribe) return
+  const jobsFile = loadTranscriptionJobs()
+  log.step(`Auto transcription — provider=${transcriptProvider}, fair scheduling, limit=${transcribeLimit}`)
+
+  if (transcriptProvider === 'mimo') {
+    const client = mimoClient()
+    if (!client) {
+      log.warn('auto transcription enabled but MIMO_API_KEY is missing')
+      return
+    }
+    const candidates = selectFairTranscribeCandidates(plans, jobsFile, transcribeLimit)
+    if (candidates.length > 0) await submitMiMoTranscriptionCandidates(candidates, jobsFile, client)
+    else log.info('no needs_transcript candidates available for transcription')
+    return
+  }
+
   const client = dashscopeClient()
   if (!client) {
     log.warn('auto transcription enabled but DASHSCOPE_API_KEY is missing')
     return
   }
 
-  log.step(`Auto transcription — fair scheduling, limit=${transcribeLimit}`)
-  const jobsFile = loadTranscriptionJobs()
   await pollTranscriptionJobs(plans, jobsFile, client)
 
   const candidates = selectFairTranscribeCandidates(plans, jobsFile, transcribeLimit)

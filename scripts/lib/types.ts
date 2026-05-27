@@ -96,7 +96,7 @@ export interface PlanEntry {
   status: PlanEntryStatus
   category?: string
   priority: number
-  transcript_provider?: 'rss' | 'dashscope'
+  transcript_provider?: 'rss' | 'dashscope' | 'mimo'
   transcript_job_id?: string
   transcript_submitted_at?: string
   transcript_completed_at?: string
@@ -125,6 +125,7 @@ export interface TranscriptionJob {
   title: string
   audio_url: string
   task_id: string
+  provider?: 'dashscope' | 'mimo'
   submission_mode?: 'url' | 'data_uri'
   parent_key?: string
   attempt_key?: string

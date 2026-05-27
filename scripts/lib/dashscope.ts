@@ -200,6 +200,7 @@ export function jobFromTask(params: {
     title: params.title,
     audio_url: params.audioUrl,
     task_id: params.taskId,
+    provider: 'dashscope',
     submission_mode: params.submissionMode,
     parent_key: params.parentKey,
     attempt_key: params.attemptKey,

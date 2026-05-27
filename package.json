@@ -14,6 +14,7 @@
     "build": "tsx scripts/build-all.ts",
     "audit:layout": "tsx scripts/audit-layout.ts",
     "normalize:meta": "tsx scripts/normalize-meta.ts",
+    "e2e:transcription": "tsx scripts/e2e-transcription.ts",
     "preview": "npx --yes serve@14.2.6 dist -p 4173",
     "dev:landing": "echo 'TODO: P4'",
     "dev:episode": "bash -c 'cd episodes/$0 && npx slidev --port 3031'"

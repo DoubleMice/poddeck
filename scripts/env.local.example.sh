@@ -4,7 +4,13 @@
 # Usage:
 #   source scripts/env.local.sh
 #   pnpm run plan:run -- --auto-transcribe --transcribe-limit=3 --limit=0 --dry-run
+#   pnpm run e2e:transcription
 
+export TRANSCRIPT_PROVIDER="mimo"
+export MIMO_API_KEY=""
+export MIMO_BASE_URL="https://api.xiaomimimo.com/v1"
+export MIMO_MODEL="mimo-v2.5"
+export MIMO_MAX_COMPLETION_TOKENS="32768"
 export DASHSCOPE_API_KEY=""
 export ANTHROPIC_AUTH_TOKEN=""
 

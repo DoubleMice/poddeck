@@ -7,7 +7,7 @@
 - **Slidev** `slidev-theme-academic` + `colorSchema: light` + `slidev-addon-excalidraw`
 - **Landing**: Astro + Tailwind（env-driven base path）
 - **自动化**: `claude -p --model opus --append-system-prompt` 跑无人值守 subprocess
-- **转写**: DashScope `qwen3-asr-flash-filetrans`；直连音频走 URL，Megaphone/Unchained 走 `ffmpeg` 切片 + data URI
+- **转写**: 默认 MiMo `mimo-v2.5`；可用 `TRANSCRIPT_PROVIDER=dashscope` 回退 DashScope；受限音频走 `ffmpeg` 切片 + data URI
 - **部署**: GitHub Actions → GitHub Pages（定时 / 手动 workflow_dispatch）
 
 ## 项目结构
@@ -70,7 +70,7 @@ poddeck/
                 ┌──────────────────────────┐
                 │ data/plans/<source>.yml  │  git-tracked state
                 └────────┬─────────────────┘
-                         │ run-plan.ts (+ optional DashScope ASR)
+                         │ run-plan.ts (+ optional ASR)
                          ▼
                 ┌──────────────────────────┐
                 │ episodes/<id>/           │  slides.md + meta.yml
@@ -111,18 +111,24 @@ pnpm run dev:episode <videoId>                 # slidev dev 热重载
 # 分析（无 API 调用，纯本地 jsonl）
 pnpm run analyze                               # 默认 30/60/90 min 阈值
 pnpm run analyze -- --thresholds=45,60,120
+
+# 真实 API 转写 E2E（读取当前环境、.env.local、scripts/env.local.sh）
+pnpm run e2e:transcription
 ```
 
 **一键从头到尾**：`cache:refresh → plan → plan:run → normalize:meta → build → git commit → git push`。push 不触发生成部署；部署由定时或手动 workflow 触发。
 
-## DashScope 自动转写
+## 自动转写
 
-- `run-plan.ts --auto-transcribe` 会提交 `needs_transcript` episode 到 DashScope，并把结果写入 `data/transcripts/<id>.txt`。
-- 公网可直连音频直接用 `input.file_url` 提交。
-- Megaphone/Unchained 音频先本地下载，用系统 `ffmpeg` 转为 `16kHz mono 32kbps MP3`，按 `DASHSCOPE_DATA_URI_CHUNK_SECONDS`（默认 900 秒）切片，再用 data URI 分段提交。
+- `run-plan.ts --auto-transcribe` 会提交 `needs_transcript` episode 到转写 provider，并把结果写入 `data/transcripts/<id>.txt`。
+- 默认 `TRANSCRIPT_PROVIDER=mimo`，使用 MiMo `chat/completions` 音频理解接口；设置 `TRANSCRIPT_PROVIDER=dashscope` 可回退 DashScope `qwen3-asr-flash-filetrans`。
+- MiMo 配置：`MIMO_API_KEY`、`MIMO_BASE_URL`（默认 `https://api.xiaomimimo.com/v1`）、`MIMO_MODEL`（默认 `mimo-v2.5`）、`MIMO_MAX_COMPLETION_TOKENS`（默认 32768）。
+- DashScope 配置：`DASHSCOPE_API_KEY`、`DASHSCOPE_DATA_URI_CHUNK_SECONDS`、`DASHSCOPE_DATA_URI_MAX_MB`。
+- MiMo 默认对所有 RSS 音频先本地下载，用系统 `ffmpeg` 转为 `16kHz mono 32kbps MP3`，按 `DASHSCOPE_DATA_URI_CHUNK_SECONDS`（默认 900 秒）切片，再用 data URI 分段提交，避开 URL 抓取差异和 MiMo URL 100MB 限制。
+- DashScope 普通公网音频直接用 URL 提交；Megaphone/Unchained 音频走本地下载、切片和 data URI。
 - 分段任务保存在 `data/transcription-jobs.yml`；临时 chunk 文本放在 `data/transcripts/.chunks/`，目录名是 `sha256(parentKey:attemptKey).slice(0, 32)`，避免 URL 过长导致 `ENAMETOOLONG`。
-- `DASHSCOPE_DATA_URI_MAX_MB` 默认 18，控制单个 data URI 音频片段上限。
 - CI 已安装系统 `ffmpeg`；本地执行分段转写前用 `ffmpeg -version` 验证环境。
+- `pnpm run e2e:transcription` 会发起真实 API 请求，配置加载顺序为当前环境变量、`.env.local`、`scripts/env.local.sh`，不创建额外本地配置文件。
 - 只修改转写中间状态、chunk cache 或 ASR 脚本时无需重建 GitHub Pages；新增 transcript 并生成/修改 deck 后才需要 build/deploy。
 
 ## Base Path 环境变量

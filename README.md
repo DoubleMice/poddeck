@@ -10,7 +10,7 @@ PodDeck 把播客 RSS 里的长访谈和 transcript 自动转成结构化 Slidev
 - 数据入口：`sources.yml` 中的 `rss_url`
 - transcript 来源：RSS `podcast:transcript`，优先 `text/plain`，再 fallback 到 VTT/SRT/HTML
 - 只有音频的 RSS episode 会进入 `needs_transcript` 队列，等待本地或手动转写补全
-- 音频转写：DashScope `qwen3-asr-flash-filetrans`；可直连音频走 URL，Megaphone/Unchained 走本地下载 + `ffmpeg` 切片 + data URI
+- 音频转写：默认 MiMo `mimo-v2.5`；可用 `TRANSCRIPT_PROVIDER=dashscope` 回退 DashScope；受限音频走本地下载 + `ffmpeg` 切片 + data URI
 - 封面来源：RSS item `itunes:image`，缺失时 fallback 到 channel image
 - 生成入口：`claude -p` subprocess；本地使用 Claude Code 登录态，GitHub Actions 使用 `ANTHROPIC_AUTH_TOKEN`
 - 部署入口：GitHub Actions → GitHub Pages
@@ -87,6 +87,9 @@ pnpm run dev:episode <episodeId>
 # 6. 本地统计 RSS cache
 pnpm run analyze
 pnpm run analyze -- --thresholds=30,60,120
+
+# 7. 真实 API 转写 E2E（读取当前环境、.env.local、scripts/env.local.sh）
+pnpm run e2e:transcription
 ```
 
 本地预览地址：`http://localhost:4173`
@@ -117,7 +120,8 @@ git push
 
 ```text
 ANTHROPIC_AUTH_TOKEN=<你的 DeepSeek API key 或兼容 Anthropic token>
-DASHSCOPE_API_KEY=<DashScope API key，用于自动转写缺 transcript 的 RSS 音频>
+MIMO_API_KEY=<MiMo API key，默认用于自动转写缺 transcript 的 RSS 音频>
+DASHSCOPE_API_KEY=<DashScope API key，可选，用于 TRANSCRIPT_PROVIDER=dashscope 回退>
 ```
 
 workflow 使用 DeepSeek Anthropic 兼容环境变量：
@@ -182,7 +186,11 @@ pnpm run build
 - 调用 `claude -p` 生成 `slides.md`、`meta.yml`、`article.html`
 - 只有当 Claude 成功退出且 `slides.md`、`meta.yml` 都存在时，plan 状态才写为 `generated`
 
-`--auto-transcribe` 会为 `needs_transcript` episode 提交 DashScope 转写任务。普通公网音频直接提交 URL；Megaphone/Unchained 这类 DashScope 服务器端无法抓取的音频会先本地下载，用系统 `ffmpeg` 转为 16kHz mono 32kbps MP3 切片，再用 data URI 分段提交。分段任务的状态保存在 `data/transcription-jobs.yml`，临时 chunk 文本放在 `data/transcripts/.chunks/`，该目录用短 hash 命名并被 git ignore；所有 chunk 成功后合并为 `data/transcripts/<id>.txt`，plan 状态回到 `pending`。
+`--auto-transcribe` 会为 `needs_transcript` episode 提交自动转写。默认 `TRANSCRIPT_PROVIDER=mimo`，调用 MiMo `chat/completions` 音频理解接口，并统一本地下载、`ffmpeg` 切片、data URI 分段提交，避开 URL 抓取差异和 MiMo URL 100MB 限制；可设置 `TRANSCRIPT_PROVIDER=dashscope` 回退 DashScope 异步 ASR，DashScope 普通公网音频直接提交 URL，Megaphone/Unchained 这类受限音频走切片 data URI。分段任务的状态保存在 `data/transcription-jobs.yml`，临时 chunk 文本放在 `data/transcripts/.chunks/`，该目录用短 hash 命名并被 git ignore；所有 chunk 成功后合并为 `data/transcripts/<id>.txt`，plan 状态回到 `pending`。
+
+转写配置项：`TRANSCRIPT_PROVIDER=mimo|dashscope`、`MIMO_API_KEY`、`MIMO_BASE_URL`、`MIMO_MODEL`、`MIMO_MAX_COMPLETION_TOKENS`、`DASHSCOPE_API_KEY`、`DASHSCOPE_DATA_URI_CHUNK_SECONDS`、`DASHSCOPE_DATA_URI_MAX_MB`。
+
+真实 API E2E 使用 `pnpm run e2e:transcription`。脚本加载顺序为当前环境变量、`.env.local`、`scripts/env.local.sh`，不会创建额外本地配置文件；默认测试 MiMo，设置 `TRANSCRIPT_PROVIDER=dashscope` 可测试 DashScope。
 
 `pnpm run normalize:meta` 会校验所有 `episodes/*/meta.yml`。`pnpm run normalize:meta -- --fix` 会修复 LLM 生成的可恢复 YAML 问题，例如双引号字符串中的非法 `\'`，CI 在 build 前强制运行该步骤。
 
@@ -246,7 +254,7 @@ poddeck/
 ## 已知限制
 
 - CI 生成需要 `ANTHROPIC_AUTH_TOKEN` secret；缺少该 secret 时只使用本地生成流程。
-- 自动转写需要 `DASHSCOPE_API_KEY` secret；缺少该 secret 时 `needs_transcript` 只排队。
+- 默认自动转写需要 `MIMO_API_KEY` secret；显式 `TRANSCRIPT_PROVIDER=dashscope` 时需要 `DASHSCOPE_API_KEY` secret；缺少对应 secret 时 `needs_transcript` 只排队。
 - Megaphone/Unchained 分段转写需要系统 `ffmpeg`；CI 已安装，本地执行需确保 `ffmpeg -version` 可用。
 - `sources.yml` 中 `rss_url` 为空的 source 会写空 cache/plan。
 - GitHub Pages 深度链接依赖 `landing/public/404.html` 做 fallback。

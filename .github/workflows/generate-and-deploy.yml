@@ -99,6 +99,11 @@ jobs:
       - name: Generate episodes
         env:
           ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+          TRANSCRIPT_PROVIDER: ${{ vars.TRANSCRIPT_PROVIDER }}
+          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          MIMO_BASE_URL: ${{ vars.MIMO_BASE_URL }}
+          MIMO_MODEL: ${{ vars.MIMO_MODEL }}
+          MIMO_MAX_COMPLETION_TOKENS: ${{ vars.MIMO_MAX_COMPLETION_TOKENS }}
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: |
           set -euo pipefail
@@ -107,11 +112,17 @@ jobs:
           transcribe_wait_minutes="${{ inputs.transcribe_wait_minutes || '2' }}"
           source="${{ inputs.source || '' }}"
           category="${{ inputs.category || '' }}"
+          export TRANSCRIPT_PROVIDER="${TRANSCRIPT_PROVIDER:-mimo}"
+          export MIMO_BASE_URL="${MIMO_BASE_URL:-https://api.xiaomimimo.com/v1}"
+          export MIMO_MODEL="${MIMO_MODEL:-mimo-v2.5}"
+          export MIMO_MAX_COMPLETION_TOKENS="${MIMO_MAX_COMPLETION_TOKENS:-32768}"
           args=(--limit=${limit})
-          if [ -n "${DASHSCOPE_API_KEY}" ]; then
+          if [ "${TRANSCRIPT_PROVIDER}" = "mimo" ] && [ -n "${MIMO_API_KEY}" ]; then
+            args+=(--auto-transcribe --transcribe-limit=${transcribe_limit} --transcribe-wait-minutes=${transcribe_wait_minutes})
+          elif [ "${TRANSCRIPT_PROVIDER}" = "dashscope" ] && [ -n "${DASHSCOPE_API_KEY}" ]; then
             args+=(--auto-transcribe --transcribe-limit=${transcribe_limit} --transcribe-wait-minutes=${transcribe_wait_minutes})
           else
-            echo "DASHSCOPE_API_KEY not configured; skipping auto transcription"
+            echo "Transcript provider ${TRANSCRIPT_PROVIDER} is not configured; skipping auto transcription"
           fi
           if [ -n "${source}" ]; then
             args+=(--id=${source})
