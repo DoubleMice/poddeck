@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-05-28T07:00:34.458Z
+refreshed_at: 2026-05-28T20:16:51.677Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 10
 done: 0
-pending: 8
+pending: 7
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 1
@@ -174,7 +174,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: failed
     priority: 1
   - id: 1e609cc2-ab85-4f89-b06b-328dfb9702ca
     title: Tech Earnings Recap, Beautiful Data Centers | Mike Isaac, Kyle Harrison, David Marcus, Turner Caldwell, Everette

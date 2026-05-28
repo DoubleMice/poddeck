@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-05-28T07:00:34.632Z
+refreshed_at: 2026-05-28T20:16:51.850Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 14
 done: 0
 pending: 0
-needs_transcript: 12
+needs_transcript: 11
 transcribing: 1
 transcribe_failed: 1
 downloaded: 0
@@ -19,8 +19,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a170f747460cabdeb56dabb?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a170f747460cabdeb56dabb/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ljeKstsAfrj-oVTm2bpL92S4nwoc.m4a
     image: https://image.xyzcdn.net/Fqknalt9nkexZUaPA0fQU22akthp.png
-    status: needs_transcript
+    status: failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-05-28T20:19:57.821Z
+    transcript_job_id: 0a4501e1ad1a4f5dab8df67bdab0fc8d,6f824c1ff3eb45b5acfcfe309464f0e3,74e4451f28bf44a5bf2bbabf83da1bf0,712452afc15348e691a9b39caea26bcf,85a78f8653ae4f80bb5d28b8752c9e3b,974496801a0546f1b1c08091fef45ce6
+    transcript_completed_at: 2026-05-28T20:23:15.140Z
   - id: 6a09d58b1b7bd502955258ab
     title: 141. Freda的投资札记第2集：Tokenmaxxing、把电机塞进蒸汽机、接力赛变篮球赛、孤独、人的连接
     duration: 5033

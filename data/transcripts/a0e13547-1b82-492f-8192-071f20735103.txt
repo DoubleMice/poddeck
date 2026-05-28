@@ -1,0 +1,984 @@
+Speaker 1: You're watching TBPN. Today is Monday, May 4
+Speaker 2: Would you look at that.
+Speaker 1: '20 '26.
+Speaker 2: Would you look at that?
+Speaker 1: Would you look at what, Jordy? Everything looks fine to me. We're back. We're back. That's what I'm looking at.
+We're we're getting ready at the last second. We may have installed Modern Warfare two on this large screen and gotten a little bit behind schedule with some of the interns playing. Ben, Ben and Tyler were was a knockout drag out fight. You you won by a lot. Right?
+Speaker 3: Yeah. Well, it it was pretty embarrassing for Ben considering that he is still in that not not not chief producer Ben, but other Ben. Considering he's still in like the main kind of like Demo. Video game.
+Speaker 1: But at the same time, I mean, you were probably two years old when Modern Warfare two came out. So you gotta sort of relearn the old the old tricks the old tricks on Rust.
+Speaker 3: Anyway, big show guys had a great weekend.
+Speaker 1: Hope you had a great weekend. Big week. We'll be we are going to a conference on Wednesday and Thursday. So we might be off both those days, but we have some great shows for you planned Monday Did you say conference? It's a conference.
+Speaker 3: Oh, I thought you said concert.
+Speaker 1: No. Although, I think there might be a concert.
+Speaker 3: That would be extremely out of character.
+Speaker 1: I think there might be a concert or or at least some sort of musical performance at this particular conference. But
+Speaker 3: What do we have coming on the show today?
+Speaker 1: We have a bunch of folks. Nat Nat, Michael York from Casa, Anjney from
+Speaker 3: Okay.
+Speaker 1: AMP. We got Garth from Panthalassa.
+Speaker 3: A little more context on Nat joining. Yeah. We talked about it. He joined Alpha School.
+Speaker 4: Yeah. That's right.
+Speaker 3: He's the head of founder development. They're launching a founder track
+Speaker 1: Mhmm.
+Speaker 3: At Alpha School, which I'm very curious to hear about.
+Speaker 1: Yeah.
+Speaker 3: Considering that a lot of the parents in my in my area are very Alpha School curious. Yeah. So excited to hear about that. Well,
+Speaker 1: I mean, there's a bunch of news we're gonna go through. But first, was just sort of reflecting there on was a great interview with Andre Karpathy at Sequoia AI Ascent, I think last week. It went up on YouTube. And it was he was sort of reflecting on how his workflow is changing around vibe coding. And I was sort of reflecting on how my knowledge workflows are changing, particularly around image generation now that image generation is really good at infographics and effectively designing slides or output.
+And so we're we're starting to see the rumblings of this idea of, like, the neural computer. There was this people have been talking about this for years since the AI boom began, but the basic idea is, like, you would have a computer that basically has no software whatsoever on it. It would just have an LLM or just an AI model, just inference capability or potentially a connection to cloud inference that would generate whatever you want, whatever you need on demand on the fly. And so I think Elon talked about this with MacroHard a little bit. That was a piece of the vision.
+This has always been theorized, but it's becoming more and more real. And so Karpathy describes this idea of like a neural computer this way. And I think it's an interesting framing. Obviously, it'll have implications for SaaS products that might be used in a headless under the hood scene way or might be competed with against these neural computers. But Karpathy describes this.
+He says, imagine a device that takes raw video or audio into basically what's a neural net and uses diffusion to render a UI that's unique for that moment. And so this sort of like on the fly instantiation of the exact UI that you need for that particular question or whatever problem you're trying to solve, whatever you're trying to do is an interesting paradigm shift that it feels like we're starting to see glimpses of. So I most recently felt it when I was trying to understand Ryan Cohen's proposal for GameStop to take over eBay. This is a big story. We'll go through it today.
+But I haven't tracked each either either company closely. We've had Ryan on the show, and we've talked about eBay and GameStop intermittently. But I couldn't tell you off the top of my head what's the revenue for each company, what's the profit like, what are the different multiples. And so in a pre ChatGPT world, I would have gone to Google Finance or Yahoo Finance and pulled some data, maybe had two tabs up, maybe used one of their comparison tools. If I wanted to be really advanced, I would copy and pasted the stats into spreadsheet.
+If you're really working on Wall Street, you might have, like, Cap IQ or Bloomberg plugging into a sheet, an Excel sheet that then can build you a comparison table and do, comps. And then once we got into the ChatGPT world, you might do a deep research report, pull all that data, put it into a table, which is effectively markdown. And and sometimes the tables render is a little weird and, you can kind of bounce around. But now I the whole process from start to finish is just a single prompt. It outputs an image.
+So the the you can pull up the image that I generated. So this was this was one prompt. I said, a bunch of research on GameStop and eBay's valuation and key financial metrics, things like growth rate, top line, earnings, revenue, valuation, how the multiples fit together, build a nicely designed side by side comparison of the two companies. And you wind up getting something that is very digestible. Like, just looking at this, I mean, it's obviously a little zoomed out, but you can zoom in and see, okay, eBay has about three times the revenue, 50,000,000,000 versus 15 for GameStop, and revenue growth.
+EBay is growing while GameStop shrunk by 5%. EBay grew 8%. Operating income eBay has 10 times the operating income at 2,280,000,000 versus 220 232,000,000 for GameStop. And so you just get this, like, very easy, okay, what's the operating margin? EBay is up at 20%.
+GameStop is down at 6.4%. And so you can start to see on a price to sales ratio, GameStop is at four x, eBay is at four and a half x. But on a market cap to net income, GameStop is higher has a higher value, 34 x versus net income versus eBay's 25 x. So you can just sort of see this table and this is something that usually would have been like three or four steps to get here. And instead, it's just this single prompt.
+And so I think that there's like, this is not a perfect result. Like, in in that image, you can see that, like, it it chose red as the color for all of GameStop's financials, which is not what you'd normally do because red is usually for negative numbers, but those revenue figures are positive. Like, it could be better. I could probably go further and prompt it a couple more times to get exactly what I wanted, but it solved my problem of having like, here's the summary of the question that you were actually asking, which is like, how do these companies stack up to each other? What's the relative size of the business?
+What are the strengths and weaknesses of each of them? And then boom, you have a square image that you can easily text to someone and and it's ultimately shareable. And more importantly, I don't care what it used under the hood. It could have puppeteered a spreadsheet and put it all in comma separated values and make a CSV and it could have transformed it with Excel or Google Sheets under the hood. It could have written Python.
+It could have used pandas or scikit learn. It could have done anything it wanted to but it's all abstracted to me and I don't even think about it. And this is different from the previous era of like, okay, well, if I wanted to do some sort of stock comparison tool, I could vibe code a stock comparison tool with API integrations, make sure you have the the data connections. But it's just kind of less necessary as the models get fatter and they sort of eat more and more of the process. And so, Karpathy describes this concept as software three point o.
+And we should pull up his example because it's very similar. Of course, it happened like months ago because he's ahead of me on everything, obviously. But he gave a good example of shifting from like, you have a problem that there's no solution for, so you're going to vibe code an app to just a few weeks or months later, like the AI tools can just do it and you don't need any code. You don't need any system to build. Even though it's fun to build a system and it's interesting and it allows for more, maybe more speed, more reliability, like more and more things are like one shot able by the model.
+So let's pull up Andre Karpathy talking at Sequoia AI Ascent about his experience with software three point o.
+Speaker 5: I think one more maybe example that comes to mind that is even more extreme than that is when I was building Menujen. So Menujen is this idea where you you come to a restaurant, they give you a menu, there's no pictures usually, so I don't know what any of these things are usually. I like 30% of the things. Have no idea what they are, 50%. So I wanted to take a photo of the restaurant menu and to get pictures of what those things might look like in a generic sense.
+And so I built I've I coded this app that basically lets you upload a photo and it does all this stuff and it runs on Vercel and it basically re renders the menu and it gives you all the items and it gives you a picture that it uses an image generator for to basically OCR all the different titles, use the image generator to get pictures of them, and then shows it to you. And then I saw the software three point o version of this which is which blew my mind, is literally just take your photo, give it to Gemini, and say use Nano Banana to overlay the the things onto the menu. And Nano Banana basically returned an image that is exactly the picture of the menu that I took, but it actually put into the pixels, it rendered the different things in the menu. And this blew my mind because, actually, all of my menu gen is spurious. It's working in the old paradigm.
+That app shouldn't exist. And, yeah, the software three point zero paradigm is a lot more kind of raw. It just your neural network is doing more and more of the work and your prompt or context is just the image and the output is an image and there's no need to have any of the app in between. So I think that people have to kind
+Speaker 1: of like refrain. Yeah. It's it it it's it's real and and it's and there were I I had some takeaways from this, like what are the implications for this? And I think there's a few things. The the the first thing that was on my mind was that all although we have gone through this crazy vibe coding boom where everyone is vibe coding apps, it feels like a very temporary aberration.
+And also, I know that that, like, even though there are millions and millions of people that have used Codex and ClawedCode and OpenClaw, like, the numbers are big, but it's not at 20% of The US population. Like, it's just not at that level of adoption as opposed to chat apps which are at like 80% penetration. Right?
+Speaker 3: Yeah. The other the other thing that's been interesting is non like people outside tech that have gotten into vibe coding Yeah. That have been pitching me their ideas here and there. Every time they're pitching me the idea, it is something that the that Claude Code and Codex can do themselves pretty well today, like just in one chat thread.
+Speaker 1: Or the app. Like the apps can do them. And that's what I'm like What's blowing my mind now is that
+Speaker 3: That's in many places what I'm saying. Yeah. So they're using vibe coding tools to vibe code something that doesn't necessarily need to exist Yeah. Because you could just use the app itself to do the thing Yeah. And they're already widely available.
+So it's it's been it's been interesting.
+Speaker 1: Yeah. So I think there's I think there's two things. Like, one is that if you if you've been like hesitant to jump into vibe coding because like it's just it's a little bit too much a hassle like Andre Karpathy is like obviously very very comfortable being like, yeah, let me deploy to Versal and do all this. You can figure all that out, but that leads to this world where it's like, oh, I was staying up all night. I was I was really, really, like, burning the midnight oil to get this app deployed and, like, do all this stuff.
+Well, like, a lot of that's going to go away, and, like, you're not going to need to do that. And frontier models are but then there's also the the the this question what you had, which is like there needs to be this higher order loop of thinking around, okay. You have a problem. Should you actually vibe code as an app, or should you just try and one shot it with the current model capabilities? Because for a lot of things You mean like
+Speaker 3: within with lot Yeah.
+Speaker 1: Within Chatuchiki, within Gemini, within Claude, the actual apps. Like, you can, like, take a picture of your food and say, hey, start tracking my calories. Like there's a lot of things that the that the apps can just do in one chat thread that people are doing. But I think that there's like this tension between when when you actually need to for sure go and vibe code something versus when you can just do it in like a one shotted LLM context. And so, like, frontier models are already able to, in in basically 90% of situations, feel, like, instantiate exactly whatever is required to solve the actual problem under the hood entirely abstracting away like code and tools.
+Like, you will just not be aware of what's happening and it doesn't matter.
+Speaker 3: Yeah. And then the Yeah. Second I would I would add to to my previous statement by by saying that doesn't mean that there's not necessarily a business there because sometimes taking a raw capability and presenting it to people in a way that's very easy for them to digest you can still deliver value Yep. And you can get customers and people will pay you money.
+Speaker 1: Yep.
+Speaker 3: But it is it has been fascinating to see, like, does this actually need to be an app?
+Speaker 1: Yeah. Yeah. Mean, there's there there's a ton of apps and software that will still be valuable, whether it has a liquidity pool or some sort of unique source of strength or some differentiation point that that the existing chat apps can't hack at all. And then there's also just like like marketing arms effectively where it's like, okay. Yes.
+The any any frontier model in a chat app could do this, but you weren't aware of it. And this company was really good at running ads to actually get awareness going and then drive downloads of this specific thing. And so we see those in the in the app store all the time. So the other thing that I was reminded of was, did you ever read Union Square Ventures 2016 blog post Fat Protocols? Are you familiar with this?
+So Fat Protocols was this concept around how in in the web, like web, I guess, one point o, two point o, there were protocol layers which are like TCP IP, HTTP, SMTP, like file transfer protocols, HTTP. And there and a lot for, like, a couple years, the crypto community was like the the group that developed and maintained, like, HTTP. They basically created the standard that the web ran on, and yet very little value accrued to the creators and the maintainers of that protocol. And crypto would be different because the Bitcoin protocol had the value capture component, like, baked into it. And so there was this idea of, like, the application layer in blockchain would accrue very little value and the protocol layer would capture the vast majority of value.
+So this is on the web. The application's on top of HTTP. You can think of, like, Facebook as a beneficiary of the protocol of HTTP because that's what how the actual information, the photos, and the text gets transferred to you. But the HTTP standard does not accrue the value. The value accrues to the application on top.
+And if you scroll down, you'll see the blockchain example, which was sort of born out that the application layer was pretty thin on top and most of the value went to, like, the tokens and the protocol Yeah. Exactly. Ethereum is a good example. Solana is a good example. Of course, there's there's value in the application layer, and there's some companies that are being built.
+But this was basically this thesis that the the the he says, we see that very early we see this very clearly in two dominant blockchain networks, Bitcoin and Ethereum. The Bitcoin network has a 10,000,000,000 market cap. Wow. Woah. I think it's like 1,000,000,000,000 now.
+Right? Isn't it 700 Yet the largest companies built on top are worth a few 100,000,000 at best. Now we have Coinbase, which is in the tens of billions. So both sides of the protocol application layer did very well, but the point is still true. Similarly, Ethereum has a $1,000,000,000 market cap even before the emergence of real breakout applications on top and only a year after its public release.
+And so that was sort of the core thesis on this fat protocols thing. And I think there's something similar happening in the AI value chain. Of course, there's like a bunch of other dynamics going on in the AI value chain, and there's a lot of capture and and complicated market dynamics. But the models feel like they're getting fatter every month, they're sort of eating away at the edges of what you can do with them. And and and so increasingly, you can just get more and more out of the core model, which is an interesting dynamic.
+And then third, there's still, like, this huge question of, like, walled garden jumping. We've talked about this before, but it's almost we need, like, a different term for, like, the dead Internet theory. It's like the it's like the walled garden Internet theory. Like, the Internet's not dead. Like, there's great there's great information in Substack on certain legacy webs legacy media websites and on Facebook and on x and on YouTube.
+But, like, all of those companies don't want to interact with each other. And so that's where you get something like, oh, well, like, if you write code, you do get access to it loosely. Or if you're puppeteering a browser on a Mac Mini, you get access to that. Or if you're digging through iMessage locally, like, that can require a different workflow. But that's more of, like, a legal and business discussion than a technical one.
+Like, there's no reason technically that a single LLM wouldn't be able to just query every single web resource except for the fact that the big the the various tech companies don't want each other to talk to each other. And so the models, I think, will continue to find a way under the walled garden, over the walled garden, through the walls. Like, they'll they'll seep everywhere. And it's more of a question of just inference cost, how how long it takes to actually grind through the wall. But they they are already figuring out a way around.
+And OpenClaw is a good example of that where a lot of the walled gardens were sort
+Speaker 3: of brought down by running Yeah. Except I think SAP came out and said, no no unauthorized agents here. They're trying to they're trying to put up the walls. They're trying to build a moat. They're trying to get some alligators to scare off the the agents.
+Speaker 1: Yes. But I would be very I would I would be very surprised if they're able to stop me from if I have SAP and I'm running it locally, told me to take a screenshot of my computer and then tell the mouse to go where it wants. Yep. It's like it it it's very hard to fight back against these, like the compute. I mean, I I've seen this guy on on YouTube who uses like ever more contrived aim bots.
+Like he has one that's it's like a robotic mouse. So the it's it's using the actual mouse and keyboard, but it's robotic fingers on it. And then it's controlling I think he plays Rainbow Six Siege or Counter Strike. And he's cheating, but it's look it's a camera looking at the computer. So until you get to, like, you know, WorldCoin eyeball scanning, making sure that you're not using this.
+He's also done one where he I think he put, like, electro stimulation on his arm that would do the aim bot for him. So it was his arm physically moving but it was puppeteered by an AI essentially. And you know it's very very demo phase at this point. But imagine that everything is so locked down that no AI agent can interact with SAP, but then I have the electro stimulation and I can just type super fast because and it just does whatever it needs and I'm the I'm the human instantiation actually pushing the keys.
+Speaker 6: Had a good tweet where he was like, you know, people are now just like vessels for the AI where they just like the AI tells them what to do and then they just act exactly like
+Speaker 1: Yeah.
+Speaker 6: What the model said.
+Speaker 1: Wasn't John Collison talking about this? John Collison was saying like the humans get the thing off the high shelf. It's just like every time I have to like go and like export a PDF and upload it to JADGBT because I can't get it in there by default even though I could just give them a web URL. Have to export it or print or whatever. This is the
+Speaker 3: Let's talk about I think we should talk about GameStop.
+Speaker 1: Let's do it. What's up with GameStop?
+Speaker 3: What's going on with GameStop? Yesterday, it came out through Wall Street Journal. GameStop was preparing to make an offer for eBay as part of Ryan CEO Ryan Cohen's plan to turn the retailer into a $100,000,000,000 plus juggernaut. GameStop has been quietly building a stake in eBay shares ahead of a potential offer and could submit an offer as soon as later this month, which they did this morning. If eBay isn't receptive, Cohen could decide to take the offer directly to eBay's shareholders.
+And they released a letter yesterday to Paul Pressler, who's the chairman of the board over at eBay, happens to be a friend of mine. Really? Wait, really? Yeah. I I our His daughter and my wife are good friends.
+Oh, cool. So I end up We end up hanging out a decent amount. And we're neighbors.
+Speaker 2: Does he
+Speaker 1: do a lot of does he do a lot of like podcasts or press appearances?
+Speaker 3: It can it can we can it can be discussed.
+Speaker 1: I I'm just saying like determinism of Pressler would be like somebody who dominates the press. The press circuit. Think you would do press
+Speaker 3: circuit all the time. Anyways, Paul Paul is fantastic.
+Speaker 1: Yeah.
+Speaker 3: And Ryan wrote this letter to him yesterday saying GameStop is proposing to acquire all common stock of eBay at a $125 per share. We have accumulated a 5% economic stake in eBay through derivatives and beneficial ownership of common stock and are filing a Schedule 13D and HSR notification tomorrow. Our offer is $125 per share, comprising 50% cash and 50% GameStop common stock, which we will get to in just a little bit because Ryan Cohen discussed this on CNBC this morning. Yep. That represents a 46% premium to eBay's uneffective closing price on 02/04/2026, the day GameStop started accumulating its position in eBay.
+And blah blah blah blah blah blah blah blah blah blah. But let's go straight Okay.
+Speaker 1: To the CNBC. So quickly, there was a question. So Bislad said, can someone please tell me how GameStop has $56,000,000,000? It's not a $56,000,000,000 company. There were questions and Ryan Cohen went in the ring with Aaron Sorkin over at CNBC or Andrew Ross Sorkin on CNBC Squawk Box to interview about the GameStop eBay acquisition.
+Can play this.
+Speaker 7: Walk us through how how you could get to that price and how it would work. It's on our website. It's half cash, half stock, but but the details are are on our website. Can you help? I've read them, but can you help our audience understand them?
+Yeah. What what which part exactly? Well, I think we can start with the idea that the market cap of GameStop is, call it, $11,000,000,000. You have $9,000,000,000 on your balance sheet, arguably, you're if you're providing effectively all of your stock, and then and then the cash that gets you to 20. You have this letter from TD, that's another 20.
+We're now at 40, but we're still off by, call it, 16. And and the 20, as far as I understand, while it's considered a highly confident letter, meaning TD's saying they're highly confident that they would provide the financing, it's not locked financing. Yeah. We'll see what happens.
+Speaker 4: Founder knows.
+Speaker 1: Never doubt.
+Speaker 7: I I hear you. Deadhead. I understand that. I'm I'm just trying to understand where the the rest of the money would come from. It's half cash, half stock.
+I I I hear you. I'm just saying that that math doesn't get you to the to the price that you're offering.
+Speaker 8: Brain, that's a pretty straightforward question. I don't get it.
+Speaker 1: Thank you chiming in.
+Speaker 8: Where's the rest of the money coming from? Andrew laid it out I
+Speaker 7: I don't understand your question. We're offering half cash, half stock, and we have the ability to issue stock in order to get the deal done. The full details of of the offer on our are on our website.
+Speaker 8: But you're on our air. We we thought we'd get
+Speaker 7: So but I don't understand your question.
+Speaker 1: Where is the money coming from? That's the question. You're wondering record scratch, freeze frame. You're wondering how I tried to buy a $55,000,000,000 company with $40,000,000,000 earmarked.
+Speaker 2: Yeah. So I don't what what do you think he
+Speaker 3: was expecting this to go out on Sunday, Monday? GameStop stock to pop like crazy. Yeah. And it's actually down today.
+Speaker 1: I guess that's possible. I I I don't know. I I also don't understand why he can't just say like, hey, we're in the process. Like, we got a highly likely letter from a bank for 20. Yeah.
+We need 16 more but we're going to go get more letters from other banks. We're going to go get other equity investors like this is a whole process. We're excited to announce this and this is like our first close. Like we're not like we're fully ready. Yeah.
+But maybe
+Speaker 3: So the tough thing is he took this offer to Paul Yeah. Chairman of the board. Yeah. Now, Paul has to look at this and be like, okay, is this a real offer? Yeah.
+And I imagine Paul will watch CNBC
+Speaker 1: and It's not.
+Speaker 3: That's not gonna give anyone a lot of confidence.
+Speaker 1: Yeah. It's yeah. I mean, you can imagine it in the in the context of like buying a house. You know, you show up and someone says like, I have 80% of the money. And like, my bank will underwrite me for 50% and I have 30% in cash.
+And you're just like, look, I need the full amount. Yeah.
+Speaker 3: Tough amount for something like that. I'm wondering I'm wondering what Ryan I I'm You know, eBay is an incredible business. Yeah. It's been remarkably durable. Mhmm.
+They've faced an onslaught of competition for every single category from sneakers to watches to art to name any cars. Right? Any category there is like a vertical competitor to eBay. Yeah. And yet the business has done has been remarkably remarkably strong.
+Yeah. Up pretty meaningfully this Yeah. Right? Yeah. Management is executing.
+Yeah. And and again, it's unfortunate for Ryan and his bid that the most viral sort of video clip out of all of this is just him failing to answer like, you know, a pretty straightforward question and not having an opportunity to talk about, okay, why do you you know, presumably if you're buying this company, you think it it can and should be worth a lot more, why what what's your what's your plan what's your plan for the business? Why are why are you better suited to run it than than Jamie who's been in in the seat since 2020? Worked at eBay from 2001 to 2009. Woah.
+So he's a veteran, knows the business very well.
+Speaker 1: Yeah.
+Speaker 3: And you're coming in $16,000,000,000 short. At least that's what it looks like. Yeah. And anyways, this bid could be could be over before it really started.
+Speaker 1: Yeah. Or, I mean, it could attract a bunch of investors who wanna line up and fall in line and wind up producing the the 55 or so required. But it does feel like it's a it's a ways away. Anyway, we have our first guest of the show in the waiting room. We have Matt from Alpha School.
+And here he is in the TBPN UltraGun. Matt, how are you doing?
+Speaker 4: I'm doing great. How are you guys?
+Speaker 1: We're doing
+Speaker 3: incredible to finally have you on the show. Yeah. Been with We enjoy we love when your name pops up in the chat and we've both loved following your career the last
+Speaker 4: Appreciate that, guys. As long
+Speaker 3: as been on the Internet.
+Speaker 4: It's awesome to be here. I mean, I've been following you guys since it feels like must have been the first week or two. I just love the show and I've
+Speaker 2: That's amazing.
+Speaker 4: Loved seeing you guys crush it. It's brought a lot of joy to my my weekly commutes. So thank you guys for doing this.
+Speaker 3: Amazing. Well And yeah, we're we're super excited. I personally am excited that that you're at Alpha School now because, yeah, Alpha School is moving into my town, it looks like. It's early early stages and I've just been curious to learn more about it and yeah. Especially like what you're working on specifically.
+Speaker 4: I'm here to answer any of it. Awesome. Should we go back further? Open up all over.
+Speaker 1: Yeah.
+Speaker 2: So Yeah. Why don't you
+Speaker 3: give give us an overview of like everything you've worked on the last few years. Because like every every I I think you've you have done a better job than almost anyone at identifying these sort of like big macro technology changes and cycles and then like just like experimenting and innovating in in a bunch of cool ways. So, so, yeah, take it take us back a little bit.
+Speaker 4: Yeah. So I I got the entrepreneurship bug in high school, didn't have many ways to get into it then. And then in college, you know, I went to business school and figured business school will teach me how to be an entrepreneur, realized really quickly that that wasn't the case, and ended up just trying to go figure it out on my own. So got super deep into SEO, ran a really successful, SEO focused marketing agency for a number of years until, 2021, basically, handed that off and eventually got acquired.
+Speaker 6: But that
+Speaker 4: was kind of my first taste of seeing this, like, cool thing in technology, trying to figure it out, trying to build a business around it, and just feeling incredibly fulfilled by by getting to do that. And so when I stepped out of SEO, I got pretty heavy into the personal knowledge management space. So I was doing all of the, like, Rome research and and Notion stuff. Got deep into crypto during that 2021, 2022 era, and was, like, writing smart contracts and working with a couple teams through that. And then when, like, building with AI really became a thing a few years ago, I was using Cursor, like, right at the beginning, well over a year before we had these terms like five coding and whatnot, and I was just completely obsessed with it and was trying to figure out what I wanted to do with it for a while.
+I had a course that was really early on how other people could start learning how to vibe code. And at the end of last year, I said, okay. Like, I actually wanna I wanna stop doing the solopreneur thing. I wanna kinda, like, go after something much bigger. And while I was in the process of figuring that out and tinkering with a few bigger things I wanted to work on, Alpha School reached out to me, and they told me that they were working on this wild idea for a new high school, and they were looking for a kind of scrappy AI native entrepreneur to come help them build the curriculum and get the whole thing launched and built.
+And it was kind of one of those, like, do you know anybody else who would be good at these kinds of things like you? And I'd never considered taking a job, certainly never considered working at a high school. But when they told me they wanted to build this and that they were looking for somebody like that, I I was just immediate, like, I I had to come do this.
+Speaker 3: Okay. Before we get into Alpha School, why you you're you're witnessing the explosion of of LLMs. Why didn't you get into, like, answer engine optimization or AI observability? I'm sure you thought about it. And given your background, building the the SEO agency to to exit, I'm sure you would have been well positioned to to do well there.
+Did you did you consider that at any point?
+Speaker 4: I thought about it and to be honest, I was just kind of tired of the SEO game. I've been so deep in that for so long that I just kind of didn't want to go back to that, and I just loved how fun building stuff with these AI tools was, like, on the software side. And that was kind of the route that I was starting to go down. And, you know, thankfully, like, this still this still kinda heavily scratches that itch because, even though this is a school and we're we're learning how to you know, we're we're teaching and trying to build all of that out, so much of the internal systems and how we figure out how to teach this requires getting really deep with AI and building a lot of our own internal custom software. And it's really cool to, like, be a part of a school that's also investing so heavily in that.
+And so it's been fun getting to bring those skills and that energy here.
+Speaker 3: Awesome. Introduce reintroduce Alpha School. We've talked about it on the show, but for anyone in the audience that that isn't familiar, I think it'd be helpful. And then I wanna talk about the program that you're building out.
+Speaker 4: For sure. And just to double check, because I I did get a message that my mic wasn't sounding right. Is it
+Speaker 1: not plugged in? I'm looking at it, and it looks like there's no cable. Oh my god. I was just like looking
+Speaker 4: at Wow.
+Speaker 1: Okay. And then I think you probably need to select it and change the other thing over. But I was looking at it and I was like, wait, that's like not plugged in at all. That's hilarious. There we go.
+Works.
+Speaker 4: New studio, you know. Oh.
+Speaker 1: Yeah. This is Oh,
+Speaker 3: this is nice. Much nicer.
+Speaker 4: Silky smooth now.
+Speaker 1: Alright. Alright. So good. Yeah. Sounds awesome.
+Okay. Okay. So yeah. Reintroduce Alpha School for those who who don't know the model because I I I think it was many people learned about it through invest like the best. Guess that's how I learned about it.
+Speaker 3: Well, were there was like there was like, know Yeah. Rumors. Around it. Right? Yeah.
+There was like there was a lot of there was a lot of lore. A lot of people were curious. And then Invest Like The Best, I felt like was like this first mainstream kind
+Speaker 2: of
+Speaker 3: exploration of of the the vision and what had been done to date and how you guys were approaching it. But obviously that was before you joined.
+Speaker 4: Yeah. Alpha School actually started twelve years ago with Mackenzie Price here in Austin. And it was a smaller microschool, but still built on that fundamental idea that you could compress the entire academic day to about two hours if you leaned on what we know about learning science, which, you know, the the the teacher in front of a room of 25 students trying to teach everyone at the time is just not the best way to learn. And if you were able to kind of customize the education to each student based on where they were, you could get that day a lot shorter and then give them a lot more time for learning life skills, doing these interactive workshops, and making them just love going to school. Right?
+Because no student feels like they're being held back or not getting a chance to get caught up. And so when generative AI came on the scene in 2022 or so, Joe Lamont, who he and Mackenzie had known each other forever and his daughters were already going to Alpha school, he kind of went to her and said, hey. With AI, we can now take this model that you have figured out and we can start to we can bring this to a billion Mhmm. We can make this the way that, like, every student gets to learn. And that's when Alpha that he brought he brought big investment to Alpha School, started, like, building it up, expanding it, and that's why a lot of people feel like it just started in the few years because that's when it really started to grow and take off.
+And Joe had been kind of you know, he wasn't very public facing figure for a long time. He wasn't doing podcasts, wasn't doing interviews. And then a year
+Speaker 3: ago would've the podcast circuit back in like the nineties. He would've would've crushed Yeah.
+Speaker 4: Yeah. But then a year ago, he did that invest like the best interview. He did the Colossus piece that I know a lot of people have read and that's when he started really sharing more about what they've been up to at Alpha School because they'd had a few years of working on the new model, building out the software and now it's just, I mean, it's growing like crazy. We were at an info session in Boca Raton two weeks ago, and they thought maybe twenty, thirty families were gonna come, and there were over a 100. And the the school that they're planning on starting there got filled up just almost immediately.
+Right? It's been very cool to see how much excitement there is, especially in the crowd of younger, more tech forward parents who are who have been thinking for a long time that, like, hey, there's got to be kind of a better way to do this, And it feels like we really have the technology now to make it happen.
+Speaker 1: The is the model like start with kindergarten and then just grow with the class or or is there actually like let's get bunch of juniors in high school to jump in so that there's, like, continuity from day one and it feels like a full k through 12 experience? Or is it, like, grow iteratively?
+Speaker 4: We do both. So a lot of students do come in, and we go down to pre k four right now. So pre k four, kindergarten, first grade, a lot of students do come in at that age range. Again, just because there are more younger parents who are excited about the way the school day works. But you do have a lot of kids who come in starting in high school.
+Speaker 9: We've we
+Speaker 4: have people I'm at the high school in Austin right now.
+Speaker 2: Yeah.
+Speaker 4: And we have students who transferred in as tenth graders, eleventh graders. It's kind of if they if if they're really interested in something or if they feel like their current school isn't working for them and they want to try this model instead, we'll take them basically any time of year. And the benefit of starting earlier for a lot of students is that they don't have as much catching up to do. A lot of students transfer in from even really good private schools and it turns out that they're a year or two behind in math or reading or one of these subjects. And so they do go through that catch up period.
+But again, it goes back to just like the nice thing about having software that can personalize the learning experience to each student. If you're a seventh grader who's actually in fourth grade math, there's no seventh grade math class that will help you get caught up. But with with TimeBack, with our with our learning software, it can identify, oh, okay. You actually need to go back and really memorize your times tables because that's becoming a big bottleneck for you in trying to learn algebra. So we're gonna go back and do that first and then
+Speaker 3: you'll hear it. Ryan Cohen, if if you guys could Ryan was being asked some math questions about the eBay takeover this
+Speaker 4: the eBay for
+Speaker 3: And there was some like adding and subtracting that they were doing that that
+Speaker 1: Wasn't wasn't adding up.
+Speaker 3: It wasn't things weren't adding up. Yeah.
+Speaker 4: Extension program.
+Speaker 1: Talk about the the founder school initiative specifically. How does that fit in? It feels like like a different track or how how separate is this from sort of the the typical office school experience?
+Speaker 4: Yeah. So basically, you know, we we have our high school in Austin and we've been looking to expand the high school offering for Alpha. And so Joe went to all of the high school students last fall and he said, hey, you know, what would be the just best, most incredible version of high school that you can imagine? And we have a really good mix of what the high schoolers are working on in their afternoon time after they finish their academics. We have a girl who's putting on a Broadway play.
+We have a few students writing books. One student opened the biggest bike park in Texas, but we have a lot of students who are really interested in entrepreneurship. And so they said, you know, it would be incredible if we had a highly dedicated entrepreneurship program so that we could just go after this as much as possible because we have all this time in the afternoons and we, you know, we just want more mentorship and more guidance and more support around trying to, like, build big businesses. And that got the idea going in his head to say, hey, what if we opened a high school where we were essentially saying that we're going to get the best mentor network possible. We're going to get the best, like, resources possible for whatever bottlenecks, challenges you're hitting.
+We're going to build the best curriculum possible so that we can take what might be years and years of kind of fumbling around in the dark like a lot of people do when they first start that entrepreneurial journey, and we try to teach all those core skills as quickly as possible, give you the ability to develop expertise in whatever areas you're most interested in and then build a big business by the time you graduate high school because nobody really doubts that a sophomore at Stanford can drop out and build a million or billion dollar business. And so, like, why can't a 17 or 18 year old And kind of like working back from that said, okay, well, you get this incredible network at a place like Stanford of other students who can be your cofounders who you can work with and be motivated by. You get these incredible mentors who come in, talk to you, you know, give you some advice or just inspire you around what's possible. And then there is some stuff around the academics and the classes. But there's functionally no reason we can't pull that back down to the high school level, especially considering that these kids get like five hours in the afternoon every day after they finish their academics.
+So that's four thousand plus hours over four years. And then if you just cut out all of the things that people usually end up wasting time on or don't have the resources to figure out, it is eminently doable to get somebody to a million dollars by the time they graduate high school.
+Speaker 3: Yeah. At the very least, like teaching teaching some of these fundamentals, think this has been the thing that YC has always done so well, which I think is amazing because it's all open source, which is like, okay, like what are the what are the, you know, they can probably teach like the foundation of like a wise what what what the YC method to making a startup is in about an hour. And it's like simple rules like talk to your customers that Yeah. Oftentimes people don't do early in their founder journey where they're just like, oh, I have to spend like six months like making everything perfect before I can talk to a customer. And it's like, no.
+You actually can just go have the conversation first before you even start any of that. And so there's basic things where if you can get somebody to, like, base start the clock earlier, start taking shots on goal, start going through the motions, but doing it with like some general guidance that you that that again, like the You can get on the Internet, but you have to kinda piece it together, and there's something about having having that in person experience that I think is very important too.
+Speaker 4: Yeah. Having somebody in the room with you to say, hey, you are wasting time on this thing or you need to go try to sell this to someone, that five minute conversation might save you months of your life. But a lot of people when they're starting out don't have someone to do that. And it's like just by providing more of those touch points and having that expertise in the room with you, I think you can really you can accelerate it quite a bit. And YC is a great example where they do an incredible amount of work with people in three or four months and we get four years.
+So I'm I think we're Yeah.
+Speaker 3: The other the other thing that's very cool right now. John John and I were at dinner last night and one of John's friends is will likely get to like a million of ARR building a business that historically he would have always needed to raise venture capital for. But Yeah. Given all the AI tools, like he just doesn't need to raise any money and so he has all this One, he has optionality. He's not like raising money, locking himself into this thing for a really long period of time.
+But it's very cool because historically, capital would have been a huge constraint for like a high school student where even if they can go to a private school, they don't necessarily have like another, you know, a huge amount of money to invest into some idea. And now Yeah. They basically don't need any capital for a huge number of different types of businesses.
+Speaker 4: No, it's totally true. It's when the like AI is the big thing that removes the bottleneck around, like, why can't a 17 year old build a million dollar business where you don't need to spend as long developing deep expertise in programming or software development because, you know, you can certainly for a v one, you can prompt a lot of it. You don't need to raise a ton of money for hiring or design or build out or any of these things because, again, you can get like an initial version going with AI. And also, if you're a 15 year old trying to get started and you're trying to hire a marketing person or whatnot, like, a content marketer might not want to go work for a 15 year old. Like that's kind of an awkward thing, right?
+And so if you can just use AI to get started and get your business going, yeah, you take out a lot of the capital requirements, take out a lot of the expertise buildup requirements. And it it again, it just shortens that timeline, makes a lot more things possible for them.
+Speaker 1: How are you thinking about the or how are you wrestling with the idea that, like, so many great founders did not study entrepreneurship or business? They usually like when when when you give the other examples of like the person that's putting on a Broadway play, like I I don't think that that's not an entrepreneurship path. I I I see that person and I'm like, they could wind up owning like a media company or they could wind up buying and, you know, consolidating the Broadway industry. I don't know. There's like a bunch of different ways that I and I when I look at entrepreneurship in America, I think it's one thing to look at like Silicon Valley tech startups and there's another to think about like the millions of small businesses that are like a dentist office or a law firm or some sort of business that's built around a unique expertise with a completely different path.
+And then entrepreneurship is just like the cherry on top at the last second where that individual realizes that they just want to build their own company around their expertise or their discipline. And it feels like there's always this wrestling with, like, if you only learn the entrepreneurship piece, like, what industry are you actually an expert in to go and you know, offer an improvement in? Yeah. People always go back to like Mark Zuckerberg. Yeah.
+I think he took some computer science class, but he studied psychology and
+Speaker 2: that makes Yeah. A lot of
+Speaker 1: just looked it up.
+Speaker 3: So Sundar has an MBA, Satya has an MBA.
+Speaker 1: Those aren't the entrepreneurs though.
+Speaker 3: No, no, I know. Know. Okay. But this is notable. Okay.
+Right? They're like the professional CEOs. Sundar, Satya, Andy and Tim Cook, they all have MBAs.
+Speaker 1: Okay.
+Speaker 3: Jensen, Elon and Zuck do not have MBAs. Basically. Yeah. That being said though, I think I think Yeah. It's a good it's a good point which like clearly clearly you If you have a vision and you work very very hard and you get some luck along the way, you don't need to be that good at business and you can like You just end up being successful You learn the fly.
+Yeah. You learn it on the fly. But at the same time, I think a lot of entrepreneurs, like people that wanna be entrepreneurs will spend five years wasting a bunch of time kind of like learning these foundational like truths about entrepreneurship. And so, I mean, when I think back, I would have loved to learn all the kind of like the y c way in high school. Right?
+And just take some shots on goal even if it didn't even if I ended up going to college
+Speaker 1: Yeah.
+Speaker 3: Getting into something totally different and then coming back to entrepreneurship later. Mhmm.
+Speaker 4: Yeah. And to be clear, you know, the students aren't gonna be like studying entrepreneurship. And there's gonna be this very heavy focus on expertise building in a domain that you are passionate about because that is going to lead to a lot of these opportunities. And that's something that Alpha School already does really well. The high school students are heavily encouraged to or actually, they're required to pick a topic that they really want to develop deep expertise in and then we're teaching them how to use AI, how to use writing, how to use producing, just like any kind of content media to develop that expertise.
+And that's going be a core part of this program as well. We also have this this whole additional aspect of it that's really important to us that we're calling kind of the philosopher builder canon drawing on Cosmos Institute and working with them a bit where we don't just want people who are like slinging mobile apps to try to hit a revenue goal and then driving around in Ferraris. Right? That's absolutely not the kind of like ethos that we're trying to inspire here. Yahoo.
+Speaker 3: Wanna see the I wanna see the Alpha School parking lot in Austin just Urus wall to wall.
+Speaker 1: Yeah. Well So it's
+Speaker 3: like Yeah. Every By the end, they they all start an ecom business and then six months in, there's they're ripping a course and they're like, here's how I got a Urus at 16.
+Speaker 4: This is not gonna be a school on how to sling peptides or
+Speaker 1: anything Hustlers like University. That's Andrew Todd's school. Hustlers No. I mean, we're we
+Speaker 4: actually have a really rigorous freshman year reading list that's basically grounded in philosophy Mhmm. And kind of like trying to develop a broader sense of the world. And a lot of it goes back to one of the big challenges with being an entrepreneur or kind of doing anything in high school is getting out of the local high school mindset. Everybody wants to build an app or something for their peers. Right?
+They're not thinking about the bigger problems in the world they could be going after. And so by spending a good amount of our time encouraging them to pick areas they want to become experts in and really deeply understand and encouraging them to think and read and write about like the bigger challenges in the world that they might want to attack, then we can kind of encourage more of that thinking where it's not just again, we're like, we're not trying to build hustler school here. And so, like, I'd I'd completely agree that you couldn't like just teach entrepreneurship and expect that to lead to something interesting. It needs to be balanced for for it to work.
+Speaker 1: In terms of the best way to learn, do you do you prefer the the Stanford method where it's just two people, some microphones having a conversation? Or do you like the Dwarkish Patel podcast way where there's an expert at a chalkboard sort of breaking things down line step by step? Because it seems like there's two sort of ways to learn these days.
+Speaker 3: Yeah. John is doing a bit because people have been doing teaching classes at Stanford that are effectively podcast.
+Speaker 1: It's just a hilarious inversion. But but I am but I am interested in like in like, you know, what what is the world for just like hearing from an expert in an unstructured way more conversational versus like, you know, having information delivered in a more structured pattern? Is it like, you know, right tool for the job, right person for the right flow, or is there is there one way that you think is like actually better?
+Speaker 4: I think I think it really depends on what you're trying to provide. Mhmm. So if we were doing a workshop or a session on, earned media or on TikTok or something, I think that having very short informational sessions followed by implementation, practice, finding issues, and then getting very structured feedback you know, the challenges that you're running into, that's going to help accelerate your learning the most on that, like, very tactical skill. But where the conversational longer form stuff becomes super valuable is hearing stories of how other people got started or what other people did, where it's not so much like, here's exactly how to do this thing because it'd be really hard to hold an hour long lecture on how to do Facebook ads in your head. But hearing how somebody thought about developing expertise, finding business opportunities, getting started, especially hearing those starting stories from people who are now really successful, I guess the thing that I think those Stanford classes do so well is they make these incredibly successful people feel very human, very approachable, where you realize like, oh, they were just like me at one point, just getting started.
+They didn't have all these resources. And those kinds of sessions are extremely valuable as well. So I think it's just kind of like what problem you're trying to solve at that point in time.
+Speaker 1: Mhmm. Jordan, anything else?
+Speaker 3: What predictions on end of this year?
+Speaker 1: Was Joe inspired by Piyama for Die? Structure? Because it's a 100 isn't it a 150 k a year? But if you don't hit a million dollars in profit, you get your money back. Isn't that it?
+That's correct. That's PMF or Die right there. We got us lock these kids in a room. Stream it. This is the way.
+Yeah. Yeah. No.
+Speaker 3: I was gonna say, yeah. Yeah. Predictions on on highest run rate
+Speaker 1: Oh, yeah.
+Speaker 3: Twelve months from now from a student. How how big do you think they can go? Because in today's world, like if they're not getting to 9 figures in twelve months, like they should probably just
+Speaker 4: jump down. Yeah. I mean, you know, obviously you can't hold me to this. But I would not be shocked if by the end of year one, we have at least at least one student who's, you know, well past the 100 k mark. I I wouldn't even be horribly surprised if you've got a student who's like halfway to the million or even there.
+Right? Just Yeah. You find that right thing, you lock in. And we're gonna have some students coming in who are already making some progress on on their own things.
+Speaker 3: Yeah. Whenever we talk to founders, Thiel fellows, they're always like, they were always making money in late middle school, high school. And it was they were picking ideas that didn't that had kind of a cap to it. Right?
+Speaker 1: Yeah. Or they were competitive market.
+Speaker 3: Or super competitive. But if they just applied themselves to a to a category that was maybe a bit more boring than Minecraft stuff or Minecraft
+Speaker 1: series hacks and
+Speaker 3: there's no limit. So
+Speaker 4: But but I'll tell you what guys, you know, would be a lot of fun is I think these students are gonna crush it. And so if we wanna do like a TBPN founder school demo day Yeah. Next June Wow. I think that'd be pretty sick.
+Speaker 1: That'd be great.
+Speaker 4: I'm so excited to see what these kids do.
+Speaker 3: Yeah. Let's do it.
+Speaker 1: Yeah. We we have to set the record for the youngest TBPN guest. We had that kid who applied to YC. Right? Remember from Australia?
+He came in for a couple minutes. How old was he? Was he 16?
+Speaker 10: I think
+Speaker 6: he was like 13.
+Speaker 1: I thought he was 13. Yeah. He's really Yeah.
+Speaker 3: He came in with his dad. Yeah. And then if any of them build products that we can use, let us know. That'd be great. We'll Oh, will do.
+Happy to be beta customers.
+Speaker 4: Yeah. Yeah. I mean, I'm gonna be shouting from the rooftops everything that
+Speaker 1: Yeah.
+Speaker 4: They're working on. So I'm I'm I'm very excited about that.
+Speaker 3: Amazing. Well,
+Speaker 1: congrats Personally, on I don't I don't I don't think of myself as like a beta customer. I'm more of a Sigma customer. But Alright. You can
+Speaker 4: do it. Okay.
+Speaker 3: I thought you were
+Speaker 1: gonna If I'm going to buy a product You kind of are Sigma. Wanna I wanna be the Sigma customer. Anyway, thank you so much for taking the time to come chat with us. You guys. We'll talk to soon.
+Speaker 3: To catch up. Congrats.
+Speaker 1: We'll talk to you soon. Soon. There's some back and forth on the timeline. XAI's GPU fleet is running at about 11% utilization exposing how hard it is for AI labs to fully use expensive NVIDIA hardware. This is May 2 from the information.
+Trace Cohen says, how is this possible? There's infinite demand. We're going talk to Anjney in a little bit about the infinite demand because it is real. But there's some extra context here. It says 11% almost certainly refers to FLOPS utilization, not 89% of GPUs sitting idle.
+If If it were the latter, they would just throw more GPUs at training. It's notoriously hard to maximally utilize GPUs when even when saturating inference capacity due to things like uneven mixture of expert demand and memory stalls. The 11% figure means their inference stack sucks with a large contribution from lackluster architecture, contrast, deep seek, who do an amazing job maximizing utilization at every level, including innovative MOE load balancing. And I mean, even if the utilization is low, it's like, well, the team seems ahead of the curve solving the problem by acquiring Cursor or partnering with Cursor because the the whole thesis of the Cursor deal was x AI has compute capacity. But Tyler, what what do you think about this?
+Speaker 6: 11% does not mean that, like, only 11% of the GPUs are, like, on. Yeah. It's just that, like, you know, the the maximum, like, flops that you could get, say it's, a thousand
+Speaker 1: Yeah.
+Speaker 6: You only have, like, a 110, like, flops basically actually being used just because of, like, what their, like, inference stack is. Yeah. So so the GPUs are are still on. Yeah. It's like they're just, sitting
+Speaker 1: But you want it at a 100%. Right? Or close
+Speaker 6: to Yes. But that's, like, extremely hard because Yeah.
+Speaker 1: Have to, like
+Speaker 2: You have
+Speaker 1: to be using it all the time.
+Speaker 6: Yeah. Because, you know, you're constantly loading Yeah. You know, memory on and off or
+Speaker 1: whatever. And and and you might just see uneven demand. I mean, that happens all the time with these AI products where there's a boom. Like, I bet you that utilization spikes during, like, big moments on X because a lot of people are tagging like, at Grok, is this real? And a lot of people are are using Grok in X when there's a particular you know, there's there's those moments where it's like an election or something and everyone's on X talking about the thing, the raid on Osama bin Laden or something like that.
+And everyone's like querying at the same time to get more information that's probably lighting the GPUs on fire during around around big model releases and whatnot. Anyway, Jordy, where do you want to go next? We're the next guest in the in the waiting room. We can bring We can work do that. From Casa.
+Michael is in the waiting room. He's the co founder and CEO of Casa. And he's here to talk about subscription based home ownership platforms. How are you doing, Michael? Good to meet you.
+Speaker 6: Good. Good to be with you guys. Thanks for having me.
+Speaker 2: Thanks. Great to
+Speaker 3: have you on. You announced a new round last week. Couldn't get you on on Friday, but you're here Hit us with the news.
+Speaker 6: We raised $20,000,000 series a led by a full runner.
+Speaker 1: Bunch of
+Speaker 6: great votes around the table as well, including a recent guest, mister Travis Kalanick himself. Oh.
+Speaker 3: Woah. I didn't realize How did that happen?
+Speaker 6: Well, I'll give you a little bit of backstory. I left school when I was 18 to join Uber. Uber was 50 people at the time and started out as an unpaid intern working on the supply side, getting LA up and running. Got job offers later and decided to drop out. A year later moved up to SF to work on product and engine which was really my passion and
+Speaker 3: Did you know did you in your in all of your 18 year old wisdom know that Uber was a special company prior to joining or were you just happy to have an internship?
+Speaker 6: Maybe a little bit of both. Mean, was obviously something that spoke to me. But I think for me it was a way to actually just get immersed in culture the I really love, but from afar. I mean, I know you guys are in LA. I'm from LA.
+And certainly, it wasn't what it even is now with, you know, exposure to startups and tech and all of that.
+Speaker 1: Totally.
+Speaker 6: Yeah. I was very fortunate. It actually happened on the backs of a tweet, which is a fun story for maybe later. But
+Speaker 3: Was the whole team built off of tweets?
+Speaker 6: Basically. Yeah. Basically, there was a TechCrunch article that they were coming to LA. I followed it. A few months later, someone tweets from the account says, we have a press lunch.
+Email us here if we missed an invite. And I just hit up this email as a 18 year old kid who is not in the press, but just wanted to meet these guys. They sent me an invite and was like, come meet our CEO, Travis Kalanick, and it was this restaurant in West Hollywood Wow. Where I was like half the age and height of anyone there and schmoozed my way into an internship with the GM that they just hired for LA and that was kind of the start of it.
+Speaker 3: That's amazing. How long how long were you there?
+Speaker 6: Was there for almost six years. I left the day that TK left. Wow. I knew that, you know, I didn't Wow.
+Speaker 4: I didn't want
+Speaker 6: to be there. I knew I was only gonna work for him or myself after that, and actually I ended up working for him again a few months, you know, after he he left and all that madness. He he was calling for for round two with Cloud Kitchens, and so I joined him there. We were about 30 at the time and was working on product and design for software side of our business until until '24.
+Speaker 3: That's incredible. It's quitting in solidarity with your with your boss. Underrated. It's underrated. Underrated.
+Underrated. Yeah. Alright. Talk talk about talk about Casa.
+Speaker 6: Yeah. So not sure what you guys already saw, but Casa is a personal property manager for your own single family home. You know, I guess the origin story is coming off of the Uber experience myself. I was really fortunate enough to consider buying my own first home. And I think, you know, like any first time home buyer, you're super excited about the emotional aspects of having a home and making it your own and sharing with your friends and family.
+It's also this huge financial endeavor, probably the most expensive thing you ever buy. And pretty much everyone realizes once they have it for the first time that, you know, at least a part of the ownership experience actually sucks. It's basically another part time job. And, you know, the home is basically a thousand products in one. There's always stuff that's going wrong, always stuff you wanna make better, and you're really left to deal with it on your own.
+And, right, most people don't have the time, the expertise, negotiating skills, sometimes even interest to deal with all this stuff, and they'd rather be spending that time with their loved ones and going on vacation and doing fun things.
+Speaker 3: To Yeah. Makes makes total sense. I've I've I There's so there's so many things around my house where I'm like Months go by where I'm like, I I should I should do that or, you know, whatever. I just I don't get around to it and then and then stuff comes up which is like, oh, do you have Like, where's the floor plan? And I'm like, I don't know.
+It's like a What's the paint color? Yeah. What's pink color? When when did we redo the when when did we change the HVAC filter? Like, all all this stuff and it just gets lost in emails and text.
+I I I totally get the pain point. Has there been a lot of shots on goal on this concept in the way that you're positioning it? Like it it's seems like one of those ideas that I'm surprised that I I can't think of like a name brand company that does this. Yeah. So I'm sure you've looked for it.
+Speaker 2: What Yeah.
+Speaker 6: It's a good question. I mean, if you look at the companies, you know, at the intersection of home services and tech right now and the few that remain, it's like the Yelps, the Thumbtacks of the world. And, you know, they might market themselves as homeowner products. I don't actually believe them to be, and you don't have to look farther than their p and l to understand that. Right?
+A 100% of the money they make comes from the vendor side of the business. So these guys are happy to send you shitty plumbers or super expensive plumbers if those guys are paying the platforms $20 a click. And to be honest, the vendors hate them too for the same reason. So I think this is prime for disruption. You know, to answer your question, I would say, I don't really think it's possible to build this in what I would say is the right way to build it until, you know, the last couple years with the multimodal models.
+Basically, how Casa works under the hood is you sign up, and the first thing we do is we come to your house with a bunch of specialized hardware and software. And in the span of a couple hours for a standard sized home, we will develop an extremely intricate understanding about everything about the home that matters from a servicing perspective. So it could be a full three d model, a lidar scan of your house, every appliance, every electronic, every exact paint color, the light bulbs inside of all your light fixtures. So to do that in the span of a couple hours with one or two humans was impossible a couple years ago and is now possible, and that's really what powers everything that we do. So we're actually really fortunate we got to take this, like, very first principles look and approach to all these homeowner problems.
+And, you know, it starts with the physical day to day pain points, the things that a handyman might help with or, you know, another type of physical vendor, but there are also these other kind of meta concepts around the home, anything from your property taxes to utilities to all these things that we that we now kind of monitor end to end and we'll do a more interesting job of helping you out with over time.
+Speaker 3: And I'm assuming you have the this is an account that theoretically should stay with the home because Yes. I remember when I bought my house, I felt terrible because I would hit up the seller, like the previous owner all the time like, hey, do you know where this thing is? I just was like, I I It was fair to ask all these questions and they were happy to answer but it was still like, I felt like it was wildly annoying. And if there was just basically like a database that all this stuff had been like dumped in and a single source of truth, they could have passed that to me. I would have been happy to to pay to have access to it.
+So theoretically, I'm sure you're building out your model for the business, but you're hoping that, you know, a house could change hands multiple times and the Casa would would be kind of like continuous through the whole experience.
+Speaker 6: Yep. Yeah. Absolutely. I mean, not to bring in a legacy name, but you can kind of think about it like a CARFAX for your home too. Or certainly that's the direction we would move in.
+Right? So you have this neutral entity. Obviously, we have no particular affiliation to any of the owners or whatever. We're able to just provide this very unbiased view of how has the house been maintained, what are the general costs to maintain the home. And that might even become interesting in other contexts, right, like to lower your home insurance costs.
+If we can provide the insurance entity with, like, a hardened understanding of these are the proactive maintenance plans that have been happening for a home, there's no reason why you shouldn't be able to save money there. And so these are really all of the opportunities when you're taking this homeowner approach, homeowner focused approach that you can kind of pursue that don't make sense for anyone else in the picture right now.
+Speaker 3: Very cool. And have you been in stealth the last couple years or like what's the history of the company?
+Speaker 6: Yeah. Yeah. So we've been in a private beta since q three twenty twenty four. We basically put out this very, very simple app. It was basically a two way messaging client for a few of our friends or family in the bay, and we basically said, hey.
+Whatever problem you have with your home, send it to us, and we'll try to figure it out. And for us, you know, we weren't charging anything. We just wanted to understand what were the bounds of requests that we were gonna get, where do people want to have a concierge for their own home help with. And on the other end of that, that was basically my cofounder Michael and I just responding to these issues, you know, calling up vendors, figuring out handyman on the fly. And, you know, I'd say in the span of a few months, we understood where the sweet spots were, what people were looking for, and the beta itself took on a life of its own.
+So what started as a handful of folks ended up with hundreds of homes all in the bay and eventually in LA on the on the backs actually most notably on the backs of a tweet from one of our beta members, Lenny Richitsky. I know you guys know. Nice. And, yeah, he he shared it. You know, he was like, hey.
+Do you, you know, want a few extra homes? And we were like, sure. And then she tweeted about it. It was a very sweet and generous suite, and the wait list just went through the roof. And honestly, we've we've been working through that one for for many months.
+So that was the first time a lot of folks had heard about us. And, that's that's where we're at.
+Speaker 3: So How what does it take to launch a new region? You probably know what you you've launched a few regions, I'm sure, back in your Uber days?
+Speaker 6: Yes. Actually, the first thing I was doing at Uber was standing around at LAX knocking on black car town cars recruiting drivers. And by the way, at the time, it was like primarily 50 to 60 year old men who had not seen an iPhone before and were like, hey, do you wanna, you know, change your whole life and use this phone and drive people around? And, yeah, I think for for us, it's very similar in that, you know, I see this as a paralyzable playbook.
+Speaker 1: So
+Speaker 6: we you know, at Uber, we spent the first couple of years really perfecting what was the playbook for landing in a city and going from zero to a 100. And once that really was understood and stabilized, you saw us launching, you know, 50, a hundred, hundred fifty cities a year. So, you know, we'll do the same thing here, which is we're understanding what that looks like. LA is the second test of that. We got a handful more markets coming this year.
+But, you know, I I I think you'll see us kinda do that exponential growth curve on the number of markets we're supporting, you know, also the benefit of others.
+Speaker 1: How do you think about disintermediation? Obviously, Uber did fantastically. Even though you meet a great driver, no one really jumps from, you know, the driver that took you to the airport is now a full time employee. Very, very rare. At the same time, like dog walking had a much harder go where Sure.
+People found great dog walkers and said, hey, how about I pay you cash? And we cut out the middle man. Disintermediate. Feels like there's some sort of interesting unlock here with Yep. The data around the house that is valuable and provides enough value that both parties will wanna stay on the platform.
+But walk me through the thesis of, you know, avoiding disintermediation at scale.
+Speaker 6: Yeah. It's a great great question, John. Actually, I think those are two perfect analogies. Right? So for Uber, it didn't make sense because a huge part of the value for Uber was that you can get in a car in two minutes.
+Speaker 1: Yep.
+Speaker 6: Even if
+Speaker 9: you have
+Speaker 6: a driver's number, forget about all the insurance and the other things you get, but it just doesn't make sense to call a guy and wait an hour for him to come get you. It doesn't even make sense for the driver. The dog walker one's a bit different. Right? Because the dog walker presumably lives in your city and, you know, once you have that connection, you're good to go.
+Speaker 1: Yeah. And it's like every For us. The same the exact same pattern.
+Speaker 6: Exactly. Exactly. Exact same service and all of that. We're very much in the Uber camp, and I I tell you that honestly just from experience, which is that we've never had a single one of our vendors or handyman poached by a a homeowner.
+Speaker 1: Oh.
+Speaker 6: And the reason for that is obvious to me from the inside, and I think will become obvious to folks as as the service gets bigger and more prevalent, which is that all of the things we do to surround the visit. Right? So in the Casa app, you can book a handyman visit, you can say, hey. I want these three things done from my home. What actually happens at that point is a combination of a bunch of fun AI stuff and our own kind of concierge human team.
+We'll look at those tasks. We'll look at the history of your home and all the information we have about your home to do that thing really well for you. Right? So you might say, I wanna hang up a bunch of family artwork in the hallway. And we'll come back to
+Speaker 3: you and say, hey.
+Speaker 6: Do you already have the frames? Do you want us to find them for you? If you do, we'll come back to you with a bunch of options based on your past preferences, or we'll start to understand your preferences, and we'll actually have those frames ready for you or in the hands of the handyman before they even show
+Speaker 2: up. Mhmm.
+Speaker 6: And all of that context about your home and the preparation for this work is what really makes it valuable and also getting the right person to your home. Right? So one handyman might be really great at carpentry and another might be great at a different skill.
+Speaker 1: Sure.
+Speaker 6: Sending the right person at the right time is super important. And also the fact that you can just get someone out your house usually within twenty four to forty eight hours at any time and you can't do that with one person.
+Speaker 1: Handyman exhibit handyman exhibit spiky intelligence and you solved that. That's what's going on. Yes. Yes. Love Well, congratulations.
+Mean, this seems Where where are
+Speaker 3: guys are based in SF?
+Speaker 6: We're based in SF. We launched with SF in LA. So it's SF Bay Area plus LA. Bunch of other stuff to come and yeah.
+Speaker 1: Oh. And and 4Runner lived around. Fantastic. Well,
+Speaker 3: very cool.
+Speaker 1: Thank you
+Speaker 3: so much for the time. I'm gonna sign up.
+Speaker 1: I'm definitely gonna sign up. I'm gonna
+Speaker 3: sign up. Love it.
+Speaker 6: Love it. Have a great
+Speaker 1: rest of your day. We'll talk to you
+Speaker 3: soon. Great stuff, dude.
+Speaker 2: Thanks, Chance.
+Speaker 1: Goodbye. Up next, we have Maddie Hall from Living Carbon with a absolutely massive plan to work on United States reforestation. Maddie is in the waiting room, but we'll bring her in to the TBPN Out Show. Maddie, how are you doing?
+Speaker 3: What's going on?
+Speaker 11: Oh, thank you all for having me.
+Speaker 1: Thanks for hopping on on such a momentous occasion. Take us back though, introduce yourself and the company, and then I wanna get to this half $1,000,000,000 deal. Absolutely insane scale. Congratulations already.
+Speaker 11: I know. It's very exciting. I think largest amount of money that's been raised for afforestation of degraded land in The US. Absolutely crazy. Prior to starting the company though, I was actually working at OpenAI.
+Oh, no. Cool. Yeah.
+Speaker 3: So And explain OpenAI for for the audience. No. I'm kidding. Very very cool.
+Speaker 11: Afit, you may or may not have heard of it.
+Speaker 1: Yes. Yes.
+Speaker 11: Yeah. But I think it was pretty clear that the biggest blocker between where we are today and super intelligence is energy.
+Speaker 1: Mhmm.
+Speaker 11: Right? The math just continues to get to get more compelling. Like, the hyperscale emissions have been up more than 50% since 2020.
+Speaker 1: Yeah.
+Speaker 11: At the same time, like, a lot of data center projects are being blocked, like 64,000,000,000, something crazy. Yeah. So Living Carbon, our focus is on transforming old mine land and abandoned farmland into forests that either can produce carbon credits or sustainable forest products. And then we sell to the world's biggest companies, Microsoft, Google, Meta, McKinsey, to mitigate their increased emissions from AI and data centers.
+Speaker 1: And then how vertically integrated is the is the business? Because I can imagine this being something where, like, you're working with a whole bunch of contractors in different forestry organizations, and it's a lot of financial work to, you know, bridge the gap between the hyperscalers, which you have connections to and the different forestry organizations. But are you planning on, like, building machinery, hiring people, planting trees, planting seeds? Like, how in the weeds will you get?
+Speaker 11: Yeah. So I think of Living Carbon as like the general contractor of the project Sure. Overseeing all of the different pieces. Mhmm. That's largely what this octopus deal enables us to It is them covering the cost of all of the site prep, the planting, the land lease, all of the above.
+And then Living Carbon acts as really the overseer and the manager of those projects, but then also shares in the revenue with Oktopus from their investment. So we don't own nurseries. We don't own land, but we have sort of programmatic tools to identify the sites that are best suited for our projects. And we do all of the end to end negotiation, financing, off take agreements, getting all of those pieces of the puzzle lined up.
+Speaker 3: So you're Are there labor shortages in reforestation? Mhmm. Like, if somebody's wants to get in on the the AI boom, should they be like learning how to plant a lot of trees quickly?
+Speaker 11: I mean, I think it's I think it's possible. I think, you know, what you have when you're doing these land based projects is value that is going to persist, right, regardless of, you know, how much of the software space the foundational model companies end up end up eating. So, you know, it's a great long term cash flowing business. Mhmm. Yeah.
+Speaker 1: The goal is a quarter million acres in the short term. You've already done 25,000 acres. Walk me through lessons learned from that, what that actually looked like, how that how that initial first project came together.
+Speaker 11: Yeah. So our flagship project right now is about 25,000 acres that we're in the process of planting with our customers, Microsoft, Google, all of the above. That's taking degraded land in Appalachia, so abandoned mine land and reinforcing it. And what's interesting about this project is it actually has the potential to offset the entirety of all of the emissions of San Francisco on an annual basis. So our plan with Octopus is to hopefully 10 x that, which would remove all of the emissions of New York City on a basis.
+Speaker 1: Got it. Walk me through why mines cause so much deforestation. I think of a mine as like a hole in the ground and, you know, it it digs under, but it's not exactly clear cutting like miles and miles. Or is it? Like, what actually happens in the process of mining that affects the forest?
+Speaker 11: Yeah. So a lot of these sites that we're that we're working on, they actually have been, like, stagnant since the nineties and it's really sitting for decades. Sure. It's not just the mining pit, but all of the land in close proximity to it. When coal went bankrupt in the nineties in the region, there was very little effort put into a lot of the remediation and restoration that would actually allow for that land to be put back into production.
+So these sites have been really liabilities on the balance sheet of a lot of the mining companies and private landowners for twenty plus years.
+Speaker 1: Yeah. Can you get me up to speed on some of the other, like, reforestation trade offs that are happening right now around carbon credits? Like, I've heard one thing about, like, some carbon credits that are basically just designed where it's like, okay, we were going to cut these trees down but we didn't and so we want the credit and that feels like a little bit edgy. And then also I'm wondering about international because I imagine just on a cost basis you could probably plant way more trees internationally because the land's cheaper. But does that offset carbon emissions, like, globally, potentially?
+But do the hyperscalers get credit for it if it's happening halfway across the world? So how have you unpacked some of, like, the hot topics in reforestation?
+Speaker 11: Yeah. So I think our focus has really been on, like, active intervention that wouldn't have otherwise happened
+Speaker 1: Sure.
+Speaker 11: Without funding from carbon credits and the conflicts that we have there. It's hard to say with certainty whether or not a tree would have would or would not have been cut down, but we can say with certainty that these sites would not have been restored
+Speaker 8: without our work.
+Speaker 11: And so you're looking at these these areas, and the natural rate of regeneration is very low. It is cheaper to do it in other parts of of the world, and I think we there are some amazing projects that are being developed in Latin America and and globally. I think for us, being in close proximity to the areas where data centers are being developed and having that regional focus such that our projects, you know, will offset carbon within the same region where large scale renewable projects are being built out and data centers being built out. And that's been desirable
+Speaker 1: for us. Yeah. So it's not just abstract to the local voter who's making a decision around environmental impact since Yeah.
+Speaker 3: Is one of the solutions to how ugly data centers are to some people That's true. To just put a like forest fully surrounding it? Is that a could we see that in the future?
+Speaker 11: Oh, I I sure hope so.
+Speaker 1: That would good.
+Speaker 8: I sure
+Speaker 1: hope so. That would yeah.
+Speaker 3: Yeah. That's A magical data center in the center of a forest. I would love that.
+Speaker 1: I would love that too.
+Speaker 11: I mean,
+Speaker 8: that's what we're doing. So
+Speaker 3: Very cool. That's great. Awesome.
+Speaker 1: Well, tell us about the the new deal. I wanna hit the gong. How big is the new deal?
+Speaker 11: Up to 500,000,000. Congratulations.
+Speaker 1: Thank you so much for taking the time to come chat with us and we will talk to you soon.
+Speaker 3: Happy you're doing what you're doing. Have a good rest of your day.
+Speaker 11: Sounds good. You guys too.
+Speaker 3: Bye.
+Speaker 1: Up next, we have Anjney. Is this the first time on the show? No. He's been on the show before. Second time on the show.
+Well, let's bring him in in
+Speaker 3: the waiting room. A free man.
+Speaker 1: First time with his new fund, AMPPBC. He's here in the waiting room. He's here with us on the TBPN. Man, that How you doing?
+Speaker 3: Minds generational run.
+Speaker 2: Yes. Generational Oh, my getting started, guys. No. Generational run is news for people who are retiring.
+Speaker 1: Oh, yeah. We're just getting started. That's true. That's true.
+Speaker 3: I think it's appropriate to I think it's important to recognize when you're on a generational run that you realize you have to actually level up even further if you wanna stay on the same trajectory.
+Speaker 1: Yeah. Yeah.
+Speaker 3: Because if you just get complacent then
+Speaker 1: Yeah. It's important to like count the chickens before they hatch. Like that's what you're saying?
+Speaker 3: No. No. No. The opposite. Anyway, great great to have you back on the show.
+Speaker 2: Thank you for having me. Yeah.
+Speaker 3: Fun to yeah, catch us up to speed on Yeah.
+Speaker 1: Did the fund launch? What's the strategy? Yeah, like walk us through the current thesis for how you want to actually develop the firm.
+Speaker 2: No. I think we should talk about something more interesting. Let's talk about eBay. Let's talk about eBay.
+Speaker 1: Okay. Yeah. What you got? Okay.
+Speaker 2: So so here's what I'm and I want you guys to kinda spar with me. Right? Please. Looked at like, you know, Ryan did this CNBC interview and everybody's, like, pinging me and saying, oh my god. This makes no sense.
+Blah blah. And and so here's my my take on it. Okay? Which is that, like, if if you read the GameStop deck, like, carefully for eBay, most of what's been said about the deal in the last forty eight is basically totally wrong. I I read I was just before jumping on, I was reading Michael Burry's piece on it, which you guys should check out.
+Yeah. And he is right that the leverage is pretty tight, but I think he's not answering the the wrong question. And so is Ryan on CNBC where he's you know, they keep asking him, like, where's the cap? How are gonna fund the deal? Yeah.
+Yeah. 50% cash, 50% stock, 50 like, percent I I don't think the question the question isn't can GameStop afford eBay. The question is whether the underlying business actually works, and I think it does, but not for the reason I was expecting Ryan to pitch.
+Speaker 1: Okay.
+Speaker 2: So if you if you pull up eBay's 10 k from February Yeah. Fiscal twenty five, and I did not understand this until I read it, eBay spent $2,400,000,000 on marketing. Mhmm. How many new users did they get for that? I mean, you guys are marketers, so you understand.
+1,000,000. Woah. That's crazy. The user base went from one a 134,000,000 users to a 135,000,000 users after spending 2,400,000,000 on marketing.
+Speaker 3: So and that's basically they're basic you you would have to imagine they're just having to reacquire all their old users, people that have been on the platform before, maybe even lost their account and they're they're they're coming back. I
+Speaker 2: don't know, but it's that's $2,400 of marketing per new user on a site that every American already knows exists.
+Speaker 3: Sure.
+Speaker 2: Yeah. So where's all that money going? Right?
+Speaker 3: It's rough.
+Speaker 2: So I don't think Cohen is is I I don't think he's buying eBay. Like, just watching Ryan, I don't think he's buying eBay because he thinks he's smarter than eBay's product team. I think he's buying eBay because he can see $2,000,000,000 of fat that Wall Street has been pricing as fixed cost. Mhmm. And so he goes, okay.
+Let me cut that. And the interest on the debt just pays for itself.
+Speaker 3: Mhmm. Interesting. Right? But he doesn't necessarily wanna say that because he could kind of give that idea to the But
+Speaker 1: he still has put the money together, right? But is your thesis that like the deal is coming together, he has investors that he's talking to but it's too early to say, oh yeah, I actually do have a fund that's going to give me another 5 over here, got seven over here. And it will math out, but just give me a week. Or is there something else going on?
+Speaker 2: Depends on which investor he's talking to. But if he was pitching me, here's what I would Yeah. Yeah. Underwrite. Right?
+I'd say, okay. That's the floor. The floor is Ryan's gonna cut $2,000,000,000 from this thing of that. Put that into treasuries, and we're gonna make more money
+Speaker 1: Sure.
+Speaker 2: Than it's currently yielding. Okay. So that's the floor. Now the ceiling because I'm a I'm a technology investor. Right?
+Speaker 1: Yeah. The opportunity. The bulk case.
+Speaker 2: The bulk case. So Amazon's used and collect collectibles business has been flat Mhmm. For six years. Mhmm. They tried renew.
+They tried collectibles. They tried trade in. None of it's failed. Mhmm. You cannot put a 1962 Mickey Mantle card through the same warehouse as a phone charger.
+Mhmm. That category that category, right, collectibles is structurally defensible against Amazon. Okay. Amazon is for phone chargers. Mickey Mantle for eBay.
+Right? Yeah. EBay has the marketplace. GameStop has GameStop has, like, 1,600 stores that could physically verify Sure. The good.
+Sure. That's a real move.
+Speaker 1: Yeah. Yeah.
+Speaker 2: And it's worth more in the AI era than the human era. Right. Right? Why? Because we're an AI agent.
+I I collect I love collect like rare pens. Okay? This is a Montblanc. Sure.
+Speaker 3: I get old I love it.
+Speaker 1: I like that.
+Speaker 2: I'm a pen guy
+Speaker 1: Yeah.
+Speaker 2: And I love old vintage glasses. I don't know if you can see my Jacques Marimage box in the back. But
+Speaker 1: Oh, cool. Nice.
+Speaker 2: But when I'm out of time, what do I do? I have Claude go look for rare pens and glasses for me online. The biggest problem with used rare asset purchases is fraud. Yeah. So I often will tell so Claude will be like, Andre, I found this amazing pen.
+This Montblanc pen. And I say, okay. Can you triple check that it's it's it's real? It's not fake? And that's where things go up real because there's no way for him to verify that without messaging the agent and so on.
+Speaker 1: Yeah. Yeah.
+Speaker 2: But if you have 1,600 stores where people who have mumble on pens can go and physically verify those assets at GameStop
+Speaker 1: Sure.
+Speaker 2: Now Claude just says, yeah. I checked. It has the physical verifications stamped
+Speaker 1: from Somebody brought it in.
+Speaker 2: Exactly. So Yeah. You you can't you need physical verification built into the system for agentic commerce. And look. The reason I know this is real is because a few years ago, I think you you guys we talked about this last time, but I sold my last startup to a a company called Discord in 2020, peak pandemic.
+So I come on as the head of platform. My my my job is supposed to be, you know, Anj, go build SDKs, APIs, and so on for gaming. Mhmm. We help this company called Midjourney get going, AI, you know, generate. But twelve months later, suddenly, I find myself running without realizing an ecommerce business because it was the summer of NFTs.
+Yeah. And the the board ace are blowing up, and suddenly, we have more than $10,000,000,000 of GMV flowing through Discord buy sell through channels. Yeah. And Jason and Stan are like, hey, brother. Your job is to, like, capture a piece of that pie.
+Yeah. I go, okay. Homework accept accepted. So we start doing a deep dive. And we realized, ultimately, the what what these users need and pay for like, so you have liquidity.
+Right? Ultimately, that's what a marketplace like eBay and Discord provide and sort of community commerce is liquidity. But you cannot provide liquidity if you don't have physical verification. And for Discord, that was just out of scope. You know, use sneakers
+Speaker 3: And it worked you're saying it worked for NFTs because you had on chain Yeah.
+Speaker 1: You don't need me physical. There's nothing physical to verify.
+Speaker 3: Owned it, and you can transact. Yep.
+Speaker 2: Exactly. And so we had we are bootstrapping the ecommerce platform at Discord with NFTs, but, of course, everyone on the board is like, well, how long are NFTs gonna last? It's a fad. So Anj, what else is coming? We go look at rare sneakers or keyboards, like, all this stuff that nerds like me love.
+But for those who need physical verification, and once we realize physical verification is out of scope, we nix the product.
+Speaker 3: Yeah. You're not gonna go have the 1,400, like, retail locations where people can drop things off. Yeah. That's that's that's quite interesting.
+Speaker 2: So that's when I realized, okay, eBay is this undervalued asset. And I hope that Ryan has figured it out as well. Because if he hasn't, he's giving me ideas.
+Speaker 3: Yeah. Yeah. Have you have you tried to walk through what what, you know, given that you're probably more AGI pilled than than I would say 9090% of of VCs. Have you tried to play out? What is it?
+What how would you how would you build eBay from the ground up today with an agent first approach? Is that even the right question to ask?
+Speaker 2: Look, I have not, guys, because right now, I'm in a I'm a computer infrastructure guy. Right? We started AMP at this public benefit corporation whose job is to be an independent system operator of the compute grid. We think about we think we're roughly in, 1885 industrial England where the steam engine's been invented. Everybody knows that you can make cool new products like, you know, steel and Yeah.
+And notebooks and pens and cars. And there's this very scarce input called coal that everybody is hoarding. In this case, it's compute. Mhmm. And when I if you fly over industrial era England, you'll see all these factories getting set up, and everyone's running a generator in their backyard at half capacity.
+I'm going, this makes no sense. If I'm looking at all my portfolio companies, you know, you these these clusters are running at, like, half utilization. In fact, Elon's Yeah. Like, got 500,000 GB 300 in Memphis at running at 11% MFU and less than 60%, you know, node allocation. I mean, this is $12,000,000,000 of computing wasted.
+So I set up AMP as an AI infrastructure organization we buy a bunch of compute. We do long term leases. We pull that all those clusters on the grid. We coordinate capacity, drive up utilization. And by the end of this year, I think we'll have, you know, several billion dollars of compute coming online.
+But that's what I've been focused on night and day since, like, I left and recent Horowitz in January. And so, no, I have not had time to look at how to redo eBay, but if Ryan called, I'd probably help him out. But right now, it's wartime on compute, guys.
+Speaker 1: So yeah. We we I I I wanna talk about AMP, but I also wanna talk about just last question on the the the combination of eBay and GameStop. Like, get the thesis, the bull case. GameStop is $10,000,000,000. EBay is like 48,000,000,000 right now.
+You put them together, maybe you get to a 100,000,000,000. I'm in for the bull case. The question is like, how what's going on with like the plan? Because it feels like Ryan just doesn't have the capital but then he announced it. Like what like what what what do you think is happening behind the scenes because there's one thing where you could throw it out as like, oh, like these two companies should work together.
+Here's a bull case. Let me know if you want to be on the team that does this. And then there's the other one which is like make the offer before the capital's lined up. But I just haven't been through enough of these stories to actually understand, like, why it's playing out this I
+Speaker 3: I way. Think be honest, I think he's sitting there with I think he has $9,000,000,000 of cash. Yep. He's in a $10,000,000,000 company. Yep.
+I think when he announced this, I think he expected the stock to pop like crazy and he'd be going on CNBC being like, this merger could make sense. Sure. And I think that We'll issue
+Speaker 1: another 20,000,000,000 of equity and then and then we'll merge or something.
+Speaker 3: And I think if you looked at I think if you looked at like how kind of frothy some things in the market could be, you could have imagined that playing out. I mean, the Allbirds thing was I'm sure you appreciated appreciated that from the meme side.
+Speaker 1: Direct competitor to you. Yeah. Direct competitor. You gotta be careful.
+Speaker 3: Versus Allbirds will be the new horse race. No. Anyways, that Yeah. That was my that was that was my read because he because they're basic GameStop is basically valued at like the brand is and and all the retail locations and everything is valued at like a billion dollars. Right?
+Yeah. He's getting no credit for all the cash.
+Speaker 2: Yeah. So to be clear, AMP is not a cloud business. We are so I started AMP as a holdings business. Yeah. And I've got infrastructure business and a capital business, and the infrastructure business secures compute and passes on at cost to our portfolio companies.
+We have more than $1,300,000,000 in commits for our first fund. I've been added eight weeks. Interesting. And so we do do venture capital investments. We put $300,000,000 into Endropic.
+Speaker 1: Yeah.
+Speaker 2: Oh, okay. Cool. Yeah. But we we we need to raise another roughly, you know, 6 and a half billion dollars this year, and a lot and and more is getting committed by the day. Yeah.
+But we give away the compute at cost to the independent ecosystem because my belief is that, you know, that the the, like, sort of that the optimal unit of research today is a, like, a focused down 10 steam outside of the hyperscalers, you know, and tropic encoding, which was I was the first one of the first I'm certainly I think I'm the first angel investor, if not the first investor in the round.
+Speaker 3: They're saying you're the Jason Kalakanis of of Anthropic.
+Speaker 2: Unfortunately, JCAL had I could never talk JCAL, but, like, JCal's intern or something, fine. I'll take the win. You know what? But I I think more more importantly, like, I think compute is the strategic asset, which I've been yelling about for four years, and it's a primary bottleneck on these teams. And if you're not at the hyperscalers, you just can't get access.
+So we buy up that compute. We give it at cost to the portfolio comp teams, and then we reinvest the profits of carry and fees to buy more compute and so on and so forth. Mhmm. And so I'll take as much capacity as I can get from Allbirds. I love it when new people go into the business because that gives us more supply.
+So if you're the Allbirds CEO listening to this, please send us your compute. We'll take it all.
+Speaker 3: That makes that makes a lot of sense. What are you excited to invest in? You're investing in teams that need a lot of compute. You're trying to find things that aren't gonna get steamrolled by Anthropic, who's another big portfolio company. There's there's, you know
+Speaker 1: There's application stuff. There's real opportunity. There's a lot of other different things that need compute. But what do you think?
+Speaker 3: Because I feel like I feel like a lot of lot of VCs are would never say this out loud. But a lot of I get the sense from a lot of ECs that they're kind of like paralyzed, where they're like, they really don't they don't have a clear sort of understanding of where things will be in five years, they feel like they need to be active. And so it's a mix of like doing new neo lab doing some neo neo labs, maybe doing some application layer stuff and just kind of praying. But I would hope that you have a given given your background and how you're approaching this, you have, like, a stronger thesis on on where the opportunity is to invest at the early stages.
+Speaker 2: Look. In in some sense, it's it's back to the future. I started my career at when I was 19. My first board seat was as an observer with John Doerr when I was 20. I wasn't old enough to drive technique oh, drink.
+Sorry. I didn't have a I didn't have a driver's license. I wasn't old enough to drink. And and I got the chance to apprentice with, like, the greats, like, you know, Brooke Byers. And and, look, that's the that's the vintage of venture capitalists I grew up admiring, like Arthur Rock.
+And that's my you know, our thesis at AMP on the on the venture capital side. Our business is called the AMP Foundry where we help create co design, you know, new labs one at a time. My current one is called Periodic Labs, and we just decided to lead this. So you say, I led the seed round last year with Liam, was the cocreative of ChatGPT, and Doge, who was there, who led some of the quantum physics teams at DeepMind, and we're trying to find new high temperature superconductors there with physical we have a 30,000 square foot facility in Menlo Park. I spend three days a week there.
+We do a stand up every morning from 8AM to 08:30AM, and then we make our priorities and then go execute. And, you know, basically, we have AIs, predict new materials. We then have robots synthesize the new materials. We then have an x-ray diffraction machine that tests whether the material has the properties that robots the AI set, and then we pipe that verification loop back into the training ground, like, as many times as we need for the agents to continue predicting new superconductors. And in the last ninety days, we had more material verification than I think in the last decade in the field.
+And so I'm a huge believer in unblocking frontier progress in domains where it the verification sort of loop is clearly just like, we know it's gonna work, but execution is the bottleneck. And then I like getting these the best teams, the best scientists, the best engineers, the capital, the compute, and the commercial help they need. Now I I think that the beauty about having Anthropic around is that it's made this idea of the better lesson and and scaling legible to the capital market. So now instead of me having to call up 22 friends, I'm getting 21 nodes, which was the case with the seed round of Anthropic. Now I I make two calls instead, like, we get, like, you know, like, we get three times oversubscribed.
+So cap capital is no longer the bottleneck, which is phenomenal. You know, again, we've been out of eight weeks. I have more than a billion dollars committed from my our first fund. I'm a solo key man GP on the fund, and there's lots of institutions, pension funds, sovereign funds who are like, how much more can you put to work, especially in publics, privates, buyouts? The it's a bonanza for people who wanna be true partners, who wanna be the orthodox of this era.
+I think if you believe in the bitter lesson, it's not new. It's been around for ages. You and I the three of us talked about this, like, over a year ago at the last recent Harvard's AGM. Yeah.
+Speaker 3: Still better.
+Speaker 2: I I I I'm I'm more zen than I am bitter. How
+Speaker 3: are you thinking about building out the team on both sides?
+Speaker 2: Trust is the mode. So there's five of us on the team. My full time engineering co founder Sebastian Bobo. We were roommates fourteen years ago at Stanford, and then he went on to build a grid internally. Success.
+Speaker 1: Here we go.
+Speaker 2: What what was that one?
+Speaker 1: Overnight success.
+Speaker 2: Overnight success. Thank you. Twelve year overnight success in California.
+Speaker 1: Exactly.
+Speaker 2: So so Seth and me, I built the Borg export GQM scheduler, which kept the Google internal capacity pool at more than 95% utilization there. If it was at 94% utilization, that was considered a major outage globally. Wow. Andrew Erskine is my partner on the operations side. He was a partner at ORIC, which was the, you know, outside counsel for Anthropic.
+Speaker 1: Yeah.
+Speaker 2: And he was my GC at Ubiquiti six, which was the company I sold to Discord. And then Rosie, who's my chief of staff, ran comms for me from Edelman when I was at and recent Horowitz, you know, when I was GP there. And so So you got the band back together. It's it's it's it's the odds reunion, basically. And, you know, we put we called AMP not after my initial.
+Sometimes people think that. It's not Anjney or Partners or anything like that. It's about energy. It's about AMP, you know, AMP peers, the unit of of energy. And we we wanna AMP things up because we think we're in entering, like, the great renaissance in technology.
+And, you know, if you can have a small team that trust each other across context, you know, compute capital, sports teams, buyouts, leverage technology, all of this stuff is these are all buckets and categories that we've all put you know, traditional capital allocators have put around these asset classes that shouldn't exist. And I think if you have the flexibility to go back to first principles with a small team that you trust, you can execute, you know, with with orders of magnitude less less a size of a team as a firm in this new era with the right tools. I don't know if if that makes sense.
+Speaker 1: No. Totally. You you mentioned taking positions in public companies, the fund structure as a PBC. Are you also an RIA? Like, how are you thinking about navigating both of those asset classes since that's a little
+Speaker 2: We are in process. Okay. Yes. We are in process of get becoming an RIA because, you know, we founded the firm barely Yeah. Yeah, ninety days ago.
+But I'm used to that cadence because Andreessen Horowitz was a RIA. I was a general partner in the AI infrastructure fund for several years, as you guys know. And we were in RIA. I'm used to the compliance, the regulatory sort of guardrails we gotta follow, and I think LP's process to, you know, have that cadence from day one. And so we're we're gonna make sure that we you know, Zach, if you remember this this like, you know, twelve years ago, Zach went on TB to say, move fast and break things, and then you have to update the thing to be, like, move fast with stable infrastructure.
+And and I think we move fast with state with stable infrastructure from day one, essentially, because we are an AI infrastructure team.
+Speaker 1: Yeah. Talk to the PBC. Like, if I'm playing back, like what year were you referencing? 1850 or something like that?
+Speaker 2: 1885.
+Speaker 1: 1885. So if I go back to 1885 and I think about the financiers that, you know, created the industrial build out Yes. They were not public benefit corporations. They were They were
+Speaker 3: personal benefit.
+Speaker 1: Yeah. And I mean, there was a lot of good that was created. We got railroads and trains and, you know, machinery and cars and all sorts of things out of the industrial revolution. There were also things that were rough and there was unionization and battles and back and forth. Like, what is the PBC in service of solving?
+What what what what why PBC?
+Speaker 2: Yeah. Great question. So there's the I'll tell you the substantive answer and then the vibes answer. Right?
+Speaker 1: Sure.
+Speaker 2: So from a substantive perspective, you if we we do two things. Right? We have a venture capital business, and we have infrastructure business. Both things have this very unique property called positive externalities. When implemented correctly, venture capital can unlock massive positive externalities for the ecosystem and for the world because you end up funding innovation when done correctly.
+And then infrastructure, the same. Right? When you have compute that's used by small focus down dense teams like Anthropic that's able to produce 10 times more sort of capabilities than, like
+Speaker 1: Yeah.
+Speaker 2: DeepMind, which is, you know, 60,000 or a 160,000 people, then you're generating positive externalities for the world by being much more efficient per unit of input with the output they create. And so I was like, Well, what happens when, as an economist, you look at positive externalities? Usually, you have market failure. You have under consumption of that good. Well, how do you correct the market failure?
+Usually, you get the government to intervene. But if you don't have the government intervening in time, what do you do? You become a private sector participant. And then if you look at the arc of 1885, you know, private sector businesses that ended up correcting market failure by by producing public benefits, they ended up getting regulated as utilities. That's what AMP is.
+AMP is a self regulated utility event that provides venture capital and infrastructure to the world's leading scientific teams. The next Dario, the next, you know, Guillaume at Mistral who created LAMA, the next Robin who creates stop stable diffusion. These are the my generation's smartest minds. I'm not smart enough to be, you know, them, but I can be their intern. And instead of waiting for the rest of the space to come up with standards and institutions to enforce this, we're like, dude, let's just do it ourselves and show the world you can have fun while doing it with a small team.
+You don't need to be, you know, some something called a you know, with, like, these words like RIA, a multistage asset class firm. It doesn't matter. Just let's skip ahead to the part the good part and and, like, you know, use all the proceeds that we get from management fees and carry to keep the space, like, innovating at the pace that we were promised, you know, twelve, thirteen years ago. And instead, we got tweets and not flying cars. You know, when I was at Stanford, I got the chance as an undergrad, I had the chance to take Peter Thiel's class, the zero to one.
+And he was you know, his whole moniker was we wanted flying cars and we got, you know,
+Speaker 1: hundred Hundred and forty characters.
+Speaker 2: What? 240 characters. Thank you. And now I'm back at Stanford teaching CS one fifty three, which is the largest class on campus. It's called AI Coachella.
+We've got thousands of people following along.
+Speaker 1: Coachella is
+Speaker 2: a good one. And it's got Frontier Systems because it's all possible now. We're literally our lifetime, we're gonna have flying cars. We're gonna have room temperature superconductors. We are going to solve cancer.
+We just wanna do it in a way that's stable, predictable. We wanna skip all the boom and bust cycles, and the way to do that is to lead by example and say, hey, guys. The public benefit, you know, is to provide goods and services that are utilities and make sure that we we don't like, let's be the adults in the room and not do the stuff where we try to be robber bands and monopolists and got greedy along the way. And so that's the substantive answer. The Vibes answer is, look, I don't wanna get sued by shareholders for whom it's not legible why I'm giving away billions of dollars of compute at cost with all your companies.
+Right? Because we that's what we're doing, and that shareholder that's you could argue that shareholder value that we're destroying, but I would argue in the long term, we're actually creating orders of magnitude more value. And if you look at Ben and Jerry's, you look at REI, they've become stable enduring businesses in categories that are fairly crowded. And eventually, I do think technology and AI will get crowded. It will get commoditized because technology is never the mode.
+Trust is. Community is a mode. Culture is a mode. Execution is a mode. And so we're trying to skip ahead to that part, but it takes time for people to get aligned.
+So until then, we'll Will we see
+Speaker 3: will we see an AMP joint venture with private equity to help distribute diffusion? And if
+Speaker 2: we can yeah. You know, if you go to our website, it's called amppublic.com because I do think if you look back to the, like, vulture era of private equity, you remember, like, RGR, Nabisco, and what what the barbarians of the game? We should just learn from from their mistakes and go, can we do private equity but done right in an aligned way? Let's not rush to, like, lay off, you know, hundreds of thousands of people and then not reeducate them and prepare them for their new opportunities. I I'm an optimist as you guys know.
+I came from a recent Horowitz. Yeah. So I I I'm a sort of a rational optimist. I believe the transition can be done in a positive way. Is that me getting kicked off?
+There's like a bell ringing, but that might be here. No.
+Speaker 1: I don't know.
+Speaker 3: Oh, okay. Okay.
+Speaker 1: No. I'm not looking at
+Speaker 2: the The only bell we have is this.
+Speaker 1: But no. We're We got plenty of discounts for you. Continue.
+Speaker 2: We will do everything we everything we do is governed by a public benefit charter. So if we do private equity, you'll be governed in the public benefit. If we do education stuff, 'll be in the public benefit. Yeah. Look.
+I've made more money than I know what to do in life. I'm 34, and I'm just getting started. So my goal is I'll be remembered for having been a net positive influence in the space. I just got tired of telling people I told you so because after a while, they start looking at my returns and going, why didn't you give me a call? I said, did.
+Look at your email. I introduced you to Anthropic and the series a and the series b and the series c. And so at some point, I was like, you know what? I'm just gonna go direct, talk to the LPs, set up a platform Mhmm. Build infrastructure, and hopefully be known as a generally, like, sane, common sense, rational point of view on stuff that can often be is not legible to people from different parts of the stack, and that's what the class is about.
+So c s one fifty three dot stanford dot e d u. I would recommend anybody watching, go check it out. The the lectures are all online, and the first one went on on Stanford's official page on Thursday.
+Speaker 1: Was that with Scott Nolan?
+Speaker 2: So Scott no. Actually, Scott is lecture eight. I put up lecture we put up lecture one, which is mine as a kind of the opening act because, you know, Scott is one of the mainliners, the headliners of AI Coachella. Scott's will be up soon as well, and then Jensen was last week. So I think he followed Scott.
+Well,
+Speaker 3: thank you. Last question for me. Do you think the world is prepared for it not to be a bubble?
+Speaker 2: That's a good question. The world if the world prepared not for it to be a bubble oh, yeah. Yeah. Inertia is guys, inertia is a powerful thing. Most of the world still has no idea what AI is.
+It is crazy. You know, I've been flying to places where I thought there would be diffusion of AI by now, and they just aren't barely using quad, chat GPT. I mean, these things are still alien to most of the world. And so if if if we stop capabilities today and half of us in the AI ecosystem vanished off the planet, nothing would change. It's still so early.
+Speaker 1: Yeah. Yeah. It is, really. Very cool.
+Speaker 3: Well, great to catch up. Congratulations on a a very impressive fundraise and and a very unique approach, and looking forward to the next conversation.
+Speaker 1: Thank you. Congrats
+Speaker 2: to you guys on a generational run, and I hope the acquisition does nothing but give you guys more steroids and more fuel for the fire. We need more of you every day.
+Speaker 1: Fantastic. Talk to you soon. Congrats. Have good one.
+Speaker 3: Thanks. Bye. Cheers.
+Speaker 1: Up next, we have Ben Lam from Colossal Biosciences. I made a YouTube video about Colossal years ago. I think this is the first time I'm talking to Ben, actually live, but, fantastic company. Super interesting, Ben. Great to meet you.
+How are you doing?
+Speaker 12: Hey. Great to meet you. Wait. Wait. What YouTube video was it?
+Speaker 1: Something about the woolly mammoth coming back right after your announcement. You went viral for the first time, and I sort of, like, made a video essay talking about the company, a little bit about your background, and then also just some of George Church's work, trying to give more context on the science, like, the more incremental steps. Like, I think the media generally wanted to jump to conclusions about, like, bringing back the t x. Right? Year
+Speaker 12: first year was a lot of, interesting fielded calls for sure.
+Speaker 1: Yeah. Yeah. And I think people were sort of like, oh, the, you know, the Jurassic Park analogy is so fun. They run a jump straight to, the T Rex running loose in Times Square or something. And I was like, no.
+Like, there there's a world where this business works even if it's just, like, some cool new animals for zoos. Like, you don't even have to get that crazy just looking at the price of, like, different zoo animals and stuff. I know that the the obviously, the mission's a lot broader. We talked about some of the, not deforestation, but dealing with the Siberia. I'm blanking on this.
+But, yeah, I mean, you can tell me about all the applications.
+Speaker 12: All the carbon modeling for sure. Yeah. We worked lot. We you know, we had our original thesis was synthetic bi this is like the hardest synthetic biology challenge.
+Speaker 1: And, you
+Speaker 12: know, kind of access to compute AI and synthetic biology all paired together will create kind of this unique opportunity to, you know, build a lot of different tools and technologies. Yeah. And so our view is like if we start with the hardest problem and we couple it with kind of like an existential problem, is, you know, losing biodiversity Yeah. You know, I think it forces us to to, you know, build a platform that's pretty robust because working with DNA that's a million years old or 73,000 years old Yeah. Is a lot harder than just working with something like right out of a lab or, you know, bought off the shelf from some like x y z DNA provider.
+Speaker 1: Yeah. Yeah. So where is the company today? Like, what what what are the I mean, it it was this is always like a walk, crawl, run project. There was gonna be iterative development.
+It wasn't gonna jump straight to bringing back the oldest creatures in history. But where have the success has been? Where have the setbacks been? Where has the strategy pivoted? Take me through some of the recent developments.
+Speaker 12: Yeah. So the biggest developments recently are, you know, last year we had kind of a couple of like watershed moments. We showed the world the objectively cute woolly mice Yep. Which at the time were the most genetically modified multicellular organisms out there, right? Where we took the mouse equivalent of the mammoth genes that we're targeting in our Asian elephant cells, made woolly mice.
+They went crazy viral. And I do remember sitting at South By being very concerned because I was like, wow, people lose their mind over these mice. Wait till they see giant wolves in a month.
+Speaker 1: Yep.
+Speaker 12: Then we showed the world the dire wolves where we took about 73,000 year old skull and a 12,000 year old tooth and made puppies. So those are kind of two really interesting data points that shows kind of the end to end pipeline. Not only could we identify extinct variants and we could replicate them, do the ancestral state reconstruction, model them in, and actually put them successfully into living cells, and then go through the entire quality control process to deliver actual living animals to Earth, but do it in a way that's completely humane, that passes all of our IACUC and and Humane Global certifications Sure. And do it, you know, get exactly what was predicted. And and one of the biggest things that we've learned from that is all of the AI systems coming online are just accelerating.
+Like, you're seeing a lot of different markets and industries be affected in a lot of different ways and, you know, a lot of doom and gloom is being sold around AI. But synthetic biology and all of the modeling and taking the data sets that all of our teams are generating and pushing them all forward together is something that, you know, we're really seeing a mass acceleration here.
+Speaker 1: What's on your shortlist for animals to work on? So we feel like it's like, you know, there's there's a big long list and I imagine the list in your head is a little bit longer than what's on the website and so I wanna Yeah. Yeah. Dig into some of the deep cuts, the b sides.
+Speaker 12: Yeah. So so we've definitely announced boy mammoth, Tasmanian tiger, dodo, moa, and then as of last week, blue buck. But even with that last week, you know, we we didn't say, you know, oh, we're starting the blue buck. We're gonna be on this, you know, ten year journey. Mhmm.
+We're pretty far. We'd already done all the ancient DNA work, all the comparative genomics work, all the stem cell work, all the animal repro work of cloning in antelopes. And so now we're really just in the editing phase.
+Speaker 1: Yeah.
+Speaker 12: And, you know, two years ago we were doing three to five edits at a time. We're now doing over 200 edits at a time. So that scale function has gone really quickly for us, and we haven't seen an upper end of the delivery. So I think that I think it's highly likely you can see a couple more direwolf like moments of species that haven't been announced but, you know, just, you know, show up. Yeah.
+And I think we'll show you some additional project progress on our some of our big projects.
+Speaker 1: And then what's the team like? I imagine that you have a lot of scientists on staff at this point. What's the shape of the business?
+Speaker 12: Yeah. So we've got two sixty full time scientists.
+Speaker 1: Wow.
+Speaker 12: We have 17 academic partners around the world.
+Speaker 1: Wow.
+Speaker 12: 80 postdocs in academia, 75 global conservation partners. Yeah. And now we have five government partners around the world. So it it's, you know, we've closed a little under $650,000,000 the teams are doing quite well. Labs in Boston, Dallas and
+Speaker 1: Amazing. And then and then in terms of like commercialization, is it still like, you know, just focus on the science, like the business opportunities will come? Is it experimental? It'll test projects. Like how or are you already starting to think about like, you know, the SpaceX Starlink?
+Like there is a real commercial enterprise that will be self perpetuating, not science funding. I'm sure you're bringing in revenue from a bunch of different sources. But have you Yeah.
+Speaker 2: My head goes
+Speaker 3: like zoos and effectively living museums where I think about all the things that you listed off I read about with my four year old all the time because these children's books are not like they don't discriminate between living or dead species. Right? I've read I know too many dinosaurs at this point. But if you were telling me like, okay, we have a zoo and you can go see all these animals throughout history, that would be pretty compelling and you would have effectively a monopoly over over said animals. Sounds Yeah.
+Sounds kind of bad to say monopoly over over a
+Speaker 12: species, but That sound a little bad and evil. But ultimately, you know, we love zoos. We work with a lot of zoos. We're not anti A lot of times I get the anti zoo stamp on me because I say, you know, zoos are a little bit transactional. If you do look at all the data the studies that the scientific studies that have shown up around kids seeing animals in zoos, actually gives them a higher appreciation nature, a higher appreciation for biodiversity.
+So I'm not anti zoo, but it does feel like a little antiquated. It does feel a little transactional. Like, I pay money. I kid and I have young kids. Take I've taken them to zoos.
+Right? You pay money, you go see zoos. It feels a little transactional still. And so I think we have grander ambitions on that. And so while, you know, we have no intention to make zoos, I do think there's highly likely that we will have partnerships with ecotourism with the animals with countries where you can see the animals back in their natural habitats.
+Speaker 1: Yeah. More like natural like a national park where
+Speaker 12: It's like Kruger National Park
+Speaker 1: That's in all these
+Speaker 12: different locations. Right? And and and I think that also making that accessible and putting science on display versus animals on display Yeah. Is something that we're really excited about. Like, we want we think it's as important that you understand the conservation impact, the ecological impact in the science of how you make a dodo as seeing a dodo.
+So I do think that there'll be educational and media experiences. That's a large portion of the company that focuses on that. But I still think that's going to be dwarfed by the government work and just the synthetic biology pipeline. We've already spun out four businesses from the company in four years, two of which we've announced, two of which we haven't. One of them kind of got leaked, which is Astromech, which we raised last round was at $2,000,000,000 valuation.
+Wow. Nine months old. So we are we are building fundamental technologies that I think have broad applications to government, you know, conservation, as well as that of human healthcare and disease modeling. So synthetic biology is kind of this end to end pipeline. I think it's pretty interesting.
+But then separately, governments are now coming to us, and we're helping them understand the assets in their biodiversity, how they can actually data mine that and protect their species, and kind of help them think about biodiversity in a different way. So not as far, as the long term applications to nature credits and biodiversity credits, but how can we help governments underwrite the protection of their biodiversity of looking at, you know, massive non model species wins like the Gila monster, and how the venom from that actually led to a trillion dollar GLP one market, right?
+Speaker 1: Yeah. A great example.
+Speaker 12: Helping them understand these assets that they have Yeah. Should be protected, right? If we can't get them to protect it because they should protect animals Yeah. And they should protect their environment, it's like, okay, if you can't love the animals, can you love the environment?
+Speaker 1: Figure out how you Yeah. My No, it's a good Yeah, too, too.
+Speaker 12: We're going to align all these things. It's a pragmatic look at conservation, right? It's like, hopefully we can get them to care about the animals, if not the ecosystem, and if not just themselves, and if not the economics from treating human disease. So it is working, and we we now have five government partners online, and giving them the tools to really understand what they have, and why they need to protect it. So I do think that we can really have this next gen conservation narrative while also helping countries monetize it in a way that's good for them and their people.
+Speaker 1: Well, congratulations on the progress. Stuart, anything else?
+Speaker 3: No, this was cool. I've been I've been, yeah, hearing about the company forever. It's great to meet you and and understand the vision, and I'm sure you'll be come back on when you have your next
+Speaker 12: Yeah. We'll let you know as as soon as we drop something else crazy, we'll let you know.
+Speaker 1: Yeah. Perfect. Can't wait. We'll talk
+Speaker 3: to you soon. Great to meet you, Ben.
+Speaker 1: Have a good rest of your day.
+Speaker 3: Cheers.
+Speaker 1: Goodbye. Bye. Next, have Jake from Serval. We're running a couple minutes behind. We got to catch up.
+He's the founder and CEO of Serval launching the future founders program to train next gen operators. How are you doing?
+Speaker 10: I'm doing great. How are you?
+Speaker 1: We're doing fantastic. Welcome to the show. Introduce yourself and the company and the project. Yeah.
+Speaker 10: I'm Jake. I'm the co founder and CEO here at Servo.
+Speaker 3: Yeah.
+Speaker 10: We're an AI platform for employee support. So you've heard of AI for customer support? Yeah. We support internal employees when they ask for new laptops and access applications and and all that stuff. And we've got this new program called Serval Start to help deploy Serval in these large enterprises and give future founders the opportunity to get inside enterprise and deploy AI, which we saw with the news today is is becoming really the the gap from technology to actual implementation and impact.
+Speaker 1: Yeah. Talk about, like, the integration points with the systems that we know. Is the point that you can work across different point solutions be sort of a meta solution? Or will you wind up building point solutions and sort of becoming your own compound startup at some point?
+Speaker 10: I think the idea is actually the latter, that you become the own compound startup. We're we're increasingly ripping out systems of record like ServiceNow
+Speaker 1: Sure.
+Speaker 10: And actually taking over that entire service area.
+Speaker 1: Yeah. Who's where has adoption been the strongest in terms of like massive enterprise Fortune 100 down to SMB, down to startups? Like, where are you seeing the best traction?
+Speaker 10: Yeah. We started like a lot of companies in that kind of tech startup world with great companies like Notion and Perplexity as early adopters. But we've worked with some of the largest companies in the world, Fortune 20 companies, Fox Corporation, and increasingly, I would say more excitement and more interest from the largest companies in world because that's where they have the most pain. They've got thousand thousand employees asking for password resets, asking for access to applications, all these things that can be automated.
+Speaker 1: Yeah. Talk about the future founders program specifically and, like, how that's structured, why this particular model, how everything plugs together.
+Speaker 10: You know, what we noticed was that the biggest pain point is increasingly not the strength of the models. It was actually the implementation in a large enterprise, understanding the change management and the stakeholders and approvals and all the things that need to happen. And you actually need really talented people to go in and run that process that have to be able to, one, build relationships, sell the product, but also build product because you're going to find out all these feature gaps. And when you think about who is really good at understanding customers and selling and also building product, it's all people that are either former founders or future founders.
+Speaker 1: Mhmm.
+Speaker 10: And we started hiring that profile for this role and realized, hey. This is also a great training ground for them because you get to go into these massive enterprises and really go through the motions of being a founder, the same things that me and my cofounder did when we started the company. And so why not really formalize this and focus on hiring the next generation of founders to give them a training opportunity? So we bring them in. We give them opportunity to build enterprise automations, deploy AI in large companies.
+We accelerate their vesting so they vest after six months. And we have the expectation that, like, do this for a little while and then go start your company, and we'll connect you to our investors like Sequoia and First Round and Redpoint and General Catalyst, and we'll set you on your way and give a great reference and give you a great experience.
+Speaker 1: Yeah. Makes sense. How big do you want the program to be?
+Speaker 10: We're gonna start with a class of about 12. I think we'll expand that over time. We'll do probably two classes this year, and then we'll see where it goes. We might make it bigger or smaller over time. I think there's a big question across the board on how big a lot of teams get.
+Speaker 1: Yeah.
+Speaker 10: But we feel like given our growth, we need as many people as possible in the short term.
+Speaker 1: Yeah. Sorry,
+Speaker 3: Drew. No. It's cool. It's cool. I mean, a lot of there's a lot of people out there that wanna be founders but in order but haven't necessarily been inside an organization to discover the right opportunity to go and build.
+And so I can see this being a win win win.
+Speaker 1: Yeah. What's the what's the, like, the winning background for someone in this program? Like, in order to I I imagine that working at a big company can accelerate you becoming a forward deployed engineer at a different company because you can immediately plug back into your former organization as long as you're left on good terms. Is that the correct model? Or is it more like, oh, come out of college and jump into FTE work?
+Speaker 10: Yeah. I think it's actually close to the latter. I think you could be a new grad. You could also be someone with a couple years of experience. Mhmm.
+I think general intelligence ends up being the bigger biggest predictor and a technical background. So someone who's CS degree or has worked as a software engineer Yeah. Because you're going to be asked to write code and it's gonna be production code. It's not gonna be just some bespoke automation. It's actually gonna be impacting our product.
+Mhmm. And then you've also gotta be somebody who can sell a large enterprise. So we are hiring ranges of experience, and some are new grads and some are twenty years of experience and have more experience to the large enterprise. We think that there's a fit for everybody, but I think it's going to be folks that are incredibly technical and and that could be starting a company instead. Know, that would be their alternative path.
+Speaker 1: Yeah. Makes a lot of sense. Well, thank you so much for coming on the show and breaking down for us.
+Speaker 2: Yeah. I
+Speaker 1: can Have a great rest of your day.
+Speaker 3: Crush this. So We'll talk
+Speaker 1: to you soon.
+Speaker 3: Let him know.
+Speaker 10: Thank you.
+Speaker 1: Appreciate it. Cheers. Up next, we have Garth coming back on the show from Panthalassa. One of the coolest Big update. Farming energy from the ocean with mega machines, mega projects.
+We gotta pull up some video of Panthalassa and what Garth has built over there because it is a magnificent structure when you see it. We will figure out the waiting room in just a minute. People
+Speaker 3: are showing deep sea progress versus actually falling falling even more behind. Noah Smith is saying export controls work. Export controls work. Export controls
+Speaker 6: work.
+Speaker 1: Yeah. Work. So the map, the the the chart is that if you look across GPT four o, OpenAI o one, o three minutei o three, then OPUS four, then GPT five, five point two, OPUS four six to 5.4, and then OpenAI's GPT 5.5. America and the United States AI lab seem to be on a steeper curve compared to DeepSeek, Alibaba, Quen, DeepSeek r one, v three, Kimi, k two, k 2.5, and then DeepSeek v four pro. Big jump.
+Yeah. I mean, if you go if you re if you rebuild this line just between Kimi k 2.5 and DeepSeek v four pro, it is looking steeper. Maybe they'll figure it out. But at least for the for the current moment, the AI gap is bigger than you think and potentially export controls work. We'll see where they go, whether they stick around.
+But we have our next guest in the waiting room, Garth from Panthalassa, on the show last year. But welcome back. How are you doing?
+Speaker 9: Hey, guys. How are you doing? Long time.
+Speaker 1: Long too long, but you've had you've made massive progress in
+Speaker 3: the You brought us back a big number.
+Speaker 1: Yeah. You brought us back a big number. How much did you raise? Tell us what
+Speaker 9: you raised. Yeah. We we did what we could. We did what we could. Oh, are we gonna do it Gong?
+Speaker 1: Let's do
+Speaker 3: it Gong. Right away.
+Speaker 9: It was one forty. Let's do it. Fantastic.
+Speaker 1: Amazing. Okay. Talk about the progress. What specifically unlocked such a huge fundraise? Break it down.
+Speaker 9: I mean, let me tell you, congratulations to you guys too.
+Speaker 1: Thank you.
+Speaker 9: Like very
+Speaker 1: It's been a good Happy for you. Yeah. Thank you for jumping on the show so early when we were a tiny show with just, you know, making phone calls to random founders.
+Speaker 9: No. That was
+Speaker 1: awesome. Hop on. It was a lot of fun having you on.
+Speaker 9: Yeah. So sorry. What was the question? Progress.
+Speaker 1: Yeah. The question is like, yeah, yeah, why this round right now? I mean, I can imagine a bunch of reasons. I can imagine like you built the thing successfully and it's working. I can imagine just it's very it's way more clear what cheap energy means because with LLM training, you load some GPUs on this thing, you send it up to a satellite.
+Like a lot of the pieces of the puzzle to underwrite this deal feel like they've fallen into place but
+Speaker 2: Yeah.
+Speaker 3: There were a lot of businesses that were pitching at the point that we first talked Yeah. That have made less and less sense. Right? Yeah. Even things like application layer companies would be one.
+And like it feels like your business
+Speaker 1: Makes more sense. More sense
+Speaker 3: as this sort of
+Speaker 1: Especially on the back of like data center bands and and and energy expenses and natural gas flaring and GE Vernova's out of stock. And even if you get it, it's going to be natural gas powered like going to the ocean, going to somewhere far away seems to make a lot of sense.
+Speaker 9: Yeah. Well, think there's two things happening at the same time. Like, number one is this is a deep tech play that we started working on a long time ago and we had to develop the whole new technology to do it. Yeah. You know, no one has built an autonomous system to go to the middle of the ocean, capture energy, turn it into anything.
+Yeah. You know, computing fuels is one of the things we're going to be doing, too. So that took time and now we're at the point where we can actually start scaling these systems. So that's a big unlock. That means that we can start building our manufacturing plants.
+It means we can start getting all the bugs out of that, getting the bugs out of the first fleet that we're putting out starting later this year. So that's the sort of inflection point on the company. But then you've also got, I think, everyone figuring out that there aren't that many ways to get energy on the planet. You know, it's the really hard thing. It's like there's gas which you can scale.
+There's solar but it takes a lot of people and a lot of land. And so what are your options? People are saying, well, you know, you guys were onto something when you said middle of the ocean is a pretty good play. So it's been a lot of fun to gather that coalition of investors who are like, wow, this is a totally orthogonal play. Mhmm.
+And it makes a lot of sense. We can go and do this.
+Speaker 1: How much energy does one what what are we calling it? Device? Ship?
+Speaker 9: Node. We call them a node. Okay. N o d e. Yeah.
+Speaker 1: How much energy? Because we talk about an average meta campus might be half a gigawatt or something. And we're moving towards a gigawatt a month and there's different clusters and different sizes of campuses. And I imagine you can create a fabric of these nodes that work together. But a single node, how much energy are we generating?
+How can we think about it when we compare it to just the broader like data center campus world?
+Speaker 9: Yeah. The typical node will be on the order of 500 kilowatts.
+Speaker 4: Okay.
+Speaker 9: That's what we're thinking it will be. Yeah. It's 100 kilowatt up to a megawatt. Yeah. So it's like one rack to multiple racks depending on density.
+Speaker 1: Okay.
+Speaker 9: And yeah, they can talk to each other sideways.
+Speaker 1: Yeah.
+Speaker 9: So we'll have radio. Of course, they're talking to satellite. Yep. And so we're building this grid, you And it's not for synchronous training, right? Yeah.
+It's not fiber between everything. No. But if you want tons of embarrassingly parallel inference, know, running all the same models, running future models that get bigger or smaller, we think we're going to be perfect for lots of that. So the way that we see this going is like once the energy starts to crash through what's available in the grid, it all just becomes about who can actually build in an elastic fashion to make 10 GW, 100 GW, 100 GW per year is the kind of thing that we're getting asked to do. So that's the kind of framework that we want to build, just pure manufacturing to get energy capacity out there.
+Speaker 1: Yeah. Yeah. So you build a thousand. So I imagine a huge industrial project now to actually scale the manufacturing process. What are you is there anything unique that you need to do around battery storage to maintain generation capabilities?
+Or would you just, like, take a node offline if it's in still water? Like because I imagine that there's a sometimes it's generating more than others depending on what the conditions of the ocean are.
+Speaker 9: Yeah. So the reason we chose this resource, and it's not just any ocean that We're we're going not going to, you know, 200 miles off the coast of San Francisco or something. We're going to the Southern Hemisphere Ocean, which are really power dense. The wind is blowing all the time. The waves are on even more than the wind because it's this big battery for wind energy, big battery for solar energy.
+So when we're there, we're on almost all the time. There's like a couple times per year where we dip down a little. We do have some battery on the system for that, but it's not like solar where you're using the battery every day. It's just a couple times a year. We don't need as much battery.
+We can cycle that battery far less frequently.
+Speaker 1: Sure.
+Speaker 9: And so the level of up time that we want, you know, can go to four nines, we can go to three nines, we can go to like 98% up time if that's the economic optimum. And so we do a lot of that optimization to figure out for the chips we're running, for the workloads we're running, what is the exact right amount of battery, what is the exact right size of the payload and and all of those things.
+Speaker 3: Where where are you thinking about placing a network of nodes?
+Speaker 1: Around Antarctica. Antarctica. Yeah. I mean, essentially, right? It's the Southern Oceans?
+Speaker 9: Yeah. Yeah. It's it's like way way North Of Antarctica. It's like, you know, Southern Hemisphere Yeah. South Of Australia, South Of New Zealand, all the way around the planet.
+But like, yeah, we don't go, you know, we don't go down into the those parts of the Southern Ocean.
+Speaker 1: Okay.
+Speaker 9: Yeah. We can also do some in the North Pacific and so forth. That's where we're doing our pilot fleet.
+Speaker 1: Yeah.
+Speaker 9: Yeah. But the real energy resource that we think is optimum for this Yeah. Is that Southern Hemisphere Belt.
+Speaker 1: So do you mean, if you're I'm just thinking about if you if the if the if the road is like road to a gigawatt, that's like 2,000 of these units that will happen over years, I'm sure. Do you have to build the factory nearby to cut costs? Or if you make them in America, can you ship them down there effectively? How does that work?
+Speaker 9: The best deployment story is one, yeah, where you have your factory or factories pretty close to the resource. Sure. And so we're working with folks in some of those countries that are nearby. Yeah. So, you know, identify the right sites, go build there.
+Right now, we're building our first pilot line though near Portland where we are because we want to like dial in all the manufacturing, get it really good, then we can go and start carbon copying that unit to the right places.
+Speaker 1: Yeah. That's fascinating. Jordan, anything else?
+Speaker 3: Absolutely wild stuff.
+Speaker 1: It's such a cool project. Such a cool project.
+Speaker 3: Well I cannot wait for the for a for a future video where you are jet skiing between the different nodes. It's gonna be incredible.
+Speaker 1: It'll fit a lot of I don't know if the nodes even see each other. I mean, you put a thousand down there.
+Speaker 3: I know. They're they're gonna be jet
+Speaker 2: skiing Yeah. Distance You can
+Speaker 9: spread them out pretty far. But anyway, we'll get you guys down there on a yacht So can check out the fleet. Yeah.
+Speaker 1: Can't wait. Incredible progress. Thank you so much for taking the time to We'll come chat with talk
+Speaker 13: to you
+Speaker 1: soon Garth. Good bye.
+Speaker 9: Talk to soon guys.
+Speaker 3: Cheers. Yeah.
+Speaker 1: Up next, have Katie Hahn from Hahn Ventures announcing a new fund. This is very exciting.
+Speaker 3: This is biggest number? No.
+Speaker 1: Anjney, the leader of the Yeah. But
+Speaker 3: You almost had the biggest number on the show today.
+Speaker 1: Oh, we were catching up with Anj. But anyway, thank you so much for taking the time. Welcome back to the show. How are you doing?
+Speaker 8: Thanks. I'm doing well. How are you guys? Thanks for having me back.
+Speaker 1: Of course. It's always I good to talk to mean, there's there's a lot of different directions we could go. But let's let's talk about the fun, the thesis, expansion, interactions between different theses, like where how you're seeing the market, how you're seeing opportunity in venture broadly right now.
+Speaker 8: Yeah. So it's been four years since we launched Han Ventures. Yeah. And, you know, the world looks a lot different four years later and we're we're excited to have a billion dollars in fresh funds to deploy behind Thank that group. Oh, thank you.
+Even though it wasn't the biggest of the day, I appreciate that.
+Speaker 1: Wild times that we are in in the venture world for sure.
+Speaker 8: Well Yeah. We're we're we're taking this fresh funds of billion dollars and backing founders who are building what we're calling the new economy. And by the new economy, I'm thinking about three structural shifts we're seeing right now.
+Speaker 1: Mhmm.
+Speaker 8: The first is new financial rails and infrastructure. Mhmm. I mean, think companies like Erebor.
+Speaker 1: Yeah.
+Speaker 8: Right? Gone are gone are bankers hours, gone our wire cut offs. I mean, you're talking about global from day one, twenty four seven. This is a bank that opened on a Sunday. Mhmm.
+On the second structural shift we're seeing are new assets and markets. It started as stable coins, but it's quickly we're now talking about tokenizing the stock market. And you see giant like BlackRock, and you see Coinbase and Robinhood doing that. But it's also opened up new markets. I mean, think prediction markets.
+Think perpetuals markets. You've had a lot of those guys on the show. And then the third structural shift we're putting this new set of funds behind, and this is the earliest of the category, but of course we have an early stage fund too, is what we're calling the agentic future. And it's not just AI broadly. It's where AI and crypto intersect.
+And I think that's a lot more areas than people realize. I mean, we're talking about building for a world where the end user is not necessarily a human of a financial product or service, but is a computer or So an how does that impact things like privacy? How does it impact things like provenance and trust? And what form will they use? How will agents pay for things or subscribe to services?
+And blockchains are good for everything, but they are really good for some of those things I just mentioned as our other cryptographic tools.
+Speaker 1: Yeah. Yeah. Mean, remember that being like back in 2015, 2016, the original machine to machine payment thesis around Ethereum and even some Bitcoin folks were talking about it. Tons to dive into there. Just in general, we were talking to the Coulson Brothers last week about how stablecoins are maybe in some sort of a winter, like there was a big surge of 30% growth in the market and then it's been a little bit flat.
+Like, do you think that this is a regulatory story? Is this a technology story? Like, what is the next breakout adoption story. Yeah. Yeah.
+The next adoption hinge point for just crypto technology to diffuse further.
+Speaker 8: Yeah. Sure. Well, I mean, I think actually, I take the other side of that. Okay. I think you have now Mastercard, for example, just paid $1,800,000,000 for one of our stablecoin investments, TBNK.
+Yeah. And that was the third largest ever in history acquisition by Mastercard.
+Speaker 3: That's crazy.
+Speaker 8: And so I don't I don't think we're in a stablecoin winter. Okay. I think actually you have double digit trillions of dollars in transaction volume now flowing through stablecoins. Sure. And this is a technology that didn't even exist, guys, ten years ago.
+Yeah. And now it's about to surpass the combined transaction volume of Visa and Mastercard. And we think that'll continue, but the story doesn't stop at tokenizing dollars because now, of course, a lot of economies want stablecoins for their currency.
+Speaker 1: Yep.
+Speaker 8: So I think that's a tipping point. Another one is tokenizing other financial products and services, like the stocks I'm
+Speaker 1: talking about. Yeah. Yeah. Yeah. Is that is that a disruptive innovation or sustaining innovation?
+Because I can imagine that the BlackRocks, the Coinbase is like the Robinhoods of the world, like, do very well in that world. They're already set up for them. They have the audiences and the customers, and they, you know, expand into that category. At the same time, you could imagine we've seen upstarts like Polymarket, Khalshi, like, you know, you know, slightly new twist on an old idea and it's just a huge new unicorn or decacorn emerges and sometimes multiple in a single category. How are you viewing Yeah.
+The idea of, like, on chain equities as a venture opportunity?
+Speaker 8: Well, and it's not just on chain equities. I think it's starting there. Right? It started with fiat and now it's starting with, for example, securities Yeah. Or stocks.
+But I think it won't end there. I mean, I think it will be all kinds of financial products and services. And I'm not one of these people who is going to tell you all assets will be on chain. Every single physical asset will be on chain. Maybe eventually that's an end state, but I don't think it's an end state necessarily in our lifetimes.
+But I do believe that financial services and products will end up on chain.
+Speaker 1: Sure.
+Speaker 8: And we're just starting to see that. You mentioned prediction markets. It's a great example. Yeah. Again, and by the way, you talk about the original prediction market was Augur, right?
+And that was just ahead of time, years and years ago. I mean, was that? 2016? Yeah. But that was before you had stable points.
+Speaker 11: And it
+Speaker 8: turns out you need some of the infrastructure
+Speaker 1: Yeah.
+Speaker 8: To really have prediction markets find true product market fit at scale. And that's what they're that's what they're undergoing right now. And I think we're still early in prediction It's like sports and politics.
+Speaker 3: Last time you on last time you were on, I I think you you made the call, if I remember correctly, that, yeah, it was still early in stablecoins and we or sorry, not stables, but prediction markets. And you were you were correct. There was a boom. There was a bunch of new kind of vertical approaches. How are you processing it?
+Do you expect to make like a net new prediction markets bet Oh, out of this fund? Or have you made your bets at this point and and you're just gonna watch it evolve?
+Speaker 8: Well, in fund one we made a bet and Coinbase bought that bet. Okay. And that was the clearing company. So I certainly hope my prediction is that we have a prediction market bet in fund two. Don't have one now.
+Okay. It is some an area where and and but the prediction markets that we invest in might not look like what they look like today. Remember, we're a venture fund. We're not a hedge fund. So we're looking at over the next ten years.
+And I think an area I'm particularly interested in, and we as a fund are interested in for prediction markets, is some enterprise use cases. Think about insurance. Think about litigation predictions. Think about drug trials. Think about risk hedging.
+And all kinds of other business uses, aside from the fun of sports betting, aside from the fun, if you can call it fun of know, betting on politics outcomes. There are a lot of business use cases and institutional use cases, and that's why you see folks like the New York Stock Exchange and ICE getting involved. But I think we're really early scratching the surface. So the question is, is it going to is value going to accrue there to one of the established entrants already? Or will some new upstarts come about?
+And so, we're keeping an eye on both. And, as I said, there's huge opportunity, but with huge opportunity is going to come a lot of legislation, we think, and regulation
+Speaker 2: And that's whole do
+Speaker 3: you think the whole insider, you know, given that you don't have an active bet, it sounds like, how do you think the whole insider trading
+Speaker 1: Oh, yeah. Law
+Speaker 8: firming. We do not we do not have an active bet.
+Speaker 3: Yeah. Yeah. That's that's what I'm that's what I'm saying. So I just feel like you can
+Speaker 1: But I I have a huge bet on her taking a bet in the next couple years.
+Speaker 2: Okay.
+Speaker 1: Okay. Because she just said that so I'm going
+Speaker 4: super long
+Speaker 3: on that. No. But but my question is like
+Speaker 8: in the category. We know that. Maybe I should rephrase
+Speaker 1: to say I hope we have No. No.
+Speaker 3: We do. Do. We I I just wanted to ask around like how how you see the insider trading debate evolving because clearly if if you're somebody that is looking to prediction markets for alpha, for data, theoretically, like Yeah. Like prediction markets.
+Speaker 1: Mean specifically, like, now it's handled on terms of service level and it might eventually be handled at, like, the government regulatory level. Yeah.
+Speaker 8: Right. I think now you have a little bit of what we'll call self policing and, you know, industry best practices. Yeah. But the industry is still early. And what our best practices today might not be.
+I mean, and I think a lot of these look, a lot of responsibility is going fall to these platforms. This is a novel issue with any nascent technology. You're going to have novel issues of first impression from a statutory point of view, from a constitutional point of view. You're talking about insider trading. That's a criminal point of view.
+And as you guys know, spent over a decade as a federal prosecutor at the Justice Department. And I've seen a lot of situations emerge that frankly companies weren't really contemplating. And that just come about. And I've seen a lot of that in my career as a prosecutor. And I think that these platforms are really going to have to be thinking very deeply about these issues.
+And I think they know that. Mean Yeah. But they're only going to be heightened because of the opportunity. And I think that's really exciting, but it's the flip side of the coin. Right?
+And it's not just insider trading. Right now, these platforms are asking for federal preemption, which I think is really interesting because you might want federal preemption today or you have a CFTC chair who is not hostile to prediction markets. Don't forget that Gary Gensler himself was once the CFTC chair.
+Speaker 1: Yeah.
+Speaker 8: And so, I think it's a really interesting question of do you go state by state? Do you ask for federal preemption? And so there are a lot of questions beyond just insider trading.
+Speaker 1: So so unpacking that risk, there's a world where you get federal preemption, but then as different rules and laws are written, if there's a different less friendly CFTC chair, the downstream, like, the implementation of that oversight could be disadvantageous to the industry. Is that basically the risk?
+Speaker 8: You're you're exactly right. You could win the battle but lose the war.
+Speaker 1: Yeah. That's interesting.
+Speaker 8: Yeah. But but but that's I I do see why a lot of those platforms are looking for federal preemption right now. But, again, you gotta look at this as a multitrillion dollar asset class, and you've gotta look at it over the next decades. Yeah. And I think, you know, social media was a huge category, a huge market opportunity for investors, and yet also these platforms had to get really sophisticated Yeah.
+Over the last decade with how they police content, for example, and how they work with regulators. It's not just in The US. As I said, this structural shift of new assets and new markets means it's global from day one. So you're not just thinking of The US. You have to think about globally.
+What do regulators across the world think about this? And they don't always just follow what The US and the CFTC think.
+Speaker 1: On the intersection of AI and crypto, are you equally excited about bringing crypto to existing AI agents? Someone has an open claw and they wanted to buy something and so stablecoins speed that up, machine to machine payments, micro payments, all of that? Or is there actually more of an opportunity or maybe an equally or maybe less discussed opportunity around bringing AI to crypto, thinking about like cursor, but it's really good with writing smart contracts or something like that, where you're still primarily selling to the crypto community, but you're bringing AI tools to bear for that world in the way that there were several big crypto winners that were sort of Web two point zero SaaS products, but they applied their strengths to the crypto world very successfully and built huge businesses. Are both of these equally exciting? Is one of them more hyped than the other?
+How are you processing those two opportunities?
+Speaker 8: I think they're both really early, and I think they will naturally they're we're interested in both. Yeah. I think there's a case to be made for both and we can talk a little But bit about I do think that it's more of an opportunity for our early stage fund right now because I we are very early at think to the first point of, you you mentioned micro payments. This is something that those of us in the crypto community over ten years ago were talking about with companies like ChangeTip and other things. Yeah.
+And it turns out that fast forward, now there is a use case. And I think we've heard John Coulson talk about Yeah. How he's tickled about this. And I think that's the word he used. Tickled about the case for micropayment.
+Yeah. And, you know, we don't think agents who work twenty four seven around the globe again, they don't work banker's hours. We don't think they'll necessarily just be using credit cards for payments. I mean, think about the need for instant settlement, And if you think about the need for finality and these transactions that are, again, around the globe, but also micropayments. And we think crypto rails are actually perfectly suited for that.
+So that's the first thing. But in terms of bringing blockchain based solutions or cryptographic tools, we also think there's a lot of exciting areas there where there's an intersection. And again, it's very early, but you can imagine provenance. You know, the blockchains are real blockchain based systems are really great at proving provenance. Yeah.
+And I think in a world of AI where you're wondering the provenance you're going to be wondering ever more about the provenance of things. We've already been wondering about the provenance of things where most things were created by humans. Yeah. And now that's starting to shift, and more and more is being created by computers. And we think more and more will be created by agents.
+And so, does that really mean for Providence? What does it mean for privacy, by the way? When all of a sudden all of your data we have things, you know, GDPR and the California equivalents that are out But in a world where you have different AI agents that can really quickly, much more than humans can, kind of undo that privacy, do you look for zero knowledge based proof solutions for that? And that's, again, a cryptographic tool. So I would say reputation systems, provenance, privacy, agentic finance, they're all fair game and right within the wheelhouse of what we've been doing, guys, for the last four years, and we're excited for the next four years.
+And I think we are probably it's it's for a billion dollar fund, we have the trust of 35 or so global institutional investors from around the from around the globe who very much believe in this future of the intersection of these technologies.
+Speaker 1: Yeah. No. That makes a ton of sense. Yeah. Talking to the Collison brothers really I don't know.
+We're just very much like reset me on the the actual need for micro payments, the value that comes from that, talking about token theft and basically setting up an account, getting on thirty day billing, not being good for it at the end of the thirty days. Like that's solved if you're paying as in stream streaming payments actually makes a lot of sense there beyond
+Speaker 8: just if agents and if agents have something to go look at that's immutable. Yeah. This like that's immutable. And so you start to see and you know, it's not just the Collison Brothers and Stripe that are doing this. Yeah.
+Obviously, Coinbase and companies like Robinhood are really leaning heavily into these areas. And then you have, again, the giants like Mastercard or Visa who I mean, I think Visa's Chief Product Officer was saying this next period over the next decade for AgenTek Finance is one of the most interesting. So they're keeping their eye on it closely too and and so are we.
+Speaker 1: Amazing. Jordan, anything else? Tremendous progress. Congratulations. Thank you so much
+Speaker 8: for your
+Speaker 3: Let's not let it go another another year.
+Speaker 1: Yeah. This is always good time. Experience. But
+Speaker 8: Absolutely not.
+Speaker 3: Congrats on
+Speaker 1: the new Have a good one. Thank you. Goodbye.
+Speaker 8: You all. Bye bye.
+Speaker 1: Up next, we have Nick from Rivet. He's the co founder and CEO. He's been on the show. Has he not been on the show before?
+Speaker 3: He's been on the show.
+Speaker 1: He's been on the show before. Right? Nick, welcome to the show. You've been on the show before. Right?
+Speaker 13: Yes. Quickly for a seat around. Was a great time.
+Speaker 1: Welcome back to the show. We need to update our our CRM, our database. We have you down here as first appearance. I know that's fake news. Anyway, a lot of people have been worried about artificial intelligence.
+They say, is it worth the water? Is it worth the energy? But I think after they see these results from TaxBench, they're gonna change their tune. Tell tell us about it.
+Speaker 13: Yeah. So Rivet is
+Speaker 3: Well, before you yeah. Introduce a company first.
+Speaker 13: Yeah. Rivet is an AI enabled accounting firm. We do tax returns and tax advisory work for thousands of companies. When we implement these models
+Speaker 1: Yes. There
+Speaker 13: you go. Yeah. When we implement these models, right, we need a way to test them. So we've had an internal benchmark we've used for a long time to see whether these models are actually doing our job as accountants effectively.
+Speaker 2: Mhmm.
+Speaker 13: It was time to publish that benchmark, and so that came out today.
+Speaker 2: Yeah.
+Speaker 13: The results are pretty striking. The top models don't get those questions right if you ask it the same question five times in a
+Speaker 1: row. Interesting.
+Speaker 13: A lot of them do incredibly well when you ask it once and cross your fingers that you're gonna get the right question or the right answer.
+Speaker 2: Yeah.
+Speaker 1: Yeah.
+Speaker 10: Well, you ask the same
+Speaker 13: question five times in a row. Are these models actually reliable? Turns out they actually really aren't, especially at scale.
+Speaker 3: Interesting. And And And why are they not, like, doing enough RL? Like, you would think that they like, these these these
+Speaker 1: Tarpathy has this take
+Speaker 3: Yeah. There's verifiable kind of, like results, right? Like this should be something that the models could do
+Speaker 1: We need lean tactics.
+Speaker 3: But maybe it hasn't been prioritized enough?
+Speaker 13: So most of the answers require five, six, seven, eight steps. And you have to get the right answer every time. If you get one step wrong, the ultimate result is wrong. And what we've found when you ask it these types of questions is that it'll get a lot of it right, but that single big skip, you know, hey. My client lives in New York City.
+They're about to sell their company. Does their, you know, does their stock qualify for QSPS?
+Speaker 2: Mhmm.
+Speaker 13: It'll check if they held the stock for five years. It'll check if they were under the gross asset limit when they acquired the stock. Mhmm. But then it'll pull a brand new article saying, hey. New York's considering running rid of QSPS.
+Oh. Oops. It must not recognize QSPS. No. They don't qualify.
+And and ultimately, the client is is is left out, you know, in the dust. Yeah. Pricey heavy Too too
+Speaker 1: news heavy, too, like, web heavy, not like law.
+Speaker 3: And Yeah. It's an interest it's a very interesting domain because these are these are this is not like doing like research for like a project where like, you know, the the the consequences of getting like a fact wrong
+Speaker 6: Yeah.
+Speaker 3: Are like somewhat defined. Like maybe you just like came to the wrong conclusion. But this is like you if you if you don't work with a human at all and you just work with a model Mhmm. And then you get something wrong, it ends up being like maybe it costs you a $100,000. Maybe it costs you a million dollars.
+Maybe maybe more. Right? Maybe maybe it's even $5. And then still, and so I think like this, I I expect a long period of of human in the loop on and potentially forever on this domain specifically because for a number of other reasons. Anyways, full employment Final for boss.
+Have any of the labs reached out and are they actively working on this? Or is it not a priority because they know people like you will be putting the models through the paces and verifying the work?
+Speaker 13: So we'd love to try all the new secret stealth models you know, that are not available online quite yet. We do have an email entry on the website if you wanna try your own model against our benchmark. We'd love to run it against it.
+Speaker 1: Cool.
+Speaker 13: Nobody's reached out quite yet. Right? And and I'm not super surprised. Researchers have very different priorities than real businesses running these workflows. I don't think Incarnanthropic cares about my benchmark, which is fine.
+Right? That's not their business. We're gonna pick the best model for our for our purpose and move on. Yeah. Funny enough, even the new models don't do as well as some of the old ones.
+We've actually found regressions as they launch new models. They perform worse and worse. Four seven performs worse than four six from Anthropic. 5.4 Pro performs better than 5.5, the 4.1 model from Grok beat their 4.2 model, so it's not always newest is best, flashiest is best. You really have to test the specific model that's come out to make sure that when you're implementing it, it actually does improve your results as a business, you know, the
+Speaker 1: person calling the model. Interesting.
+Speaker 3: Really fascinating. How how you started this business not I I my understanding is you didn't start this business because you saw, like, models getting much better, but really that you just thought you could build a better service around tax for startups. And you now, I guess, get the benefit of of the intelligence explosion. Where are you like, even with the flaws, are you still getting a lot of leverage out of them? Or is it not really because of the lack of reliability, is it is it not giving you the the quite the leverage that you'd like yet?
+Speaker 13: No. It's a totally fair question. We get a ton of leverage as long as they are paired with a human who really knows what they're doing. You know, you talked about the stakes for some of these questions. If you're just playing with Claude to write a poem or make a website, you as the end user know what you like and don't like, and you can steer it towards what you wanna see and don't wanna see.
+Mhmm. If you aren't an accountant, you have no idea what to steer it towards. You have no idea to prompt it. Hey. Please double check that Neural recognizes QSPS.
+Hey. Please double check that you pulled the, you know, new tax rules under o triple b. Mhmm. You need to have somebody skilled who knows how to talk to it and engage with it and structure the the prompt correctly, and make sure that when it tells you something, it actually smells and, you know, sounds right. So we do get a ton of leverage out of them.
+We have quite a few workloads that are powered by them internally, but it requires a ton of work on top of that call to make sure that the answer that's ultimately shown to the client is correct And and not just, you know, hallucinated figures or hallucinated rules that that'll ultimately you know, nobody's going to jail, but they're gonna get a lot of letters in the mail and and owe quite a bit of money.
+Speaker 1: It's not good. Yeah. And and Karpathy was talking about how there was a huge jump in chess capability between GPT 3.5 and GPT four. And what he attributes it to is just like the researchers were interested in chess during that training run so they fed it a bunch of chess data and it got better at that. And it feels like there might be a moment in the future where like, oh, like this lab on this model date got really interested in chess and went and bought like all the or in tax data and bought all the relevant training data and now it's jumping up on tax bench.
+If you were to I mean, I'm looking at some of the stats here and it shows like Grok 4.1 fast reasoning at 4.2%. You know, some others are in like the 10%, 12%, 31% range. Is this like Arc AGI where where where we're just at very, very low passing rates and and you're sort of waiting for them to start climbing up exponentially, but we haven't seen that take off yet?
+Speaker 13: So to the model's credit, the scores that you're referencing are mostly from data retrieval, which is the most operationally difficult category of questions that we ask the models. Yeah. Yeah. They're given access to a client's entire data packets. This could be hundreds of pages of PDFs and Slack messages and emails
+Speaker 2: Okay.
+Speaker 13: And asked to answer a question. A question could be something like, find their 2023 tax return, find the carry forward capital losses that go under a '24 return.
+Speaker 1: Mhmm.
+Speaker 13: You ask a junior CPA straight out of college to do this, look at it right a 100 times out of
+Speaker 8: a 100.
+Speaker 13: It's not It's in the exact same spot and the exact same form every time. Yep. These models really struggle. Mhmm. They really struggle.
+They we'll just make a number up.
+Speaker 1: Yeah.
+Speaker 13: They will get frustrated when they can't find the ten forty off the bat. Maybe they have trouble OCRing, you know, the the client took actual pictures of the Sure.
+Speaker 1: Of the
+Speaker 13: tax return versus, you know, a real raw PDF. Yeah. They really struggle with the combination of searching Yeah. And then analysis on top of that. A lot of them skip.
+They'll they'll pull the wrong carry forward figure and ignore that there's a $3,000 allowance against current income for '23, so have to subtract 3,000. Yeah. It's it's small, ticky tacky things, but if you try to deploy these models into a real production workflow, they're gonna get it wrong. You have to have a human review it. Right?
+You have to have an extra choke, Something goes wrong. And so we've we've hired a great team of next to choke, so to speak, to actually make sure that the work, that's delivered to the client actually, does what it says it's gonna do.
+Speaker 1: Have you thought about building a harness? It feels like a lot of the the unlocking software was was, you know, on the back of Codex and Cloud Code. Like like something like the harness is is somewhat simple sometimes, but it clearly unblocks the thinking model in a very important way. And it feels like for some of those rules based or tool usages, like just something a thin wrapper around these models could potentially lead to much higher scores. Have you looked at that?
+Speaker 13: You are hired as our next product manager. Welcome to the team.
+Speaker 1: Thank you.
+Speaker 13: You start on Monday. No. Perfect. It's absolutely on our list. Okay.
+One of the most impressive tools in the market that we've seen today is Thomson Reuters co counsel, which is the UI looks like any other model, but it's built on top of their tax library.
+Speaker 1: Oh, interesting.
+Speaker 13: They don't get anybody API access today. Oh, It's hundreds of dollars per seat per month for a team. And so I would love that as an API. Yeah. We'll we'll be building on it when they launch it, I think, coming later this year.
+Speaker 1: Got it.
+Speaker 2: That's what
+Speaker 13: we were told.
+Speaker 1: Yeah. Yeah.
+Speaker 13: But in the meantime, we'll be building our own and, you know, jumping down the rabbit hole, so to speak.
+Speaker 1: Good luck. Cool. Anything else?
+Speaker 3: Well, great to get the update and Yeah. Congrats. Yeah. We will, every every researcher that comes on
+Speaker 1: Tax bench. This is the most important one. Forget Eric AGI. It's all about tax AGI now. I don't care about gaming.
+Speaker 3: I think as as the IPOs start happening, they'll start caring more about about I performance on mean tax profit.
+Speaker 1: Yeah. I mean, it's a huge huge market, huge uplift. You've seen what happened in the coding market. You if you add accounting and finance to that, you you can see the next leg up on all the revenue charts. Well, thank you so much
+Speaker 3: for coming on the show. Great to see you, Nick.
+Speaker 1: Have a great day. Thanks to
+Speaker 13: you guys.
+Speaker 1: We'll talk to Cheers. Goodbye. Bye. Do have some breaking news for gamers out there. What's that?
+I know a lot of gamers out there. They have laptops. They're worried about the price of these laptops. The batteries. Electricity is getting expensive.
+What are you going to do? How are you going to charge your laptop We got the solution for you. It's a gas it's a gasoline powered laptop. So it's pretty simple. It's a one of a kind gasoline powered laptop.
+It's offered for just $850. Looks like it's right on Windows XP. You might not be able to play the latest and greatest games. Will it run crisis? Maybe, maybe not.
+Speaker 3: With a full tank, you can get an hour and a half of run time out
+Speaker 1: of this. It runs a two stroke engine and it's perfect for off grid computing. That's hot right now. And so the laptop specs, let's take you through it. It's got Intel Core two Duo.
+Two gigs of RAM. RAM's going up in price. This is valuable. This is an appreciating asset. 120 gigs of hard drive space.
+That's going hold a lot of games when you're off grid. You only have a little bit of gasoline. If you want a game, this is the laptop for you. It's a good It's
+Speaker 3: running Windows XP.
+Speaker 1: And it says that it starts easy. The the two stroke engine on the gasoline powered laptop, yes. It does start
+Speaker 3: Collin in the x chat says it gets 300 tweets to the gallon. 300 tweets.
+Speaker 1: Oh. Oh, no. I accidentally set GTA five to max settings. Well, at least it'll serve as a benchmark test. How many Chrome tabs can it open before it crashes?
+People are having fun with this. But the gasoline powered laptop, this is true hacker mindset. Whoever built this is is an incredible engineer and did something. They did the impossible. They built a gasoline powered laptop.
+I've seen a couple other of these like gasoline powered projects, people making all sorts of different things. It's always a funny gag. Obviously, you know
+Speaker 3: The actual breaking news is the White House is considering vetting AI models before they are released.
+Speaker 1: Oh, like adamant which
+Speaker 3: took a non interventionist approach to AI is now discussing imposing oversight on AI models before they are made publicly available.
+Speaker 1: Well, FDA for AI. We'll see.
+Speaker 3: It would be potentially an executive order to create an AI working group that would bring together tech executives and government officials to examine potential oversight procedures. Okay. So this would be an executive order to create a working group that could potentially create an oversight Okay.
+Speaker 1: So we're a couple steps away, but seems reasonable. I don't know. Depends on what the the what the what the benchmarks are, but you certainly don't want
+Speaker 3: Trump says we're gonna make this industry absolutely the top because right now it's a beautiful baby that's born.
+Speaker 1: Interesting way to put it.
+Speaker 3: We have to grow that baby and let that baby thrive.
+Speaker 1: This real?
+Speaker 3: It's his real quote.
+Speaker 1: Are you messing with
+Speaker 4: me?
+Speaker 3: This is a real quote that Trump said
+Speaker 1: Oh, good.
+Speaker 3: About AI. He said, we have to grow that baby and let that baby thrive. We can't stop it. We can't stop it with politics. We can't stop it with foolish rules and even stupid rules.
+Speaker 1: It's not a baby. It's a $10,000,000,000,000 industry. It's like the engine of the global economy.
+Speaker 3: Dean Ball's got a quote in here.
+Speaker 1: What does
+Speaker 2: he say?
+Speaker 3: Said the technology is moving extremely fast and there are few formal procedures Mhmm. But they don't want to over regulate.
+Speaker 1: Mhmm.
+Speaker 3: He said it's a tricky balance.
+Speaker 1: I say don't release it unless it's acing tax bench. It's got to be able to do the taxes before it gets out into the wild. No. Obviously, want these models to be safe. You want them to be reliable.
+You want them to avoid negative externalities. And anything that gets us in that direction is probably good, but everything comes with trade offs.
+Speaker 3: Final post of the day. Yeah. From Tommy. Hi. PhD in Hammerology here.
+Alright. So what we're looking at is a nail.
+Speaker 1: That is the correct mindset. When all you have is a hammer, everything looks like a nail. Also, go check out Riley Walls' new project. He's shipping stuff every week. This one got a million views.
+You probably already saw it. 27,000 likes. 10% of AMC movie showings sell no tickets at all. So if you want to go see a movie in a private theater with no one else, he made a site that finds empty theaters and tells you exactly when you should go and book. You can go see Project Hail Mary at 12:30 p.
+M. Today in New York. If you don't have work, you can go see Project Hail Mary in your private theater. It's available at walzer.com/emptyscreenings, walzr.com. Empty screenings.
+You can search by zip code. Let's see what's around us. Is there anything good?
+Speaker 6: There's 10:45PM Devil Wears Prada two.
+Speaker 1: Okay. Woah. Zero seats. Enjoy it. Woah.
+Enjoy being a last. Got it. This is very funny. Yeah. There's he does he does surface some that have one seat or two seats.
+Interesting way to make a new friend. Me and you. Because you think so you think, oh, I I got the zero seat theater? You're you're in the one seat theater and somebody's like, want to meet the psycho that went to the empty theater and then they're talking your ear off. Who knows?
+Well, maybe maybe you can enjoy it. Well, thank you for tuning in. We'll see you tomorrow at 11AM sharp Pacific time. Leave us five stars on Apple Podcast and Spotify. Sign up for our newsletter at .com, and we will see you tomorrow.
+Love you. Goodbye. Little bit missed time there.
+Speaker 3: See you tomorrow.
