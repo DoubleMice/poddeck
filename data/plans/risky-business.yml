@@ -1,11 +1,11 @@
 source: risky-business
-refreshed_at: 2026-05-29T07:00:42.742Z
+refreshed_at: 2026-05-29T20:22:25.758Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 27
-done: 0
-pending: 0
-needs_transcript: 27
+done: 1
+pending: 19
+needs_transcript: 7
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -34,8 +34,12 @@ episodes:
 
 
       This episode is also available on YouTube
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-05-29T20:29:17.911Z
+    transcript_job_id: f923945432be4ef5aa60c44199785c07,7810c863175e46158361dd0da7ab2042,d94021e8d6204e8aa5631de5771f2246,fac8010aea784fddae514e378897c531,5bec3fdb3e4846b5aaac0ec09859594d
+    transcript_completed_at: 2026-05-29T20:32:16.898Z
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #838 -- GitHub investigates possible breach"
     duration: 3769
@@ -63,7 +67,7 @@ episodes:
 
 
       This episode is also available on YouTube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #837 -- GitHub Actions footgun claims TanStack"
@@ -90,7 +94,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #836 -- You can&apos;t patch the bugpocalypse"
@@ -117,7 +121,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: SNAKEOILERS23PT2
     title: "Snake Oilers: Ent AI, Spacewalk and Mondoo"
@@ -139,6 +143,7 @@ episodes:
         
         
           Mondoo: Co-founder Dominik Richter pitches Mondoo, an AI-powered “service as software” in the vulnerability management space.
+
 
         
 
@@ -169,7 +174,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #834 -- Vercel gets owned, Mozilla dumps hundreds of Mythos bugs"
@@ -195,7 +200,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #833 -- The Great Mythos Freakout of 2026"
@@ -221,7 +226,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: SNAKEOILERS23PT1
     title: "Snake Oilers: Burp AI, Sondera and Truffle Security"
@@ -243,6 +248,7 @@ episodes:
         
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
+
 
         
 
@@ -275,7 +281,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: HTWGO2
     title: "How the World Got Owned Episode 2: The 1990s, Part One"
@@ -328,7 +334,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: SOAPBOX106
     title: "Soap Box: Red teaming AI systems with SpecterOps"
@@ -378,7 +384,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #829 -- Sneaky lobsters: Why AI is the new insider threat"
@@ -405,7 +411,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: SOAPBOX105
     title: "Risky Biz Soap Box: It took a decade, but allowlisting is cool again"
@@ -453,7 +459,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #827 -- Iranian cyber threat actors are down but not out"
@@ -480,7 +486,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #826 -- A week of AI mishaps and skulduggery"
@@ -506,7 +512,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: soapbox104
     title: "Risky Biz Soap Box: The lethal trifecta of AI risks"
@@ -559,7 +565,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #824 -- Microsoft&apos;s Secure Future is looking a bit wobbly"
@@ -586,7 +592,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #823 -- Humans impersonate clawdbots impersonating humans"
@@ -613,7 +619,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #822 -- France will ditch American tech over security risks"
@@ -640,7 +646,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #821 -- Wiz researchers could have owned every AWS customer"
@@ -672,7 +678,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: risky-business-aHR0cHM6Ly9yaXNr
     title: "Risky Business #820 -- Asian fraud kingpin will face Chinese justice (pew pew!)"
@@ -700,7 +706,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
   - id: HTWGO1
     title: "How the World Got Owned Episode 1: The 1980s"

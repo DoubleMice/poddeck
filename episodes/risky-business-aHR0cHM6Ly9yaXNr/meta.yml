@@ -1,0 +1,27 @@
+id: risky-business-aHR0cHM6Ly9yaXNr
+source: risky-business
+title: 'Risky Business #839 -- TeamPCP stole GitHub&apos;s internal repos'
+guest: "Patrick Gray, Adam Boileau, James Wilson"
+guest_role: "Security News Panel"
+published: "2026-05"
+duration: "1h0m"
+url: "https://risky.biz/RB839/"
+thumbnail: "https://risky.biz/static/img/rb-feed-main.png"
+status: generated
+tags:
+  - interview
+  - panel
+  - quick-take
+  - coding-agents
+  - ai-research
+summary: |
+  Risky Business #839 深度解析 2026 年 5 月的安全新闻头条。TeamPCP 通过 VS Code 恶意扩展入侵 GitHub，窃取 3,800 个内部仓库。Anthropic Mythos 发现 10,000+ 软件漏洞，但 AI 也在以史无前例的速度制造新 bug。MCP 安全扫描揭示 AI 基础设施正在重蹈早期 Web 的安全覆辙。DigiCert 被恶意屏保入侵，攻击者获得 Tencent EV 代码签名证书——而微软同期意外从 4% 的 Windows 设备中删除了 DigiCert 根证书。
+core_ideas:
+  - TeamPCP 通过 VS Code Marketplace 恶意扩展入侵 GitHub，微软拥有失败链的每一层
+  - GitHub 发言人用"directionally consistent"形容 3,800 个仓库被盗——企业公关用语的新高度
+  - Mythos 发现 10,000+ 漏洞，但代码编写速度远超漏洞修复速度
+  - MCP 服务器 vibe-coded，引入了 SQL 注入等本应在 2026 年不存在的漏洞类别
+  - DigiCert 入侵：恶意屏保 → 门户访问 → EV 证书激活 → Tencent 签名恶意软件零检出
+  - 微软 Defender 误删 DigiCert 根证书导致 4% Windows 设备受影响，Airlock 的缓存机制意外拯救了客户
+article_path: episodes/risky-business-aHR0cHM6Ly9yaXNr/article.html
+base: /episodes/risky-business-aHR0cHM6Ly9yaXNr/

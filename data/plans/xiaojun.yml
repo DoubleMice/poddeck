@@ -1,13 +1,13 @@
 source: xiaojun
-refreshed_at: 2026-05-29T07:00:42.758Z
+refreshed_at: 2026-05-29T20:22:25.780Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 14
-done: 0
+done: 1
 pending: 0
 needs_transcript: 11
 transcribing: 1
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: 6a170f747460cabdeb56dabb
@@ -34,13 +34,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a09d58b1b7bd502955258ab?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a09d58b1b7bd502955258ab/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lmeczS2JtKzE79rKpVM-RC5yw22M.m4a
     image: https://image.xyzcdn.net/FiQ8jWJqinmdXWW9GIvr7OWrc4DR.png
-    status: transcribe_failed
+    status: generated
     priority: 1
-    transcript_provider: dashscope
-    transcript_job_id: 78e09cd0-049e-4c10-a665-93694c452862
-    transcript_submitted_at: 2026-05-25T19:26:26.342Z
-    transcript_completed_at: 2026-05-26T20:07:12.107Z
-    transcript_error: DashScope task ended with UNKNOWN
+    transcript_provider: mimo
+    transcript_job_id: 4e962d3e13c74568bbdd023cfbc104f4,1ce0653db8354836a44d50c6a9b4cb66,930fbebdd5824a3680f427bd429c8fe8,746afe882e544fa08ee3c3ed26b1e093,9d7152b25c48474e94159b4867d390b4,fb4a501f3dd44a898398265ce28a922a
+    transcript_submitted_at: 2026-05-29T20:26:03.964Z
+    transcript_completed_at: 2026-05-29T20:29:17.873Z
   - id: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去
     duration: 13835

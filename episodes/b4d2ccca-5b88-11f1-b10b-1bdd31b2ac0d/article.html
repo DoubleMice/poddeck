@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uneasy Money: Illia Polosukhin on Why Onchain Commerce Needs Confidentiality — PodDeck</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a2e;
+  background: #fafafa;
+  padding: 0;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+header {
+  text-align: center;
+  padding: 60px 0 40px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 48px;
+}
+header h1 {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+header .meta {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+header .meta strong { color: #374151; }
+section { margin-bottom: 48px; }
+section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  line-height: 1.3;
+  border-left: 4px solid #1971c2;
+  padding-left: 14px;
+}
+p { margin-bottom: 16px; color: #374151; }
+p.lead {
+  font-size: 19px;
+  color: #111;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+.card {
+  padding: 16px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+.card.c-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card.c-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card.c-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.card.c-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card.c-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card.c-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+blockquote {
+  margin: 20px 0;
+  padding: 16px 20px;
+  border-left: 4px solid #3b82f6;
+  background: #eff6ff;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #1e3a5f;
+  font-size: 16px;
+}
+blockquote footer {
+  margin-top: 8px;
+  font-size: 13px;
+  font-style: normal;
+  color: #6b7280;
+}
+blockquote footer::before { content: "— "; }
+.quotes-section blockquote:nth-child(3n+1) { border-left-color: #3b82f6; background: #eff6ff; }
+.quotes-section blockquote:nth-child(3n+2) { border-left-color: #22c55e; background: #f0fdf4; }
+.quotes-section blockquote:nth-child(3n+3) { border-left-color: #a855f7; background: #faf5ff; }
+.footnote {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-top: 4px;
+  font-style: normal;
+}
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.num-card {
+  text-align: center;
+  padding: 14px;
+  border-radius: 8px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+.num-card .num {
+  font-size: 28px;
+  font-weight: 800;
+  color: #166534;
+  margin-bottom: 4px;
+}
+.num-card .label {
+  font-size: 13px;
+  color: #6b7280;
+}
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+@media (max-width: 560px) {
+  .two-col { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  header h1 { font-size: 24px; }
+}
+footer.page-footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+  color: #9ca3af;
+  text-align: center;
+}
+footer.page-footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+.gloss {
+  font-size: 14px;
+  color: #6b7280;
+  padding: 10px 14px;
+  background: #f9fafb;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+.gloss::before { content: "作者概括："; font-weight: 600; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Uneasy Money: Illia Polosukhin on Why Onchain Commerce Needs Confidentiality</h1>
+  <div class="meta">
+    <strong>嘉宾</strong>：Illia Polosukhin（Near Protocol 联合创始人，"Attention Is All You Need" 合著者）<br>
+    <strong>主持</strong>：Kane Warwick, Taylor Monahan, Luca Netz<br>
+    <strong>来源</strong>：Uneasy Money · <strong>日期</strong>：2026 年 5 月
+  </div>
+</header>
+
+<p class="lead">
+这是一期密度极高的对谈。Illia Polosukhin——Near Protocol 的联合创始人，同时也是 "Attention Is All You Need" 论文的八位作者之一——与 Uneasy Money 的三位主持人展开了一场涵盖 AI 研究史、链上隐私、反犯罪设计、组织理论和未来经济形态的深度对话。全程没有一句废话。
+</p>
+
+<section>
+<h2>为什么这期值得关注</h2>
+
+<div class="cards">
+<div class="card c-blue">
+<strong>Transformer 合著者的低调</strong>
+Illia 是启动大语言模型时代的论文作者之一，但认识他五年的 Kane 直到两周前才知道这件事——"I've known you for five years and you haven't brought this up 250 times."
+</div>
+
+<div class="card c-green">
+<strong>链上商务的致命缺陷</strong>
+企业无法在完全透明的区块链上运营——收入、供应商付款、员工薪酬全部暴露。这就是为什么加密行业至今仍然用法币发工资。
+</div>
+
+<div class="card c-yellow">
+<strong>隐私与反犯罪的第三条路</strong>
+Near 的 Shield AI 系统展示了如何在非托管协议中实现反犯罪检测，同时不妥协隐私——通过异常检测和隐私保护的警报网络。
+</div>
+
+<div class="card c-orange">
+<strong>去中心化是工具，不是目标</strong>
+Illia 从 2018 年就在说："This obsession with decentralization for decentralization's sake is the silliest shit." 真正的目标是什么？冗余、竞争、安全、创新。
+</div>
+
+<div class="card c-purple">
+<strong>AI × 区块链的千倍经济</strong>
+区块链作为协调层提升 10 倍效率，AI 作为加速器再提升 100 倍——两者结合带来 1000 倍的全球经济效率提升，TAM 是"ten hundred trillion"。
+</div>
+
+<div class="card c-red">
+<strong>未来组织：从层级到市场</strong>
+Ironclaw 多租户 AI 系统、承诺追踪、AI CEO——Near 正在把杰克·多尔西 "peer-to-peer organization" 的理念变成可操作的产品。
+</div>
+</div>
+</section>
+
+<section>
+<h2>一位极其低调的 Transformer 合著者</h2>
+
+<p>
+当 Kane 在两周前偶然发现 Illia 是 "Attention Is All You Need" 的合著者时，他的反应是："holy shit, how is it that I've known you for five years and you haven't brought this up 250 times?" 在加密行业，几乎所有创始人都会把"我参与了一篇改变世界的论文"作为自我介绍的第一句话——Illia 不是。
+</p>
+
+<p>
+Illia 的背景是一条连贯的弧线：14 岁开始尝试构建神经网络，加入 Google 研究团队专注于语言问答系统，然后在 2017 年与一个八人团队发表了 Transformer 论文。这篇论文的核心洞察其实出奇地简单：去除循环神经网络的顺序处理，利用 GPU 的并行能力一次性处理全部上下文。"This can speed up things 10,000x, 100,000x."
+</p>
+
+<p>
+但他的经理在午餐时提出这个想法时，Illia 的第一反应是："I'm sure it doesn't work." 他实现了初版——效果不怎么样，但有信号。六到七个月后，八人团队将其推到了 state of the art。今天，这个团队走出了多位创始人：Near Protocol、Character.AI 等。
+</p>
+
+<p>
+从 AI 研究转向区块链的逻辑也同样连贯。Near 最初是一家 AI 公司——"teaching machines to code"。当他们寻找合适的区块链基础设施时，发现没有任何链能满足他们的需求。Illia 两次向 Ethereum Foundation 提案，希望 Near 成为 Ethereum 的分片方案——两次都被拒绝。Kane 讽刺地概括 EF 的态度：<strong>"we're not paying you shit."</strong> 于是 Near 独立启动：分片、WebAssembly、快速出块时间。2025-2026 年，AI 和区块链的交汇重新成为核心叙事——这一次有了真正的产品。
+</p>
+</section>
+
+<section>
+<h2>保密性是加密经济的关键解锁</h2>
+
+<blockquote>
+Confidentiality is a key unlock for actually crypto becoming truly day to day use. Like you cannot imagine a business doing commerce on chain where everybody can just go into block explorer and see how much revenue they're getting, how much they're paying their suppliers, what are the salaries are.
+<footer>Illia Polosukhin</footer>
+</blockquote>
+
+<p>
+Illia 提出了一个简单到让人无法反驳的论点：区块链的"完全透明"特性在叙事上被包装成优势，但对真实企业而言是致命的。竞争对手可以在区块浏览器上实时监控你的现金流；供应商可以看到你的全部交易记录，价格谈判完全失去信息不对称；员工的工资成为公共信息——这就是为什么加密行业至今仍然用法币发工资。
+</p>
+
+<p>
+如果不解决保密性问题，区块链将永远只能服务投机和灰色市场，无法触及真正的商业 TAM。Near 的答案是：机密 Intents——一个运行在 Near 机密分片上的执行环境，所有进入该分片的资产（目前 150+ 种）都默认私密。
+</p>
+
+<div class="numbers-grid">
+<div class="num-card"><div class="num">150+</div><div class="label">可私密持有的资产种类</div></div>
+<div class="num-card"><div class="num">~8M NEAR</div><div class="label">在机密分片中</div></div>
+<div class="num-card"><div class="num">600ms</div><div class="label">出块时间</div></div>
+</div>
+</section>
+
+<section>
+<h2>从 Zcash 的教训到机密 Intents</h2>
+
+<p>
+Kane 分享了他深入 Zcash 生态后发现的痛苦真相：ZEC 本身是私密的——但持有 ZEC 以外的任何资产都无法获得隐私保护。Tay 的观察更加尖锐："it might feel really good to hold your Zcash privately shielded... but it might not feel great one day when it's up 30% then the next day when it's down 30%." 如果只有波动性资产可以私密持有，隐私就没有实际用途。
+</p>
+
+<p>
+Near 的机密 Intents 与 Zcash 的关键区别在于：所有资产——USDC、NEAR、ZEC、Solana 资产——都在同一个私密环境中。你可以从私密环境直接支付到其他链或法币，收款方不知道资金来源。Illia 举例说，通过 Near Intents，从 Zcash 钱包用 ZEC 支付到 Bitcoin QR 码——商家只看到 Bitcoin 到账，完全不知道资金来自 Zcash。这是 Zcash 生态十年来一直想实现但无法做到的事情。
+</p>
+
+<p>
+延迟也是一个被低估的关键因素。Illia 直言："if you're standing in line at a store trying to, waiting more than like 50 milliseconds you're like, ah, fuck." Zcash 几分钟的出块时间意味着日常支付是不可能的——Near 的 600 毫秒出块解决了这个用户体验问题。
+</p>
+</section>
+
+<section>
+<h2>Near Intents：全球经济的路由层</h2>
+
+<p>
+当 Kane 两年前第一次听 Illia 解释 Intents 时，他完全听不懂——"I was like what in the hell is this guy fucking talking about." 六个月后，当他遇到让"笨链"（没有智能合约的链，如 Bitcoin、Dogecoin）拥有智能合约能力的问题时，他才意识到：Illia 早在六个月前就已经把整个解决方案讲给他听了。
+</p>
+
+<p>
+Intents 的首个产品市场契合是让 Bitcoin 和 Dogecoin 等链上的资产可以被控制、被交易、被编程——本质上是通过 Near 的计算能力为这些链"添加"智能合约。但 Illia 强调，这远远不是终点：
+</p>
+
+<blockquote>
+The reality is intents is for facilitate all the economic activity in the world. That's really the goal. Like not just crypto, we adding fiat, we adding all kinds of other assets. But we also adding work. You will be able to hire agents and people, buy goods etc.
+<footer>Illia Polosukhin</footer>
+</blockquote>
+
+<p>
+Intents 的终局不是一个跨链桥或一个 DEX 聚合器。它是全球经济活动在区块链上的路由层：代币交换、法币 on/off ramp、雇佣工作和 AI 代理、商品购买、供应链合同——所有这些都在同一个意图市场中完成。
+</p>
+</section>
+
+<section>
+<h2>Shield AI：反犯罪而不反隐私</h2>
+
+<p>
+Near 面临一个两难困境：这是一个非托管协议，原则上任何人都可以使用；但如果允许资金清洗和非法活动，协议将无法获得主流采用。Tay 提出了一个关键洞见：<strong>犯罪分子和普通用户的需求完全不同</strong>——犯罪分子对价格完全不敏感（1% 费用？"amazing, sign me up"），不在意延迟，而且会在你的 Discord 里公开施压："isn't this supposed to be unstoppable money?"
+</p>
+
+<p>
+"如果你只服务犯罪分子，你会在一个完全错误的用户群体上迭代你的产品，"Tay 说。很多协议在熊市中拥抱了这种虚假的产品市场契合——"you can kind of squint at it and go, they're not that bad."
+</p>
+
+<p>
+Near 的 Shield AI 是从第一性原理出发的解决方案。它实时扫描多条链上的交易，进行异常检测——如果一个历史上余额为零的账户突然收到一亿美元，那大概率是可疑的。它是第一个检测到 Litecoin 攻击的节点：少量交易通过 Intents 后立即触发警报，然后通知了其他交易所暂停 Litecoin 存取款。
+</p>
+
+<div class="gloss">
+Illia 将 Shield 定位为加密行业的威胁情报网络。合作伙伴可以订阅不同严重级别的警报，从"这些地址可疑"到"立即暂停该网络"。系统使用布隆过滤器等加密技术——你可以检查存款是否匹配可疑列表，但不会泄露具体是哪个地址。
+</div>
+</section>
+
+<section>
+<h2>Litecoin 攻击：一次 AI 辅助的零日漏洞</h2>
+
+<p>
+Illia 详细描述了 Litecoin 的 MimbleWimble 攻击——这是一个教科书级别的安全失败案例。攻击分为三步：首先，利用 MimbleWimble 隐私池中的漏洞，使用伪造证明提取了不属于攻击者的资金；其次，DDoS 网络其余部分，使全网算力下降；第三，通过 Thorchain、Near Intents 和多个 CEX 尝试提取资金。
+</p>
+
+<p>
+更令人震惊的是事后揭露的事实：Litecoin 核心开发者在<strong>两个月前</strong>就用 AI 发现了这个漏洞并打了补丁。但他们只通知了矿工——没有通知任何交易所、桥接协议、或 Intents 节点。一个零日漏洞被保密了两个月。Kane 的评价："In the age of information this is unacceptable."
+</p>
+
+<p>
+这个案例暴露了当前加密行业事件响应的根本缺陷：没有标准化的威胁情报传播通道，每个参与方都是从头学起如何进行事件响应。Shield 的愿景就是解决这个问题——建立一个信息高速公路，让威胁警报能快速传播到所有可能的 off-ramp，在攻击传播之前就切断它。
+</p>
+</section>
+
+<section>
+<h2>"Don't Be Evil" 不是使命</h2>
+
+<p>
+Illia 对 Ethereum Foundation 和 Google 的并行批判是这期节目中最辛辣的部分。他区分了价值观和使命：</p>
+
+<blockquote>
+Don't be evil is values, it's not your mission. Mission is actually what you're trying to achieve in the world.
+<footer>Illia Polosukhin</footer>
+</blockquote>
+
+<p>
+Tay 的类比更加锋利："I can go sit on my fucking couch alone never talk to anyone never contribute value to anything never buy anything never sell anything. I can go sit on my couch and not be evil. To what end though?"——不作恶不是目标。你坐在沙发上什么都不做，也可以不作恶。但这不是一个组织的意义。
+</p>
+
+<p>
+Illia 以他在 Google 的亲历为例说明垄断如何腐化使命。一名前同事从研究部门转到广告团队后升职了——他的"创新"是关联用户的地图数据和路上看到的广告牌，然后在互联网上对用户进行重定向。"I'm like, this sounds kind of evil." 当 Google 拥有搜索广告市场的完全垄断地位，而 Facebook 的竞争压力迫使它更加激进地使用用户数据时，"Don't be evil"最终被删除——因为它不断与实际 KPI 冲突。
+</p>
+
+<p>
+Illia 将矛头指向了 EF 的"中立性"文化。在执行层面，"中立"变成了：不讨论产品构建者、不跟产品构建者对话、不对任何人提供支持。Tay 的总结令人发笑又发人深省："It's so important that we don't have a favorite child, that we actually don't talk to actual children."
+</p>
+</section>
+
+<section>
+<h2>去中心化是工具，不是目标</h2>
+
+<blockquote>
+This obsession with decentralization for decentralization's sake is the silliest shit, and we need to stop.
+<footer>Illia Polosukhin（2018 年就开始说这句话）</footer>
+</blockquote>
+
+<p>
+Illia 的立场很清晰：去中心化是为了实现四个具体目标——<strong>冗余</strong>（不依赖单一验证者或 RPC 提供商）、<strong>竞争与创新</strong>（没有中心化许可的多个团队各自建设）、<strong>安全</strong>（分布式信任基础）、以及<strong>稳定</strong>（没有单一实体可以控制系统）。去中心化本身不是目的——如果你为了"去中心化"而把所有人踢出 Discord，不提供任何支持，当零日漏洞出现时却不知道怎么通知任何人——这不是在践行原则，这是在废弃你的生态。
+</p>
+
+<p>
+Near 的实践是 Illia 理论的最好注脚。Near 生态有几十家公司在紧密协作——Slack 里有 20 个共享频道。当 ZRA 被黑时，五家不同的公司联合追踪、找到攻击者、追回全部资金。这需要的不是"去中心化"的意识形态——而是<strong>组织能力</strong>。"I don't think decentralization needs to mean disorganization."
+</p>
+
+<div class="two-col">
+<div>
+<p>Near 的每个业务单元都有自己的产品和市场（NEAR Intents 团队在 Diffuse 公司，NEAR AI 团队有独立产品），但共享 NEAR 代币激励（就像 Alphabet 股票）和基础设施（HR、财务、法务）。</p>
+</div>
+<div>
+<p>Illia 的类比是：把 Google 的内部组织结构开放化——任何人可以加入、可以协作、可以在彼此之上建设——但共享一套激励和可复用的基础设施。这不是 DAO 的乌托邦——这是有组织、有激励、有责任制的去中心化。</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>企业没有稳态</h2>
+
+<blockquote>
+Corporation is either growing or shrinking. There's no way for something to be a steady state.
+<footer>Illia Polosukhin</footer>
+</blockquote>
+
+<p>
+Illia 提出了一个关于企业本质的深刻观察：企业没有稳态——要么增长，要么萎缩。当增长触及市场天花板后，唯一的增长路径是<strong>从单个用户那里榨取更多价值</strong>（upsell 或增加使用时长）。这就是为什么垄断企业天然地变成"榨取式"——不是因为管理不善，而是因为系统没有静止状态。
+</p>
+
+<p>
+他的论点是：区块链的固定供应和经济模型可能提供不同的答案。当货币总量固定、治理去中心化时，系统可以在稳态中运行而不需要不断榨取用户。这是对加密货币价值主张的一种重新表述：它不只是一个投机资产类别——它是一种不同的经济组织方式。
+</p>
+</section>
+
+<section>
+<h2>信用分配：一切问题的根源</h2>
+
+<blockquote>
+Credit assignment, I think, actually is the fundamental world problem.
+<footer>Illia Polosukhin</footer>
+</blockquote>
+
+<p>
+Illia 将"信用分配"（credit assignment）提升到了一个近乎哲学的高度。在机器学习中，梯度下降——模型训练的核心算法——本质上就是一个信用分配问题：哪些参数对误差贡献最大？在组织中，晋升和薪酬也是信用分配问题——但它是"fuzzy and adversarial"（模糊且对抗性的）。在 DAO 中，投票机制假定所有贡献是等价的，但现实从来不是——"you put rules, like these very hard-line rules on things that are fundamentally fuzzy underneath, and then you're like, it's fair."
+</p>
+
+<p>
+这就是为什么 DAO 从未真正运作。中层管理的缺失不是因为管理层是坏的——而是因为上下文传播是需要功能支持的。在没有基础设施来评估个体贡献的情况下，DAO 的"公平"只是一种幻觉。Kane 分享了他自己的挣扎——在"共产主义幻想"（给所有人一样的奖励）和"市场化"之间摇摆。他观察到：给所有人一样的奖励时，"the people contributing the most fucking hate it. They rage so hard."
+</p>
+
+<p>
+Illia 的答案是市场。"Markets actually solve all of this." 如果你不满意合作伙伴，换一个提供商。价格就是共识。问题在于：我们还没有弄清如何在组织内部的下层实现市场化。这就是 AI（估算个体贡献）+ 区块链（托管 + 结算）+ 意图架构（谈判 + 执行）的结合点。
+</p>
+</section>
+
+<section>
+<h2>AI CEO：2023 年就提出的愿景</h2>
+
+<p>
+在 AI 代理真正开始工作之前，Illia 在 NearCon 2023 上就提出了"AI CEO"的概念。他的框架是从两个方向同时推进：
+</p>
+
+<p>
+<strong>向上——深度信息汇总</strong>：组织内部正在发生什么？哪些决策被做出了？哪些取舍被选择了？决策者往往不知道导致决策的全部取舍权衡——AI 可以暴露这些信息。
+</p>
+
+<p>
+<strong>向下——上下文分发</strong>：把相关上下文推送给需要的人，同时过滤掉不相关的内容。你不能让每个人都有全组织的信息流——但你可以随时查询任何你需要的上下文。这本质上就是中层管理的功能——在 AI 之前，人类是唯一能做上下文路由的实体。
+</p>
+
+<p>
+Ironclaw 是 Near 正在内部实验的多租户 AI 协调系统。每个用户有自己的记忆和任务，有共享的项目和工作流。它在会议中自动捕获承诺（"我们会做这个功能"），自动跟踪后续行动，自动更新路线图和文档。但最有价值的发现是：
+</p>
+
+<blockquote>
+The most useful been finding where decisions were not made, because that's actually where organizations' taxes is: people discuss something and did not make a decision because either the decision maker is not clear or it wasn't in the room.
+<footer>Illia Polosukhin</footer>
+</blockquote>
+
+<p>
+组织真正的效率黑洞不是糟糕的决策——而是根本没有被做出的决策。Ironclaw 通过扫描所有会议记录，找出那些讨论了问题但没有做出决定的场合，然后推动做出决定。
+</p>
+</section>
+
+<section>
+<h2>AI × 区块链 = 1000 倍经济效率</h2>
+
+<blockquote>
+Blockchain will make it ten times more effective, and AI will make it hundred times effective. And so together AI and blockchain will make it thousand times effective.
+<footer>Illia Polosukhin</footer>
+</blockquote>
+
+<p>
+Illia 的计算是清晰的：当前全球经济极度低效——供应链谈判、工作分配、信用分配都是手动且模糊的。区块链作为协调层将效率提升一个数量级（10 倍），AI 作为加速器再提升两个数量级（100 倍），两者叠加产生 1000 倍的复合效率。
+</p>
+
+<p>
+目标市场是 "ten hundred trillion"——后 AGI 时代的货币总量。这不是 crypto-native 的叙事（"下一个 100x 币"），这是全球经济基础设施的叙事。Intents 不是跨链桥——它是连接需求方和求解方的全球经济活动路由层。Near AI Marketplace 已经在测试真实用例：保险理赔、背景调查、活动协调。商业模式是：某个专家将其工作流程编写成可复用的代理，然后以每次一美元的价格作为服务提供——将一个原本必须在企业内部完成的功能拆解为市场化服务。
+</p>
+
+<p>
+Illia 的终局：组织不再是人的持有者。"We're transitioning from corporation or foundation needing to be the holder of people." 为什么企业要捆绑工人？因为历史上，信用分配是不可解决的——你无法评估个体贡献的价值。但如果 AI 可以解决信用分配呢？那么个体 + AI 代理军队成为一个微型公司，通过意图市场被雇佣——托管、验证、结算全部在链上完成。这不是乌托邦式的 DAO 梦想——这是有托管、有验证、有激励机制的可操作架构。
+</p>
+</section>
+
+<section class="quotes-section">
+<h2>核心金句</h2>
+
+<blockquote>
+"Confidentiality is a key unlock for actually crypto becoming truly day to day use."
+<footer>核心论点：没有保密性，企业无法在链上运营</footer>
+</blockquote>
+
+<blockquote>
+"Blockchain will make it ten times more effective, and AI will make it hundred times effective. And so together AI and blockchain will make it thousand times effective."
+<footer>千倍经济效率的数学：10x × 100x = 1000x</footer>
+</blockquote>
+
+<blockquote>
+"Credit assignment, I think, actually is the fundamental world problem."
+<footer>从组织管理到机器学习梯度下降——一切问题的根源</footer>
+</blockquote>
+
+<blockquote>
+"I don't think decentralization needs to mean disorganization."
+<footer>去中心化 ≠ 无组织——Near 几十家公司紧密协作的实践经验</footer>
+</blockquote>
+
+<blockquote>
+"Don't be evil is values, it's not your mission. Mission is actually what you're trying to achieve in the world."
+<footer>对 Google 和 EF 的双重批判：价值观不能替代使命</footer>
+</blockquote>
+
+<blockquote>
+"The most useful been finding where decisions were not made, because that's actually where organizations' taxes is."
+<footer>Ironclaw 最有价值的发现：组织真正的效率黑洞是未做出的决策</footer>
+</blockquote>
+</section>
+
+<footer class="page-footer">
+<p>
+  本文基于 Uneasy Money 播客 2026 年 5 月期生成。<br>
+  原始节目链接：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3700949168.mp3">Uneasy Money: Illia Polosukhin</a>
+</p>
+<p style="margin-top: 8px;">
+  🤖 Generated with <a href="https://claude.com/claude-code">Claude Code</a>
+</p>
+</footer>
+
+</article>
+</body>
+</html>

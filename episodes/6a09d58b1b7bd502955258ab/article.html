@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>141. Freda的投资札记第2集 — Tokenmaxxing、把电机塞进蒸汽机、接力赛变篮球赛、孤独、人的连接</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fafafa;
+    max-width: 720px; margin: 0 auto; padding: 40px 24px 80px;
+  }
+  header { margin-bottom: 48px; text-align: center; }
+  header h1 { font-size: 28px; font-weight: 800; line-height: 1.35; margin-bottom: 12px; color: #111; }
+  header .meta { font-size: 14px; color: #666; }
+  header .meta span { margin: 0 6px; }
+  section { margin-bottom: 40px; }
+  h2 { font-size: 22px; font-weight: 700; margin-bottom: 16px; color: #111; border-left: 4px solid #1971c2; padding-left: 14px; }
+  p { margin-bottom: 14px; }
+  .overview { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+  @media (max-width: 600px) { .overview { grid-template-columns: 1fr; } }
+  .card { padding: 14px 16px; border-radius: 8px; font-size: 15px; line-height: 1.55; }
+  .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .card-blue { background: #eff6ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #f0fdf4; border-left: 4px solid #16a34a; }
+  .card-orange { background: #fff7ed; border-left: 4px solid #ea580c; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #7c3aed; }
+  .card-yellow { background: #fefce8; border-left: 4px solid #ca8a04; }
+  .card-red { background: #fef2f2; border-left: 4px solid #dc2626; }
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 14px 0; }
+  @media (max-width: 500px) { .stat-grid { grid-template-columns: 1fr; } }
+  .stat { padding: 16px; border-radius: 8px; text-align: center; }
+  .stat .num { font-size: 28px; font-weight: 800; }
+  .stat .label { font-size: 13px; opacity: 0.65; margin-top: 2px; }
+  .quote-block { margin: 20px 0; padding: 18px 22px; border-radius: 8px; font-style: italic; line-height: 1.7; }
+  .quote-block .attr { display: block; margin-top: 8px; font-size: 13px; opacity: 0.55; font-style: normal; }
+  .gloss { font-size: 14px; color: #555; padding: 10px 14px; background: #f1f5f9; border-radius: 6px; margin: 12px 0; }
+  .gloss::before { content: "作者概括："; font-weight: 600; color: #888; }
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 40px 0; }
+  footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #999; text-align: center; }
+  footer a { color: #1971c2; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  strong { color: #111; }
+  em { color: #444; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>141. Freda的投资札记第2集</h1>
+  <p style="font-size:18px;color:#444;margin-bottom:8px;">Tokenmaxxing · 把电机塞进蒸汽机 · 接力赛变篮球赛 · 孤独 · 人的连接</p>
+  <div class="meta">
+    <span>嘉宾：Freda Duan</span><span>·</span><span>Ultimate Capital 合伙人</span><span>·</span><span>2026年5月</span>
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    <span>小君的商业访谈录</span><span>·</span><span>语言及世界工作室</span>
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得听</h2>
+  <p>Freda Duan 是 Ultimate Capital 的合伙人——这家硅谷科技基金横跨一二级市场，在一级市场投了 OpenAI、Anthropic、字节跳动，在二级市场持有英伟达、存储芯片、Snowflake、Robinhood。这是她第二次做客小君的商业访谈录。如果说第一集是给美国明星公司"算了算账"，那这一集走得更深也更宽——从 Token 经济学的底层逻辑，到 Anthropic 为什么这次可能真的甩开对手，到 AI 时代组织架构为什么必须从"接力赛"变成"篮球赛"，再到投资人的真实焦虑和人与人之间还剩下什么。以下六个维度，每一个都值得细读。</p>
+  <div class="overview">
+    <div class="card card-blue"><strong>Tokenmaxxing 的本质</strong>把 Token 理解为 AI 时代的"千瓦时"——但 Token 和 Token 不是一回事。同一个任务，不同模型消耗的 Token 能差几十倍甚至上百倍。行业正在从浪费走向理性，从按量收费走向按效果付费。</div>
+    <div class="card card-green"><strong>Anthropic 为什么甩开对手</strong>Coding agent 成熟后触发了一个关键的正向循环——更好的 AI 才能训练出下一代更好的 AI。这就是 recursive self-improvement。一旦过了临界点，曲线会非常陡峭，后面追的人可能真的没意义了。</div>
+    <div class="card card-orange"><strong>"把电机塞进蒸汽机"</strong>电力发明后，工厂只是把蒸汽机拆掉、换成电机、塞进同一个位置。直到流水线出现，生产力才真正爆发。AI 现在就是这个阶段——每个人都加了 AI 到工作流里，但没人在重新设计流程本身。</div>
+    <div class="card card-purple"><strong>软件公司的生死局</strong>UI 越精美、数据结构越规整的软件死得越快。但真正让人意外的是——连 Data Warehouse 都不一定安全。Agent 需要的是一整套全新的基础设施：WebSocket 替代 HTTP，AgentMail，AgentPhone……</div>
+    <div class="card card-yellow"><strong>Mag 7 的现金流悬崖</strong>到 2027 年，几大云厂商的自由现金流将全部转负——超过一万亿美元的资本开支。但一个 Gigawatt 到底能产生多少收入，至今没人能看到上限。</div>
+    <div class="card card-red"><strong>焦虑、孤独与人的连接</strong>当 AI 能回答 95% 的信息型问题，当"以信息交换为目的的对话，意义正在被快速掏空"——人与人之间还剩下什么？Freda 的答案是：情感的连接。而她自己也会因为深夜装不上 OpenClaw 而痛苦。</div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section>
+  <h2>一、Token：AI 时代的"千瓦时"</h2>
+  <p>Freda 认为，AI 时代出现了几个新的计量单位——dollar per FLOP、dollar per Watt、dollar per Token——而现在最常用的是 dollar per Token。她把它类比为工业时代的 dollar per kilowatt hour（千瓦时成本），比较的是能耗产出比。</p>
+  <p>但 Token 也是最容易误导人的单位。因为"token 和 token 不是一回事"。核心变量是 <strong>Token per Task</strong>：同一个任务，不同模型消耗的 Token 可以差几十倍甚至上百倍。</p>
+  <p>她拆了三个原因：第一，输出长度——好模型一两百行精炼代码就完成，弱模型需要写几千行；第二，隐藏的 reasoning tokens——不同模型在回答前做中间推理的量差异极大；第三，agentic workflow 会像放大器一样进一步放大这个差距。</p>
+
+  <div class="gloss">
+    如果把 AI 总投入拆成一个公式，就是：用户数 × 每人任务数 × Token/Task × $/Token。前两项（用户数和任务数）确定性大幅增长——从程序员破圈到白领，像 Anthropic 的 Cowork 这样面向普通人的产品，增长斜率比 Claude Code 还要陡。后两项（Token/Task 和 $/Token）则会被优化——最优效率的模型会越来越被认可，收费模式也会从按量付费转向按效果付费。总投入 = 增长 − 优化，不等于下降。
+  </div>
+
+  <div class="quote-block card-blue">
+    "最终大家会意识到你要的其实是你的效果，以及你追求达到这个效果能达到最高的效率。"
+    <span class="attr">— Freda，关于 Token 浪费</span>
+  </div>
+</section>
+
+<section>
+  <h2>二、从按量收费到按效果付费</h2>
+  <p>Freda 有一个很强的判断：行业会逐渐理性起来，按 Token 收费的模式一定会变。Token 本身不可比——"好像你在工业时代的时候你不会去真的炫耀说我一个灯我耗电耗特别多，反而你会去购买可能贵一点的 LED"。</p>
+  <p>她举了 <strong>Sierra</strong> 的例子——这是一家做 AI 客服的公司，完全按效果收费：AI 解决了问题、没转人工 → 收钱；转了人工 → 不收钱。不同复杂度、不同解决度对应不同单价。作为客户，跟 Sierra 是 interest-aligned 的——都想解决问题，都想少烧 Token。</p>
+  <p>哪些场景会先转向效果付费？Freda 的判断是：客服解决率、销售转化、催收贷款、保险理赔——这些可以量化结果的场景会先变。而写作等创意类工作，效果难量化，可能长期还是按 Token 收费。</p>
+</section>
+
+<section>
+  <h2>三、Anthropic：为什么领先不再是"轮流坐庄"</h2>
+  <p>过去两年，硅谷的默认假设是"模型领先地位每隔几个月就会换一次手"——Gemini → OpenAI → Anthropic → 下一个？但 Freda 说，这一两个月，她第一次开始质疑这个假设。</p>
+  <p>核心原因是 <strong>coding agent 的成熟触发了一个关键的正向循环</strong>。半年前，coding 模型对工程师全要素生产率的提升只有 5%；去年底到了 15%-20%；现在远超 20%。模型大厂一个月就能出一个新版本。</p>
+
+  <div class="quote-block card-green">
+    "你更好的 AI 才能去训练出下一代更好的 AI……这个循环一旦跑起来就有一点点就是那些 researcher 说的叫 recursive self-improvement 这个味道。它如果真的过了某个临界点，这个曲线会变得非常的陡峭，那你后面就是有点就 singularity……后面再追的人可能真的就没什么意义了。"
+    <span class="attr">— Freda，关于 Anthropic 的壁垒</span>
+  </div>
+
+  <p>这解释了 Meta 为什么愿意花几十亿美元用别家模型——没有这个东西，迭代速度真的会比别人慢一大档。各家的反应也在验证：OpenAI 把 coding 推到极高位置做了重大重组，Google 的 Sergey 亲自管 coding，xAI 公开收购 Cursor。</p>
+</section>
+
+<section>
+  <h2>四、负向滚雪球如何变成正向飞轮</h2>
+  <p>这是 Dario 提出的经典概念，Freda 把它翻译成了投资人的语言：如果你去年训练模型的成本是 1，今年模型能带来约 3-4 的收入，毛利 50% 就是不到 2——但今年训练成本至少是 3，加上销售和人力，利润就是负的。只要训练成本每年几倍增长，生意就会像"负向滚雪球"一样越滚越负。</p>
+  <p>Dario 原来的判断是：要跳出这个循环，只能靠训练 scaling 变慢。但最近几个月证明了 <strong>另一条路</strong>：如果收入增长斜率比训练成本更陡峭——不是 3 倍，而是远高于 3 倍——公司就会突然盈利。Anthropic 年初需求突然爆发，算力被迫向推理倾斜，"突然一下就暴利了"。</p>
+
+  <div class="gloss">
+    关键公式：如果训练成本占收入的比例 < 推理毛利，公司就能赚钱。但训练和推理的算力占比最终由需求决定——而 Anthropic 年初需求突然爆发，公司被迫把更多 compute 放在推理上，利润瞬间转正。
+  </div>
+</section>
+
+<section>
+  <h2>五、一个 Gigawatt 到底值多少钱？</h2>
+  <p>Freda 认为，市场——包括她自己——都<strong>系统性地低估了模型公司的收入天花板</strong>。</p>
+  <div class="stat-grid">
+    <div class="stat card-blue"><div class="num" style="color:#1971c2;">小几个 GW</div><div class="label">OpenAI & Anthropic 现在</div></div>
+    <div class="stat card-green"><div class="num" style="color:#16a34a;">5 GW</div><div class="label">2025 年底预期</div></div>
+    <div class="stat card-purple"><div class="num" style="color:#7c3aed;">10 GW</div><div class="label">2026 年可能达到</div></div>
+    <div class="stat card-orange"><div class="num" style="color:#ea580c;">100-500亿+</div><div class="label">每个 GW 收入（无人看到上限）</div></div>
+  </div>
+  <p>之前大家觉得每个 Gigawatt 对应约 100 亿美元收入就不错了。但这几个月证明：推理和训练成本端每个 GW 对应 100 亿没问题，但收入端可以飙得非常高——100 亿？500 亿？现在看来都有可能。</p>
+
+  <div class="quote-block card-yellow">
+    "一个 Gigawatt 到底能产生多少收入到今天也没有人能看到上限——你说一百亿，你说五百亿，其实现在看来都是挺有可能的。"
+    <span class="attr">— Freda</span>
+  </div>
+
+  <p>这带来的推论是：Anthropic 和 OpenAI 今年底加起来看 2000 亿美元的收入体量，也不是特别奇怪。投资人正在"锻炼自己脑子去习惯更大的数字和 upside surprises"。</p>
+</section>
+
+<section>
+  <h2>六、Coding 的 TAM：当时我们错得有多离谱</h2>
+  <p>Freda 诚实复盘了投资人当初对 coding 市场的严重低估。一两年前，大家用价格乘以量：美国有四五百万 developer——一个很小的群体。价格方面，有人说 20 刀/月，有人说 200 刀/月——因为整个软件订阅也就一两万块。算出来大约是一个 100 亿美元的市场。</p>
+  <p>现实是：<strong>今天 Anthropic 一家的收入就远超 100 亿。</strong> 真正的 TAM 不是"有多少 developer"，而是"任何可以被计算机操作的事情"。Dario 的投资 PPT 第一页写的就是全球白领的 TAM——三四十万亿美元。随着世界越来越数字化，这个范围在持续扩张。</p>
+
+  <div class="quote-block card-purple">
+    "投资做判断是经常错的。作为投资人我能做的事情，就是在发现 coding 收入很快飙到十亿美金的时候，就应该非常快速地意识到自己本来的投资框架和 TAM 彻底想错了，然后及时改。"
+    <span class="attr">— Freda，关于投资中的纠错</span>
+  </div>
+</section>
+
+<section>
+  <h2>七、为什么 3000 人的公司不需要销售团队</h2>
+  <p>Freda 讲了一个让她震撼的对比。传统软件公司——ServiceNow、Adobe 三四万人，Salesforce 七八万人——销售和营销占收入 40%-50%。每个员工大约对应 50 万美元收入。</p>
+  <p><strong>Anthropic 也是一家 To B 公司</strong>——80% 是企业用户。但员工只有 3000 人，没有一个正经的销售团队。每个员工对应 <strong>上千万美元</strong>收入——差了整整一个数量级。Cowork 这么成功的产品，就两个人做出来。</p>
+  <p>这让 Freda 开始反思："是不是说用户真的对智能的需求是无限的，是不是我们之前有点过于去强调销售的重要性？" 以及——AI 来了之后，为什么像 Meta 这样的高效公司还需要八万人？</p>
+</section>
+
+<section>
+  <h2>八、把电机塞进蒸汽机：AI 的组织困境</h2>
+  <p>Freda 认为 AI 现在的阶段，就像当年电力革命初期——电灯泡发明了，但社会生产力用了 40 年才真正提升。中间甚至有 20-30 年生产力反而降了一点。原因是：<strong>工厂只是把蒸汽机拆掉、把电机塞进同一个位置</strong>，工厂还是垂直设计的。直到流水线出现、围绕电力重新设计工厂，生产力才上去。</p>
+
+  <div class="quote-block card-orange">
+    "我觉得现在可能就是像刚才说的，把电机塞进蒸汽机的那个位置的这个阶段吧。就是每个人都把 AI 加进了自己工作流。但是其实我觉得也没有人真的去问说这个流程本身，或者说这个公司本身为什么长成现在这个样子。"
+    <span class="attr">— Freda</span>
+  </div>
+
+  <p>计算机革命也有类似的"生产力悖论"：80 年代电脑就已在办公室广泛使用，但宏观生产力没有任何提升，直到 90 年代中后期，沃尔玛、亚马逊围绕计算机和网络重新设计了业务（ERP、供应链、数据库），生产力才一下子蹿上去。</p>
+</section>
+
+<section>
+  <h2>九、公司为什么是层级制的？从接力赛到篮球赛</h2>
+  <p>Freda 从第一性原理追问：公司为什么长成今天这样？<strong>层级不只是权力结构——它更深层的功能是信息传递机制。</strong> CEO 的信号 → 各层 managers 综合、提炼 → 一层层传递下去。基层信息 → managers 翻译、拆解 → 层层上报。所有会议、同步、对齐——本质上都是"信息搬运机制"，因为人和人之间传输成本高。</p>
+  <p>在科技公司尤其明显。一个产品从 PM 写 PRD → designer 解读 → developer 开发（数周/数月）→ QA（数周）→ go-to-market → 端到端可能 6 个月过去了。"里面很多其实都是翻译成本——一个人把另外一个人到底想做什么，翻译成大家能理解的东西。"</p>
+
+  <div class="quote-block card-green">
+    "之前可能是一棒一棒的这种接力赛吧，然后之后可能更像是一个小团体的这种篮球赛——就三到五个人一个小分队。然后你的这个必要的技能都在你的这个团队里面了。而且这个团队应该是能自己直接就是做决策，然后只有非常大的这个问题才会向上汇报。"
+    <span class="attr">— Freda，关于 AI 时代的组织形态</span>
+  </div>
+
+  <p>AI 进来之后，每个环节都会变成新的 bottleneck——像打地鼠一样。改完 developer 发现 QA 不行了，改完 QA 发现 PM 又成了瓶颈。"我觉得实际上是整个流程都需要重新设计。"</p>
+</section>
+
+<section>
+  <h2>十、软件公司：谁先死？</h2>
+  <p>Freda 的判断："其实都有一点点是时间问题了。"但死亡顺序有规律可循。<strong>最先死的</strong>是 UI 价值型——核心价值就是精美 UI 的 point solutions，如电子签、项目管理、BI 工具，受冲击最大最彻底。<strong>其次</strong>是数据结构规整型——像 Monday 这种项目管理工具，每行是固定任务对象，每列固定，最容易被 AI 取代。<strong>最难替代的</strong>反而是 Excel——每个格子语义完全不一样（名字、数字、公式混在一起），反而很难被 AI 直接替代。</p>
+  <p>但让 Freda 意外的是，连她自己也发现 data warehouse 不一定安全。过去需要写精准 SQL 调取数据，现在用模型 + Cloud Skills + 直接 call Bloomberg API——"几秒钟的 Token 消耗就能完成分析，setup 成本几乎是零。"</p>
+  <p>AI 时代软件的真正新机会在哪？Freda 认为：去处理以前企业决策过程中 <strong>"没有被记下来的部分"</strong>——为什么给这个客户打 25% 的折扣而不是 30%？谁说服了谁？CFO 有什么顾虑？这些 unstructured data 以前无法记录，AI 可以直接处理原始信息。</p>
+</section>
+
+<section>
+  <h2>十一、Agent 需要全新的基础设施</h2>
+  <p>Freda 在实践中发现，Agent 和人的需求完全不同。现有的基础设施是为人类设计的。</p>
+  <p><strong>Slack vs Discord：</strong>Slack 基于 HTTP（请求-响应），对人够用，对 Agent 非常难用。Discord 基于 WebSocket（持久连接、实时在线），Agent 用得"非常顺手"。"如果说哪个模型公司把 Discord 收购了，也不奇怪。"</p>
+  <p><strong>Email：</strong>Gmail API 对发送频率有限制——对人够用，对 Agent 完全不够，容易被 detect 和 block。于是出现了 AgentMail。</p>
+  <p><strong>Phone、Identity、Payment：</strong>Agent 也需要手机号、身份认证、支付能力——这些基础设施都在被重新做一遍，AgentPhone 等创业公司涌现。Freda 认为，之后所有基础设施——browser、identity、payment、compliance——都会被重新做一遍。</p>
+</section>
+
+<section>
+  <h2>十二、New Labs：硅谷最火的投资主题</h2>
+  <p>"硅谷这几个月肯定就是 New Labs——真的是能有 100 家 New Labs。"从 AI Lab 出来的研究员自己开的新 Lab。原因很简单：OpenAI 和 Anthropic 涨到了接近一万亿美元的估值，投资人会想"拿着它还能赚多少"——而任何一家 New Lab 能博到几倍收益，就非常值得投。</p>
+  <p>从 VC 的角度，这是一个简单的数学问题。每家 New Lab 融资金额都比较大，VC 不能全投，也不能只投一家（选不出来）。典型策略是投 4-5 家，每家 5000 万，总投资约 2 亿——只要有一家有几倍收益就够了。大基金玩得起，小基金不一定。</p>
+  <p>另外两个同样火的方向：任何跟推理或能让模型降价的创业公司；给 Agent 做基础设施的创业公司。</p>
+</section>
+
+<section>
+  <h2>十三、Mag 7 的现金流悬崖</h2>
+  <p>Freda 最担心的事：到 2027 年，几家大云厂商的自由现金流将全部转负——整个行业超过一万亿美元的资本开支，而且只是表内数字。每家都签了长协，capex 预测只会上修不会下修。</p>
+  <p>云厂商也不是没有回报——Google 今年约 2000 亿 capex，云收入约 1000 亿，约两年回本。Amazon 也类似。但云的生意本身在变差：竞争变多（xAI 等 new clouds 涌现），价值链被分走（云之前卖上层高 margin 软件，现在那块价值被模型公司拿走）。几家云厂商加起来已有 2 万亿美元收入储备，超过一大半是 OpenAI 和 Anthropic 的长期算力订单。</p>
+  <p>芯片格局也在变化：Google TPU 从不对外卖到开始把硬件直接卖给客户——"这可能是它过去十年战略里面最重要的变化"。Amazon Trainium 财报报出来 200 多个 billion 的收入——已经是一个独立芯片公司的规模。</p>
+</section>
+
+<section>
+  <h2>十四、深夜装不上 OpenClaw 的痛苦</h2>
+  <p>从几十亿的数字，切换到一个人的深夜。Freda 说她做科技投资，"你肯定每出一个新的东西，都应该自己上手去用一下，才能对投资做判断。"但事实就是东西太多太快。</p>
+
+  <div class="quote-block card-red">
+    "几个月之前，有一天我深夜因为在家装不上 OpenClaw，真的是痛苦。说出来非常的搞笑，但当时就是你一个东西装不上，你就会想说我连这个都装不上，我什么都跟不上，是不是要被时代淘汰了。"
+    <span class="attr">— Freda，关于真实的焦虑</span>
+  </div>
+
+  <p>每天打开 Twitter 都是"you have to look at this"、"this is changing my life"——"你就有一种就是又有新东西了，然后我又落后了，我又没跟上这种感觉。" 焦虑的本质，是对未来不确定性的恐惧。而媒体和个人也在无意中放大这种焦虑——"你这周烧了多少 Token？""你有几个 OpenClaw？"——新名词叠加上裁员的恐惧，确实是一个很糟的状态。</p>
+  <p>但 Freda 也说，不希望把这个说得太重——"确实每天感受到的也不只是焦虑，还有一种莫名的激动。就突然好像什么事情都可以做了。因为变化的过程中你机会越多，投资也是最有希望的时候。"</p>
+</section>
+
+<section>
+  <h2>十五、信息交换正在被掏空——人与人之间还剩下什么？</h2>
+  <p>Freda 讲了一个让她自己都感到震撼的变化：以前她非常喜欢约人聊，30 分钟之内从领域顶尖的人那里拿到非常高浓度的知识，"那种感觉是非常爽的"。但现在——</p>
+
+  <div class="quote-block card-purple">
+    "很多跟工作有关的对话，真的是不管对方是谁，不管是从业者啊投资人啊，就是可能 95% 的信息性的内容我都可以直接问 AI 得到答案，而且这个答案可能是我更想要的。"
+    <span class="attr">— Freda</span>
+  </div>
+
+  <p>不是优越感，是真切的感受：<strong>"以信息交换为目的的对话，这个意义是在快速地被掏空的。"</strong> 这让 Freda 重新思考"见面"的意义。她最近在 Palo Alto 跟一个朋友随便坐下来聊——没有准备聊什么大事，聊着聊着话题跑到了做事情的勇气、人生的遗憾、什么让她觉得有 spark。</p>
+
+  <div class="quote-block card-blue">
+    "我觉得那个可能是我近一长段时间里面就是最有内容的一次对话。就它没有给我任何信息上的增量，但就是比较有人味儿吧。"
+    <span class="attr">— Freda</span>
+  </div>
+
+  <p>她已经在心里划了一条清晰的线：<strong>信息、知识、分析——交给 AI。</strong> <strong>观察别人、聊聊心路历程、聊一些真诚的甚至之前不会聊的东西——留给人。</strong> "不然的话也确实是浪费两个人的时间，那可能两个人都去跟 AI 聊一聊会效果更好。"</p>
+
+  <p>小君做了点睛之笔：这和工作室的名字"语言及世界"遥相呼应。语言在历史上一直被用来传递信息——这部分工作 AI 会做掉。但语言还会被用来真正建立人与人之间的联系——<strong>这个是会越来越宝贵的。</strong></p>
+</section>
+
+<section>
+  <h2>十六、历史长河中的技术变革</h2>
+  <p>Freda 让 AI 回顾了几百年的技术变革史——从英国动力织布机摧毁手工织布，到美国农业人口从 40% 降到 1%，到电话接线员大几十万人全部自动化，到铁锈带和中国加入 WTO。</p>
+
+  <div class="quote-block card-yellow">
+    "每一代人或者说每一个个体吧，都会觉得自己非常的 special，觉得自己非常的不一样，但是实际上放到一个历史的长河，也就是很小的一个波澜。"
+    <span class="attr">— Freda</span>
+  </div>
+
+  <p>这次到底一样还是不一样？Freda 认为关键看速度和广度。历史上的转型往往花了几十年甚至上百年，AI 的扩散速度会快很多。广度上，这次白领受影响——但之前农业的规模其实差不多。真正下判断非常难。</p>
+  <p>她援引 Druckenmiller 的态度：如果你抱定"AI 肯定导致裁员和通缩"的想法，你是 arrogant 而且不是 open-minded 的。<strong>"strong opinions loosely held"——未来本来就是不能完全被掌控的。</strong> 在投资上能做的是：知道市场主流是什么，同时也看到别人还没看到的路径，提前做好心理准备。当剧情不管按哪条路展开，在心理和组合上都能快速调整。</p>
+</section>
+
+<section>
+  <h2>对创业者的话</h2>
+  <p>Freda 最后说了一段让她前面所有的宏大分析都"不作数"的话——也许这才是这期节目最诚实的部分：</p>
+
+  <div class="quote-block card-green">
+    "如果在创业的话，我觉得不要听我上面任何分析。因为前面分析都是分析大公司……你这些 VC 尤其是早期的项目，很难有那种让你觉得说有护城河、然后有什么 moat——你如果去想的话其实是没有的。有什么东西是模型公司或者大厂真的想做自己做不出来的，我觉得也是没有的。所以就不能去想一个终局的概念，就是有一点要脑子一热，然后好好准备，然后好好努力想做就做吧。"
+    <span class="attr">— Freda，给创业者的建议</span>
+  </div>
+
+  <p>当下的时代窗口其实很好：大厂不再是绝对安全；融资容易；coding 让做事变快；新需求多，格局未定。"大家都叫这个是什么第四次工业革命一个大时代——所以去做点新的东西本身也不丢人。"</p>
+</section>
+
+<hr class="section-divider">
+
+<section>
+  <h2>核心金句</h2>
+  <p style="font-size:14px;color:#888;margin-bottom:16px;">这期对谈里最值得记住的几句——每条都能在 transcript 里找到出处：</p>
+
+  <div class="quote-block card-blue">
+    "dollar per token……把它想象成为就是工业时代的大家看这个 dollar per kilowatt hour，就是一个千瓦时的一个概念，比较的是能耗产出比。"
+    <span class="attr">— 关于 Token 的本质</span>
+  </div>
+
+  <div class="quote-block card-green">
+    "同一个任务，不同的模型，或者说不同的应用，消耗的 token 可能差几十倍甚至上百倍。"
+    <span class="attr">— 关于 Token per Task 的核心洞见</span>
+  </div>
+
+  <div class="quote-block card-purple">
+    "你更好的 AI 才能去训练出下一代更好的 AI……这个循环一旦跑起来，就是 recursive self-improvement 这个味道。"
+    <span class="attr">— 关于 Anthropic 的壁垒</span>
+  </div>
+
+  <div class="quote-block card-orange">
+    "我觉得现在可能就是像刚才说的，把电机塞进蒸汽机的那个位置的这个阶段吧。"
+    <span class="attr">— 关于 AI 时代的组织困境</span>
+  </div>
+
+  <div class="quote-block card-yellow">
+    "但我觉得其实这个层级它更深层的功能应该是一个信息的一个传递。"
+    <span class="attr">— 关于公司层级的本质</span>
+  </div>
+
+  <div class="quote-block card-red">
+    "以信息交换为目的的对话，这个意义是在快速地被掏空的。"
+    <span class="attr">— 关于人与 AI 的分工</span>
+  </div>
+
+  <div class="quote-block card-blue">
+    "人和人之间，啊，非常的鸡汤，我觉得剩下的就是情感的连接吧。"
+    <span class="attr">— 关于什么不会被 AI 替代</span>
+  </div>
+
+  <div class="quote-block card-green">
+    "每一代人或者说每一个个体吧，都会觉得自己非常的 special……但是实际上放到一个历史的长河，也就是很小的一个波澜。"
+    <span class="attr">— 关于技术变革的历史视角</span>
+  </div>
+
+  <div class="quote-block card-purple">
+    "Strong opinions loosely held……现在因为处在这个时间点，你其实未来本来就是不能完全被掌控的。"
+    <span class="attr">— 关于如何在不确定中自处</span>
+  </div>
+
+  <div class="quote-block card-orange">
+    "一个 Gigawatt 到底能产生多少收入到今天也没有人能看到上限。"
+    <span class="attr">— 关于系统性低估的算力变现</span>
+  </div>
+</section>
+
+<footer>
+  <p>本期节目来自 <strong>小君的商业访谈录</strong> · 语言及世界工作室</p>
+  <p style="margin-top:8px;">收听完整节目：<a href="https://www.xiaoyuzhoufm.com/episode/6a09d58b1b7bd502955258ab?utm_source=rss" target="_blank" rel="noopener">小宇宙 FM</a></p>
+  <p style="margin-top:8px;">本文由 PodDeck 自动生成 · <a href="../../">← 返回 PodDeck</a></p>
+</footer>
+
+</body>
+</html>

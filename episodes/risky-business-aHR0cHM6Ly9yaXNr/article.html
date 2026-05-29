@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Risky Business #839 — TeamPCP stole GitHub's internal repos</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.06);
+    min-height: 100vh;
+  }
+  h1 { font-size: 1.8em; margin-bottom: 0.2em; line-height: 1.3; }
+  h2 { font-size: 1.35em; margin: 2em 0 0.8em; padding-bottom: 0.3em; border-bottom: 2px solid #eee; }
+  h3 { font-size: 1.1em; margin: 1.5em 0 0.5em; color: #444; }
+  p { margin: 0.9em 0; }
+  .meta { color: #888; font-size: 0.9em; margin-bottom: 2em; }
+  .meta span { margin-right: 1em; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 1.5em 0 2em; }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 0.88em;
+    line-height: 1.55;
+  }
+  .card strong { display: block; margin-bottom: 3px; font-size: 0.95em; }
+  .card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .card-blue { background: #f0f6ff; border-left: 4px solid #1971c2; }
+  .card-yellow { background: #fffae6; border-left: 4px solid #f08c00; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .card-green { background: #f4fcf0; border-left: 4px solid #2f9e44; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #862e9c; }
+  blockquote {
+    margin: 1.2em 0;
+    padding: 12px 18px;
+    border-left: 4px solid #1971c2;
+    background: #f8f9fa;
+    font-style: italic;
+    color: #444;
+    border-radius: 0 6px 6px 0;
+  }
+  blockquote .attr { display: block; margin-top: 0.5em; font-size: 0.82em; color: #888; font-style: normal; }
+  .quote-block { margin: 1.5em 0; }
+  .quote-block .q {
+    padding: 14px 18px;
+    margin: 10px 0;
+    border-left: 4px solid;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    background: #f8f9fa;
+  }
+  .quote-block .q .ctx { display: block; margin-top: 6px; font-size: 0.8em; color: #888; font-style: normal; }
+  .q-red { border-color: #e03131; background: #fff5f5; }
+  .q-blue { border-color: #1971c2; background: #f0f6ff; }
+  .q-yellow { border-color: #f08c00; background: #fffae6; }
+  .q-green { border-color: #2f9e44; background: #f4fcf0; }
+  .q-purple { border-color: #862e9c; background: #faf5ff; }
+  .q-orange { border-color: #e8590c; background: #fff4e6; }
+  footer {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid #eee;
+    font-size: 0.85em;
+    color: #999;
+  }
+  footer a { color: #1971c2; }
+  .gloss { color: #888; font-size: 0.9em; }
+  .gloss::before { content: "作者概括："; font-weight: 600; }
+  .story-box {
+    padding: 18px 20px;
+    margin: 1.2em 0;
+    border-radius: 8px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+  }
+  .story-box .highlight {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85em;
+    margin-right: 8px;
+  }
+  .hl-red { background: #ffe3e3; color: #c92a2a; }
+  .hl-orange { background: #ffe8cc; color: #d9480f; }
+  .hl-blue { background: #d0ebff; color: #1864ab; }
+  a { color: #1971c2; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<article>
+
+<h1>Risky Business #839</h1>
+<div style="font-size:1.1em;color:#555;margin-bottom:0.3em;">TeamPCP stole GitHub's internal repos</div>
+<div class="meta">
+  <span>🎙️ Patrick Gray, Adam Boileau, James Wilson</span>
+  <span>📅 May 2026</span>
+  <span>⏱️ ~60 min</span>
+</div>
+
+<div class="cards">
+  <div class="card card-red">
+    <strong>TeamPCP × GitHub</strong>
+    VS Code 恶意扩展入侵 GitHub 内部，3,800 个仓库被盗——微软"端到端"拥有这次失败的每一层。
+  </div>
+  <div class="card card-blue">
+    <strong>AI 双刃剑</strong>
+    Anthropic Mythos 发现 10,000+ 漏洞，但 LLM 自己也在以史无前例的速度制造新 bug。
+  </div>
+  <div class="card card-yellow">
+    <strong>MCP 安全危机</strong>
+    Akamai 扫描 300 个 MCP 服务器，发现 SQL 注入、认证绕过——AI 基础设施在重蹈 2000 年代的覆辙。
+  </div>
+  <div class="card card-orange">
+    <strong>DigiCert 入侵</strong>
+    恶意屏保 → CA 门户 → EV 证书激活 → Tencent 签名恶意软件，零杀软检出。
+  </div>
+  <div class="card card-green">
+    <strong>开源漏洞洪流</strong>
+    CISA 代理局长对开源项目被 AI 漏洞报告淹没表示担忧，但解决方案尚未出现。
+  </div>
+  <div class="card card-purple">
+    <strong>微软自摆乌龙</strong>
+    Defender 意外将 DigiCert 根证书从 4% 的 Windows 设备中移除，导致大规模浏览中断。
+  </div>
+</div>
+
+<h2>1. TeamPCP 入侵 GitHub：端到端的失败</h2>
+
+<p>本期最大的新闻来自 GitHub。这家微软旗下的代码托管平台确认发生了安全事件——TeamPCP，这个在 2026 年持续肆虐供应链的攻击组织，通过一个被植入后门的 VS Code 扩展成功入侵了 GitHub 的内部网络。</p>
+
+<p>事件的讽刺之处在于每一层都归微软所有：<strong>Microsoft Marketplace</strong>（扩展市场）、<strong>VS Code</strong>（代码编辑器）、<strong>GitHub</strong>（代码托管平台）。正如 James Wilson 所说：<em>"This is brilliant vertical integration of the failure stack, if nothing else."</em></p>
+
+<blockquote>
+  "It's just so end to end and yet still this degree of wreckage can happen. They own the failure end to end."
+  <span class="attr">— James Wilson</span>
+</blockquote>
+
+<p>GitHub 确认有 3,800 个内部仓库被盗。当被问及这个数字时，GitHub 发言人的回应解锁了企业公关用语的新高度——这个数字是 <strong>"directionally consistent"</strong> 的。这个措辞在节目中引发了长时间的讨论和嘲笑。</p>
+
+<div class="story-box">
+  <span class="highlight hl-red">威胁</span>
+  从 GitHub 内部网络到客户托管的基础设施和客户数据，路径并不长。正如 Adam Boileau 指出的，TeamPCP 已经证明他们"有能力并且愿意"利用任何获得的访问权限继续深入。
+</div>
+
+<h2>2. 3,800 个仓库的连锁反应</h2>
+
+<p>GitHub 强调"所有被入侵的仓库都是内部仓库，客户数据未受影响"。但问题不止于此。James 的比喻一针见血：</p>
+
+<blockquote>
+  "Give a man a fish, he eats for a day. Give a man 3,800 repos, he hacks for who knows how long."
+  <span class="attr">— James Wilson</span>
+</blockquote>
+
+<p>TeamPCP 以从每次入侵中学习并应用到下一次行动而闻名。3,800 个内部仓库中包含的信息——内部工具、基础设施配置、安全实践——将为他们的下一次行动提供丰富的情报。</p>
+
+<p>这个故事还延伸到 Grafana 和 TanStack 的供应链攻击。Grafana 事后发布的更多细节揭示了一些令人不安的问题：为什么 CI 工作流拥有访问所有仓库的凭证？为什么 TanStack 依赖没有被固定到特定版本？</p>
+
+<p>Patrick 总结道：<em>"These shouldn't be terminal sins, but this is the contemporary sort of threat environment in 2026."</em> AI 驱动的攻击工具意味着任何弱点都会被系统性地利用——这在以前是不可想象的。</p>
+
+<h2>3. AI 漏洞发现：Mythos 的真实数字</h2>
+
+<p>Anthropic 发布了一份关于 Mythos（其自动化漏洞发现系统）的后续报告。关键数字令人瞩目：<strong>超过 10,000 个软件漏洞被发现</strong>，其中约 2,800 个被标记为严重级别。</p>
+
+<p>James 承认这些数字比他预期的要大。在 Mythos 尚未公开可用的情况下，人们一直在质疑这到底有多少是营销炒作。这些数字给出了一个明确的答案：这是真实的。</p>
+
+<p>但 Adam Boileau 提出了一个更深层的担忧——<strong>代码编写的速度远远超过了漏洞修复的速度</strong>：</p>
+
+<blockquote>
+  "The velocity of number of lines of code being written on this planet has wildly increased in the last two years. And the velocity of bugs that we fix has also wildly increased. But the first number is going up a lot faster than the second."
+  <span class="attr">— Adam Boileau</span>
+</blockquote>
+
+<p>Patrick 引用 The Grugq 在之前节目中的评论来为讨论画上句号：<em>"Infinity minus 270 is still infinity. You cannot patch yourself to secure software."</em> 20 年来这个观点没有改变。</p>
+
+<h2>4. Apple 内存完整性：最令人失望的漏洞</h2>
+
+<p>当 Mythos 被发现绕过了 Apple 的内存完整性保护时，最初的震惊是巨大的。人们预期这会是一个复杂的漏洞利用——可能是 PAC 绕过或内存标记攻击。</p>
+
+<p>现实令人失望。补丁发布后，在研究人员能够发表成果之前，有人逆向分析了补丁，发现只是一行汇编代码的修改。漏洞本身？一个复制内存例程中的<strong>整数溢出</strong>。</p>
+
+<blockquote>
+  "I think this was actually my biggest disappointment of the week. And the bar is actually pretty high for that this week."
+  <span class="attr">— James Wilson</span>
+</blockquote>
+
+<p>这引出了 Patrick 的团队的亲身经历。他们用 Claude 和 Codex 开发的内部工具出现了一个看似无害的 bug：从列表中删除文章后再拖拽排序，会导致不可预测的效果。这不是安全漏洞——但安全漏洞就是这么来的。AI 生成的代码中的逻辑缺陷，恰恰是 AI 不擅长发现的那类问题。</p>
+
+<h2>5. 开源漏洞洪流</h2>
+
+<p>CISA 代理局长 Nick Anderson 公开表达了对开源项目处理 AI 漏洞发现洪流能力的担忧。这期节目中讨论的一个关键动态是：有资金支持的活跃项目（如 Authentik）尚能应对，但大多数开源项目是"已完成"的——偶尔修复一个 bug 是可以的，但面对 AI 工具工业化规模的漏洞发现则完全没有准备。</p>
+
+<p>James 的点评虽然是在喝咖啡之前写的，但切中要害：<em>"Every paragraph I was like: yes, but WHAT? Give me something tangible."</em> Anderson 指出"美国没有在应该投资的地方进行投资"，但除了问题陈述之外，几乎没有提出任何具体解决方案。</p>
+
+<h2>6. CISA KEV 列表：开放的代价</h2>
+
+<p>CISA 上线了一个网页表单，允许安全从业者报告在野利用的漏洞，以便加入 KEV（已知被利用漏洞）列表。Patrick 认为这是个好主意——美国政府的可见度有限，如果某家银行正在被 KEV 列表中不存在的漏洞攻击，应该有途径上报。</p>
+
+<p>但分诊是一个巨大的挑战。Adam 指出，KEV 最初的价值在于它是一个"短小精悍"的列表。当列表膨胀到 20,000 条时，它就不再是有效的优先级工具。</p>
+
+<blockquote>
+  "If the triage process is good, this will be a good thing. And my goodness that is a hell of a load bearing IF right now."
+  <span class="attr">— James Wilson</span>
+</blockquote>
+
+<h2>7. MCP 与 AI 基础设施的安全债</h2>
+
+<p>Akamai 的研究人员扫描了 300 个 MCP 官方服务器，聚焦认证、授权、工具和后端集成。他们发现的漏洞类别令人震惊：<strong>SQL 注入、认证绕过、过期依赖</strong>——这些都是本不该在 2026 年出现的安全问题。</p>
+
+<p>James 提出了一个根本性的批评。MCP 协议本身是有价值的——它让 LLM 知道工具的输入/输出 schema。但是 "<strong>MCP 服务器</strong>" 这个概念，即创建新的 API 表面来封装已有的 API，是一个错误的转向。</p>
+
+<blockquote>
+  "This is moving too fast and not enough checks in it. It's creating these mistakes like SQL injection. This is the class of things that we should have not been creating for a long time now."
+  <span class="attr">— James Wilson</span>
+</blockquote>
+
+<p>Starlette（被 FastAPI 等服务广泛使用的 Python 底层库）的漏洞也同样简单：改变 Host header 的一个字符就能使所有认证处理失效。这些组件被 AI Agent 大量使用来构建后端服务，而基础层面的安全性却被忽视了。</p>
+
+<h2>8. DigiCert 入侵事件</h2>
+
+<p>Airlock Digital 的 CTO Daniel Schell 详细复盘了 DigiCert 的安全事件。攻击路径是这样的：客服代表通过 Web Chat 被说服运行一个恶意屏保文件 → 攻击者获得 DigiCert 门户的客服代表视图 → 找到已完成验证但尚未激活的 EV 证书订单 → 获取 IV（初始化向量）码 → 使用 DigiCert 的软件激活硬件令牌。</p>
+
+<p>关键的技术细节：DigiCert 从不持有硬件令牌的私钥，但他们控制着播种和启动令牌的过程。这就是被劫持的环节。</p>
+
+<blockquote>
+  "The biggest surprise is that DigiCert could be vulnerable to something like this. they are such an important part of the internet sort of trust."
+  <span class="attr">— Daniel Schell</span>
+</blockquote>
+
+<p>最令人担忧的泄露证书属于 <strong>Tencent Technology（腾讯）</strong>。Airlock 在 VirusTotal 上找到了使用这个证书签名的恶意软件样本，文件名伪装成 mstsc.exe（Windows 终端服务客户端），<strong>零个杀软检出</strong>。</p>
+
+<blockquote>
+  "To me it looks like they used their best cert in the best way."
+  <span class="attr">— Daniel Schell</span>
+</blockquote>
+
+<h2>9. 微软自摆乌龙</h2>
+
+<p>与 DigiCert 事件几乎同期，发生了一件完全独立但同样令人震惊的事：5 月 3 日，约 <strong>4% 的 Windows Defender 用户</strong>收到一个名为 "CertDigEnt" 的木马检测。这个检测不仅没有针对性，反而将 DigiCert 的根证书（Short-lived Intermediate CA 和 Trusted Root G4 CA）从受影响机器的证书存储中完全移除。</p>
+
+<p>结果是：<strong>浏览中断</strong>——用户无法访问使用 DigiCert 证书的网站；<strong>代码签名失效</strong>——所有 DigiCert 签名的软件无法通过信任链验证。幸运的是，微软在环部署中及时发现了错误，问题没有扩散到所有用户。</p>
+
+<p>微软的事后报告含糊其辞："是的，这是个错误，我们将来会增加更多验证。"——没有解释具体发生了什么。</p>
+
+<h2>10. Airlock 的意外韧性</h2>
+
+<p>这个故事有一个意想不到的结局。Airlock 的 allow-listing 产品出于性能原因缓存了成功执行的记录。当 Microsoft Defender 删除 DigiCert 根证书时，Airlock 客户没有受到影响——之前已验证通过的文件仍在缓存中。</p>
+
+<p>全球范围内只有一两个客户询问是否受到影响。Daniel 将此归功于"工程上的巧合"，但也指出即使没有缓存，Airlock 也提供了多种恢复路径。</p>
+
+<p>节目还介绍了 Airlock V7 中的新功能——<strong>Application Context</strong>（内部代号 Bin Chicken）。这是一项启发式应用识别技术，可以自动扫描企业文件存储，识别正在运行的应用及其依赖关系。"Bin Chicken"的命名来源于澳洲白鹮——这种鸟因在悉尼翻垃圾桶而闻名。</p>
+
+<h2>11. 更多故事</h2>
+
+<p><strong>Chromium Fetch API Bug</strong>——Google 意外将一个有 42 个月历史的私有 Chromium bug 设为公开。头条新闻暗示 Google 放任漏洞不管，但 Adam 的分析表明这根本不是安全漏洞，而是浏览器 Service Worker 按预期工作的行为。Chromium 团队指出这个 API 每天全球仅使用约 17 次。</p>
+
+<p><strong>npm 社交工程 + Karoona Exploit Kit</strong>——攻击者精心策划社交工程获取一个 npm 包的控制权，然后植入 Karoona Exploit Kit——一个只影响 iOS 17.3 以下版本的古老漏洞利用工具包。Adam 将其比作"把法拉利引擎塞进现代 Excel"。</p>
+
+<p><strong>Discord E2E 加密 & Texas AG 起诉 Meta</strong>——Discord 宣布跨平台端到端加密。与此同时，Texas 总检察长起诉 Meta，声称 WhatsApp 的 E2E 是虚假宣传——唯一证据是一篇 Bloomberg 文章。Adam 指出，你总是必须信任通信平台的提供者——如果他们想看你的消息，他们可以做到，因为他们控制着你端点上的软件。</p>
+
+<p><strong>Trump Mobile 数据泄露</strong>——一位澳大利亚 IT 人士发现直接对象引用漏洞：订单号是连续的，任何登录用户都可以查看任意订单详情。</p>
+
+<p><strong>Kimswot 僵尸网络被捕</strong>——Brian Krebs 的人肉搜索导致在加拿大逮捕。OpSec 失败的原因：犯罪账户和包含真名的邮箱使用了相同密码。</p>
+
+<h2>核心金句</h2>
+
+<div class="quote-block">
+
+<div class="q q-red">
+  "It's just so end to end and yet still this degree of wreckage can happen. They own the failure end to end. It's brilliant vertical integration of the failure stack."
+  <span class="ctx">— James Wilson，论微软/VS Code/GitHub 供应链攻击</span>
+</div>
+
+<div class="q q-blue">
+  "Give a man a fish, he eats for a day. Give a man 3,800 repos, he hacks for who knows how long."
+  <span class="ctx">— James Wilson，论 GitHub 3,800 个仓库被盗</span>
+</div>
+
+<div class="q q-yellow">
+  "The velocity of number of lines of code being written on this planet has wildly increased in the last two years. And the velocity of bugs that we fix has also wildly increased. But the first number is going up a lot faster than the second."
+  <span class="ctx">— Adam Boileau，论 AI 与代码质量</span>
+</div>
+
+<div class="q q-green">
+  "This is moving too fast and not enough checks in it. It's creating these mistakes like SQL injection. This is the class of things that we should have not been creating for a long time now."
+  <span class="ctx">— James Wilson，论 MCP 服务器的安全问题</span>
+</div>
+
+<div class="q q-purple">
+  "The biggest surprise is that DigiCert could be vulnerable to something like this. they are such an important part of the internet sort of trust."
+  <span class="ctx">— Daniel Schell，论 DigiCert 入侵事件</span>
+</div>
+
+<div class="q q-orange">
+  "If the triage process is good, this will be a good thing. And my goodness that is a hell of a load bearing IF right now."
+  <span class="ctx">— James Wilson，论 CISA KEV 开放众包</span>
+</div>
+
+</div>
+
+<footer>
+  <p>本期节目原文：<a href="https://risky.biz/RB839/">Risky Business #839 — TeamPCP stole GitHub's internal repos</a></p>
+  <p style="margin-top:0.5em;">本文由 PodDeck 自动生成，内容基于 Risky Business 播客转写稿。</p>
+</footer>
+
+</article>
+</body>
+</html>
