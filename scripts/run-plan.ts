@@ -918,6 +918,12 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult
   const claudeBin = resolveClaudeBin()
   const systemRules = readFileSync(RULES_FILE, 'utf-8')
   const taskPrompt = renderTask(entry, sourceId)
+  const combinedPrompt = [
+    '# System Rules',
+    systemRules,
+    '# Task',
+    taskPrompt,
+  ].join('\n\n')
   const logPath = join(ROOT, 'logs', `generate-${entry.id}.log`)
   mkdirSync(join(ROOT, 'logs'), { recursive: true })
   const fs = require('node:fs')
@@ -931,13 +937,12 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult
       '--model', 'opus',
       '--verbose',
       '--output-format', 'stream-json',
-      '--append-system-prompt', systemRules,
       '--add-dir', EPISODES_DIR,
       '--add-dir', TRANSCRIPTS_DIR,
       '--allowedTools', 'Read,Write,Edit,Bash,Grep,Glob',
       '--effort', 'max',
       '--permission-mode', 'bypassPermissions',
-      taskPrompt,
+      combinedPrompt,
     ], {
       cwd: ROOT,
       stdio: ['ignore', logFd, logFd],

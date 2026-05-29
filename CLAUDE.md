@@ -6,7 +6,7 @@
 
 - **Slidev** `slidev-theme-academic` + `colorSchema: light` + `slidev-addon-excalidraw`
 - **Landing**: Astro + Tailwind（env-driven base path）
-- **自动化**: `claude -p --model opus --append-system-prompt` 跑无人值守 subprocess
+- **自动化**: `claude -p --model opus` 跑无人值守 subprocess；DeepSeek Anthropic-compatible 下系统规则拼进 user prompt，避免 `system` role 兼容问题
 - **转写**: 默认 MiMo `mimo-v2.5`；可用 `TRANSCRIPT_PROVIDER=dashscope` 回退 DashScope；受限音频走 `ffmpeg` 切片 + data URI
 - **部署**: GitHub Actions → GitHub Pages（定时 / 手动 workflow_dispatch）
 
