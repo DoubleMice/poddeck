@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is All of DeFi Unsafe? — What You Need to Know About Holding Assets Onchain</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #f8f9fa;
+    padding: 0;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #ffffff;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #0f0f23;
+    margin-bottom: 12px;
+  }
+  .meta {
+    font-size: 14px;
+    color: #868e96;
+    line-height: 1.6;
+  }
+  .meta strong { color: #495057; }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f0f23;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #212529;
+    margin: 28px 0 12px;
+  }
+  p { margin-bottom: 16px; }
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .card strong { font-size: 16px; display: block; margin-bottom: 4px; }
+  .card .desc { font-size: 13px; opacity: 0.75; }
+  .card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .card-blue { background: #f1f3f5; border-left: 4px solid #1971c2; }
+  .card-orange { background: #fff9db; border-left: 4px solid #f08c00; }
+  .card-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .card-green { background: #f0fff4; border-left: 4px solid #2f9e44; }
+  .card-yellow { background: #fffce8; border-left: 4px solid #e8590c; }
+  .quote-block {
+    margin: 24px 0;
+    padding: 20px 24px;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .quote-block .attribution {
+    font-style: normal;
+    font-size: 13px;
+    opacity: 0.65;
+    margin-top: 8px;
+  }
+  .ql-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .ql-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .ql-purple { background: #f3f0ff; border-left: 4px solid #862e9c; }
+  .ql-orange { background: #fff4e6; border-left: 4px solid #f08c00; }
+  .ql-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .ql-yellow { background: #fffce8; border-left: 4px solid #e8590c; }
+  .gloss {
+    font-size: 14px;
+    color: #868e96;
+    font-style: italic;
+    margin: 4px 0 16px;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  .highlight-box {
+    padding: 16px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin: 16px 0;
+  }
+  .hb-red { background: #fff5f5; border-left: 3px solid #e03131; }
+  .hb-blue { background: #e7f5ff; border-left: 3px solid #1971c2; }
+  .hb-green { background: #ebfbee; border-left: 3px solid #2f9e44; }
+  hr { border: none; border-top: 1px solid #e9ecef; margin: 32px 0; }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #e9ecef;
+    font-size: 13px;
+    color: #868e96;
+    text-align: center;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    article { padding: 28px 16px 40px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 19px; }
+    .two-col { grid-template-columns: 1fr; }
+    .overview-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Is All of DeFi Unsafe?<br>What You Need to Know About Holding Assets Onchain</h1>
+  <div class="meta">
+    <strong>Isaac Patka</strong> (Certifications Lead, Security Alliance) &amp;
+    <strong>Mike Silagadze</strong> (CEO, EtherFi)<br>
+    Hosted by <strong>Laura Shin</strong> · Unchained · 2026 年 5 月
+  </div>
+</header>
+
+<!-- Why this matters -->
+<h2>为什么这期值得关注</h2>
+
+<div class="overview-grid">
+  <div class="card card-red">
+    <strong>Manuel Araoz 的炸弹推文</strong>
+    <div class="desc">OpenZeppelin 联合创始人声称"All of DeFi is unsafe"，AI coding agents 让攻防不对称无法逆转。</div>
+  </div>
+  <div class="card card-blue">
+    <strong>90% 的攻击不是代码漏洞</strong>
+    <div class="desc">参数配置错误、OpSec 失败和社会工程——全是可预防的低级错误。</div>
+  </div>
+  <div class="card card-orange">
+    <strong>去中心化表演</strong>
+    <div class="desc">EtherFi CEO 直言：许多协议假装去中心化，却因此无法保护用户。</div>
+  </div>
+  <div class="card card-purple">
+    <strong>AI 军备竞赛的真相</strong>
+    <div class="desc">AI 让攻防双方都更强——但防守方有三个结构性优势。</div>
+  </div>
+  <div class="card card-green">
+    <strong>Code is not law</strong>
+    <div class="desc">需要纠错机制，且与去中心化不矛盾——Arbitrum 曾因此追回 $7500 万。</div>
+  </div>
+  <div class="card card-yellow">
+    <strong>用户自救指南</strong>
+    <div class="desc">硬件钱包 + 蓝筹协议 + Security Alliance 认证——三个可操作的动作。</div>
+  </div>
+</div>
+
+<h2>一条推文点燃的加密推特风暴</h2>
+
+<p>2026 年 5 月，OpenZeppelin 的联合创始人 Manuel Araoz 发了一条推文，瞬间点燃了整个加密推特："I now consider all of DeFi unsafe." 他的核心论点是：AI coding agents 在发现漏洞方面已经达到了"超人"级别，而智能合约安全本质上是不对称的——防守方需要修复每一个 bug，攻击方只需要找到一个漏洞就能窃取资金。他甚至建议亲友从 Aave、MakerDAO 和 Compound 等蓝筹协议中撤资。</p>
+
+<p>需要注意的是，Manuel 已于 2019 年离开 OpenZeppelin，该公司的官方账号也迅速声明"近期帖子不代表公司立场"。Manuel 本人后来补充说，他指的不只是代码漏洞，还包括参数配置、机制设计和操作安全（OpSec）——这四种风险共同构成了他所说的"不安全"。</p>
+
+<p>但在 Unchained 主持人 Laura Shin 的追问下，两位嘉宾——Security Alliance 的认证负责人 Isaac Patka 和 EtherFi 的 CEO Mike Silagadze——给出了截然不同的诊断。</p>
+
+<h2>真正的问题不是代码，是 OpSec</h2>
+
+<div class="quote-block ql-orange">
+  "It's embarrassing the level of operational security failures that keep happening... 90% or more of the time the failures are pretty embarrassing, easy to avoid things."
+  <div class="attribution">— Isaac Patka</div>
+</div>
+
+<p>这是整场对话中最令人警醒——也最让人尴尬——的观察。Isaac 指出，AI 并没有找到什么深藏不露的数学漏洞、舍入误差（rounding errors）或者"Uniswap 不变量被 AI 攻破"这种科幻场景。相反，绝大多数攻击都是因为低级操作失误：</p>
+
+<ul style="margin: 0 0 16px 24px; font-size: 16px;">
+  <li style="margin-bottom: 8px;"><strong>Bybit 攻击</strong>：100% 的操作安全失败，与智能合约代码无关。</li>
+  <li style="margin-bottom: 8px;"><strong>Ronin 攻击</strong>：LayerZero 桥的配置问题，又一个 OpSec 失败。</li>
+  <li style="margin-bottom: 8px;"><strong>Drift 攻击</strong>：攻击者花了数月进行面对面的社会工程渗透。</li>
+  <li style="margin-bottom: 8px;"><strong>Kelp / LayerZero 攻击</strong>：桥的配置允许任何人 mint 任意数量的代币。事后，一家负责给桥资产做风险评估的机构竟然说"我们的工作范围不包括评估桥风险"——Isaac 直言："这很白痴。"</li>
+</ul>
+
+<p>社区数据也支持这一判断。Mark Zeller 指出，过去一年 DeFi 问题中不到 10% 来自代码本身，主要还是参数配置错误、抵押品爆仓和 OpsSec。Fidy Research 用一个归谬法表达了立场："如果 AI 工具这么厉害，所有 DeFi 早就被黑了——说明大量没被黑的协议其实相当安全。"</p>
+
+<h2>去中心化表演：一种危险的自欺欺人</h2>
+
+<p>Mike Silagadze 在整个对话中反复使用了一个尖锐的短语——"decentralization theater"（去中心化表演）。他的意思很简单：几乎所有 DeFi 协议（Uniswap 或许是例外）的团队都保留着升级合约的实际能力。但为了维持"去中心化"的公众形象，他们刻意设置障碍让自己不能快速干预——结果既没有真正的去中心化，又失去了在紧急情况下保护用户的能力。</p>
+
+<div class="quote-block ql-blue">
+  "I think a lot of applications in DeFi engage in what I would describe as decentralization theater — meaning the team always retains the ability to upgrade the contracts. That's true of pretty much every protocol with the exception of Uniswap and maybe Morpho to some degree."
+  <div class="attribution">— Mike Silagadze</div>
+</div>
+
+<p>Mike 认为，协议不应该"双手一摊说'这是去中心化'，实际上你有升级合约的能力"。他主张协议应该停止这种表演，诚实地引入黑名单、紧急暂停等机制来保护用户。EtherFi 正是这么做的——并且他认为，这最终可能是 DeFi 安全水平接近 TradFi 的唯一途径。</p>
+
+<h2>三权分立的 Multisig 架构</h2>
+
+<p>Isaac 为负责任的安全设计提出了一个具体方案：协议应该有三个独立的 multisig，各自有明确的授权和不同的时间锁：</p>
+
+<div class="highlight-box hb-red">
+  <strong>🔴 紧急冻结 Multisig</strong><br>
+  低阈值（如 1-of-3 或 2-of-3），可以快速响应。上层 multisig 可以撤销其权限以防止滥用。也可以设计为一次性暂停权——用过就不能再用。
+</div>
+
+<div class="highlight-box hb-blue">
+  <strong>🟠 参数调整 Multisig</strong><br>
+  至少 1 小时的时间锁。如果新增抵押品类型，绝不应允许在同一区块内存款并借贷。"这永远不会被需要。"
+</div>
+
+<div class="highlight-box hb-green">
+  <strong>🔵 合约升级 Multisig</strong><br>
+  至少 2 周的时间锁。给用户足够的时间离开协议。主要原则：如果有问题，先暂停再升级——永远不需要立即升级合约。
+</div>
+
+<p>Isaac 还提到了 Lido 去年引入的 Dual Governance 机制，stETH 持有者对重大升级拥有投票和退出权。"这不是反去中心化，这是负责任的设计。" 他同时警告了一个模糊化的趋势：一些协议试图把资金冻结这种主观决策推给"安全委员会"（security council）——这不是"安全"委员会应该承担的职责。</p>
+
+<h2>AI 军备竞赛：防守方并非处于劣势</h2>
+
+<p>Manuel Araoz 推文最核心的恐惧是：AI 让攻击方获得了前所未有的不对称优势。但 Mike 和 Isaac 从三个角度挑战了这一假设：</p>
+
+<p><strong>第一，时间优势。</strong> 防守方在代码部署之前就可以用 AI 扫描。攻击者只能在部署之后才能开始分析。"每条新代码，防守方先跑。"</p>
+
+<p><strong>第二，工具优势。</strong> 商业级 AI 模型——Claude、Mythos、ChatGPT——远远优于攻击者能接触到的开源或离线模型。Mike 直言："我不认为 DPRK 很快能拿到 Mythos。"</p>
+
+<p><strong>第三，攻击者的行为暴露了真相。</strong> 如果 AI 在代码攻击方面真的如此高效，为什么攻击者越来越多地转向社会工程和钓鱼攻击？这说明纯代码攻击的门槛在上升——他们绕不过代码防御，转而攻击人。</p>
+
+<p>Isaac 补充说，他在安全研究员社区观察到的是，大家都在重度使用 AI 工具来服务更多协议、发现更多类型的漏洞。"我对此比担心攻击方更有信心。" 大协议也在将安全能力内部化——聘请 CISO，不再只依赖外部审计公司。</p>
+
+<h2>人类因素：最薄弱也最难以修复的环节</h2>
+
+<div class="quote-block ql-red">
+  "The right defenses are not just make everybody so paranoid all the time that they can't do their jobs. The right defenses are putting in the guardrails on the protocol and code side and the machine side, assuming that the human factor is fallible."
+  <div class="attribution">— Isaac Patka</div>
+</div>
+
+<p>这是整场对话中最深刻的安全哲学。Isaac 的意思是：社会工程如此强大——尤其是现在有了 AI 加持的语音克隆和深度伪造——所以迟早会有人上当。正确的防御不是对每个员工进行永无休止的钓鱼培训（"haha got you, don't click things"），而是在协议和机器层面预设人性不可靠。</p>
+
+<p>具体的做法是：如果你管理着数亿美元的协议 treasury，你就不应该有能力在一笔交易中把所有资金转走。设置 rate limits、时间延迟、多签阈值——这些机器侧的护栏比任何培训都更可靠。"假设你自己也是社会工程的目标，因此系统必须能容忍你的失误。"</p>
+
+<p>Mike 补充说，攻击者的策略是精准的：他们不会给 CEO 发钓鱼邮件——高管每天收到太多可疑邮件，已经免疫了。他们会瞄准最低级别的员工：support agent、junior developer。"每个公司都需要流程和控制，确保即使有人被攻破，也无法升级权限拿下整个系统。" 而这在其他行业其实是标准操作——只是在 DeFi 这里，很多人把"去中心化"当成了不设防的借口。</p>
+
+<h2>Code Is Not Law</h2>
+
+<p>也许对话中最有力的一句话来自 Mike：</p>
+
+<div class="quote-block ql-purple">
+  "This principle that code is law and you wrote the code wrong so fuck you is just stupid. That's just not how human organizations operate. There needs to be an error correction mechanism and that is not necessarily incompatible with decentralization."
+  <div class="attribution">— Mike Silagadze</div>
+</div>
+
+<p>Mike 进一步区分了区块链和应用程序的不同标准：Bitcoin 或 Ethereum 的去中心化是物理特性——你不可能强制升级网络。但 DeFi 应用程序不同——它们几乎都保留了升级能力。因此，应用程序应该有纠错机制，且这种机制与去中心化并不矛盾。</p>
+
+<p>实际的正面案例是 Arbitrum：安全委员会在一次事件中迅速锁定并追回了约 7500 万美元的被盗资产，几乎零争议。反例是 Circle：在一次攻击中，约 2.8 亿美元被盗资金在数小时内流经其平台，Circle 明明可以冻结却选择不行动——理由是"我们只回应法院命令"。但法院不可能在区块链时间内做出反应。Mike 认为 Tether 的做法更接近正确答案：能够快速行动，如果犯错可以逆转——100 次中 1 次误冻是为"能追回资金"支付的合理代价。</p>
+
+<div class="quote-block ql-green">
+  "Code is not law. Law is ambiguous by design. Ambiguity is built into legal code for cases that are subjective."
+  <div class="attribution">— Mike Silagadze</div>
+</div>
+
+<h2>桥风险与传染：假设一切都会坏</h2>
+
+<p>Mike 分享了他的 EtherFi 安全设计哲学——一个简洁但极端的假设："假设任何你依赖的组件和服务都可能被攻破，然后以此为出发点设计。"</p>
+
+<p>这意味着：跨链转账有 rate limits；预言机价格变化也有 rate limits；LayerZero 桥配置为 3-of-3 而非脆弱的 1-of-1；有 24/7 链下监控；而且——这个假设尤其激进——<strong>假设 L2 可能被完全攻破</strong>（节点被接管，开始产生任意区块），在这种最坏情况下，Layer 1 的资金不受影响。"是的，有时候用户会抱怨转账太慢，但这也保护了你——确保损失最多被限制在几百万元以内。"</p>
+
+<p>Isaac 从评估端提供了视角。Kelp 事件暴露了一个系统性问题：风险评级机构在评估桥资产时，竟然"工作范围不包括评估桥风险"。如果花五分钟看桥的配置就能发现它是 1-of-1 系统，这种资产就根本不应该被允许作为抵押品。优先使用原生资产而非桥接资产——这是最简单的原则。</p>
+
+<p>至于 Morpho 的隔离市场 vs Aave 的统一池之争，Isaac 和 Mike 都认为不必非此即彼：Aave 有能力通过参数设置实现资产隔离——"只是这次参数没设对"。隔离市场天然更安全但也更碎片化，统一池资金效率更高但要求正确的参数设置。关键不是架构，而是设对参数。</p>
+
+<h2>Security Alliance：让 OpSec 成熟度可见</h2>
+
+<p>普通用户能去 Etherscan 检查合约并评估 multisig 配置吗？Isaac 的回答很诚实："在我投钱拿 3-5% 收益之前，我得做一次 OpSec 审计——这根本不可行。"</p>
+
+<p>这正是 Security Alliance 正在推动的认证计划：5-6 家审计公司正在合作制定统一的 OpSec 成熟度标准。协议不仅需要代码审计，还需要通过 multisig 管理、参数和风险控制流程、DNS/DevOps/SDK 安全等方面的检查。通过认证的协议将获得密封认证——用户在决定是否与协议交互前，至少知道"有人已经看过了"。</p>
+
+<p>Isaac 把这比作智能合约审计报告的普及化，但范围扩展到操作层面的全面安全检查。</p>
+
+<h2>普通用户可以做什么</h2>
+
+<div class="overview-grid">
+  <div class="card card-red">
+    <strong>🔐 使用硬件钱包</strong>
+    <div class="desc">不要用热钱包存你不愿失去的资产。Mike："这会解决你 75% 的问题。"</div>
+  </div>
+  <div class="card card-blue">
+    <strong>🏛️ 只碰蓝筹协议</strong>
+    <div class="desc">除非你是极端 power user，否则只和 DeFi 中大概 10-15 个蓝筹协议交互。不要碰新协议。</div>
+  </div>
+  <div class="card card-green">
+    <strong>✅ 寻找安全认证</strong>
+    <div class="desc">关注 Security Alliance 等机构推出的认证，看协议是否有人检查过全面的操作安全。</div>
+  </div>
+</div>
+
+<p>Mike 的总结简单而有力：对普通用户而言，"不碰新协议"和"用硬件钱包"这两条，能防住绝大多数风险。而他的更大信念是：EtherFi 的架构——结合 rate limits、多层防御、透明化的紧急干预能力——可能让 self-custody 的 DeFi 资产比存在中心化交易所更安全（后者可能在破产中被抵押）。</p>
+
+<hr>
+
+<!-- 核心金句 -->
+<h2>核心金句</h2>
+
+<div class="quote-block ql-orange">
+  "This principle that code is law and you wrote the code wrong so fuck you is just stupid. That's just not how human organizations operate."
+  <div class="attribution">— Mike Silagadze · 关于为什么需要纠错机制</div>
+</div>
+
+<div class="quote-block ql-green">
+  "Code is not law. Law is ambiguous by design. Ambiguity is built into legal code for cases that are subjective."
+  <div class="attribution">— Mike Silagadze · 区分代码与法律的本质差异</div>
+</div>
+
+<div class="quote-block ql-purple">
+  "I don't think a blanket statement that everything in DeFi is high risk is correct. I think that's fundamentally wrong and it puts a very naive amount of faith into tradfi."
+  <div class="attribution">— Mike Silagadze · 回应 Araoz 的全面否定</div>
+</div>
+
+<div class="quote-block ql-orange">
+  "It's embarrassing the level of operational security failures that keep happening... 90% or more of the time the failures are pretty embarrassing, easy to avoid things."
+  <div class="attribution">— Isaac Patka · 关于 DeFi 攻击的真正原因</div>
+</div>
+
+<div class="quote-block ql-yellow">
+  "Assume that any component, any service that you depend on, is possible that it will be compromised and fail — and just design for that."
+  <div class="attribution">— Mike Silagadze · EtherFi 的安全设计哲学</div>
+</div>
+
+<div class="quote-block ql-red">
+  "The right defenses are not just make everybody so paranoid all the time that they can't do their jobs. The right defenses are putting in the guardrails on the protocol and code side and the machine side, assuming that the human factor is fallible."
+  <div class="attribution">— Isaac Patka · 关于社会工程防御的正确思路</div>
+</div>
+
+<footer>
+  完整对谈：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3487048026.mp3">Unchained — Is 'All of DeFi Unsafe'? What You Need to Know About Holding Assets Onchain</a><br>
+  Isaac Patka &amp; Mike Silagadze · Hosted by Laura Shin · 2026 年 5 月
+</footer>
+
+</article>
+</body>
+</html>

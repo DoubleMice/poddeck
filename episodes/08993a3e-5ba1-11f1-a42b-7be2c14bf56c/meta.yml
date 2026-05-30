@@ -1,0 +1,29 @@
+id: 08993a3e-5ba1-11f1-a42b-7be2c14bf56c
+source: unchained
+title: "Is 'All of DeFi Unsafe'? What You Need to Know About Holding Assets Onchain"
+guest: "Isaac Patka & Mike Silagadze"
+guest_role: "Certifications Lead at Security Alliance & CEO of EtherFi"
+published: "2026-05"
+duration: "50m"
+url: "https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3487048026.mp3"
+thumbnail: "https://megaphone.imgix.net/podcasts/08993a3e-5ba1-11f1-a42b-7be2c14bf56c/image/10f238494846c182e4b438474d4e05d0.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+status: generated
+tags:
+  - coding-agents
+  - startup
+  - interview
+  - ceo
+  - engineer
+  - quick-take
+  - strategic
+summary: |
+  OpenZeppelin co-founder Manuel Araoz ignited a firestorm by declaring all of DeFi unsafe, citing AI-powered vulnerability discovery as an insurmountable asymmetry. Security Alliance's Isaac Patka and EtherFi CEO Mike Silagadze push back: 90% of real-world DeFi exploits are embarrassing opsec failures, not code bugs. The conversation unpacks decentralization theater, the three-tier multisig architecture protocols should adopt, why defenders have the advantage in the AI arms race, and the fundamental principle that "code is not law" — error correction mechanisms are both necessary and compatible with meaningful decentralization.
+core_ideas:
+  - 'Manuel Araoz claimed "All of DeFi is unsafe" due to AI asymmetry; Isaac and Mike disagree — the real threat is operational security, not code'
+  - '90%+ of DeFi hacks (Bybit, Ronin, Drift) are opsec failures — easy to avoid but overlooked, not superhuman AI exploits'
+  - 'Mike coins "decentralization theater": protocols retain upgrade ability but cripple their own ability to pause and protect users in emergencies'
+  - 'Isaac proposes a three-tier multisig architecture: emergency freeze (fast, low threshold), parameter adjustment (short timelock), and contract upgrade (multi-week timelock with user exit window)'
+  - 'Defenders have three structural advantages in the AI arms race: they scan code first before deployment, they have better commercial tools, and attackers are pivoting to social engineering'
+  - 'The principle "code is not law" — error correction mechanisms compatible with decentralization; application standard should differ from blockchain standard'
+article_path: episodes/08993a3e-5ba1-11f1-a42b-7be2c14bf56c/article.html
+base: /episodes/08993a3e-5ba1-11f1-a42b-7be2c14bf56c/
