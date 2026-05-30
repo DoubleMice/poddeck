@@ -1,15 +1,92 @@
 source: tbpn
-refreshed_at: 2026-05-29T20:22:25.601Z
+refreshed_at: 2026-05-30T06:28:49.742Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 10
+total_candidates: 9
 done: 0
 pending: 7
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 1bf263d1-f3fc-4663-8f51-503b92e52477
+    title: Blue Origin Explosion, Enterprise AI Hits Spending Limits, Dinosaur Market Booms | John Gruber, Ronak Malde, Zane
+      Mountcastle, Jamie Cuffe, Kyle Kuzma, Brad Gerstner
+    duration: 9473
+    published: Fri, 29 May 2026 14:01:50 -0700
+    published_sort: "20260529"
+    first_seen_at: 2026-05-30T06:28:49.735Z
+    url: https://share.transistor.fm/s/52af22de
+    audio_url: https://media.transistor.fm/52af22de/10d54d16.mp3
+    image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/52af22de/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:43) - Blue Origin Explosion\r
+
+      (07:38) - Enterprise AI Hits Spending Limits\r
+
+      (21:48) - Dinosaur Market Booms\r
+
+      (29:13) - John Gruber, a prominent technology writer and podcaster, discusses the Ferrari Luce's design,
+      expressing that its appearance deviates from traditional Ferrari aesthetics, making it hard to identify as a
+      Ferrari without its nameplate. He also reflects on Apple's design philosophy, emphasizing their commitment to
+      creating products that prioritize functionality and user experience over following market trends. Additionally,
+      Gruber highlights the challenges Apple faces in integrating AI technologies, noting the importance of balancing
+      innovation with maintaining the company's core values and user trust.\r
+
+      (01:11:16) - Ronak Malde, formerly an AI researcher at Windsurf and Google DeepMind, co-founded Trajectory, a
+      startup focused on building a platform for continual learning in AI systems. In the conversation, he discusses
+      raising $15 million from Conviction and partnering with companies like Harvey, Decagon, Clay, Rogo, and Mercor to
+      develop agents that learn from real-world user interactions, enabling AI products to improve daily. Malde
+      emphasizes the importance of creating AI agents with practical experience that understand business-specific
+      rewards, allowing for efficient post-training and continual enhancement of AI capabilities.\r
+
+      (01:19:18) - Zane Mountcastle, co-founder and CEO of Picogrid, discusses the company's recent $45 million Series A
+      funding led by Bessemer Venture Partners, aimed at expanding their team and scaling production to meet increasing
+      demand. He explains that Picogrid develops technology to integrate mission-critical systems like sensors, drones,
+      and weapon systems, primarily for military applications, by building open infrastructure that enables these
+      systems to work together. Mountcastle also highlights the company's active contracts with the Pentagon, NATO, and
+      allied partners, emphasizing their focus on serving military needs while acknowledging potential future commercial
+      applications.\r
+
+      (01:25:10) - Jamie Cuffe, CEO of Pace, announced the company's $46 million Series B funding co-led by Thrive
+      Capital and Sequoia, with participation from Emergence and Pruven. He discussed how Pace's AI agents are
+      automating back-office operations for major insurers like Prudential and Convex, achieving over 99.9% accuracy and
+      enabling clients to autonomously complete hundreds of thousands of tasks daily. Cuffe emphasized that this
+      automation is helping insurers close the $9 trillion protection gap by making insurance more accessible and
+      efficient.\r
+
+      (01:32:57) - Kyle Kuzma, an American professional basketball player for the Milwaukee Bucks, discusses his journey
+      into investing, inspired by mentors like Kobe Bryant, and emphasizes the importance of focusing on basketball
+      while exploring ventures in the tech and private investment sectors. He highlights the significance of leveraging
+      his unique position as an athlete to access investment opportunities and stresses the value of surrounding himself
+      with knowledgeable individuals to navigate the complexities of the investment landscape. Kuzma also touches on the
+      evolving role of AI in basketball, expressing a cautious perspective on its influence on the game.\r
+
+      (01:50:08) - Brad Gerstner is the founder and CEO of Altimeter Capital, a technology-focused investment firm that
+      invests across public and private markets. Known for his high-conviction bets on companies such as Snowflake,
+      Meta, and Uber, he is a frequent commentator on technology, AI, capital markets, and long-term investing.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
       Tae Kim, Immad Akhund, Marcus Milione
@@ -647,203 +724,6 @@ episodes:
       Horwitz shares his experiences with AI-generated communications and the inspiration behind developing Sincerely.\r
 
       (01:58:29) - 𝕏 Timeline Reactions
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: pending
-    priority: 1
-  - id: 1714b7b3-ad76-48e4-9227-c8dbefe8694f
-    title: Meet the New Thiel Fellows, GPT 5.5, Thoma Bravo Loses Medallia | Victor Boyd, Alex Shieh, Nick Dobroshinsky,
-      Ishan Gupta, Antoni Kiszka, Milan Lustig, Galen Mead, Aubrey Niederhoffer, Samuel Carvalho, Claire Wang
-    duration: 7882
-    published: Thu, 23 Apr 2026 13:33:02 -0700
-    published_sort: "20260423"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/52e67362
-    audio_url: https://media.transistor.fm/52e67362/93eb4ff2.mp3
-    image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
-    summary: "(02:15) - Thoma Bravo Loses Medallia\r
-
-      (10:28) - GPT 5.5 Released\r
-
-      (11:32) - 𝕏 Timeline Reactions\r
-
-      (29:23) - Victor Boyd, co-founder and CTO of Cavalla Industries, discusses the development of autonomous forklifts
-      aimed at delivering goods anywhere within hours. He explains the challenges faced with retrofitting existing
-      forklifts due to their inconsistent internal designs, leading the company to build their own forklift to ensure
-      reliability and scalability. Boyd also highlights the integration of teleoperation using Xbox controllers,
-      allowing remote human intervention when necessary, and emphasizes the importance of delivering consistent results
-      to customers, regardless of the level of autonomy achieved.\r
-
-      (41:03) - Alex Shieh, a former Brown University student and co-founder of The Antifraud Company, discusses his
-      firm's mission to utilize AI models for detecting government fraud and pursuing legal action against fraudsters,
-      operating on a contingency basis where they earn a percentage of recovered funds. He explains the company's
-      approach of combining open-source intelligence with AI to proactively identify fraudulent activities, emphasizing
-      the importance of outbound investigations over waiting for insider tips. Shieh also highlights the significant
-      impact of fraud on taxpayer dollars and the necessity of restoring trust in public institutions through efficient
-      fraud detection and recovery efforts.\r
-
-      (52:10) - Nick Dobroshinsky, the youngest-ever Thiel Fellow, has developed Every Ticker, a platform that utilizes
-      large language models to generate high-quality research reports on all U.S. stocks, particularly focusing on
-      small, mid, and micro-cap stocks often overlooked by Wall Street. He emphasizes that Every Ticker does not provide
-      financial advice but instead aggregates and synthesizes research to help investors make informed decisions.
-      Currently, the platform offers over 5,000 free reports, with plans to transition to a subscription model in the
-      future.\r
-
-      (01:00:59) - Spirit Airlines Eyes $500M Rescue\r
-
-      (01:02:34) - Ishan Gupta is the Co-Founder and CTO of Juicebox, an AI-powered recruiting platform that leverages
-      large language models to help companies identify and engage top talent. In the conversation, he discusses how
-      Juicebox's AI agents analyze various data sources to find suitable candidates, reducing spam by targeting outreach
-      more effectively. He also emphasizes the importance of job seekers showcasing their work through blogs,
-      open-source contributions, and projects to enhance their visibility to AI-driven recruitment tools.\r
-
-      (01:12:55) - Antoni Kiszka is the co-founder of Perpetual, a company aiming to create a derivatives exchange for a
-      wide range of assets. He discusses their initial focus on meme coins to test their technology, with plans to
-      expand into traditional finance markets, including assets like hydrogen, which currently lack derivatives. Kiszka
-      also highlights the inspiration drawn from Kalshi's regulatory approach and emphasizes the need for derivatives
-      that provide real value beyond speculative trading.\r
-
-      (01:20:39) - Milan Lustig, co-founder of Opt32 and a Thiel Fellow, discusses his company's mission to develop
-      modern full-stack compute infrastructure for physical autonomy, encompassing software and custom hardware
-      solutions for devices like robots, drones, and autonomous vehicles. He explains their initial focus on the
-      robotics sector, starting with software development and gradually progressing toward hardware integration, aiming
-      to optimize machine learning models for deployment on resource-constrained devices. Lustig also highlights the
-      importance of adapting computer science education to emphasize higher-level theoretical skills over low-level
-      implementation, in response to advancements in artificial intelligence.\r
-
-      (01:32:00) - Galen Mead, founder of a general research company focused on developing computer use models,
-      discusses his transition from university dropout to full-time researcher, emphasizing the importance of computer
-      use as a universal form factor for human-computer interaction. He highlights the potential of training policies on
-      extensive supervised data from diverse environments to create base models for actions, drawing parallels to early
-      work by DeepMind on games. Mead anticipates that by the end of the year, users will interact with complex software
-      like Premiere Pro through prompts, similar to the shift from IDEs to command-line interfaces in software
-      engineering.\r
-
-      (01:39:10) - Aubrey Niederhoffer, a young entrepreneur who founded his first company in Africa at 15, now resides
-      in Nigeria, focusing on building a super app for the continent. He discusses the nascent state of food delivery in
-      Nigeria, highlighting high prices and limited competition, and sees an opportunity to offer more affordable
-      services. By integrating food delivery with digital payments, he aims to create a comprehensive platform, drawing
-      inspiration from successful super apps like WeChat and Caspi.\r
-
-      (01:49:50) - Samuel Carvalho, originally from Recife, Brazil, attended Stanford University before returning to
-      Brazil to found Prazo, a company aiming to modernize the wholesale sector by providing end-to-end infrastructure
-      solutions. He discusses how Prazo connects manufacturers with small and medium-sized businesses through a
-      tech-enabled platform that manages logistics and credit, addressing challenges like high customer acquisition
-      costs and the need for short-term loans. Carvalho also highlights the significant market potential in Brazil and
-      Latin America, emphasizing the opportunity to build a multibillion-dollar company by expanding beyond the initial
-      focus on restaurants.\r
-
-      (02:00:36) - Claire Wang, a former junior at MIT studying electrical engineering and computer science, has a keen
-      interest in neurotechnology, particularly whole brain emulation, starting with simpler organisms like C. elegans.
-      She discusses her decision to pursue independent research over joining existing brain-computer interface
-      companies, emphasizing the importance of making personal scientific bets in fundamental science. Wang also
-      highlights the current favorable environment for independent biotech research, citing advancements in AI,
-      alternative science funding, and increased openness to research risks in startups.
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: transcribe_failed
-    priority: 1
-    transcript_provider: dashscope
-    transcript_job_id: 356ba8e4-346a-4b87-971e-0fdee5e247aa
-    transcript_submitted_at: 2026-05-24T19:14:39.243Z
-    transcript_completed_at: 2026-05-25T19:26:26.019Z
-    transcript_error: DashScope task ended with UNKNOWN
-  - id: 4e26997f-bf94-4e2e-9038-5fd1f427b9fd
-    title: SpaceX/Cursor Deal, Images 2.0 Reactions, Fake Bear Attack | Anil Chakravarthy, Naveen Gavini, Avlok Kohli &
-      Ankur Nagpal, Joel Edwards, Renen Hallak, Darian Shirazi
-    duration: 7404
-    published: Wed, 22 Apr 2026 13:27:11 -0700
-    published_sort: "20260422"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/2c6e810f
-    audio_url: https://media.transistor.fm/2c6e810f/51c42858.mp3
-    image: https://img.transistorcdn.com/0hFtvZTQrTiH72ygN1VvbDykuo3DSplLQnjG9hbeMZ4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mOWMw/MTNiNmI0NTU1MjM5/NzA5MjY2ZWQ2NTBh/NzQ0NS5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/2c6e810f/transcription.txt
-    transcript_type: text/plain
-    summary: "(00:46) - SpaceX & Cursor\r
-
-      (18:10) - 𝕏 Timeline Reactions\r
-
-      (23:03) - ChatGPT Images 2.0 Reactions\r
-
-      (31:32) - Anil Chakravarthy, President of Adobe's Digital Experience Business, discusses the company's
-      collaboration with Nvidia to integrate 3D digital twins into marketing and customer experiences, exemplified by
-      HP's use of this technology to streamline product design and marketing. He emphasizes the importance of customer
-      experience orchestration, leveraging AI to deliver personalized experiences by combining the right content and
-      customer data across preferred channels. Additionally, Chakravarthy highlights Adobe's $25 billion buyback as a
-      signal of confidence in the company's profitability and growth, underscoring the focus on AI adoption to provide
-      real value to users and enterprise customers.\r
-
-      (47:25) - Naveen Gavini, former Chief Product Officer at Pinterest, is the co-founder and CEO of BuildForever, a
-      company dedicated to creating personal and human-centric products. In the conversation, he introduces their latest
-      product, Extra, an AI-powered email application designed to transform personal email management by organizing
-      inboxes around users' lives, reducing clutter, and enhancing clarity. Gavini emphasizes that Extra aims to make
-      email more manageable and enjoyable, addressing the common issue of overwhelming personal inboxes.\r
-
-      (56:58) - Avlok Kohli & Ankur Nagpal. Avlok Kohli, CEO of AngelList, discusses the launch of USVC, a fund designed
-      to democratize access to venture capital by allowing individuals to invest with as little as $500. He emphasizes
-      the fund's unique structure, which ensures that the price investors pay and redeem at closely reflects the value
-      of the underlying companies, avoiding market-driven fluctuations. Kohli also highlights the fund's commitment to
-      direct ownership, avoiding layered SPVs to maintain transparency and alignment with investors.\r
-
-      (01:09:44) - Joel Edwards, a geologist and co-founder of Zanskar Geothermal, discusses the company's mission to
-      discover and develop hidden geothermal resources in the western United States using AI and advanced sensing
-      technologies. He explains that these \"blind\" systems lack surface indicators like geysers or hot springs but can
-      be tapped to generate electricity by drilling into underground pockets of hot water. Edwards highlights the
-      bipartisan support for geothermal energy due to its baseload capacity, zero emissions, and domestic sourcing, and
-      notes that Zanskar recently raised $115 million to expand its AI-powered geothermal discovery platform and develop
-      new power plants.\r
-
-      (01:20:34) - Renen Hallak, founder and CEO of VAST Data, discusses the company's decade-long journey since its
-      2016 inception, focusing on developing new infrastructure to support AI's evolving demands. He highlights the
-      early recognition of AI's need for rapid data access and the company's collaborations with leading AI
-      organizations, including hedge funds and life science institutes, to build scalable, efficient systems. Hallak
-      also emphasizes VAST Data's role in simplifying AI adoption by providing a unified software infrastructure that
-      abstracts hardware complexities, enabling enterprises to deploy AI agents securely and efficiently.\r
-
-      (01:31:00) - Darian Shirazi, General Partner at Gradient Ventures, began his career as one of Facebook's first
-      software engineers, reporting directly to Mark Zuckerberg, before founding Radius, a B2B Customer Data Platform.
-      In the conversation, he reflects on his early experiences at Facebook, the challenges of founding and scaling
-      Radius, and his transition into venture capital, emphasizing the importance of surrounding oneself with smart
-      individuals and the evolving landscape of AI investments.\r
-
-      (01:51:54) - 𝕏 Timeline Reactions\r
-
-      (01:53:46) - Fake Bear Attack\r
-
-      (01:58:58) - 𝕏 Timeline Reactions
 
 
       Follow TBPN: 
