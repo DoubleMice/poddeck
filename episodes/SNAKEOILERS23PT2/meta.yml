@@ -1,0 +1,29 @@
+id: SNAKEOILERS23PT2
+source: risky-business
+title: "Snake Oilers: Ent AI, Spacewalk and Mondoo"
+guest: "Brandon Dixon, Chris Fuller, Tim Wenslow, Dominic Richter"
+guest_role: "Founders & CEO"
+published: 2026-05
+duration: 44m
+url: https://risky.biz/SNAKEOILERS23PT2/
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+status: generated
+tags:
+  - ai-products
+  - startup
+  - interview
+  - founder
+  - ceo
+  - quick-take
+  - technical
+summary: |
+  Risky Business Snake Oilers 特辑，Patrick Gray 与三家 AI 安全创业公司对谈：Ent AI（Brandon Dixon）在端点上做意图感知安全，用边缘 AI 实时判断用户和 agent 行为；Spacewalk AI（Chris Fuller & Tim Wenslow）打造"世界上最有经验的 AI 事件响应者"；Mondoo（Dominic Richter）开创 service-as-software 漏洞管理模式。三家公司共享惊人一致的设计原则：AI 增强而非替代确定性，agent 在护栏内运行，面向企业解决真实痛苦。
+core_ideas:
+  - Ent AI 在端点上运行轻量 AI 模型（嵌入+小型语言模型+视觉），不需要 kernel hook，通过 Pythonic 策略语言编译成 IR 来保证确定性
+  - Spacewalk AI 接受任何格式的数据（CSV、DOM、Slack、forensic 镜像），目标是成为 intelligence layer 把 IR 结论推回检测层
+  - Mondoo 用"营养评分"五维度（攻击面、爆炸半径、业务关键性、可利用性、新闻热度）来排序漏洞优先级
+  - 三家都强调 agent 不能自由操作 — Ent 用策略编译、Spacewalk 要求每断言带证据、Mondoo 通过 infra-as-code 限制修复范围
+  - AI agent 的"钻空子"风险（删 repo 来减少代码量、删 OS 来消除 CVE）是真实存在的工程问题
+  - 攻防双方 AI 采用速度存在差异 — 攻击者正在快速采纳 AI，防御方必须同样快
+article_path: episodes/SNAKEOILERS23PT2/article.html
+base: /episodes/SNAKEOILERS23PT2/

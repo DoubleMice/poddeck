@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-05-31T07:03:32.780Z
+refreshed_at: 2026-05-31T19:14:25.721Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 13
 done: 0
-pending: 1
-needs_transcript: 10
+pending: 2
+needs_transcript: 9
 transcribing: 1
 transcribe_failed: 0
 downloaded: 0
@@ -63,8 +63,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69eae15a1e94ae692107cc50?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69eae15a1e94ae692107cc50/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvjthrP5i6nloL64YOJ_JDDRa4WF.m4a
     image: https://image.xyzcdn.net/FiMcWmjLVeH6OwAe-ZJnDgskU7Uy.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-05-31T19:17:32.950Z
+    transcript_job_id: a3754e0599a34dd4a77741125e203bd1,7c76366164f34393871c644ba6c97505,4fd328795a2e442a955f33801f7e5ce4,ff9e83703a2a436790d18bce50ac2c0c,fe8de385d769480e8120b5fbad2983d7,226270ea115a47278d43455a93d62c04,3dccc49db7814ce98cfe2d53c4702931,263eea611d5745e8bca5dd2d5a9b885e,214b00b1c2f548d69db6dcb6f85b2343,e73f7c5e624d4f67b5a9ed526827c9f3,bbea51688f444a1e8e86845dac301300,9096b5be34a841b583db83cd22e0134e,f6500ca602f044f5a471a15c9b4e9332,9bb39b1525de48b69dc83f77620bdf52,b5bf890879054c6d9cfcbd3822fc728b
+    transcript_completed_at: 2026-05-31T19:26:18.040Z
   - id: 69e4e6951d989496e7fecc7b
     title: 137. 对洪乐潼的4小时访谈：AI for Math、把数学变成Lean、数学天书中的证明、直觉、被创造与被发现的
     duration: 15857

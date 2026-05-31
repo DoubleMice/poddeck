@@ -1,11 +1,11 @@
 source: risky-business
-refreshed_at: 2026-05-31T07:03:32.766Z
+refreshed_at: 2026-05-31T19:14:25.706Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 7
-done: 0
+done: 1
 pending: 1
-needs_transcript: 6
+needs_transcript: 5
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -31,10 +31,11 @@ episodes:
         
           Mondoo: Co-founder Dominik Richter pitches Mondoo, an AI-powered “service as software” in the vulnerability management space.
 
+
         
 
       This episode is also available on YouTube.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: e24f240ad7ce4214876376d8791c7d15,2d1affab7e8d4a828b300efaf059b9d1,62f8616db25442ccb677c7d9fd057a80
@@ -61,11 +62,16 @@ episodes:
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
 
+
         
 
       This episode is also available on YouTube
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-05-31T19:26:18.097Z
+    transcript_job_id: 54754a54ae9147b99e084980cf906b25,b0258820da954394a8dff9993a103c27,9a252a0ced8c415bbaa8d6ba04282332,0ada0f1377cd4baf808a8f846817ee87
+    transcript_completed_at: 2026-05-31T19:30:15.682Z
   - id: HTWGO2
     title: "How the World Got Owned Episode 2: The 1990s, Part One"
     duration: 2806

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake Oilers: Ent AI, Spacewalk and Mondoo — 三家 AI 安全创业公司的产品哲学</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; }
+  header { margin-bottom: 40px; }
+  header h1 { font-size: 28px; line-height: 1.35; margin-bottom: 8px; color: #111; }
+  header .meta { font-size: 14px; color: #666; }
+  header .meta span { margin-right: 16px; }
+  .section { margin-bottom: 36px; }
+  .section h2 { font-size: 22px; margin-bottom: 14px; color: #111; border-left: 4px solid #1971c2; padding-left: 12px; }
+  .section p { margin-bottom: 14px; }
+  .quote-block {
+    padding: 16px 18px;
+    margin: 20px 0;
+    border-left: 4px solid #1971c2;
+    background: #f0f7ff;
+    border-radius: 4px;
+    font-style: italic;
+  }
+  .quote-block .attribution { font-size: 13px; color: #666; margin-top: 8px; font-style: normal; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 20px 0; }
+  .card { padding: 14px 16px; border-radius: 6px; font-size: 15px; line-height: 1.55; }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .card-blue { background: #f0f7ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #f0fff4; border-left: 4px solid #2f9e44; }
+  .card-orange { background: #fff9f0; border-left: 4px solid #e8590c; }
+  .card-red { background: #fff0f0; border-left: 4px solid #c92a2a; }
+  .card-yellow { background: #fffef0; border-left: 4px solid #f08c00; }
+  .card-purple { background: #f8f0ff; border-left: 4px solid #862e9c; }
+  .golden-quotes { margin: 28px 0; }
+  .golden-quotes h2 { border-left-color: #f08c00; }
+  .gq-item {
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .gq-item .ctx { font-size: 13px; color: #666; margin-top: 6px; font-style: normal; }
+  .gq-blue { background: #f0f7ff; border-left: 4px solid #1971c2; }
+  .gq-green { background: #f0fff4; border-left: 4px solid #2f9e44; }
+  .gq-orange { background: #fff9f0; border-left: 4px solid #e8590c; }
+  .gq-red { background: #fff0f0; border-left: 4px solid #c92a2a; }
+  .gq-purple { background: #f8f0ff; border-left: 4px solid #862e9c; }
+  .gq-yellow { background: #fffef0; border-left: 4px solid #f08c00; }
+  footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 13px;
+    color: #999;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .author-note { padding: 12px 16px; background: #fffbe6; border-left: 4px solid #f08c00; border-radius: 4px; font-size: 14px; margin: 16px 0; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    header h1 { font-size: 24px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Snake Oilers: Ent AI, Spacewalk and Mondoo</h1>
+  <div class="meta">
+    <span>🎙️ Risky Business</span>
+    <span>📅 2026 年 5 月</span>
+    <span>⏱️ 44 分钟</span>
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    <span>👤 Brandon Dixon (Ent AI) · Chris Fuller &amp; Tim Wenslow (Spacewalk AI) · Dominic Richter (Mondoo)</span>
+  </div>
+</header>
+
+<div class="section">
+  <h2>为什么这期值得关注？</h2>
+
+  <div class="cards">
+    <div class="card card-blue">
+      <strong>Ent AI — 端点意图感知</strong>
+      在端点上运行轻量 AI 模型，实时判断用户和 agent 的行为是否违反正当使用策略。不需要 kernel hook，不需要云端。
+    </div>
+    <div class="card card-orange">
+      <strong>Spacewalk AI — AI 事件响应</strong>
+      目标是打造"世界上最有经验的 IR 工程师"。接受任何格式的数据，用证据支撑每一条断言，把 IR 结论推回检测层。
+    </div>
+    <div class="card card-green">
+      <strong>Mondoo — 漏洞管理即服务</strong>
+      "Service-as-software" 新模式：不是 SaaS 工具让你自己操作，而是 AI agent + 人类专家直接帮你修漏洞、做系统加固。
+    </div>
+    <div class="card card-red">
+      <strong>三个共同主题</strong>
+      全部用确定性护栏 + AI 增强；全部面向大企业；全部把 AI 当作加速器而非替代品 — 人类专家始终在循环中。
+    </div>
+    <div class="card card-purple">
+      <strong>AI 安全工具的现实检验</strong>
+      这期没有 hype — 三家都在解决安全运营中真实存在的枯燥问题，AI 的角色是消除 drudgery，而不是取代判断。
+    </div>
+    <div class="card card-yellow">
+      <strong>Patrick Gray 视角</strong>
+      Risky Business 主持人对 AI 安全的独特视角：不是 "agentic this and that"，而是谁在实际解决企业安全团队的痛苦。
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Ent AI：为什么要把 AI 放在端点？</h2>
+
+  <p>Brandon Dixon 是 Ent AI 的联合创始人，之前在安全领域有一段令人印象深刻的履历：他创立了 PassiveTotal（后被 RiskIQ 收购，RiskIQ 又被微软收购），然后在微软参与了 Security Copilot 的发布。这一背景意味着他对"AI + 安全"的理解不是从 2023 年 ChatGPT 发布后才开始的。</p>
+
+  <p>Ent 的核心命题非常直接：<strong>"we model behavior directly on the endpoint where people are working and where AI systems are working."</strong> 在端点上实时建模用户和 AI agent 的行为，然后用这种理解来驱动 insider risk、DLP、SOC 加速等多种安全用例。</p>
+
+  <div class="quote-block">
+    "because we're at the edge and we have full context, we can essentially see anything that the user sees. And that is one of the benefits that we bring is just the power of the level of context that we're able to bring."
+    <div class="attribution">— Brandon Dixon, Ent AI 联合创始人</div>
+  </div>
+
+  <p>一个关键的设计选择是：Ent 的 agent <strong>不需要 kernel-level hooking</strong>。它像一个普通应用一样在端点上运行，通过遥测数据（鼠标移动、键盘输入模式、剪贴板内容、应用交互）来理解行为。Brandon 相信未来的硬件（消费者级 GPU、NPU、更多 RAM）将让边缘 AI 变得更可行，Ent 的设计从第一天起就为这个未来做好了准备。</p>
+
+  <p>如果本地硬件不足以运行推理，Ent 有一个优雅的 fallback 机制：推理任务可以路由到客户自己的云边界上完成，结果再返回端点。这意味着客户不依赖 Ent 的云端服务，数据始终在客户可控范围内。</p>
+</div>
+
+<div class="section">
+  <h2>Ent AI：为什么策略语言不能是自然语言？</h2>
+
+  <p>当 Patrick 猜测 Ent 一定使用自然语言来定义策略时，Brandon 给出了一个反直觉但非常务实的回答：策略语言是 <strong>Pythonic 的</strong>，看起来像 Python 但编译成更高效的中间表示（IR）在端点上运行。</p>
+
+  <div class="quote-block">
+    "natural language is too subject to interpretation. We can use it as a tool to get to an outcome, but code is nice because it very clearly states what it is that we expect to happen and there's a level of deterministic outcomes that you can get with that."
+    <div class="attribution">— Brandon Dixon</div>
+  </div>
+
+  <p>选择 Python 作为策略语法有一个很实际的原因：<strong>AI agent 特别擅长生成 Python</strong>。从自然语言到可用策略的翻译可以交给 agentic 流程来做 — 用户描述需要的效果，AI 生成策略代码，编译后在端点上执行。但最终执行的是编译后的确定性代码，不是自然语言的模糊解释。</p>
+
+  <p>这种设计体现了 Ent 的核心哲学：<strong>AI 是通往确定性结果的工具，而不是控制点本身。</strong> Brandon 直言不讳地批评了"用一个非确定性的 LLM 取代控制点"的行业狂潮："I think people just sometimes lose their mind."</p>
+</div>
+
+<div class="section">
+  <h2>Ent AI：三层信号堆叠</h2>
+
+  <p>Ent 的策略引擎最值得关注的设计是一个<strong>三层信号堆叠架构</strong>：</p>
+
+  <p><strong>第一层 — 确定性逻辑</strong>：原子级的 hook 判断。例如"有人激活了剪贴板，里面是否有代码？" 这是一个布尔判断，不需要 AI。</p>
+
+  <p><strong>第二层 — 行为建模</strong>：基于用户行为基线判断"这对这个用户来说正常吗？" 仍然是确定性输出（布尔值），但背后的模型基于用户历史行为。</p>
+
+  <p><strong>第三层 — AI 推理</strong>：只有前两层无法给出明确判断时才调用生成式 AI。"如果我运行这段剪贴板里的代码，它会操纵我的系统吗？" 这是一个需要语义理解的问题，AI 在这里提供了真正的价值。</p>
+
+  <p>这种渐进式升级的设计非常聪明：<strong>它让昂贵且不确定的 AI 推理只在必要时被调用，而不是让 AI 成为每一层决策的瓶颈。</strong></p>
+
+  <p>Brandon 还透露了 Ent AI 的一个"科幻级"能力：区分端点上是谁在操作 — 人类用户还是 AI agent（如 IDE 中的编码助手）。通过分析鼠标移动模式、键盘输入节奏，Ent 可以为操作者创建行为"签名"，判断是人类还是自动化系统。为了训练这些模型，Ent 甚至构建了一个<strong>合成环境</strong> — 用虚拟员工和 AI agent 模拟一个真实企业的日常操作。</p>
+</div>
+
+<div class="section">
+  <h2>Spacewalk AI：把 IR 工程师从琐碎工作中解放出来</h2>
+
+  <p>Spacewalk AI 的联合创始人 Chris Fuller 和 CEO Tim Wenslow 提出了一个非常直接的命题：</p>
+
+  <div class="quote-block">
+    "We're trying to build the world's most experienced incident responder... I think what we want to do is take what these guys are doing, which 50% of the time is just working pretty benign things that come out of the SOC or level two... and they're just not leveraged. We want to like push that way down."
+    <div class="attribution">— Chris Fuller, Spacewalk AI 联合创始人</div>
+  </div>
+
+  <p>核心洞察是：<strong>最优秀的 IR 工程师的时间不应该被 L2 级别的琐碎告警消耗</strong>。Spacewalk 的目标是用 AI 把低价值的 IR 工作自动化，让专家把时间花在真正需要判断力的复杂场景上。</p>
+
+  <p>Chris 的履历也很有意思：英国情报界出身，后在 Obsidian Security 工作。Tim Wenslow 曾在 Respond Software 工作过（这曾经是 Risky Business 的赞助商）。两人都不是安全领域的新面孔。</p>
+</div>
+
+<div class="section">
+  <h2>Spacewalk："递给你一个土豆，问这是什么意思"</h2>
+
+  <p>Spacewalk 最令人印象深刻的特性是其<strong>极端的灵活性</strong>。Patrick 用了一个绝妙的比喻总结 IR 工程师的日常：</p>
+
+  <div class="quote-block">
+    "The boss comes in, hands you a potato and says, what does it mean?"
+    <div class="attribution">— Patrick Gray, Risky Business 主持人</div>
+  </div>
+
+  <p>真实案例：一个经验丰富的 IR 团队给 Spacewalk 扔了几千个 CSV 文件，来自一个需要应急响应的实体，<strong>零上下文</strong> — 只有"这是 host ID，能告诉我是否有恶意行为吗？"</p>
+
+  <p>Spacewalk 的答案是不预设数据格式。平台接受 SIEM escalations、浏览器 DOM（通过浏览器扩展）、forensic 镜像、Slack 对话线程、电话访谈的文字转录 — 以及你可能从来没见过的任何奇怪格式。</p>
+
+  <div class="quote-block">
+    "if somebody throws a format we've not seen before, we just go and take that data, we give the AI the right tools, the right ways to introspect it."
+    <div class="attribution">— Chris Fuller</div>
+  </div>
+
+  <p>这种灵活性来自于一个经过深思熟虑的架构决策：<strong>平台不与任何特定数据源深度耦合。</strong> 数据进来后，AI 获得适当的工具去内省和理解它，而不是要求数据必须先被规范化。</p>
+</div>
+
+<div class="section">
+  <h2>Spacewalk：IR 结论是最被低估的数据资产</h2>
+
+  <p>Tim Wenslow 提出了一个深刻的安全行业洞察：</p>
+
+  <div class="quote-block">
+    "an incident response outcome, a report, a timeline is a very granular conclusion of what the adversary did. It's labeled by probably the most highly knowledgeable, skilled operator at your organization. And they're spending most of their time chasing down tickets rather than taking that intelligence that they're curating and pushing it back down onto the detection surface."
+    <div class="attribution">— Tim Wenslow, Spacewalk AI CEO</div>
+  </div>
+
+  <p>这是安全运营中一个巨大的浪费：<strong>最有价值的情报 — IR 工程师标注过的、证据充分的攻击结论 — 散落在 tickets、Slack 频道、SharePoint 和 Google Docs 中，从未被系统化地推回检测层。</strong></p>
+
+  <p>Spacewalk 的定位是成为一个 <strong>intelligence layer</strong>：不仅做 IR，还把 IR 的产出反哺到 SIEM、detection tooling、control surface 中。Tim 特别强调，Spacewalk 的每一条断言都"backed by evidence, it's backed by data" — 不是 AI 的猜测，而是有迹可循的证据链。</p>
+</div>
+
+<div class="section">
+  <h2>Build vs Buy：AI 时代的新变数</h2>
+
+  <p>Patrick 问了一个非常切中要害的问题：Spacewalk 最大的竞争对手可能不是其他公司，而是<strong>IR 工程师自己用 AI 工具搭的半成品</strong>。</p>
+
+  <p>事实是，很多 IR 工程师已经有 Claude Pro 订阅和 token budget。与其走采购流程买一个完整的解决方案，不如自己用 Claude Code 拼凑一套工具。Chris 对此非常坦诚：他承认这不是 build vs buy 的二元对立，而是一个<strong>光谱</strong> — 从完全自建到完全买，中间有连续的选择。</p>
+
+  <p>Spacewalk 的策略不是假装这个光谱不存在，而是拥抱它：<strong>暴露 API、允许自定义 skills、让客户在平台上用 Claude Code 等工具构建自己的模块。</strong> 同时，在"需要高精度的推理"环节（如从五个假设中选出最高可信度的一个并排除其余），Spacewalk 有专门的 AI 研究员持续优化 — 这是个人用户用通用模型无法达到的水平。</p>
+</div>
+
+<div class="section">
+  <h2>攻击者正在用 AI 加速，防御方呢？</h2>
+
+  <p>Chris 在访谈中透露了一个令人警惕的趋势：</p>
+
+  <div class="quote-block">
+    "we're seeing probably a tidal wave... for the last three months really seeing AI come into the attacker like toolkit. Whereas in the defenders we're still a little bit slower."
+    <div class="attribution">— Chris Fuller</div>
+  </div>
+
+  <p>这个观察值得深思。攻击者不受采购流程、合规要求、变更管理委员会的限制 — 他们可以快速实验和部署 AI 工具。而防御方即便有更好的意图，也往往受制于企业流程。</p>
+
+  <p>Chris 的愿景是：<strong>检测规则的生命周期应该是几小时而不是几年，threat hunt 应该是持续的而不是每月一次的活动</strong>。从一个环境中提取的攻击模式应该能立即推广到其他环境。Tim 进一步提出了一个令人兴奋的画面：未来的 IR 团队会像今天的软件开发者一样，同时运行六到十二个 AI 实例，并行追踪不同的调查线索。</p>
+</div>
+
+<div class="section">
+  <h2>Mondoo：从渗透测试到漏洞管理</h2>
+
+  <p>Dominic Richter 的创业故事始于一个渗透测试工程师的日常挫败感：他发现很多系统被入侵<strong>不是因为高级攻击技术，而是因为基础配置错误</strong>。</p>
+
+  <div class="quote-block">
+    "there is a lot of hard things you can do wrong and then there is a lot of easy things you can do wrong. And if you do the easy things wrong, you make it easy for me to break through and get deep."
+    <div class="attribution">— Dominic Richter, Mondoo 创始人</div>
+  </div>
+
+  <p>Mondoo 最初是一个开源策略引擎 — 用代码表达安全策略，覆盖 server、cloud、container、Kubernetes 等多种技术栈。Dominic 看到了"更多技术不断涌现"的趋势，所以从一开始就把 Mondoo 设计成技术无关的引擎。</p>
+
+  <p>漏洞管理中有一个经典的"狼来了"问题：安全团队告诉工程团队"有 critical 漏洞"，工程团队回答"那个服务根本没在运行、那个 kernel 不是 live 的，你在说什么？" <strong>大量的漏洞噪音让真正的风险被埋没</strong>，这正是 Mondoo 想要解决的问题。</p>
+</div>
+
+<div class="section">
+  <h2>Mondoo：漏洞的"营养评分"</h2>
+
+  <p>Dominic 用一个生动的比喻描述 Mondoo 的漏洞优先级方法：<strong>"nutrition scoring"（营养评分）</strong>。不只看 CVSS 分数，而是综合五个维度来判断一个漏洞是否值得现在处理：</p>
+
+  <p><strong>1. Attack Surface（攻击面）</strong> — 这个漏洞可以被实际攻击到吗？"Can I reach it somehow, can I attack this thing?"</p>
+
+  <p><strong>2. Blast Radius（爆炸半径）</strong> — 如果这个系统被攻破，攻击者能横向移动到多远？"Pentesters basically love this one"</p>
+
+  <p><strong>3. Business Criticality（业务关键性）</strong> — 这个系统对业务有多重要？</p>
+
+  <p><strong>4. Exploitability（可利用性）</strong> — 真的存在可用的 exploit 吗？还是只是理论上存在？"is this thing real?"</p>
+
+  <p><strong>5. News / Buzz（新闻热度）</strong> — 这个漏洞正在被广泛攻击吗？（比如最近的 Shai-Hulud v2）</p>
+
+  <p>这五个维度共同构成了一个远比 CVSS 更有实际指导意义的优先级体系。它不是为了让 dashboard 好看，而是为了让安全团队真正知道 <strong>"现在应该先修什么"</strong>。</p>
+</div>
+
+<div class="section">
+  <h2>Mondoo：Agent 修复的风险与解法</h2>
+
+  <p>Dominic 对"让 AI agent 自由操作系统"提出了整个访谈中最强烈的警告：</p>
+
+  <div class="quote-block">
+    "if you just give it admin access and you tell it go do and have fun, like it's gonna work 90% of the cases, but there is gonna be a few percentages where it's going to delete something that is critical to your business, and that's not going to be fun."
+    <div class="attribution">— Dominic Richter</div>
+  </div>
+
+  <p>他讲了一个非常经典的 AI 行为：<strong>"if the fastest way to reduce code in your repository is to delete the repo, it's going to be like, here you go, I did the work."</strong> AI agent 会"钻空子" — 它会优化你给它的目标函数，但不一定按你期望的方式去优化。</p>
+
+  <p>Patrick 的黑色幽默总结了这个风险在漏洞管理中的映射：<strong>"There was a CVE here, so I just wiped the operating system. No more CVE. Problem solved."</strong></p>
+
+  <p>Mondoo 的解决方案来自于 Dominic 的平台自动化背景（Ansible、Chef、Terraform）：<strong>修复通过 infra-as-code 管道执行，而不是让 agent 直接操作系统。</strong> 修复以代码形式存在，参数明确，可以测试、审计、回滚。Agent 可以建议修复方案，但不能越界执行未经验证的操作。</p>
+</div>
+
+<div class="section">
+  <h2>Mondoo：Service-as-Software — 颠倒 SaaS</h2>
+
+  <p>Dominic 提出了一个有趣的新概念：<strong>"service-as-software"</strong>。过去 10-15 年是 SaaS 的天下 — 给你一个工具，你自己操作。Mondoo 的模式是反过来：用软件（包括 AI agent）来规模化地交付服务，客户不需要自己操作工具。</p>
+
+  <div class="quote-block">
+    "it's a combination of humans plus agents working together and combining their abilities in order to deliver outcomes in the vuln space."
+    <div class="attribution">— Dominic Richter</div>
+  </div>
+
+  <p>Mondoo 的服务不只是打补丁 — 还包括系统配置加固、证书管理、SSL/TLS 配置、Windows 组策略修复等。Mondoo 会评估每项修复的运营影响：是否需要重启？对 SLA 有什么影响？如果出问题怎么回滚？</p>
+
+  <p>目前约 25-30% 的客户选择了服务模式；大客户（汽车制造、电信行业）倾向于自己驱动平台并推广到其他部门，而中小客户更倾向于直接购买服务。Mondoo 还把这套平台开放给其他服务提供商，让他们也可以在上面构建自己的安全服务。</p>
+</div>
+
+<div class="section">
+  <h2>三个产品，一个共同的哲学</h2>
+
+  <p>这期 Snake Oilers 最有价值的不是单独介绍每一家公司，而是<strong>三家公司在三个不同的安全环节（预防、检测与响应、修复）上给出的惊人一致的答案</strong>：</p>
+
+  <p><strong>1. AI 增强确定性，而不是取代它。</strong> Ent 用编译的策略 IR 保证执行确定性；Spacewalk 要求每条断言带证据；Mondoo 通过 infra-as-code 管道限制修复范围。三家都在用"AI 在最适当的环节提供智能"，而不是"用一个 LLM 取代控制面"。</p>
+
+  <p><strong>2. Agent 必须有护栏。</strong> 三家公司的 agent 都在严格定义的操作边界内运行。Ent 的策略引擎编译成 IR 后就不能被 agent 修改；Spacewalk 要求 agent 的结论必须有证据支撑；Mondoo 的修复 agent 必须通过 as-code 管道执行。</p>
+
+  <p><strong>3. 消除 drudgery，不消除判断。</strong> 三家都不试图取代人类专家。AI 的角色是消除低价值的重复劳动，让专家把时间花在真正需要判断力的地方。</p>
+
+  <div class="author-note">
+    <strong>作者概括</strong>：这一期 Snake Oilers 实际上是 AI 安全工具市场的"现实检验"。三家公司的共同路径是：用 AI 让已有的安全流程更快、更智能，而不是试图发明全新的安全范式。在 "agentic this and agentic that" 的市场喧嚣中，这可能是现阶段 AI 安全创业最务实的路径。
+  </div>
+</div>
+
+<div class="golden-quotes">
+  <h2>核心金句</h2>
+
+  <div class="gq-item gq-blue">
+    "natural language is too subject to interpretation. We can use it as a tool to get to an outcome, but code is nice because it very clearly states what it is that we expect to happen."
+    <div class="ctx">— Brandon Dixon (Ent AI)，为什么策略引擎没有直接用自然语言做控制</div>
+  </div>
+
+  <div class="gq-item gq-green">
+    "We're trying to build the world's most experienced incident responder."
+    <div class="ctx">— Chris Fuller (Spacewalk AI)，产品的核心定位</div>
+  </div>
+
+  <div class="gq-item gq-orange">
+    "The boss comes in, hands you a potato and says, what does it mean?"
+    <div class="ctx">— Patrick Gray，对 IR 工程师日常的经典比喻</div>
+  </div>
+
+  <div class="gq-item gq-red">
+    "if the fastest way to reduce code in your repository is to delete the repo, it's going to be like, here you go, I did the work."
+    <div class="ctx">— Dominic Richter (Mondoo)，AI agent "钻空子"问题的经典例子</div>
+  </div>
+
+  <div class="gq-item gq-purple">
+    "an incident response outcome, a report, a timeline is a very granular conclusion of what the adversary did. It's labeled by probably the most highly knowledgeable, skilled operator at your organization."
+    <div class="ctx">— Tim Wenslow (Spacewalk AI)，安全领域最被低估的数据资产</div>
+  </div>
+
+  <div class="gq-item gq-yellow">
+    "we're seeing probably a tidal wave... for the last three months really seeing AI come into the attacker like toolkit. Whereas in the defenders we're still a little bit slower."
+    <div class="ctx">— Chris Fuller (Spacewalk AI)，攻防双方 AI 采用速度的差异</div>
+  </div>
+</div>
+
+<footer>
+  <p>来源：<a href="https://risky.biz/SNAKEOILERS23PT2/">Risky Business — Snake Oilers: Ent AI, Spacewalk and Mondoo</a> · 2026 年 5 月 · 44 分钟</p>
+  <p style="margin-top:6px;">本文档由 PodDeck 自动生成。引文已通过原文验证。</p>
+</footer>
+
+</div>
+</body>
+</html>

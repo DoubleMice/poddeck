@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-05-31T07:03:32.627Z
+refreshed_at: 2026-05-31T19:14:25.566Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 8
-done: 0
-pending: 6
+done: 1
+pending: 5
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -260,7 +260,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: 76fc2412-c009-4c8c-a4b2-0691e4125090
     title: 🟣 The Collison Brothers LIVE on TBPN | John Collison, Patrick Collison, Henri Stern, Jeff Weinstein, & Zach Abrams
