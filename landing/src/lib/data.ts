@@ -47,6 +47,11 @@ export function getAvailableFormats(ep: EpisodeWithSource): ContentFormat[] {
   return formats
 }
 
+function resolveArticlePath(meta: EpisodeMeta): string | undefined {
+  const articlePath = meta.article_path || `episodes/${meta.id}/article.html`
+  return existsSync(resolve(PROJECT_ROOT, articlePath)) ? articlePath : undefined
+}
+
 // Category definitions with display order
 export const CATEGORIES = [
   { id: 'ai-tech', label: 'AI & Tech' },
@@ -150,6 +155,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
       const meta = readYaml<EpisodeMeta>(metaPath)
       meta.base = meta.base || `/episodes/${meta.id}/`
       meta.category = meta.category || categoryMap[meta.id]
+      meta.article_path = resolveArticlePath(meta)
       if (meta.status === 'generated') {
         meta.generated_sort = episodeGeneratedTime(meta.id)
         meta.generated_at = meta.generated_sort ? new Date(meta.generated_sort).toISOString() : undefined
@@ -208,6 +214,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
     results.push({
       ...ep,
       base: ep.base || `/episodes/${ep.id}/`,
+      article_path: resolveArticlePath(ep),
       sourceRef,
       thumbnail: ep.thumbnail,
     })

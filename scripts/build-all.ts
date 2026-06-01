@@ -7,7 +7,7 @@
 //
 // Usage: pnpm run build
 
-import { resolve, join } from 'node:path'
+import { resolve, join, basename } from 'node:path'
 import { existsSync, mkdirSync, readdirSync, statSync, cpSync, rmSync, writeFileSync } from 'node:fs'
 import { readYaml } from './lib/yaml-io.ts'
 import { run } from './lib/spawn.ts'
@@ -18,6 +18,16 @@ const ROOT = process.cwd()
 const EPISODES_DIR = resolve(ROOT, 'episodes')
 const LANDING_DIR = resolve(ROOT, 'landing')
 const DIST_DIR = resolve(ROOT, 'dist')
+
+function resolveEpisodeArticlePath(id: string, meta: EpisodeMeta): string | null {
+  const declared = meta.article_path ? resolve(ROOT, meta.article_path) : null
+  if (declared && existsSync(declared)) return declared
+
+  const fallback = join(EPISODES_DIR, id, 'article.html')
+  if (existsSync(fallback)) return fallback
+
+  return null
+}
 
 async function buildEpisode(id: string, base: string): Promise<string | null> {
   const dir = join(EPISODES_DIR, id)
@@ -70,13 +80,17 @@ async function main() {
   const SITE_BASE = process.env.PODDECK_BASE || '/'
 
   // Collect all generated episodes
-  const episodes: { id: string; base: string }[] = []
+  const episodes: { id: string; base: string; articlePath: string | null }[] = []
   for (const entry of readdirSync(EPISODES_DIR)) {
     const metaPath = join(EPISODES_DIR, entry, 'meta.yml')
     if (!existsSync(metaPath)) continue
     const meta = readYaml<EpisodeMeta>(metaPath)
     if (meta.status === 'generated') {
-      episodes.push({ id: entry, base: `${SITE_BASE}episodes/${entry}/` })
+      episodes.push({
+        id: entry,
+        base: `${SITE_BASE}episodes/${entry}/`,
+        articlePath: resolveEpisodeArticlePath(entry, meta),
+      })
     }
   }
   log.info(`found ${episodes.length} generated episodes (base=${SITE_BASE})`)
@@ -87,10 +101,10 @@ async function main() {
 
   // Build all episodes
   log.step('Building episodes')
-  const episodeDists: { id: string; path: string }[] = []
+  const episodeDists: { id: string; path: string; articlePath: string | null }[] = []
   for (const ep of episodes) {
     const distPath = await buildEpisode(ep.id, ep.base)
-    if (distPath) episodeDists.push({ id: ep.id, path: distPath })
+    if (distPath) episodeDists.push({ id: ep.id, path: distPath, articlePath: ep.articlePath })
   }
   if (episodeDists.length !== episodes.length) {
     throw new Error(`only built ${episodeDists.length}/${episodes.length} generated episodes`)
@@ -111,6 +125,11 @@ async function main() {
     const dst = join(epOut, ep.id)
     log.raw(`copying ${ep.path} → ${dst}`)
     cpSync(ep.path, dst, { recursive: true })
+    if (ep.articlePath) {
+      const articleDst = join(dst, basename(ep.articlePath))
+      log.raw(`copying ${ep.articlePath} → ${articleDst}`)
+      cpSync(ep.articlePath, articleDst)
+    }
   }
 
   // Write serve.json so `serve` does SPA fallback for each episode
