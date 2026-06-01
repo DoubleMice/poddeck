@@ -1,46 +1,15 @@
 source: risky-business
-refreshed_at: 2026-05-31T19:14:25.706Z
+refreshed_at: 2026-06-01T08:41:57.676Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 7
-done: 1
+total_candidates: 6
+done: 0
 pending: 1
 needs_transcript: 5
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: SNAKEOILERS23PT2
-    title: "Snake Oilers: Ent AI, Spacewalk and Mondoo"
-    duration: 2639
-    published: Fri, 01 May 2026 10:58:34 +1000
-    published_sort: "20260501"
-    first_seen_at: 2026-05-19T08:55:24.848Z
-    url: https://risky.biz/SNAKEOILERS23PT2/
-    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS23PT2.mp3
-    image: https://risky.biz/static/img/rb-feed-main.png
-    summary: >-
-      In this edition of the Snake Oilers podcast three vendors stop by to pitch the audience on their products:
-
-        
-          Ent AI: Co-founder Brandon Dixon pitched Ent, an intent-aware, AI-powered endpoint security control.
-        
-        
-          Spacewalk AI: Founders Chris Fuller and Tim Wenzlau pitch Spacewalk, an AI-powered incident response platform.
-        
-        
-          Mondoo: Co-founder Dominik Richter pitches Mondoo, an AI-powered “service as software” in the vulnerability management space.
-
-
-        
-
-      This episode is also available on YouTube.
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: e24f240ad7ce4214876376d8791c7d15,2d1affab7e8d4a828b300efaf059b9d1,62f8616db25442ccb677c7d9fd057a80
-    transcript_submitted_at: 2026-05-30T19:17:52.341Z
-    transcript_completed_at: 2026-05-30T19:20:14.914Z
   - id: SNAKEOILERS23PT1
     title: "Snake Oilers: Burp AI, Sondera and Truffle Security"
     duration: 2880
@@ -62,15 +31,14 @@ episodes:
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
 
-
         
 
       This episode is also available on YouTube
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-05-31T19:26:18.097Z
     transcript_job_id: 54754a54ae9147b99e084980cf906b25,b0258820da954394a8dff9993a103c27,9a252a0ced8c415bbaa8d6ba04282332,0ada0f1377cd4baf808a8f846817ee87
+    transcript_submitted_at: 2026-05-31T19:26:18.097Z
     transcript_completed_at: 2026-05-31T19:30:15.682Z
   - id: HTWGO2
     title: "How the World Got Owned Episode 2: The 1990s, Part One"
