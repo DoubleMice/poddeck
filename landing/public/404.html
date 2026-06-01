@@ -38,7 +38,11 @@
       if (match) {
         var spaRoot = match[1]
         var rest = match[2] || ''
-        // Slidev SPA handles the rest — just redirect to the episode root
+        // Static episode assets, including generated articles, should stay as
+        // real 404s when missing instead of being rewritten into the Slidev SPA.
+        if (/\.[^\/]+$/.test(rest)) return
+
+        // Slidev SPA handles route-like paths — redirect to the episode root
         // and preserve hash/search for in-SPA deep linking
         window.location.replace(spaRoot + window.location.search + window.location.hash)
         return

@@ -132,20 +132,6 @@ async function main() {
     }
   }
 
-  // Write serve.json so `serve` does SPA fallback for each episode
-  // Each /episodes/<id>/<anything> → /episodes/<id>/index.html
-  // Note: `serve` doesn't apply the site base, so these paths are relative to dist/ root.
-  const rewrites = episodeDists.map(ep => ({
-    source: `/episodes/${ep.id}/**`,
-    destination: `/episodes/${ep.id}/index.html`,
-  }))
-  writeFileSync(
-    join(DIST_DIR, 'serve.json'),
-    JSON.stringify({ rewrites }, null, 2),
-    'utf-8',
-  )
-  log.ok(`  wrote serve.json with ${rewrites.length} rewrites`)
-
   log.ok(`\nFinal dist assembled at ${DIST_DIR}`)
   log.info('serve locally with:  npx serve dist')
 }
