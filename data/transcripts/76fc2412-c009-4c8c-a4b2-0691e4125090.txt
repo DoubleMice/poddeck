@@ -1,0 +1,656 @@
+Speaker 1: You're watching TBPN. We are here live at Stripe Sessions. We're joined by John and Patrick Collison. Thank you for having us. How is it going so far?
+Speaker 2: It's incredible. We have 10,000 people here.
+Speaker 1: Thousand people here.
+Speaker 2: Yeah. Yeah. And it is just the center. The economy is re platforming around AI, and I think that's the theme of the conference.
+Speaker 1: Which economy? Is that the global economy of which you control 1.6%?
+Speaker 2: That is the We talk about the Internet economy. But you know yourself, everything is in the Internet economy There's these very few companies that are not interesting at being at the center of the Internet economy. It's increasingly the whole thing.
+Speaker 3: When we spoke a couple weeks ago, which in singularity time is a couple months ago or exactly, we said that we're seeing a significant surge in new business creation. That has roughly doubled again since then. So, as of
+Speaker 1: And wait, are you tracking that through Stripe Atlas specifically or through just new companies that are onboarding to Stripe's Both. Payment Both. Okay.
+Speaker 3: So March was an all time record for new incorporations with Stripe Atlas. Yeah. And then in q one overall for just new businesses joining Stripe, that was up 71% year over year. We showed the chart at the beginning of our keynote yesterday. It is parabolic, it is exponential.
+I'm running out of mathematical terms, but it's really very striking.
+Speaker 1: And do you like the
+Speaker 4: I guess my color
+Speaker 1: is all ruffled. There we go.
+Speaker 2: Someone's ruffled.
+Speaker 1: Yeah. And and and do you like the idea that this is driven by AI, this is driven by democratization of more tools, smaller companies, that there's more sort of like lifestyle businesses popping up?
+Speaker 3: I So, initially, thought when I saw these charts that it's about new vibe coded businesses that are more abundant in number, but in any given instance, maybe not as significant or not growing as quickly or whatever. What we're actually finding is not only are there so many more businesses, but the average revenue per business is also increasing.
+Speaker 2: Okay.
+Speaker 3: And so, it's not just more new tiny ones. Yeah. Somehow, the median business is also doing better.
+Speaker 2: Yeah. Think even the term lifestyle business, you know, there's like a bit pejorative. It betrays a world view. Whereas what we're seeing is there's tons of business now making more than a million dollars a year. Yeah.
+Like that number is really inflecting. And in general, like we think about it in, oh, you got the little color service. I mean, I just want to be doing my color myself. And so, you also have to look at it almost in cosy in terms where what we're seeing is more small I'm
+Speaker 3: gonna get citizenship revoked for drinking this. I just wanna clarify
+Speaker 5: Full size pines,
+Speaker 1: These are full size We're just very large humans.
+Speaker 2: I just wanna clarify that it's Guinness zero zero, which is very good. But given that it's 11AM, it's a little early.
+Speaker 1: Yeah. But what are seeing on coast?
+Speaker 2: Oh, just yeah. We're seeing thanks to AI, you now have more small businesses able to do million dollars plus of revenue and be really impactful. And so we think you'll probably see smaller firms have a big impact.
+Speaker 6: And and and what's driving this is you think AI is making every little step of entrepreneurship slightly easier, like slightly easier to incorporate, slightly easier to create a contract Nice.
+Speaker 1: Or to
+Speaker 6: hire somebody slightly easier to create an ad, then you add all that together and
+Speaker 3: it It's the merging of
+Speaker 2: all the functions. It's the fact that you can do your design and your PM and your engineering all yourself as one really effective person. Sam Altman was here yesterday on stage and he was talking about the return of the idea guy. Fact that The
+Speaker 5: of the
+Speaker 2: idea guy. Exactly. Yeah. Yeah. The fact that if you the long maligned idea guy, but now if you have really good ideas, you can actually go execute them and you have so much more capability to do so.
+And again, we are seeing that born out in the Stripe data where I think this phenomenon shows up as 71% year over year growth in businesses launching.
+Speaker 1: So I mean, feels like you could do nothing and win. Stripe's in the right place at the right time, but you're probably not taking We
+Speaker 2: are not doing nothing. I'll tell you that.
+Speaker 1: Yeah. So tell me what you're actually doing. How are you accelerating these businesses? Like, what are you changing about Stripe? What products are you adding?
+What functionalities are you building?
+Speaker 2: So all the commerce is going agentic. Yeah. We think that people will like, people will still be doing stuff
+Speaker 4: Mhmm.
+Speaker 2: But they will do it through their agents. So what does that mean? On the consumer side of things, like we've all had the experience of, you know, you're in ChatGPT and you're like I was trying to buy a case for my bike and I was going back and forth and I was, you know, asking questions about, well, how do you know, hardware, soft, things like that. But anyway, at the end of that, you just want to be able to hit buy rather than like, no one wants to fill out web forms, it's not a value add activity. And so, we just announced that Google is joining our agent to commerce suite.
+Now we have Google, OpenAI, Microsoft and Meta all working with us on this agent to commerce modality where you can just buy there. That is the consumer side of things. Do you want talk about the developer side of things?
+Speaker 3: Well, give you three other things. So, first, we're seeing a change across the economy in business models, where with inference costs, with tokens and so forth, and so many businesses, in some way, taking advantage of AI in their products, We're seeing a shift from SaaS, from seed based business models to usage based business models. Yep. And I think this is pretty profound. So, we acquired a company called Metronome back a couple months ago, and we're now integrating that cohesively throughout the Stripe platform.
+We demoed yesterday, I think, that
+Speaker 5: I think is very cool,
+Speaker 3: and is the intersection between crypto slash stable coins and usage based billing, where basically you can have streaming payments Mhmm. Where you're paying for each token as it's delivered.
+Speaker 4: In real time.
+Speaker 3: Yeah, exactly. Today, there's a kind of credit extension that implicitly happens with any token billing when you're billed at the end of the month and so forth, which is actually pretty tricky because if you've token thieves, if you've, you know, some failed billing after somebody racked up a million dollar credit card tab or something, that's a real problem for the providers. Anyway, doing a lot around usage based billing and this economy wide structural transformation. Then secondly, to this fraud point, we're seeing, I mean, concomitant with the enormous increase in new business creation, we're also seeing a lot of fraud. Okay.
+And there's
+Speaker 4: A lot
+Speaker 2: of fraud attempt.
+Speaker 3: Yeah. So, you know, when you You can't resell access to software. And so, if you got illicit access to some SaaS tool two years ago, there wasn't much you could do with that to monetize, so to speak. Right. There wasn't much incentive to steal SaaS.
+But, you can resell tokens. It's very lucrative to do so. Yeah. And so, all these new AI companies and all these new AI products, growth is not really a problem for them. They have a surfeit of growth, but there are also a lot of people and token pilfers looking to to Ne'er
+Speaker 2: do wells.
+Speaker 3: Exactly. Looking to run away with these these, you know, this precious value.
+Speaker 6: And and and walk us through how that would work how that works in practice. Is that somebody spinning up a bunch of free accounts
+Speaker 3: That's right.
+Speaker 6: And then, like, hitting them with just kind of the bare minute or
+Speaker 1: staying with distillation or actual reselling? Both. It's really both. Yeah. So so so it's definitely just
+Speaker 3: straight resell Yeah. But it's also more sophisticated attacks and distillation. So anyway, we've seen that one in six new accounts across this ecosystem are fraudulent. And for many providers, it's actually difficult now to offer free trials because, you know, the illicit accounts that set up for these free trials, they drive so much expense that it's hard to make the overall economics work out. So, anyway, we're extending Stripe Radar to use the intelligence of the Stripe network to help any of these companies, not only score payments, but score customer sign ups, to score trials, and we're turning Stripe Radar into this into this sort of x-ray vision for the AI economy to try to prevent these new and more sophisticated attacks.
+I think this is really important in that we're not gonna have an Internet with self serve access
+Speaker 4: Yeah.
+Speaker 6: Unless Interesting. So just to repeat it back to you, the the if if somebody signs up and they can basically pay for token streaming with stable coins, that would enable, like, let's say a big AI company to be able to offer a self serve product and not worry about come someone coming in, running up a big to token bill and then saying, like, see you, but not even in the country.
+Speaker 3: That's exactly right, but we're also gonna try to protect the regular sign up flows as well and the kind of more straightforward consumer access.
+Speaker 2: If you run any physical store, have to worry about shrinkage. And, you know, no one wants the direction of travel where, you know, you go to a CVS and everything is locked up behind a painting you know? Yeah. Good, upstanding people suffer from the small percentage of crime that happens. It's the exact same in the AI land where similarly they are selling a product that has real value, real resell value, exactly real costs associated.
+And so therefore, they need to prevent fraud not just for financial loss for themselves, but also so they can continue to offer a great experience to all the good users.
+Speaker 1: And I I wanna go way deeper, but I know you have a hard stop. Do you have something else to say? Well, I
+Speaker 3: was gonna say one thing before I have to scurry which is, you know, so we're, we've this usage based billing stuff, we have the agenda commerce stuff that John just described, we have this new fraud functionality, and then the other thing is Stripe started out, of course, as a payments company, we've, over the last couple of years, Stripe has been becoming a broader programmable financial services platform. Yeah. And that's a bit of a mouthful. What it means in practice is that not only should we be able to get paid with Stripe, but you should be able to hold money in Stripe, be able to pay people around the world, be able to orchestrate your entire financial services business, so to be an operating system for for global money movement. And so we announced Stripe Treasury where businesses can hold balances in Stripe, they can dispatch money to more than a 150 countries, the instant free Stripe to Stripe account transfers and so forth.
+And so rather than Stripe be this sort of conduit for money ephemerally passes through, Stripe is becoming a home. And this is very valuable, we think, because Stripe's expertise in building programmable tools and APIs and CLI functionality and all the rest, this is obviously much more important in Was the GenTex
+Speaker 6: Sorry to cut you off. Was this in the seed pitch deck?
+Speaker 1: No. No. This was in the seed pitch deck.
+Speaker 4: I mean
+Speaker 6: But imagine, like, you're in the fund you're you're telling people, we're in the funds flow. At some point or another, we won't just pass this back to their bank account. We'll actually be able to unlock the value of the
+Speaker 2: That wasn't in the seed pitch deck. And in general, you know, the secret to being a Silicon Valley founder is you have to, like, get lucky for many many years in a row and then you go back and you pretend that that was, you know, your plan all along. Know, recount. Exactly. Yeah.
+You do a lot of recounting. That's that's very important. However, what I will say is interesting is we did focus from the very beginning on developers. And we thought developers were very important to underserved. I mean, Stripe's original name was slash dev slash payments.
+And payments for developers was that you can go back in the way back machine. That was the tagline on the website. I think what's interesting now, obviously, is that all the agentic coding tools need something with well documented APIs, with everything being available on an API basis. So I think we have always thought that companies should take developers more seriously. I think we're now seeing just industry wide companies that took developers seriously are now really benefiting from this AI moment because they built their stuff for the agents.
+Speaker 6: Well, also everyone's a developer now. Exactly.
+Speaker 1: Going back to
+Speaker 4: the same time.
+Speaker 1: Agents feel like they are developer shaped at least.
+Speaker 3: Exactly. Agents want good DX developer experience even more than humans do. Yep. And so if you don't have it, I mean, it's it's a real problem.
+Speaker 2: Not gonna make sense.
+Speaker 1: I think they're gonna tell me if we keep you any longer.
+Speaker 4: Okay.
+Speaker 1: Yeah. We'll let you get out of here.
+Speaker 3: Did want you to
+Speaker 1: sign this plaque. Can you explain to us what this is and what it what it stands for? Are you familiar? This is the original Of course. Print that went into Wait.
+Wait.
+Speaker 4: How did you
+Speaker 1: get that?
+Speaker 4: That's alright.
+Speaker 1: Would into us, and we want you to sign it. You thieves, they recommend this right and here. From the archive. We have a museum of business where we try and accumulate signed objects of historical
+Speaker 4: And
+Speaker 3: this is the new for Charlie Dominic? Paper cover.
+Speaker 1: Hey. This is the paperback Yeah. Paper cover of Port Charles Armen.
+Speaker 2: It's heavy.
+Speaker 1: It's this is very heavy.
+Speaker 2: We made the original hardcover if you have this of Poor Charlie's Almanac.
+Speaker 1: So sorry. I'm standing there. And we'll have Patrick Henri right over there. Yep. And this will live on The literal gold masterpiece.
+Museum of Business. And we will let you get out of here. And we will go way deeper. Stay with us. We are gonna continue our interview with John Collison from Stripe at Stripe Sessions here in San Francisco.
+Thank you so much, Patrick, for taking the time to come chat with us.
+Speaker 6: Great to
+Speaker 1: have We really appreciate having you on the show. It's always a pleasure. Cheers. And congratulations. Cheers.
+Do wanna hit have you can we have you hit the gong? What is the headline number? You need
+Speaker 5: to gong.
+Speaker 1: Let let's
+Speaker 6: Is it 1.6?
+Speaker 1: Is it 1.6? Is that the headline case? That is
+Speaker 2: the 2025 number. Stay tuned for the 2026
+Speaker 1: number.
+Speaker 6: Here we go.
+Speaker 1: And smack that gong.
+Speaker 4: There we go.
+Speaker 6: Powerful. We love a good hit.
+Speaker 4: Yeah.
+Speaker 6: Powerful hit.
+Speaker 2: I see why you can tell he's
+Speaker 1: been lifting. Yes. Yes. Yes. Well, thank you.
+Have a great rest of Stripe Sessions. We really appreciate you coming on the show. I wanna just shift over to another Stripe Press book. This is Maintenance of Everything by Stuart Brand. And in here, the general thesis is what what maintenance of everything.
+I I mean, I'd love to know what you took away from this, but maintenance is what keeps everything going. It's what keeps life going. And he gives a ton of really interesting anecdotes about cars and repairs and weaponry and sailing, and there's so many interesting anecdotes. I'm wondering about your thoughts on maintenance in the age of AI and what you feel and see in this like, we're in this maybe there's, this job replacement thing. AI does everything, but then there's so much that
+Speaker 6: goes on in the maintenance technical debt.
+Speaker 1: And so I was wondering if could just reflect on like Brand's work in the age of AI.
+Speaker 2: So, Stewart Brand is obviously amazing and, you know, is maybe famous for the the whole earth catalog originally, which, you know, Steve Jobs talked about in that that famous commencement speech. But Stewart Brand has been around for the entirety of Silicon Valley history. Like, if you go back and read the Tom Wolfe book, The Electric Kool Aid Acid Test, I don't know if you guys are big Tom Wolfe fans, but he's talking about the early LSD culture of the 1960s in the Bay Area. They're having these parties. Stuart Brand is in the book, know?
+He's like there at
+Speaker 1: those early parties Docs. Docs. Yeah.
+Speaker 2: When like the, you know, the Grateful Dead and everything And like so he's just been like there for everything all along. He was the manning the computer at the mother of all demos, you know, the Engelbart famous demo.
+Speaker 1: That was where the original mouse was demoed? Exactly. The mouse was shown. Exactly. Among a ton of other things.
+Speaker 2: Exactly. So Stuart Brand is still you know, he just published this book. Yeah. And so Stuart Brand is so intertwined with the history of technology and Silicon Valley Studio technology. Yeah.
+And obviously, what this book is getting at and also the Whole Earth Catalogue is this passion for tools and taking care of your tools and kind of thinking about tools. And it's interesting you bring that up in the context of AI because one thing that I get excited about in the current moment is this idea of individual empowerment. And you could have different visions of AI and I definitely have an adverse reaction to this very passive You know, I think the term slop is the term we use for this just being a passive recipient of AI generated stuff and no one wants the brave new world Soma kind of vision. And instead, if you look at something like OpenClaw, I get very excited about that because you are giving computing power and the ability to do stuff with programming and tinkering with technology. It's the homebrew computer club all over again.
+It's this tinkering energy that's And so I just get really excited about how I think tools and passion for tools
+Speaker 6: How is it much negativity there's been towards the entire Mac mini Open Claw movement when it's like, for how how how long how long has Silicon Valley been like, if I miss the days of, like, the hacker era?
+Speaker 1: Yeah. They are hacker era comes back and
+Speaker 6: then and then people break the market.
+Speaker 2: Yeah. I agree. And I okay. I was reflecting on this. I think there's something interesting where people maybe have an adverse reaction to early adopter enthusiast culture.
+The early Open Claw enthusiast group really reminds me of the early Bitcoin enthusiast group who also got people's backs up in a way. You remember that famous New York Times article with, like, the guys with the sweaters? Like, those guys are presumably big into Openclaw right now. So there's something about the maybe because people tend to over hype stuff, you know, they say my Open Claw does this, like, maybe it doesn't quieten or But something like the tinkering is back and I think that's really cool. So I agree with you.
+It's crazy that, you know, people have this skepticism because it's easily like the most fun you can have with computers.
+Speaker 6: Yeah. People on people on X, you know, see an Open Claw meetup in some place like Tokyo and they're just like mocking it. Right? Yeah. And it's like, isn't this isn't this isn't this, like, core to the culture?
+Speaker 2: Exactly. Yeah. I'm totally with you.
+Speaker 1: That is the optimistic take on Open Claw tinkering. I love that. That's what I believe. But there is the other side, which is the not just the tools, but the tool shaped objects. You've heard of this criticism that you wind up I I've I've had this exact experience where I've gone to Codex and built a whole thing and been like, that could have just been a prompt.
+And, like, I didn't actually need to have it instantiated Python script. Like, I could have and and and I think there is a risk in some enterprises of having 25 people vibe coding dashboards when you could have just had one. There is some managerial deduping and overhead in management. And I'm wondering how you've grappled with that side of AI.
+Speaker 2: Yeah. Mean, a few thoughts here. One is I think it's just awesome that software is becoming so accessible. I think we should really celebrate that. I'm writing much softer, even just from a fun perspective because it is so fun and it's this addictive feeling.
+I think we're also very clearly in a transitional state where it just doesn't feel to me that the way we do things in 2026 where, you know, you need to prompt us to, you know, make no mistakes. Or, you know, you saw the caveman token efficiency thing where it's like if you talk like a caveman and I ask you talk like it, it just uses fewer tokens. And so but gets the same result, you know, it's as effective. And so if you want to kind of economize in the token budget, you talk to your every manager.
+Speaker 1: Prompt was no six fingers. Yeah. And I haven't seen an AI image with six fingers in a year. Exactly. It just we just crossed that chasm.
+Speaker 2: Exactly. You know, if you're doing anything with financial data, you know, you need to prompt it to do not make up any numbers. And then it's much better as not making up numbers. We're right. So where we are in '26 is clearly not where we're going to be.
+The models are getting much better. But I think right now we're in this interesting transitional period. There is this software fatigue, as you say, where, you know, from software maintenance, things like that. I think we'll get there. And like all these things, you know, there's puts and takes.
+People are talking a lot about the offensive side of security, which is true with, you know, the very powerful new models. Sure. But of course, also have the defensive side of things where if you ask your, your 5.5 to audit, go take a look at this application, take a look at this, just go putter around this server and give me a security audit and suggestions to lock it down, it'll do a great job of that. And so, again, I think we just haven't figured out what the end state is.
+Speaker 1: Yeah. Yeah. It does feel like as we move up the layers of abstraction, we go from pair programming alongside an AI to being more a product manager to almost winding up more in a build versus buy mentality. Yes. And, yes, you could vibe code that.
+But if it already exists or it's open sourced already or there's something you can pull off the shelf, and it's gonna be cheaper than the token cost, cheaper than the maintenance, like maybe But,
+Speaker 2: again, we'll end up in a new equilibrium where Yeah. Exactly. You know, the I exporting your data will become more important because you'll get back to the Unix philosophy of you have individual tools that are much easier to interoperate between each other. You can kind of pipe your data conceptually between applications. If I can also bring this back to payments for a moment, a very important angle on all this stuff.
+You guys have probably had the experience of when you are doing something in Codex, when you're vibe coding away, you are the adult that needs to reach for things on the high shelves Yes. And so, it is much better at writing code than you. It's able to architect an application. So, what do you need to do? You need to go sign up for an API key for
+Speaker 1: get a PDF of a website that I can't access. Exactly.
+Speaker 2: Log in and please get me API keys is like something you end up doing a lot.
+Speaker 1: Set up And so,
+Speaker 2: one of our biggest announcements this year was something called Stripe Project where you are able to agentically do stuff in the wider world. And so, you can hook up your codecs to Stripe Projects and if you want to redemo this, if you want to deploy a website, it can go sign up for Vercel for you
+Speaker 1: This is huge.
+Speaker 2: And it can pay for
+Speaker 4: it.
+Speaker 2: And so, now, what was previously a multi step process where it could kind of do some version, could like orchestrate Vercel but it couldn't sign up
+Speaker 4: for it.
+Speaker 2: Now, it can pay for Vercel. It can pay for Cloudflare. It can pay for browser base if you want to do headless web browsing and things like that. It can do all this stuff. And so we think the agents are gonna get so much more powerful because we're giving them the ability to actually go buy what they need in the wider world and then it can do way more end to end.
+So that's Stripe Projects, which is kind of the second side of agent commerce is agent needs to be able to go do stuff on your behalf. You're exactly right. Agentic coding agents are not just for coding. They're for doing stuff. We demoed today.
+Write a research report for me. Buy some data in the process of doing that research report. But again, that's not I happen to use a coding agent for it. It is not a coding task. It's a it's a research task.
+Speaker 1: Yeah. This happened. I on the show, I used Codex. I vibe coded a a a a beautiful web page for some joke we were joking about. And I was like, I it's on my local host.
+I need to send it to Jordi. And actually deploying it was the harder part, which is supposed to be so easy.
+Speaker 2: That's that's Stripe projects is the only way you can agentically buy a domain. Like, you you don't need to have anything. You don't need to have
+Speaker 1: an account
+Speaker 2: with any of these providers. You can just go buy a domain. It's super cool.
+Speaker 1: And I feel that's really important.
+Speaker 6: Let's start recruiting How changed over the last Because few I feel like so much of what made has made Stripe such an incredible company is convincing the smartest most ambitious people in the world to work in payments. A place that they historically wouldn't have been excited to work. And then now, I imagine the job of any person that could get a job at Stripe can probably also get an offer at OpenAI, Anthropic,
+Speaker 5: some
+Speaker 6: of these other labs. And so I imagine you find yourself having conversations with folks Yeah. And helping them make a decision.
+Speaker 2: Yes. Mean, some of the places you go there. One, as you say, I think we have always encouraged people to think bigger than just payments. And I think if Stripe was just about payments, fewer people would have been interested in joining. But I think they understand that.
+Going back to tools and the importance of them, I think people understand that the infrastructure that we give people for entrepreneurship actually changes the outcomes. Know, we're moving the supply demand curve. So we can encourage there to be more entrepreneurship. Again, Pat talked about 71% year over year growth in the number of businesses being created on Stripe. That's not all Stripe but we definitely contribute to it by making the whole entrepreneurship journey easier.
+And then when those companies scale, OpenAI sells CheckGPT, I think, more countries than it otherwise would have because all that infrastructure is just super available and on rails. And so it exists that kind of the small getting started end of the spectrum and for the biggest companies in the world, the Amazons and Hertz's and Metas and everyone like that that we work with on projects like this. You probably saw the Stablecoin thing. We answer them. Okay.
+So that's one part of it is like you have to genuinely have a mission that's interesting and I think we believed and believe that this stuff actually really matters and you can change the end equilibrium. That's one. Second thing is that it has always been the most competitive time I can remember to compete for talent. It's just like I can never remember a time when it wasn't the case.
+Speaker 1: And also, it was easy when competing you with Mark Zuckerberg. And then it was easy when you were competing against Elon Musk.
+Speaker 2: No. Forget one where like, your man steps in the same river twice because, you know, he's not the same man and it's not the same river.
+Speaker 1: Yeah.
+Speaker 2: Like, I remember, you know, when we were recruiting Greg Brockman who's our second employee who you know, we're gonna have a speak yesterday but with Sam instead because we had a lot going on this week. But remember recruiting Greg to join Stripe as our second employee flying across the country to Boston to go meet with him because like, you know, why would you join this like no name company that you've ever heard of? And that's the kind of stuff you do then and like so it's always the most competitive time that it's ever been with recruiting and this is certainly no exception and people have a lot of great options. That kind of gets to I think, people are talking about the death of software engineering and honestly the closer people are to AI, the more they're like, oh, engineering is cooked. It's got two years left.
+I think those people are all high, honestly. Just You have so much You are able to work with AI so much better if you understand the underlying concepts and you're so much better prepared for that. And I'd almost analogize it to, remember in the nineties, people had this view that like, okay, the cloud or like a proto cloud back then is coming along. The network is the computer, all this vision. And people tried to have these leaky abstraction or like abstract, they thought they had a beautiful abstraction where you would have a folder that just happened to be on the network in the cloud.
+Sure. And still have that on the Mac today, your iCloud folder And and things like same on Microsoft Windows. Those never worked that well because it turns out the network exists and it can sometimes be down in a way that your hard drive wasn't and things like that. And so, it was always important to understand disk IO and RAM swap and all these kind of things even if you had useful helper abstractions over them.
+Speaker 1: I
+Speaker 2: think with AI, similarly, to be really effective working with AI, you need to understand what it's doing and what's going on underneath the hood. You need to understand the model and then the memory and then you have your harnesses and you've got your skills and everything like that and how they all interact. And so I think all these people calling the death of software engineering, yeah, are are smoking something.
+Speaker 1: Yeah. I mean, there's also just the software engineers are dynamic and intelligent and creative and can operate at various levels abstraction. And there have been transitions You wanna
+Speaker 6: you wanna make the argument that AI will will transform every aspect of the economy, but then engineering, like Yes. Core understanding of engineering and software engineering will no longer be valuable. That's that's And and and and some of some of the people that are are more bearish on on the practice of software engineering have, you know, uptime issues and like Stripe is a category where you guys can't really afford to have Yes. You know, reliability issues.
+Speaker 2: There's two categories of people I would be super bullish on right now I think will do incredibly well over the coming ten to twenty years. Firstly, high agency people. We know this at Stripe. The people who are like, I've been talking to customers. I know exactly what we We should gotta go fix this.
+But the people who have that pep in their step and they want to go make Stripe better, they are now so much more empowered thanks to AI. The second is double majors. I think if you understand software and understand finance or if you understand software and understand marketing, you now can go massively improve the entire marketing funnel for your company and one person can do what would have taken 20 people Yeah. Dredging through all these systems previously.
+Speaker 1: Famous Paul Graham quote about that too.
+Speaker 2: Yeah.
+Speaker 1: Exactly. Typically, an entrepreneurship team, a founding team has a collection of like five or six skills between two founders, three founders.
+Speaker 2: Charlie Munger Yeah. Talked about the importance of being multidisciplinary and multidisciplinary thinking. And implied was that like, he thinks getting a functional understanding of many disciplines is not that hard. You can just go read the books now. You know, you can talk to your AI about it.
+So I think multidisciplinary thinkers are gonna do incredibly well.
+Speaker 1: Yeah. Do we have a minute to talk about stablecoins?
+Speaker 2: We have one minute.
+Speaker 1: Yeah. Okay. One minute. In The Economist in Buttonwood, there is a there there's a lot of doom and gloom about the stablecoin winter. I put a ton of money in stablecoins.
+Didn't make a dime. That's I know. I'm good. They're saying it's too stable. But they are saying that the market grew 30% in the six months up until late October, but still total stablecoin assets have barely bunched since.
+Are we in a stablecoin winter broadly? Are you seeing
+Speaker 6: Yeah.
+Speaker 1: This is adoption is still random.
+Speaker 6: Not processing that there there can be a correction. There can be I'll I'll
+Speaker 1: see that.
+Speaker 6: A correction in crypto asset prices and yet more adoption than ever in actual the utility of stable coins, and and the two things are not not not the same.
+Speaker 2: We're always trying to point out to people, like, the difference between price curves and the underlying activity. Yes. Are very different things. Yes. And, you know, we're talking about that in the SaaSpocalypse in the context of SaaS growth is
+Speaker 1: pretty good. The companies are still growing top lines. Exactly. Top line growth is really
+Speaker 2: good and everything like that. And so, kind of a similar story with stablecoins where we see volumes continue to grow and, again, we have this in a lot of our demos, with agentic pay per use payments or streaming payments or things like that, you actually have to use something like Tempo. Have to use stablecoins because economically speaking, just like what else are you going to do. Mhmm. And so we are as bullish on stablecoins as we've ever been.
+Speaker 1: Fantastic. Well, thank you so much for taking the time. It was awesome. Come on the show.
+Speaker 6: Great hanging out.
+Speaker 1: This is great for
+Speaker 5: having us.
+Speaker 1: Us. For
+Speaker 6: having cheeky pint.
+Speaker 1: Yes. There you go. You guys
+Speaker 2: have the perfect setup.
+Speaker 1: Have a great rest of Stripe's session.
+Speaker 6: We'll grab your headphones off, as
+Speaker 1: and we will bring on our next guest.
+Speaker 2: Alrighty. Tap out. Cheers. Goodbye.
+Speaker 1: And we will bring on Henri next. Welcome back to the show. Last time we were in person, we'll let you put those headphones on. I think last time you were in person, didn't you help us translate something in French? Something random?
+Do you remember that?
+Speaker 7: I do. This is my second audition.
+Speaker 1: Yes. It was about It's fantastic. You you can sit here.
+Speaker 7: It's about meta's acquisitions.
+Speaker 8: Oh, yeah.
+Speaker 1: Of That's right. Yeah. Yeah. Because we were interviewed for French TV. Exactly.
+And we didn't know what they were saying. You helped us understand it. That was fun. What a wild time. I mean, I guess it's only getting wilder.
+Have you been struggling with any of the the talent wars or have you been recruiting for your team? Are you growing your organization now?
+Speaker 7: All of the above. I mean, so when we were acquired, this is coming up on nine months. Yeah. We were about 30 people Mhmm. At Privy.
+Speaker 1: Yeah.
+Speaker 7: We're about 60 now.
+Speaker 1: Yeah.
+Speaker 7: And then Stripe generally is doing so much more.
+Speaker 1: Sound board made it.
+Speaker 7: Incredible. Yeah. And then Stripe is doing a lot more in this Yeah. Generally, I think the talent wars are real. Mhmm.
+Also the reality is is is twofold. First, you had to be a little bit damaged to go into crypto and stable coins to begin with. Mhmm. And so we're seeing these people who are still, you know, coming in. And then actually, we're seeing a lot more merging of the two.
+Yeah. Which is to say, yeah, yesterday was a good demo on like streaming micro payments. Like, there's a lot more that I think stablecoins and like, you know, Internet native money is gonna enable for agentic use cases. It's still very much in its infancy, but it's
+Speaker 6: like Yeah. We just spoke with the Collison's around, you know, the all this issue around AI fraud, people signing up for a bunch of free accounts to get access to tokens, or people signing up for an account, running up a bill, and then basically stiffing the the provider. Yeah. And and how Stablecoins could effectively be a solve for that, which is like, hey, if you're if you're if you're gonna just sign up and use this tool, that's fine. We don't necessarily know who you are.
+We don't need to KYC to use like a, you know, a a a language model. But Mhmm. You might need to use Stablecoins
+Speaker 7: To pay as you go. To
+Speaker 6: pay there's as you go. No so there's no For sure.
+Speaker 7: I think a lot about it in terms of like, you know, tier one, tier two, tier three ISPs where you'll call between, call it Verizon and AT and T. And then, at the end of the month, you'll settle the bill across the tier ones. Like, I think there's just such an interesting design space for managing token spend payments and so on using programmable money in in in the era we're coming into.
+Speaker 1: Or have you been tracking the showdown between the the stable coin community and the banks? This was in the was in this this economist article And as I and I wanna know if you think that this is a true collision course, if there will really be a showdown. The the concept here as as put in Buttonwood in the in the economist's, the prospect of stablecoin growth spooked America's banks. This is because a loophole in the law lets stablecoins offer deposit like yield without bank like regulatory burden. The American Bankers Association warned that a $2,000,000,000,000 market for stablecoins, if it was all dollar pegged, could lead to a 10% decline in bank deposits.
+That would raise average funding cost for lenders by about a quarter of a percentage point, they said, crimping their profits and driving up interest rates on all manner of loans for everyone else. Is this a real issue? Is there a logical solution? Is there going to be some sort of unification where the stablecoin community and the bank and
+Speaker 6: the treasury bank we not get a did they not get a solution with the Genius Act?
+Speaker 1: I think it's yeah. Please.
+Speaker 7: I'll follow you.
+Speaker 1: Oh, well, I I mean, in here it says, bankers and stable coin issuers have since been locked in a fight over the final shape of a follow-up bill, the Clarity Act. So that's where we are right now, but I wanna know where you think it goes from here.
+Speaker 7: So, Polymarket, last I checked
+Speaker 1: Okay.
+Speaker 7: Has it at around 45%. The the the Clarity bill will make it out of committee and actually pass. And I think the reality is Genius was basically as buttoned down as it could be on this specific issue. And this is why clarity needs to exist to set standards and and procedures for actually doing this. I I think it's a really
+Speaker 6: If were such a genius, should have provided more clarity. More clarity. It's very good. But this is
+Speaker 7: this is why
+Speaker 1: the show exists. Exactly.
+Speaker 6: See this crowd doesn't like it.
+Speaker 1: Crowd like it flops. It flops.
+Speaker 7: For those of you viewing, I see this as the acoustic set versus the ultra dome. This is you guys coming in unplugged.
+Speaker 1: Totally.
+Speaker 7: But but I No. I think it's an essential issue. I think right now you're seeing also a twin thing around tokenized deposits versus stable coins. Yeah. And like two different formats for how digital assets, I guess, can impact finance and fintech generally.
+The the reality is I think more competition
+Speaker 6: Say more about tokenized deposits. I I can imagine what that is. It's Which is like, I go to a bank, I give them an actual dollar And you get an exchange. Tokenize it, but then they're keeping the dollar there Exactly they're right. Funding against it.
+Speaker 7: So it is it is the
+Speaker 6: Maybe they maybe they give me some yield even.
+Speaker 7: And and they'll run all of the same in in the back that exists today, but you have a digital representation of your deposit that you can use. And so, in a sense, it is a is akin to being handed a a code check ticket. Yep. And you get to walk around with your ticket and at some point, you can redeem it at the code check or another code check potentially versus the stable coin where you're actually holding the asset itself. Mhmm.
+And I think those are the two pathways that are getting a lot of exploration in the space. Ultimately, think, you know, a lot of these rails will merge and I think more importantly, the question is one of like competition for the consumer. The consumer should have more ways of actually earning on their on their assets. And so, the idea that we need, you know, greater clarity as it were Yeah. With issuers and institutions that are putting out stable coins is so absolutely clear.
+But I think we should view it first and foremost from the question of like, what benefits the companies that are using stablecoins or, you know, the internet generally, what benefits the users? Not how different is this from the current infrastructure that we have because that is not a way to build new systems in the world.
+Speaker 1: Yeah. And then I guess there is also the sort of the, like, additive outcome where, yes, you get to $2,000,000,000,000 in stablecoin assets, but it's for new use cases that are not competing with, like, the traditional credit card lending, mortgage lending, asset backed loan industry. And so it's it's not putting that downward pressure necessarily on the traditional banking system.
+Speaker 2: For sure.
+Speaker 1: And so I'm sure the banking industry is sort of, like, cautiously optimistic. This is all, like, net new dollars that are being created and used around the globe and for different purposes. But if it's but if it does directly come after, well, this company used to just use credit cards for everything, now they're not paying us, then that's maybe has some negative effects.
+Speaker 7: And I think the two things you'll see as run ons is basically how does stable coin deployment evolve worldwide? To what extent is it a western thing versus the rest of the world thing that probably has impact on, you know, USDT versus USDC market share? Like, there's a lot of interesting run ons to this exact question. The second thing is, at least this is why I'm excited to be at Stripe and and, you know, Stripe isn't doing any crypto things for crypto's sake. Sure.
+They're doing, you know, how do we build better rails for our users no matter what the rail is under the hood.
+Speaker 1: Yeah. And It's less ideological and more pragmatic first principles.
+Speaker 7: This is a very good tool. Exactly. And we should we should put it to use in ways that that betters the experiences. This is where I'm interested in some of I mean, DeFi has had a very complicated few months Mhmm. With basically a lot of exploits and and and things like that.
+And this is still an industry in its infancy. And yet, we're seeing a very interesting merging of the rails with, for example, Vault curators on Morpho, like, you know, folks like Apollo and others taking part in it. So we're seeing, again, just a merging of of traditional finance and online finance in a way that I think is gonna continue to
+Speaker 6: Recent exploits. Is that more social engineering for the most part? This is not not AI led?
+Speaker 7: In those specific cases, my understanding is it is not AI led. I think it's very much social engineering, you know, bad setups in various places that have led to to to unfortunate outcomes. And I think it's just that the space maturing. I think we are seeing, as a side note, this is very interesting. So, we use at Privy a number of basically AI tools to do like constant pen testing to review every PR that goes out to do a lot of this.
+And we're also seeing quite a bit of just better Attacks. Bug bounties coming in. Much more But the baseline basically on the bug bounty has gotten much better and you're now able to string together like more complex attack vectors that you can do before. So, that evolution is like mega clear and one of our engineers, Andrew McPherson, used a chat GPT to find an exploit in React. It was a zero day in React.
+And the fact that, you know, React is a fifteen year old library put out by Meta. It's open source. It's been beaten to death because basically backs every web every product on the web. The fact that we're finding these now is is insane.
+Speaker 1: And do you have more clarity on, a zero day? Does that allow someone to potentially get into someone's computer, their browser? Or is it more just like like cause the browser to crash in a certain or it'd be strung together? Because there there's like a wide range of like Yeah. What you can do once you exploit something.
+You can just like, you know, take the service offline, which is bad. Change
+Speaker 7: copy on the website.
+Speaker 1: Get into the database. Like there's a wide range of like negative outcomes.
+Speaker 7: Yeah. I'm not actually sure what the what the ramification of his were was, but you know, there's a very good economic market for buying zero days and and the price will depend on what it allows
+Speaker 1: Yeah. You That makes sense. Has there been have you have you been tracking any movements in the stable coin community to do interesting non dollar backed stable coins? I'm thinking of like Peter Thiel back in like '99 sort of proposed like a Vanguard total index, like a VTI backed stablecoin where you have $1, but the dollar is backed by basically a massive basket of assets that includes gold, oil, real estate, a slice of stocks and bonds. And so it's sort of more diversified than even the US dollar could be.
+And maybe it's less stable relative to the dollar, but it's you're bought in on the global economy.
+Speaker 7: So I think first, we're gonna see a rise of non dollar stablecoins as, you know, more people embrace it, especially, you know, I'm
+Speaker 4: And that
+Speaker 1: would just be foreign currencies?
+Speaker 7: Yeah. Foreign currencies. Yeah. Second, I've heard of a a few projects that are trying to basically have a inflation stablecoin, which is the the the stable actually grows of inflation so that you're on a purchasing power parity like stamp types.
+Speaker 1: The famous assets that you can buy from the treasury. Treasury inflation protection something, securities. I I forgot.
+Speaker 7: That one. But that that's the idea of of one of them. I think they're really hard to instrument and get quite right Mhmm. Which is why I don't think they've taken off just yet. And then I think the the the third piece is, this is not a stable coin, but I it was a project I heard about recently.
+I thought it was very interesting. There's a company called Pearl that is finding a way to do, like, fast matrix multiplication and back a blockchain on this, so you can issue tokens based on how much compute you've got ready to be useful inference. That's interesting. And so there was a question for me of like, what other useful work could you back Yep. The currency on?
+Speaker 1: Yeah. That I mean, we've talked to Prime Intellect a few times. They've been doing early on some crypto token backed compute. And interestingly, the the three d rendering community, I don't know if you're familiar with the render token, but Yeah. Basically, you know, most three d artists, if they're rendering CGI for movie, TV show, something like that, animation, they will typically have an, like, on premise rack of GPUs that they use to render the graphics or the the final output.
+And the render network was an an effort that I think was pretty successful to basically, well, I'm not rendering my project. I'll render yours. And I get tokens that I can put back on the network because each frame is deterministic and separate. So you can render if there's 24 frames a second, you can render thousands of frames across a whole bunch of different machines. They all will look the same when they come together.
+And so that that was the first example of like, oh, a crypto project that's being done for useful work, marshaling computer act. And now you can imagine like a thousand times more, like, ways to
+Speaker 7: These are hallowed times while crypto prices are down and there's so much interesting thing happening in tech. You can actually build very useful things in a way that's that's
+Speaker 6: Prediction time. When we look back on 2026
+Speaker 4: Yeah.
+Speaker 1: What what what what's your price for USDC? Price target for 2030.
+Speaker 7: Is John's favorite joke. But
+Speaker 1: I hope it's long.
+Speaker 6: It's a disastrous outcome. What do you think the story will be around the intersection of of AI and crypto, specifically agents and stables? It's a great question. Because everyone keeps saying it, right? But I feel like we need to have massive It's very clear that when an AI tool has product market fit, adoption is, like, extremely rapid.
+Right? You just immediately hockey stick. And so I'm, like, sort of, like, waiting for a hockey stick moment like that at the intersection of stables and and agents.
+Speaker 7: So so here's my first, we're seeing so much activity. Like, 35% of new privy sign ups today are for people building agentic wallets. So they're using the wallet. They're, like, giving agents, for example, like, some allowance. And then they're, like, you know, they have an ability to claw back assets if the agent doesn't spend it.
+They can control spend in a very like particular way. So, we're seeing so much tinkering happening here that I think is gonna lead to emergent behaviors that are really interesting. My prediction is first, great use cases are gonna happen in the background. There'll be a lot more about like business model innovation, things like what you were talking about earlier, which is how do we gate, you know, payments in a streaming sense so that I can get paid on a, you know, per token basis much more Yeah. Exactly.
+Speaker 6: With no risk.
+Speaker 7: Yeah. So, I think that's where we'll see the first few And then over time, we'll see a much greater pickup of basically agents actually running their own wallets. That'll be across both fiat and stablecoin rails.
+Speaker 6: Mhmm. Very cool.
+Speaker 1: Red button or blue button, what'd you push? Are you familiar with this? I have
+Speaker 7: no idea what you're talking about.
+Speaker 1: Blocked in. Blocked Blocked in.
+Speaker 4: Didn't I get don't have time
+Speaker 7: for these things.
+Speaker 1: Scores. That's incredibly bullish. It's a thought experiment. You can go check it out online. Anyway, thank you so much for coming on the Great to see you.
+Fantastic.
+Speaker 8: Thank
+Speaker 1: you. We'll talk Pop you those headphones off. Put them down right there, and we're good to go. Jeff, welcome to the show. We are here live at strike sessions
+Speaker 6: in San Francisco. Great to see you. Great to see you.
+Speaker 1: Throw a headset on, sit down, introduce yourself again. Yeah. Can sit here here with that headset. Hello. Hello.
+Introduce yourself for the the fans, the viewers, the chat. Who
+Speaker 5: are I'm Jeff.
+Speaker 1: You too.
+Speaker 5: Stripe on the team.
+Speaker 4: Yeah.
+Speaker 5: Jeff Weinstein. Good to see you all.
+Speaker 4: Good to see you.
+Speaker 5: This is
+Speaker 2: the first
+Speaker 5: time I ever met you in person. We've been talking on Zoom for ten years.
+Speaker 1: That's not true. Have we met in person?
+Speaker 4: Wait. Is
+Speaker 7: that actually is that actually true?
+Speaker 5: I don't think I've ever met you actually in person. It's like one of these things where you've met so many times in a computer. It's true.
+Speaker 6: That's crazy. Yeah. That's crazy. No, yeah, I assume we had met multiple times.
+Speaker 2: It's crazy.
+Speaker 6: Great to see you in person.
+Speaker 5: Yeah, this is amazing what you all have done.
+Speaker 1: Yeah, it's a time.
+Speaker 6: How have you Do you ever visit Delaware? Do when you show up in Delaware, do people just start do people just start cheering when you walk out of the airport? You're like, you're basically like an athlete that, you know, wins a World Cup. They're coming home and they they do like a parade, I'm assuming.
+Speaker 5: I got to meet So
+Speaker 6: so so before we get into this, Jeff, Jeff runs Atlas. Created Atlas. You're responsible for like a quarter of all new c corps.
+Speaker 5: Atlas is now incorporating about 26%
+Speaker 1: of the new gong moment?
+Speaker 5: I think it's a gong moment. I think
+Speaker 1: it's a gong moment.
+Speaker 5: Oh, This is
+Speaker 1: a life 620%.
+Speaker 4: This is
+Speaker 5: a life honor.
+Speaker 1: But there we go.
+Speaker 4: Wow. Fantastic.
+Speaker 6: It's got a really good ring to
+Speaker 1: it. 26% of all new c corps, right? That's the focus? Correct. Yeah.
+Speaker 5: And today we're celebrating our hundred thousandth new Atlas business was incorporated recently and we brought the founder and she runs this incredible business for AI software to help power plant owners run batteries in a better way is like fantastic. So it's been a great thing. Been recently focused on all this crazy agentic stuff we're doing.
+Speaker 1: Yeah. What what is actually changing about Atlas? Because I've used it several times. I think I probably used it five years ago or something. Don't I don't even remember how old it is.
+Speaker 6: We used it for TBPN.
+Speaker 1: Used it for TBPN a couple years ago. Fantastic. And it was, like, fine, I didn't really have any product requests.
+Speaker 6: So It's not it's not fine.
+Speaker 1: No. No. I
+Speaker 6: just feel like beautifully.
+Speaker 1: It was, like, like,
+Speaker 4: that's finished.
+Speaker 6: The point the point is that you don't think about it. Exactly. Is how it should've worked.
+Speaker 1: Exactly. And I'm always fascinated by products that are, Yeah. Thumbs up. It did my job. Like Yeah.
+Go. What I'm gonna make you go back
+Speaker 6: and use LegalZoom. I'm gonna make you go use LegalZoom.
+Speaker 1: Hey, that's a It's one
+Speaker 5: of these products that you just wanted to work like electricity under the how
+Speaker 1: do you keep it there?
+Speaker 6: So so I wanna ask you about is there an do you think there will be an incorporation apocalypse? Because theoretically, I could just have I could tell a smart agent that can use my computer, that can use the Internet, hey, do you, like, go I need to create a c corp in Delaware.
+Speaker 5: It turns out that the agents want to use Atlas.
+Speaker 1: They'll use Atlas. Yeah.
+Speaker 5: And and, you know, not not to preview too much, but coming up Atlas CLI.
+Speaker 1: Okay.
+Speaker 6: Yeah. There And we
+Speaker 5: another exciting
+Speaker 6: Generate me 10,000 c corps. Generate me 1,000,000 c corps.
+Speaker 1: I think that would be a lot of money, but
+Speaker 5: Yeah. Vibe Vibe Incorporation coming.
+Speaker 1: Yeah.
+Speaker 5: Another exciting Atlas update is now that you can do full safe fundraising through Atlas. Okay. And it's coming soon you'll be able to move the money from investors directly into your treasury account. Sure. And just have these amazing little fundraising links to be able to quickly raise money along the way.
+So we think it's another way we can help entrepreneurs get going. Yeah. Though my recent focus has been all this great AI stuff we're doing to help commerce businesses succeed in the next wave Yeah. Of the internet. All the link CLI works, so you can have your robot help you shop along the way safely across the internet.
+Yeah. Machine payments protocol to have robots send stablecoin to each others in small bits. Yeah. It's been a really whole new world.
+Speaker 1: To see the the the customer segmentation, customer target, customer ramp, are you rerunning the Stripe playbook? Like, Stripe was adopted by a lot of startups. It was very it sold through developers, which was very unorthodox at the time. You used to sell through the CFO. Now you're selling through the CTO or just some developer who chooses Stripe.
+Are you trying to be the the incorporation platform for every tech company, every startup, every software small business? And then you're gonna go into restaurants. You're gonna go into Fortune 500 the next Fortune 500 companies. I mean, I guess it doesn't quite map to to Stripe because the big companies don't necessarily need Atlas if they're already up and running. But how do you think about landing and then expanding?
+Speaker 5: Yeah. I think that we are trying to get all the technology businesses in the world to start on Stripe.
+Speaker 6: Yep.
+Speaker 5: Start with, you know, just as a project. Mhmm. Use Stripe projects to be able to configure your entire stack. Mean, do you remember having to go and make a 100 little accounts for
+Speaker 4: Yeah.
+Speaker 5: To test a database here or test a CDN provider? Oh, should I use this particular thing for email? And then you'd have to go, you know, type in password and be like, no, you need $2 signs or one dollar sign. And then you gotta go get the secret keys and like put in the wrong place and then you gotta rotate. It's like a whole mess.
+Constant. And so so we're excited to take basically continue to make everything programmable, making corporation programmable, make selling online programmable, and now we're making provisioning entire new stacks. So we think we're gonna see, you know, we did a 100,000 Atlas startups over about eight ish years. I can imagine doing the next 100,000 in, you know, in another year, another two years, we're just seeing the curve of new businesses grow so quickly. I think it's tools like this agentic provisioning of an entire stack quickly, which is gonna really ignite the next wave of founders to go from just vibe coding to like an entire vibe business.
+Speaker 6: How much attention are you paying to how Atlas shows up in LLM results? Because there's a lot of companies, ProFound is one, James, the founder's been on the show, that that help help you, you know, optimize that, understand it. I think it's helpful to just create a product that's loved by everyone that uses it and ultimately gets talked a lot about sort of naturally. Is that something that you're putting time directly into or is good awareness and LLMs a byproduct of just building a great product?
+Speaker 5: You have to make your business legible to the agents. You need, you know, if you want your checkout page to have bright colors, like that's not what the agent wants. If you want your home page to have a Crazy picture. JavaScript thing that like loads only in certain browsers with the with the GPO turned way up, that's also not what agents want. Agents want perfect information about what your offer is, what the tool is, what the SKU is, what the service is, what the shoe is.
+And we're basically helping businesses just make their entire checkouts, their entire SKU offering legible. And Atlas is actually part of that too. Know, it itself is a business. Atlas actually runs on Stripe. And so we, you know, make sure that the agents have access to the full LLM formatted markdown text.
+We bake it into all of the places where agents can self serve and learn about our products. And then we make everything at Stripe a programmatic primitive, such an agent can use it directly. And so we've seen that the CLI, the command line interface for interacting with Stripe, which had, you know, not like a side project for Stripe, but kind of an advanced tool for developers who never want to touch the dashboard, like sort of a terminal purist. This has become this incredibly fast growing part of Stripe because the agents are like, yes, I love the fact you have perfect information about all the things I can do on Stripe. Of course I'm going to do so versus try to
+Speaker 6: Computer use around the website.
+Speaker 5: Yeah. It's a little clunky. At some point, it feels almost like a Dilbert style of using a computer, whereas the agents can just use it directly.
+Speaker 1: Can you take me through maybe like a day in the life today is probably pretty different than like two or three years ago. I'm sure AI has seeped in a bunch of places. But maybe if you go back to like, you a little bit earlier, like how has how has your day to day changed over your career and what is it like now? We're really just
+Speaker 5: following what customers want and they're coming to us, I mean I've worked at Stripe for eight years, they are coming to us with a veracity of new needs. Before it was like, hey, let's kind of put a meeting on the calendar next week to talk about how to grow your business in the next country. Now they're I need to launch in 50 countries this afternoon.
+Speaker 4: Yeah.
+Speaker 5: Sorry. What is sales tax in all all those places? How how can I mimic all these fast growing startups that are going at light speed? And so basically we're taking everything that we built at Stripe and turning it into sort of a managed service.
+Speaker 1: So you
+Speaker 5: have managed payments so that you can sell in all these countries. We have the machine payments protocol where you can say, hi, I've been using I I, you know, I spent twenty years selling to consumers. Now I need to sell through agents. Take all the tools we have and make make things available to agents. So my day to day is basically almost a whiplash of like customer meetings where they're coming to us with either a new type of fraud vector they're seeing through AI, they want to expand it to new countries, and we're just trying to take the pieces, the programmatic primitive pieces we've built over the last fifteen years and turn them into these sort of CLI tools.
+Normally we would we would put out a beta or we'd put out some wait list and we'd wait for a couple people to sign up and then we'd email them, then we'd send them the docs, then they'd be on vacation, you know, or like get busy. And then like, you'd hear from them next week. Now we put out a beta. They developers send their agents after our beta page. They will go around our wait lists to use it.
+They'll give us feedback from their agent logs of how how the developer about how the agent was using our developer tools in like minutes. Mhmm. And and so the development cycle at Stripe is just increasing increasing increasing increasing because the customer feedback loop Sure. From the highest taste developers is so now agentic that we don't even have basically have time for meetings. It's just like putting these betas out there and getting faster.
+Speaker 1: So you think it's less meetings now?
+Speaker 5: I think it's less meetings.
+Speaker 1: I was wondering if you were yeah. If it was like yeah. Imagine that you're a fan of like talk to your customers.
+Speaker 5: I I
+Speaker 1: I that's a big piece of what you do. That's your that's very much your job. Of course, have internal meetings, you're probably talking to a lot of customers. But the but the of the feedback
+Speaker 6: I was hoping that with AI, you wouldn't have to talk to customers anymore. You just throw like 10 Well,
+Speaker 1: are some companies that
+Speaker 6: are say like, you know, I I don't don't have time.
+Speaker 5: We're we're very fortunate slash cursed with that our customers are not shy. You know, they they are extremely happy to hop in Slack with us and just bombard us with their their needs. But now they're pasting the context windows from their agents along with them. And so it's sort of this back and forth between our agents and their agents trying to like window our way to the best product. And you know, so again, I think that just like the clock cycle on Stripe has just dramatically increased which is why you saw so many of these announcements recently and and we're really proud that a lot of this stuff we're doing is just like GA, you can use the link Mhmm.
+Wallet today to delegate transactions to your agent in a super safe way. It's very slick. And a push message, oh, hey, time for my agent to, you know, buy me that gift. Like, fantastic. Thank you, agent.
+And so we're just we're putting this all out there and really encourage people to try it.
+Speaker 6: Are you are you forcing yourself to constantly use agents to buy stuff? Because like right now, I feel like a bunch of people want to and there's certain instances when where they can, but it's not exactly easy everywhere yet.
+Speaker 5: Yes. It's a two sided it's sort of like a three sided marketplace. Mhmm. You know, you've got on the seller side, they need to be able to accept payments from agents. That's why have the machine payment protocol or all our APIs are being upgraded Yeah.
+So that you can just use you can agents can check
+Speaker 6: on I it get through this all the time where I will like see a product that I'm interested in. I'll be on my phone. I will click add to cart, and then I will get to the cart and I will see they're not on Shopify, and then I'll just churn because I'm like, I don't I don't have time. I don't like, I don't have time to go through, fill this out, punch in my credit card, and so I'm really really excited for this moment where it's like, I wanna buy this thing, please buy it for me.
+Speaker 5: Totally. Yeah, it's In some ways, we have this incredibly modern world in which everything's available at our fingertips. But then it's like unfortunately, overly available only on our fingertips where I'm sitting there typing in 16 digit numbers like trying to like peck my way through a check check up page. Even the Stripe check up page, is like pretty high performing, I'm still like I can't believe they don't use Lync. I can't believe I can't just like have my agent go buy this.
+So on the seller side, we're making it incredibly easy for any of the 5,000,000 businesses on Stripe to just accept payments from agents. That's like one side. Another side is on the consumers, they need to be able to have a way to super ergonomically, on their phone, slick mobile app and link, say, hey agent, I approve $50 transactions for the next thirty minutes in the following topic. Go, agent, go. Bam.
+With, you know, 2FA, face ID, whatever, I can now approve an agent and it can safely shop for me on the internet, like giving like a rambunctious intern, like a perfect card that can only be spent where I want. So on the third side of the marketplace is agents themselves, where we're working with Copilot and Meta and ChatGPT and Gemini so that baked into their services, they have access to all of the buying and the customer mandates so that we can make agented commerce this super slick, super safe way to buy online. I think we're now finally getting all the infrastructure in place. We can get this flywheel starting to spin. And with the model progress, I think you're gonna see amazing new applications in Agenda Commerce.
+Speaker 6: Is there a sentiment internally that the company got kind of lucky by focusing so intensely on developers and then accidentally getting the benefit of, like, being extremely well built
+Speaker 5: for agents? I guess it's like because, like,
+Speaker 4: I you
+Speaker 6: guys are obviously wearing two frame. You guys are
+Speaker 1: is exhaust.
+Speaker 6: You guys are well well, incredibly smart, incredibly forward thinking. But but when you guys started focusing on the developer experience intensely, you I don't believe that you were thinking No. About We weren't. AI agents a decade later.
+Speaker 5: This is a surprise for us too. Yeah. It's it's a it's a it's a useful externality to our non religious religious obsession with programmatic tools.
+Speaker 1: Secular and religious. Yes. It's it's Religiously secular.
+Speaker 5: I can't there's not too much which is like a faux like a faux pas faux pas at Stripe. But saying, yes, let's put this incredible piece of financial infrastructure behind a gate that no one can use. And you have to call and go through a maze to get so
+Speaker 1: Steak dinner.
+Speaker 5: Yeah. It's yeah. Exactly.
+Speaker 1: So you're not a steak dinner company.
+Speaker 5: Yeah. We we showed how many users are now signing up for Stripe each each day, which is in, the many tens of thousands a day. And that you know, that's a lot of steak dinners to get to get each of them turned on. So it it sort of actually surprises us how few
+Speaker 6: Human rights companies
+Speaker 1: fix this.
+Speaker 5: Yeah. Like how how few companies in the world actually provide self serve services. Yeah. And you know, But I could say I also know that there's 10,000 people at Stripe who are like doing the the work to make those things And yeah. Yeah.
+I've been I mean, I would like to get a steak dinner personally.
+Speaker 1: For the for the one hundredth, Atlas sign up.
+Speaker 5: How Yeah. 100,000. How ambitious
+Speaker 6: is treasury? I imagine you've been getting the customer feedback from companies forever saying, hey, I incorporated, like why aren't you pushing me out to these other financial products when you already have all my information? I know you guys can store money. I know you guys can move money. But but how ambitious is that product?
+Speaker 5: Yeah. Stripe Treasury is gonna be this incredibly straightforward way for a business to be able to store any currency from any country, move it around the world, and just handle all of your banking and money management activities in one place. And it I think this is something that we've been building the infrastructure for for so long, you know, the ability to do currency conversion instantly or be able to pay out cross border. But we finally decided that because of Stablecoin, now is the time to make this a truly global product from the beginning. Whereas years ago, we would have had to make sort of a country by country decision to do a thing like treasury, but we're gonna go really global out the gate and get to 160 countries by the end of the year.
+And so that's really where our ambition comes from, is how to make this global infrastructure. And then, of course, it's gonna have a super slick UI. It comes with a metal card, 2% cash back. Really super easy to use. And if you use Stripe to earn money through your customers, everything's in one place.
+All the money settles quickly. It it really feels like one of these kind of better together products where I I in my head, I've written documents that say, hey, this will be a lot easier. Then when you actually go to use it, you're like, oh my goodness, this is like much easier to
+Speaker 6: get way to say we're coming for everyone.
+Speaker 5: You know, there there is there are many services in the world that we're not gonna by accidentally be able to be better better than. But and I also will note that everything we're building Stripe treasury on is available for anyone else to build.
+Speaker 4: Sure.
+Speaker 5: And so we're gonna see some much more specialization, think, in the financial related tools. And and we're excited for Stripe users to able to do it really quickly.
+Speaker 4: Okay.
+Speaker 6: Yeah. Yeah. Yeah. I mean, I think I think the agents coming to finance will be a big a big story of basically the next two years. Because as a somebody who started my first real business while in college, and then I was realizing, like, wait, okay, so we we've signed this, like, contract, and then there's, like, these invoices, but then, like, the invoices get sent around, and then there's, like, all multiple stages of approval, and it's, like, why does it need to get approved if it's already in the contract and and and you go you go like understanding like the complexity of money movement and how many humans are in the loop to every process and it can make it can it can be great that there's humans in the loop because it prevents fraud and and and hopefully prevents errors, but it also creates errors and it also slow thing slows things down a lot.
+And so when you think about in the future where these things can be handled by machines, I think it's gonna be
+Speaker 5: Yeah. Think that's Very true. You know, it's like dangerously skip permissions and money, like, tends not be exactly the joining parameters you want. We want smartly suggest permissions. Yep.
+You know, I I I look forward to the day where I get a notification from my smart robot that says, hey, here's all the ways you can improve your business. Here's the things you should be able to do to close your books. Here's the things you can do to handle the invoice. I'm looking forward to those permissions. Know, I don't
+Speaker 6: want But the even something like so imagine a business owner receives an invoice from someone. This happens like still, like if you've worked with freelancers enough
+Speaker 5: Yes.
+Speaker 6: You will have experience where a freelancer sends you an invoice. It basically just has a number. It does not have like any account details. You're like, okay. And then you're replying back, okay, how how can I pay this?
+Maybe it has an email. Yeah. But a world where you receive the invoice, you just drop it into your own kind of agent and you say, pay this. I'm approving this already. I have approved this.
+Speaker 2: And the agent can go email
+Speaker 6: the person, it can confirm everything and it can just process it. It's like that historically is something that I've done with having like maybe a part time part time like back office financial operations person where I'm like, this is approved, pay it.
+Speaker 2: Yes.
+Speaker 6: And it's like that doesn't need to be like a it's it's not like really high leverage work. It probably doesn't need to be something a business is paying a thousand, a couple thousand dollars
+Speaker 5: We we sort of joke that every chat app will eventually become like a banking app. But now we act, it's like every banking app is actually now becoming a chat app. Yeah. And so I think we're gonna see the human agent interface related to the full life cycle of your business to become the new modality by which we run our businesses. And you want that to be in a super programmatic, super safe place that works globally.
+And that's what Stripe, Stripe Treasury, all these all these new payments offered in for
+Speaker 6: Genentech's support. Guys are culturally very humble, but the more I'm processing every conversation I've
+Speaker 4: had today, I'm like, wow,
+Speaker 6: they're they're actually coming for everything. They're incredibly well positioned. Everything's gonna be programmable. Everything's are gonna
+Speaker 5: be doing exactly when our customers succeed.
+Speaker 4: So I I feel I I
+Speaker 5: think I I I sleep I sleep very well at night knowing that our business model maps exactly to
+Speaker 1: our customer success. Yeah.
+Speaker 4: Yeah. Yeah. What else do
+Speaker 5: you have on that thing,
+Speaker 4: by the way?
+Speaker 6: We got a lot
+Speaker 1: of
+Speaker 5: stuff. What about the bottom right
+Speaker 6: one just for fun?
+Speaker 5: What's the bottom right one?
+Speaker 1: Bottom right one is the gong.
+Speaker 5: Perfect. Okay. Great. That's a
+Speaker 1: good one.
+Speaker 7: Okay. Have
+Speaker 1: a whole different setup there. We got so much stuff. Do we have time for one more question, you think? Or is Zach ready to rock? What are you thinking?
+Speaker 5: Oh, there he is.
+Speaker 1: We we we we got a couple minutes? Yeah. Okay. Cool. Hypothetically, like 21 year old new grad, college grad comes to you and is one maybe wants to join Stripe, other one maybe wants to build a business on Stripe.
+How are you routing them in 2026? What are you talking them about?
+Speaker 5: Well, love that those are the two options. Yeah. So if that were the case, that would already be a win. There's many amazing companies.
+Speaker 1: Sure. Sure.
+Speaker 5: I I think that people should, know, follow their passion. I mean, look at the two of you, what you've built, right? Like, I I've got to know you over so many of of your awesome new entrepreneurial attempts and I remember you telling me you're gonna do this TV show. I wasn't like thinking that. I wasn't like no, I was like
+Speaker 1: Certainly I will never be on that show.
+Speaker 4: I'm gonna
+Speaker 1: stop by that crazy thing.
+Speaker 5: We're not gonna make a pub and then have you do college game day in front of you. That'll be very strange. So I mean like look, you followed your followed your noses on this topic and you're and you have a good sense of it. If you talk to someone who's who's got that kind of passion, the tools to build something today are what all of us, I mean, dreamed of. Imagine having.
+Yeah. What we have today when we each started all of startups in the past. And so I honestly, I really encourage them to try to try it. And and I will also say if they're considering joining, I mean, Stripe's a 10,000 person company. We're probably in a reasonable high echelon of like low communication costs.
+But there's 10,000 of us. Gotta have it's like a higher communication cost than
+Speaker 4: you and your
+Speaker 6: co founder.
+Speaker 5: But, you look, the Stripe projects thing where you can provision all these third parties, that got started seven weeks ago by six people. Wow. Know, we we we put the links, the link for Agents for Wallet, that was ten weeks ago. And it's, again, it's built on all the stuff we but we're we're we're benefiting from all of these new tools well. So I I would tell that person I hope she find finds the passion that she has especially in an area where has a personal interest and just go at it hard with the new tools.
+And otherwise, you know, stripe.com/jobs.
+Speaker 6: What's underrated about working at a big company for a long time?
+Speaker 5: I'm on year eight. What's underrated?
+Speaker 1: Overnight success.
+Speaker 5: I I you know, you you because presume presumably, I mean, you've
+Speaker 6: had you've had how many yeah. I I would guess like a 100 really talented people have tried to convince you to to join their effort or or leave or, hey, let me give you like $50,000,000 to go after this thing.
+Speaker 5: Have that one call me. The other one's no.
+Speaker 6: But I I You're joking, but like you could easily go out and raise like 50 on 50 for some like payments related. Yeah.
+Speaker 1: Yeah. I could make
+Speaker 5: a I could make a rival TBPN. Yes.
+Speaker 6: We need more of
+Speaker 4: those.
+Speaker 1: Interesting that you're not saying I'm gonna go build a rival strike. That's why I'm bullish for strike. You're like, I don't This one seems to
+Speaker 5: work out very well for you.
+Speaker 4: So, yeah.
+Speaker 5: This one I I I Which I is I can that the the the the what's really kept me very energized and and and more so is I tell people like, on your worst day of work, if you're looking forward to your most unhappy customer, then you found your place.
+Speaker 1: Sure.
+Speaker 5: And I like, I wanna hear from an entrepreneur somewhere in the world who's got a serious problem with Stripe and I'm I wanna get on the phone with them.
+Speaker 4: Mhmm.
+Speaker 5: And that is just, that's enough of like, that's enough of a jolt to keep going.
+Speaker 6: You're first, if you have a problem with Stripe Hit me up. DM me, I will give you Jeff's personal phone number.
+Speaker 5: Cell phone number. Yeah. (410) 912-2877. That
+Speaker 8: is it.
+Speaker 5: Oh, breaking news. Me a text. I couldn't possibly get more spam. So let's just add let's let's add to it. Which is nothing I think we could solve with machine payments for a couple of different day story.
+Speaker 1: Good point. Yes. Good point. Well, thank you so much for
+Speaker 5: taking the time. So good to see
+Speaker 4: you all.
+Speaker 5: Thanks for coming to our find you after. Okay. We'll hang out after. Alright.
+Speaker 1: Let's take that off and bring in.
+Speaker 5: Okay. Here comes Zach.
+Speaker 1: Zach from Bridge. Coming back on the show second, third time. We've talked to him a bunch. Right?
+Speaker 6: A couple times.
+Speaker 1: Zach, he's bringing the world's smallest cheeky pint. Cheers. Oh. Yours is nice and prosperous. Cheers.
+Welcome back to the show in person.
+Speaker 6: Nothing like a non alcoholic MicroPine. Wait.
+Speaker 1: Yours is non alcoholic? Because I I got 0%, but I asked for 0% non alcoholic beer. Oh. My beer is 100% alcoholic beer, 0% nonalcoholic beer. Maybe that's But I still I still tell everyone I'm drinking 0%.
+Speaker 8: But you can't tell. There's no so you have no idea what you're saying. I have no idea.
+Speaker 2: Yeah. Alright.
+Speaker 6: Yeah. Let's start here.
+Speaker 1: Okay.
+Speaker 6: The Economist says stablecoins are over.
+Speaker 1: Fire back.
+Speaker 8: Oh, man.
+Speaker 1: In the in The Economist
+Speaker 8: Oh, man.
+Speaker 2: In in print.
+Speaker 8: Speaking of things that are over.
+Speaker 1: In print. I love this.
+Speaker 4: It says two stablecoins. Yeah. Print media says says the venture
+Speaker 1: is, like,
+Speaker 8: big big big big over. Where's big big the shots fired
+Speaker 1: at the? Why the stable market is fizzling? The stablecoin market is fizzling. They say stablecoins are to proponents the respectable face of crypto. I think it's pretty respectable face right here.
+Speaker 8: I hope so.
+Speaker 1: In contrast to volatile Bitcoin, let alone speculative meme coins, they should be backed by holdings of treasury bills, or other dollar denominated assets. On paper, this makes them safer store value than many fiat currencies. But they say after growing by 30% in the six months to late October last year, total stablecoin assets have barely budged. Is this true? Is it over?
+Speaker 8: Oh, man. Yeah. It was really nice knowing
+Speaker 4: you guys. It was
+Speaker 8: actually my last Yeah. Yeah. Scrape session. This is the last last
+Speaker 1: time you
+Speaker 6: will ever let me on
+Speaker 7: this show again. No.
+Speaker 6: No. Taking it
+Speaker 4: all in.
+Speaker 1: So yeah. I mean, there there there are a bunch of different predictions in here. The stablecoin market's worth 300,000,000,000. Some people are calling for 2,000,000,000,000 over the next, three years, four years, five years. But all of that is very macro level.
+I wanna hear about what you're actually seeing in terms of adoption, new use cases, glimpses of, you know, new areas to deploy stablecoins, and then just what the big market movers are.
+Speaker 8: Totally. I mean, we, I mean, so our business, you know, we shared this in the annual letter last year, grew four x last year. Our business continues to grow enormously. Like, we grew 20% over the last month alone. You know, we certainly don't Correction.
+Stablecoins stablecoins slowing down. And I do think total supply is, you know, flat.
+Speaker 1: But these things always go through Yeah.
+Speaker 6: If you wanna look at when when when you have a correction in in general digital asset prices, then trading activity at times falls, and then it looks like you have a slowdown in adoption, but then you actually have to look at how people are actually using stablecoins for non trading related activities.
+Speaker 8: Exactly. Like, stablecoin transaction volume is growing enormously. The number of transactions are growing enormously. And we certainly see that, you know, the number of folks building with stablecoins is growing enormously. Like, we have folks from, you know, a bunch of banks now are leaning into stablecoins.
+Pretty much every Fintech that you could think of that is meaningful is doing something with Stablecoins and probably doing it with us. I mean, we obviously announced yesterday with with Meta paying out folks in Stablecoins. So I I do think that this like the hyperbole around stable coins is dying down
+Speaker 4: Sure.
+Speaker 8: A little bit and that creates the opportunity for some of this this like FUD. But Yeah. You know, it at at the same time, we're like, know, there there was this thing, I think Henry said it yesterday, which which is like funny, like the crypto world where for a long time, people were like pointing at every problem and being like crypto solves this. And now, they're no longer pointing at every problem and saying crypto solves this, but but but it
+Speaker 6: actually You guys is are happy to solving solve problems with crypto.
+Speaker 8: Yeah. Like very very quietly under the hood, it is solving a number of problems like banks for cross border payments. We're seeing it for working capital needs. We're seeing it for just infrastructure for cars and infrastructure for global expansion. So it's it's certainly not slowing down.
+Speaker 1: So there's like some very big meaningful categories. The cross border payments one's very tractable, huge.
+Speaker 8: Yep.
+Speaker 1: Is there a coming intersection of, like, vibe coding and stablecoins that you're seeing glimpses of? I'm just thinking about, like
+Speaker 8: Yeah.
+Speaker 1: Bit like, there was this moment when iPhone games became fairly easy for, like, a kid to build in their bedroom. And you got Flappy Bird, and I think it was 99¢. And I'm wondering if if micro payments, stable coins, there's some sort of intersection there where you get vibe coding and you get some sort of new flourishing, like, ecosystem of, like, of, like, smaller transactions. I mean, people don't love micro payments, but there's, like, there's something that people I feel I could play with if they're spinning something up in a in a in a afternoon.
+Speaker 8: Totally. I mean, I I you know, one of my reflect one of the reasons why we started Bridge is like, I was reflecting on the fintech space generally. Mhmm. This was like in 2020 or so. Yeah.
+And I realized or one of the realizations that I had was that the cards were basically just the entirety of fintech. Yeah. Everything was like, you know, and people talk about platform shifts, like AI is this big platform shift and mobile was a platform shift. But in financial services, platform shifts take a little bit of a different shape and cards were this new form factor And cards combined with the Internet was, like, 90% of all are new.
+Speaker 1: I'm talking about credit cards from, like, the seventies. Yeah. Because we rode that boom for so long.
+Speaker 8: There was a time when Exactly.
+Speaker 1: People would pay by doing, like, reverse debit and there were so many hacks Totally. On top of the credit card.
+Speaker 8: Totally. It was a new platform. Was a new primitive Yep. On top of which all these new financial services got built and cards were like growing meekly
+Speaker 1: Yep.
+Speaker 8: For a while and then the internet came along and they were like uniquely well suited, Stripe, this is what we do, but uniquely well suited to solve payment problems on the internet and then they just took off. It became reflexive, know, more people were paying on the internet, so more people had cards, so more people paid in person, so then more people bought stuff on the internet. And then and then it just took off, but it was this like brand new platform shift in payments tied to an external platform shift. Our our view is that stablecoins represented another platform shift in payments, and I think AI could be the corresponding one that helps drive adoption of stable coins and I think that all the payment problems that we're solving now are like fiat payment problems and there's big markets and so on, but I think the much bigger market will be, you know, the new means of payment that are gonna be required in these agentic services. Like, in, you you know, just simple things like the incrementality of payments is gonna be very different, very small, the velocity of payments is gonna be very different, very fast.
+The reversibility of transactions, like cards are you are not well suited in a situation where you don't want transactions to be to be reversed or disputed. And so, I think there's a lot of benefits to Sabre Coins, we're like at the very very early stages, so you're kind of squinting and like looking like way down the tunnel and like, trying to predict what what will happen, but it feels like it's there.
+Speaker 1: Can you explain the tension between the traditional banking sector and the stable coin world?
+Speaker 8: Oh, man.
+Speaker 1: Like, what are you saying if if if there was, you know, someone with a bank and they say, like, I make my money by taking deposits and I'm heavily regulated, I have to cover those costs with, you know, with with interest, and you're gonna be able to do it without as many regulations. You're gonna outcompete me. Should I jump on the stablecoin boom? Is there a world where we work together? How should the traditional banking system interface with the stablecoin world?
+Speaker 8: I mean, it is, I would say complicated. Okay.
+Speaker 7: Do you
+Speaker 6: spend much time in DC?
+Speaker 8: I I went earlier this year and it it was actually like mean it was like very heartening. I don't know if you all have spent spent time there, but like, I hadn't been to DC since I was in high school and like a high I school grew up in North Carolina, so we could like take the school bus up there. And I went into, you know, like you're working at like a tech company or something like Stripe and it feels like impossible to understand all the ways in which Stripe is growing. And then when you zoom in, it's like literally just like one developer coming to Stripe and signing up and like, you know, one person selling. And and then I went to DC and DC feels like this this incomprehensible, like, you know, complexity of decision making and stuff.
+And then we had just met with a bunch of folks and you realize it's just like one person talking to another and like them trying to learn and then they're they're going to talking to another person. And they were like genuinely curious And these folks are like voting, you know, debating stuff on like agriculture and like, you know, airline safety and then coming in and talking to me about like the minutiae of like stable coin regulation. And they were like pretty well versed. So I think that like one speaks to how how high on the docket it got for them and like how important it is and and it has like, you you know, I spent time there at the beginning of the year. We've spent more time recently as like Clarity Act has come about and we think that, you know, it has certainly put the banks and the more stablecoin friendly folks at odds.
+Mhmm. But my experience has been that that is not universally the case. Like, there's a whole group of banks coming together, there's multiple groups of banks coming together to launch stablecoins. There are multiple community banks that we're actually working with on different stablecoin initiatives. The the one sort of outlier is some of the other folks that have more directly, you know, JP Morgan has their own stablecoin and, like, their own thing that they're trying to push forward.
+So there is some competition and and that sort of thing there. But I I hope that we can all, like, work together, but it certainly has been contentious at times.
+Speaker 1: Give me a price prediction. Twenty, thirty, if I put a thousand dollars in stable coins, how high can it go? What do you think is possible?
+Speaker 8: Oh, man. I mean, I think you are gonna be exactly as wealthy then as you are today. That's
+Speaker 4: fantastic. No. With inflation.
+Speaker 6: Advice to founders that are feeling that wanna start a company today, but maybe feel like they're too late as part of this AI boom. Because I feel like when you started Bridge, there had been there was big stablecoin companies that had been created. Did I'm maybe you felt at times that, am I too late? Like but clearly, were very you were very early and the timing was perfect because you got to, like, sit out a terrible bear market and then you and then you were like, wow, I'm a genius.
+Speaker 8: That is certainly not what everyone told me. Many people in the midst of it told me I was wasting wasting my time. Yeah. Yeah. I would I would say I I mean, the lived experience for me and like, you know, you kinda see this now in some of these hotter spaces is that folks kinda build what they think others want them to build.
+Mhmm. Like, think about something in AI, you know, you're building this thing for this market that isn't like a thing that you deeply believe in. And so you're you're building what you think an investor wants to fund or what you think other people in the industry will think is interesting. And what happened for me is like I was building something that I deeply had conviction should exist and that is what enabled me to persevere through like some really dark times and build a company that, you know, ended up, you know, hitting the the sort of timing situation at like the perfect the in the perfect moment. But like, literally, you know, if I didn't have that conviction, I would have pivoted Mhmm.
+You you know, a year before. You you know, I mean, FTX I mean, literally, you know, Terra Luna blew up, then FTX blew up, then SVB went under. I mean, it was like one stable coin went under, the whole crypto market was done, and then USDC depict. And so, we got Yeah.
+Speaker 6: That's funny when you made
+Speaker 4: this joke, John. Yeah.
+Speaker 2: I mean,
+Speaker 8: we got booted off like four banks
+Speaker 7: before we got started.
+Speaker 1: I assume stable coins are gonna stay stable, but I understand
+Speaker 4: there is risk.
+Speaker 1: There is a new technology. Can you can you help me understand the interaction of, like, AI coding agents, AI code review in stablecoin software development? Historically, I have always had the perception that anything in crypto is not just higher stakes, but more technically complicated. It's more like, I don't know, writing a compiler than, you know, a front end website. And so it's high stakes.
+LLMs do make mistakes. At the same time, the new models, mythos, 5.5, like like superhuman.
+Speaker 8: Yep.
+Speaker 1: And so there's probably a way to integrate that successfully. What what works? What are you hearing or seeing that makes sense? Are we still in, like, the centaur era where you need a great software developer working alongside AI? Is this something where you can just throw an a agent at it and it's, you know, oh, there's no more risk anymore.
+And it's not gonna hallucinate.
+Speaker 8: I I mean, I I would say for us, it it kinda feels like we are one or two steps behind where like, you know, it feels like some of the folks are who are in pure software. Yeah. Where they're like, oh, I'm just gonna I'm just gonna, you know, have this long running agent vibe code an entire browser and ship it in a week and We're be nowhere close to that. Sure. Like, we couldn't we you know, there are big parts of our business that are pure software Yeah.
+In a ton of ways. Like, think about like transaction monitoring or stuff And like but but the risk from a regulatory reason of like having things off and then, you you know, missing things and then not being able to appropriately justify it because someone vibe coded a thing. It's just not not possible. So the ways in which we use it end up being different. And another like very quick example is like we're standing up a National Trust Bank.
+As part of standing up a National Trust Bank, there's a bunch of requirements. One of which is that every every commit has to be approved. Wait. What? So so like, you literally cannot have
+Speaker 4: That's over for fantastic takeoff. Fast takeoff cooked. Yeah.
+Speaker 1: Yeah. FDA for AI. This was something somebody was saying.
+Speaker 8: It is like, you know, the the Jevons paradox of employment. We're just gonna hire like more
+Speaker 1: code reviewers.
+Speaker 4: Yep. I'd want to be employed.
+Speaker 6: Yeah. It's an interesting I I was talking to someone, small business owner, who was very, very fired up on vibe coding. He told me specifically he hadn't slept in four nights. I was asking him the product that he was working on. He was like, this is something I've thought about building forever.
+I was like, well, have you ever thought about like rebuilding this sort of like vertical SaaS fintech Mhmm. Platform that you run your whole business on? And he was like, no. It's 1,200 a year. It's like, they give me so much.
+It's like, it would never make sense to and this is like the one piece of like core technology that he runs his business on. He even he he's so fired up on vibe coding. He's like, I'd never rebuild that. It would never make sense. And but but so there's two things.
+There's like a value equation and then there's like a potential risk kind of like cost equation. And I feel like with stablecoin specifically, the potential and and crypto, the potential cost is so astronomical where like saving a little bit here to then introduce like a $100,000,000 of of risk and
+Speaker 8: Yeah. But there but there's a bunch of other things that are amazing. Like for us, we are we have like re architected a lot of our a lot of our infrastructure to be able like before, you know, one of the one of the hard things in crypto is adding a bunch of different block chains. Like every a lot of block chains can kind of be the same, but many are very different and so it's super tedious to add a bunch of a bunch of different block chains. We or or the same thing is true of like adding new payment rails.
+So, you you know, you might add a US bank and then you need a redundant US bank and then you need a European bank and then you need a bank in Mexico and then and all of these integrations kind of look the same. You you know, it's like you're getting money in, you're checking the money's in, you're sending money out, you know. And what we have built is the ability to sort of add all of these things very, very quickly. And so we took like what used to take two weeks to add a new blockchain, now takes someone actually did it in a meeting the other day of like adding a new stable coin on a new blockchain all with a bunch of claud that, you know.
+Speaker 6: Does that mean we need 10,000 new layer ones?
+Speaker 8: That is that is it's the Jevan's paradox of blockchains.
+Speaker 6: Because it's easier to produce a new chain, we need a 100,000 more, a million more. Yes. Maybe, honestly, one for one. Every American should have their own layer one.
+Speaker 8: We're we're just maximalists across every dimension.
+Speaker 4: There was a moment in stablecoins maybe last year where it was like,
+Speaker 1: this, like, this, like, small, like, county in New Mexico is gonna have their own chain?
+Speaker 6: That was that was a stable that was Wyoming.
+Speaker 8: Has its own stablecoin. So we're gonna have every state's gonna have its own stablecoin. Every state's gonna have its own blockchain. Maybe even every city. Yeah.
+Yeah. You know, you could have a new blockchain. Yeah. Yeah. Neighborhood.
+There you go.
+Speaker 1: Yeah. The mission stable coin.
+Speaker 4: Yeah. The presidio stable coin.
+Speaker 8: Which one would you
+Speaker 4: buy? Sohma.
+Speaker 6: I'm going for the Mavericks stable
+Speaker 1: coin. Okay.
+Speaker 4: Well It's just
+Speaker 6: a taste thing.
+Speaker 1: Anything else
+Speaker 4: for you?
+Speaker 6: No. This was great. Thank you for coming
+Speaker 1: on. So much for having Great
+Speaker 4: to meet you. We're closing out with you.
+Speaker 1: Close out with us. Yeah. Leave us five stars on Apple Podcasts and Spotify. Sign up for our newsletter at tbpn.com. We'll be back tomorrow in the TBPN Ultradome 11AM sharp.
+Thank you for tuning in, and have a great day. Goodbye.
+Speaker 6: It's been an honor. Cheers.
+Speaker 1: Goodbye.

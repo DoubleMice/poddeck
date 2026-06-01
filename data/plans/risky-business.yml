@@ -1,11 +1,11 @@
 source: risky-business
-refreshed_at: 2026-06-01T08:41:57.676Z
+refreshed_at: 2026-06-01T19:41:15.558Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 6
 done: 0
-pending: 1
-needs_transcript: 5
+pending: 2
+needs_transcript: 4
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -30,6 +30,7 @@ episodes:
         
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
+
 
         
 
@@ -63,8 +64,12 @@ episodes:
         Elias Levy (Aleph One), author of Smashing the Stack for Fun and Profit, Phrack, 1996
 
       How the World Got Owned is produced in partnership with SentinelOne.
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-01T19:55:51.581Z
+    transcript_job_id: 4057479e65044a148ea303c60d94788f,860e6b345105483383ea42d67cf04439,332bc404e7ec466aab7cb57050cd1d6a,8447af98e96242d2a5b883e5b713db1f
+    transcript_completed_at: 2026-06-01T19:58:22.021Z
   - id: SOAPBOX106
     title: "Soap Box: Red teaming AI systems with SpecterOps"
     duration: 1811

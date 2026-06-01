@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent 的技术综述：从 1950 年代的逻辑智能体到 OpenClaw Moment — 和苏煜的对谈</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  line-height: 1.75;
+  font-size: 17px;
+  color: #1a1a1a;
+  background: #f9fafb;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+header {
+  text-align: center;
+  padding: 40px 0 32px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 40px;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  color: #111;
+}
+header .meta {
+  font-size: 15px;
+  color: #6b7280;
+}
+header .meta span { margin: 0 8px; }
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 0 16px;
+  color: #111;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+  color: #1f2937;
+}
+p {
+  margin-bottom: 16px;
+  color: #374151;
+}
+blockquote {
+  margin: 24px 0;
+  padding: 16px 20px;
+  border-left: 4px solid #3b82f6;
+  background: #eff6ff;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #1e40af;
+}
+blockquote .attr {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  font-style: normal;
+  color: #6b7280;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  border-left: 4px solid;
+}
+.card strong { display: block; margin-bottom: 4px; }
+.card-blue   { background: #eff6ff; border-color: #3b82f6; }
+.card-green  { background: #f0fdf4; border-color: #22c55e; }
+.card-yellow { background: #fefce8; border-color: #eab308; }
+.card-red    { background: #fef2f2; border-color: #ef4444; }
+.card-purple { background: #faf5ff; border-color: #a855f7; }
+.card-orange { background: #fff7ed; border-color: #f97316; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+.info-box {
+  margin: 16px 0;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.info-blue   { background: #eff6ff; border: 1px solid #bfdbfe; }
+.info-green  { background: #f0fdf4; border: 1px solid #bbf7d0; }
+.info-purple { background: #faf5ff; border: 1px solid #e9d5ff; }
+.info-yellow { background: #fefce8; border: 1px solid #fef08a; }
+
+.quotes-section {
+  margin: 40px 0;
+  padding: 24px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+.quotes-section h2 {
+  margin-top: 0;
+  border-bottom: none;
+  font-size: 22px;
+  text-align: center;
+}
+.quote-item {
+  margin: 16px 0;
+  padding: 14px 18px;
+  border-left: 4px solid;
+  border-radius: 0 8px 8px 0;
+  background: white;
+}
+.quote-item p { margin-bottom: 4px; }
+.quote-item .ctx { font-size: 13px; color: #6b7280; }
+.q-blue   { border-color: #3b82f6; }
+.q-green  { border-color: #22c55e; }
+.q-yellow { border-color: #eab308; }
+.q-orange { border-color: #f97316; }
+.q-red    { border-color: #ef4444; }
+.q-purple { border-color: #a855f7; }
+
+.footnote {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #9ca3af;
+  text-align: center;
+}
+footer a { color: #3b82f6; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  article { padding: 20px 16px 60px; }
+  h1 { font-size: 23px; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Agent 的技术综述：从 1950 年代的逻辑智能体到 OpenClaw Moment</h1>
+  <div class="meta">
+    苏煜 <span>·</span> 俄亥俄州立大学教授 &amp; New Cognition 创始人 <span>·</span> 2026-05
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    商业访谈录 <span>·</span> 语言及世界工作室
+  </div>
+</header>
+
+<h2>为什么这期值得关注</h2>
+
+<div class="cards">
+  <div class="card card-blue">
+    <strong>🧠 Agent 的技术脉络</strong>
+    从 Logical Agent → Neural Agent → Language Agent，一次纵深的 Agent 技术史复盘。
+  </div>
+  <div class="card card-green">
+    <strong>🏗️ 语言作为脚手架</strong>
+    Language 如何成为 Agent Perception、Reasoning、Action 的统一媒介。
+  </div>
+  <div class="card card-yellow">
+    <strong>🔑 OpenClaw Moment</strong>
+    为什么 OpenClaw 是 Agent 的"ChatGPT Moment"？底层技术就绪，交互范式才是引爆点。
+  </div>
+  <div class="card card-red">
+    <strong>💻 Coding 是根本</strong>
+    Dario 的关键洞察：Coding 是数字世界最根本的 Fabric，所有边界都在通过 Code 消弭。
+  </div>
+  <div class="card card-purple">
+    <strong>🌍 World Model</strong>
+    不仅仅是对物理世界的视觉建模——公司架构、工作流、人际关系都是 World Model 的一部分。
+  </div>
+  <div class="card card-orange">
+    <strong>🏢 Agent 创业图景</strong>
+    $40M 种子轮背后的逻辑：Specialized Intelligence vs General Intelligence。
+  </div>
+</div>
+
+<p>2026 年，Agent 是最高频的词汇。从 Claude Code 在硅谷的爆炸式扩散，到 OpenClaw 在中国街头巷尾引发的全民焦虑——我们正处在一个被苏煜称为 "compressed timeline" 时刻，每一年甚至每一个月的发展等于过去十年的总和。</p>
+
+<p>苏煜是少数见证过 Agent 整个演化周期的人。他是俄亥俄州立大学计算机系教授、2025 年斯隆研究奖得主，研究方向是 Language Agent。他组里的工作——Mind2Web、SeeAct、UGround——直接塑造了今天我们看到的 Agent 形态。2025 年他搬到硅谷，创立了 Agent 研究实验室 <strong>New Cognition</strong>，并在 2026 年 3 月完成了 $40M 种子轮融资。</p>
+
+<p>这期播客是苏煜对 Agent 的一次技术综述——从 1950 年代的 Logical Agent 说到 OpenClaw，从 Memory/Autonomy 的分析框架说到 Continual Learning 的未来主旋律。以下是我们对谈的主要内容。</p>
+
+<h2>什么是 Agent？一个从 AI 诞生之初就存在的问题</h2>
+
+<p>苏煜给出了 Agent 的三个要素：</p>
+
+<div class="grid-3">
+  <div class="info-box info-blue">
+    <strong>🧍 Entity（实体）</strong><br>
+    它是一个有边界的实体，不是一个发散的没有边界的东西。
+  </div>
+  <div class="info-box info-green">
+    <strong>🌐 Environment（环境）</strong><br>
+    需要在外界环境中工作——无论是物理世界还是数字世界。
+  </div>
+  <div class="info-box info-purple">
+    <strong>🎯 Goal-Directed（目的性）</strong><br>
+    不是在随机游荡，而是带有目的地去进行各种活动以达成目标。
+  </div>
+</div>
+
+<p>这个框架的妙处在于它的普适性。所有的动物都符合这个定义，尤其是人类——"这个有最先进的智能的这样的 Agent"。AI 从头到尾关心的就是同一个问题：怎么去构建这样的 Agent。</p>
+
+<blockquote>
+"Agent 它并不是一个新的概念，就是整个 AI 领域一直是关心的这个问题。"
+<span class="attr">— 苏煜</span>
+</blockquote>
+
+<p>苏煜还提到了一个有意思的细节：AI 经典教材《Artificial Intelligence: A Modern Approach》的作者 Stuart Russell 曾跟他说过——虽然大家觉得这是一本 AI 的书，但实际上它<strong>本质上是一本关于 Agent 的书</strong>。书的第一章就是讲什么是 Intelligent Agent。只是现在大家有点遗忘了这个事实。</p>
+
+<h2>Agent 三纪元：从逻辑到神经到语言</h2>
+
+<p>苏煜将 Agent 的历史划分为三个纪元，每个纪元都在 Memory 和 Autonomy 这两个核心维度上实现了飞跃：</p>
+
+<h3>第一纪元：Logical Agent（1950s–1990s）</h3>
+
+<p>以专家系统为代表。核心思路是采访各领域专家，把他们的知识写成一阶谓词逻辑，然后用推理引擎进行逻辑推演。这是一种"能 Work"的早期 Agent，但其局限性也是致命的——</p>
+
+<p><strong>Memory</strong> 的表达力被逻辑语言完全束缚住了。"世界上绝大部分的东西都是没法用这些简单的逻辑来表达的。" 而 <strong>Autonomy</strong> 几乎为零——所有它能做的就是"接受一个问题，用推理引擎推理，给出一个答案"。</p>
+
+<p>更大的问题是知识获取瓶颈（Knowledge Acquisition Bottleneck）。把专家的知识转换成逻辑语言的过程痛苦、低效、无法规模化。"那个过程是非常痛苦，而且非常 Low-Scale，并且能达到的效果也非常有限。" 这直接导致 80-90 年代的 AI Winter——专家系统不能 Deliver 它的 Promise。</p>
+
+<h3>第二纪元：Neural Agent（2000–2020）</h3>
+
+<p>以 Deep Reinforcement Learning 为代表，标志性成果是 AlphaGo 和各类游戏 AI（Atari、Dota、星际争霸）。同一套神经网络架构可以玩不同种类的游戏——通用性有提高，但本质上仍然非常受限。</p>
+
+<p>苏煜从 Memory 和 Autonomy 的角度给出了精准的诊断：这些 Agent 的"主体"是一个很小的神经网络（在当时几十 Million 参数算大，在今天标准下非常小）。它的 <strong>Memory</strong> 仅包含关于这一个游戏的规则，它的 <strong>Autonomy</strong> 就是一次 Forward Pass——</p>
+
+<blockquote>
+"它对于不管多么复杂的情况，它所能用到的这个计算量就是一个 Forward Pass，对吧？而人显然不是这样的。我们对于不同的情况它的复杂度的不同，推理的计算量显然是不同的。"
+<span class="attr">— 苏煜</span>
+</blockquote>
+
+<p>Sample Efficiency 也是一大问题——一个简单的游戏可能需要玩几百万盘才能学会。为什么当时大家都用游戏做实验？苏煜分析了几层原因：DeepMind 的 Demis 对游戏情有独钟（个人偏好），游戏环境高度可重复且 Data 丰富（实际需要），而且当时的技术条件天然适合这种输入输出受限的环境。</p>
+
+<h3>第三纪元：Language Agent（2022–至今）</h3>
+
+<p>以 ChatGPT 为分水岭。这一代 Agent 最大的不同在于——<strong>语言成了 Scaffold（脚手架）</strong>。</p>
+
+<p>在 Perception 层面，语言理解让人机交互灵活得多。在 Reasoning 层面，Chain of Thought 实现了自适应推理："如果这个任务比较复杂，我就可以多产生一些 Token。每产生一个 Token 都是一个 Forward Pass，都是固定的计算量。所以实际上达到了一个 Adaptive Computing 的效果。" 在 Action 层面，语言是几乎全能的行动媒介——包括 Formal Language 和 Machine Language，基本上可以在 Digital World 里做任何事。</p>
+
+<div class="info-box info-purple">
+<strong>作者概括：</strong> 苏煜在 2023 年发表的博客 "Language Agents: A Critical Evolutionary Step for Artificial Intelligence" 中，从进化论的角度重新审视了这个问题。正如语言在人类进化中扮演了爆炸式加速剂的角色——系统性的符号表达出现于约 10 万年前，书面语言仅 5-6 千年，但这 5-6 千年产生了人类文明的大爆发——Language Agent 在 AI 的进化中似乎起到了类似的效果。
+</div>
+
+<h2>Language Agent 的时间线：三年走过了十年的路</h2>
+
+<p>苏煜从自身的研究经历出发，勾勒了 Language Agent 过去三年的关键里程碑：</p>
+
+<div class="info-box info-blue">
+<strong>2022 上半年 · Chain of Thought：</strong> 首次实现 Adaptive Computing。不同复杂度的问题用不同的推理计算量——这是一个非常本质的不同。<br><br>
+
+<strong>2022 下半年 · ReAct（姚顺雨）：</strong> CoT 扩展到有外部环境的 Agent Setting。每一步：感知环境状态 → 做 CoT 类型的推理 → 决定下一步行动 → 采取行动 → 环境变化。想法很简单，但影响力深远。<br><br>
+
+<strong>2023 初 · Toolformer（Meta）：</strong> 第一个 LLM Tool Use 工作。微软 CTO Satya 在全公司传阅这篇 Paper——他敏锐地看到，当大模型能用各种现成工具时，对 Enterprise 的意义完全不同。<br><br>
+
+<strong>2023 中 · AutoGPT：</strong> GitHub 历史上 Stars 涨得最快的 Repo——没有之一。把 LLM 包成 Agent 外壳，看上去能做任何事，实际上能做的非常少。苏煜类比：当年的火爆程度和今天的 OpenClaw 差不太多。<br><br>
+
+<strong>2023 下半年 · GPT-4V → SeeAct/UGround：</strong> Agent 全面向多模态转向。UGround（2024 年苏煜组的工作）确立了 "Use Computers Like Humans Do" 的 Embodiment——Visual Perception + Pixel-Level Actions。后来的 Claude Computer Use、OpenAI Operator、Claude Code Desktop 全都采用了这个方案。<br><br>
+
+<strong>2025 · Claude Code → OpenClaw：</strong> Coding Agent 以极其恐怖的速度大爆发。在硅谷，Opus 4.5 出来后，"大家的对于整个 Coding 的感知和实践都发生了翻天覆地的变化，而那个变化可能就是在那么一两个月之间就发生了。"
+</div>
+
+<h2>OpenClaw Moment：为什么它是 Agent 的"ChatGPT Moment"</h2>
+
+<p>苏煜提出了一个非常有力的类比：</p>
+
+<div class="grid-2">
+  <div class="info-box info-blue">
+    <strong>ChatGPT Moment（2022）</strong><br>
+    底层技术（LLM）已经发展了几年，但 OpenAI 做的事情是——把模型 Fine-tune 成 Chatbot，Release 给大众。底层技术没有太大变化，但<strong>交互形式的变化是导火索</strong>。连 OpenAI 自己都非常 Surprise。
+  </div>
+  <div class="info-box info-green">
+    <strong>OpenClaw Moment（2025-2026）</strong><br>
+    Agent 技术上已经 Ready。大部分做 Agent 的人看 OpenClaw Codebase 可能会觉得 "Nothing's new here"。但它的革命在于：<strong>YOLO it</strong>——不管 Permission 和安全，所有东西都打开。因为是开源的，这些问题相对小。
+  </div>
+</div>
+
+<blockquote>
+"就 ChatGPT Moment，它是标志着这个 LLM 这个范式的变化。而 OpenClaw 这个 Moment，它是标志着 Agent 那种各种高度自动化的、或者是 Personal 的这个 Agent 的这个范式的变化。"
+<span class="attr">— 苏煜</span>
+</blockquote>
+
+<p>OpenClaw 的影响已经远超技术圈。在美国，它主要限于开发者群体；但在中国，它已经变成了一个"时代性的产业机会""个人翻身的工具"，甚至有老人去 Event 找人帮忙装 OpenClaw。苏煜认为这可能与中国在应用层的技术基因有关——前 Google CEO Eric Schmidt 也曾专门指出过这一点。在基础模型智能已经超过临界点、"It's good enough" 的阶段，应用层的创新和执行力恰恰是最大的优势。</p>
+
+<p>但苏煜也保持清醒。对于 Agent 研究者来说，从 OpenClaw Moment 到真正的社会深刻影响，还有大量工作要做——"我们要让这些 Agent 变成真正的好用、容易用。因为你现在用 OpenClaw，它的门槛还是很高的。大部分人可能是很难从这里面找到价值的。"</p>
+
+<h2>Coding：所有边界的消弭剂</h2>
+
+<p>苏煜对 Anthropic CEO Dario 的判断深表认同：<strong>Coding 是数字世界最根本的 Building Layer</strong>。</p>
+
+<p>过去 Agent 研究中有很多临时性的划分——Browser Use vs Desktop Use vs Mobile Use、GUI vs Text-based vs API、Coding + Tool Use。但苏煜认为，这些边界正在 Coding 的维度上快速消弭：</p>
+
+<blockquote>
+"你所有的东西都能用 Code 来表达。GUI 本身就是通过 Code Render 而来的。Coding 不会仅限于 Digital World——Programming Language 本身就是 Language。"
+<span class="attr">— 苏煜</span>
+</blockquote>
+
+<p>这是为什么 "Language Agent" 这个名称不会过时。Programming Language 是 Language 的一种形式。Language 从来不只是自然语言——它是一切符号化的东西。</p>
+
+<h2>GUI 会消失吗？一个被过度简化的辩论</h2>
+
+<p>关于 Agent 应该用 GUI 还是 CLI 的争论在 2025-2026 年非常热烈。苏煜的立场非常清晰：<strong>GUI 不会消失，但 Agent 不一定需要 GUI——作为 Pragmatic 的选择，Agent 应该两者都支持。</strong></p>
+
+<p>他的论证来自三个层面：</p>
+
+<p><strong>第一，人需要 GUI。</strong> 我们是视觉动物——大脑就是这样编码的（It's wired that way）。HCI 研究表明视觉化让人的理解和反应速度快零点几秒。GUI 在做 Validation、Win Trust、Audit 方面都有实际好处。</p>
+
+<p><strong>第二，从实际角度，GUI 是 Digital World 的事实接口。</strong> 99% 的数字世界已经通过 GUI 交互。GUI 在设计过程中已经 Encode 了大量 Knowledge、Constraints、Business Logic。如果 Agent 能很好地使用 GUI，它就可以 "piggyback on all of these accumulated knowledge"——不用重新造轮子，"immediately reach all corners of human society"。</p>
+
+<p><strong>第三，经济账和人性不站在 CLI 全面替代这一边。</strong> 苏煜举了一个经典的例子——Tim Berners-Lee 的 Semantic Web。推了二十几年，Adoption 还是极低。"这个社会不是那么 Work 的。不是说，哦，我出来说我这有一套新的标准，它有这些好处，整个世界都会去听你的。" 还有那些基于几十年前 COBOL 系统运行的大型银行和关键基础设施——它们不会变化得那么快。</p>
+
+<h2>从通用到专精：Agent 的最大瓶颈</h2>
+
+<p>这是苏煜整个对话中最核心的技术洞见，也是他创立 New Cognition 的根本动机。</p>
+
+<p>现在的 Agent——Claude Code、Perplexity Computer、OpenClaw——通用智能已经很强了。给它一个问题，大概 60-70% 概率能做对。但问题在于另外 30-40%——不知道为什么就失败了。而人不是这样的：</p>
+
+<blockquote>
+"如果我们真正成为了某一个事情的专家的话，那我们就基本上是百分之百能做对。这个是因为我们有这样一个 Specialization 的过程。我们学会了对这个工作、对这个领域的所有的 Ins and Outs。"
+<span class="attr">— 苏煜</span>
+</blockquote>
+
+<p>苏煜用了一个生动的比喻：一个大学毕业生第一天去公司实习，完全不知道工作内容是什么，但可以在 Learning on the Job 的过程中持续学习——公司的组织架构（表面的和实际的，到底谁说了算）、各种软件怎么用、各种 Workflow、人与人之间的 Mental Model（Theory of Mind）。从 Intern 变成专家的过程，就是构建对这些 Micro World 的 Model 的过程。</p>
+
+<p>现在的 Agent 恰恰缺乏这个能力。它不 Reliable（不可靠）、不 Efficient（低效）、还特别贵（消耗 Frontier Model 大量 Token）。苏煜认为这三个问题是同一件事情的不同表现——根源在于 Agent 没有像人一样的<strong>持续学习（Continual Learning）</strong>能力来构建对具体工作领域的<strong>世界模型（World Model）</strong>。</p>
+
+<h2>World Model：比视觉更广的概念</h2>
+
+<p>苏煜对 World Model 的定义远比主流更宽广。当前主流的 World Model 研究主要来自 Computer Vision 领域——Vision-Based Model，做 Next Frame Prediction、3D Reconstruction、Latent Variables。这些工作很重要，但只是拼图的一部分。</p>
+
+<p>对苏煜来说，World Model 包括了所有人在工作中学会的东西：组织架构、软件操作、工作流、人际关系、业务逻辑。这些显然不是一个 Video Model 能涵盖的。有些部分是符号化的（Symbolic），有些部分甚至既不是符号化也不是视觉的——但归根结底，"我们持续学习学到的东西是这样一种 Specialized World Model。"</p>
+
+<p>苏煜从神经科学中找到了理论支撑。Jeff Hawkins 的《千脑智能》（A Thousand Brains of Intelligence）提出：人脑新皮层（Neocortex）中约 15 万个皮脂柱，每个都在学习 World Model——不限于物理世界，还包括语言、数学系统、抽象概念（什么是民主、什么是法治）。这才是 New Cognition 公司名称的真正来源。</p>
+
+<h2>2026 年的主旋律：Continual Learning</h2>
+
+<p>苏煜对 2026 年的预测非常明确：<strong>Continual Learning 和 Self-Learning 会是今年的主旋律。</strong> 至于 Continual Learning 的具体方式是不是基于 World Model——"这可能是 One of the bets"，但不管技术路线是什么，方向已经清晰。</p>
+
+<p>他认为现有的两个 Agent 训练范式都不足以训练出 Expert Agent：</p>
+
+<div class="grid-2">
+  <div class="info-box info-yellow">
+    <strong>RL Post Training（模型厂的路径）</strong><br>
+    RL + Synthetic Environments + RL Games。学习速度、准确性、学习内容的范畴——和人的持续学习是天壤之别。
+  </div>
+  <div class="info-box info-green">
+    <strong>Non-parametric Learning（OpenClaw 式）</strong><br>
+    MD Files → Skills → Rules → Harness。苏煜对 Non-parametric 很有热情，相信还有很大空间，但光靠它上限有限。
+  </div>
+</div>
+
+<p>这些瓶颈解释了为什么 OpenAI 和 Anthropic 都要采用 "Platform Engineer" 模式——派驻大量工程师到客户现场帮他们 Build Agents。当 Agent 真正解决了 Reliability、Speed、Cost 的问题，这种重人力的模式就不再必要了。</p>
+
+<h2>创业、融资与 Agent 的未来格局</h2>
+
+<p>苏煜的创业选择背后有清晰的逻辑。在学校他能同时做十个感兴趣的 Idea，但 Agent 发展到 2025 年，真正有意思的 Idea 需要的资源——GPU、API、团队——已经超出了学术机构的能力范围。更关键的是，他相信 "最大的 Learning Signal 来自于 Continual Learning from Deployment"——真实环境的部署才能产生真正的学习数据，而学校没法做这样的部署。</p>
+
+<p>New Cognition 的定位是 <strong>Agent Research Lab</strong>——一个介于纯学术研究和纯商业 Startup 之间的形态。短期聚焦 Specialized Intelligence，长期关注所有跟 Agent 相关的问题。为什么大厂不能轻易 Copy？苏煜的回答意味深长：因为这件事太难了，上限极高，不确定性极高——"类似 Robotics 行业的逻辑，想象空间大 + 不确定性高 = 容纳更多 Player。"</p>
+
+<p>对于美国当前的 AI 融资市场，苏煜观察到明显的<strong>两极分化</strong>。头部的融资规模和估值越来越大——New Labs 一上来融几千万到几十亿美金。OpenAI 和 Anthropic 的融资额加起来可能占整个市场的 30-50%。而中间的 VC 正在经历最艰难的时期——要么变成 Mega Fund 投 Growth Stage，要么变成 Boutique Firm 靠 Deep Knowledge 找到 Edge。</p>
+
+<p>关于大厂的 Agent 战略，苏煜认为去年的"百花齐放"已经变成了今年的"高度趋同"。Anthropic 一家独大，打了个样，大家都在抄作业。但新的 Bets 也在出现——马斯克的 xAI 走类似 Tesla FSD 的路线（小模型、视觉为主、End-to-End），Jeff Bezos 的 Project Prometheus 据传融了 60-70 亿美金要做 Physical Manufacturing。</p>
+
+<div class="quotes-section">
+<h2>核心金句</h2>
+
+<div class="quote-item q-blue">
+  <p>"Agent 首先它应该是 Entity，它有它的 Boundary。它需要在外界环境中去工作。它要去进行 Goal-Directed Activities，有目的性地去进行各种各样的活动。"</p>
+  <div class="ctx">— 苏煜，Agent 的三要素定义</div>
+</div>
+
+<div class="quote-item q-green">
+  <p>"分久必合，合久必分——最近所有这些领域又有一个重新归拢的趋势。"</p>
+  <div class="ctx">— 苏煜，谈 CV/NLP/Reasoning 子领域的重新汇聚</div>
+</div>
+
+<div class="quote-item q-yellow">
+  <p>"就 ChatGPT Moment，它是标志着这个 LLM 这个范式的变化。而 OpenClaw 这个 Moment，它是标志着 Agent 那种各种高度自动化的、或者是 Personal 的这个 Agent 的这个范式的变化。"</p>
+  <div class="ctx">— 苏煜，类比两个历史性的范式转换</div>
+</div>
+
+<div class="quote-item q-orange">
+  <p>"这些东西都是在快速地 Converge。最后，At the end of the day，大家想要的就是一个 Universal Digital Agent。"</p>
+  <div class="ctx">— 苏煜，Agent 的终极愿景</div>
+</div>
+
+<div class="quote-item q-red">
+  <p>"Let machines understands human thinking. Don't let humans think like machines."</p>
+  <div class="ctx">— 苏煜的 PhD 答辩宣言，语义解析的初心</div>
+</div>
+
+<div class="quote-item q-purple">
+  <p>"你可能 Individual Thought doesn't need language，但是 Civilization needs language."</p>
+  <div class="ctx">— 苏煜，谈语言与思维的关系</div>
+</div>
+
+<div class="quote-item q-blue">
+  <p>"我们 Living in a compressed timeline——现在每一年甚至每一个月 AI 的发展是以前可能要十年才能达到的。"</p>
+  <div class="ctx">— 苏煜，Agent 进化的加速度</div>
+</div>
+
+<div class="quote-item q-green">
+  <p>"Coding 它是非常 Fundamental 的。它是这个最根本性的 Fabric，这个 Building Layer。你所有的东西都能用 Code 来表达。"</p>
+  <div class="ctx">— 苏煜，评价 Dario 的 Coding 洞见</div>
+</div>
+
+<div class="quote-item q-yellow">
+  <p>"这个世界是非常复杂的，这个世界不是一个世界，它是由可能几百万个小世界组成的。"</p>
+  <div class="ctx">— 苏煜，谈 Specialization 的必要性</div>
+</div>
+
+<div class="quote-item q-orange">
+  <p>"Continual Learning 和 World Model 我觉得它本质上是一件事情。"</p>
+  <div class="ctx">— 苏煜，2026 年 Agent 研究方向的核心命题</div>
+</div>
+</div>
+
+<h2>一个研究者的底色</h2>
+
+<p>在对话的最后，苏煜分享了他的个人经历和性格底色。湖南小县城出生，凌晨三点偷溜去网吧打游戏，同时又极度热爱读书——"家里只要是纸质的东西就拿起来读"。他用"魂不吝"来形容自己：不觉得事情有那么大所谓，不会为某件事吃不好睡不好；但如果真的想要一个东西，"Put my mind to it, put my effort to it，大概率是能够做到的。"</p>
+
+<p>从清华计算机到 Semantic Parsing（当时一个非常小众的 NLP 子方向），到成为 Language Agent 的早期研究者，再到创立 New Cognition——每步选择背后都有一个共同的原因："我想做的事情有很多。同时间有十个东西我想做。" 这种对知识关联（Conceptual Framework）的持续构建，是他最核心的驱动力。</p>
+
+<p>苏煜推荐了两本对他影响最大的书：Max Bennett 的 <strong>A Brief History of Intelligence</strong>（将 AI、Evolution 和 Neuroscience 结合得最好又最通俗易懂的书）和 Jeff Hawkins 的 <strong>A Thousand Brains</strong>（对于人脑到底怎么 Work 的一个非常大胆的理论）。他的研究也直接受到了这些书的影响——比如 "LLMs in the Imaginarium: Learning Tools through Simulated Trial and Error" 这篇 Paper。</p>
+
+<footer>
+  <p>原文播客：<a href="https://www.xiaoyuzhoufm.com/episode/69f3857a5c60a99573fea0c2?utm_source=rss" target="_blank" rel="noopener">商业访谈录 · 139 期</a></p>
+  <p style="margin-top:8px;">本文由 PodDeck 自动生成 · 语言及世界工作室</p>
+</footer>
+
+</article>
+</body>
+</html>

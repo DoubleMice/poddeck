@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stripe 的 AI 时代全景图 — TBPN Live at Stripe Sessions</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px; line-height: 1.75; color: #1a1a2e;
+    background: #f8f9fa; padding: 20px;
+  }
+  article {
+    max-width: 720px; margin: 0 auto; background: #fff;
+    padding: 48px 40px; border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  h1 { font-size: 28px; line-height: 1.35; margin-bottom: 8px; color: #111; }
+  h2 { font-size: 22px; margin: 40px 0 16px; color: #1971c2; border-bottom: 2px solid #e9ecef; padding-bottom: 8px; }
+  h3 { font-size: 18px; margin: 24px 0 10px; color: #2f9e44; }
+  p { margin-bottom: 14px; color: #333; }
+  .meta { font-size: 14px; color: #868e96; margin-bottom: 32px; }
+  .meta span { margin-right: 16px; }
+  .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+  .card { padding: 14px 16px; border-radius: 8px; border-left: 4px solid; font-size: 15px; line-height: 1.55; }
+  .card.blue { background: #e7f5ff; border-color: #1971c2; }
+  .card.green { background: #ebfbee; border-color: #2f9e44; }
+  .card.purple { background: #f3f0ff; border-color: #6741d9; }
+  .card.yellow { background: #fff9db; border-color: #f59f00; }
+  .card.orange { background: #fff4e6; border-color: #e8590c; }
+  .card.red { background: #fff5f5; border-color: #e03131; }
+  .quote { padding: 16px 20px; margin: 18px 0; border-radius: 8px; border-left: 4px solid; font-style: italic; font-size: 16px; line-height: 1.65; }
+  .quote.blue { background: #e7f5ff; border-color: #1971c2; }
+  .quote.green { background: #ebfbee; border-color: #2f9e44; }
+  .quote.purple { background: #f3f0ff; border-color: #6741d9; }
+  .quote.yellow { background: #fff9db; border-color: #f59f00; }
+  .quote.orange { background: #fff4e6; border-color: #e8590c; }
+  .quote.red { background: #fff5f5; border-color: #e03131; }
+  .quote .attr { font-style: normal; font-size: 13px; color: #868e96; margin-top: 6px; }
+  .gloss { font-size: 14px; color: #868e96; font-style: italic; margin: 8px 0 16px; padding-left: 12px; border-left: 2px solid #dee2e6; }
+  .stats-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 18px 0; text-align: center; }
+  .stat { background: #f8f9fa; padding: 16px 12px; border-radius: 8px; }
+  .stat .num { font-size: 32px; font-weight: 700; color: #1971c2; }
+  .stat .label { font-size: 13px; color: #868e96; margin-top: 4px; }
+  .footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e9ecef; font-size: 13px; color: #868e96; text-align: center; }
+  .footer a { color: #1971c2; text-decoration: none; }
+  @media (max-width: 600px) {
+    article { padding: 24px 18px; }
+    .card-grid, .stats-row { grid-template-columns: 1fr; }
+    h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<h1>🟣 Stripe 的 AI 时代全景图</h1>
+<div class="meta">
+  <span>🎙️ TBPN Live at Stripe Sessions</span>
+  <span>📅 2026-04</span>
+  <span>⏱️ 1h25m</span>
+</div>
+
+<p>这是一期极为罕见的同台访谈：五位 Stripe 生态的核心人物——John Collison（Stripe 联合创始人兼总裁）、Patrick Collison（Stripe 联合创始人兼 CEO）、Henri Stern（Privy CEO，9 个月前被 Stripe 收购）、Jeff Weinstein（Stripe Atlas 产品负责人）、Zach Abrams（Bridge CEO，稳定币支付基础设施）——在 2026 年 Stripe Sessions 现场，围绕 AI 时代的商业基础设施进行了密集而坦率的对话。</p>
+
+<p>从 71% 的新企业增长到 1/6 的欺诈率，从 agentic commerce 到稳定币的下一波平台迁移，这场对话几乎触及了当今科技和商业交汇处的每一个关键问题。</p>
+
+<h2>为什么这期节目值得关注</h2>
+
+<div class="card-grid">
+  <div class="card blue">
+    <strong>📊 AI 驱动的商业大爆发</strong><br>
+    Stripe 的数据显示新公司创立呈抛物线增长，且平均收入同步上升——AI 不只是催生了更多公司，而是在催生更多<em>成功的</em>公司。
+  </div>
+  <div class="card green">
+    <strong>🤖 Agentic Commerce 的全面落地</strong><br>
+    Google、OpenAI、Microsoft、Meta 已全部接入 Stripe 的 agent-to-commerce 体系。AI 代理可以直接购买商品和服务了。
+  </div>
+  <div class="card purple">
+    <strong>🔐 AI 时代的新型欺诈</strong><br>
+    Token 可以转售——这创造了传统 SaaS 不存在的新攻击面。1/6 的新账户是欺诈，Stripe Radar 正在成为 AI 经济的安全基础设施。
+  </div>
+  <div class="card yellow">
+    <strong>💱 从 SaaS 到按用量付费</strong><br>
+    商业模式正在发生根本性迁移。Stripe 收购 Metronome，结合稳定币实现每 token 即时结算的流式支付。
+  </div>
+  <div class="card orange">
+    <strong>🏦 稳定币：被低估的平台迁移</strong><br>
+    Zach Abrams 将稳定币+AI 类比为信用卡+互联网——上一代平台迁移创造了 90% 的金融科技创新，下一代正在展开。
+  </div>
+  <div class="card red">
+    <strong>💡 软件工程没有死</strong><br>
+    "说软件工程只剩两年的人，都抽了什么。"双学科人才和高主动性的人将迎来黄金时代。
+  </div>
+</div>
+
+<h2>AI 驱动的商业创建大爆发</h2>
+
+<p>Patrick Collison 在会上展示了一张图表，这张图的形状让他自己都感到震惊：Stripe 平台上的新企业创建正在以"抛物线"速度增长。Q1 整体新企业入驻同比暴增 71%，而 3 月份 Stripe Atlas 的新公司注册量创下了历史最高纪录。</p>
+
+<div class="quote blue">
+"So March was an all time record for new incorporations with Stripe Atlas. And then in Q1 overall for just new businesses joining Stripe, that was up 71% year over year. We showed the chart at the beginning of our keynote yesterday. It is parabolic, it is exponential."
+<div class="attr">— Patrick Collison</div>
+</div>
+
+<p>但更令人惊讶的是第二个发现。Patrick 最初以为这只是"vibe coding"催生的微型公司——数量虽多但个体不大，类似于过去那种被略带贬义地称为"lifestyle business"的东西。然而实际数据显示：<strong>每家公司的平均收入也在增长</strong>。正如 Patrick 所说："不知何故，中位数企业也做得更好了。"</p>
+
+<p>John Collison 将这个现象归因于 AI 将创业的每一个步骤都变得稍微容易了一点——稍微容易注册公司、稍微容易创建合同、稍微容易雇佣人员、稍微容易投放广告。所有这些微小的摩擦力减少加起来，产生了巨大的复合效应。Sam Altman 在前一天的同一个舞台上谈到了"点子人（idea guy）的回归"——那个长期被嘲笑的角色，现在因为 AI 而拥有了真正的执行力。</p>
+
+<div class="gloss">作者概括：AI 将创业的"全栈能力"赋予了个人。一个人可以同时做设计、产品管理和工程——这正在从根本改变"谁可以成为创业者"这个问题的答案。</div>
+
+<h2>Agentic Commerce：AI 代理开始买东西</h2>
+
+<p>这是 Stripe Sessions 上最重要的产品发布方向之一。John Collison 描绘了一个清晰的双轨图景：</p>
+
+<p><strong>消费者侧：</strong>当你在 ChatGPT 或类似的 AI 助手中询问产品问题、比较选项后，你最自然的下一步就是"帮我买"。没人想离开对话去填网页表单——那不是一个增值行为。Google、OpenAI、Microsoft 和 Meta 已经全部加入了 Stripe 的 agent-to-commerce 生态。</p>
+
+<div class="quote green">
+"No one wants to fill out web forms, it's not a value add activity."
+<div class="attr">— John Collison</div>
+</div>
+
+<p><strong>开发者侧：Stripe Projects。</strong>这个产品解决了一个每个 vibe coder 都会遇到的真实痛点：AI 代理可以写出漂亮的代码，但它不能帮你注册 Vercel、买域名、付 Cloudflare 账单。你需要作为"大人"去够高架子上的东西——拿到各种 API key、完成各种注册。Stripe Projects 让代理可以自主完成这一切：注册服务、支付费用、配置全栈，然后继续构建产品。正如 John 所说，这个产品"7 周前由 6 个人启动"——这在过去是不可想象的速度。</p>
+
+<div class="quote green">
+"Now, what was previously a multi step process where it could kind of do some version, could like orchestrate Vercel but it couldn't sign up for it. Now, it can pay for Vercel. It can pay for Cloudflare. It can pay for browser base if you want to do headless web browsing."
+<div class="attr">— John Collison</div>
+</div>
+
+<h2>从 SaaS 到用量计费：商业模式的根本迁移</h2>
+
+<p>Patrick Collison 指出，AI 经济正在推动一次深层的商业模式迁移。推理成本以 token 计算——这天然适合按用量付费，而非传统的固定订阅。Stripe 收购了 Metronome（一个用量计费平台），并正在将其深度整合到 Stripe 的整个产品体系中。</p>
+
+<p>传统月结模式有一个根本性缺陷：它是隐性的信用扩展。如果有人使用了一百万美元的 token 后跑路——这对 AI 服务商来说是一个真实存在的巨大风险。Stripe 展示的方案是将用量计费与稳定币流式支付结合：<strong>每交付一个 token，即时结算一次</strong>——零信用风险、零拒付、零坏账。</p>
+
+<p>这也是稳定币在 AI 经济中最自然的应用场景：当你需要按 0.0001 美元的粒度、以极高的频次、在全球范围内即时结算时，传统的信用卡轨道根本不适用。</p>
+
+<h2>AI 欺诈：1/6 的新账户是假的</h2>
+
+<p>伴随新商业大爆发的，是汹涌而来的新型欺诈。Patrick Collison 披露了一个惊人数字：<strong>在这个生态系统中，每六个新账户中就有一个是欺诈性的。</strong></p>
+
+<p>理解这个问题的关键是：Token 可以转售。两年前，如果你通过非法手段获取了一个 SaaS 工具的访问权限，你用它做不了什么——软件使用权本身缺乏二级市场。但 token 完全不同：你可以直接转售，也可以用它来蒸馏替代模型。这为欺诈创造了前所未有的经济激励。</p>
+
+<div class="quote yellow">
+"If you run any physical store, you have to worry about shrinkage. Good, upstanding people suffer from the small percentage of crime that happens. It's the exact same in the AI land where similarly they are selling a product that has real value, real resell value, exactly real costs associated."
+<div class="attr">— John Collison</div>
+</div>
+
+<p>Patrick 的警告更加直白：如果欺诈问题不解决，"我们不会有一个支持自助注册的互联网"。免费试用正在变得不可持续——欺诈账户的 token 消耗正在吃掉 AI 公司的获客预算。Stripe Radar 因此正在从一个支付欺诈评分工具，扩展为覆盖注册、试用、账户生命周期全链路的"AI 经济 X 光机"。</p>
+
+<h2>开发者优先：十五年前的赌注在 AI 时代兑现</h2>
+
+<p>John Collison 在访谈中揭示了一个被很多人忽视的历史细节：Stripe 最初的名字是 <code>/dev/payments</code>——"开发者的支付"。在支付行业普遍通过 CFO 渠道销售的时代，这几乎是一种自毁式的定位。但正是这个选择，让 Stripe 在今天的 AI 时代获得了意外的优势。</p>
+
+<div class="quote purple">
+"Stripe's original name was /dev/payments. And payments for developers — you can go back in the wayback machine, that was the tagline on the website."
+<div class="attr">— John Collison</div>
+</div>
+
+<p>原因很简单：<strong>AI 代理喜欢有良好 API 文档、有 CLI 接口、每个功能都暴露为可编程原语的服务</strong>。正如 Patrick 所说，"代理比人类更需要良好的开发者体验（DX）"。Jeff Weinstein 补充了一个有力证据：Stripe 的 CLI 工具原本是给终端极客的"小众功能"，如今却成了增长最快的产品——因为 AI 代理可以直接使用它来完成复杂的金融操作，而不需要模拟人类在网页上点击。</p>
+
+<div class="quote purple">
+"Agents want good DX — developer experience — even more than humans do. And so if you don't have it, it's a real problem."
+<div class="attr">— Patrick Collison</div>
+</div>
+
+<h2>软件工程没有死</h2>
+
+<p>在一片"AI 将消灭软件工程"的喧嚣中，John Collison 给出了全场最直白的反驳。他说那些声称软件工程"只剩两年"的人，"都抽了什么"。他用 90 年代"云端文件夹"的类比来说明为什么底层理解永远重要：人们曾经以为可以把文件丢进一个"恰好存在网络上的文件夹"里，完全抽象掉磁盘 IO 和网络中断的存在——但这从来没有真正工作过。</p>
+
+<div class="quote green">
+"All these people calling the death of software engineering, yeah, are smoking something."
+<div class="attr">— John Collison</div>
+</div>
+
+<p>他认为，在 AI 时代真正有效工作需要理解模型背后的机制——记忆如何工作、harness 和 skills 如何交互、不同场景需要什么样的 prompt 策略。两组人将在这个时代取得非凡成就：<strong>高主动性的人</strong>（那些有"干劲"去和客户交谈、知道要修什么的行动者）和<strong>双学科人才</strong>（懂软件 + 懂金融，懂软件 + 懂营销——一个人完成过去需要 20 人团队的工作）。</p>
+
+<div class="gloss">作者概括：John 的论点不是"AI 不重要"，而是"能理解 AI 在做什么、以及为什么在某些情况下它不工作的人，比完全依赖 AI 的人更有优势"。这是一种有说服力的中间立场。</div>
+
+<h2>修理工精神的回归：Stewart Brand、OpenClaw 与家酿电脑俱乐部</h2>
+
+<p>访谈中有一段精彩的"非科技"对话。主持人拿出一本 Stripe Press 出版的《Maintenance of Everything》（万物的维护），作者是 Stewart Brand——一个贯穿整个硅谷史的传奇人物。他从 60 年代 Ken Kesey 的 LSD 派对开始，见证了 Engelbart 的"所有演示之母"（鼠标的首次亮相），创办了被 Steve Jobs 在斯坦福演讲中致敬的《全球概览》，然后在 80 多岁高龄发表了这本关于维护的著作。</p>
+
+<p>John Collison 将 Stewart Brand 的核心思想——对工具的热爱、对维护的尊重——与当下的 OpenClaw 运动联系起来。他看到了同一条精神脉络：<strong>个人赋权、tinkering 文化、电脑是给人玩的而不仅仅是被消费的。</strong>他对 OpenClaw 被嘲笑的现象感到不以为然：</p>
+
+<div class="quote blue">
+"It's crazy that, you know, people have this skepticism because it's easily like the most fun you can have with computers."
+<div class="attr">— John Collison</div>
+</div>
+
+<p>他提出了两种 AI 未来观的对立：一种是"slop"——被动接收 AI 生成的平庸内容，像《美丽新世界》中的 Soma；另一种是 OpenClaw 代表的 tinkering 精神——赋予个人计算和编程的能力，如同家酿电脑俱乐部的重现。他选择后者。</p>
+
+<h2>稳定币：下一波平台迁移正在发生</h2>
+
+<p>访谈中关于稳定币的讨论几乎可以独立成篇。Zach Abrams（Bridge CEO）给出了一个有力的比喻：</p>
+
+<div class="quote orange">
+"In financial services, platform shifts take a different shape. Cards were a new form factor. Cards combined with the Internet was 90% of all fintech innovation... Stablecoins represent another platform shift in payments, and I think AI could be the corresponding one that helps drive adoption."
+<div class="attr">— Zach Abrams</div>
+</div>
+
+<p>这个比喻是这样展开的：信用卡是 70 年代的新 form factor。当互联网在 90 年代起飞时，信用卡被"解锁"——先是在线支付起飞，然后更多人有了卡，然后线下也更多用卡，形成了一个正反馈循环。信用卡+互联网创造了过去 30 年金融科技 90% 的创新。</p>
+
+<p>稳定币 + AI 可能正在创造下一个这样的循环。AI 代理场景天然需要稳定币的特性：极小额支付（每 token 按美分万分之一的粒度结算）、高速交易（流式、即时）、不可逆（代理场景不需要消费者保护式的拒付机制）、可编程（智能合约自动化）。</p>
+
+<p>Zach 还披露了一个关键数据：Bridge 去年业务增长了 4 倍，过去一个月再增 20%。这反驳了《经济学人》关于"稳定币市场在冷却"的叙事——正如 John Collison 所说，价格曲线和底层活动是两件完全不同的事。</p>
+
+<h2>银行其实也在入场</h2>
+
+<p>关于银行与稳定币之间的"战争"叙事，Zach Abrams 提供了一幅更微妙的画面：</p>
+
+<p>"我的经历是，银行和稳定币的对抗并非普遍现象。有多组银行正在联合发行稳定币。多家社区银行正在与我们的稳定币倡议合作。"全场唯一的显著例外是摩根大通——他们有自己的 JPM Coin 在推动。而 Meta 已公开宣布通过 Bridge 用稳定币向创作者付款。</p>
+
+<p>Henri Stern（Privy CEO）则从监管角度切入：Genius Act 已经通过，奠定了初步的法律框架；Clarity Act 目前正在博弈中。Polymarket 上预测其通过委员会的概率约为 45%。Henri 认为关键问题是：<strong>我们应该从什么最有利于使用这些工具的人的角度来看待监管，而不是从"这和我现有的基础设施有多大不同"的角度。</strong></p>
+
+<h2>Token 化存款 vs 稳定币：两条可能融合的路径</h2>
+
+<p>Henri Stern 用一个简洁的比喻解释了当前数字资产的两种实现路径。Token 化存款就像是把外套存到衣帽间后拿到的号码牌——你拿着号码牌到处走，但外套（实际美元）还留在银行后台。稳定币则是你直接拿着外套本身——你可以穿上它（使用它）、借给别人（借贷）、或者改造成别的东西（可编程组合）。</p>
+
+<p>Henri 的判断是这两条路径最终会融合。但从短期看，更具竞争力的路径是稳定币——因为它提供了真正的可编程性和可组合性，这正是 AI 代理所需要的。</p>
+
+<h2>AI 安全攻防：ChatGPT 在 React 中发现了 Zero-Day</h2>
+
+<p>Henri Stern 分享了一个令人震惊的事实：Privy 的工程师 Andrew McPherson 使用 ChatGPT 在 React 中发现了一个 zero-day 漏洞。React 是一个由 Meta 出品、开源已有 15 年、被全球几乎所有网站使用的库，已经被无数安全研究者"打烂"了——但 AI 仍然找到了人类从未发现的新漏洞。</p>
+
+<p>与此同时，Henri 也观察到 AI 在攻击侧的进化：bug bounty 的基线水平显著提高，攻击者能够组合更复杂的攻击向量，而这些攻击向量单靠人类思维很难系统地枚举。</p>
+
+<div class="gloss">作者概括：AI 既是安全问题的加剧者（新攻击面），也是安全问题的解决者（新防御能力）。这是一个经典的"双刃剑"局面，最终比拼的是谁用 AI 用得更好、更快。</div>
+
+<h2>Agentic Wallets：35% 的新注册在构建代理钱包</h2>
+
+<p>Privy 的数据显示了一个令人惊讶的趋势：<strong>35% 的 Privy 新注册用户正在构建 agentic wallet</strong>——为 AI 代理配一个钱包，设定支出限额和消费规则，并保留撤回资产的能力。Henri 预测这种"tinkering"将催生涌现行为：先是后台层面的商业模式创新（流式支付、per-token billing），然后是代理自主管理钱包、跨越法币和稳定币两条轨道的代理自主金融。</p>
+
+<h2>Atlas：26% 的美国新 C-Corp 从这里诞生</h2>
+
+<p>Jeff Weinstein 分享了 Stripe Atlas 的最新数据：Atlas 现在负责<strong>26% 的美国新 C-Corp 注册</strong>，累计注册企业突破 100,000 家。即将推出的功能包括：Atlas CLI（代理可以直接通过命令行注册公司）、全流程 SAFE 融资、以及投资人资金直接进 Treasury 账户。Jeff 的预测是：前 10 万家企业用了 8 年，下一个 10 万家可能只需要 1-2 年。</p>
+
+<p>这种信心来自于一个更深层的观察：<strong>你需要让你的业务对代理"可读"。</strong>代理不关心你的 checkout 页面颜色有多好看，不想要华丽的 JavaScript 动画。它们想要的是清晰的结构化信息——SKU、价格、条款。Stripe 的应对策略是将所有产品信息以 LLM 格式的 Markdown 文本提供，将每个功能暴露为可编程原语。CLI 从"小众工具"变成了增长最快的产品。</p>
+
+<div class="quote yellow">
+"You have to make your business legible to the agents."
+<div class="attr">— Jeff Weinstein</div>
+</div>
+
+<h2>Treasury：160 个国家、金属卡、一站式金融</h2>
+
+<p>Stripe Treasury 的发布是大会上最重要的产品公告之一。它的野心是让 Stripe 从"钱从这流过"变成"钱住在这里"——企业可以持有余额、向 150+ 国家付款、Stripe-to-Stripe 账户间即时免费转账。Jeff Weinstein 透露，Treasury 计划在 2026 年底前覆盖 160 个国家。</p>
+
+<p>一个关键的决策逻辑是：因为有了稳定币，Stripe 现在可以从第一天就做真正的全球产品。"几年前，我们必须一个国家一个国家地推出这类产品。"稳定币作为底层基础设施，正在让 Stripe 绕开传统银行网络的国界限制。</p>
+
+<h2>创业者的信念：穿越崩溃</h2>
+
+<p>Zach Abrams 分享了他创立 Bridge 过程中经历过的一系列崩溃：Terra Luna 崩盘、FTX 爆雷、SVB 倒闭、USDC 脱锚，以及被 4 家银行拒之门外。当所有这些发生的时候，很多人都告诉他："你在浪费时间。"</p>
+
+<p>但他坚持下来的原因——也是他认为对所有创始人最重要的建议——是<strong>真实的信念</strong>：他在构建一个自己深信应该存在的东西，而不是投资人想投的东西或行业觉得有趣的东西。如果信念不是真实的，你会在第一个低谷转向。</p>
+
+<div class="gloss">作者概括：这不是关于"坚持"的鸡汤——Zach 的要点是区分两种驱动力：对外部认可的追求和对内在信念的忠诚。前者在顺境中足够驱动你，但在逆境的深渊里只有后者能让你不放弃。</div>
+
+<h2>AI 在高风险软件开发中的边界</h2>
+
+<p>Zach Abrams 坦承，Bridge 在 AI 的使用上比纯软件公司"慢一到两步"。原因很简单：稳定币和加密基础设施的风险特征完全不同。国家信托银行的监管要求包括<strong>每一个 commit 都必须有人类审批</strong>——"vibe code"一个金融基础设施后在出事时无法解释"为什么这么写"，是不可接受的。</p>
+
+<p>但这并不意味着 AI 没有价值。Bridge 发现 AI 在添加新区块链和支付轨道时极其有效——这些任务高度模板化、重复性强，曾经需要两周的工作现在有人在一场会议中就完成了。交易监控也是 AI 发挥重要作用的领域。</p>
+
+<h2>给 2026 年年轻人的建议</h2>
+
+<p>当被问到"一个大学毕业生应该加入 Stripe 还是创业"时，Jeff Weinstein 说"这两个选项都在桌上本身已经是一种胜利"。他的核心建议是：去寻找你真正有激情的领域，"今天我们拥有的工具，是我们当初创业时梦想中才有的"。</p>
+
+<p>John Collison 则建议关注双学科能力。引用查理·芒格关于多学科思维的重要性的论述，他认为"多学科思考者将表现得极其出色"。在 AI 时代，"你可以去读那些书，你可以和你的 AI 讨论它们"——获取跨领域的知识从未如此容易。</p>
+
+<h2>核心金句</h2>
+
+<div class="quote blue">
+"The economy is re-platforming around AI."
+<div class="attr">— John Collison，总结 Stripe Sessions 的核心主题</div>
+</div>
+
+<div class="quote green">
+"The secret to being a Silicon Valley founder is you have to get lucky for many many years in a row and then you go back and you pretend that was your plan all along."
+<div class="attr">— John Collison，带自嘲的坦诚</div>
+</div>
+
+<div class="quote purple">
+"People talk about platform shifts... In financial services, cards were a new form factor. Cards combined with the Internet was 90% of all fintech innovation. Stablecoins represent another platform shift."
+<div class="attr">— Zach Abrams</div>
+</div>
+
+<div class="quote orange">
+"We're not gonna have an Internet with self serve access unless we solve this fraud problem."
+<div class="attr">— Patrick Collison</div>
+</div>
+
+<div class="quote red">
+"All these people calling the death of software engineering — yeah, are smoking something."
+<div class="attr">— John Collison</div>
+</div>
+
+<div class="quote yellow">
+"If you understand software and understand finance, or if you understand software and understand marketing, you now can go massively improve the entire marketing funnel for your company and one person can do what would have taken 20 people."
+<div class="attr">— John Collison</div>
+</div>
+
+<div class="footer">
+<p>完整对谈 → <a href="https://share.transistor.fm/s/2a82e8c4">TBPN: The Collison Brothers LIVE at Stripe Sessions</a></p>
+<p style="margin-top: 8px;">Stripe Sessions · San Francisco · 2026</p>
+</div>
+
+</article>
+</body>
+</html>
