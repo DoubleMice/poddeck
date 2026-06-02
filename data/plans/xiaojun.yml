@@ -1,9 +1,9 @@
 source: xiaojun
-refreshed_at: 2026-06-01T19:41:15.572Z
+refreshed_at: 2026-06-02T04:37:47.690Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 13
-done: 1
+total_candidates: 12
+done: 0
 pending: 2
 needs_transcript: 8
 transcribing: 1
@@ -39,21 +39,6 @@ episodes:
     transcript_provider: dashscope
     transcript_job_id: 3fc23a0a-1ec3-403c-8ed0-84fc79df7f6d
     transcript_submitted_at: 2026-05-26T20:07:14.387Z
-  - id: 69f3857a5c60a99573fea0c2
-    title: 139. 【Agent的综述】和苏煜聊Agent技术史、OpenClaw Moment、边界的消弭和社会的辐射
-    duration: 8268
-    published: Fri, 01 May 2026 00:00:00 GMT
-    published_sort: "20260501"
-    first_seen_at: 2026-05-25T07:21:24.420Z
-    url: https://www.xiaoyuzhoufm.com/episode/69f3857a5c60a99573fea0c2?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69f3857a5c60a99573fea0c2/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/luffrgudEiiGHQxam49tfQci63NO.m4a
-    image: https://image.xyzcdn.net/Frae4ewVVYvZrX2W21CxXNLzUVmk.jpg
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: c5b55a8625904c6187d3c4cc0eaf94d3,e78172e08d784a92acaaedc02b6fcc23,2faeea27e10d476284d23e354bb1f8ab,69c5926f4f314543b0820255fd503da4,aa0361faa1c546b99634aa9276c6f0b4,f1289c0cc7cb4a1db022a8112eabfd8b,73ac4369906f461793158350bf737cc6,ea05084fe0e143d0b928b0215f0e01be,8436a3b8b17144999def515cdfcefad7,b9f71599e70c4ff6812726e78de88fc9
-    transcript_submitted_at: 2026-05-30T19:11:06.558Z
-    transcript_completed_at: 2026-05-30T19:17:52.304Z
   - id: 69eae15a1e94ae692107cc50
     title: 138. 对罗福莉3.5小时访谈：AI范式已然巨变！OpenClaw、Agent范式很吃后训练、卡的分配、组织平权
     duration: 12996
@@ -81,8 +66,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-06-01T19:43:04.821Z
     transcript_job_id: 205cf462d1a04eb8883979f37bd9aebb,7cca1f8e5a1c4ca196f7b67dd2042d16,ddb18adf9d6346b5821bbb474385d852,9ac31256a6214998864d6a6b02b24dbc,b266e20f32e5478f9d3e074331b319f5,c1e3d7b1669944d4b2483b027ea95831,1ba8393ce01d43cd881798a07bf1d01b,e7cceece416c472f8c8d2c103950ba80,d53c3e5eb5bc44ac800bedf0c031c83c,84852d2d6ff24096b1e33ae7bb58cb09,a02fad5c3b534a9d93c0b8b203aaada6,d22d0812e1764051b4d92043eb188511,8edfb19b50254b2c89e4f54b048cf5e0,b8c59e39fc0f4454933d9624b339e27d,34c88fa6f7ea4ebbaa27f2820c29e4a0,2fddc3599fec44fba92ee4794910a104,2a5cbf6f5f1348fd97d8bc882f077b04,c8ad8165eab747abb0c6c9187701a830
+    transcript_submitted_at: 2026-06-01T19:43:04.821Z
     transcript_completed_at: 2026-06-01T19:55:51.517Z
   - id: 69de68cfb977fb2c47f1ee14
     title: 136. 全球大模型季报第9集：和广密聊，Coding是AGI第二幕、硅谷御三家真相、模型正成为新一代OS
