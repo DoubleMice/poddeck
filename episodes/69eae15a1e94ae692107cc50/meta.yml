@@ -1,0 +1,32 @@
+id: 69eae15a1e94ae692107cc50
+source: xiaojun
+title: '138. 对罗福莉3.5小时访谈：AI范式已然巨变！OpenClaw、Agent范式很吃后训练、卡的分配、组织平权'
+guest: 罗福莉
+guest_role: 小米大模型团队负责人
+published: 2026-04
+duration: 3h37m
+url: https://www.xiaoyuzhoufm.com/episode/69eae15a1e94ae692107cc50?utm_source=rss
+thumbnail: https://image.xyzcdn.net/FiMcWmjLVeH6OwAe-ZJnDgskU7Uy.png
+status: generated
+tags:
+  - ai-research
+  - coding-agents
+  - ai-products
+  - interview
+  - researcher
+  - deep-dive
+  - technical
+  - strategic
+summary: |
+  小米大模型团队负责人罗福莉的第一次长时间技术访谈。她系统阐述了 OpenClaw 如何成为一个划时代的 Agent 框架，以及 Agent 范式如何从根本上改变了模型训练的经济学——从预训练主导向后训练与预训练并重转变。访谈涵盖 MIMO V2 家族（Pro/Omni/TTS）的架构哲学、Hybrid Attention + MTP 的技术选择、1T 参数模型的训练挑战、组织平权实验，以及对 AGI 时间线和中美代差的判断。
+core_ideas:
+  - OpenClaw 是一个划时代的 Agent 框架，不是 Claude Code 加 IM 的交互创新
+  - Agent 框架是人模型之间的中间层——定义交互层的同也定义模型沟通层，能弥补模型短板
+  - Agent 范式深度依赖后训练，后训练周期中拉长到与预训练相当；推荐算力分配为研究:预训练:后训练 = 3:1:1
+  - Code 是泛化能力最强的场景——长上下文依赖密集、多任务关联性强，拿模型上限，其他领域保下限
+  - MIMO V2 的 Hybrid Attention + MTP 架构恰好完美适配 Agent 时代的长上下文、低成本、高速度需求
+  - 'MLA 是 Chat 时代的优秀架构，但不适应 Agent 时代：不能上 MTP，缺乏灵活度，推理速度慢'
+  - 1T 参数是 Agent 时代入场券；团队没有组、没有职级、靠热爱驱动管理
+  - 两年内 AGI 可实现；中美代差仅两到三个月；接下来两三个月会非常精彩
+article_path: episodes/69eae15a1e94ae692107cc50/article.html
+base: /episodes/69eae15a1e94ae692107cc50/

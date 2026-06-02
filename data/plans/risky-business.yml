@@ -1,11 +1,11 @@
 source: risky-business
-refreshed_at: 2026-06-02T04:37:47.673Z
+refreshed_at: 2026-06-02T19:18:15.389Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 6
 done: 0
-pending: 2
-needs_transcript: 4
+pending: 3
+needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -30,6 +30,7 @@ episodes:
         
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
+
 
         
 
@@ -89,8 +90,12 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-02T19:23:43.005Z
+    transcript_job_id: 9b51d56c253440e89707aeadfe70f7e0,a6bb95221df043698e9a403017a7fd6b,1f2d15920fa24e00949a5a36d77818be
+    transcript_completed_at: 2026-06-02T19:25:19.274Z
   - id: SOAPBOX105
     title: "Risky Biz Soap Box: It took a decade, but allowlisting is cool again"
     duration: 1645

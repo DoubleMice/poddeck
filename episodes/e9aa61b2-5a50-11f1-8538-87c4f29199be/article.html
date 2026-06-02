@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Fintechs May Finally Beat Banks at Their Own Game — DEX in the City</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  header { text-align: center; margin-bottom: 48px; }
+  header h1 { font-size: 28px; font-weight: 700; line-height: 1.35; margin-bottom: 12px; }
+  header .meta { font-size: 15px; color: #666; }
+  header .meta a { color: #1971c2; text-decoration: none; }
+  .overview { margin-bottom: 48px; }
+  .overview h2 { font-size: 20px; margin-bottom: 16px; color: #333; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-left: 4px solid;
+  }
+  .card strong { display: block; font-size: 15px; margin-bottom: 4px; }
+  .card.blue { background: #eff6ff; border-color: #3b82f6; }
+  .card.orange { background: #fff7ed; border-color: #f97316; }
+  .card.green { background: #f0fdf4; border-color: #22c55e; }
+  .card.purple { background: #faf5ff; border-color: #a855f7; }
+  .card.red { background: #fef2f2; border-color: #ef4444; }
+  .card.yellow { background: #fefce8; border-color: #eab308; }
+  section { margin-bottom: 40px; }
+  section h2 { font-size: 22px; margin-bottom: 12px; color: #111; border-bottom: 2px solid #eee; padding-bottom: 6px; }
+  section h3 { font-size: 18px; margin: 18px 0 8px; color: #333; }
+  section p { margin-bottom: 14px; }
+  .quote-block {
+    padding: 18px 20px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-style: italic;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .quote-block .attribution { font-style: normal; font-size: 13px; color: #666; margin-top: 6px; }
+  .quote-block.blue { background: #eff6ff; border-color: #3b82f6; }
+  .quote-block.orange { background: #fff7ed; border-color: #f97316; }
+  .quote-block.green { background: #f0fdf4; border-color: #22c55e; }
+  .quote-block.purple { background: #faf5ff; border-color: #a855f7; }
+  .quote-block.red { background: #fef2f2; border-color: #ef4444; }
+  .quote-block.yellow { background: #fefce8; border-color: #eab308; }
+  .gloss { font-size: 13px; color: #888; font-style: italic; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+  }
+  footer a { color: #1971c2; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Why Fintechs May Finally Beat Banks at Their Own Game</h1>
+  <div class="meta">
+    DEX in the City — May 2026<br>
+    With Jesse (River Capital), V (former SEC), and Catherine / KK (Starkware)<br>
+    <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5586434373.mp3">🎧 Listen on Unchained</a>
+  </div>
+</header>
+
+<section class="overview">
+  <h2>Why This Episode Matters</h2>
+  <div class="cards">
+    <div class="card blue">
+      <strong>Fed Master Account EO</strong>
+      The White House directs the Fed to open the US dollar's core plumbing to fintechs and crypto — potentially the biggest structural shift in banking access in decades.
+    </div>
+    <div class="card orange">
+      <strong>GENIUS Act &amp; Bank Disruption</strong>
+      Stablecoin issuers are gaining bank-like powers. Banks face losing two fundamental advantages — custody and payments — to non-bank competitors.
+    </div>
+    <div class="card green">
+      <strong>Polymarket × Nasdaq</strong>
+      Retail investors get access to private market alpha — IPO timing and valuations — a market long locked behind wealth gates.
+    </div>
+    <div class="card purple">
+      <strong>AI EO That Vanished</strong>
+      An AI safety executive order disappeared from the Oval Office after three phone calls. Four camps are knife-fighting inside the White House.
+    </div>
+    <div class="card red">
+      <strong>CFTC Under Scrutiny</strong>
+      A scathing NYT investigation raises questions about prediction market regulation and where the Inspector General was.
+    </div>
+    <div class="card yellow">
+      <strong>Commissioner Peirce Departs</strong>
+      One of the SEC's most intellectually honest voices leaves for academia. The innovation exemption gets delayed — and that's probably right.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>1. The Fed Opens the Door — Cautiously</h2>
+
+  <p>Even during what the hosts described as a "relatively slow news week in crypto," the White House managed to drop something with genuine structural significance: a new executive order directing the Federal Reserve to consider giving fintechs — and potentially crypto companies — access to Fed master accounts.</p>
+
+  <p>To understand why this matters, you need to understand what a Fed master account actually is. As V, a former SEC attorney now working in Web3, explained: "The best way to think about it is, it gives you access to basically the core plumbing of the US dollar system. It lets qualifying institutions settle directly in central bank money — US dollars — instead of relying on intermediary banks."</p>
+
+  <p>For crypto companies, this has been a structural problem for years. Stablecoin issuers, tokenized securities platforms, digital asset custodians — they have all had to route through correspondent banks for every fiat transaction. That creates friction, debanking risk, and a dependency on banking partners who may or may not be friendly to the industry.</p>
+
+  <div class="quote-block blue">
+    "Allowing and enabling more seamless connectivity between the traditional fiat system and traditional payment systems, and crypto is really the only way that crypto and DeFi can scale."
+    <div class="attribution">— V, on the significance of Fed access</div>
+  </div>
+
+  <p>The timing is notable. Earlier this year, Kraken obtained what people have described as a "master account lite" — a limited-purpose Fed account, not full access but a major signal. This executive order pushes the door open further. And with Fed Chair Warsh just arriving, this could be among the first things he confronts on day one.</p>
+
+  <p>But there's a catch. KK, who has worked extensively in fintech, pointed out that the order is "all about access and opening doors," with "pretty much nothing in there about protecting once access is there." Plugging fintechs and crypto firms into the core plumbing of the US financial system means they need to be ready for the responsibility: AML compliance, cybersecurity, liquidity management, operational risk. Jesse, who previously served as GC of a federally regulated crypto bank, confirmed that "there are real concerns that are unique to this asset class and the rails on which these kinds of assets move."</p>
+</section>
+
+<section>
+  <h2>2. Banks, Unbundled — The GENIUS Effect</h2>
+
+  <p>If the Fed master account EO is about access, the GENIUS Act is about competition. Jesse framed it starkly: "Banks are really set to lose two of their fundamental advantages and differentiators from non-bank competitors — custody of customer funds and facilitating payments."</p>
+
+  <p>We are now in a situation where a class of fintechs — including permitted payment stablecoin issuers (PPSIs) under the GENIUS Act — can perform functions that are essentially identical from the retail customer's perspective. The question becomes: what still differentiates a traditional bank?</p>
+
+  <p>Two things, according to Jesse. First, FDIC insurance — "there's definitely going to be a sector of people that are going to continue to engage with trad banks because of that insurance, that peace of mind." Second, banks can still borrow customer funds for their own use, lending out deposits. PPSIs can custody stablecoins but have limitations on yield generation.</p>
+
+  <p>But those moats are shrinking. As KK noted, fintechs have been fighting this battle for a long time. The banking-as-a-service model — fintechs partnering with smaller banks to wrap FDIC insurance around their products — looked promising until it didn't. The Synapse collapse and a series of other BaaS failures exposed the model's fragility. Those fintechs were "regulated at the state level or not really at all, because they weren't taking custody and they were just more like the interaction with the customer."</p>
+
+  <div class="quote-block orange">
+    "There's a very long history of new technology being suffocated by legacy participants who don't want the new technology because it impedes their revenue. I firmly believe that the fintechs are ultimately going to win because a lot of what they're doing is better ultimately for the underlying customer."
+    <div class="attribution">— Jesse, on the historical pattern and the fintech advantage</div>
+  </div>
+
+  <p>KK drew the parallel to every other major technology shift: energy, transportation (EVs vs. autos), communications, healthcare. The legacy participants always say "get off my lawn." The question for fintech is whether they learned from the BaaS collapses — can they grow with the proper structure this time, rather than too quickly without it? Direct Fed access, if structured correctly, could be that structure.</p>
+</section>
+
+<section>
+  <h2>3. Can't Put the Genie Back — A Non-Partisan Shift</h2>
+
+  <p>One of the most interesting questions the hosts explored was whether the embrace of fintech banking access would survive a change in administration. V was unequivocal:</p>
+
+  <div class="quote-block green">
+    "You can't put the genie back in the bottle. This is just another example of crypto integrating more and more into the core financial system and collapsing all of these boundaries. That's the direction of travel. A change in administration can try to roll some of that back, but ultimately they're not going to stop the overall trend."
+    <div class="attribution">— V, on the irreversibility of the trend</div>
+  </div>
+
+  <p>Jesse added an important legal note: executive orders have real constraints. They can't create new law, they must be grounded in presidential powers, and litigation is the most effective check. A new president could roll back EOs on day one. But as KK argued, the assumption that Democrats would automatically take the banks' side misunderstands the politics. Democrats have historically fought against large banks; they've supported community banks and the kind of financial access that fintechs have actually enhanced. "I think thinking that this is going to be rolled back if a Dem comes along is very short-sighted and also misunderstands that this isn't a partisan issue."</p>
+</section>
+
+<section>
+  <h2>4. Polymarket × Nasdaq — Retail Gets Private Market Alpha</h2>
+
+  <p>The prediction market landscape remains as chaotic as ever. Rhode Island's AG sued Kalshi and Polymarket. New York introduced a bill to ban under-21s from prediction markets. A congressional probe launched. The NHL and CFTC signed an MOU to prevent manipulation. Almost every day brings a new lawsuit or enforcement action.</p>
+
+  <p>But amid the litigation wars, something genuinely interesting happened: Polymarket announced a partnership with Nasdaq Private Market. This means retail participants will be able to speculate on private company events — whether a company will IPO, and when; what a private company's valuation might be; the outcome of funding rounds.</p>
+
+  <p>KK captured why this matters: "The private market has always been this massive market with significant alpha that has long been pretty much inaccessible to retail. There's this whole adage — the rich get richer because they're rich to begin with. It's a lot easier to become a billionaire if you have a hundred million dollars to start with."</p>
+
+  <p>Prediction markets, in this framing, are one answer to leveling the playing field between institutional and retail investors. That's "one of the most compelling reasons for prediction markets to exist," as KK put it — regardless of what you think about crypto. And it's worth noting, as one host emphasized: prediction markets are not inherently crypto. Many operate entirely off-chain. They get lumped into "crypto bad" conversations but are their own category.</p>
+</section>
+
+<section>
+  <h2>5. The NYT Investigation — Substance vs. Snark</h2>
+
+  <p>A New York Times article dropped what the hosts described as a "completely scathing" investigation of the CFTC, focused on ex-acting chair Pham and allegations of inappropriate behavior in supporting prediction markets while pushing out staff who raised concerns. The allegations are serious: staff allegedly fired for doing their jobs, investigations potentially handled improperly, ethical questions that demand answers.</p>
+
+  <p>But the article also came wrapped in what KK called "snark" — calling Pham a "former intern," mentioning her age, making imprecise claims about crypto regulation under Biden. "I really hated the snark in this article. I don't want that to take away from the allegations in the article, but in my opinion it does, because it raises credibility and motivation-oriented questions about the author."</p>
+
+  <p>V offered a different lens: this shouldn't be seen as a crypto article at all. "It should be seen as a potential government corruption article." She knows people at the CFTC who were treated poorly for asking the right ethical questions, and she's been told there is more reporting to come. As someone who worked at DOJ, she sees a pattern — "the same devastating pattern in different colors" playing out across government institutions.</p>
+
+  <p>Jesse raised the central accountability question: where was the CFTC's Inspector General? Every federal agency has an IG — an independent watchdog whose entire purpose is to investigate exactly these kinds of allegations. "The article raises enough concerns. I think the allegations are serious and they deserve to be addressed."</p>
+
+  <p>Yet KK also urged the industry to look at the criticism honestly. "Why does so much of the world feel this way about our industry? Looking at the criticism with a fair eye is probably a useful thing." The hosts disagreed on how much the NYT's tone undermines its substance — but agreed that the underlying questions about government integrity matter deeply.</p>
+</section>
+
+<section>
+  <h2>6. Commissioner Peirce and the Delayed Innovation Exemption</h2>
+
+  <p>Commissioner Hester Peirce — one of the SEC's most thoughtful and intellectually honest voices — announced her departure to become a professor at Regent University School of Law in Virginia Beach. KK didn't hide her admiration: "It is such a loss for the SEC, not just for crypto, for the SEC. She's always been intellectually honest enough not to make this a crypto thing. Those students have no idea how lucky they are."</p>
+
+  <p>The same week, the SEC's long-teased innovation exemption was delayed indefinitely. The exemption, which had been anticipated for six months, was reported by Bloomberg and Reuters as potentially allowing tokenized versions of public equities to trade on-chain. That immediately raised concerns — would anyone be able to create on-chain Apple or Amazon wrappers without the companies being involved? What would happen to dividends, voting rights, and proxy processes?</p>
+
+  <p>Peirce, in one of her last acts, tried to cool the temperature by clarifying the exemption was always meant to be limited: focused on digital representations of the same underlying NYSE stock an investor can buy today, not synthetic wrappers. The SEC has drawn a clear line between issuer-sponsored tokens backed by real shares held by regulated intermediaries, and synthetic products that provide only economic exposure.</p>
+
+  <p>Jesse called the delay "the right decision." Half-baked guidance, she argued, is "not going to be future-proofable." The larger debate remains unresolved: what kind of on-chain securities market do we want — one that mirrors existing market structure, or something genuinely new?</p>
+</section>
+
+<section>
+  <h2>7. The AI EO That Vanished — 18 Hours and Three Phone Calls</h2>
+
+  <p>If the fintech and prediction market stories were about structural shifts, the AI segment was about something more alarming: the absence of any structure at all.</p>
+
+  <p>Jesse set the scene: "Picture this. It's last week in the Oval Office. CEOs from top tech and AI companies are coming into town. Cameras are being set up. The President's about to sign this executive order on AI that has been months in the making. And then pretty much someone comes in and says, no, this isn't happening anymore."</p>
+
+  <p>What happened? In the prior 18 hours, three phone calls occurred. We don't know exactly what was said, but we know the outcome: an EO that initially suggested just a voluntary review of new AI models — no mandates, no requirements, just an optional submission mechanism — vanished from the calendar. Now there are essentially "no rules for AI, not even voluntary ones."</p>
+
+  <p>Jesse described four camps fighting inside the White House. The <strong>accelerationist wing</strong> — zero oversight, free markets, beat China at all costs — won this round. The <strong>safety-curious wing</strong>, including figures like Hassett (exploring FDA-style reviews) and Bessent (convening Wall Street on cyber risk), couldn't muster enough weight. The <strong>national security establishment</strong> is too consumed by its own contradictions to have a clear position: blacklisting Anthropic while NSA uses Mythos, with CISA unable to get access to the models it's supposed to defend against. And the <strong>gatekeeper</strong> — Chief of Staff Susie Wiles — controls what reaches the Oval Office and chose to let the accelerationists through.</p>
+</section>
+
+<section>
+  <h2>8. Responsible Alarm, Without Responsible Action</h2>
+
+  <p>For two years, the pattern has been consistent. AI CEOs take the stage at every major conference to declare that their technology is coming and the world needs to change. Sam Altman told Congress "regulate us." Elon Musk signed a pause pledge. The Pope weighed in on AI and human priorities. The sector built its narrative on responsible alarm.</p>
+
+  <p>But when the White House suggested even a minimal voluntary review, the industry "all freak out." Jesse called it a "total two-step dance." The sector's message is: this is the most dangerous life-changing technology yet — and also, do not regulate us in any way, not even voluntarily.</p>
+
+  <p>The real problem isn't that this particular voluntary review failed — it probably wouldn't have done much anyway. The problem is structural: "trusting CEOs without verification before government can put something together can also not be the answer."</p>
+</section>
+
+<section>
+  <h2>9. What Crypto Can Teach AI</h2>
+
+  <p>This is where the episode took its most original turn. Jesse argued that crypto has a hard-won lesson to offer AI: don't trust centralized entities.</p>
+
+  <div class="quote-block purple">
+    "Don't trust the centralized entities, don't trust the CEOs, just find a way to verify. Maybe this is where crypto's not being so thirsty — AI should be thirsty for us because we need to build a receipt layer for AI. Blockchain is one of those. Because right now AI safety is basically like, trust us, we're trillionaires, but we're responsible."
+    <div class="attribution">— Jesse, on the convergence of crypto and AI safety</div>
+  </div>
+
+  <p>The concept is straightforward: we need a verification layer for AI — a system that records what model was used, what tests were run, who signed off, and who ignored warnings. When something goes wrong with AI, the question won't be "who regulates it." It'll be "what happened, and how can we stop it?" Without receipts, you can't answer that question.</p>
+
+  <p>This isn't just about blockchain. There are many trust-AI organizations working on verification frameworks. But they're "just not getting the attention or funding they need." Washington is getting "kneecapped by 18 hours of a few phone calls." The accountability infrastructure needs to be built now — before things go wrong, not after.</p>
+</section>
+
+<section>
+  <h2>10. Tylosaurus Rex — The Good News</h2>
+
+  <p>The episode closed, as DEX in the City always does, with good news of the week. Jesse — a self-described dinosaur enthusiast — shared the discovery of a Tylosaurus rex fossil partially found in Texas. A 43-foot water creature, the size of two great white sharks, with a massive jaw — the T-Rex of the sea. The biggest water creature of all time.</p>
+
+  <p>Beyond the sheer wonder of a swimming school bus from hundreds of millions of years ago, there was a philosophical note. "What's going to matter in another hundred million years?" The regulatory battles, the AI camp fights, the prediction market wars — they all matter intensely right now. But deep time offers perspective. The Tylosaurus was swimming around long before anyone argued about stablecoin regulation. Someday, something else will be swimming around long after.</p>
+
+  <p>KK put it best: "A lot of the most successful interesting people in the world are inherently, innately nerds. Nerds love STEM, and they love science." Sometimes the best way to process a packed week of regulatory news is to step back and appreciate that the world is bigger — and older — than any of it.</p>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+
+  <div class="quote-block blue">
+    "Allowing and enabling more seamless connectivity between the traditional fiat system and crypto is really the only way that crypto and DeFi can scale."
+    <div class="attribution">— V, on why Fed master account access is existential for crypto</div>
+  </div>
+
+  <div class="quote-block orange">
+    "You can't put the genie back in the bottle. This is just another example of crypto integrating more and more into the core financial system and collapsing all of these boundaries."
+    <div class="attribution">— V, on why the fintech-banking trend is irreversible</div>
+  </div>
+
+  <div class="quote-block green">
+    "I firmly believe that the fintechs are ultimately going to win because a lot of what they're doing is better ultimately for the underlying customer."
+    <div class="attribution">— Jesse, on the consumer case for fintech over traditional banking</div>
+  </div>
+
+  <div class="quote-block purple">
+    "Don't trust the centralized entities, don't trust the CEOs, just find a way to verify. This is where crypto's not being so thirsty — AI should be thirsty for us because we need to build a receipt layer for AI."
+    <div class="attribution">— Jesse, on what crypto can teach the AI industry about safety</div>
+  </div>
+
+  <div class="quote-block red">
+    "Washington is getting kneecapped by 18 hours of a few phone calls, and we need to start building the accountability infrastructure now."
+    <div class="attribution">— Jesse, on the AI EO vanishing from the Oval Office calendar</div>
+  </div>
+
+  <div class="quote-block yellow">
+    "It's really about unbundling banking from the rest of the financial system. Historically, if you wanted access to Fed rails, you had to fit into the traditional bank box."
+    <div class="attribution">— V, on the structural shift the Fed executive order represents</div>
+  </div>
+</section>
+
+<footer>
+  <p>This article is based on the May 2026 episode of <strong>DEX in the City</strong>, part of the Unchained podcast network.</p>
+  <p>🎧 <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5586434373.mp3">Listen to the full episode</a></p>
+  <p style="margin-top: 8px; font-size: 11px;">Hosts: Jesse (River Capital), V (former SEC), Catherine / KK (Starkware). Lawyers, but not your lawyers. Nothing herein is legal or financial advice.</p>
+</footer>
+
+</article>
+</body>
+</html>

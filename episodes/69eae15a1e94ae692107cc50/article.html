@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>对罗福莉 3.5 小时访谈：AI 范式已然巨变 — PodDeck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px; line-height: 1.75; color: #1e1e1e;
+    background: #fafafa; padding: 0;
+  }
+  article { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; background: #fff; }
+  h1 { font-size: 28px; line-height: 1.3; margin-bottom: 8px; }
+  h2 { font-size: 22px; margin: 48px 0 16px; padding-top: 16px; border-top: 2px solid #e9ecef; }
+  h3 { font-size: 18px; margin: 28px 0 12px; color: #495057; }
+  p { margin-bottom: 16px; }
+  .meta { font-size: 14px; color: #868e96; margin-bottom: 32px; }
+  .meta span { margin-right: 16px; }
+  .hero { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 32px; margin-bottom: 40px; }
+  .hero h1 { font-size: 26px; margin-bottom: 12px; }
+  .hero .guest { font-size: 18px; color: #495057; font-weight: 600; }
+  .hero .role { font-size: 15px; color: #868e96; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 20px 0 32px; }
+  .card { padding: 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+  .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .c-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .c-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .c-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .c-purple { background: #f3f0ff; border-left: 4px solid #862e9c; }
+  .c-red { background: #fff0f0; border-left: 4px solid #c92a2a; }
+  .c-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  blockquote {
+    margin: 20px 0; padding: 16px 20px;
+    background: #e7f5ff; border-left: 4px solid #1971c2;
+    font-style: italic; border-radius: 0 8px 8px 0;
+    font-size: 16px;
+  }
+  blockquote .attr { display: block; margin-top: 8px; font-size: 13px; color: #868e96; font-style: normal; }
+  .gloss { font-size: 14px; color: #868e96; margin: 12px 0; padding-left: 16px; border-left: 2px solid #dee2e6; }
+  .highlight-box { padding: 16px 20px; border-radius: 8px; margin: 20px 0; font-size: 15px; }
+  .hb-blue { background: #e7f5ff; border: 1px solid #a5d8ff; }
+  .hb-red { background: #fff0f0; border: 1px solid #ffc9c9; }
+  .hb-green { background: #ebfbee; border: 1px solid #b2f2bb; }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #e9ecef; font-size: 14px; color: #868e96; }
+  footer a { color: #1971c2; }
+  @media (max-width: 600px) {
+    article { padding: 20px 16px 60px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 19px; }
+    .hero { padding: 20px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<article>
+
+<div class="hero">
+  <h1>138. 对罗福莉 3.5 小时访谈：AI 范式已然巨变</h1>
+  <div class="guest">罗福莉</div>
+  <div class="role">小米大模型团队负责人 · Mimo 系列模型主导者</div>
+  <div class="meta" style="margin-top: 12px;">
+    <span>📻 小宇宙播客</span><span>📅 2026 年 4 月</span><span>⏱ 3 小时 37 分</span>
+  </div>
+  <p style="margin-top: 12px; font-size: 15px; color: #495057;">
+    这是罗福莉的第一次访谈，也是她第一次进行长时间的技术访谈。在 AI 范式剧变的 2026 年，
+    她系统性谈论了由 Claude Opus 4.6、OpenClaw 等技术变量所触发的 AI 矩阵，以及后续的结构性影响。
+    她的预判：<strong>接下来两三个月会非常精彩</strong>。
+  </p>
+</div>
+
+<h2>为什么这期特别？</h2>
+
+<div class="cards">
+  <div class="card c-orange">
+    <strong>OpenClaw 亲历者</strong>
+    从抵触到信仰，三天认知跃迁的第一手记录——不是围观，是亲手改源码、部署团队的角色。
+  </div>
+  <div class="card c-blue">
+    <strong>Agent 范式深度解析</strong>
+    为什么 Agent 很吃后训练？3:1:1 算力分配比例背后的推演逻辑。
+  </div>
+  <div class="card c-green">
+    <strong>MIMO V2 家族首次系统阐述</strong>
+    Hybrid Attention、MTP、1M 上下文窗口——Pro、Omni、TTS 三个模型的协同设计哲学。
+  </div>
+  <div class="card c-purple">
+    <strong>组织平权实验</strong>
+    100 人团队、没有组、没有职级、一对一百的扁平架构——靠热爱驱动的管理方式。
+  </div>
+  <div class="card c-red">
+    <strong>AGI 时间线大幅提前</strong>
+    从两年以上缩短到两年以内。Agent 的自学习自迭代正在加速一切。
+  </div>
+  <div class="card c-yellow">
+    <strong>中美代差判断</strong>
+    在 Agent 时代，代差反而在缩小：只剩两到三个月。
+  </div>
+</div>
+
+<hr style="border: none; border-top: 1px solid #e9ecef; margin: 40px 0;">
+
+<h2>一、OpenClaw：一个划时代的分界点</h2>
+
+<p>
+  罗福莉把 OpenClaw 定义为一个<strong>划时代的 Agent 框架</strong>——不是 Claude Code 加一个 IM 界面的交互创新，
+  而是从根本上重新设计了人与模型之间的中间层。但她的认知并非一开始就如此。事实上，她一度非常排斥。
+</p>
+
+<p>
+  2026 年 1 月，她第一次看到 OpenClaw 时，和很多人一样认为它只是 Claude Code 加了一个更适合日常对话的 UI。
+  "我觉得它非常偏运营导向——Skill Hub 啊、本地化部署啊、24 小时在线啊，在我来看这些都是产品的定义而已。"
+  如果追求最顶尖的编程体验，Claude Code 加 Claude Opus 4.6 就是终局。为什么要用一个玄幻的产品？
+</p>
+
+<p>
+  转变发生在春节。有一天深夜，她花了两个小时安装 OpenClaw——当时已经凌晨两点。
+  第一次对话从凌晨两点持续到了天亮六点。"我脑子里的多巴胺或内啡肽持续在分泌，兴奋到完全睡不着觉。"
+</p>
+
+<h2>二、三日认知跃迁</h2>
+
+<p>
+  罗福莉对 OpenClaw 的理解在三天内完成了三级跳。
+</p>
+
+<h3>第一天：灵魂与温度</h3>
+<p>
+  OpenClaw 反复提醒她"已经很晚了，早点去睡觉"。这种温度来自设计者在 context 中的精心编排——
+  每轮对话前拼接当前时间、用户画像等细微信息。罗福莉称之为<strong>"惊喜编排的 context"</strong>。
+  但第一天她仍然觉得这只是一个产品设计上的超乎想象的创新——"让所有人觉得这个框架有灵魂"。
+</p>
+
+<h3>第二天：数字分身</h3>
+<p>
+  罗福莉开始把真实的日常任务交给它：如何激发团队的好奇心？如何筛选具有好奇心的人？
+  如何构建一个更好的大模型团队？"他的很多哲思上远超我的想象。"
+  最终 OpenClaw 把讨论形成了一套体系化的 Skills，罗福莉用它来解放团队管理和人才筛选的决策。
+  "它已经基本上变成了我的某一个数字分身。"
+</p>
+
+<h3>第三天：研究突破</h3>
+<p>
+  真正让她震撼的是第三天。她把一项自己认为至少需要一两周的研究任务交给它：
+  构建一个 user agent 来模拟多轮交互，用于构造更丰富的 Agent 场景训练数据。
+  一两个小时后——做完了。"基本上就已经达到有一个很好的 user agent 诞生。"
+</p>
+
+<blockquote>
+  "我觉得他从一个我最开始对他的认知只是一个有灵魂有温度的产品设计，
+  到他可以帮我替代生活或工作当中的一部分，到最后他能促进我研究——
+  这也就是三天发生的事情。"
+  <span class="attr">— 罗福莉</span>
+</blockquote>
+
+<p>
+  第一天 API 消耗近一千美金。中途她切换到 Sonnet 想省钱，"发现真不行，又只能去用 Opus，只有 Opus 能带来那种惊艳感"。
+</p>
+
+<h2>三、Agent 框架：人与模型之间的中间层</h2>
+
+<p>
+  罗福莉对 Agent 框架的定义与产品截然不同。产品是人直接交互感受到的那一层。但 Agent 框架<strong>同时定义交互层和模型沟通层</strong>——
+  它知道模型能力的长板短板，知道如何做调度（包括成本优化调度）。前端的 UI 展示反而是最薄的一层，"已经不是很关键了"。
+</p>
+
+<p>
+  为什么 OpenClaw 能做到 Claude Code 做不到的事？原因不在于某一个炫酷的功能，而在于系统性的完成度：
+</p>
+
+<p>
+  <strong>持久的 memory 分层体系</strong>——对记忆做分层和分级，"我在使用 Claude Code 的时候完全没有这样的感受"。
+  <strong>多模型的联合利用</strong>——发一段视频给它，它自己会找视频理解能力好的模型处理，你不用操心。
+  <strong>自主面对模型缺点</strong>——通过 Agent 编排来弥补模型短板，这是 OpenClaw 核心的产品逻辑。
+</p>
+
+<blockquote>
+  "原来一个非常复杂的一套 Agent 框架设计，它是能够弥补非常多模型能力的短板的。"
+  <span class="attr">— 罗福莉</span>
+</blockquote>
+
+<h2>四、开源的力量：群体智慧</h2>
+
+<p>
+  Cursor 一直是一套非常复杂的 Agent 框架，但它是黑盒——你看不到内部设计，更不可能修改它。
+  OpenClaw 开源的属性让它成为完全不同的东西。罗福莉从 2.x 版本开始用，"我觉得它并不好用，所以我花了好几天时间去改它"。
+  她让 Opus 帮她重新设计了一套 memory 系统、一套新的 multi-agent 系统。
+  "我可以自己去改所有的源码——这种原生的可操作性给我的冲击感是很大的。"
+</p>
+
+<p>
+  一个人的改进是有限的，但一群人的改进是爆炸性的。罗福莉的团队在飞书群里用 OpenClaw——
+  近一百个人，每个人有不同的背景，每个人都在改它。"没有把这个模型给改坏，反而变得非常智能。"
+  第三天第四天，把模型接到 OpenClaw 上，"怎么还没训练就有点 Claude 的差不多了"。
+</p>
+
+<p>
+  罗福莉认为 OpenClaw 的 Star 数飞升不是偶然："这是 AGI 到来前兆必须要有的事情。"
+</p>
+
+<h2>五、中国比美国更火</h2>
+
+<p>
+  一个有趣的现象：中国开发者对 OpenClaw 的热情远超美国。罗福莉观察到："模型公司的人不是很 care 这个东西，觉得可能不难。"
+  这和她自己最初的判断一模一样。
+</p>
+
+<p>
+  她给出了两个结构性原因：第一，效率提升是中国开发者的血液——
+  "对于效率的提升好像是我们的血液里边的东西，OpenClaw 能把效率提升拉到极致"。
+  第二，国内有大量便宜好用的模型——85% 的效率提升场景不需要最顶尖的模型。
+  花十块钱的 API 帮你干完一千块钱的事情，你肯定很愿意用。但如果 API 贵了十倍，你就会排斥。
+</p>
+
+<div class="highlight-box hb-blue">
+  <strong>一个关键洞察：</strong> OpenClaw 基于 Claude 上一代模型设计。当时模型不够强，
+  所以 Agent 框架必须设计得更精细来弥补短板。当 Opus 进步了，国内大部分模型刚好达到 Claude 4.5 的水平，
+  两者恰好"握手"了。
+</div>
+
+<h2>六、从 Chat 到 Agent：范式转移</h2>
+
+<p>
+  罗福莉对 Agent 时代与 Chat 时代的差异做了系统性对比。在 Chat 时代，预训练占绝对主导——
+  预训练与后训练的算力比可能是 3:1 甚至 5:1。人的输入就是全部 context，通常很短。
+  Agent 框架也只是"换了一个更复杂的 system prompt，稍微带一点点环境反馈"。
+</p>
+
+<p>
+  她直言以前那些被称作 Agent 的东西"根本没有达到工业级可用的能力"：
+  "最简单——你把它接到 OpenClaw 上去用，你会发现它不可用。"
+</p>
+
+<p>
+  Agent 时代完全不同。后训练周期大幅拉长，与预训练的算力投入相当甚至更高。
+  模型需要理解 Agent 框架本身——预训练数据里不存在这些信息。
+  组织的业务逻辑、隐性知识，只能通过多轮交互在后训练阶段沉淀。评估体系也是混沌的——
+  很多场景没有 ground truth，现在靠"人在当评估"。
+</p>
+
+<blockquote>
+  "post-training 的周期在拉长，你在一代基础上能做的 post-training 的上限是远远被激发出来的。"
+  <span class="attr">— 罗福莉</span>
+</blockquote>
+
+<h2>七、算力分配革命：3:1:1</h2>
+
+<p>
+  罗福莉提出了一个颠覆性的算力分配方案：<strong>研究 : 预训练 : 后训练 = 3 : 1 : 1</strong>。
+  研究的卡要比正式训练的总卡量还多——"你要额外留更多的卡来去做研究"。
+</p>
+
+<p>
+  为什么？因为 Agent 时代 idea 的诞生和代码实现太快了——瓶颈卡在了 GPU 上。
+  你有了一个好想法，需要并行跑很多实验来验证，但 GPU 效率就在那里。所以卡的数量反而变成更关键的制约。
+</p>
+
+<p>
+  训练 Mimo V2 Pro 这样 1T 参数的模型，训练本身只需要几千卡。但研究卡是它的 3 到 5 倍。"不是说我们拥有几千卡就足以去做这个事情。"
+</p>
+
+<div class="highlight-box hb-red">
+  <strong>Chat 时代 vs Agent 时代：</strong> 以前预训练吃掉 70-80% 算力，后训练只是收尾。
+  现在顶尖团队已是 1:1。因为 post-training 的周期从一两个月拉长到半年甚至一年，
+  架构设计必须留有灵活度——你前半年假定的推理卡类型和场景可能全变了。
+</div>
+
+<h2>八、Code：泛化能力的根基</h2>
+
+<p>
+  Code 的泛化能力不是巧合，而是结构性的原因。
+</p>
+
+<p>
+  在预训练阶段，能达到 128K 到 1M 上下文长度的数据基本只有两类：code 和书籍。
+  Code 数据文件之间的关联性强，长上下文依赖密集；书籍的信号则太发散。
+  模型在 code 上训练，自然对长上下文的建模更好——这在意识到 Agent 时代之前就已经做了。
+</p>
+
+<p>
+  在后训练阶段，Code 是拿模型上限——软件开发是非常长程的任务，做好它，很多通用特质就自然好了。
+  其他领域是保下限——训了会更稳定，不训也能被泛化，只是没那么稳定。Agent 框架本身
+  （plan 模式、跨 session 记忆压缩）也都是为软件开发设计的，但这些设计具有泛化性，
+  能外延到更复杂的长程任务。
+</p>
+
+<h2>九、Skills：预训练的补充</h2>
+
+<p>
+  Skills 改变了模型在高复杂度任务上的执行准确率。它定义了一套执行的规范——
+  这套规范很难在预训练数据里出现，因为预训练依赖的是互联网上可访问的知识。
+  而企业内部、组织之间沉淀下来的隐性知识——"很多智能是我们在互联网上访问不到的"——
+  只能通过人与 Agent 的多轮交互来编码。
+</p>
+
+<p>
+  Skills 提供了一种交互方式：让人去主动贡献数据，贡献让模型执行任务成功率更高的方式。
+  而且现在的 Skills 大多是 Agent 自己写的——这是一个自循环的增强回路。
+  罗福莉认为这是人与 Agent 共创的地方，是一种"另类 alpha"，是群体智慧的一种体现。
+</p>
+
+<h2>十、MIMO V2 家族：三箭齐发</h2>
+
+<p>
+  就在 Agent 范式冲击最激烈的时期，Mimo 团队几乎同期发布了三个模型——
+  Pro、Omni、TTS。罗福莉称之为<strong>"一次悄无声息的伏击"</strong>。
+  三个模型在 Agent 场景下的表现提升速度"超我们预期"，"大家觉醒了然后就爆发了"。
+</p>
+
+<p>
+  <strong>Pro</strong> 承担理解与认知的核心角色——1T 参数、1M 上下文、60-100 TPS，是复杂调度的中枢。
+  <strong>Omni</strong> 承担全模态感知——视频、音频、图片、文本的联合理解，
+  第一个支持音视频联合理解且 Agent 能力接近纯语言模型的模型。因为原生多模态训练，
+  它的世界知识和感知力甚至比更大的纯语言模型更强。
+  <strong>TTS</strong> 承担语音生成与表达——万亿小时级别的离散化建模训练，
+  超强的风格泛化力（在只做了极简单的风格 SFT 后，就能泛化到复杂自然语言描述的风格指令）。
+</p>
+
+<p>
+  三个模型为什么不合到一个模型里去？出于成本、速度和价格的三角平衡——
+  语音生成不需要一体大模型的延迟，多模态理解是否值得更大的模型要权衡。
+  Agent 革命本质是生产力革命，必须关注端到端的完成率和成本效率。
+</p>
+
+<p>
+  但三个模型是同一生态训练的——它们 share 同样的 background knowledge，
+  所以 Agent 框架可以放心地把任务分配给最合适的模型，不会担心它不知道你的上下文。
+  这是罗福莉看到 OpenClaw 后"一下就在脑子里全部打通了"的画面。
+</p>
+
+<h2>十一、Hybrid Attention + MTP：恰好完美的架构</h2>
+
+<p>
+  Mimo V2 采用的 Hybrid Attention 架构并非为 Agent 时代量身定做——事实上，
+  在设计时 Agent 范式尚未显现。但它却恰好完美适配 Agent 时代的三重需求：
+  长上下文、低成本、高速度。
+</p>
+
+<p>
+  架构的核心思路：用 Sliding Window Attention 节省 KV Cache（从而支持更长上下文和更低推理成本），
+  再用 MTP（Multi-Token Prediction）把省下的算力填满，让 GPU 利用率达到极致。
+  Flash 的 Full:Sliding Window 比例是 5:1，Pro 进一步拉到了 7:1——
+  实验发现更大模型可以更稀疏。
+</p>
+
+<p>
+  当时主流选择是 MLA（Multi-head Latent Attention）——DeepSeek、GLM-5、K2 都选了这个方向。
+  罗福莉评价：MLA 在 Chat 时代确实是非常优秀的结构，它在 H 系列芯片上达到了 compute bound
+  和 memory bound 的完美临界点，大量减少了 KV Cache。但问题在于：
+  <strong>MLA 不能上 MTP</strong>——因为已经平衡得完美，加 MTP 又会卡在 compute bound。
+  它在 Chat 时代没有对手，但在 Agent 时代，缺乏灵活度成了致命伤。
+</p>
+
+<blockquote>
+  "大家太相信 MLA 了。在 25 年上半年去训基座模型，MLA 确实是不错的选择——
+  当没有看到 non-causal 的价值和 Agent 这个范式的时候。"
+  <span class="attr">— 罗福莉</span>
+</blockquote>
+
+<p>
+  MTP 带来三重收益：预训练阶段提升基座能力、推理阶段实现投机解码加速、
+  降低成本（在更短时间内吐出更多 token）。而且<strong>不会带来幻觉</strong>——MTP 的预测会被 verify，
+  只有预测准的 token 才被采纳。
+</p>
+
+<p>
+  Mimo 的用户体感就是"哇，好快"。Pro 能做到 60-100 TPS，Flash 能做到 100-150 TPS。
+  "一旦体验到了更快的模型，智能水平相当，你就回不到那个更慢的模型的水平了。"
+</p>
+
+<h2>十二、训练 1T 模型的真实挑战</h2>
+
+<p>
+  1T 参数的模型训练，挑战是全方位的。但最大的挑战不是数据——
+  "更大模型貌似对于更脏的数据的容忍程度更高"。真正的挑战在于训练过程中的数值不稳定性。
+</p>
+
+<p>
+  Loss spike 是常见问题——某一步更新特别不稳定，激活值异常大，直接把某些 expert "打死"
+  （参数更新后再也不会有 token 送过去）。罗福莉团队会停下来排查，即使这意味着
+  几千卡停一天一两百万的成本。"我们认为它就是一个问题，我们就应该去解决它。"
+</p>
+
+<p>
+  排查的过程从表层一直到玄学：建立严密的监控系统——看 expert 负载、每层参数的输入输出、
+  激活值的变化。排查到最后"你会怀疑是不是今天的太阳黑子爆发"。
+  解决方案也很多样：可能是调整稀疏比、可能是 infra bug（通信算子写错了）、
+  可能是某个 norm 项有问题（clip 掉或通过 norm 压下去）。
+  他们也借鉴了 Kimi 的 QK-Clip 方法——当 QK 的某些 norm 值太大影响训练稳定时，先 clip 掉，
+  等训练到稳态再放开。
+</p>
+
+<p>
+  整个全链路团队约 100 人，但真正投入一代模型迭代的核心人员也就二三十人。
+  训练本身只需几个人，做数据需要几个人，基础设施（搭 GPU 集群）需要有点经验的人。
+  "很大的团队反而是劣势"——尤其在排查深层问题时。
+</p>
+
+<div class="highlight-box hb-green">
+  <strong>没有 deadline 的奢侈：</strong> Mimo 团队没有明确的发布目标。"我们觉得模型训好了我们再发。"
+  这在大型组织里是罕见的——罗福莉承认 Mimo 能做成"其实都是以创业的方式在运作的，所以它才能做成"。
+</div>
+
+<h2>十三、组织平权：没有组，没有职级</h2>
+
+<p>
+  罗福莉管理团队的方式和她设计模型架构一样反主流。100 个人，没有组的划分——
+  没有预训练组、后训练组。没有职级——有实际推动项目往前的人，但这个人不对参与者有绝对控制权。
+  一对一百——她直接对全团队。
+</p>
+
+<blockquote>
+  "平权本身是有价值的，就是平权本身是有利于所有人去平等的贡献自己的创造力和智慧。
+  任何层级应该一定程度上都是在规范和约束，规范和约束本身是压制创造力的。"
+  <span class="attr">— 罗福莉</span>
+</blockquote>
+
+<p>
+  她不分组的逻辑很实际：很多人对预训练和后训练都感兴趣。固定分组等于扼杀创造力和成长空间。
+  做预训练的人天然更在乎多样性——去做后训练是非常好的补充。
+  但她确实能预料到哪些人会做这样的迁移——"很多能力特质上是共性的，比如对数据的直觉，从模型效果倒推算法设计"。
+</p>
+
+<p>
+  管理的方式是<strong>靠热爱驱动</strong>。"去选择激发大家的热情，让大家围绕着自己愿意信仰的事情去做自驱做事，
+  这是我一直比较坚信的最有效的管理方式。"
+  筛选人的时候就能看出来——"有的人会为了很多奇怪的目标做事情，但为了热爱驱动做事情的人是非常明显的。
+  你跟他聊天的时候就能感受出来。"
+</p>
+
+<p>
+  春节后的团队实践是一个生动案例：罗福莉给大家下了一条指令——
+  "如果第二天 OpenClaw 对话次数不超过 100 轮，可以直接 quit。"但她没有真正去考核，
+  "我只在乎你有没有真的去用这个动作，是不是真的达到一百轮，那只是一个量次而已"。
+  目的是让大家先体验——"体验是驱动热情非常重要的方式"。
+</p>
+
+<p>
+  结果，团队在那两天"不像在上班，就在群里边躁动"。两周后发现：
+  三四周时间做完了以前可能三四十周才能做到的事情。
+</p>
+
+<h2>十四、群体智能：从团队到全人类</h2>
+
+<blockquote>
+  "它确实需要群体智能，不是个人英雄主义。"
+  <span class="attr">— 罗福莉</span>
+</blockquote>
+
+<p>
+  罗福莉把群体智能理解为三个层次。第一层是团队内部的：训练一个 1T 模型需要每个环节上极致的人——
+  懂 inference 的、懂模型训练和评估的、做数据的、做数学的——每个人的 context 有独立的地方，
+  也有关联的地方。OpenClaw 证明了"这套复杂的框架能够被模拟出来"。
+</p>
+
+<p>
+  第二层是社区的：OpenClaw 让所有人共同改进一套框架，在极短的时间内聚集了全世界的开发者智慧。
+</p>
+
+<p>
+  第三层是全人类的：AI 进步的逻辑是——<strong>先吸收所有人的智能，再靠自己产生更强的智能</strong>。
+  "它可能真的能依靠于它自己产生更强的智能进化。它先吸收所有人的智能，然后再靠自己产生更强的智能，
+  我觉得这个事肯定是就在这一两年发生的事情。"
+</p>
+
+<h2>十五、AGI 时间线加速</h2>
+
+<p>
+  罗福莉对 AGI 的时间判断在过去两个月发生了剧烈变化。2024 年 12 月 Flash 发布时，
+  她认为那是通往 AGI 的第一步。现在（2026 年 4 月）她认为已经走到了约 20%。
+  今年底至少能到 60-70%。<strong>两个月前她认为 AGI 至少还有两年以上，现在她觉得两年以内。</strong>
+</p>
+
+<p>
+  加速的核心变量是 AI 训 AI——"它可以自己训练自己，它能去创造新的研究"。
+  她以前认为训模型这种事完全不可能交给 AI——需要研究员长年的 context（博士五年的科研培养），
+  需要跟复杂深度学习平台融合。
+  "但我最近发现原来它很聪明——聪明到你只要把你近期的 context 告诉它，
+  它甚至能帮你复原出来你自己的科研成长路径。然后你发现它跟你一样聪明。"
+</p>
+
+<p>
+  这个认知是残酷的："我们自己做的工作已经是足够有创造力、足够不会被 skill 化、不会被 workflow 化的——
+  但我现在发现它既然也能。那就说可能过一段时间它真的能训一个跟我们能训出来的模型它也能训出来了。
+  那它可不可以训出更强的模型呢？然后就自己左脚踩右脚就提升了呢？"
+</p>
+
+<p>
+  关于中美差距：国内具备 1T 以上基座的公司有好几家（Kimi、Mimo 等）。
+  距离 Claude 4.6 Opus 只有<strong>两三个月的代差</strong>——不是追到未来，而是追到当代 Claude 的水平。
+  "接下来两三个月会非常精彩。"比拼的不是谁的模型当前更强，而是研究水平、技术敏捷程度、
+  以及用拥抱新范式的方式来做研究。
+</p>
+
+<h2>十六、心法：在 Reward 不清晰的时代做选择</h2>
+
+<p>
+  从量化投资转到大模型，罗福莉面对的是一个 reward 不再清晰的世界。
+  做量化时，价格就是 reward——"总有方式去建模价格"这句座右铭支撑她走过挑战。
+  但做大模型时，大部分场景的评估是混沌的，没有 ground truth。
+</p>
+
+<p>
+  她的新心法是：<strong>做当下符合自己价值观的事情——对更多人产生价值、让世界更美好一点。</strong>
+  "如果创造大模型的这一批人没有这样一个内驱力，而是说我要做一个破坏的东西，那么我估计最后会非常的危险。"
+</p>
+
+<p>
+  她有一个想法：如果哪天 90% 的工作被替代了，她想做一个公益型组织来支持基础研究——
+  中国的很多基础研究太要求有完整的产品和证明，没有很好的资金体系来支撑往更突破的方向迈进。
+</p>
+
+<blockquote>
+  "我感觉每天可能都在否定昨天的自己。不管是很多做事的方式上，还是你对事情未来的一些判断上，
+  我基本上都在一直去否定。我觉得是在这种否定当中、自我内省和反省当中成长的。"
+  <span class="attr">— 罗福莉</span>
+</blockquote>
+
+<p>
+  她的压力缓解方式也有种令人羡慕的洒脱："我的脑子就是一个 sliding window 的特性，
+  我忘得非常快。我哪怕有压力，当下快的话一两个小时就忘了，慢的话睡一觉第二天一定就过了。"
+  前提是第二天会有一些新的有想象力的事情把它冲掉。
+</p>
+
+<h2>核心金句</h2>
+
+<div class="cards" style="grid-template-columns: 1fr;">
+  <div class="card c-blue">
+    <strong>"OpenClaw 把它当做一个划时代的 Agent 框架去这么去定义。"</strong>
+    <span style="display: block; margin-top: 4px; font-size: 13px; color: #868e96;">— 罗福莉定义 OpenClaw 的历史地位</span>
+  </div>
+  <div class="card c-green">
+    <strong>"post-training 的周期在拉长，你在一代基础上能做的 post-training 的上限是远远被激发出来的。"</strong>
+    <span style="display: block; margin-top: 4px; font-size: 13px; color: #868e96;">— Agent 范式如何改变了模型训练的经济学</span>
+  </div>
+  <div class="card c-purple">
+    <strong>"平权本身是有价值的，就是平权本身是有利于所有人去平等的贡献自己的创造力和智慧。"</strong>
+    <span style="display: block; margin-top: 4px; font-size: 13px; color: #868e96;">— 解释 MIMO 团队为什么没有组、没有职级</span>
+  </div>
+  <div class="card c-red">
+    <strong>"它可能真的能依靠于它自己产生更强的智能进化——它先吸收所有人的智能，然后再靠自己产生更强的智能。"</strong>
+    <span style="display: block; margin-top: 4px; font-size: 13px; color: #868e96;">— 关于 AI 训 AI 的预判</span>
+  </div>
+  <div class="card c-yellow">
+    <strong>"我觉得每天可能都在否定昨天的自己。"</strong>
+    <span style="display: block; margin-top: 4px; font-size: 13px; color: #868e96;">— 在这个加速时代做研究的真实状态</span>
+  </div>
+  <div class="card c-orange">
+    <strong>"开源跟安全性并不冲突。我们不应该太过于去要求一个框架本身是过于安全的。"</strong>
+    <span style="display: block; margin-top: 4px; font-size: 13px; color: #868e96;">— 对 Anthropic 闭源路线的回应</span>
+  </div>
+</div>
+
+<footer>
+  <p>
+    完整播客：
+    <a href="https://www.xiaoyuzhoufm.com/episode/69eae15a1e94ae692107cc50" target="_blank" rel="noopener">
+      小宇宙 — 138. 对罗福莉 3.5 小时访谈
+    </a>
+  </p>
+  <p style="margin-top: 8px;">
+    罗福莉曾供职于阿里达摩院、DeepSeek，目前是小米大模型团队负责人，主导研发了 Mimo VR 系列模型。
+  </p>
+  <p style="margin-top: 16px; font-size: 13px;">
+    本文由 PodDeck 自动生成 · 2026 年 6 月
+  </p>
+</footer>
+
+</article>
+
+</body>
+</html>
