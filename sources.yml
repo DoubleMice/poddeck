@@ -87,3 +87,23 @@ sources:
     cache_limit: 50
     color: "#0891b2"
     description: 中文 AI / 大模型 / Agent 长访谈，多为 2-4h 中英双语放送
+
+  - id: sv101
+    name: 硅谷101
+    rss_url: https://feeds.fireside.fm/sv101/rss
+    filter_keywords: [科技, AI, 人工智能, 硅谷, 创业, 商业, 互联网]
+    min_duration: 3600
+    min_date: "20260101"
+    cache_limit: 80
+    color: "#0f766e"
+    description: 中文科技与商业深度访谈，覆盖硅谷、AI、创业和产业变迁
+
+  - id: lex-fridman
+    name: Lex Fridman Podcast
+    rss_url: https://lexfridman.com/feed/podcast/
+    filter_keywords: [AI, robotics, programming, physics, science, philosophy, technology]
+    min_duration: 3600
+    min_date: "20260101"
+    cache_limit: 80
+    color: "#111827"
+    description: Long-form conversations on AI, science, technology, philosophy, history, and the human condition

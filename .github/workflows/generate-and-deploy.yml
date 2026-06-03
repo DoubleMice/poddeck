@@ -12,7 +12,7 @@ on:
       limit:
         description: 'Maximum episodes to generate'
         required: true
-        default: '3'
+        default: '4'
       transcribe_limit:
         description: 'Maximum missing-transcript episodes to submit for ASR'
         required: true
@@ -107,7 +107,7 @@ jobs:
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: |
           set -euo pipefail
-          limit="${{ inputs.limit || '3' }}"
+          limit="${{ inputs.limit || '4' }}"
           transcribe_limit="${{ inputs.transcribe_limit || '3' }}"
           transcribe_wait_minutes="${{ inputs.transcribe_wait_minutes || '2' }}"
           source="${{ inputs.source || '' }}"
