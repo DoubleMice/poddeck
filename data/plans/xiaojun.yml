@@ -1,9 +1,9 @@
 source: xiaojun
-refreshed_at: 2026-06-02T19:18:15.401Z
+refreshed_at: 2026-06-03T04:39:00.420Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 12
-done: 1
+total_candidates: 11
+done: 0
 pending: 2
 needs_transcript: 7
 transcribing: 1
@@ -39,21 +39,6 @@ episodes:
     transcript_provider: dashscope
     transcript_job_id: 3fc23a0a-1ec3-403c-8ed0-84fc79df7f6d
     transcript_submitted_at: 2026-05-26T20:07:14.387Z
-  - id: 69eae15a1e94ae692107cc50
-    title: 138. 对罗福莉3.5小时访谈：AI范式已然巨变！OpenClaw、Agent范式很吃后训练、卡的分配、组织平权
-    duration: 12996
-    published: Fri, 24 Apr 2026 03:44:26 GMT
-    published_sort: "20260424"
-    first_seen_at: 2026-05-25T07:21:24.420Z
-    url: https://www.xiaoyuzhoufm.com/episode/69eae15a1e94ae692107cc50?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69eae15a1e94ae692107cc50/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvjthrP5i6nloL64YOJ_JDDRa4WF.m4a
-    image: https://image.xyzcdn.net/FiMcWmjLVeH6OwAe-ZJnDgskU7Uy.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: a3754e0599a34dd4a77741125e203bd1,7c76366164f34393871c644ba6c97505,4fd328795a2e442a955f33801f7e5ce4,ff9e83703a2a436790d18bce50ac2c0c,fe8de385d769480e8120b5fbad2983d7,226270ea115a47278d43455a93d62c04,3dccc49db7814ce98cfe2d53c4702931,263eea611d5745e8bca5dd2d5a9b885e,214b00b1c2f548d69db6dcb6f85b2343,e73f7c5e624d4f67b5a9ed526827c9f3,bbea51688f444a1e8e86845dac301300,9096b5be34a841b583db83cd22e0134e,f6500ca602f044f5a471a15c9b4e9332,9bb39b1525de48b69dc83f77620bdf52,b5bf890879054c6d9cfcbd3822fc728b
-    transcript_submitted_at: 2026-05-31T19:17:32.950Z
-    transcript_completed_at: 2026-05-31T19:26:18.040Z
   - id: 69e4e6951d989496e7fecc7b
     title: 137. 对洪乐潼的4小时访谈：AI for Math、把数学变成Lean、数学天书中的证明、直觉、被创造与被发现的
     duration: 15857
@@ -81,8 +66,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-06-02T19:20:20.887Z
     transcript_job_id: f8bfad26f7e44decae1d1803ff02cbde,5d4a2be941ae4fcc95112510f45219b3,5fe41fbb56b74117bf18aa988a7472ca,451fa4f5a71349de8cb12c7d6b9f98a4,efb4d86b9f174d4db1c800f83461ab67,f40d8d504bef4069a9adf80aa860ac02
+    transcript_submitted_at: 2026-06-02T19:20:20.887Z
     transcript_completed_at: 2026-06-02T19:23:42.935Z
   - id: 69d8bbdfe2c8be3155dcc2fe
     title: 135. 和自然选择创始人Tristan聊，Elys、赛博分身、灵魂、Context的获取与流动和AI社交网络

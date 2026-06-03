@@ -1,84 +1,75 @@
 source: tbpn
-refreshed_at: 2026-06-02T19:18:15.253Z
+refreshed_at: 2026-06-03T04:39:00.267Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 6
-done: 1
-pending: 3
+done: 0
+pending: 4
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: f57b2ffc-d7cf-4f27-b72a-d09eb60132cf
-    title: "YouTubers Win the Box Office, Salesforce on a Tear, Bernie Sanders: A.I. is a Public Resource | Adam Iscoe,
-      Danial Jameel, Mike Schroepfer, Nico Ferreyra, Sue Khim, Bernie Su"
-    duration: 9706
-    published: Mon, 01 Jun 2026 14:11:25 -0700
-    published_sort: "20260601"
-    first_seen_at: 2026-06-02T04:37:47.521Z
-    url: https://share.transistor.fm/s/07ff1b7d
-    audio_url: https://media.transistor.fm/07ff1b7d/47b771e0.mp3
+  - id: edc93462-0875-451f-a106-5cab3da94e8b
+    title: Google Taps Berkshire, Confidential IPO Filings, Putin's Longevity | Jack Doohan, Shreya Murthy, Nate Cavanaugh &
+      Justin Fox, Thomas Mueller, Edward Kim, Brynn Putnam
+    duration: 9273
+    published: Tue, 02 Jun 2026 13:59:11 -0700
+    published_sort: "20260602"
+    first_seen_at: 2026-06-03T04:39:00.260Z
+    url: https://share.transistor.fm/s/51d955de
+    audio_url: https://media.transistor.fm/51d955de/f7306c06.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/07ff1b7d/transcription.txt
+    transcript_url: https://share.transistor.fm/s/51d955de/transcription.txt
     transcript_type: text/plain
-    summary: "(01:05) - YouTubers Win the Box Office\r
+    summary: "(00:21) - Google Taps Berkshire\r
 
-      (32:48) - 𝕏 Timeline Reactions\r
+      (24:37) - Berkshire Bets on Housing\r
 
-      (35:40) - Bernie Wants Public Stake in AI\r
+      (38:54) - History of Confidential IPO Filings\r
 
-      (49:03) - Anthropic IPO\r
+      (46:33) - Jack Doohan, an Australian racing driver, discusses his journey from karting in Australia to becoming a
+      Formula One driver, including his early move to Europe at 13 and his progression through the racing ranks. He
+      shares the challenges he faced, such as being sidelined six races into his F1 career due to circumstances beyond
+      his control, which led him to explore his interest in AI and technology. This exploration culminated in the
+      founding of Muse, a company aimed at solving data fragmentation issues in the food and beverage industry by
+      unifying various systems into a single, orchestrated platform.\r
 
-      (50:04) - Salesforce Invests $2B in France\r
+      (01:07:48) - Nate Cavanaugh, co-founder of Special, discusses the launch of their new holding company aimed at
+      applying AI tools to the $10 trillion Main Street services economy, starting with healthcare. He explains their
+      strategy to acquire independent small businesses, beginning with at-home senior care, and enhance them with AI to
+      improve efficiency and service quality. Cavanaugh emphasizes their commitment to sharing cost savings with workers
+      to attract talent and plans to replicate this model across other labor-intensive, highly regulated industries.\r
 
-      (51:03) - Salesforce on a Tear\r
+      (01:15:31) - Thomas Mueller, a renowned aerospace engineer and propulsion expert, is the founder and CEO of
+      Impulse Space, a company specializing in in-space transportation services. In the conversation, Mueller discusses
+      Impulse Space's mission to enhance space mobility by developing technologies that transport payloads from Low
+      Earth Orbit (LEO) to higher orbits like Geostationary Orbit (GEO), the Moon, and Mars. He highlights the company's
+      products, such as the Mira spacecraft for precision maneuvering and the Helios kick stage designed to efficiently
+      move payloads to higher orbits, aiming to make space access more reliable and cost-effective.\r
 
-      (55:37) - 𝕏 Timeline Reactions\r
+      (01:34:34) - 𝕏 Timeline Reactions\r
 
-      (59:39) - Adam Iscoe, a journalist formerly with The New Yorker, has covered diverse topics including mental
-      illness, contemporary art, and cryptocurrency. In the conversation, he discusses his journey to The New York
-      Times, his writing process, and his experiences covering various subjects.\r
+      (01:38:56) - Putin's Longevity\r
 
-      (01:23:52) - 𝕏 Timeline Reactions\r
+      (01:46:46) - Edward Kim, co-founder and head of technology at Gusto, introduces Gusto Co-Founder, an AI agent
+      designed to automate small business back-office tasks like payroll, benefits, and HR scheduling. This tool
+      integrates with existing systems such as Notion, QuickBooks, and Google Workspace, allowing users to manage
+      operations via SMS and Slack, thereby streamlining processes and reducing the need for direct platform
+      interaction. Kim emphasizes the importance of creating a seamless, teammate-like experience to enhance efficiency
+      and user satisfaction.\r
 
-      (01:36:33) - Danial Jameel, Founder and CEO of Saris AI, discusses how his company develops AI workflow agents to
-      automate complex back-office tasks in banks and credit unions, enhancing efficiency and allowing staff to focus on
-      more meaningful work. He highlights the significant impact on employees' work-life balance, sharing examples where
-      staff previously working late hours due to backlogs can now leave earlier, improving their quality of life.
-      Additionally, he mentions that increased productivity has led some institutions to forgo hiring additional staff,
-      instead opting to reward existing employees with raises, thereby boosting overall morale.\r
+      (02:02:06) - Shreya Murthy, co-founder and CEO of Partiful, a social event planning platform, discusses the launch
+      of Partiful's new ticketing feature, enabling hosts to sell tickets directly through the platform. This addition
+      addresses a feature gap, enhancing user experience and supporting various events like concerts and fundraisers.
+      Murthy emphasizes the company's commitment to fostering real-world connections and outlines plans for future
+      growth and monetization.\r
 
-      (01:41:43) - Mike Schroepfer, former CTO of Meta Platforms, is the founder of Gigascale Capital, a venture capital
-      firm focused on climate tech investments. In the conversation, he discusses his transition from Meta to venture
-      capital, emphasizing the shift from digital to physical innovations in addressing climate change. He highlights
-      investments in companies like Heron Power and Radiant Nuclear, which are developing advanced energy solutions, and
-      underscores the importance of rethinking traditional manufacturing and energy systems to achieve significant
-      environmental impact.\r
-
-      (01:55:36) - Nico Ferreyra, co-founder and CEO of Default, discusses the company's evolution from building
-      top-of-funnel orchestration tools to launching a new product that integrates a real-time data layer with AI agents
-      to enhance go-to-market execution. He highlights the challenges companies face with disconnected systems and how
-      Default's platform unifies data to streamline growth processes. Ferreyra also touches on the company's intense
-      work culture and recent $10 million funding round, emphasizing their commitment to solving complex problems in
-      revenue operations.\r
-
-      (02:06:55) - Sue Khim, co-founder and CEO of Brilliant, discusses the launch of their new AI tutor, Koji, designed
-      to help users learn math and coding through interactive, graphical assistance. She emphasizes the importance of
-      reducing embarrassment in learning, allowing students to ask questions freely, and highlights the tutor's goal of
-      becoming unnecessary as learners gain confidence and independence. Khim also addresses the significance of
-      multimodal learning experiences and the need for purpose-built educational tools that provide real-time feedback
-      and personalized learning paths.\r
-
-      (02:16:18) - Bernie Su is an American web series creator, writer, director, and producer, renowned for his Emmy
-      Award-winning adaptations of Jane Austen's novels, including \"The Lizzie Bennet Diaries\" and \"Emma Approved.\"
-      In the conversation, Su discusses the evolving relationship between Hollywood and YouTube creators, noting that
-      the integration has been progressing for years, with recent successes like \"Obsession,\" \"Backrooms,\" and
-      \"Iron Lung\" highlighting this trend. He emphasizes that these achievements stem from creators producing content
-      authentic to their brand, rather than merely leveraging their follower count, and observes that YouTubers are
-      increasingly adept at franchising their content across various media platforms.\r
-
-      (02:37:14) - 𝕏 Timeline Reactions
+      (02:17:58) - Brynn Putnam, a former professional ballerina and Harvard graduate, is the founder of Mirror and
+      Board, companies that integrate technology into fitness and gaming experiences. In the conversation, she discusses
+      the unexpected success of Board, noting its adoption by a diverse audience beyond early tech adopters, including
+      families and educators. She highlights the development of Board Studio, a tool enabling users to create custom
+      games, and addresses the challenges of balancing innovation with intellectual property considerations.
 
 
       TBPN is made possible by:
@@ -130,7 +121,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
