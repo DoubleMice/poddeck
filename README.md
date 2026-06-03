@@ -25,8 +25,11 @@ PodDeck 把播客 RSS 里的长访谈和 transcript 自动转成结构化 Slidev
 | Risky Business | `https://risky.biz/feeds/risky-business/` |
 | Acquired | `https://feeds.transistor.fm/acquired` |
 | Flirting with Models | `https://feeds.captivate.fm/flirting-with-models/` |
+| 张小珺 Xiaojun Podcast | `https://feed.xyzfm.space/dk4yh3pkpjp3` |
+| 硅谷101 | `https://feeds.fireside.fm/sv101/rss` |
+| Lex Fridman Podcast | `https://lexfridman.com/feed/podcast/` |
 
-`Huberman Lab`、`Theories of Everything`、`张小珺 Xiaojun Podcast` 仍保留 source 配置，`rss_url` 为空时会生成空 cache/plan，等待补充 RSS。
+`Huberman Lab`、`Theories of Everything` 仍保留 source 配置，`rss_url` 为空时会生成空 cache/plan，等待补充 RSS。
 
 ## 核心工作流
 
@@ -138,7 +141,7 @@ ENABLE_TOOL_SEARCH=true
 手动触发参数：
 
 - `source`：可选 source id，例如 `tbpn`；留空表示所有 source。
-- `limit`：生成数量上限，默认 `1`。
+- `limit`：生成数量上限，默认 `4`。
 - `transcribe_limit`：本轮提交转写任务上限，默认 `3`。
 - `transcribe_wait_minutes`：提交转写后短轮询等待分钟数，默认 `2`。
 - `category`：可选分类过滤。
