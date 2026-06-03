@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-03T04:39:00.438Z
+refreshed_at: 2026-06-03T19:23:15.900Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 12
-done: 0
+done: 1
 pending: 0
-needs_transcript: 12
+needs_transcript: 11
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -131,8 +131,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: Clark Gao, Peter Pang, and 程凯.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-03T19:35:26.602Z
+    transcript_job_id: c9d72457155e4d07b3af7a07df085f86,5a7002f9d8ed465592d690765c534a48,0df8c598ecb84c4698fc5e5886d40c05,8a7460e7692647c299e23c1ac91f52eb,8db357f32016469e9974ff00ada99fe3
+    transcript_completed_at: 2026-06-03T19:38:08.099Z
   - id: c3607c08-6eb6-48bd-8250-b41b5b8272e6
     title: E237｜央视和FIFA谈判纷争背后，体育赛事转播权的博弈与生意
     duration: 3957
