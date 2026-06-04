@@ -1,0 +1,26 @@
+id: p-6450
+source: lex-fridman
+title: "#496 – FFmpeg: The Incredible Technology Behind Video on the Internet"
+guest: "Jean-Baptiste Kempf & Kieran Kunhya"
+guest_role: engineer
+published: 2026-05
+duration: 4h24m
+url: "https://lexfridman.com/ffmpeg/?utm_source=rss&utm_medium=rss&utm_campaign=ffmpeg"
+thumbnail: "https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png"
+status: generated
+tags:
+  - technical
+  - deep-dive
+  - engineer
+  - interview
+summary: |
+  Jean-Baptiste Kempf (VideoLAN/VLC总裁) 和 Kieran Kunhya (FFmpeg核心贡献者) 深入探讨了支撑互联网视频的隐形基础设施。从视频解码的四大阶段、手写汇编的性能艺术、编解码器的代际进化，到开源社区的治理哲学、大公司与志愿者之间的张力，以及档案保存、超低延迟远程操控等前沿话题。这是一场关于技术极致、社区精神和工程伦理的4小时24分钟深度对谈。
+core_ideas:
+  - FFmpeg是互联网视频的隐形骨架，90%以上的视频处理流程依赖它，而它由约10-15名志愿者维护
+  - 视频压缩利用了空间冗余、时间冗余和人类感知冗余，压缩比可达100x-200x
+  - 手写SIMD汇编代码可以比C编译器快10x-62x；Dav1d包含24万行手写汇编，运行在约30亿台设备上
+  - "每一代编解码器节省30%码率，但编码复杂度增加100倍；从MPEG-2到AV2的进化史也是专利战争和开源反击的历史"
+  - VLC拒绝了数千万美元的不良变现方案，坚守无广告、无追踪、无后门的承诺
+  - 开源维护者的心理健康是整个数字基础设施的阿喀琉斯之踵
+article_path: episodes/p-6450/article.html
+base: /episodes/p-6450/

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>#496 – FFmpeg: The Incredible Technology Behind Video on the Internet — PodDeck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  header {
+    text-align: center;
+    padding: 40px 0 32px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #111;
+    margin-bottom: 12px;
+  }
+  .meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  .meta span { margin: 0 6px; }
+  .meta .sep { color: #ccc; }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 48px 0 16px;
+    color: #111;
+    border-left: 4px solid #1971c2;
+    padding-left: 12px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 12px;
+    color: #222;
+  }
+  p { margin-bottom: 16px; }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0 40px;
+  }
+  .overview-card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .overview-card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .card-blue   { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .card-green  { background: #ebfbee; border-left: 4px solid #2b8a3e; }
+  .card-purple { background: #f3f0ff; border-left: 4px solid #7048e8; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .card-red    { background: #fff5f5; border-left: 4px solid #c92a2a; }
+  .gloss {
+    background: #fff9db;
+    border-left: 4px solid #f08c00;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  .gloss strong { color: #e8590c; }
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: #f1f3f5;
+    border-left: 4px solid #1971c2;
+    border-radius: 6px;
+    font-style: italic;
+    font-size: 16px;
+    color: #333;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #868e96;
+  }
+  .quotes-section {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 40px 0;
+  }
+  .quotes-section h2 { margin-top: 0; border: none; padding: 0; }
+  .quote-item {
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #1971c2;
+    font-style: italic;
+    font-size: 15px;
+  }
+  .quote-item .qattr { display: block; margin-top: 6px; font-size: 12px; font-style: normal; color: #868e96; }
+  .q1 { background: #e7f5ff; border-color: #1971c2; }
+  .q2 { background: #ebfbee; border-color: #2b8a3e; }
+  .q3 { background: #fff4e6; border-color: #e8590c; }
+  .q4 { background: #f3f0ff; border-color: #7048e8; }
+  .q5 { background: #fff5f5; border-color: #c92a2a; }
+  .q6 { background: #fff9db; border-color: #f08c00; }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+  }
+  footer a { color: #1971c2; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    h1 { font-size: 23px; }
+    .overview { grid-template-columns: 1fr; }
+    article { padding: 20px 16px 60px; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>#496 – FFmpeg: The Incredible Technology Behind Video on the Internet</h1>
+  <div class="meta">
+    Jean-Baptiste Kempf &amp; Kieran Kunhya
+    <span class="sep">·</span> Lex Fridman Podcast
+    <span class="sep">·</span> 2026-05
+    <span class="sep">·</span> 4h24m
+  </div>
+</header>
+
+<h2>为什么这期值得关注</h2>
+
+<div class="overview">
+  <div class="overview-card card-blue">
+    <strong>FFmpeg：互联网视频的隐形骨架</strong>
+    YouTube、Netflix、Chrome、Discord——几乎所有处理视频的地方，底层都跑着 FFmpeg。一个由约 10–15 名志愿者核心维护的开源项目，支撑了互联网超过 90% 的视频处理流程。
+  </div>
+  <div class="overview-card card-orange">
+    <strong>VLC：60 亿次下载的传奇播放器</strong>
+    没有广告、没有追踪、什么格式都能播。从法国大学校园的网络项目，变成了全世界人电脑上那个戴着交通锥的橙色图标。JB 多次拒绝了能让它变现的数千万美元。
+  </div>
+  <div class="overview-card card-green">
+    <strong>手写汇编的艺术</strong>
+    Dav1d 解码器包含 24 万行手写汇编代码，性能比 C 编译器快 62 倍。在摩尔定律终结的时代，这群工程师选择直接跟 CPU 对话——每个时钟周期都重要。
+  </div>
+  <div class="overview-card card-purple">
+    <strong>开源 vs 万亿公司</strong>
+    Google 用 AI 生成安全报告轰炸志愿者；微软 Teams 在 bug tracker 上标"高优先级"然后只给几千美元。大公司把开源当成免费客服——但它们依赖的恰恰是这些无偿维护者。
+  </div>
+  <div class="overview-card card-yellow">
+    <strong>逆向工程的考古学</strong>
+    没有文档、没有源码，只有几十 MB 的二进制 blob。乌克兰开发者 Kostya 独自逆向工程了 GoToMeeting 的专有编解码器——在 CPU 层面逐条指令调试。
+  </div>
+  <div class="overview-card card-red">
+    <strong>视频正在吞噬世界</strong>
+    从 MPEG-2 到 AV2，每一代编解码器提升约 30% 压缩效率。视频占互联网流量的 80%+。理解 FFmpeg 就是理解现代互联网的物理基础。
+  </div>
+</div>
+
+<h2>当你按下播放键——视频解码的四大阶段</h2>
+
+<p>当我们点击视频播放时，背后发生的事情远比想象中复杂。Kieran 将这个过程分解为四个关键阶段：获取字节流、解封装、解码和渲染。</p>
+
+<p>第一步，从 URL、文件或 DVD 等来源读取原始字节流。VLC 的设计哲学在这里已经体现出来：<strong>不信任任何输入</strong>——网络流可能损坏，文件可能不完整，UDP 包可能丢失。第二步是解封装（demux），将混合的字节流拆分成独立的音频轨、视频轨和字幕轨。VLC 和 FFmpeg 的一个关键设计决策是<strong>忽略文件扩展名</strong>——它们直接探测文件内容来判断真实格式。一个 .mp4 后缀的文件里面可能装着完全不同的东西。</p>
+
+<p>第三步是解码——这是最复杂的部分。系统先判断视频能否用 GPU 硬解（约 45% 的文件不能），不能则走软件解码路径：反熵编码 → 反量化 → 反变换 → 运动补偿。最后一步是渲染，将原始画面送到显卡和屏幕，音频送到声卡和扬声器。</p>
+
+<p>Lex 听完这段概述后说了一句精准概括整场对谈的话：<strong>"我们刚才几分钟里说的每一个句子，都是某个人一生的心血。每一个句子都有书写它的专著。"</strong></p>
+
+<h2>压缩 100 倍的魔法</h2>
+
+<p>视频压缩的核心思想是利用三种冗余：空间冗余（同一帧内相邻像素往往相似）、时间冗余（前一帧的云和下一帧的云是同一朵云）、以及感知冗余（人眼对亮度比颜色更敏感）。</p>
+
+<p>JB 解释说，视频压缩不是 zip 那样的无损压缩——它是有损的。目标不是完美还原，而是在人眼察觉不到的前提下丢弃最多的信息。一个关键的技术决策是：编解码器工作在 YUV 色彩空间而非 RGB。Y 是亮度，U 和 V 是色度。仅这一步——将色度分辨率降到亮度的一半——就在不做任何压缩的情况下将数据量减半，而大多数人根本看不出区别。</p>
+
+<p>视频被分割成块（block），对每个块做数学变换（离散余弦变换），转换到频率域。当压缩出问题时，你看到的那些方块伪影，就是这些块的边界。每一代新编解码器比上一代节省约 30% 的码率，但编码所需的计算量可能增加 100 倍甚至更多。正如 Kieran 所说：编码一次、播放亿万次——这种不对称性决定了编解码器的设计权衡。</p>
+
+<h2>I 帧、P 帧、B 帧——时间压缩的艺术</h2>
+
+<p>帧的类型是理解视频压缩的核心概念。I 帧（关键帧）是完整的独立画面，像一张 JPEG，不需要参考其他帧。P 帧（预测帧）只参考前面的帧，存储的是"变化的部分"。B 帧（双向预测帧）可以同时参考过去和未来的帧——这意味着解码顺序不等于显示顺序。</p>
+
+<p>B 帧是 Kieran 认为"最反直觉"的设计：为了解码当前的 B 帧，解码器必须先解码未来的一帧作为参考。FFmpeg 对 H.264 的默认 GOP（图像组）约为 250 帧——一个完整的 I 帧后面跟着几百个预测帧。更有甚者，在广播领域有一种叫 Intra Refresh 的技术：除了流开始时的第一个 I 帧，之后<strong>再也不发送 I 帧</strong>。图像的不同区域在流中逐步刷新，没有任何一个时刻有完整的关键帧。</p>
+
+<h2>VLC 的诞生：从校园恶作剧到全球基础设施</h2>
+
+<p>VLC 的起源故事是一段真正的传奇。1990 年代的法国顶尖工程师学院 École Centrale Paris，校园完全由学生自治。当时的 Token Ring 网络在玩《Doom》和《Duke Nukem》时延迟太高，学生们被迫寻求升级。1995 年，他们搭设了巨大的卫星天线，将 MPEG-2 卫星电视信号解码后在局域网上分发——这基本可以认为是世界上最早的视频流媒体服务之一，比 YouTube 早了整整十年。</p>
+
+<p>这个叫 Network 2000 的项目本来只是一次性演示——"它 45 秒后就崩溃了，但没事，演示只需要 40 秒"。但两名学生 Christophe Massiot 等人决定继续推进，创建了 VideoLAN 项目。VLC（VideoLAN Client）在与校方艰苦谈判三年后终于于 2001 年开源。</p>
+
+<p>JB 于 2003 年入学时加入项目。2005 年，VLC 几乎消亡——只剩下两名活跃开发者。JB 做出了一个改变历史的选择：他把自己的生命和时间投入进去，将 VLC 从几十万用户推到几十亿用户。他曾说："在 2005 年，这个项目应该已经死了——但我让它活了下来。"</p>
+
+<h2>"我拒绝了数千万美元"</h2>
+
+<p>JB 多次拒绝了巨大的商业报价。最后一份"令人咋舌"。对方的话术很狡猾："用这些钱你可以再做一个新的开源项目。"JB 的拒绝基于三个理由。</p>
+
+<p>第一，来找他的全是捆绑流氓工具栏、修改搜索引擎、植入间谍软件的灰色公司——没有一家像 Netflix 那样提出正当的合作方案。第二，VLC 不是他一个人创建的——它是几代学生的接力成果、数千名贡献者的心血。他没有权利为了个人利益背叛所有人。第三，也是最简单的一条：他需要晚上能安心入睡。</p>
+
+<p>这个决定在 Reddit 上成了一个 meme：JB 戴着 VLC 交通锥帽被 P 成巫师，配文："JB, the creator of VLC media player, refused tens of millions of dollars in order to keep VLC ads free."</p>
+
+<div class="gloss"><strong>作者概括：</strong>这不是一个关于"反对赚钱"的故事——JB 创办了好几家公司。这是一个关于"赚钱的方式"的故事。如果当初 Netflix 来敲门说想在 VLC 里集成 Netflix，结果可能完全不同。但敲门的只有灰色公司。</div>
+
+<h2>交通锥：史上最好的"最差 Logo"</h2>
+
+<p>所有视频播放器的 Logo 方案都是"电视屏幕上的播放按钮"——YouTube 就是这样。但 VLC 选择了交通锥：一个荒谬的、滑稽的、不合理的橙色锥子。JB 透露，VLC 官方网站 25% 的流量来自搜索 "Cone Player"——很多人不知道 VLC，只知道"那个锥子播放器"。</p>
+
+<p>曾经在愚人节，VideoLAN 开玩笑说要换成一台推土机。结果收到了超过 10,000 封抗议邮件。JB 说："我去印度、中国的偏远乡村，人们不认识 VLC——但他们认识那个锥子。"交通锥成了一个文化符号。有人甚至把 RFID 芯片嵌入小锥子里，插到播放器上就能播放《星球大战》。这是 meme 变成文化的经典案例。</p>
+
+<h2>逆向工程：用考古学家的方式解码视频</h2>
+
+<p>乌克兰天才 Kostya Shishkov 独自逆向工程了多个专有编解码器，其中最著名的是 GoToMeeting。过程是这样的：你有一个几十 MB 的二进制 .exe 文件——没有文档、没有源码、没有规格书。你需要在这个巨大的 blob 中找到负责解码的那个函数；用反汇编器打开，逐条指令地在 CPU 层面调试；设法 hook 进去把原始 YUV 数据 dump 出来作为验证标准；有时因为 DRM 加密，你需要在虚拟机里暂停整个系统、dump 内存。</p>
+
+<p>Kostya 的方法论极其精妙：他靠模式识别——"这个看起来像我在 WMV 里见过的 DCT 变换……"在很长一段时间里，解码器没有任何输出——纯靠内存调试。如果猜错了 buffer 中系数的存储方式，可能会在完全错误的方向上走很久。但最终，他一个人完成的逆向工程成果让 VLC 能播放那些没有官方播放器的专有格式录像——在 10–15 年后，当你想在 iPad 上播放一段 2000 年代录制的 GoToMeeting 会议时，这是唯一的答案。</p>
+
+<h2>手写汇编：62 倍的速度提升</h2>
+
+<p>FFmpeg 社区使用 SIMD（单指令多数据）汇编——一条指令同时对 16 个数据元素执行操作，天然适合视频的像素网格。在 FFmpeg 中，手写 SIMD 汇编函数比等效 C 代码快 10 到 50 倍，有一个函数达到了 62 倍。Kieran 强调：编译器自动向量化不是"差 5% 或 10%"，而是<strong>差一个数量级</strong>。</p>
+
+<p>Dav1d 项目将这种极致推向了新高度：3 万行 C 代码加上 24 万行手写汇编，覆盖所有主流指令集（x86 AVX-512、ARM NEON、RISC-V 等）。当 AV1 编解码器发布时，业界普遍认为它太复杂、必须用硬件解码。Dav1d 团队证明他们错了——用 1–2 个 CPU 核心就能流畅解码 720p AV1 视频。如今 Netflix 30% 的视频和 YouTube 50% 的视频使用 AV1，Dav1d 运行在约 30 亿台设备上。</p>
+
+<p>这些汇编程序员"虐待"硬件到了匪夷所思的程度：使用密码学指令做视频处理；在库内部创建自己的函数调用约定来绕过操作系统标准流程、节省 L1/L2 缓存的加载存储；运行时检测 CPU 能力并动态选择最优代码路径。</p>
+
+<h2>x264 与心理视觉革命</h2>
+
+<p>学术界和工业界曾痴迷于 PSNR（峰值信噪比）这种纯数学指标。但追求 PSNR 会导致编码器把画面模糊掉——给所有像素加一点点误差比在某些地方出现大误差在数学上"更好"。x264 的开发者们做了当时被视为异端的事：用肉眼来判断画质。他们在自己的笔记本屏幕上对比画面，不看数学数字。</p>
+
+<p>两项关键创新改变了视频编码的历史：心理视觉率失真优化（Psy-RDO），在编码决策中模拟人类视觉感知；自适应量化（AQ），将码率从复杂区域重新分配到人眼更关注的区域。<strong>Park Joy</strong> 测试序列（瑞典电视台在 HD 时代用胶片拍摄的免费素材——一群人在河边跑步，包含树木、水面反光、草地、运动、光影变化）成了编码器的终极试金石。至今还没有任何公开测试序列能超越它的全面性。</p>
+
+<p>一个有趣的驱动力：x264 的很多优化来自动漫社区。在 Crunchyroll 出现之前，动漫的传播完全依赖粉丝字幕组，他们需要最好的编码工具来处理动画中特有的色彩渐变和锐利线条。正如 JB 所说的：很多伟大的开源项目不是从"我要改变世界"开始的，而是从"我想让我的动漫看起来更好"开始的。</p>
+
+<h2>编解码器的进化与专利战争</h2>
+
+<p>从 MPEG-2 到 AV2，每一代编解码器大约提升 30% 的压缩效率——但编码所需的计算量每代增加 100 倍。这是权衡：编码一次、播放亿万次。</p>
+
+<p>多媒体是全世界专利密度最高的领域之一（与 5G/电信并列）。H.264 时代的专利许可还算合理，但到了 HEVC（H.265）时代，出现了三个互相竞争的专利池，许可费暴涨且没有上限。YouTube 和 Netflix 每年可能面临数亿美元的专利费。HP 决定从 Windows 笔记本中移除 HEVC 支持。JB 计算过：如果 VLC 要支付所有编解码器专利费，每个用户需要付 200 多欧元。</p>
+
+<p>Google、Netflix、Amazon 和 Apple 给出了答案：与其每年交几亿美元专利费，不如花这些钱自己做一个免版税的编解码器。这就是 Alliance for Open Media 和 AV1 的诞生背景。VideoLAN 也是该联盟的成员。VLC 能存活至今的一个关键因素是——法国不承认软件专利（数学方法不能被专利保护）。</p>
+
+<h2>开源维护者的心理健康：整个互联网的阿喀琉斯之踵</h2>
+
+<p>这场对谈深入触及了开源社区最脆弱的一面。Google 用 AI 在 FFmpeg 上自动生成安全报告——在一款 1990 年代的游戏编解码器上标出"高危"漏洞，并在修复前就向媒体宣传。微软 Teams 的产品经理在 FFmpeg 的公开 bug tracker 上标"高优先级"，回应付款时只给几千美元。</p>
+
+<p>开源维护者的倦怠是真实且严峻的。curl 维护者 Daniel Stenberg 一直在对抗"AI slop"——AI 生成的假 bug 报告和垃圾补丁。XZ 后门事件中，攻击者通过在深夜反复骚扰唯一的维护者，最终让他因精力耗尽而交出 commit 权限。JB 自己收到过死亡威胁和内含白色粉末的信封（2009–2010 年，因为他停止支持 PowerPC 版 VLC），他的母亲吓坏了，他们不得不报警。</p>
+
+<p>JB 描述了开源社区的荒诞现实："内布拉斯加州有一个人在维护全世界的时区数据库。整个互联网都在用 libxml——但已经没人维护了。"而这些项目的维护者面对的却是安全研究人员用"你会被黑"这样的恐吓语言来报告一个 1993 年某张光盘上一个 10 秒游戏片头里的"漏洞"。</p>
+
+<h2>哪里都有的 FFmpeg 和 VLC</h2>
+
+<p>如果有什么能说明这两个项目的影响力，那就是它们被使用的场景。NASA 的火星 2020 漫游车使用 FFmpeg 压缩照片——它已是多行星开源软件。CERN 的大型强子对撞机使用 VLC 监控 27 公里的环形隧道。几乎所有 F1 车队的维修区都用 VLC 播放实时画面。SpaceX 用 VLC 监控火箭发射。在阿富汗战争期间，一名美军人员给 JB 发邮件说 VLC 的更新破坏了他们的电影服务器——"VLC 对前线部队的士气非常重要"，JB 专门给他们做了修复版。</p>
+
+<p>WikiLeaks 的 Vault 7 泄露显示 CIA 制作了一个被篡改的 VLC 版本——加了一个 DLL 来窃取用户文档。两个情报机构曾要求 JB 在 VLC 中加入后门——他的回复比"不行"更不礼貌。VideoLAN 的编译流程到了近乎偏执的程度：在从未连接互联网的机器上编译，从编译编译器本身开始，使用双签名机制。</p>
+
+<h2>LLM 能写汇编吗？</h2>
+
+<p>关于 AI 能否替代手写汇编，Kieran 的观察很清醒：LLM 对汇编的理解比预期好，但远不够用。"你让它修，它改一下，然后你问'比特精确吗？'——它又做同样的事。"汇编缺乏像 Stack Overflow 那样的大型训练语料库。更重要的是，在 Dav1d 这样的项目中，比特级精确性不容许任何偏差——LLM 的"差不多"在这里就是完全错误。</p>
+
+<p>但这指向了一个更深的洞察。JB 说：AI 将接管 CRUD 应用的编写——但优化硬件、榨取 CPU 每一点性能的能力，是 AI 短期内做不到的。Kieran 的汇编课程（ASM Lessons）正在试图让这门濒危的手艺传承下去。方法论很独特：不像传统教材那样从语法规则开始，而是像学语言一样——从解决实际问题开始。前提只需要高中数学和 C 语言的指针。</p>
+
+<h2>Kyber：让距离消失</h2>
+
+<p>JB 的新创业项目 Kyber 将 FFmpeg/VLC 社区的底层优化能力应用到了一个全新领域：超低延迟远程操控。目标是将端到端延迟压缩到 4 毫秒（240Hz）。当前实现已达到 Windows 到 Windows/Mac 的 7ms——瓶颈在 NVIDIA 硬件编码器约 3.5ms 加上 Intel 解码器约 2ms。</p>
+
+<p>技术方案体现了开源多媒体社区几十年的积累：单一 QUIC 连接在一个 socket 上同时传输视频、音频和控制指令；内置时钟漂移补偿以保证多个摄像头传感器的同步；前向纠错（FEC）允许丢包而不重传（重传 = 延迟）。开源 + 商业双许可模式让小企业和爱好者可以免费使用，大公司付费。这和 FFmpeg/VLC 的精神一脉相承。</p>
+
+<h2>未来：多媒体 = 人类感官的数字表示</h2>
+
+<p>JB 和 Kieran 对"多媒体"的定义远超当前的音频和视频。VLC 已经有触觉（haptic）插件用于 4D 影院。未来会有什么？脑机接口的"大脑编解码器"；嗅觉流的左右鼻孔立体传输；机器人的 RGB-D 深度和点云视频……</p>
+
+<p>JB 说了一句极富洞见的话：多媒体本质上是一切"有时间维度、代表人类感官体验的东西"。如果 Neuralink 定义了脑机接口的标准，FFmpeg 就会实现它。这是开源社区最令人敬畏的地方——他们不是在追赶趋势，而是在<strong>定义基础设施</strong>。</p>
+
+<div class="gloss"><strong>作者概括：</strong>FFmpeg 和 VLC 的故事不是关于"一个软件产品"的故事。它是关于一群分布在全球各地的、内向的程序员，因为热爱视频、动漫和电影的纯粹美感，因为对代码质量的偏执追求，因为一种近乎宗教信仰的"为所有人做事"的信念，而共同建造了现代数字文明的底层结构。一千年后，当人类想回看 21 世纪的视频时，FFmpeg 将是那把打开时间胶囊的钥匙。</div>
+
+<div class="quotes-section">
+<h2>核心金句</h2>
+
+<div class="quote-item q1">
+"Everything we've just said in the past couple of minutes, every sentence is someone's lifetime's work. There are books about every sentence."
+<span class="qattr">— Lex Fridman，在听完视频解码流程的概述后</span>
+</div>
+
+<div class="quote-item q2">
+"We don't care who you are, where you're from. We care about the quality of your code. Maybe you're a dog — I don't care. I need to look at your code."
+<span class="qattr">— Jean-Baptiste Kempf，论 FFmpeg/VLC 社区的 meritocracy</span>
+</div>
+
+<div class="quote-item q3">
+"If we had to compromise our software, we would shut it down. This is clear."
+<span class="qattr">— JB，在被两个情报机构要求加入后门之后</span>
+</div>
+
+<div class="quote-item q4">
+"The world is a museum of passion projects."
+<span class="qattr">— John Collison (Stripe)，由 Lex 引述</span>
+</div>
+
+<div class="quote-item q5">
+"Every cycle matters."
+<span class="qattr">— Dav1d 项目的口号，24 万行手写汇编背后的哲学</span>
+</div>
+
+<div class="quote-item q6">
+"Teenagers have written more assembly in FFmpeg than Google engineers."
+<span class="qattr">— FFmpeg Twitter 账号</span>
+</div>
+</div>
+
+<footer>
+  <p>原文播客：<a href="https://lexfridman.com/ffmpeg/">Lex Fridman Podcast #496 – FFmpeg: The Incredible Technology Behind Video on the Internet</a></p>
+  <p style="margin-top:8px;">Generated by PodDeck · 2026-06-04</p>
+</footer>
+
+</article>
+</body>
+</html>

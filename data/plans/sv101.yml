@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-04T04:38:00.321Z
+refreshed_at: 2026-06-04T18:50:08.452Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 11
-done: 0
+done: 1
 pending: 0
-needs_transcript: 11
+needs_transcript: 10
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -145,8 +145,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 张宾 and 朱晓东.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-04T19:06:48.346Z
+    transcript_job_id: 247a6162bb1a4665a2ee6354118e81a4,94e040f98d094eb48a6801f31e9568e4,8b6323fe2c784b55a44039bc17e8509a,c88784b891504b75ba2f25e3f07c0658,7870c623f3524bba9ee508084e1005e9
+    transcript_completed_at: 2026-06-04T19:09:40.929Z
   - id: b066c769-00d2-4341-bf61-a82bca4181e4
     title: E236｜99%的作业都是AI写的：当代名校生眼里，大学还剩下什么？
     duration: 4895
