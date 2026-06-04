@@ -1,75 +1,76 @@
 source: tbpn
-refreshed_at: 2026-06-03T19:23:15.739Z
+refreshed_at: 2026-06-04T04:38:00.169Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 6
-done: 1
+total_candidates: 5
+done: 0
 pending: 3
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: edc93462-0875-451f-a106-5cab3da94e8b
-    title: Google Taps Berkshire, Confidential IPO Filings, Putin's Longevity | Jack Doohan, Shreya Murthy, Nate Cavanaugh &
-      Justin Fox, Thomas Mueller, Edward Kim, Brynn Putnam
-    duration: 9273
-    published: Tue, 02 Jun 2026 13:59:11 -0700
-    published_sort: "20260602"
-    first_seen_at: 2026-06-03T04:39:00.260Z
-    url: https://share.transistor.fm/s/51d955de
-    audio_url: https://media.transistor.fm/51d955de/f7306c06.mp3
+  - id: fce51b15-5506-4c23-9fcf-6cb82ebfae10
+    title: Microsoft Chases the Frontier, SUNO on Fire, Project Solara | Mikey Shulman, Samir Chaudry, Tom Farley, Nikesh
+      Arora, Henri Stern, Alex Good
+    duration: 9604
+    published: Wed, 03 Jun 2026 14:03:20 -0700
+    published_sort: "20260603"
+    first_seen_at: 2026-06-04T04:38:00.159Z
+    url: https://share.transistor.fm/s/e066c7b5
+    audio_url: https://media.transistor.fm/e066c7b5/412bdcc8.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/51d955de/transcription.txt
+    transcript_url: https://share.transistor.fm/s/e066c7b5/transcription.txt
     transcript_type: text/plain
-    summary: "(00:21) - Google Taps Berkshire\r
+    summary: "(00:35) - Microsoft Chases the Frontier\r
 
-      (24:37) - Berkshire Bets on Housing\r
+      (05:00) - Project Solara\r
 
-      (38:54) - History of Confidential IPO Filings\r
+      (16:19) - Mikey Shulman, representing Suno, discusses the company's recent achievement of raising over $400
+      million, led by Bond, highlighting significant traction and progress in user engagement and retention. He
+      emphasizes the importance of retention as a key metric, noting that improvements in the product have led to
+      increased user engagement and a broader audience. Shulman also addresses the evolving perception of AI-generated
+      music, suggesting that as more people experience the product, acceptance grows, and he envisions a future where AI
+      tools like Suno become integral to creative processes in the music industry.\r
 
-      (46:33) - Jack Doohan, an Australian racing driver, discusses his journey from karting in Australia to becoming a
-      Formula One driver, including his early move to Europe at 13 and his progression through the racing ranks. He
-      shares the challenges he faced, such as being sidelined six races into his F1 career due to circumstances beyond
-      his control, which led him to explore his interest in AI and technology. This exploration culminated in the
-      founding of Muse, a company aimed at solving data fragmentation issues in the food and beverage industry by
-      unifying various systems into a single, orchestrated platform.\r
+      (35:20) - 𝕏 Timeline Reactions\r
 
-      (01:07:48) - Nate Cavanaugh, co-founder of Special, discusses the launch of their new holding company aimed at
-      applying AI tools to the $10 trillion Main Street services economy, starting with healthcare. He explains their
-      strategy to acquire independent small businesses, beginning with at-home senior care, and enhance them with AI to
-      improve efficiency and service quality. Cavanaugh emphasizes their commitment to sharing cost savings with workers
-      to attract talent and plans to replicate this model across other labor-intensive, highly regulated industries.\r
+      (43:28) - Samir Chaudry is an American entrepreneur and co-host of the YouTube channel \"Colin and Samir,\" where
+      he interviews creators and discusses the creator economy. In the conversation, he explores the evolving
+      collaboration between YouTube creators and Hollywood, emphasizing the emergence of internet-native filmmakers and
+      the significance of community-driven intellectual property. He highlights the success of horror and animation
+      genres on YouTube, noting their potential for adaptation into feature films, and underscores the importance of
+      development support for creators transitioning to larger projects.\r
 
-      (01:15:31) - Thomas Mueller, a renowned aerospace engineer and propulsion expert, is the founder and CEO of
-      Impulse Space, a company specializing in in-space transportation services. In the conversation, Mueller discusses
-      Impulse Space's mission to enhance space mobility by developing technologies that transport payloads from Low
-      Earth Orbit (LEO) to higher orbits like Geostationary Orbit (GEO), the Moon, and Mars. He highlights the company's
-      products, such as the Mira spacecraft for precision maneuvering and the Helios kick stage designed to efficiently
-      move payloads to higher orbits, aiming to make space access more reliable and cost-effective.\r
+      (01:08:47) - Tom Farley, CEO of Bullish and former President of the NYSE Group, discusses his career trajectory
+      from traditional finance to the digital asset sector, highlighting his early investment in Coinbase and the
+      evolving role of blockchain in financial markets. He reflects on the maturation of the cryptocurrency industry,
+      noting its transition from speculative hype to a more stable and institutionalized market, and emphasizes the
+      potential for blockchain technology to revolutionize global securities by enhancing transparency and efficiency.
+      Farley also addresses the challenges and opportunities in integrating digital assets with traditional financial
+      systems, underscoring the importance of regulatory clarity and technological innovation in driving future
+      growth.\r
 
-      (01:34:34) - 𝕏 Timeline Reactions\r
+      (01:32:48) - Nikesh Arora, an Indian-American business executive born in 1968, has been the chairman and CEO of
+      Palo Alto Networks since June 2018, following senior roles at Google and SoftBank. In the conversation, Arora
+      discusses the challenges AI models like Anthropic's Mythos face in cybersecurity, emphasizing issues such as high
+      false positive rates and the lack of real-time enforcement capabilities. He also highlights the importance of
+      focusing on detection and remediation over mere protection, given the evolving AI-driven threat landscape.\r
 
-      (01:38:56) - Putin's Longevity\r
+      (01:56:04) - Henri Stern, co-founder and CEO of Privy, a blockchain infrastructure company, discusses his
+      participation in the Money 2020 fintech conference in Amsterdam, where Privy launched new products in partnership
+      with Deel to enable contractors to receive stablecoin payments globally. He highlights the growing adoption of
+      stablecoin cards that allow users to spend stablecoins directly through traditional payment networks like Visa and
+      MasterCard, facilitating seamless transactions for merchants. Stern also notes the significant adoption of
+      stablecoins in regions like Latin America and Southeast Asia, while acknowledging the regulatory restrictions in
+      countries such as China that limit stablecoin usage.\r
 
-      (01:46:46) - Edward Kim, co-founder and head of technology at Gusto, introduces Gusto Co-Founder, an AI agent
-      designed to automate small business back-office tasks like payroll, benefits, and HR scheduling. This tool
-      integrates with existing systems such as Notion, QuickBooks, and Google Workspace, allowing users to manage
-      operations via SMS and Slack, thereby streamlining processes and reducing the need for direct platform
-      interaction. Kim emphasizes the importance of creating a seamless, teammate-like experience to enhance efficiency
-      and user satisfaction.\r
-
-      (02:02:06) - Shreya Murthy, co-founder and CEO of Partiful, a social event planning platform, discusses the launch
-      of Partiful's new ticketing feature, enabling hosts to sell tickets directly through the platform. This addition
-      addresses a feature gap, enhancing user experience and supporting various events like concerts and fundraisers.
-      Murthy emphasizes the company's commitment to fostering real-world connections and outlines plans for future
-      growth and monetization.\r
-
-      (02:17:58) - Brynn Putnam, a former professional ballerina and Harvard graduate, is the founder of Mirror and
-      Board, companies that integrate technology into fitness and gaming experiences. In the conversation, she discusses
-      the unexpected success of Board, noting its adoption by a diverse audience beyond early tech adopters, including
-      families and educators. She highlights the development of Board Studio, a tool enabling users to create custom
-      games, and addresses the challenges of balancing innovation with intellectual property considerations.
+      (02:11:13) - Alex Good, a former Army officer and experienced professional in finance and technology, has
+      transitioned into the crypto and AI sectors, focusing on developing protocols that integrate these fields. He
+      discusses the challenges at the intersection of crypto and AI, including increased hacking incidents due to AI's
+      ability to evaluate human-written code, and emphasizes the need for secure protocols to prevent unauthorized
+      transactions. Good also shares his \"doom thesis,\" suggesting that AI might accelerate the emergence of
+      surveillance states, prompting capital to move into privacy-focused cryptocurrencies like Zcash.
 
 
       TBPN is made possible by:
@@ -121,7 +122,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
@@ -470,76 +471,6 @@ episodes:
       job to stay connected with engineering challenges, the early stages of the AI investment cycle with significant
       capital expenditures expected over the next three years, and the impact of large language models on market
       dynamics, noting that financial institutions are rapidly adopting these technologies for research.
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: pending
-    priority: 1
-  - id: 18291b6f-2cec-48a0-b5f6-63ab34505f9d
-    title: China Blocks Manus Sale, Rick Caruso in the Ultradome, Zak Brown from McLaren Joins | Will Hurd, Anush Elangovan,
-      Augustus Doricko
-    duration: 10909
-    published: Mon, 27 Apr 2026 14:34:22 -0700
-    published_sort: "20260427"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/4aaebee4
-    audio_url: https://media.transistor.fm/4aaebee4/8b7ad5e3.mp3
-    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/4aaebee4/transcription.txt
-    transcript_type: text/plain
-    summary: "(02:02) - China Blocks Manus Sale\r
-
-      (03:38) - Zak Brown, an American motorsports executive and former professional racer, is the CEO of McLaren
-      Racing. In the conversation, he recounts his early passion for racing sparked by attending the 1981 Long Beach
-      Grand Prix, leading him to karting and eventually founding Just Marketing International, a motorsports marketing
-      agency. Brown emphasizes the importance of aligning corporate sponsorships with business objectives, fostering
-      partnerships that benefit both McLaren and its sponsors.\r
-
-      (34:03) - Will Hurd, a former CIA officer and U.S. Representative from Texas, discusses his upbringing in San
-      Antonio, his early interest in computer science, and his transition from the CIA to politics. He highlights his
-      role as president of Icon Prime, a division of the 3D-printing construction company Icon, focusing on building
-      military barracks and exploring construction solutions for space exploration. Hurd emphasizes the potential of 3D
-      printing to revolutionize construction by reducing costs and improving efficiency, aiming to address housing
-      shortages and enhance military infrastructure.\r
-
-      (01:00:12) - Anush Elangovan, Vice President of AI Software at AMD, joined the company through its acquisition of
-      Nod.ai, where he was co-founder and CEO. In the conversation, he discusses AMD's open-source approach to AI
-      software, emphasizing the integration of AI to enhance performance optimization and the importance of a unified
-      hardware and software strategy. He also highlights AMD's commitment to supporting developers by providing
-      seamless, heterogeneous runtimes and compilers, enabling efficient utilization of CPU, GPU, and NPU resources.\r
-
-      (01:18:19) - Augustus Doricko, CEO of Rainmaker Technology Corporation, discusses his company's pioneering efforts
-      in cloud seeding, highlighting their success in modifying weather patterns to produce precipitation in regions
-      like Oregon, Idaho, Utah, and the Middle East. He explains the process of cloud seeding, which involves
-      introducing materials into clouds to induce rainfall, and emphasizes the advancements in precision and reliability
-      achieved through their drone technology. Doricko also addresses public concerns about the safety of cloud seeding
-      agents, noting the company's shift towards using naturally occurring proteins as alternatives to traditional
-      chemicals like silver iodide.\r
-
-      (01:53:16) - 𝕏 Timeline Reactions\r
-
-      (02:28:59) - Rick Caruso is an American billionaire businessman and philanthropist, known for founding Caruso, one
-      of the largest privately held real estate companies in the U.S., and for his significant contributions to Los
-      Angeles' urban landscape. In the conversation, Caruso discusses his focus on family well-being, recent ventures
-      including expanding the Commons in Calabasas and acquiring a golf course, and his strategic push into markets
-      outside California due to challenges in the state's business environment. He emphasizes the importance of guest
-      experience in his developments, the role of feng shui in design, and his commitment to creating generational
-      wealth through local knowledge and disciplined investment.
 
 
       Follow TBPN: 
