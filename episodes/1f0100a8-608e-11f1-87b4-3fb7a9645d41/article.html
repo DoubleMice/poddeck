@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Mike Dudas Has Zero Exposure to ETH, but Is Bullish on Hyperliquid — PodDeck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+  header {
+    text-align: center;
+    padding: 40px 0 32px;
+    border-bottom: 2px solid #e8e8e8;
+    margin-bottom: 36px;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #777;
+  }
+  header .meta span {
+    margin: 0 8px;
+  }
+  .overview {
+    margin-bottom: 40px;
+  }
+  .overview h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  .topic-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 600px) {
+    .topic-cards { grid-template-columns: 1fr; }
+    header h1 { font-size: 22px; }
+  }
+  .topic-card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .tc-blue { background: #eff6ff; border-color: #3b82f6; }
+  .tc-green { background: #f0fdf4; border-color: #22c55e; }
+  .tc-purple { background: #faf5ff; border-color: #a855f7; }
+  .tc-orange { background: #fff7ed; border-color: #f97316; }
+  .tc-yellow { background: #fefce8; border-color: #eab308; }
+  .tc-red { background: #fef2f2; border-color: #ef4444; }
+  .topic-card strong { display: block; margin-bottom: 4px; color: #222; }
+  section {
+    margin-bottom: 36px;
+  }
+  section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #111;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  section p {
+    margin-bottom: 12px;
+    color: #333;
+  }
+  blockquote {
+    margin: 16px 0;
+    padding: 14px 18px;
+    background: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    font-size: 16px;
+    color: #1e3a5f;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-style: normal;
+    color: #888;
+  }
+  .gloss {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+  }
+  .highlight-box {
+    padding: 14px 18px;
+    border-radius: 6px;
+    border-left: 4px solid;
+    margin: 14px 0;
+    font-size: 15px;
+  }
+  .hb-blue { background: #eff6ff; border-color: #3b82f6; }
+  .hb-green { background: #f0fdf4; border-color: #22c55e; }
+  .hb-yellow { background: #fefce8; border-color: #eab308; }
+  .hb-red { background: #fef2f2; border-color: #ef4444; }
+  .hb-purple { background: #faf5ff; border-color: #a855f7; }
+  .quotes-section {
+    margin-top: 40px;
+  }
+  .quote-item {
+    padding: 14px 18px;
+    border-radius: 6px;
+    border-left: 4px solid;
+    margin-bottom: 12px;
+  }
+  .quote-item .q-text {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .quote-item .q-attr {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #888;
+    font-style: normal;
+  }
+  .qi-blue { background: #eff6ff; border-color: #3b82f6; }
+  .qi-green { background: #f0fdf4; border-color: #22c55e; }
+  .qi-purple { background: #faf5ff; border-color: #a855f7; }
+  .qi-yellow { background: #fefce8; border-color: #eab308; }
+  .qi-orange { background: #fff7ed; border-color: #f97316; }
+  .qi-red { background: #fef2f2; border-color: #ef4444; }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 14px 0;
+  }
+  @media (max-width: 600px) {
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 14px 0;
+  }
+  @media (max-width: 600px) {
+    .grid-3 { grid-template-columns: 1fr; }
+  }
+  .number-card {
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid;
+    text-align: center;
+    font-size: 14px;
+  }
+  .nc-green { background: #f0fdf4; border-color: #bbf7d0; }
+  .nc-blue { background: #eff6ff; border-color: #bfdbfe; }
+  .nc-purple { background: #faf5ff; border-color: #e9d5ff; }
+  .nc-orange { background: #fff7ed; border-color: #fed7aa; }
+  .nc-yellow { background: #fefce8; border-color: #fef08a; }
+  .nc-red { background: #fef2f2; border-color: #fecaca; }
+  .number-card .num {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 8px 0;
+    color: #111;
+  }
+  .number-card .label {
+    font-size: 12px;
+    color: #888;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+  }
+  footer a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Why Mike Dudas Has Zero Exposure to ETH,<br>but Is Bullish on Hyperliquid</h1>
+  <div class="meta">
+    嘉宾：Mike Dudas · 6th Man Ventures Founder<span>|</span>Unchained Podcast<span>|</span>2026-06
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <div class="topic-cards">
+    <div class="topic-card tc-blue"><strong>零 ETH 仓位</strong>一位加密 VC 完全不持有 ETH。他的理由是什么？</div>
+    <div class="topic-card tc-green"><strong>Hyperliquid 看多逻辑</strong>无 KYC 国际市场的价值模型 —— Tether vs Circle 的框架。</div>
+    <div class="topic-card tc-purple"><strong>L1 竞争真实图景</strong>ETH = IBM、Solana = 变化速度、HYPE = 全栈金融。</div>
+    <div class="topic-card tc-orange"><strong>Token 价值捕获机制</strong>程序化 vs 自由裁量，为什么这是估值的关键分野？</div>
+    <div class="topic-card tc-yellow"><strong>真实世界 Perps + AI Agent</strong>原油、Pre-IPO 股票上链。Agents 会取代人类交易者吗？</div>
+    <div class="topic-card tc-red"><strong>Crypto VC 正在变天</strong>成本骤降、人才流向 AI、大 VC 跨界扩张。</div>
+  </div>
+</div>
+
+<section>
+  <h2>无 KYC 市场：被西方低估的巨兽</h2>
+  <p>
+    Mike Dudas 的核心投资论点是：加密世界里，不需要 KYC 的国际市场是一条完全独立的巨大赛道，它的价值常常被西方投资者低估。这个市场的天花板不由美国监管决定，而由全球非美国用户的需求决定。
+  </p>
+  <blockquote>
+    "Look at Binance, by far the biggest exchange in the world, has never been able to have a successful U.S.-based business of any real scale."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    他用来理解这个市场的核心框架是 <strong>Tether vs Circle</strong>。Tether 服务的是无 KYC 的国际市场，市值巨大，支撑了 Tron 这样一条比很多更被炒作的 L1 更有价值的链。Circle 走的是美国合规路线，机构友好，但客户群完全不是同一个。
+  </p>
+  <blockquote>
+    "It's like Tether versus Circle. That's my base case."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    他认为 Hyperliquid 的定位就是国际市场的 Tether —— 美国合规版最多只是"unpriced potential upside"（未定价的潜在上行），而不是生存的必要前提。目前推动 Hyperliquid 流量的用户并不期待"明年美国公民能交易 50x 合约"。
+  </p>
+  <blockquote>
+    "Anything in crypto that's sort of like non-KYC or international market is really really significant in size."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>Hyperliquid：全栈金融的护城河</h2>
+  <p>
+    很多人把 Hyperliquid 看作又一个 Perps DEX，但 Mike 的视角完全不同。他把 Hyperliquid 定位为 <strong>"the house of all finance"</strong> —— 一条全栈协议，从订单簿到结算到前端全部自建。
+  </p>
+  <div class="grid-3">
+    <div class="number-card nc-blue">
+      <strong>团队规模</strong>
+      <div class="num">~20</div>
+      <div class="label">"sub-20 people" — 极其精简</div>
+    </div>
+    <div class="number-card nc-green">
+      <strong>架构</strong>
+      <div class="num" style="font-size:18px;">Full-Stack</div>
+      <div class="label">自有 L1 + 订单簿 + 前端</div>
+    </div>
+    <div class="number-card nc-purple">
+      <strong>执行方式</strong>
+      <div class="num" style="font-size:18px;">Heads-Down</div>
+      <div class="label">不提前透露路线图，像公司不像 DAO</div>
+    </div>
+  </div>
+  <p>
+    这与 Ethereum 和 Solana 的关键区别在于价值捕获方式。通用型 L1 的价值取决于上面构建的应用生态，而 Hyperliquid 作为垂直整合协议，大部分交易量走自己的前端，整个生态系统的价值都被捕获在 HYPE token 里。
+  </p>
+  <div class="highlight-box hb-yellow">
+    <strong>作者概括：</strong>ETH 和 Solana 的竞争者是"开发者选择在哪构建"，Hyperliquid 的竞争者是"交易者选择在哪交易"。这两类竞争逻辑根本不同。
+  </div>
+</section>
+
+<section>
+  <h2>97% 回购：为什么程序化价值捕获是一切</h2>
+  <p>
+    Mike 认为 Hyperliquid 最被低估的设计不是它的 L1 性能，而是它的 Token 经济模型。
+  </p>
+  <blockquote>
+    "97% of fees go back into buying back the token and theoretically long-term burning the tokens."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    他用两个标准衡量任何一个 Token：
+  </p>
+  <div class="grid-2">
+    <div class="highlight-box hb-blue">
+      <strong>① 程序化的价值捕获</strong><br><br>
+      "Having the mechanism for value accrual be programmatic is really, really important." 97% 的费用自动回购 HYPE，不能由团队任意决定。长期目标是销毁代币，通缩压力持续存在。
+    </div>
+    <div class="highlight-box hb-purple">
+      <strong>② 一致的叙事沟通</strong><br><br>
+      "Being consistent in communications." 不只是 whitepaper。是对投资者、质押者、建设者的持续承诺。市场对言行不一的团队会用脚投票。
+    </div>
+  </div>
+  <p>
+    Mike 强调，加密行业的默认假设是"不要信任建设者"。
+  </p>
+  <blockquote>
+    "This is an industry where the default is not to trust the people building the businesses. The pattern says that you're going to have a higher incident of fraud, abuse, grift, sketchiness than in traditional business markets."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    在这个前提下，任何可以被团队随意更改的机制都会被市场打折 —— 自由裁量权本身就是毒药。
+  </p>
+</section>
+
+<section>
+  <h2>Pump 案例：从自由裁量到程序化的转身</h2>
+  <p>
+    Mike 的投资组合公司 Pump 提供了一个价值捕获机制演化的真实教材。Pump 最初做的是 100% 自由裁量回购 —— 团队可以随时决定是否回购、回购多少。这在加密市场里带来了巨大的不确定性。
+  </p>
+  <p>
+    后来 Pump 做出了关键改变：将回购从自由裁量转为程序化，锁定一年，承诺协议收入的 50% 用于回购。这一步给了市场一个可信的信号 —— 团队在认真投资协议的未来。
+  </p>
+  <div class="highlight-box hb-green">
+    <strong>关键平衡：</strong>Mike 同时指出，100% 回购也不行 —— "you have to give people confidence that you're actually investing into the future growth of the business." 最健康的机制在回购和再投资之间取得平衡。Pump 在改回购机制的同时推出了新产品 PumpGo，证明团队确实在持续投资增长。
+  </div>
+</section>
+
+<section>
+  <h2>僵尸链：Cardano 的警示故事</h2>
+  <p>
+    这个框架的另一端是 Mike 所谓的"僵尸链" —— 代表案例是 Cardano。
+  </p>
+  <blockquote>
+    "These sort of zombie chains are finally getting shaken out."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    Cardano 的问题不是技术差，而是缺乏可持续的资金机制。Charles Hoskinson 个人非常富有，生态里很多人也赚了大钱，但协议本身 "seems to be underinvested in today"。
+  </p>
+  <p>
+    当一个协议的基金会只能通过持续抛售预挖代币来维持运营时，就陷入了恶性循环 —— 这正是 Ethereum 基金会也在面临的问题。Mike 认为，可持续的协议必须有手续费收入，不能只靠抛售初始分配。
+  </p>
+</section>
+
+<section>
+  <h2>Ethereum = IBM：一个精准的比喻</h2>
+  <p>
+    Mike 对 Ethereum 的概括可能是本期最精炼的一句话：
+  </p>
+  <blockquote>
+    "Ethereum kind of comes in and is sort of like the IBM where nobody's going to fire you for putting something on Ethereum."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    Ethereum 有 100% 的 uptime，是 "an unbeatable metric"。它的 track record 和机构信任无人能敌。但同时，它的区块时间慢、"this whole L2 situation"（L2 碎片化问题）、以及大量 TVL 实际上是多年前赚到的"存量资本"，这些都是真实的结构性问题。
+  </p>
+  <blockquote>
+    "A lot of what is cited as their advantages, like things like TVL, are like really legacy things — capital that's been there that people made money off being on Ethereum for many, many years ago."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    这也是 Mike 不持有 ETH 的核心原因：TVL 是旧钱，近 3-4 年的净新增活性 Solana 完胜 Ethereum。
+  </p>
+  <blockquote>
+    "The rate of change on Solana has been faster than Ethereum."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    但这不意味着 Solana 会替代 Ethereum。Mike 指出 BlackRock 会在两条链上都发行代币化基金 —— 两者正在从竞争对手变成互补的基础设施层。最终谁赢仍是 "anybody's guess"。
+  </p>
+</section>
+
+<section>
+  <h2>真实世界资产上链：加密的下一个增长引擎</h2>
+  <p>
+    Mike 认为加密市场最需要做的事就是 <strong>"bring interesting assets into the crypto markets"</strong>。而 Hyperliquid 被市场奖励，就是因为它在执行这个任务上表现最出色。
+  </p>
+  <blockquote>
+    "The bigger question for me is can they continue to add higher and higher quality assets to the platform, which is what's driven most of the growth over the last six to nine months."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    过去 6-9 个月，Hyperliquid 的增长几乎完全由新增资产驱动：
+  </p>
+  <div class="grid-3">
+    <div class="number-card nc-orange">
+      <strong>🛢️ 原油 Perps</strong>
+      <div class="num" style="font-size:16px;">周末定价</div>
+      <div class="label">伊朗战争事件推动周末交易，传统市场闭市时加密市场在定价</div>
+    </div>
+    <div class="number-card nc-purple">
+      <strong>📈 Pre-IPO 股票</strong>
+      <div class="num" style="font-size:16px;">价格发现</div>
+      <div class="label">未上市公司在 Hyperliquid 上获得实时定价，"just taken off"</div>
+    </div>
+    <div class="number-card nc-green">
+      <strong>🔮 HIP-4 预测市场</strong>
+      <div class="num" style="font-size:16px;">新赛道</div>
+      <div class="label">进入 Polymarket 的预测市场领域，扩大可交易资产边界</div>
+    </div>
+  </div>
+  <p>
+    更远的愿景是 Mike 提到的"计算市场" —— Hyperliquid 可能成为算力的交易场所，让计算能力像商品一样被定价和交易。
+  </p>
+  <blockquote>
+    "Bringing them to a place on chain where they can be traded 24/7, 365, at relatively low cost — no KYC plays a part here — the ability for folks to trade not with a centralized counterparty is a big deal."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>机构化：加密的下一个数量级</h2>
+  <p>
+    Mike 清醒地指出，尽管近期增长迅猛，这些链上交易平台距离机构级还很远。
+  </p>
+  <blockquote>
+    "These are still not major institutional venues by any means. If that does happen, this becomes really, really, really big."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    机构化才是加密市场的下一个数量级飞跃。当传统的对冲基金、资产管理公司开始把链上 Perps 当作真正的交易场所，当前的交易量将显得微不足道。
+  </p>
+  <p>
+    但机构入场需要时间 —— 更好的数据预言机、更鲁棒的定价机制、更成熟的合规框架。这既是 Hyperliquid 的机会（如果它能成为机构的默认选择），也是它的风险（如果机构选择了合规路线的替代品）。
+  </p>
+</section>
+
+<section>
+  <h2>加密 + AI：价值会在哪一层沉淀？</h2>
+  <p>
+    Mike 对 Crypto × AI 的看法比大多数叙事更务实，也更分层。他认为 agents 的交易量和策略复杂度将远超人类：
+  </p>
+  <blockquote>
+    "Agents are definitely going to transact more than humans at some point."
+    <span class="attr">— Mike Dudas</span>
+  </blockquote>
+  <p>
+    但问题不是"agents 会不会交易更多"，而是"谁能在 agents 的交易中捕获价值"。Mike 的分析分四层：
+  </p>
+  <div class="highlight-box hb-blue">
+    <strong>L1 协议层 ✅</strong> — Agents 对费用价格不敏感，高频交易会让 L1 费用收入飙升。Hyperliquid 有"really direct value capture model"，Solana 也会受益。"That's how these L1s are primarily going to be valued moving forward."
+  </div>
+  <div class="highlight-box hb-yellow">
+    <strong>DEX 应用层 ❓</strong> — "It's unclear that exchanges are going to be able to be differentiated in their value capture." 过往 DEX 的价值捕获表现平平，能否通过 agent 交易量翻身仍是未解之谜。
+  </div>
+  <div class="highlight-box hb-purple">
+    <strong>Frontend 界面层 ✅</strong> — "Where it's been clear that you can capture value is through front ends." Memecoin 时代，前端能抽 1% 以上 per trade。未来 AI 研究实验室 = 新型前端，帮用户执行复杂策略并收费。
+  </div>
+  <div class="highlight-box hb-red">
+    <strong>Agent Payments ❌</strong> — "The incumbents — the Visas, the Mastercards, the Stripes — are moving really, really, really rapidly and aggressively to capture the value there." 已有玩家拥有客户群、信任体系、风控算法，新进入者极难挑战。
+  </div>
+  <p>
+    这解释了为什么 Mike 更看好 agent × trading 而非 agent × payments。交易赛道有更大的差异化空间。
+  </p>
+</section>
+
+<section>
+  <h2>Crypto VC 的生存法则正在重写</h2>
+  <p>
+    在访谈的最后，Mike 分享了加密 VC 行业正在经历的三个根本性变化：
+  </p>
+  <div class="highlight-box hb-green">
+    <strong>启动成本骤降。</strong>"The cost to get started on something has dropped — you can hire fewer people to build to an MVP, because basically you have like all the world's developers available to you in Claude." AI 编程工具让非技术人员也能快速做出 MVP。Pre-seed 项目数量可能暴增，但 signal vs noise 的分辨变得前所未有的困难。VC 现在需要在更早期就看 traction 和用户证据。
+  </div>
+  <div class="highlight-box hb-yellow">
+    <strong>规模化加速，但可持续性仍是难题。</strong>"Very few multi-cycle long-duration businesses that stood the test of time." 经过三个应用层周期后，大部分跨周期活下来的项目都在 DeFi。可持续的用户行为和收入模型成为核心筛选标准。
+  </div>
+  <div class="highlight-box hb-purple">
+    <strong>人才和资本都在流向 AI。</strong>"Most of the world's venture dollars and private equity dollars is going into AI first companies. Anything outside of pure AI, it's somewhat capital starved." 加密 VC 自己也在跨界 —— Paradigm 的投资大量进入 AI 相邻领域，Framework 进军公开市场和 Better.com。Brian Armstrong 的副业（longevity firm）都能融到数亿美元。
+  </div>
+  <p>
+    但 Mike 并不悲观。他认为加密 VC 在经历了 15 年新资产类别的创造后，积累了真正的创新者和领域专业知识。这些人正在把自己的视野扩展到相邻行业，同时保留加密根基。这是一个独特的去中心化时刻 —— 最聪明的人正在把加密的思维方式应用到更广阔的世界。
+  </p>
+</section>
+
+<div class="quotes-section">
+  <h2 style="font-size:20px;font-weight:700;margin-bottom:16px;padding-bottom:6px;border-bottom:1px solid #e8e8e8;">核心金句</h2>
+
+  <div class="quote-item qi-blue">
+    <div class="q-text">"Ethereum kind of comes in and is sort of like the IBM where nobody's going to fire you for putting something on Ethereum."</div>
+    <div class="q-attr">— 对 ETH 最精炼的概括</div>
+  </div>
+
+  <div class="quote-item qi-green">
+    <div class="q-text">"Having the mechanism for value accrual be programmatic is really, really important."</div>
+    <div class="q-attr">— 估值的第一性原则</div>
+  </div>
+
+  <div class="quote-item qi-purple">
+    <div class="q-text">"The more high quality assets that we bring on chain, the more sort of all boats are lifted."</div>
+    <div class="q-attr">— 资产质量是上升潮水</div>
+  </div>
+
+  <div class="quote-item qi-yellow">
+    <div class="q-text">"Agents are definitely going to transact more than humans at some point."</div>
+    <div class="q-attr">— AI × Crypto 的核心赌注</div>
+  </div>
+
+  <div class="quote-item qi-orange">
+    <div class="q-text">"The cost to get started on something has dropped — you can hire fewer people to build to an MVP, because basically you have like all the world's developers available to you in Claude."</div>
+    <div class="q-attr">— VC 行业的底层重构</div>
+  </div>
+
+  <div class="quote-item qi-red">
+    <div class="q-text">"These are still not major institutional venues by any means. If that does happen, this becomes really, really, really big."</div>
+    <div class="q-attr">— 机构化 = 加密的下一个数量级</div>
+  </div>
+</div>
+
+<footer>
+  <p>完整采访来源：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4329236877.mp3">Unchained Podcast — Why Mike Dudas Has Zero Exposure to ETH, but Is Bullish on Hyperliquid</a></p>
+  <p style="margin-top:8px;">本文由 PodDeck 自动生成 · 2026-06 · 所有引言均在 transcript 中可验证</p>
+</footer>
+
+</div>
+</body>
+</html>

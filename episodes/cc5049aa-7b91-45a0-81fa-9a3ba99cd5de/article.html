@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Karp LIVE from AIPCon 10 — Palantir CEO 论 Token Maxing、国有化风险与企业 AI 的真正公式</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #f8f9fa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+    min-height: 100vh;
+  }
+  @media (max-width: 600px) {
+    article { padding: 32px 16px 48px; }
+    body { font-size: 16px; }
+  }
+  h1 { font-size: 1.8em; line-height: 1.3; margin-bottom: 8px; color: #111; }
+  h2 { font-size: 1.35em; margin: 40px 0 16px; color: #1a1a2e; border-bottom: 2px solid #e9ecef; padding-bottom: 8px; }
+  h3 { font-size: 1.1em; margin: 24px 0 12px; color: #333; }
+  p { margin: 0 0 16px; }
+  .meta { font-size: 0.9em; color: #868e96; margin: 12px 0 32px; }
+  .meta span { margin-right: 16px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 32px; }
+  @media (max-width: 500px) { .cards { grid-template-columns: 1fr; } }
+  .card { padding: 16px; border-radius: 8px; font-size: 0.92em; line-height: 1.55; }
+  .card strong { display: block; margin-bottom: 4px; font-size: 0.98em; }
+  .card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .card-blue { background: #f0f6ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #f4fce6; border-left: 4px solid #2f9e44; }
+  .card-purple { background: #f8f0ff; border-left: 4px solid #862e9c; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: #f0f6ff;
+    border-left: 4px solid #1971c2;
+    font-style: italic;
+    color: #333;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.95em;
+    line-height: 1.65;
+  }
+  blockquote .attr { display: block; margin-top: 8px; font-size: 0.85em; font-style: normal; color: #868e96; }
+  .quote-section { margin: 32px 0; }
+  .quote-item { padding: 16px 20px; margin: 12px 0; border-radius: 0 6px 6px 0; font-style: italic; line-height: 1.6; font-size: 0.95em; }
+  .quote-item .attr { display: block; margin-top: 8px; font-size: 0.85em; font-style: normal; color: inherit; opacity: 0.7; }
+  .qi-blue { background: #f0f6ff; border-left: 4px solid #1971c2; }
+  .qi-green { background: #f4fce6; border-left: 4px solid #2f9e44; }
+  .qi-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .qi-purple { background: #f8f0ff; border-left: 4px solid #862e9c; }
+  .qi-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .qi-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .gloss { font-style: normal; color: #868e96; }
+  .gloss::before { content: "作者概括: "; font-weight: 600; }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e9ecef; font-size: 0.85em; color: #868e96; }
+  footer a { color: #1971c2; }
+  .highlight { background: linear-gradient(180deg, transparent 60%, #ffec99 60%); }
+</style>
+</head>
+<body>
+<article>
+
+<h1>🔴 Alex Karp LIVE from AIPCon 10</h1>
+<div class="meta">
+  <span>🎙️ TBPN</span>
+  <span>👥 Alex Karp, Peter Zaffino, Chad Wahlquist, Sam Berry</span>
+  <span>📅 2026年6月</span>
+  <span>⏱️ 1h50m</span>
+</div>
+
+<h2>为什么这期值得看</h2>
+
+<p>这期 TBPN 在 Palantir AIPCon 10 现场录制，是一次罕见的"四重奏"对谈。<span class="highlight">Palantir CEO Alex Karp 火力全开</span>——从 Token Maxing 的"手淫"问题，到 AI 行业正在梦游进入的国有化深渊；从"品味+资本"的核心公式，到为什么前沿 AI 公司在企业客户面前"超级不 charismatic"。</p>
+
+<p>接着是 <span class="highlight">AIG CEO Peter Zaffino</span> 讲述一家百年保险巨头如何与 Palantir 合作，在 4 天内完成对一笔 $20 亿收购组合的本体论建模。然后是 <span class="highlight">Palantir 前向部署架构师 Chad Wahlquist</span> 的深度技术视角——多重代理互相对抗、可塑软件、"杀死所有仪表盘"。最后 <span class="highlight">USDA 的 Sam Berry</span> 揭示了美国农业部远超想象的版图：从 $1000 亿 SNAP 食品安全网到新世界螺旋虫危机，再到农田与数据中心的土地争夺。</p>
+
+<div class="cards">
+  <div class="card card-red">
+    <strong>🚩 Token "手淫" 问题</strong>
+    Alex Karp 直言企业花大钱狂刷 token 却毫无产出，并揭露 Palantir 内部如何帮助客户"戒断"。
+  </div>
+  <div class="card card-blue">
+    <strong>🎯 "品味 + 资本"公式</strong>
+    AI 可以无限规模化，但无法规模化"什么是真正值得解决的商业问题"——这是 Palantir 20 年积累的核心壁垒。
+  </div>
+  <div class="card card-green">
+    <strong>🏗️ 本体论实战：4天吞并 $20亿</strong>
+    AIG CEO Peter Zaffino 讲述如何用 Palantir 在 4 天内完成对 Everest 收购组合的本体论建模。
+  </div>
+  <div class="card card-purple">
+    <strong>🌽 USDA 比你以为的大 100 倍</strong>
+    SNAP $1000亿/年、林业局、农村发展——Sam Berry 揭示一个部门的真实规模与技术挑战。
+  </div>
+  <div class="card card-yellow">
+    <strong>📊 "杀死所有仪表盘"</strong>
+    Palantir FDE Chad Wahlquist：KPI 应该是运营应用的副产品，而非目标本身。
+  </div>
+  <div class="card card-orange">
+    <strong>⚠️ 国有化警告</strong>
+    Karp 花六个月试图警告 AI 巨头们——如果不改变叙事，国有化将不可避免。
+  </div>
+</div>
+
+<h2>1. Token Maxing：企业 AI 的"手淫"问题</h2>
+
+<p>Karp 开场就用了一个极其直白的比喻：企业花大钱购买 AI 能力，但员工的行为像"色情成瘾"——<span class="highlight">坐在那里整天刷 token，生成没人看的仪表盘和分类标签</span>，自我感觉良好，但没有任何实际产出。</p>
+
+<blockquote>
+  "People are just sitting there all day kind of like a porn addiction, and enterprises are like, okay, we knew this, we believe this will create value, but we cannot have people just..."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>Palantir 内部有一个被称为"戒手淫工具"的产品——帮助客户识别哪些 token 消费真正产生价值，哪些只是"看着像在做事的工具体验"（Tool Shaped Objects）。</p>
+
+<blockquote>
+  "They are not happy. They do not like these people. They're tired of people token maxing. It looks like masturbation at their cost."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>Karp 进一步指出，LLM 的"魔法"让人产生<span class="highlight">生产性错觉</span>——给每封邮件打标签、检查天气、多做一个 dashboard，感觉像在工作，但实际在"重排泰坦尼克号甲板上的椅子"。更危险的是，投资人追捧"刷出最多 token 的公司"，前沿模型公司有估值激励去鼓励消费——形成了一种系统性的浪费文化。</p>
+
+<h2>2. 品味 + 资本：AI 无法规模化的一件事</h2>
+
+<p>Karp 的核心公式极其简洁：</p>
+
+<blockquote>
+  "It's taste plus money."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>AI 的所有环节——token 消耗、代码部署、本体论构建——都可以被规模化，但有一个东西无法被商品化：<span class="highlight">品味</span>。什么是真正值得解决的商业问题？什么是客户愿意为之付费的痛点？什么问题是"听起来对但不值得做"的？这需要经验、判断力，以及对"两个听起来都很怪的人中，谁说的是真洞察"的辨别力。</p>
+
+<p>Karp 指出，LLM 虽然强大，但不能替代深层业务理解：</p>
+
+<blockquote>
+  "These things require actual, precise, ongoing processes. They are enhanced by large language models. They are not replaced by large language models."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>石油钻井的合规与成本优化、军事供应链的改造、汽车制造的流程管理——这些依赖于精确的、持续演进的、有本体论支撑的知识体系。LLM 可以加速这一切，但不能替代。"如果没有 LLM"，Karp 说，"没人会谈论我们的本体论、Apollo 管理安全漏洞、我们的部署代码。我们爱这些模型——因为它们让每个公司都想部署代码。你知道怎么部署代码吗？迁移到 Palantir 上。"</p>
+
+<p class="gloss">Karp 的"品味"概念本质上是一种战略判断力——识别出哪些商业问题值得用 AI 去解决，哪些不值得。这不是技术问题，而是组织积累的知识资本。Palantir 花了 20 年积累这种品味——通过前向部署工程师的实地实践、通过与客户共同进化的 90 天迭代周期、通过构建跨越数百家企业的本体论网络。</p>
+
+<h2>3. Palantir 的代码哲学：三种形态</h2>
+
+<p>Karp 将代码分为三种截然不同的形态，每种对 AI 的依赖程度完全不同：</p>
+
+<p><strong>Free Code（自由代码）—— LLM 的魔法</strong>：仪表盘、一次性财务分析、概率性的工作。快速、几乎正确、不需要精确。"It's magical. And by the way, it's not only creates and it's magical... it's also addicting. It's like, you know it's not good for you, but it may lead to damage."</p>
+
+<p><strong>FDE-Managed Code（FDE 管理的代码）</strong>：前向部署工程师引导下编写的代码，在 Palantir 产品中受管理。不是随机的人乱写——"这就是 FDE 模式的秘密，它实际上是在一个产品中管理的。你是在向一个代码库写入，我们在管理它，我们在增强我们的产品。"</p>
+
+<p><strong>Primitives（原语）—— 基础设施"钢梁"</strong>：硬编码的底层结构，理解世界的运作方式。乌克兰军队在用，国防部在用。"It would take millions of technical hours and an understanding of all these enterprises to do it. It's much more like how do you build a steel beam?"</p>
+
+<h2>4. "我们有两面，他们只有一面"</h2>
+
+<p>在对谈中最具洞察力的一段中，Karp 比较了 Palantir 与前沿 AI 公司的品牌处境：</p>
+
+<blockquote>
+  "We're polarizing, which means both sides. These people have one side."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>Palantir 有人爱有人恨——<span class="highlight">每天有 500 万人醒来后就骂 Karp 是撒旦</span>，但也有同样多的人把 Palantir 当作救星。"我们有粉丝和敌人。"而前沿 AI 公司只有一面：被所有人不喜欢。</p>
+
+<p>"这就像社交媒体公司一样，"Karp 说，"人人都在用，但没有人喜欢他们。" 当一个品牌只有一面倒的负面印象时，监管者没有任何政治阻力去限制你，客户在"偷偷"用你的产品但不想公开表示支持，你没有任何可以动员的群众基础。</p>
+
+<p>Karp 的销售策略出奇地简单：</p>
+
+<blockquote>
+  "I have a secret. Every company has a secret way of selling. You know what my secret way of selling is? Don't even call us. Go spend two days with a frontier company. And if you're lucky, after you're done, I'll let you in my door."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>让竞争对手用他们的"不讨喜"来教育市场——然后客户主动来找 Palantir 解决实际问题。这是在品牌劣势中找到的竞争策略。</p>
+
+<h2>5. AI 作为一种宗教——魅力与危险</h2>
+
+<p>Karp 观察到了一个深层的社会心理现象：</p>
+
+<blockquote>
+  "In certain circles... essentially, it's a religion... one of the things that's very charismatic, especially to people who've never had a religion, because all of a sudden that hole in your heart that was yearning for... a established religion, Judaism, Christianity, Islam is like being filled. And all the answers are there."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>AI 对于一些人来说填补了信仰真空——它提供了一种完整的、自洽的世界解释体系。这在投资人面前极其有效（"前沿公司对投资人来说非常 charismatic"），但在企业客户和普通人面前却适得其反——"他们对企业客户和普通人超级不 charismatic"。</p>
+
+<p class="gloss">Karp 的"AI 即宗教"比喻捕捉到了一个关键动态：当一种技术被赋予准宗教地位时，它的信徒会表现出强烈的传教冲动和不容质疑的确定感——但在那些"不信教"的人看来，这恰好是令人疏远的精英主义。</p>
+
+<h2>6. 国有化：六个月的警告</h2>
+
+<p>Karp 花了整整六个月，反复给 AI 行业的"巨头"们打电话传递同一个信息：</p>
+
+<blockquote>
+  "We're going to be nationalized. And they're like, why would anyone nationalize? It never happened in America... We're so likable."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>这些公司觉得"我们在创造这么多价值，谁会国有化我们？"——但 Karp 指出，这不是关于你有多"likable"，而是关于政治动量已经站在了国有化那一边。</p>
+
+<blockquote>
+  "Before nationalized, it's gonna be regulated by people who don't understand this. And the momentum on this is on the side of people who are nationalized."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>在国有化之前，先来的是由"不了解 AI 的人"制定的监管。Karp 呼吁中间派"不再梦游"——这是在技术扩散速度远超制度治理速度的时代里，最清醒的警告之一。</p>
+
+<h2>7. 裁员叙事是政治自杀</h2>
+
+<p>当 Fortune 500 CEO 们公开宣称"AI 让我们裁掉 2/3 的员工"时，Karp 的回应毫不留情：</p>
+
+<blockquote>
+  "If you run around saying AI allowed you to fire two thirds of your workforce, you did it because maybe your competitor's kicking your ass. You might as well just go sign up for Bernie Sanders' manifesto."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>Karp 的观点是：<span class="highlight">裁员的公司通常是因为竞争力下降，但把 AI 当成了遮羞布</span>。这种叙事在政治上极其危险——它给了监管者最好的弹药。</p>
+
+<p>他的替代方案：</p>
+
+<blockquote>
+  "If you upscale somebody, they're more valuable."
+  <span class="attr">— Alex Karp</span>
+</blockquote>
+
+<p>战场上最底层的士兵——高中学历、受过职业训练——现在都在操作 Palantir 产品，"他们变得更有价值了"。不是只让精英更强，而是让每个层级的从业者都能借助 AI 提升自己的能力。AIG CEO Peter Zaffino 也呼应了这个观点：<span class="highlight">"Our aspiration is not to implement AI or anything that we're doing with our partners to eliminate jobs. It's about growth, reskilling, and finding ways in different markets to have exponential growth."</span></p>
+
+<h2>8. 本体论在实战：AIG 如何在 4 天内吞下 $20 亿</h2>
+
+<p>AIG CEO Peter Zaffino 分享了一个令人震惊的数据点：当 AIG 准备收购 Everest（约 $20 亿保费组合）时，传统方法意味着数月的数据整合——数据湖、清洗、建模、集成。</p>
+
+<blockquote>
+  "We got Palantir in to work with our team. We could build an ontology of Everest's portfolio on top of ours in four days."
+  <span class="attr">— Peter Zaffino</span>
+</blockquote>
+
+<p>这之所以可能，是因为 AIG 已经建立了自己的企业本体论——业务的数字孪生。收购变成了"配置"而非"迁移"：在已有模型上叠加新的数据层，而不是从零开始。</p>
+
+<p>更重要的是，这改变了 AIG 对数据基础设施的思考方式：</p>
+
+<blockquote>
+  "All of a sudden, repositories and the central places of getting data and making sure it's scrubbed wasn't as relevant."
+  <span class="attr">— Peter Zaffino</span>
+</blockquote>
+
+<p>当你可以直接从管理系统构建本体论时，传统数据仓库的中心化地位大幅降低。</p>
+
+<p>Zaffino 还分享了与 Palantir 合作的运营模式：<span class="highlight">90 天迭代</span>。"一年或两年的规划太僵化了。我们实际上把关系建立在 90 天目标上。这非常有效。" 数据摄取从数周压缩到数小时，从 Binary AI 进化到 Agentic AI——代理可以自主运作更长的时间——而 Palantir 工程师直接嵌入 AIG 业务团队，一边是业务领导、一边是技术团队、一边是变革管理人员。</p>
+
+<h2>9. Chad Wahlquist：前向部署的哲学</h2>
+
+<p>Palantir 的前向部署架构师（FDE）文化是公司最独特的组织创新之一。Wahlquist 如此描述：</p>
+
+<blockquote>
+  "I do what is needed. And so doing the needful is kind of the Palantir way. Like, there's no job below me."
+  <span class="attr">— Chad Wahlquist</span>
+</blockquote>
+
+<p>FDE 不是传统的顾问——他们是嵌入式的"拆解者"：理解一个组织的实际运作方式，不是 HR 系统里的职位描述，而是"Steve 实际干的事完全不在任何系统里记录"。</p>
+
+<p>但最令人惊讶的是，Wahlquist 认为 <span class="highlight">AI 正在进入"拆解"这个领域</span>——通过多重代理互相对抗：</p>
+
+<blockquote>
+  "We are actually building out that world view and then running multiple agents over this actually being combative towards each other. And so actually working against each other and having critiques."
+  <span class="attr">— Chad Wahlquist</span>
+</blockquote>
+
+<p>多个 AI 代理互相攻击对方的结论，找出逻辑漏洞，然后人类来做最终判断。这不是取代 FDE——而是给他们更强的"权力工具"。"当你给木匠权力工具时，木匠没有变少，而是变多了。我能用它们做更多。"</p>
+
+<p>Wahlquist 对传统企业软件的批评同样尖锐：<span class="highlight">"企业软件会强迫你进入它的盒子。"</span> 大多数软件要求你适应它的逻辑——40 种做采购订单的方式？不行，你必须统一。但这恰恰抹杀了企业的"秘方"。Palantir 的答案是 <strong>可塑软件（Malleable Software）</strong>："我们如何帮你变得更不同，而不是更相似？"</p>
+
+<h2>10. "我想杀死所有仪表盘"</h2>
+
+<p>Wahlquist 最激进的主张：</p>
+
+<blockquote>
+  "I wanna kill all dashboards. KPIs and dashboards should be a byproduct of operational applications where I'm making decisions."
+  <span class="attr">— Chad Wahlquist</span>
+</blockquote>
+
+<p>大多数仪表盘就像 1989 年电影《梦幻之地》里的棒球场——你建了它，但没有人来。Wahlquist 指出，"如果你以建仪表盘为目标，那就是又一个'梦幻之地'——没人来。"</p>
+
+<p>指标必须嵌入到你实际做决策的应用中。他还指出，1996 年 Kimball 和维度建模——为扩展数据库而设计的方法——在 2026 年仍在被使用。"世界不是用行和列运作的。你需要复杂的东西来建模世界的真实运作方式。" 一个语义对象可能同时包含 CAD 文件、图像、CV 模型和表格数据——<span class="highlight">本体论可以处理所有这些，而不是把它们分散到 MongoDB、SQL 数据库和 S3 桶中</span>。</p>
+
+<p>Wahlquist 还介绍了 Palantir 的 <strong>Evolve 工具</strong>：通过分析生产日志，自动找出模型替换、缓存、本体论优化和 Prompt Tuning 的机会——"客户在两天内通过重新架构、更换模型和 Prompt Tuning 消除了 60% 的 Token 成本。"</p>
+
+<p>最令人惊讶的发现之一：<span class="highlight">大多数公司不知道自己怎么赚钱</span>。"不管是 $1 亿还是 $500 亿的公司，我多少次看到他们不理解自己在细粒度上怎么赚钱。他们通常在推销利润最低的产品，真正的利润引擎被 KPI 的'花生酱涂抹'效应掩盖了。"</p>
+
+<h2>11. USDA：国家的秘密武器</h2>
+
+<p>Sam Berry 的出场彻底打破了人们对美国农业部的刻板印象。USDA 远不止"给牛奶评级"：</p>
+
+<ul style="margin: 12px 0 16px 20px; line-height: 1.8;">
+  <li><strong>SNAP（食品券）</strong>：$1000 亿/年的联邦项目——资金来源是联邦，但由 50 个州分别管理</li>
+  <li><strong>林业局（Forest Service）</strong>：管理国家森林——居然属于 USDA，不是内政部</li>
+  <li><strong>农村发展（Rural Development）</strong>：实际上是一个银行，提供低息贷款</li>
+  <li><strong>FPAC</strong>：面向农场主——面积报告、农场项目</li>
+  <li><strong>食品安全检验</strong>：肉类、奶制品的检验体系</li>
+  <li><strong>科研体系</strong>：大型实验室网络，GMO 研究、害虫防治</li>
+  <li><strong>薪资处理</strong>：USDA 为 60 万联邦雇员发放薪资</li>
+</ul>
+
+<h2>12. SNAP 的 $120 亿漏洞</h2>
+
+<p>USDA 最紧迫的技术挑战之一：SNAP 欺诈。官方审计估算约 <strong>12% 的不当支付</strong>——对于一个 $1000 亿的项目来说，这意味着<span class="highlight">每年约 $120 亿的流失</span>。</p>
+
+<blockquote>
+  "That's money that could actually be going towards the intent of the program — which is to provide food to people that otherwise wouldn't be able to get it."
+  <span class="attr">— Sam Berry</span>
+</blockquote>
+
+<p>挑战在于数据获取：SNAP 由 50 个州分别管理，各州系统参差不齐，有些州直接不配合。Berry 的愿景是实现类似信用卡反欺诈的实时检测——"如果有人用你的卡做了一笔不认识的交易，你的卡立即被关停。我们想达到那个自信度。"</p>
+
+<p>Berry 还暗示问题的严重性远超一般认知：<span class="highlight">"SNAP 被用来资助国际犯罪组织和恐怖组织"</span>——这是一个系统性的、远超个人欺诈的漏洞。</p>
+
+<h2>13. 粮食即武器：地缘政治中被低估的维度</h2>
+
+<p>Berry 揭示了一个在科技圈几乎不被讨论的事实：</p>
+
+<blockquote>
+  "In warfare, agriculture, the food supply is usually hit before anything like kinetic even happens — before even the world knows that it's warfare."
+  <span class="attr">— Sam Berry</span>
+</blockquote>
+
+<p>粮食供应链的攻击往往发生在传统军事行动之前——而且可以隐蔽地进行。美国的巨大地缘政治优势之一：<span class="highlight">"我们能够自己养活自己。大多数国家做不到。"</span>中国只能"勉强"自给。GMO——尽管 Berry 个人回避——在战略层面是至关重要的："如果我们遭遇某种不利事件，需要创造出能在干旱中存活的玉米，我们有科学和研究能力做到。这是巨大的地缘政治优势。"</p>
+
+<p>当前 USDA 正在应对的实际危机：<span class="highlight">新世界螺旋虫</span>（New World Screwworm），一种食肉寄生虫，正从墨西哥向美国蔓延。USDA 正在建立实验室，通过培育和释放不育蝇来控制传播——"用生物学对抗生物学"的经典案例。</p>
+
+<h2>14. 农田 vs. 数据中心：土地争夺战</h2>
+
+<p>Berry 提出了一个正在实体化的问题：美国大量优质农田正在被转为数据中心用地——而 30 英里外就是底特律和 Flint 这样的工业衰退区，明明有现成的棕地和基础设施。</p>
+
+<blockquote>
+  "It's very confusing to me why we wouldn't be putting these data centers in their struggling areas. Instead, it's taking these small townships and plopping them in the middle."
+  <span class="attr">— Sam Berry</span>
+</blockquote>
+
+<p>他的长期解决方案：<span class="highlight">把数据中心放进太空</span>。"这完全是由 Elon 领导的。" USDA 正在寻求与 SpaceX 在技术和理念层面的合作——"我们确实关心土地保护，把数据中心放进太空非常有道理。"</p>
+
+<p>Berry 还预测了一个更广泛的趋势——<span class="highlight">数据主权的回归</span>："大家开始意识到'我的数据在 AWS 上'实际上意味着什么。会有一个回归'关心数据在哪里'的文化转变。" 他想象未来的数据中心像本地咖啡馆一样——"一个符合你价值观的地方，数据就在那，不跨全球分布。"</p>
+
+<p>最后，Berry 分享了一个令人忍俊不禁的"主框架"故事：USDA 为 60 万联邦雇员发工资的系统被描述成一个"有个性"的古老机器——"你不能以错误的方式碰它"。但当 Berry 最终去参观时，发现那是一台"五年前的、全新的 IBM 服务器"。"没有磁带，不是一群人围着它。" 技术的"神秘面纱"有时只是代际间的信息不对称。</p>
+
+<h2>核心金句</h2>
+
+<div class="quote-section">
+  <div class="quote-item qi-blue">
+    "It's taste plus money. AI can be scaled in a very valuable but largely going to commodified way, but you can't scale the taste of what is the business problem you want to solve."
+    <span class="attr">— Alex Karp，论企业 AI 的核心公式</span>
+  </div>
+  <div class="quote-item qi-green">
+    "These things require actual, precise, ongoing processes. They are enhanced by large language models. They are not replaced by large language models."
+    <span class="attr">— Alex Karp，LLM 的边界</span>
+  </div>
+  <div class="quote-item qi-yellow">
+    "We could build an ontology of Everest's portfolio on top of ours in four days."
+    <span class="attr">— Peter Zaffino，本体论让 $20亿收购组合在 4 天内完成建模</span>
+  </div>
+  <div class="quote-item qi-purple">
+    "I wanna kill all dashboards. KPIs and dashboards should be a byproduct of operational applications where I'm making decisions."
+    <span class="attr">— Chad Wahlquist，仪表盘应该是副产品</span>
+  </div>
+  <div class="quote-item qi-red">
+    "Before nationalized, it's gonna be regulated by people who don't understand this. And the momentum on this is on the side of people who are nationalized."
+    <span class="attr">— Alex Karp，对 AI 行业国有化风险的警告</span>
+  </div>
+  <div class="quote-item qi-orange">
+    "In warfare, agriculture, the food supply is usually hit before anything like kinetic even happens — before even the world knows that it's warfare."
+    <span class="attr">— Sam Berry，粮食安全的地缘政治维度</span>
+  </div>
+</div>
+
+<footer>
+  <p>🎙️ 来源：<a href="https://share.transistor.fm/s/47c63ce6">TBPN — 🔴 Alex Karp LIVE from AIPCon 10</a></p>
+  <p>📅 录制于 Palantir AIPCon 10 · 2026年6月</p>
+  <p>🏷️ Palantir · AIG · USDA · Enterprise AI · Ontology · Token Maxing · Nationalization</p>
+</footer>
+
+</article>
+</body>
+</html>

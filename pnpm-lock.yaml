@@ -165,6 +165,22 @@ importers:
         specifier: ^1.59.1
         version: 1.59.1
 
+  episodes/1f0100a8-608e-11f1-87b4-3fb7a9645d41:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.14.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.32)(magicast@0.5.2)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.9)(tsx@4.21.0)
+      slidev-addon-excalidraw:
+        specifier: ^1.1.0
+        version: 1.1.0
+      slidev-theme-academic:
+        specifier: ^2.1.0
+        version: 2.1.0(postcss@8.5.9)(rollup@4.60.1)(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.60.0
+        version: 1.60.0
+
   episodes/2667f251-0189-4d44-bdee-7b47d1af1a44:
     dependencies:
       '@slidev/cli':
@@ -324,6 +340,22 @@ importers:
       playwright-chromium:
         specifier: ^1.59.1
         version: 1.59.1
+
+  episodes/69e4e6951d989496e7fecc7b:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.14.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.32)(magicast@0.5.2)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.9)(tsx@4.21.0)
+      slidev-addon-excalidraw:
+        specifier: ^1.1.0
+        version: 1.1.0
+      slidev-theme-academic:
+        specifier: ^2.1.0
+        version: 2.1.0(postcss@8.5.9)(rollup@4.60.1)(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.59.1
+        version: 1.60.0
 
   episodes/69eae15a1e94ae692107cc50:
     dependencies:
@@ -693,6 +725,22 @@ importers:
         specifier: ^1.59.1
         version: 1.59.1
 
+  episodes/SOAPBOX108:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.14.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.32)(magicast@0.5.2)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.9)(tsx@4.21.0)
+      slidev-addon-excalidraw:
+        specifier: ^1.1.0
+        version: 1.1.0
+      slidev-theme-academic:
+        specifier: ^2.1.0
+        version: 2.1.0(postcss@8.5.9)(rollup@4.60.1)(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.59.1
+        version: 1.59.1
+
   episodes/Tmw2dW0a9DY:
     dependencies:
       '@slidev/cli':
@@ -932,6 +980,22 @@ importers:
       playwright-chromium:
         specifier: ^1.59.1
         version: 1.59.1
+
+  episodes/cc5049aa-7b91-45a0-81fa-9a3ba99cd5de:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.14.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.32)(magicast@0.5.2)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.9)(tsx@4.21.0)
+      slidev-addon-excalidraw:
+        specifier: ^1.1.0
+        version: 1.1.0
+      slidev-theme-academic:
+        specifier: ^2.1.0
+        version: 2.1.0(postcss@8.5.9)(rollup@4.60.1)(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.59.1
+        version: 1.60.0
 
   episodes/ce9a48cf-6df1-4dd0-97e8-e26a299d47d6:
     dependencies:
@@ -4344,8 +4408,18 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
+  playwright-chromium@1.60.0:
+    resolution: {integrity: sha512-xxz9pc2HIxQW/Qg9ijG2fZOHRT//KhLo0KfvJRa45YYRrcA7ZONoilgJR40SW5pmecb6HkuROaeViXoCaXTZyQ==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   playwright-core@1.59.1:
     resolution: {integrity: sha512-HBV/RJg81z5BiiZ9yPzIiClYV/QMsDCKUyogwH9p3MCP6IYjUFu/MActgYAvK0oWyV9NlwM3GLBjADyWgydVyg==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  playwright-core@1.60.0:
+    resolution: {integrity: sha512-9bW6zvX/m0lEbgTKJ6YppOKx8H3VOPBMOCFh2irXFOT4BbHgrx5hPjwJYLT40Lu+4qtD36qKc/Hn56StUW57IA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -6432,6 +6506,111 @@ snapshots:
       yargs: 18.0.0
     optionalDependencies:
       playwright-chromium: 1.59.1
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+      - '@nuxt/kit'
+      - '@pinia/colada'
+      - '@svgr/core'
+      - '@svgx/core'
+      - '@types/markdown-it'
+      - '@types/node'
+      - '@unocss/astro'
+      - '@unocss/postcss'
+      - '@unocss/webpack'
+      - '@vue/compiler-sfc'
+      - less
+      - lightningcss
+      - magicast
+      - markdown-it
+      - markdown-it-async
+      - pinia
+      - postcss
+      - react
+      - sass
+      - sass-embedded
+      - solid-js
+      - stylus
+      - sugarss
+      - supports-color
+      - svelte
+      - terser
+      - tsx
+
+  '@slidev/cli@52.14.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.32)(magicast@0.5.2)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.9)(tsx@4.21.0)':
+    dependencies:
+      '@antfu/ni': 28.3.0
+      '@antfu/utils': 9.3.0
+      '@comark/markdown-it': 0.3.3(@types/markdown-it@14.1.2)(markdown-it@14.1.1)
+      '@iconify-json/carbon': 1.2.20
+      '@iconify-json/ph': 1.2.2
+      '@iconify-json/svg-spinners': 1.2.4
+      '@lillallol/outline-pdf': 4.0.0
+      '@shikijs/markdown-it': 4.0.2
+      '@shikijs/twoslash': 4.0.2(typescript@5.9.3)
+      '@shikijs/vitepress-twoslash': 4.0.2(@nuxt/kit@3.21.2(magicast@0.5.2))(typescript@5.9.3)
+      '@slidev/client': 52.14.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.32)(magicast@0.5.2)(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      '@slidev/parser': 52.14.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.32)(typescript@5.9.3)(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      '@slidev/types': 52.14.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.32)(typescript@5.9.3)(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      '@unocss/extractor-mdc': 66.6.8
+      '@unocss/reset': 66.6.8
+      '@vitejs/plugin-vue': 6.0.5(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))(vue@3.5.32(typescript@5.9.3))
+      '@vitejs/plugin-vue-jsx': 5.1.5(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))(vue@3.5.32(typescript@5.9.3))
+      ansis: 4.2.0
+      chokidar: 5.0.0
+      cli-progress: 3.12.0
+      connect: 3.7.0
+      fast-deep-equal: 3.1.3
+      fast-glob: 3.3.3
+      get-port-please: 3.2.0
+      global-directory: 5.0.0
+      htmlparser2: 10.1.0
+      is-installed-globally: 1.0.0
+      jiti: 2.6.1
+      katex: 0.16.45
+      local-pkg: 1.1.2
+      lz-string: 1.5.0
+      magic-string: 0.30.21
+      magic-string-stack: 1.1.0
+      markdown-exit: 1.0.0-beta.9
+      markdown-it-footnote: 4.0.0
+      mlly: 1.8.2
+      monaco-editor: 0.55.1
+      obug: 2.1.1
+      open: 11.0.0
+      pdf-lib: 1.17.1
+      picomatch: 4.0.4
+      plantuml-encoder: 1.4.0
+      postcss-nested: 7.0.2(postcss@8.5.9)
+      pptxgenjs: 4.0.1
+      prompts: 2.4.2
+      public-ip: 8.0.0
+      resolve-from: 5.0.0
+      resolve-global: 2.0.0
+      semver: 7.7.4
+      shiki: 4.0.2
+      shiki-magic-move: 1.3.0(shiki@4.0.2)(vue@3.5.32(typescript@5.9.3))
+      sirv: 3.0.2
+      source-map-js: 1.2.1
+      typescript: 5.9.3
+      unhead: 2.1.13
+      unocss: 66.6.8(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      unplugin-icons: 23.0.1(@vue/compiler-sfc@3.5.32)
+      unplugin-vue-components: 31.1.0(@nuxt/kit@3.21.2(magicast@0.5.2))(vue@3.5.32(typescript@5.9.3))
+      unplugin-vue-markdown: 30.0.0(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      untun: 0.1.3
+      uqr: 0.1.3
+      vite: 7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3)
+      vite-plugin-inspect: 11.3.3(@nuxt/kit@3.21.2(magicast@0.5.2))(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      vite-plugin-remote-assets: 2.1.0(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      vite-plugin-static-copy: 3.4.0(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      vite-plugin-vue-server-ref: 1.0.0(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))(vue@3.5.32(typescript@5.9.3))
+      vitefu: 1.1.3(vite@7.3.2(@types/node@22.19.17)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3))
+      vue: 3.5.32(typescript@5.9.3)
+      yaml: 2.8.3
+      yargs: 18.0.0
+    optionalDependencies:
+      playwright-chromium: 1.60.0
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -9071,7 +9250,13 @@ snapshots:
     dependencies:
       playwright-core: 1.59.1
 
+  playwright-chromium@1.60.0:
+    dependencies:
+      playwright-core: 1.60.0
+
   playwright-core@1.59.1: {}
+
+  playwright-core@1.60.0: {}
 
   points-on-curve@0.2.0: {}
 

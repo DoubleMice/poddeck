@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-06-05T04:37:04.964Z
+refreshed_at: 2026-06-05T18:42:53.880Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 3
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -106,7 +106,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,

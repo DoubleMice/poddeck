@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soap Box: Detection and response in the AI age — PodDeck</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    line-height: 1.75; font-size: 17px; color: #1a1a2e; background: #fafbfc;
+    max-width: 720px; margin: 0 auto; padding: 24px 20px 60px;
+  }
+  h1 { font-size: 2em; font-weight: 700; margin: 32px 0 8px; line-height: 1.3; }
+  .meta { color: #6b7280; font-size: 0.9em; margin-bottom: 32px; }
+  .meta a { color: #3b82f6; text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+  h2 { font-size: 1.4em; font-weight: 700; margin: 40px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #e5e7eb; color: #111827; }
+  h3 { font-size: 1.15em; font-weight: 600; margin: 24px 0 8px; color: #1f2937; }
+  p { margin: 12px 0; }
+  .overview { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 36px; }
+  @media (max-width: 600px) { .overview { grid-template-columns: 1fr; } }
+  .card { padding: 16px; border-radius: 8px; border-left: 4px solid; font-size: 0.92em; line-height: 1.55; }
+  .card.blue   { background: #eff6ff; border-color: #3b82f6; }
+  .card.green  { background: #f0fdf4; border-color: #22c55e; }
+  .card.orange { background: #fff7ed; border-color: #f97316; }
+  .card.red    { background: #fef2f2; border-color: #ef4444; }
+  .card.purple { background: #faf5ff; border-color: #a855f7; }
+  .card.yellow { background: #fefce8; border-color: #eab308; }
+  .card strong { display: block; margin-bottom: 4px; }
+  blockquote {
+    margin: 20px 0; padding: 16px 20px; border-left: 4px solid #3b82f6;
+    background: #eff6ff; border-radius: 0 8px 8px 0; font-style: italic; color: #1e3a5f;
+  }
+  blockquote .attr { display: block; margin-top: 8px; font-size: 0.88em; font-style: normal; color: #6b7280; }
+  .gloss { color: #6b7280; font-size: 0.9em; }
+  .quote-grid { display: grid; gap: 12px; margin: 20px 0; }
+  .quote-grid .qcard { padding: 16px; border-radius: 8px; border-left: 4px solid; font-style: italic; font-size: 0.95em; }
+  .quote-grid .qcard .ctx { display: block; margin-top: 6px; font-size: 0.82em; font-style: normal; color: #6b7280; }
+  .quote-grid .qcard.blue   { background: #eff6ff; border-color: #3b82f6; }
+  .quote-grid .qcard.green  { background: #f0fdf4; border-color: #22c55e; }
+  .quote-grid .qcard.orange { background: #fff7ed; border-color: #f97316; }
+  .quote-grid .qcard.red    { background: #fef2f2; border-color: #ef4444; }
+  .quote-grid .qcard.purple { background: #faf5ff; border-color: #a855f7; }
+  .quote-grid .qcard.yellow { background: #fefce8; border-color: #eab308; }
+  footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #e5e7eb; font-size: 0.85em; color: #6b7280; }
+  footer a { color: #3b82f6; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>Soap Box: Detection and response in the AI age</h1>
+
+<div class="meta">
+  <strong>Edward Wu</strong> · Dropzone Founder<br>
+  Risky Business · 2026 年 6 月 · 37 分钟<br>
+  <a href="https://risky.biz/SOAPBOX108/">risky.biz/SOAPBOX108</a>
+</div>
+
+<h2>为什么这期值得关注？</h2>
+
+<div class="overview">
+
+<div class="card blue">
+<strong>漏洞海啸下的 D&R 新角色</strong>
+AI 让漏洞发现自动化——攻击者初始突破更容易——检测与响应成为"企业免疫系统"的前线。
+</div>
+
+<div class="card green">
+<strong>从单 Agent 到七 Agent SOC</strong>
+Dropzone 从告警分类起步，RSA 2026 宣布了包含 7 个协作 AI Agent 的完整 agentic SOC 架构。
+</div>
+
+<div class="card orange">
+<strong>AI Coding 是 SOC 的水晶球</strong>
+软件工程在 AI 采纳上领先 SOC 2-3 年——那里的演进轨迹就是安全运营的明天。
+</div>
+
+<div class="card red">
+<strong>Vibe-Code 的诱饵与陷阱</strong>
+用 token budget DIY SOC 自动化很诱人——但持续维护和测试才是真正的成本。
+</div>
+
+<div class="card purple">
+<strong>20/80 模型选择策略</strong>
+每次告警调查涉及 100+ 次 LLM 调用——只有 20% 需要 premium 模型。
+</div>
+
+<div class="card yellow">
+<strong>人的角色：Field General 或 Special Forces</strong>
+Agent 做重复性分析——人类定义策略、做 Agent 做不了的事。
+</div>
+
+</div>
+
+<h2>1. 漏洞末日与 D&R 的新角色</h2>
+
+<p>Patrick 与 Ed 的对谈以"漏洞末日"（Vompocalypse / Bugpocalypse）开场。AI 正在让漏洞发现变得自动化——攻击者不再需要手工审计代码，AI 可以在极短时间内扫描海量代码库，发现此前可能需要数年才能找到的脆弱点。</p>
+
+<p>Ed 的视角非常直接：这意味着攻击者获得初始立足点（initial foothold）的门槛将大幅降低。传统上，攻击者要么自己找漏洞（高成本），要么等待漏洞披露和补丁之间的时间窗口（有限机会）。现在，这两个障碍都在被 AI 消融。</p>
+
+<blockquote>
+"the vulnerability apocalypse will make actually detection and response even more relevant"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<p>面对这个现实，Patrick 提出了一个两难：我们是该加强预防性控制（preventative controls），还是强化检测与响应？最终共识是——<strong>两者都需要更多</strong>。但在当前行业过度依赖 D&R 的氛围下，可能需要把钟摆往预防性控制的方向推一推。同时，D&R 的压力不会减轻，只会更大。</p>
+
+<h2>2. D&R 成为企业免疫系统</h2>
+
+<p>Ed 提出了一个有力的比喻：当攻击者更容易突破外围防御时，检测与响应就变成了"企业免疫系统"——它不再是"最后的防线"，而是<strong>前线</strong>。</p>
+
+<blockquote>
+"in my mind, the detection and response, or the enterprise immune system becomes the frontier of the defense"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<p>这个比喻的含义是深刻的：如果预防注定会失败（或至少不可靠），那么组织安全的核心能力就必须从"阻止进入"转向"在进入后快速发现并清除威胁"。这不是说放弃预防，而是说必须<strong>以攻击者已在内部为前提</strong>来设计 D&R 能力。</p>
+
+<p>Ed 进一步指出，这要求 Assume Breach 心态的升级。过去"假定已失陷"更多是一种风险管理思维，而现在——在面对更多漏洞、更多利用手段的现实下——它更接近于一种必然性。</p>
+
+<h2>3. Dropzone 的进化：从单 Agent 到七 Agent</h2>
+
+<p>Dropzone 最初是一个单一 Agent——一个 AI SOC 分析师，专注于自主调查安全告警（alert triage）。这是一个非常好的 AI 应用场景：Tier 1 SOC 分析师的重复性工作让 AI 来做，释放人力做更有价值的事。</p>
+
+<p>但在 2026 年 RSA 大会前，Dropzone 宣布了一个更大的愿景：</p>
+
+<blockquote>
+"right before RSA this year, we announced a much broader agentic SOC vision which actually incorporates seven different AI agents. Each of them automating different parts of the detection and response function and then have those agents also collaborating with each other"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<p>这七个 Agent 分别负责：告警调查、威胁狩猎、检测工程、威胁情报、事件范围确定、自动化编排、以及 Agent 间的协作。Ed 将检测与响应描述为"由许多不同的手动工作块组成的领域"（<span class="gloss">作者概括</span>），每个工作块都可以由专门的 Agent 来增强。</p>
+
+<h2>4. AI Coding：SOC 的水晶球</h2>
+
+<p>Ed 认为软件工程在 AI 采纳上领先 SOC 约 2-3 年——理解 AI Coding 的演进轨迹，就能预见 SOC 的未来。这个类比贯穿了整个对话，是这期最有洞察力的框架之一。</p>
+
+<blockquote>
+"Most of the AI coding tools start off by solving a single problem, which is how do you generate more code"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<p>AI Coding 的演进可以分为三个阶段：</p>
+
+<p><strong>第一阶段</strong>：代码生成——工具专注于"写更多代码"。对应 SOC 的 Alert Triage Agent。</p>
+
+<p><strong>第二阶段</strong>：瓶颈转移——当 AI 可以生成大量代码后，Review 变成了瓶颈。Ed 特别提到："I think Claude just maybe today or yesterday announced their code review solution exactly to solve this problem"。对应 SOC 的 Threat Hunting + Detection Engineering Agent。</p>
+
+<p><strong>第三阶段</strong>：全流程 Agentic——"who's writing all the tests? Who is actually scoping out the ticket in the first place?"——需要 AI PM、AI UX designer 等。对应完整的 7-Agent SOC。</p>
+
+<p>这个类比的力量在于：它让我们看到 SOC 的 AI 化不是偶然的、孤立的——它遵循着和 AI Coding 完全相同的扩展逻辑。</p>
+
+<h2>5. Machine Scale 与 Machine Speed</h2>
+
+<blockquote>
+"we really need detection and response ultimately to be operating at both machine scale and machine speed. And that makes doing a lot more, but also drastically reducing the latency"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<p>Ed 用"Machine Scale"和"Machine Speed"这两个维度来定义 D&R 的未来。Machine Scale 意味着：更多的检测规则、更多的威胁狩猎、更多的威胁情报、更多的告警调查——当每个维度都乘以 10 倍，人工 SOC 模型就彻底失效了。Machine Speed 则意味着将响应时间从"小时"压缩到"分钟甚至秒"——因为很多威胁的窗口期只有几分钟，人工响应太慢就等于没有响应。</p>
+
+<h2>6. 告警的"左"与"右"</h2>
+
+<p>Ed 将 SOC 工作流分为告警的左侧（产生前）和右侧（触发后）。左侧包括威胁狩猎、检测工程、威胁情报——在告警产生之前就主动作为。右侧包括告警调查、事件范围确定、响应协调——在告警触发后快速行动。</p>
+
+<p>这是一个有用的框架：目前的 AI SOC 工具大多集中在右侧（告警分类），但左侧的工作同样可以 Agentic。事实上，正是在左侧的自动化（如自动检测工程、自主威胁狩猎）中，Agent 之间的协作产生了最大的杠杆效应。</p>
+
+<h2>7. Vibe-Code 的诱惑与陷阱</h2>
+
+<p>Patrick 发现很多 SOC 团队已经在用已有的 token budget 来 vibe-code 自己的自动化工具。用他的比喻来说，这就是"往罐子里塞石头"——确实能解决一些痛点。但他也指出了局限："that approach is limiting"——你确实可以快速拼出一个基础脚本，但商业工具投入的开发时间是不可比拟的。</p>
+
+<p>Ed 的观点更加尖锐。他承认"kind of vibe coding or DIY is, we definitely have seen a lot of that"，但指出了两个根本问题：</p>
+
+<p>第一，<strong>经济规模</strong>（economy of scale）。一个专业安全公司在其领域投入的研发资源——所有工程师都在用 AI 工具——远大于一个 SOC 团队可以分配的。</p>
+
+<p>第二，<strong>持续维护</strong>——这才是真正的杀手。</p>
+
+<blockquote>
+"the continuous maintenance and testing of that thing actually ends up being a whole lot more expensive than the resources that you need to vibe code it in the first place"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<p>Ed 补充道，现代 AI 创业公司在质量保证、测试、验证和评估上投入的资源，往往远超构建 prompt 和 agent 本身的投入。而这是大多数团队在 vibe-code 时严重低估的部分。更不用说关键人物风险——"the cutting edge security engineer who vibe coded it decided to work somewhere else"——然后整个工具就成了无人维护的技术债。</p>
+
+<h2>8. Buy vs Build：方程式没有变</h2>
+
+<p>Patrick 在这点上很有信念——他甚至说自己在"SaaS 末日"中大量买入 SaaS 股票，因为他认为"software vendors are going to be replaced by vibe coding"的论调经不起考验。</p>
+
+<blockquote>
+"one person using a coding agent is not equivalent to a software development company that's very specialized, with all of their developers using coding agents and working towards a common goal"
+<span class="attr">— Patrick Gray</span>
+</blockquote>
+
+<p>Ed 补充了一个关键观察：商业软件公司本身也在承受巨大的压力去采用 AI Coding 工具——"modern software development companies are under tremendous pressure to use AI coding agents as well"。也就是说，双方都在用 AI 加速，相对差距并没有缩小。</p>
+
+<p>Ed 透露，Dropzone 已经遇到了"Boomerang"客户——这些组织先在内部 DIY 了 SOC 自动化，建立了对技术可行性的信心，但随后被维护负担压垮，最终选择了商业方案。Patrick 用了一个生动的比喻：Sally vibe-coded 了一个 AI SOC agent，然后被 Anthropic 或 Palo Alto 挖走了——公司只能找 Dropzone。</p>
+
+<h2>9. 20/80 模型选择策略</h2>
+
+<p>这是 Ed 分享的一个非常具体的技术洞察。在 Dropzone 的端到端告警调查中：</p>
+
+<blockquote>
+"a typical autonomous end-to-end alerting investigations at Dropzone, we are making over a hundred distinct large language model invocations"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<p>每 100+ 次 LLM 调用中，大约只有 20% 需要使用 premium model。其余 80% 可以用 commodity model 胜任。Ed 用了一个精妙的类比："initially when you build a plane, you build everything out of titanium or carbon fiber... and then over time you start to look at different pieces and be like, do we really need this trim piece to be in carbon fiber?"</p>
+
+<p>Premium model 被保留在两个最关键的环节：<strong>Planning</strong>（调查方向规划——如果方向错了，整个调查就白费了）和 <strong>Conclusion Determination</strong>（综合多条可能相互矛盾的发现，做出最终判断）。而 JSON 解析、SIEM 查询、威胁情报匹配等任务，用较便宜的模型就足够了。</p>
+
+<p>Ed 还指出了一个额外的维度：成本不是唯一的考量——<strong>延迟</strong>同样重要。</p>
+
+<blockquote>
+"the expensive models are very slow, so if you only use the expensive models end to end, the whole investigation might end up taking like 20 minutes, and that's just unnecessarily long"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<h2>10. 统一数据湖 vs 联邦搜索</h2>
+
+<p>Patrick 预测安全运营会收敛到一个"大存储池 + Agent 在上面爬行"的模式。Ed 的看法更加 nuanced。他认为数据层（security data layer）的未来仍有不确定性——行业还没有达成共识。</p>
+
+<p>一方面，联邦搜索（Federated Search）的理念很吸引人：Agent 可以直接通过 API 去各个工具（CrowdStrike、Okta、AWS）查询数据，不需要把所有数据集中到一个湖里。但另一方面，不同工具的数据保留策略不同，"it's still nice at least for human practitioners to pull in subsets of these huge data sets into one place to work on them"。</p>
+
+<p>Ed 的判断是：<strong>数据层怎么建还没有共识</strong>——有人会倾向于建 S3 大湖 + SIEM，有人会走向联邦搜索的极致。但<strong>分析层/智能层的未来是清晰的</strong>：大量的 Agent 协作、自动解析日志、从不同角度分析数据、Agent 之间彼此触发行动。</p>
+
+<h2>11. 24/7 自主新威胁响应</h2>
+
+<p>Ed 分享了一个 Dropzone 正在实验的激动人心的场景：</p>
+
+<blockquote>
+"how do you have two different agents, such as an AI threat intelligence agent and an AI threat hunter agent, kind of working together so you can achieve twenty-four-seven autonomous emerging threat response"
+<span class="attr">— Edward Wu</span>
+</blockquote>
+
+<p><span class="gloss">作者概括</span>：这个闭环的逻辑是——安全研究者在 Twitter 上发布一个新威胁 → Threat Intelligence Agent 捕获并分析 → Threat Hunting Agent 在组织环境中搜索相关 IoC → 5 小时内完成一次完整的威胁狩猎。这不是科幻，Ed 确认团队已经在实验这个流程。</p>
+
+<p>真正让人兴奋的不是单个 Agent 的能力（告警分类、威胁情报收集都已可行），而是<strong>Agent 之间的协作循环</strong>：TI Agent 发现威胁 → 通知 Hunting Agent → Hunting Agent 完成狩猎 → 结果更新到 Detection Engineering Agent → 自动生成新检测规则。这可以实现"autonomously improve the overall security posture of the environment"。</p>
+
+<h2>12. 人最后做什么？Field General + Special Forces</h2>
+
+<p>在对话的最后，Patrick 问了一个直击人心的问题：当所有都被自动化了，人还做什么？Ed 的预测既不是"人会被完全取代"的焦虑叙事，也不是"一切照旧"的安慰——而是角色的两级分化：</p>
+
+<p><strong>Field General（战场指挥官）</strong>：大多数安全工程师和分析师将变成""a director or senior manager, essentially like a field general kind of a role"。他们的核心工作是：定义 Agent 的战略优先级（"Agent 不是无限的，你要决定它们聚焦什么"）、为 Agent 创建成功的工作环境（明确任务边界）、做架构审查和技术选型。</p>
+
+<p><strong>Special Forces（特种部队）</strong>：处理 Agent 无法胜任的最棘手任务。例如，"the CEO clicked on something apparently that he's not supposed to. Are we really going to trust an AI agent to really untangle that mess?"——CEO 点了不该点的东西，这种级别的混乱，你不会放心交给 AI。</p>
+
+<p>Ed 还详细列举了 Agent 做不了的事：建立关系（说服其他团队为应用增加 instrumentation）、评估供应商（判断工程团队的能力和性格）、跨部门协商（和财务团队、网络团队协调部署）、扩展可见性（"Agents are not going to magically just allow you to see everything in the environment"）。</p>
+
+<p><span class="gloss">作者概括</span>：Ed 对"每个人都变成经理"这个想法并不感到不安——他认为这已经在软件工程中开始发生了。他举例说，随便问一个 Anthropic 的软件工程师"你上个月写了几行实际代码？"，答案很可能是零——但他们在"directing"、在"debating with AI agents or brainstorming"、在"reviewing architecturally the work of AI"。SOC 的转型将遵循同样的路径。</p>
+
+<h2>核心金句</h2>
+
+<div class="quote-grid">
+
+<div class="qcard blue">
+"the detection and response, or the enterprise immune system becomes the frontier of the defense"
+<span class="ctx">— Edward Wu · D&R 在漏洞末日下的新角色</span>
+</div>
+
+<div class="qcard green">
+"we really need detection and response ultimately to be operating at both machine scale and machine speed"
+<span class="ctx">— Edward Wu · 定义 D&R 的未来范式</span>
+</div>
+
+<div class="qcard orange">
+"you're kind of writing software in English, but you're still writing software"
+<span class="ctx">— Edward Wu · AI 时代人的角色不是消失，而是转型</span>
+</div>
+
+<div class="qcard red">
+"the continuous maintenance and testing of that thing actually ends up being a whole lot more expensive than the resources that you need to vibe code it in the first place"
+<span class="ctx">— Edward Wu · Vibe-Code 的真正成本在水下</span>
+</div>
+
+<div class="qcard purple">
+"one person using a coding agent is not equivalent to a software development company that's very specialized, with all of their developers using coding agents"
+<span class="ctx">— Patrick Gray · Buy vs Build 的方程式没有因为 AI 而改变</span>
+</div>
+
+<div class="qcard yellow">
+"Agents are not going to magically just allow you to see everything in the environment"
+<span class="ctx">— Edward Wu · 可见性不会因为有了 Agent 就自动扩展</span>
+</div>
+
+</div>
+
+<footer>
+  <p>完整访谈: <a href="https://risky.biz/SOAPBOX108/">risky.biz/SOAPBOX108</a></p>
+  <p style="margin-top:8px;">Generated by PodDeck · <a href="../../">← 返回 PodDeck</a></p>
+</footer>
+
+</body>
+</html>

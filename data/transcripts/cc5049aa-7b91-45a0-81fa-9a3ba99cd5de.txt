@@ -1,0 +1,859 @@
+Speaker 1: You're watching TBPN.
+Speaker 2: Today is Thursday, 06/04/2026. We are live from Palantir AIPCon, with the temple of technology. It's back in
+Speaker 1: your life. Finance. We
+Speaker 2: will return to it, but it is also a state of mind.
+Speaker 1: That's right.
+Speaker 2: We are also sponsored by Ramp. Time is money. Save both. Easy use corporate cards, bill pay, accounting, and a whole lot more all in one place. Big news from Ramp today.
+Massive fundraise, we're gonna cover in a little bit. But first
+Speaker 1: Did you hear that?
+Speaker 2: We got to talk. Oh, is it still going? I like it. The ramp song's back. This was this was early days.
+We really talked about ramp so much. Turned it into a song. Anyway, the topic of conversation in DC has it's still in AI world, but instead of talking about approving models before they're released today, it's about the biothreat. Brandon Guerrell wrote in the TBPN newsletter today, the great houses of AI have united behind the biothreat. There's actually a lot more to that because it was a big long list of signatories from AI, but also from the bioworld and biotech and even startups.
+We've seen former guests of the show sign on. I'm excited to bring some of those folks back on the show in the coming weeks and hear more about this because Yeah. I have this belief that as AI advanced, we got cyber because it was such a tight feedback loop, such a tight verifiable reward. Reinforcement learning works really well in that context. Bio has some similar characteristics.
+Speaker 1: And it was a very tangible Y2K style moment where there was I mean, it was a, let's just say, a powerful business strategy.
+Speaker 2: Yeah. Is it yeah. It was like, is it over? You start thinking about the consequences of this, and you don't need to get to AGI super intelligence guide. You can just have a really powerful tool that creates a new problem, and that creates full employment for Nikesh Rora over at Palo Alto Networks, who we had a chance to talk to yesterday.
+And, he's been very fortunate in implementing the solutions to the cybersecurity threats posed by new AI systems, some of the new AI capabilities they're rolling out. But BIO might be next, and so it's exciting to see that, the great houses of AI are uniting behind the BIO threat. So let's take you through this. First, I'm gonna tell you about console.com. Console builds AI agents that automate 70% IT, HR, and finance support, giving employees instant resolution for access requests and password resets.
+So, in 1981, a group of researchers published the primary structure of the poliovirus genome in the journal Nature. So they're basically open sourcing the sequence for making polio, which just a few years earlier polio, I think, was on the decline by 1981, but, a very, very problematic virus. It's an RNA virus, meaning that its nucleobases or building blocks are A, C, G, u, if you're familiar with, RNA, adenosine, cytosine, guanine, and uracil. Put more plainly, thanks Brandon Garell, he says when the researchers published the primary structure of the poliovirus, they gave the world the literal sequence of polio virus building blocks in order from start to finish. By the mid twentieth century, before mass vaccination, polio was paralyzing and killing more than half a million people per year worldwide.
+So you have this pretty deadly virus killing more than half a million people per year worldwide, and you have just open sourced it. What happens? So in 2002, researchers synthesized infectious poliovirus from its publicly available sequence data. So they didn't actually need any of the poliovirus RNA to start. Didn't need it on hand.
+They didn't need to it's not like they took a little sample and they just cloned it up and made it bigger. They they just took the data and they made the actual virus. So this is the this is the shape of the threat. If there's a new, if there's a new virus or an existing virus or forgotten about virus and you have the code to it, you can potentially print that RNA and then have the virus in your hands even if you don't have a sample. You weren't able to collect the sample.
+So instead, these researchers in 2002, they were able to take the published sequence, chemically synthesize short DNA fragments, assemble them into full length a full length DNA copy of the poliovirus genome, and then use the DNA to make the viral RNA to fully recover the infectious virus. So in 2005, researchers used these same technologies to reconstruct the Spanish flu, a virus in 1918 that killed six hundred and seventy five thousand Americans and had a two to three percent mortality rate among those infected. Very, very dangerous stuff. So, basically, these two reconstructed viruses showed that having a physical virus on hand was no longer necessary as source material to create viruses. All you needed was the blueprints as long as you have the code.
+Literally just like text in a text file a bunch of ATGU. You can go and make this as long as you have the equipment on hand, but that is getting democratized as well. And that's what this, AI letter is all about. So that's the situation that we're still in today, except now that we have AI, there are easier ways to potentially reconstruct DNA sequences that could create new viruses. So yesterday, Dennis Hassabis, Sam Altman, Dario Amade, Alex Wang, and dozens of other high profile leaders across AI tech policy, nucleic acid synthesis, and biotech signed an open letter called in support of mandatory nucleic acid synthesis screening and recordkeeping.
+You might have seen it on the timeline. And at first glance, Brandon here assumed, and I assumed the same thing, assumed it was another press release from a Frontier lab claiming it had just discovered new capabilities in one of its internal models that would ultimately lead to catastrophe. Lot of this, like, doom fear based marketing has been happening. So that was sort of the natural reaction, and that's what Brandon
+Speaker 1: people's reaction would be, were we not doing record keeping here already?
+Speaker 2: That's a great question. And Brandon actually did answer that. But it's not just a PR stunt, and it's not a new capability. They're not saying that the models can just create a novel virus, you know, one shot, like, that that that that is solved yet. It's not there, but they see it as something that's coming down the pipe.
+And this letter is not this dangerous new capability. It's more asking the US government to force nucleic acid synthesis companies to screen orders for sequences of concern. So, hey. Somebody just ordered this. Looks a lot like a virus.
+Like, what are we doing here? You said that you were trying to treat cancer, or you said that you were, you know, trying to make a new peptide, and all of a sudden you're asking for poliovirus or something that looks like poliovirus. Like, let's let's dig into this. That's where they're going with that. And so, they also need to verify the legitimacy of the customer and to keep a record of what they're sending and to whom.
+That's a crazy one that I'm sure you're like, wait. Well, they weren't keeping records? They were a little bit. He gets into this. He So says the reason the letter is coming out now is that the threat of nucleic acid synthesis sequencing, getting into the wrong hands has been enhanced by AI.
+So anyone with an AI tool in the future could, in theory, if the models don't have safeguards on them, could, synthesis could create a sequence that then they go to a nucleic acid sequence company, get printed, send it to them, mix it up, boom, they got a virus. Not good. So, most of the global nucleic acid synthesis industry has already signed up to do some of this. They did they started this in 2009 with what's called the International Gene Synthesis Consortium, and roughly 80% of commercial synthesis capacity worldwide is on is is on board, but membership in
+Speaker 1: the 20% still just hanging out. No. We're good.
+Speaker 2: 80% of nuclear weapons are safely stored. Don't ask about the other 20%. That's kind of what this letter is getting at because 80%, it was a good first effort. 2009, it's been sixteen, seventeen years. There's we haven't a new had
+Speaker 1: reason to Yeah.
+Speaker 2: There's a new reason to go further. Let's get that last 20%. That's what they're So asking membership is not a strong guarantee that they're actually screening or keeping records of their customers because it's voluntary. The 80% number is also self reported, for example, and a bunch of other factors contribute to the relative flimsiness of their agreement. So it's
+Speaker 1: not So you can opt government into this program by just saying that you're opting into it, but then even the reporting once you're opted in is voluntary.
+Speaker 2: So I think the way this works is the International Gene Synthesis Consortium is probably a nonprofit NGO, nongovernmental organization. And every all the companies, they they volunteer. 80% of commercial synthesis volume has opted into this. And then this organization, the International Gene Synthesis Consortium, they say, hey, we've looked at the market and we're covering about 80% has has opted into this. We're we're on board with 80%, and and the government isn't coming in and checking the records.
+They're not actually saying, okay. Well, we we have a different number because we're the government, and you have your this number. Let's verify this number. It's self reported by that organization, but there's no reason not to trust that organization necessarily. So what else?
+Bunch of other factors contribute to the relative flimsiness of this agreement. HHS also has guidance in place around the issue, but, again, it's voluntary, meaning that the possibility of bad actors getting their hands on dangerous nucleic acid sequences, at least from American companies, still cannot be ruled out. Overall, it's good to see industry leaders signing this letter and doubly refreshing, that the letter is not yet another warning of apocalyptic AI doom, which I think the public has unfortunately come to expect from announcements like this. Hopefully, the relevant legislators are paying attention and can make this happen in short order. So I thought that was a good a good breakdown, and I agree with a lot of that.
+Andrew Curran also has some deep dive on this with some more of the signatories. He shares screenshots of all of these, and it it really everyone. Stops. Yeah. Y Combinator
+Speaker 1: Patrick Collison.
+Speaker 2: DeepMind, Microsoft, Interconnects dot ai, Harvard, tons of stuff. And then over in in the nucleic acid synthesis industry, have Twist Bioscience, ANSA, Emerald Cloud Lab, and Kathleen McMahon from Valthos is on here, former guest of So the so good news, but obviously just an early step. This is just an open letter to the government saying, hey, we think you should we want to support this. We think that the government should start thinking about this. The other news in the bio world
+Speaker 1: Yeah, mean, the news is just that there's incredible momentum in biotech. Early stage biotech. Yeah.
+Speaker 2: After Yeah. Momentum, but not like volume, not scale yet. Because you're looking at Yeah. $3,000,000,000,000 IPOs going out this year potentially, so much news in AI, microns at a trillion, every chip stock is in the hundreds of billions, trillions. This is much smaller, but
+Speaker 1: But it's notable because biotech had been left for dead We in some had a biotech investor on probably fourteen months ago at this point who said, I don't even know. I mean, just looking at the returns so far, I don't know why you would invest in this asset class. But of course, every asset class kind of goes through that kind of phase. And clearly, there's a lot of momentum.
+Speaker 2: And they should be you would expect that biotech would be similarly power law driven, maybe not as extreme. But if you pull out SpaceX OpenAI Anthropic from
+Speaker 3: Power the law is capital universal, returns though.
+Speaker 2: Yes, but I feel like the biotech community has a little bit more of a culture of base hits, doubles, triples, where they flip companies pretty frequently.
+Speaker 1: Yeah, we had that didn't we have a guy on that had sold?
+Speaker 2: Like three companies. We didn't have Mondi. Were doing $2,000,000,000
+Speaker 1: exits.
+Speaker 2: Yep. And then he joined another company and sold it for 3,000,000,000 like the next day.
+Speaker 1: So So anyways, you have Isomorphic Labs spun out of DeepMind, Coinbase, or not Coinbase, but Brian spun out or founded New Limit. Have Retro Bias We're
+Speaker 2: going to get Jacob on the show.
+Speaker 1: Altos Labs.
+Speaker 2: Jeff, the Chad from Amazon That's a funny post. As this post puts it.
+Speaker 1: Jeff Bezos. Anthropic obviously acquired Coefficient Bio as well.
+Speaker 2: But Jensen and Larry Ellison at Oracle are also doing stuff. So there's a lot of activity. It's very fun, and I hope we're gonna be able to cover this a lot more in the
+Speaker 1: near future. At what do the at what point does, like, a Pfizer or Johnson and Johnson start joining the press release economy of just coming. I'm not saying it'd a good thing
+Speaker 2: Decent amount
+Speaker 4: of that.
+Speaker 1: But coming out and saying, we believe we're right
+Speaker 2: at the Because there are partnerships all the time that happen, and they're always just, like, tucked a little bit deeper in The Wall Street Journal because AI is dominating, and Yep. Even private credit takes the front seat to the bio news. But there there's a whole bunch of deal making going on. Anyway, there's other deal making going on in fintech. We're gonna talk about ramps raised today.
+But first, I'm gonna tell you about Railway. Railway is the all in one intelligent cloud provider. Use your favorite agent to deploy web app servers, databases, and more while Railway automatically takes care of scaling, monitoring, and security. So, ramp.
+Speaker 1: What's going on in ramp plan?
+Speaker 2: $44,000,000,000 valuation. Woah. Really, really solid traction just, you know, every twelve, eighteen months, sometimes much quicker. Sometimes they do two rounds in two weeks, but really solid progress. They raised $750,000,000 at a $44,000,000,000 valuation.
+Last time we grew this fast, we were one twentieth of the size.
+Speaker 1: So they are actually accelerating This is the most to notable thing to me. Lots of chatter on the timeline around other fintech valuations. Valuations, you compare
+Speaker 2: them to SASpocalypse,
+Speaker 1: stuff like, yeah, compare them to SASpocalypse. Ramp is now worth more than PayPal. PayPal has 32,000,000,000 of revenue. But PayPal certainly has, I would say, probably negative momentum. Yeah.
+Whereas Ramp has incredible momentum. And this is the standout line. They were one twentieth the size the last time they were growing this fast. Yep. And so, yeah, just really, really, really, really impressive execution.
+Yeah. And incredible opportunity still.
+Speaker 2: Yeah. So Eric took to the timeline, posted an essay about the third pillar comparing, the previous eras of value creation, the two pillars, people and vendors, dating back to 600 BCE. If you're not thinking in millennia, what are you doing here? Tokens emerged as the third pillar in twenty twenty six AD, and he calls it the quadrillion token blind spot, boiled down five hundred years of finance. And it's really just three questions.
+Who spent what? Was it worth it? What's the bill next month? Mean, people get caught up in all these crazy things. I mean, you see this in like marketing, I'm sure, and ad buying where people will do all these crazy analyses and ROI, ROAS and all this other stuff, and it's always useful to zoom out and just be like, okay, we spent a bunch of money, did the bank balance go up in this company Yeah, or
+Speaker 1: All personal and business finance at the end eventually comes down to, are we making more money than we're spending?
+Speaker 2: Yeah. And I think, yeah, Eric is is right to dive super deep into, like, token optimization and thinking about the tools that they're building, but then at the same time, like, not don't get lost in the sauce. Yeah. And, like, actually zoom out and try and understand, like, what is the core value that you're delivering to your customer? It is answering that question.
+So fantastic news over there. Let me tell you about the New York Stock Exchange. Wanna change the world? Raise capital at the New York Stock Exchange. You gotta do it.
+It's my number one advice for founders these days. There's some other fundraising news. Sabi, the Beanie BCI company is getting preempted at 35,000,000 at 500,000,000 post. This is a leak from Art for Rock. We'll see where it goes.
+Speaker 1: This is huge for you. Why? Because you are a beanie guy.
+Speaker 2: I do like beanies. You love the Corona beanie.
+Speaker 1: A beanie in the morning.
+Speaker 2: Keeps it together.
+Speaker 1: Yeah. Yeah. I like a beanie. Very, very funny. I it's interesting.
+I think that this format Mhmm. Of course, I'm sure they can adapt it to other types of hats. Yeah. But this format certainly maybe makes it harder to build momentum in places like California, at least Southern California, Arizona.
+Speaker 2: Big big amongst creative directors though.
+Speaker 1: Yeah. Huge. Huge, huge. Potentially. Silver Lake, Silver Lake, every
+Speaker 2: It's not too hard to change a beanie into a hat, a cowboy hat. Yeah. Like, that's just extra leather around it. Could You wrap the beanie in the cowboy hat.
+Speaker 1: Here's what's interesting though, so R for Rock, usually It's pretty dialed. Pretty dialed.
+Speaker 5: Pretty
+Speaker 1: dialed. It's dialed. It's almost like he has inside information. It's almost like he's somehow
+Speaker 2: got Yeah, but when we talk about the game theory of does he work at a real tier one venture capital firm that's seeing, what's the benefit of leaking everything? Is he a lawyer that's seeing all the docs turn
+Speaker 1: Zero benefit for a lawyer.
+Speaker 2: Right? Cloudy. The rush of getting likes on the timeline is pretty universal.
+Speaker 5: You're a
+Speaker 2: lawyer. You're just like, I need a banger.
+Speaker 1: At a fund, for sure.
+Speaker 6: And
+Speaker 1: I don't know anything else. But he's always taken the view that it can be helpful to the founder Mhmm. To build. Because a bunch of people are gonna see this Sure. That that this didn't sort of land in their deal flow Mhmm.
+Or land on their desk, and they're gonna reach out. So it does create momentum, but can certainly be annoying for teams as well. Was notable, though. 200,000,000 of LOI from B2B customers. And so very curious what the enterprise play is here.
+Speaker 2: I don't know.
+Speaker 1: But we can work on getting Rahul
+Speaker 2: Does that mean like through hospital networks or through the health care system? Or is it like Mark Zuckerberg wants to go further? He wants to track the brain waves of the employees, not We're just the mouse
+Speaker 1: and track your screen.
+Speaker 2: We're gonna track your brain. I mean, it could go either way. Because, like, you you you imagine, like, Neuralink has had a bunch of traction and bunch of amazing I saw Nolan, the the first patient, p zero, on Rogan talking about playing COD
+Speaker 1: Yeah.
+Speaker 2: With the Neuralink. Amazing. And you can imagine that at a certain point, like, some sort of partnership.
+Speaker 1: They have multiple hat form factors.
+Speaker 4: There we go.
+Speaker 1: We're Now more hats good. I was getting really hung up on the beanie. Yeah. And like there's so many different enterprise or B2B context. You're in a warehouse in Dallas, Texas in the summer.
+Speaker 2: Yeah. Don't got it. Maybe this kind of maybe this $200,000,000 LOIs from REI or Patagonia. You know? You don't know.
+Who makes beanies? What's the Carhartt? Carhartt makes a great beanie. There we go. You don't know any of this stuff.
+You're out you're completely out
+Speaker 4: to lunch.
+Speaker 1: I went through I went Beanie economy. Beanie market map. Work on it.
+Speaker 2: Let me tell you about public.com. Public.com. Investing for those who take it seriously. Stocks, options, bonds, crypto, treasuries, and more, all with great customer service.
+Speaker 1: They just launched a feature today that allows you to connect your favorite chat
+Speaker 2: Yes.
+Speaker 1: App to Public. Yes. And
+Speaker 2: More important than ever because with Public, you're gonna be able to go and create the S and P four ninety nine, if you don't like SpaceX, or the S and P one, if you love SpaceX. You can express your opinion about SpaceX however you want.
+Speaker 1: Can you please help me build an index for one company?
+Speaker 2: Yes. Index for one company or index for everything but one company. SpaceX is very divisive. People are extremely optimistic in certain camps, extremely pessimistic. Goldman,
+Speaker 1: extremely optimistic. Goldman expects SpaceX's AI revenue to surge 100 times by 2030. Huge. Big, big number. I looked at this title and I was thinking like, okay, what's Grok's actual revenue today if you take out
+Speaker 2: Yeah. X? Is their AI revenue today? Is it just Grok subscriptions plus Grok tokens? Do you include X subscriptions?
+Do you include, cloud vendor and and neo cloud contracts? There's a bunch of different ways to measure it. The smaller the number, the easier it is to 100 x, but we have seen other AI companies, 100 x revenues over two years, over three years, four years. Like, the 100x has become it's not a one of one scenario. Yeah.
+It's happened multiple times. And so we have seen these charts many times, and if if they execute well, they're Yeah. This is entirely possible. It is extremely
+Speaker 1: Other notable data points from the road show
+Speaker 3: Yeah.
+Speaker 1: They the forecast anticipates SpaceX making about 360,000,000,000 of capital expenditures through 2028. Jensen, somewhere fist pumping.
+Speaker 5: Mhmm.
+Speaker 1: Very excited about that number.
+Speaker 2: Mhmm.
+Speaker 1: Be a new hyperscaler. And anyways, very should be unsurprising, but very aggressive. Yeah. The enterprise enterprise story
+Speaker 2: also live, too. The new NVIDIA foundation model is also live. We'll have to go check it out and look at the model card soon, see how it's benchmarking. But we gotta move on to benchmark because there's new news in the benchmark world. First, I'm gonna tell you about MongoDB.
+What's the only thing faster than the AI market? Your business on MongoDB. Don't just build AI, own the data platform that powers it.
+Speaker 1: Benchmark Moment of silence?
+Speaker 2: Moment of silence. Why is that Four making
+Speaker 1: The end of an era?
+Speaker 2: I guess they have been very focused last for decades.
+Speaker 1: Tier one, there was a pure venture capital.
+Speaker 2: What did they get called again? Internet boys or something? Oh. Soft boys. There's some book about them that was very funny.
+Yeah. E Boys. E Boys is a hit piece of a bug book title.
+Speaker 1: No. It's a fantastic book.
+Speaker 2: But the subtitle makes out makes up for it, and it's a fantastic book. And it's a very interesting story where they actually let a a journalist come in and see how they E boys,
+Speaker 1: true story of the six tall men in back of TBPN AIPCon.
+Speaker 2: You clearly wrote the subtitle and was like, I gotta take the edge off of this. It's too glazy. I gotta take it down a notch. And so he threw the e boys in there.
+Speaker 1: Anyways, big moves from Benchmark.
+Speaker 2: What's Kate
+Speaker 1: Clark has a scoop in the journal. Benchmark has raised 2,000,000,000 Wow. Across two new And most notably, their first ever Did dedicated growth
+Speaker 2: they hire anyone who has experience growth investing? Who could possibly do growth investing there? Someone who's maybe at Bond Capital and then Founders Fund, then maybe Kleiner, someone with that degree. Yeah, somebody
+Speaker 1: with that kind of background would be fantastic.
+Speaker 2: Pretty good for growth Now
+Speaker 1: that you say that though. Yeah? Ev Randall.
+Speaker 2: Ev Randall, that's right.
+Speaker 1: They did pick up
+Speaker 2: Ev They did pick him up. They're almost thinking two steps ahead there.
+Speaker 1: Are they building their fund strategy now, their entire platform strategy around it, Randall?
+Speaker 2: Potentially. Potentially. Anyway, let me tell you about Shopify. Shopify is a commerce platform that grows with your business, lets you sell in seconds online, in store, on mobile, on social, on marketplaces, and now with AI agents. And we are very fortunate to be joined by Alex Karp in just a minute.
+He's coming in to, speak with us at AIPCon here. We're gonna bring him in just a minute.
+Speaker 1: While we wait, Austin based podcaster, Joe Rogan, reportedly being considered for sixty minutes.
+Speaker 2: Sixty minutes.
+Speaker 1: Looks like
+Speaker 2: have to call it two hundred minutes, because he records long podcasts in sixty minutes. Is it enough
+Speaker 1: for him? Hundreds.
+Speaker 2: It's it'll just be called Barry, if you're listening, put us in. Put us in the ring. We're ready to go. Need technology, correspondent, someone who can just chop it up for sixty minutes. We do sixty minutes three times a day.
+We're ready to go. This is gonna be light work for us, Barry. I'm ready. I'm ready. You could do sixty minutes right now.
+You could do sixty minutes tomorrow. You could do sixty minutes. You could do an extra sixty minutes easily. When you're putting up we're putting up a thousand minutes a week. It's no problem.
+Speaker 1: We did consider that at one point early on. Should
+Speaker 2: thought do weekend shows?
+Speaker 1: We do basically a morning show?
+Speaker 2: Oh, yeah.
+Speaker 1: Take a two hour break and come back Yeah. Do another show?
+Speaker 2: Late night show. Yeah. Late night show, maybe. Anyway Still We have Alex Garp here with us.
+Speaker 1: Here we go.
+Speaker 2: Welcome to the show. Welcome back. Thank you so much for taking the time. We're gonna have you grab these headset. These headphones.
+Right? Not these. You can sit
+Speaker 1: in No.
+Speaker 2: No. Get close. Get close. Get in here. We can
+Speaker 1: We liked it last time. The the three of us were sitting here.
+Speaker 5: Oh, we can we can put the giant
+Speaker 2: Let's put this up here right here. I'll sit. You can stand. This always works.
+Speaker 5: It makes me
+Speaker 2: feel Yeah. Yeah. Get in here close. This is good. Good.
+Okay.
+Speaker 5: Feel good.
+Speaker 2: How is it going? How is AIPCon this time around?
+Speaker 3: What's changed?
+Speaker 5: Well, we've we're in a phase. Yeah. Each one of these things, like, marks a time. First of all, you guys are even more baller, more successful.
+Speaker 2: Thank you. You. Some Tendys in your pocket. I think it might have been been part two of you. We gotta say thank you.
+Speaker 5: You know, it's like I can
+Speaker 2: blew us up. You're looking biggest guest.
+Speaker 5: You're looking bigger and stronger somehow.
+Speaker 2: Thank you.
+Speaker 5: Hey. Are you more attractive in your personal life now randomly?
+Speaker 1: Well, here's what we're actually focused on, dead hangs. Yeah. Yes. You came on last time. You said your dead hangs around, like, five.
+Speaker 5: Oh, no. It's it's well, it's plateaued in the last couple months at five thirty.
+Speaker 1: Five thirty? Okay. So we the the thing is, like, people are gonna hear that. They're gonna think hanging on a bar
+Speaker 2: Five minutes.
+Speaker 1: Hour. Whatever. You gotta go and do it. The audience has to go try to do it. We've started doing it.
+We're still in the Under two
+Speaker 2: minutes? One between yeah, between one and two minutes.
+Speaker 1: Somewhere around a minute thirty, you feel like your tendons are going to rip.
+Speaker 5: One thirty dead hang is respectable. Two minutes is super elite.
+Speaker 1: Does feel respectable when you have the five minute number you're looking
+Speaker 5: at the time. Strength strength matters. Now, the the the thing is I don't wanna go into rabbit hole in training. The single biggest mistake people make is they try to hang every day. You need recovery.
+It's like anything else. So if you wanna mimic and get progress, you just do what I do, which is once a week, you hang as long as you can. It doesn't have to be super macho. And then that's your day. So like, just say, you can do one thirty.
+Speaker 1: But multiple sets?
+Speaker 5: Or No. No. One day a week, you do your maximum. Maximum.
+Speaker 3: Wow.
+Speaker 5: So, like, let's say you could do two minutes. Okay. You try to do at least one thirty, you fight to get to one thirty, you don't fight to get to two minutes.
+Speaker 2: Got it.
+Speaker 5: That's your dead hang day. Then you can basically fuck around the next day. We do whatever you want. Don't overdo it, but you could do two times one minute with a long break. Mhmm.
+And then can you just screw around, do less and less and less? Two days before, if you had two minute dead hang, you do, like, four times fifteen seconds the day before you take off. And you do that, just keep doing that, and you're dead. What the mistake people make is they hear my ball or time.
+Speaker 2: They go to their, like crown.
+Speaker 5: Fuck that guy.
+Speaker 2: You gotta come from crowd.
+Speaker 1: I mean, the mistake you're making is not doing a course. There's gonna
+Speaker 2: be a
+Speaker 5: whole new revenue is. Line. It's a whole
+Speaker 1: new revenue line I of
+Speaker 5: think guys have it at war for you guys. Yeah. You're in a course. Call in.
+Speaker 2: The current method.
+Speaker 5: So, yeah, I mean, the dead hang is a it's like and also some of it's just genetic. Like, my other metrics are elite, but that this is somehow alien territory. God given gift.
+Speaker 2: What about what about breath hold underwater?
+Speaker 5: I don't do that. Okay. And I'm not sure I have it. Like, I grew up swimming, and I think I'm weaker at that. Like, I bet you I'd be in your guys'.
+Speaker 2: A dive master. I can hold my breath for
+Speaker 5: three I'm just saying, just yeah. So I think you'd be crushing me on that honestly, But you have, like, the lung capacity of a whale.
+Speaker 2: That's true.
+Speaker 5: That's true. I mean, like, you got, like
+Speaker 2: because I'm not moving, I'm not using any oxygen.
+Speaker 5: Like you're like a you're like a like a whale floating out there under the ocean waiting to surface. True. So so, you know, I say I'll tell you the difference. And there's this god. They're always minding me out there.
+But Mhmm. Like, okay. When we first met, it was like AI may be real. Okay? Then I would say somehow, until about two weeks ago, there was like a holy fuck, this is real, but somehow it's not working, but we're not allowed to say it publicly because we'll look stupid.
+Yeah. And then there's a lot of investor hype.
+Speaker 2: Yep.
+Speaker 5: There still is, like, investors printing attendees. So you have the investors on one side. I think people realize it's real, but, you know, it's like, you know, you have the whole token maxing.
+Speaker 2: Yep.
+Speaker 5: And people are on onto that, and then so there's a whole value lecture there. Yep. You have a political situation where, you know, people who do not understand basic economics are winning the political argument. Mhmm. So you can you can we could talk about where Yeah.
+Speaker 2: There's a lot here. Let's break it let let's break it up. Let's start with the token maxing thing. Let's start with what's what's real. How are you actually thinking about deploying AI?
+Speaker 1: Well, first of all, what what
+Speaker 2: is your
+Speaker 1: what is what is Palantir's philosophy around token consumption?
+Speaker 5: Well, like, we okay. We have a product that will allow you to be I mean, internally, it's called something, but externally, but really, we call it the demasturbatory, like, get off masturbation thing internally. Sure. It's like Okay. People are just, like, print, like, sitting there all day kind of like a porn addiction, and enterprises are like, okay, we knew this, we believe this will create value Yeah.
+But we cannot have people just like some people
+Speaker 2: Checking the weather with it, just like and just rearranging deck chairs on their personal Titanic.
+Speaker 5: Literally like porn. Okay. Like, people are like full
+Speaker 2: on It feels it feels so Yeah.
+Speaker 1: Tool shaped objects.
+Speaker 5: Yeah. Right? Tool shaped objects you're looking at more than you want. You hope no one notices. Yeah.
+Speaker 4: You're kind of before dinner.
+Speaker 2: It feels productive to have every email classified
+Speaker 1: with tag.
+Speaker 2: Here's what
+Speaker 1: it comes down to. Like, business problems can never be I mean, sometimes they can be solved purely with money and just spending more, but very often
+Speaker 5: Actually, think it's the opposite. So just to give you a weird
+Speaker 1: analogy No. And I was gonna say very very often it's more the opposite where it's about figuring out the right way to do something, and then you can use capital to fuel that process.
+Speaker 5: But me give you a thing that's too generous for you guys. Okay. It it it's taste plus money.
+Speaker 2: Okay.
+Speaker 3: Yep.
+Speaker 5: And there is no like, AI like, if you look at like, to pick any issue you wanna talk about. Token what's going on with deploy codes, are other people gonna build ontologies, why are why why does our political class not understand AI, especially in Europe? Mhmm. It's like, yes, Because all these things can be scaled in a very valuable but largely going to commodified way, but you can't scale the taste of, like, what is the business problem you wanna have to solve and need to solve? At the end of the day, whether it's in the four whether it's the Ukrainians fighting, the Israelis, commercial entities, it's there's somebody sitting there who's like, okay.
+But this problem is valuable. This problem isn't. Mhmm. And once that value that problem is always has that problem always almost always, but not always, has attributes. So there are some problems you could solve with this.
+Like, I wanna write a report on GDP growth in China. Right? Okay. But if it's a problem that requires a knowledge store, like, I wanna understand the specialized way I underwrite. We're gonna have a guest here.
+I wanna understand the specialized way I drill for oil and gas that's both legal, ethical, and reduces the cost of production. Mhmm. I wanna change the the the supply chain of my industry, whether that's military or whether that's building boxes or whether that's cars, these things require actual, precise, ongoing processes. They are enhanced by large language models. They are not replaced by large language models.
+Mhmm. And then you get to security issues, like, the for us, like, the whole mythos things is just a boon. Because, like, yeah, we could take any model, their model, open AI model Sure. Open model. We can identify we can now identify vulnerabilities at, like, 10, a 100 x.
+Yeah. But then, who patches them?
+Speaker 2: Yeah.
+Speaker 5: How do you patch them on prem? How do you patch them on prem so that your specialized knowledge stays on prem? Like, if you're any business or Intel service, a lot of these things are very similar.
+Speaker 2: Sure. Sure.
+Speaker 5: Like, you're not putting your classified data in a public cloud.
+Speaker 2: Yeah.
+Speaker 5: Same thing if you're like, you have a special way of farming soybeans. Yeah. Well, you're not. So it's like, how do you have how do you so all these problems are exposed, identified, and then you always have a thing of where's the charisma, which people really underestimate. And it's it's not global.
+There's no global charisma now. Like, so right now, the large language models are very frontier companies are super charismatic with investors. Mhmm. I'll give you some news. They're super not charismatic with enterprises and the people.
+Speaker 2: Like, in a Even way with enterprise?
+Speaker 5: No. No. I mean, it's
+Speaker 2: because I understand what the people No.
+Speaker 5: No. The enterprise people, I have a secret I have a secret. Like, every company has a secret way of selling. Yeah. You know what my secret way of selling is?
+Don't even call don't don't come talk to us. There's a Frontier company. Go spend two days with them. And if you're lucky, after you're done, I'll let you in my door. They're, like, clamoring.
+They're, like, they're, like, hey. I'll take your bad brand, which we have a great brand in enterprise. But, like, it it's like it's like secret knowledge because the investors love this. They're like, hey. My stocks are all up.
+Everything's up. I mean, Palantir has done very well.
+Speaker 2: We're Yeah.
+Speaker 5: I get but it's like and, you know, you guys are doing very well, imagine. Right? And it's okay. We're we're you know, we can but I'll tell you what. You go down the street, you talk to a marine, you talk to a bus driver
+Speaker 2: Yeah.
+Speaker 5: You talk to the person who owns the bus driving company Mhmm. They are not happy. They do not like these people. They're tired of people token maxing. Yeah.
+They they it looks like masturbation at their cost them money. They they're like and honestly, then you have something we're not allowed to talk about in this country, likability.
+Speaker 2: Mhmm.
+Speaker 5: Like, Palantir, we have I think we have, like, fifty, hundred million global bands. We have, like, 5,000,000 people that wake up in the morning fig literally calling me Satan. Mhmm. I didn't know I had that kind of Mhmm. Warm hand.
+But, you know, it's like, that's what they believe. Yeah. Yeah. And, like, and they really believe it.
+Speaker 2: Yeah.
+Speaker 5: Okay. What people are not allowed to really address is, like, we have fans and enemies. Yeah.
+Speaker 1: Yeah. These people We're polarizing.
+Speaker 5: Yeah. We're polarizing, which means both sides.
+Speaker 2: Yep.
+Speaker 5: These people have one side.
+Speaker 2: Yep.
+Speaker 5: They're just it is so it's like Yeah. You and it's like it's a really
+Speaker 2: Social media companies too have the same problem. Yeah. Uses them, but no one likes them.
+Speaker 5: Yeah. But but then they also live in a circle Yeah. And that circle's printing money.
+Speaker 2: Yep.
+Speaker 5: So it's like, you know, when you look in the mirror and you just printed a lot of money, you look pretty fresh.
+Speaker 1: Right? Is part of it is is part of it that that some element of the technology, let's just say LLMs, is so magical that the companies involved, that the companies that are making and selling Frontier Intelligence can be bad at a bunch of other things and still grow?
+Speaker 5: Well, no. No. No. They are magical at a certain kind of thing, allowing you to write, for example, code. Now that code doesn't can't be used as a knowledge store.
+So if you look at code in, like, three different ways, like just using pounders or model, we have code that's basically infrastructure. So what what are the Ukrainians using? What is the Department of War using? What do a lot of our enterprises the the we call that primitives. It's basically hard coded things that that understand the world.
+Do do? It would take millions of technical hours and an understanding of all these enterprise to do it. So it's it's much more like how do you build a steel beam? Then you have, like, code that is written by FDs. Okay.
+So that's kind of managed. It's the reason why FDs work, the secret is it's actually managed in something that we as a product. So you're writing to a code base. We're managing that. We're increasing our product.
+It's not just random people writing. Then you have, let's call it free code. Mhmm. That free code is, that's magical. Like, can do it very quickly, it's almost right, it doesn't have to be exact Dashboards.
+Dashboards, financial
+Speaker 2: stuff Little flow.
+Speaker 5: Probabilistic stuff where you'd have
+Speaker 2: to One off analysis.
+Speaker 5: It was magical. Yep. By the way, it's magical, it not only creates and it's magical in a way, and know people don't like the porn thing, but it's also addicting. It's like, you know it's not good for you, but it may lead to damage.
+Speaker 2: One more dashboard.
+Speaker 5: One more time. It can't hurt that much. I know my doctor says I shouldn't do
+Speaker 3: it. Sure.
+Speaker 5: But it's like it's like that. Right? And you just keep going. And, like and if you're involved in that thing, you're also making money.
+Speaker 2: Yeah.
+Speaker 5: And then last not least, in certain circles, like, if you have you wanna be a researcher or you believe, essentially, it's a religion. So, like, you know and, like, one of the things that's very charismatic, especially to people who've never had a religion, because all of a sudden that hole in your heart that was yearning for, I don't know, I would say, you know, a a established religion, Judaism, Christianity Mhmm. Islam is like being filled. Yeah. And and all the answers are there.
+But it is very very successful at doing things that a company has to do. But it is not actually solving the problem that enterprises are it is now it can solve them. That's the trick. It's not it's not binary. It's not like you can't say they're not valuing.
+They're totally putting our business on steroids.
+Speaker 2: Mhmm.
+Speaker 5: Like, without LLMs, nobody would be talking about our ontology, about Apollo managing secure exploits, about our ability to manage enterprise essentially, turning all these companies into FDs. These deploy codes, we love them because now every company wants to deploy code. You know how you do that? You replatform on Palantir. Yep.
+And like and it actually works. It's not somebody with no taste who's never done enterprise, has no earthly clue how these things work Yep. Who's done something else and is like just imagining they know how to do it. Right?
+Speaker 1: Yeah, is of this moment quite entertaining for you? Because you guys have been working on understanding businesses at a deep fundamental level, creating you guys have effectively been doing the work that it that people are promising AI could do for twenty years now, but actually doing it, finding all the really rough finding all the really rough edges and not, and and being at a point where you don't have to oversell the technology, you can sell both things. But now there's maybe, here we go, we got it Now there's maybe.
+Speaker 2: Oh, it's the wrong side. That's why. Flip it around. Can't get someone I
+Speaker 5: to make the dyslexic There we go.
+Speaker 1: You go. There
+Speaker 2: we go.
+Speaker 5: We got that. I don't know. All this stuff was everywhere.
+Speaker 3: I I trailed off. But No.
+Speaker 1: I understand. Is part of it entertaining to you that it feels like, you know, Palantir has always been, in some ways, not had competitors because there's nobody with Alex Karp running a company that does what Palantir does besides Palantir. But at the same time, there's been tens of billions of dollars deployed now to effectively do what Palantir does, but just selling the intelligence part, not selling all the underlying kind of
+Speaker 5: infrastructure
+Speaker 1: that
+Speaker 5: you're doing two things. They're selling they're trying to sell the intelligence part, and they're trying to pretend if you just hire a bunch of people and let them run around their FTEs. Now the the very cool thing is when you've been in your basement doing your thing and everyone kind of use it as the freak show, it it's really interesting and and and and great to have adoption. The pretty ironic thing is half the people adopting now don't even know they're copying. But now, the copying thing helps and hurts.
+Where it hurts is, in the beginning, it puts clutter in the market.
+Speaker 2: Mhmm. Yeah.
+Speaker 5: And there's no doubt about it. Where it helps and then we saw this with defense tech, honestly. So, like, in defense tech, we were the only people. We were the first people, despite what I I love these, honestly, other podcasters. They're interviewing people who are parroting things I said twenty years ago.
+They don't know it. And it's like, oh, that's so insightful. It's like, yeah, of course it's insightful. Karp said twenty five years ago. And like but it says but so that kind of that part is super weird.
+Yeah. But and, like but but it's but what really happens when we see this is, like, it expands the market. Mhmm. So, like, in defense tech, we would not be doing this well in just purely in government unless there weren't 50 companies that were doing similar things. Yeah.
+Because then the people are like, okay. First of all
+Speaker 1: You view it as, like, off balance sheet sales resources where people are basically Well, it
+Speaker 5: it's off well, no. That that's the large it's they do two things. They increase the size of the market because, de facto, nobody wants to find an underwriting market where there's only one person.
+Speaker 2: Sure.
+Speaker 5: So, like, if you're the one person, the percentage of the defense budget you can get is much smaller. And two, they set up a comparator. It's like, you know, you may not like the freak show. Okay. If you like, but have you noticed the people who are serious buy it?
+And then three, it changes the standard. Now, what you're seeing now is that times a 100 x. Yep. And it does change recruiting, retention, and how you build a company. And we're always thinking you have to think about how to being just like a huge advantage there, because you don't have a playbook, and now you need things to shift, and we're doing that.
+The the the central thing, though, that is just cannot be developed, even if you understood the playbook, a lot of these things are, like appear like it's like, you know, LM code appears like Poundry code, but isn't for a deployed thing. Appears like Poundry. It isn't ontology. You could theoretically copy parts of it, but they're essentially structures that are built deep into organizations that we own. And by the way, take you three years.
+In three years, we're in a completely different world. But there is this magical thing called taste. Like, in the end of the day, the reason why you guys have done so well, it's course, there's aptitude and diligence and showing up and all those things. Yeah, but you have to be able to differentiate between two people who are in business, one of whom is saying something that sounds weird that is insightful, one of whom is parroting something that sounds weird, and that's all they're doing. And a lot of people, very few people, can do that.
+And do the same thing. Like, the enterprises that succeed, there is a taste arbiter. And at Palantir, we taste arbiter. We have taste in every product, taste in every deployment, taste in every casting. Who puts the people there?
+How do you put them there? How do you organize the thing? Our ontology then does that technically. How do you manage the whole org with taste? Who should be in charge?
+What data sets should come in? What what are where do the ways in which you protect? What is what should you push into the public crowd? What should be on prem? What what should I mean, leaving aside the law and, like, wars, war ethics, what do you wanna protect?
+What should you protect? What should you not protect? Because, quite frankly, you want that to be out there so you can get more data. All those things are arbited by taste, and then you have to have the credibility of having taste. That's a real problem for a lot of these places because they don't have they they're popular with their friends.
+They don't they really don't understand how unpopular they are in enterprise. Like, they think it's like, oh, yeah. It's like the way I think I have a problem with, like, professors at Columbia. It's like, no. It's a real problem.
+Yeah. Like, they think I'm Satan. And, you know, it's like, I I I think we grew up in the same community. Let's talk about Heidegger. Yeah.
+They're like, they don't wanna talk about Heidegger. So it's like it's like yeah. And so that's just a it's a weird thing. It's gonna be a super the one thing I would say for anyone listening, if you're listening to this and you're chillaxing and not active I'm not saying you have to agree with me politically or anything.
+Speaker 2: Yep.
+Speaker 5: There the like, partly because of this dynamic, and it very self inflicted because I I I'll tell you, I can't name names. I called many of the titans of this world and and, like, started this six months ago, like, couple days, were going to be You
+Speaker 1: call them every couple days?
+Speaker 5: Like, some of them are like, yeah. We're gonna be mean, you know, it's like honestly, they're like the batch. They they find me very entertaining. Like, I'm not sure. Like, so they call because yeah.
+It's like, yeah. Like, oh, yeah. This is gonna be entertaining.
+Speaker 2: You're gonna pick
+Speaker 5: it up. Yeah. So any case For sure. I've been telling them for six months Yeah. Six we're gonna be nationalized.
+Speaker 2: Yeah. Yeah. You talked
+Speaker 5: about We're going to be nationalized. And they're like, why would anyone nationalize? It never happened in America. It's never why would anyone nationalize us? We're so likable.
+We're creating so much value. Like, okay. I'm not gonna debate that. I know how likable I am. I'm I'm not gonna tell you how likable you are.
+But I am telling you, and you know the momentum on this is on the side of people who are nationalized. And we don't get our act together and figure out ways we can say, hey. Look. There are problems here we're gonna deal with. These things are not gonna yes.
+They are gonna create opportunities. You have to talk openly about how these things are valuable because we have adversaries. You can't just say these all that stuff. So the primary risk, honestly, to Palantir and a lot of these other countries is and then it's going to be nationalized. Before nationalized, it's gonna be regulated by people who don't understand this.
+And now, they'll tell you in private, I'm working on this, and da da da, and this and this lobbyist. It's, like, not gonna work. So that's something, if you're listening to this and you're like, look, you don't have to agree with me on all my proclamations. By the way, there's some people who think, I'm saying we should have a draft, too lazy to read. I'm just saying we should in a world where everything is changing, everything is changing, don't we have to find some communal structure to remember we're American?
+You don't like my idea of we all do a week in the park? Great. Come up with some other idea. Wait, we can have no idea? And then they're like, well, I'm saying I do not want to draft, just to be explicit.
+They're like, oh, that's pro war. No, honestly, you know what? Most of our wars are fought because no working class person is making a decision. You start making sure everyone is involved in everything. I'll see you have a few wars we fight.
+It's actually the anti war position. But any case, disagree with everything. We have on the right and on the left people people who have no earthly clue what they're talking about, right and left. All they're talking about is how much they hate us. And those of us who are sensible in the middle, too many of us are chill waxing.
+Oh, like, nationalization. It can't happen. America would never
+Speaker 2: do Sleepwalking.
+Speaker 5: Sleepwalking into and you guys have tendies to protect now. You guys should be on the front line of this. Like, you got full toe oh, I'm sorry. I have a I have a full on, very impressive corporate leader coming on. Yes.
+So I gotta I gotta turn it down.
+Speaker 1: Question. Last question if we have time. Yeah. How are your conversations going with Fortune 500 CEOs around headcount planning? There's been so many layoffs this last year that people were saying, hey, we're getting so much out of AI.
+We're able to, you know, cut back here or there. People inside tech often know, like, these maybe there's just reduction because there needs to be a reduction or got bloated, maybe they do need to fund some AI Or is
+Speaker 2: it declining business model, like,
+Speaker 1: getting out compute Yeah, the business just doesn't have momentum, but how are those conversations going? What does it look like?
+Speaker 5: By the way, I talk to Fortune 500 companies. I talk to unions. I talk to soldiers. I talk to fire. If you upscale somebody, they're more valuable.
+Speaker 2: Sure.
+Speaker 5: And whether it's people working on batteries, people driving trucks, people, corporate leaders and, again, this is where I think we have to be very careful to be more disciplined on the corporate side. Like Mhmm. If you run around saying AI allowed you to fire two thirds of your workforce, you did it because maybe your competitor's kicking your ass
+Speaker 3: Yeah.
+Speaker 5: That could that is a really like, you might as well just go sign up for Bernie Bernie Sanders' manifest. Sure. And part of the thing is they really believe that can't happen, so they're free riding on the fact that it could. Like, we have and and it just cannot work anymore. These things are very, very explosive.
+The American people sense that there is something dangerous here. And when people are playing with that fire, it's like it's a they assume the fire won't burn their hands. Well, that's not the world we're in. That fire is going to consume us. And what we see again, the war fighting example is just the most neutral, not for everybody.
+But the soldiers at the bottom have gotten much more valuable. And I don't even just mean the special operators, which obviously, they're in a different league. But like, every the people doing a lot of the operations now are doing our product. They're high school, vocationally trained. You see this everywhere.
+The the the modern enterprise is going to have like, we have a true like, very, very, very smart person coming on. And it's like, you're gonna have a very smart executive. He's much better at hiding it than I would be if I were him, but that's you can talk to him about that. And and then very talented, creative people with taste all up and down the stack. Any case, I think this is time for me to
+Speaker 2: Maybe this is time.
+Speaker 5: Can we
+Speaker 2: Thank you so much.
+Speaker 5: Yeah. Great to catch up.
+Speaker 2: It was fun. Oh. First
+Speaker 5: Oh, they want me to stay for two minutes or what? Oh, yeah. I'm only gonna stay look. But just to me, he's gotta be the star.
+Speaker 2: Can just The other headset
+Speaker 5: is free. Put him put him yeah.
+Speaker 2: Go in here.
+Speaker 5: Yeah. And I'm just gonna I'm gonna take off after a minute.
+Speaker 2: We're gonna Here. Here. And why don't you here. Put that headset on.
+Speaker 1: Carv, why don't you introduce our guest?
+Speaker 2: Microphone on the left.
+Speaker 5: Well, one of the smarter people in business has developed unique ways to underwrite that did not involve firing people and someone I admire.
+Speaker 6: Thanks, Alex.
+Speaker 5: With that, I'm gonna let you guys go. Make sure to tell them that the Intelligy powers it.
+Speaker 1: Always selling. Fantastic. Thanks for coming
+Speaker 3: on the show.
+Speaker 1: It's great
+Speaker 2: to meet you. Pleasure. Yeah. Please, kick us off with, like, a bit of a more formal introduction.
+Speaker 6: So I'm Peter Zaffino. Yeah. I'm the executive chairman as effective on Monday of of AIG. He's got be the chairman and CEO Yeah. And have, you know, worked with the company for nine years to help transform it.
+It was in a place where underwriting profitability was challenging, operations were challenging, data was challenging Mhmm. Capital was challenging. So, you know, I had a great team of people Yeah. With me to transform the company.
+Speaker 2: So give us the give us the shape of the business in terms of the different business lines, the different products, the international footprint, the workforce. Like, what give us the scope and the scale here.
+Speaker 6: Global company with a little bit of a unique footprint. We're 50% international, 50% North America. But our second largest country after US is Japan. Oh.
+Speaker 3: We have
+Speaker 6: a big business in India.
+Speaker 2: Okay.
+Speaker 6: And then we have a very big business in The UK. We do complicated risks. So you could think about what's happening in The Middle East now with shipping, marine, energy. We're heavily involved in that.
+Speaker 2: So something where there's not an existing futures contract that a company can just go and hedge. It's not, oh, I'm going to buy some oil futures because I fly planes around, and I know I'm going to need diesel fuel in a couple months. And so I'm going to hedge that out. This is for more complex risks.
+Speaker 6: It's for more complex risks.
+Speaker 2: Got it.
+Speaker 6: And think about the largest sort of customers in the world, big oil companies, Fortune 500 companies. But we also have a personal insurance business, which will cover things like accident, health, that are distribution to consumers. Yep. We have a real balance.
+Speaker 2: Part of that feels like if you're talking about insuring a Fortune 500 company against a geopolitical risk, that feels like a meeting that takes place in a board room. It feels like there's a lot of folks with a lot of trust built up over years to understand each other's businesses. But then there's probably a lot of other underwriting happening and teams, putting together comps and spreadsheets and data, and I wanna know about the the intersection there. It feels like the business is, and I don't know if it ever will be, just one click checkout for for insurance products for Fortune 500 companies. But what what is the interface between the quantitative, the qualitative, the relationship and the data?
+And then how is that changing?
+Speaker 6: So the quantitative, you have to start at the portfolio level. And you want as much data as you possibly can to look at deterministic modeling, probabilistic, then stochastic.
+Speaker 3: And I
+Speaker 6: think once you understand like, your mean and you understand the standard deviation around that, then you have to apply it to sort of the widgets, which is each policy
+Speaker 2: Okay.
+Speaker 6: Throughout the globe as well as ways in which you structure Yeah. Insurance. So for us
+Speaker 2: You can't at an individual policy in in isolation. You're you're you're managing portfolio risk, risk to the entire firm, and and that's something that's happening probably twenty four seven, I imagine.
+Speaker 6: It's hard, and that's what led me to Alex Karp. You know, it's it's hard to get the aggregation done in anything that looks like real time. It's usually static. It can be thirty, sixty, ninety days. And your portfolio could change.
+Speaker 2: Mean, it's not
+Speaker 6: going to change dramatically. But having the ability to assess risk and use the quantitative data to make better decisions on a daily basis is the aspiration of the way the company is going.
+Speaker 1: Yeah, that makes sense. Take us back to your first meeting with Karp. Curious what the experience was like. It's a unique individual.
+Speaker 2: Could we call you?
+Speaker 6: Yeah, no. I was actually introduced by a board member many years ago. And it was really in this pursuit of not necessarily foundry or AIP or ontology. That's where it led us. But it was more on sort of the quantitative ways in which I was looking at the portfolio.
+And could he help me think through computing? And could he help me think through portfolio optimization? And I just got more and more intrigued. I mean, you see the brain. I mean, he just thinks about things.
+He doesn't hold back. So I always knew where he stood with me and with AIG. But just developed a very strong trusting relationship. And there's such a tremendous partner that we're able to iterate with them almost like no other company, because we do things in ninety day increments. Because going out like a year or two years is too static.
+And so we actually build our relationship on ninety day goals. And that's been incredibly effective.
+Speaker 2: A lot of AI companies talk about scaling laws, exponential growth in token production, or even revenue in many cases. But what's growing exponentially in your business? Are you bringing exponentially more data into the platform every year, exponentially more compute resources, teams, number of policies? Like, what is the thing that's experiencing a boom right now?
+Speaker 6: The most important part, I believe, in terms of business is that you have to have a business solution you're trying to solve for. So for us, it was more data, better data, and then reduced cycle time. So in other words, when we get the data that comes in from our distribution partners, how fast can we get it with higher quality data and more data to the underwriter to make decisions?
+Speaker 2: Got it.
+Speaker 6: And then how do we actually make
+Speaker 2: these Really, what's an example of distribution partner in this context?
+Speaker 5: So it would
+Speaker 6: be like an insurance broker or insurance agent.
+Speaker 2: Makes sense,
+Speaker 6: yeah. Or someone who has their
+Speaker 2: client Who is is selling the product effectively? Exactly, Yeah, that makes sense. Else? Jordy, do you have something?
+Speaker 1: Was I going to go? Alex wants to cover ontology. We'll get there. We I mean, we at least started covering early stage startups. There's been a debate in our kind of little sub industry right now around a bunch of new insurance focused startups that are growing incredibly quickly.
+And there's a debate going on as one, maybe AI makes it more possible to underwrite risk. And if you can do that well, grow very quickly. The other side says, hey, if you're hyperscaling an insurance company, maybe that's not Maybe you don't wanna work with a company that is going through that hyper
+Speaker 3: The iron law of
+Speaker 1: the universe. Maybe. What goes up fast must come Talk down about what AI has actually enabled, where you're excited about it, where it's failing broadly, maybe where it's overhyped. And you can, I guess, tie that into everything you built with Palantir?
+Speaker 6: There's never been a time, in my opinion, whether it was introduction to fintech and SureTech, how to use algorithms, how to build data lakes and repositories for data. There's never been a time in my professional career, so it's thirty five years in big companies
+Speaker 2: Yeah.
+Speaker 6: That I've seen the ability to change how an an organization actually runs itself. And that can come from big companies like Palantir or Google, or it could come from companies that are being funded by venture and have a very specific niche that can be additive to the organization. And what I think is happening we talked about the sort of data ingestion portion, getting that into a digital workflow, using large language models to extract more data from what comes in, but also helping underwriters make decisions that are more comprehensive. You also have the ability in the way in which you service customers to be much better through the use of AI. I think companies generally, my observations, are struggling with the orchestration of how you actually drive agents, people, and data into an organization.
+And once that is solved and is certainly on on its way, capabilities are there, then you start to think about the entire end to end chain being very different.
+Speaker 5: Yeah.
+Speaker 6: What I think about Palantir, while they've been such a critical partner, is one is we evolve together. But in that data ingestion, to be able to take structured, unstructured, text, all sorts of data, and get into a workflow in a fraction of the time helps us on the things that we try to achieve. It's like we have now data that we probably wouldn't have used before because it wasn't good, or we couldn't translate it, couldn't get it into the digital workflow. And then we start to build out an ontology. And I really do think it's incredibly important.
+If there's one thing I look at for our organization, certainly the advancements of LLMs, their ability to do things more autonomously now where we started with the binary gen AI, now we're into a Gentic AI where we can just do things autonomously for so much longer. Without the ontology of actually building, like, what the sort of digital twin of your business looks like, where you take it and how you evolve it becomes very challenging. So we've been able to do things with Palantir. I'll use the ontology example. Again, we did the full ontology of AIG, and then we went to look at an acquisition called Everest, which had about $2,000,000,000 of premium.
+We got Palantir in to work with our team. We could build an ontology of Everest's portfolio on top of ours in four days. And quite frankly, what we started to learn again about that evolution is that you always relied on data lakes or global data repositories. What we found is that we could get sort of foundry and start to build out this ontology with going to the admin platforms. All of a sudden, repositories in the central places of getting data and make sure it's scrubbed wasn't as relevant.
+So I think we continue to advance that
+Speaker 2: Yeah.
+Speaker 6: In in the way in which we are looking at our business.
+Speaker 2: I have a I have one last question. Just on the actual change management, the organizational, like, how the office feels, what how did you go about actually working with Palantir? Do you set up your own internal Palantir workforce who sits alongside FTEs? Do you let Palantir come in and plug in, like, one person per team that you have set up? Like, was there a best practice?
+Did you go with the best practice? Like, what was the actual, like, experience of deploying the forward deployed engineers? They get deployed into the organization. That's gotta be a unique situation.
+Speaker 6: First is making sure Alex and then Yeah. You know, two of the senior executives, Ryan and Ted, that everybody knows what we're trying to do together. So we start there. Then we wanted to embed the engineers with our team. So if we had a business leader that was trying to drive the underwriting output, you'd have technology from AIG.
+You would have some of the change management. But you have the engineers sitting there with our teams throughout the entire process. Because the iteration is really important in terms of translating what you're trying to achieve from the business side and the engineers actually helping us think through the application of some of the LLMs or ways in which we could circumvent some of the things that we were doing.
+Speaker 2: Yeah. That makes a ton of sense. Jordan, anything else?
+Speaker 1: No? Well, has to be the most important topic. No, no. The last if we do have a second, You've
+Speaker 2: gone.
+Speaker 1: Not sure on timing. How are you thinking about workforce planning? Asked Karp about this and he said to ask
+Speaker 2: Or token budgets.
+Speaker 1: That's interesting We've stayed, as you've had this wave of AI layoffs, we've been over and over and over reminded people that if you have an individual and you give them more capability, you make them more productive, you make them more efficient, a thriving business will wanna hire more people, right, because you can get more out of every individual. And so we've tried to remind people that over and over and over as companies that oftentimes are underperforming or bloated for whatever reason. But what's your kind of philosophy around hiring, headcount planning, rifts, all that stuff in this kind of new era?
+Speaker 6: We've been focusing on I heard Alex at the tail end, and I agree with him. So we're focusing on growth. We're focusing on reskilling and actually training our employees to be in a different part of the workflow. Now, you would do this, I believe, in all of this. You have to still have great end to end process.
+And so things that have been the human's been an LLM trained how to do things outside of a normal workflow, you have to get rid of that. So I think that's just normal business. But our aspiration is not to implement AI or anything that we're doing with our partners to eliminate jobs. It's about growth, reskilling, and finding ways in different markets to have exponential growth and opportunity and having a lot more insight in the business that we run.
+Speaker 2: That's a great optimistic vision. I love it. Thank you so much for taking
+Speaker 1: the time to come chat with
+Speaker 2: us today.
+Speaker 1: Thanks for calling. Great to be
+Speaker 2: with you. Have a great rest of
+Speaker 1: your time. Thanks.
+Speaker 2: And up next Next. We have Chad Wahlquist. First, I'm gonna tell you about CrowdStrike. Your business is AI. Their business is securing it.
+CrowdStrike secures AI and stops breaches. Welcome to the show. How are you doing, Chad?
+Speaker 1: Great overcoat.
+Speaker 2: That's a new one. It's a pump.
+Speaker 1: That's an Eliana special.
+Speaker 4: It is.
+Speaker 2: Oh, yeah. He is the master.
+Speaker 1: Giving us a run for our money.
+Speaker 2: Yeah. It's fantastic. Anyway, kick us off with an introduction on yourself, how you fit into Palantir, a little bit of backstory. I'm sure we have a ton of questions to run
+Speaker 1: through. First, how often do you guys do these things? Because it feels like this feels like an annual feels like an annual event.
+Speaker 2: Yeah. But We're getting the call every three months now.
+Speaker 1: Carps Carps about, you know, manipulating time. You know, a quarter at Palantir is like a day
+Speaker 2: Yeah. A year at a else. That that is exactly
+Speaker 1: So that it kinda makes sense.
+Speaker 4: Yeah. I'm, like, actually 23. Yeah. The time the time warp is really wish we do these quarterly.
+Speaker 2: Okay.
+Speaker 4: Yeah. So I'm I'm a Ford deployed architect technically. Yeah. I do what is needed. Yeah.
+And so doing the needful is kind of the Palantir way. Like, there's no job below me. And so no matter if I'm out on the edge with customers, I'm talking to executives, explaining the ontology, doing YouTube videos. Yeah. That's all what I'm doing.
+So really, the the goal is how do we help people decomp problems differently and apply the technology in ways.
+Speaker 2: Can AI do decomp? Yes. Okay. Unpack that because that feels like the secret sauce. That feels like the special thing about Palantir is actually being able to bring someone in who understands an organization.
+I think a lot of people see AI tactile. A lot of people see AI tools no. A lot of people see AI tools and they and they think, okay. Very defined workflow, input, output. But now instead of just math that Python can deal with, you can deal with some text, and that's great.
+But decomp to me, has always felt less like, let's go into your HR system and understand the basic job description, like, oh, someone uploaded this resume versus, oh, Steve actually does this completely outside of that system, and marketing has two two platforms for this thing, and engineering has three systems for CAD files, and they're all the kludges that have built up over decades, sometimes hundreds of years for some of these organizations. Like, that's what was so special about the forward deployed engineer program, the Palantir model. Yep. I'm surprised to hear you say AI AI can do it at all. It feels like the final boss.
+Speaker 4: Well, this is where the the really, Palantir thesis is humans and AI working together. Mhmm. And so the way we think about this is modeling our business process. We heard some other people talking about this of modeling my business process in the ontology. Mhmm.
+Because the LMs doesn't don't necessarily have a world view or a world model of your business in your operations. The ontology provides that.
+Speaker 2: Okay.
+Speaker 4: And so when we talk about decomp, this is really about actually now I make more data computable as well. So we think about LMs on the agents and I'm interacting with them. Also, we use LMs to make more data computable and then model that in ontology of how things are really working. And so what we are actually doing a lot of times now is is building out that world view and then running multiple agents over this actually being combative towards each other. Right?
+And so actually working against each other and having critiques. And so after you you do that, you can also then give the human human in the loop feedback about this and iterate on this. And so what we find is that's really a scaling mechanism. It's like a new power tool. Right?
+I think you guys were just talking about this, kind of the perspective around jobs and all that stuff. It's like when you gave carpenters power tools, there weren't less carpenters. There were more. I could do more with it. Right?
+It's an empowering thing.
+Speaker 2: Yeah. So how often like, I I I I'm interested in the, like, the pie in the sky Palantir pitch, understand your entire business, run your entire business on Palantir. And then some of the nitty gritty where sometimes, like, the low hanging fruit is, like, wait, there's a like, there's someone's job to just, like, take a form and type it into a sheet? Like, we have we've had image recognition for a long time. Let's actually go and implement that and get that into a database, get that into the ontology, get that into Palantir so then we can start building on top of it.
+And it feels like there might be a tension there. Obviously, both processes are speeding up. But how do you do you sort of, like, keep the project centered around the big goal while still chopping wood on all the things that actually need to happen? Yeah. And I think this comes back
+Speaker 4: to the forward deployed piece and, like, what do we deliver Yeah. Outcomes. And and we work backwards from that rather than, hey, have this data. I'm gonna build the data warehouse, and then I'll build reports because all my data's
+Speaker 2: in one place. That's
+Speaker 4: That's the that's the field of dreams. Yep. No one shows up. Yep. Right?
+And so really, when we decomp things and work backwards from that, you know, the simple things like the form filling out, there's a lot of that. Yeah. Now, the one approach that we see a lot is, know, enterprise software is gonna force you into their box.
+Speaker 2: Sure.
+Speaker 4: Right? You go fit yeah. You go fit into this box. Yeah. Well, you know, okay, did I take away the special sauce, which was my company?
+Because people were doing these all these kind of amalgamations. Hey, 40 ways to do a PO.
+Speaker 5: Yep.
+Speaker 4: Well, maybe it is okay to do 40 ways, but my software can't handle it and it's fragmented. Right? So there's there's actually a middle ground because, you know, for a long time customization was kind of a four letter word. Right? Yeah.
+No one wanted to do that. And I think that's where we think about malleable software. Actually, how do we help you be more different, not more similar? Interesting. And that's then when we decomp problems thinking about not only the the kind of the quantitative piece, but the qualitative piece and the people and process around this, how do we should enable those people to do the things that made them special?
+Speaker 2: Is is software getting more malleable? Because I I I can look at it two ways. I can look at one, you know, obviously, AI agents are incredible at coding. They can run they they can make changes very, very quickly that would take you a day and just a few minutes. Yep.
+At the same time, I see, you know, so many screenshots of people saying, I implemented this feature. Again, the GitHub is plus a million lines of code. And at a certain point, like, the context window is growing as fast as the code generation's growing. Like, there's a I I'm a believer in the answer to bad slop is good slop and more slop maybe. But what are you actually seeing on the malleability of software?
+Because sometimes the most malleable software in the past has been, oh, well, there was a really incredible engineer who figured out this problem and baked it down to a 2,000 line repo. Yep. And you can actually just put in your own context window so it becomes more malleable and you can use it as a building block.
+Speaker 5: Yep.
+Speaker 2: And that feels like that's going away, and I wanna make sure that we've that we're ready for when it goes away and it remains malleable.
+Speaker 4: Well, I think what's missing is the malleable enterprise scaffolding that you Okay. And that's what we think about the ontology Sure. And Foundry and the platform, and then Apollo that allows us to go deploy these changes.
+Speaker 5: Sure.
+Speaker 4: And so it gives us the right amount of structure, but the right amount of freedom. So I think that's the balance we try to find is that malleability in the middle where we can actually scale. We can enable people to do things differently while still creating enterprise grade, robust, secure, scalable software. And so it's actually a balance there about how I can enable that engineer that has been doing that. Now they can write code much faster.
+They can oversee things. And that enterprise scaffolding in the middle allows us to actually create the right guardrails, create a safe system of work for them to go develop things in. And then it's also the feedback loop. So the other thing that we do with our ontology and our platforms is implicit and explicit feedback from users using it. So the OODA loop
+Speaker 2: Yeah.
+Speaker 4: That I create. And really, that OODA loop allows our customers, as they're doing workflows, they're giving feedback to agents. Now, can agents help them do more Yeah. Based on the feedback? So both explicitly saying, hey, that was wrong, this sucked, or I chose this option.
+Now, if you do that enough, agents can start to learn from this. We actually store that in our ontology to allow it to scale. So it's really that human centric process around AI. AI is not like we shouldn't be thinking about AI from the sake of AI for AI. It's AI to enable humans to do more.
+Yeah. That's the frame.
+Speaker 2: Oodle loop, observe, orient, decide, act. Yep. Right? I have a different question, but you can you can go.
+Speaker 1: If you were giving if you had thirty minutes to give feedback to the AI labs. What are the kind of key areas? Let's say the frontier labs,
+Speaker 2: right,
+Speaker 1: leading models. What what are the kind of key areas that you would be focused on?
+Speaker 2: Yeah. I mean, I think when we think
+Speaker 4: about the enterprise space, you know, we
+Speaker 1: One, you're like, don't compete with us.
+Speaker 4: No. Actually, I think optionality is a good thing. Like, I am agnostic to where you store your data, where you store what model you choose, what compute you use. So we can allow you to use any of that. Because the last thing that actually drives an outcome is replatforming, moving to another thing.
+Speaker 2: And that goes back to the on prem culture, those secure cloud cultures, ITAR compliance. Like, this is in the DNA of the company.
+Speaker 4: And so how do we actually enable people where they are? Instead of the focus on, oh, if you replatform everything to Palantir, everything will be great. Like, well, actually, you've probably been replatforming for years. Yeah. Can we enable what you have to go do these new things?
+So when you think about, like, the model companies and it's, you know, how do we ensure that we can give the feedback loops around, you know, tool usage and
+Speaker 1: Yeah, that's the kind of stuff I was wanting to get your point of view on. It's like, I'm sure you're getting into the nitty gritty with individual models where they're spiky, where there's shortcomings, etcetera.
+Speaker 4: Yeah. So we actually just launched I just put a YouTube video out last week on this new tool called Evolve. We talked about it in the halftime show, where customers are using, actually, AI to help them understand which model. So maybe the meme around, hey, make it exist first and then make it good. Yeah.
+Most of the time I see people building with agents, they're using the latest frontier model. Always.
+Speaker 2: I just got it working.
+Speaker 4: Yeah, And then all a sudden, the token maxing and everything else, know, like, my gosh, it just blew through my whole budget. Yep. So we built a tool called Evolve that will actually go analyze the logs in production about how these models are operating, what people are doing with them, the architecture over it, and actually be able to swap out different models from different providers. Or hey, actually, most of this workflow, you can use this model that's older and actually, without thinking and test time compute it, it's more deterministic. Or even cached models.
+Cached models. And then or, hey, if you actually just have this piece of data in ontology, then you would eliminate all this in 50% of your cost. Yep. And so some of these customers McCarthy talked about this at our halftime. They they were able to, in two days, eliminate 60% of their token cost by re architecting, picking a different model, and and prompt tuning.
+So it's a combination of all those. The permutations get really hard, especially when it's in this probabilistic models. Yeah. We've have tools to do this in the deterministic world.
+Speaker 2: Prompt tuning. It's a instead of don't make mistakes. It's okay to make some mistakes. Yeah. Yeah.
+If the mistake is gonna cost just a little bit, I'm fine because don't make any mistakes, that's gonna cost me a fortune.
+Speaker 1: Well, there there there was some chatter yesterday around something a model was doing to be more efficient was talking and and, like, this bad.
+Speaker 2: Oh oh, Kate Man. Kate Man prompt is the Kate Man prompt. The Kate Man prompt method actually works.
+Speaker 1: How often are you working with a company that is having, call it, like a mini ChadGPT moment within their enterprise, and then they're just like, let's not tell anyone about this? Because I imagine like there's all these there's clearly places What where
+Speaker 2: does that mean? Their product is taking off like ChatGPT?
+Speaker 1: Well, so they've found a way to apply AI Okay. In a way that is highly, highly effective and gives them an edge.
+Speaker 2: Oh, interesting. But Yeah. Like like like the theoretical, like Within, like, x technology, you have to transform
+Speaker 1: that Yeah. So so x people are very loud. Right? Yeah. Yeah.
+They figure they're like, I just had this using everything. Yeah. I just had Yeah. A product work for thirty hours on this thing. They'll talk about it.
+But if you're a Fortune 500 and you figure out how to do something, it's not like you want to put your hand up and say, like, guys, I figured something out. Secrets are valuable. And these advancements and breakthroughs are not going to be uniform.
+Speaker 2: The airline industry will never be the same when your direct competitor copies you. They're like, yeah.
+Speaker 1: And so part of why right now the meme is token maxing, and that's obvious, going to be an obvious area of debate. People are happy to go talk about it, say, CEOs might say, hey, let's stop doing this. But there has to be all these other kind of pockets of interesting moments where we won't hear about them until they become kind of like standard operating procedure.
+Speaker 4: Or you see it in the earnings and the economics piece, right? So I yes. Unfortunately, x is not the real world. You know, and there there's a lot of grift and noise and, you know, podcasting, PM ing, and, you know, that kind of stuff that goes on. But I I I think in the real world, yes, there is the haves and have nots.
+I mean, we were just talking about AIG. Like, when you can start to actually do the underwriting and have quotes back in hours or days instead of months on these highly complex enterprise kind of insurance agreements, if you don't have that, how are you ever going to compete? And so when we think about this as the n of one, those are the companies that we're going after. And we see where there are those moments that are not public.
+Speaker 2: Yeah, that's an interesting
+Speaker 1: category because you can imagine AIG is working with a potential customer or renewing a policy. And that customer is going and talking to all of AIG's competitors. And if AIG is able to turn around a quote or a policy in twenty four hours, and then it takes another player you know, two weeks because it's Yeah. You know, complicated. Email and spreadsheets.
+So many so many teams will just say, like, hey. We you know you know, especially once you have two bids, can basically say, like, okay. Does that third, fourth, fifth, we'll kind of wait on those because we have Yeah. A good option here.
+Speaker 4: Well, it builds trust. The other piece here. So when you see people operating with that level of efficiency, what else can you do? So I see this whether I'm doing SAP migrations, the least sexy thing you can talk about. But hey, if I can cut your SAP migration Let's
+Speaker 2: give it up for the first year.
+Speaker 4: Yeah. It's like the least you know, exciting thing on on paper. But, actually, if I if you're spending hundreds of millions of yeah. You guys get it. But hundreds of millions of dollars on a migration, and we can cut it in half.
+Yeah. That's a massive deal.
+Speaker 2: Back on the OODA loop, observe, orient, decide, act, on the observation side, what is the supply and demand imbalance for dashboards? Like, what and what I mean by that is is when you're working with a company, is there is there more demand for dashboards? More people asking, hey, we need a dashboard for this, we need a dashboard for that. And you have to back people off and say, I don't know if the dashboard's right for this. Like, you might just wanna do an ad hoc analysis or actually go and see versus you're seeing so much opportunity that you're like, okay.
+We wanna push dashboards out everywhere. Like, what what what walk me through dashboarding right now because I've always been, like, sort of, like, oh, there are too many dashboards. You build them and then no one looks at them.
+Speaker 4: Yeah. I wanna kill all dashboards.
+Speaker 2: Okay. That's my perspective.
+Speaker 4: I'll take that. Dashboard I mean, KPIs and dashboards should be a byproduct of operational applications where I'm making decisions. So we talk about the Oodle loop. I have to actually act for things to hit the bottom line and be valuable.
+Speaker 2: In the actual application.
+Speaker 4: In the application. So as I need those things and it's going to inform a better decision, that's where I want those metrics. That should be a byproduct. If I go out with the goal of building a dashboard, it's going be the field of dreams again. No one shows up.
+And so, yes, it should be you're going to have to build some of those things. The other side of this also is you think about a data warehouse, like, literally, I won't go too deep into this technical riff. But like, Kimball and dimensional modeling was built in 'ninety six for scaling databases. And you're still modeling the same way in 2026 for your dashboard, your Tableau, whatever those things are. And, like, that's not actually how the world works in rows and columns.
+You need complex things to model how the world really works. And that's what we think about the ontology, which means I can reuse it for an operational application, KPIs, agents, all on one single ontology, which it makes it the compound effect where as I add things in, I'm now compounding with each individual decision I'm design working with gets better and better and better for the next use cases I connect across my business.
+Speaker 2: Yeah. Is there an analogy there to just the deployment of AI tools currently? I'm I'm I'm just reflecting on the NoSQL boom. And I don't know how strong this was. It's probably just like an online take, but this idea of, like, why would you ever want a relational database?
+Why would you ever want a schema? Dude, don't ever do a migration ever again. And the future looked like a win win almost. Like, I I think Postgres installations probably grew and so did MongoDB and other non relational databases. Yep.
+And people use Redis for things. They use all sorts of different tools. And we built we stood on the shoulders of giants, and we got more giants. And then, you know, that means full employment for you, obviously. But but I'm wondering, like, as like, are you seeing glimmers of of the AI tools eating into different pieces of the technical stacks, or is it all, like, yes and across the enterprises?
+Speaker 4: I think it's yes and. In in in a couple different things there is when you think about the real world, it is not just rows and columns. You can't describe everything with measures and attributes. Yeah. And so it's actually multimodal.
+And so, like, we think about this in our ontology where you can have one semantic object that actually has a CAD file and an image, a CV model, and a tabular stuff in one semantic thing of a plant.
+Speaker 3: Yeah.
+Speaker 4: Which means I'm starting to talk in the language of my business. So being able to have the multimodal representation, whereas in other places, oh, I have to have MongoDB, and I have to have SQL database here, and I have to have an s three bucket here to put all of these different things to store them
+Speaker 2: Yep.
+Speaker 4: In ways. Well, we can do that all in the ontology, vectors, everything else. So that's really the goal around how do I model the real world, how it actually works, and make that transparent so you're not having to figure out which technology to put in a time series thing for sensors on an oil platform.
+Speaker 5: Yep.
+Speaker 4: Don't care. Right? And that's where we want to have the non differentiated heavy lifting, like truly in the platform to remove the friction about getting stuff done.
+Speaker 1: How common is it for a business with more than $100,000,000 of revenue to have very little understanding of how their business actually works. Like, maybe they know the main thing, is we make a product and try to sell it for more than it costs to deliver. But is some element of how much can chaos and mystery be reduced effectively today? Because it feels like we're entering an era like, you go back fifty years and the level of mystery in a large company would have been, is almost inconceivable today, right? Because you have different time zones, different offices, no email, all that stuff.
+And now mystery and chaos is probably reduced dramatically. But still, there's companies that that maybe maybe before you start working with them, I'm curious what
+Speaker 3: those look like.
+Speaker 4: Yeah. I mean, we work with a lot of a lot of different varieties of companies. You know, I joke that a lot of times, you know, companies make money by accident. Like, they don't actually know what their most profitable product is, and often they're trying to sell the thing that isn't isn't actually the most profitable and actually not selling the thing that actually is profitable. And it comes back to how they've modeled their datas to aggregate it up to KPIs and other metrics when you actually need to model at the finest grade how your business operates to get a true cost of goods sold, for example, or true cost to serve.
+Like, you that's very complicated. It's very complex. So, like, we really think about how do I embrace that complexity so that I can truly understand tactically at the edge, how do I do more of the things that are good and less of the bad? It's that simple. And those get peanut buttered across with KPIs and metrics, and people don't actually know how their businesses are open.
+I can't tell you whether it's a $100,000,000 company or a $50,000,000,000 company. How many times I see this that they don't actually understand how they're making money at a fine grain.
+Speaker 2: Yeah.
+Speaker 1: Last question. Yep. Is there a world in the future where a company gets created, let's say on Stripe Atlas, and the first account they sign up for other than that is, let's say, a Palantir?
+Speaker 2: Oh. Yes. That's interesting.
+Speaker 4: I I would love that. And so we do have a Palantir for Builders program. We have small companies that you there's people here that are
+Speaker 2: Build on top of it.
+Speaker 4: Two person startups
+Speaker 2: Yeah.
+Speaker 4: You know, that are working in their attic in Canada. I mean, like, so it it is literally Yeah. Any size company come come work. There's a free dev tier. People can come build.
+There's actually a Shopify integration in Palantir. You can go hook up to your Shopify and pull in Palantir. There are people doing this. Now, are we always great at selling it or telling the story? Sure.
+No. But there are companies doing this. And I do think there's a day where it's going to be ubiquitous. Because I also think there's some guys here that have they, hey, my business is dying. I was down 10% negative margin on what I was selling.
+And through using Palantir, they watched our YouTube videos, and they built it themselves and increased to a 9% or 10% positive margin in three months.
+Speaker 2: That's great.
+Speaker 4: And so, like, people can go do it. I think that's the great American story is, like, how do we enable that? And I think we'll get there. It might take a little time.
+Speaker 2: I love it. Well, thank you so much for taking
+Speaker 4: the time.
+Speaker 2: Thank you. Great to catch up, everyone.
+Speaker 1: Great to see you.
+Speaker 2: We will talk soon. Our next guest is joining in just fifteen minutes. We're gonna go back to the timeline. First, I'm gonna tell you about Figma. Agents meet the canvas.
+Your AI agents can now create and modify Figma files with design system context.
+Speaker 1: So crazy how many companies
+Speaker 2: Yeah.
+Speaker 1: Are their whole strategy is like, we're gonna hire guys like Chad Yeah. And they're gonna they're gonna do stuff.
+Speaker 3: Yeah.
+Speaker 1: He is he is is the final boss of FTEs. Meme.
+Speaker 2: What what what what drove the FDE meme? Was it was it Palantir going public, or was it think
+Speaker 3: it was
+Speaker 1: Palantir going parabolic.
+Speaker 2: Maybe. Maybe. Yeah. Once once Yeah.
+Speaker 1: Because it just it just It was like a chart.
+Speaker 2: Because before, it was like, okay. Yeah. Successful company, but, like, no one really knows where the valuation's going. Now it's, my my uncle just told me that he made a bunch of money and so I gotta pay attention to this.
+Speaker 1: That, but also they had been banging the FDE drum Yeah. Or the and and getting the consulting
+Speaker 5: Yeah.
+Speaker 2: But people had earplugs in to the banging of the drum, and the and the earplugs came
+Speaker 5: out.
+Speaker 1: Yeah. But when you're when they were a 10 to $20,000,000,000 company, a lot of people could still convince themselves that they were right. It's just a consulting business.
+Speaker 2: Yeah. Yeah.
+Speaker 1: Yeah. Exactly. But now it's that gets too harder harder to Yeah. Very popular. Ignore.
+We covered this very briefly. But but, yeah, very excited for Joe Rogan to be hosting his, you
+Speaker 2: know It's rumored. This is a rumored leak. It is not confirmed by any means yet. But
+Speaker 1: But I like the sound of it.
+Speaker 2: It would be it's a very different direction.
+Speaker 1: This was a good post. I wanna bring it up. BUCO Capital says, it's really incredible, the absolute AI garbage, in all caps, that people are comfortable sending to their coworkers and bosses. There's a good chance productivity will actually decrease as AI adoption increases because everyone is busy waiting through AI slop. I don't think I don't think it'll actually I don't think it'll actually get there.
+But I have had I have had moments over the last month where if somebody has sent me, you know, a deck for their company or materials Mhmm. And I can tell that 90% of the work that went into it was on prompting. Yeah. And I have a very visceral reaction toward it, especially for early stage companies where ideas and the way in which you go about doing things matter so much that it's almost like painting this initial vision and things like your go to market product differentiation, why you'll actually win. Use AI to make your team slide.
+That's great. Right? Just taking, like, a set of facts and making it look good. Yep. Right?
+You're giving somebody a bio, something like that. But I just remember I I I got this deck. I was clicking through it. And I very respectfully said, like, go and, like, do this yourself Yeah. Because just because you've made something that that looks like a deck Yeah.
+But you didn't do the sort of, like, fundamental work to actually present this in a way. If you looked at each slide individually
+Speaker 2: Yeah. Your eyes kinda glaze over. Yeah. And and you just sort of, like, lose focus
+Speaker 1: stopping it. Yeah. Yeah. It's like it would have been more it would have been more compelling to actually just have a bulleted list of problem.
+Speaker 2: I mean, lot of times you can just I'm happy to see. Send me the prompt because I can instantiate it in my head. Can imagine the rest of the paragraphs. I have the context window preloaded for myself. Yeah.
+We should talk about the new Audi, the Nuvo Lari. Is this real? Motor one? This seems real.
+Speaker 1: It's real.
+Speaker 2: It's a big deal. It's the it's the brand's first supercar since the r eight, twin turbocharged four liter v eight hybrid, 217 mile per hour top speed. That is 10% faster than a Cayenne Turbo GT. What is the Cayenne Turbo GT market doing right now? Is it tanking?
+Depreciation must be just through the roof on this news because you have a car that's 10% faster, and so why everyone was gonna be rotating out.
+Speaker 1: I mean, I I think they did it. I I think the new Velary
+Speaker 2: It's a really cool design. It's a really cool design.
+Speaker 1: Feels like somewhat Cybertruck inspired.
+Speaker 2: Cyberpunky, futuristic. I don't know. It just checks the box for, like, the next supercar for me. And in a way that the
+Speaker 1: Ben says it can't touch the r eight.
+Speaker 2: Oh, can't touch the Okay. R Okay. Well, it goes zero to 60 in two point six seconds.
+Speaker 1: Well
+Speaker 2: Almost a thousand horsepower. Me tell you about Cisco. Critical infrastructure for the AI era. Unlock seamless real time experiences. A new value with Cisco.
+And our next guest, Sam Barry, is here from the USDA. Welcome to the show.
+Speaker 1: What's up, man?
+Speaker 2: How are you doing? Very good. Good to meet you. Great to meet so much for coming on down. Let's throw this on.
+And just like that. Cool. On the left side. So Good. Introduce yourself a little bit.
+Tell us about yourself.
+Speaker 3: Alright. Yeah. My name is Sam Berry. I am proud to be working at the USDA.
+Speaker 2: What did you do there?
+Speaker 3: Right now. I'm the chief
+Speaker 1: Nominative determinism. It's do you know about nominative determinism? No. It's the idea that, you you know, a person's name could possibly influence or or the the but but Berry and working at the Department of Agriculture is, like, pretty perfect.
+Speaker 3: Yeah. No. It's incredible. Actually, my the Berry's came over here from France in, like, 1640. Woah.
+So we've been here for a long time.
+Speaker 2: That's
+Speaker 3: crazy. And, it was all farmers.
+Speaker 2: Yeah. There you go. Yeah.
+Speaker 3: Yeah. Yeah. Was, like, all farmers until my grandpa. Okay. Then he became a materials engineer, actually.
+He worked on jet engines.
+Speaker 5: And
+Speaker 3: so then his sons became engineers. My dad became an engineer, then I was an engineer. So we're kind
+Speaker 2: of
+Speaker 3: trying to bring the two together.
+Speaker 2: You go. The USDA. Yeah. What is the shape of the What is the shape of the USDA? Organization?
+Headquarters? Do you go to the office? Is this US? You think just America, international footprint? Do you travel for work?
+What's it like working there?
+Speaker 3: Well, actually, it'd be kind of interesting to ask you what you think what are the things that you think USDA does?
+Speaker 2: They grade the milk in The States.
+Speaker 3: Yeah. Okay.
+Speaker 2: That's what I think about it. So I I imagine that at some point, farmers send the cows to you, and you kinda inspect them and say, this is a good cow. Is that what happens? I don't
+Speaker 3: know. There's, like, inspect there's inspectors. There's a whole area that
+Speaker 5: does it.
+Speaker 2: There's, a series of certifications. But Yeah. But is it but what else is happening?
+Speaker 3: So all kinds of stuff. So do do you know that, like, food stamps? Yeah. Snap is inside of USDA.
+Speaker 2: Oh, I didn't know that.
+Speaker 3: I didn't know that either. I thought I figured it was in, HHS or But, it's in USDA. Yeah. So that's a $100,000,000,000 a year. Okay.
+Speaker 2: It's kind
+Speaker 3: of a big deal.
+Speaker 5: Yeah.
+Speaker 3: So we do we have Snap that's in the food nutrition service. Yeah. Forest Service is inside of USDA, which seems like crazy.
+Speaker 2: Yeah, yeah.
+Speaker 3: And then FPAC is like what you would really think that USDA it's like the farmer facing,
+Speaker 2: like Okay.
+Speaker 3: Where farm programs are
+Speaker 5: Sure.
+Speaker 3: Where they do acreage reporting, like the stuff I talked about today.
+Speaker 2: Got
+Speaker 3: Then there's rural development
+Speaker 2: Okay.
+Speaker 3: Which is like loans. It's like a bank, basically. They do loans for all kinds
+Speaker 2: of things. Okay.
+Speaker 3: Cool. Actually, in some of the review, I came in on Doge, and there 's beachfront hotels that are being funded out of RDs. There's a lot of things that need to be cleaned up. Okay. Yeah.
+And then there's food inspection service. And then there's actually a huge scientific arm that's inside of
+Speaker 2: That makes sense. You guys things
+Speaker 3: and Yeah, like labs.
+Speaker 2: Advancing Yeah. Different pesticides and all sorts of things that mean, actually Yeah.
+Speaker 3: Become very passionate about it Sure. Because I certainly didn't have an appreciation for it. I thought the same thing. It's like grating meat Yeah. Milk, know?
+But we are so uniquely positioned as a country because
+Speaker 2: of the fact that we can feed ourselves.
+Speaker 3: Yeah. And that is not the case for a lot of countries.
+Speaker 2: Yeah, isn't America basically exporter of food too? You hear about this in the China debate all the time. Will they buy x y z product from us as a retaliation? Yeah. And, yeah, you just don't think about it.
+But you're curious.
+Speaker 3: Yeah. So, like, China can, like, minimally feed itself. Like, bare minimum. It could keep itself alive. But they're getting like, we just did a
+Speaker 2: big deal with them to move a bunch of beef over there.
+Speaker 3: We kind of got some negative press on that. So it's important to know. It's I forget exactly what it's called. But it's like the parts of the cow that we don't eat here. So it's a little misleading to say, like, the amount that we're sending over there.
+Speaker 2: Also, all these trade deals are, like, very complex, and there's, like, six different moving parts. We get batteries or they get the chips. Like Yeah. These are always, like, seven part negotiations. It's hard to look at in isolation.
+Speaker 3: But I mean, think it's a little surprising that food is actually part of that. Mean, in warfare, agriculture, the food supply is usually hit before anything like kinetic even happens. You know? Oh, interesting. And then before even the world knows that it's warfare.
+Woah. You know?
+Speaker 2: Okay.
+Speaker 3: Because you can do that, and you can do things to impact a nation's food supply in the future. And so agriculture is like a really big deal.
+Speaker 2: Sure.
+Speaker 3: Really important. So all this to tie back to, I wanted to talk about the labs. Yeah. Because this is like a whole area inside of USDA. But we do all of these things, like invest in figuring out but like personally, I try and avoid like GMOs and we eat.
+Sure. Like we drink raw milk and we get our meat from a local farm. But GMOs are actually really important. Because if we were hit with some kind of adverse event or something, and we needed to create corn that could survive a drought better Sure. We have the science and the research to be able to do that.
+Got it. And it's a huge edge that we have, like, geopolitically. Interesting.
+Speaker 1: Yeah. Yeah, talk about over the years, I've read so many stories of this insect has been detected in, you know, some region of The US and there's speculation on is it, you know, kind of foreign interference, things like that. Is that is that in USDA domain is trying to help monitor and track and make sure that Pests. Yeah. Pests.
+Pests, like pests are obviously naturally occurring.
+Speaker 2: Yeah.
+Speaker 1: Right? Yeah. Flourish for their own reasons. Or there can be some some sort of malicious intent as well. Is that in your guys' statement?
+Speaker 2: Yeah, because
+Speaker 3: they're not necessarily naturally occurring,
+Speaker 2: right? Yeah.
+Speaker 3: And so one that we have going on right now, and I'm not saying this one's not naturally occurring, but the new world screw worm Yeah, yeah. That's coming up through Mexico.
+Speaker 5: Oh,
+Speaker 3: interesting. So our secretary, which, by the way, I couldn't say enough good things about Secretary Rollins. I mean, she's incredible. Just an actual, like, genuine, good, and like, it's unbelievable what she's able to accomplish. But New World Screwworm is something that's falling in USDA's responsibilities.
+And this is like a parasite basically that's coming up through Mexico and it's like a flesh eating parasite, so it's like really hardcore. Yeah. So we're developing a lab. You mean flesh?
+Speaker 1: No. All sorts?
+Speaker 3: No, but I don't think you want to be around it. But no, it's for cattle mostly is what it impacts. And so we're developing a lab and sterilizing flies, which again, personally, I don't really like any of this stuff. But it's better to be doing this and be able to protect our nation than, like, if we let this just come and flourish in our country. I mean, it'd be very detrimental.
+Yeah. So I'll have to go back.
+Speaker 2: Yeah. And and if and if it's a necessary, you know, technique that needs to be harnessed, it needs to be harnessed securely, and it needs to be harnessed with, you know, the right teams in place to make sure that whatever's rolled out is rolled out effectively and safely, Yeah,
+Speaker 3: I mean, I think it's just so important, you know, there's, like, tech, there's so much farther we can go with technology, but we have so much right now. And so many people are just black pilled, right? And I think it's important I think you should be like black pilled on certain things, but you should probably take a lot
+Speaker 2: of pills. Like, it should be red pill and
+Speaker 3: black pill and white pill at the same time. Okay. That's a good take. Like, we have a long way to go. And when we're just, like, sitting feeling sorry for ourselves, it's not a good position to be in.
+Yeah, it's most incredible country on Earth. Yeah. Other countries are advancing, though. Our edge is our edge doesn't come for free.
+Speaker 2: No, we've to work at it.
+Speaker 3: We've to keep pushing at these things. But when we do this, like, when there's a parasite that's, you know, coming into our country and we're able to just, like, use biology Yeah. To combat it Yeah. Like, that's incredible. Our country can do that.
+Speaker 1: Talk about these more SMB scale farmers and their approach to technology. I think a lot of people would be surprised at how much these individuals, at least from what I've experienced, are happy to lean into technology. I met a group in Texas that had developed this was years ago, so pre AI boom, developed their own SaaS product to help manage their operations, like a tool that that they had built by discovering problems that they had on their property. And I just thought that was that was really fascinating and and cool at the time because I think Silicon Valley would have maybe some expectation that that there might be an aversion to that until you get into the more, like, enterprise grade scale.
+Speaker 3: Yeah. I think it's a really important topic because you're essentially talking about, like, democratizing access to technology. Right? Yeah. And certainly with AI becoming so much more widely available, that was a big step forward.
+But I mean, this is a big point that's being hit on at this conference. And what Palantir is really focusing on is those LLMs become useless if not if you're not deploying them in the right way with the right data boundaries, right? So I think that's something that we're seeing even in our universities. We do a lot of university research. And all the kids or whatever, the university students, they're wanting to do experiments with LLMs and do meat creating, like better meat
+Speaker 2: creating.
+Speaker 3: Because that's something that can happen at the farms. If you can make that automated, then our ability to produce beef greatly impacted. But there's a major issue in succession planning right now for farms, right? Like, is a big thing that's happening. Like, the farmer generation is getting very old.
+And kids don't want to go and run the farm.
+Speaker 2: Lot of them went to big cities and had jobs and white collar work and stuff.
+Speaker 3: So this is a big thing that is a H2A. Yeah. These H-2A visas, where a lot of the farmers are actually still saying, like, we need the help from we need immigrants And to come and help the best way that we can solve that is through automation. So I think that that's something I would love to see USDA do more of. Or it's something that needs to be answered.
+I don't have an answer for you right now. But in order for us to continue to remain self sufficient in providing food
+Speaker 5: Yeah.
+Speaker 2: Whenever you have a dwindling workforce, increasing the leverage and productivity of the existing workforce allows you to maintain overall aggregate productivity. This is Yeah. Yeah, general technological leverage, so it makes a ton of sense.
+Speaker 3: Do you know anybody that's becoming a farmer?
+Speaker 2: Well, we know some folks. We've had a number of, entrepreneurs on the show who are getting into ag tech Yeah. Building. We've had the founder of the laser weeder that, uses, a lot of people don't like pesticides, but they don't mind if, if a pest is zapped with a laser because that's just heat that's being transferred to the particular plant right there, and the tomato plant continues flourishing. So it uses just cameras and lasers.
+Very cool sort of modern solution to something that people have had a lot of beer around around different pesticides. Have fruit
+Speaker 1: fruit picking robotics Yeah.
+Speaker 2: Orchard as well. But but mostly from tech side, usually with some family lineage
+Speaker 5: Yeah.
+Speaker 2: Sort of returning to the roots or or tapping into their networks to go back. But I mean, truthfully, I don't know that many people that I grew up with. I mean, I grew up in LA, so not much farming activity. I knew one family that had an avocado farm. I mean, it actually it would
+Speaker 3: be super base to be a large scale farmer. Like Yeah. More people should do it.
+Speaker 1: Maybe you could be the Alex Wormozi of farming.
+Speaker 3: Yeah. No, for real. So USDA one of the great things that USDA does is you can get financial assistance. You get big time get
+Speaker 2: good writing.
+Speaker 3: Like big time loans. From USDA, you have go through the process. And they were actually doing a loan modernization effort right now trying to make that better. But USDA will fund it for you. You've to pay it back.
+Speaker 5: But you
+Speaker 3: can get the interest
+Speaker 2: But it's rates very, very low rate. It's subsidized.
+Speaker 3: Yeah. Mean, one of our administrators at USDA, he'd like pull up his phone one day. And he's like, look, it's a planting day for me. And it was this John Deere app. Wow.
+Was like the most advanced deal. He had all these tractors going. And there's still people sitting in the tractors. But it's to the point where it basically could be fully automated. So I mean, you can get yourself a couple thousand acres and just start you know, growing corn or wheat or cotton, like cotton, and then, you know, whatever.
+Speaker 2: Talk about data collection. I feel like data is the lifeblood of, you know, any decision making, any OODA loop, anything related to Palantir or USDA. And I'm wondering about, like, you mentioned that screw worm. You gotta track that thing. It shows up on some cattle rancher's farm, and they're detecting it or they're seeing symptoms.
+Maybe they know roughly what percentage of the herd is affected. But how do they actually get that information to you? Are they going to USDA dot gov slash report incident, or are you pulling things from their filings? Like, how how do you want that to evolve? I imagine that that with more AI and technology, where it's only as good as the data that we can actually put into the system.
+So Yeah. Just broadly data collection, where is that going these days?
+Speaker 3: Well, if you don't mind, instead of screwing them, I'd like to focus on SNAP
+Speaker 2: for that Yeah.
+Speaker 3: So SNAP is funded by the federal government. Yeah. But it's administered by the states.
+Speaker 2: Okay.
+Speaker 3: So when it comes to so something that we're doing right now, and it was one of the first things that our secretary did, like, on our first day, was she did a data call to all the states that we want all of your SNAP data to understand because how it's our responsibility as the funder of this program to verify the integrity of the program. So we put a request out there, but it has to come from every single state. And a lot of the state programs, they're not technical or they've got contractors that it's just a difficult thing to get us the data. But then there's also a bunch of states that are just not complying for whatever reason, which it shouldn't be a problem. I don't understand what the problem is.
+But the importance of so that program, that's 100,000,000,000 taxpayer dollars a year. Like, that's pretty substantial. That's an area where we really want to have all angles of the data available so that we can deploy AI and become really smart in detecting fraud. And we want to get it to the point where if somebody's committing Snap fraud, we should be able to it's like your card, right? If somebody stole your card and did a transaction that wasn't recognized, like, your card's shut off, right?
+So we want to get to the point where we're very intelligent and we're confident enough in the system that we can do that. When there's fraud detected, it's off immediately Because it's an important program. You know, we want to be able to support people that can't support themselves. But it's not arguable that there's a massive amount of fraud in there. I mean, the organisation itself does like an audit every year, and they're at like if there's 12% improper payments, improper payments is kind of a bad word.
+Speaker 1: So 12,000,000,000 a year.
+Speaker 3: Yeah, right. And that's just like kind of based on
+Speaker 1: some That's money that could actually be going towards the intent of the program Yeah. Which is to provide food to people that otherwise wouldn't be able to get it.
+Speaker 3: And there's other you know, you could, like, grok how SNAP has been used to fund, like, international crime organizations and terrorist groups and everything. It's being exploited at a huge level. And, I mean, it's something that our secretary has prioritized. But that's probably our biggest FPAC. What I talked about today is our most complex system of data.
+But the Snap challenge is like the biggest or like the Snap environment is probably the biggest challenge on the data front.
+Speaker 2: Mhmm. What's next for you? Are making you a career out of this, are you going to go be a farmer?
+Speaker 3: Hopefully both.
+Speaker 2: Okay.
+Speaker 3: Yeah. Yeah. I mean, yeah, I've got some farmland.
+Speaker 2: Yeah, you do?
+Speaker 3: Trying to convert it. It's like woods right now. Nice.
+Speaker 2: What state?
+Speaker 1: Where is that?
+Speaker 3: In Virginia. So actually, when I lived in Michigan, had like a little bit of a farm. Had some goats and sheep and a bunch of chickens and ducks. You don't ever want get you don't want get ducks. Don't want to get goats.
+Ducks are like really savage, Really? Yeah. Like a chicken sleeps,
+Speaker 2: you know?
+Speaker 3: So it's got a normal cycle. Like, at nighttime, it goes into the coop, and it sleeps.
+Speaker 2: Ducks don't sleep.
+Speaker 3: No, ducks do night sleep. No. They like and our house was kind of this really unique house. So the windows were on the ground. And the ducks would come and just stare at
+Speaker 4: us in the window.
+Speaker 3: No. They're savage. They just, like, they sleep for, like, ten minutes at a time. So people just, like, waddle around and then sleep for ten minutes. You have to have the right balance of female and male ducks.
+Speaker 2: Okay.
+Speaker 3: Otherwise, like, that's really ugly. Yeah.
+Speaker 1: Chickens are a lot. I grew I grew up with chickens. And most of the time they're they're cool. My dad would build these sort of like complex contraptions to automate the opening and closure. Interesting.
+So he would use like irrigation to on a timer to fill a bucket
+Speaker 2: which would lift there would lift it up. Interesting.
+Speaker 1: But but then I still core memories as a kid was waking up. My dad would yell like, there's a fox in the coop and then we'd be like running out.
+Speaker 2: Really? We'd be actually would like
+Speaker 1: game on. Yeah. Yeah. Or you'd get like skunks in there. Yeah.
+Speaker 2: Or coyotes maybe.
+Speaker 1: Yeah. We would just everybody would get up and we try to go deal
+Speaker 2: with That's gonna be satisfying. I wanna That's ask way more satisfying than some software bug.
+Speaker 1: There's so much fear and doom and and black pilling around data centers. I wanted to hear from you how you're I imagine your your role is to be an advocate for for farmers as well on Yeah. The balance water supplies, things like that. California went through, you know, probably many, many really rough years from a from a water supply and a water scarcity standpoint. Thankfully, know, had a lot of rains over the last few years.
+But how are you working with farmers? Or or what is the situation around the the the kind of, like, tension between a lot of farmland could also be great land for data centers. Right? And there's been some pretty high profile stories where farmers either sold their land. But from your side, you're trying to make sure that we have can produce an abundance of food from a national security standpoint?
+So how are you guys thinking about that balance?
+Speaker 3: Yeah. I mean, I think the best solution is putting the data centers in space, which is totally led by Elon. And people are jumping on that train. But it's going to be a couple of years, it sounds like, before they're to that point. We're actually USDA is pursuing a partnership with SpaceX.
+And that that part isn't isn't ready yet. We don't really have a need for that. But it's there's a partnership on the technical side. But there's also just on the, like, conceptual side of the fact that, like, we're aligned because we do care about conservation. You know, was a lot of green stuff that was not stuff that we care about.
+But we do care about conserving our land and putting data centers in space just makes a ton of sense. But that being a couple of years out, so for today, I'm actually pretty passionate about this because in my hometown of Saline, Michigan it's like small town, mostly farmland they're putting a data center in there. And it's like 30 miles from Detroit and Flint and all these very industrialized areas. And so it's very confusing to me why we wouldn't be putting these data center in their, like, struggling areas. Detroit's doing all right, but, like, Flint, struggling big Like, why not put a data center there where there's already the infrastructure?
+Sure. There's, like, it's already developed land. But instead, it's like taking these small townships and plopping them in the middle. And the people don't really like it. Now, the boards seem to like it for some reason, the councils.
+So I don't know what's up with that, but it doesn't align.
+Speaker 1: What creates it creates it creates a massive amount of tax revenue that can be used to fund a bunch of other programs.
+Speaker 2: Yeah. So that But it's gotta actually flow back to the people who are in the town. And I think that there's a disconnect there sometimes.
+Speaker 3: Actually, this is kind of outside, but something that I do think is probably going to happen is there was this big shift to go to the cloud. It's like everybody kind of had their own servers. It's on prem, and now we're in the cloud. And it's like, really, you just took you moved it across the street, right? And now that people are becoming more aware of what that means and when it's like, oh, my data's in AWS or it's like, maybe this is a global company, and how much can I really trust this company, that there's going be a shift back to caring actually actually caring about where your data is living?
+Interesting. So I think a good business opportunity would be I think there's a world where there's a culture that comes up around data centers. Because like me personally, like, I wanna build, like, my house is like a like, I'll have a kill switch for my And then, like, we've got the data in the basement. Sure.
+Speaker 1: You got your raw milk supply.
+Speaker 3: You got raw milk. No, like, we're ready to go. I mean, we're I I ready to go off the grid before I came and joined
+Speaker 5: the government.
+Speaker 3: This is a much better option. But still, like, I care about my data. I don't really want to use YouTube music anymore Because my now my recommendations are getting worse, and you're, like, very beholden to that. It's like, could very easily
+Speaker 2: just have the music.
+Speaker 3: Buy my music and write a simple program to, like, make my recommendations, and it would be way better. Because there are certain artists that are not getting recommended because they're not, you know, prioritized behind the scenes.
+Speaker 2: Paying or something.
+Speaker 3: So but not everybody's gonna wanna manage their own servers. Right?
+Speaker 2: Jensen just announced a data center that bolts onto the side of your house.
+Speaker 3: Oh, that's sweet.
+Speaker 2: And, I mean, they and and there's more stuff that's coming that way. I mean, people are doing it with the Mac Minis. Can't really do the Frontier AI on the Mac Mini just now, but in a few years, you know, the DGX, desktops, like, it's all coming. And I think it will be more of an option.
+Speaker 3: So just to kind of wrap this up. So there's this or this topic. One of the things that USDA does is we pay 600,000 federal employees. So we pay Secret Service. We pay DHS.
+Pay it's like a thing inside of USDA. Interesting. And so the payroll system that does that is a mainframe. And people literally explained it to me, like, thing has a personality. You can't touch it the wrong way.
+It has to have the right environment to work. And all these things mean, like, a dozen people came to me to one of these things. So then I went and visited it. And I was really excited to encounter this Mainframe. And it's like a five year old, brand new IBM server.
+It's just like there's no tapes. There's not like a team of people
+Speaker 2: where It's you're
+Speaker 3: like this big.
+Speaker 1: But I was expecting like a small micro data center
+Speaker 2: or something.
+Speaker 3: Totally modern. And it like I like formed this connection with it. I was like, we have had so many conversations about you. And I just thought that like, this is potentially a future where it's like a I just enter a coffee shop. You know?
+Like, people might want their data to be hosted in a place that's like aligned with their views.
+Speaker 2: Sure. Sure.
+Speaker 3: Yeah. Because it's like, I can trust I don't want this in my house. Yeah. Yeah. Yeah.
+But I can trust this cool local company that my data lives there. Because I don't need it distributed across the globe. It's like, I'm here.
+Speaker 2: No, that makes sense. That's interesting. Country intelligence. Yeah. Yeah.
+Speaker 1: Yeah. We talked
+Speaker 2: about this. Intelligence. This is the future. I love it. Anyways so much for coming on the show.
+Great to meet you. Thank for having
+Speaker 1: Thanks, dude. Thanks for
+Speaker 3: Thank you.
+Speaker 1: Doing this work.
+Speaker 2: Have a great rest of your Thank you. We'll talk to you soon.
+Speaker 1: We will wrap up the show. Yeah. You for tuning in with us today, We will be back on Monday. Yes. And we look forward to it.
+Speaker 2: Some business to do tomorrow, but see you Monday. Leave us five stars on Apple Podcast and Spotify. Sign up for newsletters tbpn.com, and have a wonderful weekend. We'll see you later.
+Speaker 1: Goodbye. Goodbye.

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>洪乐潼：AI for Math、把数学变成Lean——小君商业访谈录第137期</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  line-height: 1.75; font-size: 17px; color: #1a1a1a; background: #fafafa;
+}
+article { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+header { text-align: center; margin-bottom: 48px; }
+header h1 { font-size: 28px; line-height: 1.4; margin-bottom: 12px; color: #111; }
+header .meta { font-size: 14px; color: #666; }
+header .meta span { margin: 0 6px; }
+.overview { margin-bottom: 48px; }
+.overview h2 { font-size: 20px; margin-bottom: 16px; color: #333; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 500px) { .cards { grid-template-columns: 1fr; } }
+.card { padding: 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+.card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+.card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+section { margin-bottom: 40px; }
+section h2 { font-size: 22px; color: #1a1a1a; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e5e7eb; }
+section p { margin-bottom: 14px; text-align: justify; }
+blockquote {
+  margin: 24px 0; padding: 20px 24px; border-left: 4px solid #3b82f6;
+  background: #f8fafc; font-style: italic; font-size: 16px; color: #334155;
+  border-radius: 0 8px 8px 0;
+}
+blockquote .attr { display: block; margin-top: 8px; font-size: 13px; font-style: normal; color: #94a3b8; }
+.quotes-section { margin-top: 48px; }
+.quotes-section h2 { font-size: 22px; margin-bottom: 20px; }
+.quote-item { padding: 16px 20px; margin-bottom: 12px; border-radius: 8px; font-size: 15px; line-height: 1.7; }
+.quote-item .text { font-style: italic; }
+.quote-item .ctx { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #94a3b8; }
+.q-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.q-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.q-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.q-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.q-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.q-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #999; text-align: center; }
+footer a { color: #3b82f6; text-decoration: none; }
+.gloss { color: #94a3b8; font-size: 14px; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>137. 对洪乐潼的4小时访谈：AI for Math、把数学变成Lean、数学天书中的证明、直觉、被创造与被发现的</h1>
+  <div class="meta">
+    嘉宾：洪乐潼<span>·</span>Axiom 创始人 &amp; CEO<span>·</span>主持人：小君<span>·</span>2026年4月
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期访谈值得你花时间</h2>
+  <div class="cards">
+    <div class="card card-blue"><strong>24岁的00后创业者</strong>华人女孩，创办AI for Math公司Axiom，7个月内估值从0到16亿美元</div>
+    <div class="card card-green"><strong>57岁终身教授辞职加入</strong>拉马努金精神继承人Ken Ono离开终身教职，加入24岁学生的创业公司</div>
+    <div class="card card-purple"><strong>Putnam数学竞赛满分</strong>Axiom Prover AI在普特南竞赛拿满分——98年历史上第6个满分，第1个由AI获得</div>
+    <div class="card card-yellow"><strong>数学的ChatGPT时刻</strong>形式化证明如何改变一切：从芯片验证到"不需要test case的代码"</div>
+    <div class="card card-orange"><strong>非天赋型选手的逆袭</strong>自称"蛮力型选手"、做不出几何题的女孩，靠死磕和自由注意力突围</div>
+    <div class="card card-red"><strong>ASI &gt; AGI</strong>她的激进观点：超级智能应该是专用的（specialized），不是通用的（general）</div>
+  </div>
+</div>
+
+<section>
+  <h2>广州长大的"自由注意力"</h2>
+  <p>洪乐潼在广州出生长大，小学进入数学奥校。四年级到六年级，每个月考一次试，每个学期把一到二十四班全部重排——楼顶是重点班，楼底是普通班。"我当时进去的时候我是四班……就在洗手间旁边，这个感觉就是说明我入学考试考得是真差，对吧，不是天赋型选手。"</p>
+  <p>但她的自由注意力始终旺盛。她看百家讲坛、读黄永玉的《大雅宝胡同》、学历史。数学教练批评她"不是最刻苦的那一个"——因为她把大量时间花在跟考试无关的事情上。</p>
+  <p>初一是一个转折点。她开始去看高等数学——微积分、实分析、复分析——"非常有意思，因为它不像是一个零和游戏了。你如果是看高等数学……它是一个正和游戏，你可以自己到你想到的这个深度广度。"</p>
+  <p>洪乐潼把自己的思维模式提炼为一个贯穿始终的概念：<strong>Bounded Attention（受限注意力）</strong>和<strong>Free Attention（自由注意力）</strong>。受限注意力是被邮件、deadline、必须执行的任务框住的注意力——"很多很成功的企业家他们是非常有纪律性的执行家，每一天日复一日地去compound他的执行。"但自由注意力——爱因斯坦的洗澡时间、小时候走路去上学时的神游——"是能够区分一个平均的创业者和一个很好的有策略性和决策性的创业者的一个区别"。</p>
+  <p>而最关键的是，自由注意力不是线性的。"有可能自由注意力时间你什么都没有想到，然后在后面的你可能在被逼迫做一些任务的时候……你会有一个callback，就是回到了你其实自由注意力给你大脑里面打下的基础。"</p>
+</section>
+
+<section>
+  <h2>"我在拒绝被驯化成为一个竞争力很强的人"</h2>
+  <p>小学奥校的楼梯是一个残酷的物理隐喻：每个学期按成绩重排班级，二十二、二十三、二十四班是重点班。"一班在这个楼底，二十四班在楼顶……你楼梯也往下走，你这个心情肯定也不是特别好。"</p>
+  <p>但洪乐潼觉醒了："我后面是觉得就是这个不好玩，我不想玩这个。"</p>
+  <p>她的应对方式不是退出，而是建设。在一个群体里，当大家有一个清晰定义的目标（比如下一次竞赛），而你有自己一套完全不一样的mental model——你就"开始找这个群体里面的一个tribe一个部落"，找那些"跟你一样想读跟这个考试没有关系的书"的人。她和三五个同学传纸条，画N×N棋盘，一起构造马步棋的base case，试图用数学归纳法证明任何棋盘都能走满。</p>
+  <p>这个tribe就是她后来创业的原型。"数学其实某种程度上大家强调说这一个人他是天才……但数学如果你去看软件工程师，他们几百个人几千个人去做一个project……它是合作性的。合作性就需要一个比较好的结构和把它分散成不同的小任务。"</p>
+</section>
+
+<section>
+  <h2>打不死的小强：MIT时期的蛮力型选手</h2>
+  <p>"我一直就是非常希望能当直觉派、天才派。然后这其实是我很小的一个痛苦的一个根源——就是我一直发现我自己没有什么特别大的数学天赋。我是一个蛮力型选手。"</p>
+  <p>洪乐潼有两个解释。</p>
+  <p><strong>解释一：几何题做不出来。</strong>数学奥赛第一道欧式几何题是"必拿的分"。洪乐潼一直做不出来——"我的大脑可能更偏代数的符号的表达，然后几何和拓扑实在是差"。她的解法是用复数法硬算，把每个点每条线用复数表达——"大力出奇迹"，但比别人多花两到三倍时间。有趣的是，2021年Google DeepMind的AlphaGeometry也用了类似思路：把几何图形变成符号表达式，AI解决了81%历史上IMO的几何题。</p>
+  <p><strong>解释二：身边的参照系。</strong>"我在MIT的时候我身边所有人他们都是天赋型选手。你只要看看左边，看看右边，就知道自己不是天赋型选手。"她的同学里有任秋雨、张盛彤、高继扬——"这些人每一个人都在我小时候看着他们的新闻长大的"。</p>
+  <p>但她不放弃。Henry Cohn教授给她一道sphere packing题——她六个月什么都没想出来，但每周都去汇报试过什么、怎么失败的。</p>
+  <p>MIT第一学期，她听学长学姐的建议去上了博士概率论。第一天上来就是测度论——"从Lebesgue，从Borel sigma algebra开始讲起……我们就面面相觑，我们完全不知道发生了什么。"期中考试满分40分，她拿了4分。全班平均分9分。"我什么失败都不会触发我自己觉得很失败的机制。就是我把这个失败当做是我的default默认项。"</p>
+</section>
+
+<section>
+  <h2>对苦难上瘾</h2>
+  <p>"我觉得大部分我知道的founder，就是创业公司的创始人，他们都对苦难上瘾。……风险投资人他们找这个founder就要找这种对疼痛上瘾的founder。"</p>
+  <p>洪乐潼把她的奖励机制分成两个阶段。年纪小的时候，奖励来自社区——"我有战友们……大家有这种同志的友情一块去做某一件难事情，登山队，这个会给我很大的一个奖励的感受。"分界线是疫情——MIT大一下学期所有人被赶走，"就没有小团队了"。课还得上——"你必须要学会从这个事情难的事情本身里面去找快乐的感受。"</p>
+  <p>MIT对她的塑造是深远的。"每一个我遇到的在麻省理工的同学，他们都特别能吃苦。他们会在雨天暴风雪里面去跑晨跑……这是一个非常有毅力的一个学校。然后这种毅力它是非常有感染性的。"她的行事原则变成了："什么难做什么，什么痛苦做什么，什么长期主义做什么。"</p>
+</section>
+
+<section>
+  <h2>数学：被发现还是被创造？</h2>
+  <p>关于这个"千古的辩论点"，洪乐潼讲了几个故事。</p>
+  <p>拉马努金从印度来到英国，带着他的草稿本——"上面这些东西全都是对的，我从来没有接受过数学的这个训练，我不知道怎么去证明它。"哈代和Littlewood没有因为缺乏证明就拒绝他。他们觉得这些东西"看起来很有意思，它们很新，然后它们和我们之前做的东西又感觉是对的"——于是开始用证明来验证。</p>
+  <p>张益唐的素数证明"和熟悉的一些学派非常不一样"。但数学界判断这个证明是"正确的"——于是"他们又接受了这件事情"。然后James Maynard（2022年菲尔兹奖得主）发展了自己的证明技巧，两套方法可以"进行比较，也可以进行简化"。</p>
+  <p>"证明某种程度上它是影响力。就是我只要能够去把这个东西严丝合缝的逻辑证明出来，我这个数学的发现就是可以被接受的。"</p>
+</section>
+
+<section>
+  <h2>Verve咖啡馆：一段硅谷式的相遇</h2>
+  <p>2023年秋天到2024年冬天，洪乐潼在斯坦福法学院读第一年。每个周末，她抱着三大本法律书，坐校巴到Palo Alto downtown的Verve咖啡馆——"读法律案例做笔记，看狗和抹茶"。</p>
+  <p>她注意到一个"感觉非常面熟"的人，每周都在同一个六人桌上。他叫Shubo——但她不知道他是谁。他也不知道她是谁。</p>
+  <p>"他坐在窗边然后那个太阳特别晒，然后我需要那个窗帘拉起来，这么说上话的。"</p>
+  <p>他们聊了一年半——"聊科学历史"。她不知道他是Meta的FAIR director，20年GPU经历、10年AI经历、CUDA第一批开发者、2015-2016年在百度和吴恩达一起做deep speech。他也不知道她是摩根奖得主，不知道她"也有一个数学研究背景"。</p>
+  <p>"我们发现我们能够是很好的联创团队的时刻是我们发现我们两个都非常讨厌Zoom。我没有办法跟人开Zoom的会超过一个小时，他没有办法跟人开Zoom的会超过45分钟。我们Zoom了四五个小时每次的。"思考的方式"特别的又相似又互补"。</p>
+  <p>2024年秋天，洪乐潼晨跑后去找Shubo。在Verve的餐巾纸上，他们开始算：多少张卡、融多少钱。</p>
+</section>
+
+<section>
+  <h2>从劝退自己到决定创业</h2>
+  <p>"如果我是一个本科生，我绝对不会去辍学然后去YCombinator。某种程度上我觉得我是最不可能创业的一个创业者。我非常的喜欢向往学界。"</p>
+  <p>2024年9月到11月，洪乐潼每天早上跑步想事情。她读了科学史——"从维基百科开始读科学史，后面要找书读科学史"。读了一个AI for Math的GitHub repo："大概有几百篇文章，每一篇文章的abstract我都读过，然后有意思的abstract我就会把整篇文章看完。"她在纸上做了"多少次费曼的过程"——自己推导技术可行性。</p>
+  <p>结论是："它不一定是一个研究问题，它是一个工程问题。这个东西的科技的风险就没有我一开始看上去的那么高。"</p>
+  <p>但在此之前，她甚至去问了竞争对手公司的CEO（也是Verve的常客）能不能加入他们。回复是："我们只招计算机的PhD。"而她是数学PhD。</p>
+  <p>现在，那个竞争对手的CEO和她曾是同一张咖啡桌的常客。而Bartosz（ATPboost作者）、François Chollet（Patternboost作者）、Alberto Avanzo（Intuition作者）——她当年读的那些论文的作者——现在全在Axiom。</p>
+</section>
+
+<section>
+  <h2>融资：从3亿到16亿美元</h2>
+  <p>"没有人喜欢融资。它不是说难，结果难，它就是累。你是一个复读机，一次一次的说一样的事情。你一次一次的接到一样的问题，真的我我可以把它录下来然后我就给你们大家发，对吧，你们反正问题也是一样的。"</p>
+  <p>种子轮（2025年1-3月）：从第一个offer到第三个翻了"三倍"，3亿美元估值，融资6400万美元。A轮（2025年12月-2026年1月）：只过了6个月，16亿美元估值，融资至少2亿美元。领投方是Menlo Ventures——Anthropic最大的institutional investor，Axiom是继Anthropic之后第二大AI投资。</p>
+  <p>有一个投资人的故事她印象特别深刻。B Capital的Howard Morgan——文艺复兴科技公司（Renaissance Technologies）的co-founder、First Round的联合创始人——"他比你更乐观，他比你更觉得你的商业模式有前景，他告诉你这些是你的商业模式。"洪乐潼在MIT本科时见过Jim Simons来学校做围炉谈话，现在见到Howard Morgan——"还有一些有意思的谈话，你可以见到很多不同视角的人。"</p>
+  <p>但作为年轻创业者，融资很难。"年轻做product是加分，年轻做deep tech是减分。"她讲了一个投资人组织的森林zipline活动——"我第一次，人生从来没有做过这个zipline，我就不敢下去。……后面她们跟我说，我希望你能形成这种肌肉记忆，就这就是你每一天需要去重复的麻木的这样的一种take the leap of faith。"</p>
+</section>
+
+<section>
+  <h2>Putnam满分：AI用蛮力打败了人类的优雅</h2>
+  <p>2025年12月6日。Axiom Prover AI在普特南大学生数学竞赛中拿了满分120分——98年历史上第6个满分，第一个由AI获得。</p>
+  <p>当天早上六道题，下午六道题。整个团队在"庞加莱会议室"（战争室）里。数学家们也在解题——把需要求解的题解出来喂给AI。小野肯教授喊道："不要再现在不是说数学纯粹之美的时刻，不要去精确的去搞这些东西，现在是战争状态！"洪乐潼和Shubo笑得前仰后合。</p>
+  <p>有一道题，IMO教练Evan Chen画了一个图——"我们所有人当时在那个会议室一看到这个图，我们就说，哦，那你去把它做出来了。就一个图的一个解法。"但AI没有找到这个图的解法。"我们看到了就是几千行的Lean代码，它是就是硬生生的把它就是……类似枚举，类似分类讨论……一步一步核实去把它就是干出来的。"</p>
+  <p>"这就是一个大力出奇迹的AI。它可以就是一道很明显可以去做创造力解法的一道题目，它可以去通过它自己擅长的东西去给出给出一个完全不一样的解法。"</p>
+</section>
+
+<section>
+  <h2>AI for Math的地图</h2>
+  <p>洪乐潼描述的AI for Math技术范式已经很清晰：拿一个开源预训练模型，在上面做后训练（SFT+RL），然后放到一个多模型系统中——informal模型列提纲，formal模型转Lean代码，多个filler模型填坑，加上hammer、Grind等工具，加上自定义验证器。</p>
+  <p>标准的Draft → Sketch → Prove流程：先让informal模型列出自然语言证明框架，再转化为带sorry占位的Lean代码提纲，最后填补所有sorry——可以AI填、可以hammer一斧头劈掉、可以Grind自动解决、也可以用传统rule-based方法。"最便宜的方法先上，解决不了再用大语言模型。"</p>
+  <p>Axiom有几个核心创新。一是scaling learning from experience：证明树从40个节点scale到4000个节点，每一步到达最终解的trail都可以成为训练数据。二是transfer learning：数学定理证明的AI，出乎意料地在代码验证上表现出色——在某个benchmark上从DeepSeek-prover的11%提升到98.93%。三是skill library理念（来自LegoProver）：像乐高积木一样，每个证明技能可以组合复用。</p>
+</section>
+
+<section>
+  <h2>肯·小野：从OpenAI手中截胡</h2>
+  <p>2025年11月底，57岁的终身教授Ken Ono给洪乐潼发了一封"非常怪的邮件"：他可能会加入OpenAI或DeepMind，希望她有心理准备。</p>
+  <p>洪乐潼的回复是："你可以来我这里。"Zoom上谈了一次——"两三天内"完成。"我倒没sell他……然后你可能还是得去OpenAI看一看，如果你能有时间来我们这边看一看。"</p>
+  <p>Ken Ono来湾区后直接去了OpenAI，没来过Axiom办公室。洪乐潼觉得"肯定凉了"。</p>
+  <p>但他选择了Axiom。为什么？"他觉得我们的团队更数学……这个公司的DNA和专注点就是数学，而不是一个general的AGI，然后数学是其中一个部分。"François Chollet的加入也是关键因素——两人"对对方也非常惺惺相惜"。</p>
+  <p>Ken Ono是一个传奇人物。数论学家，在划分函数领域年轻时就做出杰出成就。拉马努金精神的现代继承人——他的父亲是给拉马努金修雕像的数学家之一。美国数学学会前任副主席、白宫政策顾问。美国奥林匹克游泳队的数据分析教练。拍过拉马努金的好莱坞电影，正在拍第二部。经营以拉马努金命名的慈善基金会。</p>
+  <p>洪乐潼说："他的性格是一个高中的篮球队教练——特别特别乐观。你跟他聊你就会觉得'我本来就很想做这件事情，我现在更想做这件事情了'。"</p>
+</section>
+
+<section>
+  <h2>"任何你能定义的，你都能证明"</h2>
+  <p>洪乐潼相信一个简洁而宏大的愿景："任何你能定义的你都能证明。任何你能specify的，任何你能表达的，你都能执行。这是我们对于coding未来的一个愿景。"</p>
+  <p>软件验证的公式很简单：Program（程序）× Specification（目标）→ Verification Condition（验证条件）× Proof（证明）。AI现在能写代码（Program），形式化语言提供了验证条件。缺的是Specification——"定义"。</p>
+  <p>"任何我能写成一个数学问题的问题都会被证明。在这个coding里面——任何能够定义的都能够被执行。"</p>
+  <p>但定义的难题就在这里。为什么Axiom不能直接参加First Proof挑战？"因为这10道题我甚至都没有办法把它转化成Lean的这个题目。"题目涉及很多定义，完全不在mathlib里面。如果要去定义这些，"这一步目前极其很难做。由于我无法定义，导致我无法证明。"</p>
+  <p>所以auto-formalization——把人类数学论文转化为Lean代码——是"比证明更难的科技"。输入是一篇arXiv数学论文PDF，输出是该论文所有定理-证明对的Lean代码。这需要把20页的文章拆成200-500页的细化蓝图（blueprint），每一步再逐个转化为Lean。陶哲轩、Kevin Buzzard、Alex Kontorovich这些数学家已经手工做过blueprint——但AI来做的难度是另一个数量级。</p>
+</section>
+
+<section>
+  <h2>数学是现实世界的沙盒</h2>
+  <p>"数学是现实世界的沙盒，因为你既有验证的这个信号，又能够有更规律性的描述，更结构性的。"</p>
+  <p>在现实世界验证一个猜想——需要做实验、建实验室、处理messy data。数学给了最干净的验证循环。这就是为什么AI for Math可以成为一个AI自我提升的游乐场：在这里试验subagents、skills、MCP这些前沿AI概念，因为有明确的验证信号——证明对了就是✓，错了就是✗。</p>
+  <p>洪乐潼列举了数学可以服务的方向：芯片验证（目前依赖SMT工具如Cadence Jasper，有大量局限）；代码验证（"某一天在我call一个function的时候，它给你是百分之百不需要验证的函数"）；AI for Science（每个物理学家都有他们的"理论物理学家"，Axiom希望AI数学家扮演这个角色）。</p>
+  <p>她举了一个惊人的例子：亚马逊花了三到五年、二十六万行定理证明代码，只为了验证一个hypervisor的memory isolation component。"AI没有改善这些工程师的生活。"</p>
+</section>
+
+<section>
+  <h2>ASI &gt; AGI：她的激进立场</h2>
+  <p>洪乐潼在中餐馆和朋友画了一个盘子模型：圆心是1+1=2和print("hello world")，圆周是证明黎曼猜想、治疗癌症、写诺贝尔文学奖作品——所有超人类任务。OpenAI的做法是从圆心出发，一点点把圆环撑大直到覆盖所有边界（AGI）。Axiom的做法是从圆心出发，直接往"证明黎曼猜想"这个点打。打穿之后，发散出一个扇形——覆盖代码验证、芯片验证、物理理论——但不会覆盖到"拿诺贝尔文学奖"。</p>
+  <p>"我不太喜欢AGI这个词，我觉得我们可能更是做ASI——超级智能应该是specialized。"</p>
+  <p>她的论据很直接："人类的智能也并不一定都general。我数学还可以吧，我自己都不会做饭洗衣服。"</p>
+  <p>如果既有数学做algorithm的能力，又有猜想能力，AI就可以实现recursive self-improvement（递归自我提升）——持续螺旋上升。"AI scientist + AI engineer。X线（Axiom）一定是其中的一环。"</p>
+</section>
+
+<section>
+  <h2>从Math Poor到Math Rich</h2>
+  <p>"我们以前的这个世界能够做到比较顶尖的数学思维的人是很少的。我们现在会从一个math poor到math rich的社会。所有没有被解决的理论问题，所有应用科学家们希望有一个数学家帮他们解决的问题，全部可以解决。"</p>
+  <p>她引用了DeepMind的Demis Hassabis在AlphaFold成功后的故事：有人提议做个平台让结构生物学家提交希望折叠的蛋白，"两亿个蛋白。"Demis把笔扔在桌子上，"结束会议吧——fold everything。"</p>
+  <p>"指数级的数学发现的增长，这个我觉得一定一定会发生。"数学家将成为资源分配者——"他们的直觉告诉我们说我们应该比如两百个H200花在这道题上，八千个H200花在这一道题上。"</p>
+  <p>而且，数学和代码是一个生态系统。洪乐潼引用菲尔兹奖得主田刚的话："你有纯数学你就有应用数学。纯数学你如果死了你应用数学也就没了。"中国剩余定理——初等数论——正在被MIT的研究者用在计算"多少个神经元能够叠起来"的neural capacity问题上。"我们做梦也不会想到数论会与计算机神经科学理论产生关系。"</p>
+</section>
+
+<section>
+  <h2>好奇心：人类不可压制的基本需求</h2>
+  <p>"假设AI for Math非常成功……所有的数学题……这个AI就把它全部解决了。这个时候还会有数学家吗？我答案是一定会有。就是你给我一个一百万行Lean代码，我一定要去看里面是怎么做出来的。你你不让我去看我都会去看。"</p>
+  <p>洪乐潼认为，new lab之所以不断诞生，背后是一个基本作用力——"好奇心与创造力是人类的基本需求。在一些前沿的大公司里面无法去做满足他burning passion的事情他就要出来。"万亿美元的大包"也无法压制住这些青年研究者的好奇心"。</p>
+  <p>证明→发现→发明→证明，这是一个循环。"AI做了这个发现，让数学家更好的发明。"人类数学家不会被替代，而是会角色升级——从解题者变为问题定义者和直觉提供者。"随着AI的进步，人类数学家会学习在不同的抽象层面上进行逻辑推理。"</p>
+</section>
+
+<section>
+  <h2>既是泡沫也是登月</h2>
+  <p>"有一些公司它成了它就登月了。有一些公司……大家真的是每一天996一块儿去朝那个梦想努力，结果没成——那就是泡沫。"</p>
+  <p>洪乐潼很清楚Axiom的命运。"这个公司没有一个在中间的可能性。要么登月成功，要么登月失败。"就像SpaceX——"要么火箭发上去了要么火箭坠毁了。可能火箭要坠毁几次才发上去，可能每次都差那么一点。"</p>
+  <p>她最大的挑战是速度与思考的平衡。"执行的越多我学习时间越少，这是一个非常痛苦的过程。"以前每天有多少时间阅读？现在少了。但每天仍然有那么多事情需要执行。"有点怕说是一个是怕执行的不够快，另外一个是怕由于要执行的快导致焦虑导致一些就是方向上出一些战略错误。"</p>
+  <p>但她的底线很清楚："我们必须要成为一个比较长的一个企业一个公司。但与此同时这个公司的DNA就是登月。"如果失败了呢？"我可能会去希望看一看……神经科学……我们基本不理解人脑。我们完全不理解人脑。"</p>
+</section>
+
+<div class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div class="quote-item q-blue">
+    <span class="text">"我一直就是非常希望能当直觉派、天才派。然后这其实是我很小的一个痛苦的一个根源——就是我一直发现我自己没有什么特别大的数学天赋。我是一个蛮力型选手。"</span>
+    <span class="ctx">— 洪乐潼谈自己的数学天赋</span>
+  </div>
+
+  <div class="quote-item q-green">
+    <span class="text">"我觉得我在拒绝被驯化成为一个竞争力很强的人。"</span>
+    <span class="ctx">— 面对奥数体系的零和竞争</span>
+  </div>
+
+  <div class="quote-item q-purple">
+    <span class="text">"证明某种程度上它是影响力。就是我只要能够去把这个东西严丝合缝的逻辑证明出来，我这个数学的发现就是可以被接受的。"</span>
+    <span class="ctx">— 谈数学证明的社会性</span>
+  </div>
+
+  <div class="quote-item q-yellow">
+    <span class="text">"没有人喜欢融资。它不是说难，结果难，它就是累。你是一个复读机，一次一次的说一样的事情。你一次一次的接到一样的问题。"</span>
+    <span class="ctx">— 谈融资过程</span>
+  </div>
+
+  <div class="quote-item q-orange">
+    <span class="text">"我觉得大部分我知道的founder，就是创业公司的创始人，他们都对苦难上瘾。"</span>
+    <span class="ctx">— 谈创业者的心理特质</span>
+  </div>
+
+  <div class="quote-item q-red">
+    <span class="text">"任何你能定义的你都能证明。任何你能specify的，任何你能表达的，你都能执行。这是我们对于coding未来的一个愿景。"</span>
+    <span class="ctx">— 谈形式化验证的终极目标</span>
+  </div>
+
+  <div class="quote-item q-blue">
+    <span class="text">"我们以前的这个世界能够做到比较顶尖的数学思维的人是很少的。我们现在会从一个math poor到math rich的社会。"</span>
+    <span class="ctx">— 谈AI for Math的终极愿景</span>
+  </div>
+
+  <div class="quote-item q-green">
+    <span class="text">"我觉得最好的领导力可能是服务型。最好的领导力就是……整个团队在登山的时候，你不是前面那个拿着喇叭的那个，你是后面递水的那个。"</span>
+    <span class="ctx">— 谈自己做CEO的哲学</span>
+  </div>
+
+  <div class="quote-item q-purple">
+    <span class="text">"我们盲目的接受了这个非常强大的AI会犯错误，但是我们相信在一些领域上这些错误将极度的昂贵，我们相信能够去做一个尽量perfect的AI。"</span>
+    <span class="ctx">— 谈为什么需要可验证的AI</span>
+  </div>
+
+  <div class="quote-item q-yellow">
+    <span class="text">"解决一个有意义的失败比很多个肤浅的成功来的更有价值。"</span>
+    <span class="ctx">— 谈公司探索哲学</span>
+  </div>
+
+  <div class="quote-item q-orange">
+    <span class="text">"你只要biased to work action，每一次你在执行与不执行，做和不做中选择那个乐观的选项，你就能够有一天走到那个终点。"</span>
+    <span class="ctx">— 谈创业决策的底层逻辑</span>
+  </div>
+
+  <div class="quote-item q-red">
+    <span class="text">"你一边编程的时候它告诉你整个编程不需要任何test case已经完完全解决了这个coding问题。"</span>
+    <span class="ctx">— 谈未来的编程体验</span>
+  </div>
+</div>
+
+<footer>
+  <p>来源：<a href="https://www.xiaoyuzhoufm.com/episode/69e4e6951d989496e7fecc7b?utm_source=rss">小君商业访谈录 · 第137期 · 对洪乐潼的4小时访谈</a></p>
+  <p style="margin-top:8px">此文由 AI 根据播客转录文本自动生成。所有引言均可在原转录中找到出处。</p>
+</footer>
+
+</article>
+</body>
+</html>
