@@ -1,76 +1,60 @@
 source: tbpn
-refreshed_at: 2026-06-04T18:50:08.297Z
+refreshed_at: 2026-06-05T04:37:04.964Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 5
-done: 1
-pending: 2
+total_candidates: 3
+done: 0
+pending: 1
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: fce51b15-5506-4c23-9fcf-6cb82ebfae10
-    title: Microsoft Chases the Frontier, SUNO on Fire, Project Solara | Mikey Shulman, Samir Chaudry, Tom Farley, Nikesh
-      Arora, Henri Stern, Alex Good
-    duration: 9604
-    published: Wed, 03 Jun 2026 14:03:20 -0700
-    published_sort: "20260603"
-    first_seen_at: 2026-06-04T04:38:00.159Z
-    url: https://share.transistor.fm/s/e066c7b5
-    audio_url: https://media.transistor.fm/e066c7b5/412bdcc8.mp3
+  - id: cc5049aa-7b91-45a0-81fa-9a3ba99cd5de
+    title: 🔴 Alex Karp LIVE from AIPCon 10 | Alex Karp, Peter Zaffino, Chad Wahlquist, Sam Berry
+    duration: 6583
+    published: Thu, 04 Jun 2026 13:52:42 -0700
+    published_sort: "20260604"
+    first_seen_at: 2026-06-05T04:37:04.956Z
+    url: https://share.transistor.fm/s/47c63ce6
+    audio_url: https://media.transistor.fm/47c63ce6/fa5b9735.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/e066c7b5/transcription.txt
+    transcript_url: https://share.transistor.fm/s/47c63ce6/transcription.txt
     transcript_type: text/plain
-    summary: "(00:35) - Microsoft Chases the Frontier\r
+    summary: "(00:00) - - Live from Palantir's AIPCon 10\r
 
-      (05:00) - Project Solara\r
+      (12:38) - - Ramp raises $750M at $44B valuation\r
 
-      (16:19) - Mikey Shulman, representing Suno, discusses the company's recent achievement of raising over $400
-      million, led by Bond, highlighting significant traction and progress in user engagement and retention. He
-      emphasizes the importance of retention as a key metric, noting that improvements in the product have led to
-      increased user engagement and a broader audience. Shulman also addresses the evolving perception of AI-generated
-      music, suggesting that as more people experience the product, acceptance grows, and he envisions a future where AI
-      tools like Suno become integral to creative processes in the music industry.\r
+      (15:19) - - Timeline reactions\r
 
-      (35:20) - 𝕏 Timeline Reactions\r
+      (23:57) - - Alex Karp, co-founder and CEO of Palantir Technologies, discusses the evolution of artificial
+      intelligence (AI) adoption, noting a shift from skepticism to widespread recognition of its value, while
+      cautioning against unproductive overuse. He emphasizes the importance of taste and discernment in effectively
+      integrating AI into business processes, highlighting that successful implementation requires more than just
+      technical capability. Karp also warns of potential nationalization and regulation of AI technologies by
+      governments, urging proactive engagement to address these challenges.\r
 
-      (43:28) - Samir Chaudry is an American entrepreneur and co-host of the YouTube channel \"Colin and Samir,\" where
-      he interviews creators and discusses the creator economy. In the conversation, he explores the evolving
-      collaboration between YouTube creators and Hollywood, emphasizing the emergence of internet-native filmmakers and
-      the significance of community-driven intellectual property. He highlights the success of horror and animation
-      genres on YouTube, noting their potential for adaptation into feature films, and underscores the importance of
-      development support for creators transitioning to larger projects.\r
+      (48:04) - - Peter Zaffino, born in 1967, is the Chairman and CEO of American International Group (AIG), having
+      joined the company in 2017 as Executive Vice President and Global Chief Operating Officer. In the conversation,
+      Zaffino discusses AIG's global operations, emphasizing its balanced international and North American presence, and
+      highlights the company's focus on managing complex risks for large clients. He also elaborates on AIG's
+      partnership with Palantir Technologies, detailing how their collaboration has enhanced data integration and
+      decision-making processes within the organization.\r
 
-      (01:08:47) - Tom Farley, CEO of Bullish and former President of the NYSE Group, discusses his career trajectory
-      from traditional finance to the digital asset sector, highlighting his early investment in Coinbase and the
-      evolving role of blockchain in financial markets. He reflects on the maturation of the cryptocurrency industry,
-      noting its transition from speculative hype to a more stable and institutionalized market, and emphasizes the
-      potential for blockchain technology to revolutionize global securities by enhancing transparency and efficiency.
-      Farley also addresses the challenges and opportunities in integrating digital assets with traditional financial
-      systems, underscoring the importance of regulatory clarity and technological innovation in driving future
-      growth.\r
+      (01:01:35) - - Chad Wahlquist, a Forward Deployed Architect at Palantir Technologies, discusses his role in
+      assisting clients to decompose complex problems and apply Palantir's technology in innovative ways. He emphasizes
+      the importance of integrating AI with human processes to model business operations effectively, highlighting the
+      ontology's role in providing a structured worldview that enhances decision-making. Wahlquist also addresses the
+      balance between software malleability and enterprise-grade robustness, advocating for adaptable systems that
+      empower users while maintaining security and scalability.\r
 
-      (01:32:48) - Nikesh Arora, an Indian-American business executive born in 1968, has been the chairman and CEO of
-      Palo Alto Networks since June 2018, following senior roles at Google and SoftBank. In the conversation, Arora
-      discusses the challenges AI models like Anthropic's Mythos face in cybersecurity, emphasizing issues such as high
-      false positive rates and the lack of real-time enforcement capabilities. He also highlights the importance of
-      focusing on detection and remediation over mere protection, given the evolving AI-driven threat landscape.\r
+      (01:22:35) - - Timeline reactions\r
 
-      (01:56:04) - Henri Stern, co-founder and CEO of Privy, a blockchain infrastructure company, discusses his
-      participation in the Money 2020 fintech conference in Amsterdam, where Privy launched new products in partnership
-      with Deel to enable contractors to receive stablecoin payments globally. He highlights the growing adoption of
-      stablecoin cards that allow users to spend stablecoins directly through traditional payment networks like Visa and
-      MasterCard, facilitating seamless transactions for merchants. Stern also notes the significant adoption of
-      stablecoins in regions like Latin America and Southeast Asia, while acknowledging the regulatory restrictions in
-      countries such as China that limit stablecoin usage.\r
-
-      (02:11:13) - Alex Good, a former Army officer and experienced professional in finance and technology, has
-      transitioned into the crypto and AI sectors, focusing on developing protocols that integrate these fields. He
-      discusses the challenges at the intersection of crypto and AI, including increased hacking incidents due to AI's
-      ability to evaluate human-written code, and emphasizes the need for secure protocols to prevent unauthorized
-      transactions. Good also shares his \"doom thesis,\" suggesting that AI might accelerate the emergence of
-      surveillance states, prompting capital to move into privacy-focused cryptocurrencies like Zcash.
+      (01:25:22) - - Sam Berry, a USDA employee with a background in engineering and a family history in farming,
+      discusses the diverse roles of the USDA, including food inspections, SNAP administration, and scientific research.
+      He highlights the importance of technological advancements in agriculture, such as automation and AI, to address
+      challenges like workforce shortages and pest control. Berry also emphasizes the need for effective data collection
+      and management to ensure program integrity and support national food security.
 
 
       TBPN is made possible by:
@@ -122,7 +106,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
@@ -289,205 +273,4 @@ episodes:
 
       https://www.youtube.com/@TBPNLive"
     status: failed
-    priority: 1
-  - id: a4b09286-41e9-4123-814a-1da986930935
-    title: Big Tech Earnings, Red vs. Blue Button, Quantum Computing | Jason Yanowitz, Even Rogers, Maria Spiropulu, Stepan
-      Simkin, Kashish Gupta, Dan Magy, Vlad Tenev, Parag Agrawal & Andrew Reed, Gabriel Stengel
-    duration: 10499
-    published: Wed, 29 Apr 2026 14:16:13 -0700
-    published_sort: "20260429"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/93dffc7f
-    audio_url: https://media.transistor.fm/93dffc7f/fe4593b8.mp3
-    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/93dffc7f/transcription.txt
-    transcript_type: text/plain
-    summary: "(00:22) - Big Tech Earnings\r
-
-      (15:28) - AI Jitters Return to Wall Street\r
-
-      (19:23) - Red vs. Blue Button\r
-
-      (36:51) - Jason Yanowitz, co-founder of Blockworks, a crypto-focused media and data company, discusses the
-      company's recent $192 million valuation, highlighting investments from firms like Parafine Reciprocal and Coinbase
-      Ventures, as well as participation from 20 customers, including founders and operators from Solana, Kraken, and
-      Canton. He outlines Blockworks' evolution from a media and events business to becoming the largest data company in
-      crypto, emphasizing their strategy of building a strong audience base before developing data products. Yanowitz
-      also addresses the current state of the crypto market, noting a dichotomy where institutional crypto adoption is
-      thriving while token markets are underperforming, and anticipates that upcoming regulatory clarity will mandate
-      disclosures for all token projects, potentially benefiting Blockworks' disclosure platform.\r
-
-      (49:31) - Even Rogers, CEO and Co-Founder of True Anomaly, discusses his transition from a 10-year tenure in the
-      U.S. Air Force to establishing the company, aiming to address the weaponization of space by nations like China and
-      Russia. He highlights the development of their space-to-space engagement platform, Jackal, designed for space
-      superiority, and Mosaic, the software that operates it, emphasizing their rapid deployment and testing
-      methodologies. Rogers also touches on the challenges of tracking objects in space, the importance of reducing
-      coverage gaps, and the company's growth trajectory, including a recent $650 million fundraising round and plans to
-      scale up manufacturing and personnel.\r
-
-      (01:02:09) - Maria Spiropulu, an experimental particle physicist with over 30 years of experience at CERN and
-      Fermilab, discusses her work in particle collisions, including the discovery of the Higgs boson, and the
-      development of quantum networks for secure communication. She highlights the potential of quantum computing to
-      revolutionize fields like quantum chemistry and materials science, while emphasizing the importance of addressing
-      cybersecurity challenges posed by these advancements. Additionally, Spiropulu underscores the need for
-      interdisciplinary collaboration to ensure that technological progress benefits society as a whole.\r
-
-      (01:33:08) - Stepan Simkin, co-founder and CEO of Squads, discusses the development of stablecoin infrastructure
-      to assist businesses in managing their financial operations. He highlights the challenges companies face in
-      adopting stablecoins, such as the complexity of handling them post-transaction, and emphasizes the importance of
-      integrating stablecoins with traditional banking systems to facilitate seamless financial operations. Simkin also
-      notes the advancements in programmable blockchains and the growing maturity of the stablecoin market, which have
-      enhanced confidence among regulators and the broader market.\r
-
-      (01:45:03) - Kashish Gupta, co-founder and co-CEO of Hightouch, an AI platform for marketers, discusses the
-      company's recent $150 million Series D funding at a $2.75 billion valuation, led by Goldman Sachs and Bain Capital
-      Ventures. He highlights Hightouch's evolution since its 2020 inception, emphasizing their AI-driven approach to
-      enabling marketers to generate on-brand content like ads and emails efficiently. Gupta also addresses the
-      transformative role of AI in marketing, noting that Hightouch's platform allows marketers to rapidly launch and
-      test numerous campaigns, leveraging AI to optimize media spend and content creation.\r
-
-      (01:57:36) - Dan Magy, co-founder and CEO of Firestorm Labs, discusses the company's mission to revolutionize
-      drone manufacturing through advanced, modular designs and on-demand production capabilities. He highlights the
-      development of the xCell platform, a containerized manufacturing system that enables rapid production of unmanned
-      systems directly at the tactical edge, addressing the challenges of contested logistics. Magy also announces
-      Firestorm's recent $82 million Series B funding, led by Washington Harbour Partners, to accelerate the deployment
-      of these expeditionary manufacturing solutions.\r
-
-      (02:06:57) - Vlad Tenev, co-founder and CEO of Robinhood, discusses the company's strategic investments across
-      various stages of the customer lifecycle, including the introduction of Trump accounts to engage younger users,
-      the growth of Robinhood Banking and the Robinhood Gold Card, and the expansion into active trading. He highlights
-      the company's focus on promoting beneficial products like retirement accounts with a 3% contribution match and the
-      innovative Robinhood Strategies, a low-cost passive digital advisor with capped fees. Tenev also addresses
-      customer feedback, noting the company's responsiveness in enhancing features such as paying dividends up to 17
-      days early and considering the addition of international stocks to meet user demand.\r
-
-      (02:29:44) - Parag Agrawal, former CEO of Twitter, discusses the rapid development of AI agents utilizing the web,
-      highlighting the significant progress made in the past six months. He emphasizes the importance of aligning
-      incentives between content owners and AI developers to ensure sustainable growth and open access to web content.
-      Agrawal also addresses the challenges posed by varying web access policies and the need for efficient solutions to
-      enable agents to interact seamlessly with diverse web infrastructures. Andrew Reed is a partner at Sequoia Capital
-      focused on early-stage investments in software, AI, and developer tools. He works closely with founders on
-      product, go-to-market, and scaling, with an emphasis on backing technically driven teams building foundational
-      technology companies.\r
-
-      (02:44:03) - Gabriel Stengel, founder and CEO of Rogo, discusses the company's recent $160 million Series D
-      funding round, led by Kleiner Perkins, valuing Rogo at $2 billion. He highlights the rapid adoption of AI tools in
-      the financial sector, emphasizing Rogo's role in enhancing productivity and investment decisions for institutions
-      like investment banks and hedge funds. Stengel also addresses the importance of aligning AI applications with
-      business objectives, managing token consumption, and adapting organizational structures to integrate evolving AI
-      technologies effectively.
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: pending
-    priority: 1
-  - id: 8709dd5c-1796-4133-8668-10d0171cffb2
-    title: In-Car Surveillance, Goblin-Mode, Jon Gray from Blackstone Joins | Colleen Aubrey, Anthony Liguori, Colin Zima,
-      Alex Epstein, Shira Lazar, Anshul Gupta, Apurva Shrivastava, Bubble Boi
-    duration: 7706
-    published: Tue, 28 Apr 2026 13:29:50 -0700
-    published_sort: "20260428"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/ae7b6804
-    audio_url: https://media.transistor.fm/ae7b6804/85423416.mp3
-    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/ae7b6804/transcription.txt
-    transcript_type: text/plain
-    summary: "(00:14) - In-Car Surveillance\r
-
-      (12:22) - Goblin-Mode\r
-
-      (14:48) - Jon Gray, President and COO of Blackstone, joined the firm in 1992 and has been instrumental in its
-      growth to managing over $1.3 trillion in assets. In the conversation, he reflects on Blackstone's evolution from a
-      small advisory business to a global investment powerhouse, emphasizing the firm's entrepreneurial spirit and
-      commitment to delivering premium returns. Gray also discusses the impact of artificial intelligence on various
-      industries, highlighting both the challenges and opportunities it presents for investors.\r
-
-      (36:18) - Colleen Aubrey, Senior Vice President of Applied AI Solutions at AWS, has been with Amazon for over 20
-      years, leading teams in advertising and now focusing on AI-driven applications. She discusses the launch of Amazon
-      Connect Decisions and Amazon Connect Talent, emphasizing the transformative potential of AI agents as teammates
-      that can fundamentally change business operations. Aubrey highlights the importance of trustworthiness and
-      observability in AI agents, ensuring they can explain their actions and reasoning, thereby fostering confidence
-      and enabling effective collaboration within organizations.\r
-
-      (44:02) - Anthony Liguori discusses the evolution of AI models from simple token prediction to advanced agentic
-      systems, emphasizing the integration of tools and memory to enhance capabilities. He introduces Amazon Bedrock
-      Managed Agents, highlighting its three components: runtime definitions for agents, dedicated compute environments
-      with unique identities for governance, and an inference API compatible with existing applications. Liguori also
-      shares his personal experience, noting that these advancements have significantly increased his productivity and
-      enjoyment in coding.\r
-
-      (51:57) - Colin Zima, CEO of Omni Analytics, discusses his company's mission to build a comprehensive data
-      platform that integrates AI, spreadsheets, and dashboards atop a semantic layer, ensuring reliable AI operations.
-      He highlights the uniqueness of each business's semantic layer and the importance of bridging traditional data
-      structures with modern AI capabilities. Zima also addresses the evolving landscape of data infrastructure,
-      emphasizing the increased portability of data systems and the need for pragmatic, cost-effective solutions in
-      analytics.\r
-
-      (01:00:47) - Alex Epstein, author of *Fossil Future*, is a philosopher and energy expert who advocates for the
-      continued use of fossil fuels to promote human flourishing. In the conversation, he discusses the critical
-      importance of maintaining open access to the Strait of Hormuz for global energy stability, the role of OPEC and
-      its member countries in regulating oil supply and prices, and the potential of solar energy innovations, such as
-      space-based solar power, while emphasizing the current limitations and challenges associated with these
-      technologies.\r
-
-      (01:25:34) - Shira Lazar is a Canadian television personality, actress, writer, and video blogger, best known as
-      the creator and host of \"What's Trending,\" a pioneering digital news brand. In the conversation, she discusses
-      her extensive experience in the digital media and creator economy, highlighting the evolution of live streaming
-      since launching \"What's Trending\" in 2011. She also explores the current landscape of the creator economy,
-      noting opportunities for both large-scale influencers and niche creators, while emphasizing the challenges faced
-      by mid-level creators in monetizing their content.\r
-
-      (01:41:09) - Anshul Gupta, co-founder of Actively, discusses how their platform enhances revenue team productivity
-      by deploying per-account agents that proactively guide and assist sales representatives throughout the customer
-      lifecycle. These agents integrate data from various sources, including product analytics and communication tools,
-      to provide comprehensive context and actionable insights, enabling more efficient and effective sales processes.
-      Gupta also highlights the potential for organizational changes, such as adjusting management structures and team
-      ratios, as companies realize efficiency gains from implementing these agents.\r
-
-      (01:47:21) - Apurva Shrivastava, co-founder and CEO of Avoca, discusses how his company builds AI agents for
-      physical service businesses, particularly home services, to handle tasks like answering calls and booking jobs. He
-      explains that both he and his co-founder, Tyson, grew up assisting their mothers' service businesses, which
-      inspired them to create solutions that address common industry challenges. Apurva highlights the significant
-      advancements in AI voice models, noting that while they can now engage in conversations indistinguishable from
-      humans for the first 30 seconds to a minute, there is still progress to be made for longer interactions.\r
-
-      (01:53:59) - Bubble Boi, a semiconductor industry expert, discusses the advantages of maintaining a traditional
-      job to stay connected with engineering challenges, the early stages of the AI investment cycle with significant
-      capital expenditures expected over the next three years, and the impact of large language models on market
-      dynamics, noting that financial institutions are rapidly adopting these technologies for research.
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: pending
     priority: 1
