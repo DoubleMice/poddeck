@@ -1,10 +1,10 @@
 source: xiaojun
-refreshed_at: 2026-06-06T04:29:56.235Z
+refreshed_at: 2026-06-06T18:30:47.507Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 10
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 7
 transcribing: 1
 transcribe_failed: 0
@@ -48,7 +48,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69de68cfb977fb2c47f1ee14?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69de68cfb977fb2c47f1ee14/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lh_CQyoSs_DztmYB5kmBjaPA6W9V.m4a
     image: https://image.xyzcdn.net/FlecCvBF6ZxBOUXu2kbcK-vghPbp.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: f8bfad26f7e44decae1d1803ff02cbde,5d4a2be941ae4fcc95112510f45219b3,5fe41fbb56b74117bf18aa988a7472ca,451fa4f5a71349de8cb12c7d6b9f98a4,efb4d86b9f174d4db1c800f83461ab67,f40d8d504bef4069a9adf80aa860ac02

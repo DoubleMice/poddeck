@@ -1,11 +1,11 @@
 source: lex-fridman
-refreshed_at: 2026-06-06T04:29:56.252Z
+refreshed_at: 2026-06-06T18:30:47.527Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
+done: 1
 pending: 1
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -19,7 +19,7 @@ episodes:
     url: https://lexfridman.com/lars-brownworth/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lars-brownworth
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_lars_brownworth.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 3063055e6cef4237b1d6a8be62a5c5b7,9c96c2ad564044bc93dbedba8d093922,b98c5a0363ad49e68d3ea9c1cd3f1501,0c5e5617993e415cadae6420674c9d7f,1e7176a199ce46fcbb1f288d231a0a45,9923799ee351477792c6a08a40b7153b,83678584a66545c98bd3961dc371e42c,6cc00f95dab64d84a5031b7ae6319651,b5d0ad3b54554e62a005408c2455f90a
@@ -34,5 +34,9 @@ episodes:
     url: https://lexfridman.com/paul-rosolie-3/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=paul-rosolie-3
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_paul_rosolie_3.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-06T18:33:55.001Z
+    transcript_job_id: fa512f22b715465da4f0e68cd39c7e6a,4bf487e59d9d4ed3b92f928ece9f0e2f,1e63740179414f408f23e4282dc0fc14,0f4f72a2a7ef46a4a9583847c22783df,68a9866c68194e55898e0b324e8dc4ba,a68155bb395e41a5ae986b5dfdddf7c6,ded45b4a70c24a579e931e0a67bd88f7,a6bfaca3b17a4df0b63eac9f89502770,d27288de8aa742da82d1811c8d3089c6,c44ec2b2f72d4cb7a39e5174cea2740d,9df6520d302d40da9b6c7fa3e826248f,3be1c19cd80a481bae2d3ee2ec68bbe5,9a1b7104dfa549cfa92518ac68b49018
+    transcript_completed_at: 2026-06-06T18:43:22.006Z

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>136. 全球大模型季报第9集：和广密聊</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a2e;
+  background: #fafafa;
+  -webkit-font-smoothing: antialiased;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+header {
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 48px;
+}
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  color: #111;
+}
+header .meta {
+  font-size: 14px;
+  color: #666;
+}
+header .meta span {
+  margin: 0 8px;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 0 20px;
+  color: #111;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #1971c2;
+  display: inline-block;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 28px 0 12px;
+  color: #222;
+}
+p {
+  margin-bottom: 16px;
+  color: #333;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+  margin: 24px 0 36px;
+}
+.card {
+  padding: 18px 20px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+.card .sub {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.55;
+}
+.card.blue   { border-color: #1971c2; background: #f0f6ff; }
+.card.green  { border-color: #2f9e44; background: #f0fdf4; }
+.card.orange { border-color: #e8590c; background: #fff7ed; }
+.card.purple { border-color: #862e9c; background: #faf5ff; }
+.card.yellow { border-color: #e67700; background: #fffbea; }
+.card.red    { border-color: #c92a2a; background: #fff5f5; }
+.insight-box {
+  padding: 20px 24px;
+  border-radius: 8px;
+  margin: 20px 0;
+  background: #f0f6ff;
+  border-left: 4px solid #1971c2;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.insight-box .attr {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-style: normal;
+  color: #666;
+}
+.author-note {
+  padding: 8px 14px;
+  margin: 12px 0;
+  background: #fffbea;
+  border-left: 3px solid #e67700;
+  font-size: 14px;
+  color: #555;
+}
+.quote-section {
+  margin: 36px 0;
+}
+.quote-section .quote-item {
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  background: #fff;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.quote-section .quote-item .context {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-style: normal;
+  color: #888;
+}
+.quote-section .quote-item:nth-child(1) { border-color: #1971c2; background: #f0f6ff; }
+.quote-section .quote-item:nth-child(2) { border-color: #2f9e44; background: #f0fdf4; }
+.quote-section .quote-item:nth-child(3) { border-color: #e8590c; background: #fff7ed; }
+.quote-section .quote-item:nth-child(4) { border-color: #862e9c; background: #faf5ff; }
+.quote-section .quote-item:nth-child(5) { border-color: #e67700; background: #fffbea; }
+.quote-section .quote-item:nth-child(6) { border-color: #c92a2a; background: #fff5f5; }
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #e8e8e8;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
+footer a {
+  color: #1971c2;
+  text-decoration: none;
+}
+footer a:hover { text-decoration: underline; }
+.data-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+.data-point {
+  text-align: center;
+  padding: 16px 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: 2px solid #e8e8e8;
+}
+.data-point .number {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.data-point .label {
+  font-size: 12px;
+  color: #888;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0 28px;
+}
+.compare-col {
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  border-left: 4px solid;
+}
+.compare-col.good { border-color: #2f9e44; background: #f0fdf4; }
+.compare-col.bad  { border-color: #c92a2a; background: #fff5f5; }
+.compare-col h3 { font-size: 16px; margin: 0 0 10px; }
+.compare-col ul { font-size: 14px; line-height: 1.65; padding-left: 18px; color: #444; }
+.compare-col ul li { margin-bottom: 4px; }
+@media (max-width: 640px) {
+  article { padding: 24px 16px 48px; }
+  header h1 { font-size: 22px; }
+  .compare-grid { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>136. 全球大模型季报第9集<br>和广密聊 Coding 是 AGI 第二幕</h1>
+  <div class="meta">
+    小俊 × 广密 <span>·</span> 2026年4月 <span>·</span> 语言即世界工作室
+  </div>
+</header>
+
+<h2>为什么这期特别？</h2>
+
+<div class="card-grid">
+  <div class="card blue">
+    <strong>Coding 成为 AGI 真正的加速器</strong>
+    <div class="sub">从 chatbot 第一幕跨入 agent 第二幕，coding 的爆发性比 ChatGPT 当年更陡峭</div>
+  </div>
+  <div class="card green">
+    <strong>硅谷御三家战略大分化</strong>
+    <div class="sub">Anthropic 专注取胜，OpenAI C端误判，Google benchmark 被高估——各领风骚一百天</div>
+  </div>
+  <div class="card orange">
+    <strong>模型 = 新一代操作系统</strong>
+    <div class="sub">最领先的模型将成为全球 GDP 的基础设施——比今天的 Google 对世界的支撑更重要</div>
+  </div>
+  <div class="card purple">
+    <strong>白领通缩窗口已至</strong>
+    <div class="sub">2026年可能 30% 岗位消失，最顶尖的 AI researcher 也担心自己一到两年后没有工作</div>
+  </div>
+</div>
+
+<div class="insight-box">
+  过去一个季度的推背感非常强，AI 的奇点时刻应该已经到了——广密
+</div>
+
+<h2>一、2026 Q1：AI 奇点时刻</h2>
+
+<p>2026 年第一季度的 AI 进展，远远超过了大多数人的预期。广密给出的核心判断直截了当：过去一个季度模型水平进步的幅度，可能超过了 2025 年全年的进步幅度。</p>
+
+<p>最关键的转折点是 Anthropic 的 Opus 4.5 到 4.6 的跨越。广密将其评价为<strong>"从 GPT-3 到 GPT-4 水平的跨时代的提升"</strong>——这意味着我们从 chat 问问题、可以对话搜索的阶段，进入了真正的 agent 模式，可以做高价值任务了。任务的价值量提升，usage 自然也在提升。</p>
+
+<p>而且加速度还远未结束。广密预计今年夏天六七月份之前，可能还会有一次 GPT-3 到 GPT-4 级别的跨越——因为 Anthropic 和 OpenAI 的新模型（Muses 和 Spark）下一代也已经在训练过程中。以前人们觉得 AGI 还挺遥远，现在身边有朋友认为<strong>两年内 AGI 肯定实现</strong>。</p>
+
+<h2>二、研究员已经不再写代码了</h2>
+
+<p>广密分享了硅谷一线的真实体感：前沿实验室的 AI researcher 和最强的程序员们，<strong>今年自己在系统里写的代码不到 1%</strong>。去年可能还有 70%-80% 的代码是人写的，今年已经完全倒转——AI 写，人来审。而且审的能力可能都不够了。</p>
+
+<p>有两个变化尤其值得关注。第一，Claude Code 和 Codex 在很多任务上已经到了 CTO 或首席架构师的水平——对标 Meta 的 L8 或 L9。广密观察到他认识的人基本都是<strong>每天消耗几百美金的 token，一周几千美金</strong>，这个量非常夸张。</p>
+
+<p>第二，而且更有意思的是，<strong>最近很多 AI research 上的突破不是人类工程师带来的，而是 Codex、Claude Code 带来的</strong>。这是一个质变的信号：AI 已经可以显著地加速 AI 本身的研究了。你以前解一个很难的 IMO 数学题可能解半天，今天 AI 帮你解可能很快。做多模态的朋友说，他们以前做数据迭代要一两个月，现在基本几天或者一个星期。想法到跑通代码从两三个星期变成一两天——这是大幅的加速。</p>
+
+<p>一个公开的数据：<strong>Anthropic 过去五十多个工作日发了七十多款产品和 features</strong>——这个速度在互联网时代根本做不到。Coding 让最顶尖的 1% 甚至 0.1% 的人的生产力被放大了几十倍。</p>
+
+<div class="data-points">
+  <div class="data-point">
+    <div class="number" style="color:#1971c2;">&lt;1%</div>
+    <div class="label">人类手写代码占比</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#e8590c;">数百$/天</div>
+    <div class="label">顶尖开发者 token 消耗</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#2f9e44;">2-3周→1-2天</div>
+    <div class="label">想法到跑通代码周期</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#862e9c;">70+</div>
+    <div class="label">50个工作日的产品发布</div>
+  </div>
+</div>
+
+<h2>三、"语言即世界，代码即方案"</h2>
+
+<p>这是广密对 coding 价值最精辟的总结，也是本期播客最核心的哲学基石。他的核心问法是：<strong>你相不相信 code 可以表达数字世界的绝大多数任务？</strong></p>
+
+<p>因为<strong>自然语言是对世界的描述，code 是对 solution 的描述</strong>。语言和代码这两种东西的高度浓缩抽象能力以及覆盖范围是极其广泛的，而且它们的泛化性已经被充分证明了。相比之下，其他领域的泛化性还没有被证明——比如你想通过数学来提升智能能力，也许可以，但是数学能表达的东西是有限的。</p>
+
+<p>如果这个假设成立，那么 coding agent 做好了，就可以把白领知识工作者的大部分任务全部自动化。今天你在办公室电脑上操作的大部分工作任务，基本上都可以被自动化。</p>
+
+<p>广密为此设计了一个清晰的 AGI 三幕剧框架：<strong>第一幕是 Chatbot</strong>（对话、搜索，商业价值有限）；<strong>第二幕是 Coding Agent</strong>（帮我们干活、加速 AGI，Token Usage 主导）；<strong>第三幕是 Automated AI Researcher</strong>（自动化研究助理，解决脑科学、材料学等基础科学问题）。</p>
+
+<p>而关键判断是：<strong>coding agent 实现了，可能 AGI 的 90% 就已经实现了</strong>——不需要什么范式创新，就可以把大多数知识工作者的任务自动化了。coding 像亚马逊当年卖书一样：借卖书把仓储、物流、供应链都拉通了，然后再横向 scale 到其他 SKU。</p>
+
+<div class="author-note">
+  作者概括：coding 之所以最先跑出来，是因为 feedback loop 最短。过去几年 AI 跑得最快的地方，都是 feedback loop 最清晰的。
+</div>
+
+<h2>四、Coding = 新的 GPU</h2>
+
+<p>广密提出了一个极其有力的类比：<strong>"你没有最领先的 coding model 就像是没有最领先的 GPU，你用 A100 跟别人用 GB，这个差别也是很大的。"</strong></p>
+
+<p>如果领先的模型公司不重视 coding，它大概率会掉出第一梯队。而且不存在所谓"只给自己用的 coding model"——因为你自家的任务数据分布不够全，肯定是落后的。广密甚至警告：如果你作为一个领先的模型公司过度依赖 Anthropic，一旦你做到第一梯队对它构成威胁，Anthropic 大概率给你断供。OpenAI 被断供了，xAI 被断供了，Google 大部分被断供了——算不好哪一天 Meta 也要被断供。<strong>Coding 本质上跟 GPU 一样，是战略级的供给。</strong></p>
+
+<p>这也意味着，coding 不再只是一个垂直场景、一个应用、一个产品——它变成了整个 AI 路线图中一个重要的加速器，是仅次于 GPU 本身的 AGI 加速要素。</p>
+
+<h2>五、Coding 的商业爆发力远超 Chatbot</h2>
+
+<p>数字最能说明问题。Anthropic 已公开表示 ARR 超过 OpenAI。但更关键的洞察是：<strong>头部的一两百万用户贡献的收入，超过了 OpenAI 五六千万订阅用户的总和。</strong></p>
+
+<p>之前所有人都觉得 ChatGPT 在 C 端已经赢了——但发现 C 端好像没有 coding 或者 agent 更大。今天更有意义的指标不再是 DAU 或广告规模，而是 <strong>token usage——尤其是超级开发者或 top tier 用户的消费</strong>。coding 的爆发性比 ChatGPT 当年还要陡峭。</p>
+
+<p>按照这个势头，年底 OpenAI 和 Anthropic 的 ARR 可能到 800 亿到 1000 亿美金，明年可能就奔着 2000 多亿美金去了。广密指出，历史上几乎没有出现过两家公司齐头并进、这么短时间内做到千亿美金营收。coding 的 run rate 在过去两三年就超过了 Google Cloud 做了十几年的规模。模型公司已经是新时代的 <strong>Mag 7</strong> 了。</p>
+
+<div class="data-points">
+  <div class="data-point">
+    <div class="number" style="color:#2f9e44;">$300亿</div>
+    <div class="label">Anthropic ARR</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#e8590c;">$250亿</div>
+    <div class="label">OpenAI ARR</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#1971c2;">$800-1000亿</div>
+    <div class="label">2025年底 ARR 预期</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#862e9c;">$2000亿+</div>
+    <div class="label">2026年 ARR 预期</div>
+  </div>
+</div>
+
+<h2>六、硅谷御三家：各领风骚一百天</h2>
+
+<p>广密用一句话总结了三年来的 AI 竞争格局：<strong>"有时候你觉得 OpenAI 无敌，三四个月前又觉得 Gemini 王者归来，今天是 Anthropic 春风得意——每个公司都有自己的窗口，各领风骚一百天。"</strong></p>
+
+<p>这个格局今年仍然定不下来。过去三年是持续淘汰赛，今年是巡回赛——可能还得打一年。以前讨论的那些壁垒，规模效应、数据飞轮、网络效应，在今天的竞争环境下可能都已经失效了。广密说：<strong>"以前所谓的壁垒是防冷兵器的，但今天是各种现代化武器。模型又开始自我迭代。"</strong></p>
+
+<p>下面我们分别看这三家各自的战略、组织与文化。</p>
+
+<h2>七、Anthropic：战略、执行与文化的胜利</h2>
+
+<p>广密对 Anthropic 的评价非常高，但他强调这更多是<strong>战略的胜利、执行的胜利、专注的胜利</strong>——而不仅是技术的胜利。Anthropic 不是从第一天就想清楚了要 all-in coding。一方面是 C 端没有机会了，另一方面是 2024 年夏天 Sonnet 3.5 发布后给了 coding 极大的正反馈。在那之后，他们<strong>只 all in 了一件事——coding</strong>，今天做成了，而且巨大。</p>
+
+<p>广密认为 Anthropic 有几个关键特征值得学习。第一是<strong>知道不做什么</strong>：放弃了 C 端、放弃了多模态、不跟风做 reasoning model。很多人觉得预训练撞墙了，他们没有；很多人把 RL 封神，他们没有刻意神化任何一个环节。最终目的是做好一个模型，更像一个<strong>球队或工业化体系</strong>，每个环节都做好。</p>
+
+<p>第二是<strong>创始人特别 hands-on</strong>：Dario 和 Jared Kaplan 是物理学家出身，对 AI 的理解更多是从物理观察的角度出发——没想着创造新的 Transformer 架构，但就是把架构 scale 得非常好，洞察了 data efficiency、架构 efficiency、工程 efficiency。有 rumor 说首席科学家 Jared Kaplan 亲自在干数据活，这是比较少见的事。广密说：<strong>"模型及应用，数据及模型——他们重视数据是刻在骨子里的。"</strong></p>
+
+<p>第三是<strong>组织稳定性</strong>：Anthropic 不招 big name，招 underdog。文化面试极其严格，会问你"AGI 实现了之后你会怎么做"这类问题。团队一直比较稳定，人才流失很少。内部很透明，对外极其保密——硅谷对 Anthropic 的了解确实最少。</p>
+
+<div class="author-note">
+  作者概括：Anthropic 更像是"从物理观察视角 found the laws of AI"，然后踏踏实实执行——没有秘密，就是把细节做得比别人好。
+</div>
+
+<h2>八、"今天胜利的秘籍，就是下个时代的毒药"</h2>
+
+<p>这是广密对 OpenAI 困境最一针见血的概括。<strong>"OpenAI 在 ChatGPT 过于成功，让他们专注 to C 而忽视了 coding。"</strong></p>
+
+<p>OpenAI 的光芒依然耀眼：9 亿多周活、五六千万付费用户、过去 lead 过两次范式级创新、人才密度极高。但问题也很明显。C 端看着赢了，却发现 coding 比 chatbot 可能大十倍到一百倍。直到最近两三个月才开始加码 coding——之前一直在忙着跟 Google Gemini 抢 C 端流量、抢 DAU，这是<strong>严重的战略误判</strong>。</p>
+
+<p>更深层的组织问题在于：Sam 的 VC 思维容易摊大饼——什么都想要，容易 FOMO。OpenAI 的文化特别 value 0→1 的突破，但不那么 value 1→100 的执行。结果是没有人愿意做脏活累活——搞数据、清理数据、做好产品运营——所有人都想去做突破性的工作。ChatGPT 规模很大、很成功，但广密形容它<strong>"没有灵魂"</strong>——你不知道 ChatGPT 的产品经理是谁。这跟字节这种公司做 C 端产品的能力形成对比。</p>
+
+<p>但广密并不完全悲观。他认为<strong>有 50% 的概率 AGI 最终 winner 还是 OpenAI</strong>。OpenAI 自下而上的文化下，一两个人可能搞出惊天动地的大事——因为今天 coding 能力很强了，一两个人就能干出大事。可能未来决定胜局的，就是一两个人。</p>
+
+<div class="insight-box">
+  OpenAI 一直想做爱因斯坦，Anthropic 是把整个白领工作给 automate。你想跨过 coding 直接去做爱因斯坦，但这条路很难，而且没那么实用。
+  <span class="attr">— 广密对两家公司路线的对比</span>
+</div>
+
+<h2>九、Google Gemini：被高估的 "王者归来"</h2>
+
+<p>广密对 Gemini 3.0 的评价比较冷静：<strong>benchmark 刷得很高，但 C 端没有持续增长，用户不太买单</strong>。除了让 Google 的股价翻倍、证明了自己不是 AI loser，其他好像没捞到太多好处。而且 3.1 也没有真正大的突破。</p>
+
+<p>Google 在 coding 上也有严重的战略误判——比 Anthropic 晚了三四个月才意识到 coding 的重要性。2025-2026 是 C 端格局最关键的窗口，Google 忙着跟 ChatGPT 争 C 端，反而给了 Anthropic 一个<strong>非常好的黄金窗口</strong>，Anthropic 也抓住了。</p>
+
+<p>但广密对 Google 的长期判断仍然乐观：<strong>算力最足、现金流最足</strong>。worst case 是 TPU 都可以变成另外一个英伟达。而且 Google 已经到了第三代职业经理人，体系化运转——任意换掉几个关键人物，这个机器都没有太大影响。长期看是最稳的。优势还包括有操作系统、Google Workspace 等生态布局。</p>
+
+<p>一个有趣的细节：广密注意到 Gemini 团队印度人比例越来越多了，"不知道这是一个好的信号还是一个坏的信号"。这反映了硅谷 AI 团队的人才结构变化。</p>
+
+<h2>十、Meta 崛起、xAI 掉队</h2>
+
+<p>在硅谷御三家之外，Meta 已经成为最有实力的挑战者，取代了 xAI 成为四号种子选手。TBD team 人才密度很高——从各家 AI lab 汇聚而来，知道各家的 know-how。思路也比较清晰：70%-80% 学 Google（对标 Gemini），20% 学 OpenAI（post-training 和 RL）。九到十个月做出了不错的模型，进步速度非常陡峭。</p>
+
+<p>但产品战略还不清楚。广密觉得以 Meta 的特点，做<strong>个人助理、个人朋友</strong>可能会好——更低门槛。收购 Mistral 之后如果整合得好也很有机会（Mistral 被评价为"harness 的鼻祖"，产品做得很好）。</p>
+
+<p>xAI 的情况就不太乐观了。Founding team 是世界级的——Jimi Fan、Tony 等——但核心团队大部分都已经离开。本质问题是<strong>战略摇摆</strong>：最初 Elon 相信大力出奇迹，搞几十万卡集群做 pre-train 很大的模型；然后想做多模态（音频做得也不错）；中间又想搞 chatbot、AI 搜索；今年想 all-in coding。战略不停切换让团队很乱——事刚上手还没做热，又被拉去做另一件事。</p>
+
+<p>广密认为 xAI 的根本问题是 Elon 的耐心不够。广密用了一个绝妙的比喻：<strong>"AGI 的竞赛很像你开着 F1 的速度跑一个马拉松，而且在城市里跑——需要百分之二百、百分之三百的聚焦。"</strong>如果 CEO 和 leadership 不聚焦，肯定不行。</p>
+
+<p>为什么 Elon 能把 Tesla FSD 做好，xAI 却做不好？广密的解释是：FSD 的 feedback loop 短，而做好模型数据是一个需要耐心的长期工程——什么数据是好数据、怎么做得更好、infra 框架怎么样，这些长期问题在 xAI 可能并没有被准备好。</p>
+
+<h2>十一、做好 Coding 到底难在哪？</h2>
+
+<p>既然所有人都知道 coding 重要了，为什么做好的没几个？广密认为做好 coding 的难度系数可以打<strong>八分到九分</strong>——这不是技术 know-how 的问题，而是两个更根本的维度：</p>
+
+<p>第一是<strong>组织和文化</strong>。你能不能让几百个最聪明、最有想法的人 all-in 搞 coding 一件事？因为这里面有很多脏活苦活——搞数据的活——而每个 lab 里最聪明的人都有自己的 research bet，都想要做 0→1 的突破，都想成为 elite。Anthropic 不一样的地方在于创始人一开始就意识到<strong>数据可能是所有问题的根本</strong>，而且亲自带队干。</p>
+
+<p>第二是<strong>数据壁垒</strong>。Coding 和 agentic 的数据比以前的 chatbot 数据复杂得多——既有任务、又有环境、又有评估。你需要造出来很多数据。这不只是量的问题，更是数据分布和覆盖度的问题。而且只用自己的数据分布不够全，不用最广泛的 coding 数据就一定会落后。</p>
+
+<div class="insight-box">
+  模型及应用，数据及模型——Anthropic 重视数据的基因可能从一开始就决定了他们的路径选择。
+</div>
+
+<h2>十二、Harness Engineering：给 Agent 建一个"组织"</h2>
+
+<p>2026 Q1 的一个新概念是 Harness Engineering。广密提供了几个理解思路：</p>
+
+<p>第一，<strong>把 AI Agent 当人看，当成一等公民</strong>。人有工作环境、工作电脑、信用卡，那在平行世界里也要给 Agent 搭建一套人类作为一等公民需要的环境。第二，Agent 想做好，一方面是模型能力，另一方面就是 Harness——就像一个人加入公司，公司的管理和环境能让一个正常人的下限很高。Agent 也需要它的管理学和组织约束。第三，有了 Harness 之后<strong>普通的模型也可以做高价值任务</strong>了——因为前端模型的需求溢出接不住，所以 non-frontier model 和开源模型也能被用上。</p>
+
+<p>更重要的是思维方式的转变：以前是 to C 和 to B 的划分，今天变成了<strong>to Human 还是 to Agent</strong>。如果是 to Agent，那看重的可能不再是 DAU，而是 token usage 或 token 的 value margin。以后用什么工具可能不是人决策了，而是 Agent 去决策。</p>
+
+<h2>十三、模型 = 新一代操作系统</h2>
+
+<p>这是广密对终局的核心判断，也与 Anthropic 一直以来对外讲述的叙事高度一致：<strong>"模型可能就是新一代的操作系统。"</strong>未来最领先的几个模型就是世界最重要的基础设施——你生活的问题是问它，你工作的自动化也是它，你科研的支持也是它。它的重要性可能比今天的 Google 对世界基础设施的支持还要重要。</p>
+
+<p>操作系统的定义是什么？支持应用的无限扩展——这可能就是今天的 Agent，慢慢形成新的生态，就像 Android、iOS、Windows 的生态。也可以兼容各种硬件——不仅在电脑手机，还在眼镜和各种设备。过去称得上操作系统的可能就 Windows、iOS、Android 和微信。六到十年后，还会再加上几个模型。</p>
+
+<p>这也意味着<strong>新模型公司的窗口正在关闭</strong>。再造 OpenAI 或 Anthropic 的难度比想象中大非常非常多——就像想再造一个台积电。需要每年三五百亿美金的投入并持续三五年、创始人有认知和魄力、能招到上百名世界级 AI 科学家——而这三样都具备还不够，还要有战略 bet 和产品 go-to-market 能力。</p>
+
+<div class="author-note">
+  作者概括：广密认为终局可能是全球三五家模型公司迈过 AI 奇点后，最后只拼 GPU——因为 AI 自己成长得比人快，已经自动化了 AI research 的整个 process，研究员可能插不上手了。
+</div>
+
+<h2>十四、白领通缩窗口：2026 是元年</h2>
+
+<p>本期播客最沉重但也最不可回避的话题。广密的观察是：<strong>人类社会完全没有做好准备迎接这种速度的 AI 革命</strong>。人类的知识和智力变得廉价了——以前通过学习读书获取知识可以有个工作，但今天这些智力和知识被大幅压缩进了模型，变成了计算资源或者 token。</p>
+
+<p>广密预计 <strong>2026 年可能有 30% 的工作岗位消失</strong>。AI 已经把工作两三年的 junior 岗位完全自动化了。美国本科毕业生就业率创下历史新低。Meta 裁了 1.6 万人，未来可能再裁 1.6 万。微软可能不需要 15 万人——3 万人可能比今天 15 万人干得更好。印度的 IT 外包不知道现在活得怎么样，可能已经不如模型了。</p>
+
+<p>而且这个焦虑不只存在于普通白领层。广密说：<strong>"过去一个季度我最大的感受是，最牛逼的 AI researcher 都担心自己一到两年后没有工作了。可能未来一两年是仅有的工作和赚钱的窗口。"</strong></p>
+
+<p>AI 过去一个季度智商的进步，可能比人类过去两百年智商的进步要快。这中间有一个痛苦的错位窗口——技术跑得太快，社会制度没有跟进。但广密认为终究会走向繁荣——只是中间要经历一个转型期。</p>
+
+<div class="data-points">
+  <div class="data-point">
+    <div class="number" style="color:#c92a2a;">~30%</div>
+    <div class="label">2026 年可能消失的岗位</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#e8590c;">1.6万</div>
+    <div class="label">Meta 已裁人数</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#1971c2;">70-80%</div>
+    <div class="label">可能价值变化的人口比例</div>
+  </div>
+  <div class="data-point">
+    <div class="number" style="color:#862e9c;">1-2年</div>
+    <div class="label">顶尖 researcher 的窗口期</div>
+  </div>
+</div>
+
+<h2>十五、人的价值在变化：从智力到创造力</h2>
+
+<p>尽管整体情绪偏悲观，广密也指出了另一个方向的可能性。当整个 infra 极度繁荣——从有一个 idea 到代码跑通可能极快——<strong>创造力会被极大释放</strong>。以前想做一件事情，需要几百人的团队和巨额资金。今天基础设施繁荣到一个人就可以做到非常有影响力，就像今天的自媒体一样。</p>
+
+<p><strong>审美和 taste</strong> 也很重要。有审美的人最后能 deliver 出更好的东西。因为人类以前有很多想法是无法实现的，但今天都能实现了。关键是你有没有创造力，有没有审美。</p>
+
+<p>广密给听众的建议简单直接：<strong>"AI 取代的是不拥抱 AI 的人。积极拥抱 AI 的人可能是受益者吧。"</strong></p>
+
+<h2>十六、投资：模型公司才是主线</h2>
+
+<p>广密的投资 thesis 在这一季更加极致了。<strong>"全球最领先的三五家模型公司，如果成为全球 GDP 的操作系统——每家可能都是 10 万亿美金，加起来三五十万亿美金。我对这个 belief 越来越深了。"</strong></p>
+
+<p>最理想的 AGI portfolio 是：最领先的三四家模型各放 20%，剩下的 20% 分散在机器人（10%）、AI for Science（10%）和 Agent Infra（10%）。核心指标很明确：<strong>"持续做好 frontier model 的公司——这个指标可能是未来投资最关键的指标。"</strong></p>
+
+<p>投资策略越来越清楚，也越来越极致和聚焦。广密个人八九成的精力都在模型上——其他支线任务很少。三年后、五年后、甚至七八年后，全球 GDP 的 30%-50% 都已经被模型 automate。如果相信这个判断，就应该"更极致地表达"。可能年底这些公司都 IPO 了，投资者会卖其他所有科技公司，去买模型公司。</p>
+
+<div class="author-note">
+  本期内容不构成投资建议。广密的观点代表他个人的判断和信念。
+</div>
+
+<h2>十七、机器人 & AI for Science：下两个大平台</h2>
+
+<p>在模型之外，广密对两个方向特别兴奋。第一是<strong>机器人——未来六到十八个月可能有质变</strong>。架构可能突破，技术路线收敛，data scaling 真正开始。现在数据采集的需求很多：第一视角 egocentric、遥操作、无 marker 手套——大家刚弄清楚这几类数据怎么用。特别值得注意的是硅谷公司开始意识到硬件的重要性，"都要在深圳招人了"——而这恰恰是中国团队的结构性优势。</p>
+
+<p>第二是 <strong>AI for Science</strong>——这对应 AGI 第三幕的 Automated AI Researcher。解决脑科学、神经科学、材料学、治疗人类所有疾病——这些方向的基础科研突破，是 AI 最终要去攻克的问题。</p>
+
+<h2>十八、一人公司（1PC）可能成为常态吗？</h2>
+
+<p>广密对 1PC（一人公司）持谨慎乐观的态度。如果模型平台足够 powerful，那每个个体都可以做很多事情——就像微信的自媒体、抖音的创作者，一个人可以非常有影响力。从 idea 到代码跑通到 revenue 实现，可能非常高效。</p>
+
+<p>但他也强调了关键指标：<strong>消耗 100 美金的 token，能不能赚到 110 块钱——把 ROI 跑正</strong>。现在很多人还没有跑正，这个闭环还没有跑通。广密自己虽然从 ChatGPT 变成了 Claude Code 的重度用户，但每月 $100 的 token 额度大部分时间用不满——"做 research 跟 coding 不一样"。他甚至感慨：<strong>"我写东西已经没有 Claude 写得好了。"</strong></p>
+
+<div class="insight-box">
+  过去一个季度我从 ChatGPT 变成了 Claude Code 的重度用户，我的生产力确实提升了很多——但我依然还没有像塔尖的开发者一样能消耗那么多的 token。
+  <span class="attr">— 广密的个人体感</span>
+</div>
+
+<h2>核心金句</h2>
+
+<div class="quote-section">
+  <div class="quote-item">
+    "自然语言是对世界的描述，code 是对 solution 的描述。就是语言即世界，代码即方案。"
+    <span class="context">— 广密，论语言与代码的本质</span>
+  </div>
+  <div class="quote-item">
+    "你没有最领先的 coding model 就像是没有最领先的 GPU，你用 A100 跟别人用 GB，这个差别也是很大的。"
+    <span class="context">— 广密，论 coding 的战略地位</span>
+  </div>
+  <div class="quote-item">
+    "今天胜利的秘籍可能就是下个时代的毒药对吧？OpenAI 在 ChatGPT 过于成功，让他们专注 to C 而忽视了 coding。"
+    <span class="context">— 广密，论战略陷阱</span>
+  </div>
+  <div class="quote-item">
+    "模型可能就是新一代的操作系统。未来最领先的几个模型可能就是世界最重要的基础设施。"
+    <span class="context">— 广密，论模型终局</span>
+  </div>
+  <div class="quote-item">
+    "AI 取代的是不拥抱 AI 的人。积极拥抱 AI 的人可能是受益者吧。"
+    <span class="context">— 广密，给听众的建议</span>
+  </div>
+  <div class="quote-item">
+    "过去一个季度 AI 的智商的进步，可能比人类过去两百年智商的进步要快。"
+    <span class="context">— 广密，论 AI 进步加速度</span>
+  </div>
+</div>
+
+<footer>
+  <p>本期播客来源：<a href="https://www.xiaoyuzhoufm.com/episode/69de68cfb977fb2c47f1ee14?utm_source=rss">小宇宙 · 商业访谈录</a></p>
+  <p>语言即世界工作室 · 全球大模型季报第九集 · 2026年4月</p>
+</footer>
+
+</article>
+</body>
+</html>

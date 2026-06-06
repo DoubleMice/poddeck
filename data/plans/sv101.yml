@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-06T04:29:56.246Z
+refreshed_at: 2026-06-06T18:30:47.520Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 10
-done: 0
+done: 1
 pending: 0
-needs_transcript: 10
+needs_transcript: 9
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -151,8 +151,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: Kolento, 林桐宇, and 饶杰武.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-06T18:43:22.074Z
+    transcript_job_id: 8c43f2a3e9d74e24bffcc701698d6554,5fa6933fa5df41788c6ae128fb3e138a,27984761c06d4e19b3a010f247ea593c,6c8597d03f7e45719a3ca6cde1f742be,3d24965280cf4caaabbaf40be74d0b31,67158e7e95e8418d858f1418f9a65676
+    transcript_completed_at: 2026-06-06T18:47:16.317Z
   - id: 90f96f60-25be-45ac-b832-56776a23d534
     title: E235｜20年内CAR-T治愈癌症？与刘诚博士聊聊癌症治疗的底层哲学
     duration: 4205

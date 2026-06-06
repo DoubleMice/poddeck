@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>预测市场的预言机困境 — Uneasy Money</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #f8f9fa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    text-align: center;
+    padding: 50px 0 40px;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #0f172a;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 0.9rem;
+    color: #64748b;
+  }
+  header .source {
+    margin-top: 12px;
+    font-size: 0.85rem;
+  }
+  header .source a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #334155;
+    margin: 32px 0 12px;
+  }
+  p { margin: 12px 0; color: #334155; }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  @media (max-width: 600px) {
+    .overview { grid-template-columns: 1fr; }
+    header h1 { font-size: 1.5rem; }
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 0.95rem; }
+  .card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .quote-block {
+    margin: 24px 0;
+    padding: 20px 24px;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  .quote-block .attr {
+    font-size: 0.8rem;
+    opacity: 0.65;
+    margin-top: 8px;
+    font-style: normal;
+  }
+  .quote-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .quote-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .quote-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .quote-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .quote-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .insight {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 0.9rem;
+    color: #92400e;
+  }
+  .insight strong { color: #78350f; }
+  .section-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    margin-bottom: 4px;
+  }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-align: center;
+  }
+  footer a { color: #2563eb; text-decoration: none; }
+  .vspacer { height: 8px; }
+  em { font-style: italic; }
+  strong { font-weight: 600; color: #0f172a; }
+  ul { margin: 8px 0 8px 20px; color: #334155; }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>预测市场的预言机困境</h1>
+  <div class="meta">
+    Uneasy Money · Kane Warwick, Taylor Monahan & Luca Netz · 2026 年 6 月
+  </div>
+  <div class="source">
+    <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8690782345.mp3" target="_blank" rel="noopener">收听原节目 →</a>
+  </div>
+</header>
+
+<div class="section-label">为什么这期值得关注</div>
+
+<div class="overview">
+  <div class="card card-blue">
+    <strong>预言机问题回来咬人了</strong>
+    MicroStrategy 默默卖了 32 BTC，Polymarket 市场措辞模糊，UMA 裁决引发信任危机——当你是 $20B 的平台时，这种事不能再发生了。
+  </div>
+  <div class="card card-green">
+    <strong>SOL 通胀削减第三轮</strong>
+    Solana 通胀约 7-8%，三次提案试图削减。通缩叙事的回响——但 Solana 的燃烧模式比以太坊更可持续。
+  </div>
+  <div class="card card-yellow">
+    <strong>Circle 冻结 Zama：法院作为武器</strong>
+    一纸单方临时禁令冻结了整个混币池——Circle 完全将决定权交给了法官，"Friday afternoon attack" 成为新的 DeFi 风险向量。
+  </div>
+  <div class="card card-orange">
+    <strong>Hyperliquid：11 人比纳斯达克还大</strong>
+    NYSE CEO Jeff Sprecher 的经典嘲讽，以及 Arthur Hayes 与 Kyle Samani 的 $100K 对赌——Hyperliquid 是熊市中最集中的可投资资产之一。
+  </div>
+  <div class="card card-purple">
+    <strong>Apps 逃离 MegaETH 奔向 Monad</strong>
+    "MegaMafia" 团队正在切换链——Luca 把生态系统比作城市的木板路：链的工作是提供人流（distribution），而不是 grants。
+  </div>
+  <div class="card card-red">
+    <strong>熊市生存</strong>
+    熊市里团队烧光现金流。Luca 18 个月没拿工资建 Pudgy Penguins——"Bear markets are hard. People run out of cash really quickly."
+  </div>
+</div>
+
+<h2>1. Polymarket 的预言机困境</h2>
+
+<h3>一个不该发生的市场</h3>
+
+<p>MicroStrategy 的 Michael Saylor 曾经承诺过——"Bitcoin would never leave his cold dead hands." 但 2026 年 5 月，MicroStrategy 悄悄卖了 32 BTC（约 250 万美元）。这不是一个很大的数字，但它的信号意义是巨大的。</p>
+
+<p>Kane 认为这实际上是对市场的一次试探——<strong>"a bit of a shit test to the market"</strong>，想看看市场对 MicroStrategy 卖比特币的反应。答案是：非常不好。MSTR 股价暴跌。</p>
+
+<p>但真正的问题不在于 Saylor 为什么卖。问题在于 Polymarket 上的预测市场是怎么写的。</p>
+
+<h3>"卖出" vs "公告"：预言机困境的经典案例</h3>
+
+<p>市场的题目是：<strong>"Will MicroStrategy sell any Bitcoin by May 31st, 2026?"</strong></p>
+
+<p>MicroStrategy 确实在 5 月 26-31 日期间卖了 32 BTC。但 8-K 表格直到 6 月 1 日才提交。市场截止日是 5 月 31 日——当时没有人知道交易已经发生。</p>
+
+<div class="quote-block quote-blue">
+  "you're never just betting on the event, you're betting on who scores it."
+  <div class="attr">— Kane Warwick</div>
+</div>
+
+<p>这揭示了预测市场的根本困境：你赌的从来不只是事件本身，你赌的是谁来判分。市场应该写成"Will MicroStrategy <em>announce</em> that they sold Bitcoin by May 31st?" 但它没有。Polymarket 只需要花 30 秒的时间想一想，就会意识到这个市场有问题——但他们没有。</p>
+
+<div class="quote-block quote-yellow">
+  "the prediction market problem, right? The oracle problem. It always comes back to oracles."
+  <div class="attr">— Kane Warwick</div>
+</div>
+
+<h3>从 UMA 到 Nasdaq：预言机的进化</h3>
+
+<p>Polymarket 曾经可以把责任推给 UMA——UMA 代币持有者通过链上治理投票裁决争议。当 UMA 规模甚至大于 Polymarket 的时候，这行得通。但如今 Polymarket 是 <strong>$20B 的平台</strong>，比 UMA 大八千倍。每次争议都在侵蚀信任。</p>
+
+<p>这就是为什么 Polymarket 最近推出了由 Nasdaq 裁决的新市场——找一个比你更大的实体来承担裁决责任。但这能从根本上解决问题吗？措辞不严谨的市场仍然会被上架，争议仍然会发生。</p>
+
+<h2>2. Solana 的 SOL 燃烧之战</h2>
+
+<h3>削减通胀的第三轮提案</h3>
+
+<p>Solana 目前年通胀率约 <strong>7-8%</strong>，这给质押者带来了 6-7% 的收益——同时也给 SOL 价格带来了持续的卖压。正如 Luca 所说，<strong>"a token that inflates is obviously bad for price。"</strong></p>
+
+<p>这是第三轮试图削减 Solana 通胀的提案——目标是将通胀从约 8% 降至约 3%。与此同时，Solana 的日燃烧量在 10,000 到 64,000 SOL 之间，而日通胀约 60,000 SOL。一旦日燃烧超过日通胀，Solana 将进入净通缩状态。</p>
+
+<p>Kane 开玩笑说，<strong>"if it hits 60,000 and one, some lunatic on the timeline is gonna do a backflip."</strong></p>
+
+<h3>Ultrasound Money 的历史回响</h3>
+
+<p>这是一个似曾相识的故事。Ethereum 的 EIP 1559 最初是为了平滑 Gas 市场价格波动而设计的——Vitalik 讨厌波动。但它有一个意外的副作用：ETH 变成了通缩资产。<strong>"ultrasound money meme was born."</strong> 🦇🔊</p>
+
+<p>但超声波货币叙事有一个致命的缺陷：通缩性与可用性成反比。ETH 越活跃，fees 越高，燃烧越多——但 fees 高到无人用得起。<strong>"it cost like $500 to do a synthetic staking contract."</strong></p>
+
+<div class="quote-block quote-orange">
+  "EIP 1559 switches on and somehow ETH is deflationary. And that was the story — not that the fee market was now suddenly non-volatile because no one gave a fuck about that in the first place."
+  <div class="attr">— Kane Warwick</div>
+</div>
+
+<h3>Solana 的不同之处</h3>
+
+<p>关键区别：Solana 的燃烧来自于<strong>海量的低价交易</strong>（数千万笔几分钱的交易），而不是少量的昂贵交易（几百笔 $500+ 的交易）。每笔交易燃烧 0.001 美分——来自真实的使用量，而非不可持续的 Gas 费用。</p>
+
+<p>Luca 是通缩的坚定拥趸：<strong>"If you can create a product that continues to get better and then also create a tokenomic scheme where the token inflates very little or hopefully deflates, then you have a recipe for success."</strong></p>
+
+<h2>3. Circle 冻结 Zama：法院作为武器的风险</h2>
+
+<h3>一个被冻结的隐私池</h3>
+
+<p>这个故事从 Overnight Finance 开始——一个似乎已经死去的协议，但国库里还有约 $12M。一群"raiders"试图通过收购代币来夺取国库。协议的控制者先发制人，将资金转入 <strong>Zama</strong>——一个使用全同态加密的隐私协议。</p>
+
+<p>raiders 有律师。律师在周五下午去法院，申请了 <strong>ex parte TRO</strong>（单方临时禁令）——只讲自己一方的故事。法官听到"坏人要跑了"，签了冻结令。</p>
+
+<p>Circle 收到法院命令后，<strong>冻结了整个 Zama USDC 池</strong>——$12.9M 中的 $12.2M 来自一个人。Zama 团队一觉醒来发现协议被冻，完全不知情。池里的其他储户也被冻住了。</p>
+
+<div class="quote-block quote-red">
+  "this decision to push all responsibility to the courts, you can't say no to the courts."
+  <div class="attr">— Taylor Monahan</div>
+</div>
+
+<h3>Circle vs Tether：两种冻结哲学</h3>
+
+<p>Circle 的政策是：如果法官下令冻结，我们就冻。完全放弃了自由裁量权。Tether 的做法则不同——他们有一系列阈值和判断流程，但始终保留最终决定权。即使收到法院命令，他们也会声称这是"自愿"冻结。</p>
+
+<p>Tether 的方式有争议，但它有一个关键优势：<strong>当法院下令一个坏的冻结时，他们可以说不。</strong>Circle 不能。如果你把全部决定权委托给法院，你就不能对法院说不。</p>
+
+<div class="insight">
+  <strong>关键区别：</strong>Circle 完全委派了责任，失去了说"不"的能力。Tether 保留了最终判断权——即使这意味着不服从法院命令。
+</div>
+
+<h3>"周五下午攻击"：DeFi 的新风险向量</h3>
+
+<p>Crypto 是高度对抗性的。Taylor 警告说，<strong>人们会利用不了解 DeFi 影响的法官</strong>。攻击模式很清晰：周五下午找到某个混币池 → 编造一个紧急的单方故事 → 法官签字 → Circle 无条件执行 → 整个 commingled pool 被冻结 → 周一之前，依赖该池的协议可能已经出现了连锁反应。</p>
+
+<p>在传统金融中，冻结一个账户只会影响一个人。在 DeFi 中，冻结一个混币池会影响所有储户——LP 代币脱锚、套利者攻击、连锁清算。到周一，"there's a smoking crater there。"</p>
+
+<div class="quote-block quote-purple">
+  "Crypto is so adversarial, like people will take advantage of the poor judge who doesn't understand the implications of what they're doing."
+  <div class="attr">— Taylor Monahan</div>
+</div>
+
+<h2>4. Hyperliquid：11 个人，比纳斯达克还大</h2>
+
+<h3>NYSE CEO 的经典嘲讽</h3>
+
+<p>Jeff Sprecher——ICE/NYSE 的 CEO——最近评价了 Hyperliquid：</p>
+
+<div class="quote-block quote-orange">
+  "these like 11 kids in like Bolivia or whatever that are bigger than the Nasdaq."
+  <div class="attr">— Jeff Sprecher, CEO of ICE (New York Stock Exchange)</div>
+</div>
+
+<p>这是一个经典的 TradFi 嘲讽，但它揭示了一个令人震惊的事实：一个由 11 人团队运营的去中心化永续合约交易所，市值已经达到了 $20B。在熊市中，Hyperliquid 是为数不多的仍在创下历史新高的资产之一。</p>
+
+<h3>$100K 对赌：Hayes vs Samani</h3>
+
+<p>Arthur Hayes 向 Kyle Samani（Multicoin Capital）发起了一个 $100K 的赌约：从 2026 年 6 月 2 日到 2027 年 1 月 1 日，Hyperliquid 的表现将超过当前 Top 10 市值中的每一个币。定价指定了 Bybit USDT 市场——<strong>这个对赌的条款比你的平均 Polymarket 市场更清晰。</strong></p>
+
+<p>Kane 开玩笑说：<strong>"So maybe we should get Arthur Hayes to write the Polymarket markets for us."</strong></p>
+
+<p>Kane 站在 Arthur 这边（"I think Arthur probably has the right side of this bet"），但他也希望看到 Kyle 输掉这场赌局——"I would love to see Kyle lose this prop bet。"</p>
+
+<p>Hyperliquid 的独特之处在于它的结构：FDV 的迷雾（潜在的战略空投）、11 个已经有钱的内部人、以及一个不是 sell pressure 的创始人。正如 Luca 指出的，<strong>"if you just look at Hyperliquid objectively... it is definitely worth more than 20 billion bucks。"</strong></p>
+
+<h2>5. Apps 逃离 MegaETH，Monad 承接</h2>
+
+<h3>MegaMafia 的悖论</h3>
+
+<p>MegaETH 的策略是精心培育一个小型的"cracked Zoomer"团队群——MegaMafia。他们的核心理念是<strong>让 crypto 消失在后台</strong>——打造"不觉得像 crypto"的应用。</p>
+
+<p>Kane 指出了这个策略内在的矛盾：<strong>"if you're courting a bunch of teams that don't care about the blockchain aspect of the thing and want to make the blockchain disappear, what possible loyalty are they going to have to your blockchain?"</strong></p>
+
+<p>当你的链无法满足他们的需求时——或者当另一个链提供更大的 grant 时——这些团队有什么理由留下来？答案是什么都没有。这就是为什么 MegaETH 的团队正在流向 Monad——Monad 融了巨额资金，有更大的战争基金。</p>
+
+<h3>换链改变不了任何东西</h3>
+
+<div class="quote-block quote-yellow">
+  "Only a grant will help. You get a two million dollar grant that lets you survive for another six months. It's not gonna do shit. It won't help."
+  <div class="attr">— Kane Warwick</div>
+</div>
+
+<p>Kane 很直白：换链不会改变你的产品/市场匹配，不会改变你的团队，不会改变你的前景。它只会给你 6 个月的现金。如果 Solana 在 2022 年找到 Luca 说，"把 Pudgies 迁移过来，给你 $20M，"Luca 承认——"Oh yeah, 100%. Especially during COVID, yeah, you're done."</p>
+
+<p>这就是熊市的现实。团队在求生——他们做他们必须做的事。</p>
+
+<h3>木板路类比：生态系统即城市</h3>
+
+<p>Luca 用一个生动的类比解释了链生态系统的本质：</p>
+
+<div class="quote-block quote-green">
+  "if I have a city with a lot of foot traffic, then my promenades and my boardwalks are going to have a lot of good stores."
+  <div class="attr">— Luca Netz</div>
+</div>
+
+<p>链是一座城市。App 是木板路上的商铺。链的工作不是给 grant——链的工作是<strong>提供人流</strong>（distribution）。这是 App 愿意来到你的链上的唯一令人信服的理由。</p>
+
+<p>Luca 对链的商业模式的诊断是残酷而准确的：</p>
+
+<div class="quote-block quote-purple">
+  "the blockchain business is an incredibly hard business to do right. It's really easy to sell a story. It's really hard to actually be performant."
+  <div class="attr">— Luca Netz</div>
+</div>
+
+<p>大多数链只是在<strong>卖 token 来补贴基础设施</strong>——这不是一个可持续的商业模式。Token 的价值不再来自于构建在链上的 App。Solana 就是证明——它拥有最多的链上活动，但对代币供应和价格的净影响"relatively nominal。"</p>
+
+<h2>6. 熊市生存：创始人的真实故事</h2>
+
+<h3>Luca 的 18 个月苦战</h3>
+
+<p>Pudgy Penguins 不是一夜成功的。Luca 分享了早期最艰难的日子：</p>
+
+<div class="quote-block quote-orange">
+  "I didn't take a salary for 18 months. I actually put millions of dollars of my own money into it."
+  <div class="attr">— Luca Netz, CEO of Pudgy Penguins</div>
+</div>
+
+<p>他没有责怪以太坊没有给他带来成功。<strong>"I tried to run down what were the 20 things that would make a thing successful and I did every single one of them."</strong> 成功后他唯一想要的是一点认可——"didn't even need to be in public. It was just some sort of acknowledgement."</p>
+
+<p>Luca 也对创业者做了一个尖锐的区分：有些人可以创造价值（企业家），有些人可以经营一个自给自足的业务（生意人）。<strong>你不必两者都是——但不要混淆。</strong>如果你依赖别人给你带来用户基础，你也许不适合经营一个企业。</p>
+
+<div class="quote-block quote-red">
+  "Bear markets are hard. People run out of cash really quickly."
+  <div class="attr">— Kane Warwick</div>
+</div>
+
+<p>Kane 见过融了 10-15M 的团队在两年后只剩几个月的跑道，被迫关闭业务。Taylor 的观察同样冷静：<strong>"These are projects. These are people that are trying to build stuff. It's just rough right now."</strong></p>
+
+<h3>链在玩"偏好游戏"</h3>
+
+<p>Luca 认为链不可避免地要"玩偏好"——如果你拥有一个木板路，上面有三个吸引大量人流的地方，你会用同样的精力对待一个角落里的缝隙吗？<strong>"It's common sense."</strong> 但 crypto 不是常识的领域。</p>
+
+<p>Vitalik 的反偏好模式——"no one that you could point to be like, but he loves Santi. No, he doesn't give a fuck about Santi"——在以太坊的 DeFi 社区创造了公平竞争的环境。但 Luca 的新理解是：当你的链上锁着 $100B-$500B 资产时，与核心构建者保持良好关系是<strong>"几乎不负责任的不去做。"</strong></p>
+
+<h2>核心金句</h2>
+
+<div class="quote-block quote-blue">
+  "you're never just betting on the event, you're betting on who scores it."
+  <div class="attr">— Kane, 预言机困境的本质</div>
+</div>
+
+<div class="quote-block quote-green">
+  "the blockchain business is an incredibly hard business to do right. It's really easy to sell a story. It's really hard to actually be performant."
+  <div class="attr">— Luca Netz, 链商业模式的诊断</div>
+</div>
+
+<div class="quote-block quote-yellow">
+  "once you push all that responsibility to the courts, you can't say no to the courts."
+  <div class="attr">— Taylor, Circle 政策的根本缺陷</div>
+</div>
+
+<div class="quote-block quote-orange">
+  "I didn't take a salary for 18 months. I actually put millions of dollars of my own money into it."
+  <div class="attr">— Luca Netz, Pudgy Penguins 早期奋斗</div>
+</div>
+
+<div class="quote-block quote-purple">
+  "if I have a city with a lot of foot traffic, then my promenades and my boardwalks are going to have a lot of good stores."
+  <div class="attr">— Luca Netz, 木板路类比</div>
+</div>
+
+<div class="quote-block quote-red">
+  "what happens on chain never stays on chain."
+  <div class="attr">— Uneasy Money 的签名句</div>
+</div>
+
+<footer>
+  <p>
+    来源：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8690782345.mp3" target="_blank" rel="noopener">Uneasy Money — Is Polymarket's Oracle Problem Getting Out of Hand?</a>
+  </p>
+  <p style="margin-top: 8px;">
+    节目主持：Kane Warwick, Taylor Monahan & Luca Netz · 2026 年 6 月
+  </p>
+  <p style="margin-top: 12px; font-size: 0.8rem;">
+    "We're just three builders talking about what's happening on chain."
+  </p>
+</footer>
+
+</article>
+</body>
+</html>
