@@ -1,44 +1,15 @@
 source: risky-business
-refreshed_at: 2026-06-05T18:42:54.009Z
+refreshed_at: 2026-06-06T04:29:56.220Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 7
-done: 1
+total_candidates: 6
+done: 0
 pending: 3
 needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: SOAPBOX108
-    title: "Soap Box: Detection and response in the AI age"
-    duration: 2195
-    published: Fri, 05 Jun 2026 14:41:44 +1000
-    published_sort: "20260605"
-    first_seen_at: 2026-06-05T18:42:54.009Z
-    url: https://risky.biz/SOAPBOX108/
-    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX108.mp3
-    image: https://risky.biz/static/img/rb-feed-main.png
-    summary: >-
-      In this sponsored Soap Box edition of the Risky Business podcast Patrick Gray chats with Edward Wu, founder of
-      Dropzone, about what AI is doing to detection, response and the SOC more generally.
-
-
-      Dropzone makes AI agents that conduct alert investigations in your SOC, but will the SOC as we know it even exist
-      in the future?
-
-
-      Ed has a deep expertise in SOC tech, having previously led AI/ML detection engineering at Extrahop. This interview
-      is a fantastic look at what the future may bring for detection and response professionals.
-
-
-      This episode is also available on YouTube
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-05T18:42:55.123Z
-    transcript_job_id: 4a82c688286846c48b6514b1f8fe5c08,057649a107084b4384b25fc96bc49738,a514960aed8f46a781028d498a443ba0
-    transcript_completed_at: 2026-06-05T18:44:32.537Z
   - id: SNAKEOILERS23PT1
     title: "Snake Oilers: Burp AI, Sondera and Truffle Security"
     duration: 2880
@@ -59,7 +30,6 @@ episodes:
         
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
-
 
         
 

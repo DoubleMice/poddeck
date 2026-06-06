@@ -1,113 +1,15 @@
 source: tbpn
-refreshed_at: 2026-06-05T18:42:53.880Z
+refreshed_at: 2026-06-06T04:29:56.090Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 3
-done: 1
+total_candidates: 2
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: cc5049aa-7b91-45a0-81fa-9a3ba99cd5de
-    title: 🔴 Alex Karp LIVE from AIPCon 10 | Alex Karp, Peter Zaffino, Chad Wahlquist, Sam Berry
-    duration: 6583
-    published: Thu, 04 Jun 2026 13:52:42 -0700
-    published_sort: "20260604"
-    first_seen_at: 2026-06-05T04:37:04.956Z
-    url: https://share.transistor.fm/s/47c63ce6
-    audio_url: https://media.transistor.fm/47c63ce6/fa5b9735.mp3
-    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/47c63ce6/transcription.txt
-    transcript_type: text/plain
-    summary: "(00:00) - - Live from Palantir's AIPCon 10\r
-
-      (12:38) - - Ramp raises $750M at $44B valuation\r
-
-      (15:19) - - Timeline reactions\r
-
-      (23:57) - - Alex Karp, co-founder and CEO of Palantir Technologies, discusses the evolution of artificial
-      intelligence (AI) adoption, noting a shift from skepticism to widespread recognition of its value, while
-      cautioning against unproductive overuse. He emphasizes the importance of taste and discernment in effectively
-      integrating AI into business processes, highlighting that successful implementation requires more than just
-      technical capability. Karp also warns of potential nationalization and regulation of AI technologies by
-      governments, urging proactive engagement to address these challenges.\r
-
-      (48:04) - - Peter Zaffino, born in 1967, is the Chairman and CEO of American International Group (AIG), having
-      joined the company in 2017 as Executive Vice President and Global Chief Operating Officer. In the conversation,
-      Zaffino discusses AIG's global operations, emphasizing its balanced international and North American presence, and
-      highlights the company's focus on managing complex risks for large clients. He also elaborates on AIG's
-      partnership with Palantir Technologies, detailing how their collaboration has enhanced data integration and
-      decision-making processes within the organization.\r
-
-      (01:01:35) - - Chad Wahlquist, a Forward Deployed Architect at Palantir Technologies, discusses his role in
-      assisting clients to decompose complex problems and apply Palantir's technology in innovative ways. He emphasizes
-      the importance of integrating AI with human processes to model business operations effectively, highlighting the
-      ontology's role in providing a structured worldview that enhances decision-making. Wahlquist also addresses the
-      balance between software malleability and enterprise-grade robustness, advocating for adaptable systems that
-      empower users while maintaining security and scalability.\r
-
-      (01:22:35) - - Timeline reactions\r
-
-      (01:25:22) - - Sam Berry, a USDA employee with a background in engineering and a family history in farming,
-      discusses the diverse roles of the USDA, including food inspections, SNAP administration, and scientific research.
-      He highlights the importance of technological advancements in agriculture, such as automation and AI, to address
-      challenges like workforce shortages and pest control. Berry also emphasizes the need for effective data collection
-      and management to ensure program integrity and support national food security.
-
-
-      TBPN is made possible by:
-
-
-      Ramp - https://ramp.com
-
-
-      Public - https://public.com
-
-
-      Cisco - https://www.cisco.com
-
-
-      Console - https://www.console.com
-
-
-      CrowdStrike - https://www.crowdstrike.com
-
-
-      Figma - https://www.figma.com
-
-
-      MongoDB - https://www.mongodb.com
-
-
-      NYSE - https://www.nyse.com
-
-
-      Railway - https://railway.com
-
-
-      Shopify - https://www.shopify.com/
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: generated
-    priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
       Tae Kim, Immad Akhund, Marcus Milione

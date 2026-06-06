@@ -1,9 +1,9 @@
 source: xiaojun
-refreshed_at: 2026-06-05T18:42:54.022Z
+refreshed_at: 2026-06-06T04:29:56.235Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 11
-done: 1
+total_candidates: 10
+done: 0
 pending: 1
 needs_transcript: 7
 transcribing: 1
@@ -39,21 +39,6 @@ episodes:
     transcript_provider: dashscope
     transcript_job_id: 3fc23a0a-1ec3-403c-8ed0-84fc79df7f6d
     transcript_submitted_at: 2026-05-26T20:07:14.387Z
-  - id: 69e4e6951d989496e7fecc7b
-    title: 137. 对洪乐潼的4小时访谈：AI for Math、把数学变成Lean、数学天书中的证明、直觉、被创造与被发现的
-    duration: 15857
-    published: Mon, 20 Apr 2026 03:00:00 GMT
-    published_sort: "20260420"
-    first_seen_at: 2026-05-25T07:21:24.420Z
-    url: https://www.xiaoyuzhoufm.com/episode/69e4e6951d989496e7fecc7b?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69e4e6951d989496e7fecc7b/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lha_FAiWxTGet0QMbcOSts3cb5Vb.m4a
-    image: https://image.xyzcdn.net/Fkhpjaj9C1sS0E_l6QpNg-TC1jL0.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 205cf462d1a04eb8883979f37bd9aebb,7cca1f8e5a1c4ca196f7b67dd2042d16,ddb18adf9d6346b5821bbb474385d852,9ac31256a6214998864d6a6b02b24dbc,b266e20f32e5478f9d3e074331b319f5,c1e3d7b1669944d4b2483b027ea95831,1ba8393ce01d43cd881798a07bf1d01b,e7cceece416c472f8c8d2c103950ba80,d53c3e5eb5bc44ac800bedf0c031c83c,84852d2d6ff24096b1e33ae7bb58cb09,a02fad5c3b534a9d93c0b8b203aaada6,d22d0812e1764051b4d92043eb188511,8edfb19b50254b2c89e4f54b048cf5e0,b8c59e39fc0f4454933d9624b339e27d,34c88fa6f7ea4ebbaa27f2820c29e4a0,2fddc3599fec44fba92ee4794910a104,2a5cbf6f5f1348fd97d8bc882f077b04,c8ad8165eab747abb0c6c9187701a830
-    transcript_submitted_at: 2026-06-01T19:43:04.821Z
-    transcript_completed_at: 2026-06-01T19:55:51.517Z
   - id: 69de68cfb977fb2c47f1ee14
     title: 136. 全球大模型季报第9集：和广密聊，Coding是AGI第二幕、硅谷御三家真相、模型正成为新一代OS
     duration: 4960

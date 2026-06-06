@@ -1,77 +1,75 @@
 source: unchained
-refreshed_at: 2026-06-05T18:42:53.951Z
+refreshed_at: 2026-06-06T04:29:56.158Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 133
-done: 1
+done: 0
 pending: 0
-needs_transcript: 129
+needs_transcript: 130
 transcribing: 0
 transcribe_failed: 2
 downloaded: 0
 episodes:
-  - id: 1f0100a8-608e-11f1-87b4-3fb7a9645d41
-    title: Why Mike Dudas Has Zero Exposure to ETH, but Is Bullish on Hyperliquid
-    duration: 2165
-    published: Fri, 05 Jun 2026 14:20:00 -0000
+  - id: 027c3430-6114-11f1-9f97-7768ee497a43
+    title: Is Polymarket's Oracle Problem Getting Out of Hand? - Uneasy Money
+    duration: 4300
+    published: Fri, 05 Jun 2026 19:23:00 -0000
     published_sort: "20260605"
-    first_seen_at: 2026-06-05T04:37:05.033Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4329236877.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4329236877.mp3
-    image: https://megaphone.imgix.net/podcasts/1f0100a8-608e-11f1-87b4-3fb7a9645d41/image/96d871598b785b0e53d87f9238c5537a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    first_seen_at: 2026-06-06T04:29:56.157Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8690782345.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8690782345.mp3
+    image: https://megaphone.imgix.net/podcasts/027c3430-6114-11f1-9f97-7768ee497a43/image/20bd97262622dc48873991191f0f137c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
-      Mike Dudas holds zero ETH and sees Hyperliquid as crypto's Tether moment. He also has a clear framework for what
-      makes a token worth buying.
+      Circle froze $12M in a DeFi pool on a Friday court order, trapping users who had nothing to do with the dispute. .
+      Polymarket couldn't resolve a Strategy market. And MegaETH's apps are defecting. Nothing is simple.
 
 
       ========================================================
 
 
-      Thank you to our sponsor!
+      Thank you to our sponsors!
 
 
-      Fidelity: Explore crypto careers and make the decision that could change your future at
-      https://crypto.fidelitycareers.com
+      Multichain Advisors: Get help navigating TGEs, go‑to‑market, BD and partnerships, capital markets advisory, PR,
+      media placements, KOL activations and more at https://multichainadv.com.
 
 
       ========================================================
 
 
-      Strategy sold 32 Bitcoin, worth just $2.5 million, and the market didn't miss it. For Mike Dudas, Managing Partner
-      at 6th Man Ventures, the sale broke the "never sell" promise that sustained the company's premium. He doesn't see
-      how the narrative gets rebuilt.
+      Strategy sold 32 Bitcoin before the May 31 deadline. It just didn't disclose it until June 1 — and that one-day
+      gap is why a $50M Polymarket market resolved "no," even though Strategy's own 8-K shows the sale happened inside
+      the window.Kain Warwick, Luca Netz, and Taylor Monahan trace why Polymarket keeps writing resolution criteria that
+      break under edge cases, and why handing oracle duties to UMA is a liability for a $20 billion platform. They also
+      get into the third proposal to cut Solana's staking inflation, and what it would take to spark an "ultrasound
+      money" moment for SOL.
 
 
-      Dudas applies the same unsentimental read to the rest of the L1 landscape. His firm holds zero ETH — five years of
-      contradictory narratives have left the market unable to value it. In his view, Solana's decline is simpler:
-      memecoin activity peaked and hasn't recovered. Hyperliquid, in his view, is closer to Tether than a competing L1:
-      the no-KYC international market is enormous, and asset quality is the moat.
+      The most consequential story is Circle. A Friday-afternoon ex-parte court order froze a $12M commingled USDC pool
+      all weekend, trapping innocent users' funds inside the Zama privacy protocol. Taylor’s warning: Circle's policy of
+      complying with any court order without retaining a final say creates a replicable attack template for any pool
+      with USDC exposure.
 
 
-      His framework for tokens worth owning: programmatic buybacks and consistent communication from leadership. On AI,
-      he argues agentic trading will far outpace agentic payments — Visa, Mastercard, and Stripe are moving too fast for
-      new entrants to displace them.
+      The episode closes on MegaETH and Monad: Kain on whether the "Mega Mafia" approach was adverse selection from the
+      start, and Luca on what chains actually owe their builders.
 
 
       Host:
 
         
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-
-      Guests:
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
 
         
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Mike Dudas - Managing Partner of 6th Man Ventures - 
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠⁠⁠⁠⁠, CEO of Pudgy Penguins
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
+    status: needs_transcript
     priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-05T18:44:32.611Z
-    transcript_job_id: f726d3ab27df4cc6a44f66af86942e08,b72f509661984b34b3bdefa8fc03bb68,f56752a65fb949feb9fcbbd3e3f965f6
-    transcript_completed_at: 2026-06-05T18:45:48.169Z
   - id: 89d471e6-6078-11f1-83b6-5bd3f347e302
     title: Why MSTR Should Have Sold $2 Billion Instead of $2 Million of Bitcoin
     duration: 2101
@@ -5513,7 +5511,6 @@ episodes:
           
 
 
-
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5697,7 +5694,6 @@ episodes:
       Unchained:⁠⁠
 
         
-
 
 
         
@@ -6904,7 +6900,6 @@ episodes:
           
 
 
-
         
       Previous appearances on Unchained:
 
@@ -7836,7 +7831,6 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
 
 
         
@@ -9029,7 +9023,6 @@ episodes:
        
 
 
-
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -9423,7 +9416,6 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
-
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices
