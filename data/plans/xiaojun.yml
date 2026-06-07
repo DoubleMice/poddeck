@@ -1,9 +1,9 @@
 source: xiaojun
-refreshed_at: 2026-06-06T18:30:47.507Z
+refreshed_at: 2026-06-07T04:38:23.656Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 10
-done: 1
+total_candidates: 9
+done: 0
 pending: 0
 needs_transcript: 7
 transcribing: 1
@@ -39,21 +39,6 @@ episodes:
     transcript_provider: dashscope
     transcript_job_id: 3fc23a0a-1ec3-403c-8ed0-84fc79df7f6d
     transcript_submitted_at: 2026-05-26T20:07:14.387Z
-  - id: 69de68cfb977fb2c47f1ee14
-    title: 136. 全球大模型季报第9集：和广密聊，Coding是AGI第二幕、硅谷御三家真相、模型正成为新一代OS
-    duration: 4960
-    published: Tue, 14 Apr 2026 23:30:00 GMT
-    published_sort: "20260414"
-    first_seen_at: 2026-05-25T07:21:24.420Z
-    url: https://www.xiaoyuzhoufm.com/episode/69de68cfb977fb2c47f1ee14?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69de68cfb977fb2c47f1ee14/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lh_CQyoSs_DztmYB5kmBjaPA6W9V.m4a
-    image: https://image.xyzcdn.net/FlecCvBF6ZxBOUXu2kbcK-vghPbp.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: f8bfad26f7e44decae1d1803ff02cbde,5d4a2be941ae4fcc95112510f45219b3,5fe41fbb56b74117bf18aa988a7472ca,451fa4f5a71349de8cb12c7d6b9f98a4,efb4d86b9f174d4db1c800f83461ab67,f40d8d504bef4069a9adf80aa860ac02
-    transcript_submitted_at: 2026-06-02T19:20:20.887Z
-    transcript_completed_at: 2026-06-02T19:23:42.935Z
   - id: 69d8bbdfe2c8be3155dcc2fe
     title: 135. 和自然选择创始人Tristan聊，Elys、赛博分身、灵魂、Context的获取与流动和AI社交网络
     duration: 6774
