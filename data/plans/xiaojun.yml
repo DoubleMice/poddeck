@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-06-07T04:38:23.656Z
+refreshed_at: 2026-06-07T18:30:53.373Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 9
-done: 0
+done: 1
 pending: 0
-needs_transcript: 7
+needs_transcript: 6
 transcribing: 1
 transcribe_failed: 0
 downloaded: 0
@@ -48,8 +48,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69d8bbdfe2c8be3155dcc2fe?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69d8bbdfe2c8be3155dcc2fe/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltwEGwVo7grn_V-Rft0TXlMqmcty.m4a
     image: https://image.xyzcdn.net/FjDBWwPMn0VQbLaHtyHOEBHhRkXq.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-07T18:35:54.188Z
+    transcript_job_id: cc53c2ed29cd40e78692f693d3fce6e6,ae99373eb8144de9bbdb4f7a867230d1,6135bae5a26249ba84962f4874bd4948,4659084dd5794fe8ad3f8f330027372d,db958e04975c4c1bbf3e2074e6919329,db5e8c56009a4115b7e005d53081cbac,8f41415df8b4459ab8d8cc7f9848d74c,f34a20b512374a35be174b66f33b5e13
+    transcript_completed_at: 2026-06-07T18:40:52.516Z
   - id: 69c953b4b977fb2c478df5c3
     title: 134. 【数据的综述】和谢晨聊，新时代的石油、历史、版图、数据金字塔、定价与Recipe
     duration: 9502

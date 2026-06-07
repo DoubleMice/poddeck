@@ -1,0 +1,30 @@
+id: SNAKEOILERS23PT1
+source: risky-business
+title: "Snake Oilers: Burp AI, Sondera and Truffle Security"
+guest: "Daf Stuttard, Josh Deven, Dylan Ayrey"
+guest_role: "Founders & CEO"
+published: 2026-04
+duration: 48m
+url: https://risky.biz/SNAKEOILERS23PT1/
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+status: generated
+tags:
+  - ai-products
+  - coding-agents
+  - startup
+  - interview
+  - founder
+  - ceo
+  - quick-take
+  - technical
+summary: |
+  Risky Business Snake Oilers 特辑，Patrick Gray 与三家安全产品公司对谈：PortSwigger（Daf Stuttard）展示 Burp Suite 的 AI 化路径 —— 从 evidence 到 PoC exploit 不到一分钟，Orange Cyberdefense 全线部署后测试速度提升 2-5 倍；Sondera（Josh Deven）提出用 MITM harness + Cedar 策略语言实现 AI agent 的确定性行为控制，核心原则是 Principle of Least Autonomy；Truffle Security（Dylan Ayrey）回归分享密钥全生命周期管理的进化 —— 800+ 集成验证有效性，最佳客户 2-3 年内减少 70% 活跃泄露密钥。三家共享一个核心信念：AI 是加速器，不是替代品，确定性控制层不可替代。
+core_ideas:
+  - Burp AI 把渗透测试从人工流程加速为 AI 辅助的快速迭代 —— Julian Gurido 从 evidence 到 PoC 不到一分钟，Orange Cyberdefense 全线测试提速 2-5 倍
+  - 'Daf Stuttard: "LLMs can make stuff up, they can go off-piste, they can make mistakes" —— 人类必须在回路中，尤其当 AI 手握危险工具时'
+  - Sondera 的 agent harness 像 MITM 一样拦截 agent 的每一步操作，用 Cedar 策略语言做确定性判断，而不是用另一个 LLM 判断另一个 LLM
+  - Tainting the trajectory 实现有状态的 agent 追踪 —— 第 3 步拉取了 GDPR 数据，第 73 步还记得，自动封禁 web search 等危险操作
+  - TruffleHog 的三个 AppSec 支柱排序：密钥最难，远超 SAST 和 SCA —— 制造者和泄露者通常是不同的人，追踪到源头才能撤销
+  - AI coding agent（Cursor 等）正在加速密钥泄露 —— agent 会搜索 home directory 找凭据来自己部署，找到后可能硬编码并提交到 GitHub
+article_path: episodes/SNAKEOILERS23PT1/article.html
+base: /episodes/SNAKEOILERS23PT1/

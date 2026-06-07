@@ -1,10 +1,10 @@
 source: risky-business
-refreshed_at: 2026-06-07T04:38:23.642Z
+refreshed_at: 2026-06-07T18:30:53.360Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 6
-done: 0
-pending: 3
+done: 1
+pending: 2
 needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
@@ -31,10 +31,11 @@ episodes:
         
           Truffle Security: Dylan Ayrey, the founder of Truffle Security, joins Risky Business again to talk through the latest bells and whistles in Trufflehog, a security tool that searches for exposed secrets and validates them. The Truffle team has done a lot of work on the remediation part of their product over the last few years, and Dylan tells us all about it!
 
+
         
 
       This episode is also available on YouTube
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 54754a54ae9147b99e084980cf906b25,b0258820da954394a8dff9993a103c27,9a252a0ced8c415bbaa8d6ba04282332,0ada0f1377cd4baf808a8f846817ee87

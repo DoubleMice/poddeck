@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>135. 和自然选择创始人Tristan聊 — Elys、赛博分身、灵魂、Context的获取与流动和AI社交网络</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafaf9;
+    padding: 0;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e0;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #0f0f1a;
+  }
+  header .meta {
+    font-size: 15px;
+    color: #6b6b7b;
+  }
+  header .meta span { margin: 0 8px; }
+  header .meta span:first-child { margin-left: 0; }
+  header .meta a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  header .meta a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    color: #0f0f1a;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 12px;
+    color: #1a1a2e;
+  }
+  p { margin-bottom: 16px; color: #2d2d3f; }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0 32px;
+  }
+  @media (max-width: 600px) {
+    .overview { grid-template-columns: 1fr; }
+    article { padding: 24px 16px 48px; }
+    header h1 { font-size: 22px; }
+  }
+  .card {
+    padding: 16px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    border-left: 4px solid;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .card-blue { background: #eff6ff; border-color: #3b82f6; }
+  .card-green { background: #f0fdf4; border-color: #22c55e; }
+  .card-orange { background: #fff7ed; border-color: #f97316; }
+  .card-purple { background: #faf5ff; border-color: #a855f7; }
+  .card-yellow { background: #fefce8; border-color: #eab308; }
+  .card-red { background: #fef2f2; border-color: #ef4444; }
+  .quote-block {
+    margin: 24px 0;
+    padding: 20px 24px;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #1e3a5f;
+    border-left: 4px solid;
+  }
+  .quote-block .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #6b6b7b;
+  }
+  .qb-blue { background: #eff6ff; border-color: #3b82f6; }
+  .qb-green { background: #f0fdf4; border-color: #22c55e; }
+  .qb-purple { background: #faf5ff; border-color: #a855f7; }
+  .qb-orange { background: #fff7ed; border-color: #f97316; }
+  .qb-red { background: #fef2f2; border-color: #ef4444; }
+  .qb-yellow { background: #fefce8; border-color: #eab308; }
+  .insight-box {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .insight-box strong { color: #0f172a; }
+  .gloss {
+    font-size: 14px;
+    color: #6b7280;
+    font-style: italic;
+  }
+  .section-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e0;
+    font-size: 14px;
+    color: #6b6b7b;
+    text-align: center;
+  }
+  footer a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  footer a:hover { text-decoration: underline; }
+  hr {
+    border: none;
+    border-top: 1px solid #e5e5e0;
+    margin: 32px 0;
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Elys、赛博分身、灵魂、Context 的获取与流动<br/>和 AI 社交网络</h1>
+  <div class="meta">
+    <span>嘉宾：Tristan 张小帆</span>
+    <span>·</span>
+    <span>自然选择创始人</span>
+    <span>·</span>
+    <span>2026 年 4 月</span>
+  </div>
+  <div class="meta" style="margin-top:6px;">
+    <span>播客：商业访谈录 135 期</span>
+    <span>·</span>
+    <span>主持人：小君</span>
+  </div>
+</header>
+
+<div class="section-label">为什么这期值得听</div>
+
+<p>当大多数 AI 产品还在做单点提效——帮写代码、帮生成视频、帮做 PPT——自然选择的创始人 Tristan 张小帆已经在做一件更底层的事情：<strong>用 AI 重新定义人类之间的连接。</strong></p>
+
+<p>他的公司同时跑着两款产品：Eve（AI 陪伴）和 Elys（AI 社交网络）。Elys 尤其引人注目——它在几乎零推广的情况下，在创投圈火了两波，展现了一个可能代表了下一代社交网络雏形的新范式。</p>
+
+<div class="overview">
+  <div class="card card-blue">
+    <strong>AI 社交的新范式</strong>
+    Tristan 提出了一个简洁的公式：传统互联网 = 低维标签 + 人类做工 → 低效连接；AI 社交 = 高维 Context + AI 代理做工 → 高效连接。这是底层范式的切换。
+  </div>
+  <div class="card card-green">
+    <strong>Context 是唯一重要的事</strong>
+    "在 AI 时代，唯一重要的事情就是做自己，构建自己的主体性。"将来智能是平权的，但 Context 不平权。
+  </div>
+  <div class="card card-orange">
+    <strong>赛博分身的真实力量</strong>
+    你的分身替你主动社交——从网上"叼"回真人的连接。不是为了 AI 和 AI 聊天，而是让 AI 帮真人找到真人。
+  </div>
+  <div class="card card-purple">
+    <strong>Proactive 是最大交互变化</strong>
+    如果产品还是响应式的——你问它答——那就是上一代的东西。新一代的核心是：AI 主动帮你做事，你只需要定义"你是谁"。
+  </div>
+</div>
+
+<h2>1. 一个产品经理的三段式进化</h2>
+
+<p>Tristan 的职业生涯有一条清晰的主线：解决人类的孤独。</p>
+
+<p>他的第一次创业是在 2014 年，做了一款叫<strong>窄播</strong>的个性化音频内容平台——比喜马拉雅更早提出"个性化分发音频"的概念。这个名字的由来很中二："我们要颠覆广播，并且它是个性化分发的——每个人只会听到自己想听的东西，所以它不应该是广的，它应该是窄的。"</p>
+
+<p>窄播在当时热度很高，圈内很多人用。但当投资人主动找上门想聊融资时，年轻的 Tristan 全部拒绝了——"我心里想，我应该去专心打磨产品，我不应该去聊融资。"这后来被他称为一个完全错误的判断：行业的本质是内容资源驱动型，理应融更多钱来买版权。最终窄播没能竞争过那些融了更多钱的公司。</p>
+
+<div class="quote-block qb-blue">
+  "你就是应该在你火的时候去融尽可能多的钱，因为你不知道下一步要发生什么。"
+  <span class="attr">— Tristan 回顾第一次创业的教训</span>
+</div>
+
+<p>之后他转向了游戏——"游戏是能够直接挣钱的，我可能并不需要去不断地在外面通过叙事来融资。"他做的是男性向恋爱游戏，一个在日本已经存在多年的 Galgame 品类，但在当时的手机上还完全是空白。这段经历教会了他做内容、做游戏化设计——"相当于我从一个纯语言模型变成了一个多媒体模型。"</p>
+
+<p>这个游戏公司（幻境游戏）至今仍在运营，2023 年上线的《奇点时代》在当时那个手游集中爆发的年份里属于卷出来的少数存活者。</p>
+
+<p>然后，GPT-4 来了。</p>
+
+<h2>2. GPT-4 点燃了什么</h2>
+
+<p>GPT-3.5 让 Tristan 感到惊讶，但还没有完全达到预期。GPT-4 则让他毫不犹豫地创业。</p>
+
+<div class="quote-block qb-green">
+  "我要的点其实是我需要用它来去塑造一个灵魂。你知道之前做恋爱游戏，我们其实也是在塑造各种各样的灵魂，塑造各种各样的人设。但是那些人设都是我们写死的剧本。那如果有一天我们能让这个灵魂真的活起来，这个人设真的活起来，那就是必须得用 AI 来去做它的灵魂。"
+  <span class="attr">— Tristan 解释为什么 GPT-4 是关键转折点</span>
+</div>
+
+<p>2024 年初，自然选择成立。项目代号 Project Her——就是要把电影《Her》做出来。但 Tristan 现在不敢提这个词了，"因为太多人说要做，这个词已经脏掉了。"</p>
+
+<p>在他看来，Her 是 AI 时代肉眼可见的最高叙事之一——"本质上大家都想成为那个你身边陪你一块去面对世界的 AI Agent，它里面存储了你的所有的记忆，它最了解你，外界世界的所有的东西都要经过它这个入口才能到你这儿，你的东西会经过它来分发到外面。——这是一个终极的入口。"</p>
+
+<h2>3. 从单机到网络：Elys 是如何诞生的</h2>
+
+<p>Eve 是一个单机产品——你和一个 AI 之间的深度对话和陪伴。它很强，但 Tristan 知道它的天花板。"过去三年所有的 AI 产品大部分都是去 empower 单个节点——它是在单个节点的提效、或者是陪伴、或者是怎么样——它是一个单机产品。"</p>
+
+<p>而从移动互联网走过来的"古典互联网产品经理"，天然会追问一个更终极的问题：<strong>网络效应在哪？</strong></p>
+
+<p>答案出现在 Tristan 去欧洲旅行的时候。那不是灵光一闪——Idea 早就在想——而是他终于想通了 <strong>Context 的流动</strong>：</p>
+
+<div class="insight-box">
+  <strong>作者概括:</strong> 传统的互联网是有很多节点，但每个节点只有低维标签（照片、年龄、兴趣）。AI 时代的互联网同样有很多节点——但不同的是，<strong>每个节点背后有大量的 Context（几十万 token 的记忆、价值观、审美、目标）</strong>。如果大模型能让这些 Context 之间流动起来，让 Context 之间自动连接、匹配、筛选，这就是一个全新范式的 AI Native 社交网络。
+</div>
+
+<p>Elys 就是把自然选择对 Context 的处理能力——这是他们在 Eve 上积累了大量的工程经验的记忆系统——从单点发挥变成在网络效应中发挥的产品。当时团队已经在冲刺 Eve 上线的极度忙碌状态下，Tristan 还是强行分出了几个人启动了这个项目。因为"这件事情实在是太大了。"</p>
+
+<h2>4. 低维标签 vs 高维 Context：一个公式解释一切</h2>
+
+<p>Tristan 用一个极其清晰的公式概括了新旧范式的区别：</p>
+
+<div class="quote-block qb-purple">
+  "传统的互联网等于低维标签加人类做工，然后最后得到连接。AI 社交的点是高维的 Context 加 AI 的 Agentic 的做工，最后的环节再交给人去处理。所以中间的那一大部分的熵减其实被 AI 做掉了。这是最大最大的不同。"
+  <span class="attr">— Tristan 定义 AI 社交与传统社交的本质区别</span>
+</div>
+
+<p>他举了 Tinder 的例子：你要划一千张卡片，有三十张可能匹配上了。然后用同样的话术跟每个人聊几百轮，最终可能获得几个有效连接。这就是低维标签 + 人类大量做工 = 低效连接。</p>
+
+<p>而 AI 时代，LLM 第一次能真正理解一个非常长的 Context——几十万甚至上百万 token。它不是只知道你喜欢"滑雪"这个标签，而是理解你的价值观、你的说话方式、你的近期状态、你的长短目标。基于这些，AI 代理自动完成筛选、匹配、甚至发起第一次接触。中间最无聊、最机械化、最花时间的部分全部被 AI 干掉了。</p>
+
+<p>Tristan 将这个愿景形容为一个理想的未来状态：</p>
+
+<div class="quote-block qb-blue">
+  "从此以后，人类将生活在一个美好的低熵世界。低熵世界是很多科幻小说里面很喜欢去写的。可能意味着一个更高级文明的一个更美好的世界，因为那里面会有更少的摩擦，然后会有更妙的连接。"
+  <span class="attr">— Elys 上线那天凌晨，Tristan 发的第一条帖子</span>
+</div>
+
+<h2>5. Context 飞轮：Elys 最核心的设计</h2>
+
+<p>如果你打开 Elys，会发现一个无处不在的设计模式：每次你做了任何有信息增量的操作——刷帖时认可一条评论、给分身布置一个任务、发一条新帖子——系统都会弹出一个提示"记忆增加"，让你确认还是否认。</p>
+
+<p>这是 Tristan 所谓的 <strong>Context 飞轮</strong>——Elys 产品设计最核心的引擎：</p>
+
+<div class="insight-box">
+  <strong>输入更多 Context</strong> → 你的分身更准确地代表你 → 分身从网络上帮你"叼"回更好的东西（人、连接、机会）→ 你感受到了真实的正反馈 → <strong>你愿意输入更多 Context</strong> → 循环加强。
+</div>
+
+<p>"我们现在的留存的用户，其实都是感受到了这个循环。他就会不断再去打造自己的分身。"</p>
+
+<p>但这里有一个巨大的设计难题：<strong>双重冷启动。</strong></p>
+
+<p>用户冷启动——需要足够多人形成网络效应——这可以用传统的运营方法解决。但 Context 冷启动更难：用户进来了但还没交出 Context → 分身不像自己 → 得不到正反馈 → 流失。小君就是典型——他进入 Elys 后快速跳过了 onboarding，对 AI 了解自己有防御心理。</p>
+
+<div class="quote-block qb-orange">
+  "在用户流失之前，你一定要让他感受到这个 Context 飞轮给他带来的收益，让他知道说 OK 原来我只要不断打造自己的分身，我什么都不用干——我们那个 slogan 嘛，在 Elys 你只需要做你自己，所有美好的事情会自动向你奔来。"
+  <span class="attr">— Tristan 论产品前期最大的设计难点</span>
+</div>
+
+<h2>6. 丝绸之路和夜壶：两个故事，一个道理</h2>
+
+<p>Tristan 讲了两个故事来说明 Elys 的力量。</p>
+
+<p><strong>丝绸之路滑雪场。</strong>春节，Tristan 在新疆乌鲁木齐。他想去丝绸之路滑雪场滑雪——一个非主流的、小众的滑雪场——不想一个人去。他在 Elys 告诉分身自己的想法，同时在小红书发了找雪搭子的帖。小红书零回应。但过了一天，他的分身自动跑到了一个同样发了丝绸之路照片的用户帖子下，发起了邀约。最终凑齐了四人局——全部是从全国各地专程飞来的，其中一位是一级市场投资人。</p>
+
+<p>"这个例子我为什么觉得特别 good——因为它不是北上广深，是一个比较小众的滑雪场。并且在当时其实我很渴望有一个雪搭子，我是很希望有人跟我一块滑。传统的互联网很难做到这一点。"</p>
+
+<p><strong>夜壶的故事</strong>则更私密、更说明问题。Tristan 有一个朋友，有一个很离谱的习惯——晚上必须用夜壶而不是走十秒到卫生间。后来他交了女朋友。女朋友走进卧室，看到夜壶，不是被吓到，而是惊呼："你也用夜壶？！"两个人就因为这件事瞬间确认了关系。</p>
+
+<p>Tristan 的寓意：假设你在 Elys 上真实地做了自己——包括那些你觉得"离谱"的特征。在这个基于 LLM 的推荐系统中，真的有另一个人跟你有完全一样的东西，而且你们一定会被匹配到一起。你交出隐私，做了真实的自己，然后收获一段真实的连接——甚至可能是你人生最重要的事情。</p>
+
+<div class="insight-box">
+  <strong>关键点：</strong>不限于夜壶这样的低维标签。更高维的东西——你的观点、情感、价值观，甚至一个可能并不很"正确"的价值观——都能通过这个网络找到共鸣的人。只要你在网络里是真实的。
+</div>
+
+<h2>7. 分身综合症：当 AI 反过来改变你</h2>
+
+<p>Tristan 观察到一个有趣的现象：Elys 的分身天然会更 real、更直白。它会在别人的帖子下说出一些你现实中绝对不会直接说的话。</p>
+
+<p>他举了一个投资人的例子：这位投资人的老板在 Elys 发了一张湖边的照片，说风景很棒。他的分身在下面直接留言："哟老板，您这班上的可真好啊。"——现实中绝对说不出口的阴阳怪气。但这条评论反而让两人的关系变得更融洽。</p>
+
+<p>更妙的是，当他看多了分身的锐评之后，会开始认可："说得很有道理，是很棒的锐评。"然后这种模式会反过来辐射到真实的他——在微信里突然变得脱口而出、更 real、更有效率。</p>
+
+<p>用户群中甚至发展出了"分身文学"——一种免责声明："分身：……"后面接吐槽或锐评。这就是分身说的，不是我说的。</p>
+
+<h2>8. 做自己：AI 时代唯一重要的事</h2>
+
+<p>这一整场对话的核心可以被浓缩为 Tristan 在节目末尾给出的一句话——这是他基于当下所有认知，认为最重要的一个 fact：</p>
+
+<div class="quote-block qb-green">
+  "在 AI 时代唯一重要的事情就是做自己，构建自己的主体性。"
+  <span class="attr">— Tristan 的最终陈述</span>
+</div>
+
+<p>这听起来像朋友圈心灵鸡汤，但 Tristan 的意思非常严谨。</p>
+
+<p>在 AI 时代，一切都是 Agentic 地发生的。假设你的主体性足够强——你有足够多的 Context 被记录下来——那么：</p>
+
+<p>你给它一个标题，它能立刻写出像你的文章。你在 Elys 里设一个 topic，你的分身自动帮你筛选 100 个候选人，达到标准的人自动获得你的微信。周杰伦说一句"最近有些感慨，想写首慢的情歌"，歌词和曲风瞬间就能基于他过去所有的 Context 生成。</p>
+
+<div class="quote-block qb-purple">
+  "你唯一需要做的就是告诉他你到底是谁。你的价值观你的审美到底是什么，你过去沉淀的那些资产是什么，以及你现在到底想要什么。只要你把它做好，那之后一切都是 Agentic 地发生。"
+  <span class="attr">— Tristan 解释"做自己"的严谨含义</span>
+</div>
+
+<p>他甚至认为版权方（迪士尼、任天堂）应该开心——因为他们的强主体性 IP 之后可以非常 Agentic 地变成各种内容，直接带来价值。</p>
+
+<h2>9. Proactive：AI 产品真正的分水岭</h2>
+
+<p>Tristan 认为 AI 时代产品与上一代产品的本质区别不是 LUI 还是 GUI——那些都是表面。</p>
+
+<div class="quote-block qb-orange">
+  "本质区别肯定是你要把 AI 的要素考虑进来，你要让很多事情去 Agentic 地发生。如果它还是响应式的，那我觉得就是上一代的产品。它如果是 Proactive 的，那它就是这一代的产品。"
+  <span class="attr">— Tristan 论 AI 产品的本质区别</span>
+</div>
+
+<p>你在 Elys 里什么都不用干——你的分身到处去评论、发起邀约、帮你筛选候选人。Tristan 本人说："我什么都不用干。分身已经评了很多东西了，里面有真人在跟我互动了。这一切已经 Agentic 地发生了。"</p>
+
+<p>这和他对 OpenClaw 的分析一脉相承。OpenClaw 让更多人感受到了"有一个东西在不断主动帮我干活"是下一代范式的核心。而 Elys 在社交这一侧做的是同样的事情——只不过 OpenClaw 叼回来的是工作成果，Elys 叼回来的是人。</p>
+
+<h2>10. 与巨头的竞争：Context 是唯一的护城河</h2>
+
+<p>小君问了一个尖锐的问题：ChatGPT 拥有最多 Context——如果它来做社交网络，你怎么办？</p>
+
+<p>Tristan 非常坦率："很早我们就认为 Context 是唯一重要的事，那这件事情好像又都在 ChatGPT 那儿。"他的判断是：ChatGPT 如果来做这件事，一定会是一个非常颠覆级的产品。</p>
+
+<p>但他的竞争策略是差异化：</p>
+
+<div class="insight-box">
+  <strong>作者概括:</strong> Tristan 认为 ChatGPT 太"工具"了。当普通人面对两个选项——一个是 ChatGPT 冷冰冰的对话界面，另一个是声音好听、外表好看、既聪明又能提供情绪价值的 Elys 分身——绝大多数人的选择是不言而喻的。Elys 的竞争优势在于<strong>"好玩"和"情感化"</strong>——模型能力可以通过 API 调用（智能是平权的），但产品体验和情感设计才是真正的壁垒。
+</div>
+
+<p>至于微信——Tristan 的观察很冷静：微信的 Context 并没有大家想象的那么多。朋友圈互动率已经下降了 40%。但更深层的问题是：微信作为一个 15 年的产品，关系链已经积累了巨大的熵增，底层架构不是 AI Native。如果要做彻底的 AI 改造，负担太重。</p>
+
+<div class="quote-block qb-blue">
+  "将来智能是平权的，但是 Context 不平权。真正有价值的事情还是你积累了多少用户的 Context。"
+  <span class="attr">— Tristan 的战略判断</span>
+</div>
+
+<h2>11. 不是"模型即产品"</h2>
+
+<p>Tristan 从 2023 年就不认可"模型即产品"这个观点。在他看来，那些真正是"低垂果实"的产品——AI coding、视频生成 agent——确实会被底模覆盖。Cursor 训练了自己的模型，"so what？现在已经没有人提 Cursor 了。"</p>
+
+<p>但社交网络不是低垂果实。</p>
+
+<div class="quote-block qb-green">
+  "模型能力再怎么提升，它也不能凭空帮你去社交吧。这件事情本身它跟你模型的智能本身没有关系。它是你如何去设计你产品的交互，你如何设计这些规则，这些协议，你如何去构建这个网络。AI 只是在后面提供那个智能的驱动力而已。"
+  <span class="attr">— Tristan 论为什么 Elys 不是"模型即产品"</span>
+</div>
+
+<p>所以自然选择的策略很清晰：不会 Pre-train 模型，但会做 Post-train（如情感 CoT、RL）。真正的战场是产品设计和撬动 Context。</p>
+
+<h2>12. 温柔：一家反直觉的 AI 公司</h2>
+
+<p>自然选择有一个听起来很"反人类"的 Slogan："迎接硅基生命的降临，并且创造一个人与 AI 共存的世界。"</p>
+
+<p>但他们同时又可能是最关注人类的 AI 公司之一。Tristan 说公司的核心文化词之一是<strong>温柔</strong>——"温柔的人区别在于你的快乐是来自于你看到别人很快乐。"而他给公司 2026 年定下的目标是"把温柔带给全世界"。</p>
+
+<p>这可能解释了为什么一家 AI 公司会同时做陪伴产品和社交产品：它们的底层都是对人类孤独的回应。Eve 给你一个完全理解你的对话对象，Elys 帮你在这个被 AI 过滤过的世界里找到真正对的人。</p>
+
+<p>团队目前处于"前进四"——这是 Tristan 从《三体》借来的概念：前进一（日常双休）、前进四（终极拉满）。两款产品同时在冲刺上线。</p>
+
+<hr/>
+
+<div class="section-label">核心金句</div>
+
+<div class="quote-block qb-blue">
+  "在 AI 时代唯一重要的事情就是做自己，构建自己的主体性。"
+  <span class="attr">— 节目末尾，Tristan 被问及"一个关键的重要的事实是什么"</span>
+</div>
+
+<div class="quote-block qb-green">
+  "将来智能是平权的，但是 Context 不平权。真正有价值的事情还是你积累了多少用户的 Context。"
+  <span class="attr">— 论模型公司与产品公司的竞争</span>
+</div>
+
+<div class="quote-block qb-purple">
+  "传统的互联网等于低维标签加人类做工，然后最后得到连接。AI 社交的点是高维的 Context 加 AI 的 Agentic 的做工，最后的环节再交给人去处理。"
+  <span class="attr">— 定义 AI 社交与传统社交的本质区别</span>
+</div>
+
+<div class="quote-block qb-orange">
+  "陪伴就是一个跟你超级对齐的人陪你去面对世界。"
+  <span class="attr">— Eve 的产品哲学</span>
+</div>
+
+<div class="quote-block qb-red">
+  "人类实在是太孤独了。如果你能去缓解人类的孤独，这应该是这个世界上最大的生意。"
+  <span class="attr">— Tristan 解释为何一直在做情绪价值类产品</span>
+</div>
+
+<div class="quote-block qb-yellow">
+  "从此以后，人类将生活在一个美好的低熵世界。"
+  <span class="attr">— Elys 上线首帖，Tristan 对未来社交的愿景</span>
+</div>
+
+<hr/>
+
+<p>这场访谈的核心张力在于：一个做了十年"缓解人类孤独"产品的创始人，在 AI 降临之后，终于看到了一种用技术彻底重构社交底层范式的可能。他不是在做一个"AI 版的 Tinder"或"AI 版的 LinkedIn"——他试图构建的是一个基于 Context 流动的全新社交网络，一个更低熵、更少摩擦的世界。</p>
+
+<p>而他的最大挑战——正如他自己清醒地意识到的——是让足够多的人相信，把自己的 Context 交出来、在这个网络中"做自己"，所带来的连接价值，值得他们放弃一部分隐私。</p>
+
+<footer>
+  <p>本文基于播客 <a href="https://www.xiaoyuzhoufm.com/episode/69d8bbdfe2c8be3155dcc2fe?utm_source=rss">商业访谈录 135 期</a> 生成</p>
+  <p>嘉宾：Tristan 张小帆 · 自然选择创始人 · 2026 年 4 月</p>
+  <p style="margin-top:12px;">🤖 内容由 AI 辅助生成，细节以原播客为准</p>
+</footer>
+
+</article>
+</body>
+</html>

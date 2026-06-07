@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-07T04:38:23.667Z
+refreshed_at: 2026-06-07T18:30:53.385Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 9
-done: 0
+done: 1
 pending: 0
-needs_transcript: 9
+needs_transcript: 8
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -209,8 +209,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guest: 刘诚.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-07T18:32:56.961Z
+    transcript_job_id: 82cb6aac7efe4a4892bbd2255c1c1764,67776354631e48769737a33fc6bfba74,45355efb77114c7fa8068f58703b8755,3bc5d318ad3048eda55fd9e0b332010e,526839ac62864f8bab9b69cf16fab19e
+    transcript_completed_at: 2026-06-07T18:35:54.123Z
   - id: 3bb14dd4-0b13-4173-9d5b-0e63bf98ae1d
     title: E232｜餐饮出海有新招儿吗？从鼎泰丰与贡茶拿下美国初代销冠聊起
     duration: 3996

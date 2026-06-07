@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Two DOJ Cases Reveal About the Legal Risks of Prediction Markets — Bits + Bips</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  header .meta {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+  }
+  header .meta strong { color: #333; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 48px 0 16px;
+    color: #111;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e8e8e8;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: #222;
+  }
+  p { margin: 12px 0; }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .card strong { font-size: 16px; display: block; margin-bottom: 4px; }
+  .card-blue   { background: #e3f2fd; border-left: 4px solid #1971c2; }
+  .card-red    { background: #fff0f0; border-left: 4px solid #e03131; }
+  .card-green  { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f59f00; }
+  .card-purple { background: #f3f0ff; border-left: 4px solid #7048e8; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+
+  .quote-block {
+    padding: 20px 24px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .quote-block .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #666;
+  }
+  .q-blue   { background: #e3f2fd; border-left: 4px solid #1971c2; }
+  .q-red    { background: #fff0f0; border-left: 4px solid #e03131; }
+  .q-green  { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .q-yellow { background: #fff9db; border-left: 4px solid #f59f00; }
+  .q-purple { background: #f3f0ff; border-left: 4px solid #7048e8; }
+  .q-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .q-gray   { background: #f5f5f5; border-left: 4px solid #999; }
+
+  .info-box {
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+  }
+  .info-box strong { color: #333; }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  @media (max-width: 600px) {
+    .compare-grid { grid-template-columns: 1fr; }
+    .card-grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 22px; }
+    article { padding: 24px 16px 40px; }
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+    line-height: 1.6;
+  }
+  footer a { color: #555; }
+  .gloss {
+    background: #fff9db;
+    border: 1px dashed #f59f00;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 16px 0;
+  }
+  .gloss::before { content: "作者概括: "; font-weight: 600; color: #e8590c; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>What Two DOJ Cases Reveal About the Legal Risks of Prediction Markets</h1>
+  <div class="meta">
+    <strong>Bits + Bips</strong> · The Interview<br/>
+    Guest: <strong>Sam Enzer</strong> · Former SDNY Prosecutor, Partner at Cahill &amp; Founder of Cahill Next<br/>
+    Host: Steven Ehrlich · June 2026 · ~46 min
+  </div>
+</header>
+
+<!-- Why this matters -->
+<h2>为什么这期特别？</h2>
+
+<div class="card-grid">
+  <div class="card card-red">
+    <strong>首次 DOJ 起诉预测市场</strong>
+    两起历史性案件——军人用机密情报、Google 员工用内部数据——同时瞄准 Polymarket 交易，标志着联邦执法机构正式进入预测市场领域。
+  </div>
+  <div class="card card-blue">
+    <strong>法律概念被重新定义</strong>
+    "内幕交易"不是法律术语——实际指控是商品欺诈和电信欺诈（wire fraud）。理解这个区别，才能理解整个法律框架。
+  </div>
+  <div class="card card-green">
+    <strong>合法与非法仅一线之隔</strong>
+    三类合法利用非公开信息的情境——关键不在信息本身是否公开，而在你是否对信息来源负有"信任与保密义务"。
+  </div>
+  <div class="card card-yellow">
+    <strong>CFTC vs 州赌博法</strong>
+    第三巡回法院支持联邦优先权，第九巡回法院可能反对。数十亿美元市场面临最高法院级别的管辖权之争。
+  </div>
+  <div class="card card-purple">
+    <strong>合约歧义的真金白银</strong>
+    MicroStrategy 比特币出售让数千万美元悬于"日期"的定义。预言机治理的去中心化程度也远低于预期。
+  </div>
+  <div class="card card-orange">
+    <strong>国家安全维度</strong>
+    对手国家监控 Polymarket 获取军事情报信号。这不仅仅是市场诚信问题，还关系到军事行动安全。
+  </div>
+</div>
+
+<!-- Section 1: The Two Cases -->
+<h2>两起历史性案件</h2>
+
+<p>2026年，美国司法部（DOJ）同时推进了两起针对预测市场交易的刑事起诉。两起案件都发生在 Polymarket 平台上，但事实模式截然不同，构成了理解整个法律框架的起点。</p>
+
+<h3>US v. Van Dyke：军人用机密情报交易</h3>
+
+<p>这是历史上第一起预测市场内幕交易起诉。被告 Van Dyke 是美国武装部队成员，利用其接触的机密国家安全信息，在委内瑞拉总统马杜罗被捕和入侵行动之前在 Polymarket 上进行了交易。Van Dyke 签署了保密协议，明确同意遵守分类信息保密要求——这使他直接满足了犯罪构成中的"信任与保密义务"要件。</p>
+
+<h3>US v. Spagnuolo：Google 工程师用内部数据获利</h3>
+
+<p>第二起案件涉及 Google 工程师 Spagnuolo。他利用 Google 内部工具访问了年度热搜排名数据，发现市场预期与内部数据之间存在差异——从市场参与者角度看，这是一笔"无风险"的交易。他通过这个信息优势在 Kalshi 上下注，获利约 120 万美元。虽然起诉书对他是否签署了正式保密协议的说法不够明确，但员工通常对雇主负有受托责任，且起诉书中提到信息被标记为"机密"。</p>
+
+<p>两起案件的共同点：被告都从负有保密义务的来源获取了重大非公开信息，利用这些信息交易获利，并试图通过删除账户和 DeFi 协议掩盖行踪。</p>
+
+<!-- Section 2: Legal Framework -->
+<h2>"内幕交易"不是法律术语</h2>
+
+<p>这是整个节目中最重要的法律知识点。Sam Enzer 开宗明义地指出：</p>
+
+<div class="quote-block q-blue">
+  "Insider trading itself is actually not a legal term."
+  <span class="attr">— Sam Enzer，前 SDNY 联邦检察官</span>
+</div>
+
+<p>Enzer 曾作为检察官处理过典型的投资银行家内幕交易案——一名投行家在 M&A 交易前将信息泄露给父亲，使其提前买入股票。但即便是那个"教科书式"的案件，实际指控也不是"内幕交易"，而是<strong>证券欺诈</strong>或<strong>电信欺诈</strong>。</p>
+
+<p>关键区别在于标的资产的性质：</p>
+
+<div class="compare-grid">
+  <div class="info-box">
+    <strong>证券市场</strong><br/>
+    工具是证券（stock）→ 指控为<strong>证券欺诈</strong>（Securities Fraud）
+  </div>
+  <div class="info-box">
+    <strong>预测市场</strong><br/>
+    工具是互换（swap），属于商品 → 指控为<strong>商品欺诈</strong>（Commodities Fraud）
+  </div>
+</div>
+
+<p>在 Spagnuolo 案中，检方同时指控商品欺诈和电信欺诈。Enzer 引用 SDNY 法官 Jed Rakoff 的名言，将电信欺诈法规比作：</p>
+
+<div class="quote-block q-red">
+  "Wire fraud, Judge Rakoff, Southern District judge, once called the wire fraud statute a prosecutor's Colt 45. What he meant by that is, it's a generic statute, it's very broad. Any misrepresentation or failure to disclose something that is material when you have a duty to disclose, in a situation that involves interstate transfer of wires, email, telegram messages, a wire transfer of funds, can be prosecuted under the wire fraud statute."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>两个案件还都附加了洗钱指控（18 U.S.C. § 1956），但这属于辅助性指控——检方必须先证明基础罪（商品欺诈或电信欺诈）成立，洗钱指控才能成立。</p>
+
+<!-- Section 3: Two-Part Test -->
+<h2>犯罪构成：两步检验法</h2>
+
+<p>Enzer 用一个简洁的两步框架解释了何时利用非公开信息交易构成犯罪：</p>
+
+<div class="compare-grid">
+  <div class="info-box" style="background:#fff0f0; border-color:#e03131;">
+    <strong>要件一：重大非公开信息</strong><br/>
+    能够影响资产市场价格的信息，未向公众公开，且你实际持有该信息。
+  </div>
+  <div class="info-box" style="background:#fff4e6; border-color:#e8590c;">
+    <strong>要件二：信任与保密义务</strong><br/>
+    你从期望你保密的来源获得信息。员工对雇主负有受托责任；签署保密协议是明确的证据。
+  </div>
+</div>
+
+<div class="quote-block q-gray">
+  "If you have material non-public information, inside information, if you got it from a source that expects you to keep it secret, trading on that information could be a crime. That's the basis."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>Enzer 强调了一个核心洞察：犯罪的本质<strong>不是你拥有不公平的信息优势</strong>，而是你滥用和背叛了信息来源对你的信任：</p>
+
+<div class="quote-block q-yellow">
+  "It's not about me having an unfair advantage, it's about me misusing and violating the trust of whoever gave me the information."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>Van Dyke 案中，两个要件都明确满足——机密情报是重大的非公开信息，保密协议构成了信任义务。Spagnuolo 案类似——Google 内部搜索数据是重大的非公开信息，员工的受托责任构成了信任义务。</p>
+
+<!-- Section 4: Three Legal Examples -->
+<h2>三种合法利用非公开信息的方式</h2>
+
+<p>Enzer 用三个具体例子说明：信息本身是非公开且重大的，并不意味着利用它交易就是犯罪。关键在于是否存在信任义务。</p>
+
+<div class="compare-grid">
+  <div class="info-box" style="background:#e3f2fd;">
+    <strong>例一：酒吧里偶然听到</strong><br/>
+    IBM 的 CEO 在酒吧打电话，声音太大了。你听到他说"买Dell，明天就买"。这条信息是重大的、非公开的——但你对酒吧里的陌生人没有信任义务。你可以合法地交易。
+  </div>
+  <div class="info-box" style="background:#ebfbee;">
+    <strong>例二：农民对冲作物</strong><br/>
+    一个果农知道今年自己的橙子收成会下降。他可以利用这个信息购买期货进行对冲。这是衍生品市场设计的初衷——生产者利用自身信息管理风险。
+  </div>
+</div>
+
+<div class="info-box" style="background:#fff4e6; margin-top:0;">
+  <strong>例三：更聪明的算法</strong><br/>
+  你有一个算法，能比市场更快、更准确地分析公开数据。你的"秘密配方"是非公开的，但它是你自己的分析方法，而非从他人那里获得的保密信息。这是量化基金每天都在做的事——完全合法。
+</div>
+
+<p>共同线索：在这三种情况下，你都没有对信息来源的信任与保密义务。</p>
+
+<!-- Section 5: OpenSea Precedent -->
+<h2>OpenSea 先例及其对当前案件的影响</h2>
+
+<p>Enzer 提到了一个可能影响 Spagnuolo 和 Van Dyke 案件走向的重要先例：Nathaniel Chastain 案（OpenSea 前员工案）。</p>
+
+<p>Chastain 是 OpenSea 的员工，知道哪些 NFT 会被放在首页展示。他利用这个内部信息在 NFT 公开发布前先行购买。SDNY 通过将指控框架定为电信欺诈，绕过了"NFT 是否属于证券"的争论，成功获得定罪。</p>
+
+<p>但第二巡回上诉法院推翻了定罪。法院裁定：此类信息<strong>不属于电信欺诈法可管辖的财产类型</strong>（not the type of property that can be the subject of a wire fraud prosecution）。</p>
+
+<p>Enzer 认为，Spagnuolo 的辩护方极有可能援引 Chastain 先例，主张 Google 内部搜索数据同样不属于电信欺诈管辖范围。Van Dyke 案有类似的抗辩路径——基于 Blazak 等判例，质疑政府信息是否为可被"窃取"并进行内幕交易起诉的财产类型。核心争议在于：什么类型的"信息"构成电信欺诈法下的"财产"？</p>
+
+<!-- Section 6: George Santos -->
+<h2>George Santos：不是内幕交易，而是"自导自演"</h2>
+
+<p>George Santos 预测市场争议展示了一个不同的法律问题。Santos 公开宣称将出席国会国情咨文演讲，市场据此定价。但在活动开始前几小时，他突然改口称因"旅行问题"无法出席。事后发现，他大量押注了自己不出席的结果。</p>
+
+<p>Enzer 分析的核心是：这<strong>不构成内幕交易</strong>，因为 Santos 是信息的来源本身——他没有背叛任何人的信任。</p>
+
+<div class="quote-block q-purple">
+  "He is the source of the information. He's not betraying a duty to somebody who told him what his travel plans are. He is the creator, the maker, the definer. He is the principal."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>但 Enzer 指出了两种可能的替代罪名路径：</p>
+
+<div class="compare-grid">
+  <div class="info-box" style="background:#fff0f0;">
+    <strong>情景 A：事先预谋不出席</strong><br/>
+    公开说会去 → 押注不去 → 宣布不去。这是一种"scalping"或"pump and dump"的欺诈模式。Enzer 曾在 SDNY 以类似模式起诉 John McAfee——McAfee 在 Twitter 上推荐"Coin of the Day"，声称自己"没有持仓"，同时却在出货。
+  </div>
+  <div class="info-box" style="background:#fff9db;">
+    <strong>情景 B：原本要去，临时变卦</strong><br/>
+    原本真心打算出席，临时决定不去，先下注再宣布不去。这种情况更接近市场操纵（Market Manipulation），而非传统欺诈。
+  </div>
+</div>
+
+<p>对于检察官来说，市场操纵案比欺诈案更难。关键因素在于：</p>
+
+<div class="quote-block q-red">
+  "Generally whether or not the government could legally bring a manipulation case, they like to see a lie. Deception."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>Enzer 解释了"mens rea"（犯罪意图）在刑事定罪中的核心地位。FTX 案之所以能够成功定罪，很大程度上是因为 Sam Bankman-Fried 说了直接的谎言（"你们的钱是安全的"）。而市场操纵案中，辩方可以主张交易是"对冲"或有其他合法理由——没有明确的谎言，定罪难度就会大得多。</p>
+
+<!-- Section 7: CFTC vs States -->
+<h2>CFTC vs 州赌博法：数十亿美元的管辖权之战</h2>
+
+<p>预测市场面临的第二大法律争议是监管管辖权的问题。核心问题是：Polymarket 和 Kalshi 上的交易合约是受联邦 CFTC 管辖的衍生品（互换），还是应受各州监管的赌博活动？</p>
+
+<div class="quote-block q-green">
+  "We're talking about billions of dollars of transactions... these could easily become multi-trillion dollar markets over time."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>CFTC 主席 Behnam 和总统的立场是：当 CFTC 监管的指定合约市场（DCM）提供二元事件合约（包括体育赛事）时，这属于《商品交易法》（CEA）下的专属联邦管辖权，联邦法律优先于州赌博规则。也就是说，Polymarket 或 Kalshi 不需要获取州赌博牌照。</p>
+
+<p>州政府——尤其是新泽西、内华达等从博彩业获取大量税收的州——持反对立场。FanDuel 和 DraftKings 等运营商已投入巨资获取州赌博牌照，他们基于"对赛事结果的押注必须通过赌博牌照进行"这一假设建立了商业模式。</p>
+
+<p>Enzer 本人代表预测市场运营商，明确表态：</p>
+
+<div class="quote-block q-blue">
+  "I'm firmly in the camp that the Commodity Exchange Act controls and preempts and I think that side has the better of it."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>但法院内部的意见并不统一：</p>
+
+<div class="info-box">
+  <strong>第三巡回法院：</strong>在一个涉及 Kalshi 的案件的初步禁令裁决中，多数法官（2:1）认为 CEA 优先适用。但异议法官提出了另一方的所有论据。<br/><br/>
+  <strong>第九巡回法院：</strong>虽然尚未正式裁决，但在口头辩论中，法官的提问暗示他们可能做出相反的判决。<br/><br/>
+  <strong>第四和第六巡回法院的初审法院：</strong>得出了不同的结论。
+</div>
+
+<p>Enzer 的判断是：除非国会立法明确（而 Clarity Act 完全不涉及预测市场），否则这个问题最终必须由美国最高法院解决。</p>
+
+<div class="quote-block q-yellow">
+  "Unless Congress legislates and clarifies this through a statute, it'll probably have to be resolved by the US Supreme Court."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<!-- Section 8: MicroStrategy -->
+<h2>MicroStrategy 比特币出售：一个词引发的争议</h2>
+
+<p>这起争议完美地展示了预测市场的第三个风险维度——合约措辞的歧义。</p>
+
+<p>Polymarket 上有一个市场赌"MicroStrategy（现 Strategy）是否会在 5 月底前出售比特币"。实际情况是：Strategy 在 5 月确实卖出了比特币，但 SEC 文件在 6 月才披露了这笔交易。数千万美元悬于一个问题：<strong>"出售"的日期是指交易发生的日期，还是信息被公开的日期？</strong></p>
+
+<p>Sam Enzer 从诉讼律师的角度点评了这类问题：</p>
+
+<div class="quote-block q-purple">
+  "I went to Hebrew school. We can debate the Talmud both ways, all right? And litigators, I make a living splitting hairs on what the meaning of words is. What does it mean? Is this ambiguous? Is it not ambiguous?"
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>争议最终的裁决权落在了 Polymarket 使用的预言机——UMA——身上。但 Steven Ehrlich 指出了一个治理问题：分析显示大约 9 人控制了足够的 UMA 投票权来实际决定结果——"not quite as decentralized as I would imagine many people would want"。</p>
+
+<p>这并非孤立事件。此前还有一个著名的 Zelensky"西装"市场——赌 Zelensky 在白宫见 Trump 时是否穿了西装——同样引发了对 UMA 决议的不满。</p>
+
+<!-- Section 9: Information Signal -->
+<h2>预测市场的终极价值：信息信号</h2>
+
+<p>尽管存在各种法律和操作风险，Enzer 仍然看到了预测市场的核心价值——不是作为赌博场所，而是作为信息来源。</p>
+
+<div class="quote-block q-green">
+  "I personally find that the greatest use of prediction markets is the information. Not as a bettor, but as a source of information."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<p>Ehrlich 补充道：</p>
+
+<div class="info-box">
+  "It is an entirely new category of data signal. You know, five years ago, this is not something that was regular, pervasively available. But now, when I'm thinking about an issue, I always look at Polymarket or Kalshi to see what are they saying about it."
+</div>
+
+<p>但 Ehrlich 也提出了清醒的警告："The vast majority of participants lose on these platforms... the house always wins in a certain way."华尔街日报的报道和学术研究都证实了这一点——赚钱的主要是专业做市商和运行复杂算法的交易者。</p>
+
+<!-- Section 10: National Security -->
+<h2>国家安全维度</h2>
+
+<p>Van Dyke 案引发了超越市场诚信的担忧。如果对手国家通过监控 Polymarket 获取军事行动信号，这就不再只是金融监管问题，而是国家安全问题。</p>
+
+<div class="info-box" style="background:#fff0f0;">
+  如果我们在与伊朗交战，而伊朗可以通过 Polymarket 获取信号判断军事行动时间——这危及美国安全。"Seconds or minutes can matter in something like that." — Steven Ehrlich
+</div>
+
+<p>这个担忧正在转化为政治行动。众议院监督委员会主席 Comer（共和党）致信 Polymarket 和 Kalshi，要求说明防止内幕交易的措施。值得注意的是，这是共和党在调查一位共和党总统公开支持的行业——这表明来自立法者的压力是跨党派的。</p>
+
+<!-- Section 11: Future -->
+<h2>监管未来与参与者指南</h2>
+
+<p>CFTC 的监管模式与 SEC 根本不同：CFTC 采用"自我认证"（self-certify）模式——DCM 可以自行认证新产品，CFTC 在发现问题后再介入。这与 SEC 的事先审批形成鲜明对比，前任 CFTC 主席 Chris Giancarlo 曾强调这一点。</p>
+
+<p>Enzer 为参与者提供了实用的尽职调查框架：</p>
+
+<div class="info-box" style="background:#ebfbee;">
+  <strong>1. 了解解决机制：</strong>谁决定赌注的胜负？规则是什么？这是理解对手方风险的一部分。<br/><br/>
+  <strong>2. 审视你的优势：</strong>我为什么下这个注？是因为我的分析更好，还是因为我拥有内部信息？如果是后者——停止。<br/><br/>
+  <strong>3. 确认二元性：</strong>这是一个真正清晰的是/否问题吗？会有明确的赢家吗？<br/><br/>
+  <strong>4. 风险管理：</strong>不要投入你无法承受损失的资金——尤其是当杠杆交易进入这些市场之后。
+</div>
+
+<p>Enzer 在节目结尾总结道：这些案件是政府发出的明确信号——他们想要防止预测市场上的滥用行为。但同样重要的是，美国政府现在将 Polymarket 上的交易定性为"商品"而非"赌博"或"证券"，这对多年来关于 CFTC 管辖范围的辩论具有深远影响。这些都是尚未解决的法律问题——包括域外适用、信息财产类型等——正处于一个"fascinating time"。</p>
+
+<div class="quote-block q-gray">
+  "It's a fascinating time to be in our industry."
+  <span class="attr">— Sam Enzer</span>
+</div>
+
+<!-- Core Quotes -->
+<h2>核心金句</h2>
+
+<div class="quote-block q-blue">
+  "Insider trading itself is actually not a legal term."
+  <span class="attr">— Sam Enzer · 破除最常见的法律误解</span>
+</div>
+
+<div class="quote-block q-red">
+  "It's not about me having an unfair advantage, it's about me misusing and violating the trust of whoever gave me the information."
+  <span class="attr">— Sam Enzer · 内幕交易犯罪的本质</span>
+</div>
+
+<div class="quote-block q-green">
+  "The greatest use of prediction markets is the information. Not as a bettor, but as a source of information."
+  <span class="attr">— Sam Enzer · 预测市场的终极价值</span>
+</div>
+
+<div class="quote-block q-yellow">
+  "Unless Congress legislates and clarifies this through a statute, it'll probably have to be resolved by the US Supreme Court."
+  <span class="attr">— Sam Enzer · CFTC vs 州法争议的最终走向</span>
+</div>
+
+<div class="quote-block q-purple">
+  "Litigators, I make a living splitting hairs on what the meaning of words is."
+  <span class="attr">— Sam Enzer · 合约措辞歧义的本质</span>
+</div>
+
+<div class="quote-block q-orange">
+  "Generally whether or not the government could legally bring a manipulation case, they like to see a lie. Deception."
+  <span class="attr">— Sam Enzer · 检察官起诉操纵案的核心逻辑</span>
+</div>
+
+<footer>
+  <p>Bits + Bips · The Interview</p>
+  <p>Host: Steven Ehrlich · Guest: Sam Enzer (Cahill / Cahill Next)</p>
+  <p>Full episode available on <a href="https://unchainedcrypto.com/bitsandbips">unchainedcrypto.com/bitsandbips</a></p>
+  <p style="margin-top:8px;">Nothing on this show is investment or financial advice. For full disclosures, see unchainedcrypto.com/bitsandbips.</p>
+</footer>
+
+</article>
+</body>
+</html>
