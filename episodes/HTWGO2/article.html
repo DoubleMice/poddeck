@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How the World Got Owned: The 1990s, Part One — PodDeck</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #222;
+    background: #fafafa;
+    padding: 20px;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+
+  header {
+    text-align: center;
+    padding: 60px 0 40px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 48px;
+  }
+  header h1 {
+    font-size: 32px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #777;
+  }
+  header .meta span { margin: 0 8px; }
+
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 600px) { .overview { grid-template-columns: 1fr; } }
+
+  .overview-card {
+    padding: 16px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.55;
+    border-left: 4px solid;
+  }
+  .overview-card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .card-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .card-green  { background: #f0fdf4; border-color: #22c55e; }
+  .card-yellow { background: #fefce8; border-color: #eab308; }
+  .card-red    { background: #fef2f2; border-color: #ef4444; }
+  .card-purple { background: #faf5ff; border-color: #a855f7; }
+  .card-orange { background: #fff7ed; border-color: #f97316; }
+
+  section {
+    margin-bottom: 40px;
+  }
+  section h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #111;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  section p {
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #3b82f6;
+    background: #eff6ff;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: #333;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #888;
+  }
+
+  .quotes-section {
+    margin: 48px 0;
+  }
+  .quotes-section h2 {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .quotes-section .subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 24px;
+  }
+  .quote-block {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border-left: 4px solid;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .quote-block .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #888;
+  }
+  .qb-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .qb-green  { background: #f0fdf4; border-color: #22c55e; }
+  .qb-yellow { background: #fefce8; border-color: #eab308; }
+  .qb-red    { background: #fef2f2; border-color: #ef4444; }
+  .qb-purple { background: #faf5ff; border-color: #a855f7; }
+  .qb-orange { background: #fff7ed; border-color: #f97316; }
+
+  .gloss {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+  }
+  .gloss::before { content: "【作者概括】 "; }
+
+  footer {
+    margin-top: 60px;
+    padding: 24px 0;
+    border-top: 2px solid #eee;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>How the World Got Owned<br>The 1990s, Part One</h1>
+  <div class="meta">
+    Risky Business Media<span>·</span>Hosted by Patrick Gray<span>·</span>Produced by Amberly Jacob
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    April 2026<span>·</span>~47 minutes<span>·</span>Sponsored by SentinelOne
+  </div>
+</header>
+
+<div class="overview">
+  <div class="overview-card card-blue">
+    <strong>黄金时代</strong>
+    Jeff Moss 这样形容 90 年代初：个体能做出巨大贡献的时代，理解力可以掌控，秘密知识触手可及。几个人在一个房间里就能是 "lords of the internet"。
+  </div>
+  <div class="overview-card card-green">
+    <strong>社群诞生</strong>
+    DEF CON 于 1993 年在拉斯维加斯偶然起步，从未被计划成为世界最大黑客会议之一。HOPE-Con 和 Summer-Con 把只有 IRC handle 的人变成现实中的朋友。
+  </div>
+  <div class="overview-card card-yellow">
+    <strong>主流媒体的误解</strong>
+    媒体和好莱坞把黑客塑造成威胁——与此同时，第一个被黑的网站竟然是电影《黑客》的官网，黑客留下的替换文字尖刻而诙谐。
+  </div>
+  <div class="overview-card card-red">
+    <strong>一个真实罪犯故事</strong>
+    从物理入侵电话公司大楼，到被 FBI 怀疑为克格勃间谍，再到潜逃期间通过电台比赛赢下保时捷——Kevin 的故事是本期所有叙事的锚点。
+  </div>
+  <div class="overview-card card-purple">
+    <strong>怪咖很受欢迎——但不全是田园诗</strong>
+    L0pht 成员 Chris Wysopal 描绘了社群的双面性：包容边缘人群，也充满自负与冲突。"it wasn't all kumbaya rosy"。
+  </div>
+  <div class="overview-card card-orange">
+    <strong>黑客与记者的镜像</strong>
+    Kevin 从罪犯转型为《华尔街日报》记者。他发现两者共享同一种驱动力：不惜一切代价的好奇心，和零评判的观察立场。
+  </div>
+</div>
+
+<section>
+  <h2>Jeff Moss 与"黄金时代"</h2>
+  <p>
+    Jeff Moss——DEF CON 和 Black Hat 的创始人——在回忆 90 年代早期时，语气里透出一种几乎不加掩饰的怀旧。他称之为"golden age"。在那个互联网还小到可以放进一个人脑子里的时代，技术栈是可以被一个人全部掌握的。几个在同一房间里的人——一个人懂 Unix，一个人精通电话系统，一个人专攻 SunOS——加在一起，"those people had the skills to just basically be the lords of the internet."
+  </p>
+  <p>
+    那种可以接近、可以消化的知识密度，对年轻且有好奇心的人来说是一种深层的吸引力。"if you could get to the information, you could sort of feel like you had the secret knowledge where you understood how it worked." 没有 Google，没有 Amazon，没有关于这方面的书店——但你知道世界是怎么运转的。
+  </p>
+  <p class="gloss">
+    今天的网络安全已经变得极度专业化：20 个人挤在一个房间可能也只够搞清楚怎么去混淆一段 JavaScript。90 年代早期的"可理解性"本身就是一种力量，而这种力量在今天已经被系统性的复杂度完全稀释了。
+  </p>
+</section>
+
+<section>
+  <h2>知识的物质性：垃圾桶里的手册</h2>
+  <p>
+    Chris Wysopal——圈内人称 WeldPond——是 L0pht 黑客智囊团的成员之一。他回忆起一个今天听起来几乎像考古学的细节：在 90 年代早期，如果你想要了解一台小型机的操作系统，唯一的办法是找到物理手册。不是下载 PDF，不是 Google 搜索——你要么从某人的公司壁橱里把它顺出来，要么从垃圾桶里把它翻出来。
+  </p>
+  <blockquote>
+    "we would go dumpster diving like a couple times a month and different people would just bring their haul back and we would sift through it and we would keep the good stuff."
+    <span class="attr">— Chris Wysopal，描述 L0pht 成员集体"寻宝"的日常</span>
+  </blockquote>
+  <p>
+    这种靠实物交换维系的社区关系，赋予了知识一种物理的重量。你不是在论坛上获取一段经验——你是亲手从垃圾堆里挖出了一本沾着咖啡渍的手册，然后和其他人一起翻看。这种触觉层面的共享，是 90 年代 hacker 文化中一个容易被遗忘但极其重要的特征。
+  </p>
+</section>
+
+<section>
+  <h2>DEF CON 的意外诞生</h2>
+  <p>
+    DEF CON 第一次举办是在 1993 年 6 月，拉斯维加斯。Jeff Moss 没有商业计划，没有预算预测，甚至没有"我们要办一个会议"的意图。
+  </p>
+  <blockquote>
+    "This was never intended to be a conference, let alone a conference that would be one of the biggest hacking conferences of the last 30-odd years."
+    <span class="attr">— Jeff Moss</span>
+  </blockquote>
+  <p>
+    如果说 90 年代有一个关键词，Patrick Gray 认为那就是 Cons——黑客们在现实世界里面对面见面。在 DEF CON 之前，有 HOPE-Con（圣诞节）和 Summer-Con（夏天）。这些聚会把只通过 BBS 和 IRC 用 handle 认识的人——"hey, I'm meeting all these people that I only know from a handle on IRC"——变成了实实在在的、可以一起喝啤酒的朋友。
+  </p>
+</section>
+
+<section>
+  <h2>怪咖欢迎你——以及事情的另一面</h2>
+  <p>
+    Chris Wysopal 描绘的早期 hacker con 社群充满了深刻的矛盾张力。在好的那一面，这是一个异常包容的社区。"Weirdos were welcome here." 大量自学成才的人、弱势社区、LGBTQ 群体在这里找到了归属感。在纯文本主导的环境里，人们只能通过你打出来的字来评判你——外表、性别、身份都不在考量范围内。
+  </p>
+  <p>
+    但这不是田园诗。Wysopal 是第一个指出这一点的人——"there were slurs and there was other things that happened." 一群年轻的、聪明的、知道自己聪明且认为自己聪明的人聚在一起，必然伴随着巨大的自负、一对一的竞争、对"第一个做某事"的争夺、以及因为带宽珍贵而对低质量内容极尽残忍的社区规范。
+  </p>
+  <blockquote>
+    "I don't want to make it sound like it was all kumbaya rosy. Because it wasn't."
+    <span class="attr">— Chris Wysopal</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>Handle 即人格</h2>
+  <p>
+    在 300 baud、1200 baud、2400 baud 的时代，下载消息需要时间——字面意义上的分钟和小时。没有头像，没有个人简介，没有 Top 8 Friends 列表。你的全部存在感就是你打出来的那些字。Jeff Moss 回忆道，人们会发展出完整的在线人格：有人扮演 Robin Hood 式的角色，发帖永远用古英语；"the handles, the personas were much bigger."
+  </p>
+  <p>
+    这种以打字质量为唯一评判标准的环境，天然地奖励了表达能力和思想深度，惩罚了废话。但同时也意味着它缺乏任何形式的文明化约束——Wysopal 坦承这群年轻人"were very crude"，既有着惊人的才华，也保留着令人不安的粗暴。
+  </p>
+</section>
+
+<section>
+  <h2>当主流媒体开始恐慌</h2>
+  <p>
+    Jeff Moss 回忆 90 年代媒体对黑客的报道时，用了一个精确的词：hysteria。主流媒体完全不懂黑客行为，但他们非常擅长制造恐慌。"hackers will blow up your television set or can blow up your computer"——这种说法在当时真实地出现在媒体上。
+  </p>
+  <blockquote>
+    "people fear what they don't understand. And they clearly didn't understand hacking. So there was a whole lot of misinformation, almost like hysteria around some of this stuff."
+    <span class="attr">— Jeff Moss</span>
+  </blockquote>
+  <p>
+    1995 年好莱坞电影《黑客》的上映加剧了这种分裂。黑客们一方面感到被曲解，另一方面又享受着被神秘化的边缘感——"nobody can understand my secret group and they're making up stuff, and it's all bullshit." 具有讽刺意味的是，历史上第一个被破坏的网站，恰恰是《黑客》电影的宣传网站。入侵者留下的文字尖刻而有趣，甚至贴心地推荐了竞争对手的电影《The Net》，由 Sandra Bullock 主演。
+  </p>
+</section>
+
+<section>
+  <h2>Aleph One：Radio Shack 的偶然之门</h2>
+  <p>
+    Elias Levy——化名 Aleph One——后来在 Phrack 杂志上发表了著名的缓冲区溢出教程 "Smashing the Stack for Fun and Profit"，距今正好 30 年。但他进入 hacker 圈子的故事比那篇论文早了几年，发生在湾区一家 Radio Shack 门口。
+  </p>
+  <p>
+    他跑去 Radio Shack 买石英晶体——为的是制作一个 Red Box（可以模拟投币音调以免费拨打付费电话的设备）。当他走出来的时候，两个"shifter-looking guys"在等他。"what are you building?" 他如实回答。对方说他们在做 Blue Box（可以劫持电话交换机中继线路的装置）。其中一个人给了他一个 BBS 号码——Lunatic Labs，"an old school pretty famous BBS"——从那一刻起，"that really sort of opened up the world."
+  </p>
+  <p>
+    Levy 的入门故事本身并不离奇——它在 90 年代早期的 hacker 圈子里有着一种代表性：一个偶然的社交接触，一把通向共享知识海洋的钥匙。他自己从这条路径进入，后来通过 Phrack 将知识传给下一代。这种"分享→学习→再分享"的链式效应，是 90 年代 hacker 文化最根本的动力机制。
+  </p>
+</section>
+
+<section>
+  <h2>Kevin：肾上腺素成瘾者和物理入侵者</h2>
+  <p>
+    Patrick Gray 形容 Kevin 是一个"极其温和、轻声细语、超级友善的人"——然后补充道，20 年前他们走在旧金山街上时，Kevin 突然指着一栋楼说："我以前闯进过那里。"这种反差贯穿了 Kevin 的整个叙事。
+  </p>
+  <blockquote>
+    "What I came to learn about myself is that I was kind of an adrenaline junkie and a nerd. And if you combine those two things you wind up being a hacker."
+    <span class="attr">— Kevin</span>
+  </blockquote>
+  <p>
+    当对电话系统的远程入侵开始变得舒适、变得无聊时，Kevin 的成瘾性人格驱使他升级了游戏。他爬上电线杆进入 Palo Alto 电话局大楼的屋顶——"it was the middle of the night"——找到一扇没锁的门，从内部打开让朋友进来，一起在凌晨两三点巡视那些交换设备。"it was like hacking except now it's physical and it had a lot more adrenaline. It was a lot more of a rush." 之后这项工作演变成一场历时数年的、几乎每周一次的物理入侵狂欢。
+  </p>
+</section>
+
+<section>
+  <h2>在逃：FBI、克格勃和储物柜</h2>
+  <p>
+    故事的崩塌起源于一个几乎令人心碎的琐碎细节：Kevin 欠了储物柜的租金。储物柜被撬开后，里面的东西被移交给了电话公司，电话公司叫来了 FBI。
+  </p>
+  <blockquote>
+    "There were agents working this case that genuinely thought I might be working for the KGB. Gaining access to critical telecommunications infrastructure, holding a security clearance for defense contractor during the day — to them it's all this spelled espionage."
+    <span class="attr">— Kevin</span>
+  </blockquote>
+  <p>
+    一个白天持有国防承包商安全许可、晚上入侵国家电信基础设施的人——这种双重身份在 FBI 眼里几乎不可能不是间谍。于是 Kevin 逃到了洛杉矶，化名 Michael B. Peters 开始了两年的地下生活。
+  </p>
+</section>
+
+<section>
+  <h2>电台比赛、保时捷和第八部电话</h2>
+  <p>
+    潜逃期间需要收入。Kevin 注意到加州的广播电台 KIIS FM 正在举办大型抽奖——赢保时捷、夏威夷旅行、两万美元现金。他不是去碰运气，而是把这当成了一项有组织犯罪来运作。
+  </p>
+  <blockquote>
+    "So we got some really cheap office space, we put in a bank of phones, Radio Shack phones chosen for their liberal return policy. We would let 50, 60 calls go through, we would press a button, the calls would stop and at that moment we start hitting our bank of eight phones and just hitting the switch hook over and over again to keep the phones ringing."
+    <span class="attr">— Kevin，描述他如何操控电台比赛系统</span>
+  </blockquote>
+  <p>
+    Patrick Gray 为这个故事的总结带着一种黑色幽默的赞许："this has got organized crime vibes. I love it." 在最廉价的办公空间里，用可以退换的 Radio Shack 电话搭建的临时呼叫中心——Kevin 以 Michael B. Peters 的名义赢下了一辆保时捷。
+  </p>
+</section>
+
+<section>
+  <h2>"我看不到自己的未来"</h2>
+  <p>
+    但保时捷和其他偶尔的刺激只是点缀。Kevin 对自己潜逃生涯的描述透出一种让人安静下来的抑郁色彩。
+  </p>
+  <blockquote>
+    "I couldn't see a future for myself, right? Because I was hiding out from the feds. And all I was doing to handle it was not handle it. I was just hiding out and doing more crimes. So there's just no way forward. I couldn't visualize a future for myself. And that wears on you and it becomes depressing."
+    <span class="attr">— Kevin</span>
+  </blockquote>
+  <p>
+    不能用自己的名字，不能看望同在洛杉矶的家人，不能规划任何超过今天的未来——"all in all it was deeply unsettling and unpleasant experience punctuated by occasional highs like the radio station contests." Amberly Jacob 问他，这种生活是不是很累。Kevin 的回答耐人寻味："the things that most people would find exhausting were just fun."
+  </p>
+</section>
+
+<section>
+  <h2>"谁来喂我的猫？"——被捕与解脱</h2>
+  <p>
+    1991 年 4 月，Kevin 在加州当地一家杂货店被捕。当 Amberly Jacob 问他被捕的瞬间心里在想什么，他给出了一个任何养猫的人都会痛心的回答：
+  </p>
+  <blockquote>
+    "What I remember is how jarring it was just as an interruption to my day. When you leave your house to go grocery shopping or run some errand, you never think this is the last time I'm going to be here. That was really my first thought was, I'm not going home. Who's gonna feed my cat?"
+    <span class="attr">— Kevin，被捕瞬间的第一个念头</span>
+  </blockquote>
+  <p>
+    但 Kevin 同时也承认，这一切的终结在某种意义上是一种解脱。"It was nice in a way to be able to just be myself again. To use my name and to not be pretending anything anymore. That was a relief."
+  </p>
+</section>
+
+<section>
+  <h2>间谍法与认罪谈判</h2>
+  <p>
+    第二次起诉中，检察官依据《间谍法》（Espionage Act）指控 Kevin——不是指控他从事间谍活动，而是指控他"非法保留机密材料"。即使联邦检察官提出如果他认罪就只需服已羁押时间（time served），Kevin 仍然拒绝了。
+  </p>
+  <blockquote>
+    "This espionage charge, I refused to plead to that even when they offered me time served. Because it was wrong. It was something that I didn't do and wouldn't have done."
+    <span class="attr">— Kevin</span>
+  </blockquote>
+  <p>
+    一个私人侦探找到了关键证人的坦诚访谈，FBI 意识到间谍案已经变成他们打不赢的案子——"they knew that this case had become a loser for them." 间谍指控被撤销。Kevin 只为他真正犯下的罪行认罪，并接受了一个超标准刑期以吸收他已经服完的五年审前羁押时间。
+  </p>
+  <p>
+    监狱里，他看了看身边因毒品罪名被判处数十年监禁的人，很快学会了停止为自己感到难过。"even as much crime as I wound up doing, it was nothing compared to what most of these guys were facing." 这是一种令人佩服的务实——"this thing happened and it was interesting and I got to observe it."
+  </p>
+</section>
+
+<section>
+  <h2>黑客和记者：同一件事的两面</h2>
+  <p>
+    出狱后，Kevin 走上了一条令人意外的职业道路：他成为了一名严肃的商业记者，先后为 SecurityFocus、Wired 和《华尔街日报》工作。当 Amberly Jacob 问他为什么这种转变如此自然，Kevin 的回答是该期节目中最有洞察力的观点之一：
+  </p>
+  <blockquote>
+    "Journalism, it kind of scratches a lot of the same itches as hacking. Like a lot of what I was doing as a criminal was looking into stuff that interested me. Like that was 90% of it. Mostly the radio station contests, like that gets all the attention and yeah I got a Porsche and woohoo. But almost everything I did was completely pointless and served no purpose except it satisfied some curiosity and gave me a little rush of adrenaline at the same time. And that's what journalism does."
+    <span class="attr">— Kevin</span>
+  </blockquote>
+  <p>
+    好奇心、肾上腺素的轻微刺激、深入挖掘一个你感兴趣的话题——无论是黑进电话系统还是写出深度报道，驱动它们的引擎是同一个。
+  </p>
+</section>
+
+<section>
+  <h2>一个被报道过的人才知道该怎么报道别人</h2>
+  <p>
+    Kevin 认为，曾经成为大量新闻报道对象的经历，给了他一套独一无二的记者伦理准则。他知道什么方式会让受访者感到被曲解，因为他自己就经历过。
+  </p>
+  <blockquote>
+    "Being a subject of a lot of reporting when I was a hacker made me sensitive to what doesn't work and what I should avoid. What mistakes not to make. Like how to be scrupulously honest but get the information right and portray people in a way that's true to them as well as being factually accurate."
+    <span class="attr">— Kevin</span>
+  </blockquote>
+  <p>
+    更有力的，是他对自己采访对象的零评判立场：
+  </p>
+  <blockquote>
+    "I'm not judgmental under any circumstances. Like I can talk to a hacker or a criminal of any kind and they don't get any sense that I think I'm better than them. Like they get no judgment from me whatsoever because I've talked to very, very few hackers that have done anything worse than what I used to do."
+    <span class="attr">— Kevin</span>
+  </blockquote>
+  <p>
+    这种彻底的诚实，不是来自专业的记者培训，而是来自一个曾经坐在桌子另一边的人。
+  </p>
+</section>
+
+<section>
+  <h2>电话网络——一个黑客永远不会再拥有的游乐场</h2>
+  <p>
+    在本集结尾，Amberly Jacob 问 Kevin 一个假设性的问题：如果今天他 16 岁，黑客是否还会有同样的吸引力。Kevin 的回答是对整个 90 年代 hacker 文化的一首挽歌。
+  </p>
+  <blockquote>
+    "There was so much about it that was unique to it. It's not the internet. It's not homogenous. It's not built off Cisco routers. Like there were parts of the phone network that were a hundred years old and still operating."
+    <span class="attr">— Kevin</span>
+  </blockquote>
+  <p>
+    同一个设施里，走廊这头是 1920 年代的步进式交换机，那头是相对现代的计算机在执行相同的功能。这种跨越几十年的技术堆叠——没有同质化的架构，没有标准化的栈——是一种互联网永远无法复制的游乐场属性。互联网是由 Cisco 路由器构成的同质化空间。电话系统是活的考古学。
+  </p>
+  <p>
+    Kevin 说他不确定如果今天他 16 岁，是否还会走上同样的道路。这个"我不确定"本身就意味着一种丧失。
+  </p>
+</section>
+
+<section>
+  <h2>L0pht 走上国会山</h2>
+  <p>
+    1998 年，一个标志性的文化碰撞发生了：Chris Wysopal 和 L0pht 的其他六名成员坐在国会听证席上——穿着 T 恤和牛仔裤，对着西装革履的议员解释为什么美国政府的 IT 系统是脆弱的。这是 hacker 文化从边缘进入主流公共政策维度的分水岭时刻。Patrick Gray 称之为"very famous hearing with very famous photographs."
+  </p>
+  <p>
+    L0pht 没有把自己包装成"网络安全顾问"。他们以 hacker 的身份出现在镜头前，用多年通过 dumpster diving、逆向工程和共享手册获得的实战知识，向这个国家最有权势的人证明了他们比任何 vendor 都更了解这些系统的弱点。
+  </p>
+  <p class="gloss">
+    同是 90 年代末，围绕 bug disclosure 和 full disclosure 的争论开始发酵。vendors 和 hacking communities 之间的"animosity"成为 decade 末期的一个核心议题——这是另一段尚未完成的故事，也是第二部分的预告。
+  </p>
+</section>
+
+<div class="quotes-section">
+  <h2>核心金句</h2>
+  <div class="subtitle">全部可以在原始 transcript 中 grep 到</div>
+
+  <div class="quote-block qb-blue">
+    "In that room, those people had the skills to just basically be the lords of the internet. And if you were around them, you could sort of figure out how the whole world worked."
+    <span class="attr">— Jeff Moss，回忆 HOPE-Con 的一个房间</span>
+  </div>
+  <div class="quote-block qb-green">
+    "Weirdos were welcome here."
+    <span class="attr">— Chris Wysopal，描述早期 hacker con 的包容性</span>
+  </div>
+  <div class="quote-block qb-yellow">
+    "What I came to learn about myself is that I was kind of an adrenaline junkie and a nerd. And if you combine those two things you wind up being a hacker."
+    <span class="attr">— Kevin，解释黑客行为的心理驱动力</span>
+  </div>
+  <div class="quote-block qb-red">
+    "Who's gonna feed my cat?"
+    <span class="attr">— Kevin，被捕瞬间的第一个念头</span>
+  </div>
+  <div class="quote-block qb-purple">
+    "Journalism, it kind of scratches a lot of the same itches as hacking. Almost everything I did was completely pointless and served no purpose except it satisfied some curiosity."
+    <span class="attr">— Kevin，解释黑客与记者是同一类人</span>
+  </div>
+  <div class="quote-block qb-orange">
+    "There were parts of the phone network that were a hundred years old and still operating."
+    <span class="attr">— Kevin，解释电话系统对 90 年代黑客的独特吸引力</span>
+  </div>
+</div>
+
+<footer>
+  <p>
+    <a href="https://risky.biz/HTWGO2/" target="_blank" rel="noopener">How the World Got Owned: The 1990s, Part One</a>
+    — Risky Business Media
+  </p>
+  <p style="margin-top:4px;">
+    Interviews by Amberly Jacob · Produced & edited by Amberly Jacob & Patrick Gray
+  </p>
+  <p style="margin-top:4px;">
+    Music by Noel Sanger & Patrick Gray · Sponsored by SentinelOne
+  </p>
+  <p style="margin-top:12px;">
+    Part two of the 1990s installment coming soon on <strong>Risky Business Stories</strong>
+  </p>
+</footer>
+
+</div>
+</body>
+</html>

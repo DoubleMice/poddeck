@@ -1,0 +1,97 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "step1", "type": "rectangle",
+      "x": 40, "y": 120, "width": 240, "height": 100,
+      "strokeColor": "#1971c2", "backgroundColor": "#d0ebff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 1, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "step1-label", "type": "text",
+      "x": 50, "y": 135, "width": 220, "height": 70,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Raise $2B\n(stock + preferreds)\n\"Don't worry for 1.5 years\"",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "seed": 2, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "arrow-right1", "type": "arrow",
+      "x": 285, "y": 170, "width": 70, "height": 0,
+      "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0,0],[70,0]],
+      "seed": 3, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "step2", "type": "rectangle",
+      "x": 360, "y": 120, "width": 280, "height": 100,
+      "strokeColor": "#e8590c", "backgroundColor": "#ffe0cc",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 4, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "step2-label", "type": "text",
+      "x": 370, "y": 135, "width": 260, "height": 70,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Use $1.4B to buy back debt\nat 92 cents on dollar\n(retires 2029 maturity debt)",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "seed": 5, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "arrow-right2", "type": "arrow",
+      "x": 645, "y": 170, "width": 65, "height": 0,
+      "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0,0],[65,0]],
+      "seed": 6, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "step3", "type": "rectangle",
+      "x": 40, "y": 280, "width": 310, "height": 100,
+      "strokeColor": "#e03131", "backgroundColor": "#ffe3e3",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 7, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "step3-label", "type": "text",
+      "x": 50, "y": 295, "width": 290, "height": 70,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Result: 1.5 year cushion → 4 months\nMarket panics. BTC -5% on only $2.5M sale.",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "seed": 8, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "facepalm", "type": "text",
+      "x": 400, "y": 290, "width": 240, "height": 80,
+      "fontSize": 28, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "🤦\nComplete balance\nsheet mismanagement",
+      "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "seed": 9, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "title", "type": "text",
+      "x": 80, "y": 50, "width": 480, "height": 40,
+      "fontSize": 20, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "The $2B Cash Cushion — A Timeline",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "groupIds": [], "frameId": null, "seed": 10, "version": 1, "isDeleted": false
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

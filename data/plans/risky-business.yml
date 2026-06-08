@@ -1,10 +1,10 @@
 source: risky-business
-refreshed_at: 2026-06-08T04:39:54.178Z
+refreshed_at: 2026-06-08T18:53:38.995Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 5
-done: 0
-pending: 2
+done: 1
+pending: 1
 needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
@@ -33,7 +33,7 @@ episodes:
         Elias Levy (Aleph One), author of Smashing the Stack for Fun and Profit, Phrack, 1996
 
       How the World Got Owned is produced in partnership with SentinelOne.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 4057479e65044a148ea303c60d94788f,860e6b345105483383ea42d67cf04439,332bc404e7ec466aab7cb57050cd1d6a,8447af98e96242d2a5b883e5b713db1f

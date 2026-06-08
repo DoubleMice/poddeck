@@ -1,0 +1,130 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "node1", "type": "rectangle",
+      "x": 200, "y": 120, "width": 220, "height": 70,
+      "strokeColor": "#1971c2", "backgroundColor": "#d0ebff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 1, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "node1-label", "type": "text",
+      "x": 210, "y": 132, "width": 200, "height": 46,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Issue stock & prefs\nat high premium",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 2, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "arrow1", "type": "arrow",
+      "x": 310, "y": 195, "width": 0, "height": 50,
+      "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0,0],[0,50]],
+      "seed": 3, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "node2", "type": "rectangle",
+      "x": 200, "y": 250, "width": 220, "height": 70,
+      "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 4, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "node2-label", "type": "text",
+      "x": 210, "y": 262, "width": 200, "height": 46,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Buy more Bitcoin\nBTC/share grows",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 5, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "arrow2", "type": "arrow",
+      "x": 310, "y": 325, "width": 0, "height": 50,
+      "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0,0],[0,50]],
+      "seed": 6, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "node3", "type": "rectangle",
+      "x": 200, "y": 380, "width": 220, "height": 70,
+      "strokeColor": "#f08c00", "backgroundColor": "#ffe8cc",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 7, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "node3-label", "type": "text",
+      "x": 210, "y": 392, "width": 200, "height": 46,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Confidence rises\nStock & prefs trade up",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 8, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "arrow3", "type": "arrow",
+      "x": 195, "y": 415, "width": -90, "height": 0,
+      "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0,0],[-90,0]],
+      "seed": 9, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "arrow4", "type": "arrow",
+      "x": 100, "y": 190, "width": 90, "height": 0,
+      "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0,0],[90,0]],
+      "seed": 10, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "loop-label", "type": "text",
+      "x": 50, "y": 370, "width": 130, "height": 40,
+      "fontSize": 12, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "The Flywheel\n(worked 6 years)",
+      "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 11, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "broken", "type": "rectangle",
+      "x": 40, "y": 470, "width": 560, "height": 50,
+      "strokeColor": "#e03131", "backgroundColor": "#ffe3e3",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 12, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "broken-label", "type": "text",
+      "x": 50, "y": 480, "width": 540, "height": 30,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "NOW: 3 bad decisions in a row → confidence broken → flywheel dying",
+      "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 13, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "title", "type": "text",
+      "x": 100, "y": 50, "width": 440, "height": 40,
+      "fontSize": 20, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "The Confidence Game — A Dying Flywheel",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 14, "version": 1, "isDeleted": false
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

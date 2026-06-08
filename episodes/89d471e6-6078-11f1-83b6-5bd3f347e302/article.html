@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why MSTR Should Have Sold $2 Billion Instead of $2 Million of Bitcoin</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    -webkit-font-smoothing: antialiased;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 60px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 36px;
+    border-bottom: 2px solid #e8e8e8;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 16px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  .meta span { margin: 0 6px; }
+  .meta a { color: #2563eb; text-decoration: none; }
+  .overview {
+    background: #f0f6ff;
+    border-radius: 10px;
+    padding: 28px 24px;
+    margin-bottom: 44px;
+  }
+  .overview h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1e40af;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 14.5px; }
+  .card-orange { background: #fff7ed; border-left: 3px solid #f97316; }
+  .card-red { background: #fef2f2; border-left: 3px solid #ef4444; }
+  .card-purple { background: #faf5ff; border-left: 3px solid #a855f7; }
+  .card-blue { background: #eff6ff; border-left: 3px solid #3b82f6; }
+  .card-yellow { background: #fffbeb; border-left: 3px solid #eab308; }
+  .card-green { background: #f0fdf4; border-left: 3px solid #22c55e; }
+
+  section { margin-bottom: 40px; }
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1.35;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0 8px;
+  }
+  p { margin-bottom: 14px; }
+  blockquote {
+    margin: 18px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #3b82f6;
+    background: #eff6ff;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+    font-size: 15.5px;
+    line-height: 1.65;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #666;
+    font-style: normal;
+  }
+  .gloss {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 18px 0;
+  }
+  .gloss strong { color: #444; }
+  .highlight-box {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin: 18px 0;
+    font-size: 14.5px;
+    line-height: 1.65;
+  }
+  .quotes-section {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 28px 24px;
+    margin: 44px 0 36px;
+  }
+  .quotes-section h2 {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+  .quote-card {
+    margin: 14px 0;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .quote-card .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 12.5px;
+    color: #666;
+    font-style: normal;
+  }
+  .qc-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .qc-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .qc-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .qc-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .qc-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .qc-yellow { background: #fffbeb; border-left: 4px solid #eab308; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e8e8e8;
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+    line-height: 1.6;
+  }
+  footer a { color: #2563eb; text-decoration: none; }
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 18px 0;
+  }
+  @media (max-width: 560px) { .numbers-grid { grid-template-columns: 1fr 1fr; } }
+  .num-card {
+    text-align: center;
+    padding: 16px 10px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+  }
+  .num-card .value {
+    font-size: 26px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .num-card .label {
+    font-size: 12px;
+    color: #666;
+  }
+  .num-orange .value { color: #ea580c; }
+  .num-blue .value { color: #2563eb; }
+  .num-purple .value { color: #9333ea; }
+  .num-red .value { color: #dc2626; }
+
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 18px 0;
+  }
+  @media (max-width: 520px) { .compare { grid-template-columns: 1fr; } }
+  .compare-box {
+    padding: 16px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Why MSTR Should Have Sold $2 Billion Instead of $2 Million of Bitcoin</h1>
+  <div class="meta">
+    Jeff Dorman · Arca 首席投资官<br>
+    Unchained Podcast · Laura Shin · 2026 年 6 月<br>
+    <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7960767679.mp3" target="_blank">收听完整节目 →</a>
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+    <div class="card card-orange">
+      <strong>全球最大上市公司 BTC 持有者</strong>
+      Strategy（前 MicroStrategy）持有约 $57B 比特币，占全部流通量的 4%。它的每一步操作都会震动整个加密市场。
+    </div>
+    <div class="card card-red">
+      <strong>六年飞轮首次逆转</strong>
+      Michael Saylor 从 2020 年起建立的"发股→买币→股价涨→再发股"飞轮正在瓦解。他第一次成为了 BTC 卖家。
+    </div>
+    <div class="card card-purple">
+      <strong>$1.7B 年息压顶</strong>
+      优先股股息让一家不赚钱的公司每年必须掏出 17 亿美元现金。四个利益方无法同时满足——总有人要输。
+    </div>
+    <div class="card card-blue">
+      <strong>一次教科书级的资产负债表失误</strong>
+      募了 $2B 现金说要付股息，转眼花 $1.4B 回购了三年后才到期的零息债。一年半的缓冲变成四个月。
+    </div>
+    <div class="card card-yellow">
+      <strong>Polymarket 争议</strong>
+      "Strategy 五月是否卖出 BTC？"——明知已卖，合约却被判定为"否"。预测市场的治理在本次事件中暴露了深层漏洞。
+    </div>
+    <div class="card card-green">
+      <strong>一个反直觉的逆向建议</strong>
+      Jeff Dorman 认为不该卖 $2.5M 试探市场——应该一次性卖 $2B，"撕掉创可贴"反而能安抚市场。
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>1. Strategy 的资产负债表：数字说话</h2>
+
+  <p>要理解 Strategy 的困局，首先要看清数字。根据公司官网 strategy.com 的公开数据，截至节目录制时，Strategy 持有约 <strong>$57B</strong> 的比特币（占全球流通量的 4%），MSTR 股票市值约 <strong>$48B</strong>，资本结构中有约 <strong>$6.7B</strong> 的传统债务和约 <strong>$15B</strong> 的优先股。</p>
+
+  <div class="numbers-grid">
+    <div class="num-card num-orange"><span class="value">$57B</span><span class="label">BTC 持仓（占流通量 4%）</span></div>
+    <div class="num-card num-blue"><span class="value">$48B</span><span class="label">MSTR 市值（mNAV ≈ 1.23）</span></div>
+    <div class="num-card num-purple"><span class="value">~$15B</span><span class="label">优先股（年息 10-12%）</span></div>
+    <div class="num-card num-red"><span class="value">$6.7B</span><span class="label">债务（单 B 信用评级）</span></div>
+  </div>
+
+  <p>从资产覆盖角度看，$57B 的 BTC 持仓远超 $21.7B 的总负债，不存在资不抵债的问题。但核心矛盾不在资产覆盖率——在 <strong>现金流</strong>。Strategy 是一家不赚钱的公司，而优先股每年要求 <strong>$1.7B</strong> 的现金股息（按每月约 $150M 的速率消耗）。这意味着即使 BTC 不跌，公司的现金也会在几个月内耗尽。</p>
+
+  <div class="gloss"><strong>作者概括：</strong>这是一个教科书级的"资产充足但流动性不足"案例。Strategy 的资产完全能覆盖所有负债，但资产是波动性极高的 BTC，而负债要求以美元现金定期支付。这创造了一个时间上的失配——如果不能在现金耗尽前解决，即使最终不会破产，中间过程也会非常痛苦。</div>
+</section>
+
+<section>
+  <h2>2. 优先股：问题的根源</h2>
+
+  <p>在 2024 年底之前，Strategy 的资本结构非常简单：发股票 → 用募资买 BTC → 偶尔加一点零息或低息可转债。债务仅约 $6-7B，相对于 $40-50B 的股权市值几乎可以忽略不计。这个结构可以"混日子"几十年——零息可转债到期了再融资即可，没有强制出售 BTC 的触发条件。</p>
+
+  <p>但 2024 年底，Saylor 开始在资本结构中大量引入优先股（包括最知名的 STRF，单只就膨胀到约 $11B）。这些优先股的年息在 10-12% 之间，意味着 Strategy 现在每年必须支付约 <strong>$1.7B</strong> 的现金股息。</p>
+
+  <blockquote>
+    "So really, in tennis terms, this was a pretty unforced error."
+    <span class="attr">— Jeff Dorman，论引入优先股的决定</span>
+  </blockquote>
+
+  <p>Dorman 认为这完全是一个自己造成的困境。在引入优先股之前，没有任何外部压力迫使 Saylor 卖币。他本可以继续在原有结构下运作数十年。这个每年 $1.7B 的现金义务是自愿承担的——而承担它的时机恰逢 BTC 没有配合大涨。</p>
+
+  <div class="gloss"><strong>作者概括：</strong>这里的关键教训不是"优先股本身是坏的"，而是在资本结构中每增加一个新利益方，就会引入新的约束条件和冲突。一个简单的"股票换 BTC"策略可以被无限期维持，但每叠加一层复杂性（低息债 → 零息可转债 → 高息优先股），系统性风险都在增加。</div>
+</section>
+
+<section>
+  <h2>3. $2B 现金缓冲：一个致命的转身</h2>
+
+  <p>三个月前，市场开始担忧 Strategy 是否有能力支付优先股的股息。STRC（最大的优先股）从面值 100 跌至面值以下。为了安抚市场，Saylor 通过发行更多优先股和普通股筹集了约 <strong>$2B</strong>，并明确表示这笔钱将"专门用于支付优先股股息"——给了市场一年半的喘息空间。</p>
+
+  <p>然而一个月后，Saylor 做出了一个完全违背自己承诺的操作：他拿出其中的 <strong>$1.4B</strong>，以 <strong>92 美分/美元</strong> 的价格回购了 <strong>2029 年到期的可转债</strong>。这笔债务还有整整三年才到期，而且大部分是零息或低息。</p>
+
+  <p>结果：一年半的现金缓冲骤然缩短为 <strong>四到五个月</strong>。市场再次陷入恐慌。然后在周一，Strategy 宣布卖出了 32 枚 BTC（约 $2.5M）——虽然金额很小，但"试探性出售"的信号让 BTC 当日大跌 5%。</p>
+
+  <div class="highlight-box">
+    <strong>Dorman 的诊断：</strong>"At the moment he's lost the confidence of the market. It doesn't mean he can't get it back, but it's a very slippery slope, as you know, a confidence game, when something is built on a house of straws like this."
+  </div>
+
+  <p>对 Dorman 来说，这不是一个错误——是三个连续的错误：第一，过度引入高息优先股；第二，用股息安全垫回购远期零息债；第三，用零头试探性卖币引发恐慌。每个决定单独看或许都有技术理由，但叠加在一起破坏了市场对这个模式的信心。</p>
+</section>
+
+<section>
+  <h2>4. 四个利益方，四种诉求，无法同时满足</h2>
+
+  <p>Dorman 将 Strategy 的利益相关者分为四类：<strong>BTC 持有者</strong>（全球持币人）、<strong>MSTR 股东</strong>（买的是"每股 BTC 持续增长"的故事）、<strong>优先股持有者</strong>（主要是追求 12% 年息的散户）和 <strong>债权人</strong>（最高优先级，在 $57B BTC 的支持下最为安全）。</p>
+
+  <p>核心矛盾在于：这四类人的利益并不一致。一个对他们所有人都有利的操作<strong>不存在</strong>。</p>
+
+  <div class="compare">
+    <div class="compare-box" style="background:#fff7ed;border-left:4px solid #f97316;">
+      <strong style="color:#c2410c;">卖 BTC</strong><br>
+      <span style="font-size:13px;">✔ 优先股好（有现金付息）<br>✘ BTC 坏（最大持有者在卖）<br>✘ MSTR 坏（每股 BTC 下降）</span>
+    </div>
+    <div class="compare-box" style="background:#eff6ff;border-left:4px solid #3b82f6;">
+      <strong style="color:#1d4ed8;">卖 MSTR 股票</strong><br>
+      <span style="font-size:13px;">✔ BTC 好（买盘需求）<br>✔ 优先股好（有现金付息）<br>✘ MSTR 坏（稀释，死亡螺旋）</span>
+    </div>
+    <div class="compare-box" style="background:#faf5ff;border-left:4px solid #a855f7;">
+      <strong style="color:#7e22ce;">发更多债</strong><br>
+      <span style="font-size:13px;">✔ BTC 和优先股好<br>✘ MSTR 坏（失去标普资格）<br>✘ 自相矛盾（刚回购了债）</span>
+    </div>
+    <div class="compare-box" style="background:#fef2f2;border-left:4px solid #ef4444;">
+      <strong style="color:#dc2626;">核选项：削减优先股股息</strong><br>
+      <span style="font-size:13px;">✔ BTC 和 MSTR 安全<br>✘ 优先股暴跌 30-40%<br>✘ 诉讼风险 + 资本市场永久关闭</span>
+    </div>
+  </div>
+
+  <blockquote>
+    "This flywheel that he's created over six years is just slowly dying and he's put too many pieces in the puzzle that can't be serviced at the same time."
+    <span class="attr">— Jeff Dorman</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>5. 反向飞轮：当信心成为加速器</h2>
+
+  <p>Strategy 的整个模式建立在信心之上。正向飞轮是：市场相信你 → 股票和优先股价格高 → 能以溢价发行更多 → 用募资买更多 BTC → BTC/股增长 → 市场更相信你 → 循环继续。这个飞轮跑了六年。</p>
+
+  <p>反向飞轮同样有效：卖 BTC 付股息 → 市场恐慌 → 股价和优先股价格下跌 → 发行能力消失 → 没钱付股息 → 被逼卖更多 BTC。一旦市场将 Strategy 的标签从"最大买家"改为"被迫卖家"，这个标签很难摘下。Zero Hedge、Wall Street Journal、Bloomberg 的标题一旦打出"MicroStrategy Turns Bitcoin Seller"，叙事的转变就已经完成了。</p>
+
+  <p>Dorman 不认为违约迫在眉睫——"default is not imminent here"——但他警告螺旋正在加速。关键在于：$57B 的 BTC 持仓完全覆盖了所有负债，但四个利益方中至少有一个等不及。</p>
+
+  <div class="gloss"><strong>作者概括：</strong>Dorman 的分析暗示 Saylor 在过去九个月里下注的是"BTC 会大涨来解套"。这个赌注很简单：如果 BTC 大涨，股权价值上升，公司能以高溢价增发股票，飞轮重新转动，一切问题迎刃而解。但市场没有配合。Dorman 称这是一个"clearly miscalculation"——或者说，一个方向正确的押注但时间错了。</div>
+</section>
+
+<section>
+  <h2>6. 为什么是 $2B 而不是 $2.5M？Dorman 的逆向逻辑</h2>
+
+  <p>这是整个访谈中最反直觉的部分。Strategy 的实际操作是卖出 $2.5M BTC 来"试探市场"，让市场习惯他们可能会卖。逻辑是：先来一次小的，以后卖大额时市场就不会太惊讶。</p>
+
+  <p>结果：$2.5M 的卖出让 BTC 跌了 5%。Dorman 的反驳很直接：</p>
+
+  <blockquote>
+    "Bitcoin just fell 5% on a two and a half million dollar sale. What do you think they're going to do when they sell two billion?"
+    <span class="attr">— Jeff Dorman</span>
+  </blockquote>
+
+  <p>Dorman 的建议是相反的操作：<strong>一次性卖出 $2B 的 BTC</strong>，覆盖一年半的股息需求，然后发公告说"我们做完了，从今往后我们不再是被迫卖家，而是机会主义买家"。他的核心理念是：金融市场怕的不是坏消息，怕的是不确定性。一次大额出售 + "不会再有了"的明确承诺，可能比反复试探 + "随时可能更大"的模糊威胁更能稳定情绪。</p>
+
+  <div class="highlight-box">
+    <strong>Dorman 的原话：</strong>"I would have ripped the bandaid off and sold two billion of Bitcoin, and just said... you knew that this was possible at some point. We did it. But by doing so, we're going to maintain the dividend on the prefs, and we're going to continue to opportunistically buy more Bitcoin than we sell."
+  </div>
+
+  <p>这个逆向建议的代价也很明确：一次性 $2B 的卖盘对 BTC 现货市场的实际冲击有多大，没有人真正知道。但 Dorman 的核心框架认为，<strong>确定的坏消息可以定价，不确定的威胁不能</strong>——后者会持续压低估值。</p>
+</section>
+
+<section>
+  <h2>7. 乐观情形：两条可能的路</h2>
+
+  <p>Dorman 并没有宣称 Strategy 必然走向灾难。他列出了两条"一切搞定"的路径：</p>
+
+  <h3>路径一：BTC 大涨</h3>
+  <p>如果 BTC 大幅上涨，所有问题都迎刃而解。$1.7B 年息相对于 $57B 的 BTC 持仓只需约 <strong>2.5% 的年涨幅</strong>就能从资本增值中覆盖。股权价值上升后，公司能以高溢价增发股票，募得现金支付股息，然后继续买更多 BTC——飞轮重新转动。</p>
+
+  <p>问题是：这显然正是 Saylor 过去九个月下的赌注——而他赌错了时机。Dorman 称之为"clearly miscalculation"。</p>
+
+  <h3>路径二：宣布不再买 BTC</h3>
+  <p>如果 Saylor 达到了他的"魔力数字"（比如 5% 的 BTC 总流通量），他可以宣布"买够了，不再买了"。然后就可以停止支付优先股股息——"抱歉，你们买优先股时就知道风险，这些股息不是必须支付的"。虽然这会永久关闭资本市场融资渠道，但如果他不再需要融资，那就没关系了。</p>
+
+  <p>问题是：优先股持有者会遭重创（跌 30-40%），可能引发诉讼。而且 Saylor 仍在积极买币——他显然还没到"够了"的阶段。</p>
+</section>
+
+<section>
+  <h2>8. 你应该在资本结构中站在哪个位置？</h2>
+
+  <p>Dorman 给出了一个分场景的资产优先级分析——这不是投资建议（他在节目开头有合规声明），而是理解风险分布的框架。</p>
+
+  <p><strong>如果发生破产清算（极低概率）：</strong>最安全的是债务（$6.7B 债务被 $57B BTC 完全覆盖，零息可转债交易在 70-80 美分只是因为转换期权价外——若违约概率上升，它们会反弹至面值）。次安全的是优先股（$15B + $7B = $22B vs $57B BTC，清算时本息能收回——但人们买优先股是为了 12% 股息，股息一断就跌 30-40%）。最危险的是 MSTR 股票——在清算中最后得到偿付。</p>
+
+  <p><strong>如果不发生违约（Dorman 认为可能性更高）：</strong>优先股是豪赌——如果你认为股息削减是四年后而非一年后的事，每年 12% 的收益值得冒险。BTC 持有者面临逆风——最大单一持有者将成为净卖家（或至少是卖家）。MSTR 股票在当前选项组合下最缺乏吸引力——Dorman 直言"我不认为目前有任何场景值得持有 MSTR 股票"。</p>
+
+  <blockquote>
+    "No matter what part of the capital structure you own here, there is higher risks today than there were nine months ago."
+    <span class="attr">— Jeff Dorman</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>9. Saylor 的历史：每次都能掏出兔子吗？</h2>
+
+  <p>Dorman 承认，完全排除 Saylor 再次反转的可能性是愚蠢的。Saylor 的职业生涯中多次从帽子里掏出兔子——MicroStrategy 从一家软件公司转型为"比特币国库公司"本身就是一次惊人的 pivot。在 2022 年熊市中，很多人预测他的杠杆会被清算，但他挺过来了。</p>
+
+  <blockquote>
+    "Saylor has pulled a rabbit out of the hat multiple times in his career, with multiple companies. It's entirely possible that he figures out a way to do it again."
+    <span class="attr">— Jeff Dorman</span>
+  </blockquote>
+
+  <p>但 Dorman 也诚实地承认，他自己之前也没预料到这次危机。就在 2024 年 11 月，他还在公开说"MicroStrategy 不是 BTC 的风险"——</p>
+
+  <blockquote>
+    "It was only November of last year when I was saying MicroStrategy is not a risk to Bitcoin, because that was before he decided to load up the balance sheet with 16 billion of prefs, which I never expected anyone to do because you'd be absolutely out of your mind crazy to do that."
+    <span class="attr">— Jeff Dorman</span>
+  </blockquote>
+
+  <p>这个转变说明了一个重要事实：即使是最接近这个故事的职业投资者，也无法预测 Saylor 的每一步。正是这种不可预测性，让当前的局面既危险又充满可能性。</p>
+</section>
+
+<section>
+  <h2>10. Polymarket 争议：当预测市场治理失灵</h2>
+
+  <p>访谈中 Laura Shin 还讨论了 Polymarket 上的一个争议性合约。合约问题是"Strategy 是否在 5 月 31 日前卖出 BTC"。事实很清楚：公司在 5 月 26 日至 31 日间卖出了 32 枚 BTC（$2.5M），并在 6 月 1 日通过 8-K 公告披露。</p>
+
+  <p>但这个合约被判定为<strong>"否"</strong>。原因是：5 月 31 日是周日，披露在周一发出，部分验证者认为"截止日时没有公开可验证的证据"。Dorman 对此极度愤怒：</p>
+
+  <blockquote>
+    "It's insanity. Like there is indisputable evidence that they sold Bitcoin in May, and the contract was written on Polymarket that says, 'Will Strategy sell Bitcoin in May?'"
+    <span class="attr">— Jeff Dorman</span>
+  </blockquote>
+
+  <p>他的类比很直观：赌超级碗周日的结果，但因为报纸的计分板周一才出，就说比赛没在周日结束。更严重的是，Dorman 戴上了"阴谋论帽子"——少量 UMA Protocol 验证者似乎先行买入"否"合约，然后再投票决定结果。</p>
+
+  <p>这个事件触及了预测市场的核心信任问题：如果治理可以被少数内部人操纵，市场就失去了它宣称的"群体智慧"优势。Dorman 说："I don't know how anybody can take a market like this seriously."</p>
+</section>
+
+<div class="quotes-section">
+  <h2>核心金句</h2>
+  <p style="font-size:13px;color:#888;margin-bottom:16px;">这期对谈里最值得记住的几句：</p>
+
+  <div class="quote-card qc-blue">
+    "So really, in tennis terms, this was a pretty unforced error."
+    <span class="attr">— Jeff Dorman，论引入优先股的决定</span>
+  </div>
+
+  <div class="quote-card qc-green">
+    "This flywheel that he's created over six years is just slowly dying and he's put too many pieces in the puzzle that can't be serviced at the same time."
+    <span class="attr">— Jeff Dorman，论飞轮终结</span>
+  </div>
+
+  <div class="quote-card qc-orange">
+    "I would have ripped the bandaid off and sold two billion of Bitcoin, and just said... you knew that this was possible at some point."
+    <span class="attr">— Jeff Dorman，论该怎么操作</span>
+  </div>
+
+  <div class="quote-card qc-red">
+    "Bitcoin just fell 5% on a two and a half million dollar sale. What do you think they're going to do when they sell two billion?"
+    <span class="attr">— Jeff Dorman，论试探性出售的反效果</span>
+  </div>
+
+  <div class="quote-card qc-purple">
+    "Saylor has pulled a rabbit out of the hat multiple times in his career. It's entirely possible that he figures out a way to do it again."
+    <span class="attr">— Jeff Dorman，保持审慎</span>
+  </div>
+
+  <div class="quote-card qc-yellow">
+    "No matter what part of the capital structure you own here, there is higher risks today than there were nine months ago."
+    <span class="attr">— Jeff Dorman，对所有利益方的最终结论</span>
+  </div>
+</div>
+
+<footer>
+  <p>完整访谈：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7960767679.mp3" target="_blank">Unchained Podcast · Laura Shin × Jeff Dorman</a></p>
+  <p>以上内容的所有引言均来自转写文本。标注"作者概括"的评论是对嘉宾观点的提炼和延伸，不代表嘉宾原话。</p>
+  <p>本文不构成投资建议。节目中 Dorman 的言论仅代表个人观点，仅供信息参考。</p>
+</footer>
+
+</article>
+</body>
+</html>

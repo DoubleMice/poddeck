@@ -1,0 +1,98 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "opt1", "type": "rectangle",
+      "x": 40, "y": 100, "width": 270, "height": 130,
+      "strokeColor": "#e8590c", "backgroundColor": "#ffe0cc",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 1, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "opt1-label", "type": "text",
+      "x": 50, "y": 110, "width": 250, "height": 110,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Sell Bitcoin\n✔ Good for prefs\n✘ BTC drops (sentiment)\n✘ MSTR stock drops\n(lose BTC/share growth)",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 2, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "opt2", "type": "rectangle",
+      "x": 350, "y": 100, "width": 270, "height": 130,
+      "strokeColor": "#1971c2", "backgroundColor": "#d0ebff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 3, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "opt2-label", "type": "text",
+      "x": 360, "y": 110, "width": 250, "height": 110,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Sell MSTR Stock\n✔ Good for BTC (buy demand)\n✔ Good for prefs (cash)\n✘ Death spiral for MSTR\n(at sub-accretive mNAV)",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 4, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "opt3", "type": "rectangle",
+      "x": 40, "y": 270, "width": 270, "height": 130,
+      "strokeColor": "#9c36b5", "backgroundColor": "#f3d9fa",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 5, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "opt3-label", "type": "text",
+      "x": 50, "y": 280, "width": 250, "height": 110,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Issue More Debt\n✔ Good for BTC & prefs\n✘ Hurts credit rating\n✘ Kills S&P 500 inclusion\n✘ Just bought back debt!",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 6, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "opt4", "type": "rectangle",
+      "x": 350, "y": 270, "width": 270, "height": 130,
+      "strokeColor": "#e03131", "backgroundColor": "#ffe3e3",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 7, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "opt4-label", "type": "text",
+      "x": 360, "y": 280, "width": 250, "height": 110,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Nuclear: Cut Dividend\n✔ BTC & MSTR safe\n✘ Prefs collapse -30%\n✘ Lawsuit risk (retail)\n✘ Capital markets shut",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 8, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "title", "type": "text",
+      "x": 80, "y": 40, "width": 480, "height": 40,
+      "fontSize": 20, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "Four Bad Options — Each Hurts Someone",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 9, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "conclusion", "type": "text",
+      "x": 80, "y": 430, "width": 480, "height": 50,
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "text": "You can't support all four parts of the capital structure\nwithout hurting one of them.",
+      "strokeColor": "#868e96", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 10, "version": 1, "isDeleted": false
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
