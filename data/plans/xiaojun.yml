@@ -1,15 +1,26 @@
 source: xiaojun
-refreshed_at: 2026-06-07T18:30:53.373Z
+refreshed_at: 2026-06-08T04:39:54.193Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 9
-done: 1
+done: 0
 pending: 0
-needs_transcript: 6
+needs_transcript: 7
 transcribing: 1
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6a2543dcb30e1571aea20d0b
+    title: 144. 对阳萌的4小时访谈：消费电子死与生、第三类公司、AI变量、产品方法、打游戏的模式选择
+    duration: 13132
+    published: Mon, 08 Jun 2026 00:00:00 GMT
+    published_sort: "20260608"
+    first_seen_at: 2026-06-08T04:39:54.193Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a2543dcb30e1571aea20d0b?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a2543dcb30e1571aea20d0b/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lnjlEQjGjo1TxuPOuvYgmDV7oo8B.m4a
+    image: https://image.xyzcdn.net/FpGUbHNTO8nYMJoW18TBh3zeSv9t.png
+    status: needs_transcript
+    priority: 1
   - id: 6a170f747460cabdeb56dabb
     title: 143. 对何小鹏的第二次访谈：更大赌注、人形机器人Iron诞生、那场意外、技术剧变下CEO、GX和缝合怪
     duration: 5301
@@ -39,21 +50,6 @@ episodes:
     transcript_provider: dashscope
     transcript_job_id: 3fc23a0a-1ec3-403c-8ed0-84fc79df7f6d
     transcript_submitted_at: 2026-05-26T20:07:14.387Z
-  - id: 69d8bbdfe2c8be3155dcc2fe
-    title: 135. 和自然选择创始人Tristan聊，Elys、赛博分身、灵魂、Context的获取与流动和AI社交网络
-    duration: 6774
-    published: Fri, 10 Apr 2026 09:08:49 GMT
-    published_sort: "20260410"
-    first_seen_at: 2026-05-25T07:21:24.420Z
-    url: https://www.xiaoyuzhoufm.com/episode/69d8bbdfe2c8be3155dcc2fe?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69d8bbdfe2c8be3155dcc2fe/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltwEGwVo7grn_V-Rft0TXlMqmcty.m4a
-    image: https://image.xyzcdn.net/FjDBWwPMn0VQbLaHtyHOEBHhRkXq.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-07T18:35:54.188Z
-    transcript_job_id: cc53c2ed29cd40e78692f693d3fce6e6,ae99373eb8144de9bbdb4f7a867230d1,6135bae5a26249ba84962f4874bd4948,4659084dd5794fe8ad3f8f330027372d,db958e04975c4c1bbf3e2074e6919329,db5e8c56009a4115b7e005d53081cbac,8f41415df8b4459ab8d8cc7f9848d74c,f34a20b512374a35be174b66f33b5e13
-    transcript_completed_at: 2026-06-07T18:40:52.516Z
   - id: 69c953b4b977fb2c478df5c3
     title: 134. 【数据的综述】和谢晨聊，新时代的石油、历史、版图、数据金字塔、定价与Recipe
     duration: 9502
