@@ -1,15 +1,131 @@
 source: tbpn
-refreshed_at: 2026-06-08T18:53:38.870Z
+refreshed_at: 2026-06-09T04:32:39.655Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
+total_candidates: 3
 done: 0
-pending: 0
+pending: 1
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 2ba082a8-0ef6-4e19-ae02-579f86e77ea3
+    title: WWDC Reactions, Jobs Up Stocks Down, VC Horror Stories | Will Marshall, Baroness Dambisa Moyo, Samuel Hume, David
+      Kirtley, Pete Florence, Jordan Bramble
+    duration: 10845
+    published: Mon, 08 Jun 2026 14:43:16 -0700
+    published_sort: "20260608"
+    first_seen_at: 2026-06-09T04:32:39.645Z
+    url: https://share.transistor.fm/s/3d5315dd
+    audio_url: https://media.transistor.fm/3d5315dd/160d616c.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/3d5315dd/transcription.txt
+    transcript_type: text/plain
+    summary: "(01:13) - WWDC Reactions\r
+
+      (19:30) - Jobs Up Stocks Down\r
+
+      (23:45) - VC Horror Stories\r
+
+      (40:40) - Will Marshall, co-founder and CEO of Planet, discusses the company's mission to make global change
+      visible and actionable through a fleet of over 200 Earth-imaging satellites that capture daily images of the
+      entire landmass at approximately 3-meter resolution. He explains their vertically integrated approach, building
+      custom components for their satellites, and highlights applications such as detecting methane leaks, monitoring
+      deforestation in the Amazon, and assisting in disaster response. Marshall also touches on their diverse clientele,
+      including defense and intelligence sectors, commercial industries like agriculture and energy, and recent
+      capital-raising efforts to secure the company's long-term future.\r
+
+      (57:45) - Baroness Dambisa Moyo is a Zambian-born economist, author, and investor who serves as a member of the UK
+      House of Lords and sits on the boards of major corporations like Chevron, Starbucks, and Conde Nast. She discusses
+      the critical role of corporate boards in strategic oversight, CEO selection, and societal engagement, emphasizing
+      the importance of adaptability and partnership with governments, especially in the context of emerging
+      technologies like AI. Moyo also highlights the need for companies to balance risk-taking with long-term
+      sustainability, drawing from her extensive experience on boards of both longstanding and tech-based
+      organizations.\r
+
+      (01:27:16) - Samuel Hume, a medical doctor, scientist, and co-founder of Somatic Labs, is dedicated to advancing
+      the frontiers of medicine and science. He discusses the challenges in biotech, particularly the impact of patent
+      cliffs on pharmaceutical companies, and highlights the promising results of the RASolute 302 trial, where the
+      investigational drug daraxonrasib nearly doubled overall survival in patients with metastatic pancreatic cancer.
+      Additionally, Hume introduces Somatic Labs' efforts to expedite drug development by automating systematic reviews
+      using AI, aiming to reduce the process from years to mere hours.\r
+
+      (01:43:25) - David Kirtley, co-founder and CEO of Helion Energy, discusses the company's recent $465 million
+      Series G funding round and the development of their seventh-generation fusion system, Polaris, in Washington
+      state. He explains Helion's unique approach to fusion energy, focusing on direct electricity extraction from
+      fusion reactions to achieve high efficiency and scalability. Kirtley also outlines plans to build a 50-megawatt
+      fusion power plant for Microsoft by 2028, emphasizing modular, scalable systems for rapid deployment and global
+      impact.\r
+
+      (02:00:51) - Pete Florence, co-founder and CEO of Generalist AI, has an extensive background in robotics and AI,
+      including a PhD from MIT and experience as a Senior Research Scientist at Google DeepMind. In the conversation, he
+      discusses his journey from academia to industry, highlighting his collaborations with co-founders Andy Barry and
+      Andy Zeng, and their collective decision to establish Generalist AI to advance general-purpose robotics. Florence
+      emphasizes the company's focus on developing versatile robotic systems that extend beyond humanoid forms, aiming
+      to address a wide range of applications through scalable AI models and innovative data collection methods.\r
+
+      (02:23:26) - Jordan Bramble, CEO and co-founder of Antares Nuclear, discusses the recent successful criticality
+      demonstration of their advanced reactor design, the Mark-0, at Idaho National Laboratory (INL). This milestone,
+      achieved under the U.S. Department of Energy's Reactor Pilot Program, marks the first privately developed advanced
+      reactor to go critical in the U.S. in decades. Bramble emphasizes the significance of this achievement in
+      revitalizing America's nuclear industry and highlights the collaborative efforts with INL and the DOE that
+      facilitated this success.\r
+
+      (02:46:22) - 𝕏 Timeline Reactions
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com/
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
       Tae Kim, Immad Akhund, Marcus Milione

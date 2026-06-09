@@ -1,44 +1,15 @@
 source: risky-business
-refreshed_at: 2026-06-08T18:53:38.995Z
+refreshed_at: 2026-06-09T04:32:39.777Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 5
-done: 1
+total_candidates: 4
+done: 0
 pending: 1
 needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: HTWGO2
-    title: "How the World Got Owned Episode 2: The 1990s, Part One"
-    duration: 2806
-    published: Fri, 03 Apr 2026 11:35:55 +1100
-    published_sort: "20260403"
-    first_seen_at: 2026-05-19T08:55:24.848Z
-    url: https://risky.biz/HTWGO2/
-    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/HTWGO2.mp3
-    image: https://risky.biz/static/img/rb-feed-main.png
-    summary: >-
-      In this special documentary episode, Patrick Gray and Amberleigh Jack take a look back at hacking throughout the
-      1990s, from the feel-good vibes of the early hacking communities to the antics of young hackers who wound up on
-      the run from the FBI.
-
-
-      Part one features recollections from:
-
-        Jeff Moss (The Dark Tangent), DefCon and Black Hat founder
-        Chris Wysopal (Weld Pond), L0pht member, co-founder, @Stake
-        Kevin Poulsen (Dark Dante), 1990s hacker turned journalist
-        Elias Levy (Aleph One), author of Smashing the Stack for Fun and Profit, Phrack, 1996
-
-      How the World Got Owned is produced in partnership with SentinelOne.
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 4057479e65044a148ea303c60d94788f,860e6b345105483383ea42d67cf04439,332bc404e7ec466aab7cb57050cd1d6a,8447af98e96242d2a5b883e5b713db1f
-    transcript_submitted_at: 2026-06-01T19:55:51.581Z
-    transcript_completed_at: 2026-06-01T19:58:22.021Z
   - id: SOAPBOX106
     title: "Soap Box: Red teaming AI systems with SpecterOps"
     duration: 1811
