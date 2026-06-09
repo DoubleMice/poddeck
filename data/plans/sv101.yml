@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-09T04:32:39.801Z
+refreshed_at: 2026-06-09T18:50:36.114Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 7
 done: 0
-pending: 0
-needs_transcript: 7
+pending: 1
+needs_transcript: 6
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -133,8 +133,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: Alex Yeh, Dr.Mark Ren, Dr.Zhibin Xiao, and 张璐.
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-09T18:53:37.272Z
+    transcript_job_id: 09a8ab8b9c12419d96cc92b345c477e0,b58f96e98d4d4f42bde65cd1ab97be02,b7f77bea09b243588423c5d2b8dc3c04,500ef74f82c44534a0ea6a746bb0ae1a,36db4aa1b694498c8d790dec09b0f55f
+    transcript_completed_at: 2026-06-09T18:56:43.704Z
   - id: c457ca43-1305-44a3-b9cc-c68480802396
     title: E229｜从手工作坊到全球第一：中国动力电池逆袭史
     duration: 3897

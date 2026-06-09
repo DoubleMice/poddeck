@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-06-09T04:32:39.791Z
+refreshed_at: 2026-06-09T18:50:36.103Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 8
 done: 0
-pending: 0
-needs_transcript: 6
+pending: 1
+needs_transcript: 5
 transcribing: 1
 transcribe_failed: 0
 downloaded: 0
@@ -48,8 +48,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69c953b4b977fb2c478df5c3?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69c953b4b977fb2c478df5c3/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lkInPy65_ZR4cQmK23rmHJ_hhLVQ.m4a
     image: https://image.xyzcdn.net/FtTTc-T9wcxxBCoXZMkbgTRel9dL.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-09T18:56:43.784Z
+    transcript_job_id: 66fdaba5595a4104b9cba27352636c48,e5600842e7e84f4297871f609a36c9cf,78a641d253e141f9befc626cd41a73d5,1db1fa84088149b98702a7206d0cb545,6b301ed6082542f4a9d443d382d5be72,fb055143828547f39fdec53ff0d62b88,15fd68f82c3a472385429a115b57cbef,4974b9ade6c841aaacaff75e407f644e,b408a9e2a5054813ababeb3f0f1912d7,5576359e9cd348829e49da48f3177566,c15c36f3402e4a1b83542022cd9b8da1
+    transcript_completed_at: 2026-06-09T19:05:22.831Z
   - id: 69b77577f8b8079bfa8eb837
     title: 133. 对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42
     duration: 24329

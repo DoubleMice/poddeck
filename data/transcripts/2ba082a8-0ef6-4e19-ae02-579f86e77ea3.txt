@@ -1,0 +1,1239 @@
+Speaker 1: You're watching TBPN. Today is
+Speaker 2: Monday, 06/08/2026. We are live from the TBPN UltraDome, the temple of technology. We're back in the forges of finance. We're back at the capital of capital.
+Speaker 1: It's so good to be back.
+Speaker 2: So good to be back, and it's also so good to tell you about ramp.com. Time is money. Say both. These are used corporate cards, bill payments, accounting, and a whole lot more all in one place. Oh, the soundboard with the stinger, with the ad read, chef's kiss.
+Speaker 1: Chef's kiss.
+Speaker 2: WWDC, also chef's kiss, long overdue. Two years, two WWCs ago, we were talking about Apple Intelligence and it's all finally coming together. The package is finally being delivered. I think the response has been really good. Some of the guys on the team have been watching WWDC already.
+We have a bunch of folks calling in to discuss WWDC throughout the week. But let's give you the high level first, go through some of your immediate reactions, and of course we'll be covering that throughout this week. So Apple's Annual Worldwide Developers Conference started today and it runs through Friday. Tim Cook just kicked it off with an opening keynote. The theme for this year's conference is All Systems Glow.
+All systems glow.
+Speaker 1: Well, anyway,
+Speaker 2: we're finally getting answers about what the next version of Siri will look like. I think expectations expectations are in a weird place. Like, they're high. Everyone's expecting like this next version of iOS which is what they're demoing, that's the main thing of the software version. This isn't an iPhone event.
+This isn't a hardware event. This is WWDC about the software. Everyone's expecting that the software will go through an actual transformation and the next version of Apple software will be good and people will be talking about how good it is because they will deliver a bunch of things. At the same time, expectations aren't so high like going into Apple Vision Pro where people expecting a breakthrough that no one, no other company has ever done before. All people are asking for is implement the best practices from ChatGPT, Gemini, Claude, like the stuff we know and love.
+Even Grok has like nicely interfaced into X where like people say, hey, Grock, is this real? And he just pulls it up for you. I find myself on tweets just going, oh yeah, like I don't want to copy this text out and into another LLM app. I'm happy just asking Grock real quick for an extra detail or one more fact. Google search overuse.
+Like, there's been a lot of AI diffusion into products that's been good. Even Ramp. Like, Ramp has like chat interface where you can just say like, hey, how much did we actually spend on Amazon last month? And it'll pull it up for you. And it's not like this revolutionary AI
+Speaker 1: I think thing. It's just like they did a
+Speaker 2: Nice tool.
+Speaker 1: I think they did a good job just letting the hype build or the interest build organically. Right? You rewind
+Speaker 2: Yeah.
+Speaker 1: A year or two ago, they were running billboards for Apple intelligence Yes.
+Speaker 2: For Genmotion,
+Speaker 1: all this stuff. Really setting themselves up for failure.
+Speaker 2: So that stuff was overhyped. And I think this
+Speaker 1: And they were they were
+Speaker 2: a part
+Speaker 1: of a they were Yeah.
+Speaker 2: Of course.
+Speaker 1: They were hyping it themselves.
+Speaker 3: Of course.
+Speaker 2: Of course.
+Speaker 1: They were like, are we good at?
+Speaker 2: Yeah. But it seems like they have the right partnerships and the right, like, product strategy at this point. People are familiar with these tools, so just putting them in different places seems reasonable. Models are good now, so make them available at the click of a button. Ideally the Siri button which has been completely nerfed for the last two years.
+Actually more than that because Siri has never really seen the adoption or love, product love that many other products have seen. And users will be happy. So Google search, Google AI search overviews are a good example that prove that rolling out LLMs, rolling out LLM responses and LLM generated text, it can be nerve racking but it's not rocket science. Like, you spit the text out where people expect the answer. There will be funny viral hallucinations.
+Like right now, even with all the crazy Google IO news, amazing five point three point five foundation models, like they're doing really good stuff. DeepMind's really good great team. Like you still say disregard and instead of just giving you the definition it says like, okay, got it. I won't I won't do that anymore. And it's he gets confused.
+So there will be those like viral like jokey, wow, it failed, it flopped. That's going to happen to Apple. And that's not what Apple likes to deal with.
+Speaker 1: Not at all.
+Speaker 2: But I don't think any of that will show up in the user metrics. I think that, you know, churn and usage will be unaffected from the viral moment of like, oh, Apple. Like the Apple text summaries, they're hilarious and they often hallucinate and get things wrong. You still
+Speaker 1: keep them
+Speaker 2: on though? I left them on. I don't mind them. I think a lot of times they're sort of useful and they're always delightful because they're funny because they're so like hallucinatory. But your PR team will have many heart attacks though because you're not in the world of deterministic outputs anymore.
+So that's going to be a big cultural shift for Apple, I think, in this nondeterministic, stochastic AI era. But I think that they can get through it just by running best practices that have been established for a year or two years in the rest of the AI world. The other big questions that everyone's asking around, Ben Thompson circling around this, open ecosystems. So will Apple lean into the Open Claw Mac Mini boom at all? That would be interesting to see, say, you know, in the next version of the software that goes on the Mac mini, hey, we're going to embrace OpenClaw.
+We're going to embrace AI agents. We're going to do things that make those tools more effective in our ecosystem. You already know and love the hardware. You're buying it nonstop. It's out of stock.
+But we could do more to lean into that community or we could do less. We could say, hey, we're going to shut it down. We're worried about privacy. These are the two tensions that they're going have to deal with. Will there be a pivot around vibe coding apps in the iOS app store?
+You asked John Gruber from Daring Fireball this when he joined the show on May 29, fantastic interview. Had a ton of fun with the Gruber. But it's a big question. And it's something that Apple is maybe they don't really have respond yet. They're pretty quiet when things happen.
+They usually go and solve the problem
+Speaker 1: and Oh, they really don't want to talk about it.
+Speaker 2: Yeah. But eventually they start. Like they didn't want to talk about climate change, but then they did a bunch of things to like net zero and eco friendly buildings and solar panels on the roof and stuff. And then once they did, they were really noisy about it because they were like, we are carbon neutral or we will be by a certain date.
+Speaker 1: And I think once they figure out how to make money on it Yeah. Then they'll start
+Speaker 2: Which they should.
+Speaker 1: Yeah, fully I will say, I fully Yeah.
+Speaker 2: Exactly. So there's others. There's other questions. Will native iOS apps from other AI labs have more access to iPhone functionality? What's the pathway for ChatGPT interfacing, Claude, Gemini?
+If you're using those apps, how many hooks are there? Will they be able to siphon in your text messages? If you click, yeah, I want to share my text messages, my iMessage with my app of choice or will you need to say yes every single time, which will be a huge burden to having that integration happen. There's a lot of social media apps that say, hey, we want access to your whole camera roll. All of it forever.
+And that's somewhat intimidating. You get a number of different options. You can say, I want temporary access. Just take this photo. You can't see my whole library.
+Now people trust many people. Maybe they just don't know, but they feel like they trust a lot of these maps. They just say, yeah, yeah, take the whole camera roll. Sort of a crazy thing to do that they can just download your entire camera roll if you press that button. But people have.
+So what will the AI version of that be? And how deep will it be and how much will it build on top of the Siri app intense functionality versus other APIs that are deeper in the iOS ecosystem. So lots to dig into and excited to talk to some guests. There's one last thing, which is we I mean, talked about how Apple doesn't want to address eco stuff until it's like, okay, we got it solved. And I'm wondering if in the coming years there's going to be pressure for some sort of response on the whole like phones are reducing the fertility rate stats.
+Because I don't know if you saw, but there was another research paper that was posted and Derek Thompson basically zoomed out and said that I wasn't convinced and now he is convinced that it's like up to 30% of the reason for the recent decline below two. And I don't know where you sit on it.
+Speaker 1: Below the replacement rate?
+Speaker 2: Below the replacement rate. Not good if you're a fan of humanity and having a high population. But that is something that you could see bubbling up to being something that big tech companies, social media companies, device manufacturers have to answer to when they're in like free form podcasts basically. But you know that these companies are not going want to address as opposed to the AI CEOs that are like, oh, you wanna talk about killing everyone? Absolutely.
+I'd love
+Speaker 1: to The talk about that for the PM of Denmark or what country was saying
+Speaker 2: Yeah.
+Speaker 1: It's time to return. I'd rather make
+Speaker 2: No. Kids She specifically said I would I'd rather let my kids smoke cigarettes than use an iPhone, which is crazy. But I don't know, maybe there's something there. Maybe the cure for cancer is right around the corner, but the cure for brain rot is not.
+Speaker 1: It's possible. Yeah, and it's such a different debate because like clearly a single drag on a heater is no good. Right? Ingesting poison. Yeah.
+Burning ash. Single look at a screen, right, is not what is reducing the fertility So, anyways.
+Speaker 2: It's interesting. I don't know. I do wonder if how that pressure would bubble up. Like, the way we have dealt as a society in America with those big questions before, before the era where every AI Lab CEO goes on podcasts and just talks about everything constantly, was in the hearings. So like a social media addiction trial or there is a privacy, you know, hearing on Capitol Hill and the senators all ask the they bring in the leaders from all the different companies and they say, we've heard that there's this problem and we want you to answer our questions directly and it's streamed on C SPAN and you can see that.
+And so, you know, that's where the famous senator we sell ads quote comes from, from Mark Zuckerberg. And you could imagine that if there was an, you know, an administration and a group of senators that were worried about the birth rate thing and they believed that the phones were related, could bring in device manufacturers, social media executives and actually ask them about this.
+Speaker 4: Do you
+Speaker 1: have Apple So millions of people build software on top of the iPhone Yeah. Designed to addict people Totally. Capture as much of their attention as possible.
+Speaker 2: The Wall Street Journal app. So for me, screen time on the Wall Street Journal app is through the roof.
+Speaker 1: It's crazy. It's crazy, John. But Apple can kind of sit back and just saying like, we're not trying to make the device Totally. Addictive. Totally.
+We're trying to make it simple, easy to use. It's a utility.
+Speaker 2: And truthfully, like Apple, I think all of the native apps, none of them are brain rotty or addictive. They're very much like, this is the Maps app. It helps you get there. Close it when you're done and where our business relationship
+Speaker 1: is. Just say you're not addicted
+Speaker 2: They have ads. To the calculator app. Yeah. They have some. But in general, their business model is not really aligned with like screen time necessarily.
+Although it should it is in the broader sense because if you're using this thing all the time, you're like, $2,000. I use it forty hours a week. You know, I I I can underwrite it like, you know, people buy an expensive bed and they're like, I spend half my life on it or whatever, you know?
+Speaker 1: Yeah. I always did think it was funny that there there never ended up being the, you know, the $20,000 phone, which there would be a pretty big market for.
+Speaker 2: A lot of it's just the technology. Like, dollars gets
+Speaker 1: you like Yeah.
+Speaker 2: 5% more battery life because like, you need a $10,000,000,000,000 manufacturing facility to actually deliver any bump there. Yeah. It's not like 10x the price gets you 10x the performance or 10x Yeah. The Like, you can't put a GB 200 in here. You can't put a Tesla battery in here.
+It just doesn't work. Anyway, let's go to some reactions from WWDC. But first, I'm going tell you about Console. Console builds AI agents that automate 70% of IT, HR and finance support giving employees instant resolution for access requests and password resets. So iPhone.
+Speaker 1: IPhone. Yeah. I'm going to update your software tonight while you sleep. Next morning, iPhone says, I couldn't do it, bro. Just didn't feel right.
+The vibe was off.
+Speaker 2: This is something that I didn't know was so common, but I think everyone's been in this position, which is like a funny thing. I think it has to do with how much the battery is charged. But lots of low hanging fruit, hopefully resolved in WWC. I did see a whole bunch of stats about just little performance gains, 30% faster opening of the lock screen, 30% faster on opening this app. And just little optimizations that I think will go a lot further.
+When we talk to Mark Gurman, he talks about how like the AI features are too abstract. People want battery life, cameras, beautiful screens, fast. Like they want the basics most of the time. And so I think this is time to chop wood.
+Speaker 1: It would be funny if they they effectively threw up a model card. And they're comparing it's like
+Speaker 2: They actually did. Bento box is the original model It's
+Speaker 1: 2% better
+Speaker 2: on That's sort of what they do. The the the you know the bento box. Yeah. Right? The bento box with like how many cameras, megapixels, flops and how powerful the GPU is, how many cores are over here, how much storage it has.
+Like that graphic is their model card. We we we were riffing on this earlier like when a product ceases to be sold on brand and and is instead sold on performance, that's usually
+Speaker 1: Margin compression.
+Speaker 2: Usually margin compression like you comp it to cars, like if you're purely buying on like range and price and speed and horsepower and seating arrangements, that feels much more commoditized than you got to have a Ferrari because it's a Ferrari. Don't ask about the specs. And I think for the Luche, this is the first time that people were talking about like, oh, zero to 60 in 2.5 for that price isn't actually that good. It's like that's not the conversation you should be having about Ferrari. Yeah.
+You should just be like, it's a Ferrari. Stop. Next question. Like, do you want one or not? Right?
+Yep. Anyway, speaking of Mark Gurman, hilarious post from Sam Henry Gold here. Of course, in jest, but they put up a Apple press release in the newsroom. Apple announces the death of Mark Gurman.
+Speaker 1: It is done.
+Speaker 2: It is done. Today announced the completion of operation One More Thing, a multi year initiative to permanently end the unauthorized disclosure of Apple's pre released product information by Bloomberg Intelligence reporter Mark Gurman. Gurman who had for sixteen consecutive years obtained and published accurate details about Apple's products before their announcement has been neutralized. Operation One More Thing was completed on schedule, on budget, and without complication. They're not that aggressive towards Mark Gurman but he is probably a thorn in their side.
+And here he is. He has a live blog up, live blog for WWDC. Go check it out at bloomberg.com. Eric Souffer is leaning in. Why is he leaning in?
+Because Mark Gurman says something about WWC. He says, In addition to the focus on AI, Siri and major quality and performance improvements across the operating systems, I'd expect two other focal points today, privacy and safety features. I imagine Sufort is leaning in because privacy, safety features, not great for ad monetization. Usually you're hiding more information. Tyler, what's been your reaction generally?
+Take me through whatever.
+Speaker 5: Yeah. I've been watching the It's live still going on so they're still releasing stuff. But I would say just on that point, they've been like
+Speaker 6: Have you been
+Speaker 2: watching or have you been studying?
+Speaker 5: I was studying. Like every time they talk about a new feature with AI, they always say like, this is on a private cloud. This is like not public. This is like extremely secure. So they're they're really pushing on that point, I think.
+Speaker 2: What does private cloud mean?
+Speaker 5: I don't know. They're talking about like their own foundation models, I think, so they're trying to emphasize that.
+Speaker 2: So it seems like they have Have
+Speaker 1: they said the word Gemini? I don't
+Speaker 5: know if they said it, but it was on screen. So
+Speaker 2: seems like they have the ability with their deal with Gemini to basically white label, fine tune, mid train, do whatever they need to and then resell that with their own branding. That's a great deal. My question is like, who's inferencing that? Because there's a billion iPhone users and if they're all pushing the Siri button all day long and they're anywhere near the frontier that's a significant amount of inference. And has Apple built some sort of secret data center that can serve that?
+Are they saying private cloud and really it's like a corner of GCP? Like where, is it a bunch of Mac minis wired together? Like what did they do to actually build that private cloud? Because even if they did it, even if they did it and it didn't show up in the CapEx numbers, didn't show up in the, any of the SEC filings, Like, it would show up in the emissions data and the and the ESG numbers because unless they have some crazy solar nuclear powered facility, where is that inference coming from? I imagine some of it can be done on device.
+Jonah. That's exciting.
+Speaker 1: Yeah. Jonah says on device.
+Speaker 2: Can it all be done on device? Tyler. I don't know.
+Speaker 1: Groxson says brought up rate limits and a subscription plan.
+Speaker 2: Did Okay. You see Yeah. I'll look for that. I mean, you don't have rate limits or subscription plan if it's on device because why would you? And then also you would never say private cloud if you're doing it on device.
+You would just say it's on device. Of course it's private. So private cloud. Cloud means not on device. It's in the cloud.
+And so I obviously Apple has a lot of data centers. They have a lot of cloud capacity across their productivity suite. Where are the photos stored? In iPhotos like obviously those are stored in the cloud. They have a lot of storage.
+Like everyone gets two terabytes when they get a phone. So they clearly have a lot of data center capacity and they've done a lot to make that ESG compliant but I'm very curious about where that goes over time. Anyway, we should move on to the the news from Friday. The stocks are already back up. But first I'm going tell you about CrowdStrike.
+Your business is AI. Their business is securing it. CrowdStrike secures AI and stops breaches. So
+Speaker 1: One more thing.
+Speaker 2: Oh, sure.
+Speaker 1: Apparently
+Speaker 2: One more thing.
+Speaker 1: One more
+Speaker 2: thing. One more take from Jordan about Apple.
+Speaker 5: Jane What's up?
+Speaker 1: Says Apple concedes on liquid glass design compromising for usability Mhmm. And shares a couple screenshots here. And so Wait.
+Speaker 2: So they're going deeper in Liquid Glass or pulling back? Pulling back. I I saw the new the new Apple Maps icon and it looked pretty good. It it had a little feature of Liquid Glass in there. I thought it looked cool as a design element.
+People I I did hear people complaining about the new Mac operating system being like too too bright or too dark or something like some contrast issue. I haven't noticed it but it it was something I saw people complaining about. Anyway, Friday. Friday was a big day in the market. We were off but the news kept moving so we're covering it today.
+The Labor Department reported that The U. S. Added a seasonally adjusted 172,000 jobs and that the unemployment rate remained unchanged at 4.3%. So on the cover of the Wall Street Journal, U. S.
+Hiring gathers steam, third straight monthly increase, slight decrease from the previous month, which was slight down from the previous month, but still in adding territory in the hundreds of thousands. So the bubble popped. The bubble popped. Friday was the worst day for the Nasdaq in more than a year. 4.2% down.
+It's over. But good news is that today we're back. We're up 1.5% now. It's officially two People thousand and ask what year it is.
+Speaker 1: Reinflating.
+Speaker 2: It's no. No. It's not reinflating. We're building back. The bubble popped.
+It's 2003 now. It's not '99. It's not 2000. It's 2003. We're well past the bubble Okay.
+Speaker 1: Got it.
+Speaker 2: Right? So but actually, quick explanation of what happened. So The US labor market is really picking up. A 172,000 seasonally adjusted jobs added in May. Third month
+Speaker 1: in Decent a amount. Decent amount.
+Speaker 2: A of healthcare stuff. For the
+Speaker 1: World Cup.
+Speaker 2: Yes. And a lot of travel and workers related to the World Cup stuff that's going on. Tourism. So this is terrible news for all those black pilled AI leaders that have been praying manifesting job losses despite their Herculean efforts. They can't get the unemployment rate to go up at all.
+It's crazy. Been saying 10%, 20%, 50%, a 100% of all jobs are going away. Good luck. Yeah. You're going to have to work harder because US economy is undefeated and the American worker is undefeated as evidenced by this latest jobs report.
+The AI job apocalypse is cancelled at least for the month of May. We will see where things go, of course, of course. But it is good news. We want hiring. We want jobs to be abundant in our society.
+And so, in general, it's good news. I believe the jobs report. I don't think the numbers are gonna massively revised down. I think that they're generally accurate and track with the ADP numbers and a lot of other numbers. So I think the jobs are really being added.
+They're not in all the most critical industries. There's a lot of nuance there. How long will it go on? But in general, the economy is healthy. But inflation is rising.
+The closing of the Strait Of Hormuz has spiked the cost of gas and overall prices have been increasing more quickly than the Fed would like for some time. Even before the Strait Of Hormuz, inflation was running a little hot.
+Speaker 1: Yeah. Well above the 2% target
+Speaker 2: Yes.
+Speaker 1: For basically as long as I've been an adult.
+Speaker 2: Yeah. And so this makes the likelihood of a rate cut more unlikely. In fact, it looks like we might be in rate hike territory soon, which is of course not good for tech companies that have earning forecast that stretch out into the next decade. So the silver lining in high rates if you want some copium is that at least the Fed has something useful in the tool chest in case the economy does slow down, you know. We're running hot.
+We have high rates. At least there's room to cut to 3%, 2%, 1%, zero if the market's selling off, if the unemployment rate's going up. You have something in the tank whereas in during COVID, like the rates were already so low, there was a lot of unemployment all of a sudden and it was just like stimulus, spend a bunch of money, you know, sent mail everyone a check. There wasn't that much that the Fed could do.
+Speaker 1: Yeah. Yeah. Was a time that we couldn't imagine this level of speculation in the markets at something like a at where rates are right now. Right? Yeah.
+People that were sort of Totally. Born in the Zerb era.
+Speaker 2: Yeah.
+Speaker 1: Yeah. With with all the speculation right now is by itself Once the an argument to raise rates Yeah.
+Speaker 2: Even further. Totally. Well, yeah. Once the rates spiked off of like like that 3% jump like the end of ZERP, it was like, okay, like like there will never be froth again certainly. Certainly like tech stocks will never
+Speaker 1: A friend of be or mine Blake made bumper stickers that just said, please God, just one more bubble.
+Speaker 2: And God delivered. Okay. The other story. VC Horror Stories. This was kicked off by Greg Eisenberg.
+I didn't realize that he was the one that started this whole thing and kicked the hornet's nest and everyone came out of the woodwork with their VC Horror Stories. So he said he had a big discussion about founders' bad experience with venture capital and a number of high profile firms, VCs caught strays. Merkur CEO Brendan Foudi detailed what he calls the Sequoia scam, which is something interesting we should actually dig into. Cloudflare CEO Matthew Prince accused Vinod Khosla of offering to invest in his series c only if he would fire a few of the people at the pitch meeting who had just left the room momentarily to go to the bathroom. See there was a separate, so Greg Eisenberg, I was really crossing wires here because Greg Eisenberg is the one who says, he says I was once pitching in a boardroom at a top three VC firm for a $15,000,000 series a.
+That's pretty easy to narrow down. But anyway, he says 12 people in the meeting. One of the GPs fully fell asleep because some of the top like, you know, FF doesn't have 12 GPs. They don't really do partner meetings like this so for $15,000,000 series a. So even if you put them in the top three, you got can't catch a stray here.
+Anyway, one of the GPs fully fell asleep out cold for thirty plus minutes. Nobody acknowledged it. Everyone kept going. Then separately, Matthew Prince
+Speaker 1: Okay. Founder or or an operator falls asleep in the office because they're so tired because they're grinding so hard and they're a hero.
+Speaker 2: Yeah. This is what when Elon falls asleep in the factory, it's no big deal. But when a VC falls asleep, it's the end of the world.
+Speaker 1: We're aware of some static in the UltraDome.
+Speaker 2: Yeah. I think we got a new mic line, but I'll try not to touch it and we'll see what happens. But so there's lots of chatter about the VC horror stories. Certainly a discussion worth having. You know, you got to keep them in check.
+But Silicon Valley has always been so high growth and positive sum that relatively good behavior is usually the equilibrium. It's pretty rare that you get a really really bad VC. Because even when a startup fails, investors can't write off the founder entirely because they might start the next generational company. And so they might wind up giving on a non VC friendly sort of acquihire because they're like and help or like help them land a paycheck somewhere, get a job, serve Maybe as a good even fund the next product in the next company because they're just like this is an iterated game and we don't want to have you on our bad side forever. Now, that doesn't mean don't like they can't pass.
+And so there's basically this wide gap that I'm seeing in these discussions where there's VC pitch horror stories and then VC board horror stories. And I have much less sympathy for the former. Like I don't really care about VC pitch horror stories all that much because you could because just
+Speaker 1: a lot of founders will have 50 meetings for financing. Yeah. You would expect at least a couple Yeah. To just be terrible. Yeah.
+Right? The person didn't know who you were, didn't read the materials ahead of time Yeah. Was rude. And you might
+Speaker 2: want that person
+Speaker 1: Didn't show up. Like, you
+Speaker 2: might want a checked out VC who's just going to let you cook. Yeah. And they're like, yeah, I see this purely financially. My my my team crunched the numbers. I'm in but like, don't count on me to value add.
+Like, I'm not going to be in the weeds with you every day. And then there's a different there's a different VC who's like, I'm
+Speaker 6: going to
+Speaker 2: be in the office.
+Speaker 1: I'm going be your backup. VCs will not even tell you, oh, I'm going be grinding for you every day. I'm going to be helping you get
+Speaker 2: all They'll just your be accurate.
+Speaker 1: Tell you That's true. My one of my favorite VCs in the world just says like, I give you money
+Speaker 2: Yep.
+Speaker 1: And then I will help you raise more money. Yep. And that's the only thing I'm going to do. And that's fine. And I'm to be your friend.
+Yeah. We'll get dinner now and then. Yep. But that that's what you can expect from me. Yep.
+And that's exactly what he gives founders. Yeah. And so everyone is like, this guy's great.
+Speaker 2: Yeah. And then there's other there's other firms that say, we'll help you with go to market and they will. There's other people that say, we will help you with marketing and they don't. And you just want to be transparent and accurate there. So like as a founder, your job is to sell equity from time to time.
+Your job is to find buyers for that equity and investors.
+Speaker 1: Some companies actually only
+Speaker 6: do that.
+Speaker 1: That's true. Don't actually Stock it
+Speaker 2: in the product occasionally. So your job is to find investors who want to purchase that equity with cash, VCs. You need to reference, check them beforehand, make sure they're fit, think through their competitive investments, keep them entertained and awake during the pitch. VCs shouldn't be disrespectful, like literally falling asleep is. But this is the far this is far from the worst thing that regularly happens in the course of growing a business.
+Speaker 1: Yeah. And Again, it's it's it's just interesting because one, a bad VC pitch meeting like you said really doesn't matter.
+Speaker 2: I don't remember any them. I'm sure they've happened has
+Speaker 1: died because a VC was like rude to them. No. No. Doesn't matter. Things.
+Yeah. And it also happens with customers. Right? Totally. Sometimes a customer will just oh, sorry.
+Didn't see the Zoom link. Yeah. No show the call. Right? Yeah.
+You're not like all customers are Yeah.
+Speaker 2: Yeah. Know? Or like a or like
+Speaker 1: a candidate will be like, yeah. I like took another role. Yeah. Right? Yeah.
+You're like, that doesn't mean the person's evil. Yeah. Just means like they're making the right decision
+Speaker 2: You win some and lose some.
+Speaker 1: For themselves.
+Speaker 2: So I have a tip. I have a tip for all the entrepreneurs in the audience who are pitching VCs, particularly sleepy VCs. You gotta analogize your business to an air horn. So you go to the VCs, the partnership and you say, like this air horn here. Do we have any you have an air horn.
+Like this air horn here.
+Speaker 1: Tyler, grab the air horn.
+Speaker 2: With one simple button press.
+Speaker 1: You can do it. You can do it over there.
+Speaker 2: Okay. So like this air horn, my business is like this air horn. Come over your ears. My business is like this air horn, Don't venture
+Speaker 1: put it in the My
+Speaker 2: business is like this air horn. One simple press, I'll amplify your business a 100 x. Everyone's going be paying attention because at any moment you might push this button and let out the loudest noise so they're not going be falling asleep. And if they do, you give them a little bit of this. It's so loud.
+It's really so loud. So you got to bring the air horn to the VC pitch meeting. You got to fire it off every once in a while. If you see some sleeves and droopy eyes, let them know. My business is like an air horn.
+I could push it at any time. 10 x your business. 10 x the revenue.
+Speaker 1: John was being asked
+Speaker 2: to do
+Speaker 1: that this morning.
+Speaker 2: My customers love it. My customers love it. Yeah. The air horn, you can go get it. You think I might press it.
+See? You're not falling asleep at any
+Speaker 1: moment. Yeah.
+Speaker 6: We're all
+Speaker 2: wide At any moment. Might need to drive home the point that business is like an air horn and at any moment it could blast off like a rocket ship so you got to buy the stock now. You got to invest. You got to get me a term sheet because at any moment, at any moment, I could do it. The team's so distracted they can't even get their right camera on me.
+Anyway, that's enough of the air horn. We use that randomly from time
+Speaker 1: to time. I love Dylan coming in. We pitched for Figma's seed round in 2013. Most folks didn't get it but everyone I met was super nice to me. Yeah.
+It's so funny when you when you compare when you compare VCs to the other, like I said, the other kinds of calls you have. Yeah. VCs are probably like what generally nice way way nicer. Yeah. Right?
+Like a a customer is less likely to like be overly friendly if they're not interested in what you're selling. Right?
+Speaker 2: They're like Yeah.
+Speaker 1: Yeah. This is like doesn't really seem like a, you know, doesn't really seem like a fit. Yeah. But Or a regulator. Brendan Talk to any
+Speaker 2: VC founder who's dealt with a regulator. Like, look at like Brian Armstrong. He has he had any problems with VCs that match up with what he's dealt with on the regulatory side? Watching Those meetings, everyone's asleep. And they're like, oh, yeah.
+Like, we'll get you approval in the next decade.
+Speaker 1: And we're trying to we're actually trying to shut your whole Like They're falling asleep but as they're falling asleep, they're
+Speaker 2: like Yeah.
+Speaker 1: It's over for you.
+Speaker 2: It's very rare that a VC is in a meeting with you and actively trying to trying to kill your business. Every once in a while they're like, okay, I'm gonna go fund a competitor because I don't like this founder. And that's just like the competitive dynamic. You're in the arena. But anyway.
+Speaker 1: Brendan from her core, former guest and friend of the show is has bone to pick with Structure. Yeah. He's coming after YC. He's coming after Sequoia.
+Speaker 2: He is.
+Speaker 1: He says, in the last six months, I've seen half a dozen rounds where Sequoia invests in two tranches. Everyone pretends they only did the higher valuation. Founders misrepresent this to their employees and then chop it to angels too. Sequoia's blended price is blatantly deceptive. Less than 50% of the one projected.
+Speaker 2: Yeah. So so they'll invested half 1,000,000,000 and 1,000,000,000, two tranches and then the founder will go out and say raised a 100,000,000 at 1,000,000,000 when really Sequoia got in at the blended price, right? Now that's not illegal. There's nothing wrong with that. And that can make sense for both sides for a variety of reasons.
+You don't want to misrepresent that though. If you go and misrepresent that to another investor and you don't tell them the actual structure of the deal, can be securities fraud. That is a major risk. That's not on the VC. Like the VC should not go to another investor and say, oh yeah, we just did the full deal at a billion.
+They should give that context. But that
+Speaker 1: doesn't Yeah. Seem like And it's it's on sounder in the same
+Speaker 2: unique thing. This is like classic like all the crossover funds are doing this. Tons of funds have done this. I mean, also this isn't some secret. Like you go back to the original Sequoia YouTube investment memo and it's trashed and structured.
+Like they've been doing this for twenty five years and it's just like nobody read read the manual or something because like if you actually study and no ball, like you would know that structured investments exist. But at the same time, I don't put it on every employee who's getting stock options and thinking about the heat on a company and every journalist to understand that structure. So there is there is an impetus and a responsibility. Responsibility.
+Speaker 1: Yeah. Very aggressive and unnecessary to call this
+Speaker 2: A scam.
+Speaker 1: The quote Sequoia scam because Brendan also replied to his own tweet saying just thirty minutes ago after the post had gone viral, in fairness to Sequoia, this common practice in the industry Three likes on that 1,000 likes
+Speaker 2: Brutal. On the other
+Speaker 1: Yeah. Yeah. Not super fair to Sequoia at all. I do think it's I I think
+Speaker 6: Sean's fired.
+Speaker 1: Yeah. Employees employees should be aware of this and you know, maybe ask the companies. Yeah. It doesn't mean that it's not a great company to join.
+Speaker 2: Yeah. That's tough. Anyway, Travis Kalanick said in 2001 I intercepted a partner at a VC who was trying to escape his office before our meeting was supposed to start. I ended up pitching him in his parked Lexus from the passenger seat. At one point he grabbed my laptop placed it on his large belly which was pressed against the steering wheel and rapidly flipped through the slides himself.
+Two thousand one fundraising hit different.
+Speaker 1: I wanna know how the story ended.
+Speaker 2: Did he invest or not?
+Speaker 1: But did he pull out his checkbook?
+Speaker 2: Because maybe he was like, you got me, Travis. You know? Anyway, there's a lot of people that are going back and forth. I really the the worst part of this is that over the weekend I was convinced because Matthew Prince talked about Vinod Khosla, who's coming on the show by the way, and Matthew Prince is coming on the show. We're very excited to
+Speaker 6: have both.
+Speaker 2: Same day. Same day. The I was convinced that it was Vinod who fell asleep. But it wasn't. That's a different thing.
+Greg Eisenberg's found VC at one of the top three firms, could be anybody, fell asleep. Vinod, what Matthew Prince is upset about is that there's something about he wanted to, you know, redo the team, the founding team. He was like, do you need all these founders? Maybe you need a different team. Which is like, it's a bold statement for a VC.
+Like it's like, would you switch up on your day ones? First question. And you're like, no? Okay.
+Speaker 1: Not even your day ones, your current business partners.
+Speaker 2: Yeah. Your current
+Speaker 3: business partners.
+Speaker 1: For a new partner. It's sort of
+Speaker 2: a crazy thing. At the same time, sometimes founding teams do go through changes. Sometimes it's the right move. I don't know. It's a little it's a little it's a little iffy.
+But Vinod, you know, stands not guilty on the charges of falling asleep. Although I was getting ready to steel man it because I think as much as I love Cloudflare and Matthew Prince, some details of content delivery networks might be a little boring. And so it's possible that an older man who's a legend and has done very well investing might fall asleep when he's hearing about the intricacies of delivering content across the Internet. And we actually we actually had a plan to test this theory. Tyler, do wanna take us through it?
+Speaker 5: Yeah. Well, so I I was just looking at this. I found a study. Yes. Basically, was you they took a bunch of of older men, 66 to 83.
+Speaker 2: This is actually
+Speaker 5: They put them in a room Yeah. Where it was kind of a slightly dim room. Okay. There's not a lot
+Speaker 2: of like offices. They're very
+Speaker 1: just sat in there. They read them Cloudflare's s one.
+Speaker 5: And they and they basically tested to see how long would it take them to fall asleep. And so the median was thirty six point nine minutes.
+Speaker 2: I feel like okay. So So
+Speaker 1: if you pitch.
+Speaker 2: Pitch. Usually an hour.
+Speaker 1: Well, sometimes, I mean, if it's an early pitch, early conversation maybe is thirty minutes. Maybe. If it's going well, starts to drift over. Yeah.
+Speaker 5: But that's the danger zone.
+Speaker 2: Danger zone. From a So this is the lesson for founders. If you You gotta have a keep boring business
+Speaker 1: it tight.
+Speaker 2: If you have a boring business and you're pitching a VC who's an older gentleman, you gotta keep the pitch meeting to less than thirty minutes. You gotta bring the air horn.
+Speaker 5: Especially in that story it also said the older gentleman was in a Herman Miller chair which we know are quite comfortable.
+Speaker 2: Those are quite popular in Silicon Valley too.
+Speaker 5: Really compounds the fact. Okay.
+Speaker 1: Yeah. Mean, that's an elite
+Speaker 2: Sleep set. Spot for
+Speaker 1: a nap.
+Speaker 2: That's an elite spot
+Speaker 1: for a nap. Chair was arguably designed for office naps. Yeah. No one's getting like real work done I in a hurry
+Speaker 2: think so. So, I I I did this one's tough because it's easy to just jump right, I'm in Matthew Prince's camp. Oh, I'm in Vinod Khosla's camp. Also, Vinod didn't fall asleep, so it's all moot. But we know we know the secret.
+It's the air horn. Bring the air horn. No one's falling asleep. Problem Problem solved.
+Speaker 1: Had a good story when when they were building Divvy. Oh, yeah. They pitched Rajiv Misra Mhmm. In the SoftBank Redwood City HQ. And then Masa in Tokyo soon after, it was absolute cinema.
+Poppins in smoking of vape.
+Speaker 2: Loud Do you coughing it was crazy.
+Speaker 1: To throw us off.
+Speaker 2: Wait. Why? Intentional coughing?
+Speaker 1: Assistants whispering in Rajeev's ear.
+Speaker 2: A power play.
+Speaker 1: That's a power move.
+Speaker 2: You gotta respect that.
+Speaker 1: Sure. That's a post singularity job Yeah. There.
+Speaker 2: Sure. Come in, whisper into the person's ear. It's good. Yep. Some of the most asked the same questions ever asked in Tokyo.
+Masa starts the meeting with, you have ten minutes. We flew like twenty See,
+Speaker 1: that's just a great way to
+Speaker 2: get You just got to the power play, Tyler. Sorry, buddy. You got I think you just think got that's just a great
+Speaker 1: way to get, like, really get to the meat
+Speaker 2: right think
+Speaker 7: so. Quickly.
+Speaker 2: Yeah. I think so. What did TJ have to say? You said the VC meme is very funny. Someone's falling asleep not liking your idea or ghosting you gets you bent out of shape.
+NGMI. Go spend a day in private equity or try competing with an incumbent. Venture is arguably the most pleasant form of deal making in the world. And I agree. And I agree.
+So
+Speaker 1: I do I do like that Vinod says, not only did we not fire them, we did not give them an offer to invest based on our assessment of the team. And then, Matthew just responds with the term sheet.
+Speaker 2: That's actually crazy. Cloudflare up to a $100,000,000. 50 will come from KV, series c, pre money 700.
+Speaker 1: It's a good I like the note running the calculation. Alright. Will 5% chance that he posts the term sheet. That would be absolutely insane. Only only a post IPO founder that's trying to buy a ski resort would ever do something as crazy as that.
+He forgot to he forgot to to to check-in. Yeah.
+Speaker 8: Of
+Speaker 1: That's course wild. Matthew Prince doesn't really have anything to lose at this point.
+Speaker 2: Yeah. Well And having some fun. Fortunately, we're joined by another public company CEO, Will Marshall from Planet Labs. Planet now. He's the co founder and CEO.
+First, I'm gonna tell you about MongoDB. What's the only thing faster than the AI market? Your business on MongoDB. Don't don't just build AI. Own the data platform that powers it.
+And without further ado, let's bring in Will Marshall. Oh, new graphic?
+Speaker 1: New graphic? What's thing?
+Speaker 2: How you doing, Will? How are Good to see you.
+Speaker 7: Great to see you too, guys.
+Speaker 1: How's it It's
+Speaker 2: been too long. I I feel like we barely got to talk when we met a couple weeks ago. But it's great to have you on the show. I'm a huge fan of the company and but I want to go so much deeper. But since this is your first time on the show, why don't you kick us off with a little bit of backstory on yourself and the company and then we can get up to speed with where Planet is going in the future.
+Speaker 7: Yeah. Sure. Well, for those of you that are new to Planet, basically, we help make change visible, accessible, and actionable. Help people make smarter decisions around the planet by having a fleet of over 200 satellites, the largest satellite fleet doing earth imaging. They take pictures as they're going across the earth's surface.
+Yeah. We end up imaging the entire earth landmass every day at about three meter resolution. It's a huge amount of data, but we track everything across the planet. So we liken it to Google that indexed the internet to make it searchable. We're indexing the earth to make it searchable.
+With a combination of these satellites and AI on top, we're enabling people to make smarter decisions about what's going on on planet Earth.
+Speaker 2: Walk me through the actual rollout of those 200 satellites. Obviously, you had partners on the launch side, but do you make your own cameras, your own lenses, satellite buses? Like the company has been in business long enough that you're sort of like pre space economy boom where there was a small startup for every piece of the stack. But what was it like actually rolling all of those rolling those satellites out?
+Speaker 7: Yeah. Well, it's very we're very vertically integrated. So we build the radios. We build the computers and everything that works together. We buy chips, but all of our boards are custom.
+Our telescopes are custom. Our radios are custom. And, so basically, think of it a bit like assembling a smartphone. It's that sort of complexity, a spacecraft. We're not building millions of them like iPhones or what have you, but we're building dozens at a time.
+We tip we've launched on 40 rockets to get all of our satellites up to space. We've launched over 600 or 700 satellites at this point on 40 rockets. Typically, we're launching 20 or so per rocket. Most of the time, we're secondary payload on on on another a billion dollar satellite that's going to launch or a set of other satellites that's going out. Sure.
+A couple of times, I think three times, we bought our own rocket. But roughly speaking, we're hitchhiking at the launch site, trying to get a ride to orbit. It's a little bit more complicated than that, but not much. So the launch has become a little bit more routine now, especially with SpaceX, which is really cool. But all the complexity is in the integration of all these satellites, the satellites working together, having to put ground stations all around the world that collect all that data, send it back.
+And then we have a software company, if you like, that sits on top of all that data doing all the analysis to make it usable for all of our clients.
+Speaker 2: Yeah. It's really crazy. As you say that stuff, I'm thinking of like Bridget Mendler's company that does ground now and there's so many different pieces that you could like subcontract out in the modern era, but you had to do it all with like grit and figure it out yourself, I'm sure. Yeah.
+Speaker 7: And you can contract them out, but I mean, we have looked at those because we don't want to do ground stations. Only reason we're doing them is that we're far cheaper and it wasn't possible at all to But buy those even now, it's, you know, we're so much cheaper infrastructure than anything you can buy online Yeah. Or commercially.
+Speaker 2: Talk about the decision for altitude and the orbit. What trade offs are there? Where do you sit? Why is that the sweet spot that you landed with?
+Speaker 7: We basically try and go as low as possible where you don't reenter. Yeah. I mean, because you want the cameras as close to the Earth's surface so you can take high resolution pictures. I mean, what's amazing with our imagery, you look at our satellites, they're about this big. Mhmm.
+Some of them weigh seven kilograms. They're only the size of a loaf of bread, basically.
+Speaker 2: Yeah.
+Speaker 7: A bit heavier than that. And we can see from San Francisco to Los Angeles, we can see things three meters across. Yeah. 500 miles away, you know, we're seeing things. It's crazy, right?
+And with our bigger satellites, you can see things 30 centimeters across now. I mean, just imagine the the it's it's incredible the power of these telescopes that we put up there and all the camera systems that take all the imagery. And, of course, we take a gob gobs amount huge amounts of it. We take 4,000,047 megapixel images per day. So each satellite is taking eight pictures per second and there's 200 satellites.
+It's just huge What was it like finding that what
+Speaker 1: was it like finding that sweet spot? Did you just one shot it? You never, you know
+Speaker 2: Never burned out? Burned out. Never burned
+Speaker 7: anything up. Exactly. Actually, recently, the sun's got angry for some reason at us, and it's got a little bit more bright. And the upper atmosphere went much denser. And a couple of satellite fleets lost half or more of their satellites because they got the calculus slightly wrong.
+So it's not it's not messing around, especially when you spent millions of dollars on the satellites.
+Speaker 2: On the on the camera, do you have the ability to translate your specs into something that would feel like a consumer camera? Like, is it a 50 megapixel sensor with a 4,000 millimeter focal length or something like that? Is there
+Speaker 7: if you have a really powerful telephoto lens Yeah. It's not so dissimilar from the a main power you for a telescope is the size of the optic. Yeah. So, the primary optic for our Dove satellites is about this big. Yeah.
+The primary optic for our bigger satellites is around 50 centimeters, so a little bit bigger like that. And, know, actually, the design of the telescopes is not that hard, but getting them to work through the launch, which is 15 g's shaking of the of the telescope, and then explosive bolts as the upper stage and the the lower stage separate, which sends a 200 g shot load through the satellite. Those are the things are really gnarly. So you have to design all of this to survive that launch environment. That's where the tricks come in for for space engineering.
+Speaker 2: Can you
+Speaker 1: talk about talk about what you guys have one of the the use cases when when we met, I guess it was maybe a month ago at this point, you talked about how you're able to track gas leaks ahead of time and help get them shut off. I I would love for you to talk about that because I thought it was fascinating.
+Speaker 7: Yeah. I mean, we help people do all sorts of things around the world. I mean, even though we're having the satellites are all in space, all of our applications are in the real world here down on the Earth's surface. We are helping farmers. We're helping energy companies.
+We're helping civil governments. We're helping security. But you asked about methane and we track methane leaks using a special hyperspectral camera that we got on one of our satellites and we're launching a couple more of those this year. Basically, this gas, methane, absorbs in a particular spectral line. So if you have lots of color bands, lots of spectral bands, so this one has 400 spectral bands.
+So it's like we have three RGB in our eyes. This has 400. And with those narrow bands you can detect these absorption lines and we can tell actually the amount of methane in each leak as well. So we can then go along the gas pipelines of major oil and gas facilities, find leaks, tell them about it, and shut help them to shut them off. And no one, not the energy company, nor the environment, nor anything else, wants all these gas leaks.
+It's bad for business and it's bad for the planet. So we have detected thousands and thousands of these and often these companies just go out and fix them. Another example, we track deforestation across the whole Brazilian Amazon. 8,000,000 square kilometers every day. It's almost the size of The United States, a forest the size of The United States.
+And we look across the entire thing for any tree that has been cut down, illegal mining operation, illegal narcotics, and we send those alerts to GPS coordinates to the Brazil Federal Police, they go and stop the illegal action. And we've helped them to reduce deforestation rates 60% in the last three years because of that AI enabled satellite data work. And another example in Ukraine, we've been helping them track Russian movements in Asia. We've been helping with Indo Pacific Command, the commander of The US forces over in that region to monitor China, the South China Sea. We monitor huge areas, give them alerts because what what you want is to try and get advanced warning of anything rather than having to go into war.
+So we're trying to help them have the data that stops wars rather than getting there.
+Speaker 2: Does the government not have spy satellites?
+Speaker 7: They do. But their spy satellites are better and worse at the same time. They're much, much higher resolution, but much, much smaller coverage.
+Speaker 2: Got it.
+Speaker 7: So, they can they can see things that are much better. Reading number plates is the canonical thing. Whether or exactly they can do that is a classified matter. But what they can see is much smaller than what we can do, at least 10 times better. What they can't do is image all of China or all of Africa or all of Brazil every day because necessarily if you look more focused, you look at a smaller area.
+And so there's a trade off there. We're the only system that images the whole earth landmass every day.
+Speaker 2: So what is the the pie chart of customers for your revenue? Is it I imagine you hear about like hedge funds. You mentioned a bunch of examples of the government and it seems like even nongovernmental organizations, nonprofits would be interesting. They probably pay different rates. But like where are the key drivers of the business?
+What are the different customers that are buying from you?
+Speaker 7: Today, our biggest segment is defense and intelligence, so security. Countries that need to understand threats on their horizon, be warned of things. That's the US government. That's European countries, Japan, other countries like that. And we've just started a new program where if a country asks, we'll launch them dedicated satellites for that country.
+And these we've done three deals where a couple of $100,000,000 and we launch a set of satellites for them. They take over the joystick over their area of interest. And if you like, they get they ensure that it's just for them in that area. But most of our business is data sales. And I think the future is mainly commercial applications and civil government.
+So, floods and fires and helping people. You know, in the LA fires, we were not just the the first image, but we could e actually use AI on top that could analyze which house in the Palisades fire was damaged or not, and help the relief operators, the American Red Cross, go used our data to plan their operations in the aftermath of the fire and so on. But if we could get that data even sooner, that's even better. So we're working on trying to get the data ever sooner. But disaster response is an application, but most of all, all the commercial ones.
+So, yes, hedge funds, you mentioned. In principle, we have more alpha than any other company on the planet, I think, because we can track all those soy yields, of, you know, or any other type of crop. We can track output from all the mines of all the different major commodities around the planet, all the shipping networks, all the other transportation networks. We, if you like, have an overview of all the different economic activity going on around the globe. And so we do have some hedge fund clients that do stuff.
+They they shan't be named because they they want to keep it private. Yeah. Course. But, yeah, that's a then there's lots of other commercial applications, energy, infrastructure, agriculture. You know, we help out with a lot of we just announced last week that we're working with John Deere, helping them drive their tractors so they know when to slow down and speed up in the field based on the amount of crop in each three by three meter box.
+I mean, it's all terribly practical applications of our satellite data. So it sounds far away like going to space, but actually it's having an impact here on the ground.
+Speaker 1: There are apparently some Koreans in our chat that that are that are investors, it sounds like, have some questions around the new new capital raise. Wanted to give you a chance to talk about that, why why you're pursuing it and what it means for the future. I can't their messages, but I'm just sort
+Speaker 2: of guessing. Yeah. Well,
+Speaker 7: we we just had our earnings last week and we have plenty of capital, over $700,000,000 on the balance sheet. And we're growing growing very nicely, 42% growth, which is the answer to life, universe and everything, if any hitchhikers guide the galaxy fans out there. So we felt very good about that. But, yeah, we did decide to raise some more capital, one of these ATM approaches, which basically enables us to raise at the market and when we want. And it it you know, it's good to have more capital.
+It's good to have a secure balance sheet. It's dry powder. If we wanted to do m and a later, we haven't got an immediate need for it, but it's good to do that. We think that maybe there's other datasets. Maybe there's other capabilities that we want, showing up our supply chain.
+There's all sorts of things in this crazy world it'd be good to do to reduce risks. So we're trying to use the moment of a lot of excitement about planet and space generally. Space is hot right now to to get capital that that can help us secure the long term.
+Speaker 2: That makes sense.
+Speaker 1: Last thing, any any insights on on what the the latest Blue Origin explosion will do to the launch market over the next, call it, two, three, four, five years is that, obviously, it's a disappointment for everyone, but, there's been some debate around just how much of a setback it'll be. I think every company like Planet wants more competition in the launch market. But how are you looking at it?
+Speaker 7: Yeah. Well, I mean, firstly, it's a real tragic event for the industry and not just for Blue. And it set back some of the lunar plans that The US Government is I'm wearing my Artemis two pin. That was such an amazing mission, but some of the later missions that actually landing humans on the lunar surface are gonna need Blue Origin in their vehicle, actually. So it's a tricky situation.
+I was just messaging with the Mass Administrator about this, and I hope we can come together to still do those really critical missions that are some of the most hopeful things that we do as a society when we send humans on things like that mission. So but I think I think they'll get back to to business relatively straightforward. That, you know, by the end of this year, they've already said that they should be able to be back on the launch line. I think that timeline is about right. What we've seen historically, companies getting back to the launch pad.
+Yeah. It's not quite as damaged as people initially thought. So I I really wish them luck in doing that. And there is a booming array of other companies that are building launch capabilities. So I think competition really is coming over the next couple of years and it's exciting and obviously we're cheering it on.
+We're cheering all of those guys on.
+Speaker 2: Yep. We are too.
+Speaker 1: Makes sense.
+Speaker 2: Well, we're cheering you
+Speaker 1: on Thank as you so much for coming in. On anytime.
+Speaker 2: We'll talk to
+Speaker 1: you Great updates.
+Speaker 7: Hey, Nice to see you.
+Speaker 2: Good Before we bring in our next guest, let me tell you about the New York Stock Exchange. Wanna change the world, raise capital at the New York Stock Exchange. We are very fortunate to be joined by Dambisa Samuel. Hi. Welcome to the show.
+How are you doing?
+Speaker 4: I'm so great to it's very glad to be here. Thank you.
+Speaker 2: Thank you so much for taking the time. Thank you. I would love to go back in time first and start with a little bit about your journey to where you are now. How how do you introduce yourself? You have you're multi hyphenate.
+An author, an economist, an investor. What else am I missing? Take me through it.
+Speaker 4: Well, first of all, everybody calls me Dambisa, so that's the easiest thing to do. I'm a member of the House of Lords in The United Kingdom, so that's my sort of day job. Also Yeah. It's not bad, actually. And then, I I serve on a number of boards.
+Speaker 2: On the
+Speaker 4: board of Chevron, on the board of Starbucks and Conde Nast. I know you had Roger Lynch
+Speaker 2: here Oh, love Roger.
+Speaker 4: Ago. As well as on the Oxford University Endowment. Sure. But my also my other day job, multiple hats here, is I am co principal of a family office Yeah. Which is tech based actually, proceeds from a sale of a SaaS company in 2018.
+Qualtrics. Yeah. Qualtrics.
+Speaker 2: Yeah. Fantastic.
+Speaker 4: That's So my
+Speaker 2: Let's stick with the board dynamics first because we've been having a whole bunch of conversations about corporate governance in the modern era. It's at the top of everyone's mind because of governance of AI companies. And I'm interested in your lessons from working with these these very important boards, very established companies you mentioned. Yeah. They've certainly had decades if not centuries to work out any of the kinks.
+Yes. And I'm wondering about your thesis on on high performing board management generally because we've had Eric Reese from Long Term Stock Exchange talking about different structures that have been the triple bottom line. There's so many different options and I feel like a lot of founders and their companies explode in value. They say, oh, maybe I'm different. Maybe I should do things differently.
+I wanna know how you weigh in on
+Speaker 4: all this. Yeah. So the longest sort of company board that I've been on was a company that was over 360 years old. That was Barclays Bank. Yeah.
+And I think great Success. Yeah. You think about, you know, multiple centuries, most of these companies have already experienced a pandemic, probably in the nineteen eighteen to nineteen twenty pandemic. They've gone through economic recessions. Obviously, 1929.
+You have a crash for twenty years. The Dow Jones Industrial doesn't clear.
+Speaker 2: Not many people are going through COVID being like, here we go again. Exactly. Twice before. Exactly. So I
+Speaker 4: think history is a great lesson. I think the other thing is advice that I received when I joined my first board about fifteen years ago, which is anything can happen. And I think that's it sounds very flippant and sort of obvious, but in a way, it's it has a lot of kernels of important truths for how we manage organizations, not just thinking about risk mitigation, but where the opportunities are and how to invest. Because ultimately, we're taking punts, we're taking bets, but we wanna make sure these companies last for another three hundred plus years. So I think that's the really most important thing.
+I've had the privilege of being on boards that have been bookended by the financial crisis, the pandemic, but also companies which were trading close to $60 a share and they collapsed down to 7. You know, all of a sudden, you know, it's the Mike Tyson quote, all of a sudden your plan and your strategy gets punched in the face. Yep. But also, you know, we've had a CEO die in office, which is very traumatic in terms of resetting. But company one of them are my favorites is a company that we were absolutely certain would not get purchased.
+We were told that we were number two in the sector. This was S. B. Miller.
+Speaker 1: Yeah.
+Speaker 4: Anheuser Busch was number one and people said there's no way they'll buy you. Mhmm. And they ended up buying us by issuing the the biggest bond that year in 2016, and and they bought the company outright. So love it. Anything can happen.
+And I think, you know, when you think about where we are today with the market valuations and you think about where rates are and even just this year, coming into 2026 thinking that oil would be around $50 a barrel. Yeah. Well, it's not. You know, how does your balance sheet play out in that environment?
+Speaker 2: So help me help me square that idea of of anything can happen. The job of the board, if I'm telling it back to you, this is obviously a con condensation of what you said, but the job of the board is to sort of set the level of risk taking in the organization. And I can imagine that instantiated in two ways. One is we are going to the management team and saying that AI is real. We need to be taking more risk to put ourselves in a strong position or the risk of oil going up this year is high so we need to offset and hedge that.
+And you're issuing sort of a prescriptive strategy notes versus we need to our job is only to hire the management team. And if we have a CEO who's not taking the right level of risk, too much risk or not enough risk, we need a new management team. How do you square those two?
+Speaker 4: Yeah. So I would say, you know, fundamentally, there are three roles of the of the board. Yeah. One is strategic oversight.
+Speaker 2: Okay.
+Speaker 4: And so, you know, we meet obviously on a quarterly basis. We have strategic meetings. I think our job is to be additive to management in thinking about these longer term risks. And we can talk about how those horizons have collapsed just because of the the spate and information, more technology, more information. So there is definitely a shrinking in in that delta.
+But the second thing is hiring and in some instances firing the CEO. Mhmm. And that's a very important piece as you've you've because the CEO's job is to bring in the team, make sure the team actually can execute on not just, again, risk mitigation, but, you know, leading into investments, thinking about longer term opportunities for the business. And then the third thing, which I think tends to be discounted, but sort of ebbs and flows over time, is how do great businesses partner with communities, with society, with government Yep. Especially something like AI.
+I'm just going to so transformative beyond just what's the SpaceX IPO going to generate for my portfolio. I think we need to think about what does this mean strategically. Yes. And so that's where I think those three things are very important.
+Speaker 2: I I love that third point and it ties to my next question. People say data is the new oil. What can AI companies learn from oil companies?
+Speaker 4: Well, I think there tends to be, in general, and I've been on boards of tech companies, I think we just have to make sure that people don't poo poo a lot of the governance and the structural sort of muscle that we now know exists from 300 of companies existing. So there's a lot of good governance, having an audit committee Okay. Thinking about strategy, having regular meetings, that balance between what management does in terms of tactics on a day to day basis versus strategic thinking and overlay from the board. I think those are things that people can very easily dismiss when, you know, your returns are so high or your, you know, with 30% of the of the stock exchanges, stock market. But I think really understanding what the purpose of the board is
+Speaker 2: Yeah.
+Speaker 4: Especially for publicly traded companies where the board is really there on behalf of shareholders. And again, even that has changed. It's more stakeholders, including what the regulators care about and what does society care about more generally.
+Speaker 2: So with the regulators, I have this I have this interesting it feels like we're in an entirely new era with the AI companies where if you go back to the previous big big organizations, like before we had big tech, had big pharma and big oil and big tobacco. Right? And each one of those companies went through a process of figuring out how they interface with regulators. And in the case of environmentalism and emissions and also in the big tobacco era, there was a there was a a feeling that those organizations were brought to knee by the regulators and that the executives at those firms sort of denied, denied, denied until it was staring them at the face in a congressional hearing and then they had to admit that there was a negative externality and they figured out how to internalize that. And I still think that, especially when it comes to oil, a lot of great things have come from that technology.
+It needs to be balanced, of course. But we're in a new era in that it feels like the AI lab CEOs, the big tech leaders are doing the opposite. They're they're going on podcasts saying AI is going to kill everyone, going to destroy all the jobs. They're saying all the bad stuff before and the regulators are like, what? I'm learning this from you.
+It would be like if in 1910, you know, an oil executive came out and said, we really got to worry about carbon emissions. Like, that just didn't And so what is going on and and how should things change? Is this a positive development?
+Speaker 4: Well, I think, most companies that have existed over a hundred years or plus, three hundred years, have figured out that, they have to be more a partner, a partner not just to government in thinking about what dislocations might happen to jobs or to productivity gains? What does it mean Yeah. For more concentration in one sector versus another? And it's not just a capital markets question. It's also about what does this actually mean for our pensions?
+What does it mean for taxes? What does it mean? And I I know you can tell that I I sit at the intersection of not just corporations and investment, but also public policy. This is absolutely a debate in the House of Lords trying to think what should we be doing? Should we be aggressively, you know, sort of imposing risks?
+I personally, that's not my view and I argue very compellingly. Hope that we need to be leaning into what AI can do. It can improve productivity, but that would be naive to just say it's all upside and having government as partners. It doesn't matter if you're an energy company, a tech company, or a bank, or even pharma. You you wanna bring them on side so that they can understand what the second order implications of a technology might be and how we can get ahead of some of the downside risk.
+Speaker 1: What is cultural or consumer sentiment around AI like right now in The United Kingdom?
+Speaker 4: Very similar to what you have in The United States. I worry a lot that it it sort of seeped into the narrative in policy making, so I do hear a lot of my colleagues in the House of Lords who are sort of, you know, reciting, you know, sort of tropes about AI, which, you know, can be very compelling. You know, obviously in The United States, people are very attuned with the difference between how the Chinese population views AI versus The United States population. And I think that just means there's a lot more work to be done, not just by the AI companies, but by regulators also, and say this is the first super cycle, you know, real positive sort of push for economic growth for and, you know, you know, that we've had since globalization, since women came into the workplace. Sure.
+And this is enormous, and we need it. Growth has been flat
+Speaker 1: Yeah. Is it showing up in in in GDP in The UK?
+Speaker 4: I think it's early early indications of it. I think the, you know, the the sort of sky is falling down scenario is always, oh, what's gonna happen to jobs? Mhmm. But, you know, I personally think from my experience in
+Speaker 1: the the job market in The UK
+Speaker 2: Is pretty poor.
+Speaker 1: From what I've heard for just going back to my college years is, you know, you're lucky if you graduate from a great university and get a job for like 50, you know, 50,000 Yeah. USD
+Speaker 4: I mean, look, the unemployment numbers for not just the average in the population, but for the youth is particularly problematic. There's no doubt about it. Even the current government, tends which to lean left, has just put out a report talking about youth unemployment. It's very similar to sort of double unemployment rates that you see for entrance levels in The United States, but in some places it's even worse because it's permanent structural unemployment where people literally are not coming back into the workplace. And so there's absolutely a real issue that needs to be thought through, and I have my views on what needs to be done, but ultimately I'm just one voice and public policy needs to really change the narrative about what AI can do.
+It will have dislocations as all technologies do, but
+Speaker 1: Is there any type of a re industrialization movement or or energy happening in The UK?
+Speaker 4: Do you mean energy as a pun or you mean energy literally?
+Speaker 1: Like as yeah. As a as a pun. Yeah. Okay. Well Or or A lot of reindustrialization projects are linked to power generation.
+I guess both. Both.
+Speaker 4: Don't don't get me started on the power situation. I mean, again, I've I've I've spoken about this in the in the lords. The The UK as an example, since we're talking about that, is, on average about 40¢ a kilowatt hour. Mhmm. The US is somewhere between 12 and 16¢ a kilowatt hour depending on which state you're in.
+And then China, some of the estimates around 8 to 9¢ a kilowatt hour. There's no country that has achieved levels of per capita income without cheap energy. Yeah. And so, of course, there's not a single person I know, you know, whether it's in my boardrooms or my colleagues in investing, who doesn't appreciate the the sort of second order concerns around carbon emissions, etcetera. But I think you can strangle economic growth by doing some of the things that I'm afraid of are happening around the world, banning, you know, energy sources.
+I think that kind of approach is is probably too aggressive and and doesn't really work for the long term. We need the energy. So Have you
+Speaker 2: Have you wrestled with this question of the source of China's optimism about new technologies? I I I sort of think about two possible, and they might both be contributing. But one is that it's easier to grow from a lower baseline, 6,000 GDP per capita. There's a lot of room to go up. Yes.
+And so, like, the the tide is so low that if it goes up, will raise a lot of boats. But then there's the other side, which is the actual not just the economic standing of the country, but the actual political structure and the jobs guarantees, the works projects, the trains to nowhere and the empty buildings. Like, those are rough, but they can create a lot of jobs. And so I think that there's maybe less fear mongering about job loss because at the very least, the CCP will put you to say, hey, go build a building over there and maybe it's empty, but you don't really care because at least you had a paycheck and you showed up and you had a sense of purpose. Have you wrestled with either of
+Speaker 4: I have, and I think maybe I'd add a third aspect, which is probably related to the role of the state. Yeah. Which is to say that a lot of the public goods issues, healthcare, education are areas even in The United States that have not benefited from technological advances. Sure. Partly because of regulation, but there are a whole host of vested interests, etcetera.
+And so, if you take that hat and you think about how sort of AI is permeating through the Chinese population, a lot of it is through those same public goods, through healthcare and the sesame sort of calculations, thinking about education, etcetera. And so, yes, it can be viewed as somewhat heavy handed, but at the same time, I think people can more easily see a direct impact of benefit. Whereas, you know, in The United States, when you think of AI, think a lot of it is still disconnected from the average day user. People may maybe will see it more in show up in terms of their social media Yeah. Exactly.
+Or And so, I think that's an area of opportunity, if you think about it, in the West where a lot of the public goods costs, social costs that are we know are coming Yeah. Could actually be, I think, a net positive, not just for the GDP numbers, but also for just for people thinking about more positively about what AI can do.
+Speaker 2: Yeah. How are how are conversations going on the boards that you sit on around AI adoption? And particularly, we've been we've been grappling with a lot of, you know, CEOs need to experiment. They need to move quickly. At the same time, costs can get out of control, the risks, the benefits, not getting left behind.
+And then also just like does your biz is your business even technology? Like Chevron, Starbucks. I'm thinking like AI could be a useful tool for some back office stuff, but, you know, the robots aren't going to drill oil or make for coffee yet. Maybe that's coming, but certainly that's not what's being sold right now by the AI lab. So what are those conversations like?
+How what is the mature way to think about testing and evaluating and rolling out AI at a large company?
+Speaker 4: Yeah. So it's all of the above, everything that you've listed out there. And I think any company worth its salt will be looking at these issues in a very broad way. It's a learning curve, obviously, to state the obvious, and I think that what the best companies are doing is trying to figure out not only what does this mean for our bottom line, is this going to increase revenue and cut costs, you know, think about new metrics of how we compare ourselves, what are our new KPIs and the financial metrics comparing ourselves to other competitors, other, you know, peers, but also other sectors. But I think they're also thinking about what does this mean for society?
+Is this a complete re shaping of how governments tax? If it's just going to be a handful of companies that are thinking about, you know, generating revenue and concentrated success, constant returns, you know, how do we then think about where our role is in that? Of course, also thinking about the job market. I mean, I think it's Henry Ford's quip about, you know, you can't you know, you have to pay people a reasonable wage for the work because ultimately, in a very cynical way, but I think it's something that I think about a lot is you need you still need to think about consumers
+Speaker 2: and who's gonna be He said that he needed to pay his workers enough that they could buy a car.
+Speaker 4: Correct.
+Speaker 2: The ultimate circular deal.
+Speaker 4: Yeah. No. Right. Exactly.
+Speaker 2: But but but in doing so, it wasn't that every Model T was sold to a Ford employee. It was that he set the market wages at a certain level Exactly. And that created a sustainable ecosystem.
+Speaker 4: Yeah. I mean, I think I think corporations get short shrift because people just think that there are these sort of 12 people on a board Sure. And a corporation that's sort of greedy shareholders that are just simply going and trying to gouge, you know, consumers. I think what I would say about AI is that the breadth of its potential impact is now bringing about a a level of sophistication and discussions that goes beyond just narrow metrics. What's the shareholder return going to be?
+I mean, of course, if you want to compete in a capitalist society, those things are important. But I think the most sophisticated companies are understanding that their role and the role of the state, but also the role of the consumer is going to change, the demands of the consumer are going to change. Yeah.
+Speaker 1: Please. Can we talk about the family office?
+Speaker 2: I was I was gonna ask Good the same
+Speaker 1: time. Yeah. I I wanna your your overall market outlook, how you think about, you know, what an insane year it's been. I think everyone, you know, was watching a set of geopolitical events play out and assume now would be a good time to bet against the the global economy. Least that hasn't been reflected in in the markets just yet.
+But I'm curious your overall view and then I wanna get into more specifics around kind of managing the family office itself.
+Speaker 4: Yeah. Look, I think I would say that the global economy, we need to be growing at 3% per year in order to double per capita incomes in a generation. So a generation's about twenty four, twenty five years. In order to double per capita incomes, you've to be growing at 3% per year. The reality is most countries are not growing at that rate.
+Both developed countries across Europe, you know, you know, Japan until recently, which has started to see interesting story coming from there. But but also large emerging market economies, we have that have at least 50,000,000 people. They're stalling. I was just in Peru ten days ago, and there everybody's concerned about growth. And you can add to that other structural issues, the debt story, the fiscus being challenged here in The United States, etcetera, etcetera.
+We know about these issues. But, you know, as I pointed out earlier, we're also at the early innings of a super cycle, which could really power the productivity contribution to growth, could really change the narrative about growth. I mean, PWC thinks growth it could add about $16,000,000,000,000 worth of of GDP by 2030. That's four years away. So that's Yeah.
+Really constructive story. I mean, my concern would be that it's quite skewed. I think this is very much a US story. You can't bet against The United States.
+Speaker 2: Yeah.
+Speaker 4: I think the changes and and rollout of this new era are quite choppy in places like China. I mean, there's some elements of it that are quite interesting, but China does have a lot of, you know, debt drag. It has, you know, demographic drag. I mean, they're thinking now by some forecasts that it'll be at 800,000,000 population by the close of this century. So structural challenges remain there.
+Europe has been quite a disappointment in many respects. A lot of the larger economies growing somewhere between 0.5 to 11.2%. A lot of the structural things we've touched on already, debt, but also now in the near term, risk of inflation. So I think the picture is very much don't bet against The United States, but understanding that it's quite concentrated, it's quite skewed, And thinking about how to play that is is obviously top of mind.
+Speaker 2: How do you how do you wrestle with international efforts in AI? So when when the whole sovereign AI theme started maybe last year really getting talked about, I was deeply skeptical. Because I said, well, you know, England doesn't need their own Google. They can just use Google and it can and it can be localized into Spanish and French and it's pretty Yeah. Easy for the core technology to live in one country and it's hard to compete with something that's compounded like a Facebook or an Instagram or Mhmm.
+Consumer app or even in the enterprise. You know, Salesforce like, I don't know that Salesforce has a has a native French competitor eating their lunch But as I've gone deeper into the supply chain, I'm starting to see a lot of opportunity for like France generates a ton of nuclear power. That's clean energy. They if they have the right permitting and the right place for it and the right community, they could potentially build something that they sell to American AI companies that winds up generating a ton of return and you sort of have a new a new energy story about let's go around and find all the cheap wind energy, cheap solar energy, where can nuclear be built. Because the nature of AI is that it doesn't need to be on premise because you're waiting twenty minutes for something to come back.
+Right. It doesn't need to be down the street. It can be halfway across the world.
+Speaker 1: Yeah. The story doesn't need to be my conflict with Macron.
+Speaker 2: Yes. Yes.
+Speaker 1: Yes. And we we went we went back and forth.
+Speaker 2: Potentially under investing. We want them to to go full forward.
+Speaker 4: SoftBank. I was just with Alex last week, and he was talking about the new data center that they're thinking about building there precisely because of some of these costs of advantages on the energy side. Look. I would say as a as a sort of sort of shorthand Mhmm. Europe generally thinks about things as glass half empty.
+Speaker 6: Sure.
+Speaker 4: The United States tends to think about things as glass half full. Glass so flowing sometimes. Yeah. Exactly. And you can think you can think about whole
+Speaker 2: on this.
+Speaker 7: Yeah. Touche.
+Speaker 4: But you can think about whether it's energy or AI Yeah. Climate transition. Like, there's many different themes that have occurred where Europe's, you know, again, shorthanding it. The response has always been, oh my gosh. You know, we need to regulate Yep.
+This thing. We need to put you know, curb emissions. And I'm not saying it's all bad. I'm just saying that that they tend to air on the side of risk mitigation as opposed to investing through to figure out, well, we don't like x, so why don't we try and think about how to do that better? And I think that's part of the culture.
+I will say, you know, since 2008, The United States and Europe were about the same GDP, as you know, and now, you know, The United States has just run with it. And so I I would hope that a lot of the I wouldn't count Europe out. I mean, The United Kingdom is the home of the industrial revolution. There's some kernels of of goodness that remain in terms of rule of law, the stuff that everybody talks about. But if you do look at the the top sort of top FTSE companies, the stock market.
+They they they tend to be pretty old and stodgy. Yeah. It may not be a
+Speaker 2: Europe story. May maybe more of a global story. I'm just thinking about, you know, a certain region in in India or Japan or Greece or Egypt might have some piece of the puzzle that they can now bring to bear because there is more demand for that. Like, you could imagine a French company that's an expert in nuclear. Maybe they don't build another data center nuclear power plant there, but they expand.
+They build the nuclear power plant somewhere else. There's another place that has a lot of land, lot of solar. Yeah.
+Speaker 4: I think it's comparative advantage, what you're alluding to. Yeah. And so, yeah, in principle, yes. But, you know, we're in a world of deglobalization, broadly speaking, so we can't, you know, we can't dismiss the fact that the policy world has
+Speaker 1: there are there is there is there a bullish narrative outside of AI and robotics? I've been trying to I've been
+Speaker 2: trying Defense to and delobalization.
+Speaker 4: Are you talking about in Europe or
+Speaker 1: in world? Just just just generally in the world because you see like, you know, lots of debt, inflation, low growth, population
+Speaker 4: side. Yeah.
+Speaker 1: You know, employment. There's so many, you know, ongoing conflicts. There's so many Stories. And negative stories. And it feels like AI is is, you know, the only the only thing really happening and basically almost every country in the world saying like like we got dollar
+Speaker 2: GLP one market would like a word for you. Okay?
+Speaker 1: Biotech Biotech is doing very is another one. Much so that so much so that that people on X I think last week were saying we're gonna see the first $100,000,000,000,000 biotech company. It's possible. Possible. Very American to see to see something working and assume.
+Speaker 2: And if the replacement rate, fertility rate declines, you've got to live longer, that's where biotech comes in and solves that problem.
+Speaker 4: The other thing I would say is that what does history tell us about this is that kind of things just repeat themselves. So, you know, if you think about us being in a period post World War one, post the pandemic nineteen eighteen to 1920, and post 1929 crash, you could argue we're kind of in this period of of, you know, Smoot Hawley, a larger government, more tariffs, you know, protectionism. And so, question is, will there be this new era that came, you know, post World War II, which is where you get more globalization, you know, governments start to work more more cooperation. And I think we have to be optimistic. I mean, you know, there are a lot of good things that are happening.
+I was just in India. I had been in India fifteen years prior to that. Mean, it's a it's a changed society, and people yeah. Are It's not is it is it rich? No.
+But is it on a path of of growth that's quite diversified and it's got an intriguing story of being part of the service sector but also technology? Yes. Absolutely. As I said, I was just in Peru. There are plenty of places, and I was just in Silicon Valley.
+Hard to sort of be negative about the world and I think it is I I
+Speaker 1: We have the the blessing of having a job where we talk to people all day long about what they're building for the future. And so it's it's hard to ever get I never get completely black pilled even though there's so many different sort of negative negative stories.
+Speaker 4: So negative
+Speaker 1: Because I do believe that a small, you know, small relatively small number of people can can can have, you know, massive outside impact on on the fate of, you know, humanity and Yeah. Economies and all these things.
+Speaker 2: Yeah. Well, that's a great place to leave it.
+Speaker 4: Thank you.
+Speaker 2: A message of optimism. Completely agree.
+Speaker 4: Thank you. And go Knicks. Oh, yes. Go Knicks. Thank you Thanks, so
+Speaker 1: Dave. Was I was just I was in New York I was in New York over the weekend and there were some enterprising young kids that were doing a lemonade stand. Really? But and they were giving discounts to Knicks fans.
+Speaker 4: How do you prove that? Yeah.
+Speaker 1: Yeah. I was like, it'd be kind of crazy to be Yeah. Yeah. Yeah. Exactly.
+Speaker 4: Well, thank you
+Speaker 2: for having
+Speaker 4: me. A pleasure being here.
+Speaker 1: Thank you so
+Speaker 2: much. This is him.
+Speaker 1: Cheers.
+Speaker 2: Thank you so much. Our next guest is Samuel Hoom who's going to completely debunk Jordy's black pilling about biotech because we got him on to talk about all the advanced
+Speaker 1: black I'm pilling on biotech.
+Speaker 2: Oh, oh, oh, there's nothing else going on outside of AI. This is what you said. Don't deny it. We can roll the tape.
+Speaker 1: Well, he not applying AI?
+Speaker 2: Sure there's I'm sure a little bit of technology. No. No. He actually uses just pencil and paper. Wow.
+Pencil and paper. No computers at all. Anyway, first I'm going to tell you about Shopify. Shopify is the commerce platform that grows with your business and lets you sell in seconds online, in store, on mobile, on social, on marketplaces and now with AI agents. And now we have Samuel from Stimatic Labs.
+He's the co founder and I'm very excited to have him join the show. How are doing? Hello.
+Speaker 8: Good. How are you guys? Good to see you.
+Speaker 2: We're good. So Jordy was making the claim that there is nothing good happening anywhere outside of artificial intelligence And I said we have the perfect guest to debunk that. So could you please introduce yourself first and then maybe take us through some of the exciting things that Whether happen there's a
+Speaker 1: protein shortage, John, it's hard to be optimistic. It's hard to be optimistic.
+Speaker 2: I'm to blast you with the air horn. Anyway, thank you so much for joining.
+Speaker 8: No problem. Good to see you. Good to hear you talk about biotech as well. So, yeah, I'm a medical doctor, a scientist and, yeah, co founder at Stomatic Labs. Got it.
+And just fascinated really by the trying to figure out what's going on at the frontier of medicine, frontier of science, which is what I use Twitter for, what I use X for. And also what brought me to the conference the other day to Chicago to ASCO to the big cancer conference, where I was lucky enough to see the diracin rashid study Standing ovation. Presented life. Standing ovation? Yeah.
+I love it.
+Speaker 1: Okay. Let's get right to it though. What does it take for a 100,000,000,000,000 since you since you brought up X, there was some there was some discussion among investors around we'll see the first 10,000,000,000,000.
+Speaker 2: Thought you said a 100,000,000,000,000.
+Speaker 1: And then a 100,000,000,000,000. So they're already I mean I mean it's I mean I mean hyperinflation a guy to say that a 100 bagger is impossible.
+Speaker 2: Yeah.
+Speaker 1: It's always possible. How do we get there? And what is the kidding.
+Speaker 8: So Lilly today is Lilly today is a $1,000,000,000,000 company. Right? And or just about.
+Speaker 2: Yeah.
+Speaker 8: But I I think the issue really in biotech with getting to a 100,000,000,000,000 would be the patent cliff. Right? In, like, in big tech, Apple and so on, these guys don't have to deal with patent cliffs, but big pharma certainly do. So the the other day, for example, you guys had a guest on the show talking about AI versus biotech, and it's perfectly true.
+Speaker 1: But just to be clear that like if companies could actually enforce patents where it's like no one else can create a login button. You cannot log in to an account Yeah. Of a software product.
+Speaker 2: Pull to refresh is technically patented but uninformed.
+Speaker 1: Yeah. So so there is patents but yeah, they just don't get Encouraged. Don't get enforced. And there's an argument that that's probably a great thing.
+Speaker 2: Yeah.
+Speaker 8: Yeah. I guess I guess in in biotech and pharma, the so the the drugs can only be sold for for a big price at for about twenty years, at which point they go off patent and then the price drops by 95%. So if you have, like so the biggest drug in the world today is tizepatide, which did about $51,000,000,000 of sales already this year, which is insane. Right? More than the big AI labs.
+But as it goes off patent, then the generics come through and it will dwindle those revenues away for Lilly. And I think a 100,000,000,000,000 in pharma is gonna be very difficult.
+Speaker 2: Is there any world where the CapEx required to actually compete with a $50,000,000,000 drug becomes a market dynamic like cost prohibitive? Any analogy there? Or will you just get a ton of small compounding firms and a ton of generics companies that underwrite smaller investments and just sort of like eat away? Because I've always heard about the patent cliff and you lose 95% of your gross profit on But day I've also heard that Eli Lilly and other Novo are actually struggling to stand up just the manufacturing equipment required because at a certain point when you're shipping $50,000,000,000 worth of a drug, you're talking about, you know, not just a little lab that's making like one rare cancer Yeah.
+Speaker 1: It's not already exist. Getting a drug through trials.
+Speaker 2: Yeah. And I guess like Tylenol is sold in by the billions of pills probably. I don't know. Is there anything there? Mean, so
+Speaker 8: trials themselves are very expensive, right? To run a clinical trial, each patient in the trial costs about $50,000 and so the big trials cost over $100,000,000 So that is kind of a moat in itself. But, I'm not I'm not too sure about
+Speaker 2: that. Is is that speeding up or slowing down? Like, we generally have, like, the ossification of governments. Governments are getting bigger. It feels like it takes longer to get things at the DMV and whatever.
+It feels like things are slowing down. We're certainly building less houses. Permitting reform is top of mind on the right and the left. And I'm wondering, but at the same time you have AI, you have all these tools that should speed up review. Do you have a feel for where we're going over the next couple of years?
+Speaker 8: Sorry, I think it's still very slow, right? So from target identification to phase three takes about nine, ten years. And then even after phase three, it then takes a long time for it to get kind of adopt Yeah. Get, like, adopted in the clinic. Right?
+Speaker 2: Yeah.
+Speaker 8: But can AI speed these things up? Yeah. Absolutely. From from kind of every step I think AI can speed it up. Even like the some of the paperwork is very slow.
+Right?
+Speaker 2: Yeah.
+Speaker 1: What has what has China done on this this front? The chat is
+Speaker 2: Steal everything.
+Speaker 1: No. No. I mean, like a lot of the a lot of trials are are are happening
+Speaker 2: Oh, yeah.
+Speaker 1: There now and and just overall development because But of the cost I don't know about the speed advantage.
+Speaker 8: Yes. So it's definitely it's definitely cheaper in China. So I I spent the last week of you guys in in this big conference, ASCO, at the cancer conference, and lots it's very interesting. Lots of the most innovative stuff is actually happening out of China. So they've got, for example, some fascinating bispecific antibodies, which is a kind of new cancer drug or new modes of action for these different cancer drugs.
+So they're doing not only are they doing fast following, which they they certainly are, but they're also doing some very innovative stuff as well. What people are kind of worried a little bit about in US biotech is the big farmers doing deals with Chinese biotech. But I I think if we have China and The US kind of competing with each with each other, if you're on the side of medicines, if you're on the side of patients, I would say more competition is better.
+Speaker 2: Yeah. Tell us about your company. Tell us about what you're working on.
+Speaker 8: So I'm, yeah, so I'm a medical doctor. But so we started a company called Stomatic Labs which is actually aiming to speed up this process of drug development and getting drugs to patients faster. So one of the reasons that drug development is so slow is because of so one of the essential steps in the regulatory process is something called a systematic review, which is basically a big boring literature review. It takes years currently. It's done manually.
+We used AI. We have a little team. We used AI to automate many of the steps and do it in more like four hours rather than like two years.
+Speaker 2: Mhmm. I know a guy who does something similar. He gets around the whole systematic review. You just like you text him on like signal or telegram and he doesn't doesn't interface with the FDA at all. He'll just send you exactly the drug like whether or not it's approved.
+It works perfectly. I'm kidding. Joking. What has progress been like? How far are you in like the r and d phase?
+How are you scaling up? Like have you raised money? Give us the flavor of the business at this point.
+Speaker 8: So it's early. It's early. Okay. So pre pre seed. Cool.
+So we have a product. It's on the market. Yeah. And it's being used by thousands of people. Okay.
+Cool. Working on working on raising a round. We have some customers in big pharma, in academia, in biotech as well. But it's early. It's early.
+We're still just kind of rolling it rolling it out and ramping it up.
+Speaker 2: How like, is there a market to sell software to the FDA? Like because my dream might be like I'm excited about speeding up things for biotech and biopharma. Like I feel like they will figure that out and you'll be a piece of that. But what I really want is like an API from the FDA where you can submit something and then it like programmatically runs or automatically runs like as many of the tests that it can possibly delegate to just tell you, okay this is going to get flagged or like you have a typo here or you forgot to attach this document. And so you're getting like this red yellow green response from a robot and then at a certain point you say, okay, I'm passing all of the programmatic like computer based checks.
+Let's actually call in a scientist from the FDA who's in short supply and have them review it. I have no idea how you would actually go about getting that into the FDA. Neither do I. Yes, it's a good idea. One
+Speaker 8: thing the FDA has said recently they're doing, they're going run these things called real time trials.
+Speaker 2: Right? So at the moment, what
+Speaker 8: we do when we run clinical trials, the data are kind of blinded and locked until the end, and then they open it up and have a look. Mhmm. But if you could run a real time trial, you can see if there's an efficacy signal or a safety signal early and then stop the trial if it's working or not and then get the drug either stopped or moved into patients faster. Yeah. So that's one of the kind of things that the FDA is doing.
+As for selling into the FDA, I'm not sure.
+Speaker 2: Good luck. Hopefully you get there. I don't know. I feel like you should be speeding up both sides of the equation eventually. Yeah.
+But obviously it's early. Amazing traction though. Thank you so much for coming
+Speaker 1: on Wait. We we didn't get to talk about the Please.
+Speaker 2: Talk about whatever.
+Speaker 1: Pancreatic drugs? Yes, Was that was that part of the impetus for
+Speaker 2: Is it fair to say that pancreatic cancer Like is is that how far we can go or is this just because standing ovation, I have high expectations. I'm like, okay, It's cured.
+Speaker 8: So standing ovation, definitely high expectations. It's not cured.
+Speaker 2: Okay.
+Speaker 8: So the the reason it's such a big deal
+Speaker 2: Yeah.
+Speaker 8: And the reason everyone was so quite so excited the other day and, you know, it's it's not an easy crowd to excite because everyone's kind
+Speaker 2: of oncologists and scientists and so on. That's a good point.
+Speaker 8: So the reason it's quite so important is really two reasons. So pancreatic cancer is a cancer with miserable survival rates. So five year survival is Steve Jobs famously. Yes. It's about three percent for metastatic disease and most diseases metastatic at diagnosis and that number hasn't progressed in decades.
+That's the first reason. The second reason is because mainly this disease pancreatic cancer is driven by this one protein called Ras and forever really this protein was considered undruggable, totally undruggable because it's this kind of small little compact protein you can't get a drug into. You can't design a drug to kind of fit in there, slot into a pocket. So what this company Revolution Medicines did is they used a very kind of innovative creative approach to drug the molecule using a molecular glue. And if you do that and you put it in pancreatic cancer patients, they were able to double the median overall survival versus the standard of care chemotherapy, as well as improve quality of life, as well as so the new drug has actually fewer serious adverse events than chemotherapy.
+So it's kind of creating a totally new
+Speaker 1: drug double it, that's taking survival rate from three percent to six percent?
+Speaker 8: So, yes. So in the trial, it is so it's the details are it's second line metastatic pancreatic cancer and the overall survival with the chemotherapy is about seven months and with the drug is about thirteen months.
+Speaker 1: Significant. I'll
+Speaker 2: take But those not odds and
+Speaker 1: say
+Speaker 2: cured. Not cured. But it unlocks a path to a cure that it's like the door was open to the mountain to the hike and now we're going on the hike amazing because before we weren't even on the trail.
+Speaker 8: Right. And there was it's a good day to talk about this as well because there was a new kind of So update breakthrough this new drug is called daraxoraciclib. Yeah. It's going to kind of lay I think it's going to lay the kind of baseline of therapy in pancreatic cancer, and we're now going to be able to add new drugs on top of it in order to improve its benefit. And we saw exactly that today.
+So there's a new drug from a company called Tango Therapeutics, and they they added their drug on top of daroxamrozib and even improved the survival even further.
+Speaker 2: Wow. So I
+Speaker 8: think exactly we're going see that.
+Speaker 2: Very very cool. Amazing. Well, thank you so much for coming on the show.
+Speaker 1: Great to meet you, Sam.
+Speaker 2: Great to meet you. Good luck with the round. Talk you soon. Goodbye. Cheers.
+Let me tell you about Figma. Agents meet the canvas. Your AI agents can now create and modify your Figma files with design system context. I'm pulling for a cure for liver psoriasis because I'm trying to go hard this summer.
+Speaker 1: Just kidding. That's your favorite.
+Speaker 2: Yeah. We were in the Wall Street Journal. The Wall Street Journal wrote an article about TBPN reacting to Leopold's 13 f. They put a screenshot of me and Jordy and a meme from the Truman Show and Leap Trader. If you're leap trader underscore on x you're in the Wall Street Journal today.
+Now as they needed to come up with some sort of excuse for putting us in the journal so they wrapped it in a profile of Leopold Aschenbrenner I guess. But no, it's an interesting article. The 24 year old AI whiz who counts Gain Street as an investor. You probably saw the highlight stats showing up on the timeline. Twenty four years old, 20,000,000,000 under management now, up 270% after fees this Standing ovations.
+Speaker 1: Standing
+Speaker 2: One of the best to ever do it. Investors now include Jane Street. Jane Street is an investment investment in situational awareness particularly notable because the firm rarely allocates capital to outside money managers. So Game recognized They put a quote from me in the journal. I said, we have not seen this level of attention on a hedge fund's filings in a very long time and I agree with that.
+It was a fun fun thing. A little bit of backstory on the fund. Later that year Ossenbrenner launched his hedge fund firm which he described as a brain trust on AI with Karl Schulman, another AI intellectual who once worked at Peter Thiel's macro hedge fund, Thiel Macro. Early backers included Stripe co founders Patrick and John Collison. Good to see them getting a win.
+As well as Daniel Gross and Nat Friedman. Good to seeing them getting a
+Speaker 5: win. Dwarkesh also. Dwarkesh. That's an early backer.
+Speaker 2: Who are both currently helping lead Meta's AI platform efforts. And so situational awareness, they actually lost money once in early twenty twenty five after deep seek but they've been on absolute run. They ended 2025 up about 200% when most hedge funds are like, we'd like to do 13%, 15%, 20% would be amazing. Yeah. 200% absolutely legendary.
+Speaker 1: Impressive. Call it a shot.
+Speaker 2: Very impressive. Yes. Well, we have our next guest here in the waiting room. Let's bring in David Kirtley. James Street should do
+Speaker 1: a mafia episode.
+Speaker 2: They should. That would be a lot of fun. Or a poker match. They should do a they should do a world series of poker because poker is very popular over there. Anyway, we have David Kirtley from Helion Energy.
+He's the founder and CEO. David, how are you doing? Welcome to the show.
+Speaker 9: Hi there. Thank you for having me today.
+Speaker 2: Thank you so much for taking the time. Long Long overdue. I think most people will be familiar. But how are you describing the shape of the business these days? How you got here?
+How long it's taken? What the current milestones are. Take us through the intro.
+Speaker 9: Awesome. Thank you. So I am Dave Kirtley, CEO of Helion Energy and we build fusion. So what we're announcing actually last week was that we raised a Series G, a $465,000,000 round.
+Speaker 2: Hey, John.
+Speaker 1: Sorry to interrupt.
+Speaker 2: Fantastic.
+Speaker 9: Awesome. Yeah. And and that's the key building. So, we've built now our seventh generation system called Polaris that does fusion here in Washington State. And then this allows us to keep moving, beginning construction of our eighth generation system.
+This is for a power plant for Microsoft that use fusion energy.
+Speaker 2: Cool.
+Speaker 9: And then expand manufacturing. We wanna, the the key to how do you build fusion fast is you is you gotta build the hardware. And so we spend a lot of time focusing on manufacturing and investing in that. And so we're 60 x ing our manufacturing line that produces the electronics and the capacitors and the modules for fusion right now.
+Speaker 2: Give us the fusion one zero one, the different paths that you could have gone down and then the technology that you chose because it is different than I think what some people have seen other fusion companies working on your particular strategy. So walk us through it.
+Speaker 9: Sure. So, fusion energy is what powers the universe. That's what happens in stars and supernova. And, but we don't really use it here on Earth except more really in academic and national lab settings for the most part. So our goal at Helion and my personal goal is I wanted to solve the energy crisis and bring that universe power to Earth.
+And in fusion, what you're doing is you're taking lightweight isotopes, hydrogens and heliums, things that are found everywhere, and then at pretty extreme conditions, literally thousands of atmospheres and hundreds of millions of degrees. You force those together, they fuse, form heavier elements and electricity. The problem is is that what we see most folks in fusion, in fact, in my career do, is do all that to generate heat, to run steam turbines, to run cooling cycles, and all the other things that we we normally do for power. And at Alien, our goal was can we do something a little bit different? Mhmm.
+Can we directly harness the magnetic and electric energy from that reaction at really high efficiencies, to to get and extract electricity and then sell it. And so that's what we set out to do. We've built now seven generation of machines that do that direct electricity extraction and then show that you can do fusion.
+Speaker 2: So talk about the road to q greater than one, Q engineering greater than one, all the Mhmm. All the different milestones that it's interesting. You have a you have such a in in Fusion, you have such a solid like ground truth for your KPI that is very different for other businesses. It really is like there's scientific milestones and it's very measurable. The energy that goes into the system must be less than the energy that comes out.
+But talk about that path where you are today, where you need to be in 2030 to meet your goals.
+Speaker 9: Yeah. And I think that there is actually some room to talk about that ground truth in terms of what you need for the business. Because our goal in at Healian anyway, is not to focus only on those scientific milestones, but to do it in a way that makes electricity. Yeah. And so, that's actually something we sent out that's different about Healian Yeah.
+From the beginning is extracting electricity directly, getting that out to the grid, and then showing that you could do that at really high efficiency. If you can extract electricity at 95% electricity, now the fusion just has to do that little bit. Yeah. And so the systems can be smaller, faster, and easier. And so that's what we proved to do.
+So we've we've set out to do. So we built now seven generations of system of systems, set world records for plasma temperatures, plasma plasma plasma pressure, plasma energy, and then and then also showed we could do some of the electricity piece of extracting electricity from it. So we're running our seventh generation system Polaris right now. Its goal is to show you can make that electricity and make electricity from fusion so you can go out and build those power plants with it.
+Speaker 1: How big is the system?
+Speaker 2: I was gonna ask about size. Yeah. I I mean, we've seen small fusion reactor companies that are making effectively like a battery that could go in a vehicle or spacecraft. Obviously there's, you know, the Chernobyl nuclear reactor that everyone knows. But where do you sit?
+Did you wind up in that particular position? And then what's the strategy if demand winds up being one megawatt? I come to you and I say, I want 10 megawatts in one facility. How do you meet that demand? Or do you just sit it out?
+Speaker 9: Yeah. So our goal for Microsoft, the PPA, the power purchase agreement we have with them, is to build a 50 MW facility. So that's industrial scale power. It's not your house. Yep.
+But it is not large scale data centers.
+Speaker 2: It's actually my house. I I need 50 MW personally. But speak for yourself. No.
+Speaker 1: What are you doing?
+Speaker 2: I'm training I'm training models for myself. I got to do it.
+Speaker 1: Sovereign Household Sovereign AI was very, you know, 2025, 2026. Household AI is the new wave.
+Speaker 2: So 50 megawatts at one You're gonna need
+Speaker 9: juice to do that.
+Speaker 2: Yeah. Mhmm. You're gonna need some helium. So so is it one system, a series of systems, racks? Like, how how do you how do you think about industrializing that capacity?
+Speaker 9: It gets to the thesis of the business. Mhmm. What I tell the team is that if we're the first to build a fusion power plant and that's all we do, then we've totally failed as a business.
+Speaker 2: Yeah.
+Speaker 9: That our goal is to build systems that are deployed globally at scale.
+Speaker 6: Mhmm.
+Speaker 9: Fusion can do it and we need to make that happen. And so, of that is building systems that are modular and scalable and deployable. And so, the vision is that you're building a 50 megawatt scale generator, each one on that scale at our facility, Gigafactory is a fusion production that then can be put on a truck, delivered to the site, plugged in and run. And if you need 500 megawatts, you put in 10 of them or 12 of them so you have some redundancy. And then and then you can scale from there.
+And so, you think about that in that modular building piece. Well, I like how we think about data centers and breaking those into those modular pieces that you can then mass produce and then deploy at scale and deploy them quickly. And so that that's what we focused on doing, even to the point of being annoying where, even for our seventh generation system, we built it at our parts in our factory, put them on a truck, drove them down the street and well, really in the parking lot
+Speaker 2: Yeah.
+Speaker 9: And then plugged them in to go get Polaris assembled. And so keeping that same philosophy of mass production and reliability and and scale so you can lower costs and timelines is really important.
+Speaker 2: So what is the what is the capacity of a single system these days? 50 megawatts. 50 megawatts and we'll then you chain them together to get to bigger numbers for particular projects. Got it.
+Speaker 9: With Yeah.
+Speaker 2: Yeah. Sorry. Please.
+Speaker 9: I was say gonna with the technology we have now, there's some fundamental physics limitations for fusion of trying to scale it down and scale. Yeah. And so so our goal is is is smaller scale if we can get there, but fusion scales to the big scale easy.
+Speaker 1: Yeah. That's great. What are your timelines around the number eight, the PPA with Microsoft, all that kind of thing? Because we a lot of the nuclear founders that we've had on, everything's really exciting. It feels like it's happening.
+And then you you ask about the timeline and it's This 20. Yeah. 2034. Yeah. And you guys have been making, you know, very incremental progress and but I'm curious how you think about it.
+Speaker 9: Yeah. So our goal for the Microsoft program is is to have our power plant out there built in 2028 and start early operations and then scale that up from there. The key to that is a couple of key things is getting started early. It's been now a couple of years that we've been working on that power plant facility. And I think you you point to some of the the challenges in nuclear industry around regulatory and permitting.
+So that's one thing that fusion shines is that we've been able to get out go out and actually get all the permits. The environmental permits were granted last year. We broke ground on actual power plant last year, and now built two buildings on the site and are building the third, and starting this year on that that power infrastructure. And so that's really exciting to be able to go get that hardware in the ground, get built, and then and then here in Everett behind me actually in the factory start building some of those early prototypes and components for Orion itself. And so that's what we're working on, all of that in parallel.
+It's a little crazy, but the world needs it and we got to get it out there quick.
+Speaker 5: It's happening.
+Speaker 2: What's the regulatory side of business look like? Do you need to get something that we tested a dome like we we're more familiar with like the the the fission side of the business which makes a ton of sense when someone's creating a new nuclear reactor. Like them to test it in a remote location under a dome in case it explodes. But there's a very different set of risks here. I don't know that there's anywhere near as many.
+But there's still probably some oversight. So what does that look like?
+Speaker 9: So, when we founded Helion, it was something I was really worried about because there wasn't a really clear regulatory framework. And white space is good in a lot of engineering and science but it's not great in regulatory and policy. And so, we spent a lot of work on that. But, the good news is a year and a half ago, we got a law passed called the Advance Act, which very solidly, by going through the real technical rigor of what are the risks of fusion, the nuclear regulatory agency made the determination and then and then we got a law passed to support that, that the nuclear regulatory agency does not need to regulate fusion. In fact, it's regulated by the states, by the Department of Health.
+So, we're regulated like a particle accelerator in a hospital.
+Speaker 2: Sure.
+Speaker 9: It's still serious and it's still industrial scale with lots of licensing and regulatory work. But the timeline is now on the order of a year or less rather than a decade. And so that's that's the big difference. And it comes to a lot of the safety cases of why fusion is just fundamentally different.
+Speaker 2: And in general, if I tour Helion's facilities, there's probably no radioactive material anywhere on-site. Is that roughly correct? Because you're not using plutonium or uranium?
+Speaker 9: So we're definitely not using plutonium or uranium. The systems can't melt down, go critical or any of those kinds of things. But it is still an atomic process, what happens in the sun and what what we build here on earth. And so, do have to consider, just like in a hospital and a particle accelerator in a hospital, the radioactive materials. And there are created and we spend a lot of work making sure we can handle those.
+And so, we've been licensed and regulated by the state to be able to handle those
+Speaker 2: Got it.
+Speaker 9: In that similar way for a number of years now. And so, we spend a lot of time and have a big team that does it to make sure that we're handling this safely in a way that, you know, the public can believe in and trust. It's Very really important that you do that and you talk about those things.
+Speaker 2: Well, glad you have more funding to work on it and Yeah. It's I'm very
+Speaker 1: And the timeline is very exciting. Yeah. I am. I'm now thinking about the opportunity to do the first fusion powered podcast on on-site when you when you guys when you and Microsoft we might have to call in a favor with Satya and say, hey, can we siphon off?
+Speaker 6: Can we
+Speaker 2: borrow it?
+Speaker 1: Can we borrow a little a little juice? But really impressive progress and and excited to follow along.
+Speaker 2: Have a great rest of your day.
+Speaker 1: Congrats to the team.
+Speaker 2: To you soon. Goodbye. Let me tell you about public.com, investing for those who take it seriously, stocks, options, bonds, crypto, treasuries and more with great customer service. Let's go over to the retail corner presented by public of course. Matthew Zeitlin says, the idea that SpaceX is being quote dumped on retail is a little silly.
+Retail almost certainly wants to buy like 10 x of whatever is possible. He said, I'm just not moved by the index fund stuff. The index funds own the stock markets. It's basically part of the stock market. Are you gonna do?
+Go find a way to neutralize your exposure if you're so mad about it. That's a good point. With the public, you could create the S and P four ninety nine if you want. But
+Speaker 1: Well, SpaceX isn't gonna be in the S and P.
+Speaker 2: I think they will be.
+Speaker 1: No. They're the one they're the one index that pushed back.
+Speaker 2: I think that the profitability hurdle has been has been met because of the new Google deal. I think that SpaceX, Oh, when they go public is that new in
+Speaker 1: the last think this is new.
+Speaker 2: I think that Google is now buying about $1,000,000,000 a month of compute from SpaceX. And between that between the Google deal and the Anthropic deal and probably lower burn from just things generally because you're going out and you want to make sure that you're in the fighting in fighting form. I would expect to see a profitable quarter very quickly to that will lead to Okay. Indexing deal.
+Speaker 1: Not like five days.
+Speaker 2: Yeah. Probably not five days but I would probably say within the first year it's possible. And S and P four ninety nine is just is just an idea. There's other indices that it matters.
+Speaker 1: Can't can't the S and P just look at Goldman's estimate that they're gonna have 470,000,000,000 in 2030?
+Speaker 2: Good point.
+Speaker 1: Can't they just lean on that?
+Speaker 2: They could. No. They actually can't because it's in their rules that you have to be actually GAAP profitable. But Elon is marshaling the profits from a variety of companies that have money to pay. But I but I take issue with this with this question of retail almost certainly wants to buy like 10 x or whatever's available.
+There's so much available. It's not some low float, oh, it's GameStop and like a bunch of mean traders can fire it up. Like this is $60,000,000,000. Like I don't know that retail can deploy what 10 x that? $600,000,000,000 is coming out of retail like Robinhood accounts?
+Are you kidding me? Like, no. I like like I don't know that that's the I don't think that the like maybe maybe what happens is the indexes come in and they anchor and then there's employee lockups and then Elon's not selling. So the effective float is low enough that retail is actually fighting for shares and moving the price and they are the marginal trader, which would be the biggest win ever because then you can move the retail army off of talking about the moon and Mars and all the long term stuff as opposed to having a bunch of financial investors that are like, what have you done for me lately? What's going on this quarter?
+Which is not where that business wants to be. So I don't know. Chad's predicting a bloodbath for retail. We'll see. I don't know.
+Yeah, subtract my $135 from 60,000,000,000. It's a lot. I still don't, I'm not putting in the dumping on retail. I'm just saying that like I think that Matthew, friend of the show, love him, but I don't fully buy that if the retail allocation is 10,000,000,000, that there's a 100,000,000,000 of demand just because it's such a big number One thing I will say I don't know. We'll see.
+Speaker 1: It's hard to find a bear that's actually willing to short it.
+Speaker 2: That's a great point. That is a fantastic point. It is a very very dangerous proposition. Wait. Is this true?
+No. This is a joke. Morgan Barrett is joking around, has a screenshot of Erawan advertising the SpaceX IPO. SpaceX IPO access is in the Erawan rewards. I know this is a joke because Jordy would have told me if it was real because he's in that app.
+Five times a day his screen time it's like Erawan and then x then Messages. Text Yeah. But Erawan's at the top. No.
+Speaker 1: Messages. Pull up this post from Cosmos and then we'll go to our next guest. Yes. Can Cosmos is saying, hey Siri, find me a trademark lawyer. This is Andy If McEwen's you zoom in, you can
+Speaker 2: see That's the same logo.
+Speaker 1: It's the exact same logo. And I do know that Andy does in fact have trademark on this design.
+Speaker 2: Wait. So so that is the new Siri loading icon?
+Speaker 6: Or
+Speaker 2: is that just this app is loading actively? I don't know. This is this is an odd odd demo. At the same time, it's six dots. I don't know.
+It's six dots like it's
+Speaker 1: Your honor, it's six dots.
+Speaker 2: It's six dots. Like, can you just can you
+Speaker 1: just It's also potentially a different
+Speaker 2: a square or I I can I'm the only one that can use a circle.
+Speaker 1: Cosmos is like a more more from my understanding more like a Pinterest competitor. Okay. It could be a different enough category that
+Speaker 2: Well, Apple also used a Pinterest style dual feed layout in one of their app designs. So, you know, maybe they're ruffling feathers all over the tech industry today but probably giving consumers what they want, so we'll see. Juror comes on and says, like the six dots on my Siri. I'm happy. I was upset about Apple Intelligence.
+I thought they under delivered, but now they're back, so I'm voting Apple. Yeah. The most biased jury in the world. Imagine. Well, we have Pete Florence from Generalist.
+He's the co founder and CEO. Pete, how are doing?
+Speaker 6: Hey, John. I'm doing great. Thanks for having me on.
+Speaker 2: Thanks so much for hopping on. First time on the show. Introduce yourself. Tell us about the company.
+Speaker 6: Awesome. So, really the backstory of the company is, you know, goes back to kind of the story of founders and so for myself, I've been working on robotics and AI for over a decade now. I started my PhD at MIT Super nice success. There you go. Yeah.
+2014. And it was in in grad school at MIT, I met one of my cofounders, Andy Barry. Just an amazing overall roboticist. He was at Boston Dynamics for five and a half years. Then after grad school for me, I was at Google DeepMind.
+And there I worked super closely with another Andy, Andy Zhang. We published a ton of research papers together and, you know, eventually it just kind of there was this overwhelming sensation that to like really match the the shape of this challenge to just go build general intelligence for the physical world that we just needed like, you know, to get the get the dream team together, get all the right folks and and have like a really focused plan on on how we actually build and scale this whole thing and that's what we've been doing for the last couple of
+Speaker 2: years. Haven't you said the word humanoid yet? What's going on? I Is there more to this than
+Speaker 6: I you know, we we think humanoids are are awesome. A lot of people on the team have been working on humanoids for for over a decade like back when I when I mentioned when I started grad school, that was the era of the DARPA grand challenge, you know, back like one of the first sort of big humanoid things.
+Speaker 2: This is Rocco's Basilisk. He doesn't want to say anything bad about humanoids. Yeah. Yeah. He's like he's like, they're great.
+They're great. I'm not really working on them right now, but they're great. Don't want say anything bad.
+Speaker 6: There's those two kids
+Speaker 2: because when they rise up, you don't want to be on the record saying
+Speaker 1: You saw those two kids in China Yes. That got kicked
+Speaker 2: Yes.
+Speaker 1: By humanoids. You know what those kids were doing right before the performance?
+Speaker 2: Talking trash.
+Speaker 1: They were talking some smack.
+Speaker 2: Probably talking smack saying that there's a different path to robotic to our robotic future. It's fusion. But take us through it. Like what is the future? How do you see this all rolling out?
+Because I think I think everyone agrees with you.
+Speaker 6: I don't I don't know if everyone agrees. I mean otherwise people wouldn't be spending billions of dollars building only humanoids. But I I do think that humanoids are are really of course like a form a factor that makes a lot of sense for a lot of things. But we we just think the the future is is much bigger than than only humanoids and you know, there'll be billions of robots and and some of them will be humanoids but Yep. Yeah, there'll there'll be a lot of other form factors too.
+Speaker 2: Yeah. Humanoids are the cars and you're building the motorcycle. I like it.
+Speaker 6: I I would say we're we're more like building like in that analogy more and more like building fundamental like engine technology that could be used in motors or used in cars or could be used in planes or
+Speaker 2: you know, whatever you So I mean that feels like it gives you potentially a larger TAM in the near term because like as much as everyone says like oh it's humanoid what is the is the ramp for humanoid robots to actually get into the home? There's so many edge cases in the factory. You have polished floors. Why don't you just have wheels? There's all these reasons why humanoids are the supply chain.
+It could take five years. It could take ten years. But at the same time like Amazon actively has a million robots. Like they just do their Kiva systems. They're rolling around.
+You don't they're nowhere near humanoid but they're incredibly economically valuable. And if you could be a part of that supply chain, you probably have a great business. But what supply chains that we would broadly define as robotic do you see as being like the most near term consequential to your business?
+Speaker 6: Yeah. Great question. So, you know, overall, there's like robotics and and automation has been deployed in a ton of different industries doing a lot of different things. And, you know, we this has been kind of obvious over time to learn from me, but like, we don't want to be doing anything that previous robotics and automations has already solved. We really really want be focused on the things that haven't been solved so far today.
+So in a lot of cases, this is like industries that already have a lot of robots, but there's a lot of different types of applications in these that just, you know, have not been possible to address with with robots before. So Yeah. Things like logistics, manufacturing, the supply chains for those or or the, know, really just like the the rollout of, you know, operations of those at scale, those are really two really obvious areas. But then, you know, the name of the company is Generalist and, know, very much like having these models power robots in a ton of different industries, ton of different applications. That's really what we're doing.
+Speaker 2: Okay. So I have a calculator app. It's written in Python on the back end. It works fine. I could replace that with an LLM and just ask the LLM to guess the answer to every math question I give it.
+That would be inefficient and not really an upgrade. It's possible. My question is let's say I have a factory and I have a bunch of CNC machines with robotic arms that are on deterministic paths. I have some KUKA robotic arms that are all preprogrammed. They take the glass and they put it on the windshield of the car as it rolls along.
+I have a bunch of robots that are programmed that and they're doing their job. They break down. There's all the usual things but why do I want to go from deterministic control and operation of my robotic fleet to something that's stochastic AI driven?
+Speaker 6: Yeah. It's a great question. So some some things, John, like, yeah, yes, and and those types of applications that you mentioned, those are those are already solved by robots today. Like, we already have welding robots.
+Speaker 3: Yeah. Right?
+Speaker 6: Yeah. But there's a lot of stuff that even in, like, very structured roboticized environments, like, it's still very challenging for previous generation like programmed robots to solve. Yeah. The easiest example in like auto manufacturing is like wire harnessing. Oh.
+So the reality is like things like wires or lots of different like finicky, like easy for people to deal with types of objects and applications. These are just out of scope for like traditional, you program the robot to do those things. But that's just auto, like really like the variety of different like industries that are set to benefit from these models that can just, you know, really pick up anything you want them to do in terms of especially what what we focus on is is dexterity is we really think is like the holy grail and this is I think not even that hot of a take within robotics. Everybody in robotics knows that like dexterity has really been the bottleneck and that's the one where we are just like really focused on pushing is making it so robots can use their hands to do, you know really a massive variety of different applications. So
+Speaker 2: is the biggest opportunity taking something that doesn't have a robot in the loop at all and creating a new robot or a system that can, you know, use existing robots to do that task? Or is there still opportunity in, look, I have a KUKA robot arm and 80% of the time it does it right but we have someone there that is taking over and getting on the Xbox controller or something like once or twice a day and that's where we want to bring AI to bear to deal with those edge cases? Or is it more of the wire harnessing like you're not doing that with a KUKA robot arm at all and so we're going to unlock that for the first time?
+Speaker 6: It's much more of the latter. Okay. Much much more of the unlock, right? Yep. And I think even from what we've seen so far and just like you know, starting to announce these these models that that we've been announcing and starting to see people that have been coming us Mhmm.
+Coming to us for what they want them to use them for, like, we just have this like, you know, there's this general sensation of like this explosion of interest of like, oh, I've never thought about using a robot at all Mhmm. For this entire application and now, okay, I see. We we can start to get these robots to very quickly and very reliably and with good speed and all all these other things that are needed to really deploy these things, that this is this is coming online. And, yeah, it's it's really much more of this unlock for all these different things that we haven't really been able to use robots for before.
+Speaker 1: It feels like the way that robotics are naturally diffusing, which is, you know, kind of behind the scenes.
+Speaker 2: Sorry. Watching that. I didn't see the video of this. This robot slapping at kids so bad.
+Speaker 1: So bad. We'll play them after you jump off.
+Speaker 2: Can stay on.
+Speaker 1: So the way that robotics are diffusing is naturally in industrial settings behind the scenes And it feels like there could be massive amounts of progress being made and relatively little hype around it because the people that are experiencing these products in real time aren't necessarily on x just being like, this model changes everything. I no longer write, you know, I no longer write code. I just prompt, etcetera, etcetera. Is is that feel at all accurate?
+Speaker 6: I I I think, you know, what I think about there is that the industrial applications, we think are are are likely to be the ones that really start to ramp even more quickly than more like consumer type or, you know, like home type applications. You know, of of course, there'll be like more and more robots in people's homes, but in terms of these things like really starting to scale, we do think that, you know, industrial is is is more likely to take off there. But we're also like super excited about everything that will be happening in in more like consumer and home type applications. So, you know, that that's, you know, one of the, you know, just fundamental strategies of focusing on the model intelligence and it can be used in in all these different cases is we do think industrial is more likely to take off soon. But, yeah, we're we're super excited about supporting, you know, more consumer and and home type things as well.
+Speaker 2: Data, benchmarks, evals, what's the current thinking? The sim to real gap, puppeteering, I mean there's so many different pieces of, but I want to get up to speed on like your philosophy on each of these like trade offs. Like how much do you believe that you know, the scaling laws apply versus just, know, we've seen all these crazy companies of doing like you'll wear a camera to collect training data for humanoid robots like a what's company the data not collection training like free
+Speaker 1: house cleaning.
+Speaker 2: Yeah. Yeah. What's your data collection thesis? What's your eval benchmarking thesis? Like how do you know you're getting better?
+How much of it is qualitative versus quantitative? Like take me through that side of the business.
+Speaker 6: Totally. These are all, you know, very very good and very core questions.
+Speaker 2: Yeah. I know it's like five questions that we could spend an hour on Exactly. Each of
+Speaker 6: Tell me everything. You know, we think what I would point to here, right, is like we we've started to to share a fair bit on like what we kind of think is is really core and and what drives like all the decisions that we put into our model. You know, going back to, you know, you mentioned scaling laws. We announced our our gen zero model back in November.
+Speaker 8: Yeah.
+Speaker 6: And I I think, you know, it it really was the the first time in robotics that anybody had shown, like general scaling laws, right, where we can predictably advance performance with more and more computing data. And of course, this is something that for for all the AI researchers that have known what has been happening in all the other domains, like, is of course something that that we we were expecting to happen. And GenZero back in November, it really was the first time that anybody had showed shown this. That was back in November. You know, fast forward just five months, April pretty recently, we announced the Gen one model.
+And it's it's quite a bit better model. And and like, you know, the biggest point nice. You're just we've shown some videos here which I I can give some color on. It's it's really quite a
+Speaker 2: have a whiteboard and this is a job in our studio. So Tyler, I'm sorry.
+Speaker 1: It needs to be erased.
+Speaker 2: It actually needs to be erased. Tyler's Everything on the
+Speaker 1: board is irrelevant now. See if we
+Speaker 6: can get a robot to the studio before too long. But you know, the Gen one model, like, it really is starting to cross into, like, these levels of performance that we think for certain types of applications. And we try, you know, to always under promise and over deliver, so there's plenty that we still have more to go. We feel very early overall in like the general journey Yeah. Of general intelligence for the physical world, but starting to cross over into levels of performance where these things are commercially viable for a good number of applications.
+And we think that this is really like a crossover point where we have like a general model starting to be able to hit levels of reliability and speed and improvisational intelligence where we can start to get these things out there. Very much like, you know, I think that kind of like you take a g p d two level model, you scale it to a gpt three level model Mhmm. And you start to tick over into certain types of applications become commercially viable. Right? If you remember, gpt three started with like copy.ai and jasper.ai, you know, copywriting for ads.
+That was kind of the first thing to take off, few others. And we feel like that's starting to be where we're at with these models for the physical world.
+Speaker 1: Okay. Question. Is it possible that for certain robotic form factors, let's say humanoids, they get to the point where they can do economically valuable work as in the robot can make something, but the process overall is not commercially viable because of the the the CapEx needed to
+Speaker 6: Yeah.
+Speaker 1: To to You're
+Speaker 2: talking about purchase
+Speaker 1: the So like, I've been looking at humanoids do some work and they're able to do some type of process, let's say. And I can say like, okay, maybe right now there's a bunch of humans out there that do that kind of work and you can put a humanoid there. Problem is like a humanoid has all of these different, you know, actuators and motors and batteries and all these different things. And I'm looking at it and thinking, okay, is it possible that the robot sort of just starts like breaking down where, let's say, you spend $50,000 on a robot and it replaces a human, but it starts degrading over time and, you know, many of the parts need to be replaced frequently enough that you're effectively having to just buy replace parts or buy a new robot so frequently that you're better off just having a human in that in that role.
+Speaker 2: Well, I I I actually hired a quid manual lawyer to do my dishes. And so like, even if it's $600 an hour, I'm gonna be saving money.
+Speaker 6: Nice. Yeah. I I whether it's the things whether it's the things breaking down or or whatever it is, like, yeah, any any factor that makes it so that, you know, like what what you need to get done is not getting done and you need to like have somebody looking over their shoulder the whole time, like, that that that makes it, you know, not really at the level of of viability that that I think is really needed for for these things to really scale and be useful.
+Speaker 2: But We're running long. Do you have another minute?
+Speaker 6: Yeah. I'm good. Perfect.
+Speaker 2: Tier list of data sources. I want you do know tier list s? Yeah. Tier is the best a b c
+Speaker 6: I love tier list.
+Speaker 2: Want I want to throw some some data sources at you and you can sort of rank them. So No. First one would be YouTube videos or like internet video. Like transfer learning from there's a video of somebody skateboarding or walking around. Is that a valuable data source?
+Put aside the cost to license it. Just think about the quality.
+Speaker 6: Yeah. This this is great. Yeah. With I don't know the whole set yet, so I have
+Speaker 2: to Yeah. Yeah. It's tough. This is also live, so it's tough to
+Speaker 6: in the whole
+Speaker 2: It is live.
+Speaker 6: Good. No. No. I'll give you an answer. But it's Okay.
+It's not s tier.
+Speaker 2: Okay.
+Speaker 6: It's not A tier. Okay. Maybe I give it a B.
+Speaker 2: B. Okay. Next one.
+Speaker 6: I don't know what else is coming.
+Speaker 2: World models. World models. I've heard a lot of hype about transfer learning from world models. Seems a little bit early but where is that?
+Speaker 6: So world models as a, right, your question upfront was as a data source, right?
+Speaker 2: Data source specifically. So you can generate infinite worlds. You can generate a world of that whiteboard and use that as training data even though it's synthetic.
+Speaker 6: Yeah. I think synthetic data in general in robotics is still a very kind of, you know, open frontier and there's Sure. Not like there's not a huge amount of proof points here in terms of it really enabling. Okay. It's an area I think is promising, but but there hasn't been a ton of proof points here.
+So I would just like C tier. I would put world world models like not as a source of data.
+Speaker 2: Would F to tier. More like Woah. F tier. I'm here. I'm gonna wait.
+Is Radical Ventures in any in any world model companies? I'm gonna give Rob Taves a call and tell him that you're a talking track. And Rocco's Basil is not gonna like this when Fei Fei Li achieves ASI and has a bone to pick with you.
+Speaker 6: It's it's a it's a complicated question. I I think that
+Speaker 2: It's okay. We can move on.
+Speaker 6: The data that is behind these world models. More like the source of data I would say.
+Speaker 2: Okay. Third data source, mocap data. You got a bunch of people in mocap suits. You got them doing things. It's a three d representation, maybe a point cloud, something like that.
+Speaker 6: This is a list of questions. So for me it's not a data source I'm super excited about
+Speaker 2: Another F tier?
+Speaker 6: No. Well, let me explain. We we we, you know, we really care especially about dexterity. Right? Okay.
+And mocap suits of people running around, you know Yeah. Studio is not the main place where you get dexterity. It is good for like, you know, full body, you know, whole body motions.
+Speaker 1: Well, that's your your first issue
+Speaker 6: is your carry on.
+Speaker 7: In my
+Speaker 6: own list, I'd put it C tier. C
+Speaker 2: tier. Tier. Next. I get a lot of Instagram reels from this community. It's the gloving community.
+I don't know if you've heard of the glovers. I don't know this Okay. One So they put up LEDs on the end of their fingers. They wear gloves and they do light shows for each other. It's like a burning man Coachella type thing.
+Anyway Okay. They exemplify remarkable dexterity. Is that going to be an important source of data?
+Speaker 6: We love remarkable dexterity data. Okay. Don't know how much of this this source of data Okay. It depends on what what type of data, not just like what people are doing but what type of data can you extract when people are doing it. So I don't know what sensors the gloves have but Yeah.
+In general the more dexterous the data the more valuable.
+Speaker 2: So without
+Speaker 6: knowing more about it maybe I'll put it b or a.
+Speaker 1: John will start a gloving data labeling
+Speaker 2: Next campaign one, for just the general like open crawl internet data. I talked to a very thought provoking AI thinker at one point and he said that like like with enough scale you could like learn to walk as a humanoid robot just By from reading
+Speaker 1: the way, a pretty heavy hitter robotics founder texted me live and says, Pete is trying to figure out how not how to not say world models suck. And then he says, there
+Speaker 6: it is.
+Speaker 2: What is like the
+Speaker 7: world model?
+Speaker 6: We wrote a blog post on this.
+Speaker 7: We think they
+Speaker 2: have back real in five years and it'll be great. But But specifically just this idea that like to start your foundation model, to do like the earliest pre training, it might be helpful to just start with like general understanding of the world so you bake in like all the Reddit data or all the Internet common crawl, like all of that stuff. Where does that rank on the tier list?
+Speaker 6: So here let me say on this, right? So like exactly this like, you know, idea of like, oh, let's use all the data from the Internet we possibly can and bake that into the robot brain and then that's a source of knowledge that the robot brain has and then we also have the robot learn all the other things. Yeah. That is exactly, like a core that that was like really the core of my work back when I was at at Google DeepMind. Like like and, you know, a lot of the research in there was like things that myself and my co founder Andy Zeng, you know, that that that's what we did.
+Speaker 2: I'm here next I'm very passionate
+Speaker 6: about it.
+Speaker 2: Well Talk me off s tier.
+Speaker 6: Not s tier.
+Speaker 2: Oh, okay.
+Speaker 6: It's it's great. It's it's very it's very helpful. I I would like it it's it's what it's it's something you definitely want. Right? But then Yeah.
+I I would just think about it this way. Like, what's the best way to learn how to ski? Is it read a book on skiing?
+Speaker 1: No. It's to read r
+Speaker 6: skiing. Oh my god. It's to read r slash skiing. That's right.
+Speaker 1: No. No.
+Speaker 6: It's to watch a bunch of
+Speaker 2: Instagram hype reels added into SDKid. That's what you got to watch. You got to get the video training data, not the r slash ski. R slash skiing. I think I had another one.
+I think I had another one. Okay. Okay. The last The point
+Speaker 6: is you want to go skiing, right?
+Speaker 2: Okay. That's the point. The last one is simulation. I gave you, let's call it, Unreal Engine and I have a one to one representation of a particular robot and I can vary the terrain and I can vary the motions and it can sort of goal seek over inverse kinematics model and you can use that to train off of. Where does that fit in?
+Speaker 6: I'd say C.
+Speaker 2: C tier. Okay. Is there anything that's s tier or a tier? Like what way am I missing something or is this the secret sauce? Is this why I got to give you $400,000,000?
+I
+Speaker 6: mean you can take a look at some of the data that we have. We've shared a little bit about what we Okay. You know, I I certainly think that our our data is is very very good. It's Yeah. But it's the the things that create s tier data is not just like, oh, what's the overall like, you know, data capture methodology.
+Sure. But it's also about like what what you know, what are people actually doing? What's the quality of the data? That's the type of thing that's like very hard to, you know, short conversation to put your finger on. But as you sort of like live and experience this stuff all the time, you really, you you you know, you develop this appreciation for what really drives quality.
+And this is one of the things that really drives, you know, like what makes the best language models the best language models. Quality of data is an incredibly important part lived of s tier. Lived experience of of the the physical physical world is
+Speaker 1: s Wearing a
+Speaker 6: Lived experience experience of of the physical world is s tier. That is exactly what it is.
+Speaker 2: I love it. That's a great that's a great philosophy. Well, we gotta hit the gong. $400,000,000, $2,000,000,000 valuation. Thank you so much for coming on the show.
+Speaker 1: Great stuff. Hang on.
+Speaker 2: This is great stuff.
+Speaker 1: Let's do it again soon.
+Speaker 2: We'll talk to soon.
+Speaker 1: Appreciate the live, live, like, the proof of work background too. Robots have been back cooking.
+Speaker 2: They're cooking.
+Speaker 1: They're cooking.
+Speaker 6: It's just every day here. Well, thanks for having me on, you guys.
+Speaker 2: Thanks so much. Talk to you soon. Cheers. Goodbye. Let me tell you about Railway.
+Railway is the all in one intelligent cloud provider. You use your favorite agents to deploy web app servers, databases, more while Railway automatically takes care of scaling, monitoring, and security. And our next guest is here with us live in the TBPN UltraDome. How are you doing?
+Speaker 3: Doing well.
+Speaker 2: Welcome to the show.
+Speaker 1: And the UltraDome. Introducers.
+Speaker 3: Thanks for having me. Jordan Bramble, CEO and founder of Antares.
+Speaker 2: Welcome back.
+Speaker 3: Got some gifts for you guys.
+Speaker 1: Thank you.
+Speaker 2: Oh, hats. Fantastic. I went golfing yesterday.
+Speaker 1: These are good looking hats. I like any you take any hat and you put this flag on it.
+Speaker 2: I like it.
+Speaker 1: It gets better automatically.
+Speaker 2: This is good. What's the occasion for the hat?
+Speaker 3: Well, season's got a 53 on the side of your hat. That's National Labs fifty third reactor. Yes. We just built it, turned it on last week. Fantastic.
+How'd go? Incredible. Okay. Did everything we set out to do. So about a year ago, you guys probably remember this, the president signed a series of executive orders
+Speaker 2: Trying to speed up nuclear.
+Speaker 3: Trying to speed up nuclear. Yep. One of the provisions in those orders called for three reactors to be turned on on American soil Mhmm. By America's 200 birthday, July 4. Mhmm.
+We just turned on the first, a month ahead of schedule.
+Speaker 2: First. Okay. Yeah. Crazy. So you so you took your reactor to INL and you turn it on.
+What is that process? Like how long did you turn it on for? What were you monitoring for? Were there any, oh, we're going super critical. It's melting down.
+Were there any, oh, SHIT moments?
+Speaker 1: Did any you had some I think one of your investors or at least multiple were out there? Yes. Like Jamie was Jamie Flint was over there.
+Speaker 3: Close friend.
+Speaker 1: Did he fall asleep? No. Because there's a lot of debate on VCs falling asleep. But I feel like turning on a nuclear reactor having a nuclear reactor go critical sounds really sounds really exciting, but I feel like in practice you might be sitting there for like, you know, and hours and hours.
+Speaker 2: Yeah. Sounds really thrilling, I mean, it's like inside of a box and you can't really see anything.
+Speaker 6: You're just
+Speaker 1: like It's not a rock wall. Right?
+Speaker 2: It's not
+Speaker 3: a exactly. Yeah. You're streaming, you know, with the same thing the control room operators are Yeah. So you you watch your approach to critical every step of the way. It's intentionally kind of a slow, dull moment to
+Speaker 2: get It's a number on a screen.
+Speaker 3: Yeah. But the exciting thing is, I mean, this is something that, you know, we as a country have not done with a with a with a new design with a non light water cooled reactor in I think like forty years. Mhmm. Right? This is this is the What first privately
+Speaker 2: you do have against light water?
+Speaker 3: Have nothing against them. I think we should build a lot more light water reactors
+Speaker 2: But what
+Speaker 3: can you do it? So we're focused on micro reactors.
+Speaker 2: Okay.
+Speaker 3: Right? So very, very small scale systems, kind of one megawatt and below. And the idea is you put multiple of
+Speaker 2: these What about systems micro together water?
+Speaker 3: Well, what about what about if you want to put a reactor places where you don't have access to water? Right? Like you're not Water?
+Speaker 2: Bring some water with you. Wait. Yeah. Do they really go through a lot of water? Yeah.
+Light water reactors go through a lot of water. Interesting.
+Speaker 9: If you look
+Speaker 3: at where light water reactor typically are, they're
+Speaker 1: They're the ocean.
+Speaker 3: The example the notable exception to this is I think it's Palo Verde in Arizona. Mhmm. So they actually use the waste water stream from from the city of Phoenix Oh, interesting. As a cooling source for
+Speaker 2: the Wow. Okay. Cool. So, obviously, there's lots of applications where you're in the desert, you're in space, you're somewhere on the moon or something, and a bunch of other places where you don't have access to water. That's an advantage.
+Speaker 1: What Yeah. You gotta need save the water for the almonds.
+Speaker 2: Yeah. Yeah, exactly.
+Speaker 1: Like, if we if using a bunch of water to make energy, what are the almonds gonna drink?
+Speaker 3: Yeah. It's good. But there's other benefits too. Right? So so, you know, very very small scale reactors, what you wanna do is you wanna be able to shrink the plant size.
+For thermal efficiency reasons, you typically want to operate at very high temperatures. Yeah. In order to keep water from boiling at very high temperatures Yep. You have to go to higher and higher pressures Yep. Which that creates materials issues and other challenges.
+And so, you know, in our specific design, we're relying on liquid metal heat pipes as the primary coolant.
+Speaker 2: Liquid metal heat pipes.
+Speaker 3: Okay. Small amounts of sodium that vaporize inside of a pipe.
+Speaker 2: Okay.
+Speaker 3: When they condense on the on the cool end of the pipe, they condense into a metal like a wick structure, think like wire mesh.
+Speaker 2: Okay.
+Speaker 3: That through surface tension pulls the fluid back. Okay. And so you have this totally passive process of cooling the reactor that just relies on phase change in a a But very small amount of the other advantage of that is we operate at near atmospheric pressure. Right? Okay.
+These are low pressure systems. From a safety perspective, if something were to happen to the reactor, you don't have a coolant that's going to vaporize and travel over large distances. Yeah. When you have pressurized water, if you lose that coolant, you run the risk of
+Speaker 2: traveling Really low large steam everywhere. Exactly.
+Speaker 3: Got it. Transporting vision products. Right? Okay. This How do
+Speaker 2: you actually generate electricity once you get the heat?
+Speaker 3: So it's called a nitrogen closed Brayton cycle. There's a heat exchanger. Think a tube tube and fan on the condenser section of the pipe. And gaseous nitrogen is removing heat. And then it it turns a turbo machine.
+Turns Like an automotive style turbo charger. Yep. That turns an alternator and that's ultimately how you're making electricity. Interesting. So this test Yeah.
+Does not produce electricity. Yeah. Our goal is is to be there in 2027, and then on customer sites in 2028. Yeah. So, you know, I I like to say neutron's 26, electron's 27, dollars 28.
+Love it.
+Speaker 1: Jordy. It's great.
+Speaker 2: Sorry.
+Speaker 1: Yeah. Are you standing on the shoulders of giants? Like, is this more of a Like, how how much how much of this is Obviously, you're innovating in a bunch of different ways along the way. Had somebody said thirty years ago, hey, this is possible, and then just nobody did it? Or like, what what is the what is the kind of the balance between like execution Yeah.
+I think
+Speaker 3: the nineteen eighties was really the last, you know, roughly the nineteen eighties and then maybe the the early nineties when the Cold War ended was kind of the last time we had the capability to to to do this as a country. And, you know, I love this question, you know, do we stand on the the shoulder of giants? Because the the answer to that is absolutely. So the regulatory process that that we used for this was DOE authorization. And, you know, even that was was was informed by a program that was started roughly eight years ago called Project Pele in the Department of Defense.
+A lot of the lessons learned from that informed this regulatory streamlining. When the president signed these executive orders, I think one of the reasons why ourselves and others were able to jump you kinda jump to action so quickly and and be successful on this was, you know, we as industry were ready to do this. The infrastructure had been built developed really the people had been developed at the national labs and in the DOE to support this over the course of eight years.
+Speaker 2: There were
+Speaker 3: already And there were people reactors. Exactly.
+Speaker 2: Megawatt, right?
+Speaker 3: You know, anywhere I mean, tens of kilowatts up to multiple megawatts. Okay. So, you know, I think some of the military solicitations, they just say 20 megawatts and below.
+Speaker 2: Okay.
+Speaker 3: So all the way down to tens of kilowatts
+Speaker 2: kilowatts. Wow.
+Speaker 3: But, know, our sweet spot is anywhere a 100 kilowatts to like a megawatt. Sure. Potentially even a little more than that.
+Speaker 2: And then you string them together if you need a
+Speaker 3: big Yep. And so most of the military's critical infrastructure, you know, those assets are hundreds of kilowatts to low numbers of megawatts. Mhmm. And so you want that flexibility. And ultimately, that's what's gonna get you the highest capacity factor energy anyways is to have some redundancies built But for the yeah.
+I mean so for example, the fuel that we used, it's called Triso Fuel. The exact specification that we used was the supply chain for it was developed and funded by the Department of Defense under Project Pele. So that that production line already existed. BWST But made the even that was built upon twenty years worth of funded work by the DOE called the AGR program, Advanced Gas Reactor Program. Right.
+And that's really what developed that fuel. So, you know, what it meant was so much of our safety basis. You know, the reason we know that fission products will be retained even at high high temperatures is because of how much qualification work had been done on this fuel. We could point to that in our regulatory engagement and that really speeds things up a lot. Right?
+Yeah. You get to delete some of the extra safety systems. It actually saves you a lot of analysis work because you're you're relying on the the the the fuel fundamentals itself. So, you know, that's one thing. Right?
+If we tried to do this ten years ago, I don't know if it would be possible because, you know, that date data Yeah. Didn't exist to the degree that it does now. You know, the the the regulator in DOE Idaho, you know, a gentleman came out of retirement to do this.
+Speaker 1: No way.
+Speaker 3: This is something he'd been Patriot. Waiting his entire career to do. And on our joint test group so there's this thing called a joint test group. That's representatives from Antares, Idaho National Lab, Department of Energy, all in one room driving decisions. The the person representing INL's operations in that had known the DOE regulators since 1979.
+I just found out that last week that they've been and this is the first reactor they've done together since before 1979.
+Speaker 1: Wow. So Came out
+Speaker 3: of retirement. Absolutely stand on the shoulder of
+Speaker 1: last tour.
+Speaker 2: The whole narrative around no new nuclear reactor since 1979 Mhmm. Is somewhat of a good rallying cry for the nuclear industry. But I I wonder if there's actually a benefit to sort of reframing messaging around nuclear to acknowledge the fact that I believe The United States generates more nuclear power than any other country including
+Speaker 3: China and France. It's about 20% of our base load power.
+Speaker 2: Yeah. And so France has a higher percentage of their base load power. Yeah. But they produce way less electricity
+Speaker 6: Yeah.
+Speaker 2: Just generally. Smaller
+Speaker 3: country. But
+Speaker 2: lower population.
+Speaker 3: Less industrial.
+Speaker 2: And so there's a different take. Right now, the the whole messaging path for nuclear is like we're so behind. We can't make anything. I feel like there's a more inspirational tone which is like, no, we're literally number one. Let's not lose it.
+Like we actually make the most nuclear power of anyone. So let's just continue doing what we're great at. Sure. We have some problems with approving new stuff. Yes.
+We need to modernize. But this we're we're we already have the crown. Let's just defend it.
+Speaker 3: Well, that's that's again what I think is the beauty of this program that the DOE developed in response to the president's executive the reactor pilot program. Yeah. Is on a very tight schedule, we just got to show the world like we can continue to do these things. And, you know, I I kind of retroactively look at it. I would say, you know, the design work is difficult.
+Mhmm. Regulatory work, actually, you know, comparatively easy. You might take on this as if you integrate safety into the design process itself. If you lead with engineering rigor, the regulatory stuff can kind of take care of itself. Mhmm.
+Especially when you have a bought in regulator like this. Mhmm. The hardest part of all was, you know, when we actually got through operational readiness with the DOE and started operating a nuclear facility. Mhmm. Right?
+So like really the last two weeks of getting this thing turned on was the hardest part of all. The know, you asked kind of about oh shit moments. Yeah. Definitely no oh shit moments when it comes to safety. You you design up front to ensure that that's not the case.
+Yeah. But from the build and integration side and actually operating this this facility and this reactor, huge learning opportunities. Right? So one of the first things, this was the first time that we had set up our control system, all of our nuclear instrumentation with neutron detectors with a startup source. Right?
+Because it's a nuclear facility. You don't just do this in a warehouse in California. Right? Yeah. And so, you know, we started seeing
+Speaker 1: I do worry sometimes that there's a warehouse in El Segundo that's, you know, stretching the limits of Yeah. But, yeah, I'm glad.
+Speaker 3: Yeah. Well glad
+Speaker 1: you're going about it this way.
+Speaker 3: Yeah. We we don't. You know, we we comply with our regulator. But, you know, we our reactivity control system, we rely on rotating drums with a boron carbide insert layer to absorb neutrons. So we can close those shut or rotate them out to modulate reactivity.
+And when the actuator motors themselves are operating, we were seeing electromagnetic interference with our neutron detectors. And so we went through this like five six day process to go figure that out and troubleshoot it. And it's really these kind of like integration activities being incremental, being iterative. That's how you ultimately mature the technology technology quickly so that you can get to a true commercial product.
+Speaker 1: What what's the next step?
+Speaker 2: So Hitting the gong.
+Speaker 1: Hitting the gong.
+Speaker 2: Yeah. Hitting the gong. Yeah. For it. We're turning the reactor on.
+Speaker 3: So, you know, we put a couple million dollars into this facility getting it ready to be a be a be nuclear reactor test bed. We're gonna take the same fuel, same facility, scale up to produce electricity there. Interesting. And what that means for our customers right? So we've announced an agreement with the Air Force to do several megawatts of power for Joint Base San Antonio in Texas.
+Cool. We expect to announce more military installations by end of this year. Yep. What that means for them is the first reactors that are going to their sites have operational heritage. They're not true for a civic kind systems.
+Right? Because we spent our own capital in testing these. So that's really next for us is and in the lead up to that, we're actually going to test the power conversion system itself in our own facility. So, you know, generally our our approach to technology development is we start with the subsystems. Yeah.
+So we rigorously qualify those. We've got 322,000 square feet of manufacturing space in Torrance. Then we do integrated what we call electrically heated tests. So instead of having to go through the regulatory process Mhmm. And do a nuclear test, we replace the nuclear fuel with cartridge heaters and can test the system or some snapshot of the system with electrical heat.
+Mhmm. Which also that means you can take it take it apart afterwards, see what some of the thermal effects are. So we've already tested our system at at full thermal power for for six months and we're gonna repeat that test again this year with some design iterations. Then we'll test the power conversion system, then we're gonna put it all together and do it in a nuclear reactor.
+Speaker 2: So a $140,000,000 raised.
+Speaker 3: Thank
+Speaker 2: you. I don't know what you spent last year, but I wanna know a little bit about like where the uses of funds goes
+Speaker 3: Have gone so far.
+Speaker 2: Is it all
+Speaker 1: like nuclear took I mean, obviously, there's more cost, but something like $2,000,000 to set up this this Yeah. Test facility and
+Speaker 2: But is there is there like an ingredient or or a piece in the supply chain that's really expensive and you need millions of dollars for? Yeah. Or is it like nuclear scientists are really expensive, like AI researchers? Mhmm. Because a lot of these folks, like, there aren't a ton of jobs because the industry is contracted.
+So I imagine it's not like this crazy bidding war. So it's like, what is what is the binding constraint on the financial side?
+Speaker 3: Well, you know, to to me that's another reason why these tests are so important Yeah. Because, you know, not only are we validating some of the reactor physics, but we just exercised our entire supply chain. And so we walked out of this test. Yeah. Knowing, you know, the lead times we were quoted, the cost we were quoted, you know, tolerances, quality expectations.
+Does that actually match up with what we see in reality? Yep. In some cases, the answer is no. Right? And and, you know, we're gonna iterate and improve on that.
+That informs some of the things that we're gonna vertically integrate in house versus areas where we're gonna continue to double down with some of the same suppliers. Fuel is by far the most expensive thing in a micro reactor, the total life cycle of the fuel itself. Yeah. But the other thing spending
+Speaker 2: like millions of dollars on fuel?
+Speaker 6: Yes.
+Speaker 2: Really?
+Speaker 3: Yeah.
+Speaker 2: Yeah. Absolutely. So it is like a significant cost.
+Speaker 1: Got it.
+Speaker 3: Yeah. Okay. Yeah. Mean, it's the largest single line item in the bomb That
+Speaker 2: makes sense. Of the
+Speaker 3: reactor itself. Not a big surprise,
+Speaker 2: but Not BOMB. BOM. BOM. Bill of materials. Yeah.
+Nuclear energy.
+Speaker 1: You you gotta figure out the new new term for that Yeah.
+Speaker 3: I'll just say no acronyms. I just say bill of materials. Yeah. Well, but
+Speaker 1: I was like, the what now?
+Speaker 2: The what now? What do you you have a secret project going on?
+Speaker 3: Yeah. So but what I think you'd you'd be surprised by that's also really expensive is all the nuclear instrumentation. So
+Speaker 2: Okay. So
+Speaker 3: Yeah. Need if you really break them down into their are probably like $50,000 worth
+Speaker 2: of made by one company, very expensive
+Speaker 3: a lot of reactors, you do it so infrequently, it ends up being being just, you know Yeah. To keep the lights on you have to charge a really high price.
+Speaker 2: That makes a ton of sense.
+Speaker 3: You know, those are things that you learn from these tests. What is this stuff really mean, a lot of times in these industries pricing is proprietary. Right? So you you learn that from doing these things. And that informs what you're
+Speaker 2: the first time that I'm gonna have to spend a million dollars on this thing. Yeah. Because you can't yeah. It's gotta be hard when you're pitching too to sort of forecast out like, okay, what's everything gonna cost? But if you hire the right people, I'm sure they have like
+Speaker 3: We've been able to refine a lot of that at this point just from from And now you know. Exactly. Yeah. Yeah. I mean, we know exactly what our fuel is gonna cost.
+We know how long it takes to transport it. Yep. You know, we know what our all of our nuclear instrumentation costs. Sure. And that's what really drives most of the cost of these systems Yeah.
+At the end the day.
+Speaker 2: And also, I mean, like, there's there's like I don't know. Like, I can probably name like four or five promising nuclear projects at the early stage. Obviously, there is some competition, but it feels like such a such a like everyone can win market
+Speaker 1: Competing competing for infinite demand.
+Speaker 2: Yeah. Infinite demand and then and then also that that that has the benefit of like deeper in the supply chain. That you can justify a company like General Matter because there's three Right. Startups that are growing and five scale ups and 10 public companies or governments that might buy. And so all of a sudden, get another company deeper in the supply chain creating more competition, creating more supply
+Speaker 3: Yep.
+Speaker 2: And so more problems are getting solved.
+Speaker 1: It's exciting. Why military bases? I'm gonna guess that secure setting, strong willingness to pay for like a Yeah. Secondary source
+Speaker 2: You don't need work in all the diesel fuel?
+Speaker 3: So, I mean, we believe and this was this is I think obvious at this point, but this was really foundational to us back in 2023. The military is the best first customer for advanced nuclear. And so, you know, I think first piece of evidence for that is the army alone has a $2,000,000,000 budget for its Janus program to buy micro reactors for military installations. That's money that's gonna be committed to buy and deliver reactors between now and twenty nine, twenty thirty. Mhmm.
+So huge market for data centers and hyperscalers. But what they're signaling is, you know, they're willing to make small equity investments, MOUs, LOIs. But until this technology is mature and proven, you know, they're not really spending the big dollars yet. Yep. Whereas the military is saying, we need this technology.
+We're going to invest them alongside of venture backed companies Yeah. Through programs like JANIS and ANPI. Sorry for the acronyms. But that's the approach that they're taking. The other thing is regulatory expertise.
+So between the Navy and the Army, you have regulatory licensing authorities that already exist and they're leveraging the DOE license licensing path, you know, alongside of the DOE in an interagency process. So this reactor that we just built, we had army reactors, regulators in the room for that every step of the way getting to, you know, in partnership with the army getting familiarity with with our design. They're gonna take all of that back into their next licensing activities for their programs as they try to put this technology on their basis. Right? We had naval reactors in the room.
+We had the NRC in the room.
+Speaker 2: So Yeah. The Navy is really the best place for a long time for decades if you wanna be in Yeah. Nuclear engineering. Like some of the best Totally.
+Speaker 1: Come out of there.
+Speaker 3: So, I mean, the Navy builds multiple reactors a year. They've built four and a half times the number of reactors as the entire civilian sector and
+Speaker 2: And they they operate a ton of them in in extreme conditions Yeah. On aircraft carriers.
+Speaker 3: Most extreme of all. And and they never stagnated in the seventies the way that the Yeah. Civilian sector did in nuclear. It's crazy. So the last thing I would say is there's a mission capability need here with with the Yeah.
+Military. Right? So it's about resilient power. You know, over the last decade, more and more of, let's call it, war fighting effects are generated from assets that exist on our installations here inside of The US. So whether that's command and control, sat com, cyber warfare, our strategic deterrence like our nuclear weapons assets, Space superiority, how do you affect other people's assets in space?
+Much more of that is generated from here inside of the continent Continental US. Yeah. And you contrast that with the old world of war fighting where you just ship troops across the world and and go invade other countries. Yeah. Yeah.
+And fuel. And at the same time, we've got adversaries that are capable of disrupting the civilian grid. Yeah. And so how do we sustain these assets? How do we continue to operate them without access to a liquid fuel supply chain, without access to a commercial grid?
+Nuclear fission is is is the, you know, highest capacity factor form of energy we have that's available to us today. Yeah. And that's what drives that willingness to pay. So Yeah. We believe, you know, long term we'll go after data centers, you know, we'll do like remote industrials.
+We want to do everything in nuclear. But the companies that win those are going to emerge from military work first. Mhmm. Right? Because our work with the military, we're gonna come out of this with more reps for our operators, more reps Sure.
+Regulatory reps, more operational proof points of the technology at scale.
+Speaker 2: More low
+Speaker 3: that Yes. Will Yeah. This is a customer that will invest equity and debt Yeah. In your supply chain to lower your input.
+Speaker 1: Yeah. And the private market is Yeah. Is or or sorry, like a hyperscaler is gonna be much more commercial, much more short term. What for me tomorrow? Yep.
+Because otherwise I'm going to allocate these dollars to gas turbines or something.
+Speaker 3: Exactly. And and many complex technologies work this way. GPS Yeah. Right? You know, if we didn't have nuclear weapons driving the need for GPS, when would we have gotten DoorDash?
+Right?
+Speaker 1: Yeah. Or yeah, when would we have Internet. Right?
+Speaker 3: Yeah. Yeah. The Internet. Rocket propulsion. That'd a great example.
+Born from the military first and then scale commercially.
+Speaker 1: Prediction markets. Yeah. Maybe.
+Speaker 2: No. Tyler knows the truth about the prediction market in Genesis.
+Speaker 3: You know, was a big prediction market around this. Really?
+Speaker 1: Really? Around around the the July 4 deadline?
+Speaker 3: Which reactors would turn on by August or July 4, yeah. Wow. So Wild.
+Speaker 2: Well, thank you so much, Carron. Thank you very much for
+Speaker 3: having me. This was fantastic. Congratulations.
+Speaker 2: Thank you.
+Speaker 1: Last question, are you Yeah. Any buzzer beaters? We got less than a month. You think there'll be others that
+Speaker 2: Oh, yeah. Are you are you trying to make it better?
+Speaker 1: Actually, don't even comment because I don't want
+Speaker 2: People are gonna you're gonna move the market.
+Speaker 1: So Yeah.
+Speaker 2: Yeah. Just say I wish them
+Speaker 6: all well.
+Speaker 1: Just we'll see.
+Speaker 3: I wish all of
+Speaker 2: them luck. There we go.
+Speaker 3: I I mean, like you said like you said, the country needs a lot more nuclear energy. We're all gonna be
+Speaker 2: It's not zero.
+Speaker 3: Production. Yeah. We're all gonna be production constrained before it's competitive constrained. For For sure. You know, I think the advice I would offer to anybody working at it is start operating a nuclear facility as quickly as you can because that's when all your challenges start.
+Speaker 2: Just do
+Speaker 3: it. Yeah. We've got just under a month left on
+Speaker 2: the Stop making excuses. Yeah. Start operating a nuclear facility. Yeah. It's good advice.
+Speaker 1: Good advice.
+Speaker 2: Thank you so much for coming
+Speaker 1: to Of the course.
+Speaker 2: Yes. Thank you so much for
+Speaker 3: having me.
+Speaker 2: We'll talk to you soon. Appreciate
+Speaker 1: it. Awesome stuff. Well, we'll talk soon.
+Speaker 2: Let me tell you about Cisco. Critical infrastructure for the AI era. Unlock seamless real time experiences and new value with Cisco. I got an idea. Lot of are trying to we're we're we're closing out on the nuclear thing.
+Lot people are trying to unblock the nuclear regulatory You got to deal with lobbying. You got to deal with getting approvals. MLM for regulatory. So you employ a ton of people, you promise them financial freedom, get them on Facebook and they're all of a sudden they're DMing their high school friends, hey man, trying to catch up. Turns out I'm a lobbyist for the nuclear now.
+Would love to get a beer, you know? Then Actually
+Speaker 1: hosting an event.
+Speaker 2: My house. Look, oh oh, you don't actually work at the Idaho National Lab? Well, you should join me. Be under me and then you go find someone from INL, start lobbying them, create multiple layers, become sort of a pyramid structure.
+Speaker 1: Pyramid.
+Speaker 2: And this is the way we abundant energy to America.
+Speaker 1: Could be powerful. Anyway, got pull up these videos.
+Speaker 2: Have to watch these videos extremely important. I knew
+Speaker 1: you were gone there. I'm ready. Let's pull this up.
+Speaker 2: The latest and greatest in humanoid robots. You asked if we were ready, we're ready. Look at this. Boom. Boom.
+That is brutal. It is such a crazy hit. It's really spinning around and he sees it coming. It's bad to laugh. No.
+That's This is America's Funniest Home Videos.
+Speaker 1: What was the parent doing?
+Speaker 2: What was the parent doing? What was the robotics company doing? And what is that scarf?
+Speaker 1: That looks
+Speaker 2: so Is scarf part of the problem?
+Speaker 1: I'm sorry. That's intentional.
+Speaker 2: Think You this is intentional? You think this is viral marketing?
+Speaker 1: That's a foul.
+Speaker 2: You think this That's is a foul. Wait. But do you actually think this is a stunt? Like how can we go viral for our Can we tell what brand it is?
+Speaker 1: Can kind of see the logo on it.
+Speaker 2: Well, if you're It's unitary, right? Yeah. You think so?
+Speaker 1: Yeah. It's not definitely.
+Speaker 2: There's This is why in America we keep the humanoid robots in the cages for cage matches for that robot fighting league that Tyler went to.
+Speaker 1: Oh, we need a That's a G1. Do we know if there was a human pilot? Yeah. Or is this an How much of
+Speaker 2: this is AI versus just random? Wow. Well, there's another crazy, crazy humanoid robot video. We can pull up this one next. A robot Stop wearing a clown putting accessories oh my god.
+One is just This
+Speaker 1: one I would act like
+Speaker 2: I'd press charges.
+Speaker 1: I hope the
+Speaker 2: This is a legal liability.
+Speaker 1: I hope the child is okay because that looks like
+Speaker 2: It's a really crazy it's a It's internal not a soft leather shoe. It's not a foot. This is a steel metal bar that's hitting you with a lot of energy. This is why is this happening so often? Like once is not an is too much.
+Once is too much. Stop. We need to pause. Yeah.
+Speaker 1: Or just create some type of barrier between the children and the robots. Yeah.
+Speaker 2: Have we not invented fences? Have we not invented
+Speaker 1: And watch it like sort of like stagger back.
+Speaker 2: It realizes it knows it did something wrong.
+Speaker 1: All right. But pull up this picture. I mean this is starting to make sense.
+Speaker 2: Okay. Explain.
+Speaker 1: The it looks like have you seen the the picture of the robot's Average face
+Speaker 2: mosh pit experience. This is wild. Is absolutely
+Speaker 1: Sending Yeah.
+Speaker 2: Also, if you if a robot comes at you swinging like this, you have Did full
+Speaker 1: you see its face, John?
+Speaker 2: That does not look good. I don't like that at all.
+Speaker 1: I mean, no surprise.
+Speaker 2: No surprise, though. No surprise. This is not helping the Terminator narrative. Yeah. If a humanoid is swinging at you like this kicked
+Speaker 1: the child? I'm shocked. I'm shocked. I'm shocked.
+Speaker 2: You have full approval to just drop kick it back. It's war at this point. If you come out swinging, you gotta
+Speaker 1: put your Where foot were the the parents there to put that robot in a headlock Yeah. Take it down.
+Speaker 2: Submit. Try that thing in America. Good luck. A dad is gonna you've seen those videos of like the dad saves. Have you ever seen these hype reels?
+It's like a dad and like the kid is about to fall off the swing and the dad like dives and like catches the kid with one hand or the famous one where a baseball is coming in. He's at a baseball game. The dad has the kid, drops the kid, has a beer, catches the ball and then catches the kid. We got to find this video. It's one of the best.
+Anyway, someone can someone can hunt around.
+Speaker 1: We can close out here. Airhorse one? Airhorse one.
+Speaker 2: Let's do it. Airhorse Could
+Speaker 1: you tell if these are
+Speaker 2: AI generated? No. No. Horses fly and when they fly they fly in stables on planes and it looks like this. They call it Airhorse one and they're and this is because horses from all over the world are going to the Olympics for equestrian events and the event is called Airhorse one.
+But this is from 2024 and this image is older from previous Olympics or from a previous equestrian event. It's one of the most expensive parts of being into equestrianism is that you rise the ranks, you become a great show jumper and then you have to pay to fly your horse on a plane around the world to compete. It's absolutely crazy. Anyway, thank you so much for tuning in. You don't want to go through cars?
+There's there's so much news in the car world. This is a crazy one. So both the Jaguar double o and the Audi Nuvolari which we talked about at Palantir AIPCon on Thursday both of these cars were designed under the same design director Massimo Frascala. I don't know. Massimo.
+Massimo designed both of these and they look sort of similar and I think a lot of people are coming around to this design style. And I think this design style might be so widely adopted sort of like like Cybertruck might have been a little bit too aggressive, had some baggage with the Elon thing. I think when you start seeing the Jaguars, if they make this in different colors, obviously pink and light blue are very bold colors. Not everyone wants this. I think the reception to the Audi was much better purely because it's gray.
+But I think if you see a Jag in black, matte black, even white or gray or dark green, like you're going to like that vehicle. Producer Ben doesn't
+Speaker 1: like r eight purist says looks like a Minecraft r eight. I like it. I think it's cool. I think that it, you know, it just it it screams, you know, super car version of the Cybertruck
+Speaker 2: Yeah.
+Speaker 1: To me.
+Speaker 2: Which I think people have been waiting for. People want a Roadster it's and been delayed for a decade.
+Speaker 1: But yeah. I think with the Roadster, we're going to get something that looks more like a Model s. Like I would have said all the cars kind of just like morphed together there.
+Speaker 2: Do you remember the original pitch for the Roadster?
+Speaker 1: It was.
+Speaker 2: So zero to 60 under two seconds, doable. The price was crazy.
+Speaker 5: Flying?
+Speaker 2: Flying potentially. But the really crazy one is that the range was like 600 plus miles of range. So you just have this tension of like how do you make a lightweight car with that big of a battery can deliver zero to 60 in under two while also doing so? Usually there's a And trade off so the whole the whole thing that broke everyone's minds was that it was just it was just trade off defying in so many ways on price range and
+Speaker 1: Aren't they adding some type of like SpaceX jet engine to try to overcome that?
+Speaker 2: I think I think it's
+Speaker 1: starting to leak out that that's maybe the secret. Like there's an additional
+Speaker 2: Yeah. Like a natural gas turbine that then acts as a range extender. Like if they put a V12 Now it's leaking just a naturally aspirated V12 range extender, it just gets you all so then you have 600 miles of range because you fill it up with like 40 gallons of gas. And if you put 40 Just gallons of gas
+Speaker 1: for launch. Just for launch. Yes. A little little boost
+Speaker 2: That'd be crazy.
+Speaker 1: From a jet engine.
+Speaker 2: I mean, there are very interesting The other fan car apparently works. Did you know this? So there are That's cars
+Speaker 1: the fan on the
+Speaker 2: fan on the bottom that creates more downforce and I believe it's been tried a few times. It's very cumbersome to build, very expensive. But it but that technology was banned in f one and I believe that the fan car actually does create more downforce and the trade off between the extra weight from the fans and all of that is actually outweighed by the downforce that you get. So you do if you were to build around that philosophy. Yeah.
+And so you could do something like that. There's a whole bunch of interesting things that you could do. I'm optimistic. I
+Speaker 1: Going back to Massimo Yes. The designer of the Yes. Jaguar and the new Audi. Yes. So Audi's rebrand, I was just looking it up Yep.
+Was in late November Mhmm. Or mid November in 2024. Masimo left in 2024. Yes. But he left it right at the beginning Yeah.
+In January. Yeah. And so he basically was like, alright, if I
+Speaker 2: work I designed it. Just put a normal color on the car. We'll be good.
+Speaker 1: Have a normal launch campaign.
+Speaker 2: James Bond, dark green. You're good to go. You're good I've done all the hard work for you. All the CAD files I sent a over. This
+Speaker 1: billion dollar car.
+Speaker 2: This is a billion dollar car.
+Speaker 1: Can't mess it up. You're not going be able to mess it up.
+Speaker 2: Just put, yeah, George Clooney in it. My work here is stuff. They went crazy with it.
+Speaker 1: No. But I'm glad I'm glad he's
+Speaker 2: I think he's doing good work.
+Speaker 1: Someone in the chat said that the future should look like the future. I agree.
+Speaker 2: Is a good example of that. And I still think the Cybertruck, it looks like the future. Is very opinionated cars. Does tend to be. Yes.
+So Nick Cruz Pattanes says all the VW group does is rebadge their cars, Audi, Porsche, Lamborghini and upsell them to double the price or more. It's so obvious. So it does look a lot like a Temerario. That's cool. But that's Temerario is a great car and the new design looks very different and it looks like an Audi.
+It looks like where Audi is going and
+Speaker 1: Yeah.
+Speaker 2: The Temerario looks where Lamborghini is going. So I think that's cool. The crazy thing is $686,000 for an Audi. That is well above where the r eight priced when it came in as the halo car. Like the r eight was what?
+$1.30? $1.50? And a nice Audi at that time was maybe $60.70. And so you're looking at like a two to three x bump. No one's buying $200,000 Audis right now.
+Speaker 1: The good news is people with $600,000 burning a hole in their pocket, they'll have the option of choosing between a Luche
+Speaker 6: Yeah.
+Speaker 1: Or this new Audi.
+Speaker 2: What do you think of my my anti halo car take? So everyone knows a halo car. Classically, the Audi r eight is a halo car. Expensive super car V10, dollars 150,000 as we mentioned, but it creates a halo effect around the brand. Everyone sees the r eight, oh, it's so cool.
+Maybe I'll get an a four, maybe I'll get a q five, a q something like that because I it has the aura of the R8 on it. Some of the design language comes over and, you know, the RS six Avant, it's not an R8. I need something more practical but it has the aura of the R8. That's the way the halo car works. The same thing happens in Ferrari with the s b three Daytona, the f 80.
+Even if you get a two ninety six, you're wearing the badge that's worn by the most elite, the f 40, right? Luche potentially anti halo car because as soon as as soon as everyone started dunking on the Luce I noticed that people started feeling way more positively around the s f 90 and the Purosangue Yeah. Which for a long time people have been saying the SF90 is too expensive, the price is dropping, I don't even like it. I can't tell the difference between it and the two ninety six. Now people can.
+Now people have opinions. Same thing with the Purosangue. Oh, it's Oh, they shouldn't be doing an SUV at all. I don't care that it has naturally aspirated V12. Now people are like, oh, it has a V12?
+That's amazing. The Prosong way is a steal. This is And so it feels like you could have this effect that by diversifying the portfolio, you wind up with way more people saying, yeah, will get a ProSonway. Yeah, will get an SF90 because it is true. No one's complaining about SF90's hybrid system anymore because at least it's not full electric.
+Right?
+Speaker 1: This is the new meta, horned cars. Got halo cars.
+Speaker 2: Devil horned cars.
+Speaker 1: Yeah. Just horned cars.
+Speaker 2: Put the devil put the horns on another car and then you will sell the rest of the portfolio potentially. Everyone's everyone's projecting that like this is the way Ferrari's going to go and it's going to be all Luches and everyone's going to be buying Luches and like I don't know how fast that can happen. I think I think there's going be a lot of demand for the for the classic Ferraris for a long time. Anyway. Anything else you want to talk about today?
+There's another
+Speaker 1: There's always more stuff to talk about. It is crazy you can get a '2 two thousand and twenty three r eight. It has a v 10 for $309,000.
+Speaker 2: There's 300 now? No way. That's not right.
+Speaker 1: This is a yeah. I think this is a low mileage model.
+Speaker 2: Audi r a prices range from 60 k to $2.50.
+Speaker 1: Yeah. But this is a low mileage
+Speaker 2: Okay.
+Speaker 1: V 10 with a lot of options.
+Speaker 2: I'm going with the beater. I'm going with the one with three accidents, no Three. No CARFAX. Three accidents. Three accidents.
+Florida owned aftermarket wheels.
+Speaker 1: Florida with three accidents? V eight. It's crazy.
+Speaker 2: Yeah. Wrapped. Sign me up. I'm ready to spend 60 k. Wrapped.
+We go. Used 2011 used 2011 r eight. $80,000, 32,000 miles, minor to moderate damage. Yes. It is currently damaged, but it's an $80,000 supercar.
+What's not to like? It has a 10 cylinder. So that's good.
+Speaker 1: Well, I just thought it was notable
+Speaker 2: because Three plus summers.
+Speaker 1: You get top of the line spec from 2023 for 300 with a V 10, or they're now they now want 600. And I do think I do think there's enough
+Speaker 2: That's crazy.
+Speaker 1: Enough fans of the r eight from from the past that I do think this car quickly trades probably at least 700, maybe beyond that.
+Speaker 2: Yeah. Well if you're a true fan, you'll go for the one with a little bit of damage because you don't care. Oh, this is a crazy one. Okay. Now we're just shopping for r eights.
+Anyway, thank you for tuning in. Thank you for watching TBPN today. We'll see you tomorrow at 11AM sharp. Give us five stars on that podcast with Spotify. Sign up for newsletters.
+See you again tomorrow. Goodbye.
