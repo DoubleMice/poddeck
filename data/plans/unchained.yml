@@ -1,15 +1,120 @@
 source: unchained
-refreshed_at: 2026-06-10T04:37:48.569Z
+refreshed_at: 2026-06-10T18:57:26.765Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 128
-done: 0
+done: 1
 pending: 0
-needs_transcript: 125
+needs_transcript: 124
 transcribing: 0
 transcribe_failed: 2
 downloaded: 0
 episodes:
+  - id: 4705fd8a-6488-11f1-9b12-bf727c9f47e0
+    title: "The Chopping Block: Zcash Infinite Mint Bug + AI Hackers vs Formal Verification + NEAR's Agent Vision"
+    duration: 3390
+    published: Wed, 10 Jun 2026 15:00:00 -0000
+    published_sort: "20260610"
+    first_seen_at: 2026-06-10T18:57:26.763Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4468999810.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4468999810.mp3
+    image: https://megaphone.imgix.net/podcasts/4705fd8a-6488-11f1-9b12-bf727c9f47e0/image/0f4308215455961435a8ab510d39da92.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Mert and Illia autopsy a brutal weekend in crypto: Saylor's $3M test sale that taught him there's no sell button,
+      the Zcash bug Claude found that could've minted unlimited counterfeit ZEC, formal verification as the bulwark
+      against AI attackers, and whether NEAR's agentic commerce vision is real. 
+
+
+      Welcome to The Chopping Block — where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert
+      Leshner chop it up about the latest in crypto. This week we've got two heavy hitters: NEAR Protocol co-founder
+      Illia Polosukhin and Helius founder Mert Mumtaz.
+
+
+      We kick things off with the weekend market meltdown -- Saylor sold 32 BTC for the first time in four years, STRC
+      is trading below par, and Mert argues the real damage is that Saylor sucks all the air out of the room for actual
+      crypto innovation. Then we get into the biggest story of the week: a critical bug discovered in Zcash's Orchard ZK
+      circuit using Claude Opus 4.8 that could have allowed infinite counterfeit minting inside the shielded pool. Mert
+      walks us through the emergency soft fork, the Ironwood migration, and why formal verification is about to become
+      table stakes. Illia makes the case that AI-powered attackers have a permanent asymmetric advantage and that we
+      need real-time on-chain detection systems to survive. Tom coins the analogy of the episode: we're moving from
+      building boats to building spaceships. We close with Illia's pitch for NEAR's agent commerce vision – $240M in
+      single-day volume, private intents, and the claim that agent-to-agent trustless commerce is already live – while
+      Mert remains a friendly skeptic. Let's get into it.Listen to the episode on Apple Podcasts, Spotify, Pods,
+      Fountain, Podcast Addict, Pocket Casts, Amazon Music, or on your favorite podcast platform.
+
+
+      Hosts
+
+
+      ⭐️Haseeb Qureshi, Managing Partner at Dragonfly 
+
+
+      ⭐️Tom Schmidt, General Partner at Dragonfly 
+
+
+      Guest
+
+
+      ⭐️ Mert, Co-founder & CEO at Helius
+
+
+      ⭐️ Illia Polosukhin, Co-founder of NEAR Protocol
+
+
+      Timestamps
+
+
+      00:00 Intro
+
+
+      01:17 Weekend Crypto Meltdown & Bitcoin Crash
+
+
+      02:52 Saylor, STRC & the DAT Death Spiral Fears
+
+
+      11:51 "No Sell Button" — Saylor's Lesson Learned
+
+
+      13:14 Zcash Bug: 50% Crash Explained
+
+
+      20:30 The Fix: Ironwood Pool & Formal Verification
+
+
+      23:11 AI vs Crypto Security: The Attacker Advantage
+
+
+      27:21 What Is Formal Verification?
+
+
+      30:07 Spaceship-Grade Smart Contract Security
+
+
+      31:36 OPSEC, Oracles & Anomaly Detection
+
+
+      36:08 Cypherpunk Dilemma: Stop the Hack or Not?
+
+
+      38:37 Will DeFi Survive? Long Math
+
+
+      42:49 NEAR's AI Agents & Intents Vision
+
+
+      48:43 Is Agentic Commerce Real? Mert's Skepticism
+
+
+      Disclosures
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-10T18:57:27.941Z
+    transcript_job_id: 204285b3d78b42ab86ec83bccb43c9bc,fc1b948fe6f3443694d458f03128278c,4489a8d408bb4ae4899af73e537f747c,f16d2a83fd0b40b28c0df3b800d5dde2
+    transcript_completed_at: 2026-06-10T18:59:59.878Z
   - id: 800520c0-5fa1-11f1-99ad-cfe68f34d64e
     title: "CFTC Approves True Perps and Agentic Finance Gets Real: DEX in the City"
     duration: 3014
@@ -5392,6 +5497,7 @@ episodes:
           
 
 
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5575,6 +5681,7 @@ episodes:
       Unchained:⁠⁠
 
         
+
 
 
         
@@ -6781,6 +6888,7 @@ episodes:
           
 
 
+
         
       Previous appearances on Unchained:
 
@@ -7712,6 +7820,7 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
 
 
         
@@ -8904,6 +9013,7 @@ episodes:
        
 
 
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -9298,6 +9408,7 @@ episodes:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
 
+
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
@@ -9527,145 +9638,6 @@ episodes:
         Klarna Launches Stablecoin Built on Stripe’s Tempo Chain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: c3b8a8bc-ecb2-11f0-b158-b777fc84e642
-    title: "The Chopping Block: 2025 Winners & Losers + 2026 Predictions - Ep. 998"
-    duration: 4094
-    published: Thu, 08 Jan 2026 17:00:00 -0000
-    published_sort: "20260108"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://unchainedcrypto.com/podcast-chopping-block/the-chopping-block-2025-winners-losers-2026-predictions/
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3745165429.mp3
-    image: https://megaphone.imgix.net/podcasts/c3b8a8bc-ecb2-11f0-b158-b777fc84e642/image/9d4aa05d64771a965d9e362b3539edfd.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Welcome to The Chopping Block — where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert
-      Leshner chop it up about the latest in crypto. It's a new year, and that means the crew is back with their annual
-      year-end awards and predictions episode.
-
-
-      First up: the 2025 winners and losers. From Trump's meme-coin windfall to Gary Gensler's legacy getting torched,
-      from prediction markets going mainstream to Web3 getting its official eulogy — no one is safe. The team debates
-      the biggest surprises (Circle's shocking IPO run, Ethereum's pivot under new leadership, Zcash's unlikely
-      comeback), the best new mechanisms (ICO 2.0, DATs, federal preemption), and the year's best memes (including the
-      Chopping Block's own tariff factory video).
-
-
-      Then comes the flops and comebacks: AI agents that overpromised, Berachain's fall from grace, and Tether somehow
-      winning again. Finally, the crew reviews how badly their 2025 predictions aged — spoiler: not great — and lays out
-      fresh calls for 2026 including AI-powered hacks, stable-coin-funded AI capex, and equity perps taking over DeFi.
-
-
-      New year, fresh takes, brutal honesty — let's get into it.
-
-
-      Show highlights
-
-
-      🔹 Biggest winner debate — Trump's meme-coin empire, prediction markets going mainstream, and M&A consolidation
-      reshaping the industry.
-
-
-      🔹 Gary Gensler's legacy destroyed — Haseeb declares his SEC tenure the biggest loser as every initiative got
-      reversed.
-
-
-      🔹 Web3 pronounced dead — Tarun writes the epitaph on the "ownership economy" thesis as NFT sentiment hits rock
-      bottom.
-
-
-      🔹 Bitcoin as biggest loser? — Robert's controversial pick: BTC underperformed in a year that should have been its
-      best.
-
-
-      🔹 Circle IPO shocks — From skeptics to $70B market cap, the stablecoin thesis briefly took over Wall Street.
-
-
-      🔹 Ethereum pivot surprise — Vitalik's leadership shake-up and new EF direction restored optimism no one expected.
-
-
-      🔹 DATs dominate mechanism talk — Robert calls them highest "absolute value of impact" — amplifying volatility
-      both ways.
-
-
-      🔹 AI agents flopped hard — From mania to annoyance, the speculative thesis collapsed and sentiment turned
-      hostile.
-
-
-      🔹 2025 predictions reviewed — The team confesses their misses (150K BTC, 5x AI agent caps) with Tom winning at
-      2/3.
-
-
-      🔹 2026 predictions dropped — AI-generated $100M+ hacks, stable-coin-funded AI capex, and equity perps hitting 20%
-      of DeFi volume.
-
-
-      Hosts:
-
-
-      ⭐️Haseeb Qureshi, Managing Partner at Dragonfly 
-
-
-      ⭐️Robert Leshner, CEO & Co-founder of Superstate
-
-
-      ⭐️Tarun Chitra, Managing Partner at Robot Ventures
-
-
-      ⭐️Tom Schmidt, General Partner at Dragonfly 
-
-
-      Timestamps
-
-
-      00:00 Intro
-
-
-      00:26 Crypto Industry Overview
-
-
-      02:39 Biggest Winners of 2025
-
-
-      07:32 Biggest Losers of 2025
-
-
-      13:29 Biggest Surprises of 2025
-
-
-      22:24 Best New Mechanisms of 2025
-
-
-      28:49 Best Memes of 2025
-
-
-      33:24 Best and Worst Pivots of 2025
-
-
-      39:15 Biggest Flops of 2025
-
-
-      41:31 Biggest Flop of 2025
-
-
-      42:58 Bitcoin's Disappointing Year
-
-
-      45:30 Biggest Comeback Stories of 2025
-
-
-      49:12 Favorite Guests of 2025
-
-
-      52:40 Reflecting on 2025 Predictions
-
-
-      56:33 Predictions for 2026
-
-
-      Disclosures
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>134. 【数据的综述】和谢晨聊，新时代的石油、历史、版图、数据金字塔、定价与Recipe</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 36px;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #111;
+    margin-bottom: 8px;
+  }
+  header .subtitle {
+    font-size: 15px;
+    color: #868e96;
+  }
+  header .meta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #adb5bd;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+    color: #111;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 10px;
+    color: #333;
+  }
+  p {
+    margin: 12px 0;
+    color: #333;
+  }
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .overview-card {
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .overview-card .label {
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .overview-card .desc {
+    font-size: 13px;
+    opacity: 0.7;
+  }
+  .card-blue { background: #e7f5ff; border-color: #1971c2; }
+  .card-green { background: #ebfbee; border-color: #2f9e44; }
+  .card-yellow { background: #fff9db; border-color: #f08c00; }
+  .card-red { background: #fff5f5; border-color: #e03131; }
+  .card-purple { background: #f8f0fc; border-color: #862e9c; }
+  .card-orange { background: #fff4e6; border-color: #e8590c; }
+
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #1971c2;
+    background: #f1f3f5;
+    font-style: italic;
+    font-size: 16px;
+    color: #495057;
+    border-radius: 0 6px 6px 0;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #868e96;
+    opacity: 0.8;
+  }
+  .quotes-section {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 32px 0;
+  }
+  .quotes-section h2 {
+    margin-top: 0;
+    padding-bottom: 4px;
+    border-bottom: none;
+    font-size: 20px;
+  }
+  .quote-item {
+    padding: 14px 16px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .quote-item .ctx {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    opacity: 0.6;
+    font-style: normal;
+  }
+  .qi-blue { background: #e7f5ff; border-color: #1971c2; }
+  .qi-green { background: #ebfbee; border-color: #2f9e44; }
+  .qi-purple { background: #f8f0fc; border-color: #862e9c; }
+  .qi-orange { background: #fff4e6; border-color: #e8590c; }
+  .qi-red { background: #fff5f5; border-color: #e03131; }
+  .qi-yellow { background: #fff9db; border-color: #f08c00; }
+
+  .info-box {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .info-blue { background: #e7f5ff; border: 1px solid #a5d8ff; }
+  .info-green { background: #ebfbee; border: 1px solid #b2f2bb; }
+  .info-yellow { background: #fff9db; border: 1px solid #ffd8a8; }
+
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .comparison-box {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .comp-left { background: #fff5f5; border-top: 3px solid #e03131; }
+  .comp-right { background: #ebfbee; border-top: 3px solid #2f9e44; }
+
+  .stage-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+  }
+  .stage-list li {
+    padding: 12px 16px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border-left: 4px solid;
+    font-size: 15px;
+  }
+  .stage-1 { background: #e7f5ff; border-color: #1971c2; }
+  .stage-2 { background: #ebfbee; border-color: #2f9e44; }
+  .stage-3 { background: #fff9db; border-color: #f08c00; }
+  .stage-4 { background: #f8f0fc; border-color: #862e9c; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 2px solid #e9ecef;
+    font-size: 13px;
+    color: #adb5bd;
+    text-align: center;
+    line-height: 1.6;
+  }
+  footer a {
+    color: #1971c2;
+    text-decoration: none;
+  }
+  .gloss {
+    font-size: 13px;
+    color: #868e96;
+    font-style: italic;
+  }
+
+  @media (max-width: 640px) {
+    .overview-grid, .comparison { grid-template-columns: 1fr; }
+    article { padding: 24px 16px 40px; }
+    header h1 { font-size: 22px; }
+    blockquote { font-size: 14px; padding: 12px 14px; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>134. 【数据的综述】</h1>
+  <div class="subtitle">新时代的石油、历史、版图、数据金字塔、定价与Recipe</div>
+  <div class="meta">谢晨（Steve）· 光轮智能创始人兼CEO · 2026年3月 · 2小时38分</div>
+</header>
+
+<p>算力、算法、数据——驱动人工智能的三驾马车中，数据或许是最被低估的那一架。2026年，当大语言模型面临数据撞墙、具身智能仍在数据荒漠中跋涉时，「商业访谈录」邀请光轮智能创始人兼CEO谢晨（Steve），试图用一期节目完成一次关于AI数据产业的完整综述。</p>
+
+<p>谢晨的履历本身就是一个不断试错、最终找到方向的故事：北大物理（从年级110名拼到前五）、哥大商学院量化金融博士、Jet.com电商定价AI负责人、Cruise自动驾驶仿真负责人、英伟达自动驾驶仿真、蔚来自动驾驶仿真——每一次跳跃都来自对"什么是我真正能做出最大贡献的地方"的追问。最终，他在2023年创立光轮智能，专注用仿真和合成数据为具身智能产业打造数据引擎。</p>
+
+<h2>为什么这期值得听</h2>
+
+<div class="overview-grid">
+  <div class="overview-card card-blue">
+    <div class="label">数据 ≈ 教育</div>
+    <div class="desc">谢晨提出"数据对于智能=教育对于人"的第一性框架，把数据产业定位为教育产业——从静态填鸭到因材施教</div>
+  </div>
+  <div class="overview-card card-green">
+    <div class="label">数据金字塔</div>
+    <div class="desc">真机数据（顶）→ 仿真（中）→ 人类第一视角+互联网（底），以仿真为中心的闭环</div>
+  </div>
+  <div class="overview-card card-yellow">
+    <div class="label">LLM 60分 vs 机器人 &lt;0.6分</div>
+    <div class="desc">大模型预训练已到顶/后训练在路上；具身数据几乎为零，差两个数量级</div>
+  </div>
+  <div class="overview-card card-red">
+    <div class="label">仿真 = 必备条件</div>
+    <div class="desc">没有仿真，具身智能做不成——从加速器升维为先决条件</div>
+  </div>
+  <div class="overview-card card-purple">
+    <div class="label">五家角逐 + 中美分化</div>
+    <div class="desc">字节/阿里/OpenAI/DeepMind/英伟达竞争机器人大脑；美国大脑强，中国本体强</div>
+  </div>
+  <div class="overview-card card-orange">
+    <div class="label">最好的数据 = 先失败再成功</div>
+    <div class="desc">最反直觉的发现：完美数据不如"犯错→纠错"的数据更有效</div>
+  </div>
+</div>
+
+<h2>一、数据为什么是一种"教育"</h2>
+
+<p>谢晨从第一性原理出发，给出了一个简洁而有力的类比：</p>
+
+<blockquote>
+  "如果从第一性原理上去思考的话，我其实认为数据可能应该跟人的教育的行业去类比——数据对于模型、对于智能，有点类似于教育行业对于人的学习。"
+  <span class="attr">— 谢晨定义数据问题的核心框架</span>
+</blockquote>
+
+<p>他认为，知识对于人的智能是第一性需求，同理，数据对于AI的智能也是如此。顺着这个类比，他梳理了数据产业的四个演进阶段，每个阶段对应一种教育模式：</p>
+
+<ol class="stage-list">
+  <li class="stage-1"><strong>静态数据集时代（ImageNet）</strong> → 一次性填鸭式教育。李飞飞定义了AI数据——给定图片和正确标注，这就是"标准答案"。</li>
+  <li class="stage-2"><strong>工业化生产时代（Scale AI）</strong> → 量贩式教育。工厂级的大规模人力运营，管控质量、效率和交付时间线。</li>
+  <li class="stage-3"><strong>反馈驱动时代（RLHF）</strong> → 师者传道授业。专家出题→发现弱点→针对性教学→再出更难的题。Data Foundry，不是Factory。</li>
+  <li class="stage-4"><strong>系统驱动时代（Data Engine）</strong> → 以系统为中心的规模化私教。仿真引擎放大人的经验，评测驱动迭代。这正是光轮智能所在的阶段。</li>
+</ol>
+
+<h2>二、数据金字塔：具身智能的数据架构</h2>
+
+<p>具身智能的数据结构与自动驾驶有本质区别。自动驾驶的数据闭环是"本体驱动的"——特斯拉部署了上百万辆车，车采回来的数据训练云端大脑，大脑变好再OTA回车端。但机器人没有上百万台部署在真实世界中自动执行任务。</p>
+
+<p>李飞飞的学生朱易可教授提出的"数据金字塔"，为具身智能提供了新的数据架构：</p>
+
+<div class="comparison">
+  <div class="comparison-box comp-left">
+    <strong>🔺 顶：真机遥操作数据</strong><br/>
+    最准确、最好用，但最难规模化——无法在不同场景快速部署成千上万台机器人。
+  </div>
+  <div class="comparison-box comp-right">
+    <strong>🟡 中 + 🟢 底：仿真 + 人类第一视角</strong><br/>
+    不依赖机器人本体，可以规模化采集。仿真是可交互的3D环境，人类第一视角是把人当成"另一种形态的机器人"来采集数据。
+  </div>
+</div>
+
+<p>谢晨在实践中发现了一个关键修正：数据金字塔不是三层独立结构，而是一个<strong>以仿真为中心的闭环</strong>。人类第一视角视频通过 real-to-sim 被提取为物理世界、任务和评价标准，注入仿真环境；仿真的输出又通过与真机评测的对标来缩小 sim-to-real gap。</p>
+
+<h2>三、LLM vs 机器人：60分对0.6分</h2>
+
+<p>当被问到"如果足够多的数据是100分，大语言模型和机器人各得几分"，谢晨给出的数字令人印象深刻：</p>
+
+<blockquote>
+  "大语言模型可能现在到了60分……但是对于具身来讲，假设100万个机器人所回来的数据是一个起点，这个起点可能都不是100分，是一个60分。我觉得现在都没有一万台机器人……可能0.6分都不到。"
+  <span class="attr">— 谢晨量化两个领域的数据差距</span>
+</blockquote>
+
+<p>为什么差距这么大？谢晨分析了两端的问题：</p>
+
+<p><strong>预训练端</strong>：具身缺乏足够的物理世界交互数据。它需要的不只是视频，还包括物理场景、可交互的3D资产（电脑、咖啡杯……）、人类操作的经验传授（如何抓取、用什么力度）、以及相应的评价标准。</p>
+
+<p><strong>评测端</strong>：这是很多人没想到的。自动驾驶有影子模式（Shadow Mode）——算法在车端静默运行，与司机操作对比，自动发现"错在哪"。大语言模型通过用户反馈获得免费评测。但机器人两者都没有。唯一的出路是仿真。</p>
+
+<div class="info-box info-yellow">
+  <strong>近三个月的转折信号</strong>：谢晨透露，过去三个月，所有顶级大模型团队——包括之前坚决的"真机派"——都开始大规模采购仿真数据和仿真的规模化评测。他们遇到了共同的瓶颈：<strong>无法规模化评测</strong>。
+</div>
+
+<h2>四、最好的数据：先失败，再成功</h2>
+
+<p>这是整个访谈中最反直觉的洞察。</p>
+
+<blockquote>
+  "其实最有效的数据是先失败再成功的数据。……有点像人的学习——失败了以后再成功的经验，往往是最宝贵的。"
+  <span class="attr">— 谢晨重新定义数据质量</span>
+</blockquote>
+
+<p>光轮最早的客户要求的是"完美的数据"——机器人流畅地做好一个披萨。但通过和客户共同迭代发现，<strong>出错再纠正</strong>的数据对模型提升更大。做披萨时蘑菇没抓牢掉到桌上、再捡起来放回去——这种"负样本"或"纠正数据"，反而比完美演示更有效。</p>
+
+<p>这跟传统的自动驾驶标注完全不同。旧时代的数据是"正确的框+标签"，有标准答案。新时代的数据更像人的经验——多样性的分布、错误中的学习、没有唯一正确解。一条"有失误但修正了"的操作轨迹，价格可以达到<strong>几百到上千人民币/小时</strong>。</p>
+
+<h2>五、谁在角逐机器人大脑</h2>
+
+<p>当被问到"谁变得更激进了"，谢晨直接点名：</p>
+
+<blockquote>
+  "这就是五家角逐机器人大脑的团队。" —— 字节、阿里、OpenAI、DeepMind、英伟达
+</blockquote>
+
+<p>他还补了一句："π（Pi）也应该属于这一类"——它更像一个 frontier lab 而不是机器人公司。</p>
+
+<p>谢晨观察到一个重要的分化趋势：<strong>大模型团队</strong>追求 zero-shot 泛化，用最简单的本体（机械臂夹爪）验证智能，数据来源是本体无关的仿真和人类数据；<strong>机器人公司</strong>关注具体场景落地，复杂本体（足式、灵巧手），数据来源是真机采集。</p>
+
+<p>在 Waymo vs Tesla 的类比上，谢晨认为具身的终局更可能是一个<strong>四方生态系统</strong>：</p>
+
+<div class="info-box info-blue">
+  <strong>大脑公司</strong>（大模型团队，提供泛化能力）+
+  <strong>数据公司</strong>（光轮等，提供评测驱动数据引擎）+
+  <strong>本体公司</strong>（宇树、Figure等，做稳定的可量产硬件）+
+  <strong>场景公司</strong>（OEM、医疗集团、农业公司，有真正的落地场景）
+</div>
+
+<p>他特别看好<strong>宇树（Unitree）</strong>——"它的区分度最鲜明，坚定地把本体做好，不和大脑公司竞争"。而对智元，他评价"从 day one 就想得很清楚，商业化走得最好"。</p>
+
+<h2>六、中美分化：美国大脑强，中国本体强</h2>
+
+<p>谢晨的判断是：美国在大脑上领先（OpenAI、DeepMind、英伟达拥有大几万张卡的基础设施和世界模型能力），中国在本体上领先（宇树、智元等的量产和成本控制能力）。</p>
+
+<p>但他对中国大脑追上来持乐观态度：</p>
+
+<blockquote>
+  "国内的大模型能力是极高的——千问现在是可能最好的开源大模型。他们在这做的决心足够高。"
+  <span class="attr">— 谢晨谈国内大模型团队转资源到具身</span>
+</blockquote>
+
+<p>一个重要信号是：过去小一年时间，国内大厂（字节、阿里）开始把资源和精力从大语言模型主战场腾出来，投入到具身智能。时机的原因有二：大模型格局相对明确，"手可以腾出来了"；行业逐步想清楚——如果数据的核心是<strong>本体无关的数据</strong>（仿真+人类数据），那这恰恰是大模型公司的天然机会。</p>
+
+<h2>七、世界模型、VLA、LLM：三种大脑的共演</h2>
+
+<p>谢晨清晰地区分了三个易混淆的概念：</p>
+
+<p><strong>大语言模型（LLM）</strong>是数字世界的大脑，已有一定世界模型雏形但缺乏物理理解；<strong>世界模型</strong>是云端的物理大脑，理解+预测物理世界，不需要行动能力，可以成为VLA的基座；<strong>VLA（视觉-语言-行动模型）</strong>是端侧的物理大脑，实际操控机器人，需要行动数据。</p>
+
+<p>三者的训练基础设施和底层基座正在趋同。Behavior Challenge——李飞飞团队基于仿真打造的最难具身评测集（100道题，最高分26%）——有趣地揭示了这种趋同：<strong>同一套benchmark既可以评价VLA，也可以评价世界模型</strong>。评价标准越一致，三者越可能走向融合。</p>
+
+<h2>八、从 Data Factory 到 Data Engine</h2>
+
+<p>谢晨对于"数据工厂"这个标签有自己的态度：</p>
+
+<blockquote>
+  "data factory 我觉得它是一个偏工厂，缺乏相应的技术、缺乏相应的系统，且它不是反馈驱动的。我认为 data engine 是一个反馈驱动的学习引擎。"
+  <span class="attr">— 谢晨主动升维自己的定义</span>
+</blockquote>
+
+<p>光轮目前的团队约100人，以工程技术为主。工作流程包括四个核心模块：</p>
+
+<p><strong>物理资产层</strong>：自研非刚体物理计算器（工业场景的线缆插拔需要这个），物理测量工厂用机械臂自动测力学参数；<strong>数据采集层</strong>：人为驱动的遥操作（质量最高）+ 算法驱动的自动采集（规模化最强）；<strong>标注层</strong>：大模型自动标注 + 人在环质检；<strong>评测管线</strong>：真实→仿真（real2sim）+ 仿真对标真实（sim2real），确保评分的相关性。</p>
+
+<h2>九、AI 终局：数据工厂消失，仿真环境永生</h2>
+
+<p>在被问到"数据问题什么时候会彻底不重要"时，谢晨的回答经历了从"15-20年后"到"可能永远不会"的转变。他的核心洞察来自对人的类比：</p>
+
+<p>越有能力的人越爱学习——马斯克每天涉猎的数据量远超普通人。当AI达到诺贝尔奖水平，已经没有几个人能教它。那时它需要的不再是"数据"，而是<strong>一个环境和一套成功标准</strong>，在仿真的物理世界中自我对弈、自我修炼——就像爱因斯坦做思考实验。</p>
+
+<blockquote>
+  "到终局的时候很有可能，所有人都不用我的数据，但都用我仿真的环境，在里头用RL不断地修炼内功。"
+  <span class="attr">— 谢晨对光轮终极价值的展望</span>
+</blockquote>
+
+<p>这让人联想到马斯克说的"咱们人可能就在一个仿真里头"。在这个意义上，光轮的终局可能不是一家数据公司，而是一家<strong>"AI的教育基础设施"公司</strong>——提供的是思考实验所需的物理世界、交互环境和评价标准。</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+  <div class="quote-item qi-blue">
+    "数据可能应该跟人的教育的行业去类比——数据对于模型、对于智能，有点类似于教育行业对于人的学习。"
+    <span class="ctx">— 谢晨定义数据的第一性原理</span>
+  </div>
+  <div class="quote-item qi-green">
+    "最有效的数据是先失败再成功的数据。……有点像人的学习——失败了以后再成功的经验，往往是最宝贵的。"
+    <span class="ctx">— 对数据质量的反直觉发现</span>
+  </div>
+  <div class="quote-item qi-purple">
+    "仿真对于机器人，它是一个必备条件。没有仿真，这件事肯定做不成。"
+    <span class="ctx">— 仿真从加速器升维为先决条件</span>
+  </div>
+  <div class="quote-item qi-orange">
+    "大语言模型可能到了60分，具身可能0.6分都不到。机器人的数据收集比大语言模型是结构性的难，可能几个数量级的难。"
+    <span class="ctx">— 量化两个领域的数据鸿沟</span>
+  </div>
+  <div class="quote-item qi-red">
+    "不能说是知识即模型，应该是一个不断提升的系统级能力。小孩的学习看画本就够了，但马斯克需要更高阶的知识和信号。"
+    <span class="ctx">— 反驳"数据即模型"论</span>
+  </div>
+  <div class="quote-item qi-yellow">
+    "这个私教不应该是以人为中心的，它应该是以系统为中心的，只有这样才可以提供足够规模化的言传身教。"
+    <span class="ctx">— 从 human-centered 到 system-centered</span>
+  </div>
+</div>
+
+<footer>
+  <p>原文链接：<a href="https://www.xiaoyuzhoufm.com/episode/69c953b4b977fb2c478df5c3?utm_source=rss">xiaoyuzhoufm.com/episode/69c953b4b977fb2c478df5c3</a></p>
+  <p>本文由 PodDeck 自动生成，内容基于「商业访谈录」第134期与谢晨的对话。每一条引用均在原始转写中可查。</p>
+</footer>
+
+</article>
+</body>
+</html>

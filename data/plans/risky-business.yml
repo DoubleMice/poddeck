@@ -1,10 +1,10 @@
 source: risky-business
-refreshed_at: 2026-06-10T04:37:48.621Z
+refreshed_at: 2026-06-10T18:57:26.819Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 4
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
@@ -30,7 +30,7 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 9b51d56c253440e89707aeadfe70f7e0,a6bb95221df043698e9a403017a7fd6b,1f2d15920fa24e00949a5a36d77818be

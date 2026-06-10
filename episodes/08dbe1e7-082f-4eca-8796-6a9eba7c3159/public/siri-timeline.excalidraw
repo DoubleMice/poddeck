@@ -1,0 +1,151 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "line", "type": "arrow", "x": 80, "y": 280, "width": 700, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 3, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0, 0], [700, 0]]
+    },
+    {
+      "id": "box1", "type": "rectangle", "x": 80, "y": 180, "width": 150, "height": 90,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box1-t", "type": "text", "x": 90, "y": 195, "width": 130, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "Siri 发布\n2011.10.4\nTim Cook\n首个 WWDC",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Siri 发布\n2011.10.4\nTim Cook\n首个 WWDC",
+      "lineHeight": 1.25, "baseline": 50
+    },
+    {
+      "id": "box2", "type": "rectangle", "x": 280, "y": 200, "width": 130, "height": 70,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box2-t", "type": "text", "x": 290, "y": 212, "width": 110, "height": 46,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "Siri 收购\n$200M\nSRI Intl.",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Siri 收购\n$200M\nSRI Intl.",
+      "lineHeight": 1.25, "baseline": 36
+    },
+    {
+      "id": "box3", "type": "rectangle", "x": 460, "y": 190, "width": 120, "height": 60,
+      "angle": 0, "strokeColor": "#862e9c", "backgroundColor": "#eebefa",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box3-t", "type": "text", "x": 470, "y": 200, "width": 100, "height": 40,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1,
+      "text": "ChatGPT\n2022.11\n拉开差距",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "ChatGPT\n2022.11\n拉开差距",
+      "lineHeight": 1.25, "baseline": 30
+    },
+    {
+      "id": "box4", "type": "rectangle", "x": 630, "y": 170, "width": 160, "height": 100,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box4-t", "type": "text", "x": 645, "y": 190, "width": 130, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "Siri AI\n2026.6\nTim Cook\n最后 WWDC",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Siri AI\n2026.6\nTim Cook\n最后 WWDC",
+      "lineHeight": 1.25, "baseline": 50
+    },
+    {
+      "id": "label-start", "type": "text", "x": 80, "y": 290, "width": 80, "height": 20,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 12, "fontFamily": 1,
+      "text": "2011 ←", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "2011 ←", "lineHeight": 1.25, "baseline": 16
+    },
+    {
+      "id": "label-end", "type": "text", "x": 720, "y": 290, "width": 80, "height": 20,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 11, "version": 1, "versionNonce": 11,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 12, "fontFamily": 1,
+      "text": "→ 2026", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "→ 2026", "lineHeight": 1.25, "baseline": 16
+    },
+    {
+      "id": "ai-winter", "type": "text", "x": 300, "y": 310, "width": 280, "height": 36,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 12, "version": 1, "versionNonce": 12,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "←  15 年的 AI 冬天  →\n股价涨了，Siri 没变",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "←  15 年的 AI 冬天  →\n股价涨了，Siri 没变",
+      "lineHeight": 1.25, "baseline": 30
+    },
+    {
+      "id": "jobs", "type": "text", "x": 80, "y": 100, "width": 200, "height": 60,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 13, "version": 1, "versionNonce": 13,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 11, "fontFamily": 1,
+      "text": "Steve Jobs 去世\n2011.10.5", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Steve Jobs 去世 2011.10.5",
+      "lineHeight": 1.25, "baseline": 16
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}

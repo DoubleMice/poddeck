@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Teaming AI Systems with SpecterOps — Risky Business Soap Box 106</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafafa;
+    padding: 0;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+  header {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #e11d48;
+  }
+  header h1 {
+    font-size: 28px;
+    line-height: 1.3;
+    color: #111;
+    margin-bottom: 8px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #666;
+  }
+  header .meta span {
+    margin-right: 16px;
+  }
+  h2 {
+    font-size: 21px;
+    margin: 36px 0 14px;
+    color: #222;
+    border-left: 4px solid #e11d48;
+    padding-left: 12px;
+  }
+  p {
+    margin-bottom: 14px;
+  }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0 32px;
+  }
+  @media (max-width: 600px) {
+    .overview { grid-template-columns: 1fr; }
+    article { padding: 24px 16px 40px; }
+    header h1 { font-size: 22px; }
+  }
+  .card {
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  blockquote {
+    margin: 18px 0;
+    padding: 14px 18px;
+    border-radius: 6px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  blockquote.blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  blockquote.green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  blockquote.orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  blockquote.red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  blockquote.purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  blockquote.yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #666;
+  }
+  .gloss {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-left: 4px;
+  }
+  .quotes-section blockquote { margin-bottom: 12px; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 13px;
+    color: #999;
+  }
+  footer a { color: #e11d48; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Red Teaming AI Systems with SpecterOps</h1>
+  <div class="meta">
+    <span>Russell Van Til · VP of Services, SpecterOps</span>
+    <span>Risky Business Soap Box</span>
+    <span>2026-03</span>
+  </div>
+</header>
+
+<section>
+  <p>
+    When an organization like SpecterOps — the company behind BloodHound, the industry's most sophisticated attack path analysis tool — starts doing AI red teaming, it's worth paying attention. In this Soap Box conversation, Russell Van Til, VP of Services at SpecterOps, joins Patrick Gray and James Wilson to unpack what AI red teaming actually means in practice, where the real risks lie, and why the security fundamentals we've spent decades building are more critical than ever.
+  </p>
+  <p>
+    The conversation cuts through the AI hype to reveal a sobering truth: most "AI security" problems are the same old vulnerabilities wearing a new coat of paint — but the speed, scale, and identity explosion that AI brings make those old problems dramatically more dangerous.
+  </p>
+</section>
+
+<div class="overview">
+  <div class="card card-blue">
+    <strong>What Is AI Red Teaming?</strong>
+    Russell draws a sharp line between model-level testing (safety, bias, alignment) and system-level testing (the entire application stack with AI as one component). Most enterprises need the latter.
+  </div>
+  <div class="card card-green">
+    <strong>Old Problems, New Wrapper</strong>
+    The vast majority of vulnerabilities in AI systems are traditional web app flaws — IDOR, injection, credential theft. Prompt injection is the one genuinely new attack primitive.
+  </div>
+  <div class="card card-orange">
+    <strong>The Identity Explosion</strong>
+    Every AI agent introduces new machine identities. Public reports show 80–96% of enterprise identities are already non-human — and AI is accelerating the trend.
+  </div>
+  <div class="card card-red">
+    <strong>AI Browsers: Gold Mine Squared</strong>
+    Browsers already hold all post-MFA credentials. AI browsers add a natural language attack surface on top — giving attackers a conversational interface into your session.
+  </div>
+  <div class="card card-purple">
+    <strong>Machine Speed × Machine Scale</strong>
+    Attackers can now run entire exploit chains in hours using AI automation. Defenders must respond in the same timeframe — "deny by default" becomes the only viable strategy.
+  </div>
+  <div class="card card-yellow">
+    <strong>Back to Basics, with Urgency</strong>
+    Russell's core message: identity attack path management, least privilege, and security review fundamentals are not obsolete — they're indispensable — because AI amplifies the consequences of getting them wrong.
+  </div>
+</div>
+
+<h2>What Does "AI Red Teaming" Actually Mean?</h2>
+
+<p>
+  The term "red team" was already ambiguous before AI entered the picture. Russell opens by clarifying the two camps that have emerged in AI security testing. The first camp — dominant in the early days of AI — focuses on testing models themselves: can you make the model say something racist? Can you bypass its safety guardrails? This is about alignment, bias, and safety, and it's largely the domain of model providers.
+</p>
+
+<p>
+  The second camp, where SpecterOps operates, treats the AI system holistically. "Most companies are not creating models themselves. They are just calling OpenAI or calling Anthropic," Russell explains. "I like to focus on actually testing the systems that have a piece of AI in it." This means the web application, the database, the API connections, the skills the AI can invoke — the entire attack surface. It aligns with the OWASP Top 10 for LLM Applications, and it's what most enterprises actually need.
+</p>
+
+<blockquote class="blue">
+  "When AI first started becoming a thing, everyone'd say that they're doing AI red teaming. And at the time, what they meant is they were testing a model for safety, alignment, bias."
+  <span class="attr">— Russell Van Til</span>
+</blockquote>
+
+<h2>The Chatbot Reality</h2>
+
+<p>
+  If you're expecting SpecterOps's AI red team engagements to involve exotic neural network attacks, Russell has a reality check: the most common AI system enterprises deploy is a chatbot. Sometimes it's a basic web form that forwards input to an inference API. Sometimes it has a RAG database connected for knowledge retrieval. Sometimes it's wired into internal systems like CRMs, ticketing platforms, or databases.
+</p>
+
+<p>
+  Each version introduces new identities, new API tokens, and new attack paths. A chatbot connected to nothing is useless — so the business pressure to connect it to everything is immense. And that's where the security problems begin.
+</p>
+
+<h2>Most AI Vulnerabilities Are Not New</h2>
+
+<p>
+  Russell is disarmingly honest about what SpecterOps finds in AI system assessments. "A lot of the public reports I see — they're all, most of them, traditional web app vulnerabilities: some type of IDOR, some type of injection." The attack primitives — credential theft, authentication bypass, privilege escalation — have not changed. The only genuinely new thing is prompt engineering (injection).
+</p>
+
+<p>
+  作者概括：This is simultaneously reassuring and alarming. It's reassuring because it means the security community already knows how to defend against most AI system attacks. It's alarming because it means organizations are deploying AI systems with the same vulnerabilities they've struggled to fix for decades — just now with access to vastly more sensitive data and far more powerful capabilities.
+</p>
+
+<blockquote class="orange">
+  "The only thing I would argue is new is prompt engineering. And while it is new, to me it's just like social engineering a human which is also part of red teaming."
+  <span class="attr">— Russell Van Til</span>
+</blockquote>
+
+<h2>Prompt Injection Is Just Social Engineering — With a Machine as the Target</h2>
+
+<p>
+  This is perhaps Russell's most insightful framing. Prompt injection — the technique of crafting malicious inputs that cause an AI model to behave in unintended ways — is not a fundamentally new category of attack. It's the same psychological manipulation that red teamers have used against humans for decades, just applied to a different kind of target.
+</p>
+
+<p>
+  The parallels are striking. When social engineering a human, you call them on the phone, build rapport, and ask for their password — and you accept that nine out of ten calls will fail. When prompt-injecting an AI, you craft a carefully constructed input, manipulate the model's context, and try to get it to do something it wasn't designed to do — and you accept that nine out of ten attempts will fail. "How can I get this model to do what I want that it wasn't really planning on doing — same as calling someone on the phone and trying to get them to give you your password," Russell says.
+</p>
+
+<h2>The Non-Determinism Challenge</h2>
+
+<p>
+  One key difference between human and AI social engineering creates a unique challenge for security testers: non-determinism. You can't give a client a simple "steps to reproduce" for a prompt injection vulnerability, because sending the same prompt twice will often yield different results.
+</p>
+
+<p>
+  "When it comes to prompt injection, you can't just say 'this is the prompt I sent it, you'll also get the same response' — 'cause you won't," Russell explains. This means AI penetration testing requires meticulous logging of inputs and outputs, and every prompt injection attack must be attempted multiple times before you can be confident it works. It adds a layer of statistical rigor to a discipline that previously operated on deterministic reproducibility.
+</p>
+
+<h2>The Identity Explosion: When Every Agent Needs Credentials</h2>
+
+<p>
+  Perhaps the most far-reaching consequence of enterprise AI adoption is the explosion of non-human identities. "Public reports report anywhere from 80 to 96 non-human identities to human identities in an org," Russell notes. SaaS applications started this trend years ago, but AI agents are accelerating it dramatically. Every AI agent deployed needs at minimum an API token to talk to its model provider. If it's connected to internal systems — as any useful agent must be — it needs additional credentials for each of those systems.
+</p>
+
+<p>
+  Patrick Gray frames the problem vividly: instead of trying to minimize the number of service accounts in an organization, the AI age seems to be maximizing them. Each new agent is a new potential pivot point for an attacker. Russell draws a historical parallel: "Way back when you used to be able to compromise an RDP server or any Windows server and all the credentials that were ever there you could kind of pull out of memory — this kind of reminds me of that. If you compromise an OpenClaw system you can get a whole truckload of credentials."
+</p>
+
+<blockquote class="red">
+  "If you compromise an OpenClaw system you can get a whole truckload of credentials you could do all kinds of stuff with."
+  <span class="attr">— Russell Van Til</span>
+</blockquote>
+
+<h2>The VM Fallacy and the Email Kill Chain</h2>
+
+<p>
+  One of the most discussed topics in AI agent security is whether running agents in virtual machines solves the problem. Russell is skeptical. The standard advice — "put it in a VM, it's totally fine" — falls apart the moment you give the agent any real credentials. And people inevitably do: they give agents their credit card numbers, their browser cookies, their API keys.
+</p>
+
+<p>
+  Russell describes one of the most chilling attack scenarios: a user gives an AI agent email access so it can help manage their inbox. An attacker then sends that user an email containing a prompt injection payload. The agent reads the email — as it was designed to do — and executes the injected instructions. From there, the attacker can harvest every credential the agent has access to. "You let it read your email 'cause you wanted it to just help you read your email and then like someone just sends an email to you with a prompt injection and then off you go," Russell explains. The attack is elegant, low-cost, and nearly invisible.
+</p>
+
+<blockquote class="purple">
+  "You let it read your email 'cause you wanted it to just help you read your email and then like someone just sends an email to you with a prompt injection and then off you go."
+  <span class="attr">— Russell Van Til</span>
+</blockquote>
+
+<h2>Case Study: The SalesLoft/Drift Breach</h2>
+
+<p>
+  To illustrate how AI security incidents play out in the real world, Russell walks through the SalesLoft/Drift breach — a case that received significant attention at the time but whose details are worth revisiting for what they reveal about AI attack paths. Drift had built an AI chatbot for Salesforce, designed to handle customer service tasks through natural language interaction. The chatbot needed OAuth access to Salesforce to function.
+</p>
+
+<p>
+  Here's the critical detail: the attack did not start with the AI system at all. It began with a compromised GitHub repository, where an attacker added a user account. From GitHub, they obtained AWS credentials. In the AWS environment, they found and stole the OAuth tokens that the AI chatbot used to communicate with Salesforce. Once they had those tokens, they could access every connected Salesforce instance and began pulling out exponentially more customer data.
+</p>
+
+<p>
+  Russell's summary is devastatingly simple: "It's all traditional tradecraft — steal an identity, what does it have access to, pivot to the next thing, until you get to your objective." Not a single step in the attack chain was AI-specific. The AI chatbot was the target, not the method. The OAuth token was the pivot point. The attack path was pure lateral movement.
+</p>
+
+<blockquote class="green">
+  "It's all traditional tradecraft — steal an identity, what does it have access to, pivot to the next thing, until you get to your objective."
+  <span class="attr">— Russell Van Til, on the SalesLoft/Drift breach</span>
+</blockquote>
+
+<h2>Case Study: The Cursor Injection Attack</h2>
+
+<p>
+  The Cursor injection attack represents a more novel blend of AI and traditional attack techniques. Cursor is an AI-powered IDE — similar to VS Code — that many developers use for AI-assisted coding. The attack began with an indirect prompt injection through a GitHub issue title. An Anthropic worker configured in the repository read the issue title and executed the injected actions — a classic case of prompt injection through external data that the model was designed to consume.
+</p>
+
+<p>
+  The attack then took a supply-chain turn. The attacker compromised Cursor's repository and published malicious versions containing post-install scripts. Later iterations went further: the malicious versions were programmed to install OpenClaw on the victim's machine, effectively establishing an AI-based command-and-control channel. The attacker could then issue natural language commands to the compromised agent at any time.
+</p>
+
+<p>
+  What makes this case particularly interesting is the uncertainty about the attacker's motives. Public reporting never clarified the ultimate goal. Russell speculates it could have been a white hat testing their skills, or a real adversary with objectives they never got to execute. Either way, it demonstrates how supply chain attacks and prompt injection can combine to create novel, hard-to-detect compromises.
+</p>
+
+<h2>AI in the Browser: The Attack Surface Multiplier</h2>
+
+<p>
+  Russell doesn't mince words about browsers. "The browser is one of our favorite things to attack to begin with because what does the browser have in it? All your post MFA authentication credentials." Red teamers have long exploited this: dump cookies, stand up Chrome on a dev port, pull session cookies into their own session — and suddenly they're authenticated as the victim, bypassing multi-factor authentication entirely.
+</p>
+
+<p>
+  AI browsers take this already-rich attack surface and add a natural language layer on top. If a red teamer can manipulate an AI browser's agent through natural language, they gain a powerful "in-browser translator" that can execute complex instructions on their behalf. Russell also notes the consumer appeal: browsers are the most familiar interface for most people, so putting AI in the browser is the fastest path to mass adoption. But it means stacking the largest existing attack surface on top of the newest attack surface.
+</p>
+
+<blockquote class="red">
+  "The browser is one of our favorite things to attack to begin with because what does the browser have in it? All your post MFA authentication credentials. Browsers are already a goldmine to begin with."
+  <span class="attr">— Russell Van Til</span>
+</blockquote>
+
+<h2>Machine Speed, Machine Scale, and the Deny-by-Default Imperative</h2>
+
+<p>
+  One thread running through the entire conversation is the compounding effect of speed and scale. AI doesn't just make attacks faster — it makes them faster and more numerous simultaneously. Russell invokes the industry buzzword "machine speed" to describe how adversaries can now run entire exploit chains in an hour or two. Patrick Gray extends the point: it's not just machine speed, it's machine scale — there's vastly more of everything happening at once.
+</p>
+
+<p>
+  The implications for defenders are stark. The traditional model — detect, analyze, respond — assumes a pace of operations that no longer exists. When an attacker can go from initial access to data exfiltration in two hours, security teams need to find and block threats in the same window. Russell's recommendation: "The deny by default kind of policy... everything moves so fast and unless you can keep up with how fast that is, you're safer by secure by default mindset instead of permissive by default." It's a return to one of the oldest ideas in security — allow-listing — now reborn as an AI-era necessity.
+</p>
+
+<h2>Attack Paths Across Technology Stacks</h2>
+
+<p>
+  The SalesLoft/Drift breach illustrates a pattern that Russell has been seeing more frequently: attack paths that cross multiple technology stacks. The classic attack path model starts and ends within Active Directory. But modern attacks flow from GitHub to AWS to SaaS platforms — and now, increasingly, through AI chatbot credentials.
+</p>
+
+<p>
+  SpecterOps's BloodHound has evolved to handle this. Its Open Graph extension allows security teams to map identity relationships across arbitrary technology stacks, not just AD and Entra. Russell describes the progression: "We first had Active Directory, then we added Entra, and then we got the ability to pivot between the two — hybrid attack paths. But we've already been executing those kind of attack paths across technology stacks from AD to Entra to AWS to GitHub, across them all."
+</p>
+
+<p>
+  When Patrick Gray asks whether finding that an AI chatbot's credential leads to full domain compromise is alarming, Russell's pragmatism shows. They've been using cross-stack attack paths in red team assessments for a while. What's new is BloodHound's ability to visualize them — making what was previously invisible to defenders suddenly visible.
+</p>
+
+<h2>What CISOs Should Do Now</h2>
+
+<p>
+  Russell's advice for CISOs navigating the AI security landscape is refreshingly grounded. He doesn't recommend chasing AI-specific tools or building dedicated AI security teams in isolation. Instead, he doubles down on fundamentals — but with a new urgency.
+</p>
+
+<p>
+  <strong>Identity attack path management is the foundation.</strong> "Identity attack path management is still the thing I'm gonna stand on for no matter what system or technology you're using, but AI kind of explodes that." Know what every identity in your organization can access — especially the non-human identities that AI agents introduce.
+</p>
+
+<p>
+  <strong>Principle of least privilege — actually enforced.</strong> Every AI agent should have exactly the permissions it needs and nothing more. The Cursor injection attack succeeded partly because the AI was given the ability to execute arbitrary code. "That's probably not something you want to be doing in your systems as you implement them and roll them out," Russell notes dryly.
+</p>
+
+<p>
+  <strong>Security review must keep pace with deployment.</strong> Russell's biggest concern isn't a technical vulnerability — it's the organizational gap between how fast teams deploy AI and how fast security teams can review those deployments. "I wonder if that's actually happening because of how fast everyone is trying to move in this space." Make security review a non-optional gate in the AI deployment pipeline.
+</p>
+
+<p>
+  <strong>Deny by default.</strong> In a world where everything moves at machine speed, you can't respond fast enough to new threats. The only viable posture is to block everything by default and allow only what's explicitly approved. This is the return of allow-listing — connection whitelists, executable whitelists — as a first-class security control.
+</p>
+
+<p>
+  <strong>Cross-stack visibility.</strong> Your attack paths no longer end at your domain controller. You need to see how identities connect from AD to Entra to AWS to GitHub to SaaS to your AI chatbots. If you can't see the path, you can't defend it.
+</p>
+
+<blockquote class="yellow">
+  "Identity attack path management is still the thing I'm gonna stand on for no matter what system or technology you're using, but AI kind of explodes that."
+  <span class="attr">— Russell Van Til</span>
+</blockquote>
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+
+<blockquote class="blue">
+  "Everyone's so excited about AI, they're moving so fast to do everything and to get the most value out of AI they just connect it to literally everything. And then you undo all these security principles that we spent years learning."
+  <span class="attr">— Russell Van Til, on how AI hype undermines security fundamentals</span>
+</blockquote>
+
+<blockquote class="green">
+  "To me it's just like social engineering a human which is also part of red teaming. How can I get this model to do what I want that it wasn't really planning on doing — same as calling someone on the phone and trying to get them to give you your password."
+  <span class="attr">— Russell Van Til, on the true nature of prompt injection</span>
+</blockquote>
+
+<blockquote class="purple">
+  "If you compromise an OpenClaw system you can get a whole truckload of credentials you could do all kinds of stuff with."
+  <span class="attr">— Russell Van Til, comparing AI agent compromise to classic Windows credential dumping</span>
+</blockquote>
+
+<blockquote class="orange">
+  "It's all traditional tradecraft — steal an identity, what does it have access to, pivot to the next thing, until you get to your objective."
+  <span class="attr">— Russell Van Til, on the SalesLoft/Drift breach</span>
+</blockquote>
+
+<blockquote class="red">
+  "The browser is one of our favorite things to attack to begin with because what does the browser have in it? All your post MFA authentication credentials. Browsers are already a goldmine to begin with."
+  <span class="attr">— Russell Van Til, on why AI browsers are a security nightmare</span>
+</blockquote>
+
+<blockquote class="yellow">
+  "The deny by default kind of policy — everything moves so fast and unless you can keep up with how fast that is, you're safer by secure by default mindset instead of permissive by default."
+  <span class="attr">— Russell Van Til, on the foundational security posture for the AI era</span>
+</blockquote>
+
+</div>
+
+<footer>
+  <p>
+    Source: <a href="https://risky.biz/SOAPBOX106/">Risky Business Soap Box 106 — Red teaming AI systems with SpecterOps</a> · March 2026
+  </p>
+  <p>
+    Russell Van Til is VP of Services at SpecterOps, the company behind BloodHound. Patrick Gray is the host of Risky Business. James Wilson is a regular contributor.
+  </p>
+</footer>
+
+</article>
+</body>
+</html>

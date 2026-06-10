@@ -1,0 +1,93 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "old-box", "type": "rectangle", "x": 30, "y": 30, "width": 350, "height": 120,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#fff5f5",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "old-label", "type": "text", "x": 50, "y": 38, "width": 310, "height": 24,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "旧范式 (~2013-2023): 规则驱动", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "旧范式", "lineHeight": 1.25, "baseline": 18
+    },
+    {
+      "id": "old-steps", "type": "text", "x": 50, "y": 70, "width": 310, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 12, "fontFamily": 1,
+      "text": "📷 摄像头+雷达+激光雷达  →  人类编码的\nC++ 规划器(人类驾驶知识的规则)  →  控制输出\n每个场景都需工程师手动编码规则",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "旧步骤", "lineHeight": 1.25, "baseline": 52
+    },
+    {
+      "id": "new-box", "type": "rectangle", "x": 30, "y": 180, "width": 350, "height": 120,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#f0fff4",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "new-label", "type": "text", "x": 50, "y": 188, "width": 310, "height": 24,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "新范式 (2023+): 基础模型驱动", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "新范式", "lineHeight": 1.25, "baseline": 18
+    },
+    {
+      "id": "new-steps", "type": "text", "x": 50, "y": 220, "width": 310, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 12, "fontFamily": 1,
+      "text": "🧠 数十亿参数神经网络  +  数百万英里\n驾驶数据训练  +  车队数据持续改进\n端到端学习, 无需人工编码规则",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "新步骤", "lineHeight": 1.25, "baseline": 52
+    },
+    {
+      "id": "arrow1", "type": "arrow", "x": 205, "y": 150, "width": 0, "height": 30,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0, 0], [0, 30]]
+    },
+    {
+      "id": "shift-label", "type": "text", "x": 120, "y": 155, "width": 170, "height": 20,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 12, "fontFamily": 1,
+      "text": "根本性技术转折点 →", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "转折", "lineHeight": 1.25, "baseline": 16
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}

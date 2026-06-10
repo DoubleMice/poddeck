@@ -1,0 +1,25 @@
+id: SOAPBOX106
+source: risky-business
+title: "Soap Box: Red teaming AI systems with SpecterOps"
+guest: "Russell Van Til"
+guest_role: "VP of Services at SpecterOps"
+published: 2026-03
+duration: 30m
+url: https://risky.biz/SOAPBOX106/
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+status: generated
+tags:
+  - ai-products
+  - quick-take
+  - technical
+summary: |
+  SpecterOps VP Russell Van Til joins Patrick Gray and James Wilson to discuss what AI red teaming actually means in practice, why most AI vulnerabilities are traditional problems in a new wrapper, how AI agents are causing an explosion of non-human identities, and why the fundamentals of identity attack path management are more critical than ever.
+core_ideas:
+  - 'AI red teaming means system-level security testing — not just model safety checks'
+  - 'Most AI security issues are traditional web app vulnerabilities; prompt injection is the only truly new attack primitive'
+  - 'Prompt injection is psychologically equivalent to social engineering — the target is just a machine, not a human'
+  - 'Non-deterministic AI outputs make vulnerability reproducibility a fundamental challenge'
+  - '80-96% of enterprise identities are already non-human — AI agents are accelerating this explosion'
+  - '"Deny by default" and identity attack path management are the foundational defenses in an AI world'
+article_path: episodes/SOAPBOX106/article.html
+base: /episodes/SOAPBOX106/

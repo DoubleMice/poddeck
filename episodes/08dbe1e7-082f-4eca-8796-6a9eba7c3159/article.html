@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siri AI, Fable 5, Rivian R2 — TBPN 2026.06.09</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafafa;
+    padding: 20px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 48px 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  @media (max-width: 640px) {
+    article { padding: 28px 20px; }
+    body { font-size: 16px; padding: 8px; }
+  }
+  header { text-align: center; margin-bottom: 40px; }
+  header h1 { font-size: 28px; line-height: 1.35; margin-bottom: 12px; }
+  header .meta { font-size: 14px; color: #666; }
+  header .meta span { margin: 0 8px; }
+  .overview { margin-bottom: 36px; }
+  .overview h2 { font-size: 18px; color: #555; margin-bottom: 16px; text-align: center; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 500px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.55;
+    border-left: 4px solid;
+  }
+  .card-blue { background: #eff6ff; border-color: #3b82f6; }
+  .card-green { background: #f0fdf4; border-color: #22c55e; }
+  .card-yellow { background: #fefce8; border-color: #eab308; }
+  .card-purple { background: #faf5ff; border-color: #a855f7; }
+  .card-orange { background: #fff7ed; border-color: #f97316; }
+  .card-red { background: #fef2f2; border-color: #ef4444; }
+  section { margin-bottom: 36px; }
+  section h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  section p { margin-bottom: 12px; text-indent: 1.5em; }
+  section p:first-of-type { text-indent: 1.5em; }
+  .quote-block {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-style: italic;
+    border-left: 4px solid;
+  }
+  .quote-block .attr {
+    font-size: 13px;
+    margin-top: 8px;
+    font-style: normal;
+    opacity: 0.6;
+  }
+  .qb-blue { background: #eff6ff; border-color: #3b82f6; }
+  .qb-green { background: #f0fdf4; border-color: #22c55e; }
+  .qb-yellow { background: #fefce8; border-color: #eab308; }
+  .qb-purple { background: #faf5ff; border-color: #a855f7; }
+  .qb-orange { background: #fff7ed; border-color: #f97316; }
+  .gloss {
+    font-size: 14px;
+    color: #888;
+    margin: 10px 0;
+    padding: 8px 14px;
+    background: #f9fafb;
+    border-radius: 6px;
+  }
+  .core-quotes { margin: 40px 0; }
+  .core-quotes h2 { text-align: center; margin-bottom: 20px; }
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+  }
+  footer a { color: #3b82f6; }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+    margin: 20px 0;
+  }
+  .stat {
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+  }
+  .stat .num { font-size: 24px; font-weight: 700; color: #3b82f6; }
+  .stat .label { font-size: 12px; color: #888; margin-top: 4px; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Siri AI · Fable 5 · Rivian R2 · 芯片战争 2.0</h1>
+  <div class="meta">
+    <span>TBPN 直播</span><span>·</span><span>2026 年 6 月 9 日</span><span>·</span><span>2h49m</span>
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    RJ Scaringe · Chris Miller · Evan Beard · Nick Fleisher · Chris Matarese · Alex Heath · Rob Schroder Jr.
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+    <div class="card card-blue">
+      <strong>🍎 Siri AI 终成正果</strong><br/>
+      Tim Cook 首个 WWDC 宣布 Siri，最后一个 WWDC 推出 AI Siri——15 年的圆环闭合。Apple 的 walk-crawl-run AI 战略揭晓。
+    </div>
+    <div class="card card-green">
+      <strong>🚗 Rivian R2 交付启动</strong><br/>
+      RJ Scaringe 详解大众市场战略、软件架构革命、自动驾驶路线图。为什么"不要同时发布三款车"是他最大的教训。
+    </div>
+    <div class="card card-yellow">
+      <strong>🧠 Fable 5 & 推理规模定律</strong><br/>
+      Anthropic 新模型发布，$10/$50 百万 token 定价。Noah Brown：推理算力 plateau"非常遥远"。
+    </div>
+    <div class="card card-purple">
+      <strong>💾 芯片战争更新</strong><br/>
+      半导体支出占 GDP 比重翻倍。TSMC 的保守文化、中国 $2950 亿 AI 基金。
+    </div>
+    <div class="card card-orange">
+      <strong>🤖 创业公司 spotlight</strong><br/>
+      Standard Bots $2 亿融资、ZenOne 法律 AI、NinjaOne $4 亿融资、Vinyl Equity 现代化过户代理。
+    </div>
+    <div class="card card-red">
+      <strong>🔐 手机与生育率危机</strong><br/>
+      Apple 在短主题演讲中用 12 分钟讲家长控制。手机被认真视为生育率下降的原因之一。
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>一、Siri AI：15 年的圆环闭合</h2>
+
+  <p>2026 年 6 月 9 日，Tim Cook 在他的最后一个 WWDC 主题演讲上，将几乎全部时间用于展示 Siri AI——这恰好是他的第一个 WWDC 上宣布的产品。2011 年 10 月 4 日，"Let's Talk iPhone"活动中，Cook 把话筒交给同事，宣布了从 SRI International 人工智能中心收购的 Siri。第二天，Steve Jobs 去世。</p>
+
+  <p>Siri 的名字本身源自 SRI International Artificial Intelligence Center——一群 Stanford AI 研究人员在 2008 年左右创立的公司。Apple 以大约 2 亿美元的价格收购了它。从那天起，语音助手进入了"最好的平庸品类"阶段——Siri 是最好的，但整个品类都很平庸。</p>
+
+  <div class="quote-block qb-blue">
+    "Tim Cook 创造了巨大的价值，但他恰好是有史以来最长的 AI 冬天期间的 CEO。从 2011 到 2023，Siri 团队每年都说'技术还没进步到那一步'。"
+    <div class="attr">— TBPN 主持人总结</div>
+  </div>
+
+  <p>即使回到 2019 年 pre-ChatGPT 时代，Siri 也没有兑现"和手机对话就能做任何事"的承诺。但有趣的是，人们并没有大量切换到 Android，因为 Google Assistant 也没有好到哪里去。直到 ChatGPT 的出现，Siri 才真正被拉开差距。现在，15 年后，Apple 终于拿出了可用的 AI Siri。</p>
+
+  <p>Siri 的新架构分为三层：设备端的 AFM 3 本地模型（需要最新 iPhone 的 12GB RAM），Apple Private Cloud 上的 AFM 3 Cloud Pro（运行在 Google Cloud 的 Nvidia GPU 上），以及可路由到第三方模型（Gemini 深度集成，ChatGPT 被削弱）。但 Alex Heath 在 WWDC 次日的实测揭示了一些关键的局限性：新 Siri 仍然没有持久记忆——每次查询都是独立的；不能通过提示词直接操作文件；开发者需要主动 opt-in 才能让 Siri 理解自己 app 的 UI。</p>
+
+  <div class="quote-block qb-green">
+    "如果你整天用 Claude 或 Codex，你仍然会觉得：呃，还行吧。"
+    <div class="attr">— Alex Heath，The Verge / Sources，实测新 Siri 后的评价</div>
+  </div>
+</section>
+
+<section>
+  <h2>二、Apple 的"解决方案营销"：从气候到家长控制</h2>
+
+  <p>这个主题演讲特别简短，但 Apple 花了整整 12 分钟详细展示儿童安全和家长控制功能——包括儿童账户的年龄保护、Ask to Browse（访问新网站需家长批准）、以及通讯控制。当天 Apple Park 外面就有儿童安全倡导者举着扩音器抗议。</p>
+
+  <p>TBPN 主持人注意到了 Apple 一贯的模式：他们不是恐惧营销公司。Tim Cook 从不谈论气候末日——他们只是私下工作，然后在营销材料中谈论解决方案（清洁能源数据中心）。现在他们用同样的方式对待手机对儿童的影响。Derek Thompson 估计手机可能是现代生育率下降约 30% 的原因——Apple 似乎正在认真对待这个信号，但不做任何关于"手机会毁了你的孩子"的公开论断，只展示解决方案。</p>
+
+  <p>这背后也有商业逻辑：许多家长犹豫是否给孩子买智能手机。Apple 的回应是——"给孩子买 iPhone 是安全的，因为你有完全的控制权。"已经有一个围绕儿童 GPS 手表和哑手机的利基市场，Apple 想抢占它。</p>
+</section>
+
+<section>
+  <h2>三、Siri 生态之争：围墙花园还是开放平台？</h2>
+
+  <p>WWDC 还引发了一场有趣的记者对决。Mark Gurman（Bloomberg）在 3 月报道称 Apple 计划向第三方 AI 助手开放 Siri——用户安装 ChatGPT/Gemini/Claude 后，可通过 Siri 语音助手路由查询。他发布了 Siri app 中模型选择下拉菜单的截图作为证据。但 John Gruber（Daring Fireball）反驳说，Apple 并未完全宣布这个方案，核心问题仍未解决：能否将 iPhone 侧边按钮完全映射到你选择的 AI 模型？</p>
+
+  <p>Alex Heath 引用了 Dave Morin 的观点作为解释框架："Siri 是 harness"。Apple 的 OS 和 Siri 是灵活的新基础设施，底下可以是任何模型——但他们想要自己做所有的后训练和强化学习，让模型带上"Appley"的风格。Google 现在是他们的最佳短期伙伴，但 Apple 的目标是最终掌握自己的 AI 命运。</p>
+
+  <p>与此同时，OpenAI 与 Apple 的关系正在疏远。ChatGPT 的集成被削弱了——不再有 UI 元素，每次都需要文字提示显式请求。Alex Heath 的 meta-narrative：OpenAI 正在成为 Apple 眼中的"新 Facebook"——曾经深度合作，如今渐行渐远。</p>
+</section>
+
+<section>
+  <h2>四、空间重构图：什么才是"真实照片"？</h2>
+
+  <p>Apple 推出了一个有趣的新功能——空间重构图。如果你拍了一张角度不完美的照片，AI 可以重新构图让它更正面。主持人对这个功能评价很高：这不像是"某个创业公司早就在做的事情被 Apple 打包进来"——这更像是 Apple 的 DNA，理解技术后做出独特、酷的东西。</p>
+
+  <p>但时间线上的反应两极分化。一些人认为这是 Apple 最令人兴奋的 AI 功能。另一些人则担忧这是 AI 图像篡改的滑坡——将低光增强、色调映射、空间重构图、删除路人等功能叠加起来，可以生成一张与原始拍摄完全不同的照片。Apple 坚持"不会让你在照片里放一条龙"，但"真实"的边界正在模糊。</p>
+
+  <div class="gloss">
+    <strong>作者概括</strong>：Joe Weisenthal 曾提出一个极端设想——为什么需要存照片？直接让 AI 在需要时生成"我的孩子 5 岁时骑恐龙"。这不是大多数人想要的世界，但技术上并不遥远。Apple 的空间重构图是沿着这个光谱的一个温和移动。
+  </div>
+</section>
+
+<section>
+  <h2>五、Rivian R2：大众市场的赌注与残酷的教训</h2>
+
+  <p>Rivian CEO RJ Scaringe 在 R2 交付启动日做客节目。R2 是 Rivian"真正的规模化产品"——R1S 和 R1T 均价超过 $90,000，只是品牌的"握手"。R2 才是大众市场。330 英里的续航不是设计输入，而是工程输出：所有配置都需要超过 300 英里。越野轮胎版本 307mi，公路轮胎 330mi，后驱版最高 345mi。</p>
+
+  <p>RJ 分享了他最诚实的一个教训。当被问到"如果重来一次会做什么不同"，他给出了非典型的直白答案：</p>
+
+  <div class="quote-block qb-yellow">
+    "不要同时发布三款车。那是如果重来一次我唯一会改变的事情。只是为了一款车去推动供应链就已经极其复杂——而在 COVID 期间做三款，我们几乎在'窒息'。"
+    <div class="attr">— RJ Scaringe，Rivian CEO</div>
+  </div>
+
+  <p>R1 发布时有数十万种可能的组合。R2 只有不到 200 种。这是一个极端的成本控制和简化练习。RJ 被问及为什么不把 R3（一款更激进的变体）和 R2 同时推出——他承认团队内有很多争论，但最终决定让 R2 有呼吸空间。</p>
+</section>
+
+<section>
+  <h2>六、"野草田"：为什么传统车企无法竞争</h2>
+
+  <p>RJ 提供了可能是本期节目中最精彩的解释——关于为什么传统车企在软件和 OTA 更新方面本质上无法与 Rivian 和 Tesla 竞争。</p>
+
+  <p>故事从 1960 年代开始。第一台进入汽车的电脑是为燃油喷射系统设计的。之后几十年，每当一个新的功能需要软件——座椅记忆、电动车窗、HVAC——供应商就为那个特定功能添加一个 ECU（电子控制单元）。结果：一辆现代汽车有 100 到 150 个独立的小计算机，每个运行由不同供应商（经常是第三方、海外团队）编写的独立软件。</p>
+
+  <div class="quote-block qb-red">
+    "我把它描述成一片野草田——不是规划好的花园，没有架构。"
+    <div class="attr">— RJ Scaringe，描述传统汽车的软件架构</div>
+  </div>
+
+  <p>当你走近一辆车时，喇叭响、门解锁、HVAC 启动、座椅调节、方向盘调整、音乐改变、电池系统唤醒——这些全在不同的控制器上。只改变事件顺序就需要协调 10 到 15 家公司。这就是为什么传统车企很少做出有意义的 OTA 更新。</p>
+
+  <p>Rivian 的解决方案：将所有计算整合到少数几个按物理区域分布的区域性控制器上，运行一个自研操作系统。这项技术被大众集团以 58 亿美元的软件授权交易采纳——用于大众未来的电动产品。当 Rivian 可以持续通过 OTA 改进车辆时，传统车企每次改进都需要协调数十家供应商。</p>
+</section>
+
+<section>
+  <h2>七、自动驾驶：基础模型的转折点</h2>
+
+  <p>RJ 详细解释了自动驾驶技术的根本性转变。旧范式（大约 2013 到 2023 年）是彻底的规则驱动：工程师将人类驾驶知识编码成 C++ 规则——从摄像头和雷达感知世界，交给人类编写的规划器，输出控制指令。这是一个 rule-based 系统。</p>
+
+  <p>新范式完全不同于此：训练数十亿参数的基础模型，使用数百万英里真实驾驶数据，模型通过已部署车队的数据持续改进——端到端学习，无需人工编码规则。</p>
+
+  <div class="quote-block qb-purple">
+    "过去五年的进展完全不代表未来五年会怎样。实际上，我认为进展会快到社会来不及消化。"
+    <div class="attr">— RJ Scaringe，谈自动驾驶的技术拐点</div>
+  </div>
+
+  <p>Rivian 的路线图清晰：2026 下半年实现 Hands-Off/Eyes-On（点对点导航，手离开方向盘但保持警觉），2027 年实现 Level 3 Hands-Off/Eyes-Off（可以看手机、读书，但需在车辆请求时接管），2028 年实现 Level 4（车辆在任何情况下都不要求接管）。R2 的设计预留了大量推理算力和高质量传感器——不仅用于驾驶，更重要的是收集高价值数据以快速追赶 Tesla。</p>
+
+  <p>RJ 认为真正的用户行为拐点是 Level 3——当你可以真正拿回自己的时间。"你体验一两次，然后觉得不需要它——然后突然你就觉得：哇，我下一辆车必须有这个功能。"到 2030-2031 年，消费者会期望自动驾驶是标配。</p>
+</section>
+
+<section>
+  <h2>八、芯片战争：半导体支出翻倍与供应链瓶颈</h2>
+
+  <p>《Chip War》作者 Chris Miller 提供了对半导体行业现状的关键观察。过去二十年，半导体支出占 GDP 比重基本持平。过去四年，它翻了一倍——完全由 AI 驱动。核心问题：翻倍可以，能翻三倍吗？</p>
+
+  <p>Miller 指出当前局势的独特性：历史上基础建设（铁路、电力）从未出现过单一公司掌控关键瓶颈的情况。现在 TSMC 是一道关卡，ASML 是一道关卡，先进封装和关键材料领域还有更多。供应链深处，离最终 AI 需求越远，怀疑越大——这是经典的牛鞭效应。</p>
+
+  <div class="quote-block qb-yellow">
+    "供应链中有一系列关卡，你只能依赖单一公司获取大部分产能——这在铁路枕木时代没有发生过，在电力时代也没有。"
+    <div class="attr">— Chris Miller，《Chip War》作者</div>
+  </div>
+
+  <p>TSMC 的保守文化让硅谷沮丧，但它在历史上确实奏效了——TSMC 多次在周期底部精准投资，压过竞争对手。Miller 还透露，Anthropic Mythos 的发布真的改变了白宫对 AI 强大程度的认知，影响了最近几周的出口管制讨论。国会两党对出口管制有强烈支持。与此同时，中国正准备一个 2950 亿美元的 AI 基础设施基金。</p>
+</section>
+
+<section>
+  <h2>九、Fable 5 与推理算力的无限缩放</h2>
+
+  <p>Anthropic 在同一天发布了 Fable 5——新的消费者模型。X 上的用户已经提前几周获得了模型访问权限。定价为每百万输入 token $10，每百万输出 token $50。Dan Shipper 在做实时 vibe check。一些评论者称其为"Mythos 的更安全版本"——更可靠、更适合特定场景。</p>
+
+  <p>但节目中最引人深思的讨论来自 OpenAI 的 Noah Brown。他关于推理算力的观察令人震撼：</p>
+
+  <div class="quote-block qb-blue">
+    "经常有人问我：为什么我们不直接建一个评估框架，把测试时计算推到性能 plateau？问题是，经验上 plateau 非常遥远。有时候在可行预算范围内，我们根本观察不到 plateau。"
+    <div class="attr">— Noah Brown，OpenAI 推理研究负责人</div>
+  </div>
+
+  <p>Andrej Karpathy 在汽车研究实验中观察到了同样的现象：即使经过几百次实验，性能仍在持续提升。Brown 提出了一个更疯狂的概念：一个模型可能运行得比训练下一个模型所需的时间更长——你发布产品 A 让它去执行任务，在它还在运行时下一代模型 B 已经训练完成并发布。这是一个全新的世界。</p>
+</section>
+
+<section>
+  <h2>十、创业公司：从工业机器人到法律 AI</h2>
+
+  <p>本期节目涵盖了多个处于不同阶段的创业公司：</p>
+
+  <p><strong>Standard Bots：</strong>Evan Beard 创立时发现美国 99.9% 的工业机器人不是美国制造。C 轮融资 2 亿美元，估值 10 亿美元，去年增长 10 倍。通过演示训练机器人——平均装配工就能操作。关于人形机器人，Evan 提出了"小鬼当家测试"：两个 5 岁孩子能否跳上去抓住它试图绊倒它。RL 翻转机器人的视频看起来令人印象深刻，但离通过这个测试还很远。</p>
+
+  <p><strong>ZenOne：</strong>Nick Fleisher 的法律关系管理平台在 150 天内实现了 40 倍收入增长。策略是有意避开被 AI 实验室商品化的红线标注领域，转而建设法律团队的工作流工具和上下文层。一位 Fortune 500 的 GC 告诉他："我们绝对不会 AI maxing。"——但 AI 反而让法律工作变得更多了（业务部门在用 AI 做不该做的事），所以法律 AI 工具的需求在增长。</p>
+
+  <p><strong>NinjaOne：</strong>18 个月内融资 4 亿美元，估值 123 亿美元。平均每个客户替换 7 个单点解决方案。AI 是三重顺风：设备爆炸（连快餐店的炸锅都成了端点）、产品增强、以及安全攻击面的扩大。</p>
+
+  <p><strong>Vinyl Equity：</strong>2000 万美元 A 轮，现代化过户代理——一个可以追溯到华尔街起源的行业。锁仓期结束后，股票平均需要 9 天才能到达投资者账户，期间股价可能波动 10%。在一个代币化和即时性的时代，这不是可接受的。</p>
+</section>
+
+<section>
+  <h2>十一、Flock Safety 与犯罪监控</h2>
+
+  <p>节目播放了一段令人震惊的播客片段——两名被描述为"旧金山最高产的犯罪分子之一"的男子承认，在旧金山犯罪已经不可能了。偷一辆车，Flock Safety 的无人机立刻开始跟踪你，从几千英尺高空尾随——你甚至不知道自己在被跟踪。警察会等你停下来后再包围你。他们甚至无法进行 drive-by 了。主持人半开玩笑地问：有没有人考虑过听犯罪分子在播客上承认犯罪后直接去逮捕他们？</p>
+</section>
+
+<section>
+  <h2>十二、AI 就业预测的扩音器效应</h2>
+
+  <p>节目中一个有趣的观察：非 AI 行业的人反而给出了最激进的就业损失预测。Anthropic CEO Dario Amodei 最初提出"50% 的早期白领工作可能被自动化"（在带有限定条件的深度讨论中），后来修正为约 10% 的失业率。但 Horizon CEO Dan Schulman 预测未来 2-5 年内 20-30% 的失业率——他的 AI 客服 agent 的客户满意度比人类高 1,280 个基点。社交媒体 KOL 则将这个数字进一步放大到了 80-100%。</p>
+
+  <p>"有趣的是，永远不会是他们自己的工作会消失。" TBPN 主持人指出，原始讨论中带有大量限定条件（"如果只有坏的事情发生，且没有政策回应"），但被断章取义后数字在不断放大。</p>
+</section>
+
+<div class="core-quotes">
+  <h2>核心金句</h2>
+
+  <div class="quote-block qb-blue">
+    "我把它描述成一片野草田——不是规划好的花园，没有架构。"
+    <div class="attr">— RJ Scaringe，谈传统汽车软件架构</div>
+  </div>
+
+  <div class="quote-block qb-green">
+    "如果有人问你'重来一次会做什么不同'，诚实的回答是：不要同时发布三款车。"
+    <div class="attr">— RJ Scaringe，Rivian CEO</div>
+  </div>
+
+  <div class="quote-block qb-yellow">
+    "过去五年的进展完全不代表未来五年会怎样。进展会快到社会来不及消化。"
+    <div class="attr">— RJ Scaringe，谈自动驾驶基础模型转折</div>
+  </div>
+
+  <div class="quote-block qb-purple">
+    "经验上 plateau 非常遥远。有时候在可行预算范围内，我们根本观察不到 plateau。"
+    <div class="attr">— Noah Brown，OpenAI，谈推理算力缩放</div>
+  </div>
+
+  <div class="quote-block qb-orange">
+    "一个模型可能运行得比训练下一个模型所需的时间更长。"
+    <div class="attr">— Noah Brown 提出的概念，Karpathy 在实验中验证</div>
+  </div>
+
+  <div class="quote-block qb-blue">
+    "如果你整天用 Claude 或 Codex，你仍然会觉得：呃，还行吧。"
+    <div class="attr">— Alex Heath，实测新 Siri 后的评价</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num">15年</div><div class="label">Siri 从发布到 AI 化的时间</div></div>
+  <div class="stat"><div class="num">330mi</div><div class="label">Rivian R2 续航</div></div>
+  <div class="stat"><div class="num">2×</div><div class="label">半导体支出/GDP 四年内翻倍</div></div>
+  <div class="stat"><div class="num">$295B</div><div class="label">中国 AI 基础设施基金</div></div>
+  <div class="stat"><div class="num">$10/$50</div><div class="label">Fable 5 每百万 token 定价</div></div>
+  <div class="stat"><div class="num">$12.3B</div><div class="label">NinjaOne 估值</div></div>
+</div>
+
+<footer>
+  <p>本文基于 TBPN 2026 年 6 月 9 日直播节目整理。<br/>
+  嘉宾：RJ Scaringe（Rivian CEO）、Chris Miller（《Chip War》作者）、Evan Beard（Standard Bots CEO）、Nick Fleisher（ZenOne CEO）、Chris Matarese（NinjaOne 总裁）、Alex Heath（The Verge / Sources）、Rob Schroder Jr.（Vinyl Equity CEO）</p>
+  <p style="margin-top:12px;">
+    来源：<a href="https://share.transistor.fm/s/e343af3e">TBPN Podcast</a> ·
+    由 Claude Code 生成
+  </p>
+</footer>
+
+</article>
+</body>
+</html>

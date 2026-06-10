@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Chopping Block: Zcash 无限增发漏洞 + AI 黑客 vs 形式化验证 + NEAR Agent 愿景</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    color: #1a1a2e;
+    background: #fafbfc;
+    padding: 20px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 48px 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  @media (max-width: 600px) {
+    article { padding: 28px 20px; }
+    body { padding: 10px; font-size: 16px; }
+  }
+  header { margin-bottom: 40px; padding-bottom: 32px; border-bottom: 2px solid #e9ecef; }
+  header h1 { font-size: 1.7em; line-height: 1.35; margin-bottom: 12px; color: #0c0c1c; }
+  header .meta { font-size: 0.9em; color: #6c757d; }
+  header .meta span { margin-right: 16px; }
+  h2 { font-size: 1.35em; margin: 40px 0 16px; color: #1a1a2e; padding-bottom: 8px; border-bottom: 1px solid #e9ecef; }
+  h3 { font-size: 1.15em; margin: 24px 0 12px; color: #343a40; }
+  p { margin: 0 0 16px; }
+  .overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 24px 0; }
+  .card { padding: 16px; border-radius: 8px; border-left: 4px solid; font-size: 0.9em; line-height: 1.55; }
+  .card-red { background: #fff5f5; border-color: #e03131; }
+  .card-blue { background: #f0f4ff; border-color: #1971c2; }
+  .card-yellow { background: #fff9db; border-color: #f08c00; }
+  .card-green { background: #f0fff4; border-color: #2f9e44; }
+  .card-purple { background: #faf0ff; border-color: #862e9c; }
+  .card-orange { background: #fff4e6; border-color: #e8590c; }
+  .card b { display: block; margin-bottom: 4px; }
+  blockquote {
+    margin: 24px 0;
+    padding: 20px 24px;
+    border-left: 4px solid #1971c2;
+    background: #f0f4ff;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #343a40;
+  }
+  blockquote .attr { display: block; margin-top: 8px; font-size: 0.85em; font-style: normal; color: #6c757d; }
+  .quotes-section { margin: 32px 0; }
+  .quotes-section .quote-item { padding: 16px 20px; margin-bottom: 12px; border-radius: 8px; border-left: 4px solid; font-style: italic; }
+  .quotes-section .q-attr { display: block; margin-top: 6px; font-size: 0.82em; font-style: normal; color: #6c757d; }
+  .gloss { font-size: 0.88em; color: #6c757d; padding: 12px 16px; border: 1px dashed #dee2e6; border-radius: 6px; margin: 16px 0; }
+  .gloss::before { content: "作者概括："; font-weight: 600; color: #495057; }
+  .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; text-align: center; }
+  .stat-grid .stat { padding: 16px 10px; border-radius: 8px; }
+  .stat-grid .stat-num { font-size: 2em; font-weight: 700; }
+  .stat-grid .stat-label { font-size: 0.78em; opacity: 0.7; margin-top: 4px; }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 2px solid #e9ecef; font-size: 0.85em; color: #868e96; }
+  footer a { color: #1971c2; text-decoration: none; }
+  .highlight { background: linear-gradient(transparent 60%, #ffd43b 60%); padding: 0 2px; }
+  .pair-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  @media (max-width: 500px) { .pair-grid, .stat-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Zcash 无限增发漏洞 · AI 黑客 vs 形式化验证 · NEAR Agent 愿景</h1>
+  <div class="meta">
+    <span>🎙️ The Chopping Block</span>
+    <span>📅 2026 年 6 月</span>
+    <span>⏱️ 57 分钟</span>
+  </div>
+  <div class="meta" style="margin-top:6px;">
+    👥 Haseeb Qureshi (Dragonfly) · Mert Mumtaz (Helius) · Ilia Polosukhin (NEAR) · Tom Schmidt (DeFi Maven)
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得关注</h2>
+  <p>这一集 The Chopping Block 圆桌讨论触及了加密行业当前最尖锐的几个问题：一个隐藏多年的 zk-SNARK 电路漏洞被发现、AI 正在从根本上改变安全攻防的博弈、形式化验证从奢侈的航天级技术走向区块链标配、NEAR 正在构建 AI Agent 自主运行的商务基础设施。四位嘉宾——Haseeb、Mert、Ilia 和 Tom——在 2026 年 6 月市场暴跌的背景下，展开了一场兼具技术深度和哲学思考的对话。</p>
+
+  <div class="overview">
+    <div class="card card-red"><b>🐛 Zcash 致命漏洞</b>Orchard zk-SNARK 电路 bug 允许无限铸造假币，导致 ZEC 单日暴跌 50%+。漏洞由安全研究员 Taylor Hornby 使用 Claude Opus 4.8 辅助审计发现。</div>
+    <div class="card card-blue"><b>🤖 AI 改变安全格局</b>Ilia 指出 Opus 4 发布后的 2024 年 10-11 月起，之前反复审计过的 DeFi 协议开始大规模被攻破。攻击方拥有数量、时间和模型的绝对优势。</div>
+    <div class="card card-yellow"><b>🔬 形式化验证落地</b>Zcash 的 Ironwood 池将由三个独立团队并行做形式化验证。Mert 预测在 AI 时代这将变成"table stakes"——基本配置。</div>
+    <div class="card card-green"><b>🌐 NEAR 的 Agent 商务</b>Ilia 详细描绘了 AI 代理自主运行供应链、谈判合约、托管支付的未来，并透露已有实际案例在 NEAR 上运行。</div>
+    <div class="card card-purple"><b>🔮 赛博朋克 vs 干预</b>Mert 的立场：如果你有能力阻止犯罪却不阻止，你就只是虚伪地表演赛博朋克。Ilia 提出治理定义规则 + AI 实时执行的中道方案。</div>
+    <div class="card card-orange"><b>📉 市场的叙事危机</b>Mert 认为 Saylor 对加密最大的伤害不是价格，而是他垄断了行业叙事——所有讨论变成了"他买了吗？卖了吗？"</div>
+  </div>
+</section>
+
+<section>
+  <h2>Zcash 漏洞：一个藏了多年的 zk 电路 bug</h2>
+
+  <p>2026 年 6 月的一个周五，Zcash Orchard zk-SNARK 电路中被发现存在一个<strong>无限铸造漏洞</strong>。这个漏洞的机制相当简洁：攻击者可以在 shielded pool（匿名池）中铸造任意数量的假币——而这些假币与真币在池内<em>完全无法区分</em>。Shielded pool 的设计初衷就是提供隐私，所以外部观察者无法区分存入和提取的来源。</p>
+
+  <p>攻击路径大致是：攻击者存入少量 Zcash，利用电路中的约束缺失生成虚假的 zk 证明，声称存入了远多于实际的金额，然后凭虚假证明提取真币。结果：池中的真币被稀释，真实存款人无法全额提取。由于 shielded pool 持有约 <strong>30% 的 Zcash 总流通量</strong>，理论上攻击者可以铸造相当于总供应量 30% 的假币并全部提走。</p>
+
+  <div class="gloss">Orchard 电路中的 zk-SNARK 算术约束存在 underspecification——电路没有强制执行"铸造量 ≤ 存入量"这个核心不变量。在传统银行系统中这个检查是显式的，但在零知识电路中，每一个安全不变量都必须被显式编码进约束系统——遗漏任何一个都是致命漏洞。</div>
+
+  <p>发现者是 <strong>Taylor Hornby</strong>（Shielded Labs）。Mert 在节目中强调了一个被媒体严重扭曲的事实：Taylor 不是随便一个 prompt 就让 Claude 找到了 bug。他是"全球最懂 Zcash 的前五个人之一"，研究 Zcash 多年，自建了专门的审计 harness，将 <strong>Claude Opus 4.8</strong> 作为嵌入工具使用。更值得注意的是，这个电路此前已经<em>经过世界顶级密码学家的多次审计</em>——然而漏洞依然在。</p>
+
+  <p>Zcash 创始人 Zuko 在披露博客中写了一句震撼业界的话：<strong>技术上无法证明这个 bug 从未被利用过</strong>。虽然团队相信没有被利用，但最终确认需要等到 Ironwood 池迁移完成——通过"清点人数"来确保没有假币混入。</p>
+
+  <h3>市场：多重 FUD 的完美风暴</h3>
+
+  <div class="stat-grid">
+    <div class="stat" style="background:#fff5f5;">
+      <div class="stat-num" style="color:#e03131;">$600+</div>
+      <div class="stat-label">ZEC 暴跌前价格</div>
+    </div>
+    <div class="stat" style="background:#fff9db;">
+      <div class="stat-num" style="color:#f08c00;">$250</div>
+      <div class="stat-label">盘中最低点</div>
+    </div>
+    <div class="stat" style="background:#f0fff4;">
+      <div class="stat-num" style="color:#2f9e44;">~$400</div>
+      <div class="stat-label">40%+ 反弹后</div>
+    </div>
+  </div>
+
+  <p>当天并非只有 Zcash 出事。Michael Saylor 卖出了 32 个 BTC、纳斯达克因就业报告大跌、市场预期美联储可能加息而非降息——这是一场<strong>多重 FUD 的完美风暴</strong>。更糟的是，前两三天一些区块浏览器因为没有升级节点，错误显示"Zcash 停止出块"——尽管网络从未停过。Polymarket 当前对该漏洞被利用的概率定价在极低个位数。</p>
+</section>
+
+<section>
+  <h2>AI 与安全：攻防之间不可逆转的不对称</h2>
+
+  <p>Ilia 在节目中提出了一个被反复验证的观察：AI 能力的提升与 DeFi 被攻击的频率之间存在直接关联。</p>
+
+  <p>他给出了一个精确的时间线：<strong>2024 年 10-11 月，Opus 4 发布</strong>——随后 DeFi 协议开始被大规模攻击。"一切之前被多次审计和审查过的协议开始崩塌。"到了 <strong>2025 年 4 月</strong>，开源模型的能力追上来，攻击者可以在本地 GPU 上跑模型，无需告知推理服务商自己在做什么——"又是一波 hack"。而到了今天，任何懂提示工程的人都可以构建漏洞发现循环：不只是静态代码分析，而是<strong>在真实环境中运行 agent，注入 payload，验证是否生效，甚至可以用强化学习来优化攻击策略</strong>。</p>
+
+  <blockquote>
+    "I actually think Mythos was more... it was a marketing ploy on Anthropic's side. The reality is if you're a security expert with these models, now you can find vulnerabilities."
+    <span class="attr">— Ilia Polosukhin，论 Mythos 更像是营销而非本质突破</span>
+  </blockquote>
+
+  <p>攻击方拥有不对称优势：5+ 个不同的 AI 模型、成千上万的人在尝试、无限的时间、可以在本地 GPU 上跑开源模型而不留痕迹。防守方只有一个项目、有限的团队、一次审计的时间窗口——而且<strong>只需要输一次</strong>。</p>
+
+  <p>Haseeb 精准总结了区块链作为代码运行环境的特殊性：</p>
+
+  <blockquote>
+    "The most treacherous environment for code — you only need to get exploited once. You can't really take stuff offline. You can't really say, oh, somebody's about to exploit me, I'm going to yank this away."
+    <span class="attr">— Haseeb Qureshi</span>
+  </blockquote>
+
+  <p>这就是为什么在传统软件工程中，"有一个漏洞被发现"是一个可以修补的事件——但在区块链上，"知道你脆弱的那一刻，你就已经被黑了"。</p>
+</section>
+
+<section>
+  <h2>形式化验证：从航天奢侈品到区块链标配</h2>
+
+  <p>Ilia 用了一个简单的例子解释形式化验证：假设你写了一个排序程序——你想要证明的不仅是"在我测试的几个数组上它是对的"，而是"<strong>对于所有可能的输入</strong>，输出总是包含相同的元素且按顺序排列"。后者就是形式化验证。</p>
+
+  <p>在加密货币语境下，要证明的属性通常是："无论发生什么操作序列，<strong>总供应量不变</strong>"。你存钱，任意操作发生，你取钱——总量没有变化，别人的余额也没有被改变。</p>
+
+  <p>历史上，形式化验证只用于航天代码——你没法给火星车打补丁。但它的成本极高：每条代码行 <strong>$100+</strong> 的人工验证，由数学家手工写证明，慢、贵、而且 specification 本身可能写错。</p>
+
+  <p><strong>AI 改变了这一切。</strong>现在的 AI 模型可以自动生成数学证明——Ilia 形容为"140 IQ 级别的数学推理"。长证明可以被分层拆分处理。关键突破在于：形式化验证不再是"极其昂贵的一次性验证"，而是可以<strong>集成到开发循环中</strong>——你写代码、定义属性、AI 尝试证明、证明失败就修改代码、重复直到证明通过。</p>
+
+  <div class="gloss">形式化验证不同于传统测试。测试只覆盖了你想到的 case；形式化验证用数学证明覆盖了<em>所有可能的 case</em>。对于攻击者拥有无限时间和无限模型的 AI 时代，测试已经不够了——你需要的是证明。</div>
+
+  <h3>Ironwood：Zcash 的三重验证回应</h3>
+
+  <p>Zcash 的应对远超修补一个 bug。他们的路线图包括：从 Orchard 池强制迁移到全新的 Ironwood 池——通过"闸门检查"来确保没有假币混入。更重要的是，Ironwood 池将由<strong>三个独立团队</strong>并行做形式化验证，确保同一类 bug 不再存在。后续还有 Project Tachyon，将使用完全不同的电路算术来减少另一类 bug 的攻击面。</p>
+
+  <blockquote>
+    "In the age of AI, formal verification is just going to be table stakes."
+    <span class="attr">— Mert Mumtaz</span>
+  </blockquote>
+
+  <p>Mert 的预测直白而精准：在 AI 驱动的攻击面前，形式化验证将从"加分项"变成"入场券"。没有它的协议，就是在裸奔。</p>
+</section>
+
+<section>
+  <h2>造船 vs 造飞船：安全思维的范式转移</h2>
+
+  <p>Tom 在节目中贡献了一个精彩的隐喻，堪称这一集的最佳类比：</p>
+
+  <div class="pair-grid">
+    <div class="card card-orange">
+      <b>过去：造船 🚣</b>
+      <p style="font-size:0.88em;margin-top:6px;">你知道船会漏水。装个水泵就好。尽力而为，接受一些水。"Roughly airtight" 就够了。很多项目被反复审计但仍然有漏洞。</p>
+    </div>
+    <div class="card card-green">
+      <b>现在：造飞船 🚀</b>
+      <p style="font-size:0.88em;margin-top:6px;">飞船不能有任何洞。必须完全密封——否则就完了。形式化验证 = 数学证明。不能上线后打补丁。"Completely airtight" 是唯一标准。</p>
+    </div>
+  </div>
+
+  <p>这个隐喻之所以有力，是因为它精确捕捉了加密行业正在经历的<strong>安全范式转换</strong>。在 AI 能够自主搜索漏洞的世界里，"我们有三个审计报告"不再足够——因为攻击者也在用 AI 做第四遍、第五遍、第一百遍搜索。唯一可靠的防御是数学证明。</p>
+
+  <blockquote>
+    "I'm just long math. Unless it's barred by the laws of physics that you cannot secure a system mathematically, the trend is always new knowledge gained, errors corrected, and systems hardened."
+    <span class="attr">— Mert Mumtaz</span>
+  </blockquote>
+
+  <p>Mert 的"看多数学"哲学是这集最深层的论点：计算机从图灵和冯·诺依曼开始就是数学构念。人类不擅长数学，所以总会有漏洞——但趋势不可逆转。每一次出错都会带来新的知识，每一次知识进步都会让系统更坚固。AI 本身就是这个数学进步的产物和证明。</p>
+</section>
+
+<section>
+  <h2>赛博朋克的两难：阻止犯罪是美德还是背叛？</h2>
+
+  <p>Mert 在这个问题上毫不妥协：</p>
+
+  <blockquote>
+    "If you have the means to stop crime, you have to stop it. If you do have it and you don't stop it, then you've kind of just virtue signaled superficially. You put up this facade while not actually taking any of the steps to do the cypherpunk thing."
+    <span class="attr">— Mert Mumtaz</span>
+  </blockquote>
+
+  <p>他的逻辑链条是：如果你声称自己是赛博朋克（追求去中心化、不可篡改、抗审查）——但你实际上保留了多签控制或紧急委员会——那么你从一开始就不是赛博朋克。既然你有控制权，就必须使用它来阻止犯罪。否则你只是<strong>虚伪地表演</strong>。</p>
+
+  <p>这个立场在加密社区中是具有挑衅性的。Tornado Cash 的案例就很说明问题——它被认为是"不可变的"，所以即使政府追查也无法停止。但 Mert 反问：如果协议<em>实际上可以</em>被多签停止，却选择不去阻止朝鲜黑客洗钱——这算什么？</p>
+
+  <p>Ilia 提出了一个折中方案：<strong>治理定义规则（慢），AI 实时执行（快）。</strong>社区通过治理过程定义什么算异常、什么算 hack、什么算不可接受的行为。然后 AI 系统在毫秒级别执行这些规则——跨协议、普遍应用。这样既保留了去中心化治理的本质，又能在第一时间阻止攻击。</p>
+
+  <blockquote>
+    "Code is law until the code is wrong, and then we actually want real law — oh, money is stolen."
+    <span class="attr">— Ilia Polosukhin</span>
+  </blockquote>
+
+  <p>这句话精准地刺中了加密行业的根本矛盾。Ilia 透露，NEAR Intents 已经成为黑客洗钱的通道——"大家都在通过 NEAR intents 洗钱"。团队被迫构建跨链黑客检测系统："整个四月所有人都在 war room 里，搞清楚哪条链被黑了"。这不再是哲学讨论，而是日常的运营现实。</p>
+</section>
+
+<section>
+  <h2>NEAR 的 Agent 商务愿景：从交易到意图</h2>
+
+  <p>Ilia 为 NEAR 描绘了一个清晰的两层架构——这解释了 NEAR 从 AI 创业公司到加密货币再到 AI 的演变路径。</p>
+
+  <p>在他的框架中，<strong>AI 是"单人游戏"</strong>——你的工具、你的界面、你如何与计算机沟通。<strong>区块链是"多人游戏"</strong>——如何协调、如何结算、如何确定真相。这两者必须协同工作：你不会直接和区块链对话（就像你不会用汇编语言写应用程序），你会通过 AI 来表达你的意图。</p>
+
+  <p>这就是 <strong>Intents（意图）</strong> 的核心思想。Ilia 将意图视为"区块链的下一层抽象"：交易像汇编语言——你精确指定每一步操作；意图像高级语言——你只说"我想要这个结果"，不关心在 Solana、Bitcoin、Salesforce 还是中国工厂的电子邮件中完成。</p>
+
+  <div class="gloss">Ilia 的核心洞察：代理之间的支付本身不是问题（你的代理可以直接绑定你的信用卡）。真正的问题出现在当你需要<em>无信任的跨方交互</em>时——代理 A 和代理 B 互不信任，需要托管、信誉系统、纠纷解决机制。这就是区块链不可替代的价值。</div>
+
+  <h3>已经在运行的案例</h3>
+
+  <p>Ilia 分享了两个令人信服的已上线案例：</p>
+
+  <p><strong>场地寻找代理</strong>：用户想"在里斯本找个能容纳 50 人的聚会场地"。通用 AI 做不好这件事——它不知道去哪里查数据、不会评估场地"氛围"。但有一个专业活动机构的代理，拥有预评分和实地考察过的场地数据库。用户的代理可以雇佣这个专业代理——支付 $1，秒级得到结果，比用户自己的代理花大量 token 去搜索高效得多。支付是私密的、结果是已验证的。</p>
+
+  <p><strong>供应商背景调查</strong>：电商卖家需要找中国工厂供应商。那家工厂真的存在？还是把钱打给了空气？代理自动检查公司注册信息、社交媒体存在、商业记录——所有这些都是私密完成的。</p>
+
+  <p>数据层面也有支撑。在市场崩盘的周五，NEAR Intents 处理了 <strong>$2.24 亿</strong> 日交易量——按当前费率，仅那一天 NEAR 通证就是通缩的。Ilia 在节目中说："那是一个通缩日"。</p>
+</section>
+
+<section>
+  <h2>Saylor 的注意力陷阱：加密叙事危机</h2>
+
+  <p>Mert 对 Michael Saylor 的批评不是关于价格——而是关于<strong>叙事控制权</strong>。</p>
+
+  <blockquote>
+    "The worst effect of Saylor is that he has this distortion field... he changes the conversation from the cool parts of Bitcoin and crypto — the adoption and the philosophy and the tech — and all that is discarded for the sole purpose of: did he sell? How much did he buy? It's just a trillion people pocket watching one guy."
+    <span class="attr">— Mert Mumtaz</span>
+  </blockquote>
+
+  <p>这个观察穿透了表面。加密行业最大的资产不是价格——而是<strong>故事</strong>。比特币为什么值钱？不是因为技术（Mert 承认，他已经听了十年关于比特币的一切，不想再讨论了），而是因为那个关于"去中心化货币、固定供给、对抗通货膨胀"的故事。当行业叙事变成"Saylor 买了吗？卖了吗？"，整个行业的吸引力就从"未来愿景"变成了"口袋监控"——这对新进入者毫无吸引力。</p>
+
+  <p>Mert 点名了 Andreas Antonopoulos 式的叙事——"黄金会在火星带被发现，供应量会爆炸，而比特币是固定的"——这才是让人愿意投资的故事。而 Saylor 发的那些"女孩喝 margarita 聊 STRD"的 AI 垃圾广告？"Dude, what are you doing?"</p>
+</section>
+
+<section>
+  <h2>Mert 怎么看 NEAR？</h2>
+
+  <p>Mert 对 NEAR 的评价是全集中最亮眼的 endorsements 之一："Near is the most underrated team in crypto. I think they are extremely slept on." 他将 NEAR 与 Zcash 和 Solana 并列为他认为的行业最顶尖团队。</p>
+
+  <p>跨链 intents、隐私基础设施——他都认为非常有价值。Ilia 比加密行业里几乎任何人都更懂 AI，而且 NEAR 团队"超级强"。</p>
+
+  <p>但当 Haseeb 问 Mert 是否认同"AI 代理即将大规模上链"的叙事时——Mert 深深叹了口气。Ilia 开玩笑说已经成功说服了 Mert 接受 intents，代理是下一步。"It could certainly be real," Mert 说。Ilia 把这当成胜利——"I'm going to get that a poster."</p>
+</section>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+  <p style="font-size:0.9em;color:#868e96;margin-bottom:20px;">这期对谈里最值得记住的几句：</p>
+
+  <div class="quote-item" style="background:#f0f4ff;border-color:#1971c2;">
+    "The most treacherous environment for code — you only need to get exploited once. You can't really take stuff offline."
+    <span class="q-attr">— Haseeb，论为什么区块链是代码最危险的测试场</span>
+  </div>
+
+  <div class="quote-item" style="background:#f0fff4;border-color:#2f9e44;">
+    "I'm just long math... Unless it's barred by the laws of physics that you cannot secure a system mathematically, the trend is always new knowledge gained, errors corrected, and systems hardened."
+    <span class="q-attr">— Mert，论述计算机安全的历史趋势不可逆</span>
+  </div>
+
+  <div class="quote-item" style="background:#faf0ff;border-color:#862e9c;">
+    "In the age of AI, formal verification is just going to be table stakes."
+    <span class="q-attr">— Mert，预测形式化验证将成为 AI 时代的入场券</span>
+  </div>
+
+  <div class="quote-item" style="background:#fff4e6;border-color:#e8590c;">
+    "Code is law until the code is wrong, and then we actually want real law — oh, money is stolen."
+    <span class="q-attr">— Ilia，尖锐指出加密行业的根本矛盾</span>
+  </div>
+
+  <div class="quote-item" style="background:#fff9db;border-color:#f08c00;">
+    "If you have the means to stop crime, you have to stop it. If you do have it and you don't stop it, then you've kind of just virtue signaled superficially."
+    <span class="q-attr">— Mert，论赛博朋克与干预主义的张力</span>
+  </div>
+
+  <div class="quote-item" style="background:#fff5f5;border-color:#e03131;">
+    "The worst effect of Saylor is that he changes the conversation from the cool parts of crypto — the adoption, the philosophy, the tech — to just: did he sell? How much did he buy?"
+    <span class="q-attr">— Mert，论加密叙事被单一人物绑架的现象</span>
+  </div>
+</section>
+
+<footer>
+  <p>Source: <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4468999810.mp3">The Chopping Block — Zcash Infinite Mint Bug + AI Hackers vs Formal Verification + NEAR's Agent Vision</a></p>
+  <p style="margin-top:8px;">© 2026 PodDeck · 由 Claude 辅助生成 · 所有引用均可在原始转录中验证</p>
+</footer>
+
+</article>
+</body>
+</html>

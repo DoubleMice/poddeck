@@ -1,0 +1,251 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "legacy-box", "type": "rectangle", "x": 30, "y": 30, "width": 370, "height": 160,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#fff5f5",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "legacy-label", "type": "text", "x": 50, "y": 38, "width": 330, "height": 24,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "传统汽车: 100-150 个 ECU 野草田", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "传统汽车", "lineHeight": 1.25, "baseline": 18
+    },
+    {
+      "id": "ecu1", "type": "rectangle", "x": 50, "y": 70, "width": 55, "height": 35,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#ffc9c9",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "ecu1-t", "type": "text", "x": 52, "y": 77, "width": 50, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 9, "fontFamily": 1,
+      "text": "燃油喷射", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "燃油喷射", "lineHeight": 1.25, "baseline": 14
+    },
+    {
+      "id": "ecu2", "type": "rectangle", "x": 125, "y": 70, "width": 55, "height": 35,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "ecu2-t", "type": "text", "x": 127, "y": 77, "width": 50, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 9, "fontFamily": 1,
+      "text": "座椅记忆", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "座椅", "lineHeight": 1.25, "baseline": 14
+    },
+    {
+      "id": "ecu3", "type": "rectangle", "x": 200, "y": 70, "width": 55, "height": 35,
+      "angle": 0, "strokeColor": "#f08c00", "backgroundColor": "#ffe8cc",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "ecu3-t", "type": "text", "x": 202, "y": 77, "width": 50, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 9, "fontFamily": 1,
+      "text": "电动车窗", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "电动车窗", "lineHeight": 1.25, "baseline": 14
+    },
+    {
+      "id": "ecu4", "type": "rectangle", "x": 275, "y": 70, "width": 55, "height": 35,
+      "angle": 0, "strokeColor": "#862e9c", "backgroundColor": "#eebefa",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "ecu4-t", "type": "text", "x": 277, "y": 77, "width": 50, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 9, "fontFamily": 1,
+      "text": "HVAC", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "HVAC", "lineHeight": 1.25, "baseline": 14
+    },
+    {
+      "id": "ecu5", "type": "rectangle", "x": 50, "y": 125, "width": 55, "height": 35,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 11, "version": 1, "versionNonce": 11,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "ecu5-t", "type": "text", "x": 52, "y": 132, "width": 50, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 12, "version": 1, "versionNonce": 12,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 9, "fontFamily": 1,
+      "text": "车门锁", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "车门锁", "lineHeight": 1.25, "baseline": 14
+    },
+    {
+      "id": "ecu6", "type": "rectangle", "x": 125, "y": 125, "width": 55, "height": 35,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 13, "version": 1, "versionNonce": 13,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "ecu6-t", "type": "text", "x": 127, "y": 132, "width": 50, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 14, "version": 1, "versionNonce": 14,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 9, "fontFamily": 1,
+      "text": "音响", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "音响", "lineHeight": 1.25, "baseline": 14
+    },
+    {
+      "id": "ellipsis", "type": "text", "x": 320, "y": 132, "width": 50, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 15, "version": 1, "versionNonce": 15,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "...×100+", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "...x100", "lineHeight": 1.25, "baseline": 16
+    },
+    {
+      "id": "impl", "type": "text", "x": 50, "y": 170, "width": 320, "height": 16,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 16, "version": 1, "versionNonce": 16,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 9, "fontFamily": 1,
+      "text": "每个 ECU: 独立供应商, 独立代码, 需10-15家公司协调一个改动", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "独立供应商", "lineHeight": 1.25, "baseline": 12
+    },
+    {
+      "id": "new-box", "type": "rectangle", "x": 30, "y": 220, "width": 370, "height": 130,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#f0fff4",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 17, "version": 1, "versionNonce": 17,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "new-label", "type": "text", "x": 50, "y": 228, "width": 330, "height": 24,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 18, "version": 1, "versionNonce": 18,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1,
+      "text": "Rivian: 3个区域控制器 + 单OS", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Rivian", "lineHeight": 1.25, "baseline": 18
+    },
+    {
+      "id": "zone1", "type": "rectangle", "x": 50, "y": 265, "width": 100, "height": 45,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 19, "version": 1, "versionNonce": 19,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "zone1-t", "type": "text", "x": 62, "y": 277, "width": 76, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 20, "version": 1, "versionNonce": 20,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 11, "fontFamily": 1,
+      "text": "前区", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "前区", "lineHeight": 1.25, "baseline": 16
+    },
+    {
+      "id": "zone2", "type": "rectangle", "x": 170, "y": 265, "width": 100, "height": 45,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 21, "version": 1, "versionNonce": 21,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "zone2-t", "type": "text", "x": 182, "y": 277, "width": 76, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 22, "version": 1, "versionNonce": 22,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 11, "fontFamily": 1,
+      "text": "中区", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "中区", "lineHeight": 1.25, "baseline": 16
+    },
+    {
+      "id": "zone3", "type": "rectangle", "x": 290, "y": 265, "width": 100, "height": 45,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 23, "version": 1, "versionNonce": 23,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "zone3-t", "type": "text", "x": 302, "y": 277, "width": 76, "height": 20,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 24, "version": 1, "versionNonce": 24,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 11, "fontFamily": 1,
+      "text": "后区", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "后区", "lineHeight": 1.25, "baseline": 16
+    },
+    {
+      "id": "os", "type": "text", "x": 130, "y": 320, "width": 170, "height": 20,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 25, "version": 1, "versionNonce": 25,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 11, "fontFamily": 1,
+      "text": "← 一个统一操作系统 →", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "统一OS", "lineHeight": 1.25, "baseline": 16
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}

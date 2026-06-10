@@ -1,11 +1,11 @@
 source: tbpn
-refreshed_at: 2026-06-10T04:37:48.509Z
+refreshed_at: 2026-06-10T18:57:26.701Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 3
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -124,8 +124,12 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-10T19:00:00.049Z
+    transcript_job_id: 9580a9e6510f49f09c4a0b1bd822133d,52901b5bb37b4914ab7db8fc1b7456f5,f83cbab123f3468cbb38f3f0af5d13ea,f2d49ccf128341a0a68e126bd7597c73,8913dcaa242b478d9bf86e7eff6ef913,a581611e1c6544a08d741431aef1b42a,15a613bc36164d37a6840374fd673716,892e42191ec7461b99944b2b61976e13,a3a30c8198e94e89ab889ecee9f19fc0,4806776892e245e3bec338241f81a647,c482874af88d4455883efae05b7613fd,be7a50bf68844b23af843323b2c55b6d
+    transcript_completed_at: 2026-06-10T19:09:53.850Z
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
       Tae Kim, Immad Akhund, Marcus Milione
