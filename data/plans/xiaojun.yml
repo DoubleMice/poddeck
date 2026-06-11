@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-06-11T04:38:41.100Z
+refreshed_at: 2026-06-11T19:03:10.642Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 7
-done: 0
+done: 1
 pending: 0
-needs_transcript: 5
+needs_transcript: 4
 transcribing: 1
 transcribe_failed: 0
 downloaded: 0
@@ -48,8 +48,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69b77577f8b8079bfa8eb837?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/69b77577f8b8079bfa8eb837/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lqXBPXddXfukbdlAP-NDrFNp-2wn.m4a
     image: https://image.xyzcdn.net/Fu-1LnR9vst55OreoKT-ltsumM8W.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-11T19:06:08.354Z
+    transcript_job_id: e93c78eee2a6441f9fd8545f11ae0dba,8fd7bec834a94971ac8a5d298bebaa96,a848776fe1264709a03c73779eea62f3,848f37dd767e4570a316578599dd0847,217cff65383f47c7a96970b659cb8a0f,590bd1f03436479aaa6914612dfbcbb6,1919df3062bd4cf4b9947cb852df387b,1b3a7e1971094fb4b4870ae05fb7926a,f50eee8785e64eaba8abec1ea5d708d2,64ebe2e7e080462c8c55284a72b9ff6c,24d8917d510c4019aaf91ade0c18b05c,193887b4e12245aea4ebe8cb1d92cdf5,8a82f37d10c349b5b8f7e7b117263452,44a1bff85582482884631933b0589cea,e9b42089f75843af87ccabf800eaf4ea,6962ad5f8ba64140b708ac64167cc884,0c52ed6ce24c432c8ae892ef26ed0b29,c88e7edbab054f03a843a13b82ac57ea,3b8be171197d4de895047f123627817a,9af8599859634f05bea8f485b08bea84,mimo:69b77577f8b8079bfa8eb837:20:2026-06-11T19:06:08.354Z,f1db37d90c794f37b5818d042f16b606,4b87dcd66b4a41e99fbfb6a23f3e3580,7aab672b1bfa4db4afc2abe265adca34,2aa97840d00b4566977058a5f46a4d29,edcc7962fa604bf584fb09d77a6cb4bc,526c14e454bf4781bf807fda7cc19164,c1583a968e0e4ffd940d1d467f97dd2e
+    transcript_completed_at: 2026-06-11T19:25:44.725Z
   - id: 698ebb0b66e2c30377510cf6
     title: 132. 对星海图创始人高继扬的3小时访谈：鲶鱼、曾国藩、Waymo与Momenta的两面、一只狼与许华哲的离开
     duration: 11092

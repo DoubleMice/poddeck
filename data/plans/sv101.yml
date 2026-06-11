@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-11T04:38:41.111Z
+refreshed_at: 2026-06-11T19:03:10.653Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 7
-done: 0
+done: 1
 pending: 2
-needs_transcript: 5
+needs_transcript: 4
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -133,7 +133,7 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: Alex Yeh, Dr.Mark Ren, Dr.Zhibin Xiao, and 张璐.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 09a8ab8b9c12419d96cc92b345c477e0,b58f96e98d4d4f42bde65cd1ab97be02,b7f77bea09b243588423c5d2b8dc3c04,500ef74f82c44534a0ea6a746bb0ae1a,36db4aa1b694498c8d790dec09b0f55f
@@ -393,8 +393,12 @@ episodes:
       本期节目不构成任何投资建议，投资有风险，入市需谨慎。
 
       Special Guest: Henry Zhu.
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-11T19:03:11.776Z
+    transcript_job_id: f3e610624cfc44828d433344e5250e03,f58172c298e14ffbb42367c5b1421baf,4125e353c9e84b55b05d00a9eb1444b9,6aeeecbf67034563b62b495ad5591b93,0300ad60c0894372beae3d862e2c391d
+    transcript_completed_at: 2026-06-11T19:06:08.235Z
   - id: 7abda28b-99c6-4ebc-8c0d-37bcc77f6a73
     title: E226｜聊聊DeepMind创始人哈萨比斯：一个科学家与失控的AI竞赛
     duration: 4394

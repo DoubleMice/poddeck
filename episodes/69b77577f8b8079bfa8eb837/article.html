@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px; line-height: 1.75; color: #1a1a1a;
+    background: #fafafa; max-width: 720px; margin: 0 auto; padding: 32px 20px 64px;
+  }
+  h1 { font-size: 1.8em; line-height: 1.35; margin: 24px 0 8px; }
+  h2 { font-size: 1.35em; margin: 48px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e9ecef; color: #1971c2; }
+  h3 { font-size: 1.1em; margin: 24px 0 8px; font-weight: 600; }
+  p { margin: 0 0 16px; }
+  .meta { color: #868e96; font-size: 0.92em; margin-bottom: 24px; }
+  .meta a { color: #1971c2; }
+  blockquote {
+    margin: 16px 0; padding: 12px 20px; background: #f8f9fa;
+    border-left: 4px solid #1971c2; font-style: italic; color: #495057;
+  }
+  .cards { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+  .card { flex: 1 1 180px; padding: 14px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.55; }
+  .card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .card-purple { background: #f3f0ff; border-left: 4px solid #7950f2; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .card-red { background: #fff0f0; border-left: 4px solid #c92a2a; }
+  .card strong { display: block; margin-bottom: 4px; }
+  .quotes { margin: 24px 0; }
+  .quote { margin: 0 0 12px; padding: 14px 18px; border-radius: 6px; font-style: italic; }
+  .quote .ctx { font-size: 0.82em; font-style: normal; opacity: 0.65; margin-top: 6px; }
+  .quote-q1 { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .quote-q2 { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .quote-q3 { background: #f3f0ff; border-left: 4px solid #7950f2; }
+  .quote-q4 { background: #fff9db; border-left: 4px solid #f08c00; }
+  .quote-q5 { background: #fff0f0; border-left: 4px solid #c92a2a; }
+  .quote-q6 { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .gloss { color: #868e96; font-size: 0.88em; }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #dee2e6; font-size: 0.85em; color: #868e96; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; padding: 20px 16px 40px; }
+    h1 { font-size: 1.5em; }
+    .cards { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+<h1>对谢赛宁的 7 小时马拉松访谈</h1>
+<div class="meta">
+  <strong>嘉宾</strong>：谢赛宁（Saining Xie）— NYU 助理教授，Emi Labs 联合创始人 & Chief Science Officer<br>
+  <strong>来源</strong>：商业访谈录 · 语言及世界工作室<br>
+  <strong>日期</strong>：2026 年 3 月<br>
+  <strong>时长</strong>：6 小时 45 分钟<br>
+  <strong>收听</strong>：<a href="https://www.xiaoyuzhoufm.com/episode/69b77577f8b8079bfa8eb837">小宇宙 FM</a>
+</div>
+</header>
+
+<section>
+<h2>为什么这期值得读</h2>
+<div class="cards">
+  <div class="card card-blue"><strong>7 小时完整心路</strong>从交大 ACM 班到 NYU、从表征学习到 Emi Labs——一位年轻 AI 科学家的完整成长史</div>
+  <div class="card card-purple"><strong>世界模型路线图</strong>系统阐述世界模型的定义、路线分歧与本质——不是技术路线，是所有人共同的目的地</div>
+  <div class="card card-green"><strong>拒绝 Ilya 两次</strong>2018 年为恺明和 FAIR 拒绝 OpenAI；2024 年为 vision 路线拒绝 SSI——两次关键选择的底层逻辑</div>
+  <div class="card card-yellow"><strong>DiT → Sora 前传</strong>在 FAIR 最后一个月做出、被 CVPR 以"novelty 不够"拒稿——Bill Peebles 带入 OpenAI，成为 Sora 骨架</div>
+  <div class="card card-orange"><strong>AMI Labs 揭盅</strong>与杨立昆联合创业：估值 30 亿欧元的"反向 OpenAI"，四个办公室横跨三大洲</div>
+  <div class="card card-red"><strong>42：宇宙的答案</strong>从寒武纪大爆发到松鼠智能，从《金刚经》到维特根斯坦——关于智能本质的哲学之旅</div>
+</div>
+</section>
+
+<section>
+<h2>一、"B 级生"的轨迹</h2>
+
+<p>谢赛宁不喜欢用"A 级生"来描摹自己。"你看我身边很多朋友——A class 一路走上来的。最好的高中、最好的本科、参加竞赛、最好的 PhD、去四大教书。我完全不是这样。我最多是一个 B class 的 trajectory。"</p>
+
+<p>童年由两股力量塑成：妈妈带着他四处旅游、做生意，"全国各地到处跑"；爸爸是"一个纯粹的死宅，从来不出门"，但家里的书房几面墙都是书。"所以我小时候就处在这种状态中——要么在外面被我妈带着跑，要么在家翻一些有的没的、能看的不能看的都看一看。"九岁时，他有了第一台电脑。"不用来干正事——一盒一盒地买游戏。"后来有了互联网，BBS、新浪博客、饭否——"互联网的爆炸式增长让我变成了一个对很多事情都很感兴趣的人。"</p>
+
+<p>保送上海交大 ACM 班也是一场偶然。他有信息学和数学的竞赛奖，恰逢交大推出提前招生计划。学校老师劝他"冲一冲清华北大"，但他觉得"交大挺好的，我跟这个城市、这个学校气质相投"。进校前那两个月的暑假——在寝室里打 Dota、虚度时光——他至今称之为"人生的高光时刻，因为这之后再也没有出现过这样的时刻"。</p>
+
+<p>在 ACM 班，他的排名大概是 35 人中第 13 名。"我成为不了第一名第二名，真的做不到。我们有很多很强的竞赛背景的同学。"但他不太在意排名——"这也是受了《交大生存手册》的启发。"</p>
+
+<p>这个"生存手册"是学长侯晓迪主笔的。侯晓迪做了两件传奇的事情：本科生发了 CVPR 论文（7 行代码解决一个重要问题，在当时闻所未闻）；主笔了一本小册子，讲"人为什么要学习？中国的教育体制、大学的模式到底哪里错了？"里面有一句话谢赛宁至今记忆深刻：</p>
+
+<blockquote>"如果一个人把政策评分作为自己的至高追求，那么他就是这个政策的牺牲品。"</blockquote>
+
+<p>手册还教大家怎么逃课、怎么快速完成作业，更重要的——"做研究的目的不是灌水发论文，而是真的对这种无限的未知的探索。"侯晓迪成了谢赛宁的早期偶像。两人在 Google Chat 上讨论 research，"他给了我很多很多建议"。</p>
+
+<p>ACM 班还有一个创举：每人要上一门"学子讲坛"——45 分钟到一个小时的 presentation，不能跟学习有关。"有人讲哲学、有人讲历史、有人讲社会。大家是在一个相对宽松、强调通识的设定下往前走。"</p>
+
+<p>俞勇老师有一句话，谢赛宁后来反复讲起：</p>
+
+<blockquote>"不是因为看见所以相信，因为相信所以看见。"</blockquote>
+</section>
+
+<section>
+<h2>二、为什么是视觉？</h2>
+
+<p>大二时谢赛宁进入了 BCMI 实验室（神经科学 + AI）。书架上放着关于意识、大脑、图像、人类如何认知真实世界的书——"看了之后觉得哇太有意思了。"</p>
+
+<p>主持人问他为什么被视觉吸引，他的回答从个人延伸到哲学：</p>
+
+<blockquote>"我感受这个世界的方式就是通过视觉。如果能去掉一种感官，也许听不见、没法说话、没有触觉、没有嗅觉，会过得很悲惨，但可以接受。但如果没了视觉——不能看动画片、不能看电影、不能打游戏了——我似乎丧失了一个人的独立性。"</blockquote>
+
+<p>然后他追溯到了更远：寒武纪大爆发。5.3 亿年前，地球上几乎没有眼睛，生物在深海中暗无天日地生存。然后有一天，某些生物演化出了视觉——能看见猎物，能躲避天敌——"一旦视觉诞生，其他生物不得不演化出更强的视觉，否则就会被吃掉。所以就展开了一场军备竞赛。"寒武纪之后，物种从屈指可数到大爆炸式地增长到几十万种——"一个 leading theory 是，大爆发的来源就是大家在视觉层面的军备竞赛。"</p>
+
+<p>最后他给出了一个最深的洞见：</p>
+
+<blockquote>"眼睛是唯一一个——它是大脑的一部分，但它是唯一一个暴露在真实世界里面的大脑部分。因为其他的大脑部分都藏在我们的头骨背后。"</blockquote>
+
+<p>"解决视觉不是要解决视觉本身，而是要解决智能本身。"</p>
+</section>
+
+<section>
+<h2>三、第一次逃逸：去新加坡，不去亚研院</h2>
+
+<p>ACM 班大三必须实习一次。大多数人去微软亚研院（MSRA），那里有马毅、孙剑、何恺明——但他们不愿意收"啥也不懂的本科生"。俞勇老师劝他："你们本科生现在最重要的还是有一段研究经历，学会怎么做研究。具体做什么方向不很重要。"</p>
+
+<p>谢赛宁说："我觉得不行。"</p>
+
+<p>他私下联系了新加坡国立大学（NUS）颜水成老师的实验室。一切敲定以后才告诉俞勇老师。俞老师沉默了几秒钟——"我猜他心里的想法是，这个学生怎么这么刺头"——最后说："好，你去吧。"</p>
+
+<p>在 NUS，导师冯佳时手把手带他，发表了第一篇 CV 论文（BMVC）。虽然"不是顶会，很不幸本科还是没能发出一篇 CVPR"，但他第一次知道了 research 是怎么回事——"真正写过一篇 paper 跟没写过，差别还是很大"。而 2012 年刚好是 AlexNet moment——深度学习时代的原点。</p>
+
+<p><span class="gloss">作者概括：谢赛宁这种"想方设法促成自己想做之事"的肌肉记忆，贯穿了他此后所有的关键决策。</span></p>
+</section>
+
+<section>
+<h2>四、PhD 险些失学，涂卓文教授"最后 15 天捞人"</h2>
+
+<p>申请季接近尾声，谢赛宁没有拿到任何一个他想去的计算机视觉方向 offer。一度准备去做推荐系统的研究。然后他"疯狂地跟大家写套磁邮件"。</p>
+
+<p>涂卓文（Zhuowen Tu）教授在 4 月才回复——那时离 4 月 15 日 PhD 截止日已经很近。两人半夜三点打了一个电话："我任何时候都有时间。告诉他为什么我想做这件事，为什么我很欣赏你的 research，我觉得我们可以一起工作。"拿到的是 UCLA 的 offer。</p>
+
+<p>办完签证、准备入学前一周——涂老师说："不好意思，我要跳槽了。我要去哪我现在也不能告诉你。你有几个选择：留在 UCLA，我把你交给其他老师托管；或者等一等，如果我去的学校你愿意来的话。"</p>
+
+<p>谢赛宁："我基本上就是马上说，我就选择你了。"</p>
+
+<p>后来才知道涂老师去的是 UCSD。当时 UCSD 综合排名不如 UCLA，AI 师资也在外流。但这个选择最终被证明是对的——"我不在意学校。重要的事情是我跟谁在做什么事情。这些噪音之外，这是我唯一一颗想要去关心的事情。"</p>
+</section>
+
+<section>
+<h2>五、五次实习与"流浪式研究员"生活</h2>
+
+<p>谢赛宁在 PhD 期间实习了五次——NEC Lab、Adobe、Meta FAIR、Google Research、DeepMind。"每年夏天把宿舍转租出去，开着破车从南加开到北加——八个小时的路程。两个行李箱就是全部身家。居无定所。"他称之为"流浪式研究员生活"，并且"还蛮开心的"。</p>
+
+<p>五次实习中，大概一半没做出什么东西。在 Adobe 做 crowdsourcing + design，"没有做出来，还对我的 mentor 心怀愧疚"。但这段消沉期让他学到"没做出来也不是世界末日"。DeepMind 在伦敦——冬天、寒风、雨，"要做 RL 相关的 research，做得很痛苦"——但让他认识到两件事：一，自己不喜欢做 RL 和机器人；二，DeepMind 的组织模式非常独特。Demis Hassabis 跟 intern 们开会时说——</p>
+
+<blockquote>"DeepMind 最后会成为一个能拿 multiple Nobel Prizes 的公司。"</blockquote>
+
+<p>"当初觉得哇这个也太 ambitious 了，是不是有点天方夜谭？但现在已经实现了至少一步。"——AlphaFold 正是在他实习期间逐渐衍生起来的。</p>
+
+<p>最有收获的是在 Meta FAIR：何恺明加入了 FAIR，manager 把谢赛宁"委托"给恺明。实习前两个月毫无进展，最后一个月两人决定打 ImageNet challenge。谢赛宁提出一个 residual 的思路，恺明将其提炼为金子般的 idea。作品是 ResNeXt，"She's ResNet"——名字里的 X 既是 Next generation，也是给谢赛宁的 credit。ImageNet 挑战赛得第二名，实际上应该是第一，因为第一名是 ensemble 方案。</p>
+
+<p>ResNeXt 的核心非常简洁：把 ResNet 的单层串行结构改成平行多组——一个大网络里面分布着多个小网络，每组独立计算。按现在的话说，这就是 MOE（Mixture of Experts）。"我们在 ImageNet 上看到了某种 scaling behavior：group 数目越多，网络越稀疏，同样 FLOPS 下结果越好。"</p>
+</section>
+
+<section>
+<h2>六、何恺明：Excel、预测、金刚经</h2>
+
+<p>"何恺明在我心里面就是最牛逼的研究员。"谢赛宁在 FAIR 四年与恺明朝夕相处，学到的不仅是技术——更是一整套 research 方法论。</p>
+
+<h3>怎么找 idea？不能坐着想</h3>
+
+<p>恺明的逻辑：如果坐在那儿想出来的 idea，要么 100 个人同时在想，要么别人已经试过且失败。"真正的 idea 来自探索——把 research 当玩具玩，hack 一些东西。"成功的实验给你梯度，失败的实验给你更大的梯度。<strong>梯度即 idea</strong>。探索出来的 idea，才是"属于你自己的 idea"。</p>
+
+<p>这意味着一个标准的 research 六个月周期：两个月探索（hack、读论文、写 baseline）、两三个月收敛（找到信号后 scale up）、最后两个月写 paper + polish。而真正好的工作——"ResNeXt 是这样的，DiT 是这样的"——总是在最后一个月里迸发。</p>
+
+<p>"最差的研究是什么样的？就是你一开始定义的 idea 和最后发表的 idea 完全一致。你没有遇到任何障碍，没有任何困难。这说明你的 idea 是一个 boring idea。"</p>
+
+<h3>Excel 作为研究仪器</h3>
+
+<p>FAIR 实习生第一课——不是学 Linux 或 PyTorch，而是学会用 <strong>Excel 表格</strong>。恺明建立的实验追踪体系：每一行是一个实验，每一列是要记录的指标。关键决策在于——哪些列要留？哪些行要放？每一行都要跟其他行产生"对照式的对比"，才能给你梯度的信号。</p>
+
+<p>而且，跑实验前要先预测结果。"猜对了，思维链条可以往前推。猜错了——这也是一个 surprise，你就要问自己：我为什么想错了？最有价值的事情，是你自己观测到的一个意外。"</p>
+
+<p>一个反直觉的点：performance 掉了 10 个点，不是坏事。"一个 negative 信号的反方向就是一个正向信号。最怕的是停在原地——不好不差，没有信号。"</p>
+
+<h3>脚手架决定上限</h3>
+
+<p>"你的 research 上限取决于你 baseline 的好坏。"如果 baseline 很差，你很容易自欺欺人——你发现了一个信号，但可能是错的，因为 baseline 本身就不够好。恺明在 FAIR 单枪匹马从零在 TPU 上搭建了整套 infrastructure。"从底层写起，使得我们能去做 MoCo、MAE、DiT 这一系列工作。"</p>
+
+<h3>《金刚经》</h3>
+
+<p>恺明在谢赛宁入职时送了他一本《金刚经》。核心的一句：</p>
+
+<blockquote>"凡所有相，皆是虚妄。若见诸相非相，即见如来。"</blockquote>
+
+<p>"看一篇论文的时候——重要的事情是打破这个论文给你的幻想，去追问它背后到底隐含着什么样的实质性东西。Research taste 的来源，就在于你能不能抛开所有虚无的'象'，一直去通往真理的道路。"</p>
+
+<p>这解释了为什么恺明对 fame 完全不 care。"对他来说，这些 completely out of his world view。"</p>
+</section>
+
+<section>
+<h2>七、研究是一场无限游戏</h2>
+
+<p>谢赛宁在 CVPR 给过一个 talk，叫《研究是一个无限游戏》。</p>
+
+<p>棋手和运动员是有限游戏——你的最终成就取决于你最差的一步。每一步都要标准，一旦落子失误，就输了。但 researcher 更像发明家——"你这辈子只需要成功一次就够了。如果你足够幸运，可以成功几次，两次吧。但你不需要成功一百次。"</p>
+
+<p>MIT 教授 Bill Freeman 有一个经典插图：横轴是论文质量（从差到极好），纵轴是对职业生涯的影响——这条曲线不是线性的。差的工作没人注意，还不错的工作也没人注意。但一旦你做出了一篇所有人都知道的工作，impact 会一跃冲到顶点。"学术界衡量的是代表作——你 optimize 的不是 average，是你的 max。"</p>
+
+<p>但现在情况变了。谢赛宁观察到，"制定游戏规则的人"已经从学术界变成了 OpenAI、Google、Meta。大厂发一个产品，学术界蜂拥而至，用"花生米一样少的资源"追赶。</p>
+
+<p>他列出大约 25 篇他认为"真正改变了 AI 进程"的论文：LeNet、AlexNet、ImageNet、ResNet、Transformer、GPT-3、BERT、CLIP、ViT、GAN、NeRF、DDPM……"凯明一个人出现了好几次。"谢赛宁说他自己一篇都没有——"DiT 勉强算 0.25 篇。它是在已有的切线上面推了一小步，不是彻底的范式变革。"</p>
+</section>
+
+<section>
+<h2>八、DiT 与 Sora：被拒稿的论文如何改变世界</h2>
+
+<p>2022 年夏天，谢赛宁在 FAIR 招的 intern Bill Peebles 来实习。最初的目标是研究 diffusion model 学到的表征，两个月后发现表征层面价值不大——但新架构（用 ViT 替代 UNet 做 diffusion backbone）"更 efficient、更 scalable"。</p>
+
+<p>最后一个月冲刺。论文投稿 → <strong>被 CVPR 拒稿</strong>（"novelty 不够"）。换投另一个会 → 中了 oral。推特上大量讨论——但"没有人真的用它干任何事"。谢赛宁和 Bill 去找 Stable Diffusion 的人聊，跟大公司聊——都没人买账。</p>
+
+<p>那时 ChatGPT 刚刚出现。FAIR 陷入无休止的"对齐会议"——"我们到底应该做什么？连续好几个星期，唯一的 topic 就是这件事。"谢赛宁说，"这是完全反 research 的。没有人会知道要做什么——这是反 bottom-up 逻辑的。"</p>
+
+<p>2022 年底，Bill 毕业了。谢赛宁建议他去 OpenAI。Bill 和 Tim Brooks 在 OpenAI 获得了足够的自由度和资源，把 DiT 变成一个实际可用的系统。这个系统叫 <strong>Sora</strong>。</p>
+
+<p>FAIR 甚至不让已经离开的谢赛宁在论文上署名——"只署了 NYU 和 Berkeley 的名字"。Sora 的 blog post cite 了 DiT，但讽刺的是，工业界 research lab 正在变得越来越封闭——"一开始发论文，后来只写 blog post 能加 citation……再到后面 blog post 也不能署名，只能写 'OpenAI Team'。"</p>
+
+<p>"学术界和工业界的良性交流渠道，正在被打断。Credit assignment 的机制，正在瓦解。"</p>
+</section>
+
+<section>
+<h2>九、两次拒绝 Ilya Sutskever</h2>
+
+<p><strong>第一次，2018 年。</strong>谢赛宁 PhD 刚毕业。面试 OpenAI——面试官是张书敏，一张 A4 纸，铅笔手写的面试题，在一个小黑屋里关了五六个小时。"我觉得太有意思了，这个地方很有意思。"拿到了 offer。</p>
+
+<p>但"那时候想都没想，我就想去 FAIR"。FAIR 有"计算机视觉三驾马车"——何恺明、Pieter Abbeel、Russ Girshick。"他们做的研究就是最顶尖的 CV 研究。对我来说没有什么好选的。"</p>
+
+<p>Ilya 打电话来了。"非常生气。他问我说，你为什么不讨论一下就把 offer 拒了？是我们给的钱不够吗？"谢赛宁搪塞了几句。"我说抱歉，不能去。"</p>
+
+<p>在 2018 年，这个选择在很多维度上是"错"的——如果目标是教职，就应该留在恺明团队发更多 paper。但谢赛宁的标准始终只有一个："我只考虑我应该去哪里，做我最想做的事情，跟我最想共事的人一起共事。"</p>
+
+<p><strong>第二次，2024 年。</strong>Ilya 刚成立 SSI（Safe Superintelligence Inc.），给谢赛宁发邮件。两人在纽约街头走了一段。这次聊的不是薪酬——而是"怎么样给未来的人工智能给予爱的能力"。</p>
+
+<p>谢赛宁最后问了一句："你对 multimodal 这件事怎么看？对计算机视觉怎么看？"</p>
+
+<p>Ilya 的回答："这件事情已经解决得很不错了。"</p>
+
+<p>谢赛宁又拒绝了。SSI 有自己的基于语言的路线，"这条路线至少在现在为止，不是我想要设计的"。</p>
+
+<p>但他不认为这是"分歧"。"兄弟爬山，各自努力。LLM 跟我想做的事情不冲突。没有 LLM 最近的这些发展，可能也没有现在计算机视觉现在的这种状态。"</p>
+</section>
+
+<section>
+<h2>十、语言是毒药，LLM 终将凋零</h2>
+
+<p>"LLM 永远不会死，但终将凋零。"（They won't die, they will just fade away.）这句话可能是整期对话最具冲击力的断语之一。</p>
+
+<p>谢赛宁的论证是层层递进的。首先，<strong>语言模型不是自监督学习，而是强监督学习</strong>。"语言是什么？是人类几千年 civilization process 了所有关于这个世界的一切，然后以一个 tokenized 的方式存储下来。恰好我们有了互联网，把这些 knowledge 全都 upload 了上去——所以对于 LLM researcher 来说，这件事是 for free。但一个东西免费，不代表它没有 label。"</p>
+
+<p>其次，<strong>语言是交流工具，不是思考工具</strong>。"我们使用语言的时候，除非说梦话——大部分时候你是带着 intention 的，你要传达一个目的。所以 LLM 更像是一个 search engine 的延伸。我们总要带着心里的目的去问一个问题，然后 expect 一个答案。但这件事情不是 world model 的实质。World model 在我们大脑的 background 做了很多很多的工作——甚至在你决定要按哪个按钮之前，你的大脑已经替你做好了这个决定。"</p>
+
+<p>第三，<strong>LLM 是"反 Bitter Lesson"的。</strong>Rich Sutton 的 Bitter Lesson 说应该尽量减少 human knowledge，多用 search 和 learning。但语言本身就是人类极其聪明的一个产物、精巧的 structure。"如果讨论怎么刻画这个世界，语言就是这种 structure。LLM 并没有像 Bitter Lesson 说的那样抛弃人类的聪明才智——它正建立在这个基础之上。"</p>
+
+<p>最终，谢赛宁用一个比喻收束了所有论证：</p>
+
+<blockquote>"语言其实是一个毒药，或者说是一个鸦片。你加多语言总是会觉得更幸福的——它是一个 shortcut。但如果你一直吸鸦片你就废了。如果一直拄着拐，你也没有办法训练你大腿的肌肉。"</blockquote>
+
+<p>视觉就是那条"弱势的腿"。在多模态系统中，语言提供了巨大的好处，但也制造了严重的问题——许多所谓的"多模态"任务跟视觉无关，纯粹是语言在解决。"我现在非常担心语言对视觉的污染。而且这个污染已经在发生了。"</p>
+</section>
+
+<section>
+<h2>十一、什么是世界模型？</h2>
+
+<p>在谢赛宁的定义里，世界模型是一个 predictive function：给定环境状态 S_t 和动作 A_t，预测下一个状态 S_{t+1}。</p>
+
+<p>这个概念并不新——1943 年生理学家 Kenneth Craik 就提出人在脑中拥有世界模型；1960-70 年代 control theory 里用 model predictive control 把探测器送到月球；后来的 model-based RL 里，Rich Sutton 的 Dyna 架构也围绕世界模型展开。</p>
+
+<p>谢赛宁认为，<strong>世界模型不是什么神秘的 new thing——它是表征学习的自然延伸</strong>。"什么是 state？state 是最少的信息来描述一个系统——取决于你要解决什么任务。这恰恰就是层次化表征的任务：从 pixel → edge → shape → object → scene，逐层抽象，丢掉无关细节。"</p>
+
+<p>对于 safety，世界模型提供了和大语言模型完全不同的路径：</p>
+
+<blockquote>"LLM 的 safety 是通过 fine-tuning alignment 实现的——喂数据让它知道什么话不能说。真正的世界模型你不需要这样做，因为你可以预测你的 action 会导致什么后果——你可以在 inference time 就尽量避免这样的行为。"</blockquote>
+
+<p>他认为，目前有三条不同的世界模型路线在同时推进：</p>
+<ul>
+<li><strong>生成模拟派</strong>（Sora, Genie, Runway）：目标是把视频渲染得好看、一致、可控——world simulator</li>
+<li><strong>3D 资产派</strong>（World Labs / 李飞飞）：强 3D 表征，explicit spatial representation</li>
+<li><strong>预测大脑派</strong>（Emi Labs / 谢赛宁+杨立昆）：focus 在提升"智能本身"——学习 predictive representation</li>
+</ul>
+
+<blockquote>"我们每个人都在世界模型的道路上往前走。世界模型是一个目的，不是一个具体的算法或者技术路线。可能过不了几年，现在这些争论会显得异常可笑——因为大家其实都在往这条路线发展。"</blockquote>
+</section>
+
+<section>
+<h2>十二、从 Cambrian 到 REPA：新范式的雏形</h2>
+
+<p>谢赛宁在 NYU 发起了 Cambrian 系列。Cambrian-1 是一个多模态系统的系统性研究——"只不碰 LLM 部分"，其他全做充分的 ablation。Cambrian-X 则提出了一种划分 vision 能力的阶梯：L0 纯语言（柏拉图洞穴）→ L1 Show & Tell → L2 连续视觉流认知 → L3 空间智能 → L4 预测性世界模型。</p>
+
+<p>名字"寒武纪"的用意：寒武纪大爆发的一个 leading theory 是视觉诞生引发了物种军备竞赛——"寒武纪是视觉的起点。"论文视频也颇具风格——学生拿着摄像机在纽约街头边走边拍，被称为"写给纽约的情书"。</p>
+
+<p>在表征学习的延续上，REPA（Representation Alignment）让 diffusion model 的内部表征与外部自监督模型的表征对齐。RE（Representation Autoencoder）更进一步：用外部强的表征直接作为生成模型的编码器。"这让我能够 make a bet：世界上只有一件事情是重要的——怎么学到这个表征。当你有足够好的表征后，上面处理其他问题都是简单的。"在他设想的未来架构中，LLM 会退化为"一个 simple communication interface"，生成、action 都变成表征层的解码器。</p>
+
+<p>马毅老师给了关键鼓励。"有人质疑你的表征层维度太高，会不会难以训练？马老师站出来说，你们一定不能害怕高维度——高维是所有机器学习的基石。"</p>
+</section>
+
+<section>
+<h2>十三、Emi Labs：反向 OpenAI</h2>
+
+<p>2025 年，谢赛宁做了一个"玄学决定"——与杨立昆联合创立 Emi Labs（AMI Labs）。</p>
+
+<p>触发点是他意识到可能陷入的"中等 paper 陷阱"——会发一些不错的论文，但限于学校资源，无法把 idea 真正推广成新的 breakthrough。"在学校里面资源紧缺。学校是很好的平台，让我有足够空间去找到想做的事。但好像现在是一个时间点。"</p>
+
+<p>杨立昆的"魔法"在起作用。"跟 Yang 说话有点像哈利波特施咒——说一些话，你就不会想其他的了。"谢赛宁只纠结了一个星期。</p>
+
+<p>Emi Labs 的叙事是"反向 OpenAI"：</p>
+<ul>
+<li><strong>正向 OpenAI</strong>：互联网 download 数据 → train transformer → 获得 intelligence → push to market</li>
+<li><strong>反向 OpenAI</strong>：无法直接从互联网 download 世界模型所需的数据 → 需要和"有数据、有具体问题的公司"携手，通过合作伙伴关系共建模型</li>
+</ul>
+
+<blockquote>"World model needs the world。我们想要 build 一个反向的 OpenAI——草根联盟的感觉。大家通过某种合作伙伴的方式，一起去共建这样一个模型。形成闭环：初始世界模型 → deliver 给工业合作伙伴创造价值 → 产生更多数据 → 反哺世界模型。"</blockquote>
+
+<p>公司的架构本身也是去中心化的：总部在巴黎，另有纽约、蒙特利尔、新加坡三个办公室。"哪里有人才，公司就在哪里。"第一天就有四个 office。</p>
+
+<p>招人哲学同样与众不同："我们不想把已经 established 的 superhero 聚到一起。一个人很难被闪电击中两次——如果已经发过那 25 篇改变 AI 的 paper 中的一篇，再发一次的概率会低很多。"</p>
+
+<p>他们刻意没有把公司放在硅谷。"Silicon Valley 已经深陷于 large language model 的催眠了。被催眠的人总有醒来的一刻。"估值 30 亿欧元，融资不难（"有 Yang 在确实不难"），但硅谷里"大部分人"不相信他们——"你们可以不相信我们。let's see。这条路我已经 all in 了。"</p>
+</section>
+
+<section>
+<h2>十四、从质疑 JEPA，到理解 JEPA，到成为 JEPA</h2>
+
+<p>JEPA（Joint Embedding Predictive Architecture）是杨立昆 2022 年提出的认知架构。在很长一段时间里，谢赛宁认为它"不过是 yet another self-supervised learning algorithm"。</p>
+
+<p>转折是逐步发生的。先是看到有人在严格证明 good representation → isotropic Gaussian distribution——发现 JEPA 背后有数学原理。然后是读到杨立昆 2022 年论文里更大的图景：JEPA 不是模型，不是具体算法——是一整套 cognitive architecture，包含 world understanding、prediction、planning。</p>
+
+<p>"JEPA 是一个非常非常广阔的海洋，在这个海洋里面可以有好多好多的船。LM 也是其中的一部分。"</p>
+
+<p>他越来越确定这个方向值得投入。"现在很多 LLM startup 是把事情往小里做。但 Emi Labs 是在刻意把事情做大——有足够的空间去探索、去 scale up，直到我们能有一个新的 breakthrough。"</p>
+
+<p>而最终的 to C 产品会是什么？谢赛宁不知道——但他认为有两个最有希望的出口：一是 AR 眼镜 / wearable device——always on、持续摄入视觉流、提供智能决策；二是机器人的"大脑"——"我想通过不做 robotics 的方式去解决 robotics 的问题。所有机器人创业公司，包括大厂的机器人团队，都没有在解决大脑的问题。"</p>
+</section>
+
+<section>
+<h2>十五、AGI 是伪命题，松鼠智能才是真难题</h2>
+
+<p>杨立昆一直反对 AGI 的叙事，谢赛宁继承了这个观点并给出了自己的论证。</p>
+
+<p>从信息论的角度：人拥有约 200 万根视觉神经纤维，理论上可以 model 的视觉函数数量是天文数字——"但人真正能 process、能看到的东西其实趋近于零。人的智能是一个非常 specialized 的智能。人只能认知到自己能看到的东西。AGI 不是一个 well-defined 的概念。"</p>
+
+<p>从进化论的角度：如果把 5.3 亿年缩短到 24 小时，人类的语言和抽象思维能力只存在于最后的 8 到 10 秒。而在这之前，动物已经拥有了各种形式的智能——狗的嗅觉、蝙蝠的听觉、黑猩猩的政治博弈（"四只黑猩猩的权力博弈很像纸牌屋"）。</p>
+
+<p>Richard Sutton 给了最有力的表述：</p>
+
+<blockquote>"你觉得 LLM 写代码、拿 IMO 金牌、去月球很伟大吗？我不觉得。打造一只松鼠的智能，才是真正的难题。一旦你有了一只松鼠的智能——能在真实世界活下去，有自己的目标、饥饿感、情绪——后面的写代码、上火星，都是再容易不过的事。"</blockquote>
+
+<p>谢赛宁推荐阅读 Franz de Waal 的《Are We Smart Enough to Know How Smart Animals Are？》。"看了这本书之后，我会放弃更多人类的自大。智能的演进是一个连续的过程——不是人类才独一无二。"</p>
+
+<p>这也解释了为什么 robotics 迟迟不能突破。"12 岁的孩子能做完全部家务。没有任何机器人能做到。所有系统收敛到 VLA（Vision-Language-Action），以 LLM 为 foundation。没有人做预训练。这是一个预训练的下半场。"</p>
+</section>
+
+<section>
+<h2>核心金句</h2>
+<div class="quotes">
+  <div class="quote quote-q1">"凡所有相，皆是虚妄。若见诸相非相，即见如来。"<div class="ctx">— 《金刚经》，何恺明送给谢赛宁的书，research taste 的哲学根基</div></div>
+  <div class="quote quote-q2">"不是因为看见所以相信，因为相信所以看见。"<div class="ctx">— 俞勇老师，ACM 班创始人，影响了谢赛宁此后的每一个关键决策</div></div>
+  <div class="quote quote-q3">"眼睛是唯一一个——它是大脑的一部分，但它是唯一一个暴露在真实世界里面的大脑部分。"<div class="ctx">— 谢赛宁解释为什么选择计算机视觉作为终身事业</div></div>
+  <div class="quote quote-q4">"LLM 永远不会死，但终将凋零。"<div class="ctx">— "They won't die, they will just fade away." —— 谢赛宁对 LLM 最终命运的判断</div></div>
+  <div class="quote quote-q5">"人类的赞歌就是勇气的赞歌。"<div class="ctx">— 《JoJo 的奇妙冒险》，谢赛宁用来解释从滑雪到创业的底层哲学</div></div>
+  <div class="quote quote-q6">"世界模型是一个目的，不是一个技术路线。我们每个人都在通往世界模型的路上。"<div class="ctx">— "可能过不了几年，现在这些争论会显得异常可笑"</div></div>
+</div>
+</section>
+
+<section>
+<h2>后记：42</h2>
+
+<p>谢赛宁在对话尾声引用了《银河系漫游指南》的 42。</p>
+
+<blockquote>"这个世界当然是一个巨大的世界模型。但你能预测命运吗？不能。因为资源不够——你需要有整个宇宙作为你的计算机，才能告诉你关于生命、宇宙和任何事情的答案。这个答案最后可能是 42。"</blockquote>
+
+<p>他批判了那些把维特根斯坦"语言的边界就是我世界的边界"拿来为 LLM 背书的做法——"晚期维特根斯坦完全推翻了自己，提出了'语言游戏'。语言的意义来源于跟真实世界的实践发生关系。这件事情就很世界模型了。"</p>
+
+<p>当被问到"这个世界的世界模型让你觉得什么重要什么不重要"时，他说——</p>
+
+<blockquote>"人与人之间的真诚交流是重要的。也许其他都不重要。但在某一个时间点上，我也会说创业很重要、research 很重要。归根结底，我还是相信人与人之间的交流。"</blockquote>
+
+<p>这不仅仅是哲学——它已经在现实中应验。融资时，一个投资人坚持要投他，原因是他认识的一个创业者（他只见过一次）说："你们一定要投赛宁，不管以什么方式都要帮到他。"那个创业者叫 Robin Rombach——Stable Diffusion 的作者。</p>
+
+<blockquote>"这种信任关系是建立在你的学术工作之上的。这种信任甚至远超于真正的 personal connection。大家通过你的作品了解你，然后这件事情会传承下去，走得很远。"</blockquote>
+</section>
+
+<footer>
+  <p>本文基于商业访谈录第 133 期节目整理。原始音频可在 <a href="https://www.xiaoyuzhoufm.com/episode/69b77577f8b8079bfa8eb837">小宇宙 FM</a> 收听。</p>
+  <p>语言及世界工作室出品 · 2026 年 3 月</p>
+</footer>
+
+</body>
+</html>

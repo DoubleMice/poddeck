@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Hyperliquid Benefits From Its New Deal With Coinbase Over USDC — PodDeck</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    color: #0f172a;
+  }
+  header .meta {
+    font-size: 15px;
+    color: #64748b;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-bottom: 8px;
+  }
+  header .meta span { white-space: nowrap; }
+  header .meta strong { color: #334155; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    color: #0f172a;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: #1e293b;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+
+  /* Overview cards */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 24px 0;
+  }
+  .card {
+    padding: 16px 18px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .card-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .card-green  { background: #f0fdf4; border-color: #22c55e; }
+  .card-yellow { background: #fefce8; border-color: #eab308; }
+  .card-orange { background: #fff7ed; border-color: #f97316; }
+  .card-purple { background: #faf5ff; border-color: #a855f7; }
+  .card-red    { background: #fef2f2; border-color: #ef4444; }
+
+  /* Inline highlight boxes */
+  .highlight {
+    padding: 14px 18px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    margin: 18px 0;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .hl-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .hl-green  { background: #f0fdf4; border-color: #22c55e; }
+  .hl-yellow { background: #fefce8; border-color: #eab308; }
+  .hl-orange { background: #fff7ed; border-color: #f97316; }
+  .hl-purple { background: #faf5ff; border-color: #a855f7; }
+
+  /* Data grid */
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .data-card {
+    padding: 18px 12px;
+    border-radius: 8px;
+    border: 2px solid;
+    font-size: 14px;
+  }
+  .data-card .number {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 6px 0;
+  }
+  .data-card .label {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  .data-blue   { background: #eff6ff; border-color: #93c5fd; }
+  .data-blue .number { color: #2563eb; }
+  .data-green  { background: #f0fdf4; border-color: #86efac; }
+  .data-green .number { color: #16a34a; }
+  .data-orange { background: #fff7ed; border-color: #fdba74; }
+  .data-orange .number { color: #ea580c; }
+
+  /* Quote block */
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+    background: #f8fafc;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    opacity: 0.65;
+  }
+  .bq-blue   { border-color: #3b82f6; background: #eff6ff; }
+  .bq-green  { border-color: #22c55e; background: #f0fdf4; }
+  .bq-orange { border-color: #f97316; background: #fff7ed; }
+  .bq-purple { border-color: #a855f7; background: #faf5ff; }
+  .bq-red    { border-color: #ef4444; background: #fef2f2; }
+  .bq-yellow { border-color: #eab308; background: #fefce8; }
+
+  /* Side-by-side comparisons */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .compare-box {
+    padding: 18px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+  }
+
+  /* Quotes section */
+  .quotes-section {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 2px solid #e2e8f0;
+  }
+  .quotes-section h2 {
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: #94a3b8;
+  }
+  footer a { color: #64748b; }
+
+  /* Auth note */
+  .auth-note {
+    display: inline-block;
+    font-size: 13px;
+    color: #94a3b8;
+    padding: 1px 6px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 4px;
+    margin-left: 2px;
+  }
+
+  @media (max-width: 600px) {
+    article { padding: 24px 16px 48px; }
+    header h1 { font-size: 22px; }
+    .overview-grid, .data-grid, .compare { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>How Hyperliquid Benefits From Its New Deal With Coinbase Over USDC</h1>
+  <div class="meta">
+    <span>🎙️ <strong>Unchained</strong></span>
+    <span>👤 <strong>Alex Weslie</strong></span>
+    <span>🏢 Artemis Analytics</span>
+    <span>📅 2026年6月</span>
+    <span>⏱️ 36分钟</span>
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    <span>🎧 主持：Laura Shin</span>
+  </div>
+</header>
+
+<section>
+<h2>为什么这期对谈值得关注</h2>
+
+<div class="overview-grid">
+  <div class="card card-blue">
+    <strong>USDH→USDC：不到一年的翻转</strong>
+    Coinbase 收购 USDH 品牌资产，成为 Hyperliquid 上 USDC 的官方 treasury deployer——90% 收益流向 Hyperliquid 援助基金，而不到一年前 Native Markets 才刚刚赢得原生稳定币之争。
+  </div>
+  <div class="card card-green">
+    <strong>$1.5 亿新经常性收入</strong>
+    $5B USDC × 3.5% 利率 × 90% ≈ 每年 $150M 新增收入。Hyperliquid 的收入结构正从纯交易费向"交易+稳定币收益"多元化——更接近 Coinbase 的模式。
+  </div>
+  <div class="card card-yellow">
+    <strong>Coinbase 的 $3000 亿愿景</strong>
+    Artemis 研究预测 Coinbase 到 2031 年可能达到 $300B 市值（约当前 6 倍），其中超过 $40 亿来自 agentic 收入。McKinsey 预测 2030-31 年 agentic commerce 总规模达 $5 万亿。
+  </div>
+  <div class="card card-orange">
+    <strong>x402 协议：90%+ 市占率</strong>
+    Coinbase 孵化的 agentic 支付协议 x402 在链上 agentic 交易量中占据 90% 以上份额，Base 是主要结算层。但 Stripe MPP 和 Google AP2 正在追赶。
+  </div>
+  <div class="card card-purple">
+    <strong>Circle × Coinbase：从盟友到对手</strong>
+    Circle 上线 Arc (L2)、Circle BTC、Agent Stack——与 Coinbase 的 Base、cbBTC、x402 在三条战线正面竞争。Omar (Dragonfly) 预测这桩"婚姻"可能以离婚收场。
+  </div>
+  <div class="card card-red">
+    <strong>Hyperliquid 在 Perp 战争中生存</strong>
+    Hyperliquid 经历 EdgeX、Aster 等竞争者冲击后仍保持 perps 市场 ~50% 份额。ETH 计价市场、RWA perps 日交易量数十亿——"周末交易石油"是传统交易所无法复制的优势。
+  </div>
+</div>
+</section>
+
+<section>
+<h2>Coinbase × Hyperliquid 的 USDC 交易：发生了什么</h2>
+
+<p>2025 年 9-10 月，Hyperliquid 的原生稳定币之争吸引了 PayPal、Paxos、Athena、Sky 等多家重量级玩家竞相争取 USDH ticker。最终 <strong>Native Markets</strong> 胜出——虽带有一些争议——并在几个月后上线，USDC 供应量增长到约 1 亿美元。</p>
+
+<p>然而，不到一年后的 2026 年 6 月，事情发生了戏剧性的转变。Coinbase 宣布收购 USDH 品牌资产，成为 Hyperliquid 上 USDC 的<strong>官方 treasury deployer</strong>。新架构下，<strong>90% 的稳定币收益将流向 Hyperliquid 援助基金</strong>——相比此前 USDH 的 50/50 分成，这是一个质的飞跃。消息公布后，HYPE 代币价格上涨了约 9%。</p>
+
+<div class="highlight hl-blue">
+Alex Weslie 将此总结为稳定币分发权的力量证明：Circle 和 Coinbase 都愿意为 USDC 的分发渠道付出巨大的经济让步。Circle 给 Coinbase 的条件——平台上 USDC <strong>100%</strong> 收益、平台外 <strong>50%</strong> 收益——显示了两家公司在"让 USDC 成为头号稳定币"这件事上的战略决心。
+</div>
+
+<h3>为什么 HYPE 涨了 9%？餐巾纸数学</h3>
+
+<div class="data-grid">
+  <div class="data-card data-blue">
+    <div class="label">Hyperliquid 上 USDC 总量</div>
+    <div class="number">$5B</div>
+    <div class="label">桥接 + 原生铸造</div>
+  </div>
+  <div class="data-card data-green">
+    <div class="label">年化收益率</div>
+    <div class="number">~3.5%</div>
+    <div class="label">当前无风险利率</div>
+  </div>
+  <div class="data-card data-orange">
+    <div class="label">流向 Hyperliquid</div>
+    <div class="number">90%</div>
+    <div class="label">V2 稳定资产分成</div>
+  </div>
+</div>
+
+<p style="text-align:center;font-weight:600;margin:20px 0;">$5B × 3.5% × 90% ≈ <strong>每年 $150M 新增收入</strong></p>
+
+<p>Hyperliquid 当前年化交易收入约为 $6 亿，这 $1.5 亿意味着一次 25% 的收入增长——但来自<strong>非交易、非周期性</strong>的来源。正如 Alex 指出的：</p>
+
+<blockquote class="bq-orange">
+  "Seeing Hyperliquid diversify their revenue away from purely trading-based revenue is interesting... it's a lot more easy to actually underwrite a recurring revenue stream like stablecoin yield versus cyclical trading revenues."
+  <span class="attr">— Alex Weslie, Artemis Analytics</span>
+</blockquote>
+
+<p>这就是市场反应的逻辑：交易收入因市场行情而波动剧烈，难以预测和估值；而稳定币收益更像 SaaS 的经常性收入，投资者可以更放心地为之定价。</p>
+</section>
+
+<section>
+<h2>Coinbase 与 Hyperliquid：竞争者还是盟友？</h2>
+
+<p>Laura Shin 提出了一个关键观察：两家公司都在追求成为"万物交易所"——覆盖现货、永续合约、股票和预测市场。然而它们的定位截然不同：</p>
+
+<div class="compare">
+  <div class="compare-box" style="background:#eff6ff;border-color:#3b82f6;">
+    <strong style="color:#2563eb;">Coinbase</strong><br>
+    美国合规、需 KYC<br>
+    受监管的机构<br>
+    服务美国及受监管市场
+  </div>
+  <div class="compare-box" style="background:#fff7ed;border-color:#f97316;">
+    <strong style="color:#ea580c;">Hyperliquid</strong><br>
+    无 KYC、全球覆盖<br>
+    离岸平台<br>
+    不服务美国客户
+  </div>
+</div>
+
+<p>这种互补的定位解释了为什么 Coinbase 选择对齐而非对抗。正如 Laura 所言：</p>
+
+<blockquote class="bq-purple">
+  "Even a couple years ago you could not imagine a public company that would have done this level of deal with a no-KYC, decentralized exchange that does not serve US customers."
+  <span class="attr">— Laura Shin, Unchained</span>
+</blockquote>
+
+<p>链上金融的增长速度太快，以至于 Coinbase 等不起监管明朗化。USDC 是当前最好的"入场券"：通过稳定币分发协议，Coinbase 可以在 Hyperliquid 的全球离岸用户群中分得一杯羹，同时通过质押 HYPE 代币获得生态利益。这是竞争，但不是零和博弈。</p>
+</section>
+
+<section>
+<h2>"为什么 Coinbase 会赢"：$3000 亿的愿景</h2>
+
+<p>Alex 在 Artemis 最新发布的研究报告中，描绘了 Coinbase 到 2031 年成为 $300B 公司的路径——约当前市值的 6 倍。这个愿景建立在三个支柱上：</p>
+
+<div class="data-grid">
+  <div class="data-card data-blue">
+    <div class="label">McKinsey 预测</div>
+    <div class="number">$5T</div>
+    <div class="label">agentic commerce 2030-31</div>
+  </div>
+  <div class="data-card data-green">
+    <div class="label">Bain 预测</div>
+    <div class="number">$3T</div>
+    <div class="label">稳定币总供给 2030</div>
+  </div>
+  <div class="data-card data-orange">
+    <div class="label">Coinbase 目标</div>
+    <div class="number">$4B+</div>
+    <div class="label">agentic 年收入 2031</div>
+  </div>
+</div>
+
+<h3>Coinbase 的四层堆栈</h3>
+
+<p>Alex 的论点核心是，Coinbase 在 agentic commerce 的每一层都有布局：</p>
+
+<p><strong>协议层</strong>：x402 占据链上 agentic 交易量的 90% 以上。主要竞争对手 Stripe MPP 今年 3 月才上线。"Even a month into MPP's launch, x402 still dominates."</p>
+
+<p><strong>结算层</strong>：Base 链是当前 agentic 支付的主要结算层，承载了大量 USDC 吞吐量。</p>
+
+<p><strong>稳定币层</strong>：USDC 占据 agentic commerce 交易量的 90-99%。Circle 与 Coinbase 的协议让后者能从 USDC 的流动中获利。</p>
+
+<p><strong>开发者工具与服务层</strong>：Coinbase 孵化和建设了大量 agent 支付和构建工具——这是可以货币化的增值层。</p>
+
+<div class="highlight hl-yellow">
+<strong>但 Alex 坦承这是 "bull case" 而非 "base case"</strong>。当 Laura 追问先发优势是否会自动转化为终极胜利时，他直言："I think they can't just have an early lead and hope to win off of that." Stripe 的商户网络和 Google 的 Android 操作系统级分发是截然不同的竞争维度，而 agentic commerce 的空间"几乎每周都在变"。
+</div>
+</section>
+
+<section>
+<h2>Clarity Act：稳定币收益的妥协</h2>
+
+<p>Clarity Act 是围绕加密市场结构的立法提案，目前参议院正在标记（markup）阶段。Alex 认为最重要的一点是对 <strong>稳定币收益</strong> 的妥协方案：</p>
+
+<p>银行业游说集团极力推动完全禁止稳定币发行方和分发方（如 Coinbase）提供被动收益。Clarity Act 的妥协方案允许<strong>基于交易的、以活动为条件的</strong> USDC 收益，但不允许在闲置余额上提供被动收益。</p>
+
+<p>对 Coinbase 而言，这意味着：Coinbase One 订阅者和活跃交易者将受益于收益分享；但不活跃的用户可能被竞争对手（如 Robinhood，可提供被动现金收益）吸引走。总体而言，Alex 的判断是"<strong>overall net positive</strong>"——能够提供任何形式的收益，在与银行业的博弈中已经是一个胜利。</p>
+
+<p>不过，Laura 提到三位律师对 Clarity Act 通过概率的判断从 35% 到 90% 不等——"clearly there's not a lot of agreement"，不确定性仍然很大。</p>
+</div>
+</section>
+
+<section>
+<h2>Circle × Coinbase：一桩走向紧张的"婚姻"</h2>
+
+<p>Coinbase 和 Circle 的关系是加密行业最有趣的商业关系之一。几年前，Coinbase 与 Circle 通过 Centre 财团共同孵化了 USDC；后来 Circle 完全控制了 USDC，但与 Coinbase 保留了非常有利的收益分享协议。</p>
+
+<p>现在的情况正在变化。Circle 上市后需要向投资人讲述更广泛的增长故事，而这正将它与 Coinbase 推向正面竞争：</p>
+
+<div class="compare">
+  <div class="compare-box" style="background:#eff6ff;border-color:#3b82f6;">
+    <strong style="color:#2563eb;">Circle</strong><br>
+    Arc (L2 区块链)<br>
+    Circle BTC<br>
+    Agent Stack
+  </div>
+  <div class="compare-box" style="background:#f0fdf4;border-color:#22c55e;">
+    <strong style="color:#16a34a;">Coinbase</strong><br>
+    Base (L2 区块链)<br>
+    cbBTC<br>
+    x402 协议
+  </div>
+</div>
+
+<p>Omar (Dragonfly) 的尖锐判断："How long until the Circle Coinbase marriage gets messy?"——他认为最终会以"离婚"收场。</p>
+
+<p>Alex 的看法更为谨慎：USDC 收益协议的续约（预计 2026 年 8-9 月）大概率会通过，再延长三年——因为协议的终止或修改需要双方同意，而且条款对 Coinbase 非常有利。但三年后是否续约？"<strong>I'm not sure that I'll have the same confidence</strong>." 此外，Coinbase 不完全拥有 USDC 也有其灵活性——随着 Genius Act 通过，可能出现其他合规稳定币可供合作。</p>
+</section>
+
+<section>
+<h2>Hyperliquid：Perp 战争的无冕之王</h2>
+
+<p>2025 年中后期，perps 市场经历了一场"战争"——EdgeX、Aster 以及多家交易所背书的 perp DEX 蜂拥而入，质疑 Hyperliquid 能否维持其市场份额。但到 2026 年 5 月，Hyperliquid 仍然掌控着 <strong>约 50% 的 perps 市场份额</strong>。</p>
+
+<p>Arthur Hayes 最近在 Unchained 上分享了他的验证方法：用交易量除以未平仓合约得到一个比率，来判断交易量的真实性。按这个指标，Hyperliquid 的真实交易量远超竞品——"it's clearly out-competing."</p>
+
+<p>但 Hyperliquid 已经不止于 perps。它的新增长引擎包括：</p>
+
+<p><strong>ETH 计价市场</strong>：不依赖 USDC 或法币入口的加密原生交易对，即使在熊市中依然有增长。</p>
+
+<p><strong>RWA（真实世界资产）永续合约</strong>：黄金、石油等大宗商品的链上交易——"doing billions in volume per day"，而且可以<strong>周末交易石油</strong>，这是任何传统交易所都无法提供的。</p>
+
+<p><strong>股票永续合约</strong>：通过 trade XYZ 等平台实现 24/7 全球股票交易。</p>
+
+<p><strong>预测市场</strong>：HIP 4 上线后的最新功能。Alex 将预测市场形容为"ultra-hyper-competitive space"——Robinhood 与 Polymarket 合作推出全栈预测市场，Coinbase 收购了预测市场清算所。但 Hyperliquid 在离岸、无 KYC 的利基中拥有独特优势。</p>
+
+<div class="highlight hl-green">
+<strong>Alex 的最终判断</strong>："I really don't see anyone coming close to taking any of their share away anytime soon." Hyperliquid 拥有加密行业最强大的社区和开发者生态之一——"really almost nothing quite like it."
+</div>
+</section>
+
+<section>
+<h2>两条不同的成功路径</h2>
+
+<div class="compare">
+  <div class="compare-box" style="background:#eff6ff;border-color:#3b82f6;">
+    <strong style="color:#2563eb;">Coinbase 的路径</strong><br><br>
+    合规至上、机构级信任<br>
+    多线收入：交易+订阅+USDC+agentic<br>
+    分发为王：平台+Base+x402<br>
+    目标 $300B 市值
+  </div>
+  <div class="compare-box" style="background:#fff7ed;border-color:#f97316;">
+    <strong style="color:#ea580c;">Hyperliquid 的路径</strong><br><br>
+    速度与灵活性、全球覆盖<br>
+    社区驱动、HYPE 代币对齐<br>
+    产品广度：Perps→RWA→股票→预测市场<br>
+    24/7 全天候、无 KYC 利基
+  </div>
+</div>
+
+<p><span class="auth-note">作者概括</span> 这不是零和博弈。Coinbase 在合规框架内服务美国及受监管市场，Hyperliquid 在离岸市场以速度和产品广度取胜。USDC 交易让二者在稳定币这一层面对齐，但竞争远未结束。加密行业的成熟化，正体现在这种"竞争与合作并行"的复杂生态中。</p>
+</section>
+
+<section class="quotes-section">
+<h2>核心金句</h2>
+
+<blockquote class="bq-blue">
+  "It goes to show the power of distribution for stablecoins."
+  <span class="attr">— Alex Weslie，解释为什么 Circle 愿意为 Coinbase 的分发渠道付出如此高昂的代价</span>
+</blockquote>
+
+<blockquote class="bq-green">
+  "It ultimately comes down to like liquidity begetting liquidity."
+  <span class="attr">— Alex Weslie，论为什么 Circle 和 Coinbase 都愿意牺牲短期利润来推动 USDC 成为头号稳定币</span>
+</blockquote>
+
+<blockquote class="bq-orange">
+  "Seeing Hyperliquid diversify their revenue away from purely trading-based revenue is interesting... it's a lot more easy to actually underwrite a recurring revenue stream like stablecoin yield versus cyclical trading revenues."
+  <span class="attr">— Alex Weslie，论 $150M 稳定币收益对 Hyperliquid 估值逻辑的改变</span>
+</blockquote>
+
+<blockquote class="bq-purple">
+  "Even a couple years ago you could not imagine a public company that would have done this level of deal with a no-KYC, decentralized exchange that does not serve US customers."
+  <span class="attr">— Laura Shin，论加密行业和监管格局的演变速度</span>
+</blockquote>
+
+<blockquote class="bq-red">
+  "I think they can't just have an early lead and hope to win off of that."
+  <span class="attr">— Alex Weslie，坦承 Coinbase 在 agentic commerce 的先发优势不等于终极胜利</span>
+</blockquote>
+
+<blockquote class="bq-yellow">
+  "I really don't see anyone coming close to taking any of their share away anytime soon."
+  <span class="attr">— Alex Weslie，论 Hyperliquid 在 perps 市场的护城河</span>
+</blockquote>
+</section>
+
+<footer>
+  <p>本文基于 Unchained 播客 2026 年 6 月节目整理。嘉宾 Alex Weslie 为 Artemis Analytics 机构数据负责人，主持人为 Laura Shin。</p>
+  <p>收听原节目：<a href="https://unchainedcrypto.com/">unchainedcrypto.com</a></p>
+  <p style="margin-top:16px;">← <a href="/">返回 PodDeck</a> 浏览更多深度对谈解析</p>
+</footer>
+
+</article>
+</body>
+</html>

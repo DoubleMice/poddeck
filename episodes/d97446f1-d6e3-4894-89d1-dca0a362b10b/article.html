@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E230｜1万亿收入预期背后：英伟达的巅峰与软肋 — 硅谷101</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafbfc;
+    padding: 0 16px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 0 64px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e9ecef;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #0c0c1d;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  header .meta span { margin: 0 8px; }
+  header .meta a {
+    color: #1971c2;
+    text-decoration: none;
+  }
+  header .meta a:hover { text-decoration: underline; }
+
+  .overview {
+    margin-bottom: 48px;
+  }
+  .overview h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #0c0c1d;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card.blue   { background: #eff6ff; border-color: #3b82f6; }
+  .card.green  { background: #f0fdf4; border-color: #22c55e; }
+  .card.orange { background: #fff7ed; border-color: #f97316; }
+  .card.purple { background: #faf5ff; border-color: #a855f7; }
+  .card.red    { background: #fef2f2; border-color: #ef4444; }
+  .card strong { display: block; margin-bottom: 4px; color: #0c0c1d; }
+
+  section {
+    margin-bottom: 40px;
+  }
+  section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0c0c1d;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 20px 0 10px;
+  }
+  section p {
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+  section .gloss {
+    font-size: 14px;
+    color: #868e96;
+    font-style: italic;
+    margin-top: -6px;
+    margin-bottom: 14px;
+    padding-left: 12px;
+    border-left: 2px solid #dee2e6;
+  }
+
+  .quotes {
+    margin: 48px 0;
+  }
+  .quotes h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #0c0c1d;
+  }
+  .quote-block {
+    padding: 16px 20px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.7;
+    font-style: italic;
+  }
+  .quote-block .attr {
+    font-size: 13px;
+    font-style: normal;
+    margin-top: 6px;
+    opacity: 0.65;
+  }
+  .qb-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .qb-green  { background: #f0fdf4; border-color: #22c55e; }
+  .qb-orange { background: #fff7ed; border-color: #f97316; }
+  .qb-purple { background: #faf5ff; border-color: #a855f7; }
+  .qb-red    { background: #fef2f2; border-color: #ef4444; }
+  .qb-yellow { background: #fefce8; border-color: #eab308; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 2px solid #e9ecef;
+    font-size: 14px;
+    color: #868e96;
+    text-align: center;
+    line-height: 1.8;
+  }
+  footer a {
+    color: #1971c2;
+    text-decoration: none;
+  }
+  footer a:hover { text-decoration: underline; }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr 1fr; } }
+  .stat {
+    text-align: center;
+    padding: 16px 10px;
+    border-radius: 10px;
+    border: 2px solid;
+  }
+  .stat .num {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 6px 0;
+  }
+  .stat .label { font-size: 12px; opacity: 0.7; }
+  .stat.s-blue   { background: #eff6ff; border-color: #93c5fd; }
+  .stat.s-green  { background: #f0fdf4; border-color: #86efac; }
+  .stat.s-orange { background: #fff7ed; border-color: #fdba74; }
+  .stat.s-purple { background: #faf5ff; border-color: #d8b4fe; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>E230｜1万亿收入预期背后：英伟达的巅峰与软肋</h1>
+  <div class="meta">
+    <span>硅谷101</span>
+    <span>·</span>
+    <span>洪军主持</span>
+    <span>·</span>
+    <span>2026年3月</span>
+    <span>·</span>
+    <span>嘉宾：张璐 · Mark · 肖志斌 · Alex</span>
+  </div>
+  <div class="meta" style="margin-top:6px;">
+    <a href="https://sv101.fireside.fm/244">🎧 收听原节目 →</a>
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得你花时间</h2>
+  <div class="cards">
+    <div class="card blue">
+      <strong>万亿订单 vs 物理极限</strong>
+      Jensen 宣布 2027 年 Blackwell + Vera Rubin 累计订单至少 $1T。但 CoWoS 封装、HBM4 内存、电力配送全在瓶颈。
+    </div>
+    <div class="card green">
+      <strong>推理取代训练成为主战场</strong>
+      训练/推理支出比例从 80/20 反转至 20/80。推理是长期现金流，Agent 大规模部署将加速这一转变。
+    </div>
+    <div class="card orange">
+      <strong>软硬一体加速：7 芯片/年</strong>
+      从两年一芯片到一年七芯片，AI 设计芯片、全栈反馈闭环、CUDA 生态两万多家初创共同驱动。
+    </div>
+    <div class="card purple">
+      <strong>数据中心速度竞赛</strong>
+      美国电网 "bone dry"，转向 behind-the-meter 就地发电。建设周期从 18 个月压缩到 6 个月。
+    </div>
+    <div class="card red" style="grid-column: 1 / -1;">
+      <strong>竞争围剿与护城河</strong>
+      Google TPU 系统能力更强 · OpenAI/Apple 自研芯片 · AMD + Groq LPU 蚕食推理 · 边缘 AI 崛起。英伟达的真正护城河：极致执行力 + 台积电 CoWoS 产能绑定。
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>GTC 2025：四个改变产业格局的数字</h2>
+
+  <div class="stat-row">
+    <div class="stat s-blue">
+      <div class="label">累计订单</div>
+      <div class="num" style="color:#2563eb;">$1T</div>
+      <div class="label">Blackwell + Vera Rubin<br>2027 年前累计</div>
+    </div>
+    <div class="stat s-green">
+      <div class="label">新品发布</div>
+      <div class="num" style="color:#16a34a;">7 块</div>
+      <div class="label">Vera Rubin 平台<br>一次同步发布</div>
+    </div>
+    <div class="stat s-orange">
+      <div class="label">推理效率</div>
+      <div class="num" style="color:#ea580c;">10×</div>
+      <div class="label">NVL72 vs Blackwell<br>每 token 成本降至 1/10</div>
+    </div>
+    <div class="stat s-purple">
+      <div class="label">能效比</div>
+      <div class="num" style="color:#9333ea;">35×</div>
+      <div class="label">token per watt<br>性能提升</div>
+    </div>
+  </div>
+
+  <p>2025 年 3 月的 GTC 大会上，黄仁勋站在台上说出了一组让全球科技产业震动的数字。最核心的一条是：<strong>到 2027 年底，Blackwell 和 Vera Rubin 两个平台的累计订单预计至少达到一万亿美元</strong>——"I see through 2027 at least one trillion dollars." 要知道，2024 年整个全球半导体产业的销售额也就六千多亿美元。AMD 的 CEO Lisa Su 去年 11 月预测，整个数据中心的 AI 加速芯片要到 2030 年才能到一万亿美元。而 Jensen 说英伟达一家，Vera 加 Rubin 系统——不只是芯片，还包括 NVLink Switch、Ethernet Switch、软件——2027 年就能到。</p>
+
+  <p>这个数字比去年提到的上限翻了一倍。更惊人的是，Vera Rubin 平台一次性发布了 7 块新芯片，全部进入量产——这是英伟达有史以来规模最大的一次同步发布。Vera Rubin NVL72 相比 Blackwell 推理效率提升 10 倍，每个 token 的成本降至十分之一。而 token per watt（每瓦性能）提升了 35 倍。</p>
+</section>
+
+<section>
+  <h2>从 GPU 公司到 AI 工厂：一万亿背后的叙事转变</h2>
+
+  <p>Fusion Fund 创始管理合伙人张璐在讨论中指出，Jensen 希望大家不要单纯把英伟达看作一个 GPU 公司了。<strong>他想把英伟达打造成一个人工智能的基础设施公司，一个巨大的人工智能工厂。它的产出是未来工作的一个新定义的生产力——token。</strong></p>
+
+  <p>这个定位转变解释了为什么 Jensen 敢给出 $1T 这个数字。传统的 GPU 市场规模是有上限的，但如果英伟达提供的是整个 AI 基础设施——从 GPU 到 NVLink 到 Ethernet Switch 到 CUDA 软件到数据中心设计——那么市场空间就完全不同了。Alex（GMI Cloud 创始人）在讨论中证实了这一点：英伟达现在不只是卖芯片，而是卖整个 AI 工厂方案。"它相当于全套各种打包好给你做更多的设计方案，让大家可以加速落地。"</p>
+
+  <p>但张璐也指出，一万亿的落地取决于产业 AI 整合和 Agent 铺设的速度。"并不是像软件一样，你有多大的需求就可以马上产出多大的销售。你的产能限制和硬件层面上、供应链层面上的生产周期是确定的。"</p>
+</section>
+
+<section>
+  <h2>供应链：半导体物理定律不会为万亿美元加速</h2>
+
+  <p>ZFlow AI 创始人肖志斌博士，曾设计过阿里巴巴含光 800 芯片加速器，他对芯片供应链的判断一针见血："需求端是非常旺盛的，老黄给这个数字一定是来自于需求端。但现在的瓶颈已经到了供应链层次——在供应链上能不能在 2027 年做到一万亿，这是非常的 challenge。"</p>
+
+  <h3>CoWoS：最大的瓶颈</h3>
+  <p>2024 年到现在，台积电 CoWoS 的产能已经涨了 3 倍，还在持续疯狂扩产。但即便如此，能否支撑 $1T 的出货量仍是巨大问号。3nm 的晶圆产能志斌认为跟得上，但 CoWoS 就很难说。半导体行业变成了卖方市场——谁能拿到产能，谁就赢。而 Jensen 与台积电多年的信任关系，让英伟达拿到了 CoWoS 产能的大部分。"即使 AMD 接到订单或者 Google 接到订单，老黄跟台积电的关系特别好，所以它的 CoWoS 的产能其实拿到的大部分在他手上。"</p>
+
+  <h3>HBM4 与挤出效应</h3>
+  <p>HBM4 方面，美光和三星已宣布量产，同时三家（美光、三星、SK Hynix）在做 HBM4e 定制化方案。但 HBM 的旺盛需求已经挤出了其他存储产品——GMI Cloud 的 Alex 观察到，DDR4 去年到现在已经涨价 100-200%，SSD 也开始缺货。CX-7 Switch 缺货，连 Intel CPU 都开始亮黄灯和红灯，CDU 水冷方案也进入缺货状态。Alex 预判："至少跟供应链的沟通的话，到 27 年底都不会有好转的迹象。"</p>
+
+  <h3>半导体周期的硬约束</h3>
+  <p>张璐提醒了一个很多人忽视的事实：半导体产能扩张不是软件问题，不能靠"加钱"加速。"你需要更大的产能，就要先做预投资去开生产线，然后再做过程控制去优化——这个周期是没有办法用钱砸出来的。哪怕你现在说我需要额外的产能，那可能确实需要等到一两年之后这个产能才能实现。"</p>
+
+  <p class="gloss">作者概括：$1T 目标的核心矛盾不是需求端——需求确实存在且正在爆发——而是供给端多个环节的同时紧张。CoWoS、HBM4、电力配送形成了一个层层嵌套的瓶颈链，任何一个环节卡住都会拖累全局。</p>
+</section>
+
+<section>
+  <h2>推理替代训练：支出比例的世纪大翻转</h2>
+
+  <p>张璐分享了一个深刻的观察：训练和推理的支出比例正在经历历史性翻转。</p>
+
+  <p>2023 年时，大约百分之七八十的成本在训练上。到 2025 年，已经变成了一比一。而到明年或后年，可能百分之七八十的成本都会在推理层。这个转变的根本原因在于——<strong>训练更像是一次性的成本投入，但推理是一个长期的现金流。</strong></p>
+
+  <p>为什么推理需求会暴涨？张璐解释了三个驱动力：第一，Agent 智能体大规模铺设后，不再是调用一次就结束，而是持续性 inquiry，需要低延迟、快速反应和实时在线；第二，长上下文模型每次调用对 token 的消耗更大；第三，多模态内容的生成——AI 短剧、视频生成——token 消耗量"非常可怕"。</p>
+
+  <p>Jensen 在 GTC 上给出了一个更惊人的数字：过去两年推理计算量增加了<strong>一万倍</strong>，使用量增加了<strong>一百倍</strong>，所以计算需求合计增加了<strong>一百万倍</strong>。Alex 从自己的 GPU 集群观察到，一个集群通常有三到四家超大型公司在抢。中国市场的增长尤其迅猛——大模型公司如 Kimi、GLM 等，主要营收已开始来自卖 token。</p>
+</section>
+
+<section>
+  <h2>Groq LPU：SRAM 的剑走偏锋</h2>
+
+  <p>GTC 上另一个重磅消息是英伟达收购的 Groq 正式发布了 LPU（Language Processing Unit）。肖志斌从 2017 年就开始做 AI 推理芯片——他为阿里巴巴设计的第一款 AI 推理芯片就是纯 SRAM 架构的。他解释 Groq 的核心差异时用了最通俗的语言。</p>
+
+  <p>传统的 AI 芯片（包括 GPU）使用 DRAM（HBM）作为外部存储——DRAM 容量大、成本低（1 个晶体管/bit），但延迟很高，还需要动态刷新。每次推理生成一个 token，都需要从 memory 中重新 load 全部模型权重——<strong>大部分时间其实都在抓 weight，在做 communication，而不是在 compute。</strong></p>
+
+  <p>Groq 的做法是"剑走偏锋"——完全去掉 DRAM，只使用 on-chip SRAM。SRAM 是静态存储（6 个晶体管/bit），延迟只有 1-2 纳秒，不需要动态刷新。<strong>模型的参数和 KV cache 结果全部存在片上</strong>——不需要来回去 grab weight，消除了 communication 的时间。结果就是对于 agent 应用，token per second per user 可以做到 GPU 效率的 30 多倍，而且延迟曲线保持平稳。</p>
+
+  <p>张璐补充了一个从斯坦福前校长 John Hennessy 那里听到的论断：<strong>将来 communication 的耗电量将是 compute 的十倍以上</strong>。LPU 因为不需要反复从外部 memory 搬运权重，在能耗上也具有潜在优势。Jensen 在发布会上建议：未来数据中心留 25% 的空间给 Groq 和大家的推理芯片。</p>
+
+  <p>但值得注意的是，GPU 和 LPU 并非零和博弈。肖志斌指出，LLM 推理天然有两个阶段——encoder（适合 GPU 高吞吐批处理）和 decoder（逐 token 生成）。"将来的 AI system 会是 hybrid，不同的芯片可能会适合不同的算子。"</p>
+</section>
+
+<section>
+  <h2>7 颗芯片同步发布：英伟达的速度引擎</h2>
+
+  <p>传统半导体公司一年能发一两颗芯片已经是优秀——张璐回忆自己在 Stanford 读材料科学时，"真的一年能发一两个芯片是非常好的了"。而英伟达 Vera Rubin 一次发了 7 颗，全部进入量产。</p>
+
+  <p>Mark，前英伟达研究总监（2024 年底离职），负责设计自动化研究团队，他揭示了背后的原因。"两年前 Jensen 说原来是两年出一颗芯片，后来是一年出一颗，现在是一年出好几颗。"速度提升来自三个层面：一是传统的多团队并行；二是 <strong>AI 对设计效率的巨大提升——公司内百分之百都在用 AI，包括 coding agent</strong>，工程师效率提高很多；三是内部有大量 AI for 芯片设计的项目。</p>
+
+  <p>Mark 领导的 ChipNeMo 项目是 AI 设计芯片的核心案例。团队在 2023 年发布了这个项目——<strong>用英伟达内部数据收集了二十几个 billion 的 tokens</strong>，训练了 Llama 和 NemoChat 模型来做芯片设计。现在的趋势是：chatbot 与设计文档交互理解需求，coding agent 不仅能写 software code，也开始写 RTL（硬件描述代码），虽然"质量还没有那么高，有一定的进步空间"。真正的难点在于——不仅要能生成设计，还要把它优化得好。</p>
+
+  <p>张璐从生态系统角度补充了一个关键洞察：传统芯片公司是"设计芯片→供应给客户→客户反馈→再优化"的线性流程，周期长。但英伟达自己组建了 CUDA 生态系统，形成了<strong>自我反馈体系</strong>。"它能做十件事二十件事，怎么样在二十件事中找到前三前五前七的最高优先级——这种全栈式的优化模式帮助它可以更快的确定自己内部的优先顺序。"</p>
+</section>
+
+<section>
+  <h2>数据中心的电力危机：美国电网已"干涸"</h2>
+
+  <p>当讨论从芯片层面下沉到物理基础设施时，GMI Cloud 创始人 Alex 带来了最接地气的观察。<strong>"美国的 US Grid 已经是 bone dry——你是不可能拿到 10 兆瓦以上的电。"</strong></p>
+
+  <p>问题不在于美国缺电——美国有充足的 330KV 高压输电能力。问题在于 distribution（配送到可用电）。从高压到数据中心可用的 400V-800V，需要通过变电站降压。但建一个变电站可能影响整个德州的 grid stability，需要通过漫长的监管审批。而运营美国电网的是传统的油气行业——"他们不是 tech guys，他们动作事实上是没有在硅谷这么快的。"</p>
+
+  <p>于是整个行业转向了 behind the meter 方案——绕过电网，就地发电。<strong>90% 的新数据中心建设都是 behind the meter</strong>，用天然气燃气轮机（gas turbine）直接燃烧发电，哪里有气管就在哪里盖。大厂甚至开始包核电站——"你也别卖给 grid 了，你全部给我，我全部就地直接做一个 substation 降电，直接盖。"</p>
+</section>
+
+<section>
+  <h2>从 18 个月到 6 个月：集装箱革命的加速度</h2>
+
+  <p>不仅发电方式在变，数据中心本身的建设方式也在经历一场革命。过去的钢筋水泥建筑已不复存在——"以前 hyperscaler 可能还有抗拒，这几个 Q 基本上都没有人在做，全部都是用 container 的方式来做。"</p>
+
+  <p>40 尺海运柜里预装好了 rack、CDU（冷却分配单元）、fiber、HVAC（暖通空调）和 UPS（不间断电源）。建设流程变成：有电有混凝土 → 四个月到白地板 → 集装箱即插即用。从 greenfield 到 serving，过去的 18-20 个月现在压缩到了<strong>6-9 个月</strong>。</p>
+
+  <p>Alex 特别强调了一点：英伟达在节奏把控上的前瞻性。"因为 scaling 也起来了，Nvidia 有设了很好的这个目标，它每年的更新都会提早去跟供应链去沟通，所以供应链也是跟着 Nvidia 的 guidance 往前走的。所以节奏速度会继续加快。"</p>
+</section>
+
+<section>
+  <h2>Neo-Cloud：GPU 云的新物种</h2>
+
+  <p>Alex 的 GMI Cloud 代表了云计算的一个新类别——Neo-Cloud。与传统 hyperscaler（AWS、Azure、GCP）的本质区别在于架构方式。</p>
+
+  <p>传统云是 CPU 云和存储云，用 VM（虚拟机）做资源隔离——VM 会吃掉 10% 的 compute power。CPU 时代一台服务器两三万美金，大家不 care。但 <strong>GB300 是一栋几百万美金的房子</strong>——你不能承受 VM 的损耗。Neo-Cloud 使用 K8s 做整个集群的管理，让客户直接拿到 bare metal 的百分之百效率。</p>
+
+  <p>GMI Cloud 是英伟达全球仅七家的 RNCP（Reference Architecture and CP）之一——Alex 戏称为"老黄的白老鼠"。这意味着他们能拿到所有最新 GPU 的 first batch，与 hyperscaler 同步。"我们是全亚洲第一家去搞到 GB300 的集群，建了一个万卡水冷集群。Nvidia 自己内部也没有搞过，Hyperscale 也不会跟他分享经验，我们会分享经验。"</p>
+
+  <p>运营 GPU 云的难度远超想象。Alex 分享了一个细节：<strong>一台 GPU 服务器有 20 多万个 unique parts</strong>，工厂设定下每个 part 至少 5% 的故障率，几千台机器互联——"non-zero chance it will fail"。当机器出问题时，你不知道是硬件坏掉、光模块坏掉、switch 坏掉、K8s 坏掉，还是客户自己搞坏了。而 GPU 迭代太快，大模型公司的研究员"they don't know what they're doing——they're not infra people"。</p>
+
+  <p class="gloss">作者概括：GPU 云运营是一个从硬件到固件到 K8s 到模型服务的全栈问题。它的核心能力不是"更好的 UI"，而是供应链能力、硬件诊断能力和 DevOps 快速排查能力——这些是传统软件创业公司完全陌生的领域。</p>
+</section>
+
+<section>
+  <h2>Agent as a Service：SaaS 商业模式的终局？</h2>
+
+  <p>Jensen 在 GTC 上提出了一个新概念：<strong>Agent as a Service</strong>——对应传统的 SaaS。张璐认为这触及了商业模式层面的根本变革。</p>
+
+  <p>传统的 SaaS 公司提供的是标准化软件服务——所有公司用一样的软件。<strong>但 Agent 可以做到高度定制化和个性化</strong>，短时间内自动生成一个企业 CRM 系统，百分之百适配你的业务场景。未来的软件公司可能不再是"卖软件"，而是变成劳动力输出方——拥有成千上万个专属化的智能体，去满足客户的各种要求。</p>
+
+  <p>这意味着商业模式的根本转变：以前卖软件用的是 IT 预算，将来卖 AI 劳动力可以用劳动力预算——市场空间更大。张璐并没有完全看衰 SaaS——"SaaS 它不单纯只是一个产品，它也是一个售后服务、销售网络等等。" 但有 AI 模型能力的 SaaS 公司和没有的，命运会截然不同。对于创业者，被淘汰的 SaaS 市场份额本身就是机会。</p>
+
+  <p>Jensen 还提出了一个关于未来招聘的设想：<strong>以后招聘一个工程师，除了年薪，还要告诉他有"多少 token 额度"</strong>——他可以管理多少个 Agent 实习生或员工与你配合。NVIDIA 内部，Mark 证实去年初从零到百分之百覆盖 coding agent 只用了一两个月。不只是英伟达，其他芯片公司也已启动类似流程。</p>
+
+  <p>张璐描绘的未来公司架构更加激进：<strong>核心团队可能只有二三十个人</strong>——其他的职能如 HR、CFO、财务都可以外包给 AI Agent，以项目形式周期性地存在。CEO 不仅要管人，还要管 AI Agent，要定义哪些职位以人为主导，哪些可以外包。</p>
+</section>
+
+<section>
+  <h2>Google TPU：最被低估的竞争对手</h2>
+
+  <p>在竞争层面，肖志斌给出了令人意外的评估：<strong>"Google 的做系统或者云的这些能力，包括里面的做互联的能力、做垂直供电这些能力，其实是超过英伟达的，比英伟达厉害。"</strong></p>
+
+  <p>Google 从 2017 年就发布了 TPU，持续做了很多代。TPU 在 Google 内部全栈优化下表现最好——training 成本可能只有 ChatGPT 的三分之一左右。但其他公司用 TPU 做不到这么低的成本，因为 Google 的优化是针对自己跑的应用场景做了很多定制。不过随着 AI 辅助优化的发展，让不同芯片的适配变得越来越方便，Google 对外的可接受程度会越来越大。</p>
+
+  <p>而且 Google 不仅是芯片公司——它拥有 Gemini 模型、YouTube 视频，能力全方位。张璐补充说，即使 TPU 目前还不足以在终端用户体验上拉开差距，但从供应商多样化角度——"谁也不希望说我只有一个供应商"——大公司必然会分流一部分需求到 TPU。</p>
+
+  <p>除了 Google，OpenAI 在自研芯片，Apple 的 AI 芯片一直做得很好，AMD 随着推理权重增长而受益，Qualcomm 押注边缘端 NPU 低能耗 AI 部署，Physical AI 机器人芯片赛道尚未收敛……英伟达面对的是多线作战。</p>
+</section>
+
+<section>
+  <h2>CUDA 护城河：被侵蚀还是变得无关紧要？</h2>
+
+  <p>现场一位二级市场投资人的提问直接触及了英伟达投资者最担心的问题：Anthropic 的 Claude Code 能不能很快写出一个 CUDA——这个护城河壁垒是不是在快速被削弱？</p>
+
+  <p>肖志斌的回答坦率而深刻。根据他和大厂工程师的交流，<strong>CUDA 在 kernel level 的 moat 确实越来越弱了——用 AI 写的基本上可以 90% 以上跟手动优化差不多。</strong>从这个角度看，coding agent 确实在降低 CUDA 的门槛。但他紧接着指出——"英伟达已经变成了一个系统公司，系统公司里面有很多硬件的 know-how、data、hardware 的 knowledge——这些东西 coding agent 现在还没有。"</p>
+
+  <p>张璐给出了更多层次的护城河分析。CUDA 不只是软件——它已经形成了一个全体系（full-stack）。首先，它的很多 kernel 都是优化过的，coding agent 虽然能做很多事情，但做出最高 performance 的代码"还是有待看一看的"。第二，其他芯片厂商做类似 CUDA system 做了好长时间，拉大软件公司合作，"你看到现在也没有做出来"——它不是简单的一个软件层。第三，也是最容易被忽视的一点——<strong>CUDA 也形成了一个开发者的族群，一个 community</strong>。Inception Program 从 2017 年的几百家初创到现在两万多家——"这个 community 的凝聚力还有它的向心力，也是它的一个小的护城河。"</p>
+
+  <p class="gloss">作者概括：CUDA 的 moat 正在从纯技术壁垒演变为生态壁垒 + 数据壁垒 + 社区壁垒。Kernel 层的可替代性在增加，但全栈系统的不可替代性在同步增强。</p>
+</section>
+
+<section>
+  <h2>英伟达的真正护城河：执行力 × 供应链控制</h2>
+
+  <p>肖志斌对英伟达核心竞争力的总结可能是全期最精炼的——<strong>两条：第一是快速的执行能力，第二是供应链的把控能力。</strong></p>
+
+  <p>在硅谷，执行力特别强的芯片公司只有两家：英伟达和 Broadcom。这种执行力体现在多个维度：一年推七款芯片、AI 设计芯片、全栈反馈闭环、20 件事中快速锁定前 5 优先级。而供应链的把控能力更是一张王牌——Jensen 与台积电的关系是"多年的信任建立起来的"，CoWoS 产能大部分在英伟达手上。即使 AMD 或 Google 接到订单，产能优先给谁不言而喻。</p>
+
+  <p>但张璐也提醒了一个与技术无关的风险：<strong>当一家公司的市值到达这个量级之后，它既被资本推崇，也会被资本裹挟。</strong>CEO 要在维持市值增长和长线技术创新投入之间做权衡。"优先级第一位是怎么样维持市值，那这个时候公司内部资源分配——到底更多的优化是短期收入增长还是长期技术创新投入——这个权重可能也会受到影响。"</p>
+</section>
+
+<section>
+  <h2>GPU 折旧：华尔街说是 5 年，现实是 8 年</h2>
+
+  <p>当被问到 GPU 按几年折旧时，Alex 的回答堪称经典。<strong>"There's a hedge fund answer, five years. 就是华尔街的做法。"</strong> 但从技术角度看：去 AWS 上看看能不能租到 A100 或 V100——租得到的话，"good job, that's rare"。<strong>V100 是 2017/2018 年出的产品，七年八年了还在用，而且使用率非常高。</strong></p>
+
+  <p>这个差距的根源在于——需求量太大了。不是芯片过时了，是芯片根本不够用。折旧速度被供不应求的现实硬生生压慢了。这也是 $1T 预期背后最根本的支撑：需求端的水位太高，以至于过时的芯片都找不到替代品。</p>
+</section>
+
+<div class="quotes">
+  <h2>核心金句</h2>
+
+  <div class="quote-block qb-blue">
+    "他想把英伟达打造成一个人工智能的基础设施的公司，一个巨大的人工智能的一个工厂。他的产出是未来工作的一个新定义的生产力，就是 token。"
+    <div class="attr">— 张璐（Fusion Fund）谈 Jensen 的战略定位</div>
+  </div>
+
+  <div class="quote-block qb-green">
+    "训练更像是一次性的一个成本投入，但推理它其实是一个长期的一个现金流。如果你看长期的现金流，那一定是来自于推理。"
+    <div class="attr">— 张璐（Fusion Fund）谈推理的经济学本质</div>
+  </div>
+
+  <div class="quote-block qb-orange">
+    "美国的 US 的 Grid 已经是 bone dry。90% 新的 data center 建设都是 behind the meter……全部都是用 container 的方式来做。"
+    <div class="attr">— Alex（GMI Cloud）谈数据中心电力危机</div>
+  </div>
+
+  <div class="quote-block qb-purple">
+    "执行力特别强的芯片公司，英伟达、Broadcom 这两家公司执行力非常非常强。老黄跟台积电的关系特别好，所以它的 CoWoS 的产能其实拿到的大部分在他手上。"
+    <div class="attr">— 肖志斌（ZFlow AI）谈英伟达的真正护城河</div>
+  </div>
+
+  <div class="quote-block qb-red">
+    "CUDA 在 kernel level 的 moat 越来越弱了，因为大家用 AI 写的基本上可以 90% 以上的跟手动优化差不多。但是英伟达已经变成了一个系统公司。"
+    <div class="attr">— 肖志斌（ZFlow AI）谈 CUDA 护城河的演变</div>
+  </div>
+
+  <div class="quote-block qb-yellow">
+    "未来可能一个公司它的核心是二三十个人。HR、CFO、财务这些都可以外包给各种各样的 AI agent。你不仅要管人的人才，你还要管 AI agent。"
+    <div class="attr">— 张璐（Fusion Fund）谈 Agent 时代的组织架构</div>
+  </div>
+</div>
+
+<footer>
+  <p>本文基于硅谷101播客 E230 期整理，不构成任何投资建议。</p>
+  <p>
+    <a href="https://sv101.fireside.fm/244">🎧 收听原节目</a>
+    &nbsp;·&nbsp;
+    发布于 2026年3月
+    &nbsp;·&nbsp;
+    🤖 由 Claude Code 辅助整理
+  </p>
+</footer>
+
+</article>
+</body>
+</html>

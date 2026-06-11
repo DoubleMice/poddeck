@@ -1,0 +1,34 @@
+id: d97446f1-d6e3-4894-89d1-dca0a362b10b
+source: sv101
+title: "E230｜1万亿收入预期背后：英伟达的巅峰与软肋"
+guest: "张璐, Mark, 肖志斌, Alex"
+guest_role: "Fusion Fund创始管理合伙人 / AgentTrix CEO & 前英伟达研究总监 / ZFlow AI CEO & 前阿里含光800架构师 / GMI Cloud CEO"
+published: 2026-03
+duration: 1h6m
+url: https://sv101.fireside.fm/244
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+status: generated
+tags:
+  - hardware
+  - chips
+  - ai-products
+  - coding-agents
+  - startup
+  - panel
+  - investor
+  - founder
+  - engineer
+  - strategic
+  - technical
+summary: |
+  硅谷101洪军主持GTC 2025线下讨论。Jensen宣布2027年Blackwell+Vera Rubin累计订单至少$1万亿——这背后是NVIDIA从GPU公司向AI基础设施的转型。四位嘉宾从芯片投资、芯片设计、AI推理芯片创业和GPU云运营四个角度，拆解万亿野心面临的最大瓶颈：CoWoS封装产能、HBM4内存、电力配送全面紧张；推理正在取代训练成为主战场；Groq LPU用纯SRAM架构剑走偏锋；数据中心建设从18个月压缩到6个月；Agent as a Service颠覆SaaS商业模式。
+core_ideas:
+  - "$1T 订单 vs 物理极限：CoWoS 扩产 3 倍仍不足，美国电网 bone dry，供应链全面紧张"
+  - "训练→推理的比例反转：从 80/20 到 20/80，推理是长期现金流，Agent 部署加速这一转变"
+  - "7 芯片/年的速度引擎：AI 设计芯片（ChipNeMo）+ 全栈反馈闭环 + 供应链深度绑定"
+  - "Groq LPU 的 SRAM 路线：纯 on-chip 存储消除 communication 开销，Jensen 建议留 25% 数据中心空间给推理芯片"
+  - "Neo-Cloud 新物种：K8s 裸金属 vs VM，全球仅 7 家 RNCP 拿到最新 GPU first batch"
+  - "Agent as a Service 颠覆 SaaS：未来公司核心可能只有 20-30 人，其余由 AI Agent 外包"
+  - "英伟达的真正护城河：极致执行力 + 台积电 CoWoS 产能绑定，CUDA 社区 2 万+初创生态"
+article_path: episodes/d97446f1-d6e3-4894-89d1-dca0a362b10b/article.html
+base: /episodes/d97446f1-d6e3-4894-89d1-dca0a362b10b/
