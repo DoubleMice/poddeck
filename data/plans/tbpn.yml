@@ -1,75 +1,90 @@
 source: tbpn
-refreshed_at: 2026-06-10T18:57:26.701Z
+refreshed_at: 2026-06-11T04:38:40.961Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 3
-done: 1
-pending: 0
+total_candidates: 2
+done: 0
+pending: 1
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 08dbe1e7-082f-4eca-8796-6a9eba7c3159
-    title: Siri AI, Fable 5 Launch, Rivian CEO Joins | RJ Scaringe, Chris Miller, Evan Beard, Nick Fleisher, Chris Matarese,
-      Alex Heath, Rob Schroder Jr.
-    duration: 10140
-    published: Tue, 09 Jun 2026 14:11:56 -0700
-    published_sort: "20260609"
-    first_seen_at: 2026-06-10T04:37:48.499Z
-    url: https://share.transistor.fm/s/e343af3e
-    audio_url: https://media.transistor.fm/e343af3e/24d9bb34.mp3
+  - id: 36a0787a-b662-4d02-99a8-0bfd96054cda
+    title: The Social Reckoning Reactions, Fable 5 Sparks Safety Debate, 𝕏 Timeline Reactions | Farza Majeed, Trent
+      Simonian, Sridhar Ramaswamy, Matthew Prince, Vinod Khosla, Ranjan Rajagopalan, Markie Wagner, Bret Taylor
+    duration: 11265
+    published: Wed, 10 Jun 2026 14:40:01 -0700
+    published_sort: "20260610"
+    first_seen_at: 2026-06-11T04:38:40.952Z
+    url: https://share.transistor.fm/s/a414a9a1
+    audio_url: https://media.transistor.fm/a414a9a1/78e418f5.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    summary: "(01:16) - WWDC Day 1\r
+    transcript_url: https://share.transistor.fm/s/a414a9a1/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:26) - The Social Reckoning Trailer Reactions\r
 
-      (31:41) - Claude Fable 5\r
+      (15:24) - Fable 5 Sparks Safety Debate\r
 
-      (34:02) - Meta Trains Data Center Workers\r
+      (30:06) - Farza Majeed discusses his journey from creating an AI tutor for DaVinci Resolve to developing Clicky,
+      an AI assistant that executes user commands on computers. He explains Clicky's functionality, including real-time
+      GPT responses and integration with models like Fable 5 for screen understanding, and addresses the business model,
+      emphasizing cost-effective agentic work and a $20 monthly subscription. Majeed also highlights the importance of
+      balancing his media presence with startup development and expresses his vision for Clicky as a versatile
+      interaction layer across devices.\r
 
-      (38:27) - RJ Scaringe, born January 19, 1983, is an American engineer and the founder and CEO of Rivian
-      Automotive, an electric vehicle manufacturer. In the conversation, he discusses the launch of the R2 SUV,
-      emphasizing its role in making Rivian's vehicles more accessible and highlighting its advanced features, including
-      a range of up to 345 miles and a 0–60 mph acceleration in as quick as 3.6 seconds. Scaringe also outlines Rivian's
-      strategic focus on scaling production and enhancing autonomous driving capabilities, aiming for Level 4 autonomy
-      by 2028.\r
+      (44:52) - Trent Simonian, co-founder of Sidetalk, a New York City-based one-minute street show, discusses the
+      show's origins, emphasizing its commitment to capturing candid, high-energy street interviews without staging. He
+      highlights the importance of creating shareable and engaging content, noting that their approach has led to
+      collaborations with major brands like Nike and the NFL. Simonian also touches on the challenges of monetizing
+      short-form content, explaining that while platforms like TikTok and Instagram haven't provided direct revenue,
+      Sidetalk generates income through branded content and merchandise sales.\r
 
-      (01:04:32) - Chris Miller, an economic historian and professor at Tufts University, is the author of \"Chip War:
-      The Fight for the World's Most Critical Technology,\" which examines the global competition over semiconductor
-      technology. In the conversation, he discusses the recent surge in semiconductor spending driven by AI
-      advancements, the cautious expansion strategies of manufacturers like TSMC, and the geopolitical implications of
-      China's investments in AI infrastructure.\r
+      (59:25) - Sridhar Ramaswamy, CEO of Snowflake since February 2024, previously led Google's advertising products
+      and co-founded the AI-powered search engine Neeva. He discusses how Snowflake's AI-driven tools, like Snowflake
+      Cowork, have significantly reduced data integration times and enhanced conversational data access, enabling
+      businesses to solve complex problems interactively. Ramaswamy also highlights the company's focus on streamlining
+      migrations from legacy platforms, reducing timelines from years to quarters, and emphasizes the importance of
+      effective go-to-market strategies and partnerships, such as with AWS, to deliver joint solutions to customers.\r
 
-      (01:29:45) - Evan Beard, CEO and Chief Engineer of Standard Bots, discusses the company's recent $200 million
-      Series C funding at a $1 billion valuation, plans to quadruple manufacturing capacity, and the goal to account for
-      10% of U.S. industrial robot deployments next year. He highlights the need for domestic production, noting that
-      nearly all U.S. robots are foreign-made, and emphasizes Standard Bots' focus on AI-driven, user-friendly robots
-      that can be trained through demonstration. Beard also addresses the challenges of humanoid robots in industrial
-      settings, suggesting that static or mobile bases with flexible configurations offer better ROI and performance.\r
+      (01:16:27) - 𝕏 Timeline Reactions\r
 
-      (01:39:41) - Nick Leisure, co-founder and CEO of Sandstone, discusses the company's recent $30 million Series A
-      funding led by Lightspeed and their rapid growth, deploying legal relationship management tools to dozens of
-      Fortune 500 and mid-market companies, achieving a 40x business growth in 150 days. He highlights Sandstone's focus
-      on centralizing intake and knowledge for in-house legal teams, enabling effective AI workflows, and
-      differentiating from traditional contract lifecycle management tools. Leisure also addresses the evolving role of
-      AI in legal services, emphasizing the need for experienced in-house counsel and the increasing importance of
-      technical roles within legal teams.\r
+      (01:28:50) - Matthew Prince, co-founder and CEO of Cloudflare, discusses the company's recent acquisition of Void
+      Zero, the creators of Vite, a popular developer platform. He highlights the synergy between Vite and Cloudflare's
+      infrastructure, emphasizing the potential to enhance support for internet agents and improve developer
+      experiences. Prince also addresses the challenges developers face with CPU bottlenecks and outlines Cloudflare's
+      strategies to optimize performance and efficiency in the evolving digital landscape.\r
 
-      (01:52:39) - Chris Matarese, co-founder, President, and CFO of NinjaOne, discusses how NinjaOne addresses the
-      complexity and fragmentation in IT management by unifying various operations into a single, modern, cloud-native
-      platform, enabling organizations to reduce costs and simplify workflows. He highlights that the average NinjaOne
-      customer replaces seven point solutions, thereby eliminating inefficiencies and security risks associated with
-      managing multiple tools. Additionally, Matarese emphasizes the company's adaptability, noting that while NinjaOne
-      aims to provide comprehensive solutions, it also integrates with existing point solutions that customers find
-      valuable, ensuring a seamless and unified IT management experience.\r
+      (02:04:41) - Vinod Khosla, founder and managing director of Khosla Ventures, discusses the significance of auto
+      formalization in enhancing AI reliability by converting human language into machine-checkable formats, thereby
+      reducing issues like hallucinations. He highlights Pramana's role in this field, particularly in formalizing
+      complex domains such as tax law to ensure precision and compliance. Khosla emphasizes that while large AI labs
+      continue to expand, there remains substantial opportunity for ventures addressing specific challenges through auto
+      formalization.\r
 
-      (02:06:41) - Alex Heath is the Deputy Editor at The Verge, where he covers major technology companies, AI, social
-      media, and the future of consumer tech. He is also the author of Sources, a newsletter focused on the inner
-      workings of Silicon Valley and the biggest stories shaping the tech industry.\r
+      (02:15:41) - Ranjan Rajagopalan, founder of Pramaana Labs, discusses the company's mission to enhance AI accuracy
+      in critical fields like tax, legal, healthcare, and governance by focusing on formal verification to prevent
+      catastrophic errors. He explains their approach of converting complex regulations into formal languages, enabling
+      AI systems to provide provably correct answers with mathematical proofs, thereby increasing trust and reliability
+      in AI applications. Rajagopalan also highlights the importance of integrating formal verification with large
+      language models to ensure AI outputs are verifiable and dependable in high-stakes domains.\r
 
-      (02:34:20) - Rob Schroder Jr. is the founder and managing partner of Vinyl Equity, a growth investment firm
-      focused on partnering with technology companies and founders. He is known for his long-term approach to investing,
-      working closely with entrepreneurs to help scale businesses while emphasizing sustainable growth and operational
-      excellence.
+      (02:28:49) - Markie Wagner is the founder and CEO of Poetic, an AI startup backed by OpenAI, Kleiner Perkins, and
+      Founders Fund, focusing on automating complex business processes with high accuracy. In the conversation, she
+      discusses the challenges of capturing undocumented, intricate rules within large organizations and emphasizes the
+      necessity of AI systems that can learn and execute these processes with near-perfect precision. She also
+      highlights the importance of forward-deployed engineers who not only possess technical expertise but can also
+      drive organizational change to effectively implement AI solutions.\r
+
+      (02:45:33) - Bret Taylor, an American computer scientist and entrepreneur, co-created Google Maps, served as
+      Facebook's CTO, chaired Twitter's board, and co-CEOed Salesforce before founding Sierra, an AI startup
+      specializing in autonomous customer service agents. Taylor discusses Sierra's recent achievement of FedRAMP High
+      certification, enabling federal agencies to utilize their AI solutions, and emphasizes the potential of AI to
+      enhance government services like Medicare and passport processing by improving efficiency and accessibility. He
+      also highlights the importance of multilingual support and the role of AI in transforming customer service
+      interactions within the public sector.\r
+
+      (03:02:08) - 𝕏 Timeline Reactions
 
 
       TBPN is made possible by:
@@ -124,12 +139,8 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-10T19:00:00.049Z
-    transcript_job_id: 9580a9e6510f49f09c4a0b1bd822133d,52901b5bb37b4914ab7db8fc1b7456f5,f83cbab123f3468cbb38f3f0af5d13ea,f2d49ccf128341a0a68e126bd7597c73,8913dcaa242b478d9bf86e7eff6ef913,a581611e1c6544a08d741431aef1b42a,15a613bc36164d37a6840374fd673716,892e42191ec7461b99944b2b61976e13,a3a30c8198e94e89ab889ecee9f19fc0,4806776892e245e3bec338241f81a647,c482874af88d4455883efae05b7613fd,be7a50bf68844b23af843323b2c55b6d
-    transcript_completed_at: 2026-06-10T19:09:53.850Z
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
       Tae Kim, Immad Akhund, Marcus Milione
@@ -182,100 +193,6 @@ episodes:
       organic growth, customer engagement, and maintaining authenticity in product development.\r
 
       (02:28:41) - 𝕏 Timeline Reactions
-
-
-      Follow TBPN: 
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: failed
-    priority: 1
-  - id: a0e13547-1b82-492f-8192-071f20735103
-    title: GameStop + eBay, Neural Computers | Nat Eliason, Michael York, Maddie Hall, Anjney Midha, Ben Lamm, Jake Stauch,
-      Garth Sheldon-Coulson, Katie Haun, Nick Abouzeid
-    duration: 9704
-    published: Mon, 04 May 2026 14:10:21 -0700
-    published_sort: "20260504"
-    first_seen_at: 2026-05-19T08:55:24.764Z
-    url: https://share.transistor.fm/s/100ccc71
-    audio_url: https://media.transistor.fm/100ccc71/e27738d4.mp3
-    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/100ccc71/transcription.txt
-    transcript_type: text/plain
-    summary: "(02:42) - Neural Computers\r
-
-      (20:48) - GameStop Offers $55B for eBay\r
-
-      (28:44) - Nat Eliason, an entrepreneur and writer, is the Head of Founder Development at Alpha School, where he is
-      launching a high school program that promises students will earn $1 million by graduation or receive a full
-      tuition refund. In the conversation, he discusses his journey from running an SEO-focused marketing agency to
-      exploring personal knowledge management and AI, leading him to develop this innovative educational model that
-      combines AI-driven academics with real-world entrepreneurial experience.\r
-
-      (58:12) - Michael York, co-founder and CEO of Casa, discusses his journey from joining Uber at 18 to launching
-      Casa, a subscription-based homeownership platform. He explains how Casa acts as a personal property manager,
-      handling maintenance and services for homeowners by leveraging advanced technology to create detailed home
-      profiles. York also highlights the company's recent $20 million Series A funding and plans for expansion beyond
-      San Francisco and Los Angeles.\r
-
-      (01:11:15) - Maddie Hall, CEO and co-founder of Living Carbon, discusses her company's mission to restore degraded
-      U.S. lands by planting genetically enhanced trees that capture more carbon and produce sustainable forest
-      products. She highlights a recent $500 million deal with Octopus Energy Generation to reforest up to 250,000
-      acres, aiming to remove 50 million tons of CO₂ over 40 years. Hall also emphasizes the importance of active
-      intervention in reforestation projects and the potential for these efforts to offset emissions from data centers
-      and AI operations.\r
-
-      (01:18:43) - Anjney Midha is a General Partner at Andreessen Horowitz, focusing on AI, infrastructure, and
-      open-source technology, with prior roles including VP of Platform Ecosystem at Discord and co-founder of
-      Ubiquity6. In the conversation, he discusses the strategic rationale behind GameStop's acquisition of eBay,
-      emphasizing the potential to eliminate $2 billion in marketing inefficiencies and leverage GameStop's physical
-      stores for verifying collectibles, thereby creating a competitive edge in the AI-driven e-commerce landscape.\r
-
-      (01:44:23) - Ben Lamm, a serial technology entrepreneur and co-founder of Colossal Biosciences, discusses the
-      company's recent advancements in de-extinction efforts, including the successful creation of woolly mice and dire
-      wolf puppies, demonstrating their ability to revive extinct species through genetic engineering. He highlights the
-      role of AI in accelerating these processes and mentions the company's expansion into projects like the bluebuck,
-      emphasizing their commitment to biodiversity restoration. Lamm also touches on potential partnerships with
-      ecotourism and governments to reintroduce these species into natural habitats, aiming to blend conservation with
-      education and economic opportunities.\r
-
-      (01:54:43) - Jake Stauch, founder and CEO of Serval, an AI platform for employee support, discusses the company's
-      new program, Serval Start, designed to deploy AI in large enterprises and train future founders. He emphasizes the
-      importance of talented individuals who can build relationships, sell products, and develop solutions to
-      effectively implement AI in complex organizational environments. The program aims to provide participants with
-      hands-on experience in deploying AI, accelerating their career paths toward entrepreneurship.\r
-
-      (02:01:35) - Garth Sheldon, representing Pampalasa, discusses the company's recent $140 million fundraising
-      success and the development of autonomous energy-capturing nodes designed for deployment in the Southern
-      Hemisphere's power-dense oceans. These nodes, each generating approximately 500 kilowatts, aim to provide
-      scalable, renewable energy solutions for data centers, with plans to manufacture them near the deployment sites to
-      optimize logistics and costs.\r
-
-      (02:09:38) - Katie Haun, a former federal prosecutor and venture capitalist, is the founder and CEO of Haun
-      Ventures, a firm specializing in digital assets and blockchain technology. In the conversation, she discusses the
-      firm's recent $1 billion fundraise aimed at supporting founders building the \"new economy,\" focusing on three
-      structural shifts: new financial rails and infrastructure, new assets and markets, and the intersection of AI and
-      crypto. Haun emphasizes the importance of stablecoins, the tokenization of financial products, and the potential
-      of prediction markets, while also highlighting the need for platforms to address regulatory challenges such as
-      insider trading and federal preemption.\r
-
-      (02:25:18) - Nick Abouzeid is the co-founder and CEO of Rivet, an AI-enabled tax preparation firm that serves over
-      500 fast-growing companies. In the conversation, he discusses the challenges of implementing AI models in tax
-      workflows, highlighting their unreliability and the necessity of human oversight to ensure accuracy. He also
-      introduces TaxBench, a benchmark developed to evaluate AI models' performance in tax-related tasks, revealing
-      significant capability gaps in current models.
 
 
       Follow TBPN: 

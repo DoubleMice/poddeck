@@ -1,120 +1,15 @@
 source: unchained
-refreshed_at: 2026-06-10T18:57:26.765Z
+refreshed_at: 2026-06-11T04:38:41.034Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 128
-done: 1
+total_candidates: 127
+done: 0
 pending: 0
 needs_transcript: 124
 transcribing: 0
 transcribe_failed: 2
 downloaded: 0
 episodes:
-  - id: 4705fd8a-6488-11f1-9b12-bf727c9f47e0
-    title: "The Chopping Block: Zcash Infinite Mint Bug + AI Hackers vs Formal Verification + NEAR's Agent Vision"
-    duration: 3390
-    published: Wed, 10 Jun 2026 15:00:00 -0000
-    published_sort: "20260610"
-    first_seen_at: 2026-06-10T18:57:26.763Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4468999810.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4468999810.mp3
-    image: https://megaphone.imgix.net/podcasts/4705fd8a-6488-11f1-9b12-bf727c9f47e0/image/0f4308215455961435a8ab510d39da92.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Mert and Illia autopsy a brutal weekend in crypto: Saylor's $3M test sale that taught him there's no sell button,
-      the Zcash bug Claude found that could've minted unlimited counterfeit ZEC, formal verification as the bulwark
-      against AI attackers, and whether NEAR's agentic commerce vision is real. 
-
-
-      Welcome to The Chopping Block — where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert
-      Leshner chop it up about the latest in crypto. This week we've got two heavy hitters: NEAR Protocol co-founder
-      Illia Polosukhin and Helius founder Mert Mumtaz.
-
-
-      We kick things off with the weekend market meltdown -- Saylor sold 32 BTC for the first time in four years, STRC
-      is trading below par, and Mert argues the real damage is that Saylor sucks all the air out of the room for actual
-      crypto innovation. Then we get into the biggest story of the week: a critical bug discovered in Zcash's Orchard ZK
-      circuit using Claude Opus 4.8 that could have allowed infinite counterfeit minting inside the shielded pool. Mert
-      walks us through the emergency soft fork, the Ironwood migration, and why formal verification is about to become
-      table stakes. Illia makes the case that AI-powered attackers have a permanent asymmetric advantage and that we
-      need real-time on-chain detection systems to survive. Tom coins the analogy of the episode: we're moving from
-      building boats to building spaceships. We close with Illia's pitch for NEAR's agent commerce vision – $240M in
-      single-day volume, private intents, and the claim that agent-to-agent trustless commerce is already live – while
-      Mert remains a friendly skeptic. Let's get into it.Listen to the episode on Apple Podcasts, Spotify, Pods,
-      Fountain, Podcast Addict, Pocket Casts, Amazon Music, or on your favorite podcast platform.
-
-
-      Hosts
-
-
-      ⭐️Haseeb Qureshi, Managing Partner at Dragonfly 
-
-
-      ⭐️Tom Schmidt, General Partner at Dragonfly 
-
-
-      Guest
-
-
-      ⭐️ Mert, Co-founder & CEO at Helius
-
-
-      ⭐️ Illia Polosukhin, Co-founder of NEAR Protocol
-
-
-      Timestamps
-
-
-      00:00 Intro
-
-
-      01:17 Weekend Crypto Meltdown & Bitcoin Crash
-
-
-      02:52 Saylor, STRC & the DAT Death Spiral Fears
-
-
-      11:51 "No Sell Button" — Saylor's Lesson Learned
-
-
-      13:14 Zcash Bug: 50% Crash Explained
-
-
-      20:30 The Fix: Ironwood Pool & Formal Verification
-
-
-      23:11 AI vs Crypto Security: The Attacker Advantage
-
-
-      27:21 What Is Formal Verification?
-
-
-      30:07 Spaceship-Grade Smart Contract Security
-
-
-      31:36 OPSEC, Oracles & Anomaly Detection
-
-
-      36:08 Cypherpunk Dilemma: Stop the Hack or Not?
-
-
-      38:37 Will DeFi Survive? Long Math
-
-
-      42:49 NEAR's AI Agents & Intents Vision
-
-
-      48:43 Is Agentic Commerce Real? Mert's Skepticism
-
-
-      Disclosures
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-10T18:57:27.941Z
-    transcript_job_id: 204285b3d78b42ab86ec83bccb43c9bc,fc1b948fe6f3443694d458f03128278c,4489a8d408bb4ae4899af73e537f747c,f16d2a83fd0b40b28c0df3b800d5dde2
-    transcript_completed_at: 2026-06-10T18:59:59.878Z
   - id: 800520c0-5fa1-11f1-99ad-cfe68f34d64e
     title: "CFTC Approves True Perps and Agentic Finance Gets Real: DEX in the City"
     duration: 3014
@@ -5497,7 +5392,6 @@ episodes:
           
 
 
-
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5681,7 +5575,6 @@ episodes:
       Unchained:⁠⁠
 
         
-
 
 
         
@@ -6888,7 +6781,6 @@ episodes:
           
 
 
-
         
       Previous appearances on Unchained:
 
@@ -7820,7 +7712,6 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
 
 
         
@@ -9013,7 +8904,6 @@ episodes:
        
 
 
-
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -9407,7 +9297,6 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
-
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices
