@@ -1,284 +1,99 @@
 source: unchained
-refreshed_at: 2026-06-11T19:03:10.577Z
+refreshed_at: 2026-06-12T04:38:24.593Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 127
-done: 1
+total_candidates: 126
+done: 0
 pending: 0
 needs_transcript: 123
 transcribing: 0
 transcribe_failed: 2
 downloaded: 0
 episodes:
-  - id: 99f64648-4fd0-11f1-9e5e-dbb8b251b138
-    title: How Hyperliquid Benefits From Its New Deal With Coinbase Over USDC
-    duration: 2181
-    published: Thu, 11 Jun 2026 18:40:00 -0000
-    published_sort: "20260611"
-    first_seen_at: 2026-05-19T19:53:41.416Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1253421853.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1253421853.mp3
-    image: https://megaphone.imgix.net/podcasts/99f64648-4fd0-11f1-9e5e-dbb8b251b138/image/75c13a925e7caf9ad113219ccb389214.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+  - id: ec18ca6e-65fa-11f1-8e82-4709ceb6cc63
+    title: "Claude Found a 4-Year Zcash Bug. Now It Won't Audit DeFi: Uneasy Money"
+    duration: 3819
+    published: Fri, 12 Jun 2026 01:06:00 -0000
+    published_sort: "20260612"
+    first_seen_at: 2026-06-12T04:38:24.591Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3692012203.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3692012203.mp3
+    image: https://megaphone.imgix.net/podcasts/ec18ca6e-65fa-11f1-8e82-4709ceb6cc63/image/f387d4745b376b08aff2e34930da4098.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
-      Coinbase just became the official USDC treasury deployer on Hyperliquid. Alex Weseley of Artemis explains how this
-      boosts Hyperliquid’s annual revenue by 25%.
+      Claude Fable 5 refuses security work, Kain Warwick pulls $5,000 of compute from a $200 plan, and Humanity Protocol
+      loses its bridge, token, and treasury to one infected device.
 
 
       ========================================================
 
 
-      Thank you to our sponsor!
+      Thank you to our sponsors!
 
 
-      ⁠⁠Coinbase One⁠⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠⁠coinbase.com/unchained⁠⁠.
+      ⁠Multichain Advisors⁠: Get help navigating TGEs, go‑to‑market, BD and partnerships, capital markets advisory, PR,
+      media placements, KOL activations and more at https://multichainadv.com.
 
 
       ========================================================
 
 
-      The morning this episode was recorded, Coinbase announced it was acquiring the USDH brand and becoming the
-      official USDC treasury deployer on Hyperliquid — a deal with $150 million in annual revenue implications for a
-      platform that previously earned nothing from its $5 billion USDC float.
+      Anthropic promised Mythos and shipped Claude Fable 5 instead. The model found a four-year-old bug in Zcash's
+      shielded pool that survived multiple expert audits. But when Anthropic shipped the model days later, it was no
+      longer willing to audit smart contracts, bailing the moment a prompt smells like security work.Jailbreakers are
+      already turning a jailbroken Opus 4.8 against it, while white hats sit locked out.
 
 
-      Alex Weseley, institutional data lead at Artemis Analytics, walks through the math on the HYPE price move,
-      explains why the deal had to be bilateral between Circle and Coinbase, lays out his $300 billion Coinbase thesis
-      built on X402 and agentic commerce, and takes on the question Laura's been asking all week: is the Circle–Coinbase
-      relationship heading for divorce?
+      Kain Warwick, Taylor Monahan, and Luca Netz weigh the defender's dilemma: builders cannot point the model at their
+      own code, but nobody can prove black hats have not jailbroken their way in —  and, the hosts warn,North Korean
+      threat actors have spent more than six months harvesting AI API keys.
+
+
+      Then Kain runs the numbers on the subsidy: roughly 200 million tokens in four hours on a $200 plan, about $5,000
+      at API rates, and on the 22nd Fable goes API only as the first unsubsidized frontier model. Plus Pump.fun's bounty
+      marketplace and the Humanity Protocol hack, which left the hosts asking why a 3-of-6 multisig existed at all. When
+      the subsidies stop, who still gets the frontier?
 
 
       Host:
 
         
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-
-      Guests:
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
 
         
-      ⁠Alex Weseley — Institutional Data Lead, Artemis Analytics
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠⁠⁠⁠⁠⁠, CEO of Pudgy Penguins
 
 
       Timestamps
 
-      🔵 0:00 Coinbase acquires USDH brand, and what an aligned quote asset is on Hyperliquid
 
+      🤖 00:40 Why Kain says Fable 5 should have been named Fable zero
 
-      📈 3:42 Why Hype jumped 10% and what's in it for Coinbase
 
+      🛡️ 03:50 Taylor on how Fable downgrades the second anything touches security
 
-      💙 8:51 Coinbase: Get 20% off the first year of your Coinbase One annual plan at coinbase.com/unchained.
 
+      🕵️ 10:42Taylor on stolen AI keys,tokens and North Korea's new favorite loot
 
-      ⚖️ 10:52 Coinbase increases its staked Hype position: why is it aligning with a no-KYC competitor?
 
+      🧠 15:48 Does Fable reason like a senior engineer? Kain's 100-doc planning test
 
-      🤖 14:00 The two reasons why Alex projects that Coinbase could be a $300B company by 2031
 
+      💸 20:06 How Kain pulled $5,000 of API value from a $200 Claude plan in four hours
 
-      📜 22:11 CLARITY Act: activity-based stablecoin yield compromise and what it means for Coinbase
 
+      🐧 ~33:45 How Igloo budgets $50K a month on AI, and the bot "brain" running the org
 
-      💔 26:25 Is the Circle–Coinbase marriage heading for divorce?
 
+      📊 44:00 Multichain Advisors: start building real traction with the team behind $50B at https://multichainadv.com
 
-      🌊 30:22 After recent successes, where does Hyperliquid go from here?
 
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-11T19:25:44.829Z
-    transcript_job_id: 6840a72a07554d009ac7af9549a268b4,e795f8973e7c4ed5b49723e007ce0da3,d6ae0455e47a43c18610a1f9c172c23f
-    transcript_completed_at: 2026-06-11T19:28:26.910Z
-  - id: 844ab0ca-5329-11f1-b6ee-4bfa056cbbc9
-    title: In an AI Agent World, Do Money Markets Win Over Stablecoins? - Bits + Bips
-    duration: 3507
-    published: Thu, 11 Jun 2026 18:35:00 -0000
-    published_sort: "20260611"
-    first_seen_at: 2026-05-20T06:54:39.135Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6574118391.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6574118391.mp3
-    image: https://megaphone.imgix.net/podcasts/844ab0ca-5329-11f1-b6ee-4bfa056cbbc9/image/3d56707f6152fbff3657621ea3e46579.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      USDC became Hyperliquid's stablecoin infrastructure, and the 30-year broke 5% for the first time since 2008.
-      Austin, Ram, Chris, and Gordon Liao of Circle work through who wins.
+      🎪 44:41 Pump.fun's bounty circus: tattoo typo, the Bootywork coin, Luca's steelman
 
 
-      ---
-
-
-      Thank you to our sponsor!
-
-
-      ⁠Coinbase One⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠coinbase.com/unchained⁠.
-
-
-      Heads up!
-
-
-      If you haven’t yet, be sure to subscribe to Bits + Bips, since the show will migrate there in a few weeks. Follow
-      us on ⁠⁠⁠⁠⁠⁠Apple Podcasts⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠YouTube⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠Spotify⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠X⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠Unchained⁠⁠⁠⁠⁠⁠
-      and wherever you get your podcasts. 
-
-
-      ----
-
-
-      Coinbase and Circle have moved into Hyperliquid, installing USDC as its aligned quote asset and taking over
-      treasury and technical deployment. For Gordon Liao, Circle's Chief Economist and Head of Research, that is a
-      liquidity supernova. For Chris Perkins, it is the moment every TVL-trapping platform was always going to arrive
-      at. 
-
-
-      Meanwhile, the CLARITY Act has cleared the Senate Banking Committee on a bipartisan vote, but the ethics question
-      — whether Democrats will vote for a bill that leaves Trump's family holdings untouched — remains unresolved. 
-
-
-      And as Kevin Warsh is confirmed as Fed chair, the 30-year yield breaks 5% for the first time since 2008. 
-
-
-      Hosts:
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Campbell (@austincampbell) — Founder, Zero Knowledge Consulting; Adjunct Professor, NYU
-      Stern
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Ram Ahluwalia⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of Lumida
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of 250 Digital Asset Management
-
-
-      Guest:
-
-        
-      Gordon Liao | Master of Coin, Circle
-
-
-      Timestamps
-
-      🚀 00:00 Introduction
-
-      🟡 01:17 Why Coinbase and Circle moved into Hyperliquid and how every TVL trap will monetize its float
-
-      🌊 07:14 Gordon: USDC on Hyperliquid is a 'liquidity supernova'
-
-      🧑‍⚖️ 12:29 Even though Elon Musk lost, Ram explains why Sam Altman is still a villain 
-
-      🏃 18:21 Where value will really accrue in the AI race
-
-      ⛓️💳 24:48 Whether agents will use blockchain rails or just credit cards
-
-      🤖 30:59 Why Chris thinks money market funds might win out over stablecoins among AI agents
-
-      🏛️ 36:11 CLARITY clears Senate Banking — what's still blocking 60 votes
-
-      🧨 41:27 Why Austin thinks the ethics fight is the one problem with no clean answer
-
-      📈 46:01 Why, after Warsh's confirmation, the 30-year cleared 5%
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: transcribe_failed
-    priority: 1
-    transcript_provider: dashscope
-    transcript_submitted_at: 2026-05-20T20:12:17.656Z
-    transcript_error: spawn ffmpeg ENOENT
-  - id: a9c7a8f2-5a46-11f1-9a84-fb368c3bb279
-    title: "Why the SEC Paused on Its Innovation Exemption for Tokenization: Bits + Bips"
-    duration: 3684
-    published: Thu, 11 Jun 2026 18:30:00 -0000
-    published_sort: "20260611"
-    first_seen_at: 2026-05-28T07:00:34.543Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8324602963.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8324602963.mp3
-    image: https://megaphone.imgix.net/podcasts/a9c7a8f2-5a46-11f1-9a84-fb368c3bb279/image/9b14dc703406920af63b6062a21045bc.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Citadel and SIFMA lobbied to slow tokenized equity rules. Arjun Sethi calls it 'corporate plumbing.' Chris Perkins
-      calls it a bond future moment.
-
-
-      ---
-
-
-      Thank you to our sponsor!
-
-
-      ⁠⁠Coinbase One⁠⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠⁠coinbase.com/unchained⁠⁠.
-
-
-      Heads up!
-
-
-      If you haven’t yet, be sure to subscribe to Bits + Bips, since the show will migrate there in a few weeks. Follow
-      us on ⁠⁠⁠⁠⁠⁠⁠Apple Podcasts⁠⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠⁠YouTube⁠⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠⁠Spotify⁠⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠⁠X⁠⁠⁠⁠⁠⁠⁠,
-      ⁠⁠⁠⁠⁠⁠⁠Unchained⁠⁠⁠⁠⁠⁠⁠ and wherever you get your podcasts. 
-
-
-      ----
-
-
-      Kraken has spent $2.75 billion on acquisitions in the past year, and co-CEO Arjun Sethi says the point is not a
-      bigger exchange. The goal is a 24/7 global operating system for capital markets: spot, derivatives, payments,
-      tokenized equities, and custody under one regulatory stack.
-
-
-      Sethi makes the case for each move, from REAP's tripling revenue in emerging markets to Bitnomial's CFTC trifecta,
-      and says what will actually drive Kraken's next three years is not trading volume.
-
-
-      The conversation then turns to the SEC's paused innovation exemption for tokenized equities, why Citadel and SIFMA
-      showed up to lobby against it, and whether direct listings on crypto rails could eventually replace Wall Street's
-      IPO machine.
-
-
-      The episode closes on a question nobody saw coming: what Pope Leo's first encyclical on AI and finance has to do
-      with the Bitcoin white paper.
-
-
-      Hosts:
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Campbell (@austincampbell) — Founder, Zero Knowledge Consulting; Adjunct Professor, NYU
-      Stern
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Ram Ahluwalia⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of Lumida
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of 250 Digital Asset Management
-
-
-      Guest:
-
-        
-      Arjun Sethi - Co-CEO of Kraken / Payward and Chairman of Tribe Capital
-
-
-      Timestamps
-
-      💰 01:08 Kraken has spent $2.75B on M&A in 12 months. Which deal would Arjun defend most?
-
-      🌍 07:33 Institutions aren’t buying tokenized equities. So who is the target customer?
-
-      📈 10:54 Derivatives are 95% of crypto volume. Where does Bitnomial fit?
-
-      🔑 14:12 Arjun on what actually drives Kraken's next three years
-
-      ☠️ 20:44 What keeps Arjun up at night and what problems he potentially sees in crypto
-
-      🏛️ 22:48 Why the SEC paused tokenized equity rules, and who's really to blame
-
-      🚀 31:15 Could 24/7 crypto rails make Wall Street's IPO machine obsolete?
-
-      📣 42:05 Coinbase: Get 20% off the first year of your Coinbase One annual plan at https://coinbase.com/unchained
-
-      ⛪ 43:56 Why it matters that Pope Leo mentioned crypto in his AI encyclical
-
-      👀 49:38 How the pope's decentralization argument tracks with the Bitcoin white paper
-
+      🚨 55:36 How one infected device cost Humanity Protocol its bridge, token, and treasury
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
@@ -286,8 +101,8 @@ episodes:
   - id: 800520c0-5fa1-11f1-99ad-cfe68f34d64e
     title: "CFTC Approves True Perps and Agentic Finance Gets Real: DEX in the City"
     duration: 3014
-    published: Thu, 11 Jun 2026 18:22:00 -0000
-    published_sort: "20260611"
+    published: Tue, 02 Jun 2026 18:22:00 -0000
+    published_sort: "20260602"
     first_seen_at: 2026-06-04T04:38:00.236Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7147706987.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7147706987.mp3
@@ -514,6 +329,103 @@ episodes:
     transcript_job_id: 01a16018cd5c4c84958265068cc81287,0fd2192ec77945eda312cdb45aa9e0b6,5ff8db1a6c484bc5a1424127e1cb3eaf,b401491334f543919a9ae28668f7a17b,38f99eb63cd842d7a63178834efebc02
     transcript_submitted_at: 2026-05-28T20:16:52.892Z
     transcript_completed_at: 2026-05-28T20:19:57.720Z
+  - id: a9c7a8f2-5a46-11f1-9a84-fb368c3bb279
+    title: "Why the SEC Paused on Its Innovation Exemption for Tokenization: Bits + Bips"
+    duration: 3684
+    published: Mon, 25 May 2026 18:30:00 -0000
+    published_sort: "20260525"
+    first_seen_at: 2026-05-28T07:00:34.543Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8324602963.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8324602963.mp3
+    image: https://megaphone.imgix.net/podcasts/a9c7a8f2-5a46-11f1-9a84-fb368c3bb279/image/9b14dc703406920af63b6062a21045bc.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Citadel and SIFMA lobbied to slow tokenized equity rules. Arjun Sethi calls it 'corporate plumbing.' Chris Perkins
+      calls it a bond future moment.
+
+
+      ---
+
+
+      Thank you to our sponsor!
+
+
+      ⁠⁠Coinbase One⁠⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠⁠coinbase.com/unchained⁠⁠.
+
+
+      Heads up!
+
+
+      If you haven’t yet, be sure to subscribe to Bits + Bips, since the show will migrate there in a few weeks. Follow
+      us on ⁠⁠⁠⁠⁠⁠⁠Apple Podcasts⁠⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠⁠YouTube⁠⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠⁠Spotify⁠⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠⁠X⁠⁠⁠⁠⁠⁠⁠,
+      ⁠⁠⁠⁠⁠⁠⁠Unchained⁠⁠⁠⁠⁠⁠⁠ and wherever you get your podcasts. 
+
+
+      ----
+
+
+      Kraken has spent $2.75 billion on acquisitions in the past year, and co-CEO Arjun Sethi says the point is not a
+      bigger exchange. The goal is a 24/7 global operating system for capital markets: spot, derivatives, payments,
+      tokenized equities, and custody under one regulatory stack.
+
+
+      Sethi makes the case for each move, from REAP's tripling revenue in emerging markets to Bitnomial's CFTC trifecta,
+      and says what will actually drive Kraken's next three years is not trading volume.
+
+
+      The conversation then turns to the SEC's paused innovation exemption for tokenized equities, why Citadel and SIFMA
+      showed up to lobby against it, and whether direct listings on crypto rails could eventually replace Wall Street's
+      IPO machine.
+
+
+      The episode closes on a question nobody saw coming: what Pope Leo's first encyclical on AI and finance has to do
+      with the Bitcoin white paper.
+
+
+      Hosts:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Campbell (@austincampbell) — Founder, Zero Knowledge Consulting; Adjunct Professor, NYU
+      Stern
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Ram Ahluwalia⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of Lumida
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of 250 Digital Asset Management
+
+
+      Guest:
+
+        
+      Arjun Sethi - Co-CEO of Kraken / Payward and Chairman of Tribe Capital
+
+
+      Timestamps
+
+      💰 01:08 Kraken has spent $2.75B on M&A in 12 months. Which deal would Arjun defend most?
+
+      🌍 07:33 Institutions aren’t buying tokenized equities. So who is the target customer?
+
+      📈 10:54 Derivatives are 95% of crypto volume. Where does Bitnomial fit?
+
+      🔑 14:12 Arjun on what actually drives Kraken's next three years
+
+      ☠️ 20:44 What keeps Arjun up at night and what problems he potentially sees in crypto
+
+      🏛️ 22:48 Why the SEC paused tokenized equity rules, and who's really to blame
+
+      🚀 31:15 Could 24/7 crypto rails make Wall Street's IPO machine obsolete?
+
+      📣 42:05 Coinbase: Get 20% off the first year of your Coinbase One annual plan at https://coinbase.com/unchained
+
+      ⛪ 43:56 Why it matters that Pope Leo mentioned crypto in his AI encyclical
+
+      👀 49:38 How the pope's decentralization argument tracks with the Bitcoin white paper
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
     duration: 4444
@@ -688,6 +600,101 @@ episodes:
       GFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5jaG\
       FpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
       nYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
+  - id: 844ab0ca-5329-11f1-b6ee-4bfa056cbbc9
+    title: In an AI Agent World, Do Money Markets Win Over Stablecoins? - Bits + Bips
+    duration: 3507
+    published: Mon, 18 May 2026 18:35:00 -0000
+    published_sort: "20260518"
+    first_seen_at: 2026-05-20T06:54:39.135Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6574118391.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6574118391.mp3
+    image: https://megaphone.imgix.net/podcasts/844ab0ca-5329-11f1-b6ee-4bfa056cbbc9/image/3d56707f6152fbff3657621ea3e46579.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      USDC became Hyperliquid's stablecoin infrastructure, and the 30-year broke 5% for the first time since 2008.
+      Austin, Ram, Chris, and Gordon Liao of Circle work through who wins.
+
+
+      ---
+
+
+      Thank you to our sponsor!
+
+
+      ⁠Coinbase One⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠coinbase.com/unchained⁠.
+
+
+      Heads up!
+
+
+      If you haven’t yet, be sure to subscribe to Bits + Bips, since the show will migrate there in a few weeks. Follow
+      us on ⁠⁠⁠⁠⁠⁠Apple Podcasts⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠YouTube⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠Spotify⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠X⁠⁠⁠⁠⁠⁠, ⁠⁠⁠⁠⁠⁠Unchained⁠⁠⁠⁠⁠⁠
+      and wherever you get your podcasts. 
+
+
+      ----
+
+
+      Coinbase and Circle have moved into Hyperliquid, installing USDC as its aligned quote asset and taking over
+      treasury and technical deployment. For Gordon Liao, Circle's Chief Economist and Head of Research, that is a
+      liquidity supernova. For Chris Perkins, it is the moment every TVL-trapping platform was always going to arrive
+      at. 
+
+
+      Meanwhile, the CLARITY Act has cleared the Senate Banking Committee on a bipartisan vote, but the ethics question
+      — whether Democrats will vote for a bill that leaves Trump's family holdings untouched — remains unresolved. 
+
+
+      And as Kevin Warsh is confirmed as Fed chair, the 30-year yield breaks 5% for the first time since 2008. 
+
+
+      Hosts:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Campbell (@austincampbell) — Founder, Zero Knowledge Consulting; Adjunct Professor, NYU
+      Stern
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Ram Ahluwalia⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of Lumida
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of 250 Digital Asset Management
+
+
+      Guest:
+
+        
+      Gordon Liao | Master of Coin, Circle
+
+
+      Timestamps
+
+      🚀 00:00 Introduction
+
+      🟡 01:17 Why Coinbase and Circle moved into Hyperliquid and how every TVL trap will monetize its float
+
+      🌊 07:14 Gordon: USDC on Hyperliquid is a 'liquidity supernova'
+
+      🧑‍⚖️ 12:29 Even though Elon Musk lost, Ram explains why Sam Altman is still a villain 
+
+      🏃 18:21 Where value will really accrue in the AI race
+
+      ⛓️💳 24:48 Whether agents will use blockchain rails or just credit cards
+
+      🤖 30:59 Why Chris thinks money market funds might win out over stablecoins among AI agents
+
+      🏛️ 36:11 CLARITY clears Senate Banking — what's still blocking 60 votes
+
+      🧨 41:27 Why Austin thinks the ethics fight is the one problem with no clean answer
+
+      📈 46:01 Why, after Warsh's confirmation, the 30-year cleared 5%
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: dashscope
+    transcript_submitted_at: 2026-05-20T20:12:17.656Z
+    transcript_error: spawn ffmpeg ENOENT
   - id: 268089a0-4f38-11f1-9a58-ff1b070f08af
     title: "Uneasy Money: Why the Broken Pre-IPO Secondary Markets Won't Be Fixed Anytime Soon"
     duration: 4571
@@ -1151,62 +1158,6 @@ episodes:
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
-  - id: 41294c52-4983-11f1-a5a7-0beee9669ba8
-    title: "DEX in the City: With the Stablecoin Yield Compromise, Can the Clarity Act Get Passed?"
-    duration: 2392
-    published: Fri, 08 May 2026 01:06:00 -0000
-    published_sort: "20260508"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9685873822.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9685873822.mp3
-    image: https://megaphone.imgix.net/podcasts/41294c52-4983-11f1-a5a7-0beee9669ba8/image/22293b95b64818876486e421714b307c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Seven lawsuits blame OpenAI for enabling a mass shooting. Could the same legal theory come for DeFi?
-
-
-      Thanks to our sponsor!
-
-
-      Coinbase One
-
-
-      Get 20% off the first year of your Coinbase One annual plan
-
-
-      coinbase.com/unchained 
-
-
-      Seven families just sued OpenAI in federal court, arguing ChatGPT was a defective product that helped plan a mass
-      shooting. OpenAI's own safety team flagged the risk eight months earlier and did nothing. The legal theory being
-      tested here, that software developers can be held liable for foreseeable misuse of their tools, is the same theory
-      that has been circling DeFi for years. 
-
-
-      Meanwhile, April ended as the most hacked month in crypto history, with over $600 million stolen in roughly 30
-      exploits, most of them linked to North Korea and its weapons programs. DeFi United, a $300M relief coalition led
-      by Aave, emerged as the industry's response. 
-
-
-      KK, Vy, and Jessi unpack what it means when the 'code is law' defense starts to crack, why basic operational
-      security is still not standard practice, and how close the Clarity Act actually is to crossing the finish line.
-
-
-      Hosts:
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Katherine Kirkpatrick Bos⁠⁠⁠, General Counsel at StarkWare. Previously held senior legal roles
-      across DeFi and centralized exchanges.
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jessi Brooks⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, General Counsel at Ribbit Capital
-
-        
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠TuongVy Le⁠⁠⁠⁠, General Counsel at Veda
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
   - id: 7a8aaf0e-47e9-11f1-a2d1-030e826b82d5
     title: A16z Crypto Raised $2.2 Billion for Fund 5. Here's How They Plan to Deploy It
     duration: 3308
@@ -1267,6 +1218,29 @@ episodes:
 
         
       ⁠⁠⁠⁠⁠⁠⁠⁠Ali Yahya, General Partner, a16z crypto 
+
+
+      Timestamps
+
+      🚀 0:00   Introduction — Why a16z crypto raised its $2.2B Fund 5 now
+
+      💰 2:50   The two big investment themes: fintech x crypto and AI x crypto
+
+      🔒 9:25   Why Ali believes privacy is the most important moat in crypto
+
+      ⛓️ 14:31  How the three privacy approaches compare: centralized sequencers, TEEs, zk tech
+
+      🔐 18:32 What happens to security in a world of privacy chains?
+
+      🧩 28:48 When privacy chains dominate, can we still have DeFi money Legos?
+
+      🤖 34:12  Ali's AI background and how agents will enter the financial system
+
+      🎨 43:55 What AI x crypto means for entrepreneurs and creative types 
+
+      ⚠️ 49:13  The quantum threat — why Ali says we have 10-15 years
+
+      📊 51:58  Prediction markets and insider trading — where the line is
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -1335,6 +1309,99 @@ episodes:
 
         
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of 250 Digital Asset Management
+
+
+      Timestamps
+
+      ⚔️ 1:06    Iran strikes in the Strait of Hormuz — what's happening on the ground
+
+      📈 3:14    Why Bitcoin ripped through $80 while equities sold off
+
+      🛢️ 6:47    Ram's macro read: markets one day from all-time highs, stay bullish
+
+      🪙 17:45   What to make of Paul Tudor Jones calling Bitcoin the best inflation hedge
+
+      ⚡ 20:58   Chris's thesis: the future store of value is wrapped energy or wrapped compute
+
+      🏛️ 37:29   Clarity Act yield compromise: did crypto win, did banks win, did anyone win?
+
+      ⚖️ 48:47   What happens now that there’s a lawsuit against Arbitrum for freezing funds stolen by North Korea
+
+      🔐 51:47   Can DeFi achieve mass adoption without resolving the security question?
+
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
+  - id: 41294c52-4983-11f1-a5a7-0beee9669ba8
+    title: "DEX in the City: With the Stablecoin Yield Compromise, Can the Clarity Act Get Passed?"
+    duration: 2392
+    published: Thu, 07 May 2026 01:06:00 -0000
+    published_sort: "20260507"
+    first_seen_at: 2026-05-19T08:55:24.816Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9685873822.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9685873822.mp3
+    image: https://megaphone.imgix.net/podcasts/41294c52-4983-11f1-a5a7-0beee9669ba8/image/22293b95b64818876486e421714b307c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Seven lawsuits blame OpenAI for enabling a mass shooting. Could the same legal theory come for DeFi?
+
+
+      Thanks to our sponsor!
+
+
+      Coinbase One
+
+
+      Get 20% off the first year of your Coinbase One annual plan
+
+
+      coinbase.com/unchained 
+
+
+      Seven families just sued OpenAI in federal court, arguing ChatGPT was a defective product that helped plan a mass
+      shooting. OpenAI's own safety team flagged the risk eight months earlier and did nothing. The legal theory being
+      tested here, that software developers can be held liable for foreseeable misuse of their tools, is the same theory
+      that has been circling DeFi for years. 
+
+
+      Meanwhile, April ended as the most hacked month in crypto history, with over $600 million stolen in roughly 30
+      exploits, most of them linked to North Korea and its weapons programs. DeFi United, a $300M relief coalition led
+      by Aave, emerged as the industry's response. 
+
+
+      KK, Vy, and Jessi unpack what it means when the 'code is law' defense starts to crack, why basic operational
+      security is still not standard practice, and how close the Clarity Act actually is to crossing the finish line.
+
+
+      Hosts:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Katherine Kirkpatrick Bos⁠⁠⁠, General Counsel at StarkWare. Previously held senior legal roles
+      across DeFi and centralized exchanges.
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jessi Brooks⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, General Counsel at Ribbit Capital
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠TuongVy Le⁠⁠⁠⁠, General Counsel at Veda
+
+
+      Timestamps
+
+      🚀 0:00  Introduction
+
+      🤖 2:44  How several lawsuits claiming AI companies have liability for defective products has warning signs for
+      DeFi
+
+      🔓 12:11  April: the most hacked month in crypto history. Who’s being social engineered now?
+
+      🛡️  16:01  Why basic OpSec failures are still enabling North Korea's hackers
+
+      💸 18:17  Is the $300M raised by DeFi United a bailout or solidarity?
+
+      📜 26:41  The Clarity Act stablecoin yield compromise: what changed and what's left
+
+      🐶 36:47  Crypto good news: Dogecoin and Moonpay donate 1M DOGE to dogs
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -1476,6 +1543,25 @@ episodes:
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Ben Fielding, CEO & Co-Founder, Gensys @BenFielding
 
 
+      Timestamps
+
+      🔗 07:47 Why AI and blockchain were always meant to solve the same problem
+
+      ✅ 11:16 The three things AI agents need to transact -- and the one that didn't exist yet
+
+      🤔 14:56 How do you build against trillion-dollar data centers? 
+
+      📊 15:59 Why calling Delphi a prediction market is selling it short
+
+      🌾 25:05 The orange farmer who could never hedge drought risk -- until now
+
+      ⚖️ 37:33 The markets no society should allow, and how Delphi stops them
+
+      🪙 41:02 Why every airdrop after the first one was a mistake
+
+      🔐 46:56 After KelpDAO: how Gensyn thinks about security differently
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -1549,6 +1635,27 @@ episodes:
       Adrian Cachinero Vasiljevic, Co-Founder, Steakhouse Financial — @adcv_
 
 
+      Timestamps
+
+      🔥 01:14 How Tom and Adrian are rethink yield rates after $606M worth of DeFi hacks in one month 
+
+      📊 08:46 How TradFi prices risk, and why the same framework still applies to DeFi
+
+      ⚠️ 13:54 The DeFi-specific risks TradFi can't model: hacks, oracles, governance, exotic collateral
+
+      🔢 18:20 Adrian on why loss-given-default in DeFi is 'almost total', and what that changes
+
+      🤝 23:52 Where Tom and Adrian actually disagree: resolution, not structure
+
+      📉 32:34 Luca Prosperi's additions: continuous collateral observation, liquidation timing, legal process
+
+      💬 41:49 Dan Robinson's pushback: if risk is mispriced, shouldn't demand fix it?
+
+      🏗️ 53:59 RWAs as collateral: why non-crypto-native assets may be the most dangerous mismatch
+
+      🔭 57:19 Which protocols actually reduce the risk premium, and how to think about the rest
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -1602,6 +1709,21 @@ episodes:
 
         
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠, CEO of Pudgy Penguins
+
+
+      Timestamps
+
+      🩸 01:23 137K ETH drive to cover KelpDAO losses
+       🪤 07:40 Is DeFi yield actually paying you for tail risk? Tom Dunleavy thinks no 
+      💀 18:08 Luca on whether the DeFi yield game is even worth playing right now 
+
+      ⚖️ 22:13 The ‘Aave users were idiots’ take, and why Tay wants no moral-hazard talk
+       💸 27:29 Meta is paying creators in USDC. The Instagram stablecoin pipe is on 
+      🪦 33:31 How Facebook’s 2019 Libra blunder helped birth the Gensler era of crypto 
+
+      🔥 40:55 Pump.fun burned $370M of tokens. Luca says that was the wrong call 
+
+      📱 58:10 OpenAI’s AI-native phone, and why Kain says the OS is dumber than the apps
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -1753,6 +1875,25 @@ episodes:
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠⁠⁠⁠⁠⁠, Co-Host, CEO of 250 Digital Asset Management
 
 
+      Timestamps
+
+      🕊️ 01:41 Iran wants a deal. What the blockade is doing to its oil exports
+
+      💰 05:53 How Tether helped the US seize $300M from Iran
+
+      📈 06:18 Ram on why 19% earnings growth is 'bananas' and what it means
+
+      🤖 09:55 Microsoft and OpenAI rewrite their deal. Why Microsoft won
+
+      🔐 22:28 Why Bitcoin-gold is the chart to watch
+
+      🏛️ 34:09 Why the Clarity Act may be stalled over Democrats’ concerns over Trump’s crypto conflicts 
+
+      🎯 36:16 A soldier bet on the Maduro raid and got arrested. Right call?
+
+      📊 42:52 How prediction markets are changing investing
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -1831,6 +1972,25 @@ episodes:
 
         
       ⁠Paul Frambot, Co-founder and CEO of Morpho Labs
+
+
+      Timestamps
+
+      🦋 02:25 How Morpho ended up with only a $1M shortfall when Lazarus stole $300M from Aave
+
+      🔑 05:43 Are DeFi lenders being compensated for the risk they take?
+
+      🏛 11:12 What the Kelp-LayerZero blame game reveals about DeFi risk
+
+      🔍 14:01 Morpho's 'Etherscan for lending' model, and how to pick a vault
+
+      📞 15:53 Paul's calls with institutions after the hack, and what they said
+
+      🤔 24:08 Arbitrum froze $71M of stolen funds. Was that the right call?
+
+      🚀 29:54 Why Paul thinks DeFi 2.0 is just getting started
+
+      🤖 33:31 Why AI makes DeFi an open target, and the one defense that still works
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -1912,6 +2072,25 @@ episodes:
       Griff Green, Arbitrum Security Council Member, Leader of the DAO Security Fund, Co-founder of Giveth
 
 
+      Timestamps
+
+      🎤 0:00 Introduction: Griff's history with the DAO hack and how he joined the Security Council
+
+      🔑 0:53 How North Korea's 48-hour pause made the Arbitrum freeze possible
+
+      ⚙️ 5:09 Forced inclusion: how an L1 transaction froze funds without touching a single node
+
+      🏛️ 8:01 What the Arbitrum Security Council is and who's on it
+
+      🤔 14:31 Why Griff initially opposed the freeze and what changed his mind
+
+      🗣️ 19:17 Why social consensus, not immutability, is blockchain's real accountability layer
+
+      ⚖️ 26:23 How the crypto community has responded and what Gabe Shapiro got right
+
+      🛡️ 34:31 Why Ethereum is secure but not safe, and the DAO Security Fund's mission
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -1968,6 +2147,29 @@ episodes:
 
         
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Odysseas Lamtzidis, Founder & CEO of Phylax
+
+
+      Timestamps
+
+      🚀 0:00 Introduction
+
+      🌉 10:50 How the Kelp DAO hack drained $300M from LayerZero’s DVN
+
+      🔍 14:40 Why Taylor says the RPC spoof is scarier than a key compromise
+
+      💸 17:08 How the attacker looped rsETH in Aave to amplify the damage
+
+      ⚖️ 27:08 Why Odysseas thinks bridges carry systemic risk most teams ignore
+
+      🔒 42:39 Whether circuit breakers could have stopped the Aave contagion
+
+      🏛️ 1:03:09 What Arbitrum’s security council actually did to freeze DPRK funds
+
+      🌊 1:13:06 Why Kain calls this a watershed moment for DeFi governance
+
+      🎭 1:18:02 How DPRK uses property rights arguments to unfreeze stolen funds
+
+      🧠 1:20:42 What Odysseas recommends for teams building DeFi protocols today
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -2036,6 +2238,23 @@ episodes:
 
         
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠TuongVy Le⁠⁠⁠, General Counsel at Veda
+
+
+      Timestamps
+
+      🎙️ 0:00 Introduction live from the Eve Wealth Summit, Phoenix
+
+      🔓 2:08 What made the Kelp DAO bridge exploit different from past hacks
+
+      ⚖️ 7:04 Kelp vs. Layer Zero: who bears liability for the $300M loss
+
+      👥 11:37 How retail users coming into DeFi change the accountability calculus
+
+      🚦 16:38 Vy: Should DeFi adopt rate limits and permissioning constraints
+
+      🗳️ 21:09 Ninth Circuit grills prediction markets — what the skepticism signals
+
+      🤖 33:38 Amex launches agentic commerce with accountability crypto hasn't built 
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -2210,6 +2429,25 @@ episodes:
       Alex Gluchowski: Co-Founder & CEO, Matter Labs
 
 
+      Timestamps
+
+      🎤 0:00  Introduction
+
+      🏦 1:55  Why Yuval built Canton to bring capital markets on-chain
+
+      🔥 5:41  Where the Canton controversy came from, per Yuval
+
+      ⛓️ 8:59  What makes a blockchain, per Alex 
+
+      🔐 16:38  What super validators do and how double spend works on Canton
+
+      🗳️ 42:08  What ‘permissionless’ means in the context of Canton
+
+      💬 54:40  Why Alex calls Canton a mediated messaging system, not a blockchain
+
+      🔎 1:20:53  Yuval admits Canton has no public verifiability
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -2274,6 +2512,25 @@ episodes:
 
         
       ⁠⁠⁠⁠⁠⁠Michael Bentley — @euler_mab — Former CEO, Euler Labs
+
+
+      Timestamps
+
+      🎤 0:00  Introduction
+
+      💰 1:49  What Apyx is and how its STRC-backed stablecoin targets 12% yield
+
+      ⚖️ 6:08  The bull and bear cases for Apyx USD
+
+      🔄 10:04  How the two-token model creates yield leverage beyond holding STRC
+
+      🌍 16:51  Who the product is for and the path to US markets
+
+      📈 21:51  Bitcoin decoupling from equities and the non-consensus rally
+
+      🔥 30:15  The $290M Kelp DAO hack: mechanics and who’s to blame
+
+      🛡️ 47:07  Should DeFi stop assuming transactions are legitimate by default?
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -2347,6 +2604,23 @@ episodes:
         
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Josh Lim — Global Co-Head of Markets, FalconX. Repeat guest; previously
       covered market structure and institutional crypto flows on Bits + Bips.
+
+
+      Timestamps
+
+      🌍 00:03:27  How the Iran war repositioned macro funds into Bitcoin
+
+      📊 00:09:40  A possible sell wall at $75-76K? Breakeven holders and miners switching to high-performance compute
+
+      📉 00:15:59  Why Bitcoin vol is sub-50 and what the options market is signaling
+
+      🔄 00:22:08  ETH outperforming Bitcoin: where the rotation is going
+
+      💧 00:26:52  Solana refocusing on stablecoin transport after the Drift hack
+
+      ⚙️  00:30:15  Hyperliquid perps, RWA arbitrage, and what 'alt season' looks like now
+
+      ⚛️  00:37:26  Quantum risk in Bitcoin: governance failure, trading signals to watch
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -2513,6 +2787,25 @@ episodes:
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Nader Al-Naji (@nadertheory), Founder of DESO and BitClout
 
 
+      Timestamps
+
+      🚀 0:00 Introduction
+
+      🌱 2:21 Starting Basis and returning $140M from Druckenmiller and Andreessen
+
+      💬 9:58 What Nader told Do Kwon before Terra launched
+
+      🎬 13:38 How BitClout got Elon, Thiel, and Kim Kardashian claiming coins
+
+      ✈️ 21:24 The FBI raid, the Turkey trip, and the airport arrest
+
+      ⚖️ 36:23 Why Nader hired the firm that won’t hire ex-prosecutors
+
+      🏦 52:42 How ‘subpoena sniping’ cuts off defendants’ legal funding
+
+      🪄 1:11:11 The SEC’s out-of-context quote and what DESO is now
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -2594,6 +2887,25 @@ episodes:
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
 
 
+      Timestamps
+
+      🎙️ 00:00:00 Introduction
+
+      ⚛️ 00:00:27 What BIP-361 proposes — and why it's wild even for Bitcoin
+
+      📜 00:04:00 Bitcoin history: code-as-code to ossified religion
+
+      🔒 00:19:17 How BIP-361 would freeze early wallets and Satoshi's coins
+
+      🔑 00:31:05 Satoshi as forcing function: the God candle theory
+
+      👻 00:41:57 Who actually wrote Bitcoin? Hal Finney, Adam Back, Kleiman
+
+      💰 00:51:22 World Liberty Financial vs Justin Sun: zero token rights
+
+      📉 01:06:55 EtherFi leaves Scroll, DNS hijacks, X cashtags: platform risk 
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -2667,6 +2979,25 @@ episodes:
 
         
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠TuongVy Le⁠⁠, General Counsel at Veda
+
+
+      Timestamps
+
+      🚀 0:00 Introduction
+
+      🔬 0:55 Whether quantum computing can actually break Bitcoin
+
+      🛡️ 4:15 How StarkWare’s new paper proposes making Bitcoin quantum-resistant
+
+      🤖 16:59 Why Anthropic’s Mythos model is a ‘benevolent dictator’ problem
+
+      ⚖️ 20:09 Whether private AI companies should make national security calls
+
+      📋 29:19 What the SEC’s new front-end guidance means for DeFi builders
+
+      🗻 35:35 What ‘Reg Crypto’ would actually change for token launches
+
+      🔒 45:09 How SEAL911 is building shared security standards for DeFi
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -2773,6 +3104,25 @@ episodes:
       ⁠⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠⁠, Co-Host, CEO of 250 Digital Asset Management
 
 
+      Timestamps
+
+      🚀 0:00  Introduction
+
+      ⚓ 1:35  Whether the US naval blockade of the Strait of Hormuz is viable
+
+      🎯 6:25  How Ram thinks CENTCOM outmaneuvered the IRGC this weekend
+
+      📊 15:12  What markets are pricing in and where Ram sees dislocation
+
+      🤖 19:41  Why Ram thinks Anthropic’s Mythos announcement is masterclass marketing
+
+      💸 28:56  How AI CapEx is coming out of the buybacks that lifted the Mag 7
+
+      ⚖️ 40:16  What the WLFI-Justin Sun conflict says about crypto governance
+
+      📱 56:06  Why Hyperliquid is the equity proxy crypto never had
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -2843,6 +3193,25 @@ episodes:
 
         
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠LTR, Venture Investor, Kosmos
+
+
+      Timestamps
+
+      🚀 0:00 How crypto derivatives evolved from spot to perps to options 
+
+      🏛️ 4:13 How Deribit built options liquidity — and why Coinbase paid $2.9B 
+
+      ⚰️ 13:53 The graveyard: Opyn, HEGIC, Ribbon, Dopex — why they all failed 
+
+      🏗️ 15:55 Why Nick built Derive on the premise that complexity is a feature 
+
+      📉 26:02 How the basis trade's death cleared the field for options yield 
+
+      🌐 31:35 What onchain options look like when tokenized stocks arrive 
+
+      🤖 40:32 Why Nick thinks AI agents are the killer app for options at scale 
+
+      🏦 43:53 The institutional pitch: custody, fees, and milestones to watch
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -2950,6 +3319,24 @@ episodes:
 
       Bessent Ramps Up Pressure on Congress to Pass CLARITY Act (CoinTelegraph)
 
+
+      Timestamps
+
+      🌐 1:37 Is geopolitical chaos reshaping how crypto trades? 
+
+      💰 3:44 Are prediction markets the new insider trading? 
+
+      🚀 11:56 Do institutional flows signal Bitcoin's run to 100K? 
+
+      📊 16:43 Could altcoins finally see their cycle in 2026? 
+
+      🏛️ 27:30 Are 24/7 tokenized markets changing finance for good? 
+
+      📈 34:04 Can the Clarity Act unlock yield-bearing stablecoins? 
+
+      🤖 42:08 Will AI agents and robots reshape blockchain?
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -3029,6 +3416,24 @@ episodes:
         
       ⁠⁠⁠⁠⁠⁠⁠⁠⁠James Seyffart, Senior Analyst, Bloomberg Intelligence
 
+
+      Timestamps
+
+      🚀 0:00 Introduction 
+
+      💰 2:12 How MSBT performed on day one, and what $34M in trading means 
+
+      🏦 4:10 Who will buy MSBT: advisors, long-term holders, and why traders won't 
+
+      ⚡ 9:58 Why Seyffart tweeted "WOW" in all caps at the Morgan Stanley fee 
+
+      🔄 12:22 Whether BlackRock will cut fees, and which ETFs might move first 
+
+      🌐 16:18 Why Seyffart thinks Morgan Stanley is signaling a full crypto pivot 
+
+      ⚖️ 23:09 Why not owning Bitcoin is now the active choice, not the neutral one 
+
+      📉 25:29 Why, with Strategy's $14.5B loss, Saylor keeps buying
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
@@ -3227,6 +3632,25 @@ episodes:
       Austin Griffith, Ethereum Foundation
 
 
+      Timestamps
+
+      🚀 0:00 Introduction
+
+      🤖 1:56 Why Anthropic's Mythos found 20 zero-days in decades-old software
+
+      🔓 4:39 What the Balancer V2 hack reveals about smart contract immutability
+
+      💸 12:54 Why Anthropic gave 12 companies $100M to run Mythos for security
+
+      🧠 26:31 How skill files make AI agents instantly crypto-native
+
+      ⚠️ 34:55 How Kain's degen agent locked tokens in an Aerodrome gauge forever
+
+      🏦 41:57 Why Anthropic is closing the OpenClaw subscription loophole
+
+      📉 1:01:15 Anthropic's 89% uptime and what it signals about the AI industry
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -3290,6 +3714,27 @@ episodes:
 
         
       Sumeera Younis, Chief of Operations, SEC Crypto Task Force
+
+
+      Timestamps
+
+      🏛️ 0:00 Introduction
+
+      📋 02:49 What Cmr. Peirce and Younis do daily at the crypto task force
+
+      ⚖️ 07:48 How roundtables shape SEC guidance
+
+      👥 11:07 Why, according to Cmr. Peirce, small builders struggle most
+
+      🔗 17:09 Whether small teams get the same access as big players
+
+      📝 27:32 What good disclosure looks like for tokens, per Younis
+
+      🤝 35:17 How the SEC-CFTC MOU prevents regulatory whiplash
+
+      🔐 41:32 Whether guidance can survive administrations, per Cmr. Peirce
+
+      💭 46:23 What legacies Peirce and Younis leave at the SEC
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -3370,6 +3815,25 @@ episodes:
       ⁠⁠⁠⁠Michael Lewellen, Head of Solutions Engineering at Turnkey
 
 
+      Timestamps
+
+      🔍 00:00 Introduction 
+
+      🕵️ 00:59 How Drift got infiltrated through a six-month intelligence operation 
+
+      🛡️ 05:22 Why crypto companies underestimate nation-state-level threats 
+
+      ⚠️ 09:14 Whether DPRK is confirmed behind the Drift hack 
+
+      💼 18:00 How North Korea recruits non-Korean operatives for crypto attacks 
+
+      💰 33:52 Why Circle refused to freeze $232M in stolen USDC 
+
+      ⚖️ 51:13 How Tether's freeze response compares to Circle's inaction 
+
+      🔐 59:31 What laws Amanda Wick would craft for blockchain-speed freezing
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -3447,6 +3911,25 @@ episodes:
 
         
       ⁠⁠⁠⁠Chris Perkins⁠⁠⁠⁠, Co-Host, President of CoinFund
+
+
+      Timestamps
+
+      🚨 01:25 How nation states are exploiting DeFi: $285M Drift hack
+
+      💬 05:12 Why Circle's freeze power raises a tension between due process and latency
+
+      ⚖️ 07:37 How post-GENIUS Act regulation reshapes stablecoin liability
+
+      🔐 10:25 What makes DeFi civilization-level despite immature security
+
+      🎯 19:52 Whether Iran's crypto war machine threatens USDT on Tron
+
+      🏛️ 40:00 Why token fundamentals face crisis: 750K tokens, median down 80%
+
+      📊 47:38 How to segment the token universe: L1 thesis vs app layer
+
+      💰 52:18 What Franklin Crypto means for institutional adoption
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -3549,6 +4032,25 @@ episodes:
       ⁠⁠How Bitcoin, Ethereum, and Solana Are Preparing for the Quantum Threat
 
 
+      Timestamps
+
+      🏛️ 3:26 Is crypto just ping-ponging off Trump headlines?
+
+      📉 6:01 Has Bitcoin lost the safe haven narrative again?
+
+      💰 10:13 If Bitcoin is a doomsday safe haven, what does that look like?
+
+      📊 13:43 Which charts signal what's coming next?
+
+      ⛏️ 19:32 Can you value crypto like a stock?
+
+      💡 24:35 What is one hidden indicator used to detect Bitcoin’s floor?
+
+      🔗 26:20 What if you applied the Buffett indicator to Ethereum?
+
+      🌐 39:13 Which blockchain wins the tokenization race?
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -3627,6 +4129,25 @@ episodes:
 
         
       Claude Code — Subject of source leak discussion
+
+
+      Timestamps
+
+      🚀 0:00 Introduction
+
+      🏦 11:21 The Drift Protocol hack, active as recording starts
+
+      🇰🇵 12:42 Whether DPRK is behind the attack, and the Axios connection
+
+      💻 18:29 How DPRK malware steals session tokens and bypasses 2FA
+
+      🛡️ 27:23 Why EDR beats AV — and why you need a separate device
+
+      🔒 39:14 Why Circle’s freeze policy fails in real-time hacks
+
+      🚨 51:05 What SEAL 911 is and how to reach them if you’re compromised
+
+      🤖 59:55 The Claude Code source leak and what it reveals about agentic dev
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -3791,6 +4312,20 @@ episodes:
       ⁠⁠⁠Chris Perkins⁠⁠⁠, Co-Host, President of CoinFund
 
 
+      Timestamps
+
+      🌍 0:50 Whether Iran’s bond market signals broader conflict escalation
+
+      💼 8:06 How crypto performs as equities face their worst month
+
+      📊 29:50 What the S&P’s price means for portfolio construction
+
+      🔗 38:58 Canton vs. everyone in crypto
+
+      💰 47:00 How commingled pools create systemic risk in DeFi
+
+      ⛓️ 55:53 What internet money means for Ethereum when US law is layer zero
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -3891,6 +4426,25 @@ episodes:
       How Bitcoin, Ethereum, and Solana Are Preparing for the Quantum Threat
 
 
+      Timestamps
+
+      🏛️ 3:26 Is crypto just ping-ponging off Trump headlines?
+
+      📉 6:01 Has Bitcoin lost the safe haven narrative again?
+
+      💰 10:13 If Bitcoin is a doomsday safe haven, what does that look like?
+
+      📊 13:43 Which charts signal what's coming next?
+
+      ⛏️ 19:32 Can you value crypto like a stock?
+
+      💡 24:35 What is one hidden indicator used to detect Bitcoin’s floor?
+
+      🔗 26:20 What if you applied the Buffett indicator to Ethereum?
+
+      🌐 39:13 Which blockchain wins the tokenization race?
+
+
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
@@ -3960,6 +4514,38 @@ episodes:
 
         
       North Korean Hackers Are Winning. Is the Crypto Industry Ready to Stop Them?
+
+
+      Timestamps
+
+      🚀 0:00 Introduction 
+
+
+      🥶 0:54 Why the Drift protocol hack is so chilling
+
+
+      ⁉️ 4:32 Was the admin key set up to blame? Or Was it a supply chain attack?
+
+
+      📍 9:17 How the attack is reminiscent of the Mango DAO and Resolv exploits
+
+
+      😬 14:09 How a Solana feature allowed Drift's hackers to lie in wait without triggering alarms
+
+
+      ❌️ 19:55 How Drift Protocol failed to implement best practices
+
+
+      🦠24:53 Who else has been impacted by the Drift Protocol exploit?
+
+
+      🤔 27:50 Should Circle have acted faster to freeze the loot?
+
+
+      ⚠️ 31:20 Why Omer thinks the Drift Protocol exploit has North Korea written all over it
+
+
+      📝 34:34 Why Omer says the incident calls for better DeFi disclosures and audits
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
@@ -5686,7 +6272,6 @@ episodes:
           
 
 
-
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -5870,7 +6455,6 @@ episodes:
       Unchained:⁠⁠
 
         
-
 
 
         
@@ -7077,7 +7661,6 @@ episodes:
           
 
 
-
         
       Previous appearances on Unchained:
 
@@ -8009,7 +8592,6 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
 
 
         
@@ -9202,7 +9784,6 @@ episodes:
        
 
 
-
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -9597,7 +10178,6 @@ episodes:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
 
-
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
@@ -9764,69 +10344,6 @@ episodes:
         How to Trade Prediction Markets Without an Opinion on the Event
 
         Ethereum’s Vitalik Buterin Says Blockchain Trilemma ‘Has Been Solved’
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 34280940-ed7f-11f0-ab48-83ef7ac123d1
-    title: Why 2026 Is 'Too Chaotic' to Make Crypto Predictions
-    duration: 4270
-    published: Fri, 09 Jan 2026 17:18:00 -0000
-    published_sort: "20260109"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6564828175.mp3?updated=1767981298
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6564828175.mp3?updated=1767981298
-    image: https://megaphone.imgix.net/podcasts/34280940-ed7f-11f0-ab48-83ef7ac123d1/image/1f540aa58952262cc345e7a85b96dd02.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Thank you to our sponsor, Mantle!
-
-
-      In this Unchained podcast episode, guests Alex Thorn and Ryan Graham share their 2026 outlook for Bitcoin and the
-      broader crypto market, exploring why the year looks unusually uncertain.
-
-
-      The conversation also digs into questions around Ethereum’s long-term value, whether killer apps are enough to
-      drive adoption, prediction markets’ push into sports betting, and why the privacy meta could continue in 2026.
-
-
-      Hosts:
-
-        Laura Shin
-
-      Guests:
-
-        
-      Ryan Graham, Research Analyst at Messari
-
-        
-      Alex Thorn, Head of Firmwide Research at Galaxy Digital
-
-
-      Links:
-
-        DAT Stocks Are on Sale. Are They a Buy? Plus, Why Crypto Is Dead
-
-        Ethereum’s Vitalik Buterin Says Blockchain Trilemma ‘Has Been Solved’
-
-        Solana Withstands Week-Long DDoS Attack
-
-        Solana Mulls Proposal to Lower Inflation Rate
-
-        Western Union Files ‘WUUSD’ Trademark After Solana Stablecoin Reveal
-
-        Why the Privacy Coins Mania Is Much More Than Price Action
-
-        The Chopping Block: Hyperliquid vs. Tarun, ADL Transparency & The Coming Perps Arms Race
-
-        How to Trade Prediction Markets Without an Opinion on the Event
-
-        Why Wall Street Banks Need to Launch Their Own Stablecoins
-
-        How the GENIUS Act Creates a Built-In Advantage for Banks and Deposit Tokens
-
-        Klarna Launches Stablecoin Built on Stripe’s Tempo Chain
-
-        How the x402 Standard Is Enabling AI Agents to Pay Each Other
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript

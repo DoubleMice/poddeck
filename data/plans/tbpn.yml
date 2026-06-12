@@ -1,90 +1,88 @@
 source: tbpn
-refreshed_at: 2026-06-11T19:03:10.506Z
+refreshed_at: 2026-06-12T04:38:24.525Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
-pending: 0
+done: 0
+pending: 1
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 36a0787a-b662-4d02-99a8-0bfd96054cda
-    title: The Social Reckoning Reactions, Fable 5 Sparks Safety Debate, 𝕏 Timeline Reactions | Farza Majeed, Trent
-      Simonian, Sridhar Ramaswamy, Matthew Prince, Vinod Khosla, Ranjan Rajagopalan, Markie Wagner, Bret Taylor
-    duration: 11265
-    published: Wed, 10 Jun 2026 14:40:01 -0700
-    published_sort: "20260610"
-    first_seen_at: 2026-06-11T04:38:40.952Z
-    url: https://share.transistor.fm/s/a414a9a1
-    audio_url: https://media.transistor.fm/a414a9a1/78e418f5.mp3
+  - id: d7f11efc-f764-41af-ac85-4e8b6910da69
+    title: Bezos AI Play, Future of Airports, CAA Fund | David Reger, Mike Wior, Ariel Cohen, Jeff Tatarchuk, Matt Joseph,
+      Ade Ajao, Jeremy Fraenkel
+    duration: 8653
+    published: Thu, 11 Jun 2026 13:48:28 -0700
+    published_sort: "20260611"
+    first_seen_at: 2026-06-12T04:38:24.516Z
+    url: https://share.transistor.fm/s/7b97840c
+    audio_url: https://media.transistor.fm/7b97840c/5bd14fa4.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/a414a9a1/transcription.txt
+    transcript_url: https://share.transistor.fm/s/7b97840c/transcription.txt
     transcript_type: text/plain
-    summary: "(00:26) - The Social Reckoning Trailer Reactions\r
+    summary: "(00:31) - Bezos AI Play\r
 
-      (15:24) - Fable 5 Sparks Safety Debate\r
+      (15:44) - Is TSA Goated?\r
 
-      (30:06) - Farza Majeed discusses his journey from creating an AI tutor for DaVinci Resolve to developing Clicky,
-      an AI assistant that executes user commands on computers. He explains Clicky's functionality, including real-time
-      GPT responses and integration with models like Fable 5 for screen understanding, and addresses the business model,
-      emphasizing cost-effective agentic work and a $20 monthly subscription. Majeed also highlights the importance of
-      balancing his media presence with startup development and expresses his vision for Clicky as a versatile
-      interaction layer across devices.\r
+      (20:12) - Future of Airports\r
 
-      (44:52) - Trent Simonian, co-founder of Sidetalk, a New York City-based one-minute street show, discusses the
-      show's origins, emphasizing its commitment to capturing candid, high-energy street interviews without staging. He
-      highlights the importance of creating shareable and engaging content, noting that their approach has led to
-      collaborations with major brands like Nike and the NFL. Simonian also touches on the challenges of monetizing
-      short-form content, explaining that while platforms like TikTok and Instagram haven't provided direct revenue,
-      Sidetalk generates income through branded content and merchandise sales.\r
+      (25:07) - 𝕏 Timeline Reactions\r
 
-      (59:25) - Sridhar Ramaswamy, CEO of Snowflake since February 2024, previously led Google's advertising products
-      and co-founded the AI-powered search engine Neeva. He discusses how Snowflake's AI-driven tools, like Snowflake
-      Cowork, have significantly reduced data integration times and enhanced conversational data access, enabling
-      businesses to solve complex problems interactively. Ramaswamy also highlights the company's focus on streamlining
-      migrations from legacy platforms, reducing timelines from years to quarters, and emphasizes the importance of
-      effective go-to-market strategies and partnerships, such as with AWS, to deliver joint solutions to customers.\r
+      (46:45) - David Reger, founder and CEO of Neura Robotics, is a pioneer in cognitive robotics, aiming to integrate
+      robots into daily life by enhancing their cognitive abilities. In the conversation, he discusses the company's
+      focus on developing robots with physical AI brains capable of performing tasks autonomously across various
+      sectors, emphasizing the importance of diverse embodiments, including mobile manipulators and humanoids, to adapt
+      to human-centric environments. Reger also highlights the establishment of Neura Gyms worldwide, facilities
+      designed to train robots in physical tasks, thereby generating essential data to refine their AI capabilities.\r
 
-      (01:16:27) - 𝕏 Timeline Reactions\r
+      (01:00:23) - Mike Wior, co-founder and CEO of Allen Control Systems (ACS), discusses the company's development of
+      Bullfrog, an autonomous robotic weapon station designed to counter small, fast-moving drones by combining AI,
+      computer vision, and machine learning to achieve both speed and accuracy. He highlights Bullfrog's 100% success
+      rate in neutralizing 13 Army-operated drones during a November field test, emphasizing its capability to address
+      the evolving drone threat landscape. Wior also notes ACS's rapid growth, with the team expanding to approximately
+      250 employees and securing a $200 million Series B funding round to scale manufacturing and deployment efforts.\r
 
-      (01:28:50) - Matthew Prince, co-founder and CEO of Cloudflare, discusses the company's recent acquisition of Void
-      Zero, the creators of Vite, a popular developer platform. He highlights the synergy between Vite and Cloudflare's
-      infrastructure, emphasizing the potential to enhance support for internet agents and improve developer
-      experiences. Prince also addresses the challenges developers face with CPU bottlenecks and outlines Cloudflare's
-      strategies to optimize performance and efficiency in the evolving digital landscape.\r
+      (01:10:18) - 𝕏 Timeline Reactions\r
 
-      (02:04:41) - Vinod Khosla, founder and managing director of Khosla Ventures, discusses the significance of auto
-      formalization in enhancing AI reliability by converting human language into machine-checkable formats, thereby
-      reducing issues like hallucinations. He highlights Pramana's role in this field, particularly in formalizing
-      complex domains such as tax law to ensure precision and compliance. Khosla emphasizes that while large AI labs
-      continue to expand, there remains substantial opportunity for ventures addressing specific challenges through auto
-      formalization.\r
+      (01:14:14) - Ariel Cohen, co-founder and CEO of Navan, has a background in product management and leadership roles
+      at companies like Jive Software and Hewlett-Packard. He discusses Navan's significant growth, highlighting a 50%
+      increase in usage and a 40% rise in revenue, attributing this success to the essential need for face-to-face
+      business interactions. Cohen also emphasizes the company's strategic use of AI to enhance user experience,
+      streamline operations, and drive efficiency in business travel management.\r
 
-      (02:15:41) - Ranjan Rajagopalan, founder of Pramaana Labs, discusses the company's mission to enhance AI accuracy
-      in critical fields like tax, legal, healthcare, and governance by focusing on formal verification to prevent
-      catastrophic errors. He explains their approach of converting complex regulations into formal languages, enabling
-      AI systems to provide provably correct answers with mathematical proofs, thereby increasing trust and reliability
-      in AI applications. Rajagopalan also highlights the importance of integrating formal verification with large
-      language models to ensure AI outputs are verifiable and dependable in high-stakes domains.\r
+      (01:37:06) - Jeff Tatarchuk, co-founder and Chief Growth Officer of TensorWave, discusses the company's exclusive
+      focus on building AI infrastructure with AMD GPUs, stemming from their prior collaboration with AMD during the
+      Xilinx acquisition. He highlights the initial supply constraints of Nvidia chips in 2022-2023, which led to
+      exploring AMD's offerings, and emphasizes the importance of developing a robust ecosystem to support AMD's
+      hardware, addressing software gaps and reducing dependency on a single vendor. Tatarchuk also notes that while
+      CUDA's ecosystem presents challenges, efforts are underway to create a heterogeneous stack that allows seamless
+      switching between different GPU platforms.\r
 
-      (02:28:49) - Markie Wagner is the founder and CEO of Poetic, an AI startup backed by OpenAI, Kleiner Perkins, and
-      Founders Fund, focusing on automating complex business processes with high accuracy. In the conversation, she
-      discusses the challenges of capturing undocumented, intricate rules within large organizations and emphasizes the
-      necessity of AI systems that can learn and execute these processes with near-perfect precision. She also
-      highlights the importance of forward-deployed engineers who not only possess technical expertise but can also
-      drive organizational change to effectively implement AI solutions.\r
+      (01:47:30) - Matt Joseph, co-founder and CTO of Minerva, an AI platform for consumer marketing, discusses how
+      their technology helps brands unify first-party data from various systems, creating a comprehensive consumer
+      profile to optimize sales and marketing strategies. He highlights their expansive dataset covering 270 million
+      Americans, enabling performance marketers to better understand their consumer base and tailor marketing efforts
+      accordingly. Joseph also shares insights into their collaboration with the NBA, where Minerva powers consumer
+      analytics platforms to assist teams in identifying and targeting specific audience segments for ticket sales and
+      other marketing initiatives.\r
 
-      (02:45:33) - Bret Taylor, an American computer scientist and entrepreneur, co-created Google Maps, served as
-      Facebook's CTO, chaired Twitter's board, and co-CEOed Salesforce before founding Sierra, an AI startup
-      specializing in autonomous customer service agents. Taylor discusses Sierra's recent achievement of FedRAMP High
-      certification, enabling federal agencies to utilize their AI solutions, and emphasizes the potential of AI to
-      enhance government services like Medicare and passport processing by improving efficiency and accessibility. He
-      also highlights the importance of multilingual support and the role of AI in transforming customer service
-      interactions within the public sector.\r
+      (01:57:01) - CAA Fund\r
 
-      (03:02:08) - 𝕏 Timeline Reactions
+      (02:03:37) - Ade Ajao, co-founder and Managing Partner at Base10 Partners, shared his journey from co-founding
+      Tuenti, the \"Spanish Facebook,\" to leading Base10's recent $850 million fundraise, bringing their assets under
+      management to $2.6 billion. He discussed the firm's focus on automating the real economy through applied AI,
+      emphasizing the importance of understanding client needs over industry labels. Ajao also highlighted the evolving
+      venture capital landscape, noting the rapid growth of AI applications in sectors like logistics and
+      transportation.\r
+
+      (02:14:32) - Jeremy Fraenkel, CEO and co-founder of Fundamental, discusses his company's development of a
+      foundation model for tabular data, aiming to enhance enterprise decision-making by pre-training on billions of
+      tables. He highlights the model's success in accurately predicting Argentina's 2022 World Cup victory ahead of
+      betting markets and shares its current predictions for the 2026 World Cup, favoring Spain over France and
+      identifying Argentina as a strong runner-up. Additionally, Fraenkel mentions that Fundamental recently raised $275
+      million from investors including Oak, Valor Battery Ventures, Salesforce, and notable angels like Alvin Srinivas.
 
 
       TBPN is made possible by:
@@ -139,7 +137,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     title: Google I/O Reactions, Large IPOs Incoming, Figma's AI Assistant | Dylan Field, Brian Chesky, Feross Aboukhadijeh,
