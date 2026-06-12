@@ -1,15 +1,30 @@
 source: xiaojun
-refreshed_at: 2026-06-12T04:38:24.661Z
+refreshed_at: 2026-06-12T18:42:59.468Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 6
-done: 0
+total_candidates: 7
+done: 1
 pending: 0
 needs_transcript: 4
 transcribing: 1
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6a2be5da43a22a695582ad20
+    title: 145. 口述SpaceX开发史：和前高管洪力德聊，马斯克用人观、最大IPO、太空与AI、人类文明扩张前奏？
+    duration: 10886
+    published: Fri, 12 Jun 2026 11:18:46 GMT
+    published_sort: "20260612"
+    first_seen_at: 2026-06-12T18:42:59.468Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a2be5da43a22a695582ad20?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a2be5da43a22a695582ad20/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lua5jan_xOpZ99VwXmLshdTC-gSp.m4a
+    image: https://image.xyzcdn.net/FjmBmepMunuJ-yvOAro0IYtqOIKM.png
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-12T18:48:04.762Z
+    transcript_job_id: 3b433a8d6b8b40b4a09d0d67d1b1d231,15407e8837c24454ad7eaea04ee2f068,904571d4274b4454ad968a63ed88bf68,c9b671c52ea84948b851b498e5702e22,2b0a04228e8142f7af15e52ade64752d,7fb0674ad5114cd29465bfa7be41a8b8,1576b340d48e4bdab8890109655d340c,e9a6204b168e410f83a756e06dd82e84,31fb001b27254c3aafbd266d3b3f0c1e,d34aedb6fb844f5c96c2b1bc3102c8bd,c9a9f6aa96de418f9c846f8bd3df1a45,76538adf863c4babb85d3b46684c7e32,3c88e88cfaf8433ba772c5998227c090
+    transcript_completed_at: 2026-06-12T18:57:10.963Z
   - id: 6a170f747460cabdeb56dabb
     title: 143. 对何小鹏的第二次访谈：更大赌注、人形机器人Iron诞生、那场意外、技术剧变下CEO、GX和缝合怪
     duration: 5301

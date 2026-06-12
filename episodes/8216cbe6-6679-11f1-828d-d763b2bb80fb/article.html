@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why the AI Business Model Is Cracking and How Crypto Could Help Fix It — Tommy Shaughnessy</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: #fafafa;
+    color: #1a1a1a;
+    line-height: 1.75;
+    font-size: 17px;
+    padding: 0;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  header {
+    text-align: center;
+    padding: 60px 0 40px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  header .meta span { display: block; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 48px 0 16px;
+    color: #111;
+    letter-spacing: -0.005em;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 12px;
+    color: #222;
+  }
+  p { margin-bottom: 16px; }
+
+  .overview-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0 40px;
+  }
+  @media (max-width: 600px) {
+    .overview-cards { grid-template-columns: 1fr; }
+    header h1 { font-size: 24px; }
+    .container { padding: 20px 16px; }
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+
+  .card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .card-yellow { background: #fffbe6; border-left: 4px solid #f08c00; }
+  .card-green { background: #f4fce3; border-left: 4px solid #2f9e44; }
+  .card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+
+  blockquote {
+    border-left: 4px solid #1971c2;
+    background: #f5f9ff;
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-style: italic;
+    border-radius: 0 6px 6px 0;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  blockquote .attribution {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #666;
+  }
+
+  .gloss {
+    background: #fff9db;
+    border-left: 4px solid #f08c00;
+    padding: 12px 16px;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 15px;
+    color: #6b5900;
+  }
+  .gloss strong { color: #8b7300; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+  }
+  @media (max-width: 500px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
+  .stat-box {
+    text-align: center;
+    padding: 20px 12px;
+    border-radius: 8px;
+    border: 2px solid;
+  }
+  .stat-box .number {
+    font-size: 32px;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 4px;
+    line-height: 1.1;
+  }
+  .stat-box .label {
+    font-size: 12px;
+    color: #555;
+    display: block;
+    line-height: 1.4;
+  }
+  .stat-red { border-color: #ffa8a8; background: #fff5f5; }
+  .stat-red .number { color: #e03131; }
+  .stat-green { border-color: #b2f2bb; background: #f4fce3; }
+  .stat-green .number { color: #2f9e44; }
+  .stat-orange { border-color: #ffd8a8; background: #fff4e6; }
+  .stat-orange .number { color: #e8590c; }
+
+  .quotes-section {
+    margin: 48px 0 32px;
+  }
+  .quote-block {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.65;
+    border-left: 4px solid;
+  }
+  .quote-block .context {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    opacity: 0.65;
+  }
+
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+    line-height: 1.6;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Why the AI Business Model Is Cracking<br>and How Crypto Could Help Fix It</h1>
+  <div class="meta">
+    <span><strong>Tommy Shaughnessy</strong> · Founding Partner, Delphi Ventures · Co-founder, Delphi Digital</span>
+    <span>Unchained Podcast with Laura Shin · June 2026 · 32 min</span>
+  </div>
+</header>
+
+<h2>Why This Matters</h2>
+
+<p>The AI industry is racing toward a series of mega-IPOs — SpaceX, followed by OpenAI and Anthropic. The narrative has been "up and to the right" for years. But Tommy Shaughnessy, founding partner at Delphi Ventures, sees a crack in the foundation that most investors are missing.</p>
+
+<p>His tweet "The Most Basic Way AI Could Blow Up" went viral with 2 million views. Then Citadel Securities published a report called "Tokenomics" reaching the same conclusion. The thesis is startlingly simple: AI subscriptions are massively subsidized, and when businesses discover the real economics, they start looking elsewhere.</p>
+
+<div class="overview-cards">
+  <div class="card card-red">
+    <strong>40× Subsidy Gap</strong>
+    ChatGPT and Anthropic subscriptions cost $200/month but deliver $8,000 worth of API compute. The gap is hidden — until businesses switch billing models.
+  </div>
+  <div class="card card-yellow">
+    <strong>Enterprise Wall</strong>
+    Uber and Microsoft have already cut AI spending. Across corporate America, the memo is going out: you can't token max anymore.
+  </div>
+  <div class="card card-green">
+    <strong>Open Source Escape</strong>
+    OpenRouter, Venice, and Together AI offer 80-90% of frontier quality at 1-10% of the cost. Switching models is now one keystroke away.
+  </div>
+  <div class="card card-blue">
+    <strong>Chinese Wildcard</strong>
+    DeepSeek, GLM, and Kimi are all open source today. They may go closed. If they do and their models aren't better, it paradoxically helps OpenAI and Anthropic.
+  </div>
+  <div class="card card-purple">
+    <strong>Price War</strong>
+    OpenAI is slashing prices. One reason is enterprise leakage. The other, Shaughnessy argues, is to damage Anthropic's growth ahead of its likely IPO.
+  </div>
+  <div class="card card-orange">
+    <strong>Crypto as Fix</strong>
+    Token-based capital formation, censorship-resistant access, decentralized data infrastructure — crypto's open-source ethos addresses each crack in the AI business model.
+  </div>
+</div>
+
+<h2>The 40× Subsidy Gap</h2>
+
+<p>The thesis began with an observation from inside Delphi Ventures. An associate named Rawson, working heavily on AI analysis, kept hitting the API spend wall at Anthropic. This puzzled Shaughnessy because subscriptions feel limitless — hard to hit a cap. But API billing is different.</p>
+
+<blockquote>
+  "The subscriptions are subsidized by about forty X versus what you get at the API. So two hundred dollars a month gets you about eight grand with API spend."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>This is the hidden economics of the AI boom. Consumer subscriptions are priced to acquire users and demonstrate adoption — revenue metrics that look great for fundraising. But the real cost of delivering that intelligence, when measured at API rates, is 40 times higher. Every subscriber using the product heavily represents a massive implicit subsidy.</p>
+
+<p>The problem emerges when businesses scale up. A startup or enterprise team that starts on a $200/month ChatGPT subscription — getting what feels like unlimited access — eventually needs the API for production use. When they transition, the bill doesn't go up by 20% or 50%. It jumps by 40 times. The reaction is predictable: sticker shock, budget freezes, and a search for cheaper alternatives.</p>
+
+<div class="stat-grid">
+  <div class="stat-box stat-red">
+    <span class="number">40×</span>
+    <span class="label">Subsidy multiple — subscription price vs. API equivalent</span>
+  </div>
+  <div class="stat-box stat-green">
+    <span class="number">$8K</span>
+    <span class="label">Monthly API cost for subscription-level usage</span>
+  </div>
+  <div class="stat-box stat-orange">
+    <span class="number">1%</span>
+    <span class="label">Cost of open source inference relative to frontier API</span>
+  </div>
+</div>
+
+<h2>Enterprises Are Hitting the Wall</h2>
+
+<p>The corporate AI spending pullback is already underway — and it's visible. Shaughnessy points to concrete examples:</p>
+
+<blockquote>
+  "Uber cut their spending, Microsoft cut their spending, a lot of companies are realizing that, hey, this is just too expensive."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>These aren't minor adjustments. They're major technology companies — organizations that can afford almost anything if the ROI is there — concluding that the price doesn't justify the usage. If Uber and Microsoft are pulling back, smaller companies with thinner margins are facing even harder decisions.</p>
+
+<p>The internal corporate conversation is shifting from "use AI as much as you want" to something more constrained. As Shaughnessy puts it: "I think these enterprises are starting to tell their employees you can't token max anymore."</p>
+
+<div class="gloss">
+  <strong>作者概括:</strong> The phrase "can't token max anymore" captures a real cultural shift. For two years, the AI industry pushed a narrative of abundance — unlimited intelligence, just add subscription. Now the bill is coming due, and internal budgets are snapping back. This isn't a temporary pullback; it's the market discovering the true cost of frontier AI at scale.
+</div>
+
+<h2>The Open Source Escape Route</h2>
+
+<p>When enterprises hit the API spend wall, they don't stop using AI. They look for cheaper alternatives — and the open source inference market has moved fast to meet them.</p>
+
+<blockquote>
+  "You can go to Based, OpenRouter, Venice, NewsAPI, Cordele, and get your same intelligence for one tenth to one one hundredth the cost. You're not getting frontier intelligence, you're getting something eighty to ninety percent as good, but one percent the cost."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>Several dynamics make this shift particularly dangerous for frontier labs:</p>
+
+<p><strong>Switching is trivial.</strong> Tools like Nous Research's Hermes Agent let users toggle between OpenAI, Anthropic, OpenRouter, and Venice with a single keystroke. There's no migration cost, no retraining period, no lock-in.</p>
+
+<p><strong>Privacy is no longer a monopoly.</strong> Frontier labs have sold enterprise plans on data privacy guarantees. But OpenRouter offers private models, and Venice runs models in trusted execution environments (TEEs) with end-to-end encryption. The "you need us for privacy" argument is crumbling.</p>
+
+<p><strong>OpenRouter just raised $50 million.</strong> Venice is "off the charts" in usage. Together AI and Fireworks are showing massive growth. The open source inference layer is well-capitalized and scaling fast.</p>
+
+<h2>The Flywheel Under Threat</h2>
+
+<p>The AI industry's growth model depends on a flywheel that keeps spinning: revenue funds GPU training runs, better models attract more users, more users generate more revenue. Each link depends on the previous one holding.</p>
+
+<blockquote>
+  "Everything's been priced to perfection recently and it's been up and to the right, but I think these enterprises are starting to tell their employees you can't token max anymore. And I think that that could really negatively impact the current flywheel."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>Shaughnessy walks through the sequence: if people churn off to cheaper alternatives, revenue slows. If revenue slows, these companies' metrics and ability to raise capital slows. When they return to the debt market — which is "already pretty exhausted at this point" — a slower growth story makes fundraising harder. Less funding means fewer GPUs. Fewer GPUs means the next generation of models doesn't advance as quickly.</p>
+
+<div class="gloss">
+  <strong>作者概括:</strong> Tommy is not bearish on AGI long-term. He explicitly says "I'm very bullish" on getting AGI, robots, and massive data centers. His concern is about a timing mismatch — the next 12-24 months may not sustain the growth rates that current valuations require. The public markets are about to see the real numbers, and they may not match the story.
+</div>
+
+<h2>IPO Dynamics: Low Float, High Stakes</h2>
+
+<p>SpaceX is going public. OpenAI and Anthropic aren't far behind. The structure of these IPOs creates a particular vulnerability.</p>
+
+<p>On the surface, the IPOs should do well out of the gate. Floats are low — sub-10% in some cases, compared to historical norms of 10-20%. Passive capital from index funds provides a guaranteed buyer base. Retail investors are eager to own "AGI stocks" — something they can tell their friends about.</p>
+
+<p>But Shaughnessy sees a problem after the initial pop. Public companies must disclose everything: payback periods, margins, growth rates, segment-level financials. These companies have historically attracted investment based on "stories and incredible technology with limited to no financials." When the numbers are public, scrutiny intensifies.</p>
+
+<p>"I'd be a little bit more wary as time goes on," he says. If the enterprise spending thesis is correct, those public disclosures may show slowing revenue growth at exactly the moment investors are expecting hypergrowth.</p>
+
+<h2>The Chinese Open Source Wildcard</h2>
+
+<p>China's AI labs — DeepSeek, Kimi, MiniMax, GLM — have all pursued an open source strategy. The logic is sound: if you don't have frontier-level intelligence, release a close, free substitute that impacts your competitors' margins and funding.</p>
+
+<p>But Shaughnessy sees signs this may change. Alibaba open-sourced a model and the executive in charge was "fired the next day." GLM reportedly kept certain versions private before open-sourcing them. The pressure to capture value from expensive training runs is mounting.</p>
+
+<blockquote>
+  "I think the Chinese models may go closed source. And I don't think that people are expecting that."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>The reason is straightforward: these companies are spending heavily on training but getting nothing back. They don't get revenue (models run on inference providers like Venice and OpenRouter). They don't get the data flywheel (usage doesn't feed back to improve the model). If they continue "spending obscene amounts of money" with no value flow, something has to give.</p>
+
+<p>The irony, as Shaughnessy points out, is that if China goes closed source but their models remain behind Anthropic and OpenAI, it accidentally helps US labs: "if everything's closed, you're just going to use us." The open source competition that's been pressuring prices would disappear, and frontier labs could "charge whatever the hell they want because there's no alternative."</p>
+
+<h2>The Price War: OpenAI vs Anthropic</h2>
+
+<p>The Wall Street Journal recently reported that OpenAI is considering drastic price cuts. Shaughnessy sees two reasons — one defensive, one offensive.</p>
+
+<blockquote>
+  "OpenAI is lowering prices directly because of what we're seeing on enterprises spending too much money. I think that just simplest answer is usually right. I think that there is a lot of enterprise shifting, and if we're seeing it publicly, it means they're seeing it privately way more than we are."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>The first reason is straightforward: they're losing enterprise customers to cheaper alternatives and need to respond. But the second reason is more strategic:</p>
+
+<blockquote>
+  "I think if Anthropic is probably going to IPO first, I'd say. So you want to lower prices and eat into their growth and margins as much as you can before they go public. You want to make their numbers look as as bad as you can."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>This transforms the price war from a routine competitive dynamic into something more consequential. OpenAI isn't just competing for customers — it's trying to damage Anthropic's IPO window. For a company about to face public market scrutiny, a quarter or two of slowed growth at the wrong moment could significantly change the valuation narrative.</p>
+
+<h2>Big Brother Fearmongering vs. Real Safety</h2>
+
+<p>Beyond pricing, there's a user-facing dimension to the AI competition that's creating its own fractures. Models are increasingly blocking user queries — sometimes for reasonable safety concerns, but often for what users perceive as paternalistic overreach. A viral example: someone asking Claude about mitochondria being "the powerhouse of the cell" had their query flagged as potentially unsafe.</p>
+
+<blockquote>
+  "I view it as big brother fearmongering and I think it's super annoying. The idea that we're letting some AI lab dictate what we're able to ask and why is a really slippery slope."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>Shaughnessy draws a direct analogy to political censorship: "do you want to be in China and you're not allowed to ask about Tiananmen Square? Like no." The point isn't to equate AI safety features with authoritarian censorship, but to highlight a shared principle — that centralized control over what can be asked is dangerous regardless of who holds the reins.</p>
+
+<p>He acknowledges the legitimate side of the argument: "if we give this to people and they ask how to build a crazy computer virus that shuts down the entire world without being noticed and it could do it, like that actually is a concern." The question is whether blocking individual queries is the right mechanism, or whether open source scrutiny provides better safety guarantees.</p>
+
+<h2>Open Source as the Ultimate Safety Solution</h2>
+
+<p>Shaughnessy's answer is the accelerationist one: open source everything, and let the global community do the security work.</p>
+
+<blockquote>
+  "Open source AI is the ultimate solution to the safety issues that everybody talks about."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>His analogy is Linux versus Windows: "open sourcing and accelerating and giving everybody this technology at scale to bulletproof it and test it and audit it back and forth and battle test it is the same reason why Linux is the most secure operating system and beats Windows all the time."</p>
+
+<p>The alternative — trusting a small group to decide what's safe — doesn't scale, no matter how capable the team: "I just don't view it as we should trust 10 people in a room, as godlike as they can be, and I'm sure they're incredible people, but it doesn't matter."</p>
+
+<p>This perspective has commercial implications too. When Claude blocks an innocuous question, users switch to Venice — a platform explicitly built to not block queries. Censorship, in this market, is a competitive disadvantage. Open source models + privacy-preserving inference infrastructure (TEEs, end-to-end encryption) provide a market-based solution to the safety debate.</p>
+
+<h2>Crypto + AI: Where the Overlap Gets Real</h2>
+
+<p>Laura Shin frames the entire conversation as a "tragedy of the commons" — everyone wants AGI, but no one wants to pay frontier prices or share their data. Crypto, with its toolkit for decentralized coordination, capital formation, and censorship resistance, seems designed to address exactly these fractures.</p>
+
+<p>Shaughnessy identifies four areas where the overlap is most promising:</p>
+
+<p><strong>1. Capital Formation.</strong> An ICO for an open-source AI company could crowdfund model development that the community collectively owns. "It'd be very easy to do an IPO or sorry an ICO for a major open source AI company and build an incredible model." The model could be built centralized — what matters is that we all own it and share in its success.</p>
+
+<p><strong>2. Privacy and Censorship Resistance.</strong> Venice, built by Eric Voorhees, provides uncensored open-source model access at scale with strong privacy guarantees. "Claude blocking people's requests. That's exactly what Venice is built for." Models run in TEEs with end-to-end encryption — no one sees your queries, no one blocks them.</p>
+
+<p><strong>3. Data / Deep-in.</strong> Grass uses 3 million user nodes worldwide to scrape real, diverse data for AI labs. It's a decentralized alternative to centralized data collection — and Shaughnessy's fund, Delphi Ventures, is an investor. "It's a key deep-in use case that just sort of makes sense."</p>
+
+<p><strong>4. App / Harness Layer.</strong> Nous Research's Hermes Agent, with 150,000 GitHub stars and thousands of contributors, already sees 3-4× the usage of OpenClaw on OpenRouter. It's not built by a centralized lab — it's an open-source harness sustained by a global community. Shaughnessy uses it as his daily driver on both Telegram and desktop.</p>
+
+<blockquote>
+  "Once you tap into the open source global community, it puts projects on a flywheel and a velocity that's just really hard to catch."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<div class="gloss">
+  <strong>作者概括:</strong> One area Shaughnessy is notably skeptical about is decentralized training. Google's DiLoCo mechanism and projects like Prime Intellect and BitTensor subnet 2 have attempted distributed training, but "it's just too cost intensive and it's just too hard." Even as a crypto investor, he's "happy to seed at this point" — meaning he's written it off. The real action is in the areas above, not in trying to replace GPU clusters with p2p networks.
+</div>
+
+<h2>A Very Different World</h2>
+
+<p>Shaughnessy closes with a reminder of how fast the landscape has changed:</p>
+
+<blockquote>
+  "It's a very different world than what you and I saw 12 to 18 or 24 months ago, right? Where it was just like these AI reply bots with tokens. That is completely dead and the only ones that will be able to survive are real infra projects."
+  <span class="attribution">— Tommy Shaughnessy</span>
+</blockquote>
+
+<p>The AI-crypto intersection has matured beyond speculative tokens into actual infrastructure — inference routing, decentralized data pipelines, privacy-preserving model access, and community-owned development. Whether these can meaningfully compete with the frontier labs' war chests is an open question. But the cracks in the centralized AI business model are real, and they're creating space for alternatives that didn't exist two years ago.</p>
+
+<div class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div class="quote-block" style="background:#f5f9ff; border-color:#1971c2;">
+    "The subscriptions are subsidized by about forty X versus what you get at the API."
+    <span class="context">— On the economic mismatch at the heart of the AI business model</span>
+  </div>
+
+  <div class="quote-block" style="background:#f4fce3; border-color:#2f9e44;">
+    "Get your same intelligence for one tenth to one one hundredth the cost. You're not getting frontier intelligence, you're getting something eighty to ninety percent as good, but one percent the cost."
+    <span class="context">— On why open source inference is winning enterprise customers</span>
+  </div>
+
+  <div class="quote-block" style="background:#fff5f5; border-color:#e03131;">
+    "I view it as big brother fearmongering and I think it's super annoying."
+    <span class="context">— On AI labs dictating what users are allowed to ask</span>
+  </div>
+
+  <div class="quote-block" style="background:#f8f0fc; border-color:#862e9c;">
+    "Open source AI is the ultimate solution to the safety issues that everybody talks about."
+    <span class="context">— The accelerationist case for open vs. closed AI</span>
+  </div>
+
+  <div class="quote-block" style="background:#fffbe6; border-color:#f08c00;">
+    "Once you tap into the open source global community, it puts projects on a flywheel and a velocity that's just really hard to catch."
+    <span class="context">— On Nous Hermes agent beating centralized products in real usage</span>
+  </div>
+
+  <div class="quote-block" style="background:#fff4e6; border-color:#e8590c;">
+    "Everything's been priced to perfection recently and it's been up and to the right."
+    <span class="context">— Warning that AI valuations may not survive a revenue growth slowdown</span>
+  </div>
+</div>
+
+<footer>
+  <p>Episode: <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3811437742.mp3">Unchained Podcast — Why the AI Business Model Is Cracking and How Crypto Could Help Fix It</a></p>
+  <p>Host: Laura Shin · Guest: Tommy Shaughnessy · June 2026</p>
+  <p style="margin-top:8px;font-size:12px;">All quotes verified against the podcast transcript. Paraphrases marked as 作者概括.</p>
+</footer>
+
+</div>
+</body>
+</html>
