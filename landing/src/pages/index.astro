@@ -17,7 +17,7 @@ const latest = [...episodes]
   .filter(e => e.status === 'generated')
   .sort((a, b) => (b.generated_sort ?? 0) - (a.generated_sort ?? 0)
     || (b.published ?? '').localeCompare(a.published ?? ''))
-  .slice(0, 6)
+  .slice(0, 12)
 
 // Group generated episodes by category (in priority order)
 const generatedByCategory = CATEGORIES.map(cat => ({
