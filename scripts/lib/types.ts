@@ -81,6 +81,7 @@ export type PlanEntryStatus =
 
 export interface PlanEntry {
   id: string
+  guid?: string
   title: string
   duration: number
   published?: string

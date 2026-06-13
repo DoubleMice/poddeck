@@ -1,98 +1,82 @@
 source: xiaojun
-refreshed_at: 2026-06-12T18:42:59.468Z
+refreshed_at: 2026-06-13T01:24:30.475Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 7
-done: 1
-pending: 0
-needs_transcript: 4
-transcribing: 1
+total_candidates: 6
+done: 0
+pending: 1
+needs_transcript: 5
+transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 6a2be5da43a22a695582ad20
-    title: 145. 口述SpaceX开发史：和前高管洪力德聊，马斯克用人观、最大IPO、太空与AI、人类文明扩张前奏？
-    duration: 10886
-    published: Fri, 12 Jun 2026 11:18:46 GMT
-    published_sort: "20260612"
-    first_seen_at: 2026-06-12T18:42:59.468Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a2be5da43a22a695582ad20?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a2be5da43a22a695582ad20/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lua5jan_xOpZ99VwXmLshdTC-gSp.m4a
-    image: https://image.xyzcdn.net/FjmBmepMunuJ-yvOAro0IYtqOIKM.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-12T18:48:04.762Z
-    transcript_job_id: 3b433a8d6b8b40b4a09d0d67d1b1d231,15407e8837c24454ad7eaea04ee2f068,904571d4274b4454ad968a63ed88bf68,c9b671c52ea84948b851b498e5702e22,2b0a04228e8142f7af15e52ade64752d,7fb0674ad5114cd29465bfa7be41a8b8,1576b340d48e4bdab8890109655d340c,e9a6204b168e410f83a756e06dd82e84,31fb001b27254c3aafbd266d3b3f0c1e,d34aedb6fb844f5c96c2b1bc3102c8bd,c9a9f6aa96de418f9c846f8bd3df1a45,76538adf863c4babb85d3b46684c7e32,3c88e88cfaf8433ba772c5998227c090
-    transcript_completed_at: 2026-06-12T18:57:10.963Z
   - id: 6a170f747460cabdeb56dabb
+    guid: 6a170f747460cabdeb56dabb
     title: 143. 对何小鹏的第二次访谈：更大赌注、人形机器人Iron诞生、那场意外、技术剧变下CEO、GX和缝合怪
     duration: 5301
     published: Thu, 28 May 2026 00:00:00 GMT
     published_sort: "20260528"
-    first_seen_at: 2026-05-28T07:00:34.632Z
+    first_seen_at: 2026-06-13T01:23:32.783Z
     url: https://www.xiaoyuzhoufm.com/episode/6a170f747460cabdeb56dabb?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a170f747460cabdeb56dabb/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ljeKstsAfrj-oVTm2bpL92S4nwoc.m4a
     image: https://image.xyzcdn.net/Fqknalt9nkexZUaPA0fQU22akthp.png
-    status: failed
+    status: pending
     priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 0a4501e1ad1a4f5dab8df67bdab0fc8d,6f824c1ff3eb45b5acfcfe309464f0e3,74e4451f28bf44a5bf2bbabf83da1bf0,712452afc15348e691a9b39caea26bcf,85a78f8653ae4f80bb5d28b8752c9e3b,974496801a0546f1b1c08091fef45ce6
-    transcript_submitted_at: 2026-05-28T20:19:57.821Z
-    transcript_completed_at: 2026-05-28T20:23:15.140Z
   - id: 6a00aa051b7bd50295dfe41d
+    guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去
     duration: 13835
     published: Mon, 11 May 2026 00:00:00 GMT
     published_sort: "20260511"
-    first_seen_at: 2026-05-25T07:21:24.420Z
+    first_seen_at: 2026-06-13T01:23:32.783Z
     url: https://www.xiaoyuzhoufm.com/episode/6a00aa051b7bd50295dfe41d?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a00aa051b7bd50295dfe41d/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ll7qIcIWWGFSsORHr4yY-UuqAe8h.m4a
     image: https://image.xyzcdn.net/FvRx5ZMllcVJ9w_ilmKcPkndm4Yw.png
-    status: transcribing
+    status: needs_transcript
     priority: 1
-    transcript_provider: dashscope
-    transcript_job_id: 3fc23a0a-1ec3-403c-8ed0-84fc79df7f6d
-    transcript_submitted_at: 2026-05-26T20:07:14.387Z
   - id: 698ebb0b66e2c30377510cf6
+    guid: 698ebb0b66e2c30377510cf6
     title: 132. 对星海图创始人高继扬的3小时访谈：鲶鱼、曾国藩、Waymo与Momenta的两面、一只狼与许华哲的离开
     duration: 11092
     published: Fri, 13 Feb 2026 10:00:00 GMT
     published_sort: "20260213"
-    first_seen_at: 2026-05-25T07:21:24.420Z
+    first_seen_at: 2026-06-13T01:23:32.783Z
     url: https://www.xiaoyuzhoufm.com/episode/698ebb0b66e2c30377510cf6?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/698ebb0b66e2c30377510cf6/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lplNqS9I0z2b64zp9zF2h6EkhXjr.m4a
     image: https://image.xyzcdn.net/FvTvwzGaLxUksUYW6kiyA0GUo1QH.png
     status: needs_transcript
     priority: 1
   - id: 6976bdf0ef1cf272a76fa9f3
+    guid: 6976bdf0ef1cf272a76fa9f3
     title: 131. 印奇出任阶跃星辰董事长的访谈：聪明人的诱惑、取舍、超长链路残酷淘汰赛、阶跃函数和超多元方程
     duration: 7287
     published: Mon, 26 Jan 2026 01:30:13 GMT
     published_sort: "20260126"
-    first_seen_at: 2026-05-25T07:21:24.420Z
+    first_seen_at: 2026-06-13T01:23:32.783Z
     url: https://www.xiaoyuzhoufm.com/episode/6976bdf0ef1cf272a76fa9f3?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6976bdf0ef1cf272a76fa9f3/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lo-xQNj9qSh16zHeUQI6pQ3jOkjq.m4a
     image: https://image.xyzcdn.net/FsPsolhVA_aPd7Wr6mX6Vx9sDkPu.png
     status: needs_transcript
     priority: 1
   - id: 6970c1e0109824f9e1c60e7a
+    guid: 6970c1e0109824f9e1c60e7a
     title: 130. 张月光创业两年首次访谈：妙鸭不是AI Native产品、流程到上下文设计、One Way Door和乙女游戏
     duration: 11655
     published: Thu, 22 Jan 2026 00:00:00 GMT
     published_sort: "20260122"
-    first_seen_at: 2026-05-25T07:21:24.420Z
+    first_seen_at: 2026-06-13T01:23:32.783Z
     url: https://www.xiaoyuzhoufm.com/episode/6970c1e0109824f9e1c60e7a?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6970c1e0109824f9e1c60e7a/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/loO-1ybVpymqgCDLe0P0iLTL9ueO.m4a
     image: https://image.xyzcdn.net/FmB2G5by9qzRdcQpFMBe7Rpj56ae.png
     status: needs_transcript
     priority: 1
   - id: 695f008dc1e012a7abf0be09
+    guid: 695f008dc1e012a7abf0be09
     title: 129. 全球大模型第一股的上市访谈，和智谱CEO张鹏聊：敢问路在何方？
     duration: 8799
     published: Thu, 08 Jan 2026 01:09:14 GMT
     published_sort: "20260108"
-    first_seen_at: 2026-05-25T07:21:24.420Z
+    first_seen_at: 2026-06-13T01:23:32.783Z
     url: https://www.xiaoyuzhoufm.com/episode/695f008dc1e012a7abf0be09?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/695f008dc1e012a7abf0be09/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/liEES-JtJxuXJqZStaCtRdJmWHWb.m4a
     image: https://image.xyzcdn.net/FjQHI0ZsndDGBnv9hrYIhNT6sEdC.png

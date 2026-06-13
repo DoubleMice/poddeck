@@ -182,6 +182,8 @@ pnpm run build
 - `downloaded`：transcript 已落盘，等待继续生成 slides
 - `needs_transcript`：RSS 只有音频和封面，等待转写补全文本
 
+跨源去重：如果同一 episode（标准化标题 + 发布日期匹配）出现在多个 source 中，只保留第一次出现的条目。RSS `<guid>` 是每个 feed 专属的，同一节目不同 RSS 源的 guid 不同；时长也可能因编码差异相差几秒，因此不用 duration 做去重。
+
 `run-plan.ts` 会为每个 pending episode：
 
 - 下载 RSS transcript 到 `data/transcripts/<id>.txt`

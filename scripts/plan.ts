@@ -5,6 +5,9 @@
 // 2. Include episodes with duration >= source.min_duration (default 3600 seconds)
 // 3. Include episodes NOT already in episodes.yml (not yet generated)
 // 4. Optionally apply source.filter_keywords (word-boundary match on title)
+// 5. Cross-source dedup: if the same episode (matching normalized title + published date)
+//    appears in multiple sources, keep only the first occurrence and skip the rest.
+//    RSS <guid> is per-feed and unreliable. Duration can differ by a few seconds across platforms.
 //
 // Existing plan entries are preserved (status is not reset) so we can merge
 // new discoveries into an existing plan without losing progress.
@@ -90,7 +93,22 @@ function loadExistingPlan(sourceId: string): PlanFile | null {
   }
 }
 
-function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile | null {
+function episodeFingerprint(entry: any): string {
+  // Composite fingerprint for cross-source dedup: title normalized + published date.
+  // GUID: per-RSS-feed, not global — different platforms use different GUIDs for the same episode.
+  // Audio URL: different CDN paths for the same audio across platforms.
+  // Duration: can differ by a few seconds across platforms due to encoding/trim differences.
+  // Title + date is the most stable cross-source identity signal.
+  const title = (entry.title || '').toLowerCase()
+    .replace(/[^\w\s]/g, '')   // strip punctuation
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 60)              // first 60 chars of normalized title (handles minor wording differences)
+  const date = String(entry.published_sort || entry.upload_date || '')
+  return `${title}|${date}`
+}
+
+function planOneSource(source: Source, existingGenerated: Set<string>, seenFingerprints: Set<string>): PlanFile | null {
   const cache = loadCache(source.id)
   if (cache.length === 0) {
     log.warn(`${source.id}: empty cache, writing empty plan`)
@@ -117,6 +135,14 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
     if (dateKey && dateKey < minDate) continue
     // Skip if already generated
     if (existingGenerated.has(v.id)) continue
+    // Cross-source dedup by composite fingerprint (title + duration + date)
+    // GUID is per-RSS-feed and unreliable for cross-source matching
+    const fp = episodeFingerprint(v)
+    if (fp && seenFingerprints.has(fp)) {
+      log.raw(`  skip ${v.id} (fingerprint '${fp}' already seen in another source)`)
+      continue
+    }
+    if (fp) seenFingerprints.add(fp)
     // Keyword filter
     if (useKeywords && !keywordMatch(v.title || '', source.filter_keywords)) continue
 
@@ -136,6 +162,7 @@ function planOneSource(source: Source, existingGenerated: Set<string>): PlanFile
     else nextStatus = 'needs_transcript'
     const next: PlanEntry = {
       id: v.id,
+      guid: v.guid || undefined,
       title: v.title || '(no title)',
       duration: v.duration,
       published: v.published || '',
@@ -191,6 +218,8 @@ async function main() {
   const existingGenerated = getExistingEpisodeIds()
   log.info(`${existingGenerated.size} episodes already generated`)
 
+  const seenFingerprints = new Set<string>()
+
   const targets = onlyId
     ? sourcesFile.sources.filter(s => s.id === onlyId)
     : sourcesFile.sources
@@ -202,7 +231,7 @@ async function main() {
   const summary: { id: string; total: number; pending: number; needsTranscript: number; transcribing: number; transcribeFailed: number; downloaded: number; done: number }[] = []
 
   for (const source of targets) {
-    const plan = planOneSource(source, existingGenerated)
+    const plan = planOneSource(source, existingGenerated, seenFingerprints)
     if (!plan) continue
     const path = join(PLANS_DIR, `${source.id}.yml`)
     writeYaml(path, plan)

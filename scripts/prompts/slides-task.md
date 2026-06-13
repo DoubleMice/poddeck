@@ -1,4 +1,4 @@
-You are generating a Slidev presentation deck for ONE podcast episode.
+You are generating a Slidev presentation deck for ONE podcast episode. **Write all content in Chinese (中文)** — titles, body text, card labels, diagram annotations, meta.yml summary and core_ideas, article HTML. English is only allowed for names, technical terms, and code/URLs.
 
 ## Input
 

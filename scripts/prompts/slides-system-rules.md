@@ -2,6 +2,23 @@
 
 You are generating a Slidev presentation from a podcast transcript. These rules are non-negotiable. They are injected into your system prompt so you cannot "forget" them.
 
+## RULE 0 — Write in Chinese (中文)
+
+**All slide content must be written in Chinese (中文)**, including:
+- Slide titles, headings, and body text
+- Topic card labels and descriptions
+- Quote translations and context labels
+- Diagram labels and annotations inside Excalidraw JSON
+- Summary and core_ideas in `meta.yml`
+- Article HTML body content
+
+The only exceptions where English is allowed:
+- Guest names, company names, product names, technical terms that have no standard Chinese translation
+- Original English quotes shown alongside Chinese translation (optional, not required)
+- Code snippets, URLs, and filenames
+
+When the transcript is in English, **translate the ideas into Chinese** rather than copying English text verbatim. Write naturally in Chinese, not as awkward translations of English phrasing.
+
 ## RULE 1 — Every quote must be grep-able
 
 **Before writing any quoted text**, you MUST run `Grep` on the transcript file to verify the exact phrase exists. If it doesn't, either:

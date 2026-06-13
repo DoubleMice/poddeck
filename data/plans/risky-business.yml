@@ -1,5 +1,5 @@
 source: risky-business
-refreshed_at: 2026-06-12T18:42:59.453Z
+refreshed_at: 2026-06-13T01:24:30.467Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 3
@@ -11,6 +11,7 @@ transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: SOAPBOX105
+    guid: https://risky.biz/SOAPBOX105/
     title: "Risky Biz Soap Box: It took a decade, but allowlisting is cool again"
     duration: 1645
     published: Fri, 13 Mar 2026 10:12:14 +1100
@@ -33,6 +34,7 @@ episodes:
     status: needs_transcript
     priority: 1
   - id: soapbox104
+    guid: https://risky.biz/soapbox104/
     title: "Risky Biz Soap Box: The lethal trifecta of AI risks"
     duration: 2253
     published: Fri, 20 Feb 2026 10:33:55 +1100
@@ -58,6 +60,7 @@ episodes:
     status: needs_transcript
     priority: 1
   - id: HTWGO1
+    guid: https://risky.biz/HTWGO1/
     title: "How the World Got Owned Episode 1: The 1980s"
     duration: 3816
     published: Wed, 07 Jan 2026 07:00:00 +1100
