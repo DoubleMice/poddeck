@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-06-14T04:38:47.037Z
+refreshed_at: 2026-06-14T18:33:13.708Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 6
-done: 0
+done: 1
 pending: 1
-needs_transcript: 5
+needs_transcript: 4
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a170f747460cabdeb56dabb?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a170f747460cabdeb56dabb/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ljeKstsAfrj-oVTm2bpL92S4nwoc.m4a
     image: https://image.xyzcdn.net/Fqknalt9nkexZUaPA0fQU22akthp.png
-    status: pending
+    status: generated
     priority: 1
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
@@ -44,8 +44,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/698ebb0b66e2c30377510cf6?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/698ebb0b66e2c30377510cf6/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lplNqS9I0z2b64zp9zF2h6EkhXjr.m4a
     image: https://image.xyzcdn.net/FvTvwzGaLxUksUYW6kiyA0GUo1QH.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-14T18:35:49.669Z
+    transcript_job_id: c87dad1dbb4f4abe985b5d8c9d2d85f7,9004a18561f6451ca9dfe1df54b6d290,208b3619f429454f87af12dfa636e608,48d436befb6044e4bd5d40fafa6d2922,7852da2187d642d78ad3e9e6286ad46d,1daa1343b30b441da538671d20fef8a8,3dbfecbdef5541649b27441f6e6bda9a,5ca4f54548d14304a1ad5ec4fde5b5f0,284cdd27fb2047c985c70537dc228eaa,7c63a6144db146538857619d1086e74b,f144ff13f29946f9858712856f5c1f63,c2c7a971486d411c8daa8d9537dfd54b,c32f74eb48484fa781434e529f1ab773
+    transcript_completed_at: 2026-06-14T18:43:57.285Z
   - id: 6976bdf0ef1cf272a76fa9f3
     guid: 6976bdf0ef1cf272a76fa9f3
     title: 131. 印奇出任阶跃星辰董事长的访谈：聪明人的诱惑、取舍、超长链路残酷淘汰赛、阶跃函数和超多元方程

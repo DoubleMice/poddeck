@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-14T04:38:47.047Z
+refreshed_at: 2026-06-14T18:33:13.718Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 6
-done: 0
+done: 1
 pending: 2
-needs_transcript: 4
+needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -126,7 +126,7 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 何倩然, 张从志, and 杨璐.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 368f917742c94ec68a13a1f5be4eb9cf,f9efda9b244342b885ce14ca750ee94e,c4bd83b6d44943aab7d4d34921549173,a95afe0fdeb043c1a00db1eaf934c7e1,8cb4678b6def428d82b0f73b8738d11f
@@ -388,8 +388,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guest: 周健工.
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-14T18:43:57.384Z
+    transcript_job_id: 30cb80a668fb480b8e0e3c7304576b93,555f88c30387488c901207eb76fcb191,20b5329b1c8044808124a5e0aa45c836,6edede4924ae4613a92d0c6370638bbe,8e6297fc5c2645e992b17a71b4ff4bbe
+    transcript_completed_at: 2026-06-14T18:47:40.753Z
   - id: a3db99dd-ae7e-4934-9902-73782ecf9053
     guid: a3db99dd-ae7e-4934-9902-73782ecf9053
     title: E224｜深度拆解Clawdbot，为何它能成为2026年第一个现象级产品？

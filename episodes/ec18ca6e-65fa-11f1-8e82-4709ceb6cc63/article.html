@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Found a 4-Year Zcash Bug. Now It Won't Audit DeFi — PodDeck</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafafa;
+    padding: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+  header { text-align: center; padding: 60px 0 40px; border-bottom: 1px solid #e0e0e0; margin-bottom: 48px; }
+  header h1 { font-size: 28px; line-height: 1.35; font-weight: 700; color: #111; margin-bottom: 12px; }
+  header .meta { font-size: 14px; color: #666; }
+  header .meta span { margin: 0 8px; }
+  h2 { font-size: 22px; font-weight: 700; color: #1a1a2e; margin: 48px 0 20px; padding-top: 8px; }
+  h3 { font-size: 18px; font-weight: 600; color: #2d2d44; margin: 32px 0 14px; }
+  p { margin-bottom: 16px; color: #2d2d44; }
+  .overview { margin: 32px 0 48px; }
+  .overview h2 { margin-bottom: 24px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  .card { padding: 16px 18px; border-radius: 8px; font-size: 15px; line-height: 1.6; }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f59f00; }
+  .card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .card-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: #f8f9fa;
+    border-left: 4px solid #1971c2;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: #495057;
+  }
+  blockquote .attr { display: block; margin-top: 8px; font-size: 13px; font-style: normal; color: #868e96; }
+  .quotes-section { margin: 48px 0 32px; }
+  .quotes-section .quote-card {
+    padding: 16px 20px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    font-style: italic;
+    line-height: 1.65;
+  }
+  .quotes-section .quote-card .attr { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #868e96; }
+  footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #e0e0e0; font-size: 13px; color: #999; text-align: center; }
+  footer a { color: #1971c2; text-decoration: none; }
+  .note { font-size: 14px; color: #868e96; font-style: italic; margin: 8px 0 16px; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  @media (max-width: 600px) { .split { grid-template-columns: 1fr; } }
+  .split .col { padding: 16px; border-radius: 8px; font-size: 15px; line-height: 1.6; }
+  .highlight-box { padding: 16px 20px; margin: 16px 0; border-radius: 8px; font-size: 15px; line-height: 1.65; }
+  .box-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .box-yellow { background: #fff9db; border-left: 4px solid #f59f00; }
+  .box-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .box-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .box-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  strong { font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <h1>Claude Found a 4-Year Zcash Bug.<br>Now It Won't Audit DeFi</h1>
+  <div class="meta">
+    <span>Kain Warwick</span> ·
+    <span>Taylor Monahan</span> ·
+    <span>Luca Netz (Pudgy Penguins CEO)</span>
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    <span>Unchained Podcast</span> ·
+    <span>2026 年 6 月</span> ·
+    <span>1 小时 4 分钟</span>
+  </div>
+</header>
+
+<section class="overview">
+  <h2>为什么这期值得听</h2>
+  <div class="cards">
+    <div class="card card-red">
+      <strong>Fable 5 的安全"跳闸开关"</strong>
+      Anthropic 最新模型 Fable 5 对安全话题采取一刀切拒绝策略——不再是判断意图，而是直接检测话题。对 DeFi 安全从业者是灾难。
+    </div>
+    <div class="card card-yellow">
+      <strong>100 倍补贴的真相</strong>
+      Kain 用实验证明：$200/月的 Max 订阅可以烧掉价值 $20,000 的 API 额度。AI 订阅的经济模型不可持续，补贴悬崖即将到来。
+    </div>
+    <div class="card card-blue">
+      <strong>朝鲜黑客盯上了你的 API Key</strong>
+      朝鲜威胁行为者已经在系统性窃取开发者的 AI API 密钥——当前沿模型仅限少数企业时，API Key 就是通往超级武器的钥匙。
+    </div>
+    <div class="card card-green">
+      <strong>Fable 5 的推理能力令人恐惧</strong>
+      在处理由上百份文档组成的混乱规划问题时，Fable 5 展现了接近高级工程师水平的推理能力——Opus 4.8 和 Codex 5.5 都无法完成。
+    </div>
+  </div>
+</section>
+
+<h2>1. Fable 5 的安全范式转变</h2>
+
+<p>Anthropic 发布了备受期待的 Fable 5 模型——但随之而来的是一套前所未有的安全限制。与之前的模型不同，Fable 5 不再尝试判断用户的意图（"你是想做坏事吗？"），而是直接检测对话是否触及安全话题——一旦触发，立即"跳闸"。</p>
+
+<p>安全研究员 Taylor Monahan 在节目中分享了她的发现。她长期使用 Claude 进行事件响应和安全调查——追踪威胁行为者、分析链上数据、连接碎片化的线索。Opus 虽然也有安全防护，但可以通过重构问题来绕过：告诉模型"我是白帽"、"这是我的代码"、"协议已经被黑客攻击了，我在调查"。只要让模型相信你的意图是好的，它就会配合。</p>
+
+<blockquote>
+  "with Fable, it literally like the second it's anything in the security realm, it just immediately downgrades. Like immediately."
+  <span class="attr">—— Taylor Monahan</span>
+</blockquote>
+
+<p>Fable 5 的做法完全不同。Taylor 描述它为"跳闸开关"——不是防护（safeguards），而是紧急切断（trip switches）。只要话题触及安全，模型立刻拒绝，不管你的真实意图是什么。</p>
+
+<blockquote>
+  "They're like trip switches or something, like it detects a certain thing and it just goes I'm out of here."
+  <span class="attr">—— Taylor Monahan</span>
+</blockquote>
+
+<div class="highlight-box box-yellow">
+  <strong>作者概括</strong>：这种转变的根源在于 Anthropic 对意图检测的绝望——意图检测太容易被越狱了。他们选择宁可错杀、不可放过。这是对越狱难度的投降，代价是合法的安全工作也被挡在门外。
+</div>
+
+<h2>2. 模型会记住你是谁</h2>
+
+<p>更令人担忧的是，Fable 5 似乎会"记住"用户。Taylor 发现，因为她长期使用 Claude 进行安全研究，模型已经对她产生了"怀疑"——甚至在第一个提示之前就开始拒绝。她必须使用"全新的上下文"才能绕过——但这对于每天处理安全事件的专业人士来说完全不切实际。</p>
+
+<p>同样的情况正在发生在其他领域：如果 Claude 知道用户是一个生物学家，它会在生命科学相关话题上拒绝合作。这不是意图检测，而是基于用户画像的预先筛查。</p>
+
+<h2>3. 安全困境：白帽被锁门外</h2>
+
+<p>这造成了一个令人不安的不对称局面。当 Mythos（Fable）的发布消息传出时，DeFi 安全社区的预期是：白帽终于可以抢先审计自己的合约——用最强大的模型保护自己，赶在黑客前面。但现实恰恰相反。</p>
+
+<blockquote>
+  "we're kind of back in the exact same place that we were a month ago when Mythos was announced — you don't get access to it to protect yourself, but probably some bad guys have access to it to wreck you."
+  <span class="attr">—— Kain Warwick</span>
+</blockquote>
+
+<p>Kain 指出，已经有安全研究者开发出了复杂的越狱系统——用多个智能体协同攻击，将问题分解为无害的子问题，然后重组答案。而这些技术白帽无法合法使用，黑帽却可以毫无顾忌地尝试。</p>
+
+<h2>4. 朝鲜黑客的新目标：你的 AI API Key</h2>
+
+<p>这引出了节目中一个更为紧迫的安全威胁。Taylor 和 Kain 揭示：朝鲜威胁行为者已经调整了他们的攻击策略，在过去六个月里专门窃取开发者的 AI API 密钥。</p>
+
+<blockquote>
+  "they've actually been deliberately exfiltrating any API AI things like keys and stuff. They've been doing that for like over six months."
+  <span class="attr">—— Kain Warwick</span>
+</blockquote>
+
+<p>这在以前不是一个严重的问题——毕竟所有人都能访问同样的模型，偷 API Key 最多烧掉你的额度。但现在，Fable 5 等前沿模型仅通过 Glasswing 等有限项目提供——而 API 密钥可能成为绕过这些限制的后门。Web2 大型企业里成千上万的员工都有登录权限——其中必然有工程师会被攻破机器。</p>
+
+<h2>5. 前沿模型的安全拐点</h2>
+
+<p>Kain 提出了一个"拐点悖论"：当模型仅限少数人访问时，攻击者可能比防御者更早获得访问权。一旦有足够多的人有访问权限——"there's too many people with access to it and therefore it's more likely the threat actors get access to it than the people that need to defend it"——你就应该撕掉创可贴，让所有人同时获得防御能力。</p>
+
+<p>但 AI 实验室似乎不理解这个逻辑。Kain 指出，实验室的安全姿态"非常加密化"——"we're just gonna hack everyone and be safe and it's gonna be fantastic"——这种心态源于他们所处的独特文化环境。</p>
+
+<h2>6. Kain 的补贴实验：$200 买了 $20,000 的价值</h2>
+
+<p>节目的高潮之一是 Kain 分享了他的个人实验。受团队成员的启发——这位工程师每月在 API 上消费 $12,000，产出相当于 20 个工程师——Kain 决定测试订阅计划的实际限制。</p>
+
+<p>他开设了一个 $200/月的 Max 订阅账号，设计了一个高负载工作流：用 500-600 个智能体并行分解整个代码库。在 4 小时内，他消耗了约 2 亿 token——按照 API 计价，这相当于 $5,000。而且这只是一周的限额——一个月下来可能烧掉 $20,000。</p>
+
+<div class="split">
+  <div class="col" style="background:#ebfbee; border:2px solid #b2f2bb;">
+    <div style="font-size:13px;color:#666;">支付价格</div>
+    <div style="font-size:36px;font-weight:700;color:#2f9e44;margin:8px 0;">$200</div>
+    <div style="font-size:12px;color:#999;">每月订阅费</div>
+  </div>
+  <div class="col" style="background:#fff5f5; border:2px solid #ffc9c9;">
+    <div style="font-size:13px;color:#666;">实际消耗</div>
+    <div style="font-size:36px;font-weight:700;color:#e03131;margin:8px 0;">$20,000</div>
+    <div style="font-size:12px;color:#999;">月均 API 等价消费</div>
+  </div>
+</div>
+
+<blockquote>
+  "it's subsidized to a level, it's a hundred x subsidized. It's crazy."
+  <span class="attr">—— Kain Warwick</span>
+</blockquote>
+
+<p>最令人震惊的是：他从未触发任何限制。$200 似乎是一个无底洞。</p>
+
+<h2>7. 补贴悬崖：Fable 转为纯 API</h2>
+
+<p>Anthropic 已经宣布，从 6 月 22 日起，Fable 5 将仅通过 API 提供——这是第一个不享受订阅补贴的前沿模型。这个决定背后的逻辑很清晰：100 倍的补贴不可持续。但其后果远不只是"多花点钱"。</p>
+
+<p>Kain 的分析：有几百万用户每月支付 $200 购买 Max 订阅。如果他们无法访问前沿模型，他们会立刻寻找替代方案。但这些人已经被补贴惯了——当他们第一次用 Fable 20 分钟就花掉 $200 时，愤怒是必然的。你不可能把这些 $200/月的用户转化为 $10,000/月的 API 客户——那些收入从来就不是"被放弃的"，它们是被补贴出来的。</p>
+
+<h2>8. 定价心理学：不只是钱的问题</h2>
+
+<p>Taylor Monahan 给出了一个更深层的观察：从订阅制切换到计量制，不只是多付钱——是完全改变你使用 AI 的方式。</p>
+
+<div class="split">
+  <div class="col" style="background:#ebfbee;">
+    <strong style="color:#2f9e44;">订阅制 → 能做什么？</strong>
+    <p style="margin:8px 0 0;font-size:14px;">固定成本 → 无成本焦虑 → 大胆尝试 → "无用的探索"正是创新之源。即使不最大化使用，心理模型就是"随意用"。</p>
+  </div>
+  <div class="col" style="background:#fff5f5;">
+    <strong style="color:#e03131;">计量制 → 值不值得？</strong>
+    <p style="margin:8px 0 0;font-size:14px;">每次使用都在花钱 → 自我审查 → "我真需要做这个吗？" → 减少实验、倾向确定性。</p>
+  </div>
+</div>
+
+<blockquote>
+  "second guessing myself all the time, right? Do I really need to do this?"
+  <span class="attr">—— Taylor Monahan</span>
+</blockquote>
+
+<p>Taylor 坦言自己是一个"技术上失业"的人——她愿意为订阅花固定金额，因为那些产出对她和她的社区有价值，尽管不能直接变现。但如果在每次使用时都要计算成本——"I'll just grab a pen and paper. Figure this out myself"——很多创新就不会发生。</p>
+
+<h2>9. Fable 5 的推理能力突破</h2>
+
+<p>在安全投诉之外，Kain 也分享了 Fable 5 令人震撼的一面。他给了 Fable 一个极其混乱的规划任务：两个月内由智能体生成的上百份文档——包含过时假设、被推翻的方案、相互矛盾的设计决策。Opus 4.8 和 Codex 5.5 都无法处理——它们会被过时的文档带偏，陷入细节无法自拔。</p>
+
+<p>Fable 5 的表现完全不同。它读完了全部文档，识别出哪些假设已经被推翻、哪些文档基于过时的 commit、哪些设计决策已被替代——然后给出了清晰的架构建议，包括正确的判断"应该重构而不是 hack"。</p>
+
+<blockquote>
+  "I was just like reading what it was writing I was like reading what like a a good senior engineer who had like really good context would say like and it felt almost human-like it was really kind of a bit scary."
+  <span class="attr">—— Kain Warwick</span>
+</blockquote>
+
+<p>这个突破来自 Fable 5 在"层次切换"能力上的飞跃——从细粒度的实现层面到宏观的策略层面自由切换，而不会被红鲱鱼（red herrings）分散注意力。这是以前的模型完全做不到的。</p>
+
+<h2>10. AI 实验室为什么这么奇怪</h2>
+
+<p>节目的后半段，Kain 提出了一个有趣的框架来解释 AI 实验室为什么做出"不太正常"的决策——从荒谬的产品命名到不切实际的安全姿态。</p>
+
+<div class="highlight-box box-purple">
+  <strong>文化堆栈（自下而上）</strong><br><br>
+  <strong>底层：</strong>极其聪明的自闭倾向者，以非传统方式看待世界——这是基线。<br><br>
+  <strong>中层：</strong>巨额资金倾泻而下 → 极度分心。同时发生一百万件事 → 无法专注。<br><br>
+  <strong>顶层：</strong>无限推理 + 机器里的精灵。这是连加密世界都没有的疯狂——你的机器在跟你对话，帮你做事。
+</div>
+
+<p>Kain 的类比：加密世界在 2018 年已经够疯狂了（快速移动、大量资金、再加上一群不太实用的人）。AI 实验室在此基础上再加了一层——你的电脑不只是一台电脑，它里面有精灵。在那种环境下，产出古怪的安全姿态几乎是必然的。</p>
+
+<h2>11. 企业的 AI 策略</h2>
+
+<p>Luca Netz（Pudgy Penguins CEO）分享了他们的 AI 实践：Pudgy 每月花费约 $50,000 在 AI 上，由"LomeliBot"监控——这是一个公司级 AI 中枢，知道组织的一切，每日生成报告，可以在超预算时自动切断使用。</p>
+
+<p>Kain 补充了一个发人深省的预测：当补贴结束时，一直在 API 路径上的企业（如他的 Infinex 团队）将处于优势——他们已经开发出共享工作流、共享资源的效率系统。而在订阅路径上大手大脚浪费 token 的团队将面临巨大的文化冲击。更重要的是，无法为员工提供前沿模型访问权限的公司将面临人才流失——Kain 半开玩笑地说这会成为"deal breaker"。</p>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div class="quote-card" style="background:#e7f5ff; border-left:4px solid #1971c2;">
+    "with Fable, it literally like the second it's anything in the security realm, it just immediately downgrades. Like immediately."
+    <span class="attr">—— Taylor Monahan，描述 Fable 5 的"跳闸开关"机制</span>
+  </div>
+
+  <div class="quote-card" style="background:#ebfbee; border-left:4px solid #2f9e44;">
+    "They're like trip switches or something, like it detects a certain thing and it just goes I'm out of here."
+    <span class="attr">—— Taylor，Fable 5 不是"防护"而是"紧急切断"</span>
+  </div>
+
+  <div class="quote-card" style="background:#f8f0fc; border-left:4px solid #862e9c;">
+    "it's subsidized to a level, it's a hundred x subsidized. It's crazy."
+    <span class="attr">—— Kain Warwick，通过实验证明了订阅补贴的极限</span>
+  </div>
+
+  <div class="quote-card" style="background:#fff9db; border-left:4px solid #f59f00;">
+    "I was just like reading what a good senior engineer who had like really good context would say like and it felt almost human-like it was really kind of a bit scary."
+    <span class="attr">—— Kain，Fable 5 处理规划问题的表现让他感到不安</span>
+  </div>
+
+  <div class="quote-card" style="background:#fff5f5; border-left:4px solid #e03131;">
+    "they've actually been deliberately exfiltrating any API AI things like keys and stuff. They've been doing that for like over six months."
+    <span class="attr">—— Kain，揭示朝鲜黑客的新目标</span>
+  </div>
+
+  <div class="quote-card" style="background:#ebfbee; border-left:4px solid #2f9e44;">
+    "I'll just grab a pen and paper. Figure this out myself."
+    <span class="attr">—— Taylor，从订阅切到计量后的自然反应</span>
+  </div>
+</section>
+
+<footer>
+  <p>
+    源自 <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3692012203.mp3">Unchained Podcast 本期节目</a> —
+    "What happens on chain never stays on chain."
+  </p>
+  <p style="margin-top:8px;">
+    🤖 由 PodDeck 自动生成 · 内容基于节目转录文字 · 引言均来自原始转录验证
+  </p>
+</footer>
+
+</div>
+</body>
+</html>

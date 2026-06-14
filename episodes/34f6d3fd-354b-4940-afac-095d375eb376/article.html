@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpaceX IPO 超级时刻 — TBPN 直播特别节目</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 20px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    background: white;
+    padding: 48px 40px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+  }
+  .meta span { margin-right: 16px; }
+  h2 {
+    font-size: 22px;
+    margin: 40px 0 16px;
+    color: #222;
+    padding-left: 12px;
+    border-left: 3px solid #1971c2;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 24px 0 12px;
+    color: #333;
+  }
+  p {
+    margin-bottom: 14px;
+    color: #333;
+  }
+  .topic-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 14px; }
+  .card span { font-size: 13px; opacity: 0.7; }
+  .card-blue   { background: #f0f4ff; border-color: #1971c2; }
+  .card-green  { background: #f0fff4; border-color: #2f9e44; }
+  .card-purple { background: #faf0ff; border-color: #862e9c; }
+  .card-orange { background: #fffaf0; border-color: #e8590c; }
+  .card-yellow { background: #fffff0; border-color: #f0a000; }
+  .card-red    { background: #fff0f0; border-color: #e03131; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .stat {
+    text-align: center;
+    padding: 16px 12px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+  }
+  .stat .label { font-size: 12px; color: #888; margin-bottom: 4px; }
+  .stat .value { font-size: 24px; font-weight: 700; color: #1971c2; }
+  .stat .note  { font-size: 12px; color: #aaa; margin-top: 4px; }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .info-card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .ic-blue   { background: #f0f4ff; border-color: #1971c2; }
+  .ic-green  { background: #f0fff4; border-color: #2f9e44; }
+  .ic-purple { background: #faf0ff; border-color: #862e9c; }
+  .ic-orange { background: #fffaf0; border-color: #e8590c; }
+  .ic-yellow { background: #fffff0; border-color: #f0a000; }
+  .ic-red    { background: #fff0f0; border-color: #e03131; }
+
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #1971c2;
+    background: #f8faff;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #444;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #888;
+  }
+
+  .quotes-section { margin: 32px 0; }
+  .quotes-section .q {
+    padding: 14px 18px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+  .q .src { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #888; }
+  .q-blue   { background: #f0f4ff; border-color: #1971c2; }
+  .q-green  { background: #f0fff4; border-color: #2f9e44; }
+  .q-purple { background: #faf0ff; border-color: #862e9c; }
+  .q-yellow { background: #fffff0; border-color: #f0a000; }
+  .q-orange { background: #fffaf0; border-color: #e8590c; }
+  .q-red    { background: #fff0f0; border-color: #e03131; }
+
+  .gloss {
+    font-size: 14px;
+    color: #888;
+    padding: 8px 14px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+  .gloss::before { content: "📝 作者概括: "; font-weight: 600; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+
+  @media (max-width: 600px) {
+    article { padding: 24px 20px; }
+    h1 { font-size: 22px; }
+    .info-grid { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<h1>SpaceX IPO 超级时刻</h1>
+<div class="meta">
+  <span>📡 TBPN 直播特别节目</span>
+  <span>📅 2026 年 6 月 12 日</span>
+  <span>⏱️ 时长 1h45m</span>
+</div>
+
+<div class="topic-cards">
+  <div class="card card-blue">
+    <strong>IPO 首日实况</strong>
+    <span>$135 定价 → 开盘 $150 → 收盘 $167，24% 首日涨幅，市值 $2.28T，史上最大 IPO</span>
+  </div>
+  <div class="card card-green">
+    <strong>Shotwell 的掌舵故事</strong>
+    <span>从第 7 号员工到亿万富翁，22 年打造史上最伟大的私营航天公司</span>
+  </div>
+  <div class="card card-purple">
+    <strong>残余能力战略</strong>
+    <span>造火箭 → 产能过剩 → 星链 → AI 算力，每次"超前建设"解锁新商业帝国</span>
+  </div>
+  <div class="card card-orange">
+    <strong>2004 国会听证</strong>
+    <span>32 岁的 Elon 在参议院宣称"人类航天处于黑暗时代"，22 年后他用史上最大 IPO 作答</span>
+  </div>
+  <div class="card card-yellow">
+    <strong>估值：疯狂还是合理？</strong>
+    <span>95 倍营收、"价格/宇宙比"——地面估值逻辑在 Elon 的世界里全面失效</span>
+  </div>
+  <div class="card card-red">
+    <strong>Founders Fund 传奇</strong>
+    <span>$2000 万 → $800 亿+，可能是风险投资史上最好的单笔投资</span>
+  </div>
+</div>
+
+<h2>IPO 首日：数字讲述的故事</h2>
+
+<div class="stat-grid">
+  <div class="stat">
+    <div class="label">发行价</div>
+    <div class="value">$135</div>
+    <div class="note">银行定价</div>
+  </div>
+  <div class="stat">
+    <div class="label">首日开盘</div>
+    <div class="value">~$150</div>
+    <div class="note">11% 涨幅</div>
+  </div>
+  <div class="stat">
+    <div class="label">首日收盘</div>
+    <div class="value">$167</div>
+    <div class="note">24% 涨幅</div>
+  </div>
+  <div class="stat">
+    <div class="label">IPO 市值</div>
+    <div class="value">$2.28T</div>
+    <div class="note">史上最大</div>
+  </div>
+</div>
+
+<p>2026 年 6 月 12 日，SpaceX 在纳斯达克挂牌。IPO 发行价 $135，开盘约 $150，收盘 $167，首日涨幅约 24%。TBPN 主持人们认为这是一个"健康"的表现——正如 Bill Gurley 所倡导的，对于这种体量的 IPO，10% 到 30% 的涨幅意味着一切按计划进行，既不是疯狂的暴涨，也不是让人失望的破发。</p>
+
+<p>有趣的是，在敲钟的同一个早晨，SpaceX 还发射了一枚 Falcon 9 火箭，将一批 Starlink 卫星送入轨道。正如 Gwen Shotwell 在纳斯达克的演讲中所说："哪家公司会在上市当天做这种事？SpaceX 会。"</p>
+
+<p>IPO 至少超额认购三倍。散户投资者能拿到的份额极少——有人通过私人银行申购 $100 万只拿到 $5 万，还有"一股奇观"选手在持仓中看到自己孤单的 1 股。IPO 首日已有 2 倍杠杆 ETF 面世，用主持人的话说，"就像给猴子一支 AK-47"。</p>
+
+<h2>Gwen Shotwell：被低估的操盘手</h2>
+
+<p>如果说 Elon Musk 是 SpaceX 的梦想家和首席产品官，那么 Gwen Shotwell 就是把梦想变成可执行计划、将疯狂想法翻译成 NASA 能听懂的语言的那个人。</p>
+
+<p>Shotwell 的职业生涯始于 Chrysler，随后在 Aerospace Corporation 工作了十年，从事军用航天研发和项目管理。1998 年她加入 Microcosm Inc——一家位于 El Segundo 的小型火箭公司，负责业务发展。2002 年，她成为 SpaceX 的第 7 号员工，担任业务发展副总裁。2008 年——同年公司赢得了关键的 $16 亿 NASA 货运合同——她被提升为总裁兼首席运营官。</p>
+
+<div class="info-grid">
+  <div class="info-card ic-blue">
+    <strong>华尔街日报评价</strong><br>
+    <span style="font-size:13px;opacity:0.7">"她是外交官，被视为 SpaceX 的稳定之手，在 Musk 的争议行为中为公司赢得信任。"</span>
+  </div>
+  <div class="info-card ic-green">
+    <strong>她形容 Musk</strong><br>
+    <span style="font-size:13px;opacity:0.7">"我喜欢他本人胜过他的 Twitter 形象。很多时候他们感觉像是两个完全不同的人。"</span>
+  </div>
+  <div class="info-card ic-purple">
+    <strong>发射日仪式</strong><br>
+    <span style="font-size:13px;opacity:0.7">每次发射日，她会写两张"Scotland"便签放进鞋子里——第一次成功入轨时她人在苏格兰。</span>
+  </div>
+  <div class="info-card ic-orange">
+    <strong>月球愿景</strong><br>
+    <span style="font-size:13px;opacity:0.7">如果十年内月球上没有 SpaceX 的定居点和制造工厂，她会感到失望。</span>
+  </div>
+</div>
+
+<p>IPO 后，Shotwell 持有的约 1,260 万股使她身价超过 $20 亿。她在 2025 年的薪酬为 $8600 万，主要以股票期权的形式支付。在纳斯达克演讲中，她自豪地宣布 22,000 名员工中超过一半在 IPO 中追加购买了股票，总计近 $10 亿。</p>
+
+<h2>"我简直是个白痴"：Shotwell 的抉择时刻</h2>
+
+<p>2002 年，当 Shotwell 犹豫要不要加入这个只有 6 个人的小火箭创业公司时，她纠结了数周。当时的她是一名兼职单亲妈妈，习惯于大公司的稳定和成熟组织。SpaceX 看起来不过是一个"靠互联网赚了钱的人现在想做火箭"的疯狂想法——在那个私营航天公司从未成功过的行业里。</p>
+
+<blockquote>
+"我开车行驶在洛杉矶高速公路上，突然想通了。我简直是个白痴。谁在乎我试了这份工作然后要么我失败、要么公司失败？那一刻我意识到，<strong>尝试本身才是最重要的。</strong>去尝试那件冒险的事。"
+<span class="attr">— Gwen Shotwell</span>
+</blockquote>
+
+<p>这个决定改变了航天史。22 年后，她是这个星球上最成功的航天公司之一的总裁，在纳斯达克敲钟时向世界宣告："今天我们再次制造历史。我们本身就有一部制造历史的历史。"</p>
+
+<h2>残余能力：火箭公司最强大的秘密武器</h2>
+
+<p>Shotwell 推广了一个后来被视为 SpaceX 核心战略的概念——<strong>残余能力（Residual Capability）</strong>。它的逻辑简单却极为有力：先造出超过当前市场需求的产能，然后让过剩的产能催生全新的业务。</p>
+
+<p>SpaceX 造出了比市场所需的更多的发射能力。因为每次 Falcon 9 发射都有空余空间，而且火箭的可复用性大幅降低了成本，他们得以部署庞大的 Starlink 卫星星座——从发射公司摇身一变成了全球最大的卫星运营商。星链本身又有望成为地球上利润率最高的电信业务之一，Morgan Stanley 估计其运营利润率可能超过 75%。</p>
+
+<p class="gloss">残余能力战略本质上是一种"供给创造需求"的思维模式：不是先找到需求再建产能，而是先建产能，新的需求自然会找上门。这一逻辑贯穿了 SpaceX 从火箭到星链、再到 AI 算力的每一次跨越。</p>
+
+<p>2026 年并购 xAI 后，这一模式再次升级。Shotwell 在纳斯达克说："通过并购 xAI，我们作为一个集团现在拥有全球最大的连贯千兆瓦级计算集群，这将帮助我们寻求真理、理解宇宙。"</p>
+
+<h2>2004 年：32 岁的 Elon 走进参议院</h2>
+
+<p>2004 年，美国参议院召开了一场听证会，讨论一个今天听起来很荒谬的问题：没有航天飞机，美国还能进入太空吗？航天飞机已停飞，14 名宇航员在两次灾难中丧生，听证室里弥漫着焦虑。参议员们担心美国可能不得不依赖俄罗斯的火箭。</p>
+
+<p>第一组证人是 NASA 团队和退休将领，他们捍卫航天飞机计划。第二组是行业代表：Lockheed Martin 的 VP、ATK 的 VP、Aerospace Corp 的总监——以及一个 32 岁的年轻人，他的公司才成立两年，还没有发射过任何东西。</p>
+
+<p>这个年轻人就是 Elon Musk。他来听证会不是因为关心重型运载能力——他是来抗议 NASA 刚刚在未经公开竞标的情况下把 $2.5 亿合同给了竞争对手。参议员们不断把他拉回主题："Elon，这次听证会不是关于你的合同。请留在重型运载能力的问题上。"</p>
+
+<p>但他还是把想说的话放进了书面记录。</p>
+
+<blockquote>
+"过去几十年，是人类航天的<strong>黑暗时代</strong>。"
+<span class="attr">— Elon Musk，2004 年参议院听证会</span>
+</blockquote>
+
+<p>他引用了经济学家约瑟夫·熊彼特的概念——创造性破坏。航天业 40 年没有一个成功的新进入者，而计算、互联网、洲际飞行——每一个行业都被新进入者和开放竞争彻底改造。他说，政府只需要做一个客户，而不是竞争者。恢复市场竞争这股"强迫性力量"，航天业同样会发生巨变。</p>
+
+<p>他甚至在严肃的国会听证会上展示了自己的幽默感。他指出 Vandenberg 空军基地的每次发射，法律都要求研究对当地海豹种群的影响——每次飞行花费 $10,000，而海豹数量一年增长了 13%。"海豹过得很好。让我发射。"他还调侃发射活动"对海豹起到了催情剂的作用"。人们笑了——那是给"聪明的局外人"的笑声。</p>
+
+<h2>二十二年的答卷</h2>
+
+<p>现在可以给 2004 年那个 32 岁年轻人说的话打分了。2020 年，SpaceX 的 Crew Dragon 从美国本土将两名宇航员送往国际空间站，终结了长达九年的空白——在此期间，美国为每个座位向俄罗斯支付高达 $9000 万。2025 年，Falcon 9 一年发射了 65 次，SpaceX 承担了全球超过一半的轨道载荷。2026 年 6 月 12 日，公司以 $2.28 万亿的估值在纳斯达克完成史上最大 IPO。</p>
+
+<p>《华尔街日报》Jimmy Soni 写道："困扰 2004 年那场听证会的恐惧——对莫斯科的依赖——不是由航天飞机终结的，而是由 Musk 的公司。那个参议员们视为麻烦的聪明的局外人，其论点现在可以打分了——22 年过去了，记录已经在那里。"</p>
+
+<h2>95 倍营收：如何理解这个估值</h2>
+
+<p>$1.77 万亿的目标估值除以最近 12 个月的营收——结果是 95 倍。这个数字让英国《金融时报》专栏作家 Stuart Kirk 笑到红酒从鼻子里喷出来。</p>
+
+<blockquote>
+"我不知道任何人怎么能算出目前的估值——连疯狂乐观的假设都无法让我接近这个股价。也许是我梦想得不够大。太空比我们这些地球投资者习惯分析的领域要大得多。"
+<span class="attr">— Stuart Kirk，《金融时报》</span>
+</blockquote>
+
+<p>他讽刺高盛的推荐：高盛简单地预测 2030 年营收增长 25 倍，就轻松证明了估值的合理性。IPO 至少超额认购 3 倍——SpaceX 本来可以融两倍甚至四倍的钱。</p>
+
+<p>Morgan Stanley 看到一条路径让 SpaceX 产生 $5000 亿营收，星链业务的运营利润率可能超过 75%。Morningstar 的分析更为传统：他们给出了 $7800 亿的估值——不到 SpaceX 实际市值的一半。即使在最疯狂的"登月情景"中（AI 算力在太空中的数据中​​心赢得 20% 市场份额），也只增加了 $930 亿——而且这个情景只被赋予 7% 的概率。</p>
+
+<p class="gloss">传统估值模型和实际市场定价之间的鸿沟，本质上是一个叙事溢价。市场不是在为当前的资产负债表买单，而是在为一个持续 22 年的"怀疑→打脸→再怀疑→再打脸"循环买单。只要这个循环不中断，估值就能维持。</p>
+
+<p>Jordy 说得最直白："Elon 公司可以在脱离基本面的情况下运行得比你能保持偿付能力的时间更久。"这也是 Stuart Kirk 最终承认的——"地面估值在涉及 Elon 时不适用。SpaceX 按价格/宇宙比来看很便宜。"</p>
+
+<h2>SpaceX IPO 为什么不同于历史上任何一次 IPO</h2>
+
+<p>Brad Gerstner 在 IPO 当天贴出了各科技巨头 IPO 后的历史回报：NVIDIA IPO 价 $0.04（拆股调整后），现价 $200；Apple 10 美分，现价 $292。这些公司从 IPO 到现在为长期持有者创造了惊人的回报。</p>
+
+<p>但 SpaceX 的 IPO 有一个根本性的不同：它的 IPO 市值已经进入了全球前十。当 Amazon 1997 年 IPO 时，它还没有 ExxonMobil 大。100x、1000x 的 IPO 后回报之所以可能，是因为这些公司在 IPO 时还很小。私人市场在过去二十年里进化了——价值创造的大部分已经被 IPO 前的投资者捕获。</p>
+
+<p>Jordy 提出一个发人深省的问题："两年前，你能想象跟别人说——2026 年 SpaceX 值 $2.3T，而 Meta 值 $1.4T？Meta 有 $2000 亿营收，30% 年增长。我们已经被这些大数字搞得麻木了。"</p>
+
+<h2>Founders Fund：$2000 万 → $800 亿+</h2>
+
+<p>可能是风险投资史上最好的单笔投资。Founders Fund 在 SpaceX 估值约 $2 亿时投入了 $2000 万，经过多轮稀释但仍持有可观的股份。IPO 当天，这笔投资的价值已经超过 $800 亿——400 倍以上的回报。</p>
+
+<p>这引发了关于"普通人"的有趣辩论。Founders Fund 在 IPO 当天早上发帖："普通人选择成为非凡，是可能的。" Jordy 立刻反驳："每次见到独角兽创始人，他们在多个维度上都是顶尖的。Elon 在任何时候你见到他都不会觉得'这就是个普通人'。"John 则指出："三十年前、四十年前，他确实是一个普通人——一个靠 SaaS 公司卖掉然后 IPO 的普通创始人。"</p>
+
+<p>137 Ventures 是另一个引人注目的故事。这家基金持续 15 年增持 SpaceX 股份，现在拥有超过 1% 的股份，价值约 $300 亿。创始人 Justin Fishner-Wolfson 说："这将定义我的职业生涯。"</p>
+
+<p>早期投资者的另一个关键洞察是"持有到果实成熟"。Google、Microsoft、Amazon 的早期投资者大多在 $50 亿估值阶段就退出了。Founders Fund 的 400 倍回报中，很大一部分来自没有在 IPO 时减持。</p>
+
+<h2>从不放弃：Elon 模式的 DNA</h2>
+
+<p>2008 年，SpaceX 的前三次 Falcon 1 发射全部失败。公司只剩下最后一次尝试的资金。2008 年 9 月 28 日，第四次发射成功了——他们成为了全球第一家将液体燃料火箭送入轨道的私营公司。距离破产只有一步之遥。</p>
+
+<p>TBPN 主持人们总结了 Elon 模式的核心 DNA：从不放弃。有一张著名照片——他站在残骸前，一切似乎都崩塌了，但他还在那里。偶尔也会犯些低级错误，但永远不会认输。Peter Thiel 在 chess.com 上下了 50,000 多盘棋——有人发现了他的账号，用弃兵开局击败了他。Thiel 连犯低级错误，但从不认输，一直下到被将死。</p>
+
+<p>Shotwell 在纳斯达克总结得最好："保持脊椎挺直，在怀疑者怀疑的时候继续前进——去成就历史性的事，有时是每一天，有时是一周多次。"</p>
+
+<h2>Nikita Beer：一个人的狂奔</h2>
+
+<p>Nikita Beer 的故事是 SpaceX 生态系统中最具戏剧性的个人篇章之一。他卖掉两家公司后，约两年前收到 Sean Maguire 的 DM——"我有一个疯狂的机会给你。"他回复了两个字："我加入。"</p>
+
+<p>他先是加入了 X（前 Twitter），在那里他做出了让重度用户不满但对平台健康有益的改动——封禁那些从朝鲜操纵加密货币骗局的机器人。曾有预测市场在赌他"这周会不会被炒"。但他存活了下来，交付了更多价值，然后转入 xAI，最后在 SpaceX IPO 当天站在纳斯达克见证了这一历史时刻。</p>
+
+<p>IPO 当天，Elon Musk 点赞了 TBPN 的帖子。主持人说："我们从未担心过被影子封禁。Nikita 和整个 X 团队从来没有不公平地对待我们。这是一个疯狂而混乱的平台，但我们为他们的成功感到高兴。"</p>
+
+<h2>xAI + SpaceX：千兆瓦级算力帝国</h2>
+
+<p>Shotwell 在纳斯达克的演讲中特意提到了 xAI 的并购——这不仅是 SpaceX 的 AI 战略宣言，也是残余能力逻辑的又一次完美验证：火箭 → 星链 → AI 算力。每一次过剩产能都孵化了规模更大的新业务。</p>
+
+<p>"通过并购 xAI，我们作为一个集团现在拥有全球最大的连贯千兆瓦级计算集群，这将帮助我们寻求真理、理解宇宙。"</p>
+
+<p>Morningstar 的分析师试图对这一业务线进行量化：在基准情景中（50% 概率），SpaceX 赢得 AI 基础设施市场 4% 的份额。在"登月情景"中（7% 概率），它赢得 20% 的份额。在最坏情况下（43% 概率），这一业务线价值接近于零。即使如此，仅那 7% 概率就为整体估值贡献了 $930 亿。</p>
+
+<h2>Starlink：可能是地球上最好的电信业务</h2>
+
+<p>星链是残余能力战略的典范案例，也是此次 IPO 估值中最实质性的业务支柱。它是一个全球卫星互联网系统，不受地面基础设施的地理限制。最惊人的是它的成本结构——星链卫星由 SpaceX 自己的火箭发射，边际成本极低。而传统电信公司需要铺设光缆、建设基站，在地形障碍面前成本急剧攀升。</p>
+
+<p>Morgan Stanley 估计星链的运营利润率可能超过 75%——这在地面电信业务中是不可想象的。到 2030 年，仅星链一项的营收就可能达到 $180 亿以上——而这被认为是"保守"的估计。</p>
+
+<p>Shotwell 在自己的车顶安装了 Starlink mini 终端，以便在 40 分钟的通勤路上与 Musk 通话不掉线。这不是营销话术——这是对产品本身的终极信任投票。</p>
+
+<h2>星舰与火星：下一章正在书写</h2>
+
+<p>Starship 是人类建造过的最大的火箭。Shotwell 在纳斯达克给出了最新进展：已经建造完成，已经飞过。一级已被回收并再次飞行。2026 年，她相信 Starship 将实现入轨并回收第二级。</p>
+
+<p>火星是 SpaceX 存在的终极理由——Elon 2002 年创办这家公司的初衷就是把人类送上火星。在 $2.28T 的估值中，火星殖民是最遥远的期权，但也是最激动人心的一个。Shotwell 甚至给出了十年时间表——她"会感到失望"如果十年内月球上没有 SpaceX 的定居点和制造工厂。</p>
+
+<p>被暂时搁置的"点到点"地球交通概念（纽约 → 东京 30 分钟）仍然在技术路线图上。主持人指出，审批流程可能反而比高超音速飞机更容易——因为后者已经被监管困住了几十年。</p>
+
+<h2>散户的 IPO 悲欢</h2>
+
+<p>在这场史上最大 IPO 中，散户投资者的体验令人啼笑皆非。超额认购率至少三倍意味着大多数人的申购被大幅削减。Tyler（节目主持人）只拿到 22 股。其他听众报告了更惨的经历——有人只拿到 1 股。"1 股比 0 股更糟，"主持人们打趣道，"因为你能在持仓里看到它，每天提醒你拿少了。"</p>
+
+<p>IPO 首日就推出了 2 倍杠杆 ETF——Defiance Daily 2x SpaceX ETF，通过合成工具提供 200% 的日回报。"就像给猴子一支 AK-47。"</p>
+
+<p>一位散户投资者的自嘲广为流传："我是作为一个多层 SPV 底层的投资者来期待 SpaceX IPO 的——就像一只金毛猎犬期待坐车一样。兴奋极了，完全不知道车怎么开，不确定是去公园还是去绝育。"这大概是散户参与史上最大 IPO 的完美心情写照。</p>
+
+<h2>怀疑者模式：SpaceX 的永动机</h2>
+
+<p>每一次 SpaceX 完成一个里程碑，怀疑者就换一个理由。Shotwell 在纳斯达克的演讲完美地勾勒了这个循环：</p>
+
+<div class="info-grid">
+  <div class="info-card ic-red">
+    <strong>"私营公司永远造不出能入轨的液体燃料火箭"</strong><br>
+    <span style="font-size:13px;color:#2f9e44">✅ 2008: Falcon 1 入轨</span>
+  </div>
+  <div class="info-card ic-red">
+    <strong>"但那是个小火箭，你造不出真正的火箭"</strong><br>
+    <span style="font-size:13px;color:#2f9e44">✅ 2010: Falcon 9 首飞</span>
+  </div>
+  <div class="info-card ic-red">
+    <strong>"你们永远不可能把宇航员送上空间站"</strong><br>
+    <span style="font-size:13px;color:#2f9e44">✅ 2020: Crew Dragon 载人任务</span>
+  </div>
+  <div class="info-card ic-red">
+    <strong>"Falcon 9 做不到高频复用和大规模量产"</strong><br>
+    <span style="font-size:13px;color:#2f9e44">✅ 2025: 一年 65 次发射</span>
+  </div>
+  <div class="info-card ic-red">
+    <strong>"星舰太大了，永远不可能入轨"</strong><br>
+    <span style="font-size:13px;color:#2f9e44">✅ 2026: 一级已回收复用，预计年内入轨</span>
+  </div>
+  <div class="info-card ic-red">
+    <strong>"Elon 公司的估值跟基本面完全脱节"</strong><br>
+    <span style="font-size:13px;color:#2f9e44">✅ 2026: 史上最大 IPO</span>
+  </div>
+</div>
+
+<p>Shotwell 把这个循环总结为一句简单的话："保持脊椎挺直，在怀疑者怀疑的时候，继续创造历史——有时是每一天，有时是一周多次。"</p>
+
+<h2>2026 年的航天业：一个公司的崛起如何重塑一个行业</h2>
+
+<p>2004 年，Elon 在参议院说航天业 40 年没有一个成功的新进入者。22 年后，SpaceX 发射全球超过一半的载荷。Falcon 9 一年 65 次发射——这个数字本身就是一个产业。可复用火箭从科幻变成了日常操作。美国不再为每个宇航员座位向俄罗斯支付 $9000 万。</p>
+
+<p>Elon 2004 年呼吁的"创造性破坏"确实发生了——Rocket Lab、Relativity、Blue Origin 等新进入者都在竞争。但 SpaceX 仍然是绝对的领导者。NASA 的角色也从"自己做"变成了"最大客户"，$16 亿的货运合同只是开始，这种公私合作模式现在被视为范本。</p>
+
+<p>有一个观点认为"每个社会都离一次 Falcon 9 失败只有一步之遥"——但 TBPN 主持人们不同意。发射业务已经变得如此稳健和高频，单次失败不再能撼动一家 $2.28T 的公司。</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+
+<div class="q q-blue">
+"今天，我们再次制造历史。我们本身就有一部制造历史的历史。哪家公司会在上市当天还发射火箭？SpaceX 会。"
+<span class="src">— Gwen Shotwell，SpaceX 总裁，纳斯达克 IPO 演讲</span>
+</div>
+
+<div class="q q-green">
+"我开车行驶在洛杉矶高速公路上，突然想通了。我简直是个白痴。谁在乎我试了这份工作然后要么我失败、要么公司失败？那一刻我意识到，尝试本身才是最重要的。"
+<span class="src">— Gwen Shotwell，回忆 2002 年决定加入 SpaceX</span>
+</div>
+
+<div class="q q-purple">
+"过去几十年，是人类航天的黑暗时代。"
+<span class="src">— Elon Musk，2004 年参议院听证会</span>
+</div>
+
+<div class="q q-yellow">
+"Elon 公司可以在脱离基本面的情况下运行得比你能保持偿付能力的时间更久。"
+<span class="src">— Jordy，TBPN 主持人</span>
+</div>
+
+<div class="q q-orange">
+"SpaceX 按价格/宇宙比来看很便宜。地面估值不适用于 Elon。"
+<span class="src">— Stuart Kirk，《金融时报》专栏作家</span>
+</div>
+
+<div class="q q-red">
+"通过并购 xAI，我们作为一个集团现在拥有全球最大的连贯千兆瓦级计算集群，这将帮助我们寻求真理、理解宇宙。"
+<span class="src">— Gwen Shotwell，纳斯达克 IPO 演讲</span>
+</div>
+
+</div>
+
+<h2>制造历史的公司</h2>
+
+<p>22 年前，32 岁的 Elon Musk 走进参议院，声称人类航天正处于黑暗时代。参议员们视他为麻烦的局外人——一个有委屈和半成品火箭的年轻人。人们笑了。那是给"聪明的局外人"的笑声。</p>
+
+<p>22 年后，他的公司在纳斯达克敲钟，成为史上最大 IPO——市值与 Amazon 相当，超过 Meta。Falcon 9 在同一个早晨发射了一批 Starlink 卫星入轨。22,000 名员工中超过一半在 IPO 中追加购买了公司股票。</p>
+
+<p>怀疑者还会继续怀疑。他们会说 95 倍营收不可持续，会说 AI 算力是泡沫，会说火星永远遥不可及。历史表明他们可能是对的——在某个时间点上。但历史也表明，当怀疑者说"不可能"的时候，SpaceX 的回应一直是：打钩完成。</p>
+
+<p>Gwen Shotwell 的纳斯达克演讲以一个简单的请求结尾："今天，我希望你为自己感到骄傲，庆祝一下。回收团队现在不能庆祝，但其他人可以——希望回收团队稍后也能庆祝。"</p>
+
+<p>这就是 SpaceX：在上市的同一天，在敲钟的同一天，还在发射火箭，还有人不能庆祝，因为回收工作还没完成。</p>
+
+<p>这就是制造历史的公司。</p>
+
+<footer>
+  <p>基于 TBPN 2026 年 6 月 12 日直播特别节目 · <a href="https://share.transistor.fm/s/248a287b">原始音频</a></p>
+  <p>🤖 由 Claude 生成 · PodDeck</p>
+</footer>
+
+</article>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>143. 对何小鹏的第二次访谈 — PodDeck</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafafa;
+    padding: 0;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+    min-height: 100vh;
+  }
+  header { margin-bottom: 48px; }
+  header h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  header .meta {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 24px;
+  }
+  header .meta span { margin-right: 20px; }
+  h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 48px 0 16px;
+    color: #222;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+  }
+  p { margin-bottom: 16px; }
+  strong { color: #1a1a2e; }
+
+  .overview { margin-bottom: 48px; }
+  .overview h2 { margin-top: 0; }
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 500px) {
+    .overview-grid { grid-template-columns: 1fr; }
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card.blue   { background: #eff6ff; border-color: #3b82f6; }
+  .card.purple { background: #faf5ff; border-color: #a855f7; }
+  .card.orange { background: #fff7ed; border-color: #f97316; }
+  .card.green  { background: #f0fdf4; border-color: #22c55e; }
+  .card.red    { background: #fef2f2; border-color: #ef4444; }
+  .card.yellow { background: #fefce8; border-color: #eab308; }
+  .card-label { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+
+  blockquote {
+    margin: 24px 0;
+    padding: 20px 24px;
+    background: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #334155;
+  }
+  blockquote .attribution {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-style: normal;
+    color: #94a3b8;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  @media (max-width: 500px) {
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .stat-card {
+    padding: 20px 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid;
+  }
+  .stat-card .label { font-size: 13px; opacity: 0.7; margin-bottom: 4px; }
+  .stat-card .value { font-size: 32px; font-weight: 800; margin: 8px 0; }
+  .stat-card .note  { font-size: 12px; opacity: 0.6; }
+  .stat-card.red    { background: #fef2f2; border-color: #fecaca; }
+  .stat-card.red .value    { color: #dc2626; }
+  .stat-card.orange { background: #fff7ed; border-color: #fed7aa; }
+  .stat-card.orange .value { color: #ea580c; }
+  .stat-card.green  { background: #f0fdf4; border-color: #bbf7d0; }
+  .stat-card.green .value  { color: #16a34a; }
+  .stat-card.blue   { background: #eff6ff; border-color: #bfdbfe; }
+  .stat-card.blue .value   { color: #2563eb; }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+  @media (max-width: 500px) {
+    .compare-grid { grid-template-columns: 1fr; }
+  }
+  .compare-box {
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid;
+    font-size: 15px;
+  }
+  .compare-box.red   { background: #fef2f2; border-color: #ef4444; }
+  .compare-box.green { background: #f0fdf4; border-color: #22c55e; }
+
+  .gloss {
+    background: #fefce8;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #92400e;
+    margin: 16px 0;
+  }
+  .gloss::before { content: "作者概括："; font-weight: 700; }
+
+  .quotes-section { margin: 48px 0; }
+  .quote-item {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border-left: 4px solid;
+    font-style: italic;
+  }
+  .quote-item .context {
+    font-size: 13px;
+    font-style: normal;
+    opacity: 0.6;
+    margin-top: 8px;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #94a3b8;
+    text-align: center;
+  }
+  footer a { color: #3b82f6; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>143. 对何小鹏的第二次访谈：更大赌注、人形机器人Iron诞生、那场意外、技术剧变下CEO、GX和缝合怪</h1>
+  <div class="meta">
+    <span>🎙 商业访谈录 · 张小珺</span>
+    <span>👤 何小鹏</span>
+    <span>📅 2026年5月</span>
+    <span>⏱ 1小时28分</span>
+  </div>
+</header>
+
+<section class="overview">
+  <h2>为什么这期值得听</h2>
+
+  <div class="overview-grid">
+    <div class="card blue">
+      <div class="card-label">🃏 更大的赌注</div>
+      叫停花费"小几十个亿"的旧智驾体系，押注全新的AI原生路线——一个物理世界CEO的豪赌。
+    </div>
+    <div class="card purple">
+      <div class="card-label">🤖 Iron 诞生与意外</div>
+      人形机器人从"不相信大脑"到坚定的通用人形路线，那场"是不是真人"的舆论风暴。
+    </div>
+    <div class="card orange">
+      <div class="card-label">🧩 缝合怪陷阱</div>
+      为什么"软件方法论+AI工具"做出来的只能是更复杂的缝合怪，永远到不了L5？
+    </div>
+    <div class="card green">
+      <div class="card-label">🚗 GX 旗舰出击</div>
+      融合飞行汽车冗余、机器人任务理解、汽车线控底盘——全尺寸六座大SUV再战高端。
+    </div>
+    <div class="card red">
+      <div class="card-label">📉 胜率两成</div>
+      通用人形机器人99.99%会死掉。何小鹏说自己的胜率"大概有个两成"，已是中国企业最高。
+    </div>
+    <div class="card yellow">
+      <div class="card-label">🔄 CEO的焦虑</div>
+      技术变革不止改变工具——它动摇了"公理层"：价值观、人生观、世界观都要重新审视。
+    </div>
+  </div>
+</section>
+
+<h2>物理世界的豪赌：停掉小几十个亿</h2>
+
+<p>上一次访谈中，何小鹏形容造车就像在血海里游泳。这次返场，他带了一个更惊人的故事。</p>
+
+<blockquote>
+  "物理世界的CEO不敢赌。我可能胆子比较大。我们做了一个巨大的赌注。我们把以前的那套体系就停下来了。那套体系花了小几十个亿。"
+  <span class="attribution">— 何小鹏</span>
+</blockquote>
+
+<p>2025年大约现在这个时候，何小鹏做了一个让整个公司震动的决定：把第一代XPILOT从业务到技术甚至到组织全部停下来，全面押注全新的第二代VLA路线。这个代价不只是财务上的——"小几十个亿"——更是组织和心理上的双重巨压。</p>
+
+<p>为什么选在这个时候？何小鹏说，去年三月份他意识到一个问题：所有的公司都在用"更简单的方法论和更快的效能"做自动驾驶。这是一条捷径，但走到一两年后就会发现，为了解决各种短板，你限制了自己的长板，永远做不到L4或L5。</p>
+
+<p>他把这条路称为"捷径，但不是大道"。</p>
+
+<div class="stat-grid">
+  <div class="stat-card red">
+    <div class="label">停掉的旧体系</div>
+    <div class="value">小几十亿</div>
+    <div class="note">已投入的研发成本</div>
+  </div>
+  <div class="stat-card blue">
+    <div class="label">旧体系上限</div>
+    <div class="value">一千分</div>
+    <div class="note">何小鹏的比喻</div>
+  </div>
+  <div class="stat-card green">
+    <div class="label">新体系上限</div>
+    <div class="value">百万分</div>
+    <div class="note">AI原生打开的天花板</div>
+  </div>
+</div>
+
+<h2>"缝合怪"——一个精准的批判</h2>
+
+<p>在这次访谈中，何小鹏多次使用一个词来批判传统的自动驾驶研发路径：<strong>缝合怪</strong>。这是他自己创造的术语——用来描述"用软件工程的方法论，使用AI的工具箱，做出一款更强力的软件"。</p>
+
+<p>他说这个路径的本质问题是：你还是在修一座老房子——只不过用了更多材料、更多工艺、部分用了AI的工具，但修出来的还是原来的房子，只是修得更快一点。真正的AI原生，应该用完全不同的建筑方法来设计完全不同的房子。</p>
+
+<p>在旧路径下，你上限大概在一千分，下限能做到九百分——在这个区间内表现不错。但天花板太低，永远无法做到真正的无人驾驶。而在AI原生路径下，上限可以打开到十万分到一百万分——但下限一开始可能只有一百分，比旧体系更差。</p>
+
+<div class="gloss">
+这是整期访谈中最核心的思想框架。何小鹏把自动驾驶研发的两个阶段做了清晰对比：旧世界是"用软件方法论、AI当工具"的缝合时代；新世界是"用AI驱动、Foundation Model为核心"的原生时代。对一家数万人的制造企业来说，这个转型不只是技术选型——它是从方法论到底层信念的全面重构。
+</div>
+
+<h2>数字AI与物理AI的鸿沟</h2>
+
+<p>何小鹏花了大量篇幅论证一个命题：数字世界的AI和物理世界的AI本质上是完全不同的两件事。</p>
+
+<p>在数字世界，"语言即世界"——人类语言已经被高度概括和浓缩。数据量很小，几十个TB就可以训练。CEO很容易了解它的逻辑，然后去映射、扩展和使用。核心只看长板，跑个分比比分就够了。</p>
+
+<p>但在物理世界，情况完全不同。每个人每一天看到的数据量<strong>根本无法用语言概括、描述、还原和复制</strong>。它不是用人类语言驱动的。你不仅要看长板——"上限，跑个分"——还要保住下限，还要拓宽窄板：品质、成本、材质、细节、政策法规的允许度，全部都是必须解决的问题。</p>
+
+<blockquote>
+  "在数字AI的市场里面很多模型就是跑个分比比分，我觉得在物理AI那是可笑的。它不光要比上限，跑个分，它还要比下限。"
+  <span class="attribution">— 何小鹏</span>
+</blockquote>
+
+<p>这个判断也解释了他为什么对那些"几条枪十几个人就要用AI coding去改变物理世界"的说法不以为然——"他们完全低估了物理世界改变的多样性和复合性"。就像当年移动互联网冲进汽车行业的人，以为把一个事情做到极致就够了——"No，因为你考虑的维度不对。你是一个数字的维度，你在数字维度做到极致，它的价值点可能极小。"</p>
+
+<h2>组织变革：从"用脚投票"到"砍到根上"</h2>
+
+<p>去年三季度末，何小鹏做了一个比技术决策更难的事：把整个自动驾驶中心的组织架构全改。</p>
+
+<blockquote>
+  "最大的反对声音就是有很多人用脚投票。他们不相信这个事情，他们觉得做不到，他就离开了，去做其他的事情。"
+  <span class="attribution">— 何小鹏</span>
+</blockquote>
+
+<p>他描述了三种典型反应：非AI主管觉得"不管做A还是B可能都错了"——因为对AI的认知不够强烈；AI相关主管中——有些人Yes、有些人No、但大部分处于"不确认这是不是一个好的节奏"的中间态。而何小鹏自己呢？"实际上那个时候连我都是一样的，但是这就是创业的乐趣啊。"</p>
+
+<p>他的组织变革哲学是："切记不要小刀砍大树，慢慢砍，想清楚了砍掉它。在某些上面你就敢下注，从组织到流程，到方向，全部改。大家所看到的可能都是最上层的业务层，但是内部看到的就是一直到根上面去。"</p>
+
+<h2>CEO的焦虑：连公理层都被动摇了</h2>
+
+<p>访谈中最坦诚的时刻之一，是当主持人问他"在这样一个技术剧变时代，你焦虑吗？"</p>
+
+<blockquote>
+  "当然焦虑。因为你会发现你以前的很多的逻辑论，甚至你逻辑论的底层的定义、范式，甚至到公理层，就是你的价值观、人生观、世界观，在这些东西的变化下不是那么work。"
+  <span class="attribution">— 何小鹏</span>
+</blockquote>
+
+<p>这不是业务层面的焦虑——不是销量、竞争或利润的焦虑。这是更深的、触及根基的焦虑。一个做自动驾驶做了很多年的人，越做越觉得Level 5永远不会到达——因为用软件去覆盖全球所有场景、法规、能基，是无限循环的。但当真正用AI重构这件事时，Level 5突然变得"可能存在了"。这个转变不是一个工程决策，而是一个信念重构——从"这不可能"变成"这可能"。</p>
+
+<p>何小鹏区分了三种能力级：<strong>看到问题</strong> → <strong>解决问题</strong> → <strong>构建体系以避免问题</strong>。他说大部分人在第一层——看到无数问题但根本解决不了，因为"你看到的问题是世界问题的某一个角度的某一环"。</p>
+
+<h2>AI Coding 与一号位的距离感</h2>
+
+<p>何小鹏抛出了一个反直觉的观点：他自己不用AI coding工具——尽管团队内部用得非常多。他的理由是一个关于"视野"的洞见：</p>
+
+<blockquote>
+  "我们当年在做互联网产品的时候，如果你天天用产品，你很快会到细节去。你会聚焦怎么去解决问题，反而不能让你向远方看。所以我对于科技快速变化的很多产品跟能力，我自己认为要用，但不要太深度的用。特别是做一号位。"
+  <span class="attribution">— 何小鹏</span>
+</blockquote>
+
+<p>这与许多科技CEO全身心拥抱AI tools的形象截然不同。但何小鹏的逻辑是清晰的：CEO的职责是看方向，不是修细节。AI coding应该是对初级程序员的辅助工具——但"也许两到三年后，会逼迫初级程序员都要上到高级程序员"。</p>
+
+<p>他还特别指出，对于自动驾驶这样的强AI能力，AI coding的帮助是"比较小的"——"它只是其中的一个工具，真正要把整个的算法建好、整个的体系建好。它是应用层帮大家的——如果你在内核层，比如说你想写个操作系统，它的最核心还是整个的算法，而不是在coding。"</p>
+
+<h2>机器人的三个阶段：从"缝合"到"大脑驱动"</h2>
+
+<p>小鹏的机器人业务经历了三个清晰的阶段。第一阶段（2018-2020）是独立的四足团队，和当时中国其他机器人团队一样探索。第二阶段（2020-2023）花三年半做了三个milestone——"我们用机器人的方法做机器人，用汽车的方法做机器人，还中间做了一些缝合的方式做机器人，我们都取得了不同的成功跟失败。"</p>
+
+<p>关键转折在2023年。何小鹏意识到两件事：第一，没有大脑，机器人不可能真正成功（"用同一个单调的步伐往前慢慢行走，那不是小脑——那是脊椎或者脑干"）。第二，现有的团队——对机器人非常懂、非常熟悉的团队——没有能力做出全新的下一代机器人。</p>
+
+<p>于是他做了一个极端决定：把三百人的团队只留了不到六十人，解散出去的人组成了大约十个创业团队，"像中兴拿了好多轮钱了"。然后选了一个全新的团队负责人——"他既懂点AI，又懂点汽车，又懂点工程，又懂点机器人"——但又不是任何一个领域的专家。</p>
+
+<p>这个选人的逻辑和马斯克偏好通才型人才不谋而合。但何小鹏强调，在绝大部分国家和行业，找通才是很难的；他更看重"人才的潜力"——用超级聪明的人做超级困难的事，而不是用清晰的流程和工具去锻造。</p>
+
+<h2>为什么必须是最像人的路？</h2>
+
+<p>何小鹏花了很大篇幅解释为什么小鹏选了"最像人的路"——而不是更容易的工业版机器人路线。</p>
+
+<p>他用了一个生动的例子：如果一只一米一到一米二的机器狗进入你的房间，它在床头柜那里无法原地掉头——不像金毛，尾巴会抬起，身体会适应。机器狗"百分之百会让你们两个都觉得受伤"。如果是一个一米八、全身盔甲的双足机器人，即使你是它的设计者，你也不愿意和它只隔一厘米行走——"有压迫感，你觉得它可能危险，它可能很烫，它身上可能有电，它身上可能很脏"。</p>
+
+<p>所以小鹏的Iron机器人设定了这样的参数：身高1米69到1米70，让男生女生都感到舒适；可以穿衣服，甚至有头发，但不能有自己的脸（恐怖谷效应和法律考量）。这背后是一个清醒的认知：机器人如果要最终走入人类社会，必须让人觉得亲近。</p>
+
+<p>他还有一个更远期的vision——老人："机器人对老人的影响度非常大，老人很有可能把机器人作为他唯一的依赖。我觉得极少有人会这样思考吧。"</p>
+
+<h2>Iron的那场意外舆论风暴</h2>
+
+<p>去年Iron机器人发布会后，因为做得太像人了，全网都在问："里面是不是藏了个真人？"</p>
+
+<p>何小鹏的团队想等24小时再回应——"清者自清，浊者自浊"。但他只等了几个小时就受不了了："当24个小时之后，可能这个子弹已经不知道飞到哪去了。" 晚上他打电话给团队："明天早上你们给我想个创意，我要去告诉大家这是一个真实的机器人。"</p>
+
+<p>第二天早上，他们临时加了剪开左腿的动作——因为机器人从左往右走，左腿最容易看到内部结构。但这个动作之后，"有些人相信，也有更多人反而不相信"。</p>
+
+<p>何小鹏把这次舆论风暴看作意外的收获：大量真实的用户反馈涌入——年轻人想要进家干活的机器人；中年人考虑的是老了以后机器人有什么用。"这是非常不同的视角，在以前没有经过这么大的观点爆发，它是没有这么大的data的。"</p>
+
+<h2>胜率两成：对赌注的清醒认知</h2>
+
+<div class="stat-grid">
+  <div class="stat-card red">
+    <div class="label">通用人形机器人死亡率</div>
+    <div class="value">99.99%</div>
+    <div class="note">走通用人形路线会死掉的比例</div>
+  </div>
+  <div class="stat-card orange">
+    <div class="label">小鹏的胜率</div>
+    <div class="value">20%</div>
+    <div class="note">自认为已是中国企业最高</div>
+  </div>
+  <div class="stat-card green">
+    <div class="label">差异机器人胜率</div>
+    <div class="value">较高</div>
+    <div class="note">走差异化路线的胜率比乘用车高</div>
+  </div>
+</div>
+
+<blockquote>
+  "我们大概有个两成。这已经是我看到中国企业里面，我自己认为是最高的胜率。"
+  <span class="attribution">— 何小鹏</span>
+</blockquote>
+
+<p>何小鹏对机器人创业难度的判断是冷静到残酷的："机器人的创业大概是汽车公司创业难度的20到100倍。你看我还给了一个最低20倍。"</p>
+
+<p>为什么这么难？首先，机器人还没有被定义清楚——市场在等待一个类似"iPhone 1"的产品出现，但"它又还不是完全可比的事情"。汽车你知道市场存在，客户知道需要什么——假设没有竞品，有用户需要，你相信它能卖出去。但机器人你敢说吗？</p>
+
+<p>不过何小鹏也看到了机器人独特的优势——一旦能规模化，速度会远超汽车。汽车需要道路建设、交通法规、产能爬坡。机器人不同，"有可能在某一个点，它不是面，是一个点，会有非常大的爆炸效应。" 就像 AI Coding 工具在数字AI领域的爆发——不到18个月就发生了巨大变化。</p>
+
+<h2>GX旗舰：融合三种基因的产物</h2>
+
+<p>在汽车业务上，GX全尺寸六座大SUV是小鹏再次冲击高端的关键产品。何小鹏为这款车注入了三个不同来源的能力。</p>
+
+<p><strong>飞行汽车的冗余血统</strong>：全中国第一个整车厂做了前装"萝卜太斯"——8个全安全冗余。 "电源坏了还能开，动力坏了还能开，老鼠把线束咬坏了还能开——就像飞机一样，它允许你有冗余。"</p>
+
+<p><strong>机器人的任务理解</strong>：机器人能听懂"帮我拿瓶水"这样的任务——先判断你是谁，水在哪里，喝什么水，怎么给你。这个能力正在融入汽车：未来的车不只是听指令执行操作，而是理解任务意图。</p>
+
+<p><strong>汽车的工程底座</strong>：线控底盘、EA体系、VLA自动驾驶三位一体——提高安全下限，时延更短，控制灵敏度提高"接近百分之好几十"。</p>
+
+<p>被问到是否担心重蹈G9的覆辙时，何小鹏很坦然："我不担心。那个时候的思考跟逻辑跟这个时候差别非常大。当你的体系能力越强，你越难在某一两个点上轻松地失分。" 从2022年到2026年，他认为是"巨大的质的提高"。</p>
+
+<h2>L4：大概率18-24个月</h2>
+
+<blockquote>
+  "我大概率认为，18到24个月。"
+  <span class="attribution">— 何小鹏对L4实现时间的判断</span>
+</blockquote>
+
+<p>这是何小鹏在这次访谈中给出的最具体的预测——而且他强调这是对小鹏自己的判断，不是全行业的。他同时直言："谁说今天做得到我觉得吹牛逼。"</p>
+
+<p>他分享了最新的数据验证：今年3月底发布第二代NGP第一个版本后，4月份中国汽车销量同环比都下跌了约20%，而小鹏涨了约50%-70%。"这里面有相当部分跟智能辅助驾驶相关。" 但他也清醒地指出，即使做到L4带来更多销量，也不代表长期的价值壁垒——"汽车的最终成功不是仅来自于AI里面的一个能力，或者硬件里面的一个能力"。</p>
+
+<p>在与地平线余凯的"自研vs集成"辩论中，何小鹏展现了他的战略思考。如果十年后软件价值占到汽车的50%，那一个Tier 1能帮合作伙伴实现这50%吗？他的回答是：<strong>如果是战术，不应该自研；如果是战略，应该自研</strong>。两条路都可能成功，但他倾向于认为汽车智能会"越来越集中"。</p>
+
+<h2>三十年，五家车企</h2>
+
+<blockquote>
+  "我一直说30年中国可能就五家有规模的汽车企业。不代表其他企业会倒闭，但是规模的下行会导致越来越难进入到超高强度的竞争。"
+  <span class="attribution">— 何小鹏的产业终局判断</span>
+</blockquote>
+
+<p>这个判断背后是他对汽车行业复杂度的深刻认知。他引用了"制造业的明珠"这个说法——汽车是"非常复杂的技术的、人性的、经营的大集成体系"。也正因为如此，何小鹏认为学A公司、学B公司的做法都是错误的——"以我们今天的规模来看，要分析思考，找到一条适合自己的道路是最重要的。"</p>
+
+<p>而当被问"从血海里游出来没有"时，他的回答一如既往的冷静：</p>
+
+<blockquote>
+  "我觉得都在游，我也不觉得有谁出来了现在。"
+  <span class="attribution">— 何小鹏</span>
+</blockquote>
+
+<p>不过他对机器人的竞争格局稍乐观一些——同质内卷的可能性更低，软件价值高且不受开源模型冲击，"机器人的血海就像当年的互联网竞争一样，会很快从血海到蓝海"。</p>
+
+<h2>一个CEO的自信与自知</h2>
+
+<p>访谈最后，何小鹏被问到一个轻松的问题："如果有人说小鹏的车丑，你怎么想？"</p>
+
+<p>"审美是一个主观性的逻辑。小鹏的车在越来越好看的路上。其他的信心我不够足，对丑美的信心我还是很有信心的。" 他在内部强调"颜值第一"——但在多个领域做到第一才有可能，颜值只是其中一个领域。</p>
+
+<p>当被问到过去一年有没有后悔的决策时，他回答得干脆："没有。这个世界上不需要去思考后悔的决策。犯错为什么要后悔呢？我们经常觉得说，哦，原来这个时候的一个东西是说错了，那我们在一起思考为什么现在错了——但不用后悔。"</p>
+
+<p>这大概就是一个在血海里游了十一年、刚下了"小几十个亿"的赌注、同时盯着汽车、机器人、飞行汽车三条战线的CEO，该有的心态。</p>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div class="quote-item" style="background:#eff6ff; border-color:#3b82f6;">
+    "物理世界的CEO不敢赌。我可能胆子比较大。我们做了一个巨大的赌注。我们把以前的那套体系就停下来了。那套体系花了小几十个亿。"
+    <div class="context">— 何小鹏谈停掉旧智驾体系的决策</div>
+  </div>
+
+  <div class="quote-item" style="background:#fff7ed; border-color:#f97316;">
+    "在数字AI的市场里面很多模型就是跑个分比比分，我觉得在物理AI那是可笑的。它不光要比上限，跑个分，它还要比下限。"
+    <div class="context">— 论数字AI vs 物理AI的本质差异</div>
+  </div>
+
+  <div class="quote-item" style="background:#fef2f2; border-color:#ef4444;">
+    "当然焦虑。因为你会发现你以前的很多的逻辑论，甚至你逻辑论的底层的定义、范式，甚至到公理层，你的价值观、人生观、世界观，在这些东西的变化下不是那么work。"
+    <div class="context">— 技术剧变下CEO的焦虑</div>
+  </div>
+
+  <div class="quote-item" style="background:#faf5ff; border-color:#a855f7;">
+    "越做下去你越会觉得好像Level 5永远不会到达。但是，当你真正用AI重构这个事情的时候，你觉得它可能存在了。"
+    <div class="context">— 信念重构的力量</div>
+  </div>
+
+  <div class="quote-item" style="background:#fefce8; border-color:#eab308;">
+    "我们大概有个两成。这已经是我看到中国企业里面，我自己认为是最高的胜率。"
+    <div class="context">— 通用人形机器人的胜率判断</div>
+  </div>
+
+  <div class="quote-item" style="background:#f0fdf4; border-color:#22c55e;">
+    "如果你天天用产品，你很快会到细节去。反而不能让你向远方看。所以对于科技快速变化的很多产品，我自己认为要用，但不要太深度的用。特别是做一号位。"
+    <div class="context">— CEO与AI工具的距离感</div>
+  </div>
+
+  <div class="quote-item" style="background:#eff6ff; border-color:#3b82f6;">
+    "我觉得都在游，我也不觉得有谁出来了现在。"
+    <div class="context">— 造车血海，无人上岸</div>
+  </div>
+
+  <div class="quote-item" style="background:#fff7ed; border-color:#f97316;">
+    "绝不服输。愿赌服输。你如果把这两条都能够比较好的放在一起去平衡它，意味着即使面对巨大的困难，你都要坚持。"
+    <div class="context">— 创业者的底层心态</div>
+  </div>
+</section>
+
+<footer>
+  <p>原文播客：<a href="https://www.xiaoyuzhoufm.com/episode/6a170f747460cabdeb56dabb">商业访谈录 #143 · 小宇宙</a></p>
+  <p style="margin-top:8px;">由 PodDeck 自动生成 · 2026年6月</p>
+</footer>
+
+</article>
+</body>
+</html>
