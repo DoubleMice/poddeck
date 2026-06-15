@@ -16,7 +16,7 @@ import { chromium } from 'playwright-chromium'
 import { log } from './lib/log.ts'
 import { run } from './lib/spawn.ts'
 import { readYaml } from './lib/yaml-io.ts'
-import type { EpisodeMeta } from './lib/types.ts'
+import type { PlanFile } from './lib/types.ts'
 
 interface Args {
   all: boolean
@@ -42,6 +42,7 @@ interface Offender {
 
 const ROOT = process.cwd()
 const EPISODES_DIR = resolve(ROOT, 'episodes')
+const PLANS_DIR = resolve(ROOT, 'data/plans')
 const DEFAULT_THRESHOLD = 8
 
 function parseArgs(): Args {
@@ -77,14 +78,15 @@ function parseArgs(): Args {
 }
 
 function generatedEpisodes(): string[] {
-  const ids: string[] = []
-  for (const entry of readdirSync(EPISODES_DIR)) {
-    const metaPath = join(EPISODES_DIR, entry, 'meta.yml')
-    if (!existsSync(metaPath)) continue
-    const meta = readYaml<EpisodeMeta>(metaPath)
-    if (meta.status === 'generated') ids.push(entry)
+  const ids = new Set<string>()
+  if (!existsSync(PLANS_DIR)) return []
+  for (const entry of readdirSync(PLANS_DIR).filter(file => file.endsWith('.yml'))) {
+    const plan = readYaml<PlanFile>(join(PLANS_DIR, entry))
+    for (const episode of plan.episodes) {
+      if (episode.status === 'generated') ids.add(episode.id)
+    }
   }
-  return ids.sort()
+  return [...ids].sort()
 }
 
 async function renderEpisode(id: string, outDir: string, png: boolean): Promise<string> {

@@ -1,23 +1,15 @@
-// Build pipeline:
-// 1. Build each generated episode's slidev → episodes/<id>/dist
-// 2. Build landing → landing/dist
-// 3. Assemble final poddeck/dist with:
-//    - landing dist at root
-//    - each episode dist at /episodes/<id>/
-//
-// Usage: pnpm run build
-
 import { resolve, join, basename } from 'node:path'
-import { existsSync, mkdirSync, readdirSync, statSync, cpSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, cpSync, rmSync, readdirSync } from 'node:fs'
 import { readYaml } from './lib/yaml-io.ts'
 import { run } from './lib/spawn.ts'
 import { log } from './lib/log.ts'
-import type { EpisodeMeta } from './lib/types.ts'
+import type { EpisodeMeta, PlanFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
 const EPISODES_DIR = resolve(ROOT, 'episodes')
 const LANDING_DIR = resolve(ROOT, 'landing')
 const DIST_DIR = resolve(ROOT, 'dist')
+const PLANS_DIR = resolve(ROOT, 'data/plans')
 
 function resolveEpisodeArticlePath(id: string, meta: EpisodeMeta): string | null {
   const declared = meta.article_path ? resolve(ROOT, meta.article_path) : null
@@ -29,6 +21,18 @@ function resolveEpisodeArticlePath(id: string, meta: EpisodeMeta): string | null
   return null
 }
 
+function generatedEpisodeIds(): string[] {
+  if (!existsSync(PLANS_DIR)) return []
+  const ids = new Set<string>()
+  for (const entry of readdirSync(PLANS_DIR).filter(file => file.endsWith('.yml'))) {
+    const plan = readYaml<PlanFile>(join(PLANS_DIR, entry))
+    for (const episode of plan.episodes) {
+      if (episode.status === 'generated') ids.add(episode.id)
+    }
+  }
+  return [...ids].sort()
+}
+
 async function buildEpisode(id: string, base: string): Promise<string | null> {
   const dir = join(EPISODES_DIR, id)
   const metaPath = join(dir, 'meta.yml')
@@ -37,10 +41,6 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
     return null
   }
   const meta = readYaml<EpisodeMeta>(metaPath)
-  if (meta.status !== 'generated') {
-    log.raw(`  skip ${id} (status=${meta.status})`)
-    return null
-  }
 
   log.info(`building ${id}`)
 
@@ -79,19 +79,20 @@ async function main() {
   // CI/prod:  PODDECK_BASE=/poddeck/ → https://kvenux.github.io/poddeck/
   const SITE_BASE = process.env.PODDECK_BASE || '/'
 
-  // Collect all generated episodes
+  // Collect generated episodes from plan files, not per-episode meta.
   const episodes: { id: string; base: string; articlePath: string | null }[] = []
-  for (const entry of readdirSync(EPISODES_DIR)) {
-    const metaPath = join(EPISODES_DIR, entry, 'meta.yml')
-    if (!existsSync(metaPath)) continue
-    const meta = readYaml<EpisodeMeta>(metaPath)
-    if (meta.status === 'generated') {
-      episodes.push({
-        id: entry,
-        base: `${SITE_BASE}episodes/${entry}/`,
-        articlePath: resolveEpisodeArticlePath(entry, meta),
-      })
+  for (const id of generatedEpisodeIds()) {
+    const metaPath = join(EPISODES_DIR, id, 'meta.yml')
+    if (!existsSync(metaPath)) {
+      log.warn(`  skip ${id} — no meta.yml`)
+      continue
     }
+    const meta = readYaml<EpisodeMeta>(metaPath)
+    episodes.push({
+      id,
+      base: `${SITE_BASE}episodes/${id}/`,
+      articlePath: resolveEpisodeArticlePath(id, meta),
+    })
   }
   log.info(`found ${episodes.length} generated episodes (base=${SITE_BASE})`)
 

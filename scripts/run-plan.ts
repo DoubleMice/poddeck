@@ -177,6 +177,19 @@ function hasGeneratedArtifacts(id: string): boolean {
     && existsSync(join(dir, 'article.html'))
 }
 
+function syncMetaStatus(id: string, status: PlanEntry['status']): void {
+  const metaPath = join(EPISODES_DIR, id, 'meta.yml')
+  if (!existsSync(metaPath)) return
+  try {
+    const meta = readYaml<Record<string, unknown>>(metaPath)
+    if (meta.status === status) return
+    meta.status = status
+    writeYaml(metaPath, meta)
+  } catch (error: any) {
+    log.warn(`  failed to sync meta status for ${id}: ${error.message}`)
+  }
+}
+
 function dashscopeClient(): DashScopeClient | null {
   const apiKey = process.env.DASHSCOPE_API_KEY
   if (!apiKey) return null
@@ -1014,6 +1027,7 @@ async function processEntry(
     const layoutOk = await auditGeneratedLayout(entry.id)
     entry.status = layoutOk ? 'generated' : 'audit_failed'
     savePlan(planPath, plan)
+    syncMetaStatus(entry.id, entry.status)
     log.ok(`  → status=${entry.status}`)
     stats.episodes.push({
       id: entry.id,
@@ -1045,6 +1059,7 @@ async function processEntry(
       ? 'audit_failed'
       : 'failed'
   savePlan(planPath, plan)
+  syncMetaStatus(entry.id, entry.status)
 
   const durationStr = (result.durationMs / 1000 / 60).toFixed(1) + 'min'
   const tokenStr = result.inputTokens > 0

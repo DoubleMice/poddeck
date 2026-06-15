@@ -162,7 +162,7 @@ published: <YYYY-MM from task input>
 duration: <duration from task input>
 url: <source episode URL>
 thumbnail: <RSS episode image URL, optional>
-status: generated
+status: generated        # initial generation status; orchestrator may normalize after audit
 tags: [...]                # pick from tags.yml
 summary: |
   2-3 sentence summary
