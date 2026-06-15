@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Why the AI Business Model Is Cracking and How Crypto Could Help Fix It — Tommy Shaughnessy</title>
+<title>AI 商业模式正在崩裂——加密如何修补它？ — Tommy Shaughnessy</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
     background: #fafafa;
     color: #1a1a1a;
-    line-height: 1.75;
+    line-height: 1.85;
     font-size: 17px;
     padding: 0;
   }
@@ -28,7 +28,7 @@
   header h1 {
     font-size: 28px;
     font-weight: 700;
-    line-height: 1.35;
+    line-height: 1.4;
     margin-bottom: 12px;
     letter-spacing: -0.01em;
   }
@@ -70,7 +70,7 @@
     padding: 16px;
     border-radius: 8px;
     font-size: 14px;
-    line-height: 1.55;
+    line-height: 1.6;
   }
   .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
 
@@ -89,7 +89,7 @@
     font-style: italic;
     border-radius: 0 6px 6px 0;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.75;
   }
   blockquote .attribution {
     display: block;
@@ -107,6 +107,7 @@
     border-radius: 0 6px 6px 0;
     font-size: 15px;
     color: #6b5900;
+    line-height: 1.7;
   }
   .gloss strong { color: #8b7300; }
 
@@ -152,7 +153,7 @@
     margin-bottom: 12px;
     font-style: italic;
     font-size: 15px;
-    line-height: 1.65;
+    line-height: 1.7;
     border-left: 4px solid;
   }
   .quote-block .context {
@@ -161,6 +162,20 @@
     font-size: 13px;
     font-style: normal;
     opacity: 0.65;
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  @media (max-width: 500px) { .compare-grid { grid-template-columns: 1fr; } }
+  .compare-box {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.65;
   }
 
   footer {
@@ -180,266 +195,266 @@
 <div class="container">
 
 <header>
-  <h1>Why the AI Business Model Is Cracking<br>and How Crypto Could Help Fix It</h1>
+  <h1>AI 商业模式正在崩裂<br>——加密如何修补它？</h1>
   <div class="meta">
-    <span><strong>Tommy Shaughnessy</strong> · Founding Partner, Delphi Ventures · Co-founder, Delphi Digital</span>
-    <span>Unchained Podcast with Laura Shin · June 2026 · 32 min</span>
+    <span><strong>Tommy Shaughnessy</strong> · Delphi Ventures 创始合伙人 · Delphi Digital 联合创始人</span>
+    <span>Unchained Podcast · Laura Shin 主持 · 2026 年 6 月 · 32 分钟</span>
   </div>
 </header>
 
-<h2>Why This Matters</h2>
+<h2>为什么这期值得关注</h2>
 
-<p>The AI industry is racing toward a series of mega-IPOs — SpaceX, followed by OpenAI and Anthropic. The narrative has been "up and to the right" for years. But Tommy Shaughnessy, founding partner at Delphi Ventures, sees a crack in the foundation that most investors are missing.</p>
+<p>AI 行业正奔向一系列巨型 IPO —— SpaceX、OpenAI、Anthropic 紧随其后。多年来的叙事一直是"向上向右"。但 Delphi Ventures 的创始合伙人 Tommy Shaughnessy 看到了大多数投资者忽略的地基裂缝。</p>
 
-<p>His tweet "The Most Basic Way AI Could Blow Up" went viral with 2 million views. Then Citadel Securities published a report called "Tokenomics" reaching the same conclusion. The thesis is startlingly simple: AI subscriptions are massively subsidized, and when businesses discover the real economics, they start looking elsewhere.</p>
+<p>他的一条推文"AI 可能崩盘的最基本方式"获得了 200 万次浏览并广泛传播。随后 Citadel Securities 发布了一份名为"Tokenomics"的报告，得出了相同的结论。这个论断惊人地简单：AI 订阅被大量补贴，当企业发现真实的经济账时，他们开始寻找替代方案。</p>
 
 <div class="overview-cards">
   <div class="card card-red">
-    <strong>40× Subsidy Gap</strong>
-    ChatGPT and Anthropic subscriptions cost $200/month but deliver $8,000 worth of API compute. The gap is hidden — until businesses switch billing models.
+    <strong>40× 补贴鸿沟</strong>
+    ChatGPT 和 Anthropic 订阅每月 $200，但其背后 API 算力价值 $8,000。这个鸿沟在企业切换计费模式之前是隐藏的。
   </div>
   <div class="card card-yellow">
-    <strong>Enterprise Wall</strong>
-    Uber and Microsoft have already cut AI spending. Across corporate America, the memo is going out: you can't token max anymore.
+    <strong>企业费用墙</strong>
+    Uber 和 Microsoft 已削减 AI 支出。在整个企业界，"你不能再用 Token Max 了"的备忘录正在下发。
   </div>
   <div class="card card-green">
-    <strong>Open Source Escape</strong>
-    OpenRouter, Venice, and Together AI offer 80-90% of frontier quality at 1-10% of the cost. Switching models is now one keystroke away.
+    <strong>开源替代的逃亡</strong>
+    OpenRouter、Venice、Together AI 以 1-10% 的成本提供 80-90% 的前沿质量。切换模型现在只需一键。
   </div>
   <div class="card card-blue">
-    <strong>Chinese Wildcard</strong>
-    DeepSeek, GLM, and Kimi are all open source today. They may go closed. If they do and their models aren't better, it paradoxically helps OpenAI and Anthropic.
+    <strong>中国开源变量</strong>
+    DeepSeek、GLM、Kimi 目前全开源，但可能转向闭源。若闭源且质量未超美国，反而帮到 OpenAI 和 Anthropic。
   </div>
   <div class="card card-purple">
-    <strong>Price War</strong>
-    OpenAI is slashing prices. One reason is enterprise leakage. The other, Shaughnessy argues, is to damage Anthropic's growth ahead of its likely IPO.
+    <strong>价格战打响</strong>
+    OpenAI 正在大幅降价。一个原因：企业客户在流失。另一个原因（Tommy 认为）：在 Anthropic 可能率先 IPO 之前打击其增长。
   </div>
   <div class="card card-orange">
-    <strong>Crypto as Fix</strong>
-    Token-based capital formation, censorship-resistant access, decentralized data infrastructure — crypto's open-source ethos addresses each crack in the AI business model.
+    <strong>Crypto 作为修补方案</strong>
+    基于 Token 的资本形成、抗审查访问、去中心化数据基础设施——Crypto 的开源精神恰好应对 AI 商业模式中的每一道裂痕。
   </div>
 </div>
 
-<h2>The 40× Subsidy Gap</h2>
+<h2>40 倍补贴鸿沟</h2>
 
-<p>The thesis began with an observation from inside Delphi Ventures. An associate named Rawson, working heavily on AI analysis, kept hitting the API spend wall at Anthropic. This puzzled Shaughnessy because subscriptions feel limitless — hard to hit a cap. But API billing is different.</p>
+<p>这个论断来自 Delphi Ventures 内部的一个观察。一位名叫 Rawson 的同事正在大量使用 AI 进行分析，反复撞上 Anthropic 的 API 支出上限。这让 Shaughnessy 感到困惑，因为订阅给人的感觉是无限制的——很难碰到使用上限。但 API 计费是另一回事。</p>
 
 <blockquote>
-  "The subscriptions are subsidized by about forty X versus what you get at the API. So two hundred dollars a month gets you about eight grand with API spend."
+  "订阅被补贴了大约 40 倍。$200/月的订阅，在 API 上大约值 $8,000。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>This is the hidden economics of the AI boom. Consumer subscriptions are priced to acquire users and demonstrate adoption — revenue metrics that look great for fundraising. But the real cost of delivering that intelligence, when measured at API rates, is 40 times higher. Every subscriber using the product heavily represents a massive implicit subsidy.</p>
+<p>这是 AI 繁荣背后隐藏的经济学。消费者级订阅被定价在获取用户和展示使用量的水平上——这些营收指标在融资时看起来很好。但交付同样的智能能力所需要的真实成本，按 API 单价计算，是 40 倍。每一个重度使用产品的订阅用户，都代表着一次大规模的隐性补贴。</p>
 
-<p>The problem emerges when businesses scale up. A startup or enterprise team that starts on a $200/month ChatGPT subscription — getting what feels like unlimited access — eventually needs the API for production use. When they transition, the bill doesn't go up by 20% or 50%. It jumps by 40 times. The reaction is predictable: sticker shock, budget freezes, and a search for cheaper alternatives.</p>
+<p>问题在企业规模扩大时显现。一个创业团队或企业部门从每月 $200 的 ChatGPT 订阅开始——感觉像是无限制的访问——最终需要用 API 进行生产部署。当他们迁移过去，账单不是涨 20% 或 50%，而是跳涨 40 倍。反应是可以预见的：价格休克、预算冻结，以及寻找更便宜替代方案的紧迫感。</p>
 
 <div class="stat-grid">
   <div class="stat-box stat-red">
     <span class="number">40×</span>
-    <span class="label">Subsidy multiple — subscription price vs. API equivalent</span>
+    <span class="label">补贴倍数——订阅价格 vs. API 等价成本</span>
   </div>
   <div class="stat-box stat-green">
     <span class="number">$8K</span>
-    <span class="label">Monthly API cost for subscription-level usage</span>
+    <span class="label">订阅级别用量对应的月度 API 费用</span>
   </div>
   <div class="stat-box stat-orange">
     <span class="number">1%</span>
-    <span class="label">Cost of open source inference relative to frontier API</span>
+    <span class="label">开源推理成本占前沿 API 价格的比例</span>
   </div>
 </div>
 
-<h2>Enterprises Are Hitting the Wall</h2>
+<h2>企业正在撞墙</h2>
 
-<p>The corporate AI spending pullback is already underway — and it's visible. Shaughnessy points to concrete examples:</p>
+<p>企业 AI 支出的回落已经发生——而且是可观察到的。Shaughnessy 指出了具体的例子：</p>
 
 <blockquote>
-  "Uber cut their spending, Microsoft cut their spending, a lot of companies are realizing that, hey, this is just too expensive."
+  "Uber 削减了支出，Microsoft 削减了支出，很多公司开始意识到，嘿，这太贵了。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>These aren't minor adjustments. They're major technology companies — organizations that can afford almost anything if the ROI is there — concluding that the price doesn't justify the usage. If Uber and Microsoft are pulling back, smaller companies with thinner margins are facing even harder decisions.</p>
+<p>这些不是小调整。它们是大型科技公司——那些如果 ROI 成立几乎能负担任何支出的组织——得出结论：这个价格不值得。如果 Uber 和 Microsoft 都在收缩，那么利润空间更小的中小公司面临的决定将更加艰难。</p>
 
-<p>The internal corporate conversation is shifting from "use AI as much as you want" to something more constrained. As Shaughnessy puts it: "I think these enterprises are starting to tell their employees you can't token max anymore."</p>
+<p>企业内部的对话正在从"随便用 AI"转变为受限制的说法。如同 Shaughnessy 说的："企业正在告诉员工：你不能再无限使用 Token 了。"</p>
 
 <div class="gloss">
-  <strong>作者概括:</strong> The phrase "can't token max anymore" captures a real cultural shift. For two years, the AI industry pushed a narrative of abundance — unlimited intelligence, just add subscription. Now the bill is coming due, and internal budgets are snapping back. This isn't a temporary pullback; it's the market discovering the true cost of frontier AI at scale.
+  <strong>作者概括：</strong>"不能再 Token Max"这句话捕捉到了一次真实的文化转变。两年来，AI 行业推动了一种"丰裕"叙事——无限智能、只需订阅即可。现在账单来了，内部预算正在断裂。这不是一次暂时的回撤，而是市场在发现前沿 AI 在规模下的真实成本。
 </div>
 
-<h2>The Open Source Escape Route</h2>
+<h2>开源替代的逃亡路线</h2>
 
-<p>When enterprises hit the API spend wall, they don't stop using AI. They look for cheaper alternatives — and the open source inference market has moved fast to meet them.</p>
+<p>当企业撞上 API 支出墙时，他们不会停止使用 AI，而是寻找更便宜的替代方案——开源推理市场已经快速跟进了。</p>
 
 <blockquote>
-  "You can go to Based, OpenRouter, Venice, NewsAPI, Cordele, and get your same intelligence for one tenth to one one hundredth the cost. You're not getting frontier intelligence, you're getting something eighty to ninety percent as good, but one percent the cost."
+  "你可以去 Based、OpenRouter、Venice、NewsAPI、Cordele，以 1/10 到 1/100 的成本获得同样的智能。你不是在获得前沿智能，你获得的是 80-90% 的质量，但只需 1% 的价格。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>Several dynamics make this shift particularly dangerous for frontier labs:</p>
+<p>有几个动态让这种转向对前沿实验室尤其危险：</p>
 
-<p><strong>Switching is trivial.</strong> Tools like Nous Research's Hermes Agent let users toggle between OpenAI, Anthropic, OpenRouter, and Venice with a single keystroke. There's no migration cost, no retraining period, no lock-in.</p>
+<p><strong>切换门槛为零。</strong> 像 Nous Research 的 Hermes Agent 这样的工具，让用户一键即可在 OpenAI、Anthropic、OpenRouter 和 Venice 之间切换模型。没有迁移成本，没有学习周期，没有锁定效应。</p>
 
-<p><strong>Privacy is no longer a monopoly.</strong> Frontier labs have sold enterprise plans on data privacy guarantees. But OpenRouter offers private models, and Venice runs models in trusted execution environments (TEEs) with end-to-end encryption. The "you need us for privacy" argument is crumbling.</p>
+<p><strong>隐私不再是垄断优势。</strong> 前沿实验室一直以数据隐私保证作为企业版方案的卖点。但 OpenRouter 提供私有模型部署，Venice 在可信执行环境（TEE）中以端到端加密运行模型。"你需要我们来保护隐私"这个论点正在瓦解。</p>
 
-<p><strong>OpenRouter just raised $50 million.</strong> Venice is "off the charts" in usage. Together AI and Fireworks are showing massive growth. The open source inference layer is well-capitalized and scaling fast.</p>
+<p><strong>OpenRouter 刚融资 $5,000 万。</strong> Venice 的使用量 "一飞冲天"。Together AI 和 Fireworks 显示出大规模增长。开源推理层资金充裕、扩张迅猛。</p>
 
-<h2>The Flywheel Under Threat</h2>
+<h2>营收飞轮受到威胁</h2>
 
-<p>The AI industry's growth model depends on a flywheel that keeps spinning: revenue funds GPU training runs, better models attract more users, more users generate more revenue. Each link depends on the previous one holding.</p>
+<p>AI 行业的增长模式依赖于一个持续旋转的飞轮：营收→买 GPU→训练更强模型→更多用户→更多营收。每一环都依赖前一环的稳固。</p>
 
 <blockquote>
-  "Everything's been priced to perfection recently and it's been up and to the right, but I think these enterprises are starting to tell their employees you can't token max anymore. And I think that that could really negatively impact the current flywheel."
+  "一切都按'完美'定价了，一路向上向右——但我认为企业正在告诉员工'你不能再 Token Max 了'。我认为这可能对当前的飞轮产生真正的负面冲击。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>Shaughnessy walks through the sequence: if people churn off to cheaper alternatives, revenue slows. If revenue slows, these companies' metrics and ability to raise capital slows. When they return to the debt market — which is "already pretty exhausted at this point" — a slower growth story makes fundraising harder. Less funding means fewer GPUs. Fewer GPUs means the next generation of models doesn't advance as quickly.</p>
+<p>Shaughnessy 一步步推演了这个链条：如果用户转向更便宜的替代方案，营收增速放缓。如果营收放缓，这些公司的估值指标和再融资能力都会下降。当它们回到债务市场——而债务市场"已经被榨得差不多了"——一个放缓的增长故事让融资更难。融资少了，GPU 就少了，下一代模型就推不上去。</p>
 
 <div class="gloss">
-  <strong>作者概括:</strong> Tommy is not bearish on AGI long-term. He explicitly says "I'm very bullish" on getting AGI, robots, and massive data centers. His concern is about a timing mismatch — the next 12-24 months may not sustain the growth rates that current valuations require. The public markets are about to see the real numbers, and they may not match the story.
+  <strong>作者概括：</strong> Tommy 并不看空 AGI 的长期前景。他明确说"我非常看多"——相信 AGI、机器人、大规模数据中心都会实现。他的担忧在于时间错配：未来 12-24 个月可能无法维持当前估值所需要的增长率。公开市场即将看到真实的数字，它们可能跟故事对不上。
 </div>
 
-<h2>IPO Dynamics: Low Float, High Stakes</h2>
+<h2>IPO 动态：低流通盘，高风险</h2>
 
-<p>SpaceX is going public. OpenAI and Anthropic aren't far behind. The structure of these IPOs creates a particular vulnerability.</p>
+<p>SpaceX 正在上市。OpenAI 和 Anthropic 紧随其后。这些 IPO 的结构制造了一种特殊的脆弱性。</p>
 
-<p>On the surface, the IPOs should do well out of the gate. Floats are low — sub-10% in some cases, compared to historical norms of 10-20%. Passive capital from index funds provides a guaranteed buyer base. Retail investors are eager to own "AGI stocks" — something they can tell their friends about.</p>
+<p>表面上看，IPO 出闸之时应该表现不错。流通盘小——有些低至 10% 以下，而历史上 IPO 的流通比例是 10-20%。来自指数基金的被动资本提供了保障性的买方基础。散户投资者渴望拥有"AGI 股票"——可以跟朋友炫耀的东西。</p>
 
-<p>But Shaughnessy sees a problem after the initial pop. Public companies must disclose everything: payback periods, margins, growth rates, segment-level financials. These companies have historically attracted investment based on "stories and incredible technology with limited to no financials." When the numbers are public, scrutiny intensifies.</p>
+<p>但 Shaughnessy 看到了初期的光环褪去之后的问题。上市公司必须披露一切：回本周期、利润率、增长率、分项财务数据。这些公司历史上吸引投资靠的是"精彩的故事和令人难以置信的技术，没有或几乎没有财务数据"。当数字公开，审视就变严格了。</p>
 
-<p>"I'd be a little bit more wary as time goes on," he says. If the enterprise spending thesis is correct, those public disclosures may show slowing revenue growth at exactly the moment investors are expecting hypergrowth.</p>
+<p>"我会随着时间推移更加警惕，"他说。如果企业支出收缩的论断正确，那些公开披露可能会在投资者预期高增长的节点上展示出放缓的营收增速。</p>
 
-<h2>The Chinese Open Source Wildcard</h2>
+<h2>中国开源：未知变量</h2>
 
-<p>China's AI labs — DeepSeek, Kimi, MiniMax, GLM — have all pursued an open source strategy. The logic is sound: if you don't have frontier-level intelligence, release a close, free substitute that impacts your competitors' margins and funding.</p>
+<p>中国的 AI 实验室——DeepSeek、Kimi、MiniMax、GLM——都采取了开源策略。逻辑是合理的：如果你没有前沿级别的智能，就释放一个接近的、免费的替代品来打击竞争对手的利润率和融资能力。</p>
 
-<p>But Shaughnessy sees signs this may change. Alibaba open-sourced a model and the executive in charge was "fired the next day." GLM reportedly kept certain versions private before open-sourcing them. The pressure to capture value from expensive training runs is mounting.</p>
+<p>但 Shaughnessy 看到了变化的迹象。阿里巴巴开源了一款模型，负责的高管"第二天就被开除了"。GLM 据报道在完全开源之前把某些版本私藏了一段时间。从昂贵训练中获取价值的压力正在累积。</p>
 
 <blockquote>
-  "I think the Chinese models may go closed source. And I don't think that people are expecting that."
+  "我认为中国模型可能会转向闭源。而且我认为人们没有预料到这一点。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>The reason is straightforward: these companies are spending heavily on training but getting nothing back. They don't get revenue (models run on inference providers like Venice and OpenRouter). They don't get the data flywheel (usage doesn't feed back to improve the model). If they continue "spending obscene amounts of money" with no value flow, something has to give.</p>
+<p>理由很直接：这些公司在训练上花了巨额资金，但什么都收不回来。没有收入（模型跑在 Venice、OpenRouter 等第三方推理平台），没有数据飞轮（使用数据不会回流到模型改进）。如果持续"烧掉巨额资金"而没有任何价值回流，总得出问题。</p>
 
-<p>The irony, as Shaughnessy points out, is that if China goes closed source but their models remain behind Anthropic and OpenAI, it accidentally helps US labs: "if everything's closed, you're just going to use us." The open source competition that's been pressuring prices would disappear, and frontier labs could "charge whatever the hell they want because there's no alternative."</p>
+<p>讽刺的是，Shaughnessy 指出，如果中国转向闭源但其模型仍落后于 Anthropic 和 OpenAI，反而意外地利好美国实验室："如果一切闭源，你只能用我们。"一直在压低价格的开源竞争将消失，前沿实验室可以"想收多贵就收多贵，因为没有替代方案。"</p>
 
-<h2>The Price War: OpenAI vs Anthropic</h2>
+<h2>价格战：OpenAI vs Anthropic</h2>
 
-<p>The Wall Street Journal recently reported that OpenAI is considering drastic price cuts. Shaughnessy sees two reasons — one defensive, one offensive.</p>
+<p>《华尔街日报》近期报道 OpenAI 正在考虑大幅降价。Shaughnessy 看到两个原因——一个防御性的，一个攻击性的。</p>
 
 <blockquote>
-  "OpenAI is lowering prices directly because of what we're seeing on enterprises spending too much money. I think that just simplest answer is usually right. I think that there is a lot of enterprise shifting, and if we're seeing it publicly, it means they're seeing it privately way more than we are."
+  "OpenAI 降价直接是因为我们在企业支出太高方面看到的情况。最简单的答案通常是对的。我认为有大量的企业正在转移，如果我们公开看到了，那他们私下看到的多得多。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>The first reason is straightforward: they're losing enterprise customers to cheaper alternatives and need to respond. But the second reason is more strategic:</p>
+<p>第一个原因很直接：他们正在失去企业客户，转向更便宜的替代方案，必须回应。但第二个原因更具战略性：</p>
 
 <blockquote>
-  "I think if Anthropic is probably going to IPO first, I'd say. So you want to lower prices and eat into their growth and margins as much as you can before they go public. You want to make their numbers look as as bad as you can."
+  "我认为 Anthropic 可能会率先 IPO。所以你想在它上市前压低价格、蚕食它的增长和利润率。你想让它的数字看起来尽可能难看。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>This transforms the price war from a routine competitive dynamic into something more consequential. OpenAI isn't just competing for customers — it's trying to damage Anthropic's IPO window. For a company about to face public market scrutiny, a quarter or two of slowed growth at the wrong moment could significantly change the valuation narrative.</p>
+<p>这把价格战从常规的竞争动态变成了一件后果更加重大的事情。OpenAI 不仅在争夺客户——它在试图破坏 Anthropic 的 IPO 窗口。对一家即将面对公开市场审视的公司来说，在错误的时间点出现一两个季度的增长放缓，可能显著改变估值叙事。</p>
 
-<h2>Big Brother Fearmongering vs. Real Safety</h2>
+<h2>"老大哥"恐惧 vs. 真正的安全</h2>
 
-<p>Beyond pricing, there's a user-facing dimension to the AI competition that's creating its own fractures. Models are increasingly blocking user queries — sometimes for reasonable safety concerns, but often for what users perceive as paternalistic overreach. A viral example: someone asking Claude about mitochondria being "the powerhouse of the cell" had their query flagged as potentially unsafe.</p>
+<p>在定价之外，AI 竞争还有一个面向用户的维度，正在制造自己的裂痕。模型越来越多地阻止用户的问题——有时出于合理的安全考量，但常常被用户视为专横的干预。一个病毒式的例子：有人问 Claude "线粒体是不是细胞的动力工厂"，结果查询被标记为"可能存在安全风险"。</p>
 
 <blockquote>
-  "I view it as big brother fearmongering and I think it's super annoying. The idea that we're letting some AI lab dictate what we're able to ask and why is a really slippery slope."
+  "我认为这是'老大哥'式的恐惧贩卖，我对此非常反感。让某个 AI 实验室来规定我们能够问什么、为什么——这是一个非常危险的滑坡。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>Shaughnessy draws a direct analogy to political censorship: "do you want to be in China and you're not allowed to ask about Tiananmen Square? Like no." The point isn't to equate AI safety features with authoritarian censorship, but to highlight a shared principle — that centralized control over what can be asked is dangerous regardless of who holds the reins.</p>
+<p>Shaughnessy 直接类比到政治审查："你想生活在中国，连天安门广场都不让问吗？没人想要那样。"重点不是把 AI 安全功能等同于威权审查，而是凸显一个共同的原则——对可提问范围的集中控制，不管谁来掌控，都是危险的。</p>
 
-<p>He acknowledges the legitimate side of the argument: "if we give this to people and they ask how to build a crazy computer virus that shuts down the entire world without being noticed and it could do it, like that actually is a concern." The question is whether blocking individual queries is the right mechanism, or whether open source scrutiny provides better safety guarantees.</p>
+<p>他承认这个论点存在合理的一面："如果我们把这个给人们，他们问怎么造出一个能在不被注意的情况下关闭整个世界的疯狂计算机病毒，而模型真的能做到——这确实是一个担忧。"问题在于，阻止个别查询是否是正确的手段，还是开源审查提供了更好的安全保障。</p>
 
-<h2>Open Source as the Ultimate Safety Solution</h2>
+<h2>开源：终极安全解决方案</h2>
 
-<p>Shaughnessy's answer is the accelerationist one: open source everything, and let the global community do the security work.</p>
+<p>Shaughnessy 的回答是加速主义的：把一切都开源，让全球社区来做安全工作。</p>
 
 <blockquote>
-  "Open source AI is the ultimate solution to the safety issues that everybody talks about."
+  "开源 AI 是所有人都在谈论的安全问题的终极解决方案。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>His analogy is Linux versus Windows: "open sourcing and accelerating and giving everybody this technology at scale to bulletproof it and test it and audit it back and forth and battle test it is the same reason why Linux is the most secure operating system and beats Windows all the time."</p>
+<p>他的类比是 Linux 对 Windows："开源、加速、让所有人以规模化获得这项技术来强化它、测试它、来回审查和攻防测试——这正是 Linux 是最安全操作系统并一直打败 Windows 的原因。"</p>
 
-<p>The alternative — trusting a small group to decide what's safe — doesn't scale, no matter how capable the team: "I just don't view it as we should trust 10 people in a room, as godlike as they can be, and I'm sure they're incredible people, but it doesn't matter."</p>
+<p>替代方案——信任一个小团队来决定什么是安全的——不管团队多厉害，都无法扩展："我就是不认为我们应该信任关在房间里的 10 个人，不管他们多天才，我可以肯定他们是非常棒的人，但这不重要。"</p>
 
-<p>This perspective has commercial implications too. When Claude blocks an innocuous question, users switch to Venice — a platform explicitly built to not block queries. Censorship, in this market, is a competitive disadvantage. Open source models + privacy-preserving inference infrastructure (TEEs, end-to-end encryption) provide a market-based solution to the safety debate.</p>
+<p>这个视角也有商业层面的影响。当 Claude 屏蔽一个无害的问题时，用户就转向 Venice——一个明确不屏蔽问题的平台。在这个市场中，审查是一个竞争劣势。开源模型加上隐私保护的推理基础设施（TEE、端到端加密）为安全辩论提供了市场化的解决方案。</p>
 
-<h2>Crypto + AI: Where the Overlap Gets Real</h2>
+<h2>Crypto + AI：交汇点正在成型</h2>
 
-<p>Laura Shin frames the entire conversation as a "tragedy of the commons" — everyone wants AGI, but no one wants to pay frontier prices or share their data. Crypto, with its toolkit for decentralized coordination, capital formation, and censorship resistance, seems designed to address exactly these fractures.</p>
+<p>Laura Shin 将整场对话框定为"公地悲剧"——每个人都想要 AGI，但没人愿意付前沿价格或分享自己的数据。Crypto 凭借其去中心化协调、资本形成和抗审查的工具箱，似乎是要精准应对这些裂痕。</p>
 
-<p>Shaughnessy identifies four areas where the overlap is most promising:</p>
+<p>Shaughnessy 确定了四个最有前景的交汇领域：</p>
 
-<p><strong>1. Capital Formation.</strong> An ICO for an open-source AI company could crowdfund model development that the community collectively owns. "It'd be very easy to do an IPO or sorry an ICO for a major open source AI company and build an incredible model." The model could be built centralized — what matters is that we all own it and share in its success.</p>
+<p><strong>1. 资本形成。</strong>为一个开源 AI 公司做 ICO，众筹社区共同拥有的模型开发。"为一个主要的开源 AI 公司做 ICO 来建造一个不可思议的模型——这个非常容易想象。"模型本身的训练可以是中心化的——重要的是我们共同拥有它并分享其成功。</p>
 
-<p><strong>2. Privacy and Censorship Resistance.</strong> Venice, built by Eric Voorhees, provides uncensored open-source model access at scale with strong privacy guarantees. "Claude blocking people's requests. That's exactly what Venice is built for." Models run in TEEs with end-to-end encryption — no one sees your queries, no one blocks them.</p>
+<p><strong>2. 隐私和抗审查。</strong>Eric Voorhees 创办的 Venice 提供规模化的、不受审查的开源模型访问，并具备强大的隐私保证。"Claude 屏蔽用户的请求。这正是 Venice 的构建目的。"模型在 TEE 中以端到端加密运行——没有人看到你的查询内容，没有人阻止它们。</p>
 
-<p><strong>3. Data / Deep-in.</strong> Grass uses 3 million user nodes worldwide to scrape real, diverse data for AI labs. It's a decentralized alternative to centralized data collection — and Shaughnessy's fund, Delphi Ventures, is an investor. "It's a key deep-in use case that just sort of makes sense."</p>
+<p><strong>3. 数据 / Deep-in。</strong>Grass 利用全球 300 万个用户节点为 AI 实验室抓取真实、多样化的数据。这是对中心化数据采集的去中心化替代——Shaughnessy 的基金 Delphi Ventures 是投资人。"这是一个关键的 deep-in 用例，基本上很合理。"</p>
 
-<p><strong>4. App / Harness Layer.</strong> Nous Research's Hermes Agent, with 150,000 GitHub stars and thousands of contributors, already sees 3-4× the usage of OpenClaw on OpenRouter. It's not built by a centralized lab — it's an open-source harness sustained by a global community. Shaughnessy uses it as his daily driver on both Telegram and desktop.</p>
+<p><strong>4. 应用 / Harness 层。</strong>Nous Research 的 Hermes Agent 拥有 15 万 GitHub Star、数千贡献者，在 OpenRouter 上的使用量已经是 OpenClaw 的 3-4 倍。它不是由中心化实验室构建的——它是一个由全球社区维护的开源 Harness。Shaughnessy 将其用作日常工具，在 Telegram 和桌面上都在使用。</p>
 
 <blockquote>
-  "Once you tap into the open source global community, it puts projects on a flywheel and a velocity that's just really hard to catch."
+  "一旦你接入开源全球社区，它就赋予项目一个飞轮和速度——这是中心化实验室很难追上的。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
 <div class="gloss">
-  <strong>作者概括:</strong> One area Shaughnessy is notably skeptical about is decentralized training. Google's DiLoCo mechanism and projects like Prime Intellect and BitTensor subnet 2 have attempted distributed training, but "it's just too cost intensive and it's just too hard." Even as a crypto investor, he's "happy to seed at this point" — meaning he's written it off. The real action is in the areas above, not in trying to replace GPU clusters with p2p networks.
+  <strong>作者概括：</strong> Shaughnessy 明显持怀疑态度的一个领域是去中心化训练。Google 的 DiLoCo 机制以及 Prime Intellect、BitTensor 子网 2 等项目尝试过分布式训练，但"成本太高、太难了"。即便作为一个加密投资者，他也已经"认输"了。真正的行动在上面四个领域，而不是试图用 P2P 网络替代 GPU 集群。
 </div>
 
-<h2>A Very Different World</h2>
+<h2>一个截然不同的世界</h2>
 
-<p>Shaughnessy closes with a reminder of how fast the landscape has changed:</p>
+<p>Shaughnessy 结束时提醒大家，这个领域的格局变化有多快：</p>
 
 <blockquote>
-  "It's a very different world than what you and I saw 12 to 18 or 24 months ago, right? Where it was just like these AI reply bots with tokens. That is completely dead and the only ones that will be able to survive are real infra projects."
+  "这是一个与 12 到 18 或者 24 个月前你我所见的截然不同的世界，对吧？那时候只是一些带 Token 的 AI 回复机器人。那个东西已经完全死了，能活下来的只有真正的基础设施项目。"
   <span class="attribution">— Tommy Shaughnessy</span>
 </blockquote>
 
-<p>The AI-crypto intersection has matured beyond speculative tokens into actual infrastructure — inference routing, decentralized data pipelines, privacy-preserving model access, and community-owned development. Whether these can meaningfully compete with the frontier labs' war chests is an open question. But the cracks in the centralized AI business model are real, and they're creating space for alternatives that didn't exist two years ago.</p>
+<p>AI-Crypto 的交叉点已经超越了投机性 Token，进入了实际基础设施——推理路由、去中心化数据管道、保护隐私的模型访问、社区拥有的模型开发。这些能否在前沿实验室的巨额资金面前取得有意义的竞争，仍是一个开放的问题。但中心化 AI 商业模式中的裂痕是真实的，它们正在为两年前不存在的替代方案创造空间。</p>
 
 <div class="quotes-section">
   <h2>核心金句</h2>
 
   <div class="quote-block" style="background:#f5f9ff; border-color:#1971c2;">
-    "The subscriptions are subsidized by about forty X versus what you get at the API."
-    <span class="context">— On the economic mismatch at the heart of the AI business model</span>
+    "订阅被补贴了大约 40 倍。$200/月的订阅，在 API 上大约值 $8,000。"
+    <span class="context">—— 关于驱动 AI 商业模式危机的核心经济错配</span>
   </div>
 
   <div class="quote-block" style="background:#f4fce3; border-color:#2f9e44;">
-    "Get your same intelligence for one tenth to one one hundredth the cost. You're not getting frontier intelligence, you're getting something eighty to ninety percent as good, but one percent the cost."
-    <span class="context">— On why open source inference is winning enterprise customers</span>
+    "你可以以 1/10 到 1/100 的成本获得同样的智能。你不是在获得前沿智能，你获得的是 80-90% 的质量，但只需 1% 的价格。"
+    <span class="context">—— 关于为什么开源推理正在赢得企业客户</span>
   </div>
 
   <div class="quote-block" style="background:#fff5f5; border-color:#e03131;">
-    "I view it as big brother fearmongering and I think it's super annoying."
-    <span class="context">— On AI labs dictating what users are allowed to ask</span>
+    "我认为这是'老大哥'式的恐惧贩卖，我对此非常反感。"
+    <span class="context">—— 关于 AI 实验室规定用户能问什么</span>
   </div>
 
   <div class="quote-block" style="background:#f8f0fc; border-color:#862e9c;">
-    "Open source AI is the ultimate solution to the safety issues that everybody talks about."
-    <span class="context">— The accelerationist case for open vs. closed AI</span>
+    "开源 AI 是所有人都在谈论的安全问题的终极解决方案。"
+    <span class="context">—— 开源 vs 闭源 AI 安全的加速主义论证</span>
   </div>
 
   <div class="quote-block" style="background:#fffbe6; border-color:#f08c00;">
-    "Once you tap into the open source global community, it puts projects on a flywheel and a velocity that's just really hard to catch."
-    <span class="context">— On Nous Hermes agent beating centralized products in real usage</span>
+    "一旦你接入开源全球社区，它就赋予项目一个飞轮和速度——这是真的很难追上的。"
+    <span class="context">—— 关于 Nous Hermes Agent 在实际使用量上击败中心化产品</span>
   </div>
 
   <div class="quote-block" style="background:#fff4e6; border-color:#e8590c;">
-    "Everything's been priced to perfection recently and it's been up and to the right."
-    <span class="context">— Warning that AI valuations may not survive a revenue growth slowdown</span>
+    "一切都按'完美'定价了，一路向上向右。"
+    <span class="context">—— 警告 AI 估值可能无法承受营收增长放缓的冲击</span>
   </div>
 </div>
 
 <footer>
-  <p>Episode: <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3811437742.mp3">Unchained Podcast — Why the AI Business Model Is Cracking and How Crypto Could Help Fix It</a></p>
-  <p>Host: Laura Shin · Guest: Tommy Shaughnessy · June 2026</p>
-  <p style="margin-top:8px;font-size:12px;">All quotes verified against the podcast transcript. Paraphrases marked as 作者概括.</p>
+  <p>本期节目：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3811437742.mp3">Unchained Podcast —— AI 商业模式正在崩裂——加密如何修补它？</a></p>
+  <p>主持人：Laura Shin · 嘉宾：Tommy Shaughnessy · 2026 年 6 月</p>
+  <p style="margin-top:8px;font-size:12px;">所有引言均经过播客转录稿验证。作者概括处已标注"作者概括"。</p>
 </footer>
 
 </div>

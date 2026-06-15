@@ -3,7 +3,7 @@ theme: academic
 colorSchema: light
 addons:
   - slidev-addon-excalidraw
-title: 'Why the AI Business Model Is Cracking and How Crypto Could Help Fix It'
+title: 'AI 商业模式正在崩裂——加密如何修补它？'
 class: text-center
 transition: slide-left
 mdc: true
@@ -11,583 +11,52 @@ drawings:
   persist: false
 ---
 
-# Why the AI Business Model<br>Is Cracking
+# AI 商业模式正在崩裂<br>——加密如何修补它？
 
-<div class="text-lg mt-6 opacity-70">
-Tommy Shaughnessy · Founding Partner, Delphi Ventures
+<div class="opacity-60 mt-6 text-lg">
+Tommy Shaughnessy × Laura Shin
 </div>
-
-<div class="text-sm mt-12 opacity-50">
-Unchained Podcast · June 2026
+<div class="opacity-50 mt-2 text-sm">
+Delphi Ventures 创始合伙人 · Unchained Podcast
 </div>
-
----
-
-# Why This Episode Matters
-
-<div class="text-sm opacity-60 mb-4">The AI industry is racing toward mega-IPOs, but the business model has a hidden crack.</div>
-
-<div class="grid grid-cols-3 gap-3 mt-4">
-
-<div class="p-3 rounded bg-red-50 border-l-4 border-red-500 text-sm leading-relaxed">
-<strong>40× Subsidy Gap</strong><br/>
-AI subscriptions cost users $200/month but deliver $8K worth of API compute — a gap businesses are now discovering.
-</div>
-
-<div class="p-3 rounded bg-yellow-50 border-l-4 border-yellow-500 text-sm leading-relaxed">
-<strong>Enterprise Wall</strong><br/>
-Uber, Microsoft, and others are cutting AI spend. "You can't token max anymore" is becoming the new corporate memo.
-</div>
-
-<div class="p-3 rounded bg-green-50 border-l-4 border-green-500 text-sm leading-relaxed">
-<strong>Open Source Escape</strong><br/>
-OpenRouter, Venice, Together AI offer 80-90% frontier quality at 1% the cost. Switching is one keystroke away.
-</div>
-
-<div class="p-3 rounded bg-blue-50 border-l-4 border-blue-500 text-sm leading-relaxed">
-<strong>Chinese Wildcard</strong><br/>
-DeepSeek, GLM, Kimi are all open source — but may go closed. If they do and aren't better, it helps US labs.
-</div>
-
-<div class="p-3 rounded bg-purple-50 border-l-4 border-purple-500 text-sm leading-relaxed">
-<strong>Price War</strong><br/>
-OpenAI is slashing prices to hurt Anthropic's growth before its likely IPO. A strategic squeeze, not just competition.
-</div>
-
-<div class="p-3 rounded bg-orange-50 border-l-4 border-orange-500 text-sm leading-relaxed">
-<strong>Crypto as Fix</strong><br/>
-Capital formation, censorship-resistant access, decentralized data — crypto's open-source ethos could fund what VCs can't.
-</div>
-
+<div class="opacity-40 mt-2 text-xs">
+2026 年 6 月
 </div>
 
 ---
 
-# The Viral Thesis
-
-<div class="mt-2 text-sm opacity-60">
-Tommy Shaughnessy's tweet "The Most Basic Way AI Could Blow Up" got 2 million views.
-</div>
-
-<div class="mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded italic text-lg leading-relaxed">
-"I just one day I can't understand how many people that is when you think about it."
-<div class="text-xs opacity-60 mt-1 not-italic">— Tommy on the tweet going viral</div>
-</div>
-
-<div class="mt-4 space-y-3 text-sm leading-relaxed">
-
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded">
-<strong>The observation</strong>: A Delphi analyst kept hitting the API spend wall — despite an Anthropic subscription being "hard to hit a cap on."
-</div>
-
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
-<strong>The math</strong>: Subscription = heavily subsidized. When businesses move to API, they immediately hit budget limits. <em>The economics don't work at scale.</em>
-</div>
-
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>The vindication</strong>: Citadel Securities published a similar analysis titled "Tokenomics" — the enterprise spending slowdown is real and visible to multiple observers.
-</div>
-
-</div>
-
----
-layout: two-cols
----
-
-# The 40× Subsidy Gap
-
-<div class="text-sm opacity-60 mb-3">Why businesses are suddenly shocked by their AI bills</div>
-
-<div class="space-y-3 text-sm leading-relaxed">
-
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
-
-**ChatGPT / Anthropic subscription**
-
-$200/month — "you get a ton of usage ... hard to hit a cap"
-
-Heavily subsidized to acquire users. Revenue growth → fundraising → bigger models.
-
-</div>
-
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
-
-**Same usage via API**
-
-~$8,000/month — "once you shift from a subscription to an API model, you hit a wall really quick on spend"
-
-The real economics. Enterprises are making this transition right now.
-
-</div>
-
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded text-sm">
-<strong>Tommy's analogy</strong>: "the subscriptions are subsidized by about forty X versus what you get at the API."
-</div>
-
-</div>
-
-::right::
-
-<div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./ai-cost-pyramid.excalidraw"
-  class="w-[460px]"
-  :darkMode="false"
-  :background="false"
-/>
-</div>
-
----
-
-# Businesses Are Hitting the Wall
-
-<div class="text-sm opacity-60 mb-4">The enterprise AI spending crunch is no longer theoretical</div>
-
-<div class="grid grid-cols-2 gap-4 mt-4">
-
-<div class="p-4 rounded bg-red-50 border-2 border-red-200 text-center">
-<div class="text-3xl font-bold text-red-600 my-2">Uber</div>
-<div class="text-xs opacity-70">Cut AI spending</div>
-</div>
-
-<div class="p-4 rounded bg-red-50 border-2 border-red-200 text-center">
-<div class="text-3xl font-bold text-red-600 my-2">Microsoft</div>
-<div class="text-xs opacity-70">Cut AI spending</div>
-</div>
-
-<div class="p-4 rounded bg-orange-50 border-2 border-orange-200 text-center">
-<div class="text-3xl font-bold text-orange-600 my-2">"A Lot"</div>
-<div class="text-xs opacity-70">Other companies realizing it's "just too expensive"</div>
-</div>
-
-<div class="p-4 rounded bg-yellow-50 border-2 border-yellow-200 text-center">
-<div class="text-3xl font-bold text-yellow-600 my-2">Wall</div>
-<div class="text-xs opacity-70">API spend limits hit far faster than expected</div>
-</div>
-
-</div>
-
-<div class="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 rounded text-sm leading-relaxed">
-<strong>Tommy's quote</strong>: "I think these enterprises are starting to tell their employees you can't token max anymore."
-</div>
-
-<div class="mt-2 text-sm opacity-60 leading-relaxed">
-This is a fundamental shift. AI went from "unlimited included" to "pay per token" — and the landing is rough.
-</div>
-
----
-
-# The Open Source Escape Route
-
-<div class="text-sm opacity-60 mb-3">Why pay $8K when you can pay $80 for nearly the same thing?</div>
-
-<div class="grid grid-cols-2 gap-4 mt-4">
-
-<div class="space-y-3">
-
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded text-sm leading-relaxed">
-<strong>Frontier Labs</strong><br/>
-OpenAI · Anthropic<br/>
-$8K/mo · 100% quality<br/>
-<span class="text-red-600">Enterprises hitting spend wall</span>
-</div>
-
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded text-sm leading-relaxed">
-<strong>Open Source Inference</strong><br/>
-OpenRouter · Venice · Together AI<br/>
-Fireworks · Based · Cordele<br/>
-<span class="text-green-600">$80-800/mo · 80-90% quality</span>
-</div>
-
-</div>
-
-<div class="text-sm leading-relaxed space-y-3">
-
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded">
-<strong>The key insight</strong>: "get your same intelligence for one tenth to one one hundredth the cost"
-</div>
-
-<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-<strong>Switching is trivial</strong>: "It's very easy for most people to switch." Hermes Agent lets you toggle models with one keystroke.
-</div>
-
-<div class="p-3 bg-purple-50 border-l-4 border-purple-500 rounded">
-<strong>Even privacy is commoditized</strong>: OpenRouter offers private models. Venice runs models in TEEs with end-to-end encryption. The "enterprise privacy" moat is gone.
-</div>
-
-</div>
-
-</div>
-
----
-layout: two-cols
----
-
-# The Escape Route Visualized
-
-<div class="text-sm opacity-60 mb-3">Enterprise AI spend is leaking from frontier labs to open source</div>
-
-<div class="space-y-3 mt-4 text-sm leading-relaxed">
-
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
-<strong>The squeeze</strong>: Enterprises that transition from subscription to API discover the real cost — and immediately look for cheaper alternatives.
-</div>
-
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>The pull</strong>: Open source inference providers offer 80-90% of frontier quality at 1-10% of the cost. The quality gap is shrinking.
-</div>
-
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded">
-<strong>The result</strong>: "when you put those two together, it kind of makes sense that usage is shifting"
-</div>
-
-</div>
-
-::right::
-
-<div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./escape-route.excalidraw"
-  class="w-[460px]"
-  :darkMode="false"
-  :background="false"
-/>
-</div>
-
----
-
-# The Flywheel Under Threat
-
-<div class="text-sm opacity-60 mb-3">The AI industry's growth model assumes uninterrupted upward trajectory</div>
-
-<div class="mt-4 space-y-3 text-sm leading-relaxed">
-
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>The flywheel</strong>: Revenue → fund GPUs → train better models → more users → more revenue. "Everything's been priced to perfection recently and it's been up and to the right."
-</div>
-
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
-<strong>What happens if revenue slows</strong>: "if people churn off, revenue slows, if revenue slows, these companies' metrics and ability to raise capital slows, because they got to go to the debt market and say, hey, we might not get this revenue back"
-</div>
-
-<div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded">
-<strong>The debt market reality</strong>: AI companies have already been raising heavily. If they need to return to markets with a slowdown story, it gets harder.
-</div>
-
-</div>
-
-<div class="mt-4 p-3 bg-purple-50 border-l-4 border-purple-500 rounded text-sm leading-relaxed">
-<strong>作者概括</strong>: Tommy is not bearish on AGI long-term. He's pointing out a timing mismatch — the short-to-mid term revenue model may not sustain the growth rates that current valuations price in.
-</div>
-
----
-layout: two-cols
----
-
-# The Flywheel, Visualized
-
-<div class="text-sm opacity-60 mb-3">Each arrow depends on the previous step. A crack anywhere breaks the cycle.</div>
-
-<div class="space-y-2 mt-3 text-sm leading-relaxed">
-
-<div class="p-2 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>Revenue growth</strong>: Driven by enterprise adoption and API consumption
-</div>
-
-<div class="p-2 bg-blue-50 border-l-4 border-blue-500 rounded">
-<strong>Fund GPUs</strong>: Revenue funds the massive compute investment
-</div>
-
-<div class="p-2 bg-purple-50 border-l-4 border-purple-500 rounded">
-<strong>Train better models</strong>: More compute → more capable models
-</div>
-
-<div class="p-2 bg-orange-50 border-l-4 border-orange-500 rounded">
-<strong>More users</strong>: Better models attract more users and developers
-</div>
-
-<div class="p-2 bg-red-50 border-l-4 border-red-500 rounded">
-<strong>The crack</strong>: Enterprises shift to cheaper open source → revenue growth slows → whole flywheel slows
-</div>
-
-</div>
-
-::right::
-
-<div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./flywheel-crack.excalidraw"
-  class="w-[460px]"
-  :darkMode="false"
-  :background="false"
-/>
-</div>
-
----
-
-# IPO Dynamics: Low Float, High Stakes
-
-<div class="text-sm opacity-60 mb-3">The mega-IPOs (SpaceX, OpenAI, Anthropic) have a structural quirk</div>
-
-<div class="grid grid-cols-2 gap-4 mt-4">
-
-<div class="p-4 rounded bg-green-50 border-l-4 border-green-500 text-sm leading-relaxed">
-<strong>Short-term: Looks good</strong>
-
-- Floats are low (sub-10% vs historical 10-20%)
-- Passive capital and index funds are forced buyers
-- Retail wants "AGI stocks"
-- "I think they do well out of the gate"
-</div>
-
-<div class="p-4 rounded bg-red-50 border-l-4 border-red-500 text-sm leading-relaxed">
-<strong>Medium-term: Gets tricky</strong>
-
-- Public companies must disclose everything
-- Payback periods, margins, growth rates all become visible
-- "historically people have aped into these companies because of the stories and incredible technology with limited to no financials"
-- If the enterprise spend thesis is right, numbers may disappoint
-</div>
-
-</div>
-
-<div class="mt-4 p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded text-sm leading-relaxed">
-<strong>Tommy's caution</strong>: "I'd be a little bit more wary as time goes on." The IPO pop may not last if the underlying economics show cracks.
-</div>
-
----
-
-# Chinese Open Source Models: The Unknown Variable
-
-<div class="text-sm opacity-60 mb-3">DeepSeek, Kimi, MiniMax, GLM — all open source and improving fast</div>
-
-<div class="grid grid-cols-2 gap-4 mt-4">
-
-<div class="space-y-3 text-sm leading-relaxed">
-
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>Current strategy: Open source everything</strong>
-
-Makes sense strategically — if you don't have frontier intelligence, release a close, free substitute to impact your competitors' margins and funding.
-
-</div>
-
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded">
-<strong>But there are rumblings of change</strong>
-
-Alibaba open-sourced a model and the executive was fired the next day. GLM kept versions private before releasing. The pressure to capture value is growing.
-
-</div>
-
-</div>
-
-<div class="space-y-3 text-sm leading-relaxed">
-
-<div class="p-3 bg-purple-50 border-l-4 border-purple-500 rounded">
-<strong>Tommy's prediction</strong>: "I think the Chinese models may go closed source."
-
-<strong>Why</strong>: They're spending heavily on training but getting no value flow back — no revenue from inference providers, no data flywheel from usage.
-
-</div>
-
-<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-<strong>The irony</strong>: If China goes closed source but their models aren't better than Anthropic/OpenAI, it helps US labs — because "if everything's closed, you're just going to use us."
-</div>
-
-</div>
-
-</div>
-
----
-
-# Price War: OpenAI vs Anthropic
-
-<div class="text-sm opacity-60 mb-3">The Wall Street Journal reported OpenAI is considering drastic price cuts</div>
-
-<div class="mt-4 space-y-3 text-sm leading-relaxed">
-
-<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-<strong>Reason 1 — Enterprise reality</strong>: "OpenAI is lowering prices directly because of what we're seeing on enterprises spending too much money." If the public can see enterprise leakage, these companies see far more in their private data.
-</div>
-
-<div class="p-3 bg-purple-50 border-l-4 border-purple-500 rounded">
-<strong>Reason 2 — IPO timing</strong>: "I think if Anthropic is probably going to IPO first. So you want to lower prices and eat into their growth and margins as much as you can before they go public. You want to make their numbers look as as bad as you can."
-</div>
-
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
-<strong>The implication</strong>: This isn't just normal competition. It's a strategic move to damage a competitor's IPO window. The price war is a symptom of the structural problem — the unit economics of frontier AI don't yet work at scale.
-</div>
-
-</div>
-
----
-layout: two-cols
----
-
-# The Price War, Visualized
-
-<div class="text-sm opacity-60 mb-3">Two reasons, one underlying problem</div>
-
-<div class="space-y-3 mt-4 text-sm leading-relaxed">
-
-<div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded">
-<strong>Reason 1</strong>: Enterprise spend too high — shifting to open source. "They see it privately way more than we do publicly."
-</div>
-
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
-<strong>Reason 2</strong>: Anthropic likely IPOs first. Cut prices now to eat into their growth before they go public.
-</div>
-
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded">
-<strong>Bottom line</strong>: The price war is a symptom of the enterprise spending problem, not just competition.
-</div>
-
-</div>
-
-::right::
-
-<div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./price-war.excalidraw"
-  class="w-[460px]"
-  :darkMode="false"
-  :background="false"
-/>
-</div>
-
----
-
-# The Safety Debate: Big Brother or Real Risk?
-
-<div class="text-sm opacity-60 mb-3">The AI safety conversation has a user-facing dimension that's getting ugly</div>
-
-<div class="mt-4 grid grid-cols-2 gap-4">
-
-<div class="p-4 bg-red-50 border-l-4 border-red-500 rounded text-sm leading-relaxed">
-<strong>What users are experiencing</strong>
-
-Claude flagged a question about mitochondria being "the powerhouse of the cell" — an innocuous biology question blocked due to safety features. Models increasingly act as gatekeepers of what can be asked.
-
-</div>
-
-<div class="p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded text-sm leading-relaxed">
-<strong>Tommy's view</strong>
-
-"I view it as big brother fearmongering and I think it's super annoying. The idea that we're letting some AI lab dictate what we're able to ask and why is a really slippery slope."
-
-He draws the analogy: "do you want to be in China and you're not allowed to ask about Tiananmen Square? Like no."
-</div>
-
-</div>
-
-<div class="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 rounded text-sm leading-relaxed">
-<strong>His balanced take</strong>: Tommy acknowledges that truly dangerous capabilities exist — "if we give this to people and they ask how to build a crazy computer virus that shuts down the entire world" — but he thinks the current behavior leans more toward paternalistic overreach than genuine safety.
-</div>
-
----
-
-# Open Source as the Ultimate Safety Solution
-
-<div class="text-sm opacity-60 mb-3">The accelerationist case: more eyes on the code, not fewer</div>
-
-<div class="mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded italic text-lg leading-relaxed">
-"open source AI is the ultimate solution to the safety issues that everybody talks about"
-<div class="text-xs opacity-60 mt-1 not-italic">— Tommy Shaughnessy</div>
-</div>
-
-<div class="mt-4 grid grid-cols-2 gap-4 text-sm leading-relaxed">
-
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>The Linux analogy</strong>
-
-"open sourcing and accelerating and giving everybody this technology at scale to bulletproof it and test it and audit it back and forth and battle test it is the same reason why Linux is the most secure operating system and beats Windows all the time"
-
-Open source isn't a security risk — it's the best security guarantee we have.
-
-</div>
-
-<div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded">
-<strong>The counter: trust a few?</strong>
-
-"I just don't view it as we should trust 10 people in a room, as godlike as they can be, and I'm sure they're incredible people, but it doesn't matter."
-
-No matter how smart the safety team, centralized control of what can be asked is the wrong model.
-
-</div>
-
-</div>
-
-<div class="mt-3 p-3 bg-purple-50 border-l-4 border-purple-500 rounded text-sm leading-relaxed">
-<strong>Tommy's position</strong>: "I'm very much in the accelerationist camp. I'm in the Beth Jezos camp." — favoring rapid, open development over cautious, centralized control.
-</div>
-
----
-
-# The Slippery Slope of Centralized Control
-
-<div class="text-sm opacity-60 mb-3">Why the censorship question matters beyond AI labs</div>
-
-<div class="mt-4 space-y-3 text-sm leading-relaxed">
-
-<div class="p-4 bg-red-50 border-l-4 border-red-500 rounded italic">
-"you don't want to be told what you're able to research or look at or ask about, right? Like do you want to be in China and you're not allowed to ask about Tiananmen Square? Like no."
-<div class="text-xs opacity-60 mt-1 not-italic">— Tommy, connecting AI censorship to political censorship</div>
-</div>
+# 为什么这期值得关注？
 
 <div class="grid grid-cols-2 gap-3 mt-4">
 
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded">
-<strong>The competitive dimension</strong>
-
-When Claude blocks innocuous queries, users switch to Venice — a platform explicitly built to <em>not</em> block questions. Censorship becomes a competitive disadvantage.
+<div class="p-3 rounded bg-red-50 border-l-4 border-red-500 text-sm leading-relaxed">
+<strong>40× 补贴鸿沟</strong><br/>
+订阅月费 $200 的 AI 服务，背后 API 成本是 $8,000。真相即将浮出水面。
 </div>
 
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>The solution</strong>
-
-Open source models + privacy-preserving inference. Venice runs models in TEEs with end-to-end encryption. OpenRouter provides private model access. The infrastructure for uncensored, private AI already exists.
+<div class="p-3 rounded bg-blue-50 border-l-4 border-blue-500 text-sm leading-relaxed">
+<strong>企业费用墙</strong><br/>
+Uber、Microsoft 等大企业开始削减 AI 支出。"Token Max" 时代正在终结。
 </div>
 
+<div class="p-3 rounded bg-yellow-50 border-l-4 border-yellow-500 text-sm leading-relaxed">
+<strong>价格战打响</strong><br/>
+OpenAI 大幅降价，WSJ 报道——背后是更深层的企业支出危机。
 </div>
 
-<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded text-sm leading-relaxed">
-<strong>Key point</strong>: The AI safety debate isn't just philosophical. It has real commercial consequences — and crypto/open-source infrastructure provides a market-based solution.
+<div class="p-3 rounded bg-purple-50 border-l-4 border-purple-500 text-sm leading-relaxed">
+<strong>中国开源变量</strong><br/>
+DeepSeek、GLM 等可能转向闭源——若质量未超越美国，反而利好 OpenAI 和 Anthropic。
 </div>
 
+<div class="p-3 rounded bg-orange-50 border-l-4 border-orange-500 text-sm leading-relaxed">
+<strong>Crypto 的解法</strong><br/>
+开源 AI 的资本形成、抗审查访问、去中心化数据——Crypto 天生适合修补这些漏洞。
 </div>
 
----
-
-# Crypto + AI: Four Overlaps
-
-<div class="text-sm opacity-60 mb-3">Where decentralized infrastructure meets the AI business model problem</div>
-
-<div class="grid grid-cols-2 gap-3 mt-4 text-sm leading-relaxed">
-
-<div class="p-3 rounded bg-green-50 border-l-4 border-green-500">
-<strong>1. Capital Formation</strong>
-
-"it'd be very easy to do an IPO or sorry an ICO for a major open source AI company and build an incredible model."
-
-Crypto can crowdfund open-source AI development — models we all own collectively, instead of a few labs.
-</div>
-
-<div class="p-3 rounded bg-blue-50 border-l-4 border-blue-500">
-<strong>2. Privacy & Censorship Resistance</strong>
-
-Venice provides open-source model access at scale with privacy guarantees. Built explicitly to not block questions. "Claude blocking people's requests. That's exactly what Venice is built for."
-</div>
-
-<div class="p-3 rounded bg-orange-50 border-l-4 border-orange-500">
-<strong>3. Data / Deep-in</strong>
-
-Grass uses 3 million global user nodes to scrape real, diverse data for AI labs. A decentralized alternative to centralized data collection.
-</div>
-
-<div class="p-3 rounded bg-purple-50 border-l-4 border-purple-500">
-<strong>4. App / Harness Layer</strong>
-
-Nous Research's Hermes agent — 150K GitHub stars, thousands of contributors, 3-4× the usage of OpenClaw. An open-source harness built by a global community, not a centralized lab.
+<div class="p-3 rounded bg-green-50 border-l-4 border-green-500 text-sm leading-relaxed">
+<strong>去中心化训练的局限</strong><br/>
+DiLoCo 等方案虽有进展，但 Tommy 坦言"目前太难"——真实评估，不做过度许诺。
 </div>
 
 </div>
@@ -596,31 +65,21 @@ Nous Research's Hermes agent — 150K GitHub stars, thousands of contributors, 3
 layout: two-cols
 ---
 
-# The Four Overlaps, Visualized
+# 40 倍补贴鸿沟
 
-<div class="text-sm opacity-60 mb-3">Each quadrant addresses a different piece of the AI business model puzzle</div>
+<div class="text-sm leading-relaxed">
 
-<div class="space-y-2 mt-3 text-sm leading-relaxed">
+### 核心发现
 
-<div class="p-2 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>Capital</strong> — Crowdfund models we all own
-</div>
+Tommy 的同事 Rawson 在 Delphi Ventures 使用 Anthropic API 时反复撞上**支出上限**。这个现象引发了他的思考。
 
-<div class="p-2 bg-blue-50 border-l-4 border-blue-500 rounded">
-<strong>Privacy</strong> — Uncensored, private access at scale
-</div>
+**关键数字**：
+- ChatGPT / Claude **订阅**：$200/月 → 几乎无限使用
+- 同样的用量走 **API**：约 **$8,000/月**
+- 订阅被补贴了 **40 倍**
 
-<div class="p-2 bg-orange-50 border-l-4 border-orange-500 rounded">
-<strong>Data</strong> — 3M nodes, decentralized scraping
-</div>
-
-<div class="p-2 bg-purple-50 border-l-4 border-purple-500 rounded">
-<strong>Apps</strong> — Open community beats centralized labs
-</div>
-
-<div class="p-2 bg-yellow-50 border-l-4 border-yellow-500 rounded text-xs">
-<strong>What's not working yet</strong>: Decentralized training (DiLoCo). "Too cost intensive and just too hard." Even Tommy, a crypto investor, is skeptical here.
-</div>
+**为什么这很重要？**
+企业从订阅（被重度补贴）迁移到 API（真实成本）时，会遭遇"价格休克"——然后开始寻找更便宜的替代方案。
 
 </div>
 
@@ -628,7 +87,7 @@ layout: two-cols
 
 <div class="flex justify-center items-center h-full pl-4">
 <Excalidraw
-  drawFilePath="./crypto-ai-four.excalidraw"
+  drawFilePath="./ai-cost-pyramid-cn.excalidraw"
   class="w-[460px]"
   :darkMode="false"
   :background="false"
@@ -637,34 +96,227 @@ layout: two-cols
 
 ---
 
-# Hermes Agent: Open Source Beats Centralized
+# 企业的 AI 费用墙
 
-<div class="text-sm opacity-60 mb-3">The clearest evidence that open-source AI can compete with frontier labs</div>
+<div class="mt-4 space-y-4">
 
-<div class="mt-4 grid grid-cols-2 gap-4">
+<div class="p-4 rounded border-l-4 border-red-500 bg-red-50 text-sm leading-relaxed">
 
-<div class="p-4 bg-purple-50 border-l-4 border-purple-500 rounded text-sm leading-relaxed">
-<strong>The numbers</strong>
+### 撞墙的企业
 
-<div class="text-4xl font-bold text-purple-600 my-2">150K</div>
-GitHub stars on Nous Hermes agent
-
-<div class="text-4xl font-bold text-purple-600 my-2">3-4×</div>
-Usage of OpenClaw on OpenRouter — for the past week and month
-
-<div class="text-4xl font-bold text-purple-600 my-2">Thousands</div>
-Of contributors continually improving it
+- **Uber** 削减了 AI 支出
+- **Microsoft** 削减了 AI 支出
+- 大量企业开始意识到：<strong>"这太贵了"</strong>
 
 </div>
 
-<div class="p-4 bg-green-50 border-l-4 border-green-500 rounded text-sm leading-relaxed">
-<strong>Why it matters</strong>
+<div class="p-4 rounded border-l-4 border-yellow-500 bg-yellow-50 text-sm leading-relaxed">
 
-"once you tap into the open source global community, it puts projects on a flywheel and a velocity that's just really hard to catch"
+### "Token Max" 时代的终结
 
-Hermes is Tommy's daily driver — on Telegram, on desktop. It's not just a proof of concept. It's beating centralized products in real usage.
+企业正在告诉员工：**"别再无限使用 token 了"**。
 
-<strong>The lesson</strong>: "when you get the open source community involved, it just takes on a new life."
+过去大家习惯了 ChatGPT 订阅式的"随便用"，但当迁移到 API 后，账单的冲击力是真实的。从"无限包含在内"到"按 token 付费"，落地很痛。
+
+</div>
+
+<div class="p-4 rounded border-l-4 border-blue-500 bg-blue-50 text-sm leading-relaxed">
+
+### 背后的信号
+
+如果企业连当前水平的 API 支出都觉得太贵，那么以"超高速营收增长"为估值基础的前沿实验室，其商业模式的前提条件正在松动。
+
+</div>
+
+</div>
+
+---
+layout: two-cols
+---
+
+# 开源替代：企业 AI 支出的"逃亡路线"
+
+<div class="text-sm leading-relaxed">
+
+### 低成本替代方案
+
+企业在问：**"哪里可以不用花天价就能获得 AI 能力？"**
+
+答案来自开源推理提供商：
+
+- **OpenRouter** — 最近融资 $5,000 万
+- **Venice AI** — Eric Voorhees 创办，增长迅猛
+- **Together AI** / **Fireworks** — 使用量激增
+
+### 关键数据
+前沿智能的 **80-90% 质量**，仅需 **1% 的成本**。
+
+当替代品如此便宜且质量足够好时，转向只是时间问题。切换模型只需一键——门槛为零。
+
+</div>
+
+::right::
+
+<div class="flex justify-center items-center h-full pl-4">
+<Excalidraw
+  drawFilePath="./escape-route-cn.excalidraw"
+  class="w-[460px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+---
+layout: two-cols
+---
+
+# AI 营收飞轮正在开裂
+
+<div class="text-sm leading-relaxed">
+
+### 飞轮逻辑
+
+前沿 AI 实验室依赖的核心循环：
+
+1. **营收增长** → 证明商业模式
+2. **融资买 GPU** → 扩大算力
+3. **训练更强模型** → 保持领先
+4. **吸引更多用户** → 回到步骤 1
+
+### 裂痕在哪里？
+
+- 企业转向开源替代方案 → **营收增长放缓**
+- 营收放缓 → 融资变难
+- 融资变难 → 训练跟不上
+- 飞轮降速 → IPO 估值承压
+
+</div>
+
+::right::
+
+<div class="flex justify-center items-center h-full pl-4">
+<Excalidraw
+  drawFilePath="./flywheel-crack-cn.excalidraw"
+  class="w-[460px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+---
+
+# 飞轮降速 → IPO 困境
+
+<div class="mt-3 space-y-4">
+
+<div class="grid grid-cols-3 gap-3 text-center">
+
+<div class="p-3 rounded bg-green-50 border border-green-200 text-sm">
+<div class="text-xs opacity-60 mb-1">短期</div>
+<div class="font-semibold">低流通、高 FTV</div>
+<div class="text-xs opacity-70 mt-1">IPO 结构有利于首日表现</div>
+</div>
+
+<div class="p-3 rounded bg-yellow-50 border border-yellow-200 text-sm">
+<div class="text-xs opacity-60 mb-1">中长期</div>
+<div class="font-semibold">财务公开的考验</div>
+<div class="text-xs opacity-70 mt-1">回本周期、利润率、增速——全部暴露</div>
+</div>
+
+<div class="p-3 rounded bg-red-50 border border-red-200 text-sm">
+<div class="text-xs opacity-60 mb-1">关键风险</div>
+<div class="font-semibold">营收降速</div>
+<div class="text-xs opacity-70 mt-1">企业转向开源的影响尚未计入估值</div>
+</div>
+
+</div>
+
+<div class="p-4 rounded border-l-4 border-purple-500 bg-purple-50 text-sm leading-relaxed">
+
+### Tommy 的判断
+
+- **出闸瞬间表现好**：流通盘小（低于 10%），被动基金和散户都想买"AGI 股票"
+- **之后变棘手**：上市后必须披露所有财务数据。如果企业客户成本保守的趋势成真，市场将重新定价
+- **Citadel Securities 也发表了相似分析**（题为 "Tokenomics"——不是 Crypto 的 Token，而是指 AI 的 Token 消耗经济学）
+
+</div>
+
+</div>
+
+---
+layout: two-cols
+---
+
+# OpenAI vs Anthropic：价格战背后
+
+<div class="text-sm leading-relaxed">
+
+### 发生了什么？
+
+Wall Street Journal 报道：OpenAI 正在考虑**大幅降价**，与 Anthropic 争夺用户。
+
+### Tommy 的两个推论
+
+**推论 1：企业外流的真实规模远超公开数据**
+"如果我们公开看到了，他们私下看到的要多得多"
+
+**推论 2：战略打击 Anthropic 的 IPO**
+Anthropic 可能率先 IPO。OpenAI 趁对手上市前压低价格，打击其增长数据和利润率——让对手的 IPO 数字尽可能难看。
+
+</div>
+
+::right::
+
+<div class="flex justify-center items-center h-full pl-4">
+<Excalidraw
+  drawFilePath="./price-war-cn.excalidraw"
+  class="w-[460px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+---
+
+# 中国开源模型的角色
+
+<div class="mt-3 space-y-4">
+
+<div class="grid grid-cols-4 gap-2 text-center">
+
+<div class="p-2 rounded bg-blue-50 border border-blue-200 text-sm">
+<div class="font-semibold">DeepSeek</div>
+<div class="text-xs opacity-70">全开源</div>
+</div>
+
+<div class="p-2 rounded bg-green-50 border border-green-200 text-sm">
+<div class="font-semibold">Kimi</div>
+<div class="text-xs opacity-70">全开源</div>
+</div>
+
+<div class="p-2 rounded bg-purple-50 border border-purple-200 text-sm">
+<div class="font-semibold">MiniMax</div>
+<div class="text-xs opacity-70">全开源</div>
+</div>
+
+<div class="p-2 rounded bg-orange-50 border border-orange-200 text-sm">
+<div class="font-semibold">GLM</div>
+<div class="text-xs opacity-70">目前开源</div>
+</div>
+
+</div>
+
+<div class="p-4 rounded border-l-4 border-blue-500 bg-blue-50 text-sm leading-relaxed">
+
+### 为什么它们目前选择开源？
+
+**战略性打击**：如果你没有前沿智能，通过提供一个**近乎免费的替代品**来打击竞争对手的利润率和融资能力。这正是中国实验室当前的策略——用开源削弱 OpenAI 和 Anthropic 的商业飞轮。
+
+</div>
+
+<div class="p-4 rounded border-l-4 border-green-500 bg-green-50 text-sm leading-relaxed">
+
+Tommy 特别提到 **GLM 5.1** 深受欢迎，社区在开源模型上做各种微调，用途广泛。
 
 </div>
 
@@ -672,144 +324,483 @@ Hermes is Tommy's daily driver — on Telegram, on desktop. It's not just a proo
 
 ---
 
-# Venice & Grass: Privacy + Data Infrastructure
+# 中国模型为何可能转向闭源？
 
-<div class="text-sm opacity-60 mb-3">Beyond the app layer — the infrastructure is also going decentralized</div>
+<div class="mt-4 space-y-4">
 
-<div class="grid grid-cols-2 gap-4 mt-4">
+<div class="grid grid-cols-2 gap-4">
 
-<div class="p-4 bg-blue-50 border-l-4 border-blue-500 rounded text-sm leading-relaxed">
-<strong>Venice AI</strong>
-<div class="text-xs opacity-70 mb-2">by Eric Voorhees</div>
+<div class="p-3 rounded border-l-4 border-red-500 bg-red-50 text-sm">
 
-- Open source model access at scale
-- Privacy guarantees — models on private data centers, end-to-end encryption in TEEs
-- Explicitly built to NOT block requests
-- "Claude blocking people's requests. That's exactly what Venice is built for"
+### 信号 1：成本与回报失衡
 
-Tommy: "I'm a huge Eric Voorhees fan. I think he's just good for humanity in general."
+这些公司投入**巨额资金**训练模型，但几乎收不到回报：
+
+- **没有收入**：模型跑在 Venice、OpenRouter 等第三方推理平台上，不产生直接收入
+- **没有数据回流**：无法像闭源模型那样形成"使用→训练"的数据飞轮
+- "纯烧钱"模式在商业上无法持续
 
 </div>
 
-<div class="p-4 bg-orange-50 border-l-4 border-orange-500 rounded text-sm leading-relaxed">
-<strong>Grass</strong>
-<div class="text-xs opacity-70 mb-2">Delphi Ventures portfolio</div>
+<div class="p-3 rounded border-l-4 border-orange-500 bg-orange-50 text-sm">
 
-- 3 million user nodes worldwide
-- Scrapes real, diverse data for AI labs
-- A key deep-in use case
-- Decentralized alternative to centralized web scraping
+### 信号 2：微妙的动向
 
-Tommy: "They're just an incredible company in getting real data for AI labs. It's a key deep-in use case that just sort of makes sense."
+- **Alibaba** 开源了一款模型，**第二天主管就被开除**
+- **GLM** 在完全开源前，先把一个版本**私藏了一段时间**
+- 这些"小裂痕"暗示着内部可能存在重新评估
 
 </div>
 
 </div>
 
-<div class="mt-3 p-3 bg-green-50 border-l-4 border-green-500 rounded text-sm leading-relaxed">
-<strong>The shift</strong>: "it's a very different world than what you and I saw 12 to 18 or 24 months ago, where it was just like these AI reply bots with tokens. That is completely dead and the only ones that will be able to survive are real infra projects."
-</div>
-
----
-
-# The Tragedy of the Commons in AI
-
-<div class="text-sm opacity-60 mb-3">Laura Shin's framing: everyone wants AGI, but nobody wants to pay or share data</div>
-
-<div class="mt-4 space-y-3 text-sm leading-relaxed">
-
-<div class="p-4 bg-orange-50 border-l-4 border-orange-500 rounded italic">
-"It almost feels like a tragedy of the commons type of situation where everybody wants the models to get better, but that requires data, but they don't want to give their own data, and they don't want to pay."
-<div class="text-xs opacity-60 mt-1 not-italic">— Laura Shin, framing the core tension</div>
-</div>
-
-<div class="grid grid-cols-3 gap-3 mt-3">
-
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded text-center text-sm">
-<strong>Want</strong>
-<div class="text-xs opacity-70 mt-1">Frontier AGI capability for everyone</div>
-</div>
-
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded text-center text-sm">
-<strong>Don't want to</strong>
-<div class="text-xs opacity-70 mt-1">Pay frontier prices or share their data</div>
-</div>
-
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded text-center text-sm">
-<strong>Result</strong>
-<div class="text-xs opacity-70 mt-1">Usage shifts to cheaper alternatives → funding dries up</div>
-</div>
-
-</div>
-
-<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded text-sm leading-relaxed">
-<strong>Tommy's response</strong>: He agrees. The solution might be for frontier labs to "have direct ownership of the massive new creations they create to rationalize the spend" — new medicines, robots, technologies. A "$20 a month subscription" isn't a fair return for creating something revolutionary.
+<div class="p-3 rounded border-l-4 border-gray-400 bg-gray-50 text-sm leading-relaxed">
+<strong>Tommy 的判断</strong>：目前尚未发生，但如果巨额支出持续下去，这些公司最终会考虑闭源。至少可以控制分发和收费。
 </div>
 
 </div>
 
 ---
 
-# The Funding Paradox
+# 闭源的悖论：中国闭源 → 美国受益
 
-<div class="text-sm opacity-60 mb-3">How do we pay for the AGI we all want without breaking the model?</div>
+<div class="mt-4 space-y-4">
 
-<div class="mt-4 space-y-3 text-sm leading-relaxed">
+<div class="p-4 rounded border-l-4 border-blue-500 bg-blue-50 text-sm leading-relaxed">
 
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
-<strong>The current model</strong>: Subscription fees ($20-200/month) fund massive GPU training runs. But usage is subsidized 40×. As enterprises shift to API, the real economics are exposed.
+### 如果中国模型转向闭源……
+
+Tommy 认为这反而会**帮助 OpenAI 和 Anthropic**，前提是中国模型的质量没有超过美国前沿实验室。
+
 </div>
 
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
-<strong>One path — frontier labs own their creations</strong>: "If it's a new medicine, they should own 10% of it. If it's a new robot, if it's a new technology. OpenAI cannot be the beneficiary of a $20 a month subscription."
+<div class="grid grid-cols-2 gap-4">
+
+<div class="p-3 rounded border-l-4 border-green-500 bg-green-50 text-sm">
+
+### 受益点 1：替代品消失
+
+如果一切闭源，用户**不再有廉价替代方案**可用。企业无法逃向开源推理提供商——因为开源模型本身不再存在。
+
 </div>
 
-<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-<strong>Another path — crypto capital formation</strong>: Crowdfund open-source AI development through token-based mechanisms. Let the community own the models collectively, rather than a handful of labs.
+<div class="p-3 rounded border-l-4 border-green-500 bg-green-50 text-sm">
+
+### 受益点 2：定价权回归
+
+没有了替代选择，OpenAI 和 Anthropic **可以随意定价**。"如果一切闭源，你只能用我们。想收多贵收多贵。"
+
 </div>
 
-<div class="p-3 bg-purple-50 border-l-4 border-purple-500 rounded">
-<strong>The open-source wildcard</strong>: "OpenRouter has shown massive usage, just raised a $50 million round. Venice is off the charts." The open-source inference layer is already well-funded and growing.
+</div>
+
+<div class="p-3 rounded border-l-4 border-yellow-500 bg-yellow-50 text-sm leading-relaxed">
+<strong>前提</strong>：中国模型当前质量还比不上美国前沿实验室。如果未来追上，闭源将构成真正的竞争威胁。但目前，闭源只会让廉价替代方案消失，反而巩固了美国的垄断。
 </div>
 
 </div>
 
 ---
 
-# Core Quotes
+# "老大哥" AI：审查与滥用
 
-<div class="text-sm opacity-60 mb-4">The most memorable lines from this conversation</div>
+<div class="mt-4 space-y-4">
 
-<div class="space-y-2">
+<div class="p-4 rounded border-l-4 border-red-500 bg-red-50 text-sm leading-relaxed">
 
-<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded italic text-sm leading-relaxed">
-"The subscriptions are subsidized by about forty X versus what you get at the API."
-<div class="text-xs opacity-60 mt-1 not-italic">— On the core economic mismatch driving the AI business model crisis</div>
+### 现实案例
+
+有人问 Claude "线粒体是不是细胞的动力工厂"——一个中学生物课级别的问题——结果系统**拒绝回答**，理由是"安全功能"触发。
+
+这不是孤例。越来越多用户抱怨 AI 模型在扮演"警察"角色，阻止他们进行完全无害的查询。
+
 </div>
 
-<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded italic text-sm leading-relaxed">
-"Get your same intelligence for one tenth to one one hundredth the cost. You're not getting frontier intelligence, you're getting something eighty to ninety percent as good, but one percent the cost."
-<div class="text-xs opacity-60 mt-1 not-italic">— On why open source inference is winning enterprise customers</div>
+<div class="p-4 rounded border-l-4 border-yellow-500 bg-yellow-50 text-sm leading-relaxed">
+
+### 滑坡效应
+
+Tommy 的态度很鲜明：让 AI 实验室决定你能问什么、不能研究什么，是一个**非常危险的滑坡**。
+
+**"你想生活在中国，连天安门广场都不让问吗？没人想要那样。"**
+
+问题不在于"这个模型有没有拒绝过真正危险的请求"，而在于**谁有权力画这条线**。
+
 </div>
 
-<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded italic text-sm leading-relaxed">
-"I view it as big brother fearmongering and I think it's super annoying."
-<div class="text-xs opacity-60 mt-1 not-italic">— On AI labs dictating what users can ask</div>
+<div class="p-3 rounded border-l-4 border-gray-400 bg-gray-50 text-sm leading-relaxed">
+<strong>Tommy 的坦诚</strong>：他理解确实存在模型可能被滥用的风险——比如造出能摧毁世界的病毒。但那应该是例外中的例外，而不是常态化的内容审查。
 </div>
 
-<div class="p-3 bg-purple-50 border-l-4 border-purple-500 rounded italic text-sm leading-relaxed">
-"Open source AI is the ultimate solution to the safety issues that everybody talks about."
-<div class="text-xs opacity-60 mt-1 not-italic">— The accelerationist case for open vs. closed AI</div>
 </div>
 
-<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded italic text-sm leading-relaxed">
-"Once you tap into the open source global community, it puts projects on a flywheel and a velocity that's just really hard to catch."
-<div class="text-xs opacity-60 mt-1 not-italic">— On Nous Hermes agent beating centralized products</div>
+---
+
+# 开源才是真正的安全解决方案
+
+<div class="mt-4 space-y-4">
+
+<div class="p-4 rounded border-l-4 border-blue-500 bg-blue-50 text-sm leading-relaxed">
+
+### 核心论点：Linux vs Windows
+
+Tommy 是坚定的**加速主义阵营**（Accelerationist）：
+
+**"信任一间屋子里的 10 个人——不管他们多天才——行不通。"**
+
+开源的逻辑是：
+
+- **规模化审计**：成千上万的人可以检查、测试、攻击代码
+- **攻防博弈**：真正的安全来自于经受过无数次攻击的考验
+- **Linux 比 Windows 更安全**，不是因为它天生更完美，而是因为全世界都在盯着它
+
 </div>
 
-<div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded italic text-sm leading-relaxed">
-"Everything's been priced to perfection recently and it's been up and to the right."
-<div class="text-xs opacity-60 mt-1 not-italic">— Warning that AI valuations may not survive slowing revenue growth</div>
+<div class="p-4 rounded border-l-4 border-green-500 bg-green-50 text-sm leading-relaxed">
+
+### 对 AI 安全的启示
+
+开源、加速、让更多人获得这项技术——这不是安全问题，而是**安全问题的终极答案**。把模型关起来、只让少数人掌控，反而是**增加风险**，不是减少。
+
+Tommy 自认是 **Beth Jezos 阵营**的——坚定加速主义，但能理解有不同的声音。
+
+</div>
+
+</div>
+
+---
+
+# AI 的激励困境：公地悲剧
+
+<div class="mt-4 space-y-4">
+
+<div class="p-4 rounded border-l-4 border-red-500 bg-red-50 text-sm leading-relaxed">
+
+### 矛盾的多方诉求
+
+每个人都**想要更好的模型** → 这需要更多数据和资金。但：
+- 没人**愿意贡献自己的数据**
+- 也没人**愿意付高价**
+- 前沿模型太贵 → **逃向开源替代**
+- 逃向开源 → 前沿实验室**收入下降**
+- 收入下降 → **训练放缓** → **我们得不到更好的模型**
+
+这是一个经典的**公地悲剧**：个人理性行为（省钱）导致集体非理性结果（技术进步放缓）。
+
+</div>
+
+<div class="p-4 rounded border-l-4 border-blue-500 bg-blue-50 text-sm leading-relaxed">
+
+### Tommy 提出的结构性问题
+
+前沿 AI 实验室创造了巨大的价值，但只通过每月 $20 订阅费来回收成本——<strong>"这根本不公平，也不合理。"</strong>
+
+如果前沿智能创造出一种**新药**或**新机器人**，OpenAI 难道只能受益于一个 $20/月的订阅？Tommy 认为，前沿实验室需要**直接拥有**它们创造的重大发明的一部分——比如 10% 的权益。
+
+</div>
+
+</div>
+
+---
+layout: two-cols
+---
+
+# Crypto × AI：四个交汇点
+
+<div class="text-sm leading-relaxed">
+
+### 为什么 Crypto 天然适合修补 AI 的漏洞？
+
+AI 面临的问题——**资本形成、审查、隐私、开放社区治理**——正是 Crypto 最擅长的领域。
+
+Laura 提出的框架："公地悲剧的背面，就是 Crypto 的用武之地。"
+
+Crypto 的四个交汇方向：
+
+- **资本形成**：众筹开源 AI 模型
+- **隐私与抗审查**：不屏蔽用户请求的 AI 访问
+- **数据层**：去中心化数据获取
+- **应用层**：开源社区驱动的 Agent 框架
+
+</div>
+
+::right::
+
+<div class="flex justify-center items-center h-full pl-4">
+<Excalidraw
+  drawFilePath="./crypto-ai-four-cn.excalidraw"
+  class="w-[460px]"
+  :darkMode="false"
+  :background="false"
+/>
+</div>
+
+---
+
+# 资本形成：用 Crypto 众筹开源 AI
+
+<div class="mt-4 space-y-4">
+
+<div class="p-4 rounded border-l-4 border-green-500 bg-green-50 text-sm leading-relaxed">
+
+### Tommy 的思路
+
+**"非常容易想象"**——为一个主要的开源 AI 公司做 ICO，众筹一个所有人都能拥有、保障和部署的模型。
+
+即使模型的训练是**中心化**的（因为去中心化训练目前太难），但如果我们**共同拥有**它，效果是革命性的。
+
+</div>
+
+<div class="grid grid-cols-2 gap-4">
+
+<div class="p-3 rounded border-l-4 border-blue-500 bg-blue-50 text-sm">
+
+### 优势
+- 社区**共同所有权**→ 不会被单一实验室垄断
+- 资金来源于**全球众筹**→ 不依赖少数 VC
+- 开源模型**无法被关停**
+- 收入模型可由 DAO 治理决定
+
+</div>
+
+<div class="p-3 rounded border-l-4 border-yellow-500 bg-yellow-50 text-sm">
+
+### 挑战
+- 开源模型如何**赚钱**？商业模式仍难设计
+- 中心化训练的问题——虽然 Idea 对，但去中心化训练目前"太难"
+- Google 的 DiLoCo 虽好，实际大规模训练依然困难
+- Tommy 坦承：他已经在这个领域"认输"了
+
+</div>
+
+</div>
+
+</div>
+
+---
+
+# 隐私与抗审查：Venice AI
+
+<div class="mt-4 space-y-4">
+
+<div class="p-4 rounded border-l-4 border-blue-500 bg-blue-50 text-sm leading-relaxed">
+
+### 为什么 Venice 存在？
+
+回到前面 Claude 屏蔽"线粒体"问题的案例——**Venice 就是为这个而建的**：
+
+- **不屏蔽请求**：你想问什么就问什么
+- **隐私保障**：模型运行在私有数据中心
+- **端到端加密**：在 TEE（可信执行环境）中运行
+- **开源模型访问**：提供最好的开源模型，同时保护你的数据
+
+</div>
+
+<div class="p-4 rounded border-l-4 border-orange-500 bg-orange-50 text-sm leading-relaxed">
+
+### 隐私不再是垄断优势
+
+前沿实验室曾以"数据隐私和数据保留"作为说服企业使用其企业版方案的核心卖点。但：
+
+- **OpenRouter** 允许私有模型部署
+- **Venice** 提供强大的隐私保证——TEE 中运行、端到端加密
+- 这些不再是 OpenAI/Anthropic 的独家功能
+
+**"企业无法获得隐私保障"这个论点正在慢慢瓦解。**
+
+</div>
+
+</div>
+
+---
+
+# 开源社区的力量：Nous Hermes
+
+<div class="mt-4 space-y-4">
+
+<div class="p-4 rounded border-l-4 border-purple-500 bg-purple-50 text-sm leading-relaxed">
+
+### 一个"非中心化实验室"的成功故事
+
+**Nous Research** 推出的 Hermes Agent 是一个惊人的案例：
+
+- **15 万 GitHub Star**，数千贡献者持续改进
+- **不是由中心化实验室建造的**
+- 任何一天、任何一周，Hermes Agent 的使用量是 **OpenClaw 的 3-4 倍**
+- Tommy 的**日常驾驶工具**——在 Telegram 上、桌面上，每天都在用
+
+</div>
+
+<div class="grid grid-cols-2 gap-4">
+
+<div class="p-3 rounded border-l-4 border-green-500 bg-green-50 text-sm">
+
+### 为什么开源社区能赢？
+
+一旦接入**开源全球社区**，项目就进入了**飞轮和速度**——这是中心化实验室很难追上的。人们会说"实验室太强了"，但数据不这么说。Hermes Agent > OpenClaw，事实胜于雄辩。
+
+</div>
+
+<div class="p-3 rounded border-l-4 border-blue-500 bg-blue-50 text-sm">
+
+### 对行业的启示
+
+**开源社区 + 全球贡献者网络**的组合赋予项目全新的生命力。这不仅是效率问题，更是**方向问题**——一个不会被某个公司关停的 Agent，一个真正属于所有人的工具。
+
+</div>
+
+</div>
+
+</div>
+
+---
+
+# 数据层：Grass 与其他项目
+
+<div class="mt-4 space-y-4">
+
+<div class="p-4 rounded border-l-4 border-orange-500 bg-orange-50 text-sm leading-relaxed">
+
+### Grass：去中心化数据抓取网络
+
+- **300 万个全球节点**，分布在世界各地
+- 利用闲置用户的设备节点**抓取真实数据**，供应给 AI 实验室训练
+- Delphi Ventures 早期投资，Tommy 认为这是一个"很自然"的用例
+
+</div>
+
+<div class="p-4 rounded border-l-4 border-blue-500 bg-blue-50 text-sm leading-relaxed">
+
+### 其他值得关注的项目
+
+- **Ambient**：一个"有用工作量证明"（Proof of Useful Work）的 AI 项目，提供高度优化的模型
+- **BitTensor**：在去中心化 AI 训练领域做过尝试，包括子网 2 等训练运行
+
+</div>
+
+<div class="p-3 rounded border-l-4 border-gray-400 bg-gray-50 text-sm leading-relaxed">
+<strong>Tommy 的坦承</strong>：去中心化训练虽然理念好，但目前技术难度太大。Google 的 DiLoCo 和去中心化 DiLoCo 虽然发布了几周，但仍面临巨大挑战。作为一个加密投资者，他已经在这个方向上"认输"了。
+</div>
+
+</div>
+
+---
+
+# Crypto 如何修补 AI 的商业模式
+
+<div class="mt-3 grid grid-cols-2 gap-3 text-sm">
+
+<div class="p-3 rounded border-l-4 border-red-500 bg-red-50">
+
+### 问题
+AI 商业模式崩裂
+
+**症状**：
+- 40× 补贴导致企业流失
+- 开源替代 1% 成本
+- 营收增长放缓威胁飞轮
+- 价格战是表象，不是根因
+
+</div>
+
+<div class="p-3 rounded border-l-4 border-green-500 bg-green-50">
+
+### Crypto 解法
+众筹 + 共同所有权 + 抗审查
+
+**处方**：
+- ICO 融资开源 AI 模型
+- 去中心化数据获取（Grass）
+- 抗审查访问（Venice）
+- 开源社区治理（Nous）
+
+</div>
+
+<div class="p-3 rounded border-l-4 border-yellow-500 bg-yellow-50">
+
+### 尚未解决的问题
+
+**三个"尚未奏效"的领域**：
+- **去中心化训练**：技术太难
+- **开源模型盈利**：商业模式不清晰
+- **速度差距**：前沿实验室仍领先
+
+</div>
+
+<div class="p-3 rounded border-l-4 border-blue-500 bg-blue-50">
+
+### Tommy 的整体判断
+长期看多，短期谨慎
+
+- 长期：100% 相信会实现 AGI、机器人、大规模数据中心
+- 中短期：企业成本保守 + 开源替代 → 飞轮承压
+- 一切都按完美定价——但完美不会持久
+
+</div>
+
+</div>
+
+---
+
+# 核心金句
+
+<div class="text-sm opacity-60 mb-3">这期对谈里最值得记住的几句：</div>
+
+<div class="space-y-2 text-sm">
+
+<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded leading-relaxed">
+"订阅被补贴了大约 40 倍。$200/月的订阅，在 API 上大约值 $8,000。"
+<div class="text-xs opacity-60 mt-1">— Tommy 揭示 AI 商业模式最深层的不对称</div>
+</div>
+
+<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded leading-relaxed">
+"你可以用 1/10 到 1/100 的成本获得同样的智能——80-90% 的质量，1% 的价格。"
+<div class="text-xs opacity-60 mt-1">— 开源替代方案的核心竞争力</div>
+</div>
+
+<div class="p-3 bg-purple-50 border-l-4 border-purple-500 rounded leading-relaxed">
+"让 AI 实验室来规定我们能问什么问题——这是一个非常危险的滑坡。"
+<div class="text-xs opacity-60 mt-1">— Tommy 对 AI 审查的警告</div>
+</div>
+
+<div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded leading-relaxed">
+"信任 10 个关在房间里的人，不管他们多天才，都行不通。开放源代码、加速、让所有人来审计——这才是保护世界的最好方式。"
+<div class="text-xs opacity-60 mt-1">— Linux vs Windows 论证的 AI 版本</div>
+</div>
+
+<div class="p-3 bg-red-50 border-l-4 border-red-500 rounded leading-relaxed">
+"一切都被按'完美'定价了——但完美不会持久。"
+<div class="text-xs opacity-60 mt-1">— Tommy 对 AI 估值泡沫的核心警告</div>
+</div>
+
+</div>
+
+---
+
+# 核心金句（续）
+
+<div class="text-sm opacity-60 mb-3">更多值得注意的洞察：</div>
+
+<div class="space-y-2 text-sm">
+
+<div class="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded leading-relaxed">
+"一旦接入开源全球社区，项目就进入了飞轮和速度——这是中心化实验室很难追上的。Hermes Agent 的使用量是 OpenClaw 的 3 到 4 倍。"
+<div class="text-xs opacity-60 mt-1">— 开源的力量胜过中心化，数据为证</div>
+</div>
+
+<div class="p-3 bg-blue-50 border-l-4 border-blue-500 rounded leading-relaxed">
+"企业正在告诉员工：你不能再无限使用 Token 了。"
+<div class="text-xs opacity-60 mt-1">— "Token Max" 时代的终结信号</div>
+</div>
+
+<div class="p-3 bg-purple-50 border-l-4 border-purple-500 rounded leading-relaxed">
+"如果中国模型转向闭源且质量不如前沿实验室——那反而帮助了 OpenAI 和 Anthropic。因为替代品消失了，他们可以想收多贵就收多贵。"
+<div class="text-xs opacity-60 mt-1">— 闭源的悖论</div>
+</div>
+
+<div class="p-3 bg-green-50 border-l-4 border-green-500 rounded leading-relaxed">
+"如果我们公开看到了企业流失，他们私下看到的要多得多。"
+<div class="text-xs opacity-60 mt-1">— OpenAI 降价的真正原因不是竞争，是客户在流失</div>
 </div>
 
 </div>
@@ -818,18 +809,12 @@ Tommy: "They're just an incredible company in getting real data for AI labs. It'
 layout: end
 ---
 
-<div class="text-2xl font-light tracking-wider mt-8">
-Thank You
-</div>
+# 谢谢
 
 <div class="mt-6 text-lg opacity-70 italic">
-"The most basic way AI could blow up"
+"我是 100% 长期看多的——我相信我们会实现 AGI、机器人、大规模数据中心。但短期内，一切都按照完美定价了——而完美不会持久。"
 </div>
 
-<div class="mt-4 text-sm opacity-50">
-— Tommy Shaughnessy's viral tweet, now a real debate on Wall Street
-</div>
-
-<div class="mt-10 text-xs opacity-40">
-Unchained Podcast · June 2026
+<div class="mt-8 text-sm opacity-50">
+Tommy Shaughnessy · Delphi Ventures · Unchained Podcast 2026
 </div>

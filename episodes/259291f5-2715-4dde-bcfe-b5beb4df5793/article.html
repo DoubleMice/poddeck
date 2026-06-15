@@ -14,10 +14,7 @@ body {
   background: #fafafa;
   padding: 2rem 1rem;
 }
-article {
-  max-width: 720px;
-  margin: 0 auto;
-}
+article { max-width: 720px; margin: 0 auto; }
 header {
   text-align: center;
   padding: 3rem 0 2rem;
@@ -31,65 +28,34 @@ header h1 {
   color: #0f172a;
   margin-bottom: 0.75rem;
 }
-header .meta {
-  font-size: 0.9rem;
-  color: #64748b;
-}
+header .meta { font-size: 0.9rem; color: #64748b; }
 header .meta span { margin: 0 0.5rem; }
-header .meta a {
-  color: #2563eb;
-  text-decoration: none;
-}
+header .meta a { color: #2563eb; text-decoration: none; }
 header .meta a:hover { text-decoration: underline; }
 
 h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin: 2.5rem 0 1rem;
-  padding-bottom: 0.4rem;
+  font-size: 1.4rem; font-weight: 700; color: #0f172a;
+  margin: 2.5rem 0 1rem; padding-bottom: 0.4rem;
   border-bottom: 2px solid #e2e8f0;
 }
-h3 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #334155;
-  margin: 1.5rem 0 0.75rem;
-}
-p {
-  margin: 0.75rem 0;
-}
+h3 { font-size: 1.15rem; font-weight: 600; color: #334155; margin: 1.5rem 0 0.75rem; }
+p { margin: 0.75rem 0; }
+
 blockquote {
-  margin: 1.25rem 0;
-  padding: 1rem 1.25rem;
-  border-left: 4px solid #2563eb;
-  background: #eff6ff;
-  border-radius: 0 8px 8px 0;
-  font-style: italic;
-  color: #1e3a5f;
+  margin: 1.25rem 0; padding: 1rem 1.25rem;
+  border-left: 4px solid #2563eb; background: #eff6ff;
+  border-radius: 0 8px 8px 0; font-style: italic; color: #1e3a5f;
 }
 blockquote .attr {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  font-style: normal;
-  color: #64748b;
+  display: block; margin-top: 0.5rem; font-size: 0.85rem;
+  font-style: normal; color: #64748b;
 }
 
-/* Topic cards for overview */
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 1.25rem 0;
-}
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
 @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
 .card {
-  padding: 1rem 1.1rem;
-  border-radius: 8px;
-  border-left: 4px solid #94a3b8;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  padding: 1rem 1.1rem; border-radius: 8px; border-left: 4px solid #94a3b8;
+  font-size: 0.95rem; line-height: 1.6;
 }
 .card strong { display: block; margin-bottom: 0.3rem; }
 .card-blue   { background: #eff6ff; border-color: #3b82f6; }
@@ -99,22 +65,15 @@ blockquote .attr {
 .card-orange { background: #fff7ed; border-color: #f97316; }
 .card-red    { background: #fef2f2; border-color: #ef4444; }
 
-/* Quote wall */
 .quote-wall { margin: 1.5rem 0; }
 .quote-item {
-  padding: 1rem 1.25rem;
-  margin: 0.75rem 0;
-  border-left: 4px solid #3b82f6;
-  border-radius: 0 8px 8px 0;
-  font-style: italic;
-  line-height: 1.7;
+  padding: 1rem 1.25rem; margin: 0.75rem 0;
+  border-left: 4px solid #3b82f6; border-radius: 0 8px 8px 0;
+  font-style: italic; line-height: 1.7;
 }
 .quote-item .ctx {
-  display: block;
-  margin-top: 0.4rem;
-  font-size: 0.85rem;
-  font-style: normal;
-  color: #64748b;
+  display: block; margin-top: 0.4rem; font-size: 0.85rem;
+  font-style: normal; color: #64748b;
 }
 .qi-blue   { background: #eff6ff; border-color: #3b82f6; }
 .qi-green  { background: #f0fdf4; border-color: #22c55e; }
@@ -123,72 +82,57 @@ blockquote .attr {
 .qi-orange { background: #fff7ed; border-color: #f97316; }
 .qi-red    { background: #fef2f2; border-color: #ef4444; }
 
-/* Highlight boxes */
 .highlight {
-  margin: 1rem 0;
-  padding: 0.9rem 1.1rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  line-height: 1.65;
+  margin: 1rem 0; padding: 0.9rem 1.1rem; border-radius: 8px;
+  font-size: 0.95rem; line-height: 1.65;
 }
 .hl-blue   { background: #eff6ff; border: 1px solid #bfdbfe; }
 .hl-green  { background: #f0fdf4; border: 1px solid #bbf7d0; }
 .hl-yellow { background: #fefce8; border: 1px solid #fef08a; }
 .hl-orange { background: #fff7ed; border: 1px solid #fed7aa; }
+.hl-purple { background: #faf5ff; border: 1px solid #e9d5ff; }
+.hl-red    { background: #fef2f2; border: 1px solid #fecaca; }
 
-/* Number boxes */
 .num-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.75rem;
-  margin: 1.25rem 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem; margin: 1.25rem 0;
 }
 .num-box {
-  text-align: center;
-  padding: 1.25rem 1rem;
-  border-radius: 8px;
+  text-align: center; padding: 1.25rem 1rem; border-radius: 8px;
   border: 2px solid #e2e8f0;
 }
-.num-box .num {
-  font-size: 2rem;
-  font-weight: 800;
-  margin: 0.3rem 0;
-}
-.num-box .label {
-  font-size: 0.82rem;
-  color: #64748b;
-}
+.num-box .num { font-size: 2rem; font-weight: 800; margin: 0.3rem 0; }
+.num-box .label { font-size: 0.82rem; color: #64748b; }
 .nb-blue   { background: #eff6ff; border-color: #93c5fd; }
 .nb-blue .num { color: #2563eb; }
 .nb-green  { background: #f0fdf4; border-color: #86efac; }
 .nb-green .num { color: #16a34a; }
 .nb-orange { background: #fff7ed; border-color: #fdba74; }
 .nb-orange .num { color: #ea580c; }
+.nb-red    { background: #fef2f2; border-color: #fca5a5; }
+.nb-red .num { color: #dc2626; }
+
+.cost-ladder { margin: 1.25rem 0; list-style: none; padding: 0; }
+.cost-ladder li {
+  padding: 0.6rem 0; border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
 
 footer {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e2e8f0;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #94a3b8;
+  margin-top: 3rem; padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0; text-align: center;
+  font-size: 0.85rem; color: #94a3b8;
 }
-footer a {
-  color: #2563eb;
-  text-decoration: none;
-}
+footer a { color: #2563eb; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
-.gloss {
-  display: inline-block;
-  font-size: 0.82rem;
-  color: #64748b;
-  background: #f1f5f9;
-  padding: 0.15rem 0.5rem;
-  border-radius: 4px;
-  font-style: normal;
-  margin: 0 0.2rem;
+table {
+  width: 100%; border-collapse: collapse; margin: 1.25rem 0;
+  font-size: 0.92rem;
 }
+th, td { padding: 0.6rem 0.8rem; border-bottom: 1px solid #e2e8f0; text-align: left; }
+th { background: #f8fafc; font-weight: 600; color: #475569; }
+td:last-child, th:last-child { text-align: center; }
 </style>
 </head>
 <body>
@@ -212,28 +156,28 @@ footer a:hover { text-decoration: underline; }
 
   <div class="cards">
     <div class="card card-blue">
-      <strong>🚀 SpaceX 史上最大 IPO</strong>
-      1.75 万亿美元估值，将火箭发射、星链和 xAI 打包上市。马斯克在招股书里勾勒了一个全新的叙事：把地面数据中心搬到太空。
+      <strong>史上最大 IPO</strong>
+      1.75 万亿美元估值，SpaceX 将火箭发射、星链和 xAI 打包上市。招股书勾勒了一个新叙事：把地面数据中心搬到太空。
     </div>
     <div class="card card-green">
-      <strong>⚡ 1 GW 算力进入轨道</strong>
+      <strong>1 GW 算力进入轨道</strong>
       一万颗卫星、一百次星舰发射、晨昏轨道——这份计划既像科幻又像工程路线图。路易斯赌 2029 年实现，秉彦认为没必要。
     </div>
     <div class="card card-yellow">
-      <strong>🔥 散热反常识</strong>
-      太空又黑又冷 ≠ 散热免费。真空没有热对流，辐射散热效率 ∝ T⁴——温度是解锁太空数据中心的关键变量。
+      <strong>散热反常识</strong>
+      太空又黑又冷 ≠ 散热免费。真空没有热对流，辐射散热效率与温度的四次方成正比——温度是解锁太空数据中心的关键变量。
     </div>
     <div class="card card-purple">
-      <strong>📊 物理可行，经济存疑</strong>
+      <strong>物理可行，经济存疑</strong>
       每一项技术挑战都可以从第一性原理拆解。但从两个月回本到两年，每加一个现实假设，账本就翻倍。
     </div>
     <div class="card card-orange">
-      <strong>🌙 月球 vs 火星</strong>
+      <strong>月球 vs 火星</strong>
       NASA 局长从"火星派"转向"月球派"的背后，是一笔更务实的经济账。月球可能是深空经济的第一个工业基地。
     </div>
     <div class="card card-red">
-      <strong>💼 VC 的投资逻辑</strong>
-      太空数据中心创业公司为什么不被看好？SpaceX 的垂直整合是壁垒——任何独立创业公司的成本至少是 SpaceX 的三倍。
+      <strong>VC 为什么不看好</strong>
+      太空数据中心创业公司为何不被 VC 青睐？SpaceX 的垂直整合是壁垒——任何独立创业公司的成本至少是 SpaceX 的三倍。
     </div>
   </div>
 </section>
@@ -243,17 +187,17 @@ footer a:hover { text-decoration: underline; }
 
   <p>2026 年，SpaceX 敲钟上市。1.75 万亿美元的估值让它跻身全球市值前十的科技公司行列。但真正让市场兴奋的不是火箭回收技术——而是招股书里悄悄埋下的一条新故事线：太空数据中心。</p>
 
-  <p>SpaceX 身上经历了一次经典的叙事跃迁：从太空运输公司（估值上限 = 发射市场），到太空互联网公司（星链，估值上限 = 电信市场），再到太空 AI 算力平台（数据中心 + xAI，估值上限 = AI 云计算）。每一次跃迁，估值天花板都被大幅抬高。路易斯·宏在节目中指出，马斯克在 S-1 招股书里刻意把太空经济的规模写得很小——"因为我不认为大家会理解太空的潜力。"</p>
+  <p>SpaceX 经历了一次经典的叙事跃迁：从太空运输公司（估值上限等于发射市场），到太空互联网公司（星链，估值上限等于电信市场），再到太空 AI 算力平台（数据中心加 xAI，估值上限等于 AI 与云计算）。每一次跃迁，估值天花板都被大幅抬高。</p>
 
-  <div class="highlight hl-blue">
-    <strong>作者概括：</strong>SpaceX 内部有一个近乎宗教般的信仰："太空里面的经济是远远是地球上的经济的好几倍大，就整个加起来。但是呢，这个题材跟任何人讲，大家都会觉得你是疯子。"这个信念支撑着他们把每一个里程碑都看作"只是 check box，明天继续还有很多要做的"。
-  </div>
+  <p>路易斯在节目中指出，马斯克在 S-1 招股书里刻意把太空经济的规模写得很小——"因为我不认为大家会理解太空的潜力。太空里面的经济是远远是地球上的经济的好几倍的。但是这个题材跟任何人讲，大家都会觉得你是疯子。"</p>
+
+  <p>节目录制期间，路易斯刚从 SpaceX 的 Starbase 基地回来——这是他时隔八年的第二次访问。2018 年那里还是一片荒凉湿地，几个帐篷加几辆露营车，员工住在车里，白天在帐篷里工作，野生动物遍地。2026 年，现代化总部大楼已经建成，两个巨型 Mega Bay 矗立在曾经的湿地上，无数 Cybertruck 停在停车场。有人甚至预留了"火星大使馆"的位置。对 SpaceX 来说，IPO 只是一个 check box——"现在才刚开始，未来二三十年还要开发。"</p>
 </section>
 
 <section>
   <h2>1 GW 算力上太空：物理上需要什么？</h2>
 
-  <p>马斯克的计划核心是一个数字：<strong>1 gigawatt（1 GW）</strong>——足够驱动一个大型数据中心的算力，部署在近地轨道的晨昏轨道上。</p>
+  <p>马斯克计划的核心是一个数字：<strong>1 gigawatt（1 GW）</strong>——足够驱动一个大型数据中心的算力，全部部署在近地轨道的晨昏轨道上。</p>
 
   <div class="num-grid">
     <div class="num-box nb-blue">
@@ -264,7 +208,7 @@ footer a:hover { text-decoration: underline; }
     <div class="num-box nb-green">
       <div class="label">发射次数</div>
       <div class="num">100</div>
-      <div class="label">每次 100 颗，星舰运力 ~100 吨</div>
+      <div class="label">每次 100 颗，星舰运力约 100 吨</div>
     </div>
     <div class="num-box nb-orange">
       <div class="label">太阳能板</div>
@@ -273,45 +217,41 @@ footer a:hover { text-decoration: underline; }
     </div>
   </div>
 
-  <p><strong>晨昏轨道（Dawn-Dusk Orbit）</strong>是这个计划的第一道巧妙设计。卫星始终贴着地球的晨昏线飞行，永远面向太阳——每天最多只有 35 分钟被地球阴影遮挡。这意味着太阳能板几乎可以持续满功率发电，不需要大面积储能电池。</p>
+  <p><strong>晨昏轨道</strong>是这个计划的第一道巧妙设计。卫星始终贴着地球的晨昏线飞行，永远面向太阳——每天最多只有 35 分钟被地球阴影遮挡。这意味着太阳能板几乎可以持续满功率发电，不需要大面积储能电池。但晨昏轨道是稀有资源：按目前的安全距离标准（卫星之间间隔几十公里），一万颗卫星就会占满一整条轨道的容量。轨道周长约四万公里，这是一个简单的除法。</p>
 
-  <p>但晨昏轨道是稀有资源。按目前的安全距离标准（卫星之间间隔几十公里），一万颗卫星就会占满一整条轨道的容量。轨道周长约四万公里，10,000 × 几十公里 ≈ 一条轨道填满。</p>
+  <p>不过太空是三维空间——安全距离每缩小一半，可用容量变为 8 倍。路易斯认为："会有限制，但技术的发展应该会抵消这个限制。"技术本身的进步会不断释放轨道空间。</p>
 
   <div class="highlight hl-yellow">
-    不过太空是三维空间——安全距离每缩小一半，可用容量变为 8 倍。路易斯认为："技术发展会不断释放轨道空间。会有限制，但技术的发展应该会抵消这个限制。"
+    <strong>赌局：</strong>"如果我会赌我自己的 money 哈，我会赌 2029 年，SpaceX 可以达到 one gigawatts。"——路易斯·宏给出的时间线。刘秉彦的回应是："如果说赌的是一百颗星舰发射，我相信。1 GW 的数据中心我觉得，我没有看到一个这件事情的必要性。"
   </div>
 </section>
 
 <section>
   <h2>星舰加速：SpaceX 凭什么更快？</h2>
 
-  <p>一百次星舰发射——以 2026 年 Starship 一年 single digits 的发射频率来看，这像是天方夜谭。但路易斯提醒我们一个关键对照：Falcon 9 花了十年时间才达到现在的发射频率，而 Starship 用五年就走到了同一个进度点。</p>
+  <p>一百次星舰发射——以 2026 年 Starship 一年 single digits 的发射频率来看，这像是天方夜谭。但路易斯提醒我们一个关键对照：Falcon 9 花了十年时间才达到现在的发射频率，而 Starship 用五年就走到了同一个进度点。Starship 从 V3 测试版开始，V4 即将登场（运力翻倍），按 Falcon 9 的节奏推算，V5 将是最终稳定版。</p>
 
-  <p>背后的逻辑是抛物线增长：2026 年 single digits → 2027 年 ~10 次 → 2028 年 ~50 次 → 2029 年 100+ 次。"这个东西是每一次你的 unlock 你的地面上的还是天空上整个的所有的这个 operation infrastructure 一旦 unlock，它是可以整个全线式的上升。"</p>
+  <p>背后的逻辑是抛物线增长：2026 年 single digits → 2027 年约 10 次 → 2028 年约 50 次 → 2029 年 100 次以上。Falcon 9 在初创期开发（缺钱缺人），而 Starship 得益于成熟的工程团队、Falcon 9 的发射收入和星链的现金流——完全不同的资源禀赋。</p>
 
-  <p>Starship 从 V3 测试版开始，V4 即将登场——运力翻倍。按 Falcon 9 的节奏推算，V5 将是最终稳定版。Falcon 9 在初创期开发（缺钱缺人），而 Starship 得益于成熟的工程团队、Falcon 9 的收入和星链现金流——完全不同的资源禀赋。</p>
-
-  <div class="highlight hl-green">
-    <strong>2029 赌局：</strong>路易斯愿意下注 SpaceX 在 2029 年达到 100 次星舰发射。秉彦的回应是："如果说赌的是一百颗星舰发射，我相信。1 GW 的数据中心我觉得，我没有看到一个这件事情的必要性。"——火箭能力≠数据中心生态成熟。
-  </div>
+  <p>两位嘉宾的共同判断是：发射不是瓶颈，capacity 不是瓶颈，launch cost 也不是瓶颈。这都是 SpaceX 现在最强项的部分。</p>
 </section>
 
 <section>
   <h2>发射成本：从每公斤七千到十美元</h2>
 
-  <p>发射成本是最容易模型化的变量。当前 SpaceX Falcon 9 的拼车报价是 <strong>$7,000/kg</strong>（2026 年 2 月数据）。而星舰完全可重复使用的理想目标是 <strong>$10-20/kg</strong>——只消耗航天煤油。</p>
+  <p>发射成本是最容易模型化的变量。当前 SpaceX Falcon 9 的拼车报价是 <strong>$7,000/kg</strong>（2026 年 2 月数据）。而星舰完全可重复使用的理想目标是 <strong>$10-20/kg</strong>——只消耗航天煤油。中美航线每公里运输成本约 3-5 美分，星舰的理想目标约 10-20 美分/公里。</p>
 
   <p>两位嘉宾从不同假设出发，推演了成本回本的时间线：</p>
 
-  <ul style="list-style: none; padding: 0;">
-    <li style="padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0;"><strong>🟢 最乐观（仅燃料）：2 个月</strong> — 假设 $10-20/kg，3-5% 质荷比，太空太阳能效率 5 倍于地面</li>
-    <li style="padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0;"><strong>🟡 保守（一级回收）：4 个月</strong> — 假设 $200/kg，星舰只回收底部助推器，复用 10 次</li>
-    <li style="padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0;"><strong>🟠 加制造费用：~1 年</strong> — 卫星平台制造成本，目标与星链 V3 同级（100-120 万美元/颗，不含 GPU）</li>
-    <li style="padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0;"><strong>🔴 加冗余 + 寿命折半：~2 年</strong> — 发射冗余 40%，太空 GPU 寿命假设为地面一半</li>
+  <ul class="cost-ladder">
+    <li><strong>🟢 最乐观（仅燃料）：2 个月</strong> — 假设 $10-20/kg，3-5% 质荷比，太空太阳能效率 5 倍于地面</li>
+    <li><strong>🟡 保守（一级回收）：4 个月</strong> — 假设 $200/kg，星舰只回收底部助推器，复用 10 次</li>
+    <li><strong>🟠 加卫星制造成本：</strong> — 目标与星链 V3 同级（100-120 万美元/颗，不含 GPU），回本时间延长</li>
+    <li><strong>🔴 加发射冗余 + GPU 寿命折半：约 2 年</strong> — 发射冗余 40%，太空 GPU 寿命假设为地面一半</li>
   </ul>
 
   <div class="highlight hl-orange">
-    但有一个致命的经济学事实：1 GW 地面数据中心造价约 $500 亿，其中 GPU 占 50-60%。GPU 在天地成本相同——太空省掉的电费远不足以覆盖 GPU 的巨额开销。只要 GPU 还是成本的大头，太空的经济优势就难以成立。
+    <strong>致命的经济学事实：</strong>1 GW 地面数据中心造价约 $500 亿，其中 GPU 占 50-60%。GPU 在天地成本相同——太空省掉的电费远不足以覆盖 GPU 的巨额开销。只要 GPU 还是成本的大头，太空的经济优势就难以成立。
   </div>
 </section>
 
@@ -324,11 +264,23 @@ footer a:hover { text-decoration: underline; }
 
   <p>但 T⁴ 的数学很美：温度从 300 K（约 27°C）提高到 330 K（约 57°C），散热能力提升约 50%。"只要几度其实在太空上就已经可以成立，就已经帮助是非常非常的大。"路易斯强调，不需要把芯片做到 120°C 高温——那意味着要重走半导体行业几十年的发展道路。</p>
 
-  <p>真正的瓶颈不是"能不能散热"，而是<strong>热量怎么从芯片内部搬运到散热表面</strong>。这需要一个像空调一样的热泵——把低温处的热"泵"到高温处，让散热面保持在更高温度，充分利用 T⁴ 效应。当前最有希望的方向是半导体散热（固态热泵），但仍在实验室阶段。</p>
+  <h3>热平衡的几何智慧</h3>
+
+  <p>秉彦在节目中给出了一组精妙的对比：地球的平均温度是 5°C，因为球体表面积恰好是投影面积的 4 倍——散热面积是吸热面积的 4 倍。月球只有一面在散热，另一面被太阳烤到了 120°C。如果能设计一个散热面积远大于吸热面积的卫星构型，温度就自然可控。</p>
+
+  <table>
+    <tr><th>形状</th><th>散热/吸热面积比</th><th>平衡温度</th></tr>
+    <tr><td>单面散热（如月球）</td><td>1:1</td><td>~120°C</td></tr>
+    <tr><td>薄膜板（两面散热）</td><td>2:1</td><td>~60°C</td></tr>
+    <tr><td>正三角（三面散热）</td><td>3:1</td><td>~60°C</td></tr>
+    <tr><td>球体（四面散热）</td><td>4:1</td><td>~5°C</td></tr>
+  </table>
+
+  <p>真正的瓶颈不是"能不能散热"，而是<strong>热量怎么从芯片内部搬运到散热表面</strong>。这需要一个像空调一样的热泵——把低温处的热"泵"到高温处，让散热面保持在更高温度，充分利用 T⁴ 效应。当前最有希望的方向是半导体散热（固态热泵），但仍在实验室阶段。路易斯的投资逻辑明确：不投太空数据中心公司本身，但会关注半导体散热、卫星组件等底层技术供应商。</p>
 
   <blockquote>
     "它是一个硬科幻，它不是一个神话。物理上没有任何东西阻止它。"
-    <span class="attr">— 刘秉彦</span>
+    <span class="attr">— 刘秉彦，谈太空散热的理论可行性</span>
   </blockquote>
 </section>
 
@@ -355,77 +307,85 @@ footer a:hover { text-decoration: underline; }
     </div>
   </div>
 
-  <p>12,000+ 颗卫星中，只有<strong>1 颗</strong>真正失控漂流在轨道上（它终将坠回地球）。其余 0.15% 的失败都按计划烧毁。辐射？没有想象中可怕。碎片？低轨卫星不用维持轨道就会自己掉下来。</p>
+  <p>12,000+ 颗卫星中，只有<strong>1 颗</strong>真正失控漂流在轨道上（它终将坠回地球）。其余 0.15% 的失败都按计划烧毁。30 万次/年的避碰操作背后是一整套 AI 系统——就像 Tesla 的 FSD，只是训练数据来自太空。路易斯直言，这个避碰技术"本身就可以独立成为一家创业公司"。</p>
 
-  <p>30 万次/年的避碰操作背后是一整套 AI 系统——就像 Tesla 的 FSD，只是训练数据来自太空。路易斯直言，这个避碰技术"本身就可以独立成为一家创业公司"。任何后来者在这件事上跟 SpaceX 竞争，面临的是天文数字的数据鸿沟。</p>
+  <p>至于辐射？在低轨（1,000 公里以下），地球磁场提供天然保护。加上物理屏蔽和 ECC 纠错（已有成熟民用电平方案），辐射不是一个物理阻断项——只是一项增加的折旧成本。真正的风险不是单颗芯片被打坏，而是"unknown unknowns"——在地面上用了 10 年的芯片，在太空可能活不过 2 年。</p>
 </section>
 
 <section>
   <h2>为什么太空只适合推理，不适合训练？</h2>
 
-  <p>这是一个被两位嘉宾迅速达成共识的判断：<strong>太空绝对不适合做大型训练中心，但非常适合做推理（inference）。</strong></p>
+  <p>这是一个被两位嘉宾迅速达成共识的判断：<strong>"太空绝对只适合做推理。"</strong></p>
 
-  <p>大型模型训练需要 GPU 之间高效、低延迟的近距离通信——带宽瓶颈会直接决定训练效率。100 kW = 约 100 张 GPU，独立的 100 张卡做预训练远远不够。而星间互联的带宽限制会让训练成本放大到不可接受的程度。</p>
+  <p>大型模型训练需要 GPU 之间高效、低延迟的近距离通信——带宽瓶颈直接决定训练效率。100 kW 约等于 100 张 GPU，独立做预训练远远不够。而星间互联的带宽限制会让训练成本放大到不可接受的程度。</p>
 
-  <p>但推理完全不同。推理对互联要求低得多。Starlink 的延迟约 20-40 ms，对 LLM 推理完全可接受（人类感知阈值约 200 ms）。一个成功的模型，推理量应该是训练量的几百到几千倍——推理才是需求最大的那部分。免费的太空太阳能 + 覆盖全球的低延迟覆盖 = "不要白不要"的推理资源。</p>
+  <p>但推理完全不同：对互联要求低，Starlink 延迟约 20-40 ms 对 LLM 推理完全可接受（人类感知阈值约 200 ms）。一个成功的模型，推理量应该是训练量的几百到几千倍——推理才是需求最大的那部分。免费的太空太阳能加上覆盖全球的低延迟覆盖，是一个"不要白不要"的推理资源。100 张卡刚好介于超大规模训练和边缘推理之间——算力足够 meaningful，延迟接近边缘优势。</p>
 
   <div class="highlight hl-blue">
-    理想分工：地上做大规模训练，天上做海量推理。但这里有一个"生态鸡生蛋"的问题——太空推理成本太高导致用的人太少，用的人少导致没人愿意为它优化软件，没软件优化导致更没人用。除非像谷歌、英伟达这样的巨头用自己的体量强推。
+    <strong>理想分工：</strong>地上做大规模训练，天上做海量推理。但这里有"生态鸡生蛋"的问题——太空推理成本太高导致用的人少，用的人少导致没人愿意优化软件，没优化导致更没人用。除非像谷歌、英伟达这样的巨头用自己的体量强推。
   </div>
 </section>
 
 <section>
-  <h2>轨道容量与碎片：空间比你想象的大——但先到先得</h2>
+  <h2>轨道容量与碎片：空间比你想象的大</h2>
 
-  <p>一个常被提出的担忧：当近地轨道布满密密麻麻的卫星，我们发射新的火箭会不会撞到它们？</p>
+  <p>一个常被提出的担忧：当近地轨道布满密密麻麻的卫星，发射新火箭会不会撞到它们？</p>
 
-  <p>路易斯的回答值得记住："说实话我们太高估人类的量或者太低估地球的大小了。"把一万人散布在地球表面，你一辈子都碰不到另一个人。散布在三维轨道空间里，这个概率更小。而且安全距离每缩小一半，容量变为 8 倍。</p>
+  <p>路易斯的回答值得记住："说实话我们太高估人类的量或者太低估地球的大小了。"把一万人散布在地球表面，你一辈子都碰不到另一个人。散布在三维轨道空间里，这个概率更小。而且安全距离每缩小一半，容量变为 8 倍。但"先到先得"是现实——目前缺乏国际公约制约，谁先发谁先占。晨昏轨道这种优质资源尤其稀缺。</p>
 
-  <p>但"先到先得"是现实——目前缺乏国际公约制约，谁先发谁先占。晨昏轨道这种优质资源尤其稀缺。</p>
+  <p>至于凯斯勒效应（碎片连锁撞击）——低轨卫星的轨道衰减很快，如果不维持高度，几年内就会自然坠毁烧毁。真正让人担心的碎片问题主要在高轨道（几千年不回来）。1960-70 年代美国发射了数千万根针到太空做长波通信实验，至今仍在飘浮，但并未引发灾难。</p>
 
-  <p>两位嘉宾对治理的前景给出了一个悲观的诚实判断：<strong>在发生一次大规模撞击事件并造成严重后果之前，很难形成有效的国际合作机制。</strong>"日拱一卒"——每家都会悄悄把安全距离缩得更小，多发几颗卫星。直到出一次大事，各方才会坐下来谈判。</p>
+  <div class="highlight hl-yellow">
+    <strong>悲观的诚实判断：</strong>两人都同意——在发生一次大规模撞击事件并造成严重后果之前，很难形成有效的国际合作机制。"日拱一卒"——每家都会悄悄把安全距离缩得更小，多发几颗卫星。直到出一次大事，各方才会坐下来谈判。但从另一个角度看，太空是一个物理强迫所有人合作的空间——"因为一定要避让，不然双方都完蛋。"
+  </div>
 </section>
 
 <section>
   <h2>月球 vs 火星：两种太空经济路径</h2>
 
-  <p>NASA 局长 Jim Bridenstine 是一个经典的政治光谱转变案例：长期被视为"火星派"（曾被称作马斯克的私人宇航员），上任后却高调推动重返月球。这背后有川普的政治意志——"像甘乃迪一样成为宣布登月的那个人"——但月球的经济价值远不止于此。</p>
+  <p>NASA 局长 Jim Bridenstine 是一个经典的政治光谱转变案例：长期被视为"火星派"（被称作马斯克的私人宇航员），上任后却高调推动重返月球。这背后有川普的政治意志——"像肯尼迪一样成为宣布登月的那个人"。但月球的经济价值远不止于此。</p>
 
-  <p>刘秉彦在节目中给出了月球派的底层经济逻辑：在化学火箭时代，火星是一个没有经济价值的目的地（尽管科学价值巨大）。但月球完全不同——它的重力仅为地球的 1/6。阿波罗计划中，土星五号三千吨从地球起飞，而从月面到月球轨道的上升级"只有垃圾桶大小"。一旦 Starship 把发射成本降到 $10-20/kg，从月球向深空发射的成本将比从地球便宜一个数量级以上。氦-3 等月球资源可以提供核聚变原料，月球本身可以成为自动化制造的太空工业基地。</p>
+  <p>刘秉彦给出了月球派的底层经济逻辑：在化学火箭时代，火星没有经济价值（尽管科学价值巨大）。但月球完全不同——它的重力仅为地球的 1/6。阿波罗计划中，土星五号三千吨从地球起飞，而从月面到月球轨道的上升级"只有垃圾桶大小"。一旦 Starship 把发射成本降到 $10-20/kg，从月球向深空发射的成本将比从地球便宜一个数量级以上。氦-3 等月球资源可提供核聚变原料，月球本身可以成为自动化制造的太空工业基地。</p>
 
-  <p>路易斯的回应则体现了 SpaceX 的视角——"月球就是火星的 hopper"。在 SpaceX 的哲学里，一切都有一个渐进的台阶：有 Starlink 才有 Starship，有月球才有火星。月球是人在太空中存活能力的测试场——离地球更近、可以快速迭代。"大家现在是不是也在抢夺很多的月球资源？"这个问题的答案正在被 SpaceX、Blue Origin 和各国航天局书写。</p>
+  <p>路易斯的回应体现了 SpaceX 的视角——"月球就是火星的 hopper，月球就是火星的杂们。"在 SpaceX 的哲学里，一切都有一个渐进的台阶：有 Starlink 才有 Starship，有月球才有火星。月球是人在太空中存活能力的测试场——离地球更近，可以快速迭代。SpaceX 本来认为没人会跟他们一起去月球，后来突然发现"居然有人还要付钱给这个月球，why not？"——于是就干脆全部好好地善用这个资源，加速开发。</p>
 
   <div class="highlight hl-purple">
-    <strong>关键分歧：</strong>路易斯认为月球只是跳板（"除了这以外，没有什么太多长期的意义"），但秉彦认为月球本身就是巨大的经济机会（"在至少这一代 shareholder 的手里，是能看到非常非常丰厚的回报的"）。两者实际上在同一条线上——先解决"怎么离开地球"，再解决"怎么在太空生存"。
+    <strong>双方共识：</strong>月球派和火星派其实没有两个派系——它们在一条线上。先解决"怎么离开地球"，再解决"怎么在太空生存"。分歧只在于：路易斯认为月球只是跳板（"除了这以外，没有什么太多长期的意义"），而秉彦认为月球本身就是巨大的经济机会（"在至少这一代股东的手里，能看到非常非常丰厚的回报"）。
   </div>
 </section>
 
 <section>
-  <h2>创业公司的太空数据中心梦：为什么 VC 不看？</h2>
+  <h2>垂直整合：SpaceX 真正的护城河</h2>
 
-  <p>Starcloud——第一家 YC 孵化的太空数据中心公司——拿了 1.7 亿美元融资。他们的初始方案是一个 5km×5km 的太空站，配一个 20km×20km 的反射镜来聚光发电。路易斯的评价是"天方夜谭"——"我不知道为什么有人听到这个故事以后还会投。"</p>
+  <p>当被问到太空数据中心赛道的创业公司时，路易斯的评价毫不留情。Starcloud——第一家 YC 孵化的太空数据中心公司——拿了 1.7 亿美元融资。他们的初始方案是一个 5km × 5km 的太空站配 20km × 20km 的反射镜。"天方夜谭——我不知道为什么有人听到这个故事以后还会投。"</p>
 
-  <p>即使是更务实的 2.0 版本（类似 AI mini 的分布式卫星方案），Louis 的判断仍然明确：任何独立创业公司的成本至少是 SpaceX 的 3 倍以上。卫星、发射、能源——没有一项实现了垂直整合。出路只有两条：被收购（卖给地面某家云厂商），或者在 niche 市场中存活。</p>
+  <p>即使是更务实的 2.0 版本（类似 AI mini 的分布式卫星方案），任何独立创业公司的成本至少是 SpaceX 的 3 倍以上。卫星、发射、能源——没有一项实现了垂直整合。出路只有两条：被收购（卖给地面某家云厂商），或者在 niche 市场中存活。可能的例外是 Blue Origin——唯一有无限资金和技术底蕴的对手，但规模完全不在同一等级。</p>
 
-  <p>但从另一个角度看，太空数据中心生态中确实存在可投的方向：半导体散热技术、卫星通信组件、空间级芯片——这些关键技术供应商不需要跟 SpaceX 正面竞争，只需要做到"SpaceX 会买"。卫星供应链不像火箭那样被美国本土化限制，全球最优解决方案都可以参与。</p>
+  <p>但太空数据中心生态中确实存在可投的方向：半导体散热技术、卫星通信组件、空间级芯片——这些关键技术供应商不需要跟 SpaceX 正面竞争，只需要做到"有人会买"。卫星供应链不像火箭那样被美国本土化限制，全球最优解决方案都可以参与。</p>
+
+  <div class="highlight hl-green">
+    <strong>创业公司应该回答两个问题：</strong>第一，为什么 SpaceX 不会做这件事？第二，为什么你会做得比 SpaceX 好？在避碰 AI 这样的赛道——SpaceX 已经有 30 万次/年的实操数据——创业公司几乎没有机会。但在半导体散热这样的底层技术上，国家实验室和大学出来的团队可能有窗口。
+  </div>
 </section>
 
 <section>
-  <h2>终局：当算力需求增长 100 倍</h2>
+  <h2>终局：当算力需求增长 100 倍，太空是唯一解</h2>
 
-  <p>本期节目的核心结论可以用一句话概括：<strong>物理上可行，经济上未成立。</strong></p>
+  <p>本期节目的核心结论可以用一句话概括：<strong>物理上可行，经济上未成立。</strong>但两位嘉宾都同意一个更长远的判断——太空数据中心在足够大的规模下是必然的。</p>
 
-  <p>但两位嘉宾都同意一个更长远的判断：太空数据中心在足够大的规模下是必然的。原因有三：</p>
+  <p><strong>第一，地面散热的物理上限。</strong>空气对流的冷却效率是线性的，而太空辐射散热与 T⁴ 成正比。当 AI 算力需求再增长 10-100 倍，地面数据中心的热岛效应可能会让"温室效应不是来自碳排放而是来自数据中心"。到那个尺度，太空的无限散热空间将成为一个无法拒绝的优势。</p>
 
-  <p>第一，地面散热的物理上限。空气对流的冷却效率是线性的，而太空辐射散热 ∝ T⁴ 是指数级的。当 AI 算力需求再增长 10-100 倍，地面数据中心的热岛效应可能会让"温室效应不是来自碳排放而是来自数据中心"。到那个尺度，太空的无限散热空间将成为一个无法拒绝的优势。</p>
+  <p><strong>第二，电力审批的现实瓶颈。</strong>以德州——全美对商业最友好的州——为例，数据中心电力申请的批准率不到 1%。全球 17-28% 的电力增量需要用来支撑 AI。地面上的电是有限的、审批复杂的、有环境成本的。太空的太阳能是免费的、无限的、不影响地球热平衡的。</p>
 
-  <p>第二，电力审批的现实瓶颈。以德州——全美对商业最友好的州——为例，数据中心电力申请的批准率不到 1%。全球 17-28% 的电力增量需要用来支撑 AI。地面上的电是有限的、审批复杂的、有环境成本的。太空的太阳能是免费的、无限的、不影响地球热平衡的。</p>
+  <p><strong>第三，算力成为硬通货。</strong>秉彦给出了一个宏大且逻辑自洽的未来视野：整个太阳系最重的硬通货是算力，最终就是电能。不管地球上怎么发电，最终都会变成地球的热。而太空中的电不加热地球——只把数据传回来。"这一点上真的无法比的一个优势。"</p>
 
-  <p>第三，算力成为硬通货。一个极端但逻辑自洽的未来视野：太阳系最重的硬通货是算力，最终是电能。不管地球上怎么发电，最终都会变成地球的热。而太空中的电不加热地球——只把数据传回来。"这一点上真的无法比的一个优势。"</p>
+  <div class="highlight hl-red">
+    <strong>但近期现实是：</strong>即使马斯克有钱在 2029-2030 年间把 1 GW 算力送上太空，"这个钱可能真的是在打水漂"。经济账至少在这个时候算不过来——如果发上去省的电，让卫星运行两年免费拿到的电，都覆盖不了发射的成本，"我觉得就没有什么好说的了。"——刘秉彦
+  </div>
 
   <blockquote>
     "把算力放在太空这件事一定能做，没有问题。把算力能够经济地放在太空，这才是真正需要解决的。"
-    <span class="attr">— 刘秉彦</span>
+    <span class="attr">— 刘秉彦，本期节目的定调之语</span>
   </blockquote>
 </section>
 
@@ -438,7 +398,7 @@ footer a:hover { text-decoration: underline; }
       <span class="ctx">— 刘秉彦，对太空数据中心可行性的整体判断</span>
     </div>
     <div class="quote-item qi-green">
-      "如果我会赌我自己的 money 哈…我会赌 2029 年，SpaceX 可以达到 one gigawatts。"
+      "如果我会赌我自己的 money 哈，我会赌 2029 年，SpaceX 可以达到 one gigawatts。"
       <span class="ctx">— 路易斯·宏，对星舰发射频率的激进赌注</span>
     </div>
     <div class="quote-item qi-yellow">
@@ -447,15 +407,15 @@ footer a:hover { text-decoration: underline; }
     </div>
     <div class="quote-item qi-purple">
       "它是一个硬科幻，它不是一个神话。物理上没有任何东西阻止它。"
-      <span class="ctx">— 刘秉彦，谈太空散热的物理边界——理论可行，工程待突破</span>
+      <span class="ctx">— 刘秉彦，谈太空散热的物理边界</span>
     </div>
     <div class="quote-item qi-orange">
-      "月球就是火星的 hopper。"
+      "月球就是火星的 hopper，月球就是火星的杂们。"
       <span class="ctx">— 路易斯·宏，SpaceX 视角下月球的战略定位</span>
     </div>
     <div class="quote-item qi-red">
-      "说实话我们太高估人类的量或者太低估地球的大小了。"
-      <span class="ctx">— 路易斯·宏，谈轨道空间容量——提醒我们对三维空间缺乏直觉</span>
+      "整个太阳系最重的硬通货是算力，最终就是电能。地球上发的电都会最终变成地球的热。"
+      <span class="ctx">— 刘秉彦，太空算力的终极远景</span>
     </div>
   </div>
 </section>

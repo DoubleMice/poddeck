@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-06-15T04:41:02.374Z
+refreshed_at: 2026-06-15T19:23:24.254Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 145
-done: 0
-pending: 22
-needs_transcript: 123
+total_candidates: 146
+done: 1
+pending: 23
+needs_transcript: 122
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -105,6 +105,95 @@ episodes:
 
 
       🔗 24:42 Crypto's answer: ICO for open source AI, Nous Hermes, Venice, Grass, Ambient
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+  - id: ec18ca6e-65fa-11f1-8e82-4709ceb6cc63
+    guid: ec18ca6e-65fa-11f1-8e82-4709ceb6cc63
+    title: "Claude Found a 4-Year Zcash Bug. Now It Won't Audit DeFi: Uneasy Money"
+    duration: 3819
+    published: Fri, 12 Jun 2026 01:06:00 -0000
+    published_sort: "20260612"
+    first_seen_at: 2026-06-15T19:23:24.251Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3692012203.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3692012203.mp3
+    image: https://megaphone.imgix.net/podcasts/ec18ca6e-65fa-11f1-8e82-4709ceb6cc63/image/f387d4745b376b08aff2e34930da4098.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Claude Fable 5 refuses security work, Kain Warwick pulls $5,000 of compute from a $200 plan, and Humanity Protocol
+      loses its bridge, token, and treasury to one infected device.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      ⁠Multichain Advisors⁠: Get help navigating TGEs, go‑to‑market, BD and partnerships, capital markets advisory, PR,
+      media placements, KOL activations and more at https://multichainadv.com.
+
+
+      ========================================================
+
+
+      Anthropic promised Mythos and shipped Claude Fable 5 instead. The model found a four-year-old bug in Zcash's
+      shielded pool that survived multiple expert audits. But when Anthropic shipped the model days later, it was no
+      longer willing to audit smart contracts, bailing the moment a prompt smells like security work.Jailbreakers are
+      already turning a jailbroken Opus 4.8 against it, while white hats sit locked out.
+
+
+      Kain Warwick, Taylor Monahan, and Luca Netz weigh the defender's dilemma: builders cannot point the model at their
+      own code, but nobody can prove black hats have not jailbroken their way in —  and, the hosts warn,North Korean
+      threat actors have spent more than six months harvesting AI API keys.
+
+
+      Then Kain runs the numbers on the subsidy: roughly 200 million tokens in four hours on a $200 plan, about $5,000
+      at API rates, and on the 22nd Fable goes API only as the first unsubsidized frontier model. Plus Pump.fun's bounty
+      marketplace and the Humanity Protocol hack, which left the hosts asking why a 3-of-6 multisig existed at all. When
+      the subsidies stop, who still gets the frontier?
+
+
+      Host:
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
+
+        
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠⁠⁠⁠⁠⁠, CEO of Pudgy Penguins
+
+
+      Timestamps
+
+
+      🤖 00:40 Why Kain says Fable 5 should have been named Fable zero
+
+
+      🛡️ 03:50 Taylor on how Fable downgrades the second anything touches security
+
+
+      🕵️ 10:42Taylor on stolen AI keys,tokens and North Korea's new favorite loot
+
+
+      🧠 15:48 Does Fable reason like a senior engineer? Kain's 100-doc planning test
+
+
+      💸 20:06 How Kain pulled $5,000 of API value from a $200 Claude plan in four hours
+
+
+      🐧 ~33:45 How Igloo budgets $50K a month on AI, and the bot "brain" running the org
+
+
+      📊 44:00 Multichain Advisors: start building real traction with the team behind $50B at https://multichainadv.com
+
+
+      🎪 44:41 Pump.fun's bounty circus: tattoo typo, the Bootywork coin, Luca's steelman
+
+
+      🚨 55:36 How one infected device cost Humanity Protocol its bridge, token, and treasury
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: pending
@@ -767,8 +856,12 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-15T19:23:25.560Z
+    transcript_job_id: cf78e38a0c504585984f70cd48432783,218843a585c949579bf9db86df876c6d,a6c9a0d662c9443588d2f780ffc6fd3c,3f7886c06dd84d5980c4f2f30e1b0438
+    transcript_completed_at: 2026-06-15T19:26:03.350Z
   - id: 89d471e6-6078-11f1-83b6-5bd3f347e302
     guid: 89d471e6-6078-11f1-83b6-5bd3f347e302
     title: Why MSTR Should Have Sold $2 Billion Instead of $2 Million of Bitcoin
@@ -8073,6 +8166,7 @@ episodes:
           
 
 
+
         
       Danny Ryan, Co-Founder & President of Etherealize
 
@@ -8258,6 +8352,7 @@ episodes:
       Unchained:⁠⁠
 
         
+
 
 
         
@@ -9478,6 +9573,7 @@ episodes:
           
 
 
+
         
       Previous appearances on Unchained:
 
@@ -10422,6 +10518,7 @@ episodes:
         How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
 
         How the x402 Standard Is Enabling AI Agents to Pay Each Other
+
 
 
         
@@ -11632,6 +11729,7 @@ episodes:
        
 
 
+
         
       Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
 
@@ -12033,6 +12131,7 @@ episodes:
         Links:
         FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
        Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
+
 
        
       Learn more about your ad choices. Visit megaphone.fm/adchoices

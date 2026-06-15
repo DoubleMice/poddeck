@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-06-15T04:41:02.466Z
+refreshed_at: 2026-06-15T19:23:24.348Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 16
-done: 0
-pending: 12
-needs_transcript: 4
+total_candidates: 17
+done: 1
+pending: 13
+needs_transcript: 3
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a2be5da43a22a695582ad20?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a2be5da43a22a695582ad20/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lua5jan_xOpZ99VwXmLshdTC-gSp.m4a
     image: https://image.xyzcdn.net/FjmBmepMunuJ-yvOAro0IYtqOIKM.png
-    status: pending
+    status: generated
     priority: 1
   - id: 6a2543dcb30e1571aea20d0b
     guid: 6a2543dcb30e1571aea20d0b
@@ -32,6 +32,18 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a2543dcb30e1571aea20d0b?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a2543dcb30e1571aea20d0b/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lnjlEQjGjo1TxuPOuvYgmDV7oo8B.m4a
     image: https://image.xyzcdn.net/FpGUbHNTO8nYMJoW18TBh3zeSv9t.png
+    status: pending
+    priority: 1
+  - id: 6a170f747460cabdeb56dabb
+    guid: 6a170f747460cabdeb56dabb
+    title: 143. 对何小鹏的第二次访谈：更大赌注、人形机器人Iron诞生、那场意外、技术剧变下CEO、GX和缝合怪
+    duration: 5301
+    published: Thu, 28 May 2026 00:00:00 GMT
+    published_sort: "20260528"
+    first_seen_at: 2026-06-15T19:23:24.348Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a170f747460cabdeb56dabb?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a170f747460cabdeb56dabb/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ljeKstsAfrj-oVTm2bpL92S4nwoc.m4a
+    image: https://image.xyzcdn.net/Fqknalt9nkexZUaPA0fQU22akthp.png
     status: pending
     priority: 1
   - id: 6a15a2cbff7b9a8c0a5b953f
@@ -180,8 +192,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6976bdf0ef1cf272a76fa9f3?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6976bdf0ef1cf272a76fa9f3/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lo-xQNj9qSh16zHeUQI6pQ3jOkjq.m4a
     image: https://image.xyzcdn.net/FsPsolhVA_aPd7Wr6mX6Vx9sDkPu.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-15T19:26:03.515Z
+    transcript_job_id: 6f80bda268604e628632e04fd39aa373,81586d4acdf242bb99c6e2093b79e8b7,fe7e03b0ee3245fd8b6234e8db16323f,ee12c36d0adc4f1dbf6b5d6c62cf0c91,5f27326e54774adba822233b9f1ece34,44f9993ad271492ab97f13c1f08fd702,d4c2ffb82f3940e080e31826098bff37,0864a48032af44fbb3be54a0633250a6,2ae9eb1f84584b9a9bf6752e7c881553
+    transcript_completed_at: 2026-06-15T19:32:28.971Z
   - id: 6970c1e0109824f9e1c60e7a
     guid: 6970c1e0109824f9e1c60e7a
     title: 130. 张月光创业两年首次访谈：妙鸭不是AI Native产品、流程到上下文设计、One Way Door和乙女游戏
