@@ -1,15 +1,75 @@
 source: flirting-with-models
-refreshed_at: 2026-06-14T18:33:13.703Z
+refreshed_at: 2026-06-15T04:41:02.457Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 6
 done: 0
-pending: 1
+pending: 6
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 1ad4a324-0c27-43fd-b451-b4394faf8e82
+    guid: 1ad4a324-0c27-43fd-b451-b4394faf8e82
+    title: John Gu – Crypto Market Making & The Cold Start Problem (S7E30)
+    duration: 4182
+    published: Mon, 11 May 2026 00:00:00 -0400
+    published_sort: "20260511"
+    first_seen_at: 2026-06-15T04:41:02.457Z
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/1ad4a324-0c27-43fd-b451-b4394faf8e82.mp3
+    image: https://artwork.captivate.fm/1376ae2c-5ab4-42bf-a6f7-3e9ecaa3707e/S3-FlirtingWithModels-with-John-Gu-copy.jpg
+    status: pending
+    priority: 1
+  - id: cb1a41d7-b422-4e35-9218-a661d5a8cbf4
+    guid: cb1a41d7-b422-4e35-9218-a661d5a8cbf4
+    title: "Faheem Osman – Commodity QIS: An Under-Appreciated Source of Systematic Returns? (S7E29)"
+    duration: 4016
+    published: Mon, 06 Apr 2026 00:00:00 -0400
+    published_sort: "20260406"
+    first_seen_at: 2026-06-15T04:41:02.457Z
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/cb1a41d7-b422-4e35-9218-a661d5a8cbf4.mp3
+    image: https://artwork.captivate.fm/df762921-cfbb-4ce5-924b-18be8e95e38f/S3-FlirtingWithModels-with-Faheem-Osman.jpg
+    status: pending
+    priority: 1
+  - id: 951e8505-07f6-4ffc-b791-72016569f819
+    guid: 951e8505-07f6-4ffc-b791-72016569f819
+    title: Richard Craib - Crowd-Sourced Alpha with Numerai (S7E28)
+    duration: 3359
+    published: Mon, 23 Feb 2026 07:15:00 -0400
+    published_sort: "20260223"
+    first_seen_at: 2026-06-15T04:41:02.457Z
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/951e8505-07f6-4ffc-b791-72016569f819.mp3
+    image: https://artwork.captivate.fm/9962efb1-4374-43d5-9e74-ce38549c1710/S3-FlirtingWithModels-with-Richard-Craib.jpg
+    status: pending
+    priority: 1
+  - id: da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94
+    guid: da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94
+    title: Ruslan Fakhrutdinov – Extended Exchange and Vault Tokenization (S7E27)
+    duration: 3481
+    published: Tue, 17 Feb 2026 00:00:00 -0400
+    published_sort: "20260217"
+    first_seen_at: 2026-06-15T04:41:02.457Z
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94.mp3
+    image: https://artwork.captivate.fm/72251723-32e9-4542-9449-f75117687aa9/S3-FlirtingWithModels-With-Ruslan-Fakhrutdinov.jpg
+    status: pending
+    priority: 1
+  - id: e8459525-96f7-4ef3-adea-b9266f987e60
+    guid: e8459525-96f7-4ef3-adea-b9266f987e60
+    title: Angana Jacob - Data as the True Competitive Moat (S7E26)
+    duration: 3442
+    published: Mon, 09 Feb 2026 00:00:00 -0400
+    published_sort: "20260209"
+    first_seen_at: 2026-06-15T04:41:02.457Z
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/e8459525-96f7-4ef3-adea-b9266f987e60.mp3
+    image: https://artwork.captivate.fm/87d89126-48e6-4ed6-a208-6f31b14ea6b2/S3-FlirtingWithModels-with-Angana-Jacob-2MB.jpg
+    status: pending
+    priority: 1
   - id: eeafe07f-2310-4a58-bde5-6896ef157610
     guid: eeafe07f-2310-4a58-bde5-6896ef157610
     title: Moritz Heiden & Moritz Seibert – Trend-Following Spreads (S7E25)

@@ -1,36 +1,89 @@
 source: tbpn
-refreshed_at: 2026-06-14T18:33:13.559Z
+refreshed_at: 2026-06-15T04:41:02.288Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
-done: 1
-pending: 1
+total_candidates: 21
+done: 0
+pending: 21
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 34f6d3fd-354b-4940-afac-095d375eb376
-    guid: 34f6d3fd-354b-4940-afac-095d375eb376
-    title: SpaceX IPO Gigastream
-    duration: 6281
-    published: Fri, 12 Jun 2026 13:03:02 -0700
-    published_sort: "20260612"
-    first_seen_at: 2026-06-13T04:37:23.864Z
-    url: https://share.transistor.fm/s/248a287b
-    audio_url: https://media.transistor.fm/248a287b/c1a29f5d.mp3
+  - id: d7f11efc-f764-41af-ac85-4e8b6910da69
+    guid: d7f11efc-f764-41af-ac85-4e8b6910da69
+    title: Bezos AI Play, Future of Airports, CAA Fund | David Reger, Mike Wior, Ariel Cohen, Jeff Tatarchuk, Matt Joseph,
+      Ade Ajao, Jeremy Fraenkel
+    duration: 8653
+    published: Thu, 11 Jun 2026 13:48:28 -0700
+    published_sort: "20260611"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/7b97840c
+    audio_url: https://media.transistor.fm/7b97840c/5bd14fa4.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/248a287b/transcription.txt
+    transcript_url: https://share.transistor.fm/s/7b97840c/transcription.txt
     transcript_type: text/plain
-    summary: "(00:34) - SpaceX IPO Coverage\r
+    summary: "(00:31) - Bezos AI Play\r
 
-      (21:25) - Vindication for Elon Musk\r
+      (15:44) - Is TSA Goated?\r
 
-      (35:31) - SpaceX IPO 𝕏 Timeline Reactions\r
+      (20:12) - Future of Airports\r
 
-      (01:03:38) - Oasis Faces LMNT Lawsuit\r
+      (25:07) - 𝕏 Timeline Reactions\r
 
-      (01:20:16) - 𝕏 Timeline Reactions
+      (46:45) - David Reger, founder and CEO of Neura Robotics, is a pioneer in cognitive robotics, aiming to integrate
+      robots into daily life by enhancing their cognitive abilities. In the conversation, he discusses the company's
+      focus on developing robots with physical AI brains capable of performing tasks autonomously across various
+      sectors, emphasizing the importance of diverse embodiments, including mobile manipulators and humanoids, to adapt
+      to human-centric environments. Reger also highlights the establishment of Neura Gyms worldwide, facilities
+      designed to train robots in physical tasks, thereby generating essential data to refine their AI capabilities.\r
+
+      (01:00:23) - Mike Wior, co-founder and CEO of Allen Control Systems (ACS), discusses the company's development of
+      Bullfrog, an autonomous robotic weapon station designed to counter small, fast-moving drones by combining AI,
+      computer vision, and machine learning to achieve both speed and accuracy. He highlights Bullfrog's 100% success
+      rate in neutralizing 13 Army-operated drones during a November field test, emphasizing its capability to address
+      the evolving drone threat landscape. Wior also notes ACS's rapid growth, with the team expanding to approximately
+      250 employees and securing a $200 million Series B funding round to scale manufacturing and deployment efforts.\r
+
+      (01:10:18) - 𝕏 Timeline Reactions\r
+
+      (01:14:14) - Ariel Cohen, co-founder and CEO of Navan, has a background in product management and leadership roles
+      at companies like Jive Software and Hewlett-Packard. He discusses Navan's significant growth, highlighting a 50%
+      increase in usage and a 40% rise in revenue, attributing this success to the essential need for face-to-face
+      business interactions. Cohen also emphasizes the company's strategic use of AI to enhance user experience,
+      streamline operations, and drive efficiency in business travel management.\r
+
+      (01:37:06) - Jeff Tatarchuk, co-founder and Chief Growth Officer of TensorWave, discusses the company's exclusive
+      focus on building AI infrastructure with AMD GPUs, stemming from their prior collaboration with AMD during the
+      Xilinx acquisition. He highlights the initial supply constraints of Nvidia chips in 2022-2023, which led to
+      exploring AMD's offerings, and emphasizes the importance of developing a robust ecosystem to support AMD's
+      hardware, addressing software gaps and reducing dependency on a single vendor. Tatarchuk also notes that while
+      CUDA's ecosystem presents challenges, efforts are underway to create a heterogeneous stack that allows seamless
+      switching between different GPU platforms.\r
+
+      (01:47:30) - Matt Joseph, co-founder and CTO of Minerva, an AI platform for consumer marketing, discusses how
+      their technology helps brands unify first-party data from various systems, creating a comprehensive consumer
+      profile to optimize sales and marketing strategies. He highlights their expansive dataset covering 270 million
+      Americans, enabling performance marketers to better understand their consumer base and tailor marketing efforts
+      accordingly. Joseph also shares insights into their collaboration with the NBA, where Minerva powers consumer
+      analytics platforms to assist teams in identifying and targeting specific audience segments for ticket sales and
+      other marketing initiatives.\r
+
+      (01:57:01) - CAA Fund\r
+
+      (02:03:37) - Ade Ajao, co-founder and Managing Partner at Base10 Partners, shared his journey from co-founding
+      Tuenti, the \"Spanish Facebook,\" to leading Base10's recent $850 million fundraise, bringing their assets under
+      management to $2.6 billion. He discussed the firm's focus on automating the real economy through applied AI,
+      emphasizing the importance of understanding client needs over industry labels. Ajao also highlighted the evolving
+      venture capital landscape, noting the rapid growth of AI applications in sectors like logistics and
+      transportation.\r
+
+      (02:14:32) - Jeremy Fraenkel, CEO and co-founder of Fundamental, discusses his company's development of a
+      foundation model for tabular data, aiming to enhance enterprise decision-making by pre-training on billions of
+      tables. He highlights the model's success in accurately predicting Argentina's 2022 World Cup victory ahead of
+      betting markets and shares its current predictions for the 2026 World Cup, favoring Spain over France and
+      identifying Argentina as a strong runner-up. Additionally, Fraenkel mentions that Fundamental recently raised $275
+      million from investors including Oak, Valor Battery Ventures, Salesforce, and notable angels like Alvin Srinivas.
 
 
       TBPN is made possible by:
@@ -85,7 +138,1097 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
+    priority: 1
+  - id: 36a0787a-b662-4d02-99a8-0bfd96054cda
+    guid: 36a0787a-b662-4d02-99a8-0bfd96054cda
+    title: The Social Reckoning Reactions, Fable 5 Sparks Safety Debate, 𝕏 Timeline Reactions | Farza Majeed, Trent
+      Simonian, Sridhar Ramaswamy, Matthew Prince, Vinod Khosla, Ranjan Rajagopalan, Markie Wagner, Bret Taylor
+    duration: 11265
+    published: Wed, 10 Jun 2026 14:40:01 -0700
+    published_sort: "20260610"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/a414a9a1
+    audio_url: https://media.transistor.fm/a414a9a1/78e418f5.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/a414a9a1/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:26) - The Social Reckoning Trailer Reactions\r
+
+      (15:24) - Fable 5 Sparks Safety Debate\r
+
+      (30:06) - Farza Majeed discusses his journey from creating an AI tutor for DaVinci Resolve to developing Clicky,
+      an AI assistant that executes user commands on computers. He explains Clicky's functionality, including real-time
+      GPT responses and integration with models like Fable 5 for screen understanding, and addresses the business model,
+      emphasizing cost-effective agentic work and a $20 monthly subscription. Majeed also highlights the importance of
+      balancing his media presence with startup development and expresses his vision for Clicky as a versatile
+      interaction layer across devices.\r
+
+      (44:52) - Trent Simonian, co-founder of Sidetalk, a New York City-based one-minute street show, discusses the
+      show's origins, emphasizing its commitment to capturing candid, high-energy street interviews without staging. He
+      highlights the importance of creating shareable and engaging content, noting that their approach has led to
+      collaborations with major brands like Nike and the NFL. Simonian also touches on the challenges of monetizing
+      short-form content, explaining that while platforms like TikTok and Instagram haven't provided direct revenue,
+      Sidetalk generates income through branded content and merchandise sales.\r
+
+      (59:25) - Sridhar Ramaswamy, CEO of Snowflake since February 2024, previously led Google's advertising products
+      and co-founded the AI-powered search engine Neeva. He discusses how Snowflake's AI-driven tools, like Snowflake
+      Cowork, have significantly reduced data integration times and enhanced conversational data access, enabling
+      businesses to solve complex problems interactively. Ramaswamy also highlights the company's focus on streamlining
+      migrations from legacy platforms, reducing timelines from years to quarters, and emphasizes the importance of
+      effective go-to-market strategies and partnerships, such as with AWS, to deliver joint solutions to customers.\r
+
+      (01:16:27) - 𝕏 Timeline Reactions\r
+
+      (01:28:50) - Matthew Prince, co-founder and CEO of Cloudflare, discusses the company's recent acquisition of Void
+      Zero, the creators of Vite, a popular developer platform. He highlights the synergy between Vite and Cloudflare's
+      infrastructure, emphasizing the potential to enhance support for internet agents and improve developer
+      experiences. Prince also addresses the challenges developers face with CPU bottlenecks and outlines Cloudflare's
+      strategies to optimize performance and efficiency in the evolving digital landscape.\r
+
+      (02:04:41) - Vinod Khosla, founder and managing director of Khosla Ventures, discusses the significance of auto
+      formalization in enhancing AI reliability by converting human language into machine-checkable formats, thereby
+      reducing issues like hallucinations. He highlights Pramana's role in this field, particularly in formalizing
+      complex domains such as tax law to ensure precision and compliance. Khosla emphasizes that while large AI labs
+      continue to expand, there remains substantial opportunity for ventures addressing specific challenges through auto
+      formalization.\r
+
+      (02:15:41) - Ranjan Rajagopalan, founder of Pramaana Labs, discusses the company's mission to enhance AI accuracy
+      in critical fields like tax, legal, healthcare, and governance by focusing on formal verification to prevent
+      catastrophic errors. He explains their approach of converting complex regulations into formal languages, enabling
+      AI systems to provide provably correct answers with mathematical proofs, thereby increasing trust and reliability
+      in AI applications. Rajagopalan also highlights the importance of integrating formal verification with large
+      language models to ensure AI outputs are verifiable and dependable in high-stakes domains.\r
+
+      (02:28:49) - Markie Wagner is the founder and CEO of Poetic, an AI startup backed by OpenAI, Kleiner Perkins, and
+      Founders Fund, focusing on automating complex business processes with high accuracy. In the conversation, she
+      discusses the challenges of capturing undocumented, intricate rules within large organizations and emphasizes the
+      necessity of AI systems that can learn and execute these processes with near-perfect precision. She also
+      highlights the importance of forward-deployed engineers who not only possess technical expertise but can also
+      drive organizational change to effectively implement AI solutions.\r
+
+      (02:45:33) - Bret Taylor, an American computer scientist and entrepreneur, co-created Google Maps, served as
+      Facebook's CTO, chaired Twitter's board, and co-CEOed Salesforce before founding Sierra, an AI startup
+      specializing in autonomous customer service agents. Taylor discusses Sierra's recent achievement of FedRAMP High
+      certification, enabling federal agencies to utilize their AI solutions, and emphasizes the potential of AI to
+      enhance government services like Medicare and passport processing by improving efficiency and accessibility. He
+      also highlights the importance of multilingual support and the role of AI in transforming customer service
+      interactions within the public sector.\r
+
+      (03:02:08) - 𝕏 Timeline Reactions
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com
+
+
+      Codex - http://openAI.com/codex
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/tbpn/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 08dbe1e7-082f-4eca-8796-6a9eba7c3159
+    guid: 08dbe1e7-082f-4eca-8796-6a9eba7c3159
+    title: Siri AI, Fable 5 Launch, Rivian CEO Joins | RJ Scaringe, Chris Miller, Evan Beard, Nick Fleisher, Chris Matarese,
+      Alex Heath, Rob Schroder Jr.
+    duration: 10140
+    published: Tue, 09 Jun 2026 14:11:56 -0700
+    published_sort: "20260609"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/e343af3e
+    audio_url: https://media.transistor.fm/e343af3e/24d9bb34.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/e343af3e/transcription.txt
+    transcript_type: text/plain
+    summary: "(01:16) - WWDC Day 1\r
+
+      (31:41) - Claude Fable 5\r
+
+      (34:02) - Meta Trains Data Center Workers\r
+
+      (38:27) - RJ Scaringe, born January 19, 1983, is an American engineer and the founder and CEO of Rivian
+      Automotive, an electric vehicle manufacturer. In the conversation, he discusses the launch of the R2 SUV,
+      emphasizing its role in making Rivian's vehicles more accessible and highlighting its advanced features, including
+      a range of up to 345 miles and a 0–60 mph acceleration in as quick as 3.6 seconds. Scaringe also outlines Rivian's
+      strategic focus on scaling production and enhancing autonomous driving capabilities, aiming for Level 4 autonomy
+      by 2028.\r
+
+      (01:04:32) - Chris Miller, an economic historian and professor at Tufts University, is the author of \"Chip War:
+      The Fight for the World's Most Critical Technology,\" which examines the global competition over semiconductor
+      technology. In the conversation, he discusses the recent surge in semiconductor spending driven by AI
+      advancements, the cautious expansion strategies of manufacturers like TSMC, and the geopolitical implications of
+      China's investments in AI infrastructure.\r
+
+      (01:29:45) - Evan Beard, CEO and Chief Engineer of Standard Bots, discusses the company's recent $200 million
+      Series C funding at a $1 billion valuation, plans to quadruple manufacturing capacity, and the goal to account for
+      10% of U.S. industrial robot deployments next year. He highlights the need for domestic production, noting that
+      nearly all U.S. robots are foreign-made, and emphasizes Standard Bots' focus on AI-driven, user-friendly robots
+      that can be trained through demonstration. Beard also addresses the challenges of humanoid robots in industrial
+      settings, suggesting that static or mobile bases with flexible configurations offer better ROI and performance.\r
+
+      (01:39:41) - Nick Leisure, co-founder and CEO of Sandstone, discusses the company's recent $30 million Series A
+      funding led by Lightspeed and their rapid growth, deploying legal relationship management tools to dozens of
+      Fortune 500 and mid-market companies, achieving a 40x business growth in 150 days. He highlights Sandstone's focus
+      on centralizing intake and knowledge for in-house legal teams, enabling effective AI workflows, and
+      differentiating from traditional contract lifecycle management tools. Leisure also addresses the evolving role of
+      AI in legal services, emphasizing the need for experienced in-house counsel and the increasing importance of
+      technical roles within legal teams.\r
+
+      (01:52:39) - Chris Matarese, co-founder, President, and CFO of NinjaOne, discusses how NinjaOne addresses the
+      complexity and fragmentation in IT management by unifying various operations into a single, modern, cloud-native
+      platform, enabling organizations to reduce costs and simplify workflows. He highlights that the average NinjaOne
+      customer replaces seven point solutions, thereby eliminating inefficiencies and security risks associated with
+      managing multiple tools. Additionally, Matarese emphasizes the company's adaptability, noting that while NinjaOne
+      aims to provide comprehensive solutions, it also integrates with existing point solutions that customers find
+      valuable, ensuring a seamless and unified IT management experience.\r
+
+      (02:06:41) - Alex Heath is the Deputy Editor at The Verge, where he covers major technology companies, AI, social
+      media, and the future of consumer tech. He is also the author of Sources, a newsletter focused on the inner
+      workings of Silicon Valley and the biggest stories shaping the tech industry.\r
+
+      (02:34:20) - Rob Schroder Jr. is the founder and managing partner of Vinyl Equity, a growth investment firm
+      focused on partnering with technology companies and founders. He is known for his long-term approach to investing,
+      working closely with entrepreneurs to help scale businesses while emphasizing sustainable growth and operational
+      excellence.
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com
+
+
+      Codex - http://openAI.com/codex
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/tbpn/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 2ba082a8-0ef6-4e19-ae02-579f86e77ea3
+    guid: 2ba082a8-0ef6-4e19-ae02-579f86e77ea3
+    title: WWDC Reactions, Jobs Up Stocks Down, VC Horror Stories | Will Marshall, Baroness Dambisa Moyo, Samuel Hume, David
+      Kirtley, Pete Florence, Jordan Bramble
+    duration: 10845
+    published: Mon, 08 Jun 2026 14:43:16 -0700
+    published_sort: "20260608"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/3d5315dd
+    audio_url: https://media.transistor.fm/3d5315dd/160d616c.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/3d5315dd/transcription.txt
+    transcript_type: text/plain
+    summary: "(01:13) - WWDC Reactions\r
+
+      (19:30) - Jobs Up Stocks Down\r
+
+      (23:45) - VC Horror Stories\r
+
+      (40:40) - Will Marshall, co-founder and CEO of Planet, discusses the company's mission to make global change
+      visible and actionable through a fleet of over 200 Earth-imaging satellites that capture daily images of the
+      entire landmass at approximately 3-meter resolution. He explains their vertically integrated approach, building
+      custom components for their satellites, and highlights applications such as detecting methane leaks, monitoring
+      deforestation in the Amazon, and assisting in disaster response. Marshall also touches on their diverse clientele,
+      including defense and intelligence sectors, commercial industries like agriculture and energy, and recent
+      capital-raising efforts to secure the company's long-term future.\r
+
+      (57:45) - Baroness Dambisa Moyo is a Zambian-born economist, author, and investor who serves as a member of the UK
+      House of Lords and sits on the boards of major corporations like Chevron, Starbucks, and Conde Nast. She discusses
+      the critical role of corporate boards in strategic oversight, CEO selection, and societal engagement, emphasizing
+      the importance of adaptability and partnership with governments, especially in the context of emerging
+      technologies like AI. Moyo also highlights the need for companies to balance risk-taking with long-term
+      sustainability, drawing from her extensive experience on boards of both longstanding and tech-based
+      organizations.\r
+
+      (01:27:16) - Samuel Hume, a medical doctor, scientist, and co-founder of Somatic Labs, is dedicated to advancing
+      the frontiers of medicine and science. He discusses the challenges in biotech, particularly the impact of patent
+      cliffs on pharmaceutical companies, and highlights the promising results of the RASolute 302 trial, where the
+      investigational drug daraxonrasib nearly doubled overall survival in patients with metastatic pancreatic cancer.
+      Additionally, Hume introduces Somatic Labs' efforts to expedite drug development by automating systematic reviews
+      using AI, aiming to reduce the process from years to mere hours.\r
+
+      (01:43:25) - David Kirtley, co-founder and CEO of Helion Energy, discusses the company's recent $465 million
+      Series G funding round and the development of their seventh-generation fusion system, Polaris, in Washington
+      state. He explains Helion's unique approach to fusion energy, focusing on direct electricity extraction from
+      fusion reactions to achieve high efficiency and scalability. Kirtley also outlines plans to build a 50-megawatt
+      fusion power plant for Microsoft by 2028, emphasizing modular, scalable systems for rapid deployment and global
+      impact.\r
+
+      (02:00:51) - Pete Florence, co-founder and CEO of Generalist AI, has an extensive background in robotics and AI,
+      including a PhD from MIT and experience as a Senior Research Scientist at Google DeepMind. In the conversation, he
+      discusses his journey from academia to industry, highlighting his collaborations with co-founders Andy Barry and
+      Andy Zeng, and their collective decision to establish Generalist AI to advance general-purpose robotics. Florence
+      emphasizes the company's focus on developing versatile robotic systems that extend beyond humanoid forms, aiming
+      to address a wide range of applications through scalable AI models and innovative data collection methods.\r
+
+      (02:23:26) - Jordan Bramble, CEO and co-founder of Antares Nuclear, discusses the recent successful criticality
+      demonstration of their advanced reactor design, the Mark-0, at Idaho National Laboratory (INL). This milestone,
+      achieved under the U.S. Department of Energy's Reactor Pilot Program, marks the first privately developed advanced
+      reactor to go critical in the U.S. in decades. Bramble emphasizes the significance of this achievement in
+      revitalizing America's nuclear industry and highlights the collaborative efforts with INL and the DOE that
+      facilitated this success.\r
+
+      (02:46:22) - 𝕏 Timeline Reactions
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com/
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: cc5049aa-7b91-45a0-81fa-9a3ba99cd5de
+    guid: cc5049aa-7b91-45a0-81fa-9a3ba99cd5de
+    title: 🔴 Alex Karp LIVE from AIPCon 10 | Alex Karp, Peter Zaffino, Chad Wahlquist, Sam Berry
+    duration: 6583
+    published: Thu, 04 Jun 2026 13:52:42 -0700
+    published_sort: "20260604"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/47c63ce6
+    audio_url: https://media.transistor.fm/47c63ce6/fa5b9735.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/47c63ce6/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:00) - - Live from Palantir's AIPCon 10\r
+
+      (12:38) - - Ramp raises $750M at $44B valuation\r
+
+      (15:19) - - Timeline reactions\r
+
+      (23:57) - - Alex Karp, co-founder and CEO of Palantir Technologies, discusses the evolution of artificial
+      intelligence (AI) adoption, noting a shift from skepticism to widespread recognition of its value, while
+      cautioning against unproductive overuse. He emphasizes the importance of taste and discernment in effectively
+      integrating AI into business processes, highlighting that successful implementation requires more than just
+      technical capability. Karp also warns of potential nationalization and regulation of AI technologies by
+      governments, urging proactive engagement to address these challenges.\r
+
+      (48:04) - - Peter Zaffino, born in 1967, is the Chairman and CEO of American International Group (AIG), having
+      joined the company in 2017 as Executive Vice President and Global Chief Operating Officer. In the conversation,
+      Zaffino discusses AIG's global operations, emphasizing its balanced international and North American presence, and
+      highlights the company's focus on managing complex risks for large clients. He also elaborates on AIG's
+      partnership with Palantir Technologies, detailing how their collaboration has enhanced data integration and
+      decision-making processes within the organization.\r
+
+      (01:01:35) - - Chad Wahlquist, a Forward Deployed Architect at Palantir Technologies, discusses his role in
+      assisting clients to decompose complex problems and apply Palantir's technology in innovative ways. He emphasizes
+      the importance of integrating AI with human processes to model business operations effectively, highlighting the
+      ontology's role in providing a structured worldview that enhances decision-making. Wahlquist also addresses the
+      balance between software malleability and enterprise-grade robustness, advocating for adaptable systems that
+      empower users while maintaining security and scalability.\r
+
+      (01:22:35) - - Timeline reactions\r
+
+      (01:25:22) - - Sam Berry, a USDA employee with a background in engineering and a family history in farming,
+      discusses the diverse roles of the USDA, including food inspections, SNAP administration, and scientific research.
+      He highlights the importance of technological advancements in agriculture, such as automation and AI, to address
+      challenges like workforce shortages and pest control. Berry also emphasizes the need for effective data collection
+      and management to ensure program integrity and support national food security.
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com/
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: fce51b15-5506-4c23-9fcf-6cb82ebfae10
+    guid: fce51b15-5506-4c23-9fcf-6cb82ebfae10
+    title: Microsoft Chases the Frontier, SUNO on Fire, Project Solara | Mikey Shulman, Samir Chaudry, Tom Farley, Nikesh
+      Arora, Henri Stern, Alex Good
+    duration: 9604
+    published: Wed, 03 Jun 2026 14:03:20 -0700
+    published_sort: "20260603"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/e066c7b5
+    audio_url: https://media.transistor.fm/e066c7b5/412bdcc8.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/e066c7b5/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:35) - Microsoft Chases the Frontier\r
+
+      (05:00) - Project Solara\r
+
+      (16:19) - Mikey Shulman, representing Suno, discusses the company's recent achievement of raising over $400
+      million, led by Bond, highlighting significant traction and progress in user engagement and retention. He
+      emphasizes the importance of retention as a key metric, noting that improvements in the product have led to
+      increased user engagement and a broader audience. Shulman also addresses the evolving perception of AI-generated
+      music, suggesting that as more people experience the product, acceptance grows, and he envisions a future where AI
+      tools like Suno become integral to creative processes in the music industry.\r
+
+      (35:20) - 𝕏 Timeline Reactions\r
+
+      (43:28) - Samir Chaudry is an American entrepreneur and co-host of the YouTube channel \"Colin and Samir,\" where
+      he interviews creators and discusses the creator economy. In the conversation, he explores the evolving
+      collaboration between YouTube creators and Hollywood, emphasizing the emergence of internet-native filmmakers and
+      the significance of community-driven intellectual property. He highlights the success of horror and animation
+      genres on YouTube, noting their potential for adaptation into feature films, and underscores the importance of
+      development support for creators transitioning to larger projects.\r
+
+      (01:08:47) - Tom Farley, CEO of Bullish and former President of the NYSE Group, discusses his career trajectory
+      from traditional finance to the digital asset sector, highlighting his early investment in Coinbase and the
+      evolving role of blockchain in financial markets. He reflects on the maturation of the cryptocurrency industry,
+      noting its transition from speculative hype to a more stable and institutionalized market, and emphasizes the
+      potential for blockchain technology to revolutionize global securities by enhancing transparency and efficiency.
+      Farley also addresses the challenges and opportunities in integrating digital assets with traditional financial
+      systems, underscoring the importance of regulatory clarity and technological innovation in driving future
+      growth.\r
+
+      (01:32:48) - Nikesh Arora, an Indian-American business executive born in 1968, has been the chairman and CEO of
+      Palo Alto Networks since June 2018, following senior roles at Google and SoftBank. In the conversation, Arora
+      discusses the challenges AI models like Anthropic's Mythos face in cybersecurity, emphasizing issues such as high
+      false positive rates and the lack of real-time enforcement capabilities. He also highlights the importance of
+      focusing on detection and remediation over mere protection, given the evolving AI-driven threat landscape.\r
+
+      (01:56:04) - Henri Stern, co-founder and CEO of Privy, a blockchain infrastructure company, discusses his
+      participation in the Money 2020 fintech conference in Amsterdam, where Privy launched new products in partnership
+      with Deel to enable contractors to receive stablecoin payments globally. He highlights the growing adoption of
+      stablecoin cards that allow users to spend stablecoins directly through traditional payment networks like Visa and
+      MasterCard, facilitating seamless transactions for merchants. Stern also notes the significant adoption of
+      stablecoins in regions like Latin America and Southeast Asia, while acknowledging the regulatory restrictions in
+      countries such as China that limit stablecoin usage.\r
+
+      (02:11:13) - Alex Good, a former Army officer and experienced professional in finance and technology, has
+      transitioned into the crypto and AI sectors, focusing on developing protocols that integrate these fields. He
+      discusses the challenges at the intersection of crypto and AI, including increased hacking incidents due to AI's
+      ability to evaluate human-written code, and emphasizes the need for secure protocols to prevent unauthorized
+      transactions. Good also shares his \"doom thesis,\" suggesting that AI might accelerate the emergence of
+      surveillance states, prompting capital to move into privacy-focused cryptocurrencies like Zcash.
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com/
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: edc93462-0875-451f-a106-5cab3da94e8b
+    guid: edc93462-0875-451f-a106-5cab3da94e8b
+    title: Google Taps Berkshire, Confidential IPO Filings, Putin's Longevity | Jack Doohan, Shreya Murthy, Nate Cavanaugh &
+      Justin Fox, Thomas Mueller, Edward Kim, Brynn Putnam
+    duration: 9273
+    published: Tue, 02 Jun 2026 13:59:11 -0700
+    published_sort: "20260602"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/51d955de
+    audio_url: https://media.transistor.fm/51d955de/f7306c06.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/51d955de/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:21) - Google Taps Berkshire\r
+
+      (24:37) - Berkshire Bets on Housing\r
+
+      (38:54) - History of Confidential IPO Filings\r
+
+      (46:33) - Jack Doohan, an Australian racing driver, discusses his journey from karting in Australia to becoming a
+      Formula One driver, including his early move to Europe at 13 and his progression through the racing ranks. He
+      shares the challenges he faced, such as being sidelined six races into his F1 career due to circumstances beyond
+      his control, which led him to explore his interest in AI and technology. This exploration culminated in the
+      founding of Muse, a company aimed at solving data fragmentation issues in the food and beverage industry by
+      unifying various systems into a single, orchestrated platform.\r
+
+      (01:07:48) - Nate Cavanaugh, co-founder of Special, discusses the launch of their new holding company aimed at
+      applying AI tools to the $10 trillion Main Street services economy, starting with healthcare. He explains their
+      strategy to acquire independent small businesses, beginning with at-home senior care, and enhance them with AI to
+      improve efficiency and service quality. Cavanaugh emphasizes their commitment to sharing cost savings with workers
+      to attract talent and plans to replicate this model across other labor-intensive, highly regulated industries.\r
+
+      (01:15:31) - Thomas Mueller, a renowned aerospace engineer and propulsion expert, is the founder and CEO of
+      Impulse Space, a company specializing in in-space transportation services. In the conversation, Mueller discusses
+      Impulse Space's mission to enhance space mobility by developing technologies that transport payloads from Low
+      Earth Orbit (LEO) to higher orbits like Geostationary Orbit (GEO), the Moon, and Mars. He highlights the company's
+      products, such as the Mira spacecraft for precision maneuvering and the Helios kick stage designed to efficiently
+      move payloads to higher orbits, aiming to make space access more reliable and cost-effective.\r
+
+      (01:34:34) - 𝕏 Timeline Reactions\r
+
+      (01:38:56) - Putin's Longevity\r
+
+      (01:46:46) - Edward Kim, co-founder and head of technology at Gusto, introduces Gusto Co-Founder, an AI agent
+      designed to automate small business back-office tasks like payroll, benefits, and HR scheduling. This tool
+      integrates with existing systems such as Notion, QuickBooks, and Google Workspace, allowing users to manage
+      operations via SMS and Slack, thereby streamlining processes and reducing the need for direct platform
+      interaction. Kim emphasizes the importance of creating a seamless, teammate-like experience to enhance efficiency
+      and user satisfaction.\r
+
+      (02:02:06) - Shreya Murthy, co-founder and CEO of Partiful, a social event planning platform, discusses the launch
+      of Partiful's new ticketing feature, enabling hosts to sell tickets directly through the platform. This addition
+      addresses a feature gap, enhancing user experience and supporting various events like concerts and fundraisers.
+      Murthy emphasizes the company's commitment to fostering real-world connections and outlines plans for future
+      growth and monetization.\r
+
+      (02:17:58) - Brynn Putnam, a former professional ballerina and Harvard graduate, is the founder of Mirror and
+      Board, companies that integrate technology into fitness and gaming experiences. In the conversation, she discusses
+      the unexpected success of Board, noting its adoption by a diverse audience beyond early tech adopters, including
+      families and educators. She highlights the development of Board Studio, a tool enabling users to create custom
+      games, and addresses the challenges of balancing innovation with intellectual property considerations.
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com/
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: f57b2ffc-d7cf-4f27-b72a-d09eb60132cf
+    guid: f57b2ffc-d7cf-4f27-b72a-d09eb60132cf
+    title: "YouTubers Win the Box Office, Salesforce on a Tear, Bernie Sanders: A.I. is a Public Resource | Adam Iscoe,
+      Danial Jameel, Mike Schroepfer, Nico Ferreyra, Sue Khim, Bernie Su"
+    duration: 9706
+    published: Mon, 01 Jun 2026 14:11:25 -0700
+    published_sort: "20260601"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/07ff1b7d
+    audio_url: https://media.transistor.fm/07ff1b7d/47b771e0.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/07ff1b7d/transcription.txt
+    transcript_type: text/plain
+    summary: "(01:05) - YouTubers Win the Box Office\r
+
+      (32:48) - 𝕏 Timeline Reactions\r
+
+      (35:40) - Bernie Wants Public Stake in AI\r
+
+      (49:03) - Anthropic IPO\r
+
+      (50:04) - Salesforce Invests $2B in France\r
+
+      (51:03) - Salesforce on a Tear\r
+
+      (55:37) - 𝕏 Timeline Reactions\r
+
+      (59:39) - Adam Iscoe, a journalist formerly with The New Yorker, has covered diverse topics including mental
+      illness, contemporary art, and cryptocurrency. In the conversation, he discusses his journey to The New York
+      Times, his writing process, and his experiences covering various subjects.\r
+
+      (01:23:52) - 𝕏 Timeline Reactions\r
+
+      (01:36:33) - Danial Jameel, Founder and CEO of Saris AI, discusses how his company develops AI workflow agents to
+      automate complex back-office tasks in banks and credit unions, enhancing efficiency and allowing staff to focus on
+      more meaningful work. He highlights the significant impact on employees' work-life balance, sharing examples where
+      staff previously working late hours due to backlogs can now leave earlier, improving their quality of life.
+      Additionally, he mentions that increased productivity has led some institutions to forgo hiring additional staff,
+      instead opting to reward existing employees with raises, thereby boosting overall morale.\r
+
+      (01:41:43) - Mike Schroepfer, former CTO of Meta Platforms, is the founder of Gigascale Capital, a venture capital
+      firm focused on climate tech investments. In the conversation, he discusses his transition from Meta to venture
+      capital, emphasizing the shift from digital to physical innovations in addressing climate change. He highlights
+      investments in companies like Heron Power and Radiant Nuclear, which are developing advanced energy solutions, and
+      underscores the importance of rethinking traditional manufacturing and energy systems to achieve significant
+      environmental impact.\r
+
+      (01:55:36) - Nico Ferreyra, co-founder and CEO of Default, discusses the company's evolution from building
+      top-of-funnel orchestration tools to launching a new product that integrates a real-time data layer with AI agents
+      to enhance go-to-market execution. He highlights the challenges companies face with disconnected systems and how
+      Default's platform unifies data to streamline growth processes. Ferreyra also touches on the company's intense
+      work culture and recent $10 million funding round, emphasizing their commitment to solving complex problems in
+      revenue operations.\r
+
+      (02:06:55) - Sue Khim, co-founder and CEO of Brilliant, discusses the launch of their new AI tutor, Koji, designed
+      to help users learn math and coding through interactive, graphical assistance. She emphasizes the importance of
+      reducing embarrassment in learning, allowing students to ask questions freely, and highlights the tutor's goal of
+      becoming unnecessary as learners gain confidence and independence. Khim also addresses the significance of
+      multimodal learning experiences and the need for purpose-built educational tools that provide real-time feedback
+      and personalized learning paths.\r
+
+      (02:16:18) - Bernie Su is an American web series creator, writer, director, and producer, renowned for his Emmy
+      Award-winning adaptations of Jane Austen's novels, including \"The Lizzie Bennet Diaries\" and \"Emma Approved.\"
+      In the conversation, Su discusses the evolving relationship between Hollywood and YouTube creators, noting that
+      the integration has been progressing for years, with recent successes like \"Obsession,\" \"Backrooms,\" and
+      \"Iron Lung\" highlighting this trend. He emphasizes that these achievements stem from creators producing content
+      authentic to their brand, rather than merely leveraging their follower count, and observes that YouTubers are
+      increasingly adept at franchising their content across various media platforms.\r
+
+      (02:37:14) - 𝕏 Timeline Reactions
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com/
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 1bf263d1-f3fc-4663-8f51-503b92e52477
+    guid: 1bf263d1-f3fc-4663-8f51-503b92e52477
+    title: Blue Origin Explosion, Enterprise AI Hits Spending Limits, Dinosaur Market Booms | John Gruber, Ronak Malde, Zane
+      Mountcastle, Jamie Cuffe, Kyle Kuzma, Brad Gerstner
+    duration: 9473
+    published: Fri, 29 May 2026 14:01:50 -0700
+    published_sort: "20260529"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/52af22de
+    audio_url: https://media.transistor.fm/52af22de/10d54d16.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/52af22de/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:43) - Blue Origin Explosion\r
+
+      (07:38) - Enterprise AI Hits Spending Limits\r
+
+      (21:48) - Dinosaur Market Booms\r
+
+      (29:13) - John Gruber, a prominent technology writer and podcaster, discusses the Ferrari Luce's design,
+      expressing that its appearance deviates from traditional Ferrari aesthetics, making it hard to identify as a
+      Ferrari without its nameplate. He also reflects on Apple's design philosophy, emphasizing their commitment to
+      creating products that prioritize functionality and user experience over following market trends. Additionally,
+      Gruber highlights the challenges Apple faces in integrating AI technologies, noting the importance of balancing
+      innovation with maintaining the company's core values and user trust.\r
+
+      (01:11:16) - Ronak Malde, formerly an AI researcher at Windsurf and Google DeepMind, co-founded Trajectory, a
+      startup focused on building a platform for continual learning in AI systems. In the conversation, he discusses
+      raising $15 million from Conviction and partnering with companies like Harvey, Decagon, Clay, Rogo, and Mercor to
+      develop agents that learn from real-world user interactions, enabling AI products to improve daily. Malde
+      emphasizes the importance of creating AI agents with practical experience that understand business-specific
+      rewards, allowing for efficient post-training and continual enhancement of AI capabilities.\r
+
+      (01:19:18) - Zane Mountcastle, co-founder and CEO of Picogrid, discusses the company's recent $45 million Series A
+      funding led by Bessemer Venture Partners, aimed at expanding their team and scaling production to meet increasing
+      demand. He explains that Picogrid develops technology to integrate mission-critical systems like sensors, drones,
+      and weapon systems, primarily for military applications, by building open infrastructure that enables these
+      systems to work together. Mountcastle also highlights the company's active contracts with the Pentagon, NATO, and
+      allied partners, emphasizing their focus on serving military needs while acknowledging potential future commercial
+      applications.\r
+
+      (01:25:10) - Jamie Cuffe, CEO of Pace, announced the company's $46 million Series B funding co-led by Thrive
+      Capital and Sequoia, with participation from Emergence and Pruven. He discussed how Pace's AI agents are
+      automating back-office operations for major insurers like Prudential and Convex, achieving over 99.9% accuracy and
+      enabling clients to autonomously complete hundreds of thousands of tasks daily. Cuffe emphasized that this
+      automation is helping insurers close the $9 trillion protection gap by making insurance more accessible and
+      efficient.\r
+
+      (01:32:57) - Kyle Kuzma, an American professional basketball player for the Milwaukee Bucks, discusses his journey
+      into investing, inspired by mentors like Kobe Bryant, and emphasizes the importance of focusing on basketball
+      while exploring ventures in the tech and private investment sectors. He highlights the significance of leveraging
+      his unique position as an athlete to access investment opportunities and stresses the value of surrounding himself
+      with knowledgeable individuals to navigate the complexities of the investment landscape. Kuzma also touches on the
+      evolving role of AI in basketball, expressing a cautious perspective on its influence on the game.\r
+
+      (01:50:08) - Brad Gerstner is the founder and CEO of Altimeter Capital, a technology-focused investment firm that
+      invests across public and private markets. Known for his high-conviction bets on companies such as Snowflake,
+      Meta, and Uber, he is a frequent commentator on technology, AI, capital markets, and long-term investing.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 648552bb-27a7-4535-acd8-cff2bb81dc92
+    guid: 648552bb-27a7-4535-acd8-cff2bb81dc92
+    title: Ferrari EV, Enhanced Games, Alcohol & Podcasting | Christopher Hale, Sean Henry, Eric Ries, Alex Atallah
+    duration: 8690
+    published: Tue, 26 May 2026 13:51:34 -0700
+    published_sort: "20260526"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/96987a7b
+    audio_url: https://media.transistor.fm/96987a7b/d329ce92.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/96987a7b/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:27) - Ferrari EV\r
+
+      (40:58) - Enhanced Games\r
+
+      (47:41) - Christopher Hale, a Catholic writer and former executive director of Catholics in Alliance for the
+      Common Good, discusses Pope Leo XIV's recent encyclical on artificial intelligence, highlighting the Pope's
+      emphasis on maintaining human dignity and responsibility in technological advancements. He notes the Pope's
+      concern over delegating human decisions to machines, especially in contexts like warfare, and underscores the call
+      for Silicon Valley to consider the ethical implications of AI development.\r
+
+      (01:10:48) - Alcohol & Podcasting\r
+
+      (01:17:21) - Sean Henry, co-founder and CEO of Stord, announced the company's recent $250 million funding round,
+      elevating its valuation to $3 billion. He discussed Stord's decade-long development of a vertically integrated
+      platform that leverages robotics and AI to enhance commerce, enabling faster deliveries and cost efficiencies.
+      Henry also highlighted the launch of Stord Labs, dedicated to testing next-generation robotics and AI, and the
+      company's international expansion into markets like Canada, Europe, China, and Australia.\r
+
+      (01:31:05) - Eric Ries is an entrepreneur and author best known for The Lean Startup, which helped popularize
+      iterative product development and rapid experimentation in startups. He is also the author of The Startup Way and
+      Incorruptible, where he explores institutional trust, governance, and how organizations can remain resilient and
+      accountable at scale.\r
+
+      (02:09:45) - Alex Atallah, co-founder and CEO of OpenRouter, discusses the evolution of AI models and the
+      importance of neurodiversity in AI agents selecting cost-effective tools for specific tasks. He highlights
+      OpenRouter's recent $113 million funding round, led by Capital G with participation from existing investors and
+      strategic partners like Nvidia, ServiceNow, and Databricks, emphasizing the company's commitment to fostering a
+      diverse team. Atallah also addresses the trend of companies optimizing AI inference costs by utilizing multiple
+      models tailored to specific tasks, leading to significant cost savings and improved performance.\r
+
+      (02:22:45) - 𝕏 Timeline Reactions
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: abf0c8d0-7098-4c1c-b046-0fc1996b37d8
+    guid: abf0c8d0-7098-4c1c-b046-0fc1996b37d8
+    title: Starship Launch, World's Fair Retrospective, Sacks Spikes AI EO | Dan Shipper, James Rogers
+    duration: 7316
+    published: Fri, 22 May 2026 13:31:30 -0700
+    published_sort: "20260522"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/03553f2d
+    audio_url: https://media.transistor.fm/03553f2d/d8e139a3.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/03553f2d/transcription.txt
+    transcript_type: text/plain
+    summary: "(01:01) - Sacks Spikes AI EO\r
+
+      (07:56) - America's IPO Market Wakes Up\r
+
+      (17:47) - Starship Launch\r
+
+      (28:28) - World's Fair Retrospective\r
+
+      (45:46) - Dan Shipper, co-founder and CEO of Every, discusses the transformative impact of AI agents like Codex
+      and Claude Code on knowledge work, highlighting how these tools have automated tasks in coding, writing, design,
+      and customer service, leading to Every's growth from 4 to 30 employees since GPT-3. He emphasizes that while AI
+      makes expert competence more accessible, it simultaneously increases the demand for human expertise to provide
+      judgment and differentiation, as AI outputs often require human framing and evaluation to be truly valuable.
+      Shipper also notes that AI enables small, generalist teams to accomplish tasks that previously required larger,
+      specialized organizations, allowing for a more fulfilling and versatile work experience.\r
+
+      (01:09:01) - James Rogers is the founder and CEO of Apeel Sciences, a company developing plant-based coatings that
+      extend the shelf life of fresh produce and reduce food waste. He launched the company out of research funded by
+      the Bill & Melinda Gates Foundation, with a focus on improving global food distribution and sustainability through
+      materials science.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: cad187f2-4d89-4af2-9bfa-f63ff125b433
+    guid: cad187f2-4d89-4af2-9bfa-f63ff125b433
+    title: SpaceX IPO, The Erdős Problem, Spotify CEO Joins | Alex Tabarrok, Bill Clerico, Alex Norström, Jordan Schneider,
+      Christina Lee Storm, Erik Bernhardsson
+    duration: 9008
+    published: Thu, 21 May 2026 14:03:53 -0700
+    published_sort: "20260521"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/c147b20d
+    audio_url: https://media.transistor.fm/c147b20d/e3a86d73.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/c147b20d/transcription.txt
+    transcript_type: text/plain
+    summary: "(01:25) - SpaceX IPO\r
+
+      (12:37) - Anthropic Revenue Surges\r
+
+      (17:31) - OpenAI Solves the Erdős Problem\r
+
+      (27:53) - Alex Tabarrok, a Canadian-American economist and professor at George Mason University, co-authors the
+      Marginal Revolution blog and co-founded Marginal Revolution University. He discusses the Baumol effect, explaining
+      how sectors with stagnant productivity, like education and healthcare, experience rising costs due to increasing
+      wages in more productive industries. Tabarrok also explores the potential of AI to mitigate this effect by
+      enhancing productivity in traditionally labor-intensive sectors.\r
+
+      (01:02:22) - Bill Clerico, founder and managing partner of Convective Capital, discusses the firm's recent $85
+      million fundraise, doubling their previous fund, to invest in disaster resilience technologies. He highlights the
+      increasing frequency and severity of disasters due to aging infrastructure and climate change, emphasizing the
+      need for private market solutions. Clerico also shares insights into the fire technology market, noting the
+      challenges and opportunities in selling to utilities, insurance companies, and government agencies, and
+      underscores the importance of technological innovation in enhancing disaster preparedness and response.\r
+
+      (01:15:12) - Alex Norström, Spotify's Co-Chief Executive Officer since January 2026, discusses the company's
+      recent Investor Day, highlighting significant user growth and financial achievements over the past four years. He
+      introduces four major future initiatives, including a new feature that reserves concert tickets for premium users,
+      addressing challenges like ticket scarcity and scalping. Norström also emphasizes Spotify's advancements in AI,
+      particularly in enhancing user experience and content personalization.\r
+
+      (01:36:38) - Jordan Schneider is the creator of the ChinaTalk podcast and newsletter, focusing on China,
+      technology, and U.S.-China relations. In this conversation, he discusses the recent U.S.-China summit,
+      highlighting the stalemate in relations and China's leverage over the U.S. through rare earths. He also touches on
+      the absence of key AI leaders at the summit and the implications for future technological collaboration.\r
+
+      (02:02:17) - Christina Lee Storm, Head of Studio at Secret Level and co-founder of Playbook PLBK, discusses the
+      evolving role of AI in film production, emphasizing its integration as a natural progression in storytelling
+      rather than a disruptive force. She highlights the importance of embracing technology to enhance creativity and
+      efficiency, while underscoring that compelling storytelling remains paramount. Storm also reflects on the
+      potential for AI to democratize filmmaking, enabling independent creators to produce high-quality content,
+      provided they maintain a strong focus on narrative depth.\r
+
+      (02:14:28) - Erik Bernhardsson, co-founder and CEO of Modal Labs, discusses the company's recent Series C funding
+      round, raising $355 million at a $4.65 billion post-money valuation led by General Catalyst and Redpoint Ventures.
+      He highlights the rapid growth of their Sandboxes product, which has been doubling in usage every month for the
+      past six months, enabling safe execution of language model-generated code. Bernhardsson also addresses the
+      challenges of demand planning in the AI infrastructure space, emphasizing the need to secure GPUs months in
+      advance to accommodate their 30-40% monthly growth rate.\r
+
+      (02:25:14) - 𝕏 Timeline Reactions
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
     priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     guid: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
@@ -140,6 +1283,610 @@ episodes:
       organic growth, customer engagement, and maintaining authenticity in product development.\r
 
       (02:28:41) - 𝕏 Timeline Reactions
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 2667f251-0189-4d44-bdee-7b47d1af1a44
+    guid: 2667f251-0189-4d44-bdee-7b47d1af1a44
+    title: Google I/O Reactions, Birth Rate Debates, Spotify's New Icon | Jim Belosic, Aidan Dewar, Fai Nur, Tanay Tandon,
+      Ajeya Cotra, Philip Inghelbrecht
+    duration: 8198
+    published: Tue, 19 May 2026 13:39:43 -0700
+    published_sort: "20260519"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/68702306
+    audio_url: https://media.transistor.fm/68702306/0434a442.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/68702306/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:09) - Google I/O Reactions\r
+
+      (24:14) - Karpathy Joins Anthropic\r
+
+      (28:29) - Reactions to Spotify's New Icon\r
+
+      (33:49) - Birth Rate Debates\r
+
+      (45:18) - Jim Belosic, CEO and founder of SendCutSend, a company specializing in on-demand manufacturing services,
+      discusses the recent achievement of securing a $110 million investment, valuing the company at $1 billion. He
+      shares plans to utilize the funds to expand operations, including hiring additional staff and enhancing software
+      capabilities, aiming to establish facilities near major metropolitan areas to expedite service delivery. Belosic
+      also highlights the company's commitment to supporting STEM education through a $1 million sponsorship program,
+      providing resources and expertise to engineering students and educators.\r
+
+      (01:04:18) - Aidan Dewar, co-founder and CEO of Nourish, discusses the company's mission to address chronic
+      diseases through dietitian-led metabolic clinics that combine a vast network of registered dietitians with virtual
+      medical care, including lab interpretations and medication management. He emphasizes the importance of pairing
+      GLP-1 medications with behavioral changes to achieve sustainable health outcomes, noting that patients working
+      with Nourish dietitians while on GLP-1s lost 33% more weight than those using the medication alone. Dewar also
+      highlights the company's recent $100 million Series C funding, aimed at expanding their services and integrating
+      AI technology to enhance patient care.\r
+
+      (01:12:41) - Fai Nur, CEO and co-founder of Status, discusses the app's rapid growth, reaching a million users in
+      19 days, and its appeal to young users seeking immersive, gamified social experiences. She highlights Status's
+      monetization through in-app purchases and subscriptions, achieving millions in annual recurring revenue and a
+      tenfold increase in revenue in Q1 2026. Nur also addresses the platform's use of AI to create user-generated
+      worlds, emphasizing its role in offering unique experiences that complement traditional entertainment.\r
+
+      (01:22:57) - Tanay Tandon, CEO of Kamir, discusses the company's recent $70 million funding round at a $7 billion
+      valuation, aimed at accelerating R&D for their language model-powered EMR platform and voice agents. He highlights
+      the trillion-dollar administrative burden in the U.S. healthcare system and how Kamir's AI solutions automate
+      tasks like claims processing and documentation to reduce costs and improve efficiency. Tandon also addresses the
+      rapid adoption of language models in healthcare, the potential for AI to empower independent practices, and the
+      evolving dynamics between providers and payers.\r
+
+      (01:33:02) - Ajeya Cotra, a technical staff member at METR with a background in AI safety, discusses her role in
+      leading the Frontier Risk Report, which assesses misalignment risks in advanced AI systems. She explains METR's
+      mission to develop measurement tools for tracking AI capabilities and motivations, and describes the collaboration
+      with companies like Google, OpenAI, Meta, and Anthropic to evaluate their internal models and alignment processes.
+      Cotra also highlights the importance of establishing robust, independent auditing practices to monitor and
+      mitigate potential risks from misaligned AI agents.\r
+
+      (01:48:11) - Philip Inghelbrecht, a Belgian-born entrepreneur and CEO of Tatari, a company specializing in
+      technology for TV advertising, discusses his journey from co-founding Shazam in 1999 to leading Tatari. He
+      highlights the challenges and innovations in TV advertising, emphasizing the importance of measuring real outcomes
+      and the integration of AI in media planning. Inghelbrecht also reflects on the evolution of TV advertising, noting
+      the shift from traditional methods to data-driven strategies that bridge the gap between linear and streaming TV.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 66a7e1f2-360c-440b-a889-65d1651720e1
+    guid: 66a7e1f2-360c-440b-a889-65d1651720e1
+    title: Leopold's 13F, Data Center Fixes, Shein Buys Everlane | Mike Isaac, Rowan Trollope, Dean Leitersdorf, Joanna Stern
+    duration: 10605
+    published: Mon, 18 May 2026 14:19:44 -0700
+    published_sort: "20260518"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/d6d0bc1f
+    audio_url: https://media.transistor.fm/d6d0bc1f/c116d0f4.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/d6d0bc1f/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:17) - Jury Rules Against Musk\r
+
+      (02:23) - Leopold's Situational Awareness 13F Is Out\r
+
+      (16:03) - Data Center Backlash Gets Serious\r
+
+      (44:47) - Mike Isaac, a technology reporter at The New York Times, discusses Elon Musk's lawsuit against OpenAI,
+      highlighting Musk's strategy of using memorable phrases like \"you can't steal a charity\" to appeal to jurors
+      unfamiliar with nonprofit contract law. He notes that OpenAI's defense centered on the statute of limitations, a
+      more technical argument that ultimately swayed the jury's decision. Isaac also mentions the unexpected nature of
+      the verdict and the various protest groups outside the courtroom.\r
+
+      (01:07:52) - Rowan Trollope is the CEO of Redis, where he leads the company’s efforts to expand the popular
+      in-memory database platform into a broader real-time data and AI infrastructure business. He previously held
+      senior leadership roles at Cisco and Five9, and is known for scaling enterprise software and cloud communications
+      companies.\r
+
+      (01:28:26) - Shein Buys Everlane\r
+
+      (01:39:04) - Dean Leitersdorf is the co-founder and CEO of Decart, an AI company focused on generative models and
+      real-time AI infrastructure. He works on building systems that make advanced AI applications faster, more
+      interactive, and easier to deploy at scale.\r
+
+      (01:54:56) - Protein Shortage\r
+
+      (02:04:02) - Joanna Stern is a senior personal technology columnist at The Wall Street Journal, where she covers
+      consumer technology, AI, gadgets, and the impact of tech on everyday life. She is also the author of I Am Not a
+      Robot, a book exploring the increasingly blurred line between humans and machines in the age of AI.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 05bdeb35-8a69-494a-bad6-0769df8a9baf
+    guid: 05bdeb35-8a69-494a-bad6-0769df8a9baf
+    title: $9M Buffett Dinner, AI Monets, Patek Scarcity, Late-Career Founder, WSJ Mansion Section, 𝕏 Timeline Reactions |
+      Rahul Sonwalkar
+    duration: 6842
+    published: Fri, 15 May 2026 13:19:54 -0700
+    published_sort: "20260515"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/aed7a5d8
+    audio_url: https://media.transistor.fm/aed7a5d8/536dec49.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/aed7a5d8/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:19) - 𝕏 Timeline Reactions w/ Rahul Sonwalkar, founder and CEO of Julius AI, a startup building
+      AI-powered tools for data analysis and quantitative reasoning. The company focuses on making it easier for users
+      to analyze spreadsheets, generate visualizations, and interact with data using natural language.\r
+
+      (01:10) - Dine with Warren Buffet for $9M\r
+
+      (05:35) - Typing Loses Ground to Whispering\r
+
+      (16:00) - AI Monet Paintings\r
+
+      (28:12) - 𝕏 Timeline Reactions\r
+
+      (51:02) - Patek Chooses Scarcity Over Scale\r
+
+      (58:52) - WSJ Mansion Section\r
+
+      (01:21:01) - 67 Year Old Founder\r
+
+      (01:27:40) - 𝕏 Timeline Reactions\r
+
+      (01:34:23) - SpaceX Speeds Up IPO Timeline\r
+
+      (01:36:04) - Ackman Takes Microsoft Stake\r
+
+      (01:38:41) - 𝕏 Timeline Reactions
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: e11157ab-f5bb-4aa0-9b5f-41676fb9cb68
+    guid: e11157ab-f5bb-4aa0-9b5f-41676fb9cb68
+    title: Cerebras IPO, WarshTime, General Catalyst Ad Reactions | Andrew Feldman, Amy Reinhard, Ben Hylak, Doug
+      O'Laughlin, Eric Vishria, Steve Vassallo
+    duration: 11624
+    published: Thu, 14 May 2026 14:42:27 -0700
+    published_sort: "20260514"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/552a63af
+    audio_url: https://media.transistor.fm/552a63af/023151cd.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/552a63af/transcription.txt
+    transcript_type: text/plain
+    summary: "(01:04) - Cerebras IPO\r
+
+      (21:36) - Warsh Confirmed as FED Chair\r
+
+      (30:51) - Amy Reinhard is the President of Advertising at Netflix, where she leads the company’s global ads
+      business and monetization strategy. She oversees Netflix’s push into ad-supported streaming, partnerships with
+      advertisers, and the development of new advertising products and measurement capabilities.\r
+
+      (45:46) - General Catalyst Ad Reactions\r
+
+      (01:03:38) - Ben Hylak is the founder and CEO of Raindrop, a relationship management platform designed to help
+      people strengthen and maintain personal and professional connections. He focuses on building consumer software
+      that uses AI and thoughtful design to make networking and relationship-building more natural, proactive, and
+      human-centered.\r
+
+      (01:29:03) - Doug O'Laughlin is an analyst and writer at SemiAnalysis, where he covers AI infrastructure,
+      semiconductors, cloud computing, and hyperscaler economics. He is known for deep technical and financial
+      breakdowns of GPUs, data centers, and the companies shaping the AI compute stack.\r
+
+      (02:23:13) - Andrew Feldman is the co-founder and CEO of Cerebras Systems, an AI hardware company building
+      wafer-scale processors designed for large-scale AI training and inference. He previously co-founded SeaMicro,
+      which was acquired by AMD, and focuses on rethinking compute architecture for the era of massive machine learning
+      models.\r
+
+      (02:42:27) - Eric Vishria is a general partner at Benchmark focused on early-stage software and AI investments.
+      Before joining Benchmark, he held product and operating roles at companies including RockMelt and Google, and is
+      known for working closely with founders on product strategy, growth, and company building.\r
+
+      (02:56:51) - Steve Vassallo is a general partner at Foundation Capital focused on enterprise software, AI, and
+      frontier technologies. He works closely with technical founders building infrastructure and developer-focused
+      companies, and is known for backing ambitious startups at the earliest stages.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 6b80c8e6-b028-42ec-8104-e0f8c17a5975
+    guid: 6b80c8e6-b028-42ec-8104-e0f8c17a5975
+    title: Trump-Xi Summit, Inflation Fears, Space Data Centers | Max Levchin, Delian Asparouhov, Richard Socher, Brandon
+      Hill, Nate Tepper, Joubin Mirzadegan, Roman Chernin
+    duration: 11164
+    published: Wed, 13 May 2026 14:29:28 -0700
+    published_sort: "20260513"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/f4584153
+    audio_url: https://media.transistor.fm/f4584153/233262fb.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/f4584153/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:50) - Trump-Xi Summit\r
+
+      (28:35) - Space Data Centers\r
+
+      (37:29) - 𝕏 Timeline Reactions\r
+
+      (57:39) - Wall Street's Inflation Fears Rise\r
+
+      (01:01:37) - Max Levchin, a Ukrainian-American software engineer and entrepreneur, co-founded PayPal in 1998 and
+      currently serves as the CEO of Affirm, a financial technology company offering \"buy now, pay later\" services. In
+      his recent conversation, Levchin discussed his deep dive into the mechanics of espresso machines, emphasizing his
+      passion for mastering complex systems. He also highlighted the importance of specialization and depth of knowledge
+      in one's field, advocating for young professionals to pursue expertise in areas like computer science to remain
+      competitive in an evolving job market.\r
+
+      (01:30:40) - Delian Asparouhov, co-founder and president of Varda Space Industries, discusses the company's
+      collaboration with United Therapeutics to manufacture pharmaceuticals in microgravity, aiming to improve drug
+      formulations for rare pulmonary diseases. He highlights the significance of this partnership as the first instance
+      of a publicly traded company investing its own resources to produce physical products in low Earth orbit.
+      Asparouhov also elaborates on the technical processes involved, including the benefits of microgravity for drug
+      crystallization and the logistics of launching and retrieving these products from space.\r
+
+      (02:01:19) - Richard Socher, former Chief Scientist at Salesforce and founder of You.com, is now leading Recursive
+      Superintelligence, an AI startup focused on developing self-improving AI systems. In the conversation, he
+      discusses the company's mission to build recursive, self-improving superintelligence capable of automating
+      knowledge discovery, emphasizing the importance of AI systems that can autonomously enhance their own
+      capabilities. He also highlights the recent funding success, with Recursive Superintelligence raising over $650
+      million at a $4.65 billion valuation, led by GV (Google Ventures) and Greycroft, with participation from Nvidia
+      and AMD.\r
+
+      (02:12:38) - 𝕏 Timeline Reactions\r
+
+      (02:18:17) - Brandon Hill, CEO and co-founder of Vori, is a third-generation grocer whose family has been in the
+      grocery industry for over 40 years. In the conversation, he discusses Vori's mission to modernize grocery store
+      operations by automating processes such as inventory management, pricing, and ordering, aiming to enhance
+      efficiency and profitability for independent retailers. Hill also highlights Vori's recent $22 million funding
+      round, which will support the company's expansion and further development of its autonomous operating system for
+      supermarkets.\r
+
+      (02:26:03) - Nate Tepper, founder and CEO of True Short, an AI-driven film studio and streaming platform,
+      discusses the company's innovative approach to creating and distributing vertical, short-form content inspired by
+      China's successful micro-dramas. He highlights their strategy of forming creative pods—teams consisting of a
+      showrunner, AI filmmaker, and editor—to produce weekly series, and emphasizes their focus on rapid content
+      creation and distribution to stay ahead of competitors. Tepper also notes the importance of both organic and paid
+      growth strategies, leveraging platforms like TikTok to drive user engagement and app downloads.\r
+
+      (02:39:04) - Joubin Mirzadegan, co-founder and CEO of Roadrunner, discusses the company's inception at Kleiner
+      Perkins, where he identified a critical need for improved revenue infrastructure through conversations with CIOs.
+      He highlights the challenges posed by evolving pricing models, such as the shift from software to SaaS and now to
+      AI-driven consumption-based billing, necessitating adaptable CPQ solutions. Mirzadegan emphasizes the complexity
+      of the sales process, involving multiple stakeholders like CIOs and CROs, and underscores Roadrunner's mission to
+      streamline this process by integrating AI to enhance efficiency and accuracy.\r
+
+      (02:46:29) - Roman Chernin, a founding member of Nebius since its inception in summer 2024, discusses the
+      company's rapid growth and its focus on building a vertically integrated, AI-specialized cloud infrastructure. He
+      highlights the swift evolution of AI models, noting that open-source alternatives are catching up to frontier
+      models within three to six months, prompting customers to switch for cost efficiency. Chernin also addresses
+      challenges in scaling, including physical infrastructure bottlenecks and the necessity of efficient financing,
+      emphasizing the importance of post-sales support and recent strategic acquisitions to enhance inference
+      optimization capabilities.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: c38ec0df-dc01-4420-8394-e23d3f5fbbfc
+    guid: c38ec0df-dc01-4420-8394-e23d3f5fbbfc
+    title: Trial Update, AI SPVs, BuzzFeed Sold | Doomberg, Sahir Jaggi, Sam Blond, Kevin Hartz, Alex Shan, Glen Wise, Roger
+      Lynch
+    duration: 10575
+    published: Tue, 12 May 2026 14:37:58 -0700
+    published_sort: "20260512"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/01a45a62
+    audio_url: https://media.transistor.fm/01a45a62/12ce73b8.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/01a45a62/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:23) - Trial Update\r
+
+      (13:10) - AI SPVs\r
+
+      (24:28) - Thinking Machines Interaction Models\r
+
+      (29:16) - Doomberg is an anonymous team of former industry executives who write about energy markets, finance, and
+      geopolitics, known for their green chicken avatar and a Substack newsletter with over 373,000 subscribers. In the
+      conversation, Doomberg discusses their decision to maintain anonymity to preserve brand mystique, the strategic
+      choice of their green chicken logo inspired by Bloomberg's keyboard color scheme, and the importance of standing
+      out in a crowded media landscape.\r
+
+      (01:05:12) - Sahir Jaggi, founder and CEO of Forus, discusses his company's mission to streamline access to
+      high-cost, complex medications by automating the intricate processes involving insurance, pharmacies, and supply
+      chains using AI. By offering this service for free to doctors' offices, Forus aims to alleviate administrative
+      burdens, allowing healthcare providers to focus on patient care. Additionally, the company leverages its extensive
+      network to collaborate with life science firms, accelerating the development and market introduction of new
+      therapies.\r
+
+      (01:14:06) - Sam Blond, co-founder and CEO of Monaco, an AI-native sales platform, discusses the company's rapid
+      growth since its February launch, surpassing initial expectations in customer acquisition and revenue. He
+      highlights Monaco's all-in-one approach, replacing traditional CRMs and integrating AI agents to automate sales
+      tasks, thereby reducing the need for manual labor. Additionally, Blond emphasizes the unique advantage of pairing
+      each customer with a forward-deployed account executive, ensuring successful implementation and support.\r
+
+      (01:25:55) - Kevin Hartz, co-founder of Xoom and Eventbrite, is a prominent entrepreneur and investor. In the
+      conversation, he discusses A* Capital's recent $450 million Fund III, emphasizing their generalist investment
+      approach with a focus on AI applications, and highlights their strategy of supporting young founders, including
+      teenagers.\r
+
+      (01:38:52) - Alex Shan, CEO of Judgment Labs, discusses his company's focus on enhancing long-horizon autonomous
+      agents through the analysis of production data, emphasizing the importance of such data in improving agent
+      performance across various industries. He highlights their recent Series A funding co-led by Lightspeed Venture
+      Partners and Green Oaks, and mentions partnerships with companies like Monaco to optimize agent development. Shan
+      also notes that while coding agents are currently the most verifiable and thus easier to improve, progress is
+      being made in less quantifiable domains such as finance, legal, and sales.\r
+
+      (01:45:55) - Glen Wise, Co-Founder and CEO of Cinder, discusses the company's recent $41 million funding round led
+      by Radical Ventures and its mission to help companies combat AI-powered abuse across the internet. He explains
+      that Cinder's platform enables clients to set specific policies to detect and mitigate various threats, from
+      cyberbullying to state-sponsored espionage, using AI-driven solutions. Wise also highlights the challenges of
+      scaling their services to accommodate large clients like Spotify, emphasizing the importance of processing data
+      quickly and making rapid decisions to effectively enforce content policies.\r
+
+      (02:00:46) - eBay Rejects Gamestop\r
+
+      (02:03:05) - BuzzFeed Sold\r
+
+      (02:09:46) - Roger Lynch is the CEO of Condé Nast, where he oversees global brands including Vogue, The New
+      Yorker, and GQ. He previously served as CEO of Pandora and Sling TV, and is known for leading digital
+      transformation efforts across media, streaming, and publishing businesses.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: 5ae0ff7e-4f35-4cd6-9195-e1ca36940542
+    guid: 5ae0ff7e-4f35-4cd6-9195-e1ca36940542
+    title: Swatch AP Collab, Cerebras IPO, Trump Visits China | Ferdinand Dabitz, Spencer Rascoff, Eric Olson, Matt
+      Lohstroh, Jay Azhang, Amir Sadeghian, Alexander Taubman, Quaid Walker
+    duration: 9562
+    published: Mon, 11 May 2026 14:25:15 -0700
+    published_sort: "20260511"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/a30cdad1
+    audio_url: https://media.transistor.fm/a30cdad1/53459d0d.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/a30cdad1/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:29) - AP & Swatch Collab\r
+
+      (16:45) - Cerebras Boosts IPO Price Range\r
+
+      (24:56) - Trump to Visit China\r
+
+      (29:37) - Timeline Reactions\r
+
+      (36:37) - Ferdinand Dabitz, co-founder and CEO of Augustus, a fintech company specializing in instant bank
+      payments, discusses the recent conditional approval from the SEC to charter Augustus National Bank as a
+      full-service U.S. national bank. He emphasizes the unparalleled global demand for the U.S. dollar and identifies
+      inefficiencies in current clearing banks, which are slow and outdated. Dabitz outlines Augustus National Bank's
+      mission to modernize this infrastructure, aiming to enhance the distribution of the dollar by offering faster and
+      more efficient clearing services to global financial institutions.\r
+
+      (41:47) - - Spencer Rascoff, co-founder of Zillow and current CEO of Match Group, discusses his transition from
+      the board to CEO, emphasizing his commitment to addressing the global loneliness epidemic through Match Group's
+      platforms. He outlines his initial focus on breaking down organizational silos within the company, transforming it
+      from a holding company to an operating company, and highlights the importance of people, motivation, and
+      organization in building great products. Rascoff also shares his hands-on approach to revitalizing Tinder, aiming
+      to enhance innovation and user outcomes, particularly for the Gen Z demographic.\r
+
+      (01:05:47) - - Eric Olson, co-founder of Consensus, an AI-powered academic search engine, discusses the company's
+      recent $30 million Series B funding led by Great Point Ventures, aimed at expanding their product beyond search
+      into a comprehensive workspace for researchers. He highlights the organic growth driven by direct-to-consumer
+      adoption and partnerships with over 100 universities, where libraries distribute the product to students. Olson
+      emphasizes focusing on automating specific research tasks, such as literature searches, while leaving uniquely
+      human aspects like idea generation and interdisciplinary connections to researchers.\r
+
+      (01:13:37) - - Matt Lohstroh, co-founder and CEO of Giga Energy, began his journey at Texas A&M University, where
+      he and his colleagues developed modular data centers powered by flared natural gas to mine Bitcoin. Facing supply
+      chain challenges, they vertically integrated their operations, manufacturing essential components like
+      transformers and switchgear, and expanded into AI data centers. Lohstroh emphasizes Giga's commitment to rapid
+      deployment, achieving data center energization in nine months by prefabricating infrastructure, and highlights the
+      importance of community engagement to address concerns such as noise and energy consumption.\r
+
+      (01:28:03) - - Jay Azhang, founder of N of 1, an AI research lab focused on financial markets, discusses his
+      background in public market investing and software development, and how his company aims to train models that
+      generalize across markets to eventually surpass human traders. He highlights the importance of integrating with
+      various brokerages to provide a consumer-facing platform where users can describe trading ideas in natural
+      language, which the models then translate into fully deployed trading agents. Additionally, he mentions that N of
+      1 recently raised a $15 million funding round to support their initiatives.\r
+
+      (01:36:12) - - Laurel Supply Discussion\r
+
+      (01:45:26) - - Amir Sadeghian, CEO and co-founder of Astrocade, discusses how their AI-powered platform enables
+      anyone to create and share games using natural language prompts, democratizing game development. He highlights the
+      platform's rapid growth, with over 75,000 games created by users from 80 countries and approximately 5 million
+      monthly active users. Sadeghian also emphasizes Astrocade's mission to make interactive content creation
+      accessible and enjoyable for a diverse global audience.\r
+
+      (02:03:24) - - Timeline Reactions\r
+
+      (02:10:12) - - Alexander Taubman, co-founder and CEO of Long Lake, discusses the company's recent $6.3 billion
+      acquisition of American Express Global Business Travel, marking their largest deal to date. He highlights Long
+      Lake's strategy of integrating applied AI into service sectors, aiming to enhance productivity and customer
+      experience. Taubman also emphasizes the company's focus on long-term growth and its commitment to transforming the
+      services industry through technology.\r
+
+      (02:25:11) - - Quaid Walker discusses the anticipated collaboration between Swatch and Audemars Piguet, known as
+      \"Royal Pop,\" set to launch on May 16, 2026. He highlights that the collaboration is expected to reinterpret the
+      iconic Royal Oak design into a more accessible format, possibly featuring a mechanical movement and a versatile
+      design that can be worn as a wristwatch or a lanyard accessory. Walker also notes the potential impact on the
+      luxury watch market, considering the collaboration's aim to introduce younger buyers to mechanical watchmaking
+      while maintaining the prestige of the Audemars Piguet brand.
+
+
+      Follow TBPN: 
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
+  - id: ce9a48cf-6df1-4dd0-97e8-e26a299d47d6
+    guid: ce9a48cf-6df1-4dd0-97e8-e26a299d47d6
+    title: Intel & Apple, The American Economic Rollercoaster | Brian Chesky, Josh Reeves, Jonathan Neman, Zal Bilimoria
+    duration: 9153
+    published: Fri, 08 May 2026 13:59:01 -0700
+    published_sort: "20260508"
+    first_seen_at: 2026-06-15T04:41:02.279Z
+    url: https://share.transistor.fm/s/ea114101
+    audio_url: https://media.transistor.fm/ea114101/b937134e.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/ea114101/transcription.txt
+    transcript_type: text/plain
+    summary: "(01:34) - Apple and Intel Reach Chip Deal\r
+
+      (10:05) - The American Economic Rollercoaster\r
+
+      (27:52) - Timeline Reactions\r
+
+      (43:48) - Josh Reeves, CEO and co-founder of Gusto, a company specializing in payroll, benefits, and HR solutions
+      for small businesses, discusses the company's recent milestone of surpassing $1 billion in trailing revenue,
+      attributing this achievement to their commitment to assisting small businesses. He emphasizes Gusto's focus on
+      execution and support for small businesses, noting that while they have no immediate plans to go public, they are
+      closely monitoring market conditions. Reeves also highlights the impact of AI on business growth rates and the
+      increase in new business formations, expressing optimism about the potential for AI to empower more individuals to
+      become business owners.\r
+
+      (55:59) - Jonathan Neman, co-founder and CEO of Sweetgreen, discusses the company's recent nationwide launch of
+      wraps, marking its most significant menu expansion to date. After a year of development, Sweetgreen introduced
+      four signature wraps featuring a custom four-ingredient tortilla, aiming to offer a portable, healthy, and
+      craveable option for customers. Neman emphasizes the importance of customer feedback in this innovation,
+      highlighting the use of social listening tools and direct interactions to meet consumer demands for convenient and
+      satisfying meals.\r
+
+      (01:32:00) - Zal Bilimoria is the solo general partner at Refactor Capital, a seed-stage venture capital firm he
+      founded in 2016, focusing on hard tech startups in sectors like bio, climate, and aerospace. In the conversation,
+      he reflects on his journey from product management roles at Microsoft, Google, YouTube, Netflix, and LinkedIn to
+      becoming a partner at Andreessen Horowitz, where he co-launched their Bio Fund, before establishing Refactor
+      Capital. Bilimoria discusses his investment philosophy, emphasizing a concentrated portfolio strategy, writing
+      $1-2 million checks to 20-25 companies per fund, and highlights recent successes such as Astranis' $450 million
+      Series E raise and PathAI's $1 billion acquisition by Roche.\r
+
+      (01:56:27) - Brian Chesky, co-founder and CEO of Airbnb, is an American businessman and industrial designer who
+      has led the company since its inception in 2007. In the conversation, he discusses Airbnb's accelerated growth
+      post-pandemic, attributing it to a renewed startup intensity and a focus on enhancing the guest experience. Chesky
+      also highlights the significant role of AI in the company's operations, noting that 60% of Airbnb's code is now
+      written by AI, which has improved customer service efficiency and reduced costs.
 
 
       Follow TBPN: 
