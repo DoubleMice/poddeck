@@ -121,24 +121,29 @@ export function fallbackSource(id: string): Source {
   }
 }
 
-// Build a map of episode id → category from data/plans/*.yml
-function loadCategoryMap(): Record<string, string> {
+// Build maps of episode id → derived plan metadata from data/plans/*.yml
+function loadPlanMaps(): {
+  categoryMap: Record<string, string>
+  statusMap: Record<string, string>
+} {
   const plansDir = resolve(PROJECT_ROOT, 'data/plans')
-  const map: Record<string, string> = {}
-  if (!existsSync(plansDir)) return map
+  const categoryMap: Record<string, string> = {}
+  const statusMap: Record<string, string> = {}
+  if (!existsSync(plansDir)) return { categoryMap, statusMap }
   for (const f of readdirSync(plansDir).filter(f => f.endsWith('.yml'))) {
-    const plan = readYaml<{ episodes?: { id: string; category?: string }[] }>(join(plansDir, f))
+    const plan = readYaml<{ episodes?: { id: string; category?: string; status?: string }[] }>(join(plansDir, f))
     for (const ep of plan.episodes || []) {
-      if (ep.category) map[ep.id] = ep.category
+      if (ep.category) categoryMap[ep.id] = ep.category
+      if (ep.status) statusMap[ep.id] = ep.status
     }
   }
-  return map
+  return { categoryMap, statusMap }
 }
 
 export function loadEpisodes(): EpisodeWithSource[] {
   const sources = loadSources()
   const sourceMap = Object.fromEntries(sources.map(s => [s.id, s]))
-  const categoryMap = loadCategoryMap()
+  const { categoryMap, statusMap } = loadPlanMaps()
 
   // Prefer per-episode meta.yml (has richest info). Fall back to episodes.yml.
   const episodesDir = resolve(PROJECT_ROOT, 'episodes')
@@ -153,6 +158,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
       const metaPath = join(epDir, 'meta.yml')
       if (!existsSync(metaPath)) continue
       const meta = readYaml<EpisodeMeta>(metaPath)
+      meta.status = statusMap[meta.id] || meta.status
       meta.base = meta.base || `/episodes/${meta.id}/`
       meta.category = meta.category || categoryMap[meta.id]
       meta.article_path = resolveArticlePath(meta)

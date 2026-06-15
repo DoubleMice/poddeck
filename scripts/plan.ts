@@ -61,16 +61,14 @@ function emptyPlan(source: Source): PlanFile {
 
 function getExistingEpisodeIds(): Set<string> {
   const ids = new Set<string>()
-  if (!existsSync(EPISODES_DIR)) return ids
-  for (const entry of readdirSync(EPISODES_DIR)) {
-    if (entry.startsWith('_')) continue  // skip _templates
-    const metaPath = join(EPISODES_DIR, entry, 'meta.yml')
-    if (existsSync(metaPath)) {
-      try {
-        const meta = readYaml<EpisodeMeta>(metaPath)
-        if (meta.status === 'generated') ids.add(meta.id)
-      } catch {}
-    }
+  if (!existsSync(PLANS_DIR)) return ids
+  for (const entry of readdirSync(PLANS_DIR).filter(file => file.endsWith('.yml'))) {
+    try {
+      const plan = readYaml<PlanFile>(join(PLANS_DIR, entry))
+      for (const episode of plan.episodes) {
+        if (episode.status === 'generated') ids.add(episode.id)
+      }
+    } catch {}
   }
   return ids
 }
