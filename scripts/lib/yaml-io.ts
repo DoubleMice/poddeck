@@ -10,5 +10,9 @@ export function readYaml<T = any>(path: string, fallback?: T): T {
 }
 
 export function writeYaml(path: string, data: unknown): void {
-  writeFileSync(path, stringify(data, { indent: 2, lineWidth: 120 }), 'utf-8')
+  const content = stringify(data, { indent: 2, lineWidth: 120 })
+    .split('\n')
+    .map(line => line.trimEnd())
+    .join('\n')
+  writeFileSync(path, content, 'utf-8')
 }

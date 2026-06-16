@@ -3,7 +3,7 @@
 // Rules:
 // 1. Include episodes with published_sort >= source.min_date (default 20260101)
 // 2. Include episodes with duration >= source.min_duration (default 3600 seconds)
-// 3. Include episodes NOT already in episodes.yml (not yet generated)
+// 3. Include episodes NOT already generated in episodes/<id>/
 // 4. Optionally apply source.filter_keywords (word-boundary match on title)
 // 5. Cross-source dedup: if the same episode (matching normalized title + published date)
 //    appears in multiple sources, keep only the first occurrence and skip the rest.
@@ -61,13 +61,16 @@ function emptyPlan(source: Source): PlanFile {
 
 function getExistingEpisodeIds(): Set<string> {
   const ids = new Set<string>()
-  if (!existsSync(PLANS_DIR)) return ids
-  for (const entry of readdirSync(PLANS_DIR).filter(file => file.endsWith('.yml'))) {
+  if (!existsSync(EPISODES_DIR)) return ids
+  for (const entry of readdirSync(EPISODES_DIR)) {
+    if (entry.startsWith('_')) continue
+    const dir = join(EPISODES_DIR, entry)
+    const metaPath = join(dir, 'meta.yml')
+    const slidesPath = join(dir, 'slides.md')
+    if (!existsSync(metaPath) || !existsSync(slidesPath)) continue
     try {
-      const plan = readYaml<PlanFile>(join(PLANS_DIR, entry))
-      for (const episode of plan.episodes) {
-        if (episode.status === 'generated') ids.add(episode.id)
-      }
+      const meta = readYaml<EpisodeMeta>(metaPath)
+      if (meta.status === 'generated') ids.add(meta.id || entry)
     } catch {}
   }
   return ids

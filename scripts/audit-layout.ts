@@ -8,7 +8,7 @@
 //   pnpm run audit:layout -- --all
 //   pnpm run audit:layout -- --all --png --keep
 
-import { existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, rmSync, statSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -16,7 +16,7 @@ import { chromium } from 'playwright-chromium'
 import { log } from './lib/log.ts'
 import { run } from './lib/spawn.ts'
 import { readYaml } from './lib/yaml-io.ts'
-import type { PlanFile } from './lib/types.ts'
+import type { EpisodeMeta } from './lib/types.ts'
 
 interface Args {
   all: boolean
@@ -42,7 +42,6 @@ interface Offender {
 
 const ROOT = process.cwd()
 const EPISODES_DIR = resolve(ROOT, 'episodes')
-const PLANS_DIR = resolve(ROOT, 'data/plans')
 const DEFAULT_THRESHOLD = 8
 
 function parseArgs(): Args {
@@ -78,15 +77,18 @@ function parseArgs(): Args {
 }
 
 function generatedEpisodes(): string[] {
-  const ids = new Set<string>()
-  if (!existsSync(PLANS_DIR)) return []
-  for (const entry of readdirSync(PLANS_DIR).filter(file => file.endsWith('.yml'))) {
-    const plan = readYaml<PlanFile>(join(PLANS_DIR, entry))
-    for (const episode of plan.episodes) {
-      if (episode.status === 'generated') ids.add(episode.id)
-    }
+  const ids: string[] = []
+  if (!existsSync(EPISODES_DIR)) return []
+  for (const entry of readdirSync(EPISODES_DIR)) {
+    if (entry.startsWith('_')) continue
+    const dir = join(EPISODES_DIR, entry)
+    if (!statSync(dir).isDirectory()) continue
+    const metaPath = join(dir, 'meta.yml')
+    if (!existsSync(metaPath) || !existsSync(join(dir, 'slides.md'))) continue
+    const meta = readYaml<EpisodeMeta>(metaPath)
+    if (meta.status === 'generated') ids.push(entry)
   }
-  return [...ids].sort()
+  return ids.sort()
 }
 
 async function renderEpisode(id: string, outDir: string, png: boolean): Promise<string> {

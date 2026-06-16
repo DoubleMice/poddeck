@@ -174,7 +174,18 @@ function hasGeneratedArtifacts(id: string): boolean {
   const dir = join(EPISODES_DIR, id)
   return existsSync(join(dir, 'slides.md'))
     && existsSync(join(dir, 'meta.yml'))
-    && existsSync(join(dir, 'article.html'))
+}
+
+function hasGeneratedEpisode(id: string): boolean {
+  const dir = join(EPISODES_DIR, id)
+  const metaPath = join(dir, 'meta.yml')
+  if (!existsSync(join(dir, 'slides.md')) || !existsSync(metaPath)) return false
+  try {
+    const meta = readYaml<Record<string, unknown>>(metaPath)
+    return meta.status === 'generated'
+  } catch {
+    return false
+  }
 }
 
 function syncMetaStatus(id: string, status: PlanEntry['status']): void {
@@ -1111,6 +1122,12 @@ async function main() {
   const allPending: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
   for (const { source, path, plan } of targetPlans) {
     for (const entry of plan.episodes) {
+      if (entry.status !== 'generated' && hasGeneratedEpisode(entry.id)) {
+        entry.status = 'generated'
+        savePlan(path, plan)
+        syncMetaStatus(entry.id, 'generated')
+        continue
+      }
       if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed'))) {
         if (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed')) {
           entry.status = 'pending'
