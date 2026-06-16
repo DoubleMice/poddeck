@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-06-16T04:41:34.527Z
+refreshed_at: 2026-06-16T19:17:03.094Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 124
-done: 0
+done: 1
 pending: 2
-needs_transcript: 122
+needs_transcript: 121
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -76,7 +76,7 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
   - id: aeee861c-5a4f-11f1-b709-d3c6c07da011
     guid: aeee861c-5a4f-11f1-b709-d3c6c07da011
@@ -335,8 +335,12 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-16T19:17:04.310Z
+    transcript_job_id: 142186ecee9245b480ee1059f7678f3f,90963c47857d456a90bb62c6b9b1eca4,4e636b7f54b6453bb76407c2fee669eb,36e527a37e214b32bfe93299a39c9281,e50b592d033a4d2db841a00e0b9fc135
+    transcript_completed_at: 2026-06-16T19:20:17.319Z
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     guid: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
@@ -4141,8 +4145,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5904,8 +5907,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

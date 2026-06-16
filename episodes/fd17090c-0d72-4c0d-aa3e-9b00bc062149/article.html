@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>谷歌TPU能撼动英伟达吗？前TPU工程师首次揭秘</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 2rem 1rem;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  @media (max-width: 640px) {
+    article { padding: 2rem 1.25rem; border-radius: 0; }
+    body { padding: 0; }
+  }
+  h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.75rem; font-weight: 700; }
+  .meta { font-size: 0.9rem; color: #666; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+  h2 { font-size: 1.35rem; margin-top: 2.5rem; margin-bottom: 1rem; font-weight: 700; color: #222; }
+  h3 { font-size: 1.1rem; margin-top: 1.75rem; margin-bottom: 0.6rem; font-weight: 600; }
+  p { margin-bottom: 1rem; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1.5rem 0 2rem; }
+  @media (max-width: 500px) { .cards { grid-template-columns: 1fr; } }
+  .card { padding: 1rem; border-radius: 8px; font-size: 0.9rem; line-height: 1.5; }
+  .card strong { display: block; margin-bottom: 0.3rem; font-size: 0.95rem; }
+  .card-red { background: #fff0f0; border-left: 4px solid #e03131; }
+  .card-blue { background: #f0f6ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #f0fff0; border-left: 4px solid #2f9e44; }
+  .card-yellow { background: #fffbe6; border-left: 4px solid #f59e0b; }
+  .card-purple { background: #f8f0ff; border-left: 4px solid #7950f2; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #fd7e14; }
+  blockquote {
+    margin: 1.25rem 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid #1971c2;
+    background: #f8f9fa;
+    font-style: italic;
+    color: #444;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote .attr { display: block; margin-top: 0.5rem; font-style: normal; font-size: 0.8rem; color: #888; }
+  .quote-block { margin: 1.5rem 0; }
+  .quote-item {
+    padding: 0.9rem 1.1rem;
+    border-left: 4px solid #1971c2;
+    background: #f8f9fa;
+    margin-bottom: 0.6rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+  }
+  .quote-item .ctx { display: block; margin-top: 0.3rem; font-size: 0.78rem; color: #888; }
+  .gloss { color: #888; font-size: 0.85rem; font-style: italic; }
+  .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  @media (max-width: 500px) { .comparison { grid-template-columns: 1fr; } }
+  .comp-box { padding: 1rem; border-radius: 8px; font-size: 0.9rem; line-height: 1.5; }
+  .comp-pro { background: #f0fff0; border: 1px solid #b2f2bb; }
+  .comp-con { background: #fff0f0; border: 1px solid #ffc9c9; }
+  .comp-pro strong { color: #2f9e44; }
+  .comp-con strong { color: #e03131; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #eee; font-size: 0.85rem; color: #888; }
+  footer a { color: #1971c2; text-decoration: none; }
+  .highlight { background: #fff3cd; padding: 0.1em 0.3em; border-radius: 3px; }
+  ul, ol { margin: 0.75rem 0 0.75rem 1.5rem; }
+  li { margin-bottom: 0.3rem; }
+</style>
+</head>
+<body>
+<article>
+
+<h1>谷歌TPU能撼动英伟达吗？前TPU工程师首次揭秘</h1>
+
+<div class="meta">
+  <strong>硅谷101</strong> · E228 · 2026年3月<br/>
+  嘉宾：Henry（谷歌前TPU工程师） · 主持：泓君 · 时长：1h7m
+</div>
+
+<div class="cards">
+  <div class="card card-red">
+    <strong>Gemini 3 登顶榜首</strong>
+    2025年训练Gemini 3的不是英伟达GPU，而是谷歌自研TPU。AI性能王座背后的芯片变了。
+  </div>
+  <div class="card card-blue">
+    <strong>万亿市场格局重塑</strong>
+    Anthropic签下100万颗TPU（数百亿美元），Meta签数十亿美元协议，苹果全线用TPU训练。
+  </div>
+  <div class="card card-yellow">
+    <strong>前TPU工程师首次揭秘</strong>
+    Henry深度参与V7 Ironwood和V8研发，从硬件架构到供应链全景剖析。
+  </div>
+  <div class="card card-green">
+    <strong>推理成本暴降</strong>
+    谷歌API成本曾仅为OpenAI的十分之一，Anthropic 4.5降价67%——背后是TPU的TCO优势。
+  </div>
+  <div class="card card-purple">
+    <strong>ASIC vs 通用GPU</strong>
+    TPU赌对Transformer才有今天。但如果模型范式改变，定制芯片的灵活性就是致命伤。
+  </div>
+  <div class="card card-orange">
+    <strong>供应链瓶颈全解析</strong>
+    HBM三巨头垄断、CoWoS产能、TSMC分配权、博通议价权——芯片战争不止在实验室。
+  </div>
+</div>
+
+<h2>一、"大厨"与"流水线"：GPU和TPU的根本差异</h2>
+
+<p>节目一开始，Henry就用一个生动的厨房比喻，把GPU和TPU的架构差异讲清楚了。</p>
+
+<p>GPU本质上是为游戏显卡设计的，采用<span class="highlight">SIMD</span>（单指令多线程）架构。Henry把它比作一个厨房里同时安排了很多个大厨——"<strong>他们每个人都有自己独立的思考能力，然后独立去从冰箱里把东西拿出来，然后做完菜，最后上菜</strong>"。每个大厨独立完成整套流程：取菜、切菜、烹饪、上菜。这种模式的好处是并行计算能力极强，单张卡的性能非常出色。但代价是：每个大厨都有自己的一套节奏，等数据搬运的时候就会出现闲置的"idle period"——矩阵计算的利用率达不到理论峰值。</p>
+
+<p>TPU则完全不同。它是<span class="highlight">专为机器学习矩阵计算定制的加速器</span>——从最早的CNN到现在的Attention和Transformer，核心都是矩阵计算。Henry把TPU比作一条流水线："<strong>不用安排那么多的大厨，但他会把大厨安排在每一个步骤上。第一个人从冰箱里把菜取出来，第二个人直接把第一个人做完的中间态结果加工传到第三个人。中间每一个步骤你可以理解成是心脏的泵血。</strong>"</p>
+
+<p>这种流水线架构最关键的哲学是：<strong>TPU在硬件层面不做任何预测（prediction）</strong>。Henry说"硬件被变蠢了"，所有的复杂度都在软件层（XLA编译器）预先解决。软件决定每个计算单元在每个时间点具体做什么，硬件只需要执行——不需要预测，不需要动态调度。这样就能保证"满功耗运行"，几乎不存在idle period。</p>
+
+<h2>二、TPU Pod：系统级的设计哲学</h2>
+
+<p>GPU长期以来都是单卡性能的比拼，而TPU从设计之初就走了一条不同的路：<strong>系统级协同</strong>。</p>
+
+<p>"TPU一直是主打一个TPU Pod，它是一个有几千张卡的一个协同的一个训练的一个状态。"Henry在节目中说，"它可以让几千张卡芯片，它用户的感觉当中是一张卡在训练。"这背后的核心技术包括ICI（Inter-Chip Interconnect，芯片间直连通信协议）和3D Torus拓扑网络。</p>
+
+<p>与传统GPU集群依赖NVLink和NV Switch不同，TPU芯片之间用<span class="highlight">铜线直接连接</span>，不需要交换机中转。Henry指出，GPU的NVLink和NV Switch"其实很烧钱，它是一种infrastructure的一种tax"。而TPU只在节点间使用少量OCS（光学交换机），通信成本大幅降低。</p>
+
+<p>这种架构差异直接反映在数据中心的建造成本上。英伟达GPU集群需要大量第三方交换机来组建集群网络，这是资本支出中的一大块。而TPU的直连拓扑省掉了这笔税，通信成本远低于GPU。这就是为什么谷歌Gemini的API价格能做到OpenAI的十分之一，而Anthropic使用TPU训练后能将Claude 4.5的API价格下调67%。</p>
+
+<h2>三、XLA编译器——秘密武器也是最大门槛</h2>
+
+<p>如果TPU硬件是身体，XLA编译器就是它的大脑。但对第三方开发者来说，这个大脑也是一个黑盒。</p>
+
+<p>"XLA是一个静态的一个编译器，"Henry解释道，"当你的workload是已知的，它可以在一个全局的TPU Pod的system level，做全局优化。"具体来说，XLA会做三件事：<strong>算子融合</strong>——把多个计算kernel合并成一个；<strong>内存管理</strong>——预知TPU对内存访问的偏好，自动优化数据分布；<strong>全局编排</strong>——不是单卡优化，而是整个TPU Pod的系统级编排。</p>
+
+<p>但问题也很显著。"XLA是一个黑盒，"Henry坦言。虽然它内部有很多debug工具，但debug需要对硬件有深入了解，因为它把一个graph（图）级别的链条呈现给你，不是一个单个计算而是一个整体。对外部开发者来说，"对工程师的要求会更高。"</p>
+
+<p>更棘手的是：PyTorch有几千个算子，如果不在TPU硬件上原生支持，性能表现就会很差。Google内部有团队在推进PyTorch和XLA的深度整合，但这条路还很长。相比之下，CUDA的开放生态、海量文档和成熟工具链，就是英伟达最深的护城河。Henry透露，大多数通过谷歌云使用TPU的客户，只能跑出<span class="highlight">50%到60%的utilization rate</span>，但钱一分不少。</p>
+
+<h2>四、谁在用TPU？Anthropic、Apple和Meta的不同策略</h2>
+
+<p>2025年最大的TPU新闻之一，是Anthropic签下了<span class="highlight">100万颗TPU</span>的订单，价值数百亿美元。但Henry在节目中透露了一个令人惊讶的事实：苹果其实是TPU最大的外部客户。</p>
+
+<p>"用谷歌的TPU最大的团队其实不是Anthropic，虽然他们下了一个100万的订单……最大的团队其实是苹果。"2024年苹果发表论文，公开Apple Intelligence全部使用TPU训练。背后原因和人才流动有关——前Google高管将整套TPU技术栈带到了苹果。</p>
+
+<p>三家大客户的使用方式也完全不同：</p>
+
+<ul>
+  <li><strong>Anthropic</strong>：唯一从博通直接采购TPU机架（rack）的公司，可以做底层优化，充分利用XLA的性能。有Google软件团队专门对接支持。</li>
+  <li><strong>Apple</strong>：通过谷歌云使用TPU，但团队有深厚的Google背景，完成了从GPU到JAX/XLA的完整软件栈迁移。</li>
+  <li><strong>Meta</strong>：签署数十亿美元协议租TPU跑Llama，通过谷歌云接入。因为用PyTorch（与XLA不天然兼容），主要用于offload预训练的算力压力。</li>
+</ul>
+
+<p>Henry指出，Anthropic能用好TPU的原因是多方面的：Anthropic很多投资方是Google，两者是"相对于内循环"的关系；Anthropic的工程师技术能力非常强；而且有很多前Google背景的工程师懂XLA这套系统。</p>
+
+<h2>五、供应链的三重瓶颈</h2>
+
+<p>芯片战争不止在实验室，更在供应链。Henry详细拆解了TPU面临的三个关键瓶颈。</p>
+
+<h3>HBM：三巨头垄断</h3>
+
+<p>"HBM非常难找，一共就三家公司垄断这个生产——SK Hynix、三星和Micron。"英伟达一直是HBM最大客户，TPU长期是secondary customer。而芯片产能需要提前一到两年锁定，没有大订单就难以争取好配额。现在整个行业正在从compute bound转向memory bound，HBM<strong>决定了训练效率的上限</strong>。</p>
+
+<h3>CoWoS：TSMC的分配权</h3>
+
+<p>CoWoS（Chip-on-Wafer-on-Substrate）是TSMC的2.5D先进封装技术，HBM内存芯片和计算芯片通过它封装在一起。<strong>这个工艺只有TSMC能做。</strong>TSMC按订单量分配产能——英伟达的量最大，优先级自然最高。Google TPU此前没有外部客户时，难以锁定大额订单。</p>
+
+<h3>博通：议价权增长</h3>
+
+<p>Google TPU团队设计芯片前端（相当于画图纸），博通负责把芯片物理连接起来（后端+ICI），最终交付TSMC量产。博通做的是模数混合信号——"技术壁垒非常非常高的一个环节"。但博通的议价权<strong>越来越大</strong>，如果你非常依赖博通而没有backup，成本就很难控制。"有点像TPU和GPU的关系，一直以来TPU是GPU的一个backup。"</p>
+
+<p>还有一个容易被忽视的问题：<strong>良率</strong>。GPU有阉割版本（H100降级为H800），良率不好可以降级销售。但TPU是定制芯片，不可降级，芯片性能参差不齐会导致整个系统效率下降，良率不行的芯片只能报废。TPU因为主打芯片间通信，失败率反而比GPU更高。</p>
+
+<h2>六、TPU的起源：一页PPT引发的自研芯片之路</h2>
+
+<p>2013年左右，Google首席科学家Jeff Dean演示了深度学习在语音识别上的突破性进展。Jonathan Ross（后来的Grok联合创始人，现为英伟达VP）做了一个著名的内部演示——只有两页PPT。</p>
+
+<p>第一页：好消息，GPU真的是工作了，深度学习有了突破。第二页：坏消息，<strong>我们付不起这个钱</strong>。他们算了一笔账：如果所有用户给Google发三分钟的语音，Google整个数据中心的成本会翻倍——<strong>数百亿美元</strong>。</p>
+
+<p>Google的结论是：既然没有合适的芯片，那就自己造。第一代TPU只是一款inference芯片——一个矩阵计算器加内存，没有更多模块。图灵奖得主Geoff Hinton也深度参与了第一代架构设计。</p>
+
+<p>这是个里程碑式的决策。后来从V2开始有了训练芯片，AlphaGo击败李世石时AI算法里已经放了TPU。再后来PaLM、BERT、早期Transformer都用这套架构训练。</p>
+
+<h2>七、代际演进：从推荐系统到大模型的转向</h2>
+
+<p>Henry从2018年加入Google，从V4开始参与TPU研发，经历了从"相对轻松"到"非常volatile"的转变。</p>
+
+<p>"最开始那几年其实市场上没有那么大的需求，那时候还没有大模型，没有ChatGPT，我们工作还相对比较轻松一点，因为只是针对自己的workload。"</p>
+
+<p>转折点出现在V4/V5时期（约2022-2023年）。此前TPU的主要workload是Google内部的推荐和搜索排序系统。Henry参与设计了一个叫<strong>Sparsity Core</strong>的模块——专门针对推荐系统中嵌入层的稀疏计算做优化。但这牺牲了部分稠密矩阵计算的性能，让TPU在矩阵计算上看起来不如GPU。</p>
+
+<p>V6开始，TPU明确转向大模型预训练，推出了训练和推理两个版本。这次转向恰好赶上了ChatGPT爆发的时间窗口。到V7 Ironwood，TPU的peak FLOPs已经接近英伟达GB200，HBM带宽也有巨大提升。而Henry参与的最后一代V8，技术细节仍然未公开。</p>
+
+<h2>八、ASIC的赌注：压对Transformer之后呢？</h2>
+
+<p>TPU本质上是一款针对大模型预训练和推理的ASIC（专用集成电路）。ASIC的核心特征是一旦设计定型就<strong>无法改变</strong>。</p>
+
+<p>TPU最大的幸运是：Transformer架构是Google自己发明的，TPU从一开始就针对矩阵计算做了优化。在GPT爆发、矩阵计算需求爆炸时，TPU有了先发优势。MoE架构的兴起也在V4通过3D Torus+OCS解决了通信瓶颈。</p>
+
+<p>但Henry表达了一个真实的担忧。"这个很难去评判现在。就是万一将来有一个不同的范式，它怎么去跟上GPU的步伐。"模型迭代以月为单位，而芯片设计周期最快也要两年半。如果在设计阶段压错了方向，等芯片量产时市场需求可能已经变了。</p>
+
+<p>Google的应对策略是"让芯片变得更加通用"——把计算和内存模块化，适应不同范式。但Henry坦承这是一种"基于现实的compromise"：如果把芯片设计得非常激进，可以在Gemini上提升30-40%的效率，但万一有变化，回去就会非常痛苦。</p>
+
+<h2>九、Grok/LPU：推理芯片的另一种可能</h2>
+
+<p>节目也谈到了近年来另一个引人注目的推理芯片玩家——<strong>Grok</strong>（已被英伟达收购）。</p>
+
+<p>Grok由前Google TPU编译器团队创始人Jonathan Ross创立。Henry的评价非常精准：<strong>"Grok你可以理解成它是一家compiler的公司而不是一家芯片公司。"</strong>它的硬件比TPU更加单一，编译器在某种程度上决定了一切——可以精准到每一个cycle都由compiler确定。</p>
+
+<p>Grok精准踩中了三轮时代红利：第一轮是inference市场的爆发；第二轮是ASIC的低成本优势；第三轮是2025年Agent元年的到来。<strong>Agent对延迟要求极高</strong>，如果一个任务链条中每个环节都慢一点，整体体验就会非常痛苦。Grok用SRAM而非HBM，单用户独占大量LPU资源，保证毫秒级响应。</p>
+
+<p>Henry指出，Grok和TPU不是竞争关系，而是服务不同市场层级：</p>
+
+<div class="comparison">
+  <div class="comp-box comp-pro">
+    <strong>Grok LPU：低延迟</strong><br/>
+    场景：Agent、实时语音、高频交易<br/>
+    设计：SRAM，单用户独占资源<br/>
+    客户：IBM、中东数据中心等
+  </div>
+  <div class="comp-box comp-con">
+    <strong>Google TPU：高吞吐</strong><br/>
+    场景：Gemini、ChatGPT、Claude<br/>
+    设计：HBM，批量打包请求<br/>
+    要求：海量用户同时调用
+  </div>
+</div>
+
+<h2>十、未来格局：不是替代，是共存</h2>
+
+<p>节目最后，Henry和泓君总结出TPU的清晰图谱。</p>
+
+<p>TPU在<span class="highlight">大规模部署</span>（云端、海量用户、模型相对稳定）场景下完全可以挑战GPU——它的TCO更低、推理成本更可控。但在小规模部署、Agent、需要频繁迭代模型研发的场景下，GPU的通用性和CUDA生态仍然是不可替代的。</p>
+
+<p>Henry在节目一开始就说过了结论："<strong>在某些芯片条件下，TPU是完全可以挑战GPU的。</strong>"而到了节目的末尾，他的判断更加完整：</p>
+
+<blockquote>
+"很多人都在讨论TPU和GPU之间区别，我孰优孰劣，但我觉得未来肯定是两者并存的。包括现在所有很多大厂都在自研自家的芯片，不管是推理还是训练，我觉得你不能说GPU将来会一统江山或TPU会一统江山。我觉得这个生态是一个非常健康的生态，有定制的环节，也有通用的环节，有通用场景，也有垂类场景。将来的话是百花齐放的一个格局。"
+</blockquote>
+
+<p>这是一个务实而深刻的判断。DeepSeek出现之后，推理端的需求被彻底点燃——端侧、本地部署、小规模推理的需求激增。英伟达不可能吃掉整个市场的每一层。TPU作为挑战者，正在中层和上层撕开口子。</p>
+
+<p><strong>最终，这不是一个"谁会赢"的问题，而是一个"市场会怎样分层"的问题。</strong>GPU和TPU各有其最佳适用场景，定制芯片和通用芯片各有其生存空间。正如Henry所说："我觉得也是需要同行的激励和鞭策。"</p>
+
+<h2>核心金句</h2>
+
+<div class="quote-block">
+  <div class="quote-item" style="border-left-color: #1971c2;">
+    "在全局TPU Pod的system level做一个全局优化"
+    <span class="ctx">— Henry解释XLA的核心价值</span>
+  </div>
+  <div class="quote-item" style="border-left-color: #2f9e44;">
+    "把它把硬件变得更蠢了一点……相当于它是一个机械式的劳作，软件那边帮你把所有complexity都给处理掉"
+    <span class="ctx">— TPU设计哲学的本质</span>
+  </div>
+  <div class="quote-item" style="border-left-color: #f59e0b;">
+    "在某些限定的条件下，如果一旦满足这些限定条件，我觉得TPU是完全可以挑战GPU的——大规模部署"
+    <span class="ctx">— Henry的核心结论</span>
+  </div>
+  <div class="quote-item" style="border-left-color: #e03131;">
+    "Grok你可以理解成它是一家compiler的公司而不是一家芯片公司"
+    <span class="ctx">— 精准概括Grok的定位</span>
+  </div>
+  <div class="quote-item" style="border-left-color: #7950f2;">
+    "未来肯定是两者并存的……我觉得将来的话是百花齐放的一个格局"
+    <span class="ctx">— GPU和TPU不是替代关系，是共存关系</span>
+  </div>
+  <div class="quote-item" style="border-left-color: #fd7e14;">
+    "我觉得也是需要同行的激励和鞭策"
+    <span class="ctx">— 为什么TPU的崛起对行业是好事</span>
+  </div>
+</div>
+
+<footer>
+  <p>本文基于 <strong>硅谷101</strong> 播客 E228 期节目整理撰写。嘉宾为谷歌前TPU工程师Henry，主持人为泓君。<br/>
+  原文链接：<a href="https://sv101.fireside.fm/241" target="_blank" rel="noopener">https://sv101.fireside.fm/241</a></p>
+  <p style="margin-top: 0.5rem; color: #aaa;">所有引言均来自节目transcript，可在源码仓库中验证。</p>
+</footer>
+
+</article>
+</body>
+</html>

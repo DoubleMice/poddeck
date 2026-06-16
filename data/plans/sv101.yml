@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-16T04:41:34.613Z
+refreshed_at: 2026-06-16T19:17:03.176Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 5
-done: 0
+done: 1
 pending: 3
-needs_transcript: 2
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -144,7 +144,7 @@ episodes:
       本期节目不构成任何投资建议，投资有风险，入市需谨慎。
 
       Special Guest: Henry Zhu.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: f3e610624cfc44828d433344e5250e03,f58172c298e14ffbb42367c5b1421baf,4125e353c9e84b55b05d00a9eb1444b9,6aeeecbf67034563b62b495ad5591b93,0300ad60c0894372beae3d862e2c391d
@@ -506,8 +506,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 亓鲁教授, 吕瀛杰, and 徐栋.
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-16T19:30:00.239Z
+    transcript_job_id: cc3201f4412645f2bcfe2ea8e1835391,61128d61b01243e384a1ad9914510b4e,ba542a302de24ae9b15d928638b2efbb,dc5a59cab28c41b0a413dda5c68beab2,c2d3bf1149554d82aba11af9e5082f13
+    transcript_completed_at: 2026-06-16T19:33:15.096Z
   - id: 7966d048-80a2-4592-bb25-54d8b2827c91
     guid: 7966d048-80a2-4592-bb25-54d8b2827c91
     title: E222｜紧身裤消失，谁在定义时尚潮流？
