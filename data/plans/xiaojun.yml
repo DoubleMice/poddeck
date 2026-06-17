@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-06-17T04:39:22.168Z
+refreshed_at: 2026-06-17T18:52:49.645Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 4
-done: 0
+done: 1
 pending: 2
-needs_transcript: 2
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -32,7 +32,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6976bdf0ef1cf272a76fa9f3?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6976bdf0ef1cf272a76fa9f3/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lo-xQNj9qSh16zHeUQI6pQ3jOkjq.m4a
     image: https://image.xyzcdn.net/FsPsolhVA_aPd7Wr6mX6Vx9sDkPu.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 6f80bda268604e628632e04fd39aa373,81586d4acdf242bb99c6e2093b79e8b7,fe7e03b0ee3245fd8b6234e8db16323f,ee12c36d0adc4f1dbf6b5d6c62cf0c91,5f27326e54774adba822233b9f1ece34,44f9993ad271492ab97f13c1f08fd702,d4c2ffb82f3940e080e31826098bff37,0864a48032af44fbb3be54a0633250a6,2ae9eb1f84584b9a9bf6752e7c881553
@@ -64,5 +64,9 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/695f008dc1e012a7abf0be09?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/695f008dc1e012a7abf0be09/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/liEES-JtJxuXJqZStaCtRdJmWHWb.m4a
     image: https://image.xyzcdn.net/FjQHI0ZsndDGBnv9hrYIhNT6sEdC.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-17T18:55:45.913Z
+    transcript_job_id: 87a1658508d94fb191c26575dd841163,da5ba97ec5764df0a2cc82b89566e9fd,c2e062a8ca0f419eb0f8f27d0416709c,91a2a2fd06e24f4dbcd5b625d91ca705,bcf5cf6aa93c421aa5bd5f26c00dd8d2,71abf365ea62410ca1cb157fbfc53171,682ebd41a37f4a9b83b53dfe179dd794,3e4cfa6a878f46bd9f2c16f015b6d344,c6381849fc4642edbdcc4510105535a2,0024b4213866440d9e655af482f5543e
+    transcript_completed_at: 2026-06-17T19:03:21.115Z

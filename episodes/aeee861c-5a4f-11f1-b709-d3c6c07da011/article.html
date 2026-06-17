@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethereum 的身份危机：背教者自白与 ETH 的未来</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #fafafa;
+  padding: 0;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  background: #fff;
+}
+header {
+  text-align: center;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 40px;
+}
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 12px;
+  color: #111;
+}
+header .meta {
+  font-size: 14px;
+  color: #888;
+}
+header .meta span { margin: 0 6px; }
+header .meta span.sep { color: #ccc; }
+
+section { margin-bottom: 40px; }
+section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #1971c2;
+  color: #111;
+}
+section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 24px 0 10px;
+  color: #333;
+}
+p { margin-bottom: 14px; }
+p:last-child { margin-bottom: 0; }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+@media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.card .label { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+.card .desc { font-size: 13px; opacity: 0.75; }
+.card-red { background: #fff5f5; border-color: #e03131; }
+.card-red .label { color: #c92a2a; }
+.card-yellow { background: #fff9db; border-color: #f08c00; }
+.card-yellow .label { color: #e67700; }
+.card-purple { background: #f8f0fc; border-color: #862e9c; }
+.card-purple .label { color: #6b21a8; }
+.card-blue { background: #e7f5ff; border-color: #1971c2; }
+.card-blue .label { color: #1864ab; }
+.card-green { background: #ebfbee; border-color: #2f9e44; }
+.card-green .label { color: #2b8a3e; }
+.card-orange { background: #fff4e6; border-color: #e8590c; }
+.card-orange .label { color: #d9480f; }
+
+blockquote {
+  margin: 20px 0;
+  padding: 16px 20px;
+  background: #f1f3f5;
+  border-left: 4px solid #868e96;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  font-size: 16px;
+  color: #333;
+}
+blockquote footer {
+  margin-top: 8px;
+  font-size: 13px;
+  font-style: normal;
+  color: #888;
+}
+
+.quotes { margin: 20px 0; }
+.quotes .q {
+  padding: 14px 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.quotes .q .text { font-style: italic; margin-bottom: 4px; }
+.quotes .q .attr { font-size: 12px; opacity: 0.55; }
+.q-blue { background: #e7f5ff; border-color: #1971c2; }
+.q-red { background: #fff5f5; border-color: #e03131; }
+.q-purple { background: #f8f0fc; border-color: #862e9c; }
+.q-green { background: #ebfbee; border-color: #2f9e44; }
+.q-yellow { background: #fff9db; border-color: #f08c00; }
+.q-orange { background: #fff4e6; border-color: #e8590c; }
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+  text-align: center;
+}
+@media (max-width: 500px) { .numbers { grid-template-columns: 1fr; } }
+.number-box {
+  padding: 20px 12px;
+  border-radius: 8px;
+  border: 2px solid;
+}
+.number-box .num {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.number-box .lbl {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.nb-red { background: #fff5f5; border-color: #ffc9c9; }
+.nb-red .num { color: #c92a2a; }
+.nb-yellow { background: #fff9db; border-color: #ffe69c; }
+.nb-yellow .num { color: #e67700; }
+.nb-blue { background: #e7f5ff; border-color: #a5d8ff; }
+.nb-blue .num { color: #1864ab; }
+
+.note {
+  padding: 12px 16px;
+  background: #f8f0fc;
+  border-left: 4px solid #862e9c;
+  border-radius: 0 6px 6px 0;
+  font-size: 14px;
+  margin: 16px 0;
+  color: #5f3dc4;
+}
+
+hr { border: none; border-top: 1px solid #eee; margin: 32px 0; }
+
+footer.article-footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 2px solid #eee;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+footer.article-footer a { color: #1971c2; text-decoration: none; }
+footer.article-footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Ethereum 的身份危机：背教者自白与 ETH 的未来</h1>
+  <div class="meta">
+    The Chopping Block<span class="sep">·</span><span>2026 年 5 月</span>
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    主持：Haseeb Qureshi · Tom Schmidt · Tarun Chitra<br/>
+    嘉宾：David Hoffman（Bankless 联合创始人）· Max Resnick（前 ConsenSys 技术专家）
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+    <div class="card card-red">
+      <div class="label">ETH 背教潮</div>
+      <div class="desc">Bankless 联合创始人 David Hoffman 出售了最后一枚 ETH——「ETH 即货币」叙事的旗帜人物正式退场</div>
+    </div>
+    <div class="card card-yellow">
+      <div class="label">EF 大规模出走</div>
+      <div class="desc">Tomasz、Barnabe、Tim Beiko 等核心成员相继离开，Vitalik 终于发声回应</div>
+    </div>
+    <div class="card card-purple">
+      <div class="label">身份危机</div>
+      <div class="desc">「世界计算机」→「超音速货币」→「L2 大集市」→「避难所技术」——每 4-6 个月换一次叙事</div>
+    </div>
+    <div class="card card-blue">
+      <div class="label">ETH = 微软？</div>
+      <div class="desc">Haseeb 把 Ethereum 比作加密世界的微软——老派、缓慢、无聊，但根基深厚，不会消失</div>
+    </div>
+    <div class="card card-green">
+      <div class="label">强加密 vs 弱加密</div>
+      <div class="desc">DeFi 文化在衰退，企业级区块链在崛起——Ethereum 夹在两条路线之间找不到方向</div>
+    </div>
+    <div class="card card-orange">
+      <div class="label">500 万亿证券上链</div>
+      <div class="desc">SEC 要让全球证券上链——但 Ethereum 现在的扩容速度，要等到 2100 年才够用</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>David Hoffman：为什么卖掉所有 ETH</h2>
+  <p>2026 年春天，加密世界最引人注目的故事之一，是 Bankless 联合创始人 David Hoffman 宣布——他卖掉了自己最后一枚 ETH。</p>
+  <p>对于许多 Ethereum 社区的长期成员来说，这几乎是一场地震。Bankless 是过去几年中最重要的 Ethereum 布道平台之一，而 David 本人一直是「ETH 即货币」（ETH is money）叙事最忠实的推销员。这个 thesis 的核心是：ETH 将像比特币一样成为一种货币资产，它的价格将反映这一地位。</p>
+  <p>David 在节目中的解释出人意料地平静。他说这个 thesis 是在 2019-2020 年建立的，到现在 2026 年——六年过去了——它在某种程度上确实兑现了。Ethereum 建立了 DeFi 生态，打造了「大教堂与市集」般的生态系统，他们当初想要的一切基本都实现了。</p>
+  <p>但他决定出售的原因不是看空，而是机会成本。「我做这个决定，是因为其他地方有更好的机会。我不是那个看空 Ethereum 的人，也不是那个叛徒然后开始写做空报告。只是——thesis 兑现了，故事该翻篇了。」</p>
+
+  <div class="numbers">
+    <div class="number-box nb-blue">
+      <div class="num">2019</div>
+      <div class="lbl">创立 Bankless<br/>宣扬 ETH 即货币</div>
+    </div>
+    <div class="number-box nb-yellow">
+      <div class="num">2020-25</div>
+      <div class="lbl">thesis 部分兑现<br/>DeFi 生态建成</div>
+    </div>
+    <div class="number-box nb-red">
+      <div class="num">2026</div>
+      <div class="lbl">卖出最后一枚 ETH<br/>「故事该翻篇了」</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>为什么是 2026 年？动量的消失</h2>
+  <p>自然的问题是：为什么是现在？如果 thesis 在 2020-2025 年间已经兑现，为什么不在 2024 年卖？或者 2025 年？</p>
+  <p>David 的答案是动量。Ethereum L1 需要强劲的上涨动力才能让 ETH 资产获得独立的重新定价。「在 2026 年，我越来越难看到这种动力能独特地回到 Ethereum L1。」</p>
+  <p>他指出了几个结构性问题。首先是价值捕获：L2 Rollup 的利润率高达 98%，胖应用（fat app）正在取代胖协议（fat protocol）。Ethereum 像一个非营利组织——提供安全、结算和一切基础设施，但它不收费，不拿 take rate，所有服务都以成本价提供。</p>
+  <p>这对于 Ethereum 生态的增长是极大的优势——没有人会因为高费用而被劝退。但对于 ETH 资产来说，这意味着它需要维持「巨大的市场份额」才能支撑「ETH 即货币」的叙事。David 的结论是：这个份额已经不在了。</p>
+  <p>更深层的问题——而且 David 坦白说这更接近一种「阴谋论」——是 EF 的 DNA 里就有一种对增长的抵触。「Vitalik 不想要那种伴随一个大经济体而来的责任和包袱。这从来就不是 EF 的优先事项。所以真的存在某种心理上的阻力，阻止他们去做那些会让 Ethereum 经济增长的事情。」</p>
+</section>
+
+<section>
+  <h2>EF 出走潮：激进派的集体退场</h2>
+  <p>2025-2026 年，Ethereum 基金会经历了一波前所未有的人才出走。这份名单很长，而且 Max 指出了其中最关键的规律。</p>
+  <p>Tomasz Stanczak，联合执行董事，在任仅 11 个月后卸任。作为 EF 罕见的「公众面孔」，他的离开被视为 EF 放弃对外沟通的象征。继任者 Bastian Ahol 几乎不在社交媒体上出现，不参与任何公开对话。</p>
+  <p>紧接着，协议集群的两位联合负责人 Barnabe Monnot 和 Tim Beiko 宣布离开。之后是 Edgar Beke（七年老将，负责 Beacon Chain 和 POS，5 月 29 日辞职）、Julian Ma（Fossil 项目，四年后辞职）、Josh Stark、Trent Van Eps、Pablo Voort……Dankrad 则早在去年就离开 EF 加入了 Tempo。</p>
+  <p>Max 做出了一个关键的观察：这些人——Tomasz、Barnabe、Tim——全都是 EF 内部的「激进派」。每个 L1 都有两种人：那些非常激进、想要快速推进、让协议产生收入、让基金会更像一家公司的人；以及那些强调可信中立、慢慢来、保住链稳定的人。所有离开的人，都来自前者。</p>
+  <p>「这不是随机流失，」Max 说，「这是一次内部的路线清洗。」</p>
+</section>
+
+<section>
+  <h2>Vitalik 的回应与困境</h2>
+  <p>在沉默了相当长一段时间后，Vitalik Buterin 终于发布了一篇长文回应。他要说的核心很简单：EF 不是「数字上涨」机构。</p>
+  <p>「那不是我们的工作，从来都不是。我们的工作是让 Ethereum 令人印象深刻——在技术上。而这种令人印象深刻，来自于我们对 Ethereum 核心价值的优先排序：审查抵抗、去中心化——那些让它区别于其他 L1 的东西。」</p>
+  <p>但 Vitalik 也承认了现实：EF 将逐渐缩小。它现在只持有 ETH 总供应量的 16 个基点（0.16%），比很多个人持有者还少。从最初的 8.3% 缩水到这个数字，EF 在财务上的影响力一直在持续衰退。Vitalik 的措辞是：EF 将成为 Ethereum 中的「一个节点」，而不是中心。他鼓励其他组织站出来承担推动增长的角色。</p>
+  <p>问题在于，正如 David 和 Tom 都指出的——Vitalik 的影响力不是靠职位维持的。它是一种纯粹的魅力型权威。即便 Vitalik 说「我不再负责了，不要再看我了」，整个社区仍然以他的每一句话为方向。David 把它形容为一个「陷阱」：「你可以看到 Vitalik 写篇文章说『我不再负责了』，然后整个 Ethereum 社区的反应就是『天哪 Vitalik 写了篇好文章，我等不及看他下一篇写什么了』。」Tom 的总结更简洁：「当耶稣很难停下来。」</p>
+</section>
+
+<section>
+  <h2>身份危机：每四个月换一次叙事</h2>
+  <p>Tarun 观察到一个反复出现的模式：Ethereum 似乎每隔四到六个月就要经历一次身份危机。如果你追踪它过去十年的叙事变迁，这个模式一目了然。</p>
+  <p>最初是「世界计算机」——一个去中心化应用平台，智能合约的基础设施。然后出现了「ETH 即货币」——ETH 将像比特币一样成为货币资产。接着是「超音速货币」（Ultra Sound Money）——EIP-1559 的燃烧机制带来的通缩叙事。然后是「L2 大集市」——Rollup 为中心的路线图。最近又变成了「避难所技术」（Sanctuary Technology）——强调审查抵抗和密码朋克价值观。</p>
+  <p>没有一个叙事能持续两年以上。这种频繁的切换让社区和外部观察者都感到困惑——Ethereum 到底是什么？它要成为什么？</p>
+  <p>Max 从更深层的角度看待这个问题。他认为这不是策略问题，而是身份撕裂。Vitalik 和早期 EF 成员一开始想造的是一个技术项目——一个去中心化的世界计算机。但他们最终造出来的，是一个 4000 亿美元的金融资产。这个资产比他们一直在造的技术项目大了一百倍，它「烧坏了他们的脑子」。</p>
+  <p>「EF 现在进入的是一种彻底保守的模式，」Max 说，「不搞任何可能让这条链崩掉的升级。全力保全 4000 亿的资产价值。他们已经完全 risk-off 了。」</p>
+</section>
+
+<section>
+  <h2>ETH = 微软：一个意外的类比</h2>
+  <p>Haseeb Qureshi 写了一条推文，说「Ethereum 已经变成了加密世界的微软」。这条推文在 Crypto Twitter 上引发了激烈争论——有人觉得这是侮辱，有人觉得是恭维。</p>
+  <p>Haseeb 自己说这只是一个纯粹的描述，不带价值判断。类比的关键在于：微软是最老的，它是 PC 时代的开创者，它现在被企业深爱，深深嵌入各种基础架构中，很难被移除。它安全、缓慢、有点无聊——不会第一个集成新潮的功能，但它不会消失，而且仍然极其值钱。</p>
+  <p>这个类比还有一层历史深意。微软经历了三个清晰的时代：Gates 时代开创了 PC 品类；Ballmer 时代缓慢、混乱、错失了移动互联网，但因为企业根基太深而活了下来；Nadella 时代通过拥抱云计算实现了重生。Ethereum 现在处在 Ballmer 时代——混乱、方向不明、让人沮丧，但死不了。</p>
+  <p>Tarun 提出了一个关键问题：Ballmer 时代的微软虽然做了很多蠢事，但最终 Satya Nadella 从内部成长起来了——他在微软工作了 20 多年，深知公司的文化和运作方式。Ethereum 现在有这样的人吗？Max 给出了最悲观的回答：「不存在这样的人才管道。当 EF 五年后把最后一分钱烧完、解散自己的时候，不会有 Satya Nadella 从核心开发者中站出来接班。」</p>
+</section>
+
+<section>
+  <h2>强加密 vs 弱加密：Ethereum 的主场在消失</h2>
+  <p>David 在节目中提出了一个有趣的框架：「强加密」和「弱加密」。</p>
+  <p>强加密（Strong Crypto）是 2021-2022 年那种野蛮生长的文化——DeFi、NFT、密码朋克精神、「去他妈的华尔街」。这是 Ethereum 最擅长的主场，也是它能建立巨大网络效应的环境。弱加密（Weak Crypto）是现在的趋势——稳定币、代币化 RWA、企业区块链、「后端效率升级」。这个方向在增长，华尔街在进场，合规在要求妥协。</p>
+  <p>问题是：强加密在衰退，弱加密在增长。而 Ethereum 夹在中间——既不是强加密的先锋（Solana 在抢这个位置），也不甘心只做弱加密的基础设施。David 提出了一个尖锐的观察：「你知道 ETH 最像货币是什么时候吗？是 COVID 期间——所有人被关在家里、被绑在电脑前面、货币流动性最好的时候。那种环境不会再有了。」</p>
+  <p>Haseeb 对此有不同看法。他认为「DeFi 是最弱的时期」是选择性记忆——FTX 爆炸三年前才是真正的低谷。如果你看 TVL、链上交易量、链上流动性，它们实际上比大多数人想象的要强劲得多。「市场跌了，人们就开始重写历史。」</p>
+</section>
+
+<section>
+  <h2>人才、S 曲线与无聊溢价</h2>
+  <p>Tarun 把问题归结为一个简单的信号：「没有新鲜血液。你去看 ETH 的开发者社区，看不到新人在做令人兴奋的事情。Crypto 本来就在大量流失人才——但 Ethereum 流失的速度比这个已经很快的速度还要快。」</p>
+  <p>Tom Schmidt 的观点更加一针见血。他说如果让他重做 Ethereum 的营销，他会说「Ethereum is for boomers」。在他看来，Ethereum 最大的问题不是技术，而是「故事」——「对 19 岁的人说『这个穿西装的韩国大叔告诉你数字会上涨』——这有什么激励人心的吗？完全没有。」</p>
+  <p>David 的最终结论不是看空——而是一种「无聊的接受」。他认为 ETH 已经走完了 S 曲线的高梯度阶段，现在进入了平台期。它的价格会跟随市场，不会太高也不会太低，但不会再让任何人眼前一亮。他把这比作一个「固定收益资产」——不是说真的有分红，而是说它已经变成了一种公用事业。</p>
+  <p>Tom 进一步阐述了这个担忧：「如果你从一个科技公司的估值倍数——什么互联网的未来、整个经济的底层基础设施——变成了『我们是对一群 PE 只有 6 倍的企业做基础设施』，那你就不该再拿科技溢价了。你是一个公用事业。」</p>
+</section>
+
+<section>
+  <h2>500 万亿美元的机会与 2100 年的扩容速度</h2>
+  <p>Max 带来了一个紧迫的数字：全球有 500 万亿美元证券。SEC 正在推动它们上链。新的监管环境对去中心化公链有利——监管者明确说过「我们这么做是为了 crypto，不是为你们的中心化垃圾」。</p>
+  <p>在他看来，这些证券最终会落到两条公链之一：Ethereum 或 Solana。「其他链在决策者脑子里等于零。它们连名字都不会被提起。」</p>
+  <p>但 Ethereum 面临一个残酷的现实：扩容速度。如果 DTCC 明天决定上链，Ethereum 能告诉他们什么？「按照目前提高 gas limit 的速度，我们大约 2100 年可以准备好。」</p>
+  <p>Haseeb 承认这是一个真正的风险，但他认为区块链最终要「靠规模吃饭」——放弃今天的高费率，换取未来数十亿用户在上面跑时的极低费率 × 极大基数。问题是：Ethereum 能在失去机会之前达到那个规模吗？</p>
+  <p>而且，Haseeb 提出了一个更深层的质疑：「DTCC 真的会选一条公链吗？NASDAQ 和 NYSE 都在建自己的链。我们需要有人去华盛顿敲那些门——但现在没有人做这件事。Ethereum 没有自己的 Saylor。」</p>
+</section>
+
+<section>
+  <h2>谁来做 Ethereum 的 Saylor？</h2>
+  <p>Michael Saylor 现在是比特币在全球的精神领袖。一个上市公司 CEO——做企业软件的——现在是「Mr. Bitcoin」。他之所以能做到，是因为他有最响亮的嗓门和最强的金融力量（MicroStrategy 的资产负债表）。</p>
+  <p>Ethereum 有自己的 Saylor 吗？Haseeb 认为最可能的答案是 Bitmain——这个市值百亿美元的实体如果变得更加激进，加上一个「第二基金会」的配合，可能会填补 EF 留下的空白。David 补充说这需要 EF 真正把权力和合法性让渡出去——而这恰恰是 Vitalik 的「耶稣困境」所在。</p>
+  <p>节目的一个核心张力就在于此：Ethereum 需要一个斗争精神、一个 killer instinct——但 EF 的 DNA 和领导层结构天然排斥这种能量。正如 Haseeb 所说：「你可以看到其他竞争性基金会——Tempo 有这种能量，Solana 有这种能量。如果长时间没有这种东西，你就会失去一些重要的东西。」</p>
+</section>
+
+<section>
+  <h2>Haseeb 的底线：为什么他仍然看多</h2>
+  <p>在整个节目的悲观氛围中，Haseeb 是为数不多的坚持看多立场的人。他的理由不是短期的价格催化剂，而是一个长线的结构性信念。</p>
+  <p>他认为区块链竞争的终极战场不是性能——而是成为最大、最受信任的链。「长期溢价就从这里来。」Ethereum 有最长的历史（Lindy 效应）、最深厚的企业级集成、以及一种几乎不可能被复制的惯性。「Web 2.5」的应用——那些需要安全、稳定、被认可的基础设施的应用——天然会选择 Ethereum。它们不需要问「该去哪里」，答案已经在那里了。</p>
+  <p>但这不意味着 Ethereum 会顺利到达终点。Haseeb 设想的路径是痛苦而漫长的：「Ethereum 会是最后一个到达的。就像微软花了 15 年在公众面前流血、犯下每一个可能的错误——移动、互联网、MP3 播放器、搜索引擎——但他们有九条命，因为他们有 Lindy 效应和企业根基。」</p>
+  <p>他的最终赌注是：当区块链真正成为解释这个世界如何运作的核心技术时（他相信在 15 年内会实现），Ethereum 仍然会在那里——可能是最后一个到达的，但仍然是最重要的基础设施之一。对他来说，这不是一个让人激动的故事，但这是一个扎实的故事。</p>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+  <div class="quotes">
+    <div class="q q-blue">
+      <div class="text">「我是因为机会成本卖掉了 ETH——不是看空。我的 thesis 在某种程度上兑现了，故事该翻篇了。」</div>
+      <div class="attr">— David Hoffman，解释为什么卖 ETH</div>
+    </div>
+    <div class="q q-red">
+      <div class="text">「EF 不是『数字上涨』机构。那不是我们的工作，从来都不是。我们的工作是让 Ethereum 令人印象深刻。」</div>
+      <div class="attr">— Vitalik Buterin，回应社区批评</div>
+    </div>
+    <div class="q q-purple">
+      <div class="text">「Ethereum 已经变成了加密世界的微软——这既不是侮辱也不是恭维，只是一个纯粹的描述。」</div>
+      <div class="attr">— Haseeb Qureshi，提出 ETH = 微软类比</div>
+    </div>
+    <div class="q q-green">
+      <div class="text">「他造了一个技术项目，结果造出了一个 4000 亿美元的资产。这个东西比他们一直在造的东西大了一百倍——这烧坏了他们的脑子。」</div>
+      <div class="attr">— Max Resnick，分析 EF 的身份撕裂</div>
+    </div>
+    <div class="q q-yellow">
+      <div class="text">「如果让我重做 Ethereum 的营销：Ethereum is for boomers。对 19 岁的人说『数字上涨』——这有什么激励人心的？」</div>
+      <div class="attr">— Tom Schmidt</div>
+    </div>
+    <div class="q q-orange">
+      <div class="text">「Vitalik 可以说『我不再负责了』——然后所有人会说『天哪 Vitalik 写了篇好文章，等不及下一篇了』。这是一个陷阱。当耶稣很难停下来。」</div>
+      <div class="attr">— David Hoffman 和 Tom Schmidt</div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<footer class="article-footer">
+  <p>完整节目收听：<a href="https://choppingblock.xyz">choppingblock.xyz</a></p>
+  <p style="margin-top:8px;">原文发布于 The Chopping Block · 2026 年 5 月</p>
+</footer>
+
+</article>
+</body>
+</html>

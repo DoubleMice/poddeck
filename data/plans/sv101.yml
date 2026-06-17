@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-17T04:39:22.177Z
+refreshed_at: 2026-06-17T18:52:49.652Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 4
-done: 0
+done: 1
 pending: 3
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -126,7 +126,7 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guest: 周健工.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 30cb80a668fb480b8e0e3c7304576b93,555f88c30387488c901207eb76fcb191,20b5329b1c8044808124a5e0aa45c836,6edede4924ae4613a92d0c6370638bbe,8e6297fc5c2645e992b17a71b4ff4bbe
@@ -542,5 +542,9 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 老马 and 齿牙.
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-17T19:03:21.269Z
+    transcript_job_id: 185f008adc244916b31d14d1de958319,9e28f719fed04d7e8aa1bf53399c609d,2bf9d01fca5349bd89ca030552b30a6f,37abfebc013e49d89512942636435ffd,35bd296fd5f64ba2a418a658bf261117
+    transcript_completed_at: 2026-06-17T19:06:24.418Z

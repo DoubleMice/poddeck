@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-06-17T04:39:22.097Z
+refreshed_at: 2026-06-17T18:52:49.573Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 123
-done: 0
+done: 1
 pending: 2
-needs_transcript: 121
+needs_transcript: 120
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -169,7 +169,7 @@ episodes:
       Disclosures
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
   - id: a9c7a8f2-5a46-11f1-9a84-fb368c3bb279
     guid: a9c7a8f2-5a46-11f1-9a84-fb368c3bb279
@@ -530,8 +530,12 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-17T18:52:50.795Z
+    transcript_job_id: 772d21278f3f454ab1f0b76a92b2b29d,54d030d99cc14d818b784ff6f159963c,639f049eb87b490e99978d0cf3d5f9e9,dfc3bc9b05b84fb59840825dd7096a76
+    transcript_completed_at: 2026-06-17T18:55:45.709Z
   - id: 268089a0-4f38-11f1-9a58-ff1b070f08af
     guid: 268089a0-4f38-11f1-9a58-ff1b070f08af
     title: "Uneasy Money: Why the Broken Pre-IPO Secondary Markets Won't Be Fixed Anytime Soon"
@@ -4077,8 +4081,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5840,8 +5843,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
