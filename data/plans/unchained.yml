@@ -1,83 +1,15 @@
 source: unchained
-refreshed_at: 2026-06-16T19:17:03.094Z
+refreshed_at: 2026-06-17T04:39:22.097Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 124
-done: 1
+total_candidates: 123
+done: 0
 pending: 2
 needs_transcript: 121
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 800520c0-5fa1-11f1-99ad-cfe68f34d64e
-    guid: 800520c0-5fa1-11f1-99ad-cfe68f34d64e
-    title: "CFTC Approves True Perps and Agentic Finance Gets Real: DEX in the City"
-    duration: 3014
-    published: Tue, 02 Jun 2026 18:22:00 -0000
-    published_sort: "20260602"
-    first_seen_at: 2026-06-16T01:06:35.781Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7147706987.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7147706987.mp3
-    image: https://megaphone.imgix.net/podcasts/800520c0-5fa1-11f1-99ad-cfe68f34d64e/image/48a95f42aca9051c26c3b5ad9bbf810a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      The CFTC reclassified perps as futures. Katherine and Jessi parse what the ruling actually permits and what it
-      means for Hyperliquid. Plus: if your AI agent gets scammed, who pays?
-
-
-      Thanks to our sponsor!
-
-
-      Explore crypto careers that could change your future at https://crypto.fidelitycareers.com
-
-
-      The CFTC approved a perpetual Bitcoin futures contract for KalshiEX, and crypto Twitter immediately got it wrong.
-      Katherine Kirkpatrick Bos untangles what actually changed, why the switch from swap to futures classification
-      matters for retail access, and what the ruling leaves wide open on leverage and decentralized exchanges.
-
-
-      Jessi Brooks and Katherine explore the fact that AI agents can now place orders, not just give advice. They
-      revisit their paper "The Agents at the Gate" and make clear why Robinhood's move to let agents charge your Gold
-      Card raises liability questions that existing consumer protection law was never built to answer.
-
-
-      In the strangest segment, they also dug into a New York lawsuit where an anonymous plaintiff is claiming legal
-      ownership of nearly 40,000 dormant crypto wallets. Jessi explains why the lost-property theory will probably fail
-      — and why even a partial win could force centralized exchanges into an impossible spot.
-
-
-      Hosts:
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Katherine Kirkpatrick Bos⁠⁠⁠⁠⁠⁠, General Counsel at StarkWare. Previously held senior
-      legal roles across DeFi and centralized exchanges.
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jessi Brooks⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, General Counsel at Ribbit Capital⁠⁠⁠⁠⁠⁠⁠⁠⁠
-
-
-      Timestamps
-
-      🏛️ 01:35 KK on why 90% of crypto Twitter got the CFTC perps ruling wrong
-
-      ⚖️ 06:42 Jessi: the perps approval is case by case and the fine print matters
-
-      🌐 12:56 Does the CFTC ruling change anything for Hyperliquid and DEX perps?
-
-      🤖 19:54 Jessi: the financial system now has to treat software like a customer
-
-      💳 24:57 Why Robinhood's agentic Gold Card breaks the chargeback model
-
-      📣 32:15 Fidelity: Explore crypto careers that could change your future at https://crypto.fidelitycareers.com
-
-      🗝️ 33:39 The lawsuit nobody noticed: 40,000 dormant wallets, finders keepers
-
-      📜 40:28 Why even a partial win for Noah Doe could force exchanges to act
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
   - id: aeee861c-5a4f-11f1-b709-d3c6c07da011
     guid: aeee861c-5a4f-11f1-b709-d3c6c07da011
     title: "The Chopping Block: Ethereum's Identity Crisis, Apostates Speak Out, and Is ETH the Microsoft of Crypto?"
@@ -338,8 +270,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-06-16T19:17:04.310Z
     transcript_job_id: 142186ecee9245b480ee1059f7678f3f,90963c47857d456a90bb62c6b9b1eca4,4e636b7f54b6453bb76407c2fee669eb,36e527a37e214b32bfe93299a39c9281,e50b592d033a4d2db841a00e0b9fc135
+    transcript_submitted_at: 2026-06-16T19:17:04.310Z
     transcript_completed_at: 2026-06-16T19:20:17.319Z
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     guid: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
@@ -4145,7 +4077,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5907,7 +5840,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

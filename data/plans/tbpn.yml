@@ -1,75 +1,118 @@
 source: tbpn
-refreshed_at: 2026-06-16T19:17:03.020Z
+refreshed_at: 2026-06-17T04:39:22.018Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
-pending: 1
+done: 0
+pending: 2
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: fdab29ed-7745-4b3a-9022-e4a47422a142
-    guid: fdab29ed-7745-4b3a-9022-e4a47422a142
-    title: Freedom 250 Recap with Bo Nickal, The Hand Anthropic Was Dealt, Fox Buys Roku | Bo Nickal, Gavin Baker, Leif
-      Abraham, Aaron Ginn, Rafael Vivas
-    duration: 8560
-    published: Mon, 15 Jun 2026 13:51:19 -0700
-    published_sort: "20260615"
-    first_seen_at: 2026-06-16T01:06:35.742Z
-    url: https://share.transistor.fm/s/07ad1b46
-    audio_url: https://media.transistor.fm/07ad1b46/64490477.mp3
+  - id: cd1df4c0-b0dd-4b7f-a927-31ddac324f5e
+    guid: cd1df4c0-b0dd-4b7f-a927-31ddac324f5e
+    title: YC Demo Day Lightning Round, New Snap AR Glasses, SpaceX Rips | Garry Tan, Andrew Lee, Stamatios Floratos, Hugo
+      Frisk, Efraín Torres, Russell Smith, Payton Case, Akshay Trikha, Diana Hu, Harj Taggar, Connor Hayes, Luke Burgis,
+      Anda Gansca
+    duration: 10214
+    published: Tue, 16 Jun 2026 14:22:50 -0700
+    published_sort: "20260616"
+    first_seen_at: 2026-06-17T04:39:22.009Z
+    url: https://share.transistor.fm/s/233fa238
+    audio_url: https://media.transistor.fm/233fa238/a3ad67b5.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/07ad1b46/transcription.txt
+    transcript_url: https://share.transistor.fm/s/233fa238/transcription.txt
     transcript_type: text/plain
-    summary: "(00:57) - Freedom 250 Recap\r
+    summary: "(01:05) - SpaceX Rips\r
 
-      (04:43) - Bo Nickal, a former Penn State wrestling champion turned UFC middleweight fighter, recently secured a
-      first-round knockout victory over Kyle Daukaus at UFC Freedom 250, held on the White House South Lawn. In the
-      conversation, Nickal discusses his early awareness of the event, having known seven months prior that he would be
-      on the card, which allowed him to prepare thoroughly. He reflects on the unique atmosphere of the fight, noting
-      the supportive crowd reminiscent of his college wrestling days, and shares his plans to capitalize on the media
-      attention post-fight, including a media tour and a trip to Japan.\r
+      (08:00) - Andrew Lee, co-founder of Firebase (acquired by Google in 2014), discusses his latest venture, Tasklet,
+      an AI agent platform that integrates with various work tools to automate workflows. He highlights Tasklet's rapid
+      growth, achieving a $7 million run rate, and its ability to dynamically generate integrations using AI, enabling
+      connections to both public and internal APIs. Lee also mentions a recent $20 million funding round and emphasizes
+      Tasklet's competitive positioning against major AI labs.\r
 
-      (14:11) - The Hand Anthropic Was Dealt\r
+      (18:14) - Stamatis Floratos is the co-founder and CEO of Eden Robotics, a company developing autonomous robots for
+      industrial and commercial applications. In the conversation, he discusses their semi-humanoid robot with a wheeled
+      base and two human-like arms equipped with grippers capable of performing over 80% of industrial tasks. He
+      highlights the robot's 20-hour battery life and their innovative \"labor as a service\" model, charging clients
+      per hour of robot operation, which has been well-received by customers.\r
 
-      (21:45) - Meta Tracks AI Usage\r
+      (26:20) - Hugo Frisk, co-founder and CEO of Tenet Industries, discusses his company's focus on mass-producing
+      low-cost defense systems by applying principles from electronics and automotive manufacturing. He highlights the
+      challenges of extending drone range without GPS, emphasizing the need for improved navigation systems and autonomy
+      to overcome jamming issues. Frisk also outlines their business model, starting with private company sales and
+      scaling up to government contracts, while addressing counter-UAS technologies and the importance of efficient,
+      scalable production methods.\r
 
-      (30:24) - Gavin Baker, Chief Investment Officer and Managing Partner at Atreides Management, is a seasoned
-      investor with a background in technology and consumer sectors. In the transcript, he discusses the successful
-      execution of SpaceX's IPO, highlighting the company's rapid ascent in the AI compute sector through strategic
-      deals with Google and Anthropic, and emphasizes the importance of scaling terrestrial compute and the potential of
-      orbital data centers to reduce infrastructure costs.\r
+      (36:01) - Dr. Efrain Torres, co-founder of Adelante, discusses their development of mobile whole-body MRI units
+      for cancer screening, emphasizing the safety and cost-effectiveness of their technology. He highlights the
+      system's lighter weight, reduced power consumption, and quieter operation, enabling scans at $250 each,
+      significantly lower than competitors. Torres also outlines their strategy of deploying traditional MRIs in mobile
+      units to build distribution channels ahead of their proprietary system's FDA approval, aiming for profitability
+      upon its clearance.\r
 
-      (01:03:41) - Leif Abraham, co-CEO of Public.com, discusses the unprecedented retail investor interest in SpaceX's
-      IPO, noting that nearly half of all stock purchases on their platform that day were for SpaceX, making it the most
-      popular IPO they've ever seen. He highlights the challenges retail investors face in obtaining significant
-      allocations during high-demand IPOs, as banks often prioritize their wealthier clients, resulting in limited
-      shares for the general public. Abraham also addresses concerns about SpaceX's inclusion in major indices,
-      emphasizing that Public.com offers direct indexing tools, allowing investors to customize their portfolios by
-      excluding specific stocks like SpaceX if desired.\r
+      (42:13) - Russell Smith, an entrepreneur and founder of 9 Mothers, discusses his journey from participating in Y
+      Combinator's Summer 2012 batch to developing AI-powered counter-drone systems for the Department of Defense. He
+      highlights the challenges of detecting and neutralizing fast-moving drones using a combination of sensors and
+      kinetic methods, emphasizing the importance of sensor fusion to address various environmental conditions. Smith
+      also shares the company's progress, including delivering units to the DoD, plans for significant revenue growth,
+      and the development of a belt-fed shotgun system to enhance their counter-drone capabilities.\r
 
-      (01:16:58) - Fox Buys Roku\r
+      (49:41) - Payton Case, founder of Dispatch Space, discusses his company's focus on building reentry vehicles to
+      transport advanced materials manufactured in microgravity back to Earth, emphasizing applications in the
+      semiconductor industry. He highlights a pilot mission with a paying customer to grow semiconductor crystals in
+      space, noting that microgravity conditions yield crystals with up to a thousand times fewer defects. Case also
+      shares his entrepreneurial journey from working in a smoothie shop to leading a space technology company and
+      mentions the positive progress of their fundraising efforts.\r
 
-      (01:28:31) - 𝕏 Timeline Reactions\r
+      (54:24) - Akshay Trikha, co-founder of Madrone, is developing hyper-efficient cooling systems for data centers,
+      particularly in hot and dry climates where hyperscaling is prevalent. He highlights that data centers are
+      currently constrained by power availability rather than chips or land, with cooling consuming up to 40% of power
+      that could otherwise be allocated to computational tasks. Madrone's innovative thermodynamic process aims to
+      reduce power and water usage by 30%, enabling data centers to install more GPUs within existing grid permits and
+      significantly lowering operational costs.\r
 
-      (01:46:44) - Aaron Ginn is the CEO and co-founder of Hydra Host, a company specializing in GPU management
-      platforms for AI infrastructure. In the conversation, he discusses the challenges of regulating technology
-      adoption, emphasizing the importance of empowering parents to educate their children on social media use rather
-      than implementing total bans. He also highlights Hydra Host's recent $100 million Series A funding, which will be
-      used to expand their software solutions for data centers, enabling them to become NEO clouds without owning
-      physical GPUs. Additionally, Ginn addresses the global competition in AI, noting that China's rapid adoption of AI
-      technologies may render U.S. export restrictions less effective.\r
+      (01:00:56) - New Snap AR Glasses\r
 
-      (02:00:19) - Rafael Vivas, General Manager of New Initiatives at AppLovin, discusses the company's evolution from
-      struggling to raise venture capital to becoming a leading mobile ad platform valued at $180 billion. He highlights
-      the vast and diverse mobile gaming market, emphasizing its significant growth and the increasing need for
-      effective distribution strategies. Vivas also touches on the integration of AI in enhancing advertising algorithms
-      and internal efficiencies, as well as the company's focus on expanding its e-commerce initiatives and maintaining
-      customer retention through profitable advertising solutions.\r
+      (01:07:09) - Diana Hu, a Managing Partner at Y Combinator, co-founded Escher Reality, an augmented reality backend
+      company acquired by Niantic in 2018, where she subsequently led the AR platform team. In the conversation, she
+      reflects on her entrepreneurial journey, noting the significant growth of Y Combinator since her participation in
+      2017, and discusses the rapid revenue achievements of current startups, attributing this acceleration to
+      advancements in agentic coding. She also emphasizes the importance of tailored advice for startups, recognizing
+      that strategies should vary based on the company's focus, such as core infrastructure or defense applications.\r
 
-      (02:16:13) - 𝕏 Timeline Reactions
+      (01:20:51) - Harj Taggar, a Managing Partner at Y Combinator, co-founded Auctomatic in 2007 and Triplebyte in
+      2015, and was the first non-founder partner at YC in 2010. He discusses the evolving educational backgrounds of YC
+      founders, noting a decline in computer science degrees and a rise in physics and math backgrounds, suggesting a
+      shift towards first-principles thinking. Taggar also observes that while initial concerns about large AI labs
+      dominating the field have subsided, founders are now focusing on creating tools and infrastructure that these labs
+      are unlikely to develop, emphasizing the importance of identifying opportunities beyond the labs' scope.\r
+
+      (01:38:36) - Garry Tan, born in 1981, is a Canadian-American venture capitalist and entrepreneur, currently
+      serving as the President and CEO of Y Combinator. In the transcript, Tan discusses the growing trend of hard tech
+      startups, emphasizing the importance of innovation in defense technology and the structural challenges faced by
+      large tech companies in delivering desired technologies. He also highlights the potential of AI in transforming
+      various industries and the need for startups to focus on creating products that people genuinely want.\r
+
+      (02:00:30) - Connor Hayes, a longtime Meta executive, was appointed head of Threads in mid-2025, transitioning
+      from his role as Vice President of Product for Generative AI. In the conversation, Hayes discusses Threads' growth
+      to 500 million monthly users, emphasizing the platform's focus on fostering diverse communities and enhancing user
+      engagement through features like Live Chats for events such as F1 and the NBA Finals. He highlights the app's
+      commitment to being a \"quiet\" space for public conversation, differentiating it from other platforms by avoiding
+      features like vertical video feeds, and underscores the importance of balancing growth metrics with the goal of
+      facilitating meaningful interactions.\r
+
+      (02:21:04) - Luke Burgis is an entrepreneur, author, and educator known for his work on mimetic desire and social
+      contagion. In his conversation, he discusses how desires are often unconsciously shaped by others, the impact of
+      artificial intelligence on these dynamics, and the importance of developing a strong personal identity to navigate
+      societal pressures.\r
+
+      (02:37:35) - Anda Gansca is the co-founder and CEO of Notch, a leading digital intelligence and optimization
+      platform for Fortune 500 brands. In a recent conversation, she introduced ACE, a new infrastructure designed to
+      enhance website conversion rates for both human users and AI agents. Gansca emphasized the importance of creating
+      personalized digital experiences that cater to the evolving landscape of web traffic, where AI agents are becoming
+      increasingly prevalent.
 
 
       TBPN is made possible by:
@@ -90,41 +133,8 @@ episodes:
       CrowdStrike - https://www.crowdstrike.com
 
 
-      Figma - https://www.figma.com
-
-
-      MongoDB - https://www.mongodb.com
-
-
-      NYSE - https://www.nyse.com
-
-
-      Railway - https://railway.com
-
-
-      Shopify - https://www.shopify.com
-
-
-      Codex - http://openAI.com/codex
-
-
-      Follow TBPN:
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/tbpn/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: generated
+      Figma - https://www.figma.com..."
+    status: pending
     priority: 1
   - id: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
     guid: 0c8c9823-dfa1-4b08-aac2-3d2a25ab8753
