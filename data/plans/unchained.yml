@@ -1,15 +1,122 @@
 source: unchained
-refreshed_at: 2026-06-18T04:38:36.133Z
+refreshed_at: 2026-06-18T18:53:25.768Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 121
-done: 0
-pending: 2
-needs_transcript: 119
+done: 1
+pending: 3
+needs_transcript: 117
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: be8e6418-6ae7-11f1-a01f-63db440d86d6
+    guid: be8e6418-6ae7-11f1-a01f-63db440d86d6
+    title: "The Chopping Block: SpaceX IPO Mania, Fable 5 Export Controls & The AI Privacy Fight"
+    duration: 4493
+    published: Thu, 18 Jun 2026 16:00:00 -0000
+    published_sort: "20260618"
+    first_seen_at: 2026-06-18T18:53:25.765Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6890091820.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6890091820.mp3
+    image: https://megaphone.imgix.net/podcasts/be8e6418-6ae7-11f1-a01f-63db440d86d6/image/9eee8139e55874fd23bfb0f9c607df91.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      The crew breaks down the SpaceX IPO's crypto-like low float dynamics and Hyperliquid's price prediction, debates
+      accredited investor laws and failed tokenized stock allocations, dives into Fable 5's export control shutdown
+      after Amazon flagged a jailbreak to the Treasury Secretary, and argues whether open source AI models will eat
+      frontier pricing.
+
+
+      Welcome to The Chopping Block — where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert
+      Leshner chop it up about the latest in crypto. Robert is back after a brief hiatus recording his own podcast, The
+      Pop, for Superstate — and the crew wastes no time roasting him for it before diving into the biggest week of news
+      in recent memory.
+
+
+      First up: the SpaceX IPO, the largest in history, and why it looks eerily like a crypto token launch — 4.2% float,
+      retail getting cut out, and Hyperliquid perps predicting the first-day pop almost to the dollar. The crew debates
+      TradeXYZ's winner-take-all dominance of HIP3 and why building on top of Hyperliquid might be a terrible startup
+      environment. Then they unpack Elon's financial engineering genius — the Cursor acquisition as all-stock crypto
+      playbook, XAI's pivot from failed AI lab to compute reseller, and why Grok is (unanimously) an embarrassing piece
+      of shit.
+
+
+      The conversation shifts to accredited investor laws, SPV dentists, and why every crypto platform failed to deliver
+      SpaceX IPO allocations. From there, Coinbase's massive system update — tokenized stocks, an SEC-registered AI
+      chatbot, combos, and 15-minute markets. Then things get spicy: Robert asks Claude about SBF on air, Sonnet gets it
+      hilariously wrong, and everyone roasts him for not using Opus.
+
+
+      The back half is all about Fable 5 — Amazon's jailbreak discovery, Andy Jassy calling Dario (who didn't pick up),
+      and the export controls that shut down the most powerful commercial AI model ever released. Robert drops his most
+      surprising take: "I am EAC, but this is a dry run of pressing the pause button." The episode closes with a heated
+      debate on whether Chinese open source models will eat frontier AI pricing and a bet that may or may not have been
+      agreed upon.
+
+
+      Listen to the episode on Apple Podcasts, Spotify, Pods, Fountain, Podcast Addict, Pocket Casts, Amazon Music, or
+      on your favorite podcast platform.
+
+
+      Show highlights
+
+
+      🔹 SpaceX IPO breaks records with a 4.2% float — the closest thing to a crypto token launch Wall Street has ever
+      done
+
+
+      🔹 Hyperliquid perps predicted the SpaceX first-day pop almost exactly, with $1.4B in daily volume on a single
+      stock
+
+
+      🔹 TradeXYZ dominates HIP3 as other integrators fold — "HIP3 should be renamed to Trade"
+
+
+      🔹 SpaceX's all-stock Cursor acquisition mirrors the CZ/FTT playbook — Elon learned from crypto
+
+
+      🔹 Accredited investor laws debated after Brian Armstrong calls for reform post-SpaceX IPO
+
+
+      🔹 Every crypto platform that promised SpaceX IPO allocations failed to deliver after the deal went 5x
+      oversubscribed
+
+
+      🔹 Coinbase launches tokenized stocks with real dividends, an SEC-registered AI advisor, combos, and 15-minute
+      markets
+
+
+      🔹 Robert asks Claude about SBF on air — Sonnet 4.6 hallucinates, Opus 4.8 gets it right, model war ensues
+
+
+      🔹 Fable 5 shut down after Amazon flagged a jailbreak to Treasury Secretary Bessent — Dario didn't pick up the
+      phone
+
+
+      🔹 Robert says "I am EAC" but argues the Fable shutdown is a healthy dry run of pressing the AI pause button
+
+
+      Hosts
+
+
+      ⭐️Haseeb Qureshi, Managing Partner at Dragonfly
+
+
+      ⭐️Robert Leshner, CEO & Co-founder of Superstate
+
+
+      ⭐️Tarun Chitra, Managing Partner at Robot Ventures
+
+
+      ⭐️Tom Schmidt, General Partner at Dragonfly Disclosures
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-18T18:53:27.041Z
+    transcript_job_id: 52e728867db54050b50935546b768ad4,f2ec49522b6b4f36aa831641a4393c8b,2dbc0dcd9e73488289f7150c7b832842,a6a5fd24df9440f8902dbdef683b0e2f,af6b636ee0424005868b02f1729eabc0
+    transcript_completed_at: 2026-06-18T19:00:15.469Z
   - id: dcc9b538-6ac7-11f1-8ee6-33aea1081996
     guid: dcc9b538-6ac7-11f1-8ee6-33aea1081996
     title: Unchained Celebrates 10 Years! Laura and Haseeb Cover Highs, Lows and New Directions
@@ -111,8 +218,12 @@ episodes:
       🗞️ 51:06 Why Laura now believes independent journalism is better for humanity
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-18T19:01:52.124Z
+    transcript_job_id: db0d22a21f5f4986986656de499e2cba,c25293b06a4a40e4b698ab3087a2a199,c856afe1c08645abade5f732474bf6e4,125648f68678469888c2f8f9fbc79743
+    transcript_completed_at: 2026-06-18T19:04:19.542Z
   - id: a9c7a8f2-5a46-11f1-9a84-fb368c3bb279
     guid: a9c7a8f2-5a46-11f1-9a84-fb368c3bb279
     title: "Why the SEC Paused on Its Innovation Exemption for Tokenization: Bits + Bips"
@@ -4023,8 +4134,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5786,8 +5896,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -10048,36 +10157,6 @@ episodes:
         How the Crypto Market Structure Law Would Expose that Trump’s WLFI Isn’t DeFi
 
         Jessi and Katherine's paper on programmable risk management
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 269a9b42-f17d-11f0-a76e-7be0a562fb56
-    guid: 269a9b42-f17d-11f0-a76e-7be0a562fb56
-    title: "The Chopping Block: Venezuela Sanctions Drama + Polymarket Insider Trading + Zcash Foundation Exodus"
-    duration: 2994
-    published: Wed, 14 Jan 2026 19:13:00 -0000
-    published_sort: "20260114"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7739477738.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7739477738.mp3
-    image: https://megaphone.imgix.net/podcasts/269a9b42-f17d-11f0-a76e-7be0a562fb56/image/793b953641fc8b38214543f26d2c7f41.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      The Chopping Block breaks down the Kontigo Venezuela sanctions scandal, poly market insider trading drama around
-      Maduro's capture, and the explosive Zcash governance crisis that has the entire Electric Coin Company team
-      quitting to launch CashZ amid foundation versus for-profit wallet debate.
-       Welcome to The Chopping Block — where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert Leshner chop it up about the latest in crypto. This week, the crew dives deep into Venezuela's unexpected crypto connections following Maduro's capture, unpacking how the YC-backed fintech Kontigo allegedly used stablecoins to arbitrage sanctions and capital controls.
-       They debate the moral complexities of banking the unbanked versus violating US sanctions, and whether stablecoins are fulfilling their promise of financial freedom or enabling bad actors. The conversation then shifts to prediction markets drama, as a mysterious trader made $400k betting on Maduro's downfall just hours before it happened — sparking calls for insider trading laws in political betting markets.
-       Finally, they tackle the governance chaos in Zcash land, where the entire Electric Coin Company team quit en masse over disagreements with the nonprofit board, launching a new for-profit venture called CashZ. The hosts debate whether this signals the end of the foundation era in crypto, or just growing pains for protocols trying to build killer products.
-       Hosts:
-        Haseeb Qureshi
-         Robert Leshner
-         Tarun Chitra
-         Tom Schmidt
-        Links:
-        FinTech Business Weekly - Kontigo: Y Combinator's Venezuelan Sanctions Evasion Startup
-       Wall Street Journal - A Mystery Trader Made $400,000 Betting on Maduro’s Downfall
-
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript

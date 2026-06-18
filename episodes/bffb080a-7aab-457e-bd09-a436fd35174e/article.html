@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snap Specs, Taste, Midjourney Hardware — TBPN 2026-06-17</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 2rem 1rem 4rem;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  @media (max-width: 600px) {
+    article { padding: 1.5rem 1rem; }
+    body { padding: 0.5rem; font-size: 16px; }
+  }
+  h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.5rem; color: #111; }
+  h2 { font-size: 1.3rem; margin: 2.5rem 0 1rem; color: #222; border-bottom: 2px solid #eee; padding-bottom: 0.4rem; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; color: #333; }
+  p { margin: 0.8rem 0; }
+  .meta { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
+  .meta span { margin-right: 1.5rem; }
+  .topic-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin: 1.2rem 0 2rem;
+  }
+  .topic-card {
+    padding: 0.75rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    border-left: 4px solid;
+  }
+  .topic-card strong { display: block; margin-bottom: 0.2rem; font-size: 0.92rem; }
+  .card-blue { background: #eff6ff; border-color: #3b82f6; }
+  .card-green { background: #f0fdf4; border-color: #22c55e; }
+  .card-yellow { background: #fefce8; border-color: #eab308; }
+  .card-purple { background: #faf5ff; border-color: #a855f7; }
+  .card-red { background: #fef2f2; border-color: #ef4444; }
+  .card-orange { background: #fff7ed; border-color: #f97316; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .stat-card {
+    padding: 0.9rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    border: 2px solid;
+  }
+  .stat-card .num { font-size: 1.6rem; font-weight: 700; display: block; }
+  .stat-card .label { font-size: 0.78rem; opacity: 0.7; }
+  .stat-blue { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
+  .stat-green { background: #f0fdf4; border-color: #bbf7d0; color: #15803d; }
+  .stat-red { background: #fef2f2; border-color: #fecaca; color: #dc2626; }
+
+  .quote-block {
+    margin: 1.5rem 0;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  .quote-block .attribution {
+    font-style: normal;
+    font-size: 0.82rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+    display: block;
+  }
+  .q-blue { background: #eff6ff; border-color: #3b82f6; }
+  .q-green { background: #f0fdf4; border-color: #22c55e; }
+  .q-yellow { background: #fefce8; border-color: #eab308; }
+  .q-purple { background: #faf5ff; border-color: #a855f7; }
+  .q-orange { background: #fff7ed; border-color: #f97316; }
+  .q-red { background: #fef2f2; border-color: #ef4444; }
+
+  .gloss {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+    margin: 0.5rem 0 1.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #ddd;
+  }
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+  }
+  @media (max-width: 500px) { .compare-grid { grid-template-columns: 1fr; } }
+  .compare-col {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  .col-bad { background: #fef2f2; border: 1px solid #fecaca; }
+  .col-good { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .col-bad h4 { color: #dc2626; }
+  .col-good h4 { color: #15803d; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    font-size: 0.85rem;
+    color: #999;
+    text-align: center;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  ul { padding-left: 1.5rem; margin: 0.5rem 0 1rem; }
+  li { margin: 0.3rem 0; font-size: 0.92rem; }
+  .model-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0 1.5rem;
+    text-align: center;
+  }
+  @media (max-width: 500px) { .model-grid { grid-template-columns: 1fr 1fr; } }
+  .model-card {
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    border: 1px solid #e5e7eb;
+  }
+  .model-card .score { font-size: 1.3rem; font-weight: 700; }
+</style>
+</head>
+<body>
+<article>
+
+<h1>Snap Specs、品味、Midjourney 硬件</h1>
+<div class="meta">
+  <span>📅 2026-06-17</span>
+  <span>🎙️ TBPN</span>
+  <span>⏱️ 3 小时 2 分钟</span>
+</div>
+<div class="meta" style="margin-bottom:1.5rem;">
+  嘉宾：Eric Newcomer · Merrill Lutsky · Carter Reum · Swami Sivasubramanian · Thomas Suarez · Mark Gurman · Ryan Daniels · Isaiah Granet
+</div>
+
+<p>2026 年 6 月 17 日，TBPN 带来了一场信息密度极高的多嘉宾特别节目。从 Snap 的 $2,200 AR 眼镜引发的市场风暴，到 Cursor 被 SpaceX 收购后推出的 Agent 原生 Git 基础设施，再到苹果 WWDC 2026 后全新 Siri 的实际表现——这期节目像一面棱镜，折射出 2026 年科技行业最核心的几条主线。</p>
+
+<h2>为什么这期值得关注</h2>
+<div class="topic-cards">
+  <div class="topic-card card-blue"><strong>AR 硬件决战</strong>Snap 砸 35 亿美元推出 $2,200 的 Specs，市场反应惨烈。与此同时独立开发者用不到八位数做出了对标产品。</div>
+  <div class="topic-card card-green"><strong>代理式编程基础设施</strong>Cursor/SpaceX 交易后发布 Origin——为 Agent 时代从零设计的 Git。整个工具链正在重构。</div>
+  <div class="topic-card card-yellow"><strong>AI 时代 VC 进化</strong>M13 十年前投 SpaceX $15B 估值，如今 150 倍回报。VC 的权力格局正在世代更替。</div>
+  <div class="topic-card card-purple"><strong>苹果 AI 路线图</strong>WWDC 2026：Siri 终于能用了。苹果自认落后 OpenAI 六个月，但预装 AI 的策略可能改写规则。</div>
+  <div class="topic-card card-red"><strong>品味能否被量化？</strong>Taste Labs 声称要"终结 AI 垃圾美学"，24 小时内百万浏览，引发硅谷关于品味的激烈论战。</div>
+  <div class="topic-card card-orange"><strong>语音 AI + 法律 AI</strong>Bland 融资 $50M 专攻"搞砸了会死人"的客服电话。Crosby 发布首个法律谈判 Agent 基准测试。</div>
+</div>
+
+<h2>一、Snap Specs：$2,200 的豪赌与市场的冷酷回应</h2>
+
+<p>Snap 在 Augmented World Expo 2026 上展示了其最新 AR 眼镜 Specs。$2,195 的定价、略显笨重的外观、以及一个耳部被挤压变形的 Evan Spiegel 的照片，引爆了社交媒体的嘲讽狂潮。</p>
+
+<div class="stat-grid">
+  <div class="stat-card stat-red"><span class="num">92%</span><span class="label">Snap 股价自峰值下跌</span></div>
+  <div class="stat-card stat-red"><span class="num">$35 亿+</span><span class="label">累计 AR 硬件投入</span></div>
+  <div class="stat-card stat-red"><span class="num">$2,195</span><span class="label">Specs 零售价格</span></div>
+</div>
+
+<p>TBPN 的主持人指出了一个核心矛盾：如果是一家创业公司做出这些 Demo，在当前市场行情下"轻松估值 10 亿美元以上"。但 Snap 作为一家股价从高点跌去 92% 的上市公司，每 1 美元的投入都被股东用放大镜审视。正如一位评论者所说："你需要理解一个组织的文化有多么破碎，才能推出这样一款产品并让 CEO 戴着它到处走。"</p>
+
+<p>Specs 的困境揭示了一个更深刻的教训：新品类硬件不需要一个"杀手应用"，它需要一个明确的<strong>替代目标</strong>。iPhone 替代了功能手机，AirPods 替代了有线耳机。Specs 试图替代什么？手机太重，普通眼镜太大，高尔夫测距仪可以 $150 买到续航 6 小时的产品——每个替代目标都有更便宜、更成熟的选择。</p>
+
+<div class="gloss">作者概括：Meta Ray-Ban 的成功恰恰在于它先做好了一副好看的眼镜，AI 功能是附加品。Specs 的问题在于"功能先于形态"——这是 AR 行业反复犯的错误。</div>
+
+<h2>二、AR 的冷启动难题：没有用户就没有开发者，没有开发者就没有用户</h2>
+
+<p>TBPN 的主持人提出了一个令人深思的观察：即使在这个 vibe coding 让软件成本几乎为零的时代，Apple Vision Pro 仍然没有吸引到足够多的开发者。"你做一次 Vision Pro 的 Demo，墙会打开，恐龙会走进你的房间——但没有人把它当作经济机会。开发者宁愿去做 iOS App Store 的 App。"</p>
+
+<p>这形成了一个经典的冷启动死循环：用户不够多 → 开发者不来 → 没有应用生态 → 用户不买。对于 AR 眼镜而言，这个问题更加严峻，因为硬件的物理成本远高于软件平台——你不能像免费分发一个 SDK 那样免费分发一副眼镜。</p>
+
+<h2>三、Raven Prism：用不到八位数挑战巨头</h2>
+
+<p>Thomas Suarez 是 Raven Renaissance 的创始人、CEO 和 CTO。他可能是这个星球上累计使用 AR 设备时间最长的人之一——"超过 12 年"的日常穿戴经验。他的公司正在开发 Raven Prism，一副被定义为"第一台环境计算机"的眼镜。</p>
+
+<p>最令人印象深刻的是效率。Suarez 透露，投资人曾告诉他"从设计到量产至少需要 $1 亿"，但 Raven Renaissance "用了不到八位数"就做到了——"我们在旧金山实验室里设计并组装每一台设备，这对快速迭代至关重要。"</p>
+
+<div class="quote-block q-green">
+"我们想先做出 AR 的 iPod，再谈 AR 的 iPhone。你需要一个轻量、好看的形态，人们才愿意每天都戴着它。"
+<span class="attribution">— Thomas Suarez，Raven Renaissance 创始人</span>
+</div>
+
+<p>Suarez 将 AR 使用场景分为三层。第一层是"微交互"——5-10 秒进出，导航下一步方向、通知预览、切歌。第二层是"参考信息"——固定上下文的免提查阅。第三层才是"空间体验"——完整的 AR/MR 沉浸。他认为行业需要逐层递进，而不是一步到位。</p>
+
+<p>Raven Prism 的技术规格也令人惊讶：Linux 架构（"我们应该是这个形态中唯一做到这一点的"）、眼动追踪（内置两颗微型摄像头和独立协处理器保护隐私）、可热插拔电池系统实现全天续航、以及物理相机盖。Suarez 对隐私的重视尤其值得关注——"我们看到某些设备因为摄像头问题遭到了很大反弹。我们不想重复那些错误。"</p>
+
+<h2>四、Mark Gurman 的苹果全景图</h2>
+
+<p>Bloomberg 的 Mark Gurman 刚从 WWDC 2026 现场回来，带来了第一手的评测。最大的新闻是：Siri 终于能用了。</p>
+
+<div class="quote-block q-purple">
+"苹果两年前的基础模型根本不行。现在底层的模型好太多了——图像生成接近 ChatGPT 和 Gemini 水平。95% 的人不需要在 iPhone 上装 ChatGPT，因为 Siri AI 预装后就够用了。"
+<span class="attribution">— Mark Gurman，Bloomberg</span>
+</div>
+
+<p>Gurman 用一个精准的类比来解释苹果的 AI 策略：<strong>Siri AI 是 iMovie，ChatGPT/Claude 是 Final Cut Pro</strong>。预装的 AI 对 95% 的用户够用，而专业用户会额外订阅 ChatGPT 或 Claude 来做深度研究、文档分析、税务准备等工作。</p>
+
+<p>但令人玩味的是苹果此前对这些功能的定位。Gurman 指出："苹果在 WWDC 2024 花了 180 分钟讲 AI，其中只有 5 分钟的内容延迟了。他们当时暗示这部分不重要。现在我用上了这些功能，才发现<strong>那 5 分钟恰恰是唯一重要的 5 分钟</strong>。"</p>
+
+<h3>苹果史上最密集的产品周期</h3>
+
+<p>Gurman 透露了一个令人兴奋的产品路线图：</p>
+<ul>
+  <li><strong>2026 秋</strong>：首款折叠屏 iPhone（"iPhone Ultra"），预计 $2,000+，搭载 2nm A20 Pro 芯片</li>
+  <li><strong>2027 春</strong>：iPhone Air 2——更好的电池续航、双摄像头、$999 价位</li>
+  <li><strong>2027 秋</strong>：iPhone 20 周年纪念版——完全重新设计，曲面玻璃，更窄边框，第二款折叠屏</li>
+</ul>
+
+<p>iOS 27 还有一个有趣的细节：它将支持<strong>多设备单号同步</strong>——一个手机号码可以在两台 iPhone 间同步。这或许暗示苹果认为未来用户可能同时拥有多台 iPhone（一台日常用、一台周末用？）。</p>
+
+<p>在 XR 领域，Gurman 的判断同样犀利：Vision Pro 已被"冻结"——Vision Pro 2 和 Vision Air 均已取消，苹果正在从零开始重新设计一款全新的 MR 头显，预计 2028-2029 年。而真正的 AR 眼镜（带显示屏）要等到"本年代末或更晚"。</p>
+
+<h3>"台灯"项目：Apple Car 的遗产</h3>
+
+<p>一个令人意外的消息：苹果正在开发一款带机械臂的桌面机器人，内部称之为"台灯"。这款产品将于 2028 年发布，由 Kevin Lynch 领导——这位高管曾负责 Apple Watch 软件，后来接管了整个 Apple Car 项目。"台灯"项目实际上是 Apple Car 的 AI 和机械技术遗产。</p>
+
+<p>Gurman 还透露苹果正在开发一个智能家居显示屏（最早 2026 年底发布），具备面部识别、个性化 Siri、FaceTime 和智能家居控制功能。"想象一下，你走到它面前，它认出你，拉出你所有的东西——日历、音乐、提醒事项。这款产品会大卖。"</p>
+
+<h2>五、Cursor + SpaceX + Origin：Agent 原生基础设施的诞生</h2>
+
+<p>Merrill Lutsky（Graphite 联合创始人，现 Cursor 团队成员）带来了本期最具前瞻性的故事：在 Cursor 被 SpaceX 收购的背景下，团队发布了 Origin——为 Agent 时代从零设计的 Git 基础设施。</p>
+
+<div class="quote-block q-blue">
+"软件开发工具链的每一环——Git、CI、代码审查——都是为'人类写每一行代码'的世界设计的。当 Agent 产生的代码量指数级增长时，这些基础设施正在崩塌。"
+<span class="attribution">— Merrill Lutsky，Graphite/Cursor</span>
+</div>
+
+<p>Origin 的设计哲学是激进的：它不仅是一个更快的 Git。它存储 Agent 的追踪记录、操作历史、推理过程——"你不再需要在一开 PR 后 Agent 就消失。Agent 可以自己处理 Review、解决 CI 失败、修复合并冲突。"</p>
+
+<p>Lutsky 透露了一个关键数据：团队现在"每小时数千次 push"，而以前是"几十到几百次"。Origin 的内部压力测试显示可以处理"80 个 clone 和 22 个 push 每秒，零宕机"。但更重要的是愿景层面的转变——Origin 的目标是实现"<strong>全自动驾驶的 PR</strong>"：从代码生成到部署上线，在很多情况下<strong>无需人类干预</strong>。</p>
+
+<p>AWS 的 Swami Sivasubramanian 从另一个角度补充了这个图景。他指出，整个行业过度关注"写代码的 Agent"，却忽视了代码写完之后的问题："代码量 10 倍增长，部署速度还是 1 倍——<strong>一切都会变成技术债务。</strong>这就是为什么我们需要把代码生成、部署、渗透测试全部 Agent 化。"</p>
+
+<h2>六、M13 与 VC 的权力游戏</h2>
+
+<p>Carter Reum 是 M13 的联合创始人。他的公司刚庆祝了十周年，最著名的战绩是以 $150 亿估值投资 SpaceX，并在十年后收获了 150 倍回报。</p>
+
+<div class="quote-block q-yellow">
+"每张支票的基础情况必须能返还基金的一半。你需要 3-5 个 $30-50 亿的公司，然后祈祷其中有一个是下一个 SpaceX。"
+<span class="attribution">— Carter Reum，M13</span>
+</div>
+
+<p>Reum 的 VC 哲学有几个独特之处。首先，M13 几乎所有人都是运营背景出身——"只有一个前 VC 出身的人"。其次，公司设有一个"推进团队"——前运营商不在董事会上给建议，而是直接进入被投公司填补人才、数据、增长等能力缺口。第三，他们极度重视年轻人——"你需要那个 22 岁的斯坦福退学生来发现下一个独角兽。GP 不可能在晚餐时遇到他。"</p>
+
+<p>本期节目中有一个有趣的辩论：今天的 VC 到底该怎么排名？传统的"Midas List"衡量的是回报，但 TBPN 的主持人指出，创始人最关心的是"如果我在 A 轮拿到 10 张 Term Sheet，我会选谁？"——这是一个完全不同的排序维度。Sequoia 的"非创始人友好"反而成了一种差异化——有创始人说："我需要他们逼我更努力。如果我不够好，他们会炒掉我——这正是我需要的。"</p>
+
+<p>关于即将到来的 SpaceX IPO，Reum 做出了一个独特的判断："当 OpenAI 和 Anthropic IPO 时，VC 会赚很多钱——但那些 LP 是大学捐赠基金和养老基金。<strong>SpaceX 不一样——它的股东是每一个在乡村俱乐部、Burning Man 和 YPO 的人。</strong>有人赚了 300 万，有人赚了 1 亿，有人赚了 10 亿。这场财富海啸是史无前例的。"</p>
+
+<h2>七、企业 AI：从原型到生产</h2>
+
+<p>Swami Sivasubramanian 在 AWS 工作了 20 年，他的实习项目是构建 Amazon DynamoDB。现在他是 Agentic AI 的 VP，负责推动全球企业从"AI 原型"走向"AI 生产"。</p>
+
+<div class="quote-block q-green">
+"我们一直相信没有单一模型能统治世界。这在当时不是主流观点，但现在看来太明显了。Q1 单季 Bedrock 的请求量超过了之前所有年份的总和。"
+<span class="attribution">— Swami Sivasubramanian，AWS</span>
+</div>
+
+<p>Swami 描述了一个企业 AI 应用的关键转折点。在 Amazon 内部，第一阶段是"让每个人都熟悉工具"——广泛试用。第二阶段则是"每个 VP 的团队都要跟踪用量和成本"——你花了多少 Token？产出了什么？</p>
+
+<p>他透露了一个非常具体的数据点：Amazon 内部的"前沿团队"实现了 10x-20x 的生产力提升，但他们的月度 Token 花费仅有 $2,000-3,000。"这根本不算什么。"</p>
+
+<p>SWA 在 Agentic AI 领域的两个新产品也值得关注：<strong>Quick Autonomous Agent</strong> 能跨工具收集上下文，"在你休假的时候也在工作"；<strong>Continuum</strong> 将安全 Agent 化——"像抗体对抗病毒一样持续运行，不是一次性检查，而是永不停止。"GoDaddy 已经用 Quick Agent 节省了 15,000 小时的人工工作。</p>
+
+<h2>八、新闻业的 AI 防线</h2>
+
+<p>Eric Newcomer 是 Newcomer 新闻信的创始人。他从地方报纸实习一路做到 Bloomberg 六年，然后出来独立创业。他的新闻哲学有一个耐人寻味的标签：<strong>"逆向乐观主义"</strong>。</p>
+
+<div class="quote-block q-orange">
+"我刚做科技记者时，行业的问题是大家都太乐观了。到了离开 Bloomberg 时，政治记者们又在死盯 Facebook。我只想为真正理解硅谷的人写作——不需要解释 Marc Andreessen 和 Bill Gurley 是谁。"
+<span class="attribution">— Eric Newcomer</span>
+</div>
+
+<p>Newcomer 对 AI 的威胁有着清醒的认识，但没有恐慌。"已经有人在用 AI 写 Substack 了——一个明显在用 AI 写稿的人排名比我还高。但我认为来自真实人类的<strong>独家新闻</strong>是最强的护城河——群聊、DMs、线下对话中流动的信息，AI 进不去这些地方。"</p>
+
+<p>他也坦然承认 AI 在日常工作中的辅助价值："我会把稿件过一遍 Claude，它能抓到 'million/billion' 这种低级错误。我不确定如果 AI 能写出比我更好的第五段第三句话，我不去用它是不是对读者更好。"</p>
+
+<p>Newcomer 的收入模型也是行业的一个样板：活动赞助第一，订阅第二，广告第三。三重收入流同时运转，这种多元化在新媒体领域是反直觉的——大多数人只会赌其中一种模式。</p>
+
+<h2>九、品味能被编码吗？Taste Labs 引发的论战</h2>
+
+<p>前 Exa AI Labs 创始团队成员推出 Taste Labs，声称要"终结 AI 垃圾美学"，在 24 小时内获得百万浏览并引发了硅谷的激烈争论。</p>
+
+<p>TBPN 的主持人精准地捕捉了这场争论的核心张力。一方面是"品味疲劳"——"过去一年，'品味'成了硅谷的口头禅：当 AI 能做所有技术活的时候，剩下的就是品味。人们已经听腻了。"另一方面是真实的市场需求——AI 生成的设计确实有明显的"AI 感"，vibe code 项目的界面一眼就能认出来，而 AI Lab 和超大规模云厂商都在花钱解决这个问题。</p>
+
+<div class="quote-block q-red">
+"品味一旦被复制就不再是品味。SquareSpace 让每个人都能有漂亮的网站，但也让这些网站看起来都一样了。Linear 有极高的产品品味 → 被整个行业模仿 → 原创性消失了。"
+<span class="attribution">— TBPN 主持人，论品味悖论</span>
+</div>
+
+<p>还有一个有趣的维度：圈外人嘲笑硅谷根本没资格谈"品味"——一个以连帽衫、Allbirds 和效率至上闻名的社区，谈什么审美？Mansory 改装的特斯拉 Model 3——"我想要实用，但我也想看起来好看"——成了硅谷品味的完美隐喻："在垃圾基础模型上，用 Fine-tuning 把品味灌进去。"</p>
+
+<p>主持人的判断是务实而冷酷的：Taste Labs 短期内肯定能赚钱——"他们的 Pipeline 可能在过去 24 小时爆炸了。AI Lab、超大规模云厂商都在为这个问题花钱。但五年后呢？像这个赛道里的很多公司一样，非常不确定。"</p>
+
+<h2>十、Bland：搞砸了会死人的 AI 电话</h2>
+
+<p>Isaiah Granet 的 Bland 刚刚完成 $50M 融资（Dell + HubSpot 参投）。Bland 解决的问题是语音 AI 中最困难、最不受关注的那部分：不是"我的订单在哪"这种简单查询，而是"搞砸了会有人起诉或者死人"的复杂客服电话。</p>
+
+<p>Granet 描述了一个现实场景：大型银行要求 AI 在每一通电话前朗读 1.5 分钟的合规声明——"在 AI 跟用户说话之前，用户必须听完 1.5 分钟的声明。"而在另一端，为 90 岁患者做远程监控的 AI 必须听完孙辈的故事才能进入正题——"这是绕不过去的人性需求。"</p>
+
+<p>Bland 不使用 OpenAI——他们自训模型。Granet 透露，进入这个市场的时间窗口仍然很大："语音 AI 的竞争远没有 Coding Agent 那么激烈。美国每年 $2,500 亿的呼叫中心支出，这个市场才刚刚开始被 AI 渗透。"他们也以一种极富创意的方式做营销——买下了 Soulja Boy 的声音版权，"大部分的 CIO 在高中时正是 Soulja Boy 的粉丝。"</p>
+
+<h2>十一、Crosby：AI 律师谈判基准测试</h2>
+
+<p>Ryan Daniels 的 Crosby 发布了首个完整模拟律师谈判过程的 AI 基准测试。测试让多个资深律师以相同立场进行谈判，然后观察他们之间的分歧程度——结果发现越到谈判后期，律师之间的决策差异越大，证明了"谈判没有正确的标准答案"。</p>
+
+<div class="model-grid">
+  <div class="model-card" style="background:#eff6ff;"><div>GPT 5.5</div><div class="score" style="color:#1d4ed8;">50.5</div><div style="font-size:0.7rem;opacity:0.6;">最高分</div></div>
+  <div class="model-card" style="background:#f0fdf4;"><div>Fable 5</div><div class="score" style="color:#15803d;">47.3</div><div style="font-size:0.7rem;opacity:0.6;">仅一次测试*</div></div>
+  <div class="model-card" style="background:#fef2f2;"><div>Opus 4.8</div><div class="score" style="color:#dc2626;">44.4</div><div style="font-size:0.7rem;opacity:0.6;">第四名</div></div>
+  <div class="model-card" style="background:#fefce8;"><div>Gemini 3.5 Flash</div><div class="score" style="color:#ca8a04;">45.1</div><div style="font-size:0.7rem;opacity:0.6;">第三名</div></div>
+</div>
+
+<p>最有价值的发现不是分数本身，而是模型的行为模式：<strong>所有模型都太倾向于说 "Yes"</strong>。"为了推进交易而接受对方条款——这不是好律师。好律师知道怎么让对方觉得自己赢了，同时保护客户利益。"</p>
+
+<p>但 Daniels 也指出，定制化的 Harness（专门针对 Word 文档编辑做了优化）和模型的后训练（"判断力"和"推理过程"的训练）可以大幅提升表现。而且从商业角度看，Token 成本根本不是问题——"只要支出低于 $1,000/小时的律师费率，都是好生意。"</p>
+
+<h2>十二、Midjourney 硬件：一个没有泄露的产品</h2>
+
+<p>本期节目还穿插了对 Midjourney 硬件发布的期待。David Holz（Midjourney 创始人，前 Magic Leap 联合创始人）计划在当晚 6PM 发布首款硬件。令人惊讶的是，<strong>至今没有任何泄露</strong>——"在硬件行业，这极为罕见。"</p>
+
+<p>已知的信息有限：硬件工程负责人来自 Apple Vision Pro 团队，产品已研发数年，据 Mark Gurman 得到的消息，产品"体积较大"——可能排除头戴设备。最可能的猜测是某种本地计算设备，面向专业创作者。</p>
+
+<p>与 Snap 形成鲜明对比的是，Midjourney 是私有公司。"没有成千上万的亏钱股东——纯粹的上行空间。硬件很难，但越多尝试越好。"</p>
+
+<h2>核心金句</h2>
+
+<div class="quote-block q-blue">
+"我写下了'逆向乐观主义'——我只想为真正理解硅谷的人写作。有时正面，有时负面，不迎合任何一种预设立场。"
+<span class="attribution">— Eric Newcomer</span>
+</div>
+
+<div class="quote-block q-green">
+"软件开发工具链的每一环都是为了'人类写每一行代码'的世界设计的。当 Agent 产生的代码量指数级增长时，这些基础设施正在崩塌。"
+<span class="attribution">— Merrill Lutsky</span>
+</div>
+
+<div class="quote-block q-yellow">
+"每张支票的基础情况必须能返还基金的一半。你需要 3-5 个 $30-50 亿的公司，然后祈祷其中有一个是下一个 SpaceX。"
+<span class="attribution">— Carter Reum</span>
+</div>
+
+<div class="quote-block q-purple">
+"95% 的人不需要在 iPhone 上装 ChatGPT——Siri AI 预装后就够用了。就像你可以下载更好的浏览器，但 Safari 对大多数人来说已经足够。"
+<span class="attribution">— Mark Gurman</span>
+</div>
+
+<div class="quote-block q-orange">
+"我们想先做出 AR 的 iPod，再谈 AR 的 iPhone。你需要一个轻量、好看的形态，人们才愿意每天都戴着它。"
+<span class="attribution">— Thomas Suarez</span>
+</div>
+
+<div class="quote-block q-red">
+"品味一旦被复制就不再是品味。SquareSpace 让每个人都能有漂亮的网站，但也让这些网站看起来都一样了。"
+<span class="attribution">— TBPN 主持人</span>
+</div>
+
+<footer>
+  <p>原文来源：<a href="https://share.transistor.fm/s/e959c3d4">TBPN — Snap Specs, Taste, Midjourney Hardware</a></p>
+  <p style="margin-top:0.5rem;">由 PodDeck 生成 · 2026-06-17</p>
+</footer>
+
+</article>
+</body>
+</html>

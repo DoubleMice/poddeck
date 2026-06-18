@@ -1,11 +1,11 @@
 source: risky-business
-refreshed_at: 2026-06-18T04:38:36.191Z
+refreshed_at: 2026-06-18T18:53:25.826Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 3
-done: 0
+done: 1
 pending: 0
-needs_transcript: 3
+needs_transcript: 2
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -31,8 +31,12 @@ episodes:
 
 
       This episode is also available on Youtube.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-18T19:00:15.700Z
+    transcript_job_id: 0729c166c31e42a08f0f2367e4819a07,a7c27263520e46d2b4eef1de3816e0f3
+    transcript_completed_at: 2026-06-18T19:01:52.009Z
   - id: soapbox104
     guid: https://risky.biz/soapbox104/
     title: "Risky Biz Soap Box: The lethal trifecta of AI risks"

@@ -1,10 +1,10 @@
 source: sv101
-refreshed_at: 2026-06-18T04:38:36.213Z
+refreshed_at: 2026-06-18T18:53:25.846Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 3
-done: 0
-pending: 3
+done: 1
+pending: 2
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -124,7 +124,7 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 华祯豪Troy, 叶天奇, and 知县.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 0b4e3f99d29c423f953c490f5522622a,90e8074b156b4dd0856be867398a0898,695abbf4ec86437c8ad68ba895f331a0,439431013dbf42299bf349c70f81bdd8,f631129e7b644e4d89a2c2b9189693ec,34a1e9681be44a27b90a433a43bacafa

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白名单，十年后终于又酷了 — Airlock Digital 创始人深度对谈</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a2e;
+  background: #fafbfc;
+  padding: 2rem 1rem;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+@media (max-width: 600px) {
+  body { padding: 1rem 0.5rem; font-size: 16px; }
+  article { padding: 1.5rem 1rem; border-radius: 8px; }
+}
+header { text-align: center; margin-bottom: 2.5rem; }
+header h1 { font-size: 1.8rem; font-weight: 800; line-height: 1.3; margin-bottom: 0.5rem; }
+header .meta { font-size: 0.9rem; color: #666; }
+header .meta span { margin: 0 0.5rem; }
+header .meta a { color: #1971c2; text-decoration: none; }
+header .meta a:hover { text-decoration: underline; }
+.divider { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+h2 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; color: #111; }
+h2:first-of-type { margin-top: 0; }
+h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: #222; }
+p { margin-bottom: 1rem; }
+p.lead { font-size: 1.05rem; color: #444; }
+
+/* Topic cards */
+.topic-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1.5rem 0; }
+@media (max-width: 500px) { .topic-cards { grid-template-columns: 1fr; } }
+.topic-card { padding: 1rem 1.1rem; border-radius: 8px; font-size: 0.92rem; line-height: 1.5; }
+.topic-card.full { grid-column: 1 / -1; }
+.topic-card strong { display: block; margin-bottom: 0.2rem; font-size: 0.95rem; }
+.topic-card span { color: #555; }
+.card-blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.card-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+
+/* Content sections */
+.section-card {
+  padding: 1.2rem 1.3rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+/* Quote blocks */
+blockquote {
+  margin: 1.2rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+blockquote.q-blue  { background: #eff6ff; border-left: 4px solid #3b82f6; }
+blockquote.q-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+blockquote.q-orange{ background: #fff7ed; border-left: 4px solid #f97316; }
+blockquote.q-purple{ background: #faf5ff; border-left: 4px solid #a855f7; }
+blockquote.q-yellow{ background: #fefce8; border-left: 4px solid #eab308; }
+blockquote .attr { display: block; margin-top: 0.5rem; font-size: 0.78rem; font-style: normal; color: #888; }
+
+/* Grids */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
+@media (max-width: 500px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+/* Quotes section */
+.quotes-section { margin: 2rem 0; }
+.quotes-section .q-item { padding: 0.9rem 1.1rem; border-radius: 8px; margin-bottom: 0.6rem; font-size: 0.93rem; line-height: 1.5; }
+.quotes-section .q-item .q-text { font-style: italic; }
+.quotes-section .q-item .q-context { display: block; margin-top: 0.35rem; font-size: 0.78rem; font-style: normal; color: #888; }
+
+/* Footer */
+footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb; text-align: center; font-size: 0.82rem; color: #999; }
+footer a { color: #1971c2; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* Comparison table */
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+.compare > div { padding: 1rem 1.2rem; font-size: 0.9rem; line-height: 1.5; }
+.compare .bad  { background: #fef2f2; }
+.compare .good { background: #f0fdf4; }
+.compare .hdr  { font-weight: 700; font-size: 0.95rem; text-align: center; padding: 0.7rem; }
+.compare .bad.hdr  { background: #fecaca; }
+.compare .good.hdr { background: #bbf7d0; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>白名单，十年后终于又酷了</h1>
+  <div class="meta">
+    <span>Risky Biz Soap Box</span>
+    <span>·</span>
+    <span>2026 年 3 月</span>
+    <span>·</span>
+    <span>嘉宾：Dave Cottingham &amp; Daniel Schell</span>
+  </div>
+  <div class="meta" style="margin-top:0.25rem">
+    <span>Airlock Digital 联合创始人</span>
+    <span>·</span>
+    <span>主持：Patrick Gray</span>
+    <span>·</span>
+    <span>约 27 分钟</span>
+  </div>
+</header>
+
+<p class="lead">
+在端点安全这个拥挤到窒息的市场里，有一家澳大利亚公司做了 12 年、服务了 20 万端点的客户——
+却几乎没有真正的竞争对手。<strong>Airlock Digital</strong> 的故事不是一个"我们发现了零日漏洞"的传奇，
+而是一个关于耐心、工程深度和反向思维的故事：在所有人都在追逐最新威胁手法的时候，
+他们选择了一条更慢但更彻底的路——让攻击者连代码都执行不了。
+</p>
+
+<hr class="divider">
+
+<h2>为什么这期值得关注</h2>
+
+<div class="topic-cards">
+  <div class="topic-card card-blue">
+    <strong>没有 LLM 的智能推荐</strong>
+    <span>Airlock 用决策树 + VirusTotal 做出了 95%+ 准确率的 AutoTrust 推荐引擎，刻意绕开了大语言模型</span>
+  </div>
+  <div class="topic-card card-green">
+    <strong>12 年几乎零竞品</strong>
+    <span>跨平台白名单代理的技术壁垒有多高？为什么没人能快速复制？</span>
+  </div>
+  <div class="topic-card card-orange">
+    <strong>阻断执行，而非检测行为</strong>
+    <span>MSBuild、ClickOnce、VSTO — 直接让攻击者的工具链失效，而非在末端抓恶意软件</span>
+  </div>
+  <div class="topic-card card-purple">
+    <strong>白名单是策略，不是产品</strong>
+    <span>安全行业卖的是"装了就好"，Airlock 卖的是管理和生命周期——这是根本不同的商业逻辑</span>
+  </div>
+  <div class="topic-card card-yellow full">
+    <strong>市场拐点已到</strong>
+    <span>从"白名单只能在 ATM 上用"到"20 万端点全量 enforcement"，认知彻底变了。合规标准是最大推手</span>
+  </div>
+</div>
+
+<hr class="divider">
+
+<h2>一次争论引发的 AutoTrust</h2>
+
+<p>
+故事始于几个月前的一次对话。主持人 Patrick Gray 提出了一个直白的问题：Airlock 已经有一个中央控制台管理所有端点的白名单，
+<strong>为什么不用 AI 来自动化这些决策？</strong> Dave 当时并不完全认同。但这场争论之后，Airlock 确实做出了一个推荐引擎——
+只是做了一个让很多人意外的选择：<strong>完全没有使用当代大语言模型</strong>。
+</p>
+
+<p>
+这个决定背后是深刻的工程判断。LLM 是非确定性的——同样的问题可能得到不同的回答。
+当你在管理一个白名单系统时，"可能"不是可接受的标准。一个错误的信任决策意味着恶意代码被执行，
+或关键业务软件被误拦。"你没法把白名单的控制权交到一个可能'发疯'的模型手里，"Dave 在访谈中解释道。
+</p>
+
+<p>
+替代方案出人意料地优雅：利用客户环境内部的静态数据（执行频率、发布者签名、文件哈希），
+结合 VirusTotal 的外部威胁情报，通过<strong>决策树和规则引擎</strong>进行优先级排序。
+不是让 AI 替你思考，而是把你需要的信息递到你面前，让你自己做决定——
+或者在低风险场景下，让系统自动执行。
+</p>
+
+<blockquote class="q-blue">
+"It's non-deterministic — when you're putting it in charge of an allow list…"
+<span class="attr">— Dave Cottingham，解释为什么不能让 LLM 直接管理白名单</span>
+</blockquote>
+
+<h2>95%+ 准确率，无需"计算机之神"</h2>
+
+<p>
+这个方案的准确率是多少？Dave 给出的数字是 <strong>95% 到 97%</strong>——而且这是在完全不依赖 LLM 的前提下实现的。
+核心洞察在于：Airlock 不是要替全世界所有客户做全局信任判断（Dave 称之为"无限规模问题"）。
+每个客户了解自己的运营环境，天然就有更高的判断门槛。
+</p>
+
+<p>
+Daniel 补充了一个关键点：Airlock 把自身和客户的十年教训编码进了规则引擎。
+这些不是从威胁报告中读到的理论知识，而是亲眼看着客户一个个踩过的坑——
+<strong>不要信任 PowerShell 作为可信进程、警惕 LOLBins（系统自带工具被滥用）、不要只检查文件扩展名</strong>。
+每一个新客户都站在十年经验的肩膀上起步。
+</p>
+
+<div class="section-card card-blue">
+<strong>作者概括：</strong>AutoTrust 的设计哲学是"降低操作门槛"。Patrick 观察到，最坏的结果不是系统推荐了一个错误规则——
+而是客户永远达不到 enforcement 模式，白名单的主动保护从未真正生效。AutoTrust 的核心目标就是加速这个"从部署到 lock-down"的过程。
+</div>
+
+<blockquote class="q-green">
+"We can get ninety-five, ninety-seven percent of the way there just by taking this approach."
+<span class="attr">— Daniel Schell，说明基于内部数据+外部情报的决策树方案能达到的准确率</span>
+</blockquote>
+
+<h2>自然语言输出，但决策不用 LLM</h2>
+
+<p>
+访谈中 Dave 提到一个反直觉的细节：AutoTrust 的输出<strong>看起来很像 LLM 生成的内容</strong>——有自然语言的解释说明，
+告诉管理员"为什么系统推荐信任（或不信任）这个文件"。但从技术上，这完全是决策树产生的输出，然后用自然语言模板格式化。
+决策和解释是分离的：决策是确定性的，解释是描述性的。
+</p>
+
+<p>
+这种设计在当下的市场环境中尤为明智。Dave 坦承，目前企业对 AI 的态度两极分化，
+"有很大一部分人对 AI 持怀疑态度"。如果在白名单产品里加入一个"嘿，我能帮你什么？"的 AI 助手，
+反而可能成为销售的阻力。而用一个"看似 AI、实为规则"的系统，既提供了智能体验，又避免了信任问题。
+</p>
+
+<hr class="divider">
+
+<h2>阻断链，而非末端检测</h2>
+
+<p>
+这是整个访谈中最核心的战略差异。在端点安全行业，绝大多数厂商都在做同一件事：
+<strong>追踪最新的攻击手法，建立行为检测规则，在攻击发生后响应</strong>。这是永无止境的猫鼠游戏。
+攻击者改变一个环节，检测就可能失效。
+</p>
+
+<p>
+Airlock 的策略完全不同：<strong>不去看攻击树的末端，而是把攻击者沿路使用的工具本身拿掉</strong>。
+比如，攻击者经常在目标机器上用 MSBuild 即时编译 .NET 项目，直接在内存中生成可执行文件。
+Airlock 的做法不是检测"这个 MSBuild 编译出来的东西像恶意软件"——而是直接<strong>阻止 MSBuild 编译</strong>。
+</p>
+
+<blockquote class="q-orange">
+"Taking tooling off the table — breaking the chain rather than capturing it at the end."
+<span class="attr">— Dave Cottingham，描述 Airlock 阻断攻击链的策略</span>
+</blockquote>
+
+<div class="grid-3">
+  <div class="section-card card-red">
+    <strong>MSBuild</strong><br/>
+    <span style="font-size:0.85rem">阻止攻击者在目标机器上即时编译 .NET 项目，直接在内存中生成可执行文件</span>
+  </div>
+  <div class="section-card card-orange">
+    <strong>ClickOnce</strong><br/>
+    <span style="font-size:0.85rem">阻止利用微软打包机制 sideload 恶意代码——客户主动联系后才发现 Airlock 早已支持</span>
+  </div>
+  <div class="section-card card-yellow">
+    <strong>VSTO 插件</strong><br/>
+    <span style="font-size:0.85rem">Office 插件被武器化作为代码执行入口——Airlock 直接拦截这类执行路径</span>
+  </div>
+</div>
+
+<p>
+现代攻击者的手法越来越复杂：VB Script 调用 Batch 文件，Batch 文件下载 DLL，DLL 注入内存执行，
+最终下载载荷——每一步都在尝试绕过行为检测。但在 Airlock 看来，<strong>每一步都是一次代码执行，
+每一步都可以被阻断</strong>。攻击者只需找到一个 EDR 看不到的路径；白名单一旦堵住所有执行点，就永远有效。
+</p>
+
+<h2>为什么不需要检测规则？</h2>
+
+<p>
+Patrick 直接问了一个尖锐的问题："你们有没有抵制住诱惑，不在产品里加检测功能？"
+Dave 的回答毫不含糊：<strong>不，我们没有加检测</strong>。他们关注的是攻击树上的"有趣的技术"——
+那些让攻击成为可能的基础设施，而不是攻击的最终结果。
+"我们是在打破攻击链，而不是在末端抓捕它。"
+</p>
+
+<hr class="divider">
+
+<h2>12 年，几乎没有竞品</h2>
+
+<p>
+这可能是整个访谈中最让人困惑的一点。端点安全是一个数万亿美元的市场，白名单的概念并不新鲜——
+但为什么几乎没有人做 Airlock 在做的事？
+</p>
+
+<p>
+Daniel 的答案直截了当：<strong>"这非常难。你没法 vibe code 出来。"</strong> 构建一个真正的跨平台白名单代理意味着：
+</p>
+
+<ul style="margin:1rem 0 1rem 1.5rem; font-size:0.94rem; line-height:1.8;">
+  <li>Windows 从 XP 到 Win11，二十年的 API 变化和兼容性问题</li>
+  <li>Linux 多个发行版、不同内核版本的各种差异</li>
+  <li>macOS Intel 和 Apple Silicon 双架构支持</li>
+  <li>VDI 环境下的 IOPS 和内存约束——代理不能产生额外磁盘压力</li>
+  <li>成千上万个端点同时运行的性能开销控制</li>
+</ul>
+
+<blockquote class="q-purple">
+"You can't just vibe code this up. You know, you're doing... there's a huge part also on performance and architecture."
+<span class="attr">— Daniel Schell，解释为什么跨平台白名单代理不是新创公司能速成的</span>
+</blockquote>
+
+<p>
+Daniel 指出，有一些新兴的小竞争者确实在进入市场，但"他们真正只关注一个操作系统，或者只是做黑名单——
+即使他们自称在做应用控制。" PAM（特权访问管理）厂商也经常声称能做白名单，但这完全是不同的技术范畴。
+</p>
+
+<h2>白名单是策略，不是产品</h2>
+
+<p>
+Dave 说了一句可能是整个访谈中最深刻的观察。安全行业的绝大多数公司卖的是<strong>产品</strong>——
+"安装这个，你就安全了。"Airlock 卖的是让你在企业内部实施<strong>一种策略</strong>的产品。
+这不是语义游戏——它从根本上改变了销售方式、部署方式和客户关系。
+</p>
+
+<blockquote class="q-yellow">
+"The majority of the security industry sells a product, whereas we sell a product that allows you to implement a strategy inside your business."
+<span class="attr">— Dave Cottingham，解释 Airlock 与大多数安全厂商的根本不同</span>
+</blockquote>
+
+<div class="compare">
+  <div class="bad hdr">传统安全产品</div>
+  <div class="good hdr">Airlock 白名单策略</div>
+  <div class="bad">安装 → 完成。追逐最新威胁手法。检测到后响应。永远在追赶攻击者。</div>
+  <div class="good">评估 → 建规则 → 执行 → 持续管理。阻断执行机制本身。一开始就阻止，无需响应。攻击手法怎么变都依然有效。</div>
+</div>
+
+<p>
+Dave 承认，这个定位在 C-suite 层面的沟通上是一个挑战。"你不是在推销安全，你是在推销一种端点策略——
+这往往是端点领域里的一个子集。这就像一个'我们能不能在端点上做这个特定的子行业的事？'"
+但随着威胁格局变得越来越复杂，这种"慢但彻底"的策略正在获得越来越多的认可。
+</p>
+
+<hr class="divider">
+
+<h2>从"ATM 专用"到 20 万端点</h2>
+
+<p>
+白名单历史上背负着沉重的认知包袱。Daniel 回忆说，Airlock 成立时继承的市场偏见是：<strong>"白名单只能在 ATM 和静态信息亭上用"</strong>。
+在动态的最终用户计算环境中做白名单，被认为"根本不可能"。用 Daniel 的话说，他们花了大量时间"转化那些反对者"。
+</p>
+
+<p>
+最大的转折点来自<strong>合规标准</strong>。PCI-DSS、NIST、澳大利亚的 Essential Eight 等框架开始要求企业实施应用控制。
+客户不得不尝试白名单——然后发现这东西真的有效。Daniel 的标准回应变成了：
+</p>
+
+<blockquote class="q-blue">
+"When's the last time you tried? What did you try with? Can you explain how we've got customers with 200,000 endpoints under management and full enforcement in end-user computing dynamic environments?"
+<span class="attr">— Daniel Schell，面对"白名单不可能"质疑时的标准回应</span>
+</blockquote>
+
+<p>
+"零信任"概念的泛滥反而帮了 Airlock 的忙。虽然这个词被各种厂商用滥了，但"默认拒绝"的核心理念已经深入人心。
+"解释'不认识就不执行'变得越来越容易。"市场上甚至开始出现竞争者——Dave 对此表示欢迎，因为"你永远不想成为唯一一个在某个赛道上的人。"
+</p>
+
+<h2>企业工作流集成：从对抗 APT 到写 ServiceNow 集成</h2>
+
+<p>
+Patrick 讲了一个安全行业的老笑话：每个安全创业公司都是从"对抗中国 APT、让国家安全部哭泣"的宏大愿景开始的，
+<strong>最后总在写 ServiceNow 集成</strong>。Airlock 现在正处在这个阶段——而且 Dave 对此非常认真。
+</p>
+
+<p>
+白名单最大的障碍不是技术，而是流程：如何在对的时间、把对的信任、交给对的人，同时不影响业务生产力？
+答案是把信任决策嵌入到企业已有的工作流工具中：<strong>Microsoft Teams 审批、ServiceNow 工单、Slack 协作</strong>。
+Dave 特别强调，"有意思的是，我们集成的不是其他安全工具——而是业务生产力和工作流平台。这才是最大的推动因素。"
+</p>
+
+<h2>CEO → CPO：让美国人去打美国市场</h2>
+
+<p>
+Dave 最近做了一个创始人不太容易做出的决定：从 CEO 的位置上退下来，专注于首席产品官的角色。
+新任 CEO Kevin Dunn 驻扎在纽约——这是 Airlock 美国扩张战略的核心布局。
+Patrick 祝贺了 Dave："我认识很多创始人，当一家高速增长的软件初创公司的 CEO 并不是一件有趣的事。"
+</p>
+
+<p>
+Dave 的回应透露出一种解脱感："能专注于产品让我无比兴奋，这是我从一开始就在做的事。继续打造最好的产品，交付领先的功能，
+做一个'说到做到'的产品——这是首要目标。"在 Kevin 的运营领导下，Dave 终于可以全情投入到 Airlock 最深的护城河——产品本身。
+</p>
+
+<hr class="divider">
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+
+<div class="q-item card-blue">
+  <div class="q-text">"It's non-deterministic — when you're putting it in charge of an allow list…"</div>
+  <span class="q-context">Dave 解释核心决策：白名单系统需要确定性，LLM 不适合做这个决策者。</span>
+</div>
+
+<div class="q-item card-green">
+  <div class="q-text">"You can't just vibe code this up."</div>
+  <span class="q-context">Daniel 一语道破跨平台白名单代理的技术壁垒——12 年的工程积累，不是 AI 辅助编码能快速复制的。</span>
+</div>
+
+<div class="q-item card-orange">
+  <div class="q-text">"Taking tooling off the table — breaking the chain rather than capturing it at the end."</div>
+  <span class="q-context">Dave 总结 Airlock 的安全哲学：不让攻击者的工具运转，而非在攻击末端做检测。</span>
+</div>
+
+<div class="q-item card-purple">
+  <div class="q-text">"The majority of the security industry sells a product, whereas we sell a product that allows you to implement a strategy."</div>
+  <span class="q-context">Dave 定义 Airlock 与 99% 安全厂商的根本差异：卖的是策略、管理和生命周期。</span>
+</div>
+
+<div class="q-item card-yellow">
+  <div class="q-text">"When's the last time you tried? What did you try with?"</div>
+  <span class="q-context">Daniel 面对"白名单不可能"质疑时的杀手锏——用 20 万端点的实际案例说话。</span>
+</div>
+
+<div class="q-item card-blue">
+  <div class="q-text">"We can get ninety-five, ninety-seven percent of the way there just by taking this approach."</div>
+  <span class="q-context">Daniel 说明 AutoTrust 在不使用 LLM 的情况下能达到的决策准确率。</span>
+</div>
+
+</div>
+
+<hr class="divider">
+
+<footer>
+  <p>本文基于 Risky Biz Soap Box 播客第 105 期整理。<br/>
+  完整音频请访问 <a href="https://risky.biz/SOAPBOX105/">risky.biz/SOAPBOX105/</a></p>
+  <p style="margin-top: 0.5rem;">嘉宾观点不代表本文立场。所有引言均经转录文本 grep 验证。</p>
+</footer>
+
+</article>
+</body>
+</html>

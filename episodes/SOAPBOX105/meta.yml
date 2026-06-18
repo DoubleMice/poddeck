@@ -1,0 +1,30 @@
+id: SOAPBOX105
+source: risky-business
+title: "Risky Biz Soap Box: It took a decade, but allowlisting is cool again"
+guest: "Dave Cottingham, Daniel Schell"
+guest_role: "Airlock Digital 联合创始人"
+published: 2026-03
+duration: 27m
+url: https://risky.biz/SOAPBOX105/
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+status: generated
+tags:
+  - startup
+  - product-management
+  - interview
+  - founder
+  - strategic
+  - quick-take
+summary: |
+  Airlock Digital 联合创始人 Dave Cottingham 和 Daniel Schell 深度对谈端点白名单策略。
+  讨论覆盖：为什么 AutoTrust 推荐引擎刻意不使用 LLM、12 年技术护城河如何形成、
+  白名单是"策略"而非"产品"的独特商业定位、以及合规标准如何推动市场拐点。
+core_ideas:
+  - 'AutoTrust：用决策树+VirusTotal实现95%+准确率，刻意不使用LLM——因为白名单需要确定性'
+  - 12年跨平台代理（Windows XP→Win11/Linux/macOS）构成技术护城河，不是可以"vibe code"出来的
+  - 安全行业卖的是产品，Airlock卖的是让你在组织内实施一种策略的产品——这是根本不同的商业逻辑
+  - 阻断执行机制而非检测行为：MSBuild/ClickOnce/VSTO等攻击工具直接失效
+  - 合规标准（PCI-DSS/NIST/Essential Eight）是白名单市场增长的最大推手
+  - 20万端点全enforcement客户案例证明了白名单在动态终端环境的可行性
+article_path: episodes/SOAPBOX105/article.html
+base: /episodes/SOAPBOX105/
