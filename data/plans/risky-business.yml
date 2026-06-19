@@ -1,42 +1,15 @@
 source: risky-business
-refreshed_at: 2026-06-18T18:53:25.826Z
+refreshed_at: 2026-06-19T04:40:08.783Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 3
-done: 1
+total_candidates: 2
+done: 0
 pending: 0
 needs_transcript: 2
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: SOAPBOX105
-    guid: https://risky.biz/SOAPBOX105/
-    title: "Risky Biz Soap Box: It took a decade, but allowlisting is cool again"
-    duration: 1645
-    published: Fri, 13 Mar 2026 10:12:14 +1100
-    published_sort: "20260312"
-    first_seen_at: 2026-05-19T08:55:24.848Z
-    url: https://risky.biz/SOAPBOX105/
-    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX105.mp3
-    image: https://risky.biz/static/img/rb-feed-main.png
-    summary: >-
-      In this Soap Box edition of the Risky Business podcast Patrick Gray sits down with Airlock Digital co-founders
-      Daniel Schell and David Cottingham to talk about the role AI models could play in managing enterprise allowlists.
-
-
-      They also talk about the durability of allowlisting as a control. After 12 years in business, the Airlock product
-      hasn’t really changed all that much. That’s a good thing! It also means the Airlock team have been able to spend
-      some time doing deep engineering instead of chasing the latest attacker TTPs and writing detection rules for them.
-
-
-      This episode is also available on Youtube.
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-18T19:00:15.700Z
-    transcript_job_id: 0729c166c31e42a08f0f2367e4819a07,a7c27263520e46d2b4eef1de3816e0f3
-    transcript_completed_at: 2026-06-18T19:01:52.009Z
   - id: soapbox104
     guid: https://risky.biz/soapbox104/
     title: "Risky Biz Soap Box: The lethal trifecta of AI risks"
