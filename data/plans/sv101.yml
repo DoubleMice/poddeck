@@ -1,10 +1,10 @@
 source: sv101
-refreshed_at: 2026-06-21T04:39:02.674Z
+refreshed_at: 2026-06-21T18:35:31.404Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
-pending: 2
+done: 1
+pending: 1
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -124,7 +124,7 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 亓鲁教授, 吕瀛杰, and 徐栋.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: cc3201f4412645f2bcfe2ea8e1835391,61128d61b01243e384a1ad9914510b4e,ba542a302de24ae9b15d928638b2efbb,dc5a59cab28c41b0a413dda5c68beab2,c2d3bf1149554d82aba11af9e5082f13

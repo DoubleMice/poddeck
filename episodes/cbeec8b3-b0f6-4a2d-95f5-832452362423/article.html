@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E223｜应用爆发之年：聊聊模型技术进化与商业化 — 硅谷101</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a2e;
+  background: #fafbfc;
+  padding: 0;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+header { margin-bottom: 40px; border-bottom: 2px solid #e2e8f0; padding-bottom: 24px; }
+h1 { font-size: 28px; font-weight: 700; line-height: 1.35; color: #0f172a; margin-bottom: 8px; }
+.meta { font-size: 14px; color: #64748b; display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 12px; }
+.meta span { background: #f1f5f9; padding: 2px 10px; border-radius: 12px; }
+h2 { font-size: 22px; font-weight: 700; margin: 40px 0 16px; color: #0f172a; border-left: 4px solid #1971c2; padding-left: 14px; }
+h3 { font-size: 18px; font-weight: 600; margin: 24px 0 10px; color: #334155; }
+p { margin: 12px 0; }
+.overview { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0 32px; }
+.overview-card { padding: 16px; border-radius: 8px; font-size: 15px; line-height: 1.55; }
+.overview-card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+.card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0; }
+.card-grid .card { padding: 16px; border-radius: 8px; font-size: 15px; line-height: 1.55; text-align: center; }
+.card-grid .card .num { font-size: 32px; font-weight: 700; margin: 4px 0; }
+blockquote {
+  margin: 16px 0;
+  padding: 14px 18px;
+  border-left: 4px solid #3b82f6;
+  background: #eff6ff;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  font-size: 16px;
+}
+blockquote .attr { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #64748b; }
+.quotes-section { margin: 32px 0; }
+.quotes-section .quote-item { padding: 14px 18px; border-radius: 8px; margin: 10px 0; font-size: 16px; font-style: italic; }
+.quotes-section .quote-item .attr { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #64748b; }
+.gloss { font-size: 14px; color: #64748b; font-style: italic; }
+.compare { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 16px 0; }
+.compare-box { padding: 16px; border-radius: 8px; font-size: 15px; line-height: 1.55; }
+.compare-box h3 { margin-top: 0; font-size: 16px; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e2e8f0; font-size: 14px; color: #94a3b8; }
+footer a { color: #3b82f6; text-decoration: none; }
+@media (max-width: 640px) {
+  article { padding: 24px 16px 40px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 19px; }
+  .overview { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+  .compare { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>E223｜应用爆发之年：聊聊模型技术进化与商业化</h1>
+  <div class="meta">
+    <span>硅谷101</span>
+    <span>2026年1月</span>
+    <span>主持：洪君</span>
+    <span>时长：1h7m</span>
+  </div>
+  <div class="meta" style="margin-top:6px;">
+    <span>嘉宾：徐栋（阿里云千问大模型业务总经理）</span>
+    <span>刘靖康（影石科技CEO）</span>
+    <span>齐露（360研究院总监）</span>
+    <span>吕总（语义科技CEO）</span>
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得关注</h2>
+  <p>两年前聊大模型，大家还觉得模型有这样那样的问题，离真实应用很远。而今天，手机里几乎人人都有一个AI助手。基础模型能力在很多场景已经"够用了"，传统企业开始大规模拥抱AI，AI native创业公司在碎片化市场中找到了极佳的ROI。</p>
+  <p>这期播客邀请了四位嘉宾——从模型厂商（阿里千问）到应用层（Insta360、语义科技），从技术进化与商业化两条线索，勾勒出2025-2026年AI产业的真实图景。</p>
+
+  <div class="overview">
+    <div class="overview-card card-blue">
+      <strong>视频生成进入生产化</strong>
+      从5秒到15秒+，镜头切换、光影变换、角色保ID——视频模型从娱乐走向短剧、广告的批量生产管线。
+    </div>
+    <div class="overview-card card-green">
+      <strong>推理成本半年降一个量级</strong>
+      模型稀疏化、芯片垂直设计、云调度优化——三重驱动让推理成本每半年降约10倍。
+    </div>
+    <div class="overview-card card-yellow">
+      <strong>Agent从概念走向落地</strong>
+      推理能力+指令遵循+长上下文+工具调用——四个能力叠加，让Agent从单次对话走向持续自主运行。
+    </div>
+    <div class="overview-card card-purple">
+      <strong>开源生态的飞轮效应</strong>
+      千问从0.5B到235B全覆盖，7B模型打开全球格局，开源与闭源形成商业正循环。
+    </div>
+    <div class="overview-card card-orange">
+      <strong>端云结合的新范式</strong>
+      Omni 4B端侧模型进入手机和车厂，约70%通用交互任务可在端侧解决，隐私与低延迟的新架构。
+    </div>
+    <div class="overview-card card-red">
+      <strong>AI商业化的中国路径</strong>
+      从效果→性能→成本的三阶段需求演进；从降本到增效的范式转移；Token计费改变To B SaaS付费逻辑。
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>视频生成：从娱乐工具到生产管线</h2>
+  <p>如果要用一句话概括2025年视频生成模型的进化，徐栋给出的类比非常精准：<strong>以万象（WanXiang）为代表，视频生成模型已经来到了"GPT-4时刻"</strong>——从"能用"跨入了"能在生产中用了"。</p>
+
+  <p>过去视频生成模型的应用集中在特效和娱乐，视频长度只有5到10秒，镜头单一，生成依赖"抽卡"，可控性差。而现在，视频长度已经进入15秒时代（并向1分钟迈进），支持多镜头切换和复杂的光影变换，最重要的是——通过输入参考视频，可以实现角色保ID，让形象和声音在连续创作中保持一致。用徐栋的话说，这是"希望从15秒进一步能延长，镜头的切换、光影的变化都是专业导演需要配合摄像、美术等不同角色一起来做的，这些能力通过模型有可能让门槛变得更低"。</p>
+
+  <p>这些技术突破直接催生了两个商业爆发点：AI漫剧和自动化广告。</p>
+</section>
+
+<section>
+  <h2>AI漫剧：短剧市场的范式转移</h2>
+  <p>国内短剧市场已经超过了电影市场。过去短剧依赖真人拍摄和大量人工编辑，成本高、周期长。而AI漫剧从"动态漫"（图片微动效果）起步，如今已全面拥抱AI生成，商业化的能力非常强。</p>
+
+  <p>根据徐栋提供的数据：一部短剧按品质分S/A/B级，在合理成本下，<strong>AI可以将制作成本压到两万元以下</strong>，算上投流后的ROI可以打正。品质要求更高的精品化路线则需要更多后期制作投入。但关键的变化是：<strong>AI不是在取代创意，而是在降低创意的门槛。</strong></p>
+
+  <blockquote>
+    "漫剧已经成为一个非常跟AI结合的一个事实了。"
+    <span class="attr">—— 徐栋，阿里云千问大模型业务总经理</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>广告自动化：5人团队日产6000条</h2>
+  <p>广告生成领域的变化更为剧烈。一条15秒的合格广告，传统市场价格在<strong>25到50元</strong>之间，而AI生成的成本可以控制在<strong>10元到15元</strong>以下。当一个5到10人的团队将万象模型和千问模型结合成管线后，一天可以生成<strong>6000条广告</strong>。</p>
+
+  <div class="card-grid">
+    <div class="card card-red">
+      <div class="num" style="color:#dc2626;">25-50元</div>
+      <div>传统模式<br>一条15秒广告</div>
+    </div>
+    <div class="card card-green">
+      <div class="num" style="color:#16a34a;">10-15元</div>
+      <div>AI模式<br>一条15秒广告</div>
+    </div>
+    <div class="card card-orange">
+      <div class="num" style="color:#ea580c;">6000条/天</div>
+      <div>5-10人团队<br>使用AI管线的产能</div>
+    </div>
+  </div>
+
+  <p>一个新的产业分工正在形成：广告主→agency→AI native创业公司（负责AI生成）→流量平台。徐栋观察到，<strong>专门做AI生成广告的创业公司越来越多</strong>，它们承接agency或广告主的需求，用模型管线批量生产。</p>
+</section>
+
+<section>
+  <h2>语言模型：看不见的范式，看得见的进步</h2>
+  <p>与视频生成模型的"显性突破"不同，语言模型在2025年经历的变化更为「精耕细作」——虽然很难再看到像o1推理模型那样的"范式突变"，但在三个方向上的持续积累正在产生深远的影响。</p>
+
+  <p><strong>第一个方向是数据精细化。</strong>高质量数据集越来越少，但如何利用好现有数据——从不同角度、不同顺序做训练——让模型在corner case上的表现越来越好。这已经成为每个模型公司的基本功。</p>
+
+  <p><strong>第二个方向是模型稀疏化和MTP（多token预测）。</strong>稀疏化的模型结构让TPS从30-50提升到80-100以上，首包延迟从2秒降到500毫秒以内成为可能。更重要的是，稀疏化同时带来了成本的大幅下降。徐栋分享了一个具体案例：2025年底发布的<strong>Qwen3 Next</strong>，80B总参数但仅3B激活——"推理效率、效果、速度都得到了非常大的改变"。</p>
+
+  <p><strong>第三个方向是长上下文与指令遵循。</strong>工具调用轮次变多意味着需要更长的上下文，而且要在长上下文中精准执行复杂指令。这三者的叠加，让模型有能力在更复杂的生产环节中连续运行，而非仅仅做单次问答。</p>
+</section>
+
+<section>
+  <h2>推理成本下降的三重驱动力</h2>
+  <p>推理成本的下降是AI商业化的关键基础。徐栋给出的数字非常清晰：<strong>基本上按照半年快接近一个量级的下降</strong>——"一个量级就是十倍"。</p>
+
+  <p>这个下降不是单一因素驱动的，而是<strong>三重力量的叠加</strong>：</p>
+
+  <p><strong>第一，模型结构优化。</strong>稀疏化、混合精度、MTP等技术在模型侧持续降低推理开销。</p>
+
+  <p><strong>第二，芯片垂直设计。</strong>模型与芯片的垂直一体化设计，软硬协同释放大量潜在红利。徐栋用了一个类比：阿里巴巴今天有自己的云、有自己的模型、也有自己的芯片投入，是"三位一体"，与谷歌的TPU+模型+云的架构有相似之处。这种垂直整合的好处非常大——"不仅仅涉及芯片和模型，还涉及云，因为调度都是跟云有关的"。</p>
+
+  <p><strong>第三，云调度优化。</strong>通过不同模型、不同任务、不同时段的智能调度——比如夜间跑批任务——将GPU利用率从30-50%拉升到更高水平。这是一个很"云"的概念：利用率的提升直接转化为成本的下降。</p>
+
+  <blockquote>
+    "推理成本基本上都是按照半年快接近一个量级的这样一个下降。大家可以理解为一个量级就是十倍。"
+    <span class="attr">—— 徐栋</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>2025年：应用为何在此时爆发？</h2>
+  <p>2025年是AI从模型走向应用的关键一年，Agent大爆发，中国应用创新尤其活跃。徐栋认为，这不是单一因素的突破，而是<strong>四个能力的叠加</strong>，在2025年这个时间点形成了合力。</p>
+
+  <p><strong>首先是推理能力（reasoning）。</strong>2024年底OpenAI o1推出后，模型不再依赖单一的概率输出，开始表现出"逻辑偏好"。徐栋认为这是"非常根本性的一件事情"——推理能力让模型从"猜"变成了"想"。</p>
+
+  <p><strong>其次是指令遵循。</strong>过去做应用要依赖workflow来兜底——因为模型有偏差，需要在关键节点交叉验证。如今模型的指令理解和遵循能力大幅增强，给定足够的context后，能在泛化性与准确性之间找到平衡点。这直接降低了从"模型"到"应用"的工程门槛。</p>
+
+  <p><strong>第三是工具调用的标准化。</strong>MCP等标准让工具被"显性化"。模型不再局限于输入输出窗口，开始进入SaaS流程、硬件交互、商业闭环等生产环节。</p>
+
+  <p><strong>第四是模型可控性的整体提升。</strong>预训练改进让模型在变大的同时可控性提高，复杂指令的精准执行成为可能。</p>
+
+  <p>这四个能力的叠加，让Agent从一个"你问我答"的Chatbot，开始走向可以<strong>连续运行两个礼拜</strong>、自动调用搜索引擎、CRM、ERP、办公软件，最终产出一份深度报告或一个AI for science研究成果的自主系统。</p>
+</section>
+
+<section>
+  <h2>开源战略：从7B的破圈到全球生态</h2>
+  <p>千问（Qwen）的开源故事始于2023年8月——7B模型获得了巨大的市场反馈，打开了全球格局。如今，千问在海外开源社区的活跃度极高，"基本上很多北美的公司也会用它作为一个基模"。</p>
+
+  <p>开源给阿里带来了三个显而易见的好处：<strong>人才吸引力</strong>（顶尖科研工作者和学生从学校就开始用千问）、<strong>社区反馈加速迭代</strong>（推理框架和端侧部署的开发者最早围绕生态做建设、提bad case）、<strong>开源带动云的商业正循环</strong>（阿里云是一家云公司，开源模型推动云基座发展，闭源API版本则解决离线开源版的问题）。</p>
+
+  <p>千问的开源模型家族覆盖从<strong>0.5B到235B</strong>的极广范围，迭代节奏极快——<strong>每月发3个小版本，3到6个月发5个大版本</strong>。而最大的千问3 Max则保持闭源，通过API服务高需求场景。</p>
+
+  <p>关于DeepSeek开源对阿里的冲击，徐栋的回应相当坦率："今天这市场还是属于一个中早期阶段，更多的模型公司去推动技术进步，这是最重要的事情。"在他看来，DeepSeek的开源<strong>反而带动了整个开源生态的活跃</strong>，让Qwen在全球范围内有更多人用起来——"这是个相互促进的过程"。</p>
+</section>
+
+<section>
+  <h2>端云结合：70%的任务端侧解决</h2>
+  <p>一个关键的变化正在发生：<strong>今天的4B端侧模型效果已经超过两年前的百B级别大模型</strong>。这意味着通用类任务、基本语音视觉交互——约七成可以通过端侧模型解决。</p>
+
+  <p>阿里发布的Omni 4B模型引发了手机厂商和车厂的浓厚兴趣，背后是一个经过了两三年打磨的新架构：端侧处理隐私敏感和高时效性任务，云侧通过百炼平台处理复杂推理和大规模并发。徐栋称之为进入了"深水区"——端云模型的结合开始成为一个大家真正关心的话题。</p>
+
+  <p>客户的需求也在进化。最早关心的是"效果"（模型能不能用），最近半年到一年转向"性能"（够不够快、并发够不够高），现在核心关注变成了"成本"（使用量扩大了几十到上百倍，用不用得起）。</p>
+
+  <blockquote>
+    "今天的端侧模型比两年前我们的最大杯的模型效果都要来得好。"
+    <span class="attr">—— 徐栋</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>影石Insta360：全景AI剪辑的挑战</h2>
+  <p>影石Insta360的核心产品是全景相机，理念是"先拍后剪"——用360度全角度覆盖现场，后期从中挑选最佳视角和节奏。但360度素材与普通平面素材本质不同：通用大模型在360度素材上的训练数据远远少于平面素材，理解力差很多。</p>
+
+  <p>影石的解决方案是<strong>自研全景理解模型</strong>（类似世界模型的研究方向）负责从全景素材中提取高光片段，再调用<strong>通用大模型</strong>（千问多模态+万象视频生成）负责平面内容的语义理解和编排。</p>
+
+  <p>但最核心的难点不在技术，而在<strong>用户意图识别</strong>。用户说"剪出我滑雪失败的瞬间"——AI要先理解"失败"的语义，再在视频中识别哪些画面属于"失败"。更难的是，用户自己往往也不知道如何精确表达剪辑意图。齐露坦言："这个是现在模型层面上还是比较难的一个事情。"</p>
+
+  <p>成本也是一个现实挑战：剪一段3分钟左右的360度视频，目前需要<strong>十几块钱的成本</strong>。影石希望通过全景素材的高可压缩性来降低token消耗。</p>
+</section>
+
+<section>
+  <h2>语义科技：AI降本与增效的真实案例</h2>
+  <p>语义科技是一家AI To B SaaS公司，服务于雀巢、宝洁、泡泡玛特等头部消费品牌。他们的核心业务是通过AI对消费者的进线数据做意图识别，帮助品牌从传统的"流量思维"转向"流量+消费者思维"。</p>
+
+  <p>吕总描述了<strong>三类意图识别</strong>：第一是<strong>消费者画像</strong>（不同于传统的年龄/白领标签，而是肤质、过敏情况等与产品直接相关的深层特征）；第二是<strong>消费者意图</strong>（对产品、服务、物流、营销的正面/负面反馈）；第三是<strong>归因分析</strong>，这也是最有意思的部分——每个企业都不同。</p>
+
+  <p>吕总举了一个具体案例：某头部日化企业原来安排<strong>六个人</strong>负责对消费者退货进行原因登记和责任部门归因，AI agent部署后<strong>现在只有一个人在复审</strong>。吕总坦率地指出："省掉五个人，企业发现对我这个体量的企业来说，省掉五个人的钱也就是这么回事，没有带来特别大的公司层面上的效益价值。"</p>
+
+  <p>这引出了一个关键转折：<strong>从降本到增效的范式转移。</strong></p>
+</section>
+
+<section>
+  <h2>23%增长背后的洞察：AI增效的真实力量</h2>
+  <p>降本有上限——省掉五个人的工资也就那么回事。但<strong>增效没有上限</strong>。</p>
+
+  <p>吕总分享了一个最有说服力的案例：国内某头部家电品牌的高端产品线（客单价两万以上），通过语义科技的AI消费者画像识别和细分反馈分析，重新设计了营销卖点和接待话术。<strong>合作一年半以后，整体销量涨幅23%，高端线客单价再提升6%以上。</strong></p>
+
+  <p>这是一个"涨价还增销"的案例。背后的逻辑是：<strong>AI从消费者的进线数据中提取出了品牌在设计卖点时未曾关注的细分功能需求</strong>，将这些需求转化为营销话术中的核心卖点，直接推动了转化率。</p>
+
+  <p>效果立竿见影：因为销量好了，数据量自然变大，AI费用随之上涨；而集团看到效果后，从单一事业部推广到了<strong>全集团所有事业部</strong>都接入AI识别模型。这是一个典型的数据飞轮。</p>
+
+  <p>语义科技自身也受益于此：<strong>2024年完成了100%的同比增长</strong>。</p>
+</section>
+
+<section>
+  <h2>AI时代的决策：工具在升级，判断在人</h2>
+  <p>当被问到"如果所有企业都用上AI，竞争优势会不会被抹平"时，吕总给出了一个深刻而清醒的回答：</p>
+
+  <blockquote>
+    "AI未来的核心价值还是掌握在人手里的——看如何去使用它的人。它可能在意图识别、商品匹配、Deep Search报告生成上，每个企业最后发现大的方向上可能都会比较一致。但是最后做出决策的这个人，他如何去看待这些数据呈现出来，如何能够挖掘出AI处理过数据之后的一些insight，这个就是非常看人的洞察能力了。"
+    <span class="attr">—— 吕总，语义科技CEO</span>
+  </blockquote>
+
+  <p>吕总的判断是，AI能做到的是数据清洗、意图识别、标签化处理、深度搜索报告生成——把海量非结构化数据变成可读的洞察。但<strong>AI做不到的是从洞察中发现真正的机会点</strong>。AI处理过的数据摆在那里，谁能从中看到别人看不到的东西——这取决于人的洞察能力。最终决策由人来做。</p>
+
+  <p>他的结论是："<strong>好的产品经理、好的伙伴永远是有机会的。</strong>"</p>
+</section>
+
+<section>
+  <h2>AI如何重塑中国To B SaaS的付费逻辑</h2>
+  <p>吕总还分享了一个非常敏锐的行业观察：<strong>AI正在从根本上改变中国To B SaaS的收费逻辑。</strong></p>
+
+  <p>过去，中国To B客户付费意愿低，原因是客户认为"谁都可以做这个软件，你没有特别大的价值"。SaaS的边际成本接近于零，客户不理解为什么要持续付费。</p>
+
+  <p>但AI改变了这个认知。因为AI按<strong>token计费</strong>——客户明确知道，处理多少数据就产生多少成本。AI SaaS供应商是"有成本地在提供服务"，而非"复制粘贴软件"。用吕总的话说："客户现在是明确认知到，因为AI是按照token计费的嘛，那就是我用了多少数据量，你们作为基模以外的供应商，你们就会有这样相应的成本，那我如果不付给你这个钱，那你没办法给我提供这样的一个服务。"</p>
+
+  <p>语义科技自己的定价模式是<strong>"License费 + 数据使用量费"</strong>——按处理的对话数据、语音数据、社媒帖子数量计费。吕总甚至说："我们也是比较感谢，确实是AI带来的商业化的一个机会改变点，就是中国To B SaaS的收费底层逻辑的一个改善。"</p>
+
+  <p>这或许是这期播客中被低估的最重要观察：<strong>AI不仅改变了产品，还改变了行业的基本商业规则。</strong></p>
+</section>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+  <p style="font-size:14px;color:#64748b;margin-bottom:16px;">本期对谈中最值得记住的几句——每一条都在原始transcript中可验证。</p>
+
+  <div class="quote-item" style="background:#eff6ff;border-left:4px solid #3b82f6;">
+    "漫剧已经成为一个非常跟AI结合的一个事实了。"
+    <span class="attr">—— 徐栋，谈AI短剧的商业化现状</span>
+  </div>
+  <div class="quote-item" style="background:#f0fdf4;border-left:4px solid #22c55e;">
+    "推理成本基本上都是按照半年快接近一个量级的这样一个下降。大家可以理解为一个量级就是十倍。"
+    <span class="attr">—— 徐栋，论成本下降的多重驱动因素</span>
+  </div>
+  <div class="quote-item" style="background:#fff7ed;border-left:4px solid #f97316;">
+    "今天模型它就跳脱了原来的输入输出窗口，它开始进入到了更多的不同的生产环节。"
+    <span class="attr">—— 徐栋，论Agent的工具调用进化</span>
+  </div>
+  <div class="quote-item" style="background:#faf5ff;border-left:4px solid #a855f7;">
+    "今天的端侧模型比两年前我们的最大杯的模型效果都要来得好。"
+    <span class="attr">—— 徐栋，论端云结合的可行性</span>
+  </div>
+  <div class="quote-item" style="background:#fefce8;border-left:4px solid #eab308;">
+    "AI未来的核心价值还是掌握在人手里的——看如何去使用它的人。"
+    <span class="attr">—— 吕总，语义科技CEO，论AI时代的竞争优势</span>
+  </div>
+  <div class="quote-item" style="background:#fef2f2;border-left:4px solid #ef4444;">
+    "好的产品经理、好的伙伴永远是有机会的。"
+    <span class="attr">—— 吕总，对AI时代人的价值的判断</span>
+  </div>
+</section>
+
+<footer>
+  <p>完整播客请订阅「硅谷101」——苹果播客 / Spotify / 小宇宙 / B站 / YouTube。</p>
+  <p>源节目链接：<a href="https://sv101.fireside.fm/236">https://sv101.fireside.fm/236</a></p>
+</footer>
+
+</article>
+</body>
+</html>

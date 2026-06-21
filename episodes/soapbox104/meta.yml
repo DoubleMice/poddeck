@@ -1,0 +1,32 @@
+id: soapbox104
+source: risky-business
+title: "Risky Biz Soap Box: The lethal trifecta of AI risks"
+guest: "Josh Devin"
+guest_role: "Sondera 联合创始人"
+published: 2026-02
+duration: "38m"
+url: "https://risky.biz/soapbox104/"
+thumbnail: "https://risky.biz/static/img/rb-feed-main.png"
+status: generated
+tags:
+  - ai-safety
+  - ai-products
+  - startup
+  - coding-agents
+  - interview
+  - founder
+  - quick-take
+  - technical
+summary: |
+  Sondera 联合创始人 Josh Devin 与 Patrick Gray 深入探讨 AI Agent 安全的核心风险框架。
+  从 Simon Willison 的"致命三重奏"到 "Prompt & Pray" 的终结，从最小自治原则到 Assume Prompt Inject 安全新范式，
+  Josh 分享了 Sondera 如何通过 Harness 架构、Cedar 策略引擎和持续仿真飞轮来约束 Agent 的非确定性行为。
+core_ideas:
+  - 'Agent 时代的安全隐喻：GenAI 是引擎，Agent 是汽车——需要"车道"和"护栏"，而不是让 Waymo 完全不能开'
+  - '致命三重奏（Simon Willison）：私有数据访问 + 不可信内容接触 + 外部通信能力 → Prompt 注入导致数据外泄'
+  - 'Prompt & Pray 的终结：系统提示词里的"please please please"不可靠，需要用确定性规则约束非确定性行为'
+  - '安全范式转变：从 Assume Breach 到 Assume Prompt Inject——像防社会工程学一样防 Prompt 注入'
+  - 'Harness 架构：在 Scaffold 外层做中间人拦截，用 Cedar 默认拒绝语言实时检查每一步轨迹'
+  - '数字魔鬼 + 持续仿真飞轮：用对抗 LLM 持续给 Agent 施压，发现毒性轨迹，形成仿真→策略→部署→观测的闭环'
+article_path: episodes/soapbox104/article.html
+base: /episodes/soapbox104/
