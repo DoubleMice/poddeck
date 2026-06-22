@@ -1,45 +1,15 @@
 source: risky-business
-refreshed_at: 2026-06-21T18:35:31.382Z
+refreshed_at: 2026-06-22T04:41:31.185Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 2
-done: 1
+total_candidates: 1
+done: 0
 pending: 0
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: soapbox104
-    guid: https://risky.biz/soapbox104/
-    title: "Risky Biz Soap Box: The lethal trifecta of AI risks"
-    duration: 2253
-    published: Fri, 20 Feb 2026 10:33:55 +1100
-    published_sort: "20260219"
-    first_seen_at: 2026-05-19T08:55:24.848Z
-    url: https://risky.biz/soapbox104/
-    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/soapbox104.mp3
-    image: https://risky.biz/static/img/rb-feed-main.png
-    summary: >-
-      There’s a lethal trifecta of AI risks: access to private data, exposure to untrusted content, and external
-      communication. In this conversation, Risky Business host Patrick Gray chats with Josh Devon, the co-founder of
-      Sondera, about how to best address these risks.
-
-
-      There is no magic solution to this problem. AI models mix code and data, are non-deterministic, and are crawling
-      around all over your enterprise data and APIs as you read this.
-
-
-      But in this sponsored interview, Josh outlines how we can start to wrap our hands around the problem.
-
-
-      This episode is also available on Youtube.
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-06-21T18:42:16.954Z
-    transcript_job_id: 4d79e638b3f74e32bc62fb5774d81353,ba9b2ecb4a304543826610de08b35f7e,d523a3136b874e328c11e4df4e83bef1
-    transcript_completed_at: 2026-06-21T18:44:52.491Z
   - id: HTWGO1
     guid: https://risky.biz/HTWGO1/
     title: "How the World Got Owned Episode 1: The 1980s"
