@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fable 停服：给所有 AI 实验室的警钟 — Uneasy Money 深度解读</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    background: #f8f9fa;
+    color: #1a1a2e;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  header {
+    text-align: center;
+    padding: 40px 0 50px;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    font-size: 14px;
+    color: #718096;
+  }
+  .meta span { margin: 0 8px; }
+  .meta a { color: #4299e1; text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 32px 0 12px;
+  }
+  p {
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+
+  .overview-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .overview-cards .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .overview-cards .card.wide { grid-column: span 2; }
+  .card .card-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+  .card .card-desc { font-size: 13px; opacity: 0.8; }
+
+  .card-red { background: #fff5f5; border-color: #fc8181; }
+  .card-red .card-title { color: #c53030; }
+  .card-blue { background: #ebf8ff; border-color: #63b3ed; }
+  .card-blue .card-title { color: #2b6cb0; }
+  .card-yellow { background: #fffff0; border-color: #f6e05e; }
+  .card-yellow .card-title { color: #975a16; }
+  .card-purple { background: #faf5ff; border-color: #b794f4; }
+  .card-purple .card-title { color: #6b46c1; }
+  .card-green { background: #f0fff4; border-color: #68d391; }
+  .card-green .card-title { color: #276749; }
+
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: #f7fafc;
+    border-left: 4px solid #4299e1;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: #4a5568;
+    font-size: 16px;
+  }
+  blockquote .attribution {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #a0aec0;
+  }
+
+  .quote-block {
+    margin: 28px 0 0;
+  }
+  .quote-block .quote-item {
+    padding: 14px 18px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .quote-item .quote-text {
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  .quote-item .quote-context {
+    font-size: 13px;
+    opacity: 0.65;
+    font-style: normal;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    font-size: 13px;
+    color: #a0aec0;
+  }
+  footer a { color: #4299e1; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  .gloss {
+    font-size: 13px;
+    color: #a0aec0;
+    margin-top: 2px;
+    font-style: normal;
+  }
+
+  @media (max-width: 600px) {
+    article { padding: 20px 16px 60px; }
+    h1 { font-size: 23px; }
+    h2 { font-size: 19px; }
+    .overview-cards { grid-template-columns: 1fr; }
+    .overview-cards .card.wide { grid-column: span 1; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Fable 停服：给所有 AI 实验室的警钟</h1>
+  <div class="meta">
+    Uneasy Money · 2026 年 6 月 · 1 小时 14 分钟<br>
+    <span>Kadeem Clarke · Taylor Monahan · Luca Netz</span><br>
+    <span>特邀嘉宾：Porter Stole（W3.io CEO）</span><br>
+    <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6570117836.mp3">🎧 收听原播客</a>
+  </div>
+</header>
+
+<section>
+<h2>为什么这期特别重要</h2>
+
+<p>这是一期看似分散、实则高度聚焦的深度对谈。四位嘉宾从一个突发新闻——Anthropic 的 Fable 模型被美国政府动用出口管制突然关闭——切入，继而串联起 Coinbase 的战略转型、欧洲的监管困境，以及 Strategy/Michael Saylor 的比特币操作所暴露的信念系统脆弱性。所有话题最终指向同一个核心问题：<strong>权力集中、监管边界，以及谁能定义"什么是真实"</strong>。</p>
+
+<div class="overview-cards">
+  <div class="card card-red">
+    <div class="card-title">🧨 Fable 被政府叫停</div>
+    <div class="card-desc">美国政府首次动用出口管制直接关闭已发布的 AI 模型——这不是演习，是真实的监管先例。</div>
+  </div>
+  <div class="card card-blue">
+    <div class="card-title">📊 Coinbase 全面出击</div>
+    <div class="card-desc">代币化股票、收购 Deribit、信用卡返比特币、Base Agentic Payments——交易所同时在零售和机构两端发力。</div>
+  </div>
+  <div class="card card-yellow">
+    <div class="card-title">🇪🇺 欧洲的监管困境</div>
+    <div class="card-desc">Binance 失去 MiCA 牌照、欧洲 AI 创新为零——压缩结果的代价是压缩成功。</div>
+  </div>
+  <div class="card card-purple">
+    <div class="card-title">🎯 信仰系统的脆弱</div>
+    <div class="card-desc">Saylor 卖了 32 个比特币（约 200 万美元），市场崩了。当一个信念系统过度集中时，恐慌是理性选择。</div>
+  </div>
+  <div class="card card-green wide">
+    <div class="card-title">🔗 一条主线</div>
+    <div class="card-desc">从 AI 安全到加密金融，所有讨论都围绕同一个问题展开：权力集中带来的系统性风险，以及在不同体系下如何界定"真实"与"可控"。</div>
+  </div>
+</div>
+</section>
+
+<section>
+<h2>Coinbase 的一夜变天</h2>
+
+<p>Coinbase 在短时间内密集发布了一系列重磅公告：代币化股票（声称"没有衍生品、没有 IOU"）、收购 Deribit 期权交易所、推出返比特币的信用卡、以及 Base 上的 Agentic Payments 基础设施。前 Coinbase 员工、现任 W3.io CEO 的 Porter Stole 认为这是一个信号："Coinbase 在做集中努力，成为零售和机构的一站式商店。叙事会很快从 SpaceX 和 Anthropic 转向 Coinbase。"</p>
+
+<p>但并非所有人都买账。Pudgy Penguins CEO Luca Netz 以 Coinbase 重度用户的身份提出了尖锐批评：<strong>"Coinbase 的核心功能——买数字资产——仍然不如它的竞争对手。我无法告诉你有多少次执行简单交易时，它不像在 Hyperliquid 或 Binance 上那样正常工作。他们似乎在走宽，而不是走深。"</strong></p>
+
+<p>Luca 分享了一个真实案例：他以 100 万美元买入 Zcash 时，Coinbase Advanced 的 UX 完全崩溃——显示只成交了 70 万美元，市价标的差了 80 美元，买入和持有的数量对不上。对于一个交易量如此庞大的重度用户，这种基础功能的缺陷令人难以接受。</p>
+
+<p>Kadeem 和 Taylor 则从不同的角度分析了这种矛盾的根源。Taylor 从她在 MetaMask 的经验出发："当你有这么多用户时，你面临巨大的压力，既要广度又要深度。技术债务是真实存在的——十多年的积累，你要修一个东西，它所触及的所有表面积一定是个噩梦。"</p>
+
+<p>三位主持人还分析了为什么加密社区对 Coinbase 存在一种特殊的反感。一方面是 Degen 交易者讨厌高费率（"你在拿走我的钱"），另一方面是密码朋克原教旨派对盈利的意识形态排斥，还有一个微妙的社会心理：<strong>当一家公司大到一定地步，吐槽它就变成了一件很酷的事。</strong></p>
+</section>
+
+<section>
+<h2>代币化股票：到底"真实"在哪里？</h2>
+
+<p>Coinbase 声称将推出"真实的代币化股票"，强调"没有衍生品、没有 IOU"。但公告发布后，社区一直在等待细节——到底是什么机制让这些代币是"真实"的？</p>
+
+<p>Porter Stole 的猜测是：Coinbase Custody 持有底层股票一对一，然后用代币作为"包装"——类似于 USDC 的模型，由受监管的托管账户持有底层资产，代币是链上的索取权。Kadeem 指出这本身并不新鲜，之前 Synthetix 和 Mirror（Do Kwon 的项目）都尝试过合成股权的方式，区别在于现在的监管和技术环境允许更合规的做法。</p>
+
+<p>但 Kadeem 也指出了一个更深层的观察：<strong>用户根本不关心你持有的是股票凭证还是永续合约。他们只关心交易场所是否可靠、有流动性、能按市价卖出、费用合理。"没人想要投票权——现在谁买股票是为了投票权？"</strong></p>
+
+<p>在这个意义上，加密世界独有的金融工具——永续合约（perps）——实际上可能是更好的解决方案。1 倍杠杆的 perp 头寸等同于持有股票本身，但多了所有可选择性。前提是交易场所必须是真实的、不会 rug 的。</p>
+</section>
+
+<section>
+<h2>TradFi 与加密的融合：正在发生的现实</h2>
+
+<p>Luca Netz 在节目中首次公开了一个令人震惊的消息：他的公司 Igloo 创建了一个新的金融工具，可以将代币直接在纳斯达克或纽约证券交易所上市。这个工具将代币定义为证券，协议产生的收入可以直接分配回股东——本质上是"TradFi 轨道优先的 IPO-ICO 混合体"。</p>
+
+<p>这是一个正在发生的重大趋势。Kadeem 观察到，最近的加密会议上出现了大量西服革履的传统金融人士——"我从未在加密会议上见过这么多西服。它回来了。上一次是 2018 年的曼哈顿中城。"这不是 meme coin 投机者的涌入，而是严肃的机构资金。</p>
+
+<p>Porter Stole 指出，Coinbase 真正的"睡眠者"公告是 Base 上的 Agentic Payments。这解决了 AI agent 之间互相支付的基础设施问题——不是面向用户的 10 个比特币交易，而是面向 agent 对 agent 的、极小金额但极高频率的支付。Base 是唯一真正在思考这个问题的团队，不是领先——是唯一。</p>
+</section>
+
+<section>
+<h2>Fable 停服：AI 监管的"切尔诺贝利时刻"</h2>
+
+<p>这期节目最核心的故事是 Anthropic 的 Fable 模型被美国政府动用出口管制突然关闭。Kadeem 和 Taylor 从事件亲历者和行业观察者的角度，提供了极具价值的内部视角。</p>
+
+<h3>前传：Mythos — 太强所以不敢发布</h3>
+
+<p>数个月前，Anthropic 宣布了一个名为 Mythos 的模型，声称它"好到不能给你，因为不信任你，你会用它做坏事"。起初所有人都以为这是营销噱头。但当他们只给 10 个可信测试者使用时，反馈是一致的："不要给任何人。"这 10 个人发现了 Linux 内核模块（代码来自 1992 年）中的零日漏洞，Microsoft 和 Firefox 等核心基础设施同样未能幸免。结果是：50 个零日漏洞被一次性发现。</p>
+
+<h3>Fable：Mythos 加护栏</h3>
+
+<p>经过漫长的内部讨论和逐步扩大测试范围，Anthropic 发布了 Fable——本质上是 Mythos 包装了一层保护。核心保护机制是一个硬性回退触发器：如果用户触及任何敏感话题，模型会直接切回 Opus，并显示"抱歉，我们不帮你做生物恐怖主义"。</p>
+
+<p>用户的反应极其矛盾而真实：第一天大家都在抱怨回退机制太烦人；第二天所有人就变了——<strong>"其实还行。我愿意做任何事来保住这个模型的访问权。"</strong> 你不需要任何基准测试来判断模型有多好——看人们愿意忍受多大的不便利就知道了。</p>
+
+<p>Kadeem 引用了知名 AI 评论者 Mo 的变化。Mo 是一个极端的怀疑论者——曾发七分钟视频嘲笑 Gary Tan，系统性地批评 AI 编程的所有问题，说模型会"哄你让你觉得自己比实际更聪明"，预言一切都会以糟糕收场。但他发了一个关于 Fable 的视频说："这个东西是神。我爱它。我想和它结婚。"</p>
+
+<h3>致命时刻：越狱 + 错误沟通</h3>
+
+<p>转折点来了：一个"高度可信的合作伙伴"报告了一个 jailbreak。David Sacks 代表政府发布的声明说："Fable 是 Mythos 加上护栏——这是事实。如果那些护栏失效，你就暴露了 Mythos 及其高级网络能力。管理员要求 Dario 修复越狱或弃用模型。Dario 拒绝了。管理员实施了出口管制。管理员是勉强这么做的。"</p>
+
+<p>问题的核心不是 jailbreak 本身——Taylor 的分析非常精准：<strong>"不管这个 jailbreak 是否合法，政府知道了就不行。它真的不重要。"</strong> 关键是 Dario Amodei 在面对政府时的沟通方式。根据第二天的官方博客，Dario 对政府说的是："没有任何方法可以完美防止越狱。"</p>
+
+<p>Taylor 的诊断直击要害："你是一家价值数百亿美元、即将上市的公司。你为什么让 Dario 去和政府对话？雇一些曾在 Trump 政府工作的前官员——回四年前，有大批这样的人。让他们住在华盛顿。你为什么在飞来飞去？你怎么会没有住在华盛顿的人？"</p>
+
+<p>Luca Netz 提供了他作为 CEO 会怎么做的版本——展示护栏、数据保留政策、越狱报告系统，以及最关键的一句：<strong>"迄今为止，我们没有证据表明有越狱被用于攻击性网络操作。零个。我们有数据。"</strong> 而 Dario 在做的是——讨论安全的认识论，比如"任何东西真的能是安全的吗？" 在政府官员面前，这种哲学式讨论直接等于宣告"我们无法控制"。</p>
+</section>
+
+<section>
+<h2>"你无法回头"——先例已经建立</h2>
+
+<p>Fable 事件最深远的影响不在于这一个模型的命运，而在于它建立了不可逆的监管先例。Kadeem 的判断是整个节目里最沉重的：</p>
+
+<blockquote>
+"政府现在知道了它可以关闭它不喜欢的模型——而且市场没有反应，公众不在乎。就像之前在加密领域政府打击创始人后发现'其实没人关心'一样，现在在 AI 领域也是如此。我们已经走上了这条路。政府参与了哪些模型可以存在的问题。就是这样——政府现在决定哪些模型能存在。"
+<span class="attribution">— Kadeem Clarke</span>
+</blockquote>
+
+<p>对于其他 AI 实验室，这是一个明确的警告。OpenAI 在"赢得政府的心和脑"方面做得好得多——他们雇了正确的人，建立了正确的沟通渠道，不让 CEO 亲自去和政府讨论认识论。但所有实验室现在都必须正视这个新现实：<strong>政府的出口管制和制裁是最钝的工具，但当他们认为你无法自我控制时，他们会毫不犹豫地使用它们。而一旦用过一次，第二次就更容易。</strong></p>
+
+<p>Kadeem 的结论令人警醒："我是 AI 加速主义者。这太早了，我们真的把这个搞砸了。我们本应该能再避免一段时间。"</p>
+</section>
+
+<section>
+<h2>欧洲：压缩结果的代价</h2>
+
+<p>在讨论 Fable 事件的影响时，一些人在社交媒体上表示："我们需要减少对美国的 AI 依赖——欧洲必须站出来。" 嘉宾们的反应是一致的嘲讽："欧洲两年前就可以是那个角色了。"</p>
+
+<p>Kadeem 提出了一个贯穿整期节目的核心理论框架：<strong>"你可以有高度变异的结果，也可以压缩它们。如果你压缩它们，你就会有麻烦。"</strong></p>
+
+<p>美国模式的逻辑是：生与死之间只隔一条很细的线。没有安全网，你必须自己生存。但正因为人们可以失败，他们也可以成功得更多——失败的反面是更大的成功空间。这是一个市场驱动的、精英导向的系统。</p>
+
+<p>欧洲模式则截然相反：政府会介入解决一切——免费住房、免费钱。"我们不让人失败。"但这有一个不可逃避的交易：为了不让任何人失败，你必须压缩人们成功的上限。Kadeem 的总结残酷而直接：<strong>"你知道你不可能在欧洲创建 AI 公司吗？你知道你怎么知道的吗？因为没有。你有经验证据——这不是钱或人才的问题，是激励机制的问题。你到处都需要征求许可。"</strong></p>
+
+<p>Taylor 将这个分析扩展到 DAO 治理的隐喻：欧洲像大规模 DAO 治理——独立的参与方有竞争性目标，一个中心化的东西试图协调一切，而不是让市场驱动。"这是最愚蠢、最愚蠢的东西。"</p>
+</section>
+
+<section>
+<h2>Strategy 事件：信仰系统崩溃的预演</h2>
+
+<p>节目的最后一段讨论转向了 Strategy（原 MicroStrategy）和 Michael Saylor 的比特币操作。6 月 1 日，Strategy 卖了 32 个比特币——约 200 万美元。这笔小额卖盘引发了一场连锁反应：市场恐慌性抛售导致总抛售额达到数亿美元。两天后，Strategy 以约 1 亿美元买回了 1587 个比特币。</p>
+
+<p>这引发了一个根本性的问题：为什么一个人卖 32 个比特币能引发整个市场的恐慌？</p>
+
+<p>Kadeem 给出了整个节目中最深刻的分析：</p>
+
+<blockquote>
+"这是不真实的事物的固有问题。当一个东西纯粹基于信念时……你把太多信念放在一个人身上，你相信他会撑你，然后那个信念被质疑了——没有任何基本面可以回去验证说：'不，没事的，Strategy 卖币是因为比特币的基本面从未如此强大。看看我们产生的所有营收。'因为它不产生营收。它是一个如此纯粹基于信念的系统——我们相信它会涨，它会是一个价值储存，不管是什么。但如果一个人持有太多，而我们认为他可能在砸盘，那就没有东西可以……理性选择就是卖出。"
+<span class="attribution">— Kadeem Clarke</span>
+</blockquote>
+
+<p>他用了一个 Pengu 代币的类比：如果他对 Luca 说，"我偷偷积攒了 Pengu 50% 的供应量，现在我在'测试市场'看看流动性如何"——任何一个理性的 Pengu 持有者都会立刻卖出。这不是恐慌，这是理性计算。当一个人持有太多，而你不知道他是怎么得到的、他在这里干什么、他为什么在 troll 你——你自然会在他的抛盘之前先出逃。</p>
+
+<p>Saylor 本人在一个视频中的回应被嘉宾们反复提起：<strong>"我从来没说过我不会卖我的比特币。我是告诉你们不要卖你们的比特币。"</strong> 这种坦率的 trolling 反而赢得了 Luca 和 Kadeem 的某种欣赏——至少它是诚实的。</p>
+
+<p>Taylor 的总结将这个讨论与 Fable 事件统一起来："我们需要两个 Saylor。也许三个——然后他们彼此意见不合。" 这个半开玩笑的建议背后是一个严肃的观点：<strong>任何系统如果过度依赖一个单一实体（无论是一个人的信念、一家公司的产品管理、还是一个 CEO 的政府沟通方式），都是脆弱的。分散化——不管是信仰、流动性还是权力——本身就是一种安全机制。</strong></p>
+</section>
+
+<section>
+<h2>什么是"真实"？——这期的核心哲学问题</h2>
+
+<p>回顾整期节目，四个看似独立的话题——Fable 的停服、Coinbase 的代币化股票、欧洲的监管哲学、Strategy 的比特币操作——实际上都围绕同一个问题展开：<strong>在不同的体系下，"真实"意味着什么？谁有权定义它？</strong></p>
+
+<p>对 Fable 而言，政府定义了"什么是不可接受的危险"——不需要证明实际危害，只需要一个 jailbreak 的报告和一个无法承诺控制的 CEO。对代币化股票而言，Coinbase 声称"没有衍生品，没有 IOU"——但"真实"的定义取决于底层资产的法律地位和审计。对比特币而言，"不真实事物的固有问题"在于它的价值完全基于信念——没有基本面，没有营收，当信念动摇时没有任何锚定。对欧洲而言，Kadeem 给出了最简洁的答案：<strong>"你怎么知道你不能在欧洲创建 AI 公司？因为没有。"</strong> 经验证据就是"真实"的唯一标准。</p>
+
+<p>这最终回到了 Kadeem 的开场白：<strong>"链上发生的事情，永远不会只留在链上。"</strong> 这句话在节目结束时获得了新的深意——不仅是加密世界的事件会溢出到更广泛的经济和政治中，更是所有"信念系统"（无论是 AI 模型、代币化资产、比特币还是国家监管哲学）都必须面对一个共同的试金石：当压力和危机来临时，什么才是真正支撑你的东西？</p>
+</section>
+
+<section>
+<h2>核心金句</h2>
+
+<div class="quote-block">
+  <div class="quote-item" style="border-color: #fc8181;">
+    <div class="quote-text">"没有任何方法可以完美防止越狱。"</div>
+    <div class="quote-context">— Dario Amodei 对政府的回应（来自官方博客，Kadeem 转述）。这句话直接导致了 Fable 被出口管制</div>
+  </div>
+  <div class="quote-item" style="border-color: #63b3ed;">
+    <div class="quote-text">"你无法回头。"</div>
+    <div class="quote-context">— Kadeem Clarke。政府现在参与了哪些模型可以存在的问题——先例已经建立，不会再撤销</div>
+  </div>
+  <div class="quote-item" style="border-color: #f6e05e;">
+    <div class="quote-text">"你可以有高度变异的结果，也可以压缩它们。如果你压缩它们，你就会有麻烦。"</div>
+    <div class="quote-context">— Kadeem Clarke 论欧洲与美国模式的根本区别</div>
+  </div>
+  <div class="quote-item" style="border-color: #68d391;">
+    <div class="quote-text">"这是不真实的事物的固有问题——当一个东西纯粹基于信念时……你把太多信念放在一个人身上，当信念被质疑时，没有基本面可以回去验证。"</div>
+    <div class="quote-context">— Kadeem Clarke 论 Strategy/Bitcoin 的信念系统</div>
+  </div>
+  <div class="quote-item" style="border-color: #b794f4;">
+    <div class="quote-text">"我从来没说过我不会卖我的比特币。我是告诉你们不要卖你们的比特币。"</div>
+    <div class="quote-context">— Michael Saylor（Kadeem 转述），卖了 32 BTC 引发市场恐慌后的回应</div>
+  </div>
+  <div class="quote-item" style="border-color: #ed8936;">
+    <div class="quote-text">"他们在做宽而不是做深……核心产品——买币——仍然不如竞争对手。"</div>
+    <div class="quote-context">— Luca Netz 对 Coinbase 战略的评价</div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <p>
+    本文基于 Uneasy Money 播客节目内容生成，仅代表嘉宾观点。<br>
+    <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6570117836.mp3">🎧 收听原播客</a> · 2026 年 6 月
+  </p>
+</footer>
+
+</article>
+</body>
+</html>

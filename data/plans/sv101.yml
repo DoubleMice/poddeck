@@ -1,10 +1,10 @@
 source: sv101
-refreshed_at: 2026-06-22T04:41:31.208Z
+refreshed_at: 2026-06-22T19:09:29.234Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -180,7 +180,7 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 老马 and 齿牙.
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 185f008adc244916b31d14d1de958319,9e28f719fed04d7e8aa1bf53399c609d,2bf9d01fca5349bd89ca030552b30a6f,37abfebc013e49d89512942636435ffd,35bd296fd5f64ba2a418a658bf261117

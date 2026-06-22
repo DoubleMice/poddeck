@@ -1,0 +1,110 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "box-mickey", "type": "rectangle", "x": 60, "y": 60, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff", "fillStyle": "hachure",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3}, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box-mickey-label", "type": "text", "x": 75, "y": 75, "width": 170, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "米奇老鼠\nA Walt Disney Comic\n品牌绑定工作室", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "米奇老鼠\nA Walt Disney Comic\n品牌绑定工作室", "lineHeight": 1.25, "baseline": 38
+    },
+    {
+      "id": "box-snow", "type": "rectangle", "x": 60, "y": 200, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb", "fillStyle": "hachure",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3}, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box-snow-label", "type": "text", "x": 75, "y": 212, "width": 170, "height": 55,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": null, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "白雪公主\n艺术 × 技术 × 商业\n动画长片合法化", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "白雪公主\n艺术 × 技术 × 商业\n动画长片合法化", "lineHeight": 1.25, "baseline": 43
+    },
+    {
+      "id": "arrow-down1", "type": "arrow", "x": 160, "y": 140, "width": 0, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 2}, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [0, 60]]
+    },
+    {
+      "id": "box-oswald", "type": "rectangle", "x": 320, "y": 60, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8", "fillStyle": "hachure",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3}, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box-oswald-label", "type": "text", "x": 335, "y": 75, "width": 170, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": null, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "Oswald 兔子\n失去IP+动画师\n奥威尔式教训", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Oswald 兔子\n失去IP+动画师\n奥威尔式教训", "lineHeight": 1.25, "baseline": 38
+    },
+    {
+      "id": "box-strike", "type": "rectangle", "x": 320, "y": 200, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#ffc9c9", "fillStyle": "hachure",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 3}, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box-strike-label", "type": "text", "x": 335, "y": 212, "width": 170, "height": 55,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": null, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "1941大罢工\n3.5个月\n华特与公司决裂", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "1941大罢工\n3.5个月\n华特与公司决裂", "lineHeight": 1.25, "baseline": 43
+    },
+    {
+      "id": "arrow-down2", "type": "arrow", "x": 420, "y": 140, "width": 0, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1.5, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": {"type": 2}, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [0, 60]]
+    },
+    {
+      "id": "title", "type": "text", "x": 100, "y": 10, "width": 360, "height": 30,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100,
+      "groupIds": [], "frameId": null, "roundness": null, "seed": 11, "version": 1, "versionNonce": 11,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 18, "fontFamily": 2, "text": "两大关键事件塑造迪士尼的基因", "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "两大关键事件塑造迪士尼的基因", "lineHeight": 1.25, "baseline": 20
+    },
+    {
+      "id": "bottom-note", "type": "text", "x": 60, "y": 340, "width": 460, "height": 80,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 80,
+      "groupIds": [], "frameId": null, "roundness": null, "seed": 12, "version": 1, "versionNonce": 12,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 2, "text": "Oswald → 永不卖版权、自己控制分销\n白雪公主 → 品质至上、赌上全部\n大罢工 → 华特把激情转向乐园\n三者共同解释了迪士尼的所有战略路径",
+      "textAlign": "center", "verticalAlign": "middle",
+      "containerId": null, "originalText": "Oswald → 永不卖版权、自己控制分销\n白雪公主 → 品质至上、赌上全部\n大罢工 → 华特把激情转向乐园\n三者共同解释了迪士尼的所有战略路径",
+      "lineHeight": 1.25, "baseline": 65
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" }, "files": {}
+}
