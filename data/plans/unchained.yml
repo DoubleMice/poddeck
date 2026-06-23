@@ -1,15 +1,109 @@
 source: unchained
-refreshed_at: 2026-06-23T04:30:54.792Z
+refreshed_at: 2026-06-23T18:45:45.217Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 117
-done: 0
-pending: 4
-needs_transcript: 113
+done: 1
+pending: 6
+needs_transcript: 110
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 8f62f27e-6f30-11f1-8a92-fbcae9c72ba7
+    guid: 8f62f27e-6f30-11f1-8a92-fbcae9c72ba7
+    title: How Digital Credit Assets like STRC and SATA Differ from Bitcoin or DAT Stocks
+    duration: 3377
+    published: Tue, 23 Jun 2026 18:22:00 -0000
+    published_sort: "20260623"
+    first_seen_at: 2026-06-23T18:45:45.214Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8519055195.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8519055195.mp3
+    image: https://megaphone.imgix.net/podcasts/8f62f27e-6f30-11f1-8a92-fbcae9c72ba7/image/88fb4554efc9ab28031b64110551361b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Was Michael Saylor wrong to sell Bitcoin? Matt Cole breaks from his fellow critics on Strategy, S&P's junk rating
+      on MSTR, and whether the model is breaking.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      ⁠⁠⁠⁠Fidelity⁠⁠⁠⁠: Fidelity has been building in crypto and DeFi since 2014 — now they're hiring. Explore career
+      opportunities at one of the most forward-thinking names in finance here: ⁠⁠⁠⁠crypto.fidelitycareers.com⁠⁠⁠⁠.
+
+
+      ⁠⁠⁠⁠Cape⁠⁠⁠⁠: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's
+      privacy-first mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33%
+      off your first six months at cape.co/unchained (use code: UNCHAINED).
+
+
+      ========================================================
+
+
+      Strive's Matt Cole had just lived through what he called the most difficult day in the history of digital credit
+      when he sat down to defend it. STRC had touched $82.50, SATA had slipped into the low nineties, and the Bitcoin
+      treasury trade was suddenly the most argued-over corner of crypto.
+
+
+      Cole came from a pension background and built Strive into one of the largest Bitcoin treasury companies around a
+      single conviction: that structured credit can solve an income problem fiat can't. The critics, he argues, can't
+      even agree with each other on what is actually wrong.
+
+
+      Was last week a leverage liquidation or a crack in the model? Did Michael Saylor quietly change his story? And is
+      wrapping Bitcoin in preferred stock a betrayal of its ethos or the bridge most people actually need? Laura Shin
+      pressed on all of it.
+
+
+      Host:
+
+
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+
+      Guests:
+
+
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Matt Cole - Chairman and CEO of Strive
+
+
+      Timestamps
+
+
+      🎙️ 02:07 What Strive is, and why Matt calls SATA the company's main product
+
+
+      🏦 10:16 Could Strive cut SATA's 13% yield without breaking par?
+
+
+      👥 15:45 Who is actually buying SATA, and the one buyer Matt says he's never met
+
+
+      📣 25:15 Fidelity: Explore crypto careers and make the decision that could change your future at
+      https://crypto.fidelitycareers.com
+
+
+      🔒 25:58 Cape: Use code unchained for 33% off at https://cape.co/unchained
+
+
+      💧 27:28 What Matt thinks really drove last week's STRC drop, and why SATA didn't follow
+
+
+      🏛️ 31:28 Why Matt won't fault Saylor for selling, and the S&P rating he calls a joke
+
+
+      ⚖️ 50:53 Is buying SATA un-Bitcoin? Matt answers the Mallers vs Saylor critique
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-23T18:45:46.483Z
+    transcript_job_id: 37000849f239458d82433eb7de990b68,2136573257894c48bdef836f6dd091cd,8eaad2878a4045db8a711ab3a886c3bb,fb3eb93179fc423c864aae4165a75da7
+    transcript_completed_at: 2026-06-23T18:48:31.484Z
   - id: 8ff34f42-6b4b-11f1-acc3-272f40df8c3c
     guid: 8ff34f42-6b4b-11f1-acc3-272f40df8c3c
     title: "Why AI Censorship and Reg NMS Repeal Matter for Crypto Markets: DEX in the City"
@@ -668,8 +762,12 @@ episodes:
       ⚖️ 1:06:35 Gerstein lawyers' absurd argument in the Aave/Arbitrum/KelpDAO case
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-23T18:48:31.708Z
+    transcript_job_id: 0d94866231964502a9151fdc9b97f2ab,e0eeb5b4753841b7959a5906d5817b68,e318862447d348fb9892eab9b5c49d85,fcff6a4210104e538f48ae736c12296f,bb3dda65eb2f4c7e91af9b3bfa28599a,b6cd178431714614babdab6b0729630a
+    transcript_completed_at: 2026-06-23T18:53:48.033Z
   - id: e0f90034-4e3c-11f1-ade0-67e121e14947
     guid: e0f90034-4e3c-11f1-ade0-67e121e14947
     title: Why Arthur Hayes Thinks the AI Bubble Bursting Could Spark a Crypto Bull Market
@@ -773,8 +871,12 @@ episodes:
       🏢 53:12 Maelstrom update: fundraising and why now is the right time to deploy
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-23T18:53:48.214Z
+    transcript_job_id: e836866ec4b741e99f9d0b3274eb4527,e7ed06a725994ce8b6c332bdacf141d0,7a639c79efa94d12848ac7b49f678a8d,871d12ef789e4f5a816da0ca344260de
+    transcript_completed_at: 2026-06-23T18:57:35.232Z
   - id: 58e92bbe-4f37-11f1-8faf-2342ff572b86
     guid: 58e92bbe-4f37-11f1-8faf-2342ff572b86
     title: "DEX in the City: Will the CLARITY Act Pass? Three Crypto Lawyers Give Their Odds"
@@ -4119,8 +4221,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5882,8 +5983,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -9882,54 +9982,6 @@ episodes:
       Links:
 
         Solana Deploys Post-Quantum Signatures on Testnet
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 8aa110e0-f43d-11f0-919f-d7f77c891761
-    guid: 8aa110e0-f43d-11f0-919f-d7f77c891761
-    title: "Uneasy Money: In a World of AI, Are Dino Privacy Coins a Good Bet?"
-    duration: 3268
-    published: Sun, 18 Jan 2026 07:15:00 -0000
-    published_sort: "20260118"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2531285572.mp3?updated=1768721695
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2531285572.mp3?updated=1768721695
-    image: https://megaphone.imgix.net/podcasts/8aa110e0-f43d-11f0-919f-d7f77c891761/image/e4b68a8b9d55c7ec99a255c56a2fd80e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Thank you to our sponsor, MultiChain Advisors!
-
-
-      Privacy is back on the radar as Monero gets compared to silver. Meanwhile, Vitalik wants Ethereum to ossify,
-      former New York City Mayor Eric Adams’ NYC token rugs and X's algorithm has crypto Twitter up in arms.
-
-
-      In this episode of Uneasy Money, hosts Kain Warwick, Luca Netz and Taylor Monahan unpack: Monero's sudden surge,
-      Vitalik's “walkaway test,” why blatant scams like Adams’ NYC token continue to succeed and whether X has been
-      suppressing crypto content.
-
-
-      Don’t miss Kain’s story on how he lost nearly $250K in a wild vibe coding experiment.
-
-
-      Plus, Is Vitalik's “walkaway test” too “aspirational?” And could X cashtags usher in the next altseason?
-
-
-      Hosts:
-
-        Luca Netz
-
-        Kain Warwick
-
-        Taylor Monahan
-
-      Links:
-
-        Why the Privacy Coins Mania Is Much More Than Price Action
-
-        Eric Adams’ NYC Token Crashes Amid Liquidity Concerns
-
-        Ethereum’s Vitalik Buterin Says Blockchain Trilemma ‘Has Been Solved’
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript

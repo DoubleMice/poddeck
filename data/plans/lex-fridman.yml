@@ -1,10 +1,10 @@
 source: lex-fridman
-refreshed_at: 2026-06-23T04:30:54.873Z
+refreshed_at: 2026-06-23T18:45:45.296Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -20,5 +20,5 @@ episodes:
     url: https://lexfridman.com/paul-rosolie-3/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=paul-rosolie-3
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_paul_rosolie_3.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
-    status: pending
+    status: generated
     priority: 1
