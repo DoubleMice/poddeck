@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-06-24T04:32:59.293Z
+refreshed_at: 2026-06-24T18:39:14.543Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 115
-done: 0
-pending: 6
-needs_transcript: 109
+done: 1
+pending: 7
+needs_transcript: 106
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 8ff34f42-6b4b-11f1-acc3-272f40df8c3c
@@ -96,7 +96,7 @@ episodes:
       🦕 51:26 Crypto good news: Jurassic Finance tokenizes dinosaur bones
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: bcff829c58c4481ba5f16af0b110b37f,2981046a3e3e49e0b9c0248ed95e0cfc,3db43041c8514500b2b29ec269431fd8,da71f3ff85774c4bae02d0e4f0a252b1
@@ -882,8 +882,12 @@ episodes:
       🤖 46:46 AI good news: Redmod AI system may detect pancreatic cancer early
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-24T18:39:15.816Z
+    transcript_job_id: 49a818f8ab2f4e67840cf35312bf4787,60e6fc46fc2d4f1296b00bd251465141,5a3ee81207a04bada5771763447d7a90,e0fa13b215e64028bfbed5851d09a083
+    transcript_completed_at: 2026-06-24T18:42:14.691Z
   - id: 6089b8d2-4efd-11f1-be35-93e84526074f
     guid: 6089b8d2-4efd-11f1-be35-93e84526074f
     title: "Bits + Bips: Why the AI Rally Keeps Growing — and Why Circle Launched Arc"
@@ -965,8 +969,12 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-24T18:42:14.877Z
+    transcript_error: fetch failed
+    transcript_completed_at: 2026-06-24T18:47:57.713Z
   - id: 3e1f69e4-4b02-11f1-ad1e-7b19f4afcb2a
     guid: 3e1f69e4-4b02-11f1-ad1e-7b19f4afcb2a
     title: Coinbase's Chief Policy Officer on Why He Believes the Clarity Act Will Pass
@@ -1048,8 +1056,12 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-24T18:47:57.797Z
+    transcript_job_id: bf911a82a9d64ed38e1e48582c4f0708,240e53d04f004da7b3eed7bc0efbfe14,0682086957764492b94048c894c7e80b
+    transcript_completed_at: 2026-06-24T18:49:38.958Z
   - id: 7a8aaf0e-47e9-11f1-a2d1-030e826b82d5
     guid: 7a8aaf0e-47e9-11f1-a2d1-030e826b82d5
     title: A16z Crypto Raised $2.2 Billion for Fund 5. Here's How They Plan to Deploy It
@@ -4127,8 +4139,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5890,8 +5901,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

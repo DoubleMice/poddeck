@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>趋势跟踪的价差狩猎 — Moritz Heiden & Moritz Seibert</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #fafafa;
+  padding: 0;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  background: #fff;
+}
+header {
+  text-align: center;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 40px;
+}
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+header .meta {
+  font-size: 14px;
+  color: #868e96;
+}
+header .meta span {
+  margin: 0 8px;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 40px 0 16px;
+  color: #1a1a1a;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e9ecef;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  color: #333;
+}
+p {
+  margin-bottom: 14px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr; }
+  article { padding: 24px 16px 40px; }
+  h2 { font-size: 20px; }
+  p { font-size: 16px; }
+}
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.card strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+.card .sub {
+  font-size: 13px;
+  color: #666;
+}
+.card.blue { background: #eff6ff; border-color: #3b82f6; }
+.card.green { background: #f0fdf4; border-color: #22c55e; }
+.card.yellow { background: #fefce8; border-color: #eab308; }
+.card.red { background: #fff1f2; border-color: #f43f5e; }
+.card.purple { background: #faf5ff; border-color: #a855f7; }
+.card.orange { background: #fff7ed; border-color: #f97316; }
+.quote-block {
+  padding: 16px 20px;
+  margin: 16px 0;
+  border-radius: 6px;
+  border-left: 4px solid;
+  font-style: italic;
+  line-height: 1.6;
+}
+.quote-block .attr {
+  font-size: 13px;
+  color: #868e96;
+  margin-top: 6px;
+  font-style: normal;
+}
+.quote-block.blue { background: #eff6ff; border-color: #3b82f6; }
+.quote-block.green { background: #f0fdf4; border-color: #22c55e; }
+.quote-block.yellow { background: #fefce8; border-color: #eab308; }
+.quote-block.red { background: #fff1f2; border-color: #f43f5e; }
+.quote-block.purple { background: #faf5ff; border-color: #a855f7; }
+.quote-block.orange { background: #fff7ed; border-color: #f97316; }
+.callout {
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.callout strong {
+  color: #3b82f6;
+}
+footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #e9ecef;
+  text-align: center;
+  font-size: 13px;
+  color: #868e96;
+}
+footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+@media (max-width: 600px) {
+  .comparison { grid-template-columns: 1fr; }
+}
+.comp-box {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.comp-box.neg { background: #fff1f2; border: 2px solid #fecdd3; }
+.comp-box.pos { background: #f0fdf4; border: 2px solid #bbf7d0; }
+.comp-box h4 { font-size: 16px; margin-bottom: 8px; }
+.section-divider {
+  text-align: center;
+  margin: 40px 0 24px;
+  font-size: 13px;
+  color: #868e96;
+  letter-spacing: 2px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+@media (max-width: 600px) {
+  .stats-grid { grid-template-columns: 1fr; }
+}
+.stat-card {
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.stat-card .num {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.stat-card.blue { border-color: #bfdbfe; background: #eff6ff; }
+.stat-card.green { border-color: #bbf7d0; background: #f0fdf4; }
+.stat-card.purple { border-color: #e9d5ff; background: #faf5ff; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>趋势跟踪的价差狩猎</h1>
+  <div class="meta">
+    Moritz Heiden & Moritz Seibert · Takahi Capital<br>
+    Flirting with Models S7E25 · 2026年1月 · ~67分钟
+  </div>
+</header>
+
+<section>
+  <p>在资产管理行业，"做大"几乎是一种本能。规模意味着更多的管理费、更强的品牌、更低的运营成本占比。但 Takahi Capital 的两位创始人——Moritz Heiden 和 Moritz Seibert——选择了一条几乎没有人走的路：在业绩最高点，关掉一只刚刚获得行业大奖的基金。</p>
+
+  <p>不仅如此，他们在新基金中去掉了所有管理费，只靠业绩报酬生存。他们把容量上限写进法律文件，可能不到五亿美元就会关门。他们交易的是加利福尼亚碳配额、南非白玉米、加拿大油菜籽——这些你在大多数 CTA 的组合里根本找不到的市场。</p>
+
+  <p>他们的故事不是关于"如何挑选最好的市场来做趋势跟踪"。恰恰相反——是关于为什么<strong>不挑市场</strong>，让系统在尽可能多的、相互独立的赌注上同时运行，才是更稳健的做法。</p>
+
+  <div class="callout">
+    <strong>本期核心问题</strong>：当你的策略依赖于小众市场才能完整执行时，你会为了规模和费用去稀释策略，还是反过来，限制规模来保护策略的纯度？
+  </div>
+</section>
+
+<section>
+  <h2>为什么这期重要？</h2>
+
+  <div class="card-grid">
+    <div class="card blue">
+      <strong>关闭成功的基金</strong>
+      <div class="sub">业绩优异、在募资窗口期主动关闭——这一反直觉的决策背后是对策略与结构对齐的深刻理解</div>
+    </div>
+    <div class="card green">
+      <strong>零管理费</strong>
+      <div class="sub">"所有对冲基金都应该这么做"——只靠业绩报酬，将管理人与投资人利益真正绑定</div>
+    </div>
+    <div class="card yellow">
+      <strong>容量上限即优势</strong>
+      <div class="sub">$500M 硬上限，可能更早关门——只有规模足够小，才能给另类市场同等的风险预算</div>
+    </div>
+    <div class="card purple">
+      <strong>价差交易的六种武器</strong>
+      <div class="sub">日历、替代、地域、产品、加工、合成——每种价差在不同时间捕捉不同的趋势</div>
+    </div>
+    <div class="card orange" style="grid-column: 1 / -1;">
+      <strong>多元化的免费午餐</strong>
+      <div class="sub">计算机不在乎多跑一个标的——在更多的独立赌注上下注，是趋势跟踪中唯一真正免费的东西</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>一、关闭一只成功的基金</h2>
+
+  <p>原基金 <em>Global Quantitative Fund</em> 的表现并不差。事实恰恰相反——它刚刚获得了 With Intelligence 对冲基金欧洲表现奖，属于宏观与系统化 CTA 类别。资产稳定增长，多年 track record 已经建立。对于大多数基金管理者来说，这是"踩油门"的时刻。</p>
+
+  <p>但两位 Moritz 看到的不是油门——而是手刹。</p>
+
+  <p>原基金的架构是在美国设立主基金、开曼设立联接基金。美国主基金受 CFTC 监管，属于美国实体——这意味着一长串市场根本无法交易：中国在岸商品期货、某些被 CFTC 认为"不够分散化"的股指（如荷兰 AEX），以及其他相当数量的市场。</p>
+
+  <p>对于一支大部分 alpha 来源就在这些"边缘地带"的策略来说，这就像是下棋时被拿掉了一半的棋子。</p>
+
+  <p>同时，原基金收取管理费。而两位 Moritz 的信念是：如果你声称自己能创造 alpha，你应该而且只应该通过业绩来获得报酬。管理费"把你引向错误的路径"——它激励的是 AUM 增长，而不是投资业绩。</p>
+
+  <p>解决方案不是修修补补——而是关闭旧基金，在 2024 年 6 月推出全新的 Global Markets Fund。新基金用开曼主基金替代了美国主基金，移除了费用结构中的管理费，并且从一开始就设定了容量上限。</p>
+
+  <div class="quote-block blue">
+    "It's definitely nice to close it on a high."
+    <div class="attr">— Moritz Heiden，谈为什么选择在业绩最高点关闭基金</div>
+  </div>
+</section>
+
+<section>
+  <h2>二、策略与结构必须对齐</h2>
+
+  <p>这一决策背后的逻辑，远不止法律合规层面的考量。主持人 Cory Hofstein 在节目中提出的那句话说得很准——"策略和结构必须对齐才能真正为投资者工作"。</p>
+
+  <div class="comparison">
+    <div class="comp-box neg">
+      <h4>美国主基金的限制</h4>
+      <ul style="padding-left:18px;margin-top:6px;">
+        <li>无法直接交易中国在岸商品期货</li>
+        <li>不能交易"不够分散化"的股指</li>
+        <li>一长串禁止清单</li>
+        <li>这些正是策略的核心市场</li>
+      </ul>
+    </div>
+    <div class="comp-box pos">
+      <h4>开曼主基金的优势</h4>
+      <ul style="padding-left:18px;margin-top:6px;">
+        <li>几乎可以交易任何市场</li>
+        <li>直接接入中国商品、欧洲小众股指</li>
+        <li>更多独立回报流</li>
+        <li>更精确地结晶 alpha</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>Moritz Seibert 用一个比喻解释了这个逻辑：更多独立的、正交的市场意味着"在更多的黑杰克牌桌上同时玩牌——每张桌子独立，增加获胜概率。独立桌子的数量越多，我们以更高精度、更少噪音结晶优势的可能性就越大。"</p>
+
+  <div class="quote-block green">
+    "We're playing more hands at the blackjack table — independent blackjack tables. And that's a good thing for us. It's important for our portfolio to work and we wouldn't want to miss out on these markets."
+    <div class="attr">— Moritz Seibert</div>
+  </div>
+</section>
+
+<section>
+  <h2>三、零管理费的逻辑</h2>
+
+  <p>对冲基金的标准收费模式是"2 and 20"——2% 管理费加 20% 业绩报酬。但 Takahi 的新基金只收取业绩报酬，管理费为零。</p>
+
+  <p>Moritz Seibert 的观点非常直接："管理费本质上是服务费——无论业绩好坏你都收得到。如果你声称自己能创造 alpha（这本身就已经足够困难了），我认为你应该且只应该通过激励费或业绩费来获得报酬。管理费把你引向错误的路径。"</p>
+
+  <p>这不是一个容易的决策。管理费是基金运营的稳定现金流——支付工资、租金、数据和研究成本。去掉它意味着基金完全暴露在业绩波动的风险中。但这正是关键所在：去掉管理费，基金经理和投资人的利益才真正完全对齐。你对 alpha 的信念必须足够强，强到愿意把自己的运营也押在上面。</p>
+
+  <div class="quote-block yellow">
+    "We think, quite frankly, all hedge funds should be doing that."
+    <div class="attr">— Moritz Seibert</div>
+  </div>
+</section>
+
+<section>
+  <h2>四、容量上限作为精心的设计</h2>
+
+  <p>新基金的容量上限写进了法律文件：500M 美元。但两位 Moritz 也坦诚地表示，这个数字可能"过于激进"。实际可能在 300M 到 400M 就关闭——取决于市场流动性、交易所持仓限额和监管限制的变化。</p>
+
+  <p>为什么需要这个上限？因为如果你是一支数十亿美元的 CTA，交易 10 年期国债、纳斯达克、DAX 和欧洲美元完全不是问题。但如果你想给加州碳配额、向日葵籽、丙烷这些市场分配和 10 年期国债<em>同等的风险预算</em>——那你就必须保持足够的"小"。</p>
+
+  <p>很多这类市场是"经纪商市场"——你在屏幕上输入代码，可能什么也看不到。不代表这些市场不交易或缺乏流动性。只是历史上这些市场通过经纪人运行，商业参与者通过传统和进化与特定经纪人建立联系。Takahi 通过这些经纪人接入，但为了给这些小众市场提供同等的"分量"（punchiness），容量上限不是可选项，而是前提条件。</p>
+
+  <div class="quote-block purple">
+    "If you want to trade California Carbon Allowances and give it the same expected footprint and risk contribution and profit contribution as the 10-year note, you simply need to have that cap."
+    <div class="attr">— Moritz Heiden</div>
+  </div>
+
+  <p>容量上限不是被迫的限制——它是主动的策略设计。为了获得其他大基金根本无法参与的 alpha 来源。</p>
+</section>
+
+<section>
+  <h2>五、为肥尾彩票买门票</h2>
+
+  <p>为什么要费力去交易这些低流动性的小市场？为什么不干脆做一个干净的、流动性的趋势跟踪组合？</p>
+
+  <p>Moritz Heiden 的回答是：所有这些市场在不同时间点有不同且独立的趋势——而我们根本预测不了下一个爆发的是谁。去年是可可带动长线趋势跟踪组合的收益。今年是白银（年内涨幅超 100%）、黄金、铂金、钯金——这些都不是另类市场。但明年可能是 TTF 天然气、英国碳配额、中国商品期货。你永远不知道。</p>
+
+  <p>重要的是——他不声称这些小众市场"趋势更强"。<strong>作者概括</strong>：Moritz 非常诚实地说，统计显著性检验很难证明小众市场的趋势特性更好。更准确的说法是：所有市场在足够长的时间跨度上应该有相同的期望回报——我们只是不知道回报会从哪个市场来。</p>
+
+  <div class="quote-block green">
+    "It's far easier for us, and I think more apt to say that all of these markets have the same expectation over time if we can trade for a long enough period of time. And we simply cannot forecast where it's coming from. So we're spraying these bets in a as diverse manner as we possibly can."
+    <div class="attr">— Moritz Seibert</div>
+  </div>
+</section>
+
+<section>
+  <h2>六、如何筛选另类市场</h2>
+
+  <p>筛选过程不是纯粹系统化的。不是把数据扔进回测、选出回测曲线向右上角走的品种。而是更像一个清单式的人工流程：</p>
+
+  <p>首先，经纪人推荐和市场讨论——你从日常对话中发现潜在的有趣市场。然后，一个系统的检查清单启动：</p>
+
+  <p><strong>流动性</strong>是第一道大闸——跨合约、跨期限是否有足够的流动性？这不只关乎进入，更关乎退出。仅这一条就能淘汰掉约 70% 的候选价差组合。</p>
+
+  <p><strong>接入评估</strong>——现有经纪商可以执行吗？需要签 ISDA 吗？是屏幕交易还是需要专业经纪人？OTC 交易会引入额外的对手方风险、法律复杂性和技术集成工作（需要导入不同的价格源，对账系统需要对接新的标的）。</p>
+
+  <p><strong>数据质量</strong>——是否有足够长的历史数据？如果只有三个月的数据，什么都做不了。</p>
+
+  <p><strong>分散化价值</strong>——这个新市场与现有组合是真正不相关的吗？还是会重复已有的暴露？期货货运和油菜籽之间没有任何关联，也没有宏观冲击会同时影响这两个市场。这就是理想的可添加品种。</p>
+
+  <p>最后一步是<strong>试盘</strong>——先用少量合约交易，走通经纪商、清算、结算全流程。确认一切顺利后再逐步增加风险预算。</p>
+</section>
+
+<section>
+  <h2>七、价差交易的六种武器</h2>
+
+  <p>新基金最大的差异化特征之一，是对价差（spreads）的趋势跟踪。这不是简单的"做多一个合约、做空另一个"——价差有自己的类型学，每类价差捕捉的回报驱动因素完全不同。</p>
+
+  <div class="card-grid">
+    <div class="card blue">
+      <strong>日历价差</strong>
+      <div class="sub">同一品种不同到期月份。如 6月 WTI vs 12月 WTI。最核心的类型，有倒计时钟。</div>
+    </div>
+    <div class="card green">
+      <strong>替代价差</strong>
+      <div class="sub">功能可替代的商品之间。如阿拉比卡咖啡 vs 罗布斯塔咖啡、豆油 vs 棕榈油。</div>
+    </div>
+    <div class="card yellow">
+      <strong>地域价差</strong>
+      <div class="sub">同一商品不同地点。如 LME 铜 vs COMEX 铜、布伦特 vs 迪拜原油。</div>
+    </div>
+    <div class="card purple">
+      <strong>产品/跨市场价差</strong>
+      <div class="sub">相关但不同品种。如德国 Bund vs 美国 10 年期国债、S&P 500 vs 纳斯达克。</div>
+    </div>
+    <div class="card orange">
+      <strong>加工价差</strong>
+      <div class="sub">裂解价差（原油→汽油）、压榨价差（大豆→豆油+豆粕）、火花价差（天然气→电力）。</div>
+    </div>
+    <div class="card red">
+      <strong>合成价差</strong>
+      <div class="sub">任意自定义组合。Takahi 目前只做研究，未实盘——"说起来容易，做起来极其复杂"。</div>
+    </div>
+  </div>
+
+  <p>为什么交易价差？因为价差在不同时间点有与 outright 合约完全不同的趋势。一个 WTI 日历价差可能与 WTI 前月合约走势截然不同。捕捉并参与这些趋势是非常有价值的分散化收益——而且对计算机来说几乎零额外成本。</p>
+
+  <div class="quote-block blue">
+    "The machine, our computers, do not care whether they're calculating an additional spread or an outright market. It's just, the code runs. And whether you run it on 100 markets or 100 spreads or 200 things, it doesn't really matter."
+    <div class="attr">— Moritz Heiden</div>
+  </div>
+</section>
+
+<section>
+  <h2>八、日历价差的生命周期</h2>
+
+  <p>日历价差有一个独特的时间维度——每个价差都有一个"倒计时钟"在滴答作响。这个倒计时由近月合约的到期日驱动。Moritz 描述了四个生命周期阶段：</p>
+
+  <p><strong>静默期</strong>：价差存在但流动性极低，没有信号触发，系统不关注。比如 3月-4月 NatGas 价差在 2027 年——它现在就可以被创建和交易，但几乎只有你一个人在动它。</p>
+
+  <p><strong>观察窗口</strong>：预设的可交易窗口打开。以 3月-4月 NatGas 为例，大概在 6-7 月进入观察窗口。流动性开始增加，系统开始扫描信号。</p>
+
+  <p><strong>持仓阶段</strong>：信号触发，建仓交易，波动可控。系统选中哪个价差就持有哪个——不做金字塔加仓（如果另一个信号也看多，不会叠加头寸，因为这些价差可能"非常爆炸性"）。</p>
+
+  <p><strong>到期退出</strong>：近月合约进入交割，波动剧烈爆发。在最后 3 个交易日完全退出——因为最后几天的价差走势"无法预测，就像掷骰子"。对于追求趋势的系统来说，参与最后三天的价格发现毫无意义。</p>
+
+  <p>不同的价差根据季节跨度分配不同的风险预算：跨冬夏的价差（3月 vs 4月 NatGas——著名的"寡妇制造者"）获得较小的风险预算；夏季内部的价差（7月 vs 8月 NatGas）获得较大的风险预算——但后者太平淡，通常不会被系统选中。</p>
+</section>
+
+<section>
+  <h2>九、奥卡姆剃刀与简单之道</h2>
+
+  <p>如果你交易的是一个价差——比如做多 6月 WTI、做空 12月 WTI——随着时间推移，近月合约的 beta 会逐渐变化。有人会做波动率调整、比率价差或名义值调整来"对冲 beta"。但 Takahi 不做这些。他们交易的是等数量、等合约的 1:1 价差。</p>
+
+  <p>"有人会指责我们没有被对冲——但问题是我们不想被对冲。我们想参与的是价差在数据中呈现给我们的样子，我们想跟随它一起移动。"</p>
+
+  <p>这不是懒——这是有意的简单。Moritz 解释：你可以找到无数种"完美"调整价差的方法，每种在数据中的某个时段都表现得很好。但这非常容易自欺欺人。长期来看，等数量单位和任何精细调整方案大致殊途同归。所以——奥卡姆剃刀。</p>
+
+  <div class="quote-block yellow">
+    "Occam's razor — keep it simple. It's very easy to torture your mind and your brain with the perfect sizing of spread combinations and you will definitely find something in the data that will tell you oh you should exactly be doing this. You might also be very easily fooling yourself playing around with these things."
+    <div class="attr">— Moritz Heiden</div>
+  </div>
+
+  <p>这也是从项目一开始就贯彻的投资哲学——追求稳健和韧性的策略，回避不必要的复杂性。</p>
+</section>
+
+<section>
+  <h2>十、小亏损、多频次、永不大亏</h2>
+
+  <p>价差交易的风险管理有其独特之处。Moritz 区分了两类头寸的处理方式：</p>
+
+  <p>Outright 市场获得 X 基点的风险预算。但价差只获得 0.5X——因为它们可能波动两倍，可能造成严重损失。"我们会犯错的一边是谨慎"，尤其是在季节性价差上。</p>
+
+  <p>这个哲学浓缩成一句话就是 Takahi 的风险管理核心：</p>
+
+  <div class="quote-block red">
+    "We are very good at taking small losses. Many of them, never a big loss."
+    <div class="attr">— Moritz Heiden</div>
+  </div>
+
+  <p>每个价差交易都是一个倒计时。近月合约到期 = 必须退出。如果在此之前有一个大趋势，利润会跑得很远。如果没有，就是一笔小亏损——没问题。很多次小亏损加起来的成本，远小于为了避免所有亏损而错过的那些爆炸性移动所带来的机会成本。</p>
+
+  <p>这也引向了一个更深层的生存哲学——"如果在后见之明中你总是说'我应该把仓位放得更大'，那并不重要。如果你总是在和同行比较，你会把自己逼疯。你必须走自己的路，而这条路上最重要的事情是：30、40、50 年后退休时，我们还在。"</p>
+
+  <div class="quote-block purple">
+    "Forge your own path. The most important thing of that path is that we're still around in 30, 40, 50 years when we retire. In trading the big traders, the reckless traders, the ones that take big positions — yes there are some great ones out there but there's also so many ones that we never hear about because their funds are no longer around."
+    <div class="attr">— Moritz Heiden</div>
+  </div>
+</section>
+
+<section>
+  <h2>十一、预测市场：为何看而不买</h2>
+
+  <p>Polymarket 等预测市场正在崛起——体育赌博、总统选举、加密货币价格预测。表面上，它们似乎提供了高度不同于传统期货的回报流。但两位 Moritz 列出了为什么它们不适合趋势跟踪的几个根本原因：</p>
+
+  <p>首先，<strong>风险回报结构完全不对</strong>。趋势跟踪需要"受控下行、无限上行"——但预测市场的最大赔付永远是 $1。如果一个赌注从 20¢ 涨到 60¢，你的盈利空间反而从 80¢ 缩水到了 40¢。价格越涨，潜在盈利越小——这与趋势跟踪的逻辑正好相反。这就像做空 penny stock——最大盈利被硬性封顶。</p>
+
+  <p>其次，<strong>治理风险</strong>。Polymarket 使用 UMA 代币持有者作为争议解决机制。2025 年已经出现了多起有争议的裁决——有些大额代币持有者在所裁决的赌注中有头寸，这导致了利益冲突。Moritz 的立场非常明确："我永远不会把这个加入组合。在那一刻，不再是关于赌注本身或你对错的判断——而仅仅是你无法控制的次要效应决定了你的头寸盈亏。"</p>
+
+  <p>第三，<strong>市场监管</strong>。受 CFTC 和 BaFin 监管的基金需要透明、客观的定价，需要清算所保护。"我们不想接入任何赌博交易所。"</p>
+
+  <div class="quote-block orange">
+    "I would never add this to the portfolio to be honest, because at that moment it's not about the bet or being right but it's just about how easy is this market to be manipulated."
+    <div class="attr">— Moritz Heiden</div>
+  </div>
+</section>
+
+<section>
+  <h2>十二、探索宏观动量</h2>
+
+  <p>在价格数据之外，两位 Moritz 也在探索基于宏观变量的趋势信号——受 AQR 2017 年论文的启发（并于 2025 年做了真正的样本外回访验证），他们尝试了<strong>基于案例的决策理论</strong>。</p>
+
+  <p>这个框架来自机器学习——它查找历史上与当前相似的情景（可包含宏观变量、价格变量、回撤、波动率），然后计算不同的走势路径在历史中的出现概率。在 Takahi 的期货 universe 上测试时，结果令人惊讶——它确实能捕捉趋势，且与纯价格模型的相关性很低。</p>
+
+  <p>但这一模型目前尚未进入实盘。原因在于——宏观数据有其自身的"脏"特性。CPI 可能延迟发布或被事后修正。如果模型依赖 CPI 作为最重要的驱动因子，而 CPI 数据突然不可用了——模型该怎么办？</p>
+
+  <p>这引出了一个对所有模型都适用的通用教训：<strong>永远不要强迫模型持仓</strong>。</p>
+
+  <div class="quote-block blue">
+    "We should never force a model to be in a position because if there's just a lot of uncertainty around the inputs or there's just no trend there, then why force the model to be in a trend at all? Having no position on in one of the markets is a position as well."
+    <div class="attr">— Moritz Heiden</div>
+  </div>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+
+  <div class="section-divider">━━━ 这期对谈里最值得记住的话 ━━━</div>
+
+  <div class="quote-block blue">
+    "Diversification is really the thing that we're getting for free."
+    <div class="attr">— Moritz Heiden，谈为什么要在所有可能的独立赌注上下注</div>
+  </div>
+
+  <div class="quote-block green">
+    "We're very good at taking small losses. Many of them, never a big loss."
+    <div class="attr">— Moritz Heiden，趋势跟踪风险管理的核心原则</div>
+  </div>
+
+  <div class="quote-block yellow">
+    "We want to have controlled downsides, small downsides, unlimited upside potentially."
+    <div class="attr">— Moritz Heiden，趋势跟踪的非对称回报结构</div>
+  </div>
+
+  <div class="quote-block purple">
+    "Forge your own path. The most important thing is that we're still around in 30, 40, 50 years when we retire."
+    <div class="attr">— Moritz Heiden，长期生存重于短期比较</div>
+  </div>
+
+  <div class="quote-block orange">
+    "We focus on robust and resilient trading strategies — we want to avoid unnecessary complexities, keep things simple where we can."
+    <div class="attr">— Moritz Seibert，投资哲学的基础原则</div>
+  </div>
+
+  <div class="quote-block red">
+    "We're spraying these bets in a as diverse a manner as we possibly can. We simply cannot forecast where the returns are coming from."
+    <div class="attr">— Moritz Seibert，为什么不挑市场的核心理由</div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    原文链接：<a href="http://www.flirtingwithmodels.com/">Flirting with Models — S7E25</a>
+  </p>
+  <p style="margin-top:8px;">
+    本文章基于播客转录生成，所有引言均可在转录中找到原文出处。
+  </p>
+</footer>
+
+</article>
+</body>
+</html>
