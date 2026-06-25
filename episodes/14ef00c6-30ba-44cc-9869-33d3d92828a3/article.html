@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Costco：零售业的终极哲学 — Acquired 播客深度解析</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+  header {
+    text-align: center;
+    padding: 60px 0 40px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 48px;
+  }
+  header h1 {
+    font-size: 2.2em;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+  }
+  header .subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  header .meta {
+    font-size: 0.9em;
+    color: #999;
+  }
+  .overview {
+    margin-bottom: 48px;
+  }
+  .overview h2 {
+    font-size: 1.3em;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .card {
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 0.92em;
+    line-height: 1.5;
+  }
+  .card strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1.05em;
+  }
+  .card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  section {
+    margin-bottom: 40px;
+  }
+  section h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  section p {
+    margin-bottom: 14px;
+    text-indent: 2em;
+  }
+  section p:first-of-type {
+    text-indent: 0;
+  }
+  .quote-block {
+    margin: 40px 0;
+    padding: 48px 0;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+  }
+  .quote-block h2 {
+    border-bottom: none;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .quote {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+  .quote .text {
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  .quote .attr {
+    font-size: 0.85em;
+    color: #888;
+    font-style: normal;
+  }
+  .q-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .q-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .q-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .q-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .q-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .q-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .gloss {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 0 20px;
+    border-top: 2px solid #eee;
+    margin-top: 48px;
+    font-size: 0.9em;
+    color: #999;
+  }
+  footer a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 32px 0;
+  }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .stat {
+    text-align: center;
+    padding: 16px 12px;
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+  }
+  .stat .number {
+    font-size: 1.8em;
+    font-weight: 800;
+    margin: 6px 0;
+  }
+  .stat .label {
+    font-size: 0.8em;
+    color: #888;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 20px 16px 40px; }
+    header { padding: 40px 0 30px; }
+    header h1 { font-size: 1.6em; }
+    body { font-size: 16px; }
+    .cards { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Costco：零售业的终极哲学</h1>
+  <div class="subtitle">Acquired 播客对 Costco 商业模式的深度剖析</div>
+  <div class="meta">来源：Acquired.fm · Season 13, Episode 2 · 2026 年 1 月</div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <p style="text-indent:0">Acquired 播客的主持人 Ben Gilbert 和 David Rosenthal 在开篇就说："我从来没有像现在这样爱过一家公司和它的商业模式。" 他们花了三个多小时，从 Sol Price 在纽约布朗克斯区的出生讲到 Costco 今天在全球 860 家门店的辉煌。这不仅仅是一个零售公司的故事——这是一部关于"如何正确地做生意"的哲学教科书。</p>
+  <div class="cards">
+    <div class="card card-blue">
+      <strong>$2,300 亿营收</strong>
+      仅凭 3,800 个 SKU。单店营收是 Walmart 的三倍，每平方英尺收入 $1,800——比 Tiffany 差不了太多。
+    </div>
+    <div class="card card-green">
+      <strong>47 年不涨价的热狗</strong>
+      $1.50 的热狗+饮料套餐自 1976 年以来从未涨过价。每年卖出 1.3 亿个。
+    </div>
+    <div class="card card-orange">
+      <strong>负现金转换周期</strong>
+      库存年周转 12.4 次，平均 27 天卖完。货卖掉后才需付款给供应商——供应商实际上在为 Costco 的库存融资。
+    </div>
+    <div class="card card-purple">
+      <strong>两个生意一个屋顶</strong>
+      70% 的营业利润来自会员费（接近 100% 毛利率）。零售业务只是一个获客引擎。
+    </div>
+    <div class="card card-red">
+      <strong>14% 毛利率铁律</strong>
+      任何商品加价不得超过 14%。Jim Sinegal 说涨价就像海洛因——尝一点就想要更多。
+    </div>
+    <div class="card card-yellow">
+      <strong>93% 续费率</strong>
+      美国会员的年续费率达到 93%，比大多数流媒体服务都高。
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>一、Sol Price：零售教父的起源</h2>
+  <p>Sol Price 出生于 1916 年的纽约布朗克斯区。他的父母是从白俄罗斯来的犹太移民，十几岁时在埃利斯岛登陆——身无分文，不会英语。像当时的许多犹太移民一样，他们在下东区的服装厂找到了工作。那个时代的工厂条件极为恶劣——1911 年的三角衬衫工厂大火导致 146 人死亡，因为工厂主把门锁上了以防工人偷东西。这场灾难催生了美国劳工运动、共产党和社会党的兴起。</p>
+  <p>Sol 在自传中说了一句意味深长的话："在当时的纽约犹太社区，没有共和党这个东西。社会主义者是保守派，共产主义者是激进派。" 你无法编造这样的巧合——美国零售资本主义史上最有影响力的人物，竟然是从三角衬衫工厂大火运动、共产主义和社会主义的土壤中成长起来的。</p>
+  <p>Sol 因一只眼睛下垂而极不自信，但因此成为超级优等生，跳了两级。高中时全家迁往圣地亚哥——当时只是一个 15 万人口的小城市。他遇到了未来的妻子 Helen Moskowitz，而 Helen 的家族恰好拥有圣地亚哥最成功的废金属生意之一。二战期间，圣地亚哥成为美国海军太平洋舰队的主要港口，城市经历了爆炸式增长。Sol 去 USC 读了法学，回到圣地亚哥执业——恰好赶上了这个繁荣期的开端。</p>
+</section>
+
+<section>
+  <h2>二、Fedco 与 FedMart：折扣店这个品类的诞生</h2>
+  <p>战后，Sol 作为律师为多家零售初创公司提供咨询服务。其中一个客户是洛杉矶的非营利会员俱乐部 Fedco——只对联邦雇员（主要是邮政工人）开放，会员们集中购买力以获取更低价格。Fedco 如此成功，以至于人们从全南加州开车几百英里来购物。Sol 看到了这个机会，两次联系 Fedco 寻求在圣地亚哥开加盟店——甚至提出 Fedco 可以拥有全部股权——但被拒绝了。</p>
+  <p>1954 年 11 月，Sol 和合作伙伴在 Helen 家族的一个闲置仓库里开设了自己的版本——FedMart。名字是致敬 Fedco，"Mart"这个后缀后来被 Walmart 和 Kmart 沿用。Sam Walton 在自传中坦率承认，他从 Sol Price 那里"偷"来的想法比任何人都多。</p>
+  <p>FedMart 第一年就做到了 300 万美元的销售额——预期只有 100 万。为什么之前没有人做这个？因为当时美国法律允许制造商设定最低零售价格，以低于该价格向公众销售是违法的。但 Sol 无意中发现了一个漏洞——如果是会员俱乐部，就不算"对公众销售"。折扣店（discounter）这个品类由此诞生。</p>
+  <p>FedMart 迅速扩展到凤凰城（开业时停车场排队长达半英里）、德克萨斯等地。他们增加了加油站（以成本价出售汽油引流）、药房（因价格太低，药房负责人收到了死亡威胁），还创造了自有品牌"FM"。但最重要的是，Sol 在这个时期凝练出了著名的"四优先原则"——后来成为 Costco 行为准则的蓝本。</p>
+</section>
+
+<section>
+  <h2>三、四优先原则与不做亏本生意的哲学</h2>
+  <p>在 FedMart 的早期，Sol Price 制定了他著名的四优先原则，并亲自教给每一位新员工：第一，为顾客提供最好的价值；第二，为员工提供好的工资和福利（包括医保）——这在 1950 年代是极其进步的做法；第三，保持诚实的商业行为；第四，为投资者赚钱。</p>
+  <p>这些原则听起来像是任何公司都会挂在墙上的口号。但 Sol 和后来的 Costco 是真的执行了它们。两个关键取舍说明了这一点。</p>
+  <p>第一，不做亏本引流品（loss leader）。Walmart 的 Sam Walton 曾在自传中自夸如何用低于成本价的商品造势吸引客流。但 Sol 的理念是：如果你在一个商品上亏本，就必须在其他商品上加价弥补——这等于把顾客当傻子。第二，付高工资。Costco 今天的平均时薪是 $26，Walmart 是 $19.50，再加上 401k 匹配和高质量的医保。代价是更高的人力成本，但回报是极低的员工流失率（第一年后仅 7%，普通零售业 20%）、极低的商品损耗率（仅 0.15% 的销售额），以及一个不需要不断招聘和培训新人的稳定组织。</p>
+</section>
+
+<section>
+  <h2>四、60 岁的复仇：Price Club 的诞生</h2>
+  <p>到 1970 年代初，Sol 已精疲力竭。FedMart 需要资金与 Kmart 和 Walmart 竞争，他们找到了德国零售商 Hugo Mann。这是一个致命错误——Sol 把 Mann 当成"增长投资者"，但实际上这是一场敌意收购。第一次董事会两人就大吵。Mann 解雇了 Sol，换了办公室的锁，把 Sol 从他自己的公司里踢了出去。</p>
+  <p>被指派向全公司宣布这个消息的人是谁？——Jim Sinegal，当时 FedMart 的仓储运营负责人，后来的 Costco 联合创始人兼 CEO。</p>
+  <p>就像台积电的张忠谋在 56 岁被德州仪器踢出后创造了 TSMC，Sol 在 60 岁时被自己创建的公司扫地出门，然后创造了更伟大的作品。他和儿子 Robert 第二 天就租了新办公室。回顾 FedMart 的业务，他们发现了一个被低估的事实：几乎所有的利润都来自 Jim Sinegal 运营的集中仓储部门，而不是各个零售门店。门店本身利润微薄，很难与竞争者抗衡。但仓库——供应门店的那个环节——才是真正的利润中心。</p>
+  <p>于是他们有了一个新商业计划：为小企业（加油站、餐厅、便利店）建立一个批发仓库。只卖 3,000 种最高周转的商品。供应商直接送货到仓库，客户自己来取。没有复杂物流，没有拆箱摆货——极致的简单。</p>
+</section>
+
+<section>
+  <h2>五、无心插柳：当消费者闯入了 B2B 批发俱乐部</h2>
+  <p>1976 年，第一个 Price Club 在圣地亚哥开业——选址在一个 Howard Hughes 飞机公司的旧机库里。但最初的几个月很冷淡——招募企业客户比想象中困难。然后，一个决定性的偶然事件发生了。</p>
+  <p>Price Club 的年轻 CFO Giles Bateman（哈佛商学院毕业）去找圣地亚哥城市信用合作社推销会员。信用合作社说："我们不买东西。但如果我们能让会员来你这里购物，那会是很好的福利。" Bateman 谈成了一个协议：信用合作社的任何成员都可以获得"团体会员资格"，以略高于企业会员的价格在 Price Club 购物。</p>
+  <p>效果是爆炸性的。消费者蜂拥而入，打开了需求的水龙头。口碑传播自然启动——这是 Costco 至今几乎不做广告的起源。消费者愿意去仓库里从托盘上直接拿货——这个发现颠覆了当时的零售常识：只要价格够低，人们愿意跨越任何障碍。</p>
+  <p>1979 年，Price Club 的股东超过了 500 人，SEC 强制要求其注册为上市公司。Sol 甚至不需要融资——他只是被动地合规了。</p>
+</section>
+
+<section>
+  <h2>六、热狗、Jim Sinegal 与 Costco 的诞生</h2>
+  <p>随着 Price Club 门庭若市，热狗小贩开始在商店出口打电话申请摆摊。一开始被无视，但电话越来越多。最终 Sol 联系了 Hebrew National 热狗公司——对方不仅愿意供货，还愿意免费提供推车。$1.50 的热狗+饮料套餐就此诞生。47 年后的今天，价格依然不变，每年卖出 1.3 亿个。Costco 甚至自己建厂生产热狗来控制成本。</p>
+  <p>1982 年，西雅图零售商 Bernie Brotman 和儿子 Jeff（Jeff 是星巴克的早期投资者和董事会成员）打电话给 Sol，想在西北部开一家 Price Club 加盟店。Sol 拒绝了。Jeff 做了一个大胆的决定：直接挖 Price Club 的商品主管来做联合创始人。结果发现这个主管是 Sol Price 的侄子。他拒绝了，但给了 Jeff 一个名字："你该打给 Jim Sinegal。"</p>
+  <p>1983 年，Jim Sinegal 搬到西雅图，和 Brotman 父子筹了 750 万美元，招募了 8 个 FedMart/Price Club 的老兵。商业模式几乎就是 Price Club 的克隆，但掌舵的是一个"为规模执行而生的人"。不到三年营收突破 10 亿美元，不到六年突破 30 亿美元——史上第一家做到这一点的公司。</p>
+</section>
+
+<section>
+  <h2>七、合并与飞轮：PriceCostco 的诞生</h2>
+  <p>1993 年，Costco 和 Price Club 合并，各自约有 100 家门店和 80 亿美元的营收。Jim Sinegal 成为合并后公司的 CEO。这不是一场恶意收购——Costco 为 Price Club 的股票支付了超过 30% 的溢价，而且没有裁掉一个人。Sol Price 选择了和 Jim 联手，而不是看着 Price Club 落入 Walmart 手中。</p>
+  <p>合并后的 PriceCostco 仅仅比 Sam's Club 大一点点。但接下来的 30 年证明，这个差距只会扩大——不是因为 Costco 做了什么激进的事，恰恰相反，是因为它选择了不做那些"容易"的事。它选择了只卖 3,800 个 SKU 而不是 100,000 个。它选择了 14% 的毛利率天花板而不是 25%。它选择了付更高工资而不是压榨劳动力。它选择了不花一分钱广告费。它选择了等 20 年再进入中国市场。</p>
+</section>
+
+<section>
+  <h2>八、现金流的魔法：当库存成为负资产</h2>
+  <p>这或许是 Costco 商业模式中最让人惊艳的机制。因为极低的 SKU 数和"即到即售"的仓库模式，Costco 创造了一个负现金转换周期。供应商把货送到仓库时开出发票，付款期通常是 net 30。但货物立即上架销售——Costco 的库存年周转 12.4 次（Walmart 是 8 次，Home Depot 是 5 次），平均 27 天卖完一批货。这意味着商品卖掉后，Costco 才需要付钱给供应商。在一些品类，商品能周转 2-3 次才到付款日。</p>
+  <p>这不是通过压迫供应商达成的（不像某些公司要求 net 60 或 net 90）。Costco 用的是标准 30 天付款条件。这个效果的驱动力是快周转和低 SKU 数——每个单品卖得飞快。换句话说，供应商在为 Costco 的库存提供无息融资。Costco 不仅不需要投入自有资金到库存中，实际上还能从浮存金中赚点利息。对于一家表面上"资本密集"的零售企业来说，这是一种惊人的资本效率。</p>
+</section>
+
+<section>
+  <h2>九、少即是多：3,800 个 SKU 的威力</h2>
+  <p>Walmart 超级中心有 100,000-150,000 个 SKU。Costco 有 3,800 个——而且还在下降（十年前是 4,500 个）。这不是成本问题，而是战略选择。</p>
+  <p>低 SKU 数带来了一系列连锁反应：每个单品的采购量极大，所以对任何供应商来说，Costco 都是其最大客户——不是最大的渠道，是最大的单一客户；单品周转极快，库存不积压，现金转换速度为负；每个 buyer 只管理 3-15 个供应商关系，深度了解对方的成本结构，能跟踪原材料商品价格的变化；货架上几乎没有竞品——Kirkland Signature 面对的竞争品牌只有 1-2 个，有时甚至 1 个都没有。</p>
+  <p>Sol Price 早在 FedMart 时代就提出了一个概念叫"智能放弃销售"。有些顾客只需要 3 盎司的润滑油，但 FedMart 只卖 8 盎司装——这部分生意丢了，但值得。少一个 SKU 带来的效率提升远大于丢失的那点销售额。Costco 把这一原则推向了极致：你只能买 2.5 磅的坚果桶，没有 8 盎司小包装。消费者接受了这个取舍，因为他们相信 Costco 替他们选的是最好的那一个。作者概括：这本质上是"策展式零售"——Costco 的 buyer 团队替消费者做了所有功课，让消费者可以用"闭着眼买"的方式省下时间和金钱。</p>
+</section>
+
+<section>
+  <h2>十、会员制：筛选富人的艺术</h2>
+  <p>Costco 的会员制不只是一种收入来源——它是一种精妙的客户筛选和经济激励机制。基础会员费每年 $60，加上批量购买的模式，自然筛选出了现金流充裕、有存储空间的富裕消费者。一项独立研究发现，Costco 会员的平均家庭收入约为 $125,000，而 Walmart 购物者的中位收入约为 $80,000（美国中位数 $71,000）。Costco 拥有最低的价格，却拥有最富裕的消费者——这是零售业最大的悖论之一。</p>
+  <p>预付会员费还产生了禀赋效应——既然已经付了 $60，就更有可能来购物"把本赚回来"。会员制还降低了盗窃风险——会员害怕失去自己的会员资格。再加上商品本身就大件难偷（你怎么偷一台电视？一个 2.5 磅的坚果桶？），Costco 的库存损耗率仅为销售额的 0.15%。</p>
+  <p>1998 年，Costco 推出了 Executive 会员——多付 $60，享受 2% 消费返现。盈亏平衡点恰好设定在平均会员年消费额附近。55% 的美国会员是 Executive，但他们贡献了 73% 的销售额。普通会员的消费额不到 Executive 会员的三分之一。如果你没用到足够的返现，Costco 会主动退款差价——没有 breakage 策略，只有"我们不想让你觉得亏了"。</p>
+</section>
+
+<section>
+  <h2>十一、Kirkland Signature：反品牌的品牌</h2>
+  <p>Kirkland Signature 以 Costco 最初的柯克兰总部所在地命名。它的目的不是为 Costco 赚更多毛利（只是从 14% 提到了 15%），而是为会员创造更好的价值——要么更低的价格，要么更好的产品。$520 亿的年营收使 Kirkland Signature 成为全球最大的消费者包装商品品牌——超过了 Nike。</p>
+  <p>Kirkland 代表着一个明确的质量底线：不是最顶级的，但在这个价位上是绝对最好的。在 Costco 售卖的葡萄酒中，你能看到葡萄酒爱好者喝着 Kirkland Signature 的酒说"这确实不错"。伏特加、电池、羊绒衫、咖啡——Kirkland 代表的是"Costco 替你做过功课了"。它是反品牌——不需要花哨的营销和 Logo，它的品牌资产就是 Costco 会员的信任。</p>
+  <p>作者概括：在 Costco 的"围墙花园"里，商品的价格与它在外面世界的身份脱钩了。你可以买到 $500 的西南航空礼品卡只花 $450——你买到了打折的美元。即使是最注重品牌的公司也偶尔妥协：Nike 坚决不在 Costco 卖货（连 Amazon 都不上），但当库存过剩时，Nike 选择在 Costco 清货——因为在消费者的认知中，"在 Costco 打折"不等于"品牌在贬值"。</p>
+</section>
+
+<section>
+  <h2>十二、文化：那些不做广告、不裁员、不涨价的人</h2>
+  <p>Costco 的文化在当代美国大公司中几乎是独一无二的。它不是通过一次战略会议或咨询项目建立的——它用 40 年时间融化在了每一个员工的骨髓里。</p>
+  <p>Jim Sinegal 去了圣地亚哥城市学院（社区大学），Craig Jelinek 去了圣地亚哥州立大学。他们都是作为青少年在 FedMart 开始做装袋工，一路做到 CEO。Costco 历史上只有三位 CEO——全部在 FedMart 工作过。高管团队几乎全部有超过 25 年的司龄——唯一从外部招聘的 VP 级别是电商团队。公司从未裁过员——即使在合并两家几乎完全相同的公司时也没有。CEO 每年亲自巡视每一家门店。全球 160 名市场经理每月飞回西雅图郊区的 Issaquah 总部开两天会。</p>
+  <p>走进 Costco 总部，大厅咖啡机用的是 Kirkland 胶囊，递过来的水是 Kirkland Signature 瓶装水。高管坐格子间。Craig Jelinek 的 LinkedIn 至今显示他是"EVP"——虽然他已经做了十年 CEO。这家 $2,300 亿营收的公司几乎不做任何广告。它的 Twitter 账号有大量粉丝，但从未发过推文。但在 TikTok 上，Z 世代的创作者们自发地为 Costco 制作着最好的免费广告——"haul"视频、寻宝发现、省钱攻略。</p>
+  <p>Costco 的回报政策是无限期的（电子产品除外，为 90 天——Apple 只有 14 天）。包括钻石戒指——理论上你可以离婚后退回婚戒。如果你滥用这个政策，Costco 不会拉黑你——他们会礼貌地说"看来我们无法满足您的需求"，然后退款退会员费。</p>
+</section>
+
+<section>
+  <h2>十三、未来的跑道与隐忧</h2>
+  <p>看多 Costco 的理由相当强大：飞轮已经转了 40 年，Sam's Club 的单店收入只有 Costco 的一半，而且差距在扩大。北美市场远未饱和——管理层每五年就在年报里"惊讶地发现"还能在已有 3-4 家 Costco 的城市再开一家而且表现一样好。国际市场的潜力更是惊人：中国第一家店（2019 年上海）在两年内积累了 40 万会员——是美国成熟门店平均会员数的近 6 倍。Costco 才刚刚开始触及全球需求。</p>
+  <p>看空的理由同样值得认真对待：Costco 已经维持了 30 年的约 10% 年增速——这个增速无法突然加速，因为物理扩张有天然瓶颈。造新店、培训对的人、建立新的供应商关系都需要时间。Costco 不是 Zoom 或 Slack，不可能指数增长。过去十年，公司 80% 的净利润以分红和回购形式返还给了股东——因为找不到足够快的再投资方式。还有电商的阴影：Costco 确实在电商方面晚了 15 年，虽然这在一定程度上变成了一个"故意的"定位（不做全品类次日达，专注大件笨重商品和 CostcoNext 模式），但消费者习惯正在改变。</p>
+  <p>不过，正如 Acquired 的主持人所言：在经济衰退时期，Costco 会表现好，因为它是市场上最低价的商品来源。在经济繁荣时期，它也会表现好，因为越富裕的人越可能成为 Costco 会员。在几乎任何经济环境中，Costco 都能找到自己的位置。这本身就是一种强大的护城河。</p>
+</section>
+
+<div class="quote-block">
+  <h2>核心金句</h2>
+
+  <div class="quote q-blue">
+    <div class="text">"记者问 Jim Sinegal 从 Sol Price 那里学到了多少。Jim 回答：'不，这不准确。我不是学到了很多。我学到了全部。我所知的每一件事都是从 Sol 那里学来的。'"</div>
+    <div class="attr">—— Jim Sinegal 谈他的导师 Sol Price</div>
+  </div>
+
+  <div class="quote q-green">
+    <div class="text">"这就像海洛因。你尝了一点，就想再尝一点。涨价是容易的捷径。"</div>
+    <div class="attr">—— Jim Sinegal 谈为什么不把 $1 的番茄酱涨到 $1.03（涨价 3% 会让税前利润增长 50%）</div>
+  </div>
+
+  <div class="quote q-orange">
+    <div class="text">"Warren 和 Charlie 的飞机被劫持了。劫机者给每人最后一个愿望。Charlie 说：'我想在死前再讲一次 Costco 的美德。'劫机者转向 Warren。Warren 说：'先毙了我。'"</div>
+    <div class="attr">—— 伯克希尔·哈撒韦年会上的真实笑话</div>
+  </div>
+
+  <div class="quote q-purple">
+    <div class="text">"规模经济共享给消费者。"</div>
+    <div class="attr">—— 投资人 Nick Sleep 概括 Costco 的护城河本质</div>
+  </div>
+
+  <div class="quote q-red">
+    <div class="text">"如果你涨热狗+饮料套餐的价格，我会杀了你。"</div>
+    <div class="attr">—— Jim Sinegal 对继任者 Craig Jelinek 说（Costco 内部著名故事）</div>
+  </div>
+
+  <div class="quote q-yellow">
+    <div class="text">"做员工或客户比做股东更好。"</div>
+    <div class="attr">—— 某 Deutsche Bank 分析师的评价，被 Costco 管理层印在了官网上</div>
+  </div>
+</div>
+
+<footer>
+  <p>本文基于 <a href="https://www.acquired.fm/episodes/costco">Acquired.fm 播客：Costco 专题</a>（Season 13, Episode 2）的深度分析生成。</p>
+  <p style="margin-top:8px;">Hosts: Ben Gilbert & David Rosenthal · 发布日期：2023 年 8 月 · 时长：3 小时 1 分</p>
+  <p style="margin-top:12px;font-size:0.85em;color:#aaa;">🤖 生成工具：PodDeck · Claude Code</p>
+</footer>
+
+</div>
+</body>
+</html>

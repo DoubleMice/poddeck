@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategy 是穿西装的 Luna？ETH 实验室重组 & CME 对决永续合约 — The Chopping Block</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafafa;
+    -webkit-font-smoothing: antialiased;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #e8e8ed;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .meta a {
+    color: #666;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 48px 0 20px;
+    color: #111;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 12px;
+    color: #333;
+  }
+  p {
+    margin-bottom: 18px;
+    color: #333;
+  }
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 24px 0 40px;
+  }
+  @media (min-width: 600px) {
+    .overview-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .card {
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .card-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  blockquote {
+    margin: 24px 0;
+    padding: 20px 24px;
+    background: #f8f9fa;
+    border-left: 4px solid #1971c2;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #444;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #999;
+  }
+  .gloss {
+    background: #fff9db;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #856404;
+    font-style: normal;
+  }
+  .insight-box {
+    margin: 20px 0;
+    padding: 18px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .insight-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .insight-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .insight-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .insight-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .insight-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .quotes-section {
+    margin: 48px 0;
+  }
+  .quote-item {
+    margin: 16px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .quote-item .ctx {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-style: normal;
+    color: #888;
+  }
+  footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #e8e8ed;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+  }
+  footer a {
+    color: #666;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Strategy 是穿西装的 Luna？<br>ETH 实验室重组 &amp; CME 对决永续合约</h1>
+  <div class="meta">The Chopping Block · 2026 年 6 月</div>
+  <div class="meta">Haseeb Qureshi · Tom Schmidt · Tarun Chitra · Laura Shin</div>
+</header>
+
+<section>
+  <h2>为什么这期值得关注？</h2>
+  <p>这一期的 The Chopping Block 覆盖了四个看似独立、实则相互呼应的加密世界重大事件——从 MicroStrategy 的优先股危机到以太坊基金会的权力重组，从 CME 对永续合约的法律围剿到 Meta 悄然进军预测市场。贯穿所有这些故事的主线是同一个：<strong>加密行业正在从"车库叛逆少年"走向"需要负责任的成年人"，而成长的过程从来不会优雅。</strong></p>
+
+  <div class="overview-grid">
+    <div class="card card-red">
+      <strong>Strategy 的 Stretch 危机</strong>
+      Saylor 的优先股从 $100 跌到 $82，"Luna for suits"——穿西装的算法稳定币？市场用价格表达了对管理层判断力的不信任。
+    </div>
+    <div class="card card-purple">
+      <strong>EF 大裁员 &amp; ETHLabs 诞生</strong>
+      以太坊基金会裁掉 20% 员工，核心成员另起炉灶。权力从"修道院"向"教会生意"转移。
+    </div>
+    <div class="card card-orange">
+      <strong>CME 起诉 CFTC</strong>
+      衍生品巨头起诉自己的监管机构，试图扼杀美国永续合约。"为不竞争而战"。
+    </div>
+    <div class="card card-blue">
+      <strong>Meta 进军预测市场</strong>
+      Zuck 第三次尝试预测市场——但这次逻辑不同：他看中的不是交易费，而是数亿人的眼球。
+    </div>
+    <div class="card card-green">
+      <strong>投资者 vs 信仰者</strong>
+      当加密资产的"管理者"开始做决策，你买的到底是去中心化的承诺，还是别人的商业判断？
+    </div>
+    <div class="card card-yellow">
+      <strong>加密的成人礼</strong>
+      资本结构、组织治理、监管分类、商业模式——这些"无聊"的辩论正是行业成熟的标志。
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>一、Strategy：从"比特币爸爸"到"对冲基金"</h2>
+
+  <h3>什么是 Stretch？为什么它从 $100 跌到了 $82？</h3>
+
+  <p>Michael Saylor 的 MicroStrategy——现在简称 Strategy——发明了一种融资工具叫 STRC（俗称 Stretch）。这是一种优先股，目标交易价格 $100，向持有者支付约 10.5% 的年分红。Saylor 通过不断发行这种优先股来融资，然后拿这些钱去买比特币。</p>
+
+  <p>几周前，Saylor 做了一个在金额上微不足道、在信号上石破天惊的举动：<strong>他卖了 32 个比特币</strong>——价值约 $250 万。对于一个持有 $550 亿比特币的公司来说，这笔交易九牛一毛。但市场反应剧烈：STRC 从 $100 开始下跌，一度触及 $82，目前徘徊在 $85~$87。</p>
+
+  <p>价格下跌的隐含意义很清楚：如果 STRC 年分红 10.5%，当它跌到 $85 时，市场要求的实际收益率变成了约 14%。<strong>市场在说：我们不相信 Saylor 能永远付得起分红。</strong></p>
+
+  <div class="insight-box insight-red">
+    Hasib 在节目中做了这个"债券数学"的换算：如果违约风险从 ~1% 升到 ~8-10%，STRC 就会从 $100 跌到 $85 左右。数字不撒谎——市场正在重新定价 Strategy 的信用风险。
+  </div>
+
+  <h3>Saylor 困境：每一步都在伤害某人</h3>
+
+  <p>Strategy 的资本结构像一个金字塔：最顶层是 STRC 优先股持有者（优先拿分红），中间是可转债持有者，底层是普通股股东。这种结构创造了一个 Hasib 称之为 <strong>"Saylor trilemma"</strong> 的局面：无论 Saylor 做什么决策，总会伤害某一方。</p>
+
+  <p>如果他增发普通股来筹集现金付分红——稀释现有股东。如果他卖比特币来付分红——冲击币价，而他最大的资产正是比特币。如果他不发新股也不卖币——现金只够付大约一年的分红。如果他推迟分红——STRC 归零，他永远失去这个融资渠道。</p>
+
+  <div class="insight-box insight-purple">
+    <strong>作者概括：</strong>这本质上是传统金融中"优先股+杠杆+波动性资产"组合的经典困境。Saylor 享受了牛市中低成本融资的好处，现在正在经历熊市/横盘期中债务结构带来的"反身性"压力——每一项为了维持结构的动作都可能加速结构本身的瓦解。
+  </div>
+
+  <h3>"Luna for Suits"——穿西装的算法稳定币？</h3>
+
+  <p>Tarun 提出了一个在 Crypto Twitter 上引发巨大反响的类比：Strategy 的 STRC 机制与 Luna/UST 有结构上的相似性。</p>
+
+  <blockquote>
+    "Luna would change its inflation to adjust in the exact same way as the common shareholders getting diluted. The difference is that it's structured and this preferred stock sort of is weird in that who gets paid out the interest first."
+    <span class="attr">— Tarun Chitra，Gauntlet 创始人</span>
+  </blockquote>
+
+  <p>他的论点很清晰：Luna 通过改变 LUNA 的通胀率来维持 UST 的价格锚定（稀释 LUNA 持有者）；Strategy 通过增发普通股或卖比特币来维持 STRC 的分红（稀释普通股东）。两者都是<strong>"通过压低一方来保住另一方的目标区间"</strong>。</p>
+
+  <p>但 Hasib 强烈反对"Luna 时刻"的定性。他的反驳建立在一个关键事实上：<strong>Saylor 有权无限期推迟分红。</strong>这不是 Luna——Luna 的智能合约强制执行清算，没有任何人能按暂停键。Strategy 是"人工决策的"，Saylor 可以选择止损。</p>
+
+  <blockquote>
+    "He can just say, okay, burn the boat, push it off to shore. Sorry guys, didn't work out, and like the rest of us are going to stay on the island."
+    <span class="attr">— Haseeb Qureshi，Dragonfly 合伙人</span>
+  </blockquote>
+
+  <p>"烧掉船"意味着：牺牲 STRC 持有者（他们血亏），保全核心的 $550 亿比特币。代价是永远失去 STRC 这个融资工具——"就像宣布破产，七年没有信用。"但这不是 Luna 式的"所有东西归零"。这是可控的损失。</p>
+
+  <p>Laura 给出了可能是最平衡的裁决：<strong>"这更像阿根廷违约，而非 Luna 时刻。"</strong>——一个可控的小问题，加一连串糟糕的决策，真正受伤的是信心。</p>
+
+  <h3>回到比特币的初衷</h3>
+
+  <p>Laura 提出了一个尖锐的观察：比特币的设计初衷是去中心化——你不需要信任任何政府或管理者来保护你的财富。但买入 MSTR 股票的人实际上是在<strong>信任 Saylor 的管理判断</strong>。</p>
+
+  <p>最初 MSTR 被宣传为一种"让你在退休账户里持有比特币敞口的 wrapper"。但现在它变成了一个正在做复杂资本管理决策的对冲基金。很多早期购买者可能没有意识到自己签的是什么。</p>
+
+  <div class="insight-box insight-blue">
+    Hasib 的务实回应同样值得深思："如果到现在才意识到 MSTR 不是被动持有比特币的工具——你在干什么？ETF 已经存在好几年了。你超出了投资者保护的范畴。" 这指向了一个更大的问题：加密行业正在创造越来越多"看起来像去中心化，但依赖中心化管理"的结构。这不是 bug——这是加密与传统金融融合过程中必然出现的摩擦。
+  </div>
+</section>
+
+<section>
+  <h2>二、以太坊基金会的权力重组</h2>
+
+  <h3>两天之内：ETHLabs 成立 + EF 裁员 20%</h3>
+
+  <p>同一周内发生了两件事：先是 ETHLabs 宣布成立——这是从以太坊基金会独立出来的新非营利组织，由 7 名 EF 核心成员组成（包括 Barnabe、Josh Stark、Ansgar、Dietrichs 等）。第二天，EF 宣布裁员约 20%，砍掉约 50 个岗位。</p>
+
+  <p>ETHLabs 明确聚焦于<strong>采用、DeFi、市场和协议经济学</strong>——正是社区多年来批评 EF 忽视的领域。它获得了来自 BitMEX、SharpLink、Joe Lubin 个人和 SZ 等商业来源的资助。</p>
+
+  <p>而 EF 的新任唯一执行总监 Bastian 发表博文明确了 EF 的新定位：<strong>缩小范围，"keep the small candle alive"</strong>——只守护隐私、安全、开源、抗审查这些核心价值观。<strong>"我们不做采用，不做价格。"</strong></p>
+
+  <div class="insight-box insight-purple">
+    <strong>Hasib 的解读：</strong>这是精神上的"接力棒传递"。EF 保留了"道义上的天赐权"（因为他们是原始 ICO 的接受者、原始团队），但明确退出了社区要求他们做的那些事情。ETHLabs 是 Tamás（前执行总监）"加速派"的延续——他们获得了独立资金，独立于 EF 的控制。这是一场"谈判"：社区要这些东西？好，你们的人去做，我们甚至给一部分资金——但我们自己不会做。
+  </div>
+
+  <h3>天主教会模型：两个头，一个身体</h3>
+
+  <p>Hasib 用一个令人难忘的类比来解释这两个组织的关系：</p>
+
+  <blockquote>
+    "The Catholic Church has both the monasteries where people are chanting and keeping the flame alive of the religion, but they also have the business of the Catholic Church, which holds hundreds of billions of dollars in wealth."
+    <span class="attr">— Haseeb Qureshi</span>
+  </blockquote>
+
+  <p><strong>EF = 修道院：</strong>守护"宗教"的核心教义。如果没有人做这件事——隐私、安全、开源——就不会有人做。这是必需的功能。</p>
+
+  <p><strong>ETHLabs = 教会生意：</strong>做核心升级、扩容、性能优化、企业可用性——"go fast"。这些同样必需，但和修道院的精神气质截然不同。</p>
+
+  <p>而且，正如任何宗教一样，两个组织之间<strong>必然存在冲突</strong>。"Go fast"意味着推动升级、打破东西、可能为了性能而牺牲去中心化——这正是 EF 的"修道院"最警惕的事情。两者之间存在真实的 push and pull。</p>
+
+  <h3>Vitalik：他会开心吗？</h3>
+
+  <p>Laura 在节目中提出了一个很少被公开讨论的问题：当 Vitalik 的组织权力进一步缩小时，他真的能接受吗？</p>
+
+  <p>她指出，在 EF 的历史上，Vitalik 一直拥有超级多数投票权——他是 EF 的"看不见的手"。当有人（可能）骗他说他已经失去了这些投票权时，他和他的朋友们曾极度恐慌。即使 Aya（前执行总监）被社区广泛要求下台，Vitalik 也只是把她移到了"主席"的位置——她并没有真正离开。</p>
+
+  <div class="insight-box insight-green">
+    但也有一种乐观的解读：Vitalik 天生喜欢做研究、当未来主义者、"仰望星空"。把运营和增长的责任交给 ETHLabs 可能恰恰契合他的天性。在他的理想世界里，他可能真的更享受"只管研究、不问俗务"的状态。
+  </div>
+
+  <h3>ETHLabs：真正的改变还是又一场"声明的声明"？</h3>
+
+  <p>Tarun 对此持冷淡态度——这本身就值得注意。作为一个长期观察以太坊生态的人，他的反应是：<strong>"这个话题我们谈了多少年了？真的发生的时候我已经麻木了。"</strong></p>
+
+  <p>他的批评很具体：ETHLabs 的声明读起来像"声明的声明"——没有 90 天计划，没有具体交付物，没有可问责的目标。以太坊社区需要的不是又一封宣布新组织的博文，而是<strong>"这是我们要做的"</strong>。</p>
+
+  <blockquote>
+    "Is this just a slightly different type of cotton candy versus a concentrated meal? I don't know."
+    <span class="attr">— Tarun Chitra</span>
+  </blockquote>
+
+  <p>Tom 的比喻更为乐观：<strong>"有时候一个代码库变得太陈旧了——你尝试重构，但不如从头重写。ETHLabs 就是以太坊治理的 fresh rewrite。"</strong></p>
+
+  <p>两种观点都有道理。但有一件事是确定的：<strong>真正考验 ETHLabs 的时刻还没有到来。</strong>当 EF 和 ETHLabs 在一个具体问题上发生分歧——比如某个升级是否牺牲了太多去中心化来换取性能——那时候我们才会看到这个"双头"模型到底能不能工作。</p>
+</section>
+
+<section>
+  <h2>三、CME 对决永续合约：垄断者的最后一搏？</h2>
+
+  <h3>一场非同寻常的诉讼</h3>
+
+  <p>芝加哥商品交易所（CME）——美国最大的衍生品交易场所，控制着约 93% 的美国交易所衍生品交易——起诉了商品期货交易委员会（CFTC），也就是它自己的监管机构。</p>
+
+  <p>起诉的理由是什么？CFTC 批准了 Kalshi 的永续合约（perps），随后 Coinbase 复制了同样的结构也获批了。CME 认为这些 perps <strong>不是期货，而是互换（swaps）</strong>——应该按照更严格的 swaps 监管框架处理。如果 CME 赢了，这些 perps 的批准将被撤销。</p>
+
+  <p>CFTC 的反击异常强硬：称诉讼为"无意义的"（frivolous），直言这是<strong>"incumbent 利用 lawfare 保护其垄断地位"</strong>。</p>
+
+  <div class="insight-box insight-red">
+    <strong>Hasib 做了一个精妙的对比：</strong>"Coinbase 起诉 SEC 是为了'竞争的权利'。CME 起诉 CFTC 是为了'不竞争的权利'。"前者是要求监管机构给出明确的规则来合法运营，后者是要求监管机构禁止竞争对手的存在。
+  </div>
+
+  <p>Tarun 补充了一个关键的商业背景：CME 的 CEO 在最近的财报电话会议上<strong>反复被问到 Hyperliquid</strong>。尽管 Hyperliquid 的交易量相对于 CME 只是"微小的波动"，但媒体的关注度已经大到影响了股东认知。而 CME 的股价也确实在持续承压——"当 Hyperliquid 的交易量上升时，CME 的股价就下跌。"CME 可能<strong>别无选择</strong>，必须采取行动。</p>
+
+  <h3>技术争议：Swap 还是 Future？</h3>
+
+  <p>这场官司的核心是一个技术性的法律分类问题：永续合约到底是 swap 还是 future？</p>
+
+  <p><strong>CME 的论点：</strong>Perps 没有到期日 → 它们不交割 → 所以不是期货 → 它们是 swaps。Swaps 有更严格的监管要求，包括不同的清算规则和对双边对手方关系的管理。</p>
+
+  <p><strong>Crypto 的立场：</strong>Perps 有定期的资金费率结算、标准化合约、高流动性的二级市场——这些特征使它们更像期货。Tarun 预测，官司最终会纠缠在"永续合约的定期资金费率行为"上：这种定期的重定价机制到底让 perps 更像期货（具有市场价格发现功能），还是更像 swap（只是双方之间的固定合约）？</p>
+
+  <h3>Crypto 的终极武器：无限适应能力</h3>
+
+  <p>但这场官司无论胜负，可能都不会产生 CME 预期的效果。原因很简单：Crypto 行业已经用十几年时间证明了自己在监管规避上的创造力。</p>
+
+  <p>事实上，变通方案已经存在。Kalshi 的 perps 在结构上就是<strong>"五年到期的期货合约"</strong>——因为有到期日，所以在法律上不是 perp，而是期货。CFTC 批准了这种结构。Coinbase 照抄了同样的结构，CFTC 又批准了。</p>
+
+  <p>如果 CME 赢了关于 perps 的官司，他们还得再起诉这些"假 perp 真期货"——然后 Crypto 就会做十年期的、五十年期的、甚至一百年期的。</p>
+
+  <blockquote>
+    "It's like a whack-a-mole. They try to kill one, they create ten more."
+    <span class="attr">— Tarun Chitra</span>
+  </blockquote>
+
+  <div class="insight-box insight-blue">
+    <strong>Hasib 的提议：</strong>CFTC 直接宣布"任何想发行百年期货的人——附带每小时多空平衡支付——我们欢迎。"这样 CME 赢也好输也好，大家直接绕过官司。一百年的债券存在，比特币本来就被设计成存在一百年——那为什么不能有一百年期货？
+  </div>
+
+  <h3>更深层的问题：为什么这最终对美国不利</h3>
+
+  <p>Laura 用她标志性的直觉直击本质："我不在乎法律条款怎么说。CME 这么做是因为他们不想面对竞争。深层动机才是最重要的——这是'妈咪爹地救救我'式的 cry baby 举动。"</p>
+
+  <p>她的观点是：如果美国金融巨头不断用诉讼来阻挡创新，创新会流向海外。美国正在用保护主义削弱自己作为全球金融领导者的地位。</p>
+
+  <p>Tom 提供了一个有趣的对照：在美国可以合法使用的 perps（比如 Kalshi 的产品）目前并不受欢迎——杠杆限制在 3-6 倍，存在明显的 wash trading 问题。在很多方面，<strong>去中心化 perps 或非美国 perps 对用户的吸引力更大。</strong>这意味着即使 CME 在法庭上赢了，它也不一定能在市场上赢。</p>
+</section>
+
+<section>
+  <h2>四、Meta 进军预测市场：Zuck 的第三次尝试</h2>
+
+  <h3>Arena：先积分，后真钱？</h3>
+
+  <p>Meta 被曝正在开发一款名为 <strong>Arena</strong> 的预测市场产品。初期将是<strong>基于积分的 play money 系统</strong>，覆盖 Facebook、WhatsApp 和 Instagram 的用户。消息来源称 Zuck 本人直接推动了这一项目。</p>
+
+  <p>Tom——前 Meta/Instagram 员工——提供了一线视角：这已经是 Meta 在预测市场的第三次或第四次尝试。之前的尝试包括内部版本（Forecast、Manifest）和一个面向部分用户的 beta 产品。"内部总是有十几个实验性 app 在跑。这不代表 Zuck 要把整个公司转向预测市场。"</p>
+
+  <p>他的谨慎判断是：这更可能是一个<strong>小型实验团队的项目</strong>，有可能会成功，也有可能像之前的 Workplace 一样——曾是一个大型产品，最终被关停。</p>
+
+  <h3>预测市场是"伪装成交易平台的媒体公司"</h3>
+
+  <p>本期节目中最具洞察力的观点来自 Tarun——一个他自称已经在这个播客上说过很多次、但值得反复强调的框架：</p>
+
+  <blockquote>
+    "I view prediction markets as like media companies that are dressed in the sheep's clothing of like a trading platform."
+    <span class="attr">— Tarun Chitra</span>
+  </blockquote>
+
+  <p>他的论据：预测市场的绝大多数用户是来<strong>阅读信息</strong>的，不是来交易的。这个"读者与交易者"的比例正在不断扩大——尽管交易量和活跃度也在增长。从这个角度看，预测市场更接近一个<strong>信息聚合社交网络</strong>，而不是一个传统的交易场所。</p>
+
+  <p>这个框架解释了为什么 <strong>Meta 对预测市场感兴趣完全不奇怪</strong>——甚至可以说，这是整个故事中最合理的部分。如果预测市场正在变成人们获取信息的新方式（一个由市场驱动的、客观的、"没有编辑偏见"的信息源），那么谁拥有分发渠道，谁就拥有未来。</p>
+
+  <h3>Zuck 真正的棋：眼球，不是交易费</h3>
+
+  <p>Hasib 把这个逻辑推到了极致：</p>
+
+  <blockquote>
+    "Making money on the people who are looking is kind of Meta's whole business model."
+    <span class="attr">— Haseeb Qureshi</span>
+  </blockquote>
+
+  <p>Meta 是一家市值万亿美元的公司。赢下预测市场这个品类对它来说<strong>根本不重要</strong>——无论 Polymarket 还是 Kalshi 的交易费收入，在 Meta 的体量下都是舍入误差。但<strong>眼球去哪儿很重要。</strong>如果预测市场正在逐步取代传统新闻成为信息获取的主要渠道，Meta 想拥有那个入口。</p>
+
+  <div class="insight-box insight-green">
+    <p><strong>两种可能的模式：</strong></p>
+    <p><strong>聚合器模式：</strong>Meta 不需要自己建交易所。它只需要做前端聚合——把 Facebook 用户的路由到 Polymarket/Kalshi 等实际交易场所，从中收取流量费。就像 Google 对搜索一样。</p>
+    <p><strong>信息层模式：</strong>用户只能用积分"下注"，不能赌真钱——但可以看到真实的、由市场驱动的赔率数据。在那些预测市场被禁止的国家（中东、非洲、亚洲部分地区），<strong>数据不被禁</strong>。Meta 可以让数十亿人接触到"市场怎么说"——然后向他们展示广告。</p>
+  </div>
+
+  <p>而且，Hasib 认为这最终可能<strong>利好</strong> Polymarket 和 Kalshi：如果 Meta 让全球数十亿人理解了预测市场是什么以及为什么它们有用，那么当这些用户想要实际交易时——他们会流向能提供真钱交易的平台。Meta 成为了整个品类的免费推广引擎。</p>
+
+  <p>当然，这一切的前提是 Meta 这次能真正把产品做出来。正如 Crypto Twitter 反复引用的 Demis Hassabis 那句名言——Zuck "对什么都感兴趣，不加思考就扑上去"——Meta 的"追风"历史并不令人信服。但这次的不同之处在于，赌注不是交易收入，而是<strong>信息分发的入口</strong>——而这恰恰是 Meta 最擅长的事。</p>
+</section>
+
+<section>
+  <h2>五、四个故事，一条主线</h2>
+
+  <p>这期节目最不寻常的地方在于：四个看起来毫无关联的话题，实际上在讲述同一个更大的故事。</p>
+
+  <p><strong>Strategy 的 STRC 危机</strong>告诉我们：当加密资产的资本结构变得像传统金融一样复杂时，信心的脆弱性也随之而来。加密的承诺是"去信任"，但越复杂的结构越依赖对管理者的信任。</p>
+
+  <p><strong>EF 的权力重组</strong>告诉我们：去中心化组织的治理转型是混乱的、缓慢的、充满人事斗争的——这不像代码重构，你不能 git revert 一个人的离职。ETH 持有者正在发现自己是"bondholder"：只有在事情变糟时才意识到自己有发言权。</p>
+
+  <p><strong>CME 的诉讼</strong>告诉我们：创新和监管的猫鼠游戏永远不会结束。Crypto 总能找到变通方案——五年不行就十年，十年不行就一百年。监管可以把游戏变得更贵更慢，但它杀不死一场好游戏。而保护主义最终惩罚的是保护主义者自己。</p>
+
+  <p><strong>Meta 的 Arena</strong> 告诉我们：预测市场正在从一个"加密赌场"变成一个"信息聚合基础设施"。当信息的载体从编辑变成概率——谁拥有分发渠道，谁就拥有未来。</p>
+
+  <div class="insight-box insight-purple">
+    <strong>共同线索：</strong>加密行业正在从车库走向董事会。资本结构（STRC）、组织治理（EF/ETHLabs）、监管分类（swap vs future）、商业模式（交易费 vs 广告）——这些"无聊的成年人问题"正在定义下一个十年的赢家。写出能工作的智能合约已经不够了；能处理好这些结构性问题的团队才会赢。
+  </div>
+</section>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div class="quote-item card-blue">
+    "Luna for suits. Luna for suits."
+    <span class="ctx">— Tarun &amp; Haseeb，讨论 Strategy 的 STRC 与 Luna/UST 的结构相似性。同样的机制，穿上了华尔街的西装。</span>
+  </div>
+
+  <div class="quote-item card-purple">
+    "He can just say, okay, burn the boat, push it off to shore. Sorry guys, didn't work out, and like the rest of us are going to stay on the island."
+    <span class="ctx">— Haseeb，描述 Saylor 的最终退出选项：牺牲 STRC 持有者，保全比特币核心资产</span>
+  </div>
+
+  <div class="quote-item card-orange">
+    "It's more like an Argentina default versus a Luna moment."
+    <span class="ctx">— Laura，对 Strategy 风险的精确定性</span>
+  </div>
+
+  <div class="quote-item card-green">
+    "Coinbase sued the SEC for the right to compete, and the CME is suing the CFTC for the right to not compete."
+    <span class="ctx">— Haseeb，对比两次诉讼的本质差异</span>
+  </div>
+
+  <div class="quote-item card-red">
+    "I view prediction markets as like media companies that are dressed in the sheep's clothing of a trading platform."
+    <span class="ctx">— Tarun，预测市场本质洞察：读者远多于交易者，其核心价值在信息而非交易</span>
+  </div>
+
+  <div class="quote-item card-yellow">
+    "It's like with a piece of software — one version gets so crusty, sometimes you just need a fresh rewrite."
+    <span class="ctx">— Tom，类比以太坊基金会改组和 ETHLabs 的诞生</span>
+  </div>
+</section>
+
+<footer>
+  <p>来源：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8032479588.mp3">The Chopping Block 原播客</a></p>
+  <p>The Chopping Block · Haseeb Qureshi · Tom Schmidt · Tarun Chitra · Laura Shin · 2026 年 6 月</p>
+  <p style="margin-top: 12px;">本文由 PodDeck 生成 · 🤖 Generated with Claude Code</p>
+</footer>
+
+</article>
+</body>
+</html>
