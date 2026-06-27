@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-06-27T04:28:17.635Z
+refreshed_at: 2026-06-27T18:28:24.523Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -266,5 +266,9 @@ episodes:
 
 
       Special Guest: 盖德.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-06-27T18:36:47.915Z
+    transcript_job_id: 0d36982ca52f4d68b53d4ff16688b49c,e78000c7ce654da2ae489aa7320b2e9d,fcd04860a8874095ac58b9dd0fa5e8e6,ac86e62e49df4779b86b91df31355bc3,32979237c1bd45b7bd4fa62a356c5828
+    transcript_completed_at: 2026-06-27T18:39:51.021Z

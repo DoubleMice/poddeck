@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CME 为何起诉 CFTC？——深度拆解永续合约监管大战</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: #1a1a2e; background: #fafafa; line-height: 1.75; font-size: 17px;
+  }
+  article { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px solid #e8e8e8; }
+  h1 { font-size: 28px; line-height: 1.35; margin-bottom: 12px; color: #111; }
+  .meta { font-size: 14px; color: #888; margin-bottom: 8px; }
+  .meta span { margin-right: 20px; }
+  h2 { font-size: 22px; margin: 40px 0 16px; color: #222; padding-bottom: 8px; border-bottom: 2px solid #1971c2; }
+  h3 { font-size: 18px; margin: 28px 0 10px; color: #333; }
+  p { margin-bottom: 16px; }
+  .overview { margin: 24px 0 36px; }
+  .overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .topic-card { padding: 14px 16px; border-radius: 8px; border-left: 4px solid; font-size: 15px; line-height: 1.55; }
+  .topic-card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .tc-red { background: #fff5f5; border-color: #e03131; }
+  .tc-blue { background: #f1f8ff; border-color: #1971c2; }
+  .tc-orange { background: #fff9f0; border-color: #e8590c; }
+  .tc-purple { background: #fbf5ff; border-color: #7950f2; }
+  .tc-green { background: #f0fdf4; border-color: #2f9e44; }
+  .tc-yellow { background: #fffbeb; border-color: #f59f00; }
+  .quote-block {
+    margin: 28px 0; padding: 20px 24px; border-radius: 8px; border-left: 4px solid; font-style: italic; line-height: 1.65;
+  }
+  .quote-block .attr { font-size: 13px; color: #888; margin-top: 8px; font-style: normal; }
+  .qb-blue { background: #f1f8ff; border-color: #1971c2; }
+  .qb-green { background: #f0fdf4; border-color: #2f9e44; }
+  .qb-orange { background: #fff9f0; border-color: #e8590c; }
+  .qb-purple { background: #fbf5ff; border-color: #7950f2; }
+  .qb-red { background: #fff5f5; border-color: #e03131; }
+  .qb-yellow { background: #fffbeb; border-color: #f59f00; }
+  .gloss {
+    background: #fffbeb; padding: 12px 18px; border-radius: 6px; font-size: 14px; color: #92400e; margin: 16px 0; border-left: 3px solid #f59f00;
+  }
+  .gloss strong { color: #78350f; }
+  .highlight-box {
+    background: #f0f8ff; padding: 16px 20px; border-radius: 8px; border: 1px solid #bbd7f5; margin: 20px 0; font-size: 15px; line-height: 1.7;
+  }
+  .highlight-box strong { color: #1a56db; }
+  .quotes-section { margin-top: 40px; }
+  .quotes-section h2 { border-bottom-color: #e03131; }
+  footer {
+    margin-top: 48px; padding-top: 24px; border-top: 1px solid #e8e8e8; font-size: 13px; color: #999; text-align: center;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+  @media (max-width: 600px) {
+    article { padding: 24px 16px 48px; }
+    h1 { font-size: 22px; }
+    .overview-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>CME 为何起诉 CFTC？深度拆解 Kalshi 比特币永续合约引爆的监管大战</h1>
+  <div class="meta">
+    <span>📅 2026-06</span>
+    <span>🎙 Unchained · Decks in the City</span>
+    <span>👥 KK, V, Jesse, B</span>
+  </div>
+  <div class="meta">
+    <span>⏱ 50 分钟</span>
+    <span>🏷 法律 · 加密监管 · 衍生品</span>
+  </div>
+</header>
+
+<section class="overview">
+<h2>为什么这期值得关注</h2>
+<div class="overview-grid">
+  <div class="topic-card tc-red">
+    <strong>史无前例</strong>
+    CME 成立百年来首次起诉其核心监管机构 CFTC——被监管者告监管者，在传统金融中极其罕见
+  </div>
+  <div class="topic-card tc-blue">
+    <strong>定义之战</strong>
+    永续合约到底是期货还是互换？这个法律分类将决定数十亿美元市场的合规路径
+  </div>
+  <div class="topic-card tc-orange">
+    <strong>竞争格局</strong>
+    Cboe 联手 Schwab 推出 S&P 500 预测期权，传统金融巨头正在以不同的法律包装进入预测市场
+  </div>
+  <div class="topic-card tc-purple">
+    <strong>无限游戏</strong>
+    加密行业为 Grayscale 案欢呼时用的法律论点，如今被 CME 用来攻击加密友好的监管决定
+  </div>
+  <div class="topic-card tc-green">
+    <strong>公众信任</strong>
+    43% 美国人认为 AI 可能终结人类——技术行业的叙事危机同样深刻影响加密
+  </div>
+  <div class="topic-card tc-yellow">
+    <strong>程序正义</strong>
+    CFTC 一天内批准且无公众评议——结果也许对，但过程是否站得住脚？
+  </div>
+</div>
+</section>
+
+<h2>事件背景：发生了什么？</h2>
+
+<p>2026 年 6 月，衍生品世界发生了一件真正意义上"疯狂"的事。芝加哥商业交易所（CME）——全球最大的衍生品市场之一，成立于 19 世纪的"交易所鼻祖"——起诉了它的核心监管机构 CFTC。这不仅是 CME 历史上第一次起诉自己的监管者，更是传统金融中被监管者起诉监管机构的极其罕见的案例。</p>
+
+<p>导火索是 CFTC 批准了 Kalshi 的比特币永续合约产品。所谓"真正的永续合约"，是指没有到期日、通过资金费率机制永久滚动的合约。这个产品在海外市场（如 Hyperliquid 等平台）已经是体量庞大的存在，但在美国一直未能获得明确的法律地位。CFTC 的此次批准，在美国本土打开了永续合约的合规大门。</p>
+
+<p>更具戏剧性的是时机：CME 长期掌舵人 Terry Duffy——被业界亲切地称为 CFTC 的"第六位委员"——在诉讼前一天刚刚宣布将在一年内卸任。这个时间节点的巧合，让整个事件更添一层战略意味。</p>
+
+<div class="highlight-box">
+  <strong>关键背景</strong>：CME 最初名为"芝加哥黄油鸡蛋委员会"（Chicago Butter and Egg Board），从农产品期货起步。一个多世纪以来，它与监管机构 CFTC 建立了极其深厚的关系。正是这种关系使得诉讼本身成为震动整个衍生品行业的事件。
+</div>
+
+<h2>CME 的两大法律指控</h2>
+
+<p>CME 的诉讼基于两个核心法律论点。第一个是分类之争：CME 主张永续合约不是期货（future），而是互换（swap）。根据 Dodd-Frank 法案，互换不应在指定合约市场（DCM）上市。CME 认为，期货在法律上需要"未来交割"（future delivery）——即在某个时间点进行资产交割——而永续合约没有到期日、没有交割机制，因此不符合期货的法律定义。</p>
+
+<p>第二个是程序之争：CME 指控 CFTC 的行为构成"武断随意"（arbitrary and capricious）。具体指控包括：CFTC 实质上照抄了 Kalshi 自身的申请文件、无视了此前在执法行动中将永续合约定性为互换的立场、在仅仅一天内完成审批且完全没有提供公众评议期。</p>
+
+<p>这两大指控建立在同一个核心前提上——竞争损害。CME 必须证明 CFTC 的批准行为对其业务造成了实际损害，才能具备诉讼主体资格。而永续合约直接竞争 CME 的传统期货业务，竞争损害几乎是显而易见的。</p>
+
+<h2>"未来交割"：核心定义之争</h2>
+
+<p>这场诉讼最核心的法律争论聚焦于一个术语：<strong>未来交割（future delivery）</strong>。CME 坚称这是期货的必备要素，而永续合约没有交割机制，因此不可能是期货。但 KK 在节目中指出了关键漏洞：《商品交易法》（CEA）中其实并没有"期货"的明确定义。最高法院也没有对此做出过裁决。法律为 CFTC 留下了灰色空间来分类新型产品。</p>
+
+<p>更有趣的是 Loper Bright 最高法院判决的影响——该判决降低了法院对机构法律解释的遵从度。这对 CME 在互换定义问题上有帮助，但同时也削弱了 CFTC 此前将永联合约定性为互换的执法立场本身的法律分量。</p>
+
+<div class="gloss">
+  <strong>作者概括</strong>：Loper Bright 是一把双刃剑。它降低了行政机构的解释权威，这对挑战机构决定的 CME 有利；但同样降低了 CFTC 此前将永联合约定性为互换的立场本身的分量——而这正是 CME 想引用的。"机构可以改变立场"既是 CME 攻击 CFTC 的理由，也可能是 CFTC 为自己辩护的理由。
+</div>
+
+<h2>Eisenberg / Mango Markets：CFTC 的前后矛盾</h2>
+
+<p>CME 在诉状中特别引用了一个引人注目的先例：CFTC 对 Eisenberg 的执法行动——也就是加密圈熟知的 Mango Markets 事件。在那次执法中，CFTC 在投诉书中明确指称永续合约符合《商品交易法》中对互换的定义。现在 CFTC 却说永续合约是期货——CME 认为这种前后矛盾证明了 CFTC 的行为武断随意。</p>
+
+<p>但 KK 的分析提供了重要的反方视角：执法行动中的立场并非有约束力的先例；机构可以改变其立场，只要有充分的理论基础。SEC 也曾在多次执法行动后改变政策方向。而且 Eisenberg 案涉及远超永续合约分类的多项指控，这个先例的说服力可能有限。</p>
+
+<p>值得注意的是，Eisenberg 本人也注意到了这个矛盾——他在社交媒体上公开评论说，如果 CFTC 要批准永续合约，就应该撤销那些将永续合约定性为互换的未决案件。这种"现实中的当事人也在关注"的细节，让整个争论更加立体。</p>
+
+<h2>自我认证：真正的游戏规则改变者</h2>
+
+<p>CFTC 做出的最关键决定，不仅是批准了 Kalshi 这一个产品。更具深远影响的是：它实质上建立了一个先例，允许美国境内任何指定合约市场（DCM）<strong>自行认证（self-certify）</strong>类似的加密货币永续合约——无需 CFTC 的事先批准。这意味着整个美国衍生品市场的准入门槛被大幅降低。</p>
+
+<p>后果是立竿见影的：几天之内，Kalshi 自行认证了十几个额外的永续合约；其他实体也将长期到期的"类永续"合约转为真正的永续合约。数十亿美元的交易量正在美国境内通过永续合约实时产生。</p>
+
+<div class="highlight-box">
+  <strong>关键问题</strong>：这个监管框架足够持久（durable）吗？如果 CME 的诉讼成功，或者未来的行政当局改变立场，所有建立在这个先例基础上的业务都将受到冲击。"持久性"是本期节目中反复出现的关键词。
+</div>
+
+<h2>Cboe × Schwab：传统金融巨头的"法律包装"策略</h2>
+
+<p>在 CME 诉讼的同时，另一条预测市场的发展路径正在展开。Cboe 推出了预测风格的 S&P 500 合约，Schwab 计划向其约 4000 万经纪客户提供这些产品。同时，ICE/NYSE 与加密交易所 OKX 合作，向 OKX 的 5000 万全球用户提供传统期货和代币化股票。</p>
+
+<p>V 提出了一个尖锐的观察：这些传统金融巨头走的是<strong>不同的法律路径</strong>。Cboe 的产品是"二元期权"——在受 SEC 监管的证券交易所上市、中央清算、通过持牌券商分销。它使用的是一套已存在几十年的完备合规框架。这与 Kalshi 和 Polymarket 所走的 CFTC 事件合约路径形成鲜明对比——后者的法律地位正在全美范围内被积极诉讼，充满不确定性。</p>
+
+<p>但 KK 指出了一个关键现实：从普通用户的角度看，赌 S&P 500 涨跌和赌选举结果，经济本质上是一回事。这种区分对于律师和监管者有意义，对客户几乎没有意义。然而正是这个"法律包装"上的差异，决定了谁能进入市场、能做什么、能以多大的体量做。</p>
+
+<div class="gloss">
+  <strong>作者概括</strong>：法律包装本身正在成为一种竞争策略。Cboe 通过选择 SEC 路径，规避了 CFTC 的监管不确定性，但同时也牺牲了品类广度——只能做证券相关的预测，不能做选举、体育和文化事件。Kalshi 选择了品类更广但监管风险更高的路径。两种策略各有利弊，最终的市场格局取决于法律斗争的结果。
+</div>
+
+<h2>两条路径的管辖边界：SEC vs CFTC</h2>
+
+<p>Dodd-Frank 法案有一个明确的法定豁免：某些期权被排除在互换定义之外。证券期权和期货期权享有这一豁免，这也是为什么 Cboe 的产品不受 CFTC 互换监管的约束。而 Kalshi 和 Polymarket 的产品——涉及选举、体育、文化事件的预测——走的是 CFTC 的"事件合约"监管路径。</p>
+
+<p>这引出了一个更大的问题：如果预测市场行业最终沿着这条线分裂——SEC 管辖与证券相关的预测，CFTC 管辖其他事件合约——这种分裂是否合理？KK 暗示这个问题最终可能需要最高法院来回答。毕竟，现任 CFTC 主席来自 SEC 背景，两个机构目前关系良好——但历史上它们并非总是合作无间。</p>
+
+<h2>无限游戏：法律论点的"回旋镖"效应</h2>
+
+<p>这可能是本期节目最深刻的洞见，由 Jesse 提出。两三年前，当 Grayscale 以"武断随意"为由起诉 SEC 时，整个加密行业都在欢呼——SEC 的做法太不公平了。当有人主张推翻 Chevron 尊重原则时，加密行业也觉得这对自己的事业有利。</p>
+
+<p>现在，CME 使用了<strong>完全相同的法律论点</strong>来攻击一个加密行业乐见其成的监管决定——CFTC 批准永续合约。那些当年被用来对抗 SEC 不批准比特币 ETF 的论点，现在被一个传统金融巨头用来反对 CFTC 批准加密产品。站在加密圈子之外的人看来，CME 的主张甚至比当年的加密行业更有道理——毕竟 CFTC 确实是一天内批准的。</p>
+
+<p>这个教训是深刻的：法律原则不应该根据"谁赢了"来评判。Chevron 尊重、武断随意标准、程序正义——这些概念应该以<strong>技术中立</strong>的方式适用。每一次加密行业为某个法律论点辩护时，都不仅是在论证眼前的案件，更是在为未来设定先例。而那个先例可能被任何对手——包括传统金融机构——在未来使用。</p>
+
+<h2>公众信任危机：技术行业的共同困境</h2>
+
+<p>Jesse 将法律讨论引向了一个更为宏大的命题：公众对技术的信任正在全面瓦解。</p>
+
+<p>最新的民调数据触目惊心：43% 的美国人认为 AI 可能"终结人类"。人们在破坏 AI 广告、在大学毕业典礼上向科技创始人喝倒彩、向台上扔东西。近半数选民希望全面禁止数据中心——而且大多数人甚至不住在数据中心附近。这不是 NIMBY（别在我后院），而是一种更深层的拒绝："我不想让这个成为我生活的一部分"。</p>
+
+<p>Jesse 精辟地分析了叙事的根源：公众越来越多地把 AI 看作"发生在我身上的事，而不是为我或与我一起做的事"。普通人的感受是：我的工作在训练模型但我没得到报酬、我的数据被控制而我没有任何发言权、数据中心建在我的社区但消耗的是我的水资源、做 AI 的人越来越富而我连工具的订阅费都付不起。</p>
+
+<p>加密行业面临完全相同的叙事困境。而当公众信任流失时，每一次黑客攻击都不再被看作是"这一个项目出了问题"，而变成"这整个东西就是不安全"的证据。因为<strong>公众不是某个遥远小镇里的随机人群——公众可以是陪审团、法官、检察官、客户，以及选民</strong>。</p>
+
+<h2>技术恐惧的历史教训</h2>
+
+<p>Jesse 以历史爱好者的身份，梳理了技术恐惧的规律——这提供了一种思考框架，而不是令人绝望的宿命论。</p>
+
+<p>苏格拉底曾认为文字会腐蚀人的记忆力，会摧毁真正的对话。人们曾担心自行车会让女性"过于自由"，离开家庭。收音机被指责会"入侵家庭、分散大脑、带来太多爵士乐"。电梯在发明之初被认为是极其恐怖的机器——人们害怕被关在悬空的铁盒子里。</p>
+
+<p><strong>但恐惧从来不是凭空消失的。</strong>它消退有三个条件：技术变得足够熟悉；技术变得足够有用，让人们愿意克服恐惧去使用它；以及最关键的一点——有可信赖的人展示了有效的安全机制。飞机从 1970 年代频繁被劫持到今天成为最安全的交通方式之一，靠的不是公众自己"想通"了，而是安检制度、空中管制、安全制动——那些让人能看见、能理解的保护措施。</p>
+
+<p>电梯的故事尤其有启发性：当发明了安全制动器和建立了检查制度之后，电梯才真正被接受。这意味着加密行业不能只是说"他们不懂"——它需要建立可信的安全机制，让人们能看见这些机制在起作用。</p>
+
+<h2>如何赢得信任：从争论到建设</h2>
+
+<p>Jesse 开出的方子不是更多的布道，而是从根本上改变叙事策略。</p>
+
+<p>首先，停止用"他们不懂，谁在乎"来回应批评。每当有负面报道出现时，缩回自己的信息茧房不会改变任何事情——只会让两边的裂痕越来越深。AI 行业正在犯完全相同的错误：当前的叙事是"不上车你就会被淘汰、你会失去所有钱"——这对那些连工具订阅费都付不起的人来说，听起来不像机遇，更像威胁。</p>
+
+<p>其次，认真对待每一次安全事件。每一次黑客攻击、每一个失去资金的人——这不仅是一个悲伤的故事、一个需要修复的技术问题——它影响的是整个行业在公众眼中的形象。因为公众不会区分"这个 DeFi 协议"和"那个中心化交易所"——对他们来说，这都是"加密"，出了问题就是加密的问题。</p>
+
+<p>最后，也是最重要的一点：建立可信的安全机制和检查制度。就像飞机有空管和安检、电梯有安全制动器和年检一样，加密行业需要有让人看得见、能理解的保护措施。这不是为了监管者，而是为了那些最终会成为陪审团、法官和选民的人——为了我们的父母。</p>
+
+<div class="gloss">
+  <strong>作者概括</strong>：机构可以带来合法性，但它们需要把客户一起带来。改变叙事的关键不是赢得每一次争论，而是赢得信任——这种信任必须建立在普通人能感知到的安全机制之上，而不是建立在他们需要读白皮书才能理解的技术承诺之上。
+</div>
+
+<h2>程序正义：贯穿全场的核心命题</h2>
+
+<p>回到 CME 诉 CFTC 案——无论你站在加密创新一边还是传统金融一边，本期节目反复回到一个核心问题：<strong>程序正义</strong>。</p>
+
+<p>V 从行政法的角度给出了精辟的总结：政府在做事时，必须有程序、必须解释自己、必须有法律依据。这是整个法律体系的根本要义。对于永续合约这种在 Dodd-Frank 立法时尚不存在的新型产品，程序的完整性尤为重要。即使 CFTC 有权改变立场，它也应该给出严肃的解释——为什么 Dodd-Frank 的互换定义不适用，为什么它决定背离自己此前的立场。</p>
+
+<p>KK 提供了平衡的视角：法律上，CFTC 可能没有义务进行公众评议，也没有法律规定的"最低审批天数"。但"可以做"和"应该做"是两回事。也许 CFTC 应该多等一两周——事后看来，一天审批确实不是最好的观感。</p>
+
+<p>Jesse 的质疑更为尖锐：CFTC 同时在多个议题上征求公众意见，为什么唯独在永续合约上绕过了这个程序？这让机构看起来"自相矛盾"。如果监管决定缺乏充分的程序支撑，它就很难持久——而持久性正是这个市场最需要的。</p>
+
+<p>V 提供了一个平实但有力的总结：就像在谈判中或在争执中——即使结果不如你意，只要你觉得自己的声音被听到了、被真正考虑了，结果就会不一样。程序提供的正是这种"被听到"的感觉——它赋予监管决定以<strong>可信度和合法性</strong>。</p>
+
+<h2>CME 的真实意图：法律战还是公关战？</h2>
+
+<p>KK 在节目中提出了一个耐人寻味的战略观察：CME 提起诉讼可能不完全是为了在法律上获胜。从纯法律角度看，CME 面临真正的困难：CFTC 对新型产品有广泛裁量空间；"武断随意"没有明确的数字定义；CEA 第 2(a)(3) 条明确允许单一委员行使委员会的全部权力。这场诉讼可能是 CME 打的一场公关和价值声明之战。</p>
+
+<p>大公司经常出于"公开表态"或"原则"提起诉讼——不是为了确定能赢，而是为了迫使公众和监管机构关注程序问题，向市场传递信号：我们不接受这种处理方式。无论诉讼结果如何，这场诉讼本身已经成功地吸引了重要市场参与者的注意力——不只是华尔街日报，而是真正参与这个市场的机构。</p>
+
+<p>这也回到了本期节目的核心主题之一：游戏还远未结束。永续合约的美国市场大门已经打开，十亿美元级别的交易量正在涌入。但监管框架能否持久，取决于程序是否经得起挑战。无论 CME 赢还是输，它已经迫使所有人面对这个问题。</p>
+
+<div class="quotes-section">
+<h2>核心金句</h2>
+
+<div class="quote-block qb-blue">
+  "the CME has never sued the CFTC, its primary regulator. This is truly unprecedented."
+  <div class="attr">— KK · 被监管者起诉监管机构，在传统金融中几乎闻所未闻。加密行业或许见怪不怪，但这是真正的前所未有。</div>
+</div>
+
+<div class="quote-block qb-green">
+  "we need to be playing the infinite game here and not just be talking about this case."
+  <div class="attr">— Jesse · 每一个法律论点都可能在未来"回旋镖"到自己身上。法律原则应当以技术中立的方式适用。</div>
+</div>
+
+<div class="quote-block qb-orange">
+  "people are seeing AI as something happening to me, not for me or with me."
+  <div class="attr">— Jesse · 技术行业的根本叙事问题：普通人觉得技术是施加在他们身上的东西，而不是为他们创造价值的东西。</div>
+</div>
+
+<div class="quote-block qb-purple">
+  "even if the outcome isn't what you wanted, if you feel like you were heard, that really does make a difference."
+  <div class="attr">— V · 程序正义的本质：被倾听本身就是合法性的来源。</div>
+</div>
+
+<div class="quote-block qb-red">
+  "the floodgates have been opened."
+  <div class="attr">— KK · 永续合约的美国市场大门已经打开，数十亿美元的交易量正在涌入——关键是要让监管框架足够持久。</div>
+</div>
+
+<div class="quote-block qb-yellow">
+  "it needs to be durable."
+  <div class="attr">— KK · 这是贯穿全场的最终结论：无论监管决定是否正确，如果程序不够充分，框架就不够持久——而持久性是这个市场最需要的东西。</div>
+</div>
+</div>
+
+<footer>
+  <p>本期节目来自 <a href="https://unchainedcrypto.com">Unchained</a> · Decks in the City · 2026 年 6 月</p>
+  <p>完整收听：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9588554437.mp3">播客链接</a></p>
+  <p style="margin-top: 12px; font-size: 12px;">本文所有引语均可在节目转录文本中 grep 验证。中文翻译为作者提供，英文原文为节目中实际使用的语言。</p>
+</footer>
+
+</article>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E241｜跑鞋技术迭代史：马拉松跑进2小时，靠人还是靠鞋？</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    color: #0f172a;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #868e96;
+  }
+  header .meta span { margin: 0 8px; }
+  header .guest {
+    font-size: 16px;
+    color: #495057;
+    margin-top: 8px;
+  }
+
+  h2 {
+    font-size: 22px;
+    color: #0f172a;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+  }
+  h3 {
+    font-size: 18px;
+    color: #343a40;
+    margin: 24px 0 12px;
+  }
+
+  p { margin-bottom: 16px; }
+  p.lead { font-size: 18px; color: #495057; line-height: 1.8; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0 28px;
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .card span { font-size: 13px; opacity: 0.7; }
+  .card.blue { background: #eff6ff; border-color: #3b82f6; }
+  .card.green { background: #f0fdf4; border-color: #22c55e; }
+  .card.orange { background: #fff7ed; border-color: #f97316; }
+  .card.purple { background: #faf5ff; border-color: #a855f7; }
+  .card.yellow { background: #fefce8; border-color: #eab308; }
+  .card.red { background: #fef2f2; border-color: #ef4444; }
+  .card.full { grid-column: 1 / -1; }
+
+  .quote-block {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .quote-block .attr {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-top: 6px;
+    font-style: normal;
+  }
+  .quote-block.blue { background: #eff6ff; border-color: #3b82f6; }
+  .quote-block.green { background: #f0fdf4; border-color: #22c55e; }
+  .quote-block.orange { background: #fff7ed; border-color: #f97316; }
+  .quote-block.purple { background: #faf5ff; border-color: #a855f7; }
+  .quote-block.yellow { background: #fefce8; border-color: #eab308; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .stat {
+    padding: 20px 12px;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+  }
+  .stat .num {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .stat .label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .stat .desc {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 4px;
+  }
+  .stat.blue .num { color: #2563eb; }
+  .stat.green .num { color: #16a34a; }
+  .stat.purple .num { color: #9333ea; }
+
+  .gloss {
+    font-size: 13px;
+    color: #868e96;
+    border-left: 2px solid #dee2e6;
+    padding-left: 12px;
+    margin: 8px 0 16px;
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 2px solid #e9ecef;
+    text-align: center;
+    font-size: 14px;
+    color: #868e96;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    article { padding: 24px 16px 40px; }
+    header h1 { font-size: 22px; }
+    .cards { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>E241｜跑鞋技术迭代史<br>马拉松跑进2小时，靠人还是靠鞋？</h1>
+  <div class="meta">
+    硅谷101 × 迪谈概论<span>|</span>2026年6月
+  </div>
+  <div class="guest">
+    嘉宾：盖德 — 前Nike、阿迪达斯、索康尼产品经理，运动行业20年，全职跑鞋评测自媒体「迪谈概论」主播
+  </div>
+</header>
+
+<section>
+  <p class="lead">
+  2026年4月26日，肯尼亚选手萨维以1小时59分30秒冲过伦敦马拉松终点线，成为人类历史上首位在正式马拉松比赛中跑进两小时的运动员。亚军科莱恰同样跑进了两小时。他们脚下的鞋，都来自阿迪达斯的Adios Pro Evo 3。
+  </p>
+  <p>
+  你可以说这是人类不断挑战自身极限的故事。但这也是一场持续了60多年的跑鞋战争——从1960年代第一双公路跑鞋诞生，到今天的碳板超级跑鞋，每一次纪录的打破背后，都是材料科学、发泡工艺、专利博弈和天才选手挖掘的复杂暗战。
+  </p>
+</section>
+
+<section>
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+    <div class="card blue">
+      <strong>人类首次正式破二</strong>
+      <span>萨维以1:59:30成为史上首位正式比赛跑进2小时的选手，亚军同样破二——马拉松130年历史翻开新一页</span>
+    </div>
+    <div class="card green">
+      <strong>60年跑鞋技术战争</strong>
+      <span>从New Balance Trackster到Adios Pro Evo 3，每次技术突破都是材料、工艺与商业的暗战</span>
+    </div>
+    <div class="card orange">
+      <strong>阿迪vs耐克：世纪对决</strong>
+      <span>Flyknit/Primeknit专利战、碳板/碳柱/碳环的分歧——两大巨头如何塑造整个行业</span>
+    </div>
+    <div class="card purple">
+      <strong>竞速的尽头是大众市场</strong>
+      <span>New Balance五年增长1.8倍逼近百亿美元，Evo SL一年卖一千万双——真正赚钱的是时尚与大众</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>一、跑鞋60年：从波纹鞋底到碳环</h2>
+  <p>
+  1960年代，New Balance推出了Trackster——世界上第一双专门为路跑设计的现代化跑鞋，以波纹鞋底提供更好的抓地力。1970年代，Brooks的Vanguard成为第一双大规模量产的EVA发泡棉跑鞋。此后，Nike的华夫底、Air气垫、ASICS的GEL缓震胶相继登场，跑鞋技术以渐进的方式推进。
+  </p>
+  <p>
+  但真正的颠覆始于2010年代。2015年，阿迪达斯与德国化工巨头巴斯夫合作，将TPU超临界泡棉首次引入跑鞋——Ultra Boost诞生。它将氮气等惰性气体融入中底基材，使材料达到介于固体与液体之间的"超临界"状态，回弹与缓震远超传统EVA。但Ultra Boost也有致命短板：重量偏重。它没有统治马拉松赛场，反而意外统治了通勤市场，"踩屎感"成为那几年最火的跑鞋形容词。
+  </p>
+  <p>
+  2017年，Nike与法国化工集团阿科玛合作，推出了搭载Pebax超级泡棉（ZoomX）的Vaporfly 4%。这一组合重新定义了马拉松竞速跑鞋。2018年瓦伦西亚马拉松，前100名选手中有95人穿Vaporfly。2026年，阿迪达斯用TPEE材料和碳环结构，将Adios Pro Evo 3的单只重量压到了100克以内——人类终于跑进了两小时。
+  </p>
+  <div class="gloss">作者概括：跑鞋60年的进化史本质上是材料的进化史——从EVA到TPU到PEBA再到TPEE，从化学发泡到超临界发泡。每一次基材和工艺的升级，都重新定义了"好跑鞋"的标准。</div>
+</section>
+
+<section>
+  <h2>二、为什么中底是跑鞋的灵魂？</h2>
+  <p>
+  盖德用一个简单的对比回答了这个问题：跑步和其他运动最大的区别在于，它是单一动作的无限重复。一场马拉松42.195公里，大约需要四万步——同一个落地动作，重复四万多次。每次落地的冲击力持续累加到关节、肌肉和中底上。
+  </p>
+  <div class="quote-block blue">
+    "跑步这个运动和其他运动很大的一个区别——它就是一个单一动作的不停的重复。你像一场马拉松42.195公里，你可能要跑个四万多步，那就是同一个动作你要重复四万多次。除了跑步之外，其他的运动都没有这样单一动作一直重复的。"
+    <div class="attr">—— 盖德</div>
+  </div>
+  <p>
+  这意味着中底必须在整个赛程中保持稳定的性能输出——不能只在开头软弹，后半程就衰减。传统EVA做不出"又轻、又弹、又耐久"的中底，所以早期马拉松竞速鞋的底都极薄，只有精英运动员能驾驭。Nike把碳板和超级泡棉组合后，业余跑者才第一次穿上专业竞速鞋跑马拉松。
+  </p>
+</section>
+
+<section>
+  <h2>三、碳板+超级泡棉：Nike的革命</h2>
+  <p>
+  很多人以为Vaporfly成功是因为碳板。但盖德指出：碳板在跑鞋上的应用历史已经非常长——1980年代布鲁克斯就用过，篮球鞋里碳板更是常见（Air Jordan 11、Foamposite都用了全掌碳板）。
+  </p>
+  <div class="quote-block green">
+    "碳板它只是一方面。碳板运用在跑鞋当中这个历史已经非常长了。那为什么Nike把碳板用在跑鞋当中就可以重新定义马拉松竞速跑鞋呢？是因为它配合了超级泡棉——Nike的ZoomX。"
+    <div class="attr">—— 盖德</div>
+  </div>
+  <p>
+  碳板解决的是超级泡棉的"缺点"：泡沫太软一踩到底，碳板提供支撑；泡沫太弹无法控制方向，碳板提供回弹推进力。两者的组合产生了1+1远大于2的效果。Nike将这一组合命名为Vaporfly 4%——宣称可将跑步经济性提升4%，即减少4%的能量消耗。
+  </p>
+  <p>
+  但盖德坦言这个4%是实验室数据："实际穿上每个消费者的脚之后，每个人脚都不一样，你的跑姿、体重、跑步频率都不一样，所以实际效果可能差距非常大——千人千脚。"
+  </p>
+  <p>
+  Vaporfly的强大让多个竞品放下成见，联合呼吁国际田联调查Nike，称其为"弹簧鞋"，认为它违反了体育装备不得提供超出自然跑步经济性提升的规则。最终国际田联出台了跑鞋限制性规定。
+  </p>
+</section>
+
+<section>
+  <h2>四、碳板的"政治"：为什么阿迪偏不做碳板</h2>
+  <p>
+  当几乎所有品牌都在跟进Nike的碳板路线时，阿迪达斯却走出了完全不同的路径——先做碳柱（Energy Rods），后做碳环（Carbon Ring）。这不是技术上的胜负判断，而是一段专利官司的后遗症。
+  </p>
+  <div class="quote-block orange">
+    "Nike当时出了一个针织的鞋面叫Flyknit，差不多相同的时间阿迪也出了一个针织的鞋面叫Primeknit。这两个公司还因为这个科技打了一场官司，都说这个科技是自己最先推出的。经过了那个事件之后，阿迪就是一朝被蛇咬十年怕井绳——我现在就不用Nike的碳板了，我做碳柱也行，做碳环也行，我就是不做碳板。"
+    <div class="attr">—— 盖德</div>
+  </div>
+  <p>
+  碳柱仿生人脚五根脚趾形状，五根柱状碳纤维结构分布在中底。碳环则更进一步——环形碳纤维分布在中底外围，把核心区域完全让给超级泡棉，让它自由形变回弹。Adios Pro Evo 3使用的正是碳环结构。
+  </p>
+</section>
+
+<section>
+  <h2>五、赤足vs厚底：两种跑步哲学</h2>
+  <p>
+  2005到2015年间，"赤足感"跑鞋曾风靡一时。Nike推出了Nike Free，Vibram推出了五趾鞋FiveFingers。这些鞋的核心理念是让脚回归自然状态，锻炼足底小肌群。但如今这股风潮几乎完全消退，厚底跑鞋统治了市场。
+  </p>
+  <p>
+  盖德用了一个生动的比喻：厚底鞋像快餐——第一口就很好吃，满足感强。赤足鞋像轻食沙拉——刚吃很难吃，长期坚持有益。但问题在于，如果买来穿几次就放弃，根本起不到锻炼效果。2012年Vibram还因虚假宣传被消费者集体诉讼。
+  </p>
+  <p>
+  更关键的是，以光脚跑步闻名的马拉松传奇格布雷西拉西耶在接受盖德采访时明确表示："我绝对不推荐现在的跑者光脚跑步。"他小时候跑的是土路和草地——天然软质路面自带减震。但现代跑者全部在硬质路面上训练，水泥地和柏油路的冲击力本身已经很大。不穿缓震好的跑鞋，可能在起到锻炼效果之前就先伤了。
+  </p>
+</section>
+
+<section>
+  <h2>六、Adios Pro Evo 3：破二的技术密码</h2>
+  <div class="stats">
+    <div class="stat green">
+      <div class="num">&lt;100g</div>
+      <div class="label">单只重量</div>
+      <div class="desc">此前顶尖竞速鞋为180-220g</div>
+    </div>
+    <div class="stat blue">
+      <div class="num">TPEE</div>
+      <div class="label">中底泡棉</div>
+      <div class="desc">TPU的迭代升级，非革命性新材料</div>
+    </div>
+    <div class="stat purple">
+      <div class="num">碳环</div>
+      <div class="label">支撑结构</div>
+      <div class="desc">环形碳纤维，让泡棉自由形变</div>
+    </div>
+  </div>
+  <p>
+  盖德认为Adios Pro Evo 3的成功有一定偶然性——它恰好是一双可以被量产的、极致轻量化的跑鞋，又恰好被阿迪赞助的运动员穿着跑进了两小时。但这双鞋的限量策略（定价超500美元，限量发售）意味着它无法取得当年Vaporfly那样的统治级上脚率。阿迪真正的商业目的，是用破二的轰动效应来带动其平民版Adios Pro系列的销售。
+  </p>
+</section>
+
+<section>
+  <h2>七、为什么破二的是阿迪不是耐克？</h2>
+  <p>
+  这是一个多因素叠加的结果。首先是天才选手的悲剧：Nike签约的基普图姆成绩极为优异，距离破二仅一步之遥，却在2024年因车祸去世，年仅24岁。挖掘一个天才选手的概率极低，Nike短期内不可能再找到替代者。
+  </p>
+  <p>
+  其次是Nike自身的困境。生意下滑、更换CEO风波导致产品创新团队受到影响。Vaporfly和Alphafly系列多年没有大的创新，基本是初代产品的小修小补。Alphafly 3推出已近两年，新品迟迟未出。
+  </p>
+  <p>
+  还有一个深层原因：Nike前CEO将产品部门的组织架构从按运动项目（跑步、篮球、训练）改为按性别（男子、女子、儿童）。盖德解释了这一变化的影响——"以运动项目划分，是以服务运动员为最终导向。按性别划分，就是以卖货为最终导向。这两个看起来区别不大，但引申到产品创新和规划上，区别非常大。"
+  </p>
+  <div class="gloss">作者概括：Nike在2016-2020年的跑鞋霸权不是被阿迪的技术超越打破的，而是被自己的组织决策失误和运气（失去天才选手）共同瓦解的。阿迪抓住了这个窗口期。</div>
+</section>
+
+<section>
+  <h2>八、选材暗战：天才选手的发现与失去</h2>
+  <p>
+  在跑鞋战争中，签约顶尖运动员的工作几乎和技术研发同样重要。盖德透露，伦敦马拉松破二的萨维差点去当了老师——是他的舅舅/叔叔觉得他跑步更有前途，才把他拉回马拉松运动中。如果没有这层家族关系，2026年的破二可能还需要等待。
+  </p>
+  <p>
+  品牌签运动员的策略也在变化。过去是场地赛选手（5000米/10000米）年纪大了、竞争力下降后才转战马拉松。现在因为马拉松的热度远超场地赛，很多年轻的场内顶尖选手提前转项——选材池在扩大。但签人需要长期耕耘：从选手很年轻、还没有出成绩时就要建立联系。等选手功成名就再去签，价格极高且对方不会轻易离开原品牌。
+  </p>
+  <p>
+  马拉松的高关注度带来了商业机会，商业机会吸引资本涌入，资本涌入扩大选材范围——一个正向循环。但也意味着，如果一个品牌的体育营销团队不稳定（如Nike近年的人员流动），就可能在选材竞争中落后。
+  </p>
+</section>
+
+<section>
+  <h2>九、看不见的竞赛：训练科技也在进化</h2>
+  <p>
+  跑鞋只是最终在赛场上看到的工具。在训练和恢复环节，有更多高科技工具在不断涌现：跑步功率计绑在鞋上监测功率输出稳定性、实时血糖监测贴片帮助判断补给时机、乳酸检测让教练动态调整训练计划。补剂也从基础的电解质发展到酸樱桃汁、甜菜根汁、姜黄素，甚至肽类恢复产品。恢复工具则包括液氮舱、压缩腿套、HRV睡眠监测和恒温床垫。
+  </p>
+  <p>
+  盖德的判断是：即使跑鞋本身没有突破性创新，人类也能慢慢把两小时记录打破——跑鞋只是把破纪录的时间提前了。破二是所有科技进步共同作用的结果。
+  </p>
+</section>
+
+<section>
+  <h2>十、New Balance的逆袭：五年增长1.8倍</h2>
+  <p>
+  当聚光灯都在阿迪和耐克的破二对决上时，一个安静的故事正在发生：New Balance 2025年销售额达到96亿美元，过去五年规模增长了1.8倍，有望成为继Nike、Adidas、Lululemon之后第四个破百亿美元的运动品牌。在任何一个有规模的跑鞋品牌中，这个增速都是最快的。
+  </p>
+  <p>
+  表面上看这是New Balance的成功，但盖德指出一个关键的结构性原因——Nike的"拱手相让"。Nike上一任CEO推行的DTC策略过度收缩了经销商渠道，而美国市场以多品店为主（一个店卖多个品牌）。Nike撤出后货架空出，New Balance、HOKA、昂跑迅速填补，吃掉了Nike的北美市场份额。
+  </p>
+  <p>
+  与此同时，跑步带来的运动时尚风潮也在推波助澜。New Balance的复古跑鞋一直有很强的时尚基因，与各大潮牌和买手店的联名合作深耕多年。当跑步成为新的潮流符号，他们乘上了这股东风。
+  </p>
+</section>
+
+<section>
+  <h2>十一、大众时尚：跑鞋的真正利润引擎</h2>
+  <p>
+  阿迪达斯Adizero Evo SL上市一年卖出1000万双——与Nike Air Force 1的年销量（1000-1200万双）相当，已成为现象级跑鞋。而盖德给出的跑鞋"成功线"是年销100万双。Evo SL是正常成功标准的10倍。
+  </p>
+  <div class="quote-block purple">
+    "阿迪在推广这双鞋的时候就一直在说竞速美学。它找了很多时尚博主，让他们用这双鞋去搭配各种时尚风格。我当时对这个推广还不是特别认可，但事实证明确实我是看走眼了。没有想到这双鞋会这么成功。"
+    <div class="attr">—— 盖德</div>
+  </div>
+  <p>
+  Evo SL本质上是一双速度训练鞋，不适合慢跑和通勤。但架不住很多人因为它好看而买来逛街、旅游甚至爬山。阿迪的设计策略——极简鞋面加醒目三条纹，巨大的logo从鞋面延伸到鞋底——为销量提供了极大的加成。盖德注意到一个趋势反转：过去运动行业有说法"logo越大销量越少"，但如今消费者反而要强调品牌logo，读图时代和短视频让醒目的大logo更容易在社交网络上传播。
+  </p>
+  <p>
+  更底层的趋势是运动时尚的范式转移。过去几十年，休闲鞋和复古鞋的灵感来自篮球鞋——Air Jordan是终极符号。但现在，学校里的小孩不再穿篮球鞋上学，而是穿跑鞋，甚至碳板竞速跑鞋。跑步正在取代篮球成为新的潮流文化锚点。
+  </p>
+  <div class="quote-block blue">
+    "最激烈的竞争是在竞速跑鞋，但最赚钱的市场还是在大众市场。你只有在竞速这块站稳了脚跟，让人家知道你是一个顶尖的专业跑步品牌之后，那个跑步相关的运动时尚那块才能被带动。"
+    <div class="attr">—— 盖德</div>
+  </div>
+</section>
+
+<section>
+  <h2>十二、HOKA与昂跑：新势力的差异化路径</h2>
+  <p>
+  HOKA以越野跑起家，三项核心技术建立壁垒：滚动平衡（最早在跑鞋中加入滚动感）、嵌入式鞋床（侧墙高，像摇篮包裹脚）、厚底缓震。虽然被诟病"还在用传统EVA卖千元以上"，但盖德认为HOKA把EVA调校得极其舒适是真正的功力——很多忠实消费者穿惯了HOKA就再难换别的品牌。
+  </p>
+  <p>
+  昂跑走的是完全不同的路。铁人三项运动员创立，Cloud Tech独门技术，但高昂定价和极少折扣让它更多是"精英消费人群的身份象征"而非严肃跑者的训练工具。真正跑量大、频繁换鞋的严肃跑者会觉得性价比不足。昂跑曾推出机械臂喷射打印鞋面的竞速鞋，技术上极具创新，但上脚率不高——毕竟对马拉松竞速鞋来说，最重要的永远是中底。
+  </p>
+</section>
+
+<section>
+  <h2>十三、国产品牌：差距在缩小，但短板仍在</h2>
+  <p>
+  中国品牌的发泡技术已经追了上来。同样用巴斯夫或阿科玛的基材，通过中国领先的发泡工艺可以得到性能更好的成型中底。晋江国盛和中科院宁波材料所合作生产的材料已供给索康尼、李宁、匹克。大毛牛等新兴发泡公司也在快速成长。中国的万华化学在基材方面也在追赶欧洲化工巨头。
+  </p>
+  <p>
+  但国产品牌有三个结构性短板。第一是研发周期短——普遍注重短期效益，很少有品牌花好几年做二十几个版本去迭代一双跑鞋。18个月的产品周期中，真正用于研发的时间可能只有3-6个月。第二是设计师不跑步——国内鞋设计师没有科班出身，很多从篮球或时尚休闲转过来，盖德观察到一个普遍现象是跑鞋设计师自己跑步的比例并不高。第三是人才流动性高——中国有太多运动品牌，跳槽容易；而国外选择少，设计师在一家公司待的时间更长，产品团队更稳定。
+  </p>
+</section>
+
+<section>
+  <h2>十四、未来：越野跑、Hyrox与跑鞋出海</h2>
+  <p>
+  马拉松市场正在进入瓶颈期。国内马拉松赛事开始出现取消现象，海外市场已非常成熟。品牌在半年到一年前就已经看到这个趋势（通过订货数据），开始大幅增加越野跑的投入。与此同时，Hyrox这一新兴运动也在吸引品牌的注意，阿迪已经在研发Hyrox专用鞋。
+  </p>
+  <p>
+  对中国品牌而言，出海是另一个方向。盖德认为跑鞋出海比汽车出海更容易——中国在供应链和性价比上的优势可以复刻。安踏已在美国做跑步社群并参加跑鞋会展，一些初创品牌也在发展海外经销商。从东南亚和非洲市场切入，逐渐进入欧美，这条路径正在被验证。
+  </p>
+  <p>
+  至于跑鞋技术本身，盖德给出了谨慎乐观的判断："科技的进步肯定是螺旋性的上升，不会一直是线性的上升。经历了相对比较慢的发展时期之后，我觉得可以期待下一个Boost的时刻或者Vaporfly的时刻——可能在未来的几年，会有一个真正的创新性突破。"
+  </p>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+  <div class="quote-block blue">
+    "碳板它只是一方面。为什么Nike把它用在跑鞋当中就可以重新定义马拉松竞速跑鞋？是因为它配合了超级泡棉。"
+    <div class="attr">—— 盖德 解析Vaporfly成功的真正原因</div>
+  </div>
+  <div class="quote-block green">
+    "阿迪的跑鞋是世界级的中底，然后小区级的鞋面。很多人穿着Adios Pro系列跑马拉松，磨得两个脚都是血——血染战靴。"
+    <div class="attr">—— 盖德 指出阿迪跑鞋的致命短板</div>
+  </div>
+  <div class="quote-block orange">
+    "一朝被蛇咬十年怕井绳。经过了Flyknit/Primeknit的专利官司之后，阿迪就是不做碳板——做碳柱也行，做碳环也行，我就是不做碳板。"
+    <div class="attr">—— 盖德 揭示碳板/碳柱/碳环分歧的真实原因</div>
+  </div>
+  <div class="quote-block purple">
+    "其实我觉得人和鞋都重要。但在他之前那些精英选手——基普图姆、基普乔格、格布雷西拉西耶——他们每个人都为今天的破二铺好了路。"
+    <div class="attr">—— 盖德 谈破二的真正归属</div>
+  </div>
+  <div class="quote-block yellow">
+    "最激烈的竞争是在竞速跑鞋，但最赚钱的市场还是在大众市场。你只有在竞速这块站稳了脚跟，人家才知道你是一个顶尖专业的跑步品牌，运动时尚那块才能被带动。"
+    <div class="attr">—— 盖德 总结跑鞋生意的核心逻辑</div>
+  </div>
+</section>
+
+<section>
+  <h2>最终答案：不止于鞋和人</h2>
+  <p>
+  马拉松跑进两小时，靠人还是靠鞋？两个答案都不完整。破二是所有科技进步共同作用的结果——从碳板+超级泡棉的跑鞋革命，到液氮舱、血糖监测、乳酸检测等训练恢复工具，再到选材范围的扩大和更多资本涌入马拉松运动。跑鞋只是最终在赛场上看到的那件工具。在你看不到的地方，有更多人在铺路。
+  </p>
+  <p>
+  正如盖德在节目最后所说：正因为有了每一个参与和关注马拉松的人的贡献，这项运动才有了如今这么高的商业价值，才会有这么多品牌投资进来——发掘更优秀的运动员，打造性能更极致的跑鞋装备。破二不只属于萨维和阿迪达斯，它属于所有曾经在这条路上奔跑过的人。
+  </p>
+</section>
+
+<footer>
+  原文来自 <a href="https://sv101.fireside.fm/254">硅谷101 E241｜跑鞋技术迭代史</a><br>
+  嘉宾：盖德（迪谈概论） | 主持人：麻花<br>
+  🤖 本文由 Claude 基于播客转录自动生成
+</footer>
+
+</article>
+</body>
+</html>
