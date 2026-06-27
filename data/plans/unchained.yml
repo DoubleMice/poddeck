@@ -1,15 +1,111 @@
 source: unchained
-refreshed_at: 2026-06-26T04:35:49.381Z
+refreshed_at: 2026-06-27T04:28:17.561Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 113
+total_candidates: 112
 done: 0
 pending: 9
-needs_transcript: 104
+needs_transcript: 103
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 9bfc4610-717a-11f1-8775-bb9c48b81924
+    guid: 9bfc4610-717a-11f1-8775-bb9c48b81924
+    title: "Ex-Ethereum Foundation Researchers Launched Their Own Lab: Uneasy Money"
+    duration: 4297
+    published: Fri, 26 Jun 2026 16:18:00 -0000
+    published_sort: "20260626"
+    first_seen_at: 2026-06-27T04:28:17.558Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1672226994.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1672226994.mp3
+    image: https://megaphone.imgix.net/podcasts/9bfc4610-717a-11f1-8775-bb9c48b81924/image/2f13168b4718be5d59d6325c65d1cd43.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      An anti-MEV activist spent weeks building 66 fake contracts to trap the sandwich bot jaredfromsubway.eth. Then
+      jared's operators did the one thing nobody expected.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Cape: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's privacy-first
+      mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33% off your
+      first six months at https://cape.co/unchained (use code: UNCHAINED).
+
+
+      ========================================================
+
+
+      A new R&D lab called Ethlabs has split from the Ethereum Foundation, backed by Bitmine and Joe Lubin. Its first
+      stated goal is solving a '15 minute finality problem' that none of the hosts can quite explain the point of.
+
+
+      Kain Warwick, Taylor Monahan, and Luca Netz ask whether a breakaway staffed largely by ex-EF people can really
+      escape the EF's habits, or just rebuild a smaller version of them.
+
+
+      Then the conversation turns to fomo's $75M raise from non-crypto VCs, and why a trading app that never calls
+      itself a wallet may have cracked the onboarding flow the rest of crypto keeps getting wrong.
+
+
+      The hosts also trace a CryptoPunks judge ordering a self-represented plaintiff to handwrite filings to stop the AI
+      slop, the anti-MEV activist who trapped sandwich bot jaredfromsubway.eth with 66 fake contracts, and the WSJ's
+      claim that Polymarket paid creators to stage fake winning bets.
+
+
+      Hosts:
+
+
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
+
+
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
+
+
+      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, CEO of Pudgy Penguins
+
+
+      Timestamps
+
+
+      🧪 02:06 Ethlabs breaks from the EF: what the new R&D lab is actually for
+
+
+      🤔 03:57 Why the 'fifteen minute finality' framing baffles the hosts
+
+
+      📈 15:40 fomo's $75M raise and why a no-token trading app pulled it off
+
+
+      🧱 21:45 The wallet lesson: why building for trading beats building for custody
+
+
+      💙 30:48 Cape: Get 33% off your first six months at https://cape.co/unchained
+
+
+      ⚖️ 31:44 The CryptoPunks lawsuit where a judge ordered AI-slop filings handwritten
+
+
+      🥪 41:04 What a sandwich bot is and why jaredfromsubway.eth became infamous
+
+
+      🪤 45:34 How an anti-MEV activist trapped Jared with 66 fake token contracts
+
+
+      🏛️ 50:46 Why Jared running to the courts under the CFAA makes no sense
+
+
+      😤 56:36 Kain on the exploiter who cries foul when someone finally steals from him
+
+
+      📺 59:20 The WSJ claim that Polymarket paid creators to stage fake winning bets
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: dcc9b538-6ac7-11f1-8ee6-33aea1081996
     guid: dcc9b538-6ac7-11f1-8ee6-33aea1081996
     title: Unchained Celebrates 10 Years! Laura and Haseeb Cover Highs, Lows and New Directions
@@ -9602,120 +9698,6 @@ episodes:
         JPMorgan Launches Tokenized Money Market Fund on Ethereum
 
         Vy's paper on the evolution of capital markets
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 25595ff8-f6e0-11f0-9c43-1fa3cc09620b
-    guid: 25595ff8-f6e0-11f0-9c43-1fa3cc09620b
-    title: How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
-    duration: 3856
-    published: Wed, 21 Jan 2026 20:00:00 -0000
-    published_sort: "20260121"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6766419387.mp3?updated=1769011542
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6766419387.mp3?updated=1769011542
-    image: https://megaphone.imgix.net/podcasts/25595ff8-f6e0-11f0-9c43-1fa3cc09620b/image/7b7074e908f9ae647f5cc77cb5682d2b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Thank you to our sponsor, Walrus!
-
-
-      Crypto intelligence platform Nansen has rolled out an AI trading agent, aiming to let users complete the full
-      trading lifecycle—from discovery to execution—within a single platform. But the move also heralds a new horizon
-      for trading and investment, one potentially filled with interesting possibilities.
-
-
-      In this episode of Unchained Nansen CEO Alex Svanevik unpacks what the AI agent does, the end game, the
-      opportunities and the hurdles.
-
-
-      Can Nansen AI do for trading what Anthropic's Claude is doing for coding? And will humans soon be able to work
-      without being glued to a screen?
-
-
-      Listen to find out!
-
-
-      Guests:
-
-
-      Alex Svanevik, Co-founder and CEO at Nansen
-
-
-      Links:
-
-        How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
-        GOAT: How AI Agents Talking Turned Into a $268 Million Memecoin ‘Religion’
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: aed65a6e-f687-11f0-9cc0-736779edb5a4
-    guid: aed65a6e-f687-11f0-9cc0-736779edb5a4
-    title: Why Bitcoin Isn't Acting as Digital Gold & International Stocks Are Winning - Bits + Bips
-    duration: 4106
-    published: Wed, 21 Jan 2026 05:11:00 -0000
-    published_sort: "20260121"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9944207774.mp3?updated=1768973413
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9944207774.mp3?updated=1768973413
-    image: https://megaphone.imgix.net/podcasts/aed65a6e-f687-11f0-9cc0-736779edb5a4/image/33f700ad9249a52d80b633466a7daff1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      This episode is brought to you by Uniswap!
-
-
-      Are you a builder who needs to add on-chain trading to your product?
-
-
-      The Uniswap Trading API from Uniswap Labs offers plug-and-play access to some of the deepest liquidity in crypto
-
-
-      It’s on-chain execution at an enterprise level. More liquidity. Less complexity.
-
-
-      Visit hub.uniswap.org to learn more.
-
-
-      Is Bitcoin losing its “digital gold” narrative just as geopolitics heat up? The Bits + Bips crew debates what
-      markets still aren’t pricing in.
-
-
-      In this episode of Bits + Bips, hosts Austin Campbell, Ram Ahluwalia, and Chris Perkins are joined by David Duong,
-      Global Head of Research at Coinbase, to unpack a volatile mix of crypto regulation, geopolitics, and shifting
-      market structure.
-
-
-      The group digs into why the latest market structure bill is starting to crack, why investors may be underpricing
-      regulatory clarity, and what it means that Bitcoin is failing to behave like digital gold just as global risk
-      rises.
-
-
-      They also explore whether the U.S. and Europe are still true allies, why Wall Street’s move toward 24/7 onchain
-      markets matters more than most realize, and how internet capital markets could reshape who gets access to capital
-      in the next decade.
-
-
-      Hosts:
-
-
-      Ram Ahluwalia, CFA, CEO and Founder of Lumida
-
-
-
-
-
-      Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
-
-
-      Christopher Perkins, Managing Partner and President of CoinFund
-
-
-      Guests:
-
-
-      David Duong, Global Head of Research at Coinbase
-
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
