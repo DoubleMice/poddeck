@@ -1,15 +1,156 @@
 source: tbpn
-refreshed_at: 2026-06-29T04:39:48.008Z
+refreshed_at: 2026-06-30T04:32:37.970Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
+total_candidates: 3
 done: 0
-pending: 2
+pending: 3
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 86d365bf-be76-43dc-acd2-9e8cf689623f
+    guid: 86d365bf-be76-43dc-acd2-9e8cf689623f
+    title: Open-Source AI Battle, Google Throttles Meta, Micron Margins Moon | Edward Coristine & Tai Groot, Chad Rigetti,
+      Pim de Witte, Yadin Soffer, Jack Morris, Neil Movva, Jakob Diepenbrock, Chris Altchek
+    duration: 8459
+    published: Mon, 29 Jun 2026 13:43:58 -0700
+    published_sort: "20260629"
+    first_seen_at: 2026-06-30T04:32:37.962Z
+    url: https://share.transistor.fm/s/66c0ffeb
+    audio_url: https://media.transistor.fm/66c0ffeb/5d14456f.mp3
+    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/66c0ffeb/transcription.txt
+    transcript_type: text/plain
+    summary: "(02:21) - Open-Source AI Battle\r
+
+      (14:33) - GLM-5.2 Review\r
+
+      (21:38) - Google Throttles Meta\r
+
+      (27:20) - 𝕏 Timeline Reactions\r
+
+      (34:38) - Micron Margins Moon\r
+
+      (38:48) - Comcast Splits in Two\r
+
+      (43:04) - Europe Meets Suburbia\r
+
+      (48:18) - Edward Gorberstein, head of engineering at the National Design Studio, discusses the launch of Ramparts,
+      a local-first privacy model that allows users to control the data they share with AI by keeping personal
+      information on their devices. He explains that existing AI models are too large to run in browsers, preventing
+      in-browser PII removal, and emphasizes that Ramparts is open-source, with weights available on Hugging Face,
+      enabling technical users to create custom applications. Gorberstein highlights the studio's mission to improve the
+      American digital experience by developing user-centric software, citing previous successes like Trumper X, which
+      saved users over $500 million in drug costs.\r
+
+      (57:53) - 𝕏 Timeline Reactions\r
+
+      (01:03:16) - Chad Rigetti, founder of Rigetti Computing, discusses his journey from developing quantum computing
+      at IBM to establishing his own company, which went public in 2022. He highlights the importance of integrating
+      quantum technologies into data centers to enhance AI capabilities, emphasizing the need for a multimodal approach
+      to quantum hardware. Rigetti also addresses the challenges of transitioning from private to public markets and the
+      significance of long-term strategic planning in the evolving quantum computing landscape.\r
+
+      (01:28:42) - Pim de Witte, CEO of General Intuition, discusses the company's unique approach to AI development by
+      leveraging extensive datasets of action-labeled video game footage to train models capable of spatial-temporal
+      reasoning. He emphasizes the competitive nature of the AI industry and highlights General Intuition's distinct
+      advantage: a proprietary dataset that enables their models to predict actions in both virtual and physical
+      environments. Additionally, de Witte announces a recent $320 million funding round, bringing the company's
+      valuation to $2.3 billion, which will support further advancements in their AI research and applications.\r
+
+      (01:36:39) - Yadin Sofer, co-founder and CEO of Tracer, discusses the company's emergence from stealth with the
+      launch of a subterranean defense technology firm. He highlights the challenges of underground operations, such as
+      unpredictable geology, and emphasizes the importance of small-diameter, long-length designs for efficiency. Sofer
+      also mentions Tracer's $25 million seed round aimed at collaborating with the military to establish a U.S.
+      subterranean strategy for warfare.\r
+
+      (01:42:52) - Jack Morris, co-founder and head of research at Engram, discusses the company's recent emergence from
+      stealth with $98 million in funding from investors like General Catalyst, Kleiner Perkins, and Sequoia. Engram
+      focuses on developing AI systems that enhance human intelligence by creating models capable of understanding
+      users' unique contexts and workflows, thereby improving efficiency and reducing costs. Early enterprise partners
+      include Microsoft, Notion, and Harvey, who benefit from these AI solutions that adapt to specific organizational
+      needs.\r
+
+      (01:48:03) - Neil Movva, co-founder and CEO of Sail Research, discusses his company's focus on building the most
+      efficient inference systems for AI agents that operate autonomously over extended periods. He highlights their
+      commitment to open-source models, such as GLM 5.2, and emphasizes the importance of optimizing the entire
+      stack—from hardware to API—to enhance efficiency. Movva also notes the shift in AI workloads from
+      human-in-the-loop tasks to background processes, predicting that background tasks will soon dominate, and
+      underscores the need for infrastructure that supports long-running agents effectively.\r
+
+      (01:54:34) - Jakob Diepenbrock, the 22-year-old General Partner of Discipulus Ventures, recently closed a $30
+      million fund targeting early-stage investments in defense-tech, energy, mining, manufacturing, and other critical
+      industries. In the conversation, he discusses the firm's strategy of securing significant ownership in startups at
+      low valuations by being the first investor, often assisting with company incorporation and subsequent fundraising.
+      He highlights the advantages of El Segundo's robust engineering talent and supply chain infrastructure for
+      hardware development, noting a shift from defense-focused investments to sectors like manufacturing, chemicals,
+      industrials, space, and energy.\r
+
+      (02:02:52) - Chris Altchek is the founder and CEO of Cadence, a health technology company that partners with major
+      health systems to provide remote patient monitoring and management for chronic conditions. In the conversation,
+      Altchek discusses Cadence's recent $100 million Series C funding, the company's rapid progress in automating
+      chronic disease treatment, and the significant impact their technology has had on patient outcomes, including
+      preventing strokes and heart attacks through real-time monitoring and intervention.\r
+
+      (02:14:40) - 𝕏 Timeline Reactions
+
+
+      TBPN is made possible by:
+
+
+      Ramp - https://ramp.com
+
+
+      Public - https://public.com
+
+
+      Cisco - https://www.cisco.com
+
+
+      Console - https://www.console.com
+
+
+      CrowdStrike - https://www.crowdstrike.com
+
+
+      Figma - https://www.figma.com
+
+
+      MongoDB - https://www.mongodb.com
+
+
+      NYSE - https://www.nyse.com
+
+
+      Railway - https://railway.com
+
+
+      Shopify - https://www.shopify.com
+
+
+      Codex - http://openAI.com/codex
+
+
+      Follow TBPN:
+
+
+      https://TBPN.com
+
+
+      https://x.com/tbpn
+
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+
+      https://podcasts.apple.com/us/podcast/tbpn/id1772360235
+
+
+      https://www.youtube.com/@TBPNLive"
+    status: pending
+    priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
     title: Midjourney Medical, AI Talent Wars 2.0, Jake Paul Joins | Derek Thompson, Rene Haas, Robert Slaughter, Rob Reid,
