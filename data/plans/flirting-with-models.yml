@@ -1,13 +1,13 @@
 source: flirting-with-models
-refreshed_at: 2026-07-01T04:39:21.413Z
+refreshed_at: 2026-07-01T18:42:53.929Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: e6f25431-c85a-4181-8fd8-a099eb4da7f7
@@ -20,5 +20,9 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
     image: https://artwork.captivate.fm/94ac142d-16c3-40dd-aeb4-d40293c66d6f/S3-FlirtingWithModels-with-Peter-Hecht-copy-2.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-01T18:53:54.091Z
+    transcript_error: "audio download failed: 404 Missing redirect URL"
+    transcript_completed_at: 2026-07-01T18:53:54.388Z

@@ -31,6 +31,22 @@ importers:
         specifier: ^2.5.0
         version: 2.8.3
 
+  episodes/0111384e-4014-4e7a-ae34-d30a91b2f2b1:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.16.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.38)(esbuild@0.27.7)(lightningcss@1.32.0)(magicast@0.5.2)(markdown-it@14.2.0)(playwright-chromium@1.61.0)(postcss@8.5.15)(rolldown@1.0.3)(tsx@4.21.0)
+      slidev-addon-excalidraw:
+        specifier: ^1.1.0
+        version: 1.1.1
+      slidev-theme-academic:
+        specifier: ^2.1.0
+        version: 2.1.0(postcss@8.5.15)(rollup@4.60.1)(vite@8.0.16(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.9.0))
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.59.1
+        version: 1.61.0
+
   episodes/027c3430-6114-11f1-9f97-7768ee497a43:
     dependencies:
       '@slidev/cli':
@@ -959,6 +975,22 @@ importers:
         specifier: ^1.59.1
         version: 1.60.0
 
+  episodes/86d365bf-be76-43dc-acd2-9e8cf689623f:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.16.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.38)(esbuild@0.27.7)(lightningcss@1.32.0)(magicast@0.5.2)(markdown-it@14.2.0)(playwright-chromium@1.61.0)(postcss@8.5.15)(rolldown@1.0.3)(tsx@4.21.0)
+      slidev-addon-excalidraw:
+        specifier: ^1.1.0
+        version: 1.1.1
+      slidev-theme-academic:
+        specifier: ^2.1.0
+        version: 2.1.0(postcss@8.5.15)(rollup@4.60.1)(vite@8.0.16(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.9.0))
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.59.1
+        version: 1.61.0
+
   episodes/89d471e6-6078-11f1-83b6-5bd3f347e302:
     dependencies:
       '@slidev/cli':
@@ -1056,6 +1088,22 @@ importers:
         version: 1.60.0
 
   episodes/92146c28-6c24-11f1-9d91-63c29dba765d:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.16.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.38)(esbuild@0.27.7)(lightningcss@1.32.0)(magicast@0.5.2)(markdown-it@14.2.0)(playwright-chromium@1.61.0)(postcss@8.5.15)(rolldown@1.0.3)(tsx@4.21.0)
+      slidev-addon-excalidraw:
+        specifier: ^1.1.0
+        version: 1.1.1
+      slidev-theme-academic:
+        specifier: ^2.1.0
+        version: 2.1.0(postcss@8.5.15)(rollup@4.60.1)(vite@8.0.16(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.9.0))
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.59.1
+        version: 1.61.0
+
+  episodes/93d62c88-74b5-11f1-818a-177dedc9e7a4:
     dependencies:
       '@slidev/cli':
         specifier: ^52.14.2
@@ -1456,6 +1504,22 @@ importers:
         version: 1.60.0
 
   episodes/a98864e0-6b8e-11f1-9816-531add510c23:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.16.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.38)(esbuild@0.27.7)(lightningcss@1.32.0)(magicast@0.5.2)(markdown-it@14.2.0)(playwright-chromium@1.61.0)(postcss@8.5.15)(rolldown@1.0.3)(tsx@4.21.0)
+      slidev-addon-excalidraw:
+        specifier: ^1.1.0
+        version: 1.1.1
+      slidev-theme-academic:
+        specifier: ^2.1.0
+        version: 2.1.0(postcss@8.5.15)(rollup@4.60.1)(vite@8.0.16(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.9.0))
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.59.1
+        version: 1.61.0
+
+  episodes/a9c7a8f2-5a46-11f1-9a84-fb368c3bb279:
     dependencies:
       '@slidev/cli':
         specifier: ^52.14.2

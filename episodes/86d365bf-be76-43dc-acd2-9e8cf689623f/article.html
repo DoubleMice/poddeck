@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open-Source AI Battle, Google Throttles Meta, Micron Margins Moon — TBPN 2026年6月</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+  }
+  .meta {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  .meta a {
+    color: #1971c2;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1971c2;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: #333;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    margin: 16px 0 24px;
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .card-blue { background: #eff6ff; border-color: #3b82f6; }
+  .card-red { background: #fef2f2; border-color: #ef4444; }
+  .card-yellow { background: #fffbeb; border-color: #eab308; }
+  .card-green { background: #f0fdf4; border-color: #22c55e; }
+  .card-purple { background: #faf5ff; border-color: #a855f7; }
+  .card-orange { background: #fff7ed; border-color: #f97316; }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .quote {
+    margin: 24px 0;
+    padding: 20px 24px;
+    border-left: 4px solid #3b82f6;
+    background: #eff6ff;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    line-height: 1.7;
+  }
+  .quote .attribution {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-style: normal;
+    color: #666;
+  }
+  .gloss {
+    margin: 16px 0;
+    padding: 12px 16px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+  }
+  .gloss::before { content: "📝 作者概括："; font-weight: 600; font-style: normal; }
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .highlight {
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border: 1px solid #e5e5e5;
+  }
+  .highlight .number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1971c2;
+    display: block;
+  }
+  .highlight .label {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+  .quotes-section {
+    margin: 32px 0;
+  }
+  .quotes-section .quote-item {
+    margin-bottom: 12px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .qi-blue { background: #eff6ff; border-color: #3b82f6; }
+  .qi-green { background: #f0fdf4; border-color: #22c55e; }
+  .qi-yellow { background: #fffbeb; border-color: #eab308; }
+  .qi-red { background: #fef2f2; border-color: #ef4444; }
+  .qi-purple { background: #faf5ff; border-color: #a855f7; }
+  .qi-orange { background: #fff7ed; border-color: #f97316; }
+  .qi-teal { background: #f0fdfa; border-color: #14b8a6; }
+  .qi-pink { background: #fdf2f8; border-color: #ec4899; }
+  .qi-indigo { background: #eef2ff; border-color: #6366f1; }
+  .qi-lime { background: #f7fee7; border-color: #84cc16; }
+  .qi-amber { background: #fffbeb; border-color: #f59e0b; }
+  .qi-rose { background: #fff1f2; border-color: #f43f5e; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+  }
+  footer a { color: #1971c2; }
+  @media (max-width: 640px) {
+    article { padding: 24px 16px 48px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    .cards { grid-template-columns: 1fr; }
+    .highlight-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Open-Source AI Battle, Google Throttles Meta, Micron Margins Moon</h1>
+  <div class="meta">
+    <strong>TBPN</strong> · 2026 年 6 月 29 日 · 2h21m
+  </div>
+  <div class="meta">
+    嘉宾：Edward Coristine & Tai Groot · Chad Rigetti · Pim de Witte · Yadin Soffer · Jack Morris · Neil Movva · Jakob Diepenbrock · Chris Altchek
+  </div>
+  <div class="meta">
+    <a href="https://share.transistor.fm/s/66c0ffeb">📻 收听完整节目</a>
+  </div>
+</header>
+
+<h2>为什么这期值得关注</h2>
+
+<p>本期 TBPN 是 2026 年 6 月最具信息密度的一集。三条主线交织——开源 AI 打破闭源领先的叙事、AI 算力瓶颈暴露、记忆芯片厂商攫取超额利润——再加上八位身处前沿的创始人和工程师的深度访谈。以下是你需要知道的：</p>
+
+<div class="cards">
+  <div class="card card-blue">
+    <strong>GLM 5.2 改变棋局</strong>
+    中国开源模型首次在安全漏洞发现能力上匹配美国前沿模型。《华尔街日报》头版报道，华盛顿震动。
+  </div>
+  <div class="card card-red">
+    <strong>Google 掐住 Meta 算力</strong>
+    Google 无法满足 Meta 对 Gemini 的全部需求，导致该项目延迟——即使 Google 年投 2000 亿美元 CapEx。
+  </div>
+  <div class="card card-yellow">
+    <strong>Micron 万亿市值</strong>
+    DRAM 价格单季度涨 60%，NAND 涨 80%。AI 公司的成本正在大规模转移给记忆芯片厂商。
+  </div>
+  <div class="card card-green">
+    <strong>量子加速 AI 数据中心</strong>
+    Chad Rigetti 的新公司 Sigletree 正在构建量子加速 AI 服务器，目标几个数量级的训练加速。
+  </div>
+  <div class="card card-purple">
+    <strong>万亿动作 token 的 AGI</strong>
+    General Intuition 融资 3.2 亿美元，用游戏动作空间数据训练通用智能体。
+  </div>
+  <div class="card card-orange">
+    <strong>AI 拯救慢性病</strong>
+    Cadence 融资 1 亿美元，用 AI 自动化心衰、高血压、糖尿病治疗——每周避免 270 万美元住院费。
+  </div>
+</div>
+
+<h2>开源 AI 重回牌桌：GLM 5.2 的冲击波</h2>
+
+<p>6 月 13 日，智谱 AI（z.ai）发布了 GLM 5.2——一个开放权重的 AI 模型。两周后，《华尔街日报》把这个故事放在了头版："中国重塑与美国的 AI 竞赛，安全模型取得突破"。</p>
+
+<p>核心数据令人侧目：安全公司 Semgrep 的基准测试显示，GLM 5.2 在安全漏洞发现能力上超越了 Anthropic 的 Claude Opus 4.8，并能与 Mythos 匹敌。这在几周前还不可想象——开源模型在安全这个最前沿的能力上追平了闭源。</p>
+
+<p>但事情没那么简单。Tyler 指出了一个容易被忽视的细节：</p>
+
+<div class="quote">
+  "大多数人说 5.2 非常吃 token。在 per-token 基础上它便宜得多，但在具体任务上可能更贵。"
+  <span class="attribution">— Tyler，TBPN 技术分析师</span>
+</div>
+
+<p>这就是"成本幻觉"——per-token 价格低不代表 per-task 成本低。GLM 5.2 的 token 消耗量远超闭源模型，使得实际任务成本并不如表面数字那样有优势。这和测试时计算扩展（test-time scaling）面临的是同一类问题：你可以烧 100 万美元算力让任何模型表现好，但这在真实企业场景中完全不可行。</p>
+
+<div class="gloss">AI 模型市场正在分化成沙漏形状：顶层是少数几个前沿模型（用于编程 Agent 和网络安全——"你付任何价格都要用最好的"），底层是大量超小型/超便宜模型（用于收据 OCR、欺诈检测等重复任务）。中间层——GLM 5.2 这个级别的模型——正在被挤压，找不到明确的商业用例。</div>
+
+<div class="highlight-grid">
+  <div class="highlight"><span class="number">Top 10</span><span class="label">GLM 5.2 在 OpenRouter 400+ 模型中使用量排名</span></div>
+  <div class="highlight"><span class="number">60%</span><span class="label">DRAM 价格单季度涨幅</span></div>
+  <div class="highlight"><span class="number">80%</span><span class="label">NAND 闪存价格单季度涨幅</span></div>
+  <div class="highlight"><span class="number">$180亿</span><span class="label">Micron 客户一个季度多付的金额</span></div>
+</div>
+
+<h3>蒸馏争议</h3>
+
+<p>GLM 5.2 的出色表现不可避免地引发了蒸馏的讨论。Tyler 指出，蒸馏模型一般泛化能力更差——基准测试分很高，但创意写作等难以 benchmark 的任务表现就差了。</p>
+
+<p>更深层的问题是：随着互联网越来越多地被 LLM 输出填满，任何在公开数据上训练的模型都会不可避免地学习到闭源模型的"风味"。GitHub 上的开源仓库越来越多地被闭源模型重写，Amazon Kindle 书籍中也混入了 LLM 生成的"it's not this, it's that"的表达模式。广义上说，这构成了一种间接蒸馏。</p>
+
+<div class="gloss">Anthropic 曾公开指控阿里巴巴蒸馏其模型。与此同时，"灰色市场"正在专业化——有人专门收集多个 API 订阅，通过 VPN 大量调用模型来构建蒸馏数据集。这是一个越来越难以定义和监管的灰色地带。</div>
+
+<h2>Google 掐住 Meta 的算力命脉</h2>
+
+<p>《金融时报》的独家报道揭示了一个令人震惊的现实：Google 在 3 月左右告诉 Meta，无法提供后者想购买的全部 Gemini 容量。三位知情人士确认，这导致 Meta 部分内部 AI 项目被干扰和延迟。</p>
+
+<p>令人震惊之处在于：Google 年投资 2000 亿美元在 CapEx 上，但需求——包括 Google 自身产品的需求——仍然超出了供应能力。AI 搜索概览可能消耗着 quintillion 级别的 token，YouTube 的 Gemini 视频互动、Gemini App 的免费和付费用户都在吞噬算力。</p>
+
+<p>与此同时，ZeroHedge 报道 Meta 限制内部使用 Claude 和 Codex，理由令人玩味：担心蒸馏风险。这形成了一个奇特的局面——Meta 一边大量向闭源前沿实验室付费购买 API 访问（而他们自己开源 Llama 系列的初衷正是"商品化你的互补品"），一边又担心员工在内部使用这些 API 会导致意外蒸馏。</p>
+
+<div class="quote">
+  "Surging appetite for advanced models is turning computing power into the tech industry's scarcest commodity."
+  <span class="attribution">— Financial Times</span>
+</div>
+
+<p>Instagram 拥有约 20 亿用户，即使每个用户只是"不小心滑进 LLM 驱动的搜索结果"，产生的 token 消耗也是天量级别。Meta 在 Llama 4 和 Muse Spark 上的自有推理、再加上向 Google 和 Anthropic 购买的外部推理——这个需求结构解释了为什么 Meta 是 Google 限制政策中"受影响最严重"的客户。</p>
+
+<h2>巨大的利润转移：AI 公司的钱流向了记忆芯片厂商</h2>
+
+<p>《华尔街日报》商业版封面故事用一句话概括了这个现象：</p>
+
+<div class="quote">
+  "We are witnessing an extraordinary transfer of cash from the providers of AI and perhaps one day AI users to memory chip makers."
+  <span class="attribution">— The Wall Street Journal，2026 年 6 月 29 日</span>
+</div>
+
+<p>具体数字令人咋舌：Micron 的 DRAM 芯片价格在截至 5 月 28 日的季度里较前三个月上涨超过 60%，NAND 闪存价格上涨超过 80%。仅这一个季度，Micron 客户就多付了 180 亿美元。而这一切发生在一个通常每年降价的行业——消费者去年买的内存现在价格翻了三倍，比 CPU 还贵。</p>
+
+<div class="gloss">类比非常精准：Micron、Samsung、SK Hynix 对 AI 公司的关系，就像石油生产商对航空公司——供应一种突然变得极其昂贵的关键投入品，因为高带宽内存（HBM）的产能扩张需要 3-5 年。</div>
+
+<p>Micron 借此成为第一家总部在爱达荷州博伊西的万亿市值公司——爱达荷州比纽约、佛罗里达、奥斯汀都更早拥有了万亿市值公司。Barron's 的分析师 Adam Levine 认为股价可能再翻一倍，牛市逻辑很清晰：AI 数据中心的 HBM 需求远未见顶。</p>
+
+<p>但这里存在一个深层矛盾：芯片厂赚钱是因为 AI 公司亏本烧钱——而 AI 公司的最终用户并没有以覆盖成本的价格支付服务。更高的投入成本意味着：要么亏损更大，要么提价赶走潜在客户。</p>
+
+<h2>Dario Amodei 三年前的警告</h2>
+
+<p>节目中重新播放了 Dario Amodei 2023 年在国会的证词片段——这段三年前的视频最近重新在网络流传：</p>
+
+<div class="quote">
+  "I'm very concerned about where things are going. If we talk about two to three years for the frontier models for the bio risks... I think the path that things are going in terms of the scaling of the open source models, I think it's going down a very dangerous path."
+  <span class="attribution">— Dario Amodei（Anthropic CEO），2023 年国会证词</span>
+</div>
+
+<p>关键细节：他是在 2023 年说这番话的，所指的时间点是 2025-2026 年——也就是现在。值得庆幸的是，安全公司 CEO 们（CrowdStrike、Palo Alto Networks）已经在和 Mythos、GPT 5.5 Cyber 合作加固系统。闭源和开源之间的差距仍然存在，白帽黑客可以利用这个时间窗口在漏洞被黑帽利用前修复。</p>
+
+<p>但如果差距不再扩大——正如 GLM 5.2 所暗示的那样——安全策略需要从根本上重新思考。"等开源追上来再修"可能不再是可行的假设。</p>
+
+<h2>深度访谈：八家前沿公司的关键洞察</h2>
+
+<h3>National Design Studio — 政府的创业模式</h3>
+
+<p>Edward Coristine 和 Tai Groot 是政府机构里的"另类"——一周工作七天，靠红牛撑着，用创业公司的节奏推进项目。他们刚刚发布了 Ramparts：一个仅 15MB、完全在浏览器本地运行的 PII（个人身份信息）红化模型。</p>
+
+<p>"我们本来只是在做一个聊天机器人，"Edward 说，"然后发现所有前沿模型都无法放进浏览器，所以无法在浏览器里做 PII 移除。个人数据需要离开你的设备，你就只能信任服务器——而这是产品失去信任的断点。"</p>
+
+<p>他们尝试了 72 种基础模型，最终选择了 MiniLM 进行微调。团队已有成功案例：TrumpRX 拥有 1500 万用户，节省了超过 5 亿美元的药品成本。</p>
+
+<h3>Sigletree — 量子加速 AI 服务器</h3>
+
+<p>Chad Rigetti 是量子计算领域的老兵——他在 2014 年创立了 Rigetti Computing，2022 年通过 SPAC 上市。现在他带着新公司 Sigletree 回来了。</p>
+
+<div class="quote">
+  "This is not a factor of two or a factor of five increase that we're targeting with quantum acceleration inside the data center. It's several orders of magnitude."
+  <span class="attribution">— Chad Rigetti，Sigletree 创始人兼 CEO</span>
+</div>
+
+<p>Sigletree 的独特之处在于其多模态量子硬件策略。不像 IBM（押注超导量子比特）、IonQ 和 Quantinuum（押注离子阱），Sigletree 认为没有一种量子硬件模态能满足所有 AI 负载需求——所以它从 AI 负载向后反推系统规格，组合使用多种量子技术。</p>
+
+<div class="quote">
+  "When we have quantum computers in the data center running production workloads, and you don't have to say 'that's a quantum computer' for someone to care — that's when quantum becomes mainstream."
+  <span class="attribution">— Chad Rigetti</span>
+</div>
+
+<p>Chad 认为，把"瓦特高效地转化为智能"是量子计算的核心价值主张——这比"把数据中心放到太空"更根本，因为后者只改变了能源获取方式，没有改变计算复杂度本身。</p>
+
+<h3>General Intuition — 万亿动作 Token 的 AGI 路径</h3>
+
+<p>Pim de Witte 带着一个大胆的赌注回来了：General Intuition 融资 3.2 亿美元，正在训练一个通过预测动作来理解世界的 AI 模型。</p>
+
+<div class="quote">
+  "It's going to be like comparing coffee to water. This model is going to be incredibly good at navigating unforeseen environments."
+  <span class="attribution">— Pim de Witte，General Intuition 创始人兼 CEO</span>
+</div>
+
+<p>核心数据：大约 1 万亿动作 token 的训练数据（作为对比，前沿 LLM 用 5-10 万亿文本 token）。与 Meta 的合作提供了关键优势——不仅是视频帧，还有精确的动作输入（走、开门、跳），由数千名人工标注员转换。</p>
+
+<p>Pim 做出的一个大胆预测格外引人注目：</p>
+
+<div class="quote">
+  "If this is correct at scale, the supply chain will converge on gaming inputs instead of humanoid robots."
+  <span class="attribution">— Pim de Witte</span>
+</div>
+
+<p>逻辑是：大多数机器人已经搭载了游戏手柄接口。如果 AGI 层的智能瓶颈通过动作预测模型被突破，为什么要追求复杂的人形形态？关键在于接口——而不是物理形态。</p>
+
+<h3>Tracer — 地下防御的新战场</h3>
+
+<p>Yadin Soffer 创造了"subterra"（地下防御）这个概念，并围绕它建立了 Tracer——全球第一家 subterra defense tech 公司。融资 2500 万美元种子轮。</p>
+
+<p>他引用了 Palmer Luckey 的名言来阐述核心理念："直径贵，长度免费。"增加隧道直径会指数级增加成本和工程量（更多泥土需要移除和处理），但增加长度几乎不增加边际成本。</p>
+
+<p>Tracer 的军事应用场景：DARPA 最近发布 RFI，寻找"非动能穿透弹药"——能用冲击波方法诱导伊朗等国的地下设施坍塌。Tracer 的方案是特种部队在地面部署的近距离精确打击，而非空中投放。但目前的挑战是先推动五角大楼建立"subterra doctrine"（地下作战理论），然后才能争取大规模原型合同。</p>
+
+<h3>Engram — 让模型认识你的 AI</h3>
+
+<div class="quote">
+  "The model doesn't need to get smarter every month — it needs to know you better."
+  <span class="attribution">— Jack Morris，Engram 联合创始人兼研究负责人</span>
+</div>
+
+<p>Jack Morris 的观点一针见血：每次让 AI 执行任务时，它都要重新读取 100 份文件来了解你是谁——这本身就是在浪费 token。Engram 的持续学习方案让模型在"认识你"之后，可能只需要读 4 份文件。</p>
+
+<p>早期客户包括 Microsoft、Notion 和 Harvey——都是拥有海量工作空间上下文、对 AI 有早期采用经验的企业。</p>
+
+<h3>Sail Research — 让 Token 极其充裕</h3>
+
+<p>Neil Movva 是 NVIDIA 十年老兵，曾经认为"游戏收入永远是 NVIDIA 最大业务"。现在他在做极致推理效率。</p>
+
+<div class="quote">
+  "Today I'd estimate it's like 80% of stuff is human in the loop and 20% is background. But that number is going to shift, and I actually expect the crossover to happen this year."
+  <span class="attribution">— Neil Movva，Sail Research 联合创始人兼 CEO</span>
+</div>
+
+<p>Sail 只做开源模型的推理优化。GLM 5.2 的发布对他们来说是一个重要时刻。Neil 的商业哲学不是帮客户省钱——是让 ROI 好到客户愿意"花更多钱"。</p>
+
+<h3>Cadence — AI 自动化慢性病治疗</h3>
+
+<p>Chris Altchek 分享了本期最令人振奋的数字：</p>
+
+<div class="quote">
+  "We're catching about 20 strokes a week right now before the patients know that they're having a stroke."
+  <span class="attribution">— Chris Altchek，Cadence 创始人兼 CEO</span>
+</div>
+
+<p>Cadence 正在用 AI 改变慢性病管理的范式：全美 90% 的心衰患者没有用对药——尽管用对药可以延长寿命 5-7 年。问题不是没有好医生，而是在一年内需要调整 5-7 次药物剂量，需要持续的血压、心率和体重监测，传统系统无法做到。</p>
+
+<p>Cadence 的方案分三步：给患者配蜂窝联网的血压计和体重秤 → AI 分析全量医疗记录并开具处方调整（人类最终确认）→ 如果患者血压异常，语音 Agent 在 2.5 分钟内打电话做症状分诊。目前已经管理超过 10 万患者，每周为 Medicare 节省约 270 万美元住院费。</p>
+
+<div class="highlight-grid">
+  <div class="highlight"><span class="number">100K+</span><span class="label">患者正在被管理</span></div>
+  <div class="highlight"><span class="number">$2.7M/周</span><span class="label">节省的 Medicare 住院费</span></div>
+  <div class="highlight"><span class="number">~20次/周</span><span class="label">在患者察觉前拦截的中风</span></div>
+  <div class="highlight"><span class="number">75岁</span><span class="label">患者平均年龄</span></div>
+</div>
+
+<h2>更多精彩片段</h2>
+
+<p><strong>Facebook 与 Yahoo 的失之交臂</strong>：2006 年 7 月，Mark Zuckerberg 口头同意以 10 亿美元将 Facebook 卖给 Yahoo。然后 Yahoo 宣布盈利预警，CEO Terry Semmel 把报价砍到 8 亿美元。两个月后恢复原报价，但 Zuckerberg 已经确信 Yahoo 不是认真的合作伙伴——他拒绝了。这也是一个关于"最好的创始人从不卖公司"这个命题的复杂注脚。</p>
+
+<p><strong>Roger Ebert 的粉丝文化终极解构</strong>：这位已故影评人在多年前写下了对粉丝文化最犀利的批判——"很多粉丝本质上是粉丝文化的粉丝。一切关于他们自己。如果有人愿意在街边人行道上搭帐篷排几周队只为第一个看到电影，那他们对搭帐篷露营的兴趣大于对电影的兴趣。"</p>
+
+<p><strong>欧洲游客眼中的美国</strong>：世界杯让荷兰球迷涌入了密苏里州的郊区，他们对 Costco 的体量、双车库、步入式衣帽间感到震惊。"这里的人好富有——也许这就是为什么他们如此友善。"一个英国小哥第一次吃 Chick-fil-A 时的评价："Absolutely banging."</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+
+<div class="quote-item qi-blue">
+  "Open weight models are ideal for users who want unfettered access to systems they control, but they're also ideal for hackers who want to run them in the shadows."
+  <span class="attribution">— The Wall Street Journal 对开放权重模型的描述</span>
+</div>
+
+<div class="quote-item qi-green">
+  "We are witnessing an extraordinary transfer of cash from the providers of AI to memory chip makers."
+  <span class="attribution">— The Wall Street Journal 商业版封面</span>
+</div>
+
+<div class="quote-item qi-yellow">
+  "That marginal IQ point of the models is like extremely expensive."
+  <span class="attribution">— Tyler，TBPN 技术分析师</span>
+</div>
+
+<div class="quote-item qi-red">
+  "The only reason why we have a shot is because we have a dataset that nobody else has."
+  <span class="attribution">— Pim de Witte，General Intuition</span>
+</div>
+
+<div class="quote-item qi-purple">
+  "When quantum computers are in the data center running production workloads and you don't have to say 'that's a quantum computer' for someone to care — that's when quantum becomes mainstream."
+  <span class="attribution">— Chad Rigetti，Sigletree</span>
+</div>
+
+<div class="quote-item qi-orange">
+  "We're catching about 20 strokes a week right now before the patients know that they're having a stroke."
+  <span class="attribution">— Chris Altchek，Cadence</span>
+</div>
+
+<div class="quote-item qi-teal">
+  "I'd estimate it's like 80% of stuff is human in the loop today and 20% is background. But the crossover will happen this year."
+  <span class="attribution">— Neil Movva，Sail Research</span>
+</div>
+
+<div class="quote-item qi-pink">
+  "The model doesn't need to get smarter every month — it needs to know you better."
+  <span class="attribution">— Jack Morris，Engram</span>
+</div>
+
+<div class="quote-item qi-indigo">
+  "This is definitely the only place in the government where people who work seven days a week, consumed on Red Bulls."
+  <span class="attribution">— Edward Coristine，National Design Studio</span>
+</div>
+
+<div class="quote-item qi-lime">
+  "If this is correct at scale, the supply chain will converge on gaming inputs instead of humanoid robots."
+  <span class="attribution">— Pim de Witte，General Intuition</span>
+</div>
+
+<div class="quote-item qi-amber">
+  "A lot of fans are basically fans of fandom itself. It's all about them."
+  <span class="attribution">— Roger Ebert，著名影评人</span>
+</div>
+
+<div class="quote-item qi-rose">
+  "A good rule is to never take out your phone to show someone a thing you're talking about. It will ruin the convo 100% of the time."
+  <span class="attribution">— John Fiorentina，TBPN 社区成员（41,000 赞）</span>
+</div>
+
+</div>
+
+<footer>
+  <p>📻 <a href="https://share.transistor.fm/s/66c0ffeb">收听完整节目</a> · TBPN · 2026 年 6 月 29 日</p>
+  <p style="margin-top:8px;">文章由 PodDeck AI 自动生成 · 纯文本内容，无广告/无追踪</p>
+</footer>
+
+</article>
+</body>
+</html>

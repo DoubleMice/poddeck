@@ -1,11 +1,11 @@
 source: tbpn
-refreshed_at: 2026-07-01T04:39:21.278Z
+refreshed_at: 2026-07-01T18:42:53.791Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 4
-done: 0
-pending: 3
-needs_transcript: 1
+done: 2
+pending: 2
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -144,8 +144,12 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-01T18:45:12.315Z
+    transcript_job_id: a7764687befe4da79efb5bef024e5e27,7d7c1ec9af314ab9805f2ffc4cc93b57,3f9bd9ce6dd54df3b1cf5b2368f97882,d4533c269abd4d6684ee57ed3fffaeb1,97faca80825849699915f441fa92da07,c73b56ad07794c099c42978d17ae4cd3,6e897daf3e88439fb770b13111fc4e72,f7e4accbfafe4c61ab207d3ebddd80e4,b8843b3abd6a40e289b5ea129ff3032f,c2b3b58a5e14474e8c1d73661a33e681,ae2805e845be493280b19e879de0d50a,d4f29eba269a4e5bbae9913bc4778215
+    transcript_completed_at: 2026-07-01T18:53:53.930Z
   - id: 86d365bf-be76-43dc-acd2-9e8cf689623f
     guid: 86d365bf-be76-43dc-acd2-9e8cf689623f
     title: Open-Source AI Battle, Google Throttles Meta, Micron Margins Moon | Edward Coristine & Tai Groot, Chad Rigetti,
@@ -285,7 +289,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b

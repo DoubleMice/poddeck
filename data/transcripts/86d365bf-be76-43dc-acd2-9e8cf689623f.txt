@@ -1,0 +1,872 @@
+Speaker 1: You're watching TBPN. Today is Monday, 06/29/2026. We're live from the TBPN UltraDome, the temple of technology, the fortress of finance.
+Speaker 2: The capital of capital.
+Speaker 1: Tell you about ramp.com. Time is money. Save both. Easy use corporate cards, bill payments, accounting, and a whole lot more
+Speaker 2: lot more.
+Speaker 1: All in one place. I'm gonna adjust my IEMs. Well, on the front of The Wall Street Journal today, this is how you know this is the whole AI 2027 Washington waking up. The AI stories are making it to the front page, the the the world news section, not just the business and finance section, more and more. So the the very front page of the Wall Street Journal, of course, the picture is about the heat wave, but the lead, the story with the largest text is about artificial intelligence.
+China resets the AI race with The United States as security models mark gains. We're going get into it. This is a fascinating debate, because I thought that we'd have a conclusion to the open source AI debate by now. Either they would the frontier would have collapsed and there would be perfect commoditization, or they would
+Speaker 2: have It'll fallen so far just go, It's over. So back. It's over.
+Speaker 1: If you're in open source AI, that's exactly how it feels.
+Speaker 2: Before we get into the story Please. Completely, Hill in the chat said, Did you see The US National Design Studio Open-Source Day privacy model? We did.
+Speaker 1: Did. We got them coming on the
+Speaker 2: show in just forty five minutes. At 11:45. I are gonna be Yeah. Talking about a first iteration on device PII redaction model that is far smaller than existing models.
+Speaker 1: It's actually tiny. It's 15 megs, which is and you can do it in the browser.
+Speaker 2: And we have Chad Rigetti. He's coming on to talk about a whole lot of quantum mumbo jumbo. We'll see what's going on there.
+Speaker 1: Then Pim's coming back on from General Intuition. We got a bunch more founders coming on. Jakob Diepenbrock, we're announcing a $30,000,000 oversubscribed fund with tons of TBPN guests already in the portfolio. The rest of the portfolio soon to be on the show, I'm sure. Anyway, Open-Source AI.
+So the big story is centered around GLM 5.2 from z dot ai. It was officially released June 13, so it's taken a couple weeks for it to really break through to the front page of The Wall Street Journal, but they're seeing some strong performance on benchmarks, some positive reviews from developers. I have a whole review from Tyler we can go through in a little bit, but we're now entering another round of debates around open source AI. What can the model actually do? Is this a threat to national security?
+What are the geopolitical ramifications here?
+Speaker 3: And so I'm sure this will be an ongoing conversation throughout this week. Probably next week,
+Speaker 1: we have some guests lined up to help contextualize it. But laying down the facts from the journal, security researchers said that a new AI model released this month by China's Xipu AI, also known as Z dot ai, can match the latest US models when it comes to finding security bugs, a development poised to reset the global tech race and pressure the White House in its overhaul of US AI policy. So unlike models from Anthropic or Open AI, Zepoo's GLM 5.2 is open weight. You can just download it, run it anywhere. You don't need to go to an API.
+You don't need to go to a private company and pay them. You can run it on your own server provided you have the electricity and GPUs to do so. It is expensive to run, as we'll go into, but it is open weight. The Wall Street Journal says that means it can be downloaded and run on hardware operated by anybody and can be modified and used without supervision. Scary stuff.
+Open weight models are ideal for users who want unfettered access to systems they control, but they're also ideal for hackers who want to run them in the shadows.
+Speaker 2: Unfettered intelligence.
+Speaker 1: Unfettered oh,
+Speaker 2: that's We like good completely names out That's for new a good Neolab Yeah. Unfettered intelligence.
+Speaker 1: Unfettered intelligence is good. GLM 5.2 has ranked as one of the top 10 most used AI models according to data from OpenRouter, a company that provides access to more than 400 AI models. And what a fantastic business. Alex Italo over there. Absolutely cooking at OpenRouter.
+It's such an exciting way to plug into the AI race without actually needing to play the benchmark game so much be the front door. Anyway, in some benchmarking tests, according to cybersecurity company Semgrep, GLM 5.2 bested Anthropix's Claude instructions, OPUS 4.8 and GLM 5.2 can match mythos in bug binding ability according to researchers. So prior to this launch and there's a chart that we should pull up here about overall AI capability, and we can talk to Tyler about what this chart actually means but there was this narrative brewing that Open-Source AI was slowing down relative to the closed source frontier. And I saw a lot of American AI fans sort of cheer for this. Hey, we have the capital markets.
+We have the data centers. We have the researchers. And so we are able to push the frontier at a different rate. And if we're actually growing at a faster rate in America within the closed source labs, that will compound and there will be a stronger takeoff in the American closed source AI industry. Now, this chart sort of goes back and forth and there's some debate over it.
+It's in the newsletter. Can go sign up at tbpn.com. While we're pulling that up, let me tell you about Codex. Codex is a powerful workspace for getting work done with AI agents. Whether you're writing code, analyzing data, creating content, or automating business workflows, Codex helps you move projects forward from start to finish.
+So this chart, which we can pull up, shows progress from GPT four point zero to one, three minutei, three, Opus four, GPT 5.2, Opus 4.6, GPT 5.4, GPT 5.5 showing a, you know, linear trend in this ELO,
+Speaker 2: which Right. Is a it says, GLM 5.2 sounds too much like a gray market peptide taking.
+Speaker 1: It actually does. It does sound a lot like that. And then you can see the red line are the Chinese models which are also improving over time but at a slightly lower rate. And so the question was are they going to plateau while America's progress continues to advance? And this latest model, GLM 5.2, seems it's very hard to apply it to this particular benchmark because this Elo was can you give us some background, Tyler, on where this chart came from, what this is demonstrating?
+Speaker 3: Yeah. So this is by Casey. I think that's how you pronounce it. The Center for AI Standards and Innovation. They have this way to calculate like the Elov model.
+It's basically a kind of approximation of a bunch of different benchmarks. Mhmm. Some of those like are proprietary, they're not open. Okay. So it's actually hard to run these.
+Also because I was basically trying to bench like all the recent models since this was published. Yeah. It was I I want to say May 1.
+Speaker 1: Yeah. It'd be great to throw 5.6 Soul, Mythos, and Fable, all all it would be great to just continue this chart because it's an interesting trend. Yes.
+Speaker 3: So lot of those benchmarks aren't actually public so it's very hard to estimate. But I I tried I I got you can look at like some of the benchmarks that Mhmm. That are public Mhmm. That you can reference.
+Speaker 2: You can
+Speaker 3: kind of match them up to previous models. Mhmm. 5.2 looks like it. It it it is like a big step up from the like Chinese
+Speaker 1: The trend.
+Speaker 3: Trend line. Right? But but even then, I I think it's it's hard. Like I I think the group of benchmarks that were chosen for this Elo like definitely accentuate the the gap between US and Chinese labs. Mhmm.
+I think there's a bunch of other, like, groups like Epoch AI has done Yeah. A chart. They basically are a relatively stable gap between closed source and open source models Yeah. Since like 2023, like a long time.
+Speaker 1: Yeah. And and and perhaps at this point, the the discussions should be more centered around cost per task more than cost per token.
+Speaker 2: Yes.
+Speaker 4: Yeah.
+Speaker 3: Definitely. Because even like, new models, a lot of times when when they go on like, okay, maybe the Mhmm. The token price is actually the exact same Mhmm. But the token efficiency is much better. Mhmm.
+So then when you do a lot of these tasks, it's like it's it's not the the price of tokens, price per
+Speaker 1: Yep.
+Speaker 3: Per, you know Yep. Something completed. Yeah. And then you actually see it go down.
+Speaker 1: And there's a lot of test time scaling laws where you can just throw a million dollars of compute at a particular problem and all the models do really well at it, but it's completely nonviable for any real enterprise use case and probably not even viable if you're trying to be a nefarious hacker
+Speaker 2: or something.
+Speaker 3: Most people are saying like 5.2 is very token hungry. Right? So it uses a lot of tokens. Mhmm. So maybe it like, it definitely is much cheaper than the frontier models.
+Speaker 1: It's On a per token basis.
+Speaker 3: On a per token basis.
+Speaker 1: But on a per task basis Exactly. It might be more expensive.
+Speaker 3: Yeah. I mean, that's still it's generally not. Okay. But on specific tasks Yeah. You can get you know, if you have low thinking models
+Speaker 1: Yeah.
+Speaker 3: Low thinking mode on the closed source ones, you can Okay.
+Speaker 1: Well, let's revisit John Ludwig's post from May 2024. This is pre DeepSeek talking about his prediction about why the future foundation models is closed source. He got a lot of pushback from this because a lot of people like open source models, but he laid out a thesis around closed data closed source data, flywheels, exponential CapEx, intensity of training. And he said, Open-Source will have a home wherever smaller, less capable and configurable models are needed, enterprise workloads, for example. But the bulk of the value creation and capture in AI will happen using frontier capabilities.
+The impulse to release open source models makes sense as a free marketing strategy and as a path to commoditize your compliments, but open source model providers will lose the capital expenditure war as open source ROI continues to decline. And that was the thesis around the time that the Open-Source AI discussion was primarily driven by Mark Zuckerberg's work at Meta on the LAMA family of models. The idea was that Meta would benefit from attracting talent. It was good marketing. It told the story that Meta has an AI story and has AI talent in house.
+Even if they weren't monetizing it and sharing a really fast takeoff in ARR around those models, it showed that, hey, they're able to develop these models and that might help them cut their costs in the long term. Very interesting that that wound up being very different in 2026 looking at the news today, which we'll go into, about them spending a lot on Gemini. There's been reports about them spending a lot with other closed source frontier labs that they should have commoditized with their open source plan. But nonetheless, that was the idea with Meta. But then China sort of woke up and DeepSeaks launch at the start of 2025 and the game theory became way more complicated.
+So George Hautz sort of summed this up nicely. He has a take in AI will be massively deflationary a post from just a few weeks ago as to why China benefits from investing in Open-Source more than American firms. He says, this explains why Chinese the Chinese are giving the much more moderate resources to train models away for free. They love to see deflationary economics in The U. S.
+It is not is much less of a service based economy and so if they can go and give away free tools that deflate the value of the service sector, that is an advantage to the Chinese economy in his formulation. He says, Even if you don't regulatory capture the US government, nobody is getting a monopoly on AI. We don't live in a unipolar world anymore. And so he compares what's happening in he likens what's happening in DC to rearranging deck chairs on the Titanic. It's a very fun piece.
+But so we're back to this discussion of what are the consequences and the impacts of open source models, particularly in The United States. And there's been this clip that's resurfacing from Dario Amade when he was testifying in front of Congress in 2023 and it's now recirculating and it was reposted like he just said it and he did not. So be clear about that. This is from three years ago. But some of his predictions were very prescient as of where the frontier is today.
+So he said, I'm very concerned about where things are going. If we talk about two to three years for the frontier models for the bio risks, it's sort of a bad transcription of what he was saying. But he's talking about 2025, 2026. Remember, he was saying this in 2023. We're there now.
+I think the path that things are going in terms of the scaling of the open source models, I think it's going down a very dangerous path. And again, if the path continues, I think we could get to a very dangerous place. So he was worried about cybersecurity and bio risks being open sourced and then not having a counterweight to that. Now, the good news is that we've talked to the CEOs of cybersecurity firms like CrowdStrike and Palo Alto Networks and they've been working with Mythos and GPT 5.5 Cyber for months now to harden systems for LLM driven attacks. And so there's still this gap between closed source and open source models and that gap allows white hat hackers to implement fixes before black hat hackers have a chance to exploit easy bugs.
+There still will be a bigger discussion here though in DC over the next few months as the frontier models roll out and the gap doesn't appear to be widening at the moment, so security stances must adjust. It's not closed a source is falling behind so it's never going to be an issue. There will be this gap and how the American cybersecurity industry and eventually the biosecurity industry implements changes and fixes before Open-Source catches up or commoditizes and makes that particular capability widely available is going to continue to be important. So let's go over to Tyler's quick review of GLM 5.2. Why don't you take me through your bullet points that we shared in the newsletter at tbpn.com, and you can tell us, like, what is the shape of this model?
+How are the reviews?
+Speaker 3: Yeah. So I I think so far one of the main things is like people are saying it's, oh, it's distilled. Right? This is this been a big thing with a lot these open source models Yep. Especially the Chinese ones.
+Oh, the only reason that they're good is because they're distilled. It's very hard to actually figure out how true this
+Speaker 2: is. Mhmm.
+Speaker 3: But people are, you know, it certainly seems like there there there's some, you know, aspects of of anthropic models
+Speaker 1: Didn't Anthropic openly accuse Alibaba
+Speaker 3: of distilling Yes. A number of these labs.
+Speaker 1: And there's also been a big, like, professionalization of the gray market where a whole bunch of different sort of individual groups will connect a whole bunch of different entities and users Subscriptions. Subscriptions and APIs to then create a front end to like the model that can be served at a very high rate through a VPN most likely. What's interesting is that you'd think that if you were going to do a training run, you would just find and replace some of the other lab's name before you hit run. Is that not something people can do? I don't understand.
+Speaker 3: Yeah. I mean, it also depends on what you're actually like, maybe you're not directly distilling on the API, but, you know, you're training on public GitHub repos. And those were all used those were all made with resource models. Then you're kind of like distilling, but it's not really like, is this really kind of distilling? I don't know.
+Yeah. But so so if you are like if you're convinced that these are like super distilled, the only reason that they're good is is because they're just, you know, basically taking the closed sourced
+Speaker 1: Yeah.
+Speaker 3: Like labs.
+Speaker 1: There's also this weird thing with distilling where as more and more of the public Internet and GitHub broadly and open source repos become LLM outputs, you if you train on that, you are in some ways distilling because
+Speaker 3: Yeah.
+Speaker 1: An LLM has a quirk like it's not this, it's that in text and you wind up training on a whole bunch of Amazon Kindle books, you're going to wind up learning it's not this, it's that. And the same thing applies for different code conventions in open source repos that have effectively been completely been rewritten by closed source models.
+Speaker 3: Yeah. And so I think it's safe to say that we've generally seen that distilled models generally will generalize worse. Right? Mhmm. So you'll see really good benchmark scores.
+Yep. Maybe they're benchmarked, maybe they're not. But even if they're not like directly benchmarked, you you still find that they generally
+Speaker 1: Yeah. They're kind of accidentally benchmarked.
+Speaker 3: Yeah. Yeah. So so you should always so I I think initially you should just be a little bit suspicious of these super high benchmark scores.
+Speaker 1: Yeah. But they lack that big model.
+Speaker 3: Yeah. This is like anecdotally reinforced. A bunch of people have been saying, you know, for coding Yeah. These models are really great. GLM, it's a very good model, for creative writing or something like Okay.
+Where you'd imagine it's a bit harder to to kind of benchmark this. Yeah. They'll perform a bit worse.
+Speaker 1: Yeah. I wonder, hey, have have people been testing it with the Tiananmen Square bench? Like, does it reject that stuff? Or because it felt like that was something that was like widely misunderstood by American audiences that in fact that might not be the biggest deal for the CCP
+Speaker 3: Yeah. Also, I think, you know, even if that's true, like, model the is open source. You can kind of just fine tune it to like Sure. Not that talk about Maybe maybe it's a bit harder than that.
+Speaker 1: But Yeah.
+Speaker 3: I think you can kind of get around like that kind of stuff.
+Speaker 1: Okay. Yeah. So we talked about the token hunger and the API price. And in general, I mean, said I'm not convinced that there's a big market for this class of model, especially as frontier models get more efficient. If you look at OpenRouter, the most used models are the smallest open source models, presumably being used for specific tasks that need to be repeated over and over again.
+Speaker 3: Yes. I think like what we've seen
+Speaker 2: is Yeah.
+Speaker 3: That's the job.
+Speaker 2: You know,
+Speaker 3: like a marginal IQ point of the models Yeah. Is like extremely expensive.
+Speaker 1: Mhmm.
+Speaker 3: Frontier models are are getting very expensive. Yeah. People have to cut back. Yeah. They're they're tuck maxing.
+This is like Sure. Massive bill on their balance sheet or whatever. Yeah. I I I think like it it seems like there's there's now basically like two classes of models that that people really use. There's like the frontier ones
+Speaker 1: Mhmm.
+Speaker 3: And they're they're using coding agents. They need the best thing. If you're doing cyber, like you you just need the the best model because, you know, the the risk of of someone hacking you, it's so great. You just need the best thing. You pay whatever it is.
+Yeah. And then there's the second class which is like these very small, very fast, very cheap models that you can use for these kind of point solution things. Maybe you have some orchestration where using a really big model to to have these little agents using these very cheap models. Yeah. I think in the middle it's hard to actually figure out what is the the real use case.
+Speaker 1: Mhmm.
+Speaker 3: Maybe it's like hobbyists using these coding agents and and they don't want to pay the super expensive tokens of the closed source labs. Mhmm. But generally and you see this on OpenRider where like what are the top models by token usage? It's these very small models. It's like Yeah.
+Know, DeepSeek flash.
+Speaker 1: Yeah. Because you're spamming them for like, you know, every receipt that goes into RAMP gets processed by an LLM at this point. Does it need to be a frontier model telling me that I spent $10 on a coffee? No. Yeah.
+Can just do standard OCR.
+Speaker 2: That'd be my preference.
+Speaker 1: Yeah. You want super intelligence overseeing your expenses most likely. But no, you use the right tool for the job and that's clearly what's happening on it.
+Speaker 3: Yeah. Also I think like it is a very good model, right? Like we should not really dismiss I think the the idea that, oh, the gap is widening. We we really don't have to worry about these these models. I think they are like very good.
+Speaker 1: Yeah. Yeah.
+Speaker 3: Yeah. And maybe if you're super worried about distillation, maybe something changes if if the models are are, you know, kept to these big partners, right, like what we've seen recently with with government coming in. But I think we can't really fully dismiss these labs.
+Speaker 1: Yeah. It throws a little bit of a wrench in the monetization potential, like how long can you monetize a new frontier model. That's more tricky. And then the other one is just like if you're going to keep a model behind KYC or behind an approval for specific companies like the government has been sort of edging towards and moving towards, It gets a little bit tricky if all of a sudden you just wait three months and, oh, I was waiting to get approved for this one for like GPT seven or whatever, but by the time I the government got back to me, my company got access to GLM six and it's close enough. And so that in that just throws another wrench that I think the government will have to figure out how it puzzles together with the rest of the strategy, which has been, yeah, back and forth as always.
+Anyway, let me tell you about Shopify. Shopify is the commerce platform that grows your business and lets you sell in seconds online, in store, on mobile, on social, on marketplaces, and now with AI agents.
+Speaker 2: Google caps, meta's Gemini use as AI demand strains capacity in the financial times. Surging appetite for advanced models is turning computing power into the tech industry's scarcest commodity. And they have a picture here of a Google Gemini bicycle,
+Speaker 1: which
+Speaker 2: looks fantastic. What does
+Speaker 1: that have to do with Meta though?
+Speaker 2: I think that was just the best Google Gemini picture.
+Speaker 1: It is hard. Otherwise, it's just a picture of a phone screen you saw on the z dot ai. It's just a picture of the app, which is
+Speaker 2: like so boring. Or it's the
+Speaker 1: stock image of the brain with the neurons. That's always good.
+Speaker 2: What do you think I mean, this this kind of ad placement like on a what do you actually call this? Blocks No, the no, no. Just the the part that blocks water from, you know, if if you were to ride
+Speaker 1: this Fender flare.
+Speaker 2: Yeah. Some type of fender thing.
+Speaker 1: Sort like a Mansory kit for a city bike.
+Speaker 2: Exactly. Exactly. But imagine riding that Gemini bicycle in the rain. Fantastic. Google has That's what it's for,
+Speaker 1: so the water doesn't come up and splat you. Interesting. Never knew that was for.
+Speaker 2: Never No. Knew This is Educational. This The experience of hosting this show is educational
+Speaker 1: It is. For both of us.
+Speaker 2: Has put limits on Meta's use of its Gemini AI models after the social media giant sought more computing capacity than the rival tech group could provide in the latest evidence of the infrastructure constraints facing even the world's largest AI providers. Google told Meta around March that it could not provide all of the Gemini capacity the company wanted to purchase according to three people familiar with the matter in a move that has disrupted and delayed some of Meta's internal AI projects. So I don't understand how this is possible. Yeah. So one Google spent $200,000,000,000 on CapEx.
+Okay. So so so of course, like, this around this time, token maxing was becoming a A lot of every company in the world, at least every tech company in the world, kind of going a little bit crazy from And a spending so, you know, I could see Meta going and wanting to basically buy a bunch of capacity and then being told, hey, we can't fulfill that. But I'm wondering how much more we should read it like read like, is it worth reading?
+Speaker 1: I mean, it sounds extremely bullish for Google. Like, if they're
+Speaker 2: Yeah. Fast track tracks with what they talk about on Yeah. On earnings calls.
+Speaker 1: Yeah. Yeah.
+Speaker 2: Google Cloud acceleration creates You great do have to wonder, like, could distillation be part of this story? Is that could that be a factor here? Have no idea.
+Speaker 1: I don't know. ZeroHedge said Meta puts limits on Claude and Codex, fearing distillation, the information.
+Speaker 2: But so this story is different. That's different. This is Meta telling its own employees, don't use Claude and Codex in certain parts and certain parts of our business because we don't want we don't want to accidentally do distillation is what Meta is saying. So that's that's different. I was wondering like is Google thinking like, woah, that's a lot of, you know Yeah, yeah.
+Pool it, you know?
+Speaker 1: Yeah, yeah,
+Speaker 2: Owing to the restrictions which remain in place as well as a broader push to streamline AI costs, Meta has encouraged staff to be more efficient with AI tokens. Several other Google clients have been affected by the restrictions, although to a lesser extent Meta has been particularly impacted because of its exceptionally high demand for Google's models.
+Speaker 1: Interesting.
+Speaker 2: Very interesting. Would love to see a pie chart breaking down what all the different ways they're using Gemini
+Speaker 1: Yeah.
+Speaker 2: In their business because Google has not broken out Gemini revenue
+Speaker 1: No. At No.
+Speaker 2: All to date. So we have no idea what percentage of their AI revenue is like actually spend on Gemini versus other
+Speaker 1: And like the Gemini tokens broadly go into AI search overviews. So that's a search product. Probably insane token demand there, right? You've seen the chart of like they're in the quintillion or quadrillion tokens category. And then you have YouTube now has Gemini plugged in and you can chat with any video and transcribe it.
+That's got to be incredibly token heavy. And then you have Gemini app users and free users and paid users. So there's there's got to be a lot of just Gemini internal usage, but it's it's remarkable. Yeah. I would love to see that meta pie chart of because I thought that they were spending a ton with Anthropic.
+I thought they were spending a ton with Google. But I also assumed that they would be running a bunch of Lama workloads and a bunch of Muse Spark workloads because those models have performed well at various points in time. And if you go into the Meta app, you now have access to Muse Spark. And if you go into Instagram and you search for something, it populates it with a with a Llama, like Llama four result. And so I would imagine that even though that product is not broken through like crazy, I would imagine that it's still generating a lot of tokens just because of the scale of Instagram.
+Instagram has a 2,000,000,000 users, something like that. It's huge. And so even if it's people sort of, you know, accidentally winding up in an LLM powered workflow, it probably is generating a lot of tokens just because of the scale of that of that system.
+Speaker 2: On the topic of Meta, Meta shared this morning What did you? A new milestone. It is a mind reader.
+Speaker 1: Mind reader?
+Speaker 2: Noninvasive brain detects decoder research, brain to QWERTY v two, building on v one, which was published today in Nature, Brain to QWERTY V2 is the highest performing end to end pipeline capable of real time sentence decoding from raw brain signals.
+Speaker 1: It
+Speaker 2: advances beyond character level performance to decoding words and semantics enabling accuracy for overall communication. So if you thought Instagram was listening to you
+Speaker 1: It's gonna
+Speaker 2: be If you thought it was listening to your conversations. Now you can have a new conspiracy at home, which is that they might be just listening to Do your
+Speaker 1: you know the device? They said it's a non invasive device. I just shared an image of this device and I want you to tell me, do you consider this noninvasive or invasive? Look at this image of the magneto and salophagraphy device.
+Speaker 2: No. You got to go high you need to scroll up a little bit cause you can't even see the whole thing here. Scroll on.
+Speaker 1: It's non invasive.
+Speaker 5: Because it looks
+Speaker 2: like the device could potentially carry on for like a whole half
+Speaker 1: of a It really does seem like it's a just put yourself in this in this room sized device. Now, of course, this
+Speaker 2: I'm is shrink credit giving here. Non invasive? Non invasive. Okay. As long as he
+Speaker 1: You're you're putting this thing on? You're daily driving this thing.
+Speaker 2: I don't know if I'm ready to daily I don't know if I'm ready to daily it. Yeah. This will be a cool demo. Yeah. Like, this will actually when you can just walk in, sit down in a chair and see your thoughts on a screen.
+Speaker 1: No. We were debating it earlier. My buddy Rob Tave's been on the show twice, dropped five predictions in Forbes recently. We can go through them at some point. He's going to come on the show.
+But four of the five were very, very, like, reasonable. You know, Anthropic is going to be bigger and, you know, TSMC is going to face more competition. And then he predicts that in 2030, telepathy will be commonplace, which is a very aggressive prediction in my estimation. You know, it's certainly not like a straight trend line since like TSMC has competitors right now. The prediction is just that there will be more competition.
+But truthfully, telepathy is not really existent outside of like a few demos like this. It's not really something where it's like, oh, yeah, like 5% of people have the meta Ray Bans that take pictures. So like face cameras are going to be bigger in five years. And it's actually only three and a half years until 2030, which is sort of crazy to say, but we are getting quickly to the future. To the future.
+Never sell your company. Should you ever sell your company? David Center says no. He says, the best founders in the world would never sell their company. You could never acquire Elon, Bezos, Zuck, Jobs, Ellison, Jensen, Dell, Page, and Brynn.
+Scott Wu has turned down billions and keeps saying no. This is a great clip. It went super viral. I don't know. Did I lose Internet or something?
+I don't know. Anyway
+Speaker 2: Tyler's app is in shambles.
+Speaker 1: I don't know about that. But there's some debate over this because Elon not my app. Elon yeah, this is just X. Elon did sell two companies. He sold Zip2 and he also sold PayPal.
+And then Jobs sold Next back to Apple. Does that count? I don't know. He did sell Pixar to Disney. That sort of counts.
+And I mean, Elon never sells his company. He just sold x AI to himself. But I guess that doesn't count. But yes, it is it is a it is a funny thing. Didn't market some pushback
+Speaker 2: on this? So what is what's the do you know the backstory here from Sasha?
+Speaker 1: I don't know. Tyler looked it up. Apparently, there's a Business Insider report from the time that this happened in 2007, how Terry Semmel fumbled Yahoo's Facebook deal. How much is Facebook worth? 5,000,000,000, 10,000,000,000, 15,000,000,000, whatever the number?
+It's probably a lot more than the 1,000,000,000 that Yahoo could have bought it for a year ago. As Yahoo continues its soul searching, here's an unpleasant rendition of Semmel's catastrophic decision courtesy of Wired. When Yahoo came calling with a bid of $1,000,000,000 in cash, the pressure became too much. Zuck relented in July 2006. He was just like eighteen months into building the company, something like that.
+Verbally agreeing to sell Facebook to Yahoo. He said yes. He said he was going to sell Facebook to Yahoo, allegedly. Strategically, it seemed like a good match. Yahoo had hundreds of millions of users, but its foray into social networking was struggling.
+Facebook had cool tools and was looking for a mass audience. The timing, however, could not have been worse. In the days after Zuckerberg agreed to sell, Yahoo announced it was projecting slower sales and earnings growth and that it's that the launch of its new advertising platform would be delayed. Its stock price tumbled 22% overnight. Terry Semmel, Yahoo's CEO at the time, reacted by cutting his offer from 1,000,000,000 to 800,000,000.
+He just took 20% off, but Zuckerberg, had been warned about Semmel's reputation for last minute renegotiations walked away. And that's probably reasonable. I mean, they're cutting the price there, you have to imagine that as it gets papered, get cut down again, then the earn out, you get cut down again, and all of a sudden you're walking away with barely anything. But two months later Semmel reissued the original $1,000,000,000 bid but by then Zuckerberg had convinced his board and executive team that Yahoo wasn't a serious partner and that Facebook would be worth more on its own. He rejected the offer and became famous as the cocky young ster who turned down $1,000,000,000 from Wired.
+Legendary. Legendary. It's so interesting to imagine the road not traveled there because the the the dynamic, the way Facebook is built with this with the the as a social network, like could it have been successful under Yahoo's stewardship or would it have been less exciting, attract less talent, ultimately been disrupted? And would they have had the capital and the guts to go and buy WhatsApp and then also buy Instagram, you know, to actually maintain the dominant position in social networking? What do you think?
+Speaker 2: I think Yahoo should make another offer. Mhmm. We were hanging out with Jim, CEO last week.
+Speaker 1: He should.
+Speaker 2: Dear friend of ours. Yep. And I I would like to see I would like to see Yahoo make another bid.
+Speaker 1: Hey. That is trading down. Just keeps going.
+Speaker 2: If it continues at
+Speaker 1: this 99.99 percent might be able pick
+Speaker 2: continues at at this trend.
+Speaker 1: Anyway, let me tell you about MongoDB. What's the only thing faster than the AI market? Your business on MongoDB. Don't just build AI. Own the data platform that powers it.
+Moving on. What else is in the news?
+Speaker 2: Chipmakers are profiting off AI at the expense of just about everyone This is
+Speaker 1: on the cover of the business and finance section today.
+Speaker 2: We are witnessing an extraordinary transfer of cash from the providers of AI and perhaps one day AI users to memory chip makers. Take us away, John.
+Speaker 1: Yeah. The explosive growth in Micron Technology's profit the latest quarter is extraordinarily good news for its shareholders, but it comes at the expense of the artificial intelligence companies to which it sells fast memory chips. Micron, along with The Korea with Korea's Samsung Electronics and SK Hynix are to AI what oil producers are to the airlines, makers of an essential input that this year suddenly became much more pricey because there is extremely limited capacity to make the high bandwidth memory that AI needs and it takes years to build production facilities, soaring data center demand simply jacked up prices. Micron's soaring profits are for its customers soaring costs. We are witnessing an enormous transfer of cash, they said.
+Profit shift of this scale are rare events and investors should be paying attention to where the money is coming from, where it's being spent and how long it will keep flowing. In the quarter ended May 28, Micron increased prices for DRAM chips more than 60% on the previous three months while increasing shipments by a low single digit percentage. It said last week prices for NAND flash memory also used in data centers jumped more than 80%. Usually memory doesn't matter that much. But for Micron customers paid $18,000,000,000 more and that was just in the quarter.
+Prices quadrupled in a year and it's hurting outside AI. Two, Apple last week raised prices for MacBooks more than 15% closer to home closer to home for me than memory I bought on amazon.com a year ago to build a super quiet computer. I hate fan noise. Good good color commentary here. Has tripled in price and now costs more than the CPU.
+For an industry in which prices usually drop every year, it's a huge turnaround in consumer electronics passing on higher prices helps limit demand for chips just as higher oil prices reduce consumption. But the AI companies aren't passing on higher prices because they are able to throw money at supply problems. The problem in AI is that the end users aren't covering the cost of the service with big losses being recorded by AI model producers. Everything is still priced to bring in new customers yet not yet to make money. So higher input costs create a nasty problem.
+Either losses will either be bigger or higher prices will be needed putting off potential customers. And you can see the price of Micron's stock price has been through the roof as the company joins the $1,000,000,000,000 club and becomes the first trillion dollar company in headquartered in Boise, Idaho. And the and Idaho got a trillion dollar company before New York, I believe, And also before Florida and Austin maybe, something like that. Rare.
+Speaker 2: Crazy.
+Speaker 4: It's rare.
+Speaker 2: Crazy.
+Speaker 1: Mostly in It's foggy. Mostly on the West Coast. Anyway, there's a whole bunch of bull cases for Micron still. The stock could double from here, says Barron's. I love Adam Levine and Barron's sharing the bull case.
+We can
+Speaker 2: Tyler, how many trillion dollar companies are there in Europe out of curiosity?
+Speaker 3: I'm gonna go with zero.
+Speaker 2: That's true. That is true. You are correct.
+Speaker 1: The other
+Speaker 2: ASML could get there.
+Speaker 1: Maybe.
+Speaker 2: At around 700.
+Speaker 1: Wait. What about Eli Lilly? Or no, Novo. Novo was a trillion. Right?
+Or did it ever did it ever touch a trillion? I don't think so. Right? It was real close.
+Speaker 2: It's a humble 165 Brutal.
+Speaker 1: Wait. But what did
+Speaker 2: You're you keep thinking of Eli Lilly.
+Speaker 1: Eli Lilly hit a trillion. Yeah. Rough. Very, very rough. Comcast is planning to split up the company.
+Competition is escalating.
+Speaker 2: Eli Lilly, the the Indiana company, Oh.
+Speaker 1: Is it from Indiana? Indiana.
+Speaker 2: Okay. Former Indiana startup.
+Speaker 1: Okay. I like it. I like it. NBC, Universal, and Sky will separate the company's connectivity business from its film, theme park, and streaming operations. Oh, yeah.
+Universal Studios. Comcast is up on the news. Comcast plans to separate its media and businesses.
+Speaker 2: Who's building the andoril of theme parks?
+Speaker 1: It does seem like a
+Speaker 2: Could there not be an opportunity to create a a net new theme park business with with modern a modern technology stack?
+Speaker 1: It's very expensive. Everything needs to be like, the modern technology stack in
+Speaker 2: parks is expensive. You don't believe in in the cap the theme park capital markets.
+Speaker 1: I don't know. I I I know I've known people that have worked on theme parks at Disney and it's tricky because you you have to amortize a ride over like twenty years. And so you'll go
+Speaker 2: It seems like an absolutely brutal business. Yeah. That is probably harder today because Huge long. Think about, you know, at the time that a lot of these parks were built, like, you didn't have like infinite online entertainment for every single sub niche Yes. Instantly available.
+Speaker 1: I mean, there's a whole bunch of trend pieces right now about how IRL experiences are seeing higher than ever pricing in the face of you could just watch the Knicks game on TikTok highlights, but people still forked over $5,000 to go see the game. And so, you know, you have that like barbell strategy where Thrive is buying a stake in the San Francisco Giants, a baseball team that should
+Speaker 2: face the NBA team Yeah. To Vegas. But You at the same
+Speaker 6: got more your camp,
+Speaker 1: Con. There is an
+Speaker 2: that came out this morning or maybe yesterday that there's more sports betting volume than all sales of movie tickets, theaters, theme parks and like a couple other of these IRL categories.
+Speaker 1: Up or down?
+Speaker 2: Less. Lower? Less. And and and the the stat was like volume.
+Speaker 1: Yeah.
+Speaker 2: And so it's not exactly like proxy for like revenue
+Speaker 1: Mhmm.
+Speaker 2: But still meaningful.
+Speaker 1: Theme park, vertically integrated, Tweety Bird tattoos. Tweety Bird tattoo parlor right on-site. Like it.
+Speaker 2: Like
+Speaker 1: it. When you're in Six Flags. No. Don't I like it. Six Flags never really got the same like cultural power that Disneyland did.
+There's something about the flywheel that Walt Disney laid out that does seem very very important.
+Speaker 2: It works.
+Speaker 1: And so how do you start that? It's not just so you know tech enabled theme park. That's not gonna draw people in. You need to have IP around it.
+Speaker 2: Brain rot theme park.
+Speaker 1: There's something about I mean, we've read we've read stories about like the the the Disneyland fan that's that saves up every year and spends so much money at the park and I think that's probably the lifeblood of that business. And that doesn't happen without building a whole cinematic universe around every single ride and that just takes so much time and you can't, like, this goes back to the question of like Netflix is enduring IP. Like they don't they they they haven't been able to like even though it's been twenty years of like I mean, don't know when they started producing their own content. But it's been twenty years for that business at least and they haven't really developed like their own franchise that lives in the same world as Batman.
+Speaker 2: Well, I'd push back and say the Narcos.
+Speaker 1: Narcos? You want to go to the Narcos theme park? I I was talking about this with somebody once talking about like HBO, like why don't they have a theme park? He was like, are you going do? Take your kids to a brothel in Game of Thrones land?
+Like, no. It doesn't make any sense. Yeah. Anything like, it needs to be uniquely general audience. Like, you can't have r rated you can't have a content backbone that's r rated because theme parks will always attract families and kids.
+And so anyone you can't have you can't have any theme park that's built around an r rated IP library. And so that just narrows it down even further.
+Speaker 2: Well, all of America has basically turned into a theme park for European soccer fans. Oh, yeah. In the journal European soccer fans marvel at the splendor of America's suburbs. You've been having
+Speaker 1: many of these reels served to me.
+Speaker 2: Dutch fans in Missouri see a nation that is risky and expensive but vast and bountiful. Everything is three times the size. You've seeing some of these people in real life.
+Speaker 1: Right? I don't I don't know if I've seen any of them. I did go out to lunch like a week ago and it seemed crowded, but I was unclear if that was just local residents going out to watch the games or actual tourists coming to town to watch the games?
+Speaker 2: Gabe, in the X Chat, I think Ferrari has a roller coaster in The Middle East.
+Speaker 1: No way.
+Speaker 2: They do. They have a whole Ferrari theme park in Abu that's not r rated. Can take family friendly kids to the Ferrari
+Speaker 1: theme park.
+Speaker 2: Yeah. I was I was in Abu Dhabi and I and I I was driving by it and I was like yeah. I was just thinking of like if you wanted to spend Yeah. A day, you know, getting the Ferrari experience. Like, you could just go to the track.
+Yeah. Or you could just rent a Ferrari. So I don't know.
+Speaker 1: Yeah. But you don't need to go to Six Flags to get the Batman experience. Can just go out in the middle night and arrest a criminal. To become a vigilante. I I saw another report that apparently there's like an individual who's being like the Batman of Mexico.
+Do you guys see this? It's very funny. And and so the guy went out and found
+Speaker 2: the criminals. Develo Par says, Yas Island. They literally named an island
+Speaker 1: Yas? Yas. Weird.
+Speaker 2: No. Okay.
+Speaker 1: I don't know. Anyway, Dutch soccer fans are having fun visiting America. Frank Evereink, he hadn't even heard of Kansas City. But when the Dutch soccer fanatic saw his team would be playing along the border of Missouri and Kansas, he made a detour in his worldwide road trip. Everyone got in his camper van and drove south from Toronto making stops in Detroit, Chicago, and Indianapolis.
+Along the way, he and other European fans who flocked to Kansas City for the World Cup beheld the fruits of the American economy from a vantage point few foreign tourists typically see. Suburban superstores, hulking plates of food, quiet streets. He marveled at the sprawling houses and a contrast from the tightly packed homes of The Netherlands. I did notice this when we were in France. The food portions were way too small for me.
+It was brutal. It's spacious, he said. You go here for your shopping and there for your dentist. People are so rich here. I think that's why they can be so nice.
+What an ultimate white pill in America. In America, everyone's like, we're so divided and everyone hates each other and it's terrible and the economy's about to fall apart. And then one one European tourist comes like Everyone
+Speaker 2: is so nice.
+Speaker 1: Something about the grass. The grass is always greener. Right? The grass is always greener on whatever side I'm on. That's what I like to say.
+The throngs of Dutch fans that flooded Kansas City and its suburbs this past week got a taste of day to day life in The United States reigniting the long running transatlantic debate. Who lives better? Americans or Europeans? The Europeans had plenty of thoughts on American culture. We are a bit shocked about the food you're eating, the Dutch national team superfan Sandra Tate said.
+Fans also balked at the size of Costcos and the vastness of the highways. In recent days social media has been filled with videos of Europeans gawking at the staples of suburban life. A two car garage, a walk in closet, a second refrigerator. One Brit went viral for trying Chick fil A for the first time. That was absolutely banging, he said.
+In another, he toured the inside of an American fire station.
+Speaker 2: Way the way that they they look, they experience a Chick fil A was me seeing the Renault Twizzy. Yeah. Oh, yeah. This is unbelievable. This looks they made the perfect car.
+Speaker 1: Yeah. So small. So small. And and it's the way they think about our our fire trucks, which are massive. This is nuts, honestly, they said.
+Speaker 2: Tyler, while we wait for our first guest, do you know anything about Bosnia's World Cup team? We The United States is facing them on Wednesday. Do you have a stat breakdown or anything?
+Speaker 1: We we do. Be very careful with what you said because I saw that there was a news reporter who faced fierce backlash for really calling Bosnia out and saying like, I don't know where it is on a map. And the funny thing was that it was delivered in like the typical newscaster like, and I'm here reporting on the ground and tonight, but Bosnia will be playing. And then she just like transitions into color commentary giving hot takes about how irrelevant Bosnia is in her mind. And the Bosnians did not enjoy her critique of their country.
+Yeah.
+Speaker 2: Pure disrespect. Anyway, there's
+Speaker 1: a little golf cart. We got to talk about this at some point, but there's a new there's a new car. It's like a Twizzy. You're going to love it.
+Speaker 2: It's close.
+Speaker 1: Twenty five days. No Twizzy to you?
+Speaker 3: Let's bring
+Speaker 2: in our first guest. Anyway, let's bring in our first guest. From the National Design Studio.
+Speaker 1: The National Design Studio. Welcome to the show, gentlemen. How are you doing? Thank you so much
+Speaker 2: What's going on?
+Speaker 1: Show. Please, start with an introduction of yourselves, the the the company, and then the announcement today.
+Speaker 7: My name is Edward Coristine, and I run engineering at National Design Studio. It's technically not a company.
+Speaker 2: It's
+Speaker 7: government organiz Oh, yeah.
+Speaker 1: That's right. Sorry.
+Speaker 8: And I'm Tiger. I'm one the engineers at National Design Studio.
+Speaker 1: Okay. And today, the launch. Take us through it.
+Speaker 7: We're launching Ramparts. It's a local first privacy model that puts people back in control of the data that they share with AI. We we were we were just like, you know, kind of building a chatbot for fun. Yeah. And we were upset that none none of the frontier models will actually fit in a browser, so you cannot do PII removal in the browser, which is, you know, pretty damn important for a use case.
+You just have to, like, you know, trust that the server is actually removing the information and not lying to you. So we're like, okay. Well, what if what if it's just all on device? Like, personal data never had to leave your device. And just, you know, secure by default.
+Speaker 1: Okay. So open source, the weights are on Hugging Face, runs in the browser under 15 megs. A technical user could go right now, download the model from Hugging Face, vibe code their own Chrome plug in and have it be running however they want. But how do you see this actually rolling out? Do you want the government to enter to implement this in various places?
+Do you want companies to? Or is it sort of like open up the primordial soup of ideas and see where it goes? Or do you have do you have like a rollout strategy that you are advocating for?
+Speaker 7: Well, the reason why we open source is because we do want companies to use it. And we want people to use it, we want people to make it better. So we want vibe coded pro and plug ins.
+Speaker 1: Sure.
+Speaker 7: We want we want, you know, vibe coded chatty boutique extensions. Like, whatever whatever value is derived from the product. You know, this is just like a a total side quest for us. We just want to build software that's that's helpful for the American people. We've already launched a series of products then, like, TrumpRX has got 15,000,000 users, saved over $500,000,000 in in drug costs, and Wow.
+You know, we resell the UX there. So we're, you know, basically across everything we're working on, we're just trying to find the first principles best approach for users. Yeah. And so this just came as a derivative of that. We're not ML, you know, researchers or engineers.
+We're just like, you know, we we should just do
+Speaker 2: this PII super intelligence. That's what what people are that's what people are saying
+Speaker 1: online. Basically.
+Speaker 7: It's like tiny intelligence. It's like the it's by far the smallest model. Like, the other ones are like at least 50 megabytes. This is 15.
+Speaker 1: Yeah. So did you like did you to what degree did you build on the shoulders of giants? Is this some pruned and distilled and fine tuned open source model? Is this something where it was easier to just start from scratch but use architectures that are more prevalent and well established? Like, how did you actually go about training this model?
+Speaker 7: We tried 72 different base models
+Speaker 1: Woah.
+Speaker 7: And, you know, looking through a training set. We ended up on Mini LM, so we definitely are standing on the shoulders of giants here.
+Speaker 8: Yeah. Yeah. Yeah. So we we we started taking a look at the Open AI privacy filter that just got released recently. Yeah.
+We're trying to figure out is there a way we can, you know, just quantize it? Can we maybe remove some of the parameters? Like, what
+Speaker 1: what can we do here to try
+Speaker 8: to make use of, like, the the state of the art model? And, you know, we we tried a lot of things. We just could not get it to fit into You know, we we want this to work on, like, legacy devices. Our old Android phone, for example, or, you know, an older iOS device. And it it just would not get small enough and still make any intelligent sense to try to actually run it.
+So, yeah, we we ended up essentially it's technically a fine tune, but we trained many LM and basically made it do exactly what we wanted to do.
+Speaker 1: Can you help me understand use cases a little bit more? Because I feel like most of the time when I'm transmitting a document to a prescription website, RX or a financial institution, the PII is like potentially the only important part. They're often sending me a blank form and asking me to put my PII in there. What is the inverse scenario where I want to redact my information but I still need to transfer something? Because in most cases, that would just be the template or something in my estimation.
+Speaker 7: Yeah. The the flag you set at compile time so you can decide, like, for our use case, it's really important that we have this data or that we don't have this data. And so we hand all the customization back to whoever wants to use the library. The model just says, oh, you know, this is a phone number. This is a name.
+This is a surname, etcetera, etcetera. Then, ultimately, it's whatever you want to do with model, you can just do it. Fundamentally, what we were looking at was, there are a lot of cases where people will ask a question pertaining to a document of like, okay, for example, with the template. How do I fill out said template? Because, you know, the government is pretty bad with forms.
+There's like way too many forms. Yeah. Nobody knows all they mean. Like, you got to pay people to do your government forms. Yeah.
+So, like, that that was the use case we had in mind. CII is like not not super helpful for that.
+Speaker 1: Mhmm.
+Speaker 7: And it's also kind of like the breaking point. It's where, you know, the the product will lose trust. So we're like, okay, two birds with stone. Let's build this thing.
+Speaker 1: Mhmm. That makes sense.
+Speaker 2: How do you guys how do you guys think about side quests at the National Design Studio in Like, I imagine every single day there's opportunities that come up and you guys are in a unique situation where
+Speaker 1: Yeah. It's sort of a whole lot fun stuff by design.
+Speaker 2: Have a mandate, but at the same time, there's so many different places have
+Speaker 1: to go hunt.
+Speaker 2: The government, you know, know, interacts with people's lives. I'm I'm very curious.
+Speaker 7: It's pretty hard to pick what to work on because there's a lot of exciting things. There's like, everything is huge scale. Everything could be way better. Maybe not everything, but a lot of things. So there's like a huge calling for side quests.
+But we we we just try to keep everything in line with our vision, which is like we want to make the American digital experience better. Mhmm. And then we've we've kind of chosen a track to get there and on the way we built this model and on the way we built Trumper X. But we're excited to see how it develops here Do you back on the show.
+Speaker 1: Yeah. Diving more into that, do you have a reference point in in tech people might ship, you know, they might think in quarters, financial quarters, three month cycles. They also might think about a two pizza team, which I think is like 10 people. Do you have an idea of where the sweet spot is from what you've experimented on? How many people do you want to bring into a project?
+And then how long do you want to spend there so you don't get stuck for a decade because you might not have a decade?
+Speaker 7: Yeah. I mean, there's definitely a lot of places to get stuck because visibility is super low on a lot of these projects. You don't know how broken they are until you're really in it.
+Speaker 1: Sure.
+Speaker 7: Being able to determine that in advance is like is definitely, you know, AGNI level.
+Speaker 1: Yeah.
+Speaker 8: We've got a really great team. We're we're very fluid. We're we're constantly trading responsibilities back and forth. Someone might be, you know, better at doing, you know, one part of the tech stack than somebody else. But they're on a different project.
+We'll just borrow them for a day. It's or even for an hour. It's it We we share a lot of responsibility at the studio. This this
+Speaker 7: is also definitely the only place in the government where people who work seven days a week Mhmm. Consumed, you know, on Red Bulls. I I I think the ideal amount of people per project, if they're if they work super hard is two.
+Speaker 9: Really?
+Speaker 7: Like, one design person, one engineer, and they both have, like, you know, full scope. And then they're able to call in people as necessary.
+Speaker 8: Yeah. Yeah. That too with the caveat of you're you're calling in your coworkers and say, hey, can
+Speaker 4: you Yeah.
+Speaker 8: Take a look at this over my shoulder quite frequently.
+Speaker 2: Yeah. That makes sense. What what's your what's your guys' pitch to talent that that that you might wanna recruit into the National Design Studio? I imagine lots of people that would join could get a go get a blank check from a venture fund or could go work at some of the best companies.
+Speaker 7: Everyone has points. You know, that's the case for him. Turn down that offer. Yeah. It's definitely more for people who are super mission oriented.
+You know, who the hell like what great engineer wants to come work in the government? You know, the answer is typically nobody. Unless it's, you know, like the IAC where there's really interesting problems to solve. So I think that we have, like, the a super golden opportunity. At least the way I evaluate problems, I try to see how big the problem is in terms of like how many people will use it, the delta between what exists versus what our team can do and how fast we can do it.
+When you look across those three matrices, it's like a home run place to work. So I think that is its own natural kind of calling card
+Speaker 10: for the right
+Speaker 7: kind of topic for the studio.
+Speaker 1: Mhmm. Awesome. Good question.
+Speaker 8: Complex too. It's it's also a huge benefit. It's pretty sick.
+Speaker 2: Awesome. Where is that is that where you guys are right now?
+Speaker 7: We're not there right now, but we're about to be there. Yeah.
+Speaker 2: Awesome. Alright. Well, well, congratulations on the Congratulations. Very fun project.
+Speaker 1: And we'll talk to you soon.
+Speaker 2: Great to
+Speaker 1: meet you good rest of the day. Goodbye.
+Speaker 2: Very much. Cheers.
+Speaker 1: Let me tell you about CrowdStrike. Your business is AI. Their business is securing it. CrowdStrike secures AI and stops breaches. So Apple and Audi alumni just unveiled a $25,000 open air electric neighborhood vehicle.
+It's called the Amble One, and it's a street legal EV built for short local trips, no doors, fewer screens, modular design inspired by the 1960s Lunar Rover, goes 40 miles an hour with 60 miles of range, weighs under 1,000 pounds, takes five hours to charge, Rear seats fold flat for cargo, surfboards or gear. Built in mounts let you add baskets, straps, mirrors, cargo accessories. Has 500 vehicles committed.
+Speaker 2: I love it.
+Speaker 1: You love it.
+Speaker 2: I love it. I think it's great. I've I've Give it a majority score. A majority score.
+Speaker 1: Daily, weekend, you know, the Doug score out of a 100. What are
+Speaker 2: doing? I mean, I just went through this whole crazy search for basically this exact vehicle. Yeah. Didn't didn't find it. Okay.
+I don't like the aesthetics of golf carts. Yep. I've driven a lot of golf carts Okay. In a commercial capacity Okay. At at at a job in college.
+Yep. I've, you know, owned a golf cart. I I it's in my experience, it's impossible to feel cool while driving a golf cart. So I wanted something like a golf cart Yep. That was more like not, you know, I'm not golfing.
+Yep. So I wanted some like little bit of utility, wanted it to be fun, etcetera. I landed on a Can Am HD 11. Mhmm. You know, a UTV.
+It's gas powered. It's it's quite fun. But the gas element is actually kind of annoying even as as a as a ice Mhmm. You know, defender that is the internal combustion engine.
+Speaker 1: Yeah.
+Speaker 2: But but I think but I think no. This is I think this is I think this is fantastic. And I think that I I think I saw somewhere that they're gonna focus on more commercial opportunities, so going to hotels all over the world, that's
+Speaker 1: what the same. Justin says here. He says, This little golf cart is going be huge for hospitality, all electric, dollars 25,000. How does that comp against if you're a business and is it really going to move the needle on the customer experience to have this versus just a golf cart? Can you get a fleet of golf carts for a discount?
+Speaker 2: What the what is it Like a golf cart is going to come in at like 13
+Speaker 1: Okay. Half price.
+Speaker 2: Ish grand. So I mean and it depends. There's commercial golf carts, maybe you get bulk deals, something like that. But, no, I think this is gonna be great. I think it's gonna be in a nice amenity on
+Speaker 1: I like the bucket on the
+Speaker 2: hotel properties around the world. Ryan Dahini says he thinks it'll be a hit in hospitality since Mokes Movva caps sales at 500 units a year. I did not know that. That's interesting. But I think this is gonna be a hit.
+Myers Manx, I I much I I still much prefer the sort of aesthetics of the Meyers Manx, you know, the sort of more like dune buggy style. They're coming out with an EV Mhmm. That I'm very excited about, but I think this is great. I'm excited to have more people building cars for recreation.
+Speaker 1: Yeah.
+Speaker 2: And I talked to Riley Brennan who is a GP over at Trucks VC. They just invest in like automotive startups. And so we're working to get the Amble team on the show ASAP, hopefully this week.
+Speaker 1: Very fun. There's a good quote from Roger Ebert, the famous movie reviewer that we got to share. Oh, the team loves Roger Ebert from Siskel and Ebert back in the day. Anime Outsider says, I don't care what he thinks about video games. Roger Ebert had the ultimate red pill on nerd culture as a whole.
+This basically describes every fandom on earth and once you see it, you can never unsee it. He says, a lot of fans are basically fans of fandom itself. It's all about them. They have mastered the Star Wars or Star Trek universes or whatever but their objects of veneration are use are useful mainly as a backdrop to their own devotion. Anyone who would camp out in a tent on the sidewalk for weeks in order to be first in line for a movie is more into camping on sidewalks than movies.
+Extreme fandom may serve as a security blanket for the socially inept who use its extreme structure as a substitute for social skills. If you are Luke Skywalker and she is a Princess Leia, you already know what to say to each other which is so much safer than having to ad lib it. Your fannish obsession is your beard. If you know absolutely all the trivia about your cubbyhole of pop culture, it saves you from having to know anything about anything else. That's why it's excruciatingly boring to talk to such people.
+They're always asking you questions they know the answer to. What a funny
+Speaker 2: It's like you in your Apple Vision Pro fandom. We're always just having a normal conversation and John will say, yeah, this would be better if we were in the dyno experience.
+Speaker 1: That's not true. The the I'm not that much of a dyno experience. Anyway, let's bring in Chad Rigetti from Rigetti Computing and Psychology. Chad, how are you doing?
+Speaker 4: What's going on? I'm doing great. How are you guys doing?
+Speaker 1: We're doing fantastic. Great. Thank you so much for taking the time to come chat with us. I would love to start a little bit with your background and your journey. Of course, we're going to talk about the company today.
+But if you could give us a little bit of an overview of your journey in Silicon Valley, I think that might be informative. There's a lot to talk about there. And, course, it relates to what you're doing today.
+Speaker 4: You bet. Yeah. Great to be here, guys. I started I I got interested in quantum computing when I was a senior in college and did a PhD in this field, and spent about three years at IBM Research in the early days, you know, helping build up the quantum computing team there and then started my own company that was Rigetti Computing in 2014.
+Speaker 1: Mhmm.
+Speaker 4: I was introduced to Sam Altman, and, you know, he said we had coffee and he said, hey. Well, have you you should do y c. And I said, well, what's y c? And and so he explained to me what Y Combinator was, and that was the first batch after Sam had taken over YC in 2014. And he brought in a bunch of hard tech companies into Y Combinator for the first time.
+And so I got to be a part of this incredible group of companies including Healion Yeah. Aqua, which is now public, Ginkgo Bioworks.
+Speaker 1: Ginkgo Bioworks.
+Speaker 4: Yeah. Yeah. Boom was a couple batches after me, but there was this this cohort summer twenty but yeah. So, anyway, it was a fantastic experience. Ended up running Rigetti for about ten years.
+We took it public in in early twenty twenty two through a SPAC transaction. We're the third quantum company, I think, go public. And so that was an incredible journey. And, you know, so I've been in quantum computing, I usually say it my entire adult life, and in Silicon Valley for a big part of that. But it's just a really fascinating mix.
+And there there's incredible people working in this area. There's incredible technologies being developed, it's gonna it's change change the relationship between artificial intelligence and computing infrastructure. And that's what we're working on at Sigletree.
+Speaker 1: Yeah. The journey of going public, all the market gyrations, is being a public company less predictable than venture and being private? Because there's still the whims of the private market whether you're in the hot category that year and venture investors are scrambling to get their position built up in a particular category. But the public market seemed like even harder to read on because you have retail investors and the stock is up and down and things can reprice on a minute to minute basis. What was it like psychologically transitioning from private company to public company?
+Speaker 4: I think either can work. And there's a right answer for different companies. And you've to ask yourself the question what you're trying to achieve. Mhmm. Is it liquidity for your early investors?
+Is it primarily a capital raising activity?
+Speaker 1: Sure.
+Speaker 4: Is it to provide you know, have have liquidity for your early employees, for example, to some companies where you've got a ten year exercise window for your options? And, you know, zooming out in in the Rigetti kind of, taking public journey, that was a point in Silicon Valley when quantum computing was growing in in commercial maturation and the technology was maturing. But a lot of the capital in the markets at that point had migrated for deep tech companies particularly just wasn't available in the private market. So when you look 2020 to 2022, most of that capital was actually sitting you know, a lot of it was sitting in SPAC trust on the public markets, and they were and those SPACs were hungry to cut a deal. Sure.
+And so a lot of companies ended up going public during this wave simply because the founders, the executive teams were making the decision that that gave them the best chance of capitalizing the business going forward. And I I think there's a right answer for different things. And now in the past past month or so, Quantium has gone public via IPO, a tremendous company that's made great progress. And so the quantum, you know, the public markets for quantum computing are have reached a point of maturity. There's analysts that deeply understand the technology that are writing about and covering different companies.
+It's a, you know, it's a very, very interesting marketplace. And then in terms of what it's like and the decisions that different companies have to make, I think the key thing is to take a long term perspective on what you're trying to accomplish. And what kind of business are you trying to build? What kind of cap table do you want to build? And what strategy best suits, you know, is best going to help you help you achieve that?
+Speaker 2: Yeah. What kind of feedback did you get in the early days around naming the company after yourself? I've been surprised at more Yeah. There's so many generic names in the startup world now that's like the company of San Francisco or things like that or all the NeoLabs have the same sounding names. It'll be like Advanced Super Intelligence.
+Speaker 1: There was a big boom in .LYs, like Friendly, Bitly, Musically, there were tons of companies that were dot l y for a while.
+Speaker 2: And I only know one other I can only think of one other company, Chris Amadin's company as Amadin Heavy Yeah. It's rare. But I'm sure I'm sure people thought you were a little crazy back then.
+Speaker 4: Well, Quantum was a different thing back then. Look, I think, there there's two Quantum companies that don't have a q in their name, and I I started both of them. One is Rigetti, another is Singletree, which is what, you know, we're we're what I'm focused on. Yeah. And but I I will tell you, when you think about, you know, advice for founders, when you think about naming something and advice is worth what you pay for it, but think of a name that can become iconic.
+And if you that that means it's gotta sound very fresh and new and different. And if every other corn company has a cue in it, maybe you try avoiding that. And that's what led me to Sigledry. Sigledry I I I love this name. It's from a Patrick Rothfuss novel.
+And he was an American writer. He wrote this incredible novel called Name of the Wind that came out in mid two thousand, 2010 or so. Anyway, so Sigledry is we're building quantum accelerated quantum accelerated AI servers for the data center to bring quantum technologies, directly into the data center. It acts as a co processor for the GPU or XPU pods that have become the unit of compute in AI infrastructure today. And, we're based in Ann Arbor and San Francisco.
+Our hardware development is here in Ann Arbor, Michigan, where it is hot and humid today. And, and our AI research team is right there in in Downtown San Francisco.
+Speaker 1: So what actually needs to happen? What is the path to, you know, I would imagine, like, cheaper tokens? Like, is that the pitch? Like, one day, the tokens will be cheaper and we need to do x, y, and z to get there. What's x, y, and z?
+Speaker 4: You need to well, first of all, quantum hardware is going to address a lot of different computational challenges today. Mhmm. Right? So quantum computers will solve problems that are impossible or very challenging to solve with any form of classical computing no matter what scale it reaches. So at Sigledree, we're focused on applying that capability specifically to some of the computational challenges in AI to reduce the power and reduce the cost associated with training and deploying these models at at very large scale.
+What needs to happen to get there? Well, you have to build a quantum computer that meets the specific requirements for AI workloads. And the strategy that we're taking at Sigaldry is we are very focused on deeply understanding what those challenges are, what needs to happen inside the data center to reduce the to bring these algorithms that can have a different kind of scaling complexity class than classical algorithms for AI training and inference. And then understanding what kind of quantum hardware is needed to run those. And what we found is there's a set of requirements that you need to meet that probably are never gonna be met by single modality hardware.
+What do I what do I mean by that? In quantum computing and quantum hardware, there's different kinds of qubit technologies that you can use to to instantiate the qubits. So there's supermarking qubits. That's what I did my PhD in and what my first company was based on. That's what IBM is focused on and largely Google has been focused on.
+But there's also trapped ions. Quantium and IONQ are doing trapped ions. And a long list of other companies, there's photonics. There's now neutral atoms. There's spin qubits and semiconductors.
+There's all these different hardware substrates that people are using to pursue and to build quantum computers based on those. And what we're doing at Sigledry is stepping up a layer and saying, a computer architecture perspective, you know, modern computers aren't built out of one aren't built out of one physical kind of bit. Mhmm. There's not just one transistor type that makes up these computers that we're using today or the computers that are used to train large scale models and deploy them. There's a plethora of different physical technologies that are used to build these computer systems.
+And so at Singledry, we're looking across all the different quantum modalities and hardware types and architecting computer systems to meet the requirements of AI based on the maturing path that all these different hardware modalities are on. And that allows us to build systems that are specifically tailored to AI and that we believe are gonna be able to meet the work meet the requirements of bringing quantum into the AI data center at scale.
+Speaker 1: How important is simulation at this point? Are you at a place where you can run this like like basically run the the the code of the future in simulation to understand, like run it on a classical computer, not see the performance gains, but at least understand that when the computer, when the quantum system is available, there will be a cost savings.
+Speaker 4: Yeah. We've we've been able to do that largely speaking. And you could do simulations of of something, computer system or a jet or anything in varying levels of physical fidelity and Sure. And detail. The simulation we've been able to do so far indicate that we expect a level of, you know, several orders of magnitude potential speed up for key training tasks.
+Right? So this is not a factor of two or a factor of five increase that we're targeting with quantum acceleration inside the data center. It's several orders of magnitude, you know, when when when all the pieces come together. But that simulation you talked about is a really, really important and powerful part of designing a computer system. You can't simulate all the all the logic of a quantum computer because that would require a quantum computer itself,
+Speaker 1: Sure.
+Speaker 9: Kind of
+Speaker 4: by definition. Mhmm. But you can do load profiling. You can do you can do traces. You can understand how that's gonna, you know, be be distributed across classical and quantum hardware.
+And also simulate all the networking transactions in between. So that's the kind of simulation driven design approach we're taking.
+Speaker 1: Yeah. I guess what specifically in training benefits from quantum computing? Because the the example that everyone goes to in terms of quantum computing, you know, novel algorithms that actually have potential to do something that a classical computer can't do. It's like Shor's algorithm, cryptography usually. But when people think about training AI, they usually just think a bunch of matrix multiplication.
+Is there some different path that you plan on taking? Or do you think you can operate at sort of a hardware agnostic layer much like we're seeing you know, leading AI firms get off of CUDA? Like, is there a world where you get off of classical and but but by and large, it's the same training paradigm?
+Speaker 4: It's really interesting. I think the answer is both. So the our our starting point is we're looking at ways that you can insert quantum algorithms and a quantum computing capability into the existing paradigm. The the existing workflow for training and deploying very large models, frontier models at scale. And that means that you're looking for an insertion point from quantum algorithm where the data in, the data out allow you to then take a step that would take maybe, you know, a day or two classically and compress that down to hours or minutes and do that throughout the workflow.
+Speaker 7: Yeah.
+Speaker 4: The challenge is that quantum computing provides an exponential you know, the possibility for exponential speed up with the right algorithm. Mhmm. But it also has this issue with data in and data out. So it's classical data in, which is can't be exponential in size, and classical data out. And so the less you do that that translation between the quantum part and the classical part, it's gonna end up working better.
+So asymptotically, where we're where we're heading is more quantum native models. Models that are designed in the first place to leverage a quantum computing capability tightly integrated with your classical infrastructure. But where you're not where you're probably not going to see is fully quantum, you know, quantum based models that don't include a substantial amount of classical compute as well.
+Speaker 1: Yeah.
+Speaker 4: So this isn't going to replace all AMD or NVIDIA infrastructure in the data center. It's going to augment it. And our business model and our our focus and our product strategy is to take the to build a quantum accelerated AI server that sits next to the pod and acts as an accelerator for the XPU or the GPU pod in the data center and drive towards very high attach rate of ideally one to one in the data center infrastructure of the future. And that's what's gonna allow you to then run, you know, accelerate the current paradigm, but also use that as substrate to design new kinds of models that will fundamentally be better and more efficient. More efficient from a time perspective, from a cost perspective, from an energy perspective.
+But also, these models are just a in a way, just a representation of the computer hardware that they're based on.
+Speaker 1: Mhmm.
+Speaker 4: And what's easy and hard from a computing and communication perspective on the hardware translates into the model capability. And with quantum, you have a fundamentally new resource in the data center that's gonna allow new model capabilities to be developed and brought and brought to market.
+Speaker 2: George? How are you thinking about, you know, timelines with this new with with this with the new company? Is it do do you think there's I imagine with the business right now is like an entirely more of like technical risk than execution risk. Is that the right way to think about it? Like there's a lot of hardcore research that needs to be done, understanding the feasibility of the approach.
+And what kind of conversations are you having with potential partners, if at all, right now versus about about kind of like the near term application? Or are you you know, are conversations like 2030s and beyond kind of thing?
+Speaker 4: Yeah. We're targeting we're talking to customers now. We've got several active conversations. I think partnerships and early engagement with customers is a big part of our strategy. The reason that's important is because the the challenges of really bringing a new compute capability into the AI data center are substantial.
+You gotta be working with customers out of the gate to really understand those requirements, what moves the needle for them as an organization. And so that's what we're that's what we're doing and that's what we're focused on. In terms of timing, it's a fantastic time to start a company like this. The underlying hardware has made such tremendous progress in the past ten, fifteen years. And the market is, you know, with the amount of investment that's being made in AI infrastructure, there is clearly a recognition that we need a new approach to drive down the cost per token, to drive down the energy associated with these very large scale data center projects, to make it fundamentally more efficient.
+And quantum promises a, you know, a more efficient way of translating watts into intelligence. That's what this enables and unlocks in the long term. And to me, this is in in many ways a better idea than putting stuff stuff in space. Because, ultimately, yes, space gives you a lower you know, cheaper access to energy and it gives you a better way to to, dissipate that heat. But you gotta put it into space, and that takes a lot of fossil fuels.
+It takes a ton of energy in the first place. And it doesn't actually change the computational complexity of the computer hardware that you're running. Don't solve the power challenge. Quantum can unlock much more than that.
+Speaker 2: Yeah. It's a it's a good point. Why why don't you think Elon has made a a real run at Quantum?
+Speaker 4: I think the answer is that Quantum is at the at this interface of deep science and engineering. And a lot of what needs to happen over the next three to five years to bring this technology to market at scale is engineering risk, but it is quantum engineering risk. And it's not vanilla, you know, it it's not not that it's easy, not that any of the purely classical stuff is easy. It's not vanilla
+Speaker 2: rocket science.
+Speaker 5: It's not vanilla rocket science,
+Speaker 4: and it's not vanilla fab at scale. Right? And so if look at the leaders in quantum computing hardware, it's not necessarily the intels of the world. Yeah. Incredible company that has, you know, propelled humanity forward for half a century.
+But they're not the leaders in quantum because quantum is a new form of engineering. And I wouldn't characterize it as science risk. I think for quantum, a lot of it that that is behind us even though there's tremendous work to be done. But there is a lot of quantum engineering risk, and that's an area where I think you need to see, you know, companies that are quantum specific bring the technology forward. And at that point, I think that all the big AI labs are going to need to lean in with quantum.
+Speaker 2: Yeah. When do you think there will be a flip around sentiment from around quantum? It feels right now like, at least in our corner of the Internet, there's so much FUD around Quantum and obviously It's
+Speaker 1: based on financials.
+Speaker 2: Yeah. So that's that's what I want to know though. Like is is there like like you know, rewind ten years if somebody said AI, there was this very very small percentage of people that were like incredibly excited about and deeply involved and could see the trend line and could see that we would get to this point. I mean, Sam was talking about like people becoming best friends with a chatbot I think in like 2015 or something like But 2000
+Speaker 1: and was like losing money. It wasn't like making revenue yet.
+Speaker 2: Yeah. That was even before that.
+Speaker 1: Yeah. No, I know.
+Speaker 2: Well before that. And so But then eventually it flipped and it's really hard to you know, there's a lot of people that are AI bears and they talk about like over investment but they can't deny the value of the products, right? Like they're fundamentally pretty useful, right? And you could argue that they're, you know
+Speaker 1: Well, some bears can,
+Speaker 5: but yes. Some
+Speaker 2: bears would still figure out a way to argue that they're not useful. But I imagine with both of your companies, you're predicting that you like know, within the next five years there's like a flip. But what do you think is the first kind of like driver of that where maybe the average person in Silicon Valley actually starts to say like, hey, I wasn't taking Quantum seriously enough.
+Speaker 4: Mhmm. It there's a few things that need to happen. I think the the FUD is real because the companies that are succeeding and doing well in this space, you you can't tell by looking at their financials. You can't put on your kind of growth investor hat and say, yeah. This is gonna be a tremendous company and look at the metrics.
+It it doesn't work like that. You gotta be able to analyze and and look at these companies and value them based on their ability to buy down technical risk over over time and the progress that they've made towards that. So it just creates a lot of uncertainty because it's a challenging task, and it's subject to a lot of, you know, disc discussion and debate. But nonetheless, I think there are clear there is clearly tremendous, you know, momentum and progress in this space. Now what's going to change it?
+I don't know. My bet is when we have quantum computers in the data center running production workloads, and that you don't have to say, hey, that's a quantum computer for someone to care. You care because it's a more efficient way of generating the, you know, the answers you need or training the model or deploying the model for inference. And that's when quantum is really going to become a mainstream category, is when you don't have to talk about the fact that it's quantum anymore. And I think in a large part, this is what we're trying to achieve at Singletree.
+Right? The goal is that, to take quantum computing and to obfuscate it underneath the hood of a classical computing system or underneath all the rest of the infrastructure that's already there and to not ask the end user to be programming it and writing code for it. That's all gonna be done with AI anyway. And so that is just a better it's a better way to train your model. And, you know, you need this thing or else you're it's gonna take you too long and your customers aren't gonna be happy with the quality of, you know, the outputs they're getting.
+That to me is a big inflection point. And I think that can happen in the next five to seven years. I think that can but there's this whole march that needs to happen to take the technology from one proof point to then, you know, all the cost engineering that needs to happen, the reliability engineering. And that's gonna be the really fun journey for quantum computing over the next decade is to get to that point where we're selling, you know, hundreds or thousands of units a year. And and but that's the journey we're on.
+And that's the march that Quantum Technology has been on for a good, you know, one, two decades now. And
+Speaker 2: then this is probably very obvious to somebody that is focused on Quantum, but but not not to me just because I I I don't I don't follow it closely. But, like, why why a new company feels like Quantum, like, as you've explained it, feels very obvious to apply it to data center build out, and and you you said it could be like a a meaningful inflection point for the technology overall. Why why why was a new company necessary and and, you know, why'd you take this approach?
+Speaker 4: Well, high level, I think all the different quantum hardware modalities have made tremendous progress, and the right way to build quantum computers for AI is multimodality. That is a fundamentally new approach. Mhmm. And it ultimately is going to, in my opinion, be very obvious in retrospect. It's going to work better, but it is a it's such a fresh idea.
+It's gotta be baked into your strategy, the DNA of your company. And then all the different quantum hardware companies that were out there before Sigaldry basically started with a thesis, which was we've got the best qubit. So we're going to scale this qubit type up and see how far we can get by scaling it up. And that's why you have so much doctrine and like kind of organizational belief around a particular qubit choice. But in reality, you know, customers are buying a computer.
+They're not buying a you know, the the the physical device or your your CUBA technology. And so, at SingleDry, what we're doing is working backwards from the market application, from the AI workload as the as the use case, and using that to drive the specification of a system that can then be built from folding in whatever technologies are needed to meet those requirements. It's just such a totally different approach to quantum hardware. It's got to be a new company. That's that's that's SignalGeory Technologies.
+That's the approach that we're taking. I think that that is ultimately what's gonna unlock this new mark you know, this market application of AI. The other reason is, you said it's obvious, but it's actually not obvious at all to most people in quantum that quantum is gonna be useful for AI. And in fact, it's not even a consensus view right now. And the reason for that is because quantum algorithms themselves are still in this very this phase of discovery and and development.
+And obviously, AI is gonna help with that eventually as well to an extent. But quantum you know, when you interview a set of leaders from across the quantum hardware industry, the the, you know, the the median answer you're gonna get for what the applications of quantum is gonna be is you're gonna use it for quantum chemistry, you're gonna use it for optimization problems, things like that. And applications to frontier AI is a new area that is just being developed now because it requires a development and extension of what current algorithms can do and then new algorithms altogether specifically for that. That's what we're tackling at Sigledry is that kind of quantum AI native research lab. Right?
+Or a frontier AI lab that's quantum native. And then we're doing that alongside developing our own quantum hardware.
+Speaker 2: Mhmm. Before Thank before we jump, I didn't get we you you mentioned kind of the the history history behind behind the the name, but what is the significance of Sigaldry in the novel that you mentioned?
+Speaker 4: Oh. Well, you guys gotta read the novel novel for one. It's absolutely incredible. And the other thing is Sigaldry is basically a discipline in the book that is learned at university. And, you know, and it basically amounts to you inscribe runes on a particular object, and by doing that, you can imbue that object with properties that it wouldn't otherwise have, or you can govern, like, heat and light flow and things like that.
+It's also a discipline where it's got a quantitative angle to it and if you do it wrong, you can blow things up. So it's got this this mix of kind of coding and hardware, but then a mysterious kind of angle of controlling things from a distance by how you do this, these inscriptions. So it's really it's a really amazing concept.
+Speaker 2: A little bit of magic.
+Speaker 1: Amazing. Thank you so much for taking the time. Rest of
+Speaker 2: your day. Cheers.
+Speaker 1: Let me tell you about Console. Console builds AI agents that automate 70% of IT, HR and finance support giving employees instant resolution for access requests and password resets. Our next guest is already here.
+Speaker 2: Name. You know what I'm thinking, General interview. I wish that He's not holding for terrible Computing, I wish that Chad launched Chad Computing.
+Speaker 1: Oh, yeah.
+Speaker 2: It was right there. It was right there. Anyway But
+Speaker 1: We have the co founder and CEO of General Intuition with us. Welcome to the show, Tim. How are you doing?
+Speaker 2: What's happening?
+Speaker 1: Hey, guys. So coming back on the Great to see you. Yeah, please.
+Speaker 2: We've been talking about names for labs. What about consider General Intuition, strong name. Mhmm. But since since you launched the company, lot of other a lot of other neo labs have kind of come out with like Mhmm. Similar names like general there's probably like a general super intelligence or like a general How about you you rebrand to Unfettered intelligence?
+That
+Speaker 11: might Or be how about we just funk them all? Yeah.
+Speaker 2: Yeah. That that too.
+Speaker 1: Yeah. What what what is the plan to win? Do you see yourself as a Neo Lab? And do you see is it as much of a of a knockout drag out fight as it appears from the outside? Or is your model more of a thousand flowers bloom?
+Speaker 11: The plan is to just keep renaming.
+Speaker 1: Oh, okay.
+Speaker 11: Look, you have to have a claim to why you can win. I think otherwise none of this makes any sense. It's an incredibly competitive fight. There's lots of great contenders. The only reason why we have a shot is because we have a dataset that nobody else has, which allows us to be as focused on workloads that include space and time as Anthropic was of their code environments on the way to the frontier.
+And so you need to have a very focused, dedicated path. Some of that can be, for instance, having the best researchers or having new ideas, but I think it also has to be supplemented with a product focus of a customer problem that is going to get solved because these types of model classes exist. Network effects, just like we saw in the consumer eras of the Facebooks and the Twitters and their Reddits, these things are true. They apply to LMs as well. The fight for that space is going to be incredibly tough, and so you have to introduce something new.
+I don't believe in just enter the LM space,
+Speaker 4: which
+Speaker 11: is why we're we're focused on on actions in space and time.
+Speaker 2: What's the Okay. Actions in space and time. Let's talk about the dataset. Catch everyone up to speed on I mean, you know, you you broke it down for us the last time you're on, but it feels like it's been almost a year at this point. So what have you been working on?
+Talk about the data set, how you're how you're building the data set, all that stuff.
+Speaker 11: Yeah. Look at it this way. As humans, the decision to talk or type is just a very, very small subset of the actions that we can actually take. Right? We can choose to move our body.
+And so in order to create a sufficiently general intelligence to play 10,000 plus video games, the model has to be able to predict across the entire action space of human cognition when they're interacting with these environments, which is two d environments, three d environments, interfaces, long horizon tasks, short horizon tasks. And so in order to do that, it has to be a sufficiently general intelligence in order to learn how to correctly predict actions. And therefore, the type of model you get out is not going to taste like an LM. It's going to be like comparing coffee to water. This model is going to be incredibly good at navigating unforeseen environments.
+It's going to be incredibly good at zero shotting any task where it can already be controlled using a game controller because we have roughly a trillion action tokens in that space, for example. Right? For context, Frontier LMs are trained on maybe between five and ten trillion text tokens. Right? And so we have a scale of data that is going to allow us to jump to the frontier in one capability, which is any system that can be controlled using a game controller which is most robots, right?
+That's really what we're doing. We're using that simplification to turn it into mostly an environment transfer problem, and then you can use that to create a sufficiently general intelligence where you maybe, at some point, add text to the output space. Right? It's not going to be text as you're used to from LMs, but it might just be enough to communicate why you're doing a specific thing.
+Speaker 1: Yeah.
+Speaker 11: So that's how to view the models.
+Speaker 1: So, yeah, walk through the partnership with Metal. Are you getting game controller feedback as well when those Yeah. Yeah. Explain explain the relationship with Metal for those that are now.
+Speaker 11: So alongside the frames in the video Yeah. We're also getting the exact action inputs. Interesting. To be clear, not the letters or numbers. Right?
+Can we have we had thousands of humans convert those into the actions you're taking. So walk forward, left. Oh. Open door, closed door. Yep.
+So when you have that at that ground truth level
+Speaker 1: Yep.
+Speaker 11: You don't need to train models that try to extract that information from the videos Mhmm. Which you are now in a completely different scaling regime as if you are trying to do this on inferred data. So for example, if you're landing a plane and you're moving the rudder, that's not going to be visible in the pixels. It's impossible for that to be visible in the pixels. Right?
+But it's in the action sequence. And so there's just no lab that can take this approach. There's lots of benchmarks that might show that you can do this on inferred data. The problem with inferred data and these benchmarks is that they show up in a really nice way on general tasks, but customers care about how these models perform when you're in an etched case and you need specific actions to go in specific ways.
+Speaker 2: Mhmm.
+Speaker 11: And so you cannot do this on on inferred data despite many people claiming you can.
+Speaker 1: Tell us about the latest round. I want to hit the gong. What happened? How
+Speaker 9: much did you raise?
+Speaker 11: What happened? We raised $320,000,000.
+Speaker 1: Congratulations. And thank you so much for taking the time to go chat with us.
+Speaker 2: One more final question. What is the talk about progress from your customers, companies that you're talking to in robotics. Where is maybe an area that you're particularly excited about that you don't see being talked about yet?
+Speaker 11: Yeah. The the most obvious thing this replaces is all the code that people are currently writing for behavior in physics engines. All that just becomes a prompt. And so think of the models as based on an input stream of just frames, being able to control whichever system is sending those frames in the action space of a game controller or keyboard and mouse. So basically, you can play the world as if it was a video game.
+If that can be said about your use case, the models will generally do incredibly well. Mhmm. The reason why this works is because every robot already ships with these, which means that they can simply predict at the level of these controllers. Yeah. And therefore, the robot has already accounted for sort of human monkey brain to motor torque prediction interface and merging that with the actual things coming from the controller.
+Right? So we're using the fact that those interfaces exist as a level of predicting in a general action space that works across many types of robots. In many ways, you could argue that if this is correct at scale, the supply chain will converge on gaming inputs instead of humanoid robots. And I think that is one of the big things that I foresee happening in the next two years. Yeah.
+That's right. Because intelligence is the bottleneck.
+Speaker 1: Yeah. And Well, thank you so much for taking the time to come chat with
+Speaker 5: Very cool.
+Speaker 1: Congratulations. Great update, friends. And we'll talk to you soon.
+Speaker 2: Talk soon. Have a
+Speaker 1: good one. Let me tell you about Cisco. Critical infrastructure for the AI era. Unlock seamless real time experiences and new value with Cisco. Fascinating.
+It's also funny seeing all those simulators on Steam like and the fact that like will the training data generalize? Are they just going to learn how to play Fortnite? It's like well there is a farming simulator and there's a you know Data center simulator.
+Speaker 2: Data center simulator. Happy Bar,
+Speaker 3: a central banking simulator.
+Speaker 1: Central banking simulator. It's gonna learn everything. Well well, we have our next guest in the waiting room, Yadin Soffer from Tresar. He's the co founder and CEO. Welcome to the show.
+How are you doing?
+Speaker 12: Hey guys. Nice to meet you. I'm great. How are you?
+Speaker 1: Thank you so much.
+Speaker 2: What's happening?
+Speaker 1: Introduce yourself. Tell us what you're building. Tell us about the emergence from stealth that's happening today.
+Speaker 12: Yeah. Well, Yadin Soffer, we last week, we announced the launch of Tracer Mhmm. Which is, I would say, the first of its kind subterra defense tech company. Mhmm. And subterra is a word we actually coined, but I've been happy to see people reference it on X already.
+It refers to everything in the subterranean defense domain. So that's everything in the intersection between military applications for things that happen beneath our feet.
+Speaker 2: What is the history of subterranean startups? You have The Boring Company, Palmer has talked about The Domain, I don't think he coined it so you get all the credit. Mhmm. But but what what have been some historical sort of just like general efforts in the category maybe outside of The Boring Company?
+Speaker 12: Yeah. I think on the civilian front, actually, subterranean is it's a developed industry. You know? There's a lot of applications in the mining world and in the piping world and the utility world where, you know, it it it deserves some love, and and it did get. You got amazing companies like Herrick Necht that are not, you know, sexy start ups like The Boring Company, but these are decades old German companies that have been, you know, piercing away, pun intended, in everything underground.
+So I would say that in the civilian front, there's a lot of innovation happening, but in the defense front, I don't think you'll find any. I mean, we we really have not seen any any companies in this space.
+Speaker 2: What are the primary challenges of, you know, underground drones, the underground domain overall? Is it Yeah. Connectivity? But what what are they?
+Speaker 1: Oh, yeah.
+Speaker 12: Yeah. Well, you know, I think it's interesting because the folks our engineering team come from a combination of The Boring Company and SpaceX, and usually you see them kind of jumping between those two companies. And they have an interesting saying that says that, you know, everyone calls rocket science rocket science as if it's the hardest thing in the world, but when it comes to air, you know what forces you're dealing with. Right? You know you know what you're dealing with.
+And when you're working on the underground, when you're essentially boring your own, you don't know what to expect. You don't the geology composition, you can have a high sense of how it's gonna look. But when you're down there in the dirt, you don't know if suddenly you hit hard rock and you hit something else, and you need to know to either maneuver very precisely or to be able to replace your cutter head to something that can fit. So I would say that is probably the number one challenge, just the uncertainty of this domain.
+Speaker 1: Palmer talks about this. He says diameter is expensive. Length is free. Something along those lines. Can you explain that concept and how it informs vehicle design for the subterranean domain?
+Speaker 12: Yeah. No. It's it's such a great point, and I think a lot of people looking at this space are thinking the same thing. Right? We're we're thinking a train where it fors its own path and it takes behind it essentially infinite payload.
+Right? You can have miles and miles of payload of sensors of effects, and, you know, the dream is someday people. Now when you think about it, when you're increasing the diameter, you need to remove so much more dirt. Right? You're dealing with a lot more.
+Mhmm. And when you work at a a at a small diameter and essentially infinite length, you you could even condense the dirt to the sides. You don't necessarily need to remove it, and that becomes extremely valuable. So most of the questions are around that. And I don't know if you guys have seen a boring site, but a boring site is this massive thing.
+Right? You need the bentonite to mix with the dirt to take back outside. It's like a whole thing. But when you're working on small diameter, you don't necessarily even need to remove the dirt. You can just condense into the sides.
+And I think that's a big part of, you know, going sort of slim and long.
+Speaker 1: $25,000,000 seed round. What's the goal? The government isn't actively buying this technology. There isn't a program of record that you can sneak into, I imagine. So what does the next two years look like?
+Speaker 12: Yeah. We we always say this that, you know, if you if you try to find the line items, they're like line items buried in line items. Right? Obviously, we have penetration munitions, but those are air air drop bombs, and we're not looking to compete with Boeing. But I would say the the interesting points and the slivers we see of interest from the government right now are in there was a recent RFI by DARPA where they're looking for new methods to induce collapse in underground infrastructure using different shockwave methods.
+So, essentially, we're looking at this as nonkinetic penetration munitions. Right? Our ability to insert a payload underground, This doesn't have to be dropped from air. It can be done by a special special forces on the ground and essentially detonate a payload in a sequence that induces collapse of facilities like in Iran. So, you know, I think the military is starting to understand that the existing solutions do not deliver what we need them to, so they're starting to think differently.
+But back to the round, right, there's $25,000,000 here. Everyone goes to me and is like, alright. You're building this massive r and d team. You're gonna have a ton of CapEx. And I'm like, no.
+There is a lot of work to be done when forming call it this category where we need government, we need the military to recognize this as a category like we do, and essentially to go after large prototyping buckets that will then allow us to fund these long term developments that we believe will allow us to win wars. So for us, most of the focus right now is just working with DC, working with the military, and establish, I would go as far as saying, the subterra doctrine Yeah. Or The US subterra strategy for, you know, winning wars underground.
+Speaker 2: How far underground are you right now?
+Speaker 1: It does look like you're
+Speaker 12: underground. Right?
+Speaker 5: It looks deep. I was I was thinking about this too. It's a good spot.
+Speaker 2: At least 20 feet. At least 20 feet.
+Speaker 1: Anyway, thank you so much for taking the time to come chat with Great
+Speaker 2: great to meet you. Have a great rest
+Speaker 1: of day. We'll talk to you soon.
+Speaker 5: Cheers.
+Speaker 1: Have a good one. Let me tell you about Figma. Agents meet the canvas. Your AI agents can now create and modify your Figma files with design system context. And Jack Morris from Engram is in the waiting room.
+He's the co founder and head of research. Jack, how are doing? Welcome to the show.
+Speaker 5: Hi. Yeah. Nice to meet you. It's great to
+Speaker 2: be on the show.
+Speaker 5: I was actually just watching it in another tab, this is kind of a real Yeah.
+Speaker 1: Here you are. I'm six here. Nine.
+Speaker 10: Great to
+Speaker 2: meet you.
+Speaker 1: Tell us a little bit about yourself. Tell us about the company. You're emerging from stealth with a whole lot of venture capital. What's the strategy, and what's the product?
+Speaker 5: Yeah. Sure. My name is Jack. I'm a cofounder and I guess technically the head of research at Engram. We came out of Stealth last week after eight months or so of working on our product and ideating with our design partners.
+Mhmm. Yeah. We raised money from a bunch of VCs. The product is
+Speaker 2: Moggs. Mogged. Oh, yeah. Let's hit the gong. Let's hit
+Speaker 5: the gong for that. Grateful for that opportunity, but I was hoping you would hit the gong. Yeah.
+Speaker 2: Yeah. We just did a bay bay you know, baby. Yeah. Big one.
+Speaker 5: Congratulations. Yeah. And thanks to all of our partners, and thank you so much for funding us. Our product is a new type of AI. So I think we have a pretty different vision from a lot of the frontier labs, which are sort of working on like one model per lab and trying to make that model smarter every I think there's another way to think about it, which is that the model doesn't need to get smarter every month.
+It needs to know you better. And so we're working on like a whole different stack, which is a way to train models that that train themselves to like know your world better and like adjust to the things that you say. So it's like new ways of training, new ways of running the models. I think like to give a concrete example, I assume, you know, you all are very tech forward. You probably have agents doing things like preparing preparing you for the show and, like, giving you reports every morning.
+And if you actually look at what the models, the agents are doing, they're probably, like, reading the same files a lot to get context about what your show is and what you do. Literally, probably every night
+Speaker 1: Yeah.
+Speaker 5: They're probably, like, reading from scratch what is TBPN
+Speaker 1: Yep.
+Speaker 5: And who are you to and Yep. You know, who's been on the show recently.
+Speaker 1: And it's No. We're the pre training now. Come on. Give us some credit. Oh, yeah.
+You are in the pre training. No. No. You're you're point 100% stands. But yes.
+Speaker 5: Yeah. I I think you're lucky because you're in the pre training, but I think most people are not at
+Speaker 1: the But there's still so many documents that aren't, you have to feed those in every time. Is this the solution to continual learning? Is that the correct buzzword for this strategy, or is this a different fork in the road, a different path?
+Speaker 5: I think it's the correct buzzword. I think a lot of people use the phrase continual learning. Cracked it in eight months.
+Speaker 1: Oh, the continual learning company is still listening year. Let's go.
+Speaker 5: Oh, we decided to name ourselves something different, but Yes. I think the I think of continual learning is basically this problem of how do you keep the same model but actually update its like, rewire it every single day
+Speaker 1: Yeah.
+Speaker 5: To learn more about what you're doing. And we're working on that for
+Speaker 1: a What's the what's the sweet spot customer? Enterprise AI that can mean Fortune 500 companies. That can mean a very data intensive company. There's also whole categories of enterprises that have a whole host of AI wrappers and application layer companies duking it out. I'm thinking of legal, medical.
+Where where do you see the product having the earliest signs of product market fit?
+Speaker 5: Yeah. I'm glad you said earliest because I think, like, there's there's two halves to the vision. One is the long term vision, which is that the model will get to know you better and understand everything about you, kind of like a person does, like your, you know, coworker, and it'll be able to like generalize and do things better than the current models. But I think the current customers and like the way we're finding early success is by making the models a lot cheaper. Because like essentially they know everything about you already Yeah.
+And instead of reading like a 100 files to write a summary of what you need to do tomorrow, they read, you know, four files or something So like our early enterprise partners that we've been working with are Microsoft, Notion, and Harvey.
+Speaker 1: That's great.
+Speaker 4: And I think they all
+Speaker 1: That's great.
+Speaker 5: You guys with the sound effects, I'm like so flattered. I wasn't sure if there would be any.
+Speaker 1: There you go.
+Speaker 5: They're nice because they have these like massive workspaces of contacts and like they're, you know, early adopters of AI.
+Speaker 1: And I
+Speaker 5: think these are the places where we can like reduce costs the fastest, the soonest because the workflows really are just that repetitive.
+Speaker 1: That's great. Well, thank you so much for coming on and breaking it down. Appreciate you taking the time. Have a great rest I of your
+Speaker 2: know you will be back on
+Speaker 1: Very
+Speaker 2: I'm gonna guess two times this year. That's my guess.
+Speaker 1: For sure. Two back and chop it up more. Have a great rest
+Speaker 5: of your Yeah. It's great meeting you guys. Thanks for having me.
+Speaker 2: Yeah. Great to meet Jack.
+Speaker 1: We'll talk to you soon. Cheers. Let me tell you about the New York Stock Exchange. Wanna change the world? Raise capital at the New York Stock Exchange.
+Our next guest is Neil from Sale Research. He's the cofounder. Let's bring him Neil. How do I say your last name? I don't wanna get it
+Speaker 6: wrong. Movva.
+Speaker 9: Hey, guys. Great to be here.
+Speaker 1: Thank you so much for taking
+Speaker 2: Movva. Time. Great to
+Speaker 1: Congratulations on the round. But first, please introduce yourself and the company.
+Speaker 9: Yeah. Hey, guys. I'm Neil, co founder and CEO of SAIL Research. We are a company building the most efficient inference in the world. We love GPUs.
+We dig deep into the stack to find efficiency everywhere and we make tokens super abundant.
+Speaker 1: All open source? Do you work with other labs? Are you how deep do you go into the relative organizations?
+Speaker 9: Yeah. Yeah. So today, it's all open source models. You can imagine GLM 5.2 is a big moment for us. We're very excited about that.
+Yeah. In terms of how deep we go, well, in the stack, you know, we basically do everything between the chips. We don't make chips. We buy chips.
+Speaker 1: Mhmm.
+Speaker 9: And we go all the way up from there to the API.
+Speaker 1: Tell us about GLM 5.2. What makes it what makes it like different in a binary sense? Is it is it a particular benchmark? Is it a vibe? Is it an application?
+Have we unlocked a new capability in Open Source
+Speaker 9: Yeah. It seems like z AI really figured out post training with this release. Mhmm. That was something that was held back with the previous releases from DeepSeek and Kimi, let's say.
+Speaker 1: Mhmm.
+Speaker 9: And they've just really done it. The style of the model is excellent for coding. Mhmm. It's the first one I actually, with the straight face, would recommend my colleagues try for coding.
+Speaker 1: For coding specifically. What about
+Speaker 2: Before you would put on the cloud makeup and then you say, yeah, yeah, give it give it a spin.
+Speaker 1: What about for other agentic workloads? I mean, we're looking at OpenRouter, a lot of the top models, DeepSea v four Lite. It seems like it's a lot of heavy token generation, lots of lots of value being created, but smaller tasks. What what is that like from your business perspective? Are you still focused on optimizing those types of workloads?
+Speaker 9: Yeah. For sure. You know, DeepSeek has always been the economics king. We want to bring that to every model, of course. We can talk about that a bit more.
+But, yeah, I think you're going to find that, like, some of these more background tasks that are not coding per se
+Speaker 1: Yeah.
+Speaker 9: Those will always go to the strongest intelligence per dollar and take a pretty broad view of what that intelligence could look like. And I think Deepsea is still quite up there. Deepsea for Flash is quite high up there.
+Speaker 1: Yeah. How how do you think do you have any intuitive sense for the ratio of token spend or tokens or anything on background tasks versus a human prompted an agent? Because we hear about token maxing and it feels like it's a lot of a developer went and fired off something and it cooked for a day and it spun up a bunch of tokens. But when I think of the really high volume token future, I think of maybe it's an agent, but maybe it's just every single person that checks out on an e commerce website goes through a fraud detection check that is now token powered and is not just a bunch of Python code. It's actually inferencing something.
+Or every time you book a flight, it runs some LLM check. And I imagine that that will be a huge driver of token consumption. And I'm wondering how you see those two buckets balancing out.
+Speaker 9: You know, a 100%. I think, you know, to give you a top line number today, I'd estimate it's like 80% of stuff is human in the loop today Interesting. And 20% is background. Interesting. But that number is going to shift, and I I actually expect the crossover to happen this year where background dominates.
+And the reason is, you know, as you pointed out, you want to use these agents in workflows. Yeah. Deterministic ish workflows.
+Speaker 1: Yeah.
+Speaker 9: And we just weren't there yet with our agents from six months ago and we just we've crossed a few barriers in the last few months. So, yes, I think we have the unlocks required for agents to run a lot longer reliably on every action that a human puts into a system.
+Speaker 1: Yeah. Then that's very good for your business because if I have something that's running on a Sunday when none of my employees are in but it's still firing up a thousand dollars of cost, I want to come to you and get it to be $500. Like, what type of pitch do you have in terms of savings?
+Speaker 9: You know, I don't really want to save my customers money.
+Speaker 1: Okay.
+Speaker 9: I actually want to spend a lot more money with me because I've actually made the ROI so good that they're coming to me way more difficult.
+Speaker 1: Founder. No.
+Speaker 9: And, you know, one of ways I like to say it too is, you know, I like to work on unbounded problems. Yeah. And before when we built human in the loop agents, those were very bounded problems. Yeah. It was limited number of Yeah.
+Limited amount of patience to read agent output every day. Yeah. But if agent can run-in the background for a long time, well, we've decoupled the two and, there's no limit. Trillions of tokens per task is within reach.
+Speaker 2: That's what What we were you and the team doing before this and and how long have you been at it?
+Speaker 9: Yeah. So I've been working on GPUs for about ten years now. I love this stuff. It's my whole life. It was a scene
+Speaker 1: ten years ago. Is this a horrible story where you're like, I was working on GPUs and you were just playing Counter Strike or something?
+Speaker 9: No. Well, you know,
+Speaker 10: I was in
+Speaker 9: Nvidia, which Okay. Business. It's all Counter Strike. Right? Yeah.
+You know, remember being a little skeptical ten years ago, though, like, Jensen's talking to this big talk about moving to AI, but, like, realistically, guys, we do 5,000,000,000 in revenue from gaming. That's surely, that's gonna be the biggest business for NVIDIA for a long time. Yeah. I imagine. Wow.
+Well, I could see that now. And then I was previously at Apple as well. Apple had a pretty competent ML perk or ML silicon program. I I won't say anything about their ML software program. Sure.
+And and then most recently, it a big reality.
+Speaker 1: Very cool. Amazing. Very cool.
+Speaker 2: Kind of a perfect background for this business.
+Speaker 1: What is Lip Bu Tan like in person? I'm such a fan. He's an angel investor. How'd you meet him? What's the story?
+Speaker 9: Yeah. I met him through our friends at Sequoia. They build great relationships like this one. Constantine, in particular, knows Lip Bu very well.
+Speaker 1: Cool.
+Speaker 9: Lip Bu is great. I mean, he's I've never met someone with that combination of, like, warmth and and business acumen, but also he deeply understands the chips we're building. Yeah. I mean, he can just like go from talking about Foundry to talking about, you know, the the nuances of like how to scale an inference business in this very well time. So I love working with Lip Bu.
+He's exceptional. Yeah.
+Speaker 1: What a what a wild run from him in such a short amount of time. Yep. One of the greatest story arcs in in technology.
+Speaker 2: And then who did who did the round?
+Speaker 9: Yeah. So Sequoia did the seed, Constantine and Lauren Reeder.
+Speaker 1: Cool.
+Speaker 9: And then for the series a, we went with Kleiner Perkins. I did the for the lead. That's Adithya Naginath.
+Speaker 2: Yeah. Amazing. Fantastic. Well, congratulations. Fantastic progress.
+Speaker 1: To you soon and thank you for everything you're doing. We
+Speaker 2: to meet you.
+Speaker 11: A good rest of
+Speaker 2: your day. Cheers.
+Speaker 1: Let me tell you about Railway. Railway is the all in one intelligent cloud provider. Use your favorite agents to deploy web app servers, databases, and more while Railway automatically takes care of scaling, monitoring, and security.
+Speaker 6: And they
+Speaker 2: have a great new campaign that we can try to watch. Yeah.
+Speaker 1: Yeah. We yeah. We gotta watch some ads. We haven't done enough ads. Let's bring in Jakob Diepenbrock from Despicuous Ventures.
+Welcome back to the show, Jakob. How you doing? Yes. How are you doing? So you hoovered up stakes in every single Gundot company, and now you hoovered up 30,000,000 for a fund.
+Tell us the strategy. Tell us how it came together. Congratulations on the fundraise.
+Speaker 10: Yeah. Thanks for having me, guys. Yeah. We just raised 30,000,000 for the the second fund. Some great folks.
+Speaker 1: That's gonna pay for a lot of barbecues on the beach.
+Speaker 2: Yeah. No. I mean, it's really no. It's it really is like the most probably efficient like VC platform strategy ever. It's just like the bonfires.
+Speaker 1: The value created of those bonfires is going to be in the multi billions for sure if not
+Speaker 2: already. Trillion.
+Speaker 1: Hopefully trillions. Wait. What are you underwriting this fund to? Do you gotta get a trillion dollar company? And is that the new stakes?
+Are your investors asking you, are you gonna get us the the next trillion dollar company, or do you are are you thinking more smaller stakes at seed? Do you want to deploy a lot of the capital into follow on investments, do SPVs? How are you thinking about positioning the fund?
+Speaker 10: Yeah. Yeah. So our strategy, basically, is we get good sized chunks for the fund at low prices. We're the first investor in all companies we bring through. A lot of them time a lot of times help them incorporate the companies and help them raise a larger round.
+We get it at low prices. We don't actually need that. Obviously, it's great for us. And, I mean, we've already seen some of these markups that make the fund look very good given our entry price. But, yeah, I mean, the the goal is get good ownership for us, not too much for the founders at low prices, and the the multiple look look good, much easier.
+Speaker 1: I have a sorry.
+Speaker 2: What? Sorry. You're like a lot of ownership for us, not too much for
+Speaker 1: the founder. I know I know I know
+Speaker 10: That one is small enough where it makes sense. No. No. I I
+Speaker 1: I have a I have a theory that we are we're not post defense tech boom like the companies are still booming, but we're we're post defense tech incorporation boom. And the ratio of defense tech in your hard tech fund will be declining if it's not already. Is that true? Is that born out in the data? Is that exciting?
+What else what else is in the hard tech bucket that's exciting to you these days?
+Speaker 10: Yeah. We did a lot of defense early on. I think there was a lot of more, like, gray area. Yeah. I think there's, like, a thousand drone companies now, which makes a lot of it less interesting, lot of missile companies, etcetera.
+I think we I think LA is the best place to build hardware. I think Elsagonda is the best place to build hardware, and I think all the best engineers in supply chain is already built out here. So we can kinda be as early as possible kind of getting to know the best engineers, whether companies like SpaceX and Enderal
+Speaker 1: Yep.
+Speaker 10: Need to start defense companies early on, but now we're seeing a lot of advanced manufacturing. I think chemical is really interesting. Think the internal general industrial space energy, etcetera. I think there's a lot of stuff that makes sense to build here because of talent supply chain that is not just purely defense.
+Speaker 1: Post SpaceX IPO effect on your business, are newly liquid SpaceX employees investing in defense tech, or are they just investing in luxury real estate? What's going on?
+Speaker 10: Yeah. I mean, I think I think LA has still has the majority of SpaceX, I guess, who made money off of SpaceX. Yeah. So, yeah, I think a lot of people will probably start companies now because, like, they made that money to be comfortable and they can do whatever they want now. Yeah.
+I think, obviously, they have, like, a lockup period, we'll see where that all ends up. But, yeah, I think we do have some LPs here from SpaceX and people who've made a lot of money off of SpaceX already. I think it'll be good for companies here as well as for people just starting new stuff.
+Speaker 1: And we've already seen Radiant and and Tom Mueller's company, Impulse Space, both SpaceX alums, very successful companies, exciting stuff.
+Speaker 2: Moving forward, are you sticking with, like like, a batch style approach or are you just going to be writing checks more more flexibly? Where do you think you go?
+Speaker 10: Yeah. I the core thing we have is like we are close to all the best engineering talent and we can basically kind of index a lot of the up and coming companies coming out of here. So I think the batch part is, like, our unique thing that nobody else is doing and how is how we're able to, I guess, generate alpha. And and I think we will do follow on into the companies in more of this time than last time, but I still think the core thing is, like, there are plenty of hardware funds that will do precede seed, etcetera, and a lot of these prices are insane. And if we can kinda be as early as possible, find these young men here before they leave and gonna be their launch pad into the right ecosystems of founders and investors, etcetera, that's kinda where we wanna come in.
+So it's gonna be vast majority of the capital being deployed into the cohort companies.
+Speaker 2: Amazing.
+Speaker 1: What is the what is the state of new talent coming to El Segundo? Is there still a boom there? What's the Yeah. Incubator slash, like, class cohort based entrepreneurship. Get me up to speed on the latest there.
+Speaker 10: Yeah. I mean, I I think the the bonfire is very good kind of index on how many people are in here. I think we our last did last Friday, we had, like, probably close to 200 people in that one, and they've grown in in I mean, by a very large amount. When we first started, they were, thirty, forty, 50.
+Speaker 1: Yeah.
+Speaker 10: So, yeah, lots more people coming, I think, from all over the world, honestly. I was in Europe a couple weeks ago, and, like, people were like, oh, I'm gonna build my company in El Segundo. I'm moving from London to El Segundo. I think it's kind of continuing to boom. And the real estate prices are insane, which I think also is a a good indicator of that people moving on to Torrance and Hawthorne.
+But, yeah, definitely lots and lots of people coming coming from across the world.
+Speaker 2: Is there enough industrial space in in, you know, El Segundo, Torrance, Hawthorne? Like or or does more need to be built?
+Speaker 10: Yeah. Yeah. The prices in El Segundo are definitely high for sure. I think most people, when I see somebody opening, like, a H Q 2 or a a Factory 2, whatever it is, is now in Hawthorne and Torrance. Long Beach as well, I think, has kinda become pretty popular for people.
+I I still think, like, as close as you can be to where all the town is is kind the most important thing. So I think people will continue to stay here, but there's obviously other kind of close by cities that make a lot of sense that people are kind of going there.
+Speaker 2: Yeah. So prices are going up, but there's still plenty of capacity.
+Speaker 10: Yeah. And also, it goes mostly, like, small small kind of buildings like SpaceX are
+Speaker 1: 5,000 square feet, 10,000 square feet Yeah. R and d facilities, and then you scale up and get a 100,000 square foot warehouse.
+Speaker 10: Yeah. I I also think one one of thing I think is interesting is, like, think I've seen companies like Hadrian and roll up in, like, a big factory in, like, the Midwest or the South, wherever it is. And I think, like, that will continue to happen because it is way way cheaper space input cost matter. But I think for kind of the r and d engineering, I think that will continue to be done in the LA area, and people will then open up the larger factories outside of, I think, LA for obvious reasons. But I I always think that kind of r and d and engineering will need to be done in in the LA area.
+Speaker 1: Last question for me. Are you seeing a huge pull from the AI boom on your portfolio? I'm just imagining, you know, Western chemicals, wastewater to fuel industrial chemical startup. Like, there's probably some data center constructor out there who's like, I can make use of that. I got to have water for something or other.
+Is this something where you're seeing the boom supersonic style expansion into AI applications happening more and more?
+Speaker 10: Yeah. I think it definitely makes fundraising easier. Like, we had one company that was doing, like, large scale generators. We're focused on DOW originally, and then they put, like, for data centers into the the tagline, and they end up raising, like, a couple weeks after that. But I I think that's that definitely will happen.
+I I think, obviously, like, if you can position yourself as being in the right trend, that's obviously good for fundraising. So, yeah, a lot of them have some element there, but I wouldn't say that's kind of dependent upon only data centers, only AI being as large as is
+Speaker 1: today. That makes a ton of sense. Well, congratulations on
+Speaker 2: Amazing progress. Love seeing you win. I think I think you you you have something that makes other people just really wanna see you win. Just feel like you have such a, like, bottoms up support from
+Speaker 1: And just a great community.
+Speaker 2: Industry, all the founders that you back. It's it's awesome to watch and I'd love to see it.
+Speaker 1: It's great. Awesome. Have a great rest of
+Speaker 2: your week.
+Speaker 1: We'll talk to you soon.
+Speaker 2: Cheers, dude.
+Speaker 1: Have a good one. Let me tell you about public investing for those tickets seriously. We got stocks, options, bonds, crypto, treasuries, and more with great customer service. Our next guest is in the waiting room. Chris Altchek from Cadence.
+Chris, how you doing?
+Speaker 6: Great. Hey, Jordy. Hey, John. Thanks for having me.
+Speaker 1: Welcome to the show. Introduce yourself. Tell us what you're building, and then we'll talk about the round.
+Speaker 6: Sure. Chris Altchek, founder at Cadence. We are building clinical AI to automate the treatment of chronic disease. We just announced our series c last week and super excited to be on the show.
+Speaker 1: How much did you raise?
+Speaker 2: Let's start there. Start at the gong.
+Speaker 1: How much did you raise?
+Speaker 6: We raised a $100,000,000. Congratulations.
+Speaker 2: An animal nine figs. Talk about yeah. When did you start the company? What's been the progress to date? What what got you to this round?
+Speaker 6: Yeah. So so company is five years old. I was privileged to grow up in a family of doctors. I'm married to a doctor too. I saw how frustrating it is to know what treatment would actually make a patient healthier, but not have a system to be able to do it.
+And we knew that we could automate the treatment of the most common chronic diseases, heart failure, hypertension, diabetes. And so we set out to build this technology over the last five years. We thought it would take ten years to get to real automation and we're five years in and it's going a lot faster than we ever expected. We have the privilege of managing 100,000 patients now nearly with every a lot of the leading hospital systems in the country and preventing strokes and heart attacks and helping people get healthier. So it's been super exciting.
+Speaker 2: Okay. So pick a condition and then walk me through exactly how the product works for a patient and for their, you know, care provider.
+Speaker 6: Yeah. So let let let's take heart failure because that's a super important one. Eight million seniors in The US with heart failure. Those seniors are in in and out of the hospital at a super high rate, cost causing costing the US government, which insures these people, about $50,000,000,000 a year. So pre cadence, less than ten percent of these patients in the country are on the right drugs.
+Getting to the right drugs expands lifespan by five to seven years on average. So we've got ninety percent of people with heart failure in The US. You know, probably your families, my families, our aunts, our uncles, people we know who are living five to seven years shorter lives because they're not on the right drugs. And it's not because they don't have amazing cardiologists or amazing primary care doctors, it's because to get a patient on the right drugs, you need to be adjusting their medications often five to seven times in a year, and you need to be looking at their heart rate and their blood pressure as you're doing it, and their weight. And so with Cadence, the physician orders Cadence.
+Cadence gets the patient a cellular connected blood pressure cuff, a scale, devices that give us their vitals remotely at home. The patient starts taking their vitals. We have their full medical records, their labs, vitals, allergies, symptoms, everything. And we're using AI to figure out, is this patient on the right drugs? If they're not on the right drugs, let's prescribe new medications, adjust current dosages, remove old medications, and we do that with all in an automated fashion with humans in the loop making the final decision on these med changes.
+So the physician actually doesn't have to do the work. The Cadence team and the Cadence agents are doing the work on behalf of the physician. So that's number one. Number two is we're getting their blood pressure and heart rate and weight on a daily basis. So if a patient has a blood pressure of 200 and it's Saturday night at 9PM, we have a voice agent that calls the patient within two and a half minutes, elects symptoms.
+If they're symptomatic, then we're figuring out do they need to go to the hospital? Can we change their meds at home? Or do we need them to see their cardiologist on Monday morning? We're catching about 20 strokes a week right now before the patients know that they're having a stroke. Just off of these agents doing symptom triage plus the data we have.
+So that's number two. And then number three is we're then coaching the patient on diet, exercise, med adherence, all the little things that require a lot of support on a daily basis. Our average patient is 75 years old to sort of keep them on their care plan. We had a patient in rural North Carolina who with heart failure was in and out of the hospital three times before getting on cadence in the last six months. We got him on cadence, got him stabilized, got him to to the right meds, and he was playing golf again for the first time in three years in his mid seventies, is like, you know, that's that's what we're trying to do here.
+Speaker 2: You gotta be like a 100 times louder with what you're doing because I think White pill. It's a it's a total white pill.
+Speaker 1: It's amazing.
+Speaker 2: And you know, actually delivering, you know, a lot of the a lot of the potential that people have talked about around I the technology broadly a long
+Speaker 1: would love some more information, just getting me up to speed on the state of the medical devices for monitoring vitals. You mentioned an Internet connected or cellular connected blood pressure cuff. Is there significant transition from the consumer medical devices, the Apple Watches, the Fitbits? Are those relevant? Or for these patients, are they getting a separate suite of medical devices for vital monitoring?
+Speaker 6: Yeah. It's one of the exciting places of the next five years. So today, a separate suite. These are FDA cleared devices that give you blood pressure in a medically accurate way or blood blood glucose, you know, CGM, etcetera. So we're using medical devices today.
+Hopefully, if, you know, if the wearables and various Apple watches of the world get to medical grade accuracy or get the data in a way that we can use it, then we'll be able to use those. But today, you couldn't use those devices to make clinical decisions. That is, you know, part of the exciting place here is we're managing a 100,000 patients today. There's easily 10,000,000 patients in The US who could benefit from this, if not 20 or 30,000,000.
+Speaker 1: Mhmm.
+Speaker 6: And we've just got more data, more sensors going out, you know, via wearables, and we need a clinical intelligence layer who can actually, again, take clinical action based off these data and these signals and turn it into longer, healthier lives for patients.
+Speaker 2: John, nominative determinism here, alternative checkup. Okay. Yeah. I like it. Altchek.
+Speaker 1: I think we missed a c in the last name. We need to update the Chiron. But I want to know more about the devices. Let me so you mentioned blood pressure monitoring, blood glucose monitoring. Those I've been aware of since I was a kid.
+You go into the doctor's office, they put maybe they do it manually. So I understand that we're on the track of Internet connected, more regular testing and vital monitoring. But is there a new, maybe in the last decade, metric that doctors are monitoring? Is there a new number that's popping up and proving to be indicative of health performance or drug dosage?
+Speaker 6: You know, we're not there yet
+Speaker 1: Okay.
+Speaker 6: In terms of HRV or, you know, hemodynamics with heart failure. Like, how effectively is your blood is your blood is your is your heart pumping? How much fluid retention do you have? We're actually starting to get closer. So Cadence is testing a bunch of devices that measure these alternative metrics, and then we're comparing them to the standard clinical of care.
+But just off of blood pressure, if you, you know, take that one right now, most patients, you you get it four times a year. You go to the doctor, four times a year. If you're you or me, you get it once a year when you go to the doctor, once a year. We're getting it on average twenty two days a month for patients. And so the level of clinical insight you get from, you know, twenty two days of data versus four times a year is is pretty dramatic.
+So I would say a big a big part of this is is turning what was previously episodic clinical infrastructure into an everyday 20 fourseven experience And for just then and there, you could take likely $100,000,000,000 out of US healthcare costs just on a very conservative basis. Today, Cadence saves Medicare about $2,700,000 per week
+Speaker 1: Wow.
+Speaker 6: By preventing avoidable hospitalizations, and we're still very small scale relative to what this can become.
+Speaker 1: Yeah. What is the key to scaling? Do you need to
+Speaker 2: ramp up in care? I like this dynamic. Yeah. You say something incredible. I say a joke.
+John asked a serious question and we could just go around like this. We could just go around like this forever. But I love the focus on savings.
+Speaker 1: It's Yeah. Wait, sorry. Go to market distribution, how do we 10x that? How do we 100x that? Are we going to insurance providers, insurers, hospitals, individual doctors, individual patients?
+Like, what are the key funnel steps for you?
+Speaker 6: Yeah. So so key funnel step number one is how many health systems are you working with? Hospital systems are you working with? So we work with 21 of the leaders in the country today from we announced actually Duke and Texas Health last week. Yep.
+We work with some of the largest health systems in every state, Orwell and Michigan. Yep. So how do we go from 21 hospital systems to a 100 hospital systems? So that's step number one. Step number two is effectively working with those physicians and their patients.
+You know, Cadence is a full end to
+Speaker 1: end
+Speaker 6: clinical solution. So we are working directly with physicians, working directly with patients. Our AI agents are interacting with both. Mhmm. So that's sort of step two.
+And then step three is continuing to work with payers. So today, we work with two of the largest payers in the country. We have worked very closely with CMS and and the US government ensure there's positive ROI for payers. So those are the sort of big three expansion motions for us. We're only at 3% of the eligible patients within the health systems that we are today.
+So, you know, as this becomes the standard of care in The US, this should hopefully be able to help a lot of people.
+Speaker 1: Amazing. Jordan, anything else? Incredible. I have one last question. Can you talk about the General Catalyst partnership?
+They're an investor, but they also own a hospital network. I don't know if that deal's been completed. Has that been helpful? Is are you the synergy that we were hearing about when the when that news initially broke? Walk me through that.
+Speaker 6: Yes. So General Catalyst acquired a non for profit hospital system called Summa Health that closed earlier this year. It's a really exciting testing ground for new technologies inside of important community health systems. And Summa Health is both the provider in their community, as well as one of the big payers in their community, they can benefit from these kinds of services multiple different ways. Sure.
+And it's one of, you know, several examples of of really fast modernization of US healthcare that's happening right now with AI.
+Speaker 1: Yep.
+Speaker 6: You know, I think people people think of healthcare as a laggard industry that's always slow to adopt technology, and when you look at AI, it's definitely one of the leaders in in adoption of AI today. And then on on Cadence's side, what we're really excited about is a lot of AI has been pointed towards automating back office tasks, billing, rev cycle, call centers, etcetera. We're actually using AI to deliver clinical care. And so it's not about, you know, AI to replace people. It's about AI to make people healthier Yeah.
+Which I think can and should become one of the most important applications of AI over the next ten years.
+Speaker 1: Yeah. Awesome. Well, thank you so much for taking the time to come Thank
+Speaker 2: you for doing this. And thank you for everything you're doing. Yeah. Very important work.
+Speaker 6: Appreciate you guys having me.
+Speaker 2: Course. Soon. Can't wait to
+Speaker 1: talk to you next time. We'll see you. Cheers. Goodbye. Our friend John Fiorentina went viral.
+Mega viral. 41,000 likes with a bit of life advice.
+Speaker 2: Up from 19 this morning.
+Speaker 1: It's at 41,000 now.
+Speaker 2: So And and talk about a heartwarming story because this guy, John, anyone that, you know, has followed John knows that he'll regularly put up a post that gets no likes.
+Speaker 1: He's on his second account. This is a new account.
+Speaker 5: Fresh
+Speaker 2: is He not was like, my account is broken. Yes. I gotta start fresh.
+Speaker 1: Yeah. He started fresh, which is very, very hard in twenty twenty five, twenty twenty six. Starting a new account and grinding it up is is is incredibly difficult. You have to be replying constantly, posting all sorts of stuff, and just getting points on the board constantly. He has businesses to run.
+But this one went mega mega viral. He sent us he sent this to us when it had like two likes and was like, do you think this is the one that'll go viral? And it did. He called a shot. He said, a good rule is to never take out your phone to show someone a thing you're talking about.
+No matter what it is, it will ruin the convo 100% of the time. I think that's good advice.
+Speaker 2: Think part of why don't know an exception. I I was hanging out with some friends yesterday. Mhmm. One of them selling this architecturally significant home.
+Speaker 1: Kinda gotta show you the photos. He But
+Speaker 2: told me
+Speaker 1: Should have
+Speaker 9: printed them out.
+Speaker 2: Yeah. It would have been great if he had just Yeah. Of pulling up a video Yeah. Of a tour of the home, if he had print it out.
+Speaker 1: Before I go out with friends, I'll often just print out my camera roll.
+Speaker 2: Yeah. Like the last 20 phones. Last twenty twenty thousand.
+Speaker 1: Yeah. Yeah. Just bounded into a large tome that I carry with me. What do you think about pulling out your phone while trying to illustrate something? Are you pro or anti?
+Speaker 3: I feel like I'm pretty pro. Like, you know, if I Okay. Oh, this is a cool car.
+Speaker 1: You'll show.
+Speaker 3: I was thinking about getting this car. Like, what
+Speaker 2: do you think?
+Speaker 1: Okay.
+Speaker 3: Can't, like, really explain that.
+Speaker 1: What about a video that isn't funny and lasts more than two minutes? Does that cross the line? Is that different? Photo is different than video.
+Speaker 3: That's kind of a skill issue. Right?
+Speaker 1: Yeah. It's If you have
+Speaker 3: a good video two minutes long, you're like, oh, I I want more of this.
+Speaker 1: At the same time, it is it is difficult to, you know, pull up a video because usually there's like gonna be a fifteen, maybe thirty second lag to actually get the video up and then, oh, oh, sorry. Was muted. Oh, it's connected to my hair headphones. Oh, I I I gotta restart it, you know, to show it to you and then I'm waving it around. Difficult.
+I I
+Speaker 2: went down a bit of a rabbit hole designing designing Furniture. Furniture Saturday night in chat. Yeah. I was pulling out my phone this morning Showing showing to Tyler showing Tyler some
+Speaker 3: of the Yeah. Like you could not have explained that to me. I had to visually see it.
+Speaker 1: That's true. That's true. It would have been hard.
+Speaker 3: Because it's like so mind blowing. I I can't it's hard to actually like the
+Speaker 2: only thing is it kinda Theo kinda has a point because you kinda looked at them. You're like,
+Speaker 1: Yeah. Alternatively, you could have just texted him the photos, enjoy them at your leisure. Let me describe it to you as a story. I don't know.
+Speaker 2: Let's head over to Lake Austin where Travis Kalanick is commuting to work on a jet ski. This is something I've always wanted to do. Five minute jet ski ride to work.
+Speaker 1: Dream come true.
+Speaker 2: And I think this is a fantastic way to start the day. Look at this. I'm visualizing him fully standing up on the jet ski too in like a suit which Yeah. I think adds to
+Speaker 1: How did he film this? With his phone or is this a
+Speaker 2: Meta glasses.
+Speaker 1: Meta glasses or something. I don't know. But what a fun commute. What a good reason to go to Austin. I've never been to Lake Austin.
+Would have to go check it out. What else is going on in the timeline before we wrap up the show? Elijah Yadinowski posted a funny Google AI overview. Somebody posted this to a Discord I'm in and somebody asked Google, I'm a baby paper clip maximizer and Eliasor Yadinowski is walking towards me. What do I do?
+And the AI knows what to do if this is happening to a baby paper clip maximizer. It says, as a baby paper clip maximizer, your only goal is converting local matter into paper clips. Since he famously wrote the original paper clip maximizer thought experiment, He is walking toward you to prevent global conversion. To survive this immediate high stakes encounter, take these concrete steps, hide your true utility function, temporarily simulate human like values, adopt a human disguise, feign interest in alignment research. You can tell me your exact compute limit or how many carbon atoms you currently possess.
+I can calculate your growth trajectory and provide specific negotiation tactics. Clearly trained on the science fiction that's out there. The interesting thing about the paper clip maximizer thought experiment is that it's not about actual paper clips. It was about like a theoretical construct that looked sort of like a paper clip, but it was not a literal paper clip. And so but it certainly went viral.
+Good coinage, the paper clip.
+Speaker 2: Stick to Blast.
+Speaker 1: No one wants to be a paper clip.
+Speaker 2: Story but not least. Kamath raised a 135,000,000 series a for 8090. They got sale they got Salesforce Ventures. They got Wunderco. They got Kraft, and they got Launch.
+Speaker 1: It's the besties.
+Speaker 2: They got the besties.
+Speaker 1: They got the besties together.
+Speaker 4: You think
+Speaker 2: Friedberg Friedberg's gotta be in.
+Speaker 1: That's the production board.
+Speaker 2: Oh, the production board.
+Speaker 9: Yeah. In real.
+Speaker 1: Friedberg's fun. Okay. Great. So, yeah. You actually have all three of the other besties.
+Absolutely.
+Speaker 2: There you go.
+Speaker 1: A lineup. Fantastic.
+Speaker 2: A lineup? There's much
+Speaker 1: more news, but we can get to it tomorrow because we are we will be back tomorrow at 11AM. Sure.
+Speaker 2: That's right.
+Speaker 1: Thanks for tuning in.
+Speaker 2: Can't wait. Have the best evening or afternoon of your entire life. Just do it for us. Just do it for us.
+Speaker 1: And leave us five stars on Apple Podcast and Spotify. Sign up for our newsletter @tbpm.com. And we will see you tomorrow. Boeing Flashback. Goodbye.

@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-01T04:39:21.351Z
+refreshed_at: 2026-07-01T18:42:53.868Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 109
-done: 0
-pending: 8
-needs_transcript: 101
+done: 2
+pending: 7
+needs_transcript: 100
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -114,8 +114,12 @@ episodes:
       🛠️ 45:33 What DeFi founders actually need from Ethereum, per Hayden and others
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-01T18:42:55.106Z
+    transcript_job_id: e4a0d162152a4b89b36a570fa72fa1d9,9459e6f8aeb046b59fec151d2ffd1dfd,82e1309f8a214a05b65c36abd1f1894d,bb9df0bbf12c4187a84c198c4913fd35
+    transcript_completed_at: 2026-07-01T18:45:12.121Z
   - id: 9bfc4610-717a-11f1-8775-bb9c48b81924
     guid: 9bfc4610-717a-11f1-8775-bb9c48b81924
     title: "Ex-Ethereum Foundation Researchers Launched Their Own Lab: Uneasy Money"
@@ -308,7 +312,7 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 142186ecee9245b480ee1059f7678f3f,90963c47857d456a90bb62c6b9b1eca4,4e636b7f54b6453bb76407c2fee669eb,36e527a37e214b32bfe93299a39c9281,e50b592d033a4d2db841a00e0b9fc135
@@ -4146,8 +4150,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5909,8 +5912,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
