@@ -1,95 +1,88 @@
 source: tbpn
-refreshed_at: 2026-07-01T18:42:53.791Z
+refreshed_at: 2026-07-02T04:31:25.018Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 4
-done: 2
+total_candidates: 3
+done: 0
 pending: 2
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 0111384e-4014-4e7a-ae34-d30a91b2f2b1
-    guid: 0111384e-4014-4e7a-ae34-d30a91b2f2b1
-    title: America's Tech Wishlist, Comcast Splits in Two, Tristan Thompson in the Ultradome | Zach Laberge, Gavin Uberti,
-      Eren Bali, Larsen Jensen, Ricky Rosa, Andrew Rea, Michael Anderson, Tristan Thompson, Grant Gregory & Ian Rountree
-    duration: 10473
-    published: Tue, 30 Jun 2026 14:48:34 -0700
-    published_sort: "20260630"
-    first_seen_at: 2026-07-01T04:39:21.269Z
-    url: https://share.transistor.fm/s/e6565b95
-    audio_url: https://media.transistor.fm/e6565b95/82547d1b.mp3
+  - id: 1df0bccc-bda8-446e-9376-74076e3e936a
+    guid: 1df0bccc-bda8-446e-9376-74076e3e936a
+    title: MetaCloud, Bending Spoons IPO with Founder Luca Ferrari, Amble Founder Joins | Mark Pincus, Shubh Sinha, Wayne
+      Ting, Jeffery Liu & Jon Wang, Eliot Pence, Luca Ferrari, Nick Grossman, Julian Hoenig
+    duration: 9418
+    published: Wed, 01 Jul 2026 14:18:55 -0700
+    published_sort: "20260701"
+    first_seen_at: 2026-07-02T04:31:25.010Z
+    url: https://share.transistor.fm/s/d5a4b762
+    audio_url: https://media.transistor.fm/d5a4b762/927362ec.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    summary: "(02:02) - Rocket Lab Enters SpaceX Arena\r
+    summary: "(01:26) - Meta Sells Compute?\r
 
-      (10:32) - Comcast Splits in Two\r
+      (28:17) - 𝕏 Timeline Reactions\r
 
-      (12:16) - 𝕏 Timeline Reactions\r
+      (32:14) - Mark Pincus, an American internet entrepreneur, is best known as the founder of Zynga, the pioneering
+      social mobile gaming company behind hits like FarmVille and Words with Friends. In his recent conversation, Pincus
+      discusses his new book, Life at the Speed of Play, which offers a hands-on guide to transforming ideas into
+      products that resonate with users. He emphasizes the importance of rapid testing and learning in the AI era,
+      sharing insights from his experiences to help entrepreneurs increase their chances of success.\r
 
-      (21:15) - America's Tech Wishlist\r
+      (01:08:42) - Shubh Sinha, co-founder and CEO of Integral, discusses the company's recent $18 million Series A
+      funding and its mission to sanitize proprietary real-world datasets—such as medical records and financial
+      transactions—so AI developers can access valuable data while ensuring privacy and compliance. He highlights how
+      Integral enables data holders to monetize sensitive information without compromising privacy, benefiting both data
+      providers and AI builders. Sinha also emphasizes the importance of privacy engineering in maintaining data utility
+      and regulatory adherence, particularly in sectors like healthcare.\r
 
-      (44:02) - Zach Laberge, founder and CEO of Omen AI, discusses his company's development of real-time fluid
-      monitoring systems for mission-critical machines, particularly in data centers. He explains how their sensors
-      detect contaminants and bio-growth in liquid cooling systems, preventing costly downtime by enabling proactive
-      maintenance. Laberge also highlights Omen AI's recent $31 million Series A funding, which will support team
-      expansion and manufacturing growth.\r
+      (01:14:40) - Wayne Ting, CEO of Lime, reflects on the company's journey to its IPO, emphasizing the challenges
+      faced in the micromobility industry and Lime's success in building a scalable, sustainable, and profitable
+      business. He highlights the importance of operational efficiency, noting that even small mistakes can
+      significantly impact the business, and stresses the need for a clear focus on critical areas like hardware,
+      software, operations, and government relations. Ting also discusses Lime's vertical integration in hardware and
+      software, which has allowed the company to manage supply chain challenges effectively and maintain a competitive
+      edge in the market.\r
 
-      (52:23) - 𝕏 Timeline Reactions\r
+      (01:27:05) - Jeffery Liu is the co-founder and co-CEO of Assort Health, a San Francisco-based company specializing
+      in AI-driven solutions for healthcare providers. In the conversation, Liu discusses how Assort Health's agentic
+      platform enhances the entire patient journey by automating tasks such as call center operations, document
+      processing, patient intake, care gap activation, and payment collection. He highlights the platform's ability to
+      personalize patient interactions, reduce administrative burdens, and improve access to care, addressing challenges
+      like long hold times and inefficient scheduling.\r
 
-      (58:15) - Gavin Uberti, CEO and co-founder of Etch, discusses the company's development of rack-scale inference
-      hardware optimized for transformer models, emphasizing innovations like low-voltage inference and cluster-scale
-      memory to enhance efficiency and performance. He highlights the importance of strong partnerships, particularly
-      with TSMC, to overcome manufacturing challenges and meet the growing global demand for AI inference. Uberti also
-      underscores the significance of assembling a talented team and securing strategic investors to drive Etch's
-      ambitious roadmap in the rapidly evolving AI hardware landscape.\r
+      (01:34:20) - Eliot Pence, co-founder of Dominion Dynamics, discusses the company's recent $100 million funding
+      round aimed at building a Canadian defense technology firm focused on autonomous systems and Arctic domain
+      awareness. He highlights Canada's rich defense tech history and the current opportunity to establish a major
+      defense brand, emphasizing the importance of developing solutions for the Arctic's harsh environment to create
+      significant competitive advantages. Pence also notes the company's strategic approach to cap table construction,
+      incorporating both Canadian pension funds and global investors to support their vision of building a globally
+      impactful, Canadian-owned enterprise.\r
 
-      (01:16:33) - Eren Bali, known for founding Udemy and Carbon Health, discusses his new venture, Monogram, a
-      general-purpose AI application that provides interactive visual interfaces in response to user queries,
-      distinguishing itself from traditional text-based AI interactions. Monogram emphasizes voice input for faster
-      communication and delivers visual outputs for quicker comprehension, aiming to make AI more accessible for
-      everyday tasks. Bali highlights his consistent focus on simplifying complex systems to broaden accessibility, as
-      demonstrated in his previous ventures.\r
+      (01:41:06) - Luca Ferrari, co-founder and CEO of Bending Spoons, an Italian digital business holding company, has
+      led the firm to a successful $1.7 billion IPO, listing on the Nasdaq under the ticker \"BSP\" with an $18.4
+      billion valuation. In a recent conversation, he discussed the company's broad acquisition strategy, emphasizing
+      the importance of predictability and long-term improvement in potential targets, rather than focusing solely on
+      industry or synergy alignment. Ferrari also highlighted the time-intensive nature of their transformative
+      integration process and reflected on their journey from an initial $10,000 acquisition to their current position,
+      underscoring that, despite their achievements, the company's journey is just beginning.\r
 
-      (01:28:23) - Larsen Jensen, founder and general partner of Harpoon Ventures, is a former Olympic swimmer and Navy
-      SEAL who transitioned into venture capital to invest in technology serving national interests. He discusses
-      raising a $155 million fund, the evolution of defense-focused startups, and the importance of supporting
-      high-octane founders with visionary ideas. Jensen also touches on his experiences in the SEAL teams, the
-      significance of the Black Flag accelerator, and shares his perspective on the Enhanced Games.\r
+      (02:03:39) - Nick Grossman, a partner at Union Square Ventures, discusses the firm's investment approach,
+      emphasizing their focus on expansive technological waves that open new opportunities, such as the Web 2.0 era and
+      the rise of agentic AI. He introduces the \"Rebel Alliance\" thesis, highlighting the vast ecosystem emerging
+      around powerful AI models and the potential for generational companies to be built across various components of
+      the agentic stack. Grossman also addresses the challenges and opportunities of thesis-driven investing, noting the
+      importance of timing, team selection, and the balance between capital intensity and strategic positioning in the
+      evolving AI landscape.\r
 
-      (01:42:22) - Ricky Rosa, founder and CEO of Oasis Devices, discusses the development of a smart ring designed to
-      replace traditional keyboards by enabling private dictation and editing through touch and voice commands. He
-      highlights the ring's advantages over existing devices like AirPods, emphasizing its ability to capture whispers
-      in noisy environments and its multifunctionality as both a microphone and trackpad. Rosa also shares the company's
-      progress, including a recent beta launch and the initiation of pre-orders for the device, with plans to ship in
-      small batches starting in two weeks.\r
-
-      (01:51:23) - Andrew Rea is the co-founder and CEO of Taxwire, a company offering a fully managed solution for
-      global sales tax compliance. He discusses the challenges businesses face with indirect tax compliance, the
-      increasing enforcement of sales tax regulations, and how Taxwire leverages AI to provide customer-friendly
-      services in a market dominated by older, less adaptable companies. Rea also highlights the company's recent $25
-      million funding round and its role in disrupting traditional tax compliance services.\r
-
-      (01:57:44) - Michael Anderson, co-founder of Framework Ventures, a San Francisco-based venture capital firm
-      established in 2019, discussed the firm's evolution from its initial $15 million fund to managing several billion
-      dollars across multiple funds. He highlighted their early focus on seed-stage venture investing in the crypto and
-      web3 space, noting the global distribution of crypto entrepreneurs and the necessity of extensive travel to engage
-      with them. Anderson also emphasized the firm's commitment to supporting world-class founders across various
-      industries, including energy and AI, while maintaining a consistent venture thesis throughout their growth.\r
-
-      (02:06:51) - Tristan Thompson, a Canadian-American professional basketball player, has played 13 seasons in the
-      NBA, notably winning a championship with the Cleveland Cavaliers in 2016. In the conversation, Thompson discusses
-      his transition into technology investments, highlighting early stakes in companies like Anthropic and SpaceX, and
-      emphasizes the importance of betting on strong founders and leveraging his network to identify promising
-      opportunities.\r
-
-      (02:33:30) - Grant Gregory is a Partner at Cantos Ventures, a venture capital firm specializing in early-stage
-      investments in near-frontier technologies. In the conversation, he discusses Cantos's investment strategy,
-      emphasizing the importance of rapid iteration and testing in hardware startups, and highlights the firm's focus on
-      deeply technical founders aiming to transform the physical world. Ian Rountree is the founder and managing partner
-      of Cantos, a venture capital firm focused on \"near frontier\" technologies. He invests in deeply technical
-      startups across AI, defense, aerospace, energy, biotechnology, and advanced manufacturing, backing founders
-      building technologies that can reshape the physical world.
+      (02:22:48) - Julian Hoenig, co-founder and chief design officer of Amble, discusses the inception of the Amble
+      One, a street-legal electric buggy designed for short-range mobility in resorts and urban areas. The idea
+      originated from a conversation with his friend José António Uva, who sought an aesthetically pleasing mobility
+      solution for his resort in Portugal. Recognizing a broader market need, Hoenig and his team developed the Amble
+      One, emphasizing design, comfort, and performance, with plans to begin deliveries to hospitality clients in 2027
+      and expand to consumer markets by 2028.
 
 
       TBPN is made possible by:
@@ -144,152 +137,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-01T18:45:12.315Z
-    transcript_job_id: a7764687befe4da79efb5bef024e5e27,7d7c1ec9af314ab9805f2ffc4cc93b57,3f9bd9ce6dd54df3b1cf5b2368f97882,d4533c269abd4d6684ee57ed3fffaeb1,97faca80825849699915f441fa92da07,c73b56ad07794c099c42978d17ae4cd3,6e897daf3e88439fb770b13111fc4e72,f7e4accbfafe4c61ab207d3ebddd80e4,b8843b3abd6a40e289b5ea129ff3032f,c2b3b58a5e14474e8c1d73661a33e681,ae2805e845be493280b19e879de0d50a,d4f29eba269a4e5bbae9913bc4778215
-    transcript_completed_at: 2026-07-01T18:53:53.930Z
-  - id: 86d365bf-be76-43dc-acd2-9e8cf689623f
-    guid: 86d365bf-be76-43dc-acd2-9e8cf689623f
-    title: Open-Source AI Battle, Google Throttles Meta, Micron Margins Moon | Edward Coristine & Tai Groot, Chad Rigetti,
-      Pim de Witte, Yadin Soffer, Jack Morris, Neil Movva, Jakob Diepenbrock, Chris Altchek
-    duration: 8459
-    published: Mon, 29 Jun 2026 13:43:58 -0700
-    published_sort: "20260629"
-    first_seen_at: 2026-06-30T04:32:37.962Z
-    url: https://share.transistor.fm/s/66c0ffeb
-    audio_url: https://media.transistor.fm/66c0ffeb/5d14456f.mp3
-    image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/66c0ffeb/transcription.txt
-    transcript_type: text/plain
-    summary: "(02:21) - Open-Source AI Battle\r
-
-      (14:33) - GLM-5.2 Review\r
-
-      (21:38) - Google Throttles Meta\r
-
-      (27:20) - 𝕏 Timeline Reactions\r
-
-      (34:38) - Micron Margins Moon\r
-
-      (38:48) - Comcast Splits in Two\r
-
-      (43:04) - Europe Meets Suburbia\r
-
-      (48:18) - Edward Gorberstein, head of engineering at the National Design Studio, discusses the launch of Ramparts,
-      a local-first privacy model that allows users to control the data they share with AI by keeping personal
-      information on their devices. He explains that existing AI models are too large to run in browsers, preventing
-      in-browser PII removal, and emphasizes that Ramparts is open-source, with weights available on Hugging Face,
-      enabling technical users to create custom applications. Gorberstein highlights the studio's mission to improve the
-      American digital experience by developing user-centric software, citing previous successes like Trumper X, which
-      saved users over $500 million in drug costs.\r
-
-      (57:53) - 𝕏 Timeline Reactions\r
-
-      (01:03:16) - Chad Rigetti, founder of Rigetti Computing, discusses his journey from developing quantum computing
-      at IBM to establishing his own company, which went public in 2022. He highlights the importance of integrating
-      quantum technologies into data centers to enhance AI capabilities, emphasizing the need for a multimodal approach
-      to quantum hardware. Rigetti also addresses the challenges of transitioning from private to public markets and the
-      significance of long-term strategic planning in the evolving quantum computing landscape.\r
-
-      (01:28:42) - Pim de Witte, CEO of General Intuition, discusses the company's unique approach to AI development by
-      leveraging extensive datasets of action-labeled video game footage to train models capable of spatial-temporal
-      reasoning. He emphasizes the competitive nature of the AI industry and highlights General Intuition's distinct
-      advantage: a proprietary dataset that enables their models to predict actions in both virtual and physical
-      environments. Additionally, de Witte announces a recent $320 million funding round, bringing the company's
-      valuation to $2.3 billion, which will support further advancements in their AI research and applications.\r
-
-      (01:36:39) - Yadin Sofer, co-founder and CEO of Tracer, discusses the company's emergence from stealth with the
-      launch of a subterranean defense technology firm. He highlights the challenges of underground operations, such as
-      unpredictable geology, and emphasizes the importance of small-diameter, long-length designs for efficiency. Sofer
-      also mentions Tracer's $25 million seed round aimed at collaborating with the military to establish a U.S.
-      subterranean strategy for warfare.\r
-
-      (01:42:52) - Jack Morris, co-founder and head of research at Engram, discusses the company's recent emergence from
-      stealth with $98 million in funding from investors like General Catalyst, Kleiner Perkins, and Sequoia. Engram
-      focuses on developing AI systems that enhance human intelligence by creating models capable of understanding
-      users' unique contexts and workflows, thereby improving efficiency and reducing costs. Early enterprise partners
-      include Microsoft, Notion, and Harvey, who benefit from these AI solutions that adapt to specific organizational
-      needs.\r
-
-      (01:48:03) - Neil Movva, co-founder and CEO of Sail Research, discusses his company's focus on building the most
-      efficient inference systems for AI agents that operate autonomously over extended periods. He highlights their
-      commitment to open-source models, such as GLM 5.2, and emphasizes the importance of optimizing the entire
-      stack—from hardware to API—to enhance efficiency. Movva also notes the shift in AI workloads from
-      human-in-the-loop tasks to background processes, predicting that background tasks will soon dominate, and
-      underscores the need for infrastructure that supports long-running agents effectively.\r
-
-      (01:54:34) - Jakob Diepenbrock, the 22-year-old General Partner of Discipulus Ventures, recently closed a $30
-      million fund targeting early-stage investments in defense-tech, energy, mining, manufacturing, and other critical
-      industries. In the conversation, he discusses the firm's strategy of securing significant ownership in startups at
-      low valuations by being the first investor, often assisting with company incorporation and subsequent fundraising.
-      He highlights the advantages of El Segundo's robust engineering talent and supply chain infrastructure for
-      hardware development, noting a shift from defense-focused investments to sectors like manufacturing, chemicals,
-      industrials, space, and energy.\r
-
-      (02:02:52) - Chris Altchek is the founder and CEO of Cadence, a health technology company that partners with major
-      health systems to provide remote patient monitoring and management for chronic conditions. In the conversation,
-      Altchek discusses Cadence's recent $100 million Series C funding, the company's rapid progress in automating
-      chronic disease treatment, and the significant impact their technology has had on patient outcomes, including
-      preventing strokes and heart attacks through real-time monitoring and intervention.\r
-
-      (02:14:40) - 𝕏 Timeline Reactions
-
-
-      TBPN is made possible by:
-
-
-      Ramp - https://ramp.com
-
-
-      Public - https://public.com
-
-
-      Cisco - https://www.cisco.com
-
-
-      Console - https://www.console.com
-
-
-      CrowdStrike - https://www.crowdstrike.com
-
-
-      Figma - https://www.figma.com
-
-
-      MongoDB - https://www.mongodb.com
-
-
-      NYSE - https://www.nyse.com
-
-
-      Railway - https://railway.com
-
-
-      Shopify - https://www.shopify.com
-
-
-      Codex - http://openAI.com/codex
-
-
-      Follow TBPN:
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/tbpn/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: needs_transcript
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
