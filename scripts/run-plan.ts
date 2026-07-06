@@ -477,13 +477,16 @@ function selectFairTranscribeCandidates(
   })).filter(group => group.entries.length > 0)
 
   const selected: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
-  while (selected.length < max && bySource.some(group => group.entries.length > 0)) {
-    bySource.sort((a, b) => {
-      const newestA = a.entries[0]
-      const newestB = b.entries[0]
+  while (selected.length < max) {
+    const activeSources = bySource.filter(group => group.entries.length > 0)
+    if (activeSources.length === 0) break
+
+    activeSources.sort((a, b) => {
+      const newestA = a.entries[0]!
+      const newestB = b.entries[0]!
       return candidateSortKey({ sourceId: b.source, entry: newestB }).localeCompare(candidateSortKey({ sourceId: a.source, entry: newestA }))
     })
-    for (const group of bySource) {
+    for (const group of activeSources) {
       if (selected.length >= max) break
       const entry = group.entries.shift()
       if (!entry) continue
