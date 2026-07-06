@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-07-06T04:35:01.900Z
+refreshed_at: 2026-07-06T18:41:07.280Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -136,5 +136,9 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 李辈滨 and 杜少雷.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-06T18:41:08.480Z
+    transcript_job_id: 543638a9c8e048a094a4a0f88dd93fb6,1e625eb6507545df83bb3388ddb11895,5a192c01567e40258ca000055d0dc6f9,56beb87c74254e01a746612eeedb4da6,97ac91527f294f4a8499e9d868878ab3
+    transcript_completed_at: 2026-07-06T18:43:48.990Z

@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-06T04:35:01.831Z
+refreshed_at: 2026-07-06T18:41:07.213Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 106
-done: 0
+done: 1
 pending: 7
-needs_transcript: 99
+needs_transcript: 98
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -105,8 +105,12 @@ episodes:
       📉 32:18 Chalom says Michael Saylor is in a pickle over Strategy's preferred stock drama
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-06T18:43:49.442Z
+    transcript_job_id: 7b669d9d37c34a0a86bf167a53681646,fcaca3ee1674464093c718be6329d019,f1bce04630d84cd0a0a29b1f7cdc01fe
+    transcript_completed_at: 2026-07-06T18:45:09.936Z
   - id: 0e367a04-7705-11f1-96da-e711106d9b25
     guid: 0e367a04-7705-11f1-96da-e711106d9b25
     title: "How One ENS Vote Reignited the DAO Governance Debate: Uneasy Money"
@@ -4351,8 +4355,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -6114,8 +6117,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

@@ -1,13 +1,13 @@
 source: flirting-with-models
-refreshed_at: 2026-07-06T04:35:01.889Z
+refreshed_at: 2026-07-06T18:41:07.270Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 2
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 2
 downloaded: 0
 episodes:
   - id: 1431fb8e-f94d-4254-8cd7-295d196a88dd
@@ -20,8 +20,12 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/1431fb8e-f94d-4254-8cd7-295d196a88dd.mp3
     image: https://artwork.captivate.fm/f814eb93-aa54-4047-96d8-f8a05efbfd60/S3-FlirtingWithModels-with-Ben-Wellington-copy.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-06T18:43:49.184Z
+    transcript_error: "audio download failed: 404 Missing redirect URL"
+    transcript_completed_at: 2026-07-06T18:43:49.370Z
   - id: e6f25431-c85a-4181-8fd8-a099eb4da7f7
     guid: e6f25431-c85a-4181-8fd8-a099eb4da7f7
     title: "Peter Hecht – Portable Alpha: Solving the Funding Problem of Alternatives (S7E31)"

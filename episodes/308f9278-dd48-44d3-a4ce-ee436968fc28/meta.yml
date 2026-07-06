@@ -1,0 +1,33 @@
+id: 308f9278-dd48-44d3-a4ce-ee436968fc28
+source: sv101
+title: "E242｜最快半年AI跑通自进化？与陈天桥首席科学家聊聊硅谷模型必争之地"
+guest: "Simon Du（杜少雷）、李贝宾"
+guest_role: "ApoDex 首席科学家"
+published: 2026-07
+duration: 1h11m
+url: https://sv101.fireside.fm/255
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+status: generated
+tags:
+  - ai-research
+  - coding-agents
+  - startup
+  - interview
+  - researcher
+  - deep-dive
+  - technical
+summary: |
+  硅谷101泓君访谈ApoDex首席科学家Simon Du（杜少雷）与李贝宾，深入探讨2026年硅谷最热的模型方向——递归自我提升（RSI）。
+  从Anthropic承认80%代码由AI自写说起，两位研究员详解了编码能力如何成为自进化的底座、验证（Verification）为何是Apodex的核心竞争力、
+  Discovery Model与Generative Model的本质区别，以及"品味"为何是顶级科学家与AI之间最关键的分水岭。贝宾更给出了惊人判断：最快半年内RSI闭环就能跑通第一环。
+core_ideas:
+  - RSI（递归自我提升）并非新概念，但2026年因模型长程任务能力质变而爆发；Anthropic 80%代码由Claude自写是标志性事件
+  - 编码能力是自进化的底座——数据、基础架构、算法三件事都高度依赖写代码；编码中的归纳演绎逻辑可泛化到其他领域
+  - Apodex的名字源自希腊语"证明"，验证（Verification）是其核心差异化能力；Agent Team架构（求解与验证分离+冗余+全局判断）优于单Agent
+  - 递归漂移（Recursive Drift）是自进化最大风险——推理错误会逐代累积；需要从10%漂移降到0.1%以下
+  - '后训练自进化闭环：自我诊断→制造训练配方→自我训练→验证→循环；脚手架与后训练像"左脚右脚"互相促进'
+  - Discovery Model的目标不是从已知找答案，而是提出人类未想到的假设并自己验证——"大胆假设，小心求证"
+  - 品味是区分灌水型研究与突破型研究的关键——顶级科学家不是看paper数量而是看最好的paper质量
+  - 陈天桥的战略专注：不做聊天、不做视频生成，只做Heavy Duty Solver；亲自撰写模型宪法，与顶级科学家对齐培养AI品味
+article_path: episodes/308f9278-dd48-44d3-a4ce-ee436968fc28/article.html
+base: /episodes/308f9278-dd48-44d3-a4ce-ee436968fc28/

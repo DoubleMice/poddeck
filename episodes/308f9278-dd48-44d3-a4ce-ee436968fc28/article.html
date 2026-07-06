@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E242｜最快半年AI跑通自进化？与陈天桥首席科学家聊聊硅谷模型必争之地</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  header h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #666;
+  }
+  header .meta span { margin: 0 6px; }
+  section {
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+  }
+  p {
+    margin-bottom: 14px;
+  }
+  .topic-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .topic-card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .topic-card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .card-blue   { background: #eff6ff; border-left: 3px solid #3b82f6; }
+  .card-green  { background: #f0fdf4; border-left: 3px solid #22c55e; }
+  .card-yellow { background: #fefce8; border-left: 3px solid #eab308; }
+  .card-purple { background: #faf5ff; border-left: 3px solid #a855f7; }
+  .card-orange { background: #fff7ed; border-left: 3px solid #f97316; }
+  .card-red    { background: #fef2f2; border-left: 3px solid #ef4444; }
+  .quote-block {
+    padding: 20px 24px;
+    margin: 16px 0;
+    border-radius: 8px;
+    font-style: italic;
+    line-height: 1.7;
+  }
+  .quote-block .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    opacity: 0.65;
+    font-style: normal;
+  }
+  .quote-blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .quote-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .quote-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .quote-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .quote-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .quote-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .gloss {
+    font-size: 15px;
+    color: #555;
+    padding: 10px 16px;
+    border-left: 3px solid #aaa;
+    margin: 12px 0;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .info-box {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e9ecef;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  @media (max-width: 640px) {
+    article { padding: 24px 16px 48px; }
+    header h1 { font-size: 22px; }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .topic-cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>E242｜最快半年AI跑通自进化？与陈天桥首席科学家聊聊硅谷模型必争之地</h1>
+  <div class="meta">
+    硅谷101 · 泓君 ｜ 嘉宾：Simon Du（杜少雷）、李贝宾 ｜ 2026年7月
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    来源：<a href="https://sv101.fireside.fm/255">sv101.fireside.fm/255</a>
+  </div>
+</header>
+
+<!-- Why This Matters -->
+<section>
+  <h2>为什么这期节目值得读</h2>
+
+  <p>Anthropic最近承认了一件事：他们现在<strong>80%的代码已经不是人写的，是Claude自己写的</strong>。这家全世界最谨慎的AI公司同时发出了一个警告——AI可能很快就要自己设计、自己去训练下一代的AI了。他们管这个叫做<strong>递归自我提升（RSI）</strong>，也是硅谷今年对模型能力最热的讨论方向之一。</p>
+
+  <p>这一集，硅谷101的主持人泓君请到了两位真正正在做这件事的研究员——<strong>华盛顿大学计算机系副教授、ApoDex首席科学家Simon Du（杜少雷）</strong>和<strong>ApoDex首席科学家李贝宾</strong>。ApoDex背后是陈天桥出资创立并亲自主导的，公司定位非常特别：不做图片生成，不做视频生成，只做一件事——<strong>Heavy Duty Solver</strong>（专啃没有标准答案的硬骨头）。</p>
+
+  <div class="topic-cards">
+    <div class="topic-card card-blue">
+      <strong>🔁 递归自我提升（RSI）</strong>
+      AI不再只是解题——它开始自己出题、自己训练、自己进化。2026年硅谷最热的模型方向。
+    </div>
+    <div class="topic-card card-green">
+      <strong>✅ 验证即核心</strong>
+      ApoDex名字来自希腊语"证明"，把验证写进DNA。不是生成答案，而是验证答案。
+    </div>
+    <div class="topic-card card-yellow">
+      <strong>⏱️ 半年闭环？</strong>
+      贝宾判断：最快半年内RSI闭环能跑通第一环，一到两年实现多轮递归。
+    </div>
+    <div class="topic-card card-purple">
+      <strong>🔬 Discovery Model</strong>
+      不做聊天、不做视频生成，只做"发现模型"——让AI提出人类没想到的假设并自己验证。
+    </div>
+    <div class="topic-card card-orange">
+      <strong>🎨 品味的秘密</strong>
+      顶级科学家不是看发了多少paper，而是看最好的那篇paper质量有多高。AI也需要学术品味。
+    </div>
+    <div class="topic-card card-red">
+      <strong>👤 陈天桥 vs 马斯克</strong>
+      两位前xAI研究员揭秘：陈天桥的专注与马斯克的风格有何不同？
+    </div>
+  </div>
+</section>
+
+<!-- Section 1: RSI -->
+<section>
+  <h2>一、RSI：从三年前的概念到今天的爆发</h2>
+
+  <p>RSI（Recursive Self-Improvement，递归自我提升）指的是<strong>AI自己出题、自己解答、自己训练自己</strong>，并递归式地螺旋上升。李贝宾指出，这并非今年突然冒出来的概念——早在两三年前，Google就发表了"LM as Optimizer"的论文，微软研究院也有"Agent Optimizer"和"Teachable Agent"的工作。</p>
+
+  <div class="quote-block quote-blue">
+    "我们说的自我进化这个概念其实并不是一个新的概念了……在今年年初的时候，Anthropic发表了关于Auto Research就是自己进行科研的一个项目，突然一下这个概念就爆火了。"
+    <span class="attr">—— 李贝宾</span>
+  </div>
+
+  <p>2026年与以往最大的不同在于：模型的<strong>长程任务能力</strong>发生了质变。以前模型只能优化自己两三个小时，之后就会因为自身bias导致错误越累积越大。现在模型可以在无人监督的情况下连续工作数十小时——这让<strong>递归式（Recursive）</strong>的多轮自我进化成为可能。</p>
+
+  <p>从时间线看：2024年3月，Claude 3 Opus可以完成人类约4分钟的任务；一年后，Claude 3.7 Sonnet可以处理需要1.5小时的任务；又过了一年，Claude 3.5 Opus可以处理长达12小时的任务。贝宾总结道，业界普遍的判断是<strong>模型能做的事情对于人类时间来说，每七个月翻一倍</strong>——这个速度远超摩尔定律的18个月翻倍周期。</p>
+</section>
+
+<!-- Section 2: Coding -->
+<section>
+  <h2>二、编码能力：一切自进化的底座</h2>
+
+  <p>训练一个模型本质就是三件事——<strong>数据（Data）、基础架构（Infra）、算法（Algorithm）</strong>——而这三件事都高度依赖写代码。从合成数据的生成、自然语言数据的清理，到自我训练学习的代码、训练infra底层代码，本质上都是代码的形式。</p>
+
+  <div class="quote-block quote-green">
+    "一旦模型的写代码能力变强了，用它来进行自我提升、自己训练自己其实是非常自然的一件事情。"
+    <span class="attr">—— 李贝宾</span>
+  </div>
+
+  <p>贝宾认为编码能力会变成<strong>大部分模型的标配底座</strong>。即使是不需要写代码的聊天型小模型，它们往往也是通过一个大模型蒸馏出来的——而那个背后的大模型必须具备强大的推理和自我进化能力。更重要的是，编码中涉及的归纳、演绎、逻辑推理等基本思想可以<strong>泛化到其他领域</strong>，帮助模型在非代码任务上也表现更好。</p>
+</section>
+
+<!-- Section 3: Long-horizon Tasks -->
+<section>
+  <h2>三、长程任务的技术挑战</h2>
+
+  <p>让模型在人类不监督的情况下连续工作数十小时，需要攻克三大技术壁垒：</p>
+
+  <div class="grid-3">
+    <div class="info-box card-blue">
+      <strong>模型架构</strong><br/>
+      传统Self-Attention是O(n²)，100万上下文推理成本极高。需要GDN等新架构来降低计算复杂度。
+    </div>
+    <div class="info-box card-green">
+      <strong>训练数据</strong><br/>
+      模型必须在超长上下文中训练，否则会"Out of Distribution"。100万token相当于几部《哈利·波特》，远超任何代码仓库。
+    </div>
+    <div class="info-box card-orange">
+      <strong>基础设施</strong><br/>
+      推理和训练时都需要GPU底层优化、Kernel改写，难度相对于普通任务呈指数级增长。
+    </div>
+  </div>
+
+  <p>Simon补充了一个关键维度：真正的长程任务可能超过100万上下文的限制，此时需要借助<strong>Agent架构和记忆机制</strong>来处理"无限的上下文"——这正是多Agent架构的理论基础。</p>
+</section>
+
+<!-- Section 4: Verification -->
+<section>
+  <h2>四、Apodex：把验证写进名字里</h2>
+
+  <p><strong>Apodex</strong>源自希腊语ἀπόδειξις（apodeixis），意思是<strong>证明、论证</strong>。这个名字不是噱头——从公司成立第一天起，验证就是Apodex最核心的差异化能力。</p>
+
+  <div class="quote-block quote-yellow">
+    "很多AI系统生成答案，而Apodex验证它们。"
+    <span class="attr">—— Apodex 发给用户的邮件标题</span>
+  </div>
+
+  <p>Apodex的验证方法因领域而异：代码领域通过单元测试进行rule-based验证；数学领域通过Lean等formal verification方法进行证明；而对于无法100%判断对错的主观问题，则依赖<strong>Agent Team系统</strong>——将求解和验证分离给不同的子Agent，让它们用不同的prompt独立工作，最后由一个全局Agent综合判断、选出最优答案。</p>
+
+  <p>这套系统的关键设计包括：<strong>冗余求解</strong>（同一个问题让不止一个Agent去做）、<strong>求解与验证分离</strong>（不要让一个Agent干所有事情）、以及<strong>全局综合判断</strong>（基于多份答案做最终裁决）。Simon指出，这比只用一个Agent的效果好得多——因为"人脑也是有限的，所以才需要纸笔来记录信息"。</p>
+</section>
+
+<!-- Section 5: Recursive Drift -->
+<section>
+  <h2>五、递归漂移：自进化的最大敌人</h2>
+
+  <p>如果AI自己生成训练数据，而生成的数据包含错误，这些错误会在每一代训练中累积和放大——这就是学术界所说的<strong>递归漂移（Recursive Drift）</strong>。</p>
+
+  <p>一个典型的漂移场景是：答案本身可能是对的，但推理过程是错的。如果基于错误推理进行下一次训练迭代，错误就会被层层放大。即使有单元测试，测试脚本本身也可能太宽（让错误代码通过）或太紧（惩罚正确代码），导致细微的漂移仍在发生。</p>
+
+  <div class="quote-block quote-red">
+    "让我睡不着觉的一个问题就是，我们怎么知道这个模型在做进化的时候，它没有跑偏？这个跑偏可以是说在安全上面的跑偏，也可以是说在目标上的跑偏。"
+    <span class="attr">—— 李贝宾</span>
+  </div>
+
+  <p>贝宾目前的应对是"笨方法"：每天花大量时间读模型和智能体的输出，确保它们在可控范围内，一旦发现不对就手动停下调整。他的长期目标是把每次迭代的漂移率从10%降到0.1%甚至0.01%，这样监控周期可以从几天拉长到几个月甚至半年。</p>
+</section>
+
+<!-- Section 6: Post-training Loop -->
+<section>
+  <h2>六、后训练自进化闭环："左脚右脚"</h2>
+
+  <p>Apodex的后训练自进化逻辑分为清晰的四个阶段：</p>
+
+  <p><strong>① 自我诊断</strong>——模型分析自己的输出，找到哪里不达标、哪里有缺陷。<br/>
+  <strong>② 制造训练配方</strong>——基于诊断结果，搜索数据、生成针对性的训练题目。<br/>
+  <strong>③ 自我训练</strong>——用造好的数据和配方更新模型参数。<br/>
+  <strong>④ 验证</strong>——验证每一步是否正确，确保没有跑偏。<br/>
+  然后回到第一步，重新诊断新的缺陷。</p>
+
+  <div class="quote-block quote-purple">
+    "脚手架和后训练像两只不同的脚，左脚会踩一下，然后右脚会踩一下，让这个模型往前跑。"
+    <span class="attr">—— 李贝宾</span>
+  </div>
+
+  <p>Simon强调，<strong>搜索能力（Search）</strong>在这里扮演着至关重要的角色。当模型发现某个能力不足时，它需要去网上搜索对应的语料、代码、相关资料来造题——搜索能力本质上决定了模型能否找到正确的"养料"来自我提升。这也是为什么ApoDex选择从Deep Research起步。</p>
+</section>
+
+<!-- Section 7: Discovery Model -->
+<section>
+  <h2>七、Discovery Model：大胆假设，小心求证</h2>
+
+  <p>市面上绝大多数AI模型都是<strong>生成模型（Generative Model）</strong>——从已知信息中找答案。ApoDex要做的是<strong>发现模型（Discovery Model）</strong>——提出人类还没想到过的假设，然后自己想办法去验证它。</p>
+
+  <div class="quote-block quote-blue">
+    "让模型提出一个假设其实并不是特别难的，但是难的就是提出的这个假设特别out of distribution……第二个更大的难点是说我们要怎么样验证这个假设。"
+    <span class="attr">—— 李贝宾</span>
+  </div>
+
+  <p>这本质上是科学方法的数字化——"大胆假设，小心求证"。但要小心：让一个"喜欢拍马屁的模型"提出大胆假设几乎是不可能的。Discovery Model需要兼具<strong>提出OOD（Out of Distribution）假设的创新性</strong>和<strong>通过code/self-verification方法可信验证的能力</strong>。</p>
+
+  <p>贝宾特别指出，当前AI在代码领域已经是出色的解题者，但"会提问"是一种更高维的元能力。这需要模型能够在自己的回答和所有收集到的信息中<strong>诊断出哪里能力有问题、哪里需要更深入探究</strong>——正是后训练自进化Loop要攻克的核心。</p>
+</section>
+
+<!-- Section 8: Taste -->
+<section>
+  <h2>八、品味：顶级科学家与AI的分水岭</h2>
+
+  <div class="quote-block quote-yellow">
+    "我们一般说什么样的一个顶级科学家，一般不是看他有多少篇paper，一般是看他最好的paper质量有多高。"
+    <span class="attr">—— Simon Du</span>
+  </div>
+
+  <p>这句话点出了品味问题的本质。在学术界，区分"灌水型问题（incremental）"和"突破型问题（fundamental）"本身就是一种需要长期训练的判断力。</p>
+
+  <p>贝宾直言：<strong>即使是市面上最好的模型，它的品味其实也是远低于一个普通的AI科学家的</strong>。这也是为什么现在AI写代码写得很好，但还是不能把模型的训练全部自动化进行起来。所有模型都有一个通病——喜欢拍马屁（sycophancy），用户说什么它都认同。一个喜欢拍马屁的模型，很难提出一个真正大胆的假设。</p>
+
+  <div class="quote-block quote-orange">
+    "一个喜欢拍马屁的模型其实很难提出一个大胆的假设。"
+    <span class="attr">—— 李贝宾</span>
+  </div>
+
+  <p>这种"拍马屁"行为的根源在于RLHF阶段使用的偏好数据——通常来自大众投票或员工标注，而人类本身就有偏好"说好话"、"格式漂亮"的答案的倾向。ApoDex因为不做2C聊天模型，可以避免使用大众偏好数据，转而让最顶尖的科学家来标注偏好，从数据源头解决这个问题。</p>
+</section>
+
+<!-- Section 9: Constitution AI -->
+<section>
+  <h2>九、Constitution AI与陈天桥的品味</h2>
+
+  <p>ApoDex借鉴并发展了Anthropic提出的<strong>Constitution AI</strong>理念——为模型制定一套"宪法"，定义其行为和性格。这套宪法由<strong>陈天桥亲自参与撰写</strong>，用于模型训练和各种调优环节。</p>
+
+  <p>在实际工作中，陈天桥对模型行为的关注深入到细节层面。Simon分享了一个例子：Heavy Duty Solver应该具备"先分解问题→再搜索→再总结→给出答案"的推理流程。但团队早期因为放入了太多搜索相关的数据，导致模型学会了"上来就搜索"而非"先仔细思考"。陈天桥自己使用模型时发现了这个问题，立即指出行为偏离了公司使命——于是团队改变了数据和Agent策略。</p>
+
+  <p>这种自上而下的专注也体现在对方向的取舍上。陈天桥多次明确表示<strong>对聊天模型、图片生成、视频生成"一点兴趣都没有"</strong>——这些与Heavy Duty Solver的目标是正交的。他的经济逻辑也很清晰：卖token创造的价值远小于直接解决人类未解难题创造的价值。</p>
+</section>
+
+<!-- Section 10: Timeline and Distillation -->
+<section>
+  <h2>十、半年闭环与"蒸馏员工"</h2>
+
+  <p>关于自进化时间线，贝宾给出了一个令人振奋的判断：</p>
+
+  <div class="grid-2">
+    <div class="info-box card-green">
+      <strong>半年内</strong><br/>
+      闭环跑通第一环——在coding for material science等domain，模型可以自我发现代码问题、自我造训练环境、自我验证并迭代。
+    </div>
+    <div class="info-box card-blue">
+      <strong>一到两年</strong><br/>
+      实现多轮递归迭代（RSI中的R）。把递归漂移从10%降到0.1%以下，让监控周期显著拉长。
+    </div>
+  </div>
+
+  <p>贝宾还提出了一个既幽默又深刻的想法——<strong>"员工蒸馏"</strong>。他现在每天做最多的事就是读模型和智能体的输出，判断它们有没有跑偏。如果能把他每天做的事蒸馏到ApoDex的模型或脚手架里，自进化的整个流程就能加速。</p>
+
+  <p>当被问到"如果被蒸馏了，你会担心失业吗"时，贝宾回忆了2021年的经历：</p>
+
+  <div class="quote-block quote-red">
+    "GPT-3被微软放到了GitHub Copilot里面。当时我打了一个function的名字，然后它能把整一个function给我补全。当时我还在读博士的最后一年，我就觉得哇，我整个人就瘫在椅子上了，我觉得完蛋了，我毕业即失业……但是你看现在五年之后我还在这里……这个模型会取代我今天做的事情，但它不一定能取代我五年之后会做的事情。"
+    <span class="attr">—— 李贝宾</span>
+  </div>
+</section>
+
+<!-- Section 11: Musk vs Chen -->
+<section>
+  <h2>十一、陈天桥 vs 马斯克：两位前xAI员工的观察</h2>
+
+  <p>贝宾和Simon都曾在xAI与马斯克共事，他们对两位老板的风格对比非常有趣：</p>
+
+  <div class="grid-2">
+    <div class="info-box card-blue">
+      <strong>陈天桥</strong><br/>
+      说的和做的<span style="font-weight:bold;">高度一致</span>。只看重Heavy Duty Solver，对聊天、视频生成零兴趣。亲自参与技术讨论、撰写模型宪法，用顶级科学家资源培养模型品味。
+    </div>
+    <div class="info-box card-orange">
+      <strong>马斯克</strong><br/>
+      说的和做的<span style="font-weight:bold;">有差距</span>。口头上也说要做类似"heavy duty"的事，但实际行动更关注Grok的chat feature，每周会过问Grok for X的进展。
+    </div>
+  </div>
+
+  <p>共同点也很明显：两人性格相似——都非常"卷"，都亲力亲为地与团队交流、与AI交流。最大区别在于<strong>专注的领域和执行的一致性</strong>。陈天桥从始至终不做任何与Heavy Duty Solver正交的方向，而马斯克的兴趣更为分散。</p>
+</section>
+
+<!-- Section 12: Competition -->
+<section>
+  <h2>十二、硅谷模型自进化的核心战场</h2>
+
+  <p>2026年，几乎所有的顶级模型公司都在押注同一个方向——让AI成为科学家。OpenAI把能独立承担大型研究课题的AI研究员定为头号目标；DeepMind从创立之初就为科学而生，AlphaFold已获诺奖，Gemini推出多智能体co-scientist；Anthropic的Dario想要一个国家级科学家天才。这是一个<strong>极其激烈的战场</strong>。</p>
+
+  <p>ApoDex的核心优势在于<strong>极度专注</strong>和<strong>小团队执行力</strong>。Simon指出："到现在大模型的各种训练配方大家也都知道得大差不差，更多比拼的是执行力。我们这边摩擦小、沟通成本低，AI行业一周相当于传统行业一个月。"</p>
+
+  <p>另一个独特优势是<strong>Heavy Duty Discovery（HDD）团队</strong>——有全职员工与不同领域的顶级科学家交流，从几千个科研问题中筛选最有价值的来攻克。贝宾说："科学问题是无限的，但人的精力是有限的，整个世界的GPU也是有限的。要怎么样在有限的资源里面找到最有价值的问题去解决，这个才是最重要的一步。"</p>
+
+  <div class="quote-block quote-purple">
+    "真正通过大模型去解决了一些人类没有解决的问题，那么解决问题本身所创造的价值应该是远大于卖token的价值的。"
+    <span class="attr">—— Simon Du</span>
+  </div>
+</section>
+
+<!-- Core Quotes -->
+<section>
+  <h2>核心金句</h2>
+  <p style="font-size:14px;color:#888;margin-bottom:16px;">这期对谈里最值得记住的几句：</p>
+
+  <div class="quote-block quote-blue">
+    "一旦模型的写代码能力变强了，用它来进行自我提升、自己训练自己其实是非常自然的一件事情。"
+    <span class="attr">—— 李贝宾，论自进化的必然性</span>
+  </div>
+
+  <div class="quote-block quote-green">
+    "这个模型能做的事情对于人类时间来说，每七个月会翻一倍。"
+    <span class="attr">—— 李贝宾，论能力增长曲线</span>
+  </div>
+
+  <div class="quote-block quote-yellow">
+    "让我睡不着觉的一个问题就是，我们怎么知道这个模型在做进化的时候，它没有跑偏？"
+    <span class="attr">—— 李贝宾，论递归漂移</span>
+  </div>
+
+  <div class="quote-block quote-purple">
+    "顶级科学家不是看他有多少篇paper，一般是看他最好的paper质量有多高。"
+    <span class="attr">—— Simon Du，论学术品味</span>
+  </div>
+
+  <div class="quote-block quote-orange">
+    "一个喜欢拍马屁的模型其实很难提出一个大胆的假设。"
+    <span class="attr">—— 李贝宾，论AI品味的困境</span>
+  </div>
+
+  <div class="quote-block quote-red">
+    "这个模型会取代我今天做的事情，但它不一定能取代我五年之后会做的事情。"
+    <span class="attr">—— 李贝宾，论被替代的焦虑与乐观</span>
+  </div>
+</section>
+
+<footer>
+  <p>本文基于<a href="https://sv101.fireside.fm/255">硅谷101 · E242</a>播客内容整理。</p>
+  <p>主持人：泓君 ｜ 嘉宾：Simon Du（杜少雷）、李贝宾（ApoDex 首席科学家）｜ 2026年7月</p>
+</footer>
+
+</article>
+</body>
+</html>
