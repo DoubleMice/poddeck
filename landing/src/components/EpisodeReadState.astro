@@ -1,0 +1,114 @@
+<style is:global>
+  .episode-card.is-read {
+    border-color: #e7e5e4;
+    background: #fafaf9;
+  }
+
+  .episode-card.is-read img {
+    filter: saturate(0.72);
+    opacity: 0.82;
+  }
+
+  .episode-card.is-read h3,
+  .episode-card.is-read p {
+    color: #78716c;
+  }
+
+  .read-toggle[aria-pressed="true"] {
+    background: #1c1917;
+    border-color: #1c1917;
+    color: #fff;
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    if (window.__poddeckReadStateReady) return
+    window.__poddeckReadStateReady = true
+
+    const storageKey = 'poddeck:readEpisodes:v1'
+
+    const loadStore = () => {
+      try {
+        const value = JSON.parse(localStorage.getItem(storageKey) || '{}')
+        return value && typeof value === 'object' && !Array.isArray(value) ? value : {}
+      } catch {
+        return {}
+      }
+    }
+
+    const saveStore = (store) => {
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(store))
+      } catch {
+        // Ignore storage quota / privacy-mode failures; the page still works.
+      }
+    }
+
+    const applyCardState = (card, isRead) => {
+      card.classList.toggle('is-read', isRead)
+
+      const badge = card.querySelector('[data-read-badge]')
+      if (badge) badge.classList.toggle('hidden', !isRead)
+
+      const button = card.querySelector('[data-read-toggle]')
+      if (button) {
+        button.setAttribute('aria-pressed', String(isRead))
+        button.setAttribute('title', isRead ? '标为未读' : '标为已读')
+      }
+
+      const label = card.querySelector('[data-read-toggle-label]')
+      if (label) label.textContent = isRead ? '已读' : '标为已读'
+    }
+
+    const syncCards = () => {
+      const store = loadStore()
+      document.querySelectorAll('[data-episode-card][data-episode-id]').forEach((card) => {
+        const id = card.getAttribute('data-episode-id')
+        applyCardState(card, Boolean(id && store[id]))
+      })
+    }
+
+    const setRead = (id, isRead) => {
+      if (!id) return
+      const store = loadStore()
+      if (isRead) {
+        store[id] = new Date().toISOString()
+      } else {
+        delete store[id]
+      }
+      saveStore(store)
+      syncCards()
+    }
+
+    document.addEventListener('click', (event) => {
+      if (!(event.target instanceof Element)) return
+
+      const toggle = event.target.closest('[data-read-toggle]')
+      if (toggle) {
+        event.preventDefault()
+        const card = toggle.closest('[data-episode-card][data-episode-id]')
+        const id = card?.getAttribute('data-episode-id')
+        const isRead = toggle.getAttribute('aria-pressed') === 'true'
+        setRead(id, !isRead)
+        return
+      }
+
+      const link = event.target.closest('[data-mark-read-link]')
+      if (link) {
+        const card = link.closest('[data-episode-card][data-episode-id]')
+        setRead(card?.getAttribute('data-episode-id'), true)
+      }
+    })
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', syncCards, { once: true })
+    } else {
+      syncCards()
+    }
+
+    window.addEventListener('storage', (event) => {
+      if (event.key === storageKey) syncCards()
+    })
+  })()
+</script>

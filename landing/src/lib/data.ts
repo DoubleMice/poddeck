@@ -24,6 +24,7 @@ export interface EpisodeMeta {
   guest?: string
   guest_role?: string
   published?: string
+  published_sort?: string
   duration?: string
   url: string
   thumbnail?: string
@@ -45,6 +46,34 @@ export function getAvailableFormats(ep: EpisodeWithSource): ContentFormat[] {
   if (ep.status === 'generated') formats.push('slides')
   if (ep.article_path) formats.push('article')
   return formats
+}
+
+export function episodePublishedTime(ep: Pick<EpisodeMeta, 'published' | 'published_sort'>): number {
+  const value = String(ep.published_sort || ep.published || '').trim()
+  if (!value) return 0
+
+  const compactDate = value.match(/^(\d{4})(\d{2})(\d{2})$/)
+  if (compactDate) {
+    const [, year, month, day] = compactDate
+    return Date.UTC(Number(year), Number(month) - 1, Number(day))
+  }
+
+  const monthDate = value.match(/^(\d{4})-(\d{2})$/)
+  if (monthDate) {
+    const [, year, month] = monthDate
+    return Date.UTC(Number(year), Number(month) - 1, 1)
+  }
+
+  const parsed = Date.parse(value)
+  return Number.isFinite(parsed) ? parsed : 0
+}
+
+export function sortEpisodesByPublishedDesc<T extends Pick<EpisodeMeta, 'id' | 'published' | 'published_sort' | 'title'>>(episodes: T[]): T[] {
+  return [...episodes].sort((a, b) => {
+    const byPublished = episodePublishedTime(b) - episodePublishedTime(a)
+    if (byPublished !== 0) return byPublished
+    return `${b.title}:${b.id}`.localeCompare(`${a.title}:${a.id}`)
+  })
 }
 
 function resolveArticlePath(meta: EpisodeMeta): string | undefined {
@@ -139,10 +168,54 @@ function loadPlanMaps(): {
   return { categoryMap }
 }
 
+function titleKey(source: string | undefined, title: string | undefined): string | undefined {
+  const normalized = String(title ?? '').trim().replace(/\s+/g, ' ').toLowerCase()
+  return source && normalized ? `${source}:${normalized}` : undefined
+}
+
+function loadScanCacheMaps(): {
+  publishedMap: Record<string, { published?: string; published_sort?: string }>
+  publishedTitleMap: Record<string, { published?: string; published_sort?: string }>
+} {
+  const cacheDir = resolve(PROJECT_ROOT, 'data/scan-cache')
+  const publishedMap: Record<string, { published?: string; published_sort?: string }> = {}
+  const publishedTitleMap: Record<string, { published?: string; published_sort?: string }> = {}
+  if (!existsSync(cacheDir)) return { publishedMap, publishedTitleMap }
+
+  for (const f of readdirSync(cacheDir).filter(f => f.endsWith('.jsonl'))) {
+    const source = f.replace(/\.jsonl$/, '')
+    const path = join(cacheDir, f)
+    for (const line of readFileSync(path, 'utf-8').split('\n')) {
+      if (!line.trim()) continue
+      try {
+        const ep = JSON.parse(line) as { id?: string; title?: string; published?: string; published_sort?: string }
+        if (ep.id && (ep.published_sort || ep.published)) {
+          publishedMap[ep.id] = {
+            published: ep.published,
+            published_sort: ep.published_sort,
+          }
+        }
+        const key = titleKey(source, ep.title)
+        if (key && (ep.published_sort || ep.published)) {
+          publishedTitleMap[key] = {
+            published: ep.published,
+            published_sort: ep.published_sort,
+          }
+        }
+      } catch {
+        // Keep landing builds tolerant of a stale or partially written cache line.
+      }
+    }
+  }
+
+  return { publishedMap, publishedTitleMap }
+}
+
 export function loadEpisodes(): EpisodeWithSource[] {
   const sources = loadSources()
   const sourceMap = Object.fromEntries(sources.map(s => [s.id, s]))
   const { categoryMap } = loadPlanMaps()
+  const { publishedMap, publishedTitleMap } = loadScanCacheMaps()
 
   // Prefer per-episode meta.yml (has richest info). Fall back to episodes.yml.
   const episodesDir = resolve(PROJECT_ROOT, 'episodes')
@@ -157,8 +230,11 @@ export function loadEpisodes(): EpisodeWithSource[] {
       const metaPath = join(epDir, 'meta.yml')
       if (!existsSync(metaPath)) continue
       const meta = readYaml<EpisodeMeta>(metaPath)
+      const cacheMeta = publishedMap[meta.id] || publishedTitleMap[titleKey(meta.source, meta.title) || '']
       meta.base = meta.base || `/episodes/${meta.id}/`
       meta.category = meta.category || categoryMap[meta.id]
+      meta.published_sort = meta.published_sort || cacheMeta?.published_sort
+      meta.published = meta.published || cacheMeta?.published
       meta.article_path = resolveArticlePath(meta)
       if (meta.status === 'generated') {
         meta.generated_sort = episodeGeneratedTime(meta.id)
@@ -193,6 +269,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
           source: plan.source,
           title: ep.title,
           published: ep.published_sort || ep.published,
+          published_sort: ep.published_sort,
           duration: ep.duration ? `${Math.round(ep.duration / 60)}m` : undefined,
           url: ep.url,
           thumbnail: ep.image,
