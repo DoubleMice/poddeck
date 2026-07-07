@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-07T04:27:22.465Z
+refreshed_at: 2026-07-07T18:44:08.360Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 105
-done: 0
+done: 2
 pending: 7
-needs_transcript: 98
+needs_transcript: 96
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -108,8 +108,12 @@ episodes:
       🎤 01:13:31 Taylor asks Nick and Alex point blank: why are you still here?
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-07T18:44:09.905Z
+    transcript_job_id: 4869ef13140c409689e22abc8b17c201,7aaf16efc4794e3a96b4b9de43755f2b,b0a0eb1f32db4b9daed2a7c98810cfc2,8c8f8a1b400a43b4a40071e3f8355fcf,20148a177bd048bb8e0cce0e16612683,366feac2e320499399cd9a5c1ae9e9bc
+    transcript_completed_at: 2026-07-07T18:48:15.016Z
   - id: fe13fbd2-763d-11f1-8ec3-27a0eaebf3c5
     guid: fe13fbd2-763d-11f1-8ec3-27a0eaebf3c5
     title: "Why Authorities Can't Freeze Crypto Fast Enough: DEX in the City"
@@ -197,8 +201,12 @@ episodes:
       🇪🇺 47:48 Why MiCA's transition deadline is the week's crypto good news
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-07T18:48:15.206Z
+    transcript_job_id: 8d901ee670db46aabb9ce0f47eee969b,dc5894365fe149a58d6c1725ce032704,0111b4b8d7734230afe28d6875b43811,72514ad0d7ef45809a3b8740c2434f4b
+    transcript_completed_at: 2026-07-07T18:50:09.582Z
   - id: 0a65241a-75ad-11f1-a248-db78c786b739
     guid: 0a65241a-75ad-11f1-a248-db78c786b739
     title: "The Chopping Block: Visa, Mastercard & 140 Firms Take On Circle, Saylor’s Digital Credit Reset & the DAO
@@ -4254,8 +4262,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -6017,8 +6024,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

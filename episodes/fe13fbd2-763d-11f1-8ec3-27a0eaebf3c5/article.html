@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>为什么监管追不上链上资金？— DEX in the City</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafbfc;
+    padding: 2rem 1rem;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+  header h1 {
+    font-size: 2rem;
+    line-height: 1.35;
+    margin-bottom: 0.75rem;
+    color: #0d1117;
+  }
+  header .meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  header .meta span { margin: 0 0.5rem; }
+  .topic-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .topic-card {
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+  .topic-card strong { display: block; margin-bottom: 0.35rem; font-size: 0.95rem; }
+  .card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-red { background: #fff0f0; border-left: 4px solid #e03131; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f59f00; }
+  .card-purple { background: #f3f0ff; border-left: 4px solid #7950f2; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  section { margin-bottom: 2.5rem; }
+  section h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    color: #0d1117;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #e9ecef;
+  }
+  section p { margin-bottom: 0.9rem; }
+  .highlight-box {
+    padding: 1.2rem 1.4rem;
+    border-radius: 8px;
+    margin: 1.25rem 0;
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+  .box-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .box-red { background: #fff0f0; border-left: 4px solid #e03131; }
+  .box-yellow { background: #fff9db; border-left: 4px solid #f59f00; }
+  .box-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .box-purple { background: #f3f0ff; border-left: 4px solid #7950f2; }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .stat-card {
+    text-align: center;
+    padding: 1.2rem 0.8rem;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+  }
+  .stat-card .number { font-size: 2rem; font-weight: 700; margin-bottom: 0.25rem; }
+  .stat-card .label { font-size: 0.85rem; opacity: 0.75; line-height: 1.4; }
+  .stat-red { background: #fff0f0; border-color: #ffc9c9; }
+  .stat-red .number { color: #e03131; }
+  .stat-yellow { background: #fff9db; border-color: #ffe082; }
+  .stat-yellow .number { color: #e8590c; }
+  .stat-orange { background: #fff4e6; border-color: #ffd8a8; }
+  .stat-orange .number { color: #d9480f; }
+  .quotes-section { margin-top: 3rem; }
+  .quote-block {
+    padding: 1.2rem 1.4rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-style: italic;
+    line-height: 1.65;
+  }
+  .quote-block .attribution {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+    font-style: normal;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #868e96;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .gloss {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-style: italic;
+  }
+  @media (max-width: 640px) {
+    .topic-cards { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>为什么监管追不上链上资金？</h1>
+  <div class="meta">
+    Unchained — DEX in the City<span>·</span>2026 年 7 月
+  </div>
+  <div class="meta" style="margin-top:0.3rem;">
+    主持：KK · Jesse（前联邦检察官，现 Ribbit Capital）· V（前 SEC）
+  </div>
+</header>
+
+<div class="topic-cards">
+  <div class="topic-card card-blue">
+    <strong>SEC & CFTC 联合推进保证金改革</strong>
+    两个长期互不沟通的金融监管机构罕见联手，统一证券与商品的投资组合保证金规则，加密衍生品市场面临重大变化。
+  </div>
+  <div class="topic-card card-red">
+    <strong>稳定币冻结可被 Front-Run</strong>
+    一篇来自中国大学研究者的论文揭示：制裁执行在链上是交易排序竞赛，冻结指令本身可以被抢先交易绕过。
+  </div>
+  <div class="topic-card card-yellow">
+    <strong>AI 出口管制扩展到访问控制</strong>
+    法律科技公司 Legion 起诉美国政府：政府不再管代码能不能发布，转而控制谁可以登录使用——这对加密行业意味着什么？
+  </div>
+  <div class="topic-card card-purple">
+    <strong>第三方原则与 AI 隐私边界</strong>
+    第四修正案本该保护你免受无搜查令的搜查，但"第三方原则"让 AI 聊天记录成为执法机构的合法猎物。
+  </div>
+  <div class="topic-card card-orange">
+    <strong>CLARITY 法案的意外障碍</strong>
+    加密市场结构法案在参议院搁浅——不是因为加密本身，而是因为 CBDC 禁令、住房法案和总统的政治博弈。
+  </div>
+  <div class="topic-card card-green">
+    <strong>MiCA 过渡期结束</strong>
+    欧盟用单一牌照框架替代 27 国碎片化监管，证明了"可预测的规则有时比完美的规则更好"。
+  </div>
+</div>
+
+<section>
+  <h2>1. SEC 与 CFTC 联手推进保证金改革</h2>
+
+  <p>本期节目的第一个话题看起来完全是传统金融领域的事，但它对整个加密衍生品市场和机构交易者有着深远的影响。SEC 与 CFTC 联合发布了一份公开征求意见稿，目标是统一证券与商品的投资组合保证金（portfolio margining）规则。市场参与者有 90 天时间提交反馈。</p>
+
+  <div class="highlight-box box-blue">
+    <strong>背景问题</strong>：长期以来，证券和衍生品（部分属于商品）由 SEC 和 CFTC 分别监管。这意味着交易者如果同时持有两类资产，需要为跨市场的风险敞口缴纳超出实际需要的保证金——资金被锁定在两个独立池子里，无法有效利用。
+  </div>
+
+  <p>推动这一改革的关键事件是美国国债的中央清算 mandate——该规定将于 2026 年底生效，届时大量此前无需通过中央清算的国债交易将被强制推入清算所，整个保证金体系将发生系统性变化。此前在 2020 年，两机构曾做过类似的联合征求意见，收到了大量反馈但最终不了了之。这次重启努力本身就是一个积极信号。</p>
+
+  <p>KK 在节目中解释了这对加密行业的意义：近期永续合约（perps）等加密衍生品的产品审批持续推进，而代币化国债等资产本质上具有与底层资产相同的监管属性——SEC 的国债清算 mandate 同样适用于代币化版本。正如 Ondo Finance 和 Maple Finance 在 2023 年率先验证的那样，代币化资产已经成为加密与 TradFi 的桥梁。</p>
+</section>
+
+<section>
+  <h2>2. 代币化资产：同样的资产，同样的规则</h2>
+
+  <p>V 在节目中提出了一个关键观察：投资组合保证金的 harmonization 实际上是为未来做好了准备。如果各种类型的资产——无论传统分类是证券、商品还是其他——都以数字资产形式存在，都可以被代币化，那么它们可能在同一交易场所、同一平台上流通。提前统一保证金框架，实际上是为这个未来铺路。</p>
+
+  <div class="highlight-box box-green">
+    KK 将这一变革称为"一次重要的解锁"，尤其是对机构交易者而言。当散户还在关注加密推特上那些耸人听闻的标题时，真正的结构性变化正在通过这类听起来"非常不加密"的规则制定过程悄然发生。
+  </div>
+
+  <p>三位主持人对两机构目前的关系状态做了一番生动的描述。KK 开玩笑说 SEC 和 CFTC 现在是"besties"（闺蜜），历史上一度是"straight up enemies"（纯粹的敌人）——三位主持人都有切身体会，知道金融监管机构之间曾经几乎不沟通。如今它们正在协调合作，这对更广泛的市场结构效率而言是一件好事。</p>
+</section>
+
+<section>
+  <h2>3. "排序权即制裁权"：一篇颠覆认知的论文</h2>
+
+  <p>本期节目最具冲击力的部分来自 V 对一篇学术论文的介绍。论文标题是《Ordering Power is Sanctioning Power》（排序权即制裁权），由来自多所中国大学的研究者合著。</p>
+
+  <div class="highlight-box box-red">
+    <strong>核心洞见</strong>：稳定币发行方（Tether、Circle）的"冻结"操作，本质上是链上的一笔交易，而不是即时生效的指令。它必须像任何其他交易一样被提交、竞争区块空间、由构建者和验证者排序后被打包进区块。在传统金融中，银行可以直接控制自己的账本——冻结账户是即时的、不可逆的。但在区块链上，冻结交易本身要参与排序竞赛。
+  </div>
+
+  <p>这一发现的含义远比表面看起来深刻。如果被制裁对象能够监控 mempool 中的待处理交易，他们就可以看到冻结交易即将到来，然后提交一笔 Gas 更高的转移交易——抢先把自己的资金转出。用 V 的话说："稳定币冻结本身可以被 front-run。想想看——这简直是最'加密'的事情了。"</p>
+
+  <p>Jesse 对此的反应极为坦诚。作为长期参与反洗钱和链上执法工作的人，她一直相信稳定币的冻结机制是向监管机构证明"这项技术至少和现有金融轨道一样好"的核心论据之一。但这篇论文让她意识到，这个论据可能建立在一个有缺陷的假设上。</p>
+</section>
+
+<section>
+  <h2>4. 令人警醒的数据</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card stat-red">
+      <div class="number">94%</div>
+      <div class="label">链上稳定币制裁由发行方自行发起（非政府机构指令）</div>
+    </div>
+    <div class="stat-card stat-yellow">
+      <div class="number">仅 9 次</div>
+      <div class="label">八年来成功在资金转移中途冻结的情况</div>
+    </div>
+    <div class="stat-card stat-orange">
+      <div class="number">7%</div>
+      <div class="label">被制裁地址在冻结到达时余额已归零</div>
+    </div>
+  </div>
+
+  <p>Jesse 强调，她并没有亲自验证论文中的所有数据，但这些数字已经足够令人不安。冻结机制确实阻止了数百万美元的不良资金流动，值得肯定。但它能实现的效果远远低于加密社区曾经以为的水平。</p>
+
+  <p>一个值得深思的问题：是不是因为发行方本身需要经过内部流程（等待法院命令等）导致反应太慢？V 的回答是否定的——根本原因不是流程，而是交易排序由独立的市场驱动层控制。这就是本质差距所在。这不是程序问题，是区块链底层架构的特征。</p>
+</section>
+
+<section>
+  <h2>5. MEV 超越交易：当排序影响执法</h2>
+
+  <p>V 在分析中做了重要的概念区分。MEV（最大可提取价值）在加密领域通常指的是矿工或验证者通过选择交易排序来获利的行为——front-running、三明治攻击、抢跑套利等等。但论文提出了一个新的概念："制裁 MEV"（sanctions MEV）。两者的共同点是：<strong>谁控制交易排序，谁就控制结果</strong>。不同的是，它的应用场景从获利扩展到了执法。</p>
+
+  <div class="highlight-box box-purple">
+    制裁执行由此变成了一个"市场结构问题"。MEV 过去是交易者关心的问题，现在它也是执法机构必须面对的问题。这不是一个法律漏洞——这是区块链底层设计的特征。链上的速度既是打击犯罪的阻力，也是区块链的核心吸引力之一。正如 KK 所说，这是一个无法回避的 trade-off。
+  </div>
+
+  <p>V 还提到了她的同事 Rebecca Redig 在 MEV 领域的学术贡献，指出不应将传统 MEV 与论文中的"制裁 MEV"混为一谈——MEV 本身是一个被多方位辩护的概念，而制裁场景下的排序问题则是全新的研究方向。</p>
+
+  <p>Jesse 补充了一个重要维度：美国宪法和正当程序的存在是有原因的。追求"更快冻结坏人资金"的冲动必须与宪法对个人权利的保护取得平衡。这不是加密独有的问题——所有加速的技术都面临同样的宪法张力，但加密的<strong>速度</strong>把这个问题推到了一个新的极端。</p>
+</section>
+
+<section>
+  <h2>6. Legion 起诉美国政府：AI 出口管制的边界</h2>
+
+  <p>Jesse 引入了一个看似与加密无关的故事，但她认为这是加密行业最应该关注的发展之一。一家名为 Legion 的法律科技创业公司正在起诉美国政府。该公司在加拿大有工程师团队，他们基于 Fable（Anthropic 的模型）构建了整套产品。当美国政府限制 Fable 的访问权限后，Legion 的工程师无法继续工作，业务陷入瘫痪。</p>
+
+  <div class="highlight-box box-red">
+    <strong>Legion 的核心论点</strong>：AI 模型权重的出口管制分类已于 2025 年被撤销。政府限制 Fable 的访问权限，但既不说明这一限制基于什么分类，也不提供充分的法律解释。更重要的是——没有人"接收"了模型权重、源代码或训练数据，他们只是登录、输入、获取输出。这根本不是"出口"。
+  </div>
+
+  <p>Jesse 将这一事件与加密行业历史上的 Tornado Cash 制裁案做了类比。核心问题是同一个：政府动用制裁和出口管制法的<strong>法律依据</strong>究竟是什么？</p>
+</section>
+
+<section>
+  <h2>7. Bernstein 案与"代码即言论"</h2>
+
+  <p>要理解 Legion 案和加密行业面临的风险，需要回顾一个里程碑式的判例：Bernstein v. US Dept. of State。</p>
+
+  <div class="highlight-box box-blue">
+    1990 年，加州大学伯克利分校的研究生 Daniel Bernstein 想发表自己编写的加密代码。美国政府以"加密属于武器"为由阻止。第九巡回上诉法院最终裁定：编写和发布代码受第一修正案保护。"代码即言论"的原则由此确立。
+  </div>
+
+  <p>对加密行业而言，Bernstein 案是开源协议、运行节点、发布智能合约的法律基石。在 Tornado Cash 的制裁抗辩中，这也是核心论点之一。但现在，Jesse 指出，政府正在尝试一种新策略——既然"代码发布"受第一修正案保护，那就换个角度：<strong>控制谁可以"登录并使用"已经发布的代码</strong>。</p>
+
+  <p class="gloss">作者概括：Bernstein 案解决的是"能不能发布代码"的问题，但没有解决"能不能控制谁登录使用已发布代码"的问题。政府正在利用这个法律空白，将出口管制从代码本身扩展到访问层——这从根本上改变了权力边界。</p>
+</section>
+
+<section>
+  <h2>8. 加密行业为何必须关注 AI 出口管制</h2>
+
+  <p>Jesse 在这部分的论述带有强烈的紧迫感。她的逻辑链条是这样的：</p>
+
+  <p>加密行业的运行依赖的不是协议本身，而是访问层——RPC 端点、跨链桥、稳定币轨道、GitHub 仓库、钱包前端。你不需要碰协议本身，只要关掉访问层，协议就形同虚设。这正是政府在 AI 领域尝试的做法——不控制代码，控制登录。如果这个法律逻辑成立，同样的逻辑可以直接应用到加密基础设施上。</p>
+
+  <div class="highlight-box box-yellow">
+    "我不能对每个人说：'用加密的金融轨道构建你的生活，用 Claude 提高你的效率'，然后又告诉他们：'这一切随时可能因为国家安全或出口管制被切断。'这根本说不通。"
+  </div>
+
+  <p>Jesse 坦言自己感到震惊的是，加密行业对这个问题关注度极低。"这是我们的战斗——come on, let's go."在她看来，加密行业历史上展现出了在关键时刻集体行动的能力，但前提是行业必须首先意识到威胁的真实性。</p>
+</section>
+
+<section>
+  <h2>9. 第四修正案与第三方原则</h2>
+
+  <p>从制裁 MEV 和 AI 出口管制，三位主持人自然过渡到了更深层的宪法问题。第四修正案（Fourth Amendment）禁止不合理的搜查与扣押，要求执法机构在大多数情况下必须先获得搜查令。这是美国宪法对个人隐私的基本保障。</p>
+
+  <p>但"第三方原则"（Third Party Doctrine）构成了一个重大的司法例外。它的核心逻辑是：当你<strong>自愿</strong>将信息分享给第三方时，你就失去了对该信息的合理隐私期望——即使你分享的目的有限。因为信息不是从你身上"搜"出来的，而是你自己交出去的，所以第四修正案不适用。</p>
+
+  <div class="highlight-box box-red">
+    <strong>实际后果</strong>：你在 ChatGPT 中输入的所有内容、你在 Gmail 中存储的所有邮件、你在 Claude 中进行的所有对话——在第三方原则下，执法机构从这些公司获取这些数据时，不需要搜查令。
+  </div>
+
+  <p>V 特别警告了第三方原则的扩张风险。最高法院近年来的判例实际上表现出限缩这一原则的倾向——这是正确的方向。随着 AI 技术的普及，迫使私人行为体协助执法的诱惑越来越大，但"扩大第三方原则可能引发根本性的宪法问题"。</p>
+</section>
+
+<section>
+  <h2>10. AI 聊天不是私密的</h2>
+
+  <p>Jesse 举了一个来自她检察官生涯的实例："我处理过儿童性虐待案件，我们通过搜查令获取了被告的 Google 搜索记录——'如何隐藏性虐待'之类的搜索关键词被作为犯罪意图的证据提交到法庭。"</p>
+
+  <p>但 AI 聊天比 Google 搜索更令人担忧，因为用户对两者的心理模型完全不同。Jesse 观察到："我认识有人用 ChatGPT 做心理治疗——讲的内容连治疗师都不会说。还有人把完整的个人病史、X 光报告输入 ChatGPT 让它解释。他们完全没意识到这些对话可以被用作法庭证据。"</p>
+
+  <div class="highlight-box box-yellow">
+    KK 的总结直白而有力："你输入电脑的任何东西都不是私密的。句号。每个称职的公司法务总监都会告诉员工：假设你在 Slack、邮件、聊天中说的每一句话都可能被法庭调取。公司设备上没有隐私。"
+  </div>
+
+  <p>V 补充了一个重要的法律细节：邮件内容需要搜查令才能获取（尽管存储在 Gmail 等第三方服务中），但 AI 聊天的法律地位尚不完全明确。随着判例法的发展，AI 聊天记录越来越多地出现在刑事和民事诉讼的证据列表中。</p>
+</section>
+
+<section>
+  <h2>11. CLARITY 法案：从希望到搁浅</h2>
+
+  <p>CLARITY 法案——美国综合加密市场结构立法——在今年 5 月经历了令人振奋的突破：参议院银行委员会在 markup 投票中以跨党派支持的方式将其正式推进，并列入参议院立法日程。加密行业一度看到曙光。</p>
+
+  <p>但正如 KK 指出的，列入立法日程与全院投票之间存在巨大的鸿沟。自 6 月初以来，CLARITY 没有任何进展。三个已知障碍包括：一些议员要求加入外汇条款；执法机构和劳工组织认为法案对打击非法金融力度不足；与稳定币相关的 Yiedl 妥协方案能否维持存在不确定性。</p>
+
+  <p>更关键的是时间窗口——随着中期选举和夏季休会期的临近，CLARITY 在参议院通过的机会窗口正在迅速收窄。即使通过参议院，还需要与众议院版本协调，并通过 reconciliation 程序。</p>
+</section>
+
+<section>
+  <h2>12. 意想不到的第四重障碍</h2>
+
+  <p>V 揭示了一个加密行业几乎无人预见到的新障碍。一项包含 CBDC 禁令的两党住房法案在国会获得通过，但总统拒绝签署——因为他想要通过一项争议性投票法案作为交换条件。而该投票法案在共和党内缺乏足够支持。</p>
+
+  <div class="highlight-box box-purple">
+    <strong>连锁反应</strong>：总统利用住房法案作为筹码 → 住房法案被搁置 → 两党合作氛围恶化 → CLARITY 的跨党派支持基础受到侵蚀。这不是加密本身的问题，但加密立法无法在一个政治博弈化的环境中独善其身。
+  </div>
+
+  <p>这本是一个完全可以避免的障碍。V 称之为"unforced error"——加密行业遵循"不应该活在泡泡里"的逻辑，国会立法进程同样如此。一个与加密完全无关的投票权争议，正在拖累加密行业等待多年的监管框架。</p>
+
+  <p>KK 坦言自己一直是 CLARITY 的"看空者"，现在的看法甚至比之前更悲观。但她也强调，三位主持人仍然在通过各自渠道推动立法进程——加密行业需要这样的监管框架，这是未来讨论的基础。</p>
+</section>
+
+<section>
+  <h2>13. MiCA 过渡期结束：欧洲的加密清晰度</h2>
+
+  <p>与美国的僵局形成鲜明对比：就在本期节目录制的前一天，欧盟 MiCA（Markets in Crypto-Assets）的过渡期正式结束。这不是说 MiCA"刚刚开始生效"——它早已生效——而是指：所有在旧国家牌照制度下运营的加密公司，现在必须要么拿到 MiCA 牌照，要么停止服务欧盟客户。</p>
+
+  <div class="highlight-box box-green">
+    <strong>MiCA 之前</strong>：27 个欧盟成员国各有各的加密规则——要跨境运营，企业需要应对 27 套不同的合规制度。<br/><br/>
+    <strong>MiCA 之后</strong>：单一牌照框架——在任一成员国获得授权，即可通过"护照"方式在整个欧盟范围内提供服务。一个规则，统一执行。
+  </div>
+
+  <p>MiCA 的一个重要设计选择是：它明确<strong>不包括 DeFi</strong>。欧盟监管机构认为需要更多时间研究 DeFi 的特殊性，选择了"先研究再立法"的路径。三位主持人一致认为这是正确的做法——而美国在 CLARITY 的后期阶段试图将 DeFi 纳入，这可能增加了立法难度。</p>
+
+  <p>值得注意的是，MiCA 在过渡期结束前的执法力度一直很低——各成员国几乎没有对加密公司发起过执法行动。过渡期结束后是否会看到更多执法活动，是未来值得关注的信号。</p>
+</section>
+
+<section>
+  <h2>14. 可预测规则 > 完美规则</h2>
+
+  <p>V 对 MiCA 的评价提炼了本期节目最重要的监管哲学："MiCA 并不完美，但一个主要司法管辖区终于有了清晰（尽管不完美）的监管制度——这本身就是一个胜利。"</p>
+
+  <div class="highlight-box box-blue">
+    <strong>核心洞见</strong>：企业能适应明确的监管——它们可以规划合规路径、建立流程、培训人员。但企业无法在不确定中构建业务——你不知道明天的规则会是什么，你就无法做长期决策。因此，<strong>可预测的规则有时比完美的规则更好</strong>。
+  </div>
+
+  <p>KK 用一个生动的比喻强化了这个观点——日光节约时间（daylight savings time）。很多人不知道国会确实提出过废除日光节约时间的法案，但从来没有获得足够的推动力。"重要的法律不是因为争议太大而通过不了，而是因为没有足够的人去推——这和加密的规则制定一样，失去动力比遇到反对更致命。"</p>
+
+  <p>这一节的结尾，三位主持人对美国能够效仿欧盟表达了谨慎的希望。加密需要规模化的常识性监管，而欧盟已经提供了一套可以被审视、批评和学习的范本。</p>
+</section>
+
+<section>
+  <h2>15. 加密行业的"放大镜"困境</h2>
+
+  <p>KK 在节目最后提出了一个直指行业核心问题的观察：加密行业倾向于活在自己的小世界里。有些加密人以只和加密圈的人社交为荣——甚至有"比特币主题的婚礼"，所有来宾也都热爱比特币。</p>
+
+  <p>这不是一个无害的偏好。当行业只关注"加密专属"的话题时，会系统性地错过那些听起来"不够加密"但实际影响深远的问题。本期节目讨论的五个话题——保证金 harmonization、制裁 MEV、AI 出口管制、第三方原则、政治博弈——每一个都需要行业跳出自己的逻辑闭环去理解。</p>
+
+  <div class="highlight-box box-yellow">
+    <strong>KK 的建议</strong>：加密行业需要"zoom out"——放大视野。随着加密越来越深入地与其他产业和日常生活融合，只看加密圈内部动态是不够的。真正决定行业未来的力量，往往来自那些看起来与加密无关的领域。
+  </div>
+</section>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div class="quote-block" style="background:#fff0f0;border-left:4px solid #e03131;">
+    "如果冻结交易在排序竞赛中输给了转移交易，那么冻结的法律授权就无法执行。换句最简单的话说：<strong>稳定币冻结本身可以被 front-run。</strong>"
+    <div class="attribution">— V，引用《Ordering Power is Sanctioning Power》论文核心观点</div>
+  </div>
+
+  <div class="quote-block" style="background:#e7f5ff;border-left:4px solid #1971c2;">
+    "政府不再管代码能不能发布，而是管<strong>谁可以登录使用它</strong>。对加密行业来说，这就是一切——RPC 端点、桥、稳定币轨道、GitHub 仓库、钱包，全都可以被这样关掉。"
+    <div class="attribution">— Jesse，分析 Legion 诉美国政府案的影响</div>
+  </div>
+
+  <div class="quote-block" style="background:#fff9db;border-left:4px solid #f59f00;">
+    "94% 的链上稳定币制裁由发行方自行发起。八年来，只有 9 次冻结真正在资金转移中途生效。7% 的被制裁地址在冻结到达时余额已经归零。"
+    <div class="attribution">— Jesse 引用论文数据，反思稳定币冻结机制的实际效果</div>
+  </div>
+
+  <div class="quote-block" style="background:#ebfbee;border-left:4px solid #2f9e44;">
+    "我们不能让完美成为优秀的敌人。可预测的规则有时比完美的规则更好——企业能适应明确的监管，但无法在不确定中构建业务。"
+    <div class="attribution">— V & KK，讨论 MiCA 与 CLARITY 法案的对比</div>
+  </div>
+
+  <div class="quote-block" style="background:#f3f0ff;border-left:4px solid #7950f2;">
+    "赢家和输家正在被挑选——不需要程序，不需要明确的法律依据。我们不能对每个人说'用加密的金融轨道构建你的生活'，同时又告诉他们'这一切随时可能因为国家安全被切断'。"
+    <div class="attribution">— Jesse，关于 AI 出口管制与加密行业的交叉影响</div>
+  </div>
+
+  <div class="quote-block" style="background:#fff4e6;border-left:4px solid #e8590c;">
+    "你输入电脑的任何东西都不是私密的。句号。人们对 AI 聊天的隐私感和 Google 搜索完全不同——有人用 ChatGPT 做心理治疗，但完全没意识到这些对话可以被用作法庭证据。"
+    <div class="attribution">— KK & Jesse，关于 AI 与第三方原则的隐私边界</div>
+  </div>
+</section>
+
+<footer>
+  <p>完整播客：<a href="https://unchainedcrypto.com">Unchained — DEX in the City</a></p>
+  <p style="margin-top:0.5rem;">本页面由 PodDeck 自动生成 · 内容基于播客转录整理</p>
+</footer>
+
+</article>
+</body>
+</html>

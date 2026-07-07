@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一次投票引爆 DAO 治理大战 — Uneasy Money 深度对谈</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #222;
+  background: #fafafa;
+  padding: 0;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+header {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 24px;
+  margin-bottom: 36px;
+}
+h1 { font-size: 28px; line-height: 1.35; margin-bottom: 12px; color: #111; }
+h2 { font-size: 22px; margin: 48px 0 16px; color: #111; border-left: 4px solid #1971c2; padding-left: 12px; }
+h3 { font-size: 18px; margin: 32px 0 12px; color: #333; }
+p { margin: 14px 0; }
+.meta { font-size: 14px; color: #888; margin-top: 8px; }
+.meta span { margin-right: 16px; }
+a { color: #1971c2; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+@media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+.card {
+  padding: 14px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+.card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+.card-blue { background: #f0f6ff; border-left: 4px solid #1971c2; }
+.card-green { background: #f0fff4; border-left: 4px solid #2f9e44; }
+.card-orange { background: #fffaf0; border-left: 4px solid #e8590c; }
+.card-purple { background: #fcf0ff; border-left: 4px solid #862e9c; }
+.card-yellow { background: #fffef0; border-left: 4px solid #f08c00; }
+
+blockquote {
+  margin: 20px 0;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  border-left: 4px solid #1971c2;
+  font-style: italic;
+  color: #444;
+  border-radius: 0 6px 6px 0;
+}
+blockquote .attr { font-size: 13px; color: #888; margin-top: 8px; font-style: normal; }
+
+.quotes-section blockquote { border-left-color: #2f9e44; }
+.quotes-section blockquote:nth-child(2) { border-left-color: #e03131; }
+.quotes-section blockquote:nth-child(3) { border-left-color: #1971c2; }
+.quotes-section blockquote:nth-child(4) { border-left-color: #f08c00; }
+.quotes-section blockquote:nth-child(5) { border-left-color: #862e9c; }
+.quotes-section blockquote:nth-child(6) { border-left-color: #e8590c; }
+
+footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 2px solid #eee;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+
+.gloss { color: #888; font-size: 14px; font-style: italic; }
+.numbers { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 20px 0; }
+@media (max-width: 600px) { .numbers { grid-template-columns: 1fr; } }
+.num-card {
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  background: #f8f9fa;
+  border: 2px solid #eee;
+}
+.num-card .value { font-size: 32px; font-weight: 700; margin-bottom: 4px; }
+.num-card .label { font-size: 13px; color: #666; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+<h1>一次投票引爆 DAO 治理大战</h1>
+<div class="meta">
+  <span>🎙 Uneasy Money</span>
+  <span>👤 Nick Johnson · Alex Van de Sande</span>
+  <span>📅 2026 年 7 月</span>
+</div>
+<p style="margin-top:16px; font-size:15px; color:#555;">
+当 Nick.eth 用他 3.26M ENS 代币否决了安全委员会的续任，加密 Twitter 炸了。但真正的故事不是关于"一个独裁者夺取控制权"——而是关于 DAO 参与率的持续崩溃、关于一个 $130M 金库如何将治理变成预算争夺战、以及关于一群仍然拒绝放弃去中心化梦想的建设者。这是一份关于过去、现在和未来 DAO 治理的深度诊断。
+</p>
+</header>
+
+<h2>为什么这值得关注？</h2>
+
+<div class="cards">
+<div class="card card-red">
+<strong>一次投票引发的危机</strong>
+Nick.eth 用 3.26M ENS 投下反对票，占有效投票的 ~50%，安全委员会续任失败。
+</div>
+<div class="card card-blue">
+<strong>DAO 参与率崩溃</strong>
+100M ENS 代币总量中，仅 ~7% 在活跃投票。创始人 3.2% 的持仓相当于 50% 有效投票权。
+</div>
+<div class="card card-green">
+<strong>治理 vs 资本分配</strong>
+$130M+ 的金库让 DAO 变成了预算争夺场，偏离了协议治理的初衷。
+</div>
+<div class="card card-orange">
+<strong>DAO 终结了吗？</strong>
+Aave、ENS —— 被视为最佳实践的 DAO 接连陷入困境，整个治理范式面临存在性拷问。
+</div>
+<div class="card card-purple">
+<strong>分离关注点</strong>
+Nick 和 Alex 提出新模型：协议治理归 DAO，资金管理归基金会，产品决策归 Labs。
+</div>
+<div class="card card-yellow">
+<strong>ENS 不是公司</strong>
+域名系统不能是盈利实体——ENS 的可信中立性是它区别于所有 Web3 仿冒者的核心。
+</div>
+</div>
+
+<h2>安全委员会投票：到底发生了什么？</h2>
+
+<p>ENS DAO 的安全委员会是一个紧急安全机制——在提案通过之后、进入执行的时间锁期间，它能够取消被认为存在风险的提案。这个委员会每两年需要 DAO 投票续任。这一次，<strong>链上续任投票未能通过</strong>。Nick Johnson，ENS Labs 的创始人，以 3.26M ENS（约占当时有效投票总量的 50%）投了反对票。</p>
+
+<p>加密 Twitter 立即炸锅：Nick 是独裁者、他在 rug、这个消息是 "$500M 金库的抢夺"。Nick 在节目中反复澄清了一个核心误解：<strong>他不控制 ENS 代币的 50%</strong>。ENS 代币总供应量为 100M，其中 50% 归 DAO 金库，25% 空投给了用户，25% 分配给核心贡献者。Nick 个人持有约 3.2%，大约 320 万枚。他之所以占据有效投票的 50%，是因为在全体 100M 代币中，<strong>被委托并用于投票的只有约 700 万枚</strong>。</p>
+
+<p>Alex Van de Sande，ENS 的联合创始人和长期治理参与者，解释了这个事实是如何在众人眼前悄然形成的："我们目睹委托量一点点下降。通过投票、达到法定人数变得越来越难。这像一场缓慢的泄漏。直到 Nick 自我委托了自己的代币，这个事实才突然被所有人同时看到——而且震耳欲聋。"</p>
+
+<h2>投票参与率：从 80% 到 7% 的系统性崩溃</h2>
+
+<p>ENS DAO 的投票参与率经历了持续的下降。虽然精确的历史数据难以追溯，但参与方的描述指向了一个清晰的趋势：启动时约 80% 的活跃投票率，到如今仅约 7%。</p>
+
+<p>Nick Johnson 将原因归结为简单的经济学："卖出你免费得到的东西有很强的财务激励——参与去中心化治理则完全没有。" 绝大多数空投获得者在收到代币后选择了卖出，而购买这些代币的新持有者对治理同样不感兴趣。随着代币不断分散到更多的被动持有者手中，委托投票量持续萎缩。</p>
+
+<p>Alex 曾试图通过发放更多代币来激励参与——向更多建设者发放了十万枚 ENS——但效果甚微。"人们仍然不怎么参与。" 这指向了一个更深层的问题：代币持有者的利益和协议治理的利益并不自然对齐。</p>
+
+<h2>为什么 ENS 必须有 DAO？</h2>
+
+<p>ENS 选择代币治理并非偶然。Nick 描述了两个核心担忧：<strong>首要的是协议被劫持</strong>——如果任何富人可以通过买入 ETH 来投票控制 ENS，那么 ENS 就失去了它存在的理由。次要的是金库被盗。代币治理将投票权分配给那些被认为真正投入 ENS 的人。</p>
+
+<p>"如果 ENS 变得像我希望的那样普及和广泛使用，用 ETH 投票治理的风险非常大。" 这是一个不可忽视的威胁模型：如果 .eth 成为 Web3 的基础设施层，那么能够控制它的人可以从混乱中获利——类似于域名抢注者，但规模更大。</p>
+
+<p>但团队也坦诚地承认，他们当时是基于信念而非经验做出这个选择的。"我们当年都喝了 Kool-Aid，" Kane Warwick 总结道，"这不只是为了合规的表面理由——我们真的相信去中心化治理。而这之所以管用，正是因为我们的天真。" 几年的实践让这份天真变成了现实主义的清醒。</p>
+
+<h2>ENSTreasury 的真相：蜜罐效应</h2>
+
+<p>ENS 金库的实际构成颠覆了很多人想象中的"$500M 争夺战"。可实际支配的资金约为 <strong>$130M（ETH + 稳定币）</strong>，另外约 <strong>$350M 是 ENS 自有代币</strong>——这些代币如果被出售将对市场造成灾难性影响，因此实际上是"无法动用的"。金库由专业管理方 Karpatkey 运营，采用保守策略，年化回报约 2-3%。</p>
+
+<p>Nick 对此毫不客气："如果当初把全部资金投入 Vanguard 指数基金，或者甚至只是储蓄账户，现在的收益都会好得多。"但这恰好暴露了链上金库治理的结构性矛盾：透明度要求限制了可投资的资产类型，保守策略意味着跑不赢通胀，而任何策略变更都需要说服数百个互相不认同的 DAO 成员。</p>
+
+<p>Alex 则从另一个角度为链上金库制度辩护："Karpatkey 在被绑着很多绳索的前提下管理金库——但这些绳索是美丽的。因为资金全都链上透明，每一笔流动都可审计。就像你在交房产税时能看到每一分钱花到了哪里。"</p>
+
+<div class="numbers">
+<div class="num-card">
+<div class="value" style="color:#e03131">$130M</div>
+<div class="label">可支配 ETH + 稳定币</div>
+</div>
+<div class="num-card">
+<div class="value" style="color:#1971c2">$350M</div>
+<div class="label">ENS 代币（不可变现）</div>
+</div>
+<div class="num-card">
+<div class="value" style="color:#2f9e44">2-3%</div>
+<div class="label">年化回报率</div>
+</div>
+</div>
+
+<h2>Namechain：事后批判的便利</h2>
+
+<p>ENS Labs 曾宣布构建 Namechain——一条为 ENS 定制的 L2。当时社区的反应是正面的：Gas 费太高了，L2 是唯一出路。团队于是在两年中花了约 20% 的工作量在 Namechain 上，其余 80% 用于 ENS V2。</p>
+
+<p>当团队最终决定取消 Namechain 时，社区的反应立刻转变为"对，确实没必要"。Lefteris 等人批评这是资源浪费。但 Nick 提供了重要上下文：ENS V2 的大块工作（约 80%）与链无关，取消 Namechain 只需要剥离约 20% 的跨链交易相关代码。</p>
+
+<p>Taylor Monahan 用一个更广泛的视角看待这类决策："我们也都浪费过时间建链。整个以太坊 L2 扩容路线图现在看来，可能当时应该专注 L1。但当时 L1 一笔交易要 100 美元，我们别无选择。事后诸葛亮是最轻松的。"</p>
+
+<h2>DAO 的资本分配困境</h2>
+
+<p>Nick 指出了一个 DAO 实践中的核心教训：DAO 在设计上不适合作日常运营和实时资金分配。</p>
+
+<p>"每个对话都必须是一个委员会，每件事都必须是一个工作组。"个体成员可能都很有能力，但缺乏一个整体组织将碎片拼接成连贯的整体。而那些成功分配资金的组织——如传统基金会——之所以成功，正是因为它们像一个有内部流程和明确责任制的连贯实体那样运作。</p>
+
+<p>三个具体问题叠加在一起：<strong>预算只升不降</strong>——"如果你让人投票，他们总是选择增加预算。但收入并不一定会跟着增长。资金池在缩小"，Alex 提醒道。<strong>重复资助</strong>——第一轮服务商计划中出现了 4-5 个子域名注册项目同时获得资助的荒谬现象，最终只有一个存活至今。<strong>委托权集中</strong>——"钱能买影响力。随着时间推移，投票权会集中在能从持有代币中赚钱的人手里。"</p>
+
+<h2>Aave vs ENS：为什么 ENS 不能成为一家公司</h2>
+
+<p>将 Aave 和 ENS 放在一起比较是有价值的——它们代表了 DAO 治理谱系上的两个极值。</p>
+
+<p>Aave 在另一个现实里完全可以作为一家公司运营——用户为服务付费，公司开发软件。50 个人在几个房间里就能讨论清楚应该开发哪些功能。协议是半去中心化的、智能合约驱动的——不需要代币治理来决定功能方向。</p>
+
+<p>ENS 完全不同。域名注册局天然不适合盈利模式。它的价值直接来自<strong>可信中立性</strong>：任何人都可以注册名字，名字属于用户且不可被没收，系统对所有参与者都是公平的。如果 ENS 变成一家私人公司，它就变得和那些在卖月球土地或星星命名权的企业没什么两样。这就是为什么 ENS 不能放弃去中心化治理——不是出于意识形态，而是因为中立性是产品本身。</p>
+
+<h2>ENS 不可侵犯的核心</h2>
+
+<p>在所有的喧嚣和恐惧中，有一个事实被大多数人忽略了：ENS 的核心——.eth 域名的所有权——已经被设计为<strong>不可侵犯</strong>。</p>
+
+<p>Nick 在节目中澄清了这一点："去中心化的优先事项从一开始就是协议杠杆。DAO 不能影响任何人的现有域名——不能改变解析方式、不能让它提前过期。安全委员会也不能。" 代码是完全开源的，任何人都可以 Fork 并部署自己的版本。即使有人控制了全部金库，也无法拿走你的 .eth 名字。</p>
+
+<p>Alex 进一步发挥："如果有人真的认为 Nick 是邪恶的，他们可以 Fork ENS 的全部代码。ENS 和 .eth 后缀是可以分离的——你可以在 ENS 之上构建自己的命名系统（就像 .box 已经做的那样），或者部署自己的版本来竞争。"</p>
+
+<p>Nick 唯一的请求是："如果你想 Fork ENS，请至少不要用 .eth 后缀。我真的不想因为人们把资产发错地址而间接负责——'我们说的是我们的 .eth 命名系统，不是 ENS 的 .eth'——这会导致资金损失和被骗。"</p>
+
+<h2>加密的创伤与治理的代理战争</h2>
+
+<p>Taylor Monahan 指出，这场喧闹背后有一种加密圈特有的深层心理："我们在加密圈里混久了，都有一种制度性创伤——关于 rug。看到任何长方形、毛茸茸的东西，我们都会假设那是个 rug。"任何涉及金库治理的争议都会触发这种反射性恐慌——不一定是理性的，但它是真实的。</p>
+
+<p>Kane 进一步点出了这种心理如何放大了 ENS 的事件："每次一个 DAO 看起来要失败，就会触发一种'我们过去十年 DAO 建设全部白费了'的存在性焦虑。这就是为什么 Aave 的争议之后，ENS 的争议会紧跟着爆炸——它不是孤立事件，它是一场关于 DAO 范式本身的代理战争。"</p>
+
+<p>但 Taylor 也提供了一个清醒的视角："如果 ENS DAO 的金库只有 $5,000，我们根本不会有这场对话。人们关注的是金库里的钱，而不是协议治理。"</p>
+
+<h2>建设者的孤独</h2>
+
+<p>本期最被低估的洞见来自 Taylor 作为创始人的反思：</p>
+
+<blockquote>
+"这是我作为创始人的一个最难的认知——你可以和团队分享所有细节，你可以从比你更聪明的人那里获得建议。但无论如何，当需要做出真正艰难的未来决策时，最终会落在一个人或几个人的头上。而围绕着这个人之外的其他一切——所有那些结构、所有那些流程——都是在试图获得最好的结果、分担问责、减轻风险。但最终，有些人会因为 ENS 的失败而生活被彻底颠覆。对我来说，这些人不是在 Twitter 上骂人的人。"
+</blockquote>
+
+<p>这就是为什么关于"Nick 是独裁者"的叙事让 Taylor 感到不公。"你不能想要好的结果，又不想任何人拥有权力。有些时候，一个人或几个人需要有一些权力，才能把事情做好。如果 ENS 失败了，那是 Nick 而不是 DAO 将被问责——即便 DAO 在形式上拥有更多控制权的时候也是如此。"</p>
+
+<h2>分离关注点：一种可行的出路</h2>
+
+<p>Nick 和 Alex 的共同提案可以用来概括为<strong>"分离关注点"</strong>：</p>
+
+<p><strong>ENS DAO</strong> 应该只专注于治理——保留代币投票机制，但专注于任命基金会董事会成员、调整协议参数和设定战略方向。不再处理日常预算分配和委员会决策。</p>
+
+<p><strong>ENS 基金会</strong> 作为法律外包层和实际世界的接口——编制预算、审计资金使用、管理与 ICANN 等外部实体的关系。对 DAO 负有受托责任，但拥有执行层面的独立性。</p>
+
+<p><strong>ENS Labs</strong> 专注于产品——V2 开发、时间线决策、技术架构、招聘。不参与治理决策。</p>
+
+<p><strong>社区团队</strong> 继续他们在子域名、生态集成、黑客松和公共物品方面的工作——由基金会资助，并由 DAO 问责。</p>
+
+<p>Alex 用一个简洁的否定句描述了新模型的原则："我们不应该让 DAO 做产品决策，也不应该让 Labs 做治理决策。"</p>
+
+<h2>为什么大家还在这里？</h2>
+
+<p>在争议正酣之际，Kane 问了一个简单而深刻的问题：Nick 和 Alex，你们为什么还在这里？如果 ENS 已经运转了接近十年，如果金库已经积累到了上亿美金，如果每一次决策都会招致 Twitter 的风暴——为什么不走？</p>
+
+<p>Nick 的回答坦诚得令人意外："我似乎不是很擅长让自己变得不必要。我试过了。"但更重要的是他接下来的话：</p>
+
+<blockquote>
+"我还没有放弃 ENS 或 DAO 治理，也不打算放弃。我认为我们学到了 DAO 不擅长做什么——现在是时候从中吸取教训、修复这些问题，并继续为去中心化的共同未来而工作。我的信念比以前弱了一些——但我仍然想做一次真正的努力，来扭转局面、聚焦重要的事、重新去中心化它。如果不起作用，我们需要找到另一条路径，一条仍然有意义地去中心化的路径。我不知道那是什么样子，但这将是我们接下来要进行的对话。"
+</blockquote>
+
+<p>Alex 的回答更加直白：</p>
+
+<blockquote>
+"我是个死心眼。我做这一切是因为我仍然在我们的工作里找到意义——在过去十年里我们努力构建更好的治理方式和真正的去中心化。世界似乎转向了 AI，但我们知道我们搭建的这些东西仍然有价值：一个开放的账本，一个透明、不可腐败的组织。这就是我为什么仍然在这里说：这才是加密的真正本质。"
+</blockquote>
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+
+<blockquote>
+"Do you currently control 50% of the ENS tokens? No."
+<div class="attr">— Nick Johnson，澄清他仅持有总量 3.2%，而非有效投票的 50%</div>
+</blockquote>
+
+<blockquote>
+"We all drank the Kool-Aid. We believed it. That's why it worked — it worked as regulatory protection because we actually were naive enough to believe it."
+<div class="attr">— 主持人和嘉宾对 DAO 时代精神的一致描述</div>
+</blockquote>
+
+<blockquote>
+"There's strong financial incentive to sell something you got, especially if you got it for free, and none to participate in decentralized governance."
+<div class="attr">— Nick Johnson，解释投票参与率持续下降的经济学逻辑</div>
+</blockquote>
+
+<blockquote>
+"I don't want to become ICANN — not because ICANN is evil, but because I got into crypto to build better decentralized governance structures. And I don't want to give up on that just yet."
+<div class="attr">— Nick Johnson</div>
+</blockquote>
+
+<blockquote>
+"All the scammers and the pumpers — that's not who we are, right?"
+<div class="attr">— Alex Van de Sande</div>
+</blockquote>
+
+<blockquote>
+"No one's gonna care as much as you do. That's honestly, that's the harsh reality."
+<div class="attr">— Taylor Monahan，创始人无法逃避的负担</div>
+</blockquote>
+
+</div>
+
+<footer>
+  <p>🎙 本期节目来自 <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3906944625.mp3">Uneasy Money</a>，2026 年 7 月</p>
+  <p style="margin-top:8px">本文由 Claude 自动生成 · <a href="/">回到 PodDeck</a></p>
+</footer>
+
+</article>
+</body>
+</html>
