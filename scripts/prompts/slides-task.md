@@ -83,6 +83,29 @@ Produce a standalone, self-contained HTML article at `episodes/{{ID}}/article.ht
 
 **Write to file**: `Write: episodes/{{ID}}/article.html` then `Bash: wc -c episodes/{{ID}}/article.html` to confirm (> 5KB).
 
+### Phase 3.6 — Chinese editorial pass
+
+Before the build/audit phase, re-read `slides.md`, `meta.yml`, and `article.html` as a Chinese editor.
+
+Fix any sentence that has one of these problems:
+- English word order copied into Chinese
+- unclear subject/verb/object
+- a comparison where the two sides are not comparable
+- a number or "X times faster/cheaper/larger" claim without a clear metric
+- company names, product names, and customer names piled into a slogan instead of a sentence
+- marketing shorthand that sounds good but does not say what happened
+
+For article prose, prefer complete explanatory sentences over compressed labels. For slide cards, concise is good, but the sentence still has to be grammatical and factually anchored.
+
+Bad examples to fix:
+- `AI 实验室比联合航空快一千倍`
+- `OpenAI 认证：United Airlines 移动端已显示 Powered by Natomi`
+- `Puneet 生来就在企业级`
+
+Acceptable rewrites:
+- `Natomi 已在 United Airlines 移动端落地；OpenAI 将它列为大规模部署生成式 AI 的案例。`
+- `Puneet 的自动化交易背景，让他从一开始就按大型企业部署场景设计 Natomi。`
+
 ### Phase 4 — Build and self-audit
 
 1. `cd episodes/{{ID}}` then `Bash: npx slidev export --format png --output audit` to render every slide to PNG

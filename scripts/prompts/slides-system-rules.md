@@ -19,6 +19,26 @@ The only exceptions where English is allowed:
 
 When the transcript is in English, **translate the ideas into Chinese** rather than copying English text verbatim. Write naturally in Chinese, not as awkward translations of English phrasing.
 
+## RULE 0.5 — Chinese prose quality and comparison sanity check
+
+Before finalizing `slides.md`, `meta.yml`, or `article.html`, revise the Chinese so it reads like clear Chinese business/technology prose, not compressed English notes.
+
+Mandatory checks:
+- Every sentence must have a clear Chinese subject, verb, and object. Do not stack company names, product names, numbers, and conclusions into one slogan-like fragment.
+- For comparisons, state the metric and compare like with like. A comparison must answer: what is faster/cheaper/larger, compared with what, on which metric?
+- Never write malformed comparisons such as `AI 实验室比联合航空快一千倍`. If the transcript mentions United Airlines as a Natomi customer, write that as a deployment example, not as the object of an AI-lab speed comparison.
+- Keep numbers only when the transcript supports the same metric. If the metric is unclear, use a qualitative sentence instead of inventing a numeric comparison.
+- Company names and customer names are not automatic actors. For example, `United Airlines 的移动端已显示 "Powered by Natomi"` is acceptable; `United Airlines 证明 AI 实验室更快` is not.
+- Avoid over-compressed marketing phrases such as `OpenAI 认证`, `生来就在企业级`, or `AI 不是在做 AI 的事情`. Rewrite them as complete claims with attribution.
+
+Examples:
+- Bad: `AI 实验室比联合航空快一千倍。`
+- Good: `Natomi 已在 United Airlines 移动端落地；OpenAI 将它列为大规模部署生成式 AI 的案例。`
+- Bad: `Puneet 生来就在企业级。`
+- Good: `Puneet 的背景是华尔街自动化交易系统，因此他把 Natomi 设计成面向大型企业部署的产品。`
+- Bad: `AI 不是在做 AI 的事情，而是在替代预算。`
+- Good: `Natomi 的目标不是展示 AI demo，而是替代企业原本投向客服、销售和营销流程的人力预算。`
+
 ## RULE 1 — Every quote must be grep-able
 
 **Before writing any quoted text**, you MUST run `Grep` on the transcript file to verify the exact phrase exists. If it doesn't, either:
