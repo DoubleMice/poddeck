@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-08T04:08:31.666Z
+refreshed_at: 2026-07-08T18:33:08.234Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 103
-done: 0
+done: 1
 pending: 7
-needs_transcript: 96
+needs_transcript: 95
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -104,8 +104,12 @@ episodes:
       🔮 40:04 Lightning round: Jessi on agentic finance, Katherine on perps, Vy on vaults
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-08T18:34:45.659Z
+    transcript_job_id: f0491ed06bff42d4a4b78eda16de73a8,5ceaffc5aaf84cb38f50c1e1cbaf5ad4,94d8783546df48b9bc8b12581047d872,63642d4661dd4cf4868c8e1bc52a8dd8
+    transcript_completed_at: 2026-07-08T18:37:14.106Z
   - id: 0a65241a-75ad-11f1-a248-db78c786b739
     guid: 0a65241a-75ad-11f1-a248-db78c786b739
     title: "The Chopping Block: Visa, Mastercard & 140 Firms Take On Circle, Saylor’s Digital Credit Reset & the DAO
@@ -4161,8 +4165,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5924,8 +5927,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

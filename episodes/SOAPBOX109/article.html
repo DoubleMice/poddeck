@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>从威胁狩猎到检测平台：Nebulock 如何重新思考安全运营</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #fafafa;
+  padding: 2rem 1rem;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+@media (max-width: 640px) {
+  article { padding: 1.5rem 1.2rem; border-radius: 0; }
+  body { padding: 0; }
+}
+h1 { font-size: 1.9rem; line-height: 1.35; margin-bottom: 0.5rem; color: #111; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; color: #222; border-bottom: 2px solid #e9ecef; padding-bottom: 0.4rem; }
+h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; color: #333; }
+p { margin-bottom: 1rem; }
+.meta { color: #868e96; font-size: 0.9rem; margin-bottom: 2rem; }
+.meta span { margin-right: 1.2rem; }
+blockquote {
+  border-left: 4px solid #1971c2;
+  background: #e7f5ff;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  border-radius: 0 8px 8px 0;
+  color: #1a1a1a;
+}
+blockquote .attr { display: block; font-size: 0.85rem; color: #868e96; margin-top: 0.4rem; font-style: normal; }
+.card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin: 1.2rem 0; }
+@media (max-width: 500px) { .card-grid { grid-template-columns: 1fr; } }
+.card { padding: 1rem 1.1rem; border-radius: 8px; font-size: 0.92rem; line-height: 1.65; }
+.card.blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+.card.green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+.card.yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+.card.red { background: #ffe3e3; border-left: 4px solid #c92a2a; }
+.card.purple { background: #f3f0ff; border-left: 4px solid #7950f2; }
+.card.orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+.card strong { display: block; margin-bottom: 0.3rem; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.8rem; margin: 1rem 0; }
+@media (max-width: 500px) { .grid-3 { grid-template-columns: 1fr; } }
+.grid-3 .box { padding: 0.9rem; border-radius: 8px; text-align: center; font-size: 0.88rem; line-height: 1.55; }
+.grid-3 .box .num { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+.quote-block { margin: 1.5rem 0; }
+.quote-item { padding: 0.8rem 1rem; border-radius: 8px; margin-bottom: 0.6rem; font-size: 0.93rem; line-height: 1.6; border-left: 4px solid #1971c2; background: #e7f5ff; }
+.quote-item:nth-child(2) { border-left-color: #2f9e44; background: #ebfbee; }
+.quote-item:nth-child(3) { border-left-color: #f08c00; background: #fff9db; }
+.quote-item:nth-child(4) { border-left-color: #7950f2; background: #f3f0ff; }
+.quote-item:nth-child(5) { border-left-color: #c92a2a; background: #ffe3e3; }
+.quote-item:nth-child(6) { border-left-color: #e8590c; background: #fff4e6; }
+.quote-item .attr { display: block; font-size: 0.82rem; color: #868e96; margin-top: 0.3rem; }
+footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #e9ecef; font-size: 0.85rem; color: #adb5bd; text-align: center; }
+footer a { color: #1971c2; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+<h1>从威胁狩猎到检测平台：Nebulock 如何重新思考安全运营</h1>
+<div class="meta">
+  <span>🎙️ Risky Business · Soap Box</span>
+  <span>👤 Damian Lukie</span>
+  <span>📅 2026 年 7 月</span>
+  <span>⏱️ 约 35 分钟</span>
+</div>
+</header>
+
+<section>
+<h2>为什么这期值得关注</h2>
+
+<div class="card-grid">
+  <div class="card red">
+    <strong>SIEM 已经过时了</strong>
+    把多维度的安全数据"压平"成人类可读的表格，然后发现数据太多人类读不过来，再让 AI 代理去处理这些被压平的数据——整个逻辑链条已经断裂。
+  </div>
+  <div class="card blue">
+    <strong>安全本质上是数据问题</strong>
+    不同安全工具使用不同的 schema，归一化是一切分析的前提。没有归一化，查询会崩溃，检测会失败。
+  </div>
+  <div class="card green">
+    <strong>AI 代理让图数据库重获新生</strong>
+    十年前就有人建安全图谱，但人类无法遍历复杂图。如今 AI 代理可以在图上高效搜索，图谱因此变得前所未有地有用。
+  </div>
+  <div class="card purple">
+    <strong>从狩猎到检测的闭环</strong>
+    好的威胁狩猎应该产出可运行的检测规则，而不是变成一张 JIRA 工单。Nebulock 把这个流程从两周缩短到三分钟。
+  </div>
+</div>
+
+<p>这一期 Risky Business 的 Soap Box 访谈，主播 Patrick Gray 与 Nebulock 创始人兼 CEO Damian Lukie 展开了一场关于安全运营未来的深度讨论。Damian 曾在 CrowdStrike、Palo Alto Networks 和 Arctic Wolf 工作，亲历了从 EDR 到 MDR 的整个演进历程。他创立的 Nebulock 最初以"AI 威胁狩猎"为切入点，但在与客户的互动中，产品逐步演变为一个以上下文图谱为核心的检测工程平台。</p>
+</section>
+
+<section>
+<h2>从国防工业到创业：一个"问题驱动"的职业轨迹</h2>
+
+<p>Damian Lukie 的背景值得关注，因为它解释了他为什么要创业、为什么要做现在的产品。他大学毕业后的第一份工作是在国防工业基地 (DIB)，直面国家级网络攻击——"那会改变你"，他说。之后他加入了 CrowdStrike，亲历了 Threat Graph 在安全领域的早期应用；随后去了 Arctic Wolf，在 MDR 环境中整合各种安全产品，看到了工具碎片化和数据孤岛的实际情况。</p>
+
+<p>这段经历让他形成了一个关键认知：每个安全工具在其细分领域都很强，但当你试图用整体视角看待企业的风险管理时，没有任何一个工具能独立解决问题。他在访谈中说得很直白：<strong>"人们很容易相信'买了正确的工具，我就有韧性了'。但事实上没有工具是完美的——这就是为什么我们都需要遥测日志，以便事后搜索。"</strong></p>
+</section>
+
+<section>
+<h2>Hunt-First：狩猎不是一次性任务，而是持续的起点</h2>
+
+<p>Damian 用一分钟精准概括了 Nebulock 的核心定位：<strong>"我们是一个以狩猎为先的安全运营平台 (hunt-first security operations platform)。"</strong></p>
+
+<p>与传统安全产品的思路不同，Nebulock 的起点不是"收集告警"，而是主动提出行为假设、推断环境中可能存在但尚未被发现的风险。这种基于假设的狩猎瞄准的是"未知的未知"——那些低信号或者没有信号、被现有系统遗漏的事件。</p>
+
+<p>但真正的区别在于狩猎之后。在传统工作流中，一次威胁狩猎的结果往往以报告或 JIRA 工单的形式结束。在 Nebulock 的模型中，每一次狩猎——无论是否发现了实际事件——都产出可运行的检测规则。这些规则可以在 Nebulock 平台内执行，也可以输出到企业的 SIEM 中。核心思想是：企业不应该积累一次性的狩猎报告，而应该积累一个随时间不断增长的<strong>持续分析层</strong>。</p>
+</section>
+
+<section>
+<h2>产品演进的教训：AI 不是卖点，是工具</h2>
+
+<p>Patrick 在访谈中敏锐地注意到：在 2026 年的产品 pitch 中，Damian 甚至没有提到"AI"这个词——尽管 Nebulock 仍然是一家大量使用 AI 的公司。这个转变背后是对 AI 代理能力的深入反思。</p>
+
+<p>Damian 坦诚地分享了种子轮后的关键教训：最初的"AI 代理驱动的威胁狩猎"概念很好，但客户真正的痛点是——"我跑了一次威胁狩猎，发现（或没发现）了问题，但<strong>如何把学到的东西固化下来？</strong>"</p>
+
+<p>这个看似简单的问题，把 Nebulock 的产品方向从单纯的"AI 狩猎"引向了更完整的"狩猎→检测"闭环——以及最终统一整个平台的那张图。</p>
+</section>
+
+<section>
+<h2>上下文图谱：不是又一个"云 Splunk"</h2>
+
+<p>当 Patrick 问到 Nebulock 是不是"又一个 Splunk 插件"时，Damian 的回答揭示了产品真正的技术差异：他们构建了自己的图数据库——<strong>上下文引擎 (context engine) 或上下文图谱 (context graph)</strong>。</p>
+
+<p>这张图将企业的身份、主机、服务账户、进程、网络事件等安全相关的实体连接成一张关系网。AI 代理可以在这张图上遍历节点和边，寻找异常的关系模式。与传统的日志查询不同，图的优势在于它能自然地表达行为关系——而这正是威胁狩猎和检测的核心。</p>
+
+<p>Damian 回顾了安全行业用图的历史：十年前 CrowdStrike、Carbon Black、Cylance 等早期玩家就构建了安全图谱。但当时的图是为人类遍历设计的——复杂的安全图谱人类根本理解不了。AI 代理改变了这个局面：代理不关心图有多复杂，它可以高效地在节点之间遍历，而不会像人类一样被密密麻麻的边和节点吓到。</p>
+
+<p>但 Damian 也强调了一个关键经验：<strong>不能把所有东西扔进一个巨型图数据库。</strong>Nebulock 的做法是为每个客户构建独立的上下文图谱，让它成为该企业的"行为系统记录 (behavioral system of record)"。这样代理才能在可控的上下文中高效工作，而不至于在数十亿事件中迷失方向，甚至"开始胡言乱语"。</p>
+</section>
+
+<section>
+<h2>安全本质上是数据问题</h2>
+
+<p>这可能是整场访谈中最核心的命题。Patrick 和 Damian 一致认为，安全运营——检测、狩猎、响应——归根结底是一个数据问题。</p>
+
+<p>Damian 描述了安全团队面临的现实困境：每个安全工具都有自己的 schema。"同一个 event ID 在 SIEM 里可能有六种不同的写法。"不解决数据归一化问题，所有的分析都是空中楼阁——查询会崩溃，检测会失败。</p>
+
+<p>Nebulock 团队的核心发现是：<strong>必须构建底层 schema 并做数据归一化，然后在这个基础上构建图谱。</strong>Damian 说："你无法在没有一致数据结构的前提下构建好的图谱。你无法在数据没有归一化的情况下做流式检测。如果你不解决数据问题，分析有什么用？"</p>
+
+<p>这个观点虽然听起来是常识，但在安全行业内恰恰是最被忽视的环节。太多的安全产品在"分析"和"检测"层面做文章，却不解决最底层的数据一致性问题。</p>
+</section>
+
+<section>
+<h2>"发动机都拆出来了，顺便多干点活"</h2>
+
+<p>Patrick 用一个修车的比喻精准概括了 Nebulock 的扩展逻辑：<strong>"如果你是修车的，你把发动机从车里拆出来只为了换一个零件——既然都拆了，不如顺便把那些会在十万英里时坏掉的密封件和零件也换掉。"</strong></p>
+
+<p>这个比喻适用于 Nebulock 的整个产品路线：最初为了 AI 威胁狩猎而把各种安全数据汇聚到一起——既然数据已经在这里了，"顺便"就能做检测工程、"顺便"就能做影子 AI 发现、"顺便"就能做内部威胁检测。这种扩展不是随意的功能堆砌，而是一个自然的产品延伸——因为所有这些问题本质上都是对同一张图谱上不同维度的查询。</p>
+
+<p>Damian 提到，客户对影子 AI 检测的需求出乎意料地大。"表面上看起来这是一个治理问题，但因为是数据问题，最终变成了 CISO 的责任。"只要有强大的 EDR 和网络遥测，就能看到大量行为数据——剩下的只是分类，然后让代理确认"这是影子 AI，因为原因 X、Y、Z"。</p>
+</section>
+
+<section>
+<h2>检测不是"写了就完了"</h2>
+
+<p>一个常被忽视的问题是检测规则的生命周期管理。Damian 分享了一个真实的案例：在 Nebulock 平台上，团队针对密码管理器被入侵的场景开发了检测规则。这条规则关联了三个不同数据源中的信号——端点上 vault 文件的异常访问、身份系统中多凭证被不同服务账户调用、云端异常的服务账户行为。</p>
+
+<p>这三类信号分散在不同的数据孤岛中（EDR、IAM、CSPM），单独看任何一个都不足以触发告警。但当它们在图谱中被关联在一起时，就构成了一条高质量的行为检测链。</p>
+
+<p>更重要的是，Damian 强调，Nebulock 要求每条检测规则在创建时<strong>必须附带针对生产数据的测试用例</strong>。"在后端跑一条查询和在真实数据上跑过的关联规则完全是两回事"，他说。平台还持续监控每条检测规则的性能——环境在变，行为模式在变，昨天的规则今天可能已经失效。这种"检测漂移监控" (detection drift monitoring) 在大多数安全产品中仍然缺失。</p>
+</section>
+
+<section>
+<h2>SIEM 已经过时了</h2>
+
+<p>访谈进行到中段，Patrick 抛出了一个直白但深刻的判断：<strong>SIEM 作为一项技术已经过时了。</strong></p>
+
+<p>他的论证是：SIEM 的整个设计哲学是把多维度的安全数据"压平"成人类分析师能阅读的扁平格式。但问题是——数据太多了，人类根本读不过来。于是行业开始让 AI 代理来处理这些被压平的数据，而 AI 代理根本不需要"压平"——它需要的是关系和上下文。这就像先把三维模型拍成二维照片，再让计算机去重建三维信息——中间的信息损失是根本性的。</p>
+
+<p>Damian 完全同意这个判断：<strong>"我们今天理解的 SIEM 根本无法承受未来的负载。先不说以机器速度移动的攻击者，光是我们必须记录的 AI 代理产生的海量数据——这些数据往哪里放？一个已经不堪重负的系统怎么处理？"</strong></p>
+
+<p>两人的共同预测是：Splunk 也许 15 年后还会存在，但五到十年后新建企业的检测栈将与现在完全不同。最终的形态将更像是 AI 代理遍历的图数据库，而不是另一个"云 Splunk"。</p>
+</section>
+
+<section>
+<h2>人+代理的混合劳动力</h2>
+
+<p>Patrick 在访谈中提出了一个很有前瞻性的观察：<strong>"我们现在有一种新的混合劳动力——不是指有时在办公室有时在家，而是说我们有'人类'和'AI 代理'共同工作。所以我们现在必须想办法让代理理解事物，以便我们能更有效地使用它们，反之亦然。"</strong></p>
+
+<p>这个观察触及了安全产品设计的一个根本转变：过去我们设计工具时考虑的"用户"是人类分析师；现在我们必须同时考虑另一个"用户"——AI 代理。代理需要什么样的数据结构？什么样的图结构是代理能高效遍历的？如何让代理在搜索时不会烧掉百万 token？</p>
+
+<p>Damian 将这个转变类比为"设计用户友好的界面，但用户不是人"。这不仅仅是技术上的调整，更是对安全运营模式的重新想象——人定义假设和判断，代理遍历数据和执行检测，图谱作为人机共同的操作界面。</p>
+</section>
+
+<section>
+<h2>架构哲学：按客户构建图谱，集中智能但数据留在原地</h2>
+
+<p>Nebulock 的架构选择反映了一个更广泛的趋势。Damian 分享了他们在构建图谱时的关键决策过程：最初的诱惑是"建一个世界最大的图数据库，把数十亿事件都扔进去"。但实验结果很残酷——代理在这样的巨型图上要么崩溃，要么"开始胡言乱语"。</p>
+
+<p>Damian 的反思是：<strong>"很多代理问题不是因为代理本身有 bug，而是我们给了它一个太大的问题。上下文窗口只有那么大。你不断地问它问题，它在巨大的东西上遍历——这根本管理不了。"</strong></p>
+
+<p>正确的做法是为每个客户构建独立的上下文图谱。但与此同时，也不需要在物理上把所有数据集中到同一个位置。Patrick 和 Damian 讨论了一个更灵活的架构：<strong>集中智能，数据留在原地。</strong>上下文图谱作为集中的操作核心，但代理可以根据需要去任何地方获取上下文——甚至当代理发现经常需要某处的数据时，可以建议将其纳入图谱。</p>
+
+<p>"把 Salesforce 日志回传并保存两年的那个世界，应该已经过去了。"Damian 说。这种"集中智能 + 数据分布"的架构，被认为更能适应人+代理的混合未来。</p>
+</section>
+
+<section>
+<h2>从补充到替代：检测栈的渐变之路</h2>
+
+<p>当被问到 Nebulock 是否会最终替代现有的检测工具时，Damian 的回答务实而坦率：现阶段的目标是补充现有投资，但长远来看确实希望"拥有检测栈"。</p>
+
+<p>他说："一个刚拿到 A 轮融资的公司跳出来说'你不需要之前所有东西'是不诚实的。但确实存在一个世界，你可以在 Nebulock 中构建更好、更准确、更高效的检测规则。如果我们的表现足够好，客户的信任也会随之增长——这需要时间。"</p>
+
+<p>目前已经发生的"有机替代"主要集中在内部威胁检测和 UEBA（用户实体行为分析）类分析平台上。这些产品以高误报率和运营成本著称，而 Nebulock 的上下文推理能力让它在这些领域表现更好。Damian 提到一个四人的安全团队借助 Nebulock 做到了以前无法想象的事情——他称之为"狩猎和检测的钢铁侠战衣"。</p>
+</section>
+
+<section>
+<h2>核心金句</h2>
+
+<div class="quote-block">
+  <div class="quote-item">
+    "我们是 hunt-first 安全运营平台。每次狩猎都应产出结果，这些结果转化为检测规则。"
+    <span class="attr">— Damian Lukie，Nebulock 一分钟 pitch</span>
+  </div>
+  <div class="quote-item">
+    "数据泄露之所以发生，不是因为缺少告警信号，而是因为低信号或无信号的事件被忽视了。我们来找到它们。"
+    <span class="attr">— Damian Lukie，谈 Nebulock 的核心价值主张</span>
+  </div>
+  <div class="quote-item">
+    "如果你不解决数据问题，分析有什么用？你的查询会崩溃，一切都不会工作。"
+    <span class="attr">— Damian Lukie，谈数据归一化的必要性</span>
+  </div>
+  <div class="quote-item">
+    "我们今天理解的 SIEM 根本无法承受未来的负载。"
+    <span class="attr">— Damian Lukie，谈 SIEM 的终局</span>
+  </div>
+  <div class="quote-item">
+    "很多代理问题不是代理本身有 bug，而是我们给了它一个太大的问题——上下文窗口只有这么大。"
+    <span class="attr">— Damian Lukie，谈 AI 代理架构的经验教训</span>
+  </div>
+  <div class="quote-item">
+    "很容易相信'买了正确的工具，我就有韧性了'——但实际上没有工具是完美的，这就是为什么我们都需要遥测日志。"
+    <span class="attr">— Damian Lukie，谈安全工具的局限性</span>
+  </div>
+</div>
+</section>
+
+<footer>
+  原文来自 <a href="https://risky.biz/SOAPBOX109/" target="_blank" rel="noopener">Risky Business Soap Box: Using threat hunting to drive detection</a> · 嘉宾 Damian Lukie · 2026 年 7 月
+</footer>
+
+</article>
+</body>
+</html>

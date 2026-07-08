@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Hormozi 的亿万商业玩法 — PodDeck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    -webkit-font-smoothing: antialiased;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #888;
+  }
+  .meta span { margin: 0 6px; }
+  .overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    margin: 32px 0 48px;
+  }
+  .topic-card {
+    padding: 18px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .tc-blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .tc-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .tc-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .tc-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .tc-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .tc-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .topic-card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    color: #111;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  p { margin-bottom: 16px; }
+  blockquote {
+    margin: 24px 0;
+    padding: 20px 24px;
+    background: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    font-size: 17px;
+    color: #334155;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-style: normal;
+    color: #94a3b8;
+  }
+  .gloss {
+    color: #94a3b8;
+    font-size: 13px;
+  }
+  .quotes-section {
+    margin: 40px 0;
+  }
+  .quote-item {
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-style: italic;
+    line-height: 1.65;
+  }
+  .qi-blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .qi-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .qi-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .qi-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .qi-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .qi-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .quote-item .ctx {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #94a3b8;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  @media (max-width: 600px) {
+    article { padding: 24px 16px 60px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    body { font-size: 16px; }
+    .overview { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Alex Hormozi 的亿万商业玩法</h1>
+  <div class="meta">Alex Hormozi · TBPN 播客 · 2026 年 7 月 · 约 1 小时</div>
+</header>
+
+<section>
+  <p>Alex Hormozi 是那种你很难用一个标签定义的人。他是畅销书作者（《$100M Offers》《$100M Leads》）、acquisition.com 的创始人、YouTube 上最火的商业内容创作者之一，也是 Bridgewater 之外少有的用自己的平台和资本同时做投资和运营的人。这期 TBPN 的对谈从他的写书习惯聊到 AI 时代的商业策略，从医美诊所的投资逻辑聊到他对 "损失一切" 的哲学回应——密度极高，几乎每一段对话都能独立成章。</p>
+
+  <div class="overview">
+    <div class="topic-card tc-blue">
+      <strong>写书的底层逻辑</strong>
+      不是坐在桌前憋两周——用 18 个月在生活中收集 "思想的表面积"，等素材密度足够再动笔。
+    </div>
+    <div class="topic-card tc-green">
+      <strong>产量消除运气</strong>
+      "Volume negates luck"——这句话挂在他公司 HQ 的墙上。媒体、生意、人生的通用法则。
+    </div>
+    <div class="topic-card tc-yellow">
+      <strong>AI 的正确用法</strong>
+      不要用 AI 更快地做蠢事。把组织架构思维变成工作流思维，同样的团队，3-5 倍产出。
+    </div>
+    <div class="topic-card tc-red">
+      <strong>客户是分形的</strong>
+      每个价格层级都会带来上一层级收入的翻倍。1% 的客户可能贡献总收入的一半。
+    </div>
+    <div class="topic-card tc-purple">
+      <strong>品牌+资本+运营</strong>
+      acquisition.com 的进化路径：家族办公室→咨询→三位一体。宁可少押几个注，但每个做到极致。
+    </div>
+    <div class="topic-card tc-orange">
+      <strong>模仿上升期，不是平台期</strong>
+      成功人士的桑拿和私人飞机是成功后的结果，不是成功前的工作量。抄作业要抄对页。
+    </div>
+  </div>
+</section>
+
+<h2>写书的三个法则</h2>
+
+<p>Alex 写书的节奏是每 18 个月到 2 年出一本，但他真正的写作时间远短于思考时间。他称之为 <strong>"思想的表面积"（surface area of thought）</strong>——手机里随时存着 10 本书的笔记，在不同阶段、不同成熟度，灵感来了就补充。作为一个 "不相信闭关两周能写出一本好书" 的人，他更愿意让素材在足够长的时间和足够多的生活场景中自然碰撞。</p>
+
+<blockquote>
+  "I'm a big believer in surface area of thought."
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>他举了一个形象的比喻——"趁湿画画"（paint it while it's wet）。如果你在遇到妻子的第二天就写下相遇的故事，细节会比你 20 年后再回忆丰富得多。所以他的创作哲学是：在素材最新鲜的时候记录，然后让它随时间慢慢干透。</p>
+
+<blockquote>
+  "while it's wet, like paint it and then let it dry over time"
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>第三个法则是 <strong>"窄问题定义"</strong>。他的第二本书《Leads》写了 19 个版本才定稿——因为他 "天真地以为能在一本书里覆盖所有获客方式"。相比之下，《Money Models》只讲 "促销包装方式" 这一个窄话题，反而是写得最快的一本。Alex 由此得出一个反直觉的结论：窄，不意味着浅；窄意味着读者真的能读完它、用上它。</p>
+
+<h2>Volume Negates Luck：不只适用于媒体</h2>
+
+<p>这句话挂在 acquisition.com 总部的墙上，但它远不只是一种内容策略。</p>
+
+<blockquote>
+  "Volume negates luck."
+  <span class="attr">—— 挂在 acquisition.com 总部墙上的信条</span>
+</blockquote>
+
+<p>Alex 的 YouTube 之路从 2020 年的衣柜起步——刚卖掉公司，和妻子全球旅行一年，打开一个手提箱就是工作室，每周 3 条视频。后来有人主动联系他做 Shorts 剪辑，纯属偶然踩中了 Shorts 的早班车。当对方说 "如果你让我专门拍 Shorts 素材效果更好" 时，他的回应极其 Alex 风格："行，但我一个季度就拍一天"——一天 100 条 Shorts。</p>
+
+<p>在 Alex 的框架里，"产量" 有三个层次：内容创作上，能做的量全都做了；商业决策上，24 个月做了 24 笔交易，靠数量换取筛选空间；人生哲学上，不赌单次运气，而是让自己有足够多的出手次数。量大到一定程度，运气本身被消除。</p>
+
+<p>这不是什么神秘公式。就是做得足够多、足够久，让你不需要依赖任何一次 "押对" 来获得成功。</p>
+
+<h2>杠铃策略：为什么中间地带最危险</h2>
+
+<p>Alex 的媒体哲学是杠铃式的：要么追求极致的品质——像蒙娜丽莎一样的作品，电视节目级别的高制作，目标是品牌权威和新分发渠道；要么追求极致的产量——只要每一秒都有价值，就拼命产出，这条路离购买行为最近。</p>
+
+<p>最危险的是中间地带——不够精良到提升品牌，也不够高产到消除运气。用他的话来说："这是两种不同的游戏，服务不同的目标。" 蒙娜丽莎那一端是上层漏斗，带来新的受众群体；量产那一端是中下层漏斗，离变现最近。聪明的人不会试图在中间找一个 "省力" 的平衡点，而是两端同时下注。</p>
+
+<p>他特别提到了 2026-2027 年最看好的媒体格式：<strong>直播互动</strong>。他的逻辑值得深思——"在 AI 时代，什么事情不能被伪造？有赌注的事情。" MrBeast 的视频如果不是真金白银的 500 万美金，不是真的兰博基尼，"赌注" 就消失了。AI 能生成任何虚构故事——但观众内心仍然渴望看到真实的风险、真实的成败、真实的人类在压力下的反应。这就是 "赌注" 的价值，也是 AI 做不出来的内容。</p>
+
+<h2>AI 时代，小企业主的三大误区</h2>
+
+<p>在 AI 这件事上，Alex 的视角既有实用主义的锋利，也有对 "伪生产力" 的冷嘲。他归纳了小企业主最常见的三个错误：</p>
+
+<p><strong>第一，用 AI 更快地做蠢事。</strong>一个本不赚钱的小企业主，引入了 AI 之后——仍然不赚钱，只是多了一些 token 账单。AI 放大了执行效率，但也放大了方向性的错误。核心问题从来不是技术，而是判断什么值得做。</p>
+
+<p><strong>第二，沉迷于伪生产力工具。</strong>Alex 的吐槽直击要害："我从来不需要 AI 会议纪要来达成我的商业目标。我就是想——下一个最重要的事是什么？做那件事。" 他用一句话来检验任何工具的实质价值："你的会议纪要系统是很牛——那，你到底赚了多少钱？"</p>
+
+<p><strong>第三，分心去建 'AI 创业项目'。</strong>一个干洗店老板看到 AI 很酷，于是开始同时经营干洗店和开发 "干洗店 AI Agent 操作系统"。正确做法：用 AI 来赢在干洗行业——因为你的竞争对手肯定不会正确使用 AI。</p>
+
+<h2>AI 的正确打开方式：从组织架构到工作流</h2>
+
+<p>Alex 给出的方案并不复杂：把企业从 <strong>组织架构思维</strong>转变为 <strong>工作流思维</strong>。</p>
+
+<p>具体怎么操作？把公司的每个部门拆成工作流。假设一个编辑以前参与 6 个工作流——重新审视后你会发现，实际上只需要他参与 3 个。另外 3 个，AI 可以完成绝大部分工作。不裁人、不招新人——同样的团队，产出直接变成 3 到 5 倍。</p>
+
+<p>而且 Alex 指出了一个关键的时间窗口："价格暂时还不会调整，这意味着你的利润率会变得不可思议地高。" 他提出了两种真正有效的 AI 打法：</p>
+
+<p>一种是 <strong>"隐身 AI 服务公司"</strong>——客户以为背后全是人，你按人工服务定价收费，但实际成本结构是技术成本。</p>
+
+<blockquote>
+  "don't tell people you're using AI"
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>另一种是 <strong>按部门逐步 AI 化</strong>——识别哪些工作流可以交给 AI，哪些还需要人工。不需要一步到位，不需要同时改造所有部门。</p>
+
+<p>还有一点容易被忽视：<strong>数据层</strong>。Alex 在 acquisition.com 内部做了一个巨大的数据仓库，把所有销售文案、客户证言、视频素材、宣传物料集中管理。然后 AI 实时从仓库中抽取素材，匹配到动态生成的广告和数百个动态落地页——整个过程是程序化的。"我们不是 AI 公司，但我们把 AI 用到了极致。" 但对大多数小企业主来说，问题不是没有 AI 工具，而是没有结构化的数据让 AI 发挥价值。</p>
+
+<h2>医美诊所：看起来 "太容易" 的黄金赛道</h2>
+
+<p>Alex 仍在寻找 "完美的医美标的"，但他的分析框架值得任何一个想进入服务行业的人学习。</p>
+
+<p><strong>需求端：</strong>老龄化人口 + 最多的可支配收入 + 不想变老的欲望 + Brian Johnson 式的长寿风潮。这个组合造就了一个巨大且持续增长的需求池。</p>
+
+<p><strong>供给端：</strong>全美约 10,000-15,000 家医美诊所，高度分散，严重供给不足。这不是一个 "需要拼命抢客户" 的市场——恰恰相反，很多诊所的客户获取成本为零，客户告诉客户就来了。Alex 每周见大量企业主，医美诊所是他看到的 "做得好得不正常" 的赛道之一：有些诊所年营收 $6M、40% 利润率，但创始人连一个像样的营销策略都没有。</p>
+
+<p>但这门生意真正的问题是 <strong>技术人才</strong>——能做注射和激光的人比诊所的数量更稀缺。而且这些技术人员有一个天然的优势：太容易自己开门了，挂个招牌就能带走客户。Alex 的解决方案来自他教父（一位白手起家管理数十亿美元财富的理财师）的模型：<strong>合伙人制</strong>——"让他拿 51%，这样他就永远不想离开，然后你让他干所有的活。" 客户忠诚的是那个给她打针的姑娘，不是诊所品牌，所以唯一的解法是让技术人员觉得 "这是我自己的生意"。</p>
+
+<h2>定价哲学：客户是分形的</h2>
+
+<p>Alex 最深的定价洞见可能不是 "价格歧视"，而是他提出了 "客户是分形的"（fractal）这个概念。</p>
+
+<p>具体来说：如果月付 $100 的客群贡献了总收入的一半，那么在 $500、$2,500、$10,000+ 的层级上，<strong>各自都存在另一个收入翻倍的机会</strong>。1% 的客户可以贡献总收入的一半——而且每个价格层级都遵循相同的规律。</p>
+
+<p>绝大多数企业主的障碍不在定价策略本身，而在于心理层面。</p>
+
+<blockquote>
+  "They feel weird about it and they sell out of their own wallet."
+  <span class="attr">—— Alex Hormozi 谈为什么大多数企业主不敢定高价</span>
+</blockquote>
+
+<p>Alex 的做法极其简单：把每个价位的产品放在那里，陈述事实，不遮不掩。如果有人看到价格觉得 "这对我来说根本不算贵"——那就是为这个人设计的。如果有人觉得被冒犯了——"好消息，我们有不那么冒犯的价格。"</p>
+
+<p>他的营销团队的座右铭是 "state the facts and tell the truth"，重点是 "truth" 是指<strong>完整的真相</strong>，不是方便的那一半。从 "我没什么要卖给你" 到 "现在我有东西要卖"——他品牌转变的方式就是直接说真话："不想买的，继续免费拿东西。想深入合作的，花点钱。资本主义是自愿交换。没人强迫你。"</p>
+
+<h2>从家族办公室到品牌+资本+运营</h2>
+
+<p>acquisition.com 的进化路径是一堂生动的商业策略课。Alex 坦诚地讲述了这个过程：</p>
+
+<p><strong>阶段一</strong>，他和妻子 Leila 用自己的钱做投资——现金流型家族办公室。"那是我人生中最轻松的一段时光，但我无聊得要死。"</p>
+
+<p><strong>阶段二</strong>，24 个月做了 24 笔交易。遵循投资组合理论——24 笔里大约只有 3 家是真正优秀的好公司。但这时发生了一件事：他们的个人品牌爆炸式增长。</p>
+
+<p><strong>阶段三</strong>，他们意识到品牌的价值可能比自有现金更大。2024 年 1 月启动了咨询服务——"第一年，光这一个业务单元就实现了 $36,000,000 的 EBITDA。"</p>
+
+<p><strong>阶段四</strong>，不再单纯做投资——"品牌 + 资本 + 运营，三个同时上。宁可少押几个注，但要获得巨大的超额回报。"</p>
+
+<blockquote>
+  "Zuckerberg didn't have Airbnbs as a side hustle. If you have a stallion, run it."
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>他现在的 School 平台拥有 3,000 万用户和超过 10 亿美元的 GMV。当你有了一匹 "种马" 级别的业务，分散精力去做副业的机会成本不是线性的，而是指数级的。</p>
+
+<h2>做工作的本质：醒来、喝咖啡、开始</h2>
+
+<p>Alex 对 "晨间惯例" 的看法可能是这一整期访谈中最 "反潮流" 的部分。</p>
+
+<blockquote>
+  "wake up and then you caffeinate. You shut off your distractions and then you begin the work."
+  <span class="attr">—— Alex Hormozi 的整个晨间惯例</span>
+</blockquote>
+
+<p>他的逻辑很直接：如果你每天早上用三个小时做冥想、桑拿、冰浴——那三个小时正是你一天中认知最清晰、精力最充沛的时间。你需要一个非常强的论据来证明这三小时能提升你的产出。大多数情况下，这不是生产力系统——这是爱好。爱好本身没毛病，但别骗自己说这是工作。</p>
+
+<p>他进一步指出了一个更深的归因谬误："富人有私人飞机，所以我应该坐私人飞机来变富。这逻辑不通。" 成功人士的桑拿和晨间仪式是成功<strong>之后</strong>的事。他们<strong>成功之前</strong>的日常——你可能根本没看到。那些日子可能是早上 6 点起来、只睡 4 小时、连续工作 16 个小时的日常。但没有人把那段日子做成短视频。Alex 称之为 <strong>"模仿上升期，不是平台期"</strong>。</p>
+
+<h2>选对赛道，然后不要停</h2>
+
+<p>Alex 给年轻人的核心公式出乎意料地简洁：<strong>你的成就 = 你做的活动量 × 活动本身的杠杆</strong>。</p>
+
+<p>"产量" 是你投入了多少时间和频次——这方面你可以控制。"杠杆" 是你选的赛道——引用 Naval 的话，把一个餐厅经营得非常成功很难，把一个独角兽做上市也很难，两者都可能需要每周 80 个小时。但两者的杠杆完全不同。</p>
+
+<p>所以他给的建议分三步：第一，<strong>想清楚你要什么</strong>——不是每个人都想成为万亿富翁，不要用别人的目标框住自己。第二，<strong>找到到达那里概率最高的那条路</strong>。第三，<strong>不要让那些没有你想要的成果的人的 opinion 干扰你</strong>。</p>
+
+<blockquote>
+  "controlling the controllable. That's basically all I can do."
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>还有一个贯穿始终的务实建议：<strong>先戴上自己的氧气面罩</strong>。Alex 能下越来越大的赌注，不是因为他胆子大，而是因为他早就确保了自己 "最差的结果对生活质量的影响约等于零"。</p>
+
+<blockquote>
+  "I would like to get my oxygen mask on personally."
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>他借用 Keith Cunningham 的经典框架来判断任何风险：最好情况是什么？最坏情况是什么？我能接受最坏情况吗？如果你不能接受最坏情况——不要下注。</p>
+
+<h2>证据第一，其他都是噪音</h2>
+
+<p>Alex 对自己爆发的解读极其坦诚——甚至可以说是冷酷。他的播客从 2017 年 7 月上线，月均 2,000 次下载。然后发生了什么？</p>
+
+<p>他以 <strong>$46,200,000</strong> 卖掉了自己的公司。下载量从几千跳到了百万级。</p>
+
+<blockquote>
+  "the proof is the pudding"
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>在商业内容领域，没有实体战绩，再好的内容也只是纸上谈兵。Alex 的总结很锋利：如果你是一个在地下室直播教别人投 S&P 500 的人，即使你每个字都和 Warren Buffett 一模一样，甚至表达得更好——你不会成为 Warren Buffett。因为你忘了建 Berkshire Hathaway。消费者在采取行动前会做风险评估——美妆博主的证据门槛低（一支口红几十块），理财博主和商业教练的证据门槛则要高得多。</p>
+
+<h2>那些不能被 "优化" 掉的东西</h2>
+
+<p>访谈的尾声进入了一个更深层的维度。节目的主持人之一有一个朋友的框架——"pre-fall" 还是 "post-fall"：你能瞬间判断一个人是否经历过最低谷、被彻底打碎过。经历过的人更谦逊、更务实、不会过度杠杆。没经历过的人还在做很多危险的事而不自知。</p>
+
+<p>Alex 的回应既接纳了这个框架，又超越了它。</p>
+
+<blockquote>
+  "I've lost everything two times. ... I just commit to not stopping."
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>"我不认为这是二元的。人在生命中不同阶段会经历不同的艰难。我两次失去一切。那我现在是 post-fall 了吗？嗯，我相当确定坏事还会来。所以我只承诺一件事——不停下来。"</p>
+
+<p>然后是他在访谈中最喜欢的一段引用——来自他的 CFO Suzanne Schifflett，一位经历过 20 多次买卖方交易的老手。当时 Alex 还在纠结各种倍数的好坏，她用最真诚的语气说了那句话：</p>
+
+<blockquote>
+  "It's all shit. Every business is shit. It's all shit."
+  <span class="attr">—— Suzanne Schifflett，Alex 的 CFO</span>
+</blockquote>
+
+<p>这不是消极。这是经历过足够多的周期之后的通透。当你真正理解 "每门生意都是屎，只是不同种类的屎而已" 时，你就不再幻想有一个完美的生意。你会诚实地面对自己的问题：我选哪种 "屎" 我愿意吃？我的风险承受力是什么？我能接受的最坏情况是什么？</p>
+
+<p>因为，如 Alex 所说——</p>
+
+<blockquote>
+  "humans are inherently dissatisfied. And I think whatever you have, you want what you don't have."
+  <span class="attr">—— Alex Hormozi</span>
+</blockquote>
+
+<p>我们永远只想要 trade-off 的好处，不想要 trade-off 的成本。但这就是生活。选一条路，走 20 年，只要有一个自我改进的反馈循环在运转——失败的概率基本上为零。</p>
+
+<div class="quotes-section">
+  <h2>核心金句</h2>
+  <div class="quote-item qi-blue">
+    "Volume negates luck."
+    <span class="ctx">——挂在 acquisition.com 总部墙上，Alex 整个商业哲学的核心</span>
+  </div>
+  <div class="quote-item qi-green">
+    "while it's wet, like paint it and then let it dry over time"
+    <span class="ctx">——写书的哲学：在素材最新鲜时记录，随时间沉淀</span>
+  </div>
+  <div class="quote-item qi-yellow">
+    "state the facts and tell the truth"
+    <span class="ctx">——Alex 营销团队的座右铭：完整真相，不遮不掩</span>
+  </div>
+  <div class="quote-item qi-red">
+    "wake up and then you caffeinate. You shut off your distractions and then you begin the work."
+    <span class="ctx">——整个晨间惯例，一行字概括</span>
+  </div>
+  <div class="quote-item qi-purple">
+    "don't tell people you're using AI"
+    <span class="ctx">——按人工价格收费，用技术成本交付，享受超高利润率</span>
+  </div>
+  <div class="quote-item qi-orange">
+    "I've lost everything two times. ... I just commit to not stopping."
+    <span class="ctx">——两次归零，唯一的选择是不停</span>
+  </div>
+</div>
+
+<footer>
+  <p>原文来源：<a href="https://share.transistor.fm/s/0165318c">Alex Hormozi's Playbook for Building Billion-Dollar Businesses on TBPN</a></p>
+  <p style="margin-top: 8px;">由 PodDeck 生成 · 2026 年 7 月</p>
+</footer>
+
+</article>
+</body>
+</html>

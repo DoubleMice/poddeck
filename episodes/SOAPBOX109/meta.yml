@@ -1,0 +1,30 @@
+id: SOAPBOX109
+source: risky-business
+title: "Soap Box: Using threat hunting to drive detection"
+guest: "Damian Lukie"
+guest_role: "Nebulock CEO & Founder"
+published: "2026-07"
+duration: "35m"
+url: "https://risky.biz/SOAPBOX109/"
+thumbnail: "https://risky.biz/static/img/rb-feed-main.png"
+status: generated
+tags:
+  - startup
+  - ai-products
+  - interview
+  - ceo
+  - founder
+  - quick-take
+  - technical
+  - strategic
+summary: |
+  Nebulock CEO Damian Lukie 分享了他从 AI 威胁狩猎起步、逐步构建上下文图谱安全分析平台的创业历程。他认为安全本质上是数据问题，而当前 SIEM "压平数据给人看"的范式已经过时——AI 代理需要的是关系图谱而非扁平日志。Nebulock 正在走一条从"补充现有工具"到"逐步替代检测栈"的道路。
+core_ideas:
+  - '"安全本质上就是数据问题"——不同工具的不同 schema 是分析最大的障碍，归一化是做好检测的前提。'
+  - '上下文图谱 (context graph) 将身份、主机、服务账户、进程连接在一起，AI 代理可以在图上高效遍历和推理。'
+  - 'SIEM 已经过时：将多维数据"压平"为人类可读格式，然后让 AI 处理这些被压平的数据——整个逻辑链条已断裂。'
+  - '因为 AI 代理的存在，图谱的价值才真正释放：十年前人类无法遍历的复杂图，现在代理可以轻松处理。'
+  - '按客户构建图谱而非一个巨型图数据库——代理问题往往不是代理的错，而是我们给了它太大的问题。'
+  - '从狩猎到检测的闭环：好的威胁狩猎应该产出可运行的检测规则，而不是 JIRA 工单。Nebulock 把这个流程从两周缩短到三分钟。'
+article_path: episodes/SOAPBOX109/article.html
+base: /episodes/SOAPBOX109/
