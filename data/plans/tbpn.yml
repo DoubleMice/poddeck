@@ -1,57 +1,75 @@
 source: tbpn
-refreshed_at: 2026-07-07T18:44:08.275Z
+refreshed_at: 2026-07-08T04:08:31.592Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
-done: 1
-pending: 1
+total_candidates: 3
+done: 0
+pending: 3
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 1b7cd95f-b625-4916-9e37-2b2197e478c9
-    guid: 1b7cd95f-b625-4916-9e37-2b2197e478c9
-    title: XBOX Layoffs, "Manual" Ferrari, Circle K Lottery Dispute | Baiju Bhatt, Daniel English, Michele Catasta
-    duration: 7558
-    published: Mon, 06 Jul 2026 13:32:29 -0700
-    published_sort: "20260706"
-    first_seen_at: 2026-07-07T04:27:22.380Z
-    url: https://share.transistor.fm/s/5fcc7e7e
-    audio_url: https://media.transistor.fm/5fcc7e7e/6ee348b3.mp3
+  - id: 61de3469-b6f9-4a76-8da2-31630382bf82
+    guid: 61de3469-b6f9-4a76-8da2-31630382bf82
+    title: China Export Controls, Jeremy Giffon Breaks Silence, Alex Hormozi in the Ultradome | Josh Zoffer, John McElhone,
+      Deena Shakir, Hussein Fazal, John Nay
+    duration: 8391
+    published: Tue, 07 Jul 2026 13:45:03 -0700
+    published_sort: "20260707"
+    first_seen_at: 2026-07-08T04:08:31.584Z
+    url: https://share.transistor.fm/s/fc38ff83
+    audio_url: https://media.transistor.fm/fc38ff83/4ca73845.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/5fcc7e7e/transcription.txt
+    transcript_url: https://share.transistor.fm/s/fc38ff83/transcription.txt
     transcript_type: text/plain
-    summary: "(03:58) - XBOX Layoffs\r
+    summary: "(04:13) - China Export Controls\r
 
-      (21:13) - \"Manual\" Ferrari\r
+      (12:49) - SK Hynix Sets to Raise $28B\r
 
-      (31:21) - 𝕏 Timeline Reactions\r
+      (15:51) - Meta Unveils Muse Image\r
 
-      (50:23) - Circle K Lottery Dispute\r
+      (20:41) - Jeremy Giffon Breaks Silence\r
 
-      (01:05:31) - Baiju Bhatt, co-founder of Robinhood and CEO of Cowboy Space Corporation, discusses the evolution of
-      his company from Aetherflux to Cowboy Space, focusing on developing vertically integrated orbital data centers and
-      launch vehicles to meet the growing demand for AI computing. He emphasizes the importance of designing rockets and
-      data centers as a unified system to optimize performance and cost-effectiveness, aiming to harness solar energy in
-      space to power these data centers. Bhatt also highlights the shift in the space industry towards commercial
-      payloads, particularly for AI applications, and the need for companies to control their own launch capabilities to
-      meet this demand efficiently.\r
+      (22:42) - 𝕏 Timeline Reactions\r
 
-      (01:31:17) - Daniel English, co-founder and managing partner of Legacy Investing, transitioned from tech
-      entrepreneurship to real estate investment, focusing on data centers, logistics, and life sciences facilities. In
-      the conversation, he discusses the evolution of data centers, highlighting their increasing importance due to AI
-      and cloud computing, and emphasizes the strategic conversion of underutilized urban office buildings into
-      high-density data centers to meet growing infrastructure demands.\r
+      (28:35) - Alex Hormozi is an entrepreneur, investor, and author best known for founding Acquisition.com, where he
+      invests in and advises growing businesses. He is the author of $100M Offers and $100M Leads, and is widely known
+      for sharing practical frameworks on entrepreneurship, marketing, sales, and scaling companies.\r
 
-      (01:49:05) - Michele Catasta, President and Head of AI at Replit, discusses the evolution from \"vibe coding\" to
-      \"vibe building,\" emphasizing the shift towards enabling users to create customized AI agents that autonomously
-      accomplish tasks end-to-end. He highlights the importance of thinking in terms of goals rather than specific
-      applications, allowing agents to determine the necessary steps and code to achieve desired outcomes. Catasta also
-      predicts a future where agents replace traditional apps, streamlining workflows and reducing reliance on
-      deterministic software.\r
+      (01:29:29) - Josh Zoffer, an investor and head of research at CIV, formerly a White House National Economic
+      Council and US Treasury adviser, discusses the strategic importance of data centers in the United States. He
+      emphasizes that data centers are not merely collections of chips but also involve critical technologies like power
+      electronics and industrial materials such as steel. Zoffer warns that if the U.S. hinders data center
+      construction, it risks losing control over essential supply chains, potentially repeating past mistakes that led
+      to reliance on foreign sources for critical materials.\r
 
-      (02:00:07) - 𝕏 Timeline Reactions
+      (01:41:52) - John McElhone, founder of American Turbines, discusses his company's development of compact,
+      1-megawatt natural gas turbines designed for rapid deployment, capable of powering over a thousand homes and
+      fitting in the back of a pickup truck. He emphasizes the advantage of utilizing the abundant and inexpensive
+      natural gas supply in the United States, making this technology particularly suitable for the domestic market.
+      McElhone also highlights the company's focus on scaling production through automation, aiming to revolutionize
+      energy generation by simplifying turbine design and manufacturing processes.\r
+
+      (01:47:32) - Deena Shakir, a General Partner at Lux Capital, invests in transformative technologies across sectors
+      such as women's health, digital health infrastructure, health equity, foodtech, and fintech. In the conversation,
+      she discusses Lux Capital's recent investment in 1001, an AI company based in the Gulf Cooperation Council (GCC)
+      region, highlighting the potential for applied AI in the Gulf and the opportunity for rapid, large-scale
+      deployments. She also emphasizes the importance of homegrown companies in the GCC and the unique opportunity to
+      build sovereign AI companies focused on the region.\r
+
+      (01:54:38) - Hussein Fazal, co-founder and CEO of Super.com, discusses the company's recent $65 million Series D
+      funding led by TPG at a $1.2 billion valuation, and its evolution into a savings super app offering discounts on
+      hotels, gas, insurance, and financial services tailored for everyday Americans. He highlights the integration of
+      AI to expedite product development and the strategic partnership with NASCAR to enhance brand visibility among
+      their target demographic.\r
+
+      (02:07:01) - John Nay, founder and CEO of Norm AI, discusses the company's recent $120 million funding round at a
+      $1.2 billion valuation, highlighting their shift from selling AI tools to in-house legal teams to establishing
+      Norm Law LLP, a law firm powered by AI agents. He emphasizes the value of vertical integration, with AI engineers
+      and lawyers collaborating closely to reinvent legal workflows, and advises law students to focus on legal
+      engineering by applying AI to legal reasoning. Nay also notes that while international expansion is considered, it
+      requires deliberate planning to ensure the necessary legal expertise in each jurisdiction.
 
 
       TBPN is made possible by:
@@ -106,7 +124,70 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
+    priority: 1
+  - id: 2a09f6d1-d56f-4af6-9d82-f1d6408475dd
+    guid: 2a09f6d1-d56f-4af6-9d82-f1d6408475dd
+    title: Alex Hormozi's Playbook for Building Billion-Dollar Businesses
+    duration: 3642
+    published: Tue, 07 Jul 2026 13:25:21 -0700
+    published_sort: "20260707"
+    first_seen_at: 2026-07-08T04:08:31.584Z
+    url: https://share.transistor.fm/s/0165318c
+    audio_url: https://media.transistor.fm/0165318c/df50fbb0.mp3
+    image: https://img.transistorcdn.com/ieYcv4Ca__RtK9CPm-Dl2BmVDyS0So0gKLNvX7ge_nE/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS84MjFl/OWY1MGJmODkxZmI3/NmZmMTUzODM0MDZm/NDRlYi5wbmc.jpg
+    transcript_url: https://share.transistor.fm/s/0165318c/transcription.txt
+    transcript_type: text/plain
+    summary: >-
+      This is our full conversation with Alex Hormozi.
+
+
+      We discuss his philosophy on choosing the right business, the biggest mistakes entrepreneurs make with AI, why
+      volume beats perfection in media, how he built one of the largest business education brands in the world, what
+      founders get wrong about personal branding, why opportunity selection matters more than most people realize, and
+      how Acquisition.com is evolving from a family office into a brand-powered investment platform.
+
+
+      TBPN is made possible by:
+
+      Ramp - https://ramp.com
+
+      Public - https://public.com
+
+      Cisco - https://www.cisco.com
+
+      Console - https://www.console.com
+
+      CrowdStrike - https://www.crowdstrike.com
+
+      Figma - https://www.figma.com
+
+      MongoDB - https://www.mongodb.com
+
+      NYSE - https://www.nyse.com
+
+      Railway - https://railway.com
+
+      Shopify - https://www.shopify.com/
+
+      Codex - http://openAI.com/codex
+
+
+      Sign up for TBPN’s daily newsletter at TBPN.com
+
+
+      Follow TBPN:
+
+      https://TBPN.com
+
+      https://x.com/tbpn
+
+      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
+
+      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
+
+      https://www.youtube.com/@TBPNLive
+    status: pending
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
