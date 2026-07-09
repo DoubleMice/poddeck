@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Chopping Block: Tokens vs Equity, Lighter's Robinhood Perps Deal, and Trump's $2.4B Crypto Windfall</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fafbfc;
+    padding: 0;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e8eaed;
+  }
+  header h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #666;
+  }
+  header .meta span { margin: 0 8px; }
+  .overview {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+  .overview h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card strong { display: block; margin-bottom: 4px; }
+  .card-blue   { background: #e8f0fe; border-left: 4px solid #1a73e8; }
+  .card-green  { background: #e6f4ea; border-left: 4px solid #34a853; }
+  .card-orange { background: #fef7e0; border-left: 4px solid #f9ab00; }
+  .card-red    { background: #fce8e6; border-left: 4px solid #ea4335; }
+  .card-purple { background: #f3e8fd; border-left: 4px solid #9334e6; }
+  section {
+    margin-bottom: 40px;
+  }
+  section h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e8eaed;
+  }
+  section p {
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+  .insight-box {
+    background: #e8f0fe;
+    border-left: 4px solid #1a73e8;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 15px;
+  }
+  .insight-box.green  { background: #e6f4ea; border-color: #34a853; }
+  .insight-box.yellow { background: #fef7e0; border-color: #f9ab00; }
+  .insight-box.red    { background: #fce8e6; border-color: #ea4335; }
+  .insight-box.purple { background: #f3e8fd; border-color: #9334e6; }
+  .quotes {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 48px 0;
+  }
+  .quotes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .quote-block {
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .quote-block .attribution {
+    display: block;
+    margin-top: 6px;
+    font-style: normal;
+    font-size: 13px;
+    opacity: 0.65;
+  }
+  .qz-blue   { background: #e8f0fe; border-left: 4px solid #1a73e8; color: #1a3a5c; }
+  .qz-green  { background: #e6f4ea; border-left: 4px solid #34a853; color: #1a3a2a; }
+  .qz-yellow { background: #fef7e0; border-left: 4px solid #f9ab00; color: #4a3a1a; }
+  .qz-red    { background: #fce8e6; border-left: 4px solid #ea4335; color: #4a1a1a; }
+  .qz-purple { background: #f3e8fd; border-left: 4px solid #9334e6; color: #2a1a3c; }
+  .qz-orange { background: #fff3e0; border-left: 4px solid #e8710a; color: #3a2a1a; }
+  .gloss {
+    color: #888;
+    font-size: 14px;
+    font-style: normal;
+  }
+  footer {
+    text-align: center;
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid #e8eaed;
+    font-size: 13px;
+    color: #999;
+  }
+  footer a { color: #1a73e8; text-decoration: none; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>The Chopping Block: Tokens vs Equity, Lighter's Robinhood Perps Deal, and Trump's $2.4B Crypto Windfall</h1>
+  <div class="meta">
+    Haseeb · Tom · Robert · 嘉宾 Vlad (Lighter)<span>|</span>Chopping Block<span>|</span>2026 年 7 月
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+
+    <div class="card card-blue">
+      <strong>代币 vs 股权</strong>
+      加密行业最持久的争论被 Venice 的 $65M 融资重新点燃——当代币和股权同时存在时，谁的利益优先？三种不同的项目架构代表了三种不同的答案。
+    </div>
+
+    <div class="card card-green">
+      <strong>Robinhood × Lighter</strong>
+      DeFi Mullet 范式的里程碑事件。数千万用户的 Robinhood 钱包，其永续合约交易引擎运行在 Lighter 的 DeFi 后端上。不是宣示信念，而是因为 DeFi 技术就是更好。
+    </div>
+
+    <div class="card card-orange">
+      <strong>Bonk 治理攻击</strong>
+      7 个人投票，$20M 国库被搬空。链上治理缺失了传统公司法中最基本的安全网，而这并非孤例——从 Beanstalk 到 Humpty，治理攻击是已知的、可预防的失败模式。
+    </div>
+
+    <div class="card card-red">
+      <strong>Trump $2.4B 加密财富</strong>
+      927 页总统财务披露揭示了一个惊人事实：Trump 家庭从加密项目的税后收入约 $1.4B。散户投资者亏损总额恰好约 $2.3B——与 Trump 的税前收入完美对等。故事简洁、政治杀伤力极强。
+    </div>
+
+    <div class="card card-purple">
+      <strong>ZK 互操作性</strong>
+      如何在多个独立链上交易实例之间保持流动性效率？Lighter 给出的答案是零知识证明——让做市商可以近乎即时地在实例间转移资金，接近统一订单簿的效率。
+    </div>
+
+    <div class="card card-orange">
+      <strong>加密政治化的十字路口</strong>
+      Trump 的加密财富正在成为民主党对抗 Clarity 法案的最强武器。但 Robert 提出了一个反直觉的论点：这反而可能成为推动道德条款写入法案的契机。
+    </div>
+
+  </div>
+</div>
+
+<section>
+  <h2>1. 老问题，新火花：代币和股权为什么难以共存</h2>
+
+  <p>加密行业有一个每隔几年就会重新浮出水面的老问题：当一个项目既有代币持有者又有股权持有者时，两者的利益如何对齐？</p>
+
+  <p>这次的导火索是 Dragonfly 领投了 Venice 的 $65M 融资轮，给了这家加密 AI 公司 $1B 的估值。Venice 此前已经发行了 VVV 代币，将 50% 的供应量通过空投免费分发给早期用户。消息一出，加密 Twitter 炸了——"股权投资者的利益是否会对代币持有者形成挤压？"</p>
+
+  <p>这个问题并非新出。四年前，Uniswap 先发行了 UNI 治理代币，后来又为 Uniswap Labs 单独进行股权融资。Uniswap Labs 开发了自己的钱包、建立了独立的商业化路径，而 UNI 代币持有者对此没有任何话语权。在许多人眼中，这是加密行业的"原罪"——一个协议有了两个主人，而这两组主人的利益可能并不一致。</p>
+
+  <div class="insight-box">
+    <strong>Haseeb 的观点</strong>：Uniswap 的双实体结构是一种 hack，但 Venice 的情况完全不同。Venice 是一家公司——不是一个协议，不是一个 DAO。VVV 代币从一开始就被明确定义为"算力使用权"，不附带任何治理权或所有权。创始人 Erik Voorhees 花了几百万自己的钱在产品上线之前，代币从未被出售给任何投资者。
+  </div>
+</section>
+
+<section>
+  <h2>2. VVV：不是所有的代币都是 Uniswap 的翻版</h2>
+
+  <p>VVV 代币在加密行业的代币光谱中占据了一个相当独特的位置。它不是治理代币——没有治理论坛、没有投票、没有 DAO。它也不是融资工具——代币从未被出售，50% 直接空投给了早期用户。Venice 团队在发布声明中非常明确地表示：Venice 完全由团队拥有，VVV 代币持有者对 Venice 没有任何所有权。</p>
+
+  <p>VVV 的唯一功能是赋予持有者访问 Venice Pro 的权限和一定量的平台算力额度。它通过一种名为"mint DM"的机制运作——用户可以使用 VVV 来铸造 DM，后者可以用来支付 Venice 平台上的 AI 推理费用。</p>
+
+  <div class="insight-box green">
+    <strong>Robert 的类比</strong>：这就像 American Airlines 曾经发行的终身飞行券。购买这种券不代表你拥有 American Airlines 的股权，但如果公司经营得好，你的飞行券的价值自然也会上升。VVV 是同一类资产——它是有实用价值的负债，而非所有权凭证。
+  </div>
+
+  <p>Haseeb 进一步指出，VVV 最接近的类比可能是 BNB。BNB 显然不是 Binance 的股权——没有人会认为持有 BNB 就能投票决定 Binance 的手续费率。但 BNB 是一个"复合型资产"：它提供交易折扣、参与 Launchpad 项目、在 BNB Chain 上作为 Gas 代币使用，同时 Binance 的定期销毁也让它带有一定的"股票回购"属性。VVV 的路径与此类似——Venice 计划用订阅收入逐步买回所有流通的 VVV，让代币持有者分享公司增长的红利，但永远不赋予所有权。</p>
+</section>
+
+<section>
+  <h2>3. Lighter 的解法：如果只有一个实体，就不存在两个主人</h2>
+
+  <p>嘉宾 Vlad 是永续合约 DEX Lighter 的创始人，他的项目也同时拥有 LIT 代币和 Lighter Labs 股权。但他采用的是一条最直接的路径。</p>
+
+  <div class="insight-box">
+    <strong>Lighter 的结构</strong>：从第一天起就是一个 US C-Corp，没有离岸基金会，没有单独的 Labs 实体。代币由 C-Corp 直接发行。所有 Lighter 协议产生的价值通过<strong>程序化买回</strong>机制流向 LIT 代币持有者——目前是 100% 的协议收入用于市场买回 LIT。这个算法已经公开运行了六个月，网站实时更新买回数据。
+  </div>
+
+  <p>更激进的是 Vlad 对股权投资者的处理方式。在 TGE 之前的最后一轮融资中，Vlad 明确告知所有现有股东：未来不会再有新的股权轮次，股权投资的唯一价值实现路径就是获得代币分配。如果有人不同意这个路径，可以在这一轮退出。结果只有 1% 的股东选择了退出——99% 的人选择留下并接受这个安排。</p>
+
+  <p>Vlad 的长期愿景更为宏大：他希望 Lighter 成为最早实现"代币即股票、股票即代币"的公司之一。当 Clarity 等监管框架成熟后，公司的股权可以直接以代币形式在 Lighter 上发行和交易——在智能合约和法律框架的双重保障下实现一一映射。这个愿景虽然还需要数年时间才能实现，但它指向了一个代币和股权合二为一的未来。</p>
+</section>
+
+<section>
+  <h2>4. Delaware 法律困境：承诺能否替代受信义务</h2>
+
+  <p>Haseeb 在讨论中扮演了"魔鬼代言人"的角色。他指出，作为 Delaware C-Corp，Lighter 的管理层对股东负有受信义务——必须最大化股东价值。如果某一天，最大化股东价值和最大化代币价值之间产生冲突怎么办？</p>
+
+  <p>Vlad 的回应直截了当：管理层和所有投资者都已经被告知并接受了这条路径。但他也坦承自己不是 Delaware 法律专家。这实际上触及了一个更深层的问题——在当前的加密行业结构中，很多安排都依赖于创始团队的"承诺一致性"，而非法律上的可强制执行性。</p>
+
+  <div class="insight-box yellow">
+    <strong>未来可能的解法</strong>：Haseeb 提到了 Zcash 的模式——协议通过 dev reward 机制为开发团队提供可持续的资金来源，MakerDAO 和 Aave 也通过 DAO 国库来补偿开发者。Lighter 最终可能走向类似的方向：LIT 作为治理代币，Lighter Labs 作为 DAO 的承包商，从协议收入中获取合理补偿，而非从独立股权结构中获利。
+  </div>
+</section>
+
+<section>
+  <h2>5. Robinhood × Lighter：DeFi Mullet 的里程碑时刻</h2>
+
+  <p>2026 年 7 月 1 日，Robinhood 在伦敦举办了一场名为"世界是平的"的发布活动，地点是一个改建的教堂。在一系列航海主题的演出之后，Robinhood 宣布了多项重大发布：Robinhood Chain（基于 Arbitrum Nitro 的 L2）正式上线、xStock（24/7 可交易的代币化股票）推出、USDC 借贷通过 Morpho 集成、以及 Athena 合作。</p>
+
+  <p>但最引人注目的宣布是：<strong>Lighter 将成为 Robinhood Wallet 的原生永续合约交易引擎</strong>。这意味着 Robinhood 的数千万用户可以通过钱包直接进行 perps 交易，底层由 Lighter 的 DeFi 协议提供清算和结算——一个完美的 DeFi Mullet（前端是 Robinhood 的品牌、合规和用户体验，后端是 Lighter 的非托管、链上透明和可组合性）。</p>
+
+  <p>激励计划同样慷慨：价值 $11M 的 LIT 代币通过积分系统分发给 Robinhood 用户，交易免 Gas 费，永续合约享受 90 天零手续费。发布会的现场演示选择了 SpaceX 代币化股票的 perps 交易——据 Vlad 透露，一位做市商在演示前一小时才准备好系统，如果再早一小时，演示就不会成功。高风险、高回报，最终的现场效果让所有人大呼过瘾。</p>
+
+  <div class="insight-box green">
+    <strong>为什么是 DeFi？</strong> Vlad 的回答切割了价值观叙事：不是因为"我们热爱去中心化"，而是因为 DeFi 的技术就是更好——更好的清算效率、更好的结算速度、更低的运营成本。两年前他向 Dragonfly 介绍 Lighter 时说"DeFi 将成为 CeFi 和 TradFi 的底层轨道"，当时市场共识是"没人关心技术，关键是分发"。如今看来，他是对的。
+  </div>
+</section>
+
+<section>
+  <h2>6. 全球 Perps 化浪潮正在加速</h2>
+
+  <p>Lighter × Robinhood 并非孤立事件。同一周，Hyperliquid 被非洲最大交易所采用为后端交易引擎；eToro 也在与 DeFi 基础设施进行深度整合。Tom 将这种现象戏称为"全球 perps 化"（global perpsification）。</p>
+
+  <p>这一趋势遵循的剧本与比特币 ETF 惊人地相似：起初"没人想碰"加密 ETF，然后 BlackRock 入场，然后"所有人都在发"。一旦 Robinhood 和 Coinbase 这些顶级品牌完成了 DeFi 后端的部署，并且营收数据开始公开，预计其他金融服务商会迅速跟进——不是因为加密信仰，而是因为商业理性。</p>
+
+  <p>Vlad 补充了一个重要的细节：不同地域的 Lighter 实例可以根据当地监管要求独立配置——不同的杠杆上限、不同的自动减仓规则、不同的抵押品种类。但只要底层资金可以通过 ZK 证明实现近乎即时的跨实例转移，这些独立市场对做市商来说就"几乎像一个统一订单簿"。这种灵活性是传统金融基础设施完全无法提供的。</p>
+</section>
+
+<section>
+  <h2>7. Bonk 治理攻击：民主投票的系统性缺陷</h2>
+
+  <p>Bonk 是 Solana 上的 OG meme coin，它有一个几乎无人知晓的治理论坛和一个价值 $20M 的国库。攻击者花了 $4M 买入 Bonk 代币获取投票权，提交了一份措辞模糊的提案（BIP 76），声称要"从灰烬中重建并奖励所有投赞成票的人"。</p>
+
+  <p>在 18,000 名合格投票者中，仅 7 人参与投票。99% 投了赞成票——几乎全部来自攻击者自己。提案通过后，$20M 的 Bonk 代币从国库转入攻击者控制的地址。</p>
+
+  <p>这不是一个复杂的新漏洞。它是已知的、已有解决方案的失败模式：无最低投票率、无时间锁延迟执行、国库提取无金额上限、无人监控治理论坛。Robert 指出，多年前 Beanstalk 遭受了几乎完全相同的攻击。不同之处在于 Beanstalk 是一个算法稳定币协议——居然也有治理机制这个本身就矛盾的事实。而 Bonk 作为一个 meme coin，有治理也是不可理喻的。</p>
+
+  <div class="insight-box red">
+    <strong>Haseeb 的点睛之笔</strong>：这是"民主的经典失败模式——51% 投票给自己分掉所有钱。但更糟的是，这不是全体持有者的 51%，只是出席者的 51%。7 个人中出现 4 个就能通过任何提案。"与此对比，在 Delaware 公司法下，即使董事会投票通过了"给自己发 5 千万年薪"，法院也可以撤销这个决议以保护少数股东权益。民主投票在没有制衡机制时，可以比专制更危险。
+  </div>
+</section>
+
+<section>
+  <h2>8. Trump 的加密财富：一个"完美"的财富转移故事</h2>
+
+  <p>每届美国总统在任期内都必须提交年度财务披露报告。Obama 的报告是 8 页，Biden 的是 11 页。Trump 的披露——927 页。经过详细梳理，发现他从加密项目获得的税后收入约为 $1.4B，税前约 $2.3B。这个数字超过了任何一家美国上市加密公司的利润——包括 Coinbase。</p>
+
+  <p>三大来源构成了这笔财富：Trump 代币许可收入 $636M、World Liberty Financial $594M、以及股权出售和其他收入约 $200M。Trump 家族在这些项目中投入的总资本不到 $1M。</p>
+
+  <p>更令人瞠目的是对称性：分析师统计了所有投资 Trump 代币和 World Liberty Financial 的零售投资者的总亏损——恰好也是约 $2.3B，与 Trump 的税前收入几乎完全对等。Tom 指出这些数字可能包含非现金收入（比如 Trump 代币的"实物"获得被视为应税收入），但即便如此，这是从零售投资者财富向 Trump 家族的一个近乎无摩擦的转移。</p>
+
+  <div class="insight-box red">
+    <strong>Haseeb 的判断</strong>：Trump 的加密收入是"前期集中"的——他是在牛市中入场，项目获得了巨大的交易量。Robert 同意：未来的披露数据很可能远低于此。"果汁已经被榨干了——没有更多零售交易活动可以被榨取。"但 Haseeb 也指出，这并不妨碍这个故事成为加密行业未来两年中最具杀伤力的政治叙事：简单、直观、不需要任何加密知识就能理解。
+  </div>
+</section>
+
+<section>
+  <h2>9. Clarity 法案的困境与加密行业的政治十字路口</h2>
+
+  <p>Haseeb 指出了一个关键关联：当前阻止 Clarity 法案通过的核心争议正是道德条款——防止总统和政府官员发行代币、直接从加密行业中获利。Trump 的 $2.4B 正好为民主党提供了最强有力的论据。</p>
+
+  <p>但 Robert 提出了一个反直觉的论点：这反而可能成为推动法案通过的契机。如果民主党能在参议院谈判中成功写入道德条款，就能拿到一个"胜利"，法案可能获得足够的跨党派支持。Trump 已经赚够了——他或许愿意在道德问题上妥协以换取加密行业的整体合法化。</p>
+
+  <p>Haseeb 则更为悲观。他认为这个故事正在成为民主党的核心政治武器——"总统从加密赚了 20 亿美元，所有投资的人都亏了钱"——这不是需要深入解释的复杂议题。中期选举在即，当前众议院归属概率为 84% 倾向于 Democrats，加密行业将面临严格的政治审查期。</p>
+
+  <div class="insight-box yellow">
+    <strong>一个开放问题</strong>：Trump 对加密行业的参与最终是福是祸？Haseeb 认为要到 2028 年才能判断。前半程（共和党控制国会、推动立法）是好的。但 Trump 即将成为 lame duck 总统，加上可能的民主党国会——行业将面临前所未有的政治反弹。
+  </div>
+</section>
+
+<section>
+  <h2>10. 代币的终极价值：不是后门发股票，而是发明新的资本结构</h2>
+
+  <p>在这场讨论的最后，Haseeb 说了一句被他认为是整场对话中最重要的话：如果代币只是"绕道发股票"的一种花哨方式，那它并不有趣——因为股权已经存在了。真正让人兴奋的是代币作为一种全新的资本结构形式——不完全像股权、不完全像商品、不完全像治理权，但又兼具多重属性。</p>
+
+  <p>从 VVV 的"算力使用权"到 LIT 的"程序化买回"，从 BNB 的"复合型资产"到 xStock 的"24/7 代币化股票"，整个加密行业正在创造传统金融无法产生的资产类别。这个过程注定混乱——会有像 Uniswap 这样引发争议的双实体结构、会有像 Bonk 这样因治理缺失而被攻击的荒谬案例、也会有像 Trump 代币这样透支行业信用的投机狂潮。</p>
+
+  <p>但 Vlad 的终局愿景为这个混乱的过程提供了一个清晰的方向感：当 Clarity 法案提供法律框架、ZK 证明提供互操作性、DeFi 协议提供清算基础设施时，所有的复杂结构都可以被简化。最终只有一种资产——它在智能合约中是代币，在法院判决中是股权，在市场定价中是价值载体。"我想 DeFi 和 TradFi 合并之后，对所有公司来说，都会是这个样子的。"</p>
+
+  <div class="insight-box purple">
+    <strong>作者概括</strong>：这场讨论的价值不在于给出了"代币 vs 股权的终极答案"——显然目前没有任何人拥有这个答案。它的价值在于展示了三种不同路径（Uniswap 的双实体分离、Venice 的"代币不是股权"的诚实、Lighter 的单一实体整合）各自的设计逻辑和隐含的权衡。对这些权衡的理解，正是加密行业从"监管规避"走向"监管融合"的认知基础设施。
+  </div>
+</section>
+
+<div class="quotes">
+  <h2>核心金句</h2>
+
+  <div class="quote-block qz-blue">
+    "all value kind of generated by Lighter is accruing to the token holders, and the exact mechanic for that is programmatic buybacks."
+    <span class="attribution">— Vlad（Lighter 创始人），阐述 Lighter 的核心价值分配机制</span>
+  </div>
+
+  <div class="quote-block qz-green">
+    "DeFi is better tech and it's much better for even centralized or somewhat centralized front ends to sit on top of DeFi rails."
+    <span class="attribution">— Vlad，解释为什么 CeFi 前端选择 DeFi 后端是技术理性而非信念驱动</span>
+  </div>
+
+  <div class="quote-block qz-yellow">
+    "the failure mode classically of democracy of 51% voting themselves all the money. But it's not even 51%, it's 51% of those who show up."
+    <span class="attribution">— Haseeb，总结链上治理攻击的根本逻辑</span>
+  </div>
+
+  <div class="quote-block qz-red">
+    "this is easy to understand. President made two billion dollars from crypto and everybody who invested in it lost money."
+    <span class="attribution">— Haseeb，指出 Trump 加密财富故事对行业形象的致命威胁</span>
+  </div>
+
+  <div class="quote-block qz-purple">
+    "the innovation in capital stacks is like a big part of the reason why we're here, why we invented tokens. If the answer was that well, tokens are just a fancy way to issue equity through the backdoor — that's actually just not that interesting."
+    <span class="attribution">— Haseeb，阐述代币之所以重要的真正原因</span>
+  </div>
+
+  <div class="quote-block qz-orange">
+    "moving capital around between the two instances with ZK is going to be pretty much instantaneous."
+    <span class="attribution">— Vlad，解释 ZK 证明如何打破不同链上实例之间的流动性壁垒</span>
+  </div>
+</div>
+
+<footer>
+  <p>原文节目：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1135808158.mp3">The Chopping Block</a> · 2026 年 7 月</p>
+  <p style="margin-top:8px;">🤖 Generated with Claude Code · <a href="../../">PodDeck</a></p>
+</footer>
+
+</article>
+</body>
+</html>

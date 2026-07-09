@@ -1,15 +1,144 @@
 source: unchained
-refreshed_at: 2026-07-09T04:25:53.044Z
+refreshed_at: 2026-07-09T18:39:29.663Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 102
-done: 0
-pending: 7
-needs_transcript: 95
+total_candidates: 101
+done: 2
+pending: 6
+needs_transcript: 93
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 9be450fa-7b4d-11f1-be48-4b5a7dd129ce
+    guid: 9be450fa-7b4d-11f1-be48-4b5a7dd129ce
+    title: "The Chopping Block: Tokens vs Equity, Lighter's Robinhood Perps Deal, and Trump's $2.4B Crypto Windfall"
+    duration: 3538
+    published: Thu, 09 Jul 2026 16:00:00 -0000
+    published_sort: "20260709"
+    first_seen_at: 2026-07-09T18:39:29.662Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1135808158.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1135808158.mp3
+    image: https://megaphone.imgix.net/podcasts/9be450fa-7b4d-11f1-be48-4b5a7dd129ce/image/84c941692c46e4f2ce2bf9e588fa3149.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Vladimir Novakovski of Lighter joins the Chopping Block crew to untangle one of crypto's oldest debates: what
+      happens when tokens and equity coexist. The gang digs into the Venice/VVV controversy, breaks down Lighter's new
+      Perps integration with Robinhood Chain and the fragmentation questions it raises, dissects the wild BonkDAO
+      governance exploit, and reacts to the eye-popping $2.4 billion in crypto income disclosed in Trump's financial
+      filings.
+
+
+      Welcome to The Chopping Block – where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert
+      Leshner chop it up about the latest in crypto, joined this week by special guest Vladimir Novakovski of Lighter.
+
+
+      The crew dives deep into the resurfaced tokens-versus-equity debate sparked by Dragonfly's investment in Venice
+      and its VVV token, with Haseeb making the case that Venice is fundamentally different from Uniswap Labs style
+      structures. Vlad explains how Lighter has approached the same dilemma through programmatic buybacks and a single C
+      corp structure, and the group debates fiduciary duties, Delaware law, and what a merged DeFi/TradFi future for
+      equity and tokens might look like. From there, they unpack Lighter's big Robinhood Chain announcement, including
+      Lighter's new role as the native Perps engine inside Robinhood Wallet, and whether running a separate instance
+      fragments liquidity. The episode wraps with a breakdown of the BonkDAO governance exploit that let an attacker
+      vote themselves $20 million in tokens, and a reaction to Trump's staggering $2.4 billion in pre-tax crypto income
+      revealed in his latest financial disclosure.
+
+
+      Listen to the episode on Apple Podcasts, Spotify, Pods, Fountain, Podcast Addict, Pocket Casts, Amazon Music, or
+      on your favorite podcast platform.
+
+
+      Show highlights
+
+
+      🔹 Haseeb breaks down why Venice's VVV token is not equity and not a Uniswap style governance token in disguise
+
+
+      🔹 Vlad explains how Lighter's programmatic buybacks and single C corp structure align token holders and equity
+      holders
+
+
+      🔹 The gang debates Delaware fiduciary law, shareholder primacy, and what happens when buyback capital runs dry
+
+
+      🔹 Vlad lays out the vision of tokenized equity merging with crypto tokens into a single on-chain asset
+
+
+      🔹 Lighter's Robinhood Chain deal goes live with Lighter powering native Perps trading inside Robinhood Wallet
+
+
+      🔹 Vlad addresses concerns about liquidity fragmentation across separate Lighter instances
+
+
+      🔹 BonkDAO gets exploited as an attacker buys governance tokens and votes themselves $20 million
+
+
+      🔹 Robert compares the Bonk exploit to the infamous Beanstalk and Compound Humpty governance attacks
+
+
+      🔹 Trump's financial disclosure reveals $2.4 billion in pre-tax crypto income, sparking a debate on crypto's
+      political future
+
+
+      Hosts
+
+
+      ⭐️Haseeb Qureshi, Managing Partner at Dragonfly
+
+
+      ⭐️Tom Schmidt, General Partner at Dragonfly
+
+
+      ⭐️Robert Leshner, Founder & CEO of Superstate
+
+
+      Guest
+
+
+      ⭐️Vladimir Novakovski, Founder of Lighter
+
+
+      Timestamps
+
+
+      00:00 Intro
+
+
+      03:40 Tokens vs equity: the Venice VVV debate begins
+
+
+      06:12 Fiduciary duty, Delaware law, and Lighter's C corp structure
+
+
+      08:00 What happens when buyback capital runs out
+
+
+      12:42 Why Venice launched a token in the first place
+
+
+      19:18 Comparing VVV to BNB and overloaded crypto assets
+
+
+      25:28 Lighter's Robinhood Chain deal and native Perps launch
+
+
+      37:02 BonkDAO governance exploit and the $20M vote
+
+
+      44:02 Lessons from Beanstalk and Compound's Humpty saga
+
+
+      47:09 Trump's $2.4B crypto income disclosure reactions
+
+
+      Disclosures
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-09T18:39:30.680Z
+    transcript_job_id: 70f1029788d54637a84467d6238d2b02,f9555aa4cd9c41d89f414d9abdcaa85d,1bd1f1428be546419160ac18be8dfb7b,04f42d272b3a4affa2c996d0d9f7046f
+    transcript_completed_at: 2026-07-09T18:41:52.370Z
   - id: 785c7df8-7b05-11f1-a459-b3ada2afa356
     guid: 785c7df8-7b05-11f1-a459-b3ada2afa356
     title: Strategy Sold More Bitcoin. Is This a Betrayal of the Bitcoin Ethos?
@@ -580,7 +709,7 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 772d21278f3f454ab1f0b76a92b2b29d,54d030d99cc14d818b784ff6f159963c,639f049eb87b490e99978d0cf3d5f9e9,dfc3bc9b05b84fb59840825dd7096a76
@@ -4155,8 +4284,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5918,8 +6046,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -8850,129 +8977,6 @@ episodes:
 
 
       Disclosures
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 63f3d79a-01f6-11f1-8021-0b8bc574a867
-    guid: 63f3d79a-01f6-11f1-8021-0b8bc574a867
-    title: "Bits + Bips: Why Gold Price Discovery Happened on Hyperliquid"
-    duration: 3650
-    published: Wed, 04 Feb 2026 18:21:00 -0000
-    published_sort: "20260204"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9450390470.mp3?updated=1770231389
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9450390470.mp3?updated=1770231389
-    image: https://megaphone.imgix.net/podcasts/63f3d79a-01f6-11f1-8021-0b8bc574a867/image/e29a6c8d8da6df219ce5bbf3efe79fb9.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Listen to the episode on Apple Podcasts, Spotify, Fountain, Podcast Addict, Pocket Casts, Amazon Music, or on your
-      favorite podcast platform.
-
-
-      ---
-
-
-      If you want expert help with crypto taxes — without guessing or DIY spreadsheets — Crypto Tax Girl is offering
-      $100 off their crypto tax services for Unchained listeners.
-
-
-      They provide personalized support for everything from complex transactions to full tax returns.
-
-
-      Get $100 off
-
-
-      ---
-
-
-      In this episode of Bits + Bips, Austin Campbell and Chris Perkins sit down with Cosmo Jiang to unpack what gold’s
-      volatility shock revealed about market structure, why onchain venues like Hyperliquid are increasingly where price
-      discovery happens, and how digital asset treasuries are being blamed for stress they did not create.
-
-
-      The conversation also turns to Kevin Warsh’s nomination as Fed chair and why it represents a deeper shift in
-      institutional power, not just personnel.
-
-
-      Hosts:
-
-
-      Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
-
-
-      Christopher Perkins, Managing Partner and President of CoinFund
-
-
-      Guest:
-
-
-      Cosmo Jiang, General Partner at Pantera Capital
-
-
-      Links:
-
-        Crypto at a Crossroads: Winter Fatigue Meets the Risk of Lower Lows
-
-        Weekend Drama Rekindles Debate Over What Really Caused the October 10 Crash
-
-        Crypto’s Weekend Washout Tests Conviction After a Brutal Week
-
-        Bitcoin Sinks as Markets Price In a More Hawkish Fed
-
-        Why HYPE Is Up While Every Other Crypto, Including Bitcoin, Is Down
-
-        Hyperliquid Prepares Prediction-Style Markets With HIP-4 Upgrade
-
-        Hyperliquid Sees Record Trading as Commodities Drive New Interest
-
-        ​​Crypto Market Structure Bill Clears Senate Committee — But the Hard Part Is Still Ahead
-
-        Silver and gold extend losses after last week's historic plunge
-
-        Gold Volatility Tops Bitcoin in Wildest Price Swings Since 2008
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: f824fa8a-ff02-11f0-b246-eb45143f92cd
-    guid: f824fa8a-ff02-11f0-b246-eb45143f92cd
-    title: "Bits + Bips: The Most Dangerous Type of Asset to Trade on Weekends"
-    duration: 2279
-    published: Sun, 01 Feb 2026 00:14:00 -0000
-    published_sort: "20260201"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1224935364.mp3?updated=1769905860
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1224935364.mp3?updated=1769905860
-    image: https://megaphone.imgix.net/podcasts/f824fa8a-ff02-11f0-b246-eb45143f92cd/image/89d84b3e4c06454fed9c215cf29bdacd.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Crypto has stalled, but markets haven’t. As volatility migrates and narratives shift, retail traders are moving
-      fast into exciting, but risky frontiers. We break down where attention is going next, how professionals are
-      adapting, and why this cycle feels different from the last.
-
-
-      Host:
-
-
-      Steven Ehrlich, Host: Bits + Bips: The Interview
-
-
-      Guest:
-
-        Evgeny Gaevoy, Founder and CEO, Wintermute
-
-      Links:
-
-        Adams’ NYC Memecoin Crashes After Debut, Sparking Outcry
-
-        Memecoins Were Hot a Year Ago. Many Have Crashed Over 90%
-
-        Crypto Traders Flee to Prediction Bets After Crash
-
-        Prediction Markets to Get New Federal Rules, CFTC Chair Says
-
-        Three Reasons for the Record Rise in Gold Prices, and One Why They Are Falling
-
-        Gold Falls as Investors Take Profits After Record High
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript

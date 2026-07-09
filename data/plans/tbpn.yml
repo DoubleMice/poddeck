@@ -1,11 +1,11 @@
 source: tbpn
-refreshed_at: 2026-07-09T04:25:52.973Z
+refreshed_at: 2026-07-09T18:39:29.616Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
+done: 1
 pending: 1
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -137,8 +137,12 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-09T18:41:52.543Z
+    transcript_job_id: fc1c5f232b77435faf88aa03c0e8bf6c,89284ae4ad8e4a57ad59d1ebe9eff986,e6f5e5cedc104dc9a05c6200bdca4c96,83a62ea2d33d45e38ba96c7ab81c5098,7efdf14428054b5a85922b88695a89d0,0b5b90bb502048fd9a2d5a9c859c3777,1463dd88773b46169b2a1b8c6e8330db,0cb1e049f79644f19a0608b8051893e6,d6b6968b12644b75974f1a3e77b5d3fa,6a0ddaac07484354b8877375338a3aa1,4305a11eef0645729c14ba761634a8af
+    transcript_completed_at: 2026-07-09T18:52:21.975Z
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
     title: Midjourney Medical, AI Talent Wars 2.0, Jake Paul Joins | Derek Thompson, Rene Haas, Robert Slaughter, Rob Reid,
