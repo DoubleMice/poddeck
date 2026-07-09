@@ -1,75 +1,88 @@
 source: tbpn
-refreshed_at: 2026-07-08T18:33:08.187Z
+refreshed_at: 2026-07-09T04:25:52.973Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 3
-done: 2
+total_candidates: 2
+done: 0
 pending: 1
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 61de3469-b6f9-4a76-8da2-31630382bf82
-    guid: 61de3469-b6f9-4a76-8da2-31630382bf82
-    title: China Export Controls, Jeremy Giffon Breaks Silence, Alex Hormozi in the Ultradome | Josh Zoffer, John McElhone,
-      Deena Shakir, Hussein Fazal, John Nay
-    duration: 8391
-    published: Tue, 07 Jul 2026 13:45:03 -0700
-    published_sort: "20260707"
-    first_seen_at: 2026-07-08T04:08:31.584Z
-    url: https://share.transistor.fm/s/fc38ff83
-    audio_url: https://media.transistor.fm/fc38ff83/4ca73845.mp3
+  - id: 76d47042-27f9-4557-aa2b-873b6f027410
+    guid: 76d47042-27f9-4557-aa2b-873b6f027410
+    title: GPT-5.6 Sol Reactions, Coatue Bets Big on Blue Origin, Cheaper Vision Pro Delayed | Vincent Weisser, Ben
+      Thompson, Rodrigo Liang, Alana Palmedo, Byron Boots, Will Mayer, Tucker Brown
+    duration: 9877
+    published: Wed, 08 Jul 2026 14:27:33 -0700
+    published_sort: "20260708"
+    first_seen_at: 2026-07-09T04:25:52.966Z
+    url: https://share.transistor.fm/s/bed12620
+    audio_url: https://media.transistor.fm/bed12620/3c2c4e27.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/fc38ff83/transcription.txt
-    transcript_type: text/plain
-    summary: "(04:13) - China Export Controls\r
+    summary: "(00:41) - Coatue Bets Big on Blue Origin\r
 
-      (12:49) - SK Hynix Sets to Raise $28B\r
+      (05:39) - Cheaper Vision Pro Dead\r
 
-      (15:51) - Meta Unveils Muse Image\r
+      (14:04) - Getty x Shutterstock Deal Dies\r
 
-      (20:41) - Jeremy Giffon Breaks Silence\r
+      (21:17) - Empty IBM Campus Goes Viral\r
 
-      (22:42) - 𝕏 Timeline Reactions\r
+      (28:52) - 𝕏 Timeline Reactions\r
 
-      (28:35) - Alex Hormozi is an entrepreneur, investor, and author best known for founding Acquisition.com, where he
-      invests in and advises growing businesses. He is the author of $100M Offers and $100M Leads, and is widely known
-      for sharing practical frameworks on entrepreneurship, marketing, sales, and scaling companies.\r
+      (32:44) - OpenAI Launches GPT-Live\r
 
-      (01:29:29) - Josh Zoffer, an investor and head of research at CIV, formerly a White House National Economic
-      Council and US Treasury adviser, discusses the strategic importance of data centers in the United States. He
-      emphasizes that data centers are not merely collections of chips but also involve critical technologies like power
-      electronics and industrial materials such as steel. Zoffer warns that if the U.S. hinders data center
-      construction, it risks losing control over essential supply chains, potentially repeating past mistakes that led
-      to reliance on foreign sources for critical materials.\r
+      (36:21) - GPT-5.6 Goes Public This Week\r
 
-      (01:41:52) - John McElhone, founder of American Turbines, discusses his company's development of compact,
-      1-megawatt natural gas turbines designed for rapid deployment, capable of powering over a thousand homes and
-      fitting in the back of a pickup truck. He emphasizes the advantage of utilizing the abundant and inexpensive
-      natural gas supply in the United States, making this technology particularly suitable for the domestic market.
-      McElhone also highlights the company's focus on scaling production through automation, aiming to revolutionize
-      energy generation by simplifying turbine design and manufacturing processes.\r
+      (41:16) - Vincent Weisser, co-founder and CEO of Prime Intellect, announced the company's $130 million Series A
+      funding at a $1 billion valuation, aimed at building an open superintelligence stack. He discussed how Prime
+      Intellect provides a comprehensive platform for training, deploying, and continuously improving AI models,
+      enabling enterprises to develop their own AI agents without relying on closed-source frontier models. Weisser
+      highlighted the company's rapid growth, achieving an annualized revenue run rate of over $100 million, and
+      emphasized the importance of decentralized AI development for broader accessibility and innovation.\r
 
-      (01:47:32) - Deena Shakir, a General Partner at Lux Capital, invests in transformative technologies across sectors
-      such as women's health, digital health infrastructure, health equity, foodtech, and fintech. In the conversation,
-      she discusses Lux Capital's recent investment in 1001, an AI company based in the Gulf Cooperation Council (GCC)
-      region, highlighting the potential for applied AI in the Gulf and the opportunity for rapid, large-scale
-      deployments. She also emphasizes the importance of homegrown companies in the GCC and the unique opportunity to
-      build sovereign AI companies focused on the region.\r
+      (01:01:31) - Ben Thompson, founder of Stratechery, discusses Microsoft's Xbox strategy, highlighting the company's
+      shift from traditional console sales to a subscription-based model with Xbox Game Pass. He critiques this
+      approach, noting that while it aimed to attract a broader audience, it primarily cannibalized existing sales
+      without significantly expanding the market. Thompson suggests that Microsoft's substantial investments in
+      acquisitions and Game Pass have not yielded the expected growth, leading to internal challenges and strategic
+      reevaluations.\r
 
-      (01:54:38) - Hussein Fazal, co-founder and CEO of Super.com, discusses the company's recent $65 million Series D
-      funding led by TPG at a $1.2 billion valuation, and its evolution into a savings super app offering discounts on
-      hotels, gas, insurance, and financial services tailored for everyday Americans. He highlights the integration of
-      AI to expedite product development and the strategic partnership with NASCAR to enhance brand visibility among
-      their target demographic.\r
+      (01:29:28) - Rodrigo Liang, co-founder and CEO of SambaNova Systems, announced the company's completion of a $1
+      billion Series F funding round at an $11 billion valuation. He emphasized the growing importance of fast AI
+      inference in enterprise applications and highlighted partnerships with major firms like JPMorgan Chase for secure,
+      on-premises AI solutions. Liang also discussed the company's focus on delivering high-performance, low-latency AI
+      infrastructure that integrates seamlessly into existing data centers.\r
 
-      (02:07:01) - John Nay, founder and CEO of Norm AI, discusses the company's recent $120 million funding round at a
-      $1.2 billion valuation, highlighting their shift from selling AI tools to in-house legal teams to establishing
-      Norm Law LLP, a law firm powered by AI agents. He emphasizes the value of vertical integration, with AI engineers
-      and lawyers collaborating closely to reinvent legal workflows, and advises law students to focus on legal
-      engineering by applying AI to legal reasoning. Nay also notes that while international expansion is considered, it
-      requires deliberate planning to ensure the necessary legal expertise in each jurisdiction.
+      (01:40:54) - Alana Palmedo, Managing Partner at Paradigm, co-leads the firm's investment and research efforts,
+      focusing on frontier technologies such as crypto, AI, and robotics. In the conversation, she discusses Paradigm's
+      recent $1.2 billion fundraise aimed at investing in emerging technologies, the firm's expansion beyond its initial
+      focus on crypto to include broader frontier themes, and the importance of supporting both early-stage founders and
+      larger, later-stage companies.\r
+
+      (01:50:14) - Byron Boots, co-founder and CEO of Overland AI, discusses the company's development of autonomous
+      ground vehicles for defense applications, highlighting their modular design capable of integrating various
+      payloads, including remote weapon stations and drones. He emphasizes the advantages of wheeled vehicles over
+      robotic dogs for military operations, citing their payload capacity and energy efficiency. Additionally, Boots
+      shares that Overland AI secured a $20 million contract with the U.S. Marine Corps to produce autonomous ground
+      vehicles supporting the Marine Air Defense Integrated System (MADIS).\r
+
+      (01:57:18) - 𝕏 Timeline Reactions\r
+
+      (02:01:08) - Will Mayer, co-founder and high priest at Cold Holdings, began his career creating skateboard films
+      for companies like Vans, which sparked his passion for brands and their cultural significance. He discusses his
+      work with Polymarket, highlighting the rapid development of a viral campaign featuring Rick Rubin, and emphasizes
+      the importance of doctrine, ritual, symbols, charismatic leadership, and identifying an enemy in building
+      cult-like brand followings. Mayer also shares insights on the oversaturation of advertising content, the value of
+      contrarian perspectives, and his approach to scaling creative ventures by incubating startups and accepting equity
+      as compensation.\r
+
+      (02:17:43) - Tucker Brown, managing partner of Compound Creative Holdings, discusses his 15-year tenure at
+      Creative Artists Agency (CAA), where he led significant transactions, including a $100 million investment in Dude
+      Perfect. He highlights the evolution of creators into enterprise builders, emphasizing the need for appropriate
+      capital structures and operational support to foster sustainable growth and lasting value in creator-led
+      businesses.
 
 
       TBPN is made possible by:
@@ -124,70 +137,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
-    priority: 1
-  - id: 2a09f6d1-d56f-4af6-9d82-f1d6408475dd
-    guid: 2a09f6d1-d56f-4af6-9d82-f1d6408475dd
-    title: Alex Hormozi's Playbook for Building Billion-Dollar Businesses
-    duration: 3642
-    published: Tue, 07 Jul 2026 13:25:21 -0700
-    published_sort: "20260707"
-    first_seen_at: 2026-07-08T04:08:31.584Z
-    url: https://share.transistor.fm/s/0165318c
-    audio_url: https://media.transistor.fm/0165318c/df50fbb0.mp3
-    image: https://img.transistorcdn.com/ieYcv4Ca__RtK9CPm-Dl2BmVDyS0So0gKLNvX7ge_nE/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS84MjFl/OWY1MGJmODkxZmI3/NmZmMTUzODM0MDZm/NDRlYi5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/0165318c/transcription.txt
-    transcript_type: text/plain
-    summary: >-
-      This is our full conversation with Alex Hormozi.
-
-
-      We discuss his philosophy on choosing the right business, the biggest mistakes entrepreneurs make with AI, why
-      volume beats perfection in media, how he built one of the largest business education brands in the world, what
-      founders get wrong about personal branding, why opportunity selection matters more than most people realize, and
-      how Acquisition.com is evolving from a family office into a brand-powered investment platform.
-
-
-      TBPN is made possible by:
-
-      Ramp - https://ramp.com
-
-      Public - https://public.com
-
-      Cisco - https://www.cisco.com
-
-      Console - https://www.console.com
-
-      CrowdStrike - https://www.crowdstrike.com
-
-      Figma - https://www.figma.com
-
-      MongoDB - https://www.mongodb.com
-
-      NYSE - https://www.nyse.com
-
-      Railway - https://railway.com
-
-      Shopify - https://www.shopify.com/
-
-      Codex - http://openAI.com/codex
-
-
-      Sign up for TBPN’s daily newsletter at TBPN.com
-
-
-      Follow TBPN:
-
-      https://TBPN.com
-
-      https://x.com/tbpn
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-      https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
-
-      https://www.youtube.com/@TBPNLive
-    status: generated
+    status: needs_transcript
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b

@@ -1,47 +1,12 @@
 source: risky-business
-refreshed_at: 2026-07-08T18:33:08.269Z
+refreshed_at: 2026-07-09T04:25:53.096Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: SOAPBOX109
-    guid: https://risky.biz/SOAPBOX109/
-    title: "Soap Box: Using threat hunting to drive detection"
-    duration: 2116
-    published: Wed, 08 Jul 2026 14:51:09 +1000
-    published_sort: "20260708"
-    first_seen_at: 2026-07-08T18:33:08.269Z
-    url: https://risky.biz/SOAPBOX109/
-    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX109.mp3
-    image: https://risky.biz/static/img/rb-feed-main.png
-    summary: >-
-      In this wholly sponsored Soap Box edition of the podcast Patrick Gray chats with Damien Lewke, the CEO and founder
-      of Nebulock, about the future of threat hunting and detection.
-
-
-      Damien spent a decade in the EDR and MDR space before founding Nebulock in 2024. It started off as an AI-powered
-      threat hunt platform but has evolved into a broader security data platform that can answer questions, drive hunts
-      and drive detections.
-
-
-      This product is engineered around the idea that a lot of security is a data problem. So, if we accept this
-      premise, how do we solve security? And how much of that solution is about agents, vs building a good graph? And if
-      you’re going to build a good graph, do you want to build it for a person to use, or an agent to use?
-
-
-      This is truly a conversation for the security nerd’s nerd. Enjoy!
-
-
-      This episode is also available on YouTube
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-08T18:33:09.183Z
-    transcript_job_id: 4d00a87cda134ec0af546cbaecef0dd3,bb91198ea283444192f832a12a81c3d9,f838ab739a1d40d581d46166889084ca
-    transcript_completed_at: 2026-07-08T18:34:45.520Z
+episodes: []
