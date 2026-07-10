@@ -1,88 +1,71 @@
 source: tbpn
-refreshed_at: 2026-07-09T18:39:29.616Z
+refreshed_at: 2026-07-10T04:27:22.058Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
-pending: 1
+done: 0
+pending: 2
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 76d47042-27f9-4557-aa2b-873b6f027410
-    guid: 76d47042-27f9-4557-aa2b-873b6f027410
-    title: GPT-5.6 Sol Reactions, Coatue Bets Big on Blue Origin, Cheaper Vision Pro Delayed | Vincent Weisser, Ben
-      Thompson, Rodrigo Liang, Alana Palmedo, Byron Boots, Will Mayer, Tucker Brown
-    duration: 9877
-    published: Wed, 08 Jul 2026 14:27:33 -0700
-    published_sort: "20260708"
-    first_seen_at: 2026-07-09T04:25:52.966Z
-    url: https://share.transistor.fm/s/bed12620
-    audio_url: https://media.transistor.fm/bed12620/3c2c4e27.mp3
+  - id: b1e98224-f14f-4377-8fc5-5b31cbc090dd
+    guid: b1e98224-f14f-4377-8fc5-5b31cbc090dd
+    title: Meta Releases Muse 1.1, GPT-5.6 Sol Reactions, New Robot Hand Alert | Eric Seufert, Bernt Børnich, Josh Lindgren,
+      Jeffrey Morgan, Thibault Sottiaux, Sean Frank
+    duration: 8576
+    published: Thu, 09 Jul 2026 13:45:45 -0700
+    published_sort: "20260709"
+    first_seen_at: 2026-07-10T04:27:22.049Z
+    url: https://share.transistor.fm/s/5676e6f2
+    audio_url: https://media.transistor.fm/5676e6f2/bdd1c058.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    summary: "(00:41) - Coatue Bets Big on Blue Origin\r
+    transcript_url: https://share.transistor.fm/s/5676e6f2/transcription.txt
+    transcript_type: text/plain
+    summary: "(00:52) - Meta Releases Muse 1.1\r
 
-      (05:39) - Cheaper Vision Pro Dead\r
+      (02:01) - GPT-5.6 Sol Reactions\r
 
-      (14:04) - Getty x Shutterstock Deal Dies\r
+      (14:49) - Meta Prices AI to Win\r
 
-      (21:17) - Empty IBM Campus Goes Viral\r
+      (29:24) - Eric Seufert, a prominent analyst and founder of Mobile Dev Memo, discusses Meta's strategic use of AI
+      in advertising to enhance ad performance and address investor skepticism. He emphasizes the importance of Meta's
+      proprietary data in training AI models to create ads that are uniquely effective, thereby demonstrating the
+      tangible benefits of their AI investments. Seufert also highlights the potential for AI-generated creative to
+      alleviate bottlenecks in ad production, ultimately driving significant revenue growth for Meta.\r
 
-      (28:52) - 𝕏 Timeline Reactions\r
+      (55:53) - Bernt Øivind Børnich, founder and CEO of 1X Technologies, has led the company since its inception in
+      2014, focusing on developing humanoid robots like NEO for consumer use. In the conversation, he discusses the
+      launch of NEO, emphasizing its advanced, human-like hand design achieved through in-house development of
+      miniaturized motors and tendons, and highlights the importance of creating robots that safely and effectively
+      interact with the world to enhance AI capabilities. He also touches on the company's commitment to vertical
+      integration, enabling rapid iteration and production scaling, and expresses excitement about the imminent shipping
+      of NEO to consumers.\r
 
-      (32:44) - OpenAI Launches GPT-Live\r
+      (01:08:39) - Josh Lindgren, Head of the Podcast Department at Creative Artists Agency (CAA), began his career as a
+      music agent before transitioning to podcast representation in 2014. In the conversation, he discusses the
+      exponential growth of the podcast industry, the increasing integration of video into podcasting, and the evolving
+      definitions of media formats. He also highlights the importance of creators having a clear purpose for their
+      podcasts and the potential benefits of live shows in strengthening audience relationships.\r
 
-      (36:21) - GPT-5.6 Goes Public This Week\r
+      (01:29:05) - Jeffrey Morgan, CEO and co-founder of Ollama, discusses how their open-source platform enables
+      developers to run large language models locally, facilitating rapid adoption among Fortune 500 companies due to
+      enhanced security and compliance. He highlights the $65 million Series B funding led by Tamash Tungas, emphasizing
+      plans to expand the team and invest in secure, US- and Europe-based hosting solutions. Morgan also addresses the
+      evolving landscape of open-source models, noting the narrowing gap between open and frontier models, and the
+      importance of providing developers with the right tools to deploy and manage these models effectively.\r
 
-      (41:16) - Vincent Weisser, co-founder and CEO of Prime Intellect, announced the company's $130 million Series A
-      funding at a $1 billion valuation, aimed at building an open superintelligence stack. He discussed how Prime
-      Intellect provides a comprehensive platform for training, deploying, and continuously improving AI models,
-      enabling enterprises to develop their own AI agents without relying on closed-source frontier models. Weisser
-      highlighted the company's rapid growth, achieving an annualized revenue run rate of over $100 million, and
-      emphasized the importance of decentralized AI development for broader accessibility and innovation.\r
+      (01:39:32) - Thibault Sottiaux, OpenAI's Head of Core Products and Platform, discusses the recent launch of
+      ChatGPT Work, highlighting its enhanced capabilities in coding, cybersecurity, and long-context understanding. He
+      emphasizes the model's improved efficiency and its ability to comprehend human intent with shorter prompts, making
+      it more accessible to users without technical expertise. Sottiaux also notes the development of multi-agent
+      setups, introduced as Ultra mode, where multiple agents collaborate to complete tasks more efficiently.\r
 
-      (01:01:31) - Ben Thompson, founder of Stratechery, discusses Microsoft's Xbox strategy, highlighting the company's
-      shift from traditional console sales to a subscription-based model with Xbox Game Pass. He critiques this
-      approach, noting that while it aimed to attract a broader audience, it primarily cannibalized existing sales
-      without significantly expanding the market. Thompson suggests that Microsoft's substantial investments in
-      acquisitions and Game Pass have not yielded the expected growth, leading to internal challenges and strategic
-      reevaluations.\r
-
-      (01:29:28) - Rodrigo Liang, co-founder and CEO of SambaNova Systems, announced the company's completion of a $1
-      billion Series F funding round at an $11 billion valuation. He emphasized the growing importance of fast AI
-      inference in enterprise applications and highlighted partnerships with major firms like JPMorgan Chase for secure,
-      on-premises AI solutions. Liang also discussed the company's focus on delivering high-performance, low-latency AI
-      infrastructure that integrates seamlessly into existing data centers.\r
-
-      (01:40:54) - Alana Palmedo, Managing Partner at Paradigm, co-leads the firm's investment and research efforts,
-      focusing on frontier technologies such as crypto, AI, and robotics. In the conversation, she discusses Paradigm's
-      recent $1.2 billion fundraise aimed at investing in emerging technologies, the firm's expansion beyond its initial
-      focus on crypto to include broader frontier themes, and the importance of supporting both early-stage founders and
-      larger, later-stage companies.\r
-
-      (01:50:14) - Byron Boots, co-founder and CEO of Overland AI, discusses the company's development of autonomous
-      ground vehicles for defense applications, highlighting their modular design capable of integrating various
-      payloads, including remote weapon stations and drones. He emphasizes the advantages of wheeled vehicles over
-      robotic dogs for military operations, citing their payload capacity and energy efficiency. Additionally, Boots
-      shares that Overland AI secured a $20 million contract with the U.S. Marine Corps to produce autonomous ground
-      vehicles supporting the Marine Air Defense Integrated System (MADIS).\r
-
-      (01:57:18) - 𝕏 Timeline Reactions\r
-
-      (02:01:08) - Will Mayer, co-founder and high priest at Cold Holdings, began his career creating skateboard films
-      for companies like Vans, which sparked his passion for brands and their cultural significance. He discusses his
-      work with Polymarket, highlighting the rapid development of a viral campaign featuring Rick Rubin, and emphasizes
-      the importance of doctrine, ritual, symbols, charismatic leadership, and identifying an enemy in building
-      cult-like brand followings. Mayer also shares insights on the oversaturation of advertising content, the value of
-      contrarian perspectives, and his approach to scaling creative ventures by incubating startups and accepting equity
-      as compensation.\r
-
-      (02:17:43) - Tucker Brown, managing partner of Compound Creative Holdings, discusses his 15-year tenure at
-      Creative Artists Agency (CAA), where he led significant transactions, including a $100 million investment in Dude
-      Perfect. He highlights the evolution of creators into enterprise builders, emphasizing the need for appropriate
-      capital structures and operational support to foster sustainable growth and lasting value in creator-led
-      businesses.
+      (01:54:03) - Sean Frank is the CEO of Ridge Wallet, a company specializing in minimalist wallets and accessories.
+      In the conversation, he discusses Ridge's expansion into products like travel gear and men's wedding rings, the
+      impact of AI on advertising and inventory management, and the evolving landscape of e-commerce, including the
+      challenges faced by luxury brands and the rise of platforms like TikTok Shop.
 
 
       TBPN is made possible by:
@@ -137,12 +120,8 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-09T18:41:52.543Z
-    transcript_job_id: fc1c5f232b77435faf88aa03c0e8bf6c,89284ae4ad8e4a57ad59d1ebe9eff986,e6f5e5cedc104dc9a05c6200bdca4c96,83a62ea2d33d45e38ba96c7ab81c5098,7efdf14428054b5a85922b88695a89d0,0b5b90bb502048fd9a2d5a9c859c3777,1463dd88773b46169b2a1b8c6e8330db,0cb1e049f79644f19a0608b8051893e6,d6b6968b12644b75974f1a3e77b5d3fa,6a0ddaac07484354b8877375338a3aa1,4305a11eef0645729c14ba761634a8af
-    transcript_completed_at: 2026-07-09T18:52:21.975Z
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
     title: Midjourney Medical, AI Talent Wars 2.0, Jake Paul Joins | Derek Thompson, Rene Haas, Robert Slaughter, Rob Reid,
