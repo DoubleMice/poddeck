@@ -1,0 +1,935 @@
+Speaker 1: You're watching TBPN. Today is Thursday, 07/09/2026. We are live from TBPN UltraDump. The temple of technology, the fortress of finance, the capital capital. Let me tell you about ramp.com.
+Time is money saved both. Easy use corporate cards, bill pay accounting, and a whole lot more all in one place. I need some soundboard. Here we go. Yes.
+Today on TBPN. We're talking about model mayhem. Everyone's launching new models. Slow summer, but not for the AI race. You got x AI unveiling Grok 4.5, the first model built specifically for coding and AI agents developing collaboration with Cursor.
+Talked about it a little bit yesterday, but we have some more benchmarks, some more discussion on the timeline about where this model fits in on the Pareto frontier. Also, why it might be outperforming so well on CursorBench. Lots of debates there. Meta announced Muse Spark, a new agentic coding model with Mark Zuckerberg. Returning to X for the first time in basically a decade.
+Three years ago, he posted one joke post about launching threads, but he has not been an active user. But the AI vortex sucked him in and he's got a post.
+Speaker 2: Oh, I think he's an active user, John.
+Speaker 1: You think so?
+Speaker 2: He's just not an active poster.
+Speaker 1: He's just not an
+Speaker 2: active contributor.
+Speaker 1: You're calling him a lurker.
+Speaker 2: I'm calling him a lurker.
+Speaker 1: You're calling him a lurker.
+Speaker 2: I'm calling him a lurker. I think he's absolutely glued.
+Speaker 1: You think so?
+Speaker 2: I think so.
+Speaker 1: You really think so?
+Speaker 2: I think so.
+Speaker 1: I feel like, I don't know, so busy, so much other stuff going on. I I feel like he I feel like most people
+Speaker 2: The busiest people I know. Okay. Are not active on x. Yeah. But they they are on x a lot.
+Speaker 1: Sometimes. But there are there's a different class of person.
+Speaker 2: You can just quiz can just quiz them.
+Speaker 1: Screenshots come to them via Slack or or via text message because they have a team that's monitoring the timeline and then it's delivered. This is the important this is the important stuff.
+Speaker 2: They're calling him Mark Lerkerberg.
+Speaker 1: Lurkerberg. But the other big news, OpenAI just released GPT-5.6. Let's go. Let's go. A new general purpose model with expanded coding and agent capabilities alongside GBP Live, which we talked about yesterday, a new real time interactive voice experience.
+Reactions are great to 5.6. A bunch of interesting details here. You had people have been identifying that while there is a frontier and there are just a few companies that are actually on the frontier, frontier is spiky and they have different flavors to them and different reasons to pull different tools off the shelf. People are drawing analogies between Fable five being some, you know, recluse genius and five point six being a, you know, collaborative coworker that you love chatting with or something like that.
+Speaker 2: Said Yeah. I don't know how else to describe it, but Fable five is like Kendrick on Good Kid, Mad City and five point six Soul is like Chief Keef on Finally.
+Speaker 1: Now it makes sense to me. Thank you.
+Speaker 2: I just want to put it into Yeah. $20.10 Really hip hop Yeah. Kind of like Yeah. Terminology.
+Speaker 1: Really, really clear there. Thanks for clearing that up.
+Speaker 2: I mean, the funny thing is that will be very explicit for like a 100 people in the whole world. Yeah.
+Speaker 1: This one's for you. The fun the the the most interesting benchmark to me has always been Arc AGI v three. We've interviewed the team over there many times and had a lot of fun understanding what goes into that that benchmark. And five point six SOL scored a massive 7.78%, which is tiny considering that the whole point of Arc AGI is that a human should be able to get 100% on it and basically any human. So it is a true test of AGI in the sense of, you know, can you give this test to just actually anyone, not the crazy math projects, the crazy hard programming projects, the hacking, all of that stuff is very economically valuable, of course.
+But there's a more interesting question where, you know, when there's less of a spiky frontier and there's just this question of what is something that anybody can do that AI can't? Because we've been searching for those and the Arc AGI team has done a fantastic job building out these puzzles that AI has historically struggled with. Arc AGI, one, the model sort of climbed two, became a little bit more complicated and now three, we're starting to see glimpses of progress, although 7.76% isn't 99%. We're nowhere near saturation, but it's still a huge jump. Opus 4.8 had 1.5%, so GPT-5.6 Soul is showing more generalization, more spatial reasoning, more puzzle solving abilities.
+So fun, fun stuff. I am trying to refresh my timeline. But the blog post is also very, very fun because it includes games. I'm a big fan of the the GPT-5.6 launch games. I got immediately sucked into the to the the sailing mini game, which is like very high fidelity, but also delightful to actually play.
+Speaker 2: Should we play it?
+Speaker 1: Yes. We should definitely play it. Yeah. Salt Wind. You you you guys play it.
+I want production team to see what they can get. I think my time was twenty five seconds.
+Speaker 2: And is this hosted on a on a site?
+Speaker 1: I think this is I mean, this is hosted on the OpenAI blog, but I think the the idea is that you could vibe code this in the latest GPT 5.6 in the app, in ChatGPT and then deploy it and have someone. Are you trimming the sails appropriately? Because it looks like you're losing speed. You're losing wind. It's not working.
+I'm going to smoke you. I got twenty five seconds. Wow. Amateur hour over here. Look at this.
+Yeah. Yeah. Well, whole the whole game which you probably missed is that there is a little bar there where you have to trim the sails to be in the sweet spot of the wind while you're turning. So as you turn see the bar? There's a recommendation for where you put the sails.
+You got to keep that line in see? It's moving over. You got to press the Yeah. Exactly. Keep trimming those sails while you steer the ship.
+This stuff is very, fun. I am trying to open.
+Speaker 2: One interesting data point from the livestream, which was just an hour ago. They said, already, Seoul has been transforming our research program. As one example, GPT-5.6 Soul autonomously post trained 5.6 Luna.
+Speaker 1: Yeah. That's fair.
+Speaker 2: A lot of people are, having fun with that. Dylan Fields says a lot of people wanna compare Fable versus 5.6 Soul. This is a mistake. They're apples and oranges. Despite all the research achievements, we are still very very early in exploring the tech tree for model training.
+Good take.
+Speaker 1: Cool. Sorry. I'm just getting set up again. What else is in here? Oh, yes.
+I I I do think that didn't Dylan Eberscotter write something about this? What what was the essay the he wrote about interactive memes and this idea of like generative AI enabling these vibe coded mini games? Like, we've been seeing a bunch of them with like the Copybearer simulator, the Coconut simulator where it's something that's just a joke that's funny for like a few people. But and normally, you would instantiate that in in a tweet. Or maybe if you were getting really crazy, you'd do a Photoshop edit of a meme.
+But now you can go and create a full mini game, something that runs in the browser. And soon, something that runs in Unreal Engine and can actually be distributed on the Steam store. We're already seeing that with the data center simulators and all these funny simulator games that are going on Steam. All this, all the all the advances in the coding model certainly speeds up the ability to actually deliver polished software. I'm I'm particularly excited for like
+Speaker 2: Dylan's title was the future of entertainment is interactive.
+Speaker 1: Yes. Yes.
+Speaker 2: But but yeah, that that's part of what I honestly love about AI is there's a lot of things you can make now that never would have made sense Yeah. To make because they would have taken you four days and it was good for like a small laugh. Yeah. Now you can do it in four minutes.
+Speaker 3: Yeah.
+Speaker 2: And and it's just fun.
+Speaker 1: Yeah. I I I think there's gonna be there's if you have some sort of like small custom some sort of custom functionality in your business, it feels like there's Is this
+Speaker 2: the David Senra simulator?
+Speaker 1: Why is this David Senra?
+Speaker 2: Late nights in a Miami abandoned apartment Backrooms. Complex in 2015, just recording podcasts and reading.
+Speaker 1: This is very creepy, like, a horror backrooms, liminal space game.
+Speaker 2: Stanley Tang, co founder and CPO over at DoorDash says, I have an insane magic trick that so far none of the models can figure out including mythos. It's a bulletproof trick that I've shown to a 100 plus people including magicians that couldn't figure it out. It's not anywhere on the internet. Only way to know it is through first principles reasoning.
+Speaker 4: Mhmm.
+Speaker 2: Told everyone I'll believe in AGI when it can crack this trick. Well, GPT-five point six just did. How? I want him to I want him to actually open like
+Speaker 1: Well, now
+Speaker 2: this Okay. Like, give us now that Yeah. Now that a model cracked it. Because I feel like
+Speaker 1: a lot of magic tricks are like sleight of hand. So is he uploading a video or something?
+Speaker 5: Like Well, yes.
+Speaker 2: John Palmer says I have a hilarious joke that so far none of the models think is funny. It's a bulletproof joke that I've told to a 100 plus people including comedians and no one laughed. It's not anywhere on the Internet. Only way to know it's funny is a first principle sense of humor. Told everyone I'll believe in AGI when it tells me a joke.
+The joke is funny. Well, five point six just did.
+Speaker 1: Huge, huge news. Huge news. Huge. People are going back and forth. GPT-5.6 is a Porsche.
+Fable's like Warp Drive. I had a different experience. If Fable is an f one car, five point six Solit Ultra is a Tesla Model X Plaid, does it find things that Fable misses during plannings and coding? Yes, most of the time. But for the hardest problems, does Fable routinely find things that Fable that 5.6 doesn't?
+Also, yes, some of the time. Is 5.6 way faster and affordable? Yes. With an unlimited token budget, what am I currently using ninety five ninety five plus percent of the time, GPT-5.6 from Seuki Chen. So interesting take that the Pareto frontier is alive and well and everyone's duking it out for their slice of the AI opportunity.
+Very interesting seeing how the market share is shifting during a time of acceleration. You have multiple companies that are growing revenues, even accelerating revenues, while market share is declining because the overall market is growing so fast if you're only growing at 300% and someone else is growing at 400%, you're losing market share where you have, like, one of the greatest businesses by modern metrics. Very, very interesting dynamics in AI.
+Speaker 2: It's also funny because yesterday with Ben Thompson, were like, some slow summer. And then in in the in the span of twenty four hours, you get Rock four five Muse 1.1.
+Speaker 1: Yeah. I mean, this I don't know. This isn't this isn't as dramatic as the AI talent wars. It's not as
+Speaker 2: dramatic Rippling as deal.
+Speaker 1: Yeah. Yeah. This is this is new technology. And and there's only so much to there's only so much of a take to be given around these things. Although AI 2,040 launched today, the sequel to AI twenty twenty seven, that's something that's more of a thought provoking piece that you can debate and interrogate and talk through.
+I'm sure we'll go through some of it because they pose a couple interesting couple interesting ideas of where AI might go and where they want it to go and how they want the industry to develop, sort of advocating for a slowdown generally. But it's an interesting way they puzzle piece all the different geopolitical chips on the table around. What else? Of course, people are joking about the lead is widening because the Anthropic and OpenAI version numbers over time, GPT-six is predicted and it is the model numbering we were talking about this morning that the numbers, they sort of don't mean anything anymore. Do the model numbers mean anything in particular?
+It used to be the model number was the pre train and then the version number was the post train, but then that sort of got flipped around. And now it's just like, are you do you feel like you're competing at a four class or a five class? So I wouldn't be surprised if we saw like Muse, Spark, not release Muse Spark two, but Muse Spark six or five and jump straight. I mean, Samsung wound up doing this where they jumped to the year, like, sort of like the car manufacturers where, you know, there's a five series BMW, but then there's also just the 2027 because that's the actual model year that's relevant.
+Speaker 2: Twenty twenty seven five series.
+Speaker 1: Yeah. Which is sort of odd. And and we're sort of like duking it out between those. Do have
+Speaker 6: Yeah.
+Speaker 2: I mean, I think post reasoning models, you just have like a different way to scale the models besides just pretraining. Yeah. So it's hard to bake that all into one number that like is, you know, evocative of both those like two ways.
+Speaker 1: Yeah. So the number is is becoming closer to the year in the in the second decade of the twenty first century, basically. It's just like, is this on the frontier in 2026? You'll probably see a six by the end of the year in front of the models that are leading in in the year 2026, something like that. I'm very interested with Google's strategy because the the rumor is that 3.5 Pro will be coming out this next week, I believe.
+But I it was it's very odd going into the Gemini app right now and seeing that there's 3.5 flash, but then you have to go back to 3.1 Pro. I think 3.1 Pro is the most advanced model, but they default you to 3.1 Flashlight. And I would expect them to jump just forward to four, but I think that they're going to do 3.5 Pro, but it's been a little bit of a slower cycle there. As silly, I mean, obviously, all these numbers don't really mean anything. They're marketing terms, but they they I I still think they do actually stick in people's mind, and so there should be some strategy around them.
+But anyway, before we move on to our next story, let me tell you about the New York Stock Exchange. Wanna change the world? Raise capital at the New York Stock Exchange. Mark Zuckerberg is on a press tour. He's talking to the legacy media for the first time in a long time.
+Andrew Bosworth, the CTO of Meta, also did an interview with the head of The Atlantic, dug into some of the launches around the glasses, and then also had a whole discussion in that podcast around the goals of the keystroke logging thing. And it was it was interesting. Mean, it was framed as like, you know, like a tough interview around surveillance in the workplace, and it certainly, the headlines were very scary. I don't know where I sit on it, because I've I I kind of always assume that everything you do at work is logged in the sense that, like, if you're on a work computer and every web page you visit is is going through the network and monitored for traffic and security purposes, and all the code you write, and all the emails you write, and all the documents are stored in a shared document. It's like, it's it doesn't seem that crazy to go to keystrokes because everything is already so monitored.
+But he was framing it as more of an experiment, something that they weren't sure was going to pan out, something that they allowed everyone in everyone at Meta so there certain sections of the workforce that were by default opted out. So anyone who was working on, like, confidential or sensitive information was opted out of that program by default. He said he himself, Andrew Bosworth, was opted out of that program because he has a bunch of legal holds because they're getting sued all the time. So so they can't be recording everything, I guess, that he's doing because then that would be admissible in court. And so all of a sudden, the lawyer who's suing him would be would say, Okay, great.
+In the email, you said, you know, we we don't wanna do this. But before you type that
+Speaker 2: Well, let's see your writing process.
+Speaker 1: Exactly. Yeah. Let's see what you what sentence you typed and then deleted. Like, what word did you use before minimal impact? Did you say medium impact or whatever?
+You know? So so he was opted out. And apparently, I I think all of the Meta employees who were part of that program were able to were were able to just turn it off indefinitely. Like, could toggle it on and off. And the idea was that they wanted to collect information on how work plays out over, like, a twelve to eighteen month period, and they couldn't get that from any sort of data labeler because they needed to have very high skilled workers actually chopping wood on projects for a long, long time to see how projects go from start to finish.
+So basically, like, how do you compact the longest possible rollout, not just a a single chain of code, but an actual series of meetings and decisions and trade offs and everything that goes into making a decision in a white collar workplace, like how do you actually reason through all of that, it's hard to distill that from just, oh, well, the code got written this way, so that's the right way to write the code. That might the code might have gotten written that way because a lawyer said, hey, oh, we have to do this. Then the marketer said, oh, well, you know, we have an activation with this person, so we need to integrate it this way. And then the business people came in and said, oh, well, like, the margins will be better if we write it this way. And so it's not entirely first principles software engineering all the time when you're actually building real products.
+So interesting to see him sort of step into the, you know, a tough interview and sort of lay out his side of the story. But Mark Zuckerberg is in Bloomberg today pledging aggressive pricing with Meta's first pay to use AI, which is a funny framing for just an API for a model, but that's the way Bloomberg put it. In a crowded market for AI tools, Mark Zuckerberg wants to win on price. Meta Platforms unveiled a version of its most advanced artificial intelligence model, Muse Spark 1.1, that includes a new paid tier for developers, marking the first time Meta has charged businesses for access to its models and providing a new revenue stream. It'll be among the most affordable options in the market, Zuckerberg said in an interview ahead of the release.
+Since this is not an open source model, this is, I think, the first time that we're doing a real serious API, referring to the API used to access Meta's AI. And the pricing is going to be very aggressive and attractive. Makes sense. I mean, they own the data centers. They're very efficient at building data centers.
+They should be able to serve a model efficiently. The new model standout improvement is in its agentic capabilities, the Meta Chief Executive Officer said. Agents are a big theme of AI this year with the label applied to systems that can complete multistep tasks on behalf of the user. Zuckerberg described Newspark 1.1 as having, quote, state of the art or very close to it agentic reasoning and tool use. The model is also greatly improved when it comes to coding, and Meta employees are using it internally to build products and features for various apps.
+Speaker 2: Yeah. My big question is how how quickly do they move all of their internal workloads
+Speaker 3: Yeah.
+Speaker 2: Onto their own models. Yep. So they're buying they're buying they're getting access to models through Google
+Speaker 1: Yeah.
+Speaker 2: Anthropic and OpenAI.
+Speaker 1: Yeah.
+Speaker 2: I think that, a lot of companies will look to Meta's own actions
+Speaker 1: Mhmm.
+Speaker 2: As a way to basically validate whether or not they should be using this model themselves. Right? Because it was just, you know, within the last month that Google had said like, hey, we don't have Yeah. Capacity. We don't have enough capacity for all of Meta's demand for our models.
+Yeah. And so, yeah, they can't they they can't get enough AI elsewhere at least from some providers. Yeah.
+Speaker 1: And so
+Speaker 2: how much of their workloads will they be able to run themselves is the big question.
+Speaker 1: There are a bunch of bull cases. First, I'm gonna tell you about Figma. Agents meet the canvas. Your AI agents can upgrade and modify your Figma files with design system context. So, yeah, Meta was one of the first companies to sort of reportedly be token maxing and have a leader board and all of that.
+If you have your own model and your own data centers, the incentive to token max is much much higher because you're just paying the electricity on the cards that you're already depreciating. So you should sort of lean a little bit back into that. Not that you want to be fully token maxing, but you do want your employees using the tools that you've built as efficiently and as effectively as possible. It's just way cheaper to explore when you're not paying margin on another closed source model and you're you're you're not paying anything else and you're actually improving the model. So it makes a lot of sense for them to roll this out broadly.
+The the interesting take that Ben Thompson had, which we didn't get to yesterday because we ended up spending the whole interview talking about Xbox, but the the interesting dynamic is that when you are willing to sell API access, you're willing to sell compute directly and then you're also using your own tool internally, it creates this economic incentive internally that you you have an incentive to always go with the most profitable, the most the most economically efficient outcome. That can be very good for business, very good for the investments that they've made. The the trick is that you can wind up in a little bit of a situation where your business team or your enterprise sales team goes and sells all your compute capacity or all your chips and then internally your team is frustrated that they're not making enough progress. So there's a little bit of a dance there, but in general, it's a forcing function on the internal use of their tools to say, Hey, wait. Why is someone willing to pay five times as much than what we're willing with the value that we're creating here?
+Like, we spent a billion dollars on energy consuming our own LLM, and someone showed up and said, wait. We'd pay you 5,000,000,000 for that same compute power to run a different model and do a different task. It's like why is their model not economically valuable internally? That would be the question. Yeah.
+The flip side is that they do have low cost, so they should be able to say, oh, yeah. We actually did we we yeah. We we we inferenced Newspark one point one internally and we improved the ad model and boom, we made a bunch of money.
+Speaker 2: And these are the same trade offs and decisions that every lab is having to make is how much compute do we allocate towards research, towards internal use, towards to the API, subscriptions, to free plans, etcetera.
+Speaker 1: Yeah. There was that funny semi analysis deep dive into Anthropix forecast. And in there, I mean, some staggering numbers, really, really optimistic. But the flip side was was Ed Zitron was taking shots at the fact that they had e b
+Speaker 2: t I t.
+Speaker 1: E b t I t. Earnings before
+Speaker 2: Training.
+Speaker 1: Training Interest. No. Training in training inference and and everything. No. Earnings before training interest and taxes.
+And what was odd about it was that Ed Zittrain was was was saying it's like the new community adjusted EBITDA, and it is always odd when a new non GAAP metric pops up. In this case, I think it makes a lot of sense because training runs do fit a depreciation profile. It's a little bit different. I don't know why you wouldn't just put it in in depreciation though, like just figure out how to account for training runs through a depreciation schedule. And then maybe it's like a non GAAP depreciation metric, but it's still in there instead of trying to get everyone up to speed on a different a different, like, phrase entirely.
+Yeah. Also, you could just do EBITTRA instead of EBITDA. Like earnings before interest taxes and training, t r a. Yeah. And that might be a little roll off the tongue a little bit easier.
+Speaker 2: But I think semi analysis likes to be a little cheeky.
+Speaker 1: That's true. That's true. But the but the other funny thing is that Ed Zitrin is taking shots at at this like, oh, like the the EBIT EBTIT is like so ridiculous. But like in that forecast, they had like net income of $1,000,000,000 in a quarter. So it's like it's like, okay.
+Well, yeah, you have this like funny metric that you could value the business on to get crazy in valuation. But if the business is making money and and actually like generating net income, you're not in a disastrous financial position. So, you know, you could debate about their valuation, but you shouldn't The whole idea of like this, oh, it's like such Like, it's a very, very different discussion than WeWork, which was not cash flow positive, which was not net income profitable, and and was using those terms to sort of skirt around the losses that were accruing from the business.
+Speaker 2: Yeah. Was looking back at Ben Thompson's earnings transcript or a script
+Speaker 3: Oh, yeah.
+Speaker 2: That he wrote for for Mark Zuckerberg. He has a good segment on why AI matters.
+Speaker 3: Mhmm.
+Speaker 2: Ben writes, forgive the long preamble, but this is necessary context for me to properly explain why AI is so important to Meta, and why I'm making the right choice to invest so heavily in both talent and infrastructure. And he goes on and on and on. But he says, what I've come to realize as I've embraced our status as an entertainment provider and ad purveyor is that our nature as a digital business, notwithstanding, we are remarkably well placed to thrive in an AI era. Remember what we learned about humans. They are obsessed with other humans and they wanna connect with them.
+That obsession and desire only going to increase as we interact more and more with AI. AI is gonna make our properties more essential, not less. Moreover, AI is a productivity tool, but productivity is not the end all be all of the human experience. I've talked over the last year about building super intelligence that helps you get things done, but that's a business story. What we can do uniquely is gives give people the experiences they want from connection to entertainment to shopping when they are off the clock.
+The fact that we are investing in AI but not selling solutions to businesses is actually one of our business' biggest advantages. So, of course, this is just a a sort of fan fiction for an earnings transcript. Meta is in fact selling to businesses now. But who knows over time how big will the API business be Yeah. Relative to how much value they can unlock across their broader
+Speaker 1: Yeah.
+Speaker 2: Business with all of their infrastructure
+Speaker 1: Well, let me tell you about console.com. Console builds AI agents that automate 70% of IT, HR, and finance support, giving employees instant resolution for access requests and password resets. We have the perfect guest to talk about all of this with because Eric Seufert Mobile Dev Memo is with us today in the TBP on Ultradome. Let's bring in Eric. How are you doing?
+Good to see you again. And congratulations. Is it doctor Seufert now? No. Masters.
+Right?
+Speaker 2: Can you hear us?
+Speaker 1: Can you hear us? Okay. Let's bring him back in in a second because I want to hear his take about Meta's vertical integration specifically with regard to their image model because their image model has the potential to feedback in the ads product where they are getting a signal from what ads are performing, generating new images, and then using that as fine tuning data and reinforcement learning data for the image model. And it's a very different cycle than what you see in ChatGPT images where they're trying to be useful, educational, sometimes funny. Same thing with Nano Banana.
+But Meta has a different job to be done, a different process and a different goal because that model, although it might wind up being something that people use just to post on Instagram and people might just use it like any other image model, the real killer application of that is in the Ads Manager. And we also have Sean Frank coming on later in person to tell the more business side of that story. He's built Ridge into a non figure D2C brand, obviously has been deeply ingrained in the meta ecosystem for probably over a decade now and can comment on everything that's happening in AI generated advertising. But I believe we have Eric Seufert lined up now with audio. We'll bring him in to the TBPN LPR.
+Eric, how are you doing?
+Speaker 4: Hey, guys. Thanks for having me. It's good to be back. Sorry about the the technical mess up.
+Speaker 1: It happens. It happens.
+Speaker 2: It's great to have you here. Question. Did you did you rebrand MobileDevMemo? What no. I didn't To Heracles?
+Or is this an error on our side?
+Speaker 3: This is an error
+Speaker 1: on our side. It's mobile dev memo. Hercules is the fund. Is that right?
+Speaker 4: Yeah. The fund. Yeah.
+Speaker 1: Yes. Got it. Anyway Great. We were just talking about Meta. They had just launched Muse Spark 1.1, their LLM.
+They're selling that over API. They're also selling some compute. But I want your take on the image model specifically and why that is an important technology for them, why vertical integration makes sense there, why specifically is is their image model like, it it feels like it has a different business case around it than a Nano Banana or a ChatGPT images.
+Speaker 4: Yeah. So I think this is brilliant. Right? Like, this actually gives them the narrative firepower that they need to to sort of undermine the skepticism that investors feel about the AI investment. Right?
+So like, I was at this dinner. I did these dinners a lot, like these ideas dinners Mhmm. Like a a a research company will bring me in and talk to like much of their hedge fund clients. And like Yeah. I was talking about, you know, why these investments that Meta's making right now are bearing fruit right now.
+Like 33% advertising revenue growth last quarter on $55,000,000,000 in revenue. That's incredible. Like you look at Google search was 19%, Amazon, which is much smaller, was 24%. They're outgrowing everyone except for AppLovin and Reddit, and people don't believe it. And I asked somebody, okay, what would it take to convince you that these investments are actually productive in this moment in time?
+And they said 40%. 40% growth on 55 to $60,000,000,000 in revenue. Where did that number come from? This is pulled out of thin air.
+Speaker 1: Yeah. This is
+Speaker 4: what they need to do. They need to be able to point to something and say, you see that ad? That was created by our AI investments. When you talk about GEM, GEM is a foundation model.
+Speaker 1: Mhmm.
+Speaker 4: Meta trained, a foundation model for ranking. Yeah. That's important, but you can't see it. It's hard to convince first of all, the research, like, you know, a lot of the research analysts, they're really smart people, but they operate in this paradigm of, like, spreadsheet says this. I get it.
+I can understand why ranking investments would actually be really beneficial for the company, but I put a number in the spreadsheet and it spits out something. That's the tool I have to work with. And, like, these are really smart people. I think they conceptually get why these are good investments, but they have nothing to sort of tie it to that's quantitative. I think when you can point, you can point to the ad that was created and you say, look, this ad was created with data that only we have.
+It's the image model that we built, the foundation image model that we built that is trained trained, not fine tuned, but trained on our own data. It can be verified against that. We've got our own custom evals. Everything about the training was built with data that only we have. No other frontier lab can can can fine tune their own models for this use case.
+Only we can do that. And then I think if they can point to the output and they say that ad that you saw in your Facebook, Instagram feed was created only as a result of our ability to train on this data that only we have, then I think you can kinda make the case. So I think bundling those two integrating those two things together Mhmm. Is like the really smart move. And I I I I kind of, you know, I understand like they, you know, they restarted the AI efforts and this is the whole, you know, this is the MSL rebrand.
+But my sense is, like, this might be more convincing than anything that they've been able to say with the ranking, infrastructure and the transfer learning infrastructure. I'm talking about Lattice. I'm talking about JEM. So we'll see. But my sense is, like, if you can actually point to some output and say, look, the this only exists as a result of our ability to train this model on this proprietary data that no one else has, my sense is you can make the argument more robustly.
+Speaker 2: And if you ask advertisers what is the bottleneck to spending more on meta, they will almost always say it's great creative. And so there's Yeah. There's a there's a path to sort of just like unlocking and removing that bottleneck so that the constraint just becomes how much revenue do you have and that will just become a proxy for how much you can spend with us.
+Speaker 4: Yeah. It's like, what's your bid? Well, your bid should be the value that you get back. I mean, that's like the whole point of a second price auction is that you should build your bid your true value because you're you're gonna make money if you win. Mhmm.
+But like the thing is like they've built like a lot of their initiatives. Right? So JEM, foundation model for ranking. Andromeda is is a is a whole system for doing retrieval. And then Lattice, which is transfer learning.
+But, like, the whole point of Andromeda was they were reacting to a lot more creative being deployed. Now the creative being deployed, though, was created with third party tools. Right? This creative being deployed is being built without the benefit of the actual performance data. If you actually want this to work, you need to train it on the ROAS.
+You care about the end result. You care about what the person does when they go to your website or your app. And that no one has that except for Meta at that volume because they get it passed back to the Capi and the Pixel. Right? And so their ability to build this foundation model, I think really unlocks a lot of value.
+And, know, I think you'll probably see that show up in, you know, in the in the revenue growth. Now do they hit 40% to satisfy these these needs of these hedge fund people? I don't know. But, like, my sense is if you can point to the output and you can say, look. This addresses the core bottleneck, which is we need a lot of creative, but it needs to be built with the knowledge of what actually drives the outcomes and not just a bunch of variations that clog up the system.
+Mhmm.
+Speaker 1: I want to push back on that idea that no other lab can do anything like this. What about DeepMind? What about YouTube, Nano Banana, VO3 video generation? It does feel a little bit farther off. And also, it feels like the hedge fund analysts that you're talking to aren't asking the same questions of Google's investments in AI because they have such an incredible business with Google Cloud Platform and they're able to strike these massive compute deals.
+So they have some off take there. But how is the situation different in Google?
+Speaker 4: Because they don't have a history of tilting at windmills. They don't have the they they don't have an albatross around their neck, which is metaverse. Mhmm. That was a misadventure. It cost a lot of money.
+It never resulted in anything meaningful. Mhmm. Right? Now I would actually make the point that that whole rebrand was just a distraction. It was a smokescreen.
+They had to get away from the whole Facebook files thing. Sure. And that took everyone's eyes away from, you know, that that scandal.
+Speaker 1: Mhmm.
+Speaker 3: And was it worth it?
+Speaker 4: I don't know if you achieved that, which they kind of did. They kind of did that with Meta rebrand. Yeah. Maybe it was worth it. Right?
+You know, not
+Speaker 2: even if you ignore like the actual investments they made in in Metaverse and like Horizons and things like that, like Meta Platforms is is the metaverse. Like it is the place Right. That people exist online. Mhmm. So like the name makes sense even if you ignore that and it makes sense for the strategic reason like you said to get away from the Facebook files.
+So like they could have just rebranded and never done the metaverse and they'd be in a much better position. Right? They'd have that Yeah. Sort of
+Speaker 1: But you can't really do the rebrand unless you tell the story or else everyone accuses you of what you just described.
+Speaker 3: Right. Yeah. Yeah. So you gotta
+Speaker 4: I mean, you gotta put your
+Speaker 3: money where your mouth is.
+Speaker 1: Yeah. But on on video generation in particular, do do you feel like we are further out just further away from that? I was I was demoing the latest VO model and it's good but it's still clockable as AI generated. There's still I had some cars spinning around and you know it's three cars and then it's four cars and then it's two cars and they're sort of melding into one another. It's an incredible video model, definitely state of the art.
+But I don't know that that's ready to be deployed in YouTube across a ton of video ad impressions. So do you have a timeline for that or do you have some thoughts on when that will actually be important to the business? Because you have to imagine that Instagram video ads perform better than just image ads and so they'll try and do this. But what what how are you seeing the AI video advertising model evolve?
+Speaker 4: Here you got to look at ByteDance. What ByteDance is doing is incredible on this front. Right? So they put out this paper a month ago. Mhmm.
+I did a summary on Twitter and and LinkedIn, but, what they're doing with TikTok shop is these real like, know, basically photo realistic three d avatars that are selling stuff. Right? Like, so infomercials. And they've, you know, they've built custom models to build those ads. And those are all ads.
+A lot of like, I mean, not all of it, but like, if you go on TikTok and you're looking at the TikTok shop stuff, a lot of it is AI generated. Mhmm. And so what they they in this paper that I summarized, they invested in, you know, in in essentially fine tuning this model to make sure that there was no collision with the hands. What they were finding is that, like, so when you get in that uncanny valley Mhmm. Situation where people can tell it's AI, then they turn off.
+There's Like, a lot of research that's been done in this. If people know that it's AI, they penalize the ad. But when they don't know it's AI, the AI ads outperform the human creative ads. It's really fascinating. Mhmm.
+But so what they found was like when you saw the collision between someone holding something in their hand and the object, then people the the the click to raise dropped, the conversion rates dropped. But so what they did was they fixed that. So they built this whole like visual interpretability model that just focused on that with it with with an expert like in the model. And so it just addressed the hands. Mhmm.
+And so, like, if but that's use case specific. You needed a general purpose model that's gonna build photorealistic video. We're probably pretty far off of that for, all ads of all types. But I think with something like, you know, okay, well, we need human photorealistic kind of like infomercial style. I think you could get to that point now.
+And maybe we were there now, and maybe ByteDance is there now. But I think it it takes a lot of investment. Right? I mean, they had something that if I remember correctly from the paper, it's been a while since I saw, like, twelve thousand hours of live human product interactions. I mean, it takes a lot of data to do that.
+Right? And so, you know, it's just it's whatever you want to invest in. I think if YouTube wants to do that for a general purpose photorealistic video ad tool, we're probably pretty far off.
+Speaker 2: Mhmm. How do you think that the market will react if Muse 1.1 is like a very much like a base hit on the API? Where they they get some comp you know, big companies move over some workloads, but it's not, you know, this runaway hit. And and I say that because so many models that have been good, not great, have a little demand just because there's a lot of demand for AI, but but they don't sort of like have these sort of breakout, revenue charts.
+Speaker 4: Well, you know, they clearly are gonna be very aggressive on the pricing. I mean, they talked about that today. Right? And so my sense is like what you're gonna start seeing is that people don't need to operate at the frontier and you have a lot of use cases that work just fine with and and and basically are just good enough, right, with some legacy model. And so it just comes down to then, okay.
+Well, that's commodity, and so are is you it priced like a commodity? Yeah. Like like, if if you think about, like and also, like, I think we're gonna see a lot more, like, people relenting from needing to be on the on the frontier when they've built stuff using a model that then gets upgraded. And the whole idea there is, like, well, am I gonna upgrade this tool because I have to adapt it to the new model. Right?
+Like, if I'm if I if I you know, because essentially, like, the model name like, if you if you use, like, Vertex AI. Right? You you just got a model name as a variable. Like, you're sending this, you know, system prompt to to, you know, Google, but, like, it's just a variable. You could swap that out in thirty seconds.
+But the the fact of the matter is you're sampling from a new distribution if you do that, and it's gonna change the output. It's gonna qualitatively change the output, and it might change it in quantitative ways that, like, with retention and engagement. And so the thing is, like, okay. Well, now we're talking about this big cycle. It's a new product development cycle because I have to adapt this product that I built to this new model and the output that it provides.
+Right? And maybe it was working perfectly. It was working exactly as I expected it to before. Mhmm. Now I've got to invest a bunch of hours, much of engineering time in adapting it to this new model.
+So even if it's just a swap of a variable name, it's still a whole lot of testing, QA, determining, like, how that impacts long term retention. I'm gonna do AB test. So my sense is, like, you're gonna see a lot more people just saying, no. This works fine. This is perfect.
+And and getting more getting, like, more robust output let's say the token price is exactly the same. Getting more robust output wouldn't benefit me. Why am I gonna invest the resources into adapting to the new model?
+Speaker 2: Mhmm. Yeah. But isn't that so so if they're going after workloads that are running on old models that are working fine and it's a lot of work to switch over.
+Speaker 1: It's not a lot of work to switch over. Not It's it's it's risk but it's not a of work.
+Speaker 2: To switch but then again, you have to go through this process of like QA ing and running it through your own benchmarks and all this stuff. Like, the question is like how I I I just don't know, like, I I'm I'm thinking about a scenario where like a year from now we're sitting here and like Meta has a $3,000,000,000 AI API business Mhmm. And the analysts that you're talking to are like, that like, to me, they're like, that doesn't get you to 40% year over year revenue growth on the on the business overall. So it like doesn't solve at least what those analysts in particular were talking about. Mhmm.
+And like 0 to 3,000,000,000 on like a new business line
+Speaker 1: Crazy.
+Speaker 2: Would be crazy and is like, you know, only been done a handful of times throughout history over the last few years. Right? Yeah. So Yeah. I'm just saying like, we're we're There's such big numbers now that there's a possibility where you have like this incredible breakout revenue growth, but it doesn't actually move the needle enough that that the market still says like, we're we're not super confident about about about like the next CapEx cycle.
+Right? This twenty twenty seven numbers that are coming up.
+Speaker 4: Well, that's and that's the problem with this whole business line in the first place. Like, I think it's a mistake. I think it's a capitulation. I think you're gonna get much more value out of that compute if you apply it to your own core business, which is advertising. My sense is you get better growth, but like the problem is the investors don't buy that right now.
+Like, they've got a narrative issue. It's not a it's not a productivity or a competency issue. It's a narrative issue. And like the problem is like, you know, and you know, you you cited Ben's brilliant essay from yesterday or the day before about like what Sott should say. He should say that.
+Like, he Ben is totally right. He should say that. He should come out and say, look. We like, senator, we run ads. Yeah.
+Senator, we run ads. When he said that, I was at f eight. It was, like, the next month. Every Facebook employee is wearing a shirt that said, senator, we run ads. They know what business they are in.
+Zuck seems to be confused about it. Like, I don't
+Speaker 2: here's here's a big question that'll be interesting. This year, they're gonna spend I don't know how much they're gonna spend on external models. Like, I would say would I would expect them to spend, like, maybe, like, $10,000,000,000.
+Speaker 1: 10,000,000,000.
+Speaker 2: Right? Yeah. Like something in the range of $10,000,000,000 from from Google, Anthropic, and OpenAI. If next year they can say, we're not spending money on any external models
+Speaker 1: Mhmm.
+Speaker 2: Then then that could help them with the narrative issue of saying like, hey, like, we're we're invest we're basically getting instead of having to give this money to other businesses, we're just using our own infrastructure. It's a lot more efficient. We can like token max. We can use way more tokens. We can do way more workloads.
+And so that's potentially it's potentially setting but but the question is, can they actually move all the workloads that are on these other models to their own models?
+Speaker 4: Well, that's where you actually do need the frontier. Right? Like coding tasks, you actually benefit from having the frontier. But if you're having like customer support stuff, right, like that doesn't need a frontier model that could use like a three or four, you know, sort of like, release back model. And it'll be you know, it'd be producing reliable results that you know work.
+Like, you've measured, you tested, and you don't need to upgrade, the customer support or, like, the chatbot, you know, for customer support integration to the to to the the bleeding edge model every single time. But, like, coding, yeah, if you're actually using these models to build models, you probably want the best of the best. Right? And, like, what Meta is doing is really actually at the frontier with, like, integrating agents into the coding workflow. If you look at, like, their system they built called Confucius, it's like a self learning agent, like, that actually helps them deploy better.
+They've got a whole pipeline for data science and machine learning tasks that helps them decide, like, okay. Which which which where should we even apply this? Where should we even do testing? Right? Because that's actually takes a lot of time.
+Like, you're just figuring out what kind of experiments, what kind of tests you wanna run. They built a whole pipeline around that that's all driven by agents. Right? So my sense is, like, there's where you want the the the top of the line, and maybe their own models don't perform best there. But, like, also, don't know how how excited investors are gonna get when you say that we cut expenses.
+I think they really need to see the revenue growth at the top line. And so my sense is, like, you get that you get more of that by just making the ads platform better, and they've done that. All they need to do is say, look. We can if they could forecast out that growth and say, look. We're really dedicated to this.
+This is what we're pointing everything at. My sense is you could get investors excited over time. You keep printing 33% or whatever every quarter, like you're gonna get investors excited after some time. If you start saying we're gonna compete with Kalsi, we're gonna build an AI pendant hardware, like they're not gonna get excited. They're gonna think you don't know what to do and they're gonna think you've got all this compute capacity, you don't know how to use it.
+Speaker 2: Help help us understand the the prediction markets play. Is that I think the the answer that we landed on was it is just in Meta's nature to copy the new hot thing. So regardless of what it is, we're just gonna do it. Right? And you can see the history of, like, these shots on goal with like every new hot thing in consumer.
+They just build a version of it or they try to buy it. So I think that's the most simple explanation. John was trying to explain it as like maybe there's some way to do it with like there there there is no dollars and it's just for like social status, you know, who who can be, you know, an oracle. I think that that was We got more news that maybe showed that that Probably not the case. But then when you look at Again, you look at the market, like, look at the total market for like gambling and again, even if they got a meaningful amount of that market, they would not really move the needle in the way they need to on the core business.
+And they would invite all these new regulators that are now saying like, you're not only trying to harvest, you know, my teenager's attention and making them, you know, sad about their life, you're also getting them like it just feels like it opens up this huge can of worms for no reason.
+Speaker 4: It's a just totally misdirected move. Is that really the space you want to go into right now? That is so politically fraught. That is such a political hot potato. Why do you even want to touch that?
+I would steer clear that I would say, look, Facebook apps, it's time well spent. You connect with friends. All this gambling, you're gonna get addicted to that. Don't spend time there. Spend time in Instagram.
+It's more wholesome. Why are you gonna touch that at all? Are you just gonna open the door to more scrutiny? That's insane. I really have no idea why they're even talking about that.
+Yeah. It doesn't make any sense. But they've got like, know, look, they said we're gonna we're gonna publish a lot more apps. They've got the new pocket app. I mean, it seems kind of interesting.
+Maybe some of this stuff sticks. I think they could just try a bunch of stuff. But why would you touch the most politically toxic area right now, like, when you could just be touching anything else?
+Speaker 1: Yeah. Take us through the Prosperous Society. I wanted that's why originally why I wanted to bring you on. I want the thesis. I want to dig into it because I I I found the it's a three hour four part podcast series.
+You've written a lot about it, but introduce it for those who haven't been following along.
+Speaker 4: Yeah. Prosper Society has started out I wanted to write an economic bull case for AI. We've heard all of the, you know, bear cases.
+Speaker 5: We've heard
+Speaker 4: all of the, you know, doom narratives around the around the economy. It's gonna just basically displace all white collar work. You know, you're gonna get DoorDash created with the vibe coding session and so all these companies are gonna go out of business. And I wanna make the case that it's probably not gonna that's probably not gonna happen. And actually, there's a lot of reasons to be optimistic.
+Right? And I think, you know, in writing that, it ended up becoming you know, we live in a in a sort of like very pivotal moment, I think. You know, if you look at the elections, you know, in the sort of the the house primaries in New York, you look at what's happening with the the, you know, the New York City mayoral election, you look at what's happening in the LA mayoral election, like, there's there's this this this sort of moment where these sort of, like, impulses against capitalism have become a lot more popular. Right? Like there's reasons for that and, you know, I know, I'm I'm not an expert on those reasons, so I won't delve into them.
+But I think, you know, ultimate's a mistake to go down that path. And the thing is, like, my sense is a lot of the AI or the anti AI narratives are actually have nothing to do with Right? That's just seen as an avatar or like a bogeyman for capitalism. And so what I wanted to do is sort of, like, anchor this economic defense of AI, this economic bull case of AI in, you know, the sort of, like, liberal tradition of of of the Western world. And and and in in doing so, like, you could say, like, you know, you could anchor it to these these sort of, like, these these great thinkers, you know, this sort of, like, enlightenment thinkers and and these sort of the economic giants that have built, you know, built this sort of intellectual framework that our that our western civilization is is based upon.
+And people could say, look. Well, look. You've you've misinterpreted them and said, okay. Well, maybe. But but if if that's not the case, then they you're gonna make them drop the mask.
+Speaker 1: Mhmm.
+Speaker 4: You're gonna make them drop the mask and say, That's not my problem with AI. I just don't wanna live in a liberal economic society based on these Western thinkers. And I think if you actually kind of force that to be articulated out loud, you make a lot of progress against the a anti AI narratives. But the whole point of the prosperous society is my sense is, you know, a lot of these AI investments, they're going to push the economic constraints away from production and towards just distribution. Right?
+They're gonna mean distribution the binding constraint. Mhmm. And so because you just get this this this flourishing of of content creation. And and and and so when that becomes the actual problem with distribution and these AI investments go into things like ads platforms, digital advertising, you know, REXIS, recommend recommendation systems, then actually commerce, the economy, becomes much more efficient. Mhmm.
+And it's a really good thing, and you just generate a lot of value by pushing that binding constraint to the distribution layer. Mhmm. And you get then as a result, you get a lot more heterogeneous product development because you can actually reach those people economically. Right? So like what is the constraint now?
+It's like, well, can I reach a big audience? Right. Right? Can I reach a big enough audience to support a business because what? I've just got this kind of like blunt tool.
+But if these AI investments go to making recommendation systems better, digital ad systems better, reaching these these these these pockets of people that have these very specific interests that were totally un unserved before, then you enable a lot more commerce. Right? Yeah. And and then and then, you know, you support this, like, flourishing of people making this wide diverse variety of goods. You get rid of this idea of, the Pareto principle.
+We have to serve, you know, the the 20% that supply 80% of the commerce. Well, no. Now you can serve everybody, and they can pay what they're willing to pay for these things. You reduce consumer surplus sorry. You reduce consumer surplus, you just you create this flourishing of of of everyone getting exactly what they want.
+Yep. Right? And that's the prosperous society. And so the way I frame it is kind of a reaction or, like, call call it a conversation with John Kenneth Galbraith. He wrote The Affluent Society.
+Right? But this was written in the post war economy. It serves kind of as the degrowth or handbook. And in my sense, it's like, you know, John Kenneth Galbraith is a brilliant man. I'm not saying he's wrong or he was wrong when he wrote the book, but I'm saying it just doesn't apply anymore.
+Mhmm. Right? He was talking he had this idea of the dependence effect. Advertising actually is a way to whip up demand so we can maximize production because that was what he called this conventional wisdom at the time. You should be maximizing production.
+Mhmm.
+Speaker 3: But the
+Speaker 4: the reality is in the time he wrote this book, 1958, you had people moving to the suburbs, getting houses. They you know, the GI bill helped them buy these homes. You had the suburb the the idea of the suburbs was was being deployed. And so, you know, people needed washing machines. They needed cars.
+They needed refrigerators for the first time. And so you had these big companies that made these mass market goods. They advertised in mass market media. And they and and and John Kenneth Goldberg's idea was, like, well, that's just creating demand. The the there there is no actual inherent demand for these things.
+It's creating it through advertising. And my point is the opposite. Yep. You know, we don't have this homogenized society anymore and we don't have people that need these homogenized goods anymore and we have a lot more particular specific media now. And we can reach people and advertise to them the things that they have demand for
+Speaker 1: Mhmm.
+Speaker 4: For products that that weren't economically viable prior to these systems, these distribution systems. And that is the prosper society. It's being able to reach people to meet the demands that they have with the products that they couldn't access before with ad ads that they wouldn't otherwise see absent these systems. And so I think it's it's, you know, I think it's a very it's my sense is, like, you can make a very credible bull case if that's what AI delivers to us. And it's not about wiping out white collar labor because the reality is, like, that's gonna create more jobs.
+And we're seeing that now. Like, there's no there's no justification for that skepticism. It just doesn't exist. We're seeing an increase in hiring. Maybe not at the entry level, and you could Yeah.
+Discuss if there should be some intervention there. But my sense is, like, AI actually, if you look at the data and there's a Financial Times article about this other day. If you look at the data, it doesn't support that bear case. And so Yeah. That bear case should be absolutely eliminated as something that even enters the conversation.
+Speaker 1: Yeah. No. I completely agree. That was an amazing speech. I don't know if I have anything else.
+Yeah. No. I I I love this idea. We've been talking about it a bunch, just more customization, the long tail of commerce getting even longer. And it feels unfathomable.
+Speaker 2: Yeah. We've
+Speaker 1: because seen this it's already, like, you know, specific shirts that are just for you designed and targeted to you on Facebook. We've seen that. But, like, it can in fact get more personalized.
+Speaker 2: Well, yeah. I mean, we've we've seen this with like content platforms. Right? Totally. They're very good at they're very good at like find they're they they they are very good at serving you.
+They can serve you a video that has 50 views from a new channel on YouTube and you'll be like, that's interesting. I will watch this. Right? And it's a niche that is like so small, it never could have existed in the era of, you know, radio and television and, you know, seeing that seeing that trend accelerate. It reminds me, I was, I I was wanting, you know, the you know, these, like, kids RC, like, ride on cars?
+I got, like, incredibly frustrated with these because I've tried a bunch of the different brands. I've tried spending, like, $800 on them and, you know, $400 and all of them just suck like the kids even when you have the you're driving the kid on the controller, the kid can still hit the gas and just like run into stuff and, you know, it's just absolute chaos. I'm like, what is the version of this that is like, you know, know, the the top of the line version of this? Because I wanna get it. I I use these things a lot.
+And I searched around, couldn't find it anywhere. And then John just like
+Speaker 3: Within twenty four hours, I got served
+Speaker 1: exactly what he was looking for. I don't even know how
+Speaker 2: how Yeah.
+Speaker 1: It got served to me, but it was fantastic. Thank you so much for taking the time to come chat with us.
+Speaker 2: I like to drink.
+Speaker 1: Always always a great time.
+Speaker 2: My favorite my favorite conversations. When you're on, it makes me feel like we're on we're on we're actually, you know, on SportsCenter. Yeah. Because most people that have talked about this stuff are not high energy. It's just like full on SportsCenter.
+It's amazing. Amazing. I love
+Speaker 3: it.
+Speaker 1: Well congratulations on all the progress and and the Prosperous Society. Go listen to it. It's a three hour four part series and sign up for Mobile Dev Memo if you haven't already. Of course, you should. But thank you so much for coming on the show, Eric.
+We'll to you soon.
+Speaker 4: Take care, guys.
+Speaker 1: Have a good one. Let me tell you about public.com. Investing for those that take it seriously. They got stocks, options, bonds, crypto, treasuries, and more with great customer service. And our next guest is Bernt from one x.
+He's the founder and CEO. How are you doing? What is that? Hi, you. Good.
+Welcome back to the show. Thank you so much. That is incredible.
+Speaker 7: My hand, and then it's like Neo's hand.
+Speaker 1: Yes. Introduce the launch today. What happened? Tell us about it.
+Speaker 7: I mean, we've been cooking on this for quite a while. Yeah. So super excited to finally show this to the world. And Mhmm. Also, it's just so exciting because we're so close to shipping now.
+Yeah. So everyone's gonna pick this apart anyway.
+Speaker 1: Yeah.
+Speaker 7: So we don't need to be careful anymore. We can just like open it up and to me, it's this beautiful machine that becomes almost more art than engineering, right, at this point. Interesting. Yeah. We're we're excited to show people what we've been cooking and excited to put it in people's hands.
+And I think also, it has a special place in my heart because we're working on this problem for more than a decade. Mhmm. And one thing that Neo and OneX has really been pushing is how to use highly miniaturized, high power motors and tendons to create these machines that mimic humans. And the hands is the kinda culmination of all that work. Right?
+It's it's where all of the complexity comes together to to meet the world, and hopefully, we've created something here that can really remove that final barrier for how intelligent our models can become. Right? Like Mhmm. So much of human intelligence comes from our ability to to probe the world for truth and to really figure out how the world works through our hands.
+Speaker 2: Okay. Take us through the full journey of developing hands for Neo. A lot of people in tech love to, you know, follow an an Elon style playbook, just make the most simple version of something, simplify, simplify, simplify. This looks incredibly beautiful, but also incredibly complex. And so I wanna understand, like, how you how you got here basically, like, version by version.
+So
+Speaker 7: it is a very complicated hand, but in my opinion, it is the simplest version of it that exists that is good enough to do what needs to happen. So first of all, One X is fully vertically integrated, so we do absolutely everything in house. And in our factory here in California where I'm sitting right now, we do everything from designing the production processes to producing our own motors, our own tendons, the entire system, right, sensors, electronics, everything in house. And that allows us to iterate very, very fast because I do really believe in, like, you have to have this first principles approach. Right?
+So start with, like, what what am I trying to solve? We're quite lucky in that we have humans to look at with respect to how do you solve this problem. Nature did a pretty good job.
+Speaker 1: So when you say you're you're you're looking at humans, what type of training data are you using? What's useful? What are you discarding from just there's a lot of hand videos on the Internet, I'm sure. People doing all sorts of things. You can do teleoperation.
+You can have people wear gloves and do motion capture. You can do simulation.
+Speaker 2: Get x-ray.
+Speaker 1: Yeah. X-ray. I mean, there's so many different ways. Like, you're using everything. Is there one one path that you found specifically valuable?
+Speaker 7: So I think actually, it starts from, like, starting with first principles. Right? So Womx has always been about we want to design robots that are safe so they can live and learn among people. Mhmm. But also because safety is what allows us to learn.
+Mhmm. So we probe the world for truth and of course if our fingers break while doing that or we break whatever we're trying to touch, it doesn't work.
+Speaker 8: Mhmm.
+Speaker 5: So you
+Speaker 7: need to design this beautiful kind of like compliant soft systems that force can flow both ways because you're both seeing with your hands and acting with your hands. Mhmm. And that's really what this is all about. So like how do you create that? And you kind of have to look at how nature works like our muscle.
+Nothing really moves fast. There's no gears. No nothing like this. So we've designed this from these first principles. But we go way deeper than that.
+I think what we haven't talked enough about yet, and we'll share more about this later, is like how incredibly seriously we take closing the gap towards the human. And it's not to look like a human. It's because we want the work system to work like a human. So even, like, if you look at Neil's hand behind me here, we worked so deeply on how do you make these fingers nonlinearly just, like, be compliant exactly like a human finger. Mhmm.
+Because if you get all these details right, you can take all of the video that's out there on the Internet. You can train
+Speaker 1: Sure.
+Speaker 7: Huge role models based on this, and it just works on a robot. And that's what the Rolex Robot Lab is about. So to enable that general intelligence for robotics, you need to design the robot so that it interacts with the world exactly like a human. And then you wanna do that with the least amount of complexity possible, and that's essentially what we have here. But of course, the complexity of that is pretty high because you're you're mimicking a human head.
+Speaker 1: Let's talk about grip strength. We got grip strength testers here in the studio. Is this an important benchmark clicking these together? How strong is the hand currently? Where do you wanna go?
+Because it feels like there's a trade off there where if the hand, like, the stronger you make the hand, the heavier, the more, the more dangerous it could potentially be. At the same time, there's certain tasks that you expect a certain level of grip strength.
+Speaker 2: Also, yeah. Yeah. Yeah. It's it'd be interesting to understand how often tasks come up in your daily life where you need like insane grip strength.
+Speaker 6: Yeah.
+Speaker 1: It's pretty rare, I think. But certainly in, you know, industrial capacity or even around the home, picking things up, moving a chair, you need to be able to grab it without dropping it. It's a safety issue at the end of the day.
+Speaker 7: Yeah. I think it it actually appears quite often, but you don't think so much about it because you don't do it for a long period. Like Yeah. Yeah, you're not grasping that hard, but then something starts slipping and you tighten your grip or, like, you're actually using quite a bit of force. So the hand is roughly the same.
+Yeah. That's a good one. Yeah. The hand is roughly the same strength as an average human. Really?
+So that's so you I mean, it needs to be able to do the full capabilities of a robot. Right? So the robot can deadlift a 150 pounds. So the hands need to hold the bar of a 150 pounds. Yeah.
+Not because deadlifting is useful in everyday life, but because it's a good metric for like how capable we are. Yeah. So we really worked hard to make that kind of power to weight ratio also about the same as human. Mhmm. So if you look at the general hands in the market right now, this thing is roughly three times as high force as the other hands.
+Speaker 1: Yep.
+Speaker 7: That is really also something that's gonna enable a lot of new applications. Right? Because in the end, your AI will be as smart as the diversity of the experiences that you have lived and experienced. Like, diversity of data is directly correlated with the intelligence of your model. If you are a third as strong as a human in your hands, there's a lot of tasks you just can't do.
+Speaker 1: Yeah. I have one more. It feels like you have jumped to the frontier of hands specifically. Is I saw people joking, can I just buy the hand? Obviously, they're making probably rude jokes.
+But is there a world where you partner with other robotics companies to sell a piece of your hardware, maybe just the hand to someone else that already has a wheeled robot but it needs a hand? Is there a world where you're selling parts of your technology or do you want to be vertically integrated from end to end the full experience?
+Speaker 7: I think there there is a world like this. Mhmm. I do think it's very important though that like we wanna we were we're about to also launch Neo as a platform where we we're gonna invite everyone in to build on this. Mhmm. And having, a homogeneous platform that everyone is building on is so incredibly powerful because that doesn't exist today, and that really allows you to do benchmarks across systems like you have in the rest of the AI community.
+But that being said, it's not a hill we're going to die on. Like if the collaborations are the right types of collaborations, we just want to make sure we can scale our manufacturing and get as many out there as possible and build the ecosystem and really give robotics all the love it deserves. Right?
+Speaker 1: Yeah. Totally.
+Speaker 7: We just wanna accelerate the path.
+Speaker 2: Yeah. Amazing. Timeline around shipping. What what's what's the what's the update there? I know a bunch of people that are that are in line that have that have ordered.
+So everyone's So,
+Speaker 7: yeah, I'll be kind to my team and not give you a specific date. But we have promised that we are going to ship this year, and we will ship this year. So we're gonna keep that promise, and it's gonna be incredibly exciting. And like I said, like, reason the we can be so open, right, so you can just read into that. Like I said, the reason we can be so open is that this is about to ship.
+So people will pick it apart anyway. That's fair. I do think this is gonna be so big. Right? Like, as AI now becomes physical, it's really hard to understand what kind of impact that will have.
+Speaker 6: Mhmm.
+Speaker 7: We're getting so much interest from, let's say, wet labs that want to have their AI for science actually design, manufacture, and run their experiments. There's, like, hospitality, elderly care. You have the home that we're already working towards. Like, there's this enormous surface area, and it's gonna happen a lot sooner than people think. And I think right now, it's just about really growing the pie and making sure that everyone has platforms that they can work on to to solve these hard problems.
+Speaker 1: Yeah. Amazing. How will I mean, the last question I have is like like this this feels like a a technology that even after you solve development, design, and the the the AI that powers all of this, like, is much more gated by the real world and thus we would see like a slower takeoff. Like what we've seen with Waymo, it's everywhere in San Francisco but as you go around the world, don't realize that cars can drive themselves. Whereas, you know, chattybt.com was available in every country and it was just like the touring test is passed for everyone at the exact same time and that's that feels impossible in robotics in the physical world, but do you have a different view of it or am I roughly correct with that prediction?
+Speaker 7: The ramp is gonna be slower, but the total uptake is gonna be way way way higher.
+Speaker 1: Sure.
+Speaker 7: Right? So like, if you think about and I'm I'm very bullish on this. Like, I think it's just a couple of two to three years away. Wow. But even if it's a decade away, like Yeah.
+Robots will build robots. Yeah. And we're already working on this in the factory. But they won't just build the robots. They'll build the data centers, the chip fab, the energy infrastructure, get into mining and refining.
+Yeah. And this full automation of the physical substrate that enables everything including intelligence Mhmm. That can only happen with robotics. Yeah. And that's gonna look like this.
+Right? Yeah. So you you need you need to kinda like enter that curve, And I think the uptake ramp is gonna be slower in the beginning, but way way way higher as you kinda, like, hit vertical on the curve.
+Speaker 1: Yep.
+Speaker 7: And I think this is also where it gets extremely interesting. Right? I'm back to, like, how we're gonna solve some of the remaining problems in science, how we're gonna create an actual true abundance of labor across society. Yeah. This is only possible if you automate the physical substrate.
+So it's gonna take slightly longer, but it's also worth it because the impact is so tremendous.
+Speaker 1: Yeah. And it it still should be an exponential curve because once you get to the point where, you know, five robots can make one more robot in a month, then you wind up compounding and the exponential just grows and grows and grows. Fascinating. Very exciting times. Congratulations and thank you so much for coming on
+Speaker 2: the I'm super excited you guys shared this and Thanks, guys. You guys continue to have the the best aesthetics Yeah. In robotics by by a 100 x.
+Speaker 1: Yeah. It makes me feel more much more c three p o than, Terminator, which I think is the right the right direction to go.
+Speaker 2: The hand's a little Terminator.
+Speaker 7: A 100%.
+Speaker 1: The hand's a little Terminator.
+Speaker 7: Should not underestimate how important it's going to be to do this together with people in Yeah. Sense of like, adoption needs to come through making everyone used to this technology. Right?
+Speaker 5: Totally. We we wanna make
+Speaker 7: sure everyone understands how helpful this can be and really make sure that we don't don't hit any barriers where, like, this becomes something that people don't want because it's such a great opportunity, and we wanna make sure we can accelerate the path.
+Speaker 1: Yeah. VR, you know, VR was useful in in certain pockets, but it it was awkward and it was never adopted and it was always seen as like this this like yeah. Very like niche technology. And I I think the the aesthetics are underrated, so congratulations on nailing them. Thank you so much for coming on the show.
+We'll talk to you soon.
+Speaker 2: Great stuff.
+Speaker 1: Have a great day.
+Speaker 7: Awesome. Thank you, guys. Cheers.
+Speaker 1: Goodbye. Let me tell you about Codex. Codex is a powerful workspace for getting work done with AI agents. Whether you're writing code, analyzing data, creating content, or automating business workflows, Codex helps you move projects forward from start to finish. We have Thibault joining in just forty minutes or thirty minutes to give us the update on 5.6 and what's going on in Codex, of course.
+But first, we have Josh Lindgren from CIA. He's the head of podcast development here to give us an update on all things. Suited up. Podcasting. Suited up.
+Looking good, Josh. How are you doing? Welcome to the show.
+Speaker 3: I'm doing well. You guys are always looking good as well.
+Speaker 2: Yes. Great to have you on the show. Great to hang in France just a couple weeks ago.
+Speaker 6: That's great.
+Speaker 2: Give an introduction on yourself. How and when you got into podcasts and then we'll talk about where we are now. Yeah.
+Speaker 3: Yeah. It's been a wild ride. Twelve years for me, started representing podcasts twelve years ago. I was a music agent at a boutique music agency in Seattle booking tours for indie rock bands, and I used to listen to podcasts all day while I was routing tours, and had the idea that maybe podcasts could have agents. Started cold emailing podcasters, and was surprised to discover that there was a business there for me.
+And very surprised in that time to discover that there wasn't really much of a business infrastructure yet. So there was a lot of opportunity, spent the next several years signing podcasters within that agency. And then in 2018, I met with 11 different agencies and ended up joining CAA, started the podcast department here, and we have a great team of people focused on podcasts. The podcast department is within our greater creators department that works with all kinds of different creators like yourselves.
+Speaker 7: And
+Speaker 3: it's been a really wild ride. I mean, when I got into podcasting, the estimates I've seen is that the global podcast advertising industry was worth about $45,000,000. And Owl and Co. Has put out a report that last year it was worth 9,200,000,000. So, you know, I I expected there was going to be a lot of growth in this space.
+It seemed like a great growth area.
+Speaker 1: Thank you.
+Speaker 3: I never expected this level of growth. I mean, it's been a really tremendous wild ride.
+Speaker 2: I had started working with some podcasts around the same time, a little bit later, I think. You were twenty fourteen, is that? Yes. Yeah. So I I probably started working with with podcasts in like 2016.
+Mhmm. But even then, I would meet a show that today was probably like a $10,000,000 a year business and they would have zero revenue. But they would have this like rabid fan base and maybe they'd have one sponsor which was just someone in the audience that reached out and was like, hey, can I send you some some free stuff if if you talk about it? And they'd be like, okay. And then and then, you know, fast forward to today, those kind of properties are are, super valuable.
+What what are you seeing what are you seeing now? Like, what's coming down what's coming down the pipeline net net new shows? You know, we've covered a lot of the evolution of, you know, formats, how podcasting obviously interacts with with live streaming in our case, but what do you see coming down the pipeline?
+Speaker 3: Yeah. I mean, you know, it's been clear for a few years now that video is gonna be a bigger part of podcasting, and we're really seeing that come to fruition in the past year. It's like a major inflection point right now. Now to be clear, like, it's not the videos replacing audio. Both can continue to exist together.
+There was a recent study from Edison that said that the majority of podcast consumers do both. Sometimes they do audio, sometimes they do video, which that's my experience. I live in LA, so I have a long commute, and so I I like listening to podcasts in the car, but I also like watching podcasts at home and in the office, know. But it's created a really interesting moment in podcasting where there are some things that are fundamentally different about digital video versus digital audio. For one thing, looks really different.
+Right? The ways you can integrate with brands looks very different versus the audio space tends to be much more dominated by your thirty second pre rolls and your sixty second mid rolls and so on. The video space tends to have a lot more custom integration with advertisers. And it also discovery looks really different in video. Mhmm.
+You know, in the audio space, in terms of breaking stuff through, there's a lot more spend that is required in sort of the same way that you might market a TV show or a movie. Right? Whereas in video, there's a lot more clipping. There's really seamless integration into social media. And so if you're trying to break through with a new podcast in 2026, you should have a really strong reason why you're not a video podcast, or else you should probably have a video podcast.
+Speaker 1: Yeah. Somewhat related to the video podcasting thing, a big trend out of Cannes that Colin Samir and others were talking about was that many podcasts are sort of reformulating as shows. We've done this where we think of this more as a show than a podcast because it's a live show. There's a lot else going on. Of course, it's available as a podcast.
+And then you also think of Subway Takes. It's Emmy nominated now and it's a it's very much a show but it's also an interview that's sort of like a podcast. And I'm wondering how you're perceiving the definitions changing, evolving, just this idea of what does it actually take to to deliver a show as opposed to just a podcast in the modern era?
+Speaker 3: Yeah. I'm with you. I think that's the right thinking to not try and put it too much in a box. Right? Because the lines are just getting so blurry between what's a podcast, what's a TV show, what's a series of reels, right, what's a YouTube channel, and in your case a live stream.
+Yeah. I do think that the word podcast is a bit of utility for me just because it's sort of like I know it when I see it. Right? People talk about podcasts, people like podcasts. But I mean truly the line is really blurry.
+I mean, you know, I I think we talked a bit in Cannes about Oprah's podcast, which she's moved over to Amazon. Right? And I mean, Oprah is the queen of television. Right? And and this is where she's putting her energy.
+And you know, who's to say like if you're watching it on prime video versus if you're watching it on your phone, is it a podcast if you're watching it one place and it's a TV show if you're watching it the other? I mean, I don't know if it necessarily matters, but I think that it's an amazing time to be a media consumer because media is meeting us where we are.
+Speaker 1: Yeah. Talk about the landscape of these podcast distribution deals that are happening. Pat McAfee with ESPN. Oprah, you mentioned, is doing one. There's Netflix is entering the space.
+Spotify went with Joe Rogan very early on. Some of these platforms just sort of get the video podcast for free, like YouTube is, you know, the default for most creators. But what are the larger companies looking for when they want to go deeper with a creator who might just not be ready to graduate from the self serve options? Or maybe they don't have a self serve option if it's linear TV or a platform like Netflix.
+Speaker 3: Yeah. It's funny. I mean, a really unique marketplace Mhmm. Because as you kind of overview, the the different buyers in my space are just drastically different in terms of their business models. Okay.
+You know? So it's really hard to compare apples and oranges when you're looking at one of our major buyers, say, Sirius XM, which has a really significant satellite radio business. Yeah. Comparing them to Amazon, right, one of the biggest companies in the world and primarily, you know, doing ecommerce. Right?
+Both have drastically think different things they need out of it, let alone now you have Netflix and Hulu entering space. Right? That they have different KPIs in terms of what they're looking for. So I think part of the the challenge and the joy of representation in this space Mhmm. Is understanding who the different buyers are and what their needs are, and understanding your client, the talent, right, and what they want.
+Speaker 1: Mhmm.
+Speaker 3: You know, and it's it's just there's no one deal that makes sense for everyone and there's no one size fits all in podcasting.
+Speaker 1: Yeah.
+Speaker 3: Which I think is great ultimately because it means we can paint with different paintbrushes for different types of shows.
+Speaker 2: Yeah. Can you do you feel like you can identify if somebody's gonna be a star based on their first ever episode?
+Speaker 3: Well, I think that I think that taste is really important, you know. And for me, like I I will take bets on stuff that I think is fundamentally good. I mean, when I was a music agent, I was picking bands based on the bands that I liked, and I just had to hope that other people would like those bands as well at some point. And I I still believe that, you know, in podcasting. I think that there there is room for taste.
+There's certainly stuff that I don't represent that has that does good business, but it just wasn't right for me, and that's fine. You know, I think that as soon
+Speaker 5: as
+Speaker 3: you divorce as soon as you divorce your love of the medium from the business, then what's the point? Right? Like if we're if we're just here to make money, maybe we should be working in finance or in tech or something. Right?
+Speaker 2: Yeah. Maybe we should all be wearing suits. There you go. You're one of Look. Look at me.
+I'm just here to have fun.
+Speaker 1: Yeah. How are you thinking about live streaming and maybe more pure play live streaming? I'm thinking about the video game creators, the ninjas, the the shrouds, the folks who spend twelve hours, eight hours a day live streaming political commentary, business analysis, anything. It's such a different business model, such a different community, sometimes much tighter audiences but incredibly engaged. Is that a muscle you want to build?
+Is that something you're thinking about growing? What what trends are you seeing there generally?
+Speaker 3: Yeah. I think the live streaming space is is fascinating. Right? And obviously, this has been happening for a while, but I think the moment we're talking about of the merging of all the different things is really playing out for live streaming too. Yeah.
+For yourselves and for other shows, you mentioned political shows Yeah. Where people need real time news. Yeah. I don't think your fans wanna wait an entire week necessarily to get your take on something when it develops. It's a lot of work.
+I think you guys know the amount of time and energy you have to put into doing this. Right? It's it's really impressive, and I applaud you for it.
+Speaker 6: Mhmm.
+Speaker 3: But it really creates a lot of different opportunities. I think something else that you guys are doing really well is that you do the livestream, but you also cut this up into audio episodes and video episodes on YouTube and so on. So there's so many different ways to reach your audience. And I think as a creator today, the more that you can be flexible to meet your audience where they are, the better chances you're going to have of succeeding and breaking through.
+Speaker 6: Mhmm.
+Speaker 3: So I love to see what you're doing, and I think that you're on the tip of the spear right now in terms of the new type of experimentation that's happening in the streaming space.
+Speaker 1: Yeah. Talk to me about how you're thinking about working with a celebrity or group of celebrities that wants to get into podcasting. It feels like there was this crossover moment where podcasting was a backwater, then it became cool. Maybe it was around COVID, but we got a whole bunch of celebrities crossing over. Some of them did extremely well, won awards.
+Smartlist is huge. But it feels similar to celebrities launching brands where there's still going to be a power law. It's not just it's obviously a huge advantage to have an audience already, but not every celebrity is going to have a hit podcast and vice versa. Not every podcaster is gonna work on TV or wind up starring in movies. How how are you assessing the the the reverse transition from, you know, Hollywood or TV or films coming over into the podcasting world successfully?
+Speaker 3: Yeah. I think there needs to be a reason to be for any given podcast. There was a level of experimentation, like you mentioned around COVID, where a lot of folks launched podcasts that maybe didn't pan out. Yeah. And I think maybe some of those had to do with the the the reason behind the podcast and the idea of the podcast, you know, wasn't as sought out.
+Right? I think a good example of it working would be Julie Lee Dreyfus' wiser than me, where that was driven by her desire to hear from older women that are largely ignored in our culture. Mhmm. Right? So she had a reason that she wanted to make it.
+It wasn't like she would just come into the space because, you know, some enterprising agent myself told her that she should make a podcast and she could make money. Right? She was there for a different reason. The things I see succeeding have that reason behind them. Mean, you mentioned Smartlist.
+Right? Another COVID, you know, project that that began of COVID, and it came together because the three of them wanted to hang out.
+Speaker 1: Yeah.
+Speaker 3: Right? And they wanted to create something for people who were locked at home. Yeah. You know? And it that that like genuine friendship between them is the basic building block of what it is, you know?
+So a lot of what I do when I talk to celebrities about podcasting is try and get to the core of what it is that they want to create and what their purpose is for coming. And then they can craft all the business and everything else around that, like, central seed of an idea.
+Speaker 1: Mhmm. What's the secret to a successful podcast tour? I mean, back to Smartlist, I feel like they've been extremely successful at engaging the community off of the Internet, which is interesting because they started off the Internet, they went to the Internet, then they go back into the live tour. But what what what makes for a successful podcast tour?
+Speaker 3: Yeah. I think that your relationship with your audience is so strong in podcasting, and it depends a little bit by format. You know, I think the level of engagement for more format driven shows will maybe be a little bit less than more personality driven shows. But something that I saw really early on getting into this space and coming from a touring background, I was booking tours for podcasts. And, you know, one of the first live podcasts that I went to was early client of mine, Stuff You Should Know, which I assigned by emailing info at Stuff You Should Know.
+Speaker 1: Oh, wow.
+Speaker 3: It was a really different time. But then I I went and saw them do a show in Vancouver, and they had a q and a at the end of the show. People were getting up to the microphone, and this this woman gets up to the microphone. She's like 22, looks normal and nice. As soon as she gets on the mic, she's bawling because she is talking to Josh and Chuck from Stuff You Should Know, and it was a real like light bulb moment for me.
+Right? Because that's a educational podcast. Right? But for her, she was explaining on the microphone that they spend so much time in her ears that she has this relationship with them, and it was like she was finally meeting these friends that she's had for so long. And I think that's that's when you get people who are not just willing to buy a ticket, but to travel four states over to make it to a live show.
+And, you know, we we look at data for download performance in a market before and after a live show, and we see, you know, in some cases, like a niche show can have a really solid touring business because they're converting like 50% of their listeners in the market are turning out for these live shows. And we've done analysis too where we look at zip codes of of ticket buyers, and the the number of people who are traveling long distances to come to these is is pretty incredible. So, you know, I think that's the key thing is if you have that relationship with your audience, if you let your personality be a part of the podcast, people are gonna wanna come out for that.
+Speaker 1: Mhmm. How are you thinking about international? Just the like like the puzzle? Because if your business is if your podcast is aligned to specific products that are maybe only sold in The United States, it can be hard to monetize. You might need to go on a tour.
+An international tour can be more expensive. At the same time, I'm sure from musicians that you've worked with, you've solved the puzzle of what an international world tour looks like that is successful. So how do you think, like, the the the the future eras tour of the podcasting world will Yeah. Play
+Speaker 3: I think that the international touring is
+Speaker 4: I mean,
+Speaker 3: you have
+Speaker 1: It's it feels like it's early. Am I right in that, or am I just not aware of there was already the Era's tour of podcasting and, like, Smartlisted it, and I just wasn't paying attention to their their trip to Japan or something.
+Speaker 3: I would say there's only one Era's tour, but you but the you are seeing a bit of international touring happening already. I mean, you know, many years ago, we sent stuff you should know to Australia, and it was such a wildly successful tour. Yeah. You see a lot of American podcasts do in The UK
+Speaker 6: Yeah.
+Speaker 3: A little bit in Europe. I mean, one of the challenges is when you're crossing over into markets that are primarily not English language speaking markets where you might have listeners, but you might have a different type of relationship with them. That can be a real challenge, but especially going from one English language market to the next, it can really work.
+Speaker 6: Mhmm.
+Speaker 3: But you do see audiences becoming really segmented between different markets.
+Speaker 1: Mhmm.
+Speaker 3: If you look on any given day at the charts in The UK and the charts in The US, they're probably gonna look pretty different. There's gonna be crossover for sure.
+Speaker 6: Mhmm.
+Speaker 3: But a lot
+Speaker 4: of different stuff
+Speaker 3: changes out even though we speak the same language and understand each other very well. Yeah. There's just different sensibilities from one market to the next, you know. But I mean, you mentioned advertisers, right, The US ad market is is a big leader in podcasting, right? Because this is a consumer that a lot of brands want to reach.
+And so, know, as we've built our business internationally and signed podcasters from all over the world, you know, there's still at this point a real value into having a foothold in The United States in terms of reaching audience. I think one of the most exciting feature change areas in podcasting is going to be some seeing more of these markets come alive.
+Speaker 6: Mhmm.
+Speaker 3: And if I was, you know, an investor looking for a place to to start up, I would be looking at India right now, for instance, you know. Right? Whereas there's just a little bit less saturation and more opportunity for extreme growth. Australia, I think, is a really interesting market. I made it out to Sydney last year for South by Southwest Sydney, and it reminded me a lot of the podcast market in The US ten years ago, twelve years ago when I got started.
+And so I think there's a lot more that's going to come online for those markets as the brands locally and the advertisers in those areas start to realize that this is a great way to spend money and to reach audience. But it was an education process in The US to get brands to to spend here and trust this market. Yeah. And it'll be an education process in a market by market basis.
+Speaker 1: Last question. How are you talking to or I don't even know if you can talk about this, folks who work for large media companies, they have been around for the pivot to video. We're gonna put you on camera. We're gonna set you up with a podcast. They build an audience, and they're ready to venture out on their own.
+We've had Ashley Vance on this show, Joanna Stern, Eric Newcomer. There's been a whole host of these folks who sort of grew audiences and learned the skills of content creation, whether it's Advice or Vox or any of these platforms. And then they go independent. If you're having a conversation with them, what how are you talking to them about why they might want to do that or why they might not want to do that?
+Speaker 3: Yeah. So every podcaster, every creator is an entrepreneur Yeah. Right, Which can be really scary if you're used to getting a paycheck every single, you know, biweekly from a big media company. Mhmm. But it's high risk, high reward.
+Right? Because once you launch your own show, you own that audience, and no longer are you at the whims of, you know, the executives that you work for. Yeah. And actually capturing a smaller audience can be more lucrative for you because you're capturing more of the revenue
+Speaker 1: Yeah.
+Speaker 3: That that audience drives. Right? This is a conversation I have with folks all the time who are legacy media companies trying to decide what their next steps look like. Especially in this really fast changing landscape where some folks are forced out necessarily when they necessarily want to make that choice right away. Yeah.
+So it can be a really scary transition. I'm very empathetic for people who are going through it. I don't begrudge anyone who decides that they want to keep working in legacy media. I don't think that it's doom and gloom for legacy media. Right?
+I think that there's still room for great journalists on television and on radio, print journalists and so on. But for folks who are entrepreneurial and want to build their own thing and own their audience, there's incredible upside and opportunity.
+Speaker 1: Yeah. Yeah. It's exciting times. Well, thank you so much for taking the time to come chat with
+Speaker 2: Great to have you on.
+Speaker 1: Have a great rest
+Speaker 3: of so much for having me.
+Speaker 2: The godfather of podcasting.
+Speaker 1: It's true. It's true. Will talk to you later. Have a good one.
+Speaker 2: Great
+Speaker 1: Thank to see
+Speaker 3: you so much.
+Speaker 1: Let me tell you about CrowdStrike. Your business is AI. Their business is securing it. CrowdStrike secures AI and stops breaches. Up next, we have Jeff Morgan from Ollama.
+He's the cofounder and CEO. This is his first appearance for the massive series b. Jeff, how are you doing? Welcome to the show.
+Speaker 8: Thanks for having me. Doing great. So excited to be here. Big fan of the show as well.
+Speaker 1: Thank you. Please introduce yourself and your music company. I wanna get to the bottom of how the
+Speaker 8: hell you got 80% of Fortune
+Speaker 1: five hundred using your product. But first, introduce yourself and the company.
+Speaker 2: Yeah. I'm Jeff. I'm the
+Speaker 8: CEO and cofounder of Alama. Alama is the largest network for developers to access open models. K. You download Alama. Get connected right away to open models like GLM five two, or you can download them locally and run them right on your laptop for more kind of edge low latency use cases.
+Speaker 1: Okay. Tell us about the round. Jordy's warming up the gong. How much did you raise? Who from?
+Speaker 8: 65,000,000. The lead was Tamash Tungus, and we had existing investors participate too, like that.
+Speaker 1: Awesome. Fantastic. Tons of GitHub stars. Why how does this fit into like the the value add to businesses versus just downloading the model themselves from from an open platform, getting the the actual the weights themselves, deploying things, or just going with an API? Like, how are you talking to Fortune 500 customers about how you will actually improve their experience with something like GLM 5.2?
+Speaker 8: You know, the power of open source is how fast it can build trust with developers around the world.
+Speaker 1: And it
+Speaker 8: ends up a large number of developers work at work at companies that work at, you know, a lot of those in the Fortune 500 or Global 10,000. And open source has a special, you know, capability where you can deploy it in your own environment and not have to think about a ton of security and compliance. And what that means is, look. Like, you can take an open model, which already has open weights, and that's kind of why open models are perfect for these use cases, and run them without any approval really as a developer and and get real successful results all without, you know, having to expose your data or, you know, even incur big costs. So, you know, that's really been the driving force of being able to to get into these large businesses.
+Mhmm. And to your point, look, like, you know, just the way it's being open isn't enough. You need a way to deploy them, to run them, to make sure it works on your hardware. For the cloud models, you know, you really need to make sure that you're running them in a secure environment where your company can access them. You know, a lot of a lot of businesses we talk to, especially Fortune 500, they need these open models hosted in The US and in Europe.
+And that's just a requirement, and it's it's a need they have. And so, you know, put put that all together. It's it's so surprising and incredible how fast it can get adopted.
+Speaker 1: So what does I mean, you say you're you're you're talking to these Fortune 500 companies, but I imagine that the fact that you have so many GitHub stars means that there's a lot of self serve activity. When does a customer crossover to an enterprise relationship with you?
+Speaker 8: Yeah. Generally, it starts with the individual dev. Right? They bring it they bring it to work. A lot of them use it, you know, for personal productivity Sure.
+And they bring it to their team. And once you're using a team, it's not a one one person store anymore. Right? There there's a team there. Right?
+And everything from security to technical architects, IT teams. Mhmm. You know? And and these folks, they they need not just a product that's really, you know, easy to use and self serve, but they they need a solution that really kinda end to end covers things like safety and monitoring and logging and data storage and protection. Like, these are all components of a successful, you know, agent deployment.
+And so, you know, that's when it becomes a multiparty environment. And, you know, as we know, like, that's when you need a solution. And and on our side, you know, we need a team to be there to help help those customers.
+Speaker 2: Mhmm. What, what set of models are you most excited about for the back half of this year in the open weights world?
+Speaker 8: Oh. I mean, I think with GLN five two, we just had another massive moment in open models. And, you know, a lot of by far, at least from what we know publicly, is the highest token volume of accessing VLAN five two. And so I'm excited for that because I think there's gonna be a series of new models that are long horizon. They're focused on these really hard agentic use cases.
+There's gonna unlock so many use cases in enterprise that, you know, the prior generation of open models couldn't. Mhmm. You know, and the gap between open models and the frontier models is shrinking. And so, you know, I I think at that point, you we're able to get to these incredible use cases that just weren't there, you know, three or four months ago.
+Speaker 1: Take me through some of the game theory in the open source community around those rumors that we heard that there might be export controls on open weights models coming out of China soon. If we stop getting frontier or near frontier open source models from China for free, is the next step that you would see an American company step up, NVIDIA or maybe Meta changes their strategy? How are you thinking the the open source ecosystem would evolve if China changes their strategy?
+Speaker 8: Yeah. You know, we like to work backwards from from our customers. What are they trying to do? And they for by and large, you know, they may have preference on specific, you know, geographies where the models are from, but by and large, they're adopting both. Right?
+They're and some mix of open models and and frontier models as well. To your point, like, I think The US models are absolutely stepping up. They're incredible. The Nemo Tron three Ultra model is just amazing and is able to accomplish some of these long running agent tasks. Mhmm.
+And then also, you know, one of the most downloaded models on the llama is a US model. It's the Gemma model. And Oh, yeah. You know, this is, like, a super amazing team at at DeepMind that's putting them out. The new ones are, you know, agent ready.
+Like, they can run coding agent loops. They can accomplish much harder tasks. And so, look, I think it's really up to the customer. If they want a US entirely US built model designed from scratch, that's there. If they want a Chinese model, which is often the case, they it it's less about where the model's from.
+It's like, where does it run? And is it running next to your data, which, you know, a lot you can deploy it locally. Mhmm. And then able to deploy with safeguards. And ends up a lot of customers, they're not looking for, like, where the model's from.
+They just wanna make sure that they're running it properly and safely so that they, you know, they can have a a understanding of what's gonna you know, what could go wrong, but what could go right. And and there's a lot of safety tooling that can be deployed to help with that. They have tons of appetite for that.
+Speaker 1: What do you see your role as in terms of benchmarking, reality checking, vibe checking, different models, helping enterprises that work with you to make the right decision, pick the right tool for the job?
+Speaker 8: You know, our job fundamentally is to connect the 9,000,000 developers on Ollama to the right model for the right task. And that's that's step one.
+Speaker 6: Mhmm.
+Speaker 8: And so just by having that sheer volume and the this critical mass of devs, we're able to already understand just from, you know, our community which models are performing right for the right tasks. That that's a starting point. I think from there, it's really collaborating with the model labs, and we're launch partners with every major model lab. And just making sure that, you know, the best parts of the model are shining through through OLAMA
+Speaker 1: Mhmm.
+Speaker 8: Including what are they capable for, what are their benchmarks, how can customer customers benchmark it for their own use cases. Sure. It it all comes down to a lot of software tooling and and and and and, you know, a community in a in a network. And that's Mhmm. You know, what we built and and it's what makes Alama special for developers.
+Speaker 1: Got it. $65,000,000 raised. Is this like, what are you using the money for? Because you don't have the crazy training costs because you're more of a gateway. Is this head count off
+Speaker 2: 2,000 BDRs.
+Speaker 8: Yeah. You hit the nail on the head. Look. We've we've put out a you know, on our site, hey. We're launching a Teams plan.
+We were inundated with thousands of teams that wanna use Olema.
+Speaker 4: Yeah.
+Speaker 8: And, you know, that's gonna that that's the core mission. It's like, look. We've got this critical mass of devs. How do we go solve problems for businesses back to what we were just talking about? And that takes a team, so, obviously, we're expanding.
+We got here with 14 people to to company of this magnitude. Mhmm. But there's a much bigger team
+Speaker 5: to be around
+Speaker 7: the market. Very good.
+Speaker 8: And then and, course, you know, one thing Alama does very special for the larger open models is we host it on US and European servers.
+Speaker 1: Okay.
+Speaker 8: A lot of the consumption of open models is going to China or is going to servers where
+Speaker 3: Sure.
+Speaker 8: It's there's there's no data retention guarantees. And that's so important for companies. And so that's a compute, investment we're making and really enabling, you know, every business in the world to access the most powerful models on compute that's secure and safe in The US or Europe.
+Speaker 2: Will we ever settle the debate on whether the gap between open and frontier models is closing or widening? Because depending on what sort of group somebody is a part of, they tend to have one one view or or the other. But it but I think in in reality, it's probably always kind of going like going like this to some degree. But what's your view?
+Speaker 8: I think you're right. It's oscillating. I mean, I'm a daily GLM five two user through Ollama right now, and it's replaced 80% of my coding work. Wow. And I think a lot of that's gonna be true of a lot of customers.
+As for the gap, like, to your point, think it it may widen. It may shrink. I think overall, it's shrinking. But but, ultimately, customers are gonna use a mix. And, you know, for the bulk of their use cases, they're gonna reach for these open models because they can tune them to be much faster.
+They're obviously much cheaper. And there's always gonna be use cases where you need the frontier. I don't if we'll ever settle the debate. I think, ultimately, the gap will will continue to shift. I think that's what makes it exciting.
+Right? It's like every every three months, we're able to do something new. We're able to run better agents, and quickly open models will catch up and really enable a whole wave of customers that wanna run open models to do that, you know, in their own environment or to customize it to the point where, like, they can even make it more more powerful. The last thing I'll say too is, you know, customers are readily taking these open models and customizing them, and they're actually getting better results often than
+Speaker 6: Yeah.
+Speaker 8: You know, just a a stock frontier model. Yeah. And, you know, I think we're just at the beginning of that transformation.
+Speaker 1: Very cool. Well, congratulations on the progress
+Speaker 2: Awesome to meet you.
+Speaker 1: In the round.
+Speaker 2: Congrats
+Speaker 1: to the for coming on the show. And have a great rest of your week.
+Speaker 3: We'll talk
+Speaker 2: to soon.
+Speaker 1: Goodbye. Awesome. Thanks a
+Speaker 2: lot. Cheers.
+Speaker 1: Let me tell you about Shopify. Shopify is a commerce platform that grows with your business. Let's let's you sell in seconds online, in store, on mobile, on social, on marketplaces, and now with AI agents. Jordy, there is a story. Oh, wait.
+We actually have our next guest.
+Speaker 2: Guest of honor. Now,
+Speaker 1: Thibault from OpenAI. He's the head of core products and platform. Thibault, how are you doing? Congratulations on the launch.
+Speaker 5: Hey. Thanks. Doing well.
+Speaker 1: Give us the highlights
+Speaker 3: I did
+Speaker 2: sleep last night. Do you sleep do you sleep at all?
+Speaker 5: Yeah. I do sleep. Currently, have, like, you know, maybe five to 10 war rooms going. So Okay. You know, it's just like a little bit it's intense.
+It's a sport.
+Speaker 1: Yep. You know, but we're
+Speaker 2: and you guys like to make it hard on yourselves by launching every every time there's a launch day. It's like, you know, 15 new things. So it makes sense that there's, you know, close to equal amount of war rooms.
+Speaker 1: Yeah. Let's start with 5.6 Soul though. I want to I want to I want you to identify for me like what is sticking out? What are the most cutting edge capabilities that really stuck out to you? The latest unlocks from the frontier of the actual model, then we can go into codex and voice model and everything else and how things come together and how these are used.
+But first, just from the raw model capability, what was most impressive to you? What was most exciting?
+Speaker 5: Yeah. It's actually really hard to answer that question, Chris, because when we were looking at the benchmarks, trying it, we were just blown away by it all. It's just better at coding, better at cyber, better at everything like long context, producing documents, better at having taste, website generation. And then for the first time, we also really cracked, I think, multi agent setups, which we shipped as the ultra mode. And when you just see that going and, you know, you've got, like, eight agents collaborating together, communicating, and, you know, getting the same work done, like, faster.
+It's just you just feel like, wow. Know, this is, like, another way to scale test time compute. Yep. But overall, just amazing workhorse. Feels way, way better than Five five and anything else we've produced so far.
+Speaker 1: So in January, there was a project that was getting some attention called Gastown talking about all these different sub agents. You had poll cats and all sorts of different abstractions. It felt highly technical and it seems like Soul Ultra is a way to abstract that away. Is that deliberate? Is there I guess the question more broadly is like, is the level of prompt engineering, are we leaving that era?
+Or will there always be some cycle of if you get really good at using SOL Ultra, you'll have a better experience because you'll be able to give more fine tuned, fine grained prompt and direction to the model.
+Speaker 5: So one thing that you see as well with SOL is its uncanny ability at understanding human intent. Mhmm. And, you know, you need shorter prompts. You don't need to explain yourself in that much detail and sort of, like, you know, just gets it and then goes and does, like, a very complex thing. Yeah.
+You know, you saw the prompt for, like, post training the Luna model, which is, like, super crisp, and then it does that, like but it actually worked for many days. Yeah. And this is also, like, with us launching Chat 50 Work. It's it's about making it accessible for everyone and, you know, you don't need to have, a PhD to use this model. It's just like it should just behave like just like another super, super smart human and, you know, just kinda get you in the moment, and that's what we're striving for.
+Of course, if, you know, you really push it to the limit, you're always going to find new setups, and this is, like, also a very exciting space. You know, we continue to develop, like, also codecs in the open source, and then we're seeing, like, you know, all sorts of sorts of novel ways to set up these agents and models so that you can get results in cybersecurity and all these other more nuanced and complex things. But for everyone, you should just feel a ton of power out of the box.
+Speaker 3: Mhmm.
+Speaker 2: Talk about what was important at the product layer. Fundamentally, what I think people want out of products is to just be able to talk to their computer like a really smart coworker and be able to get things done. But then you're dealing with, you know, so many users over here, millions of users over here trying to combine it and condense it into something that's simple and obviously simple things end up being, you know, exceptionally complex to actually create.
+Speaker 5: Yeah. If you look at it, it's deceptively simple. You can open it on your phone. It's ChatGrniche work. You just toggle it and then there you go.
+You connect it to the things that you already have, your email, calendar, your docs. And then suddenly you're like, okay, wait. I can ask it to process all of this information that I had over there that I had to manually do all these things myself and it can just do all of that. And it's just like on the go and it's like on your phone in the Chateapp tab already have installed. I mean, that's the beauty of keeping it very simple.
+At the end of the day, we want it to be just a normal conversation between you and the agent. This is also why we decided to ship it just in chat with you.
+Speaker 1: Mhmm. Talking about progress in computer use. What is actually driving progress there? Is this just something that sort of comes for free with scale and model advances or is there deliberate data collection that's happening and some sort of flywheel that's unlocking new capabilities in computer use?
+Speaker 5: Yeah. We've done a lot of effort, bespoke effort on Windows, Mac, and, like, mobile computer use, also, like, phone use as well. And so there's an entire team working on this. It doesn't just come for free, but what does come for free is, like, every time we push the efficiency frontier and the model gets, like, you know, more efficient, like, at thinking and acting and it just, you know, costs less tokens and it gets compressed in time, it also gets better at computer because it reduces the latency and reduces the cost. And so the two compounds, like, you know, we have a lot of gains that we're getting from, you know, also like visual understanding.
+Every time, you know, it improves, it's like the model just gets more precise so it doesn't have to correct itself. And it was like, maybe it misclosed the button. They're just like, oh, it was like, wait, I have to redo that. So every time it's, like, more accurate and, you know, more token efficient, computer is definitely benefits from it. And when you compare it to five five, it's, like, you know, it's just really, like, three times faster.
+So, you know, we're not at all hitting a wall here in, like, how fast we can do computers.
+Speaker 1: Yeah. Can you talk about how the role of member of technical staff is evolving? Because you're you're you're talking about Soul Ultra going off and working for days at a time. And at a certain point, your job sort of evolves to if you have a launch tomorrow, don't kick off a task that takes four days. Even if the model is capable of it and will deliver something great in four days, you need it tomorrow.
+And so you have to size your workloads appropriately. How is the how are you thinking about sizing work and and actually delegating the right the right chunk of work at this stage?
+Speaker 5: Yeah. I find your question very interesting because it actually highlights a shift in our thinking over, you know, since we had five, sixes, you don't really instruct it necessarily for a task that's going to take four days. You tell it all the information that you have. So, you know, you're like, Hey, I have a launch tomorrow. Yeah.
+Right? And then, keep track of the time and, like, understand that, you know, the PR needs to land. Like, you know, I'm in that or, like, by 2AM. It will just, like, reason over it. Yep.
+And you're not the one that needs to manage, like, know, all of that extraneous, like, complexity. Yeah. And so that's it. What you're seeing as well is, like, you know, your relationship with the agent, like, changes over time as it gets more intelligent. And you're just like, oh, yeah.
+I can just talk to you, like, you know, another, like, you know, super start super smart human.
+Speaker 2: Yeah. Yeah. Talk about the efficiency of the model, what work went into that, why why it matters, you know, what kind of conversations you're having with, you know, big customers, all that stuff.
+Speaker 5: Yeah. So what matters a lot right now is sitting at the frontier and, you know, getting the max capability when you want it, but also for your normal average day to day task because, you know, being super efficient. And not just for latency, it's just because also we're seeing and so, like, we had this era of token maxing and then, you know, we've been talking a lot with, you know, old old companies and enterprises that we're working super closely with, and then they were like, oh, it's just a little bit, you know, maybe out of control. It's like, you know, what we want is, like, you know, were in a highly efficient model that is, you know, steerable, controllable. We want the the right, you know, spend control, dashboards, and so we also have all of that.
+You can you can look at your spend, understand the ROI, but also you can rest knowing that, you know, this is actually like a super, super efficient model. And so you get the job job done with, you know, way way way fewer tokens, which, you know, to you, means that you have to pay less for the same results, which is super important. This is really the theme, I think, of the year is being on the efficiency of performance and cost.
+Speaker 1: What about if you want to spend more for faster performance? What does the future of either ASIC enabled, Cerebras enabled, Spark and fast mode, what do you want to see develop there either immediately or over the next couple
+Speaker 5: Yeah. I think what we are truly working towards, like, it's a buffet of options. Right? So Mhmm. For for your normal, like, you know, interactive task is, like, you know, you're going to use five, six sole, like, on medium or on high, and you're going to have, like, an amazing time.
+If you have a really hard problem and you're trying to, for example, find a cyber vulnerability in something, and so you're gonna run ultra and you're gonna run it, like, for two days, and it's just gonna, like, leave no stone unturned and, like, you know, invent novel techniques and, you know, you're going to be, like, absolutely blown away by what it comes up with. And but a lot of times, you also just need speed, you know, like, for some of the subs that we're dealing with is, like, you know, we love working off of, like, the Cerebras version of this, which is, like, at, you know, about, like, you know, 750 tokens per second, which is an order of magnitude faster than the the default version that we have on the on the API and in the product today. And this is just really situational or if you just want the very best. Mhmm. There's absolutely no compromise.
+It does come at a cost.
+Speaker 1: Of course. A lot of
+Speaker 2: people were feeling left out this week that weren't in the early access program. What makes a good early access partner? I'm sure your DMs are just felt like, you know, people that want access to the next set of models. But what makes a good partner to the to the to the product and the research team?
+Speaker 5: Yeah. We really try to go as broad as possible. It is quite a bit of effort to manage and then also, like, we're getting all that feedback and incorporating it and we work very closely with the the the folks in early access. For us, it's just really about realizing whether it is as good as we think it is. Right?
+You know, you're, like, so close to the model, you train it, you know, you've incorporated, like, all that feedback, all your dreams, visions into this model, and then you've played with it for a little bit. And then when we give access to, you know, folks outside of OpenAI, it's, you know, the first time where we have, like, an unbiased look, you know, where people are using all sorts of models and different harnesses every day. So it's just kind of like this awesome, you know, is it actually as good as we think it is? It's like, you know, what are the things that we missed? And so it's that, you know, high high bandwidth engagement, good feedback, and then, you know, that sort of people who have shown to be unbiased in the past and talked honestly about all sorts of models and all sorts of harnesses.
+Speaker 1: How are you thinking about the tradeoff between mobile, cloud, desktop, the Mac mini that went mega viral last year? Do you think that we'll stay in a hybrid pattern for the foreseeable future? Is it a person by person basis? Do you have a grand unifying theory of how agentic work happens in the future?
+Speaker 5: Yeah. The way we think about it is no compromise. Mhmm. So you want to be able to use the same same AI partner, you know, like on your phone Yeah. On you know, like on the go.
+It's just like, you know, I go walk in the park. I want the exact same thing.
+Speaker 6: Mhmm.
+Speaker 5: I want it on my laptop. I want it, you know, at home maybe like running in a Mac Mini. Is more that it needs to be able to have access to all the things that are important in my life and, you know, not be constrained by the physical, you know, boundaries of like, you know, it's just like, hey, I started this prompt or I started this conversation on my phone and it's just like now it's stuck on my phone. Yeah. But, you know, we want it to be uncompromising and so your AI your ideal AI partner, I think, just, you know, has access to everything all the time and just, you know, processes the information as needed and then, you know, can act in a safe way and controlled way so that, you know, you always understand, like, what it's trying to do.
+You know, if there is, like, something risky, you can, you know, approve it or, you know, ask it to change tack. And there, I also think, you know, like, the mobile has, a big role to play. Right? So if you're if, you know, five, six hours, you know, busy, like, you know, working on something and then, you know, you just go out to dinner, it's like, you know, it should ask you for permission to do something
+Speaker 1: Sure.
+Speaker 5: When you're there. And, you know, you don't don't need to be stuck on your laptop.
+Speaker 2: Yeah. Fast forwarding six or twelve months, how is how how important is voice to someone's day to day experience with ChatGPT work slash codecs?
+Speaker 5: I don't think you would need to fast track it. You know, we shipped yesterday.
+Speaker 2: No. Know. But but, you know, you assume, like, you know, oftentimes, like, something ships, you know, and it takes a little
+Speaker 1: Everyone has to go on holiday break.
+Speaker 2: Yeah. Like, you have three day weekend.
+Speaker 1: Three day weekend. Then everyone can test out the latest and and and integrate it into their workflows.
+Speaker 5: Yeah. You know, open a chat with the app, like, using it, latest voice. We also demoed it in
+Speaker 3: in the
+Speaker 5: livestream this morning, and it's very sort of super enjoyable, like, magical experience when you first experience it, but also, like, know, on the fifth time as well. It's going to be part of, like, know, day to day experience, you know, of, like, how you work with these systems. We don't we don't have it yet in the desktop app, but this is something that we're working towards. And when when you experience it, is it it's a it's like a modern day, like Jarvis. Right?
+It's like, you know, you just talk to it, you just walk in your room, and, you know, suddenly it's just like doing things on your computer, you know, with the same level of, like, precision and power, you know, that you currently have over text.
+Speaker 1: Yeah. It's amazing. Fantastic. Congratulations. Thank you so Hopefully, you can get some sleep.
+I'm sure Many
+Speaker 2: many big days
+Speaker 1: to come. Back to the one of five war rooms, whichever one you'll go to next. Have a great rest of your day. Congratulations. And we'll talk to you soon, Thibault.
+Cheers. Have a great one. Goodbye. Let me tell you about Railway. Railway is the all in one intelligent cloud provider.
+Use your favorite agent to deploy web app servers, databases, more while Railway automatically takes care of scaling, monitoring, and security. And while we bring in Sean Frank, I'm also gonna tell you about Cisco. Critical infrastructure for the AI era. Unlock seamless real time experiences, a new value with Cisco. Sean, how are doing?
+Welcome to show.
+Speaker 6: Great to see you guys.
+Speaker 1: First time in the actual studio.
+Speaker 6: Right? Second. I did the Shopify episode.
+Speaker 2: That's right. That's right. He took the time out of his Black Friday.
+Speaker 1: That was great.
+Speaker 4: Yeah. Dude.
+Speaker 1: But we yeah. We bounced around a lot. It was a it was a big it was a big day.
+Speaker 3: That was a good one though.
+Speaker 6: Hopefully, do it again.
+Speaker 1: Yeah. Another And Black Friday was a record for you, right? Of course. Yeah.
+Speaker 2: Yeah. Have you had a Black Friday that wasn't a record?
+Speaker 6: No. Every year it's gone up.
+Speaker 3: Every year.
+Speaker 6: And it's not gonna stop this year.
+Speaker 1: Up only over here at the Ridge Wallet. A Ridge broadly, right? The portfolio is growing still?
+Speaker 6: Yeah. The wallet business is a great business. Yeah. It's like a 100,000,000 plus a year. Yeah.
+But the growth is now like all the other stuff we're doing.
+Speaker 1: Okay.
+Speaker 6: So we have like a travel line. We
+Speaker 1: have Luggage.
+Speaker 6: We do like 10% of all men's wedding rings in So we have like a huge
+Speaker 2: double digits of the TAM.
+Speaker 6: Yeah. It's like a very boring monopoly. We sell a ton of like men's wedding rings.
+Speaker 2: And they're coming for it all.
+Speaker 6: Oh, yeah. Soon.
+Speaker 2: You won't be able to get married. They're actually going for regulatory capture. You won't be able to get married if you're not planning to use a Ridge ring.
+Speaker 6: Yeah. Because I'm I'm like a big pronatist now because I'm like, get married, have kids, So buy a Ridge
+Speaker 1: you're behind all of that. Every time I see some podcaster What's a sign? About the the fertility crisis, it's you. Yeah. You're behind it funding it all.
+Speaker 6: And the big thing now is like the tech business for us. Yeah. So like we do like phone cases, that type of stuff. Yeah. It's like twelve months old and it's like already like a $100,000,000 a year.
+So Wow. Just adding a bunch of new random little little widgets to sell.
+Speaker 1: That's So take me through the demand generation side of the business. Like, what is actually changing? Obviously, there's AI generated advertising, AI enhanced targeting. There's all sorts of different stuff. But, like, from your day to day, from the platforms you're advertising on, like, what has been the most material change over the last twelve months?
+Speaker 6: Well, it's a big day to be here, right, because the big meta announcements. Yeah. People were like dancing on Meta's grave like three days ago, and now everyone's soaked on them.
+Speaker 2: And now you have a 1% God candle. Totally.
+Speaker 1: Is that specifically about the LLM or the image generation model? Because the image generation model seems much more impactful to the advertising business than the agentic coding capabilities.
+Speaker 6: Well, yeah. Yeah. Well, I would say the Manus actually, like, really helped unlock like a lot of, like, stuff inside the ad account.
+Speaker 1: Using the ad manager more than
+Speaker 6: that. Got it. I think like it just democratized a lot of tools that Yeah. Like the best ad managers are already using.
+Speaker 1: Yep.
+Speaker 6: But really, we just want Meta to continue to get better.
+Speaker 7: Yeah.
+Speaker 6: Right? Over the past three months, they've rolled out a lot of changes of like the actual ad algorithm.
+Speaker 3: Yeah.
+Speaker 6: And it was really bad for a lot of people. And we just had like the best Q
+Speaker 1: two It was good
+Speaker 6: for you. It was awesome.
+Speaker 1: Yeah. Interesting.
+Speaker 6: I think they're getting so
+Speaker 2: so Yeah. Do you think that it was actually bad for some people or they were just going through a slump in their business overall? They had like business problems that they wanted to blame on
+Speaker 7: the ad changes.
+Speaker 6: Well dude, yeah. I mean, what's new, right? It's like, everyone So if your business is going bad, it's everyone else's fault. Yeah. But really, like, they do like the Meta Performance Summit every May
+Speaker 1: Mhmm.
+Speaker 6: And they've just rolled out so many great changes to the ad algorithm that like, I think you're getting better impressions with better people.
+Speaker 3: Yeah.
+Speaker 6: And I the more compute and AI they throw out, I think it's just gonna get better and better. And like we're getting to it like a future where like the perfect impression at the perfect time with the perfect ad that's like customized to that person with AI, that's coming.
+Speaker 3: Yeah.
+Speaker 6: And click through rates will go up, conversion rates will go up, and CPMs will go up with it. But I think there'll be like a moment of arbitrage there.
+Speaker 1: Do do you think do you think Zuck is doing enough to actually message that to customers like you? Because Ben Thompson put out this piece on Monday, sort of an earnings call transcript that he wrote in the voice of Mark Zuckerberg. And his pitch was to investors, telling the investors, hey. Look. We are investing a lot in AI, but it's all in service of the ads business, which is great, which we do take seriously.
+We have taken some side quests, done some metaverse, some VR stuff. But this investment that we're making right now, you shouldn't beat us up in the public markets because it's going to come back huge. We're growing really fast on the ad side. 33% is massive at that scale, and it's going to continue to double down. But I'm wondering if advertisers are receiving that signal from Meta that it is going to get better, it is someplace that they should be spending more time and more dollars.
+Speaker 6: Yeah. We're a captive audience, so I don't think he has to message to us.
+Speaker 3: He doesn't. He he can do it anymore. Yeah.
+Speaker 6: Yeah. Like, the best thing he could do is get people to spend more time on their app
+Speaker 1: Yeah.
+Speaker 6: Right? And then better understand who those people are and what they're in market for. Mhmm. And if he delivers those things, the ad dollars will come. Mhmm.
+Because besides that, like, where else we're gonna spend money?
+Speaker 5: Yeah.
+Speaker 6: Like, TikTok shop's actually doing great, but it's still a really small business. Right? Like, the GMV this year in America might be 20,000,000,000.
+Speaker 1: Really?
+Speaker 6: And Amazon does that, like, every four days or something. So it's like, it's still a very, very small business.
+Speaker 1: Why is TikTok shop so small? Is it is it a separate panel or something? I feel like TikTok still has so many so many impressions, so many videos that are being served. Do you do you have an idea of why
+Speaker 2: that business is falling out? I think it's it's not necessarily I think it's primarily that content platforms have been a place you discover products but not where you transact. Like Meta has done a lot of had a lot of efforts in shopping in app. They never you would have thought that they would have clicked harder. Yeah.
+Right? It's like you have this captive audience that uses your product for an hour a day to discover things to buy, and they're not buying that many products in the app.
+Speaker 1: Yeah.
+Speaker 6: Yeah. And TikTok shop is delivering way more value than 20,000,000,000 in GMV. Like, a brand is like Comfort Hoodies. I'm sure you guys have seen They're doing 1,000,000,000 a year right now.
+Speaker 3: They're 4
+Speaker 2: years Last time last time you told me about them, I think it was like 400 or something
+Speaker 6: like that. They've they've more than doubled. Yeah. It's crazy. And all it is is like TikTok shop affiliates, so people posting thousands of videos a day.
+Mhmm. They take those the best videos of it.
+Speaker 1: Yep. They put
+Speaker 6: it into TikTok shop GMV max. Yeah. They run that. And their TikTok shop business might do might do a 100,000,000 a year, but the spillover is crazy. Everyone goes to Amazon.
+Speaker 3: Everyone goes to your website.
+Speaker 1: Oh, got it.
+Speaker 6: So like Yeah. They've just done a horrible job actually capturing the value they're generating.
+Speaker 3: Interesting. But they're getting a lot of impressions. They're driving a lot
+Speaker 1: of purchases. What's the sweet spot for price point on TikTok shop? That hoodie company, is that a $70 hoodie?
+Speaker 6: It's cheaper. Right? Like, it's a successful product in TikTok shop is female focused Mhmm. Impulse buy, so like, know, $20, $30, $40, something like that. And then you have people to make outrageous claims.
+Right? And so Yeah. Yeah. Comfort hoodies is like, it's a hoodie that cures anxiety. Yeah.
+So like, that's pretty good.
+Speaker 1: Like, it's
+Speaker 6: a pretty good value prop.
+Speaker 1: Claim the FDA might wake up to that one at
+Speaker 6: some point. All the affiliates are making it, so who cares? Yeah.
+Speaker 1: Somebody should care, but we'll see. Yeah. A little bit of a gray area. Interesting. Are there any I I I wanna know about when you're using AI personally in house or someone on your team is using AI, like the models or the products, like ChatGPT, Clawd, etcetera, versus you feel like you're getting AI for free because you're using Mailchimp and Mailchimp integrated AI, or you're on Shopify and Shopify gave you an AI feature for free.
+Speaker 3: Yeah. You know, I I don't want talk too
+Speaker 6: bad about any sponsors. I don't know if Notion sponsors you guys.
+Speaker 1: They Okay.
+Speaker 6: Great. You would actually hope that more of these companies would be rolling out AI faster and better and more useful. Because like, you know, we're using it internally a ton directly with the models
+Speaker 1: and Sure.
+Speaker 6: Like inventory planning and buying is a solved problem.
+Speaker 7: Okay.
+Speaker 6: That was like the biggest problem that has plagued Yeah.
+Speaker 1: Like Like demand forecasting.
+Speaker 6: Yeah. Like all of that is like
+Speaker 1: And then sending up proposal to a supplier or or in your case, like the actual factory to to understand how many you're going to sell by month, when they need to be delivered, what would the shipping timelines, all of that's just a bunch of Excel work normally.
+Speaker 6: Yeah. And it was huge teams.
+Speaker 1: Yeah. And if
+Speaker 6: you got it wrong, it bankrupted your company. Yep. Right? Like you had bad inventory or you get like shorts in December. Right?
+Yep. Like Yeah. It ruined a bunch of businesses. Mhmm. AI has totally solved
+Speaker 1: that. Really?
+Speaker 6: Working directly with coexes of the world. Right? And just putting in all your your business information.
+Speaker 1: That's such a huge unlock for the global economy. Yeah. It's crazy to think about.
+Speaker 2: We gotta tell we gotta tell consumers that don't like AI. Your favorite brands are doing perfect forecasting. I'm you are gonna get the perfect article of clothing right before your trip to Hawaii even though you waited until three days before to order it.
+Speaker 6: Always have the right sizes in stock. That is coming because of Kodak.
+Speaker 1: That's crazy.
+Speaker 2: This is this is this is like part of what the Seufert was talking about. Right? Like the the one of the Eric Seufert, most of that memo. He he was just talking about like, actually, if you have like better advertising because of AI, it will create a like like, it will drive economic growth purely because you have more and more of these, like, niche businesses that might have an audience of 50,000 people in the whole world. And historically, you couldn't build that business because it would have been impossible to find that 50,000 people out of billions.
+Now you can.
+Speaker 6: Mhmm.
+Speaker 2: And then this is again an accelerant of, so much revenue is lost every day, so much purchasing activity doesn't happen because people just can't buy the stuff that they want because the brand didn't properly forecast Mhmm. And and it's still kind of doing like fly by wire.
+Speaker 6: Totally. The wrong sizes, wrong things at the wrong time. Like, with how expensive it is to get stuff on shipping containers and how long it takes. Mhmm. And there was a lot of companies who spent a lot of money trying to solve this.
+There was demand software that did billions a year in revenue. As long as you have like a system of records like a clean data warehouse Yep. And you have your all of your sales from Shopify, Amazon, whatever else, you port all of that into a codex and it will it totally has it figured out.
+Speaker 1: Interesting.
+Speaker 6: And if you have to make those small tweaks like, oh actually last year we were on a promo, this year we're not going to.
+Speaker 1: Oh, so the multi platform thing is big here because I would have I was just about to ask you like, should Shopify roll out a demand planning tool for Shopify merchants? But they probably Amazon has sharp elbows and won't give them all the data just via a simple integration. Integration.
+Speaker 6: Yeah. It all has to roll up into the harness. It all has to go into codec.
+Speaker 1: And so and so you have to get into a data warehouse and then you have to point an LLM at that.
+Speaker 6: Yeah. So like, you know, we're not like we're not like a large buyer of software.
+Speaker 1: Yeah.
+Speaker 6: Like, you know, we we have Shopify Sure. Data warehouse, whatever But as long as you have those like basic things
+Speaker 1: Yeah.
+Speaker 6: And you put it into a harness Yeah. It's like
+Speaker 1: But your IT spends like, yeah, probably like less than 1% of revenue.
+Speaker 6: Totally.
+Speaker 1: Yeah. Yeah. Exactly. Which is which is the the good benchmark. You don't want to be like building every system custom from scratch.
+Speaker 6: Yeah. And people are so excited because they can vibe vibe code everything. Right? But like, you know, judge me reviews is like $5 a month. So I'm
+Speaker 3: not going to vibe code my own reviews thing.
+Speaker 6: Yeah. Right? I'm just going to do this.
+Speaker 1: Yeah. Just pay that.
+Speaker 6: Yeah. But but yeah, so
+Speaker 1: There's some review plugins that are very expensive.
+Speaker 6: So Yeah. Bizarre voice horrible. Yeah. Like, yeah. Yappo has a bad reputation.
+Speaker 1: Yeah. I've gotten I've gotten fleeced a couple times.
+Speaker 2: What's new in manufacturing land? Oh. You know You had You guys were trying to develop US manufacturing like way before like American dynamism was like a category. Like, this is something that you guys have been like exploring and dabbling with for a long time. But what's what's the latest?
+Speaker 6: Yeah. So like we actually worked with the government in like 2022 to get something called like a general exclusion order. So like we have a we can we can very easily now get people to get banned from importing. Like if we if they validate our RP. But Oh, to do that, you have to prove that you're like a important part of the American economy.
+So to do that we actually bought the largest independent watchmaker in America. It's called like a it's called FTS five to IMP Solutions. They're in Arizona. So we own them.
+Speaker 1: Yeah.
+Speaker 6: So if you ever buy American made watch, I probably made it.
+Speaker 1: No way.
+Speaker 6: But it's a really hard business. That's crazy. Watches suck. We do wallet production there.
+Speaker 1: Okay.
+Speaker 6: You know, we probably spent 2 or 3 or $4,000,000 like getting that whole thing set
+Speaker 4: up to actually produce wallets there. Yeah.
+Speaker 6: But then like the Trump tariffs made it really hard to get steel because there's a huge global tariff on all non American steel. That means everybody wants American steel, so now it's really hard to get it. Sure. We have to wait for those things to work themselves out. But look, most manufacturing is already very automated.
+Like you guys have spent time in China. I'm going back to the next month. Yeah. It's like they don't have that many people in factories. It is robots and assembly and that can be done basically anywhere.
+Speaker 1: Yeah.
+Speaker 6: And then it's just getting the raw goods to wherever you actually want to manufacture stuff. And with steel and batteries, you we can't do that in America Mhmm. Yet. Mhmm. So we we have to build a supply chain.
+It'll be like a ten year thing but the future is going be hyper local manufacturing for sure.
+Speaker 1: I like the idea of you getting steel manufacturing. That would be electric. You just make your own steel, fully vertically integrated.
+Speaker 2: Is now the best time in history to start a consumer brand?
+Speaker 6: Well, would say probably like January 2012 when Facebook ads just sold out. That was probably the best time.
+Speaker 2: But now is the second best?
+Speaker 6: For sure. I mean, one, it's moded from AI. Like, I would hate to be trying to sell software right now. Sure. Right?
+And a lot of services, I'd hate to be in that business. Yeah. People are gonna buy stuff forever. Yeah. Right?
+You have birthdays, you have Christmas. The American consumer is still incredibly strong. Yeah. We really just had the best q two of all time and that's with a war in Iran. Like in Oh, yeah.
+Speaker 1: And inflation and all sorts of stuff.
+Speaker 6: Yeah. I and like it all actually like looking
+Speaker 1: at Consumer confidence is so low even though consumer spending is is holding. You you you you there's always nervousness about will there be a pullback.
+Speaker 6: Yeah. There's been nervousness for six years. Yeah. But I'm telling you the Ukraine war in 2022 Yeah. There was a noticeable decrease in e commerce activity.
+Really? And right now it's not happening. Things are actually ripping. So I think it's a great time.
+Speaker 1: Think Total vibe session. Yeah. Total disconnect between what people say in the Pew research and then what people actually do.
+Speaker 6: Dude, if I had my Shopify notifications on, it would just be chiming all day right now. I think people yeah. Are It's it's definitely a vibe session. Mhmm. So it's a great time to be selling stuff.
+Speaker 1: That's great. What are you thinking on the creative side? Are you Higgs field maxing with like all these workflows to generate endless AI videos? Are you seeing progress in AI images? What what's working?
+We just talked to the Seufertator about the this study that showed that when AI is clockable, it underperforms. When it's not identifiable as AI, if it's just a product image and it just looks indistinguishable from CGI or a photo, it over performs sometimes.
+Speaker 6: Oh, dude. Pull up my Facebook ads library and it is tons and tons of AI generated static ads.
+Speaker 1: Okay.
+Speaker 6: Right?
+Speaker 1: Static.
+Speaker 6: Yeah. Because the statics are actually like you can build like ad factories like totally automated. Yeah. So you know, you take a Hicks field, you use an MCP, you bring it into like your harness of choice Yep. Like a codex.
+Speaker 7: Yep.
+Speaker 3: And you can generate 10,000 static ads
+Speaker 6: Yeah. If you wanted to. Right? And we just have that running twenty four seven.
+Speaker 1: Yeah.
+Speaker 6: They get pumped into ads library to test it. Yeah. And then the winners go to a different ads library to like a Wow. Different ad account to actually scale those
+Speaker 1: up. Yep.
+Speaker 6: So the static stuff is totally solved Yeah.
+Speaker 3: And I would hate
+Speaker 6: to be trying to do ads without it right now. Yeah. Yeah. Right? I actually built a spreadsheet yesterday or like a presentation slide by hand and I felt like I was a caveman.
+It's like that's like we're working with like the ads of like the password
+Speaker 1: were like.
+Speaker 6: Sure. Video, we still do a lot of it. It's mostly just it's like cut scenes and like a hyper cut.
+Speaker 1: Sure.
+Speaker 6: So like we want to add motion or somebody talking or whatever. We'll do a lot of that.
+Speaker 3: Yep.
+Speaker 6: But it went viral yesterday the the Seinfeld fully AI episodes. Yes. That is really really good. It's getting very close to actually being indistinguishable.
+Speaker 1: I thought it looked really good. I thought the editing pacing was wildly off.
+Speaker 6: Yeah. I agree
+Speaker 1: with I thought there was like the gaps in the humor, like the pacing is so key to that. It was like but from a fidelity perspective, it looked indistinguishable from the
+Speaker 6: show. Yeah. So it's like it's very inhuman in like the the way they talk or whatever. But like that's gonna be fixed. Yeah.
+Like that's coming in two more model updates Yeah. I'm sure. Yeah. Then and then it's like, yeah, all video will be.
+Speaker 1: What about using AI either to write deterministic scripts that can assemble hypercuts in different because if you have a picture of the wallet, a picture of a person putting in their pocket, a person stepping out of a car, a person on a beach, you might want to sequence those 1234, two one three four, two three two one four, and get every possible variation on the the those different video clips. Are you using AI? Do you already have a system for that? Is that already automated? Is there what's the future of that?
+Speaker 6: Yeah. That's still very human in the loop. Interesting. So we have like, you know, two amazing editors Yeah. Who would do all the hyper cutting themselves.
+Okay. And now, they are using Hicks Field and just getting Sure. You know, hundreds of more variations Yeah. Going through those in the upcoming room to the end.
+Speaker 3: Got Got it.
+Speaker 1: And they can probably even do some like style transfer and filtering on top of the raw footage that they have to like
+Speaker 6: Yeah. And sometimes like, you know, it's a robot. It'll it'll make stupid decisions. Yeah. It's like it'll it'll go like, you know, wallet to something, you know, falling in the ocean.
+It's like, what the hell are doing here?
+Speaker 1: Yeah. Right? It's just complete hallucination.
+Speaker 2: Yeah. 5.6 people are reporting that it's it's working on video editing work flows now in a way that a lot of other models haven't. So
+Speaker 1: Yeah. I wonder how that will actually play out because there's one world where you're just literally opening Premiere Pro and saying like, move the mouse cursor and make the cut in the footage. And then there's another one where you're, like, editing the underlying file and then you're watching it in Premiere Pro because most of these video apps, they sort of represent the file as, like, a structure of folders or, you know, a bunch of JSON or something. So you you you can manipulate things multiple ways. But will be interesting to see where that where that goes even if it's just for, like, those the the the reconfiguring sequences and whatnot.
+Are there any vibe coded ecommerce plugins or add ons or tools or software that have stuck out to you as, wow, like, this thing, it was in the $1,000 a month category. Now it's in the $5 a month category or or this is a new capability that's unlocked that's still something you wouldn't roll your own but you would buy outside?
+Speaker 6: You know, not really.
+Speaker 1: Okay.
+Speaker 6: But like a lot of the playbooks that people share it's like, you know, how to build landing pages in one prompt or whatever.
+Speaker 1: Sure.
+Speaker 6: And like that is going that's like in a one shot companies like Shogun or like there's all these like landing
+Speaker 1: pages Sure. Yeah.
+Speaker 6: And it's like they're just you know, drag and drop tools. Yeah. But you're getting way faster, way more responsive, way better stuff just out of Codex. Yeah. And it's like Yeah.
+It's completely on brand with your assets. Yep. And it's like, look, that is vibe coded. Right? Yeah.
+Yeah. It's and we are we're gonna launch 50 landing pages next week and it's all vibe Yeah. Stuff like that.
+Speaker 1: What's the value of landing pages these days? Is that is that critical to the funnel? Is that critical to the Oh, for sure.
+Speaker 6: Yeah. Dude, you guys had Hermosian here Yeah.
+Speaker 3: Like two days ago.
+Speaker 6: I was in the thing. Yeah. It is
+Speaker 2: He's got 1,000,000,000 now he's gonna get a landing page for every human on earth. That's actually where we're going.
+Speaker 6: Yeah. Basically, right?
+Speaker 1: Census records.
+Speaker 6: But it's like you you need the offer to get the click, right? And then you need the landing page to inform them and then the like as fast as you can get them to making the purchase as possible. Yeah. Right?
+Speaker 2: In sales, they tell you to use the person's name a lot. But I'm really happy that you're here, Sean, because I wanna talk to you about this. Do you think we get to the point where, like, digital platforms end up, you know, in ads and landing pages for, using the individual's name to an extreme degree? Like, cause you get down to targeting one person long time ago. Yeah.
+But would would eventually there's like a Heck yeah. There's a there's a flipping point where maybe it just is so effective that it makes sense for Facebook to enable.
+Speaker 6: Well, all AI cold email right now already puts your name in there. Mhmm. And there's been beta tests rolled out where they're using people's faces in the ads. It's like like
+Speaker 2: Oh, We saw that on on Remember? Yeah. Like, they I think they were trying to sell a pair of the meta glasses where it's like showing like you calling your Interesting. And they can tell like who your significant other is just based on your activity
+Speaker 1: Yeah.
+Speaker 2: On Instagram.
+Speaker 6: Yeah. So Facebook has a
+Speaker 3: lot of information. It has your face. It has who you're talking to. It has who your wife is. So it's
+Speaker 6: like they they look hyper personalization is coming Mhmm. For the entire web. Mhmm. And you know, if you're going to be shopping it's gonna show you what you're gonna look like in the clothes or what your dad's gonna like when he gets to wallet. I definitely think that's happening.
+Speaker 1: Yeah. I mean if the price of a cold call goes to a penny, do you think you'll be cold calling people? Something just came across my desk. I got a wedding ring here for you.
+Speaker 6: We've talked about
+Speaker 7: it. We've talked about it.
+Speaker 6: Yeah. There's a thing called like ringless voicemails Yeah. Where like you know
+Speaker 3: they'll just mass drop
+Speaker 1: Please those off leave them.
+Speaker 6: And they put people's names in there. It's like, hey, John, we got this thing for you. Right? And it's like, you know, it's no it's one way. But yeah, the two way is definitely coming.
+Speaker 2: Interesting. What's happening in luxury? LVMH and Kering are down like twenty five and twenty ish percent.
+Speaker 6: Well, talked about the last time I was here. I was like I'm like, oh yeah, Gucci's getting crushed. And Yeah. And it's like, yeah. It's gonna continue to happen.
+Speaker 2: Is You
+Speaker 6: know, it's I think it's just a generational change is really what it comes down to. Like each one of those brands have good assets but like Richmont is is still tearing. Right? Hermes is doing great. Coach is on like a generational run.
+Like the best performing stock of the past like two years. Right? I think last year it beat Nvidia in performance. No way.
+Speaker 4: Coach?
+Speaker 6: Yeah. So it's publicly traded under Tapestry, you should pull them up.
+Speaker 1: Okay.
+Speaker 6: They own Kate Spade too but Kate Spade's like a nothing business.
+Speaker 1: Yeah.
+Speaker 6: So it's just it's just a generational rotation. Right? Ralph Lauren also on a tear. So you have like American Dyingism, there's American luxury. Like America wasn't old enough to have luxury brands, but like LVMH bought Tiffany's and now it's like, look Ralph Lauren's crushing, Coach is totally crushing.
+And I think the old stodgy LVMHs of the world, the Gucci of the world, one they got overexposed. Like they really rely on the middle class. And if you ever look at like their sales demographics, it is like 80% of the revenue come from people making under a $102,000 a year. And it's like that's just a big disconnect when you're trying to sell whatever. Right?
+Mhmm. So there's gonna be a shift towards like you know, true luxury. There's also a con some concern that like Elle Catterton is just personally investing in all the great assets and not bringing them into the portfolio. Like they own Crumb Hearts and they they haven't brought that into LVMH.
+Speaker 1: Oh, interesting. Yeah. Okay. Well, but when you say personally investing, it's El Catterton is investing. Got it.
+Okay.
+Speaker 6: And El Catterton is the vehicle
+Speaker 1: Of LVMH. Yeah. That makes sense. And I know
+Speaker 3: that they do a lot of deals in the private equity world, but
+Speaker 1: And then
+Speaker 2: Oh, yeah. Why why doesn't LVMH like
+Speaker 6: They're actually
+Speaker 2: You would imagine the R and O's are like, yeah, we want to own the hottest Like, you would think they would do everything they possibly could to own ChromHart.
+Speaker 6: There's a divestment in brands right now. They're actually trying to push stuff out of their portfolio. I think they just liquidated Off White. Right? And Off White ended up being like a Target, like Costco brand.
+Like there's Oh. Yeah. There's like photos of like Costco Off White like big Palatin delivered. So they're actually doing a divestment right now from And you know, Tapestry just divested from Stuart Weissman. So like they're actually trying to go like big bigger down on winners.
+But yeah, then there's just like a whole like, you know, Mad Happy is a great brand.
+Speaker 3: Yeah.
+Speaker 6: It's invested via Elle Catterton, not inside of the portfolio. Interesting. And the whole idea was there was supposed to be a scout fund to then bring it into the main portfolio.
+Speaker 1: Yeah. That makes
+Speaker 6: sense. But if you're the R and O family and you own 90% Elle Catterton and only 45% of LVMH, it's like, what's what's the
+Speaker 1: incentive? Interesting. Wow.
+Speaker 6: But you look, mean you could like Richmont owns Cartier. Cartier is having a great time. You know, they own Van Cleef. Van Cleef is still having a great time. But those are both of those are way more true luxury brands than an LVMH.
+Speaker 1: Yeah. So Have we hit peak, TEMU and Sheehan?
+Speaker 6: Oh, yeah, dude. I mean, Trump got rid of section three twenty one de minimis, that totally crushed those brands. Mhmm. It's like I I mean, you know, TEMU
+Speaker 3: Where do
+Speaker 2: you go if you wanna shop like a billionaire?
+Speaker 5: There's nowhere else to go.
+Speaker 6: Yeah. Fuck, you're right, man. I don't know. Bridge.com. No.
+Look, I mean they're still huge. They run a lot of ads and like a team moves publicly traded under like a PEDD or whatever. So like they have a huge business in Latin America. They have a huge business in Southeast Asia. Mhmm.
+But like their whole arbitrage was just flooding into America with with low
+Speaker 1: cost Direct from the factory. Right?
+Speaker 6: Yeah. And it just got kinda that kinda blew up. It's gone.
+Speaker 1: Interesting. Have you been surprised that live shopping has been slow in America? No. No one was predicting this from China. Oh, if it's big there, it's gonna be big here in a year.
+And it feels like it's been very slow. But what what what have you seen in the live shopping?
+Speaker 6: Yeah. Look, people are very excited about whatnot.
+Speaker 1: Yeah.
+Speaker 6: And they are putting up impressive GMV growth Mhmm. But it is very much dependent on like the trading card bubble. It's like that's that's what it
+Speaker 1: is. Yeah.
+Speaker 6: So it's live shopping in
+Speaker 3: America. Yeah.
+Speaker 2: This is what I was saying yesterday. It's like it's effectively I'm not gonna call it gambling, but there there's some speculation happening on there's a there's a massive, I would say spec. You would want to figure out what percentage of GMV is driven by speculation. And I would expect that it's significant.
+Speaker 6: Yeah. Like people aren't going on there to buy their everyday essentials. Right? Right? They're going on there for the excitement like Yeah.
+It is an option.
+Speaker 1: Whereas in China, there's live shopping where you can buy a tomato. And that's just not happening.
+Speaker 6: And women are buying dresses and it's the whole thing.
+Speaker 1: Yeah. Course, the whole person put picking up one piece of clothing, put it down, put it on the next one. Like we've seen that video and we have yet to see that in America.
+Speaker 6: Yeah. Why is that? I think I mean dude, Americans can't watch anything at the same time. Right? Like we are also like consumption based and like like on demand everything.
+Speaker 3: Okay.
+Speaker 6: Right? Yeah. Everything is catered to us all the time. Yeah. I just don't think there's any value that actually being live.
+We're we're doing TikTok shop lives Yeah. And we drive like 3 to $400 in in revenue per hour Mhmm. That we're live. Mhmm. So it's like some people are buying stuff when it's live, the real value is like getting all that content and just running it whenever you have four hours at night to to go log on to
+Speaker 1: something. Yeah.
+Speaker 6: Right? And I really just think it comes down to there's a lot more people in China and they are spending a lot like the the screen time per person is still way higher over there.
+Speaker 1: Yeah.
+Speaker 3: And just, you know, it developed over there. It's more of like a native sport.
+Speaker 1: Yeah. Have you looked into advertising on Netflix?
+Speaker 6: Have looked at it. The CPMs are not very good. Okay. And the the here's the thing is we buy a lot of TV ads. Yeah.
+And we buy them like like directly through the network. So like, know, Fox will have something like we just got an email for the World Cup and it's like you could run a thirty second spot during the World Cup, The USA game and it was like a $25 CPM. Wow. Right? Yeah.
+And Netflix, they you'll get a lower tier of consumer because it's price gated. Right? It's the lowest tier of consumer the ads. Yeah. And they want a $45 CPM.
+Yeah. Right? Just it doesn't make a lot of sense.
+Speaker 1: Yeah. That makes a lot of sense. What about infomercials? Have you ever thought of running one? It's like a full hour, middle of the night type of thing.
+I've That's the new meta. Wanted to get I wanted to it feels like a bucket list item on an entrepreneur.
+Speaker 6: Well, you have the studio, bro. Let's shoot one.
+Speaker 1: We should shoot one.
+Speaker 2: I'm I'm I'm down to be
+Speaker 1: One hour pitching you a three hour livestream. I interest you in hitting the subscribe button, potentially leaving us five stars.
+Speaker 2: I I wanted a hyper personalized infomercial though. Oh, just like falling asleep on their couch. It's 1AM and you're like, hello, Sean.
+Speaker 1: I I I feel like I've seen some of those YouTube experiments ads where they they they didn't gate it. And so if you didn't click skip, you'd wind up watching like twelve minutes of an advertisement.
+Speaker 6: Oh, dude. You know, I IKEA did that but it was like twelve hours.
+Speaker 1: Twelve hours. Dude was like,
+Speaker 6: we're gonna read every product we have, but please click skip. Right?
+Speaker 1: Fantastic. But you've never done an infomercial?
+Speaker 6: No. But I I met a guy one time who made like, you know, his whole business, $80,000,000 a year was selling hoses on infomercials. Yeah. And he's like, yeah, have a great hose and I just sell it on infomercials. Yeah.
+Then he gets into Home Depot or whatever. Yeah. So, look, you can make a lot of money in a lot of different ways. Yeah. Yeah.
+Yeah.
+Speaker 1: But you gotta you gotta focus a little bit. You got a good thing going.
+Speaker 6: Yeah. Right now I'm trying to sell a bunch of random accessories to men Sure. And my goal is get to 1,000,000,000 a year in annual revenue
+Speaker 3: Yep.
+Speaker 6: I'm like three or four years away. And if I do that, my life's good.
+Speaker 1: Fantastic. Well, thank you so much
+Speaker 2: for coming on the show. You wanna close it out with
+Speaker 1: Yes.
+Speaker 6: Alright.
+Speaker 1: We got one last advertisement. It's for MongoDB. What's the only thing faster than the AI market? Your business on MongoDB. Don't just build AI.
+Own the data platform that powers it. Thank you so much for coming on the show. Leave us five stars on Apple Podcast and Spotify. Sign up for newsletter tbpn.com, and we will see you tomorrow at 11AM. Sharp.
+Goodbye.

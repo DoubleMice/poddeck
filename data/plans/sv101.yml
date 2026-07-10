@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-07-10T04:27:22.203Z
+refreshed_at: 2026-07-10T18:33:27.514Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -218,5 +218,9 @@ episodes:
 
 
       Special Guests: 张兵 and 施骅伦.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-10T18:33:28.402Z
+    transcript_job_id: 22a86a14ed264e4c846a6f4bc1ae3f36,8292811244c04fc099d4e8cc7ac8630c,0a585c09c75a4249ba6ddf7e3e113714,aea59e23e5344e4c91d1c058fa0ac329,be92d9bc39ea4109baf2c4156f2efdf0,6911ba93af7c490092a1d4578c44ed02
+    transcript_completed_at: 2026-07-10T18:38:59.155Z

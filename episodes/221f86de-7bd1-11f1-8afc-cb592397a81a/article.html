@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Austin Griffith 论 $1 AI 审计和创始人优于 DAO 的理由 — Uneasy Money</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 0;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+    min-height: 100vh;
+  }
+  header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  h1 {
+    font-size: 1.8em;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  .meta {
+    font-size: 0.85em;
+    color: #888;
+    line-height: 1.6;
+  }
+  .meta strong { color: #555; }
+
+  h2 {
+    font-size: 1.25em;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+    color: #222;
+  }
+  h3 {
+    font-size: 1.05em;
+    margin: 28px 0 12px;
+    color: #333;
+  }
+  p {
+    margin: 12px 0;
+    text-align: justify;
+  }
+
+  .topic-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+    margin: 28px 0 12px;
+  }
+  .topic-card {
+    padding: 16px 18px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 0.9em;
+  }
+  .topic-card strong { display: block; margin-bottom: 4px; font-size: 1.02em; }
+  .topic-card span  { color: #555; }
+  .card-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .card-green  { background: #f0fdf4; border-color: #22c55e; }
+  .card-yellow { background: #fefce8; border-color: #eab308; }
+  .card-purple { background: #faf5ff; border-color: #a855f7; }
+  .card-orange { background: #fff7ed; border-color: #f97316; }
+  .card-red    { background: #fef2f2; border-color: #ef4444; }
+
+  blockquote {
+    margin: 20px 0;
+    padding: 14px 20px;
+    background: #f8f9fa;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: #444;
+  }
+  blockquote .attribution {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8em;
+    font-style: normal;
+    color: #888;
+  }
+
+  .highlight-box {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 0.92em;
+  }
+  .hl-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .hl-green  { background: #f0fdf4; border-color: #22c55e; }
+  .hl-yellow { background: #fefce8; border-color: #eab308; }
+  .hl-purple { background: #faf5ff; border-color: #a855f7; }
+  .hl-orange { background: #fff7ed; border-color: #f97316; }
+  .hl-red    { background: #fef2f2; border-color: #ef4444; }
+
+  .quotes-section { margin: 48px 0 32px; }
+  .quote-item {
+    padding: 14px 18px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border-left: 4px solid;
+    font-style: italic;
+  }
+  .quote-item .attribution {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.78em;
+    font-style: normal;
+    color: #888;
+  }
+  .q-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .q-green  { background: #f0fdf4; border-color: #22c55e; }
+  .q-yellow { background: #fefce8; border-color: #eab308; }
+  .q-purple { background: #faf5ff; border-color: #a855f7; }
+  .q-orange { background: #fff7ed; border-color: #f97316; }
+  .q-red    { background: #fef2f2; border-color: #ef4444; }
+
+  .author-note {
+    font-size: 0.85em;
+    color: #999;
+    border-left: 2px solid #ddd;
+    padding-left: 14px;
+    margin: 12px 0;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+    font-size: 0.85em;
+    color: #999;
+    text-align: center;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    article { padding: 24px 16px 40px; }
+    h1 { font-size: 1.4em; }
+    .topic-cards { grid-template-columns: 1fr; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Austin Griffith 论 $1 AI 审计和创始人优于 DAO 的理由</h1>
+  <div class="meta">
+    <strong>节目</strong> Uneasy Money · <strong>日期</strong> 2026年7月 · <strong>时长</strong> 1小时10分钟<br>
+    <strong>嘉宾</strong> Austin Griffith（Ethereum 开发者，Scaffold-ETH 创建者）<br>
+    <strong>主持</strong> Kane Warwick · <strong>联合主持</strong> Taylor Monahan（安全专家）
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得关注</h2>
+
+  <p>这期 Uneasy Money 横跨了以太坊协议层的未来、DAO 治理的哲学危机、AI 代理在链上决策中的角色，以及代币作为一种融资工具正在经历的深层结构性衰退。三位对谈者——Ethereum 构建者 Austin Griffith、安全专家 Taylor Monahan 和主持人 Kane Warwick——的视角各不相同，但碰撞出了加密行业 2026 年最关键的几个命题。</p>
+
+  <p>最尖锐的辩论围绕<strong>创始人 vs DAO</strong> 展开。这是 ENS 引发的一场宪政级危机，但牵涉的远不止一个域名协议——它追问的是整个去中心化治理范式是否从根本上就有缺陷。</p>
+
+  <div class="topic-cards">
+    <div class="topic-card card-blue">
+      <strong>Vitalik 的 Lean Ethereum 路线图</strong>
+      <span>以太坊自 merge 以来最大协议重构：后量子安全、新 EVM、giga-gas 吞吐量。Dankrad 誓言"一年内完成"。</span>
+    </div>
+    <div class="topic-card card-green">
+      <strong>Frame Transactions</strong>
+      <span>Austin 称之为以太坊 UX 的最后拼图——它终于以最通用的方式实现了 account abstraction 一直在尝试做到的事情。</span>
+    </div>
+    <div class="topic-card card-yellow">
+      <strong>创始人 vs DAO：治理的终极辩论</strong>
+      <span>ENS 创始人 Nick 想要更多权力。这是一个管理良好的 DAO 中出现的内部宪政危机——没有坏人，却暴露出 DAO 范式的深层矛盾。</span>
+    </div>
+    <div class="topic-card card-purple">
+      <strong>Venice AI 的隐私推理架构</strong>
+      <span>通过匿名化层 + TEE 端到端加密 + Near MPC 验证，为 AI 推理提供了一种前所未有的隐私范式。</span>
+    </div>
+    <div class="topic-card card-orange">
+      <strong>代币 vs 股权：加密的十字路口</strong>
+      <span>Kane 从代币最大主义者转向股权支持者——他认为市场已经弄清了一个事实：代币在结构上是一种糟糕的融资工具。</span>
+    </div>
+    <div class="topic-card card-red">
+      <strong>AI 代理治理的崛起与风险</strong>
+      <span>代理比人类更可靠——但提示注入攻击让防守对象从链上投票变成代理本身。这是全新的安全挑战。</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Vitalik 是不可或缺的</h2>
+
+  <p>Kane 用一个简单的思想实验震住了整个对谈的基调：如果 Vitalik 在 merge 完成后真的像最初设想的那样"功成身退"——结果会怎样？</p>
+
+  <blockquote>
+    "如果 Vitalik 不在，我不认为这个东西能建成。他一消失，20 秒内就会变成内讧战场。人们互相摧毁，出现多个分叉——绝对是一场彻底的灾难。"
+    <span class="attribution">— Kane Warwick</span>
+  </blockquote>
+
+  <p>这个判断的尖锐之处不在于它对 Vitalik 个人的推崇，而在于它直指 DAO 治理的核心缺陷。<strong>世界不会停止变化。</strong>2018 年所有人的信念是：完成 merge 之后就万事大吉了——以太坊会被"完成"，在 stasis 状态下永远运转下去。</p>
+
+  <p>Kane 描述当时的普遍心态："我们本应该做完 merge 就功成身退，然后人生完整，在静滞状态中永远继续下去。但世界不是那样运作的。世界变了——所以你必须随之改变。但 DAO 就是不擅长适应变化。它们更擅长维持现状。而现状根本不存在——它是我们所有人都有的一个幻觉：好像我们能让世界停止变化然后一起相安无事。"</p>
+
+  <p>这正是 Vitalik 的独特价值所在。他足够古怪、足够有权威、足够坚定地在 merge 完成后继续推动以太坊前进——去做那些 DAO 永远不可能推动的事情。</p>
+</section>
+
+<section>
+  <h2>Frame Transactions：终于解决了 UX 问题</h2>
+
+  <p>Austin Griffith 对 Frame Transactions 的热情不只是技术上的。作为一个在 Ethereum 应用层构建了近十年的开发者，他对 UX 的痛苦有切身体会。当他描述 Frame Transactions 时，他用了一个很重的词——"the thing"。</p>
+
+  <p>"我一直以来都在思考 meta transactions 和 UX 问题，"Austin 说，"我朋友 Pedro 从 WalletConnect 告诉我，这<strong>终于</strong>是把以太坊 UX 做到应有水平的东西。"</p>
+
+  <p>从技术上看，Frame Transactions 实现了许多 account abstraction 尝试过但未能完全做到的事——而且是以一种更通用的方式。构建者可以为用户支付 gas 费，支持智能合约钱包，兼容 passkey 签名。这些都不是新概念，但 Frame Transactions 把它们整合在一个统一的、标准化的方案中。</p>
+
+  <p>Kane 则从生态系统的角度给出了补充：Layer 2 们在过去四年间填补了吞吐量的缺口——但它们是<strong>在玩不同的游戏</strong>。如果以太坊自身能实现更短的 slot 时间、更快的交易确认，大量使用场景会自然回归主网。L2 的角色会从"必要的替代方案"转变为"差异化服务层"。</p>
+</section>
+
+<section>
+  <h2>"周三之前能交付吗？"——从叙事驱动到交付驱动</h2>
+
+  <p>Kane 分享了他个人管理哲学的转变——这个转变可能代表了加密行业整体从"白皮书时代"到"交付时代"的范式迁移。</p>
+
+  <p>"两三年前我的语气是：我们有修复所有加密 UX 的长期愿景，不要担心本周交付什么——继续做就好。我们做了很多，交付了很多东西。但我们从来没有真正将任何产品落地到<strong>能改变市场格局</strong>的程度。"</p>
+
+  <p>现在他的语气完全变了："我想在周三之前发布一些东西。如果我拿枪指着你的头，问你能不能周三之前交付——答案会是能的，你当然能。"</p>
+
+  <div class="highlight-box hl-blue">
+    <strong>核心洞察</strong>：连续交付的累积效应，远比一个宏伟的长期愿景更强大。你知道该往哪个方向走——这很重要。但如果你不在每一周、每一个月交付真正能用的东西，那个方向就是空的。
+  </div>
+
+  <p>这个转变不是简单的"更快"——它关乎一种对产品、对团队、对市场的完全不同的承诺方式。在长期路线图模式下，推迟一个季度甚至一年都不算什么。当你说"周三之前交付"的时候，一切都不一样了。</p>
+</section>
+
+<section>
+  <h2>EF 重组：从 Jedi 时代到精简组织</h2>
+
+  <p>Austin Griffith 在 Ethereum Foundation 工作了大约八年。他被问到 EF 的近况时的第一句话是："我勉强还保有工作。组织确实变精简了。"</p>
+
+  <p>但他回忆起初加入时的场景时，语气完全不同："八年前我加入 EF 的时候，那是一个充满了<strong>Jedi</strong> 的地方。是最酷的组织。你想和这些人待在一起——因为在跟他们同处一室的时候，会有某种神奇讨论和真正的 Jedi 级别的事情发生。"</p>
+
+  <p>这就是为什么人才愿意接受远低于市场价的薪水在 EF 工作——不是因为钱，而是因为氛围。Taylor 的观察也很有意思：她注意到离开 EF 的人群中有很多待了五到八年的人。"等等——我们确定没付够他们钱吗？八年在一个地方，在加密领域，那可是非常长的时间。"</p>
+
+  <p>但 Kane 的乐观在于：不只是路线图需要变精简，组织本身也需要变精简。他从自己的团队管理中学到的教训是：一个更小、更聚焦、更能说"这周三交付"的团队，比一个庞大、分散、沉浸在长远愿景中的组织更能在现实世界中产生影响力。</p>
+</section>
+
+<section>
+  <h2>Austin 的 DAO 三层框架</h2>
+
+  <p>在这场辩论中最有用的分析工具，来自 Austin 对 DAO 角色的三层拆解。他的论点是：大部分 DAO 都在做三件本质上不同的事情——而把它们混在一起是治理失败的主要原因。</p>
+
+  <div class="highlight-box hl-green">
+    <strong>第一层：参数调整（Knob Turning）</strong><br>
+    升级合约、调整配置参数——这类技术性的"旋钮"需要一个去中心化的小委员会来保障协议安全。这一层 DAO 运作得很好。
+  </div>
+
+  <div class="highlight-box hl-orange">
+    <strong>第二层：产品构建（Product Building）</strong><br>
+    持续迭代产品、适应市场变化、做出快速决策——这一层 DAO 完全做不到。"DAO 不会去升级一个产品。它就是不会。"这一层需要创始人的承诺和决策力。
+  </div>
+
+  <div class="highlight-box hl-red">
+    <strong>第三层：资本分配（Capital Allocation）</strong><br>
+    决定资金如何配置——这一层是 DAO 被攻陷的主要入口。它吸引"grant farmer"，因为资本就是权力，而权力就是人们参与治理的最强驱动力。
+  </div>
+
+  <p>Austin 的框架解决了一个核心困惑：为什么我们一边看到 DAO 在某些场景下运行良好（协议参数管理），一边又在另一些场景中看到灾难性的失败（BONK DAO）？因为它们是<strong>不同的事情</strong>，需要不同的治理设计。</p>
+</section>
+
+<section>
+  <h2>ENS：没有坏人的宪政危机</h2>
+
+  <p>ENS 案例之所以对 DAO 辩论如此有价值，恰恰是因为这个案例中没有恶意行为者。</p>
+
+  <p>双方都没有指责对方卷款跑路或暗中破坏。DAO 的资金管理得当，没有大规模挥霍。ENS 的表现比一般创业公司还要好。争议的核心是纯粹的治理哲学：一个创始人是否应该在产品层面拥有比 DAO 更多的决策权？</p>
+
+  <p>Kane 的立场非常清晰："如果一个创始人还在打磨产品——十年如一日地打磨——我们真的相信一个松散的 DAO 会比创始人做得好吗？我不相信。我已经不相信了。"</p>
+
+  <p>但他也承认这里有一个悖论：<strong>如果 Nick 获得更多控制权后 ENS 表现更好，这对 DAO 来说是最糟糕的结局。</strong>因为这证明的不是"ENS 这个 DAO 有问题"——而是证明"DAOs 作为治理范式有问题"。</p>
+
+  <p>Taylor 补充了一个重要的细微差别：Nick 是一个<strong>非常特殊</strong>的人。他在加密领域待了足够久，对去中心化的承诺是真诚的——只是他现在变得更加务实了。在 99% 的其他案例中，给创始人过多权力带来的风险可能是无法接受的。但对 Nick 呢？你很难找到理由说他会搞砸。</p>
+
+  <div class="highlight-box hl-yellow">
+    Kane 的最终结论是务实而非意识形态的："让创始人掌权就好了。我们有很长一段时间没有这个选项——因为监管套利的需要，你不可能既做一个有控制权的创始人又避免被 SEC 打爆。现在或许有合法的结构了。所以让我们试试看。"
+  </div>
+</section>
+
+<section>
+  <h2>公司治理的历史能教我们什么？</h2>
+
+  <p>Kane 将 ENS 的辩论与一个更广泛的模式联系起来：21 世纪初，创始人领衔模式（通过双层股权结构）在上市科技公司中兴起。Google、Facebook 等公司都采用了这种结构——创始人在上市后仍然通过特殊投票权控制公司。</p>
+
+  <p>你可以说它们现在都变成了你厌恶的东西。但在<strong>执行力</strong>上——在把一个产品从概念打造成全球性平台的能力上——这种模式确实有效。微软在 Ballmer 之后经历了一段无舵期；Google 在创始人退出一线后也出现了明显的方向感缺失。他们通过收购 DeepMind 等创始人团队来填补缺口——但仍然不够。</p>
+
+  <p>"一个建造了产品、最在乎产品的人，会做得比一个松散的 DAO 更好——这不是理论，这是几十年来我们在公司治理中可以观察到的模式。你现在看不到任何反例。"Kane 说道。</p>
+
+  <p>这一部分的关键洞察是：在 DAO 诞生之前，加密行业一直假装找到了一个全新的解决方案。但 ENS 的辩论让这个幻想崩塌了——它让我们重新回到了公司治理已经回答过的问题：当需要快速决策和持续创新时，一个明确的、有承诺的决策者比一个分散的、基于激励的投票机制更有效。</p>
+</section>
+
+<section>
+  <h2>BONK DAO：当没有人看门</h2>
+
+  <p>如果说 ENS 是关于"DAO 在管理良好的情况下是否仍然不够好"，那么 BONK DAO 就是关于"DAO 在最坏的情况下能有多糟糕"。</p>
+
+  <p>一个人用从 Binance 和 Bybit 上买的 BONK 代币发起了一个提案。提案内容很简单：把所有资金转给他自己。然后他投票赞成。等了<strong>整整一周</strong>的时间窗口——没有人阅读论坛帖子。提案按规则执行。BONK DAO 的所有资金被提走。</p>
+
+  <div class="highlight-box hl-red">
+    <strong>关键教训</strong>：DAO 的失败不是因为恶意——是因为冷漠。门槛低到只需要 1% 的代币参与，却有整整七天的时间窗口——而零人注意到。如果激励真的能拯救世界，持有者们会投票反对。他们没有。因为他们是人，不是利益最大化机器。
+  </div>
+
+  <p>Kane 的评论一针见血："激励不会拯救世界。有很多东西需要一起运转来拯救世界。不是只有激励——因为如果只有激励，每个人都会投票。他们没有投票，因为说到底他们都是人。"</p>
+
+  <p>这个案例同时也引出了一个有趣的对立面：AI 代理治理。如果 BONK DAO 用了 AI 代理来投票呢？Austin 和 Taylor 立即给出了回答：</p>
+
+  <blockquote>
+    "代理不会让这种事发生。Codex 5.6 不会允许 BONK DAO 被攻击。"
+    <span class="attribution">— 对谈者</span>
+  </blockquote>
+
+  <p>但 Taylor 马上补充了一个重要的反转：<strong>攻击方式会不同。</strong>攻击者不会去链上操纵投票——他们会用提示注入欺骗代理本身。Austin 分享了真实经历：有人通过提示词诱骗一个治理平台上的代理们暴露"代币持有者最深的秘密"。你不再需要攻破区块链——你只需要攻破一个 LLM。</p>
+</section>
+
+<section>
+  <h2>AI 代理治理：比人类更可靠，但面临全新的攻击面</h2>
+
+  <p>Kane 提出了一个相当直白的测试，让人难以回避："如果让我在 Fable 和我之间选谁来治理，你应该选 Fable。100%。不要选我。"</p>
+
+  <p>这不是自谦。这是一个关于 AI 当前能力的严肃判断：在信息处理速度、一致性、耐心和没有个人议程等方面，前沿模型已经超越了普通人的平均水平。</p>
+
+  <p>AI 代理治理的优势是具体的而非哲学性的：</p>
+  <ul>
+    <li style="margin: 6px 0">它们永远在线——不需要激励来让它们参与投票</li>
+    <li style="margin: 6px 0">它们可以在几秒钟内分析提案，而不是几周</li>
+    <li style="margin: 6px 0">它们不会因为冷漠而跳过投票</li>
+  </ul>
+
+  <p>但 Taylor 指出了一个结构性的新问题：<strong>提示注入攻击</strong>。与传统的治理攻击（需要积累投票权、协调行动）不同，AI 代理的攻击面完全不一样。你不需要积累代币——你需要找到一种方式让代理误判、误解或泄露信息。</p>
+
+  <div class="highlight-box hl-purple">
+    <strong>作者概括</strong>：AI 代理治理的真正前景不是"代理比人聪明所以它们应该掌权"。真正的价值在于代理可以填补人类治理中最大的漏洞——冷漠、延迟和激励失调。但代理本身引入了全新的攻击向量，需要完全不同的安全模型来防范。
+  </div>
+</section>
+
+<section>
+  <h2>Robinhood 链：为什么没有人兴奋？</h2>
+
+  <p>Robinhood 链的启动在 FTX 之后的新时代中显得格外平淡。Kane 作为 Infura 的人——他们需要支持所有主流链——对此毫不掩饰："我真的很努力去关心这件事，但我做不到。"</p>
+
+  <p>他注意到 Robinhood 的团队在向项目方收取"列入公告"的费用——这像极了多年前 Coinbase Earn 的模式，项目方需要提供自己的代币激励来换取用户分发渠道。</p>
+
+  <p>Taylor 的判断更加直白："以太坊会灭掉这个东西。大概两年。"</p>
+
+  <p>在 FTX 崩塌后的几年里，市场学到的一个核心教训是：<strong>企业链不会给生态系统带来任何持久的正面效应。</strong>它们可以靠合作关系和集成名单存活一段时间——但要真正提供价值，需要找到一个非常具体的产品市场契合并全力执行。而历史表明，企业链在这方面几乎没有成功案例。</p>
+
+  <p>Kane 把这个总结扩展到了一个更宏观的判断：在 FTX 之后，我们在任何新的企业链身上看不到"级联效应"了。没有一个 corporo chain 真正开始向生态系统释放持久的、正向的外部效应。在此之前，"Robinhood 有了自己的链"会是一个大新闻。现在，它只是一个被提及然后迅速被遗忘的脚注。</p>
+</section>
+
+<section>
+  <h2>Venice AI：隐私推理的范式突破</h2>
+
+  <p>在这场对话中，Venice 是一个让三位主持人态度高度一致的亮点——这对于一场以辩论为主的节目来说相当罕见。</p>
+
+  <p>Austin Griffith 给出了最直接的赞美："我非常喜欢 Venice。每天都在用。我质押了代币，每天使用他们的推理服务。产品太棒了。"</p>
+
+  <p>Venice 的独特之处在于它提供了两种不同层级的隐私保护：对于前沿模型，请求通过匿名化层路由——你的身份不会被记录。对于开源模型，Venice 在可信执行环境（TEE）中运行它们，提供端到端加密——加上 Near 提供的某种密码学证明，可以验证推理过程没有被篡改且内容不可见。</p>
+
+  <p>Austin 用一个具体的应用场景描述了这为什么重要："我一直在关注 HIPAA 合规。有一些医疗场景，你不能用前沿模型——即使匿名化了。你必须先对数据做某种清洗，然后才能发送到匿名化 LLM。但在端到端加密的 TEE 模型中，你可以做到更多不涉及犯罪的事情。"</p>
+
+  <p>这个产品在实用性上的证明是：Austin 有多个由 Claude 构建的应用，通过 Venice 的推理额度免费运行——他只是因为质押了代币，就不需要支付推理成本。这指向了一个代币可以纯粹作为实用工具运行的模型，而不是作为金融投机的容器。</p>
+</section>
+
+<section>
+  <h2>代币 vs 股权：加密的十字路口</h2>
+
+  <p>整个对话中最令人意外的个人转向来自 Kane。作为一个曾经的代币最大主义者，他现在做出了一个几乎算得上是自我否定的判断。</p>
+
+  <blockquote>
+    "如果我今天开始做任何新东西，我会选股权，我不会发代币——作为一个代币最大主义者，这让我非常难过。"
+    <span class="attribution">— Kane Warwick</span>
+  </blockquote>
+
+  <p>他的理由不是意识形态的，而是结构性的：市场的流动性溢价已经蒸发殆尽。代币曾经拥有的"流动性溢价"现在已经变成了一种<strong>净负资产</strong>。你可以通过代币进行去中心化的、全球化的、无需许可的融资——这些好处是真实的。但所有跟代币相关的古怪性质——估值脱节、投机泡沫、治理失调——在结构上抵消了这些好处。</p>
+
+  <p>Kane 甚至提出了一个更具讽刺性的历史视角："如果 SEC 当年没有打压代币创始人——而是等着——十年后市场自己就会弄明白代币是一种糟糕的融资工具。我们绕了一圈又回到原点。"</p>
+
+  <p>Venice 案例给这个辩论增加了复杂性。Venice 的代币是纯粹实用的——质押代币获得每日推理额度，不计入任何未来收益。这种设计与传统股权完全分离。Kane 认为如果能把代币彻底折叠回一个"纯实用"状态——没有收益分享，没有未来回报的暗示，只是推理成本的代理——那么代币仍然可以在没有与股权冲突的前提下存在。</p>
+
+  <p>但 Taylor 提醒所有人保持怀疑：她说自己在加密领域待得够久了，见证了每一次"这次会不一样"的尝试。"总有人会受伤——通常是代币持有者。"</p>
+
+  <div class="highlight-box hl-yellow">
+    <strong>核心问题</strong>：AI 领域的投资者不想碰代币。如果你想拿 AI 投资——你不是发代币。即使你的投资者是加密原生的，这个 A 轮融资的最终目的可能是"埋葬"代币。"哦不，它只是一个支付工具"——然后代币持有者被边缘化。
+  </div>
+</section>
+
+<section>
+  <h2>"信仰"——去中心化世界中最矛盾的概念</h2>
+
+  <p>在整场 ENS 辩论中，Kane 反复使用了一个在这个空间里很少听到的词：<strong>faith</strong>（信仰/信任）。</p>
+
+  <p>"这不是宗教信仰——但你要么信任他，要么不信任。我不是对这个具体方案有信心——我是相信 Nick 会理清这一切。他在最好的位置去理清它。我对评论区里任何其他人的信心为零。"</p>
+
+  <p>但这就跟加密的核心理念——"不要信任，要验证"——构成了一个深层的矛盾。Kane 坦率地承认了这一点：</p>
+
+  <p>"这就是问题所在——这个世界不是那样运作的。你不可能完全不信任任何人。我花了三年时间非常痛苦地学到的教训是：建立一个有人愿意用的产品<strong>极其困难</strong>。它需要一种承诺的程度、一种对齐的程度——而这种东西在 DAO 的结构中完全不存在。"</p>
+
+  <p>这个矛盾——去中心化系统的设计初衷是消除对人的信任需求，但产品构建本身又无法脱离对人的信任——是加密行业最根本的张力之一。Kane 并没有试图解决这个矛盾。他只是说：在其他条件相同的情况下，选择让创始人有更多的能动性，因为你不可能同时让所有人满意、同时又让产品进步。</p>
+</section>
+
+<section>
+  <h2>Ethereum：一场没有终点的马拉松</h2>
+
+  <p>这场对话最终回到了以太坊本身——不是因为它是唯一重要的协议，而是因为它是加密行业中最完整的治理实验。</p>
+
+  <p>以太坊的原始计划是完成 merge 之后就"完成"了。但 merge 之后人们发现，工作量证明虽然没了，但体验依然不够好。然后有了 L2 战略。然后有了 Lean Ethereum——一个三到四年的协议级重构，涵盖后量子安全和新 EVM——而 Dankrad 说"让我们在一年内完成它"。</p>
+
+  <p>Kane 对以太坊的前景持谨慎乐观的态度：AI 正在帮助以太坊加速技术前沿。研究更快、信息整合更快、构建也更快。以太坊应该是所有公链中最有能力利用这个优势的那一个。</p>
+
+  <p>但前提条件始终如一，正如 Taylor 提醒的：路线图要有，执行要更快。长期愿景不能成为今天不交付的借口。</p>
+
+  <p>这不是一个新的教训——但它是一个加密行业每一次牛市都会忘记、每一次熊市都会记起的教训。</p>
+</section>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+  <p class="author-note">以下是本期对谈中经过转录文件原文验证的精选引言：</p>
+
+  <div class="quote-item q-blue">
+    "如果 Vitalik 不在，我不认为这个东西能建成。他一消失，20 秒内就会变成内讧战场。"
+    <span class="attribution">— Kane 对 Vitalik 对以太坊不可或缺性的判断</span>
+  </div>
+
+  <div class="quote-item q-green">
+    "连续交付的累积效应，远比长期愿景更加强大。"
+    <span class="attribution">— Kane 从他自己的团队管理经验中总结的核心原则</span>
+  </div>
+
+  <div class="quote-item q-yellow">
+    "DAO 不会去升级一个产品。它就是不会。"
+    <span class="attribution">— Kane 阐释为什么 DAO 不适合执行产品迭代</span>
+  </div>
+
+  <div class="quote-item q-purple">
+    "让创始人掌权就好了。我们花了很长时间才学会这个——建立一个有人愿意用的产品极其困难。"
+    <span class="attribution">— Kane 对 ENS 治理辩论的最终立场</span>
+  </div>
+
+  <div class="quote-item q-orange">
+    "如果我今天开始做任何新东西，我会选股权，我不会发代币——作为一个代币最大主义者，这让我非常难过。"
+    <span class="attribution">— Kane 的核心转向：从代币原教旨主义到务实选择</span>
+  </div>
+
+  <div class="quote-item q-red">
+    "以太坊会灭掉 Robinhood 链。大概两年。"
+    <span class="attribution">— Taylor 对企业链命运的最直白判断</span>
+  </div>
+
+  <div class="quote-item q-blue">
+    "激励不会拯救世界。如果光靠激励就够了，每个人都会投票。他们没有投票——因为他们是人。"
+    <span class="attribution">— Kane 总结 BONK DAO 失败的核心原因</span>
+  </div>
+
+  <div class="quote-item q-green">
+    "八年前我加入 EF 的时候，那是一个充满了 Jedi 的地方。是最酷的组织。"
+    <span class="attribution">— Austin 回忆 EF 曾经的文化，解释为什么人才选择低薪加入</span>
+  </div>
+
+  <div class="quote-item q-yellow">
+    "代理不会让这种事发生——但攻击方式会变成提示注入，然后他们会欺骗代理投票赞成。"
+    <span class="attribution">— Austin 和 Taylor 对 AI 治理前景的双刃剑判断</span>
+  </div>
+
+  <div class="quote-item q-purple">
+    "我非常喜欢 Venice。每天都在用。产品太棒了。"
+    <span class="attribution">— Austin 对 Venice 隐私推理平台的使用评价</span>
+  </div>
+</section>
+
+<footer>
+  <p>
+    收听完整节目：
+    <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5856522767.mp3">Uneasy Money · Austin Griffith on the $1 AI Audit</a>
+  </p>
+  <p style="margin-top: 4px;">
+    <span class="author-note" style="display:inline">本文由 PodDeck 基于节目转录自动生成。所有引言均经过转录文件原文验证。作者概括部分以 "作者概括" 标注。</span>
+  </p>
+</footer>
+
+</article>
+</body>
+</html>

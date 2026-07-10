@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-10T04:27:22.140Z
+refreshed_at: 2026-07-10T18:33:27.469Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 99
-done: 0
+total_candidates: 98
+done: 1
 pending: 6
-needs_transcript: 93
+needs_transcript: 91
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -102,8 +102,12 @@ episodes:
       🪙 58:29 Why Kain says tokens are now the wrong tool to raise money
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-10T18:38:59.279Z
+    transcript_job_id: 2ce6fbf7e3ee4ff1bbe9fd818d6254df,bd0492f4f7324f0a8bcd411351068ac1,38a0eff194c243cf9ba88050e483855c,1c08a5e986654f6cad2f146315544008,5f7a0f7d3dba4ac48c075904344ccc1d
+    transcript_completed_at: 2026-07-10T18:42:22.183Z
   - id: 785c7df8-7b05-11f1-a459-b3ada2afa356
     guid: 785c7df8-7b05-11f1-a459-b3ada2afa356
     title: Strategy Sold More Bitcoin. Is This a Betrayal of the Bitcoin Ethos?
@@ -4152,8 +4156,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5915,8 +5918,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -8720,42 +8722,6 @@ episodes:
         Has Bitcoin Failed to Live Up to the Digital Gold Narrative?
 
         Why HYPE Is Up While Every Other Crypto, Including Bitcoin, Is Down
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 42947cd4-02dd-11f1-821d-933702c773f2
-    guid: 42947cd4-02dd-11f1-821d-933702c773f2
-    title: "Bits + Bips: Bitcoin Is Deeply Oversold. Does That Mean the Bottom Is In?"
-    duration: 2140
-    published: Thu, 05 Feb 2026 21:54:00 -0000
-    published_sort: "20260205"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8156009686.mp3?updated=1772630432
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8156009686.mp3?updated=1772630432
-    image: https://megaphone.imgix.net/podcasts/42947cd4-02dd-11f1-821d-933702c773f2/image/9b3518faa38826943936f0becba0a7fb.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Crypto markets are under severe pressure, with Bitcoin sliding into one of the most oversold conditions in its
-      history and Ethereum following closely behind. In this episode of Bits + Bips, Steve Ehrlich sits down with
-      Fairlead Strategies founder Katie Stockton to walk through what the charts are actually signaling amid the
-      selloff.
-
-
-      They discuss why oversold does not automatically mean a bottom, how technicians look for downside exhaustion, and
-      what needs to change before confidence returns for Bitcoin and ETH.
-
-
-      Hosts:
-
-
-      Steven Ehrlich, Host, Bits + Bips
-
-
-      Guests:
-
-
-      Katie Stockton, Founder and Managing Partner, Fairlead Strategies
-
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
