@@ -1,71 +1,55 @@
 source: tbpn
-refreshed_at: 2026-07-10T18:33:27.414Z
+refreshed_at: 2026-07-11T04:07:54.627Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
-pending: 1
+done: 0
+pending: 2
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: b1e98224-f14f-4377-8fc5-5b31cbc090dd
-    guid: b1e98224-f14f-4377-8fc5-5b31cbc090dd
-    title: Meta Releases Muse 1.1, GPT-5.6 Sol Reactions, New Robot Hand Alert | Eric Seufert, Bernt Børnich, Josh Lindgren,
-      Jeffrey Morgan, Thibault Sottiaux, Sean Frank
-    duration: 8576
-    published: Thu, 09 Jul 2026 13:45:45 -0700
-    published_sort: "20260709"
-    first_seen_at: 2026-07-10T04:27:22.049Z
-    url: https://share.transistor.fm/s/5676e6f2
-    audio_url: https://media.transistor.fm/5676e6f2/bdd1c058.mp3
+  - id: 16591e6b-9565-4ee8-8636-ae0dfd3794b2
+    guid: 16591e6b-9565-4ee8-8636-ae0dfd3794b2
+    title: Hollywood Chases Internet Horror, Love Island Prediction Markets, Phoebe Gates Affiliate Drama, 𝕏 Timeline
+      Reactions & More
+    duration: 6590
+    published: Fri, 10 Jul 2026 13:27:27 -0700
+    published_sort: "20260710"
+    first_seen_at: 2026-07-11T04:07:54.618Z
+    url: https://share.transistor.fm/s/54cb7d97
+    audio_url: https://media.transistor.fm/54cb7d97/f775df17.mp3
     image: https://img.transistorcdn.com/n1HZfeeCtRDMbjPRzUlwZbDZ9KOppXS837q2RAnFpNg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81YzAw/ODliOTQ0Y2JmNTYw/NTQyODUwM2VkZjcx/OGZjZC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/5676e6f2/transcription.txt
+    transcript_url: https://share.transistor.fm/s/54cb7d97/transcription.txt
     transcript_type: text/plain
-    summary: "(00:52) - Meta Releases Muse 1.1\r
+    summary: "(00:18) - SK Hynix Rallies in Trading Debut\r
 
-      (02:01) - GPT-5.6 Sol Reactions\r
+      (04:00) - GPT-5.6 Stories\r
 
-      (14:49) - Meta Prices AI to Win\r
+      (19:28) - 𝕏 Timeline Reactions\r
 
-      (29:24) - Eric Seufert, a prominent analyst and founder of Mobile Dev Memo, discusses Meta's strategic use of AI
-      in advertising to enhance ad performance and address investor skepticism. He emphasizes the importance of Meta's
-      proprietary data in training AI models to create ads that are uniquely effective, thereby demonstrating the
-      tangible benefits of their AI investments. Seufert also highlights the potential for AI-generated creative to
-      alleviate bottlenecks in ad production, ultimately driving significant revenue growth for Meta.\r
+      (45:30) - Phoebe Gates Accused of Fake Sales\r
 
-      (55:53) - Bernt Øivind Børnich, founder and CEO of 1X Technologies, has led the company since its inception in
-      2014, focusing on developing humanoid robots like NEO for consumer use. In the conversation, he discusses the
-      launch of NEO, emphasizing its advanced, human-like hand design achieved through in-house development of
-      miniaturized motors and tendons, and highlights the importance of creating robots that safely and effectively
-      interact with the world to enhance AI capabilities. He also touches on the company's commitment to vertical
-      integration, enabling rapid iteration and production scaling, and expresses excitement about the imminent shipping
-      of NEO to consumers.\r
+      (01:05:34) - China Launches First Reusable Rocket\r
 
-      (01:08:39) - Josh Lindgren, Head of the Podcast Department at Creative Artists Agency (CAA), began his career as a
-      music agent before transitioning to podcast representation in 2014. In the conversation, he discusses the
-      exponential growth of the podcast industry, the increasing integration of video into podcasting, and the evolving
-      definitions of media formats. He also highlights the importance of creators having a clear purpose for their
-      podcasts and the potential benefits of live shows in strengthening audience relationships.\r
+      (01:08:09) - Costco Cashier Becomes Millionaire\r
 
-      (01:29:05) - Jeffrey Morgan, CEO and co-founder of Ollama, discusses how their open-source platform enables
-      developers to run large language models locally, facilitating rapid adoption among Fortune 500 companies due to
-      enhanced security and compliance. He highlights the $65 million Series B funding led by Tamash Tungas, emphasizing
-      plans to expand the team and invest in secure, US- and Europe-based hosting solutions. Morgan also addresses the
-      evolving landscape of open-source models, noting the narrowing gap between open and frontier models, and the
-      importance of providing developers with the right tools to deploy and manage these models effectively.\r
+      (01:12:01) - Love Island Prediction Markets\r
 
-      (01:39:32) - Thibault Sottiaux, OpenAI's Head of Core Products and Platform, discusses the recent launch of
-      ChatGPT Work, highlighting its enhanced capabilities in coding, cybersecurity, and long-context understanding. He
-      emphasizes the model's improved efficiency and its ability to comprehend human intent with shorter prompts, making
-      it more accessible to users without technical expertise. Sottiaux also notes the development of multi-agent
-      setups, introduced as Ultra mode, where multiple agents collaborate to complete tasks more efficiently.\r
+      (01:18:01) - SONOS Layoffs\r
 
-      (01:54:03) - Sean Frank is the CEO of Ridge Wallet, a company specializing in minimalist wallets and accessories.
-      In the conversation, he discusses Ridge's expansion into products like travel gear and men's wedding rings, the
-      impact of AI on advertising and inventory management, and the evolving landscape of e-commerce, including the
-      challenges faced by luxury brands and the rise of platforms like TikTok Shop.
+      (01:22:28) - 𝕏 Timeline Reactions\r
+
+      (01:28:53) - Hollywood Chases Internet Horror\r
+
+      (01:38:34) - AI Songs May Get Labels\r
+
+      (01:40:56) - 𝕏 Timeline Reactions\r
+
+      (01:43:23) - Kim Renovates Nine Mansions\r
+
+      (01:47:20) - 𝕏 Timeline Reactions
 
 
       TBPN is made possible by:
@@ -120,7 +104,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b

@@ -1,113 +1,15 @@
 source: unchained
-refreshed_at: 2026-07-10T18:33:27.469Z
+refreshed_at: 2026-07-11T04:07:54.690Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 98
-done: 1
+total_candidates: 96
+done: 0
 pending: 6
-needs_transcript: 91
+needs_transcript: 90
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 221f86de-7bd1-11f1-8afc-cb592397a81a
-    guid: 221f86de-7bd1-11f1-8afc-cb592397a81a
-    title: "Austin Griffith on the $1 AI Audit and the Case for Founders Over DAOs: Uneasy Money"
-    duration: 4228
-    published: Thu, 09 Jul 2026 20:02:00 -0000
-    published_sort: "20260709"
-    first_seen_at: 2026-07-10T04:27:22.138Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5856522767.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5856522767.mp3
-    image: https://megaphone.imgix.net/podcasts/221f86de-7bd1-11f1-8afc-cb592397a81a/image/fa94c383c42cc92fa3e5d9d386b8ec78.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Austin Griffith joins Kain Warwick and Taylor Monahan to unpack&nbsp; BonkDAO's $20M governance heist, and Kain's
-      case for giving founders more control.
-
-
-      ========================================================
-
-
-      Thank you to our sponsors!
-
-
-      ⁠⁠Cape⁠: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's
-      privacy-first mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33%
-      off your first six months at ⁠https://cape.co/unchained⁠ (use code: UNCHAINED).
-
-
-      ========================================================
-
-
-      A single wallet spent $4.4 million buying up Bonk tokens, then used that stake to push through a governance
-      proposal that legally emptied BonkDAO's roughly $20 million treasury a week later, with almost no one watching the
-      vote.
-
-
-      Austin Griffith, Ethereum Foundation developer and creator of Scaffold-ETH and founder of BuidlGuidl, joins Kain
-      Warwick and Taylor Monahan to use the heist as a jumping-off point for Kain's real target: ENS. Kain argues
-      founder Nick Johnson should retake control over building and product from the DAO, and makes the case that
-      founder-led execution beats decentralized governance almost every time.
-
-
-      They also cover Vitalik's Lean Ethereum overhaul and why Austin says it will barely change what he builds, the $1
-      AI audit he launched as a meme for x402 agent payments, Robinhood's new chain and the pay-to-play deals behind it,
-      and why Kain now argues tokens are the wrong way to raise money.
-
-
-      If a founder with total conviction can outperform a DAO built to stop exactly that, the DAO experiment may be
-      further from finished than anyone wants to admit.
-
-
-      Hosts:
-
-        ⁠⁠Kain Warwick⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠Taylor Monahan⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-      Guests:
-
-        ⁠Austin Griffith - Ethereum Foundation developer and creator of Scaffold-ETH and SpeedRun Ethereum, and founder of BuidlGuidl
-
-      Timestamps
-
-
-      🛠️ 01:32 Why Austin says Vitalik's Lean Ethereum overhaul barely changes his job
-
-
-      📅 08:21 Taylor on why the EF ships huge roadmaps but too little in the short term
-
-
-      🪓 12:56 Austin on surviving the EF's leaner reorg and the wave of departures
-
-
-      💵 15:43 How Austin turned a serious auditing tool into a viral meme
-
-
-      🤝 18:48 x402 skill files: why agents will soon pay other agents for on-tap skills
-
-
-      💙 25:44 Cape: Get 33% off your first six months of privacy first mobile service at https://cape.co/unchained
-
-
-      🚨 26:41 How one wallet legally voted its way to BonkDAO's $20M treasury
-
-
-      ⚖️ 32:57 Why Kain thinks Nick Johnson and ENS should take power back from the DAO
-
-
-      🤖 55:29 Robinhood's new chain and Kain's take on crypto's pay-to-play problem
-
-
-      🪙 58:29 Why Kain says tokens are now the wrong tool to raise money
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-10T18:38:59.279Z
-    transcript_job_id: 2ce6fbf7e3ee4ff1bbe9fd818d6254df,bd0492f4f7324f0a8bcd411351068ac1,38a0eff194c243cf9ba88050e483855c,1c08a5e986654f6cad2f146315544008,5f7a0f7d3dba4ac48c075904344ccc1d
-    transcript_completed_at: 2026-07-10T18:42:22.183Z
   - id: 785c7df8-7b05-11f1-a459-b3ada2afa356
     guid: 785c7df8-7b05-11f1-a459-b3ada2afa356
     title: Strategy Sold More Bitcoin. Is This a Betrayal of the Bitcoin Ethos?
@@ -4156,7 +4058,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5918,7 +5821,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -8676,52 +8580,6 @@ episodes:
         Reading is Fundamental
 
         Stablecoin for Babies
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: fc0c14aa-0392-11f1-bfad-ff787ca87199
-    guid: fc0c14aa-0392-11f1-bfad-ff787ca87199
-    title: "Why Bitcoin Is Down, Plus the Rare Bright Spot in Crypto: Hyperliquid"
-    duration: 1887
-    published: Fri, 06 Feb 2026 19:35:00 -0000
-    published_sort: "20260206"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4641544909.mp3?updated=1770407532
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4641544909.mp3?updated=1770407532
-    image: https://megaphone.imgix.net/podcasts/fc0c14aa-0392-11f1-bfad-ff787ca87199/image/6cb5c6df31e4d44676269513e966efd5.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Thank you to our sponsor!
-
-
-      Fuse
-
-
-      Bitcoin's collapse is accelerating. Continuing a descent that began last week, the asset this week has all the
-      price progress made under the Trump administration. The price action begs the question why amid greater adoption
-      and support.
-
-
-      In this episode of Unchained, FalconX Head of Markets Joshua Lim highlights two main reasons for Bitcoin's
-      regression and offers his outlook for the year. Is it 2022 all over?
-
-
-      Plus, how gold's run resembles GameStop in 2021 and why Hyperliquid is a bright spot amid market weakness.
-
-
-      Guest:
-
-
-      Joshua Lim, Head of Markets, FalconX
-
-
-      Links:
-
-        Bitcoin Sinks as Markets Price In a More Hawkish Fed
-
-        Has Bitcoin Failed to Live Up to the Digital Gold Narrative?
-
-        Why HYPE Is Up While Every Other Crypto, Including Bitcoin, Is Down
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
