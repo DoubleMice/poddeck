@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-11T04:07:54.690Z
+refreshed_at: 2026-07-11T18:20:33.265Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 96
-done: 0
+done: 2
 pending: 6
-needs_transcript: 90
+needs_transcript: 88
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -98,8 +98,12 @@ episodes:
       🔄 47:53 Parker on why comparing Strategy to Terra Luna or GBTC misreads the risk
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-11T18:20:34.510Z
+    transcript_job_id: 0b474364fdc549c18a9836c229a42ea8,8745472bf74b4c52bfe6ebbe7bed5b8e,9ddf2a38787f4dabba0a1090643a45c6,a7da0c5aec754d3a9fbe23dd0f0e4741
+    transcript_completed_at: 2026-07-11T18:22:33.169Z
   - id: 0a65241a-75ad-11f1-a248-db78c786b739
     guid: 0a65241a-75ad-11f1-a248-db78c786b739
     title: "The Chopping Block: Visa, Mastercard & 140 Firms Take On Circle, Saylor’s Digital Credit Reset & the DAO
@@ -225,8 +229,12 @@ episodes:
       57:26 DAOs vs consortia, and can AI save governance?
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-11T18:22:33.887Z
+    transcript_job_id: 2d9fa8e14ad143b28a64d2620d411f82,51f199e0789f46fa9244aef66981c882,381072d594ca4258a589641c683ac04e,ebf01c673bfe4a2fb1c1b5d88c41e205,44eca14561a74d249bd881fce66f65aa
+    transcript_completed_at: 2026-07-11T18:26:01.312Z
   - id: 9bfc4610-717a-11f1-8775-bb9c48b81924
     guid: 9bfc4610-717a-11f1-8775-bb9c48b81924
     title: "Ex-Ethereum Foundation Researchers Launched Their Own Lab: Uneasy Money"
@@ -4058,8 +4066,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5821,8 +5828,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

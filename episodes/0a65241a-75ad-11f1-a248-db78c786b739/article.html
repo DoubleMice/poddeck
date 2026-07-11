@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Chopping Block: Visa, Mastercard & 140 Firms Take On Circle, Saylor's Digital Credit Reset & the DAO Reckoning</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 60px; }
+  header { margin-bottom: 48px; }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .meta span { display: inline-flex; align-items: center; gap: 4px; }
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 32px 0;
+  }
+  .overview { margin-bottom: 48px; }
+  .overview h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  .topic-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 600px) { .topic-cards { grid-template-columns: 1fr; } }
+  .topic-card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #fff;
+  }
+  .card-blue { border-left: 4px solid #3b82f6; background: #eff6ff; }
+  .card-green { border-left: 4px solid #22c55e; background: #f0fdf4; }
+  .card-orange { border-left: 4px solid #f97316; background: #fff7ed; }
+  .card-purple { border-left: 4px solid #a855f7; background: #faf5ff; }
+  .card-red { border-left: 4px solid #ef4444; background: #fef2f2; }
+  .card-yellow { border-left: 4px solid #eab308; background: #fefce8; }
+  .topic-card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+  .topic-card span { color: #666; }
+
+  section { margin-bottom: 40px; }
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: #1a1a1a;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e5e5;
+  }
+  section p { margin-bottom: 14px; text-align: justify; }
+  section p:last-child { margin-bottom: 0; }
+
+  .highlight-box {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .highlight-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .highlight-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .highlight-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .highlight-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .highlight-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+
+  .quote-block {
+    padding: 18px 22px;
+    background: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .quote-block .attribution {
+    font-size: 13px;
+    color: #888;
+    margin-top: 8px;
+    font-style: normal;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 16px 0;
+  }
+  @media (max-width: 500px) { .stat-grid { grid-template-columns: 1fr; } }
+  .stat-card {
+    text-align: center;
+    padding: 16px 12px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #fee2e2;
+  }
+  .stat-card .number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #dc2626;
+    line-height: 1.3;
+  }
+  .stat-card .label {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+  }
+
+  .quotes-section { margin-top: 48px; }
+  .quotes-section h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #1a1a1a;
+  }
+  .quote-item {
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+    color: #999;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  .gloss {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>The Chopping Block: Visa、Mastercard 与 140 家公司联手挑战 Circle</h1>
+  <div class="meta">
+    <span>🎙️ Haseeb Qureshi · Tom Schmidt · Tarun Chitra · Jordi Alexander</span>
+    <span>📡 The Chopping Block (Unchained)</span>
+    <span>📅 2026 年 7 月</span>
+    <span>⏱️ 约 1 小时</span>
+  </div>
+</header>
+
+<section class="overview">
+  <h2>📋 为什么这期值得关注</h2>
+  <div class="topic-cards">
+    <div class="topic-card card-red">
+      <strong>MicroStrategy 遭遇信任危机</strong>
+      <span>Saylor 的 Stretch 优先股从 $100 跌至 $71，mNAV 跌破 1。他被迫推出"数字信用资本框架"，用 $2.5B 现金缓冲和可能的比特币出售来挽救局面。Tarun 称其为"穿西装的 Luna"。</span>
+    </div>
+    <div class="topic-card card-green">
+      <strong>140 家巨头联手推出 OUSD</strong>
+      <span>Visa、Mastercard、BlackRock、Google、Coinbase、Solana 等 140 家公司组成联盟，推出零铸币赎回费用的新稳定币。Circle 股价应声下跌 8%，Tether CEO 嘲讽"终于有第二名了"。</span>
+    </div>
+    <div class="topic-card card-orange">
+      <strong>Meme 币回魂</strong>
+      <span>沉寂已久的 Meme 币市场因 Ansem 代币短暂回暖，市值一度触及 $100M。但 Jordi 认为 Meme 币的本质是 WWE 摔角剧场——"这是娱乐，不是投资"。</span>
+    </div>
+    <div class="topic-card card-purple">
+      <strong>ENS DAO 一人否决引发治理反思</strong>
+      <span>Nick Johnson 用约 50% 的投票权重否决了 ENS DAO 的重组提案。事件引发对 DAO 治理模式的广泛质疑：代币投票到底是民主还是财阀制？</span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>一、MicroStrategy 的信任危机：当数字信用帝国出现裂痕</h2>
+
+  <p>如果你在过去两年关注过加密市场，你一定听说过 Michael Saylor 的名字。作为 MicroStrategy（现更名为 Strategy）的创始人兼执行主席，他将一家曾经默默无闻的企业软件公司变成了一家"比特币财团"——通过不断发行普通股和优先股来购买比特币，他构建了一个三层资本结构：底层是比特币储备，中间层是 MSTR 普通股，顶层是各种优先股产品。</p>
+
+  <p>这个结构在比特币上涨时运作精妙。Saylor 以低于市场价的成本借入资金，购买比特币，然后通过优先股向投资者支付有吸引力的固定收益。但随着比特币从 2025 年高点大幅回落，这个体系的脆弱性开始暴露。</p>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="number">-82%</div>
+      <div class="label">MSTR 距 2025 年 7 月高点</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">$71</div>
+      <div class="label">Stretch 优先股最低价<br/>（目标 $100）</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">&lt; 1</div>
+      <div class="label">mNAV（市值低于<br/>比特币持仓价值）</div>
+    </div>
+  </div>
+
+  <p>最引人注目的是 Stretch——MicroStrategy 发行的旗舰优先股产品，目标价格 $100，初始股息 11.5%。在上周的市场动荡中，Stretch 跌至 $71 的低点。Tarun 在此前的节目中称其为 "Luna for suits"（穿西装的 Luna）——这个评价一针见血：虽然目标受众从加密原生用户变成了华尔街投资者，但产品结构中潜藏的死亡螺旋风险与 Terra/Luna 如出一辙。</p>
+
+  <div class="highlight-box highlight-blue">
+    <strong>作者概括</strong>：Saylor 的资本结构本质上是一种杠杆做多比特币的策略。当比特币上涨时，杠杆放大收益；当比特币下跌时，杠杆放大亏损。Stretch 优先股的风险在于，它承诺了 12% 的固定收益，但底层资产的波动性远超这个数字——如果比特币持续低迷，支付这些固定收益的唯一方式就是出售更多比特币。
+  </div>
+</section>
+
+<section>
+  <h2>二、Saylor 的反击：数字信用资本框架</h2>
+
+  <p>面对危机，Saylor 并没有坐以待毙。他宣布了一套被他称为"数字信用资本框架"（Digital Credit Capital Framework）的综合应对方案。这个方案的核心思想很简单：MicroStrategy 不是一家负债累累的公司，而是一家"数字信用公司"——它的使命是将比特币这种波动性资产，转化为一系列具有不同风险收益特征的金融产品。</p>
+
+  <p>具体措施包括四个方面：</p>
+
+  <p><strong>第一，建立 $2.5B 现金缓冲。</strong>这覆盖约 18 个月的股息和利息支出，远高于之前的 12 个月水平。资金来源是通过 ATM（At-The-Market）出售约 $1.15B 的 MSTR 普通股。对于 MSTR 股东来说，这意味着股权被稀释，但 Saylor 的逻辑是清晰的——优先保住优先股持有人的利益，才能维持整个资本结构的信用。</p>
+
+  <p><strong>第二，大幅上调股息。</strong>Stretch 的股息从 11.5% 提升至 12%。在 Saylor 的历史操作中，股息调整通常是 25-50 个基点的微调。这次 50 个基点的"jumbo"加码传递了一个信号：他愿意用更高的成本来维持投资者信心。</p>
+
+  <p><strong>第三，启动回购计划。</strong>优先股回购最高 $1B（Stretch 优先），MSTR 普通股回购最高 $1B。回购的逻辑是：当市场价格低于内在价值时，用现金买回自己的负债和股权是最有效的资本配置方式。</p>
+
+  <p><strong>第四，准备出售比特币。</strong>这是最引人注目的一条。Saylor 宣布，必要时可能出售不超过总持有量 2.5% 的比特币，约 $1.25B。对于一个以"永不卖出比特币"为口号建立了个人品牌的人来说，这是一个重大的立场转变——尽管他将其包装为"风险管理"而非"策略调整"。</p>
+
+  <div class="highlight-box highlight-green">
+    Jordi 对这些措施的评价是积极的。他认为 Saylor "做了正确的决定"——<strong>"at this point he can sit on his hands"</strong>（现在他可以坐等）。如果有必要，他可以回购 Stretch、回购 MSTR，什么都不做也能撑过 18 个月。Jordi 甚至预测："people are going to forget about this in six months"（六个月后人们就会忘记这件事）。
+  </div>
+</section>
+
+<section>
+  <h2>三、穿西装的 Luna：死亡螺旋的风险是否被低估？</h2>
+
+  <p>Tarun 保持着更深的怀疑。在上一期节目中，他将 Stretch 称为 "Luna for suits"，本期他进一步阐述了自己的担忧：Stretch 的问题不在于它会像 Luna 那样瞬间归零——毕竟比特币的供应是固定的，不能被无限增发——而在于它存在<strong>自反性风险</strong>。</p>
+
+  <p>自反性（reflexivity）这个概念来自索罗斯：市场参与者的预期会影响市场本身，从而形成一个自我强化的循环。在 Stretch 的案例中，这个循环是这样的：</p>
+
+  <div class="highlight-box highlight-red">
+    市场知道 Stretch 可能脱锚 → 投资者抛售 Stretch → Saylor 被迫卖出比特币来筹集现金维持兑付 → 比特币价格承压下跌 → MSTR 股价跟随下跌 → Stretch 持有者更加恐慌 → 进一步抛售 Stretch → 需要卖出更多比特币……
+  </div>
+
+  <p>Tarun 还指出了另一个结构性问题：MSTR 的边际买家。MSTR 被纳入多个股票指数，每天都有来自指数基金的被动买盘。但如果 MSTR 的市值持续下跌并跌出指数，"they're going to have a lot of trouble selling at the money as well"——Saylor 通过 ATM 出售股票来筹集资金的能力也会受损。</p>
+
+  <p>Jordi 对此提出了有力的反驳。他认为将 Stretch 与 Luna 相提并论是过度简化：</p>
+
+  <div class="quote-block">
+    "Luna was worthless and you could print infinite Luna while Bitcoin you cannot print any Bitcoin."
+    <div class="attribution">— Jordi Alexander，Cellini 交易主管</div>
+  </div>
+
+  <p>Jordi 的核心论点是：Luna 的死亡螺旋之所以致命，是因为它可以在几小时内归零——你可以无限增发 Luna 来维护 UST 的锚定，但增发行为本身会稀释 Luna 的价值，形成一个加速崩溃的循环。而比特币的供应是固定的。Saylor 有 $2.5B 的现金缓冲，有多个工具可以动用，有 18 个月的时间窗口。只要比特币不归零，只要长期持有者最终会在某个价格水平接盘，Stretch 就很可能存活下来。</p>
+
+  <p>这是一个关于时间偏好（time preference）的赌注。Saylor 赌的是长期——比特币的年化增长率最终会超过 12% 的股息成本。Tarun 担心的是短期——自反性循环可能在长期到来之前就将整个体系摧毁。如 Haseeb 所总结的："the gamble of tapping into credit rates go down buy Bitcoin on cheap leverage is, the market's working against you and unfortunately it's not a great trade to be in right now."</p>
+</section>
+
+<section>
+  <h2>四、Saylor 不再是比特币的边际买家</h2>
+
+  <p>节目中还讨论了一个被很多人忽视的市场结构变化：Saylor 已经不再是比特币市场的核心驱动力。</p>
+
+  <p>在过去一年中，市场已经形成了一种节奏——Saylor 每月通过 ATM 出售约 $2B 的 MSTR 股票，然后在月中左右买入比特币。大量资金围绕这个节奏进行布局。Jordi 描述道：</p>
+
+  <div class="quote-block">
+    "every month he was buying 2 billion on the 14th, and you just kind of knew it was going to happen...everybody was just like, oh, we're getting away a week away from the dividend, let's just pile in and then pile out."
+    <div class="attribution">— Jordi 描述 Saylor 买盘引发的抢跑行为</div>
+  </div>
+
+  <p>当 Saylor 在最近一次未能如期买入时，这个"抢跑游戏"戛然而止。大量等待 Saylor 买盘的资金被迫平仓，这被认为是比特币从 $80K 回落至 $60K 的重要原因之一。现在，"the front runners are out, obviously no one's like front running buys anymore"——市场的结构性买盘消失了。</p>
+
+  <p>Haseeb 在 Goldman Sachs 的一个活动上听到了更令人担忧的信息：很多交易台的主要工作就是推演 MicroStrategy 的买卖节奏，因为"they're the marginal flow in the Bitcoin market right now"。当最大的边际买家也停止买入时，比特币市场需要找到新的驱动力。但目前来看，散户不在场、ETF 持续流出（$5B 的史上最大规模流出）、Saylor 停买——下一个边际买家在哪里，没有人知道。</p>
+</section>
+
+<section>
+  <h2>五、OUSD：140 家巨头的稳定币豪赌</h2>
+
+  <p>如果 MicroStrategy 的危机代表了加密原生玩家的困境，那么 OUSD 的出现则代表了传统金融巨头对加密市场的全面入侵。</p>
+
+  <p>Open USD（OUSD）是一个由约 140 家公司组成的联盟推出的新稳定币。CEO 是 Zach Abrams，他曾是 Bridge 的联合创始人（Bridge 已被 Stripe 以高价收购）。OUSD 的核心卖点是：<strong>零铸币赎回费用、收益归铸币者、无单一控制实体</strong>。</p>
+
+  <p>联盟成员的名单令人瞠目：</p>
+  <ul style="margin-left: 20px; margin-bottom: 14px; font-size: 15px;">
+    <li><strong>金融科技</strong>：Visa、Mastercard、Amex、Stripe、Adyen、Fiserv、Klarna、Affirm、Ramp、Brex、Western Union、MoneyGram、Remitly</li>
+    <li><strong>金融机构</strong>：BlackRock、BNY Mellon、渣打银行、DBS、U.S. Bank、BBVA、Mizuho、ICE</li>
+    <li><strong>科技公司</strong>：Google、Samsung、IBM、Shopify、Mercado Libre、DoorDash、Grab、Rakuten</li>
+    <li><strong>加密原生</strong>：Coinbase、Solana、Bybit、OKX、Ripple、Aave、Morpho、Polygon、Aptos、Fireblocks、MetaMask、Anchorage</li>
+  </ul>
+
+  <p>Tom 用了一个极具画面感的比喻来描述这种局面：</p>
+
+  <div class="quote-block">
+    "I kind of thought it almost more like the end of Apocalypto...in the background the Spanish show up and it's like all right Daddy's home."
+    <div class="attribution">— Tom Schmidt，用《阿波卡猎逃》的结尾比喻传统金融巨头进入稳定币市场</div>
+  </div>
+
+  <p>在 Tom 看来，加密行业的稳定币竞争就像是《阿波卡猎逃》中土著战士在悬崖上的决斗——USDT vs USDC vs DAI，在一个相对封闭的 DeFi 小池塘里争夺排名。而 OUSD 的出现，相当于西班牙战舰出现在地平线上——游戏规则彻底改变了。</p>
+
+  <div class="highlight-box highlight-orange">
+    <strong>市场反应</strong>：消息公布后，Circle 股价下跌约 7-8%。Tether 的 CEO Paolo 发推称 OUSD 是"终于有第二名出现了"——这话表面是欢迎竞争，实则在嘲讽 Circle。如 Tarun 所说："the vengeance between the two of them has to be the highest of anything in crypto."
+  </div>
+</section>
+
+<section>
+  <h2>六、收入分配：OUSD 成败的关键设计</h2>
+
+  <p>OUSD 的机制中有一个至今未被解答的关键问题：<strong>收益如何在 140 个联盟成员之间分配？</strong></p>
+
+  <p>目前的设计是"谁铸币谁获得收益"。但 Tarun 指出了一个致命的技术难题：在一个完全可替换（fungible）的资产中，你无法追踪"谁的币"被销毁了。如果 A 铸造了 $1B OUSD，B 也铸造了 $1B，然后双方交易，最终由 C 来销毁，那么收益应该归谁？</p>
+
+  <p>Tarun 认为，无论最终采用什么样的分配规则，都会有人找到最聪明的办法来"刷"（farm）收益：</p>
+
+  <ul style="margin-left: 20px; margin-bottom: 14px; font-size: 15px;">
+    <li><strong>如果按 AUM（存量）分配：</strong>拥有大资产负债表的机构可以"左手倒右手"——铸造 $1B，转给别人，再转回来——刷高自己的 AUM 数字来获取更多收益分成。</li>
+    <li><strong>如果按交易量（流量）分配：</strong>拥有大量 KYC 用户的平台可以将现有的链下支付流量导入 OUSD，本质上是用已有的业务换取联盟的激励分配。</li>
+  </ul>
+
+  <div class="quote-block">
+    "whatever rules you set there dictate who gets the most value out of this and inherently who will try to be on the security council."
+    <div class="attribution">— Tarun，指出收入分配规则决定了整个联盟的权力格局</div>
+  </div>
+
+  <p>这个问题并非微不足道。在 Visa 的案例中，联盟之所以能成功，是因为银行业的价值已经被创造出来了——Visa 的角色是协调和分配，而不是创造。但在稳定币市场，总市场规模仍然很小。Haseeb 指出："Relative to a BNY Mellon or a BlackRock, stablecoin market's tiny." 在一个需要开拓新领域的市场中，联盟结构面临着严重的搭便车问题。</p>
+</section>
+
+<section>
+  <h2>七、开拓者 vs 联盟：Haseeb 的核心洞察</h2>
+
+  <p>Haseeb 提出了本期节目最具洞察力的一个框架。他将市场参与者分为两种模式：<strong>探险家</strong>和<strong>联盟</strong>。</p>
+
+  <div class="quote-block">
+    "you don't use a consortium to go open up a new continent. You use an explorer on a ship that's venture financed."
+    <div class="attribution">— Haseeb Qureshi，Dragonfly 合伙人</div>
+  </div>
+
+  <p><strong>探险家模式</strong>（Tether、Circle）的核心特征是：单一实体承担全部风险，也收获全部回报。当你去印度尼西亚做市场开拓，建立本地合作伙伴关系，教育用户什么是稳定币——这些投入的成本和风险由你独自承担，但如果你成功了，所有收益也归你所有。这种结构适合开拓未知领域。</p>
+
+  <p><strong>联盟模式</strong>（OUSD、Visa）的核心特征是：多方共享治理，收益按预先约定的规则分配。这种结构适合在已有市场中进行协调——当所有银行都已经覆盖了消费者，建立一个中央协调层来统一支付标准是有意义的。但在需要开拓新市场的场景中，联盟面临着严重的激励问题：你做了市场开拓，投入了真金白银，但收益可能被其他成员抢走。</p>
+
+  <p>Haseeb 对 OUSD 的判断并非完全悲观。他认为 OUSD 有可能在"新市场"中取得成功——B2B 支付、银行间结算、商户收单——这些场景目前不在 Tether 和 Circle 的势力范围内。问题在于，开拓这些新市场需要有人做"重活"，而联盟结构天然不擅长做重活。</p>
+</section>
+
+<section>
+  <h2>八、Libra 的幽灵与 140 个签名的含金量</h2>
+
+  <p>Haseeb 提醒大家回想 Facebook 的稳定币项目 Libra。Libra 在 2019 年宣布时也有约 40 家顶级公司签名加入——Visa、Mastercard、PayPal、Mercado Libre 等。当时的市场反应和今天对 OUSD 的反应如出一辙："天哪，Visa 也在里面！这将改变一切！"</p>
+
+  <p>但后来的调查揭露了一个尴尬的真相：</p>
+
+  <div class="quote-block">
+    "most of these people didn't really understand what Libra was, they hadn't cleared it with their boards, they were more...they signed a petition or like an LOI or something."
+    <div class="attribution">— Haseeb 描述 Libra 联盟成员的实际参与程度</div>
+  </div>
+
+  <p>当监管压力来临时，这些"合作伙伴"迅速退出。Visa 和 Mastercard 是最早离开的两个。Haseeb 由此提出了一个令人深思的观点：<strong>"I am skeptical when the consortium is too big. I'm almost more bullish if it's a consortium of like eight people or 10 people. A consortium of 140 people is basically like, you know, we all went to a concert together and like we all signed a petition."</strong></p>
+
+  <p>Jordi 提供了一个更务实的视角：这是一种制度性的行为模式，既不是信号也不是反信号。每家大型公司都有一个"加密部门负责人"（crypto guy），这个人每年都需要向老板证明自己做了点事情。"they need to sign up so they can show that they did something"——加入一个 140 家公司的联盟，是最安全、最省力的年度业绩。</p>
+
+  <p>不过 Tarun 指出，OUSD 有一个 Libra 没有的优势：收益是真实的。"Stablecoins are a much easier sell...this promises you straight up treasury yield. There's real dollars behind this versus like a little bit more like the hope of a token type thing." 国债收益是真实存在的现金流，而不是模糊的未来代币升值承诺。这使得 OUSD 在企业董事会中的推销难度远低于 Libra。</p>
+</section>
+
+<section>
+  <h2>九、Meme 币回潮：WWE 摔角剧场</h2>
+
+  <p>节目还讨论了 Meme 币市场的一个小插曲：Ansem 代币的短暂回潮。</p>
+
+  <p>Ansem 是加密圈最有影响力的 Meme 币 KOL 之一。最近出现了一枚以他名字命名的代币（他本人并未发行），通过 Pump.fun 的创作者费用机制，他获得了 65% 的代币供应。他将部分费用以空投形式分发给其他创作者和 KOL，代币市值一度触及约 $100M。</p>
+
+  <p>Jordi 对这个现象的评价颇有意思：</p>
+
+  <div class="quote-block">
+    "this is like the WWF I used to watch as a kid. You got Hulk Hogan and this guy. This is like entertainment theater."
+    <div class="attribution">— Jordi，将 Meme 币市场比作职业摔角娱乐</div>
+  </div>
+
+  <p>在 Jordi 看来，Meme 币的叙事从来不像表面上那样"有机"。每一个成功的 Meme 币背后都有一个精心编排的剧情——"这个开发者没赚到钱"、"这是社区的胜利"——这些都是 WWE 式的剧本。但这恰恰是 Meme 币的价值所在：人们购买的不是基本面，而是参与感和故事本身。</p>
+
+  <p>Haseeb 则观察到一种周期性规律：每隔一段时间，市场对"某个愚蠢的币"的投机需求就会积累到一定程度，然后爆发，再消退。"the speculative fervor is in all of us"——投机的冲动存在于每个人心中。</p>
+</section>
+
+<section>
+  <h2>十、ENS DAO 风波：代币治理的真相</h2>
+
+  <p>节目的最后一个主要话题是 ENS DAO 的治理风波。</p>
+
+  <p>ENS DAO 正在计划将其国库的日常管理权委托给一个基金会——包括所有 ENS 代币、ETH 和稳定币。但在投票过程中，Nick Johnson（ENS 的核心开发者、以太坊社区的知名人物）用他掌握的约 50% 的投票权重，独自否决了这项提案。他的理由是必须保留安全委员会作为对资产风险的最终防线。</p>
+
+  <p>这个事件引发了"DAO 是否已经失败"的广泛讨论。批评者认为，如果一个人能用代币权重否决整个 DAO 的决策，那和传统公司治理有什么区别？</p>
+
+  <p>Tom 提出了一个不同的视角：<strong>这不是系统的失败，而是预期的错误。</strong>代币治理从一开始就是"一币一票"的财阀制（plutocracy），不是"一人一票"的民主制。人们感到失望，不是因为系统坏了，而是因为他们的期待建立在错误的假设上——"they thought it would be one or the other and actually the other ends up looking a lot like the other one."</p>
+
+  <p>Tarun 则更直接——DAO 和联盟本质上是同一个东西：</p>
+
+  <div class="quote-block">
+    "Same thing, different clothing. Just different branding."
+    <div class="attribution">— Tarun，评论 DAO 和联盟之间的本质相似性</div>
+  </div>
+
+  <p>Haseeb 观察到一个行业趋势的转变：MakerDAO 的 Rune、Aave 的 Stani 都曾在各自的 DAO 中进行集权化改革——"there's a vibe shift in, hey, DAOs are overly complicated, overly bureaucratic, this was a little bit decentralization theater maybe we were doing under a previous administration."</p>
+
+  <p>Jordi 则在结尾抛出了一个乐观的预测：AI 可能会拯救 DAO。如果每个人都有一个人 AI 代理（AI delegate），能理解你的偏好并代表你投票，代议制民主在链上就变得可行了。Tarun 笑着指出，这其实是 2017 年 Dfinity 的原始愿景。</p>
+</section>
+
+<section class="quotes-section">
+  <h2>🔑 核心金句</h2>
+
+  <div class="quote-item highlight-blue">
+    <em>"Luna was worthless and you could print infinite Luna while Bitcoin you cannot print any Bitcoin."</em>
+    <div class="attribution">— Jordi，解释为什么 Stretch 不会像 Luna 那样归零</div>
+  </div>
+
+  <div class="quote-item highlight-green">
+    <em>"you don't use a consortium to go open up a new continent. You use an explorer on a ship that's venture financed."</em>
+    <div class="attribution">— Haseeb，解释为什么联盟不适合开拓稳定币新市场</div>
+  </div>
+
+  <div class="quote-item highlight-orange">
+    <em>"I kind of thought it almost more like the end of Apocalypto...in the background the Spanish show up and it's like all right Daddy's home."</em>
+    <div class="attribution">— Tom，比喻传统金融巨头携 OUSD 进入稳定币市场</div>
+  </div>
+
+  <div class="quote-item highlight-purple">
+    <em>"whatever rules you set there dictate who gets the most value out of this and inherently who will try to be on the security council."</em>
+    <div class="attribution">— Tarun，指出 OUSD 收入分配规则决定了联盟的权力格局</div>
+  </div>
+
+  <div class="quote-item highlight-red">
+    <em>"this is like the WWF I used to watch as a kid. You got Hulk Hogan and this guy. This is like entertainment theater."</em>
+    <div class="attribution">— Jordi，评论 Meme 币市场的本质</div>
+  </div>
+
+  <div class="quote-item highlight-blue">
+    <em>"Same thing, different clothing. Just different branding."</em>
+    <div class="attribution">— Tarun，评论 DAO 和联盟之间的本质相似性</div>
+  </div>
+</section>
+
+<footer>
+  <p>📡 来源：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8357653135.mp3">The Chopping Block (Unchained)</a> · 2026 年 7 月</p>
+  <p style="margin-top: 8px;">本文由 PodDeck 基于播客转写稿自动生成。内容为嘉宾观点摘要，不构成投资建议。</p>
+</footer>
+
+</div>
+</body>
+</html>
