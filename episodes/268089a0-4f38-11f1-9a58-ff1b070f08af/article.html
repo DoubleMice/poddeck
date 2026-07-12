@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-IPO 二级市场为何崩坏——Uneasy Money 深度解读</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    color: #111;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #888;
+  }
+  header .meta span { margin: 0 8px; }
+  h2 {
+    font-size: 22px;
+    color: #111;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1971c2;
+  }
+  h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 24px 0 12px;
+  }
+  p {
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  @media (max-width: 600px) {
+    .overview { grid-template-columns: 1fr; }
+    article { padding: 24px 16px 48px; }
+    header h1 { font-size: 22px; }
+  }
+  .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .card strong { display: block; margin-bottom: 4px; }
+  .card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #3b82f6;
+    background: #eff6ff;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #666;
+    font-style: normal;
+  }
+  .quote-section blockquote:nth-child(2) { border-left-color: #22c55e; background: #f0fdf4; }
+  .quote-section blockquote:nth-child(3) { border-left-color: #a855f7; background: #faf5ff; }
+  .quote-section blockquote:nth-child(4) { border-left-color: #f97316; background: #fff7ed; }
+  .quote-section blockquote:nth-child(5) { border-left-color: #ef4444; background: #fef2f2; }
+  .quote-section blockquote:nth-child(6) { border-left-color: #eab308; background: #fefce8; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
+  }
+  @media (max-width: 500px) { .stat-grid { grid-template-columns: 1fr; } }
+  .stat {
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+    background: #fef2f2;
+  }
+  .stat .num {
+    font-size: 36px;
+    font-weight: 700;
+    color: #dc2626;
+  }
+  .stat .label {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Pre-IPO 二级市场为何崩坏：<br/>当"写着 Anthropic 的石头"被当成真股票卖</h1>
+  <div class="meta">
+    Kane Warwick · Taylor Monahan · Luca Netz<br/>
+    Uneasy Money (Unchained) · 2026 年 5 月 · 约 1 小时 16 分
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得听</h2>
+
+  <div class="overview">
+    <div class="card card-blue">
+      <strong>Anthropic/OpenAI 叫停二级交易</strong>
+      一个被 WhatsApp 群、SPV 嵌套和诈骗充斥的市场终于引爆了——声誉风险太大，公司不得不"从太空核爆"这些交易。
+    </div>
+    <div class="card card-orange">
+      <strong>合成永续合约入侵传统股权</strong>
+      当 Hyperliquid 上出现 Anthropic 永续合约，私有公司的定价权彻底失控——任何人都可以对任何公司的估值下注，创建成本几乎为零。
+    </div>
+    <div class="card card-purple">
+      <strong>为什么好公司不再上市了</strong>
+      私募市场资金过剩，不流动性有溢价。上市意味着失去对叙事的控制、被季报绑架、被散户审判——激励完全倒挂。
+    </div>
+    <div class="card card-red">
+      <strong>四月：加密史上最惨黑客月</strong>
+      6.25 亿美元被盗，68 起安全事件——AI 辅助攻击正在改写攻防规则，Google 已发现 LLM 生成的 Python 漏洞利用绕过了 2FA。
+    </div>
+    <div class="card card-green">
+      <strong>AI Agent 安全监控：90 秒 vs 12 小时</strong>
+      Kane 用 AI Agent 做攻击检测：一个持续了 12 小时无人察觉的攻击，Agent 在 90 秒内就能发现——"你得做得更好，兄弟。"
+    </div>
+    <div class="card card-yellow">
+      <strong>Circle 发币 + Aave 法庭战</strong>
+      上市公司 Circle 玩起了"双轨套利"——股票买家是一群人，代币买家是另一群人，两边同时拿钱。而 Aave/Helldao 案正在测试链上恢复是否会被法庭承认。
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>一、SPV 嵌套链：从原始股份到"写着 Anthropic 的石头"</h2>
+
+  <p>过去一年，围绕 Anthropic、OpenAI 等 Pre-IPO 公司的二级市场交易已经变得极度狂热。Kane Warwick 提出了一个简单而有洞察力的框架：市场对某样东西有需求时，你可以通过两种方式满足——给对方真正想要的，或者卖给对方一块"写着 Anthropic 名字的石头"。后者显然更容易，利润也可能更高。</p>
+
+  <p>这个市场的运作逻辑是 SPV（特殊目的实体）的无限嵌套：原始投资者把股份放进一个 SPV → 切分后卖给外部投资人 → 这些投资人再把份额打包进一个新的 SPV → 再切分 → 再卖出。正如 Kane 所说，"SPV 一路嵌套到底"。每一层嵌套都在增加对手方风险——最终持有人与原始股份之间可能隔着三到五层法律实体，根本无法追踪。</p>
+
+  <p>当 Anthropic 和 OpenAI 公开表态要"作废"这些二级交易时，链条最底端的人可能突然发现自己买的 SPV 份额根本对应不上任何真实股份。更糟的是，即使有人从 Forge 这样的正规平台买了份额，再转手到 WhatsApp 群里卖——你完全无从分辨。</p>
+
+  <p>Taylor Monahan 将这描述为一个完整的光谱：一端是 100% 的纯欺诈（WhatsApp 群里的陌生人兜售"人脉资源"），中间是合法持有人私下出售但未经公司批准的灰色地带，另一端是 Forge 这样受监管的二级交易平台。但即使是最正规的平台，也无法阻止买家把份额再转手到灰色市场。</p>
+
+  <blockquote>
+    "你可以通过两种方式满足市场——给他们真正想要的，或者卖给他们一块写着 Anthropic 的石头。后者更容易，利润也更高。"
+    <span class="attr">— Kane Warwick</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>二、Luca 的教训：运营协议里的一行字</h2>
+
+  <p>Luca Netz（Pudgy Penguins CEO）分享了一个亲身经历：Pudgy Penguins 被收购时，实际上有五位联合创始人（对外只说是四位）。种子轮完成后，第五位创始人背着 Luca 开始向一个以"坑创始人和项目方"闻名于业界的投资集团兜售股份。</p>
+
+  <p>Luca 发现后大发雷霆——但问题是他公司的运营协议里当时<b>允许</b>了这种交易。这引出了对 Anthropic 处境的核心追问：Anthropic 的运营协议里是否允许了二级交易？通常这类协议要求董事会批准股份转让。如果协议明确禁止，那 Anthropic 叫停交易在法律上是站得住脚的。但如果协议里存在模糊地带——那 Anthropic 可能要对外部投资者的损失承担法律责任。</p>
+
+  <p>Luca 从这次教训中学到的很直接：在后来创立的 Igloo 公司，运营协议明确规定任何股份转让必须经他本人批准。"你要么跟全程，要么等大家一起退出时再变现。我绝不允许任何人在中间阶段单独套现。"</p>
+
+  <blockquote>
+    "你永远不想做的是 KYC 你的股东吗？你最不想看到的是朝鲜买了 5 亿美元——即使协议允许。"
+    <span class="attr">— Luca Netz</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>三、加密入场：合成资产如何为私有公司创造"连续定价"</h2>
+
+  <p>加密世界为这个灰色市场带来了全新的维度。Kane 区分了三个层次：</p>
+
+  <p><strong>第一层：Pre-Stocks（Solana）</strong>——据称有真实 SPV 做底层包裹的代币，但已经在链上以远超实际融资估值的价格交易。当 Anthropic 实际估值为 8000 亿美元时，Pre-Stocks 上的隐含市值一度达到 1.4 万亿美元——这纯粹是投机溢价。</p>
+
+  <p><strong>第二层：Eventuals（Solana）</strong>——纯合成资产，根本没有任何底层股份。就是买方和卖方之间的纯粹对赌，以预言机价格为锚。</p>
+
+  <p><strong>第三层：永续合约（Hyperliquid）</strong>——这是最激进的。Arthur Hayes 首创的永续合约机制被直接搬到了 Pre-IPO 股权上：永不交割、不需要任何底层资产、纯粹通过资金费率机制实现"持续结算"。做多 Anthropic 和做空 Anthropic 的人互相支付资金费，价格偏离预言机越远，资金费率越高——以此将价格拉回锚定。</p>
+
+  <p>Kane 将这与历史上的"桶子店"（Bucket Shop）做了精彩的类比：1900 年代的美国，普通人开不了证券账户，就去桶子店——你买的不再是密西西比铁路公司的真实股票，而是和店主对赌股票涨跌的一张纸条。这本质上就是合成资产。今天的 Polymarket 和永续合约是同一个逻辑的链上版本。</p>
+
+  <blockquote>
+    "Anthropic 对此毫无控制权。这必将发生。我很确定这就是市场的发展方向——一切都会有连续定价。这就是我们活着的世界。"
+    <span class="attr">— Kane Warwick</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>四、连续定价的噩梦：当员工开始刷"股价"</h2>
+
+  <p>Kane 描述了一个令人不安的假设场景：Anthropic 以 8000 亿美元完成了一轮融资。同时，Hyperliquid 上的 Anthropic 永续合约每天有 50 亿美元的交易量。某天，Anthropic 和特朗普政府发生公开冲突——永续市场从 8000 亿暴跌到 4000 亿。Anthropic 的员工看着自己的纸面财富缩水一半，开始质问："别跟特朗普吵架了，我在变穷！"</p>
+
+  <p>这在传统 Pre-IPO 世界是不可想象的——因为没有实时交易价格，员工只在每 6 个月的新一轮融资中发现自己"变富了"。他们永远在开心的单行道上。但永续合约给全世界提供了一个"Anthropic 的实时价格"——而 Anthropic 对此毫无控制权，也无法阻止。</p>
+
+  <p>这就是加密"泄漏"到现实世界的具体表现：Crypto 逻辑（做一件事，然后你不仅要对付 Discord 里的愤怒大军，你的员工也会因为在代币里领工资而实时"体验贫穷"）正在被强加到传统公司身上——只不过他们甚至没有选择用代币支付工资。</p>
+
+</section>
+
+<section>
+  <h2>五、为什么好公司再也不想 IPO 了</h2>
+
+  <p>这期节目最核心的结构性洞察来自 Kane：过去，如果你需要 10 亿美元做一件事，唯一能提供这种流动性的地方是公开市场。但现在不是了。私募市场有足够多的资金——Sand Hill Road 和主权基金能开出比公开市场更大的支票。</p>
+
+  <p>结果就是激励完全倒挂：</p>
+
+  <p>保持私有的好处：估值只涨不跌（没有公开市场每天标价）、投资者永不抱怨（除非你做 down round）、员工没有实时"记分牌"（每 6 个月发现自己变富了 5%/10%/50%）、不用应付散户和季报压力、不流动性本身就产生估值溢价。</p>
+
+  <p>上市意味着：实时股价（每天被市场审判）、每季财报压力（短期主义）、员工实时看到"变穷了"、散户和短线投机者混入股东名册——而这本质上跟永续合约带来的问题是一样的，只不过发生在纳斯达克上。</p>
+
+  <p>Taylor 简洁地总结了这一点："不流动性有溢价。"Kane 更直接：如果这个趋势持续，"世界上最有价值的公司将成为一家私人公司——到了那一天，市场显然已经坏掉了。"他引用 Bloomberg 专栏作家 Matt Levine 已经讨论十年的观点：公开市场作为主要流动性来源的退位，已经破坏了市场结构。除非政府强制规定公司必须 IPO，否则这个趋势不会逆转。</p>
+
+  <blockquote>
+    "不流动性有溢价。投资者永远开心，因为价格总是涨。员工每隔几个月就发现自己更富了。现在再没有理由去 IPO 了。"
+    <span class="attr">— Kane Warwick</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>六、四月黑客潮：AI 如何改变攻防规则</h2>
+
+  <p>节目下半场的焦点转向了安全。Taylor 报告了一组令人震惊的数字：四月是加密史上最惨的黑客月——仅加密领域就损失了 6.25 亿美元，发生 68 起安全事件（平均每天超过两起）。加上传统领域，总额超过 10 亿美元。</p>
+
+  <p>最令人不安的是 Drift 被黑 2.85 亿美元——Kane 说他"已经完全忘了 Drift 这回事"，因为后续接连发生了太多事件。Helldao 和 Aave 的问题完全占据了注意力。"当你被黑 10 万的当天正好有人丢了 2 亿，你甚至不会被注意到。"</p>
+
+  <p>Google 云安全团队的最新发现更令人担忧：一个由 LLM 生成的 Python 漏洞利用程序成功绕过了某个开源管理工具的双因素认证（2FA）。Google 在大规模利用活动启动之前就将其阻断。Taylor 提出了一个深刻的洞见：攻击者正在滥用被嵌入到浏览器和操作系统中的本地 AI API——不是去 gemini.google.com 打字，而是通过系统级 API 调用本地 Gemini，让它"找出所有攻击面""找出所有私钥"——在设备上实时构造恶意软件。</p>
+
+  <p>Kane 特别担忧的是即将到来的攻击向量："我们还没到系统中存在足够多持续运行的自主 AI Agent 以至于它们可以被劫持的阶段。当这些 Agent 负责编写 99% 的代码时，人类根本不可能审查所有代码——只能靠另外的 Agent 来审查。你得把这些 Agent 放在真正安全的环境里运行，因为如果有人入侵了它，他们就能注入恶意代码和零日漏洞。"</p>
+
+</section>
+
+<section>
+  <h2>七、供应链攻击：开源维护者的软肋</h2>
+
+  <p>Taylor 以 XZ 攻击为例分析了供应链入侵的"慢动作"特性。攻击者通过 GitHub Actions 的复杂操作植入后门，然后恶意代码开始：抓取所有环境变量和 API 密钥 → 以蠕虫方式扩散到所有关联仓库 → 从个人设备窃取数据 → 持续外传到 C2 服务器。这个过程可能持续数天，非停止地缓慢扩散。</p>
+
+  <p>Taylor 指出一个长期被忽视的事实："有人终于意识到了：开源维护者的去中心化本质，和 Crypto 人群一模一样。他们在个人设备上跑代码，没有 CrowdStrike，没有正式安全流程。"很多被攻击的故事都是："哥们半夜被朋友的电话叫醒，发现自己的仓库被黑了，正蠕虫式感染所有人。"</p>
+
+  <p>这些维护者凭着一腔热情维护着现代软件世界依赖的关键组件，但激励机制严重错位。Kane 的结论发人深省："这不是核弹——真正的黑天鹅会是某个疯狂的黑客攻击。我们只是在不断碰运气。"</p>
+
+</section>
+
+<section>
+  <h2>八、安全范式转变：从"防住"到"遏制"</h2>
+
+  <p>针对当前的安全困局，Taylor 提出了一个重要判断："我们正在到达一个点，重点必须放在遏制爆破半径上，而不是试图在前端把所有东西都防住。因为——我们从来就不擅长一次性把所有事情做对。"</p>
+
+  <p>智能合约审计的历史就是最好的证明：人类反复犯同样的错误。新的安全范式必须假设"系统总会在某个点被攻破"，并在此基础上构建防御：分层隔离防止横向移动、外挂的暂停/熔断机制、在数据被外传之前的最后一刻阻断。</p>
+
+  <p>CrowdStrike 的工作方式提供了范例：恶意软件已经落地并开始执行——它去触碰密钥库、抓取环境文件——此时 CrowdStrike 检测到异常行为，立即说"停下来，不准跟网络通信"。结果：即使恶意软件已经进入了你的电脑，黑客也拿不到任何数据。阻止外传，而不是阻止入侵，是更现实的策略。</p>
+
+  <blockquote>
+    "我们得假设系统总会在某个点被攻破。你仍然要尝试把安全做好，但遏制爆破半径才是强制性的——在最后一刻有人介入说'开玩笑的，你不能拿走那些东西'。"
+    <span class="attr">— Taylor Monahan</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>九、AI Agent 安全监控：90 秒 vs 12 小时</h2>
+
+  <p>Kane 分享了一个来自他实际工作的故事，完美展示了 AI Agent 在安全监控中的潜力。Synthetix 的 Solana 账户赞助计划长期被"慢速 draining"攻击困扰——攻击者申请赞助、获得少量 SOL 作为 gas 费，然后在两天内慢慢把钱转走，完全淹没在正常活动中。</p>
+
+  <p>某个周末，一次攻击持续了 12 小时，没有任 何一个人类注意到。Kane 和一位工程师决定试试 AI Agent：他们把所有的数据丢给一个 Agent，让它去找最佳检测方案。Agent 自己分析后提出了一个他们完全没想到的方案：<strong>输入输出的价格差异</strong>是最佳的早期预警指标——他们甚至不知道自己的数据库里已经在追踪这个指标。</p>
+
+  <p>最精彩的部分是回测：Agent 说"好消息是，这个方法每次都检测到了。坏消息是，其中有两次花了大约 90 秒。"Kane 的反应是"你得做得更好啊兄弟"——但 Agent 的逻辑本质上无懈可击：这个攻击持续了 12 小时没有人类发现，而它 90 秒就能抓到。</p>
+
+  <p>不过 Kane 也指出了这个方法的局限性：对于闪电贷这类单笔交易就能完成的攻击，90 秒的检测等于没用——钱在交易上链的那一刻就已经没了。这意味着 DeFi 可能需要根本性的架构改变：在关键步骤之间引入间隔，给检测系统介入的时间。</p>
+
+  <blockquote>
+    "它花了 12 小时人类都没注意到。AI 说'我 90 秒就能抓到'——我说你得做得更好。"
+    <span class="attr">— Kane Warwick</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>十、Circle 发币：上市公司的双轨套利</h2>
+
+  <p>节目的另一个意外话题是 Circle（USDC 发行方，已上市公司）突然宣布 2.2 亿美元的 Arc 代币融资。三位主持人都表示意外——"我以为 IPO 的意义就在于不需要发币了。"</p>
+
+  <p>Luca 的解读非常精辟：Circle 的股票买家和 Arc 代币买家是两个完全不同的群体。股票投资者关心的是传统估值指标，代币投机者关心的是链上激励和叙事。如果一家公司能够同时从两群人手里拿钱——为什么不呢？"凭空创造代币 → 加入资产负债表 → 推高收益 → 股价上涨。如果你有这个杠杆，你会不拉吗？"</p>
+
+  <p>Kane 从行业趋势的角度做了补充：支付网络是 TradFi 最赚钱的生意之一。如果一家公司同时拥有稳定币和底层链，它就能捕获支付层面的全部价值。这背离了 OG 以太坊的"开放协议"理念——但现在就是这样。正如 John Charbonneau 所说，Stripe 和 Circle 建自己的 L1 是"利好以太坊"——在 Kane 看来这是"疯狂级别的自我安慰"。这些链的价值只会流向 Circle 和 Stripe 的股东。</p>
+
+</section>
+
+<section>
+  <h2>十一、链上恢复 vs 法庭系统：Aave / Helldao 案的启示</h2>
+
+  <p>本期最后一个话题涉及一个具有里程碑意义的案件。Arbitrum DAO 在其协议被朝鲜黑客组织（DPRK）攻击后，通过治理流程计划将追回资金返还给受害者。但 Gerstie 律所代表所谓的"受害者权益"向法院申请了临时禁令。</p>
+
+  <p>最新进展是法院裁定 Arbitrum 可以将资金转移给 Aave 用于恢复分配——这让 Arbitrum DAO 不必以 DAO 的身份在美国法院出庭（这本身就是一个巨大的法律灰色地带），而 Aave 的律师可以代表所有用户继续对抗 Gerstie。</p>
+
+  <p>但最令人震惊的是 Gerstie 律所在口头辩论中提出的论点：他们声称每个有所有权主张的人都需要亲自出庭证明身份——"你甚至不知道这些用户是谁。怎么归还？"对 Crypto 社区来说，这简直荒谬绝伦：链上地址本身就是密码学可验证的所有权证明。基于攻击发生时实际链上所有权的 1:1 映射恢复，比任何法院系统能做到的更精确、更公平。如果要求每个人亲自出庭证明 TradFi 身份，反而会排除大量真实的受害者——不是每个人都能出现在美国法院。</p>
+
+  <p>Taylor 说，如果法官真正理解了链上恢复流程的运作方式——基于事实的、透明的、完美的 1:1 映射——"这会非常有趣"。因为这在法庭环境看来是不可能的，但一旦他们意识到这是可能的——"哦，这确实是好技术。"</p>
+
+  <blockquote>
+    "如果法官真正理解了链上恢复流程的运作方式——基于事实的、透明的、完美的 1:1 映射——这会非常有趣。因为这比世界上任何其他恢复方式都好得多。"
+    <span class="attr">— Taylor Monahan</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+
+  <div class="quote-section">
+    <blockquote>
+      "你可以通过两种方式满足市场——给他们真正想要的，或者卖给他们一块写着 Anthropic 的石头。后者更容易，利润也更高。"
+      <span class="attr">— Kane Warwick，论 Pre-IPO 二级市场的本质</span>
+    </blockquote>
+
+    <blockquote>
+      "不流动性有溢价。投资者永远开心，因为价格总是涨。员工每隔几个月就发现自己更富了。现在再没有理由去 IPO 了。"
+      <span class="attr">— Kane Warwick，论上市激励倒挂</span>
+    </blockquote>
+
+    <blockquote>
+      "Anthropic 对此毫无控制权。这必将发生。我很确定这就是市场的发展方向——一切都会有连续定价。这就是我们活着的世界。"
+      <span class="attr">— Kane Warwick，论合成永续合约的不可阻挡性</span>
+    </blockquote>
+
+    <blockquote>
+      "它花了 12 小时人类都没注意到。AI 说'我 90 秒就能抓到'——我说你得做得更好。"
+      <span class="attr">— Kane Warwick，讲 AI Agent 做安全监控的故事</span>
+    </blockquote>
+
+    <blockquote>
+      "我们得假设系统总会在某个点被攻破。你仍然要尝试把安全做好，但遏制爆破半径才是强制性的——在最后一刻有人介入说'开玩笑的，你不能拿走那些东西'。"
+      <span class="attr">— Taylor Monahan，论安全范式转变</span>
+    </blockquote>
+
+    <blockquote>
+      "这不是核弹——真正的黑天鹅会是某个疯狂的黑客攻击。我们只是在不断碰运气。"
+      <span class="attr">— Kane Warwick，论系统性的安全脆弱性</span>
+    </blockquote>
+  </div>
+</section>
+
+<footer>
+  <p>本文基于 Uneasy Money 播客节目整理，原节目由 Kane Warwick、Taylor Monahan 和 Luca Netz 主持。</p>
+  <p>收听完整节目：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3">Uneasy Money on Unchained</a></p>
+  <p style="margin-top:8px;">⚠ 本文中标注为引用的句子均可在节目转录文本中验证。标记为"作者概括"的分析性内容为编者基于节目讨论的延伸。</p>
+</footer>
+
+</article>
+</body>
+</html>

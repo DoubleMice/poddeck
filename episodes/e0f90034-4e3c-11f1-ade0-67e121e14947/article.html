@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>为什么 Arthur Hayes 认为 AI 泡沫破裂会点燃加密牛市</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1e1e1e;
+    background: #fafafa;
+    padding: 0 16px 40px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 48px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  header h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  header .meta span { margin: 0 6px; }
+  .overview {
+    margin-bottom: 48px;
+  }
+  .overview h2 {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr; }
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .card-red { background: #fff5f5; border-left: 4px solid #e53e3e; }
+  .card-red .card-title { color: #c53030; }
+  .card-blue { background: #ebf8ff; border-left: 4px solid #3182ce; }
+  .card-blue .card-title { color: #2b6cb0; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #805ad5; }
+  .card-purple .card-title { color: #6b46c1; }
+  .card-green { background: #f0fff4; border-left: 4px solid #38a169; }
+  .card-green .card-title { color: #2f855a; }
+  .card-yellow { background: #fffff0; border-left: 4px solid #d69e2e; }
+  .card-yellow .card-title { color: #b7791f; }
+  .card-orange { background: #fffaf0; border-left: 4px solid #dd6b20; }
+  .card-orange .card-title { color: #c05621; }
+
+  section {
+    margin-bottom: 40px;
+  }
+  section h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    color: #2d3748;
+  }
+  section h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4a5568;
+  }
+  section p {
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+  blockquote {
+    margin: 16px 0;
+    padding: 14px 20px;
+    border-left: 4px solid #3182ce;
+    background: #ebf8ff;
+    font-style: italic;
+    color: #2d3748;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote .attribution {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #718096;
+  }
+  .gloss {
+    margin: 12px 0;
+    padding: 10px 16px;
+    background: #edf2f7;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4a5568;
+  }
+  .gloss::before {
+    content: "✏️ 作者概括：";
+    font-weight: 600;
+    color: #718096;
+  }
+  .highlight-box {
+    margin: 16px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .highlight-red { background: #fff5f5; border-left: 4px solid #e53e3e; }
+  .highlight-blue { background: #ebf8ff; border-left: 4px solid #3182ce; }
+  .highlight-yellow { background: #fffff0; border-left: 4px solid #d69e2e; }
+  .highlight-green { background: #f0fff4; border-left: 4px solid #38a169; }
+
+  .quotes {
+    margin: 40px 0;
+    padding: 24px;
+    background: #f7fafc;
+    border-radius: 12px;
+  }
+  .quotes h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    border-bottom: none;
+    text-align: center;
+  }
+  .quote-item {
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-left: 4px solid #3182ce;
+    background: #fff;
+    border-radius: 0 8px 8px 0;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .quote-item .quote-text {
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  .quote-item .quote-context {
+    font-size: 13px;
+    color: #718096;
+    font-style: normal;
+  }
+  .quote-item:nth-child(2n) { border-left-color: #e53e3e; }
+  .quote-item:nth-child(3n) { border-left-color: #38a169; }
+  .quote-item:nth-child(4n) { border-left-color: #d69e2e; }
+  .quote-item:nth-child(5n) { border-left-color: #805ad5; }
+  .quote-item:nth-child(6n) { border-left-color: #dd6b20; }
+
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: #a0aec0;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+  }
+  footer a {
+    color: #4299e1;
+    text-decoration: none;
+  }
+  .divider {
+    text-align: center;
+    color: #cbd5e0;
+    margin: 32px 0;
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>为什么 Arthur Hayes 认为<br>AI 泡沫破裂会点燃加密牛市</h1>
+  <div class="meta">
+    <span>Arthur Hayes</span> · <span>Maelstrom CIO</span>
+  </div>
+  <div class="meta">
+    <span>Unchained Podcast</span> · <span>2026 年 5 月</span> · <span>58 分钟</span>
+  </div>
+</header>
+
+<div class="overview">
+  <h2>📌 这期为什么值得听</h2>
+  <div class="cards">
+    <div class="card card-red">
+      <div class="card-title">🔥 战争即通胀</div>
+      美伊战争正在重塑全球供应链，石油、化肥、成品油的物理短缺将迫使各国央行印钱——这对 Crypto 是利好。
+    </div>
+    <div class="card card-blue">
+      <div class="card-title">💵 美元霸权松动</div>
+      主权国家正在觉醒：手里有大量美元国债，但关键时刻买不到航空燃油和粮食。储备资产结构性的迁移已经开始。
+    </div>
+    <div class="card card-purple">
+      <div class="card-title">🤖 AI 泡沫与红皇后效应</div>
+      AI 的 CapEx 是一场永不停歇的军备竞赛——如果你的模型不是最好的，千亿美元立刻归零。两个催化剂随时可能戳破泡沫。
+    </div>
+    <div class="card card-green">
+      <div class="card-title">📈 Crypto 投资逻辑</div>
+      HYPE (Hyperliquid) 的代币经济学、Zcash 的非对称赌注、以及为什么应在"市场最大绝望点"下注。
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>一、战争即通胀 —— Arthur 的核心框架</h2>
+
+  <p>Arthur Hayes 的宏观投资框架可以用一句话概括：<strong>战争是通胀的，尤其是美伊战争。</strong>他将这一轮 Crypto 牛市的逻辑锚定在一个简单的前提上——当 AI 军备竞赛和国防供应链重构同时发生时，没有任何法币能逃脱通胀的命运。</p>
+
+  <div class="highlight-box highlight-blue">
+    三个通胀引擎同时发力：<br>
+    1. <strong>AI 军备竞赛</strong>——各国不计成本砸钱建数据中心、买芯片<br>
+    2. <strong>国防供应链重构</strong>——新管道、新矿山、新运输路线，全是实物需求<br>
+    3. <strong>大宗商品囤积</strong>——各国从"just in time"转向"just in case"
+  </div>
+
+  <p>"无论你同意与否，特朗普做的这些事情——AI 和无人机上的支出、供应链的重新定义——将持续下去，无论战争如何结束。"Hayes 说，"这两件事加在一起，创造了一个通胀环境。央行和商业银行将站出来创造所需信贷。"</p>
+
+  <p>他的分析有一个冷酷而精确的维度区分：欧洲人、美国人和富裕的亚洲人会没事。但如果你在孟加拉国或菲律宾，情况就完全不同了。然而，<strong>市场不关心那些买不起东西的人</strong>——这才是关键。当人们担心化肥运不出霍尔木兹海峡会导致粮食危机时，Hayes 的反问是："你上一次想到布基纳法索或孟加拉国达卡是什么时候？"</p>
+</section>
+
+<section>
+  <h2>二、霍尔木兹海峡：全球化的物理软肋</h2>
+
+  <p>霍尔木兹海峡最窄处只有约 3 公里宽。全球大量石油和化肥必须通过这条水道。伊朗战争打了七八个星期后，Hayes 的观察是：<strong>无论特朗普如何宣称海峡是"开放的"，实际的通行量远不足以供应全球。</strong></p>
+
+  <p>他用一个精彩的故事来阐明物理世界对金融世界的碾压。澳大利亚——一个高度发达的国家——<strong>100% 依赖中国进口成品油</strong>。选择从中国进口是因为便宜一点，而且没人觉得有必要自建炼油厂。战争爆发后，中国在 1 月停止了部分成品油的出口，以确保本国供应。</p>
+
+  <div class="highlight-box highlight-red">
+    结果？澳大利亚突然没有航空燃油了。国际航空公司不敢降落——它们不知道自己是否能获得足够的燃油完成返航。澳大利亚总理不得不亲自飞往新加坡，恳求新加坡总理"不惜一切代价"为他的国民搞到航空燃油。
+  </div>
+
+  <p>Hayes 从这个故事中提纯出了一个让主权储备管理者失眠的问题：</p>
+
+  <blockquote>
+    "你的国债和股票值多少钱，当你的人民连飞机都坐不了的时候？"
+    <span class="attribution">— Arthur Hayes</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>三、主权储备的大重置</h2>
+
+  <p>Hayes 追溯了当前全球金融架构的起源：1997-98 年亚洲金融危机。泰国、马来西亚、印尼借了太多美元，无法偿还，出现了国际收支危机。美联储最终印钱兜底，但教训已经刻进了每一个主权储备管理者的 DNA——<strong>"危机就是缺美元，所以我存越多美元越安全。"</strong></p>
+
+  <p>这导致所有出口导向型亚洲经济体将贸易顺差存成美国国债。企业跟进——国内没有投资机会，美国有——于是更多的美元、更多的美债、更多的美股。整个系统建立在一个假设上：只要我有足够多的美元，我就是安全的。</p>
+
+  <div class="highlight-box highlight-yellow">
+    但这个假设是错的。它完全忽略了物理世界。澳大利亚的航空燃油故事证明：美元买不到一切。伊朗战争正在反复验证这个教训，Hayes 称之为一个"结构性、长期性"的转变——各国不再把储蓄存成美国国债，而是转向黄金、大宗商品和基础设施。
+  </div>
+
+  <p>Hayes 画出的逻辑链是这样的：外资不再买入（或买更少）美国国债 → 甚至卖出已有持仓换取实物资产 → 没有了外资的"无弹性买盘"，美国资产价格下跌、利率上升、政府融资成本增加 → <strong>美联储和财政部必须印足够的钱来对冲这个结构性抛售。</strong></p>
+</section>
+
+<section>
+  <h2>四、"德黑兰收费站"与石油美元的黄昏</h2>
+
+  <p>Hayes 在他另一篇文章"No Trade Zone"中提出了战争的几种可能走向。其中一种正在成为现实——他称之为"德黑兰收费站"（Tehran Tollbooth）。</p>
+
+  <p>在这个情景中，伊朗允许"友好"船只通过海峡，但收取过路费——接受人民币、加密货币付款，甚至让外国央行出售美国国债来换取人民币。Hayes 的结论很直接：<strong>如果这个情景成立，这就是石油美元的终结，以及新全球储备货币（或一篮子货币）的崛起。</strong></p>
+
+  <div class="gloss">
+    美国精英层在这一问题上的分裂。新保守主义派（如 Robert Kagan 在《大西洋月刊》中所写）认为美国遭受了"彻底的失败"，唯一的回应是摧毁伊朗。务实派则认为：帝国很贵——美国中产阶级被掏空，只出口金融——也许让中国分担一部分霸权成本是个好主意。特朗普在这两种立场之间摇摆不定。
+  </div>
+</section>
+
+<section>
+  <h2>五、2026 年 Q1：为什么 Hayes 按兵不动</h2>
+
+  <p>Hayes 解释说，他在 2026 年第一季度几乎什么都没做——他称之为"无交易区"。原因不是战争，而是<strong>AI 通缩的恐惧。</strong></p>
+
+  <p>大型科技公司开始用 AI 工具替代最底层的员工，出现了 10% 到 50% 的人员裁减。这些年收入 $100K-$200K 的知识工人突然无法偿还贷款、无法维持消费。而美国经济高度依赖消费者和消费信贷。</p>
+
+  <p>市场信号支持了他的担忧：软件 ETF (IGV US) 从 2025 年 10 月到战争开始前大幅下跌。比特币跟随下跌。但纳斯达克基本持平。Hayes 的解读是：</p>
+
+  <blockquote>
+    "比特币在说：没有足够的流动性被创造出来。央行们似乎相信 AI 是生产力奇迹，因此不需要印钱。但比特币在说——有通缩事件正在发生。"
+    <span class="attribution">— Arthur Hayes</span>
+  </blockquote>
+
+  <p>"我知道最终会有一场危机，他们会印足够的钱让我回本——但为什么要在此时此刻增加风险敞口？"这就是 Hayes 的 Q1 策略：<strong>等待更明确的信号。</strong></p>
+</section>
+
+<section>
+  <h2>六、红皇后效应：AI 行业的永动机式支出</h2>
+
+  <p>Hayes 引用了香港中文大学和澳门大学一篇关于 AI 行业 CapEx 博弈论的论文。论文提出了"红皇后效应"（Red Queen Effect）的概念——出自《爱丽丝镜中奇遇记》：你必须不断奔跑，才能留在原地。</p>
+
+  <p><strong>传统 CapEx 与 AI CapEx 的根本区别：</strong>建一座工厂——即使竞争对手出了更好的产品，你的工厂仍然有使用价值，不会立刻过时。但在 AI 领域：<strong>最好的模型赢，次好的等于零。</strong></p>
+
+  <div class="highlight-box highlight-red">
+    如果你花了上千亿美元建数据中心、买芯片、训练模型——但如果你的模型不是最好的——没有人会用它。你的千亿 CapEx 立刻归零。因此你必须不断花钱来追逐前沿模型。这创造了一种"永动机"式的支出循环，它不可能永远持续。
+  </div>
+
+  <p>市场现实已经部分验证了这一点。Hayes 指出，Anthropic 的收入在过去不到一年内增长了约 10 倍，因为 Claude 确实好用——"如果 Claude 稍微好一点，所有人都用 Claude，就没人用 OpenAI。"需求是真实的，但代价也是真实的。韩国三星的盈利暴涨，KOSPI 和日经指数飙升，台湾芯片股被疯狂追捧——"中美都在砸钱搞 AI，央行都在印钱，商业银行都在放贷。"<strong>每个人都在这场印钱与融资 AI 战争的狂欢中赚钱。</strong></p>
+</section>
+
+<section>
+  <h2>七、泡沫破裂的两个催化剂</h2>
+
+  <p>Hayes 认为 AI 泡沫的终结不会来自某个宏观数据点的恶化，而会来自两个更具体的触发事件。</p>
+
+  <h3>催化剂一：巨型 IPO 或并购惨败</h3>
+
+  <p>历史上，每一轮狂热通常以某种标志性事件结束——一笔大到荒谬的 IPO 或并购，其底层财务假设离谱到市场根本无法消化。股票上市价 $100，第二天就跌到 $50。<strong>人们开始问问题：我们花的那万亿 CapEx 真的值吗？产生了足够多的用例吗？我为什么持有这家市盈率 100 万倍的公司？</strong></p>
+
+  <p>Hayes 说："我不知道什么时候会发生，但在那一刻它会是显而易见的。这个巨型并购、这个巨型 IPO——它登场了，然后彻底扑街。"</p>
+
+  <h3>催化剂二：政治反噬</h3>
+
+  <p>Hayes 画出了一条通往 2028 年美国总统大选的政治路径。关键数据：<strong>90% 的美国人并不持有大量股票。</strong>是的，某些记忆芯片公司的股票一夜之间涨了 40%——但大多数美国人感受到的是：电价在涨（AI 数据中心吞噬了电力）、建筑工人工资在涨（所有人都在抢建数据中心）、原材料在涨——<strong>而他们也同时担心自己会被 AI 裁掉。</strong></p>
+
+  <div class="highlight-box highlight-yellow">
+    民主党将拿到一副天然的政治好牌。"我们反 AI，我们站在工人一边，我们站在人性一边。"无论"负责任的 AI"具体指什么，这不重要——它是一句有效的政治口号。而投资者——无论你给哪边多少胜率——都必须降低风险，因为如果民主党拿下国会，这些口号可能变成政策。Hayes 举例：某韩国领导人一夜之间提出 AI 税提案，KOSPI 直接跌了 5%。
+  </div>
+</section>
+
+<section>
+  <h2>八、AI 通缩崩盘：一场堪比 2008 的银行危机</h2>
+
+  <p>这是 Hayes 论点中最激进也最关键的一环。他认为 AI 对经济的短期冲击是一场<strong>"时间错配"</strong>：AI 的生产力红利还没有传递到被替代的工人身上，但他们的消费能力已经被摧毁了。</p>
+
+  <p>他画了一个具象的场景：一个年收入 $150K-$200K 的 Coinbase 员工被裁。失业救济金每年最多约 $40K。他不再买 Sweetgreen 沙拉，不再买 $10 的星巴克，供不起车贷，可能还不上信用卡。<strong>所有这些债务，都是银行资产负债表上的资产。</strong></p>
+
+  <div class="highlight-box highlight-red">
+    当足够多的知识工人同时经历这个收入断崖，银行的资产端就会出现一个不断扩大的窟窿。Hayes 将这个情景与 2008 年次贷危机相提并论。区别在于：这次不是因为不负责任的房贷——而是因为 AI 的生产力增益没有足够快地传递到普通工人身上。
+  </div>
+
+  <p>AI 知识工作的智能化浪潮与建立在"GDP 不断增长"假设之上的分数银行体系直接冲突。短期内的大规模失业和消费萎缩会摧毁银行的资产端——除非央行印足够多的钱来填补这个洞。</p>
+
+  <p>Hayes 承认，长期来看 AI 可能走向马斯克描绘的乌托邦：机器人让劳动力成本趋近于零，AI 让智力成本趋近于零，人类解放出来做艺术、运动和社交。但要在短期痛苦和长期乌托邦之间架一座桥，"我们可能需要某种对控制这些智能或机器人的实体征税的机制。否则，我们会出现极端的贫富不均，引发非常大的社会动荡。"</p>
+</section>
+
+<section>
+  <h2>九、美联储主席是谁，其实不重要</h2>
+
+  <p>当话题转向 Kevin Warsh 可能被确认为下一任美联储主席时，Hayes 泼了一盆冷水：<strong>"人们过于关注美联储主席是谁了。"</strong></p>
+
+  <p>所有的"缩表"讨论实际上都是监管调整——让商业银行愿意买更多国债、做更多回购操作。美联储可以说："银行在做了，我们就不用做了。"但商业银行的资产负债表扩张刚好对冲了美联储的缩表——<strong>对流动性的净影响是零。</strong></p>
+
+  <div class="gloss">
+    Hayes 的看法是，真正需要关注的是战争经济和 AI 军备竞赛如何被融资——中美两国的商业银行如何在政府的驱使下为 AI 和战争创造信贷。那才是真正推动流动性的力量。Warsh 可以站在台上大谈硬通货、美联储独立性——在实际的美元市场里，这些都不重要。
+  </div>
+</section>
+
+<section>
+  <h2>十、亚洲：愤怒的体育场和赚钱的供应链</h2>
+
+  <p>Hayes 分享了一个朋友的香港七人制橄榄球赛见闻：美国男子队上场时，<strong>整个体育场都在嘘他们。</strong></p>
+
+  <blockquote>
+    "亚洲的情绪是：美国把这摊事搞砸了，我们不知道为什么，但我们全都要遭殃。"
+    <span class="attribution">— Arthur Hayes 转述亚洲的普遍感受</span>
+  </blockquote>
+
+  <p>谁会遭殃？不是美国人——美国人不会挨饿、不会缺油。是 Hayes 在菲律宾的女佣的家人，是他在孟加拉国给他盖公寓的建筑工人的家人。<strong>这些国家的人民承担了战争的真正代价，却没有任何话语权。</strong></p>
+
+  <p>但当话题转向中美 AI 竞争时，亚洲的态度完全不同——<strong>所有人都在赚钱。</strong>三星的季度盈利暴涨到一个"令人难以置信的数字"，KOSPI 和日经都在涨，台湾芯片股被追捧。"中美都在花钱搞 AI，央行都在印钱，商业银行都在放贷——太好了，继续买我们的东西吧。"</p>
+
+  <p>Hayes 对 Crypto 交易者的结论是：亚洲情绪对市场的直接影响不大——因为<strong>最终 Crypto 只是流动性游戏。</strong>只要印钱继续，Crypto 就涨。</p>
+</section>
+
+<section>
+  <h2>十一、HYPE：永续合约之子的完美代币经济学</h2>
+
+  <p>Hayes 是永续合约（Perpetual Swap）的发明者——他在 BitMEX 创造了这个金融产品。现在他看着自己创造的金融工具被 Hyperliquid 推向了新的高度，而且显然感到自豪。</p>
+
+  <p>他对 HYPE 的投资逻辑可以拆解为三个层次。</p>
+
+  <p><strong>第一，代币经济学。</strong>没有大规模 VC 预售（避免了抛售悬空），向交易者大规模空投。最关键的是——<strong>97% 的收入用于回购 HYPE 代币。</strong>Hayes 对此的评论简短而有力："如果你赚钱了，就必须把钱还给持币人。没有商量的余地。"团队在解锁方面也表现出了极高的克制——链上数据显示，实际卖出的比例只有允许出售量的 1%-3%。</p>
+
+  <p><strong>第二，真实交易量。</strong>Hayes 用 ADV（日均交易量）除以 OI（未平仓量）来评估一个交易所的有机程度。这个比率越低，交易量越真实——因为 OI 的增长意味着有人投入了真金白银来持仓。Hyperliquid 的 ADV/OI 在同行中是最低的。他不能说 100% 的交易量都是真实的，但可以说它是"所有竞争对手中最真实的"。</p>
+
+  <p><strong>第三，周末交易。</strong>这是 Hayes 最看重的一点。特朗普喜欢在周五晚上市场关闭后搞事情——因为此时没有市场信号可以约束他的行为。但 Hyperliquid 改变了这个游戏——原油价格在周末交易，标普 500 和纳斯达克的永续合约在周末带杠杆交易。<strong>任何有互联网连接的人都可以对周末发生的事件表达市场观点。</strong>这改变了全球价格发现的方式，而这些市场比 Crypto 本身大得多。</p>
+
+  <div class="highlight-box highlight-green">
+    Hayes 对 Hyperliquid 的最终判断：如果它成为世界上最重要的价格发现场所——因为最多零售交易者在这里交易——那么作为交易所，"手续费收入的上限是天空"。HYPE 从上市价约 $3 涨到了 $60，而且活过了 Lyra、Aevo、EdgeX 等竞品的"零费率"攻击——"在激励消失后，HYPE 作为真实价格发现场所的韧性就显现了。"
+  </div>
+</section>
+
+<section>
+  <h2>十二、Zcash、Near 与隐私的最后一公里</h2>
+
+  <p>Hayes 对隐私币的看法有两个层次。<strong>第一层：Zcash 是他的主要隐私币仓位，甚至可能是他除比特币之外最大的持仓。</strong></p>
+
+  <p>他认为 Zcash 的密码学在隐私保护方面是最安全的。他对自己的判断保持谦逊——"我不是密码学家，无法给出超级聪明的解释"——但通过阅读大量材料、与大量从业者交流，他得出的结论是 Zcash 是最好的选择。</p>
+
+  <p><strong>核心论点：在 AI、大型科技公司和大型政府的时代，去匿名化已经变得轻而易举。</strong>AI 可以做出一千年人类都无法做出的关联分析——隐私的需求只会增长。而 Zcash 和 Monero 相对于比特币的估值处于"非常非常低"的水平，这是一个"极其非对称"的赌注。</p>
+
+  <div class="highlight-box highlight-blue">
+    一个出人意料的观点：Hayes 认为比特币不应该添加隐私功能。他的逻辑是：比特币应该保持非常保守——它是一种货币，它服务的使用场景它做得非常好、非常安全——一旦开始"修修补补"，价值主张就会被稀释。让专为隐私设计的链去做隐私的事，比特币保持简单和强韧。
+  </div>
+
+  <p><strong>第二层：Near + Zodl = 匿名跨链支付的最后一公里。</strong>Hayes 说 Near 是他"下一个最喜欢的 Shitcoin"——不是因为 AI 叙事，而是因为 Zodl 应用（他是投资者）。</p>
+
+  <p>技术链条是这样的：持有屏蔽 Zcash → 用 Zodl 发起一笔交换 → 对方收到任何链上的任何代币（比如 Tron 上的 USDT 或比特币网络上的 BTC）→ <strong>这笔交易不会追溯到你的身份。</strong>这个过程中使用了 Near 和 Tens 协议。每一次匿名交换，Near 协议都收取少量费用。如果 Zodl 的交易量增长，Near 协议的收入增长，Near 从通胀协议变成通缩协议——<strong>"通缩将使价格火箭式上涨。"</strong></p>
+</section>
+
+<section>
+  <h2>十三、DeFi 安全：不是代码，是人的问题</h2>
+
+  <p>2026 年 4 月是 Crypto 的"黑客月"——大量协议被攻击，包括曾排名第一的 DeFi 协议 Aave。Hayes 的诊断非常直白：<strong>根本原因不在代码，而在人的流程。</strong></p>
+
+  <div class="highlight-box highlight-red">
+    "团队在'便利性'和'安全性'之间做了一个生活选择。有些团队选择让生活简单一点——代价是安全架构存在更多单点故障。然后他们被攻击了。"
+  </div>
+
+  <p>他特别提到"1-of-1 多重签名"——一个签名就可以改变一切。Hayes 的建议是："如果一个项目告诉你它用的是 1-of-1 多签？<strong>赶紧跑。</strong>"</p>
+
+  <p>对投资者——尤其是 VC 这样的专业受托人——Hayes 的建议是：你不需要问炫技的技术问题。你需要问关于<strong>人的流程</strong>的问题：谁来批准变更？多签结构是怎样的？你们在便利和安全之间做了什么样的取舍？如果团队无法清晰地回答这些问题，"被黑是他们自己的选择。"</p>
+</section>
+
+<section>
+  <h2>十四、Maelstrom 的逆向策略：在最绝望时下注</h2>
+
+  <p>节目的最后，Hayes 分享了 Maelstrom 的最新动态。他们即将完成首个锚定投资者的募资。</p>
+
+  <p>Hayes 认为时机完美。当他第一次在节目上谈论 VC 投资时，创始人的估值预期比现在高得多——"这太好了。"现在是市场的"最大绝望点"：机构投资者要么只敢买 MicroStrategy，要么完全不敢碰 Crypto；DeFi 黑客事件让大量参与者离开赛道；VC 份额抛售让好公司的估值一降再降。</p>
+
+  <blockquote>
+    "这就像我在 2023 年的感觉——我们在 VC 这边的早期阶段投资，开始在完美的时机部署资金：最大看空、最大幻灭、山寨币投资情绪最冰点的时候。"
+    <span class="attribution">— Arthur Hayes</span>
+  </blockquote>
+
+  <p>Hayes 的判断是：当潮水转向——比特币涨到 20 万、ETH 回到 3000 或 4000 以上——人们会重新涌入这个赛道。而在此之前建立仓位的人，将获得最好的回报。</p>
+</section>
+
+<div class="quotes">
+  <h2>🗣️ 核心金句</h2>
+
+  <div class="quote-item">
+    <div class="quote-text">"Wars are inflationary."</div>
+    <div class="quote-context">— Hayes 的核心框架。接下来的 AI 军备竞赛和供应链重构只会加剧这个趋势。</div>
+  </div>
+  <div class="quote-item">
+    <div class="quote-text">"Great, I have a lot of dollars, but they don't buy me anything. So why do I have these dollars?"</div>
+    <div class="quote-context">— 澳大利亚航空燃油危机引发的主权储备反思。美元不再是"万能钥匙"。</div>
+  </div>
+  <div class="quote-item">
+    <div class="quote-text">"I don't care what Trump said, I don't care what the IRGC said in Iran — let me see what the oil market says."</div>
+    <div class="quote-context">— Hayes 的市场信号框架。WTI 期货才是特朗普真正的约束条件。</div>
+  </div>
+  <div class="quote-item">
+    <div class="quote-text">"If the music's playing, I gotta dance."</div>
+    <div class="quote-context">— 引用 Chuck Prince 的名言解释他在 AI 泡沫中的策略：知道自己不理性，但舞还没停。</div>
+  </div>
+  <div class="quote-item">
+    <div class="quote-text">"97% of revenue, they take it and they buy back the HYPE token."</div>
+    <div class="quote-context">— Hyperliquid 代币经济学的核心：收入几乎全部返还给持币人。</div>
+  </div>
+  <div class="quote-item">
+    <div class="quote-text">"I believe that they're always going to print enough money, and that's my investment thesis for my entire portfolio."</div>
+    <div class="quote-context">— Hayes 的全部投资逻辑：不管发生什么，最终都是印钱。</div>
+  </div>
+</div>
+
+<footer>
+  <p>
+    原文播客：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8609872215.mp3">Unchained Podcast · Arthur Hayes · 2026 年 5 月</a>
+  </p>
+  <p style="margin-top:8px;">
+    🤖 由 PodDeck 自动生成 · 文章内容为 AI 对播客对话的概括，不构成投资建议
+  </p>
+</footer>
+
+</article>
+</body>
+</html>

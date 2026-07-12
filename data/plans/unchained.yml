@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-12T04:17:30.261Z
+refreshed_at: 2026-07-12T18:21:39.789Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 94
-done: 0
-pending: 6
-needs_transcript: 88
+done: 3
+pending: 4
+needs_transcript: 87
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -104,8 +104,12 @@ episodes:
       📺 59:20 The WSJ claim that Polymarket paid creators to stage fake winning bets
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-12T18:21:41.525Z
+    transcript_job_id: d53020bcecea43b98b4c177b7ec5f521,fac96312ef0642219879c4348b2cfc95,f3eb5c79e28340dbab59b988e4205d81,28f18855d6a849d1a24d0e0d77d5d684,1fe9738a9a5f4efc83d43bb784dcefd5
+    transcript_completed_at: 2026-07-12T18:24:47.550Z
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     guid: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
@@ -366,7 +370,7 @@ episodes:
       ⚖️ 1:06:35 Gerstein lawyers' absurd argument in the Aave/Arbitrum/KelpDAO case
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 0d94866231964502a9151fdc9b97f2ab,e0eeb5b4753841b7959a5906d5817b68,e318862447d348fb9892eab9b5c49d85,fcff6a4210104e538f48ae736c12296f,bb3dda65eb2f4c7e91af9b3bfa28599a,b6cd178431714614babdab6b0729630a
@@ -475,7 +479,7 @@ episodes:
       🏢 53:12 Maelstrom update: fundraising and why now is the right time to deploy
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: e836866ec4b741e99f9d0b3274eb4527,e7ed06a725994ce8b6c332bdacf141d0,7a639c79efa94d12848ac7b49f678a8d,871d12ef789e4f5a816da0ca344260de
@@ -3841,8 +3845,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5604,8 +5607,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
