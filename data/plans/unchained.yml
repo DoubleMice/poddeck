@@ -1,115 +1,15 @@
 source: unchained
-refreshed_at: 2026-07-12T18:21:39.789Z
+refreshed_at: 2026-07-13T04:19:58.345Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 94
-done: 3
+total_candidates: 91
+done: 0
 pending: 4
 needs_transcript: 87
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 9bfc4610-717a-11f1-8775-bb9c48b81924
-    guid: 9bfc4610-717a-11f1-8775-bb9c48b81924
-    title: "Ex-Ethereum Foundation Researchers Launched Their Own Lab: Uneasy Money"
-    duration: 4297
-    published: Fri, 26 Jun 2026 16:18:00 -0000
-    published_sort: "20260626"
-    first_seen_at: 2026-06-27T04:28:17.558Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1672226994.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1672226994.mp3
-    image: https://megaphone.imgix.net/podcasts/9bfc4610-717a-11f1-8775-bb9c48b81924/image/2f13168b4718be5d59d6325c65d1cd43.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      An anti-MEV activist spent weeks building 66 fake contracts to trap the sandwich bot jaredfromsubway.eth. Then
-      jared's operators did the one thing nobody expected.
-
-
-      ========================================================
-
-
-      Thank you to our sponsors!
-
-
-      Cape: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's privacy-first
-      mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33% off your
-      first six months at https://cape.co/unchained (use code: UNCHAINED).
-
-
-      ========================================================
-
-
-      A new R&D lab called Ethlabs has split from the Ethereum Foundation, backed by Bitmine and Joe Lubin. Its first
-      stated goal is solving a '15 minute finality problem' that none of the hosts can quite explain the point of.
-
-
-      Kain Warwick, Taylor Monahan, and Luca Netz ask whether a breakaway staffed largely by ex-EF people can really
-      escape the EF's habits, or just rebuild a smaller version of them.
-
-
-      Then the conversation turns to fomo's $75M raise from non-crypto VCs, and why a trading app that never calls
-      itself a wallet may have cracked the onboarding flow the rest of crypto keeps getting wrong.
-
-
-      The hosts also trace a CryptoPunks judge ordering a self-represented plaintiff to handwrite filings to stop the AI
-      slop, the anti-MEV activist who trapped sandwich bot jaredfromsubway.eth with 66 fake contracts, and the WSJ's
-      claim that Polymarket paid creators to stage fake winning bets.
-
-
-      Hosts:
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, CEO of Pudgy Penguins
-
-
-      Timestamps
-
-
-      🧪 02:06 Ethlabs breaks from the EF: what the new R&D lab is actually for
-
-
-      🤔 03:57 Why the 'fifteen minute finality' framing baffles the hosts
-
-
-      📈 15:40 fomo's $75M raise and why a no-token trading app pulled it off
-
-
-      🧱 21:45 The wallet lesson: why building for trading beats building for custody
-
-
-      💙 30:48 Cape: Get 33% off your first six months at https://cape.co/unchained
-
-
-      ⚖️ 31:44 The CryptoPunks lawsuit where a judge ordered AI-slop filings handwritten
-
-
-      🥪 41:04 What a sandwich bot is and why jaredfromsubway.eth became infamous
-
-
-      🪤 45:34 How an anti-MEV activist trapped Jared with 66 fake token contracts
-
-
-      🏛️ 50:46 Why Jared running to the courts under the CFAA makes no sense
-
-
-      😤 56:36 Kain on the exploiter who cries foul when someone finally steals from him
-
-
-      📺 59:20 The WSJ claim that Polymarket paid creators to stage fake winning bets
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-12T18:21:41.525Z
-    transcript_job_id: d53020bcecea43b98b4c177b7ec5f521,fac96312ef0642219879c4348b2cfc95,f3eb5c79e28340dbab59b988e4205d81,28f18855d6a849d1a24d0e0d77d5d684,1fe9738a9a5f4efc83d43bb784dcefd5
-    transcript_completed_at: 2026-07-12T18:24:47.550Z
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     guid: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
@@ -276,215 +176,6 @@ episodes:
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
-  - id: 268089a0-4f38-11f1-9a58-ff1b070f08af
-    guid: 268089a0-4f38-11f1-9a58-ff1b070f08af
-    title: "Uneasy Money: Why the Broken Pre-IPO Secondary Markets Won't Be Fixed Anytime Soon"
-    duration: 4571
-    published: Wed, 13 May 2026 18:41:00 -0000
-    published_sort: "20260513"
-    first_seen_at: 2026-06-16T01:06:35.781Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1117668986.mp3
-    image: https://megaphone.imgix.net/podcasts/268089a0-4f38-11f1-9a58-ff1b070f08af/image/796813f58062aea5e679cd32b7b3068f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Anthropic is voiding secondary market trades. Who gets hurt — WhatsApp scammers, Forge buyers, or the founders?
-      Plus: why continuous synthetic pricing is coming for every pre-IPO company.
-
-
-      Thank you to our sponsors!⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
-
-
-      Multichain Advisors: Get help navigating TGEs, go‑to‑market, BD and partnerships, capital markets advisory, PR,
-      media placements, KOL activations and more at multichainadv.com.
-
-
-      Coinbase: Get 20% off the first year of your Coinbase One annual plan at coinbase.com/unchained.
-
-
-      Anthropic and OpenAI are moving to void secondary market trades — and Kain, Tay, and Luca think that's only going
-      to work if they're serious about it, which means a lawsuit is probably coming.
-
-
-      This week on Uneasy Money they trace the full anatomy of the pre-IPO SPV fraud wave, explain why synthetic
-      perpetual markets will eventually price every in-demand private company continuously whether founders want it or
-      not, and dig into the latest AI hacks. Tay breaks down how attackers are now using local on-device Gemini APIs to
-      construct malware on the fly, and Kain shares the story of an agent that caught a slow-drain attack in 90 seconds
-      that humans missed for 12 hours.
-
-
-      Luca explains why Circle's Arc token is a brilliant move for Circle equity holders even if it changes nothing for
-      ETH or Solana. Plus: the Aave/Kelp court update and why the Gerstein lawyers' argument that every victim needs to
-      show up in court is fundamentally incompatible with how onchain recovery works.
-
-
-      Hosts:
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Founder of Infinex and Synthetix
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Security Expert
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Luca Netz⁠⁠⁠⁠, CEO of Pudgy Penguins
-
-
-      Timestamps
-
-
-      📉 0:00 Intro: the Anthropic/OpenAI SPV daisy chain and the 'rocks with Anthropic written on them' problem
-
-
-      📋 4:31 When Luca faced a situation similar to Anthropic’s with Pudgy Penguins
-
-
-      🧱 7:12 Why this shows the secondary SPV market is broken, even catching legit platforms like Forge
-
-
-      🔗 13:11 How onchain synthetic pre-IPO markets, like PreStocks and Ventuals on Solana, work
-
-
-      🕹️ 24:54 The end game for Anthropic/OpenAI with these secondary SPVs
-
-
-      🚫 29:52 Why pre-IPO companies have no incentive to IPO — and why that breaks markets
-
-
-      38:01 ⛓️ : Multichain Advisors: Get help navigating TGEs, go‑to‑market, BD and partnerships, capital markets
-      advisory, PR, media placements, KOL activations and more at multichainadv.com.💙 38:40 Coinbase: Get 20% off the
-      first year of your Coinbase One annual plan at coinbase.com/unchained.
-
-
-      💥 40:37 Google disrupts AI-mediated attack and how local Gemini APIs have greatly increased surface attack area
-
-
-      🤖 50:05 Why Kain is bullish on continuous monitoring by agents for slow drain attacks
-
-
-      ⭕ 59:14 Why members of the crew are confused/bullish/skeptical on Circle's $220M Arc token presale
-
-
-      📈 1:00:51 Is Arc bullish Ethereum? Kain says Circle equity holders win, not ETH bags
-
-
-      ⚖️ 1:06:35 Gerstein lawyers' absurd argument in the Aave/Arbitrum/KelpDAO case
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 0d94866231964502a9151fdc9b97f2ab,e0eeb5b4753841b7959a5906d5817b68,e318862447d348fb9892eab9b5c49d85,fcff6a4210104e538f48ae736c12296f,bb3dda65eb2f4c7e91af9b3bfa28599a,b6cd178431714614babdab6b0729630a
-    transcript_submitted_at: 2026-06-23T18:48:31.708Z
-    transcript_completed_at: 2026-06-23T18:53:48.033Z
-  - id: e0f90034-4e3c-11f1-ade0-67e121e14947
-    guid: e0f90034-4e3c-11f1-ade0-67e121e14947
-    title: Why Arthur Hayes Thinks the AI Bubble Bursting Could Spark a Crypto Bull Market
-    duration: 3473
-    published: Tue, 12 May 2026 18:44:00 -0000
-    published_sort: "20260512"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8609872215.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8609872215.mp3
-    image: https://megaphone.imgix.net/podcasts/e0f90034-4e3c-11f1-ade0-67e121e14947/image/0054001c1b952d75d1777d96475629ca.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Arthur Hayes sees one force driving markets right now: governments printing money to finance AI and war. He
-      explains why that ends with Bitcoin much higher — and what could derail it.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-
-      ⁠Coinbase One⁠: Get 20% off the first year of your Coinbase One annual plan at ⁠coinbase.com/unchained⁠.
-
-
-      ========================================================
-
-
-      Maelstrom CIO Arthur Hayes called the Tehran toll booth scenario in writing — and now it's playing out. Sovereign
-      nations are waking up to the fact that dollar assets don't buy oil when the strait is closed.
-
-
-      On this episode, Hayes joins Laura Shin to explain why the structural unwinding of petrodollar recycling forces
-      the Fed to print, why an AI deflationary bust could rival 2008 in severity before central banks step in, and why
-      that path ends with Bitcoin substantially higher.
-
-
-      He also breaks down his current highest-conviction positions: Hyperliquid, Zcash, and NEAR, and explains why he's
-      deploying into what he calls maximum disillusionment in private crypto equity.
-
-
-      Host:
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-
-      Guests:
-
-
-      Arthur Hayes — CIO, Maelstrom
-
-
-      Timestamps
-
-
-      🚀 0:00 Why Arthur thinks all wars, including the Iran War, are inflationary
-
-
-      🌍 3:01 How the Iran war is causing demand for US treasuries to decline
-
-
-      💙 10:17 Get 20% off the first year of your Coinbase One annual plan at coinbase.com/unchained
-
-
-      🪖 12:18 How the Iran War is eroding the dominance of the petrodollar
-
-
-      📊 16:11 Why Arthur watches WTI futures — and when 'all hell breaks loose'
-
-
-      ⏸️ 18:16 Why Arthur considered Q1 “a no-trade zone” and his approach to Q2
-
-
-      🏦 20:20 Kevin Warsh as Fed chair: why Arthur says he's a neutral variable
-
-
-      🌏 22:43 How Asia perceives the Iran war and the US-China AI race
-
-
-      🤖 26:28 Two catalysts that Arthur believes could end the AI bull market
-
-
-      💥 31:42 What Arthur sees as a coming AI agentic deflationary bust
-
-
-      😂 36:32 How Arthur actually invests in AI stocks: buy first, research later
-
-
-      🔵 38:42 The Hype thesis: why Hyperliquid got tokenomics right
-
-
-      ⚖️ 45:11 Why Zcash is Arthur's largest position outside Bitcoin
-
-
-      🔗 48:24 NEAR as the next shitcoin: the Zcash-Near integration thesis
-
-
-      🔐 50:26 On-chain risk, the Kelpout hack, and what teams get wrong
-
-
-      🏢 53:12 Maelstrom update: fundraising and why now is the right time to deploy
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: e836866ec4b741e99f9d0b3274eb4527,e7ed06a725994ce8b6c332bdacf141d0,7a639c79efa94d12848ac7b49f678a8d,871d12ef789e4f5a816da0ca344260de
-    transcript_submitted_at: 2026-06-23T18:53:48.214Z
-    transcript_completed_at: 2026-06-23T18:57:35.232Z
   - id: 58e92bbe-4f37-11f1-8faf-2342ff572b86
     guid: 58e92bbe-4f37-11f1-8faf-2342ff572b86
     title: "DEX in the City: Will the CLARITY Act Pass? Three Crypto Lawyers Give Their Odds"
@@ -3845,7 +3536,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5607,7 +5299,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
