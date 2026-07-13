@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CLARITY Act 能否通过？三位加密律师的深度分析 — PodDeck</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    color: #1a1a2e;
+    background: #f8f9fa;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    background: #fff;
+    min-height: 100vh;
+  }
+  header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    color: #1a1a2e;
+  }
+  .meta {
+    font-size: 0.9rem;
+    color: #868e96;
+  }
+  .meta span { margin: 0 0.5rem; }
+
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid #e9ecef;
+    color: #1a1a2e;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.5rem;
+    color: #343a40;
+  }
+  p {
+    margin: 0.8rem 0;
+    color: #343a40;
+  }
+
+  /* Topic cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+  }
+  .card {
+    padding: 1rem 1.15rem;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+  .card strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.98rem;
+  }
+  .card-blue  { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .card-yellow{ background: #fff9db; border-left: 4px solid #f08c00; }
+  .card-purple{ background: #f3f0ff; border-left: 4px solid #7048e8; }
+  .card-orange{ background: #fff4e6; border-left: 4px solid #e8590c; }
+  .card-red   { background: #fff0f0; border-left: 4px solid #c92a2a; }
+
+  /* Quote blocks */
+  .quote {
+    margin: 1.25rem 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid #868e96;
+    background: #f8f9fa;
+    font-style: italic;
+    border-radius: 0 6px 6px 0;
+  }
+  .quote .attr {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    font-style: normal;
+    color: #868e96;
+  }
+  .quote-blue  { border-left-color: #1971c2; background: #e7f5ff; }
+  .quote-green { border-left-color: #2f9e44; background: #ebfbee; }
+  .quote-yellow{ border-left-color: #f08c00; background: #fff9db; }
+  .quote-red   { border-left-color: #c92a2a; background: #fff0f0; }
+  .quote-purple{ border-left-color: #7048e8; background: #f3f0ff; }
+  .quote-orange{ border-left-color: #e8590c; background: #fff4e6; }
+
+  /* Highlight box */
+  .highlight-box {
+    margin: 1.25rem 0;
+    padding: 1rem 1.25rem;
+    background: #e7f5ff;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    border-left: 4px solid #1971c2;
+  }
+
+  /* Kicker / context */
+  .kicker {
+    font-size: 0.85rem;
+    color: #868e96;
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.82rem;
+    color: #868e96;
+    text-align: center;
+  }
+  footer a { color: #1971c2; }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container { padding: 1rem 1rem 3rem; }
+    h1 { font-size: 1.4rem; }
+    .cards { grid-template-columns: 1fr; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>CLARITY Act 能否通过？三位加密律师的深度分析</h1>
+  <div class="meta">
+    Unchained Podcast · DEX in the City · 2026 年 5 月
+  </div>
+  <div class="meta" style="margin-top:0.25rem">
+    嘉宾：Josh Freeze (GSR 首席法务与战略官) · V (Veda Labs 联合创始人) · KK (Starkware)
+  </div>
+</header>
+
+<section>
+  <p>
+    2026 年 5 月的一个普通早晨，三位加密律师的播客录制计划被一份突如其来的 300 页文件彻底打乱——CLARITY Act 新草案发布了。在接下来的近一个小时里，GSR 的首席法务官 Josh Freeze、Veda Labs 的联合创始人 V、以及主持人 KK 从各自截然不同的立场出发，给出了三个相差悬殊的通过概率判断：35%、45%、接近 90%。
+  </p>
+  <p>
+    这期节目之所以值得关注，不仅因为它触及了加密行业等待多年的"证券还是商品"这一终极问题，更因为它捕捉到了一个历史性的转折点：SEC 正在从执法转向规则制定，TradFi 正在从回避转向全面入场，而国会两党对加密市场结构立法的认真程度前所未有。三位法律专业人士的对话，比任何一篇政策分析文章都更清晰地揭示了——CLARITY Act 离通过究竟还有多远，以及它为什么如此重要。
+  </p>
+</section>
+
+<section>
+  <h2>为什么这期节目值得关注</h2>
+  <div class="cards">
+    <div class="card card-blue">
+      <strong>300+ 页新草案</strong>
+      节目录制当天早晨刚刚发布，Markup 本周即开始——这是立法推进最关键的阶段。
+    </div>
+    <div class="card card-green">
+      <strong>三重视角</strong>
+      做市商法务官、监管辩护律师、DeFi 建设者——三种截然不同的立场给出了 35% 到 90% 的概率判断。
+    </div>
+    <div class="card card-yellow">
+      <strong>开发者保护</strong>
+      BRCA 修正案加入"特定意图"标准，对非托管服务提供者和开发者是一个实质性信号。
+    </div>
+    <div class="card card-purple">
+      <strong>TradFi 全面入场</strong>
+      JP Morgan、Morgan Stanley、BlackRock 正在全面招聘和布局——Josh 称之为"史上最嘈杂的熊市"。
+    </div>
+    <div class="card card-orange">
+      <strong>SEC 监管转向</strong>
+      主席 Atkins 的演讲明确释放信号：从"执法驱动"转向为链上市场量身定制规则。
+    </div>
+    <div class="card card-red">
+      <strong>政治博弈是关键变量</strong>
+      民主党不愿给特朗普政府一场胜利，银行游说压力仍在——但这是迄今为止两党参与最深的一次。
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>一份 300 页的草案，和三个不同的通过概率</h2>
+  <p>
+    节目一开始，KK 就坦言所有人的计划都"泡汤了"——CLARITY Act 新草案在当天早上发布。Josh 随即接话："这是每一个加密法律人和策略人最喜欢看到的东西。我今天本来有别的事要做，现在得把阅读和分析这份 300 多页的新草案塞进日程里。但这太棒了。"
+  </p>
+  <p>
+    CLARITY Act 是加密行业等待了多年的综合性市场结构法案。它的核心使命是回答三个问题：加密资产什么时候是证券、什么时候是商品？二级市场交易的代币是否受证券法约束？能否建立一个联邦级的统一监管框架，取代目前各州各自执法、以执法代监管的混乱局面？
+  </p>
+  <p>
+    Josh 提醒所有人关注一个容易被忽略的事实："参议院中存在着真正两党参与的加密市场结构立法推进。这是目前唯一在真正推进的法案。我们比以往任何时候都更接近清晰明确的监管了。"
+  </p>
+  <p>
+    然而，当 KK 要求三位嘉宾给出自己的通过概率判断时，数字出现了显著分歧。KK 把自己放在 35%——比上周的 20-30% 有所上调，但她强调自己的悲观不是因为法案不好，而是因为"太多事情必须同时到位"。她甚至半开玩笑地说，如果三年后法案还没通过，"我真的不想回去给律所打工，年薪一千万美元为被各个监管机构起诉的加密公司辩护"。
+  </p>
+  <p>
+    Josh 给出了 45%，从之前的 30% 上调，理由是"有大量资金在背后推动这项立法"。但他的核心保留意见是政治性的："在一天结束时，考虑到当前的政治局势，<strong>民主党不会给特朗普政府一场轻松的胜利</strong>。他把自己和加密行业绑定得很紧，CLARITY Act 的通过会被视为这届政府的成就。"
+  </p>
+  <p>
+    而 V 则接近 90%——三位中最乐观的。她的判断基础是："我粗略看了新草案的几个小节，相比 1 月的版本有实质性改进。而且 SEC 和国会真的像是在<strong>锁步</strong>推进。所有拼图似乎正在第一次真正拼凑在一起。"
+  </p>
+  <p>
+    Polymarket 上的通过概率显示为 70%。三位真正在这个领域工作的律师的判断都低于或仅略高于这个数字——这或许是一个值得注意的信号：市场定价可能过于乐观了。
+  </p>
+</section>
+
+<section>
+  <h2>两大障碍：民主党政治与银行游说</h2>
+  <p>
+    Josh 的政治判断是整场对话中最直白也最关键的部分。他用了一句话精准概括了最大障碍："民主党不会给特朗普政府一场轻松的胜利。这就是当前的政治动态。"他补充说，民主党将要求在法案中加入某种形式的伦理条款——可能不直接涉及总统家族的加密参与，但至少需要解决行政和司法部门的利益冲突问题。
+  </p>
+  <p>
+    Elizabeth Warren 的迅速反应印证了这一判断——她甚至在没有读完 300 页法案的情况下就发表了谴责声明。KK 讽刺地评论道："她可能应该再等一等再发声明，因为很明显当时没人来得及读完整部法案。"
+  </p>
+  <p>
+    另一个阻力来自银行游说。Josh 直言不讳："我们一定程度上<strong>被银行游说团体绑架了</strong>，来解决稳定币收益的问题——而这个问题在 Genius Act 中已经解决过了。"这句话揭示了一个令人沮丧但真实的动态：即使加密行业和技术问题本身已经取得进展，政治进程仍可能因为既得利益集团的阻挠而反复。
+  </p>
+  <p>
+    不过，Josh 也指出了一个有趣的分化：大型银行对加密的态度实际上正在转变——他们看到了巨大的商业机会。真正抵制的是小型银行和区域性机构，它们在新增竞争者面前更难以维持竞争力。
+  </p>
+</section>
+
+<section>
+  <h2>特定意图：一个法律概念如何决定开发者的命运</h2>
+  <p>
+    节目中讨论得最深入的技术性话题，是 BRCA（Blockchain Regulatory Certainty Act）修正案中新加入的"特定意图"（specific intent）标准。这看似是一个枯燥的法律术语，但它对加密开发者的实际保护意义是非同小可的。
+  </p>
+  <p>
+    KK 用一个通俗易懂的方式解释了这一概念（她专门为"不是律师的听众"做了这番解释——她的同事中有人是"年轻 degen"但每一期节目都听）：一般意图（general intent）指的是意图实施某个行为本身，比如"我打算打人"。而特定意图不仅要求你意图实施该行为，还要求你意图达到一个特定的不法结果，比如"我打你，是为了杀了你"。这个区别在刑事法律中至关重要。
+  </p>
+  <p>
+    V 更进一步区分了"知情"和"特定意图"："你可能创建一个隐私工具，知道它可能被坏人滥用。但这不构成特定意图。你需要<strong>意图让他们这么做</strong>，这必须是创建它的目的。"这正是 BRCA 修正案为开发者提供的保护：检察官不能仅仅基于"你知道这个工具可能被滥用"来起诉你，他们必须证明你创建工具的<strong>目的</strong>就是帮助犯罪。
+  </p>
+  <p>
+    但 V 也保持了务实的态度。她以 Tornado Cash 案为例指出——在实践中，特定意图几乎总是通过间接证据证明的。"不会有朝鲜和 Roman Storm 之间的邮件。不会有那种直接证据。"即便有特定意图的标准，积极进取的检察官仍然会找到起诉的路径。然而，从行业整体来看，Josh 的判断更加宏观：这个条款让"行业可以支持这个法案了"，而几个月前的情况还不是这样。这是一个关键的政治信号。
+  </p>
+</section>
+
+<section>
+  <h2>我们被银行游说绑架了——但银行其实在舔嘴唇</h2>
+  <p>
+    如果有人告诉你"传统金融正在拥抱加密"，你可能已经听过太多次了。但 Josh 提供的视角不太一样——他曾在 Deutsche Bank 和 SocGen 工作了多年，后来又在 Circle 做产品和监管法律，现在在 GSR 担任首席法务与战略官。他同时理解 TradFi 和加密行业的两套语言。
+  </p>
+  <p>
+    他的核心观察是：简单的叙事——"银行不想让加密成功因为加密是竞争者"——已经过时了。实际情况是，"大多数大型金融机构<strong>正在舔嘴唇，对参与数字资产超级兴奋</strong>"。
+  </p>
+  <p>
+    Josh 在 Consensus 2026 现场感受到的变化最为直观：走进主展厅，过去看到的是 Uniswap 和其他 DeFi 协议的展位，今年最大的展位之一属于 JP Morgan。Morgan Stanley 的比特币 ETF 推出首日就吸金数亿美元——"因为他们有分销管道，市场对这些产品有需求。这是一种新资产。"而这还只是投资端的故事。
+  </p>
+  <p>
+    更深层的意义在于区块链基础设施本身。"在 TradFi 工作很久的人都明白——我们可以用区块链轨道来改善我们的业务，加速结算，提高资产的可编程性，增加交易速度。这些在传统金融中一直被回避，因为市场处于'灰色地带'。而现在，随着国会和 Clarity 带来的指导，它们全都准备好了。"Josh 将这个时刻类比为 Dodd-Frank 时代——"我们在引入一种全新的做生意的方式。"
+  </p>
+  <p>
+    但他也加了一个有趣的注脚：大型机构进入的同时，加密行业的一些坏习惯也在被复制。"我们在快速经历 TradFi 成长过程中的所有痛苦——只是快进模式，而且是以一种非常公开的方式。"
+  </p>
+</section>
+
+<section>
+  <h2>花了数百万美元做豪威测试——然后发现自己什么也不确定</h2>
+  <p>
+    Josh 用一个惊人的坦诚瞬间揭示了当前监管框架的荒谬之处。"在上一届政府下，<strong>GSR 花了数百万美元对每一个代币项目做豪威测试分析</strong>。到最后，你会看着这些分析结果想——我其实不比没做这个分析之前知道得更多。"这些分析都是基于公开信息、没有传票权的情况下完成的——Josh 称之为"主观分析"，结论高度依赖于分析者的判断力。
+  </p>
+  <p>
+    这个问题的根本在于：加密资产在商品和证券之间的分类是模糊的，而且传统市场的先例也不乐观。Josh 举了一个传统金融市场的例子——Cosby 期货。这种指数商品会偶尔因为集中度过高而从商品"切换"为证券，然后又切换回去。"它会在商品和证券之间来回摆动，每次切换都造成巨大的市场参与混乱。"如果在加密市场中这种情况是普遍现象而不是个别案例——那就是"整个行业不能依赖的基础"。
+  </p>
+  <p>
+    CLARITY Act 试图通过"辅助资产"（ancillary asset）这一概念来解决这个问题——即将代币本身与发行/销售行为分离开来。这是来自 Lummis 草案的创新。核心问题是：代币在二级市场上的交易何时不再受证券法约束？分离的时点在哪里？Josh 的观点很明确：任何要求第三方和中介（交易所除外）自己对这些代币做分析的结果，"对行业来说都是一个坏结果"。在其他市场中不需要这样做——在其他市场中，你能清楚地知道自己交易的是什么。
+  </p>
+</section>
+
+<section>
+  <h2>史上最嘈杂的熊市</h2>
+  <p>
+    也许整场对话中最令人印象深刻的一个短语来自 Josh 对当前市场状态的描述："<strong>史上最嘈杂的熊市</strong>"（the noisiest bear market in history）。在价格低迷的表面之下，M&A 活动、大额融资、机构建设和 RWA 上链都在加速推进。
+  </p>
+  <p>
+    仅在过去一周，就发生了三笔重大收购：MoonPay 收购了 Dfns，Bullish 收购了 Coinigy，Kraken 的母公司 Payward 收购了 Coinme。这些不是小规模交易——是战略性的、填补产品缺口的收购。与此同时，a16z 和 Haun Ventures 宣布了巨额加密专项基金——不是 AI，是加密。Circle 完成了来自 BlackRock 和 Apollo 等机构的 2.22 亿美元融资，其 Ark Layer 2 代币预售估值达 30 亿美元。
+  </p>
+  <p>
+    在 GSR，过去三个月收到的 RWA（真实世界资产）咨询比公司整个历史上任何时候都多。"人们正在寻找上链的路径。"Josh 总结道。KK 则用另一句话概括了叙事的变化：<strong>"加密赌场不再是主菜了——它是开场表演或余兴节目。机构对话才是主菜。"</strong> 她坦言自己在这个行业待的时间长了，已经对价格波动完全免疫——"我甚至不查价格了。"
+  </p>
+</section>
+
+<section>
+  <h2>SEC 主席的一篇演讲，和一个历史性的监管转向</h2>
+  <p>
+    如果说 CLARITY Act 代表着立法的进展，那么 SEC 主席 Paul Atkins 在 SEC AI+ Expo 上的演讲则代表着监管思维的根本转变。V 将其视为"迄今为止最清晰的信号"。
+  </p>
+  <p>
+    Atkins 的核心论点是：为链上市场和基于软件的市场实现证券监管现代化——通过实际的规则制定（rulemaking），而不仅仅是靠执法——这是 SEC 接下来要走的路。具体而言，他提出重新审视"交易所""经纪人""清算机构"这些传统概念在区块链系统中的适用性。多年来的行业困境一直是：这些概念显然是为基于中介的市场设计的——集中式交易所、经纪人、托管人。而上一届 SEC 试图将这些定义强行拉伸到去中心化的软件系统中，在逻辑上是不通的。
+  </p>
+  <p>
+    Josh 的回应反映了一种经过深思的乐观："如果一位监管者愿意考虑为这项新技术量身定制规则——认识到它不适合放进 1930 年代设计的盒子里——这是一种在全球都罕见的、值得骄傲的美国式思维。"他补充道，即使与欧洲和亚洲的监管方法相比，Atkins 提出的"为新技术创设专有规则"也是一种领先的思路。监管者通常没有动力这样做——除非他们真正支持创新。
+  </p>
+  <p>
+    但 Josh 也指出了监管面临的一个深层结构性挑战：如何为区块链新进入者制定新规则，同时不让 CME 这样的传统衍生品交易所感觉到不公平？如果链上衍生品平台受到的监管比传统交易所宽松得多，而它又能大量吸引交易量——这会引发强烈的反制。SEC 和 CFTC 需要在未来几年找到一种"技术中立"的平衡：消费者应该能自己选择使用哪种技术，但最终获得的保护程度应该是同等的。这不容易，但 Atkins 正在以"绝对完美的心态"来面对这个问题。
+  </p>
+</section>
+
+<section>
+  <h2>大多数议员只了解"比特币级别"的加密知识</h2>
+  <p>
+    法律和政策层面的讨论很容易让人忘记一个更基础的现实：大多数国会议员既不恨加密，也不爱加密——他们根本对它不感兴趣，也不理解。Josh 的估计是："大多数国会议员的加密知识停留在'比特币'层面。他们不知道什么是 vault，什么是零知识证明。"这并不意味着他们反对——而是加密根本不在他们的优先级清单上。
+  </p>
+  <p>
+    许多议员仍然认为加密"只是一个赌场，只是一种新的投资资产，只是零售投资的另一种方式"。Josh 强调，行业必须主动做教育——"我们是在建一个平行金融系统，主要由美国创业者建设。我们希望保持这种状态。但教育必须由行业来做。"
+  </p>
+  <p>
+    KK 提供了一个具体的例子：当天她看到 Brian Armstrong 亲自走在华盛顿的走廊里，拜访各个议员办公室。"如果你是一个加密 CEO，你希望这个法案通过——你必须亲自在 DC，或者至少你的法务总监和政策团队在现场。这种游击战式的游说对让议员聚焦于加密议题至关重要。"好消息是，随着越来越多的机构参与进来，TradFi 也会间接地为加密行业说话——"TradFi 是能说上话的。"
+  </p>
+</section>
+
+<section>
+  <h2>以 Dodd-Frank 为参照：Clarity 只是起点</h2>
+  <p>
+    三位嘉宾都很清楚：CLARITY Act 即使通过了，也不会在第二天改变任何事情。KK 以 Dodd-Frank 为参照——2008 年金融危机后的那部大规模法案，从通过到规则真正可执行，经历了多年的规则制定过程，大量条款至今仍在被诉讼和解释。
+  </p>
+  <p>
+    "Clarity 不会一夜之间改变一切。它是多年规则制定、解读和诉讼过程的起点。但它给了所有人一个可操作的出发点——不是一个演讲，而是一部法律。"这一点对行业意义重大，因为"一个演讲"正是过去几年美国加密监管的主要形式——SEC 的执法行动和主席的公开讲话，而不是明确的成文规则。
+  </p>
+  <p>
+    但 V 补充了一个重要的乐观面向：市场参与者实际上不需要等所有规则都制定完毕。"一旦立法通过，他们就可以开始做重大商业决策，因为他们知道清晰明确的法律框架正在路上。"Josh 则从一个更宏观的角度总结：如果我们回到 18 个月前，情况是 180 度的反面。现在有一批支持创新的监管者在位，他们愿意"给我们一些书面指导，至少让我们可以开始讨论如何应对这个新世界"。美国可以在这个领域引领全球——吸引人才、吸引资本、保持创新中心的地位。
+  </p>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+  <div class="kicker">三位加密律师在这场对话中最值得记住的几句话：</div>
+
+  <div class="quote quote-red">
+    "我们一定程度上被银行游说团体绑架了，来解决稳定币收益的问题——而这个问题在 Genius Act 中已经解决过了。"
+    <span class="attr">— Josh Freeze，GSR 首席法务与战略官</span>
+  </div>
+
+  <div class="quote quote-green">
+    "大多数大型金融机构正在舔嘴唇，对参与数字资产超级兴奋。"
+    <span class="attr">— Josh Freeze，描述 TradFi 对数字资产态度的转变</span>
+  </div>
+
+  <div class="quote quote-blue">
+    "我们比以往任何时候都更接近清晰明确的监管了。"
+    <span class="attr">— Josh Freeze，对 CLARITY Act 推进的总体评价</span>
+  </div>
+
+  <div class="quote quote-red">
+    "民主党不会给特朗普政府一场轻松的胜利。这就是当前的政治动态。"
+    <span class="attr">— Josh Freeze，解释 CLARITY Act 面临的最大政治障碍</span>
+  </div>
+
+  <div class="quote quote-purple">
+    "GSR 花了数百万美元做豪威测试分析。到最后，你其实不比没做这个分析之前知道得更多。"
+    <span class="attr">— Josh Freeze，揭示当前监管框架下的昂贵不确定性</span>
+  </div>
+
+  <div class="quote quote-orange">
+    "这是史上最嘈杂的熊市——巨大投资，GSR 过去三个月收到的 RWA 咨询比公司历史上任何时候都多。"
+    <span class="attr">— Josh Freeze，描述当前加密市场的奇特状态</span>
+  </div>
+</section>
+
+<footer>
+  <p>
+    基于 Unchained Podcast 节目 <em>DEX in the City</em> 2026 年 5 月期制作。<br>
+    原文链接：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1930876733.mp3">原始音频</a> ·
+    <a href="../../">返回 PodDeck</a>
+  </p>
+  <p style="margin-top:0.5rem">🤖 由 AI 辅助生成，经人工校对。所有引言均来自节目转录文本。</p>
+</footer>
+
+</div>
+</body>
+</html>

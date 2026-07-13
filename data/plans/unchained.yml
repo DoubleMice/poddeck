@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-07-13T04:19:58.345Z
+refreshed_at: 2026-07-13T18:36:29.515Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 91
-done: 0
-pending: 4
-needs_transcript: 87
+done: 3
+pending: 1
+needs_transcript: 86
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
@@ -275,7 +275,7 @@ episodes:
       🤖 46:46 AI good news: Redmod AI system may detect pancreatic cancer early
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 49a818f8ab2f4e67840cf35312bf4787,60e6fc46fc2d4f1296b00bd251465141,5a3ee81207a04bada5771763447d7a90,e0fa13b215e64028bfbed5851d09a083
@@ -362,7 +362,7 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: c913e81d1fd5459cac2ee825c2ac751a,3b5499af891d4a2eb4a52223d28b3bcf,3705ba5e3ff84af28e2f38a1ffaf1340,3e6e21efb9754706902ec6b14dff39cd
@@ -449,7 +449,7 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: bf911a82a9d64ed38e1e48582c4f0708,240e53d04f004da7b3eed7bc0efbfe14,0682086957764492b94048c894c7e80b
@@ -634,8 +634,13 @@ episodes:
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-13T18:36:31.130Z
+    transcript_error: 'MiMo transcription failed: 400 {"error":{"code":"400","message":"Multimodal data is corrupted or
+      cannot be processed.","param":"","type":"BadRequestError"}}'
+    transcript_completed_at: 2026-07-13T18:39:17.654Z
   - id: 41294c52-4983-11f1-a5a7-0beee9669ba8
     guid: 41294c52-4983-11f1-a5a7-0beee9669ba8
     title: "DEX in the City: With the Stablecoin Yield Compromise, Can the Clarity Act Get Passed?"
@@ -3536,8 +3541,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5299,8 +5303,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

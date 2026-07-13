@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bits + Bips: AI 涨势为何持续，以及 Circle 为何推出 Arc — PodDeck</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1e1e1e;
+  background: #fafafa;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #e5e5e5;
+}
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  color: #111;
+}
+header .meta {
+  font-size: 15px;
+  color: #666;
+}
+header .meta span { margin: 0 8px; }
+header .meta span:first-child { margin-left: 0; }
+
+.overview {
+  margin-bottom: 48px;
+}
+.overview h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+.overview .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.overview .card {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.overview .card.full { grid-column: 1 / -1; }
+.overview .card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+
+.card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #111;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f0f0f0;
+}
+section p {
+  margin-bottom: 14px;
+  text-align: justify;
+}
+section .note {
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 16px 0;
+}
+.note-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.note-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.note-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.note-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+.data-card {
+  text-align: center;
+  padding: 18px 12px;
+  border-radius: 8px;
+}
+.data-card .num {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.data-card .label {
+  font-size: 12px;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+.dc-red { background: #fef2f2; border-top: 3px solid #ef4444; }
+.dc-red .num { color: #dc2626; }
+.dc-orange { background: #fff7ed; border-top: 3px solid #f97316; }
+.dc-orange .num { color: #ea580c; }
+.dc-yellow { background: #fefce8; border-top: 3px solid #eab308; }
+.dc-yellow .num { color: #ca8a04; }
+
+.quotes-section {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #e5e5e5;
+}
+.quotes-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111;
+}
+.quotes-section .subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 20px;
+}
+.quotes-section .quote {
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.quotes-section .quote .ctx {
+  font-size: 12px;
+  opacity: 0.55;
+  margin-top: 6px;
+  font-style: normal;
+}
+
+.q-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.q-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.q-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.q-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.q-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+.q-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+
+footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+}
+footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+footer a:hover { text-decoration: underline; }
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 20px 0;
+}
+.comparison .col {
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.col-bad { background: #fef2f2; border: 1px solid #fecaca; }
+.col-good { background: #f0fdf4; border: 1px solid #bbf7d0; }
+.col-bad h3 { color: #dc2626; font-size: 16px; margin-bottom: 10px; }
+.col-good h3 { color: #16a34a; font-size: 16px; margin-bottom: 10px; }
+.col-bad ul, .col-good ul { list-style: none; padding: 0; }
+.col-bad li, .col-good li { margin-bottom: 6px; }
+
+@media (max-width: 600px) {
+  article { padding: 24px 16px 48px; }
+  header h1 { font-size: 22px; }
+  .overview .cards { grid-template-columns: 1fr; }
+  .data-grid { grid-template-columns: 1fr; }
+  .comparison { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>AI 涨势为何持续<br>— 以及 Circle 为何推出 Arc</h1>
+  <div class="meta">
+    <span>Bits + Bips</span>
+    <span>·</span>
+    <span>Unchained</span>
+    <span>·</span>
+    <span>2026 年 5 月</span>
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+
+    <div class="card card-blue">
+      <strong>AI 泡沫辩论</strong>
+      半导体占 S&P 500 的 18%，创历史新高。上一次单一行业如此集中是 2000 年。但嘉宾们认为，这一次的基本面支撑完全不同。
+    </div>
+
+    <div class="card card-green">
+      <strong>Circle 的代币化实验</strong>
+      Circle 成为首家进行代币预售的上市公司。$222M 融资、$3B 估值，BlackRock、Apollo、ICE 等传统金融巨头参与。
+    </div>
+
+    <div class="card card-orange">
+      <strong>Token vs 股权</strong>
+      一家上市公司同时发行股票和代币，价值如何在两者之间分配？市场用 15% 的股价上涨给出了一个耐人寻味的答案。
+    </div>
+
+    <div class="card card-purple">
+      <strong>Coinbase 的 AI 转型</strong>
+      裁员 14%（700 人），重组为 AI 原生小组。Q1 净亏损 $394M。是生产力革命，还是周期性压力用 AI 包装？
+    </div>
+
+    <div class="card card-red full">
+      <strong>加密行业的成人礼</strong>
+      从 Consensus 会后派对争议到 Clarity Act 监管落地预期，加密行业正面临从野蛮生长到制度化运营的关键转折。
+    </div>
+
+  </div>
+</div>
+
+<section>
+  <h2>AI 牛市：泡沫还是新时代？</h2>
+
+  <p>2026 年的市场正被一种极端的焦虑笼罩。半导体板块在三个月内上涨了 80%，占 S&P 500 市值比例达到 18%——这是有史以来的最高纪录。上一次单一行业如此集中地占据美国股市，还要追溯到 2000 年的科技泡沫。</p>
+
+  <p>嘉宾 Chris 亲历过 dot-com 时代。他的判断直接而清晰："我看到的是更多的基本面创新。AI 在改变我们的文明——知识民主化、跨学科创新加速，这些不是'工程叠加工程'的空转。"</p>
+
+  <div class="comparison">
+    <div class="col col-bad">
+      <h3>Dot-Com（2000）</h3>
+      <ul>
+        <li>✗ 无实际效用的工程叠加</li>
+        <li>✗ globe.com IPO 当日涨 600%</li>
+        <li>✗ 电信+VC 过度投资暗光纤</li>
+        <li>✗ 主要出资方：电信公司和风投</li>
+      </ul>
+    </div>
+    <div class="col col-good">
+      <h3>AI 时代（2025-2026）</h3>
+      <ul>
+        <li>✓ 真正改变文明的基础性创新</li>
+        <li>✓ 最大出资方：全球最盈利的公司+政府</li>
+        <li>✓ 盈利公司已在云业务上展现回报</li>
+        <li>⚠ 但泡沫在私募市场</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>两者的关键区别在于出资方。Dot-Com 时代的过度投资来自电信公司和风投支持的初创企业——这些公司本身并不盈利。而今天，AI 基础设施的最大买家是 Google、微软、Meta 和各国政府——它们不仅是全球最赚钱的公司，而且已经在云业务上展现了投资回报。Google 云增长 60%，微软云增长 40%。</p>
+
+  <p>但这并不意味着没有风险。嘉宾 Austin 指出了一个关键事实："市场中的一切最终都会走向极端。我不知道我们在周期的哪个位置。它一定会走向极端，然后破裂。"</p>
+
+  <div class="note note-yellow">
+    <strong>作者概括：</strong>嘉宾们达成的共识是：AI 趋势本身是真实的，方向是对的。问题在于估值——尤其是在所有人都已经意识到这一点之后。半导体在 S&P 中占比触顶的时刻，历史上往往是轮动的信号（上一次是 2021 年 Q4）。
+  </div>
+</section>
+
+<section>
+  <h2>CapEx 支付者与接收者：理解 AI 投资的最简框架</h2>
+
+  <p>嘉宾 Ram 提出了一个极其简洁的分析框架：AI 投资周期可以分解为两大阵营——<strong>CapEx 支付者</strong>和<strong>CapEx 接收者</strong>。</p>
+
+  <p>支付者是那些现金充裕的科技巨头和政府。他们正在以前所未有的速度投入算力基础设施建设。一个生动的例子：Meta 接手了 OpenAI 放弃的数据中心租约——算力需求高到即使是最大的买家之间也在互相接盘。</p>
+
+  <p>接收者是半导体产业链：Nvidia（GPU）、Intel（CPU）、Micron（内存）、SanDisk（存储）。它们目前是显而易见的赢家——所有投向 AI 基础设施的资金最终都流向了这些公司。</p>
+
+  <div class="note note-blue">
+    但数字令人不安：半导体现占 S&P 500 的 18%。上一次这个行业占比触顶是在 2021 年 Q4 的科技股——恰好是应该从科技股轮动到其他板块的时点。嘉宾指出，"其他领域存在显著的低估机会"——AI 的赋能层，如埃森哲等咨询公司、企业级部署服务，尚未被市场定价。
+  </div>
+</section>
+
+<section>
+  <h2>泡沫的真正所在地：私募市场</h2>
+
+  <p>一个震撼的数据：目前有 <strong>63 家估值超过十亿美元的 AI 实验室</strong>——包括由 OpenAI 前 CTO 创立的 Thinking Machines，以及 Ilya Sutskever 的创业项目。它们没有一家产生任何收入。不是"收入很少"，而是"一分钱收入都没有"。</p>
+
+  <p>嘉宾的评论既尖锐又带有幽默感："还有一个有趣的事实——欧洲的大语言模型公司数量是零。零。我不知道哪个事实更可怕：我们有 63 家零收入的独角兽，还是欧洲一家都没有。我更愿意待在前者。"</p>
+
+  <p>这个判断耐人寻味。泡沫不是均匀分布的：公开市场投资者保持了更多的纪律，真正的过度投机集中在私募市场。风险投资正在补贴公共产品——63 家 AI 实验室的研发最终会让整个社会受益，无论它们自己的股东是否赚钱。</p>
+
+  <div class="note note-green">
+    嘉宾引用了 Amazon 的例子：Amazon 也是亏损了很多年才开始赚钱的。问题不在于"现在不赚钱"，而在于这些 AI 实验室是否有一条清晰的通往盈利的路径——以及价值最终会归属于谁。
+  </div>
+</section>
+
+<section>
+  <h2>价值创造 vs 价值归属：AI 投资的两个独立问题</h2>
+
+  <p>嘉宾 Austin 提出了本期节目最有洞察力的一组区分：投资 AI 市场需要回答两个完全独立的问题。</p>
+
+  <p><strong>问题一：价值创造总量。</strong>AI 整体是不是泡沫？我们在总量上的判断对不对？嘉宾们对这个问题相对乐观——AI 在创造真正的价值。</p>
+
+  <p><strong>问题二：价值归属分配。</strong>这些价值是否分配到了正确的公司？嘉宾们对这个问题更为怀疑。那些零收入的 AI 独角兽在创造价值——但价值不一定会归属于它们的股东。它们显然在为 Nvidia、Intel、Micron、SanDisk 创造价值（因为这些公司卖硬件给它们），也在为 Google 和微软的云业务创造价值（因为这些公司提供算力）。但是投资这些 AI 实验室本身的回报，远不如投资它们背后的基础设施供应商。</p>
+
+  <p>嘉宾 Austin 的结论是："在第二个问题上，我比第一个问题要怀疑得多。"这是一个深刻的投资洞见：你可以对整个行业方向完全信任，但在具体选股上完全错误。</p>
+</section>
+
+<section>
+  <h2>Circle 推出 Arc：机构金融的"经济操作系统"</h2>
+
+  <p>Circle 宣布了代币预售——$222M 融资，$3B 完全稀释估值，a16z 领投 $75M。这是第一家上市公司进行的代币预售，投资者名单本身就是一份传统金融的名人录：BlackRock、Apollo、ICE（纽交所母公司）、SBI、Janus、StanChart Ventures、General Catalyst。</p>
+
+  <p>Arc 是什么？它是一个 EVM 兼容的 L1 区块链，USDC 作为原生 Gas 代币。测试网自 2025 年 10 月运行，已有数亿笔交易。BlackRock、Visa、Goldman、AWS、甚至 Anthropic 都已经在测试网上测试过。</p>
+
+  <p>Circle 的官方表述是：Arc 是"机构金融的经济操作系统"。a16z 的 Maxwell Albright 补充说："USDC 目前运行的互联网基础设施并非为大型机构而建。这就是 Arc 的切入点。"</p>
+
+  <p>战略上，Circle 不再满足于使用 Ethereum 和 Solana 做清算、依赖 Coinbase 做分销。Arc 是 Circle"拥有全栈"的方式——从稳定币发行到清算结算，全部控制在自己手中。</p>
+
+  <div class="note note-purple">
+    <strong>但有一个耐人寻味的细节：</strong>ARC 本轮没有华尔街战略投资者——投资者来自西海岸 VC。正如嘉宾所言，这可能意味着他们采取的是"颠覆"而非"合作"的策略，与传统金融中介正面竞争，而非试图收编它们。
+  </div>
+</section>
+
+<section>
+  <h2>Token vs 股权：上市公司代币化的核心谜题</h2>
+
+  <p>这期节目最引人深思的讨论，围绕一个核心问题展开：一家上市公司同时发行股票和代币，价值如何在两者之间分配？</p>
+
+  <p>直觉上，发行新代币应该稀释股权价值——你在创造一个与现有股东竞争的新资产。但 Circle 的股票在公告后上涨了约 15%，市值增加了大约 $45-50 亿。市场似乎在说：代币的发行不仅没有伤害股权，反而让股权更有价值了。</p>
+
+  <p>嘉宾 Chris 的分析角度独到：传统金融公司投资的是一个 Token，而非私募股权。BlackRock 和 Apollo 不是以 LP 身份进入基金的——他们是直接购买代币。这对整个行业的意义超越了 Circle 本身：它使代币投资在传统金融玩家的认知中变得合法化。</p>
+
+  <p>但如何解释两者同时上涨？嘉宾们提出了两种理论。</p>
+
+  <p><strong>理论一：有人错了。</strong>这让人想起 dot-com 时代的追踪股——3Com 的子公司 Palm 估值一度超过母公司整体市值。总有人对价值的归属判断错误，最终会出现某种套利机会把价格拉回合理区间。</p>
+
+  <p><strong>理论二：分拆预期。</strong>市场在定价 ARC 未来将从 Circle 中独立出来。这并非没有先例——Visa 最初是从发卡行内部分拆出来的，Discover 也走过了类似的路径。如果 ARC 要成为真正的机构金融基础设施，它最终不能由一个稳定币发行者来控制。嘉宾 Austin 的判断是："如果两个估值都正确，那意味着市场在定价 ARC 的增长超出 Circle 当前的业务范围。"</p>
+</section>
+
+<section>
+  <h2>Circle 与 Coinbase：分销博弈</h2>
+
+  <p>Circle 推出 Arc 的动因，很大程度上可以从它与 Coinbase 的关系来理解。</p>
+
+  <p>Coinbase 拥有 Circle 的 USDC 稳定币收入"永久独家权利"——本周 Coinbase 还重申了这一点。自成立以来，Circle 严重依赖 Coinbase 的分销渠道。用户必须登录 Coinbase、完成入驻、进行转换——这个流程限制了 USDC 的触达范围。</p>
+
+  <p>ARC 是 Circle 解决分销依赖的答案。通过自有区块链，Circle 可以直接连接机构客户，绕过 Coinbase 的中间环节。市场在 ARC 中看到了一个全新的分销策略：如果 ARC 能够推动 USDC 进入更多的使用场景，Circle 核心业务的增长潜力将被重新定价。</p>
+
+  <p>但 Arc 面临一个根本性的挑战：一个由 USDC 发行者控制的结算层，能真正做到中立吗？目前 ARC 只允许使用 USDC 作为 Gas 代币。长期来看，如果要替代 Mastercard、Visa 甚至 ACH 和 Zelle，就必须允许其他机构使用自己的资产。对 Chase、Bank of America、Citi 说"放弃你们的净息差来用我们的支付链"——这个价值主张不会成立。</p>
+
+  <div class="note note-yellow">
+    <strong>嘉宾的蓝图：</strong>如果 JPMorgan 可以把自己的存款代币放在 ARC 上、Citi 可以放存款代币、BofA 可以放稳定币——彼此之间可以交易和清算——这才是真正的机构级基础设施。而这正是 Visa 和 Mastercard 当年从发卡行内部独立出来的故事。
+  </div>
+</section>
+
+<section>
+  <h2>Coinbase：AI 叙事还是周期性压力？</h2>
+
+  <p>Coinbase 经历了艰难的一周。周一宣布裁员 14%，约 700 人。CEO Brian Armstrong 提出了重组蓝图："player-coach"模式，AI 原生小组，CEO 以下最多五个层级。甚至声称非技术团队也在"推送代码"。</p>
+
+  <p>市场对此存在明显分歧。Derek Thompson 的质疑最为尖锐：这到底是真正的生产力革命，还是用 AI 包装的盈利压力裁员？Greg Eisenberg 的预测更加直白：未来 12 个月每家上市公司都会玩这套叙事，Coinbase 只是先动手了。</p>
+
+  <p>讽刺的是，在 CEO 畅谈 AI 转型的同一天，Coinbase 因 AWS US East 故障宕机超过五个小时。Armstrong 称这是"完全不可接受"的——但这种对单一云服务商的依赖，恰恰暴露了"AI 原生转型"叙事的脆弱性。</p>
+
+  <div class="data-grid">
+    <div class="data-card dc-red">
+      <div class="num">-$394M</div>
+      <div class="label">Q1 净亏损</div>
+    </div>
+    <div class="data-card dc-yellow">
+      <div class="num">$1.41B</div>
+      <div class="label">Q1 收入<br>（预期 $1.52B）</div>
+    </div>
+    <div class="data-card dc-orange">
+      <div class="num">-37%</div>
+      <div class="label">现货交易量<br>环比下降</div>
+    </div>
+  </div>
+
+  <p>每股亏损 $1.49，而市场预期为正 $0.27——差幅巨大。但 Coinbase 股票当天仍然上涨了 7%。市场看的是远期：裁员降本、Circle 的 USDC 永久收入权、Deribit 收购带来的衍生品业务、以及正在申请的银行牌照。</p>
+
+  <p>嘉宾 Chris 还指出了一个有趣的历史规律："每次 Coinbase 大规模裁员，恰好是下一轮周期的起点。"如果这个模式再次成立，Alt 季节可能即将到来。</p>
+</section>
+
+<section>
+  <h2>Spot 交易与衍生品：不可逆转的商业逻辑</h2>
+
+  <p>Coinbase 的故事最终归结为一个简单的商业趋势：现货交易费用在长期中必然趋向于零。这是所有金融市场反复验证过的规律——传统股票佣金从几十美元一路降到零，加密货币的现货交易费用正在走完全相同的路径。Morgan Stanley 已经开始以更低费用进入市场，更多传统金融机构将紧随其后。</p>
+
+  <p>"现货交易费趋向于零——这个生意真的很难做。衍生品则是更有趣的业务。"嘉宾 Chris 的判断一针见血。</p>
+
+  <p>一个值得记住的事实：是 ICE（衍生品交易所）收购了纽约证券交易所，而不是反过来。现货市场的真正功能，是为衍生品交易提供底层资产和客户入口。Coinbase 收购 Deribit 是朝着正确方向迈出的重要一步，但整合和执行是关键挑战。</p>
+
+  <p>嘉宾们勾勒了 Coinbase 的四条出路：<strong>衍生品</strong>（Deribit 整合）、<strong>资金业务</strong>（Circle USDC 的永久收入权，类似 Schwab 模式）、<strong>全能金融平台</strong>（银行牌照，对标本是 Charles Schwab，横跨银行、投资、支付的跨资产类别一体化体验）、以及 <strong>ETF 和机构服务</strong>。</p>
+
+  <p>嘉宾 Austin 的结论毫不留情："如果 Coinbase 不在衍生品市场或资金市场发力——或者两者同时——那么'毒打'会持续到股价改善为止。"</p>
+</section>
+
+<section>
+  <h2>监管作为整合催化剂</h2>
+
+  <p>贯穿整场讨论的一条暗线是监管。Clarity Act 预计有约 60% 的概率落地。无论具体条款如何，监管框架的到来是确定性的。而监管——在嘉宾 Chris 的经验中——是一股强大的整合力量。</p>
+
+  <p>"监管迫使行业整合。大公司会变得更大。他们已有的合规优势，一旦监管固化，就会成为不可逾越的护城河。"</p>
+
+  <p>Chris 从创业者的角度表达了担忧："我有一个新模型，你得审批。但我的模型已经获批了，因为我已经做了五年了。这就是我担心的。"这种"先发合规优势"是监管驱动的行业整合中最强大的机制——先入者不仅拥有客户和品牌，还拥有监管批准本身作为竞争壁垒。</p>
+
+  <p>对于 Coinbase 来说，这意味着什么？作为现有的持牌机构，它将是监管整合的最大受益者之一。嘉宾们肯定了 Brian Armstrong 和团队在过去几年中的多元化努力——从纯现货交易所，拓展到衍生品、托管和多个业务线。在面对监管冲击时，这种多元化是关键的生存护城河。</p>
+</section>
+
+<section>
+  <h2>行业需要长大</h2>
+
+  <p>节目以一场争议收尾。Consensus Miami 的官方会后派对在一家声称接受比特币的脱衣舞俱乐部举办，排队数小时。Bloomberg 的标题是："加密行业在熊市中举办大腿舞派对。"</p>
+
+  <p>引人深思的是，2018 年北美比特币大会曾在同一场地举办过活动，Bloomberg 当时也刊登了几乎相同的文章——"这个行业有问题"。八年后，同样的场地，同样的标题，中间还夹杂了一个"减半"笑话。</p>
+
+  <p>嘉宾 Chris 的评论既带着个人经历，也带着行业观察者的冷静。他回忆在 Lehman Brothers 入职第一天，高管对全体新员工讲的第一句话是——"不许找脱衣舞娘"。"我在华尔街的整个职业生涯中，从来没有靠近过这类事情，因为市场已经成熟了。加密行业正处于机构化时代——这不是走向机构化的方式。"</p>
+
+  <p>品牌很重要。许多被涉及的品牌可能根本不知道自己与这类活动的关联。嘉宾们的共识是：这不是好的商业决策。在试图吸引机构和大众市场的时候，官方活动在这样的场所举办不是明智之举。行业是时候长大了。</p>
+</section>
+
+<div class="quotes-section">
+  <h2>核心金句</h2>
+  <div class="subtitle">这期圆桌讨论中最值得记住的几句：</div>
+
+  <div class="quote q-blue">
+    "Not enough people are emotionally prepared for this not to be a bubble."
+    <div class="ctx">— 嘉宾引用 Twitter 流行观点，概括 AI 牛市的多空分歧</div>
+  </div>
+
+  <div class="quote q-green">
+    "CapEx payers and the CapEx receivers, that's the dividing line."
+    <div class="ctx">— 理解 AI 投资周期最简洁的框架：谁出钱 vs 谁收钱</div>
+  </div>
+
+  <div class="quote q-purple">
+    "There are 63 unicorn AI labs, billion-dollar valuations... None of them make a penny of revenue."
+    <div class="ctx">— AI 泡沫的真正所在地：私募市场，而非公开市场</div>
+  </div>
+
+  <div class="quote q-yellow">
+    "They were able to create something from nothing, get investors to back it. Anytime you can pull that off, it's a win."
+    <div class="ctx">— 嘉宾 Ram 评价 Circle 的 ARC 代币预售</div>
+  </div>
+
+  <div class="quote q-red">
+    "Spot trading goes to zero, really hard to have a business there. Derivatives, however, are much more interesting business."
+    <div class="ctx">— 嘉宾 Chris 解释 Coinbase 必须从现货向衍生品转型</div>
+  </div>
+
+  <div class="quote q-orange">
+    "It's time for the industry to grow up."
+    <div class="ctx">— 嘉宾 Chris 对 Consensus 脱衣舞俱乐部争议的评价</div>
+  </div>
+</div>
+
+<footer>
+  <p>来源：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4045919454.mp3">Bits + Bips on Unchained</a> · 2026 年 5 月</p>
+  <p style="margin-top:8px">本文由 PodDeck 自动生成 · 内容基于播客转写稿 · 不构成投资建议</p>
+</footer>
+
+</article>
+</body>
+</html>
