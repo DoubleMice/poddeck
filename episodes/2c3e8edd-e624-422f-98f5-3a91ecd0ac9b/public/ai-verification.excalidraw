@@ -1,0 +1,24 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {"id":"title","type":"text","x":140,"y":10,"width":220,"height":28,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":1,"version":1,"versionNonce":1,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"AI任务的两条曲线","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"两条曲线","lineHeight":1.25,"baseline":18},
+
+    {"id":"v-line","type":"line","x":40,"y":60,"width":380,"height":2,"angle":0,"strokeColor":"#e03131","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"strokeStyle":"dashed","roughness":0,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":2,"version":1,"versionNonce":2,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"points":[[0,0],[380,0]]},
+
+    {"id":"verify","type":"text","x":40,"y":70,"width":380,"height":30,"angle":0,"strokeColor":"#2f9e44","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":3,"version":1,"versionNonce":3,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":14,"fontFamily":1,"text":"✅ 可验证任务: 电竞/Excel比赛/代码测试 → AI 100%","textAlign":"left","verticalAlign":"middle","containerId":null,"originalText":"可验证","lineHeight":1.25,"baseline":18},
+
+    {"id":"green-box","type":"rectangle","x":40,"y":110,"width":380,"height":50,"angle":0,"strokeColor":"#2f9e44","backgroundColor":"#b2f2bb","fillStyle":"hachure","strokeWidth":3,"strokeStyle":"solid","roughness":1.2,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":4,"version":1,"versionNonce":4,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"g-t","type":"text","x":55,"y":120,"width":350,"height":30,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":5,"version":1,"versionNonce":5,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":13,"fontFamily":1,"text":"对冲基金30h工作 → AI 1h，每季度更新10min","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"green","lineHeight":1.25,"baseline":18},
+
+    {"id":"judgment","type":"text","x":40,"y":180,"width":380,"height":30,"angle":0,"strokeColor":"#f08c00","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":6,"version":1,"versionNonce":6,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":14,"fontFamily":1,"text":"⚠️ 需判断: DCF/战略/美工 → 20种正确方式","textAlign":"left","verticalAlign":"middle","containerId":null,"originalText":"判断","lineHeight":1.25,"baseline":18},
+
+    {"id":"orange-box","type":"rectangle","x":40,"y":220,"width":380,"height":50,"angle":0,"strokeColor":"#f08c00","backgroundColor":"#ffe8cc","fillStyle":"hachure","strokeWidth":3,"strokeStyle":"solid","roughness":1.2,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":7,"version":1,"versionNonce":7,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"o-t","type":"text","x":55,"y":230,"width":350,"height":30,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":8,"version":1,"versionNonce":8,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":13,"fontFamily":1,"text":"瓶颈：Excel无法headless → 微软在解决中","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"orange","lineHeight":1.25,"baseline":18},
+
+    {"id":"spe","type":"text","x":40,"y":300,"width":380,"height":40,"angle":0,"strokeColor":"#9c36b5","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":9,"version":1,"versionNonce":9,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":14,"fontFamily":1,"text":"速度关键: Cerebras级推理 = 跟踪200只→2000只","textAlign":"left","verticalAlign":"middle","containerId":null,"originalText":"speed","lineHeight":1.25,"baseline":18}
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}

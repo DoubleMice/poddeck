@@ -1,0 +1,23 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {"id":"title","type":"text","x":130,"y":10,"width":240,"height":28,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":1,"version":1,"versionNonce":1,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"美国家庭资产构成变化","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"美国家庭资产","lineHeight":1.25,"baseline":18},
+
+    {"id":"re-before","type":"rectangle","x":30,"y":70,"width":180,"height":100,"angle":0,"strokeColor":"#e8590c","backgroundColor":"#ffd8a8","fillStyle":"hachure","strokeWidth":3,"strokeStyle":"solid","roughness":1.2,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":2,"version":1,"versionNonce":2,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"re-before-label","type":"text","x":45,"y":80,"width":150,"height":50,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":3,"version":1,"versionNonce":3,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":14,"fontFamily":1,"text":"过去几十年\n🏠 房地产 > 📈 股票\n现金 ~15%","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"过去","lineHeight":1.25,"baseline":18},
+
+    {"id":"arrow","type":"arrow","x":220,"y":120,"width":60,"height":0,"angle":0,"strokeColor":"#2f9e44","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":4,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":4,"version":1,"versionNonce":4,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"points":[[0,0],[60,0]],"startArrowhead":null,"endArrowhead":"arrow"},
+
+    {"id":"re-now","type":"rectangle","x":290,"y":70,"width":180,"height":100,"angle":0,"strokeColor":"#2f9e44","backgroundColor":"#b2f2bb","fillStyle":"hachure","strokeWidth":3,"strokeStyle":"solid","roughness":1.2,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":5,"version":1,"versionNonce":5,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"re-now-label","type":"text","x":305,"y":80,"width":150,"height":50,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":6,"version":1,"versionNonce":6,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":14,"fontFamily":1,"text":"首次逆转\n📈 股票 > 🏠 房地产\n现金 ~10%","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"现在","lineHeight":1.25,"baseline":18},
+
+    {"id":"risk","type":"rectangle","x":80,"y":210,"width":340,"height":60,"angle":0,"strokeColor":"#e03131","backgroundColor":"#ffe3e3","fillStyle":"hachure","strokeWidth":3,"strokeStyle":"solid","roughness":1.2,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":7,"version":1,"versionNonce":7,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"risk-text","type":"text","x":95,"y":220,"width":310,"height":40,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":8,"version":1,"versionNonce":8,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":14,"fontFamily":1,"text":"⚠️ 风险：1929年仅5%美国人持股\n→ 现在55% → 30-50%下跌概率=100%","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"风险","lineHeight":1.25,"baseline":18},
+
+    {"id":"bot","type":"text","x":80,"y":300,"width":340,"height":30,"angle":0,"strokeColor":"#868e96","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":9,"version":1,"versionNonce":9,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":14,"fontFamily":1,"text":"房地产「账面财富」= 卖后买同一市场 = 零真实收益","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"bot","lineHeight":1.25,"baseline":18}
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}
