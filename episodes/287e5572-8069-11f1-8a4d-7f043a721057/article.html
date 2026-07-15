@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto 已见证 ENS、BonkDAO 与 VVV 风波——DeFi 治理的未来在哪里？</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 0;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+    background: #fff;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #888;
+  }
+  .meta span { margin: 0 8px; }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1971c2;
+    color: #111;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 12px;
+    color: #333;
+  }
+  p {
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0 32px;
+  }
+  @media (max-width: 600px) {
+    .overview { grid-template-columns: 1fr; }
+    article { padding: 32px 16px 48px; }
+    h1 { font-size: 24px; }
+  }
+  .card {
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card-red    { background: #fff5f5; border-left: 4px solid #e53e3e; }
+  .card-orange { background: #fffaf0; border-left: 4px solid #dd6b20; }
+  .card-blue   { background: #ebf8ff; border-left: 4px solid #3182ce; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #805ad5; }
+  .card-green  { background: #f0fff4; border-left: 4px solid #38a169; }
+  .card-yellow { background: #fffff0; border-left: 4px solid #d69e2e; }
+  .card strong { display: block; margin-bottom: 4px; }
+  blockquote {
+    margin: 24px 0;
+    padding: 16px 20px;
+    background: #f7fafc;
+    border-left: 4px solid #3182ce;
+    font-style: italic;
+    color: #2d3748;
+    border-radius: 0 4px 4px 0;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-style: normal;
+    color: #718096;
+  }
+  .quotes-section {
+    margin: 32px 0;
+  }
+  .quote-item {
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-style: italic;
+    line-height: 1.7;
+  }
+  .quote-item .attr {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-style: normal;
+    color: #718096;
+  }
+  .qt-blue   { background: #ebf8ff; border-left: 4px solid #3182ce; }
+  .qt-green  { background: #f0fff4; border-left: 4px solid #38a169; }
+  .qt-yellow { background: #fffff0; border-left: 4px solid #d69e2e; }
+  .qt-purple { background: #faf5ff; border-left: 4px solid #805ad5; }
+  .qt-red    { background: #fff5f5; border-left: 4px solid #e53e3e; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+  }
+  footer a { color: #3182ce; }
+  .gloss {
+    font-size: 14px;
+    color: #718096;
+    background: #f7fafc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 12px 0;
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Crypto 已见证 ENS、BonkDAO 与 VVV 风波——DeFi 治理的未来在哪里？</h1>
+  <div class="meta">
+    Laura Shin 主持 · 嘉宾 Nick Almond & ProfIt
+    <span>|</span> Unchained Podcast
+    <span>|</span> 2026 年 7 月
+  </div>
+</header>
+
+<h2>本期为何值得关注</h2>
+
+<p>DAO 治理正在经历一场历史性的压力测试。2026 年 7 月发生的三起事件——ENS DAO 创始人夺权、BonkDAO $2000 万国库被抽干、以及 Dragonfly 投资 Venice 引发的「代币 vs 股权」争论——在同一时间点上爆发，暴露了 DAO 1.0 模型的系统性缺陷。</p>
+
+<p>Laura Shin 邀请了两位站在治理前沿的嘉宾：Nick Almond，Cheetah Foundation 的治理负责人，同时也是 Jito 和 Gitcoin DAO 治理结构的设计者；ProfIt，MetaDAO 的联合创始人，正在用决策市场构建一种完全不同的治理范式。这场对话既是 DAO 1.0 时代的验尸报告，也是 DAO 2.0 的路线图。</p>
+
+<div class="overview">
+  <div class="card card-red">
+    <strong>🔴 ENS DAO 内爆</strong>
+    创始人用 3% 代币阻断安全委员会，将超 1 亿美元国库转向基金会——DAO 史上最具争议的夺权事件。
+  </div>
+  <div class="card card-orange">
+    <strong>🟠 BonkDAO $20M 蒸发</strong>
+    攻击者提交一份伪装提案，仅 7 个钱包投票的情况下通过，暴露了治理冷漠的致命代价。
+  </div>
+  <div class="card card-blue">
+    <strong>🔵 决策市场 vs 投票</strong>
+    MetaDAO 用交易取代投票——"我们不是 pro governance，我们是 pro oversight"。
+  </div>
+  <div class="card card-purple">
+    <strong>🟣 代币 vs 股权</strong>
+    VVV 效用代币引发了关于「代币能否承载真实价值」的行业级辩论——代币优先模式正在成为新方向。
+  </div>
+</div>
+
+<h2>一、ENS DAO：一场精心策划的夺权</h2>
+
+<p>ENS DAO 曾经是以太坊生态中最受推崇的去中心化治理实验之一。但到了 2026 年，它展示了一个「成熟期 DAO」的所有典型病症：错综复杂的工作组网络、持续流出国库的资助系统、以及不断累积的社区不满——关于支出效率、产出质量和治理透明度的质疑持续发酵。</p>
+
+<p>导火索是 ENS Labs COO Katherine Wu 提出的一项提案：将国库管理权从 DAO 移交给一个基金会。理由听起来合理——低投票率导致决策困难，基金会可以更高效地处理日常财务。但与此同时发生了一件更具争议的事：ENS 联合创始人 Nick Johnson 用自己的代币投票，阻止了安全委员会的续任。</p>
+
+<div class="gloss">
+<strong>关键细节</strong>：Nick Johnson 在 Snapshot（信号投票）中没有投票，但在链上执行投票中突然投出决定性的一票。Laura Shin 的判断是——如果这是一个匿名鲸鱼做的，"那肯定会被视为 governance attack"。
+</div>
+
+<p>结果是一个连锁效应：安全委员会被解散，新委员会的构成由 Nick 主导，基金会最终接管了超 1 亿美元的国库。以太坊社区的反应是震惊和失望——"一个曾经承载着去中心化梦想的标杆项目，最终选择了放弃"，Nick Almond 评论道。</p>
+
+<p>但这不是一个简单的「好人 vs 坏人」叙事。ENS Labs 在过去两年中确实花费了约 2000 万美元进行开发，而产出却十分有限——规划了两年的 L2 方案 Namechain 最终被放弃，多个产品未能上线。ProfIt 的评论很直接："如果 ENS 是私有公司，每月的烧钱速度会是一个红旗。"从创始人的角度，看到一个无法有效决策的 DAO 在消耗他毕生心血的项目的资源，选择介入似乎情有可原。</p>
+
+<h2>二、投票冷漠症：3% 如何变成半数</h2>
+
+<p>ENS 事件暴露了 DAO 治理中最根本的问题：投票冷漠。Nick Johnson 仅持有 ENS 代币总量的 3%，但因为投票率极低，他的票数竟然占到了安全委员会投票的近一半。这不是一个孤例——ENS 的投票参与率正在经历"长期而缓慢的衰落"。</p>
+
+<p>Nick Almond 一针见血地指出了核心："大多数代币持有者并不想花时间治理一个协议。"这不是什么新发现，但它的后果是系统性的：治理权倾向于集中在一小群「专业代表」和 DAO 治理爱好者手中，这些人跨 DAO 活动，逐渐形成了一种行业内的共享文化。表面上看起来像是社区治理，实际上变成了少数人的寡头统治。</p>
+
+<p>奇怪的是，高投票率也未必是好事。Jupiter DAO（JUP）在 Solana 上吸引了大量散户参与，投票率非常高，但结果是 Nick Almond 所说的"纯粹的混乱"——当大量缺乏专业知识的参与者涌入时，决策质量反而下降。ProfIt 给出了一个更根本的洞见：投票率本身不是目标，决策质量才是。理想情况下，"我们做出所有正确的决策，而只有一个人出现并花费最小的精力来做出那个决策"。投票变得必要，只是因为低投票率 + 无约束 = 捕获风险。</p>
+
+<h2>三、Jito 的精选委托制：一个务实的中位数</h2>
+
+<p>在投票混乱和中心化之间，存在一个中间地带——Jito DAO 的精选委托制。Nick Almond 分享了他们的实践：当 Jito 完成空投后，Solana 社区对 DAO 完全陌生，根本没有人参与投票。"权力被伪随机地分布在空投日获得代币的地址中"，这不是任何意义上的有效治理。</p>
+
+<p>基金会的应对是：紧急发现并精选了一组合格代表——不是那些靠领取治理工资为生的"专业代表"，而是 Solana 生态中的同盟者，他们对协议有真正的理解和利益对齐。这些代表被分配代币参与治理，大幅提升了决策质量。</p>
+
+<p>这个模型的关键在于「可撤销性」：代币持有者可以随时出现并推翻代表的决议。Solana 最近在协议层面引入了这一机制——验证者可以为网络提案投票，但代币持有者可以逐个提案覆盖代表的投票。Nick Almond 称这是"委托 + 撤销"的最优雅实现，结合了委托的效率和直接民主的最终控制权。</p>
+
+<h2>四、BonkDAO：一场 $2000 万的「冷漠攻击」</h2>
+
+<p>如果 ENS 事件是关于「治理被捕获」，那么 BonkDAO 事件则是关于「治理被遗忘」。2026 年 7 月 6 日，一个攻击者提交了一份提案，声称要"重建 DAO"，用华丽的词藻包裹了一条简单的指令：向提交者发送 4.4 万亿 BONK——当时价值约 2000 万美元。</p>
+
+<p>攻击者仅花费了 8820 亿 BONK（约 440 万美元）就达到了法定人数。在 18,000 个可能投票的钱包中，只有 7 个投了票。提案只有 1 天的时间锁，通过后立即执行——国库在无人注意的情况下被抽干。</p>
+
+<p>ProfIt 的判断非常明确：这甚至不是一个「投票机制」的问题。核心团队根本没有注意到提案上线——如果他们注意到了，他们有足够的代币来否决它。"我们有一个 Telegram 机器人和 Slack 机器人，在提案上线时通知我们。那个系统应该存在。"</p>
+
+<p>Nick Almond 补充了一个历史视角：2022 年，Compound DAO 被一个叫 Humpy 的人用类似手法攻击——利用大学区块链俱乐部放假的时机，在无人看守时通过恶意提案。"这本质上是冷漠攻击（apathy attack）——攻击者看到了没有人关注这个东西，它就那样被遗弃了。"</p>
+
+<p>至于法律后果？BONK 团队在 X 上声称已联系执法部门，但 Nick Almond 表示怀疑。此前 Mango Markets 的 Avi Eisenberg 案中，法官裁定"你不能欺诈一个智能合约"。攻击者完全遵循了 DAO 的治理规则——"违法吗？我不确定。"</p>
+
+<h2>五、决策市场：MetaDAO 的根本性替代</h2>
+
+<p>ProfIt 和 MetaDAO 提供了一种完全不同的思路：如果你不用投票，而是用交易来做决策呢？</p>
+
+<p>MetaDAO 的核心理念是：让参与者押注「什么对代币价值最有利」。因为参与者有直接的财务激励——如果市场错了，你可以通过反向交易获利——错误的决策会被套利纠正，不需要依赖任何人"花时间治理"的热情。</p>
+
+<blockquote>
+"we're not pro governance, we're pro oversight."
+<div class="attr">— ProfIt，定义 MetaDAO 的核心理念</div>
+</blockquote>
+
+<p>ProfIt 用一个 51% 攻击的例子说明了投票系统的根本缺陷：如果你持有 51% 的代币，你可以投票将整个国库转给自己——一个 $1000 万的国库，你的代币值 $500 万，但你能得到 $1000 万。投票无法防止这种利益冲突，因为投票者不需要承担错误决策的财务后果。而在决策市场中，攻击者的交易本身就会暴露其意图，且他们必须承担做错方向的经济损失。</p>
+
+<p>到目前为止，MetaDAO 已帮助 13 家公司从约 10,000 人筹集了超过 4000 万美元。一个值得注意的意外发现是：早期代币持有者往往会转化为早期用户。ProfIt 分享了一个加密信用卡产品的案例——在 MetaDAO 上筹款后，使用量翻了 10 倍，参与者变成了产品的营销者和用户。</p>
+
+<h2>六、VVV 代币：当效用代币撞上股权预期</h2>
+
+<p>2026 年最激烈的加密辩论之一，源于 Dragonfly 同时投资了 Venice（一家 AI 推理公司）的股权和 VVV 代币。问题在于：很多人买了 VVV 代币，以为它代表某种对 Venice 网络的所有权——但 VVV 实际上是一个效用代币。质押 VVV 可以获得 DM 代币，然后用 DM 支付 AI 算力费用。</p>
+
+<p>ProfIt 认为这个争议被夸大了。Venice 从始至终都清楚说明了 VVV 的性质——它不是股权。加密社区的愤怒更多是 PTSD：经历了太多团队"先承诺后跑路"的事件，人们默认将代币等同于某种权益主张。但 Venice 没有违反任何承诺。代币在熊市中涨了 8 倍，说明确实有真实的算力需求在驱动价值。</p>
+
+<p>Nick Almond 提供了一个更细致的观点：VVV 是近年来少数几个真正可行的效用代币之一——本质上是"算力永续合约"。但它面临一个根本性的不确定性：Venice 会把这笔钱用于改善代币经济，还是用于发展一个与代币无关的企业推理业务？"目前这个选择仍是完全开放的"。这就是同时拥有股权和代币的核心困境——两个资产类别有不同的利益相关者、不同的激励结构和不同的法律义务。</p>
+
+<h2>七、代币优先：新范式的崛起</h2>
+
+<p>VVV 争议的深层影响，是推动了整个行业开始认真思考一个根本问题：价值到底应该归属于代币还是股权？</p>
+
+<p>新的趋势正在形成。Morpho 公开声明"Morpho 代币是我们唯一在乎的资产，我们没有股权，只有一个无所有者的基金会"。Grass 紧随其后发布了类似声明。Jito 通过 DAO 公开投票确认"代币是系统中唯一有意义的资产"。而 MetaDAO 从一开始就没有股权——只有代币。</p>
+
+<p>ProfIt 用一个市场规模的类比来解释效用代币的价值天花板：商品期货市场的规模大约是股票市场的十分之一。如果效用代币类似于商品期货——用于获取某种资源的使用权——那么它们的总价值可能天然低于代表所有权的权益代币。这意味着，如果你作为投资者可以选择股权或效用代币，你可能会预期股权的回报更高。</p>
+
+<p>这也是为什么越来越多的项目选择「代币唯一」的路径：如果你同时提供两种资产，市场会自然地给股权更高的估值——代币持有者最终可能成为二等公民。</p>
+
+<h2>八、中心化浪潮与去中心化的真正价值</h2>
+
+<p>2025 年特朗普当选后，加密行业出现了一种明显的心态转变——"现在可以中心化了"。ENS 解散公共物品工作组、Aave 的治理变革、多个项目向中心化结构收缩，都是这一趋势的体现。</p>
+
+<p>但 Nick Almond 给出了一个有力的反论点：去中心化治理的真正价值不是效率，而是风险去中心化。他举了 ENS 的例子——如果你正在构建一个深度依赖 ENS 身份的产品，你需要知道这个协议不会突然改变，创始人不会"发疯"或转向。"如果你把一切都集中在创始人手中，任其随意决策，你就无法为这些资产建立长期的价值理论，也无法将这些东西集成到你的产品中。"</p>
+
+<blockquote>
+"decentralized governance mechanisms allow you to see the changes coming, and then you can respond in the market to it."
+<div class="attr">— Nick Almond</div>
+</blockquote>
+
+<p>这就是去中心化治理对「外部构建者」的承诺：不是让一切更高效，而是让一切更可预测。</p>
+
+<h2>九、基础设施停滞：Compound Governor 的诅咒</h2>
+
+<p>一个令人不安的事实是：几乎所有 DAO 都在使用同一个治理框架——Compound Governor Alpha/Bravo，一个约 2020 年发明的结构。五年过去了，几乎没有任何创新。</p>
+
+<p>ProfIt 非常直白地表达了他的怀疑："这让我觉得他们可能从一开始就不想让治理成功。"他的逻辑是：每个 DeFi 团队都有自己的业务要运营，花时间在治理创新上永远不是优先事项。但如果没有人改进核心机制，我们就是在默认接受一个已知不工作的系统。</p>
+
+<p>他提出了一个简单的思想实验：每月只允许一个提案，取质押代币最多的那个，在每月固定时间上线——这样每个人都知道"什么时候该参与"。这个想法如此简单，但几乎没有人尝试过。Nick Almond 补充说，这不是技术障碍，而是意愿问题：太多项目使用去中心化治理作为"监管套利"工具，而非真正的去中心化承诺。</p>
+
+<h2>十、DAO 的底部与新生</h2>
+
+<p>如果要从这场对话中提取一个元叙事，那可能是：「我们已经到达或接近了 DAO 的底部」。</p>
+
+<blockquote>
+"the sentiment towards DAOs can't get much worse than this."
+<div class="attr">— ProfIt</div>
+</blockquote>
+
+<blockquote>
+"any remaining uncaptured DAOs will get captured unless the teams and projects behind them are really committed to them. I think we're kind of seeing the end of the DAO 1.0 era."
+<div class="attr">— Nick Almond</div>
+</blockquote>
+
+<p>但底部不是终点。Nick Almond 指出，我们刚刚如此生动地目睹了所有失败模式——投票捕获、冷漠攻击、治理套利、无限期工作组——以至于下一个实验时代可以开始崛起了。MetaDAO 的决策市场、Jito 的精选委托、Gitcoin 的专业化子结构、Solana 的委托 + 撤销机制——这些都是新范式的早期信号。</p>
+
+<p>一个新的推动力正在出现：价值捕获代币。如果你想让代币承载真正的经济价值——链上回购、分红式分配、协议收入共享——中心化公司无法完成这些操作，因为法律结构和监管框架不允许。只有 DAO 这样的去中心化实体才能执行链上回购、代币销毁和协议收入分配。Nick Almond 预测："未来一年将变得很清楚——哪个资产会捕获价值，哪个最重要。"</p>
+
+<div class="quotes-section">
+<h2>核心金句</h2>
+
+<div class="quote-item qt-red">
+"it is just a little bit crazy that you just like throw all this money with no accountability over what is supposed to be a decentralized protocol with no fiduciary duty"
+<div class="attr">— ProfIt，评论 ENS 将超 1 亿美元国库移交给基金会的决定</div>
+</div>
+
+<div class="quote-item qt-blue">
+"the average token holder doesn't really want to spend their time governing a protocol"
+<div class="attr">— Nick Almond，解释 DAO 投票冷漠的根本原因</div>
+</div>
+
+<div class="quote-item qt-green">
+"we're not pro governance, we're pro oversight"
+<div class="attr">— ProfIt，定义 MetaDAO 的核心理念</div>
+</div>
+
+<div class="quote-item qt-purple">
+"any remaining uncaptured DAOs will get captured unless the teams and projects behind them are really committed to them"
+<div class="attr">— Nick Almond，对 DAO 1.0 时代的终局判断</div>
+</div>
+
+<div class="quote-item qt-yellow">
+"the sentiment towards DAOs can't get much worse than this"
+<div class="attr">— ProfIt，在 DAO 处于最低谷时的判断——但也意味着只能向上</div>
+</div>
+</div>
+
+<footer>
+<p>本文基于 Unchained Podcast 2026 年 7 月节目整理。<br/>
+<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5202176689.mp3" target="_blank" rel="noopener">收听完整节目 →</a></p>
+<p style="margin-top:12px;font-size:12px;color:#aaa;">
+本节目内容仅供信息和娱乐目的，不构成投资建议。嘉宾和主持人可能持有节目中讨论的资产。
+</p>
+</footer>
+
+</article>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEX in the City: Why the Supreme Court's FTC Ruling Could Rewire Crypto Regulation</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    color: #1a1a2e;
+    background: #fafafa;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  header {
+    padding: 60px 0 40px;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #0d1117;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #6c757d;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+  }
+  header .meta span { display: inline-flex; align-items: center; gap: 4px; }
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #e7f5ff;
+    color: #1971c2;
+  }
+  section { margin-bottom: 48px; }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #0d1117;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #e9ecef;
+  }
+  h3 { font-size: 18px; font-weight: 600; margin: 24px 0 12px; color: #212529; }
+  p { margin-bottom: 14px; color: #343a40; }
+  p strong { color: #0d1117; }
+  .topic-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 20px 0; }
+  .card {
+    padding: 18px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.55;
+    border-left-width: 4px;
+    border-left-style: solid;
+  }
+  .card.blue   { background: #e7f5ff; border-left-color: #1971c2; }
+  .card.orange { background: #fff4e6; border-left-color: #e8590c; }
+  .card.red    { background: #ffe3e3; border-left-color: #e03131; }
+  .card.purple { background: #f8f0fc; border-left-color: #862e9c; }
+  .card.green  { background: #ebfbee; border-left-color: #2f9e44; }
+  .card.yellow { background: #fff9db; border-left-color: #f08c00; }
+  .card strong { display: block; margin-bottom: 4px; }
+  blockquote {
+    margin: 24px 0;
+    padding: 24px 28px;
+    background: #f8f9fa;
+    border-left: 4px solid #1971c2;
+    font-style: italic;
+    line-height: 1.7;
+    border-radius: 0 8px 8px 0;
+    font-size: 16px;
+    color: #343a40;
+  }
+  blockquote .attr { display: block; margin-top: 10px; font-size: 13px; font-style: normal; color: #868e96; }
+  .gloss {
+    background: #fff3bf;
+    border-left: 4px solid #f08c00;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 16px 0;
+    color: #495057;
+  }
+  .gloss strong { color: #e8590c; }
+  .quotes { margin: 24px 0; }
+  .quote-item {
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left-width: 4px;
+    border-left-style: solid;
+    background: #f8f9fa;
+    line-height: 1.7;
+    font-size: 15px;
+    font-style: italic;
+  }
+  .quote-item .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    font-style: normal;
+    color: #868e96;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 2px solid #e9ecef;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #868e96;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    header h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    body { font-size: 15px; }
+    .topic-cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>DEX in the City：最高法院 FTC 裁决如何重塑加密监管</h1>
+  <div class="meta">
+    <span class="badge">DEX in the City</span>
+    <span>2026 年 7 月</span>
+    <span>嘉宾：Jesse · V</span>
+    <span>主持：KK Catherine</span>
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得关注</h2>
+  <p>2026 年 6 月底到 7 月初的几周内，加密监管领域发生了多件足以改变行业格局的大事，但奇怪的是——讨论度远低于它们的实际重要性。本期 DEX in the City 系统地梳理了三个核心主题：英国 FCA 发布最终加密规则手册、欧盟重新审视 MiCA 以覆盖代币化资产、以及美国最高法院推翻一项有着 91 年历史的先例。此外还延伸到 Boko Haram 的 AI 武器化问题和区块链分析用于保护濒危物种的正面案例，构成了一期信息密度极高的对谈。</p>
+
+  <div class="topic-cards">
+    <div class="card blue">
+      <strong>🇬🇧 英国 FCA 全面加密规则</strong>
+      6 月 30 日连续发布四份最终政策声明加指南手册，覆盖稳定币、市场滥用、资本金、DeFi——英国历时五年打磨的框架终于落地，2027 年秋季生效。
+    </div>
+    <div class="card orange">
+      <strong>🇪🇺 MiCA 2.0：重审代币化</strong>
+      欧盟委员会征求意见，拟将代币化资产和非欧盟稳定币发行方纳入监管。MiCA 通过才三年，技术版图已全然不同。
+    </div>
+    <div class="card red">
+      <strong>⚖️ 最高法院推翻 Humphrey's Executor</strong>
+      Slaughter 案终结 91 年先例——总统可随意解雇独立机构委员。加密监管将随每次总统选举剧烈摇摆。
+    </div>
+    <div class="card purple">
+      <strong>🤖 Boko Haram 的 AI 武器化</strong>
+      剑桥报告揭示恐怖组织如何系统性地将 LLM 用于武器调试和攻击规划——中性技术的责任边界在哪里？
+    </div>
+    <div class="card green">
+      <strong>🦔 TRM 追踪 1500 万美元野生动物贩运</strong>
+      链上分析协助执法机构发现东南亚非法野生动物贸易网络——加密在公益中的正面案例。
+    </div>
+    <div class="card yellow">
+      <strong>🌍 不要忽视美国以外的司法管辖区</strong>
+      三条稳定币监管路径（GENIUS、MiCA、FCA）正在分化，全球加密企业面临碎片化的合规环境。
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>英国 FCA：等了五年的加密「操作手册」</h2>
+
+  <p>6 月 30 日，英国金融行为监管局（FCA）发布了一整套加密资产监管最终政策声明——这被视作英国加密路线图的最后一块拼图。此次发布的内容包括四份最终政策声明加配套指南，实质上构成了一部全面规则手册，涵盖稳定币发行、市场滥用、审慎资本要求、信息披露，以及专门针对 DeFi 和金融犯罪的章节。</p>
+
+  <p>Jesse 在节目开头就表达了她的惊讶：「我真的被震撼到了——业界对 FCA 这些规则的讨论太少了。它们意义重大，在不少方面是积极的，显示了行业推动政策朝着正确方向发展的效果。同时也有一些令人关切的信号。」</p>
+
+  <p>KK Catherine 的评估是平衡的：这个框架在哲学上「将加密当作传统金融来对待」——有好处也有坏处。好消息是 FCA 回应了行业反馈，大幅削减了稳定币的资本金要求，并且规则要到 2027 年秋季才正式生效，给了所有人时间准备。坏消息是合规成本对小企业来说可能是致命的。核心问题是：「每个加密公司都需要问自己——遵守这套体系，值得换取保留英国客户的资格吗？」</p>
+
+  <h3>英国 vs 欧盟：迟到但更轻量</h3>
+
+  <p>英国和欧盟走的是截然不同的监管路径，V 对此有一个精准的概括：MiCA 是加密领域的 GDPR——先行、全面、但也刚性。MiCA 在 2023 年生效时，稳定币的重要性远不及今天，预测市场这样的新兴用例甚至不在考虑范围内。而当英国终于打磨出自己的框架时，它得以从 MiCA 的经验中学习——用更灵活的方式制定规则，将大部分细节通过 FCA 手册和行业咨询来落地，而不是写入僵硬的法律条文。</p>
+
+  <p>Jesse 补充了一个有趣的视角：GDPR 曾成为全球隐私法的模板，但在加密监管上，英国明显选择了不同的方向。这可能正是因为加密技术变化太快——先行者未必能享受模板效应，反而可能因为框架过于刚性而成为后来者的反面教材。</p>
+
+  <div class="gloss">
+    <strong>作者概括</strong>：英国最终选择了与欧盟不同的路线，这本身就是一个值得深思的信号——在技术变化速度远超立法周期的领域，「第一个立法」不一定是「最好的立法」。
+  </div>
+</section>
+
+<section>
+  <h2>MiCA 2.0：为什么欧盟要重开旧案？</h2>
+
+  <p>MiCA 的第一部分在 2023 年进入实施阶段，到 2026 年 7 月 1 日才全面生效——但几乎与此同时，欧盟委员会已经开始征求意见，准备将 MiCA 的覆盖范围扩大到代币化资产和稳定币。在加密世界里，三年足以让整个话题格局翻转：2023 年 MiCA 通过时，几乎没人在会议上重点讨论代币化和稳定币；而到 2026 年，这两个话题已经无处不在。</p>
+
+  <p>另一个关键的扩展方向是将非欧盟稳定币发行方纳入管辖。这意味着美国的稳定币发行方——比如 Circle 或 MoonPay——在欧盟展业时，也必须遵守与欧盟本地发行方「可比的标准」。这里有一个结构性矛盾，KK Catherine 称之为「荒谬」：GENIUS 法案（美国）的稳定币要求与 MiCA（欧盟）的稳定币要求直接冲突。一个全球化的无国界支付技术，正在被三个主要司法管辖区互不兼容的规则切割成碎片。</p>
+
+  <p>Circle 采用单一发行模型——全球一个实体发行 USDC；MoonPay 则采用多实体模型——不同司法管辖区设立不同实体各自发行。在监管标准碎片化的世界里，多实体模型更灵活，但运营成本更高；单一模型更简洁，但在跨辖区合规上却面临更大的结构性挑战。Circle 正在欧洲推动政策调整——但这条路注定漫长。</p>
+</section>
+
+<section>
+  <h2>DeFi：同一个问号，三个不同的答案</h2>
+
+  <p>三位主持人对 DeFi 监管的讨论揭示了一个现实：五年过去了，我们依然不知道如何监管——或者说「要不要监管」——去中心化金融。</p>
+
+  <p>英国 FCA 在最终规则中将 DeFi 列入单独的咨询文件，承诺将就「去中心化的客观指标」进一步征求意见——这个措辞本身就说明了问题：监管机构甚至还没有就「什么是去中心化」达成定义层面的共识，更不用说如何监管了。欧盟 MiCA 在最初的设计中刻意排除了 DeFi，这个决定曾让行业普遍感到宽慰，但现在 MiCA 2.0 的讨论又把它拉了回来。而美国——Jesse 回忆，五年前她在欧洲参加 MiCA 讨论时就在问「怎么监管 DeFi」，五年后回到美国，这个问题上没有任何实质进展。</p>
+
+  <p>Jesse 的一句评价让这个局面显得既现实又不至于悲观：「监管机构对 DeFi 的理解确实在加深，应该给予肯定。但关于『如何让 DeFi 保持安全』，我不知道我们比五年前更接近答案。」</p>
+</section>
+
+<section>
+  <h2>最高法院 Slaughter 案：91 年先例的终结</h2>
+
+  <p>这可能是 2026 年最高法院最重要的裁决之一，但在加密领域几乎没有引发应有的讨论——本期节目对此做了可能是全网最详尽的分析。</p>
+
+  <p>案件背景直截了当。1935 年，总统 Franklin Roosevelt 因政策分歧解雇了 FTC 委员 William Humphrey。Humphrey 起诉，最高法院裁定总统无权这样做——这就是 Humphrey's Executor 案。此后的 91 年里，它保护了 SEC、CFTC、FTC、FCC 等「独立机构」的委员不被随意解职。委员只能因渎职、欺诈等「正当事由」（for cause）被免职，而不能因为与总统的政策或政治观点不合而下台。</p>
+
+  <p>2026 年，历史以几乎完全相同的方式重演：FTC 委员 Rebecca Slaughter（V 的法学院同窗）被总统无理由解职，她提起诉讼。最高法院推翻了 Humphrey's Executor，多数意见的依据是宪法文本——「行政权属于总统」——推论出国会不能创设总统无法监督和撤换的官员。</p>
+
+  <p>V 解释说，多数意见的自称的「原旨主义」方法论在这个裁决中扮演了关键角色：当前所有共和党任命的大法官都认同原旨主义或文本主义，这意味着他们严格按照宪法文本的字面含义来解释，而不推测立宪者的意图。</p>
+
+  <blockquote>
+    「一个给予亲加密政府更多 SEC 和 CFTC 控制权的决定，也会把完全相同的权力交给未来一个政策取向完全相反的政府。这把刀两面都有刃。」
+    <span class="attr">— V, DEX in the City</span>
+  </blockquote>
+
+  <h3>「为什么那部法案叫 Clarity？」</h3>
+
+  <p>Jesse 对裁决的批评直指问题的核心——而且她用了一个让人过耳不忘的比喻：</p>
+
+  <blockquote>
+    「所有加密创业者、所有技术创新者——他们最想要的东西之一，就是确定性和清晰度。不然你觉得为什么那部法案叫 Clarity？而这个裁决将带来恰恰相反的效果：事情永远不会确定，一切都会随总统心情变化。」
+    <span class="attr">— Jesse, DEX in the City</span>
+  </blockquote>
+
+  <p>这个悖论是真实的：一个旨在使行政体系更简洁高效的裁决，却制造了更深层的不确定性。总统选举现在直接成为加密监管的开关——不需要再等委员任期逐年到期，新政府上任即可全面替换机构领导层，从第一天起重塑监管优先事项。前 FERC 主席们联合发表文章指出，这个裁决不仅违宪，而且会吓退有专业能力的人接受这些职位——「如果委员只是当权者的附庸，谁还愿意来？」</p>
+
+  <p>Jesse 还指出了一个更具体的风险：SEC 和 CFTC 的委员席位已经空缺了一段时间，这可能不是疏忽，而是总统以一种沉默的方式在施加影响力。而几年后，当加密行业可能面临一轮监管清算时，这些空缺席位由谁填补、以什么姿态执行法律，将成为决定性的变量。</p>
+</section>
+
+<section>
+  <h2>剑桥报告：Boko Haram 已将 AI 系统性地武器化</h2>
+
+  <p>Jesse 用「深呼吸一下再听」来引入这个话题。剑桥大学发布了一份基于与 Boko Haram 前成员面对面访谈的报告，揭示了一个恐怖组织如何将大型语言模型整合为组织能力的核心组成部分。</p>
+
+  <p>Boko Haram 不是一个远处的名字：他们在 2014 年绑架了 276 名尼日利亚女学生，其中超过 80 人至今下落不明；强迫超过 2000 名女性成为性奴隶；杀害数万人，导致超过 200 万人流离失所。剑桥报告中最令人不安的不是 Boko Haram 在使用 AI——坏人会用技术从来就不是新闻——而是他们使用 AI 的 <strong>系统性、组织性和有效性</strong>。</p>
+
+  <p>报告中有一个跨越七年的对比，Jesse 称之为「AI 世界的前后图景」。2017 年，Boko Haram 战士缴获了尼日利亚军队的先进步枪，但无法让它们工作——他们有 Google，有 PDF 手册，有 YouTube 教程，但技术与执行之间的距离还是太远了。2024 年，同样的组织，同样的武器——但这一次，他们把武器的识别编号输入聊天机器人，AI 告诉他们如何装填、维护和使用。他们拥有专门的 AI 作战单元，有些单元就坐在前线附近的车辆中实时分析下一步行动。他们的「CTO」现在是 AI 专家。他们通过圣战网络互相培训——声称自己「在拍电影」或用多个账户来绕过 LLM 的安全护栏。</p>
+
+  <div class="gloss">
+    <strong>作者概括</strong>：危险的信息一直存在于互联网上。2017 年和 2024 年的区别不在于信息的有无，而在于从「知道」到「能做」之间的距离——AI 将这段距离压缩到了零。
+  </div>
+</section>
+
+<section>
+  <h2>中性技术的责任边界：加密能为 AI 提供什么教训？</h2>
+
+  <p>Jesse 没有用恐慌的语气来结束这个话题，而是提出了一个更深层的问题：加密花了十年与「中性技术被恶意使用」的现实共存——但没有选择直接禁止底层技术，而是发展出了链上分析、地址筛查、智能合约审计和漏洞赏金。这个经验对 AI 有意义吗？</p>
+
+  <p>她的结论是：AI 既相同，又不同。相同之处在于，加密的经验证明了一个原则——<strong>中性技术本身不应该停止中立</strong>。不同之处在于，AI 不是被动工具，它是共犯（co-conspirator）。LLM 主动参与武器调试的方式，与区块链作为记录层的被动角色在本质上不同。而且——这也许是整个讨论中最刺痛的部分——Boko Haram 的受害者没有起诉的权利。非洲没有那种法律基础设施。你不能指望一个被绑架的女孩的家人去提起产品责任诉讼。</p>
+
+  <blockquote>
+    「我们不可能一边要求技术是全球化和无边界的，一边忽视它在边界之外造成的后果。说『坏人在用中性技术』这句话是不够的——然后呢？」
+    <span class="attr">— Jesse, DEX in the City</span>
+  </blockquote>
+
+  <p>KK Catherine 从另一个角度切入：也许最终的约束不会来自立法，而会来自传统的民事诉讼。人们已经在起诉 AI 平台——你协助了某个犯罪，你给了某人自杀的建议。原告也许是推动 AI 治理的真正力量。但正如 Jesse 指出的，民事诉讼的边界止于有法律基础设施的地方。</p>
+
+  <p>节目中还讨论了 Section 230——这条 1990 年代通过的法律为互联网平台提供了第三方内容的免责保护。它是立法者<strong>主动想要支持互联网发展</strong>的时代的产物。加密没有 Section 230 的等价物，AI 也没有。而今天，英国和欧盟正在通过金融监管作为「后门」来约束 AI 基础设施层——这种间接监管是否会成为趋势，目前还是一个开放的问题。</p>
+</section>
+
+<section>
+  <h2>穿山甲、TRM 与加密的公益一面</h2>
+
+  <p>在讨论了一整期的严峻话题之后，KK Catherine 用一个精心选择的「好消息」来收尾——这既是一个真实的正面案例，也是在提醒行业：加密技术的工具性是双向的。</p>
+
+  <p>穿山甲是地球上被贩运最多的哺乳动物——被猎杀取鳞片用于传统医药，被猎杀取肉，极度濒危。非法野生动物贸易的金融端长期缺乏执法关注，但正如 KK Catherine 引述的说法——「钱会说真话」。区块链分析公司 TRM 追踪到一条基于东南亚的单一网络，涉及 1500 万美元的加密资金流动，涵盖虎骨、象牙、犀牛角的非法交易。</p>
+
+  <p>V 补充说，她在国家安全领域处理过类似案件——非法野生动物贸易的洗钱手段极其复杂，是洗钱犯罪中最难追踪的类型之一。而区块链的透明性在这种案件中提供了传统金融追踪无法比拟的能力。</p>
+
+  <blockquote>
+    「动物无法为自己发声——所以有人为它们而战，是一件让人欣慰的事。」
+    <span class="attr">— Jesse, DEX in the City</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+
+  <div class="quotes">
+    <div class="quote-item" style="border-left-color: #1971c2;">
+      「所有加密创业者、所有技术创新者——他们最想要的东西之一，就是确定性和清晰度。不然你觉得为什么那部法案叫 Clarity？而这个裁决将带来恰恰相反的效果：事情永远不会确定，一切都会随总统心情变化。」
+      <span class="attr">— Jesse，论 Slaughter 案对加密行业的影响</span>
+    </div>
+
+    <div class="quote-item" style="border-left-color: #2f9e44;">
+      「一个给予亲加密政府更多 SEC 和 CFTC 控制权的决定，也会把完全相同的权力交给未来一个政策取向完全相反的政府。这把刀两面都有刃。」
+      <span class="attr">— V，论裁决的双向政治效应</span>
+    </div>
+
+    <div class="quote-item" style="border-left-color: #f08c00;">
+      「我们不可能一边要求技术是全球化和无边界的，一边忽视它在边界之外造成的后果。说『坏人在用中性技术』这句话是不够的——然后呢？」
+      <span class="attr">— Jesse，论 AI 与中性技术的责任困境</span>
+    </div>
+
+    <div class="quote-item" style="border-left-color: #862e9c;">
+      「我不是在散播 AI 恐慌。问题是：我们知道坏人会用技术，我们也知道他们会用 AI。那责任是什么样子？这不是『不是我们的问题』，不能就这么算了吧。」
+      <span class="attr">— Jesse，论技术平台的道德责任</span>
+    </div>
+
+    <div class="quote-item" style="border-left-color: #e8590c;">
+      「不要忽视其他司法管辖区。即使你是一家美国公司，你也触碰到了欧洲、触碰到了英国。有效隔离一个司法管辖区比你想象中难得多。」
+      <span class="attr">— KK Catherine，对全球加密企业的合规提醒</span>
+    </div>
+
+    <div class="quote-item" style="border-left-color: #e03131;">
+      「任何立法都不能让完美成为良好的敌人。先通过一些东西——即使不完美——也比什么都没有好。」
+      <span class="attr">— KK Catherine，论 MiCA 的「先有再修」价值</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>原文播客：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5810860271.mp3">DEX in the City · 2026 年 7 月</a></p>
+  <p style="margin-top: 8px;">本文基于播客转录自动生成，由 <a href="../../">PodDeck</a> 提供</p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,867 @@
+Speaker 1: You're watching TBPN. Today is Tuesday, 07/14/2026. We are live from the TBPN UltraDome. Temple Of Technology. The fortress of finance.
+The capital of capital. Let me tell you about ramp.com. Time is money. Save both. Easy use corporate cards, bill pay, accounting, and a whole lot more all in one place.
+IBM is absolutely nuking. The stock is down 25%. Let me see if I can pull this
+Speaker 2: up. Boom.
+Speaker 1: IBM well, that is a crazy chart. What is that? The that's the one week chart? It looks better on the five year because the stock is actually way up in the AI era since the launch of ChatGPT. IBM has done really, really well.
+The stock has basically doubled since the introduction of ChatGPT during the AI era. You know, are you going to be a winner or a loser? Are you going to get steamrolled, slopped, something like that? But it's been doing well up until today when the company reset the narrative around their server business specifically. So, the high level reason that IBM is not well positioned in the token path to use the Brad Gerstner and Gavin Baker parlance is that AI spending is currently flowing into GPUs, memory, networking, hyperscale cloud computing, and frontier model inference.
+IBM is not a major winner in those categories. So just to refresh on IBM because interesting business with a great name, International The Business first business machines they made were punch card systems. They made clocks. Like, it's like you're running a business. You need a machine.
+Speaker 2: Need a
+Speaker 3: great clock.
+Speaker 1: You're gonna need a clock. No. You're gonna have really Not any clock. Like a clock that works really well. That's right.
+Professional clock. Clock Pro Max.
+Speaker 3: On time.
+Speaker 1: Exactly. Clock Pro Max.
+Speaker 3: It's lighter, thinner. It's the lightest, thinnest, best looking,
+Speaker 1: You don't want a fast clock. But tabulating machines, basically a bunch of different ways to process information mechanically. And that foundational insight, you know, was pretty simple. It was businesses will continually pay forever to automate record keeping. And at a high level, that's sort of been working forever and they're continuously know
+Speaker 3: if they ever tried to sell a clock as a SaaS product, time as a service?
+Speaker 1: If you really, really squint Red Hat Kubernetes, it's keeping time between distributed systems, maybe there's something there. But when you're running a database across a bunch of different servers, there's some timekeeping aspect that's important. But, no. I don't think they ever did. The IBM that people know, the mainframe business, that started in 1964.
+System three sixty, it was a compatible family of devices, which is interesting. It's not just one people think one mainframe, but it was actually a whole bunch of different systems that you can upgrade piecemeal without redesigning the entire workflow. So you need a little bit more storage, you upgrade that. You need a little bit more compute, you upgrade that. And this turned IBM into the dominant supplier of corporate computing banks, insurers, airlines, manufacturers, governments.
+They all used IBM as the central system for their hardware and software. This was the mainframe era. Then And the whole reason that IBM, in particular, became dominant in mainframes was they focused on high reliability, long customer relationships, expensive switching costs. It's very difficult once you're in the IBM ecosystem to weed your way out. Proprietary software tied to the hardware, certain software, would only run on IBM hardware so you could replatform.
+You had to rip everything out, which is very difficult for a large bank or a large airline in the sixties and seventies. Good for business. And they also had huge huge support and consulting contracts associated with all the software and the hardware that they were delivering, sort of a precursor to the Ford deployed engineer if you squint a little bit. But the PC era was the real turning point. So the IBM PC launched in 1981.
+This legitimized the personal computing market and set up two new companies, Intel and Microsoft, for to capture immense value during the next computing boom. So the IBM PC ran Windows and used an Intel chip. At the time, IBM was doing 30,000,000,000 in revenue. Intel was doing less than $1,000,000,000 and Microsoft was only doing $17,000,000 in sales. And so I think Microsoft had like 120 employees.
+And all of a sudden, two companies became ultimately way, way, way bigger, like 10 times as big. So the market eventually fractured and proposals to break IBM into separate companies started to pop up. The market fractured because once you had, you know, an Intel chipset and Windows operating system, you could run Windows on a different chipset and you could you have a different chipset with a different operating system and the value capture piece, there were just other PC manufacturers that came in and then obviously Apple with their, you know, anti IBM like challenge the man campaign. So the market was fracturing and there was a bunch of proposals during the eighties and nineties to break up the country break up the company into separate units. Lou Gerstner, who became CEO in 1993, rejected that idea.
+And he said, We do not necessarily need to manufacture every piece of technology. We need to be the company that makes all of it work together. We have to work together. We're going to be the integrator, the systems integrator. His strategy ultimately produced three things: IBM Global Services, large outsourcing contracts, and a vast consulting organization.
+And that's a lot of what we know about IBM today. Services businesses do have limitations though, lower margins, higher headcount, slower organic growth, price competition, etcetera. In 2019, IBM acquired Red Hat for thirty four billion dollars and spun off its traditional managed infrastructure outsourcing business in 2021. So today, you can think of IBM as sort of three key businesses. They have software, which is 44% of the business.
+That's at 80% gross margins. Great business. 31 of their business is consulting. That's under 30% gross margins, though. And then 23% of the business is infrastructure, which is just shy of 60% gross margin.
+And so for the last three years, the stock's been doing really well, up 77% before dividends, and the Red Hat acquisition started paying off. And the z 17 mainframe cycle was surprisingly solid, But the problem is is that they just called out a shift away from mainframe spending with customers shifting capital spending towards the physical AI build out. Demand for AI and associated hardware is strong, but IBM is losing share of their customers' technology budget. IBM still does have a strong asset for the AI era, Red Hat OpenShift, which is their enterprise Kubernetes platform for orchestrating workloads across multiple computers. But there are so many other companies offering AI capabilities up and down the stack that they're getting a little hammered today with the worst, the biggest share drop in its one hundred and fifteen year history.
+Rough day for IBM, but an interesting story none the less. Let me tell you about Shopify. Shopify is the commerce platform that grows with your business and lets you sell in seconds online, in store, on mobile, on social, on marketplaces, and now with AI agents. We have a great show. We have seven guests coming on.
+Lots of fundraising news across VC firms and I'm thinking we're back. We're totally back. Dylan Byers is also coming up coming on from Huck to break down the Warner Brothers discovery Yesterday. News.
+Speaker 3: It was over. We had no fundraising news. Yeah. Today, we're back.
+Speaker 1: I think it's just like slow weekends. People like
+Speaker 3: to No one wants to announce.
+Speaker 1: Tuesday, Wednesday, Thursday. On a Monday. Yes. But Demis Hasabas from DeepMind, the DeepMind chief, he has called for a US led body to test frontier AI models. He says society has a precious window to prepare for technology advancing at historic speed.
+He's a Nobel laureate. The Financial Times has the story and there's an article that he posted on X that will sort of click through and give you the takeaways. From the Financial Times, Google DeepMind chief executive Demis Hasseidis has called for the creation of a US led standards body to test new frontier class AI models for national security threats arguing that urgent action from international regulators is needed to address the risks posed by rapidly advancing technology. I'm surprised has he never proposed this before? This feels like something that has been proposed many, many times, but maybe I'm just I'm just misremembering the AI 2027 people and the AI 2,040 people and the OpenAI white paper and what Anthropics said, like, feels like we've seen this before, like we need to have a regulatory body of some sort.
+All the way going back to when the All In podcast was talking about an FDA for AI back like two or three years ago. But it's now here and it's coming from a DeepMind executive which hits a little harder. The warning from Hassabis, a Nobel laureate who leads Google's AI efforts, follows the White House's abrupt export ban on Anthropic's most advanced models last month alongside a fresh wave of warnings about the potential for AI to disrupt the global economy and financial system. We talked a little bit about The Economist. They got to see they got together with a much more moderate proposal I think because it wasn't actually it wasn't actually calling for any sort of change to the development of AI whatsoever or the And
+Speaker 3: I'm just saying it it could get AI could get better in the next ten years. Yes. Which is a very sort of
+Speaker 4: Could get a lot better.
+Speaker 1: That's what they didn't just say a
+Speaker 2: lot better.
+Speaker 4: They said a lot better.
+Speaker 1: But May. But the actual pitch from from the the economists was we need to have economists and government officials think about responses. If there is job displacement from AI? What is the impact? What will the reaction be?
+So to sort of like prep the legislation so you can be more ready when things start to happen, whether that's retraining or stimulus or jobs programs or all sorts of different things. So this intervention from Demis is the most detailed proposal yet for AI regulation from Google, which is vying for AI leadership with Anthropic and OpenAI. Quote, we've already seen the challenges frontier models pose for cybersecurity, good point, and other threats including nuclear and bio risks may soon emerge as capabilities continue to advance. The rapid progress we're seeing in AI requires a new approach to testing frontier AI model capabilities that is dynamic, adaptable, and rigorous. The U.
+S. Is well positioned given its economic and technical standing to take the first step in developing such a framework. My big question is it seems pretty easy to go to the leading labs and say, hey, we you have to go through this process. But do we have a good framework in The United States for reviewing code that China just sort of throws over here open sourced? Because if you mean, as we've seen with the Kimi K2 and GLM, like, if you tie someone up in an FDA like review for even six months, let alone a year, let alone what the FDA timelines are for drug development, five years, ten years sometimes, you are going to have open source models that are way, way more advanced.
+Well, you have to review this very quickly.
+Speaker 3: Here's the name. New frontier model.
+Speaker 2: Yeah.
+Speaker 3: It's going through a six month review,
+Speaker 2: Yeah.
+Speaker 3: Let's say, maybe it's really like a one month review and then there needs to be
+Speaker 1: With AI, it could be a two minute review.
+Speaker 3: Yeah. Who I would hope. But let's say it's like a a three month
+Speaker 5: Yeah.
+Speaker 3: A three month delay or six month delay. Then when it eventually does get released Mhmm. It it gets distilled likely within even less time than that Mhmm. When it's publicly available. Yeah.
+Open weights. Yeah. I would like to see So we keep seeing these like letters and proposals. Yep. And they always come, one, with a request for urgent action.
+Mhmm. But they rarely come with super concrete scenarios, like Yes. Near term scenarios. I want Here's what's gonna happen in six months. Here's what's gonna happen in twelve months.
+Speaker 1: Or even just a a like a trigger. Like, it would be interesting if somebody said, if the unemployment rate goes above 10%, I would recommend a stimulus check of $1,000 be sent to everyone and means tested so it only goes to the middle class and lower class. Like, that is a very reasonable thing. That's basically what happened during COVID. Right?
+Like, the unemployment rate went to 15% and then boom, there were checks in the mail for everyone. And that's a very concrete Yeah. Proposal that you could say Yeah. I this happens, just want then this happens.
+Speaker 3: Yeah. I want I someone like Demis. Yeah. Basically, the the world of less wrong and AI 2027 and 2040. Yep.
+They're willing to lay out super Sure. Sure. Scenarios. And they they can at times come across as very sci fi. Yeah.
+But there's always, at least so far, been some element of of reality in them.
+Speaker 1: I hear what you're saying. I I
+Speaker 3: I want somebody who's like Yeah. Generally more like, kind of moderate Mhmm. To come in and just say, like, here's here's a few potential scenarios and this is what I think And and because I don't believe it's you know, Demis could suggest what he thinks that the government should do. Mhmm. The US government, in this case Mhmm.
+He's, you know, encouraging like Sure. US watchdog. Yeah. He's in London, though. I think it's gonna be on our lawmakers and our government to understand in these different scenarios, at least start thinking through in these different scenarios, how would we approach them.
+Speaker 1: Mhmm. Mhmm. Yeah. I just I always have a problem with the with timelines and predictions because those can be get so nitpicked and they're so hard. I'd be more interested in less of like
+Speaker 5: No.
+Speaker 3: But don't you think that would be helpful if if
+Speaker 1: I don't think it's helpful. No. No. No. I actually don't.
+I think it's much more helpful to say if the unemployment rate goes to 10%, create a new government body that hires people to do something. Like, create the next TSA or send out some MOS checks or lower
+Speaker 3: interest rates. You can tell Washington DC AI models are very good at hacking computer systems Mhmm. And they're gonna get better at hacking computer systems. There's not really much for them to do with that because hacking computer systems are already it's already illegal. Yeah.
+And the solution there is for companies to beef up their own cybersecurity, make sure they're using the most advanced models. Right? Yeah. And so if you play out, again, more concrete scenarios where, like, here's here's a timeline for the trucking industry and and potential job displacement within trucking or any of these other categories. I just think it allows people in Washington, actual lawmakers, to start thinking about
+Speaker 1: I just think that's always wrong. Like, they're always wrong about those predictions.
+Speaker 3: Yeah.
+Speaker 1: But it's so much better to just say, look, if the trucking industry goes through mass job displacement, then here's here's what I here's what I actually propose. Here's the solution. As opposed to just saying like, there might be a problem and I think that there's a problem coming down the pipe. I don't know. Like, it's like what are you actually advocating for other than just being like the the sky might fall.
+I have a p doom of this number and it's your job to go figure it out. It's like you're smart. What do you suggest? UBI? Higher taxes?
+Speaker 3: Just don't think predictions are always wrong. There's been so much so Yeah. Many examples over the last decade where people have gotten predictions like dead on. Yeah. Yeah.
+Situational awareness.
+Speaker 1: Tyler, do you think about this?
+Speaker 6: Yeah. I mean, I I'm probably in
+Speaker 5: the camp of like
+Speaker 6: proactive regulation like usually it like has some bad consequences and it doesn't really work out. But also I I was just gonna say like what he's describing is basically just Casey, the Center for AIS and Innovation which is under the commerce department.
+Speaker 1: Yep.
+Speaker 6: And it's like a slightly beefed up version because right now, Casey is like very much you opt in. Yeah. But it seems like he should just have said like, you should specifically beef beef up Casey
+Speaker 1: Yeah.
+Speaker 6: Add add these policies, do these like specific things. Yeah. And I think that would be much more, you know, palatable or or well received or like something like like what do we actually do with this letter? It's kind of very, you know, like I'm not sure what we actually do with this.
+Speaker 1: Yeah. It feels like if I mean, to go back to cyber security, it's like if it's a national issue, like the NSA works on this stuff, increase their budget, maybe raise taxes to increase their budget, issue more debt to to increase their budget. If it's a if it can be solved by the private market, it's like go support CrowdStrike or start a new company that can help with cybersecurity. I don't know. The actual concrete recommendation boiled down from what Demis wrote is something along these lines.
+Create a US Frontier AI standards body that's like Casey but probably more beefed up. He's also advocating that it's overseen federally but funded by AI companies, define and regularly update benchmarks to determine which models and labs qualify as Frontier. So that's something that doesn't exist yet. Require Frontier Labs to submit models for testing up to thirty days before release. That's sort of nice because that would allow someone who's just going and building a recommender system on Netflix that's actually, it is using AI technically but it's not a frontier model because it doesn't qualify for that.
+Then they can just go and ship the latest recommendation algorithm on Netflix. No big deal. Test models for cyber, biological, nuclear, deception, autonomy, and guardrail passing capabilities require strong cybersecurity, personal vetting, model cards, watermarking, and substantial safety research. Use national labs, federal agencies, and independent third party auditors to conduct evaluations. Develop independent, confidential tests so labs cannot train specifically against the benchmarks, require labs to fix serious vulnerabilities discovered after release, apply the rules to all frontier models deployed in The United States, including foreign and open source models while exempting smaller models.
+Okay. So he wants to apply it to foreign open source models. That feels very tricky, but I guess you could get like sort of DMCA notices to Hugging Face and GitHub so that it doesn't proliferate across the web.
+Speaker 6: Yeah. Mean, there's probably some power lot to, like, where people are actually downloading and Yeah. Inferencing the model.
+Speaker 1: And I guess if you go to all the neo clouds and all the open source folks and you're like, okay. This model is actually a bad model. You gotta go. You gotta stick to GLM 5.2. Yeah.
+Speaker 3: It's it's much easier to regulate the compute. This is going to
+Speaker 1: be very controversial to the open source fans.
+Speaker 6: Yeah. This is kind of like the
+Speaker 1: George Hosff nightmare take.
+Speaker 6: Yeah. Attacking every single GPU. For sure. For sure.
+Speaker 1: Coordinate a slowdown among frontier labs if testing reveals sufficiently serious risks and turn The US framework into an international system of shared frontier AI standards. Well, I like the general direction. I like the idea that he's just sharing his viewpoint more broadly. I think all of that is good. I'm not sure that there's there's enough to dig into here exactly how this would like where the rubber meets the road, how this would be implemented or what effect this would actually have on the industry.
+Like this could be really good for open source because it could just slow down the frontier closed source labs. It could also be really bad for open source if it's much more cumbersome because an open source project might not have a regulatory budget to actually massage a model through the approval process. Like there's a reason why small biotech companies get acquired by big pharma before they launch their drugs. It's because, like, the big pharma companies have offices in Washington DC and can walk the legislators through So the whole in general, I'm sympathetic to the view where people say, oh, regulation benefits the biggest companies in the world because historically that's how it's played out. Maybe that's different this time.
+Who knows? It could just slow down the frontier. But, you know, he does work for a leading lab. So interesting. Let me tell you about MongoDB.
+What's the only thing faster than the AI market? Your business on MongoDB. Don't just build AI. Own the data platform that powers it.
+Speaker 3: And What's let's move going on in New York? I will tell you what's going on in New York.
+Speaker 1: Today, New York governor Kathy Hoechel signed an executive order placing a one year pause on new AI data centers in the state. This is the for everyone except
+Speaker 3: Americans. People that are Probably.
+Speaker 1: Order establishes a moratorium while New York develops a regulatory framework and conducts environmental impact assessments examining data centers, energy demand, water use, water quality, air quality, and effects on the electric grid. You would think there's a decent amount of of oversight around those things generally already, like air quality, like whether you start a new barbecue restaurant or a coal plant, you would imagine that there's just a general rule about not polluting the atmosphere would apply to data centers by default. But it seems like there's a little bit of a special case here and so they're working on this in particular. The move immediately drew criticism from the tech industry which argues that restricting data center construction will cost local communities jobs and weaken America's position in the global AI race. Earlier this year, Maine considered a similar moratorium, but Democratic governor Janet Mills vetoed the proposal after concerns it would block a major data center planned for a town still struggling after the closure of a local paper mill.
+Hochet's Republican challenger Bruce Blakeman also opposes the moratorium arguing that local governments, not the state, should decide whether to approve projects that promise significant economic benefits. If it stands, the order would make New York the first state to impose a broad moratorium on large scale AI data centers. The Associated General Contractors of New York State is already condemning the decision so the contractors who are going to be working on this project and see it as a form of job creation are upset about this. But let's see what President and CEO Mike Elmendorf had to say. He warned that halting permits for as much as a year in this fast moving sector will not simply delay projects.
+It will send them permanently to Virginia, Texas, Georgia, and other states actively competing for these investments once those projects break ground. Elsewhere, he argued, the jobs, tax revenue, and economic opportunities are unlikely to return. So there hasn't been that much of a data center boom in New York State that I'm aware of.
+Speaker 3: I'm trying to find the the largest campus that I can find is the Lake Mariner campus in Barker or Somerset. Yeah. And it's around it has around 205 megawatts
+Speaker 1: Oh, that's active. Pretty Wow. Yeah. That's pretty big.
+Speaker 3: And they there's a proposal out to do another 500 megawatts.
+Speaker 1: Yeah.
+Speaker 3: But it hasn't been approved yet and and certainly the the new ban would Yeah. Stop that as it's any data centers requiring 50 megawatts or more.
+Speaker 1: I know a lot of a lot of IT infrastructure data centers, if you can call them that. They're usually smaller scale for from financial institutions in Manhattan often are built in New Jersey, but that's basically purely for economic reasons that the land is cheaper and the buildings are cheaper. But I do wonder if this will put have any like knock on effects where the, you know, like Netflix's content delivery network that was just, you know, planning to build a small data center to route, you know, video streams to Manhattanites Yeah. Would be delayed as well. Like, they're like, data center, it it it'll be interesting to see how they how they define AI data center.
+Will they do it on energy or what type of GPUs you're racking or what's going But on more to dig in.
+Speaker 3: Ken Griffin was on Goldman Sachs' podcast, the Exchange Mhmm. Exchanges podcast, and it was circulating this week even though it was, I think, recorded last month and he was talking about how, yeah, in his view, what an error this would be to his view, the data centers are gonna get built, and if they're not built here, that means hundreds of billions of dollars of revenue basically flowing flowing through other countries.
+Speaker 2: Right?
+Speaker 1: And Other countries. I mean, it'd probably go to other states first. Right?
+Speaker 3: Well, he was talking about
+Speaker 1: Oh, if goes national.
+Speaker 3: You know, if if New York does it, there's gonna be a lot of other states.
+Speaker 1: Yeah. The meme is like China wins in this scenario. US Senator John Yeah. We
+Speaker 3: with nuclear. Did We did this with manufacturing. Yeah. Both of both of which, we can all agree, were were mistakes.
+Speaker 1: Mhmm.
+Speaker 3: I was trying to find if any of the hyperscalers operate their own data centers in New York.
+Speaker 1: Mhmm. Well, the funny thing is that when Mark Zuckerberg proposed the Hyperion data center, the visualization he used was we're building a data center the size of Manhattan, which was very cool to see. But now Dylan Patel is sharing an image of, you know, a proposed data center that takes up all of Central Park, of course, the the most controversial data center you could possibly build in the entire world. Tyler is in favor of it. But it's funny because that image probably stuck in some people's mind.
+It's like, oh, Mark Zuckerberg is trying to build a data center in Manhattan. I don't like that idea. Even though, no, he was always going to build Hyperion in a very remote location for a variety of reasons. There's also an article in the Wall Street Journal. Can a prettier data center curb the community backlash?
+People have been batting this idea around for a while. But let's pull up this image and you tell me, would you be okay with this going into Malibu, The Malibu Compute Company. Would you be cool with this? If it was puking out diesel fumes twenty four seven? If it was clean and it didn't drive up energy, didn't use any water, it was all closed loop and it looked like this, Taller, right?
+Speaker 3: I just be okay with it being in my town. I want it in my backyard.
+Speaker 1: Yes. True Yimbi over here.
+Speaker 3: That's right.
+Speaker 1: In an effort to soothe local opposition, architects plan data centers that resemble tech campuses or art museums rather than bland boxes. You have to imagine that the money that they're spending on the data center for a facade like this has got to be very, very cheap by comparison. It looks like a
+Speaker 3: Half spot a percent.
+Speaker 1: Less. And and all of a sudden, just every time it's screenshotted, like, there was that hot Google presentation where they were in front of those crazy tanks and they put the logo on there and it made it look like they were taking like a like a brewing facility and turning it into a data center. But it was just for the press release. Like, data center was actually somewhere else, but it was just sort of like an odd image. Americans are up in arms over data centers.
+Of course, we know this. They worry how much water these buildings use and fume at the amount of electricity they consume. People hate the way they look too, says The Wall Street Journal. Now a small number of builders are on a mission to ensure new data centers don't have to be eyesores. Gensler, one of the world's largest architecture firms, is leading the charge.
+It's drawing up plans for data centers that look more like Silicon Valley tech campuses or art museums rather than windowless rectangles that neighbors often grouse about resembling prisons. It's no different than any other building and it doesn't deserve to look any worse than any other building, said Jeffrey Diamond, a design director at Gensler.
+Speaker 3: Yeah. See, this is just very rough.
+Speaker 1: Yeah. Not good.
+Speaker 3: That is objectively in back half.
+Speaker 1: You got to do more. Yeah. Yeah. You get people will push it to the limit unless there's some pushback. But in other aesthetically pleasing AI development news, Clanker Media shared that researchers built a soft floating robot for indoor interaction.
+And for so many of the AI robots, of the humanoid robots that we see on the show are Lovecraftian and and and horrific, this is so cute. I want one. You want one just floating around answering your questions?
+Speaker 3: These have the this has the potential to be a, like, a massive hit Yeah. Consumer product.
+Speaker 1: It uses helium and flapping fins instead of propellers. Extremely cute. The result is quiet, lightweight and safe to touch. It can follow people, give reminders and act as a study buddy so you can be studying and this whale can come up next to you and answer your questions about your math homework.
+Speaker 3: See, I don't even need it to be smart. No. I just want it to fly around.
+Speaker 1: Yeah. Load it up with GPT two. It's good enough. Don't even
+Speaker 3: local need models. Just have it fly have it fly around.
+Speaker 1: Oh, you don't even want to
+Speaker 3: I just want it. Yeah. Just want it.
+Speaker 1: You just want it.
+Speaker 3: For the
+Speaker 1: I I personally would demand that they install Codex on this thing. Let me tell you about Codex before we bring in our next guest. Codex is a powerful workspace for getting work done with AI agents. Whether you're writing code, analyzing data, creating content, or automating business workflows. Codex helps you move projects forward from start to finish.
+And our next guest is in the waiting room. We have Dylan Byers from Puck. He's the founding partner and he's here to get us up to speed on Paramount Warner Brothers discovery and the acquisition. How you doing Dylan?
+Speaker 5: Good, gentlemen. How are you doing?
+Speaker 3: We're doing fantastic. On vacation. You look incredibly tan.
+Speaker 1: Very tan. Yeah. What's going on? What's the secret?
+Speaker 5: I'm tan. I'm unkempt. Oh. I I eat. No.
+I'm I'm in the Pacific Northwest. I've been traipsing around the Pacific Northwest for the last month.
+Speaker 3: For You've been traipsing?
+Speaker 1: Business or pleasure?
+Speaker 3: Yes. Like a lager.
+Speaker 1: Little bit of both?
+Speaker 5: Business and pleasure. Was in Sun Valley Mhmm. During the Allen and Company conference to meet with a bunch of folks who were there. Mhmm. And then I'm Thank And then I I I'm from here.
+I grew up in Seattle. So, you know what better place to spend the summer.
+Speaker 1: We had a question about Sun Valley. Who had the bulkiest security guard? Who whose security guard is the strongest physically? Oh, yes? Bigger?
+Speaker 5: Historically, it's Bezos. Okay. I know I know Barry Weiss has some beefy security guards. I read about
+Speaker 1: that in
+Speaker 5: the New York Post.
+Speaker 1: Yes. I did hear
+Speaker 5: that. I didn't see them. Didn't see any security guards there.
+Speaker 7: You know,
+Speaker 5: here's what I will say about Sun Valley about the Allen and Company conference. Mhmm. It is remarkable how lit I mean, they they they create a security perimeter, but it's very subtle. Mhmm. And it is remarkable how comfortable all of these executives who are used to security details, how comfortable they are just moving around the property.
+Yeah. They really feel like there's minimal minimal attention even to the fact that they're there from the locals other than like myself and and reporters from Bloomberg and CNBC Yeah. They are largely left alone and they feel that.
+Speaker 1: Sure. How how what is the interaction? We always see those photos of like the line of microphones at the fence for the ad hoc interview. Obviously, are scheduled interviews with CNBC and Bloomberg sometimes and sit down interviews. But what is the day to day of actually reporting on Sun Valley like?
+Are you grabbing quotes from people or are you meeting with folks?
+Speaker 5: Michael, I I the different strokes for different folks. Yeah. Right? I mean, there are historically, there have been like New York Post reporters who go there
+Speaker 1: Oh, okay.
+Speaker 5: And once in a blue moon try to breach a security line
+Speaker 1: Woah.
+Speaker 5: And and get color and quotes. I go there to meet with people off the record. That's like for me, like that is the world I cover those executives, be they in media, tech, entertainment, whatever.
+Speaker 2: Yeah.
+Speaker 5: And I I have off the record meetings with them
+Speaker 1: Sure.
+Speaker 5: At a cafe Good. On the property. There are others who go there and do get interviews like Julia Borstein of CNBC always gets three or four interviews.
+Speaker 1: Yep.
+Speaker 5: It depends. It but what I do not do, thankfully, gratefully, I do not stand there at the front and shout questions at people who then just sort of like wave at you, which is really their way of giving the finger, save for David Zaslov who's like a moth to the flame of a microphone and will come over and always give a good quote.
+Speaker 1: I love it. How real is the the meme that like this is where the mega mergers are birthed? This is the place where the ideas come together? The merger that you'll hear about in a year for a $100,000,000,000, it's all starts Yeah. In Sun Valley?
+Speaker 5: Well, look, here's the deal. I I've I have I have I've tried to set the record straight on this. Deals do happen there. Mhmm. Oftentimes they happen as the culmination of conversations that happened well before Sun Valley.
+Sure. And occasionally like conversations start there. Mhmm. And I don't want to downplay that. Like, it is true.
+Like, if you just, you know, this year, I I there's not much that I know of at least yet. Sometimes we don't know about it till later. If you look at last year, yes, Apple got the rights to f one
+Speaker 1: Yeah.
+Speaker 5: At Sun Valley. And there were meetings between Liberty and ESPN and Apple and Apple won. Sun Valley last year was where not only Larry or sorry, David Ellison, but also Matthias Dafner at Axl Springer Mhmm. And the Murdochs came and tried to court Barry Weiss. Mhmm.
+And of course, David Ellison won that one. So Mhmm. Yes, deals do happen. I think what I reject, and I've written about this, I reject the notion that all of these people with their private jets who basically run on similar circuits throughout the year. That somehow like if Sun Valley didn't happen, they would have no way to make deals happen.
+Sure. Then somehow these brilliant people, these brilliant entrepreneurs and executives Yeah. Who have managed to like run their businesses successfully and are always thinking, not just months but years if not decades ahead, are like, oh, I happen to be in Sun Valley with this person and therefore I will buy the Washington Post. Sure. Sorry.
+That's not the way it works.
+Speaker 1: Yeah.
+Speaker 5: But but that said, everyone loves coming here because it is the same reason I love going there. It's shooting fish in a barrel. It's just like speed dating with everyone you want to see and it's just extraordinarily convenient. And then going back to my point about the Pacific Northwest in the summer, there are worse places to be than amid the quaking aspens, you know, in in Ketchum in July.
+Speaker 1: Yeah. That's great. Well said. So get us up to speed on what's going on with the Warner Brothers Discovery acquisition. Maybe a little bit of the prehistory just to refresh on where the deal stands and then the latest back and forth that emerged last week trickling into this week.
+Speaker 5: Yeah. Look, David Ellison has had to jump hurdle after hurdle to try and get this deal done obviously. $111,000,000,000 deal, bring Warner Brothers Discovery into the fold with Paramount. And the last hurdle think he might face some challenges in The UK, but really the last hurdle here in The States now that he's cleared everything with the Trump administration are these Democratic state attorneys general led by California AG Rob Bonta. Mhmm.
+Finally, Bonta came out this week, sort of very cinematic. He was like on a trail in front of the Hollywood sign and and and effectively said like, yes, we are suing. We are trying to block this deal. Here's why. We can get into it.
+It is very hard for me to see that he has a a strong case for blocking the deal, that he and the other AGs have a strong case for blocking the deal. Because if you think about it, like, David Ellison wants Warner Brothers Discovery to have some semblance of the scale that would be required to compete in a world that is dominated by, you know, like pick your brand, Netflix, YouTube, TikTok Mhmm. Apple, Amazon, like the list goes on. And so what what Bonta and co are doing is sort of presenting this like very strict definition that is rather archaic. Right?
+It has to do with like theatrical distribution, cable distribution, issues like that. And I get from a political perspective why he feels the need to do that and and I think there are probably political ramifications for him if he didn't do that. But the notion I mean, like, just think about it on his face. You we all live in the real world in 2026. The notion that somehow a combined Paramount Warner Brothers Discovery, combined CBS, CNN, combined what are the streaming services?
+HBO Max, Paramount Plus is going to be this, like, a massive dominant business that is going to somehow, like like, you know, corner every aspect of the market. That's just not real. That's not the world we're living in. So I think Bonta has an uphill climb in that regard, but he can certainly create headaches and and certainly legal fees for Ellison Sure. For for many months.
+Speaker 1: And so zooming out the the like Hollywood is under attack loosely or or facing competition from tech platforms, YouTube, Instagram, and so time time and attention is more broad than just Hollywood. And so with that backdrop, while consolidation might not be good within the view of Hollywood, there's less buyers for movies, It might be a defensive move in a world where you're facing extra competition for attention across the Internet.
+Speaker 5: Yeah. That's right. I mean, it's just how do you define the competitive marketplace.
+Speaker 1: Yeah.
+Speaker 5: And if you're talking about, you know, the fact that look, Hollywood has Hollywood is in decline. I don't think anyone can dispute that. And frankly, like, there are comparisons to Detroit Mhmm. You know, of of decades ago. And I don't know, you guys are in Hollywood, live in Hollywood.
+Sometimes it certainly feels that way. Yeah. So there's this notion that like, okay, we used to have six studios and then we have five studios and if we have four studios, that's going be a problem and so all of this sort of, you know, there there there are all these negotiations over, okay, well we'll release 30 films a year, we'll keep both studios open, we'll have a forty five day theatrical window. And I'm sorry, but that's just that is not where the that is not where consumers are. That is not what consumers care about.
+That's just not what the market cares about. Like, we're you're not people aren't people people don't think that the one form of entertainment that they have Yeah. In the world exists in a theater and they care about a forty five theatrical day window. Like, we live I I mean, to even say that we live in an era of like Netflix and YouTube almost seems passe when you think about everything coming down the pipeline in terms of AI platforms and everything else. So it just seems like remarkably outdated, which I I suppose is an ever evergreen commentary anytime you have Washington going up against business, entertainment, media, tech.
+And and again, I just don't I don't see how Bonta wins that case.
+Speaker 1: Mhmm. Jordy, do you have a question?
+Speaker 3: Yeah. It was just the the how did the the threat to to leave California
+Speaker 1: Yeah. Come Because it feels like there's a short term incentive to stop consolidation in Hollywood. But if you wind up with, you know, studios leaving Hollywood, well, you've lost the war even if you won the battle. But how how
+Speaker 3: Yeah. It's just it's just reminding me Straight off. Of the of the whole Getty Images Shuttershutterstock deal Yes. Which is was announced in January of last year. It was a $2,000,000,000 merger at the Now both companies are worth roughly like 300,000,000 in the public market.
+Mhmm. So two companies that are Yeah.
+Speaker 1: Under attack And I'm getting trying to sell the idea that that this does create like a stock photo monopoly. But in the world of AI image generation, like a monopoly in the real world stock photos actually taken with a camera is probably the only thing that can go up against just random image gen. So it's a very logical But yes.
+Speaker 5: Well, look, let me let me just say first about the threat to leave California.
+Speaker 1: Yeah.
+Speaker 5: One, everything that you every headline we see
+Speaker 7: Mhmm.
+Speaker 5: Needs to be viewed through the through the lens of brinksmanship. Right? Everything is basically trying to win the hearts and minds of of anyone who's paying attention to this deal. And the threat to leave California all of a sudden would seem, like if you take it at face value, would seem to reverse the narrative. It's like, okay, Bonta's, you know, ostensibly coming out here to try and fight on behalf of Hollywood and like low and behold, his measures are going to drive Paramount Warner Brothers discovery out of Hollywood.
+Mhmm. A lot of people I think looked at that and thought that that was a bluff and there's no world in which, you know, Paramount WBD can can leave Hollywood.
+Speaker 2: Yeah.
+Speaker 5: I I don't know. I I mean, look, I do think it is a bit of a bluff. I do think it's brinksmanship. On the other hand, as as folks I spoke to reminded me, like David Ellison did not get into this business either to just have like an old fashioned Hollywood business that couldn't really compete with the big tech players, nor did he get into it in a David Zaslav kind of way to just like flip the business in three years. Mhmm.
+He's young. He's into like, he he has he has ambitions of grandeur. He has ambitions of empire building. He really does believe that he can position this company to compete with with all those other companies we've already mentioned. And if you think about it through that lens, is he nostalgic about Hollywood itself and like the actual location of Los Angeles?
+No. If you look at what his father did with Oracle, he moved Oracle from Redwood City to Austin. I believe now it's moving from Austin to Tennessee.
+Speaker 3: And and there's other precedent. Right? You have Tesla, have You
+Speaker 5: have Tesla, Musk, you have Hewlett Packard.
+Speaker 1: Disney too moved a lot of people to Florida during COVID and there was a lot of back lash and not everyone moved and they still have a huge presence
+Speaker 3: And now is now is it like, you know, thirty years ago, if you said, yeah, I'm gonna have one of the biggest entertainment companies in the world that's not gonna be based in Hollywood, you would have been laughed at. Now you talk to anybody here that's like actively making movies, TV shows, etcetera and they're already traveling a bunch. So it doesn't need to be here.
+Speaker 5: Mhmm. No. You're you're traveling a lot. Different states have different incentives for filmmaking. And by the way, like go back to the Oracle Tesla examples, like you still have businesses here.
+You can you could you could theoretically have a Paramount Warner Brothers discovery based in Austin or Nashville or anywhere else that still had studio lots in California and to the the the, you know, the folks in the writers room, the showrunners, the talent, they wouldn't know the difference.
+Speaker 4: Yeah.
+Speaker 5: So like and the only person who would feel the difference is Rob Bonta who suddenly would not be on the end of what David Ellison is touting as a $30,000,000,000 investment. Yeah. And at a certain point, Bonta is walking a very fine line because he's trying to fight for Hollywood, but he's running the risk of alienating one of Hollywood's most valuable players right now. And so it's it's just it's it's politics. It's pure politics.
+And another point I brought up this week in my writing is like, just to underscore how much this is politics, I want you to imagine that David Ellison, who by the way, is not some like right wing MAGA guy, like he's not. He's Yeah. He's donated to Biden, whatever. He's really just a pragmatist who's trying to get a deal done. He he would he took Trump to ringside at the UFC.
+He went to the State of the Union address. He held a he held a private dinner for Trump and his administration before the White House Correspondents Dinner. All of that to like the folks in the newsroom at CBS News looks like, you know, he's like the the the new Rupert Murdoch. Sure. The truth is is if Kamala Harris or Joe Biden were in power, he would have done the same thing.
+Just would have been at like, you know, the US Open or Wimbledon instead of a UFC match. Sure. And and like and the fact of the matter is is that in that scenario, Rob Bonta would probably not be bringing this case. And it would probably be Republican AGs who would be who would be trying to bring this case.
+Speaker 1: And I think we have
+Speaker 5: to be honest about the politics there.
+Speaker 1: Yeah. I like the idea of tennis at the White House. Maybe that'll happen soon.
+Speaker 5: I'm trying to right.
+Speaker 3: Yeah. US open on the White House lawn.
+Speaker 1: Yeah. Maybe just all sports in the outraged. Sports venue and then you should do some hockey and then basketball and then baseball.
+Speaker 5: Did they was there adequate sponsorship? I didn't watch the UFC match on the White House. Was there adequate sponsorship? Like, did they milk that for
+Speaker 3: our Not
+Speaker 1: nearly enough. We could have gone way further.
+Speaker 3: Yeah. It's unclear There
+Speaker 1: were a lot of sponsorships.
+Speaker 3: Yeah. Yeah. Yeah. I remember a specific image of Justin Gaethje, the, you know, the American champion who won his fight, doing a backflip with a polymarket logo and you can see the the White House in the background. There he comes.
+It was very iconic my hon.
+Speaker 1: Can you talk about the debate that sprung up, I think a little bit earlier once the merger was confirmed around the duplicative studios. Paramount, Warner Brothers, they have two when we say studios, there's the abstract concept, there's also like that physical historical locations that are very meaningful. Yeah. There was this discussion over, is one going to be turned into apartment buildings? And that feels like sad from a I love Hollywood perspective.
+Also, you're a housing person, it feels like maybe it'd be good to bring down housing prices. Right. Right. But but at least the reporting that I saw from from Puck was there was a lot of pushback towards like don't ruin this amazing financial this historical institution. Is that chip still on the table?
+Has that been resolved? Because there's been a lot of like, oh okay, we're making this pledge, we won't do this, we won't Yes. We won't cut. And I'm just wondering if any of those chips come back on the table.
+Speaker 5: Well, here's what here's what I would say to to the one thing that Bonta has gotten right. Yeah. Forgive me because I I forget verbatim what he said Sure. But effectively, like in in in spirit, it's I can't regulate pledges. Right?
+And Yeah. And that's true. And like, there is so much that is going to be said which you should effectively take with the same grain of salt that you take from like a a political candidate who tells you everything they will and won't do Mhmm. In office. Like yes, is he committed right now to 30 films a year?
+Is he committed to a forty five day theatrical window? Is he committed again, I don't have the latest on this, but to keeping both studios open? Sure. Mhmm. Once you've got the deal and once all of this is behind you, are there ways in which you can sort of finesse one of those lots into something else for your business and then maybe finesse that real estate out of the portfolio to save some money.
+Mhmm. Yes. And that will 101100% happen. I think about this, you know, I cover this deal a lot at the news level and the sort of like tie up of CBS and CNN. The minute this deal happens, folks at Paramount are going to start looking how to offload the real estate that is currently used by CBS News and move CBS News operations into Hudson Yards Mhmm.
+At CNN. And why you do that? Because you have $80,000,000,000 of debt and because you have promised synergies. And there's no world in which you're sitting there with two lots that are duplicative that do the exact same thing and think like, in order to honor the history of Hollywood Yeah. We will continue we will continue spending twice as much money as we need to.
+It's just not going to happen.
+Speaker 1: Especially not in the news business.
+Speaker 5: No. And definitely
+Speaker 1: not in the news business. Like, you can sort of make the claim around specific film studios being historically important to Hollywood. Hollywood means films. But when you think about the the what it actually takes to run CNN and CBS News, like, there are tons of overlapping I mean just pieces of equipment that you're like, oh, that teleprompter there and that backdrop and that lighting is like all the same.
+Speaker 5: And sure. And look look, like I am sure there are some Scott Pelly types who have very warm feelings about the labyrinthine halls of the CBS News headquarters up up on up in Uptown Manhattan. But there was a group of folks from CBS News who went to Hudson Yards, who went to Atlanta to tour it and they're like, holy shit, these facilities are a lot nicer than ours. Yeah. These are great.
+This is it would actually be a lot easier to create TV here. So that that will be really easy and look, I I think there's as someone who covers change in the media space, there's always so much panic and nostalgia anytime anything changes because you think that thing that changing is sacrosanct And the truth is is that it usually takes a matter of weeks or months before everyone sort of comes around to the new status quo and gets very comfortable with it. And that inevitably is what is going to happen here.
+Speaker 1: Speaking of change in the media industry, have you noticed I mean, you you report and operate at what I see as like a very, very high level, the executives, the the the mega deal makers. But have you seen any knock on effects from the the summer of YouTube blockbusters that we've been talking about here from the creator economy perspective? You have Iron Lung from Markiplier, Obsession, Backrooms. Right. There's a number of YouTubers who sort of labored away in obscurity and then just put up incredible numbers at the box office.
+It feels like Hollywood might be looking for more scripts, more interesting IP, less sequels, less bought in things. But is there any individual studio that's excited about that trend or anything that you're seeing that's actually rising to the level of your reporting?
+Speaker 5: I here's what I'll say. I I do not have as good of an insight into this as I do into other other things we've been discussing. But here's what I will say just from a distance. The every studio is thinking about how do like all the way to a 24, right, which is sort of like the bell of the ball when it comes to quality content in Hollywood, is thinking about like how do we incorporate AI into what we are doing. And I think the signal that those creators sent with films like Obsession and others is like this can be done and this can be successful.
+Does it mean that, you know, like every human being is going to go away and we're going to stop? Like, no. It does not. I think that most folks will learn will find ways to incorporate this in in ways that does not significantly, like, degrade the value of the content that they're making. But I think the sky's the limit.
+Like, I I I really think that those examples have shown that this can be done and that there's more opportunity here than the folks who are sort of like clutching to Hollywood's past have realized. And by the way, that doesn't need to be disruptive in a bad way. That can represent like extraordinary opportunities in the same way, like you guys talk about this day in and day out. AI creates extraordinary opportunities in every aspect of of business, industry, commerce, everything else and like that can happen here too in ways where the human element remains. Mhmm.
+Speaker 3: How much are you tracking these AI short form vertical drama apps? There's, I'm counting, three in the top 25 of The US iPhone app store right now. There's vibe shorts, AI comic dramas, net short, exclusive short drama video space exclamation point and then story reel exclusive drama.
+Speaker 5: I'm not I'm not following any of this. It sounds just hearing you see it, read it, it sounds like is is this just Quibi AI?
+Speaker 3: Yeah. It's AI AI Quibi. Katzenberg entirely vindicated on on the format. Yeah. But but yeah, I I've just been I don't know anyone that uses these apps.
+I think we need to have Tyler on our team just spend like an entire weekend watch every single one of these and and review them for us. But I it's funny to me that that these are these apps are seemingly being created not within the tech industry
+Speaker 1: Yeah.
+Speaker 3: Their tech their technology products and not within Hollywood. So it's like Yeah. Entirely just, you know, outsider groups that are ranking The hoverboard. That are
+Speaker 2: ranking Content.
+Speaker 3: Like NetShort and Vibesort are both outranking Calci, Paramount, Polymarket, like, during these massive sporting events. Right? Crazy.
+Speaker 1: I mean,
+Speaker 5: I guess Yeah. I get Like And like Go
+Speaker 3: Vibe short is outranking Gemini and Anthropic by a very meaningful margin.
+Speaker 5: Yeah. I guess here's what here's what I say and I I'm granted like I'm a very poor authority on this because my entire content has been like World Cup and Wimbledon or just staring at the quaking Aspens in Sun Valley. Here's what here's what I would say. As in every other industry, like, technology has democratized the ability to do things. Right?
+And so the like, to bring this conversation full circle
+Speaker 1: Mhmm.
+Speaker 5: There's no no real reason anymore that this has to happen in Hollywood. Now, I'm not suggesting that like, you know, every institution just goes away, obviously. But what I am saying is like, there is you cannot look at something like the success of the YouTube creators or the engagement that these these short form platforms you're seeing are like the engagement that they're seeing and just dismiss that as a fad. That is that is that is a total reorientation of of the possibilities that exist for people to come along and just create something that is going to be a massive hit. And and again, to bring this back to the to Ellison and to Bonta, you cannot argue that people who can put movies in cinemas on Hollywood Boulevard are somehow in a different business than the people who are making AI generated shorts.
+Speaker 1: Yeah.
+Speaker 5: It is solely a question of where people are spending their time and then whether or not that time that time and engagement can be monetized. Yeah. And that and it does not matter what category that falls into. It's just a matter of a question of eyes on screens.
+Speaker 1: Do you have a view on how US China relations might evolve with regard to Hollywood? Because it feels like some of the video models coming out of China are a little too good. They might be might be training on some Hollywood intellectual property across across different studios. And it feels like in order to actually take a lawsuit to the finish line or have any sort of settlement or retribution or some sort of even just truce to not allow you to put Mickey Mouse or Spider Man or Batman in an AI generated open source video model or something like that, it might require Hollywood sort of teaming up, going to Washington, asking for some sort of concession or, you know, deal within the construct of like the larger trade negotiations around rare earth and it could be one of many bullet points in a new deal.
+Speaker 5: Yeah. I mean, I do say like and we've we're here and we've been here for a long time. Like, China somehow seems to be the great unifier when it comes to businesses saying like, basically, the antithesis. Right? Like, the the it the has been years that I have been hearing tech executives invoke China as a way to try and push back on regulation of US companies.
+Oh. I can certainly see a world in which China becomes like the, you know, what's the term, the bugbear, like, that gets Hollywood to basically come together, work with regulators and say like, we need to protect this because this is American and that is a very palatable argument for the folks in Washington or the folks in Sacramento. Yeah. Yeah, I can totally see that. I guess the the thing I would say though is I think what what businesses really want is to be able to play in that market.
+Yeah. And I don't I think at at a certain point, like your ideal outcome is a way to protect your own IP,
+Speaker 1: your
+Speaker 5: own technology, while also being able to open up what is obviously like a an an incredibly robust and and large market and work with them as well. And that, you know, that's a negotiation that obviously like Tim Tim Cook has been involved in for a long time. A lot of this when it comes to The US China stuff is above my pay grade, but that is sort of my sense of what will happen.
+Speaker 1: Last question. Yeah. Quaking aspens, you've mentioned them twice. Are you I love them. Arbor what was it?
+Arborist? Arborist? Are you into trees or is this just something everyone that goes to Sun Valley recognizes about the trees?
+Speaker 5: Here's what here's thank you for asking. I've been wanting to talk about this for a long Please. No. Here's what I think. I wish I could convey to people.
+I I'm very privileged in my position as covering the world that I cover to get to go like, it it is sort of a treat of the media tech entertainment space that these guys all sort of choose to convene in the Mountain West. Yep. So depending on where you are in the sort of hierarchy, like you're either going to Sun Valley or Jackson. There are many retreats sort of in Colorado. A lot of these guys own ranches from like Montana down to Utah.
+There's course like the Aspen Ideas Festival. Mhmm. It is just like a real pleasure that these guys chose to convene there as opposed to say Cleveland. Right? Or like just do everything in New York City.
+Speaker 4: Or Vegas.
+Speaker 1: Like CES is in Vegas and that would be where you'd be if you were on the electronics beat probably.
+Speaker 5: Thank thank God I'm not. Thank God I'm no longer the politics beat and have to go to like Iowa and New Hampshire Yeah. Every And I just if if there's any way to just sort of convey the atmospherics of that world, I I know of no better way than than like the lull of the quaking aspens and the occasional sound of like a Gulfstream jet taking off on the tarmac.
+Speaker 3: Beautiful. Are you writing a book right now?
+Speaker 5: I don't know yet.
+Speaker 3: You should be. You're tan. You're hanging out in the mountains. It seems like you have an incredible energy. Maybe an audiobook since the last time you're on here.
+Speaker 1: Through it. Okay. Maybe an audiobook and it's just a recording of the quaking aspens and the sound of gulf streams passing by. There you go. To fall to sleep.
+To fall asleep too.
+Speaker 3: There you go.
+Speaker 1: Thank you so much for coming on the show. This is great to you.
+Speaker 3: Great to see you.
+Speaker 1: I appreciate
+Speaker 3: your help summer.
+Speaker 1: Hope to see you soon and we'll talk to you later. Have a good one. Cheers. Goodbye. Let me tell you about Figma.
+Agents meet the canvas. Your AI agents can now create and modify your Figma files with design system context. The quaking aspen, it's a tree. They're defined by natural the natural feature of Sun Valley, Idaho landscape, famous for their pale white bark and shimmering autumn foliage. The quake is a flat leaf stems that cause the leaves to flutter and rustle at the slightest breeze.
+When you look at
+Speaker 3: Dan says Gulfstream ASMR.
+Speaker 1: Gulfstream ASMR might be a market.
+Speaker 3: Tyler, I need you to watch a few vibe shorts, a few net shorts, and a few story reels by tomorrow.
+Speaker 4: Mhmm.
+Speaker 3: Deal? Deal. Deal? And we're gonna I don't know if we can watch them on the show. No.
+We can probably play a trailer on the show. Maybe. But yeah, pick your favorite on the three apps and we'll circle back tomorrow.
+Speaker 1: Well, our next guest is with us in the waiting room. We have Noah from Terra Firma. He's the co founder and CEO. Welcome to the show.
+Speaker 4: How are
+Speaker 1: you doing?
+Speaker 8: Doing well. How are
+Speaker 1: you guys safety vest looking great with the flag in the back too. I love it. Please introduce yourself and the company. Tell us a little bit about TerraFirma.
+Speaker 9: Yes. So TerraFirma was founded by my cofounder and
+Speaker 8: I after we were working
+Speaker 9: at SpaceX, and we were trying to build Starship rockets down in Boca Chica, and the construction was just too slow. Mhmm. We're like, why are we able to build rockets the size of skyscrapers at, like, one a month? But, like, building a road or or a factory is taking years and years and years. So we quit our jobs to start a company to change all that.
+We're basically becoming a new type of construction company, like a full stack construction company that builds our own robotics software, we actually operate as a construction company ourselves.
+Speaker 1: Okay. Robotic So are you how deep in the supply chain are you going to buy equipment? Are you buying from Caterpillar and retrofitting them? Are you buying from the people that make the tracks and the treads and the motors and then building your own your own bulldozers and cranes? Are you using, you know, custom software and robotic automation just as a harness for the project management layer?
+Like, at what level of the stack are you operating now, and where do you wanna go?
+Speaker 9: Yeah. On the hardware stack, you can probably see behind me. Yeah. We take existing Caterpillar machines, and we retrofit them. Caterpillar, John Deere, Komatsu.
+Those machines, they're pretty good. They're robust. They've been around for hundreds of years. Sure. A hundred years, they're pretty good.
+Everything else, we build ourselves. So we're building all of our own software from scratch, kind of the manufacturing engineering software that we built at SpaceX in order to operate large scale factories. We're building that for construction.
+Speaker 1: Mhmm. And how did you actually go from zero to one? At this point, you've raised a $115,000,000. What was the first project? Was it find the customer, just sort of do it all manually, or did you actually build robotic tools first and then go and prototype them?
+What was the flow?
+Speaker 9: This is a great question. So twelve months ago, we were only four people. Mhmm. So for the first year of the company, was just my cofounder and I. We wanted to make sure we had a product market fit before we started, like, raising much money and spending
+Speaker 3: it. Yeah.
+Speaker 9: So we actually built a bunch of robots using Tupperware containers that our lunchbox came in and, like, Raspberry Pi and Arduino from our college, like, kits. Mhmm. And we got robots working. And then we went around asking, like, who is willing to let us make some money with these robots? And our landlord's like, hey.
+I got a building for you to demolish. You think you guys can do it? We're like, I mean, it's not rocket science. So my cofounder and I literally operated the robots ourselves, like, in the the brain was a little Tupperware container. And we knocked down a couple buildings and got paid our first check.
+And we're like, woah. You could just become a robotic construction company. They're it's Texas. You can do whatever you want down here.
+Speaker 1: That's awesome.
+Speaker 3: What I feel like you'll quickly get to the point where permitting is like the gating factor where, like, you get to the point where, hypothetically, we could build this, you know, we could build this whole, you know, shell in like, the shell that you're in right now, we could build something like that in in three weeks, but then you're limited by, sort of local government and approvals and things like that. Is that is that right? And if so, how are you thinking about approaching that problem?
+Speaker 9: It's a great question. People bring it up a lot. For starters, I just wanna say, like, permitting is an issue, but it's not the issue. Like, at SpaceX, once we had the permits, theoretically, it should go super fast. But construction still took longer than it should have.
+Like, we're operating at maybe 25% of a work week, nine to five, five days a week. We could operate at a hundred sixty eight hours a week. We could be at a 100% utilization rate. We're not. So you can make construction four times faster once you get the permits before permits are the issue.
+Now our approach to this is very similar to, like, how Elon approached building rockets. Like, okay. We have to solve manufacturing. We have to solve supply chain. We have to solve testing the rockets and designing them.
+And now the rockets on Launchpad fix the permits. And, like, I believe in the bureaucrats of this country wanting to make the country better. If you have everything else ready to go and you make their jobs easy and you chew the food for them, they'll start approving permits faster and faster. They're not currently the main bottleneck most of the time.
+Speaker 1: I imagine that we're firmly in the Centaur era at best. I imagine that every robotic piece of equipment has a human in the loop somewhere at this point. But walk me through your vision for where this goes. I imagine that in the long term, it's sort of create a spec for what you want to build or destroy or the construction project that you're working on and all of the robots go off and do everything. But before that happens, it'll probably be one human overseeing two machines.
+Like, how does all that play
+Speaker 3: think about it is like you probably don't want to be like taking the approach like same approach as like vibe coding with like building a building because it's like, hey, go build this ditch. And then it builds it like slightly in the wrong place and then you have to like, you know, fill it back in and, you know, it it feels like not as forgiving Yeah. As the software domain.
+Speaker 9: This is a great question. Do you want the economics answer or do you want the sci fi answer?
+Speaker 3: Both.
+Speaker 1: Let's do economics first, sort of like short term. I mean, we're familiar with Waymo. They have, you know, Overwatch drivers that might see four screens. They can sort of beam into one at a time. How what are the economics of that?
+And then where do we go from there? And then let's talk sci fi.
+Speaker 9: So in terms of economics, you have two curves that cross. You have the cost of autonomy, which becomes exponentially more expensive as you go from 90 to 95 to a 100%. Waymo spent $30,000,000,000 or whatever it was over twenty years. And you have the value of automation drops off a cliff. When you have one person controlling one machine to one person controlling two machines, wow, 50% production of labor.
+When you're at one to four changing to one to five, it's if it's between 25% of your labor and 20% of your labor. So I think those two curves cross in construction at about one person controlling three or four machines, about 75% autonomy. That's the goal for us, 75% autonomy, and then you add a new machine, and then you add a new workflow, and then you go from Dirt Works to subsurface facilities to concrete to steel. Oh, that's We're building up the tech tree.
+Speaker 1: Yeah. And that sort of makes sense because I imagine that when you're actually just one, like, old school piloting a construction machine, there's probably about 60% of your time is like downtime. Like, I know I need to get the crane from here to here and I've now, you know, push put my finger on the button and I just have to hold it there while I get there. So while that's happening, you can sort of beam into a different machine, do something else, and sort of queue them all back and forth.
+Speaker 9: Yeah. It's a little bit more video game than that. You ever play like Starcraft or Age of Empires Oh, Yeah. So we're able to say excavator, dig here.
+Speaker 1: Yeah.
+Speaker 9: And you design a task for a minute and it will run for twenty minutes. Then you say bulldozer, run here.
+Speaker 1: Sure.
+Speaker 9: Roller, run here. Yeah. And this is actually our teleoperation center. Sure. We have like 20 desks behind me and these 20 desks allow us to operate like 80 machines at a time.
+Speaker 1: That's very cool.
+Speaker 3: So are what are your what are yeah. On the sci fi front, timelines to, you know, you have a piece of dirt and robots arrive to the piece of dirt autonomously and you have zero humans structure in a very short period of time.
+Speaker 9: You don't want zero humans in the loop. It's not cost effective. There's so many edge cases in construction.
+Speaker 3: It's a super long time. But but if you continue to execute in the way that you're doing right now, wouldn't we be able to get to that point in ten years, fifteen years?
+Speaker 9: I'm not sure if construction will ever fully be without a human in the loop. I think you'll have, like, a very small team of people that's very efficient building larger and larger projects, and it doesn't ever make sense to get rid of a human. That that's my personal belief. Even on Mars, I think we're gonna have a small team of astronauts conducting, like, a large fleet of robots. There's just a lot of things that edge cases and and things that the robots have never seen before.
+You can't collect enough training data to simulate every possible thing in the world. But if you're asking me the SimCity moment, when I can say, I want a Road here, I want a restaurant here, I think we're like five to ten years away from that. I think that coincides with our Mars ambitions.
+Speaker 1: Mhmm. Coincides with your Mars five years to Mars? What are you thinking?
+Speaker 9: We are technologically capable of going to Mars today if we had the political and economic desire.
+Speaker 1: I mean, we've actually sent robots Like to America has sent robots to Mars so it's possible.
+Speaker 3: He's like, send me. Send
+Speaker 1: me. Yeah. Yeah.
+Speaker 9: Yeah. It's not a technology economics problem. Yeah. But I think we will solve both within the next ten years.
+Speaker 1: How but I I imagine that the machines that you build for the moon and Mars will be much more highly specialized when I think about the the helicopter we deployed to Mars or the rover, like those are science experiments meant to take samples and test specific specific factors of what it means to move around on Mars. But I imagine even in terms of building, you wouldn't just plop down a Caterpillar, would you?
+Speaker 9: No. Yeah. Diesel engines won't work in vacuum, so you gotta redesign the hardware. But at the end of the day, it's like a smart shovel. Like, you're you're moving dirt.
+Yeah. It's not the most complicated thing in the world.
+Speaker 1: Sure. Sure. Sure. Very cool. Well, let's hit the gong.
+Speaker 3: Yeah. Last question Sure. Just because the crowd is loving it. Yeah. And I wish we had more time.
+But how do you do you expect any changes to, like, the material side like, building materials side as robotics become, you know, much more a part of building various types of structures? Or is it like, let's just change one thing at a time? Because I feel like
+Speaker 9: This is an awesome question. Are you familiar with the term DFM, like design for manufacture?
+Speaker 3: Yeah.
+Speaker 9: Like, at SpaceX, we literally had to the materials are pretty simple. It's like stainless steel, like the most common type, but you had to change the the inputs to your system to be assembled by a robot. Like, Starlink couldn't take v one Starlink and make it at the speed that they're building v four Starlink. Had to change the piece parts. Mhmm.
+I think we're gonna change the way we connect pipes. I think we're gonna change the
+Speaker 5: Yeah.
+Speaker 9: Chemical formulations of concrete. We're gonna change how we weld steel structures. We're gonna redesign the building codes to match something that can be built quickly by a robot.
+Speaker 3: That's amazing. I figured.
+Speaker 1: Tell us about the round. How much did you raise?
+Speaker 9: So we've raised a 115,000,000.
+Speaker 3: Who who did you
+Speaker 9: So raise it our series a was a 100,000,000 led by Kleiner Perkins. Kleiner Perkins.
+Speaker 1: We got Bain Capital, Banner VC, Saga Ventures, Trust Ventures, Magnetar. Wow.
+Speaker 4: Murders
+Speaker 3: grow. Played Saga? Capital.
+Speaker 1: You got a bunch of great Legends. Folks around the table. Congratulations.
+Speaker 9: American industrialists.
+Speaker 1: Have the capital to build. We need it more than ever right now. So thank you for everything you're doing and have a great week.
+Speaker 3: Do us a favor. Raise another massive round.
+Speaker 1: Yes. Come back Maybe
+Speaker 3: take it up up from 9 figures to the to the to the next zero.
+Speaker 2: I like it.
+Speaker 3: Come back on this year. Deserve it. Great great to meet you soon.
+Speaker 9: We'll host our next one from the Mars base.
+Speaker 1: Fantastic. We'll talk to you soon. Have a
+Speaker 2: good one. See you.
+Speaker 1: Let me tell you about CrowdStrike. Your business is AI. Their business is securing it. CrowdStrike secures AI and stops breaches. Our next guest is returning to the show.
+We have Saum from Greylock Partners. He is a partner there. Saum, welcome back to the show. How are you doing?
+Speaker 10: I'm doing great. Great to see you guys. Thanks for having me back.
+Speaker 1: Thanks for hopping on. Let's kick it off with another Gong hit since it's warmed up. Tell us what happened. Give us the news. What's new in Greylock World?
+Speaker 10: We've, we've got some big news today. We're announcing Greylock eighteen, our eighteenth venture fund. It's a billion and a half billion
+Speaker 1: No. Early stage Early stage founders specifically Amazing. I wanna know opportunities created in AI. I'm interested in the next generation of AI companies. Obviously, there are are so many huge private, now SpaceX is public, so like there's a number of deep mind, there's a number of like first gen AI companies that are huge, but there still is a lot of opportunity.
+Where are you seeing the opportunity? There's early stage companies that are going deeper in the stack selling to big labs. There's also niche players. Like, how are you viewing the market? How are you mapping things out?
+Speaker 10: Yeah. I'd say our overall is we're very early in this wave, and we think there's going be winners up and down the stack. And I think the only mistake you can make in AI is underestimate the size of the wave and think it's binary in outcome. So, you know, we've invested up and down the stack, a foundation model there. You know, we're investors in Anthropic and OpenAI.
+In infrastructure, know, we invested in base ten back in 2019 before generative AI was a thing. Today, they're the leaders in inference. Right? Yeah. Brain Trust, I remember in 2023, no one was using the word evals.
+Right? Notion was using their product and today, fast forward, evals are the core IP of AI and most of the value is using BrainTrust for it. So we've done a lot in infra and then of course a lot in applications. We're going to see new opportunities up and down the stack. So on the infra side, I think, you know, you guys are talking about agents every single day.
+There's gonna be a new set of abstractions around infrastructure to actually power agents.
+Speaker 1: Mhmm.
+Speaker 10: Of course, inference and observability is gonna play a big part of that, but there's more to do there. There's new things in data structures, databases, runtimes, etcetera. On the application side, I think we're just getting started. It wasn't until, you know, the model set of model releases in December '25 that you actually had robust agents.
+Speaker 2: Yeah.
+Speaker 10: And now like, and I see in our portfolio, like, led the initial round in Resolve, which is an agent tech software reliability engineering. Today, companies like Coinbase, it completely automates on call. So engineers are no longer getting woken up because there's an incident because the Resolve agent fully handles it autonomously or, you know, we're in seven AI, which does the same thing for security teams. Those products are, like, coming to life Yeah. Because the underlying models are finally there to really support these long running agent workflows, and so you're going to go into different application categories and be able to build new agent offerings.
+I think that's going to be really big. Then, of course, things outside of software. We were some of the early investors in autonomy like Aurora, which is, I think, the largest standalone public company in self driving. We've led the initial round in. Neuro, others.
+We're now going to see a whole new wave of things happening in robotics, I think the underlying model capabilities and the datasets that we're building are finally going to get us there where we're going to see a proliferation in the real world economy as well. We've made some new investments. Our Stone Stealth works that I'll talk about soon.
+Speaker 1: Yeah. We talked about Aurora yesterday because they bought ATG from Uber, The the autonomy group. That's right. I'm I'm interested in in hearing, are you noticing any categories of company that have shifted from venture backable to more likely to be successful as a lifestyle business because they are so capital light in the AI era that you if you have a friend that comes to you and says, I want to start a video game company or I want to start a niche SaaS company, you're like, Yeah. Twenty years ago, you'd need to raise $10,000,000 to rack a bunch of servers.
+A couple of years ago, you'd have to go through YC or raise a million bucks to hire some software engineers. But this, you can just build it this weekend and go get customers and be profitable tomorrow. And so are you noticing that trend? How is that how is that changing your investing philosophy, or is that just a ruse?
+Speaker 10: I think the lens on whether or not something should raise venture capital is more about the ceiling, not the floor. So I think it's absolutely correct that you can get a lot more done with less capital now. Yeah. But what's also correct is that the size of the prices that are available our whole brand around the new fund is the map is blank again because we think AI just resets the entire map.
+Speaker 1: Yeah.
+Speaker 10: The size of what's possible now, the size of these categories is so enormous that venture capital dramatic even if you can be capital efficient and get a lot done on a given dollar, if you can increase the size of your capital base, the aggression and speed with which you can move is just much faster. I think it's an interesting kind of observation. You take the last three years. There's a lot of discussion around what you can get done with AI, etcetera. At the same time, the capital velocity in companies is faster and at a larger order of magnitude than it's ever been.
+We look at this in our portfolio. We're primarily doing the first rounds, and the speed at which companies raise their series A, series B, series C, and the size of these rounds, which often are in the hundreds of millions very, very quickly, that's an interesting observation. You ask why is that? I think it's because we're operating in such big and new categories and opportunities that the price to be the number one player is so significant that you need to do everything you can as a company. And so if you can be more efficient, the real lens is like what else can you go do and how quickly?
+And that's why we're seeing companies have much faster product velocity, have much faster revenue growth. They're spending. They're getting more out of that spend, but they're spending. And in fact, I would say they're spending more in this last three years than in the prior decade.
+Speaker 1: The map is blank. I love that as a rallying cry. At the same time, I see a new market map in every category and it's stuffed full with AI startups and it feels like it's more competitive than ever. I'm interested to know, are there categories that are now more oligopolistic, more like less monopolistic? It feels like the Software two point zero era was very much, oh, there's a runaway leader in this particular niche and it's winner take all and they're just compounding.
+But now I've been so surprised when I check-in with the third biggest or third most well funded company in a particular area and they're accelerating revenue and they like tripled revenue last year and it's a great company by historical standards even though it's like a laggard in the modern era.
+Speaker 10: Yeah. It's a great question. And, yeah, it's interesting, by the way, like, we there's all these market maps. People crown these companies as winners. Yeah.
+And I think we forget that, like, the game's just beginning. I mean, you rewind the clock just eighteen months
+Speaker 1: Yeah.
+Speaker 10: And you look at what the foundation model landscape looked at at that time Crazy. And then you fast forward to today. Yeah. You know, we fast forward another eighteen months and there's gonna be more evolution. So I think we we all live on Twitter where we're trying to clear everything over, like, every single minute.
+Like, we we should zoom out and remember these things are very nebulous.
+Speaker 1: But Yeah.
+Speaker 10: Yeah. I think, you know, the difference with AI is the size of the price, especially when you're automating labor and you're shifting these labor dollars to software and technology dollars, is so dwarfed like or so dwarfs relative prior software categories that I think you can have more winners that can get larger much faster. I'll give you just two examples. In the customer support category, we led the initial round in Cresta. Cresta is north of $100,000,000 in ARR, growing very quickly doing customer support AI.
+There are likely there's at least two other significant companies in that category, maybe more at similar revenue scale. I think multiple companies in that category will get to $1,000,000,000 of ARR in the coming years, and the reason for that is just AT and T alone spends a billion dollars a year in contact center spend. That's And you extrapolate that across all enterprises, you think about what's addressable.
+Speaker 1: Yeah. It's way different than IT spend. Right? Absolutely. Because there was a war for Zendesk and and and Salesforce had a solution and there's a number of previous era, you know, software products but it's a very different pool of pool of spending to pull from.
+Speaker 10: That's right. That's right.
+Speaker 3: What are what are your first checks what have your first checks been looking like? It's a 1 and a half billion dollar fund. You're investing. You you wanna be doing the first
+Speaker 1: Like two early stage deals.
+Speaker 3: Yeah, just seven No, but yeah, so how are you thinking about it? What percentage of the new fund is going to be reserves, follow on capital versus like, you know, net new investments?
+Speaker 10: So, you know, for us, the the North Star is we wanna back the most important companies of this era, and we think some of those companies require much more significant checks when they get started because of the people who are starting them, the ambitions, the opportunity. So as one example, you know, we 21 ago, we backed Palo Alto Networks when it got started. It got started in our offices. I think that company today is almost a 300,000,000,000 in market cap. When we wrote the initial check, I think it was a $250,000 initial
+Speaker 1: Wow. Fast forward. Yeah.
+Speaker 10: The founder of that company, Nir Zhuk, left Palo Alto last year. Yep. He started a new company with Greylock. Yep. Right?
+That company is called SciLake. Right? It's building a really new important cybersecurity platform. Sure. Our initial check there is $36,000,000.
+Speaker 1: That's what
+Speaker 3: I think.
+Speaker 10: Yeah, that's what
+Speaker 1: I figured.
+Speaker 10: Built the largest company in cybersecurity in history, a $300,000,000,000 company. We want to back him to go build something Totally. Of of consequence, and that has a different capital requirement. And so we've we have a larger fund not because we're gonna
+Speaker 1: Oh, we just got a goal. Sorry. World Cup's on.
+Speaker 3: Who scored? Who scored?
+Speaker 7: Spain. Spain.
+Speaker 1: Spain just scored.
+Speaker 3: There we go.
+Speaker 1: There we go. There we go. Sorry. We had to cut to the fan cam.
+Speaker 10: I I I I respect it.
+Speaker 3: Anyway Who you got? Who you got in the game?
+Speaker 1: Who's playing?
+Speaker 10: So Spain's up one zero. I thought France was going to win this easily.
+Speaker 1: Oh. Well, Spain's But on zero, I you are too and thank you so much for coming on the show, breaking it down for us and congratulations on the new fund.
+Speaker 3: Yes. Stoked for you guys.
+Speaker 1: Stoked for you.
+Speaker 10: And Thanks for talking all
+Speaker 3: the new founders out of the new fund.
+Speaker 1: Yeah. We'll talk to
+Speaker 10: you soon. Thanks for having us.
+Speaker 2: Have a
+Speaker 1: good one. See you. Goodbye. Me tell you about Cisco. Critical infrastructure for the AI era.
+Unlock seamless real time experiences and new value with Cisco. So yeah, what actually happened there? I have not been watching the game but
+Speaker 3: Yeah.
+Speaker 7: There was a Spain goal, twenty two minutes left. One Spain.
+Speaker 3: You thought the PK was fair? Yeah.
+Speaker 1: Yeah. Very nice shot.
+Speaker 7: I don't know. They kicked LaMigne Amal on on his like side. It's kind of
+Speaker 1: like a
+Speaker 7: bang bang play.
+Speaker 4: Okay. I want Spain to win.
+Speaker 7: Bang bang.
+Speaker 1: Okay. Well, our next guest is in the waiting room. We'll bring in Ioannis from Reflection. He's a cofounder, president, and CTO. This is his first time on the show.
+Welcome to the show, Ioannis. How are you doing?
+Speaker 2: I'm doing alright. Thank you so much for the invitation.
+Speaker 1: Thank you so much. Hopefully, didn't pull you away from the World Cup. I'm not sure if you've been following, but He's not. It's one zero in case he's not watching.
+Speaker 3: Hasn't even seen a minute. No. Locked in. But
+Speaker 1: since it is your first time on the show, I would love a brief introduction on yourself and then I'd love to hear about the news and the deal with Nebius.
+Speaker 2: Absolutely. So first of all, again, thank you so much for having me. I'm Jamie co founder of Reflection. Yeah. Before that, I was one of the founding engineers of DeepMind, joined really early and I spent most of my career there working on deep reinforcement learning research.
+So anything from DQN, which is the first deep reinforcement learning agent to ever exist Yeah. To AlphaGo, AlphaZero, NuZero, and I was doing RLHF. I was leading RLHF for for Gemini before I left. And left with Misha to start reflection where we're building frontier open models, and we want to ensure that open intentions remains open and accessible to everyone.
+Speaker 1: So I imagine demand for the business is through the roof because you just signed this big new deal. What's actually driving it? What are the what are the enterprise use cases that you're seeing? Who who are the key customers? What's the shape of the customer base?
+And then why now with this particular deal and why Nebius is a partner?
+Speaker 2: Yeah. So, I mean, let me just, like, start by saying that, you know, building Frontier open models is requires two things. Right? It requires, like, a lot of incredible talent and we've been extremely privileged with the fact that like many of the best people in the industry have actually joined us to work on frontier open models and work closely Yeah. With me.
+So just like really like for that. At the same time, the other thing that you need is compute. Right? Like this is what fuels AI research. Like that's that's not like the the the thing that like keeps the researchers busy.
+So to this end, we actually like, you know, signed this billion dollar deal with Nibius to just, get the computer that we need and that's Congratulations. Thank you.
+Speaker 1: That's amazing. I'm I'm I'm I'm interested in if we can shift to history for a second, just your reflections on no pun intended, sorry the just the progress in computer use. Recently, I saw a demo of Codex and 5.6 Soul playing Slay the Spire, this card game that I played a lot of and I know how hard it is and it sat there for five hours and played the daily challenge. And I'm wondering if are we ahead of your timelines in terms of generalization? What is your overall thesis on progress?
+Where have you been surprised based on what you obviously had a front seat to a preview of years ago?
+Speaker 2: Yeah. That's a really good question. I think that it's actually like you know, I've been in the industry for like fifteen years. Yeah. And I've actually like seen the progress we've actually made in the past fifteen years.
+And, you know, every time that we felt that we there was a wall or there was like something stopping us, we just kind of like overcame it almost immediately. So it's kind of like really you know, this is like the best time for anyone just be doing like AI research. And, you know, I think that I'm not surprised anymore. I think I'm like I've seen so many things in the past, like, fifty years. So it's like it's really hard to be surprised.
+Sometimes this exponential growth or exponential curve is like really hard for the human mind to just like fully understand it. But, you know, just things just change extremely fast and we should just be really adaptable and really understand that, you know, AI is still on this exponential curve and incredible things are ahead of us.
+Speaker 1: But once you're on once you're living on the exponential, you sort of internally, like emotionally operate on the second derivative. So you're sort of like, yes, this is as expected once you've internalized it fully. But yes, I I I agree that it's shocking.
+Speaker 3: Can you can you talk about the advantages and disadvantages between Chinese labs that are making open models versus American labs like Reflection that are making open models? Because I imagine it's like, you know, you might have better access to compute, maybe more capital Mhmm. But potentially more restrictions around, you know, things that could provide advantages in some way.
+Speaker 1: But Yeah.
+Speaker 3: How do you how do you think about that competition?
+Speaker 2: Yeah. So, you know, one thing is that, like, it's it's really opaque and exactly like what the Chinese labs are doing, like, on the ground. You know, some things we know is that, like, maybe there hasn't been as much of a respect to IP and, you know, restrictions in terms of, like, use of data that, you know, As an American company, of course, we are, like, fully compliant. Mhmm. At the same time, there are, like there've been accusations.
+I don't know if they're true or not. But, you know, from, like, US labs that the Chinese labs are actually doing distillation of, an industrial scale from their models. And that's that, of course, something like any western lab would ever do. And, you know, there are, like, definitely gains in terms of access to compute or, know, things that we we can get access to, like, the latest compute. At the same time, I've also had that like the Chinese labs, know, have found ways to bypass maybe the the restrictions in this of compute like via getting computers from like other places.
+I think that we have definitely the advance of like having, you know, the talent here in the sense that, you know, the Frontier Labs, the Close Frontier Labs are based in The United States. Like many of these people have actually been to the Frontier. They've seen the Frontier. And Many of them have actually chosen to join us now and just like work on our models. So that's definitely a benefit.
+Yeah. I think it's like this is this kind of like the the the world as it is. But, you know, there I don't think that like, the fact that you're a a western lab and we might not we cannot cheat means that like we want just build the most powerful open models. I think like Yeah. It's actually the opposite.
+The fact that, the closed labs also like never cheated and they are the frontier means that like we have the talent to know we have the know how, and we now have the compute of, like, all these deals to ensure that, you know, we catch up to the Chinese open frontier. And after that, our ambition is to just, like, close the gap between closed and open and ensure that like frontier intelligence is successful to everyone.
+Speaker 1: Awesome. In the in keeping with bringing access to frontier intelligence to everyone, your former colleague, Demis Hasabis from DeepMind, just today is advocating for a U. S. Frontier AI standards body and he specifically says that he wants to apply rules and tests, submit models for testing that would even include open source models. Have you grappled with that?
+I mean, you're a large company, very successful, dollars 8,000,000,000 as of the last round. And yet, as someone who can be a little wary of overregulation, I don't want to slow an exciting company down that might not have the resources to staff a huge lobbying group in Washington, D. C. To get open source models approved. So how are you grappling with the idea of as models get more powerful, deepening your relationship with the United States government?
+Speaker 2: Yeah. So I felt like it's important. As reflection, we also like always want to engage and to ensure that like the models are safe, they are like well received, and they actually meet standards. So we just like do whatever is required from us. I want to ensure, and I felt like many people in the community feel the same that like there is a frontier open model in The US market.
+This is kind of the bedrock upon which research in there is institutions around the country are building their solutions. This is the tools that, like, developers and, like, early stage startups use to just, like, build new products and kind of, like, drive innovations. So we need to just, like, be we need we need to just ensure that there is, room for frontier open intelligence in The United States and in the Western world. And I feel like this would be just a net positive for the society as a whole. So, you know, always here to engage in any way we can just like from and also like express the voice of people who believe in open in the open ecosystem.
+Speaker 1: Yeah. I think my nightmare scenario would be some situation where you're slowed down but international firms are not slowed down by some weird quirk. And so I I hope that whatever happens, we at least get a a level playing field for everyone, both closed source, open source, but also internationally. You don't want to advantage a geopolitical rival by accident. But that makes a ton of sense and I'm sure you'll navigate it all flawlessly.
+Thank you so much for coming on the show. Congratulations on all the progress and Yeah.
+Speaker 3: Great to meet
+Speaker 1: really great to meet you. Have a great
+Speaker 2: rest of
+Speaker 1: your day.
+Speaker 2: You too and thanks so much.
+Speaker 1: We'll talk to you soon. Let me tell you about Railway. Railway is the all in one intelligent cloud provider. Use your favorite agent to deploy web app servers, databases, and more while Railway automatically takes care of scaling, monitoring, and security. Our next guest is Jack Dent from Chai Discovery, and he's here with us now in the TBPN Ultra.
+And welcome to
+Speaker 3: the show, Jack. How are you? Welcome.
+Speaker 7: Thank you. Great to
+Speaker 1: be here. Thank you so much. Could you quickly introduce yourself and the company? And then I want to go through the news, but I'll let you start with an introduction.
+Speaker 7: Sure. So I'm Jack. I'm one of the cofounders here at Chai. At Chai, we're building what we like to call the computer aided design speed for molecules. Mhmm.
+So think like Photoshop or Blender or SolidWorks, except instead of designing a car, you're designing molecules. These are, you know, small collections of atoms which are often used for things like medicines and that can actually go inside our bodies and do things like like cure us. And so we operate at all levels of the stack. We're both a, you know, frontier research lab, also a product company, also a bit of a science company, and tie all of those things together to put that that piece of software in the hands of some of the largest pharmaceutical companies in the world.
+Speaker 1: So specifically, narrow to pharma, I bet I imagine that you will have applications in material sciences all over the place. But is pharma just the best landing zone or is that such a deep market that you'll stay there in perpetuity?
+Speaker 7: Yeah. I think pharma is, right now, where we're really focused. You know, our models, they work at the level of atoms and molecules and that you also require different categories of models when you're trying to do different tasks. So it's not like a specialized model that will design an antibody will necessarily, like, of the box work for material science as well. That's still some additional work.
+But but pharma is also you know, this is a multitrillion dollar industry. It's actually larger than the chip industries in in in revenue Yeah. In and of itself. And so it's it's this massive market that obviously does huge amounts for human health, and there's just so much runway to to build into that.
+Speaker 1: So what actually is different about the models that you're developing? Do you have the same sort of massive CapEx around pretraining runs and scale is all you need and you need to marshal all this compute? Does it have a different shape? Is there a different data puzzle that you're solving? How important is your feedback loop with your customers?
+How does your lab look different than sort of a lab that's focused on coding, for example?
+Speaker 7: Yeah. It's a great question. It's really all of the above. Mhmm. So when I say we're a research company, that means that we actually train our own models from scratch.
+These aren't like LLMs that we take off the shelf and fine tune some open source architecture. We're starting at, you know, PyTorch and then below that down even at the kernel level sometimes and creating models which actually look quite unlike the sorts of models that you build elsewhere. Sort of like how if you're training a video diffusion model, that's a pretty different architecture to what you train for language. These these these different model categories require fundamentally different avenues of research. And, you know, one piece of intuition here is in the same way that video models sort of think in two d and they put pixels on a grid, and so, you know, autoregressive token prediction with a language model maybe isn't the best fit.
+Mhmm. You know, our models think in in three d, really. They put individual atoms in three d space to construct these molecules. And so that that means we really
+Speaker 2: need to have
+Speaker 7: a command of the the entire stack.
+Speaker 4: Then Mhmm.
+Speaker 7: The data as well. This is not natural language data. It's very domain specific data. It's these vast troves of protein sequencing datasets and structure datasets where people have used essentially really powerful microscopes to go and look atom by atom at the structures that that that that exist in nature. And then we also do a lot of data generation in in house as well.
+We we throw that off as well. So and and that's just at the the research layer. Then there's a whole, you know, products layer on top of that as well. It's almost like, you know, we're training Claude as we're also building, you know, cursor or cognition. Sure.
+And so we need to do those things hand in hand. So there's this also this this feedback loop with the the scientists and our at both at the pharma companies, but our users, many of whom sit inside the company and dog food and try and push the frontier of these models. So it it it requires, yes, to be just a plus across both science, AI research, and and product engineering as as well.
+Speaker 1: Please.
+Speaker 3: Have you seen any scientists get quote unquote one shot in the way that certain vibe coders have
+Speaker 1: over where the
+Speaker 3: they're just like staying at
+Speaker 1: open with Shy Discovery running at all times?
+Speaker 3: Yeah. Because I mean, it's such an interesting challenge Yeah. For that that the labs have faced where you're trying to balance like making products that are enjoyable to use Yeah. Effective. In a weird way, you know, you are optimizing for engagement
+Speaker 1: Mhmm.
+Speaker 3: If you're optimizing for revenue, just because someone's more engaged, they're they're using more tokens. But, I'm I'm curious if you've seen any signs of that because so far, the labs that have experienced the most extreme product market fit have gotten to the point where there's this idea of, like, one shotting, and then you have to, like, you know, align the model, better and and and, improve that.
+Speaker 7: Yeah. Totally. And actually, you know, maybe it's worth just providing some historical context here on just how quickly the research has moved in this field. You know, a year, a year and a half ago, basically, none of this stuff worked. You know, it was or the success rates were extremely low, you know, point one percent.
+And over the course of 2025, these models went from being these research curiosities in that they were maybe interesting things to study in some academic labs, but they weren't really being used in real drug discovery workflows. In July June, July of last year, we put out a paper called CHI2 where the title of that paper was Zero Shots Antibody Design in a 24 Well Plane, literally getting at this exact point where you could start to design these molecules without needing to fine tune them on a lot of data. You could really just prompt them in the way that you'd prompt an LLM with an input, you know, a target, maybe some some disease you're going after, a target that's implicated in that disease. And it would, you know, design a number of candidates that would that would help do that essentially. And so, you know, it created some really, you know, interesting situations where, you know, we would go into, you know, a pharma company and we'd be presenting some data.
+And there's one that that comes to mind in particular where somebody pointed to one of our slides and says, oh my god. You you solved that one. Did you choose that on purpose? And we're like, no. We didn't we didn't choose that one on on purpose.
+Why? And they said, you know I spent five years of my life working on that that target trying to trying to find a binder to it. So, you know, the the this technology has really moved beyond I I think AI and drug discovery has been in the realm of promise for a really long time where it's been there's been a lot of hype and attention around it. But in 2025, we really, crossed the, you know, crossed the Rubicon in a way. Mhmm.
+And now these technologies are, you know, actively being deployed in companies like Eli Lilly, Novartis, Pfizer. You know, these are some of the most scientific, highest tech companies in the world and they're putting them into real drug programs and, you know, making them part of their core discovery engine. And I think that's that's what might get get missed here by, you know, much has changed in the last year on the technology side and it's created this wave of of new applications. What's amazing is the scientists themselves are the most happy about it. They don't love the fact that they fail 90% of the time or that their work Yeah.
+Speaker 3: Or they could dedicate half of their career to one disease and make modest progress or maybe their entire career. Do you think Do you Or do you think there will be something The music industry is funny right now because, you know, every artist is using AI or not every artist, but many of them, both casual artists, non professionals, you know, amateurs, but also professional musicians are using it. But no one wants to talk about it. I expect that pharma will be much happier to talk about it, but is that the right intuition?
+Speaker 7: Yeah. I I think that's exactly right. I think 2026 is the year where these technologies are going, from being fringe technologies, which people are adopting on the side to actually technologies which, you know, entire discovery programs are are built around. And so the, you know, pharma companies are not necessarily the loudest. You know, they care a lot about their IP, and they, you know, there's obviously some some alpha in figuring out some, you know, an advantage in getting a a to market faster than than someone else.
+So I think that will be be lagging. And then I think there will also be some time for some of these de novo drugs to get into clinical trials in humans, and there'll be validation there still. But what's important is that adoption curve is well underway now. It's kicking off. It is the most sophisticated companies and, you know, some of the stories we're hearing already are just are just remarkable.
+Speaker 3: On the on the business model side, you're you're very full stack already. You're building the, you know, the harness, the model, and then the research that goes into the model. At some point, I imagine you'll have a customer that develops a new drug using and that drug, you know, goes on to generate, you know, tens of billions or hundreds of billions of dollars of revenue. To me, that's like what success Blockbuster. A blockbuster drug created with Chai.
+Depending on how you charge for that, it's possible that you end up capturing,
+Speaker 9: you know
+Speaker 1: $200 a month.
+Speaker 3: Yeah. Just some some like very, you know, minimal amount of value, which is good. Every company, you know Huge positive. Wanna capture less value than than they create. But at some point, would you consider or or have you considered a model where you're a true partner to these companies Joint venture.
+And and you're doing sort of joint joint ventures where you're basically giving them access to the product in exchange for long term upside? Yeah.
+Speaker 7: You know, that traditionally has been the model. If you look at how biotech deals tend to work, a lot of them includes things like royalties and upside sharing in the drugs. You know, this is really just all partner driven for us. You know, what does, you know, we live to serve our partners really, and what do they they want to do? And what they want to do right now is a lot of them want to take our technology and deploy it, you know, fairly broadly across the portfolio.
+And that that means that, you know, we get rewarded financially for that. We also can reinvest some of the money they're paying us into building even better models for them. And so that that way of doing business is working well for us right now. There may come a point where, you know, some pharma companies turn around and say, hey. We'd love to do a joint venture or, you know, go fifty fifty on this thing with you.
+And, you know, I think, suddenly open to that, but really, it's it's partner driven for us. And we we we are we're trying to, you know, what we see ourselves as as this, you know, core platform layer which enables their, you know, their discovery engines. And, you know, that if you look at the top pharma companies, they might spend $5.10, $15,000,000,000 a year in r and d. And so Mhmm. Even that that's not even, you know, on a what they're spending, you know, on on royalties or anything.
+That's just the the R and D costs. Right. It's a massive market to be building into. In fact, you know, it's even larger than some of the the the money that's spent on, you know, semis R and D every year. Pharma is one of the most enduring and durable categories of applied r and d spend in the world.
+Speaker 1: That's a good point. Well, you have some new partners on the financial side. Tell us about the round. I want to hit the gong. How much did you raise?
+Speaker 7: Yeah. It's perfect. So we raised 400. Who
+Speaker 3: came in?
+Speaker 1: Everybody. Everybody came in.
+Speaker 7: So we got yeah. We we raised $400,000,000 at a $3,800,000,000 valuation. We're super lucky to be partnered with Index, Kleiner Parkins, Sequoia, and Dimension, who are the sort of the largest checks in in in the round. And, you know, it's an it's an all all star cast. Some people we've known for Yeah.
+Very long time. Nina from Index, Ilya from Kleiner, Pat Grady from Sequoia, and then Zav mainly, really the whole Dimension team, you know, they're all yeah. We're we're it's rare to get this caliber of investors on the cap table and especially rare in in one round, so we feel we feel incredibly fortunate.
+Speaker 1: Well, congratulations and thank you so much for coming on the show. Yeah.
+Speaker 3: Great to have you on. This was fantastic. Progress.
+Speaker 1: We'll talk to you soon. Have a good rest
+Speaker 3: of your Goodbye.
+Speaker 1: Let me tell you about the New York Stock Exchange. Wanna change the world? Raise capital at the New York Stock Exchange. I think Chai Discovery might be there any day now when you're putting up multibillion dollar rounds. Anything's possible.
+Our next guests are Evan Burns, the CEO and cofounder of State Affairs and Jamie Seltzer, the co founder of State Affairs. Very excited to be joined by both of them. How are you guys doing? We haven't seen each other in, what, a year and a half for Reticon. Think that was the last time we hung out.
+How you doing? Welcome to the show. Quick introduction
+Speaker 3: Great.
+Speaker 1: Yourself and
+Speaker 3: So great to see you guys.
+Speaker 1: But good to see you guys.
+Speaker 11: Happy to be here, guys. Jimmy, you wanna go first?
+Speaker 8: You got it. Yeah. I'm one of the founders of State Affairs. I'm also a GP at LightShed Ventures. I fashion myself as a poor man Delianz or a poor man Josh Kushner doing kind of both.
+But, yeah, founded State Affairs with Evan four years ago.
+Speaker 1: Very cool. And you're
+Speaker 3: an absolute dog. A very a very humble one at that and a dear friend. So it's great to see you here at long last. Evan Hard over to you.
+Speaker 11: Hard to follow that. Entrepreneur, most recently built and sold finished long drink. I should have come on here when we when we had that exit a couple months ago.
+Speaker 1: The boys were so ready to crack them open in the in the studio They
+Speaker 3: were they were they wanted us to be they wanted you guys to join and we go.
+Speaker 1: Yeah. They were like, this is huge. Anyway, sorry. State Affairs.
+Speaker 11: Yeah. And so also the co founder and CEO of State Affairs.
+Speaker 1: Yeah. And just set the table on like the shape of State Affairs business, why it's unique, how like the footprint, the strategy, because it's fascinating I think under discussed.
+Speaker 3: Yeah. Jamie, why don't you tell me about how you didn't even mention or tell me to invest until about a couple years had passed and you guys were at tens of millions of revenue. No. I'm just kidding. Evan, go for it.
+Speaker 11: I think Jimmy was worried about that when we were coming on here. Was like, I don't know. We might be might be asking for this. Look, we had to do something different than everybody else doing finance, so of course we picked this. But but the the problem that we saw and that we're focused on every day is and it's probably true for most of your guests.
+These policy and regulatory markets affect so much of what companies do. Mhmm. But everybody just acts like they're a thing that have to happen to us. We're all reactive to them. So Jimmy had this idea, like, if we could build a platform, kinda like Bloomberg.
+Instead of focusing on financial markets, we're just focused on building a knowledge graph around the day to day movement, federally in all states and eventually cities around these policies that change, regulations. And in the day, we think they affect most businesses more than what the financial markets do. But if you're a leader of a business, how do you pay attention to them? How do you hear what the discussions are about SNAP benefits access or about AI data center building or about public safety tracking. Are we gonna have tracking or not?
+Like, these things are massive. And I think most people in America have just decided, oh, they are these things are what they are. So we said, let's try to build something around that.
+Speaker 1: And so how much does this look like a media business? How much does this look like newsrooms across the country, roll ups? Are you hiring people? Are are are you acquiring whole businesses? Walk through how you actually get a broad footprint out there to track all those topics you mentioned.
+Speaker 11: Yeah. I think I think what we didn't realize getting into this was if you look at the legislative process of making policy, there's so many pieces to it and so much data to it. So you have all the hearings of that happen in every state.
+Speaker 4: Mhmm.
+Speaker 11: You have all the bills that are introduced. And every bill, if it even makes it, is going to have hundreds, if not thousands of data points that change along the way, whether it's the wording or the votes or the committees or the sponsors. And, course, we have we we did actually build out journalists
+Speaker 1: Yeah.
+Speaker 11: A team of journalism, and it's very important that they're nonpartisan going and doing coverage. What's happening with state houses also?
+Speaker 1: Sure.
+Speaker 11: Asking questions around this policy and regulation. So it's that whole mix together that becomes this knowledge graph that enables the users to plug in and say, okay. What's happening today with snap access benefits? What's gonna happen next next year around GLP one access with Medicaid? Like, things are changing kinda by the day, but you might not see it in a law for another six months a year, two years either.
+Speaker 1: And so for the for the the the the pre AI, the last few years, the experience of the customer was a subscription and then sort of like a fire hose of facts that were not previously reported about things that are happening in areas that they care about or all over the nation. How is that changing in the AI era? What are customers asking for? And then what are you building?
+Speaker 8: Well, the the first thing that we're able to do is map the relationships of all of these different datasets using AI. And so sometimes something will happen in one state, and it can affect, you know, states that are tangentially down. And so without basically having built out, you know, through journalism, we have on the ground people that input data that sometimes doesn't make it to the government websites, budgets, bills, hearings, fiscal notes, executive orders. We're mapping the relationships of all these things through our models and we're finding net new insights for our customers.
+Speaker 3: Yeah. Talk about how legislation and and ideas flow between different different, you know, state and local governments. We are covering, you know, New York's data center ban or moratorium earlier today. We were talking, also about how, Paramount and the Ellisons are up against a number of different AGs. And so it just feels like you guys could get to a point where you can almost forecast the way that policy is kind of shifting and moving around the country.
+Speaker 8: We we do do that to a certain extent right now. I don't say we do predictive, but we do model the momentum of how bills are likely to get picked up or that the likelihood of a certain policy picking up more and more steam in a particular state. So, you know, we we basically have our models have a 150 kind of unique data points that we source from on a daily basis that are kind of constantly resetting the momentums on these.
+Speaker 3: Historically, big companies, let's say Fortune five hundreds, like how many how many how many individual what what would the teams look like, you know, the the government affairs teams look like to try to get the level of coverage that you guys are now offering? I imagine they're buying data, working with maybe more local companies, but but the the pitch now is like, you know, one platform, access to intelligence across tons of different, you know, counties and states and and things like that. But how how are you pitching it?
+Speaker 11: I think the main thing you have to when we talked to all these folks, and we've sat down with a ton of Fortune 100 brands and have, you know, brands like Mastercard and McDonald's and Walmart that are already subscribers. But like, the problem with what everybody is facing before is they've got, like, lobbyists or, like, old school data platforms that are often, like, much slower than real time information. So you're waiting for a firm to send you a PDF deck from, like, something that happened two weeks ago, and you've got 50 different states with 50 different formats. And so the ability to log in and understand real time movement on what's happening with discussion around, you know, data center or licensing or power build outs, It's very tough and it's late. So we want to switch people from being kind of late to the game to understand what's even happening to proactively involving themselves in the democratic process.
+And ideally trying to get their voice heard and involved before before the bills are even introduced, let alone waiting for them to get all the way to the governor's desk, which happens a lot. We were talking to the CEO of a a a publicly traded company that I think the let me see what's been on here. I won't say his name, but, you know, their company business model was basically banned in a top 15 state. Got to this it got to the governor's Desk, this didn't even know about it until he got to the governor's Desk until their business model would have been banned. And then they had to pull all this very painful very painful strings and favors to kind of get it fixed at the very last second.
+But if they'd just been involved a year before, they'd just seen it coming.
+Speaker 3: What does your guys' team look like? I imagine it's extremely distributed.
+Speaker 8: Well, we have about a 187 employees. It's about half editorial, half tech and sales. The editorial newsrooms are on the ground in each state. So, yes, they are distributed. Like, we do believe that being in the room is the difference maker on a lot of this intelligence from the from an editorial side.
+And then engineering, we're in DC, San Francisco, and Miami.
+Speaker 1: Are you seeing acceleration or value in sort of, like, vibe coding integrations to government websites to scrape and organize data?
+Speaker 8: I think it's very difficult to do that. Really?
+Speaker 1: There's the final that that'll be AGI. We need some to get your filings into a database.
+Speaker 8: However unsophisticated federal government websites are, state government websites are that much harder to navigate. I think, like, only two of them have APIs
+Speaker 1: Okay.
+Speaker 8: Just to kind of level set on one worth dealing with. And, you know, a lot of this the syntax on how they label their data is very different, and so there's like a huge cleaning process. In Ohio, for example, the bill has an amendment to it. Sometimes it never goes onto the government website. You have to go into an office in the state to go and get it.
+There's this example we love to give in North Carolina that if you don't watch a senate floor committee hearing, you have the only way to go and get a recording of that is to go into the congressional library, pay a dollar and 25¢, get it burned onto a CD ROM, and then you get custody of it. So, like, yeah, it's it's it's pretty antiquated.
+Speaker 7: Yeah. And have and you have
+Speaker 11: information every day. Right? So we we made the joke before that, like, all think about the Roman Empire a lot, of course, but you only have to label the Roman Empire once. Like, it's done. It's over.
+And, like, gotta get in different the information and data around what's happening in government legislation every day Yeah. Because what the process was last week has changed. And whatever today at, happening today is the most important.
+Speaker 1: Mhmm. What do your customers want you to do next in terms of coverage? Is there demand for international coverage or even more local like, you know, like HOA or something. I don't know how deep you could go. Like how low how low level can you go and then how high?
+Speaker 3: Mayor in this town of 5,000 people sneezes.
+Speaker 1: I wanna know. About it. I wanna know.
+Speaker 11: For the right price, we can definitely figure it out, you know. I don't about HOA, so I don't the sanity sanity quotient match. But look, if you if you look at these major we have international customers Sure. Fortune 50 brands, you name it. The thing that they're trying to figure out again is this real time on things that have billion dollar or tens of millions of dollars affecting their business.
+Yeah. So for sure, like, do federal now, we do state. Yep. We'll get into city. There's a huge ask for international because if you've already got your executive team and government affairs leadership on us and you've got US, why not Canada?
+Why not Australia? Why not UK?
+Speaker 4: So Sure. The goal
+Speaker 11: is to do this this daily build this kind of daily knowledge graph and platform for sort of all western democracies, but we're definitely just starting here
+Speaker 2: in The US.
+Speaker 1: That's very exciting. Well, you raised some more money. Tell us about the round. How much did you raise?
+Speaker 11: 70,000,000.
+Speaker 1: Bunch of nobodies. Right?
+Speaker 3: Who who participated?
+Speaker 11: How many how many times a day do you get to do that, by the way?
+Speaker 1: Is five or six. It's great.
+Speaker 3: Yeah. You
+Speaker 1: gotta warm it up too.
+Speaker 3: Sometimes we'll hit it twice. Yeah. I'll I'll I'll hit it for you Who who participated in the round? Who participated?
+Speaker 11: It's been primarily Coastline and Founders Fund. Big shot.
+Speaker 1: They needed a word.
+Speaker 3: Never heard them. Of them. Heard of them. Glad you guys are putting them on the map.
+Speaker 1: Yeah. Yeah. It's good. Thank you for what you're doing for them.
+Speaker 3: So great to have you guys on and incredible progress. I'm I'm glad you're talking more about what you're doing because I've been getting updates for for years now and yeah. I know you guys would only start talking about what you're doing once you were confident you were gonna eat the entire market. So Great. Congrats.
+Speaker 1: We'll talk to you soon. Have a good rest of your day. Goodbye.
+Speaker 3: Thanks a Cheers.
+Speaker 1: Let me tell you about console.com. Console builds AI agents that automate 70% of IT, HR, and finance support, giving employees instant resolution for access requests and password resets. Our next guest is Tyler Page here with us in the TBPN LTIRUM Thank you so much for taking the time to come on down and chat with us.
+Speaker 3: Of course.
+Speaker 1: Thanks for
+Speaker 9: having me.
+Speaker 1: To the show. Please, why don't you kick it off with a little introduction on yourself for everyone who's watching?
+Speaker 4: Sure. I mean, look, longtime listener, first time guest. Fantastic. Thanks for having me. Excited to be in studio for that.
+Yeah. Look, I'm the founder and CEO of Cypher Digital. Yeah. We're a developer of AI data centers. Sure.
+Popular trend these days. Yep. Over the last year, we've really completely transformed our business. Once upon a time, we were a Bitcoin miner.
+Speaker 1: Yeah.
+Speaker 4: Also a data center building business, actually a lot closer to building AI data centers than I think the is in the popular imagination.
+Speaker 7: Mhmm.
+Speaker 4: But we've really had just a complete transformation over the last twelve months. Mhmm. We've signed a series of leases with hyperscalers or with companies affiliated and backed by hyperscalers. We're currently building 700 megawatts of AI data centers at three sites in West Texas.
+Speaker 3: Mhmm. There we go.
+Speaker 4: Love that. It's huge. That was a Bonham esque. That was awesome. Yes.
+Yeah. So look, we're really busy with that. And then we have a massive development portfolio beyond that. So we've, at this point, sort of proven that we can sign these leases. We can construct these data centers.
+We can finance them. Mhmm. Also a really big part of it. And then we have a really big development portfolio. So the total portfolio at Cypher is 4.2 gigawatts.
+Wow. Wow. And He's going back.
+Speaker 3: It's even louder it's even louder in person.
+Speaker 4: Yeah. That's just really awesome. Yeah. So I mean, look, we're on the path to sort of rinse and repeat on that business. Demand remains really high.
+Yeah. Of course, everyone in in non podcast media will point out everything's a bubble or there's challenges or whatever and, you know, we can run through those things. Yeah. But, you know, right now, listen, the demand remains really high. Sure.
+I don't see any signs of that pulling back if you've got power available in the next couple years.
+Speaker 1: Yeah.
+Speaker 4: And it's a really exciting business. I mean, with all the things going on in the space, Cypher lives in a little bit of you know, it's got a unique structure that we're really doing colocation. So building like a full turnkey AI data center for a multi decade lease Mhmm. And handing over the keys. Sure.
+And on a spreadsheet, truthfully, it's it's a pretty simple business if you can execute in the real world. It's real estate development.
+Speaker 1: It's a real estate deal.
+Speaker 4: Yeah. It really is. And and there are so many interesting things going on in the space and there's lots of people trying to be more vertical up the stack and build a software layer and that's all super cool and there are big prizes to win there probably. But I love our simple rinse and
+Speaker 1: You're in the warm shell business.
+Speaker 3: How are you how are you thinking about site selection selection across the development portfolio and new opportunities? We had the the New York State data center moratorium get announced this morning. I would expect other states to follow suit. You guys don't wanna invest, you know, tons of time and resources into a into a into a state that could eventually say, like, hey. You just gotta stop what you're doing.
+Speaker 4: Yeah. I mean, listen. So I'm actually based our corporate headquarters is in Midtown Manhattan.
+Speaker 1: No way.
+Speaker 4: None of our data centers are anywhere in the state of New York. I think that's a little bit of a a hangover from our days starting as a Bitcoin miner when not only did people not wanna give you the power in New York, but they also decided they didn't like Bitcoin. Oh, interesting. So
+Speaker 3: And I think the biggest data center in New York right now is still a Bitcoin miner or they were and they've been pivoting.
+Speaker 4: I think it's pivoting over. I think it's one of our our good friends and rivals. But, you know, look, I I think there are gonna be layers of challenges from the federal level to the state level to the local level anywhere in the country. Of our 10 sites, nine are in Texas and one is in Ohio. Texas is generally known as a very kind of low regulation business friendly state.
+Speaker 7: Mhmm.
+Speaker 4: Very entrepreneur friendly.
+Speaker 1: Mhmm.
+Speaker 4: That said, the exact same concerns about data centers exist there. Sure. And we spend a lot of our time trying to to be good neighbors and good partners and deliver the message of how it's gonna be a wonderful addition to the community when we come join. Mhmm. But quite understandably, people show up.
+I mean, it is outside of the universe of the savvy listeners to your podcast. Yeah. There's a lot of like naked dislike of data centers.
+Speaker 1: Yeah. You see it in the polling data too.
+Speaker 4: But, you know, it's interesting. Even as recently as yesterday, we had folks down at a local hearing and I completely understand why people show up and they're not happy. Because they're like, I've heard this stuff's terrible Totally. And it's gonna end the world
+Speaker 2: Yeah.
+Speaker 4: And you know you know, it's gonna end things that are creative and everything's gonna be an automated chatbot and Yeah. Like I don't like anything about that. And then you get all the way to the spectrum of frankly just people don't know what happens in the building so you get questions like, is this going to harm my cows Yeah. That are next door or like is my I mean, someone asked like is my pacemaker going to have a problem because of the building? It's not for the record.
+Speaker 3: But you know there's no there's no upside. No no immediate upside to them often and then there's potential downside like Yeah. Noise and energy prices and things like that. What have you thought about certain proposals or ideas around doing direct payments to people, you know, in towns or counties that are gonna have a data center developed and they're thinking, well, don't what's a benefit to me other than some construction jobs and a handful of jobs and local tax revenue, but it's not as like direct as like, you know, cash coming into your account.
+Speaker 4: So that that may be where it goes, Jordy. I mean, I I think there's this needs to be answered on a couple levels. There's like a really, really high up public policy question about do we have the right tax regimes and ownership regimes and large language models and government ownership and things like that. And that's what I mean, like, goes through all the layers layers down down to to the the state. State.
+Mhmm. I think what I'd start with is just number one, back to the big point about this scary new neighbor you might have. I mean, I try to focus very much on starting with what happens in these buildings. Mhmm. And, you know, I'd say, look, we're we're a pretty entrepreneurial driven culture at Cypher, but some people, especially a lot of younger people, a little bit more mission driven.
+And I point out, like, you guys are racing on this construction project, and that literally might be the building that has the breakthrough in research to cure cancer or dementia or something like that. Or we've got, you know, one in every five employees at our firm is a veteran. And I point out, like Mhmm. We may have work that goes on in there that saves our soldiers' lives. So part of it is, like, just starting there.
+To to get to your actual question though about, like, money sharing, I'd point out there's already a fair amount of framework in place that envisions this. Not exactly the giant AI build out that's happening, but, like, for example, in Texas, we will pay tens of millions of dollars a year to the Texas public school system. Yeah. Yeah. We are the largest taxpayer in the counties typically of our data centers.
+And then we try to go above and beyond that to do a fair amount of community outreach. So in one of our locations, we're refurbishing the small hospital there. We're buying them a new fire truck. We're rebuilding the playgrounds and the pools, little things like that.
+Speaker 6: Having done
+Speaker 1: Virginia has an example of of a state that benefited from tax revenue as the AWS campus built out there and a lot of local people that live there have lived through the data center boom and seen, you know, lower taxes on their balance sheets because of that.
+Speaker 4: Yeah. I mean, listen, affordability is a really big political topic right now. And so people say, wow, my electricity bill's a lot higher.
+Speaker 1: Yeah.
+Speaker 4: Must be the data centers. Sure.
+Speaker 1: Sure.
+Speaker 4: And it's certainly, well, we printed an awful lot of dollars starting five years ago and we've had a couple of wars and there's a lot of inflation. And so Yeah. It's not really the data center. But I mean, I think, look, we try to be very front footed on that. We do not want to raise local rate payers Sure.
+Bills. By the way, all the regulators in Texas feel the same way. Sure. So, like, that problem will get addressed. Yeah.
+I really think it's the big picture thing of like, this is something you should want in your community.
+Speaker 1: Sure.
+Speaker 4: You know, it's a big warehouse that's air conditioned and full of computers.
+Speaker 1: Yeah.
+Speaker 4: It's not you know what I mean? And where we're building them and it's it's really it's interesting. It's we've gotten to be a bit of a disruptor to the traditional data centers like in Northern Virginia.
+Speaker 1: Sure.
+Speaker 4: When we started our pivot, we almost had an unfair advantage from being a Bitcoin miner. Because when you're a Bitcoin miner, the business doesn't work on the spreadsheet unless your power costs are really
+Speaker 1: Yeah.
+Speaker 4: And where are they really low? In really remote places with a lot of generation Yep. And typically not a lot of demand, like not a lot of houses. So if you look at just the map of Texas, most of the people live in the East. There is a ton of generation in the West.
+You can't ship the electricity that far and so it's really cheap historically in West Texas. Yep. When we started having this idea of like, wow, look how fast, you know, chat GBT is taking off and look at all the implications for how many megawatts you're gonna need at a data center. We said, well, surely they're gonna have to draw the conclusion that everyone's gonna have to move to places like West Texas. And the entire incumbent data center industry was like, no hyperscaler will ever sign a lease at those locations.
+This is as recent as like a year and a half Yeah. Year ago. And the floodgate it
+Speaker 3: was a hassle and they'd they'd wanna just co, you know, locate around
+Speaker 4: just using pattern recognition where they're like, I've been in this business twenty years and no one's ever signed a lease out there. And I think and then there was a second question about like, well, is latency really bad out to West Texas because it's a long way away from the city. But the truth is there's a big fiber line running out there and it's fast enough. Yeah. You might not do traditional cloud work out there, but even Northern Virginia exists because everyone went there twenty years ago and then built out all that infrastructure.
+Mhmm.
+Speaker 3: Yeah.
+Speaker 4: I can tell you because we're the tip of the spear, like, all these guys are coming to West Texas. Our portfolio alone is almost as big as all of Northern Virginia.
+Speaker 2: Mhmm.
+Speaker 4: So Wow. I mean, I I just I think this is kind of the next thing that's gonna happen when people the the sort of next skeptical thing about locations like ours is, well, we're at this really funny time where there's no power available and so there's a ton of demand. And so people will go to these places, but that's gonna be like a dinosaur relic at the end of this lease in '15 And we we we are a 180 degrees opposite of that. Mhmm. I actually think the cap rates will be lower.
+That will be a more valuable like terminal value for a data center at the end of a lease in West Texas because of what's of what West Texas will become Mhmm. I think over the next decade
+Speaker 5: or two.
+Speaker 1: It feels like when new data centers come to town, there's like a suite of questions that local residents have. Everything from aesthetics to power rates to water usage to sound to air quality. What of those five have, you know, solid regulatory frameworks in place where you can go and say, okay, we did the EPA test and we passed and so we're good and which ones are more subjective?
+Speaker 4: So it it really depends
+Speaker 1: Is it not?
+Speaker 4: Which is an unsatisfactory answer. Yeah. I think we always start on the power side.
+Speaker 1: Okay.
+Speaker 4: And so if you look at at ERCOT and the way they
+Speaker 1: Yeah.
+Speaker 4: Interconnect large sites, that's generally a low regulation zip code state. And so what I'd say is you need to address all those issues. There are some local permitting requirements around them, but I'd say it's more about the like what issues could be raised. Mhmm. There's no real framework of we'll just hold up the the noise permit.
+Sure. Because there's a lot of oil and gas and like industrial things Yeah. Places we're building. But I would say probably in our experience, the of course, care a lot about affordability, so we need to discuss that. I I think water at our locations tends to be
+Speaker 1: Bigger
+Speaker 4: question. The biggest issue. Sure. You know, they they say I think whiskey is for drinking and water is for fighting in some of the places out there. Just it's it's dry.
+But what's interesting is, and I know you guys have talked data centers a lot on here before, but, you know, with modern closed loop systems
+Speaker 1: Yeah. It's much less.
+Speaker 4: Really don't use that much water. And I think the other thing is you can innovate. So there's actually a lot of like brackish non potable water Oh. Underneath the dirt Sure. In Texas.
+Speaker 3: Oh, yeah.
+Speaker 4: That can work. And so you can build facilities to filter it
+Speaker 1: Sure.
+Speaker 4: And use it and actually help the aquifer. So Sure. You know, I I generally think all these kind of growth issues are challenges, but they're all solvable.
+Speaker 1: Yeah. It feels like a meet in the middle here is instead of jumping straight to like data center ban, you're focused more on what is the decibel level that is acceptable in this city for any building. Right. What is the power consumption for any building? What what what is the impact on the water supply for any building?
+Right. And then that framework so then if somebody shows up and they're just like, yeah, I have a house where I'm gonna be blaring music, it's like, yeah, that can't happen in this neighborhood either because we've determined this and and then that's applied broadly as opposed to just narrowly targeting it.
+Speaker 4: Well, what I'd also point out is like, all of those same objections Yeah. Could be raised about almost any industrial build. Yeah. For sure. So, of course, I mean, if you go to the places where we build our data centers, we own hundreds of acres and in some places, you can see to the horizon in all directions.
+Sure. Sure. So I'm really not too worried about, you know, we'll be cognizant of measuring the decibel level at the edge of our property, but like Yeah. I'm not worried about anyone hearing it. Sure.
+You know, I think it's it's just gonna vary by jurisdiction. If you try to plop one down in a in a neighborhood or something, that's not what we're trying to do. Sort
+Speaker 1: of like grown over time where there was it was it made a lot of sense to co locate some data center for delivering Netflix to a local neighborhood. And then the the place just got upgraded and upgraded and upgraded until it's like running diesel generators twenty four seven and then people are annoyed. Yeah. Creep up on you is is more of a problem than like the new project coming in with a dedicated
+Speaker 4: I think this is like any industrial build though where you've just got a you've got to strike the right balance back to what you said like, maybe the end policy solution is a a different way of taxing, regulating Yeah. Sharing the the income, whatever Mhmm. Yeah. And we will certainly be Yeah.
+Speaker 3: It's not necessarily it's not even necessarily like more dollars that are being shared, but it's like how you share the dollars because again, like money going to someone's, you know, city feels a lot different than money going directly into someone's pocket. Right? That they Correct. Yeah. Use to pay their bills.
+So
+Speaker 1: Walk me through your capital market strategy when you're working on a new site, new project. What does your road show look like? We're familiar with like a series a pitch, series b pitch, even an IPO occasionally, but you're talking to private credit? Are you talking to real estate investors, banks, debts? Walk me through the whole picture of like who you're calling, who who you're pitching, who's around the table, just in broad strokes.
+Speaker 4: Sure. So I mean, level, we're the sites we're developing Mhmm. And and again, this is some of the most lucrative real estate development in the history of real estate development. We have purchased these sites typically really cheap. Yeah.
+Like couple million bucks. For a 100 acres? For the the land is almost secondary. It's getting the interconnect for power. For power.
+Speaker 1: So Okay.
+Speaker 4: The price has gone up like per megawatt. But for example, we're building a 300 megawatt site right now for a for AWS. Yep. And we paid like $7,000,000 for the site three or four years ago.
+Speaker 2: Wow.
+Speaker 4: Mean, it's been a while. Yeah. That would be hundreds of millions of dollars Okay. To sell it. And we own lots of acreage around that.
+So the back to your question about the model. So typically, we will try to find a good deal, harder to find these days. Yeah. But we have a pretty big portfolio. Like I mentioned, it's closing in on the size of Northern Virginia.
+So it's pretty big to still be developed. Yep. Next phase is we shorten the development timeline as much as we can and that typically will be an early equity investment. So the longest lead time item to build one of these things typically is the the like high voltage to mid voltage conversion infrastructure, the substation.
+Speaker 1: Okay.
+Speaker 4: Okay? And that might be like eighteen months to get one and call it a $100,000 a megawatt. So 300 megawatts, $30,000,000.
+Speaker 2: K.
+Speaker 4: We'll get that done and we'll do some early civil work to get the site, like the timeline to build shortened.
+Speaker 2: Okay.
+Speaker 4: That's currently at least you know, who knows if we evolve over time? But currently at least, that's where we stop generally our equity investment
+Speaker 1: Mhmm.
+Speaker 4: Until we find a tenant that's interested.
+Speaker 1: Mhmm.
+Speaker 4: That's very hard. It takes forever. Negotiate for months and months, hundreds of pages of documents. But if you get, let's say, a hyperscaler long term lease
+Speaker 1: Mhmm.
+Speaker 4: At that point, they will be very opinionated about the particulars that they want for that site. That's a very iterative process with our engineering team. You figure out exactly this is the style they want, ticks all these boxes. At that point, if we have a signed lease, we will try to debt finance as much as possible.
+Speaker 3: You know? Are you buying the actual GPUs or is the hyperscaler Warm show. No.
+Speaker 1: We're just
+Speaker 11: we are
+Speaker 4: to this point, that business has been less interesting to us. Yeah. It's not very interesting. But the Yeah. Business that's hurting The the piece we see the best, certainly risk adjusted return and for the last year or two, frankly, just the best absolute return is building everything down to the GPU Yeah.
+Basically.
+Speaker 1: We we we so, yeah, walk me through exactly how far you're taking it. So the building goes up.
+Speaker 4: Yep.
+Speaker 1: The polished floors are in.
+Speaker 4: Yep. We're yeah. We're bringing cooling down to the rack. To the rack.
+Speaker 1: Okay. They're gonna But they must bring it
+Speaker 4: all in the racks.
+Speaker 1: Got it. Okay. Yeah.
+Speaker 2: Connect Yep.
+Speaker 4: The various connections. Okay. And then Water lines Yep.
+Speaker 1: Power lines.
+Speaker 4: All of that. Chillers Down to the everything.
+Speaker 1: Down to the rack.
+Speaker 4: Yeah. It's a very like everything ready to go. And the reason why, by the way, on a long term lease Mhmm. Right? Figure they're gonna recycle those racks Yeah.
+Probably twice.
+Speaker 1: Sure.
+Speaker 4: Yeah. So like a lot of the modern design and iteration is how do we build this site Mhmm. To make it as easy as possible to not be outdated when we wanna change the racks. And the racks are gonna be like, there's gonna be way more rack density. I don't know.
+They might replace them in five, six years with one megawatt racks.
+Speaker 1: You know,
+Speaker 4: you might need a 120 kilowatts or something now, and it's gonna be more dense. And so, you know, high level, you you have to bring basically, you know, electricity and water and air into the building.
+Speaker 2: Yep.
+Speaker 4: You have a very big open building, kinda like a lot of these types
+Speaker 3: Like an Ultrabounds. Yeah. Fantastic.
+Speaker 4: And then the ability to dial down those various valves and so forth as you get towards the rack. Yeah. And probably the floor space shrinks Yeah. Over time. And you have cool ping pong.
+You open the podcast studio in the other end
+Speaker 2: of the Okay.
+Speaker 4: At the other end of the data center in a few years. So just because didn't finish Like, so then we'll go debt finance it. We have gone to the the high yield markets. Yep. Raised couple billion dollars at about 6% in So amazing.
+That's amazing. At a really high LTC. So Yeah. You know, the market's wide open
+Speaker 1: That's great. Does your team look like a private equity fund with a bunch of people sitting at desks in front of spreadsheets and then you've call people to actually go and build the building and they're off your staff and you're hiring construction firms? Or do you have sort of, you know, guys who can work a shovel
+Speaker 4: on a really weird company. Like, I tell people so I started the company in my attic during COVID. So we've had to hire, like, every person knew how to do something better than me at some point and then that's cascaded down.
+Speaker 1: Yeah.
+Speaker 4: Yeah. We only have about a 100 employees Okay. At this point. It's a very unique firm in that it's it's a little bit like a Venn diagram of, yes, a finance sort of structuring Mhmm. Spreadsheet person Project management.
+Speaker 1: Yep. That type of stuff.
+Speaker 4: Let's call it a technology firm to figure out lot of what needs to be done like networking and stuff like that. Not the industrial side of construction.
+Speaker 1: Yeah.
+Speaker 4: And then the last part really and like the most populated part is the more industrial We do in house project management and most of the procurement activities. We externalize the like trade work.
+Speaker 1: Sure.
+Speaker 4: So if there's
+Speaker 1: So you might pick the transformer to buy, schedule it for shipment but you're calling a trucking company to bring it out, you're calling other people to unpack it off truck, plant it, bolt it to the ground, do whatever else they need to do.
+Speaker 4: We have an external EPC that really brings all those trades to the site.
+Speaker 2: Got it.
+Speaker 4: We have 18
+Speaker 1: What does stand for? EPC. Oh, EPC?
+Speaker 4: Yeah. Sorry. Engineering procurement construction.
+Speaker 1: Got it.
+Speaker 4: Right. So sorry. No. Got jargon on you. Yeah.
+So so if there's 1,800 people on the site, maybe five of them are Cypher employees. Yeah. The others are like the staffed up folks from the outsourced provider of a lot of that trade work.
+Speaker 1: Do you like railroad analogies? A lot of business.
+Speaker 4: Actually, it's the best analogy
+Speaker 1: More than oil?
+Speaker 4: Yes. And I'll tell you why. Mhmm. Because it's this the build out of this industry is so tied to capital markets. Mhmm.
+It's one of the reasons why we have such a New York nexus.
+Speaker 2: Sure.
+Speaker 4: Like, honestly, even in Bitcoin mining, that was a big part. We went public as a way to raise a bunch of money in a business that's hard to, get the CapEx for. The hyperscalers are now doing the, like, varsity version of that with big debt offerings and so forth. But I like the railroad analogy because the modern capital markets were kind of created because of the railroads. Like, there wasn't enough bank lending in the world Yeah.
+To get them built. So the idea of, like, buying equity shares in a
+Speaker 1: project Yeah.
+Speaker 4: Is kind of the railroads. Yeah. So that's why I like that one. None of them are exactly perfect, but No. That's closer than any of the other ones I could think of.
+Speaker 1: Yeah. Jordy, did you have something else? Sorry.
+Speaker 3: We like the railroad analogy minus the, you know, mass of bust.
+Speaker 4: So true.
+Speaker 1: I I actually haven't studied the railroad boom and bust as much.
+Speaker 3: We should we should study.
+Speaker 1: I mean, it it was a very long long period of history.
+Speaker 3: Yeah. Fascinating. Well, thank you so much for coming interesting.
+Speaker 4: Great to see
+Speaker 1: you again love going a level deeper like this. This is fascinating. Yeah. Please send anyone to us send anyone on your team our way when you have news and congratulations on everything that's going on. We will.
+You so much. Fantastic.
+Speaker 3: Great to have you on.
+Speaker 1: Have a great day.
+Speaker 4: Congrats on the podcast.
+Speaker 1: Thank you. Much. Hang out. We're doing what you're We're gonna close out. Let me
+Speaker 3: On before we jump, I gotta talk about my dear friend Brandon Jacoby, who I saw in the chat earlier, launched his new studio, a multidisciplinary design practice for those who challenge the boundaries of technology.
+Speaker 1: Mhmm.
+Speaker 3: He combined a Star Wars intro style Oh, video with a barrel. It's a wave. A barrel. Oh, cool.
+Speaker 1: Okay. I'm visualizing that. I
+Speaker 3: think he made this for us.
+Speaker 1: Okay. You Do you wanna pull it up?
+Speaker 3: Oh, there we go. There we There we go. Okay. Look at this. Wait.
+Speaker 1: Motion design. Oh, interesting. Yeah. This is both of us.
+Speaker 3: Our
+Speaker 1: interests. Yeah. This is perfect.
+Speaker 3: He made the launch video for an audience of two.
+Speaker 1: For some reason, I was I was imagining the the text curling up like a wave and it being sort of hard to read, but this is much better. I love it.
+Speaker 3: It's a good statement.
+Speaker 5: This is
+Speaker 1: a mission statement. This is an essay.
+Speaker 3: Worked together for for a few years. Yeah. And he was doing this
+Speaker 1: He was one of the first personnel news we did on the show. We we tracked his move to x, the everything else.
+Speaker 3: But anyways, he's been doing this kind of work forever. He was a design lead at X as well as Cash App as well as My Last Company. And he's incredibly talented so he's open for business. Fantastic. Well That's our show, folks.
+Speaker 1: Let me tell you about Public. Investing for those who take it seriously. They got stocks, options, bond, crypto, treasuries and more with great customer service. And that is our show. We'll see you tomorrow 11AM sharp.
+Leave us five stars on Apple Podcast and Spotify. Sign up for our newsletter at tbpn.com, and we will see you tomorrow. Goodbye.
