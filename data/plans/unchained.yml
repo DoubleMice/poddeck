@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-14T18:26:35.186Z
+refreshed_at: 2026-07-15T04:06:04.968Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 88
-done: 1
+total_candidates: 86
+done: 0
 pending: 0
-needs_transcript: 86
+needs_transcript: 85
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
@@ -176,99 +176,6 @@ episodes:
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
-  - id: 7a8aaf0e-47e9-11f1-a2d1-030e826b82d5
-    guid: 7a8aaf0e-47e9-11f1-a2d1-030e826b82d5
-    title: A16z Crypto Raised $2.2 Billion for Fund 5. Here's How They Plan to Deploy It
-    duration: 3308
-    published: Thu, 07 May 2026 04:12:00 -0000
-    published_sort: "20260507"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6576176751.mp3?updated=1777998984
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6576176751.mp3?updated=1777998984
-    image: https://megaphone.imgix.net/podcasts/7a8aaf0e-47e9-11f1-a2d1-030e826b82d5/image/367d274c307b0e54311338a9b9dce4f1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      From AI agents as economic actors to quantum threats and prediction market regulation, Ali Yahya of a16z lays out
-      the investment thesis behind a16z crypto's fifth fund.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-
-      Coinbase One
-
-
-      20% off first year of annual plan + $50 Bitcoin bonus. Offer valid until May 31.
-
-
-      coinbase.com/unchained
-
-
-      ========================================================
-
-
-      a16z crypto just closed its fifth crypto fund at $2.2 billion — smaller than its previous fund, but the firm says
-      that's deliberate.
-
-
-      General Partner Ali Yahya argues we are entering a different phase of crypto's development: one where
-      infrastructure is ready, regulatory clarity is arriving, and the competition for real users has begun in earnest.
-
-
-      Two themes sit at the center of a16z's thesis — the collision of crypto and FinTech, and the emergence of AI
-      agents as economic actors. But Yahya's most striking claim may be about blockchains themselves: that performance
-      is no longer a moat, privacy is. And that the chains which get privacy right will accrue stronger network effects
-      than anything the industry has built before.
-
-
-      What does a world of privacy-dominant blockchains do to DeFi composability, to security, to the ability to track
-      hackers? And where does the quantum threat actually stand?
-
-
-      Host:
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-
-      Guests:
-
-
-      ⁠⁠⁠⁠⁠⁠⁠⁠Ali Yahya, General Partner, a16z crypto
-
-
-      Timestamps
-
-      🚀 0:00   Introduction — Why a16z crypto raised its $2.2B Fund 5 now
-
-      💰 2:50   The two big investment themes: fintech x crypto and AI x crypto
-
-      🔒 9:25   Why Ali believes privacy is the most important moat in crypto
-
-      ⛓️ 14:31  How the three privacy approaches compare: centralized sequencers, TEEs, zk tech
-
-      🔐 18:32 What happens to security in a world of privacy chains?
-
-      🧩 28:48 When privacy chains dominate, can we still have DeFi money Legos?
-
-      🤖 34:12  Ali's AI background and how agents will enter the financial system
-
-      🎨 43:55 What AI x crypto means for entrepreneurs and creative types
-
-      ⚠️ 49:13  The quantum threat — why Ali says we have 10-15 years
-
-      📊 51:58  Prediction markets and insider trading — where the line is
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 62e6f0006ec34b41b556cc58ed10521a,8f34e2443d4a4403abdca0a950c622f6,b232ed3f01b44b0b920241ca05172eca,5fc128aca732462dbfa626279a171395
-    transcript_submitted_at: 2026-06-25T18:57:11.080Z
-    transcript_completed_at: 2026-06-25T19:00:04.836Z
   - id: 5c51dea2-48a4-11f1-aad3-37cf1e9be3b9
     guid: 5c51dea2-48a4-11f1-aad3-37cf1e9be3b9
     title: "Why Wrapped Energy or Compute Will Be the New Store of Value: Bits + Bips"
@@ -3262,7 +3169,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5024,7 +4932,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -7708,80 +7617,6 @@ episodes:
 
       Check out David's newsletter New World Same Humans
 
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 87fe722c-03b2-11f1-8005-8b0befdced68
-    guid: 87fe722c-03b2-11f1-8005-8b0befdced68
-    title: "DEX in the City: Why AI Agents Are Good for Crypto and Stablecoins"
-    duration: 3011
-    published: Fri, 06 Feb 2026 23:21:00 -0000
-    published_sort: "20260206"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8716656595.mp3?updated=1770420888
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8716656595.mp3?updated=1770420888
-    image: https://megaphone.imgix.net/podcasts/87fe722c-03b2-11f1-8005-8b0befdced68/image/bbfe68e01c625966d1818fddc962aa9f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      If you’re looking for help with crypto taxes, Crypto Tax Girl is offering $100 off for Unchained listeners.
-
-
-      They provide personalized crypto tax reports and tax returns, and availability before April 15 is limited.
-
-
-      Go to http://cryptotaxgirl.com/unchained to save $100!
-
-
-      The White House is intervening in the fight over stablecoin yield. And AI agents are… organizing?
-
-
-      In this special episode of DEX in the City, Zerohash CEO Edward Woodford joins hosts Jessi Brooks and Katherine
-      Kirkpatrick Bos to unpack the White House meeting to resolve disputes over the CLARITY Act and the Moltbook craze.
-
-
-      Listen to find out why Edward thinks CLARITY should have a narrower focus and what he thinks is more important
-      than the yield debate. Plus why Jessi thinks the crypto industry is pinning too much hope on the bill.
-
-
-      Don't also miss Edward's rationale behind rejecting $2B from Mastercard and KK's awkward interaction with a
-      teacher after offering to teach crypto at her son's school.
-
-
-      Meanwhile, as AI agents proliferate, where does accountability lie?
-
-
-      Hosts:
-
-
-      Jessi Brooks, General Counsel at Ribbit Capital
-
-
-      Katherine Kirkpatrick Bos, General Counsel at StarkWare
-
-
-      Guest:
-
-
-      Edward Woodford, Founder and CEO of Zerohash
-
-
-      Links:
-
-        ​​Crypto Market Structure Bill Clears Senate Committee — But the Hard Part Is Still Ahead
-
-        Senators Move to Curb Passive Stablecoin Yields in Market Structure Push
-
-        Mastercard in Talks to Buy Zerohash for $2 Billion: Report
-
-        How the GENIUS Act Creates a Built-In Advantage for Banks and Deposit Tokens
-
-        How Nansen’s New Trading Agent Makes It Easier to Follow the Smart Money Onchain
-
-        How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
-        Reading is Fundamental
-
-        Stablecoin for Babies
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
