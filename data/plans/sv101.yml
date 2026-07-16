@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-07-16T04:07:02.656Z
+refreshed_at: 2026-07-16T18:27:12.872Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -142,5 +142,9 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guest: 韩铮.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-16T18:27:14.095Z
+    transcript_job_id: ff1187a31d7e3b4805a3fb7e9d093988,ff1114c1a36fb3585e459f40cd094012,ff119dd056b0562535f8ce2b0d094036,ff117c8320ca64778ad5e28e3d094056,ff11f24dec03e54a9e15184c20094078,ff1112978905fbab54013a5b73094100
+    transcript_completed_at: 2026-07-16T18:30:34.603Z

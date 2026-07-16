@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>端到端vs上下分层：机器人路径之争，正在转向？ — 硅谷101</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  color: #111;
+}
+header .meta {
+  font-size: 14px;
+  color: #888;
+}
+header .meta span { margin: 0 8px; }
+.overview {
+  margin-bottom: 48px;
+}
+.overview h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #333;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+.card {
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+  border-left: 4px solid;
+}
+.card.blue   { background: #eff6ff; border-color: #3b82f6; }
+.card.green  { background: #f0fdf4; border-color: #22c55e; }
+.card.orange { background: #fff7ed; border-color: #f97316; }
+.card.purple { background: #faf5ff; border-color: #a855f7; }
+.card.red    { background: #fef2f2; border-color: #ef4444; }
+.card strong { display: block; margin-bottom: 4px; }
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #222;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f0f0f0;
+}
+section h3 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+  color: #444;
+}
+section p {
+  margin-bottom: 14px;
+}
+blockquote {
+  margin: 20px 0;
+  padding: 18px 22px;
+  background: #f8f9fa;
+  border-left: 4px solid #3b82f6;
+  color: #444;
+  font-style: italic;
+  border-radius: 0 6px 6px 0;
+}
+blockquote .attr {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-style: normal;
+  color: #999;
+}
+.insight-box {
+  margin: 24px 0;
+  padding: 20px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.insight-box strong { color: #d97706; }
+.quotes-section {
+  margin: 48px 0;
+}
+.quotes-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.quote-card {
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border-left: 4px solid;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.quote-card .text { font-style: italic; }
+.quote-card .ctx {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-style: normal;
+  color: #888;
+}
+.quote-card.q1 { background: #eff6ff; border-color: #3b82f6; }
+.quote-card.q2 { background: #f0fdf4; border-color: #22c55e; }
+.quote-card.q3 { background: #fff7ed; border-color: #f97316; }
+.quote-card.q4 { background: #faf5ff; border-color: #a855f7; }
+.quote-card.q5 { background: #fef2f2; border-color: #ef4444; }
+footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+}
+footer a { color: #3b82f6; text-decoration: none; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>端到端 vs 上下分层：机器人路径之争，正在转向？</h1>
+  <div class="meta">
+    硅谷101<span>·</span>2026年7月<span>·</span>嘉宾：韩铮（速通科技 CEO）
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+    <div class="card blue">
+      <strong>技术路线未收敛</strong>
+      机器人训练方法远未统一。端到端与分层架构之争正处于转折点，韩铮断言 2026 下半年分层将重回主流。
+    </div>
+    <div class="card green">
+      <strong>零样本 240 次抓取</strong>
+      速通科技在 CVPR/ICRA 现场接受随机物体测试，98% 单次成功率，闭环可达 100%——学术界前所未有。
+    </div>
+    <div class="card orange">
+      <strong>ImageNet 的 3D 传承</strong>
+      联合创始人苏浩是 ImageNet 核心作者、ShapeNet 创建者，将"大数据集+神经网络"思路带入物理世界。
+    </div>
+    <div class="card purple">
+      <strong>全球格局深度拆解</strong>
+      Physical Intelligence、Skild AI、Figure、Tesla、DeepMind+波士顿动力、宇树——谁在做什么，谁可能胜出。
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>一、速通科技：全栈机器人的定位</h2>
+  <p>
+    在当下机器人行业的喧嚣中，速通科技是一个特别的样本。它既不像 Physical Intelligence 那样只做软件大脑，也不像宇树那样以硬件量产见长——速通走的是<strong>大脑和本体都做</strong>的全栈路线。
+  </p>
+  <p>
+    CEO 韩铮在节目中坦言，团队的背景其实是以软件为主的机器学习研究，直到 2022 年开始为商业化做准备时，才正式决定自研硬件本体。这个转变背后有一个务实的判断："如果不自己碰本体，很难把大脑的能力展现出来，甚至是说能够去做一些迭代和探索。"
+  </p>
+  <p>
+    速通当前的机器人形态是<strong>轮式底盘加二指夹爪</strong>，核心聚焦在物体操作（Manipulation）而非双足运动。韩铮的理由很直接：90% 的物体操作任务不需要灵巧手，轮式下肢在现阶段比双足更稳定可靠。"是否双足和轮式，现在机器人的下肢还不是特别的稳定，经常会出现跌倒的情况。"把操作和移动解耦，是现阶段最务实的工程选择。
+  </p>
+  <p>
+    与硅谷对标公司对比，Optimus、Figure、1X 是"本体加模型"，但模型能力不如 Physical Intelligence 专注；Physical Intelligence 专注基础模型但以软件为主。速通走的是软硬件强绑定的 Sim-to-Real 路线，韩铮将公司的定位概括为<strong>"机器人领域的 iPhone + iOS"</strong>。
+  </p>
+</section>
+
+<section>
+  <h2>二、从 ImageNet 到 ShapeNet：3D 数据的传承</h2>
+  <p>
+    理解速通的技术基因，需要回溯到联合创始人苏浩的学术生涯。苏浩在普林斯顿和斯坦福时期是李飞飞实验室的核心成员，参与了<strong>ImageNet 项目</strong>——这个最终收集了 1400 万张图片和文字映射的数据集，在 2012 年 AlexNet 横空出世后，成为了整个深度学习爆发的导火索。
+  </p>
+  <p>
+    AlexNet 的成功对苏浩冲击很大。"他觉得自己错过了一个非常重要的机会，所以他在思考下一站大的领域是什么。"他的答案是：<strong>把大数据集加神经网络的方法带到物理世界</strong>。2013-14 年，他开始构建 ShapeNet——3D 版的 ImageNet。
+  </p>
+
+  <h3>3D 数据的三级跳</h3>
+  <p>
+    然而，从 2D 到 3D 的跨越远比想象中困难。ShapeNet 只收集了几十万个 3D 模型，远远达不到 ImageNet 千万级的覆盖度。更棘手的是，3D 数据的标注维度远超 2D。
+  </p>
+  <p>
+    ShapeNet 只包含基础的几何和表面贴图。往上走一层，PartNet 需要标注物体的部件——瓶子的瓶身、瓶盖、瓶底——这个级别的数据只有数万个。再往上，PartNet-Mobility 需要标注动力学约束——瓶盖是左旋还是右旋？拧开后能不能取下来？——<strong>整个开源世界只有不到 3000 个带这类标注的物体</strong>。
+  </p>
+  <div class="insight-box">
+    <strong>核心矛盾：</strong>机器人操作需要的是动力学约束级别的数据（拧瓶盖需要知道方向和力度），但这类数据极其稀缺。每一级标注的成本都比上一级高几个数量级。这就是为什么 3D 结构化数据至今仍是机器人领域最大的瓶颈之一。
+  </div>
+  <p>
+    韩铮打了个比方：2D 视频里虽然有 3D 信息，但"不全也不准"。Sora 在训练时之所以用 Unreal 引擎从 3D 模型渲染 2D 视频，就是因为互联网视频的 3D 信息不够精准。自动驾驶可以容忍 10 厘米的误差，但要把线缆插入对应的孔位——这需要的是<strong>亚毫米级</strong>精度。
+  </p>
+</section>
+
+<section>
+  <h2>三、DALL·E 时刻：为什么是 2022 年？</h2>
+  <p>
+    2012-2016 年间，机器人行业经历过一波热潮。Google 收购了包括 Boston Dynamics 在内的多家机器人公司，但最终以失败告终。韩铮认为根本原因是"当时的要素还不全"。
+  </p>
+  <p>
+    转折点来自一个看似不相关的技术突破：<strong>OpenAI 的 DALL·E</strong>。"文生图模型让我们意识到，2D 图片有上千万张可以描述世界上几乎所有物体，有没有办法把 2D 升维到 3D？"这个朴素的想法让韩铮和苏浩看到了关键的可能性：在仿真器里用 3D 重建整个世界，理论上开始可行了。
+  </p>
+  <p>
+    同时，GPU 算力的提升和新型仿真器架构的出现也提供了基础设施条件。新的仿真器和传统"有限元仿真"完全不同——它不追求视觉真实，可以分辨率很低，但追求物理一致性，能在一张 GPU 上开成百上千甚至上百万个并行训练环境。
+  </p>
+  <p>
+    仿真器的名字 <strong>SAPIEN</strong> 也有深意——来自尤瓦尔·赫拉利的《人类简史》（Sapiens）。"我们想把人类和整个生物几百万年的进化过程放在仿真器里面，让机器人再经历一遍。"
+  </p>
+</section>
+
+<section>
+  <h2>四、Sudo R1：零样本抓取的突破</h2>
+  <p>
+    2026 年 4 月，速通发布了 Sudo R1 的演示视频——一段连续 60 分钟、240 次抓取的视频。所有测试物体在训练数据中从未出现过。单次成功率接近 98%，失败后通过闭环控制自动调整策略，最终达到 100% 成功率。
+  </p>
+  <p>
+    韩铮认为："这可能是整个机器人领域里，尝试用 Sim-to-Real 路线做到零样本开放世界操作、填平 Sim2Real Gap 的<strong>第一次</strong>。"
+  </p>
+  <p>
+    不出所料，学术界立刻产生了质疑——有人认为是精心控制了变量，有人怀疑训练数据里见过这些物体。速通的回应是：<strong>把机器人搬到学术会议现场</strong>。
+  </p>
+  <p>
+    2026 年 6 月的维也纳 ICRA 大会上，近 1000 人来到速通的展台，用自己随机的物体——参会证件、手机、耳机、小玩偶——进行测试。紧接着在 CVPR 大会上也做了同样的展示。没有提前采集环境数据，没有做任何场景适配。韩铮说："这在以前的学术会议上，<strong>从来没有人能够做到这样的展示</strong>。"
+  </p>
+  <blockquote>
+    以前做 demo 的团队，会在学术会议开始之前提前一个月在旁边租一个 Airbnb，把机器人放在那边收集大量数据，做好处理之后再重复展示。速通不需要。
+  </blockquote>
+</section>
+
+<section>
+  <h2>五、Sim2Real 的核心：软硬件必须协同设计</h2>
+  <p>
+    Sim-to-Real 这个词里，重点不是"仿真"而是<strong>"搬"</strong>——在仿真中学到的策略，搬到真机上还灵不灵，这是整个路线上最大的难题。
+  </p>
+  <p>
+    速通的解法不是一个纯软件工程问题，而是一个系统工程的思路：<strong>软硬件必须强绑定</strong>。仿真器不是万能的——某些电机特性、响应曲线的迟滞、每次上电的差异，现在还仿不好。所以硬件选型时，必须用仿真器支持得比较好的方案。而仿真器也要对硬件个体的差异和噪声做补偿建模，前提是这些差异不能太大。
+  </p>
+  <p>
+    韩铮拿英伟达的 Isaac 和开源的 MuJoCo 做了对比。这些框架都声称支持各种机器人构型，但它们的机器人描述文件（URDF 格式）对几何和动力学约束做了大量简化，"不太会考虑到电机的噪声、响应迟滞、每次上电的差别"。在研究界这些简化是合理的，但要做稳定可靠的产品，就必须把整个系统当作一个整体来设计。
+  </p>
+  <p>
+    这也是为什么速通选择软硬件一起做，而不是像很多 AI 创业公司那样只做软件层。"Sim-to-Real 这条路要能走得通，它一定是要跟机器人的本体绑定在一起的。"
+  </p>
+</section>
+
+<section>
+  <h2>六、端到端 vs 分层：机器人行业的核心分歧</h2>
+  <p>
+    这期播客最核心的主题，是韩铮对当前机器人行业主流路线的根本性质疑。
+  </p>
+
+  <h3>端到端（Physical Intelligence 为代表）</h3>
+  <p>
+    一个黑盒模型覆盖从感知到行动的全程。核心方法是模仿学习——人遥控机器人做动作，模型照着模仿。不需要理解物体的几何位置和材质，不需要知道瓶盖应该往哪个方向拧。赌的是"数据堆够了，智能就会涌现"。
+  </p>
+
+  <h3>上下分层（速通路线）</h3>
+  <p>
+    预训练时把模型分成两层。上层负责高级推理——任务分解、场景理解、步骤规划；下层负责基础操作——抓取、放置、拧开、倒水，每一个技能都要做到稳定可靠。预训练过程中植入对物理世界的理解和预测。最终在端侧部署时，同样是一个端到端模型，但它的内部已经有了结构化的认知。
+  </p>
+
+  <div class="insight-box">
+    <strong>韩铮的判断：</strong>"Physical Intelligence 和 Google 这些机器人公司其实更擅长做上层的 reasoning。但对于物体的操作，靠几十万小时的模仿数据，可能已经是现在操作的极限。人类真实操作物体的数据远远达不到开放世界稳定可靠操作所需的量级。"
+  </div>
+</section>
+
+<section>
+  <h2>七、数据瓶颈：机器人没有 500 万辆车上路</h2>
+  <p>
+    端到端路线的灵感来自大语言模型的成功——"堆数据就能出智能"。但韩铮指出了机器人领域的致命差异。
+  </p>
+  <blockquote>
+    "你很难在机器人没有任何功能之前，卖 500 万台到各个办公室、家庭或者工厂里面去。在我们的家里面，我很难想象我买了一台机器人，需要穿着动捕服才能去做西红柿炒鸡蛋。"
+  </blockquote>
+  <p>
+    和自动驾驶对比：特斯拉十几年前就开始卖车，几百万辆车在世界各地的公路上收集数据，每天有司机在"免费标注"。但机器人？第一，没有功能之前卖不动；第二，即使卖出去了（国内公司已做到百台甚至千台），离 500 万台差三个数量级；第三，在家用场景里让用户穿动捕服操作机器人根本不现实。
+  </p>
+  <p>
+    这就是为什么韩铮认为 <strong>Sim-to-Real 是躲不过去的</strong>——它是冷启动阶段唯一能在百万甚至千万级别的仿真环境中补全数据的路径。英伟达也在推这个方向，原因是一样的。
+  </p>
+</section>
+
+<section>
+  <h2>八、白盒与黑盒：可解释性的价值</h2>
+  <p>
+    速通的模型和纯端到端模型有一个根本区别：它是<strong>可解释的</strong>。预训练过程中，模型学会了判断物体的几何位置、预估材质和重量、识别部件的运动学约束。当它去拧瓶盖时，它"知道"自己在做什么——如果拧不动，是加大力，还是换个方向拧？
+  </p>
+  <p>
+    韩铮用人类婴儿的成长打了个比方：小朋友第一次自己拧饮料瓶，会先左拧一下、右拧一下——这是一种随机的探索。但同时他也会观察父母怎么操作，建立理论依据。人类出生时带有一定的遗传性操作能力，然后在成长中不断学习。"我们实际上是要把整个进化的过程在仿真器里面再复现一次。"
+  </p>
+  <p>
+    作者概括：这里的关键区别在于，端到端模型只是在模仿动作轨迹，而速通模型在强化学习过程中建立了对因果关系的理解。前者在环境变化时会失效（因为没见过这个特定组合），后者因为理解了底层物理，泛化能力更强。
+  </p>
+</section>
+
+<section>
+  <h2>九、全球竞争格局：谁在做什么，谁会胜出</h2>
+
+  <h3>Physical Intelligence & Skild AI</h3>
+  <p>
+    硅谷做大脑层的两家代表公司，估值都在 130-140 亿美元级别。韩铮的评价是：PI 更擅长上层 reasoning，"仅代表我个人，不一定是公司统一的想法。"但他认为 PI 和 Google 这些公司的核心能力在任务分解和环境理解上，而非底层操作。Skild 的两位创始人"以前是坚决不信仿真的，但募资时拿机器人仿真作为主要方向"。
+  </p>
+
+  <h3>Figure AI</h3>
+  <p>
+    Figure 最近因为与宝马的合作和产线分拣直播重获关注。但韩铮指出直播暴露的问题：物体只有两类（盒子和软性包装，颜色重量几乎一样），环境始终在公司内部的固定产线中，从未走出去。洗碗机 demo 被曝"花了很长时间拍一条"。端到端 VLA 方法"对光照和环境变化极其敏感，一旦变化成功率直线下降"。
+  </p>
+
+  <h3>DeepMind + 波士顿动力</h3>
+  <p>
+    这是整期节目中最出人意料的判断——韩铮认为未来两到三年机器人操作领域最大的竞争对手是 DeepMind + 波士顿动力。理由：DeepMind 在所有大厂中对物理世界 AI 下注最坚决，拥有近乎无限的算力和全球顶尖人才，几年前就收购了 MuJoCo 仿真器团队，还自研了世界模型 Genie-3。而波士顿动力提供了电动版 Atlas 硬件平台，现代集团提供量产能力。
+  </p>
+  <blockquote>
+    "我觉得这可能跟大家想的都不太一样。DeepMind 是坚定相信 Sim-to-Real 这条路的。"
+  </blockquote>
+  <p>
+    韩铮推测，Google 可能"重复 Android 的方法"——用波士顿动力硬件作为平台，自己掌握底层模型和仿真器，让生态在上面生长。
+  </p>
+
+  <h3>宇树</h3>
+  <p>
+    2025 年出货 5000 多台，"率先给市场交出了最好的答卷"。对比之下，Tesla 和 Figure 可能只有 150 台左右。但宇树的强项在运动控制，<strong>"对于物体操作可能才刚刚开始"</strong>。
+  </p>
+
+  <h3>Tesla Optimus</h3>
+  <p>
+    韩铮认为 Tesla 是"美国机器人行业最大的推手"，硬件核心和制造能力极强。但模型方面，"按照 Tesla 和 Elon Musk 的风格，可以等到行业有较成熟方案之后再补，也来得及"。
+  </p>
+
+  <h3>亚马逊</h3>
+  <p>
+    最大的应用场景方，机器人部署量可能已超过员工数。收购了 Covariant 核心团队，投资了 Agility 等多家公司。韩铮判断："亚马逊最终要不然就是把这些公司收购，要不然就要自己去做。"
+  </p>
+</section>
+
+<section>
+  <h2>十、商业模式：不赌场景，赌生态</h2>
+  <p>
+    韩铮对机器人的商业模式有一个清晰的比喻：<strong>"硬件形态更像汽车（电池、电机、计算单元），但商业模式更像智能手机。"</strong>
+  </p>
+  <p>
+    速通提供的是"硬件本体 + 底层操作模型 + SDK"。开发者利用这些基础技能 API 去搭建垂直应用——仓库分拣、工厂组装、家庭服务。韩铮设想的路径是：1000 个开发者尝试，100 个找到场景，其中 5-10 个做出超级应用，可能需要部署 1 万台甚至更多机器人。
+  </p>
+  <p>
+    为什么不做垂直？"做垂类商业应用，有的时候<strong>账是算不过来的</strong>。"一台机器人替代一定的人工，可能要花三到五个 PhD 的成本去维护。而且速通团队的特质不是到工厂里做部署和集成测试——那是完全不同的能力模型。
+  </p>
+  <p>
+    这个选择背后也有战略考量：不赌单一场景，意味着不会因为商业化的压力而偏离基础模型的研发方向。韩铮观察到很多同行的轨迹：一开始想做通用，最后因为商业压力退回到单一场景。"客户给大家的要求，会导致跟训基础模型的思路有背离。"
+  </p>
+</section>
+
+<section>
+  <h2>十一、暴论：2026 下半年，分层回归主流</h2>
+  <p>
+    这是整期播客最核心的观点。
+  </p>
+  <blockquote>
+    "我们有一个暴论：可能从今年的下半年开始，上下分层的这种结构会重新再回到主流里边，而且可能在之后大家选择的方案推到商业化里边去，可能是最终的一个方法。"
+  </blockquote>
+  <p>
+    韩铮回溯了一段历史：PI 的创始团队在 Google Robotics 时期，内部的分工本来就是"底层稳定操作 + 上层任务理解"。但在 2023-24 年各自创业时，大家选择了自己擅长和熟悉的套路，不再提分层。现在的问题是：底层操作的稳定性和泛化性始终没有解决，而端到端的模仿学习正在触及天花板。
+  </p>
+  <p>
+    "最近几周我们在跟学术界、工业界做现场展示和交流之后，有些人已经意识到这可能是一个新的方向。"
+  </p>
+  <p>
+    韩铮认为，上层 reasoning 是硅谷公司的优势所在，而底层操作——因为必须软硬件强绑定——需要有硬件能力的公司来做。这不一定是只有中国公司能做到的，但确实是速通结构性优势所在。
+  </p>
+  <p>
+    作者概括：韩铮的"暴论"背后有扎实的逻辑——不是信仰之争，而是基于数据可得性的工程判断。端到端路线在理论上并没有错，前提是有足够的数据。问题恰恰是这个前提在机器人领域目前不成立。当数据不够时，把对物理世界的结构化理解预先植入模型，是更务实的路径。而且，等数据量够了，路线可以变——这就是"上下分层"作为过渡方案的战略灵活性。
+  </p>
+</section>
+
+<section>
+  <h2>十二、十年愿景：机器人时代的底层平台</h2>
+  <p>
+    被问到"十年后你希望速通被记住的是什么"，韩铮的回答展示了远超一家创业公司的野心。
+  </p>
+  <blockquote>
+    "Sim-to-Real 这条路是对的——这是副产物。我们希望十年以后回头看，这像是一个 iPhone 加 iOS 操作系统的时刻。那时候会有新的 Uber、滴滴、美团、DoorDash 长出来。大家用的硬件加底层系统，至少有一部分是我们提供的。"
+  </blockquote>
+  <p>
+    这个愿景背后有一个关键判断：机器人行业不会只有一种机器人、一种应用。工厂、仓库、家庭、医院——每个场景需要不同的上层逻辑。但底层的基础操作技能是通用的——抓取、放置、拧开、插入。速通要做的就是这一层。就像 iOS 不会自己去开发每一个 App，但它提供了一套稳定可靠的底层框架。
+  </p>
+  <p>
+    "说不定这三个字在我们团队里边几乎不太会出现。"韩铮说，他们之所以能坚持通用路线，是因为过去七八年的研究合作中，已经在小规模上验证了可行性，也清楚还需要补充哪些要素、需要多长时间。"这并不是说我们把数据先做一些小模型、先试一下，不知道什么时候能出来。"
+  </p>
+  <p>
+    这是速通最稀缺的东西——技术上有一个清晰的判断，商业上没有因为压力而偏离方向。难，但可能最终是最有效的方法。
+  </p>
+</section>
+
+<div class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div class="quote-card q1">
+    <div class="text">"机器人如果是要对于物体去做操作，它这个难度要高两到三个数量级。"</div>
+    <span class="ctx">— 相比于运动控制（locomotion），操作需要理解物体、环境、材质和几何信息，完全不同的复杂度</span>
+  </div>
+
+  <div class="quote-card q2">
+    <div class="text">"我们有一个暴论：可能从今年的下半年开始，上下分层的这种结构会重新再回到主流里边。"</div>
+    <span class="ctx">— 对当前以端到端模仿学习为主流的机器人行业的根本性质疑</span>
+  </div>
+
+  <div class="quote-card q3">
+    <div class="text">"你很难在机器人没有任何功能之前，卖 500 万台到各个办公室、家庭或者工厂里面去。在我们的家里面，我很难想象我买了一台机器人，需要穿着动捕服才能做西红柿炒鸡蛋。"</div>
+    <span class="ctx">— 解释机器人为什么无法像自动驾驶一样复制数据飞轮模式</span>
+  </div>
+
+  <div class="quote-card q4">
+    <div class="text">"我们希望十年以后，大家回看今天，会认为这可能是一个类似于像 iPhone 加 iOS 操作系统。"</div>
+    <span class="ctx">— 速通的十年愿景：做机器人时代的底层平台，而非某一个垂直应用</span>
+  </div>
+
+  <div class="quote-card q5">
+    <div class="text">"做垂类商业应用，有的时候账是算不过来的。"</div>
+    <span class="ctx">— 一台机器人替代一定人工需要三五个 PhD 去维护，通用路线虽然难但可能最终最有效</span>
+  </div>
+</div>
+
+<footer>
+  <p>本文基于 <a href="https://sv101.fireside.fm/257">硅谷101 · E244</a> 播客内容整理。</p>
+  <p>嘉宾：韩铮（速通科技联合创始人兼CEO）| 主持：洪君 | 2026年7月</p>
+  <p style="margin-top:8px;">更多节目：小宇宙 · 苹果播客 · Spotify · B站 · YouTube 搜索「硅谷101」</p>
+</footer>
+
+</article>
+</body>
+</html>

@@ -1,0 +1,31 @@
+id: 6a57a05da4972c496dfc67f1
+source: xiaojun
+title: '146. 对Physical Intelligence柯丽一鸣4小时访谈：Pi的开源模型研究，机器人的江湖、族谱与主角'
+guest: 柯立一鸣（K）
+guest_role: Physical Intelligence 研究员，强化学习方向负责人
+published: 2026-07
+duration: 3h48m
+url: https://www.xiaoyuzhoufm.com/episode/6a57a05da4972c496dfc67f1?utm_source=rss
+thumbnail: https://image.xyzcdn.net/FrCBZSIGv8StTNlNdSa674MAANUT.png
+status: generated
+tags:
+  - robotics
+  - ai-research
+  - startup
+  - hardware
+  - interview
+  - researcher
+  - deep-dive
+  - technical
+summary: |
+  硅谷机器人公司 Physical Intelligence (Pi) 的研究员柯立一鸣（K）与小峻进行了一场近4小时的深度对谈。K 从个人成长经历讲起——安徽芜湖的竞赛少年、三次换专业、博士七年做筷子机器人——完整勾勒出一个"看起来乖实则叛逆"的研究者画像。访谈深入讲解了 Pi 从 Pi0 到 Pi0.6★ 三代模型的研究历程（能力→泛化→表现），剖析了强化学习在机器人中的本质问题（探索、归因、奖励函数），并绘制了一幅完整的机器人江湖谱系图——从 CMU 传统派到 Berkeley 机器学习派，从特斯拉到 Figure、1X，从中美硬件产业链对比到机器人自我繁殖的科幻想象。K 以"贪心算法 vs 动态规划"比喻人生哲学，反思硅谷的生产力崇拜，展现了一位在科学与人文之间寻找平衡的研究者的独特视角。
+core_ideas:
+  - Pi 的研究主线遵循"能力→泛化→表现"三阶段推进：Pi0 证明大模型能做之前想都不敢想的任务，Pi0.5 在 100 个 Airbnb 里验证开放世界泛化曲线在放缓，Pi0.6★ 引入 RL 和 throughput 指标让机器人表现超越人类遥操作员
+  - 机器人江湖存在两大派系：CMU 传统派（规划+控制，强调全栈和物理建模）与 Berkeley 机器学习派（数据驱动、端到端），K 出身传统派但信仰 ML，以"黑猫白猫抓到老鼠就是好猫"的实用主义调和两派
+  - 强化学习有四个本质问题——探索（选什么新动作尝试）、归因（哪一步做对了）、奖励函数设计（如何传递"好坏"）、问题定义（如何让机器人理解任务意图），其中奖励函数的核心不在"函数"而在"传达"
+  - 真机数据在当前阶段不可取代：仿真的 sim-to-real gap 和物理复杂性（柔性、摩擦力）使仿真器本身还是半前沿问题，而真机数据的成本可以通过让训练好的模型自己采集（体验数据）大幅降低
+  - 通用大脑不等于人形大脑：K 认为用简单双臂做好复杂任务，将来迁移到人形更容易；Pi 不做人形是 K 加入的红线——她最想研究的是"做好任务"而非"做好人形"
+  - 中国在机器人硬件供应链上具有统治力，硅谷公司普遍关注中国发展；但 Pi 受创始人导师 Covariant 的教训影响，坚持先做好研究再考虑商业化，与其他中国公司的实用主义逻辑不同
+  - 中美机器人产业存在结构性差异：中国硬件供应链优势明显，Pi 等美国研究型公司则更注重基础研究突破
+article_path: episodes/6a57a05da4972c496dfc67f1/article.html
+base: /episodes/6a57a05da4972c496dfc67f1/

@@ -1,11 +1,11 @@
 source: xiaojun
-refreshed_at: 2026-07-16T04:07:02.647Z
+refreshed_at: 2026-07-16T18:27:12.865Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
+done: 1
 pending: 0
-needs_transcript: 2
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -20,8 +20,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a57a05da4972c496dfc67f1?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a57a05da4972c496dfc67f1/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ljmazvdvAd7O5mD-Nuiompd6_1NV.m4a
     image: https://image.xyzcdn.net/FrCBZSIGv8StTNlNdSa674MAANUT.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-16T18:30:34.777Z
+    transcript_job_id: ff11975291c8e6abf9fd198c8f092987,ff117aea00abf8863eb9a039e8093001,ff11d694dd1ffd054ae69fbd3e093013,ff1160f59294bb5c9adcefb93b093021,ff111f96f6ae534bbf02c01e4f093041,ff11c5f4fabba9b0f586fd647e093053,ff11b5d2f7c16403fd00adea69093076,ff119441d26c84fa645e8225a3093090,ff112d2994556dafa32a2d9953093107,ff11f8ab37aa7c4da98b0ac7c3093119,ff111afaf1239193c77ebb1419093129,ff1123283fbaa5bd6fc9c032fd093144,ff11a8f4cf1900d7b7fad924f5093154,ff111576c3da14d1e421acbc73093176,ff113501b458a82ee7a8426d8f093206,ff11947144cffd667edf43c0a4093221
+    transcript_completed_at: 2026-07-16T18:44:20.268Z
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去
