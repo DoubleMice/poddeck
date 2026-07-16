@@ -1,88 +1,69 @@
 source: tbpn
-refreshed_at: 2026-07-15T18:27:29.854Z
+refreshed_at: 2026-07-16T04:07:02.536Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
+done: 0
 pending: 1
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 3748b44d-239f-480a-8dae-6748bfd158f4
-    guid: 3748b44d-239f-480a-8dae-6748bfd158f4
-    title: IBM Nukes, Demis Govt Plan, Paramount WBD Deep Dive | Dylan Byers, Noah Schochet, Saam Motamedi, Ioannis
-      Antonoglou, Jack Dent, Evan Burns & Jamie Seltzer, Tyler Page
-    duration: 8527
-    published: Tue, 14 Jul 2026 14:00:17 -0700
-    published_sort: "20260714"
-    first_seen_at: 2026-07-15T04:06:04.881Z
-    url: https://share.transistor.fm/s/e0d082f2
-    audio_url: https://media.transistor.fm/e0d082f2/fa847ebb.mp3
+  - id: 1167e6b7-9840-40cb-8271-f3b80b0b754b
+    guid: 1167e6b7-9840-40cb-8271-f3b80b0b754b
+    title: Stripe x PayPal, Codex Micro, Saagar Enjeti Joins | George Kailas, Mukund Jha, Russ Tedrake, Glenn Youngkin
+    duration: 6810
+    published: Wed, 15 Jul 2026 13:22:45 -0700
+    published_sort: "20260715"
+    first_seen_at: 2026-07-16T04:07:02.527Z
+    url: https://share.transistor.fm/s/b2f8d76d
+    audio_url: https://media.transistor.fm/b2f8d76d/fc0821ce.mp3
     image: https://img.transistorcdn.com/JKCXKMFC8DxrWx6hOFD_HdcDjLAqNP3rWp-35R-vubg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iYWQ5/N2FkMzQ2MGY4Zjg5/ZDczMGExMTA5NjEz/Y2MyMC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/e0d082f2/transcription.txt
-    transcript_type: text/plain
-    summary: "(00:21) - IBM Nukes\r
+    summary: "(00:23) - Stripe x PayPal\r
 
-      (07:36) - Demis Govt Plan\r
+      (11:40) - OpenAI's First Device\r
 
-      (20:08) - NY Pauses AI Datacenters\r
+      (15:44) - John's Business Ideas\r
 
-      (25:38) - Can Pretty Data centers Win?\r
+      (23:15) - Chip: The Robot Car\r
 
-      (27:58) - Clanker Whales\r
+      (30:27) - Saagar Enjeti is an American journalist and political commentator, best known as the co-host of the
+      political news series \"Breaking Points\" alongside Krystal Ball. In the conversation, Enjeti discusses the
+      potential consequences of prediction markets on flight delays, expressing concerns about possible manipulation and
+      ethical issues. He also addresses the growing public opposition to data centers, highlighting the need for
+      tangible benefits to local communities to mitigate backlash. Additionally, Enjeti emphasizes the importance of
+      national permitting reform to address the housing crisis, advocating for streamlined approvals to facilitate the
+      construction of affordable housing.\r
 
-      (29:23) - Dylan Byers, a founding partner and senior correspondent at Puck, is known for his in-depth coverage of
-      the media industry. He discusses the challenges David Ellison faces in merging Warner Brothers Discovery with
-      Paramount, highlighting opposition from Democratic state attorneys general, particularly California's Rob Bonta,
-      who seeks to block the deal on grounds that Byers argues are outdated given the current media landscape. Byers
-      also touches on the potential for Hollywood studios to relocate operations in response to regulatory pressures,
-      emphasizing the evolving nature of the entertainment industry.\r
+      (01:02:35) - George Kailas, founder and CEO of Aon Fund, has a background in value investing and AI, having
+      previously led Prospero AI, a hedge fund-level AI research desk. He discusses launching an AI-powered hedge fund
+      that leverages signal libraries from Prospero, creating thousands of strategies to work across various markets,
+      with plans to launch in August or September. Kailas also highlights the importance of data compression and
+      containerization in managing alternative data sets, aiming to minimize training costs while broadening data
+      exploration.\r
 
-      (59:54) - Noah Schochet, co-founder and CEO of TerraFirma, discusses how he and his co-founder, both former SpaceX
-      engineers, founded the company to revolutionize the construction industry by integrating robotics and automation
-      to accelerate building processes. They retrofit existing heavy machinery with custom-built software and hardware,
-      enabling remote operation and increased efficiency. Schochet emphasizes that while full autonomy may not be
-      cost-effective due to construction's numerous edge cases, achieving approximately 75% autonomy with human
-      oversight can significantly enhance productivity.\r
+      (01:08:28) - Mukund Jha, CEO of Emergent, discusses the company's AI platform that enables non-technical business
+      owners to build and deploy production-grade applications, recently securing a $130 million Series C funding at a
+      $1.5 billion valuation. He highlights that 80% of their users are non-technical, spanning industries from
+      healthcare to manufacturing, and emphasizes the platform's role in helping small and medium businesses digitize
+      operations by creating custom tools like CRMs and inventory management systems. Jha also notes the platform's
+      global reach, with revenue evenly distributed across North America, Europe, and Asia, and mentions the growing
+      excitement for AI adoption in India, while acknowledging potential future shifts in employment trends as AI
+      becomes more powerful.\r
 
-      (01:10:58) - Saam Motamedi, a partner at Greylock Partners, focuses on early-stage investments in AI,
-      cybersecurity, and enterprise software. He discusses Greylock's new $1.5 billion fund, Greylock 18, aimed at
-      supporting early-stage founders, particularly in AI. Motamedi emphasizes the vast opportunities in AI across the
-      technology stack, from foundational models to applications, and highlights the potential for multiple significant
-      winners in emerging categories due to the transformative impact of AI on various industries.\r
+      (01:19:49) - Russ Tedrake, co-founder and CEO of Walden Robotics, is a former MIT professor and ex-SVP of Robotics
+      at Toyota Research Institute. He discusses Walden's emergence from stealth with a $300 million seed round, valuing
+      the company at $1.1 billion, and highlights their deployment of general-purpose AI robots in manufacturing,
+      emphasizing partnerships with industry leaders like Toyota, Boeing, and Samsung. Tedrake underscores the
+      importance of integrating physical AI into existing manufacturing processes to enhance efficiency and
+      adaptability.\r
 
-      (01:21:48) - Ioannis Antonoglou, co-founder, president, and CTO of Reflection AI, previously served as a founding
-      engineer at DeepMind, contributing to projects like AlphaGo and AlphaZero. In the conversation, he discusses
-      Reflection AI's mission to develop frontier open models, emphasizing the need for exceptional talent and
-      substantial computational resources, exemplified by their recent billion-dollar deal with Nubius. He also reflects
-      on the rapid advancements in AI over the past 15 years, highlighting the importance of adaptability and the
-      exponential nature of progress in the field.\r
-
-      (01:31:25) - Jack Dent, co-founder and president of Chai Discovery, discusses the company's development of an
-      AI-driven platform for molecular design, likening it to a \"Computer Aided design suite for molecules\" that
-      enables the creation of new medicines. He highlights the platform's focus on the pharmaceutical industry,
-      emphasizing its potential to revolutionize drug discovery by designing molecules that can effectively target
-      diseases. Dent also notes the rapid advancements in AI models for drug discovery, citing a significant improvement
-      in success rates from 0.1% to 16% over the course of 2025.\r
-
-      (01:44:50) - Evan Burns & Jamie Seltzer. Evan Burns, CEO and co-founder of State Affairs, discusses the company's
-      mission to provide real-time insights into policy and regulatory changes affecting businesses, aiming to shift
-      companies from reactive to proactive engagement in the legislative process. He highlights the challenges of
-      navigating antiquated state government systems and the importance of having on-the-ground journalists to gather
-      timely information. Burns also mentions their recent $70 million funding round led by Coatue and Founders Fund,
-      emphasizing plans to expand coverage to city and international levels. Jamie Seltzer is the co-founder of State
-      Affairs, an AI-powered policy intelligence platform that combines original statehouse reporting with AI to help
-      governments, businesses, and advocacy organizations track and understand legislation across all 50 states. He is
-      also a general partner at LightShed Ventures, investing in technology, media, and communications companies.\r
-
-      (01:56:57) - Tyler Page, CEO of Cipher Digital, discusses the company's transformation from bitcoin mining to
-      developing AI data centers, highlighting their current projects totaling 700 megawatts across three sites in West
-      Texas. He emphasizes the importance of site selection, community engagement, and addressing concerns such as water
-      usage and noise, noting that Cipher strives to be a good neighbor by contributing to local infrastructure and
-      ensuring minimal environmental impact. Page also outlines the company's capital market strategy, detailing their
-      approach to financing and partnerships with hyperscalers like AWS and Google.
+      (01:30:56) - Glenn Youngkin, former governor of Virginia and ex-co-CEO of The Carlyle Group, has joined Red Cell
+      Partners as partner and chairman. He discusses Red Cell's innovative approach to venture capital, emphasizing the
+      integration of founders within the firm to scale businesses in healthcare, cyber, and national security sectors.
+      Youngkin highlights the importance of backing visionary leaders and fostering collaboration to drive
+      transformative advancements in these critical industries.
 
 
       TBPN is made possible by:
@@ -137,7 +118,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: needs_transcript
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
