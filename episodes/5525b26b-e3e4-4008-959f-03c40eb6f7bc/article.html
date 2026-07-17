@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TML Inkling · TSMC 扩产 · Roblox Build — 2026 年 7 月 AI、资本与制造的十字路口</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #fafaf9;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+header { text-align: center; padding: 3rem 0 2rem; border-bottom: 2px solid #e5e7eb; margin-bottom: 2rem; }
+header h1 { font-size: 2rem; font-weight: 700; line-height: 1.4; color: #111; margin-bottom: 0.75rem; }
+header .meta { font-size: 0.9rem; color: #6b7280; }
+header .guests { font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem; }
+
+h2 { font-size: 1.4rem; font-weight: 700; color: #111; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid #e5e7eb; }
+h3 { font-size: 1.1rem; font-weight: 600; color: #1f2937; margin: 1.5rem 0 0.75rem; }
+
+p { margin: 0.75rem 0; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin: 1.25rem 0; }
+.card { padding: 1rem; border-radius: 8px; font-size: 0.9rem; line-height: 1.55; }
+.card strong { display: block; margin-bottom: 0.35rem; font-size: 0.95rem; }
+.card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+
+.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; margin: 1rem 0; }
+.stat { text-align: center; padding: 1rem; border-radius: 8px; }
+.stat .num { font-size: 2rem; font-weight: 700; margin: 0.25rem 0; }
+.stat .label { font-size: 0.8rem; color: #6b7280; }
+
+blockquote { margin: 1.25rem 0; padding: 1rem 1.25rem; border-radius: 8px; font-style: italic; font-size: 1rem; line-height: 1.65; }
+.quote-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.quote-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.quote-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.quote-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+.quote-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.quote-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+blockquote .attr { font-size: 0.8rem; font-style: normal; color: #6b7280; margin-top: 0.35rem; }
+
+.gloss { font-size: 0.85rem; color: #6b7280; line-height: 1.6; border-left: 2px solid #d1d5db; padding-left: 0.75rem; margin: 0.75rem 0; }
+
+footer { border-top: 2px solid #e5e7eb; margin-top: 3rem; padding-top: 1.5rem; font-size: 0.85rem; color: #9ca3af; text-align: center; }
+footer a { color: #3b82f6; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>TML Inkling · TSMC 扩产 · Roblox Build：<br/>2026 年 7 月 AI、资本与制造的十字路口</h1>
+  <div class="meta">TBPN 特别节目 · 2026 年 7 月 16 日 · Tyler Cosgrove 客串主持</div>
+  <div class="guests">四位嘉宾：Everett Randle (Benchmark) · Eric Glyman (Ramp) · Jordan Black (Senra Systems) · David Baszucki (Roblox)</div>
+</header>
+
+<section>
+  <h2>为什么这期特别？</h2>
+  <p>2026 年 7 月的这一期 TBPN，可能是全年信息密度最高的一集。五位来自不同领域的核心人物——AI 模型创业、半导体制造、风险投资、企业支出管理、军工制造、游戏平台——在同一张桌子上碰撞出了意料之外的交集。</p>
+  <p>这些看似独立的故事，实际上都在回答同一个问题：<strong>当 AI 从实验室走向资产负债表，谁在赢、怎么赢、要付出什么代价？</strong></p>
+
+  <div class="cards">
+    <div class="card card-blue"><strong>TML Inkling 开源</strong>Mira Murati 离开 OpenAI 后的首款作品：975B 参数 MoE 模型，以可定制性而非最强性能定位，开辟美国开源 AI 新战线。</div>
+    <div class="card card-green"><strong>TSMC 史上最大赌注</strong>超预期盈利 + 资本开支上调 + 追加 $100B 美国投资。市场却报以 1% 的 Nasdaq 跌幅。</div>
+    <div class="card card-yellow"><strong>VC 的"赌场筹码"时刻</strong>Benchmark 合伙人 Ev Randle 揭示 Anthropic/OpenAI IPO 预期如何系统性改变风投风险偏好。</div>
+    <div class="card card-red"><strong>Token 支出的隐形黑洞</strong>Ramp 客户 token 支出 4 个月暴增 21 倍，单周最高 $1.5M。企业亟需 AI 支出管理这个全新品类。</div>
+    <div class="card card-purple"><strong>重新发明线束制造</strong>Senra $65M 融资，用垂直整合 + AI 重塑 $165B 航空航天线束市场。从公寓地毯到 82,000 平方英尺工厂。</div>
+    <div class="card card-orange"><strong>Roblox Build：人人创作</strong>1.3 亿 DAU 平台推出手机端 AI 游戏生成。自建基础设施带来 3 倍成本优势，照片级真实是下一步。</div>
+  </div>
+</section>
+
+<section>
+  <h2>TML Inkling：美国开源 AI 的新面孔</h2>
+  <p>Mira Murati 离开 OpenAI 后创立的 Thinking Machines Lab (TML) 发布了第一款模型 <strong>Inkling</strong>。她告诉 Wall Street Journal：目标是"蚕食"OpenAI 和 Anthropic 的市场份额。</p>
+  <p>Inkling 的架构选择很务实：975B 总参数，但采用 MoE（混合专家）架构，任何时候只有约 41B 参数处于活跃状态。它不是最强的开放或闭源模型——Murati 在发布时罕见地承认了这一点——但它被设计为"在多个领域均衡、足够灵活以适应微调"。</p>
+  <p>这与 TML 的商业模型完美契合：Tinker API 的核心业务就是帮客户微调开源模型。开源模型越强，Tinker 的需求越大。这是少数开源不会反噬核心业务的商业模式。</p>
+  <p>行业分析师 D. Das 称其为中国以外最好的开源模型，性能介于 Kimi K2.5 和 K2.6 之间。</p>
+
+  <blockquote class="quote-blue">
+    "We trained it to be a broad, balanced foundational model, strong across many domains, flexible enough to adapt."
+    <div class="attr">— Mira Murati 对 Wall Street Journal</div>
+  </blockquote>
+
+  <h3>蒸馏之争：灰色地带里的技术边界</h3>
+  <p>Inkling 的发布立即引发了熟悉的"蒸馏"争议。Engram Labs 创始人 Jack Morris 在社交媒体上声称 Inkling 是"唯一未经蒸馏的开放模型"，但社区笔记迅速指出 TML 官方博客承认使用了 Kimi K2.5 生成的合成数据做初始 SFT。</p>
+  <p>Engram 公司最终发表了三重道歉声明（"创始人的原始帖、跟进帖和跟进帖的跟进帖都不准确"），但仍表示支持 Inkling 作为"强大的开源模型"。</p>
+  <p>主持人和 Tyler Cosgrove 在讨论中指出：蒸馏不是一个二元概念，而是一个光谱。TML 的使用方式是"最轻度的蒸馏"——仅后训练的一个小阶段、少量合成数据。这不是"模型说自己是 ChatGPT"那种程度的蒸馏。</p>
+  <p>现实是：几乎所有开源模型都在一定程度上使用了闭源模型的合成数据。完全独立的训练栈在今天的生态中几乎不存在。正如 Tyler 所说："如果你用 Kimi 蒸馏，而 Kimi 可能又蒸馏了闭源模型，你就得到了一个两层蒸馏链——但层数越多，蒸馏的效果越弱。"</p>
+
+  <div class="gloss">
+    <strong>作者概括：</strong>蒸馏争论的真正意义不在于技术细节，而在于它暴露了 AI 产业的一个核心矛盾——"原创性"变得越来越难以定义和衡量。当整个生态都在彼此的数据上训练，谁是"真正的创新者"已经变成一个政治问题而非技术问题。
+  </div>
+</section>
+
+<section>
+  <h2>AI 开源生态的地缘政治转折</h2>
+  <p>Inkling 的发布时机极为巧妙。就在一周前，有报道称 Beijing 正在考虑限制中国顶级 AI 模型的海外访问。如果中国开源模型的可用性真的收缩，美国企业将需要替代方案。</p>
+  <p>Everett Randle 给出了一个尖锐的观察：</p>
+
+  <blockquote class="quote-red">
+    "Where are the good Western models? Look at the top ten on OpenRouter — all of them are Chinese."
+    <div class="attr">— Everett Randle 在 Harry Stebbings 播客上的提问</div>
+  </blockquote>
+
+  <p>但情况正在改变。NVIDIA 在开源生态上的投入超过任何单一公司，Nemotron 已经是一个不错的起点。TML Inkling 虽未到中国开源模型的前沿，但其可定制性对企业极具吸引力。Reflection AI 也明确以"美国开源模型"为定位。就在三、四个月前，美国开源模型还几乎没有可指出的存在。</p>
+  <p>与此同时，Anthropic 的国家安全政策负责人 Tarun Chhabra 在 Aspen 安全论坛上透露了惊人的数据：Anthropic 每周关停数百万个蒸馏账户。这不是针对一家公司或一个 IP 段——而是对抗高度分布式的攻击网络。有些公司专门作为转售商，以 API 包装器的形式帮其他实验室蒸馏——它们的年营收可以快速达到 $100M，因为买家就是需要训练数据的实验室。</p>
+  <p>Chhabra 首次点名智谱 (Zhipu)，称 GLM 可能是"目前市场上最先进的中国模型"。他还暗示 Anthropic 将扩展 Mythos 的接入范围，确保网络防御方有公平的竞争环境。</p>
+</section>
+
+<section>
+  <h2>加州永久计划：$3.2B 的教训</h2>
+  <p>国防初创公司 Saronic 的 $3.2B 自动化造船项目 Port Alpha 选择了德州 Brownsville（距 SpaceX Starbase 约 20 英里），而不是加州的 Solano County。这是 California Forever 计划城市失去的第一个标杆租户。</p>
+  <p>项目预计创造约 10,000 个永久岗位以及数千个建筑岗位。加州就业联盟执行总监的评论直指问题核心："加州未能以项目所需的紧迫感行动。德州动作快且积极。"</p>
+  <p>对比鲜明：California Forever 签了 40 年建设劳工协议、覆盖 70,000 英亩，支持快速审批的立法至今未推进。德州 6 月直接批准了 $211M 的税收减免包。</p>
+  <p>一位项目内部人士告诉 San Francisco Chronicle，California Forever 本身仍在推进，但失去这个重大国防承包商向市场传递了一个信号：加州能竞争大规模工业投资吗？</p>
+</section>
+
+<section>
+  <h2>TSMC：史上最大扩张赌注</h2>
+  <p>TSMC 本季度的财报传达了两个方向相反的信息：盈利超出预期（AI 芯片需求强劲），资本开支指引上调（创纪录支出计划），并承诺追加 $100B 美国投资（Arizona 晶圆厂持续扩建）。</p>
+  <p>市场的反应却令人玩味：Nasdaq 下跌 1%，交易员将 TSMC 的支出计划视为过度扩张的信号。</p>
+  <p>这种分裂反应本身就是信号。TSMC 历经智能手机周期、PC 周期、无数次行业繁荣与萧条——它从不是一家被概念冲昏头脑的公司。当它终于说"时机到了"时，市场却说"我不确定"。两种叙事在博弈：AI 芯片需求是 1996 年的互联网基础设施（真正的长周期），还是 2000 年的 Cisco 路由器（泡沫的最后一棒）？</p>
+</section>
+
+<section>
+  <h2>VC 的"赌场筹码"时刻</h2>
+  <p>Benchmark 合伙人 Everett Randle 用了一个生动的比喻来描述当前的风投心态：</p>
+
+  <blockquote class="quote-green">
+    "Imagine you're that monkey and you just keep hitting like the triple 20. Every time you throw it, you're like, this is weird."
+    <div class="attr">— Everett Randle 形容风投界的"不可避免性"焦虑</div>
+  </blockquote>
+
+  <p>过去 18-24 个月，风投行业整体感觉像一只不断打中三倍区间的猴子。每次投都涨，每次加注都翻倍。这种"不可避免性"的错觉，上一次出现是在 2021 年夏秋。</p>
+  <p>但 2026 年的驱动因素不同于 2021 年。2021 年是 Covid 造成的电商渗透率一次性跳跃，被误读为永久加速。Snowflake 以不到 $500M 收入、$80B 估值上市，SaaS 公司被定价在 40-50 倍收入。</p>
+  <p>2026 年的关键词是"赌场筹码"。Anthropic 在一些基金的 8 只不同子基金中都有持仓——就像确保每只基金都能享用到这只"下金蛋的鹅"。SpaceX IPO 已经落地，Anthropic 和 OpenAI 的 IPO 即将到来。当一只基金的回报已经足够好，剩下的投资变成了"自由挥杆"——反正已经完成了任务，不如多赌几把。</p>
+  <p>Randle 也指出了 2026 年的独特不确定性：AI 应用公司没有公开市场先例——会像 SaaS 一样定价？比 SaaS 更好？更低毛利因为 token 成本？太空公司会怎样交易？市场在折价，因为"不知道该怎么算"。</p>
+</section>
+
+<section>
+  <h2>$3 Uber 时代的终结</h2>
+  <p>Everett Randle 在 2024 年 1 月 31 日发了一条推文，如今看来近乎预言：</p>
+
+  <blockquote class="quote-yellow">
+    "Making a real effort to not take for granted the $3 Uber across town era of AI, and I hope you are too."
+    <div class="attr">— Everett Randle, 2024 年 1 月 31 日</div>
+  </blockquote>
+
+  <p>那个时代确实结束了。在消费者端，LLM 像早期的 Instagram——纯粹、无广告、不索取任何东西。在企业在端，Claude Code 订阅曾一度提供比 API (Cursor) 多 20 倍的 token 用量，是真正的"疯狂补贴"。</p>
+  <p>随着推理模型和 Agent 让 token 消耗爆炸，补贴正在一点点退去。但矛盾的是，有些前瞻公司（如 SemiAnalysis）认为 token 成本还不够高——他们的逻辑是：让竞争对手用便宜的开源模型，我们自己用最前沿的模型，那就是我们的竞争优势。这场博弈的结果将决定未来几年 AI 产业的经济结构。</p>
+</section>
+
+<section>
+  <h2>Ramp：Token 支出的 21 倍暴增</h2>
+  <p>Ramp 联合 CEO Eric Glyman 给出了本期最震撼的数据：</p>
+
+  <div class="stat-row">
+    <div class="stat" style="background:#fef2f2;"><div class="num" style="color:#ef4444;">21x</div><div class="label">Ramp 客户 token 支出<br/>4 个月的增长倍数</div></div>
+    <div class="stat" style="background:#fff7ed;"><div class="num" style="color:#f97316;">$1.5M</div><div class="label">Ramp 自身单周<br/>最高 token 账单</div></div>
+    <div class="stat" style="background:#eff6ff;"><div class="num" style="color:#3b82f6;">~10%</div><div class="label">5 月 token 支出<br/>占工资支出的比例</div></div>
+  </div>
+
+  <blockquote class="quote-red">
+    "In the last four months alone, Ramp customer spend on tokens has grown by 21 times."
+    <div class="attr">— Eric Glyman, Ramp 联合 CEO</div>
+  </blockquote>
+
+  <p>Glyman 将 token 支出形容为"一张没有额度上限的公司信用卡——表不走，你也看不到花了多少"。这完全不同于传统企业支出：SaaS 是固定费用，工资是可预算的，差旅有审批流。Token 支出每分钟在累加，可以一天内从 $1,000 飙到 $10,000 再飙到 $100,000。</p>
+  <p>为了应对这个新品类，Ramp 推出了 token 支出管理产品：连接 API key 获得实时可见性 → 异常告警（某员工过去每月 $1,000，今天一小时就 $800）→ 对标最优实践（缓存率、路由策略）→ 预算控制。Glyman 发现了一个有趣的现象：就像公司卡一样，人们其实"想做好"。当员工看到自己的 token 支出后，效率自然提升。</p>
+</section>
+
+<section>
+  <h2>前沿 vs 开源：企业的分配决策</h2>
+  <p>Ramp 数据显示，平均企业 59% 的 token 支出流向前沿模型。但应用层公司中，大多数已经或正在把开源使用率推到 80%+。</p>
+  <p>分配逻辑很清晰：前沿模型用于内部——编程加速（Fable / Claude Code 让交付速度成为竞争优势）、探索性任务、复杂推理。开源模型用于面向客户的产品——客服、分类、摘要等成熟用例，微调后性能足够，用量随用户规模而非员工数增长。</p>
+  <p>Glyman 还提出了一个反直觉的观点：前沿模型有时反而更便宜。Sonnet 单次调用便宜，但需要用更多 agent 协同工作、更长的思考链路。Fable 单价高，但解决问题更快。正如主持人所说："雇 Scott Wu 可能比雇一个工程团队更省钱。"</p>
+</section>
+
+<section>
+  <h2>应用层公司的护城河重考</h2>
+  <p>当被问及在 AI 时代寻找什么样的公司时，Randle 的回答揭示了他投资哲学的核心：</p>
+
+  <blockquote class="quote-purple">
+    "Seeing a nice at-scale marketplace with clear network effects — it's like a drink of water in the desert."
+    <div class="attr">— Everett Randle 谈在 AI 时代寻找网络效应护城河</div>
+  </blockquote>
+
+  <p>双边市场和网络效应在 AI 时代反而更珍贵——它们天然规避实验室的竞争。Randle 也对"实验室风险"（labs will kill all apps）的观点持务实态度：Anthropic 三个月 2026 年的营收增量可能超过整个 AI 法律赛道的中期 TAM。实验室为什么要花 7 年攻一个自上而下的复杂销售型市场？优先级本身就是一个强大的护城河。</p>
+  <p>但他注意到一个令人担忧的趋势：许多应用公司开始组建自己的"实验室团队"——招几个 Meta 研究员，然后声称"我们也在做 AI 研究"。在 Randle 看来，这更多是创始人的心理安慰——真正拥有足够 GPU 做突破性研究的，只有极少数地方。</p>
+</section>
+
+<section>
+  <h2>被 AI 创造的新机会</h2>
+  <p>AI 不仅改变了已有的赛道，还在创造全新的赛道。法律科技（Harvey、Legora）在 AI 之前不被视为风投品类——TAM 太小、销售太慢、律所付费意愿低。现在这些公司有令人瞠目的数字，已经持续三年高速增长。</p>
+  <p>在另一端，AI 也催生了一种新的"生活方式创业"：一个人发现一个极其小众的数据需求——比如在一家医疗诊所装满传感器和摄像头，记录每一次对话和操作，做成高质量训练数据集。这不是万亿美元生意，但完全可以做成 $50-100M 营收的自举式公司。</p>
+</section>
+
+<section>
+  <h2>Senra：从公寓地毯到 $65M 融资</h2>
+  <p>Jordan Black，Senra Systems 的联合创始人兼 CEO，三年前在自己的公寓地毯上手工制作第一款线束。今天，他刚刚完成了 $65M 的 B 轮融资（Founders Fund 从种子轮全程参与），在加州拥有两个工厂，其中新开的 Cypress 工厂占地 82,000 平方英尺。</p>
+
+  <p>Senra 解决的是航空航天和国防领域的线束制造问题——一个 $165B 的市场。Black 用了一个精彩的比喻：</p>
+
+  <blockquote class="quote-orange">
+    "Think of it like a Cheesecake Factory trying to scale it. It's really complex, and there's no culinary schools that exist, and no recipes."
+    <div class="attr">— Jordan Black 解释线束行业的混乱程度</div>
+  </blockquote>
+
+  <p>这个行业当前的主流设计工具是 Excel 和 PowerPoint——工程师用画线工具在幻灯片上标注连接关系。没有任何标准化。从拿到"设计"到交付成品，通常需要 6 个月以上的周期。而且最重要的是，在组装完成之前，你根本不知道线束是否工作——直到插上电源、发射火箭的那一刻。</p>
+  <p>Senra 的答案是垂直整合：不做 SaaS 工具卖给制造商，而是自己成为整个流程的标准。从设计阶段就用自研软件和 AI 做 BOM 优化，到 4 周速成的培训计划替代数年的学徒制，再到 99%+ 的首件合格率——每一环都重新定义了"线束制造"。Black 甚至表示："到了一定程度，客户最希望的就是有一个 Google Maps 出现之前 vs 之后那样的对比——这个领域以前是怎么做的，现在 Senra 又是怎么做的。"</p>
+
+  <blockquote class="quote-red">
+    "The bullshit's over — we're just going to take over and standardize the entire thing."
+    <div class="attr">— Jordan Black 的宣言</div>
+  </blockquote>
+</section>
+
+<section>
+  <h2>Roblox Build：1.3 亿人成为创作者</h2>
+  <p>Roblox 创始人兼 CEO David Baszucki 宣布 Build 将于 7 月 28 日进入 Alpha 测试。这是 Roblox 20 年历史上最具野心的产品更新：将 Roblox Studio 的 AI 能力整合到手机端的一个标签页，让所有人——不只是专业开发者——能够通过自然语言生成和迭代游戏。</p>
+  <p>20 年前 Roblox 的第一句标语是"You Make the Game"。当时 UGC 平台还是一个全新的概念。Baszucki 感慨说"时间有一种有趣的方式让事情回到原点"——AI 终于让这个愿景成为现实。</p>
+</section>
+
+<section>
+  <h2>自建基础设施的十年远见</h2>
+  <p>Baszucki 在采访中透露了一个关键细节：Roblox 自建基础设施的推理成本相比云服务大约低 <strong>3 倍</strong>。这不是最近才做的投资——"我们从 10 多年前就开始做这件事了"。</p>
+
+  <blockquote class="quote-green">
+    "The cost benefits of our infrastructure may be roughly 3x...an enormous advantage of taking all that money, pushing it to creators rather than cloud providers."
+    <div class="attr">— David Baszucki 谈自建基础设施的战略意义</div>
+  </blockquote>
+
+  <p>Roblox 的策略是"自建为主，云端为突发"（burst to cloud when needed）。在全球数据中心运营着自有的 CPU、带宽和推理能力，同时与云厂商保持合作关系以应对峰值。Baszucki 强调，Roblox 不仅是游戏平台，更是"高性能、低成本的多人基础设施，2D 和 3D 都支持，可在低端和高端设备上运行"。</p>
+</section>
+
+<section>
+  <h2>从黑白电影到彩色：照片级真实的游戏</h2>
+  <p>Roblox 正在开发超级升采样视频模型，目标是实现多人游戏中的照片级真实 4K 60Hz。Baszucki 的视角很有启发性：</p>
+
+  <blockquote class="quote-blue">
+    "Going from black and white movies to color movies — no one has the expectation that a game should be photo realistic. We just aren't used to it."
+    <div class="attr">— David Baszucki 谈游戏的视觉未来</div>
+  </blockquote>
+
+  <p>技术路线是混合架构：不是纯 3D 传统渲染（那无法在保持多人一致性的同时做到照片级），也不是纯视频世界模型（那无法处理多人协调），而是多人世界协调 + 每个用户本地超级升采样。一千人同时在线的游戏世界保持一致，同时每个玩家看到的都是电影级画质。</p>
+  <p>Baszucki 还提出了 NPC 的双重路径：作为游戏角色（《盗梦空间》里能实时修改世界的梦境建筑师），以及作为测试代理。后者的逻辑尤其有趣：放 100 个随机 NPC 进游戏，给它们和人类相同的任务，看它们怎么表现。因为 NPC 可以比人类快 100 倍运行，100 人 100 小时的测试可以在 1 小时内完成——为游戏平衡性引入类似"Wiggins Loop"的快速迭代机制。</p>
+</section>
+
+<section>
+  <h2>安全体系的系统性设计</h2>
+  <p>Baszucki 对儿童安全的看法体现了 Roblox 的"负责任"价值观。全平台已经实施年龄验证（AI + 生物特征），16 岁以下用户限定访问 20,000+ 精选游戏，禁止图片和视频分享。他说了一句关键的话："我们没有等法律或设备厂商来解决这个问题，我们自己已经做了。"</p>
+  <p>Build 还带来了一个意想不到的安全优势：所有内容通过 prompt 生成，因此完整保留了 prompt 历史——这在 Studio（开放 IDE）中是不可能做到的。加上 Roblox 基于长期留存的推荐系统天然适合过滤低质量内容，即使 AI 生成的游戏数量翻 20 倍，只有通过"高留存门槛"的内容才能走到用户面前。</p>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+
+  <blockquote class="quote-blue">
+    "We trained it to be a broad, balanced foundational model, strong across many domains, flexible enough to adapt."
+    <div class="attr">— Mira Murati 对 Wall Street Journal，谈 Inkling 定位</div>
+  </blockquote>
+
+  <blockquote class="quote-green">
+    "Imagine you're that monkey and you just keep hitting like the triple 20. Every time you throw it, and you're like, this is weird."
+    <div class="attr">— Everett Randle 形容 VC 界的心态</div>
+  </blockquote>
+
+  <blockquote class="quote-yellow">
+    "Making a real effort to not take for granted the $3 Uber across town era of AI."
+    <div class="attr">— Everett Randle, 2024 年 1 月推文</div>
+  </blockquote>
+
+  <blockquote class="quote-red">
+    "In the last four months alone, Ramp customer spend on tokens has grown by 21 times."
+    <div class="attr">— Eric Glyman, Ramp 联合 CEO</div>
+  </blockquote>
+
+  <blockquote class="quote-purple">
+    "Think of it like a Cheesecake Factory trying to scale it. There's no culinary schools and no recipes."
+    <div class="attr">— Jordan Black 解释线束行业</div>
+  </blockquote>
+
+  <blockquote class="quote-orange">
+    "Going from black and white movies to color movies — no one has the expectation that a game should be photo realistic."
+    <div class="attr">— David Baszucki 谈 Roblox 的游戏视觉革命</div>
+  </blockquote>
+</section>
+
+<section>
+  <h2>三个核心叙事</h2>
+  <p><strong>叙事一：AI 正在从"技术问题"变成"金融问题"。</strong>Ramp 客户的 21 倍 token 增长、VC 的"赌场筹码"心理、TSMC 的万亿赌注——都在说明同一件事：AI 的下一个阶段由资本分配效率决定，而不是模型性能的提升曲线。</p>
+  <p><strong>叙事二：开源 AI 是下一个地缘政治战场。</strong>蒸馏争议、数百万级的账户关停、Beijing 限制模型出海、Inkling 的应时发布——开源生态已经成为国家竞争力的延伸。美国不再只是"相对于中国落后"，而是开始主动抢占位置。</p>
+  <p><strong>叙事三：垂直整合是新硬科技的默认答案。</strong>Senra 不做 SaaS 而做线束成品，Roblox 自建数据中心，TSMC 在美国从头建厂。"只做软件"的黄金时代正在让位于"从原材料到成品"的全栈控制。物理世界的问题需要物理世界的答案。</p>
+</section>
+
+<footer>
+  <p>观看完整节目：<a href="https://share.transistor.fm/s/39bf1d0a">TBPN Ultradome · 2026 年 7 月 16 日</a></p>
+  <p style="margin-top: 0.5rem;">嘉宾：Everett Randle (Benchmark) · Eric Glyman (Ramp) · Jordan Black (Senra Systems) · David Baszucki (Roblox)</p>
+  <p style="margin-top: 0.25rem;">主持：Tyler Cosgrove 客串 · 文章来源：PodDeck 自动生成</p>
+</footer>
+
+</div>
+</body>
+</html>
