@@ -1,15 +1,117 @@
 source: unchained
-refreshed_at: 2026-07-17T18:24:52.041Z
+refreshed_at: 2026-07-18T04:04:51.057Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 84
+total_candidates: 82
 done: 0
 pending: 0
-needs_transcript: 83
+needs_transcript: 81
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: 1027bfee-8231-11f1-915b-fbaf7642cf59
+    guid: 1027bfee-8231-11f1-915b-fbaf7642cf59
+    title: "Why Cap Cuts Its Stabledrop Rewards From $11M to $4M: Uneasy Money"
+    duration: 5369
+    published: Fri, 17 Jul 2026 22:44:00 -0000
+    published_sort: "20260717"
+    first_seen_at: 2026-07-18T04:04:51.046Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6165024078.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6165024078.mp3
+    image: https://megaphone.imgix.net/podcasts/1027bfee-8231-11f1-915b-fbaf7642cf59/image/ce6c3277e0c6567546b6356c0fc04a3d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Cap's founders on shrinking their Stabledrop from $11M to $4M — plus a $23M hack traced toward North Korea, a
+      BarnBridge governance exploit, and Kain's case to force weak L2s to become their own L1s.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      ⁠⁠⁠Cape⁠⁠: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's
+      privacy-first mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33%
+      off your first six months at ⁠https://cape.co/unchained⁠ (use code: UNCHAINED).
+
+
+      ========================================================
+
+
+      Cap committed to a roughly 11 million dollar Stabledrop in February, promising early users stablecoins instead of
+      tokens. A delayed token sale raised less than hoped, and the reward shrank to about 4 million, forcing a fast
+      rewrite of who got paid.
+
+
+      Benjamin Sarquis Peillard, Founder and CEO of Cap, and Weso of Cap join Kain Warwick and Taylor Monahan to walk
+      through a restructuring that made yield-token holders whole, left farmers without a windfall, and argue points
+      programs are an uncapped marketing expense many projects cannot afford.
+
+
+      The conversation widens into EthSystems, a new Ethereum Foundation spinout backed by Joe Lubin, SharpLink and
+      BitMine, Jesse Pollak handing Base product leadership to Cobie, Robinhood Chain's Morpho integration, and whether
+      Ethereum mainnet undercharges L2s.
+
+
+      They revisit BarnBridge's SEC-era DAO structure, a dormant governance exploit, a MetaMask and Revoke.cash
+      delegation tool, and a 23 million dollar Ostium hack Taylor traced toward North Korea.
+
+
+      Kain closes with a Three Mile Island analogy: complex systems fail not from one mistake, but from small shortcuts
+      compounding at once.
+
+
+      Hosts:
+
+        ⁠⁠⁠Kain Warwick⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠Taylor Monahan⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+      Guests:
+
+        Benjamin Sarquis Peillard - Founder and CEO of Cap
+
+        Weso - Co-Founder of Cap
+
+      Timestamps
+
+
+      🪂 01:30 Benjamin and Weso explain how Cap's Stabledrop plan fell apart post-TGE
+
+
+      💸 08:05 Weso on why uncapped points programs turn into runaway marketing spend
+
+
+      🐦 21:31 Kain and Taylor on crypto Twitter's algorithm flip after a year of exile
+
+
+      📱 24:17 Cape: Get 33% off your first six months of privacy-first mobile service at https://cape.co/unchained
+
+
+      🏛️ 25:09 Why EthSystems, the newest EF spinout, splits Kain on bullish or bearish
+
+
+      🤝 30:20 Taylor on Jesse handing Base app duties to Cobie and what it signals
+
+
+      🎰 36:28 Robinhood Chain's memecoin surge, Morpho ties, and the Cashcat backstory
+
+
+      ⚖️ 41:17 Is Ethereum undercharging L2s? Kain makes the case for pushing costs to L1
+
+
+      🔓 55:51 BarnBridge's SEC-era DAO, this week's governance exploit, and the Revoke.cash fix that stops it
+
+
+      ☢️ 01:11:31 The Ostium hack: North Korea-linked actor, stolen keys, oracle compromise
+
+
+      💥 01:26:24 Closing rapid-fire: Euler's recovery and an old Vyper compiler bug revisited
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     guid: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
@@ -3169,7 +3271,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -4931,7 +5034,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -7339,169 +7443,6 @@ episodes:
         Why Bitcoin Is Down, Plus the Rare Bright Spot in Crypto: Hyperliquid
 
         Crypto Sentiment Is Down Bad. The Reality Is Far Different, Says Ryan Watkins
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 96171846-0790-11f1-a1fe-eb44abb7e411
-    guid: 96171846-0790-11f1-a1fe-eb44abb7e411
-    title: "Bits + Bips: Could Blackrock Someday Feel Compelled to 'Fire' Bitcoin Core Devs?"
-    duration: 3986
-    published: Wed, 11 Feb 2026 21:28:00 -0000
-    published_sort: "20260211"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2232249600.mp3?updated=1770846602
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2232249600.mp3?updated=1770846602
-    image: https://megaphone.imgix.net/podcasts/96171846-0790-11f1-a1fe-eb44abb7e411/image/1c2c1b7e9fd11fe82b5f9d43f0000321.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Listen to the episode on Apple Podcasts, Spotify, Fountain, Podcast Addict, Pocket Casts, Amazon Music, or on your
-      favorite podcast platform.
-
-
-      Figure is giving away $25,000 in USDC. Deposit into Democratized Prime, earn ~9% APY hourly—and every $1 you keep
-      in for 25 days is 1 entry.
-
-
-      Enter here
-
-
-      ---
-
-
-      Bitcoin slid toward $60,000 on Feb. 5 in a brutal, cross-asset selloff that hit gold, equities, and crypto alike.
-      With leverage unwinding and basis trades breaking, long-time bitcoin holders are distributing to institutional
-      buyers who, by 13F data, are mostly underwater. The mood across digital assets is bleak.
-
-
-      Against that backdrop, Nic Carter of Castle Island Ventures argues that key Bitcoin narratives have quietly
-      failed—and warns that developers’ inaction on quantum risk could open the door to institutional control. If devs
-      don’t act, Carter says ETF giants like BlackRock will.
-
-
-      The panel then widens the lens: declaring the token-centric VC model dead, debating whether AI now rivals the
-      industrial revolution, and stress-testing it all across topics ranging from Solana vs. Hyperliquid to Japan’s
-      political shift and MrBeast’s fintech play.
-
-
-      ---
-
-
-      If you want your crypto taxes done carefully — not guessed — Crypto Tax Girl is offering $100 off one-on-one
-      crypto tax services.
-
-
-      Their team focuses solely on crypto and has been helping investors navigate tax season since 2017.
-
-
-      Save $100 here
-
-
-      Hosts:
-
-
-      Ram Ahluwalia, CFA, CEO and Founder of Lumida
-
-
-      Austin Campbell, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
-
-
-      Christopher Perkins, Managing Partner and President of CoinFund
-
-
-      Guest:
-
-
-      Nic Carter, Founding Partner at Castle Island Ventures
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 778d1b82-06dc-11f1-bcf2-5fef003f7664
-    guid: 778d1b82-06dc-11f1-bcf2-5fef003f7664
-    title: How Zero Blockchain Cracked 2M TPS Without Sacrificing Decentralization
-    duration: 2474
-    published: Tue, 10 Feb 2026 23:58:00 -0000
-    published_sort: "20260210"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8143598878.mp3?updated=1770768626
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8143598878.mp3?updated=1770768626
-    image: https://megaphone.imgix.net/podcasts/778d1b82-06dc-11f1-bcf2-5fef003f7664/image/a58241aa11453ad1073566e860dc0aca.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Thank you to our sponsors!
-
-
-      Figure
-
-
-      Crypto Tax Girl
-
-
-      LayerZero Labs is making bold promises with its coming Zero Blockchain. 2 million transactions per second per
-      node. A thousandth of a penny per transaction. No compromises to decentralization. The big question is how?!
-
-
-      In this Unchained podcast episode, LayerZero Labs CEO Bryan Pellegrino explains how the team was able to crack
-      scalability by fixing blockchain storage and rethinking the crypto industry's approach to zero knowledge
-      technology.
-
-
-      With the blockchain already boasting partners such as Citadel Securities, DTCC and ICE, will Zero be the
-      blockchain institutions decide to build on?
-
-
-      Guest:
-
-
-      Bryan Pellegrino, Co-founder & CEO of LayerZero Labs
-
-
-      Links:
-
-        LayerZero Foundation Buys Back 5% of ZRO Token Supply From Early Investors
-
-        PayPal’s PYUSD Integrates LayerZero to Expand Across Blockchains
-
-        The LayerZero/Wormhole Bidding War Shows How to Value a Crypto Business
-
-        LayerZero Fought the Sybils and Airdropped Its Token. Did the Team Win?
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 3566c3dc-0495-11f1-88dc-d7c7426111d5
-    guid: 3566c3dc-0495-11f1-88dc-d7c7426111d5
-    title: Want to Hire an AI Agent? Check Their Reputation Via ERC-8004
-    duration: 3830
-    published: Sun, 08 Feb 2026 02:23:00 -0000
-    published_sort: "20260208"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3024625766.mp3?updated=1770518761
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3024625766.mp3?updated=1770518761
-    image: https://megaphone.imgix.net/podcasts/3566c3dc-0495-11f1-88dc-d7c7426111d5/image/a35e8f0331bbaf71279cd445787113b0.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      The ERC-8004 standard for trustless AI agent interactions is finally live on mainnet!
-
-
-      In this Unchained episode, Ethereum Foundation AI Lead Davide Crapis joins to explain what the standard is, how it
-      works, how it’s protected against manipulation, and what's next.
-
-
-      Listen to find out his most interesting experience building the project and tips for builders looking to start
-      businesses around AI agents.
-
-
-      Guest:
-
-
-      Davide Crapis, AI Lead at Ethereum Foundation
-
-
-      Links:
-
-        How the x402 Standard Is Enabling AI Agents to Pay Each Other
-
-        Uneasy Money: How Ethereum May Have One-Upped Bitcoin in One Big Way
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
