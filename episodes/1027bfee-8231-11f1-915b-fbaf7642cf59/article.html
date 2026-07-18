@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>为什么 Cap 把稳定币空投奖励从 1100 万砍到 400 万美元 — PodDeck</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1e1e1e;
+  background: #fafafa;
+  -webkit-font-smoothing: antialiased;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+header { margin-bottom: 48px; }
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 12px;
+  color: #111;
+}
+.meta { font-size: 15px; color: #666; margin-bottom: 8px; }
+.meta span { margin-right: 16px; }
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 0 16px;
+  color: #111;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+  color: #222;
+}
+p { margin-bottom: 16px; }
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0 32px;
+}
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+.card-blue  { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.card-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+
+.quote-block {
+  margin: 24px 0;
+  padding: 20px 24px;
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.quote-blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.quote-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.quote-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.quote-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+.quote-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.quote-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.quote-label {
+  font-size: 13px;
+  font-style: normal;
+  color: #666;
+  margin-top: 8px;
+  display: block;
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #999;
+}
+footer a { color: #3b82f6; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+.author-note {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #92400e;
+  margin: 8px 0 16px;
+}
+
+@media (max-width: 600px) {
+  article { padding: 24px 16px 48px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<header>
+<h1>为什么 Cap 把稳定币空投奖励从 1100 万砍到 400 万美元</h1>
+<div class="meta">
+  <span>🎙 Uneasy Money</span>
+  <span>👤 Kane Warwick · Tay · Benjamin · Waiso</span>
+</div>
+<div class="meta">
+  <span>📅 2026 年 7 月</span>
+  <span>⏱ 89 分钟</span>
+</div>
+</header>
+
+<section>
+<h2>为什么这期值得关注</h2>
+
+<div class="cards">
+<div class="card card-blue">
+<strong>稳定币空投的实验与翻车</strong>
+Cap 开创了 StableDrop 机制，承诺 1100 万美元奖励，但因市场寒冬 ICO 只募到 400 万，被迫大幅削减。这是一场关于承诺、预期与现实的经典创业课。
+</div>
+<div class="card card-orange">
+<strong>积分计划的根本矛盾</strong>
+为什么几乎所有 DeFi 项目的积分/空投最终都会走向代币归零？Cap 团队用自己的教训给出了深刻反思。
+</div>
+<div class="card card-yellow">
+<strong>L2 结算争议再起</strong>
+Robinhood Chain 上线后，人们发现它付给以太坊的费用微乎其微。ETH 是否在贱卖自己的结算层？涨价又会发生什么？
+</div>
+<div class="card card-red">
+<strong>安全攻击的残酷一周</strong>
+Barnbridge 治理攻击、Alchemy 2300 万美元私钥泄露，以及 Ostium 团队五年努力一夜归零的故事。
+</div>
+<div class="card card-purple">
+<strong>Crypto Twitter 算法回归</strong>
+经过近一年的"企鹅视频"信息茧房，算法突然翻转，老朋友重新出现在时间线上。
+</div>
+<div class="card card-green">
+<strong>熊市中建设和变革的窗口</strong>
+Kane 认为，熊市是撕掉创可贴、做出艰难决策的最佳时机——人们在熊市中的愤怒在牛市会被遗忘。
+</div>
+</div>
+</section>
+
+<section>
+<h2>StableDrop：从 1100 万到 400 万的启示</h2>
+
+<p>2026 年 2 月，MegaETH 生态的稳定币协议 Cap 做出了一个大胆承诺：不同于传统的代币空投，他们将通过 ICO 募资，然后把约 5% 的募资额以稳定币的形式直接分发给早期用户。团队预期这笔奖励大约值 1100 万到 1200 万美元。</p>
+
+<p>这个设计的初衷是解决传统空投的一个核心矛盾：买代币的投资人和领空投的早期用户利益不对齐。空投方想尽快抛售，买家要等抛售结束才敢入场。给稳定币而不是代币，理论上是让双方都满意的方案。</p>
+
+<p>但市场没有配合这个计划。加密寒冬降临，Cap 推迟了 ICO。当最终在近期完成募资时，同样 5% 的比例只值约 400 万美元——不到原计划的一半。Cap 的联合创始人 Benjamin 在节目中坦承："我们有点操之过急了。我们告诉人们一个我们想给他们的金额，但我们还没有拿到那笔钱。"</p>
+
+<p>面对这个困境，Cap 的决策是务实的：坚持 5% 的预算原则，不超额支出。与其让一部分人获得不公平的回报、另一部分人亏损 90-100%，不如确保至少没有人亏钱。他们优先保护了 YT（收益代币）持有者——这批人亏损最严重——让他们拿回本金。其他用户虽然没赚到钱，但也没有损失。</p>
+
+<p>Benjamin 将这个过程描述为与投资者、用户反复讨论后的慎重决定。"Farmers 不满意——那是正常的。他们永远不会满意。即使给他们 2000 万，他们还是会抱怨。但他们对我们来说是重要的。"</p>
+</section>
+
+<section>
+<h2>积分计划的根本矛盾</h2>
+
+<p>Kane Warwick 在节目中透露，几个月前他就建议过 Cap 不要做积分计划。"慢慢增长就好。"但 Cap 没有采纳。积分计划上线后，TVL 迅速膨胀到 5 亿美元，但这些流动性对业务几乎没有价值——Cap 根本没有那么多借款需求来支撑。</p>
+
+<p>Kane 指出了积分计划的核心问题："加密行业有个奇怪的现象——我们把代币当作营销费用发出去，然后期望用户不要立刻抛售。"传统公司的营销预算是固定且有上限的，但积分计划的成本跟 TVL 成正比增长。没有上限，没有刹车——越多人参与，项目方欠的"债"越多。而一旦积分活动结束，用户全部提款走人，TVL 归零。</p>
+
+<p>Benjamin 的反思很诚实："如果能重来，我会做两件事。第一，明确你愿意为这个计划花多少钱，然后设定上限。第二，更好地沟通。我们承诺了一个无法兑现的数字，这是很大的错误。"</p>
+
+<p>Waiso 补充了一个更宏观的视角：在公众面前建设本身就极其艰难。"Kane 自己就因为在 Twitter 上回怼社区而惹上麻烦。即时的批评、隐藏的动机——公开建设真的很难。但必须有人来做。"</p>
+</section>
+
+<section>
+<h2>Cap 的现状：比积分时期更健康</h2>
+
+<p>尽管 StableDrop 争议带来了社区信任的损伤，Benjamin 强调 Cap 的底层业务实际上比积分时期更健康。他分享了两个关键数据：</p>
+
+<p>第一，98% 的 TVL 来自非积分 farming 用户——这些都是机构客户，团队去 pitch、对方认可 Cap 后签下多月的长期合作协议。这种 TVL 是可持续的。</p>
+
+<p>第二，链上收益率处于历史低位，而 Cap 的商业模式是从实体经济导入收益。当竞争对手的收益率在下降时，Cap 的收益率仍然具有竞争力。"我们不需要太多努力就能说服 LP 合作。比起积分时期，现在的位置要好得多。"</p>
+
+<p>Waiso 还特意强调了一个重要但容易被忽略的事实：这次争议跟协议的技术安全性毫无关系。"协议功能完全正常。我们在公告前就提前计算了可能的赎回量，确保有足够的流动性覆盖。一切都在预期之内。"争议纯粹是关于激励机制和沟通的失误，而非协议的技术可靠性。</p>
+</section>
+
+<section>
+<h2>Crypto Twitter 的算法翻转</h2>
+
+<p>节目中的一个插曲是 Kane 对 Crypto Twitter 近期变化的观察。在过去近一年的时间里，算法的运作方式让加密社区感到极度孤立——你只能看到极少数账号的内容，大部分是你不想看到的人。Kane 描述了那种荒诞感："我们都在这里，但互相看不到。Nikita（指 Elon Musk）的算法只让你看到 20 个最糟糕的人——0xSifu、各种垃圾账号——好像整个加密社区都跑光了。我们都在想，大家都去哪了？"</p>
+
+<p>然后在一夜之间，算法被重置了。朋友们重新出现在时间线上。在纽约参加活动时，Tay 感受到强烈的对比：线下的人都是 bullish 的——机构来了，每个人都在努力工作——但线上的时间线完全是另一回事。Benjamin 现在每天只给自己一次刷推的机会。</p>
+
+<p>Benjamin 指出了一个更深层的关联：价格是情绪的放大器。"跟发了什么或没发什么无关。当人们变穷了，就开始互相指责、内讧。如果 ETH 在 1 万美元，同样的状况不会有任何争吵。"</p>
+</section>
+
+<section>
+<h2>以太坊生态：研究者的社区还是交付者的社区？</h2>
+
+<p>关于 ETH Systems 从以太坊基金会（EF）分拆出来的讨论，引出了 Benjamin 对以太坊文化的尖锐评价："我们在 ETH Denver 看到的是一个研究者社区，而不是交付者社区。研究当然非常重要，但我作为一个创始人，始终偏向于行动——先做出点东西，测试它，看它怎么运作。"</p>
+
+<p>Benjamin 认为分拆是好事。"你希望一切都由国家实体来做，还是私有化？现实世界告诉我们私有化更好。"他的逻辑是：EF 的结构限制了成员的自主权，分拆出来后，团队有了更多的决策自由和执行力。Kane 对此表示认同："只要能让人真正去建造东西、交付东西，并且为自己建造的东西感到自豪，这就是好事。"</p>
+
+<p>但他同时也指出，价格低迷放大了所有问题。"如果 ETH 在 1 万美元，根本不会有这些争吵。但你不能等价格涨回去——你必须在熊市中做出改变。熊市是做决策的最佳时机——把创可贴撕掉。让人们在熊市中生气，到了牛市他们早就忘了。"</p>
+</section>
+
+<section>
+<h2>Kobe 接手 Base App：接地气的力量</h2>
+
+<p>Jesse Pollak 将 Base 钱包应用的管理权交给了 Kobe——Coinbase 的早期核心成员，一个被 Tay 评价为"十年前就该退休了，但他还在"的传奇人物。Kobe 发了一条典型的推文："给我 30 天时间修复，如果修不好，你可以叫我骗子。"</p>
+
+<p>Kobe 的独特之处在于他从不高高在上。刚加入 Coinbase 时，他直接在 Twitter 回复里做客服，帮用户解决钱包被锁的问题。Tay 描述道："他把 Coinbase 的产品人员往下拉了一档，让他们回到社区里，回到倾听中。"Benjamin 认为，如果 Coinbase 能成功做到这一点——让他们的团队真正接触到用户的声音——这将具有巨大的重要性。</p>
+</section>
+
+<section>
+<h2>Robinhood Chain：meme 币、Morpho 和可持续性</h2>
+
+<p>Robinhood Chain 上线仅两周，链上活动呈指数级增长。但出乎许多人意料的是，大部分活动来自 meme 币交易。Benjamin 直言不讳："meme 币是垃圾，对 Base 也没有好处。注意力经济没有意义。"他希望看到的是 Robinhood 将 Robinhood Gold（国债收益产品）上链，或者像 Stripe 那样将传统金融资产引入链上。</p>
+
+<p>Kane 对 meme 币驱动的增长持谨慎态度。"你可以靠 meme 币吸引早期注意力——如果 Robinhood Chain 上线时说'我们有 Morpho 借贷，年化 7%'，没人会在意的。但最终你必须把这些用户转化成别的什么。不能只靠这一波，因为一旦所有人都被 rug，你的用户就没钱了。"</p>
+
+<p>但 Benjamin 提醒大家不要忽略更宏观的效应：每一条链都在将其用户引入加密世界。"Robinhood 在把它的 App 用户引导到链上，Coinbase 也一样。对 MegaETH 或 Cap 来说，说服一个已经在链上的 Robinhood Chain 用户使用你的平台，比说服街上的普通人下载钱包容易得多。"</p>
+</section>
+
+<section>
+<h2>L2 结算之争：以太坊在贱卖自己吗？</h2>
+
+<p>Robinhood Chain 上线后，人们开始算一笔账：Robinhood 从用户交易费中赚了多少？付给 Arbitrum DAO 多少？付给以太坊 L1 多少？答案让很多 ETH 持有者不满——L1 只收到了几乎可以忽略不计的 Blob 费用。</p>
+
+<p>Kane 的观点很明确："我一直主张 ETH 应该收更多。L2 从以太坊获得了巨大优势——不需要处理以太坊必须处理的所有事情——但仍然是一条链。ETH 没有捕获足够的价值。"他甚至提出了一个更激进的设想：如果以太坊大幅提高 L2 结算价格，会发生什么？"那些离不掉的 L2 只能老老实实付钱；能离开的会离开，然后变成 L1，在平等的竞技场上竞争。第 85 个 L2 如果必须自己出块、运行验证节点、维护客户端——根本活不下去。"</p>
+
+<p>Benjamin 提供了一个更务实的反驳：即使以太坊收费极低，留在以太坊生态内仍有实质性的资本成本优势。"看看 Monad 上 Aave 的 USDC 供给利率，跟以太坊 L2 比高得多。市场在告诉你，脱离以太坊的成本更高。作为 L2，我宁愿多付一点结算费，只要能节省 2% 的资本成本。"</p>
+</section>
+
+<section>
+<h2>Barnbridge：SEC 到治理攻击的双重悲剧</h2>
+
+<p>Barnbridge 是一个早期的 DeFi 衍生品协议，曾是 OG degens 的最爱。上一届 SEC 将其列为重点打击目标，定性为"未注册协会"。Kane 回顾了 SEC 当年的策略："他们是战术性的。挑一个他们认为能碾压的小项目，彻底摧毁它——目的不是保护投资者，而是发信号。然后他们会拿着这些'胜利'去敲 Uniswap 或 Aave 的门。"</p>
+
+<p>Barnbridge 试图通过 DAO 治理来规避法律风险——所有合约升级都由代币持有者投票决定。但五年后，治理活跃度极度萎缩。攻击者获取足够代币后，利用提案流程更新了协议的核心合约和代理，然后利用了一个更隐蔽的攻击面：开放授权（open approvals）。过去五六年中，任何与 Barnbridge 交互过的地址，如果曾经给过无限授权，攻击者就能转走其资金。</p>
+
+<p>Kane 半开玩笑地说："我确定里面还有我的钱。某个遗忘的钱包里，我还有开放授权。我甚至不想去查。"Tay 的团队扫描了 ENS 名称和 Twitter 账号来通知受害者。攻击分三波进行，总损失在 60-80 万美元左右。</p>
+</section>
+
+<section>
+<h2>Alchemy：又一个 2300 万美元的私钥泄露</h2>
+
+<p>Alchemy 的攻击模式令人沮丧地熟悉：私钥泄露。Tay 追踪资金流动整整八个小时——攻击者仍在持续转移。"我不得不去洗澡、做生活中的其他事情。他们一直没有停。我醒来时他们还在继续。这种持续的操作水平是一个相当强的指标，说明很可能是朝鲜的威胁行为体。"</p>
+
+<p>关键漏洞是一组控制价格转发器的私钥——不是直接持有资金的密钥，而是一个间接但致命的入口。Tay 描述了安全事件发生后的无力感："一旦黑客发生，你只能坐在那儿回应、试图止损、做一切能做的事。但最终，事后的努力几乎没什么大影响。我们冻结了一些资金，但不多。"</p>
+
+<p>Benjamin 提出了一个从根本上改变思维方式的安全建议："在设计系统时，默认假设每一个用于管理的 EOA 都已经被攻破了。如果这个假设成立，你的系统还安全吗？"</p>
+</section>
+
+<section>
+<h2>Ostium："别做这个"——五年后应验的警告</h2>
+
+<p>Kane 讲述了一个令人心碎的故事。2021 年在纽约的深夜，三个非常年轻的创始人——大概 18、19 岁——在凌晨一点走过来问他关于衍生品协议设计的问题。90 分钟的深入讨论之后，Kane 问了他们的问题，然后给出了建议："说实话，我的建议是——别做。你们会经历的痛苦和折磨根本不值得。用你们的命做点别的。"</p>
+
+<p>Ostium 团队没有听从。他们在 2022 年初正式上线，熬过了四年的熊市和波动——这本身就是一项了不起的成就。Waiso 是他们的办公室邻居："那些家伙非常拼。每天都能看到他们开会。看到这一切被毁掉，真让人难受。"然后，一个错误，一切归零。</p>
+
+<p>Tay 提到了一个罕见的例外：Euler。Euler 的创始人 Michael 在黑事件发生后的状态近乎偏执——"我不会接受这个结果。我职业生涯中积累的所有技能都是为了找到这些人。"这种能量感染了整个团队。Euler 最终追回了资金，但这花了两年时间，而且需要时机、运气和一支"不接受失败"的团队——这不是可以复制的剧本。</p>
+
+<p>Kane 对 Ostium 抱有希望——"他们非常努力，拥有四年的 track record。他们可能还会恢复，就像 Euler 那样。但这条路极为艰难。"节目中，嘉宾们达成了一个共识：在 DeFi 中建设极其痛苦，你必须出于信念而做。"我们做这个，是因为我们从根本信念上认为这就是未来。"</p>
+</section>
+
+<section>
+<h2>核心金句</h2>
+
+<div class="quote-block quote-blue">
+"我们承诺了一个无法兑现的数字。如果能重来，我们会设定预算上限，并更好地沟通。"
+<span class="quote-label">— Benjamin，Cap 联合创始人，反思 StableDrop 的核心教训</span>
+</div>
+
+<div class="quote-block quote-orange">
+"我们是一个研究者社区，而不是交付者社区。我作为一个创始人，始终偏向于行动——先做出点东西，测试它。"
+<span class="quote-label">— Benjamin，谈以太坊生态的执行文化缺失</span>
+</div>
+
+<div class="quote-block quote-yellow">
+"熊市是做决策的最佳时机——把创可贴撕掉。让人们在熊市中生气，到了牛市他们早就忘了。"
+<span class="quote-label">— Kane Warwick，Uneasy Money 主持人</span>
+</div>
+
+<div class="quote-block quote-red">
+"默认假设每个 EOA 都已被攻破。如果这个假设成立，会影响到你的系统吗？"
+<span class="quote-label">— Benjamin，谈加密安全的设计思维</span>
+</div>
+
+<div class="quote-block quote-purple">
+"我们知道自己得了什么病，也知道该吃什么药。我们只是拒绝服药。"
+<span class="quote-label">— Tay，安全专家，谈行业对基础运维安全的忽视</span>
+</div>
+
+<div class="quote-block quote-green">
+"用代币激励做营销，却期望用户不抛售——这是加密行业最奇怪的矛盾之一。"
+<span class="quote-label">— Kane Warwick，反思积分/空投机制的根本缺陷</span>
+</div>
+
+</section>
+
+<footer>
+<p>📻 本期节目来源：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6165024078.mp3">Uneasy Money</a> — 2026 年 7 月。主持人：Kane Warwick、Tay。嘉宾：Benjamin 和 Waiso（Cap）。</p>
+<p>⚠️ 本文不构成投资建议。链上发生的事，永远不会只留在链上。</p>
+</footer>
+
+</article>
+</body>
+</html>

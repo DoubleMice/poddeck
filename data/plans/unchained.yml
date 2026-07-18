@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-18T04:04:51.057Z
+refreshed_at: 2026-07-18T18:21:22.495Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 82
-done: 0
+done: 1
 pending: 0
-needs_transcript: 81
+needs_transcript: 80
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
@@ -110,8 +110,12 @@ episodes:
       💥 01:26:24 Closing rapid-fire: Euler's recovery and an old Vyper compiler bug revisited
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-18T18:21:23.838Z
+    transcript_job_id: 57898193-c071-49a6-8f56-722d8d2d03a7_e877498cb6104f8eaa20e246412bfbaa,8ca4539b-d0d5-4ba6-85da-a7e289981111_75e3946b94e244aeac69890d8a2bc059,06defbe6-dec3-4894-a203-d03fd3e06cb8_932b106050c54568ad6843618aede8d5,cc6f53ab-c292-4f84-9931-014142280f94_8846c54b8b4d446ebce8ecda8566b763,a9cc6166-162b-4205-a55d-93522a663844_2aaeb32732b3419dadfe9131c92044ab,4cb64eeb-1c37-49e1-aebb-1770976575a3_3ed5548245164ac7872c7fdc0854411a
+    transcript_completed_at: 2026-07-18T18:27:19.339Z
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     guid: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
@@ -3271,8 +3275,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5034,8 +5037,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
