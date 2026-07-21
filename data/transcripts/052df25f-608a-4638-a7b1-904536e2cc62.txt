@@ -1,0 +1,1003 @@
+Speaker 1: You're watching TBPN. Today is
+Speaker 2: Monday, 07/20/2026. Let's go to the fans at home. We are live from the template technology, the fortress of finance The capital
+Speaker 1: of capital.
+Speaker 2: Let me tell you about ramp.com. Time is money. Save both. Easy to use corporate cards, bill pay, accounting, and a whole lot more all in one place. We had a fantastic talk with Eric, the co CEO of Ramp on Thursday.
+But we are excited to be back. It's Monday, and there's a lot of news, the big stuff. Kimmy k three dropped. But first, we should recap the weekend. How was your weekend?
+Speaker 1: The elephant in the room? And I'm wearing a suit.
+Speaker 2: Yes. The elephant in the Did somebody say that? The elephant in the room. Jordy's suit No.
+Speaker 1: I said that.
+Speaker 2: Feeling good. He's refreshed.
+Speaker 1: Yeah. Refreshed. I Yeah. I was in was in the weekend.
+Speaker 2: So the old retreat.
+Speaker 3: Yes. Yes. Exactly.
+Speaker 1: Really fun time. Glad to be back. Very very refreshed.
+Speaker 2: Very fun. I was at a Caruso property this weekend. And I gotta say, being there, being at the the Miramar Rosewood, I I can never vote for him for public office ever again.
+Speaker 1: Why? Because you want him to develop more properties Yeah.
+Speaker 2: Like that. I want him laser focused on resorts and malls.
+Speaker 1: It doesn't really hold up because the whole point was that he track could it. Was some possibility that he could make greater Los Angeles Yeah. Something like incredible
+Speaker 2: got to get a rosewood in every city in America. Yeah. And maybe
+Speaker 1: private of the Yeah. Of the city of Los Angeles turn it Potentially. Into a Caruso
+Speaker 2: Potentially. But it was it was a good weekend. Glad to be back. The timeline was burning up over the weekend over the AI Cold War that's breaking out between The US Frontier Labs and Chinese open source. There's been a whole bunch of new Chinese open source models that have dropped with some promising benchmarks.
+The latest one that everyone is up in arms about is Moonshot's Kimi k three. It was unveiled last Thursday. Now, they aren't actually yeah.
+Speaker 1: I kept opening x and thinking, looking, scrolling a few times, thinking, oh, I'm I'm happy for you or sorry that happened. I put my phone away. Yeah. I I feel like I miss a lot.
+Speaker 2: Yeah. I mean, it's it's gated behind a behind an app right now. The waits are not actually open just yet. That should happen Monday if things go to plan. But of course, there's a lot going back and forth with the administration.
+People are, weighing every possible consequence of this. It's the classic, it's over, we're back. Is this good for semiconductors? Is this bad for semiconductors? Is this Jevan's paradox?
+Is it the counterexample of Jevan's paradox? It's all very interesting debates and everyone's coming out with their own opinion. Dean Ball was going back and forth with two people, David Sacks and also Emil Michael, were duking it out on the timeline, fighting it out back and forth. But decent takes on both sides, lots to chew through. The headlines for Kimi are impressive, but not wildly surprising based on the current trend lines and model progress.
+But it does seem to invalidate the thesis that open source would start falling behind, which was something that was start there there was that chart from the government, I believe, that showed closed model progress was accelerating on this particular exponential and open models were falling behind. This seems like a proper catch up, something that was predicted from many lab leaders that the six month gap, three month gap, nine month gap, it will remain just that gap for the foreseeable future. But there are, of course, a bunch of other nuances here. In the most above board scenario, here's what happened. Like the moonshot team, it's just a bunch of highly talented AI researchers who marshaled enough compute to release a great model.
+Open sourcing Kimi is a great way to grab attention, attract talent, drive demand for hosted API services that are more turnkey eventually. There's a very reasonable business model behind open sourcing. Red Hat Linux, of course, is an open source company owned by IBM now. I think the acquisition price was in the $30,000,000,000 range. And at any point you could just say, I'm just doing Red Hat on my own, but a lot of companies pay for, you know, consulting, hosted, and all sorts of different services around the open source piece of software.
+And so that's sort of like the bold case, like everything's going well. The more skeptical folks on the timeline are pointing to ideas such as maybe the compute was smuggled in to China against chip controls, maybe the data was exfiltrated from frontier lab APIs routed through wrapper companies, maybe this is a distillation attack. The open source strategy is a deliberate attempt to destroy American companies. It's geopolitical warfare. It's the AI Cold War.
+And there might even be spies inside companies stealing IP directly. And so that's sort of like the bad version. The reality is probably a mix of both, but we'll know more over time and we'll hear more statements from the labs and from all sorts of different participants to understand. People are going back and forth on, you know, if you ask Kimmy its name, will it just say it's Claude or GBT? And there were some examples of people doing that.
+Seemed like it was Photoshopped. Seemed like, that also seems like the easiest thing to fix possibly is just put it in the put it in the prompt. Put it in the fine tuning. Never find and replace. Seems Yeah.
+Speaker 1: Pretty But they were showing it in the reasoning, Tracy.
+Speaker 2: Yeah. But, you know, I I don't know. All these things are hard to hard to assess over time. It takes time to actually work through what's real, what's fake, what's a hallucination.
+Speaker 1: You know,
+Speaker 2: they all they all make mistakes from time to time. But there are bigger questions about AI safety in a world of powerful open source AI. I haven't seen a ton of takes from this crowd, but you have to imagine that they aren't happy about it. Maybe the Stop AI protests will head over to Beijing next and beat down the doors of Moonshot directly. But it is an odd thing because even if you're not worried about the fast takeoff, you know, gray goo, paper clip monster.
+From a cybersecurity perspective, things are going to get more complex. There's reasonable solutions to all of this, but it is a more powerful tool in the hackers' or the attackers' tool chest. Fortunately, defenders have had roughly six months of frontier exclusivity with GBT Cyber and Mythos for a while. And so, there's been a lot of preparation. We've talked to Nikesh at Palo Alto Networks and George at CrowdStrike about this.
+They have been aware that this is coming for a while. And so a lot of systems have been patched. But at the same time, you can just imagine now anyone who's a hacker can spin up a very, very intelligent model and start sending a bunch of spam emails or spam text messages that stop seeming so AI and they're not as clockable because it's just another level of intelligence and it can do reasoning traces and research and so the spammer or the phishing attack can actually know what insurance you have and then pose as your insurance agent and actually know a little bit about your insurance agent instead of just sort of sending you a generic spam text. Your things are going to get more customized, more personalizable. Of course, there will be more advanced defense layers, but the war is continuing.
+There really is no debating that open source is just cool, like open source AI. It just feels punk rock to me. It feels like Napster. Like as a kid, the idea of just like liberating all the information.
+Speaker 1: Yeah. It's culturally aligned to the Internet itself.
+Speaker 2: Yeah. It's just a cool thing even though you do have to grapple with all the different problems that come from it downstream. Yeah. Like, the there's something just deeply satisfying about the idea of of like a solar powered server rack serving you up unstoppable intelligence, which is another good name for a NeoLab. I don't know if there is one already, but, you know, a country of
+Speaker 1: geniuses feels yeah. In some ways to me, it feels like aligned to America's ideals.
+Speaker 2: Oh, yeah. It's like feels
+Speaker 1: like feels like like very empowering.
+Speaker 2: It's totally second Yeah. Like Totally second amendment. Exactly. Yeah. It's like, I should be able to go off grid and have, not a country of geniuses in a data center controlled by a corporation, but just like my own genius who's riding with me no matter what in my basement.
+And it's like and even if you're not thinking like nefarious, it's like this it's this idea that, you know, I like to have a copy of a movie in case like the grid goes down, you know, the the more like, you know, apocalyptic thinking. This is a very general thing that I think a lot of people align to, especially if they're at all crypto native. It's like, why do you want bit coin? Well, it's unstoppable money. The government can't take it from you in certain scenarios.
+Of course, like there's a bunch of ways they can, of course, like anything else. But there is just something very very attractive about having just a machine with all of human knowledge on it. It's like a it's like the, you know, every house used to have the full Encyclopedia Britannica. You can just look up anything. And now you have the LLM that can solve any math problem for you.
+But the U. S. Government is going back and forth on this issue, how to handle the situation. And I imagine we'll see developments this week. The Kimi K3 weights drop next Monday and so this is the week where if the government wants to do something one way or another, they have the opportunity to do that.
+There were some back and forth on like, would there be a direct ban, a hard ban, a soft ban, maybe just some like messaging around, hey, like, please be a patriot. Don't use this foreign product. You know, there's all sorts of different ways. Like, the original like buy made in America, buy American. That's just marketing, but it does have some effect.
+It's not enough to make GoPro a, you know, $10,000,000,000 company, but it is enough to, you know, cause a little bit of motion in the in the in the economy.
+Speaker 1: One thing that was notable over the weekend, Kimmy Yeah. On X said that Kimmy K3 has received far more love than we expected and our GPUs are feeling it over the past forty eight hours. Demand has pushed close to the limits of our current capacity to protect the experience of existing subscribers. We're temporarily pausing new subscriptions and prioritizing compute for current members.
+Speaker 2: Mhmm.
+Speaker 1: We're adding capacity as fast as we can, and we will reopen new subscription spots in batches. So again, Kimi and the world more broadly are quite supply constrained and yeah. Just showing or compute constrained
+Speaker 4: Mhmm.
+Speaker 1: And showing that the other dimension of this whole geopolitical battle is around the hardware side.
+Speaker 2: So Yeah. Yeah. I mean, in general, I think my my takeaway was and Tyler, I'd be interested to hear how you process this. But like I I just don't see this as a black pill even if it's like a deep seek moment and the market sort of bounce around for a little bit. It seems like there's still a lot of demand for frontier intelligence, lot of demand for near frontier intelligence, a lot of demand for really cheap older models that have been baked down to basically intelligence too cheap to meter.
+And we are going to be in this process of go and find an actual use for something and then bake it down to be really really cheap so that it can be offered by
+Speaker 5: Yeah.
+Speaker 1: And in so so many moments over the last two years, we've There's been a company that's come out. Maybe they've raised some money. Yeah. You maybe forget about them Yeah. For like six months.
+Speaker 2: Mhmm.
+Speaker 1: And then they pop up and it turns out even though they're the number 10 company in their category, they're still growing
+Speaker 2: Yeah.
+Speaker 1: Faster than almost any company that existed Yeah. Like six years ago.
+Speaker 2: Yeah. And a lot of it goes down to deployment too. There's like certain companies if they're in consumer, they just have a really good go to market motion. Like they're just able to get customers to subscribe or use their product. Or if they're in enterprise, like they just have a great like forward deployed motion to actually do the change necessary as opposed to just like, here's an API law firm.
+Like they could have done that and yet you have legal AI companies that have done a great job of coming in and actually creating a product that works within the confines of the the broader organization. Well, what what are your k three reactions, Tyler?
+Speaker 6: Yeah. I mean, I I think it was definitely like a surprise, an update, like this is an extremely good model. Yeah. The the idea that open source is falling behind seems like very
+Speaker 2: much sort of got a preview with GLM 5.2.
+Speaker 1: Yes.
+Speaker 2: Like, people were already saying like, oh, GLM 5.2 is catching up, so
+Speaker 6: Yes. But even even that that was closer to, you know, maybe a year, maybe a little less than a year behind. It seems like much closer. Okay. Yeah.
+But I I think I I broadly agree, like, you know, we have okay, there's this great open source model Yeah. And now we have, okay, the Jacobian, you know, conjectures Yeah. Yeah. Like this this kind of storied math problem Yeah.
+Speaker 2: Is proven
+Speaker 6: and so like Yeah. Yeah. There's just gonna be a lot more use like everywhere. I I expect Yeah. You know, these kinds of models to to
+Speaker 2: Yeah. Be used everywhere. It seems like a lot of hype is around, like, specifically the parameters, the size of the model, the way it was trained. It'll be and then also it did very well in the front end arena, which was interesting because that's, I mean it jumped ahead of everything there and that feels like a particular like it's, it'll be interesting to see because you see more and more taste going into these models like OpenAI is really big into the math stuff and Anthropica was really big on code early. And there's all these different like, you can just tell that like, oh, this lab cares about chess now and now the model's good at chess.
+Or the model got better at writing because like they they took the time to spend a month sprinting on that. And it'll be interesting to see like where did they sprint if anywhere? Where didn't they sprint? And it's sort of lagging. And then what harness it works best with?
+How how how important is the harness relative to everything else? But we'll be we'll be interesting to to continue following. There's a whole bunch of great reactions, semi analysis. It breaks down the architecture. Where should we start here?
+Let me tell you about Cisco first. So critical infrastructure for the AI era unlocks seamless real time experiences and new value with Cisco. There's a there's a long post by
+Speaker 1: Kimmy achieved another pretty meaningful benchmark. What's that? Oh, yes. On the Belgian Grand Prix.
+Speaker 2: Is there anything these Chinese models can't do, says Alex Conrad. Pretty good. Kimmy Antinalli, of course, of the of f one.
+Speaker 1: Anyways, over to Semi Analysis. What do they have to say?
+Speaker 2: Where where are they here? Semi Analysis said, similar to the panic over DeepSegar one, some uneducated people think Kimek three's use of linear attention, KDA, is bad for NVIDIA, HBM, DRAM and networking because it has relatively lower KV cache requirements. The opposite is true and they'll explain. KIMI K3 is actually quite positive for NVIDIA as large model inference is where the NVL 72 shines because K3 has more than 2,800,000,000,000 parameters. It requires a large scale up domain to store its weights.
+Secondly, although KIMI Delta attention has up to 10x lower networking requirements for KV cache transfers, its large weights require even more network bandwidth to implement an optimization called wide EP, which spreads weights across different GPUs. It is interesting that I mean, feels like if like, is China getting TPUs? Those have to be chip export restricted and probably more difficult to get into the country because there's less resellers. And in order to set up a TPU based data center, you probably have to work very closely with Google, whereas NVIDIA GPUs are sort of going to like all sorts of small neo clouds and there's a lot of places where seven steps went down the chain, it can wind up in a suitcase with a a hair dryer removing a label or something like that.
+Speaker 1: Well, it's not even that. You can imagine like if you were a Chinese lab and you wanted to get access to compute, would be a number of ways to like set up US entities Yeah. That then basically get compute through a variety of different sources here in The US. Yeah. And you're you're just getting it remotely.
+Speaker 2: Yeah. CK Capital says the hottest model in the world just started turning away paying customers because there isn't enough commute compute to serve them. This is the Neo Cloud thesis in one post. And the the Neo Clouds were sort of getting beat up. Was it last week or the week before?
+And and and it seems like they should be back. I don't exactly know what what's Core Weave.
+Speaker 1: Yeah. Iron is up 21% today.
+Speaker 2: Woah. I mean, Core Weave's
+Speaker 1: sort they've of a laggard.
+Speaker 2: And down over the last five days and the last month. But, yeah. If you're if you're flexible and ready to serve this the day it comes online, that's probably profitable very, very quickly even at, you know, lower than expected margins. Nicolas Bustamante at Microsoft, who is working on AI for knowledge workers, says, guys, the world is so compute constrained. I honestly don't understand how anyone thinks otherwise.
+Almost nobody is seriously using AI today and we're already hitting capacity. Everything is a bottleneck. Land for data centers, permits, electricity, grid connections, chips, construction, cooling. Demand is growing far faster than supply and expanding supply is insanely expensive in this game. The best positioned companies are the ones with massive net income from non AI products.
+They can fund hundreds of billions in CapEx. He's given a little bit of a bull case for Microsoft.
+Speaker 1: Guillermo Yeah. Over at Vercel Tested it. What's that?
+Speaker 2: Go. Yeah. That's good to hear.
+Speaker 1: Yeah. Kimi k three is top tier at cybersecurity. That will that will be interesting as the as basically the weights are released. Do we see an uptick in tax?
+Speaker 2: And it's also sort of a a a refutation of, like, the it's just distilled because the models that you would be distilling from are pretty severely nerfed on cybersecurity, at least in theory. And so it's like you would need to distill on the non the non nerfed model, which is probably way harder because those are much more restricted. And so it it it does feel like there's a there's a little bit of refutation of the idea that these are pure purely distilled.
+Speaker 1: Soul is a leap ahead in cyber capability at a significantly higher cost, but quite remarkable still. Fable refuses everything. We couldn't get it to complete the run at all. Is What interesting is that Sol in comparison was much more open to helping with defensive cyber hardening. T l d r frontier open weight cyber capability is here.
+And, yeah, they have, their own product for, defensive cybersecurity over at Purcell. This was good. Harry says, r I p the bear case, July 16 to July 19. Perfectly coinciding with my Trip. Trip which which is which is nice.
+Speaker 2: Well, let me tell you about Console. Console builds AI agents that automate 70% of IT, HR, and finance support, giving employees instant resolution for access requests and password resets. Dean Ball was going back and forth. Oh, some deleted posts now. But his observations were getting taken to task going back and forth.
+He says it's a very good model. I don't think its performance can be explained away by distillation or anything like that in agentic coding sessions. It seems pretty much on par with the best public models of Q1 twenty twenty six in my fairly limited use. It also seems very token hungry. There was some interesting back and forth around the pricing because it might not actually be that cheap, at least through Kimi's API or Moonshot's API.
+But
+Speaker 6: Yeah. I I think the the input per million was like $3, output was 15, which is like cheaper than frontier models, but like it's it's certainly not at like
+Speaker 2: cheaper or 30% cheaper.
+Speaker 6: Yeah. And then if if the if it's like more token hungry Yeah. Yeah, token efficiency is not very good, that's actually can be much
+Speaker 2: But you have to imagine that if it's open weights, then companies bring it in, they start quantizing it and distilling it and tightening it up and optimizing it. And then there's probably a whole stack of like neo clouds that we'll be competing for, well, we have this cheap energy over here or we have some older chips that it can run on or do whatever they can to bring down the price. So Dean says, I am personally surprised the Chinese state continues to allow the open sourcing of models this good, giving potential risks. Now, it seems like that is very much like from the top they are pro open source right now. Dean says, To be clear, I myself might be fine with models presenting this level of marginal risk being open weight, but I'm surprised that China is fine with it.
+I suspect the reason is that they are. Seventy five percent explained by strategic blindness, lack of AGI pilledness, the CCP is very Leon Lakuni in its view of AI. The other 25% or so is their lack of compute for customer inference making China's open weight strategy an unintended byproduct of US export controls. That's interesting. And the normal Chinese strategy of aggressive exports for the companies as opposed to the government, The decision to open source is partially ideological and partially because they are behind, and they know that very few people would pay for sub frontier models from China.
+Yeah. You have to imagine that it like, the idea of sending I mean, people are having discussion over, like, should you send your corporate data to a to a an American frontier lab? Imagine that that same level of, should we upload our entire code base to the moonshot API because we've gone all in on on Chinese closed source, which seems like that's a very, very hard sell. So there is a world where there's like no money to be made in America. I don't know.
+Maybe there's some American businesses that would just be like, yeah, I'm I'm cool with it. Like, take my take everything. Take all my IP. Like, I I'm I'm I'm, what's the phrase, like, anti fragile. I'm anti fragile.
+I can't be like, you can't clone me. So and I have no IP. So just upload it all.
+Speaker 1: I mean, if you're a local plumbing company
+Speaker 2: Yeah. Maybe.
+Speaker 1: Probably in a good spot.
+Speaker 2: You lean in. Ripping it. Maybe. Maybe. He this is where he gets a pretty this is a pretty hot take.
+Dean says, open weight models are inherently decelerationist. And Tyler and I were debating this before the show. He said, I'm continually surprised to see the so called accelerationists so excited about open weight models. I suspect the reason is that they know open weight models are effectively ungovernable. That's correct.
+And they simply like the overall cloak of ungovernability open weight models create over the whole of AI. It's not a bad strategy. It reminds me of James Scott's recounting of the hill people in The Art of Not Being Governed. Still, in the end, open weight models deter further AI CapEx. And this is the debate that we were having was like how CapEx intensive are these frontier training runs?
+Because moonshots raised, I think, a billion dollars recently, and and it just feels like even the even the latest labs, like, there's a lot of cost, a lot of researchers, and they do a lot of experiments, but the but the core run might not we might not be talking about 50,000,000,000 yet. Maybe in the future, like, you you need to accrue towards that and maybe people wouldn't fund it if they're like, oh, you're only gonna be able to monetize this for for like three months because you're gonna get distilled so fast or you're gonna get copied so fast. That is tricky. Like, it is nicer when you have a monopoly or oligopoly for some period of time to to actually earn profits off of what you invested against.
+Speaker 1: Well, if anyone listening to this is over at Kimmy or Moonshot
+Speaker 2: Come on the show.
+Speaker 1: No. Don't come on the show. Just, feel free to let us know how how you made it. Yeah. Maybe.
+Maybe. Feel free to to leak the secret sauce.
+Speaker 2: On the show.
+Speaker 1: Come on the show. On the show. Yeah. Yeah. If you're so if you're so open Yeah.
+Why not?
+Speaker 2: So Growing Daniel was was calling this dumping. He said what China is doing in AI is called dumping. They do it in literally every industry they enter. The goal is to kill all local competition by subsidizing their own industry so they can produce at a loss. Then once all competitors are dead, they can charge profitable prices and control the market.
+In steel and automobiles, this is just as just bad. In AI, it's potentially fatal fatal to our country. It's interesting. It's like I there's a deeper AI supply chain across data centers and fabs and chips and energy that you could potentially have a lot of GDP growth and a lot of industrial AI capacity on an open weight model. So it's not like you're losing everything, but it does feel like a little bit of a slippery slope where you're like, sure.
+Like, let well, if you let China win the the the model layer, then you also are like, sure. They set up a fab. Like, start buying the chips from them. Sure. Like, just put the data centers there.
+Put everything there. And then all of a sudden, you've lost, like, everything potentially, and you're just in that consumer mindset. Then you're back to, well, how hard is it to make a t shirt in this country? Is that a problem?
+Speaker 1: Yeah.
+Speaker 2: Not if we're friendly and we're trading and we have something to offer, but if we don't have anything to offer, then we can't buy anything and then we become a poor country. I don't know. It's a it's a tricky back and forth. People like cheap stuff. Like, they like cheap TVs and they don't like pollution associated with TV factories, so you send them abroad.
+And then eventually, you're like, wait, what do we make in this country? Anyway, we have Tyler Cowen joining at noon. We can break down all the economics of this and other topics in just a minute. Let me tell you about the New York Stock Exchange. Want to change the world?
+Raise capital at the New York Stock Exchange. Just do it. Growing Daniel says, unfortunately dumping unfortunately dumping is the very common argument for rent seeking domestic firms who want protection. So even if you're in just a normal competitive industry, if you're an electric vehicle manufacturer, you're going to claim dumping even if it's just fair competition from BYD. Even if there's no government subsidies, they're just making great products and they want to send them here.
+Dean's position here seems to be a Jones Act of sorts and this has famously not saved our shipbuilding industry and I suspect it won't save our AI labs. Stopping open weights is virtually impossible. So our only other option is governments taking stakes in labs and subsidizing our own industry. If you scream and yell about either Jones acting AI or subsidizing GPUs, then you should also explain how we will escape the dumping trap China is trying to push on us to destroy our labs and leave themselves with the only functioning AI industry in the world. That is a take.
+Dean Ball says, I know I've said this a bunch, but I wasn't proposing a Jones Act for AI as a good thing. I was saying that if USG feels pressure to do something, the likeliest thing they'll land on would be soft law discouragement of Chinese model use. China does the same to our tech. Yeah, that is true. There's a whole bunch of I mean, even with the NVIDIA chips for a while, was rumors that Beijing was recommending that tech companies and China not buy them, even once they were approved.
+And so Yeah. Soft power of the government happens. All over the place, LeBron chimed in. Augustine LeBron, that is. Former guest of Dwarkash Patel.
+I really like him. He says, There is no predatory dumping trap to escape. Keep thinking it through. One, China subsidizes open weight models below their cost taking big losses in the process. Two, say they put Anthropic and OpenAI out of business.
+Three, they start charging monopolist prices to recoup losses. So now there's room for new entrants and perhaps government support. The monopolist prices era will be short lived. All these complaints about unfair competition are BS. If you don't want to be serfs to a more competitive rentier class, then go compete.
+The more I think about the China dumping open weight models at a loss to hurt The U. Idea, the stupider it sounds. Now, you can lose the industrial capacity over a generation. Like, if you if you truly, like, lose all your AI researchers and they go off and do biology research or they they just go do something else and this is what happened, like, we just don't have that many nuclear engineers in America anymore because nuclear engineering was seen as like a dead end. And so they all went into computer science.
+And now we're really strong in computer science and that's great. But if you if you lose all of those people, eventually, you can't just like flip the switch and recompete. But I I take his point that it is difficult to to to like, you do create a market incentive. It's like, wait. There are Chinese companies that are charging us 99% margins on intelligence.
+Like, any venture capitalist want to fund something and Yeung laugh perhaps? And people would just be like, absolutely. I would love to compete with China. Like, people do this all the time.
+Speaker 1: Yeah. We're doing this in in manufacturing.
+Speaker 2: Yeah. Yeah. We're literally doing it right now.
+Speaker 5: Now Yeah.
+Speaker 2: It is slow.
+Speaker 1: The automotive example is interesting. In Over the last few days, I saw a ton of BYD cars. Oh, really? Yeah. Just all over.
+Speaker 2: Mhmm.
+Speaker 1: And it's interesting because they were I saw, I I would say, like, less than I would have expected based on what a lot of people say on X, for example. They're like, I was in Europe and there's Chinese cars everywhere. I saw I saw plenty, but what's really hurt the European auto manufacturers is not that the Chinese companies are selling into Europe. It's that Chinese consumers are just buying Chinese cars. Yep.
+Right? And so you look at a car like the like the Porsche Cayenne. Right?
+Speaker 2: That was a big seller.
+Speaker 1: Huge seller in Probably still they amount. But people are very frequently choosing local options and they have a lot of national pride Yeah. In China around buying local at this point.
+Speaker 2: Yeah. I like this final post from Augustine LeBron. He says, the SFAI scene needs fewer philosopher kings and more CEOs laser focused on serving the best possible tokens at the best possible price. Your margin is my opportunity. Less Marcus Aurelius, more Ron Vakris, Costco CEO, started his career as a forklift driver.
+Can you imagine if in a decade we have a Frontier Labs CEO who's like, yeah, I started digging ditches to build data centers. Like, was racking GPUs when they were fighting it out over who was on the Frontier. And now I got the cheapest models in the business. I got the cheapest intelligence.
+Speaker 1: I got the best value.
+Speaker 2: Yeah. I mean, like, for for like 99% of businesses, they just want tokens that are good at the right price. Like, may but maybe maybe if Costco is the model, there will be a a an LVMH of AI. Something that really says your your your company takes luxury tokens seriously. So I'm I'm happy to pay 99% margins.
+I don't even think
+Speaker 1: These aren't just tokens. Yes. They're a statement.
+Speaker 2: This is a statement. This company, we use premium AI, luxury AI. Jukhan is sharing some news. The USI's tougher curbs on Chinese AI. Now, are like logical curbs, right?
+Like distillation attacks and IP theft should be investigated. And I don't know what resources there are to fight that, but I mean, like the FBI busts people all the time. There was a there was a spy at Tesla a couple years ago who was like just straight up like saving the files, sending them to China, you know, like that happens and they bust those people. And so there should be like an effort there. I'm sure there already is one.
+But Juukan says, Damn, this is exactly what Dean Ball said, isn't it? And here's the news from Axios. The big picture, the administration wouldn't need to impose an outright ban to get US companies to drop those Chinese platforms. Quote, what's actually happening is slower and more durable. One source familiar with the government decisions said, citing procurement rules, entity list threats and public pressure campaigns aimed at US companies using Chinese models.
+Instead of a ban, another source familiar with government discussions described a push to highlight potential backdoors and lack of security with Chinese models. It feels like it should be pretty doable to hunt down backdoors and deal with security risks of Chinese models, especially if they're being run-in American data centers. And the governance issue that brings, it's an offensive approach where the administration encourages a more innovative US open source ecosystem, the source added. So this will be playing out.
+Speaker 1: Tarek says token atelier.
+Speaker 2: Mhmm. Token atelier. I like that. Handmade. Well, take your token atelier over to Codex.
+It's a powerful workspace for getting work done with AI agents whether you're writing code, analyzing data, creating content or automating business workflows, Codex helps you move projects forward from start to finish.
+Speaker 1: The Odyssey is up to 264,000,000. Biggest non animated opening of the year until Spider Man in two weeks according to Lucas Shaw over at Bloomberg.
+Speaker 2: For reference, $375,000,000 budget. Production was $250,000,000. They recoup that immediately. 125,000,000 in global marketing apparently. And looks like a big financial win, but very much, you know, priced in.
+Like, you know, the base case here, the film will make a little bit over $1,000,000,000. The cash flow to Universal and Comcast who are the studio behind this. You're looking at $250,000,000 in pretax lifetime profit. That's point 2% of Comcast's market value. So it's not like this crazy thing for the corporate entity, but it is exciting for the film and it's exciting for Christopher Nolan who's in the journal today in the business and finance section because Nolan's The Odyssey shows directors are franchises now.
+They have an interesting statistic in here that 53% of Odyssey attendees said that the director was their number one reason for attending. Not the actor, not the fact that they loved the book they were waiting for the IP to get adapted. That it's a, you know, oh, they like Sword and Sandals, they were looking or that it was IMAX, they wanted a Nolan film. And that's, I mean, everyone knows this intuitively from talking to everyone. Everyone's like, I want to see the next Nolan film.
+But it's just interesting that that there has been this huge shift towards franchises built around particular intellectual property verticals, Marvel, Star Wars, Disney stuff, Pixar and whatnot. But now, people are saying, I'm I'm just going to ride with this director and whatever he does. And he can take me to the past, he can take me to the future. Wherever he goes, I'm riding with Nolan.
+Speaker 1: I had a funny run-in with Nolan. I was walking on the beach and Christopher Nolan was walking in front of me. Yeah. I'm not hitting any sound effects right now, to be clear. And he's walking with his dog.
+I don't know who he is or what he looks like. Someone else who I'm with says, that's Christopher Nolan. I said, who? And then and then it came to me. But then this dog ran up behind us.
+He was walking his dog. Another dog joins and is like really messing with his dog. And so I had to be like I just had to say, hey, man. It's not my dog because it seemed like dog was off You're
+Speaker 2: getting framed.
+Speaker 1: I was being framed for having a poorly trained dog that was harassing his dog. Yeah. But he he was pretty unbothered. Let's head over to this picture from He had the best seat in the house.
+Speaker 2: This is is this a real photo? Or do you think this is like take a photo and then put it in AI and say like make it even more distorted? Because this is what it looks like to be truly in the front row of an IMAX showing. People were really really crazy about like the IMAX looked way better. I think some folks on the team saw the film once, twice, three times.
+Who saw it in IMAX? Okay. We got some IMAX chats back I
+Speaker 1: haven't seen it yet. Mike's seen it twice.
+Speaker 2: Give us the review. You liked it? What what how many thumbs up out of 10? What do what do you got for me? Tyler, you can you can chime in too.
+What do you think?
+Speaker 1: It was fantastic.
+Speaker 2: It was fantastic.
+Speaker 1: Were taking notes the whole time? Like, did you have a notebook?
+Speaker 6: No. Mentally.
+Speaker 2: Mentally. Okay.
+Speaker 6: No. But it's great. It's an amazing accomplishment.
+Speaker 2: You're like, shoot the next movie in IMAX.
+Speaker 6: Dude, I mean, it's one of the best looking
+Speaker 2: Yeah.
+Speaker 6: Films I think ever. I mean, the quality is just like unmatched.
+Speaker 2: You did 70 millimeter
+Speaker 6: in IMAX. 70 millimeter IMAX.
+Speaker 2: There we go.
+Speaker 6: It's it's it's incredible.
+Speaker 2: Wow. It's incredible.
+Speaker 1: And and Right? How many times do you think you'll see it in theaters?
+Speaker 6: Well, mean, I'm already scheduled for four total.
+Speaker 2: Four total? Yes. That's crazy. We'll see.
+Speaker 6: Okay. See how that goes. I I was slumming it in normal theaters. I I don't wanna spoil it in case you haven't read it yet.
+Speaker 2: Okay. Thank you. You know.
+Speaker 6: Yeah. Just yeah. But I I think find
+Speaker 2: out if he gets home.
+Speaker 1: Yeah. Yeah. We'll see.
+Speaker 7: Yeah. Wait.
+Speaker 6: My take, I I posted it was missing some some hijinks and some gas. There there
+Speaker 2: are Okay.
+Speaker 6: Few scenes missing from the actual poem that I I would to see. Think it was
+Speaker 2: pretty Are there hijinks in the poem that you didn't that didn't make it in?
+Speaker 1: Yes. Uh-huh. Yeah.
+Speaker 6: That's what I'm saying.
+Speaker 2: It it was low on hijinks.
+Speaker 1: We should do an episode on IMAX.
+Speaker 2: Oh, yeah. We gotta film this show in IMAX.
+Speaker 1: That'd be awesome.
+Speaker 2: How would you rank it in the Nolan canon? Top five? Top two? What are we doing?
+Speaker 1: He's thinking.
+Speaker 6: I I thought it was I don't know. Thought it was fine. It's not top three for sure.
+Speaker 2: Not top three. What are you putting above it?
+Speaker 1: He's not going to beat the Dark Knight.
+Speaker 6: Yeah. Dark Knight
+Speaker 2: Dark Knight's better Inception. Tenet, obviously. Wait, Mike's coming back. I love Tenet.
+Speaker 6: I think it says a lot about the filmmaker. If if this film doesn't make his top three for something that says a lot about or top five just with like his filmography.
+Speaker 2: Top five right now. Top five Nolan films, go.
+Speaker 6: Inception, Dark Knight, Interstellar, Oppenheimer, Odyssey's got to be up there.
+Speaker 2: Okay. Odyssey's in the There top you go. Well, hopefully, Jordy can take a look at it.
+Speaker 1: Think wait till I can chime in
+Speaker 4: Yeah.
+Speaker 1: To solidify that Let top
+Speaker 2: me tell you about public. Investing for those who take it seriously. They got stocks, options, bonds, crypto, treasuries and more with great customer service. Yeah. The The Wall Street Journal has this article, The Odyssey Proves Hollywood Top Directors or Franchises Now.
+Every Hollywood studio wants its own Christopher Nolan. I'm interested to know, like, how locked in is he with Comcast, particularly? Like, Universal. Like, it it feels like it's this huge asset, but it's wildly different than, you know, when you're Disney and you just own Marvel and there's absolutely no key man risk. But it's clearly worked out very well.
+The Odyssey was written and directed by Christopher Nolan. It opened to an estimated 600 $264,000,000 worldwide domestically. Its 124,000,000 debut was the third biggest for any film this year. So it's not that huge. It didn't beat Toy Story five.
+It didn't beat Super Mario Galaxy. But it does feel like it'll have a longer run of people seeing it multiple times, paying more for IMAX. And it is just a breakout for an R rated historical movie. That's a niche that typically doesn't put up massive numbers like a Toy Story, for example. The opening was higher than many 2026 releases based on current more current intellectual properties.
+It smoked Star Wars, The Mandalorian and Grogu, smoked Supergirl, and it also beat Scream seven. Nolan's brand power and commercial track record got Comcast Universal Pictures to say yes to a roughly $250,000,000 r rated adaptation of an ancient Greek poem shot across Europe with largely practical visual effects including a 35 foot tall Trojan horse. According to data from Rendrack, 53% of the Odyssey attendees said the director was the number one reason for attending. It's not often you see that, said Universal President of Domestic Distribution. Chris Nolan has earned the audience's trust respect and that's completely true.
+Tenet had a very, very weak box office opening. Oppenheimer did quite well. Dunkirk did well. I recently rewatched Dunkirk. That's a great one.
+That needs to be up there in the top 20. They're all good. In the late two thousands and twenty ten, franchises dominated the movie industry. Studios hired directors who could pump out sequels, spin offs and remakes as efficiently as possible. Nolan was the most successful and prolific among a tiny number of filmmakers who still called their own shots along with the hugely successful Dark Knight trilogy.
+He made his original hit movies like Inception and Interstellar. But Marvel, Fast and the Furious and Transformers have all stumbled at the box office recently as audiences have grown tired of them. Gen Z in particular appears skeptical of the industry's reliance on aging brands and technology driven filmmaking. They're more drawn to stories told by an authentic recognizable filmmaker with a point of view, says the Wall Street Journal. Like Curry Barker, director of surprise horror blockbuster obsession.
+Though that film was one of the several new to the big screen director driven hits this year including project Hail Mary and Backrooms. In response, studios that used to obsess over franchise management are devoting more energy to signing the most promising filmmakers. So you can imagine a 10 movie deal. I think Curry Barker already has a multiple movie deal just on the back of Backrooms even though it's his first film because it was so successful. Studios are lost as far as knowing what works and what doesn't, said Byron Lord, CEO of CIA.
+Things have generally, generationally changed and individual singular voices are taking advantage. Warner Brothers gave Black Panther and Creed director Ryan Koogler an unusually generous deal to the rights to make his own original horror movie Sinners, which became a hit last year. Weapons director Zach Krieger is a helming an adaptation of the video game Resident Evil for Sony Pictures this fall and was part of a recent multimillion dollar deal Warner made for a new horror property. Barrie director Greta Gerwig used her clout to convince Netflix to make her adaptation of the Chronicles of Narnia. Interesting.
+They're rebooting that. Resident Evil has had a rough go. They've they've done a number of movies, but never really major breakout beyond the core fan base. Was there was there a movie that paired, we we were so close to getting another Bourbonheimer with The Odyssey. Was there another movie that people could go see at the same time for the double feature?
+They gotta do that. No. They kinda have. It was that Citizen one, Tyler, now? Just kidding.
+I don't know. It would have been good. It was it it it made it made the whole Oppenheimer weekend so much more enjoyable having like the contrast there. Nolan should have almost almost
+Speaker 6: Did you do the Barberheimr? Same day?
+Speaker 2: I don't think I did it same day. Wow. Same weekend
+Speaker 1: though. LARPing over here.
+Speaker 2: But it was fun. It was a good movie.
+Speaker 1: Netflix disclosed it has used generative AI in about 300 different productions this year already.
+Speaker 2: People are gonna love this.
+Speaker 1: They wrote, across the production lifecycle from concept and pre visualization through post and delivery, Gen AI utilization by our creative partners is scaling quickly. In 2026, Gen AI workflows have been used in roughly 300 of our titles with the largest concentration of work in post production. We are increasingly leveraging these tools to deliver higher quality output more quickly and at a lower cost than traditional methods.
+Speaker 2: Yeah. One of the clearest examples came from The American experiment, a docu series about the American revolution. Co CEO Ted Sarando said the series included seventeen minutes of AI enhanced footage that explained the scale of the project and that expanded the scale of the project and would not have been financially feasible using traditional production methods. The company insists that AI is not being introduced to replace writers, directors, actors, or other creative professionals. Instead, Netflix is positioning the technology as the next evolution of filmmaking software, allowing productions to create shots and sequences that would previously have been impossible or overly expensive.
+Very cool. I don't know. I think if used tastefully, it can be good. I saw the the designer behind Quarter, those quarterly earnings posters put together a number of Odyssey film posters. Oh, And immediately got community noted because he his his post was like, made I went and saw the movie and then I made these posters.
+And a bunch of people liked them. And and immediately got community noted, he used mid journey. And and he's just Alright.
+Speaker 1: Here's a question. Is this AI
+Speaker 2: Is this AI?
+Speaker 1: Honda Canada posted an ad for The Odyssey starring your son, your son's BFF, you, your daughter, Backseat Snacks, and your dog.
+Speaker 2: It's pretty good.
+Speaker 1: It's a good ad. Might be. Could be AI.
+Speaker 2: Could just be Photoshop. I mean, they just have a picture of
+Speaker 1: a Well, no. I I was like genuinely curious. Is this a did Honda actually post this? Like, you'd never know at this point.
+Speaker 2: Oh, yeah. Yeah. I think they did. I I think because it's Honda Canada, it's a more regional account that can be a little bit more No. They did.
+Wheeling.
+Speaker 1: They did. They did post I believe
+Speaker 2: that it's real. Plus, trunk fan, he knows when to flag things with real or or AI or fake.
+Speaker 1: They say the cast of characters that have been in the backseat of your family's odyssey could make a movie of their own. Yeah. Man, the last drive in in your Honda Odyssey was a motion picture.
+Speaker 2: The Honda Odyssey.
+Speaker 1: This is crazy Yeah. And disgusting and disappointing. Apparently, trial lawyers are lobbying against self driving cars because they're too safe. They need people to be killed and injured so that they have material for lawsuits. It says, so with thousands of lives annually in the balance, who is against autonomous vehicles?
+Trial lawyers. Remarkably, the trial lawyers saw the writing on the wall very early and have been lobbying against AVs for nearly a decade. The American Association for Justice, the trial lawyers lobby, has been a prominent opponent of AV legislation. It's crazy that on my drive to work, at least 80 of all billboards that I see are for personal
+Speaker 2: Big business. Big business. Yeah. The Morgan and Morgan founder is a billionaire off of it. I mean, he scaled that business.
+And I saw some viral clip of a guy who just does lead gen and makes 30,000,000 a year. Yeah. And doesn't actually he needs to be a lawyer to put up the ads, but doesn't fight the cases. Just finds the client finds the plaintiffs, vets them, and then passes along to another lawyer who actually will fight the case, get the settlement. And so there's a little bit of back and forth about this.
+It might have just been that they're lobbying to hold the automaker liable. So there's still someone to sue, and that might be a little less of a little less egregious. But it is if if if that's what delays the rollout of self driving cars, that would truly be disappointing. Nick Carter says my jaw dropped reading this. Who is the most opposed to self driving cars?
+Ambulance chasing lawyers who sue over car accidents. They are explicitly on the side of preventable death. Not not, not good. Oh, that's really, there's some really dark potential secondary effects. It fully rage baited Alex Tabarrok who wrote about it at Marginal Revolution.
+And we can talk about we can talk about it with Tyler Cowen in just a few minutes when he joins. There were people going back and forth over Brian Chesky. Was his account hacked? Was it not? There was a AI generated quote slop thread about crypto or something like that.
+Speaker 8: I think
+Speaker 6: it was about, yeah, real world assets.
+Speaker 2: Yeah. Real world assets. Which could be something that he gets excited about. It does feel like a little bit off topic right now in a world that is so AI dominated. No one really wants
+Speaker 9: to be
+Speaker 1: Like the the rumor
+Speaker 2: Yeah.
+Speaker 1: There's been reporting that he's in the midst of raising for a NeoLab Yeah. Focus on design. Why
+Speaker 2: would he be posting about that? And so he he told Fortune that his account was hacked and a lot of people weren't buying it. But Max Sparrow, the the king of slop detection, the slop janitor over at Pangram says, I keep seeing people skeptical that Brian Chesky's AI slop crypto thread was not written by him, but to me it seems like the most likely story. My guess is that the hackers were trying to warm up his account before dropping a pump and dump coin, but the actual scam post got flagged before it ever went live. And so that's sort of an interesting twist because people were saying like, well, he might have just decided to post it because he thought it was good content or whatever.
+He could get some some virality. And the fact that it didn't have an address or wasn't immediately like the obvious scam, that was evidence that it was in fact just him slopping it up on the timeline. But this this warm up thesis does seem more likely to me.
+Speaker 1: Yeah. And if you had access to Chesky's account, you probably would think like, okay, do the warm up post and then do something related to like real estate on chain that is monetized.
+Speaker 2: Yeah. You gotta bridge them. You can't just immediately be like, I'm giving everyone Bitcoin. Like, send me your address. Like, send me 1 Bitcoin.
+I'll send you back two. Like, yeah, like that people probably don't even fall for those scams anymore, hopefully. I don't People were going back and forth on this. Was a fun time on the Internet. What else is going on?
+The Jacobian conjecture was solved. Another math problem falls.
+Speaker 1: Hey, Buck. If if if this is surprising to you
+Speaker 2: If you needed this
+Speaker 1: that's you needed it explained
+Speaker 2: Yeah.
+Speaker 1: Or you're surprised that it fell, then you're telling on yourself.
+Speaker 2: Yeah. Yeah. You are telling on yourself. Like this from Benito Tarek Mansour. They just created a million Jacobian conjectures.
+You have no idea what's coming. But no, it's very exciting another math problem. Also, an interesting full circle moment because the mathematician who solved the Jacobian conjecture had been working on it, I believe, for like a decade. So he's an AI researcher at Anthropic now and he, you know, was able to use Fable to, you know, prove this math problem that he had been struggling with for a very long time. Was it him or was it his advisor?
+Like, he had worked on this for a while or been exposed to it at least.
+Speaker 6: Yeah. I think loose like, same area of math. Also, it he didn't prove it. He a counter example.
+Speaker 2: Yeah. So just example. Yeah. Okay. Well, for everyone who's like, oh, do I really need these data centers?
+Like, I don't like AI. Like, this should swing them. Like, put this on a billboard. Like, I got to send this to Sagar and Jetty and and let them know like, hey, this is this is this populism is gonna swing around on this now. I think Was
+Speaker 1: this conjecture on Sagerbet? I don't think it was.
+Speaker 2: We gotta get it on there.
+Speaker 1: Oh, he's kind of asleep at the wheel if he's if he wasn't trying to make a point.
+Speaker 2: Now he's in charge of this thing?
+Speaker 1: No. I mean, Sager Bet, he should have had a market
+Speaker 2: For for sure. For sure. This. For sure. Else is going on in the timeline right now?
+Five cups of coffee. You've got to be drinking five cups of coffee. This is the new meta. This is what everyone recommends. The Wall Street Journal has an article here.
+I've to pull it up. Where is it? WSJ, five cups of coffee. How many cups of coffee do you do per day? Do one cup of coffee, then I do two Yeromatics and three Diet Cokes, which I think is around five cups of coffee in terms of caffeine.
+Roughly. How much caffeine is in a cup of coffee?
+Speaker 1: I do a commenter on the way to the gym.
+Speaker 2: Oh, you drink caffeine before the gym. That's smart.
+Speaker 1: Oh, yeah. I have to. Yeah. I have to.
+Speaker 2: Oh, that's good.
+Speaker 1: Cometeer on the way to the gym. Okay. Regular coffee during breakfast. And then two of these.
+Speaker 2: Okay. And then you're done.
+Speaker 1: Then I'm done for the day.
+Speaker 2: Okay. Okay. Five cups of coffee a day is fine for most adults. The Heart Association says. Tyler, do you give me what's what's in a cup of coffee?
+Speaker 6: Around 95.
+Speaker 2: 95. So so putting up five hundred milligrams a day. So that's like two Celsius? Two? Maybe one and a half depending on which how strong it is.
+They're between two hundred and three hundred. Right? Celsius?
+Speaker 1: I think they're
+Speaker 5: I think they
+Speaker 2: get up
+Speaker 1: there. 200 is the max. I think No.
+Speaker 2: I think 200 is the min.
+Speaker 1: No. Yes. I thought I thought Yes. I thought
+Speaker 2: Base sales companies 200?
+Speaker 1: Yeah. So beverage companies starts again.
+Speaker 2: Performance edition and it goes up to 300 because they have a bigger can. Celsius max.
+Speaker 6: And they have Yeah. Celsius heat which is 300.
+Speaker 1: Heat? Oh, yeah.
+Speaker 2: Is it spicy?
+Speaker 6: Who's to say?
+Speaker 2: You're to spice up your mind. Anyway, research has been mixed but association says evidence of coffee's safety and even benefits has been growing over time. This is from the Wall Street Journal. This is important for everyone listening. There's good news for coffee drinkers.
+Good news for coffee drinkers. Up to five cups of the brew a day are safe for more for most adults and may even have benefits for heart health. That is crazy to hear. It always seemed like it would be a Faustian bargain at the very least. Like, you know, worth it in the short term, but at some point it's gonna come back to bite you, but not in this case.
+Speaker 6: I mean, like famously Voltaire would drink like 40 cups of cups coffee a day.
+Speaker 2: No. Voltaire? Yeah. I don't even know this stuff.
+Speaker 1: That's course.
+Speaker 6: Yeah. Yeah. So, I mean Yeah. He did pretty well, I would say.
+Speaker 2: If you learned that Voltaire drank 40 cups of coffee a day from Tyler right now, you're telling on yourself. You're definitely telling on yourself. Well, let me tell you about Railway. Railway is the all in one intelligent cloud provider. Use your favorite agent to deploy web apps, servers, databases, and more while Railway automatically takes care of scaling, monitoring, and security.
+And without further ado, our first guest of the show is in the waiting room. We have Tyler Cowen, the American Economist, to talk to us about all things. How are you doing, Tyler? Good to see you again.
+Speaker 5: Hello. How are you? I don't drink coffee.
+Speaker 2: I was about to ask I have to ask every guest Are you gonna start?
+Speaker 1: Are you gonna start?
+Speaker 5: I've only had coffee twice in my life, both times in rural Ethiopia in a coffee ceremony. And it was amazing. But I thought this is the peak. I can't beat this.
+Speaker 2: Is that because you'd become too powerful or do you see it as a Faustian bargain?
+Speaker 5: I see people getting addicted to it and if they can't get their morning coffee, they have headaches. Yeah. I don't want to be there.
+Speaker 2: Yeah. It it does supply chain.
+Speaker 1: How often are you somewhere where you you can't possibly get a coffee in the morning?
+Speaker 5: I don't know. It can't, but you have to go out and get it or go to some effort or you're in a hotel room and you make a crummy coffee there
+Speaker 2: That's right.
+Speaker 5: And then you don't really enjoy it. It's just simpler not to have that addiction, I think.
+Speaker 2: What's very interesting is that coffee caffeine pills are incredibly economically efficient. It's like 1¢ for the equivalent of a cup of coffee if you buy them in bulk and yet absolutely zero adoption. People love a cup of coffee even if it's a couple bucks. It's like a simple pleasure, it's a joy. People just can't stop paying for them.
+Speaker 1: Do you do anything in the morning? Any type of ritual that you feel like you have to do to be yourself?
+Speaker 2: He's like Celsius.
+Speaker 5: No. I get high from mineral water but if I don't have it, I'm fine. I'm not craving it.
+Speaker 2: Addicted. Okay. Okay. Well Okay. Let's talk about artificial intelligence.
+How are you thinking about the latest debate around Kimi K three open source AI? Where should we begin the discussion? And then I'm sure we can narrow down a bunch of different ways.
+Speaker 5: Open source and is coming and is here whether we like it or not. Of course, a lot of it will be from China. We should allow American competitors to proceed on an even footing. But, basically, the attempt to outlaw it or ban it or use sanctions against it is going to fail miserably. Like what about multinationals?
+What about companies whose affiliates use open source? What about all the major US companies that use open source Chinese products right now? I hope, I plead that the Trump administration gives up on this crusade. Sure. It cannot work.
+Speaker 2: Okay. So I want to push back on on it cannot be banned because I at first blush, agree with you. Like, it is software. It is something that can just be downloaded. You can download the weights and just have it.
+Anything that that that's that's replicable infinitely should just proliferate across the world very quickly. But the fact that you need an NVL 72, you need a whole server rack, you need equipment and infrastructure that acts as a point of leverage. I'm not saying that we should ban it. I'm just saying if you put me in charge of banning it, I think I would have an easier time banning open source AI than banning music distribution, for example.
+Speaker 5: What will you do when it's on device? How long is that from now? True. Why go down the path at all?
+Speaker 2: Yeah. Yeah. Yeah. Yeah. Yeah.
+That yeah. That's a good point.
+Speaker 1: Yeah. What what what lessons are there from the automotive industry for this moment? Just just given, you know, the the use of of tariffs and how that those have worked and haven't worked. Mhmm. And we were talking, you know, earlier about how Europe's approached the problem.
+You see BYDs all over Europe now. But at the same time, many of the manufacturers have been hurt most by just losing the Chinese market. Right? Or not losing it but having declining sales there because of local alternatives.
+Speaker 5: I think if Europe starts a major trade war with China, Europe will lose. This is a sad reflection on Europe, and it's a sad reflection on Europe that they can't just say, oh, we'll make fewer cars. We'll do five or six other great things that we're readily positioned to shift into, they're not really there. But simply putting up big tariffs isn't going to help them get there. It actually will postpone it.
+And those tariffs over time end up applying to the inputs for your other sectors and it makes them less competitive. So Europe's really in a pickle. There's no good way out, but I don't favor the tariffs either.
+Speaker 2: How do you think about the open source models in in terms of like the broader AI stack? Like are is it important that America have some position in energy, data centers, chip manufacturing, networking? There's this whole stack. And I've been surprised that we've been building as many data centers as we have in The United States given all the pushback. That feels like something that could have gone to at least other Western nations, energy rich countries, but that's been fairly centralized.
+But there's clearly it feels like there's a potential slippery slope for, oh, well, if China's handling the open source models, then maybe they should have the data centers. Maybe they should also do the power generation over there. It's dirty. We don't like having data centers here. Put them over there.
+And then at some point, it feels like you could lose leverage and but I don't know how risky that actually is.
+Speaker 5: I live right next to all the data centers in Northern Virginia. It's great. They pay for half of the taxes of their county. The energy, the INB, all that, I'm completely for it. The chips, bring it on.
+Mhmm. But at the end of the day, people are afraid that the American models can be yanked from them.
+Speaker 2: Sure.
+Speaker 5: That's partly our fault.
+Speaker 2: Yeah.
+Speaker 5: And if there's open source as something in the background, people are more willing to lock into our systems to a partial extent. So the two are complements in fact. And again, there's all these major American companies that don't typically advertise it, but they use a lot of Chinese open source right now.
+Speaker 2: Yeah.
+Speaker 5: You're just gonna pull that out of their guts?
+Speaker 2: Yeah. Yeah. I mean both enterprises actually deploying these models for cost savings and also I mean we saw with Thinking Machines, they they use the Chinese open source model to bootstrap a step in the process of building their latest product. And so it's a whole supply chain. Where do you think the data center pushback comes from?
+If you are there and have a positive experience, it's polling very poorly. Is it all fear around job displacement? Is it anything particularly on the ground? Like, where where did this come from?
+Speaker 5: I think right now, people are just negative about many many things. Mhmm. They're negative about their country. They're negative about social institutions except the military. They're very low levels of trust.
+They were told during COVID times, during the great financial crisis, everything's okay when it was not. So you can't completely blame them. But look, as you know, this country has 50 states, and if Mark Zuckerberg needs to pick up the phone and call the governor of Louisiana Mhmm. Thank goodness that can work here. And I think we're going to do it.
+Speaker 2: What is it about this we're in this like counterintuitive vibe session moment. Kahlil Lalji Tarek sort of written about it, coined the phrase, this idea that when you pull people on how are your neighbors doing economically or financially, people say, they're doing fine but I'm doing terribly or The economy will grow. The job market will be stable, but people will report the consumer confidence is very low. I'm wondering if you've reflected on that more generally, then I do have a follow-up question. But what is the state of the vibe session?
+Is it just continual? Is it permanent? Is it getting worse?
+Speaker 5: I call it negative emotional contagion. Mhmm. And you see it in many other eras of world history. Mhmm. It feeds on itself.
+I'm not sure we know what starts it. Maybe it is some negative events. But once it gets going, it's hard to reverse. Sometimes you need actually a war or some kind of catastrophe. I hope we do not.
+But if you look at wealth accumulation, the job market, stock prices, real wages, many other indices, they're doing like okay to find. They're just not doing terribly.
+Speaker 2: Yeah. No. No. I completely agree. And so I had this idea.
+I don't know if you'll agree, but maybe the fact that we're in this vibe session and the vibes are so bad and there's so much negative emotion around the economy that if we actually were to go through a brief recession or a market correction, we might be a more resilient country sort of ironically because of that because everyone would look around and be like, Well, I already thought it was bad. It got a little worse but I'm ready to reinvest. Maybe this is what I've been waiting for. Finally, I'm justified in thinking things are bad and so I can get out of this and do whatever is necessary because I am there's no longer a cognitive dissonance between the what the market is doing and how I feel.
+Speaker 5: One hopes. Yes, it could be a bullish signal. But then again, if something terrible does happen, everyone says I told you so and maybe we get stuck in the mire.
+Speaker 2: Yeah. Jordy?
+Speaker 1: About a year ago, you had a blog post, if I remember correctly, one of many of course, that was something to the effect of like AI is real and it's amazing, but the economy is still gonna just sort of generally continue growing as it's grown, maybe a little bit faster, hopefully. Are you seeing anything that could update your world view on that? Because so far I feel like you've been pretty vindicated.
+Speaker 2: Deserve a victory lap?
+Speaker 5: Well I'm seeing a lot of confirmation. There's so many people they will say to me or say in chat groups or on Twitter, My goodness, if we had Fable five, I would have thought the world would be totally different and it's not. And that's my view. But look, you go back to 1995 through 1998, we got half a percentage point of extra growth out of those advances. They to me seem less impressive than AI.
+So I think over time, with some slowness, we'll get that and maybe a bit more, which is great.
+Speaker 2: Interesting. Have you seen The Odyssey?
+Speaker 5: I have seen The Odyssey.
+Speaker 2: Can you give us your review?
+Speaker 5: Well, look, compared to other movies, it's fantastic and it's dreamy and it's impressive. But mostly, I was disappointed. I thought the dialogue was lame. The casting I don't mind the cross ethnic casting at all. I just didn't think they were the right people.
+Matt Damon is not Odysseus. He's just not impressive enough physically. The woman who played Kahlilso just seemed like a suburban housewife. I love Zendaya, but she didn't have any real role. Mhmm.
+So they screwed up many things. It didn't quite cohere. I'm very glad I saw it. Everyone should see it. It's worth the three hours.
+But relative to expectations, I suppose a disappointment.
+Speaker 2: Do you think it's do you think classicists are satisfied with it? Do you think it's good for the field?
+Speaker 5: They're delighted to have any attention at all. And the different translations of the Odyssey are now on the bestseller lists. So what's their alternative? Right? They shouldn't complain too loudly.
+Speaker 1: Do you think technology is making soccer worse?
+Speaker 5: I don't watch soccer, but I think technology in some ways has made basketball worse, and I wouldn't be surprised if the same were true of soccer, that it homogenizes things and everyone chases after the same targets, the same players. Teams have less individual style. But two soccer, I cannot speak.
+Speaker 2: Fair. What about AI maniacs? Take me through what defines an AI maniac, why it's important, and I have some pushback and follow-up questions.
+Speaker 5: I spoke to two teenagers this morning. One was 13, one is 17. Abu Dhabi, Finland, they're AI maniacs. They spend their spare time mastering AI. They know way more than their so called teachers.
+They're starting companies or building models. They realize this is the future. You're going to have a large number of companies with quite a very small number of employees but pretty high revenue. And I think AI maniacs will compete in medicine, law, business consulting, banking wherever it is we let them compete. So this to me is the future.
+Like if you're asking, will The UK recover? I would rephrase it. Is The UK going to encourage its AI maniacs? How can
+Speaker 2: they encourage these AI maniacs? It feels like AI naturally lowers the barrier to entrepreneurship and so there's not much encouragement that's necessary. I mean, as long as the models are available and affordable for young people, they will do things with them.
+Speaker 5: Young people should be allowed to rise to positions of authority. They should be respected. Shouldn't be looked down upon. They should have the chance to buy a computer, get grants. It's not automatic.
+So you look at The United States, we do great on all these metrics. Estonia is a country that does pretty well on these metrics. A lot of parts of the world are too small c conservative. And we'll see where different countries are going to fall on this spectrum. But they're not all going to do it automatically, just like not all countries have made great rock and roll.
+So the technology is pretty straightforward.
+Speaker 2: Yeah. Yeah. Estonia is famous for major government investing in in high speed bandwidth. Is that correct? Is that the is that the rough Yes.
+Story of Estonia?
+Speaker 5: Yes.
+Speaker 2: But I'm interested in what that would look like for AI in America or The UK. Like, it feels like many of the models or application layer companies, they have sort of a free tier that gets someone potentially from zero to close to AI maniac and then at some point they can go and find a customer to help pay for their compute bills. But is there more the government should be doing?
+Speaker 5: But as you know, with venture capital there's a valley of death. Sure. I don't know that the government should be making grants to 16 year olds, but someone should. Yeah. I'm doing it.
+Yeah. Other people should as well. So this is really the province of youth. Yeah. There's nowhere you can go to learn this stuff other than say some of the major AI centers and companies.
+So you've got to teach yourself and is there the support in your environment for that? We will see.
+Speaker 2: Give us an update on how you're thinking about grants. Are you going younger, smaller, different partners? I mean, there's been some folks who have been able to do compute grants and then they sort of cap sort of the the dollars go further because of the implicit margin.
+Speaker 5: With AI maniacs, I'm going younger and weirder. And I've also noticed Europe is doing pretty well on the AI maniacs metric.
+Speaker 2: Okay.
+Speaker 5: We'll see how it develops as the costs rise.
+Speaker 2: Yeah.
+Speaker 5: But I've been pleasantly surprised and I'm now more optimistic about Europe than I was six months ago.
+Speaker 2: Mhmm. How does that like where did that come from? That feels like a come from behind story for Europe. I feel like the for the longest Mansour, time,
+Speaker 1: the the brightest technologists in Europe have gone to America to start their companies. The the Kahlil Lalji
+Speaker 2: famous example. There's many others with the exception of like the Swedes and Spotify, I suppose. But in general, it feels like many people have come. Are they staying more frequently? Like what's happening?
+Well, these
+Speaker 5: kids may yet go to America. They're too young to be going now. Maybe it's that you know, chatbots didn't interest the Europeans that much. They seem to, like, compete with culture.
+Speaker 2: Yeah.
+Speaker 5: Agents are a chance to do something. Now American kids have had opportunities to do things for a long time. But for the European kids, this is something new. So I think at the margin, you'll see more extra activity there. And a lot of new companies from quite young people coming out of all of Europe, including Eastern Europe.
+Speaker 2: Do you think young people are better at avoiding the fake work trap that happens with some AI users? You know, the person that just builds an automated workflow to, you know, check, summarize every meeting and then they never look at the notes and it's just endless token consumption in service of creating the ultimate second brain that they never actually refer to. And it's ultimately a lot of make work but it feels very productive, of tool shaped shaped objects formulation.
+Speaker 5: I think the young people are more playful with it. They take more chances.
+Speaker 2: Mhmm.
+Speaker 5: In the aggregate, they might even do worse. But in terms of coming up with the new things that really matter, I think they're going to win.
+Speaker 2: Mhmm. What do you think about the the risk of of the one shotting from AI? People that go so deep in it, they lose they lose their grip on reality.
+Speaker 5: It happens with everything, you know. When I was a kid, people one shotted on baseball. Can you imagine that? Or like drugs.
+Speaker 2: Yeah.
+Speaker 5: AI is one of the better things to be one shotted from, I would say.
+Speaker 2: No. I I was laughing about it. I know some guys who've been basically one shotted by golf. And they Yeah. And all day that.
+Every day. They're like reading about golf, studying golf, trying to improve their golf game and it's the same thing as AI. Yeah.
+Speaker 1: What if a billionaire came to you and said, Tyler, it seems that my type is very unpopular right now. What should we do to to try to shift public opinion? Right now, there's a I think a $80,000,000 campaign being spent to block the the billionaire tax here in California. But it seems like there are other things more broadly that that billionaires could do to shift public perception. But what do you think?
+Speaker 5: I would say don't apologize and keep on going. I hope the billionaire tax fails, it will wreck California. If it passes, it's already harmed California. Even a lot of the Democratic Party politicians don't support it. I think again there's just this negative sentiment about many, many things, including billionaires.
+You might say some of them deserve it fine, like with all humans. But at the end of the day I'm reminded of the old saying from Jonathan Swift, and he said, censure is the tax a man pays to the public for the privilege of being eminent. If you succeed, people will hate you. But But you saw this, you know, wasn't Malcolm Gladwell, Steve Levitt, Paul Krugman, whoever did well got hated.
+Speaker 2: Oh yeah, that's right.
+Speaker 1: At the same time, would building some massive, you know, parks and or, you know, any any type of of public work
+Speaker 2: Yes.
+Speaker 1: I I be be worthwhile.
+Speaker 2: The interesting question is, is there is there some sort of, like
+Speaker 1: Like
+Speaker 2: greater a leverage from having, like, the library that you walk by versus like 1% lower levels of malaria that's like this abstract thing that you don't see? Like there's something about building like a monument as a wealthy person as opposed to having an abstract diffuse impact on humanity. Even if the reduction
+Speaker 1: Maybe the modern version of a park is just like owning an NFL team.
+Speaker 2: It doesn't really feel the same
+Speaker 5: Obama just built a monument. True. Does anyone love him for it? Now, I'm all for today's billionaires doing more to support art, music, libraries, whatever we all might come up with. But I don't think it's gonna make them loved.
+Speaker 2: Yeah. Yeah. Maybe not. What about religion and AI? There were Anthony Lewandowski was working on an AI religion way before it was cool.
+I think 2017 he was thinking about this. Where do it feels like we're maybe behind the curve on a true AI based religion. It feels like based on the capabilities of the models, you could have something happening. There's little pockets of people that are obsessed with certain models, but I haven't seen anything formally being built out. Where do you think that goes?
+Speaker 5: I think it'll be more like sects than new religions. Mhmm. So you could write your own version of Hindu sacred books or your own version of Shiite Islam with your own slate of who the true imams are or should be. And we're just going to see proliferation. Like for a while in history we had a proliferation of different versions of the LDS Church, different kinds of Mormons.
+Some are still around. And using an agent you'll be able to whip up your own religion, I don't know, in less than a day with rituals, sacred books, practices. Most won't catch on, but a few will, they'll have a few 100, a few thousand adherents. That may sound trivial, but if, you know, half of 1% of the population does this, and some of these get some number of adherents, over time the whole religious landscape looks quite different. I think it will be more diverse and feel weirder and be less centralized in religious authorities.
+Speaker 2: Mhmm. Where do you think the Amish will be in two hundred years? I saw someone try and use one of these AI models to project out project out the human population in 2200 and the prediction came back as like America will be 34% Amish. And I think it was just extrapolating linear trends of their birth rates versus everyone else. But it feels like the idea of the Amish lifestyle is actually becoming in vogue in almost popular culture with don't use screens as much, try and put limit your Instagram usage, you need to log off and touch grass.
+All of these memes are sort of the potential gateway drug to the Amish lifestyle.
+Speaker 5: I visited the Amish many times. I admire what they've done, but it's possible because the surrounding society cross subsidizes them. Oh. So you can't have a third of America being Amish. Mhmm.
+And I think they keep people in the fold because it is pretty small and tightly knit, and were there, say three or 4,000,000 Amish, which we're very far from, the rate of leaving would be much higher. So I think it's bounded on the upside. But I'm glad they're there. They've done a great job. Their communities are quite interesting and pretty prosperous.
+Mhmm. They have a lot of kids. Good for them.
+Speaker 2: Do you agree with Jeremy Gaffan that people are constantly looking for a priestly class and in recent years it's moved from the billionaire class to the online poster?
+Speaker 5: I don't know. Maybe online posters peaked five or ten years ago and now there's a lot more video and just the AI itself competes against the online posters.
+Speaker 1: Sure.
+Speaker 5: I liked his dialogue on that topic, but I don't exactly agree with what he said.
+Speaker 2: Sure. Sure. I I'm interested to know what level of entrepreneurship you think is is reachable? Can can every young person become an entrepreneur? Or are there some people who are more interested in just finding a stable job and then they need to figure out how to navigate changing jobs in the future?
+Speaker 5: Most people cannot become entrepreneurs. They're not ambitious. They should not be ambitious. You could argue the numbers, but it's a small percentage, and other people want to work for them. Mhmm.
+So people like working in large institutions. Large institutions pay better. It's lower risk. I don't think that feature of the world's going to change.
+Speaker 2: So advice for someone who's in an organization, they're seeing things change because of artificial intelligence. Maybe they're not set up to be an AI maniac, go out and start a company, but should they be trying to find a role that is messier in their organization?
+Speaker 5: Absolutely. Follow AI. Learn how to work with the leading models. It's a big time investment because everything changes so quickly as you know. Yeah.
+But if you don't, you're left behind. And for all this talk of the leisure dividend from AI, right now we're still in a setting where most people have to work some amount harder. Yeah. That will change. But it's not about to change.
+Time to work. Get to work. Do you do do. Doesn't it exhaust you how many new and different things happen in the world of AI? You've got to stay on top of them.
+Speaker 2: Yeah. Yeah. It is a lot.
+Speaker 5: AI leisure dividend?
+Speaker 2: Yeah. Yeah. Exactly. But at the same time, I don't know. Learning learning about AI, I see as different as actually learning AI.
+Are a lot of there are a lot of facts around the there there are there are six AI tigers in China and like, I just need to memorize what those six companies are, their histories if I wanna understand
+Speaker 1: Yeah. You can follow it like a sport and not learn really anything at all about how Yeah. What the models are
+Speaker 2: But that's different than using the models, the models are so good. It it feels like it's it's less of a learning curve and more of just the volition to just go and do it because even when someone says, oh, well, I haven't tried the latest coding models. And I'm like, oh, well, can do a lot more. Like, at the very basic, like, if you wanted to ask ChatGPT for one image, you can now ask Codex for a 100 images and it can just go and do it in a for loop and it can write a little code for you and do whatever it needs to to get you your answer that's more robust and hydrated. But also you can just ask ChatGPT how do I do that and it will tell you how to do it.
+And so the learning curve, this is Joe Weisenthal opinion, but he he says that like there there is no learning curve because the AI is good at teaching you how to use it. But there is something there where you talk to people all the time. They're like, I haven't tried AI yet. I got to check that out.
+Speaker 5: It can tell you what to do, but if you're always chasing it, waiting for it to tell you what to do, you're not on top of
+Speaker 8: it. Yeah.
+Speaker 5: It's not really the way to excel in the area. So I think you do have to stay on top of both like the baseball team side of it and the how do you do this side of it. Again, it's hard.
+Speaker 1: How big can gambling get?
+Speaker 2: Oh.
+Speaker 5: It's already too big. I don't know how we pull it back in. It's a problem. Now people must enjoy it, the people who don't wreck their lives with it, or it wouldn't be that addictive. But it is fairly addictive for many people I don't The see how we turn the clock
+Speaker 1: thing that's telling is even people that lose a lot of money gambling, I've noticed that they don't hate their bookie or the app that they use Yeah. They seem to have like, you know, maybe maybe it's like a toxic relationship. Right? Where where No.
+Speaker 2: No. A lot of times people will hate like the player that missed the field goal. They will be cyberbullying the particular athlete that lost them the money and they won't be
+Speaker 1: manager at DraftKings or whatever.
+Speaker 2: Yeah. I mean, isn't But
+Speaker 1: how would what like, you know, if you have a big red button that the ban, you know, sports betting or or gambling, do you do you hit the button? Like what what would be your practical solution for reining it in?
+Speaker 5: I wouldn't hit the button. Banning it would not rein it in. We know that already. You hope norms change. It's a bad thing to be one shotted by.
+That said, I'd like to see a cost benefit analysis, all the people who enjoy it and add them up and see how that compares to the cost. No one wants to do that for obvious reasons. Just say no.
+Speaker 1: Yeah. But it's but but but right now
+Speaker 5: The Amish don't do it.
+Speaker 1: I guess I guess I I was watching the the latest UFC event and almost every single ad is a gambling ad. Certainly, reining in advertising for gambling would probably
+Speaker 2: We have a playbook from the tobacco
+Speaker 1: Yeah. And I think it's in like Can restrict yeah.
+Speaker 2: Advertising. You can You can add taxes on a state and local level as well as federal taxes, and you can sort of try and internalize the negative externality.
+Speaker 1: Yeah. There was that law that said you could only write off like 90% of your losses, which which for you know, which is really bad Yeah. If you're, you know, a sports book or
+Speaker 2: The problem is is that I I don't think the the impact of gambling, the negative impact has been fully quantified in sort of a sound bite yet. Like, with cigarettes, it's like cigarettes kill millions of people every year. Fifty percent of smokers who smoke a pack a day will die from cigarettes or a cigarette related illness. There isn't that for the gambling industry. It's just like a lot of people lose money, you technically lose money when you go see The Odyssey.
+You just get the enjoyment of a three hour film. You lost money and people get the entertainment of gambling and so that that that's the same trait. It it doesn't hit as hard as like you will die if you smoke cigarettes.
+Speaker 5: Tyler? I think the campaign against smoking worked because people like me hated it when someone next to them would light up or on a plane or in the movie theater. If someone Wait. The Really? Airplane.
+I don't care.
+Speaker 2: No. You used to yeah yeah. On a commercial if you're on old commercial planes, they would have a cigarette an ashtray in the armrest.
+Speaker 5: I suffered under that for years.
+Speaker 2: Yeah.
+Speaker 5: You you try to not sit next to the smoking section. Yeah. But again, there's like a a no gambling section on the airplane, it's ridiculous. Yeah. The guy next to me could be gambling on his phone.
+Speaker 2: Yeah. You wouldn't even know.
+Speaker 5: Yeah. Exactly. Yeah. Let it be.
+Speaker 2: Yeah. Yeah.
+Speaker 1: That is shocking to me.
+Speaker 2: I like that you just learned that. When did when did Smoking on Planes end? Eighties? I feel like it was Yeah.
+Speaker 1: Before I was probably.
+Speaker 2: Maybe like early nineties at the very very latest.
+Speaker 5: Yeah. I I recall celebrating, but I don't know celebrating.
+Speaker 2: Yeah. Anyway, what what what have you been reading into the jobs numbers that have been coming out? Like, the overall unemployment rate seems to be holding steady. It seems like it's buoyed by healthcare Yes.
+Speaker 1: Smoking was banned in 1988 on domestic flights lasting two hours or less. Okay.
+Speaker 9: They were
+Speaker 1: saying you can go two hours without a smoke. Okay. Yeah. We know you can. And then eventually they expanded it.
+Flights in 1990.
+Speaker 2: Yeah. 1990. There you go. Jobs, data, hiring, it feels like there's sort of stagnation everywhere except health care, which is sort of the messy job thesis playing out. But what else is going on in the hiring market that you've noticed from the last couple releases?
+Speaker 5: Well, the unemployment rate for eighteen to twenty four year olds, it's back to where it was before we had good large language models. So AI is not destroying that market. It seems we're not going to have a recession anytime soon. That's good news. Labor market has slowed down quite a bit, but that's to be expected.
+And some of the reports sound less impressive because we have fewer immigrants. But overall, I've been pretty happy the economy hasn't crashed. It's kept on going. Great.
+Speaker 2: Yeah. No. That makes sense. Then what are you attributing the, like, the vibes around, like, young people entering the workforce? Everyone says it's so bad.
+Is that just the really cushy tech jobs are sort of a little bit belt tightening there? They're not hiring as much and so there aren't as many of these like really nice laptop jobs or what do you think is going on there?
+Speaker 5: I think there are big sectoral shifts going on and the new jobs being created, people who think of themselves as educated and high class may not want Sure. Or may not even be good at and they complain and they're vocal and they have the ear of the media. It is a problem. I wouldn't deny that. But in the aggregate, a lot of other people are doing better.
+Speaker 2: Yeah.
+Speaker 5: And the AI maniacs are about to take a huge leap upwards. Yep. And there'll be this massive reallocation of status. Yeah. It'll be very hard for our politics to handle that.
+Speaker 2: Yeah. I saw oh, that's interesting. Well, well. Yeah. I saw some stats around like new grad computer scientists from Stanford not getting as many job placements.
+And Tyler on our team was saying like, that's a skill issue. If you're if you're a Stanford graduate with a computer science degree, like, you can get a job or you can start a company. You can do something, but you might need to think a little bit differently because the track might be slightly different. But I don't know if you agree with that or not.
+Speaker 5: I agree with that.
+Speaker 2: Yeah. And it also just feels like the the one of my latest, like, thesis is that a lot of these CEOs who are doing, like, AI based layoffs, the optics are just terrible. And if they actually have a good business, they should be going on the offensive. We we we love that Matthew Prince hired, I think, like a thousand interns or something like And it feels like young people who understand AI coming into an organization that has some sort of moat, some sort of durability, some business, like the leverage is just going up. So you should be hiring more instead of doing layoffs if you actually understand what's at stake and how big your business can be.
+But if you just went through a hiring glut, maybe you do need to sort of retool.
+Speaker 5: The AI companies themselves are hiring plenty, as you know, Yeah.
+Speaker 2: Yeah. Totally.
+Speaker 1: Can you recall a point throughout history where the majority of people, let's say their their sense of like self worth and identity was not tied to their employment or their job. Because that's Well, we a big think we're
+Speaker 5: all separate issue, but obviously that's a major qualifier.
+Speaker 2: Sure.
+Speaker 9: Medieval?
+Speaker 2: Medieval times? I think we lost him.
+Speaker 1: His internet went back
+Speaker 2: To 1988.
+Speaker 5: Growing food. Different way from how things work now.
+Speaker 2: Yeah. Well, thank you so much for taking the time to come chat with us. It's always a pleasure to go all around the world
+Speaker 1: It's an honor.
+Speaker 2: Topics. Have a fantastic week and a fantastic Catch you
+Speaker 5: all next time. And like I said, work harder.
+Speaker 1: Yes. When you're next time you're in California Yeah.
+Speaker 2: Come to
+Speaker 1: see three of us, a cup of Joe. We will try to we will try to create an experience.
+Speaker 2: Third cup of coffee in history?
+Speaker 1: That would be Do a four hour show. Incredible.
+Speaker 2: The wired See Tyler you can get me to do it. Let's see. We'll peer
+Speaker 1: I'll try very hard.
+Speaker 2: I don't think it'll work. Thank you so much Tyler.
+Speaker 1: Cheers. Bye. Bye.
+Speaker 2: Have a good rest of your day. Let me tell you about CrowdStrike. Your business is AI, their business is securing it. CrowdStrike secures AI and stops breaches. We have a picture here of the smoking section on a plane if we wanna pull up, but we also have our next guest.
+We have Danny Yeung.
+Speaker 1: That is absolutely insane.
+Speaker 2: This is like blowing Jordy's mind. Biggest update to a world model. Let's bring in Danny. He's the co founding partner and CEO. What's going How are you doing?
+We got questions for Thanks for
+Speaker 7: having me on.
+Speaker 2: We we before we even get to introductions, how many cups of coffee a day do you drink?
+Speaker 7: I only drink I m eight.
+Speaker 2: What? Oh, wow. Oh, yes. Of course.
+Speaker 9: Oh, wow. Oil.
+Speaker 2: There we go.
+Speaker 1: But do you guys have caffeine in the product?
+Speaker 7: There's no caffeine in the product. Zero caffeine.
+Speaker 1: Oh, okay. So so you're
+Speaker 2: just Two for two.
+Speaker 1: Zero caffeine. Going through life. Yes. No caffeine.
+Speaker 2: Tyler Cowen doesn't do coffee either. Yeah. Maybe maybe there's a secret second tier. There was a new study in the Wall Street Journal that said up to five cups of coffee a day is okay. People These are celebrating if they've already been fully addicted.
+But anyway, enough of that. Introduce yourself and the company, please.
+Speaker 7: Sure. My name is Danny Yeung, CEO of Kinetics and iMATE. You know, we started the brand iMATE about nineteen months ago, and now we're the fastest growing supplement brand ever recorded in the industry. Of course, you may know David Beckham. Yeah.
+Yeah, no introduction. Yeah. I co founded iMATE with him nineteen months ago, it's been a crazy journey ever since. We hit a 100,000,000 ARR within eleven months. We hit 200,000,000 ARR within eighteen months.
+Speaker 1: There we go. What stopped you from hitting a 100 within, let's say, six months?
+Speaker 2: That's hilarious, but actually a good question. Wait, wait, yeah. What was the constraint? Was it Yeah.
+Speaker 1: What was the constraint?
+Speaker 2: Supply chain?
+Speaker 1: Was it distribution? Products or figuring out Yeah. Advertising?
+Speaker 7: No. It's just you have to scale, right? And then you can't scale so fast even in eleven months, you know, we're the fastest ever, right? Typically at a 100,000,000 for supplement brands.
+Speaker 2: Yeah.
+Speaker 7: On average, it takes roughly three to five years to hit a 100,000,000. So for us to being able to do it in eleven months is, you know, quite amazing.
+Speaker 1: What what would do? You do you remember what you were modeling for, like, where where you wanted to be after the first, let's say, twelve months?
+Speaker 7: Yes. And the model was very different than reality, right? So I think our first model, full year revenue was approximately 30,000,000 USD, that was already quite high for a new brand out of the gate this very competitive category, right? So our first full year revenue, we ended up doing 60,000,000.
+Speaker 9: Oh, wow.
+Speaker 7: This year, we'll do well over 200,000,000 in our second year of full operations.
+Speaker 1: Wow. Okay. So what like, David Beckham, I think of him as a very, like, global star. Did you as part of the growth, did you guys go global early? What did that strategy look like compared to, let's say, a traditional, like, US economy?
+Speaker 7: 100%. Traditional DCZ company in The US, you're probably way to go global two, three, four, five years out, right? For us, day one global day one meant 31 countries shipping. So we did that from day one last year, and then so US is our number one market, Canada number two, UK number three, Australia number four, Singapore number five. Now we ship to 43 countries.
+We're delivering 200,000 servings daily. Now delivered 52,000,000 servings in the last nineteen months.
+Speaker 1: Wow. Talk about the latest round. You raised a billion dollars, but what does that look like? Who participated? All that stuff.
+Speaker 7: Sure. So not many people know. IMA is actually part of a public listed company, Prenetics, listed on the NASDAQ under the stock ticker PRE. And then so with that, again, the brand's so new, we've gotten a $1,000,000,000 growth commitment from
+Speaker 2: Thank you. Congratulations.
+Speaker 3: You Thank said you.
+Speaker 1: Growth commitment from?
+Speaker 7: General Catalyst.
+Speaker 1: Right. And is their new is this their their program that helps basically finance customer acquisition?
+Speaker 7: Correct. So it's from their CBF fund, and then so they typically work only with multi billion dollar companies, right? So they did this with Lemonade. Again, Lemonade was a public company as well in '23. Market cap was 1,000,000,000.
+Now, today, they're 5,000,000,000. They did this with Grammarly. They gave them billion dollars to scale up as well. So this only works if you have great retention cohort data, because what they're doing is they're underwriting the risk of predictable revenue in the future. So what they're doing is that, for example, for every dollar that we're spending on marketing, they're giving us 70% or 70¢.
+Yep. And based upon our gross profits, then we pay that back over, you know, the next, you know, two, three months. Yeah. They charge a percentage interest rate of roughly 3.5% if that payback period is under three months.
+Speaker 1: Yep. I'm on the board of a of a company that is in that program as well. Amazing. And I was we had a board meeting last Thursday. I was in Europe, so it was like 2AM, but we we spent spent quite a lot of time going over all that data and the program cool.
+What percentage of I m eight does Prenetics own?
+Speaker 7: 100%.
+Speaker 1: Crazy. So you guys are at you guys are gonna do 200,000,000 this year or you're or you're projecting 200,000,000 sitting at a market cap of of 354,000,000. So
+Speaker 7: Yeah. And we have roughly about 140,000,000 in cash. Yeah. Even without the general catalyst. So I think there's a big disconnect between private markets and public markets.
+And to be fair, you know, we had a lot of legacy in the past. We had diagnostics business, we grew very fast during COVID. Yeah, during COVID, we're doing 40,000 PCR tests. You know, post COVID, I had the opportunity to meet with David and then we got along really well. We're like, hey, what if we did something together?
+What would that look like? Then we recruited, yeah, some of the world's best doctors, scientists, and professors on board. And yeah, it's always been crazy.
+Speaker 1: Very cool. Wow.
+Speaker 2: Well, congratulations and thank you so much for coming on the show to break it down.
+Speaker 1: Yeah. Great to meet you.
+Speaker 2: Nice to you today.
+Speaker 1: Really really impressive. Thank you. And come back on soon.
+Speaker 2: Yeah. We'll talk to you soon.
+Speaker 7: Appreciate it.
+Speaker 1: Cheers, Danny.
+Speaker 2: Me tell you about Shopify. Shopify is the commerce platform that grows with your business and lets you sell in seconds online, in store, on mobile, on social, on marketplaces, and now with AI agents. We have our next guest already in the waiting room. It's Andreessen Horowitz now. Connor Love, welcome to the show.
+Congratulations on the new gig. How are you doing? Thanks, guys. Appreciate it. First question.
+How many cups of coffee a day do you drink?
+Speaker 4: Oh, Four. Oh, you're you got room to run.
+Speaker 1: You got
+Speaker 2: room because there's to new report I'm I'm
+Speaker 4: a zero celsius guy, two zero Red Bull. Back when I was in the military, I would pound Red Bull and then, you know, the stomach gets all messed up so I gotta declanse. So I'm on a journey. I'll come back to it.
+Speaker 2: Well, the American Heart Association says you're well within the limits. You're healthy. Congratulations. You're doing it right.
+Speaker 1: The other question It's so funny. I had seen a study showing that you could basically eat coffee max as of like two years ago. I've been on that I've been basically on that on that program
+Speaker 2: Okay. Well
+Speaker 1: for a while.
+Speaker 2: Connor, you were early too.
+Speaker 1: The other thing I gotta just say since we're on the topic of caffeine, I found out Austria has like, glass. You can get Red Bull in a glass bottle just at gas stations.
+Speaker 2: Oh, yeah. It's from there. Right? That's where I had I almost went to headquarters when I was there.
+Speaker 1: I was like, I gotta import I gotta import this stuff.
+Speaker 2: Maybe. Maybe.
+Speaker 1: Anyways, we're not here to talk about glass bottle of Red Bull. We're here to talk about you.
+Speaker 2: Caffeinating the capital markets with new Exactly. American dynamism investments. Talk to me about the journey. Talk to me about what you're excited about to be doing Yeah. Yourselves now.
+Speaker 4: I mean, look. I've known the folks at AD for a while. You know, we all know four years ago, they didn't just, you know, point to a category and think it was cool. I mean, they they helped create the category. Yeah.
+Both branding it, also but back in some of the earliest, most interesting companies in this ecosystem. So it's been a relationship that I've had for a long time. And when I got approached to the opportunity to join the team and help lead the team here, in a lot of ways, it's one of these things where our job as VCs is to sit behind entrepreneurs and put them in the best position to succeed. And this platform offers you a really good place to do that. And it's kind of one of these things where it's a good fit for me, let's just say that.
+Speaker 2: Yeah. I think so. So take us through the structure of the team now because you're you're saying your help leading it. It seems like you're in a GP role. Yeah.
+Does this mean Katherine's running? Is she is she on the way out?
+Speaker 4: No. Katherine's part of the team. She's kicking it. She's she's doing amazing things. I think the beauty is when like we all know when you grow the fund, then there's more opportunities to invest.
+It means you need to kind of push it to the next version. And so we got $1,200,000,000 of fresh capital to deploy into a category and kind of supercharge in a way. So So it's kind of us four GPs operating as a team. And this is the beauty of venture is there's individuals that have good backgrounds and good beliefs and good views of the world. But I think in the end, venture should be a team sport.
+And, yeah, you got to put one individual ahead of the other every now and then. But look, I mean, when you look at the platform and you see kind of what's been built so far Mhmm. I mean, I'm excited to to help take it to the next step in the future.
+Speaker 2: And the structure of the fund, I mean, I imagine you're still going to be focused on, like, the earlier stage. You obviously have enough capital to lead follow on rounds. But sweet spot series a b Yeah. I'm interested in like the health of that category because it feels like there are many category defining companies in all Yeah. Like when I look at a market map, I'm like, are we good on AB?
+And then I find like the whole next turn of like, oh, we didn't think about this whole section of the economy.
+Speaker 4: Yeah. Alright. I'll give you two perspectives here. The first is in any new category that is going through a tectonic shift like this category it is, you are 99% wrong about the size of the category when you start investing. Like, just go back and look at anything.
+I mean, the nature is this category is gonna be far bigger than we all think it
+Speaker 2: is. Sure.
+Speaker 4: With that being said, I do think you're right. There have been a, let's call it a, you know, neo primes in the defense space or kind of neo manufacturers, whatever you wanna call them elsewhere that have clearly pushed themselves into, hey. We are a real player. We've raised real capital. We have real customers.
+The question is, you know, how many people are gonna be at the table? And, you know, I'll answer that question two ways, which is not all of them, number one. And the second one is, as I said before, it's going be a bigger category than we all think. So what I love doing and maybe this is a little bit controversial here, but it's like my favorite type of investing is really at that inflection stage where you're potentially writing a growth check or a growth size like check, but the company is still early in terms of the product market fit. And in my view, especially in AD where these companies take a lot of capital to grow, that's how you return funds.
+I mean, that is the exciting place to invest in my opinion.
+Speaker 2: Yeah. Jordy, I wanna give you a second if you have something where I can go.
+Speaker 1: Yeah. Update on I want I want the update on the deals you did while at Lightspeed that you're most proud of. Because I'm assuming you're gonna, you know, first day on the job, got the new email, you you hit them up. How how would you like another 100,000,000?
+Speaker 4: Yeah. I mean I mean, look, this is another thing about venture is when when these when these companies raise a lot of capital, there's a lot of the same people around the table over multiple stages. So, I've yeah, had the privilege of investing in a lot of businesses, everything from Castilian to Andral to K2 Space to Amca, a lot of other things. And the beauty is Andreessen has actually been an investor in a lot of those businesses already. So it's a relationship I get to kind of carry over now from a different side of the seat.
+But I think you're right. I mean, look, there's going to be many new entrants. I am very happy with those investments that I've made, have a great relationship with Ravi Matre and the rest of the folks at Widespeed. I mean, they're going keep doing amazing things and investing in this category. But, yes, I just think it's still early.
+I mean, again, like nine times out of 10, you were wrong about the size of this market. The space market is going to be massive. Defense market is definitely not spoken for yet. The industrial base of manufacturing, we haven't even really talked about and touched. Like, we're talking trillions of dollars of industries.
+And we, you know, look at great companies like Hadrian or Amkai, we think, oh, the market's been solved. No. Like, it's there there's there's a ton of room left left to run-in my opinion.
+Speaker 1: On the on the financing side, we just talked to the CEO of I m eight, which is doing a new sort of billion dollar financing with Yeah. GC, I think, through their customer value fund. Is there anything like that emerging in in defense? I'm I'm assuming a lot of your portcos are using Yeah. Venture debt or maybe getting financing against some of these bigger contracts.
+But what are you seeing?
+Speaker 4: Yeah. I mean, think, first of all, if you look at what the federal government is doing, the federal government is stepping up in a real way. I mean, there's been a long office called the Office of Strategic Capital that has SBA, Small Business Administration, money that can put towards these companies and their growth. There's also a new unit formed called the EDU, the I believe it's the Economic Development Unit within the Department of War. The idea is that if you can look at these industries that either have a supply chain problem or some misimbalance with China, there's not free debt, but close to free debt of capital that you can receive from the federal government.
+And in the end, it's like when there's such a misimbalance for, know, in this case, like the Chinese supply chain versus ours, It is only in America's best interest in order to do this. And in the end, there's equity capital sitting behind it. What I will say though is like debt is not an answer to your problems when you're a company. I mean, you need to obviously create real value and have real kind of, in my view, some type of technology uplift of what you're doing. But in the end, I do think that if you look at opportunistic capital, like I said, if you even look at what private equity is starting to do in this ecosystem, they're entering an ecosystem and saying, Hey, I don't need to control a company.
+I don't need to flip the entire management team. It's just a different type of risk asset and they need to enter at the right time. But again, I think the capital markets are super rich here. The world, I won't break anyone's mind here, but the future of returning venture funds is investing in AI and it's investing in American dynamism. And, you know, again, the beautiful thing in Andreessen, we have both of those things and now I get to, you know, do it in a in a different way.
+Speaker 2: Yeah. Aren't they going to collide really soon if not already? I'm just thinking about like there's a bunch of great defense companies. A lot of them have already been started. The defense budget is growing but a few percent a year run rate.
+And then you have like AI CapEx which is like tripling every year. And so a lot of the same motions of like we have a machine that makes a product that does a thing. It feels American dynamism y, but then it plays in the AI boom. Is that going be I bigger
+Speaker 4: mean, again, I think you're right. They are colliding far quicker than you think they will collide.
+Speaker 2: Yeah.
+Speaker 4: I think to some extent, though, that is a good thing. I Of mean, again, if we look at what's happening and how AI is transforming other software industries, it's going look different in hardware for sure. I mean, there are different barriers that you need to overcome with, you know, again, let's talk about putting a fully autonomous robot with the weapon in the hands of the military. There are layers of kind of integration and policy and all these other things that need to happen. So it's not going to happen overnight, but I will say it will happen.
+The competition piece, which is a slightly different answer to your question is, again, I think you're right. There's a small percent of the budget that has gone historically to these neoprimes. If you look at what this administration has done, that those numbers are changing on an order of magnitude. And if we also want to take a step back and look at Europe, look at Asia, look at other places, I mean, literally, are being created overnight. So I do not think the problem is, hey, is there a budget or is there ability to capture?
+I actually think the problem is, and this is what not enough people are talking about is, will these companies actually deliver on the massive solutions that they're all you need to build. I mean, I'm serious. Like, need to we do need to have 40 Tesla factories. We need to build thousands of these things. I mean, it's not just defense, but it's like the folks at Base Power you know, kind of everyone in the manufacturing ecosystem.
+We have companies that can produce not thousands of things, but tens of thousands or hundreds? Like, that is the question. And if that doesn't happen, it doesn't matter how big your market is. It doesn't matter how much AI Pixie Dust you throw on top of it. If you can't build real hard stuff, you're not going to have lasting value over time in my opinion.
+Speaker 1: Yeah. I saw a video last week of a of a drone that was designed so that the entire body of the drone spins and it makes the whole almost invisible. It was very very scary looking and and the person posting it was saying that drones are currently like in their sort of World War one era of of warfare. Is that how does that track with what you're seeing?
+Speaker 4: I I first of all, I love this comparison. I always use the World War one comparison when talking about what's gonna happen in space, but I actually think that the drone comparison is better. And don't quote me exactly on these numbers, but if you go look at the amount of manned airplanes that we in the West had in World War I, it is roughly the amount of satellites that we as a nation had up in space, call it three or four years ago. And now if you flash forward and see the order of magnitude amount of more manned airplanes we have, I mean, you literally have like it's a hockey stick like growth. So to your point, we have what, thousands of tens of thousands of drones that exist in the DoD today.
+I mean, we're literally buying millions of them. And yes, they're tradable, so like they will kind of decline and go away. But I just think people have not wrapped their head around the sheer number of these systems. And I think drones specifically to your point is like it's always going to be this cat and mouse game. So just because you've built a million of these things that are tradable, it can do these things, The the enemy is gonna adapt and then all of sudden you're gonna have to build a new version that's EW resistant that can go further that can do so it's not a one problem, you know, one time you just solve the problem and you buy a million of them.
+I mean, this is decades long that's gonna be happening from our from our federal government.
+Speaker 2: Very cool. Well, on the new gig. Look forward to talking again soon, chopping it up. Looking great in the suit. Look fantastic.
+Speaker 1: Looking great in the suit.
+Speaker 4: Well, I always like to wear a suit just for you guys. And anything that gets me on the pod to talk with Deli and more, I'm I'm always about that. I'm just trying to elevate my media game just so, know, Deli and I can can riff with each other some more.
+Speaker 2: I love it.
+Speaker 4: That's what I'm
+Speaker 1: here for
+Speaker 2: you guys. Elevated.
+Speaker 1: Great to see you Connor and congrats on the move.
+Speaker 2: Congratulations. Love to see you soon. Goodbye. Let me tell you about MongoDB. What's the only thing faster than the AI market?
+Your business on MongoDB, don't just build AI, own the data platform that powers it. Before we bring in our next guest, we got to talk about the Aston Martin SUV. Is this really a collab with Call of Duty? You got to pull up this image. You think this thing is a little ridiculous?
+You think this isn't
+Speaker 1: Oh, I I love the
+Speaker 2: way I see this is like the new model y. I think like this will be the car that's on like, you're just seeing so many of them make
+Speaker 1: it And this is what you've been asking for because it is a v 12.
+Speaker 2: It's a v 12.
+Speaker 1: So first of all, let's go with what's amazing.
+Speaker 2: Yes.
+Speaker 1: The name. Is it called?
+Speaker 2: Is it called? The That's
+Speaker 6: a good name.
+Speaker 1: And so I yes. Digital only.
+Speaker 2: What do you mean?
+Speaker 1: A digitally own a digital only military spec vehicle designed exclusively for the new Call of Duty Modern Warfare.
+Speaker 2: So they will not be making this Which is like well, that's the latest part about there's no v 12 if it's digital. That doesn't make any sense. I thought this was Yeah. A real car. They're not even making this?
+Speaker 1: Lot of like, it it spread so quickly around that I think a lot of people thought it was real. I think they should have made at least a few of these one off.
+Speaker 2: Yeah. Make like a developer.
+Speaker 1: Know about the Call of Duty partnership in general.
+Speaker 5: I just
+Speaker 1: feel like I feel like cheapens the brand and I feel like Aston is trying to appeal to a younger audience, but having a made up car, I don't know if it really does that. This
+Speaker 2: is yeah. This is a very weird partnership. No. You imagine you you're you this is what you have to tow your Valkyrie to the track. Like that Exactly.
+Like you could sell one of these to every Valkyrie owner in theory because it's so so unique. Yeah. Reminded me of the
+Speaker 1: the Rambo Lambo a little Yeah. Totally. Sort of a modern take on that. Yeah. So make the car.
+Speaker 2: Make it.
+Speaker 1: Aston. Just do it.
+Speaker 2: Just do it.
+Speaker 1: Just Or shoot. Do it.
+Speaker 2: And we will just bring in our next guest. Kahlil from Natural, the CEO and co founder.
+Speaker 1: How are doing? Welcome to the show. Thanks for having me.
+Speaker 2: Would you follow that would you buy that if that was a real car? Would that would are you in San Francisco?
+Speaker 3: I am in San Francisco. Yeah. So Yeah. Car though.
+Speaker 1: Yeah. Was like the wrap cyber truck era for startups.
+Speaker 2: Yes. I'd
+Speaker 1: like to see a wrap dreadnought
+Speaker 2: It would work. It would work. Anyway, enough talking The about
+Speaker 3: new BMW car? No. What's The predecessor to the XM? Predecessor?
+Speaker 1: That might be more. Or Yeah. Successor. Successor.
+Speaker 3: Successor. Successor.
+Speaker 2: The XM did not sell well. That was a widely panned that that that's their luxury performance SUV. Right?
+Speaker 1: Oh, this is you're talking about the new X five?
+Speaker 3: Oh. Yeah. It's like a G Wagon look alike.
+Speaker 1: Uh-oh. Oh. Don't think that is actually I don't think that's actually released. I think it may be they'll tease it Graphics. Car Week in a couple weeks.
+Speaker 2: But I
+Speaker 1: don't think I think every every render so far has been just like
+Speaker 2: Oh, just fan made? Okay.
+Speaker 1: But I
+Speaker 2: Well, we'll keep tracking. Anyway, enough about ours.
+Speaker 1: Great to
+Speaker 2: see you, dude. How are you doing?
+Speaker 1: Thanks for joining us on a big day. Yeah. Introduce yourself. Please.
+Speaker 2: Tell us about the company.
+Speaker 3: Sure. I'm Kahlil. I'm the CEO of Natural. Natural builds payments infrastructure for agents. We're announcing today that we raise a $30,000,000 series a led by Kirsten, the runner.
+Speaker 1: Thank you. There we go. Payment rails for agents. What does that mean today? And then I wanna talk about where this is going in the future.
+Speaker 3: Today, that means that agents can store balances. They can pay and request other agents or businesses or consumers. They can do transfers from external or internal accounts. Shortly, they'll be able to collect card information over the phone, make payments. It's a bunch of different payment primitives.
+Speaker 1: And so those use cases rank them by traction. So like what what agent payment use cases have the most traction today? Because this feels like one of those things that people have been talking about for a long time. It's a great venture bet because if if, you know, if this category pans out the way that a lot of people have been theorizing, there's gonna be some great big companies built. But I haven't used I haven't used any of these, like, haven't had an agent pay for anything on my behalf quite yet outside of, you know, using traditional checkout flows.
+Maybe I'm a boomer, lagger
+Speaker 2: I sent like a 100 k to Claude, but it turned out it this guy named Claude. I just sent it to him on WhatsApp and
+Speaker 1: Damn.
+Speaker 2: I don't know if I'm getting that back, so need this.
+Speaker 3: You can try your first agentic payment today if you sign up and request our agent. We'll send you back between 5 and $10,000.
+Speaker 2: Woah. Okay.
+Speaker 1: I love that. Variable report.
+Speaker 2: That also sounds like a scam. Send me 5 and I'll send you 10. This is like a classic.
+Speaker 1: Wait. Are are people not already using agents to create millions of accounts?
+Speaker 2: But but I I do think there's there's a very interesting opportunity. I'm wondering how you can like walk me through this particular problem that I've seen. So there's a really interesting AI YouTuber. His name is Ben Awad and he's been doing this series of like I tried to use a frontier model to like make me money. And he went to Fable and he did GPT Soul and he gave it like a week and he was like, just do whatever and and it it does a bunch of stuff and it's very it's very impressive.
+He makes like 5¢. He but it's like, you know, a demo. But everything that he's doing is like the reaching for the high shelf. So he's always it's like the genius model that can solve the IMO gold medal goes to him and is like, it's time to buy a domain for $10 And he'll be like, okay, I did that. And then it'll like go off and write the beautiful code and then it'll come back and be like, I need you to go set up an API key here.
+And so what I'm interested in is, is there a way that soon I will be able to safely upload some sort of credit card payment balance and then give that to an agent and say, look, I want you to go deploy a website on this technology, on this service, use this API, go to eleven Labs, grab their voice agent and go and actually set up the accounts, do the payments and then just here's your budget, don't go over, but go crazy and do whatever.
+Speaker 3: You can do most of that today with natural and the parts of it that you can't should be out at the end of q three. I'd say the way we think about the world is agents execute a majority of global payment volume over the next decade
+Speaker 2: Mhmm.
+Speaker 3: That that world is monopolistic or duopolistic in nature because payments are a highly network effects driven business Mhmm. And that that world is determined in the next, like, twelve months.
+Speaker 2: High stakes. And so Good luck. You're like
+Speaker 3: I think I think whoever is like the default developer choice in 2027 is likely to be the default developer choice in 2028 and 2029 and 2035. And so if it doesn't feel like a land grab market, it very much is about to be.
+Speaker 1: So a company called Stripe Yes. Is Couple Irishmen. Couple Irishmen. They they're certainly not asleep at the wheel with AI. By nature of being like very developer friendly with their products overall, I think they ended up being like accidentally really well positioned Sure.
+For AI because agents can really easily understand their products. I'm wondering, have you figured out anything where, like, they are at some type of structural disadvantage because of their existing business model or things that they can and can't do that creates an opportunity for natural? Or is the bet that the market is just gonna grow so quickly there will be a lot of land to grab over these next, call it, twelve to thirty six months?
+Speaker 3: I'm a big fan of Stripe. I think that Adjunctive Payments is actually much larger than Stripe. Like, when you think about agents are gonna interact with the world, the way I frame the opportunity is, like, we have the chance to build what looks like a bank, a PSP, and a network all at the same time. Mhmm. So it's like JPMorgan and Stripe and Visa is the TAM, not just Stripe.
+Speaker 2: Yeah. Yeah. So right now, if I go to if I go to Codex and I'm like, go build me an app and deploy it and pay for a bunch of things, it might pull Stripe off the shelf as payment infrastructure, but I don't really have Stripe balance that's sitting there necessarily that it can deploy from. I could give it my credit card, guess, but that's a little bit different than having a wallet.
+Speaker 3: You you might have a Stripe balance, but I'd say, you know, the magical experience about with AI is, like, you think of something, you say, can you do this? And the answer is yes. And then you think bigger and you go, can you do this? And the answer is
+Speaker 4: yes. Mhmm.
+Speaker 3: And I think the same will be true of AgenTic payments, which is like, there shouldn't be a limit in terms of number of financial flows your agent can accomplish. And that is much easier to do when you're building ground up in that new stack with all of the primitives an agent might need under one unified architecture versus trying to rearchitect an existing payment system to do everything that you need to do.
+Speaker 2: Well, congratulations. A hundred and ninety three days old when this round was done. A Yes. What an overnight success, truly.
+Speaker 1: That's right. And we're gonna we're gonna we're gonna have you back on hopefully this year Yeah. But certainly July 20 next year
+Speaker 2: Yeah.
+Speaker 1: To talk about your prediction of a of a fast take off in AgenTic payments.
+Speaker 2: Yes.
+Speaker 1: Look forward to following along and and congrats to the whole team on on the new capital Yeah. All the progress.
+Speaker 3: Thanks for coming
+Speaker 2: on. We'll talk to
+Speaker 3: you Appreciate it. Have a
+Speaker 2: good one.
+Speaker 1: You. Bye.
+Speaker 2: Goodbye. Yep. Let me tell you about Figma. Agents need the canvas. Your AI agents can now create and modify your Figma files with design system context.
+And up next, we have the CEO and co founder of Kahlil Lalji Tarek Mansour coming back for the third time with a bunch of exciting updates. Tarek, how you doing?
+Speaker 8: Hey, guys. How's it going?
+Speaker 2: Great to see you.
+Speaker 1: Taking a little a little nap there? You got a long long weekend? Well, he's launching future
+Speaker 5: Long year.
+Speaker 1: Okay. Before you get into that, let's let's talk about let's talk about the World Cup.
+Speaker 2: Oh, yeah.
+Speaker 1: Because every time I like to I like to check the store rankings just to get a pulse on what are what are consumers doing. And Kahlil Lalji has consistently been Crushing. At or very near near the top over the last month. But break down what you guys feel like you did well Yeah. Didn't do well
+Speaker 2: What you do differently next time.
+Speaker 1: How you kind of approach the whole event
+Speaker 2: in general. Yeah.
+Speaker 8: Mean, there's like a lot a lot to unpack there. But the I mean, few things, yeah. We've been pretty consistently on top of the app store throughout the month. Yeah. But the other interesting things and some of the sort of leading indicators, you know, yesterday I was looking at some of the data roundup, but in terms of number of impressions and trends on search, we ended up being, I think, we're basically still confirming data, but looks like we were number one.
+It looks like we essentially generated more impressions as a brand than essentially all the other consumer brands that were going pretty hard at the World Cup, and I'm talking about Coca Cola and Adidas and some of the others. Wow. And yesterday, in terms of search volume, it looks like we spiked above, you know, Chat, GPT and Instagram, and some of them, obviously some of the biggest consumer brands on the planet. And it really goes back, I mean, obviously there's a chunk of people that are trading, but the majority of our users are actually looking at it as a mechanism to figure out what's happening. Yeah.
+And as a mechanism to engage with the sort of underlying event. So And in these peak moments, whether it's an election or like a Fed decision, obviously the World Cup final, you see a massive spike in the prediction markets. In terms of strategy, mean, I think it's multi pronged, which is go very hard, maximally hard, you know, pretty much max out all types of channels, very small lean team, you know, idea to sort of execution within 48, just be super adaptable. So there's no strategy going into it, it's like all dynamic as things were coming and as things were happening.
+Speaker 2: Very cool. Really quickly, the video got a little blurry. Can you like refocus?
+Speaker 8: Yeah. Let me Let me see what's happening here.
+Speaker 2: And I will give everyone an update that the Jensen jacket sold for $960,000, 20 times the estimate. But you had it clocked higher. You you you predicted the million dollar sale.
+Speaker 1: Like roughly. Roughly a million.
+Speaker 2: Because I think a previous one had sold. Anyway, may maybe future market on Kahlil Lalji.
+Speaker 1: Were you the buyer of the Jensen jacket?
+Speaker 8: I was not.
+Speaker 1: No. Anyways, let's let's talk about GPU futures.
+Speaker 2: GPU forward curve. The market implied forward curve. What is the actual product? What's the launch been like? Can you actually read into the data yet?
+Or is it still rolling out?
+Speaker 8: We can definitely read into the data yet and you can find it on Kahlil I mean, you know, just based on the forward curve is something that's very common in traditional commodity markets or rates market or any traditional financial markets. And, you know, it's actually pretty simple. It's a curve of what the underlying, whether it's oil or metal or interest rates or compute, will transact at various points in time in the future. And it's a very useful indicator because obviously, as you as some of the, let's say, grain farmers or or oil refiners are figuring out their yearly planning, they'll basically, you know, look at the future, the enterprise is going to be, to basically manage their risk, make, you know, investment decisions and allocations of resources. And so it's inevitable that compute, as it becomes a core part of our economy, will require a forward curve, and soon after a futures and derivatives market on top of it.
+And we want to lead with that, because we feel that prediction markets are very uniquely suited to get that answer, to basically help build the forward curve. And what we've done is essentially listed a number of prediction markets that go all the way to the future, so every week for the next four weeks, and then every month thereafter to create forward curves on a few kind of compute, like, a few GPUs.
+Speaker 1: So Yeah. Where where are you looking for, like, to sort of verify pricing data because, you know, you're gonna see wild differences between, let's say, like, a Neo Cloud that has, you know, incremental capacity versus a deal between, you know, a meta and a big AI lab?
+Speaker 8: Yep. So it's a it's a very interesting question, right, because the answer is not clean yet, and this is I think there's a bit of a disiterative process that usually goes on in the early days of building a derivative market, which effectively standardizes the underlying commodity. So right now we're using an index from this company called Orin, and they've done a great job at aggregating transaction prices from a massive number of nodes, and we're seeing how it goes. So we're going to build a number of forward curves, see which ones consumers basically trust and abide by over time, and then, you know, as we as that sort of consolidates, we're going to basically go harder on the one that emerges as victorious. There's kind of something a bit self fulfilling with these things.
+So the reason why we look at WTI or Brent is because we started looking at those. It's not that they were intrinsically the right kind of measure of where oil is at, but as people started looking at it, it became the thing.
+Speaker 2: Because we could be trading derivatives based on the price of gasoline, but we've chosen Brent just because of that's the market that got traction. Interesting.
+Speaker 1: That's exactly And so and so this product, is this something that, you know, you expect the vast majority of volume to be these sort of institutions and or, like, neo sorry, Neo Clouds themselves or, like, who are all the different types of of players in this market? And then maybe tie that back to, like, traditional commodities. Like, I I don't even know. In in oil and gas, I can imagine a few different types of players that would be wanting to hedge hedge their exposure. But but within the overall market for compute, who are you thinking about all the different potential types of people that are gonna want to be able to sort of hedge or or trade these markets?
+Speaker 8: Yeah. I mean, I think that it it really is anyone who is basically a natural long or a natural short on compute. So anyone who naturally benefits from compute prices going up and anyone who naturally benefits from compute prices going down. So a producer Yes. A consumer, which is usually how, you know, a producer of commodity versus a consumer of the commodity.
+And for both of these cases, what we're starting to see is, you know, for the first time in the last year, compute is not in this sort of continuously decreasing trend. It is actually perked back up, and then we're starting to see this sort of natural volatility and cyclicality to compute, which is like, there's gonna be times where demand is gonna outpace supply and vice versa, and that's kind of a healthy dynamic to build a derivative market on top. And so anyone who's a natural long will over time want to take a short position and vice versa to manage the risk, right? So if you have essentially a certain amount of budgeting for how much compute you're going to basically how much you're going to spend on compute in the next year, which is now becoming an increasingly bigger part of, you know, the line items and, you know, public and private companies financials, it becomes natural for you to basically want to smooth out some of that exposure by hedging it on the forward curve and over time on the futures curve, which we can sort of overlay on top of the forward.
+Speaker 2: Do you have an idea of the of the TAM, like, this market? Like, how big because obviously, you're going to build liquidity over time, but when I think of, like, the natural longs, I'm like, yes. So hyperscalers with a trillion dollars of CapEx are gonna be taking out a short position on the order of a $100,000,000,000 or something. Like, how how how do you think about sizing the market over time? Obviously, it's not gonna materialize instantaneously, but it could be very big.
+Speaker 8: You know, it's interesting. So I I was, you know, I wrote about this last week, but you know, the rule of thumb is every time you have an underlying market people are transacting the spot, which is buying and selling the thing
+Speaker 2: Yeah.
+Speaker 8: When you overlay a derivative market on top of it, historically, if that market has any degree of success, it ends up being at least 10 to 15 times the underlying market.
+Speaker 2: Okay.
+Speaker 8: Right.
+Speaker 2: That's insane if that happens here.
+Speaker 8: I mean, this is the opportunity, right? I mean, looks like, you know, we're all sitting around a trillion dollars of spend Yeah. By now on compute, right? By 2030, that number is going to 10 x.
+Speaker 2: Yeah.
+Speaker 8: And so, you're talking mean, yes, it is an incredibly large
+Speaker 2: trillion in derivatives potentially, just stabilizing the market and hedging various things and insuring different projects and whatnot.
+Speaker 8: Because, you know, the way that these markets evolve is obviously you get the exact insurance use case, the hedging
+Speaker 2: Yeah.
+Speaker 8: But that tends to be usually like 5% of the entirety of Yeah. The liquidity in the market. The rest is speculation and people arbitraging and doing a lot of other things. And so those markets tend to be very, very large.
+Speaker 2: Yeah.
+Speaker 8: And I think the compute as a commodity is gonna probably be the largest commodity on the planet, and so the derivative market for it will probably be the largest derivative market on the planet, outpacing treasury futures and a bunch of other things.
+Speaker 2: Yeah. What what does this mean for the for the customer base? It's it's interesting to me is when I think of Kahlil Lalji, I think of the first era, the act one sort of political markets. The people that were actually participating in that market were there were some sophisticated Wall Street investors but it wasn't like the daily sports better. It was a more like like, you know, somewhat sophisticated but sort of like mid tier investor trader.
+Then you get to sports betting and that's very broad, very general just like average Joe watching sports. Of course, there are larger firms that are participating. But then this market feels like something that would be the domain of almost entirely sophisticated hedge fund investors. Is that where you see this going? Do you think this will be a broader product or it will maybe open you up to a new class of investor or trader?
+Speaker 8: Yeah. I mean, the way I've thought about our business, and it's been one of the things that's been interesting, so we have a core set of users, think of the forecasters, like people that like stats and analytics and predicting things.
+Speaker 2: Mhmm.
+Speaker 8: And that's a skill, and people get better at it over time, and those are a big chunk of our value. Those are the same people that are doing it on predicting elections, predicting who's going win an Oscar, predicting the inflation next month, and predicting sports. And over time, these are the same people that are predicting the compute prices for us Sure. For the core curve, and that's why it becomes so accurate. And you know, we've put out a lot of data on why the calibration, like the accuracy of these markets and these people is actually the best in class, there's nothing better than it.
+Now, that enables a lot of other use cases in different areas, right? In sports, could be people that are passionate about the sports and want to engage with it, and politics similar, or people that like campaigns that want to follow it. And in compute, once we have that sort of layer of pricing liquidity, we can essentially enable, you know, hedging from the, you know, super scalers, hedging from consumers of compute, know, punting and speculating from people that basically want to arbitrage compete with other markets. But we see, I mean, it's marketplace at the end of the day, you need a vibrant set of participants for it to get liquid, you know. You just bring hedgers and you don't have anyone on the other side Yeah.
+It doesn't quite work. Mhmm. That, you know, and so so in some ways, kind of, we build on the success of some of the other products
+Speaker 5: Sure.
+Speaker 8: Or or every other product to to build some of the new products that we've we've we've been doing, and that's why I think we're gonna be very successful in the forward curve. And that's why we already have a forward curve. You look at Kahlil Lalji today,
+Speaker 2: we are I'm looking at the forward curve. I pulled up the one for the Nvidia h 200. I sent it to the team. They can pull it up. The hourly price on July 24 is up there, the week thirty.
+And I see this very flat forward curve, and I'm wondering just because I feel like there's a huge benefit for people in AI just to be able to look at this and get even if it's low volume now, like get an idea of like what is the market thinking about GPU pricing It's over pretty flat. So is my read on that that the market is basically saying GPUs will continue to be about as useful as they are today for the next year?
+Speaker 8: Yeah. I think it's a market and, you know, these markets move with obviously new information, etcetera. So there's obviously what it looks like, but there's also how it moves based on new information.
+Speaker 5: Sure.
+Speaker 4: Which is
+Speaker 8: the one where I think markets really shine. It's like, okay, how do I really price this? When someone launches a new GPU and a new model Sure. What is going be the impact on the prior models? So that type of thing.
+Speaker 2: Got it.
+Speaker 8: But right now, it looks like it seems that the innovation in this space is going to be sort of on pace Yep. With the consumption
+Speaker 2: Yep.
+Speaker 8: Which I I think we're seeing some some stabilization.
+Speaker 2: Yeah. Yeah. And we see that a lot where there's a new model that comes out, but a lot of businesses keep their agentic workloads running on the older GPUs, the older models, because they have found an economically valuable use case. And if it takes an hour to do a bunch of inference, they get more than $5. So they're happy to pay that.
+And also 12. Very, very interesting. Yeah. I mean, also, like, people have been reacting to this, like, second deep seek moment, Kimmy, and what that means for for for chips and GPUs. And it feels like, at least in this curve, like, it's pretty neutralized.
+I'm interested in in the the risk associated with this market. There's been these, like, viral stories about certain like small markets where someone gets an edge. Do some sort of manipulation. This one feels more resistant to that. How are you thinking about just avoiding market manipulation broadly right now?
+How are things going on that front from either a regulatory or an internal policy perspective? And then is this a step forward into a market that's even harder to have market manipulation happen?
+Speaker 8: Yeah. I mean, the manipulation risk exists in all commodity markets. Really any markets. I mean, it's always been the case. Now, what prediction markets have shown themselves to be is pretty resistant to manipulation.
+And we put out actually a research piece a week ago about someone who tried to manipulate the price of Spencer Pratt winning
+Speaker 2: Oh.
+Speaker 8: In the California election, and they put $2,000,000 to move the price up and and you know, that price move lasted nine seconds only.
+Speaker 2: They get destroyed. Yes. Because I I I've thought if you're a long shot if you're a long shot political candidate, there was at least a thesis. I think you just debunked it but thesis that you should put your a bunch of your money on yes, then you everyone's like, this person just spied.
+Speaker 1: Yeah. You create the percent.
+Speaker 2: And then you go and do the podcast circuit and you're like, I'm not that much of a long shot. Look, I'm at 10% on call sheet because and it's like I put in $10,000 to move the market. But you but you say that someone just got wiped for that?
+Speaker 8: Yeah. I mean, the the because you now have created a massive arbitrage opportunity for people that are pricing the actual thing. Mean, that's why markets are beautiful, is that they give an incentive to always correct the price of the true thing.
+Speaker 2: Sure.
+Speaker 8: And so it went back in, and then, know, so if that person had taken the $2,000,000 and, you know, put it to commission some polls are going to be biased, or spent it on ads, it would be much more effective. It'd be actually put to much better use. And in many ways, actually, do that in polls. Know, come out left and right and they're all biased. And so I always tell people, look at prediction marks in conjunction with everything else, right?
+And right now in compute, lot of what we have is people just saying things. People are often self interested
+Speaker 2: Mhmm.
+Speaker 8: Saying things, and so it's good that you have a market based approach where you know that the incentive in the market is is is very clear. It's people make money if they're right, and they lose money if they're wrong, which is I think an elegant way to put it.
+Speaker 1: There was a lot of drama around onion futures back in the fifties that resulted in the onion futures act Mhmm. Which banned all futures for for onions. It's still in effect today. Do you know if is there's something about there something is is there something intrinsic to onions that make it a market that's easier to manipulate or is it maybe time to let to let markets flourish around onions again?
+Speaker 8: It just tells you sometimes, you know, policymakers sort of overreact or underreact, and and at the time, you know, because, you know, two people basically cornered the onion market, and at the time people were like, well, the problem seems to be the vegetable, the onions, not people. And and, you know, there's nothing endemic to onions. I mean, you you could manipulate any of these markets, there's nothing special about onions. We should have, you know, futures on onions, and I hope that one day we bring those back. But, you know, these things tend to be you always have to take a delicate approach to regulating things, right?
+Otherwise, either undershoot or overshoot, and you know, the job is not easy as we see in many industries, AI, crypto, prediction markets, self driving and all of that, and you know, and this is part of why Kahlil has been so proactive in self regulating and being very vocal about banning insider trading, how should we do it, how it should be done, because we want us to land, we want to help the industry land in the right place when it comes to regulation.
+Speaker 2: Well, congratulations on Very cool.
+Speaker 1: We will be we will be tracking the GPU markets. It's cool. It's it's it's gonna be cool to have another place where, yeah, as these as as news drops, like, you know, Kimmy
+Speaker 2: It's gonna be deeply underwhelming because you go on X, you get crazy hot takes, you get, it's over, we're back, it's going parabolic, we're in the AGI future, everyone's going to be a trillionaire. And then you're going to look at this and be like, yeah, like, you know, mild productivity and, continued performance in the GPU curve. It's going to be like much less exciting than watching a hot take play.
+Speaker 1: No. But it's good.
+Speaker 2: It is good. Yes, of It's good.
+Speaker 8: That's whole point. That's the point of it's like depolarizing the narrative around politics, and all these different mean, compute. Yeah. It's like things tend to be a little less, you know, you know, aggressive and extreme, and and, you know, I mean, the extreme makes for a good tweet.
+Speaker 1: Yeah. A it's a counter
+Speaker 8: Not not a good trade.
+Speaker 2: Yeah. It's a counter
+Speaker 1: force to algorithms because like the algorithm feeds on the most the most viral take of the moment. Like it's over. We're so bad. Yet and yet people don't bet their money on Yeah. The most viral narrative.
+Yeah. Like sometimes just Exactly. Betting on.
+Speaker 2: Yeah. There's so many times, especially in politics where you'll just see some minor news breaks or some new political attack ad comes out and everyone who's a fan will be, it's oh, they're running away with it. So they're trying to convince you and you check the market and you're like, okay, 1% bump today. That's exciting. Good for them.
+Speaker 6: Congrats. I
+Speaker 8: mean, skin in the game, right, like, you know, there's the whole market's not like, like, there's skin in the game, people get much more careful all of a sudden. Yeah. And that's kind of the beauty of How
+Speaker 2: is tracking the midterms going? Is is politics still like a driver of business? I know the I know the sports market became so large, but is there still a very healthy business there?
+Speaker 8: It's always about what's top of people's minds. Mhmm. So you have to look at it on a per day basis, figure out like, okay, what are the things that are top of mind? The things that you would be covering and talking about more frequently than other things. Those would be where the volume will aggregate in prediction markets.
+So we're starting to see the ramp up for the midterms. Obviously, come October, November, that will be a very, very big set of markets for us.
+Speaker 2: Sure.
+Speaker 1: Are you you're in the same exact spot that you were the last time you called into the show, but I'm sure the team is like three or four x. Are you guys running out of space in that office? That's what's going on.
+Speaker 8: We're actually moving pretty soon. But yeah, don't really move much from this spot.
+Speaker 2: Well, we appreciate you hopping on the show.
+Speaker 1: Awesome. Yeah. Great to get the update.
+Speaker 8: Thank you so Have
+Speaker 5: a great rest
+Speaker 2: of your day. We'll talk to you soon. Up next, we have Tony Zhao from Sunday Robotics. He's back on the show with an amazing update with some remarkable benchmark. 99 There
+Speaker 1: they are.
+Speaker 2: Zero shot success, folding laundry across 785 autonomous attempts. They're calling it laundry super intelligence. How's it going? Is it solved? Good.
+Is it is laundry solved?
+Speaker 9: Yeah. We call it LLM.
+Speaker 2: Oh, yes. Which
+Speaker 9: means large lounge laundry models.
+Speaker 2: Perfect. Perfect.
+Speaker 1: Move the goalpost. We gotta move them.
+Speaker 2: No. Give us the broader update. Like, what what is act two and what wait. Like, is this a discrete training run? I mean, are you into actually commercializing this?
+How much is in the lab? Like, give us the broader update, then I'm sure there's a bunch of ways we can go deeper.
+Speaker 9: Yeah. I think this is actually a really packed update with many things that we want to share. I think the first thing is this is the first time we can train a policy, a model to both generalizable and reliable. What it means is that by generalizable is that what you see is what you get. The performance you are seeing will be the same if we deploy the robot into your home because these have been tested in places that are unseen that the model generalizes into.
+And what we mean by reliable is that, like, after filling, like, close to a thousand garments, the success rate is, like, ninety nine point one percent, which is very, very reliable and is the most reliable one to date, and it's handling, like, very diverse amount of garments. So this is kind of the more the most literal part of the update, but I think there are also many, like, new ideas that we introduced. One of them is that it turns out that when we scale up pretraining, you can do one shot learning with these models. And what we mean by that is that you can teach the robot to fold your shirt in a new way with one demonstration.
+Speaker 2: Mhmm.
+Speaker 9: And the model can extrapolate that to an unseen shirt on an unseen bed. It actually, like, understands it. So this is something that is, like, really, really surprising that just emerges from, like, scaling up the training the pretraining, both the data and the compute. The other thing that we are, like, really deep into is to introduce the idea of a solve. So I think this is there has been, like, a huge amount of confusion around, like, what is 99% this, 99% that?
+But 99% can mean very different things when the scope and the adaptation budget is different. Let's say if you're doing 99% folding one shirt in one room, this is very different from being able to fold any shirt in any new places it deployed into. So what we're trying to distinguish here is that the performance, let's say success rate, only matters if you very well like, very nicely define the scope, which is like what is a long tail of things you want to handle, and the adaptation budget, which is another way to say, like, are am I allowed to train on my test set? Am I allowed to train on the deployment situation that I'm going to do? And only after these boundaries are established does a success rate make sense.
+And one example of that is, like, if you think about self driving, doing 99% in a closed course versus on highway versus on city streets, they're, like, very, very different challenges. And so I think we as a field in robotics are at a point that we want to clarify these to, like, better be able to track the progress in the field.
+Speaker 2: What does prompt engineering look like as this gets deployed? Like, can imagine, you know, you go to ChatGPT and you say, like, write me blog post and it'll be like very mid and then you give it an example of how you write and it gets a lot better. And there's a lot of style transfer examples. You feed in an image to mid journey and say, I'm looking for generally like this but use it, make it a dog. And I'm wondering if there's a pattern where at least in interim, in the midterm, you or in the medium term, you will say, Okay, you know, practice is when Memo comes to my house.
+Give it a couple examples of how you like your socks folded, you know, show it the long socks and then also show it the short socks to give it a couple reps and then you'll be good. Is there sort of even though obviously you're doing a lot to make the product just work out of the box, is there going to be some sort of like last minute ad hoc on the fly fine tuning that's essentially happening in the home?
+Speaker 1: Well, yeah. A good example is like folding all the clothes is one challenge and then putting them in the right places is another Sure. Which, yeah. Everyone's had the experience of being like, okay. Well, not not everyone.
+But like, I'm not home. I'm not home when my when my laundry gets folded and sometimes it gets put somewhere I don't know where it is. I want it to be put in the right place
+Speaker 2: Of course.
+Speaker 1: The right time.
+Speaker 2: Yeah. Of course.
+Speaker 9: Yeah. I think what you guys are highlighting is really the the need of personalization
+Speaker 2: Mhmm.
+Speaker 9: For homes. And that's actually a hallmark of intelligence. Right? Is that if you're so smart, you should be able to learn from one single example Sure. Which is what we thought for, like, the front engineering side.
+Speaker 2: Yeah.
+Speaker 9: I think this is something not something we're going to roll out this year, but maybe, like, either super late this year or, like, early next year
+Speaker 5: Yeah.
+Speaker 9: Of, how can we allow users to customize the behavior of the robot? Let's say, I just want my laundry to be done this way or I want it to be placed into the cabinet in that way. Want my home to be organized in this way of, like, a specific way of laying out, the living room. And can you do that just by one video, one photo, or, like, one demonstration? This is actually what this research update, the one example, one shot learning is about.
+That it turns out as we scale pre training, that capability just emerges. And, of course, there are work that needs to be done there to make it a actual shippable feature, but it's really, really promising to see that it's even possible.
+Speaker 2: How do you think if you're really successful, if there's a fast takeoff of of this product category broadly, hopefully you with you at the forefront, how do you think it will change the design of American Homes? Like, can imagine some people have laundry rooms on the 1st Floor, bedrooms on the 2nd Floor. You don't have the ability to climb stairs. I could imagine people saying, hey, maybe I'll remodel and put a laundry room upstairs. But have you thought about the knock on effects of like if somebody really leans in, you know, they're getting the electric charger for their car, they're modifying their home for the best experience in the future.
+How will things change?
+Speaker 9: Yeah. I think there are a couple of things that are really interesting here that you mentioned. One is that like, I think we're definitely in a period of time that the capability will take off.
+Speaker 2: Yeah.
+Speaker 1: In a
+Speaker 9: sense that like, when we work on this laundry task, we didn't make any assumptions about the laundry. The recipe itself is extremely general. Mhmm. So there's really no fundamental reasons why we cannot work on a thousand of these skills in parallel. And which means that, you know, the capability is only exponentially growing scale as if we can scale data and compute accordingly.
+Speaker 2: Mhmm.
+Speaker 9: And I think, as you said, like, the the the revision of this is that if the robot can do so many things in your home, a lot of them are, like, maybe across different floors and across different places. Is there ways to modify the environment? Is there ways to modify the robot? And I think this is also where our technology comes in, which is the way we design a data collection device is agnostic to the hardware, That the same dataset, the same model can be used to control memo as it is right now, but maybe it can control a legged version of memo in the future.
+Speaker 2: Sure.
+Speaker 9: But we're actually super open minded about form factors, but within the ecosystem that we're going to build, which is going to be beautiful high quality hardware.
+Speaker 2: Got it. You said there's a thousand tasks you could think of. I can think of like four things that a robot could do in the house. It's like laundry, cooking, dishes, cleaning generally, maybe like gardening. Like there's Locking got to
+Speaker 1: be the lock doors at
+Speaker 2: locking the doors at night? Yeah. I guess there are some more. But how how long is your task list? Obviously laundry really stands out as like something that very few people enjoy.
+It's very obvious and it seems very unbounded. So if you can solve that, you can imagine it also being like I would trust that robot right now to throw a lock. That seems easier than than folding a shirt. But how how long is the list of of tasks that you want to that you want to knock down over the next couple years?
+Speaker 9: I think there are almost like two parts of this question. Yeah. One part is that what is the minimum number of tasks that a robot needs to do to justify its own existence Mhmm. That people love having it in their homes. Yeah.
+And as you said, I actually think the list is pretty short because the annoying chores are just that many. Right? Yeah. They're pretty repetitive. You just need to learn it, and, you know, you just keep doing that over and over again, like folding shirts or like loading dishwashers.
+Speaker 2: Mhmm.
+Speaker 9: But I think I think that's one part of the equation. But the other part, which is what we noticed, is that I think we're also having this longer term goal of can we get to a general intelligence? Can we solve the, quote, unquote, physical AGI?
+Speaker 2: Yeah.
+Speaker 9: And what that entails is a way longer list of tasks. And what we are seeing just like, I think home and this objective, actually aligns quite a lot. We call it, like, research market fit. That's the research that goes into the product also advances on the general intelligence side.
+Speaker 2: Mhmm.
+Speaker 9: So so overall, I think the there are, like, obviously infinite amount of manipulation skills. Even for one task, you can do it in many different ways. And I think we'll first cross the boundary of making a product exist, but we'll keep going towards the north star of being able to solve any task with, like, very, very few demonstrations.
+Speaker 2: Mhmm. Very cool.
+Speaker 1: I can believe the scenario where a winning robotics company starts off by just doing something cute like folding laundry and and then, you know, ten years later, it's doing everything.
+Speaker 2: Yeah. No. It's a good place to start. I love it. Well, congratulations.
+Speaker 1: What's your what's your what's your your cooking timelines?
+Speaker 9: I think cooking is such a fantastic task. Like, everyone can have Gordon Ramsey level of cooking in their homes. That would be, like, crazy. Like, people pay, like, so much money for it. But at the same time, I think laundry is also one of the tasks that are, like, difficult.
+Right? Like, if you, like, accidentally mess up, you need to clean up after yourself, which is okay. So I think we think about laundry as this almost like a like a final boss that the upside is so high, but
+Speaker 1: Where you think laundry is harder than
+Speaker 2: the opposite because
+Speaker 9: Oh, sorry.
+Speaker 2: Can't shatter. Yeah. Cooking feels like the final boss because you can break glasses. There's heat involved.
+Speaker 1: Yeah. There's like Yeah. Come back into your kitchen. It looks like
+Speaker 2: Whereas like, if I have a shirt and the robot messes up and and gets the shirt all bundled up, it's just a messy shirt. It was already a messy shirt.
+Speaker 1: Not if it's chrome hearts.
+Speaker 2: Yeah, guess. But if it but but if you come back and it's like, okay, you actually like broke a glass of wine and you like you broke up a glass of a bottle
+Speaker 1: of olive on the floor.
+Speaker 2: Yeah. There it's a little bit riskier. So but it it seems like it will transfer pretty well, at least in
+Speaker 1: I think you should go lock up all the great chefs and and lock up their IP and say, I'm gonna give you a little bit of money now to have the right to like offer the Gordon Ramsey as a service in, you know, five, ten years.
+Speaker 2: Maybe that's it. Maybe that's it.
+Speaker 1: Thanks for the update.
+Speaker 2: Thank you so much for coming. Great stuff. Have a great We'll rest of your talk
+Speaker 1: to See you you, Tony. Congrats.
+Speaker 2: A good one. Did you hear that the founder of DeepSeek turnt it down? He had the opportunity to go to DJI and he turnt it down.
+Speaker 1: He was so younger.
+Speaker 2: He was so younger like, then came
+Speaker 1: They wanted him to go for a decade.
+Speaker 2: That would that would define everything by what he refused. In his college years DJI founder Wang Tao asked Leung to join as co founder. He was gonna be the co founder of Wow. AI. Wow.
+Liang declined the invitation to pursue artificial intelligence methodologies in financial markets. He said, I gotta I gotta go to Wall Street.
+Speaker 1: I gotta make markets efficient. Yeah. Wang Wetao was Bullish for Wang to to Identify great talent. Yeah. You imagine that
+Speaker 2: the rest of the team is good too. Building flying devices in a small Shenzhen workspace at the time. The venture would become DJI, a drone company now valued in the tens of billions. Liang said, no. He turned it down.
+While pursuing his graduate studies at the university, Liang was convinced that artificial intelligence would change the world, a belief dismissed by many in 2008. That's a long time ago. The certainty was not performative. It was the kind that makes a man pass on a lottery ticket because he has already decided where he is going. People have been debating the turnt it down guy.
+He's been viral many, many times. And the general consensus of the joke is that it's funny because of course he was not offered a $5,000,000 scholarship to Drum. That's something that's impossible. That could never happen. I dug into it.
+It is possible. You can be offered a $5,000,000 scholarship. It's very difficult. There have to be like 10 things that go right for you to actually be offered a $5,000,000 scholarship, but it is possible. And I and I have it for you today.
+The mathematically correct version of the 5,000,000 scholarship. This is the low end again. He he did start with 15,000,000, but without without pretending. So the key is that it needs to be a privately endowed ten year fellowship. It actually has to be a decade.
+But a decade is possible if you are pursuing a ten year dentistry track where you become a medical doctor as well as doing many different fellowships.
+Speaker 1: At a big day
+Speaker 2: at school. Craniofacial reconstructive surgery, clinical oral and maxillofat facial surgery residency. So this could actually happen in Jacksonville. It's possible.
+Speaker 1: Yep. Jacksonville University, they have a Master of Science in Dentistry.
+Speaker 2: Yes. So you do your bachelor's, then you do your master's, then you do a DDS, DMD program, so you're getting a medical doctor. It can actually take you ten years to become a dentist, but then you are of course also there on a drumming scholarship. So it's a requirement that you drum, but they are paying for your new school.
+Speaker 1: Yes. You're not on the drummer track. Yes. Yes. You're just drumming to to grind for teeth.
+Speaker 2: And this happens all the time where someone gets an athletic scholarship, but then they study history. And the history degree is a normal price. The dentistry degree or the series of degrees that would be required. But there's more because that alone is not 5,000,000 for ten years of dental school. You also need an incredible amount of dependence.
+If you had seven children who are all minors, two adult relatives who require supervised care and maybe an elderly parent who requires daily assistance, legally a scholarship can cover your dependents.
+Speaker 1: That's right.
+Speaker 2: And so that's adding another, you know, a couple $100,000 a year in dependent care. Then the last thing that really adds up is housing and food. With all those dependents, you could be looking at a budget of $85,000 annually, so almost $1,000,000 over the ten year program for something that's, you know, you need a nine bedroom rental if you have 10 dependents at this point.
+Speaker 1: That's
+Speaker 2: right. Transportation. It also helps if you require wheelchair accessible accommodations because that can drive up the cost of everything if you require a wheelchair accessible dental studio for everything. And then lastly, study abroad can be included in scholarships. So if this if this ten year dental scholarship that requires you to play drums at a big at a big college in Jacksonville also allows you to do craniofacial reconstruction in Switzerland, then implant dentistry in Sweden.
+These are all the most expensive places where you can go abroad. Robotic oral surgery in Japan. So you're constantly touring the globe doing the most expensive study abroad programs. Yeah. That could add another 600 to your decade in school.
+Speaker 1: Cooper's calling it the perfect storm.
+Speaker 2: All the perfect storm. All for a total of $5,000,000
+Speaker 1: in And BPS so I have confirmed that Jacksonville University has its advanced special education program in orthodontics and dental facial orthopedics which started in 2003, so the timing does line up. This program would have sort of been hitting its stride as Big Boogie would have been, you know, his drumming talent was emerging. Yes. They knew they wanted to sign him. And Jacksonville University also has the notorious Rip Current marching band plus a pep band, wind ensemble, jazz ensemble, orchestra, and they have some smaller chamber groups.
+So it's possible they it was this perfect storm Yeah. Right where they wanted him to not only go on a storm So would he go an orthodontics global tour but also participate in all the different musical groups on campus Yeah. To get to that Yeah. 5 million. So Which he still in the end, even with that perfect storm, he still may have decided to turn it down.
+Yeah. Because he has gone on quite a run-in the music industry, If you look at his songs. Yeah. He's putting up he's putting up some big numbers.
+Speaker 2: Absolutely. Yeah. So the key with a scholarship is that in order for it to be a donation, so legally a scholarship, you can't just pay someone to go play in the band. It needs to be a scholarship, so it has to be for tax deductible expenses, which is why the number is so big because it's of course sounds like he's thinking of a name image and likeness deal that college athletes are able to get now, but that's a separate thing. But a private individual, private donor
+Speaker 1: But here's the other thing. Here's the other thing. Part of this whole thing, they could have been saying, hey, we think that NIL is actually going to become big Mhmm. In in sort of in we think it's going to be a Okay. Thing in It's gonna start in sports but it'll it'll sort of expand into musical pursuits.
+Yes. So that's where he could have had the 10 or 15 Which five, is like base case, this is a $5,000,000 deal.
+Speaker 2: But If NIL comes to band, we will extend We will be the first check-in the door.
+Speaker 1: Yeah. We'll help facilitate Yes. To, you know, $5,000,000 extension.
+Speaker 2: Yes. So a private donor could commit $5,000,000 to cover ten years of dental education, family care, disability accommodation, international training, housing and taxable living support on the condition that the recipient remained active as a university percussionist. That would be legal. It could happen and maybe it just did to Big Boogie. But he turned it down.
+Speaker 1: Jack in the chat says, dare you say he turned it up. He really did.
+Speaker 2: He did.
+Speaker 1: The line is he turned it down. Yeah. But in some ways, you know, going on this run off.
+Speaker 2: You know the beautiful thing? The beautiful thing would be him to go viral, make a ton of money in the music industry and then go and endow a $5,000,000 scholarship at a big college in Jacksonville for the next generation. The turnt it down scholarship. If he makes money, he should do it.
+Speaker 1: My problem is like, why is he not taking advantage of this? Like he should he should have A solve. A solve.
+Speaker 2: Hold Turn it down. Yeah. For sure. It would be
+Speaker 1: He's only released one track that I can see this year, which is two minutes and fifty six seconds. We'll have to listen after the show. I don't think it will be show appropriate. But that is our show today, folks.
+Speaker 2: Thank you for tuning in.
+Speaker 1: It's an honor to be back here in the UltraDome. It's fantastic. With you all.
+Speaker 2: We'll see you tomorrow at 11AM Pacific. Leave us five stars on Apple Podcast and Spotify. Sign up for our newsletter at tbpi.com.
+Speaker 1: Rolling Flashback.
+Speaker 2: We will see you tomorrow. Goodbye.

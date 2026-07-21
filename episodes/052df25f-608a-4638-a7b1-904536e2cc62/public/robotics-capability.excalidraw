@@ -1,0 +1,76 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "ladder-bg",
+      "type": "rectangle",
+      "x": 30, "y": 30, "width": 380, "height": 330,
+      "strokeColor": "#e5e7eb", "fillStyle": "solid",
+      "strokeWidth": 1, "roughness": 0, "opacity": 30, "seed": 1, "version": 1
+    },
+    {
+      "id": "level-3-box",
+      "type": "rectangle",
+      "x": 50, "y": 40, "width": 340, "height": 70,
+      "strokeColor": "#8b5cf6", "backgroundColor": "#ede9fe",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "seed": 2, "version": 1
+    },
+    {
+      "id": "level-3-text",
+      "type": "text",
+      "x": 70, "y": 48, "width": 300, "height": 50,
+      "text": "Level 3: 任何任务\nOne-shot learning → 个性化 → 实体 AGI\n未来：通过一段视频定制机器人行为", "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#6d28d9", "roughness": 1
+    },
+    {
+      "id": "level-2-box",
+      "type": "rectangle",
+      "x": 50, "y": 130, "width": 340, "height": 70,
+      "strokeColor": "#3b82f6", "backgroundColor": "#dbeafe",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "seed": 3, "version": 1
+    },
+    {
+      "id": "level-2-text",
+      "type": "text",
+      "x": 70, "y": 138, "width": 300, "height": 50,
+      "text": "Level 2: 未见过环境中的泛化\n99.1% 洗衣成功率（785 次测试）\n零样本部署 + 多样化衣物 → 可商用", "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#1d4ed8", "roughness": 1
+    },
+    {
+      "id": "level-1-box",
+      "type": "rectangle",
+      "x": 50, "y": 220, "width": 340, "height": 70,
+      "strokeColor": "#22c55e", "backgroundColor": "#dcfce7",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "seed": 4, "version": 1
+    },
+    {
+      "id": "level-1-text",
+      "type": "text",
+      "x": 70, "y": 228, "width": 300, "height": 50,
+      "text": "Level 1: 单一环境编程\n单一衬衫 × 单一房间 → 99%\n已有大量研究成果，方向在扩展范围", "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#166534", "roughness": 1
+    },
+    {
+      "id": "arrow-up",
+      "type": "arrow",
+      "x": 220, "y": 130, "width": 0, "height": -20,
+      "strokeColor": "#a855f7", "strokeWidth": 3, "roughness": 1, "seed": 5, "version": 1
+    },
+    {
+      "id": "arrow-up-2",
+      "type": "arrow",
+      "x": 220, "y": 220, "width": 0, "height": -20,
+      "strokeColor": "#3b82f6", "strokeWidth": 3, "roughness": 1, "seed": 6, "version": 1
+    },
+    {
+      "id": "scale-label",
+      "type": "text",
+      "x": 80, "y": 310, "width": 280, "height": 40,
+      "text": "Tony: 99% 的意义取决于范围与适应预算\n封闭赛道 vs 高速路 vs 城市街道 = 完全不同", "fontSize": 10, "fontFamily": 1,
+      "textAlign": "center", "strokeColor": "#6b7280", "roughness": 1
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff" }
+}

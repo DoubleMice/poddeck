@@ -1,0 +1,74 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "layer-app",
+      "type": "rectangle",
+      "x": 20, "y": 30, "width": 380, "height": 60,
+      "strokeColor": "#22c55e", "backgroundColor": "#dcfce7",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "seed": 1, "version": 1
+    },
+    {
+      "id": "text-app", "type": "text",
+      "x": 40, "y": 38, "width": 340, "height": 40,
+      "text": "应用层 → 全球竞争最激烈 • 开源助力创新\n任何人都可以构建 AI 应用 → 美国优势在创业生态", "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#166534", "roughness": 1
+    },
+    {
+      "id": "layer-model",
+      "type": "rectangle",
+      "x": 20, "y": 110, "width": 380, "height": 60,
+      "strokeColor": "#f59e0b", "backgroundColor": "#fef3c7",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "seed": 2, "version": 1
+    },
+    {
+      "id": "text-model", "type": "text",
+      "x": 40, "y": 118, "width": 340, "height": 40,
+      "text": "模型层 → Kimi K3 冲击的焦点\n开源能否追上闭源？→ 差距正在缩小，但未消失", "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#b45309", "roughness": 1
+    },
+    {
+      "id": "layer-hardware",
+      "type": "rectangle",
+      "x": 20, "y": 190, "width": 380, "height": 60,
+      "strokeColor": "#3b82f6", "backgroundColor": "#dbeafe",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "seed": 3, "version": 1
+    },
+    {
+      "id": "text-hardware", "type": "text",
+      "x": 40, "y": 198, "width": 340, "height": 40,
+      "text": "硬件/芯片层 → 美国最大杠杆点\nNVIDIA GPU + 芯片管制 = 物理层面的护城河", "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#1d4ed8", "roughness": 1
+    },
+    {
+      "id": "layer-energy",
+      "type": "rectangle",
+      "x": 20, "y": 270, "width": 380, "height": 60,
+      "strokeColor": "#ef4444", "backgroundColor": "#fecaca",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "seed": 4, "version": 1
+    },
+    {
+      "id": "text-energy", "type": "text",
+      "x": 40, "y": 278, "width": 340, "height": 40,
+      "text": "算力/能源层 → 数据中心建设是美国在进行的\nTyler: 数据中心的税收支撑了整个郡", "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#991b1b", "roughness": 1
+    },
+    {
+      "id": "concern-arrow",
+      "type": "arrow",
+      "x": 420, "y": 140, "width": 0, "height": 80,
+      "strokeColor": "#a855f7", "strokeWidth": 2, "strokeStyle": "dashed",
+      "roughness": 1, "seed": 5, "version": 1
+    },
+    {
+      "id": "concern-text",
+      "type": "text",
+      "x": 430, "y": 155, "width": 60, "height": 50,
+      "text": "Tyler:\n开源是闭源\n的补充", "fontSize": 10, "fontFamily": 1,
+      "textAlign": "center", "strokeColor": "#6d28d9", "roughness": 1
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff" }
+}

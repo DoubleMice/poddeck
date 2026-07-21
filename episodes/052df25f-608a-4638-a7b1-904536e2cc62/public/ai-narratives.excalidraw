@@ -1,0 +1,75 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "box-left",
+      "type": "rectangle",
+      "x": 20, "y": 30, "width": 190, "height": 140,
+      "angle": 0, "strokeColor": "#22c55e", "backgroundColor": "#dcfce7",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "seed": 1, "version": 1
+    },
+    {
+      "id": "text-left-title", "type": "text",
+      "x": 40, "y": 42, "width": 150, "height": 24,
+      "text": "🟢 正当竞争", "fontSize": 16, "fontFamily": 1,
+      "textAlign": "center", "strokeColor": "#166534", "roughness": 1
+    },
+    {
+      "id": "text-left-1", "type": "text",
+      "x": 30, "y": 70, "width": 170, "height": 40,
+      "text": "优秀研究员\n+ 足够算力\n= 好模型", "fontSize": 12, "fontFamily": 1,
+      "textAlign": "center", "strokeColor": "#166534", "roughness": 1
+    },
+    {
+      "id": "box-right",
+      "type": "rectangle",
+      "x": 290, "y": 30, "width": 190, "height": 140,
+      "angle": 0, "strokeColor": "#ef4444", "backgroundColor": "#fecaca",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "seed": 2, "version": 1
+    },
+    {
+      "id": "text-right-title", "type": "text",
+      "x": 310, "y": 42, "width": 150, "height": 24,
+      "text": "🔴 地缘战争", "fontSize": 16, "fontFamily": 1,
+      "textAlign": "center", "strokeColor": "#991b1b", "roughness": 1
+    },
+    {
+      "id": "text-right-1", "type": "text",
+      "x": 300, "y": 70, "width": 170, "height": 40,
+      "text": "算力走私\n+ 蒸馏攻击\n= 倾销武器", "fontSize": 12, "fontFamily": 1,
+      "textAlign": "center", "strokeColor": "#991b1b", "roughness": 1
+    },
+    {
+      "id": "arrow-lr",
+      "type": "arrow",
+      "x": 215, "y": 100, "width": 65, "height": 0,
+      "strokeColor": "#a855f7", "strokeWidth": 2,
+      "roughness": 1, "opacity": 100, "seed": 3, "version": 1
+    },
+    {
+      "id": "text-center", "type": "text",
+      "x": 70, "y": 200, "width": 350, "height": 20,
+      "text": "现实：可能两者兼有 → 更多证据需要时间", "fontSize": 13, "fontFamily": 1,
+      "textAlign": "center", "strokeColor": "#7c3aed", "roughness": 1
+    },
+    {
+      "id": "box-bottom",
+      "type": "rectangle",
+      "x": 60, "y": 240, "width": 360, "height": 80,
+      "angle": 0, "strokeColor": "#3b82f6", "backgroundColor": "#dbeafe",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "seed": 4, "version": 1
+    },
+    {
+      "id": "text-bottom", "type": "text",
+      "x": 80, "y": 255, "width": 320, "height": 50,
+      "text": "关键争议\n开源是否缩小了与闭源的差距？\n还是这本身就是追赶的常态？", "fontSize": 11, "fontFamily": 1,
+      "textAlign": "center", "strokeColor": "#1e40af", "roughness": 1
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff" }
+}

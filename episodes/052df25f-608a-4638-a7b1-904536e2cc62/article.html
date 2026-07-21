@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 冷战、奥德赛影评、Tyler Cowen 圆桌 — TBPN 深度解读</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    color: #1a1a1a;
+    background: #fafafa;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.5rem; }
+  .meta { color: #6b7280; font-size: 0.9rem; }
+  .meta a { color: #3b82f6; text-decoration: none; }
+  h2 {
+    font-size: 1.3rem;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin: 1.8rem 0 0.8rem;
+  }
+  p { margin: 0.8rem 0; }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin: 1rem 0 2rem;
+  }
+  .card {
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    border-left: 4px solid;
+    background: #fff;
+  }
+  .card-blue { border-color: #3b82f6; background: #eff6ff; }
+  .card-green { border-color: #22c55e; background: #f0fdf4; }
+  .card-yellow { border-color: #eab308; background: #fefce8; }
+  .card-purple { border-color: #a855f7; background: #faf5ff; }
+  .card-orange { border-color: #f97316; background: #fff7ed; }
+  .card-red { border-color: #ef4444; background: #fef2f2; }
+  .card strong { display: block; margin-bottom: 0.25rem; }
+  blockquote {
+    margin: 1.2rem 0;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid #3b82f6;
+    background: #eff6ff;
+    font-style: italic;
+    font-size: 0.95rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  blockquote .attribution {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  .stat {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 2px solid #e5e7eb;
+  }
+  .stat-value { font-size: 1.5rem; font-weight: 700; }
+  .stat-label { font-size: 0.8rem; color: #6b7280; margin-top: 0.25rem; }
+  .stat-blue .stat-value { color: #2563eb; }
+  .stat-green .stat-value { color: #16a34a; }
+  .stat-yellow .stat-value { color: #ca8a04; }
+  .stat-purple .stat-value { color: #9333ea; }
+  .quotes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  .quote-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid;
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+  .quote-card .attribution {
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  .qc-blue { border-color: #3b82f6; background: #eff6ff; }
+  .qc-green { border-color: #22c55e; background: #f0fdf4; }
+  .qc-yellow { border-color: #eab308; background: #fefce8; }
+  .qc-purple { border-color: #a855f7; background: #faf5ff; }
+  .qc-orange { border-color: #f97316; background: #fff7ed; }
+  .qc-red { border-color: #ef4444; background: #fef2f2; }
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .compare-col {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid;
+    background: #fff;
+    font-size: 0.9rem;
+  }
+  .compare-good { border-color: #22c55e; }
+  .compare-bad { border-color: #ef4444; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e5e7eb;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #9ca3af;
+  }
+  footer a { color: #6b7280; }
+  .note {
+    padding: 0.6rem 1rem;
+    background: #f3f4f6;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin: 0.8rem 0;
+  }
+  @media (max-width: 600px) {
+    .overview, .comparison, .quotes-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AI 冷战、奥德赛影评、Tyler Cowen 圆桌</h1>
+  <div class="meta">
+    TBPN 圆桌 · 2026 年 7 月 · 2h41m<br>
+    嘉宾：Tyler Cowen · Danny Yeung · Connor Love · Kahlil Lalji · Tarek Mansour · Tony Zhao<br>
+    <a href="https://share.transistor.fm/s/898ba371" target="_blank">收听完整节目 →</a>
+  </div>
+</header>
+
+<section>
+  <h2>这期为什么值得看</h2>
+
+  <div class="overview">
+    <div class="card card-blue">
+      <strong>AI 冷战升级</strong>
+      Kimi K3 开源模型引爆中美 AI 竞争新阶段——是正当追赶还是倾销战争？
+    </div>
+    <div class="card card-green">
+      <strong>Tyler Cowen 圆桌</strong>
+      经济学家深度分析：开源不可禁、AI Maniacs 崛起、消极情绪传染与亿万富翁税。
+    </div>
+    <div class="card card-yellow">
+      <strong>机器人突破</strong>
+      Sunday Robotics 洗衣折叠 99.1% 成功率，one-shot learning 能力从规模化预训练中涌现。
+    </div>
+    <div class="card card-purple">
+      <strong>GPU 远期曲线</strong>
+      Kalshi 构建计算力期货市场——计算力可能成为地球上最大的商品。
+    </div>
+    <div class="card card-orange">
+      <strong>代理人支付</strong>
+      Natural 获 $3000 万 A 轮融资，为 AI 代理搭建支付基础设施，12 个月内定局。
+    </div>
+    <div class="card card-red">
+      <strong>美国动力主义</strong>
+      a16z 加码 $12 亿，Connor Love 加盟：国防制造硬件与 AI 的碰撞才刚刚开始。
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>一、Kimi K3：AI 冷战的新战线</h2>
+
+  <p>2026 年 7 月 19 日，中国 AI 公司 Moonshot（月之暗面）发布了 Kimi K3——一个拥有超过 2.8 万亿参数的开源模型。它在多项基准测试中追平甚至超越了美国前沿模型。半分析（Semi Analysis）的技术评估指出：Kimi K3 的超大参数量实际上对 NVIDIA 是利好——因为存储 2.8 万亿权重需要 NVL72 这种大规模 scale-up 集群。</p>
+
+  <p>Kimi K3 输入价格为 $3/百万 token，输出 $15/百万 token——比前沿闭源模型便宜约 30%。在 Front End Arena 基准上，它一跃超越所有现有模型。上线不到 48 小时，官方宣布需求已超出当前算力容量，暂停新用户订阅，优先保障现有用户。在 X 平台上的声明写道："Kimi K3 收到的喜爱远超我们的预期，我们的 GPU 正在承受压力。"</p>
+
+  <p>但 Kimi K3 真正引爆的是两条截然不同的叙事。一条是光明叙事：一群非常优秀的 AI 研究人员，筹集了足够多的计算资源，用了聪明的技术路线（尤其是线性注意力机制 KDA），做出了一个卓越的模型。开源是吸引人才、获取关注、最终推动 API 商业化的合理策略——就像 Red Hat Linux 被 IBM 以 $300 亿收购一样，开源不等于不赚钱。</p>
+
+  <p>另一条是黑暗叙事：算力通过芯片管制漏洞走私进入中国，数据从美国前沿实验室的 API 中经由壳公司提取，这是一场蒸馏攻击。开源策略本身是地缘政治武器——故意摧毁美国 AI 公司。用 Growing Daniel 的话说："中国在 AI 领域做的是倾销——他们进入的每个行业都这么做。目标是补贴自己的产业，以亏损价消灭本地竞争，然后收取垄断价格控制市场。在钢铁和汽车行业这已经很糟糕了，在 AI 领域，这对我们国家可能是致命的。"</p>
+
+  <div class="comparison">
+    <div class="compare-col compare-good">
+      <strong>🟢 光明叙事</strong>
+      <p>一群优秀 AI 研究员筹集了足够算力，发布了优秀模型。开源是吸引人才、获取关注、最终推动 API 商业化的合理策略。</p>
+    </div>
+    <div class="compare-col compare-bad">
+      <strong>🔴 黑暗叙事</strong>
+      <p>算力走私、数据渗出、蒸馏攻击。开源策略是故意摧毁美国公司的地缘政治武器——AI 冷战已经打响。</p>
+    </div>
+  </div>
+
+  <p>辩论的激烈程度从 X 平台的时间线上可见一斑：Dean Ball、David Sacks、Emil Michael 等人在周末反复交锋。Augustine LeBron 提出了一个更深的质疑：如果倾销最终导致垄断高价，反而会制造市场空间让新进入者竞争。真正令人担忧的是"失去一代人的时间"——如果美国失去了所有 AI 研究人员和工业基础，重建将极其缓慢，就像今天的美国已经没有多少核工程师一样。</p>
+
+  <p>美国政府正在考虑应对方案，但似乎正在走向"软性劝阻"而非直接禁令。Axios 的报道援引一位熟悉政府决策的消息人士："实际发生的是更缓慢、更持久的东西——采购规则、实体清单威胁，以及针对使用中国模型的美国公司的公众压力。"</p>
+</section>
+
+<section>
+  <h2>二、Tyler Cowen：开源不可禁</h2>
+
+  <blockquote>
+    "Open source is coming and is here whether we like it or not. The attempt to outlaw it or ban it or use sanctions against it is going to fail miserably."
+    <span class="attribution">— Tyler Cowen</span>
+  </blockquote>
+
+  <p>作为美国最知名的经济学家之一，Tyler Cowen 对这轮 AI 冷战辩论给出了一个清晰的立场：试图禁止或制裁中国开源模型"注定悲惨地失败"。</p>
+
+  <p>他提出了三个层面的论证。第一，技术上不可行。当 AI 模型可以在端侧设备上运行时——而这很快就能做到——任何禁令都将毫无意义。第二，供应链已深度绑定。大量美国企业已经在使用中国开源模型，包括 Thinking Machines 用它作为自己的训练流程中的一环。"你要把这些模型从他们的业务里拔出来吗？"第三，也是最反直觉的一个论点：开源其实是闭源的补充。正是因为知道有开源的"保险"存在，企业才更愿意锁定到美国闭源系统上。</p>
+
+  <p>关于更广泛的贸易背景，Tyler 指出：欧洲如果对中国发动全面贸易战，将会是输家。这"反映了欧洲的悲哀"——他们无法轻松地说"我们会少造汽车，转而做五六个我们有优势的其他领域"。但提高关税不会帮助他们达到那个状态，反而会延迟结构调整，并且关税最终会通过对上游投入品的影响，打击所有其他产业。</p>
+
+  <p>他提到了一个更底层的观察：欧洲汽车业的真正打击不是中国车卖进了欧洲，而是中国消费者开始买中国车。保时捷卡宴曾经在中国热销，现在本地替代品正在占领市场。如果中国模型在中国本土被广泛采用，美国前沿实验室可能面临同样的"市场收缩"问题。</p>
+</section>
+
+<section>
+  <h2>三、AI Maniacs：未来的主人翁</h2>
+
+  <blockquote>
+    "They spend their spare time mastering AI. They know way more than their so called teachers. They're starting companies or building models. You're going to have a large number of companies with quite a very small number of employees but pretty high revenue."
+    <span class="attribution">— Tyler Cowen</span>
+  </blockquote>
+
+  <p>Tyler Cowen 给这个时代最重要的积极叙事取了一个名字：<strong>AI Maniacs</strong>——那些把所有业余时间用来掌握 AI 的年轻人。在节目录制的当天早晨，他刚刚和两个 AI Maniacs 交流过：一个 13 岁，来自阿布扎比；一个 17 岁，来自芬兰。他们自己训练模型、创办公司，比周围的教师懂得多得多。</p>
+
+  <p>AI Maniacs 的崛起意味着什么？Tyler 的预测是：将出现大量拥有极少员工但极高营收的公司。这些 AI Maniacs 将进入所有行业——医学、法律、商业咨询、银行业——任何允许他们竞争的领域。他们将引发"大规模的地位重新分配"，而这将对政治系统造成巨大冲击。不是所有人都会成为企业家——Tyler 强调大多数人确实不应该成为企业家——但少数人的影响力将被不成比例地放大。</p>
+
+  <blockquote>
+    "With AI maniacs, I'm going younger and weirder."
+    <span class="attribution">— Tyler Cowen</span>
+  </blockquote>
+
+  <p>在投资逻辑上，Tyler 说自己在"变得更加年轻和更加古怪"。他注意到了一个令他惊喜的趋势：欧洲在 AI Maniacs 这个指标上表现相当好。为什么是欧洲？他的解释是：ChatBot 类产品在欧洲没有引起太大反响——它们太像"文化产品"了。但 Agents（AI 代理）给了欧洲年轻人一个全新的空间。美国孩子长久以来就有很多机会，但对欧洲孩子来说，AI 代理是全新的、以前不存在的机遇。</p>
+</section>
+
+<section>
+  <h2>四、Vibecession：为什么经济好、情绪差？</h2>
+
+  <blockquote>
+    "I call it negative emotional contagion. And you see it in many other eras of world history. It feeds on itself."
+    <span class="attribution">— Tyler Cowen</span>
+  </blockquote>
+
+  <p>Tyler Cowen 用一个词概括了当前美国公众情绪的悖论：<strong>消极情绪传染</strong>。财富积累、就业市场、股市、实际工资——这些指标的表现"都还不错到挺好"，但公众情绪却持续低迷。18-24 岁年轻人的失业率已经回到了大语言模型出现之前的水平——AI 并没有摧毁这个市场。</p>
+
+  <p>他的诊断是：人们对国家、社会制度普遍持负面态度（军队除外），信任度处于极低水平。COVID 时期和大金融危机期间，人们被反复告知"一切没事"，但事实并非如此——这种信任的破坏是长期性的。一旦消极情绪传染开始，它就会自我强化，并且很难逆转。历史上看，有时候需要一个战争或某种灾难才能打破这种循环。</p>
+
+  <p>一个有趣的反面观察是：如果当前确实经历了一次短暂衰退或市场修正，反而可能是一个"看涨信号"。因为人们本来就觉得情况不好，一旦"被证实"，认知失调消失了，他们可能会重新开始投资和冒险。但 Tyler 也警告了另一种可能：如果真正的坏事发生了，每个人都会说"我早告诉你了"，然后陷入更深的泥潭。</p>
+</section>
+
+<section>
+  <h2>五、Connor Love：美国动力主义的下一个阶段</h2>
+
+  <p>Connor Love 从 Lightspeed 加盟 Andreessen Horowitz 的美国动力主义（American Dynamism）团队，担任 GP。团队拥有 $12 亿新资本，由四位 GP 协同运作——Katherine Boyle 继续留任。</p>
+
+  <p>Connor 的核心投资逻辑是：在任何经历"构造性转变"（tectonic shift）的新品类中，你会在开始时低估市场规模的 99%。正确的投资时机是"拐点阶段"——当你可以写一张增长阶段的支票，但公司仍然处于产品市场匹配的早期阶段。在需要大量资本成长的 AD 领域，这正是返还基金的投资机会。</p>
+
+  <p>他将无人机战争比作"第一次世界大战水平"的早期阶段：今天国防部的无人机数量，就像一战前有人驾驶飞机的数量——处在指数增长的起点。国防部现在不仅拥有数千架无人机，还在订购数百万架。而且这不是一次性的采购：可消耗的无人机让战争变成了持续数十年的猫鼠游戏——造了一百万架，敌人适应了，你就需要造新一代具有电子战抗性、更远航程、更强能力的型号。</p>
+
+  <blockquote>
+    "If you can't build real hard stuff, you're not going to have lasting value over time."
+    <span class="attribution">— Connor Love</span>
+  </blockquote>
+
+  <p>Connor 强调了被忽视的核心问题：不是预算够不够大，而是这些公司能不能真正交付。"我们需要 40 座特斯拉工厂，需要建造数千台这样的设备。如果你加上再多 AI 魔法粉末，但造不出真正的硬东西，就不会有持久的价值。"</p>
+</section>
+
+<section>
+  <h2>六、iMATE：史上增长最快的保健品</h2>
+
+  <div class="stat-grid">
+    <div class="stat stat-blue">
+      <div class="stat-value">$1 亿</div>
+      <div class="stat-label">ARR，11 个月达成</div>
+    </div>
+    <div class="stat stat-green">
+      <div class="stat-value">$2 亿</div>
+      <div class="stat-label">ARR，18 个月达成</div>
+    </div>
+    <div class="stat stat-yellow">
+      <div class="stat-value">43 国</div>
+      <div class="stat-label">Day 1 全球化</div>
+    </div>
+    <div class="stat stat-purple">
+      <div class="stat-value">5200 万</div>
+      <div class="stat-label">已交付产品份数</div>
+    </div>
+  </div>
+
+  <p>Danny Yeung 与 David Beckham 联合创立的 iMATE 自称"史上增长最快的保健品品牌"——这一数字得到了验证。19 个月前起步，11 个月达到 $1 亿 ARR（行业平均需要 3-5 年），18 个月达到 $2 亿 ARR。今年预期超过 $2 亿营收。</p>
+
+  <p>Danny 的策略是 Day 1 全球化——首日即向 31 个国家发货，现在覆盖 43 个国家。从数据看：美国的收入最高，其次是加拿大、英国、澳大利亚和新加坡。每天交付 20 万份产品。公司还从 General Catalyst 获得了 $10 亿增长承诺（来自其 CBF 基金），为每一美元营销支出提供 70 美分资金，以客户留存数据承保未来收入风险。有趣的是，尽管公司表现强劲，母公司 Prenetics（纳斯达克代码 PRE）的市值仅 $3.54 亿——Danny 认为私人市场与公开市场之间存在巨大的定价脱节。</p>
+</section>
+
+<section>
+  <h2>七、代理人支付：12 个月内决定胜负</h2>
+
+  <blockquote>
+    "Agents execute a majority of global payment volume over the next decade. That world is monopolistic or duopolistic in nature because payments are a highly network effects driven business. And that world is determined in the next, like, twelve months."
+    <span class="attribution">— Kahlil Lalji，Natural CEO</span>
+  </blockquote>
+
+  <p>Kahlil Lalji 的 Natural 获得了 Khosla Ventures 领投的 $3000 万 A 轮融资，为 AI 代理搭建支付基础设施。目前的能力包括：代理可以存储余额、向其他代理或商家付款或请款、进行内外部账户转账。短期内将增加：通过电话收集信用卡信息并完成支付。</p>
+
+  <p>Natural 的定位框架具有不同寻常的野心：同时构建"银行 + PSP + 网络"——相当于 JPMorgan + Stripe + Visa 的总和。Kahlil 解释了为什么 Stripe 等现有玩家不够：代理需要的是一套统一架构中内置的所有支付原语，而不是用现有支付系统拼凑。"从零开始构建的优势在于架构的统一性——当代理的能力边界不断扩展时，你不会被传统支付系统的设计限制所困。"</p>
+
+  <p>这个市场的时间窗口极其紧迫：在支付这个天然趋向垄断或双头垄断的行业中，2027 年的开发者默认选择很可能就是 2035 年的默认选择。Kahlil 称这是"一场争夺土地的战争"——尽管市场目前看起来还不像。</p>
+</section>
+
+<section>
+  <h2>八、GPU 远期曲线：计算力的金融市场</h2>
+
+  <blockquote>
+    "Compute as a commodity is gonna probably be the largest commodity on the planet, and so the derivative market for it will probably be the largest derivative market on the planet, outpacing treasury futures."
+    <span class="attribution">— Tarek Mansour，Kalshi CEO</span>
+  </blockquote>
+
+  <p>Kalshi 正在做一件传统金融历史上反复验证过的事：为一种新的大宗商品构建期货市场。Tarek Mansour 的逻辑链条清晰而震撼——当前全球计算力支出约 $1 万亿，到 2030 年预计增长 10 倍至 $10 万亿。衍生品市场通常达到现货市场的 10-15 倍。这意味着一个 $100 万亿级别的计算力衍生品市场——超过美国国债期货。</p>
+
+  <p>Kalshi 正在构建"GPU 远期曲线"——一系列从当前到未来的 GPU 价格预测市场，使用 Orin 公司的交易价格指数作为定价基准。Tarek 指出市场正在经历有意思的变化：在经历了一年多的几乎单边下降后，计算力价格最近出现了回升和波动——而这正是构建衍生品市场所需的"健康动态"。</p>
+
+  <p>预测市场与社交媒体的鲜明对比，是 Tarek 最核心的论点之一。在 X 平台上，每分钟都有"AI 要毁灭世界"或"我们马上要爆发"的极端叙事。但如果你去看 GPU 远期曲线——它基本是平的。市场的判断是：创新与消费的节奏在持续匹配，没有疯狂的断层。</p>
+
+  <blockquote>
+    "The extreme makes for a good tweet, not a good trade."
+    <span class="attribution">— Tarek Mansour</span>
+  </blockquote>
+
+  <p>Tarek 还分享了一个关于市场操纵的有趣案例：有人试图投入 $200 万操纵 Spencer Pratt 在加州选举中的预测市场价格。价格变动只持续了 9 秒——套利者立刻把价格修正回来。如果同一个人用这 $200 万去委托偏倚的民调或买广告，效果会持久得多。这就是"皮肤在游戏中"的力量：市场对正确答案给出了最强的经济激励。</p>
+</section>
+
+<section>
+  <h2>九、洗衣超智能：机器人折叠 99.1% 成功率</h2>
+
+  <p>Tony Zhao 的 Sunday Robotics 宣布了一个令行业震动的数据：在 785 次自主尝试中，机器人折叠衣物的成功率达到 99.1%。更关键的是这个数字的含义——模型在被部署到从未见过的家庭、处理从未见过的衣物时保持了相同的成功率。用 Tony 的话说，"这是第一次我们训练出一个同时具有泛化性和可靠性的策略。"</p>
+
+  <p>但真正令人惊叹的发现是 <strong>one-shot learning</strong>：当预训练的规模（数据和计算量）被充分扩展后，模型涌现出了仅凭一次演示就能学会新技能的能力。给机器人演示一次"我希望你这样叠衬衫"，它就能把这个动作泛化到一件完全没见过的衬衫、一个完全没见过的床面上。"它真的理解了。"</p>
+
+  <blockquote>
+    "When we scale up pretraining, you can do one shot learning with these models. The model can extrapolate that to an unseen shirt on an unseen bed. It actually understands it."
+    <span class="attribution">— Tony Zhao</span>
+  </blockquote>
+
+  <p>Tony 还澄清了一个行业常见的混淆：很多人宣称"99% 成功率"，但成功率只有在明确定义了范围（需要处理的长尾情况有多长）和适应预算（是否允许在测试集上训练）之后才有意义。在一个房间里叠一种衬衫达到 99%，与在任何房间里叠任何衬衫达到 99%，是两个完全不同量级的挑战。他说这个就像自动驾驶中——封闭赛道 99%、高速路 99% 和城市街道 99% 之间的差距。</p>
+
+  <p>从商业角度，Tony 认为让机器人"值得存在于家庭中"的最小镇任务集其实很短——洗衣服、装洗碗机、简单清洁就足以证明其价值。但从研究角度，他的团队的目标是"实体 AGI"——能解决任何通过少量演示就能定义的物理任务。他把公司的研究路线称为"Research-Market Fit"：同一个训练策略既服务产品需求，也推动通用智能研究，两个目标在实践中是高度对齐的。</p>
+</section>
+
+<section>
+  <h2>十、《奥德赛》：导演就是新 IP</h2>
+
+  <p>Christopher Nolan 的《奥德赛》以 $2.64 亿全球首周末票房开画，成为 2026 年第三高开画的电影。华尔街日报用了一个引人注目的标题：<strong>《奥德赛》证明好莱坞顶级导演已经成为新的"特许经营"</strong>。</p>
+
+  <div class="stat-grid">
+    <div class="stat stat-blue">
+      <div class="stat-value">$2.64 亿</div>
+      <div class="stat-label">全球首周末</div>
+    </div>
+    <div class="stat stat-green">
+      <div class="stat-value">53%</div>
+      <div class="stat-label">观众为导演而来</div>
+    </div>
+    <div class="stat stat-yellow">
+      <div class="stat-value">$2.5 亿</div>
+      <div class="stat-label">制作预算</div>
+    </div>
+  </div>
+
+  <p>最震撼的数据来自 Rendrack：53% 的观众表示导演是来看这部电影的首要原因——不是演员、不是原著 IP、不是类型偏好。环球影业的国内发行总裁评论道："你并不经常看到这种情况。Chris Nolan 赢得了观众的信任和尊重。"</p>
+
+  <p>这是一场行业变革的时代标记。漫威、速度与激情、变形金刚等经典 IP 系列票房正在下滑。Z 世代尤其对老化的品牌和特效驱动的电影持怀疑态度——他们更追随有独特视角、有真实表达的导演个人。制片厂正在疯狂签约最有前途的电影人：Ryan Coogler 拿到了制作自己原创恐怖片的罕见条件；Zach Krieger 拿到了《生化危机》改编权；Greta Gerwig 用她的影响力说服了 Netflix 让她改编《纳尼亚传奇》。</p>
+
+  <p>Tyler Cowen 的影评则更审慎。他认为这部电影"梦幻而印象派"，相对其他电影非常出色，但"相对我的预期，我感到失望"。对话质量一般，选角上——Matt Damon 不是奥德修斯，"身体上不够有说服力"；扮演 Calypso 的女演员"看起来像个郊区家庭主妇"；Zendaya 虽然令人喜爱，但"完全没有实质的戏份"。不过他承认：古典学者们正在享受史无前例的关注——不同译本的《奥德赛》都登上了畅销榜。他甚至已经安排了四次影院观看——"我在普通电影院简直就是在凑合。"</p>
+</section>
+
+<section>
+  <h2>更多精彩：AI 改变好莱坞、数学突破与自动驾驶的敌人</h2>
+
+  <h3>AI 正在进入电影制作</h3>
+  <p>Netflix 披露 2026 年已有约 300 部作品在制作流程中使用了生成式 AI——最大应用集中在后期制作。联合 CEO Ted Sarandos 表示，一部关于美国革命的纪录系列片使用了 17 分钟 AI 增强画面，用传统制作方法在财务上不可行。Netflix 的立场是：AI 不是用来替代创意人员的，而是电影制作软件的"下一代进化"。</p>
+
+  <h3>Jacobian 猜想被 AI 证伪</h3>
+  <p>一个悬念了数十年的代数几何猜想——Jacobian 猜想——被一位在 Anthropic 工作、使用 Fable 模型的数学家找到了反例，从而被证伪。这位数学家在这个领域已经深耕了大约十年。Tarek 评论道："他们刚刚创造了 100 万个 Jacobian 猜想。你根本不知道接下来会发生什么。"</p>
+
+  <h3>DeepSeek 创始人：说"不"的人</h3>
+  <p>梁文锋在大学期间拒绝了 DJI 创始人汪滔的联合创始人邀约——当时的 DJI 还只是深圳的一个小工作室，后来成为估值数百亿美元的无人机巨头。他在 2008 年就读研究生期间就坚信 AI 将改变世界——在一个人人都嘲笑这个信念的时代。那份确信"不是表演性的——而是那种让你拒绝一张中奖彩票的确信，因为你已经决定了要去哪里。"</p>
+
+  <h3>诉讼律师 vs 自动驾驶</h3>
+  <p>一个令人震惊的发现：美国的诉讼律师正在游说反对自动驾驶汽车——因为自动驾驶太安全了，会让车祸减少，从而耗尽他们的案源。美国司法协会近十年来一直是自动驾驶立法的主要反对者。Nick Carter 写道："我的下巴掉下来读到这个。"</p>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+
+  <div class="quotes-grid">
+    <div class="quote-card qc-blue">
+      "Open source is coming and is here whether we like it or not. The attempt to outlaw it or ban it is going to fail miserably."
+      <span class="attribution">— Tyler Cowen，论 AI 开源</span>
+    </div>
+    <div class="quote-card qc-green">
+      "With AI maniacs, I'm going younger and weirder."
+      <span class="attribution">— Tyler Cowen，论 AI 投资</span>
+    </div>
+    <div class="quote-card qc-yellow">
+      "I call it negative emotional contagion. It feeds on itself."
+      <span class="attribution">— Tyler Cowen，论 Vibecession</span>
+    </div>
+    <div class="quote-card qc-purple">
+      "Censure is the tax a man pays to the public for the privilege of being eminent."
+      <span class="attribution">— Jonathan Swift（被 Tyler Cowen 引用）</span>
+    </div>
+    <div class="quote-card qc-orange">
+      "Compute as a commodity is gonna probably be the largest commodity on the planet."
+      <span class="attribution">— Tarek Mansour，论 GPU 远期曲线</span>
+    </div>
+    <div class="quote-card qc-red">
+      "The extreme makes for a good tweet, not a good trade."
+      <span class="attribution">— Tarek Mansour，论预测市场 vs 情绪</span>
+    </div>
+    <div class="quote-card qc-blue">
+      "Agents execute a majority of global payment volume over the next decade. That world is determined in the next twelve months."
+      <span class="attribution">— Kahlil Lalji，论代理人支付</span>
+    </div>
+    <div class="quote-card qc-green">
+      "When we scale up pretraining, you can do one shot learning. The model can extrapolate to an unseen shirt on an unseen bed."
+      <span class="attribution">— Tony Zhao，论机器人涌现能力</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    基于 TBPN 播客 2026 年 7 月 20 日期节目生成 ·
+    <a href="https://share.transistor.fm/s/898ba371" target="_blank">收听完整节目</a>
+  </p>
+  <p style="margin-top: 0.5rem; font-size: 0.75rem;">PodDeck · 结构化播客笔记 · 自动生成</p>
+</footer>
+
+</body>
+</html>
