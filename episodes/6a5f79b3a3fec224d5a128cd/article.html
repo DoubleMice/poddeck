@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>147. 和蚂蚁灵波沈宇军聊：机器人原生基础模型、大脑和本体的关系、预训练与数据scale up、老师汤晓鸥</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #f8f9fa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  header {
+    text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #868e96;
+    margin-top: 8px;
+  }
+  .meta span { margin: 0 8px; }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+    color: #111;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 12px;
+    color: #222;
+  }
+  p {
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0 36px;
+  }
+  @media (max-width: 600px) {
+    .overview { grid-template-columns: 1fr; }
+    article { padding: 24px 16px; }
+    h1 { font-size: 22px; }
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .card-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .card-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .card-title {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 4px;
+    color: #1a1a1a;
+  }
+  .highlight {
+    background: #fff9db;
+    border-left: 4px solid #f08c00;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .highlight strong {
+    color: #e8590c;
+  }
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: #f8f9fa;
+    border-left: 4px solid #1971c2;
+    border-radius: 6px;
+    font-style: italic;
+    color: #495057;
+    font-size: 16px;
+  }
+  blockquote .attribution {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #868e96;
+  }
+  .quotes-section {
+    margin: 32px 0 24px;
+  }
+  .quote-item {
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .quote-item .context {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-style: normal;
+    color: #868e96;
+  }
+  .qi-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .qi-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .qi-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .qi-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .qi-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .qi-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e9ecef;
+    font-size: 14px;
+    color: #868e96;
+    text-align: center;
+  }
+  footer a {
+    color: #1971c2;
+    text-decoration: none;
+  }
+  em { font-style: italic; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>147. 和蚂蚁灵波沈宇军聊：机器人原生基础模型</h1>
+  <div class="meta">
+    嘉宾：沈宇军<span>·</span>蚂蚁灵波科技首席科学家<span>·</span>2026年7月
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    来源：小君 · 商业访谈录
+  </div>
+</header>
+
+<h2>为什么这一期值得关注</h2>
+
+<div class="overview">
+
+<div class="card card-blue">
+<div class="card-title">一家"只做大脑"的中国机器人公司</div>
+蚂蚁灵波已开源两代具身模型，从9种构型扩展到20+种，预训练数据从2万小时增长到6万小时。
+</div>
+
+<div class="card card-green">
+<div class="card-title">"具身原生"的理念赌注</div>
+沈宇军坚持从物理世界需求出发，从头训练具身基础模型，而非在数字世界模型上"魔改"。
+</div>
+
+<div class="card card-orange">
+<div class="card-title">GPT-1时刻还没到</div>
+核心瓶颈不在模型架构，而在数据的scale up。沈宇军认为具身数据需要达到百万小时级别。
+</div>
+
+<div class="card card-purple">
+<div class="card-title">大脑落后于本体的行业共识</div>
+2025年大家都在show demo，2026年都在谈进场景——大脑的开发进度已落后于硬件。
+</div>
+
+<div class="card card-yellow">
+<div class="card-title">中美路线的融合与差异</div>
+Generalist（高效后训练）vs Physical Intelligence（zero-shot），但殊途同归——两种能力最终都需要。
+</div>
+
+<div class="card card-red">
+<div class="card-title">创业就是赌</div>
+沈宇军说："在有限资源下，路径不确定时，就是要敢赌。"三次豪赌：传感器原生、具身原生、数据原生。
+</div>
+
+</div>
+
+<h2>从清华到商汤：一个"对打榜不感兴趣"的AI研究者</h2>
+
+<p>
+沈宇军的AI之路是从2014年底开始的。那时他还是清华大三学生，商汤刚在清华东门成立，他因暑期实习的硬性要求而踏入AI领域。此后一路从商汤干到大学毕业，又去了港中文跟汤晓鸥老师读博。
+</p>
+
+<p>
+但他坦承，自己"对打榜这个事情、最后就看一个number"并不感兴趣。2017年GAN（对抗生成网络）兴起时，他找到了真正让自己兴奋的方向——生成模型。"它是能真的能生成一张图然后让大家去看，甚至可以做简单的编辑。"从此他从图像编辑一路向上追溯：编辑→生成→预训练→表征学习，形成了从下游到上游的完整认知。
+</p>
+
+<p>
+即便在Diffusion和自回归生成流行之后，他的团队仍坚持GAN的scale up，直到2026年初做了最后一次尝试。结论是：GAN仍有价值，但计算量的利用效率太低，不适合生成视频等极复杂内容。不过对抗训练的博弈机制——同时训两个模型、让它们互相迭代——是他认为仍会以其他形式延续的技术资产。
+</p>
+
+<h2>从字节到蚂蚁：视觉AI何处安放？</h2>
+
+<p>
+博士毕业后，沈宇军先去了字节跳动做抖音特效——用AI技术实现"20年后你长什么样"、"男生变女生"这类爆款玩法。但一年后他感到"确实还有很多自己想做但是没做的东西"。彼时是2022年，ChatGPT尚未爆发，蚂蚁技术研究院在招人。
+</p>
+
+<p>
+回顾计算机视觉过去十几年，沈宇军总结：人脸识别是第一波大规模应用，自动驾驶是第二波。"除此之外好像还没有看到哪一个视觉应用被大规模用起来，有比较强的产业价值。"因为视觉在数字世界"用武之地不够"，但在物理世界"离开视觉机器人肯定是没法工作的"，他于2024年决定转向具身智能。
+</p>
+
+<p>
+他经历了三种组织形态：字节（产品公司用AI赋能现有产品）→蚂蚁技术研究院（研究驱动，大模型爆发后对"什么是好的研究"产生迷茫）→蚂蚁灵波（直面产业，"既有发挥的空间，又能做对产业有价值的事"）。第三种形态正是他当下最珍视的状态。
+</p>
+
+<h2>蚂蚁灵波创立：从研究院到直面产业</h2>
+
+<p>
+2024年底，蚂蚁集团正式宣布成立蚂蚁灵波科技，定位为一家做具身智能的子公司。沈宇军当时在研究院也正propose要做具身方向，两者不谋而合。
+</p>
+
+<div class="highlight">
+<strong>关键决策：</strong>成立子公司而非研究部门——"如果当做研究机构的形式去做，很有可能做一做就脱离了这个行业。研究人员认为的先进技术跟行业需要的先进技术是有gap的。"
+</div>
+
+<p>
+刚到灵波时，团队不到十个人。沈宇军的第一个感受是"还是太天真了"——把模型部署到机器人上，通信怎么调、系统怎么搭，"有太多太多的技术栈超出了我本来的认知"。第二个感受是"一边学习一边跟着行业变化，这种感觉还比较奇妙"。
+</p>
+
+<h2>为什么只做大脑不做本体？</h2>
+
+<p>
+灵波创立之初就明确了核心决策：做机器人的大脑，不做本体。这个判断源于一个长远愿景："我们希望未来某一天每家都会有一个机器人。这个机器人是什么样子谁也不知道，甚至是不是同一个品牌也不一定——就像大家现在的手机也是五花八门。我们希望在这个机器人里面跑的都是灵波的模型。"
+</p>
+
+<p>
+沈宇军对"通用"的定义比行业常见理解更深一层：通用不仅是跨任务、跨场景，还包括跨本体。"什么样的本体适合什么样的场景，从产品定义最开始就已经决定了。有些任务适合它做，有些不适合它做。"正因为预判单一硬件形态无法覆盖所有场景，灵波才从大脑切入，让模型在预训练阶段就经历不同本体，落地时快速适应。
+</p>
+
+<h2>技术路线的演进：两个关键决策</h2>
+
+<p>
+25年是灵波的奠基年。同年3月，行业还未出现"世界动作模型"（WAM）概念时，沈宇军就做出两个判断：
+</p>
+
+<p>
+<strong>第一，必须从视频里学习时序建模。</strong>不是把视频抽帧当成图像来看，而是真的让模型学会时序的东西。这催生了后来灵波的视频动作模型（VA）。
+</p>
+
+<p>
+<strong>第二，必须从真实传感器出发。</strong>学术界"心照不宣"的习惯是数据集都比较干净，但机器人在现实世界中跑，传感器噪声完全无法忽略。灵波从一开始就坚持从传感器维度做空间智能——不仅是视觉，还包括触觉。
+</p>
+
+<p>
+这两个决策催生了灵波1.0的四个模型（Depth、VA、World、VLA），于2026年1月开源。
+</p>
+
+<h2>26年的豪赌：具身原生</h2>
+
+<p>
+1.0发布后，沈宇军发现了核心矛盾：数字世界模型的开发初衷与物理世界的需求不匹配。比如视频生成追求高清画质，但机器人控制不需要；而机器人需要的实时单向推理和推理效率，数字世界模型并不天然支持。
+</p>
+
+<div class="highlight">
+<strong>关键赌注：</strong>既然不能push数字世界团队改模型（他们有自己的迭代节奏），那就全部基于物理世界的需求重做一遍——与视觉相关的所有东西，从头来训。
+</div>
+
+<p>
+这不是一个小决定。"原生这个事情很有可能做到最后就发现没做出来。训了一年，花了好多资源，结果这模型就是不收敛。"但沈宇军力排众议，坚持这是必由之路："如果数字世界那条路走不了特别长远，那这是一条必经的路。如果走不通，如果不是我们走通，也会有人走通的。"
+</p>
+
+<p>
+好在，至少第一步迈出去了——"不敢说它一定是百分之百验证，但至少我们迈出了一步。"
+</p>
+
+<h2>灵波2.0：六个模型的完整体系</h2>
+
+<p>
+灵波2.0发布了六个开源模型，围绕"看得更清楚、想得更明白、干得更利索"三个层次展开：
+</p>
+
+<p>
+<strong>视觉层（看得更清楚）：</strong>灵波Vision（几何原生预训练）→ 灵波Depth（空间深度感知）。弃用Dino v2这种语义理解预训练，改为从几何出发——"从边缘出发，让模型更好地理解几何概念"。效果体现在两个惊艳案例上：能看到反光水龙头流出的水流位置，以及玻璃门后的猫——"能看到是语义理解，摸不到是空间感知。"
+</p>
+
+<p>
+<strong>架构层（想得更明白）：</strong>包括三个模型。灵波Video解决了MOE稀疏化训练——让专家被等概率激活，光这个技术点就花了两个月、失败了几十次。"把MOE训好是一个能力问题，不是一个态度问题。"灵波World解决了因果时序模型——时间不能倒流，必须单向attention。团队曾尝试把双向变单向，结果预训练中学到的知识大量被遗忘，果断放弃，从头设计单向。灵波VA 2.0则是所有技术的合集——从每一个参数完全随机化开始训。
+</p>
+
+<p>
+<strong>执行层（干得更利索）：</strong>灵波VLA 2.0将支持的构型从9种扩展到20+种，增加了头、腰、底盘和灵巧手的自由度。这个升级的动力来自真实落地——实验室桌面的"干净setup"与真实场景的"需要抬手够高处、弯腰拿低处"存在巨大gap。
+</p>
+
+<h2>数据的鸿沟：为什么GPT-1时刻还没到？</h2>
+
+<p>
+沈宇军直言，具身智能还没有到GPT-1时刻，核心瓶颈在数据。
+</p>
+
+<p>
+灵波2.0的预训练数据量从2万小时增长到6万小时，实际有效数据（经过更严格清洗后）约为上一版的4倍。但与互联网数据相比，仍差约两个数量级。他说："可能当具身的数据本身可以做scale up的时候，或者说能至少跟互联网达到相同量级的时候，是我心目中的GPT-1的时刻。"
+</p>
+
+<div class="highlight">
+<strong>数据路线图：</strong>当前6万小时 → 中期10万小时（完全用于具身原生预训练）→ GPT-1时刻：<strong>百万小时起步</strong>。
+</div>
+
+<p>
+好消息是，真机数据的获取成本在过去两年"至少降了三倍不止"——人员管理成熟、机器成熟、数据量产化。但挑战在于：Ego-centric等数据采集理念已经有了，变成可规模化、可被模型使用的产品，还需要打磨。
+</p>
+
+<p>
+在数据来源上，灵波坚持真机数据为主、仿真只用于评测。原因是仿真数据"分布会相对同质化"——在它擅长的任务上可以瞬间生成海量数据，但对柔性操作（如撕开塑料袋）等复杂物理交互的模拟还不够成熟。
+</p>
+
+<h2>后训练的飞跃：100条→20条</h2>
+
+<p>
+2.0相比1.0有两个显著的效率提升。第一，1.0时100个任务需要训100个模型，2.0可以10个任务用一个模型解决。第二，每个任务需要的后训练数据从约100条降到了约20条——打桌球demo一共也只采了20条数据。
+</p>
+
+<p>
+在泛化性上，位置维度的泛化已有突破：整理桌面时物品可以随机撒落、中途取出、跟人一起收拾，机器人都能应对。但任务维度的泛化——给一个从未见过的任务就直接完成——目前还做不到。"机器人的数据还是不够多。你见过的任务还是不够多，你没办法通过见过的任务组排列组合变成一个你没见过的任务。"
+</p>
+
+<h2>与LLM的关系：意图实现而非意图来源</h2>
+
+<p>
+沈宇军对具身智能与语言模型关系的判断非常清晰：两者不冲突，但解决的问题不同。
+</p>
+
+<p>
+"语言模型更多的是让人听懂这个指令到底是什么。具身智能更多需要解决的是怎么把一件事情做好。做好本身是不需要再理解语言的。"灵波目前解决的是"意图的实现"——你说一句，它帮你把这事做了。但更高层面的"意图的来源"（如机器人看到下雨就主动拿伞）还未涉及。
+</p>
+
+<p>
+沈宇军倾向于选择"具身智能是独立于语言模型的发展方向"这一派。"具身会继续拿大语言模型当一个比较好的入口，然后它会成长出自己的模型。它们两个中间可能只是一个交互的层面。"
+</p>
+
+<h2>中美路线对比：殊途同归</h2>
+
+<p>
+在机器人基础模型领域，硅谷的两条主线各有侧重。Generalist（谷歌系）强调高效后训练，数据管线更成熟，可能已积累几十万甚至百万小时数据。Physical Intelligence更强调zero-shot——希望不要后训练，什么都会做，在真机遥操上更扎实。
+</p>
+
+<p>
+沈宇军认为两者殊途同归："如果设想未来有一天机器人真能进家庭，你肯定希望它有两个点：80-90%的活它自己就能干了，10-20%干不了的你教它一下就会了。这两个能力都必须具备。"
+</p>
+
+<p>
+他还指出，Ego-centric数据采集的兴起和灵巧手的发展，可能会让两条数据路线（真机遥操和Yumi类型）都发生新变化——"合久必分，分久必合。"
+</p>
+
+<h2>行业格局：大脑落后于本体</h2>
+
+<p>
+沈宇军对2026年行业现状的核心判断是：大脑目前落后于本体。
+</p>
+
+<p>
+硬件侧进步超出预期：宇树、智元等公司已跑通量产，灵巧手公司层出不穷，触觉传感器不断发展。软件侧则从show demo阶段快速进入场景落地阶段——"去年WRC的时候大家还是在show demo，今年反而demo提得少了，都在提进场景了。"
+</p>
+
+<p>
+但不及预期的是数据。"在没有具身原生的东西真正出来之前，大家对数据量需求其实没有想象中那么迫切。没有一个具体的推动力让你马上一定要拿到这些数据。"
+</p>
+
+<p>
+沈宇军判断，大脑和本体会"交替上升"：当前大脑落后，大量公司涌入做大脑→智能层跑得比本体快→某一天超过→对本体提出新需求→催生由智能重新定义的新一代本体公司。
+</p>
+
+<h2>汤晓鸥的传承与创业的"赌"</h2>
+
+<p>
+谈到老师汤晓鸥，沈宇军有两个深刻印象：幽默亲切（"他也是东北人"），以及"能比较快速地从乱序的混沌当中抓到一个主要矛盾"。答辩时别人问怎么做，汤晓鸥问的是"这个东西到底应该怎么用"——一个与行业落地相关的直击要害的问题。
+</p>
+
+<p>
+这种精神延续到了沈宇军的创业中。他说自己经历了"两个第一次"——"第一个第一次是业（面向落地），第二个第一次是创（创业）。"最大感悟是：以前更关注技术的领先性，现在更关注技术<em>哪一方面</em>的领先性——是不是有价值的领先。
+</p>
+
+<p>
+灵波的三次豪赌——传感器原生、具身原生、数据原生——都是在路径未知、资源有限的条件下做的。沈宇军的话直白有力："没有人知道哪一条路一定是成功的。在有限的资源下、路径不确定的情况下，就是要赌。敢做决定、敢赌，这是很关键很关键的一点。如果那条路一定成功，大厂一定成功了。"
+</p>
+
+<h2>中国优势：数据采集的空窗期</h2>
+
+<p>
+沈宇军提出了一个值得关注的观点：互联网数据是互联网时代的红利变现，但具身数据是一个空窗期——"现在大家都是一样的"。在这个空窗期，中国的硬件供应链、量产能力和人力优势，可能让中国在具身数据采集上跑得比美国更快。
+</p>
+
+<p>
+灵波已经在建立"数据联盟"，与硬件和本体合作伙伴共建数据体系。但他们也明白，标准化的数据采集SOP是规模化的前提——"所有规模化东西一定要有标准"。
+</p>
+
+<h2>J人、令狐冲与家的定义</h2>
+
+<p>
+快问快答环节展现了沈宇军的个人风格。如果机器人有性格？"我希望它是个J人。核心还是要实用。在提供情绪价值和干活之间，我会果断选择干活。情绪价值应该由人来提供。"
+</p>
+
+<p>
+推荐人生之书？《笑傲江湖》。"我特别喜欢令狐冲里面那种比较豁达的样子——什么都不太在乎的那种心理状态。我希望成为这样的人。"
+</p>
+
+<p>
+最好的预期？"真的看到机器人进家庭了，跑的是灵波的模型。"最坏的？"就是没做出来呗，可能某一次赌的过程中赌错了。"
+</p>
+
+<p>
+全球最喜欢的地点？"家。"最喜欢的食物？"日料。"
+</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+
+<div class="quote-item qi-blue">
+"能看到是语义理解，摸不到是空间感知。"
+<span class="context">— 解释Vision/Depth与数字世界模型的根本差异</span>
+</div>
+
+<div class="quote-item qi-green">
+"把MOE训好是一个能力问题，它不是一个态度问题。"
+<span class="context">— 谈稀疏化训练的难度，两个月几十次失败</span>
+</div>
+
+<div class="quote-item qi-orange">
+"我还是很坚信：具身一定会有自己的模型。"
+<span class="context">— 对独立于语言模型的机器人基座模型的信念</span>
+</div>
+
+<div class="quote-item qi-purple">
+"大脑的开发是落后于本体的。今年的主要矛盾应该是怎么让它先变得能把活干好。"
+<span class="context">— 2026年行业现状判断</span>
+</div>
+
+<div class="quote-item qi-red">
+"没有人知道哪一条路一定是成功的。在有限的资源下、路径不确定的情况下，就是要赌。"
+<span class="context">— 对创业本质的感悟</span>
+</div>
+
+<div class="quote-item qi-yellow">
+"在提供情绪价值和干活之间，我会果断选择干活。"
+<span class="context">— 沈宇军希望机器人是个J人</span>
+</div>
+
+</div>
+
+<footer>
+<p>来源：<a href="https://www.xiaoyuzhoufm.com/episode/6a5f79b3a3fec224d5a128cd?utm_source=rss">小君·商业访谈录 第147期</a></p>
+<p style="margin-top:8px;">🤖 本文由 AI 根据播客转录文本自动生成，内容经逐一核对转写原文验证。</p>
+</footer>
+
+</article>
+</body>
+</html>

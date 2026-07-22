@@ -1,0 +1,93 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "open-box",
+      "type": "rectangle",
+      "x": 80, "y": 100, "width": 220, "height": 110,
+      "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "roundness": {"type": 3},
+      "seed": 1, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "open-label",
+      "type": "text", "x": 100, "y": 115, "width": 180, "height": 80,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 2, "version": 1, "isDeleted": false,
+      "fontSize": 18, "fontFamily": 1,
+      "text": "开源开放权重\nKimi K3 / Qwen 3.8\n成本极低 自由定制\n→ 消费者受益",
+      "textAlign": "center", "verticalAlign": "middle",
+      "lineHeight": 1.25, "baseline": 70
+    },
+    {
+      "id": "closed-box",
+      "type": "rectangle",
+      "x": 600, "y": 100, "width": 220, "height": 110,
+      "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "roundness": {"type": 3},
+      "seed": 3, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "closed-label",
+      "type": "text", "x": 620, "y": 115, "width": 180, "height": 80,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 4, "version": 1, "isDeleted": false,
+      "fontSize": 18, "fontFamily": 1,
+      "text": "闭源前沿\nOpenAI / Anthropic\n数十亿研发投入\n→ 需要商业回报",
+      "textAlign": "center", "verticalAlign": "middle",
+      "lineHeight": 1.25, "baseline": 70
+    },
+    {
+      "id": "center-conflict",
+      "type": "ellipse",
+      "x": 330, "y": 280, "width": 240, "height": 100,
+      "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "seed": 5, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "center-label",
+      "type": "text", "x": 350, "y": 300, "width": 200, "height": 60,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 6, "version": 1, "isDeleted": false,
+      "fontSize": 18, "fontFamily": 1,
+      "text": "监管博弈\n安全 vs 创新\n美国 vs 中国",
+      "textAlign": "center", "verticalAlign": "middle",
+      "lineHeight": 1.25, "baseline": 50
+    },
+    {
+      "id": "arrow-left", "type": "arrow",
+      "x": 300, "y": 210, "width": 60, "height": 80,
+      "strokeColor": "#1e1e1e", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "seed": 7, "version": 1, "isDeleted": false,
+      "endArrowhead": "arrow", "points": [[0, 0], [60, 80]]
+    },
+    {
+      "id": "arrow-right", "type": "arrow",
+      "x": 600, "y": 210, "width": 60, "height": 80,
+      "strokeColor": "#1e1e1e", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "seed": 8, "version": 1, "isDeleted": false,
+      "endArrowhead": "arrow", "points": [[0, 0], [-60, 80]]
+    },
+    {
+      "id": "bottom-question",
+      "type": "text", "x": 250, "y": 420, "width": 400, "height": 40,
+      "strokeColor": "#e8590c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 9, "version": 1, "isDeleted": false,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "核心问题：谁来为前沿AI持续进步买单？",
+      "textAlign": "center", "verticalAlign": "middle",
+      "lineHeight": 1.25, "baseline": 30
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}

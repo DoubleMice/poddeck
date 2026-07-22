@@ -1,0 +1,30 @@
+id: 6a5f79b3a3fec224d5a128cd
+source: xiaojun
+title: '147. 和蚂蚁灵波沈宇军聊：机器人原生基础模型、大脑和本体的关系、预训练与数据scale up、老师汤晓鸥'
+guest: 沈宇军
+guest_role: 蚂蚁灵波科技首席科学家
+published: 2026-07
+duration: 1h53m
+url: https://www.xiaoyuzhoufm.com/episode/6a5f79b3a3fec224d5a128cd?utm_source=rss
+thumbnail: https://image.xyzcdn.net/FvrM8NWWO-yrGdKP1Dg4Krj68cuM.png
+status: generated
+tags:
+  - robotics
+  - ai-research
+  - startup
+  - interview
+  - deep-dive
+  - technical
+summary: |
+  蚂蚁灵波首席科学家沈宇军与小君深度对谈，分享了灵波从创立到发布第二代具身基础模型的完整历程。
+  沈宇军坚持"具身原生"路线——从物理世界需求出发，完全重新训练机器人基础模型，而非在数字世界模型上嫁接。
+  他认为机器人的GPT-1时刻尚未到来，核心瓶颈在于具身数据的scale up，目标是从6万小时迈向百万小时级别。
+core_ideas:
+  - '灵波只做机器人大脑不做本体：希望每家都有一个机器人，跑的是灵波的模型'
+  - '具身原生路线：视觉原生（几何理解）→ 架构原生（MOE+单向时序）→ 数据原生（下一步核心）'
+  - '具身智能的GPT-1时刻还未到：数据采集方式未确定，具身数据与互联网数据差两个数量级'
+  - '大脑目前落后于本体：2026年行业主要矛盾是让机器人先把活干好'
+  - '创业就是要赌：在有限资源下、路径不确定时，敢做决定是核心能力'
+  - '与LLM的关系：语言模型是交互入口，具身模型解决"把事做好"——意图实现而非意图来源'
+article_path: episodes/6a5f79b3a3fec224d5a128cd/article.html
+base: /episodes/6a5f79b3a3fec224d5a128cd/

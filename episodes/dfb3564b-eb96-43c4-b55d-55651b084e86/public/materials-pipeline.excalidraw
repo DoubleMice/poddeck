@@ -1,0 +1,98 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "step1", "type": "rectangle",
+      "x": 50, "y": 100, "width": 200, "height": 100,
+      "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "roundness": {"type": 3},
+      "seed": 1, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "step1-label", "type": "text",
+      "x": 65, "y": 115, "width": 170, "height": 70,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 2, "version": 1, "isDeleted": false,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "实验数据生成\n全球实验室网络\n物理实验验证",
+      "textAlign": "center", "verticalAlign": "middle",
+      "lineHeight": 1.25, "baseline": 60
+    },
+    {
+      "id": "arrow1", "type": "arrow",
+      "x": 250, "y": 150, "width": 100, "height": 0,
+      "strokeColor": "#1e1e1e", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "seed": 3, "version": 1, "isDeleted": false,
+      "endArrowhead": "arrow", "points": [[0, 0], [100, 0]]
+    },
+    {
+      "id": "step2", "type": "rectangle",
+      "x": 350, "y": 100, "width": 200, "height": 100,
+      "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "roundness": {"type": 3},
+      "seed": 4, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "step2-label", "type": "text",
+      "x": 365, "y": 115, "width": 170, "height": 70,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 5, "version": 1, "isDeleted": false,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "领域专用模型\nNVIDIA 合作训练\n材料性质预测",
+      "textAlign": "center", "verticalAlign": "middle",
+      "lineHeight": 1.25, "baseline": 60
+    },
+    {
+      "id": "arrow2", "type": "arrow",
+      "x": 550, "y": 150, "width": 100, "height": 0,
+      "strokeColor": "#1e1e1e", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "seed": 6, "version": 1, "isDeleted": false,
+      "endArrowhead": "arrow", "points": [[0, 0], [100, 0]]
+    },
+    {
+      "id": "step3", "type": "rectangle",
+      "x": 650, "y": 100, "width": 200, "height": 100,
+      "strokeColor": "#e8590c", "backgroundColor": "#ffd8a8",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "roundness": {"type": 3},
+      "seed": 7, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "step3-label", "type": "text",
+      "x": 665, "y": 115, "width": 170, "height": 70,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 8, "version": 1, "isDeleted": false,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "新材料发现\n芯片 / 电池 / 光伏\n版税收益分成",
+      "textAlign": "center", "verticalAlign": "middle",
+      "lineHeight": 1.25, "baseline": 60
+    },
+    {
+      "id": "royalty-box", "type": "ellipse",
+      "x": 250, "y": 280, "width": 400, "height": 70,
+      "strokeColor": "#862e9c", "backgroundColor": "#eebefa",
+      "fillStyle": "hachure", "strokeWidth": 2, "roughness": 1, "opacity": 100,
+      "seed": 9, "version": 1, "isDeleted": false
+    },
+    {
+      "id": "royalty-label", "type": "text",
+      "x": 270, "y": 293, "width": 360, "height": 44,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100,
+      "seed": 10, "version": 1, "isDeleted": false,
+      "fontSize": 16, "fontFamily": 1,
+      "text": "版税分成模式 → 类似生物科技\n材料投产即分成，投资组合式押注",
+      "textAlign": "center", "verticalAlign": "middle",
+      "lineHeight": 1.25, "baseline": 34
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}
