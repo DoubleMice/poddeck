@@ -1,74 +1,77 @@
 source: tbpn
-refreshed_at: 2026-07-21T18:31:11.008Z
+refreshed_at: 2026-07-22T04:09:48.975Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
-pending: 1
+done: 0
+pending: 2
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 052df25f-608a-4638-a7b1-904536e2cc62
-    guid: 052df25f-608a-4638-a7b1-904536e2cc62
-    title: The AI Cold War, Odyssey Rips, Tyler Cowen Joins | Danny Yeung, Connor Love, Kahlil Lalji, Tarek Mansour, Tony Zhao
-    duration: 9666
-    published: Mon, 20 Jul 2026 14:18:10 -0700
-    published_sort: "20260720"
-    first_seen_at: 2026-07-21T04:08:02.206Z
-    url: https://share.transistor.fm/s/898ba371
-    audio_url: https://media.transistor.fm/898ba371/7cd5e524.mp3
+  - id: dfb3564b-eb96-43c4-b55d-55651b084e86
+    guid: dfb3564b-eb96-43c4-b55d-55651b084e86
+    title: China's AI Push Sounds Alarms, Airplane Seat Debate, Chris Best Joins | Ferdinand Dabitz, Kaiwei Tang, Steven
+      Schwartz, Katie Roof, Zavain Dar, Chad Edwards
+    duration: 9219
+    published: Tue, 21 Jul 2026 14:00:20 -0700
+    published_sort: "20260721"
+    first_seen_at: 2026-07-22T04:09:48.968Z
+    url: https://share.transistor.fm/s/025a4d7f
+    audio_url: https://media.transistor.fm/025a4d7f/e91287f5.mp3
     image: https://img.transistorcdn.com/JKCXKMFC8DxrWx6hOFD_HdcDjLAqNP3rWp-35R-vubg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iYWQ5/N2FkMzQ2MGY4Zjg5/ZDczMGExMTA5NjEz/Y2MyMC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/898ba371/transcription.txt
+    transcript_url: https://share.transistor.fm/s/025a4d7f/transcription.txt
     transcript_type: text/plain
-    summary: "(01:35) - The AI Cold War\r
+    summary: "(01:58) - China's AI Push Sounds Alarms\r
 
-      (33:40) - Odyssey Rips\r
+      (36:37) - Should You Recline Your Airplane Seat?\r
 
-      (44:19) - 𝕏 Timeline Reactions\r
+      (42:47) - 𝕏 Timeline Reactions\r
 
-      (55:54) - Tyler Cowen is an American economist, author, and professor at George Mason University, known for his
-      work in cultural economics and as co-author of the blog Marginal Revolution. He discusses the inevitability of
-      open-source AI, emphasizing that attempts to ban it are futile due to its global proliferation, particularly from
-      China. He also highlights the challenges Europe faces in competing with Chinese industries, suggesting that
-      imposing tariffs may not be an effective solution.\r
+      (51:39) - Ferdinand Dabitz, the 25-year-old CEO of Augustus Bank, discusses the company's recent $180 million
+      Series B funding round, which elevated its valuation to $1 billion. He highlights Augustus's mission to
+      \"dollarize the world\" by modernizing correspondent banking through AI and stablecoin technologies, aiming to
+      provide efficient dollar access globally. Dabitz also emphasizes the strategic importance of dollarization in
+      enhancing U.S. soft power and combating inflation.\r
 
-      (01:31:26) - Danny Yeung, CEO and co-founder of Prenetics, discusses the rapid growth of IM8, a health supplement
-      brand co-founded with David Beckham, achieving $100 million in annual recurring revenue within 11 months and
-      projecting over $200 million in its second year. He attributes this success to a global launch strategy, shipping
-      to 31 countries from day one, and highlights a $1 billion growth commitment from General Catalyst, emphasizing the
-      importance of strong retention cohort data for predictable future revenue.\r
+      (58:53) - Kaiwei Tang, co-founder and CEO of Light Phone, discusses the company's mission to create minimalist
+      mobile devices that help users disconnect from the attention-driven economy of traditional smartphones. He
+      emphasizes the importance of technology serving as a tool without exploiting user attention, highlighting features
+      like calling, texting, and music playback without ads or data tracking. Tang also notes a growing trend among
+      younger generations seeking simpler devices, indicating a shift towards more intentional technology use.\r
 
-      (01:37:48) - Connor Love, a former U.S. Army Captain with a deployment to Northern Iraq in 2019, has transitioned
-      into venture capital, focusing on frontier technologies such as defense, space, manufacturing, and autonomous
-      systems. In the conversation, he discusses his new role at Andreessen Horowitz, emphasizing the firm's commitment
-      to supporting entrepreneurs in the American dynamism sector, and highlights the significant growth potential in
-      defense and space markets, underscoring the need for substantial manufacturing capabilities to meet future
-      demands.\r
+      (01:12:30) - Chris Best, founder and CEO of Substack, discusses the proliferation of AI-generated content, or
+      \"slop,\" on the internet and its impact on reader trust. He emphasizes the importance of transparency in content
+      creation, advocating for clear disclosure when AI tools are used to maintain authenticity and value. Best also
+      highlights Substack's commitment to fostering genuine human connections and perspectives, believing that as
+      AI-generated content becomes more prevalent, the value of trusted human-authored content will increase.\r
 
-      (01:51:57) - Kahlil Lalji, CEO and co-founder of Natural, discusses the company's $30 million Series A funding led
-      by Forerunner and its mission to build payments infrastructure for agents. He explains that Natural enables agents
-      to store balances, make payments, and perform transfers, with plans to expand capabilities like collecting card
-      information over the phone. Lalji emphasizes the potential for agents to handle a majority of global payment
-      volume in the next decade, positioning Natural to become a comprehensive financial platform encompassing banking,
-      payment processing, and networking services.\r
+      (01:32:38) - Steven Schwartz is the co-founder and CEO of Whop, a platform that enables creators, developers, and
+      online businesses to sell digital products, software, communities, and memberships. He focuses on building
+      infrastructure for the internet economy, helping entrepreneurs monetize digital businesses through a unified
+      marketplace and payments platform.\r
 
-      (02:00:06) - Tarek Mansour, co-founder and CEO of Kalshi, discusses the platform's significant engagement during
-      the World Cup, noting it generated more brand impressions than major companies like Coca-Cola and Adidas, and even
-      surpassed ChatGPT and Instagram in search volume. He attributes this success to a dynamic, adaptable strategy
-      executed by a lean team, emphasizing rapid response to unfolding events. Additionally, Mansour introduces Kalshi's
-      launch of GPU futures, aiming to establish a forward curve for compute resources, enabling stakeholders to hedge
-      risks and make informed investment decisions in the evolving compute market.\r
+      (01:54:08) - Katie Roof, editor at Business Insider, discusses her recent appointment and the publication's
+      strategic shift towards more exclusive content under Editor-in-Chief Jamie Heller. She highlights the increasing
+      competition in journalism, emphasizing the importance of original reporting and human skills in an AI-influenced
+      media landscape. Roof also notes the growing public interest in AI and venture capital, underscoring the need for
+      accurate and insightful coverage in these areas.\r
 
-      (02:20:12) - Tony Zhao, co-founder and CEO of Sunday Robotics, discusses the company's latest advancements in
-      household robotics, highlighting a 99.1% success rate in folding laundry across 785 autonomous attempts. He
-      introduces the concept of \"Large Laundry Models\" (LLM), emphasizing the robot's ability to generalize tasks and
-      learn new folding methods from a single demonstration. Zhao also addresses the importance of defining performance
-      metrics in robotics, distinguishing between success rates in controlled environments versus real-world
-      applications.\r
+      (02:02:48) - 𝕏 Timeline Reactions\r
 
-      (02:31:56) - 𝕏 Timeline Reactions
+      (02:10:31) - Zavain Dar, co-founder of Dimension, discusses the firm's recent $800 million fundraise, bringing
+      their total assets under management to $1.65 billion. He highlights Dimension's focus on investing at the
+      intersection of technology and life sciences, supporting companies that integrate computing with biology. Dar also
+      addresses the evolving landscape of biotech, emphasizing the role of AI in drug discovery and the redefinition of
+      disease treatment, while cautioning against the unregulated use of peptides and hormone mimetics.\r
+
+      (02:23:18) - Chad Edwards, co-founder and CEO of CuspAI, a Cambridge-based AI startup, discusses the company's
+      mission to revolutionize materials discovery through generative AI, enabling the rapid development of new
+      materials for applications like semiconductors and climate technologies. He highlights their recent $450 million
+      Series B funding, valuing CuspAI at $2.6 billion, with investors including Jeff Bezos' Bezos Expeditions, Kleiner
+      Perkins, and NEA. Edwards also explains their innovative business model, securing royalties in customer contracts
+      to share in the commercial success of the materials developed using their platform.
 
 
       TBPN is made possible by:
@@ -123,7 +126,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
