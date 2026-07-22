@@ -55,6 +55,7 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
   const { code, stderr } = await run('pnpm', [
     'exec', 'slidev', 'build',
     '--base', base,
+    '--router-mode', 'hash',
     '--out', 'dist',
   ], { cwd: dir, reject: false })
 

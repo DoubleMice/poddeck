@@ -142,7 +142,7 @@ const site = process.env.PODDECK_SITE || 'http://localhost:4173'
 - 本地 `pnpm run build` → base=`/` → serve dist 直接访问
 - CI `.github/workflows/deploy.yml` 里设 `PODDECK_BASE=/poddeck/` → GH Pages
 - **绝对路径链接必须走 `landing/src/lib/url.ts` 的 `url()` helper**，手写 `href="/..."` 会断裂
-- Slidev 每集 build 传 `--base ${SITE_BASE}episodes/<id>/`（由 build-all.ts 处理）
+- Slidev 每集 build 传 `--base ${SITE_BASE}episodes/<id>/ --router-mode hash`（由 build-all.ts 处理）
 - 返回按钮用 `<a href="../../">`（相对路径，base 无关）
 
 ## 导出验证（playwright-chromium）
@@ -434,7 +434,9 @@ system rules 的 RULE 2.5 列了完整修正表。生成时 subprocess 会自己
 
 ### 3. Slidev SPA 部署到 GH Pages 深度 URL 404
 
-GH Pages 不支持 SPA 客户端路由。解决方案：`landing/public/404.html` 里 JS 检测 `/episodes/<id>/<rest>` 并 redirect 回 `/episodes/<id>/`。已实装。
+GH Pages 不支持 SPA history 路由。当前每集统一使用 hash 路由（`/episodes/<id>/#/2`）；`landing/public/404.html` 会把旧的 `/episodes/<id>/2` 深链和 Slidev 52.16.0 产生的重复 base URL 转成对应 hash 路由。
+
+Slidev 52.16.0 存在非根 `--base` 导航回归，会把 base 拼两次并在第二页显示 404。根 workspace 通过 pnpm override 固定 `@slidev/cli` 版本，升级时必须运行 `pnpm run verify:routing`；该命令会检查所有产物版本一致，并对最早和最新 episode 做浏览器翻页、刷新与旧链接迁移验证。
 
 ### 4. Windows 下 pnpm 子进程僵尸化
 

@@ -2,6 +2,10 @@
   "name": "poddeck",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "description": "Claude Code driven podcast → Slidev presentation aggregator",
   "scripts": {
     "discover": "tsx scripts/discover.ts",
@@ -15,6 +19,7 @@
     "audit:layout": "tsx scripts/audit-layout.ts",
     "normalize:meta": "tsx scripts/normalize-meta.ts",
     "e2e:transcription": "tsx scripts/e2e-transcription.ts",
+    "verify:routing": "tsx scripts/verify-slide-routing.ts",
     "preview": "npx --yes serve@14.2.6 dist -p 4173",
     "dev:landing": "echo 'TODO: P4'",
     "dev:episode": "bash -c 'cd episodes/$0 && npx slidev --port 3031'"
@@ -26,8 +31,13 @@
     "yaml": "^2.5.0"
   },
   "dependencies": {
-    "@slidev/cli": "^52.16.0",
+    "@slidev/cli": "52.18.0",
     "slidev-addon-excalidraw": "^1.1.1",
     "slidev-theme-academic": "^2.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@slidev/cli": "52.18.0"
+    }
   }
 }

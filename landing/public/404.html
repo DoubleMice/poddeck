@@ -27,24 +27,31 @@
   <script>
     // SPA fallback for GitHub Pages.
     // GH Pages serves this file for any unknown path. We detect if the path
-    // is /episodes/<id>/<rest> and redirect to /episodes/<id>/ which is the
-    // SPA entry. The slide number (if any) becomes a hash so the SPA can
-    // pick it up if it cares. For pure /<unknown> paths, fall through to
-    // the visible "lost" page below.
+    // is /episodes/<id>/<rest> and redirect to the hash-routed Slidev SPA.
+    // For pure /<unknown> paths, fall through to the visible "lost" page.
     (function () {
       // Pattern matches both /episodes/<id>/<rest> (local) and /poddeck/episodes/<id>/<rest> (GH Pages)
       var path = window.location.pathname
-      var match = path.match(/^(.*\/episodes\/[^\/]+\/)(.*)$/)
+      var match = path.match(/^(.*?\/episodes\/([^\/]+)\/)(.*)$/)
       if (match) {
         var spaRoot = match[1]
-        var rest = match[2] || ''
+        var episodeId = match[2]
+        var rest = match[3] || ''
         // Static episode assets, including generated articles, should stay as
         // real 404s when missing instead of being rewritten into the Slidev SPA.
         if (/\.[^\/]+$/.test(rest)) return
 
-        // Slidev SPA handles route-like paths — redirect to the episode root
-        // and preserve hash/search for in-SPA deep linking
-        window.location.replace(spaRoot + window.location.search + window.location.hash)
+        // Recover URLs produced by Slidev 52.16.0, which duplicated the base.
+        var duplicateMarker = 'episodes/' + episodeId + '/'
+        var duplicateIndex = rest.lastIndexOf(duplicateMarker)
+        if (duplicateIndex !== -1) {
+          rest = rest.slice(duplicateIndex + duplicateMarker.length)
+        }
+
+        var route = rest.replace(/^\/+|\/+$/g, '')
+        if (!route) return
+
+        window.location.replace(spaRoot + '#/' + route + window.location.search)
         return
       }
       // Unknown non-episode path — will show the fallback UI below
