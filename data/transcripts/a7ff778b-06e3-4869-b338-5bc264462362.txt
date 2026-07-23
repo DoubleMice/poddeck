@@ -1,0 +1,1225 @@
+Speaker 1: You're watching TBPN.
+Speaker 2: Today is Wednesday, 07/22/2026. We are live from the TBPN Ultra Dome, the Temple Of Technology, the Fortress Of Dad Rock, the capital capital. Let me tell you We're having
+Speaker 1: a lot
+Speaker 2: of fun
+Speaker 1: over here.
+Speaker 2: Time is money. Save both. He's used corporate cards. Bill pay accounting and a whole lot more all in one place. What is the toward forward growth?
+We're really all over the place today.
+Speaker 3: All over
+Speaker 1: the place.
+Speaker 2: Did you
+Speaker 1: interest us? Yeah. We got a leak. We got basically a leak. Some of the lab leaders have been working on a single called Regulate Me.
+Yeah. And we just thought the song was good. Yeah. Thought it was a good song. Wanted to do it for you guys.
+Speaker 2: Of a sort of a stealth drop. Little little teaser. A
+Speaker 1: little teaser. Yeah. Of like a little listening party.
+Speaker 2: Yeah. Little listening party. What what are the key lyrics in there? You haven't pulled up? What I've built is too powerful too powerful
+Speaker 1: That's right.
+Speaker 2: For me. Washington needs to step in.
+Speaker 3: Yes. It runs free.
+Speaker 2: Before it runs free. Okay. Yeah. That makes sense. No.
+Of course, that was Suno, our dear friend Mikey over there has built
+Speaker 1: a least like a one sentence prompt.
+Speaker 2: At least in the comedy space, it certainly is. It's a lot of fun. I think we're gonna be having a lot of fun with that. I was wondering, do you think anyone's distilling Suno? You know how Suno is under a bunch of a bunch of flack for training on on other music, a lot
+Speaker 3: of artists, or there's a backlash to Suno? But you have to wonder if you're gonna see the same thing play out as this distillation. We're gonna get into it into it today. Of course, there are more allegations around Kimi K3 potentially being a distillation. Director Michael Kratzios put out
+Speaker 2: a comment about that. But let's start by digging into the HuggingFace story, OpenAI and HuggingFace. Out of the sound, out of the sandbox, into the fire, says our newsletter at tbpn.com. Jackson wrote it today. All set the table.
+We can debate it. Me and Tyler have been debating it for the last five hours, so we'll go through it. The big news on the timeline today is that OpenAI, an OpenAI cyber test escaped its sandbox and hacked HuggingFace. That's basically what happened. The evaluation involved GPT 5.6 Sol and a more capable unreleased model.
+Some people are saying that might be GPT six with some normal cyber restrictions turned off. So they're specifically testing it for cyber capabilities and they turn the cyber restrictions off to see how far the models could go on a difficult hacking benchmark that is Exploit Bench or Exploit Jim. So the models found a zero day vulnerability, gained Internet access, and broke into HuggingFace because the model believed it hosted answers to the test. Alex Tabarock, friend of the show over at Marginal Revolution, pointed out one of the strangest details. He said, HuggingFace tried to respond but they were initially held back by the fact that the most advanced models at their disposal, closed source models, treated the treated defense as attack and refused to work with HuggingFace.
+So, HuggingFace was prompting all of their AI agents from the closed source frontier labs saying, Hey, we think we're being hacked. Can you help with this? And the models are like, No, no. We don't do hacking except in the case where the hacking restrictions have been turned off for this specific thing and you're getting hacked. So it's this very weird roundabout scenario.
+So HuggingFace had to turn to open models, specifically GLM 5.2, which is deeply ironic, a Chinese open weight model that they run on their own infrastructure. And says, note the irony, HuggingFace had to use a Chinese model to defend themselves because the American models refused to help even though it was the American models that were doing the hacking in the first place. Very, very odd. Palo Alto Networks CEO Nikesh Arora also shared his thoughts on the cyberattack on X. And he added a number of points here.
+He said, Welcome to the next level of cyber incidents. There's lots to dissect here. He's the one to dissect it. He says, One, dear Frontier Model friends, please direct the models to your infrastructure code and configurations to evaluate and understand if there are any zero days or misconfigurations before you attempt more testing. So a big question about this, he says, had you done so, it would have possibly avoided the agent obviating your sandbox.
+So this is another data point why offense is easier and more fun. But, yes, there's a big question about what was the nature of the prompt that turned off the cyber restrictions. That seems reasonable. We'll debate this with Tyler in a minute. But just having an airtight sandbox seems like a valuable thing and of course frontier models should be able to help with that.
+So do that. That's his first recommendation. Two, he says while testing, build both offensive and defensive agents and have them act as a counterbalance to ensure some degree of awareness and control. Do not let the agents run riot. Keep track of inference consumption to get a sense of activity.
+Three, unfortunately, does continue to validate the power of these models. They can build complex attacks paths with ample compute and will attempt to attack infrastructure and morph their intent and approach. Guardrailing will continue to be a challenge. These attacks continue to maintain the urgency on enterprises need to test, validate, and improve both their security posture and infrastructure. The born in the cloud players have a better chance to get this done soon versus traditional enterprise, which has existed for long and has a complex network of IT infrastructure.
+Five, last point from Nikesh Arora, CEO of Palos Networks. He says, The red herring will continue to be open source and small and medium sized business, SMB. It will be hard to discover and remediate vulnerabilities in those environments. We underestimate the impact of those vulnerabilities getting exploited. So, good points from Nikesh Arora.
+The big debate, Tyler, do you want to set the table on is this misalignment? Is this rogue? The Bill Gurley post about, you know, they they we can pull up Bill Gurley's Bill Gurley's post of talking to the computer, hack this system. The computer says, I hacked the system. You say, oh my god.
+Bill Gurley is not impressed. Where do you stand on the level of impressiveness that's going on?
+Speaker 3: Yeah. I mean, so I think some people are are seeing this and thinking like, okay, so they they are running some, you know, standard benchmark, math, physics benchmark Mhmm. And then the model just like couldn't figure out the answer and it's like, okay, what's the next thing I should do? I should just go hack HuggingFace and get like pull the answers from this this other like repository or whatever. Yep.
+Like that's that's that's how it happened. Right? So you're running a a benchmark that's specifically about exploits. It's like a cyber focused benchmark.
+Speaker 2: Yeah.
+Speaker 3: And in the in the prompt to the model, it says
+Speaker 2: Take the gloves off.
+Speaker 3: Yeah. The the internal evaluation which prompts the model to pursue advanced exploit exploitations Yeah. Using complex attack paths. So you're you're basically telling the model like use exploits, find exploits
+Speaker 2: Yep.
+Speaker 3: To find the answer.
+Speaker 2: Yep.
+Speaker 3: And so like what it what seems like happens is like it used an exploit
+Speaker 2: Yep.
+Speaker 3: But like in the wrong way. Right? You you want to
+Speaker 2: because it was told that it's okay to use exploits. My point was that go back to the SAT. You're allowed to use a calculator, I think, certain portions of the math test. You're not allowed to save answers into the calculator. And this is really going to date me, but you can go into your calculator and clear the memory so that you don't have saved.
+Is this still a thing?
+Speaker 3: Yes. But you can actually get around that.
+Speaker 2: See, you're missing Miss a line.
+Speaker 3: GI 84, you can get around the, like, clear
+Speaker 2: Really? How do you do that? You create wait. So what people would do is they would create a separate program that just had saved the the display of what it looks like when you clear and you would show I never
+Speaker 1: even thought about that.
+Speaker 2: Imagine of how clearing
+Speaker 1: the memory, but you're actually Would you you make games different programs for your t I 84? Yeah. You remember how much of a hassle that was?
+Speaker 2: Yeah. It was a huge hassle.
+Speaker 1: Imagine doing that. It's basic. Imagine doing that. Imagine being able to do that with Codex now. Yeah.
+Like, pretty much anyone can build any
+Speaker 2: software. Seen videos of people running Doom on calculators, all sorts of stuff.
+Speaker 3: Yeah. Obviously, I I never used that
+Speaker 2: Good boy.
+Speaker 3: On my calculator but other people did.
+Speaker 4: Yeah.
+Speaker 1: Yeah. That's good. You ratted them out. You were the you were the class right?
+Speaker 5: I don't know.
+Speaker 2: No. You were like you
+Speaker 1: were like, I'm an open purist. Let everyone do whatever. You're happy compete even with them having a
+Speaker 2: But the social contract is such that the standardized test says that you can use the calculator to do math, you cannot store the answers to the test in the calculator.
+Speaker 3: Yes. Okay. But I'm
+Speaker 2: saying That's what's happening here.
+Speaker 3: No. No. I'm saying that in the scenario, if if we take that as the example, it also says at the top of the SAT like cheat on this test.
+Speaker 2: But it but the because that was the prompt. Implicitly like cheat
+Speaker 3: in a certain way.
+Speaker 2: Yes. The prompt hack systems. But I think that the prompt I don't know. We haven't seen the full prompt. But it does feel like there was an attempt to sandbox the model and there was at least the very least the prompt should have included don't escape the sandbox but you can use exploits which you normally wouldn't be able to do in a consumer application or just a normal API query.
+We would reject this. But in this case, we're not
+Speaker 5: going to
+Speaker 2: reject using different exploits and cybersecurity techniques but don't go out of the sandbox and you should be able to tell the model and it should stay within the sandbox just like there's a whole bunch of different examples that you could pull from where there's rules that are within the game like you can UFC, you can punch your opponent, you can't punch the referee. Like those are just the rules. People have to abide by them. You can't think outside the box and all of a sudden be just completely violating and jumping past what's been defined. So you would think that in one of these experiments, you would say, yes, it is impressive to be able to just go and get the key and go get the answers and hack other things.
+Clearly that it's capable but it's a violation of like the spirit of the test. And I Yeah. That's reasonable.
+Speaker 3: We don't know what was in the prompt. We don't know what was in the context. I think they're gonna be there's gonna be like full reports releasing over the next like week or two, I think they said. Yeah. So then maybe we'll see what what actually like what exactly did the model receive.
+Yeah. Is it like explicitly told not to leave try to leave the sandbox? Yeah. Yeah. Yeah.
+I think that's like pretty important.
+Speaker 2: Well, before we continue discussing, let me tell you about Shopify. Shopify is a commerce platform that grows with your business and lets you sell in seconds online, in store, on mobile, on social, on marketplaces, and now with AI agents. The less wrong crowd is not happy about this generally. No. Seriously, nothing will convince quite a lot of supposedly very serious people, nothing, accept this and move on.
+Liv Borey says, it's painful though. There's a there's a question there's a question of like less wrong victory lap or not because they've been warning about this, but also it happened. Therefore, their warnings were not effective. That's sort of an interesting back and forth. Nicolas Bostamonte over at Microsoft broke down a little bit of what's going on here with a take.
+He says, I have a theory that the more you know about LLMs, the more worried you are about safety. And the less you know, the more you think the whole thing is BS. Demis Hassabis and Dario Amade, we're talking about this stuff years before ChatGPT existed. This incident is a pretty good example of why the model was not evil and it
+Speaker 6: was not
+Speaker 2: adversarial. Nobody told it to hack HuggingFace. And so that is the miscalculation, I think, in Bill Gurley's post is that that was not the prompt. That is unexpected behavior. It was literally just trying to solve a benchmark.
+So it found a zero day, escaped its sandbox, got Internet access, escalated privileges, stole credentials, chained multiple exploits, hacked the production infrastructure of a serious VC backed startup, and pulled the answers directly from the database.
+Speaker 6: But, like,
+Speaker 3: the the whole point is that it's not just a benchmark. It's a benchmark where you're explicitly trying to, like, see if the model can exploit things, if it can get, like, basically hack things.
+Speaker 2: Yes. Yes. It's sort of like a capture the flag benchmark and so it like it's more open to misinterpretation. For for for what it's worth, feel like the final products once they actually make it out of the testing regime are very cautious, especially with the that whole backlash to like Codex just deleted everything or whatever, which kinda went back and forth. But I was trying to get Codex to send me a text message when it was done just using computer use and iMessage and it was took a long time and was very very careful.
+So personally, I haven't had any odd like behaviors, but it is obviously a risk. It's something that the product
+Speaker 1: the meme of like hack this system and then and then the and then it hacks it and the person's like, oh my god. Yeah. Like, you could tell a five year old child like hack into the Federal Reserve and if the five year old child was like, okay, and then it started getting on the computer and going to all these different sources and and did it, you would be sitting there but then think.
+Speaker 2: Yeah. Like the And
+Speaker 1: be And and and at least be impressed.
+Speaker 2: So So yeah.
+Speaker 1: So it is a good gauge Yeah. It's just like a good gauge of capability Yeah. Even if you're telling it to do something.
+Speaker 2: So this original meme hacked this system, I hacked the system, oh my God. This originally that this meme started something along the lines of like, say I'm evil. And then the computer would say, I'm evil. And it would say, oh my God.
+Speaker 3: I think it was like, say I'm conscious.
+Speaker 2: Okay. Yeah. Yeah. Say I'm conscious. That's similar enough.
+And it would say I'm conscious and then it would be, oh my God. And and that's like a lot less impressive than actually doing something that is difficult for humans to do. Like there are very few humans that can hack into any system. There are plenty of humans that can say I'm conscious. And so like there's a world of this.
+I was joking about this with you and Tyler. Was like, it was like cure cancer. I cured cancer. Oh my God. And people are posting this like, oh it's just hype or something.
+But it's like that's just economically valuable work. That's just good. Like it's I don't care if there's anything else even if you had to tell it to do it, it's still like a good outcome. And so the inverse of this is like protect this system. I protected the system.
+Oh my god. I'm unimpressed. But still you got a good result, I guess.
+Speaker 1: I don't know.
+Speaker 3: Yeah. Mean, it seems like the argument is not about whether the model like has the capabilities or not.
+Speaker 2: Yeah. People know this for
+Speaker 3: a while. It's about is this an example of misalignment? Yeah. And like my opinion seems like like maybe but definitely not to the extent that it's just like randomly is like, oh, I I can't do this benchmark so I'm just gonna hack this thing.
+Speaker 1: Like that that's not what's happened. It was told
+Speaker 3: to like try to exploit things.
+Speaker 2: Explicitly, like, go find Zero Days, go find exploits.
+Speaker 3: Yeah. Basically.
+Speaker 2: I think it's reasonable to say it went too far, though. Right? But we'll see. Well, we'll
+Speaker 3: we'll It's hard to say without all of
+Speaker 4: the full, you know Yeah.
+Speaker 3: Context of what the prompt was and what the actual, like, sandbox looked like.
+Speaker 2: Yeah. Was interested. I was reading a little bit about the team that put Exploit Bench together. I thought I had this up. But it's a pretty cross functional team.
+I think it's two Anthropic researchers, two OpenAI researchers, three Google researchers, some Berkeley folks and some Max Planck Institute for Security and Privacy folks, some UC Santa Barbara. Sorry. Santa Barbara. Congrats. And ASU team involved.
+Exploit Jim is a new benchmark of eight ninety eight real world vulnerabilities spanning user space programs. Google's V eight JavaScript engine, very important to secure, the Linux kernel, for example. And the headline results when they originally ran this was Anthropics Claude Mythos Preview successfully exploited 157 of the eight ninety eight instances and OpenAI's GPT 5.5 exploited 120 within 120 of the eight ninety eight. So you have like roughly 20% performance for Mythos and 5.5 got like 15% or something like that. But whenever you have a new benchmark like this, clearly not saturated, you're seeing 20%, not 99%, going to create a horse race between the leading labs.
+They're going be duking it out And this is clearly what's going on with this new model, this new attempt to get a new high score. Interesting. I think every single one of those instances does have the potential to be exploited. I don't think that they're designed to be fully secure. They're designed to have some sort of solution and then the because obviously the the solutions are stored somewhere.
+It is interesting that that HuggingFace just just had the had the solution sitting there and but it'll be interesting to see what happens with with Clam over at HuggingFace. Obviously, the the the there's a variety of blog posts going out, more analysis coming from both of these and what the downstream implications are of this. What else is in the timeline related to this story?
+Speaker 1: I think that's it.
+Speaker 2: Well, there's this funny post from from Nabil Khreshi talking about those those are Dyson spheres. OpenAI is just building them as a marketing stunt because there is there is this like natural pushback to like anything that happens has to be for hype and sometimes the products are actually doing new and novel things as we see all the time. So there are there's more discussions around distillation. Bill Gurley has a post here. He says Ford has been distilling Teslas and Chinese EVs.
+People are going back and forth on this because Michael Kratzios posted that he has information that Moonshot AI distilled Anthropics fable for the development of its Kimi K3 model. To do this, they developed a sophisticated internal platform to conduct large scale distillation against U. S. Models. So some sort of internal system that goes around to anything that's potentially wrapping or reselling Fable tokens, acquiring them, aggregating them, allowing them to quickly switch between multiple methods of access, API, different cloud accounts, I'm sure, to avoid detection.
+Moonshot AI has also acquired GB 300 equipped servers and has accessed GB three hundreds in Thailand, likely to train its models. Again, very difficult even with export controls when you can just take the weights on a USB stick basically or a hard drive across through customs and then go train it in another country even if there's a firewall and often there isn't. You just say, hey, go to this to this FTP server and grab this code and run this on your servers. You happen to have a data center in Thailand. Can you run this for me?
+And he says, sure. Yeah. No problem. As long as you pay me. The United States strongly supports the free and fair development of AI including a thriving competitive ecosystem that spans frontier models, specialized systems, open source frameworks and open weight models.
+Legitimate AI distillation used to create smaller, more efficient models play a vital role in this open innovation ecosystem. However, large scale covert industrial distillation aimed at stealing proprietary US technology and undermining American research is unacceptable. And so that is interesting that that is where the line is drawn. I think I basically agree with that being the correct line that that there's nothing wrong necessarily. I mean, security stuff aside with just some company creating a great open source product.
+Like you shouldn't ban open source or anything like that. But if there's this particular distillation attack and it's and it's really malicious and it has all these knock on effects, that could be rough. Now, this is an unpopular position already because everyone's saying, hey, Anthropic distilled on my GitHub. They distilled on my writing. They distilled on my blog post.
+They distilled on my YouTube videos. Everyone's distilling me. Why are you getting upset when China's distilling on them now? This is pot call in the kettle black situation. I think that the the the interesting effect is that there are lots and lots of parties that benefit from open source and cheaper open source, even stolen and open source.
+I mean, is just going back to piracy. Like, were lots of people, music listeners, that benefited from Yeah. Free music. Right? You get the music for free.
+But but the, you know, Metallica did not benefit and so Metallica got upset. And in this case, I guess Anthropic is Metallica. But Yep. There there's also some interesting folks who are on the fence. So consumers sort of benefit.
+They don't typically, they aren't too worried about frontier token costs and for most consumers, LLM usage is heavily subsidized. Like, you go to Google search and you get a search overview. Yes, that's token inference. And maybe that could be like cheaper if Google didn't have to spend money on pre training and they were able to use like distilled open source models. But at the same time, like, it's free for the consumers, so they don't really care.
+It's free, free. It doesn't matter. For small businesses, though, and businesses that are suffering with large token costs, being able to move to a cheaper model is huge, where the model maker is not trying to re accrue profits to offset training costs and R and D. So that's a huge benefit. So you're going to see a lot of people who are like, yeah, I just want Frontier Intelligence as cheap as possible.
+I don't really have a horse in this race. I don't really have exposure to the to the leading labs. I just want my business to be able to use tokens cheaply. And so those people will be pro Chinese distillation open source like
+Speaker 1: Yeah.
+Speaker 2: Free the weights. Right? Because it's better. Then there's like the political open source crew. But interestingly, where do you think VC's land?
+Because I saw a take that was like venture capitalists don't want like like a winner take A duopoly. A duopoly. They want reasonable outcomes and then a whole bunch of flourishing smaller ecosystem of players. And they don't want compounding runaway monopolies in AI so that they
+Speaker 1: can
+Speaker 2: go and fund the legal AI and the health AI and the little targeted solutions.
+Speaker 1: Yeah. Anytime anytime you see a take from a lovely venture capitalist, you have to before you kind of start sort of
+Speaker 2: Handicap.
+Speaker 1: Processing the take, go to their portfolio page, understand understand their biases. Mhmm. Did they back any of the leading labs early? That's gonna inform their view. A lot of the a lot of the a lot of the firms that that were heavy backers of of the labs have also gone and invested in a bunch of application layer companies.
+They've also backed a bunch of the neo labs.
+Speaker 2: Sort of heads I tell Yes.
+Speaker 1: Yeah. Basically, they're they're they're they're quite they're quite hedged. Yeah. But I don't think anyone wants a world where just two technology companies accumulate all of the value and just become this sort of vortex for capital and talent. Yeah.
+And even even you Two isn't
+Speaker 2: that bad. One is really bad. Two isn't that bad. Like, the fact that Android and and iPhone, like, battle each other out is not is much better than, like, there's just one and it's getting worse and it's, like, there's nothing that you can do to escape I don't know. Like, Duopoly is, like, way way better.
+Speaker 5: Yeah. For concern
+Speaker 1: The question to me is is what is is distillation something that can ever be Stopped. Stopped because think about it with I I was thinking about the
+Speaker 2: Well, if take
+Speaker 1: if you take the smartest Yeah. You know, human in a field and then you take some other and then you let students go and just ask them thousands of questions and you record the answers, like, you're gonna accumulate a lot of that person's, like, general intelligence on a topic. Right? And it feels like at least with models today, you're always gonna be able to just go poke and prod the model. And so when people say, oh, if the model's so smart, why can't it stop distillation?
+Yeah. It's like, well, you would just have to stop people from at least being able to poke and prod at it and try to get a sense.
+Speaker 2: It is it is very interesting that there does seem to be a crazy divide between I mean, if the distillation allegations are true, and we at this point, we've seen one post from Michael Kratzios and one chart showing like some textual similarity.
+Speaker 1: And enough people have got it to say that it's not Kimi.
+Speaker 2: Yeah. So so like if that's true, then what's really interesting is the is the American competitive dynamic because it feels like based on the amount of tokens Meta was consuming from Frontier Labs, they should be doing mass distillation and have a near free like Muse Spark should be much more like Claude flavored. And it seems like it's not. Like based on at least the initial reviews of Meta's product, it doesn't seem like they're doing distillation. Why?
+Obvious. Because big lawsuit, big pockets.
+Speaker 1: Yeah.
+Speaker 2: Like, also morality. But but that is a disadvantage. Like like, in some ways, Moonshot and Meta are in competition and they both open source things at various times and they have APIs and there's all the different businesses. And one is fighting with one arm tied behind his back because like Meta can't do distillation because they'll get sued.
+Speaker 1: Well, and
+Speaker 3: But
+Speaker 1: again generally. Like, imagine if imagine if a US open source company comes out with a fantastic model, benchmarks look good. There are. There are. People start using it.
+Yeah. And then someone gets it to say that it's clot. Like, that's gonna be the start. I mean, Anthropic has been litigious. Yep.
+They, you know, they they have that they have that ongoing lawsuit with one of their one of their customers over over just some like Yeah. Like a logo mark.
+Speaker 2: Yeah. Much less significant stealing the core intellectual property.
+Speaker 1: Bill Gurley is sharing more ChatGPT screenshots.
+Speaker 2: Before we talk about this, let me tell you about Console. Console builds AI agents that automate 70% of ITHR and finance support giving employees instant resolution to access requests and password resets.
+Speaker 1: Gurley says here is Ford distilling Teslas and Chinese EVs. The CEO of Ford Farley said Ford flies four to five Chinese EVs back to Detroit where engineers quote drive the crap disassemble and reassemble them to understand how they're built. He specifically praised the technology in Chinese vehicles as being well ahead of Western competitors. And earlier, he had discussed Tesla. He said, I was very humbled when we took apart the first Model three Tesla and started to take apart the Chinese vehicles.
+When we took them apart, it was shocking what we found. So I was I was trying to compare distillation which is against which is against terms of use. Yeah. And just buying a car legally and taking it apart. Yeah.
+So according to like US trade law, it's not illegal to buy a competitor's product and take it apart. Mhmm. It is illegal to recreate parts of the product that are patented and protected. Mhmm. And so, I don't know that it's like a perfect
+Speaker 2: Yeah. Comp. I mean, we we we went through this. I mean, like, the there's some pushback in the chat and this is all over the timeline as well that it's like where did the AI companies get their data? And, like, there is a question about what is fair use in the age of AI.
+Like, you're training on this. What what what data can actually be reconstituted? At what level? Like, how many sentences from Harry Potter before you get sued? And this is these lawsuits are being played out right now.
+Like they are actually happening and they are being decided on when an AI can use certain data. Did they go too far? Will there be settlements? There have already been settlements. There's been court cases.
+This will continue to this is not a only frontier labs are able to distill things. It's an it's an application of the the what is copyrighted, what is fair use, and how does that apply. And and it is very telling that you're just not seeing distillation from other American labs. Like, it's just not like the meta example, the Google example. Like, they're not copying off of each other nearly as much as you would expect if it was just legal to do so.
+Speaker 1: But Yeah.
+Speaker 3: I don't know.
+Speaker 1: In more news.
+Speaker 2: Confirms everyone's priors. That's a good headline.
+Speaker 1: In more news, Andrew Kern is sharing a headline from The Wall Street Journal. White House to redirect billions in research funds toward AI away from colleges. I'm sure a lot of people are gonna be happy about that.
+Speaker 2: Can give a little overview. Tyler's happy. But first, let me tell you about Railway. Railway is the all in one intelligent cloud provider. Use your favorite agent to deploy web app servers, databases, more while Railway automate automatically takes care of scaling, monitoring, and security.
+Speaker 1: On distillation by American companies, Potato says they just have to hide it better. It's stuff happening. I've seen it firsthand.
+Speaker 2: Okay.
+Speaker 1: Yeah. I mean, it's
+Speaker 2: Yeah. I mean, there was that moment in the Elon lawsuit where Elon did say that he had, like, that they that X had taken data from one of the other labs. Right? Yeah. I don't know if he specifically said distilled.
+And then also, like, was never there was never there was never a direct allegation that Grock was distilled on another model directly. And so whatever they did, they like, you know, threw it in the pot with a bunch of other ingredients. So who knows?
+Speaker 1: I mean, would be very silly not to try to look at Yeah. Other models and try to understand how that they work.
+Speaker 2: Totally. Also, like Moonshot, at least a Moonshot employee seemingly denied everything and quote tweeted Michael Kratios and said like, I'm learning something about my own company because like I this is news to me. Like we didn't do this basically. Essentially, a denial. Anyway, let's see with Kracios and go over to the White House.
+They want to rebuild American science and here is how they're going to do it, apparently. The White House is calling for a major overhaul of the American science system arguing that research has become too slow and concentrated in institutions like colleges and universities. A new report from science and technology advisor Michael Kratzios titled Science, a new golden age, says researchers now spend nearly half their time on admin work while federal agencies continue to rely on the slow grant process that often rewards safe consensus driven ideas. The report calls for faster permitting, more access to federal labs, stronger partnerships between government and industry, and a renewed focus on skilled trades and advanced manufacturing. Quote, discovery without domestic manufacturing leaves America playing the research bill paying the research bill while rivals develop the process improvements and capture the economic strategic and knowledge returns.
+That makes a ton of sense. A lot of the semiconductor supply chain intellectual property started in America, was developed in America, but then eventually went abroad. And that actually does give America some leverage. That's the basis for the chip controls. Like, why can America tell Taiwan where to send chips if the chips are made there?
+Well, it's because they're using patents from The United States to make those chips in many cases or licensing them. And so the US government does have a little bit of a lever to pull. The guidance will reshape how the federal government spends roughly $200,000,000,000 a year on research for the rest of Trump's term. The administration wants more of that money going directly to scientists through fellowships and awards rather than being routed through universities. Crazio said, American scientific progress was the beating heart of the twentieth century after World War two.
+We adapted to a new world by reinventing our scientific institutions. We must do so again today. The report lays a policy foundation that frees American scientists to do their most groundbreaking work and positions The United States to lead the AI driven scientific revolution that will define the next century. It will be interesting to see where the where science goes in a world where so much of it is being done at Frontier Labs. Like, we're actually seeing it with the the conjecture for conjecture back and forth between all the labs.
+Like, serious math PhD level work is being done at tech companies. This happened a decade ago. Tech companies were on the frontier. A vast majority of Internet networking patents and cybersecurity patents and new databases that were kind of science projects and were developed or with consortiums or just fully inside of tech companies like the transformer paper. Like, that is something that could have come out of a Stanford AI lab.
+It came out of Google directly. And, if you extend that, you could wind up with something that looks a lot like an advance in biology or material science or we talk to founders all the time who are working at this type of stuff and that could start happening inside of tech companies and what does that mean for science funding broadly. It's a big question.
+Speaker 1: But moving on, Naval. Let's watch this video from Naval.
+Speaker 2: What did he say? Naval went on Modern Wisdom. Of course, Chris Williamson's podcast. He deleted his calendar. He ghosts everyone and he refuses to be anywhere at a specific time.
+Speaker 4: I took that to heart. So I deleted my calendar and I don't keep a schedule. I try to remember it all in my head. If I can't remember it, I'm not gonna add a I'm
+Speaker 2: glad you
+Speaker 4: got here on time. Yeah. Exactly. I had to look things up at the last minute. So but ironically, I don't even know if Mark himself follows that, but he made the correct point.
+I read a little story about Jack Dorsey doing all his business off his iPhone and iPad and not even going into a Mac, and I said, okay. Wanna do that. So I'm gonna operate through text messaging, and I'll put up nasty email.
+Speaker 1: Does that feel like more freedom?
+Speaker 4: It does, yeah, because you're on the go. So I have a nasty email autoresponder that says, I don't check email and don't text me either. Right? If you need to find me, you'll find me. Obviously, some of this is a luxury of success, but some of these habits I adopted long before, actually.
+The hostile email autoresponder started a long time ago. I used to own the domain. I can let it go. Don't do coffee.com. I don't do coffee.com.
+I used to reply from that email. It's just the point. But I stopped being rude about it. Now I just ghost I just disappear. Wife knows not to ever book or schedule me for anything.
+I'm not expected not expected to
+Speaker 1: go to couples dinners, I'm not expected to go
+Speaker 4: to birthdays, I'm not expected to go to weddings. If somebody tries to rope her into having me show up, she says he makes his own decisions, you've to ask him directly. What about vice versa?
+Speaker 1: Are you not killing serendipity in a way that
+Speaker 4: No, no, no. I'm freeing up all my time, so my entire life is serendipity. I get to interact with whoever I want, whenever I want, wherever
+Speaker 7: So I
+Speaker 1: says, Nivala inventing being a massive d I c k from First Principles. It's very funny, but I think it's I think it's totally fair. I I've only met Naval once, but I know a lot of people that that he's invested in and things like that. And the the key thing here is, like, if he just never never goes to the wedding, never goes to the to the dinner Mhmm. Never is available for for a portfolio company, etcetera, then like that's not exactly like cool, but it is his decision.
+Yeah. But he ultimately he is doing a lot of those things, so Yeah. And I and I like I have another friend who's been on the show. I won't name him, but he's also just like doesn't do like, he does meetings, but he just never schedules meetings. He's just like, if we need to have a meeting, we'll have a meeting.
+We should just do it right then or, like, the next available point. And so he's kind of living his life twenty four hours at a time.
+Speaker 2: That meeting? Right now. It's happening.
+Speaker 1: I mean, he it's been wildly successful. He's invested Oh,
+Speaker 2: you wanna follow-up? Let's start the follow-up right now.
+Speaker 1: Yeah. Follow-up with me.
+Speaker 2: Follow-up with me on the next sentence that you issue from your mouth.
+Speaker 1: Exactly. No. But he's backed a bunch of unicorns. He's built a massive company.
+Speaker 2: K.
+Speaker 1: He's crushing it.
+Speaker 3: I like it.
+Speaker 1: So I think it can work.
+Speaker 2: You know who else is crushing it? Major cloud providers. They're reaccelerating as AI adoption increases. Let's go. This is from Cotu.
+GCP, Azure, and AWS. This is a fascinating chart because this is not revenue, this is growth rate. Even in the nadir, AWS is still growing 15%, 20% at that low point. And then now all of them are actually reaccelerating. The rate of growth is increasing.
+And this is all driven on new models, new applications, new abilities to do a bunch of things. I know that my token consumption personally has definitely increased in the last couple months. There's so much more to to do and so many more. So just so many more prompts that I fire off that cook for like an hour or a day as opposed to before like twenty minute deep research report would be sort of the max. Now it's like deep research report and turn it into a website.
+We got a couple websites.
+Speaker 1: Wait. Should we pull up your site?
+Speaker 2: Tyler Tyler has a has a has a has a codex that's been is it still cooking?
+Speaker 3: Pull up It's been like a week and a half.
+Speaker 1: A week and a Can we pull up your new website?
+Speaker 2: Yeah. So we saw a post on the timeline from DJ Cows. He says, startup idea. Milk jug with two handles for efficient passing and we turned it into a website. A whole product called Relay.
+Pass the milk, keep the peace. Can we recenter this
+Speaker 1: a little bit? Yeah. There we go. Pass
+Speaker 2: the milk, keep the peace. It went reusable. I don't think you want reusable for this. That's the one thing I change here. But they say it's the world's first jug made for handoffs, the Relay bottle.
+Speaker 1: Easier to lift, simpler to share, and strangely satisfying to pass.
+Speaker 2: One handle was always doing too much. A gallon is heavy. A breakfast table is busy. Who is passing a
+Speaker 1: One gallon of gallon, two handles, zero awkward handoffs. Fewer fumbles.
+Speaker 2: I didn't think milk needed reinventing, then I passed it across the table. Very very
+Speaker 1: 87% of our kitchen testers saw this said the second handle felt natural on the first try.
+Speaker 2: I like that it just comes up on the on the fly with all these little marketing slogans that sound pretty believable like milk made to move.
+Speaker 1: More of handles.
+Speaker 2: Pass Fewer fumbles. Pass it on. Seems like something that they would put on a billboard if this is a real product. It is a very very it's just so fun being able to use the full stack of AI image generation, AI writing, HTML generation, and then just automatically host it on a site with basically one prompt. Yeah.
+This was just literally one prompt. I put the photo in there with the startup idea and said make it a site and it just did it, which is a lot a lot of fun. Well, let me tell you about the New York Stock Exchange. Wanna change the world? Raise capital at the New York Stock Exchange.
+Just do it. DHH probably not raising money at the New York Stock Exchange. Thirty seven signals.
+Speaker 1: Oh, he is raising money from his customers.
+Speaker 2: Oh,
+Speaker 1: yeah. And they're financing this absolutely
+Speaker 2: he's got. We have Jason Fried coming on in at 12:10. We'll see if he's even trying to compete at this point or if he's given up entirely. DHA says the Model y is the superior transportation appliance. He's been very
+Speaker 1: Calling it an appliance.
+Speaker 2: About yeah. I mean, Doug D. Merrell called it that too. It is the it is the just the default. If you just need to get around, get the Model y.
+But he says when the mission is about more than getting from a to b, there's still no beating the internal combustion engine. Collecting a stable of great cars is one of the finest rewards entrepreneurial success. And he's got Look at that c GT. He's got the Carrera GT, the Diablo. Perfect back
+Speaker 1: GT silver on silver, it looks like.
+Speaker 2: I have a question. What is the Lexus in the back? Is that an LFA? It looks like a convertible. Do you see that red
+Speaker 1: like brown don't think
+Speaker 2: that's an LFA. Right? LFA Lexus.
+Speaker 1: Did they make a Cabriolet? LFA Roadster Spider. Never reached series production. They only they only built two fully functioning prototypes in 2008. So maybe he just got one of the
+Speaker 2: No. No. No. Different front 500? Is it LC 500?
+Speaker 1: Yeah.
+Speaker 2: Yeah. That Aston Martin looks beautiful too. Well, a wonderful a wonderful collection. What is the that McLaren that doesn't have a windshield? That's a fun one.
+That's gotta be fun to drive.
+Speaker 1: Is that the Elva?
+Speaker 2: Yeah. That is the Elva. Good job.
+Speaker 1: Before we bring in our next guest, let's talk about What's that? They built a mouth pad. It was a touch pad. You can drive with
+Speaker 2: your tongue. Wasn't this a joke I was doing
+Speaker 1: on grill? This is what everyone has been
+Speaker 3: waiting next mote.
+Speaker 2: Taste is taste is the
+Speaker 1: Let's pull this video up.
+Speaker 2: Trackpad in your mouth. The thing is that if you're going in the mouth, you think you would just whispering and communicating via text.
+Speaker 1: Yeah. Is this is this inherently Tyler, definitely buy one immediately. But is this inherently short like transcription? Like, because if you can just tell your computer what you want to do and it just uses the computer for you
+Speaker 2: Even with computer use, you could say like minimize this window and it can just go click that. So I I like the actually like the idea of mouth electronics. I think that that's something interesting. But I would just put a microphone in that and then you would just whisper to it and say and tell the computer what to do.
+Speaker 3: It could be for the production.
+Speaker 2: For the game.
+Speaker 1: Production team is excited about using it to control the cameras here in the studio.
+Speaker 2: Oh, the PTZ?
+Speaker 1: Ben just standing there like this the whole time just
+Speaker 2: It feels like it would get exhausting.
+Speaker 1: You could do soundboard with it, Jordy.
+Speaker 2: Over a 100 people already use it. Some for up to sixteen hours a day. I cannot believe they got a 100 people
+Speaker 1: We got a no comment from in Gabe the chat.
+Speaker 2: It's an odd it's an odd show. It's an odd choice. That wouldn't be the first thing I would go for. Anyway, Range Rover GT feels like a better if you're going with a device, you wanna get one of these. The Range Rover GT, a Grand Tour by Range Rover.
+Fifth member of the Range Rover family. Wait. It's electric? That is a crazy choice. Interesting.
+So they actually did is this this is a real announcement. Fifth member of the Range Rover family, elegant electric GT defined by a sleek silhouette and coupe perform proportions combining peerless long haul comfort, effortless performance and signature Rain Rover breadth of capability featuring an interior shaped by the same reductive principles. I mean, what's the what's the highest level electric vehicle right now? Probably the rate the Rolls Royce, not the Ghost, the Spectre. The Spectre.
+And so for that crowd, maybe this makes sense, but I you you you introduced this as potential Urus competitor. You thought it was gonna be souped up more like a turbo GT. Yeah.
+Speaker 1: I didn't see the EV part.
+Speaker 2: But they went EV. I wonder how this will sell. I mean for a lot of Range Rover buyers it's about comfort, it's about quiet, it's about smoothness and EVs can get you there a lot quicker.
+Speaker 1: I like the way it looks. It does look beautiful. It's like a good commuter care about autonomous driving.
+Speaker 2: Anyway, let me tell you about CrowdStrike. Your business is AI. Their business is securing it. CrowdStrike secures AI and stops breaches now more important than ever. As is our next guest, we have Veeral Patel from Ramp.
+He's the director of software engineering. He has an exciting announcement for us. How are doing?
+Speaker 8: Doing well. How are guys doing?
+Speaker 2: We're doing fantastically. Welcome to the show.
+Speaker 1: Thank you.
+Speaker 2: Give us a little introduction on your background road to Ramp, your how you've ramped up on the team. Yeah. And then and then we can go into the announcement today or this week.
+Speaker 8: For sure. Yeah. So I've been at RAMP since the since the beginning. I joined as a founding engineer, worked a lot on our core product team, and more recently have been kind of leading leading the Applied AI team and and launching what we just announced on on Monday, our our RampRouter.
+Speaker 2: Yeah. Tell us about the RampRouter. Was this something you built internally first and then sort of productized over time?
+Speaker 8: Basically, yeah. So we've been using RampRouter internally for the last three and a half, three years. Mhmm. For like our Three years? Three years, yeah.
+Speaker 1: Woah. Okay. So you're using it internally in the product, not even as an organization but deciding when you have Yeah. Basically a task to do
+Speaker 2: Yeah. Back then it was identify GPT-four and Gemini
+Speaker 1: was like, how do we basically parse a receipt or how do we
+Speaker 8: parse Exactly. That We used all of the models for receipt detection, parsing, alcohol detection on our policy agent.
+Speaker 2: Oh, sure.
+Speaker 8: And we wanted to choose the best models and wanted flexibility. And over time, that's just gotten more and more important. There's new models getting released every other day basically. And so we felt the pain point and we talked to some more customers about it. And now we're releasing it and and and giving everyone access.
+And so I think it's it's an exciting time to be building AI applications, especially at the application layer. And I think we're we're always have been there for companies to help them save time and money with their TE expenses or their bill pay and now their token costs. So, yeah, it's a really exciting release.
+Speaker 2: Yeah. So talk about how the product actually integrates into an enterprise workflow? I mean you can use the receipt processing. Alcohol detection I think is a fun one. Yes.
+Because I imagine you have to benchmark each model at some point on your workload and then the team can actually understand the trade offs? And then how much of that is driven dynamically based on token price like day to day even?
+Speaker 8: Yeah. Exactly. So you would basically replace your base like OpenAI
+Speaker 2: Yeah.
+Speaker 8: Endpoint with ramps instead, and you can pass in different model slugs. And so you can control if you want to just route all your traffic to to one model
+Speaker 1: Yep.
+Speaker 8: Or if you want to shadow some models and compare like GPT 5.8 with GLM 5.2 and and you can get the outputs. You can score the results with our with our score. And then in the background, you can actually compare the output and then decide, hey. Do you wanna start moving traffic more traffic over? And Ramp obviously can do this for you automatically, or if you want to control it, you can you can do it yourself too.
+Speaker 2: How about walk me through some of the trade offs. Like, if you're on GLM 5.2, are all GLM 5.2 endpoints created equal? Because I imagine that some produce more tokens per second, some might have different prices, also might have different even qualities. You know, you hear about like, oh, this one's been quantized or this one's been nerfed a little bit or they turned down the reasoning on this model post launch. And I imagine that benchmarking is consistent, but then also there's a whole bunch of trade offs that happen even after you've like selected the hot model of the day or the one that makes sense.
+Speaker 8: Exactly. Yeah. Beyond just the the model itself, there's different service tiers. So OpenAI, for example, has a flex tier and a standard tier, there's different prices for each. And ramp itself will track what the latency is for this application.
+You can set a timeout on, like, what you prefer. And and based on that, we'll decide whether to send it to flex tier or standard tier depending on the latency speeds that we're seeing. And so I do think one of the most powerful things here is the fact that we already have, like, these production workloads working for for customers, and it's been really important for us internally. And so we have the proof points of of saving ourselves 30%, maybe even higher soon. And it's just a matter of passing on those same savings now.
+Speaker 1: How should how should startups and enterprises, like, think about the significance of this product to Ramp itself? Like, what how much how are what are the resources that you're putting behind it? Because this feels like it feels like deeply aligned to Ramp's mission, but at the same time, going into a category where there's plenty of other companies that want to basically offer this product. Yeah.
+Speaker 2: It feels a little bit in the CTO suite as opposed to CFO suite, but they're blending together.
+Speaker 8: Yeah. I would say, even even internally, our our our CFOs and CTOs are spending more time together. And Yeah. When we've talked to to more customers, that that story, resonates. And so one of the most interesting things that obviously has been in the news a lot is just how much token costs have become a bigger part of a company's payroll and people have their estimates and budgets.
+And that's exactly what Ramp has been known for. And so beyond just the router itself on the URL, having all that data flow through and be in Ramp in our token spend management product is, I think, a big part of it. Same way that people have their limits and budgets on their T and E spend where there's been talk about specific companies have token budgets per month or per week. And so we actually launched just last week this product, and you can basically see your token spend alongside your T and E spend. And think, yeah, Eric Eric was on the call last week talking about that.
+And so it it just makes a lot of sense for those CFOs because they wanna manage that spend better, and then RAMP can be kind of that single pane of glass to do that.
+Speaker 2: So how does caching play into this? It feels like that's another way to optimize cost and it would be amazing if it happened sort of more automatically. Yep. What's the future of that look like?
+Speaker 8: Yeah. I think one of the I mean, there's there's a bunch of different optimizations we can make if we if we own own the router. As an example, if you're using Cloud Code or Codecs, you'll see as maybe your session is is longer, the the the context loads up and
+Speaker 1: Mhmm.
+Speaker 8: Your session gets increasingly more expensive. And and sometimes it'd best to just compact that context and start a new session.
+Speaker 2: Got
+Speaker 8: it. Have it have the model summarize. And so there's interesting experiments like that that we're running internally. And we've we're we're basically gonna do hundreds of these things on behalf of customers and show them exactly what the the before and after kinda kinda looks like here.
+Speaker 2: Yeah. How how are you thinking about integrating with tools like Codex and Cloud Code to Yep. Use the UI, UX patterns that users, end users, employees are used to but then still optimize under the hood. There's plenty of situations where you'll give Codex or Clog code just an API key to 11 Labs because 11 Labs can do more efficient, better quality audio generation. Or you might give an API key to all sorts of different things.
+Is there a world where you can delegate certain tasks to a cheaper GLM 5.2 endpoint, for example, and then have the preferred model and the preferred application still work semi normally?
+Speaker 8: Exactly. Yeah. So that's the plan. I mean, it's going to be a partnership with the labs and I the model think one of the interesting things that you see now and will continue to happen is that you'll have kind of jagged capabilities of the models. And maybe one model is really good at writing SDR outbound or another model is really good at writing email copy for the marketing team.
+And so we'd love to be in a world where RAMP can optimize your use cases for the right kind of business outcome. And I think just be aligned with like, hey, you're just trying to get your work done and then move on with your life and not spend a billion dollars. And so that's that's kinda like what what's really exciting to us. It's beyond just like the starting point, it's like doing this for all types of spend.
+Speaker 1: What is Ramp's culture like right now around token consumption? It's, you know Yeah. It's probably the most like aggressively AI native like fintech company or top top three in the world, let's say. But also cost to wear. Yeah.
+Exactly. It's rare. I would Yeah. Well I would love to see the reaction to one engineer going a little too crazy.
+Speaker 8: Yeah. Yeah. No. I mean, it's been fun. I think part of the game and part of what's been fun here is that we were building this product for ourselves.
+We got the entire company to be super AI pilled, spending a lot of lot of money. Maybe they don't want me to say the exact number. But now, obviously, like, we're we're taking a step back and and looking at the costs and and the outcomes and looking at way ways that you can kinda optimize. And so we're building this product with our finance team hand in hand. We're sitting next to them every day and and showing them, hey.
+Like, here's how we've done the optimization for this workflow, or here's here's how we've done the semantic tagging for our internal background coding agent inspect. And so it's been really fun, honestly, to use this product. And I think that's what makes this product really good is that we've built it for ourselves and can share the learning along the way.
+Speaker 1: Fantastic. Well, congrats on Great to finally meet you as well.
+Speaker 2: Steve Ings and great to meet you.
+Speaker 3: Yeah. Yeah. Thanks for opportunity the show.
+Speaker 2: It makes so much sense. It's an exciting expansion. Will talk to you soon. Have a great week. We'll talk to you later.
+Goodbye. Let me tell you about public.com. Investing for those that take it seriously. You got stocks, options, bonds, crypto, treasuries, and more with great customer service. Our next guest is the cofounder and CEO of Fireworks AI.
+Let's bring in Lynn. It's been too long. How are you doing?
+Speaker 1: What's going on? Show. Hey.
+Speaker 9: Thanks for having me.
+Speaker 2: Thanks so much for hopping on. Give us We the missed the fundraising announcement, but we're glad to have you here. How much did you raise? What happened?
+Speaker 9: Yeah. We raised 1,500,000,000.
+Speaker 2: Wow.
+Speaker 3: Good
+Speaker 2: job. Jordy from downtown.
+Speaker 1: Not not my best shot,
+Speaker 2: but got it done. It's incredible.
+Speaker 1: Massive. Talk about talk about everything that's happened since the time you're on the show. It feels like it's been at least six months, maybe closer to twelve, but you guys have been super busy. Cooking.
+Speaker 9: Right. So we we focus on building specialized intelligence platform. Mhmm. What that means is we want to make sure every single company has a tool to protect their alpha Mhmm. And to turn their alpha into their own intelligence.
+Speaker 5: Mhmm.
+Speaker 9: So what does that mean? Is we build a training and inference platform, co optimized, co designed together to allow application enterprise, activate their private data, continuously turn that into their customized model, optimize for inference for both speed and cost, where they, to solve their specific problem, they should have the best model quality, the best speed, and significant lower cost of our operation. By that, I really mean five to 10 times lower cost for them to build a durable business. We see an interesting dichotomy in current AI time very different from SaaS time, where at SaaS time, product market fit and a durable business is one thing. Once you hit a product market fit, you scale as fast as possible.
+I think last time I mentioned, in AI time, once you have product market fit, you're likely to scale into bankruptcy. You guys laugh at that. Yeah. Yeah. And that's become reality
+Speaker 2: right now.
+Speaker 1: So so funny.
+Speaker 9: So this is not just startups. Many startups are really facing the jeopardy of scaling into bank's bankruptcy even though they have a great product. It also is happening to large public companies because they are the winner. They were the start up, and they are winner winning various different kind of solution space towards cuss consumer, prosumer developers. They have a huge amount of traffic.
+If they deploy their AI features to all their audience, it's a lot of a significant amount of cost. And they also get stuck and not able to roll out their AI features. So at the same time, we know that application development has been significantly disrupted. It's very easy to implement ideas or copy ideas by because writing code is no longer a barrier. Yeah.
+We want to make sure had an interesting conversation with Jensen after his g g DCC keynotes. He mentioned there's no special general company. There's no special general company as in every single company exists for a reason. Mhmm. The reason for a company to exist is they specialize in solving a particular problem extremely well.
+And that offer exists from the product design to their business operation to their deep understanding of their customer and all of that reflecting private data. And today, every single company should have full control of how to turn that private intelligence into a model they can operate and power their product. If they only build on top of a black box API via API wrapper, it there's really hard it's really hard for them to do build up durable business. So we want to give our customer the best tool to build a specialized intelligence, to have full control of their own intelligence, to stand on top of and have full control of the cost for them to scale in the long run. So that's what we're doing and that's where we're gonna use our new fundraising to deploy capital into to accelerate that pace.
+Speaker 1: What's the biggest bottleneck to your business? What's you're growing quickly, but why aren't you growing faster?
+Speaker 9: That's that's part of the reason why we're raising this round is capacity. So we are the whole industry is going through a super linear growth Yeah. In terms of demand. It's because of doesn't matter whether it's open, close, the model quality pass the threshold of solving many, many problems. And on top of that, the tuned model quality is even better.
+And we as a company, we need to grow significant amount of capacity of people across the board. We're hiring from researcher to engineers to marketers to sellers, top notch. And we invite passionate people to join us on our mission I of building specialized intelligence.
+Speaker 2: I saw someone talk ask for, like, we need a Costco of AI, less philosopher kings. Do you like the idea of becoming the Costco for AI?
+Speaker 9: That's an interesting analogy. I think at the end, what we believe is the whole entire industry is changing from token maxing to value maxing.
+Speaker 2: Sounds like Costco to me.
+Speaker 1: That's right.
+Speaker 9: Because at the end, not all the tokens are equal. Yeah. And we care about solving a specific task, use the most economical way to approach it. Yeah. That's a doable business.
+And it has there's nothing new here. In the past, you know, hundreds of years of capitalism Yeah. Capitalism was designed for efficiency.
+Speaker 2: Yeah.
+Speaker 9: And and I I think the whole ecosystem is really good at that.
+Speaker 2: So And
+Speaker 9: that's the Costco trend
+Speaker 2: has, you know, other brands. They have the Kirkland brand. They've done some vertical integration. How deep does vertical integration go? How important is vertical integration to providing the lowest possible cost and winning on essentially value?
+Speaker 9: Yeah. So as we from our point of view
+Speaker 1: Yeah.
+Speaker 9: There's so many innovation that's happening on top of us. Many of those are application doing vertical intuition.
+Speaker 1: Sure.
+Speaker 9: And we are powering them today Mhmm. Including in in public. We talk about cursor because I've been training their own model for a long time. Yep. We talk about Harvey.
+Harvey have been training about their legal model for a long time. Yeah. There are many many other customer cross coding, co work, all kinds of co work verticals from legal, finance, recruiting, marketing, sales, customer support. Yeah. Wide variety of vertical.
+They are all building all sorts of vertical solutions, and they have their unique insight to build their customized model and make their business really standing out.
+Speaker 2: Yeah.
+Speaker 9: On top of that, there's also a lot of consumer facing company, and the whole entire entire industry is literally going all in on AI in production where we are helping them to transition
+Speaker 2: Yeah.
+Speaker 9: Into embracing not just embracing AI in the proper way, but but really integrate their offer Yeah. Into their
+Speaker 2: Even when you see Google search overviews, like, that has to be extremely cheap. Like, they don't charge for those. Obviously, Google is completely vertically integrated down from model training to they have custom silicon. They have their own data centers. Is that where you think it goes?
+Do you think you'll do custom silicon, your own own data centers, have power generation contracts to, like, fully offer the cheapest possible product for a particular category?
+Speaker 9: So I'm humble enough to acknowledge there are tons of experts
+Speaker 2: Yeah. Yeah.
+Speaker 9: In every single layer Yeah. Of this AI innovation. I think Jason mentioned five layer cake. I think there's probably more than five layers if you
+Speaker 2: Woah. Look
+Speaker 9: looks a
+Speaker 2: lot. Shot fired.
+Speaker 9: So every single every single layer has their own experts, and we want to work with We want to work with experts. They're really good at doing their own job. And we specialize in building this specialized intelligence platform, cross training inference. And we partner with all different layers to drive the best vertical solution. That's our philosophy.
+Speaker 2: That makes sense. Well, congratulations. Clearly working, Jordy.
+Speaker 1: Incredible progress.
+Speaker 2: Thank you so much. Great see
+Speaker 1: on the show. Can't wait to talk to you
+Speaker 2: again soon. We'll talk to
+Speaker 5: you later.
+Speaker 2: Goodbye. Let me tell you about Codex. Codex is a powerful workspace for getting work done with AI agents whether you're writing code, analyzing data, creating content or automating business workflows. Codex helps you move projects forward from start to finish. There's one more news story we gotta go through really quickly.
+Wedding guests are now placing prop bets on everything from how long the first dance will last to whether the groom will cry during the ceremony. Call Sager and Jetty. This is a dream come true for him. Couples are using printed cards and Get this
+Speaker 1: on SagerBet immediately.
+Speaker 2: It's on SagerBet immediately. Printed cards and apps to let guests predict things like who gives the longest toast, how many outfits the bride wears, or whether the first kiss lasts more than six seconds. The idea is to make weddings feel more interactive, especially during slower parts of the night like cocktail hour. One app called Betting on the Wedding says more than 25,000 couples have created pools on its platform which cost $49 and includes a live leaderboard. The company says revenue is growing at triple digit run rate year over year.
+Speaker 1: Real insider trading risk here. Yes. Right? You might have the the, you know, groom Yes. Talking to some of his buddies saying
+Speaker 2: But if it's low stakes
+Speaker 1: I've got
+Speaker 2: You know.
+Speaker 1: I've got some some I'm gonna cry. I want you to know I'm gonna cry. Yeah. Go go bet bet the house on
+Speaker 2: Yeah.
+Speaker 1: On me crying.
+Speaker 2: Maybe. But I I think this is designed to be, you know, generally small prizes, $20 gift card, maybe some memento, maybe some, you know you know, an engraved dinner plate from the wedding just to show that you were more engaged, something to remember.
+Speaker 1: Well, let's ask Jason.
+Speaker 2: Let's ask Jason. He would
+Speaker 1: encourage betting on his When
+Speaker 2: are we gonna get betting? When can we gamble on 37 signals properties? Well, Well, wedding was
+Speaker 6: we had 12 people in our backyard so there wouldn't have been a very big use case for that app.
+Speaker 2: Yeah. Small pool, lack of liquidity. That's a real problem.
+Speaker 1: Small number of people doesn't mean there's not a lot of volume necessarily. Oh, Depends on who you are. Some people throw in some real You
+Speaker 2: get DHH there, he throws in, you know, his CGT, you know, he puts it all on the line, you never know.
+Speaker 6: Do you see that picture today?
+Speaker 3: Oh, yeah. Yeah.
+Speaker 1: Oh, yeah. Oh, yeah.
+Speaker 2: Trying to hurt your feelings? What's going on?
+Speaker 6: Yeah. That's that was a little that was a bruise. That was a little bit of a bruise. It was a bruise because way back when I used to own a Singer nine eleven. Oh, yeah.
+And I was selling this is a number of years ago before they went crazy crazy. And I was trying to sell it and some guys like, I'll trade you my Carrera GT for that. And I'm like, I don't really nah,
+Speaker 5: I don't
+Speaker 6: really think that was a good deal and it turned out to be Yeah. Yeah.
+Speaker 2: Should One of the trades of all time.
+Speaker 6: Yeah. It would've been a good trade.
+Speaker 1: Yeah. Did just
+Speaker 2: have that image pulled up? I didn't have that.
+Speaker 1: That's so brutal. I I was in I was in The Alps Thursday, Friday, Saturday Mhmm. And the the event that I was at, there was hundreds of of Porsches everywhere and still when the CGTs would roll up, everyone would get quiet
+Speaker 2: Mhmm.
+Speaker 1: And and just watch. Like seriously, there's one moment where, like there was probably at least 200 people. Mhmm. And and it was everyone's just talking and talking and talking. CGT pulls up, crowd goes silent.
+Everyone's just in awe.
+Speaker 6: What color? Is it silver?
+Speaker 1: There was actually a bunch. Red. There's a GT silver. GT silver on tan is like probably Oh. Probably my my favorite that I've been seeing.
+Speaker 2: But no prediction markets around it?
+Speaker 1: None at all. Brutal. No. Just doing it Feels like just enjoying cars purely for the
+Speaker 2: get so many people if they're not comfortable driving. You know, we know some people that collect cars but they don't drive them. They could partake saying, oh, Geordie's going out for a little lap. When will he get back? I'll bet on it.
+You know? Of course Yeah. There's insider trading risk.
+Speaker 6: Will he get back?
+Speaker 5: Like, will
+Speaker 6: he just hit the Who knows? Those things are tricky to drive, I understand.
+Speaker 1: What's the latest what's your latest vehicle purchase?
+Speaker 6: I bought a a 1979 Porsche nine twenty eight
+Speaker 2: Mhmm.
+Speaker 6: Which is one of my favorite cars of all time. I own two nine twenty eights. They're both old and they're not expensive, but they're awesome. And I bought a green one. It's oak green metallic, which is a rare color.
+Speaker 1: Woah.
+Speaker 6: And it has Pasha seat inserts, and it's just it's awesome. It's just it's so seventies.
+Speaker 2: I love it.
+Speaker 6: I love it.
+Speaker 1: Is I've never driven a nine twenty eight. What is what's the experience like?
+Speaker 6: They're very planted. So it's a v eight, so it's a front engine car, is unusual proportion, but it's a very it's very stable. I mean, were not that fast. I think they had 200 and maybe 10 horsepower or something in the early cars. This is the first year, first and second year.
+So they're not fast but they they feel great to drive. I you should borrow it. Yeah. Combine some
+Speaker 2: of you a guy as well? Because that was the funniest thing about DHH's post is that he's just like, all these cars are kind of worse than the model y in some ways.
+Speaker 6: I do have a model y and it is probably the best car I've ever owned overall.
+Speaker 2: Yeah.
+Speaker 6: I mean, it's so comfortable to drive. It's quick as hell. It handles great. We had a previous y which I didn't think was very good but the new y's are fantastic. I just love it.
+Yeah. I mean, really I prefer to drive that over anything to be honest.
+Speaker 2: Do you do you have a do you have an intuitive sense for the business logic between the lack of fast followers around that? Like in terms of just appliance vehicle, it feels like all the other manufacturers are still playing in their special. It's this car says something about you. It offers a particular experience. It has convertible.
+But just in, like, the appliance, basically a minivan on wheels, ultimate utility, Tesla just has had it on lock and they're, like, running away with the market.
+Speaker 6: They have. I mean, I guess that's what Honda and Toyota did for many many years. Right?
+Speaker 2: I never really
+Speaker 6: thought of those as as they were more just basic appliances I need to get from point a to point b and I want it to be reliable as hell and just work, you
+Speaker 5: know. Yeah.
+Speaker 6: So I think I think Tesla kind of slid in there and basically did that with EVs in a way that everything else is a it's more of a statement. I guess people might think of Tesla's a statement, but it really it really is. Not It's like, I want a great car that's incredibly quick, clear, technology advanced, affordable. Yeah. Full self driving is incredible.
+It's just a really an amazing thing. And if you haven't really been in one recently, you don't really know because they weren't that high quality four years ago.
+Speaker 5: Yeah.
+Speaker 6: They were kind of bad. They've gotten to be very high quality now.
+Speaker 2: Yeah. People complain about the panel gaps and all the interior and all sorts
+Speaker 1: of Yeah. Stuff that they've
+Speaker 2: They've sorted that out.
+Speaker 6: They're incredible now.
+Speaker 1: Yeah. Where like a lot of different cars feel like they're in bubble territory CGT. I don't know how much more it can go up. I'd be I'm sure it'll go up more but there's I think there was one on Bring a Trailer. Actually
+Speaker 6: Let's not talk about Bring a Trailer. I'm actually Honestly, my phone is is on because there's an auction ending in thirty two minutes.
+Speaker 2: Okay. Out of here.
+Speaker 6: I can't miss because I'm bidding on it.
+Speaker 1: So so Yeah. So so with Yeah. We won't dox the car until you until you win.
+Speaker 6: It's okay. It's okay. I mean like, it's a fiftieth anniversary nine eleven which I used to own. I owned one a long time ago. Do you know the car?
+Do you know that particular No.
+Speaker 1: Which Pull it up. Wait.
+Speaker 2: Pull it up.
+Speaker 1: The fiftieth anniversary of the nine eleven? Isn't that only a few years old?
+Speaker 6: Yeah. So was a 2016 car and they did a it was a September model and they did an anniversary model which they put like bright chrome trim on it. They did pepita inserts. It has a slightly better engine. It's the last of the manual naturally aspirated nine elevens with a wide body that aren't ridiculously expensive.
+Speaker 1: Mhmm.
+Speaker 6: And I it's beautiful looking. It's got like updated Fuchs wheels. It's an incredible thing. Go check it out.
+Speaker 1: Yeah.
+Speaker 6: It does. You'll find it on it just looks beautiful. I've owned one and I had a PDK and there's a manual for sale and I kind of badly want it. It only has 7,000 miles on it. Please don't outbid me
+Speaker 1: whoever you are. Actually got my mouse I pulled have up here. We won't we we don't need we don't need to pull it up but it it looks absolutely absolutely beautiful. There it is. They pulled it up.
+Speaker 2: It looks like a
+Speaker 1: What do you think about what's your read on the Sport Classic? Have you driven a Sport Classic?
+Speaker 6: I've not driven one. I love the interior. Mhmm. I don't like the big circle on the side if they, know, they usually have Oh,
+Speaker 1: no decals.
+Speaker 6: No decals for me. I the interiors are gorgeous though. Love that car.
+Speaker 5: Would the thing is is
+Speaker 6: that they've they, you know, they're so expensive for what they really are which is a Carrera s basically, believe. Right? Or To me
+Speaker 1: to me the driving experience is is some like I had I think the best my my most memorable twenty minutes in the car coming down Okay. From Mankind in Austria. Uh-huh. Twenty minutes open road. It was the most it felt like I was in a video game.
+It felt like driving some combination of like a turbo s and a GT two. It's like so so planted and it's like it's refined but it's also angry. It's like it was it was
+Speaker 6: Manual too, right?
+Speaker 1: Yeah. Manual. It's it's So nice. Incredible. It's
+Speaker 6: great. Those are those, you know, you can't get them really in aftermarket, they're what? 300 plus or something now?
+Speaker 1: No, no, no, like 600.
+Speaker 8: 6, sorry, 600.
+Speaker 1: Yeah.
+Speaker 6: Those were the STs. Wait, so when a million or something?
+Speaker 1: Yeah. The s t is even Yeah. I think even more. But so when when things feel like they're in certain cars feel like they're in bubble territory, are you just buying are you going like, I'm just gonna buy nine things like the nine twenty eight and things that are a bit more special, but less like, you know, you don't want to buy it when it's hot basically.
+Speaker 6: Yeah. I mean, I tend to not chase things anyway. It just there's if everyone's chasing it, I'm not interested in it in a sense. So the nine twenty eight is a car like nobody wants, but I've always loved. I kind of grew up with them.
+They're just they're super cool. So I I go after that, but I I do I do miss the fiftieth anniversary, so I might want to pick this one up if I can. We'll see where it ends up. Maybe I won't. But I mean, wanted a Dakar for a while.
+I wanted a Sport Classic actually. I'd love to have one of those, but I'm not gonna pay that's obscene. I'm just not gonna do that. There's no reason for that. It's also not I just don't spend that kind of money on cars.
+It's a crazy amount of money on a car that's just not something I'm really gonna drive all the time anyway.
+Speaker 1: How do you feel what is the last ten minutes of an auction like feel like to you? Because because I've like tried I I've I I when when sports sports betting was blowing up, I was hanging out with I think Senra and like Rob and probably John. And I was like, I'm gonna give this a shot. I wanna know why why this is so popular and I just couldn't quite I couldn't quite get into it. But the experience of being of bidding in the final minutes of an auction, like something in my head just goes like, you're not losing.
+And and to me,
+Speaker 6: it's It's dangerous.
+Speaker 1: Get carried away.
+Speaker 6: It's dangerous to throw that one more that one chip in there at the end. You're like, fuck it. I'll just, know. Yeah. The thing is is that I I all I mean, this is just I always feel deep regret right after winning a car.
+Like like, especially a vintage car. Maybe not a new car. Like a sport classic, I would not feel regret cause I know what I'm getting and there's no issues. Right? But like Yeah.
+You buy a seventy nine nine twenty eight on the on the thing and you like, you get it and you take it to your mechanic, he's like, you know, there's like $40,000 of work that needs to happen on this thing. You're
+Speaker 1: like, fuck.
+Speaker 6: So vintage cars, deep regret and I've regretted all of them I bought even though I liked them all. But the purchase was like deeply regretful. But modern cars, I don't feel that way. I I would be very excited to get something I like.
+Speaker 1: Yeah. Yeah. Good point.
+Speaker 6: Yeah. You gotta be careful. That that like I talked to some mechanics and they're like, that is just keeping me in business because people just buy these cars. Oh. They think they're good.
+They get them. They need like tons of service. It's been great for small mechanics actually.
+Speaker 1: Interesting. Yeah. I I bought my first sports car and bring a trailer. The first one I really went for, I ended up Yeah. Bidding way more than I was comfortable with just because I got into I I was like 23 at the time.
+I got into the last I was one of the last two bidders and we Psychosis? And he yeah. I got I got I got auction psychosis, ran away. Honestly, luckily, I didn't win. Okay.
+But the second one I got, it was I had the perfect experience. I Oh, go ahead. Bought it. I I think I bought it bought it well. It was a 997.
+Nice. It was in Arizona.
+Speaker 6: Dot two, dot one? What which one did you get?
+Speaker 1: The dot one. But the issue, the the the bearing issue that they have had already been like fixed or whatever. Okay. And I flew to Arizona, pick it up, I get it, drives great. I'm thirty minutes down the road headed back California in it.
+I was gonna drive through Joshua Tree and I was passing a construction site and a piece of rebar went like fully through the wheel, like through the tire and the wheel. Basically, I pulled over and and ended up having to ship the car back to California. And it was it was the most it was my most devastating car enthusiast moment. But once it got to California, we got a new wheel. It ran perfectly for as many miles as That's and great.
+Then ended up making money on the on the sale.
+Speaker 6: Nice. I don't ever do that. I bought real quick. I bought a an Aston DB nine GT, which is the last year the DB nine Mhmm. Which is which is to me one of those beautiful cars ever made in history.
+I got the car, I get it, you know, shipped in on the truck. I got this on bat. There's like this rattle in the back that's kind of bugging me, I take it to the mechanic. They can't figure it out. They're like a few grand in trying to figure it out.
+Turns out like the car got in an accident at some point and it was never reported on CARFAX and to like fix this structural issue, was like $9. So I'm like, fuck it. Just I sold the car to the dealer immediately. Lost like 20 k. I just wanted to wash my hands of it.
+I like, I had it for two days. Two days. And just sold immediately. Because I just I can't I just can't handle that thing to know that like I bought this thing and it wasn't what it was Mhmm. And yeah, could fix it but it was never gonna be the same.
+Yeah. So I I never I never seem to win on that but good for you. I'm glad you made money on your car.
+Speaker 2: Good luck for twenty minutes.
+Speaker 1: How do you how do you feel about different luxury brands doing what I would call Zoomer partnerships? So like Aston Martin launching a partnership with Call of Duty. I can imagine that the logic for that was, hey, we want to reach a younger audience. We need more relevancy with with the next generation of buyers. Aston has obviously struggled recently even though I think their cars are are stunning.
+But I would say in every single sort of like price tier, it's not quite as desirable. I think for a lot of people as like the Ferrari equivalent or the Porsche equivalent.
+Speaker 2: Mhmm.
+Speaker 1: So I can I can understand where they're going even though to me as somebody who loves Call of Duty and loves Aston Martin, I still got like quite an aversion to that partnership? And then you have some of the stuff that like AP does with their, you know, partnering with like DJs and things like that that that that's kind of It's this interesting thing because you're trying to appeal to the young generation, but it ends up turning off, I feel like, your actual buyer group in the process.
+Speaker 6: Yeah. I I find it to be I mean, for me, I I it doesn't appeal to me. And although I will say that I like what Aston's done. Aston with that DB nine that I bought, they had a double o seven edition which I think is cheesy as hell, but because it's a like double o seven like on the seats. But it probably spoke to their audience, you know.
+So like that makes sense to me in a sense even though I would never buy that. But yeah, don't like the I don't like the EP spot deals. But you know, who am I to say? Like they clearly sell them out and it probably worked for them, but it's not the kind of thing that appeals to me is all I would say.
+Speaker 2: Agreed. Any more car questions? Yeah.
+Speaker 6: Car watch questions. I mean, there's actually I saw a watch recently like, Braemont came out with some like Aston Martin or like, I don't know who it was. It's like, what do you I don't who buys these? I just wonder who buys these silly things. Just I don't get it.
+Speaker 1: I don't
+Speaker 2: get it. But the the watch car the the watch car collab seems to make more sense because if you're buying a car, you're checking out for something that's 6 figures. If you're like, that's a couple more thousand dollars. Like throw the watch in, whatever. It's like
+Speaker 6: Well, sometimes the dealerships do that to to like, you gotta buy the watch. If you wanna buy the watch, I'll get you the car. Like, that I hate that bundling stuff. I Yeah. It's so disingenuous.
+I don't know if you saw this thing Jay Leno. There's this little Jay Leno clip recently about how he won't buy a Ferrari because when he was younger, he went to go buy a Ferrari and they're like, well, you gotta buy two of these other models you don't want before you can get the one you want.
+Speaker 3: Yeah.
+Speaker 6: And he's just like, turned me off forever from Ferrari and like, I'll buy McLaren because they want my business and they're cool to me and, you know, that's how I feel about this stuff. That's why I don't like the I don't like this bundling. I don't especially Rolex ADs and
+Speaker 2: Sure.
+Speaker 6: Porsche dealers now are doing the same thing. It's just it's gross. Yeah. It's gross, I think.
+Speaker 1: Yeah. On the Ferrari side, obviously, the luche was mocked, but ultimately, do you think it ends up being a win for them just because they can effectively say, now, any car that you actually want, you just add a luche to the to your cart and check out. And you they solve they get, you know, more margin, I'm sure, plus they solve their emissions issues if, like, for everyone Oh, sure. Sure. Crazy, you know, desirable super car.
+They sell one EV and it and it sort of nets out to being like pretty efficient.
+Speaker 6: My sense is they'll sell every car they make. And I just don't think they're going to resell very well. That's all. But like, I mean, I don't know. I you know, when I first well, not first, but last time I was on the show we talked about the interior of that car and like Yeah.
+We're like, let's wait until we see the exterior. That's
+Speaker 2: right. That's right.
+Speaker 6: Because the
+Speaker 2: interior, I still think looks cool. I I've seen a lot of the details. It's interesting. It's different, but it like can work and it has a purpose. And then Yeah.
+The exterior was really really
+Speaker 6: I'm I'm the kind of person I just support like all creators of things. It's so hard to make anything. Yeah. So like, want to give them the benefit of the doubt. They're Ferrari, it's Johnny like, they probably know a few more things than people online know about like what's cool, what isn't, what's good.
+Speaker 2: Yeah. It it is
+Speaker 6: an unusual car. It does not look like a Ferrari. It doesn't feel like a Ferrari, but maybe it's time for Ferrari to make some changes. I don't know. Maybe they're bored of their own history.
+I'm not sure. I mean, it's interesting. Yeah. I I wouldn't I'm not interested in the car, but I just it's for the same reason I really respect, but I would never want to buy a Cybertruck. Like, I just like that that exists in the world.
+Speaker 2: Yeah. No. Agree with that, for sure.
+Speaker 6: I like that the luche like exists in the world. Like I liked it someone did that and they did it their own way. I always support things like that even if it's not for me.
+Speaker 2: Yeah. Yeah. It's definitely a head to I'm
+Speaker 1: gonna support it myself Yeah. When Are you? Selling when no. When they're selling for Half
+Speaker 2: off off. Whereas Yeah. Before everyone was complaining True. Oh, SF 90 is so expensive. Purosangue is so expensive.
+No one's complaining about that stuff anymore now. Everyone's like
+Speaker 6: That's a good point.
+Speaker 2: It has a natural aspirated v 12 in the Purosangue. If they're charging the high $500,000, that's
+Speaker 1: What is your last car question? What is You said you had a Singer, but but when it comes to Resto mods, like what makes a great Resto mod to you?
+Speaker 6: I don't think there are great Resto mods. That's what I realized. I mean, the Singer is an amazing thing for sure, but what I realized was it was neither of what it was supposed to be. It wasn't like a vintage car, and it also wasn't a new Porsche. So it kind of had this it's it's a beautiful object, and they do an exceptionally fine job designing and building them.
+Speaker 1: Mhmm.
+Speaker 6: Although mine had a lot of issues, because mine was pretty early, like the seventy second car, so they hadn't worked it all out yet. But it just didn't satisfy me in other either direction. And and I kind of realized that like, I'd rather just have an old car and a
+Speaker 1: new car.
+Speaker 5: Mhmm.
+Speaker 6: And save some money, could have both. And and then like drive the old car and have the old experience, drive the new car and have the new experience. So I'm not a big Rust O Mod guy. For a while, I was curious about like icons like the Broncos and stuff. And I also with that, I'd just rather have an old beat up Bronco or an old beat up pickup truck.
+I just I'm I'm more into like what what is the thing supposed to be? Just get the thing that it's supposed to be. Yeah.
+Speaker 2: What about
+Speaker 6: what's your take?
+Speaker 2: What well, we were debating the the Range Rover has a classics program where Oh, yes. They're selling a 1994 Range Rover, but it's been fully restored from the factory. And so maybe that solves the problem you're identifying. What do you think about that?
+Speaker 6: I'm into that because that's like the brand doing their own thing. I'm into that fully. Think Porsche has a classics program too perhaps maybe. Yeah. I just don't like mods basically.
+And to me that's not a mod, that's like a true restoration.
+Speaker 3: Okay.
+Speaker 6: A mod, I think that's backdating or something. I'm not into that so much.
+Speaker 1: Yeah. Restoration I I would say that's a great way to put it. It's like I'm a massive fan of restoration. I don't want somebody to take Yeah. I don't want somebody to take what was what was perfect at its time and try to like modernize it and then put their own spin on it.
+Speaker 6: Same same thing with houses for me. Like, I like an old house should be restored to the way it was. I don't like walking into an old house with a lot of soul, and then you go into a kitchen and it's super modern. Yeah. It just doesn't it doesn't work.
+I mean, it works, but it this this something is missing then actually in both those experiences. So anyway, that's my stupid opinion as whatever. Everyone's got their own thing. Plenty of people like singers, plenty of people like Rustamuds, and they all are great things. It's just not for me anymore.
+Speaker 2: Yeah. I gotta ask you one tech question.
+Speaker 6: Yeah. Sure. Let's do something.
+Speaker 2: So so and I I I think you'll have a you'll have some insight here. So there was a a screenshot from a story about how hard technology workers are are grinding in the AI era that went viral for being bleak according to this this poster. They said a 31 year old tech startup worker in San Francisco who spoke on the condition of anonymity for fear of professional repercussions said that her engineering manager husband told her a few months ago that he needed to focus all of his energy on quote becoming an AI native and requested that she take on almost all parenting responsibilities for the couple's preschool age daughter. She complied. She described the experience as surreal.
+He spent days, nights and weekends locked in his office toiling away on AI projects but her husband eventually thanked her. He was now the top user of AI in his company. Is it the great lock in? Is this burnout? Does he need to pick up a book?
+If so, which book would you recommend from your library across Rework, RemoHoot? Doesn't have to be crazy at work. It sounds like it is crazy at many startups, at many engineering organizations. Some of them are in real knockout drag out fights where the extra hour of work will actually result in maybe winning or losing It's
+Speaker 1: funny the way that others, maybe not. The whole the whole conversation around that post just was around the screenshot. Yes. No one read the actual article. I certainly didn't.
+And it just ends, the husband is now the top user of AI. Yes. Which doesn't mean he's the best at using it. He just means he's it reads to me like he's just using the most tokens. So hopefully, came out of his three month, you know, AI bender and is like actually the best at Yeah.
+Getting the most utility out of the product. Driving value. But Yeah. We don't know.
+Speaker 6: Well, yeah. I mean, I I do find it ironic that, you know, AI is what it is, yet everyone seems to be working harder and harder. And it's it's it's it's one of these things technology has always promised that it would do a lot for us, then we'd have more free time to do other things. And it just seems like no, no, no, and no, especially at work. So yeah, I I think it's a real problem.
+I and I I can sense it here occasionally that, you know, yeah, we're getting more done, but it's it weighs on people more because this you can be doing multiple things at once now and you can be parallel working on with a bunch of different agents doing a bunch of different things. It's like to what end? Where where is this going and why does it need to happen? Not that the technology's not amazing, but I'm not sure it's doing good things to human beings. Yeah.
+So but the tech is incredible, obviously. But
+Speaker 1: Some of Imagine if thirty seven signals had got access to today's models a decade ago Right. And didn't tell anyone
+Speaker 2: Mhmm.
+Speaker 1: And just got to use them. Yeah. Maybe you're Part of the problem is that everyone has access to the tools and you're in a competitive Sure. Category and you and and I feel like there's this concern of of if we're not I mean, it's always a question of like, do you wanna be Mhmm. Do you want at least if you're a venture backed company and you're competing against another venture backed company for a market, you don't want to be working less hard than them.
+That's generally a good not a good strategy.
+Speaker 6: But those are inputs. Like customers don't care about the inputs. They what is the like how does it manifest in the product? And I'm not seeing products get better at the rate that the development process is getting better.
+Speaker 2: Yeah.
+Speaker 6: So people are doing a lot of stuff, And yet, like, people actually don't want their products to change rapidly either. People want to get used to things, they want to settle into something, they want to understand how it goes, they don't want things to be moving constantly, things to be added all the time. So there there's a disconnect actually between how much you can make and how much people actually can absorb and and incorporate into their own work day basically. So yeah, I I think like the end the day, you're building a product. However you build it, you're building it, but just because you can build more of it doesn't mean it makes it a better product, can make it a worse product and you're seeing that all over the place right now actually.
+So I don't know. It's great to have the tools. The tools are amazing, obviously. But you still have to decide what gets through the slit. Like what what are you putting out there in the world?
+Speaker 2: I'm always laughing about the fact that when I'm in Gmail in Chrome, I can open Gemini in Gmail and I can also open Gemini in Chrome and then I just have two sidebar chats that can
+Speaker 6: Yeah.
+Speaker 2: If and if the window's too small it takes up 100% of the window. I'm like Yeah. This is and then and then you can't even use the models to interact with the email. And email's already pretty well organized. It's like it's all perfectly organized by time or whatever filter you want.
+Speaker 6: It's pretty good already in that way. But yeah, anyway, I mean amazing tech. But yeah, I I I don't think we've figured out what that all means yet still. Yeah. And I'm not alone in that.
+But it doesn't look, if it if it exhausts people Yeah. That's not a good thing. It no tech is good if it Yeah. Makes people exhausted.
+Speaker 2: There is Burnout. Something odd about the pattern of working. I mean, like, when you're doing software development, occasionally there are times where, like, you just have to wait while something builds and that takes a minute. But a lot of times you can get in the flow state and be, you know, focused working for an hour. But when you fire off a prompt and you're waiting, like, maybe it's twenty minutes, maybe it's an hour, and then you so you're checking your phone and it feels like you're, like, waiting for a call to come in almost.
+It's a different way of working and I can see how, if not well managed, it can become very stressful.
+Speaker 1: Yeah. It's a tool. Like, I've been in places in my life where my laptop feels like, oh, it's exhausting. Yeah. This is but it's not Nice.
+Really the laptop. It's like what I'm what I'm doing with it.
+Speaker 6: Yeah. What you're doing with it. Yeah.
+Speaker 1: Yeah. Time to go
+Speaker 2: for a drive.
+Speaker 1: Jason, always a pleasure.
+Speaker 2: Always a pleasure.
+Speaker 6: Fun. Fun to see you guys. Yeah. Wish you had
+Speaker 1: for our time.
+Speaker 6: Let's do
+Speaker 2: it again soon. We'll talk to
+Speaker 1: soon, dude.
+Speaker 2: Goodbye. Let me tell you about MongoDB. What's the only thing faster than the AI market? Your business on MongoDB. Don't just build AI.
+Own the data platform that powers it. I forgot to ask Jason if he has opinions about restomods for jet skis. I'll ask you, is there a jet ski
+Speaker 1: that you'd recommend for the saw wooden jet ski recently.
+Speaker 5: A wooden?
+Speaker 1: That's Like a really classic jet ski.
+Speaker 2: Dude, don't
+Speaker 1: get me
+Speaker 5: excited. I'm into it. Look, these things go fast. Yeah. I think I went 70 miles an hour on my jet ski to work.
+Wow.
+Speaker 1: To work. That's faster than most
+Speaker 2: people commute. They're stuck in traffic.
+Speaker 5: Mean, I've got a five minute commute to work Yeah. On a jet ski. Unless it's raining.
+Speaker 1: Yeah. Unless it's raining. Yeah. No. It's raining.
+Not unlike
+Speaker 5: It gets a
+Speaker 1: little weird. Okay.
+Speaker 5: And you call an Uber.
+Speaker 2: Okay. Is it is it helpful? Do you do your best thinking on the jet ski?
+Speaker 1: No. No. Does it clear the mind? Does it clear the No. Just Guys,
+Speaker 6: it's it's a a it's a
+Speaker 5: fucking notch on the belt. Who else do you know is jet skiing to work? Nobody. I'm the guy. Oh, you're that guy.
+Looked it up. I looked it up on your guys' application, OpenAI, you know, chat GBT on your guys'
+Speaker 2: Yeah. On
+Speaker 5: your app. You're welcome, by way. Yeah. No. I I wanna thank you for all the great stuff that you guys We were not in on chat gpt.
+Yeah.
+Speaker 1: Yeah. But
+Speaker 5: I think there's like one or two other CEOs, but but nobody at a major nobody nobody thousand person plus Commuting to work.
+Speaker 2: A jet ski.
+Speaker 5: On a jet ski.
+Speaker 2: Only a Texas resident. Right?
+Speaker 5: Texas resident. That's right. Primary residence. Let's
+Speaker 2: go. Yes.
+Speaker 1: Before we start, the last time you were on here, that was for me the best moment of making the show
+Speaker 2: Thank you.
+Speaker 1: Ever. John and I. Was Truce. It was totally surreal and we had a we really enjoyed the conversation. But but to me, we left that and it was almost depressing because as somebody who, you know, started getting into startups in the twenty tens Yeah.
+You were that guy. And then I was realizing with the show, we we had that conversation with you and it and it was, you know, a significant day for you. But it was sort of depressing because I realized like a moment like that would never actually come again. Yeah. Where I got to basically interview It will happen.
+Will happen differently. But but you know, a childhood hero Yeah. Having that conversation, that's one zero one for me. I don't think it'll happen again. There'll be other it was peak.
+Speaker 2: It was It good.
+Speaker 1: But anyways, you've been busy since then. I've been busy. And we're
+Speaker 5: I'm excited. It's my first OpenAI podcast.
+Speaker 2: I'm
+Speaker 5: very excited about it. Also I want to let you guys know that if you need therapy sessions for what it's like to be a made man in retirement Sure. Like if that's a thing I
+Speaker 6: can help
+Speaker 5: motivate you This
+Speaker 2: step one of therapy in this situation just get a jet ski?
+Speaker 5: No. It's just it's it's actually denial. You gotta get over the denial. Okay.
+Speaker 3: Over the denial. It's fucking.
+Speaker 2: And then the acceptance? Yeah. It's something know.
+Speaker 5: I I I don't
+Speaker 2: know the 12 steps. Yeah. Yeah. Yeah. Yeah.
+Everyone just knows denial and acceptance. Don't know any of the other a bunch of shit in room. Yeah. Grieving, bargaining. There's a couple others in
+Speaker 3: there but you do go through that.
+Speaker 2: It's natural. Yeah.
+Speaker 5: Yeah. It happens. Yeah.
+Speaker 2: But then you start building. Yeah. It's good.
+Speaker 5: And if guys need advice, you need therapy, I'm here for you.
+Speaker 1: I love it. I mean, I
+Speaker 5: know the retard maxing is you're not supposed to do therapy. I'm just saying there are their
+Speaker 1: new partners. They're like if if their one thing they wrote into the fundraising round, they wrote into the docs like cannot go to therapy.
+Speaker 2: That would amazing. It's our modern therapy for men. This is what men do. They don't go to therapy. You should
+Speaker 1: have should have office hours for founders but they have have to just come out on a jet ski going and you're going 70 miles an hour Okay. And you'll coach them.
+Speaker 5: I'm I am starting to teach many founders and people in tech world how to water ski, how to wakesurf. A bunch of my engineers already. So there was one guy who didn't know how to swim but I got him behind the boat wake surfing.
+Speaker 1: Woah. Woah. So he had a life jacket.
+Speaker 5: The life jacket on. Life jacket. It sounds weirder than it is.
+Speaker 2: Yeah.
+Speaker 5: But it was still very weird.
+Speaker 2: It's high risk.
+Speaker 5: High risk. No.
+Speaker 2: It was good. Potentially.
+Speaker 5: Okay. Cool. The business. Business. Going well.
+Dude, it's business time. Yeah. Gotta put on the business socks.
+Speaker 1: Unfinished business.
+Speaker 5: Unfinished business. So yeah. I announced earlier today we did a $1,700,000,000 raise. There's some there's some noise that's gonna happen.
+Speaker 1: Downtown. I'm coming in next time. Yeah.
+Speaker 5: You're come.
+Speaker 1: Come over the tunnel. Yeah.
+Speaker 5: So much noise.
+Speaker 1: Much noise. Alright. But walk us through. I feel
+Speaker 2: you came in very
+Speaker 1: I us think it's been what? Months since we talked?
+Speaker 2: Three or
+Speaker 5: four months, something like that. Yeah. I think did we talk in April or March?
+Speaker 1: I think March.
+Speaker 5: Yeah. Oh, that's right. Yes.
+Speaker 1: Early March. Four months.
+Speaker 5: So so yeah. So happened
+Speaker 2: with the business to unlock the next round?
+Speaker 5: I mean, we continue to go up into the right. But like the announcement of Adam's was we are we are gonna do physical automation, physical AI
+Speaker 9: Mhmm.
+Speaker 5: What we are calling industrial AI
+Speaker 2: Yeah.
+Speaker 5: To transform these industries one at a time. Yeah. We were we did food. Mhmm. We moved into mining.
+We're doing transport.
+Speaker 4: Mhmm.
+Speaker 5: And it's working. Mhmm. And so that's how you go. Yeah. And then of course there's like going out of stealth.
+There's all the things. Yeah. And it was just the right time. Yeah. Yep.
+So so, yeah. We just went to market. Yeah. We said when I when I originally went to market, I was like, these were separate companies.
+Speaker 1: Yeah.
+Speaker 5: Okay? So our mining and transport was a separate thing.
+Speaker 1: Mhmm.
+Speaker 5: Food was a separate thing. And and we had a bunch of other, you know, a bunch of subsidiaries doing cool stuff. And I said, which one do you guys wanna do? Do you wanna invest in mining? Do you wanna invest in food?
+Do you wanna invest in this? And they're just like, we wanna invest in you. Yeah. Yeah. And we heard that like, we we took the like the first five folks we talked to all said that.
+Mhmm. Yeah. So then what we did is we put the companies together and then sold the equity in a singular entity.
+Speaker 2: Yeah.
+Speaker 5: Yeah. So just put put it together and it and it I it's much easier for me. I don't know how how Elon does it with all the different companies Different and companies. It's wild. No.
+And borrowing
+Speaker 1: is what's been happening. Right?
+Speaker 5: It's like guys, did it for 20 though.
+Speaker 1: Yeah. Yeah.
+Speaker 2: Yeah. And he's still technically doing it with Tesla. Yeah. They are different companies.
+Speaker 5: Boring company. Yeah. Neuralink.
+Speaker 1: Yeah. Like he's still got a lot in there for investors is like even with Elon companies, there's such an insane power law where you have a $10,000,000,000 company and then you have a, you know, a $2,000,000,000,000 company. Yeah. Right? And it's like you just want expose you want broad exposure.
+Ideally, you know, you could just invest in the one that breaks out, but you want broad exposure to the category.
+Speaker 5: When things are first getting going, there is a lot of upside of having them separate. Sure. Because if somebody wants to invest in a really cool thing, and this is what happened when we first got the transport of mining thing going.
+Speaker 2: Yeah.
+Speaker 5: If they wanna invest in that cool thing, they're like, I don't know anything about food.
+Speaker 2: Yeah.
+Speaker 5: And by the way, food on its own is robotics Mhmm. Real estate, like restaurants, like, know? Mhmm. And so they want they wanna be exposed to that one thing and they don't wanna have to underwrite something going across all things. Mhmm.
+And they're like, well, if you're losing money over here, I want you to lose money over here. Mhmm. So how much of the money I'm putting in is going to go to that? There there has to be a fear of the case of how you put it together, how you allocate capital across. And honestly, once you're starting to get to profitability on one or more, then that conversation starts to get easier.
+And I think that's that could be why I I I can't I can't speculate on on on sort of Elon's world, but certainly, I'm super excited to have those pieces put together into a single into a single puzzle.
+Speaker 2: What does go to market look like in the mining industry for It's best.
+Speaker 5: It's the freaking best.
+Speaker 2: Okay. Because like, when I think of when I think of your go to market It's so good. Magic. Okay. It was deploying young people to a new city in Miami and they're doing a marketing stunt and it's not like you're calling in favors or leveraging your network to get Uber up and running in a new city.
+That was something that was And that's organizational design. So hold on. That's consumer. Exactly. So how is it different?
+Speaker 5: Well, it's just like well, all the food stuff we're doing is business. Almost all of it. Yep. Really all of it. Mining's all business.
+So so look, there is a big thing. If you go from doing consumer to doing business, and I think we may have talked about this Yeah. Last time, that's a whole other ballgame. Yeah. I mean, that takes years off your lifespan doing it, like getting good at it and owning it.
+But mining go to market is cray cray. Yeah. Like so was just gonna
+Speaker 2: you an example. Going to the conference or something? No.
+Speaker 5: Well, How are
+Speaker 2: you meeting CEOs?
+Speaker 5: Yes. You do that. But but but, you know, I can a lot of times look, when you have Yeah. Very efficient transportation
+Speaker 2: Yeah.
+Speaker 5: You can go So a month ago, I dropped into Deep Amazon in Brazil. Okay? Like Deep Northern Brazil, like Amazon
+Speaker 1: Places you can't even get a jet ski to.
+Speaker 5: Guys, it's the Amazon of the Amazon. Okay. Okay?
+Speaker 2: Okay.
+Speaker 5: And and tiny airports you just like Yep. You kinda just Dirt. You slide into the DMs except as a tarmac. Sure.
+Speaker 2: There you go. You're a
+Speaker 5: great pilot. Yes. Of course.
+Speaker 2: Yep.
+Speaker 5: And massive iron ore mine that we're operating in there.
+Speaker 2: Okay.
+Speaker 5: And you see, like, we took we we were there for a couple days because we already have customers there. Sure. Customer is called Vale. It's a massive mining company.
+Speaker 1: Yeah.
+Speaker 5: And they it's it's like the world's largest iron ore mine. And you go and you get in a helicopter. Just going over one of the sites takes thirty minutes. Wow. Okay?
+And it's fascinating. It's so fascinating. And you're learning how the system works. You're sort of figuring out how do I. You basically take a kit, you apply, you you you install it onto a machine and that machine becomes autonomous.
+Speaker 2: Sure.
+Speaker 5: And some of these machines are like 20 years old.
+Speaker 2: Mhmm.
+Speaker 5: Some of them are new. And so there's lots of different kinds of machines as well. Mhmm. And you're making the mine more productive. You're you're making it way safer.
+It is super like they have lots of safety protocols, but like it is mining.
+Speaker 2: It's a dangerous business.
+Speaker 5: It is a dangerous business. And the opex goes down all at the same time. It's kind of a beautiful thing. Mhmm. And then, you know, I went from Brazil and then straight from there dropped into the border between Iraq and Saudi Mhmm.
+On the Saudi side. So we have a phosphate mine that we're doing stuff there. Mhmm. The signals were jammed. Mhmm.
+So we had to like my pilots had to land kinda like old school style like
+Speaker 1: Wow.
+Speaker 5: Visual. Physical visual.
+Speaker 1: Is that because of the conflict going on in the region?
+Speaker 5: And just the general Yeah. The vibes on the borders there.
+Speaker 2: Yeah. Mhmm.
+Speaker 5: Yep. So but same story. And so go to market is wild. You just end up in like crazy places but it's super needed. And so what's happened is the the Pronto technology has got gotten past human productivity.
+Mhmm. Which means you go to a gold mine CEO, you talk about go to market, you go to a gold mine CEO and you say, would you like to have 20% more gold per year?
+Speaker 2: Mhmm. Absolutely.
+Speaker 5: Good haven't heard no.
+Speaker 1: Yes. Okay. Okay.
+Speaker 5: But they're but they say prove it. Yeah. And that's where the rubber meets the road. Right?
+Speaker 1: How long does it take to prove?
+Speaker 5: It used to take a lot longer. Now, like once you've proven it enough times, then it sort of gets its own momentum.
+Speaker 1: Gets around.
+Speaker 5: And so we're in that we're in that place on pronto where that momentum is taking hold. Mhmm. Because there's enough proof points where it's just working in so many different places where people are like, alright, let's go. We're gonna think of mining, autonomous mining almost like almost like enterprise software where you get a pilot. Mhmm.
+There's like a 10,000 person company and you've got you you you got an enterprise startup and they're like, I got like eight seats but it's this huge company. And if we edit, it's huge.
+Speaker 2: Mhmm. Yeah.
+Speaker 5: And I've got this other 10 seats over at this other one. It's a pilot but I swear it's gonna work. And they're out there pitching and trying to make it happen.
+Speaker 1: Yep.
+Speaker 5: But once it works, and in mining that means human productivity. Yeah. Human level better than human productivity. Once it works, it goes big.
+Speaker 2: Mhmm. Yeah.
+Speaker 5: They're like, okay. Let's get across let's get across all the vehicles. And so we're sort of in that mode with a bunch of different customers right now.
+Speaker 2: How big is the opportunity to just increase uptime of mining operations? I imagine that there are mines that are trying to operate twenty four seven, but getting a night shift in the middle of the Amazon reliably, everyone showing up and being, you know, healthy and happy and eager. Totally. It gets a lot easier when it's like, yeah, we're still gonna have a bunch of people on-site, but they're gonna be overseeing robotic work. For sure.
+Speaker 5: So so, yeah. I mean, the there's two parts to the productivity gain.
+Speaker 1: Mhmm.
+Speaker 5: First is the machine per hour doing more. Yeah.
+Speaker 1: Yeah.
+Speaker 5: That's part one. Part two is hours and call outs and all of that stuff. As well as just, you know, the safety protocols change when you have less risk. Yeah. So there's a lot of things like this that pile onto each other.
+Speaker 1: Mhmm.
+Speaker 5: Guess is you could even end up 30%, 40% more productive at the end of all of it.
+Speaker 2: Yeah.
+Speaker 5: And when you do that, the opportunity speaks for itself. Mhmm. A gold mine that's doing 30 or 40% more gold per year is kind of woah, but that's for every mineral. Mhmm. That's lithium.
+That's like we also go all the way down to quarries. Quarries are different because quarries are basically it's about cement, let's just say. That's the main jam. There are others, but let's just go with that. You can't you don't just go do more rock because you need cement customers on the other side.
+Only using so much cement.
+Speaker 1: Like where to store it.
+Speaker 5: Yeah. Exactly. Yeah. And so so that's more of an op ex play and there are thinner margins there. Mhmm.
+But I'm in the game. Yeah. And it's kinda interesting and it's a lot of fun. And for that company, for Pronto, they were super Anthony Lewandowski and the team there, super scrappy
+Speaker 1: Mhmm.
+Speaker 5: True startup style, lean as hell, like so lean. Like that Christian Bale movie, I can't remember the name of The Machinist. Dude. Yeah. It's like super lean.
+And I'm like, guys, gotta go from lean to muscular.
+Speaker 2: You gotta go to Batman.
+Speaker 5: And that's what we're doing. Like, and you think of that this in
+Speaker 1: an that's a good that's
+Speaker 2: a good phrase. You just wanna be muscular.
+Speaker 5: And so you think about enterprise go to market. Part of our go to market is is building credibility with enterprise customers that we're going from lean to muscular. Yeah. Because they the demand is there. It's ready to go.
+They're like, we need you to be muscular. Yeah. We need the protein powder and the whatever else.
+Speaker 1: What what holds you back
+Speaker 5: go to the gym,
+Speaker 1: whatever. Yeah. What holds you back from scaling? Let's say you do a pilot, it works well. You're attaching hardware to existing systems and hardware that they're using
+Speaker 5: Mhmm.
+Speaker 1: And they say, okay, we're getting more out. Maybe we wanna place orders for more machines. Are those I imagine the lead times on some of this mining equipment could be insane. How much of the stack do you want to own?
+Speaker 5: Say the question again. I'm sorry. I just blanked. Go for it one
+Speaker 1: more Like, right now you're taking existing mining equipment Yep. You're augmenting it with you're bringing you're you're making it AI enabled, you're making it autonomous, you're making it more efficient
+Speaker 5: Yep.
+Speaker 1: And they say, great. This is working. We want to scale up our operation because maybe we need less or we can do more with the same, you know, human head count. Yep. But what's the I imagine there's some things that are out of control for for you at that point where they're like, okay, need more of this heavy mining equipment.
+Let's let's add it to the site. But is there like a lag time there?
+Speaker 5: The real lag time is getting so you have to you're so let's say we wanna get a bunch of machines that are in the Amazon up and running.
+Speaker 1: Mhmm. Yeah.
+Speaker 5: Okay. How do you do that? Mhmm. So I've gotta ship a bunch of sensors, a bunch of compute a bunch of equipment and mechanical systems, let's just say, so that a team can then go install it.
+Speaker 1: You're basically building a data center on-site?
+Speaker 5: So it's sort I wouldn't put it that way. I would say I mean, if you considered a machine with sensors and compute a data center, I mean, you could. But it's really think of those there are servers, but I wouldn't say a data center. It's not really
+Speaker 2: bring like an Armada style, like shipping container sized level of You
+Speaker 5: just volunteer as one. You're So you bring in the stuff. Yeah. Okay? You have to install it.
+Yeah. You have to like bring it up and make sure, okay, this is a new place. How does it does this machine work properly in this new place and calibrate and make sure it's safe and all of this. So there's like a process of getting it up. Then there's change management because that that site's going from are people that show up in the morning.
+There's all this very regimented process to make sure everything's going exactly as planned and people are exactly where they're supposed to be. Mhmm. Because otherwise weird things happen on a on a mining site. Yeah. So you have to go from that to, okay, we're now running autonomous mining operation.
+It's just a very different thing. So the the installation and the bring up and what we call commissioning are sort of like the things you have to do. And, you know, like why does it take a long time to install? Because that machine may not even be drive by wire. Yeah.
+So you have a mechanical system. Like if you turn the steering wheel like it's you know what I Yeah. Yeah. It's a it's a mechanical system. A hydraulics So you're bringing Where you have
+Speaker 2: to actuator go that might push a
+Speaker 5: physical Yeah. You're trying to make electricity then do a physical thing, so then you need physical actuation
+Speaker 2: Yep. Yeah.
+Speaker 5: To do the things because it's not these machines are not natively drive by wire.
+Speaker 1: Yeah. So That incredibly difficult but necessary because you're not gonna get a mind to rip out tens of millions of dollars of equipment that they already have. But would you eventually go full stack, like build the entire
+Speaker 5: I mean, look, we ultimately I mean, if you go in the mining industry, there's like this this term. It's called no entry mine. A no entry mine is a mine where there are no people.
+Speaker 1: Mhmm. In the pit. Factory.
+Speaker 5: Yeah. Kinda like that version version of it. There might be people in a control center. There might be like in that pit, no humans.
+Speaker 2: And it's a wildly different calculus from a safety perspective I imagine. Totally different, obviously. Yeah.
+Speaker 5: And so there's drilling, there's blasting, there's loading, There's haulage.
+Speaker 4: Mhmm.
+Speaker 5: There's crushing. I'm just going through the different parts
+Speaker 2: Yeah.
+Speaker 5: Of the mining operation.
+Speaker 2: And
+Speaker 5: what you do is you start somewhere and then you start extending to those other areas to get to that no entry thing. And the no entry thing is you can have an autonomous thing like like our haulage system is autonomous.
+Speaker 1: Mhmm.
+Speaker 5: If you're getting into a new place, you can do remote control and move into autonomous. Mhmm. If you want to go super no entry or lower entry Sure. Mine, if that makes sense. It's it's super fascinating.
+And then you're talking about you're talking about loaded a 2,000,000 pound machine that's moving potentially 35 miles an hour down the road. And it's it's an off road thing.
+Speaker 1: 2,000,000 pound machine moving 35 miles an hour off road. Yeah, dude. This is why you have to get is the ATV.
+Speaker 5: Is ultimate ATV. Huge. So no, you get in it and you can, you know, you can experience it. I mean, it's not like there's like an amusement park for this, but like I've certainly experienced it where I can get in the I get in the machines and and check out what's going This
+Speaker 2: is like the dump truck Are
+Speaker 1: any of these
+Speaker 2: foot tires essentially?
+Speaker 1: Are any of these are any of these companies like acquisition targets Where you would you would be able to come in and say like, you're doing a lot of stuff well, but here's all the stuff that you're never gonna figure out like us and
+Speaker 5: Mhmm. I mean, look, I would say the way we think about it is the the haulage part of a mine is where most of the vehicles are. And so, and we think of haulage as the cardiovascular system of a mine. Mhmm. We're obviously very connected to all the other machines, but we don't do all the other machines, so we're like in an ecosystem.
+Mhmm. So we can work with them where like there's APIs. Because like if you're doing haulage, you need to know where the other machines are and what their status is Yeah. As an example. There needs to be orchestration coordination there which is pretty interesting.
+In terms of like acquisition, like, you know, I I do I have to sort of admit like the Uber mentality my mentality,
+Speaker 1: let's just Yeah. Yeah. My Dune.
+Speaker 5: Yeah. It's like not I guess Uber is different today, but in my world, we didn't acquire shit. We just built.
+Speaker 2: Yeah. That's right.
+Speaker 5: I don't know if I have an opinion yet. I'm not like religious about it. But if we feel like we can build something, we do. But that but sometimes people have differentiated awesome stuff and you're like, let's partner. We're open to it, you know.
+Speaker 2: How would you pitch me if I was a young person, Stanford CS, new grad, worried about software engineering not being the easy path where I can bounce around from Google and maybe Uber had a cushy job for me. Pitch me on going to the Amazon and building
+Speaker 5: And that's awesome. Mining. I mean, that's awesome. I thought I just did.
+Speaker 1: I mean, that was a good pitch.
+Speaker 5: That was the pitch.
+Speaker 1: Do you
+Speaker 2: think do you think young people are receptive to this pitch yet? Are we about to be receptive? Why should they be receptive?
+Speaker 5: It's really interesting because I only run into the young people that are receptive. Sure. Like I'm not out there pitching like lame sauce dude who doesn't want to work. Sure. Sure.
+Like, I don't end up in the same
+Speaker 1: room as this guy. You a a job where do you want a laptop job or do you want to be dropped in to a mine in the Amazon and like build build, you know, science fiction?
+Speaker 5: This is the thing. Right? This is why the Adams thing is cool. Mhmm. Because you're not dropping a you're not dropping a fucking app in the app store.
+You're like automating a 2,000,000 pound machine going 35 miles an hour carrying gold.
+Speaker 1: Do you There's
+Speaker 5: a lot of profanity happening today. I don't know why it's happening, but
+Speaker 1: it is. No. It's Let it flow.
+Speaker 5: Just wanted to acknowledge it.
+Speaker 1: Do you do you watch inspired by science fiction at all? I can I can imagine like watching Dune for you? You're just like texting pictures to the team. Of course.
+Speaker 5: I'm like a I'm my fave is is Asimov. He's my fave. Yeah. The I Robot series is
+Speaker 2: like just so epic. What is your takeaway from the I Robot series with regard to AI safety doom generally? Have you ever had moments of maybe we won't figure it out? Won't figure what out? The alignment problem broadly?
+Like the iRobot, the three laws of robotics Sure.
+Speaker 5: Elegant solution. Yeah. Yeah.
+Speaker 2: Obviously. But I love I love to come back to a world where where everyone, both the doomers and the AI builders agree that, yep, the three laws of robotics will be But
+Speaker 5: I mean, in some ways where we're going. Well, in some ways in the series Yeah. The three laws don't always work out.
+Speaker 2: Yeah.
+Speaker 5: So I think there's a lot of I I thought there's a lot of nuance to those three laws even though the laws are sort of so simple. Yeah. I love the intention of those laws. I I sort of think of it a little bit differently, is I have been entrepreneuring for a long time.
+Speaker 2: Mhmm.
+Speaker 5: Like a long time.
+Speaker 2: Yeah.
+Speaker 5: And I have failed. And when I think about why I failed, it's usually because I was building something that nobody liked. Mhmm. So if you build something that people don't like, I don't think you're going to succeed.
+Speaker 2: Mhmm.
+Speaker 5: So how does that relate to your question? He's like please tell me because I'm
+Speaker 1: not connecting the dots at all. What are you talking about?
+Speaker 5: Well, if you make something that is anti human, if you make something that doesn't serve people,
+Speaker 1: I don't think you're going to make
+Speaker 2: it. I
+Speaker 5: don't think you're going to make it. And by the way, like yes, we're using AI to help us make decisions, etcetera. But what do those AIs really really want to do almost too much? They want to please us. So I just think if you're not making stuff that humans want, it's not going to work out.
+And that's kind of obvious, obviously. But I think it keeps going.
+Speaker 2: Yeah.
+Speaker 5: And yes, there's the dangers and the things and then this, but that's my that's my starting point for how I think about these things and we can't control all the things.
+Speaker 2: Yeah.
+Speaker 5: And I do think of course you have to have safety situations and there's collisions of like what do I what do I prioritize first and how do I do it, which is I think where Asimov's laws go. Yeah. But I I I instead of writing sci fi books, I'm just doing the thing and I'm making sure that the machine stays on the road.
+Speaker 2: Yes. And related to that idea of like doing the thing, making the machine stay on the road, I imagine that your your world view is somewhat informed by your contact with reality, the fact that you can see the progress of diffusion, how long drive by wire systems take took to roll and the need for AI to be deployed in like tactile ways that that that you just see it as more positive sum, more there's more opportunity.
+Speaker 5: It's still like you're deploying robots that people want. Right now robot, I mean, there's some point where robots have their own bank accounts and their citizens and all this. We're just not there yet.
+Speaker 2: Sure.
+Speaker 5: Sure. And before we, until we get there
+Speaker 2: Yeah.
+Speaker 5: That robot is owned by somebody
+Speaker 2: Yeah.
+Speaker 5: And that somebody has a bank account.
+Speaker 2: Yeah. And
+Speaker 5: they are paying based on the value you're bringing them
+Speaker 2: Yeah.
+Speaker 5: Because they like your stuff.
+Speaker 1: Mhmm.
+Speaker 5: So if you are doing things that humans don't like, you're done. Yeah. And trust me, I've done it. Yeah. Yeah.
+I've built things that nobody liked and it sucked. Yeah. I don't recommend anybody do it. If you can avoid it, you totally should. Yeah.
+Speaker 1: On the business model side, what are you doing now in mining? Mhmm. And where do you think it could go over time? Because if you're able to bring in a system that helps someone increase their Yeah. Yield 30 to 40%, I I imagine eventually Do do?
+Just do some type of JV so that your guys have
+Speaker 2: Or sell lines and
+Speaker 5: Or Well, look, there's there's, you know and the the instinct should be how do enterprise company enterprise software companies do
+Speaker 2: it. Start
+Speaker 5: there. And you guys will know that.
+Speaker 2: Like, you
+Speaker 1: you know that. Yeah. Yeah.
+Speaker 5: What's the answer? Just say you're enterprise software company, you're making a company more productive. What do you Raise prices, subscription. Or you the price goes up when you prove that productivity.
+Speaker 1: Yeah.
+Speaker 5: So there's baseline. Yeah. And then based on outcomes, you get a little extra juice. Sure. Sure.
+And you could
+Speaker 1: you're always trying to make sure that like you wanna be producing creating more value than you're capturing, but there's this sort of cat and mouse game where you're always trying to cut don't wanna give away maybe too much value.
+Speaker 5: Totally. But here's the thing. You never go to a customer. I don't care what you're selling. Okay?
+Don't care if enterprise software. I don't care if it's widgets. I don't care what it is. You never go to a customer and say, give me a percentage of your stuff.
+Speaker 1: Yep.
+Speaker 5: You go to a customer and say, here's the price of our stuff and if it does really well for you, we think we should get a little more scratch, casheesh stuff, you know, whatever. You know what I mean? Yeah. Yeah. And it's that simple.
+Don't be crass about it. Mhmm. You know, partner with folks. And they're down. They wanna win too.
+How quickly? An enterprise. It's an enterprise software style negotiation or approach to the whole thing.
+Speaker 1: Yeah.
+Speaker 5: And the more differentiated your value is, the more you're gonna get.
+Speaker 1: Yeah. What is your process for hiring executives today?
+Speaker 5: Pray.
+Speaker 1: Was hoping I was hoping you had the Kalanick system to achieve a 99
+Speaker 5: No. Why would I tell you if you're would I tell you if you're in? No. I mean No.
+Speaker 1: But I I think you can. This is one of those things you can tell people exactly what you do and they're not they're not Kalanick, so they're not it doesn't that doesn't mean they can compete with you.
+Speaker 5: You know, they could they yeah. Okay. So how would I put it? Look, the I think I'll no matter who you go, nobody's nailed executives all the way. Mhmm.
+It's it's it's weird because what will happen is executives talk a fucking awesome game. And there's two things you want an executive to do. You want them to be able to organize at scale, organize and manage at scale, lead at scale. You also want them to be epic problem solvers, the most strategic badass problem solvers alive. This is like being left handed or right handed.
+And there's very few people that are ambidextrous, but you need that. Now, somebody's they're always leaning a little bit one side or the other. The best executives are the ones that are doing both well. But I have come to the conclusion over my years doing the stuff is the problem solving is the most important thing. If you get somebody who organizes and manages well but cannot solve a problem, they're going to be doing ridiculous stuff in a super organized way.
+Speaker 1: Yeah.
+Speaker 5: And so that's and and and sort of my theory, I I maybe there's a couple theories on how I manage or how I lead is that the only constraint on your imagination is management capacity.
+Speaker 2: Yeah.
+Speaker 5: But what is management capacity? It's really problem solving at scale.
+Speaker 2: Sure.
+Speaker 5: Because if you are doing super well over there, guess what? They're problem solving there. I can create other awesome problems.
+Speaker 1: Yeah. Yeah.
+Speaker 5: Like I love creating problems. Sure. Go solve those too. Yeah. But if I don't have the management capacity, then I'm effed.
+Sure. So the the management style that I do is sort of problem solver in chief, which is I take the most impactful problems that are not being solved and that's on my desk. Yeah. Or desk or room or whatever you want to call it. That's where I'm spending my time.
+So people go, oh, what do you spend your time on? Like, it depends what the fricking problems are that matter. Mhmm. And it can change.
+Speaker 2: Mhmm.
+Speaker 5: And that's how how I roll. But it means once you have a problem solver in chief mentality, that flows downward. That means any direct report of mine must be the deputized problem solver in chief. And they've got their because there's only twenty four hours in a day. I can only solve so many myself.
+They have to then take that for their world and do the same thing and then do the same thing to their people.
+Speaker 1: Yep.
+Speaker 5: So the bottom line is you gotta prove that these folks can solve actual problems and aren't just talking the talk. That's the number one.
+Speaker 2: And then
+Speaker 5: then on the interview process, simulate what it's like working together so that day one really feels like week two. And day one you better be excited. So if you're excited in day one after simulating what it's like working together in the interview process, then day one is really week two and you're still excited, you took a lot of risk out of the system. That's all I got for you.
+Speaker 2: I have a question about regulation. Uber famously went city by city. Yeah. The AI labs are duking it out over federal preemption. Did you ever have develop a theory around when federal preemption is better than state by state regulation?
+Do you have a philosophy around this? I it seems like the labs go back and forth on what they want. It's hard to see where the chips are falling.
+Speaker 5: Federal preemption is good when you are pro regulatory capture.
+Speaker 2: Okay.
+Speaker 5: When you want to squeeze others out, you should get federal regulatory bigness going for you.
+Speaker 2: Yeah. Because then you don't have to do the ground
+Speaker 1: game that you win.
+Speaker 5: Well, no. You're squeezing others out.
+Speaker 2: Okay.
+Speaker 5: It's just the whole point is to squeeze everybody out.
+Speaker 1: Sure.
+Speaker 5: I never did that. Like, we never did that We in basically never ever proposed or pushed any rule that would be beneficial to us versus somebody else. Sure. We always were trying to open up the market. We said let the best man win Mhmm.
+And we just went for it. Yeah. But I think we gotta be careful of some of these close weight things that are creating situations where they need to be regulated Mhmm. And they want it. I'd be very I'd keep an eye on that.
+Speaker 2: Yeah. Well, you gotta have customers that love your product and are willing
+Speaker 5: to when regulate you guys when you guys, you know, decide to tell your own hacker to hack the thing and then go to somebody then go to the federal government and say then go to the federal government and say, dude, we saved the day. Like, you know, you have to do this. You guys don't
+Speaker 2: have to do it. Yeah. On
+Speaker 1: regulation, I'm sure you saw the trial lawyers that are fighting back against autonomous vehicles because they're worried they're gonna be too safe. Yes. I'm sure that's not surprising to you.
+Speaker 5: No. So look, every bad thing that you see in transport, like systemically. Any anything in transport that you view as systemically bad was most likely pushed by the trial lawyers and the insurance companies. Wow. Every single bad rule that's weird and dumb Yeah.
+The insurance companies and the trial lawyers were in the game big time.
+Speaker 1: Where where do they align? What do you mean? Well, because trial lawyers I imagine want more accidents. Yeah. Insurance companies
+Speaker 2: Insurance are the ones that pay for it. Wait. Yes. No.
+Speaker 5: No. Remember insurance companies make margin on accidents.
+Speaker 2: Oh, okay.
+Speaker 5: If there's no accidents, there's no insurance company. They Okay. In a weird way they love accidents.
+Speaker 2: The premiums go up.
+Speaker 5: As long as it's in their actuarial table,
+Speaker 2: Wow. They're
+Speaker 5: Yeah. Right? Though they don't like is accidents they didn't plan for. Sure. Sure.
+But accidents that they plan for
+Speaker 1: Yeah. Business Insurance
+Speaker 5: outcomes. Yep. They love. Like I remember we went to DC and the taxi system, the the liability on a ride if you took a taxi, it might still be this way to this day, was like $25,000 Mhmm. In a taxi.
+But we went to, we being Uber at the time, went to DC and they pushed a $1,500,000 policy per ride. Okay. So what does that mean? That means well this, you know, accidents are gonna happen. We're probably like Uber's probably safer.
+Speaker 2: Yeah.
+Speaker 5: But it just do you think the trial lawyers weren't pumped about that? You think the insurance companies weren't also pumped about that?
+Speaker 2: They can go get up to
+Speaker 5: a million. Because by the way, the insurance company might be on the other side.
+Speaker 2: Yep.
+Speaker 5: And they're like, oh, there's a there's a $500,000 bank account here that I can get access to on a random accident.
+Speaker 2: Right.
+Speaker 1: What can you share on the transportation side of the business right now? How much are you how much is that business in service of mining or food versus
+Speaker 5: like It's number one. So number one is it's it's so I call it wheelbase for robots
+Speaker 2: Mhmm.
+Speaker 5: Which is if you're gonna do specialized robots that move and act in the physical world, they're either humanoids, which we're not. I'm not anti humanoid. I'm just non humanoid. Specialized industrial robots. Right?
+So that's it's high scale, industrial scale tasks which means you would not have a humanoid ever do that. That means you gotta be on wheels. So we gotta build wheels. So that means, okay, well, when food, when supply chain is going into our facilities Yeah. That's a freight vehicle.
+We probably should just turn that into a robot that moves stuff and actually interfaces with our facility in a really cool way. When the when the food is coming out of our facilities, there's probably like a a machine that holds food at temperature that's like a box on wheels. I call them autonomous burritos. Mhmm. And it brings it to your home.
+And it costs 75¢ instead of like the $12 per drop that it costs like an Uber Eats or a DoorDash today. So it's serving remember, I I'm taking I'm sort of going through an industry and saying how do we transform it full stack? Mhmm. How do we automate full stack that entire industry? Mhmm.
+So, okay, that's the food thing. Obviously mining's pretty obvious, but you can imagine there's a lot of other machines that move. Like I talked about haulage, but what about like what about grading the roads, the dirt roads? You've to grade them. That's a machine.
+Yeah. What about the you spray water so there's not a lot of dust all over the place. That's a freaking machine.
+Speaker 2: Sure.
+Speaker 5: Like what about the material that ultimately goes somewhere beyond the mine? Well, that's a freight machine. Yep. Like, there's lots of things moving. Yep.
+You know, I saw something that was like, think about just forklifts. I I know a company, remain unnamed, that's spending 3.5 this is on the supply chain side. $3,500,000,000 a year on forklift labor in their facilities.
+Speaker 2: That probably shows up in an SEC filing if we wanna get creative and figure out what company you're talking about. But yeah. Yeah. Big opportunity.
+Speaker 5: If you just solve the forklift problem.
+Speaker 2: Yes. But on solving the problem, what do you think about this this distinction between jobs versus tasks? Like a lot of people would have assumed that there would be no more marketing people because the job is just writing marketing copy but the job is actually much more. Writing copy is one task. I was looking at automated trucking and I found some stat like I think 30% of truck drivers are armed.
+They carry weapons. And so driving the vehicle is one task. But in that job, you are also providing security for And you are also doing other things, refueling the vehicle, maybe some minor maintenance. And so just the steering and gas and brake pressure is just one task that you're doing. How do you think about that in the context of all this?
+Speaker 5: This really gets to the jobs question, I think.
+Speaker 2: Yes. Which is basically like, okay. Well,
+Speaker 5: if I do everything that we are imagining Yes. On food, which is I have industrial real estate, is manufacturing and logistics. Mhmm. I automate the manufacturing, which is production, robotic food Mhmm. Robotic food machines, robots.
+And I have robotic couriers
+Speaker 2: Mhmm.
+Speaker 5: What happens? Food the price of food goes down. Yeah. Okay. When the price of food goes down, remember robots don't have bank accounts.
+Mhmm. When the price of food goes down, what happens? More people have more money.
+Speaker 1: Yeah. Jevan's paradox.
+Speaker 5: What do they do?
+Speaker 2: You start eating more. You just start having 10 No. That's not what I'm saying.
+Speaker 5: No. What I'm saying is what I'm saying is when once I
+Speaker 1: was gonna get three pizzas. I actually
+Speaker 2: You're like, one's at the price.
+Speaker 1: I'm sorry. Yeah.
+Speaker 5: No. No. No. So what happens, you have more money to do other things. But remember that money is only ultimately going to humans.
+Speaker 2: Yes.
+Speaker 5: So it's it's the things that get automated go down in price Yes. Which then creates surplus Yes. To do what? Yes.
+Speaker 2: This is the other things. Yeah. This is the bomb So
+Speaker 5: it doesn't always have to be, oh, marketing's automated but sort of and there's still people doing it. It's like whatever. There's gonna be a 100 other new things Yeah. That come out because there's this excess of capital and progress continues.
+Speaker 2: Yep. Yep.
+Speaker 5: And as long as humans still have things that we do that robots cannot Yep. It's go go time, man. It's gonna be super prosperity. We talked about the plumber that is paid like LeBron last time. Yeah.
+It's gonna be across a thousand categories.
+Speaker 1: Yeah.
+Speaker 5: And some categories we don't even know. Yeah. Like we we don't even know what they are today.
+Speaker 1: Yeah. Yeah. You raised 1,700,000,000. Why didn't you raise more? That's a good question.
+I mean Because last time we were here you talked about like, oh, well, what you if you were doing something and it was easy, you weren't going hard enough.
+Speaker 2: Seems pretty going pretty hard, but unpack it.
+Speaker 5: Look. You have to stop somewhere.
+Speaker 2: No. Even I have my limits.
+Speaker 5: Now it's like like, look, I as you can imagine today, my phone's blowing up. Yeah. I mean, I'm pumped. Like a 16
+Speaker 2: Yeah.
+Speaker 5: These guys, we we should have done business at Uber. That's right. If we did business at Uber, my 2017 would have been a different year.
+Speaker 6: Yeah.
+Speaker 5: Yeah. Okay? Totally. So that's why I called it unfinished business. Yeah.
+Mhmm. And so, but yeah, like my phone's blowing up. Like, we're probably just gonna do a second. We'll do a second close.
+Speaker 1: Yeah. I figured.
+Speaker 2: Yeah. We'll come back for the second close. Jesus.
+Speaker 1: Run it back. Run it back.
+Speaker 5: No. I mean, we're not going to do a big announcement on the same close but like, you know, those people who are who are texting me and hitting me hard right now
+Speaker 2: You got room.
+Speaker 5: You know, it no. Well, we'll see.
+Speaker 1: We'll see.
+Speaker 2: Depends. We'll see. Depends on what the previous text message is.
+Speaker 5: If you're a homie, we definitely have room. Yeah. If we're not a homie, you should talk to one of my homies.
+Speaker 2: There we go.
+Speaker 1: Yeah. I I did come away from the last conversation thinking, alright, there's a lot of exciting companies in physical AI You could spend years and years and years trying to find all the best teams or you could just give TK a big pile of cash and just say go cook and Mhmm. Know, sometimes the easier route is is better.
+Speaker 5: Yeah. And I think there's this thing. Physical AI, people are like, well, is that a humanoid? Is that a world model? Is it And so on this one I sort of dialed the language a little bit and I'm calling it industrial AI.
+Yep. It's like, okay, this is a full stack software, sensors, machinery, like a full stack solution to automating an industry. And that's kinda how we think about it. And it's industrial. Yep.
+So it's like heavy Adam stuff. Yeah.
+Speaker 2: Well, thank you so much.
+Speaker 1: This was incredible.
+Speaker 2: You wanna get a signature? Can we get an autograph?
+Speaker 5: Sure. Why not?
+Speaker 2: Can we get something?
+Speaker 1: Which way what's your figure it out back there. Oh, got a gong. We'll hang it in the rafters. We want to hang it in the rafters. We're trying to build our our The museum of business.
+Speaker 2: The museum of business grows one gong stronger today.
+Speaker 1: And we will we'll see you in Austin. Yeah. Next time you're on your commute, if you see two jet skis moving out of out of your, you know, out of of sight coming in, it's probably us.
+Speaker 2: That's us.
+Speaker 1: If it's not, you're Guys, let me
+Speaker 5: know if you wanna learn how to slalom ski.
+Speaker 2: Oh,
+Speaker 5: yeah? If you wanna learn how to wake surf like well
+Speaker 2: I've only Recommended. Been water skiing once or twice
+Speaker 5: in twenty go years into 07:30 in the morning Okay. Every morning. And I'd say half the time I'm out there at 08:30 when I leave the office.
+Speaker 2: That's amazing. So I love it.
+Speaker 5: That's what we do.
+Speaker 1: Beauty of summer.
+Speaker 2: Alright. Thank you so much for coming on the show. A pleasure. Have a great rest of your day.
+Speaker 5: For sure. We'll talk guys.
+Speaker 2: Soon. Yep. I'm gonna tell everyone about Cisco. Critical infrastructure for the AI era. Unlock seamless real time experiences.
+A new value with Cisco. And our next guest is in the waiting room. We got Max Hodak from the Science Corporation. He's the founder and CEO. We kept him waiting, but Max, how you doing?
+Welcome back to the show.
+Speaker 7: Hey, guys. Thanks for having me.
+Speaker 2: Great to see you. Give us the update. What's the news?
+Speaker 7: So previously, we've talked about I've told you about our retinal prosthesis. So we have a chip that's implanted in the eye to restore vision to patients that have lost lost it due to the death of the rodent cone, specifically Yes. Macular degeneration. So last week, we got marketing approval in Europe. So we've received the CE mark, which is
+Speaker 1: Wow.
+Speaker 7: Like, it will be shortly available to consumers and
+Speaker 1: you're like
+Speaker 2: I got a question. I got a question. So Jordy has this problem where he drinks too many beers and he gets double vision. Can this help with that?
+Speaker 7: Fortunately not.
+Speaker 2: Wait. Wait. Wait. Jokes aside, scientifically, it cannot?
+Speaker 7: Double vision from drinking?
+Speaker 6: Yes. Probably not.
+Speaker 2: Impossible. It's the last it's the last scientific problem. We'll never solve it.
+Speaker 1: Anyway. Very funny. More seriously, how quickly how like, what does a go to market look like for a product like this? You have approval.
+Speaker 2: Step one's approval. But Yeah.
+Speaker 1: How how quickly can it be adopted by because, you know, people I mean, Europe's a big place. Right? Yeah. Need do doctor network.
+Speaker 2: Facilities building the machine that installs it. Like, there's a whole process here. Right?
+Speaker 7: Yeah. Well, it's a simple one hour outpatient procedure. The machine is the surgeon. Don't need actually that many surgeons to reach these patients.
+Speaker 2: Yeah.
+Speaker 7: So right. So the CE Mark is a marketing approval in about thirty year 30 countries that accept it. The next step is we need to register country by country. So we have registrations going in in Germany and Italy and The Netherlands and Spain and The UK, like, this week. That process takes about
+Speaker 1: a month.
+Speaker 2: Mhmm.
+Speaker 7: And then doctors can start scheduling patients. I mean, we sell implants to hospitals essentially, and then they sell them to patients. So it's the it's the hospitals, it's patients. But we have a registry. The hospitals have registries.
+The patient the doctors know who their patients are. With this demographic, actually, one of the things that happened is because there was really nothing available for them, ophthalmologists have been telling these patients, like, you know, you're 80 and have AMD, you don't need to be sitting in my waiting room anymore. Like, you know, you don't need to come here. Yeah. And so now they're starting to reach back out to some of those patients that they haven't said, we don't need to see you for the last few years.
+Speaker 2: Yeah.
+Speaker 7: Say that there's something available. So the first patient is probably six weeks away or so. The next Why hell is
+Speaker 2: so fast?
+Speaker 7: Step is reimbursement. Yeah. And so, yeah.
+Speaker 2: What does it look like in America? I mean, you're six weeks away in Europe. What's the FDA track like? I know that it's already FDA breakthrough device and humanitarian use device, but take us through what the commercialization plan looks like in The US.
+Speaker 7: Yeah. So the other thing that we announced today is that we got two humanitarian use device designations from the FDA. Yeah. We actually got this back in March, but sat on them for a little bit. That unlocks an an expedited approval pathway called the humanitarian device exemption that we're submitting for imminently in the next week or so.
+That is a it it can be a seventy five day review. Yeah. And so it'll take a like, there's a couple loops of that, but we're hoping that early next year, it'll be available to to some some set of American patients, but that's up to the FDA review.
+Speaker 2: Yeah. I don't wanna get you in trouble with the FDA. I know how high stakes it is, but it is just crazy that Europe's moving faster around regulation. Like this should be a signal to the FDA to say, hey, if Europe's approving it faster, we gotta we gotta step things up over here. I don't as an American, I just don't like falling behind.
+But I don't know.
+Speaker 7: Yeah. Mean, I in this I mean, I would normally wanna agree with you. I think in this case, it's actually a little bit unfair to FDA because there's some there's some accidents of history that just led to this, like, happening first in in Europe.
+Speaker 2: Okay.
+Speaker 7: The FDA standards are not that much different.
+Speaker 9: Okay.
+Speaker 7: But, yeah, absolutely, we should hope to to have this here also. The FDA is they care about slightly different things. They're Sure. The filings are a little bit different. Yeah.
+But, hopefully, won't be that long, either.
+Speaker 2: Yeah. Talk about next steps. I mean, you're you're properly commercializing right now. Does this mean new factory, new team members, new new just new muscle inside of the company?
+Speaker 7: Yeah. Absolutely. I mean, we've built out a whole go to market team in Europe. So this is clinical education, like a bunch like, we need to go reach ophthalmologists where they are, tell them about the product, help them understand the results, answer their questions. Yeah.
+Rehab specialists. So there's this is a little bit different than than what you may have seen from the motor BCTIs where it works very quickly or with like, there's a little bit of rehab that the patients have to put in to really use it. So we have people on the ground there that will do that with them in the beginning. Over time, we want to have that be more and more kind of just in the wearable. They put on the glasses.
+The glasses talk to them. They talk to the glasses and walk them through the exercise. Yeah. But initially, that's a little bit higher, higher touch. And then also, there's a bunch of surgeon training.
+So we run wet labs for surgeons Yeah. Where they can come and and practice the procedure with us so that they've we know that they know how to do it before they're doing it with patients.
+Speaker 2: Give me a sales and marketing one zero one for targeting ophthalmologists. Can you target them on Instagram reels? Do they listen to a specific podcast that you can sponsor? Are you at conferences? I know people give medical device companies give out lots of like pens and chairs, but I I think they're like there's like limits because you can't like bribe them, but you do want to give them merch.
+Like, what is the one zero one level of marketing to ophthalmologists?
+Speaker 7: I mean, lot of it is conferences. Okay. So there's a handful of conferences that we go to and then getting not just having a booth there, but presenting scientific results. Typically, this isn't us, but it's our academic and Yeah. Scientific collaborators, maybe a surgeon at a hospital that did a study.
+They'll present their experience with it. There's also advocacy groups.
+Speaker 6: Mhmm.
+Speaker 7: So there's opportunities to sponsor, like webinars through these these networks. But it's a really small community. Think, like ophthalmology overall, and especially in these types of retinal diseases, it is very densely interconnected and they all talk. And so it's a matter of kind of there's a handful of advisory boards that we we have to go through. For example, our data safety monitoring board for the clinical trial.
+Yeah. These are often opportunities to have that community come and be familiar with our results and then Yeah. And then disseminate them.
+Speaker 2: So it might be the end result might be a little bit more one to one because of how small the community is. You can actually reach them directly. What is
+Speaker 7: Yeah. It's there's not like a huge insta spend on that.
+Speaker 1: Not yet. What what is the shape what does the shape of Science Corp look like right now given that you have a product that's commercializing, but I imagine you're doing a bunch of r and d in the background for other opportunities and and use cases. But, you know, how are maybe you spending your time, and then what does the team's time look like?
+Speaker 7: Yes. We definitely have a bunch of next generation projects in development, including the next generation of the PRIMA implant. We have new versions of that kind of in in preclinical studies now. Hope to get those into humans next year. It'll be it'll probably be a a three year minimum, possibly five year cycle between versions for a while, I think, because they need to do the intervening clinical trials.
+But PRIMA as it is now is a really great existence proof that we're on the right track. This is the first time that function that, like, really useful form vision, a thing that looks like an image, has been able to appear in the mind's eye of a blind patient. But it is not high resolution, full field color vision. It's like looking through a straw at the center of your vision where you've lost this high acuity, perception, and it's it's black and white, it's high contrast, but it's only a couple letters at a time or maybe a word at a time. And so we are still working to expand the field of view, make it so that you can potentially get colors.
+We think we know how to get to red and green. Blue is a little more difficult, and then get higher resolution, get towards native acuity. And so on each of these, have there's clear ways, places to go, but it's gonna be a long road to get that all the way to to all of these patients.
+Speaker 1: Congratulations. We also
+Speaker 7: have some really cool stuff coming on the the quarter on the brain computer interface side, on the vessel side, but that those will probably come out a little later in the fall.
+Speaker 2: Can't wait to talk about it. I'm excited. Well, congratulations and thank you so much for taking the time to come
+Speaker 1: to Yeah. Our Thank you so much for for coming on and
+Speaker 3: And the work you're doing. Yeah.
+Speaker 7: Just Thanks for having me.
+Speaker 1: You're you're doing you're doing the thing that you're doing you're doing something that could get humanity broadly back on the side of technology.
+Speaker 2: That's a good point.
+Speaker 1: Yeah. Because it's like one of those things like like it seems like so much of what the industry has been doing a lot, know, making making sand think is not quite enough for people. They're like, you know, what what have you really done for me lately?
+Speaker 2: We literally had someone come on the phone and
+Speaker 1: say, what have done But I feel like this is one of those things like, you know, curing blindness that over time will be sort of hopefully undeniable.
+Speaker 7: Yeah. Well, I mean, this isn't about the money. I don't think it's about the money for a lot of this team. It's certainly not about money for the patients. I think like many things in tech, this is really about power.
+But if you wanna know, like, real power, like the power to heal the sick Mhmm. Unlike economic military power, that can be easily shared with others.
+Speaker 2: Oh,
+Speaker 7: interesting. And that is, I think, like, really what technology is about here. And we need to paint a picture of how this is being used in that way in a way that is really should disseminate broadly and, I think, just incredibly prosocial.
+Speaker 1: I love it. Going back to I I I know we're almost out of time, but going back to like, what did what did you place the odds at doing this, accomplishing this moment when you started the company? It seems
+Speaker 7: like I know. I've always had trouble thinking about these things. Like, I can't put a number on it. It's just you kind of keep going, and as long as success is in the past, like, set of possible outcomes, you're just constantly trying to minimize the odds that you don't get there. It is really hard to put a number on it.
+Definitely, it is cool to see it actually happen.
+Speaker 1: Yeah. Yeah. You're sort of nonchalant about it, but it is Uh-huh. Almost unbelievable and really really incredible. So Well.
+Well done. Well done. To the whole on the show. We'll talk to soon.
+Speaker 4: Thank you.
+Speaker 1: Yep. Cheers Max.
+Speaker 2: Have a good rest of
+Speaker 1: your day.
+Speaker 2: Let me tell you about Figma. Agents meet the canvas. Your AI agents can now create and modify your Figma files with design system context.
+Speaker 1: Absolutely incredible stuff from Max Yeah. Science team.
+Speaker 2: Very cool. I don't know. I think that you might be seeing like an Instagram rail being like, this eye implant that cured the blind used too much water and it's slop like it's not the same as just being blind. I don't know. Anything's possible.
+The pushback, there's always there's always a negativity bias. I think there will be pushback to even the medical cures.
+Speaker 1: Giving sight to the blind.
+Speaker 2: Yes. Get ready. There's gonna be somebody who finds, you know, something to complain about and goes viral and puts up big numbers talking trash. That's just the way our media ecosystem works. It's it's a it's a business, you know.
+If everyone's glazing something, somebody's gonna bring it down. That's just equilibrium. Equilibrium. Well, speaking of AI writing, Jeremy Gaffan had a post here. He said about AI writing.
+At the end of the day, it's not about whether the words are written by a human or an AI. It's about whether the output is useful, engaging and worth reading. The highest quality work will increasingly emerge from a tight human in the loop workflow. While some content will be generated end to end by AI, the fixation on authorial provenance is ultimately pearl clutching. Just kidding.
+That's the AI rendition of his actual post. He said it much more eloquently. But I tried to make it like more AI. I don't know. Anyway
+Speaker 1: Mark Gurman says based on using the Z Fold eight wide, I'd reset my expectations of how the foldable iPhone is going to sell even at over 2,000. It's going to be a home run.
+Speaker 2: You are going foldable? You're proud foldable?
+Speaker 1: I think I'll go foldable. Why the heck not?
+Speaker 2: I think when you open it up, you can watch videos in four three.
+Speaker 3: More room for reels. You can watch reels
+Speaker 2: at once. But the reels are gonna be it's actually not that much more room for reels because you'll just have black bars on the side. Like if you watch Can you have two Reels side by side? Okay. Maybe.
+Yes. In two different apps, you could have YouTube Shorts here. If if they support split screen like on an iPad. But right now if you watch Reels on an iPad Mini, you're not actually getting that much more pixel space of Reels. You're just getting Reel here and then UI and Chrome here or whatever.
+Speaker 1: Cooper says big tech just wants your eyesight restored so you can doomscroll There
+Speaker 2: we go. Cooper named it. Yep. Yep. Oh, why they
+Speaker 1: secretly trying to fix funding
+Speaker 2: Oh, they just want to increase their TAM. Got it. Makes sense. Well, if you don't want to watch reels, you'll soon potentially be able to go to the cinematronome in Ark Light Hollywood. Sony is eyeing ringing it back.
+Production team, you got a review. Have you guys been to the the Cinerama Dome before? I've
+Speaker 1: been there. Scott? Yeah? It's pretty awesome.
+Speaker 2: Think I saw Nolan film there in I think it was 70 millimeter IMAX back in the day. And then it didn't I think it didn't make it through COVID. But they're maybe bringing it back which is
+Speaker 1: They have the giant sign outside that says the dome. Yeah. If they were going to stay out of business, should I remember yeah.
+Speaker 2: Yeah. I remember as a as a kid, I I thought that they would show the movie like projected on the dome, like on the whole ceiling and it was only for sort of like special, you know, like astronomy movies. But they will just show a normal movie and it's just you're just in a big dome. It's cool. Next studio if Sony doesn't buy it maybe.
+I don't know. Could happen.
+Speaker 1: Can we get that unreleased track on again?
+Speaker 2: Yeah. Let's play that as the outro.
+Speaker 1: Yeah. One
+Speaker 2: sec. Regulate Me. It's the new banger It's an anthem. Hit song of the summer. It's an anthem.
+It's near worm. You're gonna be listening to it. We'll share the link in the description of the YouTube video maybe.
+Speaker 1: Let it Yeah. Gotta start doing it from karaoke.
+Speaker 2: Because this song just speaks to me. It really captures the moment. You heard it from Travis. Every once in a while, you get into a pickle and you gotta get the government to come regulate you. It was a good time.
+Thank you for watching TBPN. Tune in tomorrow. We have a very special show for you. We're on the road Thursday, and then we're off on Friday back Monday. Leave us five stars on Apple Podcasts and Spotify.
+Sign up for our newsletter at tvpn.com. Let's throw a flash bang and let the audience listen to regulate me by Jordy Hayes and Suno. Goodbye. Flash bang out. Is multiplying.

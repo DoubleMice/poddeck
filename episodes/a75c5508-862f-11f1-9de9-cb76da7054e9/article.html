@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLARITY 法案终局之战 — The Chopping Block with Patrick Witt</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e8e8e8;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #111;
+    margin-bottom: 8px;
+  }
+  header .subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #888;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin: 40px 0 16px;
+    padding-left: 12px;
+    border-left: 4px solid #1971c2;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin: 28px 0 10px;
+  }
+  p {
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+  .topic-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 24px 0 32px;
+  }
+  @media (max-width: 600px) {
+    .topic-cards { grid-template-columns: 1fr; }
+    article { padding: 32px 16px 48px; }
+    header h1 { font-size: 24px; }
+  }
+  .card {
+    padding: 18px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .card strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  .card-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+  .card-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .card-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .card-red { background: #fff0f0; border-left: 4px solid #c92a2a; }
+  .card-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+  .card-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  blockquote {
+    margin: 24px 0;
+    padding: 18px 24px;
+    border-left: 4px solid #1971c2;
+    background: #e7f5ff;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.8;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: normal;
+    color: #666;
+  }
+  .quotes-section blockquote {
+    background: #fafafa;
+    border-left: 4px solid #333;
+    margin: 10px 0;
+    padding: 14px 18px;
+  }
+  .quotes-section blockquote:nth-child(2) { border-left-color: #1971c2; background: #e7f5ff; }
+  .quotes-section blockquote:nth-child(3) { border-left-color: #2f9e44; background: #ebfbee; }
+  .quotes-section blockquote:nth-child(4) { border-left-color: #f08c00; background: #fff9db; }
+  .quotes-section blockquote:nth-child(5) { border-left-color: #c92a2a; background: #fff0f0; }
+  .quotes-section blockquote:nth-child(6) { border-left-color: #862e9c; background: #f8f0fc; }
+  .narrator {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin: 8px 0 16px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 2px solid #e8e8e8;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+  }
+  footer a {
+    color: #1971c2;
+    text-decoration: none;
+  }
+  .divider {
+    text-align: center;
+    margin: 32px 0;
+    color: #ccc;
+    font-size: 20px;
+  }
+  .info-box {
+    background: #f8f9fa;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>CLARITY 法案终局之战：白宫历史性伦理条款、Gauntlet 1.25 亿融资与 Balaji 的马来西亚脱出</h1>
+  <div class="subtitle">The Chopping Block 四位加密投资人与白宫政策主管 Patrick Witt 的实况对话</div>
+  <div class="meta">2026 年 7 月 · 52 分钟 · 来源：The Chopping Block / Unchained</div>
+</header>
+
+<h2>为什么这期值得关注</h2>
+
+<p>这一期 The Chopping Block 恰好录制在三个加密行业关键事件的交汇点上。第一，Gauntlet 创始人 Tarun 宣布公司从日本金融巨头 SBI Holdings 获得了 1.25 亿美元的战略投资——单一投资者，没有 VC 辛迪加。第二，Balaji Srinivasan 的网络学校实验在马来西亚 Forest City 遭遇政治危机，被吊销许可后宣布签署 MOU 迁至哈萨克斯坦。第三，也是最重要的，白宫政策主管 Patrick Witt 坐在镜头前，在 CLARITY 法案语言即将发布的当天，坦诚地讲述了白宫与民主党之间的最后一轮博弈——关于总统伦理条款的执法权归属。</p>
+
+<div class="topic-cards">
+  <div class="card card-blue">
+    <strong>🏛️ CLARITY 法案：加密超级法案的终局</strong>
+    美国建国 250 年来，首次有总统同意接受一项限制自身行为的伦理条款。但民主党要求将执法权下放到 50 个州的检察长——这在宪法上是前所未有的。8 月 7 日的国会休会截止日正在逼近。
+  </div>
+  <div class="card card-green">
+    <strong>🇯🇵 Gauntlet × SBI：加密融资的非 VC 路线</strong>
+    一家加密公司的创始人选择了一家日本金融控股集团作为唯一投资者——不是因为它出价最高，而是因为它"生活在你要服务的那片水域"。这标志着加密公司在成熟过程中资本来源的范式转移。
+  </div>
+  <div class="card card-yellow">
+    <strong>🇰🇿 Balaji 的网络国家：从马来西亚到哈萨克斯坦</strong>
+    一位匿名举报者声称有以色列公民住在网络学校里。这触发了一场国家级的移民突查、政治争议，最终导致许可证被吊销。Balaji 的网络学校现在正在迁往哈萨克斯坦——一个正在用 AI+区块链部门主动招募加密创业者的国家。
+  </div>
+  <div class="card card-red">
+    <strong>⚖️ 总统伦理条款：历史性的妥协</strong>
+    白宫同意了一项禁止联邦官员（包括总统、副总统、国会议员及配偶）在任期内发行或代言的数字资产的条款。已有资产的合规路径是盲信托或剥离。这是从 Watergate 后《政府伦理法》以来最全面的伦理条款。
+  </div>
+  <div class="card card-purple">
+    <strong>🎯 第九局的博弈</strong>
+    Patrick Witt 坦率地描述了民主党的谈判策略："你不到最后一秒钟别写下结论——因为这东西会被谈判到最后一刻。"但他在过去一年已经回应了每一项民主党诉求，包括额外增加的 200-300 页法案页面。
+  </div>
+  <div class="card card-orange">
+    <strong>🌐 加密正在制度化</strong>
+    三件事指向同一个趋势：加密行业正在从边缘走向主流。资金来源在多元化，监管框架在成型，创业者在地缘政治中重新选择管辖区。这不是"密码朋克 vs 监管"的故事，而是一个行业成熟的过程。
+  </div>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Gauntlet 的 1.25 亿美元：为什么选择 SBI 而不是 VC？</h2>
+
+<p>Tarun Chitra 是 Gauntlet 的联合创始人兼 CEO，也是 The Chopping Block 的常驻嘉宾之一。他在节目中宣布，Gauntlet 刚刚从日本 SBI Holdings 获得了 1.25 亿美元的投资，而且是 SBI 作为唯一投资者。</p>
+
+<p>对于长期关注加密行业的人来说，这是一个值得注意的信号。Tarun 解释了他的判断逻辑：加密行业在走向传统金融化的过程中，公司的资本来源也应该随之变化。"历史上大家默认用 VC 融资来成长，但我认为，当加密变得更加 TradFi 化、被 TradFi 所使用时，人们不可避免地会回到传统大公司投资小公司的模式——而不是辛迪加 VC 投资的模式。"</p>
+
+<p>SBI Holdings 是一个在美国找不到对标的控股集团。它是 SoftBank 的分拆公司，日本前 100 强的上市公司。它拥有日本最大的在线券商（零佣金，和 Robinhood 同期推出但专注于日本市场）、日本前三大加密交易所（正在整合第四家）、多家银行，也是 Ripple Labs 早期的 A 或 C 轮投资者。简单来说，SBI 既理解加密，又拥有金融基础设施——这正是 Gauntlet 所需要的。</p>
+
+<div class="info-box">
+  <strong>作者概括：</strong>Tarun 的核心逻辑不是"VC 不行了"，而是资本来源应该和客户类型匹配。当 Gauntlet 的客户越来越多是传统金融机构时，来自传统金融界的资本——"生活在你正在努力服务的那片水域"的资本——比 VC 的纯财务投资提供了更多的战略协同和分销渠道。
+</div>
+
+<p>Haseeb 在节目中抛出了一个有趣的观察：Tarun 和 Haseeb 各自作为创始人融到的资金总额，已经超过了他们之前作为 VC 时管理的资金规模。"这不代表你们做 VC 不行——事实上你们都很优秀，"Haseeb 笑着说，"这是非常不容易的转身。"</p>
+
+<div class="divider">· · ·</div>
+
+<h2>Balaji 的网络学校：为什么马来西亚成为了"错的舞伴"</h2>
+
+<p>节目的第二个主要话题是 Balaji Srinivasan 的网络国家实验。Balaji 是加密行业的 OG——前 Coinbase CTO、a16z 合伙人、《The Network State》一书的作者。他在马来西亚柔佛州的 Forest City 创建了网络学校，一个创业者可以来住 2-3 个月、创办初创公司的开发者驻地。已投入约 2500 万美元，计划再投入 1.25 亿美元。Haseeb 本人曾在早期访问 Forest City 并讲课。</p>
+
+<p>事情的引爆点是一个匿名账户声称有以色列公民住在网络学校里。马来西亚是穆斯林国家，不接收以色列移民。虽然这些以色列人可能持有第二护照合法入境，但这一说法足以触发一场移民部门的突查。突查没有发现任何无效护照，但争议已经升级为国家新闻。Balaji 随后发布了一个被描述为"非常不寻常"的视频，直接要求与马来西亚总统对话，并声明如果无法获得 MOU，就把资本重新配置到其他国家。</p>
+
+<p><strong>结果</strong>：地方政府吊销了网络学校的许可证。就在本节目录制的当天，Balaji 宣布已与哈萨克斯坦签署 MOU，将网络学校迁至该国。</p>
+
+<blockquote>
+  "I want Balaji to succeed. It is an audacious task to try to build a new network state on any other sovereign nation's grounds. Once a network state gets successful enough, I don't think you run the same risks. But Balaji I think picked the wrong dance partner to start."
+  <span class="attr">—— Tarun Chitra，论 Balaji 选择马来西亚的战略失误</span>
+</blockquote>
+
+<p>Tom 用一个金融术语来描述这个教训——"土耳其曲线"（turkey chart）：在某些非西方管辖区，情况可以从看起来非常好一夜之间变成生存危机。"这不是新加坡，这是某种意义上的狂野西部。"</p>
+
+<p>哈萨克斯坦提供了几个关键优势：领导层更世俗化（虽然是名义上的穆斯林国家）；设有专门的 AI 与区块链部门——和美国一样，这个部门正在亚洲巡回积极招募创业者；以及最重要的——<strong>现在他已经签了 MOU</strong>。Tarun 甚至亲自确认他最近见到了一位来自该部门的人。</p>
+
+<blockquote>
+  "He is literally the best immigrant import possible for any nation, and he's bringing with him like an entire crew of extremely sophisticated, extremely wealthy, extremely capable people."
+  <span class="attr">—— Haseeb Qureshi，论 Balaji 对任何国家的价值</span>
+</blockquote>
+
+<div class="divider">· · ·</div>
+
+<h2>CLARITY 法案：白宫历史性伦理条款的内部视角</h2>
+
+<p>节目的核心部分是对白宫政策主管 Patrick Witt 的采访。Patrick 在节目中"跑进跑出"——他在节目直播的当天正在确保 CLARITY 法案的语言"落到对的地方"。这是法案语言预计发布的日子。</p>
+
+<p>CLARITY 是加密行业等待多年的综合监管框架法案。它于 2025 年 5 月在众议院提出，2025 年 7 月在众议院以远超预期的两党票数通过。经过一年多的参议院银行委员会和农业委员会的反复修改，它终于在 2026 年 6 月被列入参议院立法日程。截止日是 8 月 7 日——国会休会的日期。如果在此之前不通过，中期选举的议程就会占据立法空间，法案可能无限期搁置。</p>
+
+<h3>总统伦理条款：前所未有的让步</h3>
+
+<p>Patrick Witt 透露了一个白宫内部的时间线：</p>
+
+<blockquote>
+  "We met with the president on Thursday of last week and again yesterday morning to get final sign-off on the first-of-its-kind ethics provision that would apply a conduct restriction to the President of the United States."
+  <span class="attr">—— Patrick Witt，白宫政策主管</span>
+</blockquote>
+
+<p>这是一个历史性的时刻。Patrick 强调："这是美国建国 250 年来，第一次有一位总统、任何一届白宫同意接受一项限制总统行为的伦理条款。"而这不是一个小的技术性修改——它禁止总统、副总统、国会议员及其配偶在任期内发行或代言数字资产，并规定了强民事处罚。</p>
+
+<p>条款还为"飞行中"的情况提供了合规路径——Patrick 坦言他们在任期中间加入伦理条款是前所未有的。对于任前已发行或代言的数字资产，受覆盖的官员有两种选择：盲信托（将利益放入一个不让自己参与管理的信托）或完全剥离（出售或转让）。</p>
+
+<blockquote>
+  "How many other ethics provisions apply to the President of the United States? Zero. How many ethics provisions that are currently on the books are enforced by anyone other than the US Attorney General? None of them."
+  <span class="attr">—— Patrick Witt，量化伦理条款的历史性让步</span>
+</blockquote>
+
+<h3>核心争议：DOJ 执法 vs 州检察长执法</h3>
+
+<p>白宫的版本是：司法部（DOJ）作为联邦机构执行该伦理条款。民主党要求的版本是：<strong>所有 50 个州的检察长</strong>各自拥有独立的执法权。</p>
+
+<p>Patrick 的论点分为三个层次：</p>
+
+<p><strong>第一，宪法层面</strong>。总统是宪法官员，其职责是确保法律得到执行。如果总统不得不应对来自某个州检察长的诉讼，这可能会阻止总统履行宪法职责。让纽约州检察长有能力起诉总统，这里面有严肃的宪法问题。</p>
+
+<p><strong>第二，先例层面</strong>。目前没有任何适用于总统的伦理条款允许州检察长执行。如果民主党的论点是"这个条款不够，因为它没有州检察长执法"，那么他们等于在说：<strong>目前所有针对联邦官员的伦理条款都不够——因为它们都没有州检察长执法。</strong></p>
+
+<p><strong>第三，对称性</strong>。Patrick 指出有大约 25 个红州和 25 个蓝州的检察长，"他们都在寻找机会成为州长、参议员或总统——如果让这些人有能力起诉对立党派的人，这会导致灾难。"未来的民主党总统也会面临同样的风险。</p>
+
+<h3>第九局的博弈</h3>
+
+<p>Patrick Witt 对民主党的谈判策略做了非常坦率的描述。当 Haseeb 问他是不是在说"不要把这东西写到最后一分钟才放弃——因为可能会有第九局的惊喜"时，Patrick 的回应异常直接：</p>
+
+<blockquote>
+  "It's going to be negotiated until the very last moment. That's just been the strategy of Democrats throughout this process. I wish it weren't that way."
+  <span class="attr">—— Patrick Witt，对民主党谈判策略的评价</span>
+</blockquote>
+
+<p>他补充说："如果你等着出现一个大妥协——有 10 个民主党人事先公开说'我们等不及要投票了'——你永远等不到。这不是民主党在整个法案中谈判的方式。"</p>
+
+<p>但 Patrick 没有放弃。他强调：白宫在过去一年中已经回应了每一项民主党提出的政策目标。法案增加了 200 到 300 页——"不是因为我们想加，而是为了回应民主党的关切和他们的党团目标。"伦理条款本身就是一个例子——"没有人认为我们真能做出一个有实质执行力、包含总统的伦理条款。我们做到了。"</p>
+
+<h3>"这不是一个加密产业赠品"</h3>
+
+<blockquote>
+  "This is not a crypto giveaway. I spend half of my day having to deal with concerns from crypto industry stakeholders who take issue with things that are in the bill or things that are being contemplated."
+  <span class="attr">—— Patrick Witt，澄清 CLARITY 法案中有大量行业不喜欢的条款</span>
+</blockquote>
+
+<p>这个声明非常重要。一个通常的叙事是：加密行业在推动一个对自己有利的法案。但 Patrick 说他一天的时间有一半在应对来自<strong>加密行业内部</strong>的不满——他们对法案中的某些条款有异议。法案在添加合规义务、限制行为、增加成本。</p>
+
+<p>Patrick 的结语是个人化的："我不是来做表演投票的。我没有把过去一年的生命投入到一场表演投票上。"他坦承自己不是一个"好的说谎者"或"好的扑克玩家"——"我是非常透明的人。跟我打交道的人都知道——我直接告诉你我们的位置在哪里，我们的红线在哪里。"</p>
+
+<div class="divider">· · ·</div>
+
+<h2>三个故事，一个主题</h2>
+
+<p>表面上，这三件事看起来互不相关——一家加密公司的融资、一个创业者在马来西亚遇到的政治麻烦、一部在美国参议院悬而未决的法案。但它们指向了同一个方向：</p>
+
+<p><strong>加密行业正在制度化。</strong></p>
+
+<p>Gauntlet 从 SBI 融资代表的是资本来源的转移——从纯 VC 辛迪加到传统金融战略投资。Balaji 的网络学校从马来西亚迁到哈萨克斯坦代表的是创业者在全球范围内寻找监管确定性和政治适合的管辖区。CLARITY 法案代表的是最古老的制度化机制——法律——第一次对数字资产领域施加真正有执行力的总统级伦理限制。</p>
+
+<p>这不是"密码朋克 vs 监管者"的二元对立。这是在说：加密不再是 2013 年的那个行业。它的资金来自传统金融巨头，它的创业者正在地缘政治层面与主权国家谈判 MOU，它的监管框架正在美国参议院的议程上等待最终的投票。"当问题被提出时——"Patrick 说，"人们必须站起来被记录。"</p>
+
+<p>8 月 7 日之前，我们会知道谁站起来了。</p>
+
+<div class="divider">· · ·</div>
+
+<div class="quotes-section">
+<h2>核心金句</h2>
+
+<blockquote>
+  "This is the first time ever that a president, the White House has ever agreed to submit to an ethics provision that would restrict the president's conduct."
+  <span class="attr">—— Patrick Witt，论 CLARITY 伦理条款的历史性</span>
+</blockquote>
+
+<blockquote>
+  "How many other ethics provisions apply to the President of the United States? Zero."
+  <span class="attr">—— Patrick Witt，回应民主党对条款强度的质疑</span>
+</blockquote>
+
+<blockquote>
+  "I think Balaji picked the wrong dance partner to start."
+  <span class="attr">—— Tarun Chitra，论马来西亚作为网络国家实验地的失误</span>
+</blockquote>
+
+<blockquote>
+  "It's going to be negotiated until the very last moment."
+  <span class="attr">—— Patrick Witt，论 CLARITY 法案的终局谈判</span>
+</blockquote>
+
+<blockquote>
+  "This is not a crypto giveaway. I spend half of my day having to deal with concerns from crypto industry stakeholders who take issue with things that are in the bill."
+  <span class="attr">—— Patrick Witt，澄清 CLARITY 法案中有大量行业不喜欢的条款</span>
+</blockquote>
+
+<blockquote>
+  "He is literally the best immigrant import possible for any nation."
+  <span class="attr">—— Haseeb Qureshi，论 Balaji 和网络学校对任何国家的经济价值</span>
+</blockquote>
+</div>
+
+<footer>
+  <p>来源：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3793153170.mp3">The Chopping Block: The CLARITY Act Endgame</a> · 2026 年 7 月</p>
+  <p style="margin-top:8px">本文由自动化 pipeline 生成，基于播客转写文本。内容力求准确，但不构成投资或法律建议。</p>
+</footer>
+
+</article>
+</body>
+</html>

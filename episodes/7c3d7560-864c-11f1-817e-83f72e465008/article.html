@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEX in the City: Kalshi 的艰难一周与预测市场的联邦主义之战</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1e1e1e;
+    background: #fafafa;
+    -webkit-font-smoothing: antialiased;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  header .meta span {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .topic-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 32px 0 48px;
+  }
+  @media (max-width: 600px) {
+    .topic-cards { grid-template-columns: 1fr; }
+    header h1 { font-size: 22px; }
+    body { font-size: 16px; }
+    article { padding: 32px 16px 48px; }
+  }
+  .topic-card {
+    padding: 16px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-left: 4px solid transparent;
+  }
+  .topic-card strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 15px;
+  }
+  .card-red { background: #fff5f5; border-left-color: #e03131; }
+  .card-blue { background: #f0f6ff; border-left-color: #1971c2; }
+  .card-green { background: #f0faf4; border-left-color: #2f9e44; }
+  .card-purple { background: #faf5ff; border-left-color: #862e9c; }
+  .card-yellow { background: #fffef0; border-left-color: #e8590c; }
+  .card-orange { background: #fff9f0; border-left-color: #f08c00; }
+  section {
+    margin-bottom: 48px;
+  }
+  section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #111;
+    line-height: 1.4;
+  }
+  section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 12px;
+    color: #222;
+  }
+  section p {
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+  .highlight-box {
+    padding: 18px 22px;
+    border-radius: 8px;
+    margin: 18px 0;
+    font-size: 15px;
+    line-height: 1.7;
+    border-left: 4px solid transparent;
+  }
+  .hb-red { background: #fff5f5; border-left-color: #e03131; }
+  .hb-blue { background: #f0f6ff; border-left-color: #1971c2; }
+  .hb-green { background: #f0faf4; border-left-color: #2f9e44; }
+  .hb-purple { background: #faf5ff; border-left-color: #862e9c; }
+  .hb-yellow { background: #fffef0; border-left-color: #e8590c; }
+  .hb-orange { background: #fff9f0; border-left-color: #f08c00; }
+  .quotes-section {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 2px solid #e9ecef;
+  }
+  .quote-block {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.7;
+    border-left: 4px solid transparent;
+  }
+  .quote-block .context {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-top: 6px;
+  }
+  .qb-blue { background: #f0f6ff; border-left-color: #1971c2; }
+  .qb-green { background: #f0faf4; border-left-color: #2f9e44; }
+  .qb-yellow { background: #fffef0; border-left-color: #e8590c; }
+  .qb-red { background: #fff5f5; border-left-color: #e03131; }
+  .qb-purple { background: #faf5ff; border-left-color: #862e9c; }
+  .qb-orange { background: #fff9f0; border-left-color: #f08c00; }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+  }
+  footer a {
+    color: #1971c2;
+    text-decoration: none;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 18px 0;
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    .stats-grid { grid-template-columns: 1fr; }
+  }
+  .stat-card {
+    padding: 18px 12px;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+  }
+  .stat-card .number {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 8px 0;
+  }
+  .stat-card .label {
+    font-size: 13px;
+    opacity: 0.7;
+    line-height: 1.4;
+  }
+  .note {
+    font-size: 13px;
+    color: #888;
+    font-style: italic;
+    margin: 8px 0;
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>DEX in the City: Kalshi 的艰难一周，如何演变为一场联邦与州的预测市场监管权之争</h1>
+  <div class="meta">
+    <span>Unchained Podcast</span> · <span>2026年7月</span> · <span>约50分钟</span>
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    主持：KK（Katherine）、Jesse（Ribbit Capital）、V
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得关注</h2>
+  <p>2026 年 7 月，预测市场平台 Kalshi 经历了一个"艰难的一周"——但这场危机的影响远不止一家公司的公关困境。密歇根州法院的临时禁令与 CFTC 自 1980 年以来首次动用的紧急权力，将一场普通的商业纠纷推向了美国联邦主义原则的核心地带。与此同时，日本用一部新的《金融商品交易法》展示了另一种监管可能，DTCC 则悄悄将美国证券市场的清算基础设施搬上了区块链。本期 DEX in the City 法律圆桌，三位主持人——前 SEC 律师 KK、Ribbit Capital 的 Jesse 和 V——为这些事件提供了深度法律分析。</p>
+
+  <div class="topic-cards">
+    <div class="topic-card card-red"><strong>CFTC 动用"核选项"</strong>联邦监管机构自 1980 年以来首次激活紧急权力，阻止州法院命令的执行，将商业纠纷升级为联邦主义原则之争。</div>
+    <div class="topic-card card-blue"><strong>预测市场的生存博弈</strong>密歇根州起诉 Kalshi 并获临时禁令。Kalshi 夹在州法院裁决与联邦监管之间——听从一方即违反另一方。</div>
+    <div class="topic-card card-green"><strong>日本加密监管升级</strong>新《金融商品交易法》将加密收益税率从最高 55% 降至 20% 统一税率，为稳定币、ETF 和机构参与铺平道路。</div>
+    <div class="topic-card card-purple"><strong>DTCC 进场：基础设施上链</strong>美国证券清算托管机构 DTCC 成功处理代币化证券的实盘交易——他们代币化的是真实的 DTC 权益记录，而非 Wrapper。</div>
+    <div class="topic-card card-yellow"><strong>Kalshi 的连环事件</strong>航班取消合约因道德风险争议叫停；总统提词器操作员涉嫌内幕交易被内部检测系统发现。</div>
+    <div class="topic-card card-orange"><strong>美国加密立法倒计时</strong>Clarity 法案在道德条款、利率妥协和执法担忧三方拉锯中停滞，国会夏季休会在即。</div>
+  </div>
+</section>
+
+<section>
+  <h2>1. 密歇根州 vs Kalshi：州与联邦的第一轮碰撞</h2>
+
+  <p>2026 年 3 月，密歇根州起诉 Kalshi，主张其体育赛事合约属于博彩，要求 Kalshi 取得密歇根州的博彩牌照。这触及了预测市场监管的核心矛盾——联邦 CFTC 管辖的指定合约市场（DCM），是否受州博彩法的约束？</p>
+
+  <p>密歇根州不仅成功获得了临时禁令（TRO），法院还做出了一个不寻常的决定：主动下令清算密歇根州居民持有的未平仓体育赛事合约。此前其他州的 TRO 仅要求平台停止新交易，允许用户自行平仓。这一区别在法律上意义重大——法院不仅阻止未来行为，还要求撤销已经发生的交易。</p>
+
+  <p>Kalshi 全面遵守了法院命令，对密歇根州进行地理位置屏蔽，并取消了该州用户的未平仓交易。据主持人们透露，受影响的交易量较小，执行难度不高。但故事在这里才真正开始。</p>
+
+  <div class="highlight-box hb-yellow">
+    在诉讼程序中，获得临时禁令的举证负担其实很高——申请人必须证明有"较高的胜诉可能性"，法官需要基于指控本身认为值得叫停被诉行为。正因为门槛高，TRO 并不常见。
+  </div>
+</section>
+
+<section>
+  <h2>2. CFTC 的"破玻璃"紧急权力：1980 年以来的首次</h2>
+
+  <p>当 Kalshi 遵守密歇根州法院命令、准备取消密歇根用户的交易时，CFTC 做出了一个在美国监管史上极为罕见的举动——它援引《商品交易法》赋予的紧急权力，命令 Kalshi"不要取消那些交易"。</p>
+
+  <p>要理解这一举动的不同寻常，需要了解这项权力的历史。主持人 V 查阅资料后发现，CFTC 的紧急权力在历史上仅被使用过大约四次：马铃薯合约的历史性违约、咖啡价格暴涨、白银市场的逼仓事件，以及 1980 年卡特总统对苏联的粮食禁运。每一次，都是因为市场本身出现了故障、操纵或系统性风险。</p>
+
+  <p>这一次完全不同。密歇根州一些用户在交易体育赛事合约——并不构成市场失灵。然而 CFTC 的介入将一场公司 vs 州的商业纠纷，直接升级为《商品交易法》联邦优先权范围的宪法性问题。主持人们用了一个生动的比喻："这把一个商业纠纷变成了一个巨大的联邦主义之争，显著提高了 stakes，并使这个案件成为一个更强的上诉审查候选者。"</p>
+
+  <div class="highlight-box hb-red">
+    <strong>关键变化</strong>：CFTC 紧急权力此前一直用来对抗市场参与者——交易员、机构、投机者。而这一次，CFTC 用它来对抗一个州。这是紧急权力适用范围的根本性扩展。
+  </div>
+
+  <p>案件几乎确定将上诉至最高法院。三位主持人和法律观察人士普遍认为，最高法院会积极受理此案——它涉及联邦法律是否优先于州法律这一根本性的宪法问题。</p>
+</section>
+
+<section>
+  <h2>3. 如果 CFTC 赢了：体育博彩行业将被彻底改写</h2>
+
+  <p>主持人们花费了相当篇幅讨论胜诉的后果——这个讨论揭示了一个经常被忽视的行业逻辑。如果法院最终裁定 CFTC 对指定合约市场（DCM）的管辖权优先于州法律，那么任何体育博彩平台都可以通过以下逻辑彻底改变自己的监管处境：将每一笔下注包装为"事件合约"的法律形式，转而接受联邦 CFTC 的监管，从而完全绕开各州的博彩许可、税收体系和产品限制。</p>
+
+  <p>V 的总结切中要害："如果你是体育博彩平台，为什么不把每一笔下注都包装成事件合约？一个联邦牌照覆盖全美——再也不需要逐州申请、缴纳博彩税、面对碎片化的消费者保护规则。我不认为人们充分意识到这意味着什么——如果 CFTC 和 Kalshi 赢了，这将彻底改变体育博彩。"</p>
+
+  <p>从州的角度看，这恰恰是最不可接受的结果。各州认为博彩的管辖权属于州权范畴，联邦的干预是不恰当的。而从联邦的角度看，DCM 作为微型自律组织（SRO），有更强的自我监管和执行能力，联邦一级的统一监管比五十个州的碎片化规则更有效率。</p>
+</section>
+
+<section>
+  <h2>4. 航班取消合约：一个被公众恐惧扼杀的合理对冲工具</h2>
+
+  <p>除了与密歇根州的法律战，Kalshi 同一周还被迫取消了另一项计划——推出与机场整体航班取消率挂钩的合约。从经济角度看，这种合约有合理的对冲用途：会议组织者、依赖航班到达的企业可以利用它来管理运营风险。航班取消确实对大量商业活动产生实质性的负面经济影响。</p>
+
+  <p>但公众的反应却是压倒性的负面——核心担忧是道德风险：如果取消航班可以获利，是否会有人故意制造延误？主持人 Jesse 直言："不要让我在机场经历更多延误。"与此同时，航班数据提供商 FlightAware 明确告知 Kalshi 不得使用其数据——尽管航班取消信息本身属于公共领域，但获取数据的具体方式（API 调用或网页抓取）涉及使用条款问题。</p>
+
+  <p>Kalshi 最终取消了该合约计划。主持人们认为这更多是出于政策/公关考量而非法律原因。这个案例揭示了一个预测市场面临的普遍困境：即使合约在经济学上有合理的用途，公众对道德风险的恐惧和相关方（如数据提供商）的抵制，也足以令其夭折。对 Kalshi 的法律和运营团队来说，他们需要同时应对法院、监管机构、数据提供商和舆论——这是多维度的压力考验。</p>
+</section>
+
+<section>
+  <h2>5. 提词器事件：内幕交易不再是理论上的风险</h2>
+
+  <p>几乎在同一时间，Kalshi 还卷入了一起内幕交易调查。特朗普总统的长期提词器操作员被指控在 Kalshi 上下注——作为提词器操作员，他可以在总统演讲稿公开之前接触到文本内容，这意味着他拥有非公开的、可能影响市场的信息。</p>
+
+  <p>Kalshi 的内部风控系统检测到了异常交易活动，履行了其作为 DCM 的自律监管义务。该操作员目前已被停职。主持人们对 Kalshi 能够发现并处理这一问题表示肯定，但同时也提出了一个更深层次的担忧：被发现的只是冰山一角。</p>
+
+  <div class="highlight-box hb-blue">
+    正如 V 在之前的节目中所说："每抓住一个，还有多少人正通过匿名账户操作而未被发现？这些账户没有与其职业身份明显关联——我们的应对计划是什么，尤其是在市场扩展到更多合约类型的时候？"国家安全相关合约尤其令主持人感到担忧——提词器事件至少与国家安全"有相邻关系"。
+  </div>
+
+  <p>这不是 Kalshi 独有的问题。所有预测市场都面临同样的挑战。随着合约种类从体育扩展到政策、经济指标乃至国家安全领域，内幕信息的定义范围和检测难度将呈指数级增长。目前行业对此还没有系统性的解决方案。</p>
+</section>
+
+<section>
+  <h2>6. 日本加密监管升级：一部"清晰度法案"级别的监管包</h2>
+
+  <p>离开 Kalshi 的话题后，节目转向了亚太地区的监管进展——其中最引人注目的是日本。2026 年 7 月 15 日——比很多人意识到的要早得多——日本新的《金融商品交易法》正式生效。这标志着日本对加密资产的根本性重新定位。</p>
+
+  <p>日本早在 2017 年就通过了第一部加密法律，是首批立法监管加密的主要经济体之一。但当时的法律将加密定性为"支付工具"——类似钱包里的现金。然而加密的实际发展路径与这一预期大相径庭。新法将其重新定性为投资组合中的资产，"更像股票，而非钱包里的现金"——正如主持人 Jesse 所说。</p>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="label">旧税率</div>
+      <div class="number" style="color:#e03131;">55%</div>
+      <div class="label">加密收益按杂项所得征税，最高档可达 55%，远高于股票资本利得税</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">新税率</div>
+      <div class="number" style="color:#2f9e44;">20%</div>
+      <div class="label">统一 20% 固定税率，大幅降低交易和持有成本</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">最高刑罚</div>
+      <div class="number" style="color:#1971c2;">10年</div>
+      <div class="label">运营未注册交易所最高可判 10 年监禁——日本对此态度严肃</div>
+    </div>
+  </div>
+
+  <p>法律的实际效果已经显现。东京证券交易所已为现货加密 ETF 扫清跑道。更令人印象深刻的是，日本的亚马逊配送公司宣布将用日元稳定币向司机支付大部分薪酬——这不是远期规划，而是正在发生的事情。</p>
+</section>
+
+<section>
+  <h2>7. 日本 vs 欧盟 vs 美国：三种监管哲学</h2>
+
+  <p>主持人 KK 在节目中提出了一个值得深思的对比：日本的监管路径与欧盟的 MiCA 在哲学上有本质区别。日本选择的是"整合"路线——将链上资产融入现有金融体系，加密是金融的延伸而非独立行业。日本没有简单地将加密塞进现有证券法，而是为它创建了一个全新的金融工具类别，但保持了与传统金融法规的衔接。</p>
+
+  <p>欧盟 MiCA 选择了不同的哲学：将加密作为独立行业单独监管。MiCA 与 MiFID（传统金融工具监管框架）双轨并行——加密和传统金融各有各的规则。MiCA 回答的问题是："如何监管加密？"日本的回答则是："如何让加密成为金融体系的一部分？"</p>
+
+  <p>主持人坦言她刚刚开始思考哪一种路径对行业更好。多数加密从业者可能偏向 MiCA 的"独立行业"路线——但当"区别对待"意味着负面和惩罚性的方式时，这种偏好就需要重新审视了。美国在上一届政府期间就曾试图"把方钉塞进圆孔"——强行将加密套入不合适的旧规则。当前的美国立法方向已经有所改进，但法案本身的前景仍然不确定。</p>
+</section>
+
+<section>
+  <h2>8. DTCC 代币化：基础设施本身走上区块链</h2>
+
+  <p>DTCC（美国存管信托和清算公司）几乎处理美国所有公开交易股票的清算和结算。当它宣布成功使用代币化证券处理了实盘生产交易时——参与者包括 JP Morgan、Goldman Sachs、BlackRock、Citadel、CME 等数十家主要市场机构——整个行业都注意到了。DTCC 的代币化服务将于今年晚些时候正式上线。</p>
+
+  <p>但 V 看到这一消息时的第一反应最为犀利："对那些试图代币化公开股票的其他公司来说，这是不是终局？因为 DTCC 不只是另一家发行代币化股票的公司——<strong>你就是基础设施本身</strong>。"</p>
+
+  <div class="highlight-box hb-purple">
+    <strong>本质区别</strong>：DTCC 代币化的是真实的 DTC 权益——即官方所有权记录本身。它不是在链上创建一个新的证券市场，而是把现有证券市场搬上链。不存在"哪个代币才是真正的那只股票"的问题——DTCC 持有权威记录。而目前市场上大多数所谓的"代币化股票"是存托凭证/Wrapper——股票仍在传统托管方，代币仅代表受益权，不含投票权等股东权利。多个公司可以同时代币化同一只股票，产生"谁是真的"这一尚未解决的法律问题。
+  </div>
+</section>
+
+<section>
+  <h2>9. 代币化之后：手段与目的</h2>
+
+  <p>如果 DTCC 成为代币化的主干，加密行业会变成什么样子？主持人们对这个问题表现出明显的矛盾心态。一方面，看到主流金融机构拥抱代币化令人振奋。但另一方面，如果代币化的主导形式是 BlackRock 和 Nasdaq 的股票和债券走上区块链轨道——没有零售 DeFi 钱包、没有无需许可的交易——那么这与加密行业最初设想的去中心化未来相去甚远。</p>
+
+  <p>然而 V 也指出了一个重要的竞争视角：DTCC 尽管占据主导地位，但并非没有挑战者。Canton（由 Digital Asset / Don Wilson of DRW 支持）等加密原生替代方案、公共区块链上的代币化方案，都在提供不同的路径。碎片化带来了互操作性挑战——不同平台上的代币化资产能否互操作？——但也保留了竞争和创新的空间。</p>
+
+  <p>V 用一句话总结了代币化的价值所在——"代币化是手段，不是目的。真正的难点和真正有趣的部分，不在代币化本身，而在于一旦资产被代币化后，你能用它来做什么：作为抵押品、即时借贷、加密资产交叉保证金、24小时结算——换句话说，能否围绕代币化资产构建全新的金融产品。"</p>
+</section>
+
+<section>
+  <h2>10. 美国加密立法：时间不站在立法者这边</h2>
+
+  <p>节目的最后部分回到了美国。Clarity 法案目前面临三重拉锯：（1）是否在法案中插入道德条款的争议；（2）关于加密收益率的妥协方案；（3）执法机构对开发者保护条款的担忧。这不是一个争议——是三个独立分歧在同时谈判。</p>
+
+  <p>时间维度同样令人担忧。国会夏季休会临近、即将到来的中选、伊朗战争投票等议题也在争夺立法议程。两院还需要在各自版本之间达成一致。主持人 Jesse 的比喻很贴切："就像《危险边缘》节目的音乐正在播放，时间正在耗尽，而我们还没有答案——或者在匆忙地涂写答案。"</p>
+
+  <p>主持人 KK 反复强调了一个常被忽略的问题：如果 Clarity 法案无法通过，替代方案是什么？仅靠 SEC 的 Project Crypto 规则和监管指引来为行业提供确定性是极其脆弱的——规则可以被后续政府修改，无法像立法那样"面向未来"。但在当前的政治环境下，这可能成为唯一的选择。</p>
+</section>
+
+<section>
+  <h2>11. 加密好消息：ZachXBT 将冒充代币变成慈善</h2>
+
+  <p>本期"加密好消息"环节聚焦匿名链上调查员 ZachXBT。他被称为"加密调查记者"，擅长通过追踪链上交易揭露骗局和黑客攻击，经常在传统媒体之前爆出重大新闻。然而，有人反复利用他的名字和形象创建 Meme 币——未经他许可。</p>
+
+  <p>ZachXBT 的处理方式令人尊敬：他将这些冒充代币清仓变现，然后通过 The Giving Block 平台将所得直接捐出。最近的一笔捐款用于支持 2026 年 6 月 24 日委内瑞拉地震的受灾者。这个举动用主持人的话说就是："他把一些坏的、不恰当的东西，转化成了好的结果。"</p>
+
+  <p>这期节目的讨论还顺便带出了 Robinhood Chain 的一个有趣悖论——该链最初为现实资产代币化和机构交易而建，但大量流量来自 Meme 币。这是否算"好消息"，主持人认为取决于你问 Robinhood 的谁。</p>
+</section>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+
+  <div class="quote-block qb-blue">
+    "看到这个消息时，我的第一个想法是：对那些试图代币化公开股票的其他公司来说，这是不是终局？因为 DTCC 不只是另一家发行代币化股票的公司——<strong>你就是基础设施本身</strong>。"
+    <div class="context">— V 谈 DTCC 代币化的里程碑意义</div>
+  </div>
+
+  <div class="quote-block qb-green">
+    "<strong>代币化是手段，不是目的</strong>。真正的难点和真正有趣的部分，不在代币化本身，而在于一旦资产被代币化后，你能用它来做什么。"
+    <div class="context">— V 谈代币化的真正价值所在</div>
+  </div>
+
+  <div class="quote-block qb-yellow">
+    "CFTC 的这个'破玻璃'紧急权力，<strong>在历史上只被使用过大约四次</strong>——每次都是市场真的在着火的时候。而这一次，密歇根州一些人在交易体育赛事合约，市场并没有失灵。"
+    <div class="context">— 主持人们讨论 CFTC 紧急权力的历史语境</div>
+  </div>
+
+  <div class="quote-block qb-red">
+    "如果 CFTC 和 Kalshi 赢了，这将<strong>彻底改变体育博彩</strong>。如果你是体育博彩平台，为什么不把每一笔下注都包装成事件合约？一个联邦牌照覆盖全美——再也不需要逐州申请、交税、面对碎片化的消费者保护规则。"
+    <div class="context">— V 谈案件对体育博彩行业的潜在冲击</div>
+  </div>
+
+  <div class="quote-block qb-purple">
+    "Kalshi 处于<strong>不可能的境地——他们被夹在岩石和硬地之间</strong>。遵守法院命令即违反联邦监管机构的指令，反之亦然。"
+    <div class="context">— 主持人们讨论 Kalshi 的两难处境</div>
+  </div>
+
+  <div class="quote-block qb-orange">
+    "前 CFTC 主席 Tim Massad 说，CFTC 在预测市场监管方面<strong>'迷失了方向'</strong>。这很有趣——连那些曾在联邦机构工作、理解该机构权力重要性的人都在提出异议。"
+    <div class="context">— 主持人们讨论监管机构内部的批评声音</div>
+  </div>
+</section>
+
+<footer>
+  <p>收听完整节目：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8649373830.mp3">Unchained Podcast · DEX in the City</a></p>
+  <p style="margin-top:4px;">本文为播客内容的结构化呈现，基于 2026年7月播出的节目。所有引用均出自原节目。</p>
+</footer>
+
+</article>
+</body>
+</html>
