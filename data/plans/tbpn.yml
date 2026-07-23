@@ -1,77 +1,66 @@
 source: tbpn
-refreshed_at: 2026-07-22T18:28:32.790Z
+refreshed_at: 2026-07-23T04:08:40.982Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
-pending: 1
+done: 0
+pending: 2
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: dfb3564b-eb96-43c4-b55d-55651b084e86
-    guid: dfb3564b-eb96-43c4-b55d-55651b084e86
-    title: China's AI Push Sounds Alarms, Airplane Seat Debate, Chris Best Joins | Ferdinand Dabitz, Kaiwei Tang, Steven
-      Schwartz, Katie Roof, Zavain Dar, Chad Edwards
-    duration: 9219
-    published: Tue, 21 Jul 2026 14:00:20 -0700
-    published_sort: "20260721"
-    first_seen_at: 2026-07-22T04:09:48.968Z
-    url: https://share.transistor.fm/s/025a4d7f
-    audio_url: https://media.transistor.fm/025a4d7f/e91287f5.mp3
+  - id: a7ff778b-06e3-4869-b338-5bc264462362
+    guid: a7ff778b-06e3-4869-b338-5bc264462362
+    title: HackingFace, White House $5B AI Science Bet, Travis Kalanick Joins | Veeral Patel, Lin Qiao, Jason Fried, Travis
+      Kalanick, Max Hodak
+    duration: 9217
+    published: Wed, 22 Jul 2026 13:56:49 -0700
+    published_sort: "20260722"
+    first_seen_at: 2026-07-23T04:08:40.973Z
+    url: https://share.transistor.fm/s/e6decec8
+    audio_url: https://media.transistor.fm/e6decec8/a49bbb41.mp3
     image: https://img.transistorcdn.com/JKCXKMFC8DxrWx6hOFD_HdcDjLAqNP3rWp-35R-vubg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iYWQ5/N2FkMzQ2MGY4Zjg5/ZDczMGExMTA5NjEz/Y2MyMC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/025a4d7f/transcription.txt
+    transcript_url: https://share.transistor.fm/s/e6decec8/transcription.txt
     transcript_type: text/plain
-    summary: "(01:58) - China's AI Push Sounds Alarms\r
+    summary: "(01:52) - HackingFace\r
 
-      (36:37) - Should You Recline Your Airplane Seat?\r
+      (17:48) - 𝕏 Timeline Reactions\r
 
-      (42:47) - 𝕏 Timeline Reactions\r
+      (29:02) - White House Puts $5B into AI Science\r
 
-      (51:39) - Ferdinand Dabitz, the 25-year-old CEO of Augustus Bank, discusses the company's recent $180 million
-      Series B funding round, which elevated its valuation to $1 billion. He highlights Augustus's mission to
-      \"dollarize the world\" by modernizing correspondent banking through AI and stablecoin technologies, aiming to
-      provide efficient dollar access globally. Dabitz also emphasizes the strategic importance of dollarization in
-      enhancing U.S. soft power and combating inflation.\r
+      (33:48) - 𝕏 Timeline Reactions\r
 
-      (58:53) - Kaiwei Tang, co-founder and CEO of Light Phone, discusses the company's mission to create minimalist
-      mobile devices that help users disconnect from the attention-driven economy of traditional smartphones. He
-      emphasizes the importance of technology serving as a tool without exploiting user attention, highlighting features
-      like calling, texting, and music playback without ads or data tracking. Tang also notes a growing trend among
-      younger generations seeking simpler devices, indicating a shift towards more intentional technology use.\r
+      (44:55) - Veeral Patel, Director of Software Engineering at Ramp, discusses the launch of Ramp Router, a tool
+      developed internally over three years to optimize AI model selection and token cost management. He explains how
+      Ramp Router allows enterprises to dynamically route tasks to the most efficient AI models, balancing factors like
+      latency, cost, and performance. Patel emphasizes that this product aligns with Ramp's mission to help companies
+      save time and money, extending their expertise from expense management to AI token spend optimization.\r
 
-      (01:12:30) - Chris Best, founder and CEO of Substack, discusses the proliferation of AI-generated content, or
-      \"slop,\" on the internet and its impact on reader trust. He emphasizes the importance of transparency in content
-      creation, advocating for clear disclosure when AI tools are used to maintain authenticity and value. Best also
-      highlights Substack's commitment to fostering genuine human connections and perspectives, believing that as
-      AI-generated content becomes more prevalent, the value of trusted human-authored content will increase.\r
+      (55:35) - Lin Qiao, co-founder and CEO of Fireworks AI, announced the company's recent $1.5 billion fundraising
+      round, emphasizing their focus on building a specialized intelligence platform that enables enterprises to
+      transform private data into customized AI models optimized for speed and cost. She highlighted the industry's
+      shift from general to specialized AI solutions, stressing the importance of companies maintaining control over
+      their proprietary data to develop durable businesses. Qiao also discussed the challenges of scaling AI
+      applications efficiently, noting that without careful management, even successful products risk scaling into
+      bankruptcy due to high operational costs.\r
 
-      (01:32:38) - Steven Schwartz is the co-founder and CEO of Whop, a platform that enables creators, developers, and
-      online businesses to sell digital products, software, communities, and memberships. He focuses on building
-      infrastructure for the internet economy, helping entrepreneurs monetize digital businesses through a unified
-      marketplace and payments platform.\r
+      (01:05:36) - Jason Fried is the co-founder and CEO of 37signals, a Chicago-based software company known for
+      creating project management and communication tools like Basecamp and HEY. In the conversation, Fried discusses
+      his passion for classic cars, sharing experiences with his 1979 Porsche 928 and reflecting on past decisions
+      regarding vehicle trades. He also touches on the challenges of purchasing vintage cars through auctions,
+      emphasizing the importance of thorough inspections to avoid unforeseen issues.\r
 
-      (01:54:08) - Katie Roof, editor at Business Insider, discusses her recent appointment and the publication's
-      strategic shift towards more exclusive content under Editor-in-Chief Jamie Heller. She highlights the increasing
-      competition in journalism, emphasizing the importance of original reporting and human skills in an AI-influenced
-      media landscape. Roof also notes the growing public interest in AI and venture capital, underscoring the need for
-      accurate and insightful coverage in these areas.\r
+      (01:31:41) - Travis Kalanick is the co-founder and former CEO of Uber, which he helped grow into a global
+      ride-hailing giant. He now leads Atoms, an industrial robotics and “physical AI” company spanning food automation,
+      mining, and transportation, built from the parent company behind CloudKitchens.\r
 
-      (02:02:48) - 𝕏 Timeline Reactions\r
-
-      (02:10:31) - Zavain Dar, co-founder of Dimension, discusses the firm's recent $800 million fundraise, bringing
-      their total assets under management to $1.65 billion. He highlights Dimension's focus on investing at the
-      intersection of technology and life sciences, supporting companies that integrate computing with biology. Dar also
-      addresses the evolving landscape of biotech, emphasizing the role of AI in drug discovery and the redefinition of
-      disease treatment, while cautioning against the unregulated use of peptides and hormone mimetics.\r
-
-      (02:23:18) - Chad Edwards, co-founder and CEO of CuspAI, a Cambridge-based AI startup, discusses the company's
-      mission to revolutionize materials discovery through generative AI, enabling the rapid development of new
-      materials for applications like semiconductors and climate technologies. He highlights their recent $450 million
-      Series B funding, valuing CuspAI at $2.6 billion, with investors including Jeff Bezos' Bezos Expeditions, Kleiner
-      Perkins, and NEA. Edwards also explains their innovative business model, securing royalties in customer contracts
-      to share in the commercial success of the materials developed using their platform.
+      (02:17:29) - Max Hodak, founder and CEO of Science Corporation, discusses the recent European marketing approval
+      for their retinal prosthesis designed to restore vision in patients with age-related macular degeneration. He
+      outlines the upcoming steps for commercialization in Europe, including country-specific registrations and surgeon
+      training, and mentions the expedited approval pathway in the U.S. through the FDA's humanitarian device exemption.
+      Hodak also highlights ongoing research and development efforts to enhance the implant's capabilities, aiming for
+      higher resolution, expanded field of view, and color perception.
 
 
       TBPN is made possible by:
@@ -126,7 +115,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
