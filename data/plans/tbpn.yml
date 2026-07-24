@@ -1,72 +1,58 @@
 source: tbpn
-refreshed_at: 2026-07-23T18:30:23.893Z
+refreshed_at: 2026-07-24T04:08:19.214Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
-pending: 1
+done: 0
+pending: 2
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: a7ff778b-06e3-4869-b338-5bc264462362
-    guid: a7ff778b-06e3-4869-b338-5bc264462362
-    title: HackingFace, White House $5B AI Science Bet, Travis Kalanick Joins | Veeral Patel, Lin Qiao, Jason Fried, Travis
-      Kalanick, Max Hodak
-    duration: 9217
-    published: Wed, 22 Jul 2026 13:56:49 -0700
-    published_sort: "20260722"
-    first_seen_at: 2026-07-23T04:08:40.973Z
-    url: https://share.transistor.fm/s/e6decec8
-    audio_url: https://media.transistor.fm/e6decec8/a49bbb41.mp3
+  - id: 2297901f-bad0-4a2e-9fe5-24fbcb5c837f
+    guid: 2297901f-bad0-4a2e-9fe5-24fbcb5c837f
+    title: AMD CEO Lisa Su Live on TBPN | Oliver Cameron, Mohammad Norouzi, Anjney Midha, Lisa Su
+    duration: 6295
+    published: Thu, 23 Jul 2026 14:16:09 -0700
+    published_sort: "20260723"
+    first_seen_at: 2026-07-24T04:08:19.207Z
+    url: https://share.transistor.fm/s/c0a83c4d
+    audio_url: https://media.transistor.fm/c0a83c4d/5d6ca73b.mp3
     image: https://img.transistorcdn.com/JKCXKMFC8DxrWx6hOFD_HdcDjLAqNP3rWp-35R-vubg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iYWQ5/N2FkMzQ2MGY4Zjg5/ZDczMGExMTA5NjEz/Y2MyMC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/e6decec8/transcription.txt
+    transcript_url: https://share.transistor.fm/s/c0a83c4d/transcription.txt
     transcript_type: text/plain
-    summary: "(01:52) - HackingFace\r
+    summary: "(03:31) - Oliver Cameron, co-founder and CEO of Odyssey, discusses the development of foundational world
+      models—AI systems capable of understanding physics, causality, and human behavior—to enhance various industries,
+      including robotics, gaming, and autonomous vehicles. He highlights the limitations of current AI systems, which
+      are often narrowly trained, and advocates for more generalized models that can be fine-tuned for specific tasks.
+      Cameron also emphasizes the importance of diverse data sources in training these models to ensure robustness and
+      adaptability across different applications.\r
 
-      (17:48) - 𝕏 Timeline Reactions\r
+      (21:09) - Mohammad Norouzi, CEO and co-founder of Ideogram, discusses the company's mission to enhance creativity
+      through generative AI, focusing on design and marketing applications. He highlights the challenges of achieving
+      consistency in AI-generated images, particularly for brand marketing and product design, and emphasizes the
+      importance of data sovereignty for enterprises, noting that Ideogram's compact, open-weight models can be hosted
+      on-premises to address these concerns. Norouzi also mentions Ideogram's collaboration with AMD to optimize their
+      models for AMD's hardware, tailoring model architectures to balance price, performance, and latency.\r
 
-      (29:02) - White House Puts $5B into AI Science\r
+      (31:42) - Anjney Midha is the founder of AMP PBC, an AI infrastructure startup, and a former general partner at
+      Andreessen Horowitz. In the transcript, he discusses the importance of \"output maxing\" in AI development,
+      emphasizing the need for efficient utilization of computational resources to maintain a competitive edge. He
+      highlights that only 15% of data center capacity in the U.S. is utilized, calling this underutilization a national
+      security concern, and advocates for smarter, more efficient use of existing infrastructure to stay at the
+      forefront of AI advancements.\r
 
-      (33:48) - 𝕏 Timeline Reactions\r
+      (55:12) - 𝕏 Timeline Reactions\r
 
-      (44:55) - Veeral Patel, Director of Software Engineering at Ramp, discusses the launch of Ramp Router, a tool
-      developed internally over three years to optimize AI model selection and token cost management. He explains how
-      Ramp Router allows enterprises to dynamically route tasks to the most efficient AI models, balancing factors like
-      latency, cost, and performance. Patel emphasizes that this product aligns with Ramp's mission to help companies
-      save time and money, extending their expertise from expense management to AI token spend optimization.\r
-
-      (55:35) - Lin Qiao, co-founder and CEO of Fireworks AI, announced the company's recent $1.5 billion fundraising
-      round, emphasizing their focus on building a specialized intelligence platform that enables enterprises to
-      transform private data into customized AI models optimized for speed and cost. She highlighted the industry's
-      shift from general to specialized AI solutions, stressing the importance of companies maintaining control over
-      their proprietary data to develop durable businesses. Qiao also discussed the challenges of scaling AI
-      applications efficiently, noting that without careful management, even successful products risk scaling into
-      bankruptcy due to high operational costs.\r
-
-      (01:05:36) - Jason Fried is the co-founder and CEO of 37signals, a Chicago-based software company known for
-      creating project management and communication tools like Basecamp and HEY. In the conversation, Fried discusses
-      his passion for classic cars, sharing experiences with his 1979 Porsche 928 and reflecting on past decisions
-      regarding vehicle trades. He also touches on the challenges of purchasing vintage cars through auctions,
-      emphasizing the importance of thorough inspections to avoid unforeseen issues.\r
-
-      (01:31:41) - Travis Kalanick is the co-founder and former CEO of Uber, which he helped grow into a global
-      ride-hailing giant. He now leads Atoms, an industrial robotics and “physical AI” company spanning food automation,
-      mining, and transportation, built from the parent company behind CloudKitchens.\r
-
-      (02:17:29) - Max Hodak, founder and CEO of Science Corporation, discusses the recent European marketing approval
-      for their retinal prosthesis designed to restore vision in patients with age-related macular degeneration. He
-      outlines the upcoming steps for commercialization in Europe, including country-specific registrations and surgeon
-      training, and mentions the expedited approval pathway in the U.S. through the FDA's humanitarian device exemption.
-      Hodak also highlights ongoing research and development efforts to enhance the implant's capabilities, aiming for
-      higher resolution, expanded field of view, and color perception.
+      (01:27:52) - Lisa Su, born in Taiwan and raised in the U.S., is the chair and CEO of AMD, renowned for
+      revitalizing the company since 2014. In the conversation, she highlights the rapid evolution of AI, emphasizing
+      the need for AMD to accelerate its technology roadmaps to meet market demands. Su also underscores AMD's
+      commitment to building great products through collaboration and open ecosystems, reflecting the company's culture
+      of partnership and innovation.
 
 
-      TBPN is made possible by:
-
-
-      Ramp - https://ramp.com
+      TBPN is made possible by:Ramp - https://ramp.com
 
 
       Public - https://public.com
@@ -115,7 +101,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: pending
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
