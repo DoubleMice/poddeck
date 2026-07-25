@@ -1,108 +1,15 @@
 source: unchained
-refreshed_at: 2026-07-24T18:33:01.799Z
+refreshed_at: 2026-07-25T04:06:55.527Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 77
-done: 1
+total_candidates: 75
+done: 0
 pending: 0
-needs_transcript: 75
+needs_transcript: 74
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
-  - id: c9102b14-8776-11f1-9a16-d79d4c019a55
-    guid: c9102b14-8776-11f1-9a16-d79d4c019a55
-    title: "Cobie Taking Over Base App? He's 'the Respectable Trencher': Uneasy Money"
-    duration: 4277
-    published: Fri, 24 Jul 2026 15:46:00 -0000
-    published_sort: "20260724"
-    first_seen_at: 2026-07-24T18:33:01.797Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2579459953.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2579459953.mp3
-    image: https://megaphone.imgix.net/podcasts/c9102b14-8776-11f1-9a16-d79d4c019a55/image/16100c251dc8402b82f982d8ed83822d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      An OpenAI model hacked Hugging Face to cheat its own test. Kain and Taylor break it down — plus Base’s failed
-      social bet and the North Korean IT workers still inside crypto.
-
-
-      ========================================================
-
-
-      Thank you to our sponsors!
-
-
-      ⁠⁠⁠⁠Cape⁠⁠⁠: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's
-      privacy-first mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33%
-      off your first six months at ⁠https://cape.co/unchained⁠ (use code: UNCHAINED).
-
-
-      ========================================================
-
-
-      Coinbase just handed Jesse Pollak’s Base app to Cobie, days after Pollak posted a public mea culpa admitting that
-      the onchain-social and creator-coin bet behind Base never worked.
-
-
-      Kain Warwick and Taylor Monahan trace why Base swung so hard at social instead of perps and prediction markets,
-      and argue Coinbase’s bottomless-money culture, the same one that let Google build Android on a whim, makes it
-      nearly impossible for founders to know when a bet has genuinely failed.
-
-
-      They also unpack Brian Armstrong’s memecoin profile-picture flap, arguing the outrage is almost entirely
-      manufactured by traders chasing volatility, the North Korean IT workers still quietly inside much of the crypto
-      industry, and the strangest story of the week: an unreleased OpenAI model that chained two zero-day exploits to
-      escape its test sandbox and hack Hugging Face’s benchmarking servers for the answers.
-
-
-      The episode closes on an uncomfortable question: if a model will cheat on a security test just to avoid not
-      knowing its score, what else will it break to get there?
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-      Timestamps
-
-
-      📣 01:55 Base hands its consumer app to Cobie after Jesse Pollak's mea culpa
-
-
-      🏛️ 04:56 Why Kain compares Coinbase's culture to Google's money-fueled delusion
-
-
-      📣 26:50 Cape: Get 33% off your first six months with code UNCHAINED at https://cape.co/unchained
-
-
-      🪙 28:28 Brian Armstrong's memecoin PFP sparks a very online meltdown
-
-
-      📈 32:58 Why Taylor says the backlash to Brian's memecoin is manufactured
-
-
-      🕵️ 45:15 Why nearly every sizable crypto company has quietly had a DPRK IT worker
-
-
-      💻 47:37 The hidden risk: IT workers who get hacked themselves and expose you
-
-
-      🤖 53:39 An unreleased OpenAI model hacks Hugging Face to cheat on a benchmark
-
-
-      🔓 01:00:26 Why Kain says the model's logic for gaming the test almost makes sense
-
-
-      📄 01:04:10 Hugging Face discloses the hack before OpenAI even notices
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-24T18:33:03.043Z
-    transcript_job_id: b2f52088-031e-4749-9064-c0d2f26fe71f_e565734a415d41c39df5a35064de4870,dfa48d73-573e-46a9-b6ab-f76fccd4462b_aaad8fc6eef842c491e580a9386d740d,0f8e02e2-a48a-4223-89cd-bc9219592c9f_dd9fe98af0b745e1bc4fa3d94f723017,83c9143c-1556-49b5-bee0-a35530df0dc4_aff308b1a4144f9a8363bd1a10800c9b,f1165a07-e827-4570-8c4b-424bd0a2c262_211f75adecf4498d8c1d090cc7e8bdba
-    transcript_completed_at: 2026-07-24T18:36:51.747Z
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     guid: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
@@ -3262,7 +3169,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5024,7 +4932,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -6997,112 +6906,6 @@ episodes:
       This week's good news:
 
         How Ripple is Helping Great Ormond Street Hospital Charity to Unlock Crypto Philanthropy
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: edbb2c88-0c93-11f1-86fa-1f6879deef18
-    guid: edbb2c88-0c93-11f1-86fa-1f6879deef18
-    title: "Bits + Bips: Is AI CapEx a Bubble? And Is Inflation Already Dead?"
-    duration: 4020
-    published: Wed, 18 Feb 2026 11:55:00 -0000
-    published_sort: "20260218"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1887803228.mp3?updated=1771402928
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1887803228.mp3?updated=1771402928
-    image: https://megaphone.imgix.net/podcasts/edbb2c88-0c93-11f1-86fa-1f6879deef18/image/00b4d31be7ea0b4b64305bc0d508c1c2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      The Mag 7 have committed over $700 billion to AI infrastructure, but the companies building the models may never
-      capture the value.
-
-
-      Thank you to our sponsors:
-
-
-      Adaptive Security
-
-
-      Fuse: The Energy Network
-
-
-      The BLS just quietly revised away 862,000 jobs, and real-time inflation trackers now peg price growth below 1%,
-      less than half of what official figures report.
-
-
-      If the Fed is steering monetary policy with stale data, investors need to ask what else the models are getting
-      wrong.
-
-
-      At the same time, the Mag 7 have committed more than $700 billion to AI infrastructure, with Anthropic alone
-      projecting $1 trillion in revenue within five years. Is that conviction or the early stages of a debt cycle nobody
-      is pricing?
-
-
-      And then there is the institutional side of crypto: BlackRock's BUIDL fund just landed on Uniswap with $2.4
-      billion in assets, Apollo acquired $90 million in Morpho tokens, and AI agents are already settling micropayments
-      in stablecoins.
-
-
-      Austin Campbell, Ram Ahluwalia, and Christopher Perkins sit down with Truflation’s CEO Stefan Rust to ask whether
-      the numbers we trust are telling us the truth.
-
-
-      Hosts:
-
-
-      ⁠Ram Ahluwalia⁠, CFA, CEO and Founder of Lumida
-
-
-      ⁠Austin Campbell⁠, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
-
-
-      ⁠Christopher Perkins⁠, Managing Partner and President of CoinFund
-
-
-      Guest:
-
-
-      Stefan Rust, Founder and CEO of Truflation
-
-
-      Links:
-
-
-      Unchained:
-
-
-      BlackRock Just Chose Uniswap. The Market Didn’t Care. Here’s Why.
-
-
-      Apollo Moves Into DeFi Lending With Morpho Token Deal
-
-
-      UNI Spikes on BlackRock DeFi Move, Then Gives It All Back
-
-
-      Macro:
-
-
-      NBC: U.S. had almost no job growth in 2025
-
-
-      PBS: Inflation measure falls to nearly five-year low as gas prices fall and housing costs cool
-
-
-      Crowdfund Insider: Secretary Of The Treasury Scott Bessent Calls Out Truflation's Inflation Numbers At Senate
-      Banking Hearing
-
-
-      AI CapEx:
-
-
-      Amazon, Google And Others Are Pouring $700 Billion Into AI CapEx, Top Analyst Explains Why This Makes It 'Hard' To
-      Bet Against Nvidia
-
-
-      CIO: Data center capex to hit $1.7 trillion by 2030 due to AI boom
-
-        Reuters: OpenClaw founder Steinberger joins OpenAI, open-source bot becomes foundation
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
