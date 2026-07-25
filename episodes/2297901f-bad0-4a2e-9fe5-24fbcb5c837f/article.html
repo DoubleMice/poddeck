@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMD CEO Lisa Su 在 TBPN：从 Advancing AI 2026 看芯片、世界模型与算力效率</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 0;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  .meta {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  .meta span { margin: 0 8px; }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    color: #1e3a5f;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: #374151;
+  }
+  p {
+    margin: 12px 0;
+  }
+  .overview-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-left: 4px solid #3b82f6;
+    background: #eff6ff;
+    font-style: italic;
+    font-size: 17px;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote .attr {
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+  .quotes-section {
+    margin: 20px 0;
+  }
+  .quote-item {
+    padding: 14px 18px;
+    margin: 10px 0;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 8px 8px 0;
+    background: #f8fafc;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .quote-item .attr {
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    color: #6b7280;
+    margin-top: 4px;
+  }
+  .quote-blue { border-left-color: #3b82f6; background: #eff6ff; }
+  .quote-green { border-left-color: #22c55e; background: #f0fdf4; }
+  .quote-orange { border-left-color: #f97316; background: #fff7ed; }
+  .quote-purple { border-left-color: #a855f7; background: #faf5ff; }
+  .quote-yellow { border-left-color: #eab308; background: #fefce8; }
+  .quote-red { border-left-color: #ef4444; background: #fef2f2; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 2px solid #e5e7eb;
+    text-align: center;
+    font-size: 14px;
+    color: #9ca3af;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .note {
+    font-size: 13px;
+    color: #9ca3af;
+    font-style: italic;
+  }
+  @media (max-width: 600px) {
+    article { padding: 20px 16px 40px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    .overview-cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>AMD CEO Lisa Su 在 TBPN：从 Advancing AI 2026 看芯片、世界模型与算力效率</h1>
+  <div class="meta">
+    TBPN 直播 · AMD Advancing AI 现场 · 2026年7月
+    <br/>
+    嘉宾：Lisa Su（AMD CEO）、Oliver Cameron（Odyssey）、Mohammad Norouzi（Ideogram）、Anjney Midha（AMP）、Seth Cohen（Mavria）
+  </div>
+</header>
+
+<h2>为什么这期特别</h2>
+
+<div class="overview-cards">
+  <div class="card card-blue">
+    <strong>AMD × Anthropic</strong>
+    50 亿美元、2GW 的芯片合作协议，标志着 AMD 在 AI 训练领域的重大突破
+  </div>
+  <div class="card card-green">
+    <strong>Helios + MI450</strong>
+    AMD 发布新一代机架级 AI 系统，重塑数据中心竞争格局
+  </div>
+  <div class="card card-orange">
+    <strong>世界模型崛起</strong>
+    Odyssey 的 Oliver Cameron 解析世界模型如何成为 AI 的"无限训练环境"
+  </div>
+  <div class="card card-red">
+    <strong>Output Maxing</strong>
+    AMP 的 Anjney Midha 揭示美国数据中心仅 15% 算力被利用的危机
+  </div>
+  <div class="card card-purple">
+    <strong>RL 验证飞轮</strong>
+    从代码到室温超导：强化学习的物理验证闭环正在改变科学发现
+  </div>
+  <div class="card card-yellow">
+    <strong>核能复兴</strong>
+    核废料中还有 97% 的能量——AI 基础设施的能源瓶颈正在被打破
+  </div>
+</div>
+
+<h2>Lisa Su：12 年转型之路</h2>
+
+<p>TBPN 在 AMD Advancing AI 2026 大会现场直播。当 Lisa Su 走上舞台时，她代表的是一个与 2014 年截然不同的 AMD。十二年前，AMD 市场份额低迷、产品路线图不明朗、行业普遍宣称"CPU 已死，GPU 将接管一切"。而今天，AMD 带着 EPYC CPU、Instinct GPU、Xilinx 自适应计算和 Helios 机架系统站在 AI 时代的中心。</p>
+
+<p>Lisa Su 回顾这段历程时坦言，半导体行业每两年就会经历一次技术趋势、客户需求和市场格局的根本变化——"这行永远不会让你感到无聊。"但她承认，AI 时代的节奏比以往任何时候都快，"速率和节奏的变化实际上要快得多。我们从 '我们得再快一点' 变成了 '我们得更快'。"</p>
+
+<p>在半导体行业，决策需要提前三到五年做出。Lisa Su 说： "你意识到，天哪，我们甚至可以更快。这就是市场想要的。"</p>
+
+<blockquote>
+"我们的第一信条就是打造伟大的产品。"
+<span class="attr">— Lisa Su，AMD CEO</span>
+</blockquote>
+
+<p>Lisa Su 将 AMD 的企业文化定义为三个关键词：合作、开放生态、为每个工作负载选择最佳计算引擎。她特别强调"一加一大于三"的理念——"合作伙伴不只是一个词，它是 AMD 的根基。"</p>
+
+<h2>Advancing AI 2026：AMD 的三大发布</h2>
+
+<p>AMD 在本次大会上发布了三个关键产品与合作，标志着公司从芯片供应商向全栈 AI 基础设施平台的战略转型。</p>
+
+<p><strong>Helios 机架系统</strong>搭载 MI450 加速器，将 AMD 的 CPU、GPU 和网络整合为一个完整的数据中心解决方案。这不仅是芯片层面的竞争，更是系统级的角逐——Lisa Su 反复强调，"没有一刀切的解决方案，这个世界是异构的。"</p>
+
+<p><strong>AMD × Anthropic 合作</strong>是本次大会最受关注的消息：高达 2GW 的 MI450 部署协议，价值约 50 亿美元。Anthropic 将 AMD 芯片用于 Claude 的全栈训练与推理。AMP 的 Anjney Midha 在节目中这样评价："Anthropic 从五年前起步到今天超过 400 亿美元的年化收入——大部分收入来自 Claude Code 的日常用户。这不是循环交易，这是新价值创造。"</p>
+
+<p><strong>AMD × Cerebras 推理合作</strong>推出解耦式推理方案，将推理管线的不同阶段搭配最合适的计算引擎。"这正是 Agentic AI 一直在等待的"，当 AI Agent 需要持续思考和行动时，推理延迟和吞吐量成为了硬约束。</p>
+
+<h2>Anthropic 用 Claude 自动适配了 MI355：一个标志性的故事</h2>
+
+<p>Lisa Su 在节目中分享了一个让她印象深刻的故事。几个月前，她的团队告诉她 Anthropic 已经在 MI355 上跑起来了。当她问团队需要什么帮助时，得到的回答是：</p>
+
+<blockquote>
+"Lisa，他们不太需要我们的帮助。他们不太需要我们帮忙。他们用 Claude 自己就搞定了。"
+<span class="attr">— Lisa Su 转述团队报告</span>
+</blockquote>
+
+<p>这个故事的意义远超出一次芯片适配。传统上，新硬件适配需要芯片厂商投入大量工程师与客户联合调试。Anthropic 使用 Claude 自动完成从 CUDA 到 ROCm 的代码迁移和优化——这意味着 AI 本身正在消除软件生态的迁移壁垒。</p>
+
+<p>Lisa Su 对此的总结是："我深信 AI 是一种不可思议的力量倍增器。这是对所有行业都适用的，但对我们这个行业尤其如此。"如果能用 AI 把芯片开发周期缩短三到六个月，"对客户的价值是巨大的"。她转述 OpenAI 的 Sachin 对她说的话： "more compute faster"——这是她经常听到的客户声音。</p>
+
+<h2>异构计算的哲学：为什么 CPU、GPU、FPGA 缺一不可</h2>
+
+<p>从 Lisa Su 接任 CEO 至今，一直有人说她应该聚焦——要么做 CPU，要么做 GPU。她的回应贯穿了整个采访：</p>
+
+<blockquote>
+"这个世界是异构的——你就是你，我就是我，我们的工作负载各不相同。没有一刀切的解决方案。"
+<span class="attr">— Lisa Su，AMD CEO</span>
+</blockquote>
+
+<p>AMD 的并购策略——Xilinx（自适应计算）、Pensando（DPU）、ZT Systems（系统设计）——正是为了打通从芯片到机架的完整技术栈。Lisa Su 说："以前人们只做软件创业，因为硬件太难了。现在虽然也不容易，但资本和人才在涌入。"她欢迎新一代硬件创业公司，"AMD 的心态是开放接受新想法的。"</p>
+
+<h2>本地 AI：AI PC 和物理 AI 的下一个战场</h2>
+
+<p>Lisa Su 对本地 AI 下了重注。Ryzen AI Max 系列专为本地 AI 推理优化，她在节目中说： "本地 AI 将是释放全部 token 需求的关键推动力之一。"她认为，隐私、低延迟、离线可用是云端无法完全替代的优势。</p>
+
+<p>与此同时，AMD 在 Advancing AI 上发布了小型机器人开发板，让开发者和初创公司能够低成本实验。"低门槛的进入方式——我想让人们体验 AMD，并拥有出色的体验。他们最终可能会进入最大的前沿模型公司——或者大量做惊人技术的初创公司。"</p>
+
+<h2>世界模型的 GPT-2 时刻</h2>
+
+<p>Odyssey 的 CEO Oliver Cameron 曾在 Cruise 从事自动驾驶研究，现在他将世界模型定义为 GPT-2 阶段的基础设施——一种可以应用于机器人、科学、游戏和自动驾驶的通用技术。Odyssey 已成立三年，募集资金 3.1 亿美元。</p>
+
+<blockquote>
+"如果你想训练一个能解决 IMO 级别数学题的模型，你不会把哈利·波特从训练数据里删掉——你需要哈利·波特才能解数学题。"
+<span class="attr">— Oliver Cameron，Odyssey CEO</span>
+</blockquote>
+
+<p>Oliver 用这个比喻解释世界模型的泛化逻辑：传统自动驾驶只用道路视角的数据训练——"戴着遮眼罩"看世界。而世界模型从一切可能的视觉数据中学习（视频游戏、电影、手机拍摄），建立对物理规律和因果关系的深层理解，最后一步才用驾驶数据微调。基础越宽泛，系统越鲁棒。</p>
+
+<p>他认为世界模型和语言模型是互补的两种技术：LLM 擅长代码和写作，世界模型擅长操作物理或虚拟世界。二者的交汇点在于——世界模型可以成为 LLM 的"无限训练环境"，一种持续进化、永不固定的模拟器。这与 DeepMind 的 AlphaStar 形成鲜明对比：AlphaStar 在《星际争霸》的固定环境中训练，环境不进化，智能体的能力就有天花板。</p>
+
+<h2>自动驾驶的国家安全维度</h2>
+
+<blockquote>
+"我有两个孩子。今天儿童死亡的首要原因仍然是车祸。我们已经有这样的技术了——我可以走出这里，完全无人驾驶地回到 40 英里外的家。不强制推广无人驾驶技术，现在已经近乎于一种国家危机。"
+<span class="attr">— Oliver Cameron</span>
+</blockquote>
+
+<p>Oliver 认为消费者口碑效应正在让 Tesla 积累难以追赶的优势。他预测到 2030 年之前，会有公司能向 Honda 等 OEM 提供可立即部署的无人驾驶方案——真正的瓶颈不是技术，而是汽车制造商是否愿意放弃自研。"他们自己阻碍了自己。"</p>
+
+<h2>Ideogram：从图像生成到企业设计生成</h2>
+
+<p>Ideogram 的 CEO Mohammad Norouzi 曾是 Google 图像生成品牌 Imagine 的创建者。他将 Ideogram 的使命定位在企业设计营销的 AI 基础设施上。当被问到图像生成是否已经"足够好"时，他回答：即使是照片级真实也不够——品牌还需要一致性（logo 必须 100% 准确）、排版可控（跨语言）、产品摄影级别的精度。</p>
+
+<p>企业客户的三个核心需求：数据主权（下一代汽车、国防设计不能放在公有云上）、开放权重（Ideogram 最新模型是前沿级紧凑模型，可在企业内部部署）、以及一致性（Mohammad 认为"接下来几个月就能解决"）。</p>
+
+<p>谈到与 AMD 的合作，Mohammad 分享了从 MI300 早期样品测试到 MI450 正式部署的历程： "有了 AI Agent，把架构给它然后优化到芯片上变得非常容易。"AMD 的路线图直接影响着 Ideogram 的产品规划——前沿 AI 公司普遍从芯片规格反向推导模型架构。</p>
+
+<h2>Output Maxing：效率即国家安全</h2>
+
+<p>AMP 的合伙人 Anjney Midha 是本期节目中最有冲击力的声音。他提出了一个尖锐的概念——"Output Maxing"，与行业中普遍的"Token Maxing"形成直接对比。</p>
+
+<blockquote>
+"AMP 的品牌就是 Output Maxing。这个行业有太多浪费——没有人以效率最优的方式在做输出最大化。"
+<span class="attr">— Anjney Midha，AMP 合伙人</span>
+</blockquote>
+
+<p>他给出的数字触目惊心：在美国的单租户数据中心中，每花一美元的长期租赁费，首先有约 40% 的 FLOPS 在调度中损失（节点根本没在运行），然后在芯片内部只有约 15% 的模型 FLOPS 利用率——芯片在等待存储、网络或其他芯片完成工作。两层叠加，每花一美元，只有 15 美分的算力真正投入使用。</p>
+
+<blockquote>
+"每一美元，只有 15% 的 FLOPS 真正被利用。另外 85%——那是国家安全危机。"
+<span class="attr">— Anjney Midha</span>
+</blockquote>
+
+<p>供应链积压了两年，新容量要到 2030 年才能上线。Anjney 认为美国不能跟中国比纯规模——"你不能在纯规模上打败中国。"中国的工业级协调能力、无审批障碍、十年内至少新增 100GW 能源（"甚至不会眨一下眼"）——这些都是结构性优势。DeepSeek 仅凭约 20,000 个 Hopper 等效 GPU 就做到了前沿，而梁文锋在四小时的投资者电话中明确表示"不是一家只关注利润的公司"。</p>
+
+<p>Anjney 的核心论点是：美国必须靠效率取胜。将利用率从 15% 提升到 40%、60%，每一个百分点都释放出巨大的算力。Anthropic 约 5000 人的团队就创造了超过 Google 约 60,000 人的前沿创新产出——"Google 至今还没推出一个 Anthropic 级别的编程模型，尽管他们在尽最大努力。"</p>
+
+<h2>RL 验证飞轮：从代码到室温超导</h2>
+
+<blockquote>
+"RL 就像训练狗——'好孩子，去捡球。做对了？给奖励。'这个算法就这么简单，但它就是有效。"
+<span class="attr">— Anjney Midha</span>
+</blockquote>
+
+<p>Anjney 认为强化学习是"持续馈赠的礼物"。两年前奖励建模还是手工工艺，现在已进入工业级可重复的 RL-as-a-Service。只要能做到形式化验证（如代码的单元测试），再加上 RL，就会看到能力跃升——这是为什么代码领域进展最快的原因。</p>
+
+<p>但更令人激动的应用在科学领域。AMP 的投资组合公司 Periodic Labs 正在 Menlo Park 的 40,000 平方英尺实验室中将 RL 飞轮应用于材料科学——AI 模型预测新材料、机器人合成、X 射线衍射验证物理性质。因为验证信号来自物理世界本身，这是最干净的形式化验证。他们正在尝试发现室温超导体，过去六个月的进展被 Anjney 形容为"非凡"。</p>
+
+<h2>核废料：被误解的资产</h2>
+
+<p>Seth Cohen 是 Mavria Inc. 的联合创始人，此前曾任美国能源部核政策首席顾问以及核监管委员会的高级顾问。他分享了一个令人震惊的数据：</p>
+
+<blockquote>
+"反应堆外燃料棒上储存的能量，是沙特阿拉伯已探明石油储量的四倍。"
+<span class="attr">— Seth Cohen，Mavria Inc.</span>
+</blockquote>
+
+<p>约 97% 的潜在能量仍残留在所谓的"废"燃料棒中。而美国商用反应堆整个寿命周期产生的所有废料，只需要一个足球场大小的地方存放。Seth 指出，关于核废料的恐惧很大程度上来自《辛普森一家》——"我见过废燃料棒的蓝色辉光，那其实非常酷。但没有绿色粘液。"</p>
+
+<p>Seth 和他的团队成功推动了一场叙事转变：从把核废料视为负债，转变为将其视为资产。27 位州长申请了"核生命周期园区"项目，Tennessee 等多个州已公开申请。"这是叙事转变成功的标志。"</p>
+
+<p>对于 AI 行业而言，数据中心正面临巨大的电力供应压力——能源是 AI 部署的第一个瓶颈。Seth 认为数据中心是"关键国家资产"，必须加速核能部署以确保美国在 AI 领域的竞争力。</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes-section">
+
+<div class="quote-item quote-blue">
+"我们的第一信条就是打造伟大的产品。"
+<span class="attr">— Lisa Su，AMD CEO</span>
+</div>
+
+<div class="quote-item quote-green">
+"他们不需要我们的帮助——他们用 Claude 自己就搞定了。"
+<span class="attr">— Lisa Su 讲述 Anthropic 用 AI 自动适配 MI355</span>
+</div>
+
+<div class="quote-item quote-orange">
+"每一美元，只有 15% 的 FLOPS 真正被利用。那 85% 是国家安全危机。"
+<span class="attr">— Anjney Midha，AMP</span>
+</div>
+
+<div class="quote-item quote-purple">
+"你需要哈利·波特才能解数学题。"
+<span class="attr">— Oliver Cameron 解释世界模型的泛化逻辑</span>
+</div>
+
+<div class="quote-item quote-yellow">
+"反应堆外燃料棒上的能量，是沙特阿拉伯已探明石油储量的四倍。"
+<span class="attr">— Seth Cohen，Mavria</span>
+</div>
+
+<div class="quote-item quote-red">
+"你不能在纯规模上打败中国——我们必须更聪明。"
+<span class="attr">— Anjney Midha</span>
+</div>
+
+</div>
+
+<footer>
+  <p>完整节目请访问 <a href="https://share.transistor.fm/s/c0a83c4d">TBPN 原节目链接</a></p>
+  <p class="note">本文基于 TBPN 2026年7月23日直播节目整理。所有引言均经原文验证。</p>
+</footer>
+
+</article>
+</body>
+</html>

@@ -1,0 +1,930 @@
+Speaker 1: You're watching TBPN. Today is Thursday, 07/23/2026. Jordy is wearing
+Speaker 2: a bandana.
+Speaker 1: What corporate logo is on that bandana touring?
+Speaker 3: Lab here.
+Speaker 1: With AMD Advanced Micro Devices. Yeah. Beautiful. Thank you to the team for hosting us. Thank you to the AMD team for having us here at AMD Advancing AI.
+We're on the road at SF today. We have a bunch of great guests for you. Lisa Su's joining in about ninety minutes. But let's you take you through a little bit of the news of what AMD is announcing, what's happening today. So Great.
+Lisa, of course, will be joining us at 01:30PM. We have Oliver Cameron from Odyssey, Mohammad from Ideogram, and Anjney from AMP coming back to the show for round two. Round two or round three? We've probably talked to a few times. It might be the third time.
+Advancing AI is AMD's biggest AI event of the year where it reveals new chips, software partnerships, and how it plans to compete with NVIDIA according to Jackson
+Speaker 4: Fordyce Fun to be
+Speaker 1: new newsletter.
+Speaker 3: We just found this out this morning. AMD is actually powering the new
+Speaker 1: The Mod Retro n 64.
+Speaker 3: Very cool.
+Speaker 1: It's very yeah. Very
+Speaker 3: crossover, Palmer, Lisa.
+Speaker 1: Yeah. So we're gonna be spending all thirty minutes of our time with Lisa Su on gaming specifically. Exactly. How is how are they gonna
+Speaker 3: And bring suits.
+Speaker 1: And suits. Yes.
+Speaker 2: And suits.
+Speaker 1: A suit collection.
+Speaker 3: Got a fantastic suit on today. So
+Speaker 1: the three key stories that people are focused on out of AMD advancing AI Our AMD unveil unveils Helios, the new rack scale AI system powered by the m I four fifty accelerator. We'll talk to Lisa about that. Also, a new partnership with the Frontier Lab. AMD and Anthropic are partnering to deploy up to two gigawatts of AMD Instinct m I four fifties.
+Speaker 3: Size Gong.
+Speaker 1: Size Gong. $5,000,000,000 deal,
+Speaker 3: and a whole bunch of claw, a whole bunch of collaboration across
+Speaker 1: compute and the software stack. The big question around the software ecosystem around AMD is always a hot topic. I'm sure there's a ton of developments there.
+Speaker 3: Just a little bit ago, they were talking about how Anthropic's own models are effectively speeding up their ability to ramp up new hardware
+Speaker 1: Yep.
+Speaker 3: Which is something that has been talked about for years now. Some questions around Yeah. The CUDA mode. Yes. Right?
+If you assume that making great software will just get easier and easier Yep. That that's been a big question. Yeah. And they're starting to see real movement there.
+Speaker 1: Yeah. But also a lot of that speed up requires actual deep partnership like this because there are some closed source packages that you might need to you might need to work on. This is the old George Hotts interaction.
+Speaker 3: Yep.
+Speaker 1: Talking about little bugs that he was frustrated with, wound up working with AMD developer team, who we've talked to on the team on the show. Fantastic outcome there, but interesting, to see that flywheel just get tighter and tighter and tighter, and I expect it will. Also, AMD is expanding its partnership with Cerebras teaming up on AI inference. We love the team over at Cerebras. They introduced a powerful disaggregated inference solution pairing the right engine to each phase of the inference pipeline.
+This is what agentic I AI has been waiting for. The fastest production inference at massive scale. So, excited to talk about that as well. But, our first guest is here, Oliver Cameron from Odyssey. I have a whole bunch of fun backstory.
+You can come on down.
+Speaker 3: Here he is.
+Speaker 1: I first met Oliver almost five years ago. You were working at Cruise doing easy stuff, self driving cars. Easy. And you took a ton of time to talk to me and walk me through exactly how you were thinking about self driving. You explained a lot of different stuff to me about what what's being done in machine learning, what's being done with c plus plus Very excited to have you back on the show.
+How are things going?
+Speaker 2: Things are going great. Thank you so much for having
+Speaker 1: me. Yes.
+Speaker 3: Great to have you.
+Speaker 1: Congratulations on the massive progress. Last round was, what, 300 something billion? A million? A million raised? It's gonna be billion next billion.
+Speaker 4: Yeah. 310,000,000.
+Speaker 1: 310,000,000. Yes. Fantastic. And and where is the product right now? Like, are you describing?
+How much is in the research phase? How much are you ready to deploy this with early adopters? How are you thinking about that?
+Speaker 2: We are in the GPT two phase Okay. Of world models. Yeah. And what we're building is foundational world models. Mhmm.
+The idea being that this is a technology that can be useful and applicable to tons of different industries, whether that's, for example, robotics or science or gaming or driverless cars. Yeah. And so we've been on this journey now for three years.
+Speaker 1: Is there still a market in self driving cars? Because it feels like the world models a lot of that research was done at Cruise and Waymo and Tesla, and that was where I was first introduced to them. I was like, oh, they built a video game version of San Francisco, and of course they're training it there. Is there a world where you wind up powering future self driving initiatives and autonomy initiatives?
+Speaker 2: I think so. I think world models can power all sorts of virtual and physical systems. Mhmm. The virtual systems might be gaming for example, Might be education. And then the physical systems will be driverless cars, robotics, drones, all that sort of stuff.
+Sure. What I believe is that driverless cars today and lots of automated systems look very much like NLP systems in the twenty tens.
+Speaker 5: Mhmm.
+Speaker 2: They are these very complex, very hand tuned systems. They're intelligent, but they're intelligent in sort of isolated ways. Yep. And that those systems hold back what these technologies can do. And so I think you can replace these very hand tuned driverless car systems with a single world model that has this very deep understanding of physics, of cause and effect, of human behaviors, and just lightly tune that world model to the task of driving.
+Yep. What we're seeing early evidence of is that you can indeed do that. Mhmm. You can take these very big general world models, tune them with just a few hours of experience, and then the car drives itself.
+Speaker 4: Pretty cool.
+Speaker 2: How much What
+Speaker 3: are what are your interactions and relationships, partnerships look like with various types of robotics companies? So think of like, if someone's building a humanoid or we we were talking with Travis Kalanick yesterday doing autonomy and mining. So like, what what does an Odyssey relationship look like with those companies today?
+Speaker 2: Absolutely. So we very much believe that the robot companies are customers of us. We provide that base intelligence. They then have their robot, their embodiment, their task, and they can take that base intelligence and tune their model to make that task amazing. Mhmm.
+What we see earlier evidence of is that using a world model versus a vision language action model, the number of examples you need to show the world model is dramatically less than a vision language action model. Which means it's just much more adaptable to the world
+Speaker 1: Sure.
+Speaker 2: Than a vision language action model.
+Speaker 3: Makes sense.
+Speaker 1: Talk about data right now. A lot of these world model systems, it feels like they were bootstrapped on Unreal Engine systems or just video game systems generally. I imagine that the amount of data that's getting poured in the pot and mixed together is huge at this point. But what are some of, like, the power law data sources generally that are useful in building world models?
+Speaker 2: Yes. So I I'll get to the point eventually, promise.
+Speaker 1: Yeah. Take your time.
+Speaker 2: So what I observed in driverless cars
+Speaker 1: Yeah.
+Speaker 2: And we've seen in robotics, is that you typically train those systems on very narrow data distributions. Right? So you're a driverless car company. You collect lots of
+Speaker 1: data from the road. Dash cams, basically.
+Speaker 2: Dash cams.
+Speaker 1: But also cameras around the car. Exactly. We've all seen the street view cars.
+Speaker 2: Exactly. And you're really teaching the car just from the perspective of a car. Right? It's it's solely seeing what cars see.
+Speaker 1: Let's get the blinders on.
+Speaker 2: What what those cars don't see in training Yeah. Is video games or is inside a conference or in an office or in a home or just the multitude of scenarios that exist in the world. And what we very much believe is that a world model shouldn't learn from a narrow distribution of the world Yeah. Like a series of driving examples or robot examples. It should be that you learn from every possible thing that could exist in the world.
+And then you tune the model to the task of driving. So you have a base that's just very general, and then you provide driverless car data at the very last step. And so really, our belief is that that will produce a more robust, more intelligent system than these very narrowly trained models.
+Speaker 1: I love that. Makes sense. Completely tracks with the GPT two, GPT three progression and language models. There was no point when people said, oh, well, we really wanna solve IMO level math. So Yes.
+Let's get rid of all the fiction. No. It was always include everything. Right?
+Speaker 2: Exactly. You need Harry Potter to, solve math problems.
+Speaker 1: Hilarious. Exactly. Very odd scenario, but it is true. Absolutely. I'm interested in, the more expensive pieces of data that I could imagine you'll be acquiring in six months, maybe a year, maybe five years.
+I don't know. But we've heard about data labelers making 7 figures, creating RL environments for very specific tasks, very niche use cases.
+Speaker 3: Just 7?
+Speaker 1: Yeah. I mean, it's gonna be 8 next next month, next quarter. But, but but truly, like, the idea that, the data labeling that went into early driverless cars, but also early reinforcement learning, human feedback on text LLMs was just, is this acceptable? Yep. Is this readable?
+Does this have typos? And now it's, does this actually track to case law, or does this look like a financial model that I could turn in at an investment bank? What is the world model equivalent of that? Can you imagine what that will look like?
+Speaker 2: I can. So I think if you look at AlphaStar, which was DeepMind's training of agents inside Starcraft to then beat Starcraft players, which was incredible. Yeah. Really what you had was agents learning inside this environment that doesn't update or improve. Starcraft is Starcraft.
+Mhmm. The agents then have a ceiling on their performance because it's always Starcraft that they're learning with them. Yeah. And so I think what world models really promise is the ability to be a learning environment that's continuously improving and adapting
+Speaker 3: Mhmm.
+Speaker 2: To the agent's intelligence. So for example, an agent should be able to learn within a world model that is consistently improving over time. It's getting more robust. It's getting more diverse. There's more scenarios.
+And so the agent's intelligence being trained inside that world model should also get more robust Yes.
+Speaker 3: More intelligent. Fascinating because, yeah, training a model to win at a video game is one thing, but the real world is never fixed in place the way a video game is.
+Speaker 4: Right? Exactly.
+Speaker 2: Yes. And a a world model really can be thought of as this sort of infinite infinite simulation. Right? It's continuously generating new types of environment that the RL agent can explore and adapt to and fight within and all these these cool things. And so I think actually one of the the key or the killer applications of world models will be a learning environment for AIs.
+Language models, other types of AIs can all learn within world models. Gets very much Philosophical. Phil, exactly.
+Speaker 1: Yes. Staying on philosophy. If there are there are many, many labs that have made the bet that text is the universal interface, scale, and maybe coding software only singularity. There's a number of different buzzwords to sort of define this idea that, like, LLMs are on the path. Then you have the folks who are arguing that everything from LLMs are a dead end to deep learning's a deep end, dead end, blah blah blah.
+But what I'm interested in is your if you're looking at there's clearly progress going on in text based, code based LLMs that feels like a path to something called AGI. Maybe that happened two years ago. Maybe it's happening two years from now, but it feels like there's a trajectory there. Are world models, like, the next step? Is it a separate curve?
+Will they come together and work together to produce whatever the next the next, paradigm is? How do these two technologies and, like, paths converge or diverge on the tech tree?
+Speaker 2: One slight tangent is one of those critics for language models Yes.
+Speaker 3: Gary Marcus.
+Speaker 1: Yes. I wasn't gonna call him out by name, but, yeah, you're too.
+Speaker 2: Me and him and many others in driverless cars have been bickering for
+Speaker 1: Oh, yeah. Because he's driving he's an Uber guy. I forgot.
+Speaker 2: Well, before language models were the debate, it was all about driverless cars and when they would come to market. Is it 2050? Is it 2040? It's like, no. It's just gonna happen much sooner.
+Yeah. Yeah. Conveniently, he's now moved on from that being the debate. But anyways, so my my belief is that language models there
+Speaker 3: was some new cope yesterday as well that I was seeing that maybe I couldn't bring up.
+Speaker 1: Fush cope? Okay. Anyway, that's good.
+Speaker 3: My belief The cope is evolving almost as basically as fast
+Speaker 1: Fast takeoff as
+Speaker 3: the models themselves.
+Speaker 1: Okay. Yeah.
+Speaker 2: Yeah. That makes sense. That's the frustrating thing. The goalpost is just moving, moving, moving. We have Yeah.
+We
+Speaker 1: have goalpost that we move around the studio because there's always a new goal Exactly. New goal.
+Speaker 2: It's ridiculous.
+Speaker 1: But that's the that's what makes it fun. Would be boring if we breached the goal and we were done. That's We wanna keep building.
+Speaker 2: That is true. And so what I very much believe is that language models are gonna continue on the trajectory. They're exceptional technologies. Yeah. They will lead to a form of super intelligence that's amazing.
+Yeah. Changes the world, of
+Speaker 5: course. Yeah.
+Speaker 2: What I believe they learn from though primarily is a sort of biased representation of the world. Mhmm. And it's our writing of the world. Yeah. And it's also a remarkably, I think, inefficient representation of the world.
+If you were to describe what's going on here in text, imagine everything, every detail was somehow describable by text. Yeah. How long would that representation be? It'd be huge. Right?
+Speaker 1: Yeah.
+Speaker 2: As I pull out my phone, I capture two, three seconds. I've captured so much detail of humans intermingling and everything. So I very much believe that they are almost distinct, somewhat complementary technologies.
+Speaker 4: Yeah.
+Speaker 2: There'll be cases like coding. Incredible for language models. I don't think world models will play in that market too much. Yeah. And creative writing and many other emails and things like that, amazing for language models.
+World models, I think, will play this role of operating within either virtual or physical worlds. And that those will be just distinct applications. It A world model will prove to be a better driver of a car than a language model. A world model will prove to be a better operator of a robot than a language model, flyer of a drone, creator of a video game Mhmm. Educational experiences even.
+I think they'll prove to be distinct. I do think there is a convergence somewhat of the the learning environment thing I mentioned, that world models will serve as this universe for language models to learn with them. Yeah. And that's maybe where it converges at some point.
+Speaker 3: Selfish question Please. On autonomous driving. How do you see the market evolving from here? I've been having recently where people are buying buying Teslas, not specifically because they want a Tesla, but because they want the autonomous functionality. And I feel like a lot of the manufacturers are in a lot more trouble than maybe they even realize Absolutely.
+Because there's plenty of drivers today where if you have a maybe ten, twenty minute commute daily, you're not really thinking about how do I solve this problem. But for people that are driving any longer than that, it's starting to be like top of mind. That's like the number one factor. How how do you see this evolving? Is it gonna be like language models and that there's a bunch of different providers with like pretty good autonomous driving?
+We're not seeing it quite yet. I think you can see, you know, the It's two
+Speaker 1: wildly different companies that are both exceptional. Right?
+Speaker 3: Right.
+Speaker 1: Yeah. I mean, right now you have Waymo Tesla. And Tesla. Yeah. And And Waymo
+Speaker 3: and then But there's bunch of
+Speaker 1: like wildly different Tertiary players. Yeah.
+Speaker 2: So I see it going something like this, which is that firstly, consumers' word-of-mouth matters. And as many people are now trying Teslas, it's going to become almost insurmountable for many of car companies to compete with just how good a Tesla is. Yeah. Yeah. All things.
+Yeah. Not just driverless car driverless functionality. And so I I think we'll see the continued sort of attrition in the smaller car brands converging into to Tesla. That's one thing. Second thing is I think it's becoming almost what's right word here?
+Like a national crisis to not enforce driverless technology. Yep. I have two kids and it's today, still the leading cause of childhood death is car crashes. And the idea that we have this technology now where I can literally walk out here and be driven fully driverlessly
+Speaker 1: Yeah.
+Speaker 2: Back to my house, like, 40 miles away.
+Speaker 1: But can you can you put on a sympathetic hat and try and have some empathy for the ambulance chasers? Yeah. The trial lawyers. The trial lawyers.
+Speaker 2: They are people too.
+Speaker 1: What are you I mean, yeah. You have to no. Think of I didn't
+Speaker 3: know where that was going.
+Speaker 1: Tay coming back to diffusion and self driving, I want to go back to that idea of a 2050 prediction. It it sounds ridiculous because you can walk out on the street and see one driving around San Francisco. But if you rephrase the question on driverless cars to a billion Mhmm. Driverless cars, full diffusion such that there are you know, like, they make themselves available everywhere over the world. It's the dominant vehicle pattern.
+That actually does take time. It's more of an industrial process than a technology breakthrough. How are you processing diffusion of AI tools, LLMs? And will world models follow the same trajectory as LLM diffusion, which is really fast? Everyone uses them for everything, they haven't taken all the jobs.
+And we're sort of in this interim thing where it's amazing, but it's additive, and it was sort of unexpected to everyone, both the people that were like, it's fake, and both the people that were like, it's God. You know? It's like, we kinda get the middle case. Right. It's just like, okay, things are going well.
+Keep building.
+Speaker 2: I I so specific to world models, I think that there'll be a very similar sharp progression of adoption that we've seen with language models. Yeah. There'll be some killer applications that become very clear very soon.
+Speaker 1: Yeah.
+Speaker 2: Yeah. The The idea that you could type a prompt and get out a triple a level game Incredible. Doesn't seem crazy to me. Multiplayer games too. The idea that you could have generally capable robots Yep.
+In your house and offices and everything else
+Speaker 1: Yeah.
+Speaker 2: Yeah. Enabled by these models becomes clear. Yeah. And then, yes, driverless technologies and many others. And so, yeah, I I think as what becomes the thing I always lent on in driverless cars Yeah.
+Is even if you didn't believe in the technology, you just have to look at the volume of people and the smarts of the researchers behind it and how much dollars was going into investing in that category
+Speaker 1: Yep.
+Speaker 2: To assume it's gonna get figured out at some point. Right? Yeah. It's not an impossibility that we'll have driverless cars. And so you put enough smart people behind it, it's gonna get done.
+And I I I think the same with humanoids, for example. Like, there's just so much capital, so much talent flowing into that space. It's gonna get solved. Right? Yeah.
+It's just inevitability. You just keep going and I think this is why I have such faith that, yeah, we should I mean, there's no reason now we shouldn't have a billion driverless cars in
+Speaker 1: the road.
+Speaker 3: Yeah. But timelines. By 2030, will I be able to walk in and get a Honda and have it have autonomous driving capabilities that's as good as
+Speaker 2: Sleepable.
+Speaker 3: Tesla's is today. Okay. Not even not even not even what Tesla will be in 2030. But like a Tesla, Ford, know, you these other manufacturers.
+Speaker 1: 2030 is like two years away.
+Speaker 3: No. But but I but I'm just saying like it's like I I I'm curious because I think every passing year, all of these manufacturers are just in more trouble.
+Speaker 1: Maybe. Yeah.
+Speaker 2: Yeah. I think they get in their own way. Right? I think a company will build a technology that they could sell to a Honda or other companies that is driverless ready on that scale in 2013. Absolutely.
+I mean, we've got literal super intelligence coming that can write code of crazy quantities and such. I I think so. And it's really the car company's decision about
+Speaker 5: Yeah.
+Speaker 2: Do I want this? Will I adopt it? Or will I continue to Yeah. Burn money internally failing at building it myself?
+Speaker 1: Last question. How important is at least developing some of the application muscle, the go to market? Like, Suno just went viral in our office. We're all addicted to Suno now. I know.
+It's weird. And and there's been these moments where, like, okay. Everyone's on mid journey. It's really fun. And, like, it's this it's this platform, then they cruise a lot of value.
+It can sometimes be baggage because you're building you're you're you're like, okay. Now I'm a consumer company. How how do you think about, value capture and how much you want to be the front end to just prompt, get game.
+Speaker 2: Exact So my answer would be that I'm actually not happy with my answer, sometimes I get asked what are we good at
+Speaker 1: Yeah.
+Speaker 2: At Odyssey, right? And so my answer to that is that we we need to be great at everything. And the the reason I say that is because if you're building a very foundational technology, it really does need to be great at all of these different tasks. Mhmm. And we need to stay focused on that instead of getting really focused on a minute case.
+And so, yeah. Long story short, I very much believe that by building this foundational technology
+Speaker 3: Yeah.
+Speaker 2: Along the way, you'll discover by talking to companies, talking to researchers, really cool stuff.
+Speaker 1: Some of them might be partners. Some of them might be in house. Well, I'm I'm very excited for so ready. I can feel that the moment's coming. Congratulations on all the progress.
+Speaker 2: Thank you.
+Speaker 1: Thank you for all the work you're doing. Thanks for coming on the show.
+Speaker 3: Thank you.
+Speaker 1: Have a great rest.
+Speaker 3: Much. Cheers.
+Speaker 1: Thank you. Your time here. While we bring in our next guest, let me tell you about RAMP. Time is money. Save both.
+You can use corporate cards, bill pay, accounting, and a whole lot more all in one place. And we are I think we got a sound board here. We are joined by the founder and CEO of Ideogram, Mohammad.
+Speaker 2: Welcome to
+Speaker 1: the show. How are you doing?
+Speaker 3: Suited up.
+Speaker 1: Thanks for having me.
+Speaker 2: Looking good.
+Speaker 1: Thanks for Nice to meet you guys.
+Speaker 5: Looking good too.
+Speaker 1: Yeah. It's it's the right place for us. Why don't you introduce the company a little bit? I I I know a fair amount, but for the viewers who don't, the the the shape of the company and the product and sort of the the target market at this particular juncture.
+Speaker 5: Yeah. So if you think about it, we already have content creation in front of us. Yeah. If you think of the industry, you know, we had the early days of image generation. Yeah.
+And if you look through your social media feed, you see a lot of AI generated video. Yeah. But we think there's an inflection point that design marketing can also take advantage of
+Speaker 2: Yeah.
+Speaker 5: Generative AI. And that's what we're building at IdealGram. The Yeah. AI foundation for enterprise adoption of the next phase of content and design.
+Speaker 3: So Do you think that something like image generation can be fully solved within a shorter period of time than, let's say, intellectual intelligence?
+Speaker 5: It's kinda interesting because when you think of image generation, you can have a very detailed document and diagram and really technical design as part of an image. Mhmm. You know?
+Speaker 1: Oh, yeah.
+Speaker 5: I it's not
+Speaker 1: At some point, if if you're saying generate a blackboard with a solution to a IMO level math problem on it, the model needs to understand that level of math.
+Speaker 5: Yeah. Like, think of the circuit design or architecture design. Yeah. Yeah. And and Oh, that's the same level of complexity as a lot of the reasoning problems we're trying to solve now.
+So One of
+Speaker 2: the first
+Speaker 4: you look at it.
+Speaker 3: Yeah. Yeah. I was asking from the lens of of I think everyone on Earth now has now viewed an AI image, not known it was Mhmm. Not known that it was AI and just assume like, okay, looks like a a normal image to me. And I think when you're talking about like if Pepsi is working on a campaign, they don't need, like, as soon as it looks photo real, they don't need something that's necessarily more real.
+And Right. So I just wonder what that means for the shape of ideogram and where, at at some point, like, what the what the core competency will need to be for Ideogram to continue to evolve as a business,
+Speaker 5: if if that
+Speaker 3: Yeah. Makes
+Speaker 5: If you if you think, one is we still have issues with consistency. Yeah. It's not at a level that a brand can use for their marketing Yep. For their design. Mhmm.
+And we focus a lot on image generation and not as much on design generation, which is, okay, I have certain typography I wanna translate across languages. I have my logo. It has to be a 100% accurate. You With product photography, it has to be exactly correct. I can't buy a piece of clothing, and then it doesn't it doesn't match the picture.
+So when it comes to consistency, you're still lacking. But then part of the dream is to help with the design of future products, you know. The creative part of design requires a lot of understanding of the context, and then the brand DNA and putting them together to design the next generation of cars or design the next generation of shoes. And that's where we are focusing on and we are working with brands to Yeah. Help supercharge their design and production.
+Speaker 3: How are you To me, that is I will just say the most my most addictive AI experiences is designing products that don't exist yet.
+Speaker 5: Just Yeah.
+Speaker 3: Anything I could possibly imagine in my head. And then the process of like prompting and and, you know, getting getting close and, you know, getting to maybe 95% and then trying to get it again. You know, the last 5% ends up taking, you know, 10 times more time than than than getting to the 95.
+Speaker 1: Yeah. So related to that, what are enterprises looking for specifically from you, like, this month? Because we just went through the token maxing, up and down where enterprises were just, you know, spraying tokens all over. You can use whatever model for anything. Check the weather with, you know, the best advanced model.
+But I imagine that your customers are concerned about cost, but also speed, quality, consistency. I know you're partnering with AMD, obviously. But, walk me through a little bit of, like, the problems that you're hearing from enterprises and what you're focused on solving in the short term.
+Speaker 5: Yeah. One thing is data sovereignty. And, obviously, when it comes to design, IP is extremely important. Mhmm. Lots of competitive industries that, okay, I can't let Yeah.
+My competitors see the design of my future car. Oh, that's interesting. Sending that over to the cloud. Yeah. And then that that creates a lot of potential issues.
+Speaker 1: They wanna run your models on prem, or does that mean that they're just wanna know that you're hosting it in a certain certain secure way with a certain SLA around, we're not gonna train on this?
+Speaker 5: I would say both.
+Speaker 1: Both? Okay.
+Speaker 5: Both. And with the newest model that we released, it's actually a relatively compact model that's at the frontier and it's open vein. Wow. And that creates a new set of opportunities for us in terms of licensing and partnership Yeah. Where companies can host these models on prem.
+Yeah. That brings down their their cost, but also data sovereignty is really important. So on the design side, that's one one thing we're hearing a lot. Yeah. And then on the brand side, this is still consistency is an issue, but we think we're gonna solve that in the next few months.
+Speaker 1: Yeah. There's a big there's a big debate over open weight models, geopolitical discussions, and one of the themes that's coming up is, like, American open weight companies might be at a disadvantage if, other countries' open weight models have less respect for intellectual property. And so I would think that you would be fighting with one arm time tied behind your back. But based on your business clients, they might not want a model that infringes on IP because that could wind up getting them in trouble. So is it less of an issue for you?
+Or do you see, like, sort of the move fast and break things that may or may not be happening internationally actually being a like a headwind to your business.
+Speaker 5: On the image side, actually, it seems like American companies are doing really well. Yeah. And we are at the frontier, so so it's not as big of an issue. Yeah. Then the customer side, as long as we give them the protection they need, they are happy.
+Yeah. But one other set of customers that we are seeing is actually generating data to train really sophisticated models for manufacturing problems Oh. For really unique defense problems Yeah.
+Speaker 2: Yeah.
+Speaker 5: Where where you don't have a ton of training data. Yeah. And these models are getting to the quality that they can generate images of effects. Yeah. Images of really rare scenarios that Yeah.
+You can't find in the real world. Yeah. And that's another example where, again, having it on prem is important because they don't wanna Yeah.
+Speaker 1: That out Share
+Speaker 5: that data. With everyone else. Yeah.
+Speaker 1: Interesting. Interesting. What what has it been like working with AMD? We've talked about the software ecosystem around AMD. You're obviously give me some, like, benchmarks on what you've actually seen from your performance.
+And then I wanna know about the process to actually optimize one of your models for an AMD stack.
+Speaker 5: Right. So it started with us testing some of the early models. It was MI 300.
+Speaker 1: Mhmm.
+Speaker 5: And then we got to know about the roadmap. It's a really impressive roadmap with MI four fifty and and the following ones, four fifty five. So we started testing it. We got good results. And with AI agents, it's become so easy to, you know, give it the the architecture and then get it to be optimized for for the chip.
+And the AMD team has been really accommodating in terms of helping us out whenever some issues arise. And then we went live a few months ago with our four four point o model.
+Speaker 1: How much does the road map at AMD and other semiconductor companies affect how you're designing your product? Do you work backwards from this model? I know it's gonna be able to do x, y, and z, hold this sort of memory, this flops, like and then, okay. Let's design the best model for that rack or that chip?
+Speaker 5: Yeah. Exactly.
+Speaker 1: So
+Speaker 5: we we often customize the details of an architecture based on price, performance, latency, and then work backwards and train the model when we get to the details of the architecture. Yeah. There are certain changes that you can make that wouldn't have an impact on the quality of the model, but would have an impact on the downstream performance and latency. So I think everybody does that in the frontier AI that you kind of work backwards. But the problem is you also don't know too much about the future shifts.
+Speaker 1: Yeah. Maybe that's why you gotta come here, meet the people, whisper, oh, well, really? That's what it's gonna be? Okay. Right.
+We'll work backwards on that. Or maybe you just have a proper, you know, deal and everything's about Right.
+Speaker 3: We didn't get to this, but before you leave, what were you doing before this?
+Speaker 5: Oh, I was at Google before this. And before that, I was a computer programmer, then turned AI researcher. Wow. And then started Ideogram. At Google, I started image generation Yeah.
+This brand called Imagine. And I thought I can have a bigger impact. So, you know.
+Speaker 1: How much of the team is researchers at Ideogram now?
+Speaker 5: It's about fifty fifty.
+Speaker 1: Fifty fifty.
+Speaker 5: Wow. Yeah. We have a relatively small team. Yeah. It's primarily engineering.
+Speaker 1: That's really cool.
+Speaker 5: And half of it focusing on the product, and half of it is focusing on the model.
+Speaker 1: Sounds like a dream. Well Yeah. Congratulations on the progress. Thank you so much.
+Speaker 5: Thanks so much. Great have you.
+Speaker 1: Great to meet you.
+Speaker 3: Thanks for coming on.
+Speaker 2: Yeah. Of course.
+Speaker 1: We'll talk to you soon. Cheers. Bye. Let me tell you about MongoDB. What's the only thing faster than the AI market?
+Your business on MongoDB. Don't just build AI. Own the data platform that powers it. And I'll also tell you about Codex. Codex is a powerful workspace for getting work done with AI agents.
+Whether you're writing code, analyzing data, creating content, or automating business workflows, Codex helps you move projects forward from start to finish. Welcome. Welcome back. How you doing? Great to
+Speaker 2: see you. How you doing? I love it.
+Speaker 3: Just saying hi.
+Speaker 1: Good. Amazing. Thank you, man.
+Speaker 3: What's happening? Lou's good.
+Speaker 2: What's going on? What's up, boys?
+Speaker 4: Good to see you again.
+Speaker 1: To see I you
+Speaker 3: think this third time.
+Speaker 2: Oh, man. That jacket is so sharp. The green's
+Speaker 3: here. The TBPN green.
+Speaker 4: I That's the TBPN green.
+Speaker 3: Okay. Of course. We'll we'll coordinate. We'll connect you to our tailor.
+Speaker 1: Do you have a do you have a brand color yet
+Speaker 3: for AMP? PC? Have the
+Speaker 4: The cream and the
+Speaker 1: forest green. There
+Speaker 3: you go.
+Speaker 6: We actually
+Speaker 4: have a forest green coming.
+Speaker 1: Okay. There you go.
+Speaker 4: There's a new video model that just got announced this morning called Flux three Oh. That's training on the AMP grid. And it's from Black Forest Labs. Very cool. And they're up in the Black Forest like near Freiburg
+Speaker 1: Yeah.
+Speaker 4: In Germany.
+Speaker 3: Wait. Say AMP grid again. The AMP grid.
+Speaker 1: That's a good sound effect for the AMP grid. I like it. I like that. It's good branding.
+Speaker 4: We'll give
+Speaker 3: you the sound we'll give you the sound effect. We'll have our tailor talk to your tailor. Yeah. Figure it all out.
+Speaker 2: Yeah.
+Speaker 4: Careful what you wish for, man. Mhmm. I would love the recommendation on that. But Black Forest Labs, their color is forest green.
+Speaker 2: Okay. Yep.
+Speaker 4: Because Black Forest. Etcetera. And I find it's a very soothing color.
+Speaker 1: Yeah.
+Speaker 4: Yeah. There's some, like I think there's some, like, neuropsychology around, like, green immediately calms you down. Yeah. I I I You
+Speaker 1: don't want caution yellow or or, you know, high vis orange. That's a little bit more aggressive.
+Speaker 3: Well, there's some companies that make orange work.
+Speaker 1: Yeah. Well, that's not a Anthropic does not have a high vis orange, although high vis orange is maybe the one, white space in in branding.
+Speaker 4: A 16 z is orange.
+Speaker 1: But that's
+Speaker 2: a high vis. That's not high vis. It's high vis color.
+Speaker 1: Reflective orange. You know what I'm talking about? See it on the road. That's hard, man. That is an ingress that's hard to pull off as a brand.
+How are you thinking about the brand? You know, do do you have a whole brand book yet?
+Speaker 4: We're we're going to the vibes and the aura, man.
+Speaker 2: There you go. Like I like it.
+Speaker 4: As as I've learned just the vibes generally, the the vibes, like, are in the space of Frontieri, which you guys have been ex an extraordinary voice on, Stuff changes every day. Yeah. And so nobody's got any time to look at the first principles, the details, what's actually happening, what's we're like,
+Speaker 2: which model's coming out, what's
+Speaker 4: the difference between Fable five and, like, codex, blah blah blah. And so it's all aura based decision making right now because the brain just needs some easy heuristic to latch
+Speaker 3: I'm surprised we haven't seen a chief aura officer. Oh. Yeah. That's that's the next like chief chief brand officer. But when somebody does that, sell everything.
+Speaker 1: So It's probably too much. Once there's name you
+Speaker 3: good point make which is that if if you if you have if you have motion, doesn't matter what your site looks like or what your logo looks like. People will just like attach their own feel what they feel Mhmm. When they're interacting Yes. Or or to to to whatever you're putting out.
+Speaker 1: Motion is underrated. There's a there should be a AI company research in motion. That would be good.
+Speaker 4: Wasn't that BlackBerry? Yeah.
+Speaker 1: Yeah. Know what I'm saying.
+Speaker 3: Yeah. Anyway. I'm not that.
+Speaker 4: So but but I wanna answer your question, which
+Speaker 2: is what is the brand? The brand is what, you know, you stand for
+Speaker 1: Yeah.
+Speaker 4: And we stand for output maxing. Okay. Right? The the
+Speaker 1: I love it.
+Speaker 4: There's just too much like, what what are we living through right now? We're living through the AI scaling era.
+Speaker 2: Yeah. Bitter lesson holds
+Speaker 1: Yep.
+Speaker 4: That scale scale scale.
+Speaker 1: Yep.
+Speaker 4: But the brain isn't naturally anchored to large numbers.
+Speaker 2: Yeah. But nobody, like, if
+Speaker 4: if you actually deconstruct what's going on in this space, there's so much wastage because nobody's doing the output maxing efficiency Yep.
+Speaker 3: Way. Right?
+Speaker 2: Which is what's the output divided by the unit of input?
+Speaker 4: Yeah. And if you met start measuring businesses Yeah. Or model capabilities or whatever through efficiency Yeah. The story is completely different
+Speaker 2: Yeah.
+Speaker 4: Than than what just the headlines say.
+Speaker 1: Yeah. Right. A lot of people were token maxing, and I think we will look back on that era as really valuable exploration.
+Speaker 2: It was
+Speaker 1: actually totally worth it. Yes. But I like output maxing as the correct coinage as opposed to token maxing. I was trying to say token min maxing, token optimiz it's way better output maxing. I love it.
+Speaker 2: It's like, what what are we all here for? It's to
+Speaker 4: try to grow GDP. You're not at all expenses. It'd be grow GDP in the compute optimal way. Yeah. Right?
+You cannot beat China at pure scaling.
+Speaker 2: Mhmm.
+Speaker 4: It's just not gonna happen. Okay. Industrial like, industrial scale coordination
+Speaker 2: Mhmm. Where they go, you know what?
+Speaker 4: Ban the h one hundreds, h two hundreds. Mhmm. All of you use Huawei and, like, get together and figure out
+Speaker 2: how to scale with even if
+Speaker 4: you don't we don't have
+Speaker 2: the leading edge chips, put out Kimi k three.
+Speaker 4: I don't care. I'm Xi Jinping. Like, I just want for us to be at the frontier.
+Speaker 3: Yeah. And make, you know, a 100 new nuclear plants
+Speaker 4: or whatever. Build, build, build, baby. Like, you know, build, scale, whatever is required. You guys the permitting. Who needs permitting?
+Just like, you know, they they will just clear all the bottlenecks Yeah. That they have been Yeah. At a scale we don't understand. Right? They will bring at least a 100 gigawatts of new energy capacity online in the next decade without even blink blinking.
+Speaker 2: Yeah.
+Speaker 3: Yeah.
+Speaker 4: Meanwhile Like, were they
+Speaker 2: were already trained on AI pill, then they
+Speaker 3: were planning on doing it anyways. They're like Yeah.
+Speaker 4: Yeah. So what do we have to do? Have to be smarter.
+Speaker 2: Okay.
+Speaker 4: We have to do output maxing. We gotta be more efficient. Only 15% of every single tenant data center today in The United States is being utilized. Netflops utilization
+Speaker 1: Oh.
+Speaker 4: Is less than 20% in The United States. It is crazy.
+Speaker 1: Is is that just downtime from chips not being used at the right time, like misconfigurations, like the water supply's out or something?
+Speaker 4: Like, what's going on? Basically, for every dollar of long term lease that an AI lab takes today, you lose about 40% flops in just bad scheduling. The nodes are just straight up not allocated.
+Speaker 1: Yep. Right? Then within Chips there, but it's just not getting work at the right time. Correct.
+Speaker 4: Yep. Then within the chip Yeah. You only have, like, 15% of the chip being utilized. That's called MFU model flop utilization. Yeah.
+Because the chip is waiting around for some other process to complete, storage, memory, networking, or some other chip to hand it
+Speaker 1: off. Yeah.
+Speaker 4: Yeah. As a result, if you compound those two things
+Speaker 1: Yeah.
+Speaker 4: Of every dollar, only 15% of flops are actually being utilized. Yeah. That 85%, that's a national security crisis.
+Speaker 2: Yeah.
+Speaker 4: Because that's what's keeping us from staying at the frontier.
+Speaker 2: Yeah. That's why we all keep complaining about, oh, k m
+Speaker 4: k three came out. Sure. You could talk about distillation. Distillation is definitely happening. However, everybody who feels compute constrained in The United States should be asking, am I doing both?
+Am I getting more capabilities? Am I am I building up more supply? And thank God, Visa Yeah. Is is on it. Yeah.
+But also, are we utilizing the existing capacity to get the maximum output possible?
+Speaker 1: Mhmm.
+Speaker 4: And both those things are what's gonna keep us at the frontier. Yeah. Does that make sense?
+Speaker 3: Yeah. Yeah. It's sort of, I mean, it's natural cycle. Any company that that has grown really quickly or any industry that's grown really quickly, there just ends up being all this waste and misutilized and all this stuff and then but but the key and I think what you're pushing for is like even if you have this exponential growth, you can still try to be more it's still important to be more efficient now so that we don't give up the advantages that we do have.
+Speaker 4: I don't think we have a choice because the supply chain is backed up for, like, two years. So we're just not like, we at AMP, the AMP grid, we're procuring energy and new capacity for 2030. Wow. And we and there's not enough sites.
+Speaker 1: Yeah.
+Speaker 4: We we're gonna need nuclear. Where's Are
+Speaker 1: you spending time with nuclear companies?
+Speaker 4: Yes. Actually, there's Seth right over there.
+Speaker 1: Oh, hi, Seth.
+Speaker 2: Hey, Seth.
+Speaker 1: How are you doing?
+Speaker 4: Seth is a founder of a company called Mavria that we we've just invested in. I don't think
+Speaker 1: Good to meet you.
+Speaker 3: He was he was pop on show pop on the show and after
+Speaker 1: Yeah. After he gets
+Speaker 2: off. Well, yeah, we'll talk to you.
+Speaker 1: Go over there. Talk to the
+Speaker 6: premiere at the
+Speaker 1: good time. Yeah.
+Speaker 2: Yeah. Yeah.
+Speaker 3: Talk to the team.
+Speaker 2: Seth was at the DOE
+Speaker 1: Yeah.
+Speaker 4: And was one of the people responsible for a bunch of permitting that just finally got Yeah. Like approved for new nuclear projects in The United States. Cool. And he's Thank you for your service, son.
+Speaker 1: Okay. We'll we'll we'll we'll give you a proper mic in a couple minutes. We got one more question. We know
+Speaker 3: you So guys so walk us through the shape of your business right now. You have the fund, you're making new investments. Yep. You got a big allocation in, I think, obviously, every, you know, anthropic ground to date. But otherwise, like, what is the shape of the business?
+You're building out, like you're you're to me, it's like two different businesses. They work they're very interlinked, but how are you spending your time?
+Speaker 4: Yeah. So we've got AMP Foundry, which is our venture capital firm and capital business, and we raise venture capital funds
+Speaker 2: You don't make a single
+Speaker 1: chip there.
+Speaker 4: We do not make any chips.
+Speaker 1: Stolen now or not yet. Who knows? I I wouldn't put it past you.
+Speaker 4: And so
+Speaker 3: have that a great partner.
+Speaker 4: On the but our our infrastructure arm, which we're actually spinning out pretty soon
+Speaker 2: Yeah.
+Speaker 4: As an independent entity.
+Speaker 1: Oh, interesting.
+Speaker 2: And we're not ready to announce the name yet, but you
+Speaker 3: guys are
+Speaker 4: gonna love it.
+Speaker 1: There we
+Speaker 4: go. That's for a follow-up.
+Speaker 1: Okay.
+Speaker 4: Great. Is building out about two gigawatts of capacity in The United States. Okay. And we we're not making our own chips yet
+Speaker 2: Yeah.
+Speaker 4: But we're building out new there's new sites. Yep. There's new Yeah.
+Speaker 1: You're you're marshaling the capital, getting the right partners in place so everything can come together, and the compute can come online.
+Speaker 4: Yes.
+Speaker 1: Speaking of two gigawatts, what can you tell us about this Anthropic AMD deal? I think it's two gigawatts, $5,000,000,000 investment. Oh, six gigawatts? Is that what
+Speaker 2: it is?
+Speaker 3: To six.
+Speaker 1: But I'm interested in first, it just seems like another positive sign for the industry for Anthropic and AMD. Yep. And it feels like we're also I don't know. I haven't checked all the reactions, but it feels like are we post post circular deal FUD? This seems like a very logical deal.
+You know, everyone's seen the ARR charts. Everything's growing. Businesses are using the tools. Like, the full it's a full ecosystem. The economy is growing.
+And so this part this type of partnership makes sense. But what do you tell to what how are you telling an earlier stage founder if they're trying to do a strategic deal?
+Speaker 2: Well, well past the circular part.
+Speaker 4: I mean, these were all concerns maybe two years ago.
+Speaker 5: I I agree.
+Speaker 4: And so if you look at the value creation when you have, like, Anthropic go from zero, literally when we started the business, like, five years ago
+Speaker 2: Yeah.
+Speaker 4: To well north of 40,000,000,000 in run rate.
+Speaker 2: Yeah.
+Speaker 4: Right? And then and and most of that revenue is coming from everyday customers using Cloud to Code.
+Speaker 2: Yeah.
+Speaker 4: That's not circular. That's net just new value creation.
+Speaker 3: Yeah. Right?
+Speaker 2: Now the question is, how do
+Speaker 4: you keep a healthy independent ecosystem of all kinds of frontier capabilities churning? Sure. And the problem is that the the core problem, one of many core bottlenecks is that private credit markets Mhmm. Do not see startups as investment grade counterparties. Yeah.
+So when they're trying to procure capacity, a compute capacity like three, four years out Mhmm. They just can't get those contracts are not financed. Mhmm. And so what we need in The United States is a financing program that says, okay, we're gonna be able to turn startups I mean, Anthropic was a startup not too long ago
+Speaker 2: Yeah.
+Speaker 4: That was not considered investment grade. At this stage Yeah. They actually likely are still not investment grade, neither is OpenAI, but they're starting to become more under writable by the financial markets. Yeah. Right?
+Yep. And I think what we've gotta do in The United States is do a little bit of an innovation to go, how do you get the ecosystem to understand the quality Yeah. Of of these startups.
+Speaker 1: Yep.
+Speaker 4: They're the engine of innovation.
+Speaker 1: Yeah.
+Speaker 4: There's
+Speaker 1: where you
+Speaker 4: know, Anthropic is 5,000 ish people today. Yeah. Google is last time I checked, like, six t thousand people.
+Speaker 5: Yeah.
+Speaker 3: Accenture is 75,000.
+Speaker 4: And neither Accenture nor Google are responsible for frontier model innovation today.
+Speaker 3: Yeah.
+Speaker 4: Yeah. Like, Google still hasn't put out a anthropic grade coding
+Speaker 3: model.
+Speaker 2: Sure.
+Speaker 4: And they're trying their best. Yeah. But it's a focused thing. It's a focused culture, like, talent dense teams
+Speaker 1: Yeah.
+Speaker 2: That are
+Speaker 4: that are focused Yeah. Yeah. Get more done.
+Speaker 1: Speaking of that, are large founding teams underrated?
+Speaker 4: Are large founding teams underrated?
+Speaker 1: Because there's a world where Anthropics like the exception of the rule. Yeah. It's working for them. Right. Crazy.
+I mean, young company, but huge company. All the
+Speaker 3: founders is another great example.
+Speaker 1: Is five and, you know, strong team. There was a while where, you know, the the the Silicon Valley wisdom was like two, maybe
+Speaker 4: three. Right. Yeah. I I most startup advice, as you guys know, is designed for the media.
+Speaker 1: Spug for podcast. Yeah. Yeah. Yeah.
+Speaker 4: But the outlier businesses, they they have large founding teams. They have family founding teams. Yeah. Like the Stripe brothers. Yeah.
+Speaker 1: Call us.
+Speaker 4: The conventional wisdom is don't start, you know, like Yeah. Don't mix. Company with Personal business. And Dario and Danielle are brother
+Speaker 1: and sister.
+Speaker 4: The Callison's are brother and sister. Yeah. Black Forest Labs is 12 cofounders. They're all researchers.
+Speaker 1: I had no idea.
+Speaker 2: Yeah. So I you know That's sick.
+Speaker 4: I think outliers do their own thing. Yeah. And that's that's the point. It's like, whatever it takes to compete at the front Yeah. And as long as you're super aligned and tight, I think that's what matters.
+Speaker 3: Okay. Let's say you're talking you do have a panel in a second. I wish we could You're go talking to somebody who is now willing to admit that this AI thing is real. They see the revenue ramps. Let's say they're using various models.
+They're like, this is very capable, but they're getting into it. And they're saying, like, okay, a lot of a lot of the revenue is tied to coding right now. These tokens are deflationary over time. Consumption? Where is it gonna come from?
+Right? Because, like, finance is an interesting category, but it's I I don't see, you know, 200,000,000,000 of, you know, financial modeling spend on tokens. Right? So where where are you predicting or thinking about these sort of, like, next legs next legs up after coding?
+Speaker 4: So the the gift that keeps giving still is reinforcement learning. Like, RL is just working. Yeah. Like, as a technology, it's so simple.
+Speaker 5: Sure.
+Speaker 4: It's like training training a dog. Right? Like, hey, fighter. Go fetch. You did it right.
+You know Here's a
+Speaker 3: treat.
+Speaker 4: Here's a treat. And reward modeling is is used to be like this bespoke craft thing like two years ago. Now, we're we're getting to the stage of industrial grade, like repeatable reinforcement learning as a service.
+Speaker 5: Mhmm.
+Speaker 4: And so I think taking models and doing post training where you have the weights and then post training on data that you care about on some small set of samples that are high quality where the reward is very clear and you're doing RL gets you your own jagged frontier very fast.
+Speaker 1: Yeah.
+Speaker 4: You because know, you guys know this. Like, capabilities, if there's a jagged frontier, you know, coding is clearly one area because of formal verification
+Speaker 1: Yep.
+Speaker 4: With unit tests Yep. The progress has been super fast. Mhmm. I think verification is people just still haven't truly internalized, like, how generalizable this concept of, like, the context feedback loop with verification built in
+Speaker 2: Mhmm.
+Speaker 4: Is. And the algorithm is so simple. Like, RL just works Yeah. That wherever you can do, like, formal verification and RL, you're gonna see crazy capabilities. So one example is Periodic Labs.
+It's one of our portfolio companies. Yep. They're trying to discover a room temperature superconductor. The pace of progress there has been extraordinary in the last, like, six months. They've got a 40,000 square foot facility in Menlo Park That's awesome.
+Where you got AI models that are predicting new materials Mhmm. New candidates. Mhmm. And then you have robots synthesize the material and then test with an x-ray diffraction machine. Does the material have the superconducting properties that the the model said it would?
+And because that's verification from reality, like from nature, like physics. So you can do x-ray diffraction to test Yeah.
+Speaker 1: Does it
+Speaker 4: have it or not? You the feedback is the signal is very clear, and then you take that signal and pipe it back into RL, like, as many times as you need. And It's exciting. The the the capabilities ladder is is extraordinary.
+Speaker 1: I wanna go way deeper with you on science and what's next in AI. We gotta let you get to your panel, but thank you so much for coming on and hanging out.
+Speaker 2: Good to see you, Roy. It's a pleasure.
+Speaker 4: I hear I'm catching up. The opening act for Lisa.
+Speaker 1: So Yeah.
+Speaker 4: She's next and have fun.
+Speaker 1: Yeah. And thank you for the introduction. We'll bring in your portfolio, founder, CEO. First, I'm gonna tell you about publicpublic.com investing for those that take it seriously. They got stocks, options, bond, crypto, treasuries, and more with great customer service.
+Welcome to the show. Introduce yourself.
+Speaker 3: How much do you bench?
+Speaker 6: This morning, 03:35.
+Speaker 1: There we go. Amazing. Can you lift this microphone up to your mouth? Thank you.
+Speaker 3: And move maybe move it over a little bit?
+Speaker 1: There we go.
+Speaker 3: The other way.
+Speaker 6: Oh. Like this. Okay.
+Speaker 3: Love Loud Loud room.
+Speaker 1: Anyway Amazing. Loud and clear, give us an introduction. Yourself and the company.
+Speaker 6: Hey, guys. My name is Seth Cohen. I am one of the cofounders of Mavria Inc. Okay. We are an AI infrastructure company, and we're looking to tackle some of the biggest problems in the space.
+Yeah. We're so thrilled to be working with Anj.
+Speaker 1: Yeah.
+Speaker 6: Before this, I was chief counsel of nuclear policy at the Department of Energy.
+Speaker 1: Oh, no way.
+Speaker 6: The depending on who you ask, either a senior adviser or the conservator of the nuclear regulatory commission. Yeah. Yeah. And an adviser at NASA.
+Speaker 1: Oh, cool.
+Speaker 6: So I was the DOGE operative, one of two responsible for implementing the president's nuclear executive orders across the government.
+Speaker 2: Very cool. Yeah. We What were doing before that?
+Speaker 3: Because that doesn't seem like the first job.
+Speaker 6: Supreme Court and appellate litigation at a firm called Kirkland.
+Speaker 1: Oh. Okay. Cool.
+Speaker 2: Yeah. Heard
+Speaker 3: heard of that. Yeah.
+Speaker 1: So the hat says nuclear. You introduced the company as AI infrastructure. Mhmm. Like, is that because AI is the hot trend and nuclear is just like the byproduct, or are you a pure nuclear company? Like, walk me through where the Venn diagrams overlap between just AI infrastructure broadly, what you'll do and what you don't do, and then nuclear, what you do and don't do.
+Speaker 6: Yeah. So one of the things that my my Doge team leader, who's now my cofounder Yeah. Adam Blake, One of the two things that we or three things that we first honed in on with nuclear were a set of bottlenecks
+Speaker 5: Mhmm.
+Speaker 6: That we thought were really gonna be were gonna prevent the anything we had done we did from actually taking effect. We needed to solve a couple of other things. Yeah. And one of them was narrative. Right?
+Nuclear is this incredibly incredible technology that has so much potential for the world. And yet for sixty years, it's faced this strange opposition. Mhmm. Including around nuclear waste. And by the way, if we if we can, I'd really like to talk about nuclear waste.
+It's my favorite thing in the world. Yeah.
+Speaker 3: We love talking about nuclear waste, so you're in the right place.
+Speaker 6: It's good to be among friends. Yeah. But when so what we did with nuclear waste was actually we shifted the narrative and went from Yucca Mountain being the only place where you could put aisles of waste completely off limits
+Speaker 2: Mhmm.
+Speaker 6: To where we are now. 27 governors applied for this program that Adam and I started called the Nuclear Lifecycle Campus. And there are I I can't tell you the exact number, but it fits on two hands. The number of governors currently fighting to host the full back end fuel cycle.
+Speaker 1: So would that be There could be one additional nuclear waste storage plan.
+Speaker 3: Three. Three.
+Speaker 6: Okay. One of three. And these are gonna be cities
+Speaker 3: Yeah.
+Speaker 6: Yeah. By the way, that that if everything goes according to plan, will be competitive with our major metropolitan areas because we're gonna reindustrialize
+Speaker 1: Wait. Yeah. Yeah. Cities. I feel like you're just talking about a hole in the ground.
+I need, like, two guys to protect it. What what else is going on around a nuclear waste protection site?
+Speaker 6: Well, so it's not know, to take a step back
+Speaker 1: Yeah.
+Speaker 3: Is it too late to offer up my backyard?
+Speaker 1: The ultimate EMB.
+Speaker 6: No. I I I think what so first off, when we talk about nuclear waste, that's real we we have this strange idea, and it's probably the Simpsons' fault.
+Speaker 1: Oh, yeah. Glowing.
+Speaker 6: Yeah. I have seen the blue glow of a spent fuel rod, which is actually very, very cool. Mhmm. But there's no green goo.
+Speaker 2: Yeah.
+Speaker 6: Right? So almost all com all waste in the in The United States is medical stuff. It's like gloves because some person went behind a wall and put pressed an x-ray button.
+Speaker 1: Oh, interesting.
+Speaker 3: I didn't
+Speaker 2: realize that.
+Speaker 6: By volume that's That
+Speaker 1: falls in there. You think of it as like the pellets, but it it's really anything that touches that. So there needs to be a whole processing facility for that. That makes sense.
+Speaker 6: Yeah. That's most. But the second is commercial spent fuel. Yeah. And just so we're clear, it's it is fuel, but it's not spent
+Speaker 5: Mhmm.
+Speaker 6: By any means. About 97% of the potential energy remains in a fuel rod after it's done and has to be taken out of a reactor. Mhmm.
+Speaker 3: So why why take it out if there's if 90% of the the rod's potential is still still there?
+Speaker 5: Mhmm.
+Speaker 6: So there are two main isotopes, one of which is getting split and and used up. So And as that potential goes down, the ability to sustain a fission reaction also goes down. And then you accumulate byproduct material. So it's everything from plutonium to some really, really interesting stuff. So, but like before we get there, right, it's that let's talk about like that remainder.
+Speaker 2: Mhmm.
+Speaker 6: Right? So natural uranium is around point 9% of this really good isotope. Most commercial fuel is three and a half to five. When you're done with a rod, it's around point seven. We have a 100,000 tons of this stuff.
+And this is from the lifetime of the commercial fleet. Which, by the way, that fits in one football field. Yeah. Like,
+Speaker 4: six But years of
+Speaker 1: also should be repurposed in some
+Speaker 6: way. Yeah.
+Speaker 1: Yeah.
+Speaker 6: That there is four times more energy sitting on those pads outside of our reactors than Saudi Arabia has in its proven oil reserves.
+Speaker 1: That's that's actually crazy.
+Speaker 6: But that's not where the money is.
+Speaker 1: Yeah. So where is the money? Where are you spending your time? How much time is in DC, lobbying? Like, the old stuff.
+Speaker 2: Wait. But but close close the loop here.
+Speaker 3: So there's there's all this sort of like latent energy potential. I imagine you're doing something with it.
+Speaker 6: Well, we got this program into motion, and I just wanted to talk about it because I'm so excited about what's going on here. Mhmm. And I think that we're on the cusp of of a real energy revolution in The United States. But I think the to understand why we're shifting. Right?
+It's it's the weave.
+Speaker 3: There the
+Speaker 6: To understand why we're shifting here
+Speaker 1: Yeah.
+Speaker 6: You have to understand that what we really were successful at is getting people to see this thing that historically has been treated as a liability. As a real asset. An asset where where governors are going out and staking their name
+Speaker 2: Yeah.
+Speaker 6: On joining this. Like, and Tennessee both made their applications public
+Speaker 5: Yeah.
+Speaker 6: And they are awesome. That is a successful narrative shift. So that's bottleneck one to AI deployment Mhmm. Is energy.
+Speaker 1: Mhmm.
+Speaker 6: So now, we can back away from nuclear. We actually think that's moving in the right direction.
+Speaker 5: Mhmm.
+Speaker 6: So what's next? Well Mhmm. Right now, data centers are facing a tremendous amount of issues in The United States. A lot
+Speaker 3: of it is public popular with, like, 5% of the country.
+Speaker 1: Yeah. Less.
+Speaker 6: On a good day. But these things are really I mean, they're critical. Yeah. These are critical national assets. And so we want to help shift the narrative in order to make AI deployment in The United States possible and make sure that we are able to roll out and remain competitive with China.
+I am dancing around what it is we exactly do, and part of that is because we're we are in stealth. Okay.
+Speaker 2: We're actually
+Speaker 6: as US.
+Speaker 1: We'll come back on the show as soon as you're ready to come out of stealth.
+Speaker 6: Yeah. Thank you guys so much for having me It's been a pleasure.
+Speaker 3: Good to meet you. Enjoy the enjoy the rest the conference. Great to meet you.
+Speaker 1: And I will tell everyone about Shopify. Shopify is the commerce platform that grows with your business and lets you sell in seconds online, in store, on mobile, on social, on marketplaces, and now with AI agents. Let's go through the rest of the news, get you up to speed before Lisa Sue joins in about twenty five minutes. Google has the muscle to overpower spending worries, says The Wall Street Journal. Google has put up, some very, impressive goo, cloud growth numbers.
+There, of course,
+Speaker 3: was me.
+Speaker 1: Some back and forth on, on the nature of that revenue, with semi analysis sort of jokingly maybe posting Google Cloud generates revenue primarily from the sale of TPU systems. The actual line that did change in the SEC filing that's drawing attention is that, there's a line in there that says Google Cloud generates product revenues primarily from the sale of TPU systems, is a little confusing because you think of a company's product as their business. But, of course, they have services as well. And so the it's not that Google Cloud is fully pivoting to TPU sales exclusively. It is that they But it's becoming meaningful.
+Yes. Yes. Yes. They've they've sold them to a number of labs, and they're seeing lots of process.
+Speaker 3: And that was that was rewind a year. That was still a question.
+Speaker 1: Yes. Yes. We can go through there's a number of different posts here. We can take you through Eric Souffert talking back and forth about
+Speaker 3: The
+Speaker 1: The Souffinator's putting a little bit of truth zone on Google Ads growth, what's going on there. They saw a lot of growth in monetized LLM queries. First, I'm gonna tell you about the New York Stock Exchange. Wanna change the world? Raise capital at the New York Stock Exchange.
+Speaker 3: Just do it.
+Speaker 1: So it's a bit of a longer post, but it all started with Sundar Pachai's news. He said q two was an amazing quarter with our AI investments redefining what's possible across every part of our business. Alphabet revenue grew 24% year over year, and Google Cloud accelerated to 82% growth, which is insane. That needs the foghorn for sure. We saw a exciting momentum across the board from search to YouTube to the Gemini app.
+Our model APIs are processing 22,000,000,000 tokens a minute. And at this point, I'm like, the numbers have gotten so big on tokens per minute, tokens per month that it's very hard to keep keep in sync with what's actually impressive until you actually see a full chart. But that's driven by their Workhorse Flash model, which makes sense. They've been focused on very efficient token generation because they then them into so many Google systems for effectively free because they're still, you know, at monetizing via advertising. So Max Anderson said, as someone who has personally spent $500,000 a month plus on Google Ads for years, can tell you with certainty.
+This revenue growth in search is artificial and extremely unhealthy for Google's business long term. Little bit of fear, uncertainty, doubt. Search volumes are declining as legacy searches it being increasingly cannibalized by non monetized LLM queries. Google's response, manufacture revenue growth via shortsighted, highly extractive customer hostile tactics, I e charge advertisers more for lower quality clicks, including clicks they do not want and explicitly do not approve Google to charge them for. He gives a few examples.
+He's going back and forth saying that, this is, you know, short term optimization. But the souvenir comes in. He says, unfortunately, every claim made in this viral threat is either false or mixed characterizes Google's policy. One, search volumes are declining as legacy search is being increasingly cannibalized by non monetized LLM queries. Google stated in its q two earnings that search usage hit an all time high during the World Cup this year.
+It also stated in q one earnings that search queries reached an all time high that quarter. Ads and AI overviews monetize in parity with those in leg legacy search, and Google's search revenue increased by 19% in in q one and seventeen percent in q two. So a little deceleration, but still growing. He also debunks the idea that Google silently deprecated the second price auction. Google still uses generalized second price auction for search.
+He also debunks the idea that Google previously had precise keyword targeting settings that allowed advertisers to pick individual search phrases to bid on. There's a different thing. But souvenir goes back and forth and, and adds some more context to the Google earnings that people are digging into, and we can dig into more later this week. Let me tell you about Railway. Railway is the all in one intelligent cloud provider, user favorite agent to deploy web apps, servers, databases, and more, while Railway automatically takes care of scaling, monitoring, and security.
+Over in the Wall Street Journal, there's a couple articles. Alphabet rides cloud business. Revenue jumps 24%, but data center outlays push cash flow into the red. I think it was the first quarter for negative cash flow, but this has been, Telegraph for a long time. They're investing in
+Speaker 2: Not a AI boom.
+Speaker 1: Not a surprise. And there's been talks from all the hyperscalers around debt issuances, equity issuances, all different things to fund the AI build out. So Google parent company, Alphabet, posted 24% revenue growth year over year in the second quarter, fueled by its booming cloud business, but concern over the company's heavy spending on AI infrastructure damped investors' enthusiasm. Alphabet sales came in at 119,800,000,000, exceeding analyst expectations. Its cloud business brought in 24,800,000,000, and its search business generated 63,000,000,000.
+Net income was 112,000,000,000, for the April June period, also ahead of analyst expectations. So they beat, primarily driven by its gains in other companies' stocks that Alphabet owns. They own, I think, almost $100,000,000,000 of SpaceX. I'm not sure about the current valuation. But, in other AI news in The Wall Street Journal, two big, AI infrastructure stories.
+You have Lisa Su herself right here. AMD Anthropic Sign AI gear deal. We talked to Anjney a little bit about that. And OpenAI boosts cloud spend to 750,000,000,000 new projects, and Georgia data center will be part of efforts to increase capacity. OpenAI is scaling up its data center ambitions and its budget for spending on them.
+The artificial intelligence company has raised its projected spending, on computing power to around 750,000,000,000 through 2030, up from a projection of roughly 600,000,000,000. It's a huge number, obviously. A lot of discussion about that. But given the most recent leg up based on coding agents, a lot of people are looking at that positively as a sign of continued faith in the progress and the scaling law, of course, because we are in the scaling era.
+Speaker 3: Serious momentum.
+Speaker 1: Yeah. The scaling the the increase reflects new agreements with cloud computing providers as OpenAI races to lock up the enormous amounts of computing capacity it needs to develop and run its AI models. OpenAI spending on cloud computing has become a central focus of chief executive Sam Altman's lead leadership team and has been a source of tension between him. The company said Wednesday, invest 20,000,000,000 in to kick off a data center called Project Camilla in Effingham County, Georgia. So that's new new news.
+Also, Nvidia has a supplier that's Georgia? Yes. I've been to Atlanta. It's a great town. Gotta visit.
+You've never been?
+Speaker 3: Maybe on a layover.
+Speaker 1: It's like LA.
+Speaker 2: Don't think
+Speaker 3: I've been outside
+Speaker 1: of LA. It's like Los Angeles. You're you're in the car for half an hour driving in traffic to get everywhere. Everywhere. But it's it's a really nice city.
+Speaker 3: Liang Wenbong over at DeepSeek had an investor call. I I don't have context on how this actually came up because they're they're a hedge fund and they have DeepSeek, still a private
+Speaker 1: They're raising outside capital now.
+Speaker 3: They're raising outside capital. Yeah. So this was probably part of that roadshow. Yeah. I think at a certain point, he needs to raise enough money that you gotta just get on Zoom and Yeah.
+Sell the dream.
+Speaker 1: But he was grinding for four hours, just monologuing for four I don't know if he's monologuing for all four, but it it is it is sort of a long call. But That's bullish, though.
+Speaker 2: It
+Speaker 3: is. Because if you can go and basically do a Joe Rogan podcast episode, it's just monologuing. Doing? No. It's just like, can somebody actually carry a conversation for that long?
+Because after, you know, this has always been your take on Joe Rogan. It's like, it gets interesting on Joe Rogan because by the the after an hour, people go off script. Yeah. And so if a CEO can carry a conversation for four hours straight Yeah. And still be compelling
+Speaker 1: Yeah.
+Speaker 3: It's it's bullish. But there's some details that Zephyr shared. He's over at Citrini. Their inference margins are around 85% strong. They only had around 20,000 hopper equivalents until May.
+Still sort of I can see how they would say that. Mhmm. That doesn't mean that they don't have access to a lot more power globally. Yeah. Some of which may or may not be above board, but who knows?
+They have 1,000,000,000 in API revenue is enough to turn the company cash flow positive. Yeah. And they have a GPU payback period of ten months, and their hardware is depreciated over three to five years. So looking looking quite good over the pond.
+Speaker 1: He also shared a lot of philosophy that felt sort of derivative of Western AI lab leaders thought. I mean, he was focused on, you know, some of the same language around we don't wanna monitor we don't wanna optimize for pure profit. We're on the path to AGI first. It's something that you've heard from a lot of lab leaders. He did say that he's very focused, and he wouldn't be doing world models or image generation or video generation or even a chat app.
+He said he doesn't wanna be the next Alibaba. He's purely focused on the path to AGI, sort of taking this focused approach. And so we'll see. They've they've sort of been out of the game with moonshot sort of coming from behind with k k three and a lot of hype there, and then GLM, of course, as well. So it'll be it'll be interesting to see, what he has up his sleeve get you, on the back of this, investor call that everyone's paying attention to.
+Speaker 3: Before we move In other news.
+Speaker 1: Let me tell you
+Speaker 2: Hit me.
+Speaker 1: About Console. You see it on the laptops. Console builds AI agents that automate 70% of IT, HR, and finance support, giving employees instant resolution for access requests and password resets.
+Speaker 3: Gong moment. Cognition is acquiring Interxion, the makers of Poke. Huge. I think Poke has been an acquisition target or been talked about as an acquisition target for a long time now. They've just made been able to deliver delightful, novel Yeah.
+Products. I wouldn't have expected them to go to Cognition. I think a lot of people were thinking that they'd get picked up by a big consumer company, maybe a, you know, an an Apple. Weren't people saying Apple? Apple would have been amazing.
+Yeah. Having the Poke team working on Siri would be would be quite cool. Could have seen them go into OpenAI or really any, you know, even even an an an Amazon. Right? Yeah.
+So a little bit unexpected here, but not surprised that Scott saw potential in the team. And I'm very interested to see how these businesses end up actually merging. Will they keep Poke around? Will it be will it be just sort of folded into cognition? But either way, very excited to see what they built.
+Speaker 1: Yeah. Let me tell you about Figma. Agents meet the canvas. Your AI agents can now create and modify your Figma files with design system context. There's an older article in the Wall Street Journal that we never got a chance to read through, but it's fun because it tells a story of a young person who basically started literally listening to a podcast and started a search fund and made, I guess, millions of dollars.
+Speaker 2: So Did the meme?
+Speaker 1: Yeah. Did the meme. This shortcut to private equity riches is minting young millionaires. And I saw Sal Khan from Khan Academy talking about something sort of adjacent to this because Khan Academy, of course, sort of open source education. You can basically learn everything that you learn in college from Khan Academy just watching videos and doing their their online open coursework.
+I I believe it's nonprofit.
+Speaker 3: Still crazy that that Khan Academy exists and and plenty of people still turn it down.
+Speaker 2: Yes. Oh, do. They do.
+Speaker 1: Yeah. This person didn't, though, basically. Go getters are backing to buy are backing to buy up HVAC outlet outfits and specialized manufacturers. If they make it back alive, there's a lot of money to be made. What a quote from the Wall Street Journal.
+So, in 2015, Bakari Akhil was a homeless college dropout with a single focus, figuring out how to get rich, sleeping in WeWorks. WeWorks. On the subway in an airport waiting areas, Akhil watched videos, listened to podcasts, let's give it up for some podcasts, and poured over personal finance books. He needed to own a business, he decided, but how to do it with how do you do it with no money? Then Akhil read a Harvard Business School case study that described how MBA graduates were running around the country trying to buy companies with money from something called a search fund.
+He felt like he had discovered a secret. In the decades since, Akhil, now 37, has bought two multimillion dollar companies. He has spent each month of the past three years living in a different country. So he's doing the the nomad lifestyle. HVAC companies?
+I guess. We'll get into it. He's now worth 7 figures. Akhil is part of a growing wave of people looking for a shortcut to private equity riches armed with grit and determination. They are ditching the well worn path from spreadsheet wielding associate to managing director and finding ways to buy HVAC and plumbing outfits, specialized manufacturers, and other small and mid sized businesses.
+Financing from for deals financing such deals is far cry from traditional private equity where firms use funds they raise from institutional investors and the ultra wealthy plus debt. Instead, these would be business owners scrape together financing on a deal by deal basis. They use loans from the u u US Small Business Administration, seek funds raised from specialized investors who cobble together money from friends, family offices, private equity funds, and SBA licensed small business investment companies. And that's just the start. Convincing the owner to sell and executing an improvement plan is a daunting task even for the most experienced deal makers while these buyers typically
+Speaker 3: pay overseas constantly?
+Speaker 1: Yeah. I mean, I imagine that he's overseas now. But during the heyday, he was, like, actually going and, you know, knocking on doors. But, the reason I brought up Sal Khan was that he was, advocating for instead of college, buy your child a business or or take a group of of peers, your your child's age, and they can buy a business together. Because if you look at the cost of college Yeah.
+You know, $200,000, $250,000 sometimes. If you get four students and they're effectively the executive team and you say, look, we're we have a million dollars in cash.
+Speaker 3: Buy an ice cream.
+Speaker 1: We're gonna lever something up so we're
+Speaker 3: gonna It's 205 of net income. Yeah. And we're gonna lever it up.
+Speaker 1: Yeah. And the cash flow is gonna pay your salary. So you're gonna have a job. Yep. From 18 to 22 when you graduate.
+And your job is just to learn everything on the fly. And best case, you wind up with a fantastic business that makes a bunch of money. But worst case, you're no worse off than the money that you would have spent on college. And so you get to learn all these skills on the on the fly. I don't know.
+I don't know if it'll take off. It feels like alpha school adjacent.
+Speaker 3: But when the time comes Yeah. Maybe we can get all the kids and say I mean you guys
+Speaker 1: It's hard to predict what the world would be like in fifteen years or twenty years if you're just having kids now, but it doesn't seem that crazy to imagine. But I think I I I think the aura of of of certain schools will endure, and that will be the right path for some people. For sure. Anyway, I view these guys as home the homesteaders of the Wild West, said Albrecht, who previously represented a big private equity firm in a law firm Gibson Dunn. They're heading out without a dollar to their name.
+If And they make it back alive, there's a lot of money to be made. Many caught the bug at a top business school where entrepreneurship through acquisition courses are now a standard part of the curriculum. They are drawn by the promise of a more flexible schedule, a conviction in their own operational know how, and desire to avoid grunt work that ends up lining the pockets of others, fueling also for fueling their rise, a perception that it isn't as easy as it once was to make big money on Wall Street. That makes sense. A lot of the big private equity firms were founded decades ago, have founders that have and partnerships that have accrued a lot of the value, and and it's much harder to just scale up something new.
+Private equity industry is struggling to profitably unload companies, causing mid level employees dubious of their chances of receiving pay tied to deal performance to jump ship. Some 77 search funds, money from specialized investors to back individuals looking to buy businesses, were raised in 2025. 77 search funds, new search funds listed by the, according to an annual study conducted by researchers at Stanford in 2025. That feels low based on how big the meme was all throughout 2025. Maybe
+Speaker 3: There's no there's no way that that's accurate.
+Speaker 1: Yeah. I may maybe there's some that are that being caught in, like, the in the in the definition, or they they they have defined their company as a as a true private equity firm instead of a search fund. So they said, no. We're not a search fund even though they might Yeah. Actually be acting as one.
+But that is historically high, although down from the 2023 peak in of 01/2001. There was a 101 search funds founded in 2023. Meanwhile, the number of firms doing deals as independent sponsors without a fund has roughly doubled to 1,400. So there's a whole bunch of different stuff going on. There there there there's other stories in here.
+Caroline Sabbat bought a Boston area plumbing business in 2025 and merged it with a smaller one. Her and her husband had started. They got they got joint degrees from Harvard's business and government schools after nearly ten years in the US Navy. He was a former Navy Seal, and he met launched Minuteman Plumbing, heating and cooling with a master plumber. He met through a Harvard mentor between graduation and starting his job at a consulting firm.
+They took over running the business and grew it. All of a sudden, I'm working fifteen hour days on this plumbing business at Caroline, now 35, who managed a crew of nine as a flight naval officer. It was going well, but not well enough that you can light your high paying consulting gig on fire. Caroline decided to buy a business to kick start growth. She found one that they could finance with an SBA loan.
+There we go. These typically come with a lower interest rate than a bank loan because they're government backed. They did have to pay personally guarantee the loan. Caroline also had to take out a life insurance policy. She she bought the business for 1.8 times, EBITDA for a tiny fraction of what most, private equity firms pay.
+So not not too bad
+Speaker 2: to get that much. It
+Speaker 3: was very subscale.
+Speaker 1: Yeah.
+Speaker 3: Otherwise
+Speaker 1: Working for someone younger than me and having to live life one PowerPoint slide at a time was torture, he said. I mean, he quit his consulting job. Anyway, there's another interesting Google news. Google did a they released this massive, massive study. I think it's, like, a 100 pages, about the impact of AI, and they have very a very, very unique dataset, obviously, because Google is vended like, the AI is vended into Google search and all the different tools and the API.
+And they say AI is helping workers not replace them. We've been hearing glimmers of this and people sort of saying they're backing off of what they were saying before, Like, the massive job displacement, maybe it's not coming
+Speaker 3: right now. If you use your own eyes and ears instead of reading
+Speaker 1: Like thought pieces or sci fi or something. Yeah. Oh, yeah. That too. Yeah.
+Yeah.
+Speaker 3: You know.
+Speaker 1: It's all over here. What's
+Speaker 3: Then the you know.
+Speaker 1: Oh, what? Okay. Cool. We will be joined by Lisa Hsu in a little bit. But for now, we'll go back to the Google study that says AI is helping workers, not replacing them.
+So, one of the looming worries about artificial intelligence is that it will automate away jobs. This worry certainly has been looming. A report from researchers at Google released Thursday says that so far, the technology is mainly being used as an aid to workers. It's a yes and technology. It is finding it it is a finding that if if holds true as AI continues to develop, could point to a future where the demand for highly skilled workers is accentuated rather than diminished.
+Just because you're using AI doesn't mean it's going to automate your jobs. At Google economist Scott Strand, one of the researchers, the stakes are high for Google parent Alphabet. Google operates Gemini, one of the most popular AI platforms. Public backlash to AI is intensifying with stark fears about job loss and anger over the build out of data centers across the country. Some large corporations that have laid off employees, this was your point, in the past year have said that they were able to downsize because of AI, yet The US unemployment rate overall remains relatively low.
+And, oh, okay. And the and economists remain split on whether the technology will ultimately eliminate jobs or simply make workers more productive. We can continue chatting about this in a minute, but let me tell you about CrowdStrike. Your business is AI. Their business is securing it.
+CrowdStrike secures AI and stops breaches. We are gonna be adjusting our audio setup. I think we will be joined in just a few minutes. Are you are you ditching Are you going full are you going full full bandana for the interview? Is that what you're thinking?
+I don't know. Anyway, I think we are
+Speaker 3: the backstory on the bandanas. You don't typically think of AMD and this sort of western themed bandana, but now I do.
+Speaker 1: I don't know.
+Speaker 3: John, did you know
+Speaker 1: Cowboys.
+Speaker 3: That we landed on the moon before we put wheels on luggage?
+Speaker 1: That's impossible.
+Speaker 3: That's what they're saying, John. We put a man on the moon before anyone put wheels on suitcases.
+Speaker 1: How is that possible? No one thought to
+Speaker 2: put wheels
+Speaker 3: on suitcases? This isn't a
+Speaker 1: seem to let. People were just like
+Speaker 3: That 1970 was the first time that we thought, why don't we put
+Speaker 1: little wheels? Great to put those things from the car At least be my luggage if only we could miniaturize the technology.
+Speaker 3: If it can be done, we should do it.
+Speaker 1: Yeah. We have to
+Speaker 3: But if no one's done it before, it might be impossible.
+Speaker 1: It's sort of a moonshot project. That is that is actually a crazy, crazy statistic. I mean, that's like the what sharks are older than trees. Isn't that a thing? I think sharks have existed in the oceans since I believe before trees or something.
+That's one of those, like like, brain teaser things. Anyway, what else is in the timeline? I'm trying to pull up this AI study because there were some interesting details in here. But the researchers characterized the use of AI as shallow in most occupations. Workers are only using AI for a relatively small slice of the tasks they do.
+We were talking to Travis Kalanick about this yesterday. Truck driver, what's the job? Is it to drive the vehicle, or is it also to protect the vehicle? Is it also to do small repairs on the vehicle? Man, hand handle logistics with the vehicle.
+Driving is just one of the tasks. And so even if you have a a level four, level five self driving system, you might still have someone in the vehicle for a long time, and that's like the most automatable task that people have been working on for twenty years now, and it's still not quite there. The other the other interesting thing that you were asking, Anjney, about what is the next leg up? What is the next thing that causes another order of magnitude boom in in token consumption, basically, or, like, revenue or whatever metric you want to measure the AI boom through? Yeah.
+And there are there are just, like, diffusion elements, right, where, you know, the number of people that are using coding agents is still small, and and you could just see diffusion that way. But there is Yeah.
+Speaker 4: I think there's
+Speaker 3: some data house US households that pay for AI Yeah. Products is still Yeah. Well below two digits. Somewhere around 5%.
+Speaker 1: Yeah. I I I do think there that And part
+Speaker 3: of the part of that is like Yeah. There's just a lot of households that are not gonna pay for AI, at least directly.
+Speaker 1: There there is just the like, going back to the meter chart, which has showed the amount of time that an AI agent can work on its own. You know, we're in this, like, reliable agent paradigm, but I think people might be under counting what you know, a willingness to run a prompt that will run for a week and give you a result. Like, we're not quite there, or maybe it needs to be more communicative. Maybe the system needs to get back and forth with you. But people just aren't like, it's it's it's we're still very, very early adopter to Yep.
+The type of person that fires something off. Most people at least wanna check-in with the system in in twenty minutes, in at one hour increments.
+Speaker 3: Well, you know who's optimistic about AI, John? Who? Friend of the show, Mark Zuckerberg.
+Speaker 1: Oh, yeah? Oh, yeah.
+Speaker 3: Mark has launched a new campaign that is focused on AI optimism. Mhmm. In Axios Medicea, Mark Zuckerberg on Thursday laid out an optimistic view of the agentic future, arguing the company's focus on connecting the world will only be strengthened by new AI tools and technologies. Axios says why it matters. His position is framed as a stark contrast to some of Meta AI's competitors who, according to a video ad posted with Zuckerberg's comments, promote fear and a dystopian vision of the future.
+Speaker 2: So that
+Speaker 1: was a cool video. I liked it. It's interesting to imagine watching it not as a fan of social media though because it's leaning a lot on, like, we've connected people. We bring people together. And I certainly see it that way.
+When I log on to meta platforms, I'm sending you funny reels. We're having a blast. But a lot of people see it as brain rot. Right? And they don't and and they're like, oh, if you're gonna do what you just did to the next thing, I'm not certain I'm not fully on board.
+So I don't know how it'll be Yeah.
+Speaker 3: I don't know how Production value was fantastic. Land.
+Speaker 1: It's definitely the correct angle. The opposite is worse. Like, clearly, like, you wanna be optimistic. Optimistic. I'm
+Speaker 4: really glad
+Speaker 6: that he's
+Speaker 3: not, like, memetically going down the fear
+Speaker 1: based path. God. Yes. That would be very,
+Speaker 3: very rough. Working for some players. Anyway, so we'll we'll see how it lands.
+Speaker 1: Mhmm.
+Speaker 3: What else is going on? Paramount is moving into micro dramas. This is the moment you've been waiting for. You love dramatic movies.
+Speaker 6: I don't know.
+Speaker 1: Can I
+Speaker 3: interest you in some micro dramas? Have you tried any of the
+Speaker 1: I watched the AI version true shorts. Yeah. Yeah. Yeah. Yeah.
+I watched the true crime one, and I I felt like I was actually fine with the AI video and voice over element of it. What I felt was missing was when you're when you're tracking a true crime story and you turn on a podcast about that true crime, you know, whatever it was, I like being, led through a meandering idea maze of what is interesting to that host. So maybe they find the the town and the details about the town where something happened particularly interesting. And so they're just putting in random facts that flesh out the story in a particular way. Yeah.
+I felt like the one that I watched at least was very much like the Wikipedia level summary or, like, the headlines just condensed, and it was too generic, and it wasn't giving me enough, novelty and, like, new facts. So I even though, like, the video wasn't quite there, it was obviously AI. It wasn't it wasn't super visually striking. Yeah. The audio was sort of, you know, jilted.
+That all would have been fine if it had been someone who actually went and found some really deep, interesting, novel p way to tell the story or novel details that otherwise you wouldn't have heard of from the headlines. So I don't know. Still early, but I don't think they're gonna get me. There's something about going to the theater. It's an experience.
+It's like it's the anti brain.
+Speaker 2: What if you put your finger if the
+Speaker 3: finger were to turn the screen sideways?
+Speaker 1: They've done that. They've done that. There's there's somebody in Brooklyn, I think, put together like a whole, like, we're gonna watch Instagram reels together or, like, TikTok. There's, like, a short form film festival or something. Yeah.
+I mean, at some point, you have to do a premiere. Kareem from Subway Takes was talking about that. He was, you know, I've had this show. It's a massive hit. It's breakthrough.
+Like, where's my premiere? And, maybe there should be a premiere for some for the next season of Subway Takes, whenever that happens. I mean, it's also just the hard thing with Yeah. With social media shows is that there isn't really a season. It's just sort of always on.
+We sort of fake this with what are you laughing at?
+Speaker 3: Something I'm not gonna read. Tyler, who's back in the studio, said, I've been watching this on real short and I'm just not gonna read the title.
+Speaker 1: You can imagine it gets pretty click baity in there. You can definitely imagine that.
+Speaker 3: Yeah. This doesn't look this looks like if Apple knew that this was on there, they might they might ask them to take it down.
+Speaker 1: Potentially. Potentially. Yeah. I do wonder where the line will be drawn. There's a whole new there's a whole new class of problems that Apple have to grapple with.
+I thought this hilarious I thought this this screenshot from Var Epsilon was very funny, where it's just I couldn't solve the re Riemann hypothesis. I couldn't solve the Hodge conjecture. I couldn't solve p versus n p. I couldn't solve Navier strokes. This is just every really, really challenging Millennium Prize or or unsolvable math problem.
+We've been working on our own conjectures. We're we're creating
+Speaker 3: the haze Because all the conjectures growth.
+Speaker 1: Yeah. All the conjectures are solved.
+Speaker 3: Well, I mean, we actually
+Speaker 1: We gotta create new ones.
+Speaker 3: Built it out. I think it was 2009.
+Speaker 1: Yeah. I remember
+Speaker 3: back in college. We've been letting it sit Yes. Because we just didn't have the technology.
+Speaker 1: Yeah. We don't
+Speaker 3: have the capability. Yeah. We would have taken AI to to advance. Yeah. And I think we're gonna be close to cracking it.
+Yeah. But we should release the conjecture. Yeah. And let everybody kind of take their own shot
+Speaker 1: at conjecture. There's a lot of conjecture about what OpenAI is releasing today. TBPN said unbelievably excited for what's coming together. Tomorrow is feeling codex y. Are speculating that it might be a a cerebris, a faster version of Soul It's out.
+Turbo mode. It is. Okay.
+Speaker 3: ChatGPT voice is now in the desktop app. Control your computer and direct multiple agents running in ChatGPT work or codex using just your voice.
+Speaker 4: Fair enough.
+Speaker 3: It's powered by GPT live, it can speak, listen, and coordinate work in the app at the same time.
+Speaker 1: And then also health is rolling out to US users everywhere. Health and ChatGPT, you can securely connect Apple Health and supported medical records to understand your information. What about
+Speaker 3: a sleep?
+Speaker 1: Oh, gotta get it on there for sure. There's also a new law introduced, a bipartisan AI kill switch bill following the OpenAI cyber incident. The bill enters congress as lawmakers remain divided on how aggressively the federal government should regulate artificial intelligence. I'm sure this will be like a a longer conversation on a future show.
+Speaker 3: Sheil Monat is sharing some interesting nuggets in an information article Stripe, which we will be getting to
+Speaker 1: Let me tell you about Cisco.
+Speaker 3: Next episode.
+Speaker 1: Critical infrastructure for the AI era, unlock seamless real time experiences, a new value with Cisco. And we have Lisa Su joining us in just a minute. We're about to bring her onto the show. And thank you for tuning in. Thank you
+Speaker 6: for This
+Speaker 1: everyone who makes the show possible.
+Speaker 3: This is the moment we've all been waiting waiting for.
+Speaker 1: It is. It is. And thank you to Ramp for making it possible. Time is money. Say both.
+Welcome to the show, Lisa. Thank you so much for coming on. We appreciate you being It's
+Speaker 4: honored to
+Speaker 1: be busy day. Thank you so much. Please grab a seat if you wouldn't mind putting that headset on. I will do. And we will hear you loud and clear.
+How is today going? It
+Speaker 7: is a fantastic day.
+Speaker 1: Yes. What have been the highlights?
+Speaker 7: Well, you know, it's wonderful to see just everyone, you know, all of our community here. So customers, partners Mhmm. You certainly a lot of developers here. And, you know, we're seeing a lot of excitement.
+Speaker 1: Take us back to 2014. How is 2026 different?
+Speaker 3: Just a little bit different.
+Speaker 1: Not just in terms of the AI boom, but as a leader, emotionally, is is this a more stressful time because everything's happening so fast? Or is this just a more exciting time? Like, what is your life like as CEO of AMD right
+Speaker 7: Well, I have to say, when I think about this entire arc Yeah. Of 2014 until now Yeah. The thing that has been perhaps most interesting to me, it's like the world's like a different place. Yes.
+Speaker 1: Like,
+Speaker 7: every year, like, every two years, you see the tech trends are different. You see, you know, the customer, you know, sort of needs are different. Mhmm. You see the marketplace changing. And that's what just kept it really exciting for me because it's one of those
+Speaker 2: things where, like, you're never gonna get bored. Yeah.
+Speaker 7: Yep. It is certainly not less stressful,
+Speaker 2: so I can tell you that.
+Speaker 7: I think what's different about AI right now, I think the rate and pace of change Mhmm. Is actually much, much faster. I mean, semiconductors has always been a fast paced environment. But the rate and pace of change of the adoption curve of AI, and then how the technology is changing, and then, frankly, how the ecosystem is changing has has us constantly on the, hey, we gotta go faster.
+Speaker 1: Yeah.
+Speaker 7: I mean, that's the the primary thing is we have you know, we're in a business where you make decisions, you know, three to five years in advance on your technology road maps.
+Speaker 1: Yeah.
+Speaker 7: And you realize, man, we can even go faster. Yeah. And that's what the market wants.
+Speaker 1: What is this?
+Speaker 3: And I think there's so much more external pressure in a way that the computing industry and the technology industry in general just hasn't had.
+Speaker 7: Well, I view it as actually a really good thing. I mean, people ask me that from time to time. And, you know, the reason I view it as a good thing is, look, you know, we're in a place where everybody needs compute.
+Speaker 5: Yeah.
+Speaker 7: Everybody wants compute. You know, every country wants compute. Every hyperscaler wants compute. You know, all of us are using it. And so it is not, you know, where the the components under covers were actually, you know, helping drive, you know, sort of how technology is being consumed.
+And so I think that's the difference. Right? So it's it's much more front and center, you know, versus just something that only techies know about.
+Speaker 1: Yeah. Culturally, how is what is the state of AMD's culture? Because in there's one view where you're at the center of the AI boom. It's the best place to work. And then at the same time, things are changing.
+You have to move faster. There's a little bit of anxiety across every employee base around what my job will look like in a decade. How are things changing for the employees at AMD?
+Speaker 7: Well, I think I'd take a step back and say, hey. Why do I wake up every day? What are people at AMD really excited about? And we're really excited about putting great tech out there. And I'm not kidding.
+You know, our our mantra, like, our number number one mantra is, you know, build great products.
+Speaker 3: Yeah.
+Speaker 7: And it's about how do we keep pushing the envelope on that. So you have a day like today or, you know, this week, which has been a culmination of years and years of work. You You you think about launching Helios, you think about launching Venice, you think about bringing together the entire ecosystem, and you're like, it stays like today Yeah. That we that that that we're working so hard for. And I think the culture is one of, we wanna be really the best in the industry.
+I mean, our goal is to drive the future of technology and, you know, we do it the AMD way. And what does the AMD way mean? Mhmm. We do it in partnership. We do it in color operation.
+We believe in open ecosystems. We believe in using the best technology for each workload, you know. So this idea that,
+Speaker 2: you know, one company is gonna have the killer chip.
+Speaker 1: Yeah.
+Speaker 7: I don't think that's the world we're in today. Right? The world we're
+Speaker 3: in the the AMD way? We we had Travis Kalanick on the show yesterday, and he started off saying, you know, the Uber way, and then he had stopped himself, and he said, well, the Travis way. And he he laid out sort of his approach. Was that something was this approach something that you feel like you the the company had in 2014 or or or was that or these sort of pillars things that you felt like were important going forward and you've added added some over time?
+Speaker 7: Well, I would say what has been the foundation of AMD, you know, back to, you know, Jerry sound Sanders, our founder, has always been about pushing the envelope. And, you know, in some sense, you know, being risk takers, you know, wanting to have the best road maps out there, that has always been the foundation of AMD. I think the last ten plus years, you know, hopefully what, you know, I've brought to it, what Mark Papermaster, our CTO has brought, what the leadership has brought, is a sense of not only are we going to put the best technology out there, but we're gonna be predictable, we're gonna be great partners, and we're going to do it in a way that, you know, brings together the ecosystem. And, you know, I have to say everything about tech. Like, I was so happy to see to have, you know, Tom Brown of Anthropic with us, you know, Santosh of Meta, Sachin of OpenAI, you know you know, Germany at AT and T.
+Yeah. G two was here. And what you kinda get from all of that is, you know, partnership is not just a word. Like, partnership is kind of our foundation. And I'm a big believer in one plus one is greater than three.
+So, you know, obviously, we have to have great tech.
+Speaker 2: Yeah.
+Speaker 7: But we also have to be able to, you know, kind of kind of see the future through the broad lens. And the way you do that is having, you know, great partners, along the way. So that's very much, I think, the foundation of today's AMD, you know, culture.
+Speaker 3: Yeah. What were what were some of the highlights of, of Tom's talk earlier? He was talking about how AI is actually speeding up their ability to adopt new hardware and bring new systems online. But what were the highlights for you?
+Speaker 7: Well, I'm super excited to be able to talk about it. You know, we've been I I kid you not, we have very much wanted Anthropic on AMD for a long time. And we just had to find the right intersection point, the right intersection point of our technology with, you know, where they are. I mean, know, Claude has been incredibly, incredibly successful. And probably the highlight for me was, I think he told that story on stage about the MI three fifty five, and that's a very true story.
+It's a very true story.
+Speaker 3: And you've been busy today, but that's what the Internet's talking about.
+Speaker 2: Is that right? Okay. I I I haven't seen that. I I could tell
+Speaker 7: you, a few months ago, my guys were like, hey, we think Anthropic is is on, you know, three fifty fives and and they're doing work on it. And I'm like,
+Speaker 2: okay, well, you know, make sure
+Speaker 7: you know what they're doing,
+Speaker 2: make sure we're helping them. And they're like, Lisa, they don't really want our help. They don't really need
+Speaker 7: our help. They're like, they're able to do it with Claude. And I'm like, wow.
+Speaker 1: That's incredible.
+Speaker 7: That's incredible. So he I think he told you the the story. But it's it's just a lot about how the the ecosystem has evolved over time. Right? I'm a big, big believer in AI's incredible force multiplier.
+It's true across every industry, but it's especially true across our world. Mhmm. Which is, you know, putting, you know, great technology out there. If we can reduce our time to market, you know, sort of the the time it takes from us to start an idea to when we actually finish and ship a product, if we can shave three months off of that or six months off of that, that has tremendous value for our customers. Like you heard, you know, Sachin say, like, more compute faster.
+Yeah. That is a frequent conversation I have, more compute faster.
+Speaker 1: Yeah.
+Speaker 7: And these are really complicated systems. I I will absolutely say they're really complicated systems, and we need to make sure that we are, you know, able to, you know, put it all together. And that's where AI can be tremendously helpful on both hardware and software.
+Speaker 1: Yeah. You mentioned, not focusing on just, like, the one single chip. AMD has a lineage in CPU, GPU, FPGA, many other systems. What are the advantages of having that breadth of product scope? And are there any disadvantages to that?
+Speaker 7: Well, I you know, I think the the interesting thing is, you know, every so often, you hear, like, this is a killer chip.
+Speaker 2: Yeah. Right? You guys have heard,
+Speaker 3: like, GPUs on the model side too.
+Speaker 2: GPUs are gonna take over the world.
+Speaker 1: Yep. Like Everything's gonna
+Speaker 2: be CPUs are dead. Yeah.
+Speaker 7: Like, we're gonna move every single workload
+Speaker 1: Yeah. Yeah.
+Speaker 7: Over. And the world just doesn't work like that.
+Speaker 1: Yeah.
+Speaker 7: And so our thought process has always been, you know, people asked me very early on, hey, Lisa, why don't you just focus? Like, you decide. Like, whether it's CPUs or GPUs, why do you need both? And, you know, I I think about each one of these questions deeply and, you know, we fundamentally believe that there is no one size fits all. Like, the world is a heterogeneous world.
+Mhmm. Like, you are different than I am. We have different needs. We have different workloads. Our businesses are different.
+You're gonna need different compute. And I think the portfolio that we have, you know, CPUs, GPUs, we acquired Xilinx, so we brought the physical AI component in there. We have a rich, you know, PC, you know, ecosystem. I think allows you to truly pick the right compute.
+Speaker 2: Mhmm.
+Speaker 7: Now, it's a little bit harder. Right? We have a tremendous number of r and d priorities. But I think we've done it in a very, know, kind of, I wanna say smart way in the sense that each part of our product portfolio builds on each other. Mhmm.
+Like, we talk about, you know, triplets being a big thing that we do. We do that across a portfolio. So we do that across our CPU portfolio, our GPU portfolio, and it it just is an example of how we're able to leverage getting the right compute for the right workload.
+Speaker 1: Yeah. Talk about, the other slice of the business, the other segmentation between, consumer, prosumer, enterprise. How valuable how important is it to, have a clear chain of products? In particular with, talent, it feels like, a lot of folks will start on a consumer rig, they might build some small model, or they might be doing CGI work or something else, and they're using a Threadripper to render something locally. And then eventually, they move to the cloud, and eventually, they start working in an enterprise.
+How how did how is that going to evolve?
+Speaker 7: I think it is extremely important Mhmm. Like you said, because people access technology in different ways. Yeah. You know, not everyone is going to a, you know, big cloud instance Yeah. To experience AI.
+And so, you know, the fact that we do have a consumer road map, a prosumer road map, you know, Ryzen, our Radeon, you know, frankly, we're putting a lot more emphasis on, you know, some of these other ways to access, you know, AI. So we made a big investment in AI PCs. I still believe that local AI is going to be one of, you know, the key enablers to truly get all of the tokens that you need in different places. So our Rise and AI Max portfolio, I think physical AI is another place where, you know, we just launched these, you know, small robotics form factors so that people can can experiment with it. So I I I do think it's quite important
+Speaker 1: Yeah.
+Speaker 7: To have, let's call it, low barrier of entry. Like, I want people to experience AMD
+Speaker 5: Yeah.
+Speaker 7: And have a wonderful experience. And Yeah. Hey, they may end up, you know, being in, you know, the largest frontier model companies or, you know, frankly, the amount of startups that are doing just amazing technology is is fantastic, and and we wanna support those as well.
+Speaker 3: What? How do you on that, how do you think about long shot r and d? You have your existing roadmap, but we talk to new chip companies very frequently on the It feels like every week there's somebody new that has a billion dollars and they've they're onto something and they're and I can't imagine you haven't thought of it, or at least the AMD team hasn't at least thought of it. And so, how do you think about how do you think about some of these investments in r and d that that are maybe like higher risk, but high potential over the long run?
+Speaker 7: Well, we are in a world where there is a long arc on r and d. Like, I really do like to say, you know, judge us on what we're doing today. The ideas were never really thought of three to five years ago.
+Speaker 2: Yeah. Yep.
+Speaker 7: So chiplets, networking, optimization, CPU and GPU, putting that together in Helios. I mean, that's really unfolded over the last, you know, three or four years. And today, you know, we're thinking about, you know, what's beyond the road map. And I think both are very important. So we do have a tremendous number of new ideas.
+No question. You know, very active research team. Our team is working on not just MI 500 today, MI 600, lots and lots of ideas. We're spending time with our top customers talking about, hey, tell me where the models are going. What are you thinking the workloads will need so that we can put that flexibility and capability into into our roadmap.
+But I wanna give credit where credit is due. There there are a growing number of startups. It it used to be that people only did soft software startups because hardware was too hard.
+Speaker 1: Yeah.
+Speaker 7: Yeah. It took too long.
+Speaker 3: Yeah. And now it's easy, so everyone's doing it.
+Speaker 2: It it is not easy.
+Speaker 3: I'm joking.
+Speaker 7: It is not easy, but it's appreciated. Yeah.
+Speaker 2: Yeah. That's I know what I wanna say.
+Speaker 7: Yes. It's appreciated. Yeah.
+Speaker 2: And and part and part
+Speaker 3: of this, like, software singularity that it that it feels like in some ways we're already in, VCs are just they feel like more confident underwriting risk Yeah. On the hardware side.
+Speaker 2: Yeah. I don't know that
+Speaker 7: I would feel more or less, but I would definitely say that there's been a change. You know, people that didn't necessarily have the patience for hardware before
+Speaker 5: Yeah.
+Speaker 7: Because it's a long arc on hardware. And now I think there's an appreciation that fundamentally, you know, hardware, you know, silicon software systems, when you optimize together, you're gonna get Yeah. A significantly better result. So my view is lots of good ideas out there. I think one of the things I pride myself on within AMD is we are quite quite open to new ideas.
+You know, we've gotten to the place where I'm really happy with the acquisitions that we've done. We've we've actually brought in some incredibly talented individuals who have had a huge huge impact on our AI roadmap. You know, certainly, I think a lot of people know Anush out there. So one of our Yeah. One of our acquisitions Oh, yeah.
+Who is doing incredible job trying to make sure that everyone who wants to use Rockham is is gonna get our support.
+Speaker 2: Yeah.
+Speaker 7: But a number you know, our Pensando acquisition, our Xilinx acquisition, our ZT acquisition, all of these were to kinda bring the components in
+Speaker 2: Yeah.
+Speaker 7: That help us, build the full system solution.
+Speaker 1: Well, we know you're busy. Thank you so much. We have Gong.
+Speaker 2: We'd love you
+Speaker 1: to for
+Speaker 3: you to hit it. On this
+Speaker 1: Commemorate this Do
+Speaker 2: I get
+Speaker 7: to do this?
+Speaker 1: Please. As hard as you want. Oh, there we go. Right hit. Thank you so
+Speaker 3: much. And We have hardware companies. Consumer hardware.
+Speaker 1: They're hard.
+Speaker 3: But cheap in it. We have do
+Speaker 4: a sign.
+Speaker 1: D powered chromatic from ModRefuro in the m 64. You wanna sign right here next to AMD? Perfect. There we go.
+Speaker 7: Is this one of yours or is this
+Speaker 1: It's Dylan's over there. Dylan. Alright. We're we're good friends of the team over there. We love love just consumer hardware and all these things.
+So thank you for powering it. And you for coming on the show. And congratulations on everything
+Speaker 4: Thanks. Cheers.
+Speaker 1: We'll talk to you soon. Have a great day. And that's our show, folks. Thank you so much for tuning in to TBPN live from AMD. We are traveling tomorrow.
+We'll be back on Monday, 11AM Pacific. Thank you to the team here who flew up, and thank you to everyone at AMD for making
+Speaker 3: Well done. Possible. We really appreciate dialing in these IRL shows.
+Speaker 1: Yeah. We're getting there. One step ahead The team
+Speaker 3: makes it look easy.
+Speaker 1: Leave us five stars on Apple Podcasts and Spotify. Sign up for our newsletter, tbpn.com. And we will see you on Monday, 11AM sharp for another one. Goodbye.
+Speaker 3: Cheers.
