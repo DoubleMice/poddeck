@@ -13636,3 +13636,89 @@ jobs:
     updated_at: 2026-07-25T18:25:06.908Z
     error: 'MiMo transcription failed: 400 {"error":{"code":"400","message":"Multimodal data is corrupted or cannot be
       processed.","param":"","type":"BadRequestError"}}'
+  - key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z:chunk:0
+    parent_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    attempt_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z
+    provider: mimo
+    id: 5c51dea2-48a4-11f1-aad3-37cf1e9be3b9
+    source: unchained
+    title: "Why Wrapped Energy or Compute Will Be the New Store of Value: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    task_id: b7550521-a66c-4a87-8e00-2120415fc425_dc348d280812463d84a393365c5f159d
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-07-26T18:23:48.718Z
+    updated_at: 2026-07-26T18:25:11.911Z
+    completed_at: 2026-07-26T18:25:11.911Z
+  - key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z:chunk:1
+    parent_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    attempt_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z
+    provider: mimo
+    id: 5c51dea2-48a4-11f1-aad3-37cf1e9be3b9
+    source: unchained
+    title: "Why Wrapped Energy or Compute Will Be the New Store of Value: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    task_id: 577d5d7e-7490-4b8b-8b0f-5f4bc02cc6dc_c1d46105cfd04848a1b461b2a24887e9
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-07-26T18:23:48.718Z
+    updated_at: 2026-07-26T18:25:45.009Z
+    completed_at: 2026-07-26T18:25:45.009Z
+  - key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z:chunk:2
+    parent_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    attempt_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z
+    provider: mimo
+    id: 5c51dea2-48a4-11f1-aad3-37cf1e9be3b9
+    source: unchained
+    title: "Why Wrapped Energy or Compute Will Be the New Store of Value: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    task_id: 67492b7d-84a2-4f0b-8366-9965e64c5054_e4b8c782514441dfb0fd116177328b9f
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-07-26T18:23:48.718Z
+    updated_at: 2026-07-26T18:26:16.208Z
+    completed_at: 2026-07-26T18:26:16.208Z
+  - key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z:chunk:3
+    parent_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    attempt_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z
+    provider: mimo
+    id: 5c51dea2-48a4-11f1-aad3-37cf1e9be3b9
+    source: unchained
+    title: "Why Wrapped Energy or Compute Will Be the New Store of Value: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    task_id: fcb09fec-7759-41bc-80a3-4073e5d10b9d_503a0f41cae14772b982b88985c5e6b7
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-07-26T18:23:48.718Z
+    updated_at: 2026-07-26T18:26:47.075Z
+    completed_at: 2026-07-26T18:26:47.075Z
+  - key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z:chunk:4
+    parent_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    attempt_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-07-26T18:23:48.718Z
+    provider: mimo
+    id: 5c51dea2-48a4-11f1-aad3-37cf1e9be3b9
+    source: unchained
+    title: "Why Wrapped Energy or Compute Will Be the New Store of Value: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-07-26T18:23:48.718Z
+    updated_at: 2026-07-26T18:26:47.786Z
+    error: 'MiMo transcription failed: 400 {"error":{"code":"400","message":"Multimodal data is corrupted or cannot be
+      processed.","param":"","type":"BadRequestError"}}'
