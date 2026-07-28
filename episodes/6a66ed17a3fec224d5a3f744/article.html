@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>148. 对游凯超3小时访谈：开源Infra、和模型Co-design 、"如果vLLM失败，我们会后悔一辈子"</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 24px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 48px 40px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  @media (max-width: 600px) {
+    article { padding: 28px 20px; }
+    body { padding: 12px; font-size: 16px; }
+  }
+  h1 { font-size: 1.6em; margin-bottom: 0.4em; line-height: 1.35; }
+  .meta { color: #868e96; font-size: 0.9em; margin-bottom: 2em; }
+  .meta span { margin-right: 1.2em; }
+  h2 { font-size: 1.2em; margin: 2em 0 0.8em; padding-bottom: 0.3em; border-bottom: 2px solid #e9ecef; color: #1a1a1a; }
+  h3 { font-size: 1.05em; margin: 1.5em 0 0.6em; color: #343a40; }
+  p { margin-bottom: 1em; }
+  blockquote {
+    margin: 1.2em 0;
+    padding: 1em 1.2em;
+    border-left: 4px solid #1971c2;
+    background: #f1f8ff;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: #343a40;
+  }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 1em 0; }
+  @media (max-width: 500px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 4px solid #1971c2;
+    font-size: 0.92em;
+    line-height: 1.6;
+  }
+  .card.blue  { background: #f1f8ff; border-color: #1971c2; }
+  .card.green { background: #f0fff4; border-color: #2f9e44; }
+  .card.purple { background: #f8f0ff; border-color: #862e9c; }
+  .card.orange { background: #fff9f0; border-color: #e8590c; }
+  .card.yellow { background: #fffef0; border-color: #f08c00; }
+  .card.red   { background: #fff0f0; border-color: #c92a2a; }
+  .card strong { display: block; margin-bottom: 0.3em; }
+  .gloss { font-size: 0.85em; color: #868e96; padding: 0.5em 0; }
+  .footer {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid #e9ecef;
+    color: #868e96;
+    font-size: 0.85em;
+  }
+  .footer a { color: #1971c2; }
+  .quote-block {
+    margin: 1em 0;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 4px solid #1971c2;
+    font-style: italic;
+  }
+  .quote-block .ctx { font-size: 0.8em; color: #868e96; margin-top: 0.3em; font-style: normal; }
+  .quote-block.blue  { background: #f1f8ff; border-color: #1971c2; }
+  .quote-block.green { background: #f0fff4; border-color: #2f9e44; }
+  .quote-block.purple { background: #f8f0ff; border-color: #862e9c; }
+  .quote-block.orange { background: #fff9f0; border-color: #e8590c; }
+  .quote-block.yellow { background: #fffef0; border-color: #f08c00; }
+  .quote-block.red   { background: #fff0f0; border-color: #c92a2a; }
+</style>
+</head>
+<body>
+<article>
+
+<h1>148. 对游凯超3小时访谈：开源Infra、和模型Co-design、"如果vLLM失败，我们会后悔一辈子"</h1>
+
+<div class="meta">
+  <span>嘉宾：游凯超（vLLM 联合创始人 & 首席科学家）</span>
+  <span>来源：小俊播客</span>
+  <span>2026年7月</span>
+</div>
+
+<h2>为什么要听这期</h2>
+
+<p>游凯超是过去三年 AI 基础设施领域最值得关注的人物之一。他本科就读清华，在学术界的"礼乐崩坏"中完成了一次罕见的职业转型——从算法研究者变成了系统工程师，从论文发表者变成了开源社区的核心维护者。他在伯克利的 SkyLab 深度参与了 vLLM 项目，随后和其他三位创始人一起，把这个世界顶级的开源推理引擎变成了一家估值惊人的公司。</p>
+
+<p>但这期对话的价值远不止于"创业故事"。游凯超用三小时的时间，给出了一个 AI Infra 从业者最完整的方法论分享：为什么模型与基础设施的联合设计变得如此重要、DeepSeek 的 infra 为什么全球顶级、MoE 架构给推理带来了哪些根本性挑战、Coding Agent 正在如何重塑开源社区的治理模式——以及一个关键性的判断：<strong>开源模型最终会赢。</strong></p>
+
+<div class="cards">
+  <div class="card blue">
+    <strong>vLLM 创业内幕</strong>
+    四个学生创始人如何用"意义"击败每人2000万美元年薪的诱惑；从开源项目到公司的关键时刻。
+  </div>
+  <div class="card green">
+    <strong>模型 × Infra 联合设计</strong>
+    硬件彩票、RoPE、MoE 三大挑战——Co-design 的完整方法论与第一性原理解析。
+  </div>
+  <div class="card purple">
+    <strong>中国开源崛起</strong>
+    2025 年中国开源模型爆发，游凯超从伯克利回国从零搭建中文社区的实战经验。
+  </div>
+  <div class="card orange">
+    <strong>AI 时代的开源治理</strong>
+    AI slop 泛滥、垃圾 PR 产业化——当 Coding Agent 让代码变得廉价，开源社区的未来在哪里？
+  </div>
+</div>
+
+<h2>从清华擦线到特奖得主</h2>
+
+<p>游凯超的高考分数比清华录取线只高了"两三分"，用他自己的话说就是"勉强擦着分数线进来"。但他从小就有一种不同寻常的学习态度——不喜欢"无意义的重复劳动"，更享受学到新知识的过程。中学时期，他通过学堂在线自学了 Python 课程，又用几何画板做物理仿真的动画演示。这些经历让他很早就看到了计算机的潜力，但他并没有走传统的"竞赛保送"路径。</p>
+
+<p>进了清华之后，游凯超没有把高考分数放在心上。"那个分数只是一个 admission，进了清华之后应该把它忘掉，接下来做大学要做的事情。"他在大一期间给老师发了一百多封邮件请教问题，精读笔记后来在校史馆展出，36 门课程获得了 4.0 的满绩。但他自己不认为这是"卷"——"更多是我还是比较享受学习。我没有把笔记的字数当做一个目标来优化——更多是自然而然的学习结果。"</p>
+
+<p>2019 年，游凯超获得了清华特等奖学金。但他对这个荣誉的态度也颇为冷静：特奖是一个特殊历史时期的产物，过度的媒体曝光对获奖者反而是一种干扰。"在我们参选的那一年，学校已经意识到了这一点，取消了现场答辩的直播，有意压低了宣传。"在他看来，特奖更多是让他"朋友圈变得更大了，可以接触到更多优秀的同辈"——这种功利之外的务实态度，贯穿了他的整个职业生涯。</p>
+
+<h2>"礼乐崩坏"：学术界的论文通货膨胀</h2>
+
+<p>游凯超 2018 年开始接触人工智能研究时，学术圈还处在一个比较健康的状态。"一届学术会议大概几百篇论文，审稿人可以给你比较有建设性的反馈——告诉你哪个地方做得好，哪个地方做得不好，你应该怎样去改进。"</p>
+
+<p>但 2020 年之后，情况发生了根本性变化。AI 会议的投稿数以几何级数增长，而审稿人的数量和质量远远跟不上。"审稿质量急剧下降，你的投稿就像抽彩票一样——中或不中可能跟你工作的质量本身没有很大关系。"游凯超把这种现象叫做"礼乐崩坏"，这个词来自中国古典文化，用来形容学术圈规范的瓦解非常贴切。</p>
+
+<blockquote>"学术界它也不是一开始就礼乐崩坏的。"</blockquote>
+
+<p class="gloss">作者概括：这是一次渐变的失望，不是一个突然的决裂。游凯超亲眼见证了这个过程，而他的应对方式不是抱怨，而是换了一条跑道。</p>
+
+<h2>三个原因：为什么放弃算法转向系统</h2>
+
+<p>游凯超从算法研究转向系统工程，有三个递进的原因。</p>
+
+<p>第一个就是上面说的"礼乐崩坏"。第二个原因，是何恺明给他的启示。游凯超把何恺明视为"算法领域的天花板"，ResNet 一战封神。但他分析恺明老师成功的核心因素时，得出的结论是：不只是想法好，更关键的是<strong>有资源做大规模的实验</strong>。"我们实验室里面的这些小虾米，只是在玩我们的玩具数据集，在螺丝壳里做道场。当我尝试把实验规模扩大的时候，显而易见的事实是——支撑实验的这个机器学习系统以及对应的数据，才是决定成败的关键。"</p>
+
+<p>第三个原因来自工业界的直接反馈。2022 年，游凯超在一次会议上遇到了旷视的首席科学家张祥雨，聊了一个多小时。他惊讶地发现，这位目标检测算法的大佬聊的完全不是"我们又发明了什么新的 loss"，而是复杂硬件对软件带来的挑战——多级缓存结构、CUDA kernel 代码问题、数据在芯片上不同缓存层级之间的流动。</p>
+
+<blockquote>"你可以说我的东西不 novel，但是你不可以说我的东西没有用。"</blockquote>
+
+<p>这成了游凯超选择系统工程的核心逻辑。算法研究的正反馈很难积累——你说提升了 2-3% 的准确率，别人复现时可能因为场景不同反而降了。但系统工程不同：你说加速了两倍就是两倍，别人用了就是能加速两倍。反馈是确定的、累积的。</p>
+
+<h2>两个世界：Michael Jordan 和 Ion Stoica</h2>
+
+<p>游凯超的职业生涯中，伯克利的两位教授起到了关键性的塑造作用。一位是机器学习领域的巨擘 Michael Jordan，另一位是系统领域的 Ion Stoica。</p>
+
+<p>Michael Jordan 更偏学术和理论，研究机器学习算法背后的理论洞察，也做博弈论和经济学分析。他从不自称"AI 研究者"。Ion Stoica 更偏系统，追求的是 real-world impact，做了大量开源软件——Spark、Ray，后来推动 vLLM 的发展。</p>
+
+<p>游凯超选择了后一条路。"两者没有优劣之分，但在当下的时代，后一个是更值得追求的。前一种要能做出 impact 的，只有在世界上很少的地方有这样的坑位。"他也在跟自己的好友翁家易（后来的 ChatGPT 训练师）交流后确认了这个判断：数据和算法研究跟公司绑定很强，需要大量资源；但机器学习系统可以在实验室进行小规模研究，然后很容易扩展到大规模场景。</p>
+
+<h2>伯克利的开源基因</h2>
+
+<p>要理解 vLLM 为什么诞生在伯克利，需要了解这所学校的"重工业软件"传统。BSD 操作系统、RISC-V 芯片架构、RAID 存储、Spark 和 Ray 分布式系统——这些改变行业的基础设施，几乎全都是博士生在读期间发起的。</p>
+
+<p>David Patterson（图灵奖得主）提出了一个著名的观点：每个实验室只做五年——刚好是博士生毕业的周期——充分利用优秀博士生的时间让他们专注一个领域。AMPLab 做了 Spark，RISELab 做了 Ray，SkyLab 做了 vLLM。实验室的五年周期和工业界需求的周期一旦共振，就会诞生重要的项目。</p>
+
+<p>游凯超恰好在 SkyLab 的周期里出现在了伯克利。他在 2024 年去交流时，vLLM 已经开源了，发展势头迅猛。"我觉得这个历史机遇摆在面前，值得投入精力去维护它。"</p>
+
+<h2>PageAttention：一篇"too simple"的论文</h2>
+
+<p>vLLM 的起源是一篇叫 PageAttention 的论文，核心思想借鉴了操作系统的虚拟内存管理来管理 KV Cache。这篇论文投稿到系统领域顶会 SOSP 2023 时，受到了审稿人的大量批评——"你这个想法太直接了，没有什么 novelty"。</p>
+
+<p>但论文最终以低分过线被接收了。原因很简单：做得早，实验做得非常丰富。而且从今天的视角来看，这篇论文开启的不仅仅是一个算法，而是一整个推理生态系统。</p>
+
+<blockquote>"vLLM 是一个推理引擎，代表着一个推理的生态系统。你不能只认识到它是 PageAttention——它是后续一系列推理优化技术的集合。"</blockquote>
+
+<p>今天 vLLM 支持超过两百种模型结构，是 GitHub 上按贡献者活跃度排名第一的项目。它解决的核心问题是：在模型和硬件都飞速发展、互相耦合的时代，提供一个高效的推理服务，<strong>屏蔽模型和硬件的复杂性</strong>。</p>
+
+<h2>V0→V1 重构与创业决心的形成</h2>
+
+<p>2024 年是 vLLM 的重构之年。游凯超用了一个非常形象的比喻来解释这次重构：好比发电系统从火电过渡到新能源发电。"从用户侧看，使用方式差别不大，你插上就能用。但从推理引擎视角看，背后的工作原理发生了巨大变化。"</p>
+
+<p>2025 年，情况变得更加严峻。模型和硬件都越来越大，需要做集群级别的优化。但开源社区的人力资源是不确定的——贡献者来来去去，无法支撑长期的重大 feature 开发。机器资源更是问题——"我们只能去各处乞讨"，拿到一台机器已经是对方的最高支持力度，而且随时可能被收回。</p>
+
+<p>再加上法务问题——跟很多公司合作新模型发布前的支持需要签 NDA（保密协议），但开源社区不是一个法律实体，签不了。这些积累的痛点让游凯超意识到：<strong>没有公司在背后支撑，这个项目已经无法继续往下发展了。</strong></p>
+
+<p>但创立公司对这四个学生来说，是一个巨大的心理跨越。融资、招聘、商业化——全是从未涉足的领域。"这个路线的选择困扰了我们两年。"</p>
+
+<h2>"你赚了很多钱，但 vLLM 失败了，会开心吗？"</h2>
+
+<p>四个创始人中，最摇摆的是 Woosuk——PageAttention 论文的第一作者，vLLM 的 CTO。他的选择机会实在太多了：xAI 初创时，马斯克邀请他领导 infra 建设；Thinking Machines Labs 创立时，创始人邀请他负责基础设施建设。任何一个选择都意味着天文数字的财富。</p>
+
+<p>游凯超和 Simon 最后用了"逼宫"的方式：</p>
+
+<blockquote>"你如果不跟我们一起创业，你赚到了很多钱，但是十年之后我们的项目失败了，你是开心还是不开心？"</blockquote>
+
+<p>这个问题问出来后，"是我们双方都需要冷静一下的时候"。Woosuk 想了几天，回来了。他的答案和三年前游凯超、Simon 的答案是一样的：你赚多少钱，如果 vLLM 项目失败了，都不会开心。</p>
+
+<p>更惊人的是，在公司注册前夕，某家顶级大厂的一号位直接打电话来——开价每人年薪 2000 万美元，希望他们不要创立公司，来帮自己做基础设施和推理。"但是我们信念比较坚定，直接爽快地回绝了，没有一个人犹豫。"游凯超引用《送东阳马生序》中的话："<strong>以中有足乐者，不知口体之奉不若人也。</strong>"</p>
+
+<p>这背后还有一个很少被讨论的事实：这些计算机方向的技术同学，基本生活需求非常简单——"有吃有住，有电脑能上网就可以了"。正是这种低物质门槛，让 vLLM 的创始团队能够一致地把"意义"放在"金钱"之上。游凯超用另一句古语总结：<strong>"仓廪实而知礼节，衣食足而知荣辱。"</strong></p>
+
+<h2>开源治理的艺术</h2>
+
+<p>vLLM 采用分级管理的治理模式，游凯超称之为"仁慈的独裁者"——日常心平气和地沟通，但重要的取舍由他们拍板。游凯超做的最强硬的一个决策，是把 beam search 功能从引擎里彻底删掉。做推荐系统的同学持续抱怨，但大模型推理的主流 workload 已经不再适应 beam search，维护它只会带来指数增长的复杂性。</p>
+
+<p>管理两千多个贡献者的最大挑战不是写代码，而是"梳理优先级——要做什么，更重要的是不做什么"。2025 年 vLLM 成为 GitHub 最活跃项目，但 2026 年带来了全新的问题：<strong>培训机构通过提交垃圾代码来包装学员的简历</strong>，AI 生成的 PR 淹没了真正有价值的贡献。</p>
+
+<p>"这彻底打破了我们对开源社区的用户都是善意的这一基本假设。"游凯超预测，未来社区会两极分化——维护者和用户分离。用户只需提交 bug report 或 feature request，不需要贡献代码；维护者用 Coding Agent 自己写代码。PyTorch 的核心维护者 Edward Yang 也表达了类似的观点："与其花时间看别人的 PR，不如我自己重写一遍。"</p>
+
+<blockquote>"AI 可以帮我们走完 90% 的路程，但还有 10% 的关键的画龙点睛的那一部分需要人来提供支持——长期维护、顶层系统设计、对接下来三个月要发布的新模型的预判。"</blockquote>
+
+<h2>Token = 电：理解 Co-design 的核心比喻</h2>
+
+<p>游凯超用发电系统来解释模型与基础设施的联合设计。硬件是自然资源（风力、水力、太阳能），模型是发电机（风力发电机、光伏发电机、水力发电机），推理引擎是电力系统（把电分发到千家万户），Token 就是最终交付的电力。</p>
+
+<p>在这个比喻下，Co-design 的程度直接决定发电效率。在某个特定地区（特定硬件条件）下，到底是设计水力发电机还是光伏发电机？水流的湍急程度、日照的强度——这些"自然资源"的参数应该在发电机设计阶段就考虑进去。</p>
+
+<p>但 Token 和电有一个根本性的不同：</p>
+
+<blockquote>"电是比较通用的，可以调制——你只需要在出口统一规定 220 伏，所有家电就能接入。但 token 没有办法做调制。<strong>你没有办法把一个 DeepSeek 模型的 token 转化为一个 Kimi 的 token。这个 token 是带着模型的烙印的。</strong>"</blockquote>
+
+<p>这意味着推理引擎不仅要高效，还要适配"带着不同烙印"的模型——就像一个电网同时要传输 90 伏、110 伏、120 伏的电，而且每种电都无法被变压器转换。</p>
+
+<h2>硬件彩票：为什么 Transformer 赢了</h2>
+
+<p>"硬件彩票"这个概念解释了很多 AI 历史上的胜负。摩尔定律的黄金时代结束了——通用性能不再两年翻一倍。现在的算力都是<strong>专用算力</strong>。如果你的算法没有利用到这些专用算力，就吃不到时代的红利。</p>
+
+<p>最典型的反面案例是 Hinton 老师强推的 Capsule Network。"从概念上非常 make sense，但它在 GPU 上不友好，所以至今没有得到广泛应用。"而 Transformer 正好相反——里面大量矩阵乘法，天生适合 GPU 的并行结构。</p>
+
+<p>更微观的案例是 RoPE（旋转位置编码）。位置编码有上百种实现方案，为什么 RoPE 活下来了？因为 FlashAttention 成为训练必须之后，大部分用户没有能力修改 FlashAttention 的核心实现。RoPE 可以在 Attention Kernel 之外独立计算，和 FlashAttention 互补。所以说：</p>
+
+<blockquote>"模型结构设计得好，它就可以跟基础设施有一个共鸣的效果——大家可以互相提高，有更高效的实现，整体的训练推理效率都会提高很多。"</blockquote>
+
+<h2>DeepSeek 的 Infra 为什么这么强</h2>
+
+<p>游凯超认为 DeepSeek 的 infra 团队是全球顶级的。"是不是第一不好说，但绝对是顶级的。"这种深厚功底的源头是——<strong>从幻方量化继承的对性能的极致压榨</strong>。做量化交易要自建机房，要对机器的每一个细节进行深度控制，这给了 DeepSeek 做全栈优化的能力。</p>
+
+<p>但更关键的是，DeepSeek 的算法团队也懂 infra。2024 年初，是 DeepSeek 的<strong>算法同学</strong>写出了 MoE 的高效实现。后续的细粒度 MoE 也是他们在推理系统里第一个做出来的。"infra 的能力让算法研究员可以更快更充分地去探索各种选项，同时算法同学学习 infra 知识，让算法设计更 infra 友好——这就形成了 Co-design 的正循环。"</p>
+
+<p>FP8 训练是一个具体的例子。从 A100 升到 H100，英伟达引入了 FP8 算力，比 16 比特快两倍。但要用好加倍的算力并不容易——全局量化容易损失精度。DeepSeek 是第一个大规模跑通 FP8 训练的团队：权重做 block quantization，activation 做逐 channel quantization；然后再用矩阵乘法加向量单元累加的方案，在精度不损失的情况下实现计算效率领先。"这些故事都写在 DeepSeek 的技术报告里，只是看的人多少的问题。"</p>
+
+<h2>MoE 架构的三大挑战</h2>
+
+<p>MoE（混合专家模型）目前是最主流的大模型架构之一，游凯超从推理 infra 的角度分析了它的三大挑战。</p>
+
+<p><strong>第一，细粒度专家。</strong>DeepSeek MoE 的发现是专家的粒度越细越好，但细粒度导致矩阵乘法的维度降低，对 GPU 的实现不友好。</p>
+
+<p><strong>第二，动态路由选择。</strong>MoE 通过路由模块决定每个 token 选择哪几个专家。这是数据依赖的——而 GPU 擅长的是静态数据流，就是提前知道这部分数据要跟哪部分数据做运算。</p>
+
+<p><strong>第三，专家并行系统。</strong>MoE 扩展到万亿参数，只激活其中几十分之一，这对通信和系统设计的要求极高。DeepSeek 在 2025 年提出的 DeepEP（处理专家并行的通信问题）和 DPEP（处理专家并行的计算选择问题），正好针对性地解决了这些问题。</p>
+
+<h2>小龙虾攻打月球：Agent 时代的前缀缓存灾难</h2>
+
+<p>Coding Agent 的爆发给推理引擎带来了新的负载特征。在多轮交互中，<strong>前缀缓存（prefix caching）</strong>是最关键的性能优化——尽量保持历史状态，让下一次请求可以快速复用之前的计算结果。</p>
+
+<p>但很多 Harness 框架的设计者对推理引擎的理解非常有限。最典型的两个反例：ChatGPT 曾经在 system prompt 里嵌入当前日期，导致前缀缓存在每次日期切换时统一失效。更糟糕的是，有些框架把当前时间精确到秒地嵌入请求，且定时任务总设在整点——一到整点，推理系统收到一大波巨大的流量。</p>
+
+<blockquote>"Moonshot 的同学对此有一个非常形象的说法：一群小龙虾一到整点就集体出动攻打月球。"</blockquote>
+
+<p>游凯超认为这里需要的是 Harness 和 Infra 的 Co-design。他特别提到 Manus 的季逸超写的一篇博客——如何设计一个 infra 友好的 Harness 框架，其中最核心的建议就是"充分利用前缀缓存"。简单的优化包括：把时间戳从 system prompt 中移除，改为工具调用；定时任务在每小时中随机选取启动时间。</p>
+
+<p class="gloss">作者概括：游凯超对 DeepSeek 即将推出 Agent 框架寄予厚望——"DeepSeek 在模型和 infra 的 co-design 方面一骑绝尘，我相信他们的 Harness 框架也能达到同样的高度，再给社区上一课。"</p>
+
+<h2>DisPark 与投机解码的演进</h2>
+
+<p>投机解码（Speculative Decoding）是提升推理效率的重要技术：大模型自回归解码只能逐 token 生成，投机解码让模型一次性猜测接下来要生成的几个 token，把解码变成"小段预填充"。</p>
+
+<p>游凯超梳理了两条主要的技术路线。Eagle 和 DeepSeek 的 MTP 猜测长度短（3-5 个 token），接收率高。Diflash 路线一次猜 16 个 token——vLLM 和 NVIDIA 最近已实现对某些模型达每秒上千 token 的速度——但猜错的也多，存在算力浪费。</p>
+
+<p>DeepSeek 最新发布的 DisPark 在 Diflash 基础上做了改进：估计猜测 token 的置信度，跳过大概率不准确的部分。游凯超的评价是：这不算特别新颖的算法创新——腾讯混元的 DeepCut 和上海交大的 Domino 在同期独立提出了类似思路。"但创新是一回事，把创新想法扎实做出来是另一回事。DisPark 继承了 DeepSeek 一如既往的非常扎实的 infra 基础，把推理优化压榨到了极致。"</p>
+
+<h2>中美 AI Infra 的差异化路径</h2>
+
+<p>游凯超的观察是：中国的模型更重视效率，海外的模型更重视效果。这跟两边的算力供给有直接关系——中国高端算力紧缺，所以必须把各种能用的算力都用起来，更重视国产卡适配；欧美算力资源充足，模型可以追求更强的能力。</p>
+
+<p>但这不代表谁能"赢"。中国的优势在于土地和电力供应充足，建数据中心没有限制；美国的优势在于芯片供应不受限，但土地和电力反而成了瓶颈。"它们不是竞争，更多是各自有各自的局限和掣肘的地方。"</p>
+
+<p>一个有趣的变化是：美国顶级模型（OpenAI、Anthropic、Google Gemini）在走闭源路线，而中国顶级模型在走开源路线。游凯超的立场很明确：</p>
+
+<blockquote>"我个人是觉得开源模型最后会赢的。"</blockquote>
+
+<h2>为什么模型藏不住：开源必胜的逻辑</h2>
+
+<p>游凯超的核心论证来自第一性原理。核电厂发电给一个城市用——这个城市用一辈子也不可能自己研究出核聚变技术。但大模型不一样：<strong>每一个 token 都带着模型的烙印</strong>。模型拿出来训练完是要给人用的。用户用了很长一段时间之后，用户自己的数据就已经可以训练出一个模型了。</p>
+
+<p>Coding Agent 的到来会加速这个过程——"一般一个月左右，一个公司级别的机构就能够收集到足够它训练的数据。内部的飞轮就可以转起来。"所以模型不是一个能长期藏得住的东西，它不是像核武器一样拿来威慑别人的。</p>
+
+<blockquote>"模型最后会变成 commodity。开源模型会赢——中国模型开源我就支持中国模型，其他国家的模型开源我也支持。"</blockquote>
+
+<p>这对 vLLM 意味着什么？游凯超的逻辑是：既然模型最终会开源、会成为 commodity，那就有人帮他们解决"模型"的问题。vLLM 只需要聚焦推理。"Red Hat 已经把 vLLM 打包到 Linux 企业发行版里——未来部署的不再是一个冷冰冰的操作系统，而是一个能运行 AI 的 AI 操作系统。"</p>
+
+<h2>一个 Hot Take 和一种哲学底色</h2>
+
+<p>在聊到技术预测时，游凯超给出了一个 hot take：与人打交道的模型，上下文大概停在百万 token 级别就够了。个别自然科学领域（生物、化学）可能需要千万甚至亿级上下文——但这些可以通过外部工具（记忆模块、技能模块、sub-agent）来实现，不需要模型原生支持超长上下文。</p>
+
+<p>如果这个预测成立，当前模型结构和 infra 的范式还可以延续很长时间——这意味着 vLLM 当前的技术路线是正确的。</p>
+
+<p>回顾整场对话，游凯超身上有一种罕见的哲学底色。他引用《送东阳马生序》中"以中有足乐者，不知口体之奉不若人也"来解释 vLLM 团队的共同特质。他用"仓廪实而知礼节，衣食足而知荣辱"来解释为什么这一代工程师能够为精神追求放弃物质诱惑。他坚持从第一性原理出发思考技术问题——"如果你想不清楚一个问题，说明你对他还不够了解"。</p>
+
+<p>David Patterson 说后摩尔定律时代 AI 的上限取决于系统而不是算法。游凯超完全认同。近十年的发展反复印证了这一点：FlashAttention 终结了各种 Softmax Attention 近似方法的研究，Continuous Batching + PageAttention 把自回归解码的成本降了下来。只有被系统高效实现的算法才能留下来。</p>
+
+<p>在访谈的最后，游凯超说："我们接下来还有融资计划，但我们不是为了融资而融资——更多是希望能有一些我们做出来的、值得融资的成果。"这份对"意义"的执着，或许正是 vLLM 能走到今天最根本的原因。</p>
+
+<h2>核心金句</h2>
+
+<div class="quote-block blue">
+"你如果不跟我们一起创业，你赚到了很多钱，但是十年之后我们的项目失败了，你是开心还是不开心？"
+<div class="ctx">— 游凯超和 Simon 对 Woosuk 的"逼宫"，2025 年夏</div>
+</div>
+
+<div class="quote-block green">
+"我个人是觉得开源模型最后会赢的。"
+<div class="ctx">— 游凯超对 AI 行业格局的核心判断</div>
+</div>
+
+<div class="quote-block purple">
+"你可以说我的东西不 novel，但是你不可以说我的东西没有用。"
+<div class="ctx">— 为什么从算法研究转向系统工程</div>
+</div>
+
+<div class="quote-block orange">
+"token 它是带着模型的烙印的——你没有办法把一个 DeepSeek 模型的 token 转化为一个 Kimi 的 token。"
+<div class="ctx">— Token 和电的根本区别</div>
+</div>
+
+<div class="quote-block yellow">
+"以中有足乐者，不知口体之奉不若人也。"
+<div class="ctx">— 引用《送东阳马生序》，解释 vLLM 团队的选择</div>
+</div>
+
+<div class="quote-block red">
+"AI 可以帮我们走完 90% 的路程，但还有 10% 的关键的画龙点睛的那一部分需要人来提供支持。"
+<div class="ctx">— 关于 Coding Agent 和开源社区的未来</div>
+</div>
+
+<div class="footer">
+<p>本文基于<a href="https://www.xiaoyuzhoufm.com/episode/6a66ed17a3fec224d5a3f744?utm_source=rss">小俊播客《商业访谈录》第 148 期</a>整理。游凯超是 vLLM 联合创始人兼首席科学家，Infini-Attention 公司联合创始人。</p>
+<p>🤖 Generated with Claude Code</p>
+</div>
+
+</article>
+</body>
+</html>
