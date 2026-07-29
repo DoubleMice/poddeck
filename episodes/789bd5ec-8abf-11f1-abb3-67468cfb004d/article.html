@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Chopping Block: Wind Downs, YC's Nemil Dalal, & Will Every Failed Crypto Idea Eventually Work? — PodDeck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1e1e1e;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e9ecef;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.35;
+    margin-bottom: 0.75rem;
+    color: #111;
+  }
+  .meta {
+    font-size: 0.9rem;
+    color: #868e96;
+  }
+  .meta span { margin: 0 0.5rem; }
+  h2 {
+    font-size: 1.35rem;
+    margin: 2.5rem 0 1rem;
+    color: #111;
+    border-left: 4px solid #1971c2;
+    padding-left: 0.75rem;
+  }
+  p { margin-bottom: 1rem; }
+  blockquote {
+    margin: 1.5rem 0;
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid #1971c2;
+    background: #f0f6ff;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #333;
+  }
+  blockquote .attr {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: #868e96;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .card {
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .card.blue  { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .card.green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .card.orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .card.purple { background: #f5f3ff; border-left: 4px solid #8b5cf6; }
+  .card.red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .card.yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .card h3 { font-size: 1rem; margin-bottom: 0.25rem; color: #111; }
+  .card p { font-size: 0.9rem; margin: 0; color: #555; }
+  .quotes { margin: 1.5rem 0; }
+  .quotes .q {
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+  .quotes .q blockquote { margin: 0; padding: 0; border: 0; background: none; font-size: 0.95rem; }
+  .quotes .q .ctx { font-size: 0.8rem; color: #868e96; margin-top: 0.35rem; font-style: normal; }
+  .q.blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .q.green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .q.purple { background: #f5f3ff; border-left: 4px solid #8b5cf6; }
+  .q.yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e9ecef;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #868e96;
+  }
+  footer a { color: #1971c2; text-decoration: none; }
+  hr { border: 0; border-top: 1px solid #e9ecef; margin: 2rem 0; }
+  .gloss { font-size: 0.85rem; color: #868e96; font-style: italic; }
+  @media (max-width: 600px) {
+    article { padding: 1.5rem 1rem; }
+    h1 { font-size: 1.5rem; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>加密寒冬清算、失败创意会重生吗？——与 YC Nemil Dalal 的对话</h1>
+  <div class="meta">
+    The Chopping Block<span>·</span>Nemil Dalal (Y Combinator)<span>·</span>2026 年 7 月
+  </div>
+</header>
+
+<section>
+  <p>加密行业正在经历一场无声的清算。BitMEX——曾经的全球第一衍生品交易所、永续合约的发明者——宣布将于 2026 年 9 月 23 日关停，结束了 11 年的运营。与此同时，Storage Labs、Movement Labs、Balancer Labs 等链上协议团队也在清盘。曾经有个笑话：加密项目永远不会真正破产，总会有人愿意运行节点、交易代币。但现在，事情真的在归零。</p>
+
+  <p>在这一片清算声中，The Chopping Block 邀请了 Y Combinator 的加密负责人 Nemil Dalal。他曾在 Coinbase 工作七年，领导稳定币业务，也为 Balaji Srinivasan 工作过。他从 YC 的视角，分享了对加密创业者最常见的误区、当下建设方向的观察，以及关于"失败创意是否都会卷土重来"这一话题的深入辩论。</p>
+</section>
+
+<h2>为什么这期值得关注</h2>
+
+<div class="cards">
+  <div class="card blue">
+    <h3>加密的清算时刻</h3>
+    <p>BitMEX 运营 11 年后关停，多个协议 Labs 清盘——"加密项目不会归零"的旧叙事正在被打破。</p>
+  </div>
+  <div class="card green">
+    <h3>YC 视角下的加密建设</h3>
+    <p>Nemil Dalal 从 Coinbase 到 YC，分享加密创业者最常犯的错误和 YC 的核心方法论。</p>
+  </div>
+  <div class="card orange">
+    <h3>"失败创意都会回来"之争</h3>
+    <p>Imran 的病毒级推文引发的辩论：Webvan vs Instacart 的启示告诉我们，想法本身不决定成败。</p>
+  </div>
+  <div class="card purple">
+    <h3>Crypto 是金融技术</h3>
+    <p>Haseeb 阐述了他的核心论点：加密与互联网不同，它不是"一切技术"，而是"金融技术"。</p>
+  </div>
+  <div class="card red">
+    <h3>去中心化并不天然</h3>
+    <p>事物倾向中心化——去中心化只有在用户真正要求时才成为现实，不是技术能力决定了就会发生。</p>
+  </div>
+  <div class="card yellow">
+    <h3>AI 代理改变棋局</h3>
+    <p>机器对机器微支付因 AI 代理而变得真实。"经济人"假设可能以 AI 形式重生。</p>
+  </div>
+</div>
+
+<h2>BitMEX 的遗产与加密清算潮的两种逻辑</h2>
+
+<p>BitMEX 的关停是一个标志性事件。它不仅是永续合约（perp swap）的发明者——这一产品构成了如今加密衍生品交易的大多数——也是一个时代的象征。它的衰落背后有清晰的逻辑：合规成本飙升、交易量向 Coinbase 和 Binance 等巨头集中、以及"一切交易所"策略的出现（Coinbase 正在将预测市场、股票等传统资产纳入其平台）。</p>
+
+<p>Nemil 对此的看法是清醒的：BitMEX 引领了方向，但就像所有创新市场一样，后来者学会了、吸收了、超越了。永续合约如今已是所有主流交易所的标准配置。先行者不一定能永远领先。</p>
+
+<p>与此同时，项目 Labs 的清盘性质不同。Hester Peirce 最近的监管表态让 Nemil 看到了"政府想给建设者让路"的信号。他观察到，部分协议的诞生本身就是监管不确定性催生的产物——随着监管环境逐渐清晰，纯"合规套利"的协议正在失去存在价值。此外，像 Move 这样的编程语言曾经被视为替代 Solidity 的开发者入口，但市场方向已经发生了根本性的转变。</p>
+
+<h2>"我从未如此乐观"——Nemil 的牛市视角</h2>
+
+<p>面对清算潮，Nemil 的态度出人意料。他直言：<strong>"我从未如此乐观"</strong>。他的理由来自对基础设施层面的观察：</p>
+
+<p>首先，创新正在被更广泛地吸收。BitMEX 发明的 perps 现在被所有主流金融机构采用。每周都有银行或投资机构从全球各地联系他，希望以某种方式集成加密——"这些对用户是隐藏的，但真实在发生。"</p>
+
+<p>其次，一批几乎无人提及的稳定币公司正在默默建设。Giza、Infinia、Blindpay——这些名字不为人知，但它们不是面向消费者的品牌（像 OpenSea 或 Coinbase 那样），而是面向开发者和其他企业的后端基础设施。传统公司也在加入：薪资服务公司 Gusto 正在用稳定币发放工资，全球用工平台 Deel 也在做同样的事。</p>
+
+<p>第三，也是最深刻的转变：加密正在从"前台"走向"后台"。几年前，行业假设每个人都必须知道自己在用加密——需要优化钱包体验、教育用户。现在，加密是基础设施层，用户感知不到，但传统金融世界正在接入。Nemil 把这形容为"一个与我几年前看到的完全不同的思维模式"。</p>
+
+<h2>YC 创业学校与加密创业者</h2>
+
+<p>Nemil 分享了 YC 最近在旧金山 Chase Center 的创业学校活动。YC 租下了 NBA 勇士队的主场，聚集了约 7,000 名开发者——从 16-17 岁的 AI 少年到 40 多岁的传统金融从业者。Jensen Huang、Sam Altman 和 Stripe 创始人 Patrick Collison 同台演讲，其中 Patrick 专门讨论了加密与 AI 代理的结合（他称之为 "agentified"）。</p>
+
+<p>Nemil 主持了区块链相关的小组讨论。他特别提到了一个细节：当他问在座的建设者中有多少人计划早期发币时——<strong>"几乎没人举手"</strong>。这一反应让他感到振奋，因为这标志着建设者在关注长期，而非短期投机。他看到的三个热门方向是：稳定币、代理金融（agentic finance）——包括 AI 支付 API 费用、AI 驱动的对冲基金、AI 在加密市场的交易。</p>
+
+<h2>YC 的核心建议：让人们想要的东西</h2>
+
+<p>Nemil 分享了 YC 与加密创业者互动的三个关键观察：</p>
+
+<p><strong>第一，不要做"去中心化极端主义者"。</strong>很多 Web3 建设者带着意识形态入场——"这必须是去中心化的"——而不是从用户需求出发。Nemil 说："用户不关心去中心化。有些开发者关心，但大多数人不。你必须从人们的痛点出发。"他对代币持谨慎态度：如果产品早期就涉及代币，可寻址市场会立刻变小。而且，免费送钱会吸引用户，但这不能说明他们真的需要你的产品。</p>
+
+<p><strong>第二，不要只盯着消费者。</strong>很多机会在于卖给银行、金融科技公司。TradFi 背景的从业者有一些加密原生人才缺乏的技能——比如处理 RWA、与银行业务对接。Nemil 提到，早期加密的每个周期都会忽视传统金融人的视角，因为感觉"太早了"。但现在已经不是了：这正是他们进入的正确时机。</p>
+
+<p><strong>第三，从最小的 MVP 开始。</strong>Tom 补充了一个形象的比喻：过去的加密创业是"想烤个派先造个宇宙"——想做个 app，先造条链。现在的情况完全不同了：用各种 API 一个下午就能搭出东西，然后再逐步替换组件。这就是 Instacart 路径——先"绿野仙踪"式地手工实现功能，再逐步替换成自动化。</p>
+
+<h2>为什么不要太早发币：代币扭曲产品信号</h2>
+
+<p>Nemil 特别强调了过早发币的危险。在加密领域，代币上涨会制造一种"产品市场匹配（PMF）幻觉"——价格上涨时，一切都像未来已经到来。他提到了 Farcaster、Zora、Base 应用在那 6-12 个月社交应用热潮中的表现：大量社交应用涌现、创作者代币被热捧……看起来是一个有前景的方向。但当潮水退去，才会发现用户从未真正需要这些产品。</p>
+
+<p>这就是 Nemil 的核心担忧：<strong>代币的价格正反馈循环会扭曲创始人的判断，让他们误以为找到了 PMF，而实际上他们找到的只是"给免费钱就有人来"。</strong>在资产价格全面上涨的牛市中，这一效应被放大到了极致。</p>
+
+<h2>Imran 的病毒推文：所有失败创意都会重生？</h2>
+
+<p>关于 Alliance DAO 联合创始人 Imran 的一条病毒级推文，对话进入了核心辩论。Imran 写道：</p>
+
+<blockquote>
+"Almost everything in crypto that failed the first time will eventually work sometime in the future. Bitcoin looked like it had failed many times in the past. The same will happen with NFTs, creator tokens, DAOs, gaming, TCRs, on-chain reputation, rebasing tokens, decentralized storage."
+<span class="attr">— Imran, Alliance DAO</span>
+</blockquote>
+
+<p>Haseeb 对此直言不讳：这是"有害的乐观主义"（toxic positivity），它不是在从失败中学习，而是在安慰自己"没关系，最终都会成功的"。他可以承认 Polymarket 和 Hyperliquid 确实验证了"失败很久之后重新成功"的可能性。但问题不在于这种路径是否可能存在——而在于盲目地认为 <em>一切</em> 都会回来，会阻碍真正的反思。</p>
+
+<p>Nemil 的立场在两者之间。他引用了 Webvan 和 Instacart 的故事作为类比：同样的杂货配送理念，Webvan 在 1998 年烧光资金，Instacart 在 2012 年成为数十亿美元的公司。区别在哪里？智能手机的普及——这是 Webvan 时代完全不具备的条件。还有一个关键的策略差异：Instacart 没有建仓库，而是派人去 Whole Foods 代买——轻资产、低风险，等到模式被验证后再逐步扩展。</p>
+
+<p>这就是 Nemil 的判断框架：当一个"老想法"重新出现时，最关键的问题是<strong>"为什么是现在？"——这个世界发生了什么变化，让几年前行不通的事情现在变得可能？</strong>这也是 YC 在 10 分钟面试中最核心的判断标准。如果唯一的答案是"我们会执行得更好"或"这次找对了人"，那通常远远不够。</p>
+
+<h2>TCR、链上声誉、社交代币——哪些可能回来？</h2>
+
+<p>对话对 Imran 列表中的几个具体类别做了逐一分析：</p>
+
+<p>对于 TCR（代币策展注册表），Nemil 认为它会以另一种形式回归——数据集体（data collectives）。用户贡献数据换取代币化的"股权"，这本质上是一种激励数据贡献的机制。Haseeb 对此不太确定：他承认这是一个可以理解的模式，但核心问题是数据集体解决的是谁的需求。</p>
+
+<p>对于链上声誉，Tom 提出了 AI 代理时代的场景。当在线内容爆炸性增长、AI 生成的"人"无处不在时，链上身份验证和声誉追踪就有了实际需求。但这更多是和身份（identity）相关，不是传统的"链上好人积分卡"。</p>
+
+<p>对于社交代币和创作者经济，Nemil 对"去中心化社交"不抱期待——他直言：<strong>"我不确定那解决的是什么痛点。"</strong>但他提出了一个替代方向：创作者忠诚度代币。所有人都已经在使用某种忠诚度代币——航空公司里程其实就是。理论上，这可以迁移到区块链上，用更去中心化的方式来实现。但核心问题仍然是：代币的真正效用是什么？它的价值从何而来？</p>
+
+<h2>Haseeb 的核心论点：Crypto = 金钱和金融</h2>
+
+<p>这是本期对话中 Haseeb 阐述的最重要的框架：</p>
+
+<p><strong>加密是一个"金融"技术，而不是"一切"技术。</strong></p>
+
+<p>他区分了两种技术类型。互联网是"一切技术"——因为它承载信息，而人类一切活动都涉及信息。90 年代末的人可以说"一切都会上网"，他们是对的。报纸、零售、社交、视频——无一例外地迁移到了互联网上。</p>
+
+<p>加密则不同。区块链解决的是所有权、结算、信任最小化问题。这些属性在金融和资产领域至关重要——比特币关于钱、以太坊关于合约、DeFi 名字里就有金融。但离这个核心越远，就越是在讲述一个尚未被验证的故事。社交、游戏、内容创作——十年的实验得出的答案是：<strong>这些领域可能并不需要区块链。</strong></p>
+
+<p>Haseeb 对这一信念做了一个重要的修正：2020 年的时候，他相信加密技术使去中心化成为"不可避免"的——一旦技术上可以实现去中心化，市场力量就会推动它自然发生。现在他意识到这是错的：<strong>"事物不想去中心化——事物天然地推动着中心化，向着中介、聚合和捆绑的方向滚落。只有当用户真正要求去中心化时，去中心化才会成为现实。"</strong></p>
+
+<h2>Base 的社交 Mea Culpa 与"Airbnb on blockchain"</h2>
+
+<p>Haseeb 用了一个具体的案例来支持他的论点：Coinbase 的 Base 链团队。Base 曾全力推动消费者社交策略——推广 Zora、创作者代币、让用户"拥有和交易内容"。</p>
+
+<p>Base 负责人 Jesse 最近写了一篇长文，对自己之前的策略做了自我检讨。他承认：这不是人们使用区块链的方式。Base 因为把精力分散到社交策略上而落后了。他把 Base App 的控制权交给了知名加密交易员 Kobe，自己专注于 Base 链本身。</p>
+
+<p>Haseeb 还分享了他个人的经历。他曾在 Airbnb 工作，而他听到的第一批加密 pitch 就是"Airbnb on blockchain"。这个想法听起来非常直观——谁不讨厌平台抽成？让网络的参与方共同拥有平台，不是更公平吗？</p>
+
+<p>但任何实际尝试过的人都会发现：Airbnb 并不是一个纯粹的双边撮合业务。它是一个信任业务、策展业务、反欺诈业务——而区块链在这些方面恰恰处于劣势。大多数加密的创新想法不是来自真实的需求信号，而是来自一种"我有锤子到处找钉子"的循环：投资人写博客 → 创始人读博客 → 互相激发狂热 → 十年来这些"显然应该存在"的东西始终没有出现。</p>
+
+<h2>Nemil 的反驳："钱就是一切"</h2>
+
+<p>Nemil 对 Haseeb 的"加密=金融"框架做了重要的补充和反驳。他引用了自己的一句观察：</p>
+
+<blockquote>
+"I think money is so much — I think we don't think it's big enough. Like it literally is everything. Like there's not a company in the world that doesn't have to deal with payments, capital raising, things like that. And the blockchain has shown that."
+<span class="attr">— Nemil Dalal</span>
+</blockquote>
+
+<p>他认为，金融的范围比人们通常意识到的要大得多。即使是存储——Filecoin 选择用区块链，真正的原因不是存储本身，而是存储资源的<strong>分配</strong>本身是一个定价和支付问题。世界上没有一家公司不需要处理支付、融资——而这些都涉及金钱。</p>
+
+<p>作者概括：Haseeb 和 Nemil 的框架实际上并不矛盾。Haseeb 说的是"加密解决非经济问题的能力尚未被证明"；Nemil 说的是"几乎所有问题，在足够广的视角下，都有一个经济维度"。分歧在于"金融"的边界画在哪里。</p>
+
+<h2>去中心化不是不可避免的</h2>
+
+<p>Haseeb 的进化是这个对话中最发人深省的部分。他坦承了自己思想的转变：2020 年的他带着典型的加密信念，认为一旦技术在现实中证明去中心化的可行性，市场力量就会推动它自然发生。</p>
+
+<p>现在的他对这点了有了完全不同的认识。事物天然推动着中心化——向着中介、聚合和捆绑的方向。市场不会自然走向"50 个交易所各有平等份额"——它必然走向"三家交易所掌握大部分市场"。这不是加密独有的问题——这是所有市场的基本规律。</p>
+
+<p>Nemil 从另一个角度补充了这一点：<strong>唯一打破旧中心化的力量是创新本身</strong>——不是区块链技术，而是持续的技术和组织创新。Google 曾经是互联网民主化的象征（打败了微软和 IBM），现在却成为被反叛的对象。加密是这波反叛者的最新化身，但 Coinbase 和 Binance 有一天也会成为"要被推翻的老家伙"。正如 Haseeb 所说："我们反抗旧皇帝，立了新皇帝；等到新皇帝也变成暴君，又会有一代新人来反抗。"</p>
+
+<h2>AI 代理：改变棋局的新变量</h2>
+
+<p>Tarun 提出了一个有趣的观点：很多加密的假设依赖于一种虚构的角色——"经济人（Homo economicus）"：一个完全理性、会仔细评估所有代币激励、将全部资源分配给你网络的参与者。现实中的人类当然不会这么做，他们有偏见、有限理性、有限的注意力。</p>
+
+<p>但 AI 代理可能是不同的物种。Nemil 分享了一个具体案例：Cloudflare 宣布将开始用加密支付门控网站的 API 访问。AI 代理可以为他们需要的每一次 API 调用支付几美分——这在过去"人"做这件事的时代是不可行的，因为太繁琐。但对于 AI 来说，这只是一个可以批处理的微支付操作。</p>
+
+<p>这是 2017 年 IOTA 就在谈论的"机器到机器支付"概念——当时听起来像是幻想，现在却变得合理。</p>
+
+<p>Tom 从另一个角度切入：AI 行业对整个互联网的变现模型构成了威胁。如果广告模式被 AI 代理瓦解（代理代替用户看广告，收益流向代理而非创作者），就需要新的支付通道。加密微支付可以成为小型内容创作者获取收益的途径——他们无法像纽约时报那样签数百万美元的 AI 许可协议，但他们可以通过加密支付让 AI 代理为每一次访问付费。</p>
+
+<p>Tarun 还做了一个有趣的类比：AI 互联网的架构和加密的去中心化架构有结构上的相似性。前端应用像钱包、路由服务像 DEX 聚合器、模型本身像协议、推理提供商像流动性提供者——而在加密领域，利润总是流向支付流（PFOF）中的流量入口端，协议本身很难捕获价值。这是不是 AI 互联网也将面临的经济模型？</p>
+
+<h2>YC SAFE 与加密的"标准化创新"需求</h2>
+
+<p>Nemil 以一个 YC 内部的经典故事阐述了他对加密创新方向的愿景。在 YC 之前，创业融资是一团混乱：每一轮融资都是定制的合同，律师费 3-6 万美元，VC 会在条款里插入各种有利于自己的条款，创始人没有能力逐一谈判和抗争。这是一个高度不透明、信息严重不对称的市场。</p>
+
+<p>YC 的创新是推出 SAFE——一份标准化投资协议。所有人都用同一份文档，律师已经熟悉，没有奇怪的隐藏条款。这一简单创新让融资市场变得更透明、更高效，整个创业生态系统从中受益。</p>
+
+<p>Nemil 认为，加密正处在类似的位置。区块链已经被证明是世界上最强大的资本创新机器——它能在几分钟内让全球任何地方的人筹集资金。但现在需要的是像 SAFE 这样的创新——能够<strong>驾驭区块链的威力，同时消除其破坏性副作用</strong>的创新。不是更多的 pump & dump、不是更多的 meme 币投机，而是让代币真正成为价值分配的工具。</p>
+
+<p>他最期待的突破是：有人找到一种方式，用代币激励冷启动双边市场，但代币不变成游戏，项目也不会在激励停止后崩盘。Nemil 说，如果有人能做到这一点——<strong>"那会是'对世界的巨大净收益'"</strong>。</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes">
+  <div class="q blue">
+    <blockquote>"I've never been more bullish."</blockquote>
+    <div class="ctx">— Nemil Dalal，在 BitMEX 关停和多个项目清盘的背景下说出这句话</div>
+  </div>
+  <div class="q green">
+    <blockquote>"I think the blockchain is the greatest capital innovation machine in the world."</blockquote>
+    <div class="ctx">— Nemil Dalal，对区块链在资本筹集方面作用的最高评价</div>
+  </div>
+  <div class="q purple">
+    <blockquote>"Things don't want to be decentralized. Things actually naturally push against decentralization."</blockquote>
+    <div class="ctx">— Haseeb，对他 2020 年信念的修正</div>
+  </div>
+  <div class="q yellow">
+    <blockquote>"We sometimes try to solve things that are our problem but not our customer's problem."</blockquote>
+    <div class="ctx">— Nemil Dalal，解释加密项目经常跑偏的根本原因</div>
+  </div>
+  <div class="q blue">
+    <blockquote>"DAOs are really bad. They are reliably worse than almost any other form of corporate governance."</blockquote>
+    <div class="ctx">— Haseeb，对 DAO 治理实验结果的坦率总结</div>
+  </div>
+  <div class="q green">
+    <blockquote>"A lot of things we are building in crypto are direct analogs of what's in TradFi."</blockquote>
+    <div class="ctx">— Nemil Dalal，对加密创新"照搬太多、原创太少"的观察</div>
+  </div>
+  <div class="q purple">
+    <blockquote>"Maybe Homo economicus will be reborn."</blockquote>
+    <div class="ctx">— Tarun，关于 AI 代理是否能实现加密模型假设的完美理性参与者</div>
+  </div>
+  <div class="q yellow">
+    <blockquote>"I'm not sure I've seen a good way where you accelerate it but the token doesn't turn into a game."</blockquote>
+    <div class="ctx">— Nemil Dalal，关于代币激励双边市场的未解难题</div>
+  </div>
+</div>
+
+<hr>
+
+<p>这场讨论最核心的洞见或许是：加密行业需要直面一个十年的实验记录。有些想法行不通——不是因为执行得不好，而是因为它们本质上是在试图解决一个用户不存在的问题。有些想法会在新的技术条件（AI、更好的基础设施、更清晰的监管）下重新变得可行。还有些想法——稳定币、预测市场、去中心化交易——已经证明了自己的价值。</p>
+
+<p>清算潮不是加密的终结。正如 Nemil 所说："每天醒来，我都在看人们在尝试什么新东西。"只要创新的速度不减缓，旧的中心化就不会持续太久。但创新需要从用户的真实需求出发——"让人们想要的东西"——而不是从"区块链 + 某个行业"的组合出发。</p>
+
+<footer>
+  <p>原文来自 <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1745552827.mp3">The Chopping Block 播客</a> · 2026 年 7 月</p>
+  <p>本文由 PodDeck 自动生成，内容基于播客转录文本</p>
+</footer>
+
+</article>
+</body>
+</html>

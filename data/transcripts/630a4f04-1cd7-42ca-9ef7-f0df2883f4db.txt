@@ -1,0 +1,710 @@
+Speaker 1: You're watching TBPN Feels 10 Tuesday,
+Speaker 2: 07/28/2026. We are live from this TBPN UltraGOM, the temple of technology, the fortress of finance, finance, the capital of capital. We've been having a lot of fun with Suno. Hope you have been enjoying it too. I'm sure we'll have a new one available soon.
+But first, let me tell you about ramp.com. Time is money. Save both. Easy as corporate cards, bill pay, accounting, and a whole lot more all in one place. Bunch of news today.
+Jordy's laughing, laughing, laughing.
+Speaker 1: Alright. I think we're good. We could
+Speaker 2: pause Yeah. Nothing like a couple pints of Guinness.
+Speaker 1: Kodak from Some
+Speaker 2: prompt engineering, some vibe coding going on. Well, Anthropics responded. We're going to go through that proposal, the facts and the proposal for what next what happens next in the open open model debate over whether or not they should be banned, restricted, tested, limited in some ways, sued. Oh, there's a whole bunch of different possible outcomes, but we'll take you all through it. We have Taekim joining from First Adoptor at 11:30.
+But first, we are going to talk about the hiring market because The Wall Street Journal has a very interesting report that large The Wall Street Journal is reporting that large companies are beginning
+Speaker 1: to They have a large white pill.
+Speaker 2: Yes. It is a large white pill.
+Speaker 1: Has hit the front page of the journal.
+Speaker 2: Yes. And I think people have been going back and forth on this. This is a story that's that's just getting digested by the tech folks, like the actual AI lab leaders who had predicted crazy job losses and are now not really seeing that. They're seeing productivity boosts and different diffusion taking time in certain places and there's new capabilities, but it's not exactly a drop in replacement for a coworker at least in in most scenarios. And that's what The Wall Street Journal is reporting.
+So let me set the table and then we can debate it a little bit. First, I'm gonna tell you about Console. Console builds AI agents that automate 70% of ITHR and finance support, giving employees instant resolution for access requests and password resets. So after roughly a year of cautious hiring, companies across technology, transportation, defense, and other industries now say they need more employees to work alongside systems. Total victory for both humans and AI.
+We're working together. Peace is possible. It's an example of Jevan's paradox. Jevan's paradox, when a technology makes something more efficient, demand often rises enough that total use and the need for people actually increases. For roughly the past year, many companies pointed to AI while announcing layoffs.
+This was a huge thorn in your side. I think you hated this more than anyone else. And you were right too because it did seem like it was just PR, spin, etcetera.
+Speaker 1: Yeah. It a way for CEOs and management teams to save their own ass instead of saying, you know, hey, we over hired or the business isn't doing as well
+Speaker 2: Yeah. As as we would like.
+Speaker 1: Yeah. And we need to sort of basically settle down for a second and get our mojo back. Yeah. There Obviously, one wants to say that, but I I think one of my favorite posts was the and and obviously these circumstances are never great, but the the new CEO of Xbox came out and just was like very honest about the situation.
+Speaker 2: Yep.
+Speaker 1: And I think that more of that is necessary.
+Speaker 2: Yeah. Also there's a lot of firms where they once they get to 10,000, 20,000 employees, they might say, look, 20,000 might be the right number, but the bottom thousand people are not performing. We would like to lay them off and then bring in a new thousand people that are better fit for the company and the current trajectory that we're on, the current skills that we need, maybe we need more salespeople And
+Speaker 1: those bottom thousand people might be top 10% at another company. Exactly. Right?
+Speaker 2: Yeah. So the narrative appears to be shifting. Companies like CSX, Alphabet, ServiceNow, Snap on and consulting giant Booz Allen Hamilton have all recently signaled plans to expand hiring particularly in areas where employees can use AI to become more productive. We have Ben Zweig from Revelio Labs coming on at 12:10 to talk about the difference in the AI driven hiring market. Some very interesting data about how AI enabled firms are hiring faster than those that aren't adopting AI, But at the same time, there's a bunch of weird dynamics in the labor market where there's way more job postings than actual hirings.
+And so that can look like there's a fall off and it's harder to get a job, but that might just be because everyone's slopping it up in the job postings. And everyone's like, put up a job posting for everything because I'd love if somebody if some insane sales guy walks in the door, we might have a position. So let's keep it
+Speaker 1: used to be somewhat of a flex if a company was like, yeah, we put up a role and we got 2,000 applicants. Yeah. It's like, well
+Speaker 2: That's true. And then also it's a little bit of a sign of like, oh, wow. They have a 100 openings. Like, they must be like growing so fast, you know. So if but if it's just a prompt to say, oh, yeah.
+Put up, like look at my organizational design and add five roles for everyone because why not? Why not see who comes by? Yeah. You know? We're not, we don't necessarily have to interview these people.
+So weird, weird dynamics, but we'll dig into it. So meanwhile, the latest weekly U. S. Jobless claims fell to one of the lowest levels in decades underscoring the resilience of the labor market. The shift also reflects a more realistic understanding of AI's capabilities.
+Sarah Franklin, CEO of HR platform Lattice, says many companies initially assumed AI agents could replace entry level workers but are now recognizing that human employees remain essential. Just because you have coding agents doesn't mean you're not hiring engineers, she said, adding that Lattice is seeing renewed hiring among many of its customers, including for junior roles. Robert Half, CEO M. M. Keith Waddle said AI's effect on employment has been more benign than some have beard, adding that hiring demand continues to improve and market conditions are increasingly more supportive of business.
+And so I do think there was a little bit of like a successful SIOP with the AI is gonna be able to do everything. Where I do think there are some firms that were like, yeah, maybe we shouldn't hire. Or because like what if we get it wrong and we hire a bunch of people and then AI really does catch up and we don't need those people. That's silly. We shouldn't go through that like whipsaw effect.
+And so people are going back and forth on that. Bryce Roberts
+Speaker 1: Yeah. It's interesting. At least in at least in our organization, which is unique and and very niche and there's not that many organizations that are running, you know, a niche technology daily show. Yeah. I feel like a lot of what the the value that we get out of AI would historically been done by not super expert level freelancers.
+Right? Mhmm. These sort of like Upwork style Mhmm. Tasks that you would do historically, an idea for a funny song. Right?
+Yeah. I've paid to get a funny song made probably a decade ago online. Yeah. Right? As just like a joke and now you can just go to Suno and and make something like that.
+Whereas and and then there's other things like, you know, make a funny website. Right? I historically would maybe work with
+Speaker 2: So you're saying that I should I should take down the five open roles I have for Celtic punk session musicians? Not yet. Because I was gonna five Celtic punk session musicians to constantly record Dropkick Murphy's covers for us Yes. Every day. And then you shouldn't do that.
+I'm actually closer than ever to hiring a full time Celtic punk band to To recreate recreate Cogs
+Speaker 1: and Kinnis.
+Speaker 2: Yes. I'm I'm closer than ever to doing that where that was not even on the road map a few years ago. Yeah. I don't know. It's it's good point.
+There yeah. There there's a lot of things that you are doing that you would never do with a full time employee.
+Speaker 3: Yeah.
+Speaker 2: That just sort of like fills the cracks and allows you to do more different things in your organization. But the core stuff is still like you want a person that's responsible and then you want them using AI. I don't know. Yeah. The Wall Street Journal breaks it all down, but we went through most of that.
+So Bryce Roberts, he's he's taking the other side of this. He says he shares a screenshot of a text message that says, we honestly aren't hiring a ton right now, AI backfilling most roles. Backfilling, is that specifically does that specifically refer to when someone leaves the company? You backfill them with AI? Do you say, oh, someone quit.
+Let's see if like if there's Steve and Jim on two different on one team and Steve quits, you say, hey, Jim, can you just instead of hiring another person just do twice as much work with AI? Is that what this person's articulating? I mean
+Speaker 1: Yeah.
+Speaker 2: Obviously, there's some companies that are like, yeah, we're not hiring anyone. We're we're going for the one person, $1,000,000,000 company. Like, I'm not gonna hire anyone. I'm just gonna use Yeah.
+Speaker 1: But that's rare. Usually usually when your business is ripping, you're like, I can't hire great people fast enough. Yeah. And sometimes you actually don't have time to Yeah. Invest Yeah.
+Into various hiring processes. But Yeah. I would read into this text, the company is just probably not like ripping. That's my that's my takeaway.
+Speaker 2: Well, Bryce Roberts says, RIP new grads. Matthew Prince over Cloudflare takes the other side. He says, wrong strategy to stop hiring new grads. The right strategy, hire them and insert them into legacy teams to help them better adopt AI.
+Speaker 1: And Cloudflare, of course, hired 1,000 Something like
+Speaker 2: was a it was a crazy number, wasn't it? Yeah. Up there in like almost a thousand?
+Speaker 1: Four digits.
+Speaker 2: That's crazy. Anyway, let me tell you about the New York Stock Exchange. Wanna change the world, raise capital at the New York Stock Exchange. Pulling a crazy rare business card. I haven't seen this.
+I oh, I I think I know where they're going with this, but let's play the latest good work. Real. We're just watching reals now.
+Speaker 1: Is This one we got is Bernie Madoff. Pretty good. Good gloves. That's from the
+Speaker 2: eighties too.
+Speaker 1: That's good. Yeah. Yeah. I've I've seen a few of these around before. Up next.
+Solid Sam Bankman Fried here. That's nice. That's really nice. That's really nice.
+Speaker 2: I like that they actually printed I think he made
+Speaker 4: For this bit.
+Speaker 1: Balsa wood. This is balsa wood?
+Speaker 2: Yeah. The acting is so
+Speaker 1: Wow. Wait, John. This is a this is a vintage Zuckerberg. Oh, five? This is a vintage o five Zuckerberg.
+Let's just check the back really quick. Oh. There it is. That is a patch from his Fruit of the Loom boxer briefs. You can tell by the smell.
+Speaker 2: Is that real? What is that referring to?
+Speaker 1: This is on Yeah. That's it. Athlete, you know, Oh, okay. Okay. I'll put a piece of the jersey.
+Speaker 2: Piece of the jersey.
+Speaker 1: This one.
+Speaker 3: Yeah.
+Speaker 1: Yeah.
+Speaker 2: Alright. Up next. Leave it.
+Speaker 1: Oh. Okay. Nice. Elizabeth Holmes. We do have two.
+Yeah. I believe. We have two. But a triple Holmes is what every good collector has
+Speaker 2: True.
+Speaker 1: In their arsenal. Alright. One card One card left. Three, two, one.
+Speaker 2: Oh my god. Oh my god. Oh my god.
+Speaker 5: My god.
+Speaker 1: Turn it off. Very funny. Very funny.
+Speaker 2: What what it is funny how the the like business comedy canon has really solidified around like Elizabeth Holmes, Sam Beggen Fried, Mark Zuckerberg. There's like a few names
+Speaker 1: I'm surprised they didn't have an Adam Newman rookie card in there.
+Speaker 2: I don't know if Adam Newman is like a big enough name relative to
+Speaker 1: That's true.
+Speaker 2: Sam Beggen Fried and Elizabeth Holmes. It's just interesting, like, the different the different names that have broken out that you can do a comedy sketch that's like, you know, it goes as big as as good work does because they get, you know, I think millions and millions of views on their stuff.
+Speaker 1: Alright. Pull up this image Yes. From Manhattan this morning. We got sent this. We've been doing on
+Speaker 2: the ground reporting.
+Speaker 1: From one of our on the ground reporters in Manhattan. There's a company called Black Sheep that Dot IO. That got 20 trucks and they're just driving them around Google's Manhattan office Yes. Saying shame on you Google. Return our $80,000.
+We had to dig in. We got very curious.
+Speaker 2: I had no idea. They make they make sunglasses?
+Speaker 1: They make $8 sunglasses that beat $350 sunglasses in an NBC lab test.
+Speaker 2: Okay. You wearing Black Sheep today? I wish.
+Speaker 1: I wish. So Black Sheep makes direct to factory
+Speaker 2: Okay. Factory direct prescription eyewear. Stop paying
+Speaker 1: 5 No. Dollars for five This is from their own website. I'm reading They're saying direct to factory optical disruptor. This is from their website. Where do mean this?
+On Black Sheep.
+Speaker 2: I'm on blacksheep. As well. It says factory direct Direct to factory. Look, I want to send some eyewear to a factory.
+Speaker 1: Direct to factory.
+Speaker 2: I'll be sending it to them.
+Speaker 1: Direct to factory. Yeah. So this company That is interesting. Is fascinating. They say direct to factory optical disruptor Black Sheep launches 25 truck guerrilla campaign against Google in Manhattan.
+And then they're sort of like narrating their own guerrilla campaign. A fleet of twenty five minuteimalist LED billboard trucks surrounds Google's Chelsea headquarters after the tech giant weaponized an organic search glitch pocket nearly $80,000 in ad spend following Black Sheep's viral NBC Today show debut. 25 LED trucks deployed, $77,000 drained in thirty hours, and then they're and then they're just continuing to market their own products. Very interesting strategy here. I think every marketer has had the experience of of having a campaign go haywire.
+Yeah. Very fascinating to take to take this route. Let's see how it works for them. If I were if I were Google, I would say you can have your $80,000 back, but you can never advertise on Google again. Because I just don't know how.
+Speaker 2: I don't think Google would ban them permanently for this. This is ridiculous. But it you know, there's gonna be like any other like, it's a self serve platform.
+Speaker 1: But is it a good campaign?
+Speaker 2: But what what actually happened? So they say, how it unfolded? NBC Today show segment airs. They test the retail subscription against Black Sheep's factory direct pair. National search traffic spikes.
+Hundreds of Americans search Black Sheep because they're seeing it on TV. The organic listing breaks. Google search engine redirected organic brand traffic to a dead end third party four zero four error page. And so with the organic route broken, users were funneled into Google's paid listings. So what is their claim?
+How is Google responsible for this exactly?
+Speaker 1: Sounds like user error.
+Speaker 2: Because I mean, you do you do have some control over your Google search results based on the webmaster tools. You can index certain things. And then also, if you're noticing a four zero four page, you could like redirect it quickly. Yeah. But again, if this is happening all very fast
+Speaker 1: They can use your error.
+Speaker 2: Difficult. But I mean, it is interesting because they're probably gonna get more than $77,000 worth of organic just from this. I mean, didn't see the original campaign and I'm seeing this because this is hilarious. But this is like a is this they they shared an AI image with tons of these like shame on you trucks. But those are real.
+These are real? Yes. And are those minimalist or Those seem maximalist to me. But maybe they're minimalist.
+Speaker 1: Minimalist, I guess, in the in the display of the Yeah. In the way they actually are leveraging the space on the truck. But Black and white.
+Speaker 2: Truly underrated service area for stunts and advertising. Like, I this message is sort of like squabbling with Google over this like sort of odd scenario, but you can imagine someone using this for something much cooler and much more positive and not like this, you know, sort of unfortunate situation for them where they're dealing with the, you know, fallout of a Google error.
+Speaker 1: Well, we want to interview the truck drivers. For So if you're driving a black sheep truck around Manhattan today, reach out. For sure. Nick, make it happen.
+Speaker 2: Well, let me tell you about Shopify. Shopify is the commerce platform that grows with your business and lets you sell in seconds online, in store, on mobile, on social, on marketplaces and now with AI agents. Ilya said straight shot to SSI so they better not be gearing up to release a work agent called Francois. Francois would be a very good name for an AI agent. I like that.
+I do wonder Yeah. What they're going to be releasing. Has has the SSI is going to release? Is that complete rumor? Because all all they would scale
+Speaker 1: their research.
+Speaker 2: Yeah. So that just means they've done a bunch of research. They have some sort of architecture that they like, some sort of flywheel and they're going to like use more compute and so that's why they're raising money. I don't think they said like and we're gonna release it publicly. Yeah.
+But everyone's thinking like probably still LLM or something different? No one really knows?
+Speaker 1: Yeah. I mean, think still broadly like generally LLM Who's
+Speaker 2: God? Like next level. There are levels to vague posting when you live a vague life. It's just like your entire life is vagary. Anyway, in other news, Recursive Super Intelligence signs a $410 compute deal with Amazon.
+So funny. And it's in the Deck Crunch. It's in the in the header too. Of course, that is a typo. It says Recursive Superintelligence signs 410,000,000 compute deal with Amazon.
+Congratulations to Recursive Superintelligence. Throwing safety out the window. That should be the that should be the tagline. Because there's already safe superintelligence. But we're just doing Recursive Superintelligence over here.
+But of course the company is doing very well. They merged for Stealth in May with 650,000,000 in funding focused on building open ended self improving systems and potentially compute intensive approach to AI research. This multi year deal is meant to provide flexibility as the company looks to scale up those systems. Recursive's four ten million dollars outlay represents the bulk of the company's fundraising to date. But on a call with TechCrunch
+Speaker 1: Hey, hey, they still have a couple 100,000,000 left over.
+Speaker 2: Founder and CEO Richard Socher emphasized that he expected it to be the first of many such deals. So is this I feel like normally when you see a like a compute deal signed, it's always like more complicated than just like we're buying this expensive thing. It's usually like we're we're paying that. I'm like, I I'd say we we used to be so like anti circular deal that now I just have come to I've been so normalized by them that I expect them every time. I'm like, wait, This is there's no circularity here?
+Speaker 5: There's no
+Speaker 2: I would have expected
+Speaker 1: are you changing hands?
+Speaker 2: Yeah. Like, Amazon's investing in you and you're buying Trainium and bracking it. And AWS is doing that they're doing new campus and they're investing in this and that and you're investing in them. Instead, it just seems like it's a pretty vanilla deal. It's like they're just buying a lot of compute from Amazon.
+Great.
+Speaker 1: Seems like it.
+Speaker 2: Well, good luck to them. Very excited for what they're launching.
+Speaker 1: Yeah. Jason, VP of startups and VC at AWS says, part of the agreement is that we're going to co develop him for a purpose built for these types of companies. So fingers crossed, but it seems like we could get some some circularity.
+Speaker 2: Yeah. Let's hope so. Let me tell you about Railway. Railway is the all in one intelligent cloud provider. Use your favorite agent to deploy web app services and more while Railway automatically takes care of scaling, monitoring, and security.
+Fingers crossed. Well well, here's here's a deal that's somewhat circular. We got NVIDIA revealed as a tenant for a $50,000,000,000 data center that will use its chips. So they're the tenant of the data center that uses its chips. We'll talk to Tae Kim about this.
+CEO Jensen Wong deploys balance sheet to backstop growth of AI computing market. NVIDIA signed leases worth up to $50,000,000,000 for a massive Texas data center. That's very, very big. That's very, very big for a single site. A previously undisclosed commitment that shines a new spotlight on the chip's on the chip group's growing role in financing AI.
+The nearly $5,000,000,000,000 company is leasing the entire one gigawatt facility that developer Hut eight is building, which will house hundreds of thousands of NVIDIA graphics processing units. So you have to imagine that once they have these, they serve something or wind up selling them. Like, these things change hands so many times. There's a lot of different ways that this could play out ultimately. But in the can we pull up the NVIDIA chart?
+Yeah. There we go. NVIDIA. Oh. Woah.
+Big candle today up 3%, 5,170,000,000,000. Let's take a look at Apple. 4.99. They crossed five today. They're down a little bit since they since they beat breached that.
+But they're neck and neck. Google is sitting at Yeah.
+Speaker 1: Apple running the do nothing win strategy. Yeah. Jensen doing thousands of deals.
+Speaker 2: They didn't even sign the open letter. There are three companies that still I believe still haven't signed the open letter and
+Speaker 1: Only three companies on the entire surface of the earth.
+Speaker 2: No. There's three major companies that are how do I actually get that to go away? I don't know. You can keep looking at Alphabet. But there are three there are three major companies that haven't signed that NVIDIA open letter about banning open source and or not banning open source.
+And it's Amazon, Apple and Anthropic. Anthropic put out a post yesterday, very, very clear response sort of outlining their view on open source, their stance. We should go through it. But the interesting thing that Ben Thompson was talking about today was the fact that Apple and Amazon haven't signed in. They both have like very physical elements in the world in the sense that they're not they're sort of unsloppable.
+Like, you can't vibe code an Amazon warehouse. You can't vibe code an iPhone. Are threats to those businesses, of course. And, of course, Apple should benefit from open source and so should Amazon because they'll be able to serve open models across AWS. But it's just potentially interesting.
+I think the Apple standing back is more just like, look, we're not jumping on with this crazy open letter that everyone is signing. Like, we just have our own brand. We're thinking different. We're doing
+Speaker 1: Well, based on other Apple AI timelines, I would expect them to sign it in maybe a year or two.
+Speaker 2: Potentially. If they just sign it in 2028. It's just like
+Speaker 1: robots w w d c 2020. We're signing the open letter.
+Speaker 2: These glasses have changed you. They turned you a new beast. Let me run through the three anthropic proposals because it's an important response. So Dario Amade, Anthropic CEO, responded directly to that letter summarizing supporting open weight models that circulated over the weekend. So to summarize his he makes three claims just to sort of clarify things that I think are important.
+One, he says Anthropic has never advocated for a ban on open weight models. Now that's a blanket ban. There's obviously like defining what a ban is and what an open weight model, what a distilled model, what a foreign model is, these things all matter. But he has come out and said, look, we never advocated for a total ban on open weight models. Two, he says undergirding all of this is The U.
+S. Must beat authoritarian governments in the AI race. He points to China but he identifies any authoritarian government. If they get really powerful AI they'll come over here and steamroll us and you won't be free to do whatever you want to do in America. Three, powerful AI models may be misused to carry out cyber attacks or biological attacks.
+There are risks to having really, really powerful AI open source systems just running around. So he's worried about those three things, clarifying those three points. But he makes three recommended actions. He makes three proposals. First, he says let's continue to sanction chips.
+Let's not sell chips to China. He says we should not sell powerful chips or chip making equipment to China. So this has been debated for years. Like going back to the Biden chip controls, everyone knows every different angle on this, the basics. I mean, there is a pretty good argument for chip controls even on purely geoeconomic competitive grounds, like even if you don't believe in the the risk of authoritarian governments having powerful AI, even if you just think it's like fancy auto complete, it's like, well, it's the engine of our economy and if you can slow down a rival economy that's beneficial to you.
+Right? And so and there also seems to be basically unlimited demand for chips in America. So by restricting sales to China, that shouldn't actually hurt American chip companies all that much. But, yes
+Speaker 1: Well, they just like, their argument would be we fully lose the Chinese market Yeah. Which is
+Speaker 2: Yeah.
+Speaker 1: Second largest Yeah. Computing market in the world.
+Speaker 2: No. No.
+Speaker 1: Right? So so I think but but your the counterpoint to that is you were going to lose it anyways.
+Speaker 2: Yeah. And a lot of that stems from the fact that China has been building an indigenous chip supply for decades. We've talked about going back to a whole bunch of their, you know, state led, state funded chip and fab processes. They've always been a few years behind. And so maintaining that gap, all else equal, is an advantage for The United States.
+The second point Dario makes is he says we should crack down on industrial scale distillation operations. This seems totally reasonable. Customer companies can set their terms of service and they have a right to maintain intellectual property with proper legal consequences for violations. Anthropic has been fighting distillation attacks but according to them it's not that effective. Dario proposes policy interventions to deter this behavior.
+And this is where I'm still not clear on what where that goes next. Like what is the correct policy intervention? There's a, like policy intervention is a very, very broad thing. It can mean anything from like a tax, a tariff, a fine, a sternly worded letter, not getting invited to a golf tournament. Like there's so many different things policy like covers these days, right?
+Where does this actually go? He says he doesn't want a blanket ban on open weight models but it does seem like one possible policy intervention would be to sort of like ban restrict or pressure open weights models that can be reasonably shown to have been distilled. So if there's someone who's just a perfect distillation, it just gets, it just doesn't quite feel right, it's hard to quantify these things. We don't have a binary where you run some sort of algorithm and you say, yes, this was distilled. Because you can distill, you know, half on Opus five and then throw in a little GPT 5.6 and then mix in some Mistral and like just be distilling from all over the place, fine tune stuff, change the flavor, change the RL environment.
+There's so many different pieces of it. And Tyler, you were making a point about Tinker or Yeah.
+Speaker 1: I mean, so so the the Inkling model from Thing Machines, like it used some synthetic synthetic data that was created with I think Kimi k 2.5.
+Speaker 2: Yes.
+Speaker 1: So like I does that count as like distillation? Like probably not in when people usually talk about it but like it definitely benefited from Chinese open source models. Yeah. I wouldn't call Downstream that of Yeah.
+Speaker 2: I wouldn't call it industrial scale distillation. But Yeah. It's sort of downstream of industrial
+Speaker 1: big gray area where it's like, how do you actually define these things?
+Speaker 2: Yeah. And so defining that is going to be what that's going to be the conversation that plays out in DC like behind the scenes on the basis of this and that's where the actual negotiation is going to happen between the position of NVIDIA and everyone that signed the letter versus the position of Anthropic and everyone who didn't sign the letter, they're going to sort of decide, okay, well if you can prove this, this and this and you can show us that your API was getting hit by these different things and you have a really solid report of what happened and then the model also, you know, sort of, you know, checks these boxes quantitatively when we do this eval, then maybe we will pressure it. And then what does that actually mean? You could go after the lab that committed the distillation attack with lawsuits, but that seems really difficult given the international nature of these attacks. So we're sort of back to where we started where, you know, you're you're like what what can the government do that the lab can't?
+Like the lab should be looking at every customer and saying, oh this seems like someone who's trying to distill. They keep asking for basically what looks like a lot of training data. They're not acting like a normal user just being like build me a website. Okay. Anyway.
+Third. He says all sufficiently capable models open and closed should go through mandatory mandatory safety testing. So this was recently outlined by Demis Hossabas over at Google Deepind as well. And and it seems like the the the two companies are in alignment on this in particular. And it's a somewhat reasonable position, although the risk is that small companies who have safe models could that aren't distilled could get tied up in a review queue for years before they can release.
+Like that would be very very annoying. If you're recursive super intelligence, for example, and you don't have a Washington DC office and you're like, hey, we wanna release our new model and they're like, yeah, totally. Like you gotta go through the the the review process, get in line. And then it's like every, you know, every trillion dollar company is there with a ton of lobbyists being like, we'll review our model first because we want to get out a week before the small startup. And that's the frustration of biotech, the FDA, anything that goes through approval.
+We've talked about this with the nuclear stuff. It gets very tricky. And so you want to avoid that and you don't want to wind up slowing down innovation that's happening on small scales and decreasing competition. Dario does do a good job of like acknowledging upfront that he says it would protect USAI companies from competition, but that's never been my goal with anything that he's saying here. And so it's still worth working through what happens in a really adversarial situation.
+Like what if a foreign lab distills a bunch of frontier models, they're the most aggressive, they're just distilling everything, then they jump forward a bunch in capability, they get a bunch of smuggled chips, they take all the restrictions off of cyber, all the restrictions off of bio, and then they just drop the weights on like a torrent. They Or put them up on Hugging Face and Hugging Face is like this is really crazy. No one likes this. There's a lot of pressure to take it down. I don't know.
+But it's out there. Like what does the government actually do? Like the government probably pressures or bans like hosting the weights, maybe serving the model. You maybe won't be able to run it in American data centers. You go to the Neo Cloud and say like, hey, this thing is actually bad.
+And I think people are divided on this because they see the current models not as actually dangerous, which is totally reasonable to assess that, yeah, it's not that bad. But like if there was a model that was like, yeah, it's actually just like the killing machine. Like I think most people would be like, yes, I'm democratically voting to not serve that because it's just like it's an annoyance at best and like actually bad at works.
+Speaker 1: And the other big question is like how much compute do you actually need for it to be dangerous?
+Speaker 2: Yeah. Totally.
+Speaker 1: Is is like having some GPUs in the back shed gonna be enough? Yeah. Maybe for sufficiently advanced model? Yes? Yeah.
+Or do you need access to a ton of racks Yeah. Ton of power Totally. And then you do need to work with a Neo Cloud Yeah. In that case.
+Speaker 2: And as soon as you're a US based company with a real data center with a bunch of NVL 70 twos in there, you probably have registration and, you know, all sorts of just like business registrations where the government can reach out to you and say, hey, we're actually really worried about this. Just like there are other things you can't host in a data center. There's all sorts of stuff that's illegal. Intellectual property.
+Speaker 1: Yeah. Exactly. Yeah. That's that's
+Speaker 2: But you can't even just just because you have a data center doesn't mean that you can like take an open source, you know
+Speaker 1: You can't you can't as a data
+Speaker 2: Oh, yeah. Open source Marvel. Like, they'll be Or
+Speaker 1: even even a, you know, a CRM company can't knowingly support like a organized global cartel
+Speaker 3: Yeah.
+Speaker 1: That is like trafficking narcotics. Yeah. Right? You have to you have to imagine like Yeah. That they have
+Speaker 2: They have to vibe check their Maybe. So so so what what what's interesting is like what is the next step of that? So if there is a bad model and everyone agrees like okay, yeah, we got to not host this, not distribute this, like yeah, the weights are out there. People are trying to like sort of run it a little bit but does it go offshore? Do we wind up in like the crypto scenario where there's like these offshore things and people are using VPNs to get access to it?
+Like what level of aggression do you see from the US government in that scenario? It probably should be proportionate to like the danger imposed by the model. Like if it's just a model that's like that's like annoying or like slightly IP infringes but like no one's really being like I'm not I'm I'm canceling my Disney subscription because this new model will generate me Disney IP. Like that's probably not like okay, put up a crazy firewall. But if it is like the ultimate hack machine that's like stealing everyone's money from the banks, then yeah, you are going to put up the firewall and sort of be much more aggressive.
+So I think the response will be in reaction to whatever the power of the models are but it'll be interesting to go back and forth. Anyway, all in all the letter clarifies a lot about the anthropic position so I think it's good that it came out. But it's still worth working through the game theory of like what happens down the line. Policy interventions is all we got here and I think it's still too generic at this point. I want to know like what policy looks like.
+I want to predict that. I want to understand what's actually being proposed. What people like, what people don't like. And so I think we'll learn more about this in the coming days. Let me tell you about Figma.
+Agents meet the canvas. Your AI agents can now create and modify your Figma files with design system context. We have Tae Kim in the waiting room. Let's bring him in to the TBPN UltraDome. Tae, how are you doing?
+Hey, guys. Doing great.
+Speaker 1: What's going on?
+Speaker 2: So tell me, last time you were on the show, you bottom ticked it? What's going on?
+Speaker 3: I think I made the bullish call on CPUs, memory, and NVIDIA. NVIDIA is up like 10%, but
+Speaker 2: Nice.
+Speaker 3: The CPU names had still doubled even after this big drawdown and the HPM names are up a 100%. So I I'm hoping that, you know, it's the same thing again. I come on here, stocks go up again.
+Speaker 1: Yeah. Ideally, we could have like an emergency reserve of take care of services. So if the market is ever down Strategic reserve. The strategic reserve. We call you up, you jump on.
+And then
+Speaker 3: it's was funny because it was the exact bottom.
+Speaker 2: That's amazing.
+Speaker 3: You know, it went exponential after that.
+Speaker 1: Okay. It's a Kim effect.
+Speaker 2: So where are we right now with the level of FUD, the level of downward pressure on the AI trade broadly, the chips, the semi trade, like reset for us on, like, where sentiment is, and then we can work through the different pieces of counterexamples.
+Speaker 3: So I think sentiment's very negative. We kinda had this huge up parabolic up move the last few months, and likely a lot of retail and hedge funds piled it in, and we're seeing this unwind now. I I think the first a big part of it was Iran war getting worse.
+Speaker 1: Mhmm.
+Speaker 3: Every time we had the the first ceasefire and negotiations, stocks started taking off right right after that. And then when you we had the actual ceasefire, we had a follow through.
+Speaker 5: And then
+Speaker 3: as soon as Trump started bombing Iran again Mhmm. You know, chip stocks have kind of plummeted in the last two, three weeks. And then now we we're seeing just, you know, back to the old pattern of media and the viral hot takes
+Speaker 1: Mhmm.
+Speaker 3: Spreading a lot of FUD. I think we saw earlier this month, I think Reuters quoted, like, Zuckerberg's about agentic AI. They took it out of context, then every media person was with a hot take that this met Meta was seeing bad returns, and they're gonna cut its CapEx. And then we had leaks right after that saying that it looks like Meta's gonna raise CapEx. So what we're seeing a lot of this hot take FUD.
+Yesterday, I think we had a flurry of stuff that scared people. The Wall Street Journal vendor financing article that we'll see we'll see what happens with that. Yeah. We had the CMXT IPO in China, and everyone freaked out over that. We had the information article on ASML.
+We could go through each one. And then the kidney thing, it's obviously a big thing.
+Speaker 2: Yeah. We'll definitely get there. And I wanna talk about open source and NVIDIA's strategy there, obviously. Starting with the Mark Zuckerberg news in Reuters. This was July 2.
+Meta's Zuckerberg says AI agent tech progressing slower than expected. Zuckerberg added that the company's reorganization that included major job cuts was not as clean as it could have been. Zuckerberg and other meta executives have been seeking to moderate some of the organizational changes introduced this year, and they said that the trajectory of agentic development over the last four months hasn't really accelerated in the way we expected. The company's bets on new structure haven't come to fruition yet. And so people were sort of reading this as maybe Meta's going to pull back.
+But then it felt like the response was extremely quick with Boz going on a podcast and Alex Wang sharing a whole bunch of progress across a few different models and data points. And then Semi Analysis wrote a whole bull case for MSL talking about how they have compute and also they have more of like the internal structural alignment to sort of properly YOLO in the AI era if I'm boiling it down as brutally as possible. Just because with Google there's always this debate between, oh, do you sell the TPUs or do you sell the cloud do you have it bended in the product? Whereas Mark Zuckerberg is able to sort of like go all in on this new idea. And so maybe there's more more glimmers of hope there.
+But what else have you been tracking downstream of Meta's ambitions?
+Speaker 3: Well, mean, they've been very upfront that they're investing heavily in AI. Alexander Wang is tweeting multiple times every few weeks that they're they're going full force. They're gonna redo open source AI models. They Yeah. I think he said that the YC event over the weekend.
+Yeah. And it's I mean, if you actually look at and then Reuters came out, I think, an article saying that they're actually gonna raise CapEx dramatically Mhmm. This year and next year. So all that kind of fear that that quote about a gigantic AI from the town hall that kind of like spooked the market for a few days, it kinda it was it was completely false. The stuff like this would
+Speaker 2: be Yeah. It feels like it's a comms air because the the language that's been coming out of Meta has been a little bit like AI is gonna replace our employees and it feels like it'd be much better for them to to come to the market with a message of we're going on the offensive. Like, we're a hyperscaler.
+Speaker 3: To be to be fair, that that was the internal town hall. They didn't mean to leak it and leaked out one quote and put it out put out the headline before their article.
+Speaker 1: Yeah. It's it's interesting like Meta did Meta basically go through like an eight year period where like internal town halls didn't instantly leak?
+Speaker 2: I think everything leaked always. I think I think everything's been
+Speaker 1: I know. But there was there was a period where like Yeah. The the the sort of attention of the media was way way way less on like what Meta was doing internally relative to the 20 tens and all that attention just went to the labs. Right?
+Speaker 2: Yeah. Yeah. Yeah. No. That makes sense.
+Speaker 1: Yeah. I I guess the question is like the question that I keep coming back to is like, where is their revenue ramp? Where is their AI revenue going to ramp and when? Right? Because as
+Speaker 2: Super would say ads. Like the ads like the AI has Yeah.
+Speaker 1: That's always been my view too. But when you're when you're continuing to ramp CapEx Yeah. With and saying like we're going all in on AgenTik and we're building a harness and we're also gonna do open source and it's like, well, what is the strategy? Sure.
+Speaker 2: Yeah. Like the breakthrough plan?
+Speaker 1: What is gonna take you to Yeah. A billion dollars of like pure AI product revenue
+Speaker 2: Yep.
+Speaker 1: Or or or just API revenue. What's gonna and then to five and ten Mhmm. And what's gonna allow you to like justify the spend other than I think the market would love if they just said, yeah, actually need all these GPUs because we can actually be 10 time we're already good at ads. We could be 10 times better and that's where we're gonna get the the ROI on all of this CapEx.
+Speaker 3: Mhmm. Well well, they're definitely getting ROI on that. The market is worried about, you know, all this extra CapEx on the they're going for the frontier AI model Yeah. Race again. And they had to reset.
+Like Yeah. They had to a lot of people left, and now Wang hired a ton of people and Yeah. We'll see what happens over there. It's gonna take time. It's gonna take six to twelve months before we see any more progress.
+But When just
+Speaker 1: you don't
+Speaker 3: that came out a few weeks ago was a lot better than people expected. It wasn't, you know, the frontier, but it was much better than what people expected.
+Speaker 1: Yeah.
+Speaker 2: Yeah. So how have you been processing the NVIDIA letter around open source and all the back and forth, all the people jumping on, the companies that have been staying back.
+Speaker 3: I it's been very impressive what they've been they basically united the entire tech industry against Anthropic in in the last, like, three, four days.
+Speaker 2: 18,000,000,000,000 in market cap has signed on the last time I checked across I mean, Google took a
+Speaker 3: little time. Amazon signed on eventually. Mean, Dolby yeah. Okay. They signed on yesterday.
+They tweeted out. Interesting. Okay.
+Speaker 2: I think Apple is still the holdout,
+Speaker 3: but that's the one. Which is kinda strange because they're the ones that would most benefit from open source, open weight models being, you know, more available, I would think.
+Speaker 2: But I would think so. I don't
+Speaker 3: know what Apple's thinking. But I mean, they pretty much got the whole tech industry to kind of corner Anthropic in their position. Yeah. OpenAI signed on. Yeah.
+What did you think of NVIDIA is afraid.
+Speaker 1: Yeah. I don't know I don't know how how if I don't know if they're really don't I don't read it as being like cornered by any means. Right?
+Speaker 3: Well, Jensen is on the record that, you know, he said, I think, to Bloomberg that there was rising sentiment that something was gonna happen on the on the regulation front. Oh. At at White House or whatever. Sure.
+Speaker 1: So this is Yeah. This was last week. You had at least four people in the admin say, we're not against open weights. We're against distillation. Mhmm.
+And at least I was reading into that of some type of regulatory action around open weights, and and then positioning it as we're targeting. This is
+Speaker 3: the this is like we're yesterday. Yeah. Yeah. About, you know, pushback and restrictions and he's done doing under the safety umbrella. But definitely Microsoft and video are worried that what
+Speaker 2: with
+Speaker 3: the White House or Congress is gonna do something on this front.
+Speaker 1: And Yeah.
+Speaker 3: That's why they
+Speaker 2: took Yeah. It seems very reasonable that he would no have no problem with like Gemma or Lama or any of the open source from like American hyperscalers where if you find out that they're distilling, you just walk across the street and sue them. And also these big companies have huge huge mean they have safety teams but also just like huge incentives to not have a safety incident happen on their watch because you're trying to like catch up to the frontier and then all of a sudden you have a safety incident. That's gonna be really bad for your overall brand and you have a different business to protect whether it's social networking or Google search if all of a sudden the Gemma model winds up being a thorn in someone's side for a cybersecurity reason or a bio reason, that would be really, really bad. But a foreign company that is just like hurling it over here can kind of just be like, you guys deal with the consequences potentially.
+So I think that's what what Dario is worried about. What about the overall idea of like where where it feels like we're sort of replaying the deep seek moment. Open source is going to reduce cost. And so that's a reason to pull back on the AI trade overall. How have you processed that?
+Speaker 3: It's almost it's almost a perfect catalog. People are worried about Kimi. Yeah. But when you actually read the technical paper and their blog posts, this is not a tiny efficient model. This is 2,800,000,000,000 parameters.
+It's gonna require a ton of compute to serve. I mean, we saw it the first day they put it out that their servers got slammed.
+Speaker 2: Yeah.
+Speaker 3: Even in the blog post, they say it's best run on a a kind of a server with 64 GPUs. So big super clusters that are networked well and and that's perfectly runs great on NVIDIA. And if you remember, you know, during the whole deep sea thing about a year a year or so ago, the market freaked out that, you know, DeepSeek was gonna was so efficient that it will lead to a compute glut.
+Speaker 1: Mhmm.
+Speaker 3: But DeepSeek was the example of the reasoning model that actually it was the opposite. It created a ton of demand. And I think the same thing has been happening with Kimi where, when you have more capable models that come out, people find uses for them. And right now, just like last year when we're using models took off, Agencik AI and agents are taking off right now. And the market is kinda like not realizing that because right now, just like last year when reasoning models were taking off right now, Agenic AI is taking off.
+And the next six, nine months are gonna be bigger than anyone believes. And Sam is on the record. Sam is on the record
+Speaker 4: over the weekend. Dang.
+Speaker 3: At the YC thing again, like, people don't I don't know why people don't, like, listen to the it's on YouTube.
+Speaker 1: Yeah.
+Speaker 3: That the next six months, it's going to be much more dramatically better for AI than the last two years in terms of advances capabilities. Yeah. And I I heard you say RSI before. I think it's going to be RSI. Yeah.
+People inside OpenAI and definitely Anthropic. Anthropic put a blog post on this. RSI, I think, is a lot closer than people think. And if RSI actually happens in the next three, six, nine months, that's going to soak up insane amount of meat. I mean, we have this exponential ramp for reasoning, exponential ramp for agentic.
+And then if RSI actually happens, and I think it sounds like both frontier labs think it's going to happen very soon, that's going to soak up an unbelievable amount of compute as the AI models, you know, use more compute to to self develop and improve. And I I think that's one thing that both Anthropic and OpenAI are kinda winking that, oh, it's happening. Anytime I tweet something on RSI, all these frontier AI researchers like my tweet. So I think that's good.
+Speaker 1: What what is your what is your sort of framework around compute hoarding? Because certainly certainly it is it has been happening when you look at when you look at, you know, like going back to the meta example. Right? They're not selling compute yet. They're maybe curious about it or or exploring some deals.
+But they have all this compute and they're betting on their own ability to create the capability that will have enough demand to justify justify that. Do you just think it there there there's so much demand overall that it just, you know, even if there's
+Speaker 3: there's hoarding, it just
+Speaker 1: will leak out and it's okay? Well,
+Speaker 3: there's so much demand overall. I mean, the SK Hynix executives said during their IPO run that their customers are asking five to six times more than they're able to serve. And they're kind of double capacity over the next five years, they said. And their customers, and I'm going to assume it sounded like Jensen, are asking for five to six times more than they're they're able to build. So there's overwhelming demand.
+You guys were at the advanced AI Yeah. AMD event. Lisa Su raised her CPU a Genentech CPU forecast. Just three months ago, was a 120,000,000,000 for '22 '30. Three months later, they raised it to 220,000,000,000.
+Yeah. Like, she doesn't do that. She doesn't do that.
+Speaker 2: You have that just on the
+Speaker 1: I've got that ready.
+Speaker 2: I can do whatever.
+Speaker 3: I mean, like Well,
+Speaker 1: I just love this chart because he called it perfectly.
+Speaker 2: He actually did. It's
+Speaker 3: crazy. CEOs don't don't, you know, raise their TAMs by Yeah. These multiples in a few months Yeah. If they're not seeing insane demand coming in.
+Speaker 2: Especially not CEOs Yeah. Who are serious business leaders who've been running Yeah. Like non meme stocks for decades No. And are like serious
+Speaker 3: Everyone's freaking out that this has let the .com bubble all over again Yeah. Then you find anything crazy. Yeah. But what if these hyperscaler GPU cloud businesses are amazing businesses? Like Morgan Stanley says, if you do inference, it's 60 to 80% profit margins.
+Right? These are amazingly profitable businesses as long as we keep growing the next few years. And and again, just like last year, we're we're on this exponential run right now over the next 0.5, and the market isn't seeing that. Everyone's freaking out that, oh, no. We're spending too much.
+And even Sam Altman podcast came out today and another podcast is
+Speaker 2: He's plugging this up.
+Speaker 3: Sam is out there.
+Speaker 2: He's out there.
+Speaker 3: He said that he regretted, you know, pulling back on the compute purchases. They made a mistake by not putting the pedal to the metal because now things are taking off again. So, like, I Amazon, the CEO in April, if you everyone read his annual letter, Andy Jassy wrote. Yeah. He talks about how free cash flow works.
+We're not betting $200,000,000,000 on a hunch. We see the demand. We know it's gonna be insanely profitable
+Speaker 1: It's really
+Speaker 3: and free cash flow positive in the medium to long term. So that's why you're investing $200,000,000,000 now. And in in a year or two, we're gonna see insane amounts of free cash flow, the thing that people are worried about right now. It takes time to build out these data centers and fabs and you bet now Hold
+Speaker 2: Hold on.
+Speaker 3: Couple of years.
+Speaker 2: Like, if you if you see you see free cash flow that is that that assumes that, like, the revenues have to catch up and then the CapEx can't grow more exponentially. And so that means you have to see some sort of plateauing. Maybe it's at the end of the chart, maybe it's this twenty, thirty range, but there is a different world of just like continued growth forever, and then we sort of, like, run out of money.
+Speaker 3: The the pushback I have Yeah. There is that's a static view. Right? If they don't grow revenue Mhmm. For the next three years, yes.
+You can't do that. Yeah. But they're growing Azure is growing 40%. Google Cloud is growing 80%. Yeah.
+You know, Amazon's growing high double digits. So if if revenue is growing 40 to 80% this year, next year, and the year after, that's more revenue you have, that's more operating cash flow you have to invest. Right?
+Speaker 1: Yeah.
+Speaker 3: So that's that's what people are missing.
+Speaker 1: Yeah.
+Speaker 3: And if this stuff if if the data center that you're building now, you're spending all this now, generates unbelievable free cash flow in twelve to eighteen months because, you know, this AgenTik AI is actually aging and re architecting all the workflows inside companies and you need to do the AgenTik AI coding agents to make your product better. Because if you don't if you don't iterate a 100 different iterations of your product in r and d, if you don't do AI, just like AT and T is doing at the AgenTik, Advancing AI at AMD, he's talking about they're putting a 100 gen AI models into production. They're burning a trillion tokens a month, then that's growing double digits. The reason why they're doing that is because, you know, by using GenTick AI, you're providing a better customer service Mhmm. A better you have a better product r and d, and you're helping your companies make better products and services.
+And if you don't incorporate AI into your company, Verizon, your other company is going to do is going to incorporate AI and then disrupt you and then you lose all your revenue.
+Speaker 1: Yeah.
+Speaker 3: So everyone's worried the ROI. ROI is important. But you also need return on revenue because if you don't use AI, your your rival is gonna use AI to beat you
+Speaker 2: in the market.
+Speaker 1: Yeah. Yeah. No. I I I
+Speaker 2: think the diffusion story is still even though we got like sort of jitters by the token maxing thing, just the actual usage of AI across companies is still pretty limited in terms of the amount of people that are using it, the time that those people are using it. Like, there definitely is a San Francisco bubble of startups where everyone is using AI a lot. But if you just walk into a normal business, a lot of people are like, yeah, I gotta check that out, which is
+Speaker 3: some some context here. Yeah.
+Speaker 1: Ara Karazian, Jared Sleeper over on the X was saying enterprise adoption disparity remains enormous. Yeah. And he cited Ara saying usage would a 100 x if every company adopted AI to the degree of the most advanced companies.
+Speaker 2: Yeah. There's like this No.
+Speaker 1: There's like small group of companies that are
+Speaker 2: People forget in the ramp in the ramp data, adopting AI can mean like having a ChatGPT pro account for someone, which is like not exactly the same as like using codex and like coding agents and stuff. Like, it's important. I think that, you know, if I have someone on my team, I want them to be able to go and do a deep research report. But that's like table stakes. The question is like, are you actually speeding up anything that's repetitive in your job?
+And that diffusion is just starting to take hold.
+Speaker 3: So so the total market size in terms of IT and knowledge management in corporations Mhmm. It's about $6,000,000,000,000
+Speaker 2: Mhmm.
+Speaker 3: Right, a year. The two main frontier AI model companies, OpenAI and Anthropic, I'm going to say, I think this is roughly accurate, are doing a $120,000,000,000 combined in ARR. Yeah. You know? Well, why can't that go to 200, 300, 400,000,000,000 in the next year or two?
+I mean, they're they're they're growing at exponential rates
+Speaker 2: Yeah.
+Speaker 3: When we're taking off. And the if the market is $6,000,000,000,000, right, why can't they grow to 200, 300, 400,000,000,000 in the next couple years?
+Speaker 1: Yeah.
+Speaker 3: I mean, it's it's like just do a little logic and rational deduction. Yeah. This is definitely possible and it's happening right now and it's accelerating and people aren't you know, they're just taking, you know, these big headlines where we had this, you know, $50,000,000,000 for the Financial Times and we find out it's over thirty years. It's like on the homepage.
+Speaker 2: We we yeah. Yeah. Okay. I wanted to ask you about this. NVIDIA revealed its Tenant for $50,000,000,000 data center that will use its chips.
+Explain what what is actually going on
+Speaker 3: here. So the Financial Times put on their homepage today. Yeah. The NVIDIA is gonna backstop lease for a data center in Texas
+Speaker 1: Yeah.
+Speaker 3: For $50,000,000,000. And I saw that. I was like, oh my gosh. Oh. That doesn't sound good.
+Speaker 2: Yeah. No. It literally sounds like they're buying their own chips. Like it sounds like the most bad thing you could do.
+Speaker 3: Yes. Then they actually read the article like halfway down the article. It's like a fifteen year lease and it's only $50,000,000,000 if they renew the lease after fifteen years. Okay. So it's like over thirty years if they renew it.
+Then Yeah. If you think about that, you're like, wait a minute. 50,000,000,000 divided by thirties, if they renew it,
+Speaker 2: That's NVIDIA's fifteen year lease commitment for the Texas site is worth basically 20,000,000,000 and renewal options would take the total value to 50,000,000,000 over thirty years according to Hut eight.
+Speaker 1: Okay. What what are their plans for the site? Is this they are gonna have some like, what what do you expect them?
+Speaker 3: So so my my point is this is a billion, you know, whatever, a billion or $2,000,000,000 a year. Right?
+Speaker 2: Mhmm.
+Speaker 3: It's a non story. But it's a it's a big headline since they show a headline on the homepage.
+Speaker 2: Yeah. Also it does also it's but not it's it's not like you're taking a $2,000,000,000 loss every year. It's Yes. You are the tenant and then you are also renting that out, so hopefully you're making profit?
+Speaker 3: It's a rounding error. It's like, you know, they're doing 320,000,000,000 run rate a year now that's gonna go to $405,100,000,000,000 next year. And we're talking about something that might be a billion, you know. Like, this is not a story, but this is how people run with the sensationalized headlines and people panic and freak I
+Speaker 1: think they just wanted to say the biggest number.
+Speaker 3: Yeah. That's exactly the point. And and we're gonna see what happens with this Wall Street Journal article. Both OpenAI and NVIDIA are not commenting so far. Yeah.
+We'll see
+Speaker 2: But take us through the rumor. We have
+Speaker 3: to wait.
+Speaker 2: Rumor will Well,
+Speaker 3: it's not rumor.
+Speaker 5: It's the
+Speaker 3: Wall Street Journal and other people reporting Yeah. NVIDIA is in talks with OpenAI. It's a backstop soft bank up to 250,000,000,000, you know, to be able to we don't know the details. And I don't want to speculate and comment, but let's actually see the details before we I I think the market had a really big negative reaction yesterday
+Speaker 2: Oh, sure.
+Speaker 3: To this story. Yeah. Because everyone I mean, Jim Kramer was telling his audience, sell everything at the open today because aianddatacenters,.com, you know, it was insane. It's just let let let's see the actual deal Yeah. And the metrics and the numbers before we panic and freak out.
+Speaker 1: Yeah. Yeah. Yeah. Yeah. Yeah.
+That makes sense.
+Speaker 2: Sell
+Speaker 1: everything. Honestly, when you say freak out and sell everything, sell your dollars, sell your house, stocks, sell then I'll freak out.
+Speaker 2: Mhmm.
+Speaker 1: But until then, Tay, I feel I feel okay.
+Speaker 3: I I mean, I just see the fundamentals. I see the CEO of AMD expanding her TAM Yeah. You know, dramatically over the last three months. I see RSI under Horizon, like, every AI researcher is like, oh my god, if this is going to happen, we have to get there sooner. And then I see, you know, the obvious use case of AgenTik AI where you have to rearchitect your workflows internally.
+Every company has to do this. So everything is taking off. You see like, you see, when the president of Korea came to San Francisco area last week, you know, they had, like, a day in the valley. Instantly, NVIDIA CEO, Jensen Huang, Broadcom CEO, Haktan, Dario, you know, Sam Altman are there. Right?
+You know, do a little logic deduction. Why are they there like crazy? Because they need HPM memory and they're dying to have it. So if you think about that, that means there's insane demand and HPM memory is in in shortage. There's tremendous demand for it.
+Right?
+Speaker 2: Talk about the oh, sorry. Talk about the NVIDIA CUDA mode. It feels like a big piece of AMD's advanced AI event was maybe the CUDA mode isn't as much of an issue anymore in the age of agentic AI. You can have an AI agent write you the software that you need to use any chip and that creates less pricing power for NVIDIA. But there's another world where you're not really like NVIDIA doesn't necessarily need a moat because everything is just growing so fast that they're still growing.
+But how how have you interpreted the processing of, the potential death of the CUDA moat?
+Speaker 3: So AMD is on it. Kimmy wrote, like, a couple paragraphs in their blog post about how they created a GPU kernel, all that. So everyone, you know Sure. Gets scared or whatever. It it's like, we'll see what it's like in real life.
+You know, this is just you know, AMD is incentivized to say, oh, CUDA's not a problem anymore. CUDA's been a tremendous moat, and I think it continues to be a moat. And the reason why is it's super reliable. Yeah. All the bugs have been optimized and fixed.
+Speaker 2: Sure.
+Speaker 3: And that comes from hitting the software, you know, millions of times and billions of times. Right? Yeah. Like, you don't know if, you know, if if you use ClockCode or Kimi
+Speaker 2: Yeah.
+Speaker 3: That what they figure out using their training data is gonna work in the real world. Right? Mhmm. They could talk about one little piece that does well. Let let let's see how it actually works.
+Speaker 1: Yeah.
+Speaker 3: But NVIDIA's big moat is its scale, its co design of actually working through the networking, the CPU, the GPU, and how everything works together. And the other big thing is their balance sheet and their ability to get supply commitments from, you know, I I think I said this before, optical startups are, like, upset because NVIDIA secure all the supply for all the optical components. Same thing with TSMC wafers. Same thing with HPM memory. So the NVIDIA is using their size and Gorilla and be able to prepay and get components that are in shortage.
+So they become the dominant you know, over the next year or two, you're gonna see NVIDIA able to add tons of revenue because they were able to lock up all the supply components. That's another thing that people don't really talk about is their supply chain and their ability to work with partners and secure secure component inventory.
+Speaker 2: Is there still energy FUD that we would run into an energy bottleneck before we run into a chip bottleneck?
+Speaker 1: So
+Speaker 3: Jensen said this last week on a Bloomberg interview that there are a lot of bottlenecks including data center shell, power, and all those things, components, energy, whatever. So all those things, sounds really bad. Right? And then right after that, he said, I think we have the chip industry has enough supply to double their revenue every year. Basically implying NVIDIA has enough supply, for for energy and all that stuff.
+No one is pricing that in. So everyone talks about bottlenecks. NVIDIA CEO just basically told you on Friday that they have enough enough supply chain and all the bottleneck stuff to double revenue every year. No one you know, NVIDIA's revenue estimates for next year are a lot lower than double, I'll tell you that.
+Speaker 1: Do you think the market prices in just how much of almost every important AI company in every category NVIDIA actually owns? Like, it it it feels like every single like, we're constantly focused on who's gonna raise CapEx next and and and and where is this quarter coming in. And it feels like in two or three years, people will look at NVIDIA's balance sheet and be like, wait, they have what what I imagine then will be, you know, could could end up being a trillion dollar plus of just like ownership in all of these great companies, which again just goes back to the advantages of that early scale while they're you know, while while all these companies are trying to compete away NVIDIA's margins and all these different things, they've been able to accumulate, again, positions in in all of these incredible companies. I mean, we saw the SSI news yesterday is a great example of that. But but how do you look how do you see it?
+Speaker 3: So I I think look at Jensen's history in investing in these companies and CoreWeave and see how much money they made. They just bought stake in the optical companies, Lumentum and Coherent. Jensen is enabling the future because he sees this overwhelming title of demand and he needs these companies to be able to build up their supply chain and to give supplies and chips to NVIDIA so they actually ramp very hard. You know, everyone's freaking out that this is vendor financing. What if hyperscale GPU cloud is so profitable and these companies need capital to build up that supply so they can serve the GPU cloud services over the next year or two.
+Maybe Jensen sees that coming like he did with all these other companies like CoreWeave, and that's why he's investing in these companies to be able to expand their ability to make the components the industry needs. So I I think you're exactly right. In a year, two, three years, NVIDIA is going to have like all these stakes in these companies and it's going to look like he was
+Speaker 1: a good
+Speaker 3: investor because he has been in the past. I mean, I think about the
+Speaker 2: buy a leather jacket for like $5 and sell it for a million dollars. I don't know what else you need to see.
+Speaker 3: I mean, think think about the yellow
+Speaker 2: secret bidder? Did you win that? No. I got get you a jacket. The real question I is
+Speaker 3: do I do have someone to sweat
+Speaker 2: distills a jacket and open sources it, you can get a dupe of a Jensen jacket for $2. That's what I want. Anyway, thank you so much for coming on the show. Jordy, you got anything else?
+Speaker 1: This was great. Yeah. This was great. Thanks for putting up with all of our jokes.
+Speaker 3: Hopefully, this has becomes the lucky charm for the markets.
+Speaker 2: Yes. I agree.
+Speaker 1: I I agree.
+Speaker 2: Agree. Talk
+Speaker 1: to Great to see you, Tay.
+Speaker 2: Have a good rest
+Speaker 1: of Good, man. The
+Speaker 2: Goodbye. Let me tell you about CrowdStrike. Your business is AI. Their business is securing it. CrowdStrike secures AI and stops breaches.
+I wanted to run through on the power issue. There's an interesting article in the journal. An underground nuclear reactor is coming to this Kansas town and it's dividing locals. This is something that I had tweeted about years ago like why don't we just put the nuclear reactors underground, put solar panels on top, best of both worlds, optimal use of energy. But there's a lot of fear and uncertainty and doubt about this one.
+They say no one has tried operating commercial one a mile down until now. It's great that it's here. It's kind of bad that we're the guinea pigs says the residents of Parsons, Kansas. Residents of the sleepy farming outpost agree on many things. But whether to put an experimental nuclear reactor a mile deep in the granite beneath their town isn't one of them.
+Elected officials and some others see a chance to create jobs and lure data centers and manufacturers to a rural patch whose economy has been flatter than the surrounding cornfields. Another group is effectively saying, not under my backyard. It's newbie, not NIMBY, because it's not under my backyard. Numby or something like that. I put a 125,000 into my house and now a nuclear reactor is coming to town?
+Said Gerald Johnson, an IT professional who planned to retire in Parsons. I can't think of a worse idea. No one has tried operating a commercial nuclear reactor deep underground until now. I'm surprised no even like the Soviets in like 1950 didn't try it. I feel like they were trying everything.
+I'm surprised.
+Speaker 1: Yeah.
+Speaker 2: But the so called gravity reactor is the creation of Liz Mueller and her father Richard Mueller, emeritus professor of physics at the University of California Berkeley. It's Berkeley people again, and an inventor. They founded DeepFission, a three year old California startup that raised $150,000,000 in the past year, including 40,000,000 last month through an IPO, largely to fund the work in Parsons. Parsons, a population of 9,600 people, sits about midway between Kansas City and Tulsa, Oklahoma. Deep Vision drilled a first test hole this spring on a 100
+Speaker 1: Office chairs like that have really fallen off. They have. Which tells you now might be the time to bring them No. Right?
+Speaker 2: I need I need a new office chair. Might go for one of those. The high back leather. It's good. Good.
+Deepfission drilled the first test hole this spring on a 100 acres at a mostly overgrown industrial park dotted with old munitions bunkers just outside town. On a recent day, Maurice LaFountain, Deep Vision's senior engineering director, showed off a pink flecked granite retrieved from the company's first test hole and joked that the billion year old rock would make a nice countertop. An empty steel container canister sat on a clear drilled pad waiting to go down a second hole this year. The plan is to send another one loaded with nuclear fuel into a third hole to heat water a mile underground and generate electricity on the surface in 2027, 2028, an an astonishingly short time frame by industry standards. Interesting.
+Anytime you're putting a nuclear reactor in a hole, it's kinda scary, he said in his office. It's great that it's here, but it's kinda bad that we're the guinea pigs. Very interesting. I'm surprised we haven't heard more about this company, this idea, everything that's actually being planned. There's something a little I understand where they're coming from.
+There's something a little bit nerve racking about like even though you would think a mile deep if something goes wrong, it's less of an issue. It feels like, well, people it's harder to get to and like just go and solve the problem
+Speaker 1: Deal with it.
+Speaker 2: Deal with it as opposed to like, oh, yeah. It's a building over there. I see people coming in and out all the time. The experts are in control. I don't know.
+What do you think? Are you pro nuclear underground, a mile underground? Could be the future.
+Speaker 1: Could they not find maybe a place to do that that wasn't right under a town?
+Speaker 2: It's not right out of town. It's outside of a town. Okay. You need some infrastructure,
+Speaker 1: you know, like.
+Speaker 2: And I bet what they would say is like, look, it's a 10,000 person town. We went miles away. We're on a 100 acres of land. Like, we are outside of the town. But, yeah, there there aren't that many places that are truly like uninhabited for like hundreds and hundreds of miles just because of the nature of America.
+There's towns all over the place, every street. And you need roads to be able to deliver equipment and whatnot. Anyway, let me tell you about Codex. Codex is a powerful workspace for getting work done with AI agents. Whether you're writing code, analyzing data, creating content, or automating business workflows, Codex helps you move projects forward from start to finish.
+What is this? How did we get here? Anyway, we have Ben Zweig from Revelio Labs coming on the show. How are doing, Ben?
+Speaker 4: Good. Good. I love that intro.
+Speaker 1: Was just for you. We're testing that out for the first time.
+Speaker 4: It matches the vibe. Yeah.
+Speaker 2: The vibe of the labor market. Take us through a little bit on your background, how you work and then some of what you're tracking in the labor market and how it ties to your actual business.
+Speaker 4: Yeah. For sure. So so I'm a labor economist, been tracking labor market data for a long time and started Rebellio Labs. So Rebellio Labs is a workforce data company. We're collecting, curating, synthesizing all labor market related data
+Speaker 1: Yeah.
+Speaker 4: That's out there in the world. And of course, you know, big question is how is AI affecting the labor market?
+Speaker 2: Of course.
+Speaker 4: Though it, know, we're we're uniquely positioned to answer that question and it's on everyone's mind. Mhmm. So we we started putting out this labor market, this is kind of AI labor market tracker which is really about answering like how is AI affecting the labor market today. So not really getting into the speculation of what might happen. Yeah.
+Yeah. Just today. But really like what do we know?
+Speaker 2: Really quickly, what is your business model? Who who gets value out of this data? And then I also would love to know how do you go about getting more accurate data? Because I see like obviously the Census Bureau, the government has access to do polling. ADP is a very logical place to get data because they run payroll so they can see the data.
+But what's been your strategy there and then who's the customer?
+Speaker 4: Yeah. Yeah. So I'll start with the customer. So a lot of it is hedge funds. So they're speculating on performance.
+Companies yeah. Nice
+Speaker 1: Thank you for your time.
+Speaker 4: Tier for hedge funds. Yeah. They don't get a lot of love these days, but but yeah, they they are speculating on the performance of a company that they have no affiliation to. Sure. You have to understand the, you know, what's happening in the company, the workforce dynamics, HR departments for benchmarking also, so strategic workforce planning, people analytics, talent intelligence.
+Mhmm. These are all like kind of segments of analytical HR.
+Speaker 1: Mhmm.
+Speaker 4: And academic research. So you know, they of course want to know what's going on. Sure. So these are, so basically we we get the data not through surveys, not through payroll, but really from the internet. You know, LinkedIn profiles, job postings, glass reviews, layoff notices, immigration filings, freelance platforms, like anything and everything that is in the public domain.
+And that information has to be you know enriched and synthesized in a smart way. Mhmm. Like there's all sorts of sampling biases, there's lags in reporting, there's like raw text so we have to classify that to occupations,
+Speaker 1: to
+Speaker 4: skills, seniority levels and you know importantly work activities which is more of a recent thing for us but Yeah. Important these days.
+Speaker 2: And then sort Okay. Of back test against like the historical actuals to see that the model's working and then you can be more up to date?
+Speaker 4: So we don't back test against financials
+Speaker 2: because No. No. I mean, mean about like Yeah. Like if you ran your model on like what was the employment rate in 2021, you could look at the actual employment rate to sort of calibrate that your system is predicting employments correctly. Is that is that roughly correct?
+Speaker 4: Yes and no. I mean for some models we can see what was retroactively revealed. Okay. So you know when someone changes their job they don't necessarily update that right away we can see that you know every timestamp has like more information than before. So that's like a solvable problem.
+Speaker 1: Got it. Got it.
+Speaker 4: But in terms of you know saying what's happening in the labor market at large Mhmm. We can kind of use BLS data. So BLS is the Bureau of Labor Statistics. Yeah. We can use that data to kind of like proxy for it but that's got issues itself.
+So I don't know if we want to use that as ground truth. So you know I think BLS has you know a view on what's going on from survey data, ADP has from payroll data and we have from Internet data. And they're all kind of independent in their own way. Mhmm. Kind of uncorrelated errors.
+Speaker 1: Jordy. Okay. So I want to understand how how you look at your data in the context of AI diffusion. Right? So a company, an individual company, or an industry might have fluctuating labor data.
+Right? Maybe they're adding a lot of people. But then individually, if you look at those companies, maybe some companies are adopting AI quickly. Some companies in that sector aren't really adopting AI at all or they're doing it in a very minimal way. Let's say they just have a basic, you know, ChatGPT $20 a month subscription.
+So like how are you I was I was talking to John maybe was it six months ago? I was saying like, I really want there to be a firm that is just studying AI diffusion in specific industries and getting into the nitty gritty, probably doing surveys to actually understand how because every company says they're adopting AI, but we all know that there's like such a broad spectrum and then of course some people are saying that just because they wanna be in in feel like they're a part of the club.
+Speaker 4: Yeah. Yeah. I think it's probably mostly those that wanna be part of the club. But I agree. Mean, so so there's a few ways to get at adoption data.
+So so I think adoption is the hardest part of all of this Mhmm. Because that's really a firm level, you know, piece of information whereas Mhmm. AI exposure is like more of a person level piece of Sure. So so I'll tell you the way we do it in a couple ways. So one is that we we had a partnership with, we still have a partnership with Ramp.
+So I know, friend of the pod.
+Speaker 1: Let's
+Speaker 4: go. So they can track adoption just using like AI spend. Yeah.
+Speaker 5: So you
+Speaker 4: can see like dollars spent on tokens, etcetera. Yeah. So that's like a pretty good way to get adoption. The problem with that is that, first of all it's like a self selected sample, you know, ramps skews toward more like tech, is fine, like that's overcomeable. Yeah.
+The other issue is that it's anonymized. So they can't release information at the firm level. So you know when we collaborate with them like we have you know the labor market data and they have the adoption data. So you know it's like complicated. Know we have to send data, they have to like run something, we have to do some matching.
+So it's like a little bit, it's got some friction. Mhmm. The other way to do it is through we use this measure which is used in a paper, a recent paper that measures adoption by like sort of hiring AI integration teams. Mhmm. So the thought is that you know if someone's like hiring AI integrators you know beyond some threshold that they're like taking it seriously.
+Speaker 2: Yeah.
+Speaker 4: And they're embedding it into their business processes. And by that metric we see about 9% of firms like getting very serious about AI. It's a very conservative way to measure AI adoption
+Speaker 1: Yeah.
+Speaker 4: But seems to be pretty good, like it's correlated with all sorts of other things.
+Speaker 2: Yeah. I sort of hate that idea as a metric, but it probably makes so much sense in larger organizations that that is a great signal. But it just feels like completely the wrong way to go about actually changing a business. Like I I feel like adoption should be so much more ground up than like, oh, we're hiring a special team to do this. But that's the way businesses work.
+And I think you're correct to identify that and probably is very indicative of a change in the stance of the business.
+Speaker 1: Where's where's an area that that AI is really good and you're seeing job loss? Because like AI AI is pretty good at software engineering now or generating code and and, you know, the companies that are adopting it the most are hiring a lot of engineers. Whereas I've heard in LA specifically, apparently, the models that do product photography, so men and women that, you know, wear a bunch of clothes for like an Old Navy Mhmm. When they're releasing a new collection. Like that work has been very impacted because that talent, they don't have a brand yet.
+Right? And so maybe certain companies will just say like, yeah, let's just take this shirt that we have and just generate it on 20 different AI models and you're and we're good to go. Right? It just doesn't doesn't really matter that much if they're using real talent or not. And so they choose the easier cheaper route.
+Speaker 4: Yeah. I think that's a great example. I mean, for the most part, you know, the board, adoption is generally correlated with growth. But where we're seeing reductions, I mean, I think I think the creative fields are a great example. So, you know, if you need like video b roll or just like, you know, stock images or just, you know, podcast intro music, you know, you know, that that is like very easy to get from these kind of AI generated
+Speaker 2: Sure.
+Speaker 4: You know, creative elements. Sure.
+Speaker 1: Copywriting It's fascinating because how many people yeah. It's like it's just quite interesting because when you when some of these things how many people were actually in the roles? Like, would it actually does it show up in labor data at a at a large scale at all? Right? People that are just doing, you know, stock photography and making their living that way or
+Speaker 2: Yeah. And a lot of these people might have sort of sloshed around. Like, I I mean, I see I see Instagram reels from people who years ago were posting like After Effects tutorials, Premiere Pro, DaVinci Resolve, like little video editing tutorials. And now they're posting like AI enabled workflows and instead of showing you how to deal with a green screen the old fashioned way, they're just doing it the new way and they're probably still doing it for clients and the client like the client is like spec is just like I need ads that convert and they're just doing more of the work but then there's other stuff that's bleeding out all sorts of different stuff.
+Speaker 4: Yeah. I mean one one kind of framing I I would put this in is that you know the we're seeing a lot of kind of automation of things are very task based. Mhmm. Things that are like really micro jobs. They aren't like full jobs at all.
+Mhmm. So we're seeing like declines in freelancing across the board. Mhmm. So freelancing is hurt hit pretty hard. Mhmm.
+But that's really an environment where people transact tasks.
+Speaker 1: Not Yeah.
+Speaker 3: Yeah.
+Speaker 1: Yeah. This is why we were just talking about this earlier. The, you know, historically, like if you needed a really specialized website, like it's not your main site, but let's say in our case, we're doing a drop. Three years ago, we would have gone Yeah. And maybe gone to Upwork and and said like, hey, I need a simple website made and just find somebody to do that one off.
+And now Yeah. AI is just so good at it.
+Speaker 2: Or like a basic logo for a first draft that would be like a 99 designs. Before you bring in like a real branding firm, you might just get a freelancer to mock something up for you. Now image generation can do that for sure. What do you make of the computer science shifting? There are so many opportunities for entrepreneurs, startups are growing, there's some tech layoffs, but at the same time it feels like just in general if you're if you have a computer science degree, you're probably going to be a bit better at using AI broadly.
+And so there's lots of opportunity and yet the number you have here is computer science enrollment is down 28% from its 2022 peak.
+Speaker 4: Yeah. Yeah. So I have mixed feelings on it. First of all, it's very dramatic. Yeah.
+So one thing that that kind of one optimistic take is that the supply side of labor markets is actually quite responsive to changes in technology.
+Speaker 1: Mhmm.
+Speaker 4: And that wasn't obvious before. Mhmm. And you know, if people can reorient themselves flexibly, that's great. That means, know, we can we can be adaptive, we can have more of a dynamic economy and worry less. So I'm encouraged by that responsiveness.
+I think it's an overreaction for two reasons. One is that we are not seeing declines in employment you know based on the firms that are adopting a lot and that's true in engineering, it's true in tech. We're not seeing mass layoffs despite the narrative. So I think it's premature for that reason. Another reason is that I think even just a couple years ago, maybe even less, I mean time is like elusive to me.
+But I think you know not so long ago you know, we thought of AI as chatbots and code assistants.
+Speaker 1: Yeah.
+Speaker 4: And now it's more agentic tools. So it used to be such a low barrier to entry type of technology where you know anyone's grandma can use it and, you know, coders, you know, engineers were really just like, you know, replacing their work at high rates. Mhmm. Now, you know, we're seeing, you know, complicated tools like, you know, agentic systems are hard to
+Speaker 2: use. Yeah.
+Speaker 4: They they they kind of favor the digitally native and people who have experience with engineering.
+Speaker 2: And even when
+Speaker 4: you're And you're know orchestrating.
+Speaker 2: There's there there are a whole bunch of like from a business from an enterprise perspective like cost trade offs, privacy, security, how how deep is this system? Like even just firing up a a coding agent today, you're hit with prompts like, do you want this to be have access to your documents folder? And that's like a question. Yeah. And and a lot of consumers are like, I don't know.
+And a lot of businesses are like, I don't know. So there is some sort of like capability overhang.
+Speaker 4: Yeah. Yeah. And I think, you know, it's it's a different job than it was before, you know Yeah. Like people are, you know, engineers are spending less time, you know Yeah. You know, the front end engineering for a website, but they're doing more of kind of that DevOps.
+Mhmm. So I think it's premature and I think we'll, I mean, you know, I suspect we might have a shortage of engineers in the way that now we have a shortage of radiologists. Everyone was nervous that like radiologists were gonna be a thing of the past and and now there's a shortage and Yeah. You know, wages are super high.
+Speaker 2: It's like the final boss of AI automation. AI researchers like, one day I'm coming for you radiologists. You imagine that it all started with like Just bullying fun train an AI researcher and being like, what you're doing is so useless and the AI researcher is like, I'll show you radiologist. I'm going to put you out of a job. And the radiologist is like, I'd like to see you try.
+And then years and years go by. Talk to me about hires to posting ratio. It's down 38.6% since late twenty twenty two. I can imagine that there's a lot of slop posts. We were debating this before.
+But how do you tease that out? What do you make of the hires to posting ratio dropping?
+Speaker 4: So this is the thing that I get the most nervous about. Mhmm. So, you know, we're seeing some slop posts, slop job postings.
+Speaker 2: Yeah.
+Speaker 4: But we're also seeing a lot of slop applications.
+Speaker 2: Yeah.
+Speaker 4: And when a job goes up, you know, you get I don't if you guys have posted a job recently, but I I just did last week and I got, you know, a thousand applications in the first like five minutes. Mhmm. There are all these like job boards that are kind of helping people auto apply.
+Speaker 2: Yeah.
+Speaker 4: Even Indeed is doing this which Sure. I think is a bad move for the record but
+Speaker 1: Yeah.
+Speaker 4: They'll do what they want. It's, you know, so so basically employers are getting completely signal jammed. They're getting overrun with these applications that look strong
+Speaker 1: Yeah.
+Speaker 4: But they really have no way of verifying. So the utility of each job posting is going down, it's not it's not as good of a way to find candidates anymore. Mhmm. So employers are relying on networks, it's getting harder to hire. And in the economy at large we have this kind of low hire low fire environment where there's just not a lot of movement in the economy.
+And I think that is the result of, you know, AI usage in the search and match process.
+Speaker 2: Yeah. You would think that, like, I I've been surprised that social media has not been that overrun with slop. Like, there's there's definitely some slop problems here and there. But the in general, the algorithmic feeds have been sort of set up to deal with this where the bad slop gets filtered out pretty quickly.
+Speaker 4: Except for LinkedIn. But, yeah.
+Speaker 2: Sure. But I've been I've been surprised that that there hasn't been as much of an intermediary where you put up a job post, yeah, you get hammered with a thousand applications, but the filtering is really, really good so that you're really only looking at the top 10. Maybe you dip in the top 100, but you're not at all annoyed by the bottom 900. Because I guarantee you that there are millions and millions of sloppy Instagram videos out there that would annoy me if I saw them, but the algorithm will just never show them to me. And then maybe there's one that uses AI, but it's good and it will show it to me because I still enjoy it.
+So it feels like, hopefully, there's people working on this. I'm sure that people are, but that feels like the next iteration to unclog this because that seems like a major problem. You need the matching in the in The US economy to be really really strong.
+Speaker 4: Yeah. I mean, there's been some regulatory challenges there too. So a few years ago it became illegal for employers to That's right. You know, sift through candidates using AI. Wow.
+And I don't know how enforced that is. Yeah. But it's it's a liability for employers and not a liability for candidates. So there's some asymmetry in how in who can use AI.
+Speaker 2: That's very interesting. I had no idea. When did that Yeah. I remember I remember that that you can't use AI to to filter out candidates. I think of it as like I I I understand where that came from on like bias based into models and like very preliminary deep barely deep learning algorithms to sort of like look at the person's name and look at their graduation date and like try and filter for that.
+Like I'm just thinking about like it like did the is the resume complete slop, you know? Like a complete like a pangram level that doesn't seem to impose like bias in the same ways that they were trying to avoid. So we're in this weird like knock on effect world. But that's the way these things go. Jordy, anything else?
+Speaker 1: No. Come back on as This really great. Come back on as coming there's off as there's yeah. More more data that's notable. Yeah.
+You can tease the hedge funds a little bit. Yeah. Give them a
+Speaker 4: for sure.
+Speaker 2: And congrats on the progress. Thanks so
+Speaker 1: much for coming on. Yeah. Great to meet you, Ben.
+Speaker 3: You too.
+Speaker 2: Talk to you soon.
+Speaker 1: Cheers.
+Speaker 2: Have a good one. Let me tell you about MongoDB. What's the only thing faster than the AI market? Your business on MongoDB. Don't just build AI.
+Own the data platform that powers it. And let me also tell you about Cisco, critical infrastructure for the AI era. Unlock seamless real time experiences and new value with Cisco. Up next, we have Aakash from Takeoff. He's the founder and CEO.
+He's been on the show before, but this is the first time
+Speaker 3: Here he is.
+Speaker 2: With a new flag. How's it going? Give us the news.
+Speaker 1: It's going well. It's great to see you guys. The news is that Sierra just bought us.
+Speaker 5: We announced it last Thursday.
+Speaker 1: Jordy completely missed.
+Speaker 2: That helped me.
+Speaker 5: Let's go.
+Speaker 1: That's the first first miss. First miss.
+Speaker 2: Brutal. Well Sorry to do that. Congratulations.
+Speaker 1: I gotta go back go back to practice. Work on this. So No. I'm excited. I'm excited.
+Thank you, guys.
+Speaker 2: So tell us the story of the company. I mean, we got got enough time for, I think, for you to tell the entire story from start to finish because all of this sort of happened pretty quickly. Where were you before you started the company? When did you start the company? What was the growth like?
+Take us through the the the journey.
+Speaker 5: Yeah. Absolutely. So we started the company a little over a year ago. We started to build Over a basically like agents that would be slightly more Yeah. Capable than what we're seeing today.
+Sure. Right? I we fundamentally founded the company on this hypothesis that there were two different kinds of agents. There's human in the loop agents. Mhmm.
+And then there's truly autonomous agents. Mhmm. Human in the loop agents are the agents that we all love to talk about. Like, we're talking about plot code, codex, things that you prompt. They do things.
+They can do them for a very long time. It could be minutes, dozens of minutes, hours, even some case in some cases days. But fundamentally, you are the person that kicks them off and evaluates their work. And then, like you were talking about in the previous interview, clicks accept, viewing my downloads folder. Yep.
+Autonomous agents are not that. Yeah. Autonomous agents, when you think about it from the perspective of a buyer, it should feel like you are multiplying your labor force. And when I say feel like, mean it should be a one to one translation. Yeah.
+I should feel like when I buy takeoff, I'm buying a 100,000 agents that can do what I might have a team of disparate human software, etcetera, doing today
+Speaker 2: Mhmm.
+Speaker 5: But at a much more massive scale. Yeah. That was like the foundational thesis of like, how do we actually build agents that can do this? We call them long horizon agents. We call them fully autonomous agents.
+And they would go after explicitly revenue aligned use cases. And the reason we went after revenue aligned use cases is well, there's lot of different reasons. But the most obvious reason is like, why are you going to buy mission critical AI software from a kid with crazy hair? Like, the only thing that's going to get you to do that is if I can prove to you I'm going to make you more Mhmm. Right?
+And the
+Speaker 3: way I get and the way
+Speaker 1: I get to prove to you I'm going make you
+Speaker 5: more money is I make it very zero risk for you. I'm like, give me your lowest quality leads if I'm talking to a lending company. Give me your patients that are going to, churn Mhmm. If I'm talking to a healthcare company. And, like, let's see what I can do with the agents that I build for your company.
+Let's see if I can recuperate that lost revenue. Let's see if I can increase your top line. Mhmm. And if we are all successful here, at the end of the day, I'm going to be in your board deck at the end of the year because you bought a piece of software and revenue is up double
+Speaker 1: Yeah.
+Speaker 5: That was the foundational pitch thesis, the whole idea of what the company was going to be. We tried building agents in different in different ways. We started actually with browser agents because we figured if we can use software, we can do what humans do. Yeah. But we thought that that would actually we we realized, not thought.
+We realized because we get spit eaten up, chewed up, spit out by the market over and over again. Mhmm. We realized that that's Over
+Speaker 2: and over again for like for like six months.
+Speaker 1: For six months. For six months. That's fair. One simple tax rate.
+Speaker 5: For for the viewers, what Jordy and John are referring to, if if you haven't read our literature, which I don't expect you to, is that we entered this calendar year at effectively $0 in committed revenue. And by the time we got acquired by Brett and Sierra, we were at near 8 figures in revenue. So what they're referring to is that very short and vertical kind of, no pun intended, takeoff in revenue ramp.
+Speaker 2: Let's
+Speaker 5: go. And so, again, More like people
+Speaker 1: should name their company takeoff.
+Speaker 2: Great that's a lesson. It's amazing.
+Speaker 1: Yeah. I mean, it it's got
+Speaker 5: its own SEO things. Former member of Migos, rest in Yes. Now, we're we're honored to, like, carry the name with a positive light. That being said, like, you're only gonna make money if your agents are trying to sell or, like, you know, trying to be sold upon the value of adding revenue if you actually add revenue. And so we de risk it because I know, I'm not Bret Taylor.
+I can't walk into a room or at least I couldn't walk into a room previously and get someone to pay for something that's not already driving results. Mhmm. So we go in, we do pilots. They're not necessarily free, but they're paid on outcome. Mhmm.
+And so if I drive this outcome that we're talking about, usually directly revenue or something tied to revenue Mhmm. For example, for a lending company, loans funded, loans originated
+Speaker 1: Yeah.
+Speaker 5: I get, you're going to pay take off the way you pay a human being on commission and some sort of base units based on the amount of tokens, voice, SMS that are used. So the customer thinks, I'm only paying when I create x thousands of dollars in margin. I'm paying hundreds of dollars of cost of goods sold. They love that trade off. And they're like, if it fails, it fails.
+And if it succeeds, we're making more money at the end of the year. Yeah. That's how we keep Crazy Hair walks into a room and ends up selling multimillion dollar contracts over and over and over again. Because like, once it starts actually working
+Speaker 1: Yep.
+Speaker 5: Even what I did not expect, really, is like the compounding nature of of of exponential growth.
+Speaker 2: I love it. Walking I through
+Speaker 3: love you guys that question.
+Speaker 2: How deeply you're integrating or you were integrating with some of those first customers. Because there's a world where you're just like, give me the stale leads. I will go off and I will do the email. I will do the SMS. I'll do I'll do the whatever happens and I'll sort of like either build my build those systems or maybe you'll set up your own like Mailchimp account or whatever you want.
+Or there's another version where you're like, I just I want to live within your CRM, within all your tools. I will do API integrations into whatever legacy systems you have to actually Yeah. Collect all the knowledge to make the correct move and actually drive revenue.
+Speaker 5: No. It's a fantastic question. And it was it's categorically the latter.
+Speaker 2: So Okay.
+Speaker 5: There was this there's this lecture, for lack of better words, give for every potential candidate and existing employee
+Speaker 3: Mhmm.
+Speaker 5: Of Takeoff, which is we are given the privilege, Right? Not the right, but the the sheer privilege of sitting between our customer and their revenue.
+Speaker 2: Mhmm.
+Speaker 5: Like, I could explain this in a million ways why it's so important, but the most important thing to explain is that our buyer was always the CEO or a c suite member. It wasn't some VP of something that reports into something that reports into the CEO. When you are selling revenue, you are selling to the CEO.
+Speaker 1: Mhmm.
+Speaker 5: That's what he or she is getting greater on at the end of the year. Whether they're a public company of which some of our customers are, whether they're massively multi billion dollar private company. They're getting graded on revenue and then Sean's
+Speaker 2: fired at the chief revenue officers in the audience, but No. No. I know. I know. I'm pleased with you.
+Speaker 3: It's it's I mean,
+Speaker 5: it's one it's
+Speaker 2: one of
+Speaker 5: the things Brett pointed out. Brett, like, it's kind of amazing that, like, every one of your customers, your contact, like, person who's in my iMessage, top five iMessage is the CEO. Yep. And so, like, to answer your question, I would give this lecture that when we are referenced by our customers Mhmm. They have to think of us as their best employee.
+When I say us, I mean myself, like Aakash, Spencer, Shred, my teammates names.
+Speaker 1: They have
+Speaker 5: to think of us as their best employee. And the way we get there is we have to understand their business Mhmm. As well as any individual that works for them. They could be a 10,000 employee company. They should be able to ask us about anything that is even remotely related to the line of work that our agents are doing for their business, and we should be able to answer it.
+I'm talking about gross margins. I'm talking about conversion rates. I'm talking about, time to fund. I'm talking about time between first contact to revenue generated. Literally everything.
+And we know we've succeeded when the CEO starts asking us questions about their business. Mhmm. That's when you're in like, you know, the the promised land. That's when you are literally their friend when they're texting you 05:30 in the morning, 10:00 at night, and like none of your family or friends are in your top five iMessage anymore. It's just your customer's CEOs.
+Mhmm. And so, it's very much understanding like the intricacies of that business in order to build an agent that could actually do what's going to drive that company's revenue. And so we have to understand every every piece of software that they're using, every single thing that somebody might do because we are trying to genuinely scale the workforce. And you can only scale the workforce if you can do it end to end. And that's like a really important thing that I think most agent companies don't get.
+If you're going to sell an agent into some work stream, but you're only going to take like a horizontal slice, it's virtually useless because then you have to educate everything below and above it how to drive the end to end results. Mhmm. So if you want to actually drive the business outcomes, own the whole thing. If wanna own the whole thing, have to be capable of owning the whole thing Mhmm. Which means you have to understand the business well enough to build the agent to do so.
+You guys had Markey, who's been a friend and incredibly Yeah. Incredible founder who I've learned a lot from on the show, I think a month or two ago.
+Speaker 1: Yeah.
+Speaker 5: Yeah. And Markey talked about how her entire company and product is rooted in this foundational philosophy that we have to translate whatever language the company is speaking to what the agent is going to do. Yeah. But we think very, very similarly. Our culture is entirely predicated on that assumption that if we don't understand the business better than our customer or as well as our customer, our agents aren't going to do it as well as we need them to.
+Speaker 2: So what does that translation look like for you? Is it a bunch of markdown files and then your agent can interpret those? Because you could go all the way to like, we pretrained a model just for you. And then we can be like, we fine tuned a model for you, sort of the thinking machines model. And then you could be like, well, we're using, you know, the frontier models, but we have a custom harness for you or we customize our harness for you or we write a special integration or it's just or the agent just shows up and it figures it out.
+Speaker 5: I love that you're giving multiple choice because if you didn't, that would just, like, ramble. It is the second half of answers that you
+Speaker 1: just said. Okay.
+Speaker 5: It's like another foundational philosophy that we kind of built this company on is that the inference API is a commodity. That's a sound bite. You can clip me. That'd be great. And that's
+Speaker 1: a crazy thing to say. Right? It's a crazy thing
+Speaker 5: to say that inference API is a commodity because we think about cloud and Anthropic Yeah. Anthropic and OpenAI at tens of billions in revenue. Yeah. People are gonna be like, that's all inference. Yeah.
+I would disagree. I would say it's a function of the things built on top of inference. Talking about TBP, clod, codex Interesting. And clod code.
+Speaker 1: Yeah.
+Speaker 5: And, what we need to be able to do is and you can call these most people would call these harnesses. Right? Like harnesses with like a great GUI with a great command line interface. But it's functionally the thing that's delivering end to end value. Mhmm.
+And like coding was a great first coding and chat agents were a great first product Mhmm. Because that was the end to end value. Again, it's a human in the loop type agent. So they are giving the value to the person that's using the product. Yeah.
+The second the subsequent type of, like, wins in enterprise AI. And when I say wins, don't mean, like, hundreds of millions in revenue or even billions. I'm talking about, the next wave of tens of billions of revenue. Mhmm. It's going to come from the fact that your harness, which is just a fancy way of saying agents that can do multiple things and operate across multiple different services surfaces as opposed to a single a call and response API, could be as capable as someone that is, like, is on a job listing or, like, something that you were hiring to drive an outcome or a result for the business.
+And so it's a combination of harnesses. Specifically at takeoff, what we built was what we call it is a DSL, a domain specific language. Right? So you should be able to educate, direct, and build the agents on takeoff using our domain specific language that is built around the idea of we're trying to handle something end to end. Mhmm.
+The other kind of like unique thing about this is like your agents have to be answerable to the outside world. Like, you can't just say go do a thing. Mhmm. The thing that you are that our customers are calling APIs for is go fund this loan or an API call to go onboard this patient or go get this patient's prior authorization. That requires multiple actions by the agent that then in turn require input from the outside world.
+Let's use the borrower example, the loan borrower. If you're getting an API call to your agent that says, go fund this loan for this borrower, this lead, you have to call that lead, contact them, help them with that initial, like, rate quoting, understanding what options they have, whether it's a HELOC, a refi, a home equity loan. Then you have to have a second call after whatever happened in between the first call and the second call. You have to go reach out to third parties, the e notaries, the underwriters, everything else involved, document collection. Then you have to have a third call saying, hey.
+I noticed you got stuck here because you have this, like, weird Iowa borrower question about co borrower cosigning. Then you have a fourth cause, getting it over the line for funded. Yep. This is something that for an agent to actually handle end to end, your harness is like is is transcending just like tool calls.
+Speaker 2: Mhmm.
+Speaker 5: Right? It's like it's an always on harness with a heartbeat that's answering anything that could happen by, on behalf of, or in relation to this, like, central entity in this example of the borrower.
+Speaker 2: Tell me a little bit about post merger integration. I could see Yeah. Sierra having a product called Takeoff. I could see Sierra just being a service or company that you work with for a bunch of different things. I don't even know if I need different products because AI is so broad that everything sort of merges together into, one product that can do multiple things.
+And I just flip on a switch and say, okay, I want you to handle this. I want you to handle this. But how are you thinking about integration? I know it's I know it's like really, really early, but
+Speaker 3: No. It's it's what is
+Speaker 2: I I imagine that this was what you were talking to Brett about was like with a vision of what these two companies can do together. So like take us through a little bit of it.
+Speaker 5: Well, I mean, that's actually great. I'm gonna go in reverse order of your questions here. Like, when when Brett and I first chatted, we basically realized that we have a similar vision of what the world was headed towards. Mhmm. And what we realized was that by virtue of just, again, being a kid with crazy hair, like, there's no chance that I was gonna, like, compete and win in customer support.
+There's a dozen companies, three of which that are like
+Speaker 1: Selling yourself short. Seem you seem to me, I'm I'm getting young Bret Taylor. Yeah. Let's pull up a picture
+Speaker 2: of Bret Taylor's hair, please, and see if you can When he was
+Speaker 1: your age.
+Speaker 2: Hair. I think you got a I think you got a shot, but yes. Okay.
+Speaker 5: The point being that like we had to come from a different
+Speaker 1: angle, right? Yeah. We had
+Speaker 5: to sell a thing that only the early adopters were ready for. Yeah. And like like, it's not like we and so like, I when I say we had a similar vision of the of the direction the world was headed in
+Speaker 2: Sure. Like, we
+Speaker 5: were further along on that timeline. Yep. And like, we had done this thing that I don't think most of the world realized was possible yet. Yep. And it wasn't till we proved it was.
+Right? Mhmm. That's what was really exciting to, I think, Brett and the company is
+Speaker 2: like Sure.
+Speaker 5: Hey, we'd love to get to where you are, but we're realizing that you're already there. And why not get there together and then scale at times a million?
+Speaker 1: Sure.
+Speaker 5: Right? And so, that's kind of the original conversation started. Mhmm. We then kind of came to this like realization that and I think what was actually really interesting for you guys to understand or for anyone who's listening and watching is that we realized we were onto something when our first like $3.07 figure customers were like, already had customer support vendors. Right?
+That they had like a Sierra or a Decadron or something else They were spending on average between a few $100 to maybe like maybe a million dollars with them. With us, they were spending at least three times more.
+Speaker 2: Wow.
+Speaker 5: Right? Like, had they had an AI support vendor and they also had Takeoff. They were spending three times, in in one case, eight times more Yep. Than they were spending with their support vendor.
+Speaker 2: And that makes sense because you're driving revenue
+Speaker 5: and you're Exactly. Talking And if you're driving revenue and there's three kinds of software. Right? There's revenue driving software, there is functional software, and then there's must have software. Yep.
+And if you're the first category, Google Ads, Facebook Ads
+Speaker 1: Yep.
+Speaker 5: $1 in equals more than $1 out, I will keep spending till I flat that line. Yep. And that's what we were going for. It's exactly how we want to be thought of by our customers. Yeah.
+And so we realized, you know, again, all the things that Brett and I were talking about that we were excited about, a lot of the same similar shared ideas around where the world was headed. We're like, hey, together this can be one full of 20 with a thousand. And so we we I don't know if you guys saw it probably not because you have a lot going in your mind. We we as in Sierra and take off the Sierra together launched this product called Horizon
+Speaker 1: Yeah.
+Speaker 5: Which is this new thing. And the reason it has to be this net new thing is because we want people to realize this is a step function jump in capability. Yeah. A step function jump in capability which is going to drive revenue for your business.
+Speaker 1: It's not just agent in, like, one second cost savings,
+Speaker 5: but it's agents that your CEO is buying. Yeah. And that's really freaking exciting. Yeah. Don't I know if I can swear.
+I'm sorry. No. No. But that's really exciting.
+Speaker 2: That's awesome. Yeah. No. It makes it makes so much sense.
+Speaker 1: Great at you're great at naming.
+Speaker 2: Yeah. Yeah. These are all every every name is great. Like, these are all good. Yeah.
+I love them. Well, thank you so much. Jordy, anything
+Speaker 1: great to meet you. Yeah. I found the I found the the whole pitch very compelling. I was just imagining myself as a as a CEO or enterprise buyer being like, I'm sold. Just send the contract.
+Send the contract.
+Speaker 5: I will say, like, I've been on a few sales calls with Brett now, and Brett it's very flattering to hear this from Brett Taylor. Right? Like, of the best salesmen that's probably ever lived in software's history. We've had a few sales calls together. It is magic in that room.
+Like, people get really freaking excited when we show them Horizon. It's like, And it is like people start imagining what they're going to be doing for their business. Yeah.
+Speaker 4: All the
+Speaker 5: awards they're going to get. The fact that in the board deck it's going be plus double digit percentages at the end of the year. Yeah. And that is very exciting for us as a company.
+Speaker 1: It's very exciting. Amazing. Thank you so I much can see where you guys did the deal.
+Speaker 2: Sounds awesome.
+Speaker 1: Great to hang, dude.
+Speaker 2: We'll talk to Let you me tell you about public investing for those who take it seriously. We got stocks, options, bonds, crypto, treasuries, and more with great customer service.
+Speaker 1: Mark Zuckerberg in the Wall Street Journal opinion section Yep. With a new piece, The AI Future Is For Everyone. Mhmm. He says, the history of democracy and economics has proved that centralized power stifles human potential. And it's quite long.
+I'm gonna go let you guys read it, but let's head into the comment section. Let's get a quick let's get a
+Speaker 2: quick reaction.
+Speaker 1: Let's get a quick reaction.
+Speaker 2: This is The Wall Street Journal. I think it'll
+Speaker 1: be relatively tame.
+Speaker 2: It'll be tame.
+Speaker 1: But yeah. And you've making a, you know, a a clear effort to position to to be the overtly there was a white space for a guy investing hundreds of billions of dollars a year in AI that is like, says, hey, this is gonna be really great for everyone. Yeah. And I'm gonna help us get there.
+Speaker 2: It is it is interesting. Like, Facebook does have some monopolies, but like, the competition for attention is constant, and there are always sources outside. Like, they've never had a full monopoly on on social media even with TikTok and Snapchat and LinkedIn and Twitch and YouTube and Netflix and the podcast feed and SMS and iMessage. Like, there are so many other platforms for disseminating information. Like, I I don't know.
+I I it's hard to jump straight to a critique here. But the the key quote that Andrew Curran pulled out was that he said, in most cases, like cybersecurity, the history of open source software has shown that giving everyone full access to powerful systems will be the best way to protect safety and security over time. So he's firmly on the side of democratizing powerful AI. And he is yet another one. I imagine that they that they signed the letter.
+I I've lost track at this point. But you can imagine that he did. Anyway, thank you so much for tuning in. The other piece of news is that Apple is launching Apple upgrade next week. Then iPhone, iPad, Mac, and Apple Watch leasing slash subscription program.
+They said saying
+Speaker 1: you will and
+Speaker 2: you will be happy.
+Speaker 1: We're launching our new program. You will own nothing and be happy.
+Speaker 2: It's partnering with Klarna to launch in The United States at online and retail stores. It's now official. Leasing prices start as low as $20 or $17.99 per month for iPhone, $11.99 for Apple Watch, $24.99 for Mac, and $11.99 for iPad. So interesting. I mean, a lot of people are saying this is direct reaction to increased prices for memory, increased prices for products.
+There was a time when an iPhone was a couple $100 and there were incentives to jump on a Verizon plan and you sort of amortize the cost over that. Those days are gone. Like, we're in the world of like a $2,000 iPhone. It's a significant Same
+Speaker 1: thing with our Gongs.
+Speaker 2: For people. Honestly. So you wanted a subscription Gong?
+Speaker 1: No. I'm just saying there was a time when Oh. Our TBPN Gong was $200. Yeah. Now, it's in the tens of thousands of dollars.
+Speaker 2: It's actually so expensive. Somebody a friend of mine texted me and was like, where do we get the Gong? Because I need a Gong. And I was like, I think you should start small. And this is not like you're you can't handle the big gong.
+I was more saying that like there is a joy to being on the hedonic treadmill of larger gongs. Like, you don't want to jump straight to the biggest gong. You want to start with a small gong.
+Speaker 1: And work your way
+Speaker 2: up. Work your way up because every gong that we've added has been so electric when we get
+Speaker 1: think it's time for a new one.
+Speaker 2: You want an even bigger gong? Or
+Speaker 1: I want one that's hanging from the rafters.
+Speaker 2: You want a giant gong? Maybe. But and also every gong has a different flavor, different sound, know, different amount. You gotta warm them up. All sorts of things.
+We always warm up the gong.
+Speaker 1: Anyways, folks, that's our show. Enjoy the rest of your July 28.
+Speaker 2: Leave us five stars on Apple Podcast and Spotify.
+Speaker 1: Money never sleeps. You shouldn't either. Call me back.
+Speaker 2: Sign up for the newsletter at tbpn.com, and we will see you tomorrow at 11AM Pacific. Goodbye. Cheers.
+Speaker 1: Flashback.

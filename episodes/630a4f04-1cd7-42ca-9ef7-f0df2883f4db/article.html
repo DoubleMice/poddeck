@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tae Kim 深度解读：AI 算力超级周期、就业叙事反转与开源大辩论</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #f8f9fa;
+    padding: 20px;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 48px 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  @media (max-width: 600px) {
+    article { padding: 28px 20px; }
+  }
+  header { margin-bottom: 40px; border-bottom: 2px solid #f0f0f0; padding-bottom: 24px; }
+  h1 { font-size: 1.7em; line-height: 1.35; font-weight: 700; margin-bottom: 12px; color: #111; }
+  .meta { font-size: 0.85em; color: #888; }
+  .meta span { margin: 0 8px; color: #ccc; }
+  h2 { font-size: 1.25em; margin: 36px 0 16px; color: #222; padding-bottom: 6px; border-bottom: 2px solid #e8ecf1; }
+  h3 { font-size: 1.05em; margin: 20px 0 10px; color: #444; }
+  p { margin-bottom: 14px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  .card { padding: 16px 18px; border-radius: 8px; font-size: 0.9em; line-height: 1.6; }
+  .card-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .card-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .card-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .quote-block {
+    padding: 18px 22px; margin: 16px 0; border-radius: 8px;
+    font-style: italic; font-size: 0.95em; line-height: 1.65;
+  }
+  .quote-label { font-size: 0.8em; margin-top: 6px; opacity: 0.6; font-style: normal; }
+  .highlight { background: linear-gradient(180deg, transparent 60%, #fef08a 60%); }
+  .numbers {display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 20px 0;}
+  .num-card {text-align: center; padding: 16px 12px; border-radius: 8px; background: #f8f9fa; border: 1px solid #e9ecef;}
+  .num-val {font-size: 1.6em; font-weight: 700; margin-bottom: 4px;}
+  .num-label {font-size: 0.8em; color: #666;}
+  .gloss { color: #888; font-size: 0.85em; font-style: italic; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 2px solid #f0f0f0; font-size: 0.8em; color: #999; }
+  footer a { color: #3b82f6; text-decoration: none; }
+  .bold { font-weight: 600; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Tae Kim 深度解读：AI 算力超级周期、就业叙事反转与开源大辩论</h1>
+  <div class="meta">TBPN <span>|</span> 2026年7月28日 <span>|</span> 嘉宾：Tae Kim, Ben Zweig, Aakash Thumaty <span>|</span> 约1小时50分钟</div>
+</header>
+
+<!-- 开场概览 -->
+<div class="cards">
+  <div class="card card-blue"><strong>📊 Tae Kim</strong>（First Adopter）—— AI 芯片与半导体市场顶级分析师，上次在 TBPN 出场正好踩中市场底部</div>
+  <div class="card card-green"><strong>📈 Ben Zweig</strong>（Revelio Labs）—— 劳动力市场数据专家，为对冲基金和 HR 部门提供就业分析</div>
+  <div class="card card-orange"><strong>🚀 Aakash Thumaty</strong>（Takeoff）—— 从 $0 到近八位数年营收仅用半年，被 Brett Taylor 的 Sierra 收购</div>
+  <div class="card card-purple"><strong>🎯 三条叙事线交汇</strong>—— 算力需求仍在加速；就业叙事反转；自治 Agent 正在商业落地</div>
+</div>
+
+<!-- 为什么这期值得关注 -->
+<h2>为什么这期值得关注</h2>
+
+<p>2026 年 7 月底，AI 行业的叙事处于剧烈震荡之中。伊朗战争导致市场不安，媒体上充斥着"NVIDIA 供应商融资"、"Meta 削减 CapEx"、"开源 AI 可能被禁"等标题，恐慌情绪弥漫。TBPN 邀请了三位嘉宾，从三个截然不同的角度切入：<span class="bold">芯片市场基本面、劳动力市场的真实数据、以及自主 AI Agent 的商业突破</span>。</p>
+
+<p>三位嘉宾的共同信息是：<span class="highlight">市场情绪远远落后于基本面。</span></p>
+
+<!-- 1. AI 与就业 -->
+<h2>1. AI 真的在消灭工作吗？叙事正在反转</h2>
+
+<p>过去一年，人们几乎习惯了这样一种叙事：Meta 裁员、Google 裁员、各家科技公司裁员——然后 CEO 们说"这是 AI"。但 <strong>The Wall Street Journal</strong> 在 7 月底发布了一篇重要报道：<span class="bold">大公司正在重新开始招人。</span></p>
+
+<p>科技、交通、国防等多个行业的公司现在表示，他们需要<span class="highlight">更多员工来与 AI 系统协作</span>——而不是被 AI 取代。主持人将此称为"杰文斯悖论"的体现：当一项技术让某件事变得更加高效时，对它的需求往往大幅上升，以至于对人力资源的总需求反而增加了。</p>
+
+<p>Sarah Franklin，HR 平台 Lattice 的 CEO，解释了这一转变："许多公司最初以为 AI Agent 可以直接替代初级员工，但现在他们意识到人类员工仍然必不可少。<span class="bold">有编码代理并不意味着你就不招工程师了。</span>"Robert Half 的 CEO Keith Waddle 补充道："AI 对就业的影响比一些人担心的要温和得多。"</p>
+
+<p class="gloss">作者概括：过去一年的"AI 裁员"叙事很大程度上是 CEO 的公关掩护——将经营不善和过度招聘归咎于 AI，而不是承认管理失误。正如主持人所言："这是 CEO 保住自己饭碗的一种方式——与其说'我们过度招聘了'或'业务不如预期'，不如说'这是 AI'。"</p>
+
+<!-- 2. CS 入学率 -->
+<h2>2. 计算机科学入学率暴跌 28%：过度反应还是理性适应？</h2>
+
+<p>Ben Zweig 的 Revelio Labs 数据显示了一个令人震惊的数字：<span class="highlight">自 2022 年峰值以来，美国计算机科学入学率下降了 28%。</span>这在历史上是非常戏剧性的变化。</p>
+
+<p>但 Ben 给出了一个乐观的解读：这表明劳动力供给对技术变化的反应实际上是相当灵活的。如果人们能够灵活地重新定位自己，这有助于形成更具动态性的经济。然而他也警告：<span class="bold">这很可能是一个过度反应。</span></p>
+
+<p>首先，从实际就业数据来看，采用 AI 最多的公司（在工程和技术岗位上）并没有出现大规模裁员。尽管存在大量关于"AI 取代工程师"的叙事，数据并不支持这一说法。</p>
+
+<p>其次，Ben 指出了一个重要趋势：AI 工具的性质正在发生变化。"就在不久前，AI 还是聊天机器人和代码助手——<span class="highlight">是那种'连老太太都能用'的低门槛技术</span>。但现在，Autonomous Agent 工具更复杂，需要编排和工程思维。"这意味着，<span class="bold">Agentic AI 反而有利于数字原住民和有工程背景的人。</span>Ben 甚至预测："我们可能会面临工程师短缺，就像我们曾经对放射科医生的担忧反转一样。"</p>
+
+<!-- 3. 算力超级周期 -->
+<h2>3. 算力需求超级周期：Lisa Su 的惊人信号</h2>
+
+<p>Tae Kim 是这期节目的重头戏。他上次出现在 TBPN 时，恰好踩中了市场的精确底部——此后 CPU 股翻倍，HBM 股涨了 100%。节目主持人开玩笑说应该设立一个"Tae Kim 战略储备"，随时待命来提振市场。</p>
+
+<p>Tae Kim 列出了几个反驳当前市场恐慌的关键数据点：</p>
+
+<div class="numbers">
+  <div class="num-card"><div class="num-val" style="color:#3b82f6;">$120B → $220B</div><div class="num-label">AMD AI 芯片 TAM<br/>Lisa Su 三个月内上调</div></div>
+  <div class="num-card"><div class="num-val" style="color:#22c55e;">5-6×</div><div class="num-label">SK Hynix 客户需求<br/>超过当前产能的倍数</div></div>
+  <div class="num-card"><div class="num-val" style="color:#f97316;">80%</div><div class="num-label">Google Cloud<br/>同比增长率</div></div>
+  <div class="num-card"><div class="num-val" style="color:#a855f7;">60-80%</div><div class="num-label">GPU 推理云<br/>Morgan Stanley 利润估算</div></div>
+</div>
+
+<p>最令 Tae Kim 信服的信号来自 AMD CEO Lisa Su。"她在三个月前把 AI 芯片的总可寻址市场预测定在 1200 亿美元。仅三个月后，她把这个数字上调到 2200 亿美元。<span class="highlight">Lisa Su 不轻易做这种事。CEO 不会在几个月内把 TAM 预测翻倍，除非他们看到了疯狂的 incoming demand。</span>"</p>
+
+<p>SK Hynix 在其 IPO 路演中透露的细节同样惊人：他们的客户需要的内存数量是当前产能的<span class="highlight">五到六倍</span>，并且未来五年将翻倍扩产。Tae Kim 推测这些客户中包括 Jensen Huang。</p>
+
+<!-- 4. 云计算 -->
+<h2>4. 亚马逊、Google、微软：云计算的三位玩家都在猛踩油门</h2>
+
+<p>对于担心 CapEx 支出过高的空头，Tae Kim 有一个直接的反驳：云计算的营收正在以令人难以置信的速度增长——<span class="bold">Azure 增长 40%，Google Cloud 增长 80%，AWS 高双位数增长。</span>如果收入以 40-80% 的速度增长，那么今天的 CapEx 投入在未来 12-18 个月将产生惊人的自由现金流。</p>
+
+<p>"Amazon CEO Andy Jassy 在四月份的年度信中说得很清楚：'我们不是在预感上下注 2000 亿美元。我们看到了需求。我们知道中长期会有大量的自由现金流。'"Tae Kim 说，"这就是为什么你现在投资 2000 亿美元。"</p>
+
+<p>Morgan Stanley 的分析显示，如果 AI 数据中心做推理业务，毛利率可以达到 60-80%。"如果这是真的，这些是非常赚钱的生意。"Tae Kim 说，"每个人都担心这又是 .com 泡沫……但如果超大规模 GPU 云本身就是极好的生意呢？"</p>
+
+<!-- 5. NVIDIA 的 500 亿美元标题 -->
+<h2>5. NVIDIA 的 500 亿美元"租赁"：一个被误解的标题</h2>
+
+<p>英国《金融时报》在 7 月底的头版刊登了一个令人心惊的标题：<span class="highlight">NVIDIA 签署了一份价值 500 亿美元的德州数据中心租约，该数据中心将使用 NVIDIA 自己的芯片。</span>市场应声暴跌。Jim Cramer 甚至在节目中告诉观众："开盘时把一切都卖了。"</p>
+
+<p>但 Tae Kim 指出了关键细节——这些细节藏在文章的中间位置：</p>
+
+<p><strong>15 年租约承诺的实际价值约为 200 亿美元。只有续租后才达到 500 亿美元/30 年的总额。</strong>这意味着年均成本约为 10-20 亿美元。对一家年运行率已达 3200 亿美元并将增长至 4000-5000 亿美元以上的公司来说，"这只是一个四舍五入的误差。"</p>
+
+<p>"这就是人们如何被耸人听闻的标题所操纵，陷入恐慌和抛售。"Tae Kim 说，"这就是 FUD 的循环。"</p>
+
+<!-- 6. NVIDIA 的护城河 -->
+<h2>6. NVIDIA 的护城河：CUDA 之外的全栈壁垒</h2>
+
+<p>AMD 在最近的活动中声称 CUDA 的壁垒不再是个问题——"你可以让 AI Agent 为你编写任何芯片的软件"。但 Tae Kim 指出，<span class="bold">NVIDIA 的真正护城河是它的全栈协同设计</span>：同时优化算法、编译器、GPU、NVLink、HBM 内存、光学组件、供电和冷却——每一层都必须协同工作。</p>
+
+<p>更关键的是<span class="highlight">供应链锁定</span>。Tae Kim 透露，光通信初创公司已经在抱怨 NVIDIA 锁定了所有光学组件的供应。同样的故事在 TSMC 晶圆和 HBM 内存上重演。"NVIDIA 正利用其规模和大猩猩般的力量，通过预付款来确保短缺组件的供应——这就是为什么在未来一两年内，NVIDIA 能够增加大量收入。这是人们很少谈论的另一个护城河。"</p>
+
+<p>而最被市场忽视的，是 Jensen Huang 上周在 Bloomberg 采访中说的一句话：<span class="highlight">"我认为芯片行业有足够的供给来每年将收入翻倍。"</span>Tae Kim 指出："没有人把这定价进去。NVIDIA 明年的收入预估远低于翻倍。"</p>
+
+<!-- 7. 开源辩论 -->
+<h2>7. 开源 AI 大辩论：NVIDIA 对决 Anthropic</h2>
+
+<p>7 月底，NVIDIA 牵头起草了一封公开信，反对对开源权重模型实施禁令。Tae Kim 形容这一行动"令人印象深刻"——<span class="highlight">NVIDIA 在 3-4 天内几乎将整个科技行业统一在了 Anthropic 的对立面。</span>约 18 万亿美元市值的公司联署了这封信：Google、Meta、OpenAI、Microsoft、Amazon（稍晚加入）。只有 Apple 和 Anthropic 保持沉默。</p>
+
+<p>作为回应，Anthropic CEO Dario Amodei 迅速发布了一篇文章，提出了三项澄清和三项政策提案：</p>
+
+<div class="cards">
+  <div class="card card-red"><strong>提案 ① 继续芯片出口管制</strong>——不向中国出售高性能芯片或制造设备。保持技术领先差距，即使仅从地缘经济竞争角度考量。</div>
+  <div class="card card-orange"><strong>提案 ② 打击工业级模型蒸馏</strong>——前沿模型公司有权维护知识产权。建议引入"政策干预"来阻止大规模的蒸馏操作。</div>
+  <div class="card card-blue"><strong>提案 ③ 强制性安全测试</strong>——所有足够强大的模型（无论是开放还是封闭的）都必须通过强制性安全评估。</div>
+</div>
+
+<p>主持人们指出了这些提案面临的实际问题。蒸馏的定义本身就是一个巨大难题：如果你混合使用 Opus 5、GPT-5.6 和 Mistral 的输出进行训练，再换了 RL 环境——这算蒸馏吗？<span class="highlight">没有一个二进制算法可以判定"这是蒸馏的"。</span>而强制性安全测试虽然听起来合理，但小公司可能在审批队列中被拥有华盛顿办公室和游说团队的巨头挤压。"我们在这上面一直讨论核审批的事情——这变得非常棘手。"</p>
+
+<!-- 8. RSI -->
+<h2>8. RSI 比你想象的更近</h2>
+
+<p>节目中一个反复出现的主题是 RSI（递归自我改进）的到来速度。Tae Kim 观察到：<span class="highlight">"每次我在 X 上发关于 RSI 的内容，前沿 AI 研究员都会点赞——OpenAI 和 Anthropic 都像是在眨眼暗示：'它就要来了'。</span>"</p>
+
+<p>Sam Altman 在上周的 YC 活动中说："未来六个月 AI 的进步将远远超过过去两年。"他在另一个播客中承认，OpenAI 后悔在上一轮缩减了算力采购。"他们犯了一个错误——没有把油门踩到底。现在事情正在加速起飞。"</p>
+
+<p>如果 RSI 在未来 3-9 个月内成为现实——AI 模型使用大量算力来自我改进——Tae Kim 认为<span class="bold">这将消耗难以想象的算力资源</span>。而且这不是一个单一事件，而是一个层层叠加的需求浪潮：推理模型已经消耗了大量算力（Kimi K2.5 需要 64 GPU 集群才能良好运行），Autonomous Agent 正在取代整个工作流，而 RSI 将打开一个全新的算力消耗维度。</p>
+
+<!-- 10. Takeoff -->
+<h2>9. Takeoff：从零到近八位数营收，再到被 Sierra 收购</h2>
+
+<p>Aakash Thumaty 的创业故事是节目中最令人印象深刻的部分。Takeoff 成立仅一年多，<span class="highlight">在 2026 年初的承诺收入为 0 美元，到被 Brett Taylor 的 Sierra 收购时已经接近八位数年营收。</span></p>
+
+<p>Takeoff 最初尝试做浏览器代理（Browser Agents），但被市场反复打击。Aakash 说得很直白："我们被市场咀嚼、吃掉、吐出来，一次又一次。"关键的转折点是意识到：浏览器代理不是答案。真正的机会在于做<span class="bold">面向收入的全自治代理</span>——不是"帮你做一些事"，而是"替代整个工作流中的每个环节"。</p>
+
+<p>Takeoff 的销售策略非常聪明：<span class="highlight">按结果付费。</span>给客户最低质量的销售线索，如果代理能将这些线索转化为收入，Takeoff 就按佣金加 token/SMS/语音的基础费用收费。"从客户的角度看：我只在创造几千美元利润时才支付几百美元的成本。这个交易没有风险。如果它失败了，没关系。如果它成功了，我年底就能赚更多钱。"</p>
+
+<!-- 11. 三种软件 -->
+<h2>10. 三种软件：为什么 Takeoff 能卖三到八倍于客服 AI 的价格</h2>
+
+<p>Aakash 分享了一个核心洞察：软件可以分为三类——<strong>创收型软件</strong>（Google Ads、Facebook Ads，投入 $1 产出 >$1）、<strong>功能型软件</strong>（CRM、ERP，提高效率但有价格天花板）、<strong>必须型软件</strong>（安全、合规，刚性支出）。Takeoff 定位在第一类。</p>
+
+<p>这解释了为什么已经花了 $100K-$1M 在客服 AI（如 Sierra 或 Decagon）上的客户，会在 Takeoff 上花<span class="highlight">三到八倍的价钱。</span>客服 AI 是成本节约工具，有定价上限；收入引擎没有——只要 $1 的投入能带来 >$1 的回报，它就值得继续投入。</p>
+
+<!-- 12. 设计哲学 -->
+<h2>11. 当客户的 CEO 在你的 iMessage 里排前三</h2>
+
+<p>但 Takeoff 为什么能成功？Aakash 阐述了一个被大多数 AI Agent 公司忽视的原则：<span class="highlight">如果你不能像客户的员工一样理解他们的业务，你的 Agent 就不可能做好。</span></p>
+
+<p>Aakash 给每个 Takeoff 员工都做同样的演讲："我们被赋予了特权——不是权利——坐在客户和他们的收入之间。"目标不是被客户视为一个软件供应商。目标是被客户视为<strong>他们最好的员工</strong>："他们可能是一家 10,000 人的公司。他们应该能就我们代理处理的任何业务问题向我们提问，而我们应该能回答——从毛利率、转化率到从首次接触到收入产生的时间，所有的一切。"</p>
+
+<p>当 CEO 开始因为自己的业务问题而向你咨询时，你就达到了"应许之地"。Aakash 开玩笑说："<span class="highlight">当客户的 CEO 在你的 iMessage 前五名里占了三个位置——连你的家人和朋友都进不了前五——你就知道你做对了。</span>"</p>
+
+<!-- 13. 推理 API 商品化 -->
+<h2>12. "推理 API 是商品"——一句争议性的断言</h2>
+
+<p>Aakash 在节目中抛出了一个有争议的观点：<span class="highlight">"推理 API 是商品。这是一个可以截取的 sound bite。"</span></p>
+
+<p>他的意思并不是贬低 Anthropic 或 OpenAI 的技术成就，而是在说商业价值的重心正在转移。"OpenAI 和 Anthropic 目前的数百亿美元营收看起来都是推理 API 的收入。但实际上是建立在推理之上、提供端到端价值的产品和平台——Claude、Codex、ChatGPT。"未来的数十亿美元收入不会来自单纯的 API 调用，而是来自能跨多个服务、完成端到端任务的"总成"（Harness）——即 Agentic 系统。</p>
+
+<p>这一观点也得到了 Sierra 收购的验证。Brett Taylor 和 Aakash 发现彼此对未来的愿景完全一致，于是联合推出了名为 <strong>Horizon</strong> 的新产品。它不是一个增量升级，而是被品牌化为一个全新产品——因为它代表了能力上的一次量级跃迁。<span class="bold">不是"帮客户省几秒钟"，而是"CEO 级别的购买决策"——Agent 将出现在董事会的演示文稿里，因为年底的营收数字会出现双位数增长。</span></p>
+
+<!-- 14. AI 扩散 -->
+<h2>13. AI 扩散的现实：旧金山泡沫之外</h2>
+
+<p>Ben Zweig 的 Revelio Labs 数据揭示了一个令人警醒的现实：<span class="highlight">只有约 9% 的公司真正认真对待 AI</span>（通过招聘 AI 集成团队来衡量的保守估计）。</p>
+
+<p>Ara Karazian 引用的数据更加惊人：如果每家公司的 AI 采用程度达到最先进公司的水平，AI 使用量将增长 <strong>100 倍</strong>。"企业间的采用差距是巨大的。"</p>
+
+<p>与此同时，整个 IT 和知识管理市场每年约 6 万亿美元。OpenAI 和 Anthropic 合计约 1200 亿美元 ARR。Tae Kim 反问："为什么不能在接下来一两年内增长到 2000、3000、4000 亿美元？它们以指数速度增长。"</p>
+
+<p>但招聘市场正在经历一个奇怪的扭曲。Ben Zweig 最紧张的数据是<span class="highlight">求职/招聘比的下降：自 2022 年底下降了 38.6%。</span>原因不是 AI 取代了工作，而是 AI 导致了招聘系统的信号污染——企业为了"显得在增长"而挂出虚假职位，求职者用 AI 自动投递工具让每个岗位瞬间收到上千份申请。结果是一个"低招聘、低离职"的僵持环境：雇主失去了通过招聘平台找到候选人的信心，转向了人脉网络。</p>
+
+<!-- 15. 结论 -->
+<h2>14. 市场情绪 vs. 基本面：为什么恐慌是错的</h2>
+
+<p>节目以一个清晰的对比收尾：</p>
+
+<div class="cards">
+  <div class="card card-red"><strong>恐惧驱动因素</strong>—— 伊朗战争、媒体标题党（Reuters 断章取义 Zuckerberg）、NVIDIA 500 亿美元租赁恐慌、CMXT 中国 IPO 担忧、Wall Street Journal 的"供应商融资"叙事</div>
+  <div class="card card-green"><strong>基本面信号</strong>—— Lisa Su TAM 三个月翻倍、Google Cloud 增长 80%、SK Hynix 需求是产能的 5-6 倍、AT&T 每月消费万亿级 tokens、OpenAI + Anthropic 合计 120B ARR 指数增长、Jensen 暗示营收可每年翻倍</div>
+</div>
+
+<p>Tae Kim 的最后总结切中要害："我们正处于指数增长之中——推理模型、Agentic AI、RSI，需求波浪层层叠加。市场在接下来六到九个月中将看到比任何人相信的都要大的进展。"</p>
+
+<p>而 Aakash 的创业故事为这个论点提供了实践证据：当自主 AI Agent 能够直接驱动企业收入增长时，<span class="highlight">企业对这些 Agent 的需求没有天花板</span>。这不是为了"省几秒钟"，而是为了让 CEO 的年底报告上出现双位数的收入增长。</p>
+
+<!-- 核心金句 -->
+<h2>核心金句</h2>
+
+<div class="quote-block card-blue">"CEOs don't raise their TAMs by these multiples in a few months if they're not seeing insane demand coming in."<div class="quote-label">— Tae Kim，关于 Lisa Su 的 AI 芯片 TAM 预测三个月内翻倍</div></div>
+
+<div class="quote-block card-green">"OpenAI regretted pulling back on the compute purchases. They made a mistake by not putting the pedal to the metal."<div class="quote-label">— Tae Kim 引用 Sam Altman 在播客中的原话</div></div>
+
+<div class="quote-block card-orange">"I think we have the chip industry has enough supply to double their revenue every year."<div class="quote-label">— Jensen Huang，在 Bloomberg 采访中的表态（被市场忽视）</div></div>
+
+<div class="quote-block card-purple">"The inference API is a commodity. That's a sound bite. You can clip me."<div class="quote-label">— Aakash Thumaty，Takeoff 创始人</div></div>
+
+<div class="quote-block card-red">"When we are referenced by our customers, they have to think of us as their best employee."<div class="quote-label">— Aakash Thumaty，关于自治 Agent 设计的核心理念</div></div>
+
+<div class="quote-block card-yellow">"The ROI is important. But you also need return on revenue — because if you don't use AI, your rival is going to use AI to beat you in the market."<div class="quote-label">— Tae Kim，解释为什么企业必须采用 AI</div></div>
+
+<div class="quote-block card-blue">"Just because you have coding agents doesn't mean you're not hiring engineers."<div class="quote-label">— Sarah Franklin, Lattice CEO</div></div>
+
+<footer>
+  <p>本文基于 TBPN 2026年7月28日节目整理。嘉宾观点不代表本文立场。</p>
+  <p>来源：<a href="https://share.transistor.fm/s/d8926292">TBPN — Tae Kim Sounds Off, Big Companies Are Hiring Again, NVIDIA $50B Tenant</a></p>
+</footer>
+
+</article>
+</body>
+</html>

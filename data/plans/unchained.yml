@@ -1,15 +1,115 @@
 source: unchained
-refreshed_at: 2026-07-29T04:08:29.147Z
+refreshed_at: 2026-07-29T18:23:57.027Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 73
-done: 0
+total_candidates: 72
+done: 1
 pending: 0
-needs_transcript: 72
+needs_transcript: 70
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: 789bd5ec-8abf-11f1-abb3-67468cfb004d
+    guid: 789bd5ec-8abf-11f1-abb3-67468cfb004d
+    title: "The Chopping Block: Wind Downs, YC's Nemil Dalal, & Will Every Failed Crypto Idea Eventually Work?"
+    duration: 4028
+    published: Wed, 29 Jul 2026 12:30:00 -0000
+    published_sort: "20260729"
+    first_seen_at: 2026-07-29T18:23:57.025Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1745552827.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1745552827.mp3
+    image: https://megaphone.imgix.net/podcasts/789bd5ec-8abf-11f1-abb3-67468cfb004d/image/bda1a3bd16cca7c1b1c38f17b755be97.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      YC's Nemil Dalal joins to explain why he's never been more bullish as BitMEX winds down after 11 years, whether
+      every failed crypto idea (TCRs, DAOs, creator coins) eventually works, why crypto is really about money, Base's
+      consumer mea culpa, on-chain reputation and credit, and who pays in the x402 AI-agent era.
+
+
+      Welcome to The Chopping Block – where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert
+      Leshner chop it up about the latest in crypto. This week they're joined by Nemil Dalal, Visiting Partner at Y
+      Combinator and ex-Coinbase, where he led USDC and the Coinbase Developer Platform. He's here to explain why, with
+      exchanges winding down left and right, he's somehow never been more bullish.
+
+
+      The crew digs into the great contrast of the moment: BitMEX shutting down after 11 years (plus BitMart, Movement
+      Labs, Balancer Labs) while the plumbing quietly prints, and whether Imran's viral 'everything that failed will
+      eventually work' thesis is genius or toxic positivity. From there it's the question of whether crypto is really
+      only about money (Jesse's Base mea culpa included), a war-memories tour through TCRs, on-chain reputation and why
+      pure on-chain credit keeps faceplanting, and finally who actually pays in the x402 AI-agent era, and whether
+      decentralization even survives contact with Google-shaped gravity.
+
+
+      Listen to the episode on Apple Podcasts, Spotify, Pods, Fountain, Podcast Addict, Pocket Casts, Amazon Music, or
+      on your favorite podcast platform.
+
+
+      Show highlights
+
+
+      🔹 BitMEX, the exchange that invented the perp swap, winds down September 23rd after 11 years, alongside BitMart,
+      Movement Labs, and Balancer Labs.
+
+
+      🔹 Nemil Dalal explains why he's never been more bullish: rivals adopted BitMEX's innovations, regulatory clarity
+      is arriving, and crypto is becoming invisible infrastructure.
+
+
+      🔹 Nemil rented the Chase Center for a 7,000-builder YC event with Jensen Huang, Sam Altman, and Patrick Collison,
+      yet almost nobody's launching a token early.
+
+
+      🔹 Imran's viral thesis that every failed crypto idea eventually works sparks Haseeb's 'toxic positivity' pushback
+      and a war-memories tour through TCRs and DAOs.
+
+
+      🔹 Instacart's Apoorva vs Webvan and Reddit vs Digg: why timing, path dependency, and the YC 'why now' question
+      decide which failed ideas return.
+
+
+      🔹 Jesse's Base mea culpa: the consumer-social bet on Zora and Farcaster was wrong for now, so he handed the Base
+      app to Kobe.
+
+
+      🔹 Haseeb says crypto has always been about money; Nemil counters 'money is everything,' calling the blockchain
+      the greatest capital innovation machine in the world.
+
+
+      🔹 Why pure on-chain credit keeps faceplanting: address repudiation, no recourse, no wage garnishment, and old
+      memories of Debt DAO's revenue ratchet.
+
+
+      🔹 The x402 AI-agent era: Cloudflare pay-per-call gating, Kimi's inference license, and whether decentralization
+      survives Google-shaped gravity as agents become the new wallet.
+
+
+      Hosts
+
+
+      ⭐️Haseeb Qureshi, Managing Partner at Dragonfly
+
+
+      ⭐️Tom Schmidt, General Partner at Dragonfly
+
+
+      ⭐️Tarun Chitra, Managing Partner at Robot Ventures
+
+
+      Guest
+
+
+      ⭐️Nemil Dalal, Visiting Partner at Y Combinator
+
+
+      Disclosures
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-29T18:23:58.299Z
+    transcript_job_id: ca88f501-7b35-4dbf-b43e-b481fcb1f6e1_389417a3b9884d7881d876a56169d492,996cb988-f5bb-4bf2-873a-08cbe7a421cc_78583666d5bf401b86b75a089bf01382,c81d730a-76ae-4ec4-93c4-06ae6021fdb1_af7508b1a1be4077854cc1b539782a02,5313bf94-a93f-4470-bc4d-f886231867cc_ee358e28333145569218d73ed7810bb6,041933b3-da3f-4172-9316-b1c659da6109_37831c86ee0f4f8bac2fc8281f2e61c4
+    transcript_completed_at: 2026-07-29T18:32:00.320Z
   - id: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     guid: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     title: Kristin Smith on Why the Clarity Act Comes Down to a Memecoin
@@ -3227,8 +3327,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -4990,8 +5089,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -6517,170 +6615,6 @@ episodes:
 
 
       Uneasy Money: How the Increasingly Better AI Agents Are Being Used Onchain
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 2552326e-0ec8-11f1-85cc-cb3edc221e5c
-    guid: 2552326e-0ec8-11f1-85cc-cb3edc221e5c
-    title: Is Nic Carter Exaggerating Bitcoin's Quantum Risk? Yes, Says One Core Dev
-    duration: 4699
-    published: Sun, 22 Feb 2026 14:00:00 -0000
-    published_sort: "20260222"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6876219733.mp3?updated=1771743067
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6876219733.mp3?updated=1771743067
-    image: https://megaphone.imgix.net/podcasts/2552326e-0ec8-11f1-85cc-cb3edc221e5c/image/3dffd0a2d61506627b8fbbae22de3914.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Matt Corallo says “the community that exists at the time” will make decisions on how Bitcoin deals with the threat
-      of quantum computing.
-
-
-      Thank you to our sponsors!
-
-
-      ⁠Figure⁠
-
-
-      ⁠Crypto Tax Girl⁠
-
-
-      ⁠Fuse: The Energy Network⁠
-
-
-      When it comes to the quantum computing threat to crypto, the focus is
-
-      often on Bitcoin and for good reason. The blockchain lacks a defined
-
-      governance structure and the vulnerability around Satoshi's and other
-
-      abandoned and lost coins is far greater than on any other chain.
-
-
-      Furthermore, influential figures like Nic Carter have accused developers of sleeping at the wheel.
-
-
-      Bitcoin Core contributor Matt Corallo argues that it won't take much to
-
-      make the network quantum-resistant and, contrary to popular narrative,
-
-      says work is already underway.
-
-
-      Find out why Corallo says quantum-proofing Bitcoin requires only two
-
-      steps ”you burn old lost coins, you burn anyone who hasn't migrated.”
-
-
-      Guest:
-
-
-      ⁠Matt Corallo, Open Source Engineer at Block/Spiral
-
-
-      Links:
-
-
-      Unchained:
-
-
-      ⁠Why Bitcoin Developers Are Not Incentivized to Talk About the Quantum Threat⁠
-
-
-      ⁠Q-Day Is Imminent. Can Bitcoin Survive the Quantum Threat?⁠
-
-
-      ⁠Solana Deploys Post-Quantum Signatures on Testnet⁠
-
-
-      ⁠Cracking Bitcoin Encryption Is Getting Much Easier, Google Says
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: b3ad0a62-0e5e-11f1-b4f8-63cbe084f4c0
-    guid: b3ad0a62-0e5e-11f1-b4f8-63cbe084f4c0
-    title: "Uneasy Money: Why Peter Steinberger and Non-Crypto People Hate the Crypto Mob"
-    duration: 5035
-    published: Fri, 20 Feb 2026 16:26:00 -0000
-    published_sort: "20260220"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2662307141.mp3?updated=1771605686
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2662307141.mp3?updated=1771605686
-    image: https://megaphone.imgix.net/podcasts/b3ad0a62-0e5e-11f1-b4f8-63cbe084f4c0/image/18f1344dd1d884418f9a26aa089a0faf.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      LayerZero’s Bryan Pellegrino joins to unpack Base's decision to leave the OP Stack, Zora's migration to Solana and
-      more.
-
-
-      Thank you to our sponsors!
-
-
-      ⁠Fuse: The Energy Network  – Shift your energy use and earn rewards.
-
-
-      ⁠MultiChain Advisors -⁠ The Growth & Capital Markets Partner You Need
-
-
-      Coinbase's Base is making a shock move away from Optimism's OP Stack.
-
-
-      In this Uneasy Money episode, LayerZero Labs CEO Bryan Pellegrino joins hosts Kain Warwick and Taylor Monahan to
-      unpack whether this is the right move for Base and what it could mean for Optimism.
-
-
-      Beyond Base's big move, the trio also discuss Zora's Solana migration, whether Coinbase was wrong to initially
-      pursue a super app strategy with Base App, Peter Steinberger joining OpenAI, the launch of Zero blockchain and
-      OpenAI's EVMbench.
-
-
-      Will OpenAI's acqui-hiring of Peter prove to be a “generational fumble” for Anthropic? And can crypto fix its
-      brand problem?
-
-
-      Also, learn why the rise of AI agents have Kain and Tay confident that open source will win in the end.
-
-
-      Hosts:
-
-
-      ⁠Kain Warwick⁠, Founder of Infinex and Synthetix
-
-
-      ⁠Taylor Monahan⁠, Security Expert
-
-
-      Guest:
-
-
-      Bryan Pellegrino, CEO of LayerZero Labs
-
-
-      Links:
-
-
-      Unchained:
-
-
-      Zora Shocks Base Community With Solana Pivot
-
-
-      ⁠⁠BlackRock Just Chose Uniswap. The Market Didn’t Care. Here’s Why.
-
-
-      ⁠⁠LayerZero Launches ‘Zero’ Layer 1 as Citadel, ARK Buy ZRO
-
-
-      ⁠⁠How Zero Blockchain Cracked 2 Million TPS and Is Still Decentralized
-
-
-      ⁠⁠Uneasy Money: Are Institutions Creating a New Crypto Meta?
-
-
-      ⁠⁠Uneasy Money: How the Increasingly Better AI Agents Are Being Used OnchainVitalik Rethinks Ethereum’s L2
-      Playbook, Calls for Shift Toward Native Rollups
 
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices

@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-07-29T04:08:29.102Z
+refreshed_at: 2026-07-29T18:23:56.979Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
-pending: 2
+done: 1
+pending: 1
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -102,7 +102,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
