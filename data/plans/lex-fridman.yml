@@ -1,12 +1,24 @@
 source: lex-fridman
-refreshed_at: 2026-07-28T18:32:11.375Z
+refreshed_at: 2026-07-29T04:08:29.206Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 0
+total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: p-6474
+    guid: https://lexfridman.com/?p=6474
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    duration: 13987
+    published: Tue, 28 Jul 2026 20:06:06 +0000
+    published_sort: "20260728"
+    first_seen_at: 2026-07-29T04:08:29.206Z
+    url: https://lexfridman.com/gary-gallagher/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=gary-gallagher
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1

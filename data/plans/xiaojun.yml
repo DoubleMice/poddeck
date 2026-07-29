@@ -1,31 +1,15 @@
 source: xiaojun
-refreshed_at: 2026-07-28T18:32:11.367Z
+refreshed_at: 2026-07-29T04:08:29.196Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
-done: 1
+total_candidates: 1
+done: 0
 pending: 0
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 6a66ed17a3fec224d5a3f744
-    guid: 6a66ed17a3fec224d5a3f744
-    title: 148. 对游凯超3小时访谈：开源Infra、和模型Co-design 、“如果vLLM失败，我们会后悔一辈子”
-    duration: 10826
-    published: Tue, 28 Jul 2026 00:00:00 GMT
-    published_sort: "20260728"
-    first_seen_at: 2026-07-28T04:06:39.619Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a66ed17a3fec224d5a3f744?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a66ed17a3fec224d5a3f744/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lg-fhgPMq4r-8L_-5_YRimxgkIms.m4a
-    image: https://image.xyzcdn.net/Ftbpq0Qo78T0CFfOAWBKOoem8hVn.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-28T18:32:12.583Z
-    transcript_job_id: 223236ba-0bac-47d8-8084-951ef25187a7_6748a6a9d9544c348d4bcc548d3dc98f,e0ce71d9-e21b-440c-9846-7a3647d6b456_23c9f789db964719925b24aa20d9b885,e845b5e9-cee6-46a4-920a-7ea0770b3a96_e199aecac2d148cf82d9dbb8064100be,7ea09ff7-9a9e-4241-af88-d9eb88fe98a0_f40ff05c2bfc4ee49e54d34fab89312e,e01a076b-1014-4e78-8822-6cbd6dac0db5_3c3614d429f8427bb802299bd9239d1a,4d747000-b6a2-4df5-ba3b-990889a2f222_c46a5e2babdc475ca71b1dd01e6cf4f0,96dd11f4-9398-45a9-a85e-3438fd95f7c0_6b40b390e9ee49ab9693efa8f9306721,b408cc69-dce6-456c-bb7c-c3b4ca0cff1f_238885b7b63a494da2dee1353e536379,c096c0e6-10e6-4ee0-8b1f-dede6aa84ddc_08704489343f44c1916020db132745fb,e4ac15bb-34d7-4d21-a8e3-e84625bda77e_d9d2b86a995d490794ca908a6cec418b,b7729a99-9018-4234-a2bb-03333aa360a1_0c6e7310e2ae428b8e9687f4da05e60d,9c956a87-de72-4ec1-abc3-1cd87ff01e8a_3e4bdf43f6be48ca9d0a0d1984ff1663,2ebb336b-a234-4aa3-8244-cbf58f354a3a_a4606023ea8147069635a9005dff236d
-    transcript_completed_at: 2026-07-28T18:39:28.698Z
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去
