@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-07-30T04:06:41.145Z
+refreshed_at: 2026-07-30T18:32:53.892Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 71
-done: 0
+done: 1
 pending: 0
-needs_transcript: 70
+needs_transcript: 69
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
@@ -107,8 +107,12 @@ episodes:
       🔮 54:36 What Banaei thinks happens to Clarity if it fails this Congress
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-30T18:32:55.178Z
+    transcript_job_id: 4f9c137a-a87b-410b-a585-8fa5600cfdd1_d75c42fef7fe4be989cf50d8a803cf1d,75531e3b-29fe-4517-8039-743accd5aa87_e413180fa75345bc9dd7206740fd3e76,be8b4f22-cfdf-4227-9052-d266bff2e7ac_01466cb19655424d8dd75e1bad8c31fe,e53172f8-524e-47f7-8783-c72d737712ea_5ee7393a2385497ca48f884ed5ecb8dd
+    transcript_completed_at: 2026-07-30T18:35:41.520Z
   - id: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     guid: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     title: Kristin Smith on Why the Clarity Act Comes Down to a Memecoin
@@ -154,15 +158,20 @@ episodes:
 
       Timestamps:
 
-        🗳️ 00:41 Why Clarity's Senate timeline looks so tight before the August recess
 
-        📣 09:11 Cape: Get 33% off your first six months with code unchained at https://cape.co/unchained
+      🗳️ 00:51 Why Clarity's Senate timeline looks so tight before the August recess
 
-        ⚖️ 10:10 Why Trump's ethics language deal became Clarity's toughest sticking point
 
-        🏛️ 18:21 Kristin Smith on the Clarity Act provisions that most excite the industry
+      📣 09:20 Cape: Get 33% off your first six months with code unchained at https://cape.co/unchained
 
-        🌍 23:18 What happens to crypto capital and global leadership if Clarity fails
+
+      ⚖️ 10:16 Why Trump's ethics language deal became Clarity's toughest sticking point
+
+
+      🏛️ 18:34 Kristin Smith on the Clarity Act provisions that most excite the industry
+
+
+      🌍 23:31 What happens to crypto capital and global leadership if Clarity fails
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
@@ -3326,8 +3335,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5089,8 +5097,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

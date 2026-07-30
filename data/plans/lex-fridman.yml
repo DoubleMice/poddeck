@@ -1,5 +1,5 @@
 source: lex-fridman
-refreshed_at: 2026-07-30T04:06:41.189Z
+refreshed_at: 2026-07-30T18:32:53.950Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
@@ -23,6 +23,6 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-07-29T18:32:00.592Z
-    transcript_completed_at: 2026-07-29T18:33:24.491Z
+    transcript_submitted_at: 2026-07-30T18:44:18.160Z
+    transcript_completed_at: 2026-07-30T18:45:37.130Z
     transcript_error: audio chunk is 21.0MB, above DASHSCOPE_DATA_URI_MAX_MB=18
