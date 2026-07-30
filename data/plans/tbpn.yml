@@ -1,53 +1,56 @@
 source: tbpn
-refreshed_at: 2026-07-29T18:23:56.979Z
+refreshed_at: 2026-07-30T04:06:41.105Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
+done: 0
 pending: 1
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 630a4f04-1cd7-42ca-9ef7-f0df2883f4db
-    guid: 630a4f04-1cd7-42ca-9ef7-f0df2883f4db
-    title: Tae Kim Sounds Off, Big Companies Are Hiring Again, NVIDIA $50B Tenant | Tae Kim, Ben Zweig, Aakash Thumaty
-    duration: 6606
-    published: Tue, 28 Jul 2026 13:23:22 -0700
-    published_sort: "20260728"
-    first_seen_at: 2026-07-29T04:08:29.093Z
-    url: https://share.transistor.fm/s/d8926292
-    audio_url: https://media.transistor.fm/d8926292/51be3d5e.mp3
+  - id: b5100a0b-4106-414d-9b22-79cb137301dd
+    guid: b5100a0b-4106-414d-9b22-79cb137301dd
+    title: Robot Bans, Zuck Op-Ed, eBay Settles | Joe Weisenthal, Jameson Detweiler, Stanley Tang, Amjad Masad, Adam Cohen
+    duration: 8488
+    published: Wed, 29 Jul 2026 13:35:22 -0700
+    published_sort: "20260729"
+    first_seen_at: 2026-07-30T04:06:41.096Z
+    url: https://share.transistor.fm/s/0078676f
+    audio_url: https://media.transistor.fm/0078676f/10a1bdde.mp3
     image: https://img.transistorcdn.com/JKCXKMFC8DxrWx6hOFD_HdcDjLAqNP3rWp-35R-vubg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iYWQ5/N2FkMzQ2MGY4Zjg5/ZDczMGExMTA5NjEz/Y2MyMC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/d8926292/transcription.txt
-    transcript_type: text/plain
-    summary: "(01:17) - Big Companies Are Hiring Again\r
+    summary: "(00:15) - Robot Bans\r
 
-      (09:58) - 𝕏 Timeline Reactions\r
+      (14:25) - 𝕏 Timeline Reactions\r
 
-      (20:19) - NVIDIA $50B Tenant\r
+      (16:56) - Zuck Op-Ed\r
 
-      (23:33) - The Three Anthropic Proposals\r
+      (19:21) - 𝕏 Timeline Reactions\r
 
-      (35:00) - Tae Kim discusses negative sentiment around AI and semiconductor stocks, arguing that sensationalized
-      headlines obscure strong underlying demand for compute, memory, and data-center infrastructure. He remains bullish
-      on Nvidia and the broader AI trade, predicting that agentic AI, recursive self-improvement, and growing enterprise
-      adoption will drive substantial investment and revenue growth.\r
+      (26:16) - eBay Settles\r
 
-      (01:06:32) - Kansas Town Splits Over Nuclear Reactor\r
+      (31:36) - Joe Weisenthal, co-host of Bloomberg’s *Odd Lots* podcast, discusses social media addiction, online
+      discourse, and the escalating AI race. He examines open-source models, massive infrastructure spending, monopoly
+      risks, and why AI may ultimately deliver meaningful benefits despite economic and social anxieties.\r
 
-      (01:10:58) - Ben Zweig, a labor economist and founder of workforce data company Revelio Labs, discusses how AI is
-      reshaping hiring, employment, and workplace tasks. He explains that AI adoption generally correlates with company
-      growth, while creative freelancing and task-based work face greater disruption, and AI-generated job applications
-      are making it harder for employers to identify qualified candidates.\r
+      (01:08:22) - Jameson Detwiler discusses his background as a mobility entrepreneur and his role as co-founder and
+      CEO of CHIP, an electric low-speed utility vehicle startup. He explains CHIP’s customizable design, safety
+      features, affordability, and plan to introduce remote-controlled parking before transitioning to full autonomy.\r
 
-      (01:29:22) - Aakash Thumaty, founder and CEO of Takeoff, discusses the company’s rapid growth from near-zero to
-      almost eight figures in revenue and its acquisition by Sierra. He explains Takeoff’s autonomous,
-      revenue-generating AI agents, outcome-based pricing model, deep customer integrations, and how its technology is
-      evolving into Sierra’s new Horizon product.\r
+      (01:40:10) - Stanley Tang, co-founder and chief product officer of DoorDash, discusses the launch of DoorDash Air,
+      the company’s in-house drone delivery program. He explains how advances in AI, hardware, and operational
+      infrastructure are enabling autonomous deliveries, particularly in suburban areas, as part of DoorDash’s broader
+      multimodal delivery network.\r
 
-      (01:45:30) - Zuckerberg Backs AI For All
+      (01:53:37) - Amjad Masad discusses Replit’s latest AI-powered design tools, open-model integrations, enterprise
+      growth, and emerging opportunities in game development, robotics, and industrial design. The Replit founder and
+      CEO also describes a future beyond prompting, where AI agents automate entire workflows, and encourages young
+      people to view AI as an empowering tool for creating businesses and new opportunities.\r
+
+      (02:10:18) - Adam Cohen discusses co-founding Weave, an AI prompt-routing company that helps engineering teams
+      reduce costs by selecting the most efficient model for each task. He highlights Weave’s $13.5 million fundraising
+      round, enterprise focus, potential savings of up to 80%, and plans to expand its San Francisco-based team.
 
 
       TBPN is made possible by:
@@ -102,7 +105,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: needs_transcript
     priority: 1
   - id: 6868b01e-176a-4218-99e0-2c3649ed995b
     guid: 6868b01e-176a-4218-99e0-2c3649ed995b
