@@ -1,0 +1,167 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "box1",
+      "type": "rectangle",
+      "x": 80, "y": 30, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box1-label",
+      "type": "text",
+      "x": 100, "y": 45, "width": 160, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "Gallup 数据\n代表性人口样本", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Gallup 数据\n代表性人口样本", "lineHeight": 1.25, "baseline": 42
+    },
+    {
+      "id": "arrow1",
+      "type": "arrow",
+      "x": 280, "y": 70, "width": 80, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [80, 0]]
+    },
+    {
+      "id": "box2",
+      "type": "rectangle",
+      "x": 370, "y": 30, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box2-label",
+      "type": "text",
+      "x": 390, "y": 45, "width": 160, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "行为基座模型\n偏好/价值/品味", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "行为基座模型\n偏好/价值/品味", "lineHeight": 1.25, "baseline": 42
+    },
+    {
+      "id": "arrow2",
+      "type": "arrow",
+      "x": 570, "y": 70, "width": 80, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [80, 0]]
+    },
+    {
+      "id": "box3",
+      "type": "rectangle",
+      "x": 660, "y": 30, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#f08c00", "backgroundColor": "#ffe8cc",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box3-label",
+      "type": "text",
+      "x": 680, "y": 45, "width": 160, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "多智能体模拟\n大规模并行仿真", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "多智能体模拟\n大规模并行仿真", "lineHeight": 1.25, "baseline": 42
+    },
+    {
+      "id": "arrow-down1",
+      "type": "arrow",
+      "x": 180, "y": 115, "width": 0, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [0, 60]]
+    },
+    {
+      "id": "box4",
+      "type": "rectangle",
+      "x": 80, "y": 180, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#862e9c", "backgroundColor": "#eebefa",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box4-label",
+      "type": "text",
+      "x": 100, "y": 198, "width": 160, "height": 44,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 11, "version": 1, "versionNonce": 11,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1, "text": "输出\n→ 人类决策者\n→ AI 代理 (MCP)", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "输出\n→ 人类决策者\n→ AI 代理 (MCP)", "lineHeight": 1.25, "baseline": 36
+    },
+    {
+      "id": "arrow-down2",
+      "type": "arrow",
+      "x": 470, "y": 115, "width": 0, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 12, "version": 1, "versionNonce": 12,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [0, 60]]
+    },
+    {
+      "id": "box5",
+      "type": "rectangle",
+      "x": 370, "y": 180, "width": 200, "height": 80,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#ffc9c9",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 13, "version": 1, "versionNonce": 13,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box5-label",
+      "type": "text",
+      "x": 390, "y": 195, "width": 160, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 14, "version": 1, "versionNonce": 14,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1, "text": "应用场景\nCVS · 零售 · 金融\nCPG · 广告测试", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "应用场景\nCVS · 零售 · 金融\nCPG · 广告测试", "lineHeight": 1.25, "baseline": 42
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}

@@ -1,0 +1,119 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "bubble",
+      "type": "ellipse",
+      "x": 60, "y": 20, "width": 780, "height": 480,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#e7f5ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 40, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "smart",
+      "type": "rectangle",
+      "x": 80, "y": 420, "width": 160, "height": 60,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "smart-label",
+      "type": "text",
+      "x": 90, "y": 428, "width": 140, "height": 44,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "聪明资金\n早期入场", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "聪明资金\n早期入场", "lineHeight": 1.25, "baseline": 36
+    },
+    {
+      "id": "fomo",
+      "type": "rectangle",
+      "x": 370, "y": 140, "width": 160, "height": 60,
+      "angle": 0, "strokeColor": "#f08c00", "backgroundColor": "#ffe8cc",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "fomo-label",
+      "type": "text",
+      "x": 380, "y": 148, "width": 140, "height": 44,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "追涨者\n高位买入", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "追涨者\n高位买入", "lineHeight": 1.25, "baseline": 36
+    },
+    {
+      "id": "weak",
+      "type": "rectangle",
+      "x": 660, "y": 420, "width": 160, "height": 60,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#ffc9c9",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "weak-label",
+      "type": "text",
+      "x": 670, "y": 428, "width": 140, "height": 44,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 16, "fontFamily": 1, "text": "最弱持有\n恐慌卖出", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "最弱持有\n恐慌卖出", "lineHeight": 1.25, "baseline": 36
+    },
+    {
+      "id": "marginal",
+      "type": "text",
+      "x": 280, "y": 60, "width": 340, "height": 50,
+      "angle": 0, "strokeColor": "#862e9c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 18, "fontFamily": 1, "text": "边缘 5% 的持仓者\n决定 100% 的价格", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "边缘 5% 的持仓者\n决定 100% 的价格", "lineHeight": 1.25, "baseline": 40
+    },
+    {
+      "id": "stable",
+      "type": "rectangle",
+      "x": 270, "y": 330, "width": 360, "height": 50,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#d0ebff",
+      "fillStyle": "hachure", "strokeWidth": 1, "strokeStyle": "dashed",
+      "roughness": 1, "opacity": 80, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "stable-label",
+      "type": "text",
+      "x": 290, "y": 338, "width": 320, "height": 34,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1, "text": "80-90% 的持股不换手", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "80-90% 的持股不换手", "lineHeight": 1.25, "baseline": 26
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Should Crypto Tokens Come With Investor Rights? — Uneasy Money</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a2e;
+  background: #fafafa;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+header { text-align: center; padding: 3rem 0 2rem; border-bottom: 2px solid #e5e7eb; margin-bottom: 2.5rem; }
+h1 { font-size: 1.8rem; line-height: 1.35; margin-bottom: 0.75rem; color: #111; }
+header .meta { font-size: 0.9rem; color: #6b7280; }
+header .meta span { margin: 0 0.5rem; }
+h2 { font-size: 1.35rem; margin: 2.5rem 0 1rem; color: #1a1a2e; padding-bottom: 0.4rem; border-bottom: 1px solid #e5e7eb; }
+h3 { font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: #374151; }
+p { margin: 0.75rem 0; }
+.overview { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1.5rem 0 2rem; }
+@media (max-width: 600px) { .overview { grid-template-columns: 1fr; } }
+.card { padding: 1rem 1rem 1rem 1.25rem; border-radius: 8px; font-size: 0.9rem; line-height: 1.55; }
+.card strong { display: block; margin-bottom: 0.3rem; font-size: 0.95rem; }
+.card-blue  { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.card-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+.card-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+.card-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.card-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+.card-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+blockquote {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #3b82f6;
+  background: #eff6ff;
+  font-style: italic;
+  border-radius: 0 6px 6px 0;
+}
+blockquote .attr { display: block; margin-top: 0.5rem; font-size: 0.82rem; font-style: normal; color: #6b7280; }
+blockquote.red  { border-left-color: #ef4444; background: #fef2f2; }
+blockquote.green { border-left-color: #22c55e; background: #f0fdf4; }
+blockquote.yellow { border-left-color: #eab308; background: #fefce8; }
+blockquote.purple { border-left-color: #a855f7; background: #faf5ff; }
+.vs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.5rem 0; }
+@media (max-width: 600px) { .vs-grid { grid-template-columns: 1fr; } }
+.vs-box { padding: 1.25rem; border-radius: 8px; font-size: 0.92rem; line-height: 1.6; }
+.vs-red { background: #fef2f2; border: 2px solid #fecaca; }
+.vs-green { background: #f0fdf4; border: 2px solid #bbf7d0; }
+.quotes-section { margin: 2.5rem 0; }
+.quotes-section .q { margin: 0.6rem 0; padding: 0.9rem 1rem; border-radius: 6px; font-size: 0.92rem; line-height: 1.6; font-style: italic; }
+.quotes-section .q .attr { display: block; margin-top: 0.3rem; font-size: 0.8rem; font-style: normal; color: #6b7280; }
+.q-blue { background: #eff6ff; border-left: 3px solid #3b82f6; }
+.q-green { background: #f0fdf4; border-left: 3px solid #22c55e; }
+.q-yellow { background: #fefce8; border-left: 3px solid #eab308; }
+.q-orange { background: #fff7ed; border-left: 3px solid #f97316; }
+.q-red { background: #fef2f2; border-left: 3px solid #ef4444; }
+.q-purple { background: #faf5ff; border-left: 3px solid #a855f7; }
+footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb; text-align: center; font-size: 0.85rem; color: #9ca3af; }
+footer a { color: #3b82f6; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.gloss { font-size: 0.88rem; color: #6b7280; background: #f3f4f6; padding: 0.5rem 1rem; border-radius: 6px; margin: 0.75rem 0; }
+.gloss::before { content: "✏️ 作者概括："; font-weight: 600; color: #374151; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Should Crypto Tokens Come With Investor Rights?</h1>
+  <div class="meta">
+    Uneasy Money on Unchained<span>·</span>2026 年 7 月<span>·</span>1h12m
+  </div>
+  <div class="meta" style="margin-top: 0.5rem;">
+    主持：Tay、Kain<span>·</span>嘉宾：Stephen (Arbitrum / Offchain Labs)
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得看</h2>
+  <div class="overview">
+    <div class="card card-blue"><strong>BitMEX 关停</strong>一个没发 Token 的交易所关门，社区集体怀旧，没有人愤怒。为什么？</div>
+    <div class="card card-orange"><strong>桥接连被黑</strong>DPRK Lazarus 持续攻击跨链桥，AI 时代的黑客让人类防守者措手不及。</div>
+    <div class="card card-purple"><strong>Uniswap 许可池</strong>合规进入了 DeFi 的核心层。Token 化证券的交易规则不再是"门外的保安"。</div>
+    <div class="card card-green"><strong>Token 应该有投资者权利吗？</strong>Superstate 的愿景：用类似股权的 Token 替代"没有任何权利的魔法豆子"。</div>
+    <div class="card card-yellow"><strong>97% vs 5% 的取舍</strong>全球 97% 的人能买 ARB，但没有投资者权利。如果只有 5% 能买但有权利呢？</div>
+    <div class="card card-red"><strong>Kyle Samani vs Multicoin</strong>Solana 最激进的 VC 因为投了竞争对手 HYPE 而分道扬镳——熊市最佳抓马。</div>
+  </div>
+</section>
+
+<section>
+  <h2>BitMEX 关停：一场安静的告别</h2>
+
+  <p>2026 年，加密衍生品交易平台 BitMEX 正式关停。对于一家在 2014 年成立、见证了加密行业从边缘走向主流的交易所来说，这本该是一个引发轩然大波的事件。但社区的集体反应却是：<strong>怀旧</strong>。</p>
+
+  <blockquote>
+    "没有人愤怒。大家只是怀念。像是在参加一个葬礼——但这葬礼不只是给 BitMEX 的，也是给整个熊市的。"
+    <span class="attr">— Kain 对社区反应的观察</span>
+  </blockquote>
+
+  <p>BitMEX 的巅峰时期，几乎所有 OG 都在上面交易。2014 年的加密世界和今天截然不同：没有 KYC、只接受比特币存款——在那个年代被认为"足够去中心化"。Arthur Hayes 后来被监管盯上，创始人戴上了脚踝监视器。但即便如此，当这家公司最终关门时，没有人跳出来骂街。</p>
+
+  <p>Kain 回忆起自己曾经给团队每人发 1 个比特币，让他们去 BitMEX 上交易永续合约，"把钱亏光，这样你们才能理解在永续合约上交易是什么感觉"。有些团队成员从此沉迷交易，不再写代码——"稍微有点负 EV"。这段回忆引发的是笑声，而非愤怒。</p>
+
+  <p>这引发了本期节目的核心问题：<strong>为什么有 Token 的项目关门时，社区会愤怒到翻旧账、指责团队，而没发 Token 的 BitMEX 关门时，大家只是怀念和致敬？</strong></p>
+</section>
+
+<section>
+  <h2>Token 改变了"失败"的含义</h2>
+
+  <p>Kain 提出了一个精准的观察：Token 项目关门时的社区反应和传统创业失败时的反应截然不同，这种差异"从来没有停止让我惊讶"。</p>
+
+  <p>当 BitMEX 关停时，没有人做"事后诸葛亮"——没有人分析"Arthur 当年应该怎么做"。但在 Token 项目关停时，社群里会涌现大量"你应该做这个，不应该做那个"的指责。区别到底在哪里？</p>
+
+  <blockquote class="red">
+    "你怎么敢失败？你怎么敢辜负我？我把这么多都押在你这儿了。"
+    <span class="attr">— 描述 Token 持有者对项目关门时的典型反应</span>
+  </blockquote>
+
+  <div class="vs-grid">
+    <div class="vs-box vs-red">
+      <strong>🔴 Token 项目关门</strong>
+      <p style="margin-top: 0.5rem;">社区极度愤怒，开始翻旧账。"你应该做这个，不应该做那个。"亏了钱的人把失败变成了私人恩怨。</p>
+      <p style="font-size: 0.85rem; color: #6b7280; margin-top: 0.5rem;">Token 项目靠注意力生存——有人买 Token 就是生命线。一旦归零，持有者感觉被背叛。</p>
+    </div>
+    <div class="vs-box vs-green">
+      <strong>🟢 普通创业关门</strong>
+      <p style="margin-top: 0.5rem;">社区集体怀旧，发推致敬。"那是个伟大的时代。"即使失败，也被尊重为一个时代的象征。</p>
+      <p style="font-size: 0.85rem; color: #6b7280; margin-top: 0.5rem;">BitMEX 有真实收入、真实用户——但没有 Token，所以没人觉得被"欠了什么"。</p>
+    </div>
+  </div>
+
+  <p>Tay 指出了一个关键的心理学细节：Token 持有者觉得自己有权评论项目为什么失败，"而且评论得非常恶毒"。但实际上，作为 Token 持有者对项目的影响力，和你对 BitMEX 的影响力完全一样——等于零。区别只在于：<strong>有没有人亏了钱</strong>。亏钱让批评变成了私人恩怨。</p>
+
+  <div class="gloss">讽刺的是，BitMEX 是那个"绝对应该成功"的项目——有收入、有用户、有先发优势。而那些根本没有收入模型的 Token 项目关门时，人们却表现得像被抢劫了一样。</div>
+</section>
+
+<section>
+  <h2>加密安全的残酷现实：桥梁接连被黑</h2>
+
+  <p>Tay 在节目中列出了一长串最近的跨链桥攻击事件。其中最引人注目的是 AFX——一个运营不到一个半月的 Perp DEX——其跨链桥被攻破，攻击者拿到了 5 个验证者签名密钥。攻击者是 <strong>DPRK Lazarus 组织</strong>，和黑掉 Ronin 桥（6 亿美元被盗）的是同一批人。</p>
+
+  <p>同样的手法，同样的目标：渗透服务器 → 窃取验证者密钥 → 清空桥上的资产。即使把密钥分散在不同的服务器上，Lazarus 仍然能全部拿到。他们从 Ronin 时代就开始干这个——而且越来越强。</p>
+
+  <p>更惊险的是：当"Arbitrum 桥被黑"的消息最初在社交网络上传播时，Stephen 的心脏几乎停跳。Arbitrum 团队紧急启动调查，确认被黑的不是 Arbitrum 原生桥，而是一个第三方桥。团队立即联系了受害方并提供帮助——但黑客已经迅速把所有资产换成了 ETH 并转移走了。</p>
+
+  <blockquote class="yellow">
+    "恐慌可以引发各种二级、三级后果。我们立刻尝试消除误解——最后你知道的，桥被黑这种事，我们希望被黑的是别人的桥。"
+    <span class="attr">— Stephen, Arbitrum</span>
+  </blockquote>
+
+  <p>这件事揭示了一个核心问题：在 Arbitrum 这样的开放平台上，任何人都可以部署自己的跨链桥——即使他们只运营了不到两个月。桥汇集了大量资产，是最有价值的攻击目标；验证者密钥是单点故障——拿到密钥等于拿走所有钱。</p>
+</section>
+
+<section>
+  <h2>AI 黑客时代：外星人降临了</h2>
+
+  <p>Kain 用了一个生动的比喻来描述当前的安全格局变化：</p>
+
+  <blockquote>
+    "我们开始很蠢，干了很多蠢事，然后出了问题。我们意识到有后果。我们把最好的人类放到最好的人类对面，在两三年里找到了平衡。然后，他妈的<strong>外星人降临了</strong>——而且他们特别擅长黑东西。而我们还没组织起自己的外星军队。"
+    <span class="attr">— Kain 关于 AI 如何打破安全平衡</span>
+  </blockquote>
+
+  <p>按照 Kain 的叙述，加密安全的演变可以分为三个阶段：</p>
+
+  <p><strong>第一阶段（早期）：</strong>所有人都在犯低级错误——自己写加密算法、不重视审计、重复犯相同的漏洞。代价惨重。</p>
+
+  <p><strong>第二阶段（2022-2024）：</strong>行业建立了安全文化。顶级安全团队对抗顶级黑客，双方达到了一个脆弱的平衡。桥被黑的事件显著减少。</p>
+
+  <p><strong>第三阶段（2025-至今）：</strong>AI 驱动的黑客工具出现，攻击者获得了不对称的优势。防守方的 AI 能力还在追赶——Codex 开源了安全 CLI、K3 和 CoinCode 3.18 开始被允许做网络安全工作。但这些工具的成熟需要时间。</p>
+
+  <div class="gloss">加密安全正从"人类 vs 人类"的游戏变成"AI vs AI"的游戏。过渡期是最危险的时候——攻击者的 AI 工具比防守者成熟得更快。</div>
+</section>
+
+<section>
+  <h2>"不要自己建桥"</h2>
+
+  <p>Kain 在节目中提出了一个尖锐的类比：</p>
+
+  <blockquote class="red">
+    "如果我跟当地市政府说'我要自己建一座桥'，他们不会允许的。你不能自己建桥。但如果我说'这是 Kain 的桥，绝对牛逼，我的工程师最聪明，别担心'——在加密世界里，所有人都觉得这很合理。"
+    <span class="attr">— Kain</span>
+  </blockquote>
+
+  <p>这个比喻精准地描述了加密行业的现状。在传统工程中，"自己建桥"是不可想象的——有结构工程师、安全标准、政府监管。但在加密世界，任何一个团队都可以部署自己的跨链桥，在上面跑几十亿美元的流量，直到被黑为止。</p>
+
+  <p>Stephen 分享了 Arbitrum 如何应对这个问题：投入大量资源加固原生桥、教育交易所等待 L1 最终确认而不是"即时确认"、对第三方桥做二级尽调——不是审计代码，但确认"这些人看起来在做正确的事"。</p>
+
+  <p>这让人想起加密行业早期的一个教训：<strong>"不要自己写加密算法"</strong>。在比特币和以太坊的早期，有些工程师会自己发明加密方案，直到社区形成了共识——这样做的人被视为"不知道自己在干什么"。现在，同样的教育需要在桥接领域重演。</p>
+</section>
+
+<section>
+  <h2>安全循环：遗忘才是真正的敌人</h2>
+
+  <p>Stephen 点出了一个在加密行业反复出现的模式：人们有非常短暂的记忆。在好年景里，没有人关心安全。大家只要低费用和新功能。往往要等到 FTX 级别的事件发生，人们才会重新想起去中心化和安全的重要性。</p>
+
+  <p>这个循环大致是这样的：<strong>自满 → 被黑 → 加固 → 遗忘 → 自满</strong>。每一步都有人在事后说"我早就说过"，但没有人能在事前阻止。</p>
+
+  <p>在 2022 年的一波桥被黑潮之后，行业确实建立了一些安全实践——多签、审计、延迟提款。但随着时间的推移，新项目不断涌现，新的桥被部署，新的安全标准被忽视——然后新一轮攻击开始了。</p>
+
+  <div class="gloss">加密安全不是技术问题，是注意力和激励的问题。只要用户不去主动要求安全，项目方就没有足够的动力去投入安全。</div>
+</section>
+
+<section>
+  <h2>Uniswap 许可池：合规进入了 DeFi 的核心</h2>
+
+  <p>2026 年 7 月，Uniswap Labs 在 V4 上推出了许可池（Permissioned Pools），合作方包括 Securitize、Superstate 和 DAO.co。这些池子的核心功能是：Token 化基金的发行方可以限制只有通过认证的投资者才能交易——合规检查内嵌在池子本身，而不再只是"站在门外的保安"。</p>
+
+  <blockquote class="green">
+    "直到现在，Token 化证券的合规一直停留在应用层——一扇站在市场前面的门。许可池把规则搬进了池子本身。这是 Token 化一直缺失的那根管道。"
+    <span class="attr">— Robert Leshner, Superstate CEO（通过 Tay 引用）</span>
+  </blockquote>
+
+  <p>社区的反应是剧烈反对的。Uniswap 是"不可变合约"的象征——任何引入限制的动作都会引发强烈的意识形态反弹。但 Tay 的回应值得深思：这不是把所有池子都变成许可池，只是一个新产品线。</p>
+
+  <p>更重要的是，许可池的概念揭示了一个根本性的取舍：<strong>如果你想要 Token 拥有真正的价值和权利，你就必须接受一定程度的合规限制</strong>。完全自由的代价是完全没有任何保护。</p>
+</section>
+
+<section>
+  <h2>Superstate 的愿景：Token 应该有投资者权利</h2>
+
+  <p>Robert Leshner 是 Superstate 的 CEO，也是 Compound 的创始人。他在加密行业摸爬滚打多年后，提出了一个激进但务实的命题：</p>
+
+  <p><strong>当前的加密资产被称为"Token"，但它们没有任何权利、没有任何义务、与收入没有任何关系。</strong>这些"魔法豆子"的唯一价值来自注意力——人们相信未来会有人愿意出更高的价格。而 Superstate 的方案是创造一种类似股权的新型 Token：具有清晰的权利（收入分配、信息披露、治理参与），绑定到真实世界的法律实体，通过内置合规机制限制交易参与者。</p>
+
+  <p>Kain 认为，这是加密行业第一次有机会做这个"自然实验"：市场到底更喜欢 97% 开放但没有权利的 Token，还是 5% 受限但有权利的 Token？</p>
+
+  <blockquote class="purple">
+    "在这个周期中，我们将第一次看到类似股权的 Token。Superstate 可能会爆发，一些大项目会做出这个选择。我们将实时目睹这个实验的结果。"
+    <span class="attr">— Kain</span>
+  </blockquote>
+</section>
+
+<section>
+  <h2>97% vs 5%：创始人的两难</h2>
+
+  <p>节目中最精彩的思想实验之一是 Kain 提出的"时间机器"假设：如果你回到 2019/2020 年，Robert Leshner 穿越过来给你两个选择——</p>
+
+  <p><strong>方案 A</strong>：发行一个全球 97% 人口都能购买的 Token，完全开放，包罗万象。但没有投资者权利，没有信息披露，Token 与公司股权完全分离。</p>
+
+  <p><strong>方案 B</strong>：发行一个类似股权的 Token，只有约 5% 的认证投资者能持有。但有清晰的权利、收入分配、信息披露义务。</p>
+
+  <p>当这个选择题被抛给 Arbitrum 的联合创始人 Stephen 时，他的回答体现了行业中一种微妙的立场：</p>
+
+  <blockquote>
+    "我想要更好的 Token 制度——我想要两全其美，又要蛋糕，又要吃。"
+    <span class="attr">— Stephen</span>
+  </blockquote>
+
+  <p>Stephen 的解释是：对于 Arbitrum 来说，Token 的核心功能不是"赚钱"，而是去中心化治理。安全委员会能做出紧急决策来保护网络——这个权力的合法性来自 Token 持有者的选举。如果只有 5% 的人能持有，而这些人都集中在纽约的机构手中——他们有多容易被"说服"去做某件事？97% 分散在全球的持有者要难控制得多。</p>
+
+  <p>但 Kain 也指出，2020 年的监管环境不会允许方案 B。"那个时代没有人会愿意承担这种风险。每个人都在用完全相同的公式，因为那是'已知不会被起诉'的公式。创新要付出的代价太高。"</p>
+</section>
+
+<section>
+  <h2>Gensler 时代的遗产与监管的未来</h2>
+
+  <p>2020-2024 年 Gary Gensler 执掌 SEC 期间，所有的 Token 设计都受一个核心问题驱动：如何保持合规同时创新？结果是：实验室实体与基金会/DAO 分离——这不是最优架构，是合规策略。没有人愿意在 SEC 面前当出头鸟。所有人都用同一套公式。</p>
+
+  <blockquote class="yellow">
+    "不要当熊来了跑得最慢的那个。"
+    <span class="attr">— 加密行业在 Gensler 时代的生存法则</span>
+  </blockquote>
+
+  <p>随着 Clarity Act 等监管框架在讨论中推进，行业有机会重新思考 Token 应该是什么。Stephen 保持谨慎乐观：即使法案明天通过，市场真正感受到效果可能需要一两年。但它是一个信号——"我们在严肃对待这件事"。</p>
+
+  <div class="gloss">Gensler 时代让加密行业学会了"怎么不违法"，但没有教会它"怎么把 Token 设计好"。现在监管框架在松动，创新的空间在扩大——Superstate 和 Uniswap 许可池只是第一批实验品。</div>
+</section>
+
+<section>
+  <h2>Arbitrum 治理：不要让 DAO 投票选卫生纸</h2>
+
+  <p>Stephen 分享了 Arbitrum 在治理演进中踩过的坑和学到的教训。早期，DAO 被要求投票决定各种琐事——从 5000 美元的会议赞助到办公室用哪个品牌的卫生纸。结果是什么？<strong>冷漠</strong>。聪明的投资者不愿意花时间看这些东西，催生了"职业代表"——他们包揽一切投票，社区参与度持续下降。</p>
+
+  <blockquote class="purple">
+    "权力去中心化和运营物流是两回事。DAO 不应该投票选我们办公室用什么品牌的卫生纸。但如果那个品牌的卫生纸真的很烂——你是可以回来把它撤销掉的。"
+    <span class="attr">— Stephen, Arbitrum</span>
+  </blockquote>
+
+  <p>Arbitrum 随后进行了重大改革：投票固定每周四上线（让参与者有节奏）、取消职业代表制度（让真正关心治理的人参与）、建立运营公司来管理日常事务（DAO 保留最终否决权）。最关键的设计原则是：<strong>去中心化的是"根本权力"，不是"每一个日常决策"</strong>。</p>
+
+  <p>还有一个值得注意的细节：Offchain Labs 和其员工不允许直接用自己的 Token 投票——给社区和代表留出空间。这是少数几个真正践行"不控制治理"的团队之一。</p>
+</section>
+
+<section>
+  <h2>Kyle Samani vs Multicoin：熊市最佳抓马</h2>
+
+  <p>节目的最后一部分转向了加密行业最戏剧性的人物分手之一。Kyle Samani 是 Multicoin Capital 的联合创始人，也是 Solana 生态最激进、最有影响力的支持者。当 Multicoin 决定投资 Hyperliquid（HYPE）——Solana 的直接竞争对手——Kyle 的反应是爆炸性的。</p>
+
+  <blockquote class="red">
+    "如果你在 Solana 生态建东西，你应该明白：Multicoin 正在对抗你所建造的一切。"
+    <span class="attr">— Kyle Samani 对 Solana 建设者的公开声明</span>
+  </blockquote>
+
+  <p>HYPE 涨了很多，Multicoin 赚了很多钱。但 Kyle 对此极度不满——他认为投资竞争对手就是在破坏自己多年来建立的 Solana 生态关系。Kain 推测这就是导致 Kyle 离开 Multicoin 的核心原因："他可能说'你们要投 HYPE 除非我死了'，然后他们说了再见。"</p>
+
+  <p>但有趣的是，Kyle 至今没有宣布成立自己的新基金。"我预测他会。他一定会的。"Kain 说。而 Stephen 则从另一个角度给出了理性评价："如果我是 Solana 的用户，我认为这个生态如果担心某一家 VC 投了竞争对手就会完蛋，那这个生态本身就有更大的问题。"</p>
+</section>
+
+<section>
+  <h2>Solana 的依赖问题</h2>
+
+  <p>这个事件折射出 Solana 生态一个反复出现的模式：对某个核心人物的过度依赖。FTX 时代是 SBF——FTX 崩盘后所有人都以为 Solana 会跟着死，但 Solana 挺过来了，证明了自己不是单点依赖。然而紧接着，Kyle Samani 似乎成了新的"国王"——又是一个高度依赖单一个体/机构的模式。</p>
+
+  <p>Kain 指出，这和 Solana 的文化特征密切相关："Solana 的社区文化高度统一——'我们都爱 Toly，我们都需要一个给我们钱的人'。而 Ethereum 的文化高度多元——'我们甚至不能就 Vitalik 是否应该统治我们达成一致'。"</p>
+
+  <p>这种文化差异导致了不同的脆弱性模式：Solana 更容易出现"国王依赖"（先有 SBF，后有 Kyle），而 Ethereum 更容易陷入"治理僵局"（讨论过多，行动过少）。两种模式都有代价，但在这个案例中，Kyle 的离开让 Solana 生态再次面对"相信某个个体"带来的风险。</p>
+</section>
+
+<section>
+  <h2>权利的真正交易</h2>
+
+  <p>回到本期节目的核心命题，Tay 在节目中给出了最直接、最有力的总结：</p>
+
+  <blockquote>
+    "你可以讨厌冻结，讨厌控制，这完全没问题。我完全理解。但反面是，你也基本没有任何权利。如果完全没有控制，那就什么都不会有——这只是一个纯粹的自由搏击场。一旦我们开始进入更多实验性的领域——不管是不是完全许可的——只要有了控制，你就能解锁新的能力：真正的权利、真正的收益、以及对你到底买了什么的真实信息。"
+    <span class="attr">— Tay</span>
+  </blockquote>
+
+  <p>这段话精准地概括了加密行业当前站在的十字路口。一方面，完全自由的 Token 市场意味着任何人都能参与——但这也是一个没有任何保障的丛林。另一方面，引入合规限制会缩小参与群体——但能带来真正的投资者权利和信息披露。</p>
+
+  <p>这个行业花了十年时间证明"开放访问"的价值。接下来的十年，它需要证明"有了权利"也能有价值。Uniswap 许可池和 Superstate 是第一批探路者——市场会用自己的选择来回答这个问题。</p>
+</section>
+
+<section class="quotes-section">
+  <h2>核心金句</h2>
+  <p style="font-size: 0.85rem; color: #6b7280; margin-bottom: 1rem;">这期对谈里最值得记住的 12 句：</p>
+
+  <div class="q q-blue">
+    "Token 项目和传统创业关门时社区反应的差异，从来没有停止让我惊讶。"
+    <span class="attr">— Kain</span>
+  </div>
+
+  <div class="q q-green">
+    "你怎么敢失败？你怎么敢辜负我？我把这么多都押在你这儿了。"
+    <span class="attr">— 描述 Token 持有者对项目关门的典型反应</span>
+  </div>
+
+  <div class="q q-yellow">
+    "像被比特币驱动在 2014 年被认为是足够去中心化的。如果你今天跑来跟我说'这是我的赌场，用比特币存款，数据库在我的地下室里'——这一代人不吃这套了。"
+    <span class="attr">— Kain</span>
+  </div>
+
+  <div class="q q-orange">
+    "我们开始很蠢，坏事后意识到后果。我们把最好的人类放到最好的人类对面，在两三年里找到了平衡。然后外星人他妈降临了——而且他们特别擅长黑东西。"
+    <span class="attr">— Kain，关于 AI 黑客</span>
+  </div>
+
+  <div class="q q-red">
+    "如果我跟当地市政府说'我要自己建一座桥'，他们不会允许的。你不能自己建桥。"
+    <span class="attr">— Kain，类比加密行业的桥接安全</span>
+  </div>
+
+  <div class="q q-purple">
+    "权力去中心化和运营物流是两回事。DAO 不应该投票选我们办公室用什么品牌的卫生纸。"
+    <span class="attr">— Stephen, Arbitrum</span>
+  </div>
+
+  <div class="q q-blue">
+    "你可以讨厌冻结，讨厌控制，这完全没问题。但反面是，你也基本没有任何权利。"
+    <span class="attr">— Tay，关于许可池争议</span>
+  </div>
+
+  <div class="q q-green">
+    "直到现在，Token 化证券的合规一直停留在应用层。许可池把规则搬进了池子本身。这是 Token 化一直缺失的那根管道。"
+    <span class="attr">— Robert Leshner, Superstate CEO</span>
+  </div>
+
+  <div class="q q-yellow">
+    "我想要更好的 Token 制度——我想要两全其美，又要蛋糕，又要吃。"
+    <span class="attr">— Stephen</span>
+  </div>
+
+  <div class="q q-orange">
+    "如果你在 Solana 生态建东西，你应该明白：Multicoin 正在对抗你所建造的一切。"
+    <span class="attr">— Kyle Samani</span>
+  </div>
+
+  <div class="q q-red">
+    "我讨厌 Kyle，但我也爱他——因为他真的敢站出来把话说清楚。你绝对不想站在 Kyle 的对立面。"
+    <span class="attr">— Kain，对 Kyle Samani 的评价</span>
+  </div>
+
+  <div class="q q-purple">
+    "如果我是 Solana 的用户，我认为这个生态如果担心某一家 VC 投了竞争对手就会完蛋，那这个生态本身就有更大的问题。"
+    <span class="attr">— Stephen</span>
+  </div>
+</section>
+
+<footer>
+  <p>
+    原文出处：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5700769470.mp3">Uneasy Money on Unchained</a> · 2026 年 7 月
+  </p>
+  <p style="margin-top: 0.5rem;">本文由 PodDeck 自动生成 · 内容基于播客转写稿整理</p>
+</footer>
+
+</body>
+</html>

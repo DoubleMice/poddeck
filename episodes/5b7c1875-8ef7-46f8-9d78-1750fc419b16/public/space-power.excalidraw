@@ -1,0 +1,121 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "scale-arrow",
+      "type": "arrow",
+      "x": 80, "y": 400, "width": 740, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 2}, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [740, 0]]
+    },
+    {
+      "id": "scale-label",
+      "type": "text",
+      "x": 380, "y": 410, "width": 140, "height": 24,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "功率 →", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "功率 →", "lineHeight": 1.25, "baseline": 18
+    },
+    {
+      "id": "small",
+      "type": "rectangle",
+      "x": 100, "y": 340, "width": 80, "height": 55,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "small-label",
+      "type": "text",
+      "x": 110, "y": 350, "width": 60, "height": 35,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 12, "fontFamily": 1, "text": "小卫星\nkW级", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "小卫星\nkW级", "lineHeight": 1.25, "baseline": 29
+    },
+    {
+      "id": "med",
+      "type": "rectangle",
+      "x": 250, "y": 290, "width": 120, "height": 70,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "med-label",
+      "type": "text",
+      "x": 260, "y": 305, "width": 100, "height": 40,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "Starlink\n数十kW", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Starlink\n数十kW", "lineHeight": 1.25, "baseline": 34
+    },
+    {
+      "id": "k2",
+      "type": "rectangle",
+      "x": 440, "y": 220, "width": 180, "height": 90,
+      "angle": 0, "strokeColor": "#f08c00", "backgroundColor": "#ffe8cc",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "k2-label",
+      "type": "text",
+      "x": 455, "y": 240, "width": 150, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1, "text": "K2 巨型卫星\n100kW+", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "K2 巨型卫星\n100kW+", "lineHeight": 1.25, "baseline": 42
+    },
+    {
+      "id": "future",
+      "type": "rectangle",
+      "x": 680, "y": 150, "width": 160, "height": 110,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#ffc9c9",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "future-label",
+      "type": "text",
+      "x": 692, "y": 160, "width": 136, "height": 90,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "MV级?\nStarship\n满载荷\n数据中继\n轨道计算\nII型文明", "textAlign": "center",
+      "verticalAlign": "top", "containerId": null, "originalText": "MV级?\nStarship\n满载荷\n数据中继\n轨道计算\nII型文明", "lineHeight": 1.3, "baseline": 84
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}

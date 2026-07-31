@@ -1,11 +1,11 @@
 source: tbpn
-refreshed_at: 2026-07-31T04:13:43.451Z
+refreshed_at: 2026-07-31T18:33:07.622Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -113,5 +113,9 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-07-31T18:44:49.126Z
+    transcript_job_id: b9dd89b4-81b8-4cf1-bef2-f53e7610b03c_6fd9d3bf9e1a4b28a58985e34c1b06bc,df69c895-5280-4456-b613-7b320ba48e5f_1e2a1662978d485780d5b2eddf1a619a,9c10b4a8-808d-4baf-abcf-c0e8614dc6d1_6c1cfde8f42643bb814e0bee5292f6ec,ab5f1883-3549-4b71-b080-1155fc1fcabd_d18fc4cab2e842c6bd4b394da632b287,354dc44e-f061-4969-96e3-07fd866f4221_fc0bc744e6404ae298e28ee010658f41,623a4bc0-936f-494a-b957-d0f8c82e08a7_6a3d4c276f8e412bbe1719c7f081dd50,9b917bbf-6a0a-409a-9fcc-147ec6ac87ca_a18de5d28e6848198b25dacdc9acd020,df835162-fe37-4fae-a6be-ed11a0e75f31_f0b55e84467e4afd8a59a3eca0cfb5bd,0d4a748b-bee0-45d5-969d-0fecc1b711ff_470ac44cfbc74adb825d43aa046de051,203d0571-7499-445d-9c1a-6adf43716ad5_7fd945d3ae2b42658916caaa7142094a,792dad92-1898-4de5-b4e2-6dd2cdd7fe26_97645f037f024b368d57ba1f2110eb6e,5d32a3cd-d7da-4523-8c0f-a52513b7e29f_8e6ea8e6910f4aa59a48754ba56500dc
+    transcript_completed_at: 2026-07-31T18:55:53.795Z

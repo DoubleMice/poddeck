@@ -1,0 +1,134 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "line",
+      "type": "line",
+      "x": 80, "y": 260, "width": 740, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 3, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": "bar", "endArrowhead": "bar",
+      "points": [[0, 0], [740, 0]]
+    },
+    {
+      "id": "left-label",
+      "type": "text",
+      "x": 40, "y": 210, "width": 100, "height": 30,
+      "angle": 0, "strokeColor": "#862e9c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 22, "fontFamily": 1, "text": "极简", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "极简", "lineHeight": 1.25, "baseline": 24
+    },
+    {
+      "id": "right-label",
+      "type": "text",
+      "x": 760, "y": 210, "width": 100, "height": 30,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 22, "fontFamily": 1, "text": "全开", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "全开", "lineHeight": 1.25, "baseline": 24
+    },
+    {
+      "id": "ilya",
+      "type": "ellipse",
+      "x": 120, "y": 130, "width": 100, "height": 100,
+      "angle": 0, "strokeColor": "#862e9c", "backgroundColor": "#eebefa",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "ilya-label",
+      "type": "text",
+      "x": 130, "y": 155, "width": 80, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1, "text": "Ilya\nBezos", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Ilya\nBezos", "lineHeight": 1.25, "baseline": 42
+    },
+    {
+      "id": "brian",
+      "type": "ellipse",
+      "x": 360, "y": 90, "width": 100, "height": 100,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "brian-label",
+      "type": "text",
+      "x": 370, "y": 115, "width": 80, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1, "text": "Armstrong\n按品味", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Armstrong\n按品味", "lineHeight": 1.25, "baseline": 42
+    },
+    {
+      "id": "demis",
+      "type": "ellipse",
+      "x": 660, "y": 50, "width": 120, "height": 120,
+      "angle": 0, "strokeColor": "#f08c00", "backgroundColor": "#ffe8cc",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "demis-label",
+      "type": "text",
+      "x": 678, "y": 80, "width": 84, "height": 60,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1, "text": "Demis\n新书巡回", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Demis\n新书巡回", "lineHeight": 1.25, "baseline": 52
+    },
+    {
+      "id": "leopold",
+      "type": "rectangle",
+      "x": 170, "y": 320, "width": 120, "height": 50,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "leopold-label",
+      "type": "text",
+      "x": 180, "y": 332, "width": 100, "height": 26,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 11, "version": 1, "versionNonce": 11,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 14, "fontFamily": 1, "text": "Leopold?", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Leopold?", "lineHeight": 1.25, "baseline": 20
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}

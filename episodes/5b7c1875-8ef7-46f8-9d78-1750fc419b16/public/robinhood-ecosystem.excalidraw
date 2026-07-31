@@ -1,0 +1,163 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "center",
+      "type": "ellipse",
+      "x": 340, "y": 200, "width": 220, "height": 140,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#a5d8ff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 1, "version": 1, "versionNonce": 1,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "center-label",
+      "type": "text",
+      "x": 365, "y": 235, "width": 170, "height": 70,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 18, "fontFamily": 1, "text": "Robinhood\n超级应用", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Robinhood\n超级应用", "lineHeight": 1.25, "baseline": 62
+    },
+    {
+      "id": "box1",
+      "type": "rectangle",
+      "x": 50, "y": 30, "width": 160, "height": 60,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#b2f2bb",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 3, "version": 1, "versionNonce": 3,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box1-label",
+      "type": "text",
+      "x": 70, "y": 42, "width": 120, "height": 36,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 4, "version": 1, "versionNonce": 4,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "股票 · 期权", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "股票 · 期权", "lineHeight": 1.25, "baseline": 30
+    },
+    {
+      "id": "box2",
+      "type": "rectangle",
+      "x": 340, "y": 30, "width": 220, "height": 60,
+      "angle": 0, "strokeColor": "#f08c00", "backgroundColor": "#ffe8cc",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 5, "version": 1, "versionNonce": 5,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box2-label",
+      "type": "text",
+      "x": 355, "y": 42, "width": 190, "height": 36,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 6, "version": 1, "versionNonce": 6,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "Robinhood Gold · 白金卡", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Robinhood Gold · 白金卡", "lineHeight": 1.25, "baseline": 30
+    },
+    {
+      "id": "box3",
+      "type": "rectangle",
+      "x": 660, "y": 30, "width": 190, "height": 60,
+      "angle": 0, "strokeColor": "#862e9c", "backgroundColor": "#eebefa",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 7, "version": 1, "versionNonce": 7,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box3-label",
+      "type": "text",
+      "x": 675, "y": 42, "width": 160, "height": 36,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 8, "version": 1, "versionNonce": 8,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "加密 · 代币\n预测市场", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "加密 · 代币\n预测市场", "lineHeight": 1.25, "baseline": 30
+    },
+    {
+      "id": "box4",
+      "type": "rectangle",
+      "x": 50, "y": 440, "width": 160, "height": 60,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "#ffc9c9",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 9, "version": 1, "versionNonce": 9,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box4-label",
+      "type": "text",
+      "x": 65, "y": 452, "width": 130, "height": 36,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 10, "version": 1, "versionNonce": 10,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "Legend\n专业交易", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Legend\n专业交易", "lineHeight": 1.25, "baseline": 30
+    },
+    {
+      "id": "box5",
+      "type": "rectangle",
+      "x": 340, "y": 440, "width": 220, "height": 60,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "#d0ebff",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 11, "version": 1, "versionNonce": 11,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box5-label",
+      "type": "text",
+      "x": 355, "y": 452, "width": 190, "height": 36,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 12, "version": 1, "versionNonce": 12,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "Social · 政客交易", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "Social · 政客交易", "lineHeight": 1.25, "baseline": 30
+    },
+    {
+      "id": "box6",
+      "type": "rectangle",
+      "x": 660, "y": 440, "width": 190, "height": 60,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "#d3f9d8",
+      "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
+      "roughness": 1.5, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": {"type": 3}, "seed": 13, "version": 1, "versionNonce": 13,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "box6-label",
+      "type": "text",
+      "x": 675, "y": 452, "width": 160, "height": 36,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
+      "roundness": null, "seed": 14, "version": 1, "versionNonce": 14,
+      "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "fontSize": 13, "fontFamily": 1, "text": "债券 · 期货\nMSI", "textAlign": "center",
+      "verticalAlign": "middle", "containerId": null, "originalText": "债券 · 期货\nMSI", "lineHeight": 1.25, "baseline": 30
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}
