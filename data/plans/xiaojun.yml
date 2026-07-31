@@ -1,15 +1,27 @@
 source: xiaojun
-refreshed_at: 2026-07-30T18:32:53.940Z
+refreshed_at: 2026-07-31T04:13:43.549Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 2
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 2
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6a69b07eb581962ce2bd4d97
+    guid: 6a69b07eb581962ce2bd4d97
+    title: 149. 亲历中美neo labs资本狂潮，和清华刘子鸣聊：AI for AI、机制可解释性和Max Tegmark
+    duration: 6035
+    published: Thu, 30 Jul 2026 23:30:00 GMT
+    published_sort: "20260730"
+    first_seen_at: 2026-07-31T04:13:43.549Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a69b07eb581962ce2bd4d97?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a69b07eb581962ce2bd4d97/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lm33Q4N6w8TZcd2fXDBUK9UnC2xv.m4a
+    image: https://image.xyzcdn.net/nrMZS8c9nIKNo9TPZnsa2gF07ySJ.png
+    status: needs_transcript
+    priority: 1
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去

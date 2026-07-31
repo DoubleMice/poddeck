@@ -1,56 +1,64 @@
 source: tbpn
-refreshed_at: 2026-07-30T18:32:53.843Z
+refreshed_at: 2026-07-31T04:13:43.451Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
-done: 1
-pending: 1
-needs_transcript: 0
+total_candidates: 1
+done: 0
+pending: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: b5100a0b-4106-414d-9b22-79cb137301dd
-    guid: b5100a0b-4106-414d-9b22-79cb137301dd
-    title: Robot Bans, Zuck Op-Ed, eBay Settles | Joe Weisenthal, Jameson Detweiler, Stanley Tang, Amjad Masad, Adam Cohen
-    duration: 8488
-    published: Wed, 29 Jul 2026 13:35:22 -0700
-    published_sort: "20260729"
-    first_seen_at: 2026-07-30T04:06:41.096Z
-    url: https://share.transistor.fm/s/0078676f
-    audio_url: https://media.transistor.fm/0078676f/10a1bdde.mp3
+  - id: 5b7c1875-8ef7-46f8-9d78-1750fc419b16
+    guid: 5b7c1875-8ef7-46f8-9d78-1750fc419b16
+    title: Leopold Sold, Ferrari Undefeated, Martin Shkreli Joins | Guillaume Verdon, Lulu Meservey, Michael Kim, Joon Sung
+      Park, Karan Kunjur, Vlad Tenev
+    duration: 10581
+    published: Thu, 30 Jul 2026 14:19:43 -0700
+    published_sort: "20260730"
+    first_seen_at: 2026-07-31T04:13:43.450Z
+    url: https://share.transistor.fm/s/90d059a5
+    audio_url: https://media.transistor.fm/90d059a5/dda539ee.mp3
     image: https://img.transistorcdn.com/JKCXKMFC8DxrWx6hOFD_HdcDjLAqNP3rWp-35R-vubg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iYWQ5/N2FkMzQ2MGY4Zjg5/ZDczMGExMTA5NjEz/Y2MyMC5wbmc.jpg
-    summary: "(00:15) - Robot Bans\r
+    summary: "(00:17) - Leopold Sold\r
 
-      (14:25) - 𝕏 Timeline Reactions\r
+      (12:14) - Martin Shkreli discusses the leveraged collapse of a major AI-focused hedge fund, explaining how forced
+      liquidation, predatory short-selling, and excessive position sizing can rapidly destroy a portfolio. The former
+      hedge fund manager and pharmaceutical executive also examines Citadel’s reported acquisition of the fund’s assets,
+      the broader correction in AI stocks, and Wall Street’s recurring failure to heed the risks of leverage.\r
 
-      (16:56) - Zuck Op-Ed\r
+      (56:19) - Ferrari Undefeated\r
 
-      (19:21) - 𝕏 Timeline Reactions\r
+      (01:06:24) - Guillaume Verdon, founder of Extropic, discusses the company’s thermodynamic computing technology,
+      which uses probabilistic electronics to run generative AI workloads with far greater energy efficiency. He also
+      covers potential applications, government support for domestic chip manufacturing, AI safety and accelerationism,
+      and the challenges of building a deep-tech company while maintaining a prominent public voice.\r
 
-      (26:16) - eBay Settles\r
+      (01:19:16) - 𝕏 Timeline Reactions\r
 
-      (31:36) - Joe Weisenthal, co-host of Bloomberg’s *Odd Lots* podcast, discusses social media addiction, online
-      discourse, and the escalating AI race. He examines open-source models, massive infrastructure spending, monopoly
-      risks, and why AI may ultimately deliver meaningful benefits despite economic and social anxieties.\r
+      (01:20:36) - Lulu Meservey discusses how founders and CEOs can build lasting relevance through consistent,
+      authentic, and strategically focused communication rather than rage bait, viral stunts, or excessive media
+      appearances. Drawing on her communications expertise at Rostra, she argues that leaders should prioritize trust,
+      audience fit, principled messaging, and approaches that suit their individual personalities.\r
 
-      (01:08:22) - Jameson Detwiler discusses his background as a mobility entrepreneur and his role as co-founder and
-      CEO of CHIP, an electric low-speed utility vehicle startup. He explains CHIP’s customizable design, safety
-      features, affordability, and plan to introduce remote-controlled parking before transitioning to full autonomy.\r
+      (01:47:35) - Michael Kim is the founder of Cendana Capital, an institutional investor focused on pre-seed and
+      seed-stage venture funds. Michael discusses Cendana’s growth, its approach to identifying promising fund managers,
+      the importance of founder access and investment judgment, and lessons from both missed opportunities and
+      exceptionally successful investments.\r
 
-      (01:40:10) - Stanley Tang, co-founder and chief product officer of DoorDash, discusses the launch of DoorDash Air,
-      the company’s in-house drone delivery program. He explains how advances in AI, hardware, and operational
-      infrastructure are enabling autonomous deliveries, particularly in suburban areas, as part of DoorDash’s broader
-      multimodal delivery network.\r
+      (02:06:39) - Joon Sung discusses Simile’s $200 million fundraise and rapid growth as an applied AI lab building
+      models that predict human behavior. He explains how its simulations help companies test products and understand
+      customer preferences at scale while democratizing access to market insights.\r
 
-      (01:53:37) - Amjad Masad discusses Replit’s latest AI-powered design tools, open-model integrations, enterprise
-      growth, and emerging opportunities in game development, robotics, and industrial design. The Replit founder and
-      CEO also describes a future beyond prompting, where AI agents automate entire workflows, and encourages young
-      people to view AI as an empowering tool for creating businesses and new opportunities.\r
+      (02:17:35) - Karan Kunjur, co-founder and CEO of K2 Space, discusses the company’s $500 million funding round,
+      successful first satellite mission, and more than $1 billion in signed contracts. He explains K2’s vision of
+      building large, high-power satellites for commercial and national-security uses, including communications, orbital
+      computing, and advanced space infrastructure.\r
 
-      (02:10:18) - Adam Cohen discusses co-founding Weave, an AI prompt-routing company that helps engineering teams
-      reduce costs by selecting the most efficient model for each task. He highlights Weave’s $13.5 million fundraising
-      round, enterprise focus, potential savings of up to 80%, and plans to expand its San Francisco-based team.
+      (02:28:35) - Vlad Tenev, co-founder and CEO of Robinhood, discusses the company’s record growth, expanding suite
+      of financial products, and mission to broaden individual asset ownership. He also covers global markets, Robinhood
+      Social, product design, and using mathematical superintelligence to verify software and improve cybersecurity.
 
 
       TBPN is made possible by:
@@ -105,128 +113,5 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-30T18:35:41.752Z
-    transcript_job_id: 11e1704e-37fa-46b7-a782-486464311c15_22fdc15af37f4902ba224ee293b9fb94,33f50b22-fb00-46da-b938-8d41dc200fc8_500ec81f02124ea3bc620f6e509badbb,b79e2de1-5894-4f57-af96-3fbed5138d92_1572132beb054b5798429f56744d9adc,f375f397-6c0a-46fa-b144-e556019084d9_ebe2f954c4f24c60ad9c2270da28faf1,1d67f1c7-9f0c-483c-8736-693a1809c7db_9a24ac02bf2943aa97e74e7ecbef9a1e,58da8682-9da1-43bb-87de-77af0c5774d1_23ecd183e8764d78b2f31cb97fe13761,3d440b5b-180e-46ec-b4c3-697766371596_5aeed7835f574cf9a091c81949213590,1005a0f3-c807-4e6f-a01c-3ed4b03cefaa_3744d391719140799801de7f1084176f,39ed2de1-00a4-48b4-90c6-859706529170_5906ed67c7ef4286be3e9d40b7a7a5bb,3f43c1be-9f6e-4828-a7bb-3d0e3308be85_cca454032f0a4e21994c036c4d87f3b5
-    transcript_completed_at: 2026-07-30T18:44:17.923Z
-  - id: 6868b01e-176a-4218-99e0-2c3649ed995b
-    guid: 6868b01e-176a-4218-99e0-2c3649ed995b
-    title: Midjourney Medical, AI Talent Wars 2.0, Jake Paul Joins | Derek Thompson, Rene Haas, Robert Slaughter, Rob Reid,
-      Thais Castello Branco, David Senra, Jake Paul & Geoffrey Woo
-    duration: 13296
-    published: Thu, 18 Jun 2026 15:05:43 -0700
-    published_sort: "20260618"
-    first_seen_at: 2026-06-19T04:40:08.632Z
-    url: https://share.transistor.fm/s/6eb6780f
-    audio_url: https://media.transistor.fm/6eb6780f/2582ea90.mp3
-    image: https://img.transistorcdn.com/JKCXKMFC8DxrWx6hOFD_HdcDjLAqNP3rWp-35R-vubg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iYWQ5/N2FkMzQ2MGY4Zjg5/ZDczMGExMTA5NjEz/Y2MyMC5wbmc.jpg
-    transcript_url: https://share.transistor.fm/s/6eb6780f/transcription.txt
-    transcript_type: text/plain
-    summary: "(01:34) - Midjourney Medical\r
-
-      (25:50) - AI Talent Wars 2.0\r
-
-      (31:58) - Derek Thompson, co-author of *Abundance* and host of the *Plain English* podcast, discusses the
-      stagnation in chair design over millennia, noting that chairs have maintained a consistent form since ancient
-      times. He reflects on the challenges of implementing the \"abundance agenda\" from his book, highlighting mixed
-      results in political adoption and the need for a prominent champion to advance these ideas. Additionally, Thompson
-      explores the modern obsession with self-optimization, expressing concern that the focus on quantifiable health
-      metrics may overshadow the broader purpose of living a fulfilling life.\r
-
-      (01:00:57) - Rene Haas, CEO of Arm Holdings since February 2022, discusses the transformative impact of artificial
-      intelligence (AI) on the technology industry, likening current advancements to science fiction becoming reality.
-      He highlights AI's insatiable demand for computational resources, emphasizing the need for increased storage,
-      memory, and processing power. Haas also notes the widespread integration of AI across various sectors, including
-      legal and finance, and underscores the importance of scaling compute capabilities to address complex engineering
-      challenges.\r
-
-      (01:34:22) - Rob Slaughter, co-founder and CEO of Defense Unicorns, discusses the challenges of delivering modern
-      software to military assets and highlights his company's efforts to simplify this process through a comprehensive
-      tech stack. He emphasizes the evolving nature of warfare, noting the shift from large numbers of personnel
-      managing relatively few aircraft to a future where a small number of airmen oversee thousands of autonomous
-      systems, underscoring the critical need for rapid software updates and secure systems. Slaughter also praises the
-      Department of War's initiatives, such as hackathons, which foster collaboration between industry and military
-      personnel, enabling real-time feedback and innovative solutions to complex defense challenges.\r
-
-      (01:41:39) - Rob Reid is a venture capitalist and author who founded Listen.com, the company behind Rhapsody, the
-      first on-demand music streaming service. He discusses his early involvement in the internet boom, the challenges
-      of being a solo founder, and his transition into biosecurity, emphasizing the risks associated with synthetic
-      biology and the need for proactive measures to prevent potential bioterrorism.\r
-
-      (02:06:48) - Thais Castello is the founder of Taste Labs, a company specializing in AI and automation technology
-      to assist retailers and content creators in acquiring new customers. In the conversation, she discusses the
-      challenges of defining 'taste' in AI, emphasizing the importance of raising the quality bar to combat repetitive
-      and low-quality content, and highlights the necessity of building a diverse community of experts to map a wide
-      range of preferences.\r
-
-      (02:22:46) - David Senra is the creator and host of the David Senra podcast, one of the most popular business
-      podcasts in the world. Through in-depth studies of entrepreneurs like Steve Jobs, Estée Lauder, and Henry Ford, he
-      extracts the lessons, habits, and strategies behind building enduring companies and shares them with millions of
-      listeners.\r
-
-      (03:10:52) - Jake Paul & Geoffrey Woo. Jake Paul, an American influencer and professional boxer, discusses raising
-      an oversubscribed $100 million for his venture capital firm, Anti Fund, with lead investor Aquarian Holdings. He
-      highlights their barbell investment strategy, placing significant checks into growth-stage companies led by top
-      founders and supporting early-stage ventures from inception. Paul also emphasizes leveraging his extensive
-      experience in digital content creation to assist portfolio companies in enhancing their marketing strategies and
-      user engagement. Geoffrey Woo is the co-founder and CEO of Bedrock, a health technology company focused on
-      preventive care, diagnostics, and longevity. Previously the co-founder of HVMN, he is known for his work at the
-      intersection of human performance, metabolic health, and data-driven approaches to extending healthy lifespan.
-
-
-      TBPN is made possible by:
-
-
-      Ramp - https://ramp.com
-
-
-      Public - https://public.com
-
-
-      Cisco - https://www.cisco.com
-
-
-      Console - https://www.console.com
-
-
-      CrowdStrike - https://www.crowdstrike.com
-
-
-      Figma - https://www.figma.com
-
-
-      MongoDB - https://www.mongodb.com
-
-
-      NYSE - https://www.nyse.com
-
-
-      Railway - https://railway.com
-
-
-      Shopify - https://www.shopify.com
-
-
-      Codex - http://openAI.com/codex
-
-
-      Follow TBPN:
-
-
-      https://TBPN.com
-
-
-      https://x.com/tbpn
-
-
-      https://open.spotify.com/show/2L6WMqY3GUPCGBD0dX6p00?si=674252d53acf4231
-
-
-      https://podcasts.apple.com/us/podcast/tbpn/id1772360235
-
-
-      https://www.youtube.com/@TBPNLive"
-    status: audit_failed
+    status: needs_transcript
     priority: 1
