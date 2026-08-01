@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leopold 归来：AI 对冲基金爆仓、国防科技与无人机生态</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  font-size: 17px; line-height: 1.75; color: #1a1a2e;
+  background: #fafbfc; padding: 0 16px;
+}
+article { max-width: 720px; margin: 0 auto; padding: 48px 0 64px; }
+h1 { font-size: 28px; line-height: 1.35; margin-bottom: 8px; color: #111; }
+.meta { font-size: 14px; color: #888; margin-bottom: 40px; }
+.meta span { margin-right: 16px; }
+h2 { font-size: 22px; margin: 48px 0 16px; color: #1e1e1e; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 18px; margin: 32px 0 12px; color: #333; }
+p { margin-bottom: 16px; }
+blockquote {
+  margin: 24px 0; padding: 16px 20px;
+  border-left: 4px solid #1971c2; background: #f0f7ff;
+  font-style: italic; color: #333; border-radius: 0 8px 8px 0;
+}
+blockquote .attr { display: block; margin-top: 8px; font-size: 14px; font-style: normal; color: #888; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 20px 0; }
+.card { padding: 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+.card strong { display: block; margin-bottom: 4px; font-size: 15px; }
+.card-red { border-left: 4px solid #e03131; background: #fff5f5; }
+.card-blue { border-left: 4px solid #1971c2; background: #f0f7ff; }
+.card-green { border-left: 4px solid #2f9e44; background: #f0fdf4; }
+.card-purple { border-left: 4px solid #7b2d8e; background: #faf5ff; }
+.card-orange { border-left: 4px solid #e8590c; background: #fff9f0; }
+.card-yellow { border-left: 4px solid #f08c00; background: #fffdf0; }
+.quotes { margin: 24px 0; }
+.quote { padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 12px; font-style: italic; font-size: 15px; line-height: 1.6; }
+.quote .attr { display: block; margin-top: 6px; font-size: 13px; font-style: normal; }
+.q-blue { border-left: 4px solid #1971c2; background: #f0f7ff; }
+.q-green { border-left: 4px solid #2f9e44; background: #f0fdf4; }
+.q-red { border-left: 4px solid #e03131; background: #fff5f5; }
+.q-purple { border-left: 4px solid #7b2d8e; background: #faf5ff; }
+.q-orange { border-left: 4px solid #e8590c; background: #fff9f0; }
+.q-yellow { border-left: 4px solid #f08c00; background: #fffdf0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+.num-card { padding: 20px 16px; border-radius: 8px; text-align: center; }
+.num-card .num { font-size: 36px; font-weight: 700; margin: 8px 0; }
+.num-card .label { font-size: 13px; opacity: 0.7; }
+footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #e0e0e0; font-size: 14px; color: #999; }
+footer a { color: #1971c2; }
+a { color: #1971c2; text-decoration: none; }
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article>
+
+<h1>Leopold 归来：AI 对冲基金爆仓、国防科技与无人机生态</h1>
+<div class="meta">
+  <span>TBPN</span><span>2026年7月31日</span><span>嘉宾：Richard Craib · Trae Stephens · Blake Resnick</span>
+</div>
+
+<p>2026年7月的最后一天，TBPN 播客以 Leopold Aschenbrenner 的 Situational Awareness 基金遭遇史上最大回撤为引子，串联起一场横跨对冲基金数学、国防科技制造和无人机公共安全三大领域的深度对话。三位嘉宾——Numerai 创始人 Richard Craib、Anduril 联合创始人 Trae Stephens 和 BRINC 创始人 Blake Resnick——从各自的专业视角，为听众呈现了 AI 时代投资与硬科技创业的真实图景。</p>
+
+<h2>为什么这期值得关注</h2>
+
+<div class="cards">
+  <div class="card card-red">
+    <strong>Leopold 爆仓全貌</strong>
+    SA 基金月内回撤 67%，但 YTD 仍为 +80%。Citadel 接手公开股权组合，基金未清盘——"为再战一天而活"。
+  </div>
+  <div class="card card-blue">
+    <strong>Alpha ≠ Beta 的数学课</strong>
+    Richard Craib 用计算器和破产风险公式拆解：大多数"天才投资"不过是杠杆乘风险溢价。
+  </div>
+  <div class="card card-green">
+    <strong>国防科技的拐点</strong>
+    Fury 战斗机从空地到下线仅 18 个月。采购路径从数年前的"只有两家公司"拓展为十余个合同通道。
+  </div>
+  <div class="card card-purple">
+    <strong>VC 的博弈与纪律</strong>
+    在一个种子轮动辄 10 亿美元的时代，Founders Fund 为什么坚持每轮 2 倍 markup 的稳步策略。
+  </div>
+  <div class="card card-orange">
+    <strong>无人机 911 响应</strong>
+    8 万多个警消站点中渗透率仅 1%。BRINC 从 Lemur 2 到 Guardian 的产品矩阵和 Motorola 的战略合作逻辑。
+  </div>
+  <div class="card card-yellow">
+    <strong>万亿公司单日 10% 波动</strong>
+    微软单日增加 4500 亿美元市值，苹果盘中破 5 万亿后跌 10%。AI 资本支出正制造前所未有的市场波动。
+  </div>
+</div>
+
+<h2>一、Situational Awareness 的回撤与 Citadel 接盘</h2>
+
+<p>2026 年 7 月 31 日，Leopold Aschenbrenner 向 Situational Awareness LP 的投资者发出一封信。这封信迅速在金融圈和科技圈传播——不仅因为其内容的戏剧性，更因其写作质量被主持人称为"可能是又一份十亿美元级别的 PDF"。</p>
+
+<p>信中的核心事实：基金在 7 月份经历了"重大回撤"，AI 相关股票大面积下跌，对冲基金的长短仓利差"暴力逆转"。更关键的是，市场上开始出现针对 SA 公开持仓的针对性做空——"脆弱引发更多脆弱"，Leopold 在信中直接用了"类似银行挤兑"这个措辞。</p>
+
+<p>周三至周四凌晨，SA 采取了一系列果断行动：将公开市场股权组合通过大宗交易整体出售给 Citadel，清除了全部杠杆和融资敞口。所有空头头寸被平仓，组合融资依赖被移除。与此同时，由 Greenoaks 和 Sequoia 牵头的财团出价约 35 亿美元收购 SA 持有的 Anthropic 股份——但 SA 在周四早上拒绝了这笔交易，选择保留其最核心的私募仓位。</p>
+
+<blockquote>
+"We let you down this month. We came closer to permanent capital impairment than is acceptable to us."
+<span class="attr">— Leopold Aschenbrenner，致 SA LP 的信</span>
+</blockquote>
+
+<p>结果：基金未清盘、未清算、未转型为纯私募基金。公开组合改为全额自有资金持有（无保证金、无流动性风险），保留 Anthropic、MatX 和 Fluidstack 等核心私募仓位。月度净回报为 -67%，但年初至今仍保持 +80%。</p>
+
+<p>从不到两年前以 2.5 亿美元起步，到巅峰时约 450 亿美元的资产管理规模，Leopold 的崛起和这次回撤都堪称极端。但主持人强调了一个关键点："如果他能在 2024 年预测对 AI 趋势，并且基于 Amazon 的最新财报来看他今天仍然是对的——那么问题不在于他的方向判断，而在于组合构建和风险管理。"</p>
+
+<blockquote>
+"Our fund must always be structured such that we can take a loss and fight another day."
+<span class="attr">— Leopold Aschenbrenner</span>
+</blockquote>
+
+<h2>二、Richard Craib：Alpha 是唯一无法自己买到的东西</h2>
+
+<p>Richard Craib 是硅谷最被低估的对冲基金经理之一。他的 Numerai 基金自 2015 年在旧金山成立以来，以一种反直觉的方式运作：用 AI 模型交易数千只股票，同时对冲掉数千种已知风险因子——市场风险、动量风险、行业风险、动量乘贝塔风险……目标是提取"纯 Alpha"。</p>
+
+<p>Richard 对 Leopold 事件的分析是一堂微型金融数学课。首先，他不认为 SA 做了什么"道德错误"——"我认为存在这类基金的空间。我自己就投过类似策略的基金（Polychain）。许多投资者希望在边际 5 亿美元配置上获得高回报。"</p>
+
+<p>但关键问题是：回报的驱动力是 Alpha 还是 Beta？Richard 用一个个人例子来说明：他在 7 月 31 日当天买了一些 Amazon 看涨期权，当天涨了约 300%。"这能说明我是天才投资者吗？不能。这只是一次赌注赢了，而且回报恰好匹配了承担的风险。在 Numerai，没人会谈这种无聊的事。"</p>
+
+<p>这引出了他最核心的观点：</p>
+
+<blockquote>
+"Alpha is the only thing you can't just buy yourself."
+<span class="attr">— Richard Craib</span>
+</blockquote>
+
+<p>任何 LP 都可以自己去买 Anthropic 股票、做多 MicroStrategy——这些是 Beta，是市场风险溢价。如果你对冲掉所有已知风险因子后还有正收益，那才是真正的超额能力。而 Beta 驱动的高回报天然伴随着高波动——你不能在半年内获得 400% 的回报而不承受相应的波动率。</p>
+
+<p>关于杠杆的讨论揭示了一个被普遍误解的点：问题不是杠杆本身。Numerai 使用的杠杆实际上比 SA 更高——但由于其波动率仅为 SA 的约十分之一，实际风险（波动率²）低了两个数量级。Richard 总结道："风险 = 波动率²。如果 SA 的波动率是 150%，我们的是 10%，这是两个完全不同的世界。"</p>
+
+<p>对于"最优爆仓次数是 1 次"的讨论，Richard 部分同意。他指出，投资管理这一行，大约 50% 的交易日都在亏钱。关键是控制波动率在一个"可生存"的水平。他的终极建议近乎冷酷：</p>
+
+<blockquote>
+"Don't do that hero worship thing. Pick up, take out your pocket calculator and calculate the risk of ruin."
+<span class="attr">— Richard Craib</span>
+</blockquote>
+
+<p>在 AI 比所有人都更聪明的时代，相信某一个"超级天才投资者"的叙事已经过时。Warren Buffett 的 5,000,000% 回报来自 30 年持续积累——"你只需要每年获得 9% 的 Alpha，加到 S&P 上，就能成为下一个 Buffett。而那些冒太大风险的人，会一遍又一遍地赔光。"</p>
+
+<h2>三、Trae Stephens：国防科技的新时代</h2>
+
+<p>Trae Stephens 拥有一个罕见的视角：他既是 Palantir 的早期员工，见证了国防科技从"只有两家公司"的时期；又是 Anduril 的联合创始人，亲手将其从零打造为美国最重要的国防科技公司之一；同时还是 Founders Fund 的普通合伙人，管理着可能是风投史上最伟大的基金之一。</p>
+
+<h3>Fury 战斗机与 Arsenal One</h3>
+
+<p>本周最大的新闻：Anduril 在俄亥俄州 Columbus 的 Arsenal One 工厂，下线了第一架 Fury 协同战斗机。从 2025 年 1 月为土地剪彩，到 2026 年 5 月工厂投产，再到本周第一架战斗机下线——整个过程仅约 18 个月。</p>
+
+<p>这个速度的关键因素包括：利用了一栋 80 万平方英尺的现有混凝土外壳建筑（非完全从零开始）；俄亥俄州经济发展机构 Jobs Ohio 的紧密合作确保了公用设施和资源到位；以及一个关键策略——"工厂在建的第一天就开始招人"，Fury 生产线团队提前数月从加州总部开始培训。</p>
+
+<h3>Thunder 自主攻击直升机</h3>
+
+<p>上周在英国 Farnborough 航展发布的 Thunder，是 Anduril 应对无人机战场现实的答案。Trae 解释说，无人机的铺开已经将近地战场变成了一个"机器人杀戮区"——载人直升机的机组人员处于极大的风险之中。Thunder 的设计理念是让一架 Apache 飞行员像《安德的游戏》中的 Ender 一样，指挥一群自主无人机在前方承担风险。</p>
+
+<blockquote>
+"The proliferation of drones has turned the near surface fight into like a robotic kill zone."
+<span class="attr">— Trae Stephens</span>
+</blockquote>
+
+<p>关于产品谱系的扩展，Trae 确认了更大平台的可能性——"如果你能让自主系统完成空中加油等后勤任务，这在理论上能降低风险。"但关键在于权衡：当资产大到一定程度（如航母上有 5000 名军人、造价 200 亿美元以上），它就不再是可消耗的了。</p>
+
+<h3>国防采购路径的十年变迁</h3>
+
+<p>Trae 描述了从 Palantir 时代到现在国防采购体系的巨变。2005-2015 年间，只有 Palantir 和 SpaceX 两家公司在与政府做硬科技生意，且两家公司都不得不通过 Title 10 USC 2377（商业偏好条款）起诉政府来获得合同。传统承包商全力阻挠新进入者。</p>
+
+<p>而现在，可选路径大幅增加：国防创新单元（DIU）的合同通道、AFWERX/SOFWORKS/陆军未来司令部的专项计划、StratFI 匹配资金（数千万美元级）、以及从原型到量产的"桥接资金"。In-Q-Tel（CIA 的风险投资机构）早在 Palantir 时代就存在的工作项目模式，也延续到了 Anduril 的起步阶段。</p>
+
+<p>但核心瓶颈仍未解决：这些资金几乎全部来自研发预算而非生产预算。"美国政府有一种'百花齐放'的策略——他们总是乐意向数百或数千家公司发放几百万美元。但从数千万研发资金到数十亿美元武器采购项目，这个肌肉还需要锻炼。"</p>
+
+<h2>四、VC 的博弈：在一个过热的市场里保持纪律</h2>
+
+<p>Trae 引用 Founders Fund 前合伙人 Brian Singerman 的话作为投资哲学的核心：</p>
+
+<blockquote>
+"Venture capital is a micro game, not a macro game. What matters is have you invested in the generational companies in every kind of era."
+<span class="attr">— Brian Singerman, Founders Fund</span>
+</blockquote>
+
+<p>在公开市场动荡（SpaceX 股价回到 IPO 价格附近、锁定期尚未结束）的背景下，Trae 希望看到的不是对宏观的担忧，而是"私募市场出现一些重置——因为现在 VC 的估值完全没有道理。"</p>
+
+<p>关于天价种子轮的讨论触及了一个根本性的矛盾。一方面，在硬科技领域——无论是 SpaceX、Anduril 还是如今的 AI 公司——巨额的资本支出是必要的，潜在回报也可能更大。但另一方面，"10 万亿美元级别的 IPO 是否会在未来五年内出现"是一个开放的问题。如果答案是否定的，那么以 10 亿美元估值做种子轮就等于"把钱借给了时间"。</p>
+
+<p>Anduril 的做法是每轮融资都选择约 2 倍的 markup，而非追求理论上的最高估值。"能每年对员工和投资者说'我们刚刚又涨了一倍'——这种感觉更好，让我们与公司实际业绩保持绑定，而不是赌一个遥远的 exit。"</p>
+
+<p>对于"是否应该并购一只体育队"的问题，Trae 的回答是一个意味深长的"Maybe."——Founders Fund 最近刚从 OpenAI 引进了前 Palantir 同事 Ryan Bienko 作为合伙人，团队正在加强。</p>
+
+<h2>五、Blake Resnick：把无人机充电舱放在每一个警消站屋顶上</h2>
+
+<p>BRINC 刚刚完成的 1.25 亿美元融资，其目标可以用一句话概括——"把无人机充电舱放在美国每一个警察局和消防站的屋顶上。"</p>
+
+<p>Blake Resnick 通过视频连线带领主持人参观了 BRINC 位于总部的三层设施：三楼是跨学科工程团队（机械、电气、嵌入式软件、自主飞行、航空工程）；二楼是研发空间和产品陈列；一楼是无人机装配线和充电舱生产线——"信不信由你，这可能是美国最大的无人机工厂之一。"</p>
+
+<h3>产品矩阵</h3>
+
+<p>BRINC 的产品线从小到大覆盖了三个明确的场景：</p>
+
+<p><strong>Lemur 2（最小型）</strong>：SWAT 专用，用于在危险环境中获取视觉和听觉信息。"美国约 20% 的 SWAT 队伍正在使用它来降低警员交火概率，在最高风险的出警任务中保护所有人的安全。"</p>
+
+<p><strong>Responder（中型）</strong>：世界第一款专为 911 响应设计的无人机。部署在充电舱中，可自动响应报警。已有数百个警察和消防部门在使用。</p>
+
+<p><strong>Guardian（最大型）</strong>：设计目标是替代警用直升机。续航 1 小时以上，极速超过 60 英里/小时，集成 Starlink 实现全球无限制飞行。搭载双 1280px 热成像仪（目前生产中的无人机热成像标准仅为 640px）、双 4K 可见光摄像头加 640 倍总变焦、以及一个 130dB 的微型 LRAD 扬声器系统——"比警车警笛还响"。</p>
+
+<p>Guardian 的充电舱设计尤为精妙：着陆后 90 秒内，机器人自动完成电池物理更换，无需等待充电。同一机器人系统还能在不同任务间装载不同载荷——如果上一个呼叫是心脏病发作，就装载除颤器；下一个呼叫是有人溺水，就装载漂浮装置。Guardian 每天可飞行超过 23.5 小时，可用率超 97%。</p>
+
+<h3>为什么 Motorola 是战略级伙伴</h3>
+
+<p>大多数人对 Motorola 的印象停留在 Razr V3 翻盖手机，但 Motorola Solutions 的绝大多数业务是向警察和消防部门销售对讲机和公共安全软件——它是这个行业全球最大的公司。</p>
+
+<p>Blake 解释了合作的三个层次：第一，商业层面——Motorola 与 BRINC 的每一个潜在客户都有预先存在的商业关系，可以直接请求介绍并借助现有合同框架完成采购；第二，产品层面——警察按下对讲机紧急按钮可自动触发无人机起飞，BRINC 可以从 Motorola 的 911 电话接警软件中获取坐标来规划飞行路径；第三，产品生态层面——Motorola 还拥有 ALPR（自动车牌识别）业务和计算机辅助调度（CAD）业务，大多数美国大型警局都使用 Motorola CAD。</p>
+
+<h3>自主性：从 911 呼叫到无人机自动出勤</h3>
+
+<p>BRINC 的自主流程是一个优雅的多步骤管道：接到 911 呼叫后，系统从 CAD 软件获取 GPS 坐标；查找最近且电量充足的无人机；规划飞行路径（考虑载人空域、禁飞区、高度限制）；充电舱开门、无人机起飞；到达后执行预设行为（环绕火灾建筑、锁定特定坐标、或交由操作员手动控制）。</p>
+
+<p>无人机还配备红蓝警灯和警笛、自动追踪功能（操作员点击一个人或一辆车即可自动跟随）、以及障碍物规避系统来应对路径上的意外情况。关于汽油动力的讨论被 Blake 巧妙地转向了另一个方向——"我们的答案不是汽油无人机，而是更大的电动平台（VTOL 固定翼，可停留 6-8 小时）加上自动换电基础设施。"</p>
+
+<h3>从 1% 到 50% 的渗透之路</h3>
+
+<p>市场数据展示了巨大的增长空间：美国有约 2 万个警察局、3 万个消防局，共计 8 万多个警消站点。Blake 估计目前仅有"四五百个"建筑部署了 911 响应无人机——渗透率约 1%。BRINC 的目标是在未来几年将这个数字从 1% 推到 10%、30%、50%。</p>
+
+<p>销售模式也很务实：BRINC 将美国划分为数十个销售区域，每个区域设配额制的客户经理，辅以专门的演示团队和销售工程支持。主要销售对象是警察局长、消防局长、市长和市议会议员。NIST 已经建立了标准化的无人机能力基准测试。</p>
+
+<h2>六、无人机供应链：创业者的新大陆</h2>
+
+<p>当被问及"如果有人在美国创办一家公司，深耕无人机供应链，你会希望他们做什么？"时，Blake 的答案迅速而具体。云台相机荷载排名第一——"美国本土制造的高分辨率热成像云台相机、配备好的变焦光学器件和三轴稳定系统，而且单价不能太离谱——连 Anduril 都在外购这类组件。"</p>
+
+<p>其他机会包括：高能量密度电池（永远是无人机制造商的需求）、外转子无刷电机、以及 Mesh 网络无线电 PCB——"整个供应链，几乎做什么都可以。"</p>
+
+<p>Trae 从 Anduril 的视角补充了更多瓶颈：稀土等天然资源的开采权和采购协议（Anduril 正与国防部合作确保这些资源）、以及高度专业化的劳动力短缺（这是为什么他们提前数月从加州总部开始培训团队）。</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes">
+  <div class="quote q-blue">
+    "I take full responsibility for these events."
+    <span class="attr">— Leopold Aschenbrenner。信中单独一段，无任何辩解或推诿。</span>
+  </div>
+  <div class="quote q-green">
+    "Alpha is the only thing you can't just buy yourself."
+    <span class="attr">— Richard Craib。LP 可以自己买 Anthropic 股票，但纯 Alpha 不能。</span>
+  </div>
+  <div class="quote q-purple">
+    "Venture capital is a micro game, not a macro game."
+    <span class="attr">— Brian Singerman，由 Trae Stephens 引用。</span>
+  </div>
+  <div class="quote q-red">
+    "The proliferation of drones has turned the near surface fight into like a robotic kill zone."
+    <span class="attr">— Trae Stephens，解释自主系统的必要性。</span>
+  </div>
+  <div class="quote q-orange">
+    "One percent of the buildings that eventually are going to have this capability currently do."
+    <span class="attr">— Blake Resnick，关于无人机 911 响应市场的当前渗透率。</span>
+  </div>
+  <div class="quote q-yellow">
+    "Don't do that hero worship thing. Pick up, take out your pocket calculator and calculate the risk of ruin."
+    <span class="attr">— Richard Craib。在 AI 时代，相信某一个"超级天才"的叙事已经过时。</span>
+  </div>
+</div>
+
+<footer>
+  <p>本文基于 <a href="https://share.transistor.fm/s/975a6b11">TBPN 2026年7月31日节目</a> 整理。嘉宾：Richard Craib（Numerai 创始人）、Trae Stephens（Anduril 联合创始人 / Founders Fund GP）、Blake Resnick（BRINC 创始人兼 CEO）。</p>
+  <p>PodDeck 生成 · <a href="../../">返回首页</a></p>
+</footer>
+
+</article>
+</body>
+</html>

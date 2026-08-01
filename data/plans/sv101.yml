@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-08-01T04:13:40.573Z
+refreshed_at: 2026-08-01T18:22:35.018Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -150,5 +150,9 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: Keith Zhai and 王铁震.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-01T18:22:36.258Z
+    transcript_job_id: 9a5fdbb5-85ca-4ee4-ad5b-ea4fc983f140_9d0572dca5ba45e7be3c34c037083874,b4ff532f-adb8-4a75-9948-e57fde12afdb_99ae09217aa940e4b9efa9dcac0548db,c76ed7d6-8a83-4090-8efd-8799f901ffc4_ecd4e080a23a47208a26d05263bc5466,42c4d666-97f1-4494-a736-ab4069506e58_a97c9f7baffb403c8ac9b81a1ff4ca81,4c1da70c-8ab4-4196-9e72-8baa2e5a6cee_a2d3f03580f24fa79a162985a72195fa
+    transcript_completed_at: 2026-08-01T18:25:54.147Z

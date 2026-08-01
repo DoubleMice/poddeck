@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-08-01T04:13:40.523Z
+refreshed_at: 2026-08-01T18:22:34.969Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 68
-done: 0
+done: 1
 pending: 0
-needs_transcript: 67
+needs_transcript: 66
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
@@ -89,8 +89,12 @@ episodes:
       🏦 57:39 Why Mert calls Canton no more private than trusting JPMorgan
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-01T18:25:54.357Z
+    transcript_job_id: f71dddc0-fd6f-4b02-b517-1d8696958a2a_54cddb99554a40f6bf61084906efbcf8,33d914ba-fe23-4240-921f-6daf90d65b0f_bae8fbc0bf0145afb9a3161b314386ce,e456eca8-f598-4e8a-93f9-f0dfc9295108_2825840cf2234577a445364f81f0ad84,ab11ef67-3982-4160-88e5-f964750b399e_8e709d881c8842a9ba8bbfc19fe95729,e723bf67-04c0-46ab-a721-28e420f266ae_fe6c5e8a91ed428dbfb7d62180c6fb95
+    transcript_completed_at: 2026-08-01T18:28:53.778Z
   - id: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     guid: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     title: Kristin Smith on Why the Clarity Act Comes Down to a Memecoin
@@ -3313,8 +3317,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5076,8 +5079,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

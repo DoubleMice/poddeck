@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zcash、Ethereum、Aztec、Canton：谁将赢得链上隐私竞赛？</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1e1e1e;
+  background: #fafafa;
+}
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+  background: #fff;
+}
+h1 { font-size: 1.8em; margin-bottom: 6px; line-height: 1.35; color: #111; }
+h2 { font-size: 1.3em; margin-top: 40px; margin-bottom: 12px; line-height: 1.4; color: #222; }
+h3 { font-size: 1.1em; margin-top: 28px; margin-bottom: 8px; color: #333; }
+p { margin-bottom: 16px; }
+.meta { color: #666; font-size: 0.9em; margin: 4px 0 32px 0; }
+.meta span { margin-right: 16px; }
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0 32px;
+}
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+.card h3 { font-size: 0.95em; margin-top: 0; margin-bottom: 6px; }
+.card-b { border-left: 3px solid #1971c2; background: #e7f5ff; }
+.card-g { border-left: 3px solid #2f9e44; background: #ebfbee; }
+.card-o { border-left: 3px solid #e8590c; background: #fff4e6; }
+.card-p { border-left: 3px solid #862e9c; background: #f8f0fc; }
+.card-r { border-left: 3px solid #e03131; background: #ffe3e3; }
+.card-y { border-left: 3px solid #f08c00; background: #fff9db; }
+blockquote {
+  margin: 24px 0;
+  padding: 18px 20px;
+  border-left: 3px solid #1971c2;
+  background: #f1f7ff;
+  font-style: italic;
+  color: #333;
+  line-height: 1.7;
+}
+blockquote footer {
+  margin-top: 8px;
+  font-style: normal;
+  font-size: 0.8em;
+  color: #888;
+}
+blockquote.green { border-left-color: #2f9e44; background: #f3fdf5; }
+blockquote.red { border-left-color: #e03131; background: #fff5f5; }
+blockquote.purple { border-left-color: #862e9c; background: #fdf8ff; }
+.quotes-section { margin: 40px 0; }
+.quotes-section h2 { text-align: center; }
+.quotes-section .subtitle { text-align: center; color: #888; font-size: 0.85em; margin-bottom: 20px; }
+.source-link {
+  text-align: center;
+  margin-top: 48px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.85em;
+  color: #888;
+}
+.source-link a { color: #1971c2; text-decoration: none; }
+.source-link a:hover { text-decoration: underline; }
+.note { font-size: 0.85em; color: #888; }
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  article { padding: 28px 16px 40px; }
+  .card-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 1.4em; }
+}
+</style>
+</head>
+<body>
+
+<article>
+
+<h1>Zcash、Ethereum、Aztec、Canton：谁将赢得链上隐私竞赛？</h1>
+
+<div class="meta">
+  <span>嘉宾：Joe Andrews (Aztec Labs) · Jared Hope (Logos) · Mert Mumtaz (Helios)</span><br>
+  <span>主持：Laura Shin</span>
+  <span>日期：2026年7月</span>
+</div>
+
+<p>
+在加密行业，有一句话最近被频繁提起：隐私是最后的前沿。Zcash 从 Top 100 进入 Top 10，Monero 获得支撑，Ethereum 发布了隐私路线图，Canton 链正在吸引机构客户——链上隐私似乎正在经历一场集体觉醒。但这背后存在着深刻的分歧：我们究竟在讨论什么样的隐私？是密码学保障的、无需信任的隐私？还是复制 Web2 模式的、依赖中间人声誉的隐私？
+</p>
+
+<p>
+Laura Shin 在 Unchained 播客中邀请了三位隐私赛道最前沿的建设者——Aztec Labs CEO Joe Andrews、Logos 创始人 Jared Hope 和 Helios CEO Mert Mumtaz——进行了一场激烈而富有洞见的圆桌对谈。这三位嘉宾分别从不同的起点出发，但最终指向同一个方向：链上隐私是加密行业从"信任"走向"验证"的必经之路。
+</p>
+
+<div class="card-grid">
+  <div class="card card-b">
+    <h3>隐私是加密行业最后的 PVE</h3>
+    Zcash 从 Top 100 进入 Top 10，隐私赛道获得前所未有的关注。这不是零和博弈，而是共识基础设施升级。
+  </div>
+  <div class="card card-g">
+    <h3>机构入场的前提条件</h3>
+    金融机构因为运营安全、监管和法律原因，在完全透明的链上无法开展真正的业务。隐私是金融规模化的先决条件。
+  </div>
+  <div class="card card-o">
+    <h3>ZK 技术成熟到可以实战</h3>
+    零知识证明可以在消费者设备上完成执行，AI 让形式化验证变得可规模化，链上隐私从理论变为工程现实。
+  </div>
+  <div class="card card-p">
+    <h3>两种隐私路线的分化</h3>
+    密码学隐私（ZK 保证）与中间人隐私（信任 sequencer 或机构）正在争夺话语权。选择哪条路，决定了加密的未来。
+  </div>
+  <div class="card card-r">
+    <h3>Tornado Cash 的阴影</h3>
+    43.7% 的区块中继正在自我审查。匿名通信协议成为保护验证者和用户的关键基础设施。
+  </div>
+  <div class="card card-y">
+    <h3>AI + 形式化验证重塑安全</h3>
+    Zcash 的 Ironwood 升级已实现"不可检测的伪造漏洞在数学上不可能"，AI 驱动的安全审计正在改写隐私系统的风险模型。
+  </div>
+</div>
+
+<h2>三位嘉宾，三种角度</h2>
+
+<p>
+Jared Hope 带着一个从 90 年代密码朋克运动传承下来的框架进入这场讨论。他在 BBS 和盗版文化中成长，在银行工作过，亲历了赛博无政府主义的兴起。但他对隐私的理解远不止于公民自由——他已经发展出了一套完整的<strong>交易成本经济学</strong>分析框架。
+</p>
+
+<p>
+Mert Mumtaz 的视角更为直接：Zcash 是 Bitcoin 未完成的使命的延续。他同时兼有两个关注——将隐私视为货币的重要属性（让加密货币真正像现金一样可互换），以及将隐私视为机构上链的扩容技术（没有隐私，大量经济活动"物理上不能"在链上发生）。他在 Solana 上构建的 Helios 协议正是为了填补后一个空白。
+</p>
+
+<p>
+Joe Andrews 从 2017 年就开始试图在 Ethereum 上做银行级贷款，却很快发现了一个根本性矛盾：机构需要至少和它们在 Web2 银行中同等水平的隐私保障，而 Ethereum 完全不提供。于是他带领 Aztec 团队花了八年时间，从底层 ZK 基础设施开始构建，最终形成了 Aztec L2——一个在以太坊上的通用隐私执行环境。
+</p>
+
+<h2>区块链到底在卖什么？</h2>
+
+<p>
+Jared 抛出了一个极具穿透力的问题：如果说区块链只是一个卖"区块空间"的商品，那它和安全可靠的云服务器有什么区别？真正的答案是：区块链在卖<strong>可信承诺</strong>（Credible Commitments）——一种让承诺无法被单方面撤回的机制。
+</p>
+
+<p>
+他区分了两种承诺形式。第一种是<strong>激励性承诺</strong>："相信我，我不会跑路。"——这正是 CEX、DeFi 协议 rug pull 和各种骗局背后的逻辑，也是加密行业声誉问题的根源。第二种是<strong>命令性承诺</strong>：用密码学、博弈论、机制设计和去中心化构造的承诺，任何一方都无法单方面撤销。
+</p>
+
+<p>
+为了解释命令性承诺，Jared 引用了一个中世纪的比喻：国王之间签订条约时，会把长子送到对方宫廷作为人质——这就是威廉姆森所说的"丑公主"模型。对父亲来说，"丑公主"具有很高的价值；对扣押方来说，也许不那么高。但如果对方违约，"丑公主"就会被处决。区块链正是通过类似的方式创造了无法撤回的承诺机制。
+</p>
+
+<p>
+但区块链只覆盖了交易生命周期的一个片段。一笔交易实际上包含七个步骤——发现对手方、沟通协商、签约、执行/结算、监督履约、纠纷解决、后续关系延续——而区块链目前只做了第四步（结算）和第五到七步的一部分。其余环节的信息暴露在链上，成为外部行为者干预的敞口。Jared 的框架指出，外部行为者干预交易由三个因素决定：强制能力（难以改变）、逃脱惩罚的可能性（依赖法律体系）和交易信息。<strong>只有信息是可控的</strong>。如果能将信息降到零，干预能力也随之归零——这就是隐私之所以是"操作杠杆"的原因。
+</p>
+
+<h2>Zcash 与 Bitcoin 的未竟之业</h2>
+
+<p>
+Mert Mumtaz 提出了一个引人深思的问题：为什么大众文化中 Bitcoin 总是和黑市交易联系在一起，而在现实中 Bitcoin 比现金更容易追溯？影视作品如《黑名单》中，犯罪分子索要 Bitcoin 换赎金——"每次看到这种场景我都在想，你在干嘛？这比现金更容易被追查。"这种文化误解背后是一段被忽略的技术史。
+</p>
+
+<p>
+Bitcoin 最早的贡献者之一 Hal Finney 在生前一直呼吁为 Bitcoin 添加匿名性。Satoshi 本人在 Bitcoin 早期论坛上也曾写道：如果能用 ZK 实现隐私，"这将是一种更好、更高效的 Bitcoin 实现，但我不知道怎么解决双花问题。"当时 ZK Snark 还远未达到生产级——Zcash 甚至不存在。而现在，这项技术已经成熟。
+</p>
+
+<p>
+Mert 将 Zcash 的双重使命总结为两点：货币使命（提供 Bitcoin 缺失的可互换性）和金融规模化使命（隐私作为扩容技术）。前者关乎货币的基本属性——如果一枚硬币携带"历史记录"，它在某些场景下就可能被拒绝使用。加拿大卡车司机抗议事件就是一个例子：Bitcoin 地址被标记，持有者无法自由使用自己的资产。而现金没有这个问题——五美元纸币不携带它去过哪里的信息。后者关乎市场空间：对于日常用户来说，隐私也许不是刚需；但对于金融机构来说，"他们物理上不能"在没有隐私的情况下在链上开展真正的业务。
+</p>
+
+<p>
+Joe Andrews 认同数字黄金的方向："财富净值这种东西，人们总是很敏感的。没有人会在这个节目上说自己的身家有多少。<strong>隐私和净值一直是一体两面</strong>。"他认为把 Zcash 作为支付工具存在用户体验上的摩擦——每次在真实世界中使用，它都要与当地法定货币竞争。但作为储值资产，"让它自然成为一个更强大的数字黄金"。
+</p>
+
+<h2>Aztec：八年从零构建隐私基础设施</h2>
+
+<p>
+Joe Andrews 回顾 Aztec 的创立初衷："我们是 2017、2018 年成立的，目标是在 Ethereum 上做银行级贷款。"但团队很快撞上了一堵墙：以太坊缺少任何形式的隐私保护。机构在链下世界通过银行和中间人至少享有交易对手方级别的隐私，而在公开链上连这种基本保障都没有。
+</p>
+
+<p>
+这不是一个可以绕过去的问题，而是一个根本性的技术缺口。Joe 和他的团队选择了一条当时没有人走的路——从头开始构建零知识证明技术的底层基础设施。八年之后，这个决定正在获得回报：Aztec v5 网络已经在 2026 年 7 月上线，一个通用的隐私执行环境在以太坊生态中开始运行。
+</p>
+
+<p>
+Joe 反复强调一个道德维度的观点——这不仅仅是一个商业机会。"你看看当前的公开区块链——我们有道德义务不让人使用它们。这对大多数普通人来说，是比他们在日常生活中使用的钱<strong>更糟糕</strong>的货币形式。我们至少有义务提供和银行账户同等水平的隐私。而且，有了 ZK 和其他工具，我们可以做得比银行好得多。"
+</p>
+
+<h2>隐私不是秘密，是选择权</h2>
+
+<p>
+Mert 引用了 Eric Hughes《密码朋克宣言》的第一句话来界定这场讨论的核心定义："隐私不是秘密。隐私是选择性披露自己的能力。"你的思想默认是私密的——你可以选择通过社交媒体、写书或演讲来公开它们。你的照片、你的文件——在生活的绝大多数事情上，你都有<strong>选择权</strong>。但在加密世界，尤其是在 Bitcoin 上，"你物理上<strong>没有</strong>这个选择权。"
+</p>
+
+<p>
+Joe 在这场讨论开始时划出了一条关键的界限：链上隐私有两条完全不同的路径。第一条是中间人隐私——许可制区块链、非全节点共识、通过 sequencer 的信誉来保障隐私。这是 Web2 模式在加密世界的复制，Joe 认为它"没那么有趣"。第二条是密码学隐私——ZK 证明、本地设备执行程序、链上仅记录加密状态、数学上可验证。三位嘉宾毫无保留地站在了第二条路径上。
+</p>
+
+<p>
+关于谁从隐私中受益，三位嘉宾的答案高度一致：<strong>所有人</strong>。Jared 的分析提供了最具挑战性的视角：KYC/AML 的合规成本表面上由银行承担，但最终通过更高费用向下传递到普通消费者。而真正能够规避这些监管的，是拥有政治和金融资源的精英阶层。正如密码朋克的格言所说："弱者的隐私，强者的透明。"公开机构应当透明运作，而普通人应当有选择性披露自己的权利。
+</p>
+
+<h2>Orchard 漏洞与 Ironwood：一个安全范式的拐点</h2>
+
+<p>
+2025 年底发现的一个 Zcash Orchard 隐私池漏洞，从根本上改变了人们对隐私系统安全性的理解。Orchard 池中存在一个锻造漏洞——攻击者理论上可以在这个池内无限制造假币——而且这个漏洞存在了四年，没有人发现。好消息是，所有可观测的链上指标（池内活动趋势、价格走势、公告修复的时间窗口）都指向一个结论：没有人实际利用了这个漏洞。
+</p>
+
+<p>
+但 Zcash 社区没有止步于"好像没出事"。他们发布了 Ironwood 升级——一个全新的隐私池，具备三个关键特征：<strong>形式化验证</strong>（Sean Bowe 和其他核心开发者通过数学证明，确认为"不可检测的锻造漏洞在 Ironwood 中在数学上不可能存在"）、<strong>量子可恢复性</strong>（已经实现，2026 年秋季将进一步实现量子证明），以及<strong>供给可审计性</strong>（通过 Turnstile 机制，当 Orchard 池中的资金迁移到 Ironwood 时，闸门确保流出不大于流入，任何历史伪造都将暴露为偿付能力缺口）。
+</p>
+
+<p>
+Mert 和 Joe 都对一个更大的趋势感到兴奋：AI 正在让形式化验证变得<strong>可规模化</strong>。在传统场景下，将系统规格翻译成形式化证明需要专业密码学家花费数月甚至数年的时间。现在 AI 可以机械地生成和验证这些定理，使得 ZK 电路的"核心不可伪造性"可以在生产级系统中被数学保证。"风险将下降数量级——人们第一次可以真正放心地把钱'加密'起来。"
+</p>
+
+<p>
+Jared 给出了一个有哲学意味的回应："大多数密码学家会说，任何新密码学你不应该在使用它的前五到十年里信任它。那些敢于实现并推向市场的人，值得获得巨大的赞誉。这些系统运行在<strong>对抗性环境</strong>中——本质上它们是反脆弱的。它们被攻击后变得更加坚固。"
+</p>
+
+<h2>Ethereum 隐私路线图：宏大但遥远</h2>
+
+<p>
+Ethereum 的隐私路线图是三人讨论中最有张力的话题。Joe Andrews——一个在以太坊 L2 上构建隐私应用的 CEO——对这份路线图给出了一个复杂的评价：既欢迎又担忧。
+</p>
+
+<p>
+从正面来看，Ethereum 正在协议层做正确的事——新的状态类型、更好的证明系统支持、共享的标准库——这些改进会让 Aztec 这样的隐私 L2 的工作变得更加容易。"这不是竞争关系，"Joe 说。"Ethereum 让我的工作更容易，而不是更难。"Jared 补充了一个重要的历史视角：Ethereum 社区已经完成了一些令人难以置信的事情——向 PoS 的迁移就是一个巨大的证明——"如果哪个社区能做到，那就是这个社区。"
+</p>
+
+<p>
+但 Joe 的担忧同样尖锐：隐私之战正在<strong>今天</strong>打响。"Tornado Cash 的判决告诉我们，有可能当路线图最终完成时，唯一被法律允许的隐私形式就是通过中间人的隐私。"如果我们在等待完美方案的过程中失去了攻击性密码学隐私的法律空间，那路线图的宏大愿景就变得毫无意义。Aztec v5 已经上线，Ironwood 已经激活——市场正在今天做出选择。
+</p>
+
+<h2>Tornado Cash 的阴影与通信层的隐私</h2>
+
+<p>
+Jared Hope 把话题拉到了一个经常被忽视的层面：网络层的隐私。"mevwatch.info 的数据显示，43.7% 的区块中继正在自我审查。如果区块链无法保持完整性，它就失去了全部价值。"
+</p>
+
+<p>
+他解释了为什么简单地"套一个 Tor 或混网"无法解决验证者和矿工的隐私问题。参与共识的网络流量是<strong>确定性的流量墙</strong>——有规律的心跳，每次出块时所有人同时通信。在 Loopix 风格的混网中，这种流量模式会打破延迟(你无法在 30 秒内出块)；在洋葱路由中，这种模式很容易被识别和关联。Logos 开发了一种混网与洪泛路由的混合协议：在活跃对手威胁模型下，追溯区块提议者身份的代价被提升至大约七年——"足够你把资产转移到另一个账户了。"
+</p>
+
+<p>
+这不是一个锦上添花的功能，而是基础层面的安全需求。"我们需要同时保护用户（想要和网络交互的人）和保护验证者/矿工（保护网络安全的节点）。两者都不能被忽略。"
+</p>
+
+<h2>Canton：银行级隐私，但不是密码学隐私</h2>
+
+<p>
+关于 Canton 链的讨论是三人高度一致的少数时刻之一——而且是以一种不留情面的方式。Mert 给出了可能是整期节目中最为直接的评价："我不认为 Canton 是隐私领域的领导者，就像我不认为 JP Morgan 是隐私领域的领导者一样。它提供的隐私保障，不过是信任你的交易对手。这完全不需要用到任何加密技术就能实现。如果我只想要银行级别的保障，我直接用银行不就好了吗？"
+</p>
+
+<p>
+Joe 补充了技术细节：Canton 通过 sequencer 来实现隐私——用户把所有交易发送到一个排序器，然后非密码学地承诺它不会变现或出售数据。"这是被包装成加密创新的中间人隐私。"Jared 给出了一个更加务实的展望：也许 Canton 可以作为一座桥梁——先让机构通过他们熟悉的"中间人信任"模式上链，希望他们逐渐认识到这种方式的局限，最终迁移到具有真正密码学承诺的系统。"但这也需要他们及早认识到问题，而技术债务和商业惯性往往是最大的障碍。"
+</p>
+
+<h2>隐私的未来图景</h2>
+
+<p>
+三位嘉宾各自代表的路线勾勒出了一幅链上隐私的完整图景。Zcash (Mert 的视角) 专注于货币层的隐私——让加密货币真正成为可互换的、去历史记录的、抗量子威胁的数字黄金。Aztec (Joe 的视角) 专注于应用层的隐私——可编程的隐私执行环境，不只是转账，而是私人稳定币、机构借贷、链上身份的全套通用生态。Logos (Jared 的视角) 专注于网络层的隐私——确保"谁在参与这个网络"本身不暴露，从通信协议的底层开始建立匿名性和抗审查能力。
+</p>
+
+<p>
+这三条轨迹不是相互竞争，而是互为补充。Zcash 解决了"我怎么保护我的货币隐私"的问题。Aztec 解决了"我怎么在保护隐私的同时运行任意程序"的问题。Logos 解决了"我怎么在参与这个网络时不被追踪"的问题。它们共同构成了一个完整的隐私技术栈。
+</p>
+
+<p>
+在三人的讨论中，一个更根本的分歧显现了出来：这不是技术之争，而是<strong>范式之争</strong>。中间人隐私路线（以 Canton 为代表）本质上是旧世界的延续——用新的技术外壳包裹旧的信任关系。密码学隐私路线则试图从根本上改写信任的规则——<strong>从"我相信你"到"我不需要相信你"</strong>。两条路线的胜负将决定加密行业是成为 Web2 的渐进改良，还是真正兑现密码朋克的承诺。
+
+</p>
+
+<div class="quotes-section">
+<h2>核心金句</h2>
+<div class="subtitle">这期对谈里最值得记住的几句</div>
+
+<blockquote>
+"隐私不是秘密。隐私是选择性披露自己的能力。"
+<footer>—— Eric Hughes《密码朋克宣言》，Mert Mumtaz 引用</footer>
+</blockquote>
+
+<blockquote class="green">
+"弱者的隐私，强者的透明。公共机构应当公开，而普通人应当拥有选择性披露的权利。"
+<footer>—— 密码朋克格言，Jared Hope 引用</footer>
+</blockquote>
+
+<blockquote class="red">
+"如果我只想要银行级别的保障，我直接用银行不就好了吗？"
+<footer>—— Mert Mumtaz，评价 Canton 链的隐私模式</footer>
+</blockquote>
+
+<blockquote class="purple">
+"我们不应当让人使用当前的公开区块链——这对大多数普通人来说，是比他们的银行账户更糟糕的货币形式。"
+<footer>—— Joe Andrews</footer>
+</blockquote>
+
+<blockquote>
+"加密系统本质上是反脆弱的——它们在被攻击后变得更强。"
+<footer>—— Jared Hope，评价 Orchard 漏洞事件</footer>
+</blockquote>
+
+<blockquote class="green">
+"如果有人能用 ZK 实现隐私，这将是一种更好、更高效的 Bitcoin 实现。"
+<footer>—— Satoshi Nakamoto 在 Bitcoin 早期论坛，Mert Mumtaz 转述</footer>
+</blockquote>
+</div>
+
+<div class="source-link">
+  <p>
+    原节目发布于 <a href="https://unchainedcrypto.com/" target="_blank" rel="noopener">Unchained Podcast</a>，由 Laura Shin 主持<br>
+    嘉宾：Joe Andrews (Aztec Labs CEO)、Jared Hope (Logos 创始人)、Mert Mumtaz (Helios CEO)
+  </p>
+  <p class="note" style="margin-top:12px;">
+    本文由 Claude 基于播客转录生成，经人工审查。所有引言均已在原始转录中验证。<br>
+    中文翻译和作者概括已标注，不作为嘉宾原话使用。
+  </p>
+</div>
+
+</article>
+</body>
+</html>

@@ -1,0 +1,29 @@
+id: 5fd236d7-9a72-4b15-9e84-e83ceadd1b41
+source: sv101
+title: "E246｜何谓蒸馏？聊聊硅谷如何看中国开放模型逼近前沿"
+guest: "王铁震, Keith Jai"
+guest_role: "前HuggingFace亚太开源生态负责人, TinyFish联合创始人"
+published: "2026-08"
+duration: "1h7m"
+url: "https://sv101.fireside.fm/259"
+thumbnail: "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6"
+status: generated
+tags:
+  - ai-research
+  - ai-products
+  - startup
+  - panel
+  - founder
+  - strategic
+  - technical
+summary: |
+  2026年7月，月之暗面正式发布Kimi K3完整模型权重，能力逼近并部分超越Claude前沿模型，在硅谷引发巨大震动。本期节目邀请前HuggingFace亚太开源生态负责人王铁震与TinyFish联合创始人Keith Jai，深入讨论蒸馏指控的技术真相、开源模型的成本优势与商业授权创新，以及这场"开源 vs 闭源"之争将如何重塑AI行业的估值体系、安全话语权和agent生态。
+core_ideas:
+  - 'K3以3T参数达到与传闻中8-10T的Claude匹敌的能力，以更小的体量通过KDA等架构创新实现了2.5倍的scaling efficiency提升'
+  - '蒸馏指控在技术上站不住脚：闭源模型不暴露logits和思维链，仅凭文本输出无法让开源模型超越闭源模型；K3与Fable 5的发布时间仅隔约两周，工程上不可能完成蒸馏'
+  - '开源模型成本更低的三个结构性原因：无模型溢价、scaling efficiency优化、更小的模型尺寸——算力受限倒逼中国团队从架构层面寻找效率突破'
+  - 'Kimi的商业授权模式试图在开源与可持续盈利之间找到第三条路：向MaaS厂商收费、终端应用免费，延续开源软件时代对抗云厂商"白嫖"的精神'
+  - '闭源实验室面临三重压力：估值体系受冲击（垄断溢价消失）、NeoCloud全面竞争（推理服务商用开源模型替代闭源API）、被迫参与价格战'
+  - '智能与安全是两个独立维度——K3在ExploitBench得分约30%，远低于前沿闭源模型的75%以上；没有开源反而是这个时代最不安全的事情'
+article_path: episodes/5fd236d7-9a72-4b15-9e84-e83ceadd1b41/article.html
+base: /episodes/5fd236d7-9a72-4b15-9e84-e83ceadd1b41/

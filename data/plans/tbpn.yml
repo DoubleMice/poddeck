@@ -1,11 +1,11 @@
 source: tbpn
-refreshed_at: 2026-08-01T04:13:40.471Z
+refreshed_at: 2026-08-01T18:22:34.914Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -94,5 +94,9 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-01T18:28:54.057Z
+    transcript_job_id: 74418c6a-1bd4-40c3-b9ab-7bba0e20b179_1de0d79294a343999eb1d749f17fc9d8,5388952e-dda4-44e9-ab4e-e6274da70e4c_c3706fcfb5204fc2ab6accd3e98633c7,fe25e9a5-d689-4467-aaf9-fe4e19286340_bbcab508caae4c56a9124981bacba951,7e8fdbcd-2703-4d9f-abe1-194122caa74f_7a7b9d6f25444b1fac9bc806811200d6,9829c6d3-6fec-4c75-945b-f4fca0d8f80a_45f9b46bd3194b83b4ca29d3f35af3e4,ec1c51f3-e1b3-4b8d-b1d9-4ec8ce9b442c_3a457091a54e42a284ed8cee64114fd5,18637e7e-dc7d-485a-8990-b0335b560a44_9328cfcf87ce47bcb722ad35ea46567c,398c4459-8fa2-445b-8deb-f04f9e436692_57ab57e52c8041e6bf7fcd5547dcd532
+    transcript_completed_at: 2026-08-01T18:35:18.871Z
