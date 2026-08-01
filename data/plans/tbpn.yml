@@ -1,64 +1,45 @@
 source: tbpn
-refreshed_at: 2026-07-31T18:33:07.622Z
+refreshed_at: 2026-08-01T04:13:40.471Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 1
+done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 5b7c1875-8ef7-46f8-9d78-1750fc419b16
-    guid: 5b7c1875-8ef7-46f8-9d78-1750fc419b16
-    title: Leopold Sold, Ferrari Undefeated, Martin Shkreli Joins | Guillaume Verdon, Lulu Meservey, Michael Kim, Joon Sung
-      Park, Karan Kunjur, Vlad Tenev
-    duration: 10581
-    published: Thu, 30 Jul 2026 14:19:43 -0700
-    published_sort: "20260730"
-    first_seen_at: 2026-07-31T04:13:43.450Z
-    url: https://share.transistor.fm/s/90d059a5
-    audio_url: https://media.transistor.fm/90d059a5/dda539ee.mp3
+  - id: af528e6a-3f2c-47ab-a27e-9462002d0e24
+    guid: af528e6a-3f2c-47ab-a27e-9462002d0e24
+    title: Leopold is Back! Big Tech Earnings, Defense Tech Deep Dive | Richard Craib, Trae Stephens, Blake Resnick
+    duration: 7087
+    published: Fri, 31 Jul 2026 13:12:15 -0700
+    published_sort: "20260731"
+    first_seen_at: 2026-08-01T04:13:40.470Z
+    url: https://share.transistor.fm/s/975a6b11
+    audio_url: https://media.transistor.fm/975a6b11/29d7a26d.mp3
     image: https://img.transistorcdn.com/JKCXKMFC8DxrWx6hOFD_HdcDjLAqNP3rWp-35R-vubg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iYWQ5/N2FkMzQ2MGY4Zjg5/ZDczMGExMTA5NjEz/Y2MyMC5wbmc.jpg
-    summary: "(00:17) - Leopold Sold\r
+    summary: "(00:27) - Leopold is Back!\r
 
-      (12:14) - Martin Shkreli discusses the leveraged collapse of a major AI-focused hedge fund, explaining how forced
-      liquidation, predatory short-selling, and excessive position sizing can rapidly destroy a portfolio. The former
-      hedge fund manager and pharmaceutical executive also examines Citadel’s reported acquisition of the fund’s assets,
-      the broader correction in AI stocks, and Wall Street’s recurring failure to heed the risks of leverage.\r
+      (29:21) - Big Tech Earnings\r
 
-      (56:19) - Ferrari Undefeated\r
+      (32:45) - Richard Craib is a mathematician, AI researcher, and founder of Numerai, an AI-driven quantitative hedge
+      fund. Richard Craib discusses the distinction between genuine alpha and returns driven by concentrated risk,
+      arguing that disciplined diversification, mathematical risk management, and sustainable long-term investing matter
+      more than short-term gains or investor hero worship.\r
 
-      (01:06:24) - Guillaume Verdon, founder of Extropic, discusses the company’s thermodynamic computing technology,
-      which uses probabilistic electronics to run generative AI workloads with far greater energy efficiency. He also
-      covers potential applications, government support for domestic chip manufacturing, AI safety and accelerationism,
-      and the challenges of building a deep-tech company while maintaining a prominent public voice.\r
+      (01:00:15) - Trae Stephens, co-founder of Anduril and general partner at Founders Fund, discusses volatile venture
+      valuations, responsible fundraising, and the evolving defense-tech ecosystem. He also covers Anduril’s autonomous
+      aircraft and rapid manufacturing expansion, the case for mandatory civil service, and Founders Fund’s investment
+      strategy.\r
 
-      (01:19:16) - 𝕏 Timeline Reactions\r
+      (01:34:39) - Blake Resnick, founder and CEO of public-safety drone company BRINC, discusses the company’s $125
+      million capital raise and tours its drones, recharging pods, R&D facilities, and factory. He explains BRINC’s
+      plans to deploy autonomous emergency-response drones nationwide, its strategic partnership with Motorola
+      Solutions, and opportunities for innovation across the domestic drone supply chain.\r
 
-      (01:20:36) - Lulu Meservey discusses how founders and CEOs can build lasting relevance through consistent,
-      authentic, and strategically focused communication rather than rage bait, viral stunts, or excessive media
-      appearances. Drawing on her communications expertise at Rostra, she argues that leaders should prioritize trust,
-      audience fit, principled messaging, and approaches that suit their individual personalities.\r
-
-      (01:47:35) - Michael Kim is the founder of Cendana Capital, an institutional investor focused on pre-seed and
-      seed-stage venture funds. Michael discusses Cendana’s growth, its approach to identifying promising fund managers,
-      the importance of founder access and investment judgment, and lessons from both missed opportunities and
-      exceptionally successful investments.\r
-
-      (02:06:39) - Joon Sung discusses Simile’s $200 million fundraise and rapid growth as an applied AI lab building
-      models that predict human behavior. He explains how its simulations help companies test products and understand
-      customer preferences at scale while democratizing access to market insights.\r
-
-      (02:17:35) - Karan Kunjur, co-founder and CEO of K2 Space, discusses the company’s $500 million funding round,
-      successful first satellite mission, and more than $1 billion in signed contracts. He explains K2’s vision of
-      building large, high-power satellites for commercial and national-security uses, including communications, orbital
-      computing, and advanced space infrastructure.\r
-
-      (02:28:35) - Vlad Tenev, co-founder and CEO of Robinhood, discusses the company’s record growth, expanding suite
-      of financial products, and mission to broaden individual asset ownership. He also covers global markets, Robinhood
-      Social, product design, and using mathematical superintelligence to verify software and improve cybersecurity.
+      (01:53:47) - 𝕏 Timeline Reactions
 
 
       TBPN is made possible by:
@@ -113,9 +94,5 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: generated
+    status: needs_transcript
     priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-31T18:44:49.126Z
-    transcript_job_id: b9dd89b4-81b8-4cf1-bef2-f53e7610b03c_6fd9d3bf9e1a4b28a58985e34c1b06bc,df69c895-5280-4456-b613-7b320ba48e5f_1e2a1662978d485780d5b2eddf1a619a,9c10b4a8-808d-4baf-abcf-c0e8614dc6d1_6c1cfde8f42643bb814e0bee5292f6ec,ab5f1883-3549-4b71-b080-1155fc1fcabd_d18fc4cab2e842c6bd4b394da632b287,354dc44e-f061-4969-96e3-07fd866f4221_fc0bc744e6404ae298e28ee010658f41,623a4bc0-936f-494a-b957-d0f8c82e08a7_6a3d4c276f8e412bbe1719c7f081dd50,9b917bbf-6a0a-409a-9fcc-147ec6ac87ca_a18de5d28e6848198b25dacdc9acd020,df835162-fe37-4fae-a6be-ed11a0e75f31_f0b55e84467e4afd8a59a3eca0cfb5bd,0d4a748b-bee0-45d5-969d-0fecc1b711ff_470ac44cfbc74adb825d43aa046de051,203d0571-7499-445d-9c1a-6adf43716ad5_7fd945d3ae2b42658916caaa7142094a,792dad92-1898-4de5-b4e2-6dd2cdd7fe26_97645f037f024b368d57ba1f2110eb6e,5d32a3cd-d7da-4523-8c0f-a52513b7e29f_8e6ea8e6910f4aa59a48754ba56500dc
-    transcript_completed_at: 2026-07-31T18:55:53.795Z

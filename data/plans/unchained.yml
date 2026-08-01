@@ -1,112 +1,96 @@
 source: unchained
-refreshed_at: 2026-07-31T18:33:07.677Z
+refreshed_at: 2026-08-01T04:13:40.523Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 70
-done: 1
+total_candidates: 68
+done: 0
 pending: 0
-needs_transcript: 68
+needs_transcript: 67
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
-  - id: 634ac54e-8c73-11f1-b7e2-5797577e72e7
-    guid: 634ac54e-8c73-11f1-b7e2-5797577e72e7
-    title: Should Crypto Tokens Come With Investor Rights? - Uneasy Money
-    duration: 4308
-    published: Fri, 31 Jul 2026 00:04:00 -0000
+  - id: d8916386-8d17-11f1-b653-6b265e08db61
+    guid: d8916386-8d17-11f1-b653-6b265e08db61
+    title: "Zcash, Ethereum, Aztec, Canton and More: Which Chain Will Win the Privacy Race?"
+    duration: 3799
+    published: Fri, 31 Jul 2026 19:41:00 -0000
     published_sort: "20260731"
-    first_seen_at: 2026-07-31T04:13:43.496Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5700769470.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5700769470.mp3
-    image: https://megaphone.imgix.net/podcasts/634ac54e-8c73-11f1-b7e2-5797577e72e7/image/216b14e4b98f789a31df7003576cd3a0.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    first_seen_at: 2026-08-01T04:13:40.513Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8103903217.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8103903217.mp3
+    image: https://megaphone.imgix.net/podcasts/d8916386-8d17-11f1-b653-6b265e08db61/image/74f150e1342a60ebb9eed586ca009ac8.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
-      BitMEX shut down without an angry tweet. Offchain Labs CEO Steven Goldfeder joins Kain and Taylor on why dead
-      tokens never get that mercy. Plus, Kyle Samani's Multicoin blowup.
+      Privacy is having a moment in crypto. As competition heats up, the pitfalls of the technology around the quantum
+      threat, regulatory risk and more make the trajectory hard to predict.
 
 
-      ========================================================
+      A counterfeit bug sat undetected in Zcash's Orchard privacy pool for four years, capable of minting an unlimited
+      supply of untraceable coins, illustrating the risks of one of the hottest crazes in crypto.
 
 
-      Thank you to our sponsors!
+      Joe Andrews, CEO of Aztec Labs, Jarrad Hope, founder of Logos, and Mert Mumtaz, cofounder and CEO of Helius, join
+      Laura Shin to argue the bug is less alarming than what it reveals: cryptographic privacy is difficult to get
+      right, and the industry is racing to get it right anyway, because institutions will not come onchain without it.
 
 
-      ⁠⁠⁠⁠⁠Cape⁠⁠⁠⁠: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's
-      privacy-first mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33%
-      off your first six months at ⁠https://cape.co/unchained⁠ (use code: UNCHAINED).
+      They cover Zcash's quantum-recoverable Ironwood upgrade and the turnstile proving the counterfeit coins never
+      moved, Ethereum's sprawling privacy roadmap and the risk it arrives too late, Logos' mixnet built to protect
+      validators from block relays now censoring transactions, and why all three see Canton's private stablecoins as
+      little more than a bank with extra steps.
 
 
-      ========================================================
+      The fight over what actually counts as privacy on a blockchain is only getting started.
 
 
-      BitMEX shut down after 11 years and crypto Twitter answered with nostalgia. When a token project dies, the same
-      audience spends weeks dragging it.
+      Host
+
+        ⁠Laura Shin⁠ - Founder, CEO and Host of Unchained
+
+      Guest
+
+        ⁠Joe Andrews - CEO of Aztec Labs
+
+        ⁠Jarrad Hope - Founder of Logos
+
+        ⁠Mert Mumtaz - Cofounder and CEO of Helius
+
+      Sponsor
+
+        ⁠Cape⁠: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's privacy-first mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33% off your first six months at ⁠https://cape.co/unchained⁠ &nbsp; (use code: UNCHAINED).
+
+      Timestamps:
 
 
-      Steven Goldfeder, co-founder and CEO of Offchain Labs, the team behind Arbitrum, joins Kain Warwick and Taylor
-      Monahan to work through why. Goldfeder argues crypto's grant-funded, revenue-optional era is over, and explains
-      why Arbitrum licensed its stack so that partners like Robinhood Chain have to keep paying for it, while Base pays
-      Optimism.
+      🔐 01:52 Why Joe, Jarrad, and Mert think privacy's crypto moment is now
 
 
-      They trace the DPRK crewhacking crews now rotating through bridge exploits, debate whether Uniswap's new
-      permissioned pools point toward tokens that carry real investor rights, and ask Goldfeder whether he would trade
-      Arbitrum's open token for a restricted one only a fraction of the world could hold.
+      💙 18:18 Cape: Get 33% off your first six months with code unchained at https://cape.co/unchained
 
 
-      The conversation closes on Kyle Samani telling Solana builders that Multicoin, the firm he co-founded, is working
-      against them, and what that says about how much of an ecosystem can rest on a single fund.
+      ⚖️ 19:14 Why Jarrad says the weak need privacy and the powerful need transparency
 
 
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-      Guest:
-
-        ⁠⁠⁠⁠⁠Steven Goldfeder - Co-Founder and CEO of Offchain Labs
-
-      Timestamps
+      🔬 24:49 How zero knowledge proofs actually update encrypted state onchain
 
 
-      📣 00:47 Cape: Get 33% off six months at https://cape.co/unchained
+      🕸️ 33:07 Why 43.7% of block relays now censor, and how Logos fixes it
 
 
-      🪦 01:47 Kain opens wondering whether crypto itself is quietly dying in 2026
+      🐛 36:32 The undetected Zcash bug that could have minted infinite fake coins
 
 
-      📊 03:41 Steven on Arbitrum's project tracking and the 'massive consolidation' hitting L2s
+      🔒 46:32 Mert explains how Zcash's Ironwood upgrade closes the counterfeit hole
 
 
-      ⚔️ 10:03 The proxy war: Robinhood Chain and Base now fight instead of Arbitrum and Optimism
+      🛤️ 51:44 Why Joe worries Ethereum's privacy roadmap might arrive too late
 
 
-      🪦 14:23 Why BitMEX's shutdown felt nostalgic while token deaths trigger real anger
-
-
-      🌉 26:21 Hacks of the week: the DPRK crew behind the AFX perp DEX bridge exploit
-
-
-      👽 32:51 Kain's take: bridges got safer until 'aliens landed' and started hacking again
-
-
-      🏛️ 40:32 Permissioned DeFi: Uniswap's compliance pools and Superstate's equity-like tokens
-
-
-      🎯 57:32 Would Steven trade Arbitrum's open token for a 5% investor-only model?
-
-
-      🥊 01:05:42 Kyle Samani's Multicoin tweet and Solana's VC fight over Hyperliquid
+      🏦 57:39 Why Mert calls Canton no more private than trusting JPMorgan
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
+    status: needs_transcript
     priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-07-31T18:40:39.191Z
-    transcript_job_id: 77539c8b-61f2-4dbc-9a5b-ef64dff20d34_3fecc773e41541ee8a6bfe17d03c09e0,268ff5d8-64be-4d4e-b048-ab23236030c4_e1b4359edab246e3afce4f2a47727d73,5181e75a-b80d-43fd-bcf5-617f11cb23f0_7648aebe61c14446947c89dc64ae91d0,fd6b024e-0ab3-40ad-adbd-0311d4206730_d92d09cfa1fa425fa6b5d0ae4ab6726b,77478d9c-d44f-43ae-be14-0f5b5ed870da_28b2a8808ef04e7a870adb0d00f40231
-    transcript_completed_at: 2026-07-31T18:44:48.913Z
   - id: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     guid: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     title: Kristin Smith on Why the Clarity Act Comes Down to a Memecoin
@@ -3329,7 +3313,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5091,7 +5076,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -6273,198 +6259,6 @@ episodes:
 
       Zora Shocks Base Community With Solana Pivot
 
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 3b6ce498-134d-11f1-b0a9-b788758d400c
-    guid: 3b6ce498-134d-11f1-b0a9-b788758d400c
-    title: "DEX in the City: Why Everyone Is Overreacting About the Terra v. Jane Street Lawsuit"
-    duration: 3494
-    published: Fri, 27 Feb 2026 08:36:00 -0000
-    published_sort: "20260227"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4411017349.mp3?updated=1772143232
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4411017349.mp3?updated=1772143232
-    image: https://megaphone.imgix.net/podcasts/3b6ce498-134d-11f1-b0a9-b788758d400c/image/cee1faab9c7e128cc2548fea0e96907d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Robinhood's Coy Garrison and Seong Seog Lee join the crew to unpack the Robinhood Chain launch strategy.
-
-
-      Thank you to our sponsors!
-
-        ⁠MultiChain Advisors
-
-      Robinhood's proposed chain for the trading of tokenized assets is live in testnet.
-
-
-      In this DEX in the City episode, Coy Garrison, Robinhood's deputy general counsel on crypto, and Robinhood Crypto
-      Head of Product Seong Seog Lee walk hosts Katherine Kirkpatrick Bos and Jessi Brooks through the thinking behind
-      the blockchain's testnet launch and why it is important that it supports tokenized equities out of the gate.
-
-
-      Beyond the Robinhood Chain testnet launch, KK and Jessi discuss OpenAI and Paradigm's EVMbench tool and why it
-      highlights the need for a safety-first approach. “AI and crypto are in the same room now, but the room's sort of
-      on fire,” Jessi says.
-
-
-      Don't miss how a man accidentally gained remote access to 7,000 robot vacuums in 24 countries with AI-written
-      code.
-
-
-      KK and Jessi also dig into the Terraform Labs estate's lawsuit against Jane Street. Is there any real credibility
-      behind the lawsuit? Listen to find out!
-
-
-      Save $100 with Crypto Tax Girl!
-
-
-      Hosts:
-
-
-      ⁠⁠Jessi Brooks⁠⁠, General Counsel at Ribbit Capital
-
-
-      ⁠Katherine Kirkpatrick Bos⁠, General Counsel at StarkWare
-
-
-      Guests:
-
-
-      ⁠⁠⁠Coy Garrison, Senior Director and Deputy General Counsel, Crypto at Robinhood
-
-
-      ⁠⁠Seong Seog Lee, Head of Product at Robinhood Crypto
-
-
-      Links:
-
-
-      Unchained:
-
-
-      Robinhood Pushes Deeper Into Tokenization With Layer 2 Testnet Launch
-
-
-      Inside Robinhood’s Big Super App Plan: ‘There’s Still a Lot of Work to Be Done’
-
-
-      OpenAI and Paradigm Launch EVMbench to Stress Test AI on Smart Contract Security
-
-
-      Uneasy Money: How the Increasingly Better AI Agents Are Being Used Onchain
-
-
-      When AI Agents Take Over, What Does a Post-Human Economy Look Like?
-
-
-      Terraform Estate Targets Jane Street in Explosive Terra Collapse Lawsuit
-
-
-      DeFi Platforms Could Get ‘Innovation Exemption,’ SEC Chair Says
-
-
-      SEC Quietly Eases Capital Rules for Stablecoins
-
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 6d7964f6-12b8-11f1-9459-37b99794ba9e
-    guid: 6d7964f6-12b8-11f1-9459-37b99794ba9e
-    title: "The Chopping Block: AI's Role in Crypto, Agentic Coding, & Citrini Financial Crisis"
-    duration: 3665
-    published: Fri, 27 Feb 2026 08:05:00 -0000
-    published_sort: "20260227"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5499753854.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5499753854.mp3
-    image: https://megaphone.imgix.net/podcasts/6d7964f6-12b8-11f1-9459-37b99794ba9e/image/2d906f015a2a2bd4ed53d66bc1d81ee0.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Explore how AI could reshape crypto and finance, redefining traditional systems and introducing new threats. As
-      AI-powered agents promise efficiency, Haseeb, Tom, Tarun, and guest Illia Polosukhin critique Citrini's
-      controversial predictions on a global financial crisis and consider whether AI might just save or further
-      complicate crypto's role in the economy.
-
-
-      Welcome to The Chopping Block — where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert
-      Leshner chop it up about the latest in crypto.
-
-
-      Joining us is Illia Polosukhin, co-founder of NEAR Protocol and contributing author to the original transformers
-      paper that’s revolutionized AI.
-
-
-      Buckle up as we delve into AI’s burgeoning role in the crypto world, dissect the sensational claims from Citrini’s
-      article predicting an AI-triggered financial crisis, and explore the potential of agentic coding in reshaping
-      traditional systems.
-
-
-      Let’s get into it!
-
-
-      Listen to the episode on Apple Podcasts, Spotify, Pods, Fountain, Podcast Addict, Pocket Casts, Amazon Music, or
-      on your favorite podcast platform.
-
-
-      Hosts
-
-
-      ⭐️Haseeb Qureshi, Managing Partner at Dragonfly
-
-
-      ⭐️Tarun Chitra, Managing Partner at Robot Ventures
-
-
-      ⭐️Tom Schmidt, General Partner at Dragonfly
-
-
-      Guest⭐️ Illia Polosukhin, Co-founder of NEAR Protocol
-
-
-      Disclosures
-
-
-      Links:
-
-
-      THE 2028 GLOBAL INTELLIGENCE CRISIS by Citrini and Alap Shah
-
-
-      Timestamps
-
-
-      00:00 Intro
-
-
-      01:06 AI Agents Meet Crypto
-
-
-      08:06 Dark Forest Threat Model
-
-
-      15:31 How Close Are We
-
-
-      18:41 AI Coding Risks in Crypto
-
-
-      27:27 Citrini 2028 Crisis Explained
-
-
-      35:01 Demand Shock Missing Money
-
-
-      37:55 Automation Limits and Human Value
-
-
-      44:13 AI Zero Days and Botnets
-
-
-      51:40 Escrow Courts and Enforcement
-
-
-      56:05 Illia on Vibe Coding Future
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript

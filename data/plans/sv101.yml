@@ -1,12 +1,154 @@
 source: sv101
-refreshed_at: 2026-07-31T18:33:07.723Z
+refreshed_at: 2026-08-01T04:13:40.573Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 0
+total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 5fd236d7-9a72-4b15-9e84-e83ceadd1b41
+    guid: 5fd236d7-9a72-4b15-9e84-e83ceadd1b41
+    title: E246｜何谓蒸馏？聊聊硅谷如何看中国开放模型逼近前沿
+    duration: 4032
+    published: Fri, 31 Jul 2026 17:00:00 -0700
+    published_sort: "20260801"
+    first_seen_at: 2026-08-01T04:13:40.573Z
+    url: https://sv101.fireside.fm/259
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/5fd236d7-9a72-4b15-9e84-e83ceadd1b41.mp3
+    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+    summary: |-
+      7月27日，月之暗面正式发布Kimi K3的完整模型权重。自7月16日API上线以来，K3就在在多项测试中展现出接近前沿模型的能力。因此，它成为了硅谷最近讨论开源时的重要案例之一。从2025年初的DeepSeek时刻，到当下的Kimi K3，中国开源模型正在从成本更低、能力稍弱的替代品，逐渐逼近甚至超过最强的闭源前沿模型。
+
+      随之而来的，是一场越来越激烈的蒸馏争论。什么是蒸馏？通过闭源模型的输出进行训练，和未经授权的大规模能力提取，有什么区别？即使中国实验室使用过美国模型生成的数据，它又究竟能解释多少最终能力？
+
+      本期播客，我们邀请到两位嘉宾来分别从开源生态和企业的视角，讨论这一波中国开源模型的影响：前Hugging Face亚太开源生态负责人王铁震，和TinyFish联合创始人Keith Zhai。
+
+      我们从K3带给硅谷的挑战聊起，讨论了为什么把中国模型的进步全部归因于蒸馏，实际上忽略了架构、强化学习、数据工程和推理基础设施上的创新。而当蒸馏从一种中性的训练技术，变成商业竞争和政策讨论中的指控时，争议的核心又变成了什么？
+
+      在此之外，我们也讨论了K3针对大型推理服务商设计的商业授权：当开源权重模型持续压低成本，它会如何冲击OpenAI、Anthropic等闭源实验室的商业模式？当模型能力逐渐商品化，未来AI行业的价值会流向模型本身、推理基础设施，还是Agent与企业工作流？
+
+      注：本期播客中提到的“开源”，更准确地说是开放权重（open weights）。K3官方称自己为开放模型，它使用的是Kimi K3 License，不是标准 MIT/Apache 这类完全开放的OSI license。
+
+      【主播】
+
+      Yiwen，硅谷101特约研究员
+
+      【嘉宾】
+
+      王铁震，Hugging Face前亚太生态负责人
+
+      Keith Zhai，TinyFish联合创始人
+
+      【你将听到】
+
+      中国开放模型，硅谷怎么看？
+
+      01:45 Kimi K3为什么突然成为硅谷关注的焦点？
+
+      03:33 从DeepSeek、GLM到K3：硅谷对中国模型的判断如何变化
+
+      06:51 企业为什么开始转向中国模型
+
+      10:23 中国开放模型推理成本
+
+      蒸馏争端始末
+
+      13:24 蒸馏争议：到底什么是蒸馏？
+
+      17:22 K3是否可能在短时间内蒸馏最强闭源模型？
+
+      19:48 蒸馏能解释模型的核心能力吗？
+
+      开放模型对闭源商业模式的影响
+
+      23:54 K3 License与开放模型商业化
+
+      34:27 开放模型会怎样冲击OpenAI和Anthropic的收入与估值？
+
+      37:39 英伟达为什么支持开放权重
+
+      43:41 中国公司为什么选择开放
+
+      强大的开放能力下，Agent生态如何变化？
+
+      45:04 Thinking Machines为什么开放权重？
+
+      48:39 开放模型催生的新生态
+
+      48:43 OpenRouter等多模型平台为什么开始受益？
+
+      49:56 对Agent产品和基础设施的影响
+
+      开放模型的安全之争
+
+      55:40 接近前沿的模型，到底应不应该开放权重？
+
+      01:04:01 开源和闭源模型，谁更容易被滥用？
+
+      【延伸阅读和相关术】
+
+      Kimi K3官方技术报告与模型权重
+
+      Kimi K3授权协议
+
+      Anthropic对蒸馏攻击的指控
+
+      《开放权重与美国AI领导力》
+
+      【相关术语】
+
+      开放权重（Open Weights）：指模型开发者公开模型训练完成后的参数文件，允许用户下载模型，并在自己的设备或云端进行部署、推理、微调或进一步开发。开放权重并不意味着训练数据、训练代码和完整训练流程也同时公开，具体使用方式还会受到模型授权协议的限制。
+
+      开源模型（Open-Source Models）：通常指不仅公开模型权重，还公开足以让外部开发者研究、修改和复现模型的更多组成部分，例如训练代码、模型架构、数据处理方法、训练流程，以及在部分情况下使用的训练数据。由于大模型很少完整披露所有训练材料，目前业界对什么样的模型可以被严格称为“开源”仍存在争议。
+
+      思维链（Chain of Thought）：指模型在生成最终答案之前，用一系列中间步骤拆解问题、组织信息和进行推理的过程。
+
+      规模扩展效率（Scaling Effiency）：指模型将计算资源转化为能力提升的效率，也就是在使用相同或更少的算力、数据或训练成本时，能否获得更好的模型表现。
+
+      键值缓存（KV Cache）：指模型在处理上下文和生成内容时，保存此前token在注意力计算中产生的Key和Value数据。这样，模型在生成下一个token时不必重新计算全部历史内容，可以显著降低重复计算，提高生成速度；但上下文越长，KV Cache占用的内存通常也越大。
+
+      【硅谷101正在招聘】
+
+      《硅谷101》招聘多个全职岗位，欢迎加入我们的超酷的深度内容工作团队！
+
+      👉🏻点击查看招聘详情
+
+      【监制】
+
+      泓君
+
+      【后期】
+
+      Amei
+
+      【运营】
+
+      朱婕
+
+      【BGM】
+
+      Kablaam - Ealot
+
+      Flickering Torches - Christian Andersen
+
+      Radar Focus - Blue Saga
+
+      Pulse Runner - Helmut Schenker
+
+      【在这里找到我们】
+
+      公众号：硅谷101
+
+      收听渠道：Apple Podcast｜Spotify｜小宇宙｜喜马拉雅｜蜻蜓FM｜荔枝FM｜网易云音乐｜QQ音乐
+
+      其他平台：YouTube｜Bilibili 搜索「硅谷101播客」
+
+      联系我们：podcast@sv101.net
+
+      Special Guests: Keith Zhai and 王铁震.
+    status: needs_transcript
+    priority: 1
