@@ -1,100 +1,15 @@
 source: unchained
-refreshed_at: 2026-08-01T18:22:34.969Z
+refreshed_at: 2026-08-02T04:16:09.969Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 68
-done: 1
+total_candidates: 67
+done: 0
 pending: 0
 needs_transcript: 66
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
-  - id: d8916386-8d17-11f1-b653-6b265e08db61
-    guid: d8916386-8d17-11f1-b653-6b265e08db61
-    title: "Zcash, Ethereum, Aztec, Canton and More: Which Chain Will Win the Privacy Race?"
-    duration: 3799
-    published: Fri, 31 Jul 2026 19:41:00 -0000
-    published_sort: "20260731"
-    first_seen_at: 2026-08-01T04:13:40.513Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8103903217.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8103903217.mp3
-    image: https://megaphone.imgix.net/podcasts/d8916386-8d17-11f1-b653-6b265e08db61/image/74f150e1342a60ebb9eed586ca009ac8.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Privacy is having a moment in crypto. As competition heats up, the pitfalls of the technology around the quantum
-      threat, regulatory risk and more make the trajectory hard to predict.
-
-
-      A counterfeit bug sat undetected in Zcash's Orchard privacy pool for four years, capable of minting an unlimited
-      supply of untraceable coins, illustrating the risks of one of the hottest crazes in crypto.
-
-
-      Joe Andrews, CEO of Aztec Labs, Jarrad Hope, founder of Logos, and Mert Mumtaz, cofounder and CEO of Helius, join
-      Laura Shin to argue the bug is less alarming than what it reveals: cryptographic privacy is difficult to get
-      right, and the industry is racing to get it right anyway, because institutions will not come onchain without it.
-
-
-      They cover Zcash's quantum-recoverable Ironwood upgrade and the turnstile proving the counterfeit coins never
-      moved, Ethereum's sprawling privacy roadmap and the risk it arrives too late, Logos' mixnet built to protect
-      validators from block relays now censoring transactions, and why all three see Canton's private stablecoins as
-      little more than a bank with extra steps.
-
-
-      The fight over what actually counts as privacy on a blockchain is only getting started.
-
-
-      Host
-
-        ⁠Laura Shin⁠ - Founder, CEO and Host of Unchained
-
-      Guest
-
-        ⁠Joe Andrews - CEO of Aztec Labs
-
-        ⁠Jarrad Hope - Founder of Logos
-
-        ⁠Mert Mumtaz - Cofounder and CEO of Helius
-
-      Sponsor
-
-        ⁠Cape⁠: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's privacy-first mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33% off your first six months at ⁠https://cape.co/unchained⁠ &nbsp; (use code: UNCHAINED).
-
-      Timestamps:
-
-
-      🔐 01:52 Why Joe, Jarrad, and Mert think privacy's crypto moment is now
-
-
-      💙 18:18 Cape: Get 33% off your first six months with code unchained at https://cape.co/unchained
-
-
-      ⚖️ 19:14 Why Jarrad says the weak need privacy and the powerful need transparency
-
-
-      🔬 24:49 How zero knowledge proofs actually update encrypted state onchain
-
-
-      🕸️ 33:07 Why 43.7% of block relays now censor, and how Logos fixes it
-
-
-      🐛 36:32 The undetected Zcash bug that could have minted infinite fake coins
-
-
-      🔒 46:32 Mert explains how Zcash's Ironwood upgrade closes the counterfeit hole
-
-
-      🛤️ 51:44 Why Joe worries Ethereum's privacy roadmap might arrive too late
-
-
-      🏦 57:39 Why Mert calls Canton no more private than trusting JPMorgan
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-08-01T18:25:54.357Z
-    transcript_job_id: f71dddc0-fd6f-4b02-b517-1d8696958a2a_54cddb99554a40f6bf61084906efbcf8,33d914ba-fe23-4240-921f-6daf90d65b0f_bae8fbc0bf0145afb9a3161b314386ce,e456eca8-f598-4e8a-93f9-f0dfc9295108_2825840cf2234577a445364f81f0ad84,ab11ef67-3982-4160-88e5-f964750b399e_8e709d881c8842a9ba8bbfc19fe95729,e723bf67-04c0-46ab-a721-28e420f266ae_fe6c5e8a91ed428dbfb7d62180c6fb95
-    transcript_completed_at: 2026-08-01T18:28:53.778Z
   - id: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     guid: 2547a244-8ac0-11f1-9938-0f0e07ceed7b
     title: Kristin Smith on Why the Clarity Act Comes Down to a Memecoin
@@ -3317,7 +3232,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5079,7 +4995,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
