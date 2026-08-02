@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-08-02T04:16:09.969Z
+refreshed_at: 2026-08-02T18:22:43.960Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 67
-done: 0
+done: 1
 pending: 0
-needs_transcript: 66
+needs_transcript: 65
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
@@ -71,8 +71,12 @@ episodes:
       🌍 23:31 What happens to crypto capital and global leadership if Clarity fails
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-02T18:24:04.060Z
+    transcript_job_id: 80e6b7cb-639d-4125-bb00-5a9865709ba6_9a548f46ba1a43a5b1debbbdba7b86ad,7b62ca02-5c51-49c6-8d25-e1956718de73_295e0c75952a49329dfd875778c373bc,35622940-23c1-4339-b2ca-43a41007e8ce_5589ad296b5b4b8f8034e0603fa31f3f
+    transcript_completed_at: 2026-08-02T18:25:33.049Z
   - id: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     guid: 90201d54-54e1-11f1-91ed-7f3ac4aa9566
     title: "The Chopping Block: The CLARITY Act, Hyperliquid vs CME, and the Prediction Market Supreme Court Showdown"
@@ -3232,8 +3236,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -4995,8 +4998,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
