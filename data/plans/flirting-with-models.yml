@@ -1,13 +1,13 @@
 source: flirting-with-models
-refreshed_at: 2026-08-03T04:19:20.547Z
+refreshed_at: 2026-08-03T18:37:34.454Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 3
 downloaded: 0
 episodes:
   - id: 9f77c183-6628-4b52-92cb-35891275bc02
@@ -20,8 +20,12 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
     image: https://artwork.captivate.fm/f640e688-8b78-4e64-a83e-b34dce5368d0/S3-FlirtingWithModels-with-Stacie-Mintz.jpeg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-03T18:37:35.677Z
+    transcript_error: "audio download failed: 404 Missing redirect URL"
+    transcript_completed_at: 2026-08-03T18:37:36.017Z
   - id: 1431fb8e-f94d-4254-8cd7-295d196a88dd
     guid: 1431fb8e-f94d-4254-8cd7-295d196a88dd
     title: Ben Wellington – Complex Feature Engineering at Two Sigma (S7E32)

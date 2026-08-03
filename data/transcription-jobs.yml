@@ -15327,3 +15327,28 @@ jobs:
     submitted_at: 2026-08-02T18:24:04.060Z
     updated_at: 2026-08-02T18:25:33.049Z
     completed_at: 2026-08-02T18:25:33.049Z
+  - key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-08-03T18:38:53.934Z:chunk:0
+    parent_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    attempt_key: unchained:5c51dea2-48a4-11f1-aad3-37cf1e9be3b9:20260507:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3:mimo:2026-08-03T18:38:53.934Z
+    provider: mimo
+    id: 5c51dea2-48a4-11f1-aad3-37cf1e9be3b9
+    source: unchained
+    title: "Why Wrapped Energy or Compute Will Be the New Store of Value: Bits + Bips"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8799146169.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-08-03T18:38:53.934Z
+    updated_at: 2026-08-03T18:39:42.593Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
