@@ -1,13 +1,13 @@
 source: tbpn
-refreshed_at: 2026-08-04T04:07:16.110Z
+refreshed_at: 2026-08-04T18:34:35.664Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 497e908d-c7d6-499e-9d79-c69355dd116c
@@ -112,5 +112,17 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-04T18:35:00.205Z
+    transcript_error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
+    transcript_completed_at: 2026-08-04T18:35:55.663Z

@@ -15352,3 +15352,54 @@ jobs:
               "type": "invalid_key"
           }
       }
+  - key: unchained:8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7:20260804:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2161249601.mp3:mimo:2026-08-04T18:34:36.683Z:chunk:0
+    parent_key: unchained:8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7:20260804:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2161249601.mp3
+    attempt_key: unchained:8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7:20260804:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2161249601.mp3:mimo:2026-08-04T18:34:36.683Z
+    provider: mimo
+    id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
+    source: unchained
+    title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2161249601.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-08-04T18:34:36.683Z
+    updated_at: 2026-08-04T18:35:00.097Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
+  - key: tbpn:497e908d-c7d6-499e-9d79-c69355dd116c:20260803:https://media.transistor.fm/0b7ccbeb/fafe89a3.mp3:mimo:2026-08-04T18:35:00.205Z:chunk:0
+    parent_key: tbpn:497e908d-c7d6-499e-9d79-c69355dd116c:20260803:https://media.transistor.fm/0b7ccbeb/fafe89a3.mp3
+    attempt_key: tbpn:497e908d-c7d6-499e-9d79-c69355dd116c:20260803:https://media.transistor.fm/0b7ccbeb/fafe89a3.mp3:mimo:2026-08-04T18:35:00.205Z
+    provider: mimo
+    id: 497e908d-c7d6-499e-9d79-c69355dd116c
+    source: tbpn
+    title: Astra Ends Math, 1 Person $1M Companies, Hank Green Is Absolutely Right | John Gruber, Shaun Maguire & Isaiah
+      Taylor, Justin Lopas, Beau Gaston, Ron Arel
+    audio_url: https://media.transistor.fm/0b7ccbeb/fafe89a3.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 11
+    status: failed
+    retries: 0
+    submitted_at: 2026-08-04T18:35:00.205Z
+    updated_at: 2026-08-04T18:35:55.663Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
