@@ -15403,3 +15403,79 @@ jobs:
               "type": "invalid_key"
           }
       }
+  - key: sv101:6c9d13b1-ac9a-4a7a-a35b-99bfb8374668:20260805:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/6c9d13b1-ac9a-4a7a-a35b-99bfb8374668.mp3:mimo:2026-08-05T18:35:03.427Z:chunk:0
+    parent_key: sv101:6c9d13b1-ac9a-4a7a-a35b-99bfb8374668:20260805:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/6c9d13b1-ac9a-4a7a-a35b-99bfb8374668.mp3
+    attempt_key: sv101:6c9d13b1-ac9a-4a7a-a35b-99bfb8374668:20260805:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/6c9d13b1-ac9a-4a7a-a35b-99bfb8374668.mp3:mimo:2026-08-05T18:35:03.427Z
+    provider: mimo
+    id: 6c9d13b1-ac9a-4a7a-a35b-99bfb8374668
+    source: sv101
+    title: E247｜对话盛颖：xAI，Infra的浪漫，SGLang，开源，平权与“甄嬛传”
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/6c9d13b1-ac9a-4a7a-a35b-99bfb8374668.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-08-05T18:35:03.427Z
+    updated_at: 2026-08-05T18:35:50.784Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
+  - key: unchained:8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7:20260804:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2161249601.mp3:mimo:2026-08-05T18:35:50.925Z:chunk:0
+    parent_key: unchained:8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7:20260804:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2161249601.mp3
+    attempt_key: unchained:8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7:20260804:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2161249601.mp3:mimo:2026-08-05T18:35:50.925Z
+    provider: mimo
+    id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
+    source: unchained
+    title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2161249601.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-08-05T18:35:50.925Z
+    updated_at: 2026-08-05T18:36:18.879Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
+  - key: tbpn:497e908d-c7d6-499e-9d79-c69355dd116c:20260803:https://media.transistor.fm/0b7ccbeb/fafe89a3.mp3:mimo:2026-08-05T18:36:19.022Z:chunk:0
+    parent_key: tbpn:497e908d-c7d6-499e-9d79-c69355dd116c:20260803:https://media.transistor.fm/0b7ccbeb/fafe89a3.mp3
+    attempt_key: tbpn:497e908d-c7d6-499e-9d79-c69355dd116c:20260803:https://media.transistor.fm/0b7ccbeb/fafe89a3.mp3:mimo:2026-08-05T18:36:19.022Z
+    provider: mimo
+    id: 497e908d-c7d6-499e-9d79-c69355dd116c
+    source: tbpn
+    title: Astra Ends Math, 1 Person $1M Companies, Hank Green Is Absolutely Right | John Gruber, Shaun Maguire & Isaiah
+      Taylor, Justin Lopas, Beau Gaston, Ron Arel
+    audio_url: https://media.transistor.fm/0b7ccbeb/fafe89a3.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 11
+    status: failed
+    retries: 0
+    submitted_at: 2026-08-05T18:36:19.022Z
+    updated_at: 2026-08-05T18:37:20.444Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bending Spoons 收购 Airtable、Snap 财报逆袭、BMW 弹广告 — TBPN 2026.08.04</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    background: #fff;
+    min-height: 100vh;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  header .meta {
+    font-size: 14px;
+    color: #888;
+  }
+  .overview {
+    margin-bottom: 48px;
+  }
+  .overview h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  .topic-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .topic-card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .tc-blue { background: #eff6ff; border-left: 3px solid #3b82f6; }
+  .tc-green { background: #f0fdf4; border-left: 3px solid #22c55e; }
+  .tc-purple { background: #faf5ff; border-left: 3px solid #a855f7; }
+  .tc-yellow { background: #fefce8; border-left: 3px solid #eab308; }
+  .tc-red { background: #fef2f2; border-left: 3px solid #ef4444; }
+  .tc-orange { background: #fff7ed; border-left: 3px solid #f97316; }
+  .topic-card strong { display: block; margin-bottom: 4px; }
+  section {
+    margin-bottom: 40px;
+  }
+  section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #111;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  section p {
+    margin-bottom: 14px;
+  }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-card {
+    text-align: center;
+    padding: 14px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+  .stat-card .num {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 4px 0;
+  }
+  .stat-card .label {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  .quote-block {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-style: italic;
+    line-height: 1.7;
+  }
+  .quote-block .attribution {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-top: 8px;
+    font-style: normal;
+  }
+  .qb-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .qb-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .qb-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .qb-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .qb-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .qb-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .gloss {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+  }
+  .highlight-box {
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .hb-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .hb-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .hb-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .hb-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+  footer a { color: #3b82f6; text-decoration: none; }
+  @media (max-width: 600px) {
+    article { padding: 24px 16px 48px; }
+    header h1 { font-size: 22px; }
+    .topic-cards { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <h1>Bending Spoons 收购 Airtable、Snap 财报逆袭、BMW 弹广告</h1>
+  <div class="meta">
+    TBPN · 2026 年 8 月 4 日 · 2 小时 30 分钟<br/>
+    嘉宾：Grace Li · Samir Kaji · John Quinn · Nikhil Reddy · Art Levy · Russell Kaplan · Brendan Carr
+  </div>
+</header>
+
+<div class="overview">
+  <h2>为什么这期值得关注</h2>
+  <div class="topic-cards">
+    <div class="topic-card tc-blue">
+      <strong>Airtable $117 亿估值 → $12.85 亿卖出</strong>
+      SaaS 独角兽以 2.7 倍 ARR 被 Bending Spoons 收购，标志整个软件板块估值的根本性重定价
+    </div>
+    <div class="topic-card tc-green">
+      <strong>Amazon 诉 Perplexity 被第九巡回法院推翻</strong>
+      用户部署 AI agent 购物 ≠ 公司未经授权访问，为智能体经济确立了关键法律先例
+    </div>
+    <div class="topic-card tc-purple">
+      <strong>五角大楼反无人机市场 9 周上线</strong>
+      Kaizen 为 JIDA 401 打造了"Shopify 式"双向市场，买家包括 DoD、州执法和盟国
+    </div>
+    <div class="topic-card tc-yellow">
+      <strong>Snap 订阅收入暴增 85% 成十亿美元业务</strong>
+      仅 3% 用户付费，年化收入已超 $10 亿；但北美 DAU 下滑 7%，核心用户池在收缩
+    </div>
+    <div class="topic-card tc-red">
+      <strong>FCC 将人形机器人和机器狗加入黑名单</strong>
+      Brendan Carr 推动供应链安全：70% 电子产品在中国实验室测试，"Bad Labs"被清除
+    </div>
+    <div class="topic-card tc-orange">
+      <strong>Intelligence（Design Arena）：$6000 万收入、560 万用户</strong>
+      Grace Li 的"创意超级智能"愿景：从设计验证到游戏对战，打造智能供应商市场
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>一、Airtable：SaaS 估值崩塌的标志性事件</h2>
+
+  <p>2026 年 8 月 4 日，科技圈被一条新闻刷屏：曾经估值 $117 亿的 Airtable，被意大利"软件效率工厂" Bending Spoons 以 $12.85 亿企业价值收购——仅仅是其历史峰值的十分之一。这个交易触及了硅谷近年来最核心的焦虑：那些在 2021 年以天价估值融资的 SaaS 独角兽，到底还值多少钱？</p>
+
+  <div class="stat-grid">
+    <div class="stat-card" style="background:#eff6ff;">
+      <div class="label">历史最高估值</div>
+      <div class="num" style="color:#3b82f6;">$117 亿</div>
+      <div class="label">2021 年</div>
+    </div>
+    <div class="stat-card" style="background:#f0fdf4;">
+      <div class="label">当前 ARR</div>
+      <div class="num" style="color:#22c55e;">$4.8 亿</div>
+      <div class="label">年增长 20%</div>
+    </div>
+    <div class="stat-card" style="background:#fef2f2;">
+      <div class="label">出售价格</div>
+      <div class="num" style="color:#ef4444;">$12.85 亿</div>
+      <div class="label">企业价值 · 2.7x ARR</div>
+    </div>
+    <div class="stat-card" style="background:#fff7ed;">
+      <div class="label">累计融资</div>
+      <div class="num" style="color:#f97316;">$14 亿</div>
+      <div class="label">几乎全被清算</div>
+    </div>
+  </div>
+
+  <p>具体来看：Airtable 账上持有近 $10 亿美元现金，股权总价值约 $22.5 亿——刚好覆盖优先清算权。早期员工和创始人可能拿到了一些回报，但后期投资者基本只能拿回 1 倍本金，钱还被锁了好几年。对曾在心里把期权按 $117 亿估值标记的员工来说，这是残酷的清醒。</p>
+
+  <div class="quote-block qb-blue">
+    "总留存率是没有规模效应或网络效应的企业终端价值最重要的预测变量。它在数学上决定了 Bending Spoons 这类买家愿意付多少钱。"
+    <div class="attribution">— Jared Sleeper，前 Airtable 重度用户</div>
+  </div>
+
+  <p>Airtable 成立于 2012 年，最初被定位为"现代版 Google Sheets"——一个让任何人都能搭建数据库和仪表盘的工具。但随着 AI 代码生成工具的崛起，Tyler 在节目中坦承：他 2015 年用 Airtable 做的那些内部仪表盘，"今天百分之百会用 vibe coding 方案替代"。TBPN 主持人做了一个有趣的区分：真正需要关注的是新用户的增长速度——"如果你的增长来自现有客户扩座位，而不是新公司选择你作为最佳工具，那本质上是在消耗存量信任。"</p>
+
+  <div class="highlight-box hb-yellow">
+    <strong>作者概括</strong>：Airtable 的出售很像 DTC 电商当年的路径——在某个短暂的窗口期，单点 SaaS 产品被赋予了与平台型科技公司相同的 VC 估值。当 IPO 通道堵塞、战略买家兴趣减退、AI 工具降低了替代成本，市场的"价值发现"来得比任何人预想的都快。
+  </div>
+</section>
+
+<section>
+  <h2>二、HyperAgent 分拆：交易中的"金蝉脱壳"</h2>
+
+  <p>Airtable 交易中有一个引人注目的细节：公司 AI 业务 HyperAgent 在收购完成前被分拆为独立公司。创始人 Howie 曾在 TBPN 上谈过这个产品——"如果执行得当，可以年增长 10 倍"。TBPN 主持人称之为"金蝉脱壳"：旧业务卖给 Bending Spoons（它们的收购理念是精简团队、高效运营、不求疯狂增长），而最有增长潜力的人才和资源则带着 AI 业务做"二次创业"。</p>
+
+  <p>这个操作也反映了 Bending Spoons 的商业模式定位。Bending Spoons 不是来"拯救增长"的——它们是来"提取效率"的。正如 Tyler 指出的，Bending Spoons 是"买方最后选择"——但在当前环境下，这依然提供了真实流动性。作为一家上市公司（public.com 上可交易），Bending Spoons 正在成为"prosumer SaaS 的 Constellation Software"。</p>
+</section>
+
+<section>
+  <h2>三、Notion 的对照：AI 带来的命运分岔</h2>
+
+  <p>与 Airtable 形成鲜明对比的是 Notion。2026 年 1 月，GIC、Sequoia 和 Index 通过内部股权转让购买了 Notion 股票，总交易额 $2.7 亿，估值维持 $110 亿——与 Airtable 历史峰值持平。TBPN 在节目中报道：Notion 在 2025 年的增长速度在 AI 采用推动下加快，超过 50% 的 ARR 来自 AI 赋能客户。</p>
+
+  <p>这组对比揭示了 AI 时代 SaaS 的分岔路口：AI 既是替代低端用例的威胁（让搭建基础仪表盘变得免费），也是增强深度协作产品的加速器（让知识管理和团队工作流更有价值）。关键变量不是"你做不做 SaaS"，而是你的产品有没有足够深的团队协作护城河。</p>
+</section>
+
+<section>
+  <h2>四、MySpace 复活：反算法社交的怀旧实验</h2>
+
+  <p>Vanderhook 兄弟在纪录片《MySpace》中宣布计划重新上线这个曾经的社交网络巨头。MySpace 的估值轨迹是一部微缩硅谷史：2005 年默多克的 News Corp 以 $5.8 亿收购，2011 年以约 $3500 万甩卖给 Specific Media（Vanderhook 兄弟 + Justin Timberlake），2016 年 Time Inc 以约 $8700 万收购母公司，最终在 2019 年回到 Vanderhook 兄弟手中。</p>
+
+  <p>新 MySpace 的核心赌注是"反算法"。Vanderhook 兄弟不认为"偏好伪装"理论成立——人们说他们不喜欢算法推荐，他们是真的不喜欢。回归早期 MySpace 的个性化主页和音乐发现基因，是一个值得尊重的信念。但在 2026 年，一个不依赖算法推荐的社交网络能否获得足够的使用时长来实现商业化？这可能是整个科技行业最难回答的问题之一。</p>
+</section>
+
+<section>
+  <h2>五、Snap：被低估的财务反转故事</h2>
+
+  <p>Snap 交出了一份好于预期的 Q2 财报：收入 $16 亿（+19% YoY），广告收入约 $13 亿（+9%），利润和自由现金流的增速超过收入——典型的经营杠杆释放。最令人惊讶的数字来自订阅和付费服务：季度收入 $3.16 亿，同比增长 85%，年化已超 $10 亿——而这只来自约 3% 的用户群。</p>
+
+  <p>但阴影同样明显：北美 DAU 下降 7%，欧洲下降 2%。一家年收入 $60 亿的公司，市值不到 $100 亿——市场对 Snap 的长期叙事缺乏信心。AI 驱动的广告推荐确实更精准了，但如果最富有的用户群在流失，这条路能走多远？</p>
+
+  <div class="quote-block qb-green">
+    "我们已经花了超过十二年重新发明计算机……Specs 代表了将计算带入现实世界的机会。目前市面上有笨重但功能强大的头显，也有轻量但功能有限的 AI 眼镜。Specs 结合了两者。"
+    <div class="attribution">— Evan Spiegel，Snap CEO，在 CNBC 上</div>
+  </div>
+
+  <p>Spectacles 的 R&D 投入约 $3 亿/年——只占 Snap 成本的 5%，但持续分散投资者注意力。在财报电话会上被问到预购数量时，Spiegel 没有给出直接回答。节目中的共识是：如果数字好看，他会说。Spiegel 没戴着自己公司最引以为傲的产品接受采访，这本身就是一种无言的信号。</p>
+</section>
+
+<section>
+  <h2>六、OpenAI vs Apple：一场离谱的人才争夺诉讼</h2>
+
+  <p>Apple 起诉 OpenAI，指控其无视警告、挖走关键人才。OpenAI 的回应博客揭示了一系列令人尴尬的事实：Apple 的律师把邮件发给了姓氏相似但并非目标的那位亚裔高管；声称与 OpenAI 总法律顾问讨论过指控，后来承认那次对话从未发生；指控前员工 Chang Liu 离职后非法访问文件，却未提及 Apple 员工在他离职后还主动请他帮忙定位内部文档。</p>
+
+  <p>OpenAI 分享了完整的 iMessage 记录——Chang Liu 的前同事写道"我可以问其他 10 个人，但你是最聪明的"，请他帮忙找文件。Tyler 的评论一语中的："如果你在做你觉得不对的事，你会发消息给同事说'哈哈我还能访问公司电脑 LOL'吗？"更令人困惑的是：在一场持续一年的人才争夺战中，Apple 竟然没有在员工离职时收回公司的笔记本电脑。</p>
+</section>
+
+<section>
+  <h2>七、BMW 弹出蜘蛛侠广告：豪华品牌的用户契约</h2>
+
+  <p>一场由 X 上的病毒视频引发的争议：BMW 车主展示启动车辆时信息娱乐屏幕弹出 Spider-Man 宣传横幅。Paul Graham 转发说"我再也不买 BMW 了"。16z 合伙人 Josh Allman 评论："在所有品牌中，我以为 BMW 是最不可能在启动引擎时给我弹广告的——这感觉完全违背了豪华与性能。"</p>
+
+  <p>但 Community Notes 很快补充了关键语境：这只是可选启动横幅（7 月 27 日至 8 月 10 日有效），不会自动播放——车主必须手动点击才会触发主题动画（配乐 + 车辆灯光同步）。BMW 此前也做过圣诞主题等类似限时体验。Tyler 和 Jordy 的分歧在于：Tyler 觉得"有横幅就够离谱了"，Jordy 则认为"如果你点击了，那就说明你确实想要蜘蛛侠主题"。</p>
+
+  <p>这起风波的根源不是一次广告推广——而是消费者对"我付了那么多钱，为什么还要看广告"的深层心理契约被触犯。Jordy 的 Kindle 故事很能说明问题：为了省 $10 选了广告版，结果每天面对无法关闭的锁屏广告——"如果 BMW 在购买时明确给你选项，是买广告版便宜一些还是买纯净版贵一些，那感觉就完全不一样。"</p>
+</section>
+
+<section>
+  <h2>八、Grace Li 与 Intelligence：创意超级智能的飞轮</h2>
+
+  <p>本期最令人印象深刻的创始人访谈来自 Grace Li。她的公司 Intelligence 以 $6000 万收入和 560 万用户（覆盖 192 个国家）完成了 Index Ventures 领投的种子轮。核心产品 Design Arena 的优雅之处在于：它不需要"冷启动"——用户想设计东西，平台自然给出多个 AI 版本；用户选择最好的，反馈数据直接回流改善模型。</p>
+
+  <p>Grace Li 用歌手打比方："你怎么判断一首歌会不会火？不是一个人关在房间里琢磨——是发多首歌，看哪首中了。"游戏开发者同理：出多款游戏，看玩家玩哪个。Design Arena 的产品形态恰好就是设计师和客户沟通的自然形式——"出几版方案，看客户喜欢哪版"。</p>
+
+  <div class="quote-block qb-purple">
+    "创意超级智能意味着：你脑海中产生的任何想法，在产生的瞬间就能在现实世界中看到它。你的想法与现实之间没有延迟、没有摩擦。"
+    <div class="attribution">— Grace Li，Intelligence CEO</div>
+  </div>
+
+  <p>Grace 描绘了一个"智能市场"的愿景——未来会有和今天信息供应商一样多的智能供应商。无论是基础模型 API、后训练模型，还是带特定技能的 off-the-shelf 模型，Intelligence 想做的是智能版的 PageRank：把最好的智能匹配给需要智能的人。</p>
+
+  <p>正在开发中的 Gaming Arena 代表了更硬核的 AI 前沿——游戏开发"极难验证"。不仅需要好剧情，还要判断"是否好玩"。这涉及策略、游戏状态保存、图形渲染和多进程处理。Grace 说他们已经在这方面帮多家公司做了一段时间。</p>
+</section>
+
+<section>
+  <h2>九、Samir Kaji 与私募市场的周期性</h2>
+
+  <p>Samir Kaji 在硅谷银行从 1999 年开始他的职业生涯——亲历了 dot-com 时代"按眼球数量"给公司估值的荒唐。今年是他从业第 27 年，他说："这是我见过最疯狂的时期。"私募基金数量从 3,000 家膨胀到 30,000 家（15 年内），私募市场规模从 $1 万亿膨胀到 $17 万亿。独立财富顾问管理着约 $10 万亿资金，但只有约 3% 配置在另类资产中。</p>
+
+  <p>Allocate 做的事情是架桥：让财富顾问在一个平台上完成对私募基金的发现、准入、执行和报告。对于那些写不了 $1000 万支票的高净值个人，这是参与顶级基金的少数渠道之一。</p>
+
+  <div class="quote-block qb-yellow">
+    "投资界最危险的一句话就是'这次不一样'——因为它很少真的不一样。"
+    <div class="attribution">— Samir Kaji，Allocate 联合创始人 & CEO</div>
+  </div>
+
+  <p>Samir 并非全盘否定 AI 投资的繁荣——他承认"AI 的技术创新可能比互联网、移动和云加起来还大"。但他警告，资本的速度和规模将产生大量"昂贵的错误"。赢家确实会比以往任何时候都大——但这个问题仍然悬而未决：哪些公司是真正持久的？大模型会不会吞掉你的产品？开源模型会不会让护城河消失？"现在还太早，说不清楚。"</p>
+
+  <p>在基金结构方面，Solo GP 模式既有吸引力（快速决策，无需投委会）也有致命缺陷（孤独、烧钱、四年后可能发现回报仅 1.1 倍）。Samir 提到 Chemistry 作为新基金模式的范例——由来自 Index、Bessemer 的三位合伙人组成的 Series A 领投基金，卡在种子基金和大基金之间的空白地带。但他说这种定位的成功案例"十只基金里大概只有一只"。</p>
+</section>
+
+<section>
+  <h2>十、John Quinn 与智能体经济的法律革命</h2>
+
+  <p>John Quinn——Quinn Emanuel 的创始合伙人，被称为"最令人畏惧的律师"——在上节目前两小时刚收到第九巡回上诉法院的意见书。他代表 Perplexity 对抗 Amazon 的诉讼，获得了关键胜利。</p>
+
+  <p>案件的核心：Amazon 指控 Perplexity 的 AI agent "Comet" 未经授权访问 Amazon 网站购物，违反了《联邦计算机欺诈与滥用法案》（CFAA）。地方法院签发了初步禁令。但第九巡回法院推翻了这个判决，理由是：访问 Amazon 计算机的不是 Perplexity——是用户。用户下载 Comet、部署它、指示它去购物。这是工具制造者与工具使用者责任归属的关键区分。</p>
+
+  <p>Quinn 接着讨论了 AI agent 签约带来的法律挑战。加州民法典 §1714（2026 年生效）明确规定：你不能说是 AI 的错。如果你的 agent 出去买了 10,000 支牙刷而不是你想要的 10 支——那是你的责任。传统合同法中的"代理"和"显然授权"概念同样适用于 AI agent：如果对方有理由相信 agent 有授权，合同就具有约束力。</p>
+
+  <div class="quote-block qb-red">
+    "你不能说这是 AI 的错。加州民法典 §1714 明确规定了——这是你的 agent，你负责。"
+    <div class="attribution">— John Quinn</div>
+  </div>
+
+  <p>不过"错误"原则可能在某些情况下提供救赎：如果你因为解析错误买了 10,000 件而历史只买 100 件，交易对手可能被认定为"注意到了错误"。Quinn 的三条防护建议非常务实：设置金额和频率的硬上限、重要交易必须有人工介入、定期审计 agent 的交易历史——"agent 可以在你发现之前签下几千份合同"。</p>
+
+  <p>当被问到 AI 对法律行业本身的影响时，Quinn 直言不讳："律师是文字匠——所以我们有靶心在背。大多数同行在暗中吹口哨，假装不知道 AI 将带来什么。"大律所目前财务表现很好（尤其是做争议解决的），存在典型的"创新者困境"——为什么要改变一个正在赚钱的模式？但按小时计费的模式正在被根本性挑战："如果按一个按钮就能产出 80-90% 的工作成果——省了多少小时？客户在期待这种节省。"</p>
+
+  <div class="quote-block qb-blue">
+    "在我们的律所，有一句话：先弄清楚什么最终会真正重要的那一方，赢。"
+    <div class="attribution">— John Quinn，Quinn Emanuel 创始合伙人</div>
+  </div>
+</section>
+
+<section>
+  <h2>十一、数据中心合同：数万亿投资的隐藏风险</h2>
+
+  <p>当 Tyler 问到 AI 数据中心融资结构的法律风险时，Quinn 勾勒了一幅复杂的图景：SPV 在中间、租户合同、债券融资、证券化、私人信贷——交叉违约条款一层套一层。他坦率地预测："不是每个数据中心都能按时上线、人人履约。"而最大的瓶颈不是芯片或资金——"一家 Neo Cloud 告诉我，他们面临的最大问题是找不到足够的电工。"</p>
+
+  <p>对于"算力过剩"的可能性，Quinn 认为大公司面临不想要的合同时通常会触发谈判而非直接违约——"因为你的问题也是我的问题"。但如果市场真的转向，会有大量重组、责任管理操作甚至破产。"律师会很忙。"</p>
+</section>
+
+<section>
+  <h2>十二、Kaizen：把 Shopify 模式带到五角大楼</h2>
+
+  <p>Nikhil Reddy 的故事是一种罕见的组合：Anduril 的前早期工程师，现在正在用同样的速度哲学改造政府软件。Kaizen 在 9 周内从白板到上线，为五角大楼的反无人机任务组 JIDA 401 打造了一个双向电子商务市场。</p>
+
+  <p>市场有三组买家：国防部有预算的采购办公室、州和地方执法机构（比如保护 FIFA 世界杯场馆的警察力量）、以及盟国。供应商端是美国本土的 OEM 厂商。平台内置了 agent 辅助工具——输入"保护 FIFA 世界杯场馆"、威胁画像和预算，系统自动推荐可采购的装备组合并一键加入购物车。</p>
+
+  <p>Nikhil 对政府软件市场的诊断很尖锐：城市和县级被 PE 持有的旧 Java 系统占据（15 年没更新过），联邦级则是低利润服务公司卖几百个人头、收费数亿美元、花 18-24 个月"交一个试点"——"基本一事无成"。Kaizen 的策略是按结果和质量收费，按纳税人应得的服务水平来设计产品。</p>
+</section>
+
+<section>
+  <h2>十三、Cognition：独立 Agent 实验室的全球扩张</h2>
+
+  <p>Art Levy 从 Brex（第 30 号员工做到首席商务官）加入 Cognition 担任全球合作伙伴 VP。Russell Kaplan（Cognition 总裁）阐述了公司的定位："我们是独立的 agent 实验室。我们想让每家公司都拥有最好的 agent 来解决软件工程问题。"</p>
+
+  <p>Russell 分享了一个"创新者困境"的绝佳案例：一家数万工程师的全球 2000 企业全面部署了 Devin。产品经理组织用它做了一件奇妙的事——接到客户需求 → 让 Devin 做原型修复 → 然后让 Devin 把修复总结成 Jira ticket → 把代码删掉。问为什么？那位产品经理说："我不是工程师组织的，写代码不是我的工作。"</p>
+
+  <div class="quote-block qb-green">
+    "AI 的进步速度远远超过了企业内部组织重新设计的速度。把今天的能力冻结住，你仍然有至少十年的疯狂进步空间——仅仅是把这些东西真正推广和落地到企业里。"
+    <div class="attribution">— Russell Kaplan，Cognition 总裁</div>
+  </div>
+
+  <p>关于模型选择，Russell 用一个生动的比喻描述了当前企业的思考："我需要开法拉利去超市吗？"不同模型有不同特长——OpenAI 模型在安全漏洞召回上最好，Anthropic 模型在精确度上更优。企业开始思考能否用开源模型处理部分负载、用更便宜的模型做更快推理。</p>
+
+  <p>一个出人意料的亮点是日本。Devin 在日本的表现远超其他国际市场——用户群极其认真细致（每张支持工单都是一篇包含全部调试信息的文章），渠道合作伙伴"深度理解产品价值主张"。日本用户社区甚至自发选定了对 Devin 的尊称："Devin-kun"——"你的朋友、帮你做事的副手"。Cognition 自己并没有发起这个称呼——是社区告诉他们的。</p>
+
+  <p>Cognition 目前有 97 位前创始人在团队中，每周大约收购一支团队。他们在周末内完成了对 Windsurf 的收购（Windsurf 规模是 Cognition 的四倍）。Art Levy 把合作伙伴关系称为"M&A 的预演"——先试试文化匹配和产品整合，服务好了一些客户之后双方自然觉得"不如一起干"。</p>
+</section>
+
+<section>
+  <h2>十四、Brendan Carr 与 FCC 的新时代</h2>
+
+  <p>FCC 主席 Brendan Carr 首次亮相 TBPN，带来了一系列"不传统的 FCC 主席会做的事"。最新动作包括：将先进机器人（人形机器人、四足机器狗）加入 FCC 黑名单——禁止新机型进口或在美国销售。此前无人机已被加入黑名单，推动约 $50 亿新资金流入美国本土无人机制造业。</p>
+
+  <div class="quote-block qb-orange">
+    "约 70% 进入美国的电子产品在中国境内的实验室进行测试——其中一些实验室与解放军有关联。"
+    <div class="attribution">— Brendan Carr，FCC 主席</div>
+  </div>
+
+  <p>FCC 正在通过"Bad Labs"行动将这些不可信的测试实验室从审批流程中清除。同时 Carr 推行"Delete Delete Delete"——逐页审查每一条联邦法规，已经删除了约 400 页。太空申请积压减少了约 50%，审批从人工逐份阅读长篇叙述改为给出明确规则、符合标准就上快车道的装配线模式。</p>
+
+  <p>但也许最出乎意料的话题是 E-Rate——FCC 每年补贴数十亿美元给学校上网的项目。Carr 正在进行全面审查，以确保项目反映当前关于儿童屏幕时间的研究。他的判断很直接："这个国家过去几年实验了全面拥抱屏幕时间——结果开始显现，而且不好。我们经历了人类资本学习方面最严重的倒退之一。"Tyler 补充了他的亲身见闻：附近小学的体育课，超过一半时间孩子坐在屏幕前看运动图表——"这些是孩子，让他们在外面跑不行吗？"</p>
+
+  <p>在太空方面，Carr 正在为 direct-to-device 技术搭建监管框架——智能手机直接连接低地球轨道卫星，不再需要 Starlink Mini 天线。Starlink 获得了一大块频谱，Amazon 收购 Globalstar 获取频谱做自己的 direct-to-cell。SpaceX 在财报中宣布与 NVIDIA 合作设计 Starmind AI 有效载荷——把数据中心级计算送入轨道。</p>
+</section>
+
+<section>
+  <h2>十五、SpaceX 首份上市公司财报：Starlink 才是真引擎</h2>
+
+  <p>SpaceX 作为上市公司发布了首份财报。总收入 $78.1 亿（vs 预期 $69.3 亿，+92% YoY），每股亏损 $0.09（vs 预期亏损 $0.26）。三大业务全部超预期——但收入结构的剧变才是真正的故事。</p>
+
+  <div class="stat-grid">
+    <div class="stat-card" style="background:#eff6ff;">
+      <div class="label">太空（发射）</div>
+      <div class="num" style="color:#3b82f6;">$9.62 亿</div>
+      <div class="label">预期 $8.35 亿</div>
+    </div>
+    <div class="stat-card" style="background:#f0fdf4;">
+      <div class="label">连接（Starlink）</div>
+      <div class="num" style="color:#22c55e;">$42.9 亿</div>
+      <div class="label">预期 $38.3 亿</div>
+    </div>
+    <div class="stat-card" style="background:#faf5ff;">
+      <div class="label">AI</div>
+      <div class="num" style="color:#a855f7;">$25.6 亿</div>
+      <div class="label">预期 $21.8 亿</div>
+    </div>
+  </div>
+
+  <p>SpaceX 以发射火箭起家——现在太空发射是其第三大业务。Starlink 连接服务的收入是发射业务的 4.5 倍，AI 业务也超过了发射。而且 Starlink 是公司唯一的利润来源——发射业务虽有 NASA 大合同，但还在亏损。2025 年全年亏损 $49 亿，主要因 AI 基础设施的重度投资，这也部分解释了为什么 2 月与 Musk 的 xAI 合并。</p>
+
+  <p>自 6 月 12 日以 $150/股上市以来，SpaceX 股价下跌约 16%——尽管三大业务全面超预期。市场在担心什么？$49 亿亏损、AI 投资的持续高消耗、以及"太空 AI 数据中心"这个愿景到底什么时候能落地。</p>
+</section>
+
+<section>
+  <h2>核心金句</h2>
+
+  <div class="quote-block qb-blue">
+    "总留存率是没有规模效应或网络效应的企业终端价值最重要的预测变量。它在数学上决定了 Bending Spoons 这类买家愿意付多少钱。"
+    <div class="attribution">— Jared Sleeper，谈 Airtable 以 2.7 倍 ARR 出售</div>
+  </div>
+
+  <div class="quote-block qb-yellow">
+    "投资界最危险的一句话就是'这次不一样'——因为它很少真的不一样。"
+    <div class="attribution">— Samir Kaji，Allocate CEO，从 1999 年至今见证过多轮周期</div>
+  </div>
+
+  <div class="quote-block qb-purple">
+    "创意超级智能意味着：你脑海中产生的任何想法，在产生的瞬间就能在现实世界中看到它。你的想法与现实之间没有延迟、没有摩擦。"
+    <div class="attribution">— Grace Li，Intelligence CEO</div>
+  </div>
+
+  <div class="quote-block qb-green">
+    "AI 的进步速度远远超过了企业内部组织重新设计的速度。把今天的能力冻结住，你仍然有至少十年的疯狂进步空间。"
+    <div class="attribution">— Russell Kaplan，Cognition 总裁</div>
+  </div>
+
+  <div class="quote-block qb-red">
+    "你不能说这是 AI 的错。加州民法典 §1714 明确规定了——这是你的 agent，你负责。"
+    <div class="attribution">— John Quinn，谈 AI agent 行为的法律责任</div>
+  </div>
+
+  <div class="quote-block qb-orange">
+    "约 70% 进入美国的电子产品在中国境内的实验室进行测试——其中一些实验室与解放军有关联。"
+    <div class="attribution">— Brendan Carr，FCC 主席</div>
+  </div>
+</section>
+
+<footer>
+  <p>来源：<a href="https://share.transistor.fm/s/b35b3f03">TBPN · 2026 年 8 月 4 日</a></p>
+  <p style="margin-top: 8px;">© PodDeck · 由 Claude 根据播客转录自动生成</p>
+</footer>
+
+</article>
+</body>
+</html>
