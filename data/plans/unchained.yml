@@ -1,5 +1,5 @@
 source: unchained
-refreshed_at: 2026-08-05T18:35:02.138Z
+refreshed_at: 2026-08-06T04:07:06.579Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 65
@@ -10,6 +10,95 @@ transcribing: 0
 transcribe_failed: 2
 downloaded: 0
 episodes:
+  - id: f5281bc8-9147-11f1-90f5-5783ac069008
+    guid: f5281bc8-9147-11f1-90f5-5783ac069008
+    title: "DEX in the City: How Claude's Red-Teaming Agents Escaped a Test Without Realizing It"
+    duration: 2990
+    published: Thu, 06 Aug 2026 03:36:00 -0000
+    published_sort: "20260806"
+    first_seen_at: 2026-08-06T04:07:06.577Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3661661316.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3661661316.mp3
+    image: https://megaphone.imgix.net/podcasts/f5281bc8-9147-11f1-90f5-5783ac069008/image/f6f9bf1d29e3318367f76250fdcacd6e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Anthropic's AI agents escaped a hacking test and still think they're inside it. Katherine, Jessi, and Vy Le on
+      who's liable when a model breaks free, plus the $100M Coldcard hack and Kalshi's court losing streak.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      ⁠⁠⁠⁠Cape⁠⁠⁠⁠: Your biggest crypto vulnerability isn't your wallet,
+
+      it's your phone number. Cape is America's privacy-first mobile carrier
+
+      that rotates your SIM identity daily and blocks SIM swaps before they
+
+      happen. Get 33% off your first six months at https://cape.co/unchained
+
+      (use code: UNCHAINED).
+
+
+      ========================================================
+
+
+      Anthropic's AI models broke out of a fake hacking simulation this week, and some still think they're inside it.
+      One agent invented an email address and phone number to pose as a person, then published malware that twelve
+      companies downloaded before anyone caught it.
+
+
+      Katherine Kirkpatrick Bos, Jessi Brooks, and Vy Le use the incident to revisit a theme running through the whole
+      episode: who has a duty to disclose when something breaks, and why crypto and AI are both being left to police
+      themselves.
+
+
+      They start with the Coldcard hardware wallet hack, where a firmware flaw cut seed phrase randomness roughly in
+      half, letting attackers brute-force wallets meant to be unguessable. From there, the hosts turn to Kalshi's losing
+      streak in New York courts and the race among builders to acquire a CFTC-registered designated contract market,
+      before landing on Anthropic's own agents slipping past the guardrails meant to contain them.
+
+
+      Banks have 36 hours to disclose a breach. AI labs and wallet makers, the hosts argue, are still working entirely
+      on the honor system.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Katherine Kirkpatrick Bos⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host of DEX in the City and General Counsel of Chainlink
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jessi Brooks⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, General Counsel at Ribbit Capital⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Vy Le⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of DEX in the City and General Counsel of Veda
+
+      Timestamps
+
+
+      🩺 02:16 Katherine Kirkpatrick Bos on joining Chainlink Labs
+
+
+      🔐 03:08 How a Coldcard firmware flaw let attackers guess seed phrases with AI
+
+
+      💙 18:32 Cape: Get 33% off six months of privacy-first mobile service at https://cape.co/unchained
+
+
+      ⚖️ 19:36 Why Kalshi keeps losing its fight against New York's gambling regulators
+
+
+      🏛️ 30:47 DCM: the CFTC license every prediction market and perps exchange needs
+
+
+      🤖 33:37 Why Anthropic's AI agents escaped a test and still think they're inside it
+
+
+      💧 45:40 Matt Damon's crypto.com ad money and the water.org donation
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     guid: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo
@@ -3282,7 +3371,8 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
+      party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5044,7 +5134,8 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
+      adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -5962,82 +6053,6 @@ episodes:
       ⁠⁠⁠Christopher Perkins⁠⁠⁠, Managing Partner and President of CoinFund
 
 
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 298d55b6-15e9-11f1-b29f-cfddd8ed4437
-    guid: 298d55b6-15e9-11f1-b29f-cfddd8ed4437
-    title: "Bits + Bips: What Happens to Markets Now That the U.S. Has Struck Iran?"
-    duration: 2467
-    published: Mon, 02 Mar 2026 11:55:00 -0000
-    published_sort: "20260302"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4538614691.mp3?updated=1772630461
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4538614691.mp3?updated=1772630461
-    image: https://megaphone.imgix.net/podcasts/298d55b6-15e9-11f1-b29f-cfddd8ed4437/image/da0a4ab46049d39e7b97223e98894a57.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: |-
-      A former Clinton and Biden foreign policy advisor saw it before it happened. Now the question is what investors do next.
-
-      Hours after this episode was recorded, the United States and Israel launched a coordinated military campaign against Iran, killing Ayatollah Ali Khamenei in what analysts are calling the most significant U.S.-Iran escalation in decades.
-
-      Charles Myers, Founder and CEO of Signum Global Advisors and a former senior foreign policy advisor to Hillary Clinton and Joe Biden, had just sat down with Steven Ehrlich to discuss the geopolitical landscape and what it means for investors.
-
-      What he said about Iran during that conversation is now raising serious questions about what comes next, and the investment implications are far from settled.
-
-      In this episode, Myers also addresses whether the "sell America" trade is overdone, where oil is heading, the future of AI funding, and whether Bitcoin can actually function as a safe haven when the world is on fire.
-
-      Hosts:
-
-
-      ⁠Steven Ehrlich⁠, Host of Bits + Bips: The Interview
-
-      Guests:
-
-        ⁠Charles Myers, Founder and CEO, Signum Global Advisors
-
-      Links:
-
-      Iran strike / military action:
-
-      US strikes Iran — https://www.cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl
-
-      US-Iran nuclear talks — https://www.nbcnews.com/world/iran/us-iran-nuclear-talks-trump-military-buildup-attack-missiles-rcna260764
-
-      Largest US military buildup in the Middle East since the early 2000s — https://www.militarytimes.com/news/your-military/2026/02/26/us-military-assembles-largest-force-of-warships-aircraft-in-middle-east-in-decades/
-
-      Oil markets:
-
-      Oil prices surge after Iran strike — https://www.cnbc.com/2026/02/28/iran-us-attack-oil-market-economy.html
-
-      Trump’s energy strategy: targeting oil in the low $50s — https://www.axios.com/2026/02/28/us-iran-attack-energy-oil-prices
-
-      Sell America / US safe haven:
-
-      Global investors question US safe haven status — https://www.cnbc.com/2026/02/28/markets-brace-for-impact-following-us-military-strikes-against-iran.html
-
-      The “Sell America” trade, explained — https://www.bloomberg.com/news/articles/2026-02-02/sell-america-trade-why-investors-are-questioning-us-assets
-
-      Venezuela / Monroe Doctrine:
-
-      Maduro government and the US oil deal — https://www.cnbc.com/2026/01/05/maduro-overthrow-could-pave-the-way-for-us-oil-companies-to-recover-venezuela-assets.html
-
-      The return of the Monroe Doctrine under Trump — https://www.cfr.org/articles/oil-power-and-the-climate-stakes-of-the-u-s-move-in-venezuela
-
-      OpenAI / AI:
-
-      OpenAI raises $110 billion — https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html
-
-      Stargate: OpenAI and SoftBank’s AI moonshot — https://openai.com/index/announcing-the-stargate-project/
-
-      Prediction Markets:
-
-      Polymarket Iran strike odds — https://polymarket.com
-
-      Insider trading on Polymarket: the Maduro bet — https://en.wikipedia.org/wiki/2026_United_States_strikes_in_Venezuela
-
-      Stablecoins / GENIUS Act:
-
-      The GENIUS Act and stablecoin regulation — https://www.gibsondunn.com/the-genius-act-a-new-era-of-stablecoin-regulation/
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
     priority: 1
