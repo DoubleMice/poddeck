@@ -1,0 +1,597 @@
+Speaker 1: You're welcome to TBPN. Today is Wednesday, 08/05/2026. We are live from the TBPN Ultradigm, the Temple of Technology, the Forge of Finance, the capital of capital. Let me tell you about ramp.com. Time is money.
+Save both. Easy to use corporate cards, bills, pay, accounting, and a whole lot more all in one place. What just happened at Google DeepMind? Crazy, crazy morning shake up. A reorg, stepping down, stepping up, stepping left, stepping right.
+There's a lot of different terms. We'll break it down. We'll explain the organization before. Now, what it looks like going forward, what this means, where this goes. So, this morning, Demis Hassabis, the legendary AI researcher, the founder of DeepMind
+Speaker 2: A true scientist.
+Speaker 1: A true scientist. The subject of Sebastian Malabai's book, The Infinity Machine, the Infinite Machine. He announced that he's stepping down as CEO of Google DeepMind. He's also stepping up into the role of Google DeepMind chairman and he will also be Alphabet's chief scientist. So is it a promotion?
+Is it a is it demotion? Is he quitting? Is he getting fired? Who knows? But the most important thing is that he's still there at Alphabet.
+He has a different role, that's what's important. What is the nature of this new role? Google CEO Sundar Pichai also announced that Google DeepMind chief scientist Jeff Dean will be leaving the company after a twenty seven year run to start, along with Google senior fellow Sanjay Giamatte, a public benefit corporation to accelerate discoveries in machine learning science and engineering. And if you're not familiar with Jeff Dean, he is the Chuck Norris of of computer engineering and and software engineering. There's a whole list of jokes around Jeff Dean jokes.
+Speaker 2: Why don't you read some of them, John?
+Speaker 1: What are what are my favorite Jeff Dean jokes? There's a whole bunch. Any opportunity to repost the the Jeff Dean Informatica link. Compilers don't warn Jeff Dean. Jeff Dean warn warns compilers.
+Jeff Dean's keyboard, it only has two keys, a one and a zero because he programs in binary. It's that type of thing. Unsatisfied with constant time, Jeff Dean created the world's first o one over n algorithm. So he can bend time. There's all these programmer jokes.
+I don't know. They're a lot of fun. He knows the last digit of pi, that type of thing. But he's been a legend. These were on Quora maybe fifteen years ago, maybe more.
+People were so excited about him, and for good reason. He invented tons of things Jeff
+Speaker 2: Dean doesn't call APIs. APIs call him.
+Speaker 1: Exactly. That type of thing. Very fun. So he's the the lore around Jeff Dean has been substantial throughout his entire career. He has been, you know, very key to so many different Google projects, Integral and MapReduce, and actually being able to scale Google systems.
+Speaker 2: Does this make any sense? Chuck Norris counted to infinity twice. Jeff Dean did it in parallel.
+Speaker 1: Oh. Okay. Yeah. That's kinda funny. It's a programmer joke, but I don't know.
+But, yeah. It's just funny that he was able to, like, have this level of aura at Google as, like, a non founder, just a great scientist. And it was so long ago before there were before there was so much attention on like talent below the founding team and Yeah. Below the investing team or whatever, you know.
+Speaker 2: Truly a living legend. Yeah. Jersey will be going Google Jersey will be going in the rafters.
+Speaker 1: Yes. But For sure.
+Speaker 2: He's not done.
+Speaker 1: He's not done and he's starting a new company, is very exciting because there's a lot of opportunity in machine learning, science and engineering, obviously. So Google DeepMind's CTO and Google's chief AI architect, which always seemed to be an odd decision because DeepMind was not its own reporting unit. Like, when the when quarterly earnings happening happened, you get YouTube numbers, you get Google Cloud numbers. And so having a CEO of those divisions made a lot of sense of those organizations. But DeepMind was always a was always a unit that sort of cut across everything because the work that DeepMind does on Gemini and the models made a lot of sense to vend into YouTube.
+And now there's a little Gemini button when you're on YouTube and you can just go to a one hour long podcast and say, when did they talk about this? And it'll just answer you. And so that was like a feature that was vended into that. It obviously goes into core Google search. Gemini models help with ads.
+They help with the actual Gemini products. Like, they get vended everywhere. There's a Gemini button in Chrome. There's also a Gemini button in Google Docs. There's also a Gemini button in Gmail.
+And so, it was it was never like its own even though it was its own unit, like, the value that it created at Google was very was very cross organizational as opposed to, you know, the YouTube team has a CEO and they have revenues and they have ads and they have a product. And yes, it's integrated into the other things, but it very much is a standalone organization, reports its own financials and has a CEO. So no CEO for DeepMind, at least in the short term. We'll see where it goes. On X, Demis says the move will allow him to focus on long term strategy and accelerating scientific breakthroughs.
+He's done a lot of that already, including leaning into his work at Isomorphic to help cure disease. He fleshed this out more on Google's blog. He said, I've decided that now is the right time for me to hand over my day to day operational responsibilities at GDM so that I have the time and space to focus on the big picture and help influence what is to come to the best of my ability. In my new role, I will continue to work closely with Sundar on strategic and global AGI matters and to advise Corey, Josh, and the GDM leads from our awesome new London platform 37 offices. As part of this transition, I will also be leaning into my role at Isomorphic where we are making extremely rapid and promising progress to accelerate our mission there even faster.
+As you have heard me say many times, I've always believed the number one application of AI should be to improve human health. That is a great message. Very different from the SpaceX s one. The number one application of AI is Harness the power of the entire galaxy. I mean, there's that, but also just in the actual, like, application, it's like it's like enterprise workflows,
+Speaker 2: which is Yeah. So the the now, at least. And so Some type of shake some some type of shakeup has been expected Yeah. For a long time. Yeah.
+Google The DeepMind organization has, you know, made some real contributions to the space, but has been lagging. It's been a point of embarrassment for, I would say, for Google, for I would say, a year Mhmm. Plus. Mhmm. They've always felt behind
+Speaker 1: Mhmm.
+Speaker 2: Even though they created so much of the fundamental research that has, you know, gone into this entire chapter of the, you know
+Speaker 1: Certainly not behind on video. The video stuff's really good.
+Speaker 2: Yeah. Sure.
+Speaker 1: V o three.
+Speaker 2: But
+Speaker 1: But then you get kinda tied up because the Chinese models are like, actually, we will do Mickey Mouse.
+Speaker 2: Yeah. But here's the thing. At no point Yeah. Has Google been breaking out their true AI revenue Sure. In a way that gets shareholders excited.
+Speaker 1: Yeah. Yeah.
+Speaker 2: Yeah. That's good point. What would Yeah. And there's just been so many so many question marks. There was a moment, I mean Mhmm.
+Over a year ago
+Speaker 1: Mhmm.
+Speaker 2: Felt like Google had some real momentum.
+Speaker 1: Yeah.
+Speaker 2: And But but that momentum was very much lost. And so Yeah. There's this question of, you know, when Gnome left which was about a month ago Yeah. That felt shot that was like more shocking in some ways Sure. Than even this.
+Yeah. Feels like expected. And then to leave what what feels like a hole in the organization is pretty pretty wild. Stock's down. It was down 5%
+Speaker 1: Mhmm.
+Speaker 2: Around the open. Yeah. It's it's recovered a little bit, just down three and a half percent. Yeah. But I mean, the big thing is like they just started like Google as a company, I don't think was able to be at least sufficiently AI pilled.
+Right? They started selling compute. A lot of researchers I'm sure were frustrated with that. Yeah. And that could have could have led to some of the historical
+Speaker 1: thinks NVIDIA shouldn't sell the chips if they're really AGI failed. The much more extreme version of of Google should keep the TPUs for themselves is is NVIDIA should keep the GPUs for themselves. And, yeah, I mean, that was something that was that was, you know, discussed as, okay, if if if you believe you're in the foothills of the singularity, you you you will want to scale your compute. If you're seeing traction in the in the products that you're making, you you want to be GPU rich.
+Speaker 2: Yeah.
+Speaker 1: You don't want to be selling TPUs to other companies. And so that's gotta be there's gotta be some tension. But Google's a big organization. There's multiple organizations within Google, and they all have different different KPIs. So one team might say, yeah, my my mandate is to sell as many of these as possible externally.
+Other people might say, my job is to keep as many of these internally, and there's a lot of debates there.
+Speaker 2: So Yeah.
+Speaker 1: We'll see.
+Speaker 2: Yeah. And and obviously, has made a, you know, massive bet
+Speaker 1: on Yeah.
+Speaker 2: Anthropic and is, you know, becoming their largest financial backer through some new reporting on on some of the lease guarantees that they're doing. Yeah. But but anyways, still so surprising people. Obviously one of the greatest companies of all time Mhmm. Has every possible advantage in this race, and yet has just consistently struggled.
+Susan Jong, who is currently on leave from DeepMind
+Speaker 3: Mhmm.
+Speaker 2: Posted a little somewhat of a fable.
+Speaker 1: Okay.
+Speaker 2: Said, backdrop, kings all asleep slash on vacation while minions slave away. August 2024, first big fail. Fast forward January 2025, only competent VP bails after one terrorist lead demanding an even bigger slice of pie breaks the camel's back. Summer twenty twenty five, a year ago, second big fail, and king of terrorists climbs the ranks above the slumbering execs. This is a crazy tweet.
+Summer twenty twenty six, slumbering execs and terrorists who only show up for successful announcements move on, leaving just the king of terrorists behind. Lessons, if you're high enough up there, you can pretty much be a terrorist and hold orgs hostage while continuing to ask for more and more and more until there's absolutely no more aura or gold left to plunder, and then just move on to greener pastures to do it all over again. And we'll leave it up to you
+Speaker 4: This is
+Speaker 1: a crazy crazy post.
+Speaker 2: To try to figure out who's who in this story. I don't it doesn't strike me that that Susan will be headed back to the company after after this pose.
+Speaker 1: Crazy pose.
+Speaker 2: She says, I've been on leave since January. I got pretty burned out by certain people who just say yes to everything to avoid ever making a hard call
+Speaker 1: Yeah.
+Speaker 2: And leave it all to the hungry minions to back stab each other until success finds a cursed hole to
+Speaker 1: crawl I mean, to be fair, I I I was looking at at Tyler's alt account and he he talks about us like this all the time. Yeah. He's always talk he refers to you as the slumbering exec and me as the terrorist. The terrorist. I mean, I believe in free speech.
+I defend your right to say these things, Tyler. I am offended, but, you know, you're gonna Naughty naughty. No. It's a wild wild thing.
+Speaker 2: One of the crazier subtweets from a big tech.
+Speaker 1: Yeah. But I I don't know. I would I was never sure that she worked there. It felt like it was maybe like an alt account and it was just like an anon, but it does seem like I mean, she's saying right here, I've been on leave from this organization. So I don't know.
+And somebody calls her the homer of our times. Well, it's certainly well written, certainly entertaining. Another interesting like wrinkle here is if you look at what Demis was talking about writing about just a few weeks ago, it wasn't as much focused on the isometric scientific advancements. I know he's super deep in that and that's what he's said he's been focusing on. And I love that message.
+He says, It's time for AI to prove its unequivocal value in the world and what better way to demonstrate that than to help finally cure diseases like cancer. 100% agree. 100% agree that if you get a new cure for cancer, you save someone's life and they can go and say, Yes, I took the new cancer cure and I was cured. AI is doing its job. A lot of people will be very happy about that.
+Perfect. But that's not what Demis was writing about a couple weeks ago. The last substantial piece that Demis put out was called The Framework for Frontier AI and the Dawning of New Age in which he argues for a Frontier AI standards body that evaluates frontier models before they're released for risks associated with superintelligence. It's at the very least not crazy to assume that Demis' new role at Alphabet is maybe related to what he's advocating for in this essay. There's been a lot of back and forth in Washington about the interpretation of that essay.
+And a lot of AI researchers have stepped up and said, like, yeah. We basically agree with this. This framework seems pretty good. It includes open source models in there. Yeah.
+Speaker 2: To me, Demis could be an amazing candidate as as somebody to lead a new regulatory body.
+Speaker 1: Lead America as the president. You think he's running?
+Speaker 2: Not quite. But I think we got in there.
+Speaker 1: At this point, it'd be great.
+Speaker 2: Yeah. Big question now is is
+Speaker 1: Are you voting are you voting Dean?
+Speaker 4: I'd vote for Jeff Dean.
+Speaker 1: You know what I'm talking about?
+Speaker 2: No. So big question now. So Jeff Dean is out. Noam Shazir is out. Demis is out.
+Who is going to fill that void from a leadership standpoint? Mhmm. How are they gonna be how are they gonna be able to recruit the best researchers in the world? Mhmm. That's a big question mark.
+Right? And so it does feel like sounds like Google's investing in Discovery Loop, Jeff Dean's new company. Very excited to see what they do. But I wouldn't be surprised to see Google just shift into more of an NVIDIA style role as like a capital partner to a number of other labs as they, you know, continue to fall.
+Speaker 1: It's it's maybe more of like an Amazon and Microsoft role, where you have a great business. You're also great at building infrastructure. You also have a semiconductor team and a chip team. And you can play up and down the stack, but maybe you're not as as focused on this, like, full stack straight shot thing and you're partnering with other labs on on different pieces of the puzzle. It'll be interesting to see where everything goes.
+Discovery Loop, the mission over at Jeff Dean's new company. Our mission is straightforward. We are building AI solutions that can automatically solve important problems in machine learning, science, and engineering. By advancing the pace at which we conduct engineering and scientific discovery, we can bring the benefits of science and technology to the world much faster. Ultimately, our goal is to build AI systems that act as deeply positive and power force for humanity, delivering technology solutions that improve people's lives on a global scale.
+Good good mission. Fully supported. Excited to see what they launch. Also, fun handle Discovery Loop. You can follow them on acts at Disco Loop AI.
+Disco Loop.
+Speaker 2: I like it.
+Speaker 1: I like this. I you know, you don't think about disco and discovery having the same root. When I think disco, think, you know, seventies disco dancing.
+Speaker 2: I think panicking. Panicking? Panic at the disco.
+Speaker 1: Oh. Yes. Yes. Yes. Yes.
+For sure. Anyway
+Speaker 2: Panicans at the disco.
+Speaker 4: Disco is short and formed of discotech, a French term that originally meant a library of phonograph records.
+Speaker 1: Okay.
+Speaker 4: So that's just etymologically not that related to
+Speaker 1: Not that related?
+Speaker 4: I mean, yeah, maybe if you go far back. Interesting.
+Speaker 1: Okay. Well, let me tell you about Console. Console builds AI agents that automate 70% of IT, and finance support, giving employees instant resolution for access requests and password resets.
+Speaker 2: Tanno Bruss says, Demis is ousted as DeepMind CEO and Jeff Dean and Sanjay are leaving Google to start a NeoLab. All being very careful to frame these as positive shifts, there's no way in heck, Demis would have accepted this willingly and there's no way Sundar happily accepted Jeff doing this as a totally independent new public benefit corporation rather than a bet under Alphabet. Tough to see an interpretation other than Jeff losing confidence and working on AGI under Google. Very bad.
+Speaker 1: We need a Sebastian Malabai sequel. We need a sequel.
+Speaker 2: Alphabet over all
+Speaker 1: I would love for him to write a a sequel to just and and even zoom out and look at the the the AGI wars generally like he did in the power law about the early venture capital firms and how they all formed and battled each other, that would be great. Anyway.
+Speaker 2: Rohan Aneel over at Core Automation says, pour one out for the big g. It's so over. We did have a funny funny moment with Google AI overviews, yes, a couple days ago where it said that one of our friends Yeah. Was married to another of our friend's wife. Yes.
+And it was quite confident in
+Speaker 1: that. It was.
+Speaker 2: And I had no idea how how it even thought of that.
+Speaker 1: Yeah. I think it was because they did a podcast together or something like that. Like they were linked in a blog post together or something like
+Speaker 2: Doing a podcast together She wrote
+Speaker 1: about him or something or wrote a profile and it just like put the names together. Very odd. Yeah. I don't know. Yeah.
+You have to wonder what it takes to get AI over using to like a reasoning mode that can actually do the fact checking so the hallucinations die down because
+Speaker 2: Well, yeah. And they have to figure out a way to make that process so inexpensive serving it
+Speaker 1: Yeah.
+Speaker 2: Billions and billions of times.
+Speaker 1: You know, that that that feels like more of an engineering problem. That feels like very solvable. It feels like they're on the right track there. So anyway, the I I I excerpt from the Wall Street Journal article published this morning on Jeff Dean's departure. We wanted to build something differently than how things are built at Google right now.
+Google's infrastructure has very different requirements than the type of infrastructure we want to build for research. Sounds like they want a more flexible kind of infrastructure, kind of like the infrastructure NVIDIA provides, Nick Dorsey says over at Midnight Capital. Interesting. I wonder I wonder what they will do. Course, I mean they have to have access to whatever chips they want.
+They can't be completely locked in. Anyway.
+Speaker 2: Nathan Lambert says major restructuring at Gemini will be studied forever as the incumbent with all the advantages not being able to get going.
+Speaker 1: They got going. This is this is not correct. They completely got going.
+Speaker 2: They got going, but they certainly didn't build real momentum. Yeah. And then he says, PS, OpenAI accomplished their original goal.
+Speaker 1: The list expires as PS of the century.
+Speaker 2: But yeah. Backstory is that a lot of the initial energy around OpenAI was a concern that Google would control AGI and a fear from from the various early participants Mhmm. Around that scenario.
+Speaker 1: Yeah. Interesting. Well, yeah. New York Times has some nice photos. Mike Isaac.
+New York Times has really been on a run with the with the with the photo the photo archive. They did a whole photo shoot with Leopold Auchenbrenner, sat on it and then the hedge fund blew up and then they were able to trickle these out. It's it's it's true true excellence over there.
+Speaker 2: Well, let's switch over to some more exciting and positive news.
+Speaker 1: Figma. Agents, meet the canvas. Your AI agents can now create and modify your Figma files with design system context.
+Speaker 2: And almost even more positive news, the moment you've all been waiting for, CarPlay is coming to pontoon boats. Let's go. Finally. Finally. Finally.
+Finally.
+Speaker 1: Have you ever been on a pontoon boat?
+Speaker 2: Yes.
+Speaker 1: Explain. What what context were you on a pontoon boat? What does a pontoon boat even look like? This is a terrible
+Speaker 2: for cruising. It's for cruising. Boat.
+Speaker 1: It's not it's not like a monohull but it's not a catamaran.
+Speaker 2: It's something between like It has a lot cigarette boat and a houseboat.
+Speaker 1: Okay. That's a really wide gap.
+Speaker 2: Well, it's right in the middle. Okay. No. You just kind of putz around.
+Speaker 1: MasterCraft Boat Holdings today said it's adding CarPlay to its upcoming crest and Belize Pontoons. The company is working with Savvy Navy to bring CarPlay and on water navigation to boaters.
+Speaker 2: And MasterCraft Boat Holdings Inc, of course, a public company experiencing a god candle. Wait. Really? Up point 72%. Up eighteen eighteen
+Speaker 1: cool. This is very cool.
+Speaker 2: See? Yeah.
+Speaker 3: This is
+Speaker 2: double decker.
+Speaker 1: Double decker. See, in California, we don't we don't know anything about these pontoon boats because they these don't work at the beach. Right?
+Speaker 2: Correct. But I I was sort of correct. Somewhere in between a houseboat
+Speaker 1: Yeah. Yeah. And Aren't you from the land of a thousand lakes? Right? Michigan?
+Isn't that the land of a thousand lakes?
+Speaker 4: No. Me. Minnesota. Oh, you're from Yeah.
+Speaker 1: Okay. Are are you a pontoon boat guy?
+Speaker 4: Pontoon boats are huge in Minnesota. Okay.
+Speaker 1: Yeah. How
+Speaker 4: they're for lakes.
+Speaker 1: They're for lakes, basically. How many hours have you spent on pontoon boats
+Speaker 4: in 10.
+Speaker 1: Ten thousand hours? I'm an expert. The man man, putting life's work on the pontoon boat, apparently. Just
+Speaker 2: You're in the wrong job, buddy.
+Speaker 1: Yeah. I think I think you got to become a pontoon boat.
+Speaker 2: It is crazy to think in another life, Ben could have been the top pontoon boat salesman in the entire world.
+Speaker 1: This one comes with Apple CarPlay. They don't know they need to call it boat play at this point. They gotta come with something else, CarPlay. But they're doing navigation, on water navigation like this.
+Speaker 2: Okay. Yeah. Moving over to. Okay. We got some What is more the story of the day in technology?
+Yes. This is the story of the day.
+Speaker 1: Okay.
+Speaker 2: Hit us, John. You know what I'm talking about.
+Speaker 1: Start up billionaire sued over super yacht broker fee. Everyone's talking about this. This is potentially bigger than what's going on at Google today. In London, the billionaire founder of one of the world's most valuable start ups recently bought a super yacht valued at an estimated $400,000,000.
+Speaker 2: Yeah. Continue. Replete
+Speaker 1: with a glass bottomed swimming pool and a helipad. Do they make wait. Do they make super pontoon boats? Can you get a $400,000,000 pontoon boat? What does that do for you?
+Speaker 2: If you Almost certainly.
+Speaker 1: Can you imagine just a a 300 foot
+Speaker 2: create infinite ways to make you part with your your hard earned money.
+Speaker 1: Yeah.
+Speaker 2: And and I'm sure we could arrange a a almost $500,000,000 pontoon Okay.
+Speaker 1: Team, AI images. I wanna see what $400,000,000 gets me if I'm going all in on a pontoon boat when I really dominate Lake Michigan. Is Lake Michigan too big for a pontoon boat? No. Because you said lakes.
+So any lake, it works?
+Speaker 4: Yeah. I I think the pontoon boat is not for like big waves.
+Speaker 1: Big waves.
+Speaker 4: So you can't it can't be
+Speaker 1: like But there's not big waves on on on Lake Michigan. You can't surf or anything? I guess there's no
+Speaker 4: I don't think so.
+Speaker 1: Surf. Yeah. Anyway, so it was a $400,000,000 super yacht. It had a glass bottomed swimming pool and a helipad. There was just one problem.
+According to this reporting in the Wall Street Journal, he didn't pay the broker's fee. That is according to a top luxury yacht broker who is now suing Nick Staronsky, a co founder and chief executive of digital banking giant Revolut alleging the entrepreneur went behind their back to avoid paying commission on a purchase they had worked on. Cecil Wright and Partners, a luxury yacht broker, filed the legal action in London's high court over Stronsky's acquisition of Nick C, a 335 foot vessel with four terraces. The broker alleged in a court filing that it was negotiating the purchase for Stronsky when his team secretly contacted the yacht seller directly and agreed to buy the boat avoiding roughly $20,000,000 in standard commission. The amount the dealer now claims it is owned.
+It is owed. In January, Staronsky's team allegedly told Cecil Wright to hold off. Let's see. I'm not going to flip through this. Let's see.
+To hold off. Hold off on contacting the vessel's seller, Canadian billionaire and former hockey player Patrick Davici and said they would talk again the following week according to the filing. The filing claims that by next week, Stronsky's team had already arranged to buy the boat directly from Dovigi, bypassing the broker entirely. It was Cecil Wright that brought the yacht to Staronsky's attention and introduced the Revolut co founder and the owner.
+Speaker 2: Matt Young says, unbelievable. Taking food off the table of that luxury yacht broker's family.
+Speaker 1: A spokesman for the Surge family office said, we are aware of the claim. It is without merit and it will be defended. He says, not guilty. Nixie features a private wellness spa, indoor and outdoor cinemas, two movie theaters. Now we're talking.
+As well as a Japanese teppanyaki grill according to Boat International.
+Speaker 2: I love this picture that Tyler just shared. I think this is what Nixie looks like.
+Speaker 1: Yeah. Let's see it. When chartered, it is equipped with a variety of water toys including a luxury Sea Bob water sled and inflatable blob launchers. Is this the pontoon boat? The luxury pontoon boat.
+Speaker 2: Oh, sorry. That's that's the the $400,000,000 pontoon boat that Tyler just generated.
+Speaker 1: That's pretty good. I like it. I like it. That just looks like a normal yacht. That doesn't that doesn't actually look that crazy to me.
+I don't know. Surge is one of Europe's highest profile startup founders founded in 2015. Revolut is now the region's most valuable startup with a recent share value share sale valuing the digital bank at $115,000,000,000 Wow, Revolut. What a tear. Originally built around low fee foreign currency transactions, Revolut is widely used by international travelers and migrants sending remittances home.
+The company gained a full UK banking license in March after a lengthy battle. Wow. It took them over a decade to get a banking license. That is crazy. But they did it after a lengthy battle.
+Now they're looking to expand into The United States having recently applied for a national banking charter. It's crazy. It's crazy that they can't go faster. Like, Arabore got a charter so fast and then there's been other there's been other companies that have explored like buying a regional bank and then using that charter. Why?
+Speaker 2: It's almost certainly part of why Revolut is now such a massive company.
+Speaker 1: Yeah. They figured out.
+Speaker 2: They don't have infinite competition in the way that True. Many many banks and neo banks have here
+Speaker 1: in The US. So earlier this year, Revolut reported record annual profits and a jump in its customer numbers at the same time. Revolut said it remained focused on its goal of increasing its customer base to a 100,000,000 users by mid twenty twenty seven from more than 70,000,000 currently. Well, good luck in the luxury yacht battle. Hopefully everyone gets what they're owed and everyone is compensated fairly.
+Hate to see people fighting over that. Let me tell you about Railway. Railway is the all in one intelligent cloud provider. Use your favorite agents to deploy web app servers, databases, and more while Railway automatically takes care of scaling, monitoring, and security. AI's great reverse bank run-in today's newsletter, Joe Wiesenthal wrote about Leopold's basilisk and what makes this particular mania field distinct.
+People are betting on left tail outcomes without sacrificing the right tail of financial opportunities. Doomers are getting fabulously wealthy. Let's see what he's saying. Here's the deal. Historically, if you want to cut off your left tail, you also have to cut off your right tail or to put it more specifically.
+If you are up big on a stock position and you want to hedge your gains by buying puts, you can do that. But if you want to maintain your puts over time, you spend a lot of money and erase any upside gains that you might otherwise be making. Or you can or to put it even more generally, suppose you're afraid of the outbreak of war. Well, you can move to a rural farm and grow your own food, but then you miss out on the economic opportunities afforded by living in the city. People make these kinds of tradeoffs all the time depending on what's worrying them.
+Pin that thought for just a second. One of the big questions with AI is whether it's just another technology or whether it somehow will be different this time. It's purchasable intelligence kind of like purchasable electricity or is it something more like a sci fi novel where humans get replaced or eliminated in some way as businesses, the big American companies selling AI mostly operating as if AI is just another technology to be developed and solved. But we know that there's deep anxiety within the companies themselves that AI could play out in the way sci fi novels have expected for decades and this sometimes is reflected in their governance structures. Here's one stylized fact though that might argue for the it's different camp.
+If you are one of those people who have been reading AI philosophers and message boards for the last decade familiar with paperclip maximizers since long before ChatGPT came out, you might have deep existential fears about something bad happening right around the corner. You might also have ended up very, very rich. With AI, there has been no trade off. The doomers who were early on accumulating GPUs or better yet shares in GPU companies have done extremely well. The put option on humanity has become the call option on the technology.
+You could bet on the left tail outcome, not sacrifice anything financially. We've maybe had some shades of this before. For a while, Bitcoin was or had characterized as an end of the world hedge, a form of money for when the nation state collapsed, and people made a lot of money on that bet. But a trader wasn't driven by the fear that Bitcoin was a world destroyer or take gold, betting on gold at certain times protected you against hyperinflation. But the fear that came with the bet did not entail gold being the catalyst for doom.
+It was something else would be the catalyst, but you'd be protected. AI is different. The long feared catalyst for doom itself has presented an unbelievably profitable trade, at least so far. What's interesting about this is that that he's sort of he's saying like the doomers got rich. There are plenty of AI doomers who did not join AI Labs, did not participate financially, worked in nonprofits, just wrote books, worked on research, did not ever join anything that had economic upside.
+But I take his point that in general, if you were early to this, oh, wow, like things are going to get weird, you probably were earlier on the train. And a lot of those people that were talking about AI and doom scenarios did wind up working at labs that did very well. So it's a good point, but there are some people that that don't fall in this category. Long before we had the transformer architecture or GPT, people have been characterized theorizing about the risks of AI doom. One popular thought experiment is Rocco's Basilisk, a 2010 thought experiment.
+Wow. When was the last time we got a new thought experiment? I didn't know they were dropping new ones in 2010. That seems kind of recent. Maybe there's like I don't know.
+Someone should come up with a new thought experiment. What's the most recent thought experiment that's really taken hold and been thought provoking?
+Speaker 2: Golden retriever mode.
+Speaker 1: That's not a thought experiment. That's an axiom. That's a that's a lifestyle. A thought experiment is almost like a paradox, something you can wrestle with. We gotta come up with some new
+Speaker 2: I've been wrestling with golden retriever mode.
+Speaker 1: You think it's a thought experiment?
+Speaker 2: I think you can make it one.
+Speaker 1: I don't I don't think it falls in the bucket of thought experiment. What do you think, Kyle? No? What are you guys laughing at? Are you doing more more pontoon boats?
+Speaker 2: Crazy text.
+Speaker 4: I'm trying to find the most recently created
+Speaker 1: Okay. Jackson, you are correct. Yes. That is the most recent thought experiment. Good stuff.
+Anyway, let me tell you about CrowdStrike. Your business is AI. Their business is securing it. CrowdStrike secures AI and stops breaches. That's that's very funny.
+Okay. Wait. Quick. We got to switch gears because the price of lab monkeys in China is soaring as demand for preclinical testing outpaces supply. The price of lab monkeys in China is soaring as demand for preclinical testing outpaces supply.
+Do you think it's time to ape in? You think To it's time
+Speaker 2: ape strong together?
+Speaker 1: Yeah. Yeah. Go long the monkey trade. So this is the actual news. We got monkeys up here.
+There we go.
+Speaker 2: Picture was crazy. Yep. Really sad.
+Speaker 1: Yep. But it is happening and it is interesting because it tells you a lot about what's going on in drug testing, animal rights obviously and also just the broader economic market. So in June, a Chinese state laboratory paid roughly $26,000 per monkey for a purchase of 40 animals nearly double what similar animals cost a year earlier. The price has doubled in the last year of monkeys. Biotech executives say the same trend is showing up across the industry driven by a wave of new biologic medicines and next generation therapies that require far more primate testing than existing breeding capacity can currently support.
+The shortage could become a bottleneck for China's rapid drug development ecosystem because many experimental medicines must still undergo studies in nonhuman primates before regulators will allow them to advance. While regulated monkey farms have maintained relatively steady production, demand has accelerated much faster than supply. A similar imbalance emerged during the COVID-nineteen pandemic when vaccine development sent prices sharply higher, But this time, the pressure reflects China's emergence as one of the leading centers for innovative drug discovery. The country now generates a third of the global pipeline of novel medicines and has become a major destination for clinical trials and licensing deals with U. S.
+And European pharmaceutical companies. So monkeys remain essential for making many preclinical studies because their biology closely resembles that of humans. We know the monkey is has remarkable resemblance to a bar particular makeup. Yeah. But broad
+Speaker 2: Many people have said we have the minds of
+Speaker 1: Yes. Yes. So if they're working on a brain, typically they would test on Golden Retriever, but, yes. So this makes them one of the best available models for evaluating a drug's safety, how it moves through the body, its effects on different organs and the potential for serious toxic side effects before human trials begin. While the shortage may slow some research programs, it's also a sign of an unprecedented surge in investment and innovation aimed at developing new potentially life saving treatments.
+Speaker 2: Tom in the X chat, how long would it take infinite monkeys to make a 1 monkey a billion dollars?
+Speaker 1: Yeah. Wait.
+Speaker 2: That is an important question.
+Speaker 1: That's a good thought experiment.
+Speaker 2: How long would it take infinite monkeys to make a 1 monkey billion dollar company?
+Speaker 1: There is a That's
+Speaker 2: a new paradigm.
+Speaker 1: There there so so there is a there is a thought experiment related to this. It's the infinite monkey theorem. This is a real thing. It states that a monkey pressing keys at random on a typewriter for an infinite time will almost surely type any given text. Deeply relevant to LLMs.
+Are there any
+Speaker 2: Okay. Get the tinfoil hat.
+Speaker 1: What do you think is going on?
+Speaker 2: Is it possible that our modern AI systems are monkeys just clacking a bunch of keys. And that's and that's this is just an AI bottleneck.
+Speaker 1: Yeah. You think that when you go to chat GPT, it's secretly a monkey on the other side?
+Speaker 4: Yeah.
+Speaker 1: Yeah. That it's not it's not a computer.
+Speaker 4: Yeah.
+Speaker 1: Yeah. No one really goes in the data centers. It could just be a bunch of monkeys and computers. You don't know.
+Speaker 2: Bunch of monkeys and bananas.
+Speaker 1: You don't know. Okay. Well, there's also news somewhat related. Are there monkeys in the Amazon Rainforest? Almost certainly.
+Right? Almost certainly.
+Speaker 2: Jack in the says, how long until monkeys see? What about Monkey do? There's over 50 to a 100 species of monkeys
+Speaker 1: in the Amazon Rainforest. Okay. Well, a new lidar survey of the Amazon Rainforest has uncovered evidence of a previously unknown civilization that may have supported as many as 3,000,000 people, challenging decades of assumptions about the region's ancient history. So, we I mean, we talked to a friend of the show who was doing this, scanning the rainforest with LiDAR, putting new sensor stacks on helicopters, flying them around on planes. But there's new evidence here.
+So using laser scanning technology capable of penetrating the dense forest canopy, researchers mapped more than 4,500 square kilometers of Brazil's acre state after flying over 4,400 kilometers of rainforest. The survey, was published in Nature, identified 396 previously unknown geoglyphs, massive geometric earthworks made from deep ditches and raised embankments. The discoveries have provided the clearest picture yet of the Aquari civilization which is believed to have emerged around May and flourished until roughly August. Rather than serving as permanent settlements, the earthworks appear to have functioned as ceremonial and civic centers where people gathered for rituals, political meetings, and other communal events while living in nearby multifamily longhouses and cultivating crops such as corn and squash. Based on the number of earthworks and the labor required to build and maintain them, the researchers estimate that the civilization's population peaked somewhere between one point two five million and three million people.
+Findings at a growing body of evidence that the ancient Amazon was home to a large interconnected society with engineered landscapes, not just small isolated villages, as many archaeologists once believed. Even more remarkably, the surveyed area alone contains roughly as many earthworks as earlier estimates suggested existed across the entire Amazon Basin. If future LiDAR surveys uncover similar densities elsewhere, scientists may have to dramatically revise estimates of how many people once lived in the rainforest. Archaeologists still do not know why the civilization disappeared, though the abandonment of these ceremonial centers between August coincides with the decline of several other major societies in The Americas including the Maya. Very interesting.
+I wonder where else people can scan with lidar, find interesting things. Gotta go to Antarctica or something. I don't know. Well, in other news, Gorn is retiring from writing to start a company. Gorn is the anonymous online writer.
+Is it gorn.org or
+Speaker 4: gorn.net.
+Speaker 1: Gorn.net. Fantastic blog. He's done, I believe, only one podcast in history with Dwar Kesh where he was anonymous. They used like a three d rendered version of him, a voice changer to keep him anonymous. This is the website of Gorn Bronwyn.
+He writes about AI, psychology, statistics. He also is I mean, he's written about self experimentation, Bitcoin, all sorts of different stuff. He wrote an amazing piece about nicotine and all the deep dive there. Was very fascinating, very formative when I was starting my nicotine company. It was very interesting.
+But he's starting a new company. So let's dig into what he wrote. Let's see. Can I pull this up? Where is it?
+I lost it. Gorn. Gorn. Gorn. Gorn.
+He has a locked account, so you gotta go request to follow and then timeline app. Open it back up. Where is it? Let me tell you about public.com. Investing for those who take it seriously.
+Stocks, options, bonds, crypto, treasuries and more with great customer service. Gwen. Okay. He's retiring from writing to start a company. The company's first product for writing.
+His goal is to design is to his design goal is a 100 x increase in productivity. What would it take for a GA to make me 100 x more productive as a writer or thinker? Why a 100 x specifically, he says? Because too aiming at oooms, too aiming at oooms is enough to hope to keep up for a while. And this goal will shatter ineffective, band aid style, short term design proposals.
+But it doesn't require solving the AI alignment problem or value extrapolation. We do not need to be able to oversee millions of super intelligent AIs working autonomously for subjective millennia, which is good because a GA can probably not do that. What would that look like for me? Roughly, I think it would look like a GA enabling me to produce one to three worthwhile writings a day which are 100% written by it without loss of quality. Very interesting.
+Speaker 2: I've heard enough. A 100,000,000.
+Speaker 1: Give them a billion dollars. Yeah. No. I I agree. It is interesting that we've been going back and forth is writing verifiable.
+I think it's a little less verifiable. But with feedback and different algorithms, you can get there. But it just feels like the progress in mathematics is accelerating faster than the the progress in writing.
+Speaker 4: Yes. And also, I mean, in this scenario, it's like maybe it's easier to train a model to write like like one specific person True. Than to to write good generally. Like, that's that's like much more What does it mean to like write well? Versus like, oh, this is in the style of a particular person.
+This is how they would think.
+Speaker 1: It also feels like there needs to be a sort of like a a whole agent harness or workflow because writing is not just the last step of instantiating the rules. It's all the research that goes into it. All the different references. The the all the different links and things and the way he will put together arguments. The way he structures these things.
+All of that is is part of the writing process. Even just narrowing down, you know, is this an essay or is this a, you know, shorter post, longer post, all of these different decisions. They can probably be built into a system, but it will take time. So that's what he's working on. Anyway, let me tell you about Shopify.
+Shopify is the commerce platform that grows with your business and lets you sell in seconds online, in store, on mobile, on social, on marketplaces, now with AI agents. And we have the perfect guest to talk about Shopify because we have Harley Finkelstein, the president of Shopify here with us in the TV at Ultratome. Welcome back to the show, Harley. Congratulations. What a quarter.
+Insane stock chart. Take us through it. What's going on with Shopify?
+Speaker 3: It is, Jordy John, great to be back here.
+Speaker 1: Great to
+Speaker 3: see you. I don't know if the ad role and me coming on together was complete.
+Speaker 1: Completely coincidence.
+Speaker 5: Complete coincidence.
+Speaker 3: Brilliant. Before the go, let let let me get This was a monster quarter, no doubt. GMV was a 116,000,000,000, which is more than like the GDP of half the countries on the planet. Revenue was $2,600,000,000 Gross profit was $1,700,000,000 and free cash flow was just over $650,000,000 Most importantly, think, is that I mean, this is obviously, Shopify is at a huge scale, and we delivered more than 30% across across the board this quarter, and I think it's like our fifth straight quarter of 30% or more growth in GMV. So Shopify is doing well, and more importantly, the stores on Shopify, the merchants on Shopify are doing incredibly well.
+And we're really, really fast.
+Speaker 2: People talk about AI victims, and in this situation, I think AI is a victim of Shopify.
+Speaker 3: I mean, you know, we we can get into that. I I actually think one of the more interesting parts of of the call, we got into a little bit of it, was just around what is happening in AgenTic that I think the question I got on the Q1 call was, is this real, and is this going to continue? And I tried to answer that question clearly, which is, yeah, it's it is early, and yes, the volume is small in Agenta Commerce relative to a $116,000,000,000, but the the trend is is real. I mean and the growth is real. And and funny enough, or surprisingly enough, should say, the merchants that seem to be benefiting most from Agentic Commerce are not the big box stores.
+It is the, like, long tail of these specialized independent businesses. And just on on on Agentic alone, traffic was up three x. Like, AI driven traffic to Shopify stores
+Speaker 1: Okay.
+Speaker 3: Was up three x. Orders were up three x. So not just traffic, the actual orders themselves. And probably the most interesting is, like, conversion from our catalog, Shopify catalog, was 2x more than sort of general AI scraping. So one, it is real two, it continues to grow and three, it is disproportionately affecting these smaller merchants.
+So, you know, consumers are searching for, like, a standing desk for a small apartment or car seats that fit three across the back bench of a sedan, and I think that is a structural advantage for small businesses, which happens to be a big part of our our merchant base.
+Speaker 2: Okay. So yesterday, we had the most feared lawyer in the world on our show, John Quinn. He was talking about a sort of current lawsuit between Amazon and Perplexity. Amazon sued Perplexity because Perplexity's bot was going on to amazon.com, finding listings for users, which I think is something that a lot of people a lot of people want. But Amazon is not excited about that because they have a big ads business and if bots are crawling all over, they can't really serve or they don't have a way to serve ads to bots in an effective way.
+It feels yesterday, I think there was a a some type of action by the judge. I forget the technical term for it, but the judge is I I don't think the case is fully decided yet, but the judge is effectively saying like a an agent acting on the user's behalf to do something on a website is wildly different than just general like, basically, the way that we would historically view bots where, like, a company could say, like, we don't want your bots on our website, but we're entering into this new paradigm. It does feel like Shopify is in a really great position here because you guys aren't trying to monetize eyeballs in the same way and you're not trying to monetize that demand. You're just trying to get merchants in the position to sell a lot more products. And so how do you see this sort of struggle evolving on a more global level between consumers, which want to use agents to buy products all over the Internet, and these sort of big platforms and legacy shopping platforms that want to, you know, control attention on their websites?
+Speaker 3: Look, I I think I I did a search for myself in June. Bailey, our our we have a 10 year old our 10 year old daughter. We want to get her, screenless phone to use. And I've I've historically, I would have gone to a search engine and would have typed in screenless phone. I probably would have seen something like Best Buy pop up, and they'd have, like, eight different options from some, you know, some big big, I don't know, big companies, electronics companies.
+Instead, just using chat on my own, I typed in looking for a screen phone for for for Bailey. Because it had so much context, because it knows me so well, because of all the conversations we've had over the last, I don't know, two and a half years, it actually pointed me right to the tin can phone.
+Speaker 2: Yeah.
+Speaker 3: The tin can phone is it's a Shopify merchant. Took me right to the store.
+Speaker 1: I have like five of them. They're amazing. They're amazing. Amazing.
+Speaker 3: I never would have found that. I never would have found that product.
+Speaker 2: And this is a
+Speaker 3: That is a
+Speaker 2: can with a string attached to
+Speaker 1: your head fan. That's the metaphor.
+Speaker 3: Yeah. That's the metaphor. But it's basically it's it's WiFi enabled, screenless phone. It's really cool because I don't want my kids on screens. It's amazing.
+It works incredibly well. That is because agentic commerce is merit based. It is not based on who is supplying the most amount of ad dollars. Sure. And I think it's still, like, it's still it's it's really it it it is a much better shopping experience, and I still think it could get better.
+In fact, I I sent you guys some some graphics here. Can you pull up did you have those? Can you pull up the first one, which is just the dress?
+Speaker 1: Yeah. Okay.
+Speaker 3: So I mentioned earlier just keep this on for a second. I mentioned earlier that right now, if you look at the conversion from our catalog versus general AI search of scraping, our catalog converts two x. This is what a scraping might actually show, just simply the dress. Go to the next slide. Okay.
+So this is what we're actually building. This is these taste driven attributes. Whether these these articles, these products, you know, is it formal enough for a wedding? What's the is the fabric breathable? Mhmm.
+What's the wrinkle tendency if you're using it to travel? Sneakers, are they suitable for an endurance race? This type of structured values agents can actually read. It means that when someone's saying, I want to buy a dress that's good for a summer wedding or a suit that needs to be formal enough or judging its formalness, this is where it is going. We announced this at at dot dev two weeks ago, but this is what we are building with catalog.
+We are building these incredibly rich product attributes that will make the shopping experience from a discovery perspective way better. And then what we're seeing is ultimately the journey compression is insane. So buyers arrive, effectively ready to shop. AI referred sessions land on product pages two and a half times more than simply organic search where they just go to the general page and they're perusing and they're browsing. That's not how it works with with with AgenTic.
+Mhmm. Actually, they're arriving right on the product page Mhmm. And they're using shop pay to check out. So the adoption, like, this is real, and it's showing up in our numbers and both in traffic and orders, and I think AgenTic is only going to get bigger from here. And I love the fact that these small niche companies, like the tin can phone, seem to be the ones benefiting more than others.
+In fact, if you actually just compare 75 of all AI attributed purchases in q two on Shopify were from outside our top 100 categories.
+Speaker 1: Mhmm.
+Speaker 3: So it is not your, I want yoga pants. It is, I want, I don't know, reef safe sunscreen that doesn't leave a white cast in my, you know, on my black leather, whatever it is. Sure. It's that type of stuff, and I think that means our merchants, I think, will disproportionately benefit from this.
+Speaker 1: Because AI is still a little slow, there's a little bit of a cost to going down the agentic search path. I would expect, I have been expecting that we will see disproportional agentic purchases for higher ticket items, more considered purchases. So you're doing research on a car? Yeah. Go let five point six pro cook on all your features and figure out everything.
+But you're ordering just another soda. You're not going to go and down the agentic system for that, at least in the short term. Are you seeing any of that? Do you expect Yes. That to be a
+Speaker 3: So for sure. Products that require more deliberate purchasing intent and more research benefit from it too. But I would tell you to expand your perspective there, it's not just it's also products that are very much for it's a particular product for a particular use case. It is not necessarily, I want to buy a t shirt. It is, I want to buy a high end t shirt with a GSM count that is more than, you know, that keeps me warm Yeah.
+Like when I go out at night in New York City, where it knows your location, it knows the weather in your location Yep. And now it actually pulls from your entire conversation history and says, you probably want a James Perce t shirt, which is my favorite shirt.
+Speaker 2: Yeah. The other thing I've been doing, I'm I'm I I think you maybe discount consumers' willingness to wait or do things in order to save money. Right? This is not you don't strike me as the kind of guy that ever was doing like credit card point maximization or like chasing coupon codes around the Internet. Mhmm.
+But a lot of people are. And a lot of people like wanna buy something and then they're thinking, okay, what how can I get the price best price on this? I saw a pair of sneakers a couple days ago that I really liked. Yeah. Found them for sale and I just took a screenshot of the of the product page and I said find me this sneaker in my size at the best price.
+Oh, interesting. And it went and found three different options.
+Speaker 1: So you might land on a Shopify
+Speaker 2: store. And what was interesting is it actually took me to StockX and it was like, hey, by the way, this is selling for below retail
+Speaker 1: Mhmm.
+Speaker 2: StockX. $50. No. No. Of course.
+Speaker 1: Yeah.
+Speaker 3: I mean, especially if you have some sort of like reminder, hey, these these are the sneakers I want. They're a little too expensive for me right now. I would love you to let me know if if something else comes up. Now it basically runs a query every couple of days to see whether or not it's being discounted as well. Yeah.
+So even though that's not a deep research product, you actually are doing deep research on the pricing of it as well. But the other thing also that came out of the call today, which I don't know if it necessarily got picked up, it's worth sharing, we've talked about Sidekick on the show before, and I said ultimately the goal for Sidekick is that it makes merchants more effective, more efficient, helping them reach their early milestones faster or make better decisions. All the things that, know, when I was selling t shirts on Shopify or, you know, you were selling nicotine patched, like, you know, all that stuff, the silly ad spend we made on performance marketing that just didn't convert, that ultimately the goal was to to alleviate all that as well. And what we actually talked about today was when you actually look at the onboarding guidance when you're just setting up a store on Sidekick on Shopify, we actually saw an 8% increase in new merchants reaching their fifth order within fifteen days. That may not seem like a big deal, but on a massive base of Shopify, new merchants that are constantly coming on Yeah.
+The fact that they're getting to their their fifth sale faster is remarkable. And so we think not only is that going to get better for new merchants, but then as merchants also grow in scale, it's not going to be about setup anymore. They're going be using Sidekick to become more, like, to do more things like analytics or reporting or to find new opportunities. And therefore, all the mistakes that we all made when we were building our own ecommerce businesses ten years ago simply go away. And so you'll have more people starting and more people growing faster.
+And as that happens, psych just keeps getting smarter and smarter.
+Speaker 1: Yes. So break that down more for someone who's actually running a Shopify store today. How close are we to the world where you show up, you have a budget, and Shopify can sort of agentically for me take a budget and spread it across Facebook and AppLovin and Google Ads and load balance everything, the stuff that, you know, you wind up hiring an agency for sometimes and then maybe they get a little clocked out, then you hire a person and it becomes a job. Like, and a lot of small merchants might not have that capacity, but there's a you're picking up pennies off the floor if you're doing it properly.
+Speaker 3: Yeah. So so I mean, so that that is it's already happening to some merchants some of the time. We have something called we announced called autopilot, which we announced in our last edition, which effectively allows you to give us your your ad budget, and we will go and find the most effective uses for you.
+Speaker 1: Yep.
+Speaker 3: But in terms of like so there's different stages of usage on Psychic. For new merchants, the first job is getting that first sale and then the next sale. Mhmm. And those you guys know this. The first few orders, it creates incredible momentum.
+It gives you confidence. You become an entrepreneur when you have your fifth sale and it's not your mom or your neighbor. It's like some stranger who found your business. As the business then grows, we've noticed obviously setup accounts go down. Now they're actually using it to do things like reporting analytics.
+Sure. And over time, what we're doing, Sidekick, is actually proposing things like bundles, for example, or SEO optimization driven product creation. Then we have something called Pulse that lives inside Sidekick, which is effectively saying, this is what's happening right now on your business, and these are some proactive ideas you should consider, like useful recommendations. You can accept them. And if you do, Sidekick will implement them for you.
+It could be something as simple as moving your product page around or moving the buy button, you know, the shop pay button further up the stack a little bit. But this idea is we wanna we wanna deliver the best practices across, you know, hundreds of billions of dollars of GMV every year that goes to Shopify to anyone using the platform, and then they can decide on their own if they want it. The reason that this is possible is because it understands, unlike any other AI agent, it understands a merchant's products, customers, transactions, history, and that context allows us to give this incredible grounded advice in the reality of a merchant's business. And it's an advantage actually that just continues to compound. As more people use Sidekick, more merchants are able to get value from it as well.
+And I think the path forward is Sidekick will take on more of the work, not just with ads, but also selecting a three p l or figuring out, you know, doing like line skipping to figure out how to have the best deal on shipping. But this is like really I mean, it's it's it's not just science fiction. Like, this is really happening where Yeah. You can put more and more of your business on autopilot.
+Speaker 1: It's great. What a great time to start a company.
+Speaker 2: In two minutes, I want you to talk about the year 2035. And let's assume that you have a widespread use of of robotics that can make anything that you could possibly imagine spread out all over the world that can make custom products or one off products or small batches of products. I have so many different products, like, in my camera roll that I just made with ChatGPT images. And I would I would love to be able to make, like, just five of them or 10 of them or or make one for myself and throw up a product listing. Right?
+It could be something like sculptural or a piece of furniture or even something in consumer packaged goods. And I I personally have a theory that as as robotics bring down the cost of making anything, that there's so many people on the planet that have ideas that would create a Shopify store. And if they could make, you know, 10 or 20 or 50 or a 100 of products really easily, they would become, you know, basically entrepreneurs overnight. You're just about reducing that friction all the way. So, like, thirty years ago, was quite a bit harder to sell products online.
+It was it was it was possible, but again, it was, like, clunky. Now, it's easy to sell products online. It's still incredibly hard to make high quality products, especially as somebody that's a new entrepreneur that doesn't have a lot of capital. So how are you thinking about the, like, the year 2035, assuming, you know, a takeoff in in robotics? Can you guys
+Speaker 3: pull up gamers.town? Gamers, like the gamer, like someone who's a gamer, .town. Just pull that up for a second. Wanna show you something. I I just saw this before the call, but this I think is fascinating.
+Speaker 1: This is very cool. This on Shopify? Yeah.
+Speaker 3: So I gotta this is so interesting. So Wow. Can you pull it up here so
+Speaker 1: we okay. Can
+Speaker 3: Okay. So this is an entrepreneur who basically took our catalog API, so a billion products, right? Like, Allo is in here, Viore is in here, Mattel is in here, Canagoose is in here, everything is in here. And they also looked at every single store that, obviously, this entrepreneur is a gamer, and said, wanna pick across a billion products the most relevant interesting merchandise for all these games like Minecraft. And they effectively they took the Callic API, like, as the access point, and now these developers can effectively just build their own stores with other people's products.
+So think and it's beautifully done. You can see it. It's like this great constellation type of shopping experience. So the fact that even before the year 2035 where maybe robotics help us with manufacturing, I actually think now that allowing anyone with some ambition to take the Shopify catalog and create their own interesting ideas, In this case, it's for gaming, but there's so many other ones as well. I think that is like, that will happen not in the next ten years.
+I think it'll happen in next, like, ten days. This is the first one I found.
+Speaker 1: I'm getting a full Counter Strike costume for sure. This site is amazing. Thank you so much for coming on the show.
+Speaker 2: Very cool.
+Speaker 1: Always always fantastic chatting
+Speaker 2: Incredible quarter. This
+Speaker 1: Ben, congratulations. What a quarter. Great you, guys. Stuff. Goodbye.
+Let me tell you about MongoDB. What's the only thing faster than the AI market? Your business on MongoDB, don't just build AI. Own the data platform that powers it. Our next guest is John Giamatteo from BlackBerry.
+He is the CEO, and we're very excited to talk to him because BlackBerry has evolved many times.
+Speaker 2: Here he is.
+Speaker 1: The company has been on a fantastic run. Thank you so much for taking the time to come chat with us. Would you mind kicking us off with a little bit of an introduction on yourself? And I want to sort of set the table on the shape of the business now for anyone who's been living under a data center and doesn't understand the current shape of the business.
+Speaker 6: Terrific. Hey. Thanks for having me on the program, guys. It's an honor to come out and talk a little bit about BlackBerry. Yeah.
+42 old iconic Canadian
+Speaker 1: success. That's right. So a
+Speaker 6: lot of lot of deep roots in technology and a lot of different transformations
+Speaker 1: over Yeah.
+Speaker 6: Over those forty two years. You know, so many people know us from the the old smartphone days and Mhmm. And the devices, but our transformation and pivot into embedded software, and we could talk a lot more about that and the things that we're powering around the world, and secure communications where we provide mission critical, mission critical communication capabilities. That's really what the new BlackBerry is all about, those two categories in terms of serving the market.
+Speaker 1: Yeah. On on automotive software, obviously, it's a very high stakes, in some cases, life and death scenario based on the security of that software. At the same time, the theme of 2026 has been cybersecurity with advanced AI models showing really powerful capabilities there. What have automotive leaders been coming to you to solve? How are they thinking about solving the the the problem of keeping automotive software secure in the modern era?
+Speaker 6: Yeah. Great great great question. Especially now as there's so much more technology going into the vehicles than ever before, the need for a rock solid mission critical secure operating system. And when you think about BlackBerry and our q n x platform, think of it really as the operating system of the car, the windows of the car, the way windows is to the PCs around the world. The QMX operating system is really the operating system that powers all things that go on in the car, particularly on safety critical types of functionalities from digital cockpit to ADAS to body control.
+All of these different domains of technology that goes into the car and the CPUs that power them, run on top of a BlackBerry, operating system. So we're proud to be powering over 275,000,000 cars around the world today and and growing millions over the years.
+Speaker 1: Yeah.
+Speaker 6: And we got a tremendous amount of progress all around the world in Germany
+Speaker 1: Yeah.
+Speaker 6: Japan, Korea, obviously here in North America. China's one of our fastest growing segments. So a lot of exciting things as as more technology gets introduced to the vehicle.
+Speaker 1: How has you as a CEO been grappling with this sort of story of token maxing? You get these new models. They're incredibly powerful. You have the opportunity to deploy them across the entire workforce. Rewrite every line of code if you want.
+At the same time, this comes with a cost. You have a serious business to run with a bottom line to manage. How have you been deploying AI internally in a way that maintains safety and security but also doesn't balloon cost but does drive efficiency?
+Speaker 6: Yeah. Great, great, great question. That's a it's something we think about every every single day we are. The way I would describe it, we're pretty pragmatic about AI and how we use it because, like you said, the applications, the car, failure is not an option in a vehicle. Yeah.
+So we've got to be really careful about how widely we deploy AI as we build and enhance our existing operating systems and new products. So, you know, one of the things that's in in our industry, you have to meet the highest levels of certifications. And in the car industry, there's a particular cert certification of ISO two six two six two. Very high standard. You can't even think about being deployed into a vehicle unless you deploy that.
+Mhmm. For an AI agent and to to to try to meet that type of standard, it's a nontrivial type of exercise. So we are thoughtful about it. We deploy AI to help us maybe test our products. Mhmm.
+We we deploy it to to help service our customers. We deploy it in in our go to market activities. But in the actual, you know, core development, the code that goes in it, we're very thoughtful and limited about because of those certifications and the importance of it.
+Speaker 1: Blackberry's been on such a fascinating historical journey. What is the area or cultural value or discipline or source, center of excellence that you think has remained the most true throughout all of that? What is the narrative arc that actually brings coherence to a company that's operated in multiple markets over multiple decades?
+Speaker 6: Yeah. Yeah. That's yeah. For a forty two year old company that has evolved in so many different ways, you know, what I always tell people, BlackBerry has always been about security, trust, and innovation. And even though the the products and services that we sell to our customers today can't be held in the palm of your hands the way they might have been with a device, that security, trust, and innovation of everything that we do from the products that we deploy to the services that we provide to the support that we provide governments around the world to you know, eight out of the 10 top 10 g 10 countries around the world are still deploying BlackBerry's secure communications capabilities Mhmm.
+For mission critical types of applications. Mhmm. So if it needs to be safe, secure, and certified, that's really our value proposition. Our our our 2,000 plus employees and contractors around the world, our big hubs in Ottawa and Waterloo, Canada is where a lot of this technology gets developed. That's the pride of of what we stand for, and those are the values of what we stand for in terms of security, trust, innovation.
+Speaker 1: So I imagine that although different technological solutions, different products have evolved, There's always been a really, really solid operating bar for building trust with customers, go to market, sales, actually partnering really deeply with the companies that you work with. How has that informed your M and A strategy going forward? Do you have a particular philosophy of how you can bring a new product or company into the fold successfully?
+Speaker 6: Yeah. Yeah. That's well, one of the things we do now that I I don't know. We did it to a degree in the past, but I think we've we've really doubled down on it over the last few years is we really work very closely with the ecosystem to bring a lot of this capability to the market. Mhmm.
+So for instance, our biggest partners in the automotive sector, NVIDIA, Qualcomm, ARM, Texas Instruments, Intel. Big tier one operators like Bosch take our technology, integrate it into their solution, and deliver it to their customer. So whether it's the chip makers, the operating system maker like us, tier one providers, or the end customer like the auto manufacturer, having a comprehensive ecosystem approach has really been the way that we've we've gone about it. So when we think about m and a, we look at, you know, what what, you know, piece of the puzzle might we be missing, and we kind of put it through that filter. But I gotta be honest with you.
+It's right now, with the organic growth that we're seeing, the the the opportunities in physical AI with robots and medical instrument, there's a lot of organic kind of runway for us to enjoy. So from an m and a perspective, if it fills a gap, if it helps us accelerate a certain category, I think we'll we'll absolutely think about it. Mhmm. But right now, you know, the the runway that we have, we have a $950,000,000 backlog in our UNX operating system that's gonna be deployed over the next five, seven years. So these are the types of things we think about when we think about M and A.
+Speaker 1: Jordy.
+Speaker 2: I want you to make a guess for us considering how embedded BlackBerry is with, you know, automotive manufacturers and and other suppliers. What at at what point do you think that every auto manufacturer in The United States that sells, let's say, more than 5,000 cars will have a functioning autopilot out of the box in every single one of their vehicles. What year?
+Speaker 6: Interesting. You know, there's ninety ninety million cars get made a year. 75% of those cars have basic fundamental technology like, like the media type of software that operates.
+Speaker 1: Oh, sure.
+Speaker 6: 25% have more advanced technology along the lines of what I talked about. So taking it to next level around an autopilot and and and, you know, autonomous applications and, you know, I think that's well into, you know, the the next decade of of the twenty thirties. Early innings. There's a lot more technology going on, and and we'll we'll see more and more of it get deployed. But I do think it's a little bit more of a journey than an instant thing that we're going to see in the next, you know, eighteen to twenty four months.
+Speaker 2: Yeah. Yeah. No. That that is what I was my my estimate would be $20.35.
+Speaker 1: Yeah. What are you seeing on the industrial automation side, the industrial either robotics or just industrial equipment side? I mean we've seen Caterpillar is doing really well, and it just feels like America is starting to reindustrialize. There's reshoring. There's also the data center build out, the AI build out.
+There's more construction happening, it feels like. Is that showing up in your business? Are you seeing that with your partners? What is the nature of the changing landscape of industrial autonomy?
+Speaker 6: Absolutely. It's the general embedded space Mhmm. For us, which includes things like industrial automation
+Speaker 1: Yeah.
+Speaker 6: Robotics, medical instrumentation, surgical robotic arms that that go on in the Operating Rooms today. These are all while we've got a great footprint and presence and growth trajectory on the automotive side
+Speaker 1: Mhmm.
+Speaker 6: These other use cases around robotics. So for instance, your AMI, you know, AMR rather, automated mobile robots, things that are these are robots that are doing pick, pack, and ship Yeah. In big scale manufacturing. Those are applications that would need a QNX operating system
+Speaker 3: Sure.
+Speaker 6: Based on the precision and the safety levels of things required. So
+Speaker 1: Got it.
+Speaker 6: It's the fastest growing segment. It's our fastest growing pipeline.
+Speaker 1: Oh, wow.
+Speaker 6: And we think it's it's gonna help us fuel that next generation of growth here at Blackbird.
+Speaker 1: Last question, and we'll let you get back to your busy day. I'm interested to know how you've processed the the story of Palantir's forward deployed engineering strategy. This, in some ways, has always existed. There's always been deep partnerships with enterprise companies where employees of one company might be embedded in another organization as they're deploying a piece of software. Palantir took it sort of to the extreme.
+How have you thought about deeply integrating your actual workforce and solutions engineering into companies that you're working with?
+Speaker 6: Yeah. I I I follow the Palantir. It's obviously working for them. They're just killing it right now. And it helps them, think, you know, with their cycles and bringing more more products and solutions to the market.
+I think for us, we're probably a little bit slower to adopt something like that, if I'm honest. We're a little bit more again, back to some of the safety certifications.
+Speaker 1: Sure.
+Speaker 6: There's dozens of them all around the world that we have to comply with. We take that really seriously, and as a result, we we try to do as much of that in house as we possibly can. We got to a point where scale was really affecting our ability to get some of these solutions out there in a timely manner, I think we'd take a look at it. But at this point in time, it's a little bit more of a, you know, made in Canada approach.
+Speaker 1: I love this made in Canada. Well, thank you so much for taking the time to come chat with us.
+Speaker 2: Nice to
+Speaker 1: meet Congratulations on all the recent success. Really impressive. And really appreciate the time chatting with you.
+Speaker 3: Have a
+Speaker 6: great day. So much for having me on.
+Speaker 1: We'll talk to you soon. Have a good one. Goodbye. Let me tell you about Cisco. Critical infrastructure for the AI era.
+Unlock seamless real time experiences and new value with Cisco.
+Speaker 2: Up next missed an opportunity to to pitch John on rebranding back to research in motion.
+Speaker 1: Oh, yeah.
+Speaker 2: Because that is one of the best names Yeah. In history.
+Speaker 1: It is.
+Speaker 2: And it feels even more fitting Yeah. For the current business.
+Speaker 1: Maybe. Maybe. But, yeah, everyone knows BlackBerry.
+Speaker 2: David in chat was asked wanted to ask, has BlackBerry thought of renaming their company? It's now b to b a totally different offering than what people I do think I do think the current name probably holds them back.
+Speaker 1: Really? I think it I think it accelerates them a ton because even though BlackBerry was consumer, in enterprise, it was known as a much deeper solution that you would buy and deploy across Yeah. Like your entire organization.
+Speaker 2: Would say that like the the next generation of enterprise buyers associate the BlackBerry name with just losing
+Speaker 1: the smart home market. Yeah. Yeah. Yeah. Sure.
+Yeah. Oh, well. Well, our next guest is in the waiting room already. We have Giamatteo from Circle. He's been on the show before and he's back in the TBPN.
+Are doing, Jeremy?
+Speaker 2: I'm great.
+Speaker 4: Great to
+Speaker 7: see you. Absolutely.
+Speaker 1: Thank you so much for taking the time to come chat with us. Give us the update on Circle. Give us the update on on stablecoins broadly. I want to go into sort of the knock on effects, how the AI error is helping. But let's start with the state of the business.
+Speaker 7: Yes, absolutely. We reported our Q2 earnings today. I won't go through like all the numbers, but I think one of the things I talked about at the beginning of that is like, we're going through a pretty interesting moment right now, and and that's really being driven by the fact that stablecoins are now becoming part of the actual dollar financial system. So the Genius Act passed, This this new law is going into effect. And really, the big trend that we're seeing is that, you know, all of the traditional players in the financial system from the big technology companies to the payment companies to financial infrastructure companies, they're all starting to build on this.
+And so we're really poised, obviously, for that moment. USDC is today, like overwhelmingly, the most widely used regulated digital dollar in the world. Visa reported at the end of June, 70% of real world stablecoin transactions happening with USDC. We saw record numbers in terms of minting and redemption of USDC. And so it's of the backdrop is like stablecoins are working their way into kind of everything.
+And at the beginning of next year, it's sort of officially part of the financial system. So that's been going on. And I think the other big shift that's been happening, and we talked about this earlier as well, is that we're kind of exiting what I like to think of as like the speculative phase of crypto, and we're moving into like a more mainstream phase. And actually, there's a tipping point data point that happened last week, which is that close to 75% of the volume traded on hyper liquid was actually real world assets, tokenized stocks, tokenized commodities, other things. And it's no longer people who are, like, you know, kind of going leveraged betting on Bitcoin.
+It's actually this infrastructure being used for traditional assets, and that's obviously, I think, pretty interesting moment in time as well.
+Speaker 1: Interesting. Wow. How have you been processing the moves in the traditional finance rails world? There's this talk of a new payments network that might compete with Visa. A bunch of the banks are working on this.
+Are they fighting the last war? Is this not a threat to you? Is this irrelevant? Is that is this maybe beneficial to you?
+Speaker 7: Yeah. I mean, like, I think our philosophy, you know, basically for the last thirteen years is like all of the financial system is going to be moving to being run by software on the Internet. Mhmm. It's going to run on open networks. It's going to be open source infrastructure.
+It's going to be machines that are that are running that. And as obviously we see this convergence with AI, it's actually machines building machines that are running the financial system on the Internet. So I think that's looking backward. I think looking forward, this is about programmable money all on open infrastructure. These new, you know, software created money like stablecoins itself is actually software generated money.
+So I think that's where where where the world is going and and where the velocity is gonna happen as we go forward.
+Speaker 1: How are you thinking about the, I mean, software created money, the AI agents, there's been a whole bunch of different sort of concepts. We were just talking to Harley at Shopify about the Yeah. Like the growth in agentic shopping, but it's mostly research and then it's handed off at Shopify. And I'm wondering, do you have any visibility into where the near term killer use case within a very broad AI world that can do everything from probably figure out how to mail you a gold bar if you try hard enough to microtransaction at streaming USDC, right? There's such a broad remit there.
+Speaker 7: Totally. I mean, this is a huge focus for us. I know we talked about it in the past, but right now, there's these agent payment protocols like X402 and MPP, machine payments protocol. Right now, like over 99% of the transactions that are happening are happening with USDC, are happening on blockchains. So we're leaning pretty hard into that and lots of companies from Amazon to Cloudflare to Shopify to, you know, Stripe and others are building on this.
+And so that's sort of happening. But I think our our conceptual model, and I actually talked about this earlier today, we we have a whole road map we're publishing on this is, we actually think that the real opportunity is not necessarily like agents that are out doing shopping. It's actually agents as as actual, you know, units of labor. And so really looking at agents as, you know, cognitive workers and looking at agents that are actually the supply side of the agentic economy, which is essentially agents that you can discover, that other agents can discover, that can provide and conduct work. Really, that's a whole infrastructure that has to be developed, and that includes things like identity and reputation and marketplaces where these can be discovered.
+We've launched a bunch of pieces of this. There's over 900 services now that are available. It's across a huge range of things on the Internet that you can now do with agents and agentic payments. And so I think from my perspective, the agentic economy in some respects is about the transformation of cognitive work into agentic execution and then how all that gets orchestrated, not just inside a firm. There's lots of people talking about agent harnesses and orchestration, but it's like cross firm boundaries.
+If I'm building a startup and I've got two or three people and I want to employ agents to actually work on my behalf and build things, we need an infrastructure to do that. And so I think it's actually that's the looking forward model. The looking backward model is like, yeah, there's like research and shopping. The looking forward model is there's work that's executed. It's a labor market for agents that has to be established.
+That's what we're excited about.
+Speaker 2: What does stablecoin adoption actually look like in a large financial institution? Because these institutions are using them in some ways, but there's all these different, like, flows of money. And I imagine that when you're talking to CEOs or your BD team is talking to management teams or or, individuals at these companies, you're probably identifying different flows and saying, like, this is a good use case for stablecoins. But I imagine there's a lot of basically payment flows that have been set up and maybe running for, like, twenty years. And Yeah.
+There's a system that works. And so, like, are how much of adoption is, like, net new flows that are being set up stablecoin native versus, like, historical, you know, basically payment processes that are getting, you know turned over to stables.
+Speaker 7: Yeah. I mean, it's it's really interesting. I mean, I think we're sort of seeing this, like, incremental upgrading that's happening. And, you know, you you see this with, pretty much every payment company and every neo bank in the world now has some kind of stablecoin strategy. They're integrating it into how they can receive pay ins or make payouts.
+You're seeing that with companies like Meta who are like making payouts to creators in far flung places around the world. You're seeing global treasurers who are starting to realize like, wait a minute, I can actually move my capital around all around the world 20 fourseven. I can make payments into hard to reach places a little bit more efficiently. We're seeing big ERP systems and treasury management systems adding stablecoin rails as an additional option. So I think we're basically seeing the rails get added in all over the place.
+And a lot of where it's starting is is sort of where it's been hard, you know, internationally
+Speaker 1: Yeah.
+Speaker 7: Cross border Mhmm. And where there's demand for dollars. Right? I think there's also this sort of shift that's taking place. Digital dollars are very attractive.
+People want to hold them, and so you see more demand side, you know, people who want to receive funds this way and want to keep it in that as well. And then within, like, the financial infrastructure, like, the financial markets, etcetera, I mean, basically, you know, what what we've seen happen is digital asset markets got all the big Wall Street trading firms beginning to, you know, trade crypto and then they learned about twenty four seven, three sixty five collateral and the ability to move and settle stuff instantly around the world. Now that's starting to penetrate into traditional markets. And so you're seeing more and more the DTCC, the big kind of clearing infrastructure for securities standing up infrastructure where the cash settlement is actually happening with USDC because it's sort of an on chain system. So we're seeing it work its way into the core of the financial system, and we're seeing it out at the periphery of the way global payments happen.
+My view is obviously is like this is like a superior medium of exchange. It's programmable money, and the unit economics are better, the user experience is better. So eventually, we think this will obviously absorb sort of like digital media slowly absorbed and became a much, much larger thing compared to non digital media.
+Speaker 1: I feel like you're using infrastructure, financial infrastructure in sort of the ephemeral sense, in the metaphorical sense, not in the literal like we need server racks that are running the rails, Yes. But I'm just interested even if it isn't the most crucible moment for the business, what does the physical infrastructure side of the business look like? Is that fairly turnkey at this point? Has most of that engineering been done? Or is there still work to be done to keep the network even moving faster and even more uptime?
+Speaker 7: Oh, it's a it's a great question. So I mean so so two things. So one is like Circle is a software company basically. Like, we're a bunch of people with laptops. We make software.
+We deploy it in clouds. It it runs and it powers like all this stuff. Mhmm. But critically though, you know, a lot of this money and and the and the and the smart contracts, they run on these blockchain network operating systems. So you do have this new layer, which is these blockchain network operating systems.
+And actually today, you know, we announced with Arc, which is the new blockchain network operating system that we've been building and launching, that essentially the actual physical infrastructure is which are often called the validators. These are the firms that run the nodes that actually run the compute, run the transactions, store the data. The validators are actually we had a number of them around 10 or 11, which included the largest asset manager in the world, BlackRock the two largest payment retail payment systems, Visa and Mastercard the largest securities clearing and custody firm, DTCC global banks, a whole bunch of others basically are running that infrastructure alongside us. That is actual infrastructure. These are data centers.
+These data centers have SLAs. They have uptime requirements. They have information security requirements. And so these new networks, these new network computers, which are these blockchain network operating systems, you have to run that infrastructure. And so we've actually built a model where there's, like, very high service levels where actually that infrastructure can kind of withstand the scrutiny of like a central bank that's saying, is this real money?
+Are these real financial market transactions that are happening? And can it meet the kind of assurance that is required to do that? And that is going to continue continually evolve. Like, we're pumping a lot of transaction volume and stuff through this, but it it's going to you know, with AgenTic, with money velocity growing much much larger, like, we're we're going to need to continue to see that scale. But it actually is, like, there is a physical infrastructure layer to support these new operating systems as well.
+Speaker 2: What concerns do you have for the the blockchain and crypto industry broadly with new powerful AI models coming online that have cyber capabilities open Yeah. And closed? I imagine that Yeah. You guys have been super super on top of this as Circle, but there's so many, you know, small Yeah. Companies and and blockchain organizations that have already been the target of various cyber attack
+Speaker 1: a 100 bitcoin in a wallet and said like, AI labs, go hack me. Come get it. I mean, it was like a challenge.
+Speaker 7: This is, you know, crypto is cryptography. Right? And so at the end of the day, like, the the whole concept is in code we trust. I mean, that's literally the motto of crypto is, like, we're we're trusting cryptography, we're we're we're entrusting mathematics, and smart contracts and the execution environments are very, very sensitive types of code because they actually intermediate money. And so it is like high stakes.
+It is super high stakes. We saw, you know, a hardware wallet that had not actually, you know, had had not used the best encryption methodology for its seed phrases, actually has been drained. People thought it was in a hardware wallet. It's been drained over the last week, over $100,000,000 of losses. So it's a very serious issue.
+We're taking it very, very seriously, not just for our own operations, but as like we bring Arc online and we put out this new operating system for economic activity, it needs to be hardened in a different way. The attack surface, the attack vectors, the kind of security that say, I'm a startup builder, I'm developing an app that's going to deploy on one of these networks. What do they need to be able to have some level of assurance that the code that they're deploying on these new types of network operating systems is going to work and be secure in light of these kind of new cyber capabilities? So it's like a whole new problem space. We're very actively working on that.
+Like it's it's now like a critical part of our our engineering
+Speaker 4: Yeah.
+Speaker 7: And and what we think actually is needed for builders too. Like builders, you know, have to kind of take this into account and it's a very different world and that's changed.
+Speaker 2: Yeah. And I I I do think that, you know, the the industry's overall problems effectively become your problem as 100%. As a regular 100%. Single point provider because it's just it it you know, the more hacks that you have, the more trust issues that people have technology and and
+Speaker 1: Even if it's on a completely different architecture
+Speaker 7: completely different
+Speaker 2: It could have even been a social engineering hack. Yeah. It's still badly on
+Speaker 7: We've we've seen we've seen, you know, real increase in in attacks and even the social engineering attacks are often AI orchestrated now because it used to be you get these shitty e mails that like had broken English, but now the e mails are actually well written and they have a better contextual understanding of who they're targeting. So everything is just a different risk surface. Yes, we think about the whole of the ecosystem, not just our own infrastructure because we kind of have this broader role that we play.
+Speaker 1: If I go back to sort of the early Bitcoin days, there were fight the small blockers versus the big blockers. I don't really remember all these details but the Ethereum wing. Yeah. You know, all these different people with really really strong philosophical differences. Yeah.
+Huge economic interest stake. It feels like over the last twelve, eighteen, twenty four months, the crypto community has sort of come together loosely, and there's been some regulation that's been laid out. Yeah. What do you think the AI industry can learn from the journey that the crypto industry has been on from a regulatory perspective?
+Speaker 7: Yeah. I mean, look, I think, you know, monetary infrastructure, financial infrastructure has always been pretty heavily regulated. I think, you know, we've always, like, tried to walk the line between, you know, infrastructure, open source technology, all this stuff is built around those themes and that thesis that's fundamental to the DNA of crypto is open networks, open protocols, open source software, all of that, doing things out in the open. And so that's that's just sort of philosophically there. I actually think it ultimately helps from a regulatory perspective.
+The more the sort of more open that you are, the more that everyone can kind of see what's going on. I think, you know you know, so so I I think that's certainly something that can be learned and that has to do with this sort of open weights discussion vis a vis, you know, kind of kind of labs and other things like that. But I, you know, I have my own views on on AI and regulation and I think, you know, you know, very clearly, like, these are these are foundational utilities for society, and and they're now cyber weapons, if not other types of weapons, and so the the regulation Yeah. There's going there's going to have to be regulation and supervision and registration and other stuff because the stakes are so high for society right now.
+Speaker 1: Yeah. It's interesting that you mentioned the the openness being a like it it it sort of correlated with like a bigger tent and we saw that with Jensen from putting out that open letter and getting so many names to sign on in a way that that has not happened with other little regulated ideas of, oh, should this state law or law or federal preemption, all those little things that the labs have been doing. Jensen was able to just come out with something that was very broad. Some people disagreed, some people didn't. But Yeah.
+A lot of people sort of were like, okay, we're going to band together for this particular vision, which is interesting. Yeah. It does correlate to what you just said. Love it.
+Speaker 6: Definitely.
+Speaker 1: Well, thank you so much for taking the time to come chat. Of course. Awesome progress.
+Speaker 2: Great hanging. We'll talk to soon.
+Speaker 1: A good rest
+Speaker 7: your day. You.
+Speaker 2: Cheers.
+Speaker 1: Cheers. Goodbye. Let me tell you about the New York Stock Exchange. Wanna change the world? Raise capital at the New York Stock Exchange.
+Speaker 2: Just do it.
+Speaker 1: A couple of quick hits before we bring in our next guest. Google, we missed it with the Demis news. That's obviously steamrolling the timeline, but there's also a story in Business Insider. Google is in talks to buy a coding agent startup called Mechanized for $1,500,000,000 Do you know that?
+Speaker 4: Yeah. So it's an RL environment company. So they basically build a bunch of these environments and sell them to labs.
+Speaker 1: Yeah. So Sean Cai Sai says, The first RL environment major acquisition outcome mechanized for $1,500,000,000 Makes a lot of sense when it's been in the data discourse for a long time that GDM's synthetic capabilities weren't up to OpenAI and Anthropix. Many of the recent departures from GDM and the other labs cited this. Certainly, Mechanized is one of the four players in RL environment markets that I would even consider to have some modicum of good synthetic data scaling. And you know, identifying a problem with the organization, with the build out going and opening up the checkbook to the tune of 1,500,000,000 to potentially solve it.
+Still in the rumor phase. The other news we didn't really get to yet is Ilya Sutzkever's company, Safe Super Intelligence, is allegedly rumored to maybe be releasing a model in August. That's this month. Chubby here says, I took a look at their website. They stated very clearly their only goal, their only mission is to develop super intelligence.
+That's their sole focus. In that sense, this model release will be far more than just another model release. In some form, they must have achieved super intelligence if we take their statement seriously. So very interesting to see what happens there if it's
+Speaker 2: Pressure's on.
+Speaker 1: Five or if it's something that just sort of sits within all the other benchmarks. But we'll we'll see. Good luck.
+Speaker 4: Yeah. I mean, this was like very briefly touched on in the Gavin Baker and Wrestling Fest episode. Yep. So it's like unclear. You know, we'll see what actually happens.
+Speaker 1: Yeah. It's not like Ilya came out and said like, we're launching. Get ready. They did announce some fundraising news with NVIDIA, and he did say that it's time to scale. The sort of the age of research might be over, and so we're thinking that maybe a product is coming, maybe a a demo, maybe some evaluations, maybe some benchmarks.
+We love benchmarks. Maybe we'll be able to move the goalpost because I want super duper intelligence. I'm not settling for
+Speaker 2: super intelligence. Well, let's not keep our next guest waiting too long.
+Speaker 1: Yes. Let's bring in Mackenzie Burnett from Ambrook back on the show. Back. Welcome back to the show. Mackenzie, how are doing?
+Speaker 5: Good. How are you guys doing?
+Speaker 1: We're doing fantastic.
+Speaker 2: Congratulations.
+Speaker 1: Give us the news. What happened?
+Speaker 5: So excited to announce that we just raised a $30,000,000 series e.
+Speaker 2: Good. Great. Thank you.
+Speaker 1: Monkey groom. What a great a great partner here. Jordy?
+Speaker 2: I think it's been somewhere between six and twelve months
+Speaker 1: Yeah.
+Speaker 2: Since the last time you're on the show. Maybe maybe on the on the shorter end. Talk about the progress. What have you what have you learned about the state of American agriculture? The state of the industry that you're operating in?
+Speaker 1: Physical economy. Yeah. Have you narrowed the scope of the the go to market motion or has you actually broadened it?
+Speaker 5: Yeah. So we so since we last chatted, we were when we last chatted, we were last summer around 2,500 businesses using Ambrooke. Now we have over 8,000 Wow. Businesses using Ambrooke. And a lot of them are in agriculture, but, actually, we raised the b in order to start to expand to other verticals in the real economy because we started to see a lot of natural adoption with we have over a thousand truckers on the platform, general contractors, property managers, nonprofits.
+Ag is super diverse, so a lot of those customers started pulling us into their side businesses or their neighbor's businesses or family members. So that that's a a big part of the focus.
+Speaker 1: Customers excited about potentially not needing to work with, like, some behemoth legacy ERP system that might be less agile in the AI era versus maybe have a smaller solution now, but if you just look at the growth rate of the technology and your team and your product, they're going to be you're you're just going to naturally solve a lot of problems that come up over the next few years for them.
+Speaker 5: Yeah. I think I think our customers are already seeing that Mhmm. Ambrick is a lot more tailored to the complexity of their operations. So there's kind of this messy middle that hasn't been venture backable for a long time, which is if you're a business that's too complex for QuickBooks or Spreadsheets, but you don't have the team or resources to onboard to a Sage or NetSuite. Yep.
+You know, I would say probably about we estimate about 25% to 30% of America, American small businesses kinda fall in that messy middle
+Speaker 6: Mhmm.
+Speaker 5: Where they're multi p and l, they have complex balance sheets, but they don't, you know I think there's a there is some talk on x about, like, building for finance teams of one. Mhmm. We're building for finance teams of zero.
+Speaker 1: Okay.
+Speaker 5: And, like, you know, that is bringing AI CFOs to folks who where we might actually be their first business software. Like, 50% of our customers are moving off a pen and paper. Mhmm.
+Speaker 2: Wow.
+Speaker 5: You know, what's need to build and and to help them leverage AI is is a pretty different way of building than if you're building for a professional desk worker.
+Speaker 2: Okay. So historically, there was fintech companies that would make vertical solutions for things like construction and agriculture and trucking, and I'm sure you're now competing with some of these players. How much is AI allowing you guys as Ambroek to, like, go into these new verticals and create the specific features or workflows that are more relevant within these sub industries?
+Speaker 5: Yeah. It's making it a lot easier to to come with the right context layer, I think, for what folks need. So you can think of I think Ambrick is not vertical SaaS. We're more vertical go to market. So under the hood, we are actually look a lot more like a a much more user friendly, not sweet or the stage.
+Yeah. 30% of our customers access Amrift exclusively via our mobile app. We definitely have, like, the best mobile app in the industry when it comes to accounting software because we had a bill for users that were not by their desk most of the time.
+Speaker 1: Mhmm.
+Speaker 5: Yeah. We kinda call it the task list economy. And and so there's a lot of workflows that we had to build for, but you can kind of think of the ERP, which we spent the past couple of years building as that, like, agentic context layer. Like, if you ever had to build agents, you know, the first thing you have to do is actually clean up all the underlying data. That's what we've done really well.
+And now we're building so that both that whole data layer is both human legible and agent legible, and those agents make it a lot easier to personalize or to otherwise, like, speak the language to someone's business even if the underlying components or primitives are actually quite similar industry to industry, which is why we've been able to expand so quickly without having to, like, build a lot of custom features for for these different verticals.
+Speaker 2: What what is sentiment around AI for your what kind of, like how do they feel about AI generally? I noticed on the website you guys are not certainly not leading the here's the new hot tool that's gonna revolutionize your business with it with AI even though you're using it under the hood, I'm sure, a bunch of different ways. But how do they how do they feel about it? Do they feel like it's a a useful tool? Are they generally against it?
+What's what's your read?
+Speaker 5: I think our customers are generally open to it. I think there's just a lot of really healthy skepticism about whether AI is actually useful, which is actually this you know, useful to them as a business owner, which is actually quite similar to the to the conversation I think is happening on x right now, which is which is you have some some folks that have been able to really, like, understand how to build, but it requires a lot of infrastructure to be able to get there. And our customers don't have teams of engineers to be able to, you know, build all the things that they need in order to actually build their first agents. They're not gonna be rolling their own, you know, agents on eve or something like that. So there's there's a lot of work that we're doing to kind of meet people where they are.
+But I actually have been talking to a lot of our customers just asking them about general sentiment toward AI, and there is just a broad openness. It is just a little bit
+Speaker 2: Yeah. It's more like show me show me. Don't tell me.
+Speaker 5: Yeah. Exactly. And there's a lot of things where I think if you I I I think if you build it right, they will come. But a lot of people don't know how to build it right, I would say.
+Speaker 1: Totally. Parker Conrad, when he launched Rippling, had this idea of the compound startup, this idea that he had to build multiple products and not a single point solution. Do you like the term compound startup? Do you think it applies here? Do you think it's a relevant philosophy for the modern era?
+Speaker 5: I think there's a lot of learnings in talking to, one, a lot of admiration for, like, Parker and the way that he thought about building
+Speaker 1: Yeah.
+Speaker 5: Building that company. I think talking to a lot of friends at Rippling, I think there are some learnings to take from that, and there are other learnings, which is in a compound startup, you end up seeing a lot of duplication of work Sure. Like, real.
+Speaker 1: Yep.
+Speaker 5: So there is actually some inefficiency within the company itself. And so when we've been thinking about Ambrooke, I've been trying to take the elements of that that I think make a lot of sense, which is you you build a platform that can enable sort of an emergent ecosystem on top, and that ecosystem can either be opportunities within the company or it can be things that our customers are actually able to build themselves. So one thing we decided to do a lot earlier, I think, than a lot of other players in the space was just to was just to give our customers access to an external MCP.
+Speaker 1: Yeah.
+Speaker 5: And so we have customers now that are rolling their own, like, with Lovable or Base 44 or something, rolling their own apps for, like, hunting bookings for, like, one of our Texas ranchers, for example.
+Speaker 1: Yeah.
+Speaker 5: And then they're pulling in context from Ambrooke into that, and we're, you know, we're we're now letting people write back you know, we'll we'll be letting people write back into the itself.
+Speaker 3: And I
+Speaker 5: think that that's it it allows for a lot more creativity outside the company
+Speaker 1: Yep.
+Speaker 5: Not just in But if you think of yourself as a really good platform Yeah. Then I think you can you can get some of the benefit a lot of the benefits of the compound startup.
+Speaker 1: Yeah. That makes a lot of sense. You said you're vertical in go to market. What is the playbook for entering a new market? Like, if you're saying we're going to go after hunting organizations or trucking Yeah.
+Organizations, are you just dialing in the targeted ads and the messaging? Or are you going to conferences and hiring a whole new sales team?
+Speaker 2: He's booking the hunting trip. Yeah. Yeah. Guess.
+Speaker 5: Some of the hunting trip's just for fun.
+Speaker 2: Yeah. You're you're like, we're here for two days. Just let me tell you about Amber.
+Speaker 1: Maybe that's it.
+Speaker 5: Yeah. I know there's so the way that we've been finding this playbook is trying to work and replicate across these different verticals are, first, you have to do a lot of brand awareness. That's the push. Yeah. And that can be Facebook.
+Facebook is actually super it still has a lot of art left within non SaaS, non tech industries. So I'll look at brand awareness on Facebook. And then what you start to do is once you get enough of a a set of customers that are really happy, you start to do case studies. You then take those case studies, and you start to do build partnerships with local trade associations.
+Speaker 1: Sure.
+Speaker 5: And then you start getting third party credibility Mhmm. Rolling. We also go on a lot of really niche podcasts. This is not the only podcast we that I've also, you know, go on, like, the Wealthy Cowboy or Sure. Or, you know and that has been really effective.
+We and we also help our customers go on those. And so helps them with brand awareness. And then so you start to build it. And then you start to get word-of-mouth, and then you start to see the regional density kick in. So in the counties where we have more than one to 2% market penetration, our CAC is half of the counties where we have maybe 10 to 25 bps of market penetration.
+And so that spread is just social proof and word-of-mouth. So you you have to kick start the the flywheel going.
+Speaker 1: Wait. How old is the company?
+Speaker 5: So we started in 2020.
+Speaker 1: Okay. Because this feels very this feels like a
+Speaker 5: very mature
+Speaker 1: operating philosophy. Yeah. Much more than six months in.
+Speaker 5: Launched the product in 2024.
+Speaker 1: Yeah. Okay.
+Speaker 5: So we spent a couple of years. We spent one or two years kinda figuring out what product we wanted to build Mhmm. And just keeping the team really lean. And then we spent two years just sitting in a private beta with a couple of dozen of design partners.
+Speaker 1: Interesting. Interesting. Very cool. Well, congratulations on the round. Congratulations on progress.
+Speaker 2: Thank you. Yeah. Good alpha. Yeah. Good alpha on go to market.
+Speaker 1: Yeah. Like it. Lots of people taking notes. Thank you so much for coming on the show. Yeah.
+Speaker 2: Great
+Speaker 5: to Have see
+Speaker 1: a great weekend. We'll talk to
+Speaker 2: you soon. Cheers.
+Speaker 1: Goodbye. Let me tell you about Codex. Codex is a powerful workspace for getting work done with AI agents. Whether you're writing code, analyzing data, creating content, or automating business workflows. Codex helps you move projects forward from start to finish.
+Last story that I want to talk about, Jordy, you got anything, let me know. But the founder of ByteDance apparently just banned his employees from distilling US frontier models, which begs the question, what were they doing before? But according to this post, fears distilling US models would trigger Washington that there might be pushback in Washington DC over this. Obviously, lot of labs, they don't like getting distilled. We've seen all the complaints.
+And it might put TikTok at risk again. Anthropic has accused DeepSeek, Moonshot, MiniMax, ZAI, Alibaba, all of Distilling Claude. But they haven't
+Speaker 2: I think
+Speaker 1: haven't accused
+Speaker 2: think he's doing a little bit of comms and marketing.
+Speaker 1: He said, we we should be willing to sacrifice some short term gains for longer term goals. No distillation allowed even if we lose. Interesting story. Yeah. We'll see.
+We'll see. Maybe maybe the the distillation attacks will stop. Maybe they will continue and abated. Maybe super intelligence can can can weed it out if you're trying to distill. Corey, anything else in the timeline?
+Speaker 2: From SpaceX earnings yesterday, Capital says, Elon on the SpaceX call, it's probably also worth mentioning that our internal projections for reaching 1,000,000,000,000 in revenue have moved up from 2031 to 2030.
+Speaker 1: Mhmm.
+Speaker 2: And Ryan Peterson says, f it. We're making our 2031 goals, our 2030 goals now too.
+Speaker 1: I love it. Well, there's another model that launched Muse Code from Meta, Super Intelligence, Mark Zuckerberg. Posted again on Axe, the Everything app. Wait. I got to follow him.
+Why am I not following him? He's just a new poster now. Releasing Muse code in beta today. It's a terminal coding agent that takes on complete software engineering task powered by Muse Spark 1.2, a coding agent, a coding focused model update. And so I'm sure people will be benchmarking this, seeing where it stacks up, what it how it how it prices out, where it's good, where it's bad, all those things.
+Over in Microsoft land, they're going all in on GPT 5.6 sole. A Microsoft exec just sent an internal memo that's designed to end token maxing and makes OpenAI's GPT 5.6 sole the default model for internal use. So that was line one on the Ed Zitrin to do list for Sam Altman. Make sure Microsoft likes the model. And seems like mission accomplished.
+Any other news you want to go through today, Jordy? We talk about the New York Times tomorrow.
+Speaker 2: But We'll see you tomorrow, folks.
+Speaker 1: Have a good day. Have a good Thursday. Is it Wednesday?
+Speaker 2: Online.
+Speaker 1: Have a good Wednesday. We'll see you tomorrow.
+Speaker 2: Have 11AM Pacific. Fifth of your life.
+Speaker 1: Us, five stars on Apple Podcasts and Spotify. Sign up for our newsletter at tbpn.com.
+Speaker 2: We love
+Speaker 1: you. We love you. Goodbye. Peace.

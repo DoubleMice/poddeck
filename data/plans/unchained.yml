@@ -1,15 +1,119 @@
 source: unchained
-refreshed_at: 2026-08-07T04:02:03.432Z
+refreshed_at: 2026-08-07T18:18:56.088Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 65
 done: 0
 pending: 0
-needs_transcript: 63
+needs_transcript: 62
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 3
 downloaded: 0
 episodes:
+  - id: 0c1a1150-9289-11f1-bf33-e3697544f1ef
+    guid: 0c1a1150-9289-11f1-bf33-e3697544f1ef
+    title: "Inside the Coldcard Hack That Drained Over $100 Million in Bitcoin: Uneasy Money"
+    duration: 4015
+    published: Fri, 07 Aug 2026 17:54:00 -0000
+    published_sort: "20260807"
+    first_seen_at: 2026-08-07T18:18:56.086Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8969627964.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8969627964.mp3
+    image: https://megaphone.imgix.net/podcasts/0c1a1150-9289-11f1-bf33-e3697544f1ef/image/a4dcf5431780edfce8b9670cd3f55e67.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      A hardware wallet's 5-year-old randomness bug just let hackers drain over $100 million in Bitcoin. How many more
+      waves are coming? Plus, Ethereum's fight over cutting ETH issuance.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      ⁠⁠⁠⁠⁠⁠Cape⁠⁠⁠⁠⁠: Your biggest crypto vulnerability isn't your wallet, it's your phone number. Cape is America's
+      privacy-first mobile carrier that rotates your SIM identity daily and blocks SIM swaps before they happen. Get 33%
+      off your first six months at ⁠https://cape.co/unchained⁠ (use code: UNCHAINED).
+
+
+      ========================================================
+
+
+      A firmware randomness bug buried in Coldcard's code since 2021 surfaced last week and has already drained over
+      $100 million, an estimated 1,600 to 1,800 Bitcoin, across four attacker waves. Taylor Monahan makes the case that
+      the culprit is not North Korea but professional GPU crackers, and explains why the dice-rolling ritual many early
+      victims trusted still left them exposed.
+
+
+      Sonya Kim, co-founder of 3F Labs, and Mike Silagadze, founder and CEO of ether.fi, debate where DeFi's
+      responsibility ends after trade.xyz's SK Hynix perp swung from $1,128 to $917 on a thin premarket print, then turn
+      to Ethereum's own monetary policy fight.
+
+
+      That fight centers on EIP-8361, a proposal to cut ETH issuance that opened with only 48 hours for public comment,
+      reviving the minimum viable issuance debate Sonya once worked through at Steakhouse. Silagadze calls cutting
+      issuance economically unsound and warns it could push billions of dollars of ETH out of staking, while Kain
+      Warwick argues the resulting chaos is good for an Ethereum governance culture that had grown too quiet. The
+      conversation covers Coldcard's entropy failure, the dice rolls that did not save early victims, trade.xyz's oracle
+      mispricing, and Ethereum's issuance fight.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠Sonya Kim - Co-Founder of 3F Labs
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠Mike Silagadze - Founder and CEO of Ether.Fi
+
+      Timestamps
+
+
+      🔓 01:17 Coldcard's 5-year-old entropy bug resurfaces, over $100M in BTC stolen
+
+
+      🕵️ 10:26 Taylor argues it's not North Korea: this hack needs compute, not scams
+
+
+      🎲 21:00 The dice roll debate: why 50 rolls barely saves your seed phrase
+
+
+      📱 27:14 Cape: Get 33% off your first six months with code 'unchained' at https://cape.co/unchained
+
+
+      📉 27:39 SK Hynix oracle glitch on trade.xyz reignites the platform-responsibility fight
+
+
+      🔗 42:24 Aave retreats from multichain sprawl as EIP-8361 issuance fight erupts
+
+
+      🧠 51:26 Mike on why cutting ETH issuance would push billions of dollars of ETH out of staking
+
+
+      🔥 53:05 Sonya's fix: burn fees for the same effect without cutting issuance
+
+
+      🌀 01:05:20 Kain's take: fragmenting the EF into chaos is actually healthy for ETH
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-07T18:18:57.083Z
+    transcript_error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
+    transcript_completed_at: 2026-08-07T18:19:18.880Z
   - id: ae1428e6-9127-11f1-8fef-8fd87b013512
     guid: ae1428e6-9127-11f1-8fef-8fd87b013512
     title: "The Chopping Block: ColdCard's $100M RNG Hack, AI-Powered Security & Ethereum's Staking Yield Taper"
@@ -3498,8 +3602,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5261,8 +5364,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd
@@ -6017,82 +6119,6 @@ episodes:
 
 
       54:15 Adverse Selection and Market Design
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 2fe5386c-1683-11f1-9d31-f7591d01de3a
-    guid: 2fe5386c-1683-11f1-9d31-f7591d01de3a
-    title: "Why Crypto Has a Good Long-Term Setup Right Now: Bits + Bips"
-    duration: 3409
-    published: Wed, 04 Mar 2026 15:00:00 -0000
-    published_sort: "20260304"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2901497332.mp3?updated=1772630560
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2901497332.mp3?updated=1772630560
-    image: https://megaphone.imgix.net/podcasts/2fe5386c-1683-11f1-9d31-f7591d01de3a/image/32c2bab91b32ff9f81f0554676c9a894.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      A major war broke out in the Middle East, but Bitcoin didn’t break. One veteran investor says that price action
-      reveals something important about where crypto stands today.
-
-
-      ---
-
-
-      Bits + Bips is spreading its wings
-
-
-      Starting soon, new episodes will only be published on our brand‑new feeds.
-
-
-      What you need to do:
-
-
-      Click the links below.
-
-
-      YouTube
-
-
-      Apple
-
-
-      Spotify
-
-
-      X
-
-
-      Smash Follow or Subscribe.
-
-
-      🎉 Done.
-
-
-      ---
-
-
-      The U.S. and Israel have struck Iran, killing Ayatollah Khamenei, and markets are still calibrating. Oil is
-      climbing toward $100, yields are confounding textbook expectations, and when news first broke, Bitcoin dropped to
-      around $63,000 before recovering to roughly $70,000 during Monday's session. Equity futures that opened sharply
-      lower also reversed, ending roughly flat vs. Friday's close. What does that price action actually mean? Is the
-      crypto bounce a sign of structural resilience, or is it moving in lockstep with a broader risk recovery?
-
-
-      In this episode, Steven Ehrlich sits down with Rob Hadick, General Partner at Dragonfly Capital, a veteran crypto
-      venture investor managing hundreds of millions of dollars to work through what the Iran conflict actually means
-      for digital assets. They also get into the stalled Clarity Act that could be crypto's biggest catalyst of the
-      year, the rise of on-chain derivatives markets, and why one of the largest crypto-focused funds believes now is
-      one of the best moments in history to be building in this space.
-
-
-      Host:
-
-        ⁠Steven Ehrlich⁠
-
-      Guest:
-
-        Rob Hadick, General Partner, Dragonfly
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
