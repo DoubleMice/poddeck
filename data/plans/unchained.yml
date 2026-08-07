@@ -1,5 +1,5 @@
 source: unchained
-refreshed_at: 2026-08-06T04:07:06.579Z
+refreshed_at: 2026-08-07T04:02:03.432Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 65
@@ -10,6 +10,133 @@ transcribing: 0
 transcribe_failed: 2
 downloaded: 0
 episodes:
+  - id: ae1428e6-9127-11f1-8fef-8fd87b013512
+    guid: ae1428e6-9127-11f1-8fef-8fd87b013512
+    title: "The Chopping Block: ColdCard's $100M RNG Hack, AI-Powered Security & Ethereum's Staking Yield Taper"
+    duration: 3787
+    published: Thu, 06 Aug 2026 12:00:00 -0000
+    published_sort: "20260806"
+    first_seen_at: 2026-08-07T04:02:03.430Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3153225653.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3153225653.mp3
+    image: https://megaphone.imgix.net/podcasts/ae1428e6-9127-11f1-8fef-8fd87b013512/image/3e09f4992330be7fcf0ad47158824cee.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      This week we dissect ColdCard's ~$100M RNG exploit that Claude Code cracked in 8 minutes, debate whether AI just
+      killed open-source security and Bitcoin maximalism, tear apart Ethereum's EIP-8361 staking-yield taper, and unpack
+      Leopold Aschenbrenner's 67% Situational Awareness blowup and CLARITY Act's ethics fight.
+
+
+      Welcome to The Chopping Block – where crypto insiders Haseeb Qureshi, Tom Schmidt, Tarun Chitra, and Robert
+      Leshner chop it up about the latest in crypto. No guest this week, just the four of them working through a week
+      where AI quietly rewrote the economics of both security and human psychology, and crypto happened to be standing
+      in the blast radius.
+
+
+      This episode: ColdCard, NVK's Bitcoin-only hardware wallet, got drained of nearly $100M thanks to a
+      random-number-generation bug that a one-word commit buried five years ago, and Claude Code sniffed it out in 8
+      minutes (an open model with no internet found it in 20, for about two bucks). The crew debates whether AI just
+      killed open-source security, whether Nic Carter is right that this is 'the death of Bitcoin maximalism,' and why
+      Tarun thinks maxi devs are 'the RFK of security practices.' Then they take a blowtorch to Ethereum's EIP-8361
+      staking-yield taper (Tarun: 'the proposal reads like shit'), unpack Leopold Aschenbrenner's 67% Situational
+      Awareness blowup while 4x levered, and wade into the CLARITY Act's ethics fight where a single amendment is the
+      whole ballgame.
+
+
+      Listen to the episode on Apple Podcasts, Spotify, Pods, Fountain, Podcast Addict, Pocket Casts, Amazon Music, or
+      on your favorite podcast platform.
+
+
+      Show highlights
+
+
+      🔹 ColdCard's Bitcoin-only hardware wallet drained of nearly $100M after a five-year-old random-number-generation
+      bug silently fell back to weak software RNG.
+
+
+      🔹 A single dev swapped C++ macros with a one-word commit message, seemingly just to get NVK's code to compile,
+      and doomed years of keys.
+
+
+      🔹 Claude Code found the ColdCard bug in 8 minutes; open model GLM 5.2, no internet, found it in ~20 for about $2.
+
+
+      🔹 Tarun calls Bitcoin maxi devs 'the RFK of security practices' who 'don't do audits,' branding ColdCard's lack
+      of hardening 'incredibly delinquent.'
+
+
+      🔹 Haseeb warns AIs 'are much less diverse than humans,' so security now scales with AUM while North Korea spends
+      thousands in compute.
+
+
+      🔹 Nic Carter calls it 'the death of Bitcoin maximalism' as Haseeb reads posts from holders who scrimped for three
+      Bitcoin and woke up wiped.
+
+
+      🔹 EIP-8361 from Pintail and Justin Drake tapers ETH staking yield toward zero above 50% staked; the community is
+      'vomiting all over' it.
+
+
+      🔹 Tarun torches EIP-8361 as 'a truly horrendous post,' arguing constantly changing policy means Ethereum is never
+      credible hard money.
+
+
+      🔹 Leopold Aschenbrenner's Situational Awareness AI hedge fund blew up ~67% while 4x levered, with Robert drawing
+      Archegos comparisons.
+
+
+      Hosts
+
+
+      ⭐️Haseeb Qureshi, Managing Partner at Dragonfly
+
+
+      ⭐️Tom Schmidt, General Partner at Dragonfly
+
+
+      ⭐️Tarun Chitra, Managing Partner at Robot Ventures
+
+
+      ⭐️Robert Leshner, Founder & CEO of Superstate
+
+
+      Disclosures
+
+
+      Timestamps
+
+
+      00:00 Intro
+
+
+      01:03 ColdCard's $100M Exploit
+
+
+      05:46 AI, Audits & Bitcoin Maxi Security Failures
+
+
+      12:07 Open Source vs Closed Source in the AI Era
+
+
+      23:21 EIP-8361: Ethereum's Staking Yield Taper
+
+
+      30:34 Hard Money, Post-Quantum & Central Bank Chaos
+
+
+      35:54 Aschenbrenner's Situational Awareness Blowup
+
+
+      44:41 Robinhood Prediction Markets Boom as Hyperliquid RWAs Flip Crypto
+
+
+      51:54 Korea's Bloodbath & the Death of Retail Volatility
+
+
+      55:17 CLARITY Act: Ethics Provisions Are the Linchpin
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: f5281bc8-9147-11f1-90f5-5783ac069008
     guid: f5281bc8-9147-11f1-90f5-5783ac069008
     title: "DEX in the City: How Claude's Red-Teaming Agents Escaped a Test Without Realizing It"
@@ -5966,92 +6093,6 @@ episodes:
       Guest:
 
         Rob Hadick, General Partner, Dragonfly
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
-    priority: 1
-  - id: 23db8608-1772-11f1-9c40-e70b2f123eb6
-    guid: 23db8608-1772-11f1-9c40-e70b2f123eb6
-    title: "Bits + Bips: Is Crypto the Only Asset That Works When Geopolitics Breaks Down?"
-    duration: 3525
-    published: Wed, 04 Mar 2026 13:05:00 -0000
-    published_sort: "20260304"
-    first_seen_at: 2026-05-19T08:55:24.816Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2823144682.mp3?updated=1772630439
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2823144682.mp3?updated=1772630439
-    image: https://megaphone.imgix.net/podcasts/23db8608-1772-11f1-9c40-e70b2f123eb6/image/7382165a8ab3758f4d40a4b0f635d290.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      US and Israeli strikes killed Iran's Supreme Leader and initially rattled markets. But does the subsequent market
-      calm reflect genuine resilience or a dangerous underpricing of what comes next?
-
-
-      ---
-
-
-      Nexo is the premier digital wealth platform. Receive interest on your crypto, borrow against it without selling,
-      and trade a range of assets. Now available in the U.S with 30 days of exclusive privileges. Get started at
-      nexo.com/unchained
-
-
-      Bits + Bips is spreading its wings
-
-
-      Starting soon, new episodes will only be published on our brand‑new feeds.
-
-
-      Here’s what you need to do:
-
-
-      Click the links below.
-
-
-      ⁠YouTube⁠
-
-
-      ⁠Apple⁠
-
-
-      ⁠Spotify⁠
-
-
-      ⁠X⁠
-
-
-      Smash Follow or Subscribe.
-
-
-      🎉 Done.
-
-
-      ----
-
-
-      Over the weekend, US and Israeli forces conducted coordinated strikes on Iran under an operation called Epic Fury,
-      killing Supreme Leader Ayatollah Khamenei and triggering retaliatory missile attacks across the Gulf region.
-
-
-      Markets absorbed the shock in ways that surprised almost everyone: bitcoin briefly dropped and recovered to
-      $70,000, gold touched $5,400, oil surged, and the VIX held in the low 20s while equities finished roughly flat.
-
-
-      In this episode of Bits + Bips, Austin Campbell, Ram Ahluwalia, and Chris Perkins discuss whether the market is
-      correctly pricing this as a contained regional conflict, or is something larger being missed? What does crypto's
-      stability in a weekend war say about its role as an asset class? And with the Clarity Bill stalling again over
-      stablecoin yield, and Anthropic handing the Pentagon to OpenAI, is the window for principled positioning in both
-      crypto and AI closing faster than anyone admits?
-
-
-      Hosts:
-
-
-      ⁠⁠⁠Ram Ahluwalia⁠⁠⁠, CFA, CEO and Founder of Lumida
-
-
-      ⁠⁠⁠Austin Campbell⁠⁠⁠, NYU Stern professor and founder and managing partner of Zero Knowledge Consulting
-
-
-      ⁠⁠⁠Christopher Perkins⁠⁠⁠, Managing Partner and President of CoinFund
-
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
     status: needs_transcript
