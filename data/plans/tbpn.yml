@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-08-08T03:35:53.285Z
+refreshed_at: 2026-08-08T18:10:02.093Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 1
@@ -102,7 +102,7 @@ episodes:
 
 
       https://www.youtube.com/@TBPNLive"
-    status: pending
+    status: generated
     priority: 1
   - id: 497e908d-c7d6-499e-9d79-c69355dd116c
     guid: 497e908d-c7d6-499e-9d79-c69355dd116c
@@ -211,8 +211,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-07T18:19:53.783Z
-    transcript_completed_at: 2026-08-07T18:20:38.743Z
+    transcript_submitted_at: 2026-08-08T18:11:22.574Z
+    transcript_completed_at: 2026-08-08T18:12:23.943Z
     transcript_error: |
       MiMo transcription failed: 401 {
           "error": {

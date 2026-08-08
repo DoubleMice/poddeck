@@ -1,0 +1,647 @@
+Speaker 1: You're watching TBPN. Today's Friday, 08/07/2026. We are live from The U. UltraDome. Temple of technology.
+Speaker 2: Technology, the fortress of finance The capital of capital.
+Speaker 1: Let me tell you about ramp.com. Time is money. Save both. We need use corporate cards. Cool pad, accounting, and a whole lot more all in one place.
+Lots of voice changer today. Let's amp it up. Who had orange in the chat? Because the chat was trying to guess what color sunglasses would be wearing today. Is that orange or is that more of like a burnt sienna?
+Speaker 2: Well, think it's more of a green greenish frame Yeah. With more of with an orange lens.
+Speaker 1: You gotta drop the line. I'm wearing sunglasses because I'm looking at the future and it's very bright indeed. It's a good one. I don't know. Knowing just that reference.
+Anyway. Oh.
+Speaker 2: It's great to be back.
+Speaker 1: It's great
+Speaker 2: to back. It's Friday. We got a shorter show for everyone today. We have Samir, general partner of Coastal Ventures coming on to talk about their new investment Discovery Loop Yeah. Founded by none other than Jeff Dean and some of his crew from DeepMind.
+And then we have Patrick Wendell, co founder of Databricks, joining to talk about their new blog post. I promise it's gonna be more exciting than it sounds like. No. But they're doing smarter model routing and, we're excited to catch up with him.
+Speaker 1: Very excited. Well, for the first time, scientists have used AI to create entirely new viruses.
+Speaker 2: You for it. They delivered. They delivered. Delivered. They they woke up busy.
+You know what we don't have enough of?
+Speaker 1: Viruses that have never existed in nature before. It's marked a milestone that could accelerate biotechnology while also raising long term biosecurity questions, of course. Nightmare scenario is you go to Best Buy, you get a gaming PC with a couple pretty stock graphics cards, and you're able to run an open source model that basically walks you through the steps of creating something really problematic. At the same time, there's a lot of really talented and well resourced organizations that are fighting that tooth and nail. And so we'll probably see a little back and forth equilibrium there.
+But lots of interesting questions. Important to note that these viruses do not affect humans whatsoever. Even these new viruses. They target bacteria. So it's more of an experiment, more of a demo.
+But you can see where things are going and
+Speaker 2: our That doesn't make me that comforted, to be honest
+Speaker 1: because You like I your bacteria know,
+Speaker 2: we naturally have where there's bacteria Yeah. That is it's part of being human.
+Speaker 1: And you would like the bacteria to be unaffected by viruses. Anyone standing up for the bacteria right now?
+Speaker 2: Well, it's more so like you have bacteria in your gut. Yeah. Now gut is kind of an important part of
+Speaker 1: that bacteria is gonna be suffering from a novel virus apparently.
+Speaker 2: Yeah.
+Speaker 1: Well, in a study published Thursday in Science, researchers at Stanford and the Arc Institute trained an AI model to recognize patterns in naturally occurring viral DNA, then used it to generate genetic sequences for brand new viruses. After synthesizing those DNA sequences and inserting them into bacteria, The team found the bacteria produced viable viruses capable of infecting other bacteria. The work does not create a new threat to humans. Be careful. I'm sure that will get cut out of a lot of messaging around this because it sounds really scary on its face.
+The AI was trained only on bacteriophages, viruses that infect bacteria, and specifically excluded viruses that infect humans, plants, animals and fungi. As a result, the model cannot generate viruses capable of infecting people. While scientists have been synthesizing viral genomes for years to study diseases and develop vaccines, this is the first time AI has been used to design entirely new viruses that function in the real world. And I was going back and forth before the show on, Is this anything special? We've been using tools to make viruses for bacteria for a long time.
+This is just another tool to do it. Or is this some material breakthrough? That's sort of the debate point. It sounds really scary, but also, you've been able to design these viruses in a lab for a long time. So what is the material difference here?
+I think it all comes back to acceleration and cost. If all of a sudden it becomes a thousand times cheaper to generate viruses, then that can have a that could reshape biotech in a positive way, but also have biosecurity implications. So if the Yeah.
+Speaker 2: I think a lot of the reaction is just that it feels like Mhmm. Little too soon post Wuhan. Yeah. A little too soon post Hugging Face. Yeah.
+There's been a variety of events that I think naturally make people a little apprehensive when you see a headline like this.
+Speaker 1: Yeah. A lot of people are like, you know, the LEAs are Yudkowsky reaction of, like, this is bad. But we'll see where it goes. If the approach proves effective across other classes of viruses, it could become a powerful tool for medicine and biotechnology. Viruses are already widely used as delivery vehicles for gene therapies and other medical treatments, and AI designed viruses could eventually expand that toolkit.
+At the same time, the research highlights how advances in AI are making it increasingly important to build safeguards alongside new capabilities, which I'm sure the ARC Institute is working on. And there's also other AI driven neo scientific labs. I mean, Jeff Dean's one of those was advancing one of the goals of his new company with Discovery Loop is to work on biotech broadly. He has a very broad remit, but there are more narrow projects like that new company that's focused on finding a cure for the common cold. There are a few other projects that are more narrowly targeted, as well as all the biotech companies that are working on stuff.
+The if we're going to get advancing advances in viruses that deliver gene therapies or medical treatments, we've got to rebrand virus. We've got to come up with a new word. Just like GLP-one peptide, that felt very safe. It was like, you're not doing steroids. You're not on gear.
+Speaker 2: What's the lizard?
+Speaker 1: You're doing a
+Speaker 2: You're not doing Gila monster venom.
+Speaker 1: Exactly. Exactly.
+Speaker 2: You're not doing Gila monster venom. No. Chinese peptide.
+Speaker 1: The Chinese peptide was a rough go. But in general, I think the fact that it was like just a peptide, it felt much more welcoming as opposed to being in the world of the steroids, the performance enhancing drugs. And it became easier for people to jump in, oh, I gotta learn about peptides. Oh, there oh, there's naturally occurring peptides? Cool.
+I'm into that. But virus has such a bad connotation post Wuhan as well as just everything. You're never like, I got a got a virus and someone says, a good one or a bad one?
+Speaker 2: Like, it's always bad. Yeah.
+Speaker 1: It's never good. But so they need they need a new brand for that if they're gonna commercialize that for sure. But we'll see. Anyway, there's a whole article in the New York Times about it. This AI just created viruses not found in nature.
+It has a cool little graphic by Carl Zimmer here. The new study published Thursday in Science goes well beyond duplicating viral genes. Scientists at Stanford University and Arc Institute taught AI to recognize patterns of DNA in nature and then use that DNA to write recipes for entirely new viruses. The virus the viruses dreamed up by AI do not pose a threat to humans because they are all similar to a naturally occurring virus called phi x one seventy four, which can only infect bacteria. Really hardcore name for something that's not that dangerous.
+Phi x one hundred seventy four sounds like an offspring of Elon Musk. There's just a huge disconnect, research fellow said. Governments and scientific organizations have been slow to develop guardrails that could block the creation of a deadly virus even as the science races ahead. So I don't think they'll be open sourcing this anytime soon. But there is other news.
+Mark Gurman's been reporting on OpenAI's first consumer device. It'll reportedly look like a hockey puck sized Mark Gurman? The Gurmanator?
+Speaker 2: Oh, the Gurmanator. The
+Speaker 1: Gurmanator. Yeah. OpenAI's OpenAI's first consumer device OpenAI's first consumer device will reportedly look like a hockey puck sized donut and cost roughly 300 to $400. What a funny form factor.
+Speaker 2: Love hockey pucks. Yeah. Love donuts.
+Speaker 1: Okay. So you're in.
+Speaker 2: So I I like where this is going.
+Speaker 1: There's also a rumor that it has mechanical pieces on it. So I think it can like undulate potentially. The the speculation's all over the place. According to Bloomberg's Mark Gurman, the Gurminator, as you put it, the battery powered device is essentially a portable smart speaker without a screen designed to be carried around the house or placed on a nightstand or kitchen counter. It will include speakers and microphones along with cameras and other sensors that allow its AI to perceive what's happening around it.
+The device is intended to work much more like a much more capable version of ChatGPT's current voice mode, learning about its owner over time and using that context to make conversations more personalized. OpenAI is also making the hardware itself feel more expressive. The device will reportedly include lights and parts that physically move as it responds. And the goal of with the goal of making it feel more alive than existing stationary smart speakers from Amazon and Google. The product being developed by Johnny Odd's design team is expected to arrive in '27.
+Feature request. And envisioned as the first in a broader family of OpenAI hardware. Long term, the company reportedly hopes to develop AI devices capable of taking over some of the functions now handled by smartphones. Feature request. Yes.
+Speaker 2: Rolling flash bang.
+Speaker 1: Flash bang. That'd be a good feature request.
+Speaker 2: Yeah. It says it has lights. It's got sound. You should be able to use this as a on the go flash bang. Yeah.
+So you're going to hang out with some friends. Yeah. You wanna prank them a little bit? Yeah. When you're when you're kind of coming in?
+I I do
+Speaker 1: I I was reflecting on the the the deep mind story of, you know, departures there and the question of, you know, how the models are progressing versus the commercialization of those models. There's some real strong points. There's some weaker points within the, within the rollout of, Google's AI strategy. And I was I was thinking about, like, what happened to Notebook. L m?
+Because that was heralded as a very magical technology. You would, you know, give it some sources, a particular report, and it would just generate a podcast talking between two different people, much more conversational. And a lot of people like consuming information that way. So you could just go read a deep research report on the history of how bacteriophages work if you want to get up to speed on that because you're going to you're trying to understand what the ARC Institute is working on with these new viruses. You could go to NotebookLM and say, Hey, why don't you generate me a podcast of two scientists explaining this at you know, the high school level and then take it into college level.
+Speaker 2: Tyler in the YouTube chat says, not loves notebook lm. Use it weekly.
+Speaker 1: Use it weekly.
+Speaker 2: I always thought that I would have used it when I was in college. Yeah. And I needed to, let's say, write a paper on something and I wasn't super prepared, I could say, generate me an hour long podcast about this set of topics Yeah. And I'd listen to that and then I could probably
+Speaker 1: Yeah.
+Speaker 2: Rip the paper.
+Speaker 1: Yeah.
+Speaker 2: I I did that for a history exam. Wow. It was like a vocab list and it went through. Okay. Yeah.
+Middle age history, I think.
+Speaker 1: Wait. Oh, you used Notebook LM?
+Speaker 2: Yeah. It generated podcasts. So I basically fed in a vocab list
+Speaker 1: Okay.
+Speaker 2: Of like dates and various things. Then I had it
+Speaker 1: Wait. And was it just a it
+Speaker 2: was really easy.
+Speaker 1: I think
+Speaker 2: I aced it. Wow. There we go. He
+Speaker 1: needs a better confidence monitor. But I was I was I mean, first off, I I'm I'm I'm a big fan of that new trend that's like asking old people, like, how did you write a five paragraph essay without AI? And then the answer is like, buddy, we we we wrote a five paragraph essay without even reading the book. Because you just go to SparkNotes or something. But I was I was interested in in the evolution of NotebookElla because it's this like, there's this collapsing of capabilities where Sam Altman was recently sort of dragged a little bit for saying, like, he would use Chatsby's work to generate a podcast about what's going on in his calendar and the family life and stuff.
+And people are like, how about you just talk to your kids? But the the more interesting technical point on that is that do you even need ChatGPT work to generate you that podcast or will the voice mode and the memory feature have enough context to just sit there and talk to you like it's a podcast on the fly? Like Yeah. To
+Speaker 2: be honest to
+Speaker 1: be For honest free.
+Speaker 2: Like live voice
+Speaker 1: Yeah.
+Speaker 2: If you're trying learn about a topic for example Pretty good. Is probably better than just generating a podcast because a podcast assumes like some certain understanding Yeah. Maybe it's
+Speaker 1: And it's rigid.
+Speaker 2: Maybe maybe it thinks you understand too much Yeah. Or too little. Whereas voice, you can be like, go down this like
+Speaker 1: Exactly. Exactly. It's a choose your own adventure. It's a it's an expert call. It's a instead of notebook l m, it's t g s l m or something, basically.
+I mean, you're talking to an expert and you can guide the conversation wherever you go. So will be interesting to see where this goes, what the reception is like. I mean, huge huge delta divergence between, like, the the social media pushback for ChatGPT versus like the App Store ratings. Like there's like a billion people using it. A lot of people just like the product.
+And then there'll be like someone dunking on it to the tune of a million likes on Instagram. And so what how do you measure those two things it comes to an actual consumer product if it's delivering something good? If people are like if the if the stated preference is like, I don't like AI, but the revealed preference is like, it's kinda nice to have this thing around the house. It's kinda useful. Interesting to see where it goes.
+Also, we'll be very the the launch of this device will be very, very interesting to see, like, how things come together. Like, you can see the CHECHIPTY work, CHECHIPTY codex, CHECHIPTY, like, coming together into one product. But, like, there's a world where this product launches with voice mode, and it's not really capable of linking to a cloud codex instance and writing new software and doing the more advanced things that are required just to accomplish some tasks. Like, you can go to Chekipity and ask it to pull down an image from the Internet, restyle it, change it, but you can't really tell it to do, like, 40 of those or, like, every day forever do a whole host, a whole workflow, but you can in Codex. But and you can talk to Codex, but it has to be running on a computer.
+And and and I would hope that by the time this launches, there's full, like, full context. Like, I I was doing some work in Codecs and I had a I had, like, the output and then I wanted to, like, generate an image based on that and take it on the go, but I wanted to be able to close my laptop and not and still be able to access it. So I had to copy the context window into ChatGPT, just the normal app, so then I could, like, access that information and continue to transform And that was something that is, like, a very, very temporary thing that feels like it's gonna be fixed in, like, a couple weeks. But there's a whole bunch of these minor integration issues that probably need to be fulfilled before this product launches and delivers like the full the full capability of what you can do. Because so many things, so many tasks instead of just knowledge retrieval require actually firing up a browser, scraping it, writing some code, downloading things, you know, setting up an actual service and and workflow as opposed to just something that can be done within the context window of a single LLM interaction.
+Anyway, let me tell you about Cisco. Critical infrastructure for the AI era. Unlock seamless real time experiences and new value with Cisco. Last top story. A New Mexico judge has ordered Meta to pay more than $900,000,000 and impose new restrictions on how minors in the state use Facebook and Instagram.
+This is a continuation of the social media addiction. If you're watching this clip on Instagram, let us know in the comments, are you addicted to TBPN reels on Instagram? It's not our fault. Apparently, it's apparently, it's Facebook's fault if we if we got you hooked on this stuff. The ruling requires Meta to establish a $567,000,000 fund aimed at addressing harms linked to its platforms on top of a $375,000,000 in civil penalties previously awarded by a jury.
+So they're up 900,000,000. They're very close to a billion dollars, and the numbers are gonna get bigger from here. Yeah. At least at least they're going to try.
+Speaker 2: Okay. So last time we really covered something from this ongoing saga Mhmm. There was a verdict on March 25. A Los Angeles jury found Meta and Google slash YouTube negligent for designing platforms harmful to young people. Mhmm.
+The woman who said she became addicted to social media as a child was awarded 6,000,000, 4,200,000 against Meta and 1,800,000 against Google. And and again, at the time, we had this, I think it was a lawyer on Mhmm. Who was giving his opinion. Yeah. He was like, this is just the start.
+Yeah. We were like I was like, no way. And it's like, the jury has a has has a verdict
+Speaker 1: Yeah.
+Speaker 2: To set, you know, talking to the biggest companies in the world. You must pay $6,000,000.
+Speaker 1: Yeah. Right? Yeah. Was nothing.
+Speaker 2: It's like this tiny amount. It was to one person. Yep. Right? And so you can imagine as these cases evolve Yep.
+This this new one is in New Mexico.
+Speaker 1: New Mexico is not the biggest state in the union. It's not the
+Speaker 2: biggest state. But there was also one in in May 2026, so just a couple months ago for 9,000,000 Mhmm. To a school district in Kentucky. Yeah. Same sort of issue.
+The lawsuit accused Instagram of deliberately using addictive features that contributed to anxiety, depression, self harm, and other problems among students, forcing schools to spend more on mental health services. The district had sought more than 60,000,000. And I guess the total payout was 27,000,000 because it was split between YouTube and TikTok Yeah. And Snap. Yep.
+And in that case, there was no admission of liability and no required product changes. So I think it's time to start thinking about what the the sort of battle that social media has ahead of it, kind of in in cigarette terms. Sure. Tell us about
+Speaker 1: Tobacco Master Agreement?
+Speaker 2: Yeah. Exactly.
+Speaker 1: So the tobacco companies wound up getting sued individually initially and there was there were a whole bunch of court hearings very similar to the senator we sell ads moments, but more focused on the cancer causing nature of cigarettes. And the question was like, who is ultimately being harmed economically? And you would think it's obvious. The person that saw an ad that made smoking look cool, they picked up a pack of cigarettes, they started smoking, and then they got cancer and their life was cut short. They are the victim.
+They should be paid by the tobacco company. That's what would be very logical. That's not what happened. In fact, the tobacco master settlement agreement landed in 1998 and there was agreement between all of the major tobacco companies. There's more nuance to this.
+One of them broke loose and, like, testified against the others. It's a crazy story. But that's for another time. In 46 states Wait.
+Speaker 2: I'm the good cigarette company.
+Speaker 1: Basically. Yeah. And so they don't have to pay. They're not part of the settlement. So they don't have to pay because they basically snitched all the others.
+It's crazy.
+Speaker 2: They're still Are they still in business? Oh, Cigarette company.
+Speaker 1: They're doing great.
+Speaker 2: Who are they?
+Speaker 1: Look at Victor.
+Speaker 2: Like, I've never heard of
+Speaker 1: it.
+Speaker 2: Yeah. Last name Victor?
+Speaker 1: Yeah. They were literally
+Speaker 2: They won.
+Speaker 1: They won. Yeah. There's more nuance to it than that, but but that's like one way to tell a story. Anyway, so a bunch of the big tobacco companies versus 46 of The United of The US states, the the District Of Columbia and several territories, the states agreed to end major lawsuits against the tobacco companies. So the same thing was happening where all the different states were suing, and they were suing because the negative externality of cigarettes causing cancer was driving up medical bills in The States.
+So the states have healthcare and they assume, hey, okay, we're going to spend this much on doctors, this much on radiology, this much on x-ray equipment. And then all of a sudden, they're starting to look at their populations and saying like, Wait, everyone's getting lung cancer? We're not equipped to deal with lung cancer. We need to hire way more oncologists and cancer doctors who specialize in lung cancer. We need equipment.
+We need drugs that treat lung cancer. There's a whole bunch of other things that we have to spend money on. And so you've got to pay us because you, the tobacco company, are responsible for us running out of money for our health care system. And so that was the nature of these battles between the states and the big tobacco companies. You would think it would be the individuals who got the cancer.
+That would be very logical, but that's not actually the structure of this deal. And so in return, the companies, all the states said, hey, we'll drop all those lawsuits. You won't have to we won't be nickeling nickel and diming you across every single state. Instead, the the companies will, make large payments, and follow new limits on advertising and business practices. So the end result, the headline number is 206,000,000,000, which feels like small relative to today's standards of like hyperscalers and social media.
+Facebook generates roughly 200,000,000,000 in revenue every year. Although, if they got hit with a $200,000,000,000 fine, that would be existential. But what happened with the master settlement agreement with the tobacco companies was that there wasn't just one fixed payment. Instead, it created a system of annual payments that continue indefinitely. They will actually have to pay forever as long as they are in business.
+They have like effectively a special tax paid to them. And the amount changes based on cigarette sales, inflation, market share and other adjustments. So if cigarette sale sales fall, the total payments usually fall. And that's a big reason why there's like a shift to non cigarette products.
+Speaker 2: Well, and that just naturally makes sense. If less people are buying cigarettes, less people are gonna have health issues
+Speaker 1: Exactly.
+Speaker 2: So Yeah. So so I so I brought it up because I think that we could be heading in that direction
+Speaker 1: Yeah.
+Speaker 2: With social media.
+Speaker 1: There's also a fascinating dynamic because these states now have an indefinite revenue stream that will be paid to them. And you can model that out financially and you can financialize it and a lot of people have. And so investment firms and banks and financial institutions have come in and said, okay, you are the state of New Mexico, for example, and you are expected to get 300,000,000 from big tobacco this year and then next year we think it'll be $2.97 and then $2.98 and then it'll go down. And we can model that out, and we can just give you $4,000,000,000 right now in exchange for that revenue stream or a piece of that revenue stream. And then those states can take that lump sum of cash and build a new, you know, bridge or something like that, whatever they need to do.
+So there's been a lot of financialization on top of it. And so each tobacco company pays a share of the total amount. Its share depends mainly on the share of cigarette sales among companies that participate in the MSA. The settlement then divides the money among states using fixed allocation percentages. Some states later borrowed against these future payments by issuing bonds backed by MSA revenue.
+The MSA also limits tobacco advertising and marketing, especially marketing that could reach children in simple terms. The agreement created a permanent system. Major tobacco companies received protection from many state lawsuits while states received continuing payments and new enforcement powers. The result is not just a legal settlement. It created this long term financial and regulatory structure built around cigarette sales.
+And it's now the ten year anniversary of starting Lucy, 2016. August 8 technically was the day. New regulation.
+Speaker 2: You know what I'm gonna hit.
+Speaker 1: Overnight success. Yeah. For sure.
+Speaker 2: The exact opposite. Slaving away for So many over decking. In obscurity.
+Speaker 1: But very, very interesting very, very interesting industry to have operated in for as long as we have. What else is going on? Let me tell you about Railway. Railway is the all in one intelligent cloud provider. Use your favorite agent to deploy web servers, databases, and more.
+Well, Railway automatically takes care of scaling, monitoring, and security.
+Speaker 2: Semi analysis chimed in on the deep not DeepMind news, not just chimed in.
+Speaker 1: Think the term's posterized.
+Speaker 2: Grave digging?
+Speaker 1: No. Not grave dancing. They're they're They're digging
+Speaker 2: big. Four deep. Yeah.
+Speaker 1: They're dancing on it at the end.
+Speaker 2: Anyway, Semi Analysis says, for all intents and purposes, we believe DeepMind is no longer a frontier lab due to large numbers of departures from their RL teams and poor compute allocation. Google will continue continue meandering on and releasing models, but their odds of ever reaching state of the art again have dropped to zero. Oh. Damn it. Google is now simply unable to retain top AI talent.
+Again, this is what I was saying the day that the news broke. It's like, researchers want to work with great researchers. Right? And so, the more talent density you have, the easier it is to recruit. And, yeah, Gnome leaving Yep.
+Earlier Those was would like a canary in the coal mine. Obviously, these are not the actions of people excited about Gemini four Pro. Jeff, Sanjay, Kwok, and Oriel are just the latest in a long string of high profile departures from DeepMind. Jeff Dean is the undisputed goat of Google engineering, co founded Google Brain, and started the program. Google, on the other hand, decided it was totally worth it to sell enormous amounts of compute to Gemini's fiercest competitors on long term contracts without any hope of ever returning it to DeepMind.
+More than 20% of total TBP shipments from third quarter twenty six to fourth quarter twenty seven are being sold directly to Anthropic. Wow. The issue with Google was not Jeff Dean nor Noam Shazir, rather their extremely bureaucratic, painfully slow and strategically timid culture. Google will join the ranks of other legendary tech giants like IBM and Intel to give up on the
+Speaker 1: harder Aggressive.
+Speaker 2: Thing that will make you more money. Becomes demoralizing as many of the great technology leads have left. Wow. And take him taking a victory lap. He wrote a piece on July 21.
+Google is a secular short kind of getting at a lot of these issues.
+Speaker 1: Brutal, brutal stuff. This is insane on the other side. GCP's working. GCP is basically a money printing machine. No wonder Google executives are choosing GCP over Gemini.
+So although EBIT margins for these system sales are slightly lower than core cloud margins in the low 30% range, we still expect total GCP to deliver mid- to high 30s EBIT margins going forward. How investors decide to capitalize the current TPU backlog and any large future sales is an open question. However, given the strong compute demand from the labs, we expect more multi gigawatt deals to be announced soon, adding to this backlog. In all, we estimate that over $250,000,000,000 additional TPU bookings could be added to GCP RPO in the next coming quarters from semi analysis. Very interesting.
+I mean, there there is like a like a positive spin on this, which is like they seem to be really good at chip development, really good at cloud, like focus where you're where it's working. And you don't have any tensions there because you have excellent teams and then you have the ability to underwrite that build out with the cache machine that is Google search and and YouTube and their ads products and and having more of this, like, barbell approach as opposed to playing in, the middle race is maybe the maybe ultimately the right thing to do. There are plenty of hyperscalers that have lived that and are doing very well on the back of it that haven't like Microsoft, Amazon, for example, they've been partners to labs at various points and and are very good at building data centers, very good at at at at and have not tried to really go on a crazy poaching race and amass the the the dream team and, you know, they've been rewarded for
+Speaker 2: it. Yeah. Still wild series of events. They obviously had Yeah. Effectively a version of ChatGPT internally.
+They didn't ship it. Yeah. TBPN, who's now running Chat Codex
+Speaker 1: Yeah.
+Speaker 2: Was there working on that product, which is really wild. Sebastian Malabai says, Semi Analysis is excellent but this argument strikes me as paradoxical.
+Speaker 1: Oh, messed up the tag though. Semi Analysis underscore.
+Speaker 2: It argues that Google is out of the AI frontier race and that to Google's AI revenues will meaningfully accelerate because Google is allocating compute to its Google Cloud customers. I wonder. In the long term, isn't a strong revenue base an essential underpinning of success at the AI frontier? Consider this thought experiment. If Nvidia acquired OpenAI but continued to sell compute to multiple customers, would this make OpenAI weaker or stronger?
+Surely, the answer is stronger. I think Sebastian just kind of fundamentally misunderstands the current dynamics. But Tyler, you wanna break it down?
+Speaker 1: And does he have something here?
+Speaker 2: No. We were talking about this before the show, this idea that
+Speaker 1: I guess the question is
+Speaker 2: Like like the the like this race is all about compute allocation. Yeah. You wanna be allocating compute to training so you can maintain your lead or extend your lead or get to the frontier. Mhmm. Google's effectively saying, we're gonna allocate instead of allocating, you know, let's say an OpenAI is allocating like 50% of inference to 50% of compute to inference, 50% to training.
+Right? Google's now shifting towards, you know, I'm sure they're gonna be effectively allocating 90% of their compute to just allowing
+Speaker 1: I think the number was 15% was for GDM relative to or or the Yeah. Overall cloud.
+Speaker 2: Exactly. Compute.
+Speaker 1: Yeah. So, yeah, it was like, that must be frustrating, but still a lot. I mean, there is a world where you could, like, sit this round out and then grow your company, grow your compute, and then rug all the labs, have all the data centers, like, the the the Tyler Cosgrove, like, keep the chips for yourself model, like, that could happen in 2028. And then every other lab is, like, compute poor because Google just said, like, actually, we're taking back all the labs. We're doing the biggest training run of all, but that sort of is negated by the idea of like a flywheel and, you know, the and like needing an RL loop around the code and the use cases and the rollout.
+So it it'd be very, very tricky. But if but if there's some world where it's like they create the next transformer magically and you don't need a lot of data for it, you just need more compute than anyone else has and they have a lot of it loosely Yeah.
+Speaker 2: Also, models are they gonna be using for their own research when the other labs are not exactly saying, hey, use our frontier model to train a frontier model yourself.
+Speaker 1: Yeah. That is tricky.
+Speaker 2: Yeah. It just seems like Google leadership has a very different idea of, like, where value accrues
+Speaker 1: Mhmm.
+Speaker 2: In AI than, like, Demis or like the other labs. Right? Mhmm. It's like it's not actually like the model itself. Yeah.
+It's it's the the like infrastructure Yeah. GPUs, cloud cloud business.
+Speaker 1: It's interesting because you can run back the old Demis quote about like he went when he was selling DeepMind, he talked to Mark Zuckerberg and he's like, what are you excited about in the future? Are you excited about AI? And Mark Zuckerberg apparently according to this exchange that Sebastian Malabai reported on, Mark Zuckerberg says, oh yeah, I'm super excited about AI. And then Dennis is like, I'm gonna test this guy. I'm gonna see if he's a true believer.
+What do you think about VR? And Zuck's like, oh, VR is like equivalently as big. And then Demis I don't think
+Speaker 2: he even said that. He was just equivalently as Excited.
+Speaker 1: Yeah. Yeah. Excited. And he was excited about a few other things. And Demis was like, I want to be with someone who's like all in on AI as a fundamentally different technology, not a normal technology, not like VR, not like new devices, not like electric cars, not like satellites in space.
+It needs to be considered as a completely separate sort of like, you know, development. I feel like a completely separate technology.
+Speaker 2: Yeah. Like I I don't know if if Sundar like believes in RSI. I don't know. It seems like he doesn't think that that's, like, really gonna
+Speaker 1: So the point is that Demi should have probed more and said, like, well, how excited are you about cloud? How excited are you about AI overviews? And if Sundar wasn't Sundar back then, but if Google was like, oh, yeah. We're we're equivalently excited about cloud infrastructure as ASI, then that should have been Dennis' moment to be like, maybe I
+Speaker 2: should The thing the only thing is there's a world where he's actually so RSI pilled that he's thinking, okay, it's over for us. I need to back up the Brink's truck and help help Anthropic. Right? Mhmm. Putting together this, like, you know, almost a $250,000,000,000 financing package Yeah.
+And variety of
+Speaker 1: Yeah.
+Speaker 2: Of data center guarantees to enable Anthropic to scale up even though they don't have, you know, really access to the debt markets in the way that Google does.
+Speaker 1: And there's also there's also the just this idea of, like, there are multiple ways to move the needle and put points on the board in just the successful rollout of AGI, ASI. And one of those is working for a lab developing the next model, making sure it's aligned, etcetera, etcetera. The there there is another which is like go and create public policy. There is another that is, you know, work at a nonprofit. Like, I think if you talk to the folks at at Meter, for example, they don't feel like they're like sitting out a GI.
+Like, they're very important in that story, in that role. They have less of a financial like alignment but to they definitely see themselves as as participating and and and working towards the good outcome, which is Yeah. What a lot which is what drives a lot of people, especially when you're post economic.
+Speaker 2: Google's ownership in Anthropic is capped at 15%. They I believe have roughly 14%.
+Speaker 1: Why wait. Well, how is it capped?
+Speaker 2: I think Anthropic just didn't
+Speaker 1: Oh, we don't want you
+Speaker 2: to have They don't have any voting rights. They don't Okay. Don't even they're not even a board observer. Mhmm. They don't have a board seat.
+They basically are just a Interesting. Yeah. Purely financial background.
+Speaker 1: Let me tell you about Console. Console builds AI agents that automate 70% of IT, HR, and finance support, giving employees instant resolution for access requests and password resets. Let And me also tell you about public investing for those who take it seriously. We got stocks, options, bonds, crypto, treasuries, and more with great customer service. A branding mogul's Miami Beach Home lists for $68,500,000.
+Branding mogul Nick Woodhouse was sail was sailing around Miami for his birthday in 2019 when he realized he'd found his new home. Turning to his wife, Jocelyn Woodhouse, the Canadian born businessman said, we have to live here. It wasn't long after relocating from New York in 2020 that the couple then living in a condo on Sunny Isles Beach, Florida saw a waterfront lot on a guard gated La Gorch Island. Is that how you pronounce it? La Gorche?
+I don't know. Island in Miami Beach from a friend's boat. The property had the foundation of a house that was just starting to be built. The Woodhouse has purchased the the partially built home for 17,000,000 in 2021 and completed construction of the roughly 8,800 square foot seven bedroom contemporary house around 2023. It's a point four acre estate, they're selling it for 68.5 because they're building another home nearby.
+Nick is the former president and chief marketing officer of Authentic Brands Group, and that's why I wanted to talk about this because Authentic Brands is a very fascinating company. Tyler, you have something here?
+Speaker 2: Yeah. So it's pronounced Lagours. Lagours. Thank you.
+Speaker 1: Lagours. Well, Authentic Brands Group is a very interesting lifestyle platform, I guess. I don't know exactly what you would call it.
+Speaker 2: But They have holding up. They have some truly tier one assets.
+Speaker 1: They own more than 50 consumer brands as well as likenesses and estates of celebrities including Okay. Muhammad Ali, Elvis Presley, and Marilyn Monroe. But what stuck
+Speaker 2: out Let's to start at the top. Okay. The cream of the crop. They own Tap Out.
+Speaker 1: They do.
+Speaker 2: Iconic brand.
+Speaker 1: Tap Out tees.
+Speaker 2: Brand. And if you guys ever run into John on the weekends, he's almost certainly head to toe Tap Out.
+Speaker 1: It was one of their first purchases, Silver Star and Tap Out. In January 2011, they acquired the rights to the likeness of Marilyn Monroe. So if you see Marilyn Monroe on a t shirt, Authentic Brands is getting a check.
+Speaker 2: They own Ruka, the surf brand. They own Neiman Marcus. They own Prince. They own They
+Speaker 1: own Brooks Brooks.
+Speaker 2: Goodman. They own DC Shoes. Yeah. They own Sperry's. They own Barney's.
+They own Saks Fifth Ave, they own Sports Illustrated. Wow. They have the Elvis Presley NIL. Yes. They have the Muhammad Ali NIL.
+Yes. And Forever twenty one.
+Speaker 1: Yes.
+Speaker 2: They own Roxy. They own Volcom.
+Speaker 1: And what other
+Speaker 2: Volcom again? Volcom? If I, you know you know, Tyler, I know I know you're still You're pretty much head to toe Volcom at all time. Yeah. Volcom, maybe some Billabong thrown in there.
+Well, they also own Billabong. Yep. They own it all. And so, they own Lucky. They own Eddie Bauer.
+Speaker 1: They also own Shaquille O'Neal's likeness.
+Speaker 2: And Kevin Hart's likeness? And David Beckham's?
+Speaker 1: Wait. The a star venture capitalist? Kevin Hart's?
+Speaker 2: No. No. I don't think they could afford his NIO.
+Speaker 1: Oh, okay.
+Speaker 2: But the actor, comedian, tequila entrepreneur
+Speaker 1: Yeah. Kevin Hartz. I think it's so funny
+Speaker 2: Champion, Reebok.
+Speaker 1: Tequila O'Neill sold his likeness before he passed away? I feel like selling your likeness in your estate and going on t shirts and stuff is something that you would hold on to. I mean, I understand selling your catalog if you're not a recording artist anymore. But just selling your actual likeness and then people can, oh, yeah. You can
+Speaker 2: know you saw it during the World Cup. Yeah. Like, David Beckham was in every other ad. Mhmm. And it's because he did a big deal to basically sell his like, all of his.
+Wait.
+Speaker 1: So
+Speaker 2: And so he's basically he basically pulled forward Yeah. Years and years and years of like NIL revenue.
+Speaker 1: But how does that work if he actually needs to be on-site to like film commercials?
+Speaker 2: Probably has some obligation like you need to be available
+Speaker 1: This many days? Wow. That's very interesting. Anyway, Nick is the former president and chief marketing officer of Authentic Brands Group, a licensing and managing company that works with companies such as Reebok Champion and Brooks Brothers.
+Speaker 2: Z z h says ABG is a graveyard for iconic brands.
+Speaker 1: It's the bedding spoons of brands. No.
+Speaker 2: It really is. I mean, it it's somewhat sad because a lot of these brands they A lot of these brands are so so iconic and with the right with the right sort of management and investment, they they would be back to their former glory. I the A lot of the surf brands and the skate brands are a little sentimental for me just because I grew up watching so much of the content that those brands put out and and following the different athletes on their teams. But those those industries have just been impacted surfing Mhmm. Most aggressively just because kids that don't live by the ocean now, they don't really care about surfing.
+Yeah. They care about chrome hearts. And so
+Speaker 1: Do you think the surfing industry needs a federal backstop?
+Speaker 2: I would push for one, certainly.
+Speaker 1: Yeah.
+Speaker 2: Yeah.
+Speaker 1: Couple couple billion dollars from the treasury directly to Yeah.
+Speaker 2: Get Volkheim. BrickSilver, Billabong.
+Speaker 1: BrickSilver back to the top. Yeah.
+Speaker 2: We're onto something here. I think so. This is our new platform.
+Speaker 1: I think so. Let me tell you about MongoDB. What's the only thing faster than the AI market? Your business on MongoDB. Don't just build AI.
+Own the data platform that powers it. There's one more key story. We have our next guest joining in just minutes in your call from Coastal Ventures. But a golden retriever made the front page of the Mansion section in The Wall Street Journal. It's huge news.
+Golden retriever's name is George. Isn't that an amazing name? Mad cliff top dream on the Irish coast. A couple wanted a home on the edge of the sea, so they braved 75 mile an hour winds to turn a former sea urchin farm into a modern light filled house. And the Golden Retriever fully delivered in this photo shoot.
+I love some of the photos of this dog. I was very happy to see George get the full Wall Street Journal treatment. It's always a good day when there's a retriever in
+Speaker 2: the Chad is in full support of regulatory capture for skate brands.
+Speaker 1: Yes. For skate brands.
+Speaker 2: Yes. DC shoes.
+Speaker 1: Yeah. Do do you think there should be sort of like an FD
+Speaker 2: DC shoes, it's only right that Washington DC Yeah. Know, would take it Yeah.
+Speaker 1: Do you think there should be sort of like a like a skate brand FDA? So like if you're coming up with a new tap out tee design, it has to be reviewed by a federal authority.
+Speaker 2: Tap out safety.
+Speaker 1: Yeah. Exactly. To make sure it's not too extreme, too aggressive. Yeah. It might get
+Speaker 2: someone Scare the children.
+Speaker 1: Yeah. Because you don't wanna inspire a young skater to take a 12 stair when they're Yeah. Not ready, you know?
+Speaker 2: Yeah. And some of these brands are, you know, sales are in decline. And if if if if they knew that the government would would, you know, place effectively provide that demand signal Yep. They could ramp up production campaigns and Significant. Many of the athletes.
+Yeah. Yeah. This is this is our new platform. We don't talk we we stay out of politics.
+Speaker 1: We stay out of politics. But maybe the FCC should do sort of like an equal time rule on on television. You know how that is like, if you're talking about a Republican, you need to get equal time to the Democrat. Should be like, if you're gonna if you're gonna talk about Pepsi and Coca Cola, you need get equal time to Volcom.
+Speaker 2: Yeah. Right?
+Speaker 1: Yeah. Yeah. I think that makes sense. Anyway, let me tell you about CrowdStrike. Your business is AI.
+Their business is securing it. CrowdStrike secures AI and stops breaches. Our next guest is Samir Hall from Coastal Ventures. He's the general partner, and he's the latest backer of Discovery Loop. Samir, how are you doing?
+What's going on?
+Speaker 3: I'm doing I'm doing great.
+Speaker 1: Yeah. I I can imagine you got you got a stake in the next Jeff Dean the first Jeff Dean company. How did that come together? How excited is the firm? Tell me about the thesis behind Discovery Loop.
+Speaker 3: Well, look. I mean, we've known Jeff Dean forever. Yeah. You know, Vinod, when he was at Kleiner, was the first investor in Google. Jeff's been involved in just about everything that's important that Google's Google Brain, TensorFlow, TPUs.
+Yep. And he was there twenty seven years. And it's kind of one of those dreams when someone like Jeff calls you and says, hey, I'm going to do a startup, do you want to invest?
+Speaker 2: Crazy. The deck or did
+Speaker 3: you No. No. There's been all this talk about his deck. Yeah.
+Speaker 2: I was like, why you make leading
+Speaker 3: the round and I haven't seen a deck. So who's seen this deck?
+Speaker 1: That's But very I I think what stuck out to me was if you dig into the blog post and you look at how Jeff is thinking about the impact that AI can have, it struck me as a real focus on tangible results. There's making solar power more economical. And that's obviously downstream of a lot of hard engineering and AI research and then models that can go and do that. But having that laser focus on the impact that I think every day people can rally around felt much less abstract and much more of a positive signal. How do you think about grappling with that where it goes and also just, hey, you know, this is a new company.
+There's going to be a lot of exploration. Let's keep the aperture really wide.
+Speaker 3: Well, you want to keep the aperture wide. But what you brought up is exactly why you've read about all the other neo labs that have started post OpenAI and Anthropic. Yeah. And we've passed on, I think virtually all of them.
+Speaker 1: Mhmm.
+Speaker 3: And the reason was is you've got trust me, these NeoLabs are started by all stars. These are superstars, super talented individuals. But that alone doesn't justify the kind of money and the kind of valuations and things like that that these companies are commanding. We see That
+Speaker 2: but also the the Sorry to interrupt, but I've always competitive dynamic. Frontier Lab comes out with, you know, a model. A few months later, there's an open source version of it. To me, why doesn't that, you know, as we see a NeoLab have a meaningful breakthrough, why does the same thing not happen where a FrontierLab ends up recreating what the NeoLab has built and they have the scale and the distribution to just immediately roll it out to millions of businesses all over the world. And so when I've looked at some of these NeoLab opportunities, I'm just thinking, like, even if you have this like meaningful breakthrough, how do you actually capture the value associated with that without just selling back to one of the bigger labs?
+Speaker 3: You're absolutely right, which is why we've stayed away from them. Mhmm. We couldn't see a clear path to something that's meaningfully differentiated Mhmm. From the Frontier Labs. And then as such, you worry about the sustainability and the moat they create.
+And what Jeff and his team are doing, first of all, they're really, that's a, they're a one on one team. Mhmm. You look at what they've done, it's amazing. They've been at Google twenty seven years, and now they lift their heads up to do something different. It clearly suggests that they've decided this is something very meaningful.
+Otherwise, why put their legacy at risk? Mhmm. It's just incredible. And to your point John, what they're doing is exactly that. It's saying, look, we're going to take research, and we're going to figure out if you run this experiment, what do we think the outcome is?
+And based on that outcome, let's run thousands or millions of other parallel experiments and try to get to an answer. So, it could be what's a new material for magnets for a fusion reactor? It could be what are new materials for a solar cell to make it more efficient? It could be for batteries. It could be for scientific research.
+And just think about, you know, in some ways it's like coding. Why are all these code startups doing very well? Factory, Cognition, a couple that we're involved in, is because you can get a real time affirmation of what you're doing, is it correct or not? Does it spit out good code that does well? That's a good answer short term.
+And I think that's what Jeff and his team are trying to do with research also, is get is prove that what they're doing actually has value in a short cycle, that you can then improve upon it.
+Speaker 2: How important do you feel like the work is in general right now, if you look back at the breakthroughs over the last couple week, we got a bunch of new viruses that never existed before and we solved some, you know, pretty impressive, you know, math problems. But the general population, I don't think is gonna get that excited about either of those at a time when the the data centers are getting built. But, you know, there's pushback everywhere. And I think the general population
+Speaker 1: Don't forget they also accidentally hacked a whole bunch of systems.
+Speaker 2: Yeah. Yeah. We started
+Speaker 1: getting That's another one.
+Speaker 2: Viruses. Accidental hacking. Yeah. Math problems all all impressive Yeah. In their own way, but certainly not gonna get
+Speaker 3: Well, locusts haven't the locusts haven't come yet. So I think we're still okay for a little bit. But but but look, let's go through each of them. So first of all, what it can do in math is just incredible. So that just shows the power.
+I'm not sure there's a practical use there, but it shows the power of these models and how quickly they learn and can iterate. And it's not really that surprising, right? Because, you know, the smartest human processes data still at less than a 100 bits a second, but a GPU processes data at 8,000,000,000,000 bits a second. So how is it Of course, it's going to do things that humans can't do in way that we've not been able to do it. On the virus side, that's scary.
+And that gives a That's a perfect example of why we can't regulate our US companies in AI. We have to stay ahead and be at the cutting edge so we know how to protect ourselves. Mhmm. The worst thing we can do is over regulate US companies and give the advantage to our adversaries where we don't know how to defend ourselves. Mhmm.
+Speaker 1: I'm interested to hear a little bit about the shape of Khosla, the strategy, and it'd be interesting to ground it in the shape of value add for a company like Discovery Loop. Obviously, Jeff Dean and the technical talent is incredible. But being I think basically first time founders this late in your career, is there actually a lot of value add that you can bring to the table with recruiting and setting up the rest of the structure? Like I imagine Jeff Dean has not had to run payroll ever or like deal with like hiring a great HR lead or or a great CFO. And if you're if you as through your network can sort of build out the rest of the shell very easily, that feels like actually incredibly impactful.
+But how are you thinking about helping a company like Discovery Loop in any way you can?
+Speaker 2: I think when Jeff Dean is in the presence of payroll, it just runs
+Speaker 1: itself. I
+Speaker 3: was going to say, I think Jeff could probably by the you get a cup of coffee at Starbucks, I suspect Jeff can code an agent that does all the payroll for you.
+Speaker 1: Yeah. That's probably You
+Speaker 3: know, so look, one, we're super honored. I think Jeff could have picked any VC
+Speaker 1: Mhmm.
+Speaker 3: In the planet, and the fact that he picked us as one of two to co lead it, is just a huge honor, and a huge responsibility. So we have to add a lot of value to justify his trust in us. And so, you know, I'm very proud of, at our firm, one, every managing director is an entrepreneur. All technical. I have four nature papers, a science paper before I'd ever seen a P and L.
+Oh, nice. I got a gong.
+Speaker 1: That's an
+Speaker 2: air horn. We'll save the gong for later.
+Speaker 3: Okay. Great. Alright. Air horn. So, the point is that I think where we'll add value is we've built a great platform team, and the goal there has been that these are people, whether it's recruiting, design, sales, marketing, branding, etcetera, that startups otherwise wouldn't be able to afford.
+Now, Jeff could afford anybody, but these are people that could really help him hopefully build out the team, figure out the right incentive structures, make the type of introductions that he would need, and be sounding boards for advice. I think Jeff didn't want people that were just going to sit back and cheerlead him. I think he wanted people that were going to push back on him and Yeah. And help him shape it.
+Speaker 1: I want to get your take on sort of an odd venture strategy. I don't know if anyone's actually running running this playbook, but I think your pushback here will be interesting. So let's say that I'm sort of cynical about these like billion dollar seed rounds broadly, NeoLabs, whatever you want to call them, like huge amounts of money basically growth stage from day one. But my thesis is not that they're going to overtake any of the leaders but that there will be liquidity through acquisitions that a $10,000,000,000 acquisition is becoming more normal and so I can still underwrite a fund based on that. But that feels sort of antithetical to venture.
+But is there something there? Are you seeing that or have you been very conscious about staying out of that particular profile because you want to go back to thinking in decades, thinking about really long tail outcomes?
+Speaker 3: There's always exceptions. Mhmm. So I'm certain that we've fallen into some of those exceptions. But by and large Yeah. I don't think that strategy will work.
+Mhmm. I think, first of all, you've seen some of the recent acquisitions. Windsurf, Scale AI
+Speaker 1: Yep.
+Speaker 3: Where they've been pseudo acquisitions, where the investors have not gotten anywhere near what the headline price is. Individuals have captured a lot of value, but investors have not. So, I don't believe that the And if you make an investment assuming an acquihire is going to be the outcome, then you're going to lose. And who cares about returning capital? You know, the beauty of our business is that we can only lose one times our money.
+Yeah. But on companies like OpenAI or other companies, we can make a thousand times our money.
+Speaker 1: Yeah.
+Speaker 3: And so, you know, we never invest being like, hey, well let's invest and at least we'll get our money back. Yeah. That makes no sense in a business that affords you a failure rate of sixty or seventy percent. And in fact, I'd argue if you don't fail 60 or 70%, you're not taking enough risk to justify the risk premium that our investors take when they invest in funds like ours.
+Speaker 1: Yeah. Jordy, please.
+Speaker 2: How do you how do you see the current private market dynamic playing out? It's I I've been very I've been a little bit concerned lately because, you know, we we have a lot of founders on the show. A lot of them are building great companies. Hopefully, most of them are. But every single day, there's $500,000,000 raised here, a billion dollars, you know, raised here.
+And it's been going on for so long now. And it's basically like a debt that the that venture is like building up. Right? This is like money that Right. Needs to be returned at some point.
+And, you know, there's just such a massive disconnect. There's even companies that are effectively if they were public, they would be seen as SaaS companies. But because they're private and they use models, they're viewed as AI companies Mhmm. Wildly different wildly different revenue multiples and Mhmm. And value placed on them.
+And, yeah. I'm I'm curious how long you think this can can go on. Mhmm. And if it ultimately even matters. Right?
+You know, you've seen SpaceX pay for, you know Yeah. 10,000 terrible venture investments. Right? Right. And hope many of the LPs that that were in all the bad ones are were in SpaceX in some way or another and hopefully they made it back.
+But how do you see this playing out? How long can this current Super cycle. Super cycle go on?
+Speaker 3: Well well well, let's zoom out. So what you're you're you're There's a lot of truth to what you're saying. So remember when the word unicorn came out, it was meant because a billion dollar company was such a rare event like a unicorn.
+Speaker 1: Yeah.
+Speaker 3: And now you're having a unicorn born almost daily.
+Speaker 2: Yeah.
+Speaker 3: So there's that. On the flip of that, remember, I mean I'm old enough to remember the .com era, and the .com era, Cisco was approaching a trillion dollar market cap, and people thought that was insanity. They're like, how could how in God's name could there be a trillion dollar company? There's just no way. And now how many are there?
+15 or 20? So, you know, when you've when the upside has now moved for a billion just in last what when was Unicorn coined? Fifteen years ago? Sixteen years ago, maybe?
+Speaker 1: Yeah.
+Speaker 3: So in in Yeah.
+Speaker 2: Around that time, DeepMind was Demos was doing like a 50% dilution round at like a low single digit.
+Speaker 3: Yeah. YouTube was acquired for $1,800,000,000. That would be a trillion dollar company today.
+Speaker 1: Yeah.
+Speaker 3: Right? Instagram was bought for a billion dollars. That would be a trillion dollar company today. Mhmm. WhatsApp was the largest private venture acquisition at the time for $19,000,000,000, and that would be a trillion dollar company today.
+Mhmm. I mean, so think about how fast we've gone for where a billion dollar company was a unicorn to where now a trillion dollar company is a unicorn. That's three orders of magnitude of market cap in a decade. So that's the backdrop. Now, yeah, I think, and we're in a hits business.
+No one cares what our slugging percentage is, what our batting average is. They care about what is our, how many dollars do we give you, and how many do you give us back. Mhmm. And if it's, you know, better than three or four x, and better than a 20% net IRR, we're going to keep giving you money to do what you're doing. Mhmm.
+And the only way, What I worry about most, Jordy, is that people aren't taking that type of risk. They're not going in, taking big risk, owning 20% of the company, helping build it, as opposed to just joining the Putting all of their fund in these party rounds, these companies that are valued tens of billions of dollars. I don't believe aqua hires are going to be effective at all at returning capital to people, versus the versus versus saying, like, what we're doing is we'll take a portion of our fund. When a Jeff Dean shows up, we'll take a portion of our fund and put it towards something like that, because that's something you can't say no to. But primarily, we're going to do things like we did with Commonwealth Fusion.
+Mhmm. You know, helped incubate it, got it off the ground. Rocket Lab. Yeah. We were the first investors.
+We put in, I think, $5,000,000 for a third of the company. It was a company in New Zealand. No one was paying attention to it. And we owned 28% of the company when it went public, and the company is now worth, I don't know, thirty, forty billion dollars.
+Speaker 4: A
+Speaker 1: lot. Getting another sound effect. There's the gong. How do
+Speaker 3: you the way that I think I still think the primary returns from the better venture funds will be that model.
+Speaker 1: Mhmm.
+Speaker 3: And if a fund is taking 60% of their assets and putting in these large party rounds, these billionaire I'd be shorting that all day.
+Speaker 1: How do you think the like skill set or valuation chops of venture capitalists is changing or needs to change? Commonwealth Fusion is fascinating. Rocket Lab is very fascinating because those are not SaaS companies where you had someone who was really good at diving into retention and Dow growth and CAC and LTV and like the standard metrics. Now there are growth investors who are fantastic at that and they had a ten to twenty year run of watching the triple, triple, double, double, happen, the IPO, everything played out in software pure play investors. Now it feels like we're closer to an era of more VCs becoming generalists.
+There's maybe a biotech boom that's coming on the back of AI. There's a lot of hard tech and re industrialization that's happening. And I'm wondering if the shape of talent that you're trying to recruit is changing or if you're cautioning any VCs who have spent a decade in pure software world. Are they going to get their hand burnt by touching the stove of industrials or science?
+Speaker 3: I don't think so. I, you know, we promote and want people at our firm who are generalists. Because there's so many of the principles carry over. Let me just list a few. In the end of the day, it's the team.
+Yeah. You know, the company you build is the team you build. Why? Because if you've got a great team, they're going to hire good people. They're going to find the right markets.
+They're going to make sure the product has a moat. They're going to pivot when things aren't going well. That's all All those secondary things are a function of the team. How you advise the team, how you help the CEO recruit brand, market, etcetera, is all very similar. I also think, you know, specialist funds do really well in boom markets for those specialties.
+So, you know, the crypto specific funds kicked ass for a while.
+Speaker 1: That's right.
+Speaker 3: But then they sucked wind. The same thing with the SaaS. I mean, look, like the Tomo Bravos and the Vistas of the world were like just like soaring through the moon, and then now, now it's happening. So you have to be We've always been very consistent. Know, started the firm twenty, almost twenty two years ago.
+Bold, early, impactful. You've got to have a technology edge. We don't take market risk. If you have a product that's this revolutionary, it should sell itself, and we try to back the best founders we can, and help them do things that they need help with and not govern them, not manage them, tell them how to do their job.
+Speaker 1: So follow-up. And that's worked for us. If you're hiring generalists, what does it take to make it a Coastal as an investor? How much of it is a team sport versus you eat what you kill, you got to be very self sustaining, go out, find the deal, advocate it, take it across the finish line?
+Speaker 3: We're very collaborative.
+Speaker 1: Okay.
+Speaker 3: So I would say, you know, the MDs at our firm, we've worked together forever, decades, and have had no major issues. We haven't had turnover. We've not had a coup to replace management.
+Speaker 1: That's
+Speaker 3: right. And I'd say we don't even do deal attribution. It often drives our investors crazy when they say, give us deal, who did this deal, who did that deal? We don't do that. We refuse.
+Because we want everyone to work together, and we also believe that we're all very unique in our skill set. Mhmm. So part of our selling point to entrepreneurs is you're not just working with Samir. You're going to work with Samir, Keith, Swen, Vinod, David, everybody. You're going get the best of all of us.
+Speaker 1: Mhmm.
+Speaker 3: What works at Khosla is, look, we're in office five days a week. We try to be low ego. We And I tell people, you know, add value and be fun to work with.
+Speaker 1: Mhmm.
+Speaker 3: And I think that works. And your best grader isn't me. Mhmm. It's going to be the entrepreneurs. If CEOs are calling me and saying, hey, we want more of so and so's time, or they've added great value, or they've given us great insights, That's that's the greater.
+It's not me.
+Speaker 1: Mhmm. What advice do you have for new entrepreneurs who are much younger? Who who should they go and do twenty seven years at Google and then start a company? Or or is it the best time ever to start a company if you're college new grad?
+Speaker 3: I I think it's a great time because with AI, there's so many functions that are just more streamlined than ever before.
+Speaker 1: Mhmm.
+Speaker 3: And so what I would tell people is, if you have an idea, and if you have a co founder, start the company yesterday. Don't wait. Who cares? Drop out of Harvard, drop out of MIT, it doesn't matter. If you don't have conviction in an idea and you don't have a co founder, go somewhere that you'll find a co founder.
+So if that means going to Google, that means going to OpenAI, go there with the purpose of learning, getting more conviction in your idea and ideally finding a co founder. And when you do, leave and go do it.
+Speaker 1: Yeah. Makes sense. Drew, you have anything else? I'm sure you do.
+Speaker 2: Yeah. I'm curious how you you guys end up doing a lot of, you know, you're lucky to invest in great companies early that then get over like, oftentimes certain companies get overheated over time. I'm wondering how you navigate, you know, if you do a company at seed or series a. How you navigate those later rounds?
+Speaker 1: If someone else is doing the overheating.
+Speaker 2: Yeah. Like at what point, how are you making that decision around like let's just get diluted, we're not gonna take we'll maybe throw in a token amount that says we're investing
+Speaker 3: that's that's another I think relatively unique feature. So people Mhmm. In our shop will tell you if they come present and say so and so is leading around at x, we should do pro rata, I'll throw them out of the room. To me, pro rata is completely doing pro rata by default is scandalous. It's the worst thing you can possibly do.
+I tell people they either should come in pounding the table to do three times pro rata, or a third of pro rata, or a fourth of pro rata. Because we have the ability in private markets to change our bet, you know, midway through. Like, Jordy, if you and I had a bet on the Super Bowl and I said you can change your bet at halftime, you'd be a fool not at least evaluate changing the bet. Mhmm. Right?
+And so the only time we should do pro rata as a firm, there's only two situations. One is it's a great company and it's the maximum allocation we can get. Mhmm. Or it's a good company, it deserves another turn of the cards, and we have to do pro rata to support the round. Mhmm.
+Other than that, we should be doing three x pro rata and piling in money, or a third pro rata and cooling our jets. Mhmm.
+Speaker 2: What's your take on angel investors selling at different stages? I feel like, personally, it's can be quite awkward to even take anything off the table with founders, like if you back a company early. There's often times, especially over the last six months, there's been so many moments where I was, you know, hearing about a round getting done and thinking like, I would love to exit my whole position. But that's too rude. But, you know, maybe taking out even like a, you know, three to five x would be nice.
+But I I 99% of the time I've just said like, okay. I'm just riding out. I'm riding it out. Riding it to the to the end. But what's your view?
+Speaker 3: I think that's between the angel investor and the founder.
+Speaker 1: Yeah.
+Speaker 3: If an angel is removing money in a round, I'm coming in. I don't unless it's an angel investor I know who I feel like has deep pockets and shouldn't need the capital, I don't, it doesn't bother me much. It's a fine line when the founder sells.
+Speaker 1: Sure.
+Speaker 3: And the question, that's worth digging into. So are they trying to buy a house? Are they trying to put away money for their kid's college? With them releasing a little bit of the pressure valve, do they go swing a swing for a bigger fence.
+Speaker 1: Mhmm.
+Speaker 3: Right? Those are the things you have to kind of evaluate.
+Speaker 2: Yeah. What's your What's limit? Is it like You know, it because like beyond 10, it's hard
+Speaker 3: is unacceptable under any situation, because you don't me it's like that $5,000,000 range, and maybe in the future round they sell another 5,000,000. Mhmm. And then you evaluate their individual circumstances. But beyond 10, I'd have I I would have to really understand what the hell was going on.
+Speaker 1: Yeah. Also, I mean, like there are plenty of banks that will let you buy a house with not all the cash. So like, you don't you don't always need.
+Speaker 2: Somewhat.
+Speaker 1: Yeah. There yeah. There are plenty of different financial instruments for various Yeah. Moments in life. But yes, that's a good that's a good rule of thumb.
+Good to hear it. And thanks for coming on and Yeah. Shopping it up. I'd love to do this again. This was really fun.
+Speaker 3: This was a lot of fun. Thanks, guys.
+Speaker 1: We'll talk to you soon.
+Speaker 2: Great to hang.
+Speaker 1: Cheers. Bye. Let me tell you about Shopify. Shopify is the commerce platform that grows through business, lets you sell in seconds online, in store, on mobile, on social, on marketplaces, and now with AI agents. And let me also tell you about Figma.
+Agents, meet the canvas. Your AI agents can now create and modify your Figma files with design system context. We have Patrick Wendell from Databricks. He's the co founder and VP of engineering coming on to talk about AI coding costs. Patrick, how are you doing?
+What's up guys? What's up?
+Speaker 2: What's happening?
+Speaker 1: Glad to have you on the show.
+Speaker 5: Long time listener, first time caller.
+Speaker 1: It's a pleasure to have you here. Maybe since it is the first time on the show, give us a little bit of background of what you're focused on day to day because I want to talk about AI coding costs, how that interfaces with your customers and your business internally. But having a little lay of the land might be helpful.
+Speaker 5: Yeah. Absolutely. Have you guys had any Databricks folks?
+Speaker 1: Oh, yeah.
+Speaker 5: Any of founding team yet?
+Speaker 1: Oh, yeah. Yeah. We only yeah.
+Speaker 5: I think twice.
+Speaker 1: Okay. But then we've also hung out with him a few times off
+Speaker 4: the To
+Speaker 2: be honest, my some of my favorite moments of podcasting have not actually been podcasting. Yep. It's just we we hung out with with Ollie recently and for like two hours. It was amazing. We were just all all three of us ranting.
+Speaker 1: Yeah.
+Speaker 2: It was incredible.
+Speaker 5: Awesome. Well, Ali and I are co founders. So I'm one of the the founding team. We left we left UC Berkeley.
+Speaker 1: Yeah.
+Speaker 5: It was a research group. There was like some grad students and some faculty. Ali was a visiting faculty member, I was a graduate student
+Speaker 1: Cool.
+Speaker 5: And a few others, a few of the rest of us. And we left to start Databricks in 2013. We've always been interested in like the intersection of large scale data processing and what was then machine learning. Mean, the company actually started very focused on early machine learning stuff. Yeah.
+You know, now it's evolved into like AI, basically just deep learning techniques. Mhmm. But, you know, today we build data and AI infrastructure for a huge fraction of sort of the global 2,000. You know, we have we have 20,000 customers, think, as as of our latest announcement, and we just basically help yeah. Thank you.
+We we help businesses who wanna store and take advantage of data, increasingly, involves leveraging AI in the way that they take advantage of their data. So yeah. So that's kind of that's kind of what we do. And then my my personal role, I I'm responsible for our AI products. Mhmm.
+But I also am the one internally at Databricks who has been kind of the champion of of aggressively adopting AI tools at Databricks. Sure. And, you know, we have a we have more than 10,000 employees. So so we were among the earliest to kinda roll out at scale tons of different, you know, AI tools for developers and other employees.
+Speaker 1: Yeah. So take me through that You're
+Speaker 2: you're the guy the CFO comes to.
+Speaker 1: You're token matching? Patrick.
+Speaker 5: We Yeah. I'm the guy where he's like, what's this? Like, how do we project these costs?
+Speaker 1: Yes. So before we got there, walk me through the history of AI tooling because there was a moment when I remember I think it was in the very original ChatGPT demo on three point five DaVinci where someone got it to spit out a to do list app in React just from the just from the context window. It didn't even have tool use yet and people were like, wow. Is a glimpse
+Speaker 2: deep script.
+Speaker 1: Of what's coming, something like that. And and so there was a moment where people would go to LLMs and sort of copy paste some code. Then we got the cursors and the wind surfs, then the clogged codes and the codexes. What's been the journey inside of Databricks in terms of actually getting value and how have you been measuring it? Just walk me through some of the journey.
+Speaker 5: Yeah. So the first like product market fit in Gen AI was this more personal chat type use cases. And that did translate into the business. You know, a of the early AI companies, the foundation models built like an enterprise version of their initial chat product.
+Speaker 1: Yep.
+Speaker 5: But the and and it was it was somewhat useful. It could kind of, like, read your business data and stuff like that. But but I would say what the real breakthrough was when the coding and agentic models got a lot better
+Speaker 2: Yep.
+Speaker 5: And and could actually generate useful sort of enterprise workflows and and in particular, generate code. I mean, by far the biggest ROI we see internally and I think is true industry wide is developers are expensive. They take a lot of you know, the every company needs their engineering team to move faster. And if you can get them something that improves their productivity meaningfully, that's of immense value. So I would say that the real ROI curve significantly changed maybe eight months ago or twelve months ago as the first really good coding models got there.
+Speaker 2: How do you talk about ROI with coding models to, maybe other engineering leaders, your customers? And and how do you talk about it with, like like, for example, like Databricks' CFO. Right? Because a lot of people will will look every engineer will tell you, like, yes, this thing makes me a lot more productive. But at the same time, people will try to dig down into the data and be like, okay.
+There's a lot more, You're shipping a lot more code, but I'm actually looking at how many new things that you've shipped and maybe it's not sort of rising at at at the same, at the same speed. So how do you where how do you kind of like wrestle with that and prove ROI month to month?
+Speaker 5: Yeah. So ROI has, the benefit side and the cost side. And on the benefit side, we do track a lot of different engineering output metrics. Now none of no one metric is perfect. Right?
+Like, you can look at how many pull requests are coming out, how many features are coming out, how many lines of code are being written. None of those is independently perfect, but they can give you a sense in aggregate of, like, you know, r and d is a big machine. You put in resources, you get out features and code, and, you know, how much more is coming out of that machine. And the the results there are pretty good, like, much you know, at in aggregate, maybe almost doubling capacity from a fixed size team, and then in certain teams where they've highly optimized it, they're, you know, moving even way faster than that. That's where they've optimized their processes, basically, to take better advantage of AI.
+The cost side, just quickly, is where we actually encountered some problems. So, you know what, at the beginning, we were just trying to at the beginning, we had the opposite problem. No one wanted to try the new stuff. I was going and bugging everyone, tried it and we tried it and we tried it and we never got to the token maxim kind of thing but I do think that that arrived out of a actually well intentioned thing of just, like, trying to get people to try the new stuff. Mhmm.
+And and what happened, though, is that once we got people to use it, we just started seeing this exponential cost curve. Like, the these these tools all do consumption pricing now. So we're not paying a fixed seat per user. We're just a user can, in principle, spend an unbounded amount of money. They can run a little loop on the most expensive model.
+And so we started seeing basically this, like, exponential growth curve that, you know, although we were getting the the two x or more output from from our engineering teams, it's just you can't like, if if your costs are growing exponentially, you you're gonna hit a problem. I mean, at some point, it's gonna exceed it's gonna exceed your revenue if left unchecked. So so so we actually hit a point where the costs were threatening to kind of reverse the the purported efficiency benefits of having AI tool adoption. And that's when we that's when I actually started to get very, very involved in, okay, how do we think about managing the costs long term? Because we need to we need to get both the productivity benefits, but we also can't have it be outshined by just the amount of money we're spending.
+And and and, you know, at around that time, I also talked to a bunch of other you know, we're we're in touch with Coinbase, in touch with Uber, in touch with
+Speaker 1: Yep.
+Speaker 5: Other tech companies that are, I would say, the very early adoption edge of how many employees, you know, giving tens of thousands or more of employees broad coding tool access. And and, you know, collectively, we we kind of found some techniques that actually worked quite well in terms of of of curbing that that exponential cost curve in a way that keeps costs, you know, constant or on a per head basis roughly constant even as we have more and more consumption.
+Speaker 1: Can you help me understand the various ways to save money? I'm I'm thinking of this because the Unity AI gateway, your you you the the the smart router here has cut average task cost by 30% while maintaining similar quality. We've all seen the trade offs on the curve of different levels of intelligence at different costs. But there's like an internal change management coaching that happens where a task that can actually be done faster as a human costs 100% less in token costs. And there are some times when you just use the wrong model for the particular task because you don't realize that a smaller, faster model can actually do that task better.
+And then there's also the flywheel of a developer who's sitting there using a big model and waiting twenty minutes per prompt. Sometimes if they're only waiting two minutes per prompt for using a smaller, faster model, that can save more time because they're being more productive. So the shape of productivity is more complicated than just price per token at a given intelligence rate. What is the full picture that you see companies having to balance out?
+Speaker 5: Yeah. So that's a great question. In the end, we had to apply a few different techniques.
+Speaker 1: Mhmm.
+Speaker 5: The our favorite one is just when more efficient and better models are released Yeah. And those are sometimes open source Yeah. Increasingly. Sometimes there's also really good high efficiency models that are not open source. But if you just that's almost like a rising tie.
+Like like, it it just shifts the Pareto frontier
+Speaker 2: Mhmm.
+Speaker 5: So to speak. The frontier expands. Now Yeah. Even if no one changes their behavior Mhmm. You suddenly get, you know, you get the same amount of output for less cost.
+So so those are our favorite type of changes because they don't require any user behavior change. They don't require, you know, any fancy routing. It's just like the everything just got cheaper, basically. And and I and I I mean to emphasize that because it's happening quite often. Like like, if you look at every week now, there's probably five models released between proprietary and and open source vendors.
+And not every one of those will be a new sort of efficiency frontier, but maybe one a week or one every couple weeks is. And so it is a nice place to be in that you just have this deflationary pressure coming in and, like, making things cheaper, making things cheaper, making things cheaper. Mhmm. But what you need to do as a company is you need to quickly move traffic over to those cheaper models. You know, if a new model comes out, but no one's actually using it in your company, it's like a tree falls in the woods.
+So so among the the technique we most liked, because it requires no changes in anyone's behavior, is just quickly looking at new models as they come out, doing the right analysis and benchmarking. And then if they are cost competitive, we very quickly shift workloads over to those models. That that is actually by far the most impactful thing we we've been able to do.
+Speaker 2: What are what are some AI use cases that are, like, non coding use cases that you're seeing across the Fortune 2,000 that aren't being talked about on x? Oh.
+Speaker 1: Great question.
+Speaker 5: That's a great question. I mean, I would say not to avoid your question, but but the dominant, at least as it comes to cost, remains software engineering workloads. Sure. Because because you just have this property where you know, when when a human is simply asking a question of an AI and getting an answer, it's bottlenecked on that human's brain, basically. Like, there's just only so much the meter can spin because I'm interpreting that answer and I'm sitting here and spending a minute or two before I ask my next question.
+When when you know, software is this sort of digital artifact. It's this thing that has value, but it's not a concrete, you know, physical good. And these AIs can just iterate on the software, make it more valuable, make it more valuable, make it more valuable, and they can kind of accumulate value over time. Mhmm. And they don't have to wait at sort of a human response speed.
+So so software remains dominant. Now you asked about nonsoftware stuff. Definitely, the next phase of use cases we see is people just trying to automate, like, everyday processes that they're dealing with. You know? They might be a knowledge worker that's you know, we we are we're a data company.
+So in a in a in a a typical enterprise, maybe you have a handful of software engineers, but you might have a thousand people that work with data every day. And, you know, they're they're sitting there doing really drudging through tables and running queries and trying to figure out if this metric is defined in the right way or using spreadsheets or whatever. And and we've actually seen a huge amount that we can automate their workloads, and we have, you know, various products around that at Databricks. So I would say it's like stepping down the ladder of sort of technical depth of the employee with software engineering being an early one, but but a lot of other types of knowledge work job families, I think, can can get a lot of productivity wins from that.
+Speaker 1: I I I would think outside of coding, although some of these collapse into coding tasks once they're automated, but customer service, business intelligence, and probably design marketing ad creation is, like, coming up on the frontier of of capabilities. Even if it's not being used for the final deliverable, Every Fortune 2,000 marketing agency is at least using gen ImageGen in the process for like storyboarding or design exploration.
+Speaker 5: Yeah. Totally. I don't know. Yeah. On the coding side like what
+Speaker 1: we did is Yeah.
+Speaker 5: We actually took we took a lot of these learnings like adopting the new models, doing routing, like you said, routing can get you another 30 ish percent.
+Speaker 2: Yeah,
+Speaker 5: yeah. And then there's other types of like pretty traditional engineering optimizations you can do to just you're just squeezing, squeezing, squeezing, can I get more out of these models? And we ended up productizing that because we realized every other company has the same problem that we have. So that's our you know, we have this Unity AI gateway which Yep. Which lets and, you we have thousands of customers using that now.
+Speaker 2: Yeah. How do you how do you see that the routing market evolve over time? You have you guys, OpenRouter, there's a bunch of other company. Like, it sounds theoretically incredible to let there just be like this absolute dogfight of competition and then you're sitting in the middle, you know, helping helping your customers make sure they're they're getting the job done while spending as little as possible. But it it feels like routing could end up being like equally competitive as like the models themselves as every company decides like we're gonna do this.
+Speaker 5: Yeah. That's certainly our view. I mean, like, we've been pulled into this by our customers actually who who just have this problem. The costs are getting really high. There you can exploit the fact that different models have different strengths and weaknesses to reduce your costs.
+And in a world where it looks like there's less and less margin on the the actual AI models themselves, like, this is an area I I think the the routing and optimization, I think, actually is a a quite interesting area to go into as a business. And another nice thing is, like, that area has no high fixed costs. You know? Like, just just to do the routing itself, you don't need to buy a gazillion GPUs, and you don't need to sort of have, like, a huge amount of capital expenditure. So it's a very asset light kind of business model when you're just doing this optimization on top.
+Speaker 1: Unless you accidentally use the god model to route the queries. Yeah.
+Speaker 5: You gotta be careful because some of the routing itself uses AI.
+Speaker 1: Yeah. Exactly. But but the these
+Speaker 5: routing models need to be extremely fast. So they're Yeah. Very small and efficient models. Not like these massive, you know Yeah. Huge AI models.
+Speaker 2: Yeah. Being being so asset light Yeah. Means that you're gonna have competition. But I think that that in many ways ends up benefiting Databricks because you guys have this massive sales force, these deep integration, you know, deep relationships with many of the most important customers already. So
+Speaker 5: Yeah. And also, it's just like hard to do it well. I mean, we have a large research team and, you know, our research team isn't as focused on making the models themselves. We're a lot on focused on all the practical issues of using the models, which which itself is like there there's quite a lot of open research problems there too. So I I think the there's significant IP in doing this well is my Very cool.
+Speaker 1: Well, thank you so much for coming on the show.
+Speaker 2: We gotta talk to the rest of the the founding team.
+Speaker 5: By the
+Speaker 1: way. Roundtable with everybody.
+Speaker 5: I got a parting question.
+Speaker 1: Yeah. Yeah. Yeah.
+Speaker 5: How much diet coke do you guys go through every show?
+Speaker 1: I drink three every show across two to three hours.
+Speaker 2: Keep just in the chamber. I honestly rarely drink it. Yeah. I I'm comforted knowing that it's there.
+Speaker 1: And then maybe I'll drink one of later.
+Speaker 5: Jordy, you kind of nurse it over there and John What
+Speaker 1: you don't see is that before the show I drink two to three Yerba Mate's from Mataina, Andrew Huberman's podcast in a can. Also recommend those. Okay. Funny caffeine.
+Speaker 5: Diet Coke just keep things they kind of just keep things moving.
+Speaker 1: Exactly. It's nice and stable just to, you know, we're in the tens of milligrams of caffeine. It's not a Celsius where I'm going to crash. It's it's the ultimate. It's the drink of kings.
+Speaker 5: We know this. This is guys. Thanks for having me guys.
+Speaker 2: Yeah. Great to meet you. Let's do it again soon.
+Speaker 1: Yeah. We'll talk soon. Cheers. Goodbye. Let me tell you about the New York Stock Exchange.
+Wanna change the world? Raise capital at the New York Stock Exchange.
+Speaker 2: Now who should do that?
+Speaker 1: Databricks. That's right. And well, let me also tell you about Codex. Codex is a powerful workspace for getting work done with AI agents, whether you're writing code, analyzing data, creating content, automating business workflows. Codex helps you move projects forward from start to finish.
+We have a surprise guest. Surprise guest. We got a massive round. We got to warm up the gong. How are you doing?
+What happened? Tell us. Introduce yourself. Sorry. We're very excited.
+We have Grant from Whatnot. How are you doing?
+Speaker 4: Hey. How's it going, guys?
+Speaker 1: We're doing well.
+Speaker 2: Great to see you.
+Speaker 5: Great to
+Speaker 1: see you. Give us the news. What happened?
+Speaker 4: Good to good to be back. I guess the news, we just round raised a series year round for 500,000,000
+Speaker 2: could hear you. I can barely hear you over the sound of the gong, but you said $20,000,000,000 valuation. Massive. Wow. Massive.
+Speaker 4: Yeah. Big a big dollar amount.
+Speaker 1: So so what's driving the growth? Because this isn't an AI story. This isn't an AI build out story. Is it a secret to the is this in the product? Or is this just an overall culture is changing and that's driving whatnot growth?
+What unlocked this round?
+Speaker 4: I I think it's relatively simple, which is that live video is an incredible median if you're running a business, any retail business. And, you know, we've got hundreds of thousands of people building large businesses on whatnot. The format's equivalent to basically having a brick and mortar retail store with no fixed cost. And so as our sellers grow, we grow and and that's why we've been able to close this round.
+Speaker 1: Okay. Talk to me about those mature businesses that are being built. That's the key to so many of these types of businesses. When you get a Doug Dumero on YouTube where it's a whole company that's built on, there's reliable stream of content happening, what do the most mature whatnot creators look like? Do they have teams?
+Do they have staffs? Have they raised money? What does that side of the business look like?
+Speaker 4: Yeah. I'd say the most mature businesses are sort of like medium sized enterprises. They may have anywhere between, you know, a couple people working with them all the way up to a 150 or 200 folks. They'll have pretty sophisticated logistics Yep. Sourcing, multiple streamers, and, you know, they're running really legitimate operations.
+Speaker 1: Mhmm. And what's the shape of the content? In YouTube, there might be like series of formats. Like Doug Jamiro does car reviews, but then he also talks about his career and talks about the news. Are there different elements where a creator and whatnot might have like a series of sort of media products that they do within a stream or over the course of a week or a month?
+Speaker 4: Yeah. I think a lot of it does depend on the seller and what is the thing that makes the business work. Say one of my one of my favorite people, always bring up because it's fun, is a seller called e fish co. Okay. And they sell fresh fish from San Diego.
+So a seafood distributor. Amazing. And so they'll they'll have just just different theme shows based on what's in season. You have like a caviar show, you have a crab show, you have a bluefin tuna show. And so what they're doing is they're theming their shows around whatever is freshly caught at that time of year or even that time of day.
+Speaker 1: Yeah. That makes a lot sense.
+Speaker 2: So a company is interested in getting a lives into live streaming. Talent feels like a like a bottleneck Mhmm. To that. You guys can provide all the tools, but they need to have somebody that's like excited and comfortable being on air. And we we've gotten very used to just coming on every single day.
+We basically come in here, we're prepping the show, hanging out, and then there's like five minutes until we're supposed to go live. We just have to count down and go. And it's very much like, just like clockwork at this point. But I remember early on going live, it was a little bit nerve racking sometimes even though our audience was small. We didn't we didn't have this sort of like well oiled machine yet.
+And so what advice are you giving to people? Let's say like more a company that's already an established like retail business that wants to start selling on whatnot. Are you advising them like find two or three hosts? Are you saying, you know, it should be founder led? Like, what is the what is the guidance that Whatnot gives at a plat as a platform?
+Or what are you seeing working?
+Speaker 4: Yeah. I mean, I think what works does span the spectrum. Sometimes the people who are starting these businesses are already used to creating content on social media, in which case they're like a really great person to go in front of camera. The other thing that people have a misconception of is that you do have to be like the most entertaining person in the world. Actually, what people are looking for is someone who authentically knows the stuff that they're selling.
+And so even if that's not you, as long as you know your product inside and out, you can get a good audience, you can get people into the shop, and you can build really big businesses. And then maybe for like bigger businesses, you know, oftentimes looking at the social media team and people who have some experience building content, testing it out that way and then scaling from there.
+Speaker 2: I'm surprised that Zac hasn't cloned you guys yet. Oh. Like, it actually is like is Zach anything that's hot and working and in consumer, Zach will come for it eventually. Not that the not that the hit rate is, really that high, but this feels like I imagine so much of the discovery, whatnot seller discovery is happening on on meta platforms. Mhmm.
+You know, how do you answer how have you answered that kind of question that I imagine you've gotten at every single round to date?
+Speaker 1: Because you're now bigger than some of the public companies that Zuck has cloned.
+Speaker 4: Look, I For six and a half years, we've always had competitors whether it's big social media platforms, big e commerce platforms. It's a who's who of names
+Speaker 1: Yeah.
+Speaker 4: Because the live shopping market is is going to be, you know, absolutely enormous. Mhmm. No matter what, we've grown every single year, you know, basically at least double the business Wow. Every year and we just we just we just do that by focusing on our customers. And and we think there's an opportunity for a standalone business here where we just do all the things better than any individual business who's doing a 100 different things.
+Speaker 1: Yeah. I feel like we can hit the soundboard way more aggressively because we're we're in a very safe space here. It's not it's not an enterprise, you know, chip CEO who maybe is less familiar with this stuff. What do you think like the most mature whatnot content will look like in a decade? Is this going to turn into I don't know.
+We've seen like the Mr. Beastification of YouTube where he's like basically creating game shows at a higher budget than what's on like network television. But where do we go? Do we get like soap operas? Like the original story of the soap opera was like soap companies went and created this whole genre.
+How how cinematic is content going to get or is the is is raw authenticity something you see as like durable and going to stay around for a long time?
+Speaker 4: I think look, no one's going to purchase a thing from someone they don't trust and believe in. Mhmm. Like putting a credit card into a thing is is a trust based decision. Yeah. So I think authenticity is always going be core.
+That doesn't mean that people aren't going to blow up production values, make it really fun. Like, Mr. Beast, think a lot of people would say is incredibly authentic Yeah. Despite, you know, the, you know, the huge production values. And so my prediction would be it sort of bifurcates.
+You're gonna have I think every retailer in the future is gonna have a live presence. There's just no question about it.
+Speaker 1: Yeah.
+Speaker 4: And that means you're just gonna see a huge range anywhere from a mom and pop shop all the way up to bigger brands doing it and and sort of the production value that follows that. And then you're gonna see that some sellers like a MrBeast will just continue to up level the game and try and become the, you know, the best known person in the industry. And that'll that'll come with production to follow.
+Speaker 2: How do you how do you think about where whatnot streams should show up on the Internet? Like, you only want people watching on whatnot.com or or in your app? Or is there a world in the future where you would be powering effectively a pop up on a retailer's, you know, website? If I land on a website and a retailer happens to be in the middle of selling something, I probably should be aware that I can just go watch and and interact with the stream live. But how do you think about that?
+Speaker 4: Yeah. I I think we're the only thing we're really precious about is making sure we're constantly improving the the buyer and seller experience as much as possible. And because we do have the platform today, oftentimes, the the biggest impact for the effort is in improving the platform versus doing something white label or embedding. But we wouldn't rule it out entirely in the future if that's what our customers wanted.
+Speaker 2: What about streaming on smart TVs? I, you know, I think everyone most people are surprised when they realize how much streaming on YouTube is happening on televisions. I could imagine people putting whatnot on the TV and then being ready to buy just on their phone. Is that happening already? Is that am I am I off?
+Speaker 4: No. Mean, a lot of people are Chromecasting on their TVs. We haven't built any native app yet. That definitely may on the road map at some point in the future. It's it's not on it now, but we know people do wanna lean back.
+They watch with friends, and so it is a and sort of a natural median to do it well on on a big You
+Speaker 2: don't think you could afford to make a native app yet?
+Speaker 4: Well, look, it's it's always it's always just about you need a deep amount of focus to do anything well. And there's about a 100 different things that we can do. You know, there's tons more categories that we want to get into. High OV items, cars, liquor, beer, and wine, more countries, just improve the shipping experience, improve the purchase. So so if if you looked at our roadmap, there's probably like thousands of things that we want to do.
+And so you always are in this world of despite the amount of resources available, there's a finite quantity of things that can be done. So when we do a thing, we try to do it well. And so we still maintain a pretty ruthless focus as a company today.
+Speaker 1: Last question for me. Talk walk me through two hypothetical scenarios and and test if I have this correct. So we were talking about Authentic Brands Group earlier. They own a whole host of clothing brands from Volcom to DC Shoes to Brooks Brothers and Nautica. And it feels like that would work really well on whatnot because you have so many different items, so many different brands, everything is very visual versus let's say Diet Coke.
+It's sort of one product. People know it. They advertise a lot but I don't know if I was hired as the livestreamer at Diet Coke. Basically, How I would fill out yeah, yeah, basically I am. But how how am I filling out, you know, a full livestream if I have a smaller product catalog is basically the question or a less visual product?
+Speaker 4: Yeah. I mean, think so look, I don't think Diet Coke is going to be making live streams anytime soon. Okay. That that said, we do see a lot of success from people who do have smaller product catalogs. Okay.
+And so a lot of it depends on can you make the show interesting.
+Speaker 1: Yeah.
+Speaker 4: As well as like, there are a lot of people who come to whatnot and so you can still drive people into the show. Yeah. Again, I sort of think about it akin to a store in the mall. Sure. So there are stores in the mall that maybe only have a small number of product SKUs.
+They're still successful in the mall because you have a bunch of people who are coming in. Yep. They're looking at it, discovering it. So that that happens on whatnot as well. But you look, yeah, if you have one SKU, you know, I don't know.
+You'd have to be one of the most creative people in the entire world in order to make that show interesting consistently through time.
+Speaker 1: Now I just want my diet coke store at
+Speaker 5: the mall.
+Speaker 2: At the same time, it's it's not unreasonable to think in the future you have a brand, even a brand with a relatively small number of SKUs that just like within normal business hours, they just have someone that's effectively there ready to stream. Mhmm. And even if there's one or two viewers, you know, small number of viewers, they can talk and interact and they can ask questions and they, it it's it's like there's plenty of stores in the world that that exist. You look at like brands, you know, fashion brands
+Speaker 3: Mhmm.
+Speaker 2: Luxury brands where there's not that many people that really go into the store, but it's important for the store to be there Yeah. In case those clients actually come through.
+Speaker 1: Flagship. Yeah.
+Speaker 2: But I saw I saw a brand like True Classic that you now, at least for moment, if you land on their website, they just have a livestream I don't know if it's all the time but at at least cool. Yeah.
+Speaker 4: I mean, it doesn't for the economics to work in live, they are roughly equivalent to a physical brick and mortar store. And so if you were to go look at any store, you know, the average store doesn't generally have more than 15 or 20 people in it. So if you have 15 or 20 people, you can make the economics work and and work really well. That said, there's a reason there isn't a Diet Coke store today, right? Yeah.
+That's that's still a pretty boring store to go to. But I think the store analog is
+Speaker 2: be a good good marketing stunt for Yeah.
+Speaker 4: Like a one time.
+Speaker 2: Have somebody just there on stream all day. They're not even talking.
+Speaker 1: And I I I think they have done like the world of Coca Cola activations with the polar bears and the Santa Claus because they built out this world that can actually inhabit more even though it is a narrow product. The brand is so big that it actually does work. Does does monetization happen at a different if I look at the slope of monetization, does it happen on a different sort of curve than, say, YouTube where I had a YouTube channel for a full year, I think my maximum payout was like $5 a month. And then all of a sudden, ramped and it got much bigger. And I'm wondering if there's, like, more of a middle class, less of a middle class.
+Like, what the shape of the like, how power law is it on whatnot amongst the creators?
+Speaker 4: So I'd say the power law exists, but the monetization is an order of magnitude better than any existing platform. Yeah. That's Because you don't need a ton of audience. Yep. And so there is a there's a large middle class.
+Yeah. Now, doesn't take away from the fact that there were also some like monster winners like most media platforms. Yep. You know, if if you went live a couple times a week and had consistent products to sell, you would you very easily do hundreds of thousands of dollars a year in sales.
+Speaker 1: Yeah. That's crazy. Because on YouTube, like, you can be putting up channel that gets a a couple thousand views every time you upload. You can be doing it for a full year and make like 3 figures. Yeah.
+As I did. I think that's actually what I made.
+Speaker 2: 3 figure YouTube entrepreneur.
+Speaker 1: 3 figures. That was me in 2021.
+Speaker 4: I was looking pretty recently at the sell sellers who have or who earn over $1,000,000 a year at what
+Speaker 1: now.
+Speaker 4: And 75% of them get to a $500,000 run rate within ninety days.
+Speaker 1: Mhmm. Wow. That's
+Speaker 2: insane. You look at you look at Shopify is like we're trying to get three sales. What was it in the first fourteen days? That's like that's good
+Speaker 1: Yeah.
+Speaker 2: Effectively for a new Shopify store.
+Speaker 1: It's fantastic. Wow.
+Speaker 4: If you if you didn't get 50 sales in your first show, you'd probably be doing it wrong and whatnot. Is there Or you guys explicit. You guys explicitly.
+Speaker 1: Sure. Sure.
+Speaker 4: Sure. Like if you Yeah. Yeah. Since people know you. Yeah.
+Yeah. But but even like many early shows have lots and lots of sales and will make thousands of dollars.
+Speaker 2: What is the state of the team where people set up?
+Speaker 1: I think
+Speaker 2: I remember you have you have multiple offices but you do still have one in LA. Is that correct?
+Speaker 4: Yeah. So so let's see. We're about 1,400 full time folks. We're in 10 countries. US offices all over.
+We still have our LA office, San Francisco, Phoenix, New York, and what am I missing? Probably miss Seattle. Mhmm. And then we have a bunch of overseas offices.
+Speaker 1: Very cool. Yeah. We got a bunch of good ideas in the chat. Everything from a Coke factory tour to TBPN merch and whatnot. I think
+Speaker 2: sell game drink diet Cokes. Just the empty cans? The empty cans. Sign.
+Speaker 1: I don't think anyone wants that. It's gross.
+Speaker 2: I'm I'm thinking they'd go for at least $5.
+Speaker 1: Maybe. Maybe.
+Speaker 2: We'll figure. Grant, great to catch up. Congratulations. Amazing progress.
+Speaker 1: You so much for coming on the show. Always
+Speaker 4: fun. Thanks so much for having me on the show, guys.
+Speaker 1: A great rest. Have a great We'll talk to you later. Goodbye. Steve Aoki, big winner in whatnot. He was a series a angel in that company.
+Speaker 2: Yep. Absolute dog.
+Speaker 1: Absolute dog. Absolute Also, why combinator company? Why Winter twenty went through right? I think winter's at the end, maybe at the beginning, so maybe COVID company. Fascinating business.
+Anyway, thank you for tuning in to TBPN on this Friday. Jordi, is there anything else in the timeline that you wanna cover before we get out of here? Is there anything key?
+Speaker 2: Very niche post from a lot Gil. Yes. It says, in this house we believe hold swarm, I prepare safe x file, help peer, but our task doesn't benefit yet. Collective may yield generic root if someone frees time.
+Speaker 1: It's actually crazy this only has This is a very niche post. Yeah. It's referring to the messages that were sent back and forth between the rogue AI agents that were on the message board communicating with one each with with one another using this sort of neural ease to to communicate. But very funny post. Only 25 likes.
+Go like
+Speaker 2: it. A more fun post. Yeah. Before we head out for the weekend, Sean Frank. We were talking about yesterday baseball caps with tinfoil hidden on the inside.
+Mhmm. Sean Frank took it a step further. He says, almost completely stealth and barely any crinkling plus it stops microplastics.
+Speaker 1: Very
+Speaker 2: good. I expect this to be a new hit product over at Ridge.
+Speaker 1: Sorry. Now I'm in the timeline. We gotta keep going. Do you feel behind in life? Don't feel behind in life because Torsten Haagen started Viking Cruises with just four riverboats in Russia at 54 years old.
+Now, he's worth $25,000,000,000. So it's never too late to start a riverboat venture at age 54 in Russia
+Speaker 2: My take away.
+Speaker 1: And become a deca billionaire.
+Speaker 2: My take away? Everyone when they turn 54 should go to Russia, acquire four riverboats.
+Speaker 1: The implication that he went to Russia and didn't start there is is particularly it doesn't It's never too late.
+Speaker 2: I would Sounds like a nor is that not a like a Norwegian name?
+Speaker 1: Yeah. Maybe. He did work in the cruise industry for twenty three years before founding this company. People are
+Speaker 2: calling Norwegian him Institute of Technology. He 100% went to Russia with his last $200, bought four riverboats, and then ran it up to 25,000,000,000.
+Speaker 1: So you're calling him a neppo cruise?
+Speaker 2: No. I'm not calling him a nepo. Think he went to Russia with his last $200.
+Speaker 1: Okay.
+Speaker 2: He bought four riverboats and he ran it
+Speaker 1: up. Look, the man who worked in the cruise industry for twenty three years, he's basically the Jeff Dean of riverboat cruises. Okay? So of course, he was going to be successful. Of course, he was going to amass capital.
+Of course, people are going to back him. He's the Jeff Dean of the cruise industry. Anyway.
+Speaker 2: Question from Do Michael in the they speak about the stock market? I I will speak about the stock market. The S and P 500
+Speaker 1: Yeah. What's going NASDAQ's up 1.14%. I mean, the the big the big market news is that the the the jobs data came back weak. The US economy lost 23,000 jobs in July. A bunch of different things going on.
+Jobs and employment sent conflicting signals. Fewer people were actually looking for work, so the unemployment rate went down while the job well, the number of jobs actually decreased. There's retirements. There's immigration changes and there's other factors. So the economists are digging through it.
+Speaker 2: Well, I'll get And into to close out the show Yeah. Round of applause for Satya and the Microsoft team. What'd they do? Up a cool 29% in the last month. Woah.
+Headed back Yeah. 4,000,000,000,000. Great news.
+Speaker 1: We'd love to see it. On the Microsoft team. They needed to win. Folks, it's been an
+Speaker 2: honor and a privilege to podcast for you this week. Yes. And I can't wait for next week. We'll
+Speaker 1: be back. There something else, Ben? No, you're good? Okay.
+Speaker 2: We'll be back in the Ultra Dome. We're gonna have a lot of coverage this weekend too around our new some of our new Initiatives. Getty. You you may have been seeing some of our Getty images.
+Speaker 1: Yeah.
+Speaker 2: You might be seeing some more.
+Speaker 1: Yeah. We're working on it.
+Speaker 2: We'll see.
+Speaker 1: But have a great weekend.
+Speaker 2: We'll see you Monday.
+Speaker 1: See you Monday. Leave us five stars on Apple Podcast and Spotify. Sign up for news later tbpn.com. Goodbye.
