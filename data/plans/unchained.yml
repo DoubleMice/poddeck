@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-08-09T03:38:21.104Z
+refreshed_at: 2026-08-09T18:10:50.651Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 65
 done: 0
 pending: 0
-needs_transcript: 62
+needs_transcript: 61
 transcribing: 0
-transcribe_failed: 3
+transcribe_failed: 4
 downloaded: 0
 episodes:
   - id: 49a7689a-938f-11f1-be9d-97d71a92ea8f
@@ -107,8 +107,20 @@ episodes:
       🦑 28:46 Kraken's $600M vault partnership, and Veda's competitive edge
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-09T18:10:51.637Z
+    transcript_error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
+    transcript_completed_at: 2026-08-09T18:11:04.676Z
   - id: 0c1a1150-9289-11f1-bf33-e3697544f1ef
     guid: 0c1a1150-9289-11f1-bf33-e3697544f1ef
     title: "Inside the Coldcard Hack That Drained Over $100 Million in Bitcoin: Uneasy Money"
@@ -3701,8 +3713,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5464,8 +5475,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

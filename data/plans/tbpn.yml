@@ -1,5 +1,5 @@
 source: tbpn
-refreshed_at: 2026-08-09T03:38:21.049Z
+refreshed_at: 2026-08-09T18:10:50.614Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
@@ -117,8 +117,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-08T18:11:22.574Z
-    transcript_completed_at: 2026-08-08T18:12:23.943Z
+    transcript_submitted_at: 2026-08-09T18:11:38.708Z
+    transcript_completed_at: 2026-08-09T18:12:23.304Z
     transcript_error: |
       MiMo transcription failed: 401 {
           "error": {
