@@ -38,7 +38,8 @@ function getPath(root: unknown, path: string[]): unknown {
 
 function maxCompletionTokens(): number {
   const value = Number(process.env.MIMO_MAX_COMPLETION_TOKENS)
-  return Number.isInteger(value) && value > 0 ? value : 32768
+  if (!Number.isInteger(value) || value < 1) return 4096
+  return Math.min(value, 4096)
 }
 
 export class MiMoClient {
