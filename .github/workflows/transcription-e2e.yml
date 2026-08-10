@@ -1,0 +1,48 @@
+name: Transcription E2E
+
+# Manual, isolated verification of the configured ASR model. This workflow never
+# generates content, writes repository files, or deploys the site.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: transcription-e2e
+  cancel-in-progress: false
+
+jobs:
+  mimo:
+    name: Verify MiMo ASR
+    runs-on: ubuntu-latest
+    env:
+      TRANSCRIPT_PROVIDER: mimo
+      MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
+      MIMO_BASE_URL: ${{ vars.MIMO_BASE_URL }}
+      MIMO_MODEL: ${{ vars.MIMO_MODEL }}
+      MIMO_MAX_COMPLETION_TOKENS: ${{ vars.MIMO_MAX_COMPLETION_TOKENS }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Verify configured credentials
+        run: |
+          set -euo pipefail
+          test -n "${MIMO_API_KEY}" || { echo "MIMO_API_KEY secret is required"; exit 1; }
+          export MIMO_BASE_URL="${MIMO_BASE_URL:-https://api.xiaomimimo.com/v1}"
+          export MIMO_MODEL="${MIMO_MODEL:-mimo-v2.5-asr}"
+          pnpm run e2e:transcription

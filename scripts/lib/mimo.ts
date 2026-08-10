@@ -43,7 +43,7 @@ export class MiMoClient {
 
   constructor(options: MiMoClientOptions) {
     this.apiKey = options.apiKey
-    this.model = options.model || 'mimo-v2.5'
+    this.model = options.model || 'mimo-v2.5-asr'
     this.url = `${(options.baseUrl || 'https://api.xiaomimimo.com/v1').replace(/\/$/, '')}/chat/completions`
   }
 

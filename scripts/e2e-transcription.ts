@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer'
 import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { setTimeout as sleep } from 'node:timers/promises'
@@ -7,6 +8,22 @@ import { log } from './lib/log.ts'
 
 const ROOT = process.cwd()
 const SAMPLE_AUDIO_URL = 'https://example-files.cnbj1.mi-fds.com/example-files/audio/audio_example.wav'
+
+async function downloadSampleAudioDataUri(): Promise<string> {
+  const response = await fetch(SAMPLE_AUDIO_URL, {
+    headers: { accept: 'audio/*,*/*' },
+  })
+  const audio = Buffer.from(await response.arrayBuffer())
+  if (!response.ok) {
+    throw new Error(`MiMo E2E sample download failed: ${response.status} ${audio.toString('utf-8').slice(0, 200)}`)
+  }
+  if (audio.length === 0) throw new Error('MiMo E2E sample download returned an empty file')
+
+  const contentType = response.headers.get('content-type')?.split(';')[0]?.trim().toLowerCase()
+  const mimeType = contentType?.startsWith('audio/') ? contentType : 'audio/wav'
+  log.info(`MiMo E2E sample ready (${audio.length} bytes, ${mimeType})`)
+  return `data:${mimeType};base64,${audio.toString('base64')}`
+}
 
 function loadEnvFile(path: string): void {
   if (!existsSync(path)) return
@@ -43,7 +60,8 @@ async function testMiMo(): Promise<void> {
     baseUrl: process.env.MIMO_BASE_URL,
     model: process.env.MIMO_MODEL,
   })
-  const result = await client.transcribe(SAMPLE_AUDIO_URL)
+  // mimo-v2.5-asr accepts audio as a base64 data URI, matching the production path.
+  const result = await client.transcribe(await downloadSampleAudioDataUri())
   if (result.text.length < 5) throw new Error(`MiMo transcript too short: ${JSON.stringify(result.text)}`)
   log.ok(`MiMo E2E transcript ok (${result.text.length} chars): ${result.text.slice(0, 120)}`)
 }
