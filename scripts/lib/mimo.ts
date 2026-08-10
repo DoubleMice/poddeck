@@ -36,6 +36,11 @@ function getPath(root: unknown, path: string[]): unknown {
   return cursor
 }
 
+function maxCompletionTokens(): number {
+  const value = Number(process.env.MIMO_MAX_COMPLETION_TOKENS)
+  return Number.isInteger(value) && value > 0 ? value : 32768
+}
+
 export class MiMoClient {
   private apiKey: string
   private model: string
@@ -67,7 +72,7 @@ export class MiMoClient {
             ],
           },
         ],
-        max_completion_tokens: Number(process.env.MIMO_MAX_COMPLETION_TOKENS ?? 32768),
+        max_completion_tokens: maxCompletionTokens(),
       }),
     })
     const body = await response.text()
