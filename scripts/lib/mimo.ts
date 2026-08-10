@@ -58,19 +58,11 @@ export class MiMoClient {
         model: this.model,
         messages: [
           {
-            role: 'system',
-            content: 'You are a precise speech transcription engine. Return only the transcript text in the original spoken language. Preserve speaker wording. Do not summarize, translate, explain, or add markdown.',
-          },
-          {
             role: 'user',
             content: [
               {
                 type: 'input_audio',
                 input_audio: { data: audioData },
-              },
-              {
-                type: 'text',
-                text: 'Transcribe this audio verbatim. Return only transcript text.',
               },
             ],
           },
