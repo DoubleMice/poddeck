@@ -1,5 +1,5 @@
 source: unchained
-refreshed_at: 2026-08-10T03:40:40.131Z
+refreshed_at: 2026-08-10T18:19:23.612Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 65
@@ -110,17 +110,12 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-09T18:10:51.637Z
-    transcript_completed_at: 2026-08-09T18:11:04.676Z
-    transcript_error: |
-      MiMo transcription failed: 401 {
-          "error": {
-              "message": "Invalid API Key",
-              "param": "Please provide valid API Key",
-              "code": "401",
-              "type": "invalid_key"
-          }
-      }
+    transcript_submitted_at: 2026-08-10T18:21:05.612Z
+    transcript_completed_at: 2026-08-10T18:21:24.773Z
+    transcript_error: "MiMo transcription failed: 400 {\"error\":{\"code\":\"400\",\"message\":\"Requested token count
+      exceeds the model's maximum context length of 8192 tokens. You requested a total of 9764 tokens: 5668 tokens from
+      the input messages and 4096 tokens for the completion. Please reduce the number of tokens in the input messages or
+      the completion to fit within the limit.\",\"param\":\"\",\"type\":\"BadRequestError\"}}"
   - id: 0c1a1150-9289-11f1-bf33-e3697544f1ef
     guid: 0c1a1150-9289-11f1-bf33-e3697544f1ef
     title: "Inside the Coldcard Hack That Drained Over $100 Million in Bitcoin: Uneasy Money"
@@ -3713,8 +3708,7 @@ episodes:
       LARPing as crypto
 
 
-      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the
-      party?
+      🔹 Does Ethereum need to double down on cypherpunk “sanctuary” values—or let BlackRock and Circle join the party?
 
 
       🔹 Haseeb dismantles the idea that all “tokenized RWAs” on “permissioned” blockchains are equivalent to Ethereum
@@ -5476,8 +5470,7 @@ episodes:
       🔹 Crypto’s endgame: DeFi legos for agents, not just degens—will AI really build its own protocols?
 
 
-      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy
-      adversary
+      🔹 The game theory of state surveillance and why institutions, not individuals, are the ultimate privacy adversary
 
 
       🔹 "Provable privacy” isn’t just trust, it’s math—Venice’s plan to win over the tinfoil crowd

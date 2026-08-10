@@ -1,5 +1,5 @@
 source: sv101
-refreshed_at: 2026-08-10T03:40:40.177Z
+refreshed_at: 2026-08-10T18:19:23.659Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
@@ -133,14 +133,9 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-09T18:11:04.784Z
-    transcript_completed_at: 2026-08-09T18:11:38.605Z
-    transcript_error: |
-      MiMo transcription failed: 401 {
-          "error": {
-              "message": "Invalid API Key",
-              "param": "Please provide valid API Key",
-              "code": "401",
-              "type": "invalid_key"
-          }
-      }
+    transcript_submitted_at: 2026-08-10T18:21:24.913Z
+    transcript_completed_at: 2026-08-10T18:22:14.509Z
+    transcript_error: "MiMo transcription failed: 400 {\"error\":{\"code\":\"400\",\"message\":\"Requested token count
+      exceeds the model's maximum context length of 8192 tokens. You requested a total of 9764 tokens: 5668 tokens from
+      the input messages and 4096 tokens for the completion. Please reduce the number of tokens in the input messages or
+      the completion to fit within the limit.\",\"param\":\"\",\"type\":\"BadRequestError\"}}"
