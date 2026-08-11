@@ -14,7 +14,7 @@ on:
         required: true
         default: '4'
       transcribe_limit:
-        description: 'Maximum missing-transcript episodes to submit for ASR'
+        description: 'Maximum missing-transcript episodes to process'
         required: true
         default: '3'
       transcribe_wait_minutes:
@@ -114,8 +114,8 @@ jobs:
           category="${{ inputs.category || '' }}"
           export TRANSCRIPT_PROVIDER="${TRANSCRIPT_PROVIDER:-mimo}"
           export MIMO_BASE_URL="${MIMO_BASE_URL:-https://api.xiaomimimo.com/v1}"
-          export MIMO_MODEL="${MIMO_MODEL:-mimo-v2.5-asr}"
-          export MIMO_MAX_COMPLETION_TOKENS="${MIMO_MAX_COMPLETION_TOKENS:-4096}"
+          export MIMO_MODEL="${MIMO_MODEL:-mimo-v2.5}"
+          export MIMO_MAX_COMPLETION_TOKENS="${MIMO_MAX_COMPLETION_TOKENS:-32768}"
           args=(--limit=${limit})
           if [ "${TRANSCRIPT_PROVIDER}" = "mimo" ] && [ -n "${MIMO_API_KEY}" ]; then
             args+=(--auto-transcribe --transcribe-limit=${transcribe_limit} --transcribe-wait-minutes=${transcribe_wait_minutes})

@@ -1,6 +1,6 @@
 name: Transcription E2E
 
-# Manual, isolated verification of the configured ASR model. This workflow never
+# Manual, isolated verification of the configured audio transcription model. This workflow never
 # generates content, writes repository files, or deploys the site.
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   mimo:
-    name: Verify MiMo ASR
+    name: Verify MiMo transcription
     runs-on: ubuntu-latest
     env:
       TRANSCRIPT_PROVIDER: mimo
@@ -44,5 +44,6 @@ jobs:
           set -euo pipefail
           test -n "${MIMO_API_KEY}" || { echo "MIMO_API_KEY secret is required"; exit 1; }
           export MIMO_BASE_URL="${MIMO_BASE_URL:-https://api.xiaomimimo.com/v1}"
-          export MIMO_MODEL="${MIMO_MODEL:-mimo-v2.5-asr}"
+          export MIMO_MODEL="${MIMO_MODEL:-mimo-v2.5}"
+          export MIMO_MAX_COMPLETION_TOKENS="${MIMO_MAX_COMPLETION_TOKENS:-32768}"
           pnpm run e2e:transcription

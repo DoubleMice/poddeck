@@ -60,7 +60,7 @@ async function testMiMo(): Promise<void> {
     baseUrl: process.env.MIMO_BASE_URL,
     model: process.env.MIMO_MODEL,
   })
-  // mimo-v2.5-asr accepts audio as a base64 data URI, matching the production path.
+  // mimo-v2.5 accepts audio plus a text instruction, matching the production path.
   const result = await client.transcribe(await downloadSampleAudioDataUri())
   if (result.text.length < 5) throw new Error(`MiMo transcript too short: ${JSON.stringify(result.text)}`)
   log.ok(`MiMo E2E transcript ok (${result.text.length} chars): ${result.text.slice(0, 120)}`)
