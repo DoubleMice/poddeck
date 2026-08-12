@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sam MacPherson：为什么 Spark 从 KelpDAO 黑客事件中获益</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #fafafa;
+    color: #1f2328;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+  header { margin-bottom: 40px; }
+  .kicker {
+    display: inline-block; font-size: 13px; letter-spacing: 1px;
+    color: #1971c2; font-weight: 700; margin-bottom: 12px;
+  }
+  h1 { font-size: 30px; line-height: 1.35; margin-bottom: 14px; }
+  .meta { font-size: 14px; color: #57606a; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0 40px; }
+  .card { padding: 14px 16px; border-radius: 8px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .card b { display: block; margin-bottom: 6px; font-size: 15px; }
+  .card p { font-size: 14px; color: #444; line-height: 1.6; }
+  .blue { border-left: 4px solid #1971c2; }
+  .green { border-left: 4px solid #2f9e44; }
+  .yellow { border-left: 4px solid #f08c00; }
+  .red { border-left: 4px solid #c92a2a; }
+  .purple { border-left: 4px solid #862e9c; }
+  h2 { font-size: 21px; margin: 36px 0 12px; }
+  p { margin-bottom: 14px; }
+  blockquote {
+    margin: 20px 0; padding: 16px 20px; border-left: 4px solid #1971c2;
+    background: #eef5fc; border-radius: 0 8px 8px 0; font-style: italic;
+  }
+  blockquote .en { color: #1f2328; }
+  blockquote .zh { display: block; margin-top: 8px; font-style: normal; font-size: 15px; color: #444; }
+  .quotes { margin: 32px 0; }
+  .quotes .q {
+    padding: 14px 16px; border-radius: 8px; background: #fff; margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .quotes .q .en { font-style: italic; }
+  .quotes .q .ctx { font-size: 13px; color: #57606a; margin-top: 4px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #57606a; }
+  footer a { color: #1971c2; }
+  @media (max-width: 640px) {
+    .cards { grid-template-columns: 1fr; }
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">UNCHAINED · 播客访谈精读</div>
+  <h1>为什么 Spark 从 KelpDAO 黑客事件中获益</h1>
+  <div class="meta">
+    嘉宾：Sam MacPherson（Spark 联合创始人兼 CEO）<br>
+    主持：Laura Shin · 来源：Unchained · 发布于 2026 年 8 月 · 时长 35 分钟
+  </div>
+</header>
+
+<section class="cards">
+  <div class="card blue">
+    <b>一场黑客攻击的反向结局</b>
+    <p>KelpDAO 攻击重创整个 DeFi，Spark 却成为最大受益者之一：ETH 计价的 TVL 自 4 月中旬上涨约 50%。它的风控设计如何提前排雷？</p>
+  </div>
+  <div class="card green">
+    <b>央行—商业银行架构</b>
+    <p>Sky 的前身是 MakerDAO。两次重构后，Sky 扮演央行与批发流动性发行方，Spark 则是提取储备做商业借贷的商业银行。</p>
+  </div>
+  <div class="card yellow">
+    <b>三道安全防线</b>
+    <p>不参与循环借贷、全市场 rate limits、Chainlink/Redstone/Chronicle 三重预言机——安全设计反过来定义了产品形态。</p>
+  </div>
+  <div class="card red">
+    <b>AI 威胁是双刃剑</b>
+    <p>攻击者用 AI 变强，防御方也第一次拿到形式化验证。Sam 的判断：重大黑客案几乎全是 OPSEC 失守，而非智能合约漏洞。</p>
+  </div>
+  <div class="card purple">
+    <b>稳定币大战</b>
+    <p>Robinhood、Stripe、Tempo 都在复制 Coinbase 的「分发渠道 + 链 + 稳定币」打法。Spark 以收益层和做市卡位。</p>
+  </div>
+  <div class="card yellow">
+    <b>代币回到基本面</b>
+    <p>SPK 已投票通过超额利润回购，财报公开在 data.spark.fi。Sam 的判断：大部分代币终将收敛到 DCF 估值。</p>
+  </div>
+</section>
+
+<h2>一、央行与商业银行：Sky 与 Spark 的分工</h2>
+<p>Sky 的前身是 MakerDAO——2019 年带着 DAI 稳定币上线，按 Laura Shin 的话说，它是稳定币世界里「真正的 OG」。2022 年前后，这个生态经历了两次重构：品牌上，Maker 改名为 Sky，DAI 升级为 USDS；治理上，原来的 DAO 结构被改组为 subDAO 模式。</p>
+<p>改组的原因很实际：第一代 DAO 在管理大规模资金时运转得并不好，扁平结构很快催生出政治派系和非正式的结盟。于是团队决定把架构拆成两层——核心层只定规则，执行层各自竞争。</p>
+<p>在新架构里，Sky 的职能更像一家中央银行和批发流动性发行方，而 Spark 作为其中一个 subDAO，扮演商业银行的角色：从 Sky 提取流动性储备，再部署到商业借贷活动中。资产端由两部分构成：以美国国债为代表的现实世界资产（RWA）提供基础收益，比特币和 ETH 的超额抵押借贷提供加密侧的收益。</p>
+
+<h2>二、Spark 的产品矩阵</h2>
+<p>Spark 起步于一个内部借贷市场 SparkLend——一个对标 Compound 和 Aave 的链上货币市场，负责资产负债表里加密抵押借贷的部分，模式源自 Maker 早期的 CDP。此后产品线一路扩张。</p>
+<p>Spark Savings 是叠在 USDC 和 USDT 之上的金库产品，目前 USDC 利率 3.6%、USDT 利率 2.75%。它的本质是一个资产配置器：存款人把钱交给 Spark，Spark 在 DeFi、CeFi 和 TradFi 之间分配资金，优化风险调整后的收益。</p>
+<p>更近期的两条线是机构业务。机构借贷与合格托管方 Anchorage 合作，让机构用资产负债表上的比特币做抵押融资；Spark Prime 则是一项 CeFi 主经纪业务，让对冲基金把 DeFi 与 CeFi 的仓位统一起来做保证金管理，现在已经支持 TradFi 场外——恰好赶上传统股票成为本轮大热叙事，甚至能连接到 Hyperliquid 这样的现代 DeFi 场所提供流动性。</p>
+
+<h2>三、KelpDAO 攻击：DeFi 受挫，Spark 反向增长</h2>
+<p>2026 年 4 月中旬前后，KelpDAO 遭到攻击。从 DeFi Llama 的数据看，这次事件对整个 DeFi 是一次重击，但 Spark 是个醒目的例外：以 ETH 计价的 TVL 相比 4 月中旬上涨了约 50%，在 7 月初一度高出 80%。</p>
+<p>Sam 的态度很克制。他先声明这类事件对整个行业是不幸的：「we're not like wanting these events to happen even though it is relatively speaking … good for Spark」——即便它对 Spark 相对有利，团队也并不乐见其发生。随后他解释了一个反常现象背后的三个原因。</p>
+<p>第一，Spark 没有像其他市场那样参与 looping（循环借贷加杠杆）。第二，SparkLend 自 2023 年上线后不久，就在所有市场设置了 rate limits。被认定与朝鲜有关的攻击者，目标是尽快把赃款换成 ETH、比特币等去中心化资产，他们只会走最容易通过的路——限速让 SparkLend 变成了一条难走的路。正常借款人愿意花时间慢慢取款；急着把钱马上拿走的，通常有问题。</p>
+
+<h2>四、三重预言机与极简抵押品</h2>
+<p>第三道防线是价格预言机。Spark 同时运行 Chainlink、Redstone 和 Chronicle 三家预言机，任何一家报出错误价格，市场仍然保持活性（liveness）。再加上 rate limits 的约束，即使某个抵押资产出了事故，能从 SparkLend 抽走的资本也非常有限。</p>
+<p>抵押品策略同样保守。SparkLend 刻意保持一个极简的抵押品集合——目前只有大约五种：cbBTC、WBTC、Lido stETH 和 EtherFi ETH。Sam 的算盘是：这些资产已经覆盖了市场上大部分有机使用，而每一种新增资产都是尾部风险。新资产上线时先套用保守的风险政策，看到真实的采用与需求增长，再逐步放宽。</p>
+<p>这套设计不是没有代价。Sam 承认，保守路线有时会牺牲业务增长和收入机会。但他把这笔账记在长期：这是新行业，而团队知道如何按最佳实践做事。</p>
+
+<h2>五、rsETH 提前下车：一月离场，四月免灾</h2>
+<p>Spark 能在 KelpDAO 事件中全身而退，还有一个具体而关键的决策：rsETH——KelpDAO 上后来被操纵的那个资产——早在今年 1 月就被 Spark 移出了市场，属于常规风险降低策略的一部分，而非应急动作。</p>
+<p>退一步看，即使当时没有下车，Spark 的参数也足够保守：rsETH 从未被加入 efficiency mode（ETH 高杠杆循环），只被允许用于借稳定币，LTV 控制在 60-70% 区间。Sam 的判断是，那样的话损失也可能是零或极小，且容易追回。</p>
+<p>这个决策的底层逻辑是一套持续运行的监控：团队持续观察每个资产的流动性与使用量，用得少的资产意味着市场中存在没人需要的尾部风险，就果断 off-board。其他借贷市场也有类似的新旧交替，但区别在于参数纪律——尤其是对未经检验的新资产，始终保持最保守的风险政策，直到它被证明是市场的主食。</p>
+
+<h2>六、治理双轨：一个月常规流程与应急通道</h2>
+<p>Phoenix Labs 是运营 Spark 的中心化实体，但下车 rsETH 这类决策必须走链上治理。常规流程大约需要一个月：Phoenix Labs 提出提案，先经过风险委员会——三个团队同时审查提案是否合理——然后交给 SPK 持有者做快照投票，最后由 Sky 做最终核查。Sky 的角色是守门人：只要 Spark 遵守其制定的规则与风险框架，提案就会放行。</p>
+<p>一个月对常规风险调整够用，对突发攻击显然太慢。为此存在第二条通道：应急 multisig 可以暂停协议——它不托管资产，作用只是「暂停、喘口气、看看发生了什么」。所有协议变更都在 timelock 之后生效：托管资产却没有时间锁，本身就很危险，它会让你成为朝鲜的目标，Drift 攻击就是前车之鉴。真正需要紧急管理变更时，还有加速程序，可以在大约一两天内完成。</p>
+
+<h2>七、保守 DNA：不追热点，慢速复利</h2>
+<p>Sam 把这条路线追溯回 2019 年 Maker 上线：团队从不追逐最新热点，2021 年的狂热叙事基本被避开。每个牛市都有「新口味」被认为要超越他们，但时间站在保守者这边。</p>
+<blockquote>
+  <span class="en">"Just take the conservative view and compound the growth slowly over time has been the winning strategy."</span>
+  <span class="zh">「只要坚持保守观点，让增长随时间慢慢复利，这就是制胜策略。」</span>
+</blockquote>
+<p>结果支持这个判断：Sky 整体的稳定币存款超过 100 亿美元，以存款规模计，它是这个行业里遥遥领先的第一。</p>
+
+<h2>八、公平收益率之争：市场说了算，但要讲清风险</h2>
+<p>AI 让攻击者更强之后，行业开始争论：DeFi 该给存款人多少「公平收益率」，才能补偿把资产放上链的风险？Sam 属于市场派：市场利率是多少就是多少，人们愿意接受这个风险即可。</p>
+<p>他认为真正缺失的一环是 DeFi 评级。用户习惯只盯着最高的 APY，却不理解结构背后的风险。Spark 一直在推动评级体系，让存款人先知道自己面对什么——最终的风险判断，仍然是每个个体自己的事。</p>
+<p>至于收益率为何贴着 SOFR，答案在供给侧：链上的稳定币流动性过剩、四处寻找收益，利率自然被压缩。Sky 的资产负债表上有约 100 亿美元，其中约 40% 部署到各类借贷，大量资金以闲置流动性存在，收益率自然向基准收敛。Sam 乐见这种收敛：随着更多稳定币用例上链，一个随时可取的高流动性基础收益是好事。Spark 想做的，就是这件事的保守版本——一个可以安心停放现金的地方，以现金、T-bills 和加密抵押借贷为主，且对 ETH/BTC 抵押品从未有过重大损失事件。</p>
+
+<h2>九、AI 双刃剑：危险峰值之后，是更好的位置</h2>
+<p>谈到 AI 威胁，Sam 的判断在悲观与乐观之间找到了平衡点：当下处于「危险的峰值期」，但行业最终会走向更好的地方，因为 AI 既能用于进攻，也能用于防御，而形式化验证是防御的终极方向。</p>
+<blockquote>
+  <span class="en">"The AI is not like a magical thing that can just do anything. It does follow the rules of physics and so we do know how to deal with it."</span>
+  <span class="zh">「AI 不是能随心所欲的神奇魔法，它同样受物理规律的约束——所以我们知道如何应对它。」</span>
+</blockquote>
+<p>一个反直觉的事实：智能合约本身相当安全，恰恰因为代码足够简单。看看那些重大黑客案，几乎全是 OPSEC（操作安全）失守。出事的往往是存在最久的软件——代码库百万行级，攻击面巨大，总有人会犯错；而现代智能合约刻意保持极简，人类审计师审完后可以高置信。在 Phoenix Labs 内部，人类审计师之外已经加上 AI 补强，AI 的能力开始追平最顶尖的人类审计师。叠加形式化验证，Sam 相信智能合约将被巩固为托管资产最安全的方式之一。</p>
+
+<h2>十、稳定币大战：Coinbase 打法被复制</h2>
+<p>稳定币正成为加密行业下一个大规模获客工具，随之而来的是各路玩家的混战。Robinhood 的 Earn 产品给 USDC 开出 7% 收益，而 Spark 被选为支撑这个 7% vault 的三家资产发行方之一，提供跨链收益。</p>
+<p>Sam 看到的是一套被反复复制的 playbook——由 Coinbase 开创：分发渠道 + 链 + 自家稳定币。Robinhood、Stripe、Tempo 都在重复这个模式，每家都推出自己的稳定币，Coinbase 也宣布了 OUSD。共同的目标很明确：拿走用户使用自家稳定币所产生的净息差（NIM）。</p>
+<p>Spark 的卡位利用了自身独特的资产负债表位置：Spark 与 Hyperliquid 加起来，让 Sky 成为链上最大的 USDC 持有方之一。这些稳定币本来就是闲置库存，因此做市对 Spark 来说几乎没有资本成本。</p>
+
+<h2>十一、Stablecoin FX Layer 与货币的单一性</h2>
+<p>基于这个位置，Spark 与 Uniswap 合作推出了 Stablecoin FX Layer。它给新稳定币发行方同时提供收益与做市，让它们迅速起规模：持有 USDC 的用户无需离开链上就能换入新币，大额兑换不用过慢的银行系统，也不用付赎回费。</p>
+<blockquote>
+  <span class="en">"There is not a cost of capital basically to be doing this sort of market making."</span>
+  <span class="zh">「做这类做市业务基本上没有资本成本。」</span>
+</blockquote>
+<p>在 Sam 看来，这是 DeFi 乐高的胜利：所有积木拼在一起，做出了比传统做市商与流动性体系更优的产品。它最终指向一个更大的愿景——货币的单一性。传统银行体系里，美联储背书所有美元存款，银行间存款大体可互换；DeFi 里不存在这种属性。Sky 与 USDS 正在成为美元系稳定币之间的连接层，而 Spark 提供自动配置、做市与市场制造的基础设施。</p>
+
+<h2>十二、SPK 代币与增长数据</h2>
+<p>关于 SPK 代币，Sam 先给出一个宏观判断：代币世界正在合并。除了比特币、ETH、SOL 等少数价值存储例外，其余代币都会收敛到 DCF 估值——至少那些结构像股权的。Spark 是盈利的协议：所有数字公开在 data.spark.fi，每季度发布财报，任何人都可以自己给代币定价；超额利润用于回购，已经由治理投票通过。底层是一家基本盘扎实的公司，所以他不担心短期价格。</p>
+<p>增长数据也支持这个说法。机构借贷去年底上线，已经放款 2.5 亿美元，管道强劲，预计年底做到 10 亿甚至更多。Spark Savings USDT 已经是市场上流动性最好的 USDT 产品之一，Sam 预计它近期会成为市场领导者。所有产品线都在全面增长。</p>
+
+<h2>核心金句</h2>
+<div class="quotes">
+  <div class="q blue">
+    <div class="en">"The AI is not like a magical thing that can just do anything. It does follow the rules of physics."</div>
+    <div class="ctx">— 谈 AI 威胁：它受物理规律约束，所以有办法应对</div>
+  </div>
+  <div class="q green">
+    <div class="en">"We're going to move actually to a better place ultimately."</div>
+    <div class="ctx">— 谈 AI 时代的 DeFi 安全：AI 既能进攻也能防守，行业终将更强</div>
+  </div>
+  <div class="q yellow">
+    <div class="en">"Just take the conservative view and compound the growth slowly over time has been the winning strategy."</div>
+    <div class="ctx">— 谈 Spark 的保守 DNA</div>
+  </div>
+  <div class="q red">
+    <div class="en">"The core DAO no longer has to make decisions about what to do. It will just set the rules and the risk policy that the subDAOs have to follow."</div>
+    <div class="ctx">— 谈 subDAO 治理模型</div>
+  </div>
+  <div class="q purple">
+    <div class="en">"There is not a cost of capital basically to be doing this sort of market making."</div>
+    <div class="ctx">— 谈 Stablecoin FX Layer 的天然优势</div>
+  </div>
+  <div class="q yellow">
+    <div class="en">"Excess profits will go … to buybacks … in the token."</div>
+    <div class="ctx">— 谈 SPK 代币的价值捕获，已由治理投票通过</div>
+  </div>
+</div>
+
+<footer>
+  本文基于 Unchained 播客节目《Sam MacPherson on Why Spark Benefited So Much From the KelpDAO Hack》整理（主持：Laura Shin，嘉宾：Sam MacPherson）。所有引言均来自节目转写稿；概括性表述已标注为作者概括。<br><br>
+  原始节目：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3">点击收听</a> · 本节目不构成投资建议。
+</footer>
+
+</div>
+</body>
+</html>

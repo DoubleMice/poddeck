@@ -1,0 +1,28 @@
+id: f995195e-95c0-11f1-b386-f333ad2528cc
+source: unchained
+title: "Sam MacPherson on Why Spark Benefited So Much From the KelpDAO Hack"
+guest: "Sam MacPherson"
+guest_role: "Spark 联合创始人兼 CEO"
+published: 2026-08
+duration: 35m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3
+thumbnail: https://megaphone.imgix.net/podcasts/f995195e-95c0-11f1-b386-f333ad2528cc/image/71421d97ba5f2948a4c4369f5a29a857.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+status: generated
+tags:
+  - ai-safety
+  - startup
+  - ceo
+  - interview
+  - quick-take
+  - strategic
+summary: |
+  Spark 联合创始人兼 CEO Sam MacPherson 在 Unchained 剖析了 KelpDAO 攻击后 Spark 为何逆势受益：不做循环借贷、全市场 rate limits、三重冗余预言机，以及 rsETH 在 1 月被提前移出市场的风控纪律。他还解读了 Sky 央行—Spark 商业银行的 subDAO 架构、AI 时代的 DeFi 安全（形式化验证与 OPSEC）、稳定币大战的 playbook、Stablecoin FX Layer 的零资本成本做市逻辑，以及 SPK 代币的回购与基本面路线。
+core_ideas:
+  - 'Sky 前身是 MakerDAO：两次重构后 Sky 扮演央行与批发流动性发行方，Spark 作为 subDAO 扮演商业银行，从 Sky 提取流动性储备投入商业借贷（RWA 国债 + BTC/ETH 超额抵押）'
+  - 'KelpDAO 攻击中 Spark 幸免的原因：不参与循环借贷、2023 年起全市场 rate limits、三重冗余预言机（Chainlink/Redstone/Chronicle）；rsETH 早在 1 月就被常规 off-board，从未进入高杠杆 efficiency mode，LTV 控制在 60-70%'
+  - '治理双轨：常规流程约一个月（风险委员会三团队审查 → SPK 快照投票 → Sky 终审）；应急靠 multisig 暂停 + timelock，快速程序只需 1-2 天'
+  - 'AI 威胁的双刃剑判断：当下处于危险峰值期，但 AI 也能用于防御；重大黑客案几乎全是 OPSEC 失守而非合约漏洞，形式化验证将把智能合约变成最安全的托管方式之一'
+  - '稳定币大战的卡位：Robinhood/Stripe/Tempo 复制 Coinbase 的「分发+链+稳定币」打法，Spark 作为 Robinhood 7% vault 的三家资产发行方之一，用收益层与 Stablecoin FX Layer（零资本成本做市）切入，推动美元的「货币单一性」'
+  - 'SPK 代币路线：大部分代币将收敛到 DCF 估值，Spark 盈利且公开 data.spark.fi 财报，超额利润回购已通过治理；机构借贷从 2.5 亿美元向年底 10 亿+ 管道增长'
+article_path: episodes/f995195e-95c0-11f1-b386-f333ad2528cc/article.html
+base: /episodes/f995195e-95c0-11f1-b386-f333ad2528cc/

@@ -1,13 +1,13 @@
 source: acquired
-refreshed_at: 2026-08-12T03:49:05.627Z
+refreshed_at: 2026-08-12T18:21:16.431Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
 done: 0
-pending: 0
+pending: 1
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
@@ -107,12 +107,9 @@ episodes:
       ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
       and is intended for informational and entertainment purposes only. You should do your own research and make your
       own independent decisions when considering any financial transactions.
-    status: transcribe_failed
+    status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-10T18:19:24.872Z
-    transcript_completed_at: 2026-08-10T18:21:05.477Z
-    transcript_error: "MiMo transcription failed: 400 {\"error\":{\"code\":\"400\",\"message\":\"Requested token count
-      exceeds the model's maximum context length of 8192 tokens. You requested a total of 9764 tokens: 5668 tokens from
-      the input messages and 4096 tokens for the completion. Please reduce the number of tokens in the input messages or
-      the completion to fit within the limit.\",\"param\":\"\",\"type\":\"BadRequestError\"}}"
+    transcript_submitted_at: 2026-08-12T18:26:50.567Z
+    transcript_completed_at: 2026-08-12T18:47:05.263Z
+    transcript_job_id: 4e2fd470-d786-4bce-854d-5d6ebcccadd6_a52b518ec5664057a3193e8feacf4554,85dc70a4-3fdd-43e1-9fbc-7e171a4d48b9_060d5e7da4ee4b52854787d49d16b0cc,045737d4-be78-49bc-807d-bfc89474cb9d_7ed2f2fbc3de437f9185fba032103100,7c295df1-e0ed-4bdd-b6bd-65c812b54467_8a9c08eff362484285ecf10e92014431,53d668e1-94e8-4a21-8035-a38be88daf64_f8fba7c93d77447fa1496b85b9b8e173,c0a0d25d-a191-4c84-ae64-183927b419f5_050c9121474442cd9d9bd786cbe54a77,b5d185c2-f6c7-49f6-821e-a66a4740d785_336198e5faef490f937376448166ffa7,2fb1ad02-c173-43f9-90c0-11508b1039d4_bbee668ed3c24a61836216b84f20dd59,9d6e10b7-e12f-4c83-80ee-ebb30eea4d32_6ee54267829341f6a775eb1ee3f5a9b2,8daac816-672b-4a7f-bc17-1fda20889ebc_38e9f9dfbc834c98856253f444d608d9,60c896bd-21d0-4502-81b4-5bf05f2d7551_ad2069f56f364fe085d0232ff0371969,ea2ad133-0a39-48fc-afde-3353bb2f5564_75cd218d63474e058754bd2485263a58,e13f198a-cb6b-404d-a528-c77739bcdf5a_bc65de59f7824f5cab8f46d5762dfdce,b17c2a06-824d-4d0d-bbd2-3a4ec1388b17_6d2d8f992e534865a31097bab95ab40f,242011a4-26d3-4580-b7c4-f497ec6add2c_c42c7e1c97374528bdca10a1068a64f1,d6f318de-6c15-401a-8735-57e52858b806_43f49cae72e34c90813809e05dcad8c6,190d3dff-c695-4c96-af13-83f802cae88f_143dde9d9ea7458b9289cb0010ec756f,b16ca82b-e932-4a20-98ba-00539624fba2_fb73f53a7295488786bf79c7c9416890,2ae9bf59-c078-49d4-8ee3-4b292e8c367a_6e874b5799c6494e8564d96472fe46b2

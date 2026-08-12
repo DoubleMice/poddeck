@@ -15767,3 +15767,462 @@ jobs:
       model's maximum context length of 8192 tokens. You requested a total of 9764 tokens: 5668 tokens from the input
       messages and 4096 tokens for the completion. Please reduce the number of tokens in the input messages or the
       completion to fit within the limit.\",\"param\":\"\",\"type\":\"BadRequestError\"}}"
+  - key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3:mimo:2026-08-12T18:21:17.501Z:chunk:0
+    parent_key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3
+    attempt_key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3:mimo:2026-08-12T18:21:17.501Z
+    provider: mimo
+    id: f995195e-95c0-11f1-b386-f333ad2528cc
+    source: unchained
+    title: Sam MacPherson on Why Spark Benefited So Much From the KelpDAO Hack
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3
+    task_id: 84450c06-4808-4b3a-8a28-2c05f2c537d1_aef33560e8fe4d73acbb74d06b184229
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:21:17.501Z
+    updated_at: 2026-08-12T18:22:08.565Z
+    completed_at: 2026-08-12T18:22:08.565Z
+  - key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3:mimo:2026-08-12T18:21:17.501Z:chunk:1
+    parent_key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3
+    attempt_key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3:mimo:2026-08-12T18:21:17.501Z
+    provider: mimo
+    id: f995195e-95c0-11f1-b386-f333ad2528cc
+    source: unchained
+    title: Sam MacPherson on Why Spark Benefited So Much From the KelpDAO Hack
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3
+    task_id: ea4306d4-7e6c-42d4-b918-363c5306e5d1_674e3b3480b74d1bb6ce797579547a5f
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:21:17.501Z
+    updated_at: 2026-08-12T18:22:48.027Z
+    completed_at: 2026-08-12T18:22:48.027Z
+  - key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3:mimo:2026-08-12T18:21:17.501Z:chunk:2
+    parent_key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3
+    attempt_key: unchained:f995195e-95c0-11f1-b386-f333ad2528cc:20260811:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3:mimo:2026-08-12T18:21:17.501Z
+    provider: mimo
+    id: f995195e-95c0-11f1-b386-f333ad2528cc
+    source: unchained
+    title: Sam MacPherson on Why Spark Benefited So Much From the KelpDAO Hack
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8833824968.mp3
+    task_id: 4b18323d-4901-443f-bc0e-81d4ce9e06f8_1d51cc6257a94415ba36469a08dad98d
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:21:17.501Z
+    updated_at: 2026-08-12T18:23:05.927Z
+    completed_at: 2026-08-12T18:23:05.927Z
+  - key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z:chunk:0
+    parent_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    attempt_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z
+    provider: mimo
+    id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
+    source: sv101
+    title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    task_id: 9361e740-01c8-40f2-a9bd-4517e70d8d99_7f46ad295c444a46add6b1524c64ea29
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:23:06.157Z
+    updated_at: 2026-08-12T18:24:09.176Z
+    completed_at: 2026-08-12T18:24:09.176Z
+  - key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z:chunk:1
+    parent_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    attempt_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z
+    provider: mimo
+    id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
+    source: sv101
+    title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    task_id: 83658b79-58d0-4e0f-9b4e-d483b9cabb62_951b854beaf04bd69a891b15b2eb0f9b
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:23:06.157Z
+    updated_at: 2026-08-12T18:25:00.554Z
+    completed_at: 2026-08-12T18:25:00.554Z
+  - key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z:chunk:2
+    parent_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    attempt_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z
+    provider: mimo
+    id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
+    source: sv101
+    title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    task_id: 5405a573-ddf5-4efc-9217-3e7a5a8ffd25_867eebd7242641848cf8bbb945c815ea
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:23:06.157Z
+    updated_at: 2026-08-12T18:25:46.175Z
+    completed_at: 2026-08-12T18:25:46.175Z
+  - key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z:chunk:3
+    parent_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    attempt_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z
+    provider: mimo
+    id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
+    source: sv101
+    title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    task_id: 985458cd-0915-44c6-b16a-d76808af66c7_3956b399a8074037836ef45314751116
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:23:06.157Z
+    updated_at: 2026-08-12T18:26:37.680Z
+    completed_at: 2026-08-12T18:26:37.680Z
+  - key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z:chunk:4
+    parent_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    attempt_key: sv101:9e923c4c-1c87-499b-90a4-9a21cc83e4b1:20260811:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3:mimo:2026-08-12T18:23:06.157Z
+    provider: mimo
+    id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
+    source: sv101
+    title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
+    task_id: d12914ad-8a0c-4927-bc90-42228c720695_2197d211c5154572bed2c01c5faba728
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:23:06.157Z
+    updated_at: 2026-08-12T18:26:50.389Z
+    completed_at: 2026-08-12T18:26:50.389Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:0
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 4e2fd470-d786-4bce-854d-5d6ebcccadd6_a52b518ec5664057a3193e8feacf4554
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:28:52.808Z
+    completed_at: 2026-08-12T18:28:52.808Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:1
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 85dc70a4-3fdd-43e1-9fbc-7e171a4d48b9_060d5e7da4ee4b52854787d49d16b0cc
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:29:45.646Z
+    completed_at: 2026-08-12T18:29:45.646Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:2
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 045737d4-be78-49bc-807d-bfc89474cb9d_7ed2f2fbc3de437f9185fba032103100
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:30:34.025Z
+    completed_at: 2026-08-12T18:30:34.025Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:3
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 7c295df1-e0ed-4bdd-b6bd-65c812b54467_8a9c08eff362484285ecf10e92014431
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:31:22.531Z
+    completed_at: 2026-08-12T18:31:22.531Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:4
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 53d668e1-94e8-4a21-8035-a38be88daf64_f8fba7c93d77447fa1496b85b9b8e173
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:31:59.676Z
+    completed_at: 2026-08-12T18:31:59.676Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:5
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: c0a0d25d-a191-4c84-ae64-183927b419f5_050c9121474442cd9d9bd786cbe54a77
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:32:38.901Z
+    completed_at: 2026-08-12T18:32:38.901Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:6
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: b5d185c2-f6c7-49f6-821e-a66a4740d785_336198e5faef490f937376448166ffa7
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:37:43.281Z
+    completed_at: 2026-08-12T18:37:43.281Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:7
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 2fb1ad02-c173-43f9-90c0-11508b1039d4_bbee668ed3c24a61836216b84f20dd59
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:38:30.617Z
+    completed_at: 2026-08-12T18:38:30.617Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:8
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 9d6e10b7-e12f-4c83-80ee-ebb30eea4d32_6ee54267829341f6a775eb1ee3f5a9b2
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:39:22.158Z
+    completed_at: 2026-08-12T18:39:22.158Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:9
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 8daac816-672b-4a7f-bc17-1fda20889ebc_38e9f9dfbc834c98856253f444d608d9
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:40:20.797Z
+    completed_at: 2026-08-12T18:40:20.797Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:10
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 60c896bd-21d0-4502-81b4-5bf05f2d7551_ad2069f56f364fe085d0232ff0371969
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:41:09.438Z
+    completed_at: 2026-08-12T18:41:09.438Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:11
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: ea2ad133-0a39-48fc-afde-3353bb2f5564_75cd218d63474e058754bd2485263a58
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:41:54.071Z
+    completed_at: 2026-08-12T18:41:54.071Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:12
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: e13f198a-cb6b-404d-a528-c77739bcdf5a_bc65de59f7824f5cab8f46d5762dfdce
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:42:36.946Z
+    completed_at: 2026-08-12T18:42:36.946Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:13
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: b17c2a06-824d-4d0d-bbd2-3a4ec1388b17_6d2d8f992e534865a31097bab95ab40f
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:43:26.739Z
+    completed_at: 2026-08-12T18:43:26.739Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:14
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 242011a4-26d3-4580-b7c4-f497ec6add2c_c42c7e1c97374528bdca10a1068a64f1
+    submission_mode: data_uri
+    chunk_index: 14
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:44:13.981Z
+    completed_at: 2026-08-12T18:44:13.981Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:15
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: d6f318de-6c15-401a-8735-57e52858b806_43f49cae72e34c90813809e05dcad8c6
+    submission_mode: data_uri
+    chunk_index: 15
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:45:07.666Z
+    completed_at: 2026-08-12T18:45:07.666Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:16
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 190d3dff-c695-4c96-af13-83f802cae88f_143dde9d9ea7458b9289cb0010ec756f
+    submission_mode: data_uri
+    chunk_index: 16
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:45:56.456Z
+    completed_at: 2026-08-12T18:45:56.456Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:17
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: b16ca82b-e932-4a20-98ba-00539624fba2_fb73f53a7295488786bf79c7c9416890
+    submission_mode: data_uri
+    chunk_index: 17
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:46:48.299Z
+    completed_at: 2026-08-12T18:46:48.299Z
+  - key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z:chunk:18
+    parent_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    attempt_key: acquired:dc17bee9-e7e2-4c06-afdd-e80244a0e9db:20260810:https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3:mimo:2026-08-12T18:26:50.567Z
+    provider: mimo
+    id: dc17bee9-e7e2-4c06-afdd-e80244a0e9db
+    source: acquired
+    title: "Disney: The Renaissance and the Empire"
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/4bcdc326/22e5d62f.mp3
+    task_id: 2ae9bf59-c078-49d4-8ee3-4b292e8c367a_6e874b5799c6494e8564d96472fe46b2
+    submission_mode: data_uri
+    chunk_index: 18
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-12T18:26:50.567Z
+    updated_at: 2026-08-12T18:47:05.263Z
+    completed_at: 2026-08-12T18:47:05.263Z
