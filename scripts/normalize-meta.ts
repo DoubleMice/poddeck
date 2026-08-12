@@ -1,27 +1,16 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
-import { parse, stringify } from 'yaml'
 import { log } from './lib/log.ts'
+import { normalizeYamlText } from './lib/yaml-repair.ts'
 
 const ROOT = process.cwd()
 const EPISODES_DIR = resolve(ROOT, 'episodes')
 const fix = process.argv.includes('--fix')
 
-function repairYamlText(text: string): string {
-  return text
-    .replace(/\\'/g, "'")
-}
-
 function normalizeMeta(path: string): boolean {
   const original = readFileSync(path, 'utf-8')
-  try {
-    parse(original)
-    return false
-  } catch {}
-
-  const repaired = repairYamlText(original)
-  const parsed = parse(repaired)
-  const normalized = stringify(parsed, { indent: 2, lineWidth: 120 })
+  const normalized = normalizeYamlText(original)
+  if (normalized === null) return false
   if (fix) writeFileSync(path, normalized, 'utf-8')
   return true
 }

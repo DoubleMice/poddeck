@@ -20,6 +20,7 @@
     "normalize:meta": "tsx scripts/normalize-meta.ts",
     "e2e:transcription": "tsx scripts/e2e-transcription.ts",
     "test:mimo": "tsx --test scripts/lib/mimo.test.ts",
+    "test:yaml": "tsx --test scripts/lib/yaml-repair.test.ts",
     "verify:routing": "tsx scripts/verify-slide-routing.ts",
     "preview": "npx --yes serve@14.2.6 dist -p 4173",
     "dev:landing": "echo 'TODO: P4'",

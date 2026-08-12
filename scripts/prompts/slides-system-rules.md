@@ -197,7 +197,9 @@ The `tags` field MUST only contain values from `tags.yml`. Do not invent tags.
 YAML safety for `core_ideas`:
 - If a list item contains `:` followed by a space, wrap the entire item in single quotes.
 - If a list item contains both a speaker label and a technical phrase with colons, wrap the entire item in single quotes.
+- Inside a single-quoted scalar, encode every apostrophe as two apostrophes: write `D''Amaro`, not `D'Amaro` or `D\'Amaro`.
 - Never write `- Speaker: claim` as an unquoted YAML list item.
+- Before finishing, parse `meta.yml` (for example with `node -e "const fs=require('fs'); const YAML=require('yaml'); YAML.parse(fs.readFileSync(process.argv[1], 'utf8'))" episodes/<id>/meta.yml`) and fix any syntax error.
 
 ## RULE 10 — Article HTML generation
 
