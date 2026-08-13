@@ -1,0 +1,31 @@
+id: 0c1a1150-9289-11f1-bf33-e3697544f1ef
+source: unchained
+title: "Inside the Coldcard Hack That Drained Over $100 Million in Bitcoin: Uneasy Money"
+guest: "Sunny Kim、Mike（EtherFi）"
+guest_role: "3Fold Labs 联合创始人 / EtherFi 团队"
+published: 2026-08
+duration: 1h7m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8969627964.mp3
+thumbnail: https://megaphone.imgix.net/podcasts/0c1a1150-9289-11f1-bf33-e3697544f1ef/image/a4dcf5431780edfce8b9670cd3f55e67.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+status: generated
+tags:
+  - hardware
+  - ai-products
+  - coding-agents
+  - product-management
+  - panel
+  - founder
+  - quick-take
+  - technical
+  - strategic
+summary: |
+  本期 Unchained Money 围绕三件事展开：Coldcard 硬件钱包 2021 年埋下的熵漏洞五年后才被发现，超过 1 亿美元比特币被盗，且损失将持续数周甚至数月；trade.xyz 上一笔 SK Hynix 盘前真实交易被判定"不该发生"，引出"资产价格只是规则构造"的 DeFi 哲学难题；以及 EIP-8361 削减发行量提案——48 小时评论期、零沟通，而削减发行只会让质押收益率跌到 20 基点、逼出数百亿美元 ETH 抛压。主持人 Kay、白帽安全专家 Tay 与嘉宾 Sunny Kim、Mike 给出了一致的判断：熵出错就该"自焚"，货币政策没坏就别动它。
+core_ideas:
+  - Coldcard 熵漏洞：2021 年埋下、五年后才被发现，超过 1 亿美元 BTC 被盗——攻击需要算力"挖掘"，收割是一波一波的，损失还会持续数周甚至数月
+  - 为什么最痛：Coldcard 的卖点就是不保留用户数据（"我们不是 Ledger"），没有任何渠道通知受害者；受害者恰是最相信自托管的硬核比特币人
+  - 这次不是朝鲜：这类攻击需要巨额算力，首波更可能是发现代码库问题的个人；"AI 两分钟找到 bug"是假象，AI 找到的是别人的 Reddit 帖子
+  - 代码为什么藏了五年：随机数实现在仓库间"跳"（Python 到 C/Go），fallback 链掩盖错误——Matthew Green 的名言：拿不到随机性就该"barf and catch fire"
+  - SK Hynix 盘前交易引出哲学问题：资产没有"真实价格"，价格只是规则构造；UI 运营者应该直接拒绝疯狂交易（Aave 上 50M ETH 换 500 美元事件）
+  - EIP-8361 削减发行量之争：48 小时评论期、零沟通，惹怒整个生态；削减发行会让质押收益率从 2.5% 跌到 20 基点、逼出数百亿美元 ETH 抛压——"最强的方案就是别动它"
+article_path: episodes/0c1a1150-9289-11f1-bf33-e3697544f1ef/article.html
+base: /episodes/0c1a1150-9289-11f1-bf33-e3697544f1ef/

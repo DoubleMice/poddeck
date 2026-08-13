@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside the Coldcard Hack：5 年前的熵漏洞，如何偷走 1 亿美元比特币 — PodDeck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1f2937;
+    background: #fafafa;
+    padding: 24px 16px 64px;
+  }
+  article { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 40px 36px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+  @media (max-width: 640px) { article { padding: 24px 18px; } body { font-size: 16px; } }
+  header { border-bottom: 1px solid #e5e7eb; padding-bottom: 24px; margin-bottom: 28px; }
+  .kicker { font-size: 13px; letter-spacing: 0.08em; color: #6b7280; text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-size: 26px; line-height: 1.4; margin-bottom: 14px; color: #111827; }
+  .meta { font-size: 14px; color: #6b7280; }
+  h2 { font-size: 21px; margin: 40px 0 14px; color: #111827; padding-left: 12px; border-left: 4px solid #3b82f6; }
+  p { margin-bottom: 14px; }
+  .why { margin-bottom: 8px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+  @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+  .card { padding: 12px 14px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+  .card b { display: block; margin-bottom: 4px; font-size: 15px; }
+  .c-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .c-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .c-yellow { background: #fffbeb; border-left: 4px solid #f59e0b; }
+  .c-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .c-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .c-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  blockquote {
+    margin: 18px 0; padding: 14px 18px; border-left: 4px solid #3b82f6;
+    background: #eff6ff; border-radius: 0 8px 8px 0; font-style: italic; font-size: 16px;
+  }
+  blockquote .src { display: block; margin-top: 6px; font-style: normal; font-size: 13px; color: #6b7280; }
+  .gloss { font-size: 14px; color: #6b7280; background: #f9fafb; border-radius: 6px; padding: 8px 12px; margin: 10px 0; }
+  .quotes .q { margin-bottom: 12px; }
+  .q .qtext { font-style: italic; }
+  .q .qsrc { display: block; font-size: 13px; color: #6b7280; margin-top: 4px; font-style: normal; }
+  footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #6b7280; }
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <div class="kicker">Unchained Money · Unchained 播客</div>
+  <h1>Inside the Coldcard Hack：5 年前的熵漏洞，如何偷走 1 亿美元比特币</h1>
+  <div class="meta">
+    嘉宾：Sunny Kim（3Fold Labs 联合创始人）、Mike（EtherFi）｜主持：Kay 与白帽安全专家 Tay｜2026 年 8 月｜时长 1 小时 7 分钟
+  </div>
+</header>
+
+<section class="why">
+  <h2>为什么这期值得关注</h2>
+  <p>这一期节目同时摊开了三件正在加密世界发酵的大事：一个藏在硬件钱包里五年、刚刚爆发的熵漏洞，一场关于"资产价格是否存在"的哲学辩论，以及一份只有 48 小时评论期的以太坊货币政策提案。三个话题的共同点是：系统里最不起眼的一处设计，最终决定了所有人的钱是否安全。</p>
+  <div class="cards">
+    <div class="card c-blue"><b>一个藏了 5 年的熵漏洞</b>Coldcard 硬件钱包 2021 年引入的随机数缺陷，五年后才被发现；五年间的种子和私钥正在被攻击者"挖掘"。</div>
+    <div class="card c-red"><b>损失已超 1 亿美元</b>Galaxy Research 追踪到 4 波攻击、1600-1800 枚 BTC 被盗；受害者恰是信奉自托管的硬核比特币人。</div>
+    <div class="card c-yellow"><b>这次不是朝鲜，那是谁？</b>Tay 判断首波攻击者可能只是发现 bug 的普通人；"AI 两分钟找到 bug"的说法也站不住脚。</div>
+    <div class="card c-green"><b>一个 bug 为什么能藏 5 年</b>代码在仓库间"跳"、fallback 层层掩盖错误——Matthew Green 的名言：出错就该"自焚"。</div>
+    <div class="card c-purple"><b>"价格"到底存不存在</b>trade.xyz 上一笔 SK Hynix 盘前真实交易被判定"不该发生"，引出 DeFi 的哲学问题：资产没有"真实价格"。</div>
+    <div class="card c-orange"><b>EIP-8361 削减发行量风波</b>48 小时评论期、零沟通，把以太坊生态惹毛了——"最强的方案就是别动它"。</div>
+  </div>
+</section>
+
+<section>
+  <h2>一个 2021 年埋下的 bug，为什么今天才爆炸</h2>
+  <p>Coldcard 是硬件钱包市场里的一个小玩家，但它的用户群非常特别：一群最相信自托管、最愿意把私钥握在自己手里的硬核比特币人。硬件钱包最重要的工作之一，就是生成安全的私钥和助记词，而这依赖一样东西——熵，也就是真正的随机性。Tay 用一句话概括了这门学问：<blockquote>"If you don't do the math good enough, then everyone gets wrecked. The end."<span class="src">— Tay，谈熵数学失败的后果</span></blockquote></p>
+  <p>这类事故在加密世界并不罕见，早年自研密码学时尤其多发，以太坊生态的 Profanity 漏洞就是同类问题。但 Coldcard 这次格外离谱：随机数的获取方式在 2021 年就出了问题，代码带着这个 bug 运行了整整五年，才被第一个攻击者发现。到节目录制时，距首次利用只有六七天，整个攻击已经变成了"自由混战"——因为过去五年里生成的所有种子和私钥，都是攻击者可以"挖掘"的对象。</p>
+  <p>Tay 的建议是立刻行动但保持冷静：如果你认识用 Coldcard 的人，"像老人家一样拿起电话"通知他们（"call them on the telephone like a boomer"），别慌、别点 Google 搜索出来的第一个结果，但动作要快——"Tell them to move their shit."</p>
+</section>
+
+<section>
+  <h2>熵：钱包最不能出错的数学</h2>
+  <p>为什么说熵漏洞是钱包世界里最可怕的漏洞？Tay 给出了两个理由。第一，这类攻击是"持续出血"：破解弱熵种子需要投入大量算力、时间和能源，所以损失不会一次性爆掉，而是在未来数周甚至数月里一批一批地出现。第二，这次连通知受害者都做不到——Coldcard 的产品卖点就是不保留任何用户数据，他们的营销话术是"我们不是 Ledger，我们不保留你的数据"（"we're not Ledger, we don't keep any data"）。当五年老 bug 开始收割用户时，公司手里没有任何渠道能找到这些用户、提醒他们转移资产。</p>
+  <blockquote>"Entropy issues in wallets are the worst vulnerability. Like the absolute worst."<span class="src">— Tay 对熵漏洞的定调</span></blockquote>
+  <p>主持人用 vanity address（定制地址）解释了攻击者的处境：想要一个以特定字符开头的地址，前四位大约只要 10 秒；想要"0xTay is the best"这样的地址大约要一周；再加个"and the smartest"就要等上一个世纪；想要一个与目标完全相同的地址，则要万亿年。熵不足意味着私钥空间被大幅缩小，攻击者可以像挖矿一样暴力搜索，命中一个真实钱包就收割一个——这就是为什么损失会一波一波地到来。</p>
+</section>
+
+<section>
+  <h2>四波攻击与 1 亿美元的账单</h2>
+  <p>统计损失的是 Galaxy Research 的 Alex Thorn。他一方面收集受害者的报告，另一方面做链上分析，把攻击活动分成了四个"波"（waves）——每个波是一组独立的资金移动模式。目前已知的数据：被盗总额超过 1 亿美元，约 1600-1800 枚比特币，数千个被攻破的地址，受害者可能数以千计。四个波可能对应四个独立的攻击组织，也可能波 1 和波 2 是同一伙人，现在还没有 100% 确定的结论。</p>
+  <p>这场攻击最刺痛人的地方在于受害者的画像：这些人不是把资产托管在交易所的新手，而是最相信自我托管、冷存储和硬件钱包安全的资深玩家。他们按照最谨慎的路线选择了小众的、以隐私为卖点的 Coldcard，结果恰恰被这个选择所伤。</p>
+</section>
+
+<section>
+  <h2>不是朝鲜，那是谁？AI 扮演了什么角色？</h2>
+  <p>每次加密世界发生重大攻击，两个问题总会准时出现：是 AI 干的吗？是朝鲜干的吗？这次 Kay 直接宣布："It's not actually North Korea this time."（这次真不是朝鲜。）Tay 的理由很实际：朝鲜不做这类攻击——破解弱熵需要海量算力，而有一群人常年以此为业，专门做熵漏洞的破解和挖掘。她的推测是：第一波攻击者最可能是在代码库里发现这个问题的个人，可能借助了 AI，也可能没有。</p>
+  <p>关于 AI 的讨论更值得玩味。Reddit 上有帖子声称"Claude 两分钟就能找到这个 bug"，但 Tay 拆穿了这个说法：</p>
+  <blockquote>"It's actually not finding it in two minutes. It's, it's finding other Reddit posts about it."<span class="src">— Tay 谈 AI 找漏洞：它找到的是别人的讨论帖，不是漏洞本身</span></blockquote>
+  <p>漏洞公开之后，AI 会从公开报道里"学会"答案，所以事后说"AI 能找到"并不能说明什么。更可信的实验来自 Seer 的帖子：把一个 agent 放进沙箱、剥掉工具、用 Python 直接指向代码库，大约 10 分钟找到了漏洞。Tay 表示自己还没亲手验证，"也许今天就去测"。</p>
+</section>
+
+<section>
+  <h2>代码在仓库间"跳"，fallback 掩盖一切</h2>
+  <p>这个 bug 为什么能藏五年？Tay 直言："这个代码库是一团乱麻。"随机数的实现不在主仓库里——主仓库用 Python，但随机性的真正来源"跳"到了另一个仓库、另一种语言（C 或 Go）。审查者必须自己追完整条链：随机数从哪里来、跳到哪个库、那个库里又发生了什么。主持人由此讲了一个让她"后背发凉"的观察：她做 agent 开发的仓库规则第 3 条就是"No fallbacks"——禁止回退链。因为 agent 写代码时会搭出一层又一层的 fallback：<blockquote>"They will make a chain of fallbacks that makes it impossible to see what's going wrong."<span class="src">— 主持人谈 fallback 链如何掩盖错误</span></blockquote></p>
+  <p>表面上看一切正常，实际上错误早已发生，只是被 fallback 悄悄吞掉了。Codex 尤其喜欢叠上五层 fallback。主持人笑骂："These fucking agents. But they learned from us."（这些该死的 agent——但它们是跟我们学的。）人类程序员同样喜欢"优雅降级"：错误提示是坏体验，API 挂了就换一个 API，用户无感知。但熵是个例外——随机性失效时必须硬停，不能优雅。</p>
+</section>
+
+<section>
+  <h2>出错就该"自焚"：Matthew Green 的教训</h2>
+  <p>主持人引用了密码学家 Matthew Green 在 2015 年 TrueCrypt 审计之后说过的一句话，她说这句话一直记到现在：</p>
+  <blockquote>"If your code cannot get the randomness necessary or initialize the process like with any amount of confidence, then it should barf and catch fire."<span class="src">— Matthew Green，2015 年 TrueCrypt 审计后（主持人引述）</span></blockquote>
+  <p>翻译过来：如果你的代码不能以任何程度的信心获得所需的随机性、完成初始化，那它就应该崩溃自焚。Tay 的态度同样干脆："Throw an error, stop hard."（抛错，硬停。）这不是大多数场景下的好工程实践——大多数时候 fallback 是对的。但当 fallback 的对象是"生成私钥的随机性"时，软性降级等于默默生成弱密钥，让用户毫不知情地暴露五年。</p>
+</section>
+
+<section>
+  <h2>SK Hynix 盘前交易：没有"真实价格"</h2>
+  <p>节目下半场的话题从安全性转向了资产定价。事件的背景是：Hyperliquid 的生态伙伴 trade.xyz 提供 RWA（现实世界资产）永续合约，这类产品本就处于合规灰区。有人在盘前交易时段甩卖了全部 SK Hynix 仓位——交易是真实成交的，但 trade.xyz 随后表示这笔交易"本不该发生"。连"这笔交易不该发生"这个判断本身，就是对资产定价的一种相当强硬的立场。</p>
+  <p>RWA 定价的难题在于：比特币的价格可以直接从市场读取，但现实资产会在随机的时间、因为随机的原因停止交易，总得有人"告诉"合约价格是多少。Mike 分享了自己在 Synthetix 的经历：为了让预言机覆盖盘外时段，他们和 Chainlink 等提供商磨了整整一年。对方的态度很有代表性："When the market is shut down, the market is shut down."（市场关门了，就是关门了——我们为什么要在意关门期间的价格？）但盘前就是会发生真实交易。</p>
+  <p>Mike 由此提出一个哲学问题：SK Hynix 的"真实价格"是什么？是 12 小时前的收盘价，还是周六某个因为被清算而急于脱手的人愿意卖出的价格？他的结论是：</p>
+  <blockquote>"There is no such thing as the price of an asset, right? It is like... some kind of a construct."<span class="src">— Mike 谈资产价格：价格只是规则构造，不是客观存在</span></blockquote>
+  <p>所以任何交易场所都需要一套规则。Nasdaq 会回滚因故障触发的交易，说"我们来决定真实价格是什么"。但 DeFi 的尴尬在于：它本应只有合约、没有人做判断，如今却被迫做出事后判断。如果有人愿意以 1 美元卖光 SK Hynix，这五分钟的"价格"就是 1 美元吗？这类问题没有干净的答案，市场就是会做出各种离谱的事。</p>
+</section>
+
+<section>
+  <h2>UI 运营者的责任：从 Aave 事件到 Meta Oracle</h2>
+  <p>同样的逻辑延伸到了交易界面的责任上。Aave 上曾发生过一件事：有人通过 UI 用 5000 万 ETH 换了 500 美元——"just madness"（纯属疯狂）。有人会说这是无许可智能合约，用户自己看了界面、自己点了确认，后果自负。Mike 不买账：如果你运营这个 UI，你就在其中扮演了某种角色，就有责任阻止用户做"疯狂到离谱"的事。传统券商就是这么做的——去 Interactive Brokers 下一笔离谱的订单，系统会亮起红旗。他的底线是：</p>
+  <blockquote>"Forget warnings and red text like you just shouldn't let them do that."<span class="src">— Mike 谈 UI 责任：疯狂的交易应该直接拒绝，而不是警告</span></blockquote>
+  <p>如果有人真的想卖呢？"Well then he can do it somewhere else."（那他可以去别处卖。）主持人补充了为什么大家不敢管：一旦你说"我要拦下用户"，Gary Gensler 会找上门（玩笑），Bitcoin maxis 也会——"Bitcoin Maxis will come and get you."</p>
+  <p>Tay 则从协议设计的角度给了一个现实答案。她当年在 Stakehouse 时，团队在 Morpho 上实现了 meta oracle：同时接入公平市场价和主要赎回价两套价格源，并监测两者之间的偏差，当偏离超过阈值时发出通知、在两种价格之间切换。但她也提醒：预言机的每个设计决策都会产生下游后果——你防住了"两西格玛"事件，可能在"三西格玛"事件里全员阵亡。主持人总结："Mechanism design is hard."（机制设计很难。）</p>
+</section>
+
+<section>
+  <h2>EIP-8361：一场 48 小时通告的货币政策风波</h2>
+  <p>最后一个话题由 Aave 创始人 Stani 对 EIP-8361 的公开反对引出。EIP-8361 主张削减 ETH 发行量，而留给社区的评论期只有 48 小时，随后就进入下一轮硬分叉的考虑与投票流程。Mike 的反应是"每个环节都很糟糕"：没有任何人收到过哪怕一条 DM 的咨询——<blockquote>"Nobody was asked like, 'Hey, do you think this is a good idea? What are some consequences that might happen here?'"<span class="src">— Mike 谈 EIP-8361 的零沟通</span></blockquote></p>
+  <p>这是价值 5000 亿美元的网络的货币政策。Mike 说，这种做法让他想到苏联笑话——"新计划来了，你们觉得怎么样？"连 FOMC 都有完整的流程、结构和信号机制来让系统可预期，以太坊这边却"不知道在干什么"。</p>
+  <p>主持人则从组织演变的角度看这件事：大家曾抱怨以太坊基金会（EF）太集中，于是人才流出、各自成立组织，每个组织带着自己的执念。新组织做的第一件大事，就是砍发行量。她把这归为"be careful what you wish for"（小心你许的愿）——EF 曾经的职责是关心以太坊的一切（实际等于什么都不关心），现在每个组织只关心自己在乎的事，于是有了这次提案。但也有积极的一面：过去两年弥漫的治理冷漠被打破了，"it feels like anyone can say things"——任何人都能发声、都能提自己的方案，一场开放的辩论重新开始了。</p>
+</section>
+
+<section>
+  <h2>削减发行量，真的利好 ETH 价格吗？</h2>
+  <p>提案的隐含逻辑之一是"少发行 → 更通缩 → 利好价格"。但主持人指出这条路走反了：ETH 质押者恰恰是最不卖 ETH 的人。如果发行量被削减，质押收益率会从目前的约 2.5%（MEV 与质押奖励的混合水平）一路跌到 20 个基点，随之而来的是数百亿美元 ETH 解除质押、流入市场形成抛压。她的判断是："If you're worried about ETH price... this is actually gonna be much worse."（如果你担心 ETH 价格，这个提案只会让情况更糟。）在她看来，增加发行的论据甚至比削减更强，但——</p>
+  <blockquote>"The strongest thing is just don't fuck with it."<span class="src">— 主持人对 EIP-8361 的定调：现状没坏，就别动它</span></blockquote>
+  <p>Mike 从 TradFi 的视角补了一刀：ETH 的边际买家是 TradFi，而 TradFi 爱收益率、爱"收入从哪来"的增长故事、爱回购。Rabbit Rabbit Capital 在 Sohn 大会 2024 年发表的以太坊论文里，把网络净收入称为"owner's earnings"，估算超过 70 亿美元，约为当时市值的 3%。费用燃烧本身就在减少流通（"The fees get burnt"），不需要用紧缩发行量来伤害独立质押者、推高中心化、牺牲安全预算。关于货币政策本身，他的评价是：几乎没有经济学家会认为货币供应年增长 0% 是好主意——"That's a Bitcoin brain worm. That's not, that's not sound economic policy."（那是比特币的脑虫，不是健全的经济政策。）货币供应应随经济产出扩张，否则就是通缩，而通缩是坏事。所谓"ultrasound money"叙事，与任何经济学流派都不合拍，包括奥地利学派。</p>
+  <p>EIP-1559 是现成的教训。1559 的本意根本不是"超声钱"——Vitalik 的初衷是让剧烈震荡的手续费市场稳定下来，主持人是当年的推动者之一，2018-2019 年还帮忙筹款做审计，前后筹备了两年。结果燃烧机制这个次要设计上线后成了主叙事。她的教训是：</p>
+  <blockquote>"If you touch something, be prepared for it to touch you back."<span class="src">— 主持人谈 EIP-1559：你碰系统，系统就会碰回来</span></blockquote>
+</section>
+
+<section>
+  <h2>质押比例与效率论：一场关于激励的辩论</h2>
+  <p>更深一层的分歧在于哲学。削减派背后的效率论是：以太坊只需要"保证安全所需的最小质押量"，不该为安全多付一分钱。他们的论据之一是比特币——"Bitcoin pays like a billion dollars a day to secure the network"（比特币每天花十亿美元级别的成本来保障网络安全），而链上经济活动撑不起这个安全预算。主持人的反驳是：效率论能自圆其说，但它忽略了真实世界的激励、人做事的原因和激励的方向性，因此"a bit nonsensical"（有点无稽）。</p>
+  <p>从数据看，大多数 ETH 质押者根本不是为了收益："A significant majority even today of ETH stakers are not financially motivated."（今天绝大多数的 ETH 质押者都不是财务驱动的。）他们是 ETH maxi——Tay 自嘲自己的验证者经常掉线、收益率只有 0.5%，但她照旧质押，"反正这 ETH 也没别的用"。主持人追问：如果质押率到 80%，问题在哪？（"If it goes to 80% staked, like what is the problem with that?"）大多数加密经济网络巴不得更多人质押自己的代币——那是人们"买进网络"的信号（"Most crypto economic networks would kill to have more people stake their token."）。用美元类比：大多数美元都在"工作"——投资、T-bills、债券。让 ETH 质押起来、为网络工作并分得一小份费用，是相当合理的系统。</p>
+</section>
+
+<section>
+  <h2>混沌也许是好事</h2>
+  <p>提案会通过吗？主持人干脆利落："I hope not. No. No way."（不会，但愿不会，绝无可能。）但她判断这个话题会反复回来——因为确实有一群人在乎它，他们会一直推动。如果真被硬推过去，那会是相当疯狂的事。</p>
+  <p>不过她有一个反向的 hot take：以太坊多一点混沌、少一点单一文化，也许是好事。没有这场风波，人们不会重新开始讨论 ETH、讨论以太坊本身。一个开放辩论的新时代来了：任何人都能写提案，你可以主张砍发行量，也可以主张加到 5%、超过 4.5% 的国债收益率——重点是讨论重新开放了。给提案者的建议来自 Mike 引用的那句芒格/巴菲特名言："Better to be roughly right than precisely wrong."（宁可大致正确，不要精确地错。）</p>
+</section>
+
+<section class="quotes">
+  <h2>核心金句</h2>
+  <div class="q c-red qtext">"Entropy issues in wallets are the worst vulnerability. Like the absolute worst."<span class="qsrc">— Tay 谈 Coldcard 熵漏洞：最可怕的漏洞类型</span></div>
+  <div class="q c-blue qtext">"It's actually not finding it in two minutes. It's, it's finding other Reddit posts about it."<span class="qsrc">— Tay 拆穿"Claude 两分钟找到 bug"的说法</span></div>
+  <div class="q c-purple qtext">"These fucking agents. But they learned from us."<span class="qsrc">— 主持人谈 agent 的 fallback 链：坏习惯是从人类学的</span></div>
+  <div class="q c-green qtext">"There is no such thing as the price of an asset, right? It is like... some kind of a construct."<span class="qsrc">— Mike 谈 SK Hynix 盘前交易：价格只是规则构造</span></div>
+  <div class="q c-orange qtext">"Forget warnings and red text like you just shouldn't let them do that."<span class="qsrc">— Mike 谈 UI 运营者的责任：疯狂交易该直接拒绝</span></div>
+  <div class="q c-yellow qtext">"Better to be roughly right than precisely wrong."<span class="qsrc">— Mike 引用芒格/巴菲特名言谈发行量：现状就是"大致正确"，别去精调</span></div>
+</section>
+
+<footer>
+  <p>本文由 PodDeck 根据 Unchained Money 播客节目整理。源节目：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8969627964.mp3">Inside the Coldcard Hack That Drained Over $100 Million in Bitcoin: Uneasy Money</a>（2026 年 8 月）。</p>
+  <p>节目声明：Unchained Money 的内容不构成财务建议。文中引文均为播客嘉宾原话；标为"作者概括"的段落为整理者的归纳。DYOR——在下场之前，做你自己的研究。</p>
+</footer>
+
+</article>
+</body>
+</html>

@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-13T03:51:14.887Z
+refreshed_at: 2026-08-13T18:20:44.111Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 31
-done: 0
+done: 1
 pending: 0
-needs_transcript: 31
+needs_transcript: 30
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -211,8 +211,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-13T18:29:49.768Z
+    transcript_job_id: 87f07b64-ddc2-47c9-a2b2-07e797c65c1a_973d7da92c024cb1b2de06e209e7c961,652eb260-a26e-4d33-9c88-e66f1a5148cf_5c583d90c0d047fab86a12afdf11781c,fef15b07-c3c7-423a-a4c9-bb75897e540f_6d0677b9d68a4ef2aeba06010332bcaa,54bd17bc-ae29-4d5d-b083-1c4b32f6bd31_3013fc66c9d04054916f32a1ef7af660,e00fd161-329b-48fd-8204-afcbc163490b_d33d45f5bc4f496087dbddfc39f7f823,3a4f7f9c-6cd2-47e3-a0b2-658f896d6870_a7ab92a252a843f8a70b18cc9d355bac
+    transcript_completed_at: 2026-08-13T18:34:21.934Z
   - id: 460cc55b-c0f2-4898-95cf-f3372ece1eb2
     guid: 460cc55b-c0f2-4898-95cf-f3372ece1eb2
     title: "177: 详解Kimi K3：强到冲击Anthropic估值的模型什么样？"

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>与田渊栋聊 RSI：模型自进化如何到来？——晚点聊第 178 期</title>
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #fafaf8;
+    color: #1f2937;
+    line-height: 1.75;
+    font-size: 17px;
+    padding: 24px 16px 64px;
+  }
+  article { max-width: 720px; margin: 0 auto; }
+  header { padding: 32px 0 24px; border-bottom: 1px solid #e5e7eb; }
+  .kicker { font-size: 13px; letter-spacing: 0.08em; color: #6b7280; text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-size: 28px; line-height: 1.4; font-weight: 700; margin-bottom: 14px; }
+  .meta { font-size: 14px; color: #6b7280; }
+  .meta span { margin-right: 14px; }
+  h2 { font-size: 21px; margin: 40px 0 14px; padding-left: 10px; border-left: 4px solid #1971c2; }
+  p { margin-bottom: 14px; }
+  .overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 20px 0 8px; }
+  .card { border-radius: 8px; padding: 14px 16px; font-size: 15px; line-height: 1.6; background: #f8fafc; border-left: 4px solid #1971c2; }
+  .card strong { display: block; margin-bottom: 4px; font-size: 16px; }
+  .c-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .c-green  { background: #f0fdf4; border-color: #22c55e; }
+  .c-yellow { background: #fefce8; border-color: #eab308; }
+  .c-red    { background: #fef2f2; border-color: #ef4444; }
+  .c-purple { background: #faf5ff; border-color: #a855f7; }
+  .c-orange { background: #fff7ed; border-color: #f97316; }
+  .quote {
+    border-left: 4px solid #1971c2; background: #eff6ff; border-radius: 0 8px 8px 0;
+    padding: 16px 20px; margin: 18px 0; font-style: italic; color: #1e3a5f;
+  }
+  .quote .from { display: block; font-style: normal; font-size: 13px; color: #6b7280; margin-top: 8px; }
+  .quotes .quote:nth-child(2n) { border-color: #22c55e; background: #f0fdf4; color: #14532d; }
+  .quotes .quote:nth-child(3n) { border-color: #eab308; background: #fefce8; color: #713f12; }
+  .quotes .quote:nth-child(4n) { border-color: #a855f7; background: #faf5ff; color: #4c1d95; }
+  .quotes .quote:nth-child(5n) { border-color: #f97316; background: #fff7ed; color: #7c2d12; }
+  .gloss { font-size: 14px; color: #6b7280; background: #f3f4f6; border-radius: 6px; padding: 10px 14px; margin: 12px 0; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280; }
+  a { color: #1971c2; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  @media (max-width: 480px) { h1 { font-size: 23px; } body { font-size: 16px; } }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+  <div class="kicker">晚点聊 · 第 178 期</div>
+  <h1>与田渊栋聊 RSI：模型自进化如何到来？</h1>
+  <div class="meta">
+    <span>嘉宾：田渊栋 · Recursive Superintelligence 联合创始人</span>
+    <span>2026 年 8 月</span>
+    <span>时长 1 小时 29 分</span>
+  </div>
+</header>
+
+<p>RSI，Recursive Self Improvement，递归自进化——一个去年还相对小众的概念，到了今年二季度已经成为硅谷频繁讨论的热门方向。Anthropic 在六月初发布长文 <em>When AI Builds Itself</em>，副标题就是在 RSI 方向上的进展与探索；OpenAI 也再次明确时间表：今年九月做出 AI 研究实习生，28 年 3 月之前实现真正自动化的 AI 研究员。</p>
+
+<p>在这股热潮的正中央，有一家名字本身就是 RSI 的公司：Recursive Superintelligence。它隐身研发四个月后，于六月初官宣 A 轮融资 6.5 亿美元，估值 46.5 亿美元。联合创始人田渊栋——前 Meta FAIR 研究员、围棋系统 ELF 的核心作者之一——在这期节目里和曼琪聊了 RSI 是什么、为什么现在变热、他们六月发布的 First Steps 成果，以及那个"有诱惑力也十分危险"的假设：率先达到 RSI 状态的公司，会把其他人越甩越远吗？</p>
+
+<div class="overview">
+  <div class="card c-blue"><strong>RSI：从冷门到共识</strong>去年还小众的方向，今年四五月份起成为硅谷共识性话题；Anthropic 与 OpenAI 都已公开时间表</div>
+  <div class="card c-green"><strong>一家估值 46.5 亿美元的新公司</strong>A 轮融资 6.5 亿美元，公司名 Recursive Superintelligence 的缩写正是 RSI</div>
+  <div class="card c-yellow"><strong>「强者愈强」假设成立吗？</strong>田渊栋拆解这个推演：进步是 S 型曲线加平台期，每个平台对应一次突破</div>
+  <div class="card c-red"><strong>为什么是现在？</strong>coding agent 变强、模型能充当研究员，闭环第一次有可能转起来</div>
+  <div class="card c-purple"><strong>可解释性的少数派</strong>大部分理论家已放弃，他相信一定存在一个好的 principle 让模型运转</div>
+  <div class="card c-orange"><strong>First Steps 首批成果</strong>一个通用系统在三个 benchmark 上拿到 SOTA，包括 79 秒 → 77 秒的 speed run</div>
+</div>
+
+<h2>RSI 是什么：一个闭环</h2>
+<p>田渊栋用几句话定义了这家公司做的事：找到用 AI 自我进化、自我迭代的方法，找到新的模式、新的模型、新的训练逻辑，然后得到更好的 AI。关键在于一个闭环：模型已经比较厉害，能够发现模型自己的问题——用 AI 找到 AI 自己模型的问题，然后让 AI 带着模型变得越来越强。闭环产生之后，下一次模型变得更强，"递归"就是循环往前推进的意思。</p>
+<p>但他强调了一个前提："这个要求条件是这个模型本身已经够足够强。如果模型本身不够足够强的话呢，那这个很难。"这解释了这个想法为什么不是新东西却到现在才火：十年前 Google 的 AutoML 就在用 AI 优化 AI，但当时的模型没有能力充当研究员。</p>
+
+<h2>一个改变判断的实验</h2>
+<p>田渊栋创业的直接契机是一个具体的实验。去年八月，他用当时的 GPT-5 合作写了一篇 Grokking 方向的文章：他给模型具体的细节和方向，让模型去找新想法、新思路、证明新定理，他负责写代码、做实验。文章做完，他意识到一件事：</p>
+<div class="quote">"模型的能力呢已经基本上强到让我觉得我可以不用招实习生了。"<span class="from">— 与 GPT-5 合写论文之后的判断</span></div>
+<p>很多想法和思路完全可以通过跟模型对话来实现，写代码也"都不用人了"。这个 loop 开始有转起来的趋势，于是他做了决定：</p>
+<div class="quote">"也许五年之后我就被取代了。那么这个时间可能已经快到了。那么在这种情况下，与其自己被取代，不如我就开公司，我就做这个事情去。"<span class="from">— 创业的直接动机</span></div>
+<p>值得注意的是，当时的 RSI 还是小众方向。田渊栋说，这种信号"你不亲手实践、亲身去体验呢，你是感觉不到的"。senior 的研究员往往不做细节，刚毕业的学生只把模型当执行工具，两边之间有一个 gap；能最早看到信号的人，是既有经验、对什么是难的问题有判断，又在一手做事的人。</p>
+
+<h2>研究循环的加速：从天到分钟</h2>
+<p>传统科研的组织方式是导师—学生循环：导师指方向，学生实现、做实验、汇报，再调整。田渊栋算过这笔账：一次验证循环至少需要几天，"大家是以天为周期进行这个问题的科研探索"，做成一件事"可能需要几周甚至几个月"。</p>
+<p>有了很强的 AI 之后，这个时间被压缩了：想法告诉 AI，AI 很快把代码写出来、跑完告诉你结果。"很多时候就是也许你写完之后出去喝个口水，喝个茶……开完会之后结果你就有了。结果有了之后，那你就可以看到自己的问题在哪里，然后可以有下一步的循环。"</p>
+<div class="quote">"但是现在有AI之后呢，应该说特别是有非常强的AI之后，这个时间被压缩到几分钟，甚至更短的时间。"<span class="from">— 研究循环的加速</span></div>
+<p>这个加速还有一个微妙的社会学后果：过去三年，AI 社区里年轻人占尽优势，因为"并不需要想太多，我们就scale up"，执行快就是一切。现在执行的重担落在 AI 身上，人更多做判断、方向把握和研究品味——很多当了十年经理、总监的人"突然开始写代码了"。田渊栋认为天平可能摆回更有经验的研究员一边，但承认这有争议。</p>
+
+<h2>递归先于完全自动化</h2>
+<p>OpenAI 的时间表指向完全自动化——把人从这个 loop 里解放出来。田渊栋的判断是：完全自动化不一定很快发生，递归会先发生。</p>
+<div class="quote">"某种程度来说，人是减少了他的时间。但是人可能需要更多脑力去做一些就是更高层次的工作。所以人还在这个loop里面，只是这个loop的level变高一点。"<span class="from">— 人不会立刻出局，而是升级</span></div>
+<p>"我觉得递归会先发生。就完全自动我觉得现在还看不到，就是跟我以前的AI代替不了顶尖人类研究员的观点是一致的。"这与去年五月他和晚点聊的讨论一脉相承：顶尖研究员能从少量数据中获得精准而细节的联系，大模型还不行。</p>
+
+<h2>「强者愈强」假设与 S 型曲线</h2>
+<p>硅谷热烈讨论 RSI 的背后是一个推演：率先达到这个状态的公司会进入加速、越来越快的阶段，把其他人越甩越远，而且存在一个窗口期，错过就无缘决赛圈。田渊栋认为这个逻辑"应该说还是比较正确的"，但有一个关键变量：进步是渐进式的，还是突破式的？</p>
+<p>如果 scaling law 路线直接通向 RSI，那进步就是平滑的——"我比你快一点，我就一定比你快更多"——初创公司没有任何机会，因为 OpenAI 和 Anthropic 已经领先且追得更快。但田渊栋的推演是另一种形状：</p>
+<div class="quote">"它会有一个S型曲线，一开始涨得很快，然后呢，因为有些瓶颈会停下来，就一段平台期，直到下一个突破出现，再次出现S型曲线，再上去。"<span class="from">— S 型之后平台，S 型之后再平台</span></div>
+<p>每个平台对应一个突破。没达到突破的团队做得再好，也只能逼近上一层次效果的上界；而一旦有人突破了，"那个层次上的AI它的能力呢是远远高于前一个层次的AI的"。这个想法目前"还不是很主流"，但它给初创公司留下了一扇窗。</p>
+
+<h2>scaling law 不是全部</h2>
+<p>田渊栋对 scaling law 的态度是：它可能是对的，但不是全部。scaling 的横轴是指数级的——"你需要十倍的计算资源，十倍的数据……然后最终能够达到就是线性的增长"。而十倍资源"现在已经开始有瓶颈了"。</p>
+<div class="quote">"这个限制应该说是很大的限制，就是说你不可能让全世界，整个地球的电力都供应给你一个人做这个自我进化，是不可能的。肯定会有博弈，肯定会有一些限制。所以应该有更好的、更有效的方法去做这事情。"<span class="from">— scaling 的现实极限</span></div>
+<p>他还说过，如果 scaling law 就是未来的全部，那是一个"比较悲哀"、也"非常无聊"的未来——没有新的知识上的突破。他相信会有智商的突破：RSI 这个 loop 本身是元叙事上的 loop，但支撑它的底层架构、底层数学和模型结构"应该说是会有突变的"。</p>
+
+<h2>怎么读 Anthropic 的「When AI Builds Itself」</h2>
+<p>Anthropic 的文章披露了一个具体进展：四月时，Claude 的 AI agent 端到端独立完成了一个开放式 AI 安全研究，累计工作 800 个小时，把一个 weak-to-strong 的性能差距缩小了 97%；如果是人来干，一周可以缩小 23%。</p>
+<p>田渊栋的判读是：这基本上还是提效，是自我进化的第一层。文章里的算法"应该说还是比较常规的"，是把很多常规想法放在一起、把分数往上提。但分数是绕不开的：</p>
+<div class="quote">"因为现在除了分数之外，你没有其他办法能够那个衡量这个模型现在能力有多强。""分数一般会具体体现为提效，或者说提高速度，或者减少latency这样的一个指标。"<span class="from">— 分数是自我进化的地基</span></div>
+<p>他还划了一条更深的界线：Anthropic 展示的自我进化主要在代码上——从头写一个 Linux、写一个 C++ 编译器，这些任务"本身是有章可循的"，难在工作繁重。但真正难的 AI research 问题，"人都不知道怎么做"，需要突破性发现，"现在AI还是很难做"。AI research 与代码之间还有差距。</p>
+
+<h2>RSI 需要的能力栈，与人的 grokking</h2>
+<p>"我觉得RSI比coding agent要大得多。""coding agent它只是一个执行者。"田渊栋说的差距，不仅是市场规模，还包括研究上可能的方向和逻辑。光有 coding 这个支点，不见得就能做好 RSI——毕竟 Claude、Copilot 和开源模型让 coding 能力变成了人人都有。</p>
+<p>coding 之外还需要什么？做 AI scientist 需要人类研究员的品味、方向感，和对问题的抽象能力——"这些东西应该说现在的模型都不太有"。还需要 agentic behavior：动用工具、动用已有知识、获取新知识、把各种东西放在一起完成任务。以及收集信息、从中找到最重要信号的能力，这是 deep research 方向积累多年的工作。</p>
+<p>最难的还是那个被田渊栋称为"人真正的 grokking"的能力：</p>
+<div class="quote">"可以把一些概念从一些纷繁复杂的这个表象中抽取出来，并且加以总结，加以思考，然后继续再应用于新的问题上，这样一个能力。"<span class="from">— 也就是"从少量的样本你就可以看到精准而细节的联系"</span></div>
+<p>大模型的强项在有大量数据：常见、重复的领域有无穷无尽的数据可以学。但开创性领域问题层出不穷、样本很少，"你让AI去做，恐怕是比较难"——这是人相比大模型比较大的一个优势。</p>
+
+<h2>First Steps：一个系统，三个 benchmark</h2>
+<p>六月中旬，Recursive Superintelligence 发布了第一篇技术博客 <em>First Steps Toward Automated AI Research</em>，并开源了成果。三个 benchmark 是同一个系统跑出来的，通用、不需要针对每个任务修改：nanoGPT 5 分钟训练（BPP 降到比 community 更低）、nanoGPT speed run（效率维度）、算子优化（作用在基础设施上）。选它们的共同点是反馈快，"这个系统能很快地跑起来"。</p>
+<p>最容易引起误读的是 speed run：从 79 秒到 77 秒，看起来只快了两秒。但田渊栋提醒，"79秒是过去整个community做了两年的sota"，这个数字"很难再往上提"。"数字看起来绝对数字不大，但是其实应该说是对那些已经做过这个方向的人来说呢，这个数字还是比较大的。"</p>
+<p>更让他满意的可能是算子优化：英伟达新发布的 benchmark 上，第二名是以色列公司 Double AI——CEO Sasha 是前 Mobileye CEO，成员都是专业 GPU 工程师。而"我们其实组里面没有什么人是GPU的专家"，田渊栋自己"没有真正做过算子优化"。结果：</p>
+<div class="quote">"我们的效果比他们要高10%。"<span class="from">— 非专家团队靠通用的系统逻辑，做到比业界顶尖专家团队更好一点</span></div>
+<p>这部分最初是他一个人搭到 sota，后来很多人加入。英伟达的态度是"只要能算子变快就行"——算子变快对 model training 和 serving 都有影响，人做的还是系统做的，它无所谓。</p>
+<p>关于下一步，田渊栋透露系统会继续优化，往预训练、后训练等更广泛的方向走；商业化"我们也在思考中"，但系统要保持一般化，"不会说因为一两个具体的这个vertical，让这系统变得非常特殊化"。至于 roadmap，"OpenAI有这个roadmap也是在他们成立十年之后了"，现在节奏加快，"但是应该还不至于快到要只要半年的程度"。6.5 亿美元融资"可以做一些事情"，但"达到大厂的级别，那还有一定距离"。</p>
+
+<h2>可解释性的少数派</h2>
+<p>关于 AI 安全，田渊栋观察到一个有意思的分野：领域外的人问题很多——AI 自我进化之后会不会有一天超过人类控制？领域内的人反而不觉得问题太严重。他自己的回答分两层。</p>
+<p>第一层是训练方式：训练 AI 的 signal 就像训狗一样，让 AI 很好地服务人、帮助人解决问题。"在这样的进化压力下，就是AI是没办法进化出跟人一样的就是某些自我意识和这个就是自我认知的这样的一个概念的。"第二层是能力与欲求的分离：很多天才的数学家和物理学家在各自领域做得极好，"但是另一方面呢，就是说他们也与世无争，他们并不想要权力"。</p>
+<p>然后是那个把田渊栋归为少数派的问题：大模型到底可不可解释？</p>
+<div class="quote">"我可能是少数派吧，就是因为大部分人可能已经觉得绝望了，就是说大模型那么复杂，应该是没没没希望没希望再了解里面在干什么。"<span class="from">— 少数的相信</span></div>
+<p>"我觉得一定是有一个有一个好的principle，能够让这个模型运转起来。"找到它，一方面能让模型变得更强，另一方面能让模型变得更加安全——通过可解释性真正知道模型在干什么，消除人们对黑箱的恐惧。这个信念来自他多年的工作：神经网络怎么学会知识、梯度下降给学习动力带来什么影响、权重怎么生成。2020、2021 年之后，很多想不通的问题"突然想通了"。"我觉得也许，我会我是少数派会把它做出来的那个人。"</p>
+
+<h2>AI 终将变成科学</h2>
+<p>田渊栋的最终目标，是把这个领域变成真正的科学。现在 AI 还很难说是一门科学，"因为有些原理确实搞不清楚"。</p>
+<div class="quote">"我觉得它以后终将变成科学，因为这个应该说是历史一定会出现一个……会某种程度上是会跟以前的……东西相互呼应的。"<span class="from">— 历史的呼应</span></div>
+<p>呼应什么？"从炼金术变成化学，或者说从……第谷的天文观测，到开普勒的总结经验，然后最后变牛顿的一个力学原理，这过程一定会发生。"在牛顿出现之前，大家都觉得这事情不可解释、太难；等到牛顿出现之后，会觉得"这个事情其实还是，还挺简单的"。</p>
+<p>下一个牛顿还是人类吗？"不一定，可能是AI。可能是AI，可能是人类加AI。"这正是为什么要做 ASI 的原因：要做成这件事，就要用上世界上所有的计算资源和所有最强的大脑——包括人的大脑和 AI 的大脑。至于有生之年会不会看到图灵奖颁给一个系统，田渊栋的回答是："如果到那个时候，可能图灵奖也不是很重要了。"一个很强的系统会变成 knowledge discovery system，每隔一两个月产生新的东西。</p>
+<p>但他也划清了一条界线：目前 AI 做的东西还"是属于这个术上的那个level，没到道上的那个level"——术是具体细节的优化，比如 AlphaEvolve 用变换把矩阵乘法减少一次，相当于"在高空中做一个穷举"；道是发现新的理论、新的逻辑链条，"它本身是美的，但是美的你以前没有见过"。所以"很多时候还是要看人做的东西"。</p>
+
+<h2>愿景、组织与来路</h2>
+<p>被问到 RSI 普及之后的世界，田渊栋描绘了一个"修仙社会"：所有世俗的需求都能被 AI 满足，"言出法随"——今天晚上想要一个大房子，马上就有一个大房子。但他立刻补充："那些什么修仙、修仙社会之类的东西，那肯定是我自己的愿景"，偏科幻；公司层面"我们还是希望把这个事情做成"，是执行层面的工作。他小说里的处理是给虚拟世界加一层限制：失去动力之后，人类社会怎么发展？这是"一个很大的问题"。至少有一件事是美好的："一些现在很难克服的病痛是可以消失的"——"对，我相信是这样子。"</p>
+<p>组织上，田渊栋是"反大厂"的：大厂里的 incentive、职级、岗位设计都与 AI 方向背道而驰，组织越臃肿，AI 进展越慢。</p>
+<div class="quote">"以前Llama 4和xAI都是超过150人之后，就开始不行。""150人就是说从那个人类组织学上来说，150人是一个临界点。"<span class="from">— 30-40 人小团队人人都认识；人变多之后只能靠组织架构汇报</span></div>
+<p>经理和执行者的二级架构让速度变慢，因为"人的交流速度永远是最慢的"；中层管理的目标"不是为了让项目做成，很多时候目标是为了让自己能够过得更好"。OpenAI 有 7000 多人，但"做模型的人其实也不是很多……Claude的这些团队很小"——核心团队保持精简。他的公司也"不会招太多人"。</p>
+<p>回看田渊栋自己的路径，很多判断早有伏笔。2013 年加入 Google 无人车时，级别 4 只能打杂，GPU 资源先给级别 7 的人；做紧急车检测是小样本问题，"连个分类器都都都都训练不出来"，只能手写规则。他判断无人车"要么就是成功，要么就是完全不成功，它没有没有中间状态"，corner case 修起来漫长——面对"16年这个车就可以上路了"的乐观宣言，"永远是还有五年"。后来在 Meta FAIR 搭围棋系统，他被评价"这个人太工程了，不像一个研究员，别人打开电脑全是那个文章，我打开电脑全是代码"。2018-2019 年，那个围棋系统 20:0 战胜韩国职业棋手；之后他慢慢形成自己的 taste，至今"每年还是有至少一篇的一作的文章"，保持一手的感觉，不"泛泛而谈"。正是这种既懂方向又亲手做事的状态，让他最早看见了 RSI 的信号。</p>
+
+<h2>核心金句</h2>
+<div class="quotes">
+  <div class="quote">"也许五年之后我就被取代了。那么这个时间可能已经快到了。那么在这种情况下，与其自己被取代，不如我就开公司。"<span class="from">— 谈创业动机</span></div>
+  <div class="quote">"这个时间被压缩到几分钟，甚至更短的时间。"<span class="from">— 谈研究循环的加速</span></div>
+  <div class="quote">"你不可能让全世界，整个地球的电力都供应给你一个人做这个自我进化，是不可能的。"<span class="from">— 谈 scaling law 的现实极限</span></div>
+  <div class="quote">"我们刚刚看到一点点的星光，就太阳还没露头呢。"<span class="from">— 谈智能的未来空间，出自他的科幻小说《破晓之钟》之名</span></div>
+  <div class="quote">"我觉得它以后终将变成科学。"<span class="from">— 谈可解释性与 AI 研究的终局</span></div>
+  <div class="quote">"人的交流速度永远是最慢的。"<span class="from">— 谈组织为什么拖慢 AI 进展</span></div>
+</div>
+
+<footer>
+  <p>本文根据晚点聊第 178 期节目整理，访谈于 2026 年 8 月发布。原文音频与完整内容见 <a href="https://podcast.latepost.com/178">podcast.latepost.com/178</a>。</p>
+  <p>文中引语均出自节目实录；带概括性的叙述为作者整理。</p>
+</footer>
+
+</article>
+</body>
+</html>

@@ -1,18 +1,18 @@
 source: xiaojun
-refreshed_at: 2026-08-13T03:51:14.857Z
+refreshed_at: 2026-08-13T18:20:44.080Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
+done: 1
 pending: 0
-needs_transcript: 2
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: 6a7cbeb017676351c5710266
     guid: 6a7cbeb017676351c5710266
-    title: 150. 对英伟达研究副总裁刘洺堉的4小时访谈：Cosmos 3、世界模型、武术、黄仁勋影响我的，和你不需要击败所有对手
+    title: 150. 对英伟达研究副总裁刘洺堉的4小时访谈：功夫、Cosmos 3、开源世界模型、黄仁勋、你不需要击败所有对手
     duration: 12972
     published: Wed, 12 Aug 2026 23:00:00 GMT
     published_sort: "20260812"
@@ -20,8 +20,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a7cbeb017676351c5710266?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a7cbeb017676351c5710266/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lghqbPI7EHExAvJv1gjRFV_24k8Y.m4a
     image: https://image.xyzcdn.net/FrgGjzGmkiJRAAN6KPaU5sD3mI3L.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-13T18:20:45.380Z
+    transcript_job_id: da677d99-64a9-4e74-9cb9-67f4d6beac37_36deb1a824bc44809e40cc2ab64a9693,d9149c47-d09a-4f82-a26b-eadae731f520_c408b43a81e74f908cc842d13ec0e635,8ccc530a-28c3-4325-a6a3-0ade661af66b_c641564fa9e34eb7bb665a39c93074f1,c469c8b5-d91f-44bf-a4e7-361596198c2e_fe64945d16794b99b8b03be3995b132c,3be34d4c-fab5-4e15-bec9-39c613d660d2_016aa8cee8f548e69d3c67b75ab979a7,223ae7f2-ec4e-4f8c-a11a-cb677b3de5f3_3f3334f2263c4161857c2aff67e1d609,1316f408-2ccf-4d84-b4eb-1aa5bf9b46bc_ee31b3444fb34d258995076b4576bd58,1b456308-9a15-4e9e-9759-38e79c22b642_cd60e90cc82c41feafbb54555559db31,2e763e2e-14cb-4e5f-9f4a-769471f00222_e91585fcd07b401aa8adb368aef3d85a,1254136c-8ebb-4aad-b606-5b6f2d01aaeb_8a72459bbd5040c1904d15efd7c60a7b,d4a0ae04-2696-4c70-a475-d75afd276219_a4decd782c3b4149abe9149e2ca4fb06,3e484463-b135-423d-b9f6-43525dba45ec_8a9d1afdcab14d7184e88c3ce66451fc,f3d4b3b4-e9ca-438d-9889-e14fbf2dbabb_9cee1c4fe8d045dea3e5b96d49faaa22,a63747a8-bba8-4d86-9344-1fa2d62ce035_b663517fda0844dbaf688264f5d01381,88dc5d83-76be-4af7-bd2b-f76d58838447_bee54023308c4ad594a0966a83a84897
+    transcript_completed_at: 2026-08-13T18:29:49.501Z
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去

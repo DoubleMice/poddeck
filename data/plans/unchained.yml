@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-08-13T03:51:14.840Z
+refreshed_at: 2026-08-13T18:20:44.064Z
 min_duration: 3300
 min_date: "20260723"
 total_candidates: 2
-done: 0
+done: 1
 pending: 0
 needs_transcript: 1
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: 0c1a1150-9289-11f1-bf33-e3697544f1ef
@@ -100,20 +100,12 @@ episodes:
       🌀 01:05:20 Kain's take: fragmenting the EF into chaos is actually healthy for ETH
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-08T18:10:03.425Z
-    transcript_completed_at: 2026-08-08T18:10:34.970Z
-    transcript_error: |
-      MiMo transcription failed: 401 {
-          "error": {
-              "message": "Invalid API Key",
-              "param": "Please provide valid API Key",
-              "code": "401",
-              "type": "invalid_key"
-          }
-      }
+    transcript_submitted_at: 2026-08-13T18:34:22.174Z
+    transcript_completed_at: 2026-08-13T18:37:30.303Z
+    transcript_job_id: 6de7643a-c964-4ec2-8ee6-0cb595777587_df5f72c5746640d29e2730dadd2f30b1,6535075a-31ef-45e5-9bfa-e953f555fd34_35f2f3f3ef5f4b8dacc0bfc3a63783c8,4c08c8b3-d388-4e4c-970f-3838fe14248c_89a394bf68964ce0ab8f136bd1fa3025,fe733e77-f349-452e-8803-218d9cefc8f0_64a62560c99a49328d97d292b4922c55,c528cc64-35a7-41ab-b3e8-2af8abea09ca_99eacd9b5f1c4e43b16c7469d38b64ab
   - id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     guid: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo
