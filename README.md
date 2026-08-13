@@ -20,16 +20,19 @@ PodDeck 把播客 RSS 里的长访谈和 transcript 自动转成结构化 Slidev
 
 | Source | RSS |
 |---|---|
-| TBPN | `https://feeds.transistor.fm/technology-brother` |
-| Unchained | `https://unchained.libsyn.com/unchained` |
+| TBPN（精选） | `https://feeds.transistor.fm/technology-brother` |
+| Unchained（精选） | `https://unchained.libsyn.com/unchained` |
 | Risky Business | `https://risky.biz/feeds/risky-business/` |
 | Acquired | `https://feeds.transistor.fm/acquired` |
 | Flirting with Models | `https://feeds.captivate.fm/flirting-with-models/` |
 | 张小珺 Xiaojun Podcast | `https://feed.xyzfm.space/dk4yh3pkpjp3` |
 | 硅谷101 | `https://feeds.fireside.fm/sv101/rss` |
+| 晚点聊 LateTalk | `https://feeds.fireside.fm/latetalk/rss` |
 | Lex Fridman Podcast | `https://lexfridman.com/feed/podcast/` |
 
 `Huberman Lab`、`Theories of Everything` 仍保留 source 配置，`rss_url` 为空时会生成空 cache/plan，等待补充 RSS。
+
+`TBPN` 和 `Unchained` 使用精选规则控制同质内容：TBPN 只收单主题深访和专题；Unchained 排除 `The Chopping Block`、`DEX in the City`、`Bits + Bips` 等高频新闻圆桌，只保留最近三周、至少 55 分钟的独立节目。已有内容继续保留。
 
 ## 核心工作流
 
@@ -159,11 +162,14 @@ sources:
     rss_url: https://example.com/feed.xml
     min_duration: 3600
     min_date: "20260101"
+    lookback_days: 30
     cache_limit: 100
     color: "#2563eb"
     description: 简短描述
     filter_keywords: [AI, agent, llm]
 ```
+
+`include_title_patterns`、`exclude_title_patterns` 可按栏目标题做正则筛选；`lookback_days` 用滚动时间窗阻止陈旧积压持续进入队列。
 
 然后运行：
 

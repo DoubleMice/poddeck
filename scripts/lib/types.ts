@@ -3,6 +3,9 @@ export interface Source {
   name: string
   rss_url?: string
   filter_keywords?: string[]
+  include_title_patterns?: string[]
+  exclude_title_patterns?: string[]
+  lookback_days?: number
   episode_limit?: number
   auto_tag?: boolean
   color?: string

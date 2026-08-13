@@ -7,6 +7,7 @@ import { resolve } from 'node:path'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { fetchText, parseRssFeed } from './lib/rss.ts'
 import { log } from './lib/log.ts'
+import { matchesSourceTitle } from './lib/source-filter.ts'
 import type { SourcesFile, EpisodesFile, QueueFile, QueueEntry } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -50,6 +51,7 @@ async function main() {
     for (const episode of episodes) {
       if (accepted >= perSourceLimit) break
       if (existingIds.has(episode.id)) continue
+      if (!matchesSourceTitle(source, episode.title)) continue
 
       if (keywordPatterns.length > 0) {
         const matched = keywordPatterns.some(re => re.test(episode.title))

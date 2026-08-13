@@ -21,6 +21,7 @@ import { resolve, join } from 'node:path'
 import { readFileSync, existsSync, readdirSync } from 'node:fs'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { log } from './lib/log.ts'
+import { effectiveMinDate, matchesSourceTitle } from './lib/source-filter.ts'
 import type { SourcesFile, Source, EpisodeMeta, PlanEntry, PlanFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -47,7 +48,7 @@ function emptyPlan(source: Source): PlanFile {
     source: source.id,
     refreshed_at: new Date().toISOString(),
     min_duration: Number(overrideDuration ?? (source as any).min_duration ?? 3600),
-    min_date: String(overrideDate ?? (source as any).min_date ?? '20260101'),
+    min_date: effectiveMinDate(source, overrideDate),
     total_candidates: 0,
     done: 0,
     pending: 0,
@@ -117,7 +118,7 @@ function planOneSource(source: Source, existingGenerated: Set<string>, seenFinge
   }
 
   const minDuration = Number(overrideDuration ?? (source as any).min_duration ?? 3600)
-  const minDate = String(overrideDate ?? (source as any).min_date ?? '20260101')
+  const minDate = effectiveMinDate(source, overrideDate)
   const useKeywords = (source as any).use_keywords_in_plan ?? false
 
   const existingPlan = loadExistingPlan(source.id)
@@ -132,6 +133,7 @@ function planOneSource(source: Source, existingGenerated: Set<string>, seenFinge
   for (const v of cache) {
     if (typeof v.duration !== 'number') continue
     if (v.duration < minDuration) continue
+    if (!matchesSourceTitle(source, v.title || '')) continue
     const dateKey = String(v.published_sort || v.upload_date || '')
     if (dateKey && dateKey < minDate) continue
     // Skip if already generated
