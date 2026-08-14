@@ -1,11 +1,11 @@
 source: risky-business
-refreshed_at: 2026-08-14T03:49:52.962Z
+refreshed_at: 2026-08-14T18:20:34.437Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -39,5 +39,9 @@ episodes:
 
 
       This episode is also available on YouTube
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-14T18:20:35.757Z
+    transcript_job_id: efb33fd5-9c9e-44f8-8181-907ae937a92c_d7cf8ff5a353467facf8e06530820ab7,4ceb0f7a-bdc8-4b5c-87b9-19e7e0168198_73fc799a23814fcb9ea9ce57f4d4c161
+    transcript_completed_at: 2026-08-14T18:22:00.082Z

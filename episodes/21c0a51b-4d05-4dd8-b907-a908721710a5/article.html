@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martin Shkreli 拆解 Situational Awareness 基金崩塌</title>
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #1f2328;
+    background: #fafafa;
+    line-height: 1.75;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 20px 72px; }
+  header { text-align: center; margin-bottom: 40px; }
+  header h1 { font-size: 28px; line-height: 1.4; margin-bottom: 12px; }
+  header .meta { font-size: 14px; color: #6a737d; }
+  header .meta a { color: #6a737d; }
+  h2 { font-size: 22px; margin: 40px 0 16px; padding-left: 12px; border-left: 4px solid #1d4ed8; }
+  p { margin-bottom: 14px; }
+  .lead { font-size: 18px; color: #444; }
+  blockquote {
+    margin: 16px 0; padding: 14px 18px; background: #f0f6ff; border-left: 4px solid #1d4ed8;
+    border-radius: 0 8px 8px 0; font-style: italic; color: #374151;
+  }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } body { font-size: 16px; } }
+  .card { padding: 14px 16px; border-radius: 10px; font-size: 14px; line-height: 1.6; }
+  .card strong { display: block; font-size: 15px; margin-bottom: 4px; }
+  .c-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .c-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .c-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .c-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .c-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .c-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .quotes blockquote { background: #fafafa; border-left-color: #94a3b8; }
+  .quotes .who { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #6a737d; }
+  .gloss { color: #6a737d; font-size: 15px; }
+  .num { font-weight: 700; color: #1d4ed8; }
+  footer {
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid #e5e7eb;
+    font-size: 13px; color: #6a737d; text-align: center;
+  }
+  footer a { color: #1d4ed8; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Martin Shkreli 拆解 Situational Awareness 基金崩塌</h1>
+  <div class="meta">Martin Shkreli · TBPN · 2026 年 7 月 · 44 分钟<br>
+  来源：<a href="https://share.transistor.fm/s/6fd15200">share.transistor.fm/s/6fd15200</a></div>
+</header>
+
+<p class="lead">一只 <span class="num">450 亿美元</span>、重仓 Anthropic 的 AI 杠杆基金，在 48 小时之内从华尔街巅峰走到被强制清盘。前对冲基金经理 Martin Shkreli 在本期 TBPN 中逐层拆解了这场崩塌：狩猎它的空头、接盘它的 Citadel、被迫强卖的银行，以及一条被反复验证的教训——杠杆面前，25% 的回撤就足以让任何人出局。</p>
+
+<h2>为什么这期值得看</h2>
+<div class="cards">
+  <div class="card c-blue"><strong>一只 AI 押注之王的猝死</strong>450 亿美元的基金一周内被强制清盘，传言、竞标、成交在 48 小时内完成。</div>
+  <div class="card c-green"><strong>杠杆数学的残酷</strong>4 倍杠杆意味着 25% 的回撤就出局；净值据传从 350 亿美元跌到 50 亿。</div>
+  <div class="card c-yellow"><strong>上千亿仓位怎么卖</strong>没有「一键清仓」：做市商广告、电话排查、银行强卖、打包折扣 20–50%。</div>
+  <div class="card c-red"><strong>狩猎与传染</strong>「对着基金开枪」是华尔街的达尔文式传统；同类 AI 基金可能都在同一个交易里。</div>
+  <div class="card c-purple"><strong>泡沫的永恒剧本</strong>从 60 年代 Manhattan Fund 到 .com，每一代都有一个 all-in 周期的人。</div>
+  <div class="card c-orange"><strong>仓位管理的数学</strong>Kelly 准则：55% 胜率的最优仓位只有 10%，而几乎所有人都在超仓 2–10 倍。</div>
+</div>
+
+<h2>一、48 小时：从传闻到既成事实</h2>
+<p>Shkreli 说，自己上周中第一次听到基金承压的传闻，这些说法「上周晚些时候开始具体化」，到周一早上，一切已经是「fait accompli」——既成事实。他特别指出，这家基金把秘密保守得相当好：基金没有泄露自己在受伤，据他所知也没有每日净值披露。但作为一家年轻的对冲基金，它在投资者沟通上「做得并不好」：13F 披露迟到，月度、季度信件也不够及时。</p>
+<p>与此同时，一场竞标在封闭圈里进行。Jane Street、Millennium 和 Citadel 在上周五晚些时候被请进来，对基金的剩余资产出价。Shkreli 补充了一个耐人寻味的细节：Jane Street 据传是这只基金的 LP，却对竞标没有兴趣——不过它可能接走了 Anthropic 股份。</p>
+
+<h2>二、泡沫的解剖：决定价格的是边际 5%</h2>
+<p>Shkreli 对「基本面」的解释很直白：聪明人最早进场，买进、看着价格涨、再买；然后不那么聪明的人注意到了，说「我也想要一年涨 400%」。像他这样的人——他自嘲——开始在接近顶部的地方买入。最弱的手买在顶部，所以他们也是最先卖出、最先恐慌的人。</p>
+<blockquote>"The weakest hands are buying at the top. So they're also the first to sell. First to panic."</blockquote>
+<p>他给出一个关键的观察：80–90% 的资产根本不会换手，决定价格的是边际 5% 的交易。如果那 5% 的人带着 3–4 倍杠杆，「25% 的回撤就能让你出局」。所以他并不惊讶于这场崩塌的速度——「基本面基本无关紧要」，真正驱动边际买卖双方的是情绪与杠杆。</p>
+
+<h2>三、杠杆的瀑布：450 亿如何变成 50 亿</h2>
+<p>Shkreli 把账目摊开：基金峰值约 <span class="num">450 亿美元</span>，其中约 100 亿是 Anthropic 股份，其余现金以 4 倍杠杆运作，总敞口约 <span class="num">1200 亿美元</span>。总敞口跌 25%——听起来对 1200 亿的盘子不算什么——就是约 300 亿的亏损。但亏的不是敞口，是净值：<span class="num">350 亿变成 50 亿</span>。</p>
+<p>接下来是主经纪商的逻辑。没有一家主经纪商会允许你带着 900 亿的敞口继续玩，因为净值一旦跌破零，亏的就是它们的钱——在经历了一次次爆仓之后，它们绝不打算再亏一分。于是它们把你叫进来，告诉你：「这些资产现在归我们了。」Shkreli 补充了主经纪商的生意经：它们靠融资利差赚钱，1% 的利差已算巨大，客户借外汇做杠杆相当于白送 400 个基点，规模足够大时甚至能拿到 600–800 个基点。「杠杆是主经纪商最好的朋友」——直到你的净值逼近零。</p>
+
+<h2>四、对着基金开枪：华尔街的狩猎传统</h2>
+<p>Shkreli 回忆，他的老东家 Cramer 把一种操作叫做 <strong>shooting against a fund</strong>——对着基金开枪。如果你知道有人必须清仓，最有利的做法是卖掉所有共同持仓，然后开始做空他的一切，尽可能快地加速它的垮台。「这是一种非常普遍的做法，」他承认，「我和他们没有重叠持仓，所以我当然不会这么做——但有大量基金在做空这些股票，期待一场恐慌和崩盘。」</p>
+<p>而一旦市场闻到了血，连锁反应会变得凶残。Shkreli 引述华尔街的老话：<em>一旦水里见了血，这些仓位就会一路跌到零。</em>他的表述更加具象：空头会把 Micron 砸到 5 美元，「就为了把这家伙在 3 美元清算掉」。当你必须卖出 1000 亿的时候，市场会把一万亿摆在你面前，看你什么时候「哭出来」。这是最马基雅维利式的残酷——但以他的杠杆水平，别无结局。</p>
+
+<h2>五、Anthropic 股份：1 亿美元的试探</h2>
+<p>Shkreli 的机构收到过一个报价：1 亿美元的 Anthropic 股票。他的第一反应是挑眉——「这是 Leopold 在卖吗？」这里藏着华尔街的试探规则：当你想卖 40 亿美元时，你不会直说，你会先说卖 1 亿。「而一个想买 1 亿的人，通常也吃得下 5 亿甚至更多。」</p>
+<p>传闻随后变得具体：基金在周末联系了约 10 家机构，为 Anthropic 股份寻找买家以补充流动性，报价对应 <span class="num">1.1 万亿美元</span>的估值——Shkreli 认为这与当时的市场交易水平大致相当。据他的报道，股份卖出了一半，买家是谁仍不明确。</p>
+
+<h2>六、Ken Griffin 想成为大家出事时去找的人</h2>
+<p>竞标中，Millennium 出了价，但「Citadel 的报价更好」。Shkreli 的判断是：Ken Griffin 想成为那个所有人出事时都会去找的人。这个生态位正在空出来——「Buffett 越来越老了，而且这本来也不是 Buffett 想做的生意。」华尔街需要一个在银行急着脱手风险仓位时能接下整本书的人。</p>
+<p>Citadel 有先例可循：Amaranth 在天然气期货上爆仓时，它接走了组合——事实上金融史上几乎每一次爆仓它都出现过；Enron 倒下时，它直接挖走了全部人才。Shkreli 的类比是：就像当年美国政府找 Warren Buffett 救 Goldman 一样，Goldman 和 Bank of America 们知道该打给谁，「而 Ken 正在非常努力地让自己成为那个号码」。这笔生意的账是：你可能十年才被需要一次，但十年一次的机会，「白拿 50 到 100 亿」。</p>
+
+<h2>七、上千亿仓位怎么卖：五步平仓</h2>
+<p>零售投资者常有一个误解：持有 5000 万美元的芯片股，难道不能直接市价卖出吗？Shkreli 说，到了这个量级，事情完全不同。第一步是评估「屏幕卖出」：如果你持有相当于 10 天成交量的筹码，直接砸盘会把股价打掉一半以上。第二步是广告系统：银行必须为你的单子打广告——Goldman 的四位做市商代码是 GSCO——「有个大卖家」的消息会传遍市场，想抢跑的小鱼会开始做空。第三步是电话排查：你问 Fidelity，不卖；下一个，不卖；ETF、指数基金都不卖——「那只可能是他们」。然后你发现他所有持仓都在跌，一切就都清楚了。</p>
+<p>第四步，银行不等你同意。「我不在乎你想不想卖，我们无论如何都要卖。」因为 <em>Goldman Sachs 不是做 AI 股票生意的</em>——董事会宁可确定地亏掉 10 亿、撕掉创可贴，也不愿赌会不会亏 50 亿。「在它转移之前就把胳膊砍掉」，于是有了第五步：一次性的 fire sale，把整个组合打包卖给 Citadel，折扣可能高达 20–50%。Shkreli 认为这是非常聪明的做法——它换来了了结。据传买方入账即有 30–40 亿美元的浮盈。</p>
+<p>但接盘真正的门槛不是钱，而是持有能力：「这些股票的买家必须有流动性，能拿着它们五年什么都不做。」基金的一只日本持仓 Kyosha 已经被砸到 3 倍市盈率——「他们基本上是在逼你卖出」。唯一大得足以、强得足以拿住 1000 亿而不眨眼的，是 Citadel 这种体量——而即便是它，也会有人想反过来碾压。</p>
+
+<h2>八、传染：一个人的 1000 亿，乘以五到十倍</h2>
+<p>Shkreli 提醒听众不要把这件事看成孤例：「这不仅仅是 Leopold 的 1000 亿总敞口——是它乘以五或十倍。」很多对冲基金在同一个交易里。7 月的业绩数字很快就要出来了，他预计会有一些基金「即将被发现跌了 30% 或 40%」。市场很流动，但几周之内出现这么大的下行压力，仍然罕见。</p>
+<p>他的结论分两层：清算本身已经结束，谢天谢地；但传染的余波可能才刚刚开始。这也解释了为什么他倾向于认为市场会迎来「一次更长、更拖沓的下跌」——今天的反弹很舒服，泡沫去了不少，但接下来呢？</p>
+
+<h2>九、历史总是押韵</h2>
+<p>Shkreli 把这期节目放在一个更长的谱系里。60 年代有 Gerald Tsai 的 Manhattan Fund——被 Warren Buffett 点名批评的 go-go 基金；2000 年有 Ryan Jacob 的互联网基金——崩盘时 Shkreli 本人正在 Cramer 的公司；2021 年有 Tiger / SoftBank 的风投热潮。「每一代都有一个相信周期、把全部身家押上周期的人。」他对这种人抱有敬意，但周期本身从不留情。区别只在于时间尺度：.com 泡沫花了三四年「耐心地上涨、耐心地下跌」，而这一次，一切在一个月内压缩完成。</p>
+<p>他讲了一个正面的对照：一位朋友极早期就跟进了这笔交易，收益「和 Leopold 一个量级」，并且在接近顶部时做了对冲。Shkreli 称他为「奇迹交易员，我认识的最好的交易员」——如果他能在顶部卖出并转空，Shkreli 愿意「膜拜他为史上最伟大」。泡沫里从来不缺聪明人，缺的是在对的位置离场的人。</p>
+
+<h2>十、信息的换岗：玩家比记者先知道</h2>
+<p>这次崩塌的报道本身也是故事：Shkreli 先发布了消息，约两小时后 Financial Times、Bloomberg 和华尔街日报才跟进。他称之为一场「换岗」——大媒体的记者非常出色，但他们不是现役或退役的玩家，而街上发生的事，玩家总会先听到。</p>
+<p>但「先知道」是有代价的。他承认自己会刻意坐拥信息：有些消息不能分享——比如数百次正在进行的募资——因为泄露一次，就再也不会有下一次。媒体可以把读者的利益放在第一位、不惜烧掉桥和资源；他不能，他还想继续和这些消息源说话。这次他选择发布的触发点，是朋友的一句话：「现在每个人都在听说了。」那一刻他知道，该把猫放出袋子了——反正它本来也要被放出来了。</p>
+
+<h2>十一、这行有多苦：凌晨 3 点的韩国股价</h2>
+<p>当主持人问 Leopold 未来能否以风投身份重建事业时，Shkreli 先讲了一个更根本的问题：为什么要做对冲基金经理？「我告诉一个想开基金的朋友：这是世界上最痛苦、最可怕的生意。为什么要干这个？」他的对比很残酷：一个年入 1 亿美元的 newsletter 生意，「就超过地球上几乎所有对冲基金了」。这行的日常是凌晨 3 点醒来查韩国股价，6 点再醒一次——「你其实没在做任何有生产力的事」，只是在打一场高风险的疯狂扑克。他自己做过，并且「绝不会再来一次」——但人们还是前赴后继，因为「这是世界上最性感的事」，是宇宙主宰的荣耀。</p>
+<p>至于 Leopold 本人，Shkreli 给了 Peter Thiel 的先例：Thiel 的对冲基金 Clarion 最后几年并不顺，但他转身继续做风投，做出史上规模最大、最成功的基金之一，又重回宏观交易，据说做得不错。所以 Shkreli 不认为这是终点：「不管这事怎么收场——他会回来，并且会成功。」只是要先接受市场的一课：「市场总是会教你谦卑。」两个月前还是地球上最大、最成功的对冲基金，如今被强制清算——这是极快的逆转。而在这一切之外，还有一个残忍的注脚：这家伙这个周末还要结婚。</p>
+
+<h2>十二、Kelly 准则、Tim Cook 与市场去向</h2>
+<p>节目的最后一部分回到数学。Paul Tudor Jones 说过，每个交易者都在重复同一个错误：仓位大概是应有水平的 2 到 10 倍。Kelly——贝尔实验室的那位——证明存在一个最优下注比例：55% 的胜率对应 10% 的仓位，对多数人来说还是太颠簸，所以大家用半个 Kelly 或四分之一个 Kelly。Shkreli 自己做了 Kelly 计算器和组合模拟器，结论令人清醒：即使每笔交易都有 60/40 的胜率，持续超仓也会归零——而「谁能在股市里拥有 60/40 的胜率？没有人」。</p>
+<p>他的反面教材是一段亲身经历：一位 Point72（前 SAC Capital）的老将，管理着 3–4 亿美元自有资金，90% 的资本就是现金，只做小小的交易，「像小鸡啄米」，二十多年没有一个亏损季度，年化约 30%。Shkreli 看完之后的反应是——一拿到资金就上了 8 倍杠杆。「这是世界上最蠢的事。」他承认自己几乎总是在超仓，而几乎每只基金、每个散户也都一样。</p>
+<p>最后是 Tim Cook。当全世界都在 FOMO——大型科技公司「FOMO 得和 Leopold 一样狠，甚至更狠」——只有一个人坐在后面说：不是我，什么都不做。市场奖励了 Microsoft 的克制，惩罚了 Meta 和 Google 的不克制。至于市场往哪走，Shkreli 给出了两派理论（流动性出清后新高，或下跌趋势延续），而他最反直觉的一句话是：最意外的事，反而是看到所有资产创下全新的历史新高——几乎每个华尔街人都怀疑这会发生，而正因如此，它才有机会发生。</p>
+
+<h2>核心金句</h2>
+<div class="quotes">
+  <blockquote>"The weakest hands are buying at the top. So they're also the first to sell. First to panic."<span class="who">— 论泡沫的解剖：最弱的手买在顶部，也最先恐慌离场</span></blockquote>
+  <blockquote>"A 25% drawdown takes you out of business."<span class="who">— 论 4 倍杠杆：25% 的回撤就足以让一只基金出局</span></blockquote>
+  <blockquote>"I think Ken wants to be the guy that everyone goes to when they're in trouble."<span class="who">— 论 Ken Griffin：成为所有人出事时第一个想到的号码</span></blockquote>
+  <blockquote>"We'll send Micron to $5, you know, just to liquidate this guy at three."<span class="who">— 论华尔街的达尔文主义：为了在 3 美元清算你，先把 Micron 砸到 5 美元</span></blockquote>
+  <blockquote>"Goldman Sachs is not in the business of holding AI stocks."<span class="who">— 论银行的强卖逻辑：宁要确定的亏损，不要可能的灾难</span></blockquote>
+  <blockquote>"Market tends to humble you."<span class="who">— 论谦卑：两个月，从全球最大对冲基金到强制清算</span></blockquote>
+</div>
+
+<footer>
+  本文基于 TBPN 播客节目「Martin Shkreli Breaks Down the Collapse of Situational Awareness」（2026 年 7 月）整理。<br>
+  收听原节目：<a href="https://share.transistor.fm/s/6fd15200">share.transistor.fm/s/6fd15200</a> · 图文演示版见 PodDeck 对应 deck。
+</footer>
+
+</div>
+</body>
+</html>

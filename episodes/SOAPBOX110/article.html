@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero Trust(ish) Networks — Adam Pointon 对谈实录</title>
+<style>
+  :root {
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --faint: #9ca3af;
+    --line: #e5e7eb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+    color: var(--ink);
+    background: #fafafa;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 64px;
+  }
+  header.hero { padding-bottom: 28px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+  header.hero h1 { font-size: 1.7em; line-height: 1.35; margin-bottom: 10px; }
+  header.hero .meta { color: var(--muted); font-size: 0.88em; }
+  header.hero .meta a { color: #2563eb; text-decoration: none; }
+  section { margin-bottom: 40px; }
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    border-left: 4px solid #2563eb;
+    line-height: 1.4;
+  }
+  p { margin-bottom: 14px; }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    margin-top: 6px;
+  }
+  .card {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 0.92em;
+  }
+  .card b { display: block; margin-bottom: 4px; }
+  .blue   { background: #eff6ff; border-color: #3b82f6; }
+  .green  { background: #f0fdf4; border-color: #22c55e; }
+  .yellow { background: #fefce8; border-color: #eab308; }
+  .red    { background: #fef2f2; border-color: #ef4444; }
+  .purple { background: #faf5ff; border-color: #a855f7; }
+  .orange { background: #fff7ed; border-color: #f97316; }
+  blockquote {
+    margin: 18px 0;
+    padding: 14px 18px;
+    border-left: 4px solid #3b82f6;
+    background: #eff6ff;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote p { margin: 0 0 6px; font-style: italic; }
+  blockquote .attr { font-size: 0.85em; color: var(--muted); font-style: normal; }
+  .quotes blockquote:nth-child(odd)  { border-color: #22c55e; background: #f0fdf4; }
+  .quotes blockquote:nth-child(3n)   { border-color: #eab308; background: #fefce8; }
+  .gloss { font-size: 0.9em; color: var(--muted); background: #f3f4f6; border-radius: 8px; padding: 10px 14px; margin: 12px 0; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 0.85em;
+    color: var(--muted);
+  }
+  footer a { color: #2563eb; text-decoration: none; }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    main { padding: 24px 16px 48px; }
+    header.hero h1 { font-size: 1.4em; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <h1>Zero Trust(ish) 网络：零信任正统教条失灵之后，务实派怎么做暴露面管理</h1>
+  <div class="meta">
+    嘉宾：Adam Pointon（Knock Knock 首席执行官）· 主持：Patrick Gray · Risky Business · Soap Box 110 · 2026 年 8 月 · 29 分钟
+  </div>
+</header>
+
+<section>
+  <h2>为什么这期值得关注</h2>
+  <div class="cards">
+    <div class="card blue"><b>AI 把漏洞利用推进"当天时代"</b>从 CVE 公布到野外出现利用，今天已是同一天；2027 年预计进入分钟级。</div>
+    <div class="card green"><b>Zero Trust(ish)：务实版零信任</b>与其全网重构，不如在扁平内网上挑出最危险的 150 个资产，逐个封口。</div>
+    <div class="card yellow"><b>打补丁已经赢不了</b>Citrix、Fortinet 这类边缘设备暴露在裸互联网上，补丁速度追不上攻击速度。</div>
+    <div class="card red"><b>零信任平台的反噬</b>大型 ZTNA 项目落地后"箱子反而没法管了"，理想设计撞上真实网络。</div>
+    <div class="card purple"><b>双轨安全战略</b>资源全部押给主营业务应用；其余资产隐藏、缓解，然后"送进牧场"。</div>
+    <div class="card orange"><b>好产品自会扩散</b>客户买 20 个许可证、一天部署完，回头就要求报价 4,000 个。</div>
+  </div>
+</section>
+
+<section>
+  <h2>一场利益关联的坦诚对谈</h2>
+  <p>这期 Soap Box 有一点特殊。按照惯例，Patrick Gray 在开场声明节目由赞助商全资赞助；但他紧接着又加了一条声明：今天的嘉宾 Adam Pointon 是 Knock Knock 的首席执行官，而 Patrick 本人是 Knock Knock 的董事会成员，深度参与这家公司的事务，并且"显然是一位大粉丝"。这是一场利益关联毫不掩饰的对谈——好处是，两个人对这家公司、对整个零信任市场的看法足够深入，没有客套。</p>
+  <p>Knock Knock 做的事情，用 Patrick 的话说，是"把 SSO 登录和网络控制粘在一起"：企业有 Okta，有一堆 Palo Alto、Fortinet、Cisco 防火墙，网络边缘还有一堆人人可及的脆弱设备。Knock Knock 的思路是——把这些东西全部挡掉、全部防火墙化；当有人需要访问时，照常走 SSO 登录，然后在一个网页门户上点一下"请为这个服务开放端口"，后台就把这个 IP 写进现有防火墙的放行名单，端口随即开放。目标很明确：大幅减少未认证用户能够触达的远程代码执行攻击面。内网场景同理——一个 Windows agent 可以编排 Windows 防火墙，把内网上那些不该人人可及的 RDP 端口管起来。</p>
+  <p>Patrick 的感慨是：这么简单的一个想法，居然要等到 2026 年才成为人们愿意掏钱买的产品。这就是这期对谈的起点——零信任的正统教条某种程度上失败了，市场交付了一个又一个"为现实世界量身定做"口号响亮、实则不然的零信任平台；而 Knock Knock 简单、好用、一天就能部署完。两人的落点由此展开：零信任最好被理解为一个指导原则，而不是一种架构。</p>
+</section>
+
+<section>
+  <h2>为什么是现在：AI 与零日时钟</h2>
+  <p>Adam 说，减少攻击面从来都是该做的事——从早期的防火墙时代（机器暴露在公网、端口全开），到后来只放行必要端口的有状态防火墙，把任何主机或服务放在裸互联网上，始终是个坏主意。区别在于，过去发现漏洞、利用漏洞都需要时间；现在 AI 把这个窗口压没了。</p>
+  <blockquote>
+    <p>"And now with AI, it's a proper mess, and there's no time to respond."</p>
+    <div class="attr">— Adam Pointon，谈 AI 如何改变了暴露面的时间尺度</div>
+  </blockquote>
+  <p>Patrick 提到一个指标：Zero-day Clock。它追踪的是从 CVE 进入数据库，到野外真正出现利用的时间差。这个数字已经连续下降 20 年，如今小到"滑稽"——Adam 的形容是"吓人地小"：今天已经是同一天，预测到 2027 年会进入分钟级。背后的机制是 AI 的扩散：逆向补丁、对照 CVE 生成利用代码，然后自动在野外跑起来。Adam 的结论很直接：同一天已经够吓人，分钟级就是失控。</p>
+</section>
+
+<section>
+  <h2>RSA 现场：一个 Citrix 漏洞的四天</h2>
+  <p>Adam 给了一个亲历的样本。今年 RSA 大会期间，一个 Citrix 漏洞公布。他记得很清楚：周一上午 9:31 看到公告，到周四、同一周之内，野外利用的报告就出来了。留给企业打补丁的窗口只有几天，用他的话说，那是"相当难熬的几天"。</p>
+  <blockquote>
+    <p>"It was 9:31 AM on the Monday ... and then by Thursday, the same week, it was reported that there was exploitation in the wild."</p>
+    <div class="attr">— Adam Pointon，回忆 RSA 期间的 Citrix 事件</div>
+  </blockquote>
+  <p>讽刺的地方在于，Citrix 恰恰是 Knock Knock 的重要销售驱动之一。远程访问软件本身就暴露在公网上，是最需要被"藏起来"的那类设备。Adam 的比喻是：复杂软件坐在裸互联网上，围墙花园的内部软乎乎的，外面却是复杂的攻击面——这从来不是好配方。Knock Knock 的做法是加一层流程化的防护，把攻击面藏起来，从而给防御方换来响应时间。</p>
+</section>
+
+<section>
+  <h2>安全厂商的设备也在裸奔</h2>
+  <p>更让 Patrick 觉得荒诞的是，正在被人打穿的设备，很多出自安全厂商之手：Fortinet、Palo Alto 的远程访问产品。他的原话带着反讽——这些设备"apparently"来自安全公司，结果正在把客户送进火坑。相应地，Knock Knock 出现了一个反直觉的用法：编排 Palo Alto 或 Fortinet 设备自身的防火墙，让设备把自己从公网上藏起来。</p>
+  <blockquote>
+    <p>"Yo dog, I heard you like firewalls, so I put a firewall on your firewall."</p>
+    <div class="attr">— Patrick Gray，总结"给防火墙再装一道防火墙"的用法</div>
+  </blockquote>
+  <p>这句话需要转一下弯才能消化：你可以用 Knock Knock 去控制一台防火墙设备自己的防火墙规则，让这台设备对公网不可见。听起来绕，但这就是当前边缘设备的现实处境——安全产品本身成了最大的暴露面。</p>
+</section>
+
+<section>
+  <h2>打补丁赢不了</h2>
+  <p>两人的共同判断是：如果你的边缘跑着 Citrix、Fortinet 这类设备，你不可能靠补丁速度超过攻击者，这是做不到的。于是选项只剩两个。其一，弃用旧的远程访问方案，迁移到更当代的产品——但"如果容易，大家早就全换了"，这里自有其难处。其二，上缓解措施，比如 Knock Knock，把攻击面藏起来，实质上是延长这些设备的可用寿命。</p>
+  <blockquote>
+    <p>"Patching ain't going to do it."</p>
+    <div class="attr">— Patrick Gray，对补丁路线的结论</div>
+  </blockquote>
+  <p>把镜头拉远，Patrick 盘点了一家普通组织剩下的暴露面：本不该发布到公网的各种设备管理界面、文件传输设备、工资系统、IoT、RDP……这些东西要么消失，要么接受某种缓解，因为补丁同样救不了它们。</p>
+</section>
+
+<section>
+  <h2>双轨战略：令牌与"牧场"</h2>
+  <p>由此，Patrick 提出一个预期的分工：安全投入会分成两条轨道。一条是主应用——比如航空公司的在线订票系统，你没法把它从网络边缘撤掉，只能把大量资源投进去，把它做好、做强。另一条是其余的一切：边缘杂物、遗留系统，把这些东西"送进牧场，一枪解决"——他自己承认这个说法有点极端。</p>
+  <blockquote>
+    <p>"Put all of your tokens into like your primary application that's exposed to everything and is complicated and is like your main thing."</p>
+    <div class="attr">— Adam Pointon，对安全预算分配的主张（他的版本少了点暴力）</div>
+  </blockquote>
+  <p>Adam 同意这个框架，只是表达温和一些：把全部令牌押给那个暴露在外、结构复杂、却是命根子的主应用；其他的系统就藏起来，裹进层层防御，慢慢走向"牧场"、体面退休。他同时提醒，现实里总有一部分系统杀不掉也换不掉——大家都心知肚明，遗留系统还会再存在二三十年。对它们，策略是"护理"：承认漏洞就在那里，护理着这些系统和它们的漏洞，一路走到寿终正寝。</p>
+</section>
+
+<section>
+  <h2>零信任正统的简史与失灵</h2>
+  <p>这期对谈真正的理论落点，是零信任作为"刚性架构"的失败。Patrick 快速过了一遍历史：一切始于 Jericho Forum 的去边界化（de-perimeterization）思潮；随后 Operation Aurora 事件推动 Google 做了 BeyondCorp，把零信任变成可运行的实践。但"全包式"的零信任一直没能真正做到包罗万象——它做不到，因为那不是现实。</p>
+  <p>奇怪的局面随之而来：市场不断交付"全面零信任解决方案"，一个接一个。而在 Patrick 看来，零信任更应该是一种指导哲学——在能做到的地方做，而不是处处都做，因为处处做根本不可能。Adam 的定义更精炼：零信任是一种思维方式。</p>
+  <blockquote>
+    <p>"Systems should be self-defending, full stop, regardless. And then how you do that depends on what the system is."</p>
+    <div class="attr">— Adam Pointon，零信任作为思维方式的本质</div>
+  </blockquote>
+  <p>Adam 补充了两点遗憾。第一，到目前为止没有哪款软件真正把这件事做对，它们总是太复杂。第二，市场上有些产品其实很棒——比如能部署到 Windows 网络每一个端点、把网络锁死的产品——但现实需求往往很窄：你只想给数据中心里那批跑 RDP 的 Windows 机器上软件，不想搞全网改造；只想管那批机器，凭什么整套网络都要上？Patrick 的版本更直接：这些平台的问题不在于不好，而在于"你得按它的方式做一切"。</p>
+</section>
+
+<section>
+  <h2>简单，是 Jericho 留下的遗产</h2>
+  <p>Adam 把"简单"追溯到 Jericho 时代零信任的指导原则之一：keep it simple。你应该能看见正在发生什么、能理解它，系统应当简单而有韧性。而在虚拟网络层之间加"胶水"并不简单；依赖的服务一多，系统就变得不透明——Patrick 接了一句："it gets a bit opaque"。</p>
+  <p>更深一层的风险在于信任的转移：如果给一切资产之间都抹上胶水、都连进一个包揽所有分析的平台，那么这个平台本身就变成了新的信任对象——它就成了风险本身。从威胁模型的角度看，系统仍然需要自防御；把一切都交给一个云端中间层，等于信任那一整套栈、那个厂商和那次部署。Knock Knock 的思路反其道而行：让系统自己把攻击面收起来，不串联在流量路径上，不引入新的、本身也需要被信任的中间层。</p>
+</section>
+
+<section>
+  <h2>ZTNA 的副作用：理想设计撞上真实网络</h2>
+  <p>当前市场的紧迫感是真实的：AI 驱动的横向移动速度很快，企业都在急着把资产从公网撤下、锁紧内网——这对 ZTNA 厂商和 Knock Knock 都是利好。但大型 ZTNA 项目带来了意想不到的副作用。</p>
+  <blockquote>
+    <p>"Now we can't admin these boxes over here because we've ZTNA'd everything and it's not compatible with the way that we were admining them."</p>
+    <div class="attr">— 客户在大型 ZTNA 项目落地后的典型抱怨</div>
+  </blockquote>
+  <p>锁得太死，运维方式反而断了，于是 Knock Knock 进去补上这个缺口。更有意思的结局是：那家 ZTNA 厂商反过来邀请 Knock Knock 一起做其他单子。在 Patrick 看来，这恰好印证了很多"zero trusty"公司的问题——意识形态纯度与现实不匹配：工具是好的，但现实里总会剩下一块不经过 ZTNA 的访问需求。</p>
+  <p>把理想设计应用到真实网络，就变成一排例外和变通：这些是排除项，这些是变通办法，这些是因为锁得太死而不得不重新打开的口子。Patrick 为此造了个词——"greyfields"：在既有的灰地环境里重想设计太难，必须迁就网络、业务和人实际上怎么运作。所以他的结论是，没有任何单一技术做到了"处处零信任、一切魔法般可用"。除非你是 Google——他调侃道，就算 Google，拿 Nmap 扫它内网合适的角落，估计照样能发现点"gnarly stuff"。终极测试（半开玩笑）：Google 放一群 AI 进内网乱跑，然后宣布"它哪儿也没去成"。</p>
+</section>
+
+<section>
+  <h2>Zero Trust(ish)：只封最危险的一批</h2>
+  <p>典型企业内网的现实是：一旦进去，网络基本是平的。摆在面前的选项有两个：做全网重构、微分段、把控制措施铺满——这是一个大工程；或者换一种思路，把最危险的资产挑出来，逐个封口。Patrick 观察到，Knock Knock 正在后一条路上获得真实的战绩。</p>
+  <blockquote>
+    <p>"We've got this flat horror show network, we've identified the 150 riskiest assets on it."</p>
+    <div class="attr">— 客户的实际做法：在扁平内网上找出风险最高的 150 个资产</div>
+  </blockquote>
+  <p>做法是给这些资产装上 agent，把它们和网络的其余部分隔开。心态上的转变更重要：客户几乎把自己的 LAN 当作互联网——一个敌对的地方——来对待。这就是"Zero Trust(ish)"的含义：不是对一切应用零信任，而是对风险最高的东西应用零信任原则；不是"zero trust all the things"，而是"zero trust certain things"。之所以可行，是因为风险本就是分级别的：有些资产被攻破也没关系，靠检测和限制爆炸半径兜底；有些资产一旦被打穿就是世界末日，资源集中给它们。Adam 用 assume breach 的视角说得更清楚——如果假设一定会被突破，那我们真正在乎的是那些被突破后代价最高的系统，先把这些问题关掉，而不是干等。</p>
+</section>
+
+<section>
+  <h2>把 LAN 当互联网：内网版 captive portal</h2>
+  <p>Knock Knock 的 Windows agent 是这条路线在内网的执行者。它是 Go 编写的——Patrick 特意夸了一句"很现代"——能把 Windows 防火墙和 SSE 事件绑在一起。体验是这样：用户在内网上访问某台机器的 RDP 端口，得到的回应是连接关闭、连接拒绝；然后他打开网页门户，点一下"请开放这个端口"，那台机器上的 agent 就把端口对请求者的 IP 开放一段设定时间，比如 20 分钟，或由用户指定。</p>
+  <blockquote>
+    <p>"I used to be able to just see everything and attack everything, and now I just go to this simple website."</p>
+    <div class="attr">— Adam Pointon，描述用户视角的变化</div>
+  </blockquote>
+  <p>Adam 把这称为"内网的 captive portal"：机器们平时根本不存在，需要时通过 SSO 门户按需放行。架构上还有一个红利——Knock Knock 不串联在流量路径上（"we don't sit in line"），威胁模型更干净。这个 agent 甚至催生了一类新客户：重度 Windows Server 内部环境的组织，别的功能都不要，只要 agent——"yoink, yes please, we need them yesterday, can you help us install them?"。当然它也有边界：Go 编写的现代 agent，就别指望跑在 Windows 2000 服务器上了；那种场景要靠编排设备前面的防火墙来解决。</p>
+</section>
+
+<section>
+  <h2>同一产品，五花八门的暴露面</h2>
+  <p>Knock Knock 的增长有一个显著特征：客户不来自任何一个单一行业。用 Patrick 的话说，增长节奏是"slowly, slowly, then quickly, quickly"——公司刚刚完成正式的 seed 轮（此前只有 pre-seed），而支撑这轮融资的正是客户多样性：全球制药公司在边缘大防火墙上用它，银行、对冲基金、中小企业在用，大学也在用。大学是 Patrick 眼里的绝配场景：追求开放与知识，但开放带来复杂——巨型扁平网络里住满了"敌对"的学生。Adam 的总结是，这些组织看似不同，问题其实是同一个：把攻击面拿掉。</p>
+  <p>使用场景同样五花八门。一台 25 年前买的 ICS 设备，必须留着 VNC，agent 装不上去——Knock Knock 就通过它前面的防火墙把整台设备藏起来。合规要求给内网某台机器加 MFA——Knock Knock 是一种加 MFA 的方式。限制 OT/ICS 跳板机的访问、管理 Windows RDP 环境——都是同一套机制。资产的颜色"all the colors of the rainbow"，但动作只有一个：减少暴露、减少对风险资产的网络访问。Adam 说，客户一旦理解了机制，就开始四处套用——"我可以放在这里，也可以放在那里"。</p>
+  <p>这背后真正的价值，是给"风险已接受"提供了一个替代方案。那些躺在风险登记册上、只能盖章认命的项目——比如那台带着 VNC 的老设备——第一次有了别的处理办法。</p>
+</section>
+
+<section>
+  <h2>Land &amp; Expand 不需要策略</h2>
+  <p>节目的最后一段聊增长。Patrick 讲了一个观察：很多创业公司忙着设计"land and expand"策略，而 Knock Knock 的经历说明——不需要策略，需要的是好产品。客户先买 20 个许可证，因为那 20 个资产是最恐怖的暴露面；部署只用一天；然后客户回来，要求报 4,000 个许可证的价。</p>
+  <blockquote>
+    <p>"You don't need a strategy for land and expand. What you need is a good product."</p>
+    <div class="attr">— Patrick Gray，谈 Knock Knock 的增长模式</div>
+  </blockquote>
+  <p>扩散在组织内部自然发生：CISO 办公室先买，网络团队听说后找过来，其他团队再来问"我们这边的问题能不能也解"。Adam 的观察带着一点自嘲：产品真的有用、体验真的好，反而成了增长的理由，这本身有点悲哀——但这就是现实。早期的信号其实更简单：向人解释完产品是干什么的，对方的第一反应是"huh, nobody's done that yet?"——一个想法既根本又简单，人们却从没做过，这就是好主意的样子。</p>
+</section>
+
+<section>
+  <h2>给 CISO 的结论</h2>
+  <p>Patrick 为整期对谈收尾时坦承，他和 Adam 讨论了好几天得出的"深刻洞见"，可能是多数 CISO 早就知道的道理：零信任这件事，不能搞教条。</p>
+  <blockquote>
+    <p>"You cannot be ideological about it. You know, you have to be pragmatic. You just have to do it where you can with the tools that make sense."</p>
+    <div class="attr">— Patrick Gray，本期对谈的落点</div>
+  </blockquote>
+  <p>在能做到的地方做，用说得通的工具做，对最危险的那批资产下手——这就是 Zero Trust(ish) 的全部内涵。它不追求包罗万象，也不承诺一步到位；它承认网络是平的、系统是旧的、攻击者是快的，然后在这些约束里找到那个能真正减少暴露的动作。这期对谈没有宏大的架构宣言，反而因为这种务实，显得比许多"全面零信任平台"的宣传更接近安全的本质。</p>
+</section>
+
+<section class="quotes">
+  <h2>核心金句</h2>
+  <blockquote>
+    <p>"It's same day is pretty scary, and minutes next year is out of control."</p>
+    <div class="attr">— Adam Pointon：零日时钟的今天与明年</div>
+  </blockquote>
+  <blockquote>
+    <p>"Patching ain't going to do it."</p>
+    <div class="attr">— Patrick Gray：补丁路线对边缘设备已经失效</div>
+  </blockquote>
+  <blockquote>
+    <p>"Systems should be self-defending, full stop, regardless."</p>
+    <div class="attr">— Adam Pointon：零信任作为思维方式的本质</div>
+  </blockquote>
+  <blockquote>
+    <p>"Zero trust certain things instead of trying to zero trust all the things."</p>
+    <div class="attr">— Patrick Gray：Zero Trust(ish) 的定义</div>
+  </blockquote>
+  <blockquote>
+    <p>"Huh, nobody's done that yet?"</p>
+    <div class="attr">— 早期客户听完产品解释后的第一反应</div>
+  </blockquote>
+</section>
+
+<footer>
+  本文基于 Risky Business 播客 Soap Box 110 期对谈整理。节目由 Knock Knock 赞助，主持 Patrick Gray 为 Knock Knock 董事会成员。
+  原文链接：<a href="https://risky.biz/SOAPBOX110/">https://risky.biz/SOAPBOX110/</a>
+</footer>
+
+</main>
+</body>
+</html>

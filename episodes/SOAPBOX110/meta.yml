@@ -1,0 +1,30 @@
+id: SOAPBOX110
+source: risky-business
+title: "Soap Box: Zero Trust(ish) Networks"
+guest: "Adam Pointon"
+guest_role: "Knock Knock 首席执行官"
+published: "2026-08"
+duration: "29m"
+url: "https://risky.biz/SOAPBOX110/"
+thumbnail: "https://risky.biz/static/img/rb-feed-main.png"
+status: generated
+tags:
+  - ai-safety
+  - startup
+  - product-management
+  - interview
+  - ceo
+  - quick-take
+  - technical
+  - strategic
+summary: |
+  Risky Business 主持 Patrick Gray（同时是 Knock Knock 董事会成员）与 CEO Adam Pointon 对谈，讨论为什么"全包式"零信任架构在真实网络里行不通，以及一套被称为 Zero Trust(ish) 的务实路线：不搞全网重构，只对最危险的资产应用零信任原则。
+core_ideas:
+  - AI 逆向补丁让漏洞利用从"数周"缩短到同一天，2027 年预计进入分钟级，暴露面管理从最佳实践变成采购优先级
+  - '零信任是指导原则，不是架构：系统应当自防御（self-defending），但"处处零信任"不现实，市场交付的全包式平台过于复杂'
+  - '务实路线 Zero Trust(ish)：在扁平内网上挑出最危险的资产（如 150 个）逐个封口，把 LAN 当作敌对网络对待'
+  - '打补丁赢不了边缘设备：Citrix、Fortinet 这类暴露设备要么被替换，要么用 Knock Knock 这类缓解措施隐藏攻击面、延长寿命'
+  - '双轨安全战略：所有资源押给主营业务应用，其余资产隐藏、缓解、送进"牧场"直到退役'
+  - 'Knock Knock 的增长模式：客户先买 20 个许可证试点、一天部署完，回头要求报价 4,000 个——好产品自己会 Land & Expand'
+article_path: episodes/SOAPBOX110/article.html
+base: /episodes/SOAPBOX110/

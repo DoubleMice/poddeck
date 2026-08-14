@@ -1,0 +1,31 @@
+id: 460cc55b-c0f2-4898-95cf-f3372ece1eb2
+source: latepost
+title: '177: 详解Kimi K3：强到冲击Anthropic估值的模型什么样？'
+guest: "赵成阳、曾致远"
+guest_role: "Radix Arc 创始成员 / 华盛顿大学 CS 博士生"
+published: "2026-08"
+duration: "1h55m"
+url: "https://podcast.latepost.com/177"
+thumbnail: "https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/4/460cc55b-c0f2-4898-95cf-f3372ece1eb2/cover.jpg?v=1"
+status: generated
+tags:
+  - ai-research
+  - ai-safety
+  - hardware
+  - coding-agents
+  - panel
+  - researcher
+  - engineer
+  - deep-dive
+  - technical
+summary: |
+  晚点聊第 177 期，赵成阳与曾致远分别从 infra 与算法两条线拆解 Kimi K3 的 47 页技术报告：为什么说它是一艘"忒修斯之船"，混合注意力、Attention Residues 与删掉位置编码各自解决了什么问题，以及 K3 如何点燃美国的开源大辩论、冲击闭源模型的估值叙事。节目还深入讨论了两个 KDA（Kimi Delta Attention 与 Kernel Development Agents）、MOPD 后训练配方，以及"环境是更重要的护城河"的开源边界。
+core_ideas:
+  - K3 是首个达到 3T 级别的开放权重模型，主线 2.8T、百万 token 上下文；7 月 27 日的技术报告引爆硅谷，并点燃 7 月 24 日公开信以来的美国开源大辩论
+  - 成阳用"忒修斯之船"概括 K3：注意力、残差、FFN、位置编码几乎全部换过，但 attention 机制这个"船名"没有变
+  - '3:1 混合注意力：每 3 层 KDA 配 1 层 gated MLA，接近 3/4 的注意力层换成线性实现；SGLang 实测 69 层 KDA 固定 54MB，百万上下文在 MLA 上约 27GB'
+  - Quantile Balancing 路由均衡：每个 token 在 896 个专家里选 16 个，直接根据 router 分数分布估计 bias 调整量，是 K3 能 scale 到 3T 的重要因素之一
+  - 'Kernel Development Agents 让早期 checkpoint 就能写 kernel：双层 reward 加作弊检测，证明"在有验证器的领域，我认为RSI这个loop已经在高速运作"'
+  - '开源边界：权重、MoonEP、Flash KDA 等全开，但 RL environment 与知识图谱任务系统没开——"权重是一次训练的产物，但是环境是能够反复复用并且产生出下一代权重的流水线"'
+article_path: episodes/460cc55b-c0f2-4898-95cf-f3372ece1eb2/article.html
+base: /episodes/460cc55b-c0f2-4898-95cf-f3372ece1eb2/

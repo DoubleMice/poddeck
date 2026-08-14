@@ -1,13 +1,13 @@
 source: sv101
-refreshed_at: 2026-08-14T03:49:52.985Z
+refreshed_at: 2026-08-14T18:20:34.458Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
+done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
@@ -232,12 +232,9 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guest: 盛颖.
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-10T18:21:24.913Z
-    transcript_completed_at: 2026-08-10T18:22:14.509Z
-    transcript_error: "MiMo transcription failed: 400 {\"error\":{\"code\":\"400\",\"message\":\"Requested token count
-      exceeds the model's maximum context length of 8192 tokens. You requested a total of 9764 tokens: 5668 tokens from
-      the input messages and 4096 tokens for the completion. Please reduce the number of tokens in the input messages or
-      the completion to fit within the limit.\",\"param\":\"\",\"type\":\"BadRequestError\"}}"
+    transcript_submitted_at: 2026-08-14T18:26:39.930Z
+    transcript_completed_at: 2026-08-14T18:31:28.012Z
+    transcript_job_id: 512766b8-2561-42a2-80a3-64962064e66c_2c2cff78c9f945a3927f5d6460cba588,b1b18e5f-a5bf-443c-b389-27153e8de814_b24f4cbb25314a05a293ef2a976d4ea8,97b2d03f-26ee-4f35-bbb7-232fd0458873_5fa3af1ed3914ea7be895254b53d36a8,68c22ee2-7ceb-4cee-91c9-d109d8556432_fdd7a709938141929ebf4c3e3fa25727,d435a19d-9d34-417a-9f6a-e9393ed9bef1_e63d6e0d6e2547509065d1a80fa76f78,9a295859-cf91-4feb-bbc4-cec3e49ff7ae_e301201092aa48dd81563fa2344600b6,5ee26b44-dbe1-4f0c-8efe-6639156392ab_c312c485a2ba4dc594fcfb185b08dbc6,f7854942-726d-41db-919b-4030ee8813c9_a239d33c6892433bb3a7439117e68aad

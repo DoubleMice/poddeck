@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E247｜对话盛颖：xAI，Infra的浪漫，SGLang，开源，平权与"甄嬛传"</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #fafafa;
+    color: #1f2328;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+  header { margin-bottom: 36px; }
+  .kicker { font-size: 13px; letter-spacing: 0.08em; color: #8b949e; text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-size: 30px; line-height: 1.35; margin-bottom: 12px; }
+  .meta-line { font-size: 14px; color: #57606a; }
+  h2 { font-size: 22px; margin: 44px 0 14px; padding-left: 12px; border-left: 4px solid #4c6ef5; }
+  p { margin-bottom: 14px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 8px; }
+  .card { padding: 14px 16px; border-radius: 8px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .card b { display: block; margin-bottom: 4px; }
+  .card span { font-size: 14px; color: #57606a; line-height: 1.6; display: block; }
+  .blue { border-left: 4px solid #4c6ef5; }
+  .green { border-left: 4px solid #2f9e44; }
+  .yellow { border-left: 4px solid #f59f00; }
+  .red { border-left: 4px solid #e03131; }
+  .purple { border-left: 4px solid #7048e8; }
+  .orange { border-left: 4px solid #e8590c; }
+  .quote { margin: 18px 0; padding: 18px 20px; background: #f1f3ff; border-left: 4px solid #4c6ef5; border-radius: 0 8px 8px 0; font-style: italic; }
+  .quote .src { display: block; margin-top: 8px; font-size: 13px; font-style: normal; color: #57606a; }
+  .gloss { font-size: 14px; color: #8b949e; }
+  .quotes-block { margin-top: 24px; }
+  .quotes-block .quote { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .q-blue { border-left-color: #4c6ef5; }
+  .q-green { border-left-color: #2f9e44; }
+  .q-yellow { border-left-color: #f59f00; }
+  .q-red { border-left-color: #e03131; }
+  .q-purple { border-left-color: #7048e8; }
+  .q-orange { border-left-color: #e8590c; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #8b949e; }
+  footer a { color: #4c6ef5; text-decoration: none; }
+  @media (max-width: 560px) {
+    .cards { grid-template-columns: 1fr; }
+    h1 { font-size: 24px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">硅谷 101 · E247 · 2026 年 8 月 · 1 小时 46 分</div>
+  <h1>对话盛颖：xAI、Infra 的浪漫、SGLang 与平权</h1>
+  <div class="meta-line">嘉宾：盛颖（Radix Arc 联合创始人兼 CEO） · 主持：陈茜</div>
+</header>
+
+<p>你可能没听说过盛颖，但你的 AI 很可能正跑在她的代码上。她联合创立的开源推理引擎 SGLang，从未做过市场推广，如今跑在全球数十万张 GPU 上，每天为谷歌、微软、英伟达、xAI 生成数万亿 token。2026 年 5 月，这家叫 Radix Arc 的公司官宣了 Axial 领投的 1 亿美元种子轮融资，英伟达的投资部门、AMD、英特尔 CEO 陈立武和 OpenAI 联合创始人 John Schulman 都在投资人名单里。这是一场从江西小城出发、经上海与纽约、最终落脚硅谷的长途跋涉。</p>
+
+<h2>为什么这期值得听</h2>
+
+<div class="cards">
+  <div class="card blue"><b>SGLang：跑在数十万张 GPU 上</b><span>零市场推广的开源推理引擎，每天为谷歌、微软、英伟达、xAI 生成数万亿 token。</span></div>
+  <div class="card green"><b>1 亿美元种子轮的底气</b><span>Axial 领投；英伟达投资部门、AMD、英特尔 CEO 陈立武、John Schulman 都是投资人。</span></div>
+  <div class="card yellow"><b>Infra 的浪漫</b><span>她把 infra 本身当作产品：追求系统以优美的形式跑起来，而不是"豆腐渣工程"。</span></div>
+  <div class="card red"><b>离开 xAI 的两个月</b><span>再待两个月就能拿到第一年 vesting，她还是选择出来把 SGLang 变成公司。</span></div>
+  <div class="card purple"><b>开源与平权</b><span>江西小城的互联网教育塑造了她的开源观；LMSYS 是她"终身会做的事业"。</span></div>
+  <div class="card orange"><b>心流与"手册"</b><span>ADHD 让她读懂自己；intense 与输赢机制，是进入心流状态的开关。</span></div>
+</div>
+
+<h2>一、从江西到纽约：三次打破舒适圈</h2>
+
+<p>盛颖的成长轨迹是一连串主动打破舒适圈的过程。本科从江西考进上海交大的 ACM 荣誉班，她经历了强烈的 culture shock："身边的人更理解职业发展、人生发展"，而自己处在"无知状态"。2017 年，她赴哥伦比亚大学读硕士——这个决定做得突然：当时她已经接下一所大学的 PhD offer，"君子协议"4 月 15 号刚过，第二天哥大的硕士 offer 到了。她给父亲打电话，问能不能毁约、交违约金。父亲的回答只用了一分钟："好，你去。"</p>
+
+<p>纽约给了她另一种 shock。这座城市很包容："没有人在乎我穿什么、想什么、做什么"，那是"从一个被限制状态到一个完全自由状态"的转变——一种不需要被 judge、也不需要 judge 别人的放松。也是在哥大，她上了计算复杂性课程，跟着做理论的朋友们走进研究，最终自然地被引向斯坦福。</p>
+
+<h2>二、数学、心流与 ADHD 手册</h2>
+
+<p>在哥大期间，她去普林斯顿参加了一次 workshop，被校园环境"直接包围"：与世无争，人世间的挣扎沉浮都显得没有意义。她在访谈里描述那种状态时说："什么都不重要是重要的……虚无才是它真实的东西，就只有真实是重要的。"数学在那个环境下显得特别优美——确定性、绝对化，让她进入心流，"大脑被完全的调动起来时候进入一种生理性愉悦"。</p>
+
+<p>但斯坦福是另一回事。西海岸有更多关于成功与否的 noise，"我又开始觉得我跟世界有关"。她后来发现，自己注意力天然是两极化的：被吸引时极度专注，听不见别人叫名字、错过 meeting；不感兴趣时完全无法专注——看《甄嬛传》跟不上剧情，经常要往回拉，30 分钟的剧看四五十分钟。了解 ADHD 之后，她像是拿到了自己的"手册"："我找到了怎么使用我自己的一把钥匙。"她不再逆着天性做事，只做让自己兴奋的事："我只有这个事情它让我觉得非常exciting，我才有可能把那件事情做好。"她在乎的从来不是输赢，而是 intense 的感觉："我不是很在乎输赢。但是我在乎那个intense的感觉。"</p>
+
+<h2>三、形式化验证：证明、低谷与告别</h2>
+
+<p>斯坦福的 rotation 制度要求博士生与导师双向匹配。前几轮她没有遇到能进入心流的问题，直到第四轮与 Clark Barrett 教授匹配成功，被动进入了形式化验证方向。这个方向的做法是：把代码拆解映射到一阶逻辑，再用 SMT solver 从数学角度证明代码是否满足 spec 里的性质——前置条件、invariants、执行后条件。</p>
+
+<p>她的第一篇论文（polynomial speedup）就拿了 2020 年 IJCAR 最佳论文奖，而且她是被别人 congrats 时才知道的，"非常非常的意外"。但得奖之后她又陷入迷茫，接着疫情来了：接近一年的时间处于 depression 状态，没有做任何事情。Clark 只关心她的精神状态，让她上课、做 TA，没有任何产出压力，"Clark从来没有断过我的经费"。一年后她慢慢走出来，做了 sequential paper——那篇 paper 的证明写了 20 多页，来来回回改四五次，两次几乎全部推翻重写，因为起点处一步错了，后面所有推理全部作废。"我记得那个时候Clark自己也说，那篇paper里的证明是他过去一年的highlight。"</p>
+
+<p>最终她还是离开了形式化验证：这个领域"它能够在现实中practically被应用的场景太少了"，验证程序太贵、能验证的又太少。"但是我觉得我想离世界更近一点。"她开始探索 AI。</p>
+
+<h2>四、转向 AI：谷歌的冲击与 infra 的确定性</h2>
+
+<p>转 AI 并不顺利。她又经历了一年空窗期，最后三个月才产出一个作品："外人看来你会觉得那个作品是我过去一年的成果，实际上它是我过去一年里最后三个月的成果。"形式化时期同样如此：三篇 paper 分布在三年里，每篇真正推动只花三个月，"这三年里面每年都有九个月"在迷茫、在找想解决的问题。她无法妥协："我没有办法做我不感兴趣的事情。"</p>
+
+<p>2022 年夏天，她为了转 AI 去了 Google X 孵化的 AI for code 项目实习。那段经历给了她第一次冲击：传统 program analysis 的工具在 AI 面前"非常的无力"，"大模型其实已经把传统的这个领域里的技术都完全覆盖了"。当时 ChatGPT 还没发布，谷歌刚出 PaLM，内部有 LaMDA，甚至有程序员声称 LaMDA 有意识。她被 AI 的 powerful 震撼，决定做大模型。而在 AI 的众多分支里，她最终落在 infra——因为"做infra跟我的思维习惯更接近。它是co-reason的，确定性的，基于数学的，然后基于代码。数学和代码这两件事情我都很熟悉"。</p>
+
+<h2>五、SGLang：收官之作与没见过面的社区</h2>
+
+<p>2023 年，盛颖在斯坦福读博的最后阶段，与 LMSYS 的社区研究者一起做出了 SGLang。PhD 最后两年的 LLM inference 工作都比较 local，SGLang 想把这些成果集大成于一体，成为她博士生涯的收官之作。而且从第一天起目标就非常明确："从做SG-Lang之初就希望它是做成一个production ready可以被广泛使用的推理引擎。"当时 vLLM 已经开源半年多，但 vLLM 开源后有大量社区维护的琐事她没太参与，SGLang 是"想要把我的思想能够在一个地方继续往上推"的地方。</p>
+
+<p>SGLang 的社区有一个奇特的默契：核心开发者都是网上认识、没见过面的网友，共同工作两年，"我还不知道他们长什么样子"。他们开过很多次会，从来没有开过摄像头，也没有人提起这件事——"自然到你根本没有想起来这件事情"。"我只要看到你的代码，我就知道你是谁。"</p>
+
+<h2>六、xAI：support、freedom、"无边界"与告别</h2>
+
+<p>2024 年 10 月，盛颖加入 xAI，和已在 xAI 做 training 的丈夫连明一起搭建整个 inference stack 和团队。选 xAI 的理由很简单："它可以给我两样东西，一个叫做support，一个叫做freedom……当时应该只有xAI真正给我这两个。"早期 xAI 不到一百人，"没有任何politics"，Elon 定下了一种"没有边界的文化"：任何事情都可以 touch 到，没有组与组之间的隔阂，没有特别多 people management。这让她第一次看见全栈：从算法、CUDA、GPU 到数据中心，组件之间如何协作、事情作为一个整体如何发生。</p>
+
+<p>强度同样惊人。"你在那里待了一年，你可能在外面是好几年才能拿到的成长。"她形容这个过程像健身："你感觉到痛了，你才能成长，才能长肌肉了。"她经历过 xAI 的 0.0 和 1.0：0.0 时 Elon 对大家非常 nice，像 family；1.0 有"生长痛"，Elon 中途回来，但大家共同克服难关，"我我没有感觉到军心有什么动摇"。后来的 xAI 则没有抚平从小团队到"需要靠体制来运转而不是靠人来运转"的过渡阵痛——这成为她对 Radix Arc 最直接的警示：文化在 scale up 时会变脆弱，"如果你不pay attention，它是会broken"。</p>
+
+<p>2025 年，几波浪潮把 SGLang 推到高点，大量需求涌来，但纯网友组成的社区被"team bandwidth限制着"，交付都"低空飞过"。到七八月份，她的焦虑到了顶点：再不填补"中空的状态"，就要"让外界失望"。"我只要再待两个月我就可以拿到我的那个第一年的vesting。所以两个月都不能待。"她离开了待了十个月的 xAI，和朱邦华一起把开源项目变成了公司。</p>
+
+<h2>七、Two Sigma、金钱观与两套价值观</h2>
+
+<p>在哥大毕业后、斯坦福入学前，盛颖还去华尔街的量化对冲基金 Two Sigma 体验了半年。21、22 岁的她被"里面的人很聪明"吸引，纯粹想体验一把，也清楚"天天在那玩钱没啥意思"。但这段经历评价极高——她给工作过的公司排序："排第一的是xAI，排第二是Two Sigma。"她的运气也一直不错："我很幸运，我每次在的都是最好的时候。"Two Sigma 留给她最深的印象是 organized："Two Sigma的infra在我跟其他的比起来是最稳定的一个地方"——业务模式稳定、剧变不多，大家能做大量 maintenance。去了别处才意识到"原来其他地方这么乱"。</p>
+
+<p>金钱在她那里的位置很清晰："有必须性，没有重要性"——它的意义在于让事情更容易，底气在于"如果有一天我融不到钱，我还自己还有钱"。价值观上，她和自己的 mentor、Databricks 联合创始人 Ion Stoica 形成了有趣的对照：Ion 的动力之源是"making impact"，而她说："我在乎的是impact，而不是making……我不是完全care这件事情是不是我推动的。别人推动也可以。"</p>
+
+<h2>八、Radix Arc：把 infra 做成工具箱</h2>
+
+<p>Radix Arc 的长远目标，是提供一个"foundation"：让不同的使用场景、不同的 data 形式、不同的产品与 serving 目标，都能用这套工具源源不断产生最适配的模型。在她看来，"基础模型也是infra"——整个 foundation 包括所有需要的 gradients、codebase、toolbox、sandbox，以及中间状态的模型 checkpoint，"它们在一起变成了一个工具箱"。公司现在 40 多人，6 月 1 号刚搬进新办公室，扩张速度超出她的预期。</p>
+
+<p>切入点是 pipeline 的末端：inference 与 RL。post-training/RL 是一个 fan-out 状态——一个基础模型开枝散叶成多个模型，因为 AI 进入生活的各个方面，企业都想有自己的模型；inference 则更 fan-out，模型完成后在硬件上跑起来，供所有人调用。两者一起做并不难：RL 很大部分挑战来自 rollout engine，而它本质就是一个 inference engine，"系统层面它们有非常、非常大的overlap"。</p>
+
+<p>她最想做的事，是给 infra 正名。taste 意味着关注 end goal 的组成：系统是以 well-designed 的形式跑起来，还是"豆腐渣工程跑起来的"？infra 长期被 underestimated、被迫不停 support 别人，"他们总是被迫去做一些hacky的事情来达成目标"。"infra本身在我眼中就是产品……我跟infra之间的这个浪漫的关系。"在 Radix Arc，training job 可以 pause、不打 patch，"刷分也不着急刷"——真正的 urgency 是"你的job不能被迭代的时候"，问题要从深层次系统性地解决。</p>
+
+<h2>九、Taste、Radix Attention 与 Day Zero</h2>
+
+<p>SGLang 的核心技术之一是 Radix Attention：当多个请求有公共前缀时，不需要重新计算对应的 KV cache，而是复用。实现上，先对请求间的前缀关系建立前缀树做 indexing，再把已计算的 KV cache 存入 KV memory pool，两者 mapping 起来。有人追问：如果用户每次问的都是全新问题、没有共同前缀呢？她的回答是，Agent 场景出现后大部分都有前缀共享——只要进入多轮对话，后面的对话都要复用前面的 history，"前缀复用是大量存在在所有的、几乎所有的场景里的"。她还提到 SGLang 名字里的"Lang"不是虚的："SGLang的创作之初的动机其实是想要去定义和构建这套interface，让人和AI可以更好的交互"——她希望有一天能 revisit 这个 language 的初心。</p>
+
+<p>另一个招牌是 Day Zero 兼容：模型发布第一天就能用上。DeepSeek-V4 发布时架构创新很大，他们花了特别大精力做支持与优化，feature set 第一天就全部兼容，"我们也是我们第一次有这个RL的day zero"。RL 框架 Miles 的算子层实现大部分重写——"Miles是我们的RL框架，很多的算子层一些实现都要重写"。当然，如果模型架构完全不变、只是更新 weight，几乎不用适配。</p>
+
+<h2>十、没有输家的赛道与下一代 AI</h2>
+
+<p>inference 赛道有个反直觉的现象："你会发现这个游戏里面没有输家……但是没有任何一个因为有competition的存在而消减下去了。所有人都是同步增长的。"2026 年的两大趋势是：新的 inference 公司雨后春笋般冒出，established 公司开始往 RL 方向扩张——Baseten 完成 3 亿美元融资、估值 50 亿，Fireworks AI 估值 40 亿，Together AI 寻求 10 亿新融资，vLLM 商业化的 Inferentia 融资 1.5 亿、估值 8 亿。背景是 AI 更成熟后，市场 effort 开始"从training转向inference"，到了需要盈利和兑现的阶段。</p>
+
+<p>但盛颖说，Radix Arc 的长远使命不属于这个赛道："我其实不觉得我们在这个赛道……我认为Redwood Arc最终使命是要做下一代AI。""我们的本质还是不是单纯的infra implementation"；也不是模型——"它是下一个形式"，"不是一个现在世界上已经存在的东西"。再问是什么，她只说不能 disclose。她对生态的态度是和谐相处、做盟友："没有private fork"，SGLang 属于社区，"公司的命脉是不在这里的"。</p>
+
+<h2>十一、融资课、管理课与"书本没有骗我们"</h2>
+
+<p>出来融资时，盛颖一无所知："pitch deck这个词我都没有听说过"，也不懂 term sheet、估值和 seed 轮。她去读 Venture Deals 之类的书补课——"书本里面写的都是美好"：投资人与 founder 是终身友谊、并肩作战的关系。现实复杂很多，但最终配对的投资人，又回到了书里描述的理想状态。她感慨："书本没有骗我们。"投资人为什么选他们？"我们是在这个赛道里面一个跑出速度的玩家"；早期投资也看人，"我其实更喜欢看人的investor"。最终英伟达、AMD、英特尔这几家最大的半导体公司罕见地集体下注。</p>
+
+<p>管理是另一门新课。她在 xAI 学到一句话——两位 leader（Tony 和国栋）分别跟她说同一句话："你的authority和responsibility要match。"在 xAI 她没有 authority，"我并没有被empower"，所以"我不能决定事情我就负不了责"。现在作为创始人，决定成了义务："做好了其实是团队的功劳，做坏了是我的责任。"身份只是途径："我一直都只想我想做什么事情"；Professor 是一条路，开公司是另一条。公司刚好走到"从我还能一个人看清所有事情，到我现在看不清的这个阶段"——管理问题还没有答案，她看到的全是挑战。</p>
+
+<h2>十二、开源、LMSYS 与平权</h2>
+
+<p>盛颖的开源观来自她的成长环境。出生在江西中部省份，编程学习"大部分的学习都是从互联网上拿到的"——CSDN 的帖子、online judge 的网上题库，资源稀少、贵精不贵多。她至今不知道当年那些代码的作者是谁——她形容自己是被互联网上不知名的陌生人教大的："sharing open的这个文化它对我来说是一个，就像我生活的空气一样存在。"所以开源不是刻意执着，而是自然发生："你不分享出来那才觉得奇怪。"她也看到开源的变化：好的方面是开源越来越多、"资本对开源的认可"上升；不好的方面是混入了功利主义者，"阴阳总是共存"。她不认为所有东西都该开源——"人性的恶也会被放大"，AI"它确实有risk，我不否认这一点"。她的立场是："AI应该均等的被握在不同的人的手上……我们希望闭源它存在但不centralize。"</p>
+
+<p>这条平等线索延伸到 LMSYS——她和 Liming 早年成立、让不同学校的人参与研究的机构。LMSYS 至今是 non-profit，大家 part-time 维护，但"LMSYS是那个我终身会做的事业"：如果 Radix Arc 有一天没走到底，LMSYS 依然在。它的平权初衷是孵化优秀人才的项目，"即便他们没有充分的背景"、后台和 branding，把 credits 分到真正做事情的人身上。LMSYS Arena 本是"其中一个fun project"，意外受关注，后来交给伟林团队做成了商业级规模。</p>
+
+<p>她也在访谈里罕见地正面谈了性别议题。那些微小的不对称每天都在发生：竞赛时"如果我是个男生，大家就会说我是天才。如果我是个女生，他就会说她很努力，她很听话"；"我的每一场赢都要被解释"——对手状态不好、题目押中，赢需要理由。研究界也一样："一旦有一个合作方，然后这个合作方他是男性或者是他是established的，别人就会觉得，诶，这个idea会不会不是她的？"她认为解法只有一条："你让所谓的弱势群体……真正拥有权力。除此之外没有别的办法"，所以"不断去赢就好了"。结构性改变很难，但"如果我能改变百分之一的话，我愿意用我的一生去改变这百分之一"。</p>
+
+<h2>结语：相信好的东西存在</h2>
+
+<p>访谈结尾，盛颖谈起自己三段波折——PhD 找导师、开源项目被打击、融资磕绊——"他们的波折之后的那个终点都非常的好"：教科书般完美的导师、团结有能量的团队、教科书般完美的投资人。"那些好的东西都存在"，所有好的东西"都不是编出来的"；"你要相信到你身边没有这样的人，你还相信它。然后有一天那个跟你一样相信它的人他有一天会跟你相遇。"</p>
+
+<p>被问到"世界是个草台班子"这件事会不会让她痛苦时，她的回答是：情绪上会 suffer，但价值观不受干扰——"就我在我的逻辑里是自洽的"，她把情绪影响与价值观构建分离开。哪怕十年里"我一直都是很割裂的存在"，她也不想妥协。因为正反馈循环告诉她：第一次等几个月被验证，下一次等几年被验证，再下次等十年又被验证——"下次我可以等二十年"。而这一切的边界只在于一件事："你只要不觉得自己在妥协，都没关系。"</p>
+
+<div class="quotes-block">
+<h2>核心金句</h2>
+
+<div class="quote q-blue">
+"infra本身在我眼中就是产品……我跟infra之间的这个浪漫的关系。"
+<span class="src">— 盛颖：infra 不是 support 角色，而是值得做美的产品</span>
+</div>
+
+<div class="quote q-green">
+"书本没有骗我们。"
+<span class="src">— 盛颖：好导师、好投资人、好采访者都存在，只是要筛选与耐心</span>
+</div>
+
+<div class="quote q-yellow">
+"有必须性，没有重要性。"
+<span class="src">— 盛颖谈金钱：解决事情更容易的工具，而非追逐的目标</span>
+</div>
+
+<div class="quote q-red">
+"把那一件小事的冲击乘上一亿倍，那才是对那个人人生的真实的冲击。"
+<span class="src">— 盛颖谈性别不平等的真实分量</span>
+</div>
+
+<div class="quote q-purple">
+"我只要看到你的代码，我就知道你是谁。"
+<span class="src">— 盛颖：没见过面的开源社区里，代码就是身份</span>
+</div>
+
+<div class="quote q-orange">
+"你只要不觉得自己在妥协，都没关系。"
+<span class="src">— 盛颖：与世界自洽的边界，在于是否执行自己的意志</span>
+</div>
+
+</div>
+
+<footer>
+  本文根据硅谷 101 第 247 期播客整理 · 嘉宾：盛颖（Radix Arc 联合创始人兼 CEO） · 主持：陈茜 ·
+  <a href="https://sv101.fireside.fm/260">收听原节目</a>
+</footer>
+
+</div>
+</body>
+</html>

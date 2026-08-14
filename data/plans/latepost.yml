@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-14T03:49:53.010Z
+refreshed_at: 2026-08-14T18:20:34.480Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 30
-done: 0
+done: 1
 pending: 0
-needs_transcript: 30
+needs_transcript: 29
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -252,8 +252,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-14T18:22:00.323Z
+    transcript_job_id: 9620af4b-c217-47d2-81b5-1c45a1cf6d0d_563a49bb64b9439385864a86cc89a078,a302f920-933b-49fa-befe-d9508c5bf531_513f3ee63555482e82eee8c2fd6730bc,3d935d60-0807-4595-b423-8db196871a1d_f2cd6174ea1f4ee1be1eb655c11f1c39,69cef044-a0a6-4199-97b4-bafaf12a566e_3d7d2e4dc78d45418b9b8972e6362262,0eff2212-9748-4620-a4e0-2ea76b50a754_2093230cb3d141e2aa937d21a01a65d3,87c048a3-4a13-43ca-9465-10bd02ce0967_6328dc55e0ec47a1958a1a147cfac5d4,df4b2a26-1277-4a55-95e7-70be68e8cda8_6ea177252bde4bd98668d606ded34a9a,d349805e-e036-4896-9dfc-948b1b0f9d1a_42fb66a7d2b442b599a7d740f5528709
+    transcript_completed_at: 2026-08-14T18:26:39.694Z
   - id: 227e4d79-d5b7-4a39-a525-135cb9c6c111
     guid: 227e4d79-d5b7-4a39-a525-135cb9c6c111
     title: "176: 姚顺雨，来到腾讯300天"
