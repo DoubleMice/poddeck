@@ -1,12 +1,43 @@
 source: risky-business
-refreshed_at: 2026-08-13T18:20:44.069Z
+refreshed_at: 2026-08-14T03:49:52.962Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 0
+total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: SOAPBOX110
+    guid: https://risky.biz/SOAPBOX110/
+    title: "Soap Box: Zero Trust(ish) Networks"
+    duration: 1744
+    published: Fri, 14 Aug 2026 12:23:43 +1000
+    published_sort: "20260814"
+    first_seen_at: 2026-08-14T03:49:52.962Z
+    url: https://risky.biz/SOAPBOX110/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX110.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this Soap Box edition of the Risky Business podcast host Patrick Gray chats with Adam Pointon, CEO of Knocknoc,
+      about the failure of Zero Trust as a comprehensive architecture.
+
+
+      Most networks look like they were designed in 1999, and most Zero Trust products look like they were designed for
+      2049.
+
+
+      Instead, Patrick and Adam pitch something in the middle: Zero Trust(ish) networks, where Zero Trust principles are
+      applied selectively where possible.
+
+
+      Instead of trying to re-architect entire networks, maybe it’s time we learned to apply Zero Trust principles
+      selectively against risky assets. It’s a better approach than the status quo, which involves liberal use of the
+      “risk accepted” stamp.
+
+
+      This episode is also available on YouTube
+    status: needs_transcript
+    priority: 1
