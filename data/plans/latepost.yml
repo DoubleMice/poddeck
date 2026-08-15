@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-15T03:20:00.945Z
+refreshed_at: 2026-08-15T18:05:55.673Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 29
-done: 0
+done: 1
 pending: 0
-needs_transcript: 29
+needs_transcript: 28
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -136,8 +136,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-15T18:09:20.820Z
+    transcript_job_id: 9a01cfb9-1c69-4e1e-b870-1ba7f4f164b0_66dbdab37dd340c9998e57b45de23669,717a1b61-262a-4239-867d-ea6c00d32979_fe5b290598984ccfaed505795ace70f8,f88790c1-ce6a-4199-9efa-9642a8df6c22_2781558e8ff243ed8ec7c5e2ab70ebe3,574d63fa-56f2-4653-ae8f-e59a0e6cbfe5_f76d31c9e83748cc84b751521eef1a97,117971ee-caee-473b-97e7-da95610a9be6_cf605a58b0324593aa011995fbb03c04,abe1819f-6866-4688-83da-eb933ee6e26f_76d6f249c1f84f6eafd172f7f34192f5,f7703adf-84af-46f5-b0ca-372481fe8c36_558b92246e0641dd8f7c4c5b695d62e2
+    transcript_completed_at: 2026-08-15T18:13:31.097Z
   - id: f8201197-461a-4071-a1bd-7c8afc646978
     guid: f8201197-461a-4071-a1bd-7c8afc646978
     title: "175: 对话Liblib陈冕：关于活下来，以及所有接近死亡的时刻"

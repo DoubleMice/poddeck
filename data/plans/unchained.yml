@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-08-15T03:20:00.895Z
+refreshed_at: 2026-08-15T18:05:55.623Z
 min_duration: 3300
 min_date: "20260725"
 total_candidates: 2
-done: 0
+done: 1
 pending: 0
-needs_transcript: 2
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -96,8 +96,12 @@ episodes:
       📊 01:03:12 Why Hyperliquid's RWA market creators keep half of HIP-3's fees
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-15T18:05:56.915Z
+    transcript_job_id: af3f2fbe-4f97-4bd7-a33f-8bbd8602ae5f_4196ad640cae47378821263bdb9b264a,66cc4f21-da93-4ad0-aa5d-7fec4f44ed75_bd47f34c795e440ab9270551ba2eb3e9,fcea1984-a734-4435-aa90-6e350658298c_1bde63790e2f417c8eac30b11882ddc3,d639c076-669b-40d0-9d83-cd98896e220a_bf4419fbd931476abf8d092b7077711e,f37ea1b2-be3a-46f6-be51-f6424424fb33_67646f7b4bfe454fbe23190d7f9cb546
+    transcript_completed_at: 2026-08-15T18:09:20.543Z
   - id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     guid: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo

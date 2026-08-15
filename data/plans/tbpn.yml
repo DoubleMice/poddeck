@@ -1,10 +1,10 @@
 source: tbpn
-refreshed_at: 2026-08-15T03:20:00.883Z
+refreshed_at: 2026-08-15T18:05:55.609Z
 min_duration: 1800
 min_date: "20260716"
 total_candidates: 2
-done: 0
-pending: 2
+done: 2
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -71,7 +71,7 @@ episodes:
       https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
 
       https://www.youtube.com/@TBPNLive
-    status: pending
+    status: generated
     priority: 1
   - id: aa6a9120-6672-4ead-a16c-7b1652b71625
     guid: aa6a9120-6672-4ead-a16c-7b1652b71625
@@ -133,5 +133,5 @@ episodes:
       https://podcasts.apple.com/us/podcast/technology-brothers/id1772360235
 
       https://www.youtube.com/@TBPNLive
-    status: pending
+    status: generated
     priority: 1
