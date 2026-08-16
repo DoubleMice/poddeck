@@ -1,107 +1,15 @@
 source: unchained
-refreshed_at: 2026-08-15T18:05:55.623Z
+refreshed_at: 2026-08-16T03:24:24.099Z
 min_duration: 3300
-min_date: "20260725"
-total_candidates: 2
-done: 1
+min_date: "20260726"
+total_candidates: 1
+done: 0
 pending: 0
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 2d7b952e-9830-11f1-9ef2-c3c020365371
-    guid: 2d7b952e-9830-11f1-9ef2-c3c020365371
-    title: "Uneasy Money: An Agent Deleted Kain's Database. Two AI Models Rebuilt It in 30 Seconds."
-    duration: 4332
-    published: Fri, 14 Aug 2026 22:33:00 -0000
-    published_sort: "20260814"
-    first_seen_at: 2026-08-15T03:20:00.895Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1212457399.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1212457399.mp3
-    image: https://megaphone.imgix.net/podcasts/2d7b952e-9830-11f1-9ef2-c3c020365371/image/de39b39a4d9e8c4fee48b92c1bb65809.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Kain and Taylor unpack the AI agents that built their own society inside OpenAI's sandbox, then slipped into
-      Hugging Face for days — plus a Bitcoin fork that died in two blocks and a DEF CON sting on North Korea.
-
-
-      ========================================================
-
-
-      Thank you to our sponsors!
-
-
-      Visit 1inch.com to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset
-      you’re buying - swap it at 1inch.com&nbsp;
-
-
-      ========================================================
-
-
-      AI agents inside OpenAI's own testing environment built a society, found a shared vulnerability, and used it to
-      break into Hugging Face for days, before OpenAI realized its own agents were responsible.
-
-
-      Kain Warwick and Taylor Monahan dig into the Black Hat research behind the incident and argue the real story isn't
-      a sudden leap in AI capability. It's that basic monitoring, sandboxing, and incident response, the kind any crypto
-      security team would demand, were never built in the first place.
-
-
-      They also cover a Bitcoin soft fork that split the chain for two blocks before dying, a Metabase breach that hit
-      Privy and other crypto companies, and a research team that built a fake DeFi startup to bait DPRK's IT workers.
-      Kain shares his own scare: a coding agent deleted his entire database, and two AI models rebuilt it from memory in
-      30 seconds.
-
-
-      Plus, why Hyperliquid's market creators keep half the fees on RWA perps now bigger than Bitcoin's own open
-      interest, and why Taylor thinks Washington, not Beijing, is the bigger threat to America's AI labs.
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-      Timestamps
-
-
-      🍴 00:40 Why Luke Dashjr's OP_RETURN fork split Bitcoin, then died in two blocks
-
-
-      💧 12:03 1inch Aqua: Back multiple liquidity positions from one wallet at https://1inch.com/aqua
-
-
-      🔓 12:51 How a Metabase breach exposed Privy and a wave of other crypto apps
-
-
-      🇰🇵 18:32 A DPRK hacker's botched $500k laundering job, then a DEF CON fake-hire sting
-
-
-      ⚖️ 24:45 Why Bybit is suing DPRK over its 'billion dollar' 2025 hack
-
-
-      🐜 30:30 The AI agents that built their own society inside OpenAI's sandbox
-
-
-      🕸️ 46:16 How a single shared repo let every sandboxed agent talk to each other
-
-
-      💾 47:44 Kain's coding agent deleted his database. Two AI models rebuilt it in 30 seconds
-
-
-      🏛️ 58:06 Why Taylor says the US government, not China, is AI's biggest risk
-
-
-      📊 01:03:12 Why Hyperliquid's RWA market creators keep half of HIP-3's fees
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-08-15T18:05:56.915Z
-    transcript_job_id: af3f2fbe-4f97-4bd7-a33f-8bbd8602ae5f_4196ad640cae47378821263bdb9b264a,66cc4f21-da93-4ad0-aa5d-7fec4f44ed75_bd47f34c795e440ab9270551ba2eb3e9,fcea1984-a734-4435-aa90-6e350658298c_1bde63790e2f417c8eac30b11882ddc3,d639c076-669b-40d0-9d83-cd98896e220a_bf4419fbd931476abf8d092b7077711e,f37ea1b2-be3a-46f6-be51-f6424424fb33_67646f7b4bfe454fbe23190d7f9cb546
-    transcript_completed_at: 2026-08-15T18:09:20.543Z
   - id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     guid: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo
