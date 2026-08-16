@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-16T03:24:24.152Z
+refreshed_at: 2026-08-16T18:06:07.283Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 28
-done: 0
+done: 1
 pending: 0
-needs_transcript: 28
+needs_transcript: 27
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -108,8 +108,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-16T18:06:08.529Z
+    transcript_job_id: 2a68d27e-f3fd-4a29-b369-dc14ad98fe79_eddd7166eff54ac8ac801aa50ff632db,d0d0e1ac-c7b7-4a71-ae52-7df9e6465fe1_ab32a47d55f641db96b8e3c0a2eb7197,682f76b3-4e04-4df1-a28d-e7b827b8b5aa_d92ba42c8bbd4d029622642b9268b9df,d2406366-ca24-4c44-8221-dd3ebd5dbe7c_721b25e7f8ff4609ac795b8b5dd6fc54,ae30ad78-c214-4a96-8022-59718bbd836a_a4f7243d0b6a4dde91984e824b958588,b3c518e6-a5ab-4627-9e6a-394e76cad673_6d4e7f7d6a2a4375b8dc075efd9f4614,bc1c994b-dba1-4081-ad7e-bac6325c9667_36a5b8d575b5431e8bb4ae4e8267a253,cfe1a68b-8736-4414-8732-2002a61ac587_2baaad559669446088ece5aa125033c8,808621b1-11b7-44a7-b009-254943caee0d_f7ad7722ab434b76bb2dfe0df99e330f
+    transcript_completed_at: 2026-08-16T18:12:36.250Z
   - id: 36e00501-28e2-47a2-9489-32bc7b788267
     guid: 36e00501-28e2-47a2-9489-32bc7b788267
     title: "174: AI冲击企业软件巨头？与SAP原欣聊大模型to B的颠覆与边界"
