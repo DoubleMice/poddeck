@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-17T03:24:57.614Z
+refreshed_at: 2026-08-17T18:10:20.310Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 28
-done: 0
+done: 1
 pending: 0
-needs_transcript: 28
+needs_transcript: 27
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -170,8 +170,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-17T18:10:21.450Z
+    transcript_job_id: 2d2b5887-8eee-47ee-aebd-219c68fcaa29_a9368ddb5cfb47b9800227bdcd3a84ef,53048dbf-df0c-4760-b94f-a5dc5f0800bb_31495705818b4a5cae744018d2e8a3ab,mimo:da707393-af0f-4607-9712-93f469508667:2:2026-08-17T18:10:21.450Z,45f0cd0f-88fd-4ff8-bd54-1ff28f37430a_48ec9e24147844f49df743dc246c758a
+    transcript_completed_at: 2026-08-17T18:11:50.902Z
   - id: 36e00501-28e2-47a2-9489-32bc7b788267
     guid: 36e00501-28e2-47a2-9489-32bc7b788267
     title: "174: AI冲击企业软件巨头？与SAP原欣聊大模型to B的颠覆与边界"
