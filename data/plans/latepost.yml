@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-18T03:22:43.734Z
+refreshed_at: 2026-08-18T18:13:58.440Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 27
-done: 0
+done: 1
 pending: 0
-needs_transcript: 27
+needs_transcript: 26
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -166,8 +166,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-18T18:13:59.449Z
+    transcript_job_id: 95e20bc8-2a67-47c7-b9a2-326b3bc18303_82ef78684ad74e669b171e1a6dc57759,d1ac5384-7745-42e3-ba80-5b5e0c4d3e87_742f52f48ce44506bb8ed72a8792c767,5562f7ba-59a6-40af-aa57-e6876718ff13_4e6cd44f9d7c48d39b64c88085f875d1,d1c4d0d4-cdfc-4a72-8803-6e5f1903de14_4704606c4ad34e6eb523a88baca2eacc,c323babe-87de-4f7a-9a19-128c4504aa0a_ec70ab9358b64969b269b948fdc5aafa,6d7a8088-b38a-457b-a913-c99307ef54ae_d307ff9124664f2fb987fce849861763,adfea53d-be7d-4790-b29c-529c2e8c68c3_41942ed4af964f4a9c3243f97806d3e6
+    transcript_completed_at: 2026-08-18T18:18:50.346Z
   - id: 8cbbc05f-922d-49f2-9c3c-aef3b27cf18a
     guid: 8cbbc05f-922d-49f2-9c3c-aef3b27cf18a
     title: "173: 对话姚颂：深鉴、东方空间、再出发，「天才少年」十年后"

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI冲击企业软件巨头？与SAP原欣聊大模型to B的颠覆与边界 — 晚点聊第174期</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: #fafaf9;
+    color: #1c1c1e;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  header { margin-bottom: 32px; }
+  .eyebrow { font-size: 13px; letter-spacing: 0.08em; color: #8e8e93; text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-size: 30px; line-height: 1.35; font-weight: 700; margin-bottom: 12px; }
+  .meta { font-size: 14px; color: #6e6e73; }
+  .meta b { color: #3a3a3c; }
+  h2 { font-size: 21px; font-weight: 700; margin: 40px 0 14px; padding-left: 10px; border-left: 4px solid #1971c2; }
+  p { margin-bottom: 14px; }
+  blockquote {
+    margin: 18px 0; padding: 14px 18px; font-style: italic;
+    border-left: 4px solid #1971c2; background: rgba(25,113,194,0.06); border-radius: 0 8px 8px 0;
+  }
+  blockquote .who { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #8e8e93; }
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 20px 0 8px; }
+  .card { padding: 12px 14px; border-radius: 8px; font-size: 15px; line-height: 1.6; }
+  .card b { display: block; margin-bottom: 4px; font-size: 15.5px; }
+  .card.blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .card.green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .card.yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .card.red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .card.purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .card.orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .quotes { margin-top: 8px; }
+  .quote { padding: 12px 16px; margin-bottom: 10px; border-radius: 8px; font-size: 15.5px; }
+  .quote .ctx { display: block; margin-top: 4px; font-size: 13px; opacity: 0.65; font-style: normal; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 14px; color: #8e8e93; }
+  footer a { color: #1971c2; text-decoration: none; }
+  @media (max-width: 560px) {
+    .cards { grid-template-columns: 1fr; }
+    h1 { font-size: 24px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">晚点聊 LateTalk · 第 174 期 · 2026-07 · 1h32m</div>
+  <h1>AI冲击企业软件巨头？与SAP原欣聊大模型to B的颠覆与边界</h1>
+  <div class="meta">嘉宾：<b>原欣</b>（SAP 大中华区总裁，自 1998 年以来近 30 年企业市场经验，先后在甲骨文、VMware、微软工作） · 主持：南齐</div>
+</header>
+
+<p>AI coding 变强之后，最慌的不一定是程序员，而是那些收了几十年"过路费"的企业软件巨头。2025 年年中，SAP 股价一度超过 300 美元；到本期节目录制时，已经回到 160 美元。市场担心的是：当 AI 一天能写两万行代码，这家 1972 年在德国沃尔多夫小镇创立、靠 ERP 起家、去年收入接近 420 亿美元的老牌软件公司，几亿行代码的家底还值钱吗？</p>
+
+<p>本期节目把这个问题拆开讲透了：冲击到底落在哪里、哪些积累 AI 短期内撼动不了、老牌厂商怎么自我颠覆，以及中国企业在这场浪潮里的分化。</p>
+
+<h2 style="border-left-color:#1971c2;">为什么这期值得听</h2>
+
+<div class="cards">
+  <div class="card blue"><b>巨头直面冲击</b>SAP 把自己定位成"被颠覆的那一趴"，选择自己颠覆自己——2025 年蓝宝石大会提出自主运营企业愿景。</div>
+  <div class="card green"><b>定价模式坍塌</b>SaaS 按座席收费的时代动摇，向按用量、按结果（RaaS）迁移："以后都 agent 了，你还按人头？"</div>
+  <div class="card yellow"><b>两万行 vs 几亿行</b>AI 一天约两万行代码，S/4HANA 有数亿行。复刻代码不难，业务逻辑才是壁垒。</div>
+  <div class="card purple"><b>模型即产品不成立</b>财务场景 99% 准确率也不可用；human in the loop 在未来五到十年仍是主流形态。</div>
+  <div class="card red"><b>FDE 热潮</b>前向部署工程师是 AI 从小圈子外溢进企业的必经路线，两类人才正在合并。</div>
+  <div class="card orange"><b>88% 用、3% 有回报</b>麦肯锡全球调研给出的落差；中国企业的补课逻辑："出来混总是要还的"。</div>
+</div>
+
+<h2>SAP 是谁，ERP 到底管什么</h2>
+
+<p>原欣讲了件趣事：他来 SAP 时家里人甚至不知道这家公司是干什么的。但在 ERP 领域里，SAP 是业内首翘——"做 ERP 的人，somehow 都会把 SAP 就等同于 ERP 三个字"。全球最大的 100 强公司里，99 家都在用 SAP 的软件；云转型之后，云用户超过 3 亿；公司有约 11 万员工，在 150 多个国家运营。</p>
+
+<p>ERP（Enterprise Resource Planning，企业资源计划）管的其实是三件事：人、财、物。最核心的起点是财务——做账、报税、管运营，SAP 起家的 R/1 系统就是以财务为核心。之后财务扩展到"财务业务一体化"，再长出 CRM 等模块，把企业从商机到回款的流程串起来。</p>
+
+<blockquote>"一个企业管理系统就是在管企业的从收入到回款的一个过程。"<span class="who">— 原欣谈 ERP 的本质</span></blockquote>
+
+<p>很多人分不清 ERP 和飞书、钉钉的关系。原欣的分法很清晰：IM、会议、文档、审批流这些是日常交互的部分，老的叫法是 OA（办公自动化）；真正的业务流程，还是在后端的财务、HCM、采购、生产制造系统里跑。交互层发生的结果，最终要回传到后台系统指导业务运行。为什么协同工具深入企业管理难？因为一旦涉及流程，就要面对身份管理、安全性管理，以及多得多、复杂得多的数据来源集成。原欣举的例子是工资计算：每个地方的薪金计算逻辑、纳税要求都不一样，就这么"简单的一件事"，在全球化企业里复杂度非常高。</p>
+
+<blockquote>"现在AI出现了以后，就是既有划分好的阵地一定是被重新打乱重新去看的。"<span class="who">— 原欣谈 AI 对交互层与后台系统分工的冲击</span></blockquote>
+
+<h2>股价过山车与定价模式坍塌</h2>
+
+<p>从 300 美元跌到 160 美元，听起来惨烈。但原欣建议把时间轴拉长：2021 年是 SAP 上云的元年（定义了 RISE with SAP），当时股价是 120 几块、不到 130 块。就算现在跌回 160，相比 2021 年还有 20% 多的增长。同一周期里，很多产品"已经几乎不存在或者夭折了"：Adobe 从快 500 块（约 480）跌到 220 左右，Zoom 基本上大部分都跌没了——单点 SaaS 被 AI 替代的冲击，显性得多。</p>
+
+<p>原欣承认，对所有 SaaS 的恐慌之外，AI 对 SaaS 商业模式本身的冲击是真实的。他拆成两层：第一层，coding 效率提升、成本降低，"你本身原来值钱的东西不值钱了"；第二层，定价模式的认知坍塌——企业都 agent 化了，还按人头收费吗？当裁员都成为常态，靠增加用户数支撑业务发展的路径不再成立。SAP 自己的回应是向 consumption-based（按用量）定价迁移；而硅谷更新的公司已经走到 RaaS——Results as a Service，按结果付钱。</p>
+
+<h2>一天两万行 vs 几亿行代码</h2>
+
+<p>现在 AI 变现路径里看得最清楚的就是 coding。原欣给了一组通用数据：简单的编码一个小时两到三千行，复杂、带校验、带安全性的一个小时两到三百行；取个中线，一天约两万行。而 SAP 的 S/4HANA 全部模块加在一起，是几亿行代码。对比一下 startup：一个初创公司两三百万行代码，已经是一个比较成型、可以上线去做的应用了。</p>
+
+<p>数量级上确实有差异。但原欣的结论反直觉："只是复刻代码本身其实是简单的。"更难的挑战是业务逻辑。只要现在的世界还是一个以碳基生物为主的管理世界，企业运转的形式短期不会有大的调整——该生产的还是在工厂里生产，只是流程里人干预得少，ERP 底层的流程本身并不会改变。</p>
+
+<blockquote>"SAP里面沉淀的就是……这四亿行代码对于通用业务的支撑的底层逻辑它还是存在的。"<span class="who">— 原欣谈代码之外更难复刻的东西</span></blockquote>
+
+<p>而且复刻一个已经相对标准化的东西没有必要。未来真正能创造价值的地方，是在既有的标准流程之上，用更高效、更低成本的方式服务更多企业个性化的需求——"在基本流程之上的agent到底能做哪些事儿是真正能带来业务价值的这一趴，肯定是更重要的一个战场"。</p>
+
+<h2>日抛式软件与信任网络</h2>
+
+<p>主持人转述了与阿里陈宇森交流中的一个说法：未来软件有一种可能的形态是"日抛式"——需求临时、个性化，用很低的成本 web coding 出来，用一两周也许就不需要了。原欣认为不排除这种情况：现在的大公司架构里就有 agent studio，现成的不满意，就自己做一个日抛型的工具，serve 某一个 purpose，用完了就抛。</p>
+
+<p>小公司确实可以这么干：如果只是自己管理、大家基于人与人之间的 trust 协同，不需要披露财务报表、不需要审计，严格的权限管理和审计线索就不是最 critical 的——让业务可见是最大诉求。但企业有生命周期：一旦长大，你要和外部的人协同，上市要披露、出海要合规，自己手搓的系统拿到墨西哥可能就不 work 了——税务不一样、regulation 不一样，还有多币种、多语言的支持问题。</p>
+
+<blockquote>"如何建立一个更广泛的信任基础，让大家信你的数据是代表着你的实际业务，然后我跟你做数据交互的时候，这个数据是可信赖的，有人背书的"。<span class="who">— 原欣谈企业级平台的价值</span></blockquote>
+
+<p>回到公司理论：公司边界内的交易成本大于和外部交易时，公司形态才会存在。AI 打破既有的定价模式之后，公司内的交易成本是否还低于外包给一个 agent？如果不一定，公司的形态一定会发生改变。有让它变小变分散的力量，也有让它聚合的力量——面对未知时，可信平台、大伞（umbrella）之下的"联邦制"方式，背书的机制更好。最终形态现在还说不清，但形成共识的是：会有岗位慢慢减少甚至消失，AI 带来的新需求也一定会长出来。</p>
+
+<h2>自主运营企业：从记录型系统到可执行系统</h2>
+
+<p>2025 年 5 月的蓝宝石大会上，SAP 官宣了 Autonomous Enterprise（自主运营企业）愿景，同时推出 SAP 商业 AI 平台、Joule Work AI 交互界面和 50 多个 Joule 智能助手。架构上，用户用自然语言表达意图，Joule 做意图识别，指挥 agent——有做 orchestration（指令分派）的，有做实际落地执行的。原欣的一句话总结是：</p>
+
+<blockquote>"我们是希望把SAP的系统从一个记录型的系统变成一个可执行的系统。"<span class="who">— 原欣谈自主运营企业的目标</span></blockquote>
+
+<p>越往后，人参与的部分会越少，agent 自动执行的部分会越来越多。但原欣的判断是：未来五到十年，一定还是 human in the loop——agent 执行，人做判断。他举了财务月结关账的例子：企业间往来核对（intercompany reconciliation），agent 运行完"可能完成百分之七十、八十，甚至九十都可以给你对上"，但剩下的差异——到底是汇率导致的差异还是数据错误、坏账计提用什么模式计提多少——都需要人判断。典型场景是：agent 把日常 70-80% 的自动化工作做完，人做最后的审核确认，端到端流程才算完成。</p>
+
+<p>SAP 的实现路径：把应用层打薄，把更多数据和流程性的东西暴露在上一层，让 agentic 语义层的定义更顺畅；在既有知识里 build 企业的知识图谱，把个性化数据沉淀成"企业记忆"（company memory）。标准流程叠加非结构化数据和离线决策，一层一层沉淀，可自动化执行的部分就会越来越高。</p>
+
+<h2>不做基模：聚合比押注更聪明</h2>
+
+<p>SAP 没有自己训练基础模型，而是与 Anthropic、Google、微软等基模厂商合作。原欣的理由是：基模演进速度太快——"你看Cursor也被收了"，在细分领域里做的努力随时可能被基模吃掉；SAP 擅长的还是企业运营侧的流程、数据处理和用户交互。反过来，SAP 开放给所有第三方，"我们提供的可用的模型数量是最多的"——Azure 跑的模型不跑 AWS，各家有各家的闭源模型，SAP 用最合适的场景对应最合适的模型。同时，SAP 也自研基于表数据训练的垂域模型（RPT，从 Term 1 迭代到 1.5），因为结构化数据不应该有任何幻觉。</p>
+
+<p>落到场景里的样子是聚合：客户问一个未来收款预测，外部大模型提供商誉、回款压力等信号，内部结构化数据提供历史订单履约情况，SAP 把不同模型的能力拼起来，"拼出来一个最符合你要求的一个答案"。</p>
+
+<p>为什么要这么小心？因为幻觉在财务场景里不可接受。原欣说："大模型现在这种技术范式，它肯定是多多少少会有幻觉的。"打榜的时候 90% 以上可能已经是很高的 benchmark，但在财务管理领域，99% 的准确率也不是可接受的准确率——它可能就是百分之百，任何不准确就是不可用的数据。所以现在有 agent 的 reflection 做校正，SAP 也在通过上下文和 harness 提升 agent 执行的效率和准确度。也正因如此，模型即产品在 To B 市场不太成立——未来五到十年可见的范围内，既有的业务形态、企业形态不变化，"在To B里面只把模型扔进去肯定是不够的"。</p>
+
+<h2>从模型到应用的 gap：CIO 的吐槽与人才落差</h2>
+
+<p>模型和应用之间的落差，天天跟 CIO、CRO 打交道的原欣看得最清楚。CIO 最头疼的事是什么？</p>
+
+<blockquote>"老板经常在微信上读了一个什么什么什么AI能干啥，然后丢给他说我也要。"<span class="who">— 原欣转述大企业 CIO 的吐槽</span></blockquote>
+
+<p>最大的错位在于：大家认为 AI 来了，以前和数据相关的苦活、脏活、累活就不用干了。实际上 AI 是加速这个过程，而不是让过程消失。对新产生的数据，解法是在生成的那一刻就带着充分的业务上下文，而不是事后花大量 token 二次清洗；对历史数据，AI 可以帮助梳理——把以前靠开会、邮件形成的体外循环决议，把"老师傅"的 know-how 蒸出来，沉淀进企业记忆。</p>
+
+<blockquote>"其实AI能帮助我们把一些非结构化的历史数据，把老师傅给蒸出来。"<span class="who">— 原欣谈历史数据与 AI</span></blockquote>
+
+<p>另一个落差在人才。真正懂 AI 的人都在大厂和 startup 里怀揣梦想；传统企业需要他们，他们却不愿意加入。CIO 们打电话来请原欣推荐人；传统企业还要面对"卡在哪、花多少钱、数据在哪"的拷问，而 top tier 人才往往不是一个人来，要带几个人才能把事干了。AI 还没有在人才供给侧辐射到传统行业。</p>
+
+<h2>FDE 热潮：从 Palantir 到 deploy company</h2>
+
+<p>FDE（Forward Deployed Engineer，前向部署工程师）是最近最火的概念之一。这个模式最早是 Palantir 做起来的，当时的工程师更多从底层数据梳理的角度切入；而传统 ERP 的顾问是行业专家、财务专家——从业务端切入，倒推科目架构怎么设计，最终落在标准化产品上，个性化诉求通过外挂模块解决。FDE 的差异在于：把做产品的人提前部署到客户那里，最后做出来的东西会变成产品本身。</p>
+
+<p>但原欣观察到这个模式正在快速演进。五月，Anthropic 和 OpenAI 各自宣布成立单独的 FDE 组织（deploy company），合作方有麦肯锡、埃森哲等咨询公司，也有 PE——把被投企业（portfolio company）开放出来做 hands-on 的项目。为什么？因为一开始大家觉得"代码是一切，我过去了夸夸就可以做了"，后来发现本体的建立依赖对客户业务的深度理解——缺一个转化器：懂业务、能把业务变成可 coding 场景的人。Anthropic 也开始与波士顿等咨询公司合作，做能力互补。</p>
+
+<p>技术与业务哪个更难补？原欣的判断：技术更容易补——技术水涨船高，基模能力提升带动效率提升，懂业务的人更容易上手驾驭大模型；而"对于懂模型的人，让他去懂记账是怎么做的，对吧，就是这个差异还是不太容易的"。</p>
+
+<p>最有说服力的是一个关务案例：一家大型创新公司在全球 33 个国家做关务申报，自己用 hardcode 方式做了数字化员工做审核报关，准确率只有百分之六七十——结果人变忙了，因为总要去查剩下的错误来源于哪儿。SAP 进去之后，因为有对 33 国税务的基本理解（GTC 全球税务平台），加上 Document AI 通过模板配置识别每个国家的数据项，基于标准做数据切片，准确率瞬间提升到百分之九十几；客户本来只做一个国家试点，马上三十几个国家争相要求上线。</p>
+
+<blockquote>"大家在探索AI真正能够带来业务价值的这个过程，其实不用完全摒弃掉那些以前的东西"。<span class="who">— 原欣谈标准流程打底、AI 补增量</span></blockquote>
+
+<p>FDE 会持续吗？原欣认为总体效率一定会提升：一个创业企业以前需要 50 到 200 人规模，现在二三十个人就能把两三百个人的活干了——"不管你是做FDE还是做什么样的工作，可能我们都需要fewer but better"。而且脏活累活逃不掉：梳理企业的流程、组织和数据逃不掉，对客户业务的理解逃不掉，把业务转化成代码也逃不掉，"只不过我用AI做代码的速度提效了，但并不代表着这个转化的过程它就自然而然的加速了"。麦肯锡、波士顿的咨询顾问在下沉，FDE 在往上走，两股力量会合并成一个更综合的能力。</p>
+
+<h2>组织惯性：比技术更大的挑战</h2>
+
+<blockquote>"其实我觉得AI真正你去scale在现实场景里面遇到的技术上的挑战远小于组织上的挑战，组织上的挑战会更大。"<span class="who">— 原欣谈 AI 落地的真正瓶颈</span></blockquote>
+
+<p>组织的 gravity（惯性）是现实问题：真正进到企业里做事时，大多数人不会因为 AI 来了就自然拥抱 AI——有些人没有意愿，有些人有意愿没能力，有些人既没有意愿也没有能力。组织越大，惯性越大，大家更倾向于用熟悉的、了解的、会做的方式一直做下去。前一阵流行"敞开了烧 token，鼓励大家烧 token"，但即便在高科技公司也不是所有人都会拥抱和使用；现实的大型 enterprise 里人才密度更低，用 AI 拉动一个"重力更大"的实体，更难。</p>
+
+<h2>中国企业的分化与补课</h2>
+
+<p>麦肯锡访谈了两千多家企业的全球调研给出一个刺眼的对比：88% 的企业都或多或少的会用 AI 去做一些项目，但只有 3% 的企业觉得真正有业务回报。预算的结构也在变：IT 预算被削减，AI 预算在增加，一个传统 IT 项目不挂上 AI，立项都会困难。真正上 production 的项目并不多，探索阶段的 POC、原型更多。</p>
+
+<p>中国市场的分化更明显。真金白银付钱的多是大客户——数据多、痛点强、财力够；小公司用开源的、AI 工具自己就跑得很快，是另一条路；最挣扎的是几个亿到一百亿左右的中型企业，进度和创始人的认知强相关。值得注意的是，很多中国中型企业即使很创新，也宁愿把钱投在产品侧的 AI（比如扫地机器人的端侧模型），而不投管理侧——不认为管理侧的收益会大于产品侧。</p>
+
+<p>这引出一个更深的问题：为什么中国的 SaaS 企业到今天也没长出全球巨头？原欣认为和企业心态强相关。快速发展时大家都在追逐 top line 的成长，压力全在获取市场和客户，售后运维压力又大，资源不停在业务侧翻滚——底层系统建设非常潦草，因为涨得太快，没有一个喘息的窗口好好规划设计。AI 来了，一个七拧八歪的非结构化基础也不会自动站起来跑。</p>
+
+<blockquote>"你看你再遇着下一波技术变革的时候它不会自然而然的帮你把以前落的课就自然而然的跨越，它不是个弯道超车的逻辑。"……"出来混总是要还的。"<span class="who">— 原欣谈中国企业的基础课</span></blockquote>
+
+<p>反例是国外企业：看似审批繁琐、行动慢，但底层基础好，AI 一旦赋能，加速度会更高。现在的很多 AI 基建，其实都在补过去信息化的课。</p>
+
+<h2>行业渗透与 Physical AI</h2>
+
+<p>哪个行业先接受 AI？轻资产、偏服务类型的行业融入容易——金融服务、其他服务类型，以及互联网企业本身。SAP 擅长的传统生产制造企业则是另一种节奏：生产形态相对变化不大（各种机器人还没成为主流的生产制造替代方案），但 go to market 的方式和售后方式会变——AI 冲击集中在市场端和售后端，生产制造侧目前偏供应链多一些。</p>
+
+<p>往未来看，原欣特别提到 Physical AI：Anthropic 的新 blog 开始提 physical AI，OpenAI 更早就在搞。如果中国 AI 更可能取胜的路线是"应用 + physical"、结合供应链优势，那么未来这一波高成长企业一定出现在 physical AI 领域。缩影是电动车：它可以是互联网企业，也可以是传统制造企业，最后大家都选择做 full stack——从芯片到车都做，压缩 tier 1 的空间。传统与创新最终是一个组合。"你把自己的供应链的底打好，是支撑未来这一波产业升级、成长、高速成长非常重要的一件事。"</p>
+
+<h2>周期的本质：只有速度变了，人的瓶颈没变</h2>
+
+<p>原欣在甲骨文、微软、SAP 都工作过，经历了本地部署→云化→AI 的完整周期。他的总结是：这次和之前的本质区别就是速度。因为和人的交互方式改变了——以前技术相对在专业领域，现在"真的是AI平权做的非常好"，每个人都可以轻松驾驭 AI，技术演进速度非常快。</p>
+
+<p>但底层逻辑没变。蒸汽机、电力、互联网到 AI，突破性的底层技术影响各行各业，都有一个过程——第一次工业革命大概七八十年才有大面积的生产力提升，到电的时代变成三四十年的周期，到互联网缩短到 20 年左右。"AI泡沫啊、小圈子的狂欢"一定是初期的形态，但外溢一定会到来，而且速度会比之前的几波短。对真正的业务和 GDP 产生影响，从来不是简单的技术迭代问题——只要是人还主宰这个星球，人里面有加速的部分，也有减速的部分，有抵抗力也有创新力。VC 看重的那些 fundamental 特质也没有变：学习能力强的人，最终会变成金字塔尖的那些人。</p>
+
+<p>不变之中，人的瓶颈反而更突出了。原欣说：人的判断是没有办法规模化的——"我一天不睡觉我去弄，也就是24小时我就一个脑袋"。对真正有创业冲动的人，当想法的实现不再是瓶颈时，自己的想法就变成了瓶颈。Agent 处理海量数据，但"人接受不了，人处理不了那么多信号"——可以跑各种 report 给你，但你能瞬间吸纳这么多有用信息、形成判断吗？很难。怎么在教育体系里培养出更多能驾驭 AI 的个体，可能带来教育体系的一些再造和颠覆。</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes">
+  <div class="quote blue">"我们是希望把SAP的系统从一个记录型的系统变成一个可执行的系统。"<span class="ctx">— 谈自主运营企业的目标</span></div>
+  <div class="quote green">"这个业务和技术结合的过程一定是AI从小圈子的狂欢外溢到更广泛的enterprise天地里必经的路线。"<span class="ctx">— 谈 FDE 与企业 AI 落地</span></div>
+  <div class="quote yellow">"你逃不出来梳理企业的流程、组织和数据，逃不掉对客户业务的理解，逃不掉我怎么把业务转化成我的代码。"<span class="ctx">— 谈业务与技术结合的"脏活累活"</span></div>
+  <div class="quote red">"AI真正你去scale在现实场景里面遇到的技术上的挑战远小于组织上的挑战，组织上的挑战会更大。"<span class="ctx">— 谈 AI 落地真正的瓶颈</span></div>
+  <div class="quote purple">"它不是个弯道超车的逻辑。"<span class="ctx">— 谈技术变革不会自动跨越历史欠账</span></div>
+  <div class="quote orange">"出来混总是要还的。"<span class="ctx">— 谈中国企业底层系统建设的基础课</span></div>
+</div>
+
+<footer>
+  本文整理自晚点聊 LateTalk 第 174 期《AI冲击企业软件巨头？与SAP原欣聊大模型to B的颠覆与边界》（2026-07，1h32m），本期节目由 SAP 支持播出。<br>
+  收听原节目：<a href="https://podcast.latepost.com/174">https://podcast.latepost.com/174</a> · 关注公众号：晚点 LatePost
+</footer>
+
+</div>
+</body>
+</html>
