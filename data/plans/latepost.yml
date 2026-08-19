@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-19T03:23:14.847Z
+refreshed_at: 2026-08-19T18:09:06.792Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 26
-done: 0
+done: 1
 pending: 0
-needs_transcript: 26
+needs_transcript: 25
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -122,8 +122,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-19T18:13:48.474Z
+    transcript_job_id: aea4e9b4-8cdc-4e9b-b909-6c9493bd8294_05d9e683d2484fbbb0fd6d8db7e2ae2b,40cd23f2-792e-4f13-95e2-6d897164a8fb_2eeba3eb4fa14df896b70f02635da869,36076bf9-0fbc-4aa2-b780-310f95b938a6_96f32e8e5e3042dd9cd26b5038c4559a,9e2bd28f-dcd4-4d9e-a865-26b10463aa89_9ff68fe75f504104ad52aea4136d9e09,f3006805-260a-4c79-ad33-c1f95a27795e_4956b38d796d4f488c2c767e87fcfa55,3b1847f8-946d-4a50-8f12-caefaa2b7fc3_a91ed385d4434ecc91b3b073ec855e0d,3c48f0bc-fc61-4ac2-a80e-84736a2d485f_874c8e5a4eae4c69a3472767f7e05ee4,ef97654e-3642-4057-ab3a-7502fa9dc187_d73605d53e9c42ec80e625c0f41307de,2b2a41eb-f8b9-461b-bb86-c1d42fed3548_687de45217624de48c5a8c71f03f3580,5816d525-2537-416f-a8f8-4d4099978ad5_aeb6fe8f38dc4d158577cba5ba8ed40d,931261f6-6bb0-4111-8bd0-bb1e88f19eee_ec40fb5af18f4021b58a5d581636790c,6cfdf834-83f5-4a08-85f6-67b4d990778b_8ae6f6e9fe024c4aa86db8d3137e27b1
+    transcript_completed_at: 2026-08-19T18:25:50.951Z
   - id: 88bdcde3-ba07-41d3-af81-61edbf4444a8
     guid: 88bdcde3-ba07-41d3-af81-61edbf4444a8
     title: "172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI"
