@@ -1,15 +1,27 @@
 source: xiaojun
-refreshed_at: 2026-08-18T18:13:58.417Z
+refreshed_at: 2026-08-19T03:23:14.819Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 2
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 2
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6a8472b95aeb2a5712e8de78
+    guid: 6a8472b95aeb2a5712e8de78
+    title: 151. 17岁被2026年ICML收录论文的小少年：我bet开心！开心！开心！
+    duration: 4190
+    published: Wed, 19 Aug 2026 00:00:00 GMT
+    published_sort: "20260819"
+    first_seen_at: 2026-08-19T03:23:14.818Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a8472b95aeb2a5712e8de78?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a8472b95aeb2a5712e8de78/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lgS-qEdm2hDrXRFKGNSPhG4I5h5U.m4a
+    image: https://image.xyzcdn.net/FjIctZnUfsTAtU9ZVcYplZgnV7_h.png
+    status: needs_transcript
+    priority: 1
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去
