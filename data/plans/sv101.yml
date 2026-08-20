@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-08-20T03:23:00.913Z
+refreshed_at: 2026-08-20T18:10:06.397Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -110,8 +110,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 张宏江 and 黄东旭.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-20T18:10:07.644Z
+    transcript_job_id: 60efe51d-4191-4ebe-b348-b6346d0e5d8b_75d4a6420bb64a4ba6e1084682f866ba,f9f1e29f-7dcf-4e8f-952c-2332db5ea88d_43fb695d885a457a924f9f76e02a03e4,03b6ba2c-b3ca-4546-aec9-172365c07207_5e40da8379c34e6aafbef70d82b9484c,95151e24-fb60-4243-97be-037a21841857_50a764329c174c78816175df8985142e,139198d4-a5da-4ece-885b-914ebd01602e_0beafbb5beb241ce8b496aaa2c38566a,e79fea64-1a48-4c06-b629-ad32fa3354f9_7c5ce2210dcb429b980bedd6f7dfe561
+    transcript_completed_at: 2026-08-20T18:14:01.726Z
   - id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
     guid: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
     title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE

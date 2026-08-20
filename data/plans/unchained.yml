@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-08-20T03:23:00.887Z
+refreshed_at: 2026-08-20T18:10:06.364Z
 min_duration: 3300
 min_date: "20260730"
 total_candidates: 2
-done: 0
+done: 1
 pending: 0
-needs_transcript: 2
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -100,8 +100,12 @@ episodes:
       🔮 01:05:27 Post-quantum costs, and when All Core Devs decides EIP-8363's fate
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-20T18:14:01.957Z
+    transcript_job_id: 24f20608-6736-4078-8315-68fb92fd6984_428dfc92d757407994f82d24dfedd707,c5c3d5e8-30b2-451b-b69c-d885ca85d453_4759b701744142e69a18878003637f0d,4cbeb0f7-8cc7-4f93-b782-ad0fa372ba6a_681c30079a524917a8b7f731ecddc5ea,58174d8b-7c96-40d3-b249-45c8a5ea1224_7dcb1ae851cd489ead985a85475df3c4,5b10b0e3-1f50-486e-b098-e56909a5a76b_6fbb4b3d336441f9820c16b8900024f7
+    transcript_completed_at: 2026-08-20T18:17:42.701Z
   - id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     guid: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo

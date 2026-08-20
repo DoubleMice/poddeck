@@ -1,0 +1,30 @@
+id: cea673d6-9c42-11f1-90c9-47d2c7a57252
+source: unchained
+title: "EIP-8363: Should ETH Be Sound Money or a Productive Asset?"
+guest: "Jérôme de Tychey · Oisín Kyne · Kevin Owocki"
+guest_role: "Ethereum France 主席 / DV Labs 联合创始人兼 CEO / Gitcoin 创始人"
+published: 2026-08
+duration: 1h14m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9359204995.mp3
+thumbnail: https://megaphone.imgix.net/podcasts/cea673d6-9c42-11f1-90c9-47d2c7a57252/image/d8c63bf173baa7b48e22da0c89e708f1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+status: generated
+tags:
+  - panel
+  - founder
+  - ceo
+  - technical
+  - strategic
+summary: |
+  EIP-8363 提议让验证者奖励随质押率上升被逐步燃烧，在约 50% 质押率处趋近于零。提案作者之一、Ethereum France 主席 Jérôme de Tychey 在这场 Unchained 圆桌里为它辩护，DV Labs 的 Oisín Kyne 提出了最详细的技术反对，Gitcoin 创始人 Kevin Owocki 则把争论重新定性为政治经济学问题而非工程问题。
+  三人在均衡质押率会落到 40–49%、收益率会降到 0.3–0.4% 这些数字上分歧不大，真正的分裂在于这意味着什么——是终于停止稀释未质押的持有者，还是把以太坊的安全预算和 DeFi 的收益地基一起削掉。
+core_ideas:
+  - 提案的机制不是直接下调奖励，而是燃烧掉验证者奖励中随质押率增长的一部分，让市场自己在某个保留收益率上停下来
+  - Jérôme 的问题陈述是一个自我强化循环——质押越多印越多，没质押的人被稀释，于是只能也去质押
+  - Oisín 把安全预算从存量改写成流量，认为以太坊真正拥有的不是千亿美元，而是现行曲线下每天约五百万美元
+  - 双方都引用「最小可行发行量 0.5%」这个研究结论，但一方用它论证曲线的起点，另一方用它论证曲线不该继续降到零
+  - 作者本人承认这份提案救不了单独质押者，也承认自己没有 DeFi 级联模型；他认为真正能救单独质押者的是 MEV burn 与反关联惩罚
+  - Oisín 的替代方案是先解决原生质押的退出流动性，给「烧 ETH 换即时解质押」定价，而不是去强行设定一个质押比例
+  - Kevin 把争论定性为政治经济学而非工程问题，指出两个阵营已经卡了两年，而 ACD 从未通过过争议度这么高的提案
+  - 时机之争是全场的暗线——Oisín 认为该等到实时证明与后量子改变成本模型时再动，Jérôme 认为正因如此才必须现在做
+article_path: episodes/cea673d6-9c42-11f1-90c9-47d2c7a57252/article.html
+base: /episodes/cea673d6-9c42-11f1-90c9-47d2c7a57252/

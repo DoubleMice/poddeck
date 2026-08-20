@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-20T03:23:00.933Z
+refreshed_at: 2026-08-20T18:10:06.416Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 25
-done: 0
+done: 1
 pending: 0
-needs_transcript: 25
+needs_transcript: 24
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -123,8 +123,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-20T18:17:42.951Z
+    transcript_job_id: c482bb19-3db6-4382-8022-27b10ac20639_7ae625721e7347c7a3ced35d80b9778d,4dbbff95-b486-455a-94fe-7fedabd2d6a7_083a2695cc174b9e9b6e4b36da684e7d,0cfb2020-b826-4869-90e7-a7cadd52b3db_e658e628614f446582e169f6445c0d9b,a49f16ae-b1ff-4927-8721-6bd28417bc1c_b1c643014f8746d6ab5659fa7e0b61f5,dcb89669-eaf5-44ba-b601-b521f31c0628_ca1851806d1b40b580dcec250001c1c1,0fae7b40-df05-4a66-9530-70f3bc1e7fc2_7b7bce732b2048b5af9f8b1a6cb1bf50,39dd1448-db13-4d4d-8b05-e269812f7bf1_a36c6206163a47fdb7e92c75501d2c54,3c62cf38-7476-406e-bab2-27e9cc73f14f_fb997b4b47894c469c486afbc1765894,8d3dcea5-0c6d-4fee-949d-4f11fc71a463_e521587dfdc146adb1227f75add593f8
+    transcript_completed_at: 2026-08-20T18:23:59.758Z
   - id: 63679176-fb2c-4a3b-9256-4a85d4f86211
     guid: 63679176-fb2c-4a3b-9256-4a85d4f86211
     title: "171: 与Henry的「AI季报 26Q2」：从 coding 到 RSI，强者愈强的未来？"

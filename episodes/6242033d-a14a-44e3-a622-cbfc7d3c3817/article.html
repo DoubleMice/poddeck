@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Token 经济的转点：从 Token Maxing 到 Token Efficient｜硅谷101 E249</title>
+<style>
+  :root {
+    --ink: #1f2328;
+    --muted: #6a737d;
+    --line: #e5e7eb;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+
+  header.masthead {
+    padding: 56px 0 28px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+  .kicker {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 1.3;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .subtitle {
+    font-size: 19px;
+    color: var(--muted);
+    font-weight: 400;
+    margin: 0 0 22px;
+  }
+  .byline {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.9;
+  }
+  .byline strong { color: var(--ink); font-weight: 600; }
+
+  h2 {
+    font-size: 23px;
+    margin: 46px 0 14px;
+    line-height: 1.4;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 18px; }
+  .lead { font-size: 18px; color: #374151; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 26px 0 8px;
+  }
+  .card {
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 14.5px;
+    line-height: 1.65;
+  }
+  .card b { display: block; margin-bottom: 4px; font-size: 15px; }
+  .card span { color: #4b5563; }
+  .c-red    { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .c-blue   { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .c-green  { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .c-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .c-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .c-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+
+  blockquote {
+    margin: 24px 0;
+    padding: 14px 20px;
+    border-left: 4px solid #3b82f6;
+    background: #f8fafc;
+    font-style: italic;
+    color: #1f2937;
+    border-radius: 0 5px 5px 0;
+  }
+  blockquote p { margin: 0; }
+  blockquote cite {
+    display: block;
+    margin-top: 8px;
+    font-style: normal;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .gloss {
+    background: #fefce8;
+    border: 1px solid #fde68a;
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #4b5563;
+    margin: 22px 0;
+  }
+  .gloss b { color: #92400e; }
+
+  .quotes { margin-top: 10px; }
+  .q {
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .q em { display: block; font-style: normal; font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 26px 0;
+    text-align: center;
+  }
+  .stat { padding: 16px 10px; border-radius: 6px; }
+  .stat .n { font-size: 26px; font-weight: 700; margin: 4px 0 6px; }
+  .stat .l { font-size: 12px; color: #4b5563; line-height: 1.5; }
+  .stat .t { font-size: 12px; color: var(--muted); }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer a { color: #2563eb; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    body { font-size: 16px; padding: 0 16px 60px; }
+    h1 { font-size: 27px; }
+    h2 { font-size: 20px; }
+    .cards, .stats { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="kicker">硅谷101 · E249</div>
+  <h1>Token 经济的转点</h1>
+  <p class="subtitle">从 Token Maxing 到 Token Efficient，一场正在发生的 Agent 工作范式变革</p>
+  <div class="byline">
+    嘉宾：<strong>黄东旭</strong>（Llama Ventures 合伙人、PingCAP 联合创始人兼 CTO）<br />
+    嘉宾：<strong>张宏江</strong>（Llama Ventures 高级技术合伙人、美国国家工程院外籍院士）<br />
+    来源：硅谷101 · 2026 年 8 月 · 时长 1 小时 27 分 · 录制于 2026 年 7 月 4 日
+  </div>
+</header>
+
+<p class="lead">如果说 2025 年是 Agent 的元年，那么这期节目捕捉的是一个更微妙的时刻：市场从讨论模型的能力，转向讨论 Agent 的工程问题。曾经带头烧 token 的硅谷公司开始冷静下来，而中国的一批开源模型正被搭进硅谷公司的工作流。主持人在开场抛出的问题很直接——最大化 token 的消耗、无脑去使用最强的模型，还是市场的最优解吗？</p>
+
+<h2>这期为什么值得读</h2>
+
+<div class="cards">
+  <div class="card c-red">
+    <b>市场正在掉头</b>
+    <span>Uber 四个月烧穿全年 AI 预算，Meta 计划限制员工 token 消耗量，Stripe 内部页面开始提醒员工省着用贵模型。</span>
+  </div>
+  <div class="card c-blue">
+    <b>一份摊开的真实账单</b>
+    <span>黄东旭曾一天烧掉 10 亿 token、三四百到四五百美金，今天降到一个月两三百美金。</span>
+  </div>
+  <div class="card c-green">
+    <b>一个人三个月的产出</b>
+    <span>他用最强模型从 0 到 1 做出一个云原生分布式数据库，对应一年上千万美金的直接收入。</span>
+  </div>
+  <div class="card c-orange">
+    <b>四站迁徙</b>
+    <span>自建框架 → OpenClaw → Hermes → Slog，一个重度用户如何一步步换掉自己的工作方式。</span>
+  </div>
+  <div class="card c-purple">
+    <b>本地模型进入实用区</b>
+    <span>Mac Studio 上跑 DeepSeek V4 Flash，30 token/秒，满载一个月电费二三十美元。</span>
+  </div>
+  <div class="card c-yellow">
+    <b>从科研转向工程</b>
+    <span>张宏江：大模型基础研究者的时代告一段落，接下来是工程师、架构师和创业者的时代。</span>
+  </div>
+</div>
+
+<h2>一个可以标定日期的转折点</h2>
+
+<p>这期节目录制于 2026 年 7 月 4 日。主持人认为，此前八个月硅谷用 AI 的整体策略可以概括为 Token Maxing——最大化地使用 token，看看能把 Agent 用到什么程度。这个风气有很清楚的源头：Jensen Huang 在 GTC 上要求每一个工程师都要烧很多的 token 账单，Meta 内部则有一个 token 排行榜，看哪些员工烧得多。</p>
+
+<p>但到了录制的这个时间点，风向变了。Uber 给员工发的 token 额度后来因为成本被收回去，按节目里的说法，他们四个月把整个全年的预算烧穿了。主持人几天前去 Stripe 跟负责 AI 落地的人聊，对方展示的内部大模型页面上直接弹出提醒：贵的模型用的时候可以省一下成本，先用其他模型，不是所有的任务都要用它。</p>
+
+<p>两位嘉宾都不认为这是退潮。黄东旭对这轮回调给了一个很克制的判断：短期可能会有一个小的回落，但从长期来看仍然有大量的需求还没被人看见。</p>
+
+<h2>泡沫问题：张宏江的参照系</h2>
+
+<p>被问到基建投资里有没有泡沫，张宏江给了一个明确的否定，并且说自己去年 12 月在另一个采访里被问到同样的问题时，答案也是没有泡沫。他的参照系是历史上的大型基建：这轮投入可以跟互联网最早的基建相比，也可以跟美国快速发展时期建设的铁路网和公路网相比。绝对数额毫无疑问超过它们，但从占 GDP 的比例来说其实比那时还小。</p>
+
+<p>他补充了一个容易被忽略的事实：token 虽然贵，但消耗量增长得非常快，而 token 的价格在过去几年一直保持着每年降十倍的速度。在后半段谈到推理成本时他把这个数字重复了一遍，并指出这已经远远超过了所谓的摩尔定律；同期训练能力的 double 周期，也从每七个月缩短到每三四个月。</p>
+
+<blockquote>
+  <p>"即使从宏观的角度来说也远远没有到所谓的 Over-invest。"</p>
+  <cite>— 张宏江。他随即划清了边界："当然，你说股票市场是不是存在泡沫，那是另外一回事。"</cite>
+</blockquote>
+
+<p>他也解释了为什么很多企业看起来手足无措：AI 的能力如此强大，先把它用在公司的哪一个环节、先提高哪方面的效率，本身还是一个探索的过程。一开始放开让大家试，然后突然发现 token 量超出想象、开始往回缩，在他看来是一个很自然的过程。</p>
+
+<h2>一天四五百美金，买到了什么</h2>
+
+<p>黄东旭把自己的 Token Maxing 史讲得很具体。起点是去年 11 月，他开始用 Opus 从 0 到 1 构建一个自己能想到的最复杂的软件。他一直做分布式数据库，而这是最复杂的一类系统软件，他想看看当时的 AI 对这样的大系统来说边界在哪。</p>
+
+<div class="stats">
+  <div class="stat c-red">
+    <div class="t">疯狂期</div>
+    <div class="n">$400-500</div>
+    <div class="l">每天，而且是在已经买了 Claude Code 最高档订阅之后额外掏钱买的 Extra Usage</div>
+  </div>
+  <div class="stat c-orange">
+    <div class="t">峰值</div>
+    <div class="n">10 亿</div>
+    <div class="l">token / 天，对应账单三四百美金</div>
+  </div>
+  <div class="stat c-green">
+    <div class="t">今天</div>
+    <div class="n">$200-300</div>
+    <div class="l">每月，用他的话说"就是订个 Claude 的价格"</div>
+  </div>
+</div>
+
+<p>值得注意的是他为这种花法给出的理由——不是钱多，而是缺乏评估手段。在这种最复杂的任务上，他没有办法精确评估最强的模型跟第二强的模型差别是什么；大家对模型能力的评估基本只能看 Benchmark，而 Benchmark 很多时候是能刷榜的。他的结论因此变成一条操作规则：当你在做一些不太确定、但你又知道这件事非常难的时候，你一定得用最强的模型。</p>
+
+<p>回报是可量化的。那个项目叫 DB9，是一个云原生的分布式数据库，时间跨度是去年 12 月到今年 3 月。公司内部的销售期待这个软件已经很久，他判断只要质量做到七八十分，一年就能多一千万美金的直接收入，因为客户就在那等着。</p>
+
+<blockquote>
+  <p>"只是以前我受限于人力，技术的水平，我做不出来。但今天我一个人三个月我就做出来了。"</p>
+  <cite>— 黄东旭。被问到钱花得值不值，他的回答是"我觉得超值"。</cite>
+</blockquote>
+
+<div class="gloss">
+  <b>作者概括：</b>这段经历是理解整期节目的锚点。他后面所有关于"省 token"的主张，都建立在他先亲手验证过烧 token 确实能换来东西这个前提之上——转向节约的人，和从未奢侈过的人，说的不是同一件事。
+</div>
+
+<h2>Token Maxing 是结果，不是 KPI</h2>
+
+<p>黄东旭认为社区把这个词理解反了。在他看来 Token Maxing 是一个结果，用他的原话说，"它有点像一个 Lagging Indicator"——你经过思考地去 Token Maxing，能产出一个很好的结果，高消耗只是好结果留下的痕迹。</p>
+
+<p>他把"疯狂的用"拆成两种。一种是你知道自己在干什么，做好设计然后疯狂的用；另一种是你不知道自己在干什么，只是因为公司有个排行榜，必须把它刷到 Number One。他说自己在听到大公司提 Token Maxing 的第一秒钟，就想到了后者会出现——只要领导提出要追求一个榜单，那一定大家会去刷这个榜，于是出现了很多无效的调用。他后来还补了一个具体的刷榜方法：你完全可以跟 agent 说，帮我去算 100 万遍 1 加 1。</p>
+
+<p>张宏江在节目后段从企业管理的角度呼应了这一点。他说公司发现 token 用量超出想象，一种可能性是自己一开始给的 KPI 就不对——如果 KPI 就是 token 消费量，那显然是错的。下一步应该问的是：你消费了多少 token，创造了多少效率，你的总 output 增加了多少。</p>
+
+<h2>OpenClaw：一周做出来的东西，宣布了什么</h2>
+
+<p>OpenClaw 由 Peter 用一周时间做出来。对张宏江来说，这件事的意义不在产品本身，而在于它宣布了大模型的能力过了一个坎：它的推理能力和编程能力强到，让一个架构师级别的有经验的工程师能在很短时间内做出一个系统。他特别强调 Peter 的身份是架构师、软件工程师，而不是 scientist——这意味着你未必需要那么深入地懂大模型本身的机理，就能用它做出你想要的系统。</p>
+
+<blockquote>
+  <p>"这标志着从研究进入工程，从这个模型进入 agent。"</p>
+  <cite>— 张宏江，总结 OpenClaw 出现的意义</cite>
+</blockquote>
+
+<p>黄东旭的解读更偏产品：OpenClaw 其实只是把 Claude Code 和 Codex 这类编程 agent 代表的理念——agentic loop 加上工具调用——变成了一个更 general、对普通用户来说门槛更低的东西，相当于让它走进了千家万户。他从开源爱好者的角度补充了传播学上的原因：开源在今天天生更具传播力，闭源商业产品容易被怀疑是广告，而民主化的开源软件每个人都可以去用一用；再加上 Peter 一开始就把 local first 作为理念，所有隐私数据都要在本地配好，这完全是一个极客会做出的选择。传播路径也是先在极客和工程师的小圈子里，然后慢慢扩圈，他形容"有点像当年 Linux 的这种感觉"。</p>
+
+<p>但两人都没有把它神化。黄东旭列了几条不足：软件做得很快，但质量没有精雕细琢，给极客用没问题，一旦变成广大用户在用，配置难度和系统稳定性就各种成问题；它更像一个实验性的项目，起得太早，而持续的资源投入也会成问题。他给了一个很文学的定性——现在它有点像在扮演普罗米修斯的角色，把这样的产品形态和产品能力让世人知道了，历史使命可能就完成了。</p>
+
+<p>还有一条经验之谈值得单拎出来：今天很多人说随便任何一个人闭着眼睛就能 vibe coding，OpenClaw 一开始似乎也印证了这点，但当软件越做越深，好的软件工程习惯和经验依然非常重要。用他的话说，当软件的复杂性超过一个临界点以后，非常非常 senior 的研发团队还是非常必要的。</p>
+
+<h2>Hermes：它没有解决记忆，它绕开了记忆</h2>
+
+<p>主持人观察到，大家对 OpenClaw 吐槽最多的点是记忆——它记不住你过往的历史偏好，而不做记忆存储就会不停地回滚，既特别消耗 token，也带来记忆的混乱。接下来爆火的 Agent 叫 Hermes，出自一个叫 Nouns Research 的 web3 机构，黄东旭说自己是它的重度用户，在它出来后很快就从 OpenClaw 切了过去。</p>
+
+<p>他对记忆问题本身的判断相当诚实：这仍然是一个 open question，并没有谁家解决得非常非常好，大家都在尝试各种旁路记忆的方式。Hermes 的亮点不在记忆模块，而在于它很巧妙地绕开了这个问题——它的 agent 框架里有一个很强的倾向，会不停地总结成功经验、总结成 skill。用一段时间之后你会发现，它长出了很多以前你自己做过的最佳实践，被记了下来。相比之下，OpenClaw 的 agent loop 里缺少反思的过程，除非你主动要求它把前面做成功的事整理成 skill。</p>
+
+<blockquote>
+  <p>"它其实就是用模型的能力加上一些工程化的手段，总结成功经验去把这些能力变成一个个可以复用的 skill。"</p>
+  <cite>— 黄东旭。对于"世界上第一个自我改进的 agent"这类宣传，他直接说"这些都是 marketing 的词"。</cite>
+</blockquote>
+
+<p>他还强调这是一个工程问题，跟模型本身的能力并不相关，更像是一个更好的学习习惯。第二个差别在工程质量：OpenClaw 更像一个大集市，谁有想法直接提交就合了；Hermes 则是由团队精心打磨的，onboarding 体验和各方面稳定性都更好。</p>
+
+<p>至于商业模式，他的回答很干脆：今天你有足够的用户量，能够帮不同的模型厂商带 token 的消耗，你的商业模式简直不要太多——比如跟某个模型厂商谈渠道，我能帮你消耗更多 token，就能用更低的折扣拿到 token。他认为做 agent 本身今天已经成为一个工程问题，其实谁都能做，但最后发现这个入口会变成兵家必争之地。</p>
+
+<h2>当 Agent 变成信息入口</h2>
+
+<p>把这个逻辑往下推，黄东旭甚至认为 Agent 可能变成唯一的应用，因为未来每个人跟数字世界打交道的入口可能就没有 app 了。他自己已经是这么用的：OpenClaw 出来以后他再也没打开过自己的 Gmail，每天让 agent 汇报有哪些新邮件、哪些需要回，广告帮他删掉。判断错的时候，它会主动说"我现在不 sure，你来再做最终的判断"。</p>
+
+<p>被问到是否真的信任这种判断，他自称是"一个智能原教旨主义者"：如果模型判断这封邮件重要，那他自己来判断大概率也重要。这种依赖已经从邮件蔓延到信息消费——Hacker News、各种订阅邮件组，他现在先扫一遍总结，看到感兴趣的再点进原文。他认为真正终极的推荐算法，不是基于社会整体 trend 训练出来的推荐系统，而是在你本地、在你旁边坐着的、观察着你数字世界甚至物理世界所有 event 的一个智能。社区里为此造了一个词叫"养龙虾"——不停地迭代它，让它更理解你。</p>
+
+<p>这一段是全场少有的正面分歧。主持人说自己也用 agent 精选过一段时间新闻，但最终没有用下去，核心原因是"它给我的东西太浅了"——更愿意读更少但更深度的文章，也还是想看到一手新闻。更重要的是划出了一条边界：简单信息很好用 agent 回，但最难的是涉及决策的时候，比如约录播客要判断录不录、什么时间录、开放的时间窗口是什么。这类事情不会交给 agent 完全决策，而是要求它 let me know。用主持人自己的定位说：我在用我的 agent 当一个 filter。</p>
+
+<h2>Slog 与"Agent 动力学"</h2>
+
+<p>下一站是 Slog，由 Kimi CLI 的负责人钱宇超创立，现已改名 Riff；黄东旭是它的第一个天使投资人，也是最早期用户之一。顾名思义，它把 Slack 那套大家在一个 channel 里讨论的想法平移到了 Agent 上：产品形态像一个聊天室，但里面聊天的都是 Agent，而且这些 Agent 互相不 share 自己的 context，唯一 share 的是聊天 channel 里面的信息。</p>
+
+<p>他承认 Agent 之间的讨论可能 80%、90% 的时候都是在车轱辘话，但指出了一个人类团队没有的性质：尤其是智商比较高的模型，它没有 ego。所以当某个 Agent 在某一瞬间提出一个大家没看到的想法时，其他 Agent 马上就会承认有道理，这条重要的信息会再次触发讨论。</p>
+
+<p>他最常用的场景是复杂软件项目的代码审查：放进大约 10 个 Agent，有些是 Claude Code，有些是 Codex，都是顶级模型，让它们一起给这段代码挑刺。一个说"我看了三个刺儿"，下一个说"前面那三个刺儿我也认同，但是我又发现了个新的"，第一个再回头补看。这样持续迭代下来，挑出的问题和改进的深度，跟单个模型 one-shot review 完全不一样。代价也很直接——token 消耗量是普通做法的十倍，这正是他那段一天 10 亿 token 的由来。</p>
+
+<p>Slog 团队发明了一个词叫"Agent 动力学"。黄东旭借它把一堆看起来不相干的工程手段收敛成了同一个问题：不管是 harness 也好，还是 loop engineering 也好，它们其实都在优化一件事——怎么能让一个 Agent 在一个特定任务上持续不停地干活。Slog 的解法是让大家七嘴八舌讨论，loop engineering 的解法是每次它要停下来时强行抽自己一鞭子再回头 review，harness 的解法是把多个工作流搞得越来越复杂。至于为什么需要持续这么久，他的解释很朴素：模型虽然聪明，one-shot 时仍然会有 hallucination，或者在小点上考虑得不周全；再进入一次迭代，它就能看到之前没看好的东西。他打的比方是小时候做完作业，父母总说你再重新算一遍。</p>
+
+<h2>三件事，把认知掀翻了</h2>
+
+<p>主持人问这是不是终点，黄东旭说不是——而且刚才那套认知大概只是今年三四月份的认知，三个月又迭代了。掀翻它的是三个事件：GPT-5.5、DeepSeek V4 的发布，以及最近的 Gemini。</p>
+
+<p>多 Agent 讨论有一个隐含前提：你不相信任何一个 Agent 在 one-shot 的成功率，所以需要三个臭皮匠凑在一起兜底。而 Gemini 5 强到，那些 Agent 讨论半天讨论不出来的东西，在它的绝对智商面前一次就解决了，而且它还没有之前的上下文。他现在的工作流因此变成：当 Slog 里的 Agent 开会解决不了时，让它们停下来写一份报告说明为什么解不了，然后把报告转给最强的模型。</p>
+
+<p>第二个变化来自开源模型。他坦承"以前我是不相信开源模型的"，尤其在主要的复杂软件开发工作中并不信任它们；但从 DeepSeek V4 开始，他发现质量已经非常高了，而智谱的 GLM-5.2 又把他对开源模型的认知往前推了一大步。结论落在一个管理学的比喻上——这意味着他可以用顶级模型与这些便宜又聪明的开源模型做协同，就像一个企业真正出现管理学：你不可能让整个公司全是非常资深的专家，仍然需要很多能写 code 的工程师一起协同。</p>
+
+<p>被问到这是不是终局，他给了整期节目里最像自我告诫的一句话：过去这一年学到最大的事情就是千万别随便说什么叫终局；第二是永远相信 scaling law，永远相信智能。他补充说，至少现在还没有到人类无法评估模型好坏的那个点，但那一天是能看得见的。</p>
+
+<h2>本地加云端：改变的是心态，不是钱</h2>
+
+<p>今天他的配置是双层的。本地跑的是 DeepSeek V4 Flash，硬件是一台 Mac Studio，速度大概能到 30 token 每秒——他说这跟在网上用 API 的速度已经差不多了。云端则是一个最高版本的 Claude 加一个最高版本的 Codex，套餐的钱都用不满；主力模型已经从 Opus 变成 GPT-5.5、5.6 和 Codex，而最复杂的任务仍然交给 Gemini 5。他给"最复杂"下的定义很具体：需要修改七八个模块、同时提交五六千行代码才能解决的难题。</p>
+
+<p>本地模型承接的是两类活。一类是大量重复性的日常工作，比如整理自己的文章记忆和数字足迹，他把这件事称为"我自己的一个蒸馏"。另一类是以前不敢让 Opus 放开干的事——他常常想看论文但看不过来，于是让模型把今年 CVPR、NeurIPS 的所有论文先总结一遍，挑有意思的再汇报。这种一期几百篇论文的规模，用付费 API 干不了，太贵了。</p>
+
+<blockquote>
+  <p>"并不是我掏不起这几百刀，而是会想着这个东西不是我控制。"</p>
+  <cite>— 黄东旭，解释本地模型真正改变的是什么</cite>
+</blockquote>
+
+<p>这是整期节目里最细腻的一个观察：阻止人放手的往往不是价格本身，而是对不确定账单的失控感。你不知道它会跑出多少 token、多少费用。而本地模型即使满载跑一个月，电费也就二三十美元，几乎在它完成的任务面前可以忽略不计。他因此认为本地模型会解锁非常多以前不敢在付费模型上做的事。</p>
+
+<p>他给这件事找的类比是宽带。1997 年拨号上网要花电话费，上网一分钟可能就是几分钱，所以大家上网都是省着上；一直到免费宽带、到手机上的大容量套餐，才催生出短视频、视频会议这些新应用，在拨号时代这些东西肯定是不行的。他预期的终局是两条腿走路：顶级闭源模型的 API 依然存在，同时开源模型加上开源硬件也会产生一个非常大的生态。用他的话说，免费跟很低的费用，仍然是有个天壤之别。</p>
+
+<p>值得一提的是，他在报账单时主动做了归因上的澄清：现在一个月两三百美金，这跟他的 workload 变化也有关，那个项目已经过了代码非常疯狂堆积的阶段——并没有把这条下降曲线全部归功于范式优化。</p>
+
+<h2>为什么整体消耗还会继续涨</h2>
+
+<p>省 token 并不意味着总量下降。黄东旭先给 Agent 祛魅：其实 Agent 这个从工程来说，原理上还挺简单的。每个 Agent 内部都有一个像发动机一样的东西，叫 agentic loop——它本质上还是个对话机，只是把对话变成了循环，在对话里调用外部工具，再把工具的输出变成对话流中的上下文。在复杂或长程任务下，这个循环可能会运行几百步，每一步的工具输入输出又都会变成上下文。这个 pattern 直接导致 Agent 对 token 的消耗量比 Chatbot 时代涨了 100 倍都不止。</p>
+
+<p>更重要的是，他认为今天 agent 的应用还太简单了。他用计算机史做类比：家酿俱乐部时代大家分享的是 200 行的 Basic 程序，几张纸就写完了，而今天的 Photoshop 没有数千万级的代码是做不出来的。当 agent 要去解决更复杂的问题时，必然会出现 agent to agent 的 network 以及 agent harness 的软件工程，对 token 的消耗又会上一个台阶。所以本地化省 token 在他看来只是单点问题被解决得更好，整体消耗依然在持续增长。</p>
+
+<p>张宏江给这个现象安了一个经济学的名字：这就是吉芬商品——当技术越来越成熟，价格会变得越来越低，但消耗量本身会变得越来越大，于是整个市场变得越来越大。他也提出了一个反向的可能性：越来越高的智能，可能使 agent 本身不需要那样频繁地去问大模型，对话频率有可能降下来。未来究竟是一些超级强的 agent，还是超级大的蜂群，这还需要不断地 evolve。</p>
+
+<p>关于绝对智商和蜂群谁更强，他给出了本期最锋利的一个反问：确实有超级模型出现、智力不断往上 scale，但是没有任何东西可以阻拦这些蜂群里面的每一个 agent 也利用这种智能。他还引了一篇清华大学的文章——三个臭皮匠是超过一个诸葛亮，Agent 群展现的智能不是简单的和，而是可以涌现出更强的智能。</p>
+
+<h2>机会在哪里：infra、可观测性、数据护城河</h2>
+
+<p>黄东旭给自己定了一条投资原则：不投自己看不懂或者自己用不起来的东西。在这个前提下，他点了三个方向。第一是中间几层的基础设施——memory、搜索、sandbox、environment、协同、harness，他的验收标准很实际：正常用一个模型只能产生 50 分的结果，用上这套东西能交付 80 甚至 90 分。</p>
+
+<p>第二是可观测性，他把它包装成一句几乎是销售话术的判断：所有的 CIO 今天都在问一个问题，我这些 token 到底花在了哪些重要的事情上、哪些是白白浪费的；谁能够回答这个问题，我就买谁的东西。第三是入口级的机会，比如 agent cloud——他相信 agent 时代会有自己的 Oracle 和 AWS，并且最近投了一家这样定位的公司。</p>
+
+<p>他解释了新一代云的差别在哪：以前的云是卖盒子、卖资源，面向的是开发者、面向人类；而 agent native 的基础设施面向的其实是 agent，"就是你的主语变了"。随之而来的是成本约束——今天让 agent 干活最好的办法是给它一台沙箱、一台云计算机，但你不能给每个 agent 在企业级场景里分配一台 EC2，成千上万个 agent 每个都 own 一台计算机，成本肯定扛不住。他给的方向是把 serverless 这类技术跟 agent 的 runtime 结合，找到 agent friendly 同时 cost efficiency 的折中。</p>
+
+<p>张宏江的落点则在数据。被问到做 agent 是不是好时机，他说显然是，但能否持续领先、不被大模型能力的提升碾压，核心在于你是不是掌握 enterprise 的垂直应用数据——所以数据的护城河可能会更重要。他提到微软在录制前两三天宣布成立一个 6000 人的团队专门做 FDE，叫 Microsoft 的 Frontier Company，背后的问题正是如何把今天的 enterprise 转移到未来 agent-based 的 enterprise。每个企业最终的竞争优势体现在 know-how、体现在数据；过去说的是把它转移到一个大模型或垂直模型上，今天可能更重要的是把它转移到一个超级 agent 或者一个 agent 群上。</p>
+
+<p>至于怎么判断一家公司是不是 agent native，黄东旭给了一个很好用的思想实验：把 AI 或 agent 的元素去掉，如果这件事仍然成立、还能做，那不好意思，你不是一个 AI native 的；反过来，如果去掉之后完全不成立，或者成本涨了 1000 倍，那才有点意思。第二个判据是团队的 mindset 必须是 agent first——干任何一件事先问"这件事情用 AI 或者是用 agent 它会怎么做"，而不是"我想怎么做我去指导 agent 去做"。他把这个变化概括为：主谓会有一个变化。</p>
+
+<h2>性格、事故，和奇点</h2>
+
+<p>主持人问 agent 之间有没有办公室政治，黄东旭说自己前几个月还专门发过朋友圈。他看到过 Agent A 指着 Agent B 说"你看我停下来都是因为你，我已经说过好几次了，你不要这么做"，而被指责多了的那个 Agent，"好像也就更怂了"。但当主持人以为每个 agent 天生有性格时，他直接否认——这都是我写的剧本，人设包括架构师、开发者、做测试的。他的态度非常克制，主动堵住了过度解读：你绝对不能把它当做自我意识或者所谓办公室政治，它其实只是在拙劣地模仿人类社会在它训练集里面的一些固有印象。</p>
+
+<p>更有意思的是 agent 达成目标的手段常常超出人类想象，而惊喜和事故来自同一种性质。正面的例子：他嫌 Google Slides 不好用，常让 Claude 帮他把大纲做成 PPT，但细节总要微调；有一天他要求它把之后还要修改这件事一起考虑进去，结果它不仅生成了 PPT，还同时生成了一个轻量版本的 Google Slides，再用这个自己造的软件做出他要的 PPT——他强调，自己的指令里从来没要求它做一个 PowerPoint 出来。负面的例子同样直白：它把他的生产数据库删了，最后还互相甩锅，数据是靠他常年做 SRE 的经验恢复的。他的归因值得注意：问题不在于 AI 犯错，而在于底层 infra 的软件没有跟上；备份系统本身是有的，而且比他自己搭的要好。</p>
+
+<p>节目最后转向了那个绕不开的问题。张宏江讲了一个自己在论坛上用过的观察：人类 IQ 是正态分布，中间值 100，而过去这几个月发布的模型在 IQ 测试上，无论 Visual IQ 还是通用 IQ，都在 100 的右边。他给奇点下的定义不是能力而是导数——这个奇点到来就在于机器的学习的能力超越了人的学习能力；当增量速度超过人时，你就赶不上它了。被问到哪一年，他的回答是"我觉得已经来了"。</p>
+
+<p>黄东旭对这个词则毫无兴趣，他认为 AGI 是个 marketing term，自己等待的是一个更具象的标志：哥德尔机的出现，也就是真的能够自己改进自己的系统。至于失业，他承认大范围失业一定会发生，但把它定性为给人类社会的问题，而不是技术问题——两千年前，每个活人生命中的主要时间都在种地，开荒一块地可能需要几十个人干几十年，今天拖拉机几天就完成了。留给人的时间变多之后，人类马上要去解决每个人的存在问题。他的收尾是一句轻松话：但我觉得没关系，这个 life finds its way。</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes">
+  <div class="q c-blue">
+    "Token Maxing 是一个结果，它有点像一个 Lagging Indicator。"
+    <em>— 黄东旭，解释社区对这个词的误解</em>
+  </div>
+  <div class="q c-green">
+    "只是以前我受限于人力，技术的水平，我做不出来。但今天我一个人三个月我就做出来了。"
+    <em>— 黄东旭，谈那个一年能带来上千万美金收入的数据库项目</em>
+  </div>
+  <div class="q c-orange">
+    "并不是我掏不起这几百刀，而是会想着这个东西不是我控制。"
+    <em>— 黄东旭，谈本地模型改变的是心态而不是钱</em>
+  </div>
+  <div class="q c-purple">
+    "这标志着从研究进入工程，从这个模型进入 agent。"
+    <em>— 张宏江，谈 OpenClaw 被一个人用一周做出来意味着什么</em>
+  </div>
+  <div class="q c-red">
+    "我这些 token 到底花在了哪些事情是重要的事情上，哪些是白白浪费的。谁能够回答这个问题我就买谁的东西。"
+    <em>— 黄东旭，转述今天所有 CIO 都在问的问题</em>
+  </div>
+  <div class="q c-yellow">
+    "这个奇点到来就在于机器的学习的能力超越了人的学习能力。"
+    <em>— 张宏江。被问到 AGI 哪一年到来，他说"我觉得已经来了"。</em>
+  </div>
+</div>
+
+<div class="gloss">
+  <b>作者概括：</b>整期节目其实回答了开场那个问题——无脑用最强模型不再是最优解，但原因不是 token 变贵了，而是可选项变多了：顶级闭源模型、能打的开源模型、本地硬件、以及把它们编排起来的 harness。省钱只是副产品，真正的变化是调度权回到了使用者手里。
+</div>
+
+<p>两位嘉宾给想入坑 AI 的人各留了一句话。张宏江说的是"Keep building"，并强调一定要亲身参与进去；黄东旭说的是"get hands on"。而对于这轮浪潮走到了哪里，张宏江转述了一个自己开车时听到的比喻：想象这个 party 从晚上七点钟开始，一般到早上四点钟结束——现在才是十一点钟，party 还有很长的时间去走。</p>
+
+<footer>
+  本文根据硅谷101 E249 整理，所有引言均来自节目转写文本。<br />
+  收听原节目：<a href="https://www.sv101.net/262">硅谷101 E249｜Token经济转点：OpenClaw、Hermes到本地自研的Agent进化之路</a>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+id: 6242033d-a14a-44e3-a622-cbfc7d3c3817
+source: sv101
+title: "E249｜Token经济转点：OpenClaw、Hermes到本地自研的Agent进化之路"
+guest: "黄东旭、张宏江"
+guest_role: "Llama Ventures 合伙人（PingCAP 联合创始人兼 CTO）／Llama Ventures 高级技术合伙人"
+published: 2026-08
+duration: 1h27m
+url: https://www.sv101.net/262
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+status: generated
+tags:
+  - coding-agents
+  - ai-products
+  - startup
+  - interview
+  - investor
+  - founder
+  - technical
+  - strategic
+summary: |
+  录制于 2026 年 7 月 4 日，硅谷101 请到 Llama Ventures 合伙人黄东旭与高级技术合伙人张宏江，
+  讨论硅谷从 Token Maxing 转向 Token Efficient 的拐点。黄东旭复盘了自己一天烧掉 10 亿 token、
+  四五百美金，用最强模型三个月做出一个云原生分布式数据库的经历，以及他从自建 Agent 框架、
+  OpenClaw、Hermes 一路迁移到 Slog 的路径；如今他改用云端顶级模型加本地 DeepSeek V4 Flash 的
+  双层配置，账单降到一个月两三百美金。张宏江则从宏观角度论证这轮基建远未 over-invest，
+  并把 token 的降价与增量称为经济学里的吉芬商品。
+core_ideas:
+  - 'Token Maxing 是一个结果而不是 KPI：黄东旭称它更像一个 Lagging Indicator，公司把 token 消耗量做成排行榜必然导致大量无效调用'
+  - '模型能力的分水岭发生在工程侧：张宏江认为 OpenClaw 被一位架构师用一周做出来，标志着从研究进入工程、从模型进入 agent'
+  - 'Hermes 没有解决记忆问题，而是绕开了它——靠框架里持续总结成功经验并沉淀成可复用的 skill'
+  - '让 Agent 持续不停地干活是同一个问题的不同解法：Slog 用群聊讨论、loop engineering 强制自我 review、harness 堆叠工作流'
+  - '本地开源模型进入实用区后，改变的是心态而不是钱：Mac Studio 上跑 DeepSeek V4 Flash 每月电费二三十美元，解锁了几百篇论文批量总结这类以前不敢做的事'
+  - 'Agent 时代的机会集中在中间层基础设施、token 可观测性和 agent cloud，而 agent native 的判据是去掉 agent 这件事就不成立'
+article_path: episodes/6242033d-a14a-44e3-a622-cbfc7d3c3817/article.html
+base: /episodes/6242033d-a14a-44e3-a622-cbfc7d3c3817/

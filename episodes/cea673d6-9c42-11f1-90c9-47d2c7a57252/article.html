@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EIP-8363：ETH 该是健全货币，还是生产性资产？ — PodDeck</title>
+<style>
+  :root {
+    --ink: #1f2328;
+    --muted: #656d76;
+    --rule: #e4e7eb;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+
+  header.head { border-bottom: 1px solid var(--rule); padding-bottom: 26px; margin-bottom: 34px; }
+  .kicker { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+  h1 { font-size: 31px; line-height: 1.35; margin: 0 0 16px; font-weight: 700; letter-spacing: -.01em; }
+  .byline { font-size: 15px; color: var(--muted); margin: 0; }
+  .byline strong { color: var(--ink); font-weight: 600; }
+  .meta { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+  h2 { font-size: 22px; line-height: 1.45; margin: 44px 0 14px; font-weight: 650; letter-spacing: -.005em; }
+  h2::before { content: ""; display: block; width: 34px; height: 3px; background: var(--ink); opacity: .18; margin-bottom: 14px; border-radius: 2px; }
+  p { margin: 0 0 18px; }
+  .lede { font-size: 18.5px; color: #33383d; }
+
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 26px 0 34px; }
+  .card { padding: 14px 16px; border-radius: 7px; font-size: 14.5px; line-height: 1.65; border-left: 4px solid; }
+  .card b { display: block; margin-bottom: 4px; font-size: 14.5px; }
+  .c-blue   { background: #eff6ff; border-color: #3b82f6; }
+  .c-green  { background: #f0fdf4; border-color: #22c55e; }
+  .c-yellow { background: #fefce8; border-color: #eab308; }
+  .c-red    { background: #fef2f2; border-color: #ef4444; }
+  .c-purple { background: #faf5ff; border-color: #a855f7; }
+  .c-orange { background: #fff7ed; border-color: #f97316; }
+
+  blockquote {
+    margin: 24px 0;
+    padding: 16px 20px;
+    background: #f6f8fa;
+    border-left: 4px solid #9aa4b0;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    font-size: 16.5px;
+    color: #2c3238;
+  }
+  blockquote .attr { display: block; margin-top: 9px; font-style: normal; font-size: 13.5px; color: var(--muted); }
+
+  .note { padding: 14px 17px; border-radius: 7px; background: #f6f8fa; font-size: 15px; margin: 22px 0; border-left: 4px solid #9aa4b0; }
+
+  .figures { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 26px 0 30px; text-align: center; }
+  .fig { padding: 14px 10px; border-radius: 7px; border: 1px solid var(--rule); }
+  .fig .n { font-size: 25px; font-weight: 700; margin: 5px 0; }
+  .fig .l { font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+
+  .quotes { margin: 26px 0 10px; }
+  .q { padding: 14px 17px; border-radius: 7px; border-left: 4px solid; margin-bottom: 12px; font-size: 15.5px; font-style: italic; line-height: 1.7; }
+  .q .src { display: block; margin-top: 8px; font-style: normal; font-size: 13px; color: var(--muted); }
+
+  footer.foot { margin-top: 54px; padding-top: 24px; border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted); }
+  footer.foot a { color: #2563eb; text-decoration: none; word-break: break-all; }
+  footer.foot a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .wrap { padding: 32px 18px 60px; }
+    h1 { font-size: 25px; }
+    h2 { font-size: 20px; }
+    .cards, .figures { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <div class="kicker">Unchained Podcast</div>
+  <h1>EIP-8363：ETH 该是健全货币，还是生产性资产？</h1>
+  <p class="byline">
+    嘉宾：<strong>Jérôme de Tychey</strong>（Ethereum France 主席、EIP 作者之一）、<strong>Oisín Kyne</strong>（DV Labs 联合创始人兼 CEO）、<strong>Kevin Owocki</strong>（Gitcoin 创始人）
+  </p>
+  <div class="meta">主持人 Laura Shin · 2026 年 8 月 · 时长 1h14m</div>
+</header>
+
+<p class="lede">
+一份改动以太坊发行曲线的提案，把整个生态最深的一条裂缝重新撕了开来。有意思的是，这场圆桌上三个人对结果数字的预测其实高度接近——他们分裂的地方，是这些数字意味着什么。
+</p>
+
+<div class="cards">
+  <div class="card c-blue"><b>提案本身</b>让验证者奖励随质押率上升被逐步燃烧，在约 50% 质押率处趋近于零。</div>
+  <div class="card c-red"><b>作者在场</b>Jérôme 是 EIP 作者之一，正在逐条回复 ETHMagicians 上的 190 条评论。</div>
+  <div class="card c-green"><b>最尖锐的反对</b>Oisín 认为安全预算被误读了：它是每天的流量，不是质押总额那个存量。</div>
+  <div class="card c-yellow"><b>商业社群的反弹</b>Aave 的 Stani、SharpLink 的 Joe Shalom、Bankless 的 Ryan Sean Adams 都公开反对。</div>
+  <div class="card c-purple"><b>治理才是真问题</b>Kevin 的判断是：这不是工程问题，是政治经济学问题，两个阵营卡了两年。</div>
+  <div class="card c-orange"><b>时间窗口</b>按现状推演，2028 年前后质押率会触及 50%，那时再改代价更大。</div>
+</div>
+
+<h2>一个不会自己关掉的循环</h2>
+
+<p>
+Jérôme 对问题的陈述其实只有两句话，但整场辩论都建在这两句话上。第一句是关于现行曲线的机制：质押的 ETH 越多，协议印出来的新 ETH 就越多，而这个激励「从来不会真正关掉」。第二句是关于成本由谁承担：每一个没有去质押的持有者，都在通过稀释为质押者买单。
+</p>
+
+<p>
+把这两句话接起来，就得到一个自我强化的循环。你不质押，你就被稀释；为了对冲稀释，理性的做法是也去质押；而更多人质押，又意味着协议印得更多，稀释更严重。Jérôme 在节目里描述这个动力时用的说法很直白：随着持有者面对越来越多的稀释，「你的激励就是现在就去质押」，去对抗稀释。
+</p>
+
+<p>
+他给出的具体证据是入口队列。他说自 2025 年 5 月 SEC 给出指引以来，进入质押的队列就一直是满的，而且没有回落的迹象。按这个趋势推演，他判断到 2028 年前后质押率很可能触及 50%，并且此后仍是上行。
+</p>
+
+<h2>提案的机制，以及它的四个旋钮</h2>
+
+<p>
+EIP-8363 的做法不是直接下调奖励数字，而是燃烧掉验证者奖励中的一部分，且这个比例随质押率上升而增大。Jérôme 自己把它压缩成一句话：<em>"a burn that grows with the staking ratio"</em>。效果是奖励在「大约一半 ETH 被质押」的水平上趋近于零；而在他们的模型里，市场会在远早于这个点的位置停下来，停在参与者要求的最低收益上。质押在参与度低的时候依然有吸引力，但「过度质押」不再被补贴。
+</p>
+
+<p>
+他强调曲线背后有四到五年的研究积累，参数不是随手定的，并把可调的旋钮拆成了几个：曲线本身的最大发行水平；目标质押率；归零点；以及过渡期。他们先选定一条能匹配「最小可行发行量 0.5%」的曲线——按他引述的研究，这是为了保证经济安全、支付安全预算所必须发行的最低量——然后把发行的峰值定在 20% 到 30% 的质押率区间，再让曲线在 50% 质押率之后归零。他明确说，确保质押率永远不越过 50%，本身就是设计目标之一。
+</p>
+
+<p>
+过渡期是他反复强调的部分。他说他们刻意避开了「今天提案、明天生效、收益一夜腰斩」的剧本：从现在开始讨论到提案完全生效，中间大约有一年半到两年，其中 18 个月是在 Agora 上线之后才开始计时的。他也坦率承认，这个过渡期够不够长，他随时准备就此争论。
+</p>
+
+<div class="note">
+<b>他对「央行」类比的反驳。</b>Laura 提到有人把这份提案比作央行突然做出一个有重大经济后果的决定。Jérôme 的回应是：央行有明确目标，在定期会议上做很小的调整；而这份提案是一次跨越数年、指向一个方向的转向——两者不是同一类动作。
+</div>
+
+<h2>最锋利的一句话：安全预算是流量，不是存量</h2>
+
+<p>
+Oisín 的批评没有从「收益会掉多少」入手，而是从「以太坊到底有多少安全」入手。他先明确了自己同意的部分：要让已确认的交易被撤销，攻击者需要被销毁数百亿美元级别的 ETH，他认为这个威慑在现阶段大概是够的。他不同意的是把这一端当成安全的全部。
+</p>
+
+<p>
+他指出还有另一类失败：质押者可以对「哪些交易进入区块」变得挑剔——只对符合自己意愿、不包含自己不喜欢的人的区块投票。而只要这么做的人占到 51% 或以上，协议不会罚他们一分钱。社群手上的对策是「必要时大家协调起来，把他们的 ETH 全销毁掉」，但他认为把以太坊全部的安全押在这个动作上，风险太大。他借用了一个来自比特币的词来收束这条线索：Nakamoto 系数，也就是多少个组织加起来就占了 50% 的算力或质押权重。
+</p>
+
+<blockquote>
+"we don't really have a hundred billion dollars of security, we really have five million a day at the current curve, and depending on, you know, what people think about equilibrium for this new one, it might be a million dollars a day or less, and I don't really know if that's enough to protect a kind of a trillion dollar computer like we want it to be"
+<span class="attr">— Oisín Kyne</span>
+</blockquote>
+
+<div class="figures">
+  <div class="fig"><div class="l">常被引用的说法</div><div class="n" style="color:#2563eb">$1000 亿</div><div class="l">他说以太坊其实并不拥有这个数</div></div>
+  <div class="fig"><div class="l">现行曲线的实际流量</div><div class="n" style="color:#a16207">$500 万/天</div><div class="l">真正在持续买单的安全预算</div></div>
+  <div class="fig"><div class="l">新曲线均衡态可能是</div><div class="n" style="color:#dc2626">$100 万/天</div><div class="l">用他的话说：甚至更低</div></div>
+</div>
+
+<p>
+值得注意的是 Jérôme 的回应方式：他没有反驳这个数字。他说贿赂或胁迫验证者去做或不做某件事，每天的代价「在几百万美元的量级」，并直接表示「我老实说，我认为这确实是真的」。他把安全称作一个光谱，需要分别考虑不同层级、不同类型的攻击；然后划定了这份 EIP 的射程——它主要优化的是终局性那一端，目标是把这一端做到最大。至于抗审查那一端，他说主要由 DVT、DAAS 这类方案负责，他既支持这些方向，也不认为发行量是能影响那一端的杠杆。
+</p>
+
+<p>
+<b>作者概括：</b>两人在事实层面的分歧其实很小。真正的分歧是「抗审查这一端该不该由这份提案负责」。
+</p>
+
+<h2>归零，还是停在 0.5%</h2>
+
+<p>
+如果说这场辩论有一个精确的裂点，就是曲线尾部的那一段。Oisín 说得非常清楚：如果发行停在 0.5% 而不再往下砍，这份提案的争议性会小得多。他反对的从来不是降低发行，而是「一路降到零」。
+</p>
+
+<blockquote>
+"if we stopped at 0.5% issuance and didn't cut it any lower, this would be a much, like, less objectionable proposal"
+<span class="attr">— Oisín Kyne</span>
+</blockquote>
+
+<p>
+他担心的场景很具体：一个持有 40%、50% 甚至 60% ETH 的实体——他说「which I won't name」，明确拒绝点名——可以主动把发行推到零。到那时几乎所有理性参与者都会退出质押，而这个实体留在场内，握着多数质押权重。
+</p>
+
+<p>
+这里有一个容易被忽略的对称性：0.5% 这个数字，被辩论双方同时引用。作者用它论证曲线的起点在哪里，批评者用它论证曲线不该继续往下走。Jérôme 还提到，以太坊基金会协议团队认为 0.5% 是可以超长期承诺的水平，他说这主要是 Justin Drake 的说法。
+</p>
+
+<h2>商业社群的反弹，和作者的回应</h2>
+
+<p>
+反对声在节目里被点了名。SharpLink 的 Joe Shalom 写过一篇文章，Laura 形容它的标题非常简洁：<em>"It would undermine DeFi, and DeFi is Ethereum's superpower"</em>。Kevin 转述 Aave 的 Stani Kulechov 算过的账：验证者收入若从约 3% 降到 1.5%，那就是砍掉一半。Bankless 的 Ryan Sean Adams 则用一句话定了性——<em>"dead in the water"</em>。Kevin 还转述了一串疑问：更接近零收益的机制，会不会反而加速这份 EIP 想阻止的集中化？借 ETH 的场景还成立吗？会不会埋下税务地雷？
+</p>
+
+<p>
+Jérôme 的回应有两层。第一层是纠正「所有人都反对」这个印象：会写文章的人本来就更多是来找答案、提异议或者干脆表达不满的，这在他们过去每一次调整 ETH 发行的时候都发生过。第二层则相当坦率——最先站出来反对的，是生意直接受影响的人；他说这在意料之中，「我们不打算掩饰这一点」。
+</p>
+
+<p>
+被问到 DeFi 的连锁反应时，他给出了全场最诚实的一句话：他没有级联模型。方向他说得准——质押率会稳定下来，网络收益会更低，循环贷那一块会缩小；但缩小多少，他说不知道，也不愿意凭有限的资源和有限的公开信息去乱猜。他给出的替代动作是邀请所有会受影响的场所主动联系、一起把这个模型建出来。Laura 也点出，像 Gauntlet 这类机构本可以做蒙特卡洛模拟，但这件事看起来还没有发生。
+</p>
+
+<p>
+不过他并没有停在防守。他提出两个反驳。一是 TVL 是虚荣指标——那是把同一份 ETH 循环计算多次、把衍生品和本金重复计数的结果；真正该看的是成交量，是 DEX 上的交易、抵押与再抵押、仓位调整，这些才是真正在燃烧 ETH 的活动。二是关于借贷：他建议跳出 DeFi 视角，用传统金融的回购市场来看，然后反问一句，<em>"isn't that people shorting ETH?"</em> 在他看来这甚至可以算一个危险信号。他举的例子是某人拿 5 万美元稳定币存进 Aave、借出 ETH 再去循环，赚的正是其他 ETH 持有者被稀释的那部分——他称之为「a brittle behavior」，并不认为它在现阶段为以太坊买到了额外的安全。
+</p>
+
+<h2>单独质押者：一个双方都承认的难题</h2>
+
+<p>
+流传最广的一个数字是：家庭验证者的税后收入最多会下降 77%。Jérôme 说这里有一个措辞造成的误读。他强调机制不是「给你一份、再拿走五份」——那「一份」根本不会先进入你的可用余额。它和 EIP-1559 的燃烧是同一个道理：余额在燃烧之前从未收到过奖励。他也表示如果这个说法更清楚，措辞可以改。
+</p>
+
+<p>
+但税负问题本身是真的，而且他自己就是当事人。他说自己从创世起就在单独质押，目前收益约 2.5%，这笔收益在法国要按 30% 的统一税率缴税，于是实际到手大约只剩七成；在这之上还要再叠加稀释，因为发行是对全部供应量印的——发行率 1%，你就被稀释 1%。他的结论是：这样算下来，单独质押者的保留收益率会很快被触及，这是一个实实在在的问题。
+</p>
+
+<p>
+然后他做了一件在辩论中不常见的事：他直接推翻了外界对提案的一个正面解读。
+</p>
+
+<blockquote>
+"It's not going to save the solo stakers."
+<span class="attr">— Jérôme de Tychey，承认 EIP 发布时没有把他们在这个问题上的立场讲清楚</span>
+</blockquote>
+
+<p>
+他真正的主张是两种坏结局之间的比较。他承认新曲线同样可能把单独质押者挤出去，但认为现行曲线会以更快的速度挤走他们，而且到最后不但一样没有单独质押者，还留下高得多的发行量。他举了一个推演：如果有人说「低于 2% 我就退出」，在现行机制下这一天会在质押率约 58% 时到来，那时发行率是 1.1%；而现在质押率才 35% 左右。他补充的一个论据是：单独质押者只承担运营风险，而选择 LST 或衍生品的人还要额外承担运营方的治理风险和智能合约风险——这些额外风险有可能被补偿，从而让一部分人留下来。
+</p>
+
+<p>
+Oisín 在这一点上部分站到了他这边，但把矛头指向了别处。他说 Jérôme 指出的问题绝对真实：单独质押者一路按收入被征税，而持有包装过的 LST 的人是很多年以后才缴资本利得，复利效率完全不同。他认为更有效的解法是政策层面的——Proof of Stake Alliance 一直在推动的方向，是把质押奖励按「创造所得」计税。
+</p>
+
+<blockquote>
+"a baker doesn't pay taxes when he bakes his bread he pays it when he sells the bread... Ethereum stakers shouldn't pay taxes when they earn the ETH they should pay it when they sell the ETH"
+<span class="attr">— Oisín Kyne</span>
+</blockquote>
+
+<p>
+不过他也说了一句更冷的话：他自己就是当初拿着计算器算账的人之一，而如果真的降到 0.3% APR，税制怎样都不重要了——那点收益连电费之类的成本都覆盖不了。他的总结是，比例和均衡点你几乎可以随便填，算下来几乎永远是委托更划算，除非碰上被罚没或运营方出事那种最坏情况。
+</p>
+
+<p>
+有意思的是，两人对「什么能真正救单独质押者」的答案是重合的。Jérôme 直接说是 MEV burn，理由是小规模验证者拿不到和大玩家同样的 MEV 回报，于是所有人都被推向最大的那一家；另一个是反关联惩罚，而他点名这正是 Oisín 团队在推动的方向，并说「我很高兴你把这个话题带回来」。他还描述了集中化的引力有双重来源：选最大的运营方不只是回报更好，还因为「大到不能倒」的感知——为了把运营风险降到最低，人们干脆选最大的那一个。
+</p>
+
+<h2>机构叙事之争：说的和做的</h2>
+
+<p>
+Laura 引述了 Stani 文章里的另一个论点：这会让以太坊上的活动变得不经济，并且是 <em>"a negative factor for any institutional buyer who would be considering taking an ETH position instead of other networks with predictable cash flows"</em>，这种不确定性有显著的采用成本。Jérôme 在她说这话时明显地摇了头。
+</p>
+
+<p>
+他先讲了一段时间线：SharpLink 公开表态支持 Stani 的立场之后，第二天宣布与 Galaxy 合作做 DeFi 基金，再一天宣布向 Lido 发送价值 2 亿美元的 ETH。他的评论只有一句——看来发行量的讨论确实影响了他们把资产投入某个具体策略的决定。他补充说 Grayscale 的立场就克制得多，还提到 Tom Lee 曾表示欢迎就发行量展开讨论。
+</p>
+
+<p>
+他不接受的是那个框架本身。他的推演是这样的：发 ETF 或做 DAT，本质是在说服别人相信 ETH 有未来、能保值，收益只是撒在上面的一张息票。而另一端的投资者足够老练，他们会做稀释调整后的计算，然后追问：收益从哪来？是维持在 2.5%，还是会更低？你的应对计划是什么？所以当一个 ETF 或 DAT 公开说「关于发行量的讨论会伤害 DeFi，我们不想要」，它同时也在说：那些能改善「这个资产为什么保值」这一叙事的事情，不是当务之急。
+</p>
+
+<p>
+他还抛出一个两难。如果 ETH 唯一的用例真的就是拿去质押然后放着，那么以太坊就该彻底重新审视自己的安全假设和信标链的行为方式。他提醒那些主张「一切都该去质押」的人：链上数据可用性和 zkEVM 在这条路径下走不通，而这些东西就发生在未来两到四年内。
+</p>
+
+<h2>Oisín 的另一条路：先修退出，而不是压比例</h2>
+
+<p>
+节目后段 Laura 抛出了「把 LST 内嵌进协议」的设想，Jérôme 和 Oisín 都表示怀疑。Oisín 给的理由是：流动性质押代币必须把质押委托给某些人去运行，而这里没有完美答案——你可以挑几个信任的运营方，也可以极端社区化地挑上千个家庭质押者，这是一个权衡空间，不存在最优解。所以他不认为一个同质化、共担风险的流动性质押代币是可行方案。
+</p>
+
+<p>
+但他顺势指出，LST 之所以存在、质押之所以集中，指向的是同一个原因：原生质押不流动，钱不好拿回来。眼下队列拥堵，还可能遭遇挤兑式的冲击；最好情况下大约四天能拿回钱，而按他的说法，现在可能要几个月。正是这种不确定性，把大量质押者推向 LST 或中心化交易所——那里随时能卖，哪怕要接受一点折价。
+</p>
+
+<p>
+他的方案是让协议提供一个可定价的退出：烧掉一定数量的 ETH，就能把质押取出来。他认为这是协议能做的最可信中立的事。行情好的时候这个价格会很便宜，大致相当于同期限借 ETH 的成本；压力时期会更贵，但至少人们知道钱拿得回来。他预期的效果是，会有大量风险意识强的质押者直接质押到自己的 Ledger 或冷钱包，而不是把钱全放在交易所或 LST 里。他的落点很明确：这才是更该考虑的事，而不是去强行设定一个比例。
+</p>
+
+<h2>时机之争：几个硬分叉之后，成本模型会完全不同</h2>
+
+<p>
+这场辩论真正的暗线是时机。Laura 引述了 Oisín 的一段公开发言：以太坊离实时证明和切换到后量子只有几个硬分叉，而那条链的成本模型和今天完全不同——出块将需要「a server rack worth of expensive GPUs」，用后量子签名方案做证明也比现有方案更贵。他自己算过，那种情况下出块大约意味着每年十万美元量级的硬件折旧，而结果很可能是只剩两家公司愿意承担这笔成本。
+</p>
+
+<p>
+他的结论因此是「现在做这件事有点太早了」。他说 2024 年那次争论之后大家学到的教训是：要花好几年建立共识，并且要挑一个有充分正当理由的时机去重做发行量；而那两个显而易见的时机就是后量子和实时 ZK 证明。他还给了一组参照数据：市面上有五六条成熟的权益证明链，多数没有罚没机制，因此不存在以太坊这种可能损失全部本金的风险；其中五条通常在 70% 左右质押率，也有不少在 50% 出头。他认为以太坊很可能走到 50%，但再往上每 10 个百分点都会越来越难——尤其是万一出现大规模罚没事件，人们会冷静很多。他还提醒：走到 36% 已经花了将近六年。
+</p>
+
+<p>
+Jérôme 的反向推理正好相反。他说如果现在没有能力在生态和产业层面把这场讨论做完，那么三年后当职责真正改变、必须改发行量时，局面会更糟——届时质押的 ETH 更多、既得位置更牢固、依赖这份收益的公司和资产也更多。
+</p>
+
+<blockquote>
+"we have a window of opportunity for a smooth transition, um, and we should, we should not let it close"
+<span class="attr">— Jérôme de Tychey</span>
+</blockquote>
+
+<p>
+他还把安全论证接了上去：以太坊的安全性和权益证明不是按「质押率超过 50%」来设计的，一旦越过那条线，可信中立性本身就成了问题——「our credible neutrality is in question here」。谈到和其他链竞争时，他对「Solana 有 7% 以上机构质押收益」的回应是反问：付 7% 的链，是不是因为必须补贴才有人跑节点？可能是硬件要求太高、要租的服务器太贵。相比之下他说以太坊单独质押者的账单在百美元的量级，而在这个级别的链里，没几条能说自己真的还有单独质押者。他还指出比特币现在印得比 ETH 少——曾经不是这样，而这份提案会把以太坊带回那个状态。他给出的反向检验是：如果高收益真能带来采用，那我们应该反过来问，把给质押者的钱提高 3 倍、4 倍甚至 10 倍，能给以太坊主网带来更多采用或更多活动吗？
+</p>
+
+<h2>治理：这不是工程问题</h2>
+
+<p>
+Kevin 一开场就声明自己对这份 EIP 尚未站队。他真正关心的是程序：这样一份有争议的提案，究竟由谁、按什么规则决定。他把整件事的性质讲得最清楚——这不是工程问题，是政治经济学问题；对「ETH 的最佳发行量是多少」不存在唯一正确答案。他借用 Bankless 早期那篇著名的「三点资产」文章发问：资本资产、消耗性资产、价值储存，以太坊想成为哪一个？他认为这里存在零和取舍，而这正是两个社群始终没能合流、只是各自重复各自论点的原因。
+</p>
+
+<p>
+他给了两个历史坐标。一是 ProgPow：有争议的提案被否掉，是有先例的。二是 DAO 硬分叉：他说那之后以太坊再没有发生过一次重大分叉。他还提醒，All Core Devs 从来没有通过过争议性和反弹强度达到这个级别的东西。而他补的那句注解，可能是整期节目里最适合贴在墙上的一句：不做决定本身也是一种决定。
+</p>
+
+<p>
+Oisín 则给这场辩论换了个命名。他说这与其说是「超健全货币 vs 生产性资产」，不如说是超健全货币和网络安全之间的取舍，并把自己归到偏安全的那一边。在他看来，机构真正在找的是两样东西——可预测性和安全性。可预测性意味着提前很多年就被明确预告：权益证明写在以太坊白皮书里，做了五年，所有人都觉得理所当然；后量子在 2024 年宣布，他猜大概 2029 年前后才上线。他认为发行量的改变需要同一量级的预告。至于安全性，他担心「零发行也没关系，反正有 50% 质押」这一派离比特币那种安全预算危机太近了。
+</p>
+
+<h2>接下来会发生什么</h2>
+
+<p>
+这是全场少数几个有确切日期的部分。Kevin 给的坐标是 All Core Devs 第 185 次会议，时间是周四 8 月 20 日 14:00 UTC，他预计讨论会在这次会议前后到达沸点。Jérôme 补充说这次要从约 66 份 EIP 里筛选进入 Hekate 分叉的候选：哪些太不成熟、哪些技术上太复杂、哪些需要更多时间。但他说真正该记住的日期是 10 月 26 日——那天 ACD 决定各提案是否成熟到可以进入「提议纳入」状态，通过后才进入测试网与实现阶段。Kevin 认为如果进不了这班车，整体通过的可能性会低很多；按大约每六个月一次分叉的节奏，就要推到 2027 年上半年。
+</p>
+
+<p>
+两人对结果的预期都偏保守。Jérôme 认为直接把提案杀掉不是大概率结果，更可能是让讨论延续下去；他补了一句技术判断——这份 EIP 无论多有争议，实现上都不算大难题，他说不是「容易」，但比起其他事情不算难，因此他不预期 ACD 会以「太有争议」为由停止讨论，何况过去 ACD 在非常有争议的事情上也让讨论继续过，其中就包括 ProgPow。Kevin 则判断在这么多异议之下，核心开发者不会原样通过；他更想看的是两派能否像立法那样，把相距很远的两份草案揉成一份。
+</p>
+
+<p>
+Laura 最后的总结与此接近：她两边的论点都能看到，而这大概意味着这份提案在被采纳之前需要一定程度的打磨。而 Kevin 留下的那句话，或许才是这场争论最准确的形状——他说 All Core Devs 和 DeFi 阵营是一股不可阻挡的力量与一个不可移动的物体，我们没法替他们两边都做出选择。
+</p>
+
+<h2>核心金句</h2>
+
+<div class="quotes">
+  <div class="q" style="background:#fef2f2;border-color:#ef4444">
+    "we don't really have a hundred billion dollars of security, we really have five million a day at the current curve"
+    <span class="src">— Oisín Kyne，把安全预算从存量改写成流量</span>
+  </div>
+  <div class="q" style="background:#eff6ff;border-color:#3b82f6">
+    "the minimum viable issuance of Ethereum should be around 0.5%"
+    <span class="src">— Jérôme de Tychey 引述研究结论，这是曲线设计的起点</span>
+  </div>
+  <div class="q" style="background:#f0fdf4;border-color:#22c55e">
+    "if we stopped at 0.5% issuance and didn't cut it any lower, this would be a much, like, less objectionable proposal"
+    <span class="src">— Oisín Kyne，分歧真正的落点是曲线尾部那一段</span>
+  </div>
+  <div class="q" style="background:#faf5ff;border-color:#a855f7">
+    "This is not an engineering problem. This is a political economy problem."
+    <span class="src">— Kevin Owocki，为整场争论定性</span>
+  </div>
+  <div class="q" style="background:#fefce8;border-color:#eab308">
+    "a baker doesn't pay taxes when he bakes his bread he pays it when he sells the bread"
+    <span class="src">— Oisín Kyne，用来说明质押奖励该按创造所得计税</span>
+  </div>
+  <div class="q" style="background:#fff7ed;border-color:#f97316">
+    "let's continue to pay stakers as much as necessary but as little as possible so we don't dilute the others"
+    <span class="src">— Jérôme de Tychey，他对整份提案最凝练的一句概括</span>
+  </div>
+</div>
+
+<footer class="foot">
+  <p>本文根据 Unchained Podcast 该期节目的转写整理，所有引言均取自节目原文。</p>
+  <p>原始节目音频：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9359204995.mp3">https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9359204995.mp3</a></p>
+  <p>PodDeck · 2026 年 8 月</p>
+</footer>
+
+</div>
+</body>
+</html>
