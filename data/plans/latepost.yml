@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-21T03:26:09.927Z
+refreshed_at: 2026-08-21T18:09:58.606Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 24
-done: 0
+done: 1
 pending: 0
-needs_transcript: 24
+needs_transcript: 23
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -262,8 +262,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-21T18:09:59.816Z
+    transcript_job_id: e3b153a6-b713-4925-864e-242f3881ba1e_de0669919f8f4f26a27d1bf3b85b9d09,bd4e2523-0d0f-429b-84fb-aada177c9fca_31a1d33136974ed8962b7585646c180a,1fe26437-81fd-4794-865b-184cc4f72ae2_4f4b698b9ee84f3786666be4d46c3a14,08bfccdc-e644-4ae9-8d5c-2a9d8c8e6837_e80ec4dc536f49fabd1016cd0194d373,82850b43-9191-4e81-aa2e-dcb07b84a8c3_393fc915c7e64fe4912161b00ef190d7,5476c31f-abf0-4f76-b26c-f370efa06117_c73db6abca3541289cb2335d0015d6aa,bd6a2b7e-1566-4468-b067-85533d617376_9f0a43b3197a40a68f03f02c43234738
+    transcript_completed_at: 2026-08-21T18:16:01.996Z
   - id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
     guid: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
     title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
