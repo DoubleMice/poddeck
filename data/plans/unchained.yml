@@ -1,111 +1,15 @@
 source: unchained
-refreshed_at: 2026-08-20T18:10:06.364Z
+refreshed_at: 2026-08-21T03:26:09.877Z
 min_duration: 3300
-min_date: "20260730"
-total_candidates: 2
-done: 1
+min_date: "20260731"
+total_candidates: 1
+done: 0
 pending: 0
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: cea673d6-9c42-11f1-90c9-47d2c7a57252
-    guid: cea673d6-9c42-11f1-90c9-47d2c7a57252
-    title: "EIP-8363: Should ETH Be Sound Money or a Productive Asset?"
-    duration: 4449
-    published: Thu, 20 Aug 2026 02:56:00 -0000
-    published_sort: "20260820"
-    first_seen_at: 2026-08-20T03:23:00.880Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9359204995.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9359204995.mp3
-    image: https://megaphone.imgix.net/podcasts/cea673d6-9c42-11f1-90c9-47d2c7a57252/image/d8c63bf173baa7b48e22da0c89e708f1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Ethereum wants to slash staking yields toward zero. Gitcoin's Kevin Owocki, DV Labs' Oisín Kyne, and
-      Ethereum-France's Jérôme de Tychey debate whether that breaks DeFi.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Visit⁠ 1inch.com⁠ to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re buying - swap it at⁠ 1inch.com⁠
-
-      ========================================================
-
-
-      Ethereum's core developers are considering a decision that could cut ETH's staking yield toward zero, and DeFi's
-      biggest names are furious about it.
-
-
-      Jérôme de Tychey, President of Ethereum-France and a co-author of EIP-8363, joins Kevin Owocki, founder of
-      Gitcoin, and Oisín Kyne, CEO of DV Labs, to argue through the proposal's tradeoffs. Aave's Stani Kulechov,
-      Ether.fi's Mike Silagadze, and Joseph Chalom have all pushed back, warning the change guts DeFi's biggest source
-      of yield.
-
-
-      They cover the Nakamoto coefficient and why a 51% staking cartel could censor blocks for free, why solo stakers
-      could see after-tax income collapse, and why Oisín is skeptical of an enshrined liquid staking token. Jérôme
-      defends why Ethereum can pay stakers less and still be more secure than rivals boasting 7% yields. All Core Devs
-      meets Thursday, August 20, and the real deadline lands October 26, when the network decides if EIP-8363 is mature
-      enough to move forward.
-
-
-      Host:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-      Guests:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kevin Owocki - Founder of Gitcoin
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Oisín Kyne - CEO and Co-founder of DV Labs
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jérôme de Tychey - President of Ethereum-France
-
-      Timestamps
-
-
-      🏛️ 01:38 Jérôme lays out EIP-8363's validator reward burn curve
-
-
-      🔥 08:02 Oisín on why a 51% cartel could censor blocks for free
-
-
-      ⚖️ 10:39 Jérôme's rebuttal: finality security versus censorship risk
-
-
-      📣 14:38 1inch: See how Aqua's shared liquidity pools work at https://1inch.com/aqua
-
-
-      💼 16:13 Kevin on Aave, Bankless, and DeFi's backlash to the burn
-
-
-      🧾 33:18 Why solo stakers could see after-tax income near zero
-
-
-      🏦 45:39 Does killing ETH's yield scare off institutional buyers?
-
-
-      ⚛️ 51:03 Ultrasound money versus productive asset: ETH's identity fight
-
-
-      🔐 56:41 Why Oisín is skeptical of an enshrined liquid staking token
-
-
-      🥇 59:34 Can ETH's shrinking yield compete with Solana and stablecoins?
-
-
-      🔮 01:05:27 Post-quantum costs, and when All Core Devs decides EIP-8363's fate
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-08-20T18:14:01.957Z
-    transcript_job_id: 24f20608-6736-4078-8315-68fb92fd6984_428dfc92d757407994f82d24dfedd707,c5c3d5e8-30b2-451b-b69c-d885ca85d453_4759b701744142e69a18878003637f0d,4cbeb0f7-8cc7-4f93-b782-ad0fa372ba6a_681c30079a524917a8b7f731ecddc5ea,58174d8b-7c96-40d3-b249-45c8a5ea1224_7dcb1ae851cd489ead985a85475df3c4,5b10b0e3-1f50-486e-b098-e56909a5a76b_6fbb4b3d336441f9820c16b8900024f7
-    transcript_completed_at: 2026-08-20T18:17:42.701Z
   - id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     guid: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo
