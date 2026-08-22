@@ -95,7 +95,8 @@ async function generateOne(ep: Episode, sourcesFile: SourcesFile): Promise<boole
   return new Promise<boolean>((resolvePromise) => {
     const child = spawn(claudeBin, [
       '-p',
-      '--model', 'opus',
+      '--model', 'haiku',
+      '--effort', 'max',
       '--append-system-prompt', systemRules,
       '--add-dir', EPISODES_DIR,
       '--add-dir', TRANSCRIPTS_DIR,

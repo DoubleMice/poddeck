@@ -961,7 +961,7 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult
   return new Promise(resolveFn => {
     const child = spawn(claudeBin, [
       '-p',
-      '--model', 'opus',
+      '--model', 'haiku',
       '--verbose',
       '--output-format', 'stream-json',
       '--add-dir', EPISODES_DIR,
